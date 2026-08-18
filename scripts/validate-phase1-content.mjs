@@ -1,0 +1,8 @@
+import { readFile } from 'node:fs/promises';
+const progress = JSON.parse(await readFile('content/phase-1/content-progress.json','utf8'));
+const sources = JSON.parse(await readFile('content/phase-1/source-registry.json','utf8'));
+const ids = new Set(); const sourceIds = new Set(sources.map(source => source.id)); const errors = [];
+for (const topic of progress.topics) { if (ids.has(topic.id)) errors.push(`Duplicate topic: ${topic.id}`); ids.add(topic.id); if (topic.public && topic.status !== 'published') errors.push(`Public topic is not published: ${topic.id}`); if (topic.status === 'published' && (!topic.sourceIds?.length || topic.sourceIds.some(id => !sourceIds.has(id)))) errors.push(`Published topic lacks verified sources: ${topic.id}`); }
+if (progress.subjects.length !== 11) errors.push(`Expected 11 subjects; found ${progress.subjects.length}.`);
+if (errors.length) { console.error(errors.join('\n')); process.exit(1); }
+console.log(`Phase 1 content validation passed: ${progress.subjects.length} subjects, ${progress.topics.length} planned topics, ${progress.topics.filter(topic => topic.status === 'published').length} published.`);

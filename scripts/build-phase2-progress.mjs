@@ -1,0 +1,8 @@
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
+const curriculum = JSON.parse(await readFile('curriculum/master-curriculum.json', 'utf8'));
+const titles = ['WEB DEVELOPMENT','DATA SCIENCE & AI LITERACY','CYBERSECURITY','DATABASES & SQL','UX/UI DESIGN','INTRODUCTION TO BUSINESS','ACCOUNTING','FINANCE','PERSONAL FINANCE','MARKETING','MANAGEMENT & LEADERSHIP'];
+const selected = curriculum.subjects.filter(subject => titles.includes(subject.title));
+const seen = new Map();
+const topics = selected.flatMap(subject => subject.units.flatMap(unit => unit.topics.map(topic => { const base = `${subject.slug}:${unit.slug}:${topic.slug}`; const occurrence = (seen.get(base) ?? 0) + 1; seen.set(base, occurrence); return { id: occurrence === 1 ? base : `${base}-${occurrence}`, subjectSlug: subject.slug, unitSlug: unit.slug, slug: occurrence === 1 ? topic.slug : `${topic.slug}-${occurrence}`, title: topic.title, status: 'planned', sourceIds: [], public: false }; })));
+const document = { schemaVersion: 1, phase: 2, generatedAt: new Date().toISOString(), source: 'Owner-authored Phase 2 curriculum outline', subjects: selected.map(subject => ({ slug: subject.slug, title: subject.title, status: 'planned', units: subject.units.map(unit => ({ slug: unit.slug, title: unit.title })) })), topics };
+await mkdir('content/phase-2', { recursive: true }); await Promise.all([writeFile('content/phase-2/content-progress.json', `${JSON.stringify(document, null, 2)}\n`), writeFile('content/phase-2/source-registry.json', '[]\n')]); console.log(`Phase 2 planning registry: ${selected.length} subjects, ${topics.length} planned topic records.`);

@@ -1,0 +1,40 @@
+{
+  "name": "eliexplains-org",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b",
+    "migration:medmosa:scan": "bun scripts/medmosa-migrate.mjs",
+    "migration:medmosa:validate": "bun scripts/validate-medmosa-migration.mjs",
+    "curriculum:import": "bun scripts/import-curriculum-outline.mjs",
+    "phase1:plan": "bun scripts/build-phase1-progress.mjs",
+    "phase1:validate": "bun scripts/validate-phase1-content.mjs",
+    "phase1:drafts": "bun scripts/generate-phase1-drafts.mjs",
+    "phase2:plan": "bun scripts/build-phase2-progress.mjs",
+    "phase2:validate": "bun scripts/validate-phase2-content.mjs",
+    "phase2:drafts": "bun scripts/generate-phase1-drafts.mjs 2",
+    "phase3:plan": "bun scripts/build-phase3-progress.mjs",
+    "phase3:validate": "bun scripts/validate-phase3-content.mjs",
+    "phase3:drafts": "bun scripts/generate-phase1-drafts.mjs 3",
+    "phase4:plan": "bun scripts/build-phase4-progress.mjs",
+    "phase4:validate": "bun scripts/validate-phase4-content.mjs",
+    "phase4:drafts": "bun scripts/generate-phase1-drafts.mjs 4",
+    "phase1:promote": "bun scripts/promote-reviewed-topic.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "typescript": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "lucide-react": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "@types/react-dom": "latest"
+  }
+}
