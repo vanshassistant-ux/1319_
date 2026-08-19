@@ -86,42 +86,42 @@ A hotel operates as coordinated departments split into revenue centers (the room
 ## Practice Question Bank
 
 1. **Which grouping best describes the departments typically included in a hotel's rooms division?**
-   - A) Front office, reservations, and housekeeping ✓
-   - B) Restaurants, bars, and banquets
-   - C) Human resources, accounting, and security
-   - D) Sales, marketing, and engineering
+   - A. Front office, reservations, and housekeeping ✓
+   - B. Restaurants, bars, and banquets
+   - C. Human resources, accounting, and security
+   - D. Sales, marketing, and engineering
 
    The rooms division bundles the functions that sell and service guest rooms: the front office, reservations, and housekeeping. Restaurants and bars belong to food and beverage; HR, accounting, security, sales, marketing, and engineering are separate departments (mostly support centers).
 
 2. **In lodging operations, what distinguishes a support (cost) center from a revenue center?**
-   - A) Support centers are always larger than revenue centers
-   - B) Support centers report to the owner while revenue centers report to the general manager
-   - C) Support centers keep operations running but do not take in money directly from guests ✓
-   - D) Support centers exist only in resorts, not in city hotels
+   - A. Support centers are always larger than revenue centers
+   - B. Support centers report to the owner while revenue centers report to the general manager
+   - C. Support centers keep operations running but do not take in money directly from guests ✓
+   - D. Support centers exist only in resorts, not in city hotels
 
    Revenue centers such as rooms and F&B sell directly to guests; support (cost) centers such as engineering, HR, and accounting spend money to keep those sales possible without billing guests. The distinction is about direct guest revenue, not size, reporting lines, or hotel type.
 
 3. **In a typical full-service hotel, which division is usually the single largest producer of revenue?**
-   - A) Food and beverage
-   - B) The rooms division ✓
-   - C) Engineering and maintenance
-   - D) Sales and marketing
+   - A. Food and beverage
+   - B. The rooms division ✓
+   - C. Engineering and maintenance
+   - D. Sales and marketing
 
    The rooms division usually generates more revenue than any other division, and because rooms carry very low variable cost, that revenue is highly profitable. Food and beverage is typically second; engineering and sales/marketing are support centers that do not bill guests directly.
 
 4. **A guest checks in to a clean room, charges dinner to the room, has a maintenance issue fixed, and receives a single accurate bill at checkout. This smooth stay most directly demonstrates:**
-   - A) That the front office operates independently of the other departments
-   - B) That only revenue centers affect guest satisfaction
-   - C) That housekeeping and food and beverage share a single manager
-   - D) Coordination across multiple departments, which is the general manager's central responsibility ✓
+   - A. That the front office operates independently of the other departments
+   - B. That only revenue centers affect guest satisfaction
+   - C. That housekeeping and food and beverage share a single manager
+   - D. Coordination across multiple departments, which is the general manager's central responsibility ✓
 
    The stay touched reservations, housekeeping, front office, F&B, engineering, and accounting. A seamless result reflects coordination across departments, which the general manager and executive committee exist to ensure. The front office does not act alone, support centers clearly affect satisfaction, and those departments have separate managers.
 
 5. **Two departments are both revenue centers, yet one is consistently more profitable per dollar of sales. Which explanation is most consistent with how hotel operations are structured?**
-   - A) The rooms division carries very low variable cost per room, while food and beverage is labor- and inventory-intensive ✓
-   - B) Food and beverage is a support center and therefore earns no profit
-   - C) Housekeeping charges guests directly, which inflates rooms revenue
-   - D) RevPAR counts restaurant sales but not room sales
+   - A. The rooms division carries very low variable cost per room, while food and beverage is labor- and inventory-intensive ✓
+   - B. Food and beverage is a support center and therefore earns no profit
+   - C. Housekeeping charges guests directly, which inflates rooms revenue
+   - D. RevPAR counts restaurant sales but not room sales
 
    Once a hotel is built, an additional room sold adds very little variable cost, so rooms revenue is highly profitable; F&B carries ongoing labor and food costs, lowering its margin. F&B is a revenue center (not a support center), housekeeping does not bill guests, and RevPAR is a rooms metric that excludes restaurant sales.
 

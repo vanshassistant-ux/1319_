@@ -125,7 +125,7 @@ Hospitality is the age-old practice of welcoming people away from home and meeti
 
 ## Sources
 
-- *Introduction to Tourism and Hospitality in BC*, Chapter 1: History and Overview (Capilano University / BCcampus Open Education, CC BY 4.0). Canonical: https://opentextbc.ca/introtourismbc/ ; verified via the eCampusOntario Pressbooks mirror: https://ecampusontario.pressbooks.pub/introtourismbc/chapter/chapter-1-history-and-overview/
+- *Introduction to Tourism and Hospitality in BC*, Chapter 1: History and Overview (Capilano University / BCcampus Open Education, CC BY 4.0). Canonical: https://opentextbc.ca/introtourismbc/ — verified via the eCampusOntario Pressbooks mirror: https://ecampusontario.pressbooks.pub/introtourismbc/chapter/chapter-1-history-and-overview/
 - *Introduction to Hospitality & Tourism*, Chapter 1: What is Hospitality? (Maureen Peters Gittelman / SUNY, CC BY-NC 4.0). https://hospitalitytourism.pressbooks.sunycreate.cloud/chapter/the-hospitality-tourism-industry/
 - U.S. Bureau of Labor Statistics, Industries at a Glance: Leisure and Hospitality. https://www.bls.gov/iag/tgs/iag70.htm
 - UN Tourism (UNWTO), Glossary of Tourism Terms. https://www.untourism.int/glossary-tourism-terms

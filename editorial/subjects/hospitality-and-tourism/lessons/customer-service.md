@@ -88,42 +88,42 @@ Service quality is the gap between what a guest expected and what they perceived
 ## Practice Question Bank
 
 **1. The IHIP framework says services differ from goods on four characteristics. Which one refers to a service being produced and consumed at the same time, so the customer is present while it is delivered?**
-- A) Inseparability ✓
-- B) Intangibility
-- C) Heterogeneity
-- D) Perishability
+- A. Inseparability ✓
+- B. Intangibility
+- C. Heterogeneity
+- D. Perishability
 
 Inseparability is the simultaneous production and consumption of a service, meaning there is no chance to inspect and fix it before the customer receives it. Intangibility is that a service cannot be touched or tested beforehand; heterogeneity is variation from one delivery to the next; perishability is the inability to store unused capacity. *(Recall)*
 
 **2. In the SERVQUAL framework of Parasuraman, Zeithaml and Berry, service quality is best understood as which of the following?**
-- A) The absolute technical excellence of the service, measured against an engineering specification
-- B) The price a customer is willing to pay relative to competitors
-- C) The gap between the service a customer expected and the service they perceived they received ✓
-- D) The number of service standards an organization has documented
+- A. The absolute technical excellence of the service, measured against an engineering specification
+- B. The price a customer is willing to pay relative to competitors
+- C. The gap between the service a customer expected and the service they perceived they received ✓
+- D. The number of service standards an organization has documented
 
 SERVQUAL rests on the expectancy-disconfirmation idea: quality is high when perceptions meet or exceed expectations and low when they fall short, so it is inherently the expectation-perception gap. It is deliberately not an absolute engineering measure, it is not defined by price, and documenting standards is a means to quality, not the definition of it. *(Understanding)*
 
 **3. A hotel's advertising promises "a rejuvenating hour-long massage," but the 60-minute appointment includes consultation and changing, leaving about 50 minutes of hands-on treatment. Guests feel short-changed. In the Gaps model, which gap is the primary cause?**
-- A) Gap 1, the listening gap — management does not know what guests expect
-- B) Gap 4, the communication gap — external promises exceed what is delivered ✓
-- C) Gap 2, the standards gap — expectations are not translated into specifications
-- D) Gap 3, the delivery gap — staff fail to perform to the set standard
+- A. Gap 1, the listening gap — management does not know what guests expect
+- B. Gap 4, the communication gap — external promises exceed what is delivered ✓
+- C. Gap 2, the standards gap — expectations are not translated into specifications
+- D. Gap 3, the delivery gap — staff fail to perform to the set standard
 
 Marketing promised more (a full hour of massage) than operations delivers (about 50 minutes of treatment), inflating expectations the service cannot meet — the definition of the communication gap, Gap 4. Management does understand the expectation and has a standard, so Gaps 1 and 2 are closed, and the therapists deliver exactly what is specified, so Gap 3 is not the issue. *(Application)*
 
 **4. Who popularized the term "moment of truth" for the brief frontline encounters in which customers judge an organization, using the example of an airline being "created" in customers' minds millions of times a year?**
-- A) Leonard Berry, in developing the SERVQUAL instrument
-- B) W. Edwards Deming, in his work on total quality management
-- C) Valarie Zeithaml, in defining the IHIP characteristics
-- D) Jan Carlzon, president of Scandinavian Airlines (SAS) ✓
+- A. Leonard Berry, in developing the SERVQUAL instrument
+- B. W. Edwards Deming, in his work on total quality management
+- C. Valarie Zeithaml, in defining the IHIP characteristics
+- D. Jan Carlzon, president of Scandinavian Airlines (SAS) ✓
 
 Jan Carlzon popularized "moment of truth" in the 1980s, calculating that SAS was created in its customers' minds tens of millions of times a year in fifteen-second encounters, and arguing frontline staff must be empowered because that is where the company is judged. Berry and Zeithaml co-authored the SERVQUAL and IHIP work but did not originate this term; Deming is associated with statistical quality management, not this concept. *(Recall)*
 
 **5. A restaurant has a detailed manual of service standards, yet guests still report inconsistent experiences during unusual situations the manual never anticipated. Which conclusion best fits the service-quality principles in this lesson?**
-- A) Written standards are necessary but not sufficient; consistent quality also needs a service culture and empowered staff who exercise judgment where standards do not reach ✓
-- B) The restaurant should abandon standards entirely and rely on employee instinct
-- C) Inconsistency proves the standards are too detailed and should be deleted
-- D) Service quality cannot be influenced by management because heterogeneity makes every encounter random
+- A. Written standards are necessary but not sufficient; consistent quality also needs a service culture and empowered staff who exercise judgment where standards do not reach ✓
+- B. The restaurant should abandon standards entirely and rely on employee instinct
+- C. Inconsistency proves the standards are too detailed and should be deleted
+- D. Service quality cannot be influenced by management because heterogeneity makes every encounter random
 
 Standards close the design and delivery gaps for routine tasks but cannot script every situation, so a service culture and empowerment are needed for the unscripted moments of truth — exactly Carlzon's point. Abandoning or deleting standards discards the consistency they provide, and heterogeneity makes quality harder to control, not impossible; the Gaps model exists precisely because management can act on it. *(Analysis)*
 

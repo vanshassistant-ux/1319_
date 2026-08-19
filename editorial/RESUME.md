@@ -14,10 +14,12 @@ Read this first on every new run, then `editorial/reports/EDITORIAL_PROGRESS.md`
   `editorial/reports/subjects/engineering-fundamentals.md`.
 - **Health Administration is COMPLETE** — 24/24 topics, audited (0 issues), reported at
   `editorial/reports/subjects/health-administration.md`.
+- **Hospitality and Tourism is COMPLETE** — 20/20 topics, audited (0 issues), reported at
+  `editorial/reports/subjects/hospitality-and-tourism.md`.
 
   **RESUMED 2026-08-19 in this `1319_DIR` copy (operator direction: "continue from where
   Hermes left off").** This directory — `/Users/moomoo/Desktop/1319_DIR` — is now the live
-  working repository. Total: **121 / 1,319** topics, 5 / 44 subjects.
+  working repository. Total: **141 / 1,319** topics, 6 / 44 subjects.
 
   **Runtime here: `bun` only (no `node` on PATH).** All `.mjs` pipeline scripts run under
   bun, and the `npm run editorial:*` aliases (which hardcode bun) work as written. The
@@ -25,9 +27,13 @@ Read this first on every new run, then `editorial/reports/EDITORIAL_PROGRESS.md`
   false on this Mac. Use `bun run editorial:*` or `bun scripts/...` directly. Run
   `npm install` once before typecheck/build only.
 
-  Next subject: `hospitality-and-tourism` (20 topics). The init script does not create
-  `source-map.json` — hand-write it (health-administration and social-work maps are the
-  patterns for service/consumer-facing subjects).
+  Next subject: `graphic-design-and-digital-media` (28 topics). The init script does not
+  create `source-map.json` — hand-write it (a creative/technical subject; watch copyright of
+  visual works and software, attribute design principles, and treat brand/style guides as
+  REFERENCE_ONLY).
+
+  Answer-key note for the next worker brief: ask for an EVEN spread across A/B/C/D without
+  singling out any letter — "use A at least once" over-corrected hospitality toward A (33/23/24/20).
 
 - **No other subject may be started** until the current one has zero unprocessed topics,
   a subject audit, and a subject report.

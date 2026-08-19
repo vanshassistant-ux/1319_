@@ -1,0 +1,192 @@
+{
+  "topicId": "hospitality-and-tourism:foundations:hospitality-technology",
+  "subjectId": "hospitality-and-tourism",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "The property management system (PMS) as the operational hub (reservations, room status, check-in/out records, guest folio)",
+      "Point-of-sale (POS) systems for F&B/retail and the room-charge posting to the PMS folio",
+      "The reservation and distribution stack: central reservation system (CRS), global distribution system (GDS), channel manager, and OTA connectivity",
+      "How systems integrate through interfaces and APIs so one reservation stays consistent",
+      "Naming the revenue management system (RMS) and CRM/guest-data system",
+      "Guest-facing technology: mobile check-in, keyless/mobile-key entry, contactless payment",
+      "Data-privacy and payment-card security responsibilities (PCI DSS; general data-security principles)"
+    ],
+    "supporting": [
+      "Two-way integration and inventory synchronization to prevent double-selling",
+      "OTAs as a large share of transient bookings",
+      "GDS origins in airline computerized reservation systems"
+    ],
+    "outOfScope": [
+      "Front-office guest-cycle procedures (check-in steps, night audit) — owned by Front Office Operations",
+      "The revenue-management discipline and RevPAR/occupancy math — owned by Revenue Management / Pricing and Occupancy",
+      "Hospitality marketing and use of CRM data for campaigns — owned by Hospitality Marketing",
+      "Endorsement or comparison of specific commercial products"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A property management system (PMS) is the core operational software of a lodging business, holding reservations, room status, check-in/out records, billing/folios, and coordinating housekeeping and reporting, and it functions as the central hub that other systems integrate with.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["suny-intro-hospitality-tourism-lodging-operations", "altexsoft-hotel-pms"],
+      "status": "supported"
+    },
+    {
+      "claim": "A point-of-sale (POS) system records sales at outlets such as restaurants and shops and can post a guest's room charge directly to the PMS folio through an interface, so it appears on the final bill.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["altexsoft-hotel-pms", "suny-intro-hospitality-tourism-lodging-operations"],
+      "status": "supported"
+    },
+    {
+      "claim": "A central reservation system (CRS) is a computerized system that stores a hotel's availability, rates, and inventory and manages bookings across channels, and it often serves as the reservation core the PMS works from.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["altexsoft-hotel-crs"],
+      "status": "supported"
+    },
+    {
+      "claim": "A channel manager collects availability and rates from the CRS or PMS and distributes them to channels such as GDSs, OTAs, metasearch sites, and the hotel website, then feeds bookings back, updating all channels when a room sells to prevent double-selling.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["altexsoft-hotel-crs"],
+      "status": "supported"
+    },
+    {
+      "claim": "A global distribution system (GDS) is a network, originating in the airline industry's computerized reservation systems, that connects hotels to travel agents and corporate travel buyers; an online travel agency (OTA) is a consumer-facing marketplace where travelers book directly.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["altexsoft-hotel-crs", "suny-intro-hospitality-tourism"],
+      "status": "supported"
+    },
+    {
+      "claim": "In one open educational source, OTAs accounted for roughly 24 percent of transient reservations in North American markets in 2020.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["suny-intro-hospitality-tourism"],
+      "status": "supported"
+    },
+    {
+      "claim": "Systems in the stack exchange data through interfaces and application programming interfaces (APIs); a two-way integration lets a booking flow from a channel into the CRS/PMS while the availability change flows back out, keeping one reservation consistent across systems.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["altexsoft-hotel-crs", "altexsoft-hotel-pms"],
+      "status": "supported"
+    },
+    {
+      "claim": "A revenue management system (RMS) analyzes demand and market conditions to recommend pricing and inventory controls, and a CRM system aggregates guest profiles and history; the PMS integrates with both.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["altexsoft-hotel-pms", "altexsoft-hotel-crs"],
+      "status": "supported"
+    },
+    {
+      "claim": "Modern PMS platforms support guest-facing technology such as contactless check-in and checkout via tablet kiosks or mobile apps.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["altexsoft-hotel-pms"],
+      "status": "supported"
+    },
+    {
+      "claim": "The PCI Security Standards Council, founded by the major payment brands, develops the PCI Data Security Standard (PCI DSS) to protect payment-account data; the standard applies to entities that store, process, or transmit payment-account data, and whether an entity must validate compliance is set by payment brands or acquirers rather than the Council.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["pci-ssc-about"],
+      "status": "supported"
+    },
+    {
+      "claim": "U.S. FTC guidance for businesses summarizes core data-security practices: collect only the personal data you need, control access to it, require secure authentication, store and transmit sensitive data securely (including encryption), segment and monitor networks, and dispose of data no longer needed.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ftc-start-with-security"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft was boilerplate ('a foundational concept... introduces its meaning, its context, and a simple way to apply it') and made no substantive, checkable claims about hospitality technology systems."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic placeholder text with concrete coverage of the PMS, POS, CRS, GDS, OTA, channel manager, RMS, CRM, integration via APIs, guest-facing technology, and data-security responsibilities.",
+    "Kept front-office procedures, revenue-management math, and marketing out of scope per anti-duplication boundaries; named RMS and CRM without teaching those disciplines."
+  ],
+  "rightsIssues": [
+    "AltexSoft pages are copyrighted (all rights reserved) and are used REFERENCE_ONLY: facts synthesized, no wording reproduced.",
+    "PCI Security Standards Council material is REFERENCE_ONLY; PCI DSS text itself was not reproduced.",
+    "OER sources (SUNY Introduction to Hospitality and Tourism) are CC BY 4.0 and CC BY-NC 4.0; used for facts only, with no verbatim copying, so the NonCommercial term is not implicated by reproduction."
+  ],
+  "sourceRecords": [
+    {
+      "id": "suny-intro-hospitality-tourism-lodging-operations",
+      "title": "Introduction to Hospitality and Tourism — Chapter 4: Lodging Operations",
+      "provider": "SUNY / Pressbooks (SUNY Create)",
+      "url": "https://hospitalitytourism.pressbooks.sunycreate.cloud/chapter/chapter-4-lodging-operations/",
+      "sourceType": "open-textbook",
+      "usage": "ATTRIBUTION_REQUIRED",
+      "license": "CC BY-NC 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "OER definition of the PMS as a software application that is the central hub for hotel management (reservations, check-in/out, room assignments, billing, housekeeping) and that integrates with POS, accounting, and online booking. Facts only; no wording reproduced."
+    },
+    {
+      "id": "suny-intro-hospitality-tourism",
+      "title": "Introduction to Hospitality and Tourism — Hotels chapter",
+      "provider": "SUNY / Pressbooks (SUNY Create)",
+      "url": "https://hospitalitytourism.pressbooks.sunycreate.cloud/chapter/hotels/",
+      "sourceType": "open-textbook",
+      "usage": "ATTRIBUTION_REQUIRED",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "OER coverage of OTAs as a distribution channel and the dated figure that OTAs held about 24% of transient reservations in North American markets in 2020, plus franchise central-reservation-system benefits. Facts only; no wording reproduced."
+    },
+    {
+      "id": "altexsoft-hotel-pms",
+      "title": "What Is a Hotel Property Management System (PMS): Products and Features",
+      "provider": "AltexSoft",
+      "url": "https://www.altexsoft.com/blog/hotel-property-management-systems-products-and-features/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Vendor-neutral technology consultancy explainer. Supports PMS modules (reservations, front desk/check-in-out, folio/billing, housekeeping, reporting), integration of back-office modules with POS/CRS/RMS and CRM, and contactless check-in/checkout via kiosks/mobile apps. Copyright AltexSoft, all rights reserved — reference-only, no wording reproduced."
+    },
+    {
+      "id": "altexsoft-hotel-crs",
+      "title": "Central Reservation System for Hotels: CRS Functionality and Software Explained",
+      "provider": "AltexSoft",
+      "url": "https://www.altexsoft.com/blog/central-reservation-system-hotel/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Defines the CRS as a computerized system holding availability, rates, and inventory (ARI); explains the channel manager collecting ARI from the CRS and distributing to GDS/OTAs/metasearch/website, two-way API integration syncing bookings and availability, and links to revenue-management modules. Copyright AltexSoft, all rights reserved — reference-only, no wording reproduced."
+    },
+    {
+      "id": "pci-ssc-about",
+      "title": "About Us — PCI Security Standards Council",
+      "provider": "PCI Security Standards Council",
+      "url": "https://www.pcisecuritystandards.org/about_us/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Standards body founded in 2006 by the major payment brands; develops PCI DSS to protect payment-account data. Confirms the standard applies to entities that store, process, or transmit payment-account data, and that validation requirements are set by payment brands/acquirers, not the Council. Reference-only; PCI DSS text not reproduced."
+    },
+    {
+      "id": "ftc-start-with-security",
+      "title": "Start with Security: A Guide for Business",
+      "provider": "U.S. Federal Trade Commission",
+      "url": "https://www.ftc.gov/business-guidance/resources/start-security-guide-business",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "U.S. government (public domain) guidance summarizing core data-security practices: collect only needed data, control access sensibly, require secure authentication, store/transmit sensitive data securely (encryption), segment and monitor networks, secure remote access, and dispose of unneeded data. Read via curl (browser user agent) after WebFetch returned 403."
+    }
+  ]
+}

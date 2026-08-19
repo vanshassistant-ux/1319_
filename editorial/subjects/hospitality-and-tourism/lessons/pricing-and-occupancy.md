@@ -82,38 +82,38 @@ Occupancy is volume, ADR is price, and RevPAR (= ADR x occupancy = rooms revenue
 ## Practice Question Bank
 
 1. **A 200-room hotel sells 150 rooms one night. What is its occupancy rate?**
-   - A) 75%
-   - B) 50%
-   - C) 133%
-   - D) 25%
+   - A. 75%
+   - B. 50%
+   - C. 133%
+   - D. 25%
    - **Answer: A.** Occupancy = rooms sold / rooms available = 150 / 200 = 0.75 = 75%. 50% and 25% invert or misread the ratio; 133% divides available by sold, which is not how occupancy is defined and cannot exceed 100% here.
 
 2. **Why is ADR calculated by dividing rooms revenue by rooms sold rather than by rooms available?**
-   - A) Because ADR must always equal RevPAR for the figure to be valid
-   - B) Because rooms available changes every night while rooms sold does not
-   - C) Because ADR is meant to show the average price of the rooms that were actually sold, not revenue spread across empty rooms
-   - D) Because complimentary rooms are counted as sold in the ADR formula
+   - A. Because ADR must always equal RevPAR for the figure to be valid
+   - B. Because rooms available changes every night while rooms sold does not
+   - C. Because ADR is meant to show the average price of the rooms that were actually sold, not revenue spread across empty rooms
+   - D. Because complimentary rooms are counted as sold in the ADR formula
    - **Answer: C.** ADR is a price measure: the average rate earned per occupied room, so it divides by rooms sold. Spreading revenue over available rooms instead gives RevPAR. ADR equals RevPAR only at full occupancy; rooms available is typically the stable figure while rooms sold varies; and complimentary/house-use rooms are excluded from ADR.
 
 3. **A hotel reports an ADR of $200 and an occupancy rate of 60% for a night. What is its RevPAR?**
-   - A) $333.33
-   - B) $120
-   - C) $200
-   - D) $260
+   - A. $333.33
+   - B. $120
+   - C. $200
+   - D. $260
    - **Answer: B.** RevPAR = ADR x occupancy = $200 x 0.60 = $120. $333.33 divides ADR by occupancy; $200 ignores occupancy; $260 adds the two figures, which is meaningless. RevPAR is always at or below ADR because it accounts for unsold rooms.
 
 4. **A 100-room hotel currently runs 80% occupancy at a $150 ADR (RevPAR $120). Management cuts rates to reach 95% occupancy, but ADR falls to $110. What happens to RevPAR, and what does it show?**
-   - A) RevPAR rises to about $143, showing that higher occupancy always increases revenue per available room
-   - B) RevPAR is unchanged at $120, because occupancy and ADR always offset exactly
-   - C) RevPAR cannot be compared, because the two nights have different occupancy levels
-   - D) RevPAR falls to about $104.50, showing that chasing occupancy through discounting can lower revenue per available room
+   - A. RevPAR rises to about $143, showing that higher occupancy always increases revenue per available room
+   - B. RevPAR is unchanged at $120, because occupancy and ADR always offset exactly
+   - C. RevPAR cannot be compared, because the two nights have different occupancy levels
+   - D. RevPAR falls to about $104.50, showing that chasing occupancy through discounting can lower revenue per available room
    - **Answer: D.** At 95% occupancy and a $110 ADR, RevPAR = $110 x 0.95 = $104.50, below the $120 baseline. Higher occupancy does not always raise RevPAR; the metrics do not offset exactly; and RevPAR exists precisely to compare nights on the same per-available-room basis. This is the core occupancy-versus-ADR trade-off.
 
 5. **A hotel offers a rate that is 15% below its Best Available Rate but requires booking 21 days ahead with full, non-refundable payment. The advance-purchase and non-refundable requirements are examples of what?**
-   - A) Rate fences that a guest must satisfy to qualify for the lower rate
-   - B) The rack rate, since it is the highest published price
-   - C) GOPPAR, since expenses are involved
-   - D) The occupancy rate, since more rooms will be booked
+   - A. Rate fences that a guest must satisfy to qualify for the lower rate
+   - B. The rack rate, since it is the highest published price
+   - C. GOPPAR, since expenses are involved
+   - D. The occupancy rate, since more rooms will be booked
    - **Answer: A.** Conditions attached to a discount, such as advance-purchase cutoffs and non-refundable payment, are rate fences: they separate price-sensitive guests from flexible ones and protect higher rates. Rack rate is the published maximum, not a discount; GOPPAR is a profit metric; and occupancy is a volume ratio, not a booking condition.
 
 ## Sources
