@@ -1,0 +1,165 @@
+# Food and Beverage Operations
+
+## In 30 Seconds
+
+A food and beverage operation runs as a business with two halves: the front of house that serves guests and the back of house that produces the food. Managers choose a service style, plan a menu, and control cost. Two numbers drive the money: food cost percentage, which is the cost of food sold divided by food sales, and contribution margin, the price of a dish minus its food cost. Menu engineering sorts every dish by how well it sells and how much margin it earns, so the menu itself becomes a profit tool.
+
+## Why This Matters
+
+Restaurants, bars, banquets, and hotel dining are where most hospitality careers begin, and they run on thin margins where small pricing and cost errors decide whether a kitchen makes money. Learning the food-cost and contribution-margin math lets you read a menu the way an owner does: which dishes carry the operation and which quietly drain it. Menu engineering turns that reading into action, guiding what to feature, reprice, or cut. Food service managers coordinate all of this daily, and the U.S. Bureau of Labor Statistics projects steady demand for the role. Whether you cook, serve, or manage, these are the levers that keep an outlet open.
+
+## Learning Objectives
+
+- Distinguish front-of-house from back-of-house and identify the main F&B outlet and service-style types.
+- Define food cost percentage and compute it from cost of food sold and food sales.
+- Apply a target food-cost percentage to set a menu price and compute a dish's contribution margin.
+- Explain menu engineering and classify items as stars, plowhorses, puzzles, or dogs by popularity and profitability.
+- Analyze which menu action (feature, reprice, reposition, or remove) fits an item's classification.
+
+## The College Version
+
+### Two houses, one operation
+
+Every restaurant, bar, or hotel dining room is really two coordinated operations wearing one name. The front of house (FOH) is everything the guest sees and touches: the entrance, host stand, dining room, bar, and the servers, bartenders, bussers, and sommeliers who work them. The back of house (BOH) is the production side, primarily the kitchen but also the dishwashing area, food and beverage storage, and the back office where ordering, scheduling, and the books are handled. FOH sells and serves; BOH buys, stores, and produces. A good operation is judged partly by how invisibly the two connect, because a guest experiences a single meal, not the handoff between a line cook and a server. Food and beverage also comes in distinct outlet types that shape everything else: quick-service and fast-casual counters, casual and fine-dining full-service restaurants, bars and lounges, cafes and coffee shops, banquet and catering operations that produce large volumes on a schedule, and institutional or contract dining in hospitals, schools, and workplaces. Each type sets a different balance of speed, labor, check size, and menu complexity, but all share the same underlying business math.
+
+### Serving the guest: menus and service styles
+
+Two menu structures anchor most operations. An a la carte menu prices each item separately, so a guest builds and pays for a custom order; a table d'hote (or prix fixe) menu offers a set multi-course meal at one price, common in banquets and fine dining. On top of the menu sits the service style, which is chiefly a decision about where food is portioned and how much tableside labor it takes. In plate service, sometimes called American service, food is plated in the kitchen and carried out ready to eat; it is fast, consistent, and by far the most common style. Family-style service brings shared platters to the table for guests to serve themselves. Platter service, associated with classical Russian service, has a server portion from a platter onto each guest's plate at the table. Cart or gueridon service, linked to French service, finishes or prepares dishes tableside on a rolling cart, which is labor-intensive and reserved for fine dining. Buffet service lets guests self-select from a display, trading table labor for a large up-front setup. Banquet service applies these styles to a scheduled group event, usually a fixed menu delivered to many covers at once. The style chosen ripples through staffing, pacing, and cost, so it is an operating decision, not just a matter of taste.
+
+### The money math: food cost and contribution margin
+
+Food and beverage runs on famously thin margins, so two numbers dominate management attention. The first is food cost percentage: the cost of the food that was sold divided by the food sales it generated, expressed as a percent. If an outlet used $18,400 of food to produce $61,000 in food sales, its food cost percentage is about 30 percent, meaning roughly thirty cents of every sales dollar went to ingredients. Full-service restaurants commonly target somewhere around 28 to 35 percent, though the right number depends on concept and market. Food cost percentage also runs in reverse to set prices. Under the food-cost pricing method, you divide an item's food cost by the target food-cost percentage: a dish that costs $6.30 in ingredients, priced to a 30 percent target, lands at $6.30 / 0.30 = $21.00. The second number is contribution margin, the selling price minus the item's food cost, or $21.00 - $6.30 = $14.70 for that dish. Contribution margin is the dollars each sale contributes toward labor, rent, and profit. The two measures can disagree: a cheap side salad might have a low food-cost percentage yet contribute only a few dollars, while a steak with a higher percentage might contribute far more per sale. Skilled operators watch contribution margin in dollars, not just percentage, because a business pays its rent in dollars. Related operating measures, such as guest check average (total sales divided by guests) and table turnover (guests served divided by tables), show how efficiently an outlet converts its seats into those sales.
+
+### Menu engineering: making the menu earn
+
+Menu engineering treats the menu as an active management tool rather than a printed list. Michael L. Kasavana and Donald I. Smith introduced the technique in their 1982 book *Menu Engineering: A Practical Guide to Menu Analysis*, and it remains the standard framework. It plots every item on two axes: popularity, meaning how many units sell relative to the rest of the menu, and profitability, meaning each item's contribution margin relative to the menu average. Those two high-or-low judgments create four categories. **Stars** are high in both popularity and margin, the dishes to protect, feature prominently, and hold quality on. **Plowhorses** are popular but low-margin, the crowd-pleasers that fill seats but earn little, so operators try to raise price gently, trim portion cost, or pair them with high-margin add-ons. **Puzzles** carry high margin but sell poorly, so the move is to reposition them, rename or redescribe them, or feature them so more guests choose them. **Dogs** are low in both, and usually get reworked or removed. The classic model uses a menu-mix rule to draw the popularity line: an item is "popular" if it captures at least 70 percent of what it would sell under an equal split of the menu. Menu engineering does not tell you to simply delete cheap items; it tells you which lever, price, placement, portion, or removal, fits each item's specific mix of demand and margin.
+
+### Who runs it, and why the structure matters
+
+Pulling the front of house, back of house, menu, and numbers together is the job of the food service manager, who in the U.S. Bureau of Labor Statistics description coordinates daily operations of restaurants and other establishments that prepare and serve food and drink, overseeing staff, inventory, cost, and guest satisfaction. The occupation had a median annual wage of $65,310 in May 2024, held about 352,800 jobs in 2024, and is projected to grow about 6 percent from 2024 to 2034, with roughly 42,000 openings each year as workers change jobs or retire. The reason the structure matters is that every decision in F&B connects to another: a service style sets labor cost, a portion size sets food cost, a menu price sets contribution margin, and a menu layout steers guests toward stars or dogs. A manager who understands the whole system can change one lever and predict the effect on the rest. This lesson deliberately stops short of two neighboring subjects: the sanitation and temperature rules that keep food safe belong to food safety, and the logistics of planning a catered event belong to event planning. What food and beverage operations owns is the business engine, how the outlet is organized, served, priced, and analyzed so that it can consistently make money.
+
+## Key Vocabulary
+
+- **Front of house (FOH)**: The guest-facing part of a food and beverage operation, including the dining room, bar, and host area and the service staff who work them.
+- **Back of house (BOH)**: The production side of the operation, primarily the kitchen plus the dishwashing area, food storage, and the back office.
+- **A la carte menu**: A menu that prices each dish separately, so the guest orders and pays for individual items rather than a set meal.
+- **Table d'hote (prix fixe) menu**: A set multi-course meal offered at a single fixed price, common in banquets and fine dining.
+- **Plate service**: A service style, also called American service, in which food is portioned onto plates in the kitchen and carried out ready to eat; the most common style.
+- **Food cost percentage**: The cost of food sold divided by food sales, expressed as a percent; it shows how many cents of each sales dollar went to ingredients.
+- **Contribution margin**: A menu item's selling price minus its food cost; the dollars each sale contributes toward labor, overhead, and profit.
+- **Food-cost pricing method**: Setting a menu price by dividing an item's food cost by a target food-cost percentage (price = food cost / target percentage).
+- **Menu engineering**: A menu-analysis method (Kasavana & Smith, 1982) that classifies each item by popularity and profitability to decide how to feature, reprice, reposition, or remove it.
+- **Stars, plowhorses, puzzles, dogs**: The four menu-engineering categories: stars (popular and high-margin), plowhorses (popular, low-margin), puzzles (unpopular, high-margin), and dogs (unpopular and low-margin).
+
+## Eli-10
+
+A restaurant is two teams sharing one building. The front team greets you, seats you, and brings your food. The back team buys the ingredients, cooks, and washes up. To stay open, the owner watches two things about every dish: how much the ingredients cost compared to the price, and how many actual dollars the dish earns after paying for those ingredients. Then they study the menu itself. Some dishes sell a lot and earn a lot, some sell a lot but earn little, some earn a lot but barely sell, and some do neither. Knowing which is which tells the owner what to show off, what to charge a bit more for, and what to drop.
+
+## Eli's Analogy
+
+Think of the menu like a sports team roster. Every dish is a player rated on two things: how often it gets in the game (popularity) and how many points it scores when it does (profit). Your stars start every game. Your reliable-but-low-scoring players still get lots of minutes because fans love them. Your high-scorers who rarely play need better coaching to get on the field. The players who neither score nor play get cut.
+
+**Where the analogy breaks down:** The roster picture misses that a restaurant can change a "player" instead of only benching it: repricing, reportioning, or redescribing a dish can move it to a whole new category. And popularity and profit are not fixed talents; they shift with the season, the market price of ingredients, and where the item sits on the page.
+
+## Worked Example
+
+A bistro plates a salmon dish whose ingredients cost $6.30 (salmon $4.50, sides $1.20, oil and garnish $0.60). To hit a 30% food-cost target, the kitchen prices it at food cost / target = $6.30 / 0.30 = $21.00, giving a contribution margin of $21.00 - $6.30 = $14.70. Across the whole period the outlet used $18,400 of food to make $61,000 in sales, so its food cost percentage is 18,400 / 61,000 = 30.16%, right on target.
+
+Now menu-engineer four dishes by contribution margin and units sold (630 total, so the 70% popularity line is 0.70 x 630/4 = 110 units; the weighted average margin is $11.77):
+
+| Dish | Contribution margin | Units sold | Popularity | Profitability | Category |
+|------|--------------------:|-----------:|------------|---------------|----------|
+| Salmon | $14.70 | 180 | high | high | **Star** |
+| Burger | $10.80 | 320 | high | low | **Plowhorse** |
+| Risotto | $15.20 | 70 | low | high | **Puzzle** |
+| Side salad | $4.10 | 60 | low | low | **Dog** |
+
+Same menu, four different management actions: protect and feature the salmon, nudge the burger's price or cost, promote or reposition the risotto, and rework or drop the salad.
+
+## Common Mistakes
+
+- **Mistake:** Treating food cost percentage as the only number that matters and always chasing the lowest one.
+  **Correction:** A low food-cost percentage can still leave a tiny contribution margin. Owners pay rent in dollars, so a dish's contribution margin in dollars often matters more than its percentage.
+- **Mistake:** Thinking menu engineering just means deleting the cheapest or lowest-selling dishes.
+  **Correction:** Each category has its own action: feature stars, reprice or reportion plowhorses, reposition puzzles, and only then rework or remove dogs. Deleting a popular plowhorse can cost you traffic.
+- **Mistake:** Confusing popularity with profitability.
+  **Correction:** They are separate axes. A best-seller can be a low-margin plowhorse, and a high-margin dish can barely sell as a puzzle; menu engineering exists precisely because the two often disagree.
+- **Mistake:** Setting a menu price by multiplying food cost by the target percentage.
+  **Correction:** You divide, not multiply. Price = food cost / target food-cost percentage. A $6.30 item at 30% is $6.30 / 0.30 = $21.00, not $6.30 x 0.30 = $1.89.
+- **Mistake:** Assuming every restaurant uses the same service style.
+  **Correction:** Service style is an operating choice. Plate service is fast and common, buffet trades table labor for setup, and cart or platter service adds tableside labor that only fine dining usually justifies.
+
+## Compare / Contrast
+
+- **Food cost percentage vs Contribution margin:** Food cost percentage is a ratio (cost of food sold / food sales) that shows ingredient efficiency; contribution margin is a dollar figure (price - food cost) that shows what each sale contributes to overhead and profit.
+- **Plowhorse vs Puzzle:** A plowhorse sells well but earns a low margin (raise price or cut cost); a puzzle earns a high margin but sells poorly (reposition or promote it). They need opposite fixes.
+- **A la carte menu vs Table d'hote menu:** A la carte prices each item separately for a custom order; table d'hote offers a set multi-course meal at one fixed price, typical of banquets and prix fixe dining.
+- **Front of house vs Back of house:** FOH is the guest-facing service area (dining room, bar, servers); BOH is the production area (kitchen, dish, storage). Both must connect seamlessly for one smooth meal.
+
+## Key Takeaway
+
+A food and beverage operation is a business split into a guest-facing front of house and a producing back of house, run on two numbers, food cost percentage and contribution margin, with menu engineering using popularity and profitability to decide which dishes to feature, reprice, reposition, or remove.
+
+## Practice Question Bank
+
+1. **In a food and beverage operation, which areas make up the back of house (BOH)?**
+   - A. The kitchen, dishwashing area, food storage, and back office ✓
+   - B. The dining room, bar, and host stand
+   - C. The reservations line and the online ordering system
+   - D. The banquet hall and the outdoor patio
+
+   The back of house is the production side: the kitchen plus dishwashing, food storage, and the back office. The dining room, bar, and host stand are front of house.
+
+2. **An outlet used $18,400 of food to generate $61,000 in food sales over a month. What is its food cost percentage, and what does it mean?**
+   - A. About 3.3%, meaning food is nearly free to produce
+   - B. About 331%, meaning the outlet is losing money on every sale
+   - C. About 30%, meaning roughly 30 cents of each sales dollar went to ingredients ✓
+   - D. About 70%, meaning most of each sales dollar went to ingredients
+
+   Food cost percentage is cost of food sold divided by food sales: 18,400 / 61,000 = 0.3016, about 30%.
+
+3. **A dish costs $5.40 in ingredients and the operator wants a 30% food-cost target. Using the food-cost pricing method, what menu price does that imply?**
+   - A. $1.62
+   - B. $18.00 ✓
+   - C. $7.02
+   - D. $16.20
+
+   The food-cost pricing method divides food cost by the target percentage: $5.40 / 0.30 = $18.00. Multiplying instead ($5.40 x 0.30 = $1.62) is the classic error.
+
+4. **In menu engineering, a dish that sells in high volume but carries a below-average contribution margin is classified as a:**
+   - A. Star
+   - B. Puzzle
+   - C. Dog
+   - D. Plowhorse ✓
+
+   High popularity with low profitability defines a plowhorse. Plowhorses are typically repriced or reportioned rather than removed, since they draw traffic.
+
+5. **Two dishes: a side salad has a 25% food-cost percentage and a $4.10 contribution margin; a steak has a 38% food-cost percentage and a $16.00 contribution margin. Why might an operator favor featuring the steak despite its higher food-cost percentage?**
+   - A. Because contribution margin in dollars, not food-cost percentage, is what pays labor, rent, and profit, and the steak contributes far more per sale ✓
+   - B. Because a higher food-cost percentage always means a more popular dish
+   - C. Because food-cost percentage is irrelevant once a price is set
+   - D. Because the salad must be a star and the steak must be a dog
+
+   A low food-cost percentage can still yield few dollars: the salad contributes $4.10, while the steak contributes $16.00 per sale toward overhead and profit. Operators watch dollar contribution margin, not just percentage.
+
+## Sources
+
+- **Chapter 8: Restaurant Operations — Introduction to Hospitality & Tourism** (SUNY / Pressbooks), CC BY-NC 4.0. https://hospitalitytourism.pressbooks.sunycreate.cloud/chapter/chapter-8-restaurant-operations/ — FOH/BOH, service styles, food cost percentage, guest check average, table turnover.
+- **Kasavana, M. L. & Smith, D. I. (1982), Menu Engineering: A Practical Guide to Menu Analysis** (Hospitality Publications), REFERENCE_ONLY. https://search.worldcat.org/title/9550099 — the menu-engineering framework, its two axes, and the four item categories.
+- **Basic Kitchen and Food Service Management** (BCcampus Open Education), CC BY 4.0. https://opentextbc.ca/basickitchenandfoodservicemanagement/ — menu-engineering principles, contribution margin, and food-cost menu pricing.
+- **Food Service Managers — Occupational Outlook Handbook** (U.S. Bureau of Labor Statistics), REFERENCE_ONLY. https://www.bls.gov/ooh/management/food-service-managers.htm — the food service manager role and labor data (May 2024 wage; 2024–2034 outlook).
+
+## Related Topics
+
+- hospitality-and-tourism:foundations:food-safety
+- hospitality-and-tourism:foundations:event-planning
+- hospitality-and-tourism:foundations:hotel-operations
+- hospitality-and-tourism:foundations:hospitality-industry-structure
+
+## Editorial Metadata
+
+- **Editorial status:** READY_TO_PUBLISH
+- **Estimated time:** 10 minutes
+- **Researched:** 2026-08-19
+- **Rights:** Synthesized from CC-licensed OER and reference-only book/government sources; no source prose reproduced; frameworks attributed to their originators.
+- **Transformation:** Original synthesis; worked-example arithmetic executed in Bash.

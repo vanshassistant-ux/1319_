@@ -1,0 +1,182 @@
+{
+  "topicId": "hospitality-and-tourism:foundations:pricing-and-occupancy",
+  "subjectId": "hospitality-and-tourism",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Occupancy rate = rooms sold / rooms available (a percentage of capacity used)",
+      "Average Daily Rate (ADR) = rooms revenue / rooms sold (average price per occupied room)",
+      "Revenue Per Available Room (RevPAR) = rooms revenue / rooms available",
+      "The RevPAR identity: RevPAR = ADR x occupancy, demonstrated numerically",
+      "Basic rate structure: rack rate, best available rate (BAR), discounted/negotiated rates",
+      "Rate fences (advance purchase, non-refundable, length-of-stay) as conditions attached to lower rates",
+      "The occupancy-versus-ADR trade-off: chasing 100% occupancy by discounting can lower RevPAR"
+    ],
+    "supporting": [
+      "GOPPAR and TRevPAR named as related profit/total-revenue extensions of the same per-available-room logic",
+      "Rooms as a revenue center; why per-available-room metrics normalize across hotels of different sizes",
+      "Segmented pricing (government, corporate, loyalty) as the basis for discounted rates"
+    ],
+    "outOfScope": [
+      "The revenue-management discipline itself: demand forecasting, market segmentation, overbooking, and OTA/distribution strategy (owned by the Revenue Management topic)",
+      "Revenue management system (RMS) software and property-management-system mechanics (owned by Hospitality Technology)",
+      "Proprietary STR/CoStar benchmark datasets and index calculations (reference-only; not reproduced)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Occupancy rate is the percentage of available rooms that are sold over a given period, computed as rooms sold divided by rooms available.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["uwf-revenue-management-measurement", "openwa-intro-hospitality-lodging-economics"],
+      "status": "supported"
+    },
+    {
+      "claim": "Average Daily Rate (ADR) is the average revenue earned per occupied room, calculated by dividing total rooms revenue by the number of rooms sold; complimentary and house-use rooms are excluded.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["uwf-revenue-management-measurement", "openwa-intro-hospitality-lodging-economics"],
+      "status": "supported"
+    },
+    {
+      "claim": "RevPAR (Revenue Per Available Room) equals total rooms revenue divided by the number of available rooms, and equivalently equals ADR multiplied by the occupancy rate.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["uwf-revenue-management-measurement", "openwa-intro-hospitality-lodging-economics"],
+      "status": "supported"
+    },
+    {
+      "claim": "RevPAR gives a more complete picture of rooms performance than ADR or occupancy alone because it accounts for unsold rooms; selling rooms at lower rates just to boost occupancy can reduce overall revenue.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["uwf-revenue-management-measurement"],
+      "status": "supported"
+    },
+    {
+      "claim": "The rack rate is the officially published, highest standard rate for a room type; hotels rarely charge it and use it as a benchmark, while the Best Available Rate (BAR) is the lowest unrestricted publicly available rate for a date.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["altexsoft-hotel-rates-guide"],
+      "status": "supported"
+    },
+    {
+      "claim": "Rate fences are conditions attached to a discounted rate that a guest must meet to qualify, such as advance-purchase cutoffs, non-refundable payment, and minimum or maximum length of stay.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["xotels-rate-fences-glossary", "altexsoft-hotel-rates-guide"],
+      "status": "supported"
+    },
+    {
+      "claim": "Advance-purchase rates offer a discount off BAR in exchange for booking days-to-months ahead and are typically non-refundable, shifting cancellation risk to the guest and guaranteeing the hotel revenue.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["altexsoft-hotel-rates-guide", "xotels-rate-fences-glossary"],
+      "status": "supported"
+    },
+    {
+      "claim": "GOPPAR (gross operating profit per available room) is an industry-standard KPI that, unlike RevPAR, subtracts operating expenses before dividing by available rooms.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["openwa-intro-hospitality-lodging-economics"],
+      "status": "supported"
+    },
+    {
+      "claim": "Discounted and negotiated rates arise from segmented pricing, in which the same room is sold at different rates to different market segments such as government, corporate partners, and loyalty members.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["openwa-intro-hospitality-lodging-economics"],
+      "status": "supported"
+    },
+    {
+      "claim": "Lodging managers monitor room occupancy and rates and are responsible for the property's revenue performance as part of their standard duties.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["bls-ooh-lodging-managers"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether 'rooms available' should count out-of-order (temporarily unusable) rooms in occupancy and RevPAR denominators.",
+      "positions": [
+        "Some operators exclude rooms out of order for maintenance from available inventory, raising measured occupancy.",
+        "Standardized benchmarking generally uses total physical rooms so figures compare across properties and dates."
+      ],
+      "resolution": "The lesson uses total physical rooms as the denominator for clarity and consistency, and notes that definitions of 'available' can vary; it does not rely on any proprietary benchmark convention."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic placeholder text ('a foundational concept', 'a simple way to apply it') with no lodging metrics, formulas, or pricing content; none of it was usable."
+  ],
+  "correctionsNeeded": [
+    "Replaced all boilerplate with the specific occupancy/ADR/RevPAR formulas and the RevPAR identity, verified by arithmetic run in Bash.",
+    "Added the rate-structure vocabulary (rack rate, BAR, discounted/negotiated rates, rate fences) absent from the draft.",
+    "Added the occupancy-vs-ADR trade-off with a worked numerical demonstration that higher occupancy from discounting can lower RevPAR."
+  ],
+  "rightsIssues": [
+    "UWF 'Revenue Management Illustrated' is CC BY-NC-ND 4.0 (NoDerivatives): used reference-only; only non-copyrightable facts and formulas were synthesized, no prose reproduced or adapted.",
+    "Altexsoft and Xotels are commercial industry sources: REFERENCE_ONLY, used to corroborate evergreen rate-structure definitions; no wording reproduced.",
+    "STR/CoStar proprietary benchmarks were not used; all example figures are hypothetical."
+  ],
+  "sourceRecords": [
+    {
+      "id": "uwf-revenue-management-measurement",
+      "title": "Revenue Management Illustrated, Chapter 2: Revenue Management Measurement",
+      "provider": "University of West Florida Pressbooks (Melih Madanoglu)",
+      "url": "https://pressbooks.uwf.edu/revenuemanagementillustrated/chapter/revenue-management-measurement/",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-ND 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Open hospitality text. Supports definitions of ADR (total room revenue / rooms sold), RevPAR (ADR x occupancy, or total room revenue / available rooms), occupancy (percent of available rooms sold), and the interpretive point that RevPAR beats ADR or occupancy alone and that discounting to boost occupancy can cut revenue. pressbooks.uwf.edu returned HTTP 403 to WebFetch; read via curl with a browser user-agent (HTTP 200, Aug 2026). NoDerivatives license, so facts/formulas synthesized only; no prose reproduced."
+    },
+    {
+      "id": "openwa-intro-hospitality-lodging-economics",
+      "title": "Introduction to Hospitality, 5.3 Economics and Revenue Management",
+      "provider": "Washington State Board / Open WA Pressbooks (Angela Senter)",
+      "url": "https://openwa.pressbooks.pub/introhospitality1/chapter/5-3/",
+      "sourceType": "open-textbook",
+      "usage": "ATTRIBUTION_REQUIRED",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Open lodging chapter. Supports ADR and RevPAR definitions with worked examples (20-room hotel, 10 sold: ADR $155, RevPAR $77.50), GOPPAR as an expense-aware KPI, and segmented/discounted pricing (government, corporate, loyalty). openwa.pressbooks.pub returned HTTP 403 to WebFetch; read via curl with a browser user-agent (HTTP 200, Aug 2026). Facts synthesized; no prose reproduced."
+    },
+    {
+      "id": "bls-ooh-lodging-managers",
+      "title": "Lodging Managers: Occupational Outlook Handbook",
+      "provider": "U.S. Bureau of Labor Statistics",
+      "url": "https://www.bls.gov/ooh/management/lodging-managers.htm",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Primary federal occupational source, reused from the shared registry with its canonical URL. Supports that lodging managers monitor occupancy and room rates and are accountable for the property's revenue performance. bls.gov blocks automated fetchers (HTTP 403); duty statements read from BLS OOH search-result summaries (Aug 2026). U.S. government work, public domain."
+    },
+    {
+      "id": "altexsoft-hotel-rates-guide",
+      "title": "Rack Rates, BAR, Discounts, and More: A Guide to Hotel Prices",
+      "provider": "AltexSoft",
+      "url": "https://www.altexsoft.com/blog/hotel-rates/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Industry explainer read via WebFetch. Corroborates evergreen definitions: rack rate as the published standard (highest) rate, BAR as the lowest unrestricted publicly available rate for a date, and advance-purchase rates as non-refundable discounts off BAR. Commercial source; REFERENCE_ONLY, no wording reproduced."
+    },
+    {
+      "id": "xotels-rate-fences-glossary",
+      "title": "Rate Fences: Definition / Meaning",
+      "provider": "Xotels (glossary)",
+      "url": "https://www.xotels.com/en/glossary/rate-fences",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Industry glossary read via WebFetch. Corroborates that rate fences are conditions attached to a rate (advance-booking cutoffs, non-refundable payment, minimum/maximum length of stay, channel and product restrictions) used to protect standard rates. Commercial source; REFERENCE_ONLY, no wording reproduced."
+    }
+  ]
+}
