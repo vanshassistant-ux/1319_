@@ -1,0 +1,134 @@
+{
+  "topicId": "computer-science-fundamentals:foundations:queues",
+  "subjectId": "computer-science-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Queue as a FIFO (first-in, first-out) abstract data type",
+      "Core operations: enqueue (add at rear), dequeue (remove from front), front/peek, isEmpty",
+      "Each core operation is O(1) with a proper implementation",
+      "Naive removal from the front of a plain array is O(n); proper implementations (linked list with head/tail pointers, circular array) keep operations O(1)",
+      "Worked example: enqueue 1,2,3 then dequeue returns 1,2,3 (arrival order preserved)"
+    ],
+    "supporting": [
+      "Real uses: process/job scheduling, print spooling, network/I/O buffering, breadth-first search",
+      "Variants named only: circular queue (ring buffer), double-ended queue (deque), priority queue",
+      "One-sentence contrast with stack (LIFO)"
+    ],
+    "outOfScope": [
+      "Stack LIFO push/pop mechanics beyond a single contrast sentence (owned by the stacks topic)",
+      "Detailed array vs linked-list internals (owned by arrays/lists topics)",
+      "Heap implementation of priority queues; graph theory of BFS; deque method-by-method API"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A queue is a collection in which only the earliest added item may be accessed; add is at the tail (enqueue) and delete is at the head (dequeue); it is also known as first-in, first-out (FIFO).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-queue"],
+      "status": "supported"
+    },
+    {
+      "claim": "The Queue interface's most common queueing discipline is FIFO, in which the remove operation returns the element that has been in the queue longest; on a FIFO queue the add/remove operations are commonly called enqueue and dequeue.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["morin-ods-interfaces"],
+      "status": "supported"
+    },
+    {
+      "claim": "Appends and pops from either end of a Python collections.deque run with approximately O(1) performance, which makes the deque suitable for implementing a queue.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-docs-collections-deque"],
+      "status": "supported"
+    },
+    {
+      "claim": "Removing from or inserting at the front of a plain Python list (pop(0) / insert(0, v)) incurs O(n) memory-movement cost because it changes the position of the underlying data, so a naive array-front implementation of a queue is not O(1).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-docs-collections-deque"],
+      "status": "supported"
+    },
+    {
+      "claim": "Enqueuing 1, then 2, then 3 into an empty queue and then dequeuing repeatedly returns 1, 2, 3 in that order, preserving arrival order (FIFO).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-queue", "python-docs-collections-deque"],
+      "status": "supported"
+    },
+    {
+      "claim": "A priority queue serves the highest-priority (e.g., smallest) element next rather than the oldest, and a deque (double-ended queue) generalizes the queue by allowing operations at both ends; these are listed as related structures to the queue.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-queue", "morin-ods-interfaces"],
+      "status": "supported"
+    },
+    {
+      "claim": "Breadth-first search uses a queue so that nodes discovered earlier are processed before nodes discovered later, producing level-by-level traversal.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["morin-ods-interfaces"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether the array-based queue operations are strictly O(1) or amortized/approximately O(1).",
+      "positions": [
+        "A linked-list queue with head and tail pointers gives strict worst-case O(1) enqueue/dequeue.",
+        "A dynamic circular-array (ArrayQueue) queue gives amortized/approximately O(1) per operation because occasional resizing is O(n) but averages out; Python's deque docs phrase deque ends as 'approximately O(1)'."
+      ],
+      "resolution": "The lesson states operations are O(1) with a proper implementation and cites the deque docs' 'approximately O(1)' wording; it does not overclaim strict worst-case O(1) for the array variant. The key teaching point - that naive array-front removal is O(n) while a proper implementation is constant-time - holds either way."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic boilerplate ('Queues is a foundational concept...') with no substantive, verifiable claims about FIFO behavior, operations, or complexity."
+  ],
+  "correctionsNeeded": [
+    "Replaced all boilerplate with a concrete FIFO definition, the enqueue/dequeue/front/isEmpty operation set, and correct complexity claims.",
+    "Added the O(1)-with-proper-implementation guarantee and the O(n) naive-array-front caveat, which the draft omitted entirely.",
+    "Added a verified worked example (enqueue 1,2,3 then dequeue -> 1,2,3) executed in Python."
+  ],
+  "rightsIssues": [
+    "Open Data Structures is CC BY 2.5 (Canada); only facts were synthesized and no passages were reproduced, so attribution is recorded but no excerpt/ShareAlike obligation is triggered.",
+    "NIST DADS content is a U.S. government work in the public domain.",
+    "Python documentation is used for factual complexity statements (reference only); no substantial prose reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-dads-queue",
+      "title": "queue - Dictionary of Algorithms and Data Structures (DADS)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://xlinux.nist.gov/dads/HTML/queue.html",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Authoritative public-domain definition: a queue is a collection in which only the earliest added item may be accessed; add at tail (enqueue), delete at head (dequeue); also known as FIFO. Lists front/remove operations and 'see also' Deque, Stack, Priority queue, First come first served. Supports the FIFO definition, operation names, and variant names. Fetched and read 2026-08-19."
+    },
+    {
+      "id": "morin-ods-interfaces",
+      "title": "Open Data Structures (in Python), Section 1.2: Interfaces - The Queue, Stack, and Deque Interfaces",
+      "provider": "Pat Morin",
+      "url": "https://opendatastructures.org/ods-python/1_2_Interfaces.html",
+      "sourceType": "open-textbook",
+      "usage": "ATTRIBUTION_REQUIRED",
+      "license": "CC BY 2.5 (Canada)",
+      "licenseUrl": "http://creativecommons.org/licenses/by/2.5/ca/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Defines the Queue interface and its queueing disciplines (FIFO, priority, LIFO); states a FIFO queue removes the element that has been present longest and that add/remove are often called enqueue/dequeue; describes priority queue (removes smallest) and deque. Supports FIFO semantics, enqueue/dequeue naming, and the priority-queue/deque variant descriptions. License confirmed CC BY 2.5 CA from opendatastructures.org front page. Read via curl (browser UA) 2026-08-19; facts synthesized, no passages reproduced."
+    },
+    {
+      "id": "python-docs-collections-deque",
+      "title": "collections - Container datatypes (deque objects)",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/library/collections.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "States deque supports thread-safe, memory-efficient appends and pops from either side with approximately O(1) performance, and that list objects incur O(n) memory-movement cost for pop(0) and insert(0, v). Supports the O(1)-proper-implementation claim and the O(n) naive-array-front caveat, and the deque-as-queue use. Used to select the concrete implementation for the executed worked example. Fetched 2026-08-19."
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+# Functions
+
+## In 30 Seconds
+
+A function is a named, reusable block of code that performs one task. You write it once in a definition, then run it as many times as you like by calling it. A call can hand the function input values, called arguments, which fill the definition's parameters. When the work is done, the function can hand back a result with a return statement. Functions let you name, reuse, and reason about pieces of a program.
+
+## Why This Matters
+
+Functions are the first tool most programmers reach for to manage complexity. By naming a block of logic, you write it once and reuse it everywhere, which keeps a program shorter and means a fix or improvement happens in one place instead of many. Functions also let you think about a program in layers: you can use a well-named function without reopening how it works, and you can test each piece on its own. Almost every later idea in computing — libraries, methods on objects, recursion, and large systems built by teams — rests on the habit of packaging work into functions with clear inputs and outputs.
+
+## Learning Objectives
+
+- Define a function as a named, reusable block of code and distinguish a function definition from a function call.
+- Distinguish parameters from arguments and explain how arguments are bound to parameters during a call.
+- Explain what a return value is and what a function returns when it has no return statement.
+- Explain why functions matter for reuse (DRY), abstraction, decomposition, and testability.
+- Distinguish a pure function from one with side effects.
+
+## The College Version
+
+### Definition versus call
+
+A function has two separate moments in a program's life. The first is the definition: the place where you give the function a name, list the inputs it expects, and write the statements that make up its body. In Python the keyword `def` introduces a definition; other languages use their own syntax, but the idea carries across languages. Defining a function does not run its body — it only records the recipe under a name for later use.
+
+The second moment is the call: the point where you actually run the function by writing its name followed by parentheses, optionally passing in values. Each call executes the body from the top, using the values you supplied, and then returns control to wherever the call was made. A single definition can be called any number of times, from many places, with different inputs each time. Keeping these two moments distinct is the key mental model: the definition is written once, while calls can happen again and again. A common beginner error is to expect the body to run at the moment of definition rather than at the moment of a call.
+
+### Parameters, arguments, and return values
+
+The names listed in a function's definition are its parameters — placeholders that stand for whatever values a caller will supply. The concrete values passed in at a specific call are its arguments. Python's own glossary keeps these terms apart: a parameter is a named entity in the definition, and an argument is a value passed when the function is called. When a call happens, each argument is bound to the matching parameter, and inside the body the parameter behaves like a local name holding that value.
+
+A function usually reports a result with a return statement, which ends the call and hands a value back to the caller. That returned value can be stored in a variable, printed, or passed straight into another call. If a function finishes without reaching a return statement — or reaches a bare `return` — it still hands back a value: in Python that value is `None`, the language's way of saying "nothing useful." Functions that hand back a real result are sometimes called fruitful; those that act but return `None` are sometimes called void. How arguments actually bind to parameters, and which names are visible inside the body, is the subject of a separate topic, scope.
+
+### Why functions matter: reuse, abstraction, decomposition, testability
+
+Functions earn their place for four connected reasons. **Reuse:** once logic lives in a function, you call it wherever you need it instead of copying code, which is the heart of the DRY principle — "don't repeat yourself." When the logic must change, you edit one definition rather than hunting down every copy. **Abstraction:** a good function name lets you use a piece of behavior without re-reading how it works, so you can think about what it does and ignore the details for now. **Decomposition:** breaking a large problem into smaller, well-named functions — a topic of its own — turns one overwhelming task into a set of manageable pieces you can build and understand one at a time. **Testability:** a function with clear inputs and a clear return value can be checked on its own, by calling it with known inputs and comparing the result to what you expect. These benefits compound. Libraries are collections of functions someone else wrote and tested; methods in object-oriented programming are functions attached to objects; and recursion is simply a function that calls itself. All of them build on the same habit of packaging work behind a name with defined inputs and outputs.
+
+### Pure functions and side effects
+
+A function's return value is not always its only effect. A side effect is any change a function makes to the world outside its own local work — modifying a global variable, printing to the screen, writing a file, or changing a value that was passed in. A pure function has no side effects and depends only on its inputs: given the same arguments, it always returns the same result. An area function that just returns width times height is pure — it will return 15 for the inputs 5 and 3 every single time. A function that adds its argument to a shared running total is not pure: calling it twice with the same argument returns different results, because it both reads and changes outside state. Both kinds are useful — real programs need to print, save, and update data — but pure functions are the easiest to reuse, reason about, and test, so it helps to know which kind you are writing. This distinction was confirmed by running both versions in Python.
+
+## Key Vocabulary
+
+- **Function** — A named block of statements that performs a task and can return a value to whatever code called it.
+- **Function definition** — The code that creates a function by giving it a name, listing its parameters, and specifying the statements in its body; writing the definition does not run the body.
+- **Function call** — The act of running a function by writing its name with parentheses and any arguments, which executes the body and then returns control to the caller.
+- **Parameter** — A name listed in a function definition that stands for a value the caller will supply.
+- **Argument** — A concrete value passed to a function at a particular call, which is bound to a parameter.
+- **Return value** — The result a function hands back to its caller via a return statement; in Python a function with no return statement hands back `None`.
+- **Pure function** — A function whose result depends only on its arguments and that causes no side effects, so the same arguments always yield the same result.
+- **Side effect** — Any change a function makes outside its own local computation, such as altering a global variable, printing, or writing a file.
+- **DRY principle** — A design guideline — "don't repeat yourself" — met by writing logic once in a function and calling it wherever needed rather than duplicating code.
+
+## Eli-10
+
+Picture a recipe card. Writing the card is defining a function: you give it a name like "make pancakes," list what it needs (flour, eggs, milk), and write the steps. Nothing gets cooked just by writing the card. Cooking happens when someone follows it — that is calling the function. The ingredients you actually hand over that day are the arguments; the blanks on the card that say "add ___ cups of flour" are the parameters. The stack of pancakes that comes out is the return value. Because the card exists once, anyone can follow it again and again without rewriting the steps.
+
+## Eli's Analogy
+
+A function is a recipe card: written once, followed many times, with real ingredients filling in its blanks each time.
+
+**Where the analogy breaks down:** The recipe captures reuse and inputs well, but it misses side effects: a pure function is like a card that only produces food, while a function with side effects also, say, rearranges your whole kitchen every time you cook. A recipe also always makes something, whereas a function may return nothing (`None`) and simply perform an action.
+
+## Worked Example
+
+Consider a function that returns the area of a rectangle:
+
+```python
+def rectangle_area(width, height):
+    return width * height
+```
+
+Now trace the call `rectangle_area(5, 3)`. The argument `5` binds to the parameter `width` and `3` binds to `height`. The body evaluates `width * height`, which is `5 * 3 = 15`, and the `return` statement hands `15` back to the caller. Because the definition is separate from the call, the same function handles a different rectangle with no new code: `rectangle_area(10, 2)` binds `width` to `10` and `height` to `2` and returns `20`. Both results were confirmed by running the code in `python3`.
+
+## Common Mistakes
+
+- **Thinking a function's body runs at the moment you define it.** Defining only records the function under its name; the body runs only when the function is called.
+- **Using "parameter" and "argument" as if they were the same thing.** Parameters are the names in the definition; arguments are the actual values supplied at a call and bound to those parameters.
+- **Assuming every function returns a meaningful value.** A function with no return statement (or a bare `return`) hands back `None` in Python; it may exist for its side effects, such as printing.
+- **Copying the same block of code into several places instead of writing one function.** Define the logic once and call it where needed, so a later fix happens in a single place — the DRY principle.
+- **Treating printing a result and returning a result as the same thing.** Printing shows a value on screen (a side effect); returning hands the value back so other code can use it. A function may do one, both, or neither.
+
+## Compare / Contrast
+
+- **Function definition vs. Function call** — A definition names the function and stores its body without running it; a call executes that body, optionally with arguments, and produces a return value.
+- **Parameter vs. Argument** — A parameter is a placeholder name in the definition; an argument is the concrete value bound to that parameter at a specific call.
+- **Pure function vs. Function with side effects** — A pure function depends only on its arguments and changes nothing outside itself; a function with side effects also alters external state such as globals, files, or the screen.
+
+## Key Takeaway
+
+A function packages a task behind a name: define it once, call it many times, pass arguments into its parameters, and get a return value back. That single habit powers reuse, abstraction, decomposition, and testable code.
+
+## Practice Question Bank
+
+1. **Which statement best defines a function in programming?**
+   - A. A named, reusable block of statements that performs a task and can return a value to its caller.
+   - B. A single stored value that a program keeps in memory under a name.
+   - C. A reserved keyword the language uses to control the order of execution.
+   - D. A file that holds the complete source code of a program.
+
+   **Answer: A.** A function is a named, reusable block of statements that can return a value. A stored named value is a variable; a reserved keyword is a language token; a file of source code is a module or script.
+
+2. **In the definition `def area(width, height):` the names `width` and `height` are ___, while the `5` and `3` in the call `area(5, 3)` are ___.**
+   - A. arguments; parameters
+   - B. return values; parameters
+   - C. parameters; arguments
+   - D. keywords; identifiers
+
+   **Answer: C.** Parameters are the names listed in the definition; arguments are the concrete values supplied at a call. Option A reverses the terms.
+
+3. **Given `def rectangle_area(width, height): return width * height`, what value does the call `rectangle_area(5, 3)` evaluate to?**
+   - A. None
+   - B. 15
+   - C. 8
+   - D. 53
+
+   **Answer: B.** `5` binds to `width` and `3` to `height`, so the body returns `5 * 3 = 15` (verified in `python3`). `8` is the sum; `53` concatenates the digits.
+
+4. **Function P returns `a + b` and does nothing else. Function Q adds its argument to a global running total and returns the new total, so calling it twice with the same argument gives different results. Which statement is correct?**
+   - A. Both P and Q are pure functions.
+   - B. P has a side effect; Q is pure.
+   - C. Both P and Q have side effects.
+   - D. P is pure; Q has a side effect.
+
+   **Answer: D.** P depends only on its arguments and changes nothing outside itself, so it is pure. Q reads and modifies external state (the global total), which is a side effect and is why repeated calls differ.
+
+5. **Why does defining a function once and calling it in several places support the DRY ("don't repeat yourself") principle?**
+   - A. It forces every function to return None, which reduces memory use.
+   - B. It renames all variables globally so that names can never collide.
+   - C. The logic is written and maintained in one place, and each call reuses it instead of duplicating the code.
+   - D. It runs the function body immediately at definition time, before any call is made.
+
+   **Answer: C.** DRY is served because the logic lives in one definition that every call reuses, so a fix happens once rather than in many copies. Option D is wrong because defining a function does not execute its body — only a call does.
+
+## Sources
+
+- [The Python Tutorial — More Control Flow Tools (Defining Functions)](https://docs.python.org/3/tutorial/controlflow.html) — Python Software Foundation. `def` introduces a function definition; the `return` statement returns a value, and a function with no return (or that falls off the end) returns `None`.
+- [Python Glossary](https://docs.python.org/3/glossary.html) — Python Software Foundation. Definitions of "argument," "parameter," and "function"; anchors the parameter-versus-argument distinction.
+- [Think Python, 2e — Chapter 3: Functions](https://greenteapress.com/thinkpython2/html/thinkpython2004.html) — Allen B. Downey / Green Tea Press (CC BY-NC 3.0). Function as a named sequence of statements; definition versus call; fruitful versus void functions. No wording reproduced.
+- [Functions — JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) — MDN Web Docs, Mozilla (CC BY-SA 2.5). Second-language corroboration of the definition/call and parameter/argument distinctions.
+
+## Related Topics
+
+- `computer-science-fundamentals:foundations:scope`
+- `computer-science-fundamentals:foundations:recursion`
+- `computer-science-fundamentals:foundations:decomposition`
+- `computer-science-fundamentals:foundations:abstraction`
+- `computer-science-fundamentals:foundations:variables`
+
+## Editorial Metadata
+
+- **Editorial status:** READY_TO_PUBLISH
+- **Estimated minutes:** 9
+- **Researched at:** 2026-08-19
+- **Research status:** source-verified
+- **Rights status:** reference-only sources (Python docs PSF license, Think Python CC BY-NC, MDN CC BY-SA); no source prose adapted; all code executed and verified in `python3`.
+- **Transformation:** Facts from the Python tutorial and glossary, an OER text (Think Python), and MDN were synthesized into original prose; the rectangle-area worked example and the pure-versus-side-effect demonstration were run in `python3` before publication.

@@ -1,0 +1,306 @@
+{
+  "id": "computer-science-fundamentals:foundations:queues",
+  "subjectSlug": "computer-science-fundamentals",
+  "unitSlug": "foundations",
+  "slug": "queues",
+  "title": "Queues",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "queue",
+    "fifo",
+    "data-structure",
+    "abstract-data-type",
+    "foundations"
+  ],
+  "in30Seconds": "A queue is a collection that serves items in the order they arrived: first in, first out (FIFO). You enqueue new items at the rear and dequeue them from the front, like a line at a checkout. Its core operations - enqueue, dequeue, front (peek), and isEmpty - each run in constant O(1) time when the queue is implemented properly. Queues drive job scheduling, print spooling, buffering, and breadth-first search.",
+  "whyItMatters": "Queues are one of the handful of data structures you meet again and again, so understanding them early pays off across the rest of computer science. Operating systems queue processes and print jobs; networks buffer packets in queues; breadth-first search explores a graph using a queue; and streaming systems smooth bursts of data with queues. Knowing that a queue guarantees first-in-first-out order - and that its operations are O(1) only with the right implementation - lets you pick the correct structure for a problem and reason about how a system behaves under load. The same FIFO idea also shows up outside code, in any fair 'first come, first served' line, which makes it an intuitive model for scheduling and fairness.",
+  "learningObjectives": [
+    "Define a queue as a FIFO (first-in, first-out) abstract data type.",
+    "Describe the core operations enqueue, dequeue, front/peek, and isEmpty and state that each is O(1) with a proper implementation.",
+    "Explain why removing from the front of a plain array is O(n) and how a proper implementation avoids that cost.",
+    "Apply the FIFO rule to trace a sequence of enqueue and dequeue operations.",
+    "Identify real uses of queues (scheduling, buffering, breadth-first search) and name common variants."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "What a queue is",
+      "body": "A queue is an abstract data type: a collection defined by the operations it supports rather than by how it is stored. Its defining rule is order of service. NIST's Dictionary of Algorithms and Data Structures describes a queue as a collection in which only the earliest added item may be accessed, with basic operations to add at the tail and delete from the head - also known as first-in, first-out, or FIFO. In other words, items leave a queue in exactly the order they arrived. The mental model is a line of people at a checkout: whoever joins the back waits for everyone ahead of them, and the person who has waited longest is served next. This is the opposite of a stack, which is last-in, first-out (a stack serves the most recently added item first); that contrast is the one thing worth remembering about stacks here, and their push/pop behavior is covered in its own lesson. Because a queue is an abstract type, several concrete structures - a linked list, or an array used cleverly - can all realize it, as long as they honor FIFO order."
+    },
+    {
+      "heading": "The core operations",
+      "body": "A queue exposes a small, fixed set of operations. Enqueue adds an item at the rear (the tail). Dequeue removes and returns the item at the front (the head) - the item that has been waiting longest. Front, often called peek, returns the front item without removing it, so you can look at who is next without serving them. IsEmpty reports whether the queue currently holds any items, which matters because dequeuing from an empty queue is an error you must guard against. Some libraries add a size operation that reports how many items are stored. The important performance fact is that all of these operations can run in O(1) - constant time, independent of how many items the queue holds - when the queue is implemented properly, for example with a linked list that tracks both head and tail pointers, or with a circular array. Python's standard library offers collections.deque for exactly this purpose: its documentation states that appends and pops from either end run with approximately O(1) performance."
+    },
+    {
+      "heading": "Why the implementation matters",
+      "body": "The O(1) guarantee is not automatic; it depends on how the front is handled. A tempting but wrong approach is to store the items in an ordinary dynamic array (a Python list, say) and dequeue by removing element zero. That single line looks harmless, but removing the first element of an array forces every remaining element to shift down one position to fill the gap, which is O(n) work - proportional to the number of items left. Python's documentation makes this explicit: list objects incur O(n) memory-movement costs for pop(0) and insert(0, v) because those operations change the position of the underlying data. A proper queue avoids the shift. A linked-list implementation keeps a pointer to both the head and the tail, so enqueue appends at the tail and dequeue unlinks the head, each in constant time. A circular array (a ring buffer) keeps two indices, front and rear, and advances them modulo the array's capacity, reusing freed slots instead of shifting anything. Either way the cost of each operation stays constant. The lesson is general: the same abstract data type can be fast or slow depending on the structure you build it on, so 'a queue is O(1)' is a claim about a correct implementation, not about any code that happens to preserve FIFO order."
+    },
+    {
+      "heading": "Where queues are used, and common variants",
+      "body": "Queues appear wherever items must be handled in arrival order or work must be buffered between a fast producer and a slower consumer. Operating systems place processes and print jobs in queues so they run first-come, first-served. Networks and I/O systems buffer incoming data in queues to absorb bursts without losing anything. Breadth-first search, a fundamental graph and tree traversal, uses a queue to visit nodes level by level: you enqueue a node's unvisited neighbors and dequeue the next node to explore, which naturally explores closer nodes before farther ones. Message systems and task pipelines pass jobs through queues to decouple the parts of a system. Several named variants adjust the basic idea. A circular queue wraps a fixed-size array around on itself so freed slots at the front are reused. A double-ended queue, or deque (pronounced 'deck'), allows adding and removing at both ends, generalizing both queues and stacks. A priority queue departs from strict FIFO: instead of serving the oldest item, it serves the highest-priority one, which is a different discipline with its own implementation (typically a heap). Each of these deserves its own study; here it is enough to recognize the names and how they relate to the plain FIFO queue."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "Queue",
+      "definition": "An abstract data type that stores a collection of items and serves them in first-in, first-out order: the item that has waited longest is removed next."
+    },
+    {
+      "term": "FIFO (first-in, first-out)",
+      "definition": "The ordering rule of a queue, in which items are removed in the same order they were added."
+    },
+    {
+      "term": "Enqueue",
+      "definition": "The operation that adds an item at the rear (tail) of a queue."
+    },
+    {
+      "term": "Dequeue",
+      "definition": "The operation that removes and returns the item at the front (head) of a queue - the item added earliest."
+    },
+    {
+      "term": "Front (peek)",
+      "definition": "An operation that returns the item at the front of the queue without removing it."
+    },
+    {
+      "term": "isEmpty",
+      "definition": "An operation that reports whether the queue currently contains no items; used to guard against dequeuing from an empty queue."
+    },
+    {
+      "term": "Abstract data type",
+      "definition": "A data structure defined by the operations it supports and their behavior, independent of the concrete representation used to implement it."
+    },
+    {
+      "term": "Circular queue (ring buffer)",
+      "definition": "A queue implemented over a fixed-size array whose front and rear indices wrap around modulo the capacity, reusing freed slots without shifting elements."
+    },
+    {
+      "term": "Deque (double-ended queue)",
+      "definition": "A generalization of a queue that allows adding and removing items at both the front and the rear."
+    },
+    {
+      "term": "Priority queue",
+      "definition": "A queue-like structure that serves the highest-priority item next instead of the oldest, so it does not follow strict FIFO order."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "A queue is like a single-file line. New arrivals join the back, and the person at the very front is always the next to be served. Nobody cuts and nobody jumps ahead: whoever has been waiting the longest goes first. Adding to the back is called enqueue, and taking someone from the front is called dequeue. You can also peek at who is first without serving them, and check whether the line is empty. Because you only ever touch the two ends - the front and the back - each of these actions is quick no matter how long the line gets, as long as the line is built the right way.",
+    "analogy": "Think of the checkout line at a grocery store. You walk up and join the end of the line (enqueue). The cashier always helps whoever is at the front (dequeue), and that is the person who has been waiting longest. You can glance at who is next (peek) without changing the line, and you can see whether anyone is waiting at all (isEmpty). First come, first served - that is exactly a FIFO queue.",
+    "analogyLimits": "The line picture leaks in a couple of places. Real shoppers can leave a line or let someone cut, but a plain queue is strict FIFO - no jumping ahead. And a real line does not care how it is 'built,' whereas a computer queue is only fast if it is implemented with the right structure; a poorly built one can get slower to remove from as the line grows. A priority queue also breaks the analogy, since it serves the most important item next rather than the one that arrived first."
+  },
+  "workedExample": "Start with an empty queue and apply this sequence. Enqueue 1: the queue is now [1], with 1 at both front and rear. Enqueue 2: the queue is [1, 2]; 2 went to the rear, and 1 is still at the front. Enqueue 3: the queue is [1, 2, 3]. Now peek at the front: it returns 1 without removing it, so the queue is unchanged. Dequeue: this removes and returns the front item, 1, leaving [2, 3]. Dequeue again: returns 2, leaving [3]. Dequeue once more: returns 3, leaving an empty queue, so isEmpty is now true. The values came out 1, 2, 3 - the exact order they went in, which is the definition of FIFO. This trace was executed in Python 3.9 using collections.deque (append to enqueue, popleft to dequeue), and the dequeue order was confirmed to be [1, 2, 3]. Contrast this with a stack, which would have returned 3, 2, 1.",
+  "commonMistakes": [
+    {
+      "mistake": "Confusing a queue (FIFO) with a stack (LIFO).",
+      "correction": "A queue removes the oldest item first (first-in, first-out); a stack removes the newest item first (last-in, first-out). Enqueue 1, 2, 3 then dequeue gives 1, 2, 3; a stack would give 3, 2, 1."
+    },
+    {
+      "mistake": "Assuming any FIFO-preserving code makes enqueue and dequeue O(1).",
+      "correction": "Storing items in a plain array and removing element zero is O(n), because every remaining element must shift down. Constant-time operations require a proper implementation, such as a linked list with head and tail pointers or a circular array."
+    },
+    {
+      "mistake": "Adding at the front and removing at the front (or mixing up which end does what).",
+      "correction": "By convention enqueue adds at the rear and dequeue removes from the front. Adding and removing at the same end turns the structure into a stack, not a queue."
+    },
+    {
+      "mistake": "Dequeuing or peeking without checking whether the queue is empty.",
+      "correction": "Dequeue and front are undefined on an empty queue. Call isEmpty (or check size) first and handle the empty case, or you will hit an error or undefined behavior."
+    },
+    {
+      "mistake": "Thinking a priority queue is just a normal queue.",
+      "correction": "A priority queue serves the highest-priority item next, not the oldest, so it does not follow FIFO order. It is a related but distinct structure, usually built on a heap."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Queue (FIFO)",
+      "b": "Stack (LIFO)",
+      "distinction": "A queue removes the item that was added earliest (first-in, first-out); a stack removes the item added most recently (last-in, first-out). Queues add at the rear and remove at the front; a stack adds and removes at one end."
+    },
+    {
+      "a": "Enqueue",
+      "b": "Dequeue",
+      "distinction": "Enqueue adds an item at the rear of the queue; dequeue removes and returns the item at the front. They operate at opposite ends, and both are O(1) in a proper implementation."
+    },
+    {
+      "a": "Front (peek)",
+      "b": "Dequeue",
+      "distinction": "Front returns the front item but leaves the queue unchanged; dequeue returns the front item and removes it. Use peek to inspect who is next without serving them."
+    },
+    {
+      "a": "Plain queue (FIFO)",
+      "b": "Priority queue",
+      "distinction": "A plain queue serves items strictly in arrival order; a priority queue serves the highest-priority item next regardless of when it arrived, and is typically implemented with a heap rather than a simple list."
+    }
+  ],
+  "keyTakeaway": "A queue is a FIFO collection: enqueue adds at the rear, dequeue removes from the front, and front/peek and isEmpty support them - each O(1) with a proper implementation (linked list or circular array), but O(n) if you naively remove from the front of a plain array.",
+  "questionBank": [
+    {
+      "id": "computer-science-fundamentals:foundations:queues:1",
+      "prompt": "What does it mean to say a queue is a FIFO structure?",
+      "options": [
+        "The item added most recently is the one removed first",
+        "The item added earliest is the one removed first",
+        "Items are removed in random order",
+        "Items can only be added, never removed"
+      ],
+      "correctIndex": 1,
+      "explanation": "FIFO stands for first-in, first-out: items leave a queue in the same order they arrived, so the item that has waited longest is served next. Option A describes a stack (LIFO), which removes the most recently added item first. Queues are not random, and they support both adding (enqueue) and removing (dequeue).",
+      "difficulty": "recall",
+      "skill": "Defining FIFO ordering",
+      "sourceIds": [
+        "nist-dads-queue",
+        "morin-ods-interfaces"
+      ]
+    },
+    {
+      "id": "computer-science-fundamentals:foundations:queues:2",
+      "prompt": "In the standard queue vocabulary, which operation removes and returns the item at the front of the queue?",
+      "options": [
+        "Dequeue",
+        "Enqueue",
+        "Peek (front)",
+        "isEmpty"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dequeue removes and returns the front item - the one added earliest. Enqueue does the opposite, adding an item at the rear. Peek (front) returns the front item but leaves it in place, and isEmpty only reports whether the queue holds any items. Only dequeue both removes and returns the front element.",
+      "difficulty": "recall",
+      "skill": "Identifying queue operations",
+      "sourceIds": [
+        "nist-dads-queue",
+        "morin-ods-interfaces"
+      ]
+    },
+    {
+      "id": "computer-science-fundamentals:foundations:queues:3",
+      "prompt": "You implement a queue by storing items in a plain dynamic array and dequeuing by removing element zero (the first element). Why is this a poor implementation?",
+      "options": [
+        "Removing element zero silently reverses the order, breaking FIFO",
+        "Dynamic arrays cannot store more than a fixed number of items",
+        "Removing the first element forces every remaining element to shift down, making dequeue O(n)",
+        "Arrays cannot be used to implement a queue at all"
+      ],
+      "correctIndex": 2,
+      "explanation": "Removing the first element of an array leaves a gap that every remaining element must shift down to fill, which is O(n) work rather than O(1). Python's documentation notes this exact cost for pop(0). It does not reverse the order or break FIFO, dynamic arrays can grow, and arrays can implement a queue efficiently if done with a circular buffer instead of shifting.",
+      "difficulty": "understanding",
+      "skill": "Reasoning about implementation cost",
+      "sourceIds": [
+        "python-docs-collections-deque",
+        "morin-ods-interfaces"
+      ]
+    },
+    {
+      "id": "computer-science-fundamentals:foundations:queues:4",
+      "prompt": "Starting from an empty queue, you enqueue 1, then enqueue 2, then enqueue 3, then perform two dequeue operations. What values do the two dequeues return, in order?",
+      "options": [
+        "3 then 2, because the most recent item leaves first",
+        "1 then 1, because dequeue always returns the same front item",
+        "2 then 3, because dequeue starts from the second item added",
+        "1 then 2, because the earliest items leave first"
+      ],
+      "correctIndex": 3,
+      "explanation": "A queue is FIFO, so items leave in arrival order. After enqueuing 1, 2, 3 the front is 1; the first dequeue returns 1, and the second returns 2, leaving 3 in the queue. Option A describes stack (LIFO) behavior. Dequeue removes the item it returns, so it cannot return 1 twice, and it starts from the earliest item, not the second.",
+      "difficulty": "application",
+      "skill": "Tracing enqueue and dequeue operations",
+      "sourceIds": [
+        "nist-dads-queue",
+        "python-docs-collections-deque"
+      ]
+    },
+    {
+      "id": "computer-science-fundamentals:foundations:queues:5",
+      "prompt": "A breadth-first search explores a graph or tree level by level, visiting all nodes one step away before any node two steps away. Which data structure most naturally supports this order, and why?",
+      "options": [
+        "A stack, because LIFO order explores the deepest node first",
+        "A queue, because FIFO order visits nodes in the order they were discovered",
+        "A priority queue, because it always removes the smallest value first",
+        "A plain array with no ordering rule, because order does not matter in search"
+      ],
+      "correctIndex": 1,
+      "explanation": "Breadth-first search enqueues newly discovered neighbors and dequeues the next node to visit; because a queue is FIFO, nearer nodes (discovered earlier) are processed before farther ones, producing level-by-level traversal. A stack's LIFO order would dive deep first (that is depth-first search). A priority queue orders by priority, not discovery time, and an unordered array would not guarantee level order.",
+      "difficulty": "analysis",
+      "skill": "Applying FIFO to breadth-first search",
+      "sourceIds": [
+        "nist-dads-queue",
+        "morin-ods-interfaces"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "computer-science-fundamentals:foundations:queues:1",
+      "prompt": "What does it mean to say a queue is a FIFO structure?",
+      "options": [
+        "The item added most recently is the one removed first",
+        "The item added earliest is the one removed first",
+        "Items are removed in random order",
+        "Items can only be added, never removed"
+      ],
+      "correctIndex": 1,
+      "explanation": "FIFO stands for first-in, first-out: items leave a queue in the same order they arrived, so the item that has waited longest is served next. Option A describes a stack (LIFO), which removes the most recently added item first. Queues are not random, and they support both adding (enqueue) and removing (dequeue).",
+      "difficulty": "recall",
+      "skill": "Defining FIFO ordering",
+      "sourceIds": [
+        "nist-dads-queue",
+        "morin-ods-interfaces"
+      ]
+    },
+    {
+      "id": "computer-science-fundamentals:foundations:queues:2",
+      "prompt": "In the standard queue vocabulary, which operation removes and returns the item at the front of the queue?",
+      "options": [
+        "Dequeue",
+        "Enqueue",
+        "Peek (front)",
+        "isEmpty"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dequeue removes and returns the front item - the one added earliest. Enqueue does the opposite, adding an item at the rear. Peek (front) returns the front item but leaves it in place, and isEmpty only reports whether the queue holds any items. Only dequeue both removes and returns the front element.",
+      "difficulty": "recall",
+      "skill": "Identifying queue operations",
+      "sourceIds": [
+        "nist-dads-queue",
+        "morin-ods-interfaces"
+      ]
+    },
+    {
+      "id": "computer-science-fundamentals:foundations:queues:3",
+      "prompt": "You implement a queue by storing items in a plain dynamic array and dequeuing by removing element zero (the first element). Why is this a poor implementation?",
+      "options": [
+        "Removing element zero silently reverses the order, breaking FIFO",
+        "Dynamic arrays cannot store more than a fixed number of items",
+        "Removing the first element forces every remaining element to shift down, making dequeue O(n)",
+        "Arrays cannot be used to implement a queue at all"
+      ],
+      "correctIndex": 2,
+      "explanation": "Removing the first element of an array leaves a gap that every remaining element must shift down to fill, which is O(n) work rather than O(1). Python's documentation notes this exact cost for pop(0). It does not reverse the order or break FIFO, dynamic arrays can grow, and arrays can implement a queue efficiently if done with a circular buffer instead of shifting.",
+      "difficulty": "understanding",
+      "skill": "Reasoning about implementation cost",
+      "sourceIds": [
+        "python-docs-collections-deque",
+        "morin-ods-interfaces"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "computer-science-fundamentals:foundations:stacks",
+    "computer-science-fundamentals:foundations:lists",
+    "computer-science-fundamentals:foundations:arrays",
+    "computer-science-fundamentals:foundations:searching",
+    "computer-science-fundamentals:foundations:sorting"
+  ],
+  "sources": [
+    "nist-dads-queue",
+    "morin-ods-interfaces",
+    "python-docs-collections-deque"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference sources: a public-domain NIST DADS definition, the CC BY-licensed Open Data Structures text (facts synthesized, no passages reproduced, so no ShareAlike or excerpt obligation), and Python's official documentation used for its O(1)/O(n) complexity statements. All prose original.",
+    "researchedAt": "2026-08-19",
+    "transformation": "The FIFO definition and enqueue/dequeue/front/isEmpty operation set were built from the NIST DADS 'queue' entry and the Open Data Structures Queue/Stack/Deque interface section. The O(1) operation cost and the O(n) cost of removing from the front of a plain list were taken from Python's collections.deque documentation (deque O(1) both ends; list pop(0)/insert(0) O(n)). The enqueue 1,2,3 / dequeue worked example was executed in Python 3.9 with collections.deque and confirmed to return 1,2,3. Variants (circular queue, deque, priority queue) are named, not deeply taught; LIFO/stacks are only contrasted, not taught here."
+  },
+  "contentHash": "f620ae0fcecdca5e",
+  "status": "source-verified",
+  "public": false
+}

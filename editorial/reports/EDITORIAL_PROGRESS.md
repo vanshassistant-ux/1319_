@@ -1,6 +1,6 @@
 # ELIEXPLAINS GLOBAL EDITORIAL PROGRESS
 
-Generated: 2026-08-19T23:21:26.542Z
+Generated: 2026-08-19T23:32:25.162Z
 Counts are computed from the phase content stores by `bun run editorial:progress`.
 
 Subjects total: 44
@@ -9,23 +9,23 @@ Subjects remaining: 35
 Subject completion: 20.45%
 
 Total topics: 1319
-Topics processed: 219
+Topics processed: 227
 Topics published: 0
-Topics ready to publish: 219
+Topics ready to publish: 227
 Topics held: 0
 Topics requiring review: 0
-Topics remaining: 1100
-Topic processing: 16.60%
+Topics remaining: 1092
+Topic processing: 17.21%
 
-Verified questions: 1095
-Unique source records: 1839
-Source usage classes: REFERENCE_ONLY=1270, PUBLIC_DOMAIN=463, ATTRIBUTION_REQUIRED=67, EXTRACT_AND_ADAPT=37, LINK_ONLY=2
+Verified questions: 1135
+Unique source records: 1867
+Source usage classes: REFERENCE_ONLY=1297, PUBLIC_DOMAIN=464, ATTRIBUTION_REQUIRED=67, EXTRACT_AND_ADAPT=37, LINK_ONLY=2
 
 ## Phase progress
 
 | Phase | Subjects | Topics | Percent |
 | --- | --- | --- | --- |
-| 1 | 9 / 11 | 219 / 282 | 77.66% |
+| 1 | 9 / 11 | 227 / 282 | 80.50% |
 | 2 | 0 / 11 | 0 / 325 | 0.00% |
 | 3 | 0 / 11 | 0 / 337 | 0.00% |
 | 4 | 0 / 11 | 0 / 375 | 0.00% |
@@ -35,7 +35,7 @@ Source usage classes: REFERENCE_ONLY=1270, PUBLIC_DOMAIN=463, ATTRIBUTION_REQUIR
 | Collection | Subjects | Topics | Percent |
 | --- | --- | --- | --- |
 | Professional Studies | 7 / 7 | 166 / 166 | 100.00% |
-| Technology | 1 / 8 | 25 / 257 | 9.73% |
+| Technology | 1 / 8 | 33 / 257 | 12.84% |
 | Business & Money | 0 / 9 | 0 / 243 | 0.00% |
 | Humanities & Culture | 0 / 7 | 0 / 202 | 0.00% |
 | Science & Health | 0 / 6 | 0 / 206 | 0.00% |
@@ -53,4 +53,5 @@ Source usage classes: REFERENCE_ONLY=1270, PUBLIC_DOMAIN=463, ATTRIBUTION_REQUIR
 | health-administration | 24 / 24 | 0 | 24 | 0 | 0 | 0 |
 | computer-literacy | 25 / 25 | 0 | 25 | 0 | 0 | 0 |
 | graphic-design-and-digital-media | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
+| computer-science-fundamentals | 8 / 27 | 0 | 8 | 0 | 0 | 19 |
 | engineering-fundamentals | 28 / 28 | 0 | 28 | 0 | 0 | 0 |

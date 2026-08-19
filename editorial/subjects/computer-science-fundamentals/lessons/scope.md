@@ -1,0 +1,186 @@
+# Scope
+
+## In 30 Seconds
+
+Scope is the region of a program's text where a name is valid and can be used. A variable created inside a function is usually local: it exists only there and cannot be seen outside. Names defined at the top level of a file are global. When two names share an identifier, the inner one shadows the outer one nearby. Knowing a name's scope tells you where you can read it, where you can change it, and which value a bare reference will find.
+
+## Why This Matters
+
+Scope is what lets large programs stay understandable. Because a function's local names cannot leak out, you can reuse the name `count` or `i` in dozens of functions without them interfering, and you can read one function without tracking every other. Most "why is this variable empty?" and "why did that value change on its own?" bugs are really scope questions: a name was read in the wrong region, or shadowed by a closer one, or assigned locally when a global was meant. The same mental model, an inner region searched before an outer one, carries across Python, JavaScript, C, and Java even though the exact rules differ, so learning it once pays off in every language you touch.
+
+## Learning Objectives
+
+- Define scope as the region of program text where a name is valid and directly accessible.
+- Distinguish local scope from global (module) scope, and function scope from C-family block scope.
+- Explain variable shadowing and predict which binding a bare reference resolves to.
+- Apply the LEGB search order to trace how Python resolves a name.
+- Distinguish scope (where a name is visible) from lifetime (how long its value lives) and from a namespace (the name-to-object mapping itself).
+
+## The College Version
+
+### What scope means
+
+The scope of a name is the region of program text in which that name is valid and can be referred to directly, that is, written by itself without any qualifying prefix. Python's tutorial defines a scope as a textual region where a namespace is directly accessible, and directly accessible means an unqualified use of a name is looked up in that namespace. So scope is fundamentally about visibility: given a point in the code and a bare name, scope decides whether that name means anything there and, if several names share the identifier, which one it refers to. This is a compile-time, textual property; you can determine a name's scope by reading the source, before the program ever runs. Keep scope separate from two neighbours. A namespace is the actual mapping from names to objects (Python's glossary calls it the place where a variable is stored); scope is the region where a particular namespace is the one a bare name searches. And lifetime, or extent, is how long a value stays alive in memory, which is related to but not the same as where its name is visible. A local variable's name is visible only inside its function, and its value typically lives only while that function call is running.
+
+### Local and global scope
+
+The two scopes you meet first are local and global. Python's execution model states the rule crisply: if a name is bound inside a block (a function body, for instance), it is a local variable of that block unless it is declared `global` or `nonlocal`; a name bound at the top level of a module is a global variable. So writing `total = 0` at the top of a file makes `total` global to that module, while writing it inside a function makes `total` local to that function. The consequence students feel first is that locals do not escape. As the OER Think Python puts it, a variable created inside a function only exists inside the function; try to read it outside and you get a `NameError`, because out there the name has no binding at all. Function parameters behave the same way, they are local too, though parameters themselves belong to the functions topic. This containment is a feature, not a limitation: because each function's locals are private, you can use `count` or `i` in many functions without collisions, and you can reason about one function without reading the rest. Global scope is the shared outer region of a single module; genuinely program-wide names, like the built-in `print`, live in a still-outer built-in scope.
+
+### Shadowing and the LEGB search order
+
+When the same identifier names both an outer and an inner variable, the inner one shadows the outer: within the inner region, the bare name resolves to the inner binding, and the outer one is temporarily hidden but unchanged. Python resolves a bare name by searching nested scopes in a fixed order, often abbreviated LEGB. The tutorial lists three or four nested scopes searched in this sequence: the innermost (Local) scope first; then the scopes of any Enclosing functions, nearest first; then the current module's Global scope; and finally the outermost Built-in namespace. The search stops at the first scope that has the name, which is exactly why a local binding shadows a global one, the local is found first. A crucial Python quirk governs assignment: unless a `global` or `nonlocal` statement is in effect, every assignment goes into the innermost scope, and if a name-binding operation appears anywhere in a block, that name is treated as local throughout the entire block. This is why a function that both reads and assigns a global name, without declaring it, raises `UnboundLocalError`: the assignment made the name local everywhere in the function, so the earlier read finds no value yet. Other languages resolve names differently. C, Java, and JavaScript's `let` and `const` use block scope, where a name introduced inside any `{ }` block is confined to that block, so a loop body or an `if` branch can have its own short-lived names. Python has no block scope of that kind: a name assigned inside an `if` or `for` is still just local to the enclosing function.
+
+### Reaching outward on purpose: global and nonlocal
+
+Sometimes you really do want a function to rebind a name that lives in an outer scope, and Python makes you say so explicitly. The `global` statement declares that the listed names live in the module's top-level namespace and should be rebound there, so `global count` lets a function change the module's `count` rather than creating a local shadow. The `nonlocal` statement is for nested functions: it makes the named variables refer to the nearest enclosing function's binding and rebind it there, and Python raises a `SyntaxError` at compile time if no such enclosing binding exists (so `nonlocal` cannot reach a module global). The design point is that reading an outer name needs no declaration, but assigning to one does, which keeps accidental cross-scope writes from sneaking in. As a matter of style, heavy use of `global` is a warning sign: it reintroduces the very action-at-a-distance that local scope was invented to prevent. Passing values in as parameters and returning results, mechanisms covered in the functions topic, is usually the cleaner way to move data between scopes.
+
+## Key Vocabulary
+
+- **Scope** — The region of program text where a name is valid and can be referenced directly, without any qualifying prefix.
+- **Local scope** — The scope inside a single function; names bound there exist only within that function and are not visible outside it.
+- **Global scope** — The top-level scope of a module; a name assigned at module level is global to that module.
+- **Block scope** — A scheme used by C-family languages (and JavaScript `let`/`const`) in which a name introduced inside a `{ }` block is confined to that block; Python does not use this for `if`/`for` blocks.
+- **Shadowing** — When an inner name reuses an outer name's identifier, so within the inner region the bare name refers to the inner binding and the outer one is hidden but unchanged.
+- **LEGB rule** — The order Python searches for a bare name: Local, then Enclosing function scopes, then Global (module), then Built-in; the first match wins.
+- **Namespace** — The mapping from names to objects itself; scope is the region in which a given namespace is the one a bare name searches.
+- **Lifetime (extent)** — How long a value stays alive in memory, a separate question from scope, which is about where a name is visible.
+- **global statement** — A declaration that the named variables live in the module's top-level namespace and should be rebound there rather than treated as local.
+- **nonlocal statement** — A declaration that the named variables refer to the nearest enclosing function's binding and should be rebound there; it cannot reach a module global.
+
+## Eli-10
+
+A name in a program is like a word that only means something in certain rooms. Inside a function is one room: any name you make there stays in that room, and once the function finishes, people standing outside cannot use it. The top level of your file is a bigger, shared room that everyone can see into. When you use a name, the computer looks for it starting in the room you are standing in, and if it is not there it looks in the next room out, then the next, until it finds one. If the same word is written on a note in your small room and again in the big room, the computer reads the closest note first, so the small-room note wins while you are inside.
+
+## Eli's Analogy
+
+Think of nested rooms with labeled sticky notes. You are in a small inner room, inside a bigger room, inside the whole building. To find what a name points to, you check the notes on your own walls first, then step out to the next room's walls, then the building's front hall. A note in your small room with the same word as one in the front hall hides the front-hall note, but only while you are in that room; step out and the front-hall note is still exactly as it was.
+
+**Where the analogy breaks down:** The rooms picture gets the search direction right but misses two things. First, whether a name is local is decided by reading the code, not by where you happen to be at run time: if a function assigns a name anywhere in its body, that name is local for the whole function, even on lines before the assignment. Second, real rooms let you freely edit any note you can see; scope lets you read an outer note without ceremony but makes you say `global` or `nonlocal` before you are allowed to change one.
+
+## Worked Example
+
+Save this Python and run it.
+
+```python
+x = "global"
+
+def show():
+    y = "local"           # local name, only valid inside show()
+    print("inside show, y =", y)
+
+show()
+try:
+    print(y)              # y is not visible out here
+except NameError as e:
+    print("NameError:", e)
+
+def shadow():
+    x = "local x"         # a NEW local x that shadows the global x
+    print("inside shadow, x =", x)
+
+shadow()
+print("outside, x =", x)  # global x unchanged
+
+def change():
+    global x
+    x = "changed global"  # rebinds the module-level x on purpose
+
+change()
+print("after change(), x =", x)
+```
+
+Output:
+
+```
+inside show, y = local
+NameError: name 'y' is not defined
+inside shadow, x = local x
+outside, x = global
+after change(), x = changed global
+```
+
+`y` is local to `show()`, so referencing it at module level raises `NameError`. In `shadow()`, the plain assignment creates a new local `x` that shadows, rather than replaces, the global one, so the module-level `x` still reads `"global"` afterward. Only `change()`, which declares `global x`, actually rebinds the module variable. The contrast between `shadow()` and `change()` is the whole lesson: a plain assignment makes a local shadow, while `global x` reaches out and rebinds the global itself.
+
+## Common Mistakes
+
+- **Expecting a variable created inside a function to be readable after the function returns.** That name is local; outside the function it has no binding, so referencing it raises `NameError`. To get a value out, return it or assign to a name in an outer scope on purpose.
+- **Thinking that assigning a name equal to an outer variable inside a function changes the outer variable.** A plain assignment creates a local name that shadows the outer one; the outer variable is unchanged. Use `global` (module level) or `nonlocal` (enclosing function) if you truly need to rebind the outer name.
+- **Reading a global inside a function that also assigns to the same name, and expecting it to just work.** If a function assigns a name anywhere in its body, that name is local for the whole function, so the earlier read raises `UnboundLocalError`. Declare `global` (or `nonlocal`) so the name is not treated as a fresh local.
+- **Assuming Python gives an `if` or `for` block its own scope, the way C or Java would.** Python has no block scope for `if`/`for`; names assigned there are local to the enclosing function and remain visible after the block. Only functions, modules, classes, and comprehensions introduce scopes.
+- **Treating scope and lifetime as the same thing.** Scope is where a name is visible in the text; lifetime is how long its value stays in memory. A local name is invisible outside its function, and its value typically lives only during the call.
+
+## Compare / Contrast
+
+- **Local scope vs Global scope** — A local name is confined to one function and vanishes from view outside it; a global name is defined at module level and is visible throughout the module (readable from inside functions, rebindable only with `global`).
+- **Scope vs Namespace** — A namespace is the actual name-to-object mapping; scope is the textual region in which a particular namespace is the one a bare name searches. Different scopes have different namespaces.
+- **Shadowing (a plain local assignment) vs Rebinding with global/nonlocal** — Shadowing creates a new inner name that hides the outer one and leaves it unchanged; `global`/`nonlocal` make the assignment act on the outer binding itself, changing what the outer name refers to.
+- **Python function scope vs C-family block scope** — In C, Java, or JavaScript `let`/`const`, a name inside any `{ }` block is confined to that block; in Python a name assigned inside an `if` or `for` is local to the whole enclosing function, not just the block.
+
+## Key Takeaway
+
+Scope is the region of code where a name is valid: locals live and die inside their function, globals span the module, and a bare name is resolved by searching Local, Enclosing, Global, then Built-in scopes, so an inner name shadows an outer one and changing an outer binding requires an explicit `global` or `nonlocal`.
+
+## Practice Question Bank
+
+1. **Which statement best defines the scope of a name in a program?**
+   - A. The amount of memory the value bound to the name occupies while the program runs.
+   - B. The region of program text where the name is valid and can be referenced without qualification.
+   - C. The order in which the program assigns successive values to the name.
+   - D. The data type of the value that the name currently refers to.
+
+   **Answer: B.** Scope is a textual, visibility property: the region of code where a name is valid and a bare reference to it is looked up. Memory size is unrelated, assignment order is control flow not scope, and the value's type is a separate property.
+
+2. **In Python, a variable first assigned inside a function, with no `global` or `nonlocal` declaration, is:**
+   - A. local to that function, so it cannot be referenced from outside the function.
+   - B. global, so every other function in the module can read and reassign it.
+   - C. valid everywhere in the program once the function has been called at least once.
+   - D. shared with the caller, because a function and its caller use a single namespace.
+
+   **Answer: A.** A name bound inside a function is local to it unless declared `global` or `nonlocal`; it only exists inside the function, and referencing it outside raises `NameError`. It does not become global, does not persist program-wide after a call, and the caller has its own separate namespace.
+
+3. **A module defines `x = "global"`. A function is written as: `def shadow(): x = "local x"; print(x)`. The program calls `shadow()` and then, back at module level, prints `x`. What two values are printed, in order?**
+   - A. "global" then "global", because a function is not allowed to create a variable that reuses the name x.
+   - B. "local x" then "local x", because assigning x anywhere makes the change visible everywhere.
+   - C. "global" then "local x", because the module's x is updated after the function returns.
+   - D. "local x" then "global", because the assignment inside shadow() creates a new local x that shadows the module x without changing it.
+
+   **Answer: D.** Inside `shadow()` the assignment creates a local `x`, so `print(x)` there shows "local x". That local only shadows the global; it does not alter it, so the module-level print afterward still shows "global". Verified by running the code.
+
+4. **When a Python function refers to a bare name it does not itself assign, in what order are scopes searched to resolve it?**
+   - A. Built-in names first, then the module's globals, then the local scope, stopping at the first match.
+   - B. Only the local scope; if the name is not local, the reference immediately fails.
+   - C. The local scope first, then any enclosing function scopes, then the module's global scope, then the built-in scope.
+   - D. The module's global scope first, then the local scope, then any enclosing function scopes.
+
+   **Answer: C.** Python uses the LEGB order: Local, then Enclosing functions, then Global (module), then Built-in, stopping at the first scope that has the name. This is why a local name shadows a global one. The other orders reverse or truncate the search.
+
+5. **A module has `count = 0`. A function tries to do `count = count + 1` with no declaration, and running it raises `UnboundLocalError`. Which single change fixes it, and why?**
+   - A. Add count = 0 as the function's first line, because a function needs to initialize its own copy before using it.
+   - B. Add global count at the top of the function, because assigning count otherwise makes it local for the whole function, so the read happens before any local value exists.
+   - C. Add nonlocal count at the top of the function, because count lives in an enclosing function scope.
+   - D. Add return count at the end, because a function cannot change a variable unless it also returns it.
+
+   **Answer: B.** Because the function assigns `count`, Python treats `count` as local throughout the function, so `count + 1` reads a local that has no value yet (`UnboundLocalError`). Declaring `global count` makes the name refer to the module binding, fixing both the read and the write. `nonlocal` fails here (`count` is a module global, not in an enclosing function, so it is a `SyntaxError`), a local re-init changes the meaning, and returning does not address the unbound read.
+
+## Sources
+
+- [The Python Tutorial — 9.2 Python Scopes and Namespaces](https://docs.python.org/3/tutorial/classes.html), Python Software Foundation — namespace and scope definitions, the LEGB search order, and the rule that assignments go into the innermost scope unless `global`/`nonlocal` is in effect. Reference only.
+- [The Python Language Reference — Execution model (naming and binding)](https://docs.python.org/3/reference/executionmodel.html), Python Software Foundation — local vs global names, the "binding anywhere in a block makes the name local" rule, and the effect of `global` and `nonlocal`. Reference only.
+- [Python Documentation — Glossary](https://docs.python.org/3/glossary.html), Python Software Foundation — namespace as "the place where a variable is stored." Reference only.
+- [Think Python 2e — Functions](https://greenteapress.com/thinkpython2/html/thinkpython2004.html), Allen B. Downey / Green Tea Press (CC BY-NC 3.0) — a variable created inside a function only exists inside the function. Reference only; no prose adapted.
+
+## Related Topics
+
+- computer-science-fundamentals:foundations:variables
+- computer-science-fundamentals:foundations:functions
+- computer-science-fundamentals:foundations:conditional-statements
+- computer-science-fundamentals:foundations:loops
+- computer-science-fundamentals:foundations:recursion
+
+## Editorial Metadata
+
+- **Editorial status:** READY_TO_PUBLISH
+- **Research status:** source-verified
+- **Rights status:** reference-only sources (Python docs, PSF; Think Python, CC BY-NC); no source prose adapted; all code executed in python3 and outputs verified.
+- **Researched at:** 2026-08-19
+- **Transformation:** Facts drawn from the Python language reference and tutorial and an OER text were synthesized into original prose; the worked example and every trace (NameError, shadowing, UnboundLocalError, global rebinding, nonlocal SyntaxError) were run in python3 before publication.

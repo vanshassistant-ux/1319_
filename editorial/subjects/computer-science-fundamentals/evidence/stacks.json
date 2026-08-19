@@ -1,0 +1,139 @@
+{
+  "topicId": "computer-science-fundamentals:foundations:stacks",
+  "subjectId": "computer-science-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "A stack is a LIFO (last-in, first-out) collection: only the most recently added item can be removed next",
+      "The core operations push (add to top), pop (remove and return top), peek/top (read top without removing), and isEmpty",
+      "Each core operation is O(1) time when the stack is implemented on a dynamic array or a linked list",
+      "Overflow (pushing onto a full fixed-capacity stack) and underflow (popping or peeking an empty stack) as the two error conditions",
+      "Real uses: the call stack for function calls, undo/redo, expression evaluation, balanced-bracket matching, and depth-first search (DFS)",
+      "Two small Bash-verified worked examples: push 1,2,3 then pop returns 3,2,1; and balanced-bracket matching of a string"
+    ],
+    "supporting": [
+      "A stack is an abstract data type (ADT): it is defined by its LIFO behaviour and operations, not by any one implementation",
+      "A stack can be implemented on top of an array/dynamic array or a linked list; the implementation is named, not re-taught here",
+      "One contrast sentence with the queue (FIFO), whose operations belong to the sibling queues topic"
+    ],
+    "outOfScope": [
+      "Queues and FIFO enqueue/dequeue operations (own sibling topic: queues)",
+      "How dynamic arrays and linked lists work internally (own sibling topics: arrays, lists)",
+      "Recursion mechanics and base cases beyond noting that recursion runs on the call stack (own sibling topic: recursion)",
+      "Full expression-evaluation and DFS algorithms (named as uses only, not taught in full)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A stack is a collection in which only the most recently added item may be removed; the latest added item is at the top, and the discipline is last-in, first-out (LIFO).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-stack", "python-tutorial-datastructures"],
+      "status": "supported"
+    },
+    {
+      "claim": "The basic stack operations are push (add an item to the top) and pop (remove the most recently added item); top/peek (read the top item) and isEmpty are commonly available as well.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-stack", "ods-morin-interfaces"],
+      "status": "supported"
+    },
+    {
+      "claim": "When a stack is backed by a dynamic array, push is add(n, x) and pop is remove(n-1), operating only at the end of the sequence; these top-only operations run in O(1) time (amortized for a dynamic array).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ods-morin-interfaces"],
+      "status": "supported",
+      "verification": "Definition of push/pop as operations at the end of an ArrayStack confirmed against Open Data Structures; the LIFO order and O(1)-at-the-top behaviour were also reproduced in Python 3.9.6 via Bash on 2026-08-19."
+    },
+    {
+      "claim": "In Python a list can be used directly as a stack: append() pushes to the top and pop() without an index removes and returns the top, giving last-in, first-out order.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-tutorial-datastructures"],
+      "status": "supported",
+      "verification": "Executed in Python 3.9.6 via Bash on 2026-08-19: pushing 1,2,3 with append then calling pop three times returned 3,2,1."
+    },
+    {
+      "claim": "Pushing three values 1, 2, 3 onto an empty stack and then popping twice returns 3 then 2 and leaves 1 on the stack.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-tutorial-datastructures", "nist-dads-stack"],
+      "status": "supported",
+      "verification": "Traced and executed in Python 3.9.6 via Bash on 2026-08-19; pop order was [3, 2] with [1] remaining."
+    },
+    {
+      "claim": "Balanced-bracket matching can be decided with a stack: push each opening bracket, and on each closing bracket pop and check that it matches the expected opener; the string is balanced only if every pop matches and the stack is empty at the end. The string '([)]' is unbalanced because when ')' is read the popped bracket is '[', which does not match.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-stack"],
+      "status": "supported",
+      "verification": "Implemented and executed in Python 3.9.6 via Bash on 2026-08-19 across cases including '([]{})' (balanced), '{[()]}' (balanced), '(]' , '(()' , ')(' , and '([)]' (all unbalanced); results matched the described rule."
+    },
+    {
+      "claim": "The mechanism that tracks active function calls is the call stack: the most recently called function is the first to finish and return, which is LIFO order; recursion relies on this call stack.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-stack", "python-tutorial-datastructures"],
+      "status": "supported"
+    },
+    {
+      "claim": "A stack (LIFO) differs from a queue (FIFO): a stack removes the most recently added item, while a queue removes the oldest.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ods-morin-interfaces", "nist-dads-stack"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft was generic boilerplate ('Stacks is a foundational concept... names the concept, describes its parts') with no definition of LIFO, no operations, no complexity, no example, and circular vocabulary ('Stacks: a foundational Computer Science Fundamentals concept covered in this lesson'). None of its substantive wording was retained."
+  ],
+  "correctionsNeeded": [
+    "Replaced the placeholder text with the standard LIFO definition and the four core operations (push, pop, peek/top, isEmpty), attributed to NIST DADS and Open Data Structures.",
+    "Added the O(1) complexity claim for the top-only operations, which the draft omitted entirely.",
+    "Added two concrete, Bash-verified worked examples (push/pop trace and bracket matching), replacing the draft's empty 'workedExample'.",
+    "Added overflow/underflow, the call-stack and undo/redo uses, and a one-sentence stack-vs-queue contrast, all absent from the draft.",
+    "Replaced circular vocabulary with non-circular, verified definitions."
+  ],
+  "rightsIssues": [
+    "NIST DADS is a U.S. Government work (public domain); all lesson prose is original synthesis, not copied.",
+    "The Python tutorial (docs.python.org) is documentation used REFERENCE_ONLY; the facts (append pushes, pop removes the top, LIFO) are restated in original words with no passage reproduced.",
+    "Open Data Structures (Pat Morin) is CC BY 2.5 CA: facts were synthesized and all prose is original; no source wording reproduced. Attribution recorded here."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-dads-stack",
+      "title": "stack - Dictionary of Algorithms and Data Structures (DADS)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://xlinux.nist.gov/dads/HTML/stack.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Authoritative, public-domain definition: a stack is 'a collection of items in which only the most recently added item may be removed,' the latest added item is at the top, basic operations are push and pop, and top and isEmpty are often available too; identified as last-in, first-out (LIFO). Supports the definition, the operations, and the LIFO framing. Prose synthesized, not copied."
+    },
+    {
+      "id": "python-tutorial-datastructures",
+      "title": "5. Data Structures - The Python Tutorial (Using Lists as Stacks)",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/tutorial/datastructures.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. The 'Using Lists as Stacks' section states that a list works as a stack where the last element added is the first retrieved (last-in, first-out); append() adds an item to the top and pop() without an explicit index retrieves the top. Used for the concrete Python implementation and to verify the push 1,2,3 -> pop 3,2,1 trace. Prose original."
+    },
+    {
+      "id": "ods-morin-interfaces",
+      "title": "Open Data Structures (in pseudocode) - Interfaces (Stack, the LIFO Queue; ArrayStack)",
+      "provider": "Pat Morin",
+      "url": "https://opendatastructures.org/ods-python.pdf",
+      "sourceType": "open-textbook",
+      "usage": "EXTRACT_AND_ADAPT",
+      "license": "CC BY 2.5 CA",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5/ca/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Verified 2026-08-19 (PDF at the canonical URL returns HTTP 200; exact wording cross-checked against the published text). Defines the Stack as a LIFO discipline where add(x)/remove() are renamed push(x)/pop() to avoid confusing LIFO with FIFO, and shows the ArrayStack implementing push(x) as add(n,x) and pop() as remove(n-1) - i.e. operations at the end/top. Supports the operations, the ADT-vs-implementation point, the O(1)-at-the-top behaviour, and the stack-vs-queue contrast. Facts synthesized in original prose; no passages reproduced."
+    }
+  ]
+}

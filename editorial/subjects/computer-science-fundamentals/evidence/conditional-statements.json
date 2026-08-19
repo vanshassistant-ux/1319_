@@ -1,0 +1,147 @@
+{
+  "topicId": "computer-science-fundamentals:foundations:conditional-statements",
+  "subjectId": "computer-science-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "What a conditional statement is and how it alters control flow from a straight sequence to a branch",
+      "The if statement guarding a block on a boolean condition",
+      "The else clause and binary selection (exactly one of two branches runs)",
+      "The else-if (elif) chain: first true condition wins, at most one branch executes, order matters",
+      "Nested conditionals (a conditional inside a branch) and how they differ from a chain and from independent ifs",
+      "switch/match named as multi-way branching; Python has no switch, uses if/elif or match (3.10+)",
+      "A traced worked example classifying a number as negative/zero/positive"
+    ],
+    "supporting": [
+      "Conditions are boolean expressions built with comparison and logical operators",
+      "Difference between assignment (=) and equality comparison (==) in conditions",
+      "Structural pattern matching as the generalization match provides over a C-style switch"
+    ],
+    "outOfScope": [
+      "Truth tables and AND/OR/NOT semantics and De Morgan's laws (owned by boolean-logic; only used here)",
+      "Loops and iteration (own topic)",
+      "Deep treatment of comparison/logical operators and precedence (owned by operators)",
+      "Ternary/conditional expressions beyond a brief mention",
+      "Exception handling (try/except) as a control-flow construct"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A conditional statement evaluates a boolean condition and executes a block of code based on whether it is true or false, changing the program's control flow.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-tutorial-controlflow", "downey-think-python-conditionals"],
+      "status": "supported"
+    },
+    {
+      "claim": "The keyword 'elif' is short for 'else if' and lets one conditional test additional cases.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-tutorial-controlflow"],
+      "status": "supported"
+    },
+    {
+      "claim": "An if/elif/else statement selects exactly one suite by evaluating the conditions one by one until one is true, then executes that suite and no other part of the statement; if all are false, the else suite runs (if present).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-reference-if-statement"],
+      "status": "supported"
+    },
+    {
+      "claim": "Because the first true condition wins in a chain, the order of the branches affects the outcome; a broad condition placed before a narrower one can make the later branch unreachable.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-reference-if-statement", "downey-think-python-conditionals"],
+      "status": "supported"
+    },
+    {
+      "claim": "A branch of a conditional can contain another conditional (nesting), reached only when the outer condition held; a branch is one of the alternative sequences of statements in a conditional.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["downey-think-python-conditionals"],
+      "status": "supported"
+    },
+    {
+      "claim": "Python has no switch statement; the documentation presents an if/elif/elif sequence as a substitute for the switch/case statements of other languages.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-tutorial-controlflow"],
+      "status": "supported"
+    },
+    {
+      "claim": "Python 3.10 added the match statement (structural pattern matching) as a compound statement; it tests a subject against structural patterns rather than only comparing a scalar to constants.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["pep-634-structural-pattern-matching", "python-reference-if-statement"],
+      "status": "supported"
+    },
+    {
+      "claim": "Classifying n with `if n < 0: negative / elif n == 0: zero / else: positive` yields negative for n=-4, zero for n=0, positive for n=7, with exactly one branch running each time.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-tutorial-controlflow"],
+      "status": "supported-verified-in-bash"
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft described conditional statements generically as 'a concept students use to organize information, ask better questions, and explain relationships' with no reference to branching, boolean conditions, or if/else; this is boilerplate unrelated to the actual construct and was discarded."
+  ],
+  "correctionsNeeded": [
+    "Replaced the placeholder definition with the correct control-flow definition (test a boolean condition, run a branch).",
+    "Added the concrete if/elif/else mechanics, the single-branch/first-true-wins rule, branch-order sensitivity, nesting vs. independent ifs, and switch/match, none of which the draft contained.",
+    "Replaced the abstract 'toolbox drawer/map legend' analogy and vague worked example with a choose-your-own-adventure analogy and a traced negative/zero/positive classifier verified in Python."
+  ],
+  "rightsIssues": [
+    "Think Python (Downey) is CC BY-NC-SA 4.0; used as REFERENCE_ONLY with attribution, facts synthesized in original prose, no source wording reproduced.",
+    "Python documentation and PEP 634 are used as REFERENCE_ONLY; short factual phrases (e.g., 'elif is short for else if') are standard technical descriptions, not copyrighted expression reproduced at length."
+  ],
+  "sourceRecords": [
+    {
+      "id": "python-tutorial-controlflow",
+      "title": "The Python Tutorial — 4. More Control Flow Tools (if Statements)",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/tutorial/controlflow.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch. Supports: if/elif/else syntax; 'elif is short for else if'; and the statement 'An if ... elif ... elif ... sequence is a substitute for the switch or case statements found in other languages.' Also points to the match statement. Used for the switch-substitute claim and general if-statement mechanics."
+    },
+    {
+      "id": "python-reference-if-statement",
+      "title": "The Python Language Reference — 8. Compound statements (the if statement; match statement)",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/reference/compound_stmts.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch. Supports the precise single-selection semantics: the if statement 'selects exactly one of the suites by evaluating the expressions one by one until one is found to be true; then that suite is executed (and no other part of the if statement is executed or evaluated),' and that the else suite runs if all expressions are false. Also confirms match_stmt is a compound statement added in 3.10."
+    },
+    {
+      "id": "downey-think-python-conditionals",
+      "title": "Think Python (3rd ed.), Chapter 5: Conditionals and Recursion",
+      "provider": "Allen B. Downey / Green Tea Press",
+      "url": "https://allendowney.github.io/ThinkPython/chap05.html",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch. Open textbook covering boolean expressions, if statements, the else clause (alternative execution), chained conditionals (elif), and nested conditionals; defines a 'branch' as one of the alternative sequences of statements in a conditional. Used for the definition of branch, binary selection, and the chained-vs-nested framing. Facts synthesized in original prose; no wording reproduced beyond standard technical terms."
+    },
+    {
+      "id": "pep-634-structural-pattern-matching",
+      "title": "PEP 634 – Structural Pattern Matching: Specification",
+      "provider": "Python Software Foundation (peps.python.org)",
+      "url": "https://peps.python.org/pep-0634/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Confirmed via WebSearch of peps.python.org: the match statement was added in Python 3.10 by PEP 634 (Bucher & van Rossum, status Final), and unlike a C/Java/JavaScript switch that matches a scalar against constants, Python's match tests a subject against structural patterns. Used to date and characterize the match statement."
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "topicId": "computer-science-fundamentals:foundations:loops",
+  "subjectId": "computer-science-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "What a loop is: a control structure that repeats a block of code (the loop body)",
+      "The anatomy of a loop: loop body, counter/iteration variable, and termination (continuation) condition",
+      "while loops: indefinite, condition-controlled repetition that runs while a test stays true",
+      "for loops: definite, count- or collection-controlled repetition over a range or sequence",
+      "break (exit the loop early) and continue (skip to the next iteration)",
+      "Infinite loops: what causes them (the termination condition never becomes false) and how to avoid them",
+      "One small verified worked example: summing the integers 1..5 with both a while loop and a for loop, giving 15"
+    ],
+    "supporting": [
+      "Top-tested vs bottom-tested loops (the condition checked before vs after the body)",
+      "The counter-update pattern: initialize, test, update each pass",
+      "Python's range() as a way to drive a definite for loop, noted as language-specific"
+    ],
+    "outOfScope": [
+      "Conditional (branching) statements as their own subject - a loop uses a Boolean condition but if/else branching is the sibling topic conditional-statements",
+      "Recursion as an alternative repetition mechanism - named only, owned by the sibling topic recursion",
+      "Arrays and lists as data structures - a loop may iterate over a collection in an example, but the data structure itself is owned by the arrays/lists sibling topics",
+      "Big-O / time-complexity analysis of loops (own sibling topic time-complexity)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A while loop repeatedly tests an expression and, while it is true, executes the loop body; when the expression becomes false the loop terminates, so the number of iterations is not fixed in advance (indefinite / condition-controlled).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-lang-ref-compound-stmts", "openstax-intro-cs-programming-constructs"],
+      "status": "supported"
+    },
+    {
+      "claim": "A for loop iterates over the items of a sequence or other iterable, assigning each item in turn to the loop (iteration) variable and executing the body once per item; it is typically used for a definite, count- or collection-controlled number of repetitions.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-lang-ref-compound-stmts", "openstax-intro-cs-programming-constructs"],
+      "status": "supported"
+    },
+    {
+      "claim": "A break statement terminates the enclosing loop immediately, and a continue statement skips the rest of the current pass and goes on to the next iteration (or the loop's exit test).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-lang-ref-compound-stmts", "think-python-2e-iteration"],
+      "status": "supported"
+    },
+    {
+      "claim": "An infinite loop occurs when the loop's terminating condition is never satisfied; to avoid it, the loop body must change one or more variables so that the condition eventually becomes false.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["think-python-2e-iteration"],
+      "status": "supported"
+    },
+    {
+      "claim": "A while loop is top-tested and condition-controlled (its number of iterations cannot be predicted in advance), whereas a count-controlled for loop repeats a specific number of times; do-while style loops are bottom-tested and run their body at least once.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["openstax-intro-cs-programming-constructs"],
+      "status": "supported"
+    },
+    {
+      "claim": "Summing the integers 1 through 5 with a counter-driven loop yields 15; the while version's counter ends at 6 (the first value that fails the i <= 5 test), and a for loop over range(1, 6) visits exactly 1, 2, 3, 4, 5.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["python-lang-ref-compound-stmts", "think-python-2e-iteration"],
+      "status": "supported",
+      "verification": "Executed in Python 3 via Bash on 2026-08-19: while and for both give total 15; counter i ends at 6; list(range(1,6)) == [1,2,3,4,5]; n(n+1)/2 = 15 and sum(range(1,6)) = 15 both agree. break-when-total>6 stops at n=4 (total 10); a continue that skips odd n sums the evens 2+4 = 6."
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft was generic boilerplate ('Loops is a foundational concept... names the concept, describes its parts') with no definition of iteration, no while/for distinction, no break/continue, no infinite-loop discussion, an empty worked example, and circular vocabulary ('Loops: a foundational Computer Science Fundamentals concept covered in this lesson'). None of its substantive wording was retained."
+  ],
+  "correctionsNeeded": [
+    "Replaced the placeholder definition with a real definition of a loop as a control structure that repeats a body, and named its parts (body, counter/iteration variable, termination condition).",
+    "Added the core while-vs-for distinction (indefinite/condition-controlled vs definite/count- or collection-controlled), which the draft omitted entirely.",
+    "Added break, continue, and infinite loops (cause and avoidance), all absent from the draft.",
+    "Added a concrete, Bash-verified worked example (sum 1..5 = 15) with a full trace, replacing the draft's empty workedExample.",
+    "Replaced circular vocabulary with non-circular, source-verified definitions."
+  ],
+  "rightsIssues": [
+    "Python documentation is under the PSF license and is used REFERENCE_ONLY: semantics are restated in original prose with only short standard keyword phrases quoted.",
+    "OpenStax Introduction to Computer Science carries a Creative Commons license (page footer indicates CC BY-NC-SA 4.0); used REFERENCE_ONLY with facts synthesized and no wording reproduced, so no ShareAlike obligation is triggered.",
+    "Think Python 2e is CC BY-NC; used REFERENCE_ONLY, facts synthesized in original prose, no passages reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "python-lang-ref-compound-stmts",
+      "title": "8. Compound statements - The Python Language Reference (while, for, break, continue)",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/reference/compound_stmts.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "PSF License",
+      "licenseUrl": "https://docs.python.org/3/license.html",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Authoritative language semantics: the while statement 'is used for repeated execution as long as an expression is true' and 'repeatedly tests the expression and, if it is true, executes the first suite'; the for statement 'is used to iterate over the elements of a sequence... or other iterable object', assigning each item to the target and executing the suite once per item. break 'terminates the loop'; continue 'skips the rest of the suite and goes back to testing the expression' (while) or 'continues with the next item' (for). Supports the while/for definitions and break/continue. Prose synthesized, not copied."
+    },
+    {
+      "id": "openstax-intro-cs-programming-constructs",
+      "title": "7.2 Programming Language Constructs - Introduction to Computer Science",
+      "provider": "OpenStax (Rice University)",
+      "url": "https://openstax.org/books/introduction-computer-science/pages/7-2-programming-language-constructs",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Supports the iteration taxonomy: top-tested loops check the condition at entry and may not run at all; bottom-tested loops (do-while) 'execute at least one time'; condition-controlled loops 'continue to iterate until a condition is met' (while is 'non determinative' - 'we cannot predict the number of iterations'); count-controlled loops 'repeat a specific number of times' (for). Supports the while-vs-for indefinite/definite distinction. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "think-python-2e-iteration",
+      "title": "Think Python 2e, Chapter 7: Iteration",
+      "provider": "Allen B. Downey (Green Tea Press)",
+      "url": "https://greenteapress.com/thinkpython2/html/thinkpython2008.html",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Supports the counter-update pattern (updating a variable such as x = x + 1, which requires it to be initialized first), the rule that 'the body of the loop should change the value of one or more variables so that the condition becomes false eventually and the loop terminates', the definition of an infinite loop (the terminating condition is never satisfied), and break as a way to exit a loop early. Facts synthesized in original prose; no passages reproduced."
+    }
+  ]
+}

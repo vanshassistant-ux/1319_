@@ -1,0 +1,182 @@
+{
+  "topicId": "computer-science-fundamentals:foundations:lists",
+  "subjectId": "computer-science-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "A list as an abstract, ordered, resizable sequence (an ADT) with operations get(i)/set(i), add/insert, remove, and search",
+      "The dynamic (resizable) array implementation: contiguous storage, O(1) index access, amortized O(1) append, O(n) insert/delete near the front",
+      "The linked-list implementation: nodes joined by pointers, O(1) insert/delete at a known node, O(n) index access and search",
+      "A side-by-side operation-complexity comparison of the two implementations",
+      "Terminology: a Python 'list' is a dynamic array, not a linked list"
+    ],
+    "supporting": [
+      "What 'amortized O(1)' means for append (occasional O(n) resize, total O(n) over n appends)",
+      "Choosing an implementation from the expected access pattern (indexing vs splicing)",
+      "Head/tail pointers; singly- vs doubly-linked lists (named, not deeply taught)"
+    ],
+    "outOfScope": [
+      "The fixed-size contiguous primitive array and the base+i*elementSize memory-offset model (owned by the sibling 'arrays' topic; referenced in one sentence only)",
+      "Stacks (LIFO) and queues (FIFO) as their own ADTs (named, not taught)",
+      "Skip lists, unrolled lists, and other advanced list variants",
+      "Sorting/searching algorithms beyond noting linear search is O(n)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A list is an abstract, ordered collection of items accessible in sequence from a head to a tail; it is defined by its interface, not by any one storage layout.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-list", "open-data-structures-arrays"],
+      "status": "supported"
+    },
+    {
+      "claim": "The List interface supports get(i), set(i,x), add(i,x) (insert), and remove(i).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["open-data-structures-arrays"],
+      "status": "supported"
+    },
+    {
+      "claim": "On an array-backed list (ArrayStack), get(i) and set(i,x) run in O(1) time, while add(i,x) and remove(i) run in O(1 + n - i) time because elements must be shifted.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["open-data-structures-arrays"],
+      "status": "supported"
+    },
+    {
+      "claim": "For a dynamic array, over any sequence of m add/remove operations the total cost of growing and shrinking the backing array is O(m), so the amortized cost of resizing is O(1) per operation; append is therefore amortized O(1).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["open-data-structures-arrays", "python-wiki-time-complexity"],
+      "status": "supported"
+    },
+    {
+      "claim": "A linked list is a list implemented by each item (node) holding a link to the next item; the first node is reached from a fixed head pointer, and basic search requires linear traversal.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-linked-list"],
+      "status": "supported"
+    },
+    {
+      "claim": "On a doubly-linked list, get(i), set(i,x), add(i,x), and remove(i) run in O(1 + min{i, n-i}) time; finding the node dominates the cost, and once the node is held, adding/removing/accessing takes O(1).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["open-data-structures-dllist"],
+      "status": "supported"
+    },
+    {
+      "claim": "In CPython, the built-in list type is a dynamic array: index access (get item) and append are O(1) (amortized), while insert and delete at arbitrary positions are O(n), and 'x in s' containment search is O(n).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-wiki-time-complexity", "python-docs-datastructures"],
+      "status": "supported"
+    },
+    {
+      "claim": "Appending to and popping from the end of a Python list are fast, but inserting or popping from the beginning is slow because every other element must be shifted by one, which is the behavior of an array-backed structure.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-docs-datastructures", "python-wiki-time-complexity"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Is appending to a linked list O(1) or O(n)?",
+      "positions": [
+        "O(1) if the list maintains a tail pointer (or you already hold the last node)",
+        "O(n) for a singly-linked list with only a head pointer, because you must traverse to the end"
+      ],
+      "resolution": "Stated precisely in the lesson: insert/delete is O(1) *given a reference to the relevant node*; appending is O(1) only when a tail pointer is kept, otherwise O(n). The lesson does not claim unconditional O(1) append for linked lists."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic filler ('Lists is a foundational concept...', 'a label on a toolbox drawer') with no technical content about sequences, dynamic arrays, linked lists, or complexity. None of it was usable and all of it was discarded."
+  ],
+  "correctionsNeeded": [
+    "Replaced boilerplate definition with the abstract-sequence ADT definition and its two concrete implementations.",
+    "Added correct, standard operation complexities (dynamic array: index O(1), append amortized O(1), front insert O(n); linked list: index/search O(n), insert/delete at a known node O(1)).",
+    "Added the Python terminology correction: a Python 'list' is a dynamic array, not a linked list."
+  ],
+  "rightsIssues": [
+    "Open Data Structures (Morin) is CC BY 2.5 (attribution required); complexity facts were synthesized and re-expressed in original prose, not copied.",
+    "NIST DADS is a U.S. Government work (public domain); definitions were paraphrased in original wording.",
+    "Python documentation and the Python wiki are reference-only here; no prose was reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-dads-list",
+      "title": "list — NIST Dictionary of Algorithms and Data Structures",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://xlinux.nist.gov/dads/HTML/list.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Public-domain authoritative definition of 'list' as a collection of items accessible one after another from head to tail; supports the abstract, ordered-sequence framing. Read the live page 2026-08-19."
+    },
+    {
+      "id": "nist-dads-linked-list",
+      "title": "linked list — NIST Dictionary of Algorithms and Data Structures",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://xlinux.nist.gov/dads/HTML/linkedList.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Public-domain definition: a linked list is a list where each item links to the next; head reached from a fixed head pointer; basic search is linear. Supports the node/pointer model and O(n) search claim. Read live 2026-08-19."
+    },
+    {
+      "id": "open-data-structures-arrays",
+      "title": "Open Data Structures, Chapter 2: Array-Based Lists (ArrayStack)",
+      "provider": "Pat Morin / opendatastructures.org",
+      "url": "https://opendatastructures.org/newhtml/ods/latex/arrays.html",
+      "sourceType": "open-textbook",
+      "usage": "ATTRIBUTION_REQUIRED",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Defines the List interface (get/set/add/remove). Theorem 2.1: ArrayStack get(i)/set(i,x) O(1); add(i,x)/remove(i) O(1+n-i). Lemma 2.1: total resize cost over m operations is O(m) (amortized O(1)). Facts synthesized in original prose. Read live 2026-08-19."
+    },
+    {
+      "id": "open-data-structures-dllist",
+      "title": "Open Data Structures, 3.2: DLList — A Doubly-Linked List",
+      "provider": "Pat Morin / opendatastructures.org",
+      "url": "https://opendatastructures.org/ods-java/3_2_DLList_Doubly_Linked_Li.html",
+      "sourceType": "open-textbook",
+      "usage": "ATTRIBUTION_REQUIRED",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Theorem 3.2: DLList get/set/add/remove run in O(1+min{i,n-i}); finding the node dominates, and once the node is held, add/remove/access is O(1). Supports the 'O(1) insert/delete at a known node' claim. Read live 2026-08-19."
+    },
+    {
+      "id": "python-wiki-time-complexity",
+      "title": "TimeComplexity — Python Wiki",
+      "provider": "Python Software Foundation (python.org wiki)",
+      "url": "https://wiki.python.org/moin/TimeComplexity",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "CPython list operation table: Get Item O(1), Append O(1), Insert O(n), Delete Item O(n), Pop last O(1), Pop intermediate O(n), x in s O(n) (average and amortized worst case). Confirms Python list is array-backed. Read live 2026-08-19."
+    },
+    {
+      "id": "python-docs-datastructures",
+      "title": "5. Data Structures — The Python Standard Library Documentation",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/tutorial/datastructures.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "States appends and pops from the end are fast while inserts/pops from the beginning are slow because all other elements must shift by one; documents list.append and list.insert. Supports the Python-list-is-a-dynamic-array framing. Read live 2026-08-19."
+    }
+  ]
+}

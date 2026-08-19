@@ -1,0 +1,304 @@
+{
+  "id": "computer-science-fundamentals:foundations:lists",
+  "subjectSlug": "computer-science-fundamentals",
+  "unitSlug": "foundations",
+  "slug": "lists",
+  "title": "Lists",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "computer-science-fundamentals",
+    "foundations",
+    "data-structures",
+    "lists",
+    "linked-list",
+    "dynamic-array",
+    "complexity"
+  ],
+  "in30Seconds": "A list is an abstract, ordered, resizable sequence of items you can index, insert into, and remove from. That same interface can be built two ways. A dynamic array (Python's list, Java's ArrayList) stores items contiguously and grows itself: reading by index is O(1) and appending is amortized O(1), but inserting near the front is O(n). A linked list chains nodes together with pointers: inserting or deleting at a node you already hold is O(1), but reaching the i-th item takes O(n). Same idea, opposite strengths.",
+  "whyItMatters": "Almost every program keeps an ordered, growable collection of things, and 'list' is the name for that idea. Knowing that one list interface has two very different implementations lets you predict performance instead of being surprised by it: a loop that repeatedly inserts at the front of a Python list is quietly O(n^2). Data-structure courses build stacks, queues, hash tables, and graphs on top of these two layouts, and interviewers probe the distinction constantly. Choosing array-backed versus linked storage is one of the first real engineering trade-offs you will make on purpose: fast indexing against fast splicing.",
+  "learningObjectives": [
+    "Define a list as an abstract, ordered, resizable sequence, separate from any one implementation.",
+    "Distinguish a dynamic array from a linked list by how each stores and connects its elements.",
+    "Explain why array-backed index access is O(1) while linked-list index access is O(n).",
+    "Explain what 'amortized O(1)' means for appending to a dynamic array.",
+    "Apply the operation-complexity trade-offs to choose an implementation for a given access pattern."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "A list is an interface, not a layout",
+      "body": "A list is an abstract data type: an ordered, resizable sequence of items you reach one after another from a head toward a tail. What defines it is the set of operations it promises, not how those operations are stored in memory. The standard list interface offers get(i) and set(i, x) to read or overwrite the item at position i, add(i, x) to insert a new item at position i (shifting later items down), remove(i) to delete the item at position i, and a search to find where a value lives. 'Ordered' here means the items have positions 0, 1, 2, ... — first, second, third — not that they are sorted. Because a list is just this contract, two structures with completely different performance can both honor it. The rest of this lesson is about those two structures and why the same operation can be cheap on one and expensive on the other."
+    },
+    {
+      "heading": "Implementation 1: the dynamic array",
+      "body": "A dynamic array stores the items in one contiguous block of memory, exactly like a plain array, but keeps some spare capacity at the end and quietly allocates a bigger block when it fills up. Because storage is contiguous, the item at index i sits at a computable offset, so get(i) and set(i, x) are O(1) — direct random access, no scanning. (The base-plus-offset addressing math itself belongs to the arrays topic; here we only borrow the result that indexing is constant time.) Appending at the end is O(1) most of the time; occasionally the block is full and the structure allocates a larger one and copies every element over, which costs O(n) for that single append. Averaged over many appends this evens out to O(1) each — the amortized cost. The weakness is insertion and deletion away from the end: add(i, x) and remove(i) must shift every element after position i, which is O(n - i), and up to O(n) at the front. This is precisely what Python's built-in list is. In CPython, indexing and append are O(1), insert and delete are O(n), and 'x in mylist' is an O(n) linear search. The Python docs put it plainly: appends and pops at the end are fast, but inserts and pops at the beginning are slow because every other element must shift by one."
+    },
+    {
+      "heading": "Implementation 2: the linked list",
+      "body": "A linked list stores each item in its own small object called a node, and every node holds the value plus a pointer (a link) to the next node. The list keeps a head pointer to the first node; a singly-linked list links only forward, while a doubly-linked list also links backward and usually keeps a tail pointer to the last node. Nodes can sit anywhere in memory, so there is no offset arithmetic and therefore no O(1) indexing: to reach the i-th item you must start at the head and follow i links, which is O(n). Searching for a value is likewise O(n). The payoff is splicing. If you already hold a reference to a node, inserting a new node next to it or deleting it just rewires a couple of pointers — O(1), with nothing shifted. A doubly-linked list makes get, set, add, and remove run in O(1 + min{i, n-i}) time: the O(1) is the actual pointer work, and the min{i, n-i} is the cost of walking from the nearer end to find the node. Once you have the node, the edit is constant time. Appending is O(1) when a tail pointer is kept; without one, a singly-linked list must walk to the end first, which is O(n)."
+    },
+    {
+      "heading": "Comparing the two implementations",
+      "body": "The two implementations are near mirror images. Reach for a dynamic array when you index or append a lot and rarely splice in the middle; reach for a linked list when you constantly insert and delete at positions you already have handles on and seldom jump to an arbitrary index. Here are the standard complexities:\n\n| Operation | Dynamic array | Linked list |\n| --- | --- | --- |\n| Access item at index i | O(1) | O(n) |\n| Search for a value | O(n) | O(n) |\n| Insert/remove at the front | O(n) | O(1) |\n| Append at the end | O(1) amortized | O(1) with a tail pointer, else O(n) |\n| Insert/remove at a node you already hold | O(n) (must shift) | O(1) |\n| Extra memory per element | small (spare capacity) | one or two pointers per node |\n\nThe deep reason the columns disagree is the memory model: contiguous storage buys O(1) indexing but makes middle edits expensive because of shifting; scattered nodes buy O(1) splicing but make indexing expensive because you must traverse. There is no free lunch — you trade indexing speed for splicing speed and back."
+    },
+    {
+      "heading": "Terminology across languages",
+      "body": "The word 'list' is overloaded, so name the implementation you mean. A Python 'list' and a Java 'ArrayList' are dynamic arrays, not linked lists — despite the name, indexing them is O(1) and front-insertion is O(n). Java also ships an actual 'LinkedList' (a doubly-linked list) with the opposite trade-offs. C and Java 'array' means the fixed-size, contiguous primitive that cannot grow — the resizable list is built on top of it. Lists are also the substrate for other structures you will meet soon: a stack (last-in, first-out) and a queue (first-in, first-out) are lists restricted to adding and removing at particular ends, and both can be backed by either a dynamic array or a linked list. When someone says 'use a list,' the useful follow-up question is always: array-backed or linked?"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "List (abstract data type)",
+      "definition": "An ordered, resizable sequence of items reached from a head toward a tail, defined by the operations it supports (get, set, insert, remove, search) rather than by how it is stored."
+    },
+    {
+      "term": "Dynamic array",
+      "definition": "A list implementation that keeps items in a contiguous block with spare capacity, allocating a larger block and copying over when it fills; gives O(1) indexing and amortized O(1) append."
+    },
+    {
+      "term": "Linked list",
+      "definition": "A list implementation in which each item lives in a node that holds a pointer to the next node; gives O(1) insert/delete at a held node but O(n) access by position."
+    },
+    {
+      "term": "Node",
+      "definition": "The small object a linked list uses for one element: it stores the value together with a pointer (link) to the next node, and in a doubly-linked list a pointer to the previous node too."
+    },
+    {
+      "term": "Index (random access)",
+      "definition": "Retrieving the element at a given position i directly. Contiguous storage makes this O(1); pointer-chained storage makes it O(n)."
+    },
+    {
+      "term": "Amortized time",
+      "definition": "The average cost of an operation across a long run, used when most calls are cheap but a few are expensive; a dynamic array's append is amortized O(1) because rare O(n) resizes are spread over many O(1) appends."
+    },
+    {
+      "term": "Contiguous memory",
+      "definition": "Storage in one unbroken block, so an element's location can be computed from its index; the basis for a dynamic array's constant-time indexing."
+    },
+    {
+      "term": "Head / tail pointer",
+      "definition": "A reference to the first node (head) or last node (tail) of a linked list; a tail pointer is what lets appends be O(1) instead of O(n)."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "A list is just 'a bunch of things kept in order that you can add to and take from.' There are two ways to actually build it. One way is a row of numbered lockers all in a line: jumping straight to locker #500 is instant because you can count to its spot, but squeezing a new locker into the middle means sliding everyone else over. The other way is a treasure hunt: each clue points to where the next item is hidden. Adding an item is easy — you just change two clues to point at it — but to find the 500th item you have to follow 500 clues one at a time.",
+    "analogy": "Numbered lockers in a straight line are the dynamic array (jump anywhere instantly, but middle inserts shove everyone over). A treasure hunt where each clue points to the next spot is the linked list (easy to splice in a new clue, slow to reach a far one).",
+    "analogyLimits": "The lockers analogy hides the resize cost: a real dynamic array occasionally runs out of lockers and has to move the whole row into a bigger hallway, which is the rare expensive append. And the treasure-hunt clues are free to picture but not free in memory — every real node spends extra space storing its pointer, which the analogy doesn't show."
+  },
+  "workedExample": "Suppose a list holds [10, 20, 30, 40] and we insert 15 at the front, then read the item at index 3. As a dynamic array, inserting at the front means shifting 10, 20, 30, 40 each one slot right to open position 0, then placing 15 — four moves, i.e. O(n) work — giving [15, 10, 20, 30, 40]; reading index 3 is then a single computed lookup returning 30, O(1). As a linked list, inserting 15 at the head just makes a new node point to the old first node and moves the head pointer — O(1), nothing shifts. But reading index 3 now costs a walk: head to node 0, 1, 2, 3, following four links to reach 30, i.e. O(n). Same two operations, and each structure is fast on exactly the one the other is slow on.",
+  "commonMistakes": [
+    {
+      "mistake": "Believing a Python 'list' is a linked list because of the name.",
+      "correction": "A Python list is a dynamic array. Indexing it is O(1) and appending is amortized O(1); inserting at the front is O(n) because elements shift. Java's ArrayList is the same idea; Java's LinkedList is the actual linked list."
+    },
+    {
+      "mistake": "Claiming a linked list makes all inserts O(1).",
+      "correction": "Insert/delete is O(1) only when you already hold a reference to the relevant node. If you must first find the position by index or value, that search is O(n), and only then is the pointer edit O(1)."
+    },
+    {
+      "mistake": "Thinking appending to a dynamic array is O(n) because it sometimes copies everything.",
+      "correction": "Only the occasional resize copies everything. Spread over many appends the total is O(n) for n appends, so each append is amortized O(1)."
+    },
+    {
+      "mistake": "Assuming a linked list is always more memory-efficient because it 'grows as needed.'",
+      "correction": "Each node carries one or two extra pointers, so a linked list usually uses more memory per element than a dynamic array, which stores bare values plus a little spare capacity."
+    },
+    {
+      "mistake": "Expecting O(1) random access from a linked list.",
+      "correction": "Reaching the i-th element requires following links from an end, which is O(n). If you index frequently, use an array-backed list instead."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Dynamic array",
+      "b": "Linked list",
+      "distinction": "Contiguous storage gives the array O(1) indexing but O(n) middle inserts (shifting); scattered nodes give the linked list O(1) splicing at a held node but O(n) indexing (traversal)."
+    },
+    {
+      "a": "List (abstract type)",
+      "b": "Array (fixed primitive)",
+      "distinction": "A list is an abstract resizable sequence that can be array-backed or linked; a primitive array is a fixed-size contiguous block that cannot grow — the dynamic array is built on top of it."
+    },
+    {
+      "a": "Amortized O(1) append (dynamic array)",
+      "b": "True O(1) insert at head (linked list)",
+      "distinction": "The array's append is O(1) only on average, with rare O(n) resizes; the linked list's head insert is O(1) every single time, but that structure gives up O(1) indexing to get it."
+    }
+  ],
+  "keyTakeaway": "A list is one abstract ordered sequence with two common implementations: the dynamic array (O(1) index, amortized O(1) append, O(n) front insert) and the linked list (O(1) insert/delete at a held node, O(n) index and search). Pick by whether you index more or splice more.",
+  "questionBank": [
+    {
+      "id": "computer-science-fundamentals:foundations:lists:1",
+      "prompt": "A Python \"list\" is implemented internally as which data structure?",
+      "options": [
+        "A singly linked list of nodes joined by pointers",
+        "A dynamic (resizable) array stored in contiguous memory",
+        "A hash table keyed by index",
+        "A fixed-size array that cannot grow"
+      ],
+      "correctIndex": 1,
+      "explanation": "CPython's list is a dynamic array: indexing and append are O(1) (amortized) and insert/delete are O(n) because elements shift, which is array behavior. It is not a linked list (indexing would be O(n)), not a hash table, and not fixed-size (it grows automatically).",
+      "difficulty": "recall",
+      "skill": "Recall that a Python list is a dynamic array, not a linked list",
+      "sourceIds": [
+        "python-wiki-time-complexity",
+        "python-docs-datastructures"
+      ]
+    },
+    {
+      "id": "computer-science-fundamentals:foundations:lists:2",
+      "prompt": "Which operation is O(1) on a dynamic array but O(n) on a linked list?",
+      "options": [
+        "Inserting a new element at the front",
+        "Searching for a given value",
+        "Deleting an element from the middle",
+        "Reading the element at a known index i"
+      ],
+      "correctIndex": 3,
+      "explanation": "Reading by index is O(1) on a dynamic array (contiguous storage lets the address be computed) but O(n) on a linked list (you must follow links from an end). Front insertion is the opposite (O(n) on the array, O(1) on the list); searching is O(n) on both; middle deletion is O(n) on both.",
+      "difficulty": "understanding",
+      "skill": "Distinguish which operation is fast on array-backed vs linked storage",
+      "sourceIds": [
+        "open-data-structures-arrays",
+        "open-data-structures-dllist",
+        "python-wiki-time-complexity"
+      ]
+    },
+    {
+      "id": "computer-science-fundamentals:foundations:lists:3",
+      "prompt": "In a linked list, what makes it possible to insert a new node between two existing nodes in O(1) time?",
+      "options": [
+        "You already hold a reference to a neighbor node, so only a couple of pointers are rewired",
+        "The nodes are stored in one contiguous block of memory",
+        "The list keeps its elements sorted at all times",
+        "Every node stores its own integer index"
+      ],
+      "correctIndex": 0,
+      "explanation": "With a reference to a neighboring node, insertion just updates a couple of pointers and shifts nothing, so it is O(1). Contiguous storage describes an array, not a linked list; sorting is irrelevant; and nodes do not store indices (which is exactly why reaching position i takes O(n)).",
+      "difficulty": "understanding",
+      "skill": "Explain why splicing at a held node is constant time in a linked list",
+      "sourceIds": [
+        "open-data-structures-dllist",
+        "nist-dads-linked-list"
+      ]
+    },
+    {
+      "id": "computer-science-fundamentals:foundations:lists:4",
+      "prompt": "You must store a sequence that you very frequently read by position (\"give me the 500th item\") and rarely insert into or delete from. Which implementation fits better, and why?",
+      "options": [
+        "Linked list, because rewiring pointers is cheap",
+        "Linked list, because it uses less memory per element",
+        "Dynamic array, because index access is O(1) while a linked list needs O(n) traversal",
+        "Either one, because index access costs the same for both"
+      ],
+      "correctIndex": 2,
+      "explanation": "The workload is dominated by random access, which is O(1) on a dynamic array but O(n) on a linked list, so the array wins. Cheap pointer rewiring does not help when you rarely insert; a linked list actually uses more memory per element (pointers); and index access does not cost the same for both.",
+      "difficulty": "application",
+      "skill": "Choose an implementation from the expected access pattern",
+      "sourceIds": [
+        "open-data-structures-arrays",
+        "open-data-structures-dllist"
+      ]
+    },
+    {
+      "id": "computer-science-fundamentals:foundations:lists:5",
+      "prompt": "Appending one item to a dynamic array is described as \"amortized O(1).\" What does that mean?",
+      "options": [
+        "Every append copies the whole array, so each one is O(n)",
+        "Appends are O(1) only while the array is completely empty",
+        "An occasional append triggers an O(n) resize/copy, but the total cost of n appends is O(n), so the per-append average is O(1)",
+        "The array never needs to grow because its capacity is fixed in advance"
+      ],
+      "correctIndex": 2,
+      "explanation": "Most appends drop into spare capacity in O(1); only when the block fills does one append allocate a bigger block and copy everything (O(n)). Because those copies are rare, the total for n appends is O(n), i.e. O(1) each on average. A fixed capacity would describe a static array, not a dynamic one.",
+      "difficulty": "analysis",
+      "skill": "Interpret amortized analysis of dynamic-array append",
+      "sourceIds": [
+        "open-data-structures-arrays",
+        "python-wiki-time-complexity"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "computer-science-fundamentals:foundations:lists:1",
+      "prompt": "A Python \"list\" is implemented internally as which data structure?",
+      "options": [
+        "A singly linked list of nodes joined by pointers",
+        "A dynamic (resizable) array stored in contiguous memory",
+        "A hash table keyed by index",
+        "A fixed-size array that cannot grow"
+      ],
+      "correctIndex": 1,
+      "explanation": "CPython's list is a dynamic array: indexing and append are O(1) (amortized) and insert/delete are O(n) because elements shift, which is array behavior. It is not a linked list (indexing would be O(n)), not a hash table, and not fixed-size (it grows automatically).",
+      "difficulty": "recall",
+      "skill": "Recall that a Python list is a dynamic array, not a linked list",
+      "sourceIds": [
+        "python-wiki-time-complexity",
+        "python-docs-datastructures"
+      ]
+    },
+    {
+      "id": "computer-science-fundamentals:foundations:lists:2",
+      "prompt": "Which operation is O(1) on a dynamic array but O(n) on a linked list?",
+      "options": [
+        "Inserting a new element at the front",
+        "Searching for a given value",
+        "Deleting an element from the middle",
+        "Reading the element at a known index i"
+      ],
+      "correctIndex": 3,
+      "explanation": "Reading by index is O(1) on a dynamic array (contiguous storage lets the address be computed) but O(n) on a linked list (you must follow links from an end). Front insertion is the opposite (O(n) on the array, O(1) on the list); searching is O(n) on both; middle deletion is O(n) on both.",
+      "difficulty": "understanding",
+      "skill": "Distinguish which operation is fast on array-backed vs linked storage",
+      "sourceIds": [
+        "open-data-structures-arrays",
+        "open-data-structures-dllist",
+        "python-wiki-time-complexity"
+      ]
+    },
+    {
+      "id": "computer-science-fundamentals:foundations:lists:3",
+      "prompt": "In a linked list, what makes it possible to insert a new node between two existing nodes in O(1) time?",
+      "options": [
+        "You already hold a reference to a neighbor node, so only a couple of pointers are rewired",
+        "The nodes are stored in one contiguous block of memory",
+        "The list keeps its elements sorted at all times",
+        "Every node stores its own integer index"
+      ],
+      "correctIndex": 0,
+      "explanation": "With a reference to a neighboring node, insertion just updates a couple of pointers and shifts nothing, so it is O(1). Contiguous storage describes an array, not a linked list; sorting is irrelevant; and nodes do not store indices (which is exactly why reaching position i takes O(n)).",
+      "difficulty": "understanding",
+      "skill": "Explain why splicing at a held node is constant time in a linked list",
+      "sourceIds": [
+        "open-data-structures-dllist",
+        "nist-dads-linked-list"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "computer-science-fundamentals:foundations:arrays",
+    "computer-science-fundamentals:foundations:stacks",
+    "computer-science-fundamentals:foundations:queues",
+    "computer-science-fundamentals:foundations:data-types",
+    "computer-science-fundamentals:foundations:searching"
+  ],
+  "sources": [
+    "nist-dads-list",
+    "nist-dads-linked-list",
+    "open-data-structures-arrays",
+    "open-data-structures-dllist",
+    "python-wiki-time-complexity",
+    "python-docs-datastructures"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only and CC BY sources; no source prose reproduced, complexity facts re-expressed in original wording",
+    "researchedAt": "2026-08-19",
+    "transformation": "Synthesized authoritative definitions (NIST DADS) and complexity results (Open Data Structures, Python docs/wiki) into original prose; verified the amortized-append claim by simulating copy counts over doubling growth."
+  },
+  "contentHash": "f85cbddea792b2ca",
+  "status": "source-verified",
+  "public": false
+}

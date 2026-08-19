@@ -1,0 +1,152 @@
+{
+  "topicId": "computer-science-fundamentals:foundations:scope",
+  "subjectId": "computer-science-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Scope as the textual region of a program where a name is valid and can be referenced without qualification",
+      "Local scope versus global (module) scope",
+      "Function scope in the LEGB model; C-family block scope named as the contrast",
+      "Variable shadowing: an inner name hiding an outer name of the same identifier",
+      "Name resolution search order (innermost local, enclosing functions, global, builtins)",
+      "A worked example: a local name not visible outside its function, plus shadowing, verified in Bash"
+    ],
+    "supporting": [
+      "Namespace as a mapping from names to objects, distinguished from scope",
+      "Lifetime/extent versus scope (a name's visibility region versus how long its value lives)",
+      "global and nonlocal statements as ways to rebind names in an outer scope",
+      "The Python quirk that assignment to a name anywhere in a block makes that name local throughout the block"
+    ],
+    "outOfScope": [
+      "Full teaching of variable declaration/assignment (owned by the variables topic)",
+      "Function parameters, arguments, and return values (owned by the functions topic)",
+      "Closures and decorators in depth",
+      "Class attribute lookup and the descriptor protocol"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A scope is the textual region of a program where a namespace is directly accessible, meaning an unqualified reference to a name looks the name up in that namespace.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-tutorial-scopes-namespaces"],
+      "status": "supported"
+    },
+    {
+      "claim": "If a name is bound in a block it is a local variable of that block unless declared global or nonlocal; a name bound at module level is a global variable.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-reference-execution-model"],
+      "status": "supported"
+    },
+    {
+      "claim": "At runtime Python searches three or four nested scopes in order: the innermost (local) scope first, then any enclosing function scopes, then the current module's global scope, and finally the built-in namespace (the LEGB order).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-tutorial-scopes-namespaces"],
+      "status": "supported"
+    },
+    {
+      "claim": "A variable created inside a function is local: it only exists inside the function and cannot be referenced from outside it (referencing it outside raises NameError).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["think-python-2e-functions-local", "python-reference-execution-model"],
+      "status": "supported"
+    },
+    {
+      "claim": "By default, if no global or nonlocal statement is in effect, an assignment to a name goes into the innermost (local) scope; a local binding of an existing outer name shadows the outer one for the rest of that block.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-tutorial-scopes-namespaces", "python-reference-execution-model"],
+      "status": "supported"
+    },
+    {
+      "claim": "The global statement makes named variables refer to and rebind bindings in the module's top-level namespace; nonlocal makes them refer to and rebind bindings in the nearest enclosing function scope.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-reference-execution-model", "python-tutorial-scopes-namespaces"],
+      "status": "supported"
+    },
+    {
+      "claim": "A namespace is a mapping from names to objects; scope is the region where such a namespace is directly accessible, so namespace and scope are related but distinct ideas.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-tutorial-scopes-namespaces", "python-glossary"],
+      "status": "supported"
+    },
+    {
+      "claim": "If a name-binding operation occurs anywhere in a block, all uses of that name in the block are treated as references to the local binding, which is why a name assigned later in a function is local for the whole function.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-reference-execution-model"],
+      "status": "supported"
+    },
+    {
+      "claim": "The worked example (a local y not visible outside show(); a local x in shadow() that shadows the global x without changing it; and a global-declared rebinding in change()) produces: y triggers NameError outside the function, the global x stays 'global' after shadow(), and becomes 'changed global' after change().",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-reference-execution-model", "python-tutorial-scopes-namespaces"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft treated 'scope' as a generic study concept ('a concept students use to organize information') with no computer-science meaning; this is incorrect for the CS topic and was discarded entirely.",
+    "The generated draft's analogies (toolbox drawer label, map legend) and vocabulary ('context', 'evidence', 'application') described study skills, not program scope, and were replaced."
+  ],
+  "correctionsNeeded": [
+    "Replaced the generic study-skill framing with the CS definition of scope as the region where a name is valid.",
+    "Added the local/global distinction, the LEGB search order, shadowing, and the global/nonlocal statements.",
+    "Added a runnable, verified worked example and labeled Python explicitly, contrasting with C-family block scope."
+  ],
+  "rightsIssues": [
+    "All sources are REFERENCE_ONLY; no source prose was copied. Think Python is CC BY-NC (attribution recorded). Python documentation is PSF-licensed reference used for facts only. All code is EliExplains' own and was executed in python3."
+  ],
+  "sourceRecords": [
+    {
+      "id": "python-tutorial-scopes-namespaces",
+      "title": "The Python Tutorial — 9.2 Python Scopes and Namespaces",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/tutorial/classes.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Section 9.2 defines a namespace as 'a mapping from names to objects' and a scope as 'a textual region of a Python program where a namespace is directly accessible,' lists the 3-or-4 nested scopes searched in order (innermost local, enclosing functions, module global, builtins = LEGB), states that assignments go into the innermost scope unless global/nonlocal is in effect, and summarizes what global and nonlocal do. Fetched and read directly."
+    },
+    {
+      "id": "python-reference-execution-model",
+      "title": "The Python Language Reference — Execution model (naming and binding)",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/reference/executionmodel.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Defines a block and states a scope 'defines the visibility of a name within a block'; that a name bound in a block is local unless declared global/nonlocal, and a name bound at module level is global; that if a name-binding operation occurs anywhere in a block all uses of the name are local; and the effect of the global and nonlocal statements. Fetched and read directly."
+    },
+    {
+      "id": "python-glossary",
+      "title": "Python Documentation — Glossary (namespace)",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/glossary.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Glossary defines namespace as 'the place where a variable is stored,' supporting the namespace-versus-scope distinction. Read directly (reused existing registry record)."
+    },
+    {
+      "id": "think-python-2e-functions-local",
+      "title": "Think Python 2e — Functions (local variables and parameters)",
+      "provider": "Allen B. Downey / Green Tea Press",
+      "url": "https://greenteapress.com/thinkpython2/html/thinkpython2004.html",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "OER states 'When you create a variable inside a function, it is local, which means that it only exists inside the function' and that parameters are also local, illustrating a NameError when a local name is used outside its function. Supports the beginner-facing local-scope claim. No prose adapted. Fetched and read directly."
+    }
+  ]
+}

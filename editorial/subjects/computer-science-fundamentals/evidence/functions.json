@@ -1,0 +1,154 @@
+{
+  "topicId": "computer-science-fundamentals:foundations:functions",
+  "subjectId": "computer-science-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "A function as a named, reusable block of code",
+      "Function definition versus function call",
+      "Parameters versus arguments and how arguments bind to parameters",
+      "Return values, including the None returned by a function with no return statement",
+      "Why functions matter: reuse/DRY, abstraction, decomposition, testability",
+      "Pure functions versus functions with side effects (briefly)"
+    ],
+    "supporting": [
+      "Fruitful (value-returning) versus void (None-returning) functions",
+      "Printing versus returning a value",
+      "Language-agnostic framing (Python for concreteness, JavaScript for corroboration)"
+    ],
+    "outOfScope": [
+      "Scope / local versus global variables (own topic — named only)",
+      "Recursion, a function calling itself (own topic — named only)",
+      "Decomposition as a full method (own topic — named only)",
+      "Methods in object-oriented programming (own topic — named only)",
+      "Default arguments, keyword/positional-only parameters, *args/**kwargs, closures, decorators"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A function is a named, reusable series of statements that performs a task and can return a value to whatever code called it.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-glossary", "think-python-2e-functions"],
+      "status": "supported"
+    },
+    {
+      "claim": "The def keyword introduces a function definition, which records the function's name, its parenthesized list of parameters, and its indented body; defining a function does not execute the body.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-tutorial-controlflow", "think-python-2e-functions"],
+      "status": "supported"
+    },
+    {
+      "claim": "Parameters are the named entities listed in a function definition, while arguments are the actual values passed at a call; each argument is bound to (assigned to) the matching parameter as a local name in the function body.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-glossary", "python-tutorial-controlflow", "mdn-js-functions-guide"],
+      "status": "supported"
+    },
+    {
+      "claim": "The return statement ends a call and hands a value back to the caller; a function that has no return statement, or reaches a bare return, returns None in Python.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-tutorial-controlflow"],
+      "status": "supported"
+    },
+    {
+      "claim": "For def rectangle_area(width, height): return width * height, the call rectangle_area(5, 3) returns 15 and rectangle_area(10, 2) returns 20.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["python-tutorial-controlflow"],
+      "status": "supported",
+      "verification": "Executed in python3: rectangle_area(5, 3) printed 15 and rectangle_area(10, 2) printed 20."
+    },
+    {
+      "claim": "A pure function's result depends only on its arguments and it causes no side effects, so identical arguments always yield identical results; a function that reads or modifies external state (e.g., a global running total) has a side effect and can return different results for the same argument.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["think-python-2e-functions", "python-tutorial-controlflow"],
+      "status": "supported",
+      "verification": "Executed in python3: a pure add(a, b) returned 10 on both calls with (5, 5); an impure function adding its argument to a global total returned 5 then 10 for repeated calls of 5, and a function with no return statement returned None. Pure/side-effect is a standard CS distinction; the behavioral difference was confirmed by execution rather than quoted from a source."
+    },
+    {
+      "claim": "Writing logic once in a function and calling it wherever needed, rather than duplicating code, is the basis of reuse and the DRY ('don't repeat yourself') principle, and functions also support abstraction, decomposition, and testability.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["think-python-2e-functions", "mdn-js-functions-guide"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether a construct that returns nothing counts as a 'function.'",
+      "positions": [
+        "Some languages call a value-returning routine a 'function' and a non-returning one a 'procedure.'",
+        "Python treats both as functions: one without a return statement still returns a value, namely None."
+      ],
+      "resolution": "Followed the Python tutorial's framing: in Python every function returns a value (None if unspecified); the lesson notes the 'fruitful vs void' terminology to acknowledge the broader distinction without tying it to one language."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft described functions only in vague, subject-agnostic terms ('a concept students use to organize information') and never defined a function, a call, parameters, arguments, or return values."
+  ],
+  "correctionsNeeded": [
+    "Replaced boilerplate definition with the concrete, sourced definition of a function.",
+    "Added the definition-versus-call distinction, parameter-versus-argument distinction, and return-value semantics (including None), none of which were in the draft.",
+    "Added a verified worked example (rectangle area) with a traced call, and a verified pure-versus-side-effect demonstration."
+  ],
+  "rightsIssues": [
+    "Think Python 2e is CC BY-NC 3.0 and MDN is CC BY-SA; both used REFERENCE_ONLY with no prose adapted. Python documentation is under the PSF license; used REFERENCE_ONLY. All lesson prose is original synthesis."
+  ],
+  "sourceRecords": [
+    {
+      "id": "python-tutorial-controlflow",
+      "title": "The Python Tutorial — More Control Flow Tools (Defining Functions)",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/tutorial/controlflow.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "Python Software Foundation License / Zero-Clause BSD (docs)",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Section 4.7 states that the def keyword introduces a function definition followed by the name and a parenthesized list of formal parameters, that the return statement returns a value and that return without an expression (or falling off the end) returns None. Used for definition/call, parameters, and return semantics."
+    },
+    {
+      "id": "python-glossary",
+      "title": "Python Glossary",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/glossary.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "Python Software Foundation License / Zero-Clause BSD (docs)",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Defines 'argument' as a value passed to a function when calling it, 'parameter' as a named entity in a function definition that specifies an argument the function can accept, and 'function' as a series of statements which returns some value to a caller. Anchors the parameter-vs-argument distinction and the definition of a function."
+    },
+    {
+      "id": "think-python-2e-functions",
+      "title": "Think Python, 2e — Chapter 3: Functions",
+      "provider": "Allen B. Downey / Green Tea Press",
+      "url": "https://greenteapress.com/thinkpython2/html/thinkpython2004.html",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Defines a function as a named sequence of statements that performs a computation, and distinguishes function definition, function call, parameters, arguments, return values, and fruitful vs void functions. Used for the function definition, the definition/call distinction, and the fruitful/void framing. No wording reproduced (NC license); original prose only."
+    },
+    {
+      "id": "mdn-js-functions-guide",
+      "title": "Functions — JavaScript Guide (MDN Web Docs)",
+      "provider": "Mozilla",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "States that a function definition consists of the function keyword, a name, a parenthesized list of parameters, and the body, and shows that calling square(5) passes an argument of 5. Used as a second-language corroboration of the definition/call and parameter/argument distinctions, keeping the lesson language-agnostic."
+    }
+  ]
+}

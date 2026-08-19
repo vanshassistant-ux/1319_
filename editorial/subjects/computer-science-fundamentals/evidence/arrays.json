@@ -1,0 +1,139 @@
+{
+  "topicId": "computer-science-fundamentals:foundations:arrays",
+  "subjectId": "computer-science-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "An array is a fixed-size, contiguous block of memory holding elements, typically of one type, accessed by an integer index",
+      "Zero-based indexing and the address formula: the element at index i lives at base_address + i * element_size",
+      "Random access by index is O(1): the address is computed with one multiplication and one addition, independent of the array's length",
+      "Operation complexities: index/read O(1); search an unsorted array O(n); insert or delete in the middle O(n) because remaining elements must shift",
+      "Why the size is fixed: a contiguous block is reserved up front, so growing it in place is not generally possible"
+    ],
+    "supporting": [
+      "The memory offset formula requires all elements to be the same size, which is why arrays typically hold one element type",
+      "A concrete fixed-type array in practice: Python's array module, a C array, or a Java array",
+      "Distinction between time cost (shifting) and the fact that the index computation itself is constant work"
+    ],
+    "outOfScope": [
+      "Dynamic arrays, resizing, append/grow semantics and amortized O(1) append (belongs to the lists topic)",
+      "Linked lists and Python's built-in list type as the main subject (lists topic)",
+      "Stacks (LIFO) and queues (FIFO) as structures (their own topics)",
+      "Sorting and searching algorithms in depth (searching topic)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "An array is an assemblage of items randomly accessible by an integer index; arrays typically have a fixed size and use either 0-based or 1-based indexing.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-array"],
+      "status": "supported"
+    },
+    {
+      "claim": "In C, an array is a contiguously allocated nonempty sequence of objects of one element type, with the element count fixed for the array's lifetime.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cppreference-c-array"],
+      "status": "supported"
+    },
+    {
+      "claim": "Arrays offer constant-time O(1) access to any element by index; this is what lets get(i) and set(i,x) run in constant time.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["opendatastructures-arraylists", "nist-dads-array"],
+      "status": "supported"
+    },
+    {
+      "claim": "The address of the element at index i in a zero-based array equals base_address + i * element_size; for base 1000 and 4-byte elements, index 3 is at address 1012 (verified by arithmetic in python3).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cppreference-c-array", "nist-dads-array"],
+      "status": "supported"
+    },
+    {
+      "claim": "Adding or removing an element near the middle of an array-backed list means a large number of elements must be shifted; inserting at index k in a length-n array shifts (n - k) elements, so middle insert and delete are O(n) (shift counts verified in python3).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["opendatastructures-arraylists"],
+      "status": "supported"
+    },
+    {
+      "claim": "Searching an unsorted array for a value requires linear search, examining elements one by one, which is O(n) in the worst case; NIST notes unordered arrays require linear search.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-array"],
+      "status": "supported"
+    },
+    {
+      "claim": "Python's array module stores an array of basic values (characters, integers, floating-point numbers) whose element type is constrained by a type code chosen at creation, giving a compact representation; this is a true fixed-type array, distinct from Python's general-purpose list.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-docs-array"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft described arrays only as an abstract 'concept students use to organize information' with a toolbox-drawer label analogy and no technical content: no memory layout, no indexing, no complexity, no distinction from dynamic structures. It did not describe what an array actually is."
+  ],
+  "correctionsNeeded": [
+    "Replaced placeholder prose with the technical definition: a fixed-size, contiguous block of same-type elements with O(1) index access.",
+    "Added the base + i*size address formula, verified in python3, and the O(1)/O(n) operation complexities the draft lacked.",
+    "Added the contrast with dynamic structures at a naming level only, keeping dynamic-array/list growth in the sibling lists topic per the scope boundary."
+  ],
+  "rightsIssues": [
+    "Open Data Structures is CC BY 2.5 Canada; attribution required. Facts were synthesized and prose written originally; no source wording reproduced. NIST DADS is U.S. government public domain. Python docs and cppreference used REFERENCE_ONLY."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-dads-array",
+      "title": "array — Dictionary of Algorithms and Data Structures (DADS)",
+      "provider": "U.S. National Institute of Standards and Technology (NIST)",
+      "url": "https://xlinux.nist.gov/dads/HTML/array.html",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Authoritative public-domain definition: an array is an assemblage of items randomly accessible by an integer index, typically fixed size, 0- or 1-based. Notes that unordered arrays require linear search and that insertion is O(n). Supports the definition, indexing, random access, and search/insert complexity claims. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "opendatastructures-arraylists",
+      "title": "Array-Based Lists — Open Data Structures (Chapter 2)",
+      "provider": "Pat Morin, Open Data Structures",
+      "url": "https://opendatastructures.org/ods-python/2_Array_Based_Lists.html",
+      "sourceType": "open-textbook",
+      "usage": "EXTRACT_AND_ADAPT",
+      "license": "CC BY 2.5 CA",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5/ca/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "States arrays offer constant-time access to any value, which is what allows get(i)/set(i,x) to run in constant time, and that adding or removing an element near the middle requires shifting a large number of elements (O(n)). CC BY 2.5 CA per the site license page; attribution recorded. Facts synthesized in original prose; no wording reproduced."
+    },
+    {
+      "id": "python-docs-array",
+      "title": "array — Efficient arrays of numeric values (Python 3 documentation)",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/library/array.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Documents a true fixed-type array: values are constrained to one type via a type code set at creation, giving a compact representation, unlike the general-purpose list. Used to give a concrete real fixed-type array and to distinguish 'array' from Python's 'list' at a naming level. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "cppreference-c-array",
+      "title": "Array declaration — C language reference (cppreference)",
+      "provider": "cppreference.com",
+      "url": "https://en.cppreference.com/w/c/language/array",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "license": "CC-BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Defines a C array as a contiguously allocated nonempty sequence of objects of one element type, with a fixed number of elements. Read via curl (HTTP 403 to the fetcher); confirmed the phrase 'contiguously allocated nonempty sequence of objects'. Supports the contiguous-storage and fixed-size claims and, with the standard offset rule, element i at base + i*size. Facts synthesized; no wording reproduced."
+    }
+  ]
+}
