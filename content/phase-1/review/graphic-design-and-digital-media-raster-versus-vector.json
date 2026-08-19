@@ -1,0 +1,291 @@
+{
+  "id": "graphic-design-and-digital-media:foundations:raster-versus-vector",
+  "subjectSlug": "graphic-design-and-digital-media",
+  "unitSlug": "foundations",
+  "slug": "raster-versus-vector",
+  "title": "Raster versus Vector",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "graphic-design-and-digital-media",
+    "foundations",
+    "raster",
+    "vector",
+    "bitmap",
+    "scalability"
+  ],
+  "in30Seconds": "A digital picture is stored one of two ways. A raster (bitmap) image is a fixed grid of colored pixels: it captures photographs beautifully but is resolution-dependent, so enlarging it past its pixel count turns crisp edges into blur or blocks. A vector graphic stores shapes as math—points, paths, and Bezier curves—so software re-renders it sharply at any size. Vectors suit logos, icons, and type; rasters suit photos.",
+  "whyItMatters": "Nearly every design decision starts with this fork. Save a logo as a raster and it pixelates the moment someone scales it to a billboard; force a photograph into vectors and it cannot hold the continuous tones a camera records. Knowing which model a file uses tells you whether it will survive enlargement, roughly how large the file will be, and which format to export. It also underlies later topics: image resolution, file formats, and print production all assume you can already tell a grid of pixels from a set of mathematical paths.",
+  "learningObjectives": [
+    "Define raster (bitmap) and vector images by how each stores picture data.",
+    "Explain why vector graphics scale losslessly while raster images degrade when enlarged.",
+    "Distinguish the tasks each model suits, from photographs to logos and line art.",
+    "Apply the distinction to choose a model and predict what happens when a file is scaled or converted."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Two ways to store a picture",
+      "body": "Every digital image is encoded in one of two fundamentally different ways, and the encoding—not the subject—determines what you can do with the file. A raster image, also called a bitmap, is a rectangular grid of tiny colored squares called pixels. Each pixel holds one color value, and the picture emerges from the mosaic of the whole grid, the way a photo does when you zoom in far enough to see the individual dots. The W3C's PNG specification defines a raster image precisely as a rectangular array of pixels. Because the grid is fixed the moment the file is made, a raster image has a set number of pixels and therefore a native size at which it looks its best.\n\nA vector graphic stores no pixels at all. Instead it records shapes as mathematics: anchor points at specific coordinates, the straight or curved paths that connect them, and instructions for fill and stroke color. The curves are usually Bezier curves, defined by anchor points and control handles that set how the line bends. The W3C names this model in the title of its standard—SVG stands for Scalable Vector Graphics—and defines its content as vector graphic shapes such as paths consisting of straight lines and curves. When you open a vector file, software reads the math and draws the shapes fresh; nothing in the file commits it to a particular pixel count."
+    },
+    {
+      "heading": "Why one scales and the other cannot",
+      "body": "The consequence of that difference is scalability. A vector shape is resolution-independent: the stored description is effectively 'a circle of this radius centered here, filled with this color,' so the renderer can redraw it at postage-stamp size or billboard size and the edges stay mathematically exact. Enlarging costs nothing in quality because the picture is recomputed, not stretched. This is the same reason outline fonts—which store each glyph as points and Bezier curves—print crisply on a low-resolution laser printer and a high-resolution imagesetter alike: the outline is re-rendered at whatever resolution the device offers.\n\nA raster image is resolution-dependent, and that is a hard limit rather than a quality setting. The file contains a specific number of pixels; when you enlarge it beyond those dimensions, the software must invent color values for pixels that were never captured. It can only guess by interpolating from neighbors, which smears detail into blur or, without smoothing, into visible blocks. The BCcampus print-production text puts it bluntly about the raster image processor that drives print devices: it does not do a good job of interpolating more data to produce additional detail in a photo or shape if that information is missing to begin with. You cannot add detail a raster never recorded. Shrinking a raster is safe—you are discarding data—but enlarging past its native dimensions is where quality collapses."
+    },
+    {
+      "heading": "Choosing the right model",
+      "body": "Match the model to the content. Photographs and other continuous-tone images—anything with subtle gradations of light, shadow, and texture—are naturally raster, because a camera sensor samples the scene into millions of pixels and there is no small set of shapes that would describe a human face. Raster is also the model for painted digital art and any effect built up pixel by pixel. Its costs are that files grow with pixel count and that the image cannot be enlarged past its capture resolution.\n\nFlat, hard-edged artwork is the domain of vector: logos, icons, symbols, type set as outlines, maps, diagrams, and line art. A logo must look identical on a business card and on the side of a truck, so it has to be resolution-independent, which forces it to be vector. Vector files for such art are also usually small, because 'a circle and two paths' is far less data than a grid of thousands of pixels, and each shape stays individually editable. Vector's weakness is the mirror image of raster's strength: it cannot represent a photograph's continuous tone, because doing so would demand an unmanageable number of tiny shapes. So the working rule is simple—continuous tone means raster, scalable flat art means vector—and most real projects, a photo inside a logo-topped layout, end up using both."
+    },
+    {
+      "heading": "Converting between them, and where the formats live",
+      "body": "The two models convert, but not symmetrically. Turning a vector into a raster is called rasterizing: the software picks a resolution and renders the math into a fixed pixel grid—exactly what a raster image processor does when it converts a page of vector outlines into the dot pattern a printer lays down. Rasterizing is routine and clean at the chosen size, but the result is now a raster and inherits every raster limitation. Going the other way is harder. Converting a raster to vector, called tracing, asks software to guess the shapes hidden in the pixels; it works acceptably for simple, high-contrast art but throws away the fine gradations of a photograph, so a traced photo looks like a poster reduction rather than the original.\n\nWhich specific file you save depends on the model. Common raster formats include JPEG, PNG, GIF, and TIFF; common vector formats include SVG, EPS, and AI, while PDF can carry both. The detailed catalog of what each format compresses, preserves, and is best for belongs to the File Formats topic; here the point is only that a format is downstream of the model—you first decide raster or vector, and the sensible format follows. Likewise, exactly how many pixels per inch a raster needs for a given print or screen size is the province of Image Resolution; this topic settles only the prior question of which of the two kinds of image you are holding."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "Raster image (bitmap)",
+      "definition": "An image stored as a rectangular grid of pixels, each holding one color value; the picture is the whole mosaic of the grid."
+    },
+    {
+      "term": "Vector graphic",
+      "definition": "An image stored as mathematical shapes—anchor points, paths, and curves with fill and stroke—rather than as pixels."
+    },
+    {
+      "term": "Pixel",
+      "definition": "The smallest element of a raster image: a single cell in the grid carrying one color value."
+    },
+    {
+      "term": "Path",
+      "definition": "A line or shape in a vector graphic defined by connected anchor points and the straight or curved segments between them."
+    },
+    {
+      "term": "Bezier curve",
+      "definition": "A curve defined by anchor points and control handles that determine how it bends; the standard way vector software draws smooth curves."
+    },
+    {
+      "term": "Resolution-dependent",
+      "definition": "Describes an image whose quality is tied to a fixed pixel count, so it degrades when enlarged beyond its native dimensions."
+    },
+    {
+      "term": "Resolution-independent",
+      "definition": "Describes an image defined by math that can be re-rendered at any size without loss of quality."
+    },
+    {
+      "term": "Rasterize",
+      "definition": "To convert a vector graphic into a raster image by rendering its shapes into a fixed grid of pixels at a chosen resolution."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Imagine two ways to keep a drawing of a star. The first way is a sheet of graph paper where you color in squares to make the star shape—that's a raster image, and the star is only as smooth as your squares are small. Blow the paper up on a photocopier and the squares get bigger, so the edges look chunky. The second way is a written instruction: 'a five-pointed star, this wide, this color.' That's a vector. Hand that instruction to anyone and they can redraw the star at any size, always smooth, because they are following the recipe instead of copying colored squares. Photos have to use the graph-paper way, because there is no short recipe for every freckle and shadow. Logos use the recipe way, so they stay sharp whether they sit on a phone screen or a stadium banner.",
+    "analogy": "A raster image is a mosaic made of fixed tiles; a vector graphic is the blueprint that tells you how to lay the tiles at any size.",
+    "analogyLimits": "The blueprint idea suggests you could always write a blueprint for any picture, but you cannot practically describe a photograph as a compact set of shapes—the tiles (pixels) are the only workable way to store continuous tone, which is exactly why photos stay raster."
+  },
+  "workedExample": "A studio designs a logo as vector art. On business cards it prints at a few centimeters; scaled up for a storefront sign three meters wide, it renders just as crisply, because the software recomputes the paths at the larger size—there are no pixels to stretch. The team also has a product photo, a raster JPEG that is 1,500 pixels wide. Dropped onto the same three-meter sign, those 1,500 pixels must cover a huge area, so each one balloons into a visible block and the photo turns soft and stair-stepped. The fix is not to enlarge the small raster but to re-shoot or re-export the photo at higher pixel dimensions; the logo needed no such fix because a vector carries no fixed resolution.",
+  "commonMistakes": [
+    {
+      "mistake": "Believing you can restore sharpness to a small, blurry raster by enlarging it and raising its resolution setting.",
+      "correction": "Enlarging cannot add detail that was never captured; interpolation only guesses at missing pixels. You must obtain the image at higher pixel dimensions from the original source."
+    },
+    {
+      "mistake": "Saving a logo only as a JPEG or PNG and treating that as the master file.",
+      "correction": "Those are raster formats with a fixed size. Keep the master as vector (for example SVG, EPS, or AI) so it scales to any use, and export rasters only when a specific size is needed."
+    },
+    {
+      "mistake": "Assuming a vector file can hold a photograph well.",
+      "correction": "Photographs are continuous-tone and need pixels; forcing them into vectors by tracing discards the gradations and leaves a flat, posterized result."
+    },
+    {
+      "mistake": "Confusing file size with resolution or image quality.",
+      "correction": "A vector logo can be tiny in bytes yet print huge; a raster's byte size grows with its pixel count, which is a separate question from whether the picture looks good at a given size."
+    },
+    {
+      "mistake": "Thinking 'raster' and 'vector' are names of file formats.",
+      "correction": "They name how an image is stored. Formats like SVG or JPEG are the downstream choice, and some formats such as PDF can hold both kinds."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Raster (bitmap) image",
+      "b": "Vector graphic",
+      "distinction": "Raster stores a fixed grid of pixels and is resolution-dependent; vector stores mathematical shapes and is resolution-independent."
+    },
+    {
+      "a": "Enlarging a raster",
+      "b": "Enlarging a vector",
+      "distinction": "Enlarging a raster stretches existing pixels and must invent missing ones, causing blur or blocks; enlarging a vector recomputes the shapes and stays sharp."
+    },
+    {
+      "a": "Best for photographs",
+      "b": "Best for logos and line art",
+      "distinction": "Continuous-tone photos need the per-pixel sampling of raster; flat, hard-edged art that must scale to many sizes needs vector."
+    }
+  ],
+  "keyTakeaway": "Raster stores a fixed grid of pixels—great for photographs but degrading when enlarged; vector stores shapes as math—infinitely scalable and ideal for logos, icons, and type. Choose the model by the content and the sizes you will need.",
+  "questionBank": [
+    {
+      "id": "graphic-design-and-digital-media:foundations:raster-versus-vector:1",
+      "prompt": "What fundamentally distinguishes a raster image from a vector graphic?",
+      "options": [
+        "Raster images are colored while vector graphics are only black and white.",
+        "A raster image stores a fixed grid of pixels, while a vector graphic stores shapes defined mathematically by points and paths.",
+        "Raster images are always smaller files than vector graphics.",
+        "Vector graphics can display photographs but raster images cannot."
+      ],
+      "correctIndex": 1,
+      "explanation": "The defining difference is how each stores the picture: raster as a fixed grid of pixels, vector as mathematical shapes (points, paths, and curves). Color is not the distinction; both can be full color. File size depends on content, not on which model is 'always' smaller. And it is the reverse of option D—raster handles photographs, vector does not.",
+      "difficulty": "recall",
+      "skill": "Define raster and vector by how each stores image data",
+      "sourceIds": [
+        "w3c-png-3rd-ed",
+        "w3c-svg11",
+        "bccampus-graphic-design-print-production-fundamentals"
+      ]
+    },
+    {
+      "id": "graphic-design-and-digital-media:foundations:raster-versus-vector:2",
+      "prompt": "Why can a vector logo be enlarged to almost any size without losing sharpness?",
+      "options": [
+        "Its shapes are stored as math and re-rendered at the requested size, so the edges stay exact.",
+        "It simply contains many more pixels than a raster image does.",
+        "Its pixels automatically multiply when the file is opened larger.",
+        "Enlarging compresses the file, and compression sharpens the edges."
+      ],
+      "correctIndex": 0,
+      "explanation": "A vector is resolution-independent: the renderer recomputes the paths at whatever size is requested, so edges stay mathematically exact. Vectors contain no pixels at all, which rules out B and C, and compression has nothing to do with why edges stay sharp, ruling out D.",
+      "difficulty": "understanding",
+      "skill": "Explain the mechanism of vector scalability",
+      "sourceIds": [
+        "bccampus-graphic-design-print-production-fundamentals",
+        "w3c-svg11"
+      ]
+    },
+    {
+      "id": "graphic-design-and-digital-media:foundations:raster-versus-vector:3",
+      "prompt": "A designer enlarges a 600-pixel-wide photo to fill a large banner. What is the most likely result, and why?",
+      "options": [
+        "It stays perfectly sharp, because photographs are resolution-independent.",
+        "The file automatically converts itself into a vector graphic.",
+        "It gains detail, because the software adds new information about the scene.",
+        "It looks blurry or blocky, because the software must guess color values for pixels that were never captured."
+      ],
+      "correctIndex": 3,
+      "explanation": "A raster is resolution-dependent: enlarging past its 600-pixel width forces the software to interpolate pixels that were never captured, producing blur or visible blocks. Photos are not resolution-independent (A), files do not change model on their own (B), and enlargement cannot add real detail that was never recorded (C).",
+      "difficulty": "application",
+      "skill": "Predict the outcome of enlarging a raster beyond its native size",
+      "sourceIds": [
+        "bccampus-graphic-design-print-production-fundamentals"
+      ]
+    },
+    {
+      "id": "graphic-design-and-digital-media:foundations:raster-versus-vector:4",
+      "prompt": "Which project is the clearest case for using a vector graphic rather than a raster image?",
+      "options": [
+        "Retouching the colors of a wedding photograph.",
+        "Storing a scanned continuous-tone oil painting.",
+        "A company icon that must look crisp both as a tiny favicon and on a building sign.",
+        "A digital painting built up brushstroke by brushstroke."
+      ],
+      "correctIndex": 2,
+      "explanation": "An icon that must scale from a favicon to a building sign needs resolution-independence, which only vector provides. The other three are continuous-tone or pixel-built images—a photograph, a scanned painting, and a digital painting—all of which belong to the raster model.",
+      "difficulty": "application",
+      "skill": "Choose the appropriate model for a given task",
+      "sourceIds": [
+        "bccampus-graphic-design-print-production-fundamentals",
+        "w3c-svg11"
+      ]
+    },
+    {
+      "id": "graphic-design-and-digital-media:foundations:raster-versus-vector:5",
+      "prompt": "Which statement best describes converting between the two models?",
+      "options": [
+        "Both directions are equally lossless and fully reversible.",
+        "Rasterizing a vector renders it into a fixed pixel grid, but tracing a photo into vectors discards its continuous tones.",
+        "A vector can never be converted into a raster at all.",
+        "Tracing a photograph into vectors increases its detail and resolution."
+      ],
+      "correctIndex": 1,
+      "explanation": "Conversion is asymmetric: rasterizing renders vector math into a fixed pixel grid (routine), while tracing a photo into vectors estimates shapes and throws away continuous tone, giving a poster-like result. So the directions are not equally reversible (A), vectors rasterize readily (C), and tracing cannot add detail (D).",
+      "difficulty": "analysis",
+      "skill": "Analyze the asymmetry of rasterizing versus tracing",
+      "sourceIds": [
+        "bccampus-graphic-design-print-production-fundamentals"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "graphic-design-and-digital-media:foundations:raster-versus-vector:1",
+      "prompt": "What fundamentally distinguishes a raster image from a vector graphic?",
+      "options": [
+        "Raster images are colored while vector graphics are only black and white.",
+        "A raster image stores a fixed grid of pixels, while a vector graphic stores shapes defined mathematically by points and paths.",
+        "Raster images are always smaller files than vector graphics.",
+        "Vector graphics can display photographs but raster images cannot."
+      ],
+      "correctIndex": 1,
+      "explanation": "The defining difference is how each stores the picture: raster as a fixed grid of pixels, vector as mathematical shapes (points, paths, and curves). Color is not the distinction; both can be full color. File size depends on content, not on which model is 'always' smaller. And it is the reverse of option D—raster handles photographs, vector does not.",
+      "difficulty": "recall",
+      "skill": "Define raster and vector by how each stores image data",
+      "sourceIds": [
+        "w3c-png-3rd-ed",
+        "w3c-svg11",
+        "bccampus-graphic-design-print-production-fundamentals"
+      ]
+    },
+    {
+      "id": "graphic-design-and-digital-media:foundations:raster-versus-vector:2",
+      "prompt": "Why can a vector logo be enlarged to almost any size without losing sharpness?",
+      "options": [
+        "Its shapes are stored as math and re-rendered at the requested size, so the edges stay exact.",
+        "It simply contains many more pixels than a raster image does.",
+        "Its pixels automatically multiply when the file is opened larger.",
+        "Enlarging compresses the file, and compression sharpens the edges."
+      ],
+      "correctIndex": 0,
+      "explanation": "A vector is resolution-independent: the renderer recomputes the paths at whatever size is requested, so edges stay mathematically exact. Vectors contain no pixels at all, which rules out B and C, and compression has nothing to do with why edges stay sharp, ruling out D.",
+      "difficulty": "understanding",
+      "skill": "Explain the mechanism of vector scalability",
+      "sourceIds": [
+        "bccampus-graphic-design-print-production-fundamentals",
+        "w3c-svg11"
+      ]
+    },
+    {
+      "id": "graphic-design-and-digital-media:foundations:raster-versus-vector:3",
+      "prompt": "A designer enlarges a 600-pixel-wide photo to fill a large banner. What is the most likely result, and why?",
+      "options": [
+        "It stays perfectly sharp, because photographs are resolution-independent.",
+        "The file automatically converts itself into a vector graphic.",
+        "It gains detail, because the software adds new information about the scene.",
+        "It looks blurry or blocky, because the software must guess color values for pixels that were never captured."
+      ],
+      "correctIndex": 3,
+      "explanation": "A raster is resolution-dependent: enlarging past its 600-pixel width forces the software to interpolate pixels that were never captured, producing blur or visible blocks. Photos are not resolution-independent (A), files do not change model on their own (B), and enlargement cannot add real detail that was never recorded (C).",
+      "difficulty": "application",
+      "skill": "Predict the outcome of enlarging a raster beyond its native size",
+      "sourceIds": [
+        "bccampus-graphic-design-print-production-fundamentals"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "graphic-design-and-digital-media:foundations:image-resolution",
+    "graphic-design-and-digital-media:foundations:file-formats",
+    "graphic-design-and-digital-media:foundations:logo-design-principles",
+    "graphic-design-and-digital-media:foundations:digital-illustration"
+  ],
+  "sources": [
+    "bccampus-graphic-design-print-production-fundamentals",
+    "w3c-svg11",
+    "w3c-png-3rd-ed"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "one CC BY OER (adapted with attribution, original wording) plus two reference-only W3C standards; no substantial source prose reproduced",
+    "researchedAt": "2026-08-19",
+    "transformation": "Facts synthesized from the BCcampus OER and the W3C SVG and PNG specifications into original prose; the machine-generated draft was discarded as boilerplate."
+  },
+  "contentHash": "899daf668a0e66cd",
+  "status": "source-verified",
+  "public": false
+}

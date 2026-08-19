@@ -1,0 +1,164 @@
+{
+  "topicId": "graphic-design-and-digital-media:foundations:image-resolution",
+  "subjectId": "graphic-design-and-digital-media",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "A raster image is a grid of pixels; the pixel (picture element) is its basic unit",
+      "Pixel dimensions (width x height in pixels) versus resolution (pixel density)",
+      "PPI (pixels per inch) as the density of an image or display; DPI (dots per inch) as the density of printer dots, kept distinct",
+      "The ~300 ppi print convention and its reason (halftone/human acuity)",
+      "The legacy 72 ppi screen figure, its origin (72 typographic points per inch, original Macintosh WYSIWYG), and why modern screens far exceed it (Retina/HiDPI)",
+      "The same pixel image prints larger but coarser at lower ppi: print size = pixel dimension / ppi",
+      "Resampling/upscaling: enlarging a raster interpolates new pixel values and cannot recover real detail, so quality drops"
+    ],
+    "supporting": [
+      "Effective (output) resolution changes with the size at which a fixed-pixel image is placed",
+      "A pixel has no inherent physical size until an image is displayed or printed at some density",
+      "The ~300 ppi human-perception threshold at typical viewing distance",
+      "Interpolation methods (nearest-neighbor, bilinear, bicubic) and the artifacts they introduce"
+    ],
+    "outOfScope": [
+      "Raster versus vector as a distinction (owned by Raster versus Vector; this lesson notes resolution applies to raster and hands off)",
+      "The catalog of file formats and their compression (owned by File Formats)",
+      "RGB/CMYK color models (owned by Color Models)",
+      "Detailed halftone-screening and RIP internals, and monitor-resolution standards debates"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A raster image is built from a rectangular grid of small colored squares called pixels (picture elements); the pixel is the basic unit of a raster image, and a computer records color data per pixel.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["bccampus-graphic-design-print-production-fundamentals", "wikipedia-pixel-density"],
+      "status": "supported"
+    },
+    {
+      "claim": "Pixel dimensions (the count of pixels across the width and height, e.g. 3000 x 2400) are a fixed property of a raster file, whereas resolution is a density: how many of those pixels are packed into each linear inch when the image is displayed or printed. A pixel is fundamentally a sample with no inherent physical size; it acquires a size and a density only when the image is displayed, printed, or scanned at a given ppi.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["wikipedia-pixel-density", "bccampus-graphic-design-print-production-fundamentals"],
+      "status": "supported"
+    },
+    {
+      "claim": "PPI (pixels per inch) measures the pixel density of an image or an electronic display, while DPI (dots per inch) properly measures the density of the ink or toner dots a printer lays down; a printer translates image pixels into a pattern of dots (for example via halftone screening or dithering), so ppi and dpi are related but distinct quantities that are frequently used loosely as synonyms.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["wikipedia-pixel-density", "bccampus-graphic-design-print-production-fundamentals"],
+      "status": "supported"
+    },
+    {
+      "claim": "Roughly 300 ppi is the working convention for high-quality print because commercial presses screen photographs into halftone dots at about 200 to 300 dots per inch, and the practical rule of thumb delivers pixels at about twice the halftone line ruling (Required PPI = 2 x LPI at final size, so 175 lpi needs about 350 ppi). Around 300 ppi also matches the limit of what the unaided eye resolves at a normal reading distance.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["bccampus-graphic-design-print-production-fundamentals", "wikipedia-pixel-density"],
+      "status": "supported"
+    },
+    {
+      "claim": "The legacy '72 ppi' screen figure comes from the typographic convention of 72 points per inch and the original 1984 Macintosh, whose display was about 72 pixels per inch so that one on-screen pixel mapped to one typographic point and text appeared on screen at the same size it would print (early WYSIWYG). The 72 ppi assumption persisted in software long after hardware changed, and modern screens have far higher pixel density, with Retina/HiDPI displays commonly exceeding 200-320+ ppi so individual pixels are not discernible at normal viewing distance.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["hsivonen-points-and-pixels", "bccampus-graphic-design-print-production-fundamentals", "wikipedia-pixel-density"],
+      "status": "supported"
+    },
+    {
+      "claim": "Because print size equals pixel dimension divided by resolution, the same fixed-pixel image printed at a lower ppi spreads its pixels over a larger area: it prints bigger but coarser, with each pixel occupying more physical space. A 3000 x 2400 px image is 10 x 8 inches at 300 ppi but 20 x 16 inches at 150 ppi.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["bccampus-graphic-design-print-production-fundamentals", "wikipedia-pixel-density"],
+      "status": "supported"
+    },
+    {
+      "claim": "Enlarging a raster image by resampling forces the software to generate new pixels it never captured; interpolation (nearest-neighbor, bilinear, bicubic, and similar) estimates those values from neighboring pixels rather than recovering true detail, so upscaling cannot add real information and introduces blur, softened edges, or jagged/ringing artifacts. Repurposing a low-resolution screen image (for example 72 ppi) for large print therefore looks soft because the file simply lacks the data the output needs.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["wikipedia-image-scaling", "bccampus-graphic-design-print-production-fundamentals"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether 'ppi' and 'dpi' are genuinely different or interchangeable terms.",
+      "positions": [
+        "Precise/technical usage: ppi is image or display pixel density; dpi is printer dot density, a different physical quantity connected to ppi through screening.",
+        "Casual industry usage: 'dpi' is routinely used to label the resolution field of an image (e.g. '300 dpi image'), treating the two as synonyms."
+      ],
+      "resolution": "The lesson teaches the precise distinction (pixels for images/displays, dots for the printer), then notes that the two terms are widely blurred in practice so learners recognize '300 dpi image' when they meet it."
+    },
+    {
+      "issue": "Whether 72 ppi is a meaningful standard for today's screens.",
+      "positions": [
+        "Historical fact: the original Macintosh display was about 72 ppi, tied to 72 points per inch.",
+        "Common misconception: web images 'must' be saved at 72 ppi, or that all screens are 72 ppi today."
+      ],
+      "resolution": "The lesson presents 72 ppi as a historical origin that stuck in software, and states plainly that modern displays have much higher device-pixel density (Retina/HiDPI), so for on-screen use it is the pixel dimensions, not a stored ppi tag, that matter."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft was generic boilerplate ('a foundational concept students use to organize information', 'name the concept, describe its parts') with no substantive, verifiable statement about pixels, ppi/dpi, print conventions, or resampling; none of it was usable as evidence."
+  ],
+  "correctionsNeeded": [
+    "Replaced placeholder definitions with substantive treatments of pixels, pixel dimensions versus resolution, ppi versus dpi, the 300 ppi and 72 ppi conventions, and resampling.",
+    "Added the reason for each numeric convention (halftone screening and eye acuity for ~300 ppi; 72 points per inch and the original Macintosh for 72 ppi) rather than stating the numbers bare.",
+    "Scoped the lesson to raster resolution, explicitly deferring the raster-versus-vector distinction, the file-format catalog, and RGB/CMYK to their own topics."
+  ],
+  "rightsIssues": [
+    "The BCcampus OER is CC BY (attributed, no wording reproduced); all lesson prose is original.",
+    "Wikipedia articles are CC BY-SA; they are treated as reference-only here and no wording was reproduced, only facts synthesized.",
+    "The hsivonen.fi technical article is reference-only; no wording reproduced.",
+    "No copyrighted images, logos, font files, or proprietary color values were reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "bccampus-graphic-design-print-production-fundamentals",
+      "title": "Graphic Design and Print Production Fundamentals, Chapter 5.2 Raster Image Processing (resolution, ppi, halftone screening)",
+      "provider": "BCcampus / Graphic Communications Open Textbook Collective (Ken Jeffery, Alan Martin, Roberto Medeiros, Steve Tomljanovic)",
+      "url": "https://opentextbc.ca/graphicdesign/",
+      "sourceType": "open-textbook",
+      "usage": "EXTRACT_AND_ADAPT",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Existing registry source reused with its canonical id and URL. Chapter 5.2 (Raster Image Processing) supports: a pixel is a picture element carrying color data; a typical screen photo resolution is 72 pixels per inch while a press needs far more data; RGB pixels are delivered to the RIP at about 300 pixels per inch; halftone screening renders tone at roughly 200 to 300 screened dots per inch; the design rule Required PPI = 2 x LPI at final size (175 lpi needs 350 ppi); and that scaling an image changes how much resolution reaches the output device (a 6,000 ppi capture used at half size, versus a 72 ppi web image reused for a book cover that lacks the needed data). The canonical opentextbc.ca host returns HTTP 403 to the fetcher and to curl with a browser user-agent; the chapter was read in full from the identical Internet Archive text copy (archive.org/details/GraphicDesignAndPrintProductionFundamentals, *_djvu.txt) on 2026-08-19. Book front matter states CC BY 4.0; no wording reproduced, all lesson prose original."
+    },
+    {
+      "id": "wikipedia-pixel-density",
+      "title": "Pixel density",
+      "provider": "Wikipedia (Wikimedia Foundation)",
+      "url": "https://en.wikipedia.org/wiki/Pixel_density",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": false,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read to support: ppi (and ppcm) measures the pixel density of an electronic image device; a printer translates pixels into a series of dots via dithering, distinguishing printer dots from display pixels; a pixel has no inherent size or unit (it is a sample) but gains a physical size and a density only when printed, displayed, or scanned; the unaided human eye generally cannot differentiate detail beyond about 300 ppi (viewing-distance dependent); and modern displays reach very high densities (hundreds of ppi). Reference-only; facts synthesized, no wording reproduced."
+    },
+    {
+      "id": "hsivonen-points-and-pixels",
+      "title": "About Points and Pixels as Units",
+      "provider": "Henri Sivonen (hsivonen.fi)",
+      "url": "https://hsivonen.fi/units/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": false,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read to support the origin of the 72 ppi figure: there are 72 points in one inch in both PostScript and CSS; the original Macintosh had a 512x384, roughly 72 ppi display and the OS used that value to map physical measurements to pixels so a typographic point equaled one screen pixel, producing genuine WYSIWYG; the 72 ppi assumption then stuck in software even as later displays reached higher densities (e.g. 91-98 ppi on later Macs), while Windows assumed 96 ppi. Reference-only technical article; no wording reproduced."
+    },
+    {
+      "id": "wikipedia-image-scaling",
+      "title": "Image scaling",
+      "provider": "Wikipedia (Wikimedia Foundation)",
+      "url": "https://en.wikipedia.org/wiki/Image_scaling",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": false,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read to support: enlarging a raster image requires generating a new image with a higher pixel count, so new pixel values must be created; interpolation methods (nearest-neighbor, bilinear, bicubic, Fourier) estimate those values and each introduces characteristic artifacts (jaggedness, reduced contrast/blur, ringing); upsampling cannot recover truly lost detail because the new pixels are calculated approximations, not captured data. Reference-only; facts synthesized, no wording reproduced."
+    }
+  ]
+}

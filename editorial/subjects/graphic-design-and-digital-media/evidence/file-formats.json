@@ -1,0 +1,195 @@
+{
+  "topicId": "graphic-design-and-digital-media:foundations:file-formats",
+  "subjectId": "graphic-design-and-digital-media",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Lossy versus lossless compression as the first fork in classifying a raster format",
+      "JPEG: lossy, 24-bit color, no transparency, no animation; best for photographs",
+      "PNG: lossless, alpha (alpha-channel) transparency, indexed/truecolor/grayscale; best for web graphics, screenshots, line art needing exact edges",
+      "GIF: 8-bit indexed (256-color) palette, LZW lossless, one-color (binary) transparency, supports animation",
+      "TIFF: lossless, high bit depth, supports CMYK and multiple color spaces; the standard for print and archival master images",
+      "WebP and AVIF: modern web formats with both lossy and lossless modes, alpha, and animation, and markedly better compression than JPEG/PNG",
+      "SVG: XML-based vector format for the web; resolution-independent, ideal for icons, logos, and diagrams, not for photographs",
+      "EPS and AI: vector formats used for print and editing; PDF: a portable, page-oriented, device- and resolution-independent delivery/print format",
+      "Choosing a format by matching its compression, transparency, animation, color-space, and web-versus-print suitability to the job",
+      "Which formats carry CMYK (TIFF, EPS, PDF) versus which are RGB-oriented (JPEG, PNG, GIF, WebP, SVG)"
+    ],
+    "supporting": [
+      "WebP lossy images average about 25-35% smaller than comparable JPEGs; lossless WebP about 26% smaller than PNG",
+      "AVIF typically compresses better than WebP but has narrower browser support, so fallbacks are used via the <picture> element",
+      "PNG itself is single-image; APNG extends PNG to add frame-based animation",
+      "TIFF's classic 32-bit offset caps a standard file at 4 GB, addressed by BigTIFF",
+      "PDF's imaging model derives from PostScript and describes text and graphics in a device- and resolution-independent way"
+    ],
+    "outOfScope": [
+      "The raster-versus-vector concept itself, which is defined and taught by the Raster versus Vector topic (referenced here, not re-taught)",
+      "Pixels-per-inch, dots-per-inch, and resolution/dimensions, owned by the Image Resolution topic",
+      "RGB and CMYK as color models and gamut, owned by the Color Models topic (this lesson only notes which formats carry CMYK)",
+      "Codec, container, frame-rate, and other moving-image/video format details",
+      "Font-file formats and audio formats"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Image formats split first by compression: lossy compression (JPEG) permanently discards image data to shrink the file, while lossless compression (PNG, GIF, TIFF, and lossless WebP) reduces size without discarding any pixel information, so it can be decoded back to the exact original.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mdn-image-file-types", "loc-tiff-6"],
+      "status": "supported"
+    },
+    {
+      "claim": "JPEG uses lossy compression, stores 8 bits per component (24-bit color), does not support an alpha channel (transparency) or animation, and is the most common choice for still photographs.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mdn-image-file-types"],
+      "status": "supported"
+    },
+    {
+      "claim": "PNG is a lossless raster format that supports an optional alpha channel for smooth transparency and supports indexed-color, grayscale, and truecolor images; it was designed to work well for online viewing. Base PNG is a single static image, and APNG extends it to add frame-based animation.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["w3c-png-3", "mdn-image-file-types"],
+      "status": "supported"
+    },
+    {
+      "claim": "GIF uses lossless LZW compression but is limited to an 8-bit indexed palette of at most 256 colors, supports animation, and offers only one-color (binary on/off) transparency rather than a full alpha channel. MDN advises that modern content generally use PNG for lossless still images and APNG or WebP for animation.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mdn-image-file-types"],
+      "status": "supported"
+    },
+    {
+      "claim": "TIFF is a lossless, tag-based raster format that can wrap different color representations, supports CMYK and other color spaces and high bit depths (16 bits per channel), and is a preferred format for archival/preservation master images and print; standard TIFF is capped near 4 GB by its 32-bit offsets, which BigTIFF removes.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["loc-tiff-6", "mdn-image-file-types"],
+      "status": "supported"
+    },
+    {
+      "claim": "WebP and AVIF are modern web image formats that each offer both lossy and lossless modes, alpha transparency, and animation. Lossy WebP images average about 25-35% smaller than visually comparable JPEGs and lossless WebP about 26% smaller than PNG; AVIF generally compresses even better than WebP but has narrower browser support, so authors provide fallbacks (for example with the HTML <picture> element).",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["mdn-image-file-types"],
+      "status": "supported"
+    },
+    {
+      "claim": "SVG is an XML-based vector format: it stores drawing commands rather than a grid of pixels, so it scales to any size without losing sharpness. It is ideal for user-interface elements, icons, logos, and diagrams that must render accurately at varying sizes, and is not generally useful for photographic (bitmap) images.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mdn-image-file-types", "mdn-including-vector-graphics-in-html"],
+      "status": "supported"
+    },
+    {
+      "claim": "PDF is a portable, page-oriented format whose imaging model derives from PostScript and describes text and graphics in a device-independent and resolution-independent way; it is generally a final-state format for delivery, which makes it a standard choice for print-ready output and portable documents. EPS and AI are vector formats used for print and editing.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["loc-pdf-family", "bccampus-graphic-design-print-production-fundamentals"],
+      "status": "supported"
+    },
+    {
+      "claim": "Color-space support differs by format: TIFF, EPS, and PDF can carry CMYK data for print, whereas JPEG, PNG, GIF, WebP, and SVG are used in RGB workflows (PNG, GIF, and SVG do not support CMYK), which is one reason print work is often prepared as TIFF or PDF rather than PNG.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["loc-tiff-6", "mdn-image-file-types", "bccampus-graphic-design-print-production-fundamentals"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether GIF or a newer format is the right choice for animation on the modern web.",
+      "positions": [
+        "GIF is historically the format associated with short looping animations and is universally supported.",
+        "MDN advises modern content use APNG or WebP for animation because they offer full color and better compression, reserving GIF for legacy compatibility."
+      ],
+      "resolution": "The lesson names GIF's animation support and 256-color limit accurately, and notes that APNG, WebP, and AVIF are the modern, higher-quality choices for animation, matching MDN's guidance."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft was generic boilerplate ('File Formats is a foundational concept... this lesson introduces its meaning, its context, and a simple way to apply it') with no substantive, verifiable claim about any actual file format; none of it was usable as evidence."
+  ],
+  "correctionsNeeded": [
+    "Replaced placeholder text with substantive, verified treatments of JPEG, PNG, GIF, TIFF, WebP, AVIF, SVG, PDF, and EPS/AI, each with its compression type, transparency, animation, color-space, and use case.",
+    "Framed the whole lesson around lossy-versus-lossless and web-versus-print decision-making rather than a single memorized definition.",
+    "Scoped the lesson to classifying formats and choosing among them, deferring the raster-versus-vector concept, resolution (ppi/dpi), and RGB/CMYK color models to their own topics per the anti-duplication instructions."
+  ],
+  "rightsIssues": [
+    "The BCcampus OER is CC BY 4.0, permitting adaptation with attribution; the lesson uses original wording and credits the source rather than reproducing text.",
+    "MDN pages are used as reference only; no wording was reproduced and all prose is original synthesis.",
+    "The Library of Congress format descriptions and the W3C PNG specification are reference-only standards/government sources; no wording reproduced.",
+    "No copyrighted images, logos, or font files were reproduced; no proprietary color values were used."
+  ],
+  "sourceRecords": [
+    {
+      "id": "mdn-image-file-types",
+      "title": "Image file type and format guide",
+      "provider": "MDN Web Docs (Mozilla)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": false,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Primary technical reference for the raster-format comparison. Read in full on 2026-08-19. Supports: JPEG is lossy, 8 bits per component (24-bit color), no alpha transparency, no animation, most popular for photographs. PNG is lossless with an optional alpha channel and indexed/grayscale/truecolor support; use APNG for animation. GIF is 8-bit indexed with a maximum 256-color palette, LZW lossless, supports animation, offers single-color transparency; MDN recommends PNG for lossless still images and APNG/WebP for animation. WebP and AVIF each offer lossy and lossless modes, alpha, and animation; lossy WebP averages 25-35% smaller than comparable JPEG and lossless WebP about 26% smaller than PNG; AVIF generally compresses better than WebP (median ~50% vs ~30%) but has narrower browser support and needs fallbacks via <picture>. SVG is vector, lossless, ideal for UI elements/icons/diagrams that must scale, and not generally useful for photographic images. Reference-only; no wording reproduced, all prose original."
+    },
+    {
+      "id": "w3c-png-3",
+      "title": "Portable Network Graphics (PNG) Specification (Third Edition)",
+      "provider": "World Wide Web Consortium (W3C)",
+      "url": "https://www.w3.org/TR/png-3/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": false,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Standards-body source for PNG facts. Read on 2026-08-19. Supports: PNG is an extensible format for lossless, portable, well-compressed storage of raster images; filtering and compression preserve all information (lossless). Supported image types are indexed-color, grayscale, and truecolor, plus an optional alpha channel, where an alpha value of zero is fully transparent and the maximum value is fully opaque. PNG is designed to work well in online viewing applications such as the World Wide Web and is fully streamable with progressive display. Base PNG is a single static image; APNG (described in the third edition) extends it to add frame-based animation. Reference-only; no wording reproduced."
+    },
+    {
+      "id": "loc-tiff-6",
+      "title": "Sustainability of Digital Formats: TIFF, Revision 6.0 (FDD000022)",
+      "provider": "Library of Congress",
+      "url": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000022.shtml",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": false,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Government digital-preservation reference for TIFF. The loc.gov page returned HTTP 403 to WebFetch; retrieved on 2026-08-19 with curl using a browser user-agent. Supports: TIFF is a tag-based file format for storing and interchanging raster images that serves as a wrapper for different bitstream encodings, which may use different compression schemes and different color representations (photometric interpretation). TIFF 6.0 was published in 1992 and earlier-version files remain valid. A standard TIFF's 32-bit offset caps the file near 4 GB, a limit BigTIFF removes. Corroborates TIFF's role as a lossless, high-bit-depth, CMYK-capable format favored for archival/preservation master images and print. Reference-only; no wording reproduced."
+    },
+    {
+      "id": "loc-pdf-family",
+      "title": "Sustainability of Digital Formats: PDF (Portable Document Format) Family (FDD000030)",
+      "provider": "Library of Congress",
+      "url": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000030.shtml",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": false,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Government digital-preservation reference for PDF. The loc.gov page returned HTTP 403 to WebFetch; retrieved on 2026-08-19 with curl using a browser user-agent. Supports: PDF represents formatted, page-oriented documents that may contain text, images, graphics, and other content; at its core is an imaging model derived from the PostScript page description language that describes text and graphics in a device-independent and resolution-independent manner; unlike PostScript (a programming language), PDF is a structured binary file optimized for interactive viewing; PDF is generally a final-state format for delivery. Grounds PDF's use as a portable, print-ready delivery format. Reference-only; no wording reproduced."
+    },
+    {
+      "id": "bccampus-graphic-design-print-production-fundamentals",
+      "title": "Graphic Design and Print Production Fundamentals (file formats and prepress)",
+      "provider": "BCcampus / Graphic Communications Open Textbook Collective (Ken Jeffery, Alan Martin, Roberto Medeiros, Steve Tomljanovic)",
+      "url": "https://opentextbc.ca/graphicdesign/",
+      "sourceType": "open-textbook",
+      "usage": "EXTRACT_AND_ADAPT",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Existing registry source reused with its canonical id and URL. Open CC BY 4.0 textbook used for the print-production framing: that final print work is typically delivered as press-ready PDF, that vector formats (EPS/AI) and raster formats serve different production roles, and that CMYK is the print color space while screen work is RGB. The canonical opentextbc.ca host returns HTTP 403 to the fetcher; this subject's earlier lessons read the identical content from the eCampusOntario Pressbooks mirror (https://ecampusontario.pressbooks.pub/graphicdesign/). No wording reproduced; all lesson prose is original."
+    },
+    {
+      "id": "mdn-including-vector-graphics-in-html",
+      "title": "Including vector graphics in HTML (SVG)",
+      "provider": "MDN Web Docs (Mozilla)",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Including_vector_graphics_in_HTML",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": false,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Existing registry source reused with its canonical id and URL. Reference for SVG being an XML-based text format describing vector images that stay crisp at any scale and remain small for simple graphics, versus raster (bitmap) formats that store a fixed grid of pixels. Corroborates the SVG use-case guidance. Reference-only; no wording reproduced."
+    }
+  ]
+}

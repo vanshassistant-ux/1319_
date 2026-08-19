@@ -1,0 +1,307 @@
+{
+  "id": "graphic-design-and-digital-media:foundations:image-resolution",
+  "subjectSlug": "graphic-design-and-digital-media",
+  "unitSlug": "foundations",
+  "slug": "image-resolution",
+  "title": "Image Resolution",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "graphic-design-and-digital-media",
+    "foundations",
+    "image-resolution",
+    "pixels",
+    "ppi-vs-dpi",
+    "resampling"
+  ],
+  "in30Seconds": "A raster image is a grid of pixels. Its pixel dimensions are how many pixels wide and tall it is; its resolution is how densely those pixels are packed when it is shown or printed, measured in pixels per inch (ppi). Print size equals pixel dimension divided by ppi, so the same file prints larger but coarser at a lower ppi. Print aims for about 300 ppi; the old 72 ppi screen figure is a historical leftover. Enlarging a raster invents pixels and loses quality.",
+  "whyItMatters": "Resolution is where good design either survives the jump between screen and print or falls apart. Pick a photo that looks crisp on your monitor, blow it up for a poster, and it can turn to mush, because the pixels were never there. Understanding pixel dimensions, ppi, and the difference between pixels and printer dots lets you answer the everyday questions that decide whether a file is usable: is this image big enough to print at this size, why does my 72 ppi web graphic look soft on paper, and what does '300 dpi' on a print spec actually require? It is also the vocabulary you need to talk with print shops, size images correctly, and avoid the wasted reprints that come from guessing.",
+  "learningObjectives": [
+    "Define a raster image and the pixel as its basic unit.",
+    "Distinguish pixel dimensions (width x height in pixels) from resolution (pixel density in ppi).",
+    "Distinguish PPI (image or display pixels per inch) from DPI (printer dots per inch) precisely.",
+    "Explain the ~300 ppi print convention and the legacy 72 ppi screen figure, including why each exists.",
+    "Apply print size = pixel dimension / ppi to compute a print size or the pixels a print needs.",
+    "Explain why resampling to enlarge a raster image loses quality."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Pixels, pixel dimensions, and resolution",
+      "body": "A raster image is a rectangular grid of tiny colored squares called pixels, short for picture elements. The pixel is the basic unit of the image: the computer stores a color value for each one, and together they form the photograph or graphic you see. This lesson is about raster images specifically. Vector graphics, which describe shapes with math instead of a pixel grid, do not have a resolution in this sense; the Raster versus Vector topic covers that distinction and this lesson hands it off. Two different numbers describe a raster image, and confusing them causes most resolution mistakes. The first is pixel dimensions: how many pixels the image is across and down, written as width x height, such as 3000 x 2400. That is a fixed, countable property of the file. The second is resolution, meaning pixel density: how many of those pixels are packed into each linear inch when the image is actually displayed or printed, measured in pixels per inch (ppi). The key idea is that a pixel has no inherent physical size. It is really just a sample, a stored color. It only acquires a size on paper or glass when you choose a density to display or print it at. The same 3000-pixel-wide file can be a tiny dense thumbnail or a giant coarse banner depending entirely on the ppi you output it at."
+    },
+    {
+      "heading": "PPI versus DPI: pixels and dots are not the same",
+      "body": "PPI and DPI sound interchangeable and are used loosely as synonyms all the time, but precisely they measure two different things. PPI, pixels per inch, is the density of the pixels in an image or on a display. DPI, dots per inch, is properly the density of the physical ink or toner dots a printer lays down on paper. They are related but distinct because a printer does not print pixels directly; it converts each region of the image into a pattern of tiny dots, using techniques such as halftone screening or dithering, to simulate continuous tone from a limited set of inks. A single pixel of a specific gray, for example, becomes a cluster of black dots of a certain size. So the pixels-per-inch of your file and the dots-per-inch of the press are linked through that screening step but are not the same number. In everyday practice people will still say a '300 dpi image' when they mean 300 ppi; recognize that usage, but keep the concept straight, because the distinction matters when a print shop quotes both an image resolution and a screen ruling."
+    },
+    {
+      "heading": "Where 300 and 72 come from",
+      "body": "Two numbers dominate resolution talk, and each has a reason. About 300 ppi is the standard for high-quality print. Commercial presses reproduce photographs by screening them into halftone dots at roughly 200 to 300 dots per inch, and a practical rule delivers image pixels at about twice the halftone line ruling: Required PPI equals 2 times the lines per inch at final size, so a job printed at 175 lpi wants about 350 ppi. Conveniently, around 300 ppi is also near the limit of detail the unaided eye can resolve at a normal reading distance, so more pixels than that rarely improve a held print. The other famous figure, 72 ppi for screens, is a historical leftover. There are 72 typographic points in an inch, and the original 1984 Macintosh had a display of about 72 pixels per inch, so one screen pixel matched one point and text appeared on screen at the size it would print, an early form of WYSIWYG (what you see is what you get). That 72 ppi assumption stuck in software long after the hardware moved on. Modern screens have far higher pixel density; Retina and other HiDPI displays commonly run well past 200 to 320 ppi so that individual pixels vanish at normal viewing distance. The upshot: for on-screen work what matters is the pixel dimensions, not an old 72 ppi tag saved in the file."
+    },
+    {
+      "heading": "Print size, and why enlarging loses quality",
+      "body": "One small equation ties it all together: print size = pixel dimension / resolution. A 3000 x 2400 pixel image printed at 300 ppi is 3000/300 by 2400/300, or 10 by 8 inches. Print the very same file at 150 ppi and it becomes 20 by 16 inches: larger, because the same pixels now spread over more paper, but coarser, because each pixel occupies more physical space and detail looks softer. Nothing about the file changed; only the density did. This is why you can enlarge a print by lowering ppi, but only up to the point where the coarseness becomes visible. What you cannot do is add real detail by resampling upward. Enlarging (upscaling) a raster forces the software to create pixels the camera never captured. It does this by interpolation, estimating each new pixel from its neighbors using methods like nearest-neighbor, bilinear, or bicubic. Those estimates are calculated approximations, not recovered information, so upscaling cannot invent true detail; it softens edges, blurs texture, or introduces jagged and ringing artifacts. This is exactly why grabbing a small 72 ppi web image for a large poster disappoints: the file simply does not contain the data the output needs. The reliable move is to start with enough pixels for the largest size you will output."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "Raster image",
+      "definition": "An image made of a fixed grid of pixels, each storing a color, such as a photograph or scanned picture."
+    },
+    {
+      "term": "Pixel",
+      "definition": "Picture element; the basic unit of a raster image, one cell in the grid holding a single color value. It has no fixed physical size until the image is displayed or printed."
+    },
+    {
+      "term": "Pixel dimensions",
+      "definition": "The number of pixels across an image's width and height, written width x height (for example 3000 x 2400). A fixed property of the file."
+    },
+    {
+      "term": "Resolution (pixel density)",
+      "definition": "How densely pixels are packed when an image is displayed or printed, measured in pixels per inch (ppi). Not the same as pixel dimensions."
+    },
+    {
+      "term": "PPI (pixels per inch)",
+      "definition": "The pixel density of an image or an electronic display."
+    },
+    {
+      "term": "DPI (dots per inch)",
+      "definition": "The density of the physical ink or toner dots a printer places on paper. Related to but distinct from ppi, because printers convert pixels into dot patterns."
+    },
+    {
+      "term": "Halftone screening",
+      "definition": "The printing technique that simulates continuous tone by converting image areas into patterns of variously sized dots."
+    },
+    {
+      "term": "Resampling",
+      "definition": "Changing an image's pixel count. Upsampling adds pixels (enlarging) and downsampling removes them (shrinking)."
+    },
+    {
+      "term": "Interpolation",
+      "definition": "The estimation, when resampling, of new pixel values from surrounding pixels using methods like nearest-neighbor, bilinear, or bicubic."
+    },
+    {
+      "term": "HiDPI / Retina display",
+      "definition": "A screen with high pixel density (well above the old 72 ppi), so individual pixels are not visible at a normal viewing distance."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Picture a raster image as a mosaic made of tiny colored tiles. The pixel dimensions are how many tiles you have across and down, and that number never changes. Resolution is how big you make each tile when you lay the mosaic out. Squeeze the tiles tight and the picture is small and sharp; spread them out to cover a wall and the same tiles now show as big blocky squares. That is why one photo can look crisp on your phone but blocky on a poster: it is the same tiles, just stretched over more space. Printers are fussy and like about 300 tiles per inch. Screens used to be described as 72 per inch, but that is an old habit from the first Mac, and today's screens are much finer. The trap is thinking you can make a small mosaic bigger by adding detail. You cannot: the computer can only guess new tiles by copying nearby colors, and guesses look fuzzy, never sharper.",
+    "analogy": "Resolution is like printing the same photo on a stretchy rubber sheet. Stretch it a little and it stays crisp; stretch it across a wall and everything goes soft and blocky, because you never added any new detail, you only spread the old dots thinner.",
+    "analogyLimits": "The rubber sheet suggests smooth stretching, but real pixels do not smear into each other; they stay as discrete squares, and enlarging actually invents brand-new pixels by interpolation rather than stretching existing ones. The analogy also ignores that printers reproduce your pixels as still-smaller ink dots, a separate step the rubber sheet does not show."
+  },
+  "workedExample": "Start with a 3000 x 2400 pixel photo and use print size = pixel dimension / ppi. At 300 ppi it prints at 3000/300 by 2400/300 = 10 by 8 inches, comfortably sharp. Drop to 150 ppi and it prints at 3000/150 by 2400/150 = 20 by 16 inches: twice as big on each side, but every pixel now covers four times the area, so edges look coarser. Now run it backward. A shop needs a crisp 8 by 10 inch print at 300 ppi, so the file must be at least 8 x 300 by 10 x 300 = 2400 by 3000 pixels (7.2 megapixels). A 1500-pixel-wide web image placed 8 inches wide gives only 1500/8 = about 188 ppi, below the 300 target, so it would print soft. Resampling it up to 2400 pixels would not fix this: the software would interpolate the extra pixels from neighbors, adding blur, not real detail.",
+  "commonMistakes": [
+    {
+      "mistake": "Treating pixel dimensions and resolution (ppi) as the same thing.",
+      "correction": "Pixel dimensions are the fixed count of pixels (e.g. 3000 x 2400). Resolution is how densely those pixels are placed when output. The same dimensions can print at any size depending on the ppi you choose."
+    },
+    {
+      "mistake": "Using 'ppi' and 'dpi' as if they always mean the same thing.",
+      "correction": "PPI is the pixel density of an image or screen; DPI is the density of a printer's ink dots. They are linked through screening but are different quantities. Casual usage blurs them, so recognize a '300 dpi image' as meaning 300 ppi."
+    },
+    {
+      "mistake": "Saving web images at 72 ppi because 'screens are 72 ppi.'",
+      "correction": "72 ppi is a historical figure from the original Macintosh. Modern screens are far denser (HiDPI/Retina). For on-screen use, what matters is the pixel dimensions, not a stored ppi tag."
+    },
+    {
+      "mistake": "Enlarging a small image and expecting it to look sharp.",
+      "correction": "Upscaling makes the software invent pixels by interpolation, which softens and blurs rather than adding real detail. Start with enough pixels for the largest output size instead."
+    },
+    {
+      "mistake": "Assuming a low ppi means the file is broken.",
+      "correction": "A low ppi just means the pixels are spread over a large area. The same file at a smaller size, or a higher ppi, can be perfectly sharp; print size = pixel dimension / ppi tells you what size it supports."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Pixel dimensions",
+      "b": "Resolution (ppi)",
+      "distinction": "Pixel dimensions are the fixed number of pixels in the file; resolution is how densely those pixels are laid down when displayed or printed. Dimensions are set; ppi is chosen at output."
+    },
+    {
+      "a": "PPI",
+      "b": "DPI",
+      "distinction": "PPI counts image or display pixels per inch; DPI counts a printer's ink dots per inch. A printer converts pixels into dot patterns, so the two are related through screening but are not the same measurement."
+    },
+    {
+      "a": "300 ppi (print)",
+      "b": "72 ppi (legacy screen)",
+      "distinction": "About 300 ppi is a live convention grounded in halftone screening and eye acuity; 72 ppi is a historical leftover from the first Macintosh and 72 points per inch, no longer descriptive of modern high-density screens."
+    },
+    {
+      "a": "Lowering ppi to enlarge",
+      "b": "Resampling up to enlarge",
+      "distinction": "Lowering ppi spreads the existing pixels over more area (bigger but coarser, no new data invented); resampling up manufactures new pixels by interpolation, which blurs and cannot recover real detail."
+    }
+  ],
+  "keyTakeaway": "Pixel dimensions are how many pixels an image has; resolution (ppi) is how densely they are placed when output, and print size = pixel dimension / ppi. Aim for about 300 ppi in print, treat the old 72 ppi screen figure as history, keep ppi (image) distinct from dpi (printer dots), and remember that enlarging a raster invents pixels and loses quality.",
+  "questionBank": [
+    {
+      "id": "graphic-design-and-digital-media:foundations:image-resolution:1",
+      "prompt": "A raster image's pixel dimensions are listed as 3000 x 2400. What does that number describe?",
+      "options": [
+        "How many ink dots per inch the printer will use",
+        "The count of pixels across the image's width and height",
+        "The physical size of the print in inches",
+        "The image's density in pixels per inch"
+      ],
+      "correctIndex": 1,
+      "explanation": "Pixel dimensions are simply the count of pixels across (width) and down (height), a fixed property of the file. Printer ink density is dpi, physical print size is measured in inches and depends on the chosen ppi, and pixel density in ppi is the separate quantity called resolution.",
+      "difficulty": "recall",
+      "skill": "Identifying what pixel dimensions describe",
+      "sourceIds": [
+        "bccampus-graphic-design-print-production-fundamentals",
+        "wikipedia-pixel-density"
+      ]
+    },
+    {
+      "id": "graphic-design-and-digital-media:foundations:image-resolution:2",
+      "prompt": "What is the precise distinction between PPI and DPI?",
+      "options": [
+        "PPI is used only for printers and DPI only for screens",
+        "They are identical terms and always fully interchangeable",
+        "PPI is the pixel density of an image or display, while DPI is the density of the ink dots a printer lays down",
+        "PPI measures a file's physical size and DPI measures its storage size"
+      ],
+      "correctIndex": 2,
+      "explanation": "PPI (pixels per inch) is the density of image or display pixels; DPI (dots per inch) is properly the density of a printer's ink or toner dots, which the printer produces by converting pixels into dot patterns via screening. Option A reverses the terms, B ignores a real distinction (they are only loosely used as synonyms), and D misstates both.",
+      "difficulty": "understanding",
+      "skill": "Distinguishing ppi from dpi",
+      "sourceIds": [
+        "wikipedia-pixel-density",
+        "bccampus-graphic-design-print-production-fundamentals"
+      ]
+    },
+    {
+      "id": "graphic-design-and-digital-media:foundations:image-resolution:3",
+      "prompt": "A 3000 x 2400 px photo prints at 10 x 8 inches at 300 ppi. If you print the same file at 150 ppi instead, what happens?",
+      "options": [
+        "It prints larger, 20 x 16 inches, but looks coarser",
+        "It prints at the same size but with sharper detail",
+        "It gains extra pixels and looks crisper",
+        "It cannot be printed at all below 300 ppi"
+      ],
+      "correctIndex": 0,
+      "explanation": "Print size = pixel dimension / ppi, so at 150 ppi the image is 3000/150 by 2400/150 = 20 by 16 inches. The same pixels now cover four times the area, so it prints larger but coarser. Lowering ppi never adds pixels or detail, and there is no hard rule forbidding printing below 300 ppi.",
+      "difficulty": "application",
+      "skill": "Relating ppi to print size and coarseness",
+      "sourceIds": [
+        "bccampus-graphic-design-print-production-fundamentals",
+        "wikipedia-pixel-density"
+      ]
+    },
+    {
+      "id": "graphic-design-and-digital-media:foundations:image-resolution:4",
+      "prompt": "A print shop needs a 300 ppi image for an 8 x 10 inch print. What pixel dimensions must the file have?",
+      "options": [
+        "300 x 300 px",
+        "8 x 10 px",
+        "800 x 1000 px",
+        "2400 x 3000 px"
+      ],
+      "correctIndex": 3,
+      "explanation": "Pixels needed = inches x ppi, so 8 x 300 = 2400 and 10 x 300 = 3000, giving 2400 x 3000 px (7.2 megapixels). The other options are far too small: 800 x 1000 px would only yield 100 ppi at that size, and 300 x 300 or 8 x 10 px are nowhere near enough.",
+      "difficulty": "application",
+      "skill": "Computing required pixels from print size and ppi",
+      "sourceIds": [
+        "bccampus-graphic-design-print-production-fundamentals"
+      ]
+    },
+    {
+      "id": "graphic-design-and-digital-media:foundations:image-resolution:5",
+      "prompt": "Why does enlarging (upscaling) a small raster image reduce its quality?",
+      "options": [
+        "The file format silently changes when the image is enlarged",
+        "The monitor lowers its own pixel density to compensate",
+        "Printers automatically reject any file under 300 ppi",
+        "The software must invent new pixels by interpolation, estimating them from neighbors rather than recovering real detail, which softens edges and adds artifacts"
+      ],
+      "correctIndex": 3,
+      "explanation": "Upscaling requires more pixels than were captured, so the software interpolates new ones from surrounding pixels (nearest-neighbor, bilinear, bicubic). Those are approximations, not recovered detail, so the result blurs or shows artifacts. The format does not change on its own, the monitor's density is unrelated, and printers do not universally reject low-ppi files.",
+      "difficulty": "analysis",
+      "skill": "Explaining why resampling upward loses quality",
+      "sourceIds": [
+        "wikipedia-image-scaling",
+        "bccampus-graphic-design-print-production-fundamentals"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "graphic-design-and-digital-media:foundations:image-resolution:1",
+      "prompt": "A raster image's pixel dimensions are listed as 3000 x 2400. What does that number describe?",
+      "options": [
+        "How many ink dots per inch the printer will use",
+        "The count of pixels across the image's width and height",
+        "The physical size of the print in inches",
+        "The image's density in pixels per inch"
+      ],
+      "correctIndex": 1,
+      "explanation": "Pixel dimensions are simply the count of pixels across (width) and down (height), a fixed property of the file. Printer ink density is dpi, physical print size is measured in inches and depends on the chosen ppi, and pixel density in ppi is the separate quantity called resolution.",
+      "difficulty": "recall",
+      "skill": "Identifying what pixel dimensions describe",
+      "sourceIds": [
+        "bccampus-graphic-design-print-production-fundamentals",
+        "wikipedia-pixel-density"
+      ]
+    },
+    {
+      "id": "graphic-design-and-digital-media:foundations:image-resolution:2",
+      "prompt": "What is the precise distinction between PPI and DPI?",
+      "options": [
+        "PPI is used only for printers and DPI only for screens",
+        "They are identical terms and always fully interchangeable",
+        "PPI is the pixel density of an image or display, while DPI is the density of the ink dots a printer lays down",
+        "PPI measures a file's physical size and DPI measures its storage size"
+      ],
+      "correctIndex": 2,
+      "explanation": "PPI (pixels per inch) is the density of image or display pixels; DPI (dots per inch) is properly the density of a printer's ink or toner dots, which the printer produces by converting pixels into dot patterns via screening. Option A reverses the terms, B ignores a real distinction (they are only loosely used as synonyms), and D misstates both.",
+      "difficulty": "understanding",
+      "skill": "Distinguishing ppi from dpi",
+      "sourceIds": [
+        "wikipedia-pixel-density",
+        "bccampus-graphic-design-print-production-fundamentals"
+      ]
+    },
+    {
+      "id": "graphic-design-and-digital-media:foundations:image-resolution:3",
+      "prompt": "A 3000 x 2400 px photo prints at 10 x 8 inches at 300 ppi. If you print the same file at 150 ppi instead, what happens?",
+      "options": [
+        "It prints larger, 20 x 16 inches, but looks coarser",
+        "It prints at the same size but with sharper detail",
+        "It gains extra pixels and looks crisper",
+        "It cannot be printed at all below 300 ppi"
+      ],
+      "correctIndex": 0,
+      "explanation": "Print size = pixel dimension / ppi, so at 150 ppi the image is 3000/150 by 2400/150 = 20 by 16 inches. The same pixels now cover four times the area, so it prints larger but coarser. Lowering ppi never adds pixels or detail, and there is no hard rule forbidding printing below 300 ppi.",
+      "difficulty": "application",
+      "skill": "Relating ppi to print size and coarseness",
+      "sourceIds": [
+        "bccampus-graphic-design-print-production-fundamentals",
+        "wikipedia-pixel-density"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "graphic-design-and-digital-media:foundations:raster-versus-vector",
+    "graphic-design-and-digital-media:foundations:file-formats",
+    "graphic-design-and-digital-media:foundations:color-models-rgb-and-cmyk",
+    "graphic-design-and-digital-media:foundations:photo-editing"
+  ],
+  "sources": [
+    "bccampus-graphic-design-print-production-fundamentals",
+    "wikipedia-pixel-density",
+    "hsivonen-points-and-pixels",
+    "wikipedia-image-scaling"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "One CC BY open textbook (attributed, no wording reproduced) plus three reference-only sources (two Wikipedia CC BY-SA articles and one technical article); all prose original.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Pixels, pixel dimensions versus resolution, the ppi/dpi distinction, the 300 ppi and 72 ppi conventions, and resampling were synthesized from the BCcampus OER (raster image processing chapter), the Wikipedia Pixel density and Image scaling articles, and the hsivonen.fi points-and-pixels reference for the 72-point origin. The worked example (print size = pixel dimension / ppi, and pixels required for a target print) was computed and verified in Bash. All wording is original EliExplains prose."
+  },
+  "contentHash": "d881e57783b9bfce",
+  "status": "source-verified",
+  "public": false
+}

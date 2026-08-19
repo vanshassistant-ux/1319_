@@ -1,0 +1,168 @@
+{
+  "topicId": "graphic-design-and-digital-media:foundations:color-models-rgb-and-cmyk",
+  "subjectId": "graphic-design-and-digital-media",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "A color model as a system for producing and encoding color",
+      "Additive color (RGB): red/green/blue light emitted by screens; all channels on = white, none = black",
+      "Subtractive color (CMYK): cyan/magenta/yellow/key-black inks that absorb light in print; more ink = darker, no ink = white",
+      "Why a fourth ink, black (K = key), is added to CMY",
+      "Color gamut, out-of-gamut colors, and why a design can look different on screen versus in print",
+      "Hex notation (#RRGGBB) as an sRGB RGB encoding, decoded to 0-255 per channel",
+      "Color management and ICC profiles at a high level",
+      "Spot versus process color, with Pantone named as a proprietary spot-color system (values not reproduced)"
+    ],
+    "supporting": [
+      "Trichromatic human color vision (three cone types) as the reason RGB works",
+      "Each subtractive primary acting as a filter for one additive primary (cyan absorbs red, etc.)",
+      "The device-independent profile connection space used by color management"
+    ],
+    "outOfScope": [
+      "Color harmony, the color wheel, warm/cool relationships, and color psychology (owned by Color Theory)",
+      "File formats and how they carry color data (owned by File Formats)",
+      "Resolution, ppi/dpi, and raster versus vector (owned by Image Resolution)",
+      "Detailed halftone screening mechanics and rendering-intent internals"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Screens use the additive color model: red, green, and blue are the additive (transmissive) primaries, and combining all three produces white light, while their absence is black. This maps to the three cone types in human vision, each sensitive to roughly one-third of the visible spectrum in the red, green, and blue regions.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "bccampus-graphic-design-print-production-fundamentals"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Print uses the subtractive color model: cyan, magenta, and yellow are the subtractive (reflective) primaries, each acting as a filter that absorbs one additive primary (cyan absorbs red, magenta absorbs green, yellow absorbs blue). Ink absorbs part of the light and reflects the rest, so no ink is white and combining inks heads toward dark.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "bccampus-graphic-design-print-production-fundamentals"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Full-color printing uses four process inks, cyan, magenta, yellow, and black (CMYK); the process inks are transparent and combined by halftone screening. A dedicated black ink is added because real CMY inks combine to a muddy brown rather than a true black; black also produces sharp text, deeper shadows, and reduces total ink. The K stands for 'key', from the key plate that carried the detail and to which other plates were registered in traditional printing.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "bccampus-graphic-design-print-production-fundamentals",
+        "colorvisionprinting-why-k-in-cmyk"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A color gamut is the range of all colors a device or color model can produce; the RGB and CMYK gamuts differ and neither fully contains the other. Vivid, saturated screen colors (for example very vibrant orange, purple, and green) are often not achievable with standard process inks, so they are out of gamut and must be substituted, which is why a design can look different on screen than in print.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "bccampus-graphic-design-print-production-fundamentals",
+        "icc-color-org-profiles"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Hex color notation encodes an sRGB color as a hash followed by hexadecimal digits; in the six-digit form each pair of digits gives one channel (red, then green, then blue) as a value where 00 is the minimum and ff (255 decimal) the maximum. A three-digit form duplicates each digit.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3c-css-color-4"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Color management uses ICC profiles, defined by the International Color Consortium, to characterize the colors a specific input, display, or output device produces, and translates color between device color spaces through a device-independent profile connection space, so color stays consistent across scanners, cameras, displays, and printers.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "icc-color-org-profiles"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Process color reproduces images from the four CMYK inks; spot color uses a single pre-mixed ink applied on its own printing unit for one exact, consistent hue. Pantone (the Pantone Matching System) is a proprietary spot-color library of numbered ink recipes published as swatch books, and many Pantone colors cannot be matched with process inks.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "bccampus-graphic-design-print-production-fundamentals"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether 'K' in CMYK stands for 'key' or simply for 'black' (to avoid confusion with blue).",
+      "positions": [
+        "Dominant printing-industry account: K = 'key', from the key (black) plate carrying detail to which the color plates were registered.",
+        "Alternative popular claim: K was chosen for 'black' to avoid confusion with the B in RGB (blue)."
+      ],
+      "resolution": "The lesson states the well-documented key-plate explanation, which the printing sources support, and does not assert the weaker 'B for blue' folk explanation."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft was generic boilerplate ('a foundational concept students use to organize information', 'name the concept, describe its parts') with no substantive, verifiable claim about color models; none of it was usable as evidence."
+  ],
+  "correctionsNeeded": [
+    "Replaced placeholder definitions with substantive, non-circular treatments of additive and subtractive color, gamut, hex encoding, color management, and spot versus process color.",
+    "Added the specific reason black (K) is a separate process ink and the origin of 'key', neither of which appeared in the draft.",
+    "Scoped the lesson to color models and screen-versus-print encoding, deferring color harmony/psychology to Color Theory and formats/resolution to their own topics."
+  ],
+  "rightsIssues": [
+    "The BCcampus OER is CC BY 4.0, permitting adaptation with attribution; the lesson uses original wording and credits the source rather than reproducing text.",
+    "The ICC (color.org) and W3C pages are reference-only; no wording was reproduced.",
+    "Pantone is a proprietary spot-color system; it is named only, and no proprietary Pantone color values were reproduced.",
+    "No copyrighted images, logos, or font files were reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "bccampus-graphic-design-print-production-fundamentals",
+      "title": "Graphic Design and Print Production Fundamentals, 4.2 Colour Science and 5.3 Colour",
+      "provider": "BCcampus / Graphic Communications Open Textbook Collective (Ken Jeffery, Alan Martin, Roberto Medeiros, Steve Tomljanovic)",
+      "url": "https://opentextbc.ca/graphicdesign/",
+      "sourceType": "open-textbook",
+      "usage": "EXTRACT_AND_ADAPT",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Existing registry source reused with its canonical id and URL. Chapter 4.2 (Colour Science) supports: trichromatic vision via three cone types each sensitive to about a third of the spectrum (red/green/blue); RGB as the additive/transmissive primaries where combining all three gives white light; CMY as the subtractive/reflective primaries where each acts as a filter (cyan absorbs red, magenta absorbs green, yellow absorbs blue); and that ink on paper reflects only the required portions of the spectrum. Chapter 5.3 (Colour) supports: process inks are the four primaries cyan, magenta, yellow, and black, transparent and combined by halftone screening; spot colours are pre-mixed and applied one at a time on separate printing units; Pantone (PMS) is a library of ink recipes published as swatch books; and that very vibrant orange, purple, and green Pantone spot colours are not achievable with process inks (gamut limitation, extended by systems like Hexachrome). The canonical opentextbc.ca host returned HTTP 403 to the fetcher and to curl with a browser user-agent; both chapters were read in full from the identical eCampusOntario Pressbooks mirror (https://ecampusontario.pressbooks.pub/graphicdesign/chapter/colour-science/ and .../chapter/5-3-colour/) on 2026-08-19. No wording reproduced; all lesson prose is original."
+    },
+    {
+      "id": "icc-color-org-profiles",
+      "title": "Profile (ICC profiles and the profile connection space)",
+      "provider": "International Color Consortium (color.org)",
+      "url": "https://www.color.org/profile.xalter",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": false,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read to support the high-level color-management framing: an ICC profile characterizes a device (input, display, or output) or color space and provides the information needed to convert color data between native device color spaces and device-independent spaces; the profile connection space (PCS) is the common, device-independent intermediary (based on the CIE 1931 observer) through which conversions pass; and device gamut is the range of all colors a device can represent or produce, which is why RGB monitors and CMYK printers, with different gamuts, need translation for consistent reproduction. Standards-body reference; document reuse terms not separately verified, so reference only and no wording reproduced."
+    },
+    {
+      "id": "w3c-css-color-4",
+      "title": "CSS Color Module Level 4 (hexadecimal color notation)",
+      "provider": "World Wide Web Consortium (W3C)",
+      "url": "https://www.w3.org/TR/css-color-4/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": false,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read to support the hex-encoding facts: the CSS hex notation specifies an sRGB color as a hash followed by 3, 4, 6, or 8 hexadecimal digits; in the six-digit form the first pair is the red component (00 minimum, ff = 255 decimal maximum), the next two the green and blue components; the three-digit form duplicates each digit. Used to ground the worked example decoding #2E86DE to RGB (46, 134, 222). Standards-body reference; no wording reproduced."
+    },
+    {
+      "id": "colorvisionprinting-why-k-in-cmyk",
+      "title": "Why is the color Black designated by the letter K in CMYK?",
+      "provider": "Color Vision Printing (industry reference)",
+      "url": "https://www.colorvisionprinting.com/blog/why-is-the-color-black-designated-by-the-letter-k-in-cmyk",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": false,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Reference-only corroboration for the well-documented, evergreen printing convention that the K in CMYK stands for 'key', from the key plate that carried the most detail and to which the color plates were registered, and that a separate black ink is used because CMY inks alone yield a muddy brown rather than a dense, neutral black. The core CMYK-as-four-process-inks fact is carried by the BCcampus OER; this source only backs the etymology and the muddy-brown rationale. No wording reproduced."
+    }
+  ]
+}

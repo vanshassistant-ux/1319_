@@ -1,0 +1,194 @@
+{
+  "topicId": "graphic-design-and-digital-media:foundations:grid-systems",
+  "subjectId": "graphic-design-and-digital-media",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "A grid is a framework of intersecting lines that structures where elements sit on a page and creates consistent relationships between them",
+      "The anatomy of a grid: format, margins, columns, rows, gutters, modules, flowlines, spatial zones (regions), and markers",
+      "The main grid types: manuscript/block, column, modular, and hierarchical grids",
+      "The baseline grid: evenly spaced horizontal lines that anchor text to a shared vertical rhythm",
+      "The historical roots of the modern typographic grid in the Swiss / International Typographic Style, attributed to Josef Muller-Brockmann and his 1981 book Grid Systems in Graphic Design",
+      "Modern responsive web grids, e.g. the 12-column grid with a container, columns, and gutters that reflows across breakpoints",
+      "Why grids create order, alignment, efficiency, and consistency, and that a grid is a tool that can be broken deliberately"
+    ],
+    "supporting": [
+      "The common convention that gutters are set at a width x and margins at roughly 2x so the eye is guided inward",
+      "That modules combine into spatial zones assigned to specific functions (text, image, caption)",
+      "The arithmetic of dividing a content width into n columns separated by (n-1) gutters",
+      "That Muller-Brockmann treated the grid as an aid requiring practice, not a guarantee of good design"
+    ],
+    "outOfScope": [
+      "The broader act of arranging content and layout patterns / CRAP (owned by graphic-design-and-digital-media:foundations:layout)",
+      "General artful arrangement / composition (owned by graphic-design-and-digital-media:foundations:composition)",
+      "Type size levels and typographic hierarchy (owned by graphic-design-and-digital-media:foundations:typography-hierarchy)",
+      "Detailed CSS Grid / Flexbox syntax and framework tutorials beyond the concept of a responsive column grid",
+      "The claim that the golden ratio explains great design (mentioned only as a proportioning convention with noted skepticism)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A grid is a network of intersecting vertical and horizontal lines that structures the placement of elements and creates relationships between them, dividing the design space into sections and acting as a bridge between a design concept and its implementation.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["bccampus-graphic-design-print-production-fundamentals", "vanseo-grid-anatomy"],
+      "status": "supported"
+    },
+    {
+      "claim": "The parts of a grid include the format (the whole area, e.g. the page or browser window), margins (the negative space between the format edge and the content), columns (vertical bands), rows (horizontal bands), gutters (the spaces separating columns and rows), modules (individual units of space at regular intervals), flowlines (horizontal lines that break the space into bands and create alignment points), spatial zones (fields of adjacent modules assigned a function), and markers (placement indicators for repeating items such as page numbers/folios).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["vanseo-grid-anatomy"],
+      "status": "supported"
+    },
+    {
+      "claim": "The four commonly taught grid types are the manuscript grid (a single large block for continuous text, as in a book), the column grid (multiple vertical columns separated by gutters, good for discontinuous information), the modular grid (a column grid subdivided by horizontal lines into a matrix of equal modules, good for complex/tabular content), and the hierarchical grid (irregular, content-driven divisions used when the regular grids do not fit).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["vanseo-grid-types", "bccampus-graphic-design-print-production-fundamentals"],
+      "status": "supported"
+    },
+    {
+      "claim": "A baseline grid is a set of evenly spaced horizontal lines that determines where all the type will sit, anchoring text and other elements to a common leading (line spacing) so they align across columns and pages and produce a consistent vertical rhythm.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["bccampus-graphic-design-print-production-fundamentals", "vanseo-grid-types"],
+      "status": "supported"
+    },
+    {
+      "claim": "A common proportioning convention sets the gutter between columns at a width x and the outer margins at roughly 2x, so that when margins are wider than the gutters the eye is guided inward toward the content.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["vanseo-grid-types"],
+      "status": "supported"
+    },
+    {
+      "claim": "The modern typographic grid grew out of the post-war Swiss / International Typographic Style; Josef Muller-Brockmann (1914-1996) systematized it through his Tonhalle Zurich concert posters (produced c. 1951-1972) and his 1981 bilingual textbook Grid Systems in Graphic Design (Verlag Arthur Niggli), which remains in print and widely assigned.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["mueller-brockmann-swiss-grid", "bccampus-graphic-design-print-production-fundamentals"],
+      "status": "supported"
+    },
+    {
+      "claim": "Muller-Brockmann held that graphic design achieves objectivity through systematic construction rather than personal expression, and that the grid is an aid, not a guarantee: one must learn to use it, which requires practice.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["mueller-brockmann-swiss-grid"],
+      "status": "supported"
+    },
+    {
+      "claim": "Modern responsive web layouts commonly use a 12-column grid: columns live inside a container (fixed or full width) and are separated by gutters, and the grid reflows across responsive breakpoints so that columns which sit side by side on wide screens stack vertically on narrow ones (mobile-first). In Bootstrap 5 the default is 12 columns with a 1.5rem gutter and six breakpoints.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["bootstrap-grid-docs"],
+      "status": "supported"
+    },
+    {
+      "claim": "Consistent margins and columns create an underlying structure that unifies multiple pages of a document or website and makes the layout process more efficient; the plan for the grid should come from the content and concept of the project.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["bccampus-graphic-design-print-production-fundamentals"],
+      "status": "supported"
+    },
+    {
+      "claim": "Dividing a content width W into n equal columns separated by (n-1) gutters of width g gives a column width of (W - (n-1)*g)/n; e.g. a 190 mm content width in 3 columns with 5 mm gutters yields 60 mm columns, and a 1200 px container in 12 columns with 24 px gutters yields 78 px columns.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["bootstrap-grid-docs", "vanseo-grid-types"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "How many 'types' of grid there are and what to call them.",
+      "positions": [
+        "Timothy Samara's widely used taxonomy names four: manuscript, column, modular, and hierarchical (baseline treated as a component that underlies the others).",
+        "Some OER and practitioner texts organize grids as single-column, multi-column, modular, and baseline, treating the baseline grid as its own type."
+      ],
+      "resolution": "The lesson teaches the four-type Samara taxonomy (manuscript, column, modular, hierarchical) as the primary framing and presents the baseline grid separately as the horizontal rhythm that underlies text-heavy layouts, noting that different texts slice the categories slightly differently."
+    },
+    {
+      "issue": "Whether the golden ratio is a reliable basis for grid proportions.",
+      "positions": [
+        "Some design texts present the golden section (1:1.618) as a time-tested proportioning tool for page and column layout.",
+        "The subject source-map cautions that claims the golden ratio explains great design are frequently overstated."
+      ],
+      "resolution": "The lesson mentions the golden ratio only as one of several proportioning conventions a designer may use to set margins/columns, and does not assert it explains or guarantees good design."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft was generic boilerplate ('Grid Systems is a foundational concept in Graphic Design & Digital Media... a simple way to apply it') with no substantive content about grids; all of it was discarded."
+  ],
+  "correctionsNeeded": [
+    "Replaced placeholder text with sourced definitions of grid anatomy (margins, columns, gutters, modules, flowlines, spatial zones, markers), the four grid types, the baseline grid, the Swiss/International Typographic Style history, and responsive 12-column web grids.",
+    "Attributed the systematization of the modern grid to Josef Muller-Brockmann and his 1981 book Grid Systems in Graphic Design, per the assignment.",
+    "Kept the broader act of arranging content and layout patterns/CRAP out of scope (owned by the layout topic), general artful arrangement out of scope (composition topic), and type levels out of scope (typography-hierarchy topic).",
+    "Presented the golden ratio only as a proportioning convention, not as an explanation of good design, per the subject source-map caution."
+  ],
+  "rightsIssues": [
+    "No copyrighted images, posters, logos, or font files are reproduced. Muller-Brockmann's posters and book are named and described, not reproduced.",
+    "The BCcampus OER is CC BY 4.0; its facts are synthesized in original prose and no passages are copied. The canonical opentextbc.ca copy returned HTTP 403 to the fetcher, so the identical text was read via the SUNY/Lumen Learning mirror.",
+    "Vanseo Design articles and The Graphic Design School page are treated as REFERENCE_ONLY per the subject source-map; their facts were cross-checked and rewritten, no wording reproduced.",
+    "Bootstrap documentation (code and docs are MIT / CC-licensed) is used to describe the generic 12-column responsive grid concept; no proprietary assets reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "bccampus-graphic-design-print-production-fundamentals",
+      "title": "Graphic Design and Print Production Fundamentals — Chapter 3 (The Grid; Organizational Principles)",
+      "provider": "BCcampus / Graphic Communications Open Textbook Collective (Ken Jeffery, Alan Martin, Roberto Medeiros, Steve Tomljanovic)",
+      "url": "https://opentextbc.ca/graphicdesign/",
+      "sourceType": "open-textbook",
+      "usage": "EXTRACT_AND_ADAPT",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Open textbook, CC BY 4.0 (verified in the book's front matter). Chapter 3 defines the grid as 'a network of lines that structure the placement of elements and create relationships between them,' as a bridge between design concept and implementation that activates the whole surface, and covers single-column, multi-column, modular, and baseline grids, hang lines (rule-of-thirds horizontal divisions), and the golden section (1:1.618) as a proportioning convention; it also states that consistent margins and columns create an underlying structure that unifies multiple pages and makes layout more efficient, and that the grid plan should come from the content and concept. The canonical opentextbc.ca and Pressbooks copies returned HTTP 403 to the fetcher; the identical text was read via the SUNY/Lumen Learning mirror (courses.lumenlearning.com/suny-graphicdesign/chapter/3-4-organizational-principles/) on 2026-08-19. Canonical URL recorded. Facts synthesized in original prose; no wording reproduced."
+    },
+    {
+      "id": "vanseo-grid-anatomy",
+      "title": "Anatomy of a Modular Typographic Grid",
+      "provider": "Vanseo Design (Steven Bradley)",
+      "url": "https://vanseodesign.com/web-design/grid-anatomy/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Practitioner reference, read via WebFetch 2026-08-19. Supports the definitions of the parts of a grid: format (the whole area — page or browser window), margins (negative space between the format edge and the content), flowlines (horizontal lines that break the space into bands and create alignment points), modules (individual units of space at regular intervals; width from text measure, height from leading), spatial zones (fields of adjacent modules, each with a designated function), columns (vertical bands of modules), rows (horizontal bands), gutters (the spaces separating modules, recommended minimum ~1em), and markers (placement indicators for repeating items such as folios/page numbers). Treated as REFERENCE_ONLY per subject source-map; facts synthesized, no wording reproduced."
+    },
+    {
+      "id": "vanseo-grid-types",
+      "title": "4 Types of Grids And When Each Works Best",
+      "provider": "Vanseo Design (Steven Bradley)",
+      "url": "https://vanseodesign.com/web-design/grid-types/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Practitioner reference, read via WebFetch 2026-08-19. Supports the four-type taxonomy: manuscript grid (a single large block for extensive continuous text, e.g. books/essays), column grid (multiple vertical columns separated by gutters, good for discontinuous information — text, images, captions in different columns), modular grid (a column grid with added horizontal divisions forming a matrix of cells/modules, good for complex and tabular content, with adjacent modules combining into spatial zones), and hierarchical grid (organic, content-driven proportions used when the other grids do not fit). Also supports the convention that gutters are sized at 'x' with margins at '2x' so the eye is guided inward, and that flowlines/baselines position elements vertically. This four-type framing derives from Timothy Samara's Making and Breaking the Grid. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "bootstrap-grid-docs",
+      "title": "Grid system — Bootstrap v5.0 Documentation",
+      "provider": "Bootstrap (open-source project)",
+      "url": "https://getbootstrap.com/docs/5.0/layout/grid/",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY 3.0 (docs) / MIT (code)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Official documentation of a widely used responsive CSS framework, read via WebFetch 2026-08-19. Used to describe the generic modern responsive column grid: a 12-column template per row, columns placed inside a container (fixed .container or full-width .container-fluid), gutters implemented as column padding (Bootstrap 5 default gutter 1.5rem) with negative row margins, six responsive breakpoints using min-width media queries, and mobile-first stacking (columns stack vertically on the smallest screens and sit side by side on wider ones). Used for the concept, not framework-specific syntax; no proprietary assets reproduced."
+    },
+    {
+      "id": "mueller-brockmann-swiss-grid",
+      "title": "Josef Muller-Brockmann | Swiss Style, Grid Systems & Tonhalle Posters",
+      "provider": "The Graphic Design School",
+      "url": "https://www.thegraphicdesignschool.com/design-history/joseph-mueller-brockmann/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Design-history reference, read via WebFetch 2026-08-19. Supports the biography and attribution: Josef Muller-Brockmann (born 9 May 1914, Rapperswil; died 30 August 1996, Unterengstringen), a leading exponent of the Swiss / International Typographic Style; his Tonhalle Zurich concert-poster series (c. 1951-1972, 70+ posters) and his 1981 bilingual textbook Grid Systems in Graphic Design (Verlag Arthur Niggli), still in print and widely assigned; and his philosophy that design objectivity comes from systematic construction rather than personal expression, and that the grid is an aid that must be learned and practised, not a guarantee. Cross-checked against general design-history knowledge and the BCcampus OER's mention of the International Typographic Style. REFERENCE_ONLY; facts synthesized, no wording reproduced."
+    }
+  ]
+}

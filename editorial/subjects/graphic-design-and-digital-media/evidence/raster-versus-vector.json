@@ -1,0 +1,129 @@
+{
+  "topicId": "graphic-design-and-digital-media:foundations:raster-versus-vector",
+  "subjectId": "graphic-design-and-digital-media",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "A raster (bitmap) image as a rectangular grid of pixels, each holding one color value",
+      "A vector graphic as shapes defined mathematically by anchor points, paths, and Bezier curves",
+      "Raster images are resolution-dependent and degrade when enlarged past their native pixel dimensions",
+      "Vector graphics are resolution-independent and re-render sharply at any size",
+      "Why vectors scale losslessly (math recomputed) while rasters cannot (fixed pixels, no missing detail to recover)",
+      "When to use each: raster for photographs/continuous-tone, vector for logos/icons/type/line art",
+      "Converting between models: rasterizing a vector (render to a fixed grid) and tracing a raster to vector (with loss)",
+      "Typical formats of each model at a naming level (raster: JPEG, PNG, GIF, TIFF; vector: SVG, EPS, AI; PDF carries both)"
+    ],
+    "supporting": [
+      "Outline fonts store glyphs as points and Bezier curves and render at any device resolution (a working example of vector scalability)",
+      "Photographs are captured as pixels sampled by a sensor at some pixels-per-inch",
+      "File size relates to pixel count for raster and to shape complexity for vector"
+    ],
+    "outOfScope": [
+      "ppi/dpi values and print-size math (owned by Image Resolution; referenced, not derived)",
+      "The detailed JPEG/PNG/SVG format catalog: compression, transparency, color depth (owned by File Formats; a few named and handed off)",
+      "Digital illustration and painting technique (owned by Digital Illustration)",
+      "Color models, gamut, and how color is encoded (owned by RGB and CMYK / Color Theory)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A raster (bitmap) image stores a picture as a rectangular array of pixels, each pixel carrying a single color value, so the image is the mosaic of the whole grid and has a fixed number of pixels set when the file is created.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["w3c-png-3rd-ed", "bccampus-graphic-design-print-production-fundamentals"],
+      "status": "supported"
+    },
+    {
+      "claim": "A vector graphic stores a picture as mathematical shapes: anchor points at coordinates, the straight or curved paths connecting them (commonly Bezier curves), and fill/stroke attributes; SVG (Scalable Vector Graphics) is a W3C standard whose content is defined as vector graphic shapes such as paths consisting of straight lines and curves.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["w3c-svg11", "bccampus-graphic-design-print-production-fundamentals"],
+      "status": "supported"
+    },
+    {
+      "claim": "Vector graphics are resolution-independent: because the shapes are described mathematically, a renderer recomputes them at any requested size and the edges stay exact, which is why outline (PostScript/TrueType/OpenType) fonts, stored as points and Bezier curves, print crisply across devices of very different resolutions.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["bccampus-graphic-design-print-production-fundamentals", "w3c-svg11"],
+      "status": "supported"
+    },
+    {
+      "claim": "Raster images are resolution-dependent: the file holds a fixed pixel count, so enlarging it beyond its native dimensions forces the software to invent color values for pixels that were never captured. A raster image processor does not do a good job of interpolating more data to produce additional detail in a photo or graphic shape if that information is missing to begin with, so enlargement produces blur or visible blocks.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["bccampus-graphic-design-print-production-fundamentals"],
+      "status": "supported"
+    },
+    {
+      "claim": "Photographs and other continuous-tone images are naturally raster because a camera or scanner samples the scene into a grid of pixels; flat, hard-edged art such as logos, icons, type, and line art is naturally vector because it can be described by a small set of scalable shapes and must often appear at many sizes.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["bccampus-graphic-design-print-production-fundamentals", "w3c-svg11"],
+      "status": "supported"
+    },
+    {
+      "claim": "The two models convert asymmetrically. Rasterizing a vector renders its shapes into a fixed grid of pixels at a chosen resolution (the core job of a raster image processor when it drives a print device); tracing a raster into a vector estimates shapes from the pixels and discards the continuous tones of a photograph, so the result is a simplified, poster-like version rather than the original.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["bccampus-graphic-design-print-production-fundamentals"],
+      "status": "supported"
+    },
+    {
+      "claim": "Common raster file formats include JPEG, PNG, GIF, and TIFF, and PNG is a raster image format that provides lossless storage of a rectangular array of pixels; common vector formats include SVG, EPS, and AI, while PDF can carry both raster and vector content. The detailed properties of each format are handed to the File Formats topic.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["w3c-png-3rd-ed", "w3c-svg11"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft was generic boilerplate ('a foundational concept students use to organize information', 'a label on a toolbox drawer') with no substantive, verifiable statement about raster or vector images; none of it was usable as evidence."
+  ],
+  "correctionsNeeded": [
+    "Replaced placeholder definitions with substantive treatments of the pixel grid (raster) and mathematical paths/Bezier curves (vector).",
+    "Added the mechanism of scalability: vectors are recomputed at any size (resolution-independent) while rasters have a fixed pixel count and cannot recover uncaptured detail (resolution-dependent).",
+    "Added when-to-use guidance, the asymmetry of rasterizing versus tracing, and a naming-level format catalog, with ppi/dpi math deferred to Image Resolution and format detail deferred to File Formats."
+  ],
+  "rightsIssues": [
+    "The BCcampus OER is CC BY 4.0, permitting adaptation with attribution; the lesson uses original wording and credits the source rather than reproducing text.",
+    "The W3C SVG and PNG specifications are reference-only standards documents; short definitional phrases are attributed and no substantial wording is reproduced.",
+    "No copyrighted images, logos, or font files were reproduced; no proprietary color values were reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "bccampus-graphic-design-print-production-fundamentals",
+      "title": "Graphic Design and Print Production Fundamentals, Chapter 5 (Pre-press) 5.2 Raster Image Processing",
+      "provider": "BCcampus / Graphic Communications Open Textbook Collective (Ken Jeffery, Alan Martin, Roberto Medeiros, Steve Tomljanovic; Chapter 5 by Wayne Collins)",
+      "url": "https://opentextbc.ca/graphicdesign/",
+      "sourceType": "open-textbook",
+      "usage": "EXTRACT_AND_ADAPT",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Existing registry source reused with its canonical id and URL. Section 5.2 (Raster Image Processing) supports: that a raster image processor converts graphics into a grid of one-bit/pixel data at a fixed resolution and that it 'does not do a good job of interpolating more data to produce additional detail in a photo or graphic shape if that information is missing to begin with' (the mechanism of raster resolution-dependence); that a font file describes glyphs as 'a series of points and vector curves between those points' and that PostScript is a scalable, device-independent language whose outlines are re-rendered at each device's resolution (the mechanism of vector resolution-independence), illustrated by screen fonts stored as bitmaps versus printer fonts stored as vector PostScript, and the 'convert to outlines' function that exposes a glyph's nodes and bezier curves; and that photographs are captured as pixels at a pixels-per-inch resolution. The canonical opentextbc.ca host and the eCampusOntario Pressbooks mirror both returned HTTP 403 to the fetcher and to curl with a browser user-agent; Chapter 5 was read in full from the identical Internet Archive djvu text copy (archive.org/download/GraphicDesignAndPrintProductionFundamentals/Graphic-Design-and-Print-Production-Fundamentals_djvu.txt) on 2026-08-19. Canonical URL recorded. No wording reproduced beyond the short attributed interpolation phrase; all lesson prose is original."
+    },
+    {
+      "id": "w3c-svg11",
+      "title": "Scalable Vector Graphics (SVG) 1.1 (Second Edition), Introduction",
+      "provider": "World Wide Web Consortium (W3C)",
+      "url": "https://www.w3.org/TR/SVG11/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": false,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the Introduction (https://www.w3.org/TR/SVG11/intro.html) to ground the vector model: SVG is a language for describing two-dimensional graphics in XML, its name stands for Scalable Vector Graphics, and it allows three types of graphic objects, the first being 'vector graphic shapes (e.g., paths consisting of straight lines and curves).' Used to support that a vector graphic is composed of mathematically described paths of straight lines and curves and is inherently scalable. Standards-body reference; document reuse terms not separately verified, so reference only and only short attributed definitional phrases used, no substantial wording reproduced."
+    },
+    {
+      "id": "w3c-png-3rd-ed",
+      "title": "Portable Network Graphics (PNG) Specification (Third Edition)",
+      "provider": "World Wide Web Consortium (W3C)",
+      "url": "https://www.w3.org/TR/png/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": false,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read to anchor the raster model with an authoritative example: the PNG specification describes PNG as a format for 'lossless, portable, well-compressed storage of static and animated raster images' and defines the reference image as 'a rectangular array of rectangular pixels.' Used to support that a raster image is a rectangular grid/array of pixels and that PNG is a lossless raster format. Standards-body reference; document reuse terms not separately verified, so reference only; only short attributed definitional phrases used, no substantial wording reproduced."
+    }
+  ]
+}

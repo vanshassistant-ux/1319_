@@ -1,0 +1,312 @@
+{
+  "id": "graphic-design-and-digital-media:foundations:file-formats",
+  "subjectSlug": "graphic-design-and-digital-media",
+  "unitSlug": "foundations",
+  "slug": "file-formats",
+  "title": "File Formats",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "graphic-design-and-digital-media",
+    "foundations",
+    "file-formats",
+    "lossy-vs-lossless",
+    "transparency",
+    "web-vs-print"
+  ],
+  "in30Seconds": "A file format is the container that decides how an image is stored: how it is compressed, whether it can hold transparency or animation, what colors it can carry, and where it works well. JPEG squeezes photographs small by throwing data away. PNG keeps every pixel and adds smooth transparency for web graphics. GIF handles simple animation in 256 colors. TIFF and PDF serve print. WebP and AVIF are the modern, smaller web options. SVG stays razor-sharp at any size. Choosing well means matching the format to the job.",
+  "whyItMatters": "Every image you make is saved in some format, and the wrong one shows up as a blurry logo, a photo that takes forever to load, a white box where transparency should be, or a print job that comes back the wrong color. Designers, marketers, and developers make this choice dozens of times a week, and it directly affects page speed, print quality, and how professional the work looks. The reasoning also travels: the same lossy-versus-lossless and web-versus-print logic underlies image optimization, accessibility, and file handoffs between a designer and a printer or developer. Learning to pick a format on purpose, rather than defaulting to whatever a tool suggests, is basic fluency in digital media.",
+  "learningObjectives": [
+    "Define a file format and distinguish lossy from lossless compression.",
+    "Describe the compression, transparency, animation, and color-space traits of JPEG, PNG, GIF, and TIFF.",
+    "Explain what WebP, AVIF, and SVG add, and when each is the right modern choice.",
+    "Apply format traits to choose a format for a given web or print scenario.",
+    "Identify which formats carry CMYK for print versus which are RGB-oriented for screens."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Compression: lossy versus lossless",
+      "body": "A file format is the agreed-upon structure for storing an image so that software can read it back. The single most useful thing to know about any raster (pixel-based) format is how it compresses data, because that splits the whole field in two. Lossy compression makes files small by permanently discarding information the format judges you will not miss, usually fine detail and subtle color differences. You cannot get that data back; save a JPEG, re-open it, and save again, and it degrades a little more each time. Lossless compression also shrinks the file, but it does so by encoding the same pixels more efficiently, so the image can be reconstructed exactly. PNG, GIF, TIFF, and the lossless modes of WebP are all lossless. The trade-off is size versus fidelity: lossy formats win dramatically on file size for photographs, where a little discarded detail is invisible; lossless formats win where every pixel matters, such as text, sharp edges, screenshots, and line art, or where the file will be edited and re-saved repeatedly. This lesson classifies formats; the difference between pixel-based (raster) images and mathematically-described (vector) images is developed in the Raster versus Vector topic, and resolution in the Image Resolution topic."
+    },
+    {
+      "heading": "The four workhorse raster formats",
+      "body": "JPEG is the lossy photograph format. It stores 24-bit color (millions of colors), compresses aggressively, and is the most common format for photos on the web and in cameras. Its limits are the flip side of that strength: no transparency, no animation, and visible blocky artifacts if you compress too hard or save it many times. PNG is the lossless web-graphics format. It keeps every pixel and, crucially, supports an alpha channel, meaning each pixel can be fully opaque, fully transparent, or anywhere in between, which is how a logo sits cleanly over any background. PNG suits screenshots, icons, diagrams, and anything with crisp edges; the cost is larger files than JPEG for photographs. GIF is the old, limited format that survives for one reason: simple animation. It uses lossless LZW compression but caps the palette at 256 colors (8-bit indexed), and its transparency is binary, a pixel is either fully transparent or fully opaque, with no soft edges. TIFF is the print and archival heavyweight: lossless, high bit depth, able to carry CMYK and other color spaces, and trusted by libraries and museums for master copies. Its files are large, and standard TIFF is capped near four gigabytes, a limit the BigTIFF extension removes."
+    },
+    {
+      "heading": "The modern web formats and vector SVG",
+      "body": "WebP and AVIF are newer formats built for the web, and both improve on the old options. Each offers a lossy mode and a lossless mode, supports alpha-channel transparency, and can animate. The payoff is size: lossy WebP images average roughly 25 to 35 percent smaller than JPEGs of similar visual quality, and lossless WebP runs about 26 percent smaller than PNG. AVIF generally compresses even better than WebP. The catch is support: AVIF reached browsers more recently than WebP, so on the web you serve a modern format with an older fallback, commonly using the HTML picture element so each browser gets the best format it understands. SVG is different in kind. It is not a grid of pixels at all but an XML text file describing shapes, paths, and text as drawing commands, so it scales to any size, from a favicon to a billboard, with no blur. That makes SVG ideal for logos, icons, and diagrams, and its shapes can even be styled or animated with CSS. Because it describes geometry rather than photographic detail, SVG is a poor fit for photographs. Alongside SVG, EPS and AI are vector formats used in professional print and editing workflows."
+    },
+    {
+      "heading": "Choosing a format, and the CMYK question",
+      "body": "Put the traits together and the choice usually makes itself. For a photograph on the web, reach for WebP or AVIF with a JPEG fallback. For a graphic that needs a transparent background, use PNG (or WebP). For a logo or icon that must stay sharp at every size, use SVG. For a short looping animation, modern advice favors WebP or animated PNG over GIF, though GIF still works everywhere. For print, the deliverable is usually a press-ready PDF, with TIFF used for high-quality raster images and archival masters. One trait often decides print work: color space. TIFF, EPS, and PDF can carry CMYK, the four-ink model presses use, while JPEG, PNG, GIF, WebP, and SVG live in the RGB world of screens (PNG, GIF, and SVG do not support CMYK at all). That is why sending a printer a PNG of your artwork can cause color surprises, and why print files are prepared as PDF or TIFF instead. The color models themselves, RGB and CMYK and why their gamuts differ, are covered in the Color Models topic; here the point is simply that the format you pick determines whether CMYK can ride along at all."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "File format",
+      "definition": "A defined structure for storing an image (or other data) so software can write and read it, determining its compression, transparency, animation, and color capabilities."
+    },
+    {
+      "term": "Lossy compression",
+      "definition": "Compression that shrinks a file by permanently discarding some image data; the original cannot be fully recovered. Used by JPEG."
+    },
+    {
+      "term": "Lossless compression",
+      "definition": "Compression that reduces file size by encoding the same pixels more efficiently, so the exact original image can be reconstructed. Used by PNG, GIF, TIFF, and lossless WebP."
+    },
+    {
+      "term": "Alpha channel (transparency)",
+      "definition": "An extra channel storing how opaque each pixel is, allowing smooth partial transparency so an image blends over any background. Supported by PNG, WebP, AVIF, and SVG."
+    },
+    {
+      "term": "Indexed color",
+      "definition": "A scheme that stores an image using a limited palette of specific colors referenced by index; GIF is limited to a 256-color (8-bit) indexed palette."
+    },
+    {
+      "term": "Raster (bitmap) image",
+      "definition": "An image stored as a fixed grid of pixels. JPEG, PNG, GIF, TIFF, WebP, and AVIF are raster formats; enlarging one past its resolution shows blur or blockiness."
+    },
+    {
+      "term": "Vector image",
+      "definition": "An image stored as mathematical drawing commands (points, lines, curves) rather than pixels, so it scales to any size without losing sharpness. SVG, EPS, and AI are vector formats."
+    },
+    {
+      "term": "SVG",
+      "definition": "Scalable Vector Graphics: an XML-based vector format for the web, resolution-independent and styleable with CSS, ideal for icons, logos, and diagrams."
+    },
+    {
+      "term": "WebP / AVIF",
+      "definition": "Modern web image formats offering both lossy and lossless compression, transparency, and animation, with markedly smaller files than JPEG or PNG at comparable quality."
+    },
+    {
+      "term": "Press-ready PDF",
+      "definition": "A portable, page-oriented, device- and resolution-independent file used as the final deliverable for professional printing; can carry CMYK color."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Saving a picture is like choosing a container to carry it in, and different containers are good at different things. JPEG is a vacuum bag: it squishes a photo really small by throwing away tiny details you would not notice, but you can never get them back. PNG is a sturdy box with a see-through lid: it keeps every detail and lets parts of the picture be transparent, so a logo can float on any background. GIF is a tiny flip-book that can move but only knows 256 crayons. TIFF is a heavy archive crate for perfect print copies. WebP and AVIF are newer, lighter bags that hold more with less weight. And SVG is not a photo at all, it is a recipe of shapes, so you can blow it up to the size of a wall and it still looks crisp. Pick the container that fits what the picture needs to do.",
+    "analogy": "Choosing an image format is like choosing how to carry water: a paper cup (JPEG) is light and fine for a quick drink but crushes and leaks detail; a sealed thermos (PNG/TIFF) keeps everything perfectly but is heavier; and a written recipe for water (SVG) weighs almost nothing and scales to any amount, but only works because water is simple to describe.",
+    "analogyLimits": "The water analogy captures the size-versus-fidelity trade-off, but it understates transparency, animation, and color space, which have no water equivalent, and it overstates SVG: real photographs are far too complex to describe as a short recipe, which is exactly why vector formats fail for photos."
+  },
+  "workedExample": "Imagine a coffee shop needs four image files. First, a hero photo of a latte for its homepage: choose WebP (or AVIF) for the smallest file at good quality, with a JPEG fallback for older browsers, because it is a photograph headed for the web. Second, the shop's logo, which appears as a tiny site icon and on a large window decal: choose SVG, because a vector logo stays razor-sharp at both sizes and can be recolored in code, and it must sit transparently over a photo. Third, a short animated 'Open' badge: a GIF works everywhere, but animated WebP or APNG gives full color at a smaller size. Fourth, the artwork for a printed menu the shop sends to a print shop: deliver a press-ready PDF, with any embedded photos supplied as CMYK TIFFs, because PDF and TIFF carry the CMYK color the press needs while a PNG cannot. Each choice follows from one question: what does this image have to do, and where?",
+  "commonMistakes": [
+    {
+      "mistake": "Saving a logo or icon as a JPEG.",
+      "correction": "JPEG is lossy and has no transparency, so a logo gets fuzzy edges and a solid rectangle background. Use SVG for a scalable vector logo, or PNG when you need a fixed-size raster with transparency."
+    },
+    {
+      "mistake": "Using PNG for large photographs on a website.",
+      "correction": "PNG is lossless, so photos become huge files that slow page loads. Use JPEG, or better WebP/AVIF, for photographs; reserve PNG for graphics, screenshots, and images that need transparency or crisp edges."
+    },
+    {
+      "mistake": "Assuming a PNG is fine to send to a commercial printer.",
+      "correction": "PNG is RGB-only and does not support CMYK. Prepare print files as a press-ready PDF, with raster images as CMYK TIFF, so the color space the press needs is preserved."
+    },
+    {
+      "mistake": "Reaching for GIF whenever you need transparency or animation.",
+      "correction": "GIF is capped at 256 colors with only on/off transparency. For smooth transparency use PNG or WebP; for higher-quality animation use WebP or APNG. GIF is best kept for simple, legacy-compatible loops."
+    },
+    {
+      "mistake": "Re-saving a JPEG many times during editing.",
+      "correction": "Each JPEG save discards more data (generation loss). Edit in a lossless format such as PNG or TIFF (or the app's native file) and export to JPEG only once, at the end."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Lossy (JPEG)",
+      "b": "Lossless (PNG, TIFF)",
+      "distinction": "Lossy permanently discards data for much smaller files, ideal for photos; lossless preserves every pixel for exact reproduction, ideal for graphics, text, edges, and editing."
+    },
+    {
+      "a": "JPEG",
+      "b": "PNG",
+      "distinction": "Both are common raster web formats, but JPEG is lossy with no transparency (best for photos), while PNG is lossless with a full alpha channel (best for graphics needing crisp edges or transparency)."
+    },
+    {
+      "a": "GIF",
+      "b": "WebP / AVIF",
+      "distinction": "All can animate, but GIF is capped at 256 colors with binary transparency, while WebP and AVIF offer full color, smooth alpha, and far better compression."
+    },
+    {
+      "a": "Raster formats (JPEG, PNG, TIFF)",
+      "b": "Vector SVG",
+      "distinction": "Raster stores a fixed pixel grid that blurs when enlarged; SVG stores drawing commands that scale to any size sharply, but is unsuitable for photographs."
+    },
+    {
+      "a": "Web formats (PNG, WebP, SVG)",
+      "b": "Print formats (TIFF, PDF, EPS)",
+      "distinction": "Web-oriented formats work in RGB for screens; TIFF, PDF, and EPS can carry CMYK, which is why print deliverables are prepared as PDF or TIFF rather than PNG."
+    }
+  ],
+  "keyTakeaway": "Match the format to the job: JPEG or WebP/AVIF for photos, PNG for web graphics needing transparency, SVG for logos and icons that must scale, GIF for simple legacy animation, and PDF or TIFF (which carry CMYK) for print and archives. The first question is always lossy versus lossless, and the second is web versus print.",
+  "questionBank": [
+    {
+      "id": "graphic-design-and-digital-media:foundations:file-formats:1",
+      "prompt": "Which raster format uses lossy compression, stores 24-bit color, and does not support transparency, making it the common default for photographs?",
+      "options": [
+        "JPEG",
+        "PNG",
+        "GIF",
+        "SVG"
+      ],
+      "correctIndex": 0,
+      "explanation": "JPEG uses lossy compression, stores millions of colors, and has no alpha channel, which is why it is the standard for photographs. PNG is lossless with transparency, GIF is limited to 256 colors, and SVG is a vector format, not a raster photo format.",
+      "difficulty": "recall",
+      "skill": "Recalling JPEG's defining traits",
+      "sourceIds": [
+        "mdn-image-file-types"
+      ]
+    },
+    {
+      "id": "graphic-design-and-digital-media:foundations:file-formats:2",
+      "prompt": "How does GIF differ from PNG?",
+      "options": [
+        "GIF uses lossy compression while PNG uses lossless compression",
+        "GIF supports a full alpha channel while PNG allows only one transparent color",
+        "GIF is limited to a 256-color palette with on/off transparency and can animate, while PNG supports full color and a smooth alpha channel",
+        "GIF supports CMYK for print while PNG is restricted to the web"
+      ],
+      "correctIndex": 2,
+      "explanation": "GIF uses an 8-bit indexed palette of at most 256 colors, offers only binary (on/off) transparency, and can animate, whereas PNG supports millions of colors and a smooth alpha channel. GIF is lossless (not lossy), it is PNG that has the fuller transparency, and neither format supports CMYK.",
+      "difficulty": "understanding",
+      "skill": "Distinguishing GIF and PNG capabilities",
+      "sourceIds": [
+        "mdn-image-file-types",
+        "w3c-png-3"
+      ]
+    },
+    {
+      "id": "graphic-design-and-digital-media:foundations:file-formats:3",
+      "prompt": "A studio needs one logo file that stays perfectly sharp everywhere, from a tiny site icon to a highway billboard, and whose colors can be restyled in code. Which format best fits?",
+      "options": [
+        "A high-resolution JPEG",
+        "A 256-color GIF",
+        "A large TIFF",
+        "SVG"
+      ],
+      "correctIndex": 3,
+      "explanation": "SVG stores the logo as vector drawing commands, so it scales to any size without blur and can be styled with CSS. JPEG, GIF, and TIFF are all raster formats with a fixed pixel grid that blurs or pixelates when enlarged beyond its resolution, and none can be recolored in code the way SVG can.",
+      "difficulty": "application",
+      "skill": "Applying vector traits to a scalable-logo scenario",
+      "sourceIds": [
+        "mdn-image-file-types",
+        "mdn-including-vector-graphics-in-html"
+      ]
+    },
+    {
+      "id": "graphic-design-and-digital-media:foundations:file-formats:4",
+      "prompt": "You are publishing a large photograph on a website and want the smallest file at good quality while still displaying for visitors on older browsers. What is the best approach?",
+      "options": [
+        "Use a GIF, because it is universally supported",
+        "Serve a modern format such as WebP or AVIF with a JPEG fallback via the HTML picture element",
+        "Use an SVG so it scales to any screen",
+        "Use an uncompressed TIFF for maximum quality"
+      ],
+      "correctIndex": 1,
+      "explanation": "WebP and AVIF compress photographs markedly smaller than JPEG at similar quality, and pairing them with a JPEG fallback in a picture element gives older browsers a format they support. GIF's 256-color limit ruins photographs, SVG is a vector format unsuited to photos, and an uncompressed TIFF would be enormous and is not a web delivery format.",
+      "difficulty": "application",
+      "skill": "Choosing an optimized web-photo delivery strategy",
+      "sourceIds": [
+        "mdn-image-file-types"
+      ]
+    },
+    {
+      "id": "graphic-design-and-digital-media:foundations:file-formats:5",
+      "prompt": "A print shop asks for a press-ready file that preserves CMYK color at full quality for a magazine cover, plus an archival master to keep for 20 years. Which pairing fits those two needs?",
+      "options": [
+        "An animated GIF for the cover and a JPEG master",
+        "A PNG for the cover and a WebP master",
+        "An SVG for the cover and a GIF master",
+        "A press-ready PDF (or high-quality TIFF) for the cover and a lossless TIFF archival master"
+      ],
+      "correctIndex": 3,
+      "explanation": "PDF and TIFF can carry CMYK and full-quality data, so a press-ready PDF (with CMYK TIFF images) suits the cover, and a lossless TIFF is the standard archival master used by libraries and museums. GIF, JPEG, PNG, WebP, and SVG are RGB-oriented or lossy web formats: PNG and SVG cannot carry CMYK, and JPEG and GIF discard quality unsuitable for a print master.",
+      "difficulty": "analysis",
+      "skill": "Selecting print and archival formats by color space and fidelity",
+      "sourceIds": [
+        "loc-tiff-6",
+        "loc-pdf-family",
+        "bccampus-graphic-design-print-production-fundamentals"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "graphic-design-and-digital-media:foundations:file-formats:1",
+      "prompt": "Which raster format uses lossy compression, stores 24-bit color, and does not support transparency, making it the common default for photographs?",
+      "options": [
+        "JPEG",
+        "PNG",
+        "GIF",
+        "SVG"
+      ],
+      "correctIndex": 0,
+      "explanation": "JPEG uses lossy compression, stores millions of colors, and has no alpha channel, which is why it is the standard for photographs. PNG is lossless with transparency, GIF is limited to 256 colors, and SVG is a vector format, not a raster photo format.",
+      "difficulty": "recall",
+      "skill": "Recalling JPEG's defining traits",
+      "sourceIds": [
+        "mdn-image-file-types"
+      ]
+    },
+    {
+      "id": "graphic-design-and-digital-media:foundations:file-formats:2",
+      "prompt": "How does GIF differ from PNG?",
+      "options": [
+        "GIF uses lossy compression while PNG uses lossless compression",
+        "GIF supports a full alpha channel while PNG allows only one transparent color",
+        "GIF is limited to a 256-color palette with on/off transparency and can animate, while PNG supports full color and a smooth alpha channel",
+        "GIF supports CMYK for print while PNG is restricted to the web"
+      ],
+      "correctIndex": 2,
+      "explanation": "GIF uses an 8-bit indexed palette of at most 256 colors, offers only binary (on/off) transparency, and can animate, whereas PNG supports millions of colors and a smooth alpha channel. GIF is lossless (not lossy), it is PNG that has the fuller transparency, and neither format supports CMYK.",
+      "difficulty": "understanding",
+      "skill": "Distinguishing GIF and PNG capabilities",
+      "sourceIds": [
+        "mdn-image-file-types",
+        "w3c-png-3"
+      ]
+    },
+    {
+      "id": "graphic-design-and-digital-media:foundations:file-formats:3",
+      "prompt": "A studio needs one logo file that stays perfectly sharp everywhere, from a tiny site icon to a highway billboard, and whose colors can be restyled in code. Which format best fits?",
+      "options": [
+        "A high-resolution JPEG",
+        "A 256-color GIF",
+        "A large TIFF",
+        "SVG"
+      ],
+      "correctIndex": 3,
+      "explanation": "SVG stores the logo as vector drawing commands, so it scales to any size without blur and can be styled with CSS. JPEG, GIF, and TIFF are all raster formats with a fixed pixel grid that blurs or pixelates when enlarged beyond its resolution, and none can be recolored in code the way SVG can.",
+      "difficulty": "application",
+      "skill": "Applying vector traits to a scalable-logo scenario",
+      "sourceIds": [
+        "mdn-image-file-types",
+        "mdn-including-vector-graphics-in-html"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "graphic-design-and-digital-media:foundations:raster-versus-vector",
+    "graphic-design-and-digital-media:foundations:image-resolution",
+    "graphic-design-and-digital-media:foundations:color-models-rgb-and-cmyk",
+    "graphic-design-and-digital-media:foundations:social-media-graphics"
+  ],
+  "sources": [
+    "mdn-image-file-types",
+    "w3c-png-3",
+    "loc-tiff-6",
+    "loc-pdf-family",
+    "bccampus-graphic-design-print-production-fundamentals",
+    "mdn-including-vector-graphics-in-html"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "One CC BY 4.0 open textbook (attributed, no wording reproduced) plus reference-only sources (MDN, W3C, Library of Congress); all prose original.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Format traits (compression, transparency, animation, color space, use cases) for JPEG, PNG, GIF, WebP, AVIF, and SVG were synthesized from the MDN image-format guide and the W3C PNG specification; TIFF's lossless/archival/CMYK role and PDF's device-independent delivery role from the Library of Congress format descriptions; and the print-production framing (press-ready PDF, CMYK, EPS/AI) from the BCcampus OER. All wording is original EliExplains prose; the raster/vector, resolution, and RGB/CMYK concepts are referenced to their own topics rather than re-taught. No copyrighted images, logos, or font files reproduced."
+  },
+  "contentHash": "a92aeaf49771e86c",
+  "status": "source-verified",
+  "public": false
+}
