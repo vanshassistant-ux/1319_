@@ -1,0 +1,142 @@
+{
+  "topicId": "computer-science-fundamentals:foundations:data-types",
+  "subjectId": "computer-science-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "A data type is a classification that tells the computer and programmer how to interpret a sequence of bits and which operations are valid on a value",
+      "Common primitive types: integer, floating-point, boolean, character/string",
+      "Type conversion: implicit (coercion) vs explicit (casting), with verified examples",
+      "Why types matter: memory layout, valid operations, and bug prevention (e.g., integer vs float division)"
+    ],
+    "supporting": [
+      "Composite/collection types named: array, list, tuple, set, dictionary/map",
+      "Static vs dynamic typing (when types are checked)",
+      "Strong vs weak typing (how strictly a language enforces type rules and coercion)",
+      "Floating-point values follow IEEE 754 and have finite precision"
+    ],
+    "outOfScope": [
+      "Variables as named storage (own topic)",
+      "Operator precedence and full operator catalog (own topic)",
+      "Boolean truth tables / logic gates (own topic)",
+      "Deep treatment of arrays, lists, and dictionaries as data structures (own topics)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A data type classifies a value, telling the computer how to interpret its bits and which operations the value supports; in Python's model every object has a type, and the type determines the operations the object supports.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-docs-datamodel", "python-docs-stdtypes"],
+      "status": "supported"
+    },
+    {
+      "claim": "Common built-in types include integers (int), floating-point numbers (float), booleans (bool), and text strings (str); Python also provides collection types such as list, tuple, set, and dict.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-docs-stdtypes"],
+      "status": "supported"
+    },
+    {
+      "claim": "In Python, bool is a subtype of int, and True and False behave like 1 and 0 in most numeric contexts (verified: True + True == 2, issubclass(bool, int) is True).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-docs-stdtypes", "python-docs-datamodel"],
+      "status": "supported"
+    },
+    {
+      "claim": "Explicit conversion (casting) uses an operation like int(\"42\") to produce the integer 42; implicit conversion (coercion) happens automatically, e.g. 3 + 2.0 yields the float 5.0 (verified in python3).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-docs-stdtypes"],
+      "status": "supported"
+    },
+    {
+      "claim": "Type choice changes results: in Python 3, 7 / 2 is the float 3.5 while 7 // 2 is the int 3 (verified in python3).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-docs-stdtypes"],
+      "status": "supported"
+    },
+    {
+      "claim": "A language may be strongly typed (refuses to silently mix incompatible types) or weakly typed (coerces them). Python is strongly typed: \"42\" + 8 raises TypeError. JavaScript is weakly typed for +: 5 + \"x\" produces the string \"5x\" (both verified).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-docs-stdtypes", "mdn-js-addition"],
+      "status": "supported"
+    },
+    {
+      "claim": "Floating-point numbers follow IEEE 754 (current edition 754-2019); the double-precision (binary64) format has finite precision, so values like 0.1, 0.2, and 0.3 cannot all be stored exactly, and 0.1 + 0.2 == 0.3 evaluates to False (verified in python3).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ieee-754-2019", "python-docs-stdtypes"],
+      "status": "supported"
+    },
+    {
+      "claim": "Static typing checks types before the program runs (at compile time); dynamic typing checks types while the program runs. These describe WHEN types are checked, a separate axis from strong vs weak.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-docs-datamodel"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft described data types only as an abstract 'concept students use to organize information' with no technical content, no primitive types, no conversion, and no code — it did not describe what a data type actually is."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic placeholder prose with a technical definition: a classification of bits plus permitted operations.",
+    "Added the actual primitive types, collection types, typing axes, conversion, and verified examples the draft lacked."
+  ],
+  "rightsIssues": [
+    "All sources used REFERENCE_ONLY: facts synthesized and prose written originally; no source wording reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "python-docs-stdtypes",
+      "title": "Built-in Types — Python 3 documentation",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/library/stdtypes.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Authoritative list and semantics of int, float, complex, bool, str, list, tuple, set, dict. Confirms bool is a subclass of int and that True/False behave like 1/0 in numeric contexts. Used to support the primitive/collection type inventory and conversion behavior. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "python-docs-datamodel",
+      "title": "The Python Language Reference — Data model",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/reference/datamodel.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "States every object has an identity, a type, and a value, and that an object's type determines the operations it supports and its possible values. Supports the core definition that a type governs interpretation and permitted operations. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "ieee-754-2019",
+      "title": "IEEE Standard for Floating-Point Arithmetic (IEEE 754-2019)",
+      "provider": "IEEE Standards Association",
+      "url": "https://standards.ieee.org/ieee/754/6210/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Canonical standard for floating-point arithmetic; current edition 754-2019 defines binary64 (double precision) with finite precision. Canonical IEEE landing page recorded as the URL; the standard's facts (edition year, binary64, ~15-16 decimal digits, inexact decimals) were read from the public Wikipedia summary at https://en.wikipedia.org/wiki/IEEE_754 and cross-checked against verified python3 output (0.1 + 0.2 != 0.3). Used only to support the finite-precision claim."
+    },
+    {
+      "id": "mdn-js-addition",
+      "title": "Addition (+) — JavaScript | MDN",
+      "provider": "Mozilla (MDN Web Docs)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "license": "CC-BY-SA 2.5",
+      "licenseUrl": "https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Attrib_copyright_license",
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Documents JavaScript's + operator coercing operands: if one side is a string the other is converted to a string and concatenated (e.g. 5 + \"x\" -> \"5x\"). Used as the weak-typing contrast against Python's strong typing. Facts synthesized; no wording reproduced."
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "topicId": "computer-science-fundamentals:foundations:operators",
+  "subjectId": "computer-science-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Operators are symbols that perform an operation on one or more operands and produce a result value.",
+      "Arithmetic operators: + - * / % // (and ** for exponentiation), including the distinction between true division (/) and floor division (//), and modulo (%).",
+      "Comparison/relational operators: == != < > <= >=, which evaluate to boolean values.",
+      "Assignment operators: = for binding a value to a variable, and compound/augmented forms like += -= *= /=.",
+      "Logical operators named here (and, or, not) as the boolean-combining operators, with depth deferred to boolean-logic.",
+      "Operator precedence and associativity, with a worked example (2 + 3 * 4 = 14) that would be wrong without correct precedence."
+    ],
+    "supporting": [
+      "Operand and expression terminology.",
+      "Left-to-right associativity for most binary operators; right-to-left for ** (exponentiation).",
+      "Comparison chaining (x < y <= z) in Python.",
+      "Integer vs float division and the sign of the modulo result in Python."
+    ],
+    "outOfScope": [
+      "Truth tables, De Morgan's laws, and short-circuit evaluation (owned by boolean-logic).",
+      "The full type system and numeric types (owned by data-types).",
+      "Declaring and naming variables in depth (owned by variables).",
+      "Bitwise operators beyond a passing mention."
+    ]
+  },
+  "claims": [
+    {
+      "claim": "An operator is a symbol that performs an operation on one or more operands and yields a result; e.g. in 3 + 4 the + is the operator and 3 and 4 are operands.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["python-lexical-analysis-operators", "python-language-reference-expressions"],
+      "status": "supported"
+    },
+    {
+      "claim": "Python's arithmetic operators include + - * / // % and **; / always returns a float, // performs floor division discarding the fractional part, and % returns the remainder.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-tutorial-numbers", "python-lexical-analysis-operators"],
+      "status": "supported"
+    },
+    {
+      "claim": "17 / 3 == 5.666666666666667, 17 // 3 == 5, 17 % 3 == 2, 5 ** 2 == 25, and 2 ** 7 == 128.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["python-tutorial-numbers"],
+      "status": "supported"
+    },
+    {
+      "claim": "Comparison operators (< <= > >= == !=) have the same precedence and yield boolean results; they can be chained left-to-right, so x < y <= z is equivalent to x < y and y <= z with y evaluated once.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-language-reference-expressions"],
+      "status": "supported"
+    },
+    {
+      "claim": "In Python's precedence table, ** binds tighter than the unary +/-/~ and the multiplicative operators (* / // % @), which bind tighter than additive + and -, which bind tighter than comparisons, which bind tighter than not, and, or.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-language-reference-expressions"],
+      "status": "supported"
+    },
+    {
+      "claim": "Because * has higher precedence than +, the expression 2 + 3 * 4 evaluates to 14, not 20; parentheses (2 + 3) * 4 force the addition first and give 20.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["python-language-reference-expressions"],
+      "status": "supported"
+    },
+    {
+      "claim": "Most binary operators associate left to right (10 - 3 - 2 == 5), but exponentiation associates right to left, so 2 ** 3 ** 2 == 2 ** (3 ** 2) == 512, not 64.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["python-language-reference-expressions", "python-tutorial-numbers"],
+      "status": "supported"
+    },
+    {
+      "claim": "Augmented assignment operators such as += -= *= //= combine an operation with assignment; x += 3 updates x to its previous value plus 3.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-lexical-analysis-operators"],
+      "status": "supported"
+    },
+    {
+      "claim": "The single = is the assignment operator (binding a value to a name) while == is the equality comparison operator; confusing the two is a common error.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-lexical-analysis-operators", "python-language-reference-expressions"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic filler ('Operators is a foundational concept...', 'a label on a toolbox drawer') with no operator-specific content; none of it was usable as evidence."
+  ],
+  "correctionsNeeded": [
+    "Replaced boilerplate definitions with the concrete operator/operand definition and named operator categories.",
+    "Added verified arithmetic (precedence, associativity, division/modulo) that the draft entirely lacked."
+  ],
+  "rightsIssues": [
+    "Python documentation is under the PSF license (permissive) but treated here as REFERENCE_ONLY: facts synthesized, prose written original, short verified numeric examples only."
+  ],
+  "sourceRecords": [
+    {
+      "id": "python-language-reference-expressions",
+      "title": "The Python Language Reference — 6. Expressions (Operator precedence)",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/reference/expressions.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Section 6.17 gives the authoritative operator-precedence table (highest to lowest), states that ** groups right-to-left and most operators left-to-right, that comparisons share one precedence level, yield booleans, and chain left-to-right. Used for precedence, associativity, and comparison-chaining claims. Fetched and read the live page 2026-08-19."
+    },
+    {
+      "id": "python-lexical-analysis-operators",
+      "title": "The Python Language Reference — 2.7 Operators and delimiters",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/reference/lexical_analysis.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Lists the operator and delimiter tokens: arithmetic (+ - ** * // / %), comparison (<= >= < > == !=), and augmented-assignment operators (+= -= *= **= /= //= %= etc). Used for the catalogue of operator categories and the augmented-assignment claim. Fetched and read live 2026-08-19."
+    },
+    {
+      "id": "python-tutorial-numbers",
+      "title": "The Python Tutorial — 3. An Informal Introduction (Numbers)",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/tutorial/introduction.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Numbers section: '/ always returns a float', '// discards the fractional part', '% returns the remainder', and '**' calculates powers, with worked examples 17/3, 17//3, 17%3, 5**2, 2**7, 5*3+2. Used to anchor division/modulo/exponent semantics and verified numeric values. Fetched and read live 2026-08-19; all numbers re-verified with python3."
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+# Pseudocode
+
+## In 30 Seconds
+
+Pseudocode is an informal, language-agnostic way to write out an algorithm's steps in plain, structured language that people can read. It borrows a few code-like conventions—uppercase keywords, an assignment arrow, IF/ELSE, WHILE and FOR loops, INPUT and OUTPUT, and indentation for nested blocks—but no compiler runs it. You use it to work out and share the logic of a solution before choosing a programming language, so the thinking is settled before the syntax gets in the way.
+
+## Why This Matters
+
+Most programming courses ask you to design an algorithm before you write code, and pseudocode is the tool for that step. Because it drops language-specific syntax, it lets you reason about logic, catch flaws, and explain a plan to teammates or an instructor who may not share your language. Professionally, engineers sketch pseudocode in design documents, code reviews, and technical interviews for the same reason: it makes the intended behavior explicit and reviewable before anyone commits to Python, Java, or C. Learning its conventions now makes later topics—variables, conditionals, loops, and full algorithms—easier, because you will already think in terms of clear, ordered steps.
+
+## Learning Objectives
+
+- Define pseudocode as an informal, language-agnostic description of an algorithm written for humans.
+- Identify common pseudocode conventions: uppercase keywords, the assignment operator, selection, iteration, input/output, and indentation.
+- Explain why pseudocode is used during design and communication rather than execution.
+- Distinguish pseudocode from flowcharts and from executable source code.
+- Apply pseudocode conventions by tracing a small algorithm to determine what it computes.
+
+## The College Version
+
+### What pseudocode is
+
+Pseudocode is a kind of structured English for describing an algorithm—a finite set of steps that achieves a desired result. It sits between an everyday description of a task and real program code. It is more precise and orderly than a paragraph of prose, because it spells out each step and the order steps run in, yet it is looser than a programming language, because no compiler or interpreter ever reads it. Its audience is human: a classmate, an instructor, a teammate, or your future self trying to understand how a solution is organized. That single fact explains almost everything about how pseudocode is written. Since a machine will never execute it, you are free to leave out declarations, punctuation, and error handling that a real language demands, and instead put your attention on the logic. A widely used university style guide puts it plainly: pseudocode lets the designer focus on the logic of the algorithm without being distracted by the details of language syntax, while still being complete enough that translating it line by line into code becomes a mechanical task. There is no single official pseudocode language; each textbook, course, and exam board defines its own conventions, and people adopt a shared style for consistency rather than because a standards body requires it.
+
+### Common conventions
+
+Although styles vary, a familiar core recurs across courses and reference guides. Keywords—the words that mark structure—are usually written in upper case so they stand out: IF, ELSE, WHILE, FOR, REPEAT, INPUT, OUTPUT. Assignment, meaning "store this value in this variable," is commonly written with a left arrow: `total ← 0` reads as "total gets zero." The right-hand side is evaluated first, then stored in the name on the left; this keeps assignment visually distinct from an equality test, which uses `=`. Selection—choosing between paths based on a condition—is written with IF/THEN/ELSE, often closed by ENDIF. Iteration—repeating steps—comes in a few shapes: a WHILE loop tests its condition before each pass and runs the body only while the condition holds; a FOR loop counts through a range; a REPEAT loop tests its condition at the bottom. Reading and displaying values use INPUT and OUTPUT. Finally, indentation carries real meaning: statements are indented to show that they belong inside a loop or a decision, so the shape on the page mirrors the structure of the logic. One step per line and clear, descriptive names round out the style.
+
+### Why we use it: design and communication
+
+Pseudocode earns its place at two moments. The first is design. Before you type real code, you have to decide what the code should do and in what order—and doing that in a full language mixes the hard question (the logic) with the easy-to-get-wrong details (semicolons, imports, type declarations). Pseudocode lets you settle the logic first and defer the syntax. Because it is language-agnostic, the same pseudocode can later be implemented in Python, Java, C, or anything else; you have not locked yourself into one language while you are still thinking. The second moment is communication. A design document, a code review, a lecture, or a whiteboard interview often needs to show an algorithm to people who may not all use the same language. Pseudocode communicates the idea without demanding that everyone read a particular syntax. It is also a teaching tool: because it strips away syntax, beginners can follow the flow of an algorithm—the sequence of steps, the decisions, and the loops—without first mastering a compiler's rules. A practical discipline goes with this: each step should decompose to the level of a single loop or a single decision, so a line like "find the customer with the highest balance," which really needs a loop and a comparison inside it, is broken down rather than left vague.
+
+### Pseudocode, flowcharts, and real code
+
+Three representations often get compared. A flowchart is a diagram: it shows an algorithm's control flow with standardized shapes (boxes for actions, diamonds for decisions) connected by arrows. It is visual and good for seeing branches and loops at a glance, but it grows awkward for long or detailed algorithms. Pseudocode expresses the same control flow as text—structured English with a few keywords—which scales better to detail and sits naturally in a written document. Real source code is the third: unlike the other two, it is executed by a machine, so it must obey a language's exact syntax and handle details pseudocode can skip. A useful way to see the relationship is by audience and enforcement. Flowcharts and pseudocode are read by humans and are not checked by any compiler, so small informalities are fine; source code is read by a machine and must be exact. In practice many programmers move from a rough idea, to pseudocode or a flowchart that fixes the logic, to code that the machine can run. Pseudocode is the bridge: precise enough to guide implementation, loose enough to write quickly.
+
+## Key Vocabulary
+
+- **Pseudocode** — An informal, language-agnostic notation that describes an algorithm's steps in structured, human-readable form; it is written for people and is not executed by a computer.
+- **Algorithm** — A finite, well-defined set of steps that achieves a desired result; NIST defines it as a computable set of steps to achieve a desired result.
+- **Assignment operator** — The symbol that stores a value into a variable; in many pseudocode conventions it is a left arrow (←), as in `count ← 0`.
+- **Control structure** — A construct that governs the order in which steps run—sequence, selection (decisions), and iteration (loops).
+- **Selection** — Choosing between alternative steps based on whether a condition is true, expressed with IF/ELSE (and sometimes CASE).
+- **Iteration** — Repeating a block of steps, expressed with loops such as WHILE, FOR, and REPEAT-UNTIL.
+- **Indentation** — Consistent left spacing used to show that statements are contained within a loop or a decision, making the structure visible.
+- **Flowchart** — A diagram that represents an algorithm's control flow using standardized shapes and connecting arrows.
+- **Language-agnostic** — Not tied to the syntax of any particular programming language, so the same description can be implemented in many languages.
+
+## Eli-10
+
+Pseudocode is a way to write down the plan for a computer program in almost-plain language, so a human can follow it before any real code exists. You still use a few special words like IF, WHILE, and FOR to show decisions and repeating, and you line things up with indentation so it is clear which steps belong inside which. But you skip the fussy rules that a real programming language forces on you, because no computer is going to run it. The whole point is to get the steps and their order right first, then turn it into real code later in whatever language you like.
+
+## Eli's Analogy
+
+Pseudocode is like a recipe written before you know which kitchen you will cook in. The recipe lists the steps in order—"chop the onions, then heat the oil, then add them"—clearly enough that any cook can follow it, without saying which brand of stove or exact pan to use. Once you know your kitchen (your programming language), you carry out the same steps with the specific tools it gives you.
+
+**Where the analogy breaks down:** A recipe is the final product a cook follows directly, while pseudocode is a draft that still has to be translated into real code before a computer can do anything with it. And recipes have no strict notion of loops or conditions, whereas pseudocode deliberately borrows those structured constructs from programming.
+
+## Worked Example
+
+Suppose we want an algorithm that adds up the whole numbers from 1 to a value n. In pseudocode:
+
+```
+INPUT n
+total ← 0
+FOR i ← 1 TO n
+   total ← total + i
+ENDFOR
+OUTPUT total
+```
+
+Read it top to bottom. We read a value into `n`, start `total` at 0, then loop `i` from 1 up to `n`, each pass adding the current `i` to `total`; when the loop ends we output `total`. Trace it with n = 5: `total` starts at 0, then becomes 1, 3, 6, 10, and finally 15 as `i` takes the values 1 through 5. So the algorithm outputs 15, which matches the closed-form n(n+1)/2 = 5×6/2 = 15. Notice what the pseudocode did and did not do: it showed the logic (initialize, loop, accumulate, output) and used indentation to mark the loop body, but it never declared `n`'s type or worried about syntax—those choices wait until you implement it in a real language.
+
+## Common Mistakes
+
+- **Treating pseudocode as a strict language with one correct syntax.** Pseudocode is read by people, not compiled. Conventions vary between textbooks and courses; the goal is clear, unambiguous logic, not matching an official grammar.
+- **Writing pseudocode that is really just Python or Java with the punctuation removed.** If it depends on one language's syntax, it is no longer language-agnostic. Describe the logic in terms of the problem so it could be implemented in any language.
+- **Leaving steps too vague to implement, such as "find the best option".** Decompose each step to the level of a single loop or decision. "Find the highest value" hides a loop and a comparison, so write those out.
+- **Confusing pseudocode with a flowchart.** Pseudocode is text (structured English); a flowchart is a diagram of shapes and arrows. Both describe control flow, but they are different representations.
+- **Using `=` ambiguously for both "store a value" and "is equal to".** Many conventions reserve the arrow ← for assignment and `=` for an equality test, so a reader can tell "set x to 5" from "check whether x equals 5".
+
+## Compare / Contrast
+
+- **Pseudocode vs. Flowchart** — Both describe an algorithm's control flow and are for humans, but pseudocode is text (structured English) while a flowchart is a diagram of shapes and arrows; pseudocode scales better to detailed algorithms.
+- **Pseudocode vs. Real source code** — Pseudocode is read by people and can skip syntax and declarations; source code is executed by a machine and must obey a language's exact rules.
+- **Assignment (←) vs. Equality test (=)** — The arrow stores a value into a variable (an action that changes state); the equals sign asks whether two values are the same (a comparison that yields true or false).
+
+## Key Takeaway
+
+Pseudocode is an informal, language-agnostic way to write an algorithm's steps for humans, using a few shared conventions—keywords, an assignment arrow, selection, loops, and indentation—so you can settle and share the logic before committing to any programming language.
+
+## Practice Question Bank
+
+1. **Which statement best describes pseudocode?**
+   - A. An informal, language-agnostic description of an algorithm's logic, written for humans to read.
+   - B. A programming language that a compiler translates directly into machine code.
+   - C. A diagram that shows control flow using boxes and arrows.
+   - D. The binary instructions a CPU executes at run time.
+
+   *Answer: A.* Pseudocode is structured English that describes an algorithm for people, not a compiler; it is language-agnostic. C describes a flowchart (a diagram, not text). B and D describe executable code, which pseudocode is not—no machine runs pseudocode.
+
+2. **In the pseudocode conventions taught by many courses and exam guides, which symbol is used as the assignment operator to store a value in a variable?**
+   - A. `==`
+   - B. `=>`
+   - C. `:`
+   - D. `←`
+
+   *Answer: D.* A common convention writes assignment as a left arrow, e.g. `total ← 0` ("total gets 0"). The equals sign (=) is typically reserved for an equality test, and `==` and `=>` are operators from specific programming languages, not the standard pseudocode assignment symbol.
+
+3. **Why is pseudocode described as language-agnostic?**
+   - A. Because it can only be written correctly in English.
+   - B. Because it expresses an algorithm's logic without committing to any one programming language's syntax.
+   - C. Because it runs identically on every operating system.
+   - D. Because a compiler automatically converts it into several languages at once.
+
+   *Answer: B.* Language-agnostic means the description is not tied to any particular language's syntax, so the same pseudocode could later be implemented in Python, Java, C, and others. It is not about natural language (A), and pseudocode is never run or compiled at all (C and D are false—no machine executes it).
+
+4. **A team wants to agree on the logic of an algorithm before deciding whether to implement it in Python or Java, using a text form that reads like structured English and drops language-specific syntax. Which representation best fits that need?**
+   - A. Compiled machine code for the target CPU.
+   - B. A flowchart drawn with standardized shapes and arrows.
+   - C. Pseudocode.
+   - D. A finished unit-test suite in Java.
+
+   *Answer: C.* The described artifact—text, structured English, language-agnostic, written before choosing a language—is pseudocode. A flowchart (B) also shows logic but is a diagram, not text, so it does not match "text form that reads like structured English." Machine code (A) and a Java test suite (D) are tied to execution and to a specific language.
+
+5. **Consider this pseudocode:**
+
+   ```
+   total ← 0
+   FOR i ← 1 TO 5
+      total ← total + i
+   ENDFOR
+   OUTPUT total
+   ```
+
+   **What value does it output?**
+   - A. 5
+   - B. 15
+   - C. 10
+   - D. 6
+
+   *Answer: B.* The loop adds each `i` from 1 to 5 into `total`: total becomes 1, 3, 6, 10, then 15, matching 1+2+3+4+5 = 15 (and n(n+1)/2 = 5×6/2 = 15). 5 is only the last `i`, 10 is the sum 1+2+3+4, and 6 is the sum after i = 3, so none of those is the final output.
+
+## Sources
+
+- **Pseudocode Standard** — John Dalbey, California Polytechnic State University (CSC course materials). <https://users.csc.calpoly.edu/~jdalbey/SWE/pdl_std.html> — REFERENCE_ONLY. University CS course style guide: pseudocode as structured English focused on logic, read by people not computers, no universal standard, and the structured constructs (SEQUENCE, WHILE, IF-THEN-ELSE, REPEAT-UNTIL, FOR, CASE).
+- **Pseudocode Guide for Teachers — Cambridge International AS & A Level Computer Science 9618** (for exams in 2026), © Cambridge University Press & Assessment 2023. <https://www.cambridgeinternational.org/Images/697401-2026-pseudocode-guide-for-teachers.pdf> — REFERENCE_ONLY. Official exam-board conventions: assignment operator ←, uppercase keywords, indentation for containment, INPUT/OUTPUT, IF/ELSE/ENDIF, WHILE/ENDWHILE, FOR loops.
+- **algorithm — NIST Dictionary of Algorithms and Data Structures.** U.S. National Institute of Standards and Technology. <https://xlinux.nist.gov/dads/HTML/algorithm.html> — PUBLIC_DOMAIN. Definition of an algorithm ("a computable set of steps to achieve a desired result").
+
+## Related Topics
+
+- computer-science-fundamentals:foundations:algorithms
+- computer-science-fundamentals:foundations:variables
+- computer-science-fundamentals:foundations:conditional-statements
+- computer-science-fundamentals:foundations:loops
+
+## Editorial Metadata
+
+- **Editorial status:** READY_TO_PUBLISH
+- **Estimated minutes:** 9
+- **Researched at:** 2026-08-19
+- **Research status:** source-verified
+- **Rights status:** reference-only sources plus one public-domain NIST definition; no source prose adapted
+- **Transformation:** Facts on pseudocode conventions and purpose were drawn from a university style guide and an exam-board guide and rewritten in original prose; the worked example's arithmetic (sum 1..5 = 15) was verified independently in Python.

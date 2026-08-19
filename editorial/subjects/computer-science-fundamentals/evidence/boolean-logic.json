@@ -1,0 +1,90 @@
+{
+  "topicId": "computer-science-fundamentals:foundations:boolean-logic",
+  "subjectId": "computer-science-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Boolean values true/false as the two-valued foundation of logic in programming",
+      "The three basic operators AND (conjunction), OR (disjunction), NOT (negation) with correct truth tables",
+      "Boolean expressions built by combining operators, evaluated to a single true/false value",
+      "Short-circuit evaluation: AND stops at the first false operand, OR stops at the first true operand",
+      "De Morgan's laws: NOT(A AND B) = (NOT A) OR (NOT B); NOT(A OR B) = (NOT A) AND (NOT B)",
+      "Historical roots in George Boole's algebra of logic and Augustus De Morgan's laws"
+    ],
+    "supporting": [
+      "Operator precedence: NOT binds tighter than AND, which binds tighter than OR",
+      "Inclusive OR (true when at least one operand is true) versus exclusive-or",
+      "Use of boolean expressions as conditions that control program branching"
+    ],
+    "outOfScope": [
+      "The logical operators as a naming/vocabulary topic (owned by operators)",
+      "How conditions drive branching syntax (owned by conditional-statements)",
+      "The boolean data type's storage and representation (owned by data-types)",
+      "Hardware logic gates and digital circuit design"
+    ]
+  },
+  "claims": [
+    { "claim": "A boolean value is one of exactly two values, true or false.", "claimType": "EVERGREEN", "sourceIds": ["levin-discrete-open-introduction", "python-docs-stdtypes-boolean"], "status": "supported" },
+    { "claim": "AND (conjunction) is true only when both operands are true; OR (inclusive disjunction) is true when at least one operand is true; NOT (negation) reverses the truth value.", "claimType": "EVERGREEN", "sourceIds": ["levin-discrete-open-introduction"], "status": "supported" },
+    { "claim": "De Morgan's laws state that NOT(A AND B) equals (NOT A) OR (NOT B), and NOT(A OR B) equals (NOT A) AND (NOT B); verified exhaustively over all input combinations.", "claimType": "EVERGREEN", "sourceIds": ["levin-discrete-open-introduction", "sep-algebra-of-logic-tradition"], "status": "supported" },
+    { "claim": "In Python, 'and' is a short-circuit operator that only evaluates its second argument if the first is true, and 'or' only evaluates its second argument if the first is false.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-stdtypes-boolean"], "status": "supported" },
+    { "claim": "In Python the boolean operators 'and' and 'or' return one of their operands rather than always returning True or False, and 'not' has lower priority than non-boolean operators.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-stdtypes-boolean"], "status": "supported" },
+    { "claim": "George Boole introduced an algebraic system for logic, publishing The Mathematical Analysis of Logic (1847) and An Investigation of the Laws of Thought (1854); Augustus De Morgan was a contemporary contributor to the nineteenth-century algebra of logic, and the pair of negation-distribution rules bear his name.", "claimType": "HISTORICAL", "sourceIds": ["sep-algebra-of-logic-tradition"], "status": "supported" }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic boilerplate ('a foundational concept', 'organize information, ask better questions') with no actual boolean content, no operators, and no truth tables."
+  ],
+  "correctionsNeeded": [
+    "Replaced boilerplate with concrete definitions of true/false and the AND/OR/NOT truth tables.",
+    "Added the correct, Bash-verified truth tables and De Morgan's laws.",
+    "Added short-circuit evaluation and correct historical attribution to Boole and De Morgan."
+  ],
+  "rightsIssues": [
+    "Levin's Discrete Mathematics is CC BY-NC-SA 4.0 (noncommercial); treated as REFERENCE_ONLY, facts synthesized in original prose, no wording reproduced.",
+    "Python documentation and the Stanford Encyclopedia of Philosophy are used as REFERENCE_ONLY; no prose reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "python-docs-stdtypes-boolean",
+      "title": "Built-in Types — Boolean Operations (and, or, not) and Truth Value Testing",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/library/stdtypes.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Authoritative language semantics for the boolean operators. Documents that 'and'/'or' short-circuit and return one of their operands, that 'not' returns True/False, and operator priority not > and > or. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "levin-discrete-open-introduction",
+      "title": "Discrete Mathematics: An Open Introduction, 4th edition — Logical statements and connectives",
+      "provider": "Oscar Levin",
+      "url": "https://discrete.openmathbooks.org/dmoi4/sec_logic-statements.html",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Open discrete-math text. Confirms truth tables for conjunction (AND), disjunction (inclusive OR), negation (NOT), and De Morgan's laws. Noncommercial license, so used as reference only; all prose original."
+    },
+    {
+      "id": "sep-algebra-of-logic-tradition",
+      "title": "The Algebra of Logic Tradition (Stanford Encyclopedia of Philosophy)",
+      "provider": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/algebra-logic-tradition/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Historical reference for the nineteenth-century mathematization of logic. Confirms Boole's Mathematical Analysis of Logic (1847) and Laws of Thought (1854) and De Morgan as a contemporary contributor. Used for history only; no wording reproduced."
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "topicId": "computer-science-fundamentals:foundations:what-computer-science-is",
+  "subjectId": "computer-science-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Computer science defined as the systematic study of computation, information, and algorithms",
+      "The algorithm as the discipline's central, machine-independent object of study",
+      "Major subfields named briefly (theory, systems, AI, HCI, graphics, security, software engineering)",
+      "How CS differs from coding, software engineering, and information technology",
+      "The sense in which CS is a science: abstraction plus rigor, theory and empirical testing"
+    ],
+    "supporting": [
+      "The 'computers vs. telescopes' framing that the machine is an instrument, not the subject",
+      "Complexity/analysis can happen on paper before any program exists"
+    ],
+    "outOfScope": [
+      "The four-pillar computational-thinking process (owned by computational-thinking)",
+      "Formal properties and analysis of specific algorithms (owned by algorithms)",
+      "Abstraction as a standalone technique (owned by abstraction)",
+      "Decomposition as a standalone technique (owned by decomposition)",
+      "The software development life cycle phases (owned by software-development-life-cycle)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Computing/computer science is the systematic study of algorithmic processes that describe and transform information, including their theory, analysis, design, efficiency, implementation, and application.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["denning-computing-as-discipline-1989", "vt-kafura-definitions-cs"],
+      "status": "supported"
+    },
+    {
+      "claim": "An algorithm is a computable set of steps to achieve a desired result.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-algorithm"],
+      "status": "supported"
+    },
+    {
+      "claim": "Computer science is defined by Wikipedia's summary of the field as the study of computation, information, and automation, spanning theoretical areas (algorithms, theory of computation) and applied ones (hardware and software design, AI, HCI).",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cs-wikipedia"],
+      "status": "supported"
+    },
+    {
+      "claim": "Major subfields include theory of computation, algorithms and data structures, programming languages and formal methods, computer architecture, operating systems, networks, databases, artificial intelligence, human-computer interaction, computer graphics, and security/cryptography.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cs-wikipedia"],
+      "status": "supported"
+    },
+    {
+      "claim": "Computer science and software engineering are separate but complementary disciplines; David Parnas characterized CS as studying computational properties in general and software engineering as designing specific computations for practical goals.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["cs-wikipedia"],
+      "status": "supported"
+    },
+    {
+      "claim": "Study of computer hardware belongs largely to computer engineering, and commercial deployment/maintenance of systems falls under information technology or information systems, distinguishing both from computer science.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cs-wikipedia"],
+      "status": "supported"
+    },
+    {
+      "claim": "The remark 'computer science is no more about computers than astronomy is about telescopes' is commonly attributed to Edsger Dijkstra and conveys that the computer is an instrument while computation is the object of study.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["cs-wikipedia"],
+      "status": "supported"
+    },
+    {
+      "claim": "Computer science combines mathematical rigor with empirical investigation; Newell and Simon (1975) characterized it as an empirical discipline, and the field draws on theory, experiment, and design.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["cs-wikipedia"],
+      "status": "supported"
+    },
+    {
+      "claim": "Because an algorithm is language- and machine-independent, its correctness and efficiency can be reasoned about before any implementation, and complexity conclusions hold across every machine that runs it faithfully.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-algorithm", "denning-computing-as-discipline-1989"],
+      "status": "supported"
+    },
+    {
+      "claim": "Worked example: linear search inspects up to n entries in the worst case, while binary search on a sorted list of ~1000 items reaches an answer in at most about 10 comparisons (ceil(log2(1000)) = 10).",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["nist-dads-algorithm"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether computer science is fundamentally a science, a branch of mathematics, or engineering.",
+      "positions": [
+        "Newell and Simon: an empirical discipline (a science)",
+        "Others emphasize its mathematical foundations",
+        "Denning and others frame computing as drawing on all three: theory, experiment (abstraction/modeling), and design"
+      ],
+      "resolution": "The lesson presents CS as combining mathematical rigor and empirical testing, and notes the debate rather than asserting a single verdict."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's abstract filler ('a concept students use to organize information') carried no real content about computer science and was discarded.",
+    "The draft's circular vocabulary entry defining 'What Computer Science Is' as 'a foundational concept covered in this lesson' was discarded."
+  ],
+  "correctionsNeeded": [
+    "Replaced boilerplate with a substantive definition centered on computation and algorithms.",
+    "Added the CS-vs-coding, CS-vs-software-engineering, and CS-vs-IT distinctions the scope requires.",
+    "Named real subfields instead of generic placeholders.",
+    "Grounded the algorithm definition in NIST DADS and the discipline definition in the Denning ACM report."
+  ],
+  "rightsIssues": [
+    "Denning ACM report and Wikipedia are reference-only for prose; only short attributed definitions are quoted. NIST DADS is a U.S. government work (public domain) but only a short definition is quoted."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-dads-algorithm",
+      "title": "algorithm — Dictionary of Algorithms and Data Structures (DADS)",
+      "provider": "U.S. National Institute of Standards and Technology (NIST)",
+      "url": "https://xlinux.nist.gov/dads/HTML/algorithm.html",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19. Supports the definition of an algorithm as 'a computable set of steps to achieve a desired result,' used verbatim as a short attributed quote. NIST DADS is a U.S. government reference work in the public domain."
+    },
+    {
+      "id": "denning-computing-as-discipline-1989",
+      "title": "Computing as a Discipline",
+      "provider": "Denning, Comer, Gries, Mulder, Tucker, Turner, Young — Communications of the ACM (ACM Education Board task force)",
+      "url": "https://dl.acm.org/doi/10.1145/63238.63239",
+      "sourceType": "peer-reviewed",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Canonical record is the CACM DOI (dl.acm.org returns 403 to bots but the DOI is valid). Verified the definition via WebSearch result snippets and the openly readable mirror at https://www.cs.auckland.ac.nz/courses/compsci747s2c/lectures/denning-1989.pdf (HTTP 200). Supports the discipline definition: 'the systematic study of algorithmic processes that describe and transform information: their theory, analysis, design, efficiency, implementation, and application.' Copyrighted; only the short definition is quoted with attribution and all lesson prose is original."
+    },
+    {
+      "id": "cs-wikipedia",
+      "title": "Computer science",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Computer_science",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19. Corroborates the field definition (study of computation, information, automation), the list of major subfields, the Dijkstra 'telescopes' framing, the Parnas CS-vs-software-engineering distinction, the CS-vs-computer-engineering and CS-vs-IT boundaries, and the Newell-Simon 'empirical discipline' characterization. Used as a corroborating reference; no wording reproduced, facts rewritten in original prose."
+    },
+    {
+      "id": "vt-kafura-definitions-cs",
+      "title": "Definitions of Computer Science (course notes)",
+      "provider": "Dennis Kafura, Department of Computer Science, Virginia Tech",
+      "url": "https://people.cs.vt.edu/~kafura/ComputationalThinking/Class-Notes/Definitions-of-Computer-Science.html",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19. University CS-department page collecting authoritative definitions; confirms the Denning et al. (1988/1989) 'systematic study of algorithmic processes that describe and transform information' definition and the point that CS extends beyond programming and has a strong mathematical foundation. Used to corroborate the discipline definition; no wording reproduced."
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+# Data Types
+
+## In 30 Seconds
+
+A data type is a classification attached to a value that tells the computer how to interpret its bits and which operations are allowed on it. The same bits could mean an integer, a floating-point number, or a character depending on their type. Types decide how much memory a value needs, what you can do with it, and whether an operation makes sense. Getting a type wrong, like dividing integers when you wanted decimals, is a common source of bugs.
+
+## Why This Matters
+
+Every value a program touches has a type, so understanding types is a prerequisite for almost everything else in programming. Types explain why 7 divided by 2 can give 3 or 3.5, why adding a number to a piece of text sometimes fails and sometimes silently produces nonsense, and why a decimal calculation can be slightly off. They also connect to design decisions you meet later: choosing an efficient representation, catching mistakes before code runs, and reasoning about memory. Whether you write Python, Java, JavaScript, C, or SQL, the vocabulary of integers, floats, booleans, strings, and collections carries across the whole field.
+
+## Learning Objectives
+
+- Define a data type as a classification governing interpretation and permitted operations.
+- Identify common primitive types (integer, floating-point, boolean, character/string) and name composite/collection types.
+- Distinguish static from dynamic typing and strong from weak typing.
+- Explain the difference between implicit and explicit type conversion and give a correct example of each.
+- Analyze how a type choice changes a result, such as integer versus floating-point division.
+
+## The College Version
+
+### What a data type actually is
+
+Inside a computer, everything is stored as bits: sequences of ones and zeros. A byte holding the pattern 01000001 has no inherent meaning on its own. It could represent the integer 65, the character 'A', or part of a larger floating-point number. A data type is the classification that resolves this ambiguity. It tells both the machine and the programmer how to interpret a given region of memory and which operations are legal on the value stored there. In the Python data model this is stated directly: every object has an identity, a type, and a value, and the object's type determines the operations it supports and the range of values it can hold. So a type is really two promises bundled together. First, an interpretation: read these bits as an integer, or as text, or as a truth value. Second, a contract of operations: you may add two integers, concatenate two strings, or test a boolean, but you may not meaningfully divide a word by a color. When people say a value "is a string" or "is an int", they are naming the rules that govern it.
+
+### Primitive types and collections
+
+Most languages provide a small set of primitive (or built-in scalar) types as the raw material. Integers represent whole numbers, positive and negative, with no fractional part. Floating-point numbers represent real numbers with a fractional part, such as 3.14; they follow the IEEE 754 standard and, importantly, store values in a fixed amount of space, which limits their precision. Booleans represent exactly two values, true and false, and drive decisions and conditions. Characters represent a single symbol, and strings represent sequences of characters, that is, text. Beyond these primitives, languages offer composite or collection types that group many values together: arrays and lists (ordered sequences), tuples (fixed ordered groups), sets (unordered collections of unique values), and dictionaries or maps (collections of key-to-value pairs). Terminology shifts between languages, which is a frequent source of confusion. A Python list is a resizable, array-backed sequence, not a linked list; a C or Java array is a fixed-size contiguous block; a Python dictionary is called a map, hash map, or associative array elsewhere. The underlying idea, a named type governing structure and operations, is the same everywhere.
+
+### Type systems: when and how strictly types are checked
+
+Languages differ along two independent axes. The first is static versus dynamic typing, which is about WHEN types are checked. In a statically typed language such as Java or C, the type of each variable is fixed and verified before the program runs, during compilation; type-inconsistent code is rejected at that stage. In a dynamically typed language such as Python or JavaScript, values carry their types and checks happen while the program runs, so a type error surfaces only when the offending line executes. The second axis is strong versus weak typing, which is about HOW STRICTLY a language enforces its rules and whether it silently converts between types. Python is strongly typed: the expression `"42" + 8` raises a TypeError rather than guessing what you meant. JavaScript is comparatively weak for the + operator: `5 + "x"` quietly produces the string `"5x"` by converting the number to text. These two axes are separate. Python is dynamically typed yet strongly typed; that combination is common and worth remembering, because "dynamic" and "weak" are often wrongly treated as the same thing.
+
+### Converting between types
+
+Because a program mixes types constantly, converting between them is routine. There are two kinds. Implicit conversion, also called coercion, happens automatically when the language decides it is safe. Adding an integer and a float, as in `3 + 2.0`, produces the float 5.0: the integer is promoted to a float so the addition has a common type. Explicit conversion, also called casting, happens when you deliberately request it with an operation. Calling `int("42")` turns the text "42" into the integer 42, and `int(3.9)` truncates the float toward zero to give 3. Explicit conversion is where you take responsibility for a change the language would not perform on its own: a string of digits is not automatically a number, and turning a float into an int throws away the fractional part. Reading input from a keyboard, a file, or a web form almost always yields text, so casting that text to a number before doing arithmetic is one of the most common operations a beginning programmer writes.
+
+### Why types matter in practice
+
+Types are not bureaucratic overhead; they change results and prevent whole categories of bugs. Consider division. In Python 3, `7 / 2` evaluates to the float 3.5, while `7 // 2` (floor division) evaluates to the integer 3. Choosing the wrong one silently corrupts a calculation, and this integer-versus-float division mismatch is a classic defect in real code. Types also govern correctness limits. Floating-point numbers have finite binary precision, so `0.1 + 0.2` does not equal 0.3 exactly; the comparison returns false and the sum prints as 0.30000000000000004. Knowing the type explains the surprise and tells you to compare with a tolerance rather than for exact equality. Types affect memory and performance too, since an integer, a character, and a large collection occupy very different amounts of space, and a statically typed compiler can use type information to catch mistakes and generate faster code. In short, the type of a value determines what it means, what you can do with it, how much room it takes, and where your program is likely to break.
+
+## Key Vocabulary
+
+- **data type**: A classification attached to a value that specifies how its bits are interpreted and which operations are permitted on it.
+- **primitive type**: A basic built-in type provided by a language for single values, such as integer, floating-point, boolean, or character.
+- **integer**: A type representing whole numbers, positive or negative, with no fractional part.
+- **floating-point number**: A type representing real numbers with a fractional part, stored in fixed-size binary form following the IEEE 754 standard, so its precision is limited.
+- **boolean**: A type with exactly two values, true and false, used to represent conditions and decisions.
+- **string**: A type representing text as an ordered sequence of characters.
+- **static typing**: Type checking performed before a program runs, at compile time, so type-inconsistent code is rejected early.
+- **dynamic typing**: Type checking performed while a program runs, with values carrying their types, so type errors appear only when the code executes.
+- **implicit conversion (coercion)**: An automatic type change the language performs on its own, such as promoting an integer to a float in mixed arithmetic.
+- **explicit conversion (casting)**: A deliberate type change requested by the programmer through an operation, such as `int("42")` converting text to an integer.
+
+## Eli-10
+
+Imagine the same handful of Lego bricks. Depending on the instructions you follow, those bricks could become a car, a house, or a spaceship. A data type is like the instructions for a value: it says how to read the bits and what you are allowed to do with the result. If a value is labeled "number" you can add it; if it is labeled "word" you can join it to other words but adding it to 5 does not make sense. The label also decides how much room the value needs and whether an action is even legal. Pick the wrong label and you get either a mistake the computer refuses, or a right-looking answer that is quietly wrong.
+
+## Eli's Analogy
+
+Data types are like the shaped slots in a coin sorter. A slot sized for quarters accepts quarters and does quarter things with them; a coin of the wrong size either gets rejected or falls through into the wrong bin. The type is the slot: it decides what fits and what happens next.
+
+**Where the analogy breaks down:** The coin sorter suggests every value must go into exactly one fixed slot forever, but programs convert values between types on purpose (casting a string to a number), and some languages let a value's type be checked only at the last moment. Real types also carry a set of allowed operations, which a passive metal slot does not.
+
+## Worked Example
+
+Suppose a program asks a user for their age and adds one to it. The user types 29, but the program receives it as the string `"29"`, because keyboard input is text. Writing `"29" + 1` fails: Python raises a TypeError because it will not add text to a number (strong typing). The fix is an explicit conversion: `age = int("29")` gives the integer 29, and `age + 1` gives 30. Now compare two kinds of division on that value. In Python 3, `29 / 2` evaluates to the float 14.5, while `29 // 2` evaluates to the integer 14. If a downstream calculation expected a whole number of something, using `/` instead of `//` would introduce a decimal where none belonged. Every step here was verified by running it in Python 3: the TypeError, the successful cast, and both division results.
+
+## Common Mistakes
+
+- **Assuming input from a keyboard, file, or form is already a number.** Input almost always arrives as a string; convert it explicitly with `int()` or `float()` before doing arithmetic.
+- **Confusing dynamic typing with weak typing.** They are separate axes. Dynamic means types are checked at run time; weak means the language coerces types freely. Python is dynamic but strongly typed, so `"42" + 8` raises an error instead of guessing.
+- **Expecting floating-point arithmetic to be exact, e.g. assuming 0.1 + 0.2 equals 0.3.** Floats have finite binary precision (IEEE 754), so many decimals are stored approximately; compare with a small tolerance rather than testing for exact equality.
+- **Using the wrong division operator and getting an unexpected integer or float.** In Python 3, `/` always gives a float (`7 / 2 = 3.5`) and `//` gives floor-division toward negative infinity (`7 // 2 = 3`). Pick the one that matches the result type you need.
+
+## Compare / Contrast
+
+- **Static typing vs. Dynamic typing** — Static checks types before the program runs (compile time) and rejects mismatches early; dynamic checks them while the program runs, so errors appear only when the line executes.
+- **Strong typing vs. Weak typing** — Strong typing refuses to silently mix incompatible types (Python's `"42" + 8` raises an error); weak typing coerces them (JavaScript's `5 + "x"` yields `"5x"`).
+- **Implicit conversion (coercion) vs. Explicit conversion (casting)** — Coercion is automatic and language-driven, like `3 + 2.0` becoming 5.0; casting is deliberate and programmer-driven, like `int("42")` becoming 42.
+- **Integer division (7 // 2) vs. Floating-point division (7 / 2)** — Floor division returns the integer 3; true division returns the float 3.5. The operator, and the operand types, determine the result type.
+
+## Key Takeaway
+
+A data type is the label that says how a value's bits should be read and what may be done with it. Knowing a value's type, and how and when types convert, explains why calculations succeed, fail, or come out subtly wrong.
+
+## Practice Question Bank
+
+1. **Which statement best defines a data type?**
+   - A. A classification that tells the computer how to interpret a value's bits and which operations are permitted on it
+   - B. A named storage location whose contents can change while a program runs
+   - C. A symbol that performs an operation, such as + or *, on one or more values
+   - D. The total amount of memory physically installed in a computer
+
+   **Answer: A.** A data type classifies a value, fixing both how its bits are interpreted and what operations are legal, which is what the Python data model means when it says an object's type determines the operations it supports. B describes a variable, C describes an operator, and D is unrelated hardware capacity.
+
+2. **A language fixes the type of every variable and verifies all types before the program runs, rejecting type-inconsistent code at compile time. This describes:**
+   - A. Dynamic typing
+   - B. Static typing
+   - C. Weak typing
+   - D. Implicit coercion
+
+   **Answer: B.** Checking types before the program runs, at compile time, is the definition of static typing. Dynamic typing (A) checks at run time. Weak typing (C) and coercion (D) describe how strictly types are enforced and whether they convert automatically, a different axis from when checking happens.
+
+3. **In Python 3, what are the value and type of the expression 7 / 2?**
+   - A. 3, and its type is int
+   - B. 3.5, and its type is int
+   - C. 3.5, and its type is float
+   - D. 3, and its type is float
+
+   **Answer: C.** In Python 3 the single slash is true division and always yields a float, so 7 / 2 is 3.5 with type float (verified in python3). Floor division 7 // 2 would give the integer 3, which A and D gesture at, but the operator here is /, not //.
+
+4. **Which of the following is an example of EXPLICIT type conversion (casting)?**
+   - A. Evaluating 3 + 2.0 and getting the float 5.0
+   - B. Python automatically promoting an integer to a float during mixed arithmetic
+   - C. JavaScript turning 5 + "x" into the string "5x"
+   - D. Calling int("42") to obtain the integer 42 from the string "42"
+
+   **Answer: D.** Explicit conversion is a deliberate change the programmer requests through an operation, and `int("42")` is exactly that. A and B are implicit coercion in Python, and C is implicit coercion in JavaScript; in all three the language performs the change automatically rather than at the programmer's explicit request.
+
+5. **A program computes 0.1 + 0.2, compares the result to 0.3, and the equality test returns False. What is the best explanation?**
+   - A. Python rounds every decimal number down to the nearest whole number before comparing
+   - B. Floating-point values have finite binary (IEEE 754) precision, so 0.1, 0.2, and 0.3 cannot all be stored exactly
+   - C. The + operator is defective and cannot add floating-point numbers
+   - D. The literals 0.1 and 0.2 were actually stored as strings, so no real addition occurred
+
+   **Answer: B.** Floats are stored in fixed-size binary under IEEE 754, so decimals like 0.1, 0.2, and 0.3 are kept as close approximations; the sum comes out as 0.30000000000000004 and the exact-equality test fails (verified in python3). Python does not truncate decimals to whole numbers (A), the + operator works correctly (C), and numeric literals are floats, not strings (D).
+
+## Sources
+
+- Built-in Types — Python 3 documentation, Python Software Foundation. https://docs.python.org/3/library/stdtypes.html (reference-only)
+- The Python Language Reference — Data model, Python Software Foundation. https://docs.python.org/3/reference/datamodel.html (reference-only)
+- IEEE Standard for Floating-Point Arithmetic (IEEE 754-2019), IEEE Standards Association. https://standards.ieee.org/ieee/754/6210/ (reference-only; facts read from the public summary at https://en.wikipedia.org/wiki/IEEE_754 and cross-checked in python3)
+- Addition (+) — JavaScript, MDN Web Docs (Mozilla). https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition (reference-only)
+
+## Related Topics
+
+- computer-science-fundamentals:foundations:variables
+- computer-science-fundamentals:foundations:operators
+- computer-science-fundamentals:foundations:boolean-logic
+- computer-science-fundamentals:foundations:arrays
+
+## Editorial Metadata
+
+- Editorial status: READY_TO_PUBLISH
+- Research status: source-verified
+- Rights status: reference-only sources; no source prose adapted
+- Researched at: 2026-08-19
+- Transformation: Facts drawn from official Python documentation, the IEEE 754 standard summary, and MDN, then written as original prose. All code examples were executed and verified in python3 3.9 before inclusion.

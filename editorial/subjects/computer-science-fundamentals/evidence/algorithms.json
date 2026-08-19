@@ -1,0 +1,135 @@
+{
+  "topicId": "computer-science-fundamentals:foundations:algorithms",
+  "subjectId": "computer-science-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "What an algorithm is: a finite, well-defined, step-by-step procedure that transforms input into output",
+      "Knuth's five required properties: finiteness, definiteness, effectiveness, input, output",
+      "How algorithms are expressed: natural language, pseudocode, flowcharts, and code",
+      "That the same problem can have multiple correct algorithms that differ in efficiency",
+      "One small verified worked example: finding the maximum value in a list, traced step by step"
+    ],
+    "supporting": [
+      "Etymology of the word 'algorithm' from al-Khwarizmi",
+      "The distinction between an algorithm (the procedure) and a program (its implementation in a language)",
+      "That correctness and termination are the first questions to ask about any algorithm"
+    ],
+    "outOfScope": [
+      "Pseudocode notation and conventions in detail (own sibling topic: pseudocode)",
+      "Specific searching and sorting algorithms (own sibling topics: searching, sorting)",
+      "Formal time-complexity and Big-O analysis (own sibling topic: time-complexity) - efficiency is named here but the analysis is handed off",
+      "Computability, Turing machines, and the formal theory of what is computable"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "An algorithm is a finite, well-defined sequence of computable steps that transforms given input into a desired output.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-algorithm", "knuth-taocp-fundamental-algorithms"],
+      "status": "supported"
+    },
+    {
+      "claim": "Knuth characterizes an algorithm by five properties: finiteness (it terminates after finitely many steps), definiteness (each step is precisely and unambiguously specified), input (zero or more given quantities), output (one or more quantities related to the input), and effectiveness (each operation is basic enough to be done exactly).",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["knuth-taocp-fundamental-algorithms"],
+      "status": "supported"
+    },
+    {
+      "claim": "The same procedure can be expressed in several forms - natural language, pseudocode, a flowchart, or executable code - and the choice of form trades executability for readability while the underlying logic stays the same.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ksu-cc310-flowchart-pseudocode"],
+      "status": "supported"
+    },
+    {
+      "claim": "A single problem can be solved by more than one correct algorithm, and those algorithms can differ in efficiency (how much time or space they use).",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ksu-cc310-flowchart-pseudocode", "nist-dads-algorithm"],
+      "status": "supported"
+    },
+    {
+      "claim": "The word 'algorithm' derives from the Latinized name (Algoritmi) of the Persian mathematician al-Khwarizmi (c. 780 - c. 850), whose treatise on Hindu-Arabic arithmetic circulated in Latin as 'Algoritmi de numero Indorum'.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["mactutor-al-khwarizmi"],
+      "status": "supported"
+    },
+    {
+      "claim": "A linear scan finds the maximum of an n-element list by holding a running 'largest so far' and comparing it to each remaining element, which takes n-1 comparisons; for [3, 9, 2, 7, 5] it returns 9 after 4 comparisons.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-algorithm", "knuth-taocp-fundamental-algorithms"],
+      "status": "supported",
+      "verification": "Executed and traced in Python 3.9.6 via Bash on 2026-08-19; result 9 matches the built-in max(), and edge cases (empty -> guarded, single element, all-negative) behave as described."
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft was generic boilerplate ('Algorithms is a foundational concept... names the concept, describes its parts') with no actual definition, no properties, no example, and circular vocabulary. None of its substantive wording was retained."
+  ],
+  "correctionsNeeded": [
+    "Replaced the placeholder definition with the standard finite/well-defined/input-to-output definition attributed to NIST DADS and Knuth.",
+    "Added Knuth's five properties, which the draft omitted entirely.",
+    "Added a concrete, Bash-verified worked example (finding the maximum), replacing the draft's empty 'workedExample'.",
+    "Replaced circular vocabulary (e.g. 'Algorithms: a foundational concept covered in this lesson') with non-circular, verified definitions."
+  ],
+  "rightsIssues": [
+    "K-State CC310 textbook is CC BY-NC-SA 4.0: facts were synthesized and all prose is original; no source wording reproduced, so no ShareAlike obligation is triggered.",
+    "NIST DADS is a U.S. Government work (public domain); still, all lesson prose is original synthesis, not copied.",
+    "Knuth's The Art of Computer Programming is copyrighted and used REFERENCE_ONLY: the five properties are attributed to it and restated in original words; no passages are reproduced beyond short standard property names."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-dads-algorithm",
+      "title": "algorithm - Dictionary of Algorithms and Data Structures (DADS)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://xlinux.nist.gov/dads/HTML/algorithm.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Authoritative, public-domain definition: an algorithm is 'a computable set of steps to achieve a desired result,' with the etymology traced to al-Khowarizmi (c. 825) and a list of algorithm specializations (deterministic, randomized, etc.). Supports the core definition and the general 'procedure to achieve a result' framing. Prose synthesized, not copied."
+    },
+    {
+      "id": "knuth-taocp-fundamental-algorithms",
+      "title": "The Art of Computer Programming, Volume 1: Fundamental Algorithms (Section 1.1)",
+      "provider": "Donald E. Knuth (Addison-Wesley)",
+      "url": "https://www-cs-faculty.stanford.edu/~knuth/taocp.html",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Canonical reference for the five characteristic properties of an algorithm (finiteness, definiteness, input, output, effectiveness) as set out in TAOCP Vol. 1, Section 1.1. The specific property wording was cross-verified on 2026-08-19 against a public compilation of Knuth's characterization; the book itself is copyrighted, so it is REFERENCE_ONLY - the five properties are attributed to Knuth and restated in original prose, with no passages reproduced. url is Knuth's official Stanford TAOCP page."
+    },
+    {
+      "id": "ksu-cc310-flowchart-pseudocode",
+      "title": "Flowcharts and Pseudocode - CC 310 Textbook",
+      "provider": "Kansas State University, Department of Computer Science",
+      "url": "https://textbooks.cs.ksu.edu/cc310/01-review/02-flowchart-pseudocode/",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Supports the three non-code ways to express an algorithm (natural language written like precise recipe steps, flowcharts using graphical operation blocks with arrows, and pseudocode that resembles a high-level language but is language-independent and may not be directly executable) and the point that using non-code representations lets a learner focus on logic over syntax. Facts synthesized; no wording reproduced, so the ShareAlike term is not triggered."
+    },
+    {
+      "id": "mactutor-al-khwarizmi",
+      "title": "Muhammad ibn Musa al-Khwarizmi - MacTutor History of Mathematics Archive",
+      "provider": "University of St Andrews (School of Mathematics and Statistics)",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Al-Khwarizmi/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Confirms the word 'algorithm' derives from al-Khwarizmi's name via the Latin translation of his arithmetic treatise ('Algoritmi de numero Indorum'). Used only for the one-sentence etymology; prose original."
+    }
+  ]
+}

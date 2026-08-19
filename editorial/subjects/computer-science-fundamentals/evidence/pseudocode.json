@@ -1,0 +1,140 @@
+{
+  "topicId": "computer-science-fundamentals:foundations:pseudocode",
+  "subjectId": "computer-science-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "What pseudocode is: an informal, language-agnostic, high-level description of an algorithm written for humans",
+      "Common conventions: uppercase keywords, assignment operator, IF/ELSE selection, WHILE/FOR/REPEAT loops, INPUT/OUTPUT, indentation for blocks",
+      "Why pseudocode is used: to design and communicate logic before committing to a programming language",
+      "How pseudocode compares with flowcharts and with real (executable) source code",
+      "One small correct worked example (sum of 1..n) and what it computes"
+    ],
+    "supporting": [
+      "There is no single universal pseudocode standard; textbooks, courses, and exam boards each define a style",
+      "The structured constructs pseudocode notates: SEQUENCE, selection (IF-THEN-ELSE, CASE), and iteration (WHILE, FOR, REPEAT-UNTIL)"
+    ],
+    "outOfScope": [
+      "Deep semantics of variables, conditional statements, and loops (each is its own topic)",
+      "The concept of an algorithm itself beyond a one-line definition (own topic)",
+      "Big-O / complexity analysis",
+      "Any specific language's full syntax"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Pseudocode is a kind of structured English for describing algorithms that lets the designer focus on logic without being distracted by language syntax; it is read by people, not by a computer.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["calpoly-dalbey-pseudocode-standard"],
+      "status": "supported"
+    },
+    {
+      "claim": "There is no universal industry standard for pseudocode; each textbook and each designer may use their own style, so conventions are adopted for consistency rather than being formally mandated.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["calpoly-dalbey-pseudocode-standard"],
+      "status": "supported"
+    },
+    {
+      "claim": "Pseudocode notates a small set of structured-programming constructs: SEQUENCE, WHILE, IF-THEN-ELSE, REPEAT-UNTIL, FOR, and CASE, which can be nested inside one another.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["calpoly-dalbey-pseudocode-standard"],
+      "status": "supported"
+    },
+    {
+      "claim": "In common academic conventions the assignment operator is a left arrow ('<identifier> ← <value>'), storing the evaluated right-hand value into the variable on the left.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cambridge-9618-pseudocode-guide-2026", "calpoly-dalbey-pseudocode-standard"],
+      "status": "supported"
+    },
+    {
+      "claim": "Common pseudocode conventions write keywords in upper case (IF, WHILE, FOR, REPEAT, PROCEDURE), use indentation to show that statements are contained within a construct, and use INPUT/OUTPUT commands for reading and displaying values.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cambridge-9618-pseudocode-guide-2026"],
+      "status": "supported"
+    },
+    {
+      "claim": "A pre-condition WHILE loop tests its condition before the statements run, so the body executes only while the condition is true; IF statements select between alternatives and may include an ELSE clause.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cambridge-9618-pseudocode-guide-2026"],
+      "status": "supported"
+    },
+    {
+      "claim": "An algorithm is a computable set of steps to achieve a desired result; pseudocode is one notation used to describe an algorithm.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-dads-algorithm"],
+      "status": "supported"
+    },
+    {
+      "claim": "The iterative sum of the integers 1 through 5 is 15, matching the closed form n(n+1)/2 for n = 5 (5*6/2 = 15).",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["calpoly-dalbey-pseudocode-standard"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Exact pseudocode symbols and keywords differ across sources (e.g., some conventions use = or := for assignment; some use ENDIF/ENDWHILE, others use indentation alone).",
+      "positions": [
+        "Cambridge 9618 uses ← for assignment and explicit ENDIF/ENDWHILE/NEXT terminators.",
+        "Cal Poly's standard treats pseudocode as non-rigorous structured English with recommended (not mandatory) formatting."
+      ],
+      "resolution": "Presented pseudocode as a family of conventions rather than one fixed syntax; used the widely taught ← assignment and uppercase-keyword style while stating explicitly that no universal standard exists."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft described pseudocode only in generic 'foundational concept' language with no actual definition, conventions, or example.",
+    "The draft's vocabulary defined 'Pseudocode' circularly as 'a foundational Computer Science Fundamentals concept covered in this lesson.'"
+  ],
+  "correctionsNeeded": [
+    "Replaced boilerplate with a concrete definition, the actual notation conventions, the design/communication rationale, and a verified worked example.",
+    "Added a real, arithmetic-checked worked example (sum 1..5 = 15).",
+    "Wrote non-circular vocabulary and a comparison of pseudocode with flowcharts and executable code."
+  ],
+  "rightsIssues": [
+    "Cambridge guide is under Cambridge University Press & Assessment copyright (centres may copy for internal use only) — used REFERENCE_ONLY, facts synthesized in original prose, no extended excerpts reproduced.",
+    "Cal Poly page carries no explicit reuse license — treated REFERENCE_ONLY.",
+    "NIST DADS is a U.S. government work, public domain."
+  ],
+  "sourceRecords": [
+    {
+      "id": "calpoly-dalbey-pseudocode-standard",
+      "title": "Pseudocode Standard",
+      "provider": "California Polytechnic State University (John Dalbey), CSC course materials",
+      "url": "https://users.csc.calpoly.edu/~jdalbey/SWE/pdl_std.html",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "University CS course pseudocode style guide. Supports: pseudocode as structured English focused on logic not syntax; read by people not computers; no universal standard, style adopted for instructional consistency; the six structured constructs (SEQUENCE, WHILE, IF-THEN-ELSE, REPEAT-UNTIL, FOR, CASE) and that they nest; guidance that steps must decompose to a single loop or decision. Read via curl (the site's TLS chain failed the default fetcher). No explicit reuse license shown; treated REFERENCE_ONLY, prose written originally."
+    },
+    {
+      "id": "cambridge-9618-pseudocode-guide-2026",
+      "title": "Pseudocode Guide for Teachers — Cambridge International AS & A Level Computer Science 9618 (for exams in 2026)",
+      "provider": "Cambridge Assessment International Education / Cambridge University Press & Assessment",
+      "url": "https://www.cambridgeinternational.org/Images/697401-2026-pseudocode-guide-for-teachers.pdf",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "© Cambridge University Press & Assessment 2023; registered centres may copy for internal use only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Official exam-board convention document. Supports: assignment operator ← with format '<identifier> ← <value>'; keywords in upper case; indentation (usually three spaces) to show containment; INPUT/OUTPUT commands; IF/THEN/ELSE/ENDIF selection; pre-condition WHILE/ENDWHILE loop tests condition before the body; count-controlled FOR loops. Extracted the PDF text with pypdf and read the relevant sections directly. Copyright retained by publisher; used REFERENCE_ONLY with facts synthesized in original wording."
+    },
+    {
+      "id": "nist-dads-algorithm",
+      "title": "algorithm — NIST Dictionary of Algorithms and Data Structures",
+      "provider": "U.S. National Institute of Standards and Technology (NIST)",
+      "url": "https://xlinux.nist.gov/dads/HTML/algorithm.html",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Public-domain authoritative definition: an algorithm is 'A computable set of steps to achieve a desired result.' Used to anchor the boundary claim that pseudocode is a notation for describing an algorithm (algorithms are a separate topic). Read via curl."
+    }
+  ]
+}
