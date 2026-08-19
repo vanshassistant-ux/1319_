@@ -71,7 +71,7 @@ This is educational material. It is not engineering design guidance, and nothing
 - **Hidden line** — A thin dashed line representing an edge that genuinely exists on the part but is obscured by material when seen from the direction of that view.
 - **Section view** — A view produced by imagining the object cut along a stated plane and the near portion removed, with hatching applied only to the surfaces the plane actually intersected.
 - **Auxiliary view** — An orthographic view taken on a plane parallel to an inclined or oblique surface, drawn because such a surface appears in true shape on no principal view.
-- **Datum** — A reference feature, edge, axis, or plane named on the drawing, from which locations are measured and against which geometric controls are interpreted.
+- **datum (drawing reference)** — A reference feature, edge, axis, or plane named on the drawing, from which locations are measured and against which geometric controls are interpreted.
 - **Tolerance** — The total permitted deviation from a stated dimension, present on every inspected dimension because no manufacturing process reproduces an exact theoretical size.
 - **Tolerance stack-up** — The accumulation of allowable deviation in a distance that is derived from two or more dimensions, which grows whether those dimensions are added or subtracted.
 - **Feature control frame** — The boxed annotation carrying a geometric symbol, a tolerance value and zone shape, any material-condition modifier, and the datum references that the control is read against.

@@ -75,7 +75,7 @@ A closing note on scope. This lesson is educational material, not engineering de
 - **kinetic energy** — The energy a body carries because it is moving, equal to one-half its mass times the square of its speed; a scalar that can never be negative.
 - **work-energy theorem** — The result, derived from Newton's second law, that the net work done on a particle by all the forces acting on it equals the change in its kinetic energy.
 - **potential energy** — Stored energy assigned to the configuration of a system whose parts interact through a conservative force, defined only as a difference from a chosen reference.
-- **datum** — The reference configuration at which stored energy is declared to be zero, chosen freely for convenience because only differences are physically meaningful.
+- **datum (energy reference)** — The reference configuration at which stored energy is declared to be zero, chosen freely for convenience because only differences are physically meaningful.
 - **conservative force** — A force whose work between two points is the same along every connecting path, and therefore zero around any closed path; gravity and an ideal spring qualify.
 - **non-conservative force** — A force whose work depends on the route taken, so no stored-energy function exists for it; kinetic friction and air drag are the standard examples.
 - **power** — The rate at which energy is transferred or work is done, measured in watts, one watt being one joule per second.

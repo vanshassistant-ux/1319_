@@ -1,0 +1,200 @@
+# Engineering Communication
+
+## In 30 Seconds
+
+An engineering document exists because somebody has to decide something: approve a design, release a part, ground a vehicle, spend money. That decision sets the shape of the document. Lead with the recommendation and what it rests on. Show data with labelled axes, stated units, and visible uncertainty, including the cases where nothing happened. Say which numbers were measured, which were calculated, and which were assumed. Name who does what by when. Derivations belong in an appendix, not in your opening paragraph.
+
+## Why This Matters
+
+Coursework rewards showing your work; practice rewards a recommendation a stranger can act on, and the gap between the two is where new engineers lose credibility fastest. Your documents are also the durable record of a project. The Rogers Commission concluded that a careful analysis of the O-ring flight history would have revealed its correlation with low temperature, and that neither NASA nor Thiokol had carried one out. Seventeen years later the Columbia board found NASA still handing decision-makers briefing slides in place of technical papers. Meanwhile your email and your tickets are ordinary discoverable records. Writing is not polish applied at the end. It is the channel through which your engineering judgement reaches the person who acts on it.
+
+## Learning Objectives
+
+- Explain how the reader's pending decision determines a document's structure, and distinguish what technical peers, managers, clients, regulators, and the public each need from the same body of work.
+- Apply bottom-line-up-front structure and write an executive summary that survives being read on its own.
+- Distinguish the purposes of a memo, technical report, test report, design review package, specification, proposal, and engineering notebook.
+- Evaluate a figure or table for honest scaling, labelled axes with units, and shown uncertainty, and explain how axis and case-selection choices change what a reader concludes.
+- Distinguish measured, calculated, and assumed values in a document and state assumptions explicitly.
+- Analyse the Challenger and Columbia data presentations as cases where the shape of the evidence shaped the decision, without overstating any single account.
+
+## The College Version
+
+### Start from the decision, not from the chronology
+
+Before writing a line, answer one question: who reads this, and what do they have to decide? A technical peer needs the assumptions, the method, and enough detail to repeat the work. A manager needs to know whether the schedule holds and what you are asking them to approve. A client needs to know what they are buying and what it will not do. A regulator needs traceable conformance to a named requirement. The public needs the risk stated in terms of their own lives. That is five documents from one body of work, and the commonest student failure is producing the peer document and sending it to all five. Once the decision is fixed, the structure follows: recommendation first, basis second, detail third. That is not a stylistic preference. ANSI/NISO Z39.18, the American national standard for scientific and technical reports, makes a summary a required component and defines its content as the problem under investigation, the principal results and conclusions, and a recommended course of action for decision makers. NASA's decision report template opens the same way, with an executive summary whose first item is the recommendation in one sentence. Burying the recommendation costs you in a specific way: readers stop when they think they have the gist, so if your opening paragraph is background, background is what they leave with. The executive summary must then survive detachment from the report. Z39.18 requires that it introduce no new information and yet stand independent from the reader's point of view, with every symbol and acronym defined and no cross-references. Write it last, then read it as though the rest of the report had been lost.
+
+### What each document is actually for
+
+A memo answers one question for a named reader and is expected to be read in full; if it needs a table of contents, it is no longer a memo. A technical report is a standing record, entered at any page by a reader you will never meet, so Z39.18 asks it to carry a summary, an introduction naming the audience expected to act on it, and a Methods, Assumptions, and Procedures section complete enough for a knowledgeable reader to duplicate the work. A test report is narrower: what was tested, under what conditions, against which acceptance criteria, and what the instruments actually read, including the runs that failed. A design review package is the pre-read circulated before a scheduled review; NASA identifies entry and success criteria in advance, which pays off only if reviewers get the material early enough to arrive with their objections already formed. A specification states what the product must do without prescribing how, in statements written so compliance can be verified, and a proposal argues for the work, its technical content a promise you will be held to. The engineering notebook is the odd one out, because it is not written for a reader at all. It is a dated, contemporaneous record of what you tried and measured, and its value comes from not being tidied afterwards; when someone asks three years later what you knew and when, it is the only document that can answer. The NSPE Code asks something similar of formal reports: that they be objective and truthful, include all relevant and pertinent information, and bear the date indicating when they were current.
+
+### Presenting data so that it can be checked
+
+Choose the display by asking what the reader has to do with the numbers. Z39.18 puts it simply: graphs show relationships among data, so use one when the shape is the message. When values must be read off precisely, the standard says to add grid lines or, better, use a table. The mechanics are not decoration: every axis carries a quantity and its unit, units belong in the table title, the column heads, or a note rather than scattered through the cells, and any symbol appearing in a figure but not in the text needs a key or caption defining it. Scaling is where honesty is won or lost. A value axis that does not start at zero enlarges the apparent size of a difference, and controlled experiments show the effect is stubborn: readers' subjective sense of effect size shifts with truncation even in designs carrying explicit cues that the axis has been cut. The same researchers are careful to say truncation is not automatically deceptive, since the interesting variation sometimes lives in a narrow band a zero baseline would flatten. The defensible rule is therefore not 'always start at zero' but 'label the axis, make the baseline visible, and scale around the effect size you intend to communicate'. If a reader could reach the opposite conclusion from the same data plotted differently, you owe them that plot. Show uncertainty rather than implying it: error bars, a stated tolerance, a confidence interval, or a sentence saying a value is a single unreplicated reading. And plot the cases where nothing happened, because they are the denominator. Rounding and uncertainty arithmetic belong to the units, measurement, and significant figures topic; apply its rules here, consistently.
+
+### Say where every number came from
+
+A page of numbers conceals three different things. Some values were measured, with an instrument, a procedure, and an uncertainty behind them. Some were calculated, and so inherit every error upstream. Some were assumed, because the analysis could not move without a placeholder. On paper all three are typographically identical, and that is the hazard: an assumption travels through three meetings and arrives as a fact. The fix is structural rather than heroic. Z39.18 makes 'Methods, Assumptions, and Procedures' a required section, so assumptions are named in a heading rather than a footnote, and that section is also where the system of measurement has to be identified. NASA's requirements validation checklist asks the question outright: have all assumptions been explicitly stated? In practice this means annotating values where they appear: 'ambient 23 C (measured, thermocouple, plus or minus 1 C)', 'surface emissivity 0.85 (assumed, to be confirmed by the supplier)'. Each costs a line and prevents the most expensive class of documentation error. Attribution obeys the same logic. If a value, a method, or a figure came from somewhere else, say so at the point of use; the NSPE Code obliges engineers to give credit for engineering work to those to whom credit is due. There is a self-interested version of the rule: a sourced number can be rechecked when its source is revised; an unsourced one must be re-derived or thrown away.
+
+### Sentences that hold up under load
+
+Engineering prose is judged by whether it can be misread, not by whether it is graceful. Prefer precision to elegance. Use the active voice with a named actor for anything that is an action or an obligation: NASA's requirement-writing checklist puts personnel requirements in the form 'responsible party shall perform such and such', explicitly preferring the active voice, because a passive sentence loses the actor and a requirement with no actor cannot be assigned or verified. Fix the modal verbs and hold them steady: shall marks a requirement, will states a fact or declaration of purpose, should states a goal. Keep one thought per requirement statement, with one subject and one predicate, and attach tolerances to performance values. Strike the phrases that survive review only because nobody wants to admit they cannot parse them; the same checklist names 'as appropriate', 'etc.', 'and/or', and 'but not limited to', and rules out unverifiable words such as adequate, user-friendly, and robust. Define terms and symbols once, at first use, and collect them when a document carries more than a handful; Z39.18 sets that threshold at more than five a reader in the field would not already recognise. In a report with extensive notation it says to display and number all equations and define the symbols below the formula, so later meetings can point at equation (7) rather than 'that expression on page four'. None of this slows writing once it is habit; it speeds review up, because a reviewer who cannot misread you can only agree or disagree.
+
+### Rooms, records, and the honest 'I don't know'
+
+Spoken engineering follows the written rule. A design review is not a lecture; the audience is deciding whether to let you proceed, so lead with the conclusion. Circulate the pre-read early, treat slides as pointers to the real analysis rather than as the analysis, and expect the review's value to arrive during the questions. Asked something you have not analysed, the correct answer is 'I don't know; I will find out and come back on Thursday.' It feels like a loss of standing and is the opposite: the NSPE Code permits engineers to express technical opinions publicly when those opinions are founded on knowledge of the facts and competence in the subject matter, so an improvised answer is not confidence but a claim you cannot support. Everything settled in the room belongs in the minutes with owners and dates, because the meeting is not the record; the minutes are. NASA's decision report template even reserves a section for dissent and how it was addressed. The informal channels are not informal. Federal Rule of Civil Procedure 34 lets a party demand production of designated documents or electronically stored information, expressly including writings, drawings, graphs, charts, images, and other data compilations stored in any medium. Your email thread, your tickets, and your notebook are all that kind of material. Write them so a reader years from now, with no context and possibly an adverse interest, reads them as an accurate account of what you knew at the time.
+
+### When the presentation becomes part of the cause
+
+On the night of 27 January 1986, engineers at Morton Thiokol argued against launching Challenger the next morning in unprecedented cold; their initial recommendation was not to fly below 53 F (11.7 C), the lowest O-ring temperature of any previous flight. The Rogers Commission's finding about the data is worth memorising: the managers compared, as a function of temperature, the flights on which O-ring thermal distress had been observed, not the frequency of occurrence based on all flights. In that view nothing looks irregular between 53 F and 75 F, and someone on the call could raise blow-by on a flight launched at 75 F (23.9 C) as though it settled the matter. Adding the flights with no incidents changes the picture: three incidents across twenty flights at joint temperatures of 66 F (18.9 C) or above, against distress on all four flights at 63 F (17.2 C) or below. The Commission concluded that a careful analysis of the flight history would have revealed the correlation of O-ring damage with low temperature, and that neither NASA nor Thiokol had carried one out. A later analysis of all 23 pre-accident launches found strong statistical evidence of a temperature effect and put the probability of catastrophic field-joint failure at the 31 F (-0.6 C) launch condition at no less than 0.13, against at least 0.02 at 60 F (15.6 C). Be careful how far you push this. That the missing zero-incident flights hid a real pattern is documented, as is the Commission's separate finding that the decision-makers were unaware of the contractor's written recommendation. That better charts alone would have changed the outcome is contested: Robison, Boisjoly, Hoeker, and Young argue the engineers recommended against launch on the sound ground that the projected temperature lay far outside their field database, and that they had asked for and never received data needed to explain the previous January's blow-by. The conduct side of that night belongs to the engineering ethics topic; the presentational lesson belongs here, and so does its repeat. In 2003 the Columbia Accident Investigation Board wrote that as information is passed up an organisational hierarchy key explanations and supporting information get filtered out, and found the endemic use of PowerPoint briefing slides in place of technical papers an illustration of problematic technical communication at NASA.
+
+### What this lesson is and is not
+
+This is educational material about how engineers write, present, and record technical work. It is not engineering design guidance. Nothing here should be used to design, size, verify, or accept a real structure, pressure vessel, electrical installation, or machine; that work is governed by the applicable code or standard and requires a licensed engineer working to it. The discussion of records and discovery is not legal advice; it makes only the narrow point that ordinary engineering records are the kind of material a civil litigant can compel. The report structure here follows one national standard, ANSI/NISO Z39.18; your employer, client, or governing agency may impose a different template, and where they do, theirs governs. The habits underneath the templates are the transferable part: lead with the decision, label every number with its unit and its origin, show the data that could contradict you, and say plainly what you do not know.
+
+## Key Vocabulary
+
+- **Bottom line up front** — A structure that opens with the recommendation and the basis for it, then supplies the supporting analysis, so that a reader who stops after two paragraphs still leaves with the answer and the reason.
+- **Executive summary** — A short, largely non-technical restatement of the problem, the principal results and conclusions, and the recommended course of action, written to be read alone by a decision maker who will not read the full report.
+- **Technical report** — The long-form record of an investigation, organised so that a knowledgeable reader entering at any page can follow the methods, assumptions, and procedures well enough to repeat the work and check the conclusions.
+- **Test report** — A document stating what was tested, under what conditions, against which acceptance criteria, and what the instruments actually read; it records observation, where a design report records intent.
+- **Specification** — A set of binding requirement statements, each naming a responsible party or a product and each written so that compliance can be verified, using shall for an obligation, will for a fact, and should for a goal.
+- **Design review package** — The material circulated before a scheduled technical review so that reviewers arrive informed: the current design, the analysis behind it, the open risks, and the specific decisions the review is being asked to make.
+- **Engineering notebook** — A dated, contemporaneous working record of what was tried, measured, and concluded, written as the work happens rather than reconstructed afterwards, and preserved rather than tidied.
+- **Axis truncation** — Beginning a chart's value scale somewhere other than zero, which enlarges the apparent size of a difference and continues to do so even when the break is visibly marked.
+- **Nomenclature list** — A collected table of the symbols, abbreviations, and acronyms a document uses, each defined once, so that a reader entering at any page can decode the notation.
+- **Provenance of a value** — The stated origin of a number, recorded next to the number itself: directly measured, derived by calculation from other quantities, or assumed pending confirmation.
+
+## Eli-10
+
+Imagine you have spent three weeks working out whether a bridge in your town is safe to drive across. Now you get five minutes with the mayor. If you start at the beginning, with the books you read and the measurements you took and the calculation that went wrong on Tuesday, the five minutes run out before you reach the part that matters. Engineers solve this by writing backwards. The answer comes first: the bridge is safe up to twenty tonnes, and here is why. Then the evidence, for anyone who wants to check it. Then everything else, in an appendix, for the one person who will. The same habit applies to pictures. Every line on a graph needs a label and every number needs a unit, because a number without a unit is not information yet. And when some of your numbers are guesses, you write down that they are guesses. A guess you admitted is useful. A guess somebody mistook for a measurement is dangerous.
+
+## Eli's Analogy
+
+A good engineering document works like directions given to a driver who is already moving: turn left at the next junction, because the bridge ahead is closed. Destination and reason first, scenery afterwards.
+
+**Where the analogy breaks down.** Directions have one right answer and the driver simply follows them. An engineering recommendation carries uncertainty, and the reader is often entitled to overrule it: a manager may knowingly accept a risk you flagged, a regulator may demand more evidence before agreeing. So unlike directions, your document has to hand over the basis of the recommendation as well as the recommendation itself, and hand it over completely enough that a reader who disagrees with you is disagreeing with the evidence rather than guessing at it.
+
+## Worked Example
+
+Before. During Columbia's final mission a Debris Assessment Team briefed managers on whether a foam strike had damaged the wing. The Columbia Accident Investigation Board reproduced one of the briefing slides in Volume I, in a Chapter 7 box headed 'Engineering by Viewgraphs', alongside Edward Tufte's analysis of it. The slide's title line reads 'Review Of Test Data Indicates Conservatism for Tile Penetration', which tells a hurried manager the answer is reassuring. The decisive fact sits in the last sub-bullet, under a heading that says the flight condition is 'significantly outside of test database': 'Volume of ramp is 1920cu in vs 3 cu in for test'. Tufte's critique, printed on the same page, notes that 'significant' and its variants are used five times on the slide with different meanings, and that the unit cubic inches is written three different ways. The Board's own Chapter 6 records that the Crater model's test projectiles reached a maximum volume of 3 cubic inches and that outside its validated limits Crater's precision is unknown. Do the division the slide never performs: 1920 / 3 = 640. Using the exact factor 1 in = 2.54 cm, 3 in3 is 49.2 cm3 and 1920 in3 is 0.0315 m3, about 31.5 litres. The Board's narrative states the ratio plainly, that one estimate of the debris was 640 times larger than the data used to calibrate the model, and adds that later analysis put the object at roughly 400 times larger. Neither ratio appears on the slide itself.
+
+After. Here is the same content restructured. This is a teaching reconstruction, not a document NASA received. 'Recommendation: do not treat the Crater result as a bound on the damage. Request on-orbit imagery of the left wing before entry. Basis: Crater is validated against test projectiles up to 3 in3 (49.2 cm3), measured, from the 1979 and 1999 foam test series. The bipod ramp volume used in this assessment is 1920 in3 (0.0315 m3), the value cited in the impact assessment. Ratio 640, calculated. Outside its validated range Crater's precision is unknown; that is a documented limitation of the model, not an assumption of ours. Not known: actual impact location, angle, and tile condition. No measurement of the vehicle exists. Requested: imagery tasking. Owner: [name]. Needed by: flight day [n].'
+
+The rewrite is not more polished or more literary. It is shorter. It puts the recommendation where a busy reader meets it first. It performs the one arithmetic operation that turns two numbers into a judgement. It labels each value as measured, as calculated, or as a documented limitation. It states outright what is not known instead of leaving the gap to be inferred from a reassuring title. And it names an actor and a deadline, so the meeting produces an action rather than a feeling. Same engineering, same data, a completely different decision surface.
+
+## Common Mistakes
+
+- **Mistake:** Structuring the document as the story of your week: background, then what you tried, then what failed, with the recommendation in the last paragraph.
+  **Correction:** Put the recommendation and its basis first. Z39.18 makes the summary a required component and defines it as the problem, the principal results and conclusions, and a recommended course of action for decision makers; NASA's decision report template opens with a one-sentence recommendation. Chronology belongs in the methods section.
+- **Mistake:** Plotting only the cases in which the effect appeared, because cases with nothing to see feel as though they carry no information.
+  **Correction:** The zero-incident cases are the denominator. The Rogers Commission found that managers had compared only the flights showing O-ring thermal distress; adding the flights with none turned an unremarkable scatter into three incidents in twenty flights at 66 F and above, against four out of four at 63 F and below.
+- **Mistake:** Writing action items in the passive voice, so the review minutes record an intention with no owner: 'the fixture will be re-tested'.
+  **Correction:** Name the actor and the date. NASA's requirement-writing checklist puts personnel requirements in the form 'responsible party shall perform such and such' and says to use the active rather than the passive voice, because a sentence with no subject cannot be tracked or verified.
+- **Mistake:** Reporting a number with no unit, no stated basis, and no uncertainty, on the assumption that the reader shares your context.
+  **Correction:** State the unit every time, say whether the value was measured, calculated, or assumed, and give the uncertainty or the tolerance. Z39.18 requires the system of measurement to be identified and units to appear in a table's title, column heads, or a note. A bare number is not a result.
+- **Mistake:** Treating email and issue-tracker comments as informal chatter that nobody outside the team will read.
+  **Correction:** Federal Rule of Civil Procedure 34 lets a party demand production of designated documents or electronically stored information, including writings, drawings, graphs, charts, images, and other data compilations stored in any medium. Write tickets and messages as if a reader with no context, and possibly an adverse interest, will read them years later.
+
+## Compare / Contrast
+
+| Concept | Contrast with | Distinction |
+| --- | --- | --- |
+| **Abstract** | **Executive summary** | An abstract exists so that a searcher, often reaching it through an indexing service, can decide whether to read the report at all. An executive summary exists so that a decision maker who will never read the report can still act, which is why it carries the recommendation and enough of its basis to be defensible on its own. |
+| **Table** | **Graph** | A graph shows a relationship among data, and is right when the shape is the message. A table gives exact values, and is right when the reader has to read a number off precisely or compare it against an acceptance limit; Z39.18 says to add grid lines or, better, use a table when highly accurate readings are needed. |
+| **Memo** | **Technical report** | A memo answers one question for a named reader and is expected to be read straight through in a few minutes. A technical report is a standing record designed to be entered at any point, which is why it needs a summary, defined notation, and a methods section a stranger could follow. |
+| **Measured value** | **Assumed value** | A measured value has an instrument, a procedure, and an uncertainty behind it. An assumed value is a placeholder chosen so the analysis can proceed. They look identical on a page, which is exactly why the document has to label them. |
+| **Specification** | **Design report** | A specification states what the product must do, in verifiable shall statements, without prescribing how. A design report explains how one particular design meets it, and why the alternatives were set aside. |
+
+## Key Takeaway
+
+Engineering documents are decision instruments rather than narratives: lead with the recommendation, show the data honestly and completely enough that a reader can check it, and label every number with its unit and its origin, whether measured, calculated, or assumed.
+
+## Practice Question Bank
+
+**1. Under ANSI/NISO Z39.18, what must the required summary of a scientific or technical report contain?**
+
+- A. A list of the report's figures and tables with their page numbers
+- B. The problem under investigation, the principal results and conclusions, and a recommended course of action for decision makers
+- C. A chronological account of the work performed, week by week
+- D. A full derivation of every equation used in the analysis
+
+*Answer: B.* Z39.18 clause 5.2.1 makes the summary a required component and defines its content as the problem under investigation, the principal results and conclusions, and a recommended course of action for decision makers. A list of figures is separate front matter and is required only when a report has more than five figures or tables; chronology belongs in the methods section; derivations belong in the body or an appendix.
+
+*Difficulty: recall · Skill: Recalling the defined content of a technical report summary · Sources: ansi-niso-z39-18-2005-r2010*
+
+**2. The Rogers Commission identified a specific defect in how the O-ring data were compared on the night before the Challenger launch. What was it?**
+
+- A. The joint temperatures were reported in Fahrenheit rather than in SI units
+- B. The charts used a truncated vertical axis that exaggerated the observed damage
+- C. The comparison covered only the flights on which O-ring thermal distress had been observed, rather than the frequency of occurrence across all flights
+- D. The charts were transmitted by telefax and arrived too faint to read
+
+*Answer: C.* Chapter VI of the Commission's report states that the managers compared, as a function of temperature, the flights for which thermal distress had been observed, not the frequency of occurrence based on all flights. Including the zero-incident flights changed the picture: three incidents in twenty flights at 66 F or above, against thermal distress on all four flights at 63 F or below. The unit system, the axis scaling, and the fax quality were not the Commission's finding here.
+
+*Difficulty: understanding · Skill: Identifying selective case inclusion as a data-presentation failure · Sources: rogers-commission-report-1986-volume-1, dalal-fowlkes-hoadley-1989-shuttle-risk-analysis*
+
+**3. A colleague's test report plots the stiffness of two material lots as bars on an axis running from 68 GPa to 72 GPa, with a small zig-zag mark showing the break. The difference between the lots looks dramatic. What is the best advice to give?**
+
+- A. Truncation still inflates the perceived difference even when the break is marked, so label the axis fully and choose a scale around the effect size that actually matters
+- B. The break mark is sufficient, because readers who see it correct for the truncation automatically
+- C. Bar charts must always begin at zero, without exception, or the figure is fraudulent
+- D. Replace the bars with a line chart, which is immune to axis truncation
+
+*Answer: A.* Crowd-sourced experiments found that the subjective impact of y-axis truncation persists across visualization designs, including designs carrying explicit visual cues that truncation has taken place, which rules out the claim that a break mark is sufficient and also rules out switching chart type as a fix. The same authors present cases where truncation is beneficial and recommend scaling around the effect size intended for communication, so the absolute 'always start at zero' rule overstates the evidence.
+
+*Difficulty: application · Skill: Applying evidence about axis scaling to critique a figure · Sources: correll-2019-truncating-the-y-axis, ansi-niso-z39-18-2005-r2010*
+
+**4. Which line from a design review's minutes best matches the conventions engineering practice expects of an obligation?**
+
+- A. It is felt that the bracket should probably be re-analysed at some point.
+- B. The bracket will be re-analysed and/or replaced as appropriate.
+- C. Structures group shall re-analyse the bracket at the 1.5 g lateral load case and report by 12 March.
+- D. Re-analysis of the bracket is to be considered, with results to be circulated in due course.
+
+*Answer: C.* The third line names the responsible party, uses shall for an obligation, expresses one verifiable thought with one subject and one predicate, and carries a date. NASA's requirement-writing checklist asks for exactly this active-voice 'responsible party shall perform such and such' form, and separately rules out the ambiguous terms 'and/or' and 'as appropriate' that appear in the second option. The first and fourth options name no owner, no deadline, and no verifiable condition.
+
+*Difficulty: analysis · Skill: Evaluating requirement and action-item wording against professional conventions · Sources: nasa-se-handbook-sp-2016-6105-rev2*
+
+**5. A thermal report gives three numbers: an ambient temperature read from a thermocouple, a heat-transfer coefficient obtained from a handbook correlation, and a surface emissivity nobody has verified for the coating actually used. What does professional practice require of the document?**
+
+- A. Report all three to the same number of decimal places, so that the table looks internally consistent
+- B. Omit the emissivity, since an unverified value would weaken the report's conclusions
+- C. Move all three values into an appendix and cite only the final computed result in the body
+- D. Label each value with its origin, measured, calculated, or assumed, and state the assumption explicitly in the methods and assumptions section
+
+*Answer: D.* Z39.18 makes 'Methods, Assumptions, and Procedures' a required section, NASA's requirements validation checklist asks directly whether all assumptions have been explicitly stated, and the NSPE Code requires reports to include all relevant and pertinent information. Forcing the three values to share decimal places would misrepresent their precision, omitting the assumption conceals material information, and burying the inputs in an appendix prevents the reader from checking the result.
+
+*Difficulty: application · Skill: Distinguishing measured, calculated, and assumed values and documenting them · Sources: ansi-niso-z39-18-2005-r2010, nasa-se-handbook-sp-2016-6105-rev2, nspe-code-of-ethics-for-engineers*
+
+## Sources
+
+- **Report of the Presidential Commission on the Space Shuttle Challenger Accident, Volume I (June 6, 1986)** — Presidential Commission on the Space Shuttle Challenger Accident (NASA History Office electronic edition). <https://www.nasa.gov/history/rogersrep/genindex.htm> (`rogers-commission-report-1986-volume-1`, PUBLIC_DOMAIN)
+- **Columbia Accident Investigation Board Report, Volume I (August 2003)** — Columbia Accident Investigation Board / NASA. <https://www.nasa.gov/wp-content/uploads/static/history/columbia/reports/CAIBreportv1.pdf> (`caib-report-2003-volume-1`, PUBLIC_DOMAIN)
+- **ANSI/NISO Z39.18-2005 (R2010), Scientific and Technical Reports - Preparation, Presentation, and Preservation** — National Information Standards Organization (NISO) / American National Standards Institute. <https://www.niso.org/publications/z39.18-2005-r2010> (`ansi-niso-z39-18-2005-r2010`, REFERENCE_ONLY)
+- **NASA Systems Engineering Handbook, NASA/SP-2016-6105 Rev2** — Office of the Chief Engineer, National Aeronautics and Space Administration (record on the NASA Technical Reports Server). <https://ntrs.nasa.gov/citations/20170001761> (`nasa-se-handbook-sp-2016-6105-rev2`, PUBLIC_DOMAIN)
+- **Risk Analysis of the Space Shuttle: Pre-Challenger Prediction of Failure** — Journal of the American Statistical Association 84(408): 945-957 (Dalal, Fowlkes and Hoadley). <https://doi.org/10.1080/01621459.1989.10478858> (`dalal-fowlkes-hoadley-1989-shuttle-risk-analysis`, REFERENCE_ONLY)
+- **Representation and misrepresentation: Tufte and the Morton Thiokol engineers on the Challenger** — Science and Engineering Ethics 8(1): 59-81 (Robison, Boisjoly, Hoeker and Young). <https://doi.org/10.1007/s11948-002-0033-2> (`robison-2002-representation-and-misrepresentation-challenger`, REFERENCE_ONLY)
+- **Truncating the Y-Axis: Threat or Menace?** — Correll, Bertini and Franconeri; arXiv:1907.02035 (later published at ACM CHI 2020). <https://arxiv.org/abs/1907.02035> (`correll-2019-truncating-the-y-axis`, REFERENCE_ONLY)
+- **Federal Rules of Civil Procedure (December 1, 2024), Rule 34: Producing Documents, Electronically Stored Information, and Tangible Things, or Entering onto Land, for Inspection and Other Purposes** — Administrative Office of the U.S. Courts. <https://www.uscourts.gov/sites/default/files/2025-02/federal-rules-of-civil-procedure-dec-1-2024_0.pdf> (`frcp-rule-34-documents-and-electronically-stored-information`, PUBLIC_DOMAIN)
+- **NSPE Code of Ethics for Engineers** — National Society of Professional Engineers. <https://www.nspe.org/sites/default/files/resources/pdfs/Ethics/CodeofEthics/NSPECodeofEthicsforEngineers.pdf> (`nspe-code-of-ethics-for-engineers`, REFERENCE_ONLY)
+- **Guide for the Use of the International System of Units (SI), NIST Special Publication 811, 2008 edition (A. Thompson and B. N. Taylor)** — National Institute of Standards and Technology (NIST). <https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication811e2008.pdf> (`nist-sp-811-2008`, REFERENCE_ONLY)
+
+## Related Topics
+
+- `engineering-fundamentals:engineering-practice:engineering-ethics`
+- `engineering-fundamentals:engineering-practice:testing-and-validation`
+- `engineering-fundamentals:engineering-practice:technical-drawing`
+- `engineering-fundamentals:engineering-thinking:units-measurement-and-significant-figures`
+- `engineering-fundamentals:engineering-thinking:engineering-design-process`
+
+## Editorial Metadata
+
+- **Topic ID:** `engineering-fundamentals:engineering-practice:engineering-communication`
+- **Subject / Unit:** engineering-fundamentals / engineering-practice
+- **Editorial status:** READY_TO_PUBLISH
+- **Estimated minutes:** 13
+- **Researched at:** 2026-08-19
+- **Research status:** source-verified
+- **Rights status:** Mixed. The Rogers Commission report, the CAIB report, the NASA Systems Engineering Handbook, and the Federal Rules of Civil Procedure are U.S. Government works. ANSI/NISO Z39.18, the NSPE Code, and two journal articles are reference-only. No source prose was adapted; the short quotations from the Columbia briefing slide and from Z39.18 and the NSPE Code are attributed at the point of use.
+- **Transformation:** Practice guidance was synthesised from a standards-body report standard and a NASA engineering handbook, then tested against two federal accident investigations that document what happens when it is not followed. All prose is original. The worked example quotes three short lines from a briefing slide reproduced in CAIB Volume I and pairs them with this lesson's own labelled reconstruction; every arithmetic step in it was executed before publication.
+- **Educational-material statement:** This lesson is educational material about engineering communication practice. It is not engineering design guidance, and it is not legal advice. Real design work is governed by the applicable code or standard and requires a licensed engineer working to it.

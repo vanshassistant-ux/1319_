@@ -10,19 +10,17 @@ Read this first on every new run, then `editorial/reports/EDITORIAL_PROGRESS.md`
   at `editorial/reports/subjects/social-work-and-human-services.md`.
 - **Criminal Justice & Criminology is COMPLETE** — 28/28 topics, audited (0 issues),
   reported at `editorial/reports/subjects/criminal-justice-and-criminology.md`.
-- **Current subject:** `engineering-fundamentals` (Phase 1) — 24 of 28 topics processed.
-  Units done: Engineering Thinking (5/5), Mechanics (6/6), Materials (3/3), Electrical
-  Fundamentals (4/4), Thermal & Energy Systems (3/3). Engineering Practice is 3 of 7:
-  technical-drawing, cad-basics and prototyping are merged.
+- **Engineering Fundamentals is COMPLETE** — 28/28 topics, audited (0 issues), reported at
+  `editorial/reports/subjects/engineering-fundamentals.md`.
 
-  **PAUSED BY OWNER 2026-08-19.** Four topics remain and no agent may be assigned until the
-  owner says to continue: `testing-and-validation`, `engineering-ethics`,
-  `safety-factors-and-failure`, `engineering-communication`.
+  **STOPPED BY OWNER 2026-08-19 after completing this subject.** No agent may be assigned
+  and no new subject may be initialized until the owner says what to do next.
 
-  Interrupted workers left UNVERIFIED partial files for those four — a lesson JSON and/or
-  evidence packet with no markdown, none validated, none merged. They are not counted as
-  processed. A fresh worker should treat them as unverified drafts and re-verify everything,
-  or delete them and start clean.
+  When told to continue, the next Phase 1 subject in order is `health-administration`
+  (24 topics): `bun run editorial:init 1 health-administration`, write its source-map.json
+  (it is health-adjacent — see the social-work source map for the pattern), then run the
+  normal loop below.
+
 - **No other subject may be started** until this one has zero unprocessed topics,
   a subject audit, and a subject report.
 - Authoritative state lives in `content/phase-1/content-progress.json`. A topic is
@@ -37,9 +35,11 @@ may run at once, but every one of them must belong to the current subject, and e
 worker gets exactly one topic. Queue order is the processing order.
 
 Read the current subject's `source-map.json` first; its cautions are binding on every topic.
-Criminal justice is a LEGAL and POLITICALLY SENSITIVE subject: cite primary authority,
-state jurisdiction, give no legal advice, and separate empirical findings from policy
-argument without taking sides.
+
+**Known issue to fix in the next worker brief:** answer keys skew away from position D
+across three consecutive subjects (Social Work 20/34/31/15, Criminal Justice 29/49/43/19,
+Engineering 33/48/40/19). Tell workers to distribute keys evenly rather than letting the
+correct answer drift toward the middle options.
 
 Up to 5 workers may run at once. Give each one explicit scope boundaries against the
 other topics in flight, since parallel workers cannot read each other's output.

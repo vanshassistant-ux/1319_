@@ -6,7 +6,7 @@ CAD is a system for building an exact digital model of a part or assembly and fo
 
 ## Why This Matters
 
-Design work is handed off as model data now, not as paper. A 1999 study commissioned by NIST put the cost of imperfect interoperability on the U.S. automotive supply chain at at least one billion dollars a year, and found that by far the largest share of it went to repairing or re-entering files that downstream software could not use. Whether your model survives that handoff is mostly decided in the first ten minutes of building it. Learning CAD as a modeling discipline rather than as a menu sequence transfers between packages, and it is what makes the work that follows the model - machining, inspection, simulation, revision control - possible rather than painful.
+Design work is handed off as model data now, not as paper. A 1999 study commissioned by NIST put the cost of imperfect interoperability on the U.S. automotive supply chain at no less than one billion dollars a year, and found that by far the largest share of it went to repairing or re-entering files that downstream software could not use. Whether your model survives that handoff is mostly decided in the first ten minutes of building it. Learning CAD as a modeling discipline rather than as a menu sequence transfers between packages, and it is what makes the work that follows the model - machining, inspection, simulation, revision control - possible rather than painful.
 
 ## Learning Objectives
 

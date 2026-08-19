@@ -145,10 +145,12 @@ for (const file of files) {
     const where = `${file}:${index + 1}`;
     if (/[a-z] {2,}[a-z]/i.test(line) && !line.startsWith('|') && !line.startsWith('    ')) flag('GRAM', `${where} double space inside a sentence`);
     const repeat = line.match(/\b(\w+)\s+\1\b/i);
-    if (repeat && !['that', 'had', 'is', 'in', 'on', 'to'].includes(repeat[1].toLowerCase())) flag('GRAM', `${where} repeated word "${repeat[1]}"`);
+    // A single capital letter is a body/point label in mechanics ("B exerts on A a force"), not a doubled word.
+    if (repeat && !['that', 'had', 'is', 'in', 'on', 'to'].includes(repeat[1].toLowerCase()) && !/^[A-Z]$/.test(repeat[1])) flag('GRAM', `${where} repeated word "${repeat[1]}"`);
     if ((line.match(/\(/g) ?? []).length !== (line.match(/\)/g) ?? []).length) flag('GRAM', `${where} unbalanced parentheses`);
     if ((line.match(/"/g) ?? []).length % 2 !== 0) flag('GRAM', `${where} odd number of quotation marks`);
-    if (/\s+[,;:]|\s+\.(?!\d)/.test(line)) flag('GRAM', `${where} space before punctuation`);
+    const mathNotation = /[A-Za-z_}\)]\s\.\s[a-zA-Z\\]|\.\.\./;
+    if (!mathNotation.test(line) && (/\s+[,;:]|\s+\.(?!\d)/.test(line))) flag('GRAM', `${where} space before punctuation`);
     if (/[a-z],[a-z]/i.test(line) && !/\d,\d/.test(line)) flag('GRAM', `${where} missing space after comma`);
     for (const pattern of badPhrases) if (pattern.test(line)) flag('STYLE', `${where} filler phrase: ${line.match(pattern)[0]}`);
   });
