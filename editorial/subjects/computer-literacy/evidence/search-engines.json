@@ -1,0 +1,166 @@
+{
+  "topicId": "computer-literacy:foundations:search-engines",
+  "subjectId": "computer-literacy",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "What a search engine is and the three-stage pipeline it runs: crawling (automated crawlers discover pages by following links, sitemaps, and re-crawls), indexing (analyzing page content and storing it in a large index database), and serving/ranking (ordering indexed pages by relevance and quality for a specific query)",
+      "That crawling and indexing are not guaranteed for every page, and that ranking is programmatic, not paid",
+      "Effective searching: specific keywords, quotation marks for an exact phrase, and common operators named at a naming level (site:, minus/exclusion, filetype:)",
+      "Evaluating results critically: distinguishing labeled ads/sponsored results from organic (natural) results, and judging source credibility with a framework such as CRAAP",
+      "A neutral note that sites use SEO to try to rank higher, and that results are personalized (influenced by location, language, device) rather than a single neutral universal list"
+    ],
+    "supporting": [
+      "The FTC position that ads must be clearly distinguishable from natural results, and that failing to do so can be a deceptive practice",
+      "That SEO is legitimate optimization to help engines understand content, with no guarantee of a top ranking"
+    ],
+    "outOfScope": [
+      "HTTP, DNS, IP addresses, and how the web works generally (owned by 'How the Web Works')",
+      "The web browser as an application (owned by 'Browsers')",
+      "Tracking, cookies, and online tracking mechanisms in depth (owned by 'Privacy' and 'Digital Footprints'); this lesson only notes that search results are personalized",
+      "Technical SEO tactics, ad-buying mechanics, or instructions for manipulating rankings"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A general web search engine works in three stages: crawling, in which automated programs called crawlers download text, images, and video from pages found on the internet; indexing, in which the engine analyzes that content and stores it in a large index database; and serving, in which it returns and ranks results for a query.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["google-how-search-works"],
+      "status": "supported"
+    },
+    {
+      "claim": "Crawlers discover pages by following links from pages they already know, by reading sitemaps that site owners submit, and by revisiting pages they have crawled before; an algorithmic process decides which sites to crawl, how often, and how many pages to fetch.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["google-how-search-works"],
+      "status": "supported"
+    },
+    {
+      "claim": "Being crawled does not guarantee being indexed: not every page a search engine processes is added to its index, and access problems or low-quality content can prevent crawling or indexing.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["google-how-search-works"],
+      "status": "supported"
+    },
+    {
+      "claim": "For a given query the engine ranks indexed pages programmatically by relevance and quality using many factors, which can include the user's location, language, and device; Google states it does not accept payment to rank pages higher in organic results.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["google-how-search-works"],
+      "status": "supported"
+    },
+    {
+      "claim": "Because ranking factors include the user's location, language, and device, two people running the same query can see different result orderings; results are contextual and personalized rather than a single neutral universal list.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["google-how-search-works"],
+      "status": "supported"
+    },
+    {
+      "claim": "Common search refinements include enclosing a phrase in quotation marks to match exact wording, placing a minus sign in front of a word to exclude it, using site: to limit results to one website or domain, and using filetype: to find a specific document format.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["google-search-operators"],
+      "status": "supported"
+    },
+    {
+      "claim": "Paid search results and other advertising should be clearly distinguishable from natural (organic) search results; the FTC has advised that failing to clearly and prominently distinguish advertising from natural search results could be a deceptive practice, and it recommends visual cues and labels to identify ads.",
+      "claimType": "LEGAL",
+      "sourceIds": ["ftc-distinguish-ads-search-results"],
+      "status": "supported"
+    },
+    {
+      "claim": "Search engine optimization (SEO) is the practice of helping search engines understand a site's content and helping users find it; following best practices makes a site more likely to appear, but there is no guarantee that any particular site will be indexed or ranked first.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["google-seo-starter-guide"],
+      "status": "supported"
+    },
+    {
+      "claim": "The CRAAP test is a widely used framework for evaluating the credibility of a source across five criteria: Currency, Relevance, Authority, Accuracy, and Purpose, where Authority asks whether the author or organization is qualified and Purpose asks whether the content exists to inform, persuade, sell, or entertain; it was developed by Sarah Blakeslee and librarians at California State University, Chico, in 2004.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["ebsco-craap-test"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft contained no substantive content about search engines: it described 'Search Engines' abstractly as a study concept ('a label on a toolbox drawer', 'organize information, ask better questions') and never explained crawling, indexing, ranking, searching, or evaluating results. All of that placeholder framing was discarded."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic placeholder prose with a concrete, sourced explanation of the crawl/index/serve pipeline, effective searching, and evaluating results.",
+    "Removed placeholder vocabulary ('context', 'evidence', 'application' as generic study terms) and replaced it with domain vocabulary (crawler, index, organic result, operator, SEO, personalization).",
+    "Rewrote all questions, which previously tested generic 'study skills'; expanded from 3 to the required 5, each with four options and a verified single key."
+  ],
+  "rightsIssues": [
+    "Google Search Central and the SEO Starter Guide are documentation licensed under CC BY 4.0; used as authoritative technical anchors with facts synthesized in original wording (no sentences reproduced).",
+    "The Google Search refinement help page is copyrighted product documentation, used REFERENCE_ONLY at a naming level (operator names and what each does).",
+    "The FTC press release is U.S. government work, public domain; used as the authority for the ads-must-be-distinguishable point.",
+    "The EBSCO CRAAP Test research starter is copyrighted reference content, used REFERENCE_ONLY; the CRAAP criteria are described in original wording."
+  ],
+  "sourceRecords": [
+    {
+      "id": "google-how-search-works",
+      "title": "In-Depth Guide to How Google Search Works",
+      "provider": "Google Search Central (Google for Developers)",
+      "url": "https://developers.google.com/search/docs/fundamentals/how-search-works",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Primary anchor for the three-stage model. States Google is fully automated using web crawlers; crawling 'downloads text, images, and videos from pages it found on the internet with automated programs called crawlers', discovering pages by following links, reading sitemaps, and re-crawling; an algorithmic process decides which sites to crawl, how often, and how many pages. Indexing analyzes content and 'stores the information in the Google index, a large database'; 'Indexing isn't guaranteed; not every page that Google processes will be indexed.' Serving ranks programmatically by relevance and quality using 'hundreds of factors, which could include information such as the user's location, language, and device', and 'Google doesn't accept payment to rank pages higher.' Supports the pipeline, discovery, no-guarantee, ranking-factors, and personalization claims. Facts synthesized in original wording."
+    },
+    {
+      "id": "google-search-operators",
+      "title": "Refine web searches (search operators and refinements)",
+      "provider": "Google Search Help",
+      "url": "https://support.google.com/websearch/answer/2466433",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Product help page listing common refinements: put a word or phrase inside quotes for an exact match; put '-' in front of a word to exclude it; use 'site:' in front of a site or domain to search within it; use 'filetype:' to find a document format; 'before:'/'after:' for date ranges. Supports the operator/refinement claim at a naming level. REFERENCE_ONLY; described in original wording, examples reworked."
+    },
+    {
+      "id": "ftc-distinguish-ads-search-results",
+      "title": "FTC Consumer Protection Staff Updates Agency's Guidance to Search Engine Industry on the Need to Distinguish Between Advertisements and Search Results",
+      "provider": "U.S. Federal Trade Commission",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2013/06/ftc-consumer-protection-staff-updates-agencys-guidance-search-engine-industry-need-distinguish",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "FTC press release (June 2013) announcing updated staff guidance to search engines. States that 'paid search results and other forms of advertising should be clearly distinguishable from natural search results', that 'failing to clearly and prominently distinguish advertising from natural search results could be a deceptive practice', and that the guidance emphasizes visual cues and labels to identify ads. Read via curl with a browser user-agent (the page 403s the default fetcher). Supports the ads-vs-organic and deceptive-practice claims. U.S. government work, public domain."
+    },
+    {
+      "id": "google-seo-starter-guide",
+      "title": "SEO Starter Guide: The Basics",
+      "provider": "Google Search Central (Google for Developers)",
+      "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Defines SEO as 'helping search engines understand your content, and helping users find your site', states there are 'no secrets here that'll automatically rank your site first in Google' and 'no guarantee that any particular site will be added to Google's index.' Supports the neutral SEO note (sites optimize to rank; no guarantee). Facts synthesized in original wording."
+    },
+    {
+      "id": "ebsco-craap-test",
+      "title": "CRAAP Test (Research Starter)",
+      "provider": "EBSCO Research Starters",
+      "url": "https://www.ebsco.com/research-starters/social-sciences-and-humanities/craap-test",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Describes the CRAAP test (Currency, Relevance, Authority, Accuracy, Purpose) for evaluating source credibility: Authority asks whether the individual or organization is adequately knowledgeable; Purpose asks why the source was written (to inform, persuade, or entertain; fact vs. opinion). Developed by Sarah Blakeslee and librarians at California State University, Chico, in 2004. Supports the evaluate-credibility claim. REFERENCE_ONLY; criteria described in original wording."
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "topicId": "computer-literacy:foundations:email-basics",
+  "subjectId": "computer-literacy",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Anatomy of an email address: local-part@domain",
+      "How email travels: outgoing mail is handed off via SMTP to mail servers; a recipient retrieves it with IMAP or POP",
+      "Parts of a message: From, To, Cc, Bcc, Subject, body, attachments",
+      "When and why to use Bcc for privacy (hiding recipients from one another)",
+      "Reply vs Reply All vs Forward, and the reply-all pitfall",
+      "Organizing mail: folders/labels, filters, search, archive vs delete",
+      "Webmail vs a desktop/mobile email client",
+      "Basic email etiquette: clear subject, concise body, professional tone"
+    ],
+    "supporting": [
+      "IMAP keeps messages on the server and syncs across devices; POP typically downloads then deletes",
+      "The difference between a message header and the message body",
+      "That an attachment is a file carried along with the message"
+    ],
+    "outOfScope": [
+      "Phishing and scam-email recognition in depth (owned by computer-literacy:foundations:phishing) — named and handed off",
+      "Chat and real-time collaboration tools (owned by Collaboration Platforms)",
+      "How the underlying network/internet works (owned by Internet Basics)",
+      "Configuring specific commercial mail apps step by step; encryption (S/MIME, PGP) internals"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "An email address has two parts joined by an @ sign: a local-part identifying the mailbox and a domain naming the mail system, written local-part@domain.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ietf-rfc-5322-internet-message-format", "ietf-rfc-5321-smtp"],
+      "status": "supported"
+    },
+    {
+      "claim": "SMTP (Simple Mail Transfer Protocol) is the standard used to submit and transfer outgoing mail between mail servers.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ietf-rfc-5321-smtp"],
+      "status": "supported"
+    },
+    {
+      "claim": "IMAP lets a client access and manage messages that remain stored on the server, so the same mailbox stays in sync across multiple devices.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ietf-rfc-9051-imap4rev2"],
+      "status": "supported"
+    },
+    {
+      "claim": "POP3 is designed to download mail from the server to one device, and in its typical mode the message is then deleted from the server.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ietf-rfc-1939-pop3"],
+      "status": "supported"
+    },
+    {
+      "claim": "A message carries header fields including From, To, Cc, Bcc, Subject, and Date, plus a body. Addresses on To and Cc are visible to all recipients.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ietf-rfc-5322-internet-message-format"],
+      "status": "supported"
+    },
+    {
+      "claim": "Bcc (blind carbon copy) recipients receive the message without their addresses being shown to the other recipients; RFC 5322 describes handling where the Bcc line is removed from the copies other recipients receive.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ietf-rfc-5322-internet-message-format"],
+      "status": "supported"
+    },
+    {
+      "claim": "Phishing messages try to get the reader to open harmful links or attachments or reveal personal information, often by impersonating a trusted sender and using urgent language; the reader should recognize the signs, not click, and report the message.",
+      "claimType": "CURRENT",
+      "sourceIds": ["cisa-recognize-and-report-phishing"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft was generic boilerplate ('Email Basics is a foundational concept... a label on a toolbox drawer') with no substantive email content; it made no verifiable factual claims to retain."
+  ],
+  "correctionsNeeded": [
+    "Replaced the placeholder draft entirely with sourced, concrete instruction on addresses, transport protocols, message parts, and etiquette."
+  ],
+  "rightsIssues": [
+    "IETF RFCs are used as REFERENCE_ONLY authoritative technical definitions; all prose is original synthesis, no substantial RFC text reproduced.",
+    "CISA page is U.S. government work used REFERENCE_ONLY for phishing-handoff facts; wording is original."
+  ],
+  "sourceRecords": [
+    {
+      "id": "ietf-rfc-5321-smtp",
+      "title": "RFC 5321: Simple Mail Transfer Protocol",
+      "provider": "IETF (Internet Engineering Task Force)",
+      "url": "https://www.rfc-editor.org/rfc/rfc5321.html",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Standards-track (October 2008). Authoritative definition that SMTP transfers/relays mail between servers and handles submission; supports the address local-part@domain form (mailbox = local-part @ domain) and the outgoing-transport claim. Read the RFC-Editor HTML copy."
+    },
+    {
+      "id": "ietf-rfc-5322-internet-message-format",
+      "title": "RFC 5322: Internet Message Format",
+      "provider": "IETF (Internet Engineering Task Force)",
+      "url": "https://www.rfc-editor.org/rfc/rfc5322.html",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Standards-track. Defines the header/body structure and the From, To, Cc, Bcc, Subject, Date fields; addr-spec = local-part '@' domain. Confirms To/Cc addresses are visible to all recipients and describes Bcc handling where the Bcc field is stripped from copies delivered to To/Cc recipients so blind recipients stay hidden. Read the RFC-Editor HTML copy."
+    },
+    {
+      "id": "ietf-rfc-9051-imap4rev2",
+      "title": "RFC 9051: Internet Message Access Protocol (IMAP) - Version 4rev2",
+      "provider": "IETF (Internet Engineering Task Force)",
+      "url": "https://www.rfc-editor.org/rfc/rfc9051.html",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Standards-track (August 2021). Abstract: IMAP4rev2 allows a client to access and manipulate messages on a server; supports mailbox management, searching, selective fetch, and resynchronization. Supports the claim that IMAP keeps mail on the server and syncs across devices/folders. Read the RFC-Editor HTML copy."
+    },
+    {
+      "id": "ietf-rfc-1939-pop3",
+      "title": "RFC 1939: Post Office Protocol - Version 3",
+      "provider": "IETF (Internet Engineering Task Force)",
+      "url": "https://www.rfc-editor.org/rfc/rfc1939.html",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Internet Standard (STD 53, May 1996). Lets a workstation retrieve mail from a server maildrop; typical model is download-then-delete, and it is explicitly not intended for extensive server-side manipulation (contrasted with the more advanced IMAP). Supports the POP-vs-IMAP contrast. Read the RFC-Editor HTML copy."
+    },
+    {
+      "id": "cisa-recognize-and-report-phishing",
+      "title": "Recognize and Report Phishing",
+      "provider": "CISA (Cybersecurity and Infrastructure Security Agency)",
+      "url": "https://www.cisa.gov/secure-our-world/recognize-and-report-phishing",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "U.S. government guidance. Phishing tries to get you to open harmful links/attachments or reveal personal/financial info, often via a message impersonating a trusted party with urgent language or lookalike addresses; advice is recognize, resist (don't click), report, delete. Used only as the handoff pointer to the dedicated Phishing topic. Fetched via curl with a browser user-agent (direct WebFetch returned 403)."
+    }
+  ]
+}

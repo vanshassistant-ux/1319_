@@ -1,0 +1,151 @@
+# Browsers
+
+## In 30 Seconds
+
+A web browser is the app you use to reach the web. You type or click an address, the browser fetches the page's files, and a rendering engine turns that HTML, CSS, and JavaScript into the page you see. Tabs, bookmarks, history, autofill, and downloads make it usable day to day; the padlock, private windows, blockers, and updates are its safety tools. Chrome, Safari, Edge, and Firefox are the common ones.
+
+## Why This Matters
+
+The browser is where most people do most of their computing: coursework, banking, email, applications, and research all run inside it. Understanding what it actually does—fetch files and render them—demystifies the web and makes you a calmer, more capable user. It also makes you safer. Knowing what the HTTPS padlock really promises, what a private window does and does not hide, and why extensions deserve caution helps you judge risk instead of guessing. As more software moves into the browser tab, this fluency only grows more useful for study, work, and protecting your own information.
+
+## Learning Objectives
+
+- Define a web browser and explain the role of its rendering engine.
+- Identify everyday browser features and describe what each is for.
+- Explain what browser extensions do and why they can pose security and privacy risks.
+- Interpret the HTTPS padlock accurately—what it guarantees and what it does not.
+- Evaluate the real limits of private/incognito browsing.
+- Apply good habits, including keeping the browser updated, to reduce risk.
+
+## The College Version
+
+### What a browser is and how it renders a page
+
+A web browser is the application you use to request web pages and display them. When you type an address, click a link, or submit a search, the browser sends a request across the network and receives a bundle of files in return: an HTML document that describes the page's structure, CSS that describes how it should look, and usually JavaScript that makes it interactive. On their own these are just text. The browser's rendering engine (also called a layout engine) reads them and paints the result—the headings, images, buttons, and video you actually see and click. In formal terms a browser is the most familiar kind of user agent: a program that acts on your behalf to retrieve pages and follow the hyperlinks that connect them. This division of labor is the key idea. The web server stores and sends files; your browser interprets and displays them. That is why the same page can look slightly different in different browsers, and why a page can load its text quickly but keep filling in images and interactive parts a moment later as more files arrive and the engine processes them.
+
+### The everyday features you actually use
+
+Most of a browser's interface exists to manage many pages over time. Tabs let you keep several pages open in one window and switch between them, so research, email, and a document can sit side by side. The address bar (often doubling as a search box) is where you enter a destination or a query. Back and forward buttons move through the pages you have already visited in that tab. Bookmarks (called favorites in some browsers) save a page so you can return without remembering its address. History is the browser's record of pages you have visited, useful for finding something again but also a privacy consideration on a shared device. Autofill stores information like addresses, and sometimes payment or login details, so forms fill in with a click—convenient, but worth protecting behind a device lock and, for passwords, a dedicated password manager. The download manager keeps files you have saved from the web and shows their progress. None of these change what a browser fundamentally does; they make the fetch-and-render loop practical to live in all day.
+
+### Extensions: more power, more caution
+
+Extensions (also called add-ons) are small programs that plug into the browser to add features—blocking ads, checking spelling, managing passwords, changing how a page looks, or adding tools to a page. They are built from the same web technologies as pages themselves (HTML, CSS, and JavaScript), but they run with more privilege than an ordinary page. Depending on the permissions you grant at install time, an extension can read and change the content of the pages you visit and reach browser features such as your tabs, bookmarks, cookies, and history. That reach is exactly what makes a useful extension useful—and exactly why a careless, abandoned, or malicious one is a genuine security and privacy risk. An extension that can read every page can, in principle, read what you type into them. The practical guidance is not to avoid extensions but to install few, prefer ones from reputable developers and official stores, read the permissions they ask for, and remove ones you no longer use. Treat an extension's access to your browsing the way you would treat a stranger's access to your desk.
+
+### Security and privacy tools built into the browser
+
+Modern browsers ship with several protections, and using them well depends on understanding what each one really promises. The padlock icon signals that your connection to the site uses HTTPS/TLS, which provides three things: confidentiality (data in transit is encrypted so third parties on the network cannot read it), integrity (it has not been tampered with en route), and authentication of the server's identity through a certificate. What the padlock does not promise is that the site is honest, safe, or the business it claims to be in spirit—criminals can obtain valid certificates too. The padlock secures the pipe, not the destination. Private or incognito windows are widely misunderstood. They stop the browser from saving that session's history, cookies, and site data on your device, which is genuinely useful on a shared or public computer. They do not make you anonymous: they do not hide your IP address, and they do not stop your internet provider, employer, school network, or the websites themselves from seeing what you do, nor do they block malware. Pop-up blockers and tracker/content blocking reduce intrusive ads and cross-site tracking. And the most important habit is the least glamorous: keep the browser updated. Security agencies note that many updates exist specifically to fix security holes, and recommend installing them promptly—turning on automatic updates is the easiest way to stay current, because attackers do not wait.
+
+### The major browsers and where they stand
+
+A handful of browsers cover most use. Google Chrome, Apple Safari, Microsoft Edge, and Mozilla Firefox are the common desktop and mobile examples; Samsung Internet and Opera are smaller. Market share moves and should always be dated. Worldwide, StatCounter's July 2026 snapshot put Chrome at roughly 68 percent, Safari near 16 percent, Edge around 5 percent, and Firefox around 3 percent, with the remainder split among the rest. Two structural facts sit under those numbers. First, several browsers share a rendering engine—Chrome, Edge, Opera, and others are built on the same Chromium foundation—so they render pages very similarly even though their features, privacy defaults, and owners differ. Safari uses Apple's WebKit engine and Firefox uses Mozilla's Gecko engine. Second, defaults matter: Safari's share reflects its place as the built-in browser on Apple devices, just as Edge ships with Windows. For a learner, the takeaway is not which browser to pick but that they are interchangeable enough for everyday use, that their differences lie mostly in privacy settings and ecosystem rather than in what a browser fundamentally does, and that any share figure you cite should carry its date and source.
+
+## Key Vocabulary
+
+- **Web browser** — The application that requests web pages over a network and displays them so you can read and interact with them.
+- **Rendering engine** — The part of a browser that turns a page's HTML, CSS, and JavaScript into the visible, clickable result on screen; also called a layout engine.
+- **User agent** — Any software that acts on a person's behalf to access the web; a browser is the most familiar kind.
+- **Tab** — A single open page within a browser window, letting you keep and switch between several pages at once.
+- **Bookmark** — A saved link to a page (called a favorite in some browsers) so you can return to it without retyping its address.
+- **Extension** — An add-on program that plugs into the browser to add features, running with more access to your pages and browser data than an ordinary web page.
+- **HTTPS** — The secure form of the web's transfer protocol; it encrypts the connection and verifies the server's identity with a certificate. The padlock icon indicates it is in use.
+- **Private (incognito) browsing** — A mode that keeps a session's history, cookies, and site data off the local device but does not hide your activity from networks or the sites you visit.
+- **Certificate** — A digital credential that lets a browser confirm a site is served by the party named in it, underpinning the trust shown by the padlock.
+
+## Eli-10
+
+A web page arrives at your computer as a pile of instructions, not a finished picture. Your browser is the reader that follows those instructions and builds the page in front of you—the words, the pictures, the buttons. It also keeps your open pages in tabs, remembers pages you liked as bookmarks, and has safety tools: a little lock that means the connection is scrambled so nobody nearby can peek, and a "private" window that forgets what you did on that computer. The catch is that "private" only forgets locally—the websites and your internet company can still see you. Add-ons can give the browser new tricks, but since they can watch your pages, only add a few you trust.
+
+## Eli's Analogy
+
+A browser is like a chef who gets a recipe card in the mail. The card (the page's code) is not food; the chef reads it and cooks the actual meal (the page you see). A private window is a chef who throws away the recipe card after cooking so no one finds it in your kitchen—but the mail carrier who delivered it still knows it came to your house.
+
+**Where the analogy breaks down:** It understates speed and repetition—a browser cooks a whole new "meal" many times a minute and for millions of people at once, and unlike a chef it does not judge whether the recipe is good for you; an unsafe page still gets rendered. It also glosses over that the padlock protects the delivery of the recipe, not whether the recipe itself is trustworthy.
+
+## Worked Example
+
+Imagine you are logging into your student portal on a library computer. You open a private window so the machine will not keep your history or login cookies after you leave—a sensible use of incognito, since its whole job is to avoid local traces. You type the address and check the padlock: it is present, so your connection is encrypted and the certificate matches the school's domain, meaning no one on the library network can read your password as it travels. You do not, however, assume the private window makes you invisible—the school's network and the portal itself still see that you signed in, which is fine and expected. Before leaving you also decline the browser's offer to save your password in autofill, because this is not your device. Each choice maps to a specific fact: private mode handles local traces, the padlock handles the connection, and declining autofill handles the shared machine.
+
+## Common Mistakes
+
+- **Thinking the browser is the internet, or the same thing as a search engine.** The browser is the app that fetches and displays pages. The internet is the network underneath, and a search engine is one website you can visit through the browser.
+- **Reading the padlock as "this site is safe and legitimate."** The padlock means the connection is encrypted and the server's identity is certificate-verified. It says nothing about whether the site is honest—scam sites can have padlocks too.
+- **Believing private/incognito mode makes you anonymous online.** It only keeps that session's history and cookies off the local device. Your ISP, employer or school network, and the websites you visit can still see your activity, and your IP address is not hidden.
+- **Installing many extensions without checking what they can access.** Extensions can be granted permission to read and change your pages and browser data. Install few, from reputable sources, review their permissions, and remove ones you do not use.
+- **Putting off browser updates as an annoyance.** Many updates fix security vulnerabilities. Install them promptly and turn on automatic updates, because attackers exploit known holes in outdated browsers.
+
+## Compare / Contrast
+
+- **HTTPS padlock vs. Private/incognito window** — The padlock protects data moving between you and the site (encryption plus server identity). A private window only affects what your own device remembers about the session; the two solve different problems and neither makes you anonymous.
+- **Bookmark vs. History** — A bookmark is a page you deliberately saved to return to; history is the automatic record of pages you have visited. You curate bookmarks; history accumulates on its own until cleared.
+- **Web page vs. Extension** — A page runs in a tab with limited, sandboxed access; an extension plugs into the browser itself and, with permission, can read and change many pages and reach browser data—more power and therefore more risk.
+
+## Key Takeaway
+
+A browser fetches a page's code and renders it into what you see; its everyday features manage many pages, while its safety tools each promise something specific—the padlock secures the connection, a private window only clears local traces, extensions trade access for features, and prompt updates close known holes.
+
+## Practice Question Bank
+
+1. **What is the main job of a web browser's rendering engine?**
+   - A. To turn a page's HTML, CSS, and JavaScript into the visible page you see and interact with ✅
+   - B. To store all of a website's files permanently on the server
+   - C. To assign each website its numerical IP address
+   - D. To rank web pages so the best results appear first
+
+   The rendering (layout) engine interprets the HTML, CSS, and JavaScript the browser receives and paints the result on screen. Storing files is the server's role; assigning IP addresses relates to DNS/networking; ranking results is a search engine's job.
+
+2. **A student sees the padlock icon next to a website's address. What does it reliably tell them?**
+   - A. The website has been reviewed and confirmed to be trustworthy
+   - B. The website cannot contain scams, malware, or false information
+   - C. The connection is encrypted and the server's identity is verified by a certificate ✅
+   - D. The student is browsing anonymously and cannot be tracked
+
+   HTTPS/TLS gives confidentiality, integrity, and authentication of the server via a certificate, which is what the padlock signals. It does not vouch for the site's honesty or content—criminals can hold valid certificates—and it has nothing to do with anonymity.
+
+3. **Why can browser extensions pose a security and privacy risk?**
+   - A. They permanently disable the browser's ability to receive updates
+   - B. With granted permissions they can read and change the content of the pages you visit and reach browser data like history and cookies ✅
+   - C. They replace the site's certificate so the padlock stops working
+   - D. They can only run on websites that do not use HTTPS
+
+   Extensions run with more privilege than a normal page and, depending on the permissions granted, can read and modify visited pages and access browser features such as tabs, cookies, and history—so a malicious or compromised one is dangerous. Extensions do not disable updates, swap certificates, or depend on the absence of HTTPS.
+
+4. **Priya opens a private/incognito window on her home laptop to research a health question. Which statement is correct about what this actually protects?**
+   - A. Her internet provider can no longer see which sites she visits
+   - B. The websites she opens cannot tell that anyone visited them
+   - C. Her activity is now anonymous and her IP address is hidden
+   - D. The session's history and cookies will not be saved on her laptop, but her ISP and the sites can still see the activity ✅
+
+   Private mode's real effect is local: it keeps that session's history, cookies, and site data off the device. It does not hide the IP address, does not make the user anonymous, and does not stop the ISP or the visited sites from seeing the activity.
+
+5. **A browser shows a notification that an update is ready. Based on current security guidance, what is the best response and why?**
+   - A. Install it promptly, and ideally enable automatic updates, because many updates fix security vulnerabilities that attackers exploit ✅
+   - B. Ignore it, since browser updates only change the appearance of menus
+   - C. Wait several months so any new bugs are removed before updating
+   - D. Uninstall the browser instead, because updates cannot be trusted
+
+   Security agencies advise installing updates as soon as possible—especially for web browsers—because many exist to fix security holes, and turning on automatic updates keeps you current with no effort. Delaying leaves known vulnerabilities open; updates are not merely cosmetic, and uninstalling is not a security strategy.
+
+## Sources
+
+- MDN Web Docs — [Browser (Glossary)](https://developer.mozilla.org/en-US/docs/Glossary/Browser)
+- MDN Web Docs — [What are extensions? (WebExtensions)](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/What_are_WebExtensions)
+- MDN Web Docs — [Transport Layer Security (TLS)](https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/TLS)
+- StatCounter GlobalStats — [Browser Market Share Worldwide](https://gs.statcounter.com/browser-market-share) (July 2026 snapshot)
+- Mozilla / Firefox — [Incognito browser: what it really means](https://www.firefox.com/en-US/more/incognito-browser/)
+- CISA Secure Our World — [Update Software](https://www.cisa.gov/secure-our-world/update-software)
+
+## Related Topics
+
+- computer-literacy:foundations:how-the-web-works
+- computer-literacy:foundations:search-engines
+- computer-literacy:foundations:internet-basics
+- computer-literacy:foundations:privacy
+
+## Editorial Metadata
+
+- **Editorial status:** READY_TO_PUBLISH
+- **Estimated minutes:** 9
+- **Researched at:** 2026-08-19
+- **Research status:** source-verified
+- **Rights status:** reference-only and public-domain sources; MDN facts synthesized into original prose, no source wording adapted
+- **Transformation:** Facts drawn from MDN documentation, Mozilla/Firefox guidance, CISA public-domain advice, and a dated StatCounter snapshot were verified and rewritten as an original lesson; the generated placeholder draft was discarded entirely.

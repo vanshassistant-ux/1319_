@@ -1,0 +1,128 @@
+{
+  "topicId": "computer-literacy:foundations:backups",
+  "subjectId": "computer-literacy",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "What a backup is and why it is needed (hardware failure, theft/loss, accidental deletion, ransomware)",
+      "The 3-2-1 rule: three copies, two media types, one offsite",
+      "Offline and immutable copies as defense against ransomware that reaches connected backups",
+      "Backup types: full, incremental, differential",
+      "Testing restores; sync is not the same as a backup"
+    ],
+    "supporting": [
+      "Offsite storage practice and backup frequency/policy",
+      "Version history in sync services as a partial, not equivalent, safeguard"
+    ],
+    "outOfScope": [
+      "How cloud storage and sync services work in depth (owned by Cloud Storage topic)",
+      "How malware/ransomware operates and spreads in depth (owned by Malware topic)",
+      "Files, folders, and paths mechanics (owned by Files and Folders topic)",
+      "Specific commercial backup products or step-by-step product instructions"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A backup is a separate, recoverable copy of data that lets you restore after loss from causes such as hardware failure, theft, accidental deletion, and ransomware.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cisa-back-up-business-data"],
+      "status": "supported"
+    },
+    {
+      "claim": "The 3-2-1 rule keeps three copies of important data, on two different types of storage media, with one copy stored offsite.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cisa-back-up-business-data"],
+      "status": "supported"
+    },
+    {
+      "claim": "Backups should be tested so a team can rapidly restore data both fully and partially; regular backups protect against ransomware, malware, hardware failures, and physical damage.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cisa-back-up-business-data"],
+      "status": "supported"
+    },
+    {
+      "claim": "Many ransomware variants attempt to find and subsequently delete or encrypt accessible backups, so backups should be maintained offline and encrypted (or immutable), and tested regularly.",
+      "claimType": "CURRENT",
+      "sourceIds": ["cisa-stopransomware-guide"],
+      "status": "supported"
+    },
+    {
+      "claim": "A full backup captures all selected files; an incremental backup captures files created or changed since the last backup of any type; a differential backup stores files created or modified since the last full backup.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-800-34r1"],
+      "status": "supported"
+    },
+    {
+      "claim": "Recovering from an incremental backup may require media from the last full backup plus each subsequent incremental, whereas a differential restore needs only the last full backup and the most recent differential.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-800-34r1"],
+      "status": "supported"
+    },
+    {
+      "claim": "It is good practice to store backed-up data offsite so data is protected from threatening elements at the primary location.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-800-34r1"],
+      "status": "supported"
+    },
+    {
+      "claim": "File synchronization keeps copies identical, so a deletion or ransomware encryption propagates to synced copies; a separate, ideally offline backup is safer than relying on sync alone.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["cisa-stopransomware-guide", "cisa-back-up-business-data"],
+      "status": "supported",
+      "note": "Reasoned from CISA's point that ransomware deletes/encrypts accessible backups and its recommendation to keep offline copies; sync mirrors changes to reachable copies, so it shares that exposure."
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only boilerplate ('Backups is a foundational concept... a simple way to apply it') with no factual content about backups; nothing in it was usable as evidence."
+  ],
+  "correctionsNeeded": [
+    "Replaced all generic placeholder prose with substantive, sourced content on the purpose of backups, the 3-2-1 rule, backup types, testing restores, and the sync-vs-backup distinction.",
+    "Replaced placeholder vocabulary (context, evidence, application) with domain-specific terms.",
+    "Replaced placeholder questions with five verified items covering the 3-2-1 rule, offline/immutable copies, full/differential definitions, and the sync distinction."
+  ],
+  "rightsIssues": [
+    "All three sources are U.S. government works used as REFERENCE_ONLY; facts were synthesized and all prose written originally. No source wording was reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "cisa-back-up-business-data",
+      "title": "Back Up Business Data",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/audiences/small-and-medium-businesses/secure-your-business/back-up-business-data",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via curl with a browser user-agent (WebFetch returned 403). States the 3-2-1 rule verbatim: '3 copies of important files, 2 different types of storage media (like a hard drive and the cloud), 1 copy stored off-site.' Also supports: regular backups protect against ransomware, malware, hardware failures and physical damage; use a combination of on-site and remote backups; leverage offline copies and encryption; and 'Test backup procedure to make sure your team can rapidly restore data both fully and partially.' Used for the 3-2-1 rule, reasons to back up, and testing-restore guidance."
+    },
+    {
+      "id": "cisa-stopransomware-guide",
+      "title": "#StopRansomware Guide (September 2023)",
+      "provider": "CISA, FBI, NSA, and MS-ISAC (joint guide, hosted by CISA)",
+      "url": "https://www.cisa.gov/stopransomware/ransomware-guide",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via curl with a browser user-agent (WebFetch returned 403). Supports: 'Maintain offline, encrypted backups of critical data, and regularly test the availability and integrity of backups'; 'It is important that backups are maintained offline, as many ransomware variants attempt to find and subsequently delete or encrypt accessible backups to make restoration impossible unless the ransom is paid'; and that some cloud vendors offer immutable storage solutions. Used for the offline/immutable-copy point and the sync/connected-copy exposure to ransomware."
+    },
+    {
+      "id": "nist-sp-800-34r1",
+      "title": "NIST SP 800-34 Rev. 1: Contingency Planning Guide for Federal Information Systems",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-34r1.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Downloaded the PDF and extracted text with pypdf. May 2010, by Marianne Swanson et al. Section 5 defines the three common backup methods: 'Full. A full backup captures all files on the disk or within the folder selected for backup.' 'Incremental. An incremental backup captures files that were created or changed since the last backup, regardless of backup type.' 'Differential. A differential backup stores files that were created or modified since the last full backup.' Section 3.4.2 states 'It is good business practice to store backed-up data offsite.' Used for backup-type definitions, their restore trade-offs, and offsite storage practice."
+    }
+  ]
+}

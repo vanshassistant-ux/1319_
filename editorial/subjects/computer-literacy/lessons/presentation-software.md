@@ -1,0 +1,142 @@
+# Presentation Software
+
+## In 30 Seconds
+
+Presentation software builds a deck of slides you show in order to support a talk. Programs like Microsoft PowerPoint, Google Slides, Apple Keynote, and LibreOffice Impress all work the same way: you drop text, images, and simple charts into layout placeholders, apply a theme so every slide looks consistent, and add restrained transitions and animations. Presenter view keeps your notes on your screen while the audience sees only the slides. The hard part is not the tool but the design: few words, one idea per slide, readable type.
+
+## Why This Matters
+
+You will be asked to present in nearly every college course and most jobs: a seminar talk, a project pitch, a lab report, a conference poster session. The software is easy; using it well is not. A cluttered slide crammed with paragraphs actually works against you, because the audience cannot read your text and listen to you at the same time. Understanding how slides, layouts, themes, and animation features fit together, and why lean design beats decoration, lets you build a deck that reinforces your message instead of competing with it. These habits transfer across every presentation tool you will ever open.
+
+## Learning Objectives
+
+- Define presentation software and identify the slide, the layout, and the placeholder as its basic building blocks.
+- Explain how a theme (template) enforces consistent colors, fonts, and layouts across a whole deck.
+- Distinguish a transition (between slides) from an animation (within a slide) and justify using both sparingly.
+- Describe what presenter view shows the speaker versus the audience.
+- Apply cognitive-load-based design rules to critique and improve a slide.
+
+## The College Version
+
+### Slides, layouts, and placeholders
+
+Presentation software produces a deck: an ordered set of slides shown one at a time, usually full-screen, to accompany a spoken talk. Microsoft PowerPoint, Google Slides, Apple Keynote, and LibreOffice Impress are the common examples, and although their menus differ, the underlying model is the same across all of them. The slide is the basic unit of work. Each slide is built from a layout, which is a template that fixes the formatting, positioning, and the set of placeholder boxes for that slide's content. A placeholder is a pre-formatted container, usually shown as a dotted-line box, that is waiting for a specific kind of content: a title, body text, a table, a chart, or a picture. Because the placeholder already carries its size, position, and text formatting, dropping content into it keeps slides consistent without your having to align anything by hand. Programs ship with a small set of ready-made layouts. A Title slide, used to open the deck, holds a title and subtitle; a Title and Content layout pairs a heading with a body area that accepts text, a table, a chart, or an image; other layouts offer side-by-side comparison or a picture with a caption. Choosing the layout that matches your content is the first design decision on every slide.
+
+### Themes, and adding text, images, and charts
+
+A theme (some tools call it a template) is a preset group of colors, fonts, background, and layouts that applies across the entire presentation at once. Applying one theme is what makes slide 2 and slide 20 look like they belong to the same talk: the same heading font, the same accent color, the same background. Change the theme and every slide updates together, which is far more reliable than styling each slide by hand. Within a slide you add content by filling placeholders. Text goes into title and body placeholders, typically as short lines or bullet points rather than paragraphs. Images are inserted from a file or the program's gallery and sized to fit. A simple chart, such as a bar or pie chart summarizing a few numbers, can be inserted and its underlying values edited in a small linked table; the deep data work belongs in a spreadsheet, but the finished chart lives on the slide as a visual. LibreOffice Impress, for instance, lets a slide hold text, bulleted and numbered lists, tables, charts, and graphics, and gives you separate Normal, Outline, Notes, and Slide Sorter views for editing, drafting text, writing notes, and reordering slides.
+
+### Transitions, animations, and presenter view
+
+Two motion features are easy to confuse. A transition is the visual effect that plays when you move from one slide to the next, such as a fade or a wipe. A transition applies to the whole slide, and you can set only one per slide. An animation is an effect applied to a single element within a slide, such as a line of text or an image, and one slide can have several. Animations come in four kinds: entrance effects make an object appear, exit effects make it disappear, emphasis effects draw attention to something already visible, and motion paths move an object along a route. Both features are worth using with restraint. A fade between slides or a single build that reveals bullet points as you reach them can aid comprehension; a deck where every element spins in from a different corner exhausts the audience and buries the point. Presenter view (also called presenter mode) is the feature that separates what you see from what the audience sees. On your own screen it shows your speaker notes, the current and upcoming slides, and timing controls; the projector or shared screen shows only the slides. This lets you keep notes handy without printing them or pasting them onto the slide itself. When you are done, you present the deck as a full-screen slideshow, and you can export it to a portable format such as PDF for sharing or printing.
+
+### Design for a limited working memory
+
+The most important skill in presentation software has nothing to do with the software. Any new information your audience takes in must first pass through working memory, which is sharply limited in both how much it can hold and how long it holds it before that information is consolidated into long-term memory. A slide packed with sentences forces a choice on every listener: read the text or listen to you, because a person genuinely cannot do both at once. When the slide wins, you become someone reading their own slides aloud, and the talk stalls. Lean design respects the limit. Put few words on a slide and one idea per slide, so a glance is enough and attention returns to you. Favor a relevant image, diagram, or chart over a wall of text, because a well-chosen visual reinforces a point faster than a paragraph. Make type large enough to read from the back of the room; text much smaller than about 22 point is hard to see, and it shrinks further on a projector. Use high contrast, such as dark text on a light background or light text on a dark one, so words stay legible under bad lighting. Each aid should be a direct, uncluttered illustration of a specific point, not decoration. The slides reinforce your talk; they are not the script and not the handout.
+
+## Key Vocabulary
+
+- **Deck (presentation):** The complete ordered set of slides created in presentation software and shown in sequence to support a talk.
+- **Slide:** A single screen or page in a presentation, holding one segment of the content.
+- **Slide layout:** A template that fixes the formatting, positioning, and set of placeholder boxes for a slide's content, such as Title slide or Title and Content.
+- **Placeholder:** A pre-formatted container on a layout, usually a dotted-line box, that receives a specific kind of content such as a title, text, a chart, or a picture.
+- **Theme (template):** A preset group of colors, fonts, background, and layouts applied across an entire presentation to keep its visual design consistent.
+- **Transition:** The visual effect that plays when moving from one slide to the next; it applies to the whole slide, one per slide.
+- **Animation:** An effect applied to a single element within a slide (entrance, exit, emphasis, or motion path); a slide may have several.
+- **Presenter view:** A mode that shows the speaker their notes, upcoming slide, and controls on their own screen while the audience sees only the slides.
+- **Working memory:** The limited-capacity, short-duration mental workspace that processes new information before it is stored in long-term memory.
+
+## Eli-10
+
+A slide deck is a set of picture-cards you flip through while you talk. Each card has a layout, which is like a coloring-book page with boxes already drawn for where the title and the picture go, so you just fill them in. A theme is a sticker pack that makes every card match. Transitions are how one card swaps for the next; animations make one thing on a card move. The big rule: your cards should be posters, not paragraphs. If a card has too many words, people read it instead of hearing you, and you lose the room.
+
+## Eli's Analogy
+
+A slide is a billboard on a highway. Drivers get one or two seconds and one clear message: a giant word, a bold image. A billboard printed with a full paragraph would be useless because nobody can read it at speed. Your audience is going almost that fast, so build billboards, not documents.
+
+**Where the analogy breaks down:** A billboard stands alone with no narrator, while your slide has you talking beside it, so the slide only needs to carry the part a picture shows better than words. And unlike a billboard, you control the timing and can reveal one point at a time.
+
+## Worked Example
+
+You have to present a three-slide summary of a class survey. Slide 1: pick the Title slide layout, type the project name in the title placeholder and your name in the subtitle placeholder, apply a plain theme so the fonts and colors are set for all three slides at once. Slide 2: pick Title and Content, write a four-word heading, and insert a bar chart of the top responses into the content placeholder rather than typing the numbers as a list. Slide 3: one big takeaway sentence in large, high-contrast type. You add a single fade transition between slides and one entrance animation so the chart's bars appear as you explain them. In presenter view you keep three lines of speaker notes per slide on your laptop while the projector shows only the slides. Total on-screen text stays under about twenty-five words per slide, so the audience listens to you instead of reading ahead.
+
+## Common Mistakes
+
+- **Filling slides with full sentences and paragraphs, then reading them aloud.** Put a few words or one image per slide and speak the detail; the audience cannot read dense text and listen to you at the same time.
+- **Confusing a transition with an animation.** A transition is the effect between two slides (one per slide, whole-slide); an animation is an effect on one element within a slide, and a slide can have several.
+- **Adding a different flashy transition and animation to every slide and object.** Use motion sparingly and purposefully; constant effects distract from the message. A single fade or a timed build is usually enough.
+- **Styling each slide by hand so the deck looks inconsistent.** Apply a theme once; it sets colors, fonts, and layouts across the whole presentation and updates every slide together.
+- **Pasting your speaker notes onto the slides so you can read them.** Put notes in presenter view, which shows them on your screen while the audience sees only the slides.
+
+## Compare / Contrast
+
+- **Transition vs. Animation:** A transition is the effect when you change slides and applies to the entire slide (one allowed per slide); an animation applies to a single element within a slide and several can run on one slide.
+- **Layout vs. Theme:** A layout arranges the placeholders on one slide; a theme is the preset colors, fonts, background, and layouts applied consistently across the whole presentation.
+- **What the speaker sees (presenter view) vs. what the audience sees:** Presenter view shows notes, the upcoming slide, and controls on the speaker's screen; the audience screen shows only the slides themselves.
+
+## Key Takeaway
+
+Presentation software is a slide-and-layout system: fill placeholders, apply a theme for consistency, and use transitions, animations, and presenter view in service of the talk. Because the audience cannot read and listen at once, design for a limited working memory: few words, one idea per slide, readable high-contrast type, visuals over walls of text.
+
+## Practice Question Bank
+
+1. **In presentation software, what is a placeholder?**
+   - A. The full-screen mode used to deliver the slideshow to an audience
+   - B. A pre-formatted container on a slide layout that receives a specific kind of content such as a title, text, or a chart
+   - C. The set of colors and fonts applied across the whole presentation
+   - D. An effect that plays when you move from one slide to the next
+   - **Answer: B.** A placeholder is the dotted-line, pre-formatted box on a layout that holds a particular kind of content. The full-screen delivery mode is presenting; the colors-and-fonts set is the theme; the between-slide effect is a transition.
+
+2. **Which statement correctly distinguishes a transition from an animation?**
+   - A. A transition affects a single word while an animation affects the whole deck
+   - B. Transitions and animations are two names for exactly the same effect
+   - C. A transition is the effect between two slides and applies to the whole slide; an animation is an effect on a single element within a slide
+   - D. A transition can only be applied in presenter view, while an animation works only during export
+   - **Answer: C.** A transition plays when you move from one slide to the next and applies to the entire slide (one per slide); an animation applies to a single element within a slide, and a slide may have several. Neither is tied to presenter view or export.
+
+3. **Why do slide-design guidelines warn against putting long paragraphs of text on a slide?**
+   - A. Because an audience cannot read dense text and listen to the speaker at the same time, given the limits of working memory
+   - B. Because presentation software cannot display more than one line of text per slide
+   - C. Because paragraphs prevent a theme from being applied to the deck
+   - D. Because text on a slide cannot be exported to PDF
+   - **Answer: A.** New information passes through a limited-capacity working memory, and a text-heavy slide forces the audience to choose between reading and listening, which they cannot do simultaneously. The other options are false.
+
+4. **A student wants their speaker notes visible to themselves during a talk, but not shown on the projector to the audience. What should they use?**
+   - A. A slide transition on every slide
+   - B. A different theme for each slide
+   - C. An emphasis animation on the title placeholder
+   - D. Presenter view, which shows notes on their screen while the audience sees only the slides
+   - **Answer: D.** Presenter view keeps the speaker's notes, upcoming slide, and controls on the speaker's own screen while the audience screen shows only the slides. Transitions, extra themes, and animations do not separate a private notes view from the audience display.
+
+5. **A five-slide deck uses a different font and color scheme on every slide, and each slide is styled by hand. Which single change best fixes the inconsistency with the least effort?**
+   - A. Add a unique transition to each slide so the changes feel intentional
+   - B. Apply one theme to the presentation so colors, fonts, and layouts are set consistently across all slides
+   - C. Turn on presenter view so the audience stops noticing the differences
+   - D. Insert an entrance animation on the text of every slide
+   - **Answer: B.** A theme is a preset group of colors, fonts, background, and layouts applied across the whole presentation, so applying one makes every slide consistent at once. Transitions and animations add motion but do not unify styling, and presenter view changes only what the speaker sees.
+
+## Sources
+
+- Microsoft Support — "What is a slide layout?" (slides, layouts, placeholders, theme). REFERENCE_ONLY.
+- Microsoft Support — "The difference between animations and transitions" (transition vs. animation, four animation categories). REFERENCE_ONLY.
+- Microsoft Support — "Present on multiple monitors (and view speaker notes privately)" (presenter view). REFERENCE_ONLY.
+- Google Docs Editors Help — "Use a template or change the theme, background, or layout in Google Slides" (theme and layout definitions). REFERENCE_ONLY.
+- LibreOffice Impress Guide 7.0, Ch. 1, "Introducing Impress" (Impress as an example; content types and views). CC BY 4.0.
+- Barton & Tucker, *Exploring Public Speaking* (Dalton State College), Ch. 9, "Presentation Aids in Speaking" (design best practices; audience cannot read and listen at once; readable type and high contrast). CC BY-NC-SA 4.0, REFERENCE_ONLY.
+- Sweller, van Merrienboer & Paas (2019), "Cognitive Architecture and Instructional Design: 20 Years Later" (working-memory limits underpinning slide design). REFERENCE_ONLY.
+
+## Related Topics
+
+- computer-literacy:foundations:word-processing
+- computer-literacy:foundations:spreadsheets
+- computer-literacy:foundations:collaboration-platforms
+- computer-literacy:foundations:file-extensions
+
+## Editorial Metadata
+
+- **Editorial status:** READY_TO_PUBLISH
+- **Estimated minutes:** 9
+- **Researched at:** 2026-08-19
+- **Research status:** source-verified
+- **Rights status:** reference-only vendor docs and OER; LibreOffice guide is CC BY 4.0; no source prose adapted
+- **Transformation:** Facts synthesized from Microsoft, Google, and LibreOffice documentation and an open public-speaking textbook, with design guidance grounded in cognitive load theory. All prose written originally.

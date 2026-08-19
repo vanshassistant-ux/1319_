@@ -1,0 +1,152 @@
+{
+  "topicId": "computer-literacy:foundations:cloud-storage",
+  "subjectId": "computer-literacy",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Cloud storage keeps your files on a provider's remote servers (in data centers) reached over the internet, rather than only on your local device",
+      "This is an application of NIST's model of cloud computing: on-demand network access to a shared pool of configurable resources including storage; consumer cloud storage is typically delivered as software as a service",
+      "Syncing keeps a folder mirrored across a device, the provider's servers, and other signed-in devices, so a change (including a deletion) in one place is reflected in the others",
+      "Sharing files or links with others at chosen permission levels, the core distinction being view-only versus edit access",
+      "Benefits: access from anywhere with internet, capacity, easy sharing, an off-device copy",
+      "Considerations: needs internet, you trust the provider with your data (privacy/security), cost, account-dependence",
+      "Sync is not the same as a backup: because sync mirrors the current state, a deletion or ransomware encryption propagates; a backup is a separate retained copy kept for recovery",
+      "Cloud storage versus local storage"
+    ],
+    "supporting": [
+      "Deleted cloud files usually go to a provider recycle bin/trash, restorable for a limited window",
+      "NIST small-business guidance: store backups offsite/separate, do due diligence choosing a cloud provider, encrypt sensitive data before storing it in the cloud",
+      "Some services offer finer roles (commenter, owner) beyond view/edit"
+    ],
+    "outOfScope": [
+      "Files, paths, and the Trash in general (owned by Files and Folders; referenced)",
+      "Backup strategy in depth, e.g. 3-2-1 and offline/air-gapped copies (owned by Backups; sync-vs-backup clarified and handed off)",
+      "Real-time collaborative co-editing (owned by Collaboration Platforms)",
+      "Privacy in depth and privacy law (owned by Privacy)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Cloud storage keeps files on a provider's remote internet-connected servers, an application of NIST's cloud computing model: on-demand network access to a shared pool of configurable computing resources that includes storage.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-800-145-cloud-definition"],
+      "status": "supported"
+    },
+    {
+      "claim": "NIST's cloud model has five essential characteristics, including on-demand self-service, broad network access, and measured (metered) service; consumer cloud storage is typically delivered as software as a service, one of NIST's three service models.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-800-145-cloud-definition"],
+      "status": "supported"
+    },
+    {
+      "claim": "In a synced cloud folder, changes—including deletions—made on one device are mirrored to the provider's servers and the user's other signed-in devices; deleted items are typically moved to an online recycle bin from which they can be restored for a limited period.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ms-support-delete-files-onedrive"],
+      "status": "supported"
+    },
+    {
+      "claim": "When sharing a file, you grant a permission level; the core distinction is view-only access (open and usually download but not change) versus edit access (modify), with some services adding roles such as commenter and owner.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["google-drive-help-share-files"],
+      "status": "supported"
+    },
+    {
+      "claim": "A backup is a copy of files made to facilitate recovery; because syncing mirrors the current state, it is not a backup—an accidental deletion, corruption, or ransomware encryption propagates through the sync to every copy.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-glossary-backup", "nist-ir-7621r1-small-business-infosec"],
+      "status": "supported"
+    },
+    {
+      "claim": "NIST small-business guidance recommends restoring from a backup as a recovery activity, storing backups in a separate/offsite protected location, doing due diligence when choosing a cloud provider, and encrypting data before storing it in the cloud.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-ir-7621r1-small-business-infosec"],
+      "status": "supported"
+    },
+    {
+      "claim": "Cloud storage's benefits (access anywhere with internet, capacity, easy sharing, an off-device copy) come with considerations: it needs an internet connection, requires trusting the provider with your data (privacy/security), usually costs money past a free tier, and depends on retaining account access.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["nist-sp-800-145-cloud-definition", "nist-ir-7621r1-small-business-infosec"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft was generic placeholder text ('Cloud Storage is a concept students use to organize information...') with no substantive claims about cloud storage, syncing, sharing, or backups. All of it was discarded."
+  ],
+  "correctionsNeeded": [
+    "Replaced boilerplate with a sourced definition of cloud storage tied to NIST's cloud computing model and its essential characteristics.",
+    "Added the syncing mechanic (bidirectional mirroring, deletions propagate, recycle-bin recovery window), which the draft never mentioned.",
+    "Added sharing and permission levels (view-only vs. edit), benefits vs. considerations, and the honest sync-is-not-a-backup clarification with hand-off to the Backups topic.",
+    "Handed off files/paths/Trash to Files and Folders, backup strategy to Backups, co-editing to Collaboration Platforms, and privacy depth to Privacy, per anti-duplication guidance."
+  ],
+  "rightsIssues": [
+    "NIST publications (SP 800-145, CSRC glossary sourced to SP 800-34 Rev. 1, NISTIR 7621 Rev. 1) are U.S. government works in the public domain. Google Drive Help and Microsoft Support pages are copyrighted and used REFERENCE_ONLY as named examples of common product behavior; no source wording was reproduced and all lesson prose is original synthesis. Software categories/examples named per subject cautions, not as requirements."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-sp-800-145-cloud-definition",
+      "title": "The NIST Definition of Cloud Computing (SP 800-145)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Authors P. Mell and T. Grance, published September 2011 (this copy dated 2012). Defines cloud computing as a model for on-demand network access to a shared pool of configurable computing resources (networks, servers, storage, applications, services) provisioned with minimal management effort. Lists the five essential characteristics (on-demand self-service, broad network access, resource pooling, rapid elasticity, measured service), three service models (SaaS, PaaS, IaaS), and four deployment models. Used for the definition of cloud storage, the SaaS delivery point, and the metered-capacity/network-dependence characteristics. Read via WebFetch of the NIST PDF."
+    },
+    {
+      "id": "nist-glossary-backup",
+      "title": "Backup - Glossary",
+      "provider": "NIST Computer Security Resource Center (CSRC)",
+      "url": "https://csrc.nist.gov/glossary/term/backup",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Defines backup as 'A copy of files and programs made to facilitate recovery if necessary,' sourced to NIST SP 800-34 Rev. 1 (also CNSSI 4009-2015, NISTIR 7621 Rev. 1). Used to anchor the sync-is-not-a-backup distinction: a backup is a separate copy made for recovery, whereas sync mirrors the current state. Read via WebFetch of the CSRC glossary page."
+    },
+    {
+      "id": "nist-ir-7621r1-small-business-infosec",
+      "title": "Small Business Information Security: The Fundamentals (NISTIR 7621 Rev. 1)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ir/2016/NIST.IR.7621r1.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Author C. Paulsen and R. Toth, November 2016. The Recover section states backups 'let you restore your data in case a computer breaks, an employee makes a mistake, or a malicious program infects your system'; advises storing backups away from your location in a protected place (offsite); notes you can store backups on removable media or online using a Cloud Service Provider, to 'do your due diligence when selecting a Cloud Service Provider,' and that it is 'recommended that you encrypt all data prior to storing it in the Cloud.' Frames making backups as Protect and restoring as Recover. Used for the sync-is-not-a-backup point and the trust/privacy/encryption considerations. PDF downloaded and text extracted locally (pypdf) after the fetcher could not parse it inline."
+    },
+    {
+      "id": "google-drive-help-share-files",
+      "title": "Share files from Google Drive",
+      "provider": "Google Drive Help",
+      "url": "https://support.google.com/drive/answer/2494822",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Describes share permission roles: Viewer (view and download, cannot change or share), Commenter (view, download, comment, cannot edit or share), Editor (view, comment, edit, download, share; cannot change the owner), and Owner (full permissions). Used, as a named example, to support the view-only-versus-edit permission distinction and the finer commenter/owner roles. Copyrighted; REFERENCE_ONLY; original wording only. Read via WebFetch."
+    },
+    {
+      "id": "ms-support-delete-files-onedrive",
+      "title": "Delete files or folders in OneDrive",
+      "provider": "Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/office/delete-files-or-folders-in-onedrive-21fe345a-e488-4fa7-932b-f053c1bebe8a",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "States that deleted files and folders go to the cloud service's recycle bin, 'from which you can restore files if you need to.' Used, as a named example, to support that a deletion in a synced cloud folder is reflected in the cloud/other devices and that the deleted file sits in an online recycle bin restorable for a limited window. The two-way (bidirectional) sync behavior—deletions propagating to all synced devices—is the definitional behavior of file sync and is stated in Microsoft's own delete-confirmation UI and community guidance; the lesson frames it as the general sync mechanic rather than attributing exact wording. Copyrighted; REFERENCE_ONLY; original wording only. Read via WebFetch."
+    }
+  ]
+}

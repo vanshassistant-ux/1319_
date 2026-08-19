@@ -1,0 +1,175 @@
+{
+  "topicId": "computer-literacy:foundations:browsers",
+  "subjectId": "computer-literacy",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "A browser is the application that requests web pages and renders them for the user",
+      "A rendering/layout engine turns HTML, CSS, and JavaScript into the visible page",
+      "Everyday features: tabs, bookmarks/favorites, history, autofill, downloads, back/forward navigation",
+      "Extensions/add-ons extend the browser and, because they can read and change page data, can pose security and privacy risks",
+      "Security and privacy features: the HTTPS padlock (what it does and does not mean), private/incognito browsing and its real limits, pop-up/tracker blocking, and keeping the browser updated",
+      "Major browsers named as examples (Chrome, Safari, Edge, Firefox) with dated market share"
+    ],
+    "supporting": [
+      "A browser is a type of user agent",
+      "Automatic updates as the recommended way to stay patched",
+      "Certificates and server-identity verification behind HTTPS"
+    ],
+    "outOfScope": [
+      "How HTTP, DNS, and URLs work end to end (owned by 'How the Web Works')",
+      "How search engines rank and return results (owned by 'Search Engines')",
+      "Privacy law, tracking economics, and data protection in depth (owned by 'Privacy')",
+      "Instructions for building malware, phishing kits, or malicious extensions"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A web browser is a program that retrieves and displays pages from the web and lets users follow hyperlinks to more pages; it is the most familiar kind of user agent.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mdn-glossary-browser"],
+      "status": "supported"
+    },
+    {
+      "claim": "A browser uses a rendering (layout) engine to turn the HTML, CSS, and JavaScript it receives into the page the user sees.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mdn-glossary-browser"],
+      "status": "supported"
+    },
+    {
+      "claim": "Browser extensions (WebExtensions) are add-ons built from HTML, CSS, and JavaScript that can modify page content and appearance and access browser features such as tabs, bookmarks, cookies, and history through a manifest permission system, giving them elevated privileges beyond an ordinary web page.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mdn-webextensions-what-are"],
+      "status": "supported"
+    },
+    {
+      "claim": "Because extensions can be granted permission to read and change data on the pages a user visits, a malicious or compromised extension is a real security and privacy risk.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mdn-webextensions-what-are"],
+      "status": "supported"
+    },
+    {
+      "claim": "HTTPS/TLS provides confidentiality, authenticity (server identity via a certificate), and integrity of data in transit, protecting against man-in-the-middle interception; the padlock indicates an encrypted, certificate-verified connection but does not guarantee the site itself is honest or safe.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mdn-tls-security-guide"],
+      "status": "supported"
+    },
+    {
+      "claim": "Private/incognito browsing deletes local traces (history, cookies, and site data from the session) after the window closes, but it does not make the user anonymous, does not hide their IP address, and does not stop their ISP, employer, school, or the websites they visit from seeing their activity; nor does it protect against malware.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["firefox-incognito-browser"],
+      "status": "supported"
+    },
+    {
+      "claim": "Keeping software up to date—especially web browsers—fixes security risks, and turning on automatic updates is a recommended way to stay patched.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cisa-secure-our-world-update-software"],
+      "status": "supported"
+    },
+    {
+      "claim": "As of July 2026 (worldwide, StatCounter), Chrome held roughly 68% of the browser market, Safari about 16%, Edge about 5%, and Firefox about 3%.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["statcounter-browser-market-share"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft described 'Browsers' only in abstract, generic terms ('a concept students use to organize information') with no reference to web browsers as software. All of it was discarded as boilerplate."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic placeholder definition with the actual concept: a web browser is software that requests and renders web pages.",
+    "Added concrete, verified substance: rendering engine, everyday features, extensions and their risks, HTTPS padlock meaning, private-browsing limits, updates, and dated market share."
+  ],
+  "rightsIssues": [
+    "MDN pages are CC BY-SA licensed; prose was synthesized originally rather than copied, so no share-alike obligation is triggered by reused wording.",
+    "StatCounter figures are used as dated, attributed data points (not reproduced datasets).",
+    "CISA content is U.S. government work (public domain); the specific page is marked 'Archived Content' but reflects current Secure Our World guidance and is cited as such."
+  ],
+  "sourceRecords": [
+    {
+      "id": "mdn-glossary-browser",
+      "title": "Browser (MDN Web Docs Glossary)",
+      "provider": "MDN Web Docs (Mozilla)",
+      "url": "https://developer.mozilla.org/en-US/docs/Glossary/Browser",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC-BY-SA-2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Defines a browser as a program that retrieves and displays web pages and follows hyperlinks, the most familiar user agent, using a rendering engine. Lists Safari, Chrome, Edge, Firefox, Opera as common browsers. Facts synthesized into original prose; no wording copied."
+    },
+    {
+      "id": "mdn-webextensions-what-are",
+      "title": "What are extensions? (MDN Web Docs)",
+      "provider": "MDN Web Docs (Mozilla)",
+      "url": "https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/What_are_WebExtensions",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC-BY-SA-2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Describes extensions as add-ons built from HTML/CSS/JS that can modify page content and appearance, block ads, and access browser features (tabs, bookmarks, cookies, history) via a manifest permission system with elevated privileges beyond ordinary web pages. Supports both the capability and the risk framing."
+    },
+    {
+      "id": "mdn-tls-security-guide",
+      "title": "Transport Layer Security (TLS) — Practical security implementation guides (MDN)",
+      "provider": "MDN Web Docs (Mozilla)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/TLS",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC-BY-SA-2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "States TLS provides confidentiality, authenticity (server identity via certificate), and integrity, defeating man-in-the-middle interception. Supports the point that the padlock means an encrypted, certificate-verified connection, not that the site's content or intentions are trustworthy."
+    },
+    {
+      "id": "statcounter-browser-market-share",
+      "title": "Browser Market Share Worldwide (StatCounter GlobalStats)",
+      "provider": "StatCounter GlobalStats",
+      "url": "https://gs.statcounter.com/browser-market-share",
+      "sourceType": "reference",
+      "usage": "LINK_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Worldwide browser share, July 2026 snapshot: Chrome 68.22%, Safari 16.47%, Edge 5.37%, Firefox 3.34%, Samsung Internet 2.06%, Opera 1.88%. Used as a dated, attributed data point; figures rounded in the lesson and explicitly dated."
+    },
+    {
+      "id": "firefox-incognito-browser",
+      "title": "Incognito browser: What it really means (Firefox)",
+      "provider": "Mozilla / Firefox",
+      "url": "https://www.firefox.com/en-US/more/incognito-browser/",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Mozilla's own explanation of private/incognito browsing: it deletes local session data (history, cookies) but does not hide activity from the ISP, employer, school, or visited sites, does not hide the IP address or make the user anonymous, and does not protect against malware. Directly supports the incognito-limits framing."
+    },
+    {
+      "id": "cisa-secure-our-world-update-software",
+      "title": "Update Software (CISA Secure Our World)",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/secure-our-world/update-software",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "CISA guidance: many software updates exist to fix security risks; install all updates, especially for web browsers and antivirus software, as soon as possible, and turn on automatic updates. U.S. government work, public domain. Page is labeled 'Archived Content' but reflects current Secure Our World advice."
+    }
+  ]
+}

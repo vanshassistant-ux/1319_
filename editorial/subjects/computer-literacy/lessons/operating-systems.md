@@ -95,38 +95,38 @@ The operating system is the software layer between applications and hardware: it
 ## Practice Question Bank
 
 1. **Which statement best describes what an operating system is?**
-   - A) A single application, such as a web browser, that you install to reach the internet.
-   - B) The system software that manages a computer's hardware and provides shared services for programs.
-   - C) The physical parts of a computer, including the processor, memory, and storage.
-   - D) A document format used to store text and images together.
+   - A. A single application, such as a web browser, that you install to reach the internet.
+   - B. The system software that manages a computer's hardware and provides shared services for programs.
+   - C. The physical parts of a computer, including the processor, memory, and storage.
+   - D. A document format used to store text and images together.
    - **Answer: B.** By definition the OS is system software that manages hardware resources and provides common services for programs. A browser is one application that runs on the OS; the processor and memory are hardware the OS manages; a document format is unrelated.
 
 2. **Which statement about the kernel is correct?**
-   - A) It is the wallpaper and desktop icons the user sees after logging in.
-   - B) It is loaded only when a program needs it and unloads immediately afterward.
-   - C) It is an optional add-on that some operating systems include and others omit.
-   - D) It is the core of the OS, loaded at startup and resident in memory, controlling the hardware in a protected mode.
+   - A. It is the wallpaper and desktop icons the user sees after logging in.
+   - B. It is loaded only when a program needs it and unloads immediately afterward.
+   - C. It is an optional add-on that some operating systems include and others omit.
+   - D. It is the core of the OS, loaded at startup and resident in memory, controlling the hardware in a protected mode.
    - **Answer: D.** The kernel is the core of the operating system: among the first programs loaded at startup, it stays resident in memory and controls hardware via device drivers while running in a protected, privileged mode. It is not the visible desktop, is not loaded on demand and discarded, and is not optional.
 
 3. **What is the difference between a graphical user interface (GUI) and a command-line interface (CLI)?**
-   - A) A GUI uses visual windows and pointers, while a CLI is controlled by typing text commands.
-   - B) A GUI is a kind of hardware, while a CLI is a kind of software.
-   - C) A GUI can only run applications, while a CLI can only manage files.
-   - D) A GUI works without an operating system, while a CLI requires one.
+   - A. A GUI uses visual windows and pointers, while a CLI is controlled by typing text commands.
+   - B. A GUI is a kind of hardware, while a CLI is a kind of software.
+   - C. A GUI can only run applications, while a CLI can only manage files.
+   - D. A GUI works without an operating system, while a CLI requires one.
    - **Answer: A.** A GUI is visual (windows, icons, pointers) and a CLI is text-based (typed commands). Both are software front ends to the same operating system services; neither is hardware, neither is limited to one task, and both rely on the OS underneath.
 
 4. **Several programs are open at once and all need processor time and memory. Which operating-system responsibilities are directly handling this situation?**
-   - A) Choosing a font and printing a document.
-   - B) Compressing photos and editing video.
-   - C) Processor scheduling and memory management.
-   - D) Setting the wallpaper and arranging desktop icons.
+   - A. Choosing a font and printing a document.
+   - B. Compressing photos and editing video.
+   - C. Processor scheduling and memory management.
+   - D. Setting the wallpaper and arranging desktop icons.
    - **Answer: C.** Deciding which program runs on the CPU and for how long is processor scheduling; handing each program memory and keeping those regions separate is memory management. The other options are application tasks or cosmetic settings, not the OS functions that share the CPU and memory.
 
 5. **Why does an operating system run the kernel in a protected mode, separate from the memory where applications run?**
-   - A) To make the computer start up more slowly and conserve electricity.
-   - B) So that applications can rewrite the kernel whenever they need new features.
-   - C) Because protected memory is required only for playing games and video.
-   - D) So a faulty or malicious program cannot directly corrupt the kernel or other programs' memory, and access can be checked.
+   - A. To make the computer start up more slowly and conserve electricity.
+   - B. So that applications can rewrite the kernel whenever they need new features.
+   - C. Because protected memory is required only for playing games and video.
+   - D. So a faulty or malicious program cannot directly corrupt the kernel or other programs' memory, and access can be checked.
    - **Answer: D.** Separating kernel space from user space is a protection boundary: applications cannot directly touch the kernel or each other's memory and must go through the OS, which can check whether a request is allowed. This limits the damage from a crashing or malicious program. The other options misstate the purpose.
 
 ## Sources

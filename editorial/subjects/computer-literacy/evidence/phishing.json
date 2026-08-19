@@ -1,0 +1,192 @@
+{
+  "topicId": "computer-literacy:foundations:phishing",
+  "subjectId": "computer-literacy",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "What phishing is: a deceptive message impersonating a trusted party to obtain credentials or money or to deliver malware",
+      "Phishing as a form of social engineering (manipulating people, not defeating technical controls)",
+      "How to recognize it: red flags per CISA and FTC (urgency/threats, requests for credentials or payment, mismatched or shortened links, lookalike/spoofed sender addresses, generic greetings, unexpected attachments or fake invoices, too-good-to-be-true offers)",
+      "The caution that AI now produces polished, error-free phishing, so good grammar is not proof of legitimacy",
+      "Variants by targeting: spear phishing (targeted) and whaling (executives)",
+      "Variants by channel: smishing (SMS/text) and vishing (voice)",
+      "What to do: don't click/reply, verify through an independently known channel, report (company, IT, FTC), delete",
+      "MFA limits damage from a stolen password"
+    ],
+    "supporting": [
+      "Caller ID and sender addresses are easily spoofed, especially over VoIP",
+      "Where to report in the U.S.: ReportFraud.ftc.gov; forward texts to SPAM (7726); forward emails to APWG (reportphishing@apwg.org)",
+      "IdentityTheft.gov for recovery if credentials or financial data were surrendered",
+      "Hovering over a link reveals whether its true destination matches the visible text"
+    ],
+    "outOfScope": [
+      "Malware internals and types (owned by computer-literacy:foundations:malware) — noted only as a phishing payload",
+      "Email mechanics/anatomy (owned by computer-literacy:foundations:email-basics) — referenced only",
+      "Password construction and MFA setup depth (owned by password-security / MFA topics) — referenced only",
+      "Any attacker instructions, phishing-kit construction, or offensive techniques — deliberately excluded"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Phishing occurs when criminals try to get people to open harmful links, emails, or attachments, or to reveal personal or financial information, via a message designed to look like it comes from a trusted person or organization; it arrives as email, text, social-media direct message, or phone call.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cisa-recognize-and-report-phishing"],
+      "status": "supported"
+    },
+    {
+      "claim": "Phishing is a form of social engineering, in which an attacker uses human interaction to obtain or compromise information rather than defeating technical controls.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cisa-avoiding-social-engineering-phishing"],
+      "status": "supported"
+    },
+    {
+      "claim": "Common red flags include urgent or emotionally appealing language claiming dire consequences for not responding immediately, requests to send personal or financial information, untrusted shortened URLs, and incorrect/lookalike email addresses or links (e.g., amazan.com).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cisa-recognize-and-report-phishing", "cisa-avoiding-social-engineering-phishing"],
+      "status": "supported"
+    },
+    {
+      "claim": "Poor grammar and spelling used to be a common sign, but in the era of AI some phishing emails now have perfect grammar and spelling, so recipients should look for the other signs.",
+      "claimType": "CURRENT",
+      "sourceIds": ["cisa-recognize-and-report-phishing"],
+      "status": "supported"
+    },
+    {
+      "claim": "Additional phishing indicators include generic greetings such as 'Dear Valued Customer', spoofed hyperlinks whose true destination does not match the visible text, unexpected attachments used to deliver malware, unrecognized/fake invoices, and offers of free items or refunds that are not real.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cisa-avoiding-social-engineering-phishing", "ftc-recognize-avoid-phishing-scams"],
+      "status": "supported"
+    },
+    {
+      "claim": "Spear phishing is a highly targeted phishing attack aimed at a specific individual or organization.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-glossary-spear-phishing"],
+      "status": "supported"
+    },
+    {
+      "claim": "Whaling is a specific kind of phishing that targets high-ranking members of organizations (e.g., executives).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-glossary-whaling"],
+      "status": "supported"
+    },
+    {
+      "claim": "Smishing is phishing that exploits SMS or text messages; vishing is phishing that leverages voice communication, and VoIP makes caller ID easy to spoof.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cisa-avoiding-social-engineering-phishing"],
+      "status": "supported"
+    },
+    {
+      "claim": "If a message could be real, do not click any link or call any number in it; instead find another way to contact the company or person directly (go to the verified website yourself, or use a number you already have) to confirm.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cisa-recognize-and-report-phishing", "ftc-recognize-avoid-phishing-scams"],
+      "status": "supported"
+    },
+    {
+      "claim": "The recommended response is to recognize, resist (don't click links or attachments, don't reply, including 'unsubscribe' links), report the phishing (to the company, via a 'report spam' option, or to the FTC at ReportFraud.ftc.gov; forward phishing texts to SPAM/7726 and emails to APWG at reportphishing@apwg.org), and delete the message.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cisa-recognize-and-report-phishing", "ftc-recognize-avoid-phishing-scams"],
+      "status": "supported"
+    },
+    {
+      "claim": "Multifactor authentication requires more than a password to access an account and helps prevent others from logging in even if they obtain the password.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cisa-recognize-and-report-phishing", "ftc-recognize-avoid-phishing-scams"],
+      "status": "supported"
+    },
+    {
+      "claim": "If you think a scammer has your Social Security, credit card, or bank account information, go to IdentityTheft.gov for the specific steps to take.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ftc-recognize-avoid-phishing-scams"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether spelling/grammar errors are a reliable phishing indicator.",
+      "positions": [
+        "Traditional guidance lists poor grammar and misspellings as a red flag.",
+        "CISA (current Secure Our World guidance) notes AI now enables perfect grammar, so its absence does not indicate legitimacy."
+      ],
+      "resolution": "Presented both: grammar errors remain a possible sign, but the lesson stresses that clean grammar is no longer reassurance and readers should rely on the other, more durable signs (requests, links, sender, urgency)."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic boilerplate ('Phishing is a foundational concept... a simple way to apply it') with no substantive, sourced claims about phishing at all."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire boilerplate draft with substantive, sourced content: an actual definition, red flags, named variants, response/reporting steps, and the MFA mitigation.",
+    "Added the current-guidance caveat that AI-generated phishing can have perfect grammar.",
+    "Populated real vocabulary definitions (draft's vocabulary was circular, e.g., defining phishing as 'a foundational Computer Literacy concept covered in this lesson')."
+  ],
+  "rightsIssues": [
+    "All five sources are U.S. federal government works (CISA, FTC, NIST), which are in the public domain. Content was nonetheless synthesized into original prose; no source wording was reproduced beyond short factual phrases in evidence notes.",
+    "Content is strictly recognition and defense; no attack instructions, phishing-kit techniques, or offensive code are included, per subject cautions."
+  ],
+  "sourceRecords": [
+    {
+      "id": "cisa-recognize-and-report-phishing",
+      "title": "Recognize and Report Phishing",
+      "provider": "CISA (Cybersecurity and Infrastructure Security Agency)",
+      "url": "https://www.cisa.gov/secure-our-world/recognize-and-report-phishing",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "U.S. government guidance (public domain). Supports the definition (harmful links/attachments or requests for personal/financial info via messages impersonating a trusted party, arriving by email/text/DM/phone), the recognize-resist-delete response, the red flags (urgency, requests for information, shortened URLs, lookalike addresses like amazan.com), the current note that AI enables perfect grammar, the verify-through-a-known-channel advice, and the strong-passwords/MFA safety net. Reused existing registry id; re-fetched 2026-08-19 via curl with a browser user-agent (default fetcher returns 403)."
+    },
+    {
+      "id": "ftc-recognize-avoid-phishing-scams",
+      "title": "How To Recognize and Avoid Phishing Scams",
+      "provider": "FTC Consumer Advice (Federal Trade Commission)",
+      "url": "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "U.S. government consumer guidance (public domain). Supports the phishing tactics list (fake suspicious-activity/account-problem claims, requests to confirm personal/financial info, fake invoices, malicious payment links, fake refunds and free-stuff offers), the generic-greeting sign, the four protections (security software with auto-updates, phone auto-updates, MFA, backups), what to do (verify with a known number/website, don't click), how to report (ReportFraud.ftc.gov; forward texts to SPAM/7726; emails to reportphishing@apwg.org), and IdentityTheft.gov for recovery. Read 2026-08-19 via curl with a browser user-agent following the redirect from the older /how-recognize-and-avoid-phishing-scams URL."
+    },
+    {
+      "id": "cisa-avoiding-social-engineering-phishing",
+      "title": "Avoiding Social Engineering and Phishing Attacks (ST04-014)",
+      "provider": "CISA (Cybersecurity and Infrastructure Security Agency)",
+      "url": "https://www.cisa.gov/news-events/news/avoiding-social-engineering-and-phishing-attacks",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "U.S. government guidance (public domain). Supports phishing as a form of social engineering, the vishing definition (voice communication; VoIP allows caller ID to be spoofed), the smishing definition (exploits SMS/text messages), and the common phishing indicators (suspicious sender address imitating a legitimate business, generic greetings and signature, spoofed hyperlinks/websites and lookalike or shortened URLs, spelling/layout problems, suspicious attachments as a malware delivery mechanism). Read 2026-08-19 via curl with a browser user-agent."
+    },
+    {
+      "id": "nist-glossary-whaling",
+      "title": "whaling — Computer Security Resource Center Glossary",
+      "provider": "NIST (National Institute of Standards and Technology)",
+      "url": "https://csrc.nist.gov/glossary/term/whaling",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "U.S. government glossary (public domain). Definition read 2026-08-19 via curl with a browser user-agent: 'A specific kind of phishing that targets high-ranking members of organizations.' Used for the whaling variant."
+    },
+    {
+      "id": "nist-glossary-spear-phishing",
+      "title": "spear phishing — Computer Security Resource Center Glossary",
+      "provider": "NIST (National Institute of Standards and Technology)",
+      "url": "https://csrc.nist.gov/glossary/term/spear_phishing",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "U.S. government glossary (public domain). Definition read 2026-08-19 via curl with a browser user-agent: 'A colloquial term that can be used to describe any highly targeted phishing attack' (glossary source: DoJ Report on Phishing). Used for the spear-phishing variant."
+    }
+  ]
+}

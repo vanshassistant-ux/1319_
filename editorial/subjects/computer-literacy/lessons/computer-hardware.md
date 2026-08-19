@@ -6,7 +6,7 @@ Hardware is the physical part of a computer: the parts you could hold in your ha
 
 ## Why This Matters
 
-Knowing the parts turns a computer from a mysterious box into a system you can reason about. When a machine is slow, will not start, or needs an upgrade, the fix usually points at one component, and naming it correctly is the first step to buying, repairing, or troubleshooting well. It also makes buying decisions clearer: specifications on a laptop, phone, or server are just claims about these same parts. Later lessons on operating systems, software, and storage all assume you can picture the hardware they run on, so this vocabulary pays off across the whole subject.
+Knowing the parts lets you reason about a computer instead of treating it as a sealed black box. When a machine is slow, will not start, or needs an upgrade, the fix usually points at one component, and naming it correctly is the first step to buying, repairing, or troubleshooting well. It also makes buying decisions clearer: specifications on a laptop, phone, or server are just claims about these same parts. Later lessons on operating systems, software, and storage all assume you can picture the hardware they run on, so this vocabulary pays off across the whole subject.
 
 ## Learning Objectives
 

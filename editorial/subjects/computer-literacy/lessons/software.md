@@ -85,7 +85,7 @@ Software is the changeable set of coded instructions that direct physical hardwa
 
 ## Practice Question Bank
 
-1. **Which statement best describes what software is?**
+1. **Which of the following best defines software?**
    - A. The physical electronic components and circuit boards inside a computer
    - B. The coded instructions and associated data that tell a computer's hardware what to do
    - C. Only the programs a user opens directly, such as a browser or a game

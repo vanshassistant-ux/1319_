@@ -98,7 +98,7 @@ Install software only from trusted sources like official stores and vendor sites
    *CISA notes attackers target unpatched vulnerabilities for months or years after a fix is available, and calls keeping software updated the most effective protection. Feature-adding and performance are other reasons updates exist, but not why patches are urgent; uninstalling has nothing to do with patches.*
 
 2. **Which distribution method involves no installation on your device at all?**
-   - A. Running a downloaded .exe or .pkg installer
+   - A. Running a downloaded `.exe` or `.pkg` installer
    - B. Installing from a package manager such as apt
    - C. Using a web app in a browser *(correct)*
    - D. Getting an app from an app store

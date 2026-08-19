@@ -1,0 +1,141 @@
+{
+  "topicId": "computer-literacy:foundations:spreadsheets",
+  "subjectId": "computer-literacy",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "The grid: cells addressed by column letter + row number (e.g., B3)",
+      "Entering data types: text, numbers, dates",
+      "Formulas beginning with = and built-in functions (SUM, AVERAGE, COUNT, IF at a naming level)",
+      "Cell references and the relative vs absolute distinction; $ locks a reference when copying",
+      "Basic charts, sorting, and filtering"
+    ],
+    "supporting": [
+      "Ranges written with a colon (B2:B6)",
+      "Mixed references ($B1, B$1) and the F4 toggle",
+      "Automatic recalculation when referenced cells change",
+      "Formatting a cell (currency/percent) changes display, not the stored value"
+    ],
+    "outOfScope": [
+      "Word processing (its own topic)",
+      "Presentation software (its own topic)",
+      "Co-editing / real-time collaboration (owned by Collaboration Platforms)",
+      "File and folder management (owned by Files and Folders)",
+      "Advanced features: PivotTables, macros/VBA, Power Query, Solver, array formulas"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A spreadsheet is a grid of cells where columns are lettered and rows numbered, and a cell's address (cell reference) combines its column letter and row number, e.g., B3.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["oer-most-excellent-spreadsheets-textbook-2025", "oer-beginning-excel-2019"],
+      "status": "supported"
+    },
+    {
+      "claim": "A cell can hold text, a number, or a date, and the program treats these types differently; numeric functions ignore values stored as text.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["oer-beginning-excel-2019", "libreoffice-calc-features"],
+      "status": "supported"
+    },
+    {
+      "claim": "A formula begins with an equals sign, and its result is displayed in the cell while the formula stays in the formula bar; functions such as SUM, AVERAGE, COUNT, and IF perform common calculations, and =SUM(B2:B6) adds a range.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["libreoffice-calc-features", "oer-beginning-excel-2019", "libreoffice-calc-absolute-relative-references"],
+      "status": "supported"
+    },
+    {
+      "claim": "By default cell references are relative and adjust automatically when a formula is copied; copying =SUM(A1:A9) into the adjacent right column produces =SUM(B1:B9).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["libreoffice-calc-absolute-relative-references"],
+      "status": "supported"
+    },
+    {
+      "claim": "An absolute reference is written with dollar signs before the column letter and row number (e.g., $A$1 or $A$1:$B$2) and stays fixed when a formula is copied; references may also be mixed ($A1, A$1), and the F4 key cycles a reference through these forms.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["libreoffice-calc-absolute-relative-references"],
+      "status": "supported"
+    },
+    {
+      "claim": "Spreadsheets can present data as dynamic charts that update automatically when the data changes, and can sort, filter/hide ranges, and compute subtotals.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["libreoffice-calc-features", "oer-most-excellent-spreadsheets-textbook-2025"],
+      "status": "supported"
+    },
+    {
+      "claim": "In the worked example, =SUM(B2:B6) over 1200, 850, 430, 610, 300 equals 3390 and =AVERAGE equals 678; copying =B2*$E$1 (with E1=0.08) down yields 96, 68, 34.40, 48.80, and 24 because $E$1 stays locked while B2 advances.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["libreoffice-calc-absolute-relative-references"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic placeholder text ('Spreadsheets is a foundational concept...', a toolbox-drawer analogy, and vocabulary defined circularly as 'A foundational Computer Literacy concept covered in this lesson'). It made no substantive, verifiable claim about spreadsheets."
+  ],
+  "correctionsNeeded": [
+    "Replaced placeholder boilerplate with concrete, sourced content: cell addressing, data types, formulas/functions, relative vs absolute references, charts/sorting/filtering.",
+    "Replaced circular vocabulary definitions with non-circular ones.",
+    "Added a discipline-appropriate worked example with arithmetic verified in Bash.",
+    "Rebuilt the question bank so keys distribute across A/B/C/D (positions 1,3,0,2,1) with at least one recall and one application/analysis item."
+  ],
+  "rightsIssues": [
+    "LibreOffice Help pages and the LibreOffice Calc feature overview are reference-only technical documentation; no wording reproduced beyond short attributed phrases used for verification.",
+    "Both open textbooks are CC BY-NC-SA (NonCommercial-ShareAlike). To avoid any ShareAlike/NonCommercial complication, no text was adapted; all facts are restated in original prose. Product names (Microsoft Excel, Google Sheets, LibreOffice Calc) are used only as examples of the category."
+  ],
+  "sourceRecords": [
+    {
+      "id": "libreoffice-calc-absolute-relative-references",
+      "title": "Addresses and References, Absolute and Relative (LibreOffice Calc Help)",
+      "provider": "The Document Foundation — LibreOffice",
+      "url": "https://help.libreoffice.org/latest/en-US/text/scalc/guide/relativ_absolut_ref.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Official LibreOffice Calc documentation, read via WebFetch on 2026-08-19. Supports: by default references are relative and adjust automatically when copied; copying =SUM(A1:A9) into the adjacent right column produces =SUM(B1:B9); absolute references use dollar signs formatted as $A$1:$B$2 and stay fixed when copied; the F4 key cycles a reference through $A$1, A$1, $A1 and back to relative. Used to verify reference behavior and the copy example underpinning the worked example. Reference-only; no wording reproduced in the lesson."
+    },
+    {
+      "id": "libreoffice-calc-features",
+      "title": "LibreOffice Calc Features (Help overview)",
+      "provider": "The Document Foundation — LibreOffice",
+      "url": "https://help.libreoffice.org/latest/en-US/text/scalc/main0503.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Official LibreOffice Calc feature overview, read via WebFetch on 2026-08-19. Supports: Calc provides functions (including statistical and banking functions) used to build formulas for calculations; a Function Wizard assists formula creation; dynamic charts update automatically when data changes; users can reorganize the sheet to show or hide data ranges and quickly calculate subtotals and totals. Used for the functions, charts, and sorting/filtering claims. Reference-only; no wording reproduced."
+    },
+    {
+      "id": "oer-most-excellent-spreadsheets-textbook-2025",
+      "title": "The Most EXCELlent OER Spreadsheets Textbook Published (in 2025)",
+      "provider": "Marcus Lacher; Minnesota State Colleges and Universities (Open Textbook Library)",
+      "url": "https://open.umn.edu/opentextbooks/textbooks/the-most-excellent-oer-spreadsheets-textbook-published-in-2025",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Open textbook (2025), license CC BY-NC-SA per the Open Textbook Library catalogue record read via WebFetch on 2026-08-19. Catalogue confirms coverage of data entry/editing/formatting, formulas and functions, statistical/logical (IF) functions, data visualization/charts, and data management including sorting, filtering, and subtotals. Used to corroborate the spreadsheet-fundamentals scope and the cell/formula/function vocabulary. Because the license carries NonCommercial and ShareAlike terms, no wording was adapted; facts restated in original prose."
+    },
+    {
+      "id": "oer-beginning-excel-2019",
+      "title": "Beginning Excel 2019",
+      "provider": "Noreen Brown, Barbara Lave, Julie Romey; Open Oregon Educational Resources (Open Textbook Library)",
+      "url": "https://open.umn.edu/opentextbooks/textbooks/70",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Open textbook (2017, updated 2019), license CC BY-NC-SA per the Open Textbook Library record read via WebFetch on 2026-08-19. Confirms an introductory scope: mathematical computations, formulas, functions, logical and lookup functions, presenting data with charts, tables, and multiple-sheet files, for users without prior spreadsheet experience. Used to corroborate cell addressing, formulas/functions, and charts. NonCommercial-ShareAlike; no wording adapted, facts restated in original prose."
+    }
+  ]
+}

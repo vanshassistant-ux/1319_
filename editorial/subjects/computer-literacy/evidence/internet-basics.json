@@ -1,0 +1,201 @@
+{
+  "topicId": "computer-literacy:foundations:internet-basics",
+  "subjectId": "computer-literacy",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "The internet as a global 'network of networks' connecting devices through shared protocols",
+      "The distinction between the internet (infrastructure) and the web (one service running on it)",
+      "ISPs as the companies that connect homes and organizations to the rest of the internet",
+      "IP addresses as the numeric identifiers for devices (IPv4 32-bit vs IPv6 128-bit at a naming level)",
+      "Packets and packet switching: data split into pieces, routed independently, reassembled",
+      "TCP/IP as the common protocol suite, and routers as the devices that forward packets between networks",
+      "A brief history: ARPANET to the internet"
+    ],
+    "supporting": [
+      "The end-to-end principle: IP delivers unreliable datagrams; TCP adds reliability, ordering, and flow control",
+      "Why packet switching survives node failure better than circuit switching",
+      "Why IPv6 was introduced (IPv4 address exhaustion)"
+    ],
+    "outOfScope": [
+      "HTTP, URLs, and how web pages load (owned by 'How the Web Works')",
+      "DNS and domain-name resolution (owned by 'How the Web Works')",
+      "Browsers as software (owned by 'Browsers')",
+      "Email protocols and clients (owned by 'Email Basics')",
+      "Wi-Fi/router home-networking configuration and security specifics"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The internet is a large network of interconnected computer networks that communicate using shared protocols; it is the technical infrastructure, not the same thing as the web.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mdn-how-the-internet-works", "rfc-1958-internet-architecture"],
+      "status": "supported"
+    },
+    {
+      "claim": "The web is a service built on top of the internet; email and other services also run on the same infrastructure.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mdn-how-the-internet-works"],
+      "status": "supported"
+    },
+    {
+      "claim": "An Internet Service Provider (ISP) is a company that operates interconnected routers and connects a customer's network to other ISPs' networks, giving reach to the rest of the internet.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mdn-how-the-internet-works"],
+      "status": "supported"
+    },
+    {
+      "claim": "Every device on the internet has a unique numeric identifier called an IP address (Internet Protocol address); IPv4 addresses are 32 bits, written as four dot-separated numbers such as 192.0.2.172.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mdn-how-the-internet-works", "rfc-791-internet-protocol"],
+      "status": "supported"
+    },
+    {
+      "claim": "IPv6 increases the address size from 32 bits to 128 bits to support a far greater number of addressable nodes, addressing IPv4 address exhaustion.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["rfc-8200-ipv6"],
+      "status": "supported"
+    },
+    {
+      "claim": "The Internet Protocol delivers blocks of data called datagrams (packets) from a source to a destination across interconnected networks, using addressing and fragmentation/reassembly, and provides no reliability, flow control, or sequencing itself.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["rfc-791-internet-protocol"],
+      "status": "supported"
+    },
+    {
+      "claim": "TCP (Transmission Control Protocol) is a reliable, connection-oriented, ordered host-to-host protocol that runs on packet-switched networks and recovers from lost, damaged, or duplicated data using sequence numbers, acknowledgments, and flow control.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["rfc-793-tcp"],
+      "status": "supported"
+    },
+    {
+      "claim": "A router is a device that forwards packets between networks by reading the destination address and passing each packet toward its target.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mdn-how-the-internet-works"],
+      "status": "supported"
+    },
+    {
+      "claim": "Ideally there is one protocol at the internet level (IP), which stays independent of the underlying hardware so diverse networks can interconnect; higher-level functions are best implemented at the endpoints (end-to-end principle).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["rfc-1958-internet-architecture"],
+      "status": "supported"
+    },
+    {
+      "claim": "ARPANET, the forerunner of the internet, sent its first computer-to-computer signal between UCLA and the Stanford Research Institute on October 29, 1969, and used packet switching so messages did not depend on any single node.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["darpa-arpanet"],
+      "status": "supported"
+    },
+    {
+      "claim": "TCP/IP, designed by Vint Cerf and Robert Kahn in the 1970s, became the standard, and by January 1983 enough networks had interconnected using it that ARPANET had evolved into the internet.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["darpa-arpanet"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Exact year and place TCP/IP was 'developed' (1974 Cerf-Kahn paper vs DARPA's '1975 at Stanford').",
+      "positions": [
+        "The 1974 Cerf-Kahn paper is the usual date cited for the TCP design.",
+        "DARPA's ARPANET feature says Cerf and Kahn had developed TCP/IP by 1975 at Stanford."
+      ],
+      "resolution": "The lesson avoids over-precision: it says TCP/IP was designed by Cerf and Kahn in the 1970s and that ARPANET switched fully to TCP/IP by January 1, 1983 (flag day), both of which the sources support."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained no real substance about the internet; it was topic-agnostic boilerplate ('Internet Basics is a concept students use to organize information...'). None of its explanatory claims were usable."
+  ],
+  "correctionsNeeded": [
+    "Replaced boilerplate with the actual mechanics of the internet (network of networks, ISPs, IP addresses, packets, TCP/IP, routers, history).",
+    "Added the internet-vs-web distinction, which the draft omitted entirely.",
+    "Replaced generic vocabulary (context, evidence, application) with domain vocabulary (packet, IP address, ISP, router, protocol, TCP/IP)."
+  ],
+  "rightsIssues": [
+    "MDN content is CC BY-SA; facts are synthesized and prose is original, so it is used as REFERENCE_ONLY/attribution and no MDN wording is reproduced.",
+    "IETF RFCs are freely available specifications; short factual quotes only, prose written originally.",
+    "DARPA is a U.S. government source (public domain), used for historical facts."
+  ],
+  "sourceRecords": [
+    {
+      "id": "mdn-how-the-internet-works",
+      "title": "How does the Internet work?",
+      "provider": "MDN Web Docs (Mozilla)",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/How_does_the_Internet_work",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the network-of-networks description, ISPs as interconnected routers, IP address as unique device identifier (four dot-separated numbers, e.g. 192.0.2.172), routers forwarding packets like a post office, and the key internet-vs-web distinction ('The Internet is an infrastructure, whereas the Web is a service built on top of the infrastructure'). Facts synthesized; no MDN wording reproduced."
+    },
+    {
+      "id": "rfc-791-internet-protocol",
+      "title": "RFC 791: Internet Protocol (DARPA Internet Program Protocol Specification)",
+      "provider": "IETF / RFC Editor",
+      "url": "https://www.rfc-editor.org/rfc/rfc791.txt",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports IP's scope: deliver a package of bits (an internet datagram) from source to destination over interconnected networks; implements addressing and fragmentation/reassembly; 32-bit fixed-length addresses; explicitly provides no end-to-end reliability, flow control, or sequencing."
+    },
+    {
+      "id": "rfc-793-tcp",
+      "title": "RFC 793: Transmission Control Protocol (DARPA Internet Program Protocol Specification)",
+      "provider": "IETF / RFC Editor",
+      "url": "https://www.rfc-editor.org/rfc/rfc793.txt",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports TCP as a highly reliable host-to-host protocol on packet-switched networks that adds ordered, reliable delivery, flow control, and recovery from lost/damaged/duplicated data on top of IP's unreliable datagram service."
+    },
+    {
+      "id": "rfc-8200-ipv6",
+      "title": "RFC 8200: Internet Protocol, Version 6 (IPv6) Specification",
+      "provider": "IETF / RFC Editor",
+      "url": "https://www.rfc-editor.org/rfc/rfc8200.html",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports IPv6 as successor to IPv4, increasing address size from 32 bits to 128 bits to support many more addressable nodes and more addressing hierarchy; motivates IPv4 address exhaustion."
+    },
+    {
+      "id": "rfc-1958-internet-architecture",
+      "title": "RFC 1958: Architectural Principles of the Internet",
+      "provider": "IETF / RFC Editor",
+      "url": "https://www.rfc-editor.org/rfc/rfc1958.txt",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the principle that there should ideally be one protocol at the internet level (IP), kept independent of hardware medium and addressing so diverse networks interconnect, and the end-to-end argument that higher-level functions belong at the endpoints."
+    },
+    {
+      "id": "darpa-arpanet",
+      "title": "ARPANET",
+      "provider": "DARPA (U.S. Defense Advanced Research Projects Agency)",
+      "url": "https://www.darpa.mil/news/features/arpanet",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Public-domain U.S. government source. Supports history: first computer-to-computer signal between UCLA and Stanford Research Institute on Oct. 29, 1969; four initial nodes; packet switching adopted so messages did not depend on any single node; Cerf and Kahn developed TCP/IP; by January 1983 ARPANET had evolved into the internet; ARPANET decommissioned 1990."
+    }
+  ]
+}

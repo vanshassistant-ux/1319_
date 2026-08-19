@@ -86,42 +86,42 @@ Input devices bring data into the computer and output devices send results back 
 ## Practice Question Bank
 
 1. **Which of the following is an input device?**
-   - A) A microphone ✓
-   - B) A monitor
-   - C) A printer
-   - D) A set of speakers
+   - A. A microphone ✓
+   - B. A monitor
+   - C. A printer
+   - D. A set of speakers
 
    A microphone captures sound and sends it into the computer, so it is an input device. A monitor, printer, and speakers all present processed results to the user, making them output devices.
 
 2. **What best explains why a touchscreen is considered both an input and an output device?**
-   - A) It uses more electricity than other devices
-   - B) It connects only through a wireless link
-   - C) It displays information as output and senses touch as input ✓
-   - D) It can only be used on mobile phones
+   - A. It uses more electricity than other devices
+   - B. It connects only through a wireless link
+   - C. It displays information as output and senses touch as input ✓
+   - D. It can only be used on mobile phones
 
    A touchscreen shows information like a display (output) and detects where you touch (input), so it performs both roles in one surface. Power use, connection type, and device type do not define whether something is input or output.
 
 3. **In the input-process-output loop, what role does the CPU play?**
-   - A) It captures data from the user before anything else happens
-   - B) It processes what input devices capture and sends results to output devices ✓
-   - C) It stores documents permanently after the computer is turned off
-   - D) It displays the final results directly to the user
+   - A. It captures data from the user before anything else happens
+   - B. It processes what input devices capture and sends results to output devices ✓
+   - C. It stores documents permanently after the computer is turned off
+   - D. It displays the final results directly to the user
 
    The CPU sits between input and output: it works on the data that input devices captured and hands the results to output devices. Capturing data is the input device's job, permanent storage is the drive's job, and displaying results is the output device's job.
 
 4. **You want to connect a laptop to a projector so a room can see both the picture and hear the audio through one cable. Which connection is designed for that?**
-   - A) The 3.5 mm audio jack
-   - B) A Bluetooth pairing
-   - C) A USB storage port
-   - D) HDMI ✓
+   - A. The 3.5 mm audio jack
+   - B. A Bluetooth pairing
+   - C. A USB storage port
+   - D. HDMI ✓
 
    HDMI carries digital video and audio together over a single cable, which is exactly what connecting a laptop to a projector needs. The audio jack carries only analog sound, USB is general-purpose data and power, and Bluetooth is a wireless link not typically used to drive a projector's full video.
 
 5. **A wireless keyboard connects to a computer with no cable and works across a short distance. Which standard is it most likely using, and what category of device is a keyboard?**
-   - A) Bluetooth; and a keyboard is an input device ✓
-   - B) HDMI; and a keyboard is an output device
-   - C) USB; and a keyboard is an output device
-   - D) Bluetooth; and a keyboard is an output device
+   - A. Bluetooth; and a keyboard is an input device ✓
+   - B. HDMI; and a keyboard is an output device
+   - C. USB; and a keyboard is an output device
+   - D. Bluetooth; and a keyboard is an output device
 
    Bluetooth is the short-range wireless standard used to connect cable-free peripherals, and a keyboard sends keypresses into the computer, so it is an input device. HDMI carries video and audio, USB is a wired connection, and a keyboard is never an output device.
 

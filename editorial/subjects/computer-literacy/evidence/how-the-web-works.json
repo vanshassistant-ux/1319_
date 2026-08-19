@@ -1,0 +1,198 @@
+{
+  "topicId": "computer-literacy:foundations:how-the-web-works",
+  "subjectId": "computer-literacy",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "The World Wide Web is a service that runs on top of the internet, not the internet itself",
+      "The client-server model: a browser (client) requests resources; a web server hosts and sends them",
+      "Web pages are built from files, chiefly HTML (structure), with CSS (style) and JavaScript (behavior)",
+      "A URL is the address of a resource, made of a scheme, host/domain, and path (plus optional port, query, fragment)",
+      "DNS translates a human-readable domain name into the numeric IP address of a server",
+      "The HTTP/HTTPS request-response cycle: the browser sends a request, the server returns a response",
+      "HTTPS adds TLS encryption so the request and response cannot be read or altered in transit",
+      "The round trip to load a page: DNS lookup, TCP connection, HTTP request, response, render"
+    ],
+    "supporting": [
+      "HTTP is a stateless application-layer protocol that runs over TCP (and TLS for HTTPS)",
+      "A domain name is read right to left: top-level domain, then labels/subdomains",
+      "Status codes such as 200 signal the outcome of a request",
+      "A response is delivered as packets that the browser reassembles and renders"
+    ],
+    "outOfScope": [
+      "IP addressing, packets, routers, and the TCP/IP stack as infrastructure (owned by Internet Basics)",
+      "The browser application's features, tabs, extensions, and settings (owned by Browsers)",
+      "How search engines crawl and rank pages (owned by Search Engines)",
+      "Email protocols such as SMTP/IMAP (owned by Email Basics)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The internet is the physical/network infrastructure, while the Web is a service built on top of it; the two are not the same thing.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mdn-how-the-internet-works", "mdn-how-the-web-works"],
+      "status": "supported"
+    },
+    {
+      "claim": "The Web follows a client-server model: the client is the user's internet-connected device and browser; the server is a computer that stores web pages and sends a copy to the client on request.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mdn-how-the-web-works", "mdn-http-overview", "rfc-9110-http-semantics"],
+      "status": "supported"
+    },
+    {
+      "claim": "A URL is the address of a unique resource on the Web, composed of a scheme (protocol), an authority (host/domain and optional port), and a path, with optional query and fragment parts.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mdn-what-is-a-url"],
+      "status": "supported"
+    },
+    {
+      "claim": "DNS translates a human-readable domain name into the numeric IP address of the server hosting the site, acting like a directory so people do not have to memorize IP addresses.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mdn-what-is-a-domain-name", "icann-dns-term"],
+      "status": "supported"
+    },
+    {
+      "claim": "HTTP is a stateless, application-level request/response protocol; the browser sends a request identifying a resource and the server returns a response with a status code and the resource's data.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mdn-http-overview", "rfc-9110-http-semantics"],
+      "status": "supported"
+    },
+    {
+      "claim": "HTTPS is HTTP carried over a TLS-encrypted connection, so the exchange is protected from being read or tampered with in transit.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mdn-http-overview", "rfc-9110-http-semantics"],
+      "status": "supported"
+    },
+    {
+      "claim": "Loading a page involves a round trip: DNS lookup to find the IP address, a TCP connection to the server, an HTTP request, the server's response, and the browser rendering the returned HTML/CSS/JavaScript.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mdn-how-the-web-works", "mdn-what-is-a-domain-name", "mdn-http-overview"],
+      "status": "supported"
+    },
+    {
+      "claim": "Web pages are written primarily in HTML for structure, with CSS for presentation and JavaScript for interactivity; the browser assembles these files into the displayed page.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mdn-how-the-web-works"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic filler ('a foundational concept... its meaning, its context, and a simple way to apply it') with no factual content about the Web, URLs, DNS, or HTTP.",
+    "The draft's vocabulary defined 'How The Web Works' circularly as 'A foundational Computer Literacy concept covered in this lesson.'"
+  ],
+  "correctionsNeeded": [
+    "Replaced all boilerplate with substantive, sourced explanation of the client-server Web, URLs, DNS, and the HTTP/HTTPS request-response cycle.",
+    "Added the internet-vs-web distinction and kept infrastructure (IP/packets/TCP) as reference only, per anti-duplication scope."
+  ],
+  "rightsIssues": [
+    "MDN Web Docs prose is CC BY-SA; used reference-only, facts synthesized into original wording rather than copied.",
+    "ICANN term definition is copyrighted; used reference-only.",
+    "IETF RFC 9110 text is under the IETF Trust license; only the technical facts were used, restated in original wording."
+  ],
+  "sourceRecords": [
+    {
+      "id": "mdn-how-the-web-works",
+      "title": "How the web works",
+      "provider": "MDN Web Docs (Mozilla)",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC-BY-SA-2.5",
+      "licenseUrl": "https://developer.mozilla.org/docs/MDN/Writing_guidelines/Attrib_copyright_license",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Defines clients (user devices + browser) and servers (computers that store pages and send a copy on request); lists the page-load steps (DNS lookup, HTTP request over TCP/IP, 200 OK response, packets reassembled and rendered) and the HTML/CSS/JavaScript roles. Facts restated in original prose."
+    },
+    {
+      "id": "mdn-what-is-a-url",
+      "title": "What is a URL?",
+      "provider": "MDN Web Docs (Mozilla)",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_URL",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC-BY-SA-2.5",
+      "licenseUrl": "https://developer.mozilla.org/docs/MDN/Writing_guidelines/Attrib_copyright_license",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "URL as the address of a unique resource; parts are scheme (e.g. https), authority (host/domain + optional port such as 443), path, and optional query (?q=...) and fragment (#...). Fragment is not sent to the server. Used to support the URL-anatomy section."
+    },
+    {
+      "id": "mdn-what-is-a-domain-name",
+      "title": "What is a domain name?",
+      "provider": "MDN Web Docs (Mozilla)",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_domain_name",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC-BY-SA-2.5",
+      "licenseUrl": "https://developer.mozilla.org/docs/MDN/Writing_guidelines/Attrib_copyright_license",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Domain names are human-readable stand-ins for IP addresses, read right to left (TLD then labels/SLD/subdomains). Describes the DNS lookup flow: browser checks local cache, otherwise queries a DNS server that returns the IP address, then the browser connects to the server. Supports the DNS section."
+    },
+    {
+      "id": "mdn-http-overview",
+      "title": "An overview of HTTP",
+      "provider": "MDN Web Docs (Mozilla)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC-BY-SA-2.5",
+      "licenseUrl": "https://developer.mozilla.org/docs/MDN/Writing_guidelines/Attrib_copyright_license",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "HTTP is a client-server protocol for fetching resources, layered on TCP (network layer IP); requests carry a method, path, version, headers and optional body; responses carry a version, status code/message, headers and optional body. HTTPS = HTTP over a TLS-encrypted TCP connection. HTTP is stateless. Supports HTTP/HTTPS sections."
+    },
+    {
+      "id": "mdn-how-the-internet-works",
+      "title": "How does the Internet work?",
+      "provider": "MDN Web Docs (Mozilla)",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/How_does_the_Internet_work",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC-BY-SA-2.5",
+      "licenseUrl": "https://developer.mozilla.org/docs/MDN/Writing_guidelines/Attrib_copyright_license",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "States that the Internet is infrastructure while the Web is a service built on top of it. Used only for the internet-vs-web distinction; infrastructure detail (routers, ISPs, IP) kept as reference and out of scope for this lesson."
+    },
+    {
+      "id": "rfc-9110-http-semantics",
+      "title": "RFC 9110: HTTP Semantics",
+      "provider": "IETF (Internet Engineering Task Force)",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "license": "IETF Trust Legal Provisions (BSD-style / RFC)",
+      "licenseUrl": "https://trustee.ietf.org/license-info",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Authoritative definition: HTTP is a family of stateless, application-level request/response protocols; clients send request messages toward an identified origin server, which responds; resources are identified by URIs using http or https schemes. Used to anchor the HTTP definition and client-server model."
+    },
+    {
+      "id": "icann-dns-term",
+      "title": "Domain Name System (DNS) - ICANN Acronyms and Terms",
+      "provider": "ICANN",
+      "url": "https://www.icann.org/en/icann-acronyms-and-terms/domain-name-system-en",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "ICANN describes DNS as the system that lets a familiar domain name be used instead of a hard-to-remember IP address, comparing an IP address to a telephone number. Read via curl with a browser user-agent (WebFetch returned 403). Supports the 'phone book' framing of DNS."
+    }
+  ]
+}

@@ -1177,6 +1177,19 @@
     "notes": "Source for the regulatory structure: statutes governing social work licensing are passed by state and provincial legislatures, those statutes empower boards to issue licenses and enforce practice standards, boards implement rules for practice, and social workers are required to abide by their board's standards of conduct in addition to the profession's code. Also supports that licensure requirements include an accredited degree, examination, and jurisdiction-set character requirements, and that ASWB links to every state and province's own statutes and rules. The related overview page at https://www.aswb.org/licenses/ states that every state and province has its own requirements for getting a license; that page was checked on the same date."
   },
   {
+    "id": "atlassian-kanban-boards",
+    "title": "What is a kanban board?",
+    "provider": "Atlassian Agile Coach",
+    "url": "https://www.atlassian.com/agile/kanban/boards",
+    "sourceType": "reference",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Supports: a kanban board is a visual project-management tool that uses cards, columns, and work-in-progress limits to visualize tasks, manage workflow, and identify bottlenecks; a basic board has columns such as To Do, In Progress, and Done, and cards represent individual work items. Page read via curl with a browser user-agent on 2026-08-19 after a 403 to the fetcher. Used for the task/project-board category. Reference-only; original wording used."
+  },
+  {
     "id": "aws-ssd-vs-hard-drive",
     "title": "What's the Difference Between SSD and Hard Drive?",
     "provider": "Amazon Web Services",
@@ -2675,6 +2688,19 @@
     "notes": "Official California superior court caseload series. Supplies the FY2022-23 filing counts for felonies, nontraffic and traffic misdemeanors, and nontraffic and traffic infractions used in the volume discussion. Percentages in the lesson were computed from these counts, not taken from the report."
   },
   {
+    "id": "ca-oag-ccpa",
+    "title": "California Consumer Privacy Act (CCPA)",
+    "provider": "California Office of the Attorney General",
+    "url": "https://oag.ca.gov/privacy/ccpa",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "California Attorney General's CCPA page. States CCPA rights: to know what personal information a business collects and how it is used, to delete personal information (with exceptions), to opt out of sale/sharing, and to non-discrimination; the CPRA (Prop 24, effective January 1, 2023) added rights to correct and to limit use of sensitive personal information. Defines personal information as data that identifies, relates to, or could reasonably be linked with a person or household. Reference-only; stated in original wording."
+  },
+  {
     "id": "ca-pen-1096-reasonable-doubt",
     "title": "California Penal Code section 1096 - Presumption of innocence and reasonable doubt",
     "provider": "California Legislative Information, California Legislature",
@@ -3407,6 +3433,84 @@
     "notes": "PDF downloaded and text extracted with pypdf on 2026-08-19. Confirms verbatim in the report text that the share of secondary materials fell 'from 9.1% in 2018 to 7.2% just five years later in 2023.' Supports the low-and-declining global circularity metric. Figure dated to 2023 and attributed; no substantial prose reproduced."
   },
   {
+    "id": "cisa-avoiding-social-engineering-phishing",
+    "title": "Avoiding Social Engineering and Phishing Attacks (ST04-014)",
+    "provider": "CISA (Cybersecurity and Infrastructure Security Agency)",
+    "url": "https://www.cisa.gov/news-events/news/avoiding-social-engineering-and-phishing-attacks",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "U.S. government guidance (public domain). Supports phishing as a form of social engineering, the vishing definition (voice communication; VoIP allows caller ID to be spoofed), the smishing definition (exploits SMS/text messages), and the common phishing indicators (suspicious sender address imitating a legitimate business, generic greetings and signature, spoofed hyperlinks/websites and lookalike or shortened URLs, spelling/layout problems, suspicious attachments as a malware delivery mechanism). Read 2026-08-19 via curl with a browser user-agent."
+  },
+  {
+    "id": "cisa-back-up-business-data",
+    "title": "Back Up Business Data",
+    "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+    "url": "https://www.cisa.gov/audiences/small-and-medium-businesses/secure-your-business/back-up-business-data",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Read via curl with a browser user-agent (WebFetch returned 403). States the 3-2-1 rule verbatim: '3 copies of important files, 2 different types of storage media (like a hard drive and the cloud), 1 copy stored off-site.' Also supports: regular backups protect against ransomware, malware, hardware failures and physical damage; use a combination of on-site and remote backups; leverage offline copies and encryption; and 'Test backup procedure to make sure your team can rapidly restore data both fully and partially.' Used for the 3-2-1 rule, reasons to back up, and testing-restore guidance."
+  },
+  {
+    "id": "cisa-implementing-phishing-resistant-mfa",
+    "title": "Implementing Phishing-Resistant MFA (Fact Sheet, October 2022)",
+    "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+    "url": "https://www.cisa.gov/sites/default/files/publications/fact-sheet-implementing-phishing-resistant-mfa-508c.pdf",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Primary source for the strength ranking. Defines MFA as requiring two or more different authenticators; states not all MFA is equally secure. Table 1 ranks forms strongest to weakest: (1) Phishing-resistant MFA = FIDO/WebAuthn and PKI-based, 'gold standard,' resistant to phishing; (2) App-based = OTP, push with number matching, token OTP, vulnerable to phishing but resistant to push bombing/SS7/SIM swap; (3) SMS or Voice, vulnerable to phishing, SS7, and SIM swap, 'should only be used as a last resort.' Describes threats: phishing, push bombing, SS7 exploitation, SIM swap. Explains FIDO/WebAuthn (roaming USB/NFC vs platform authenticators; can add biometric/PIN) and PKI-based (PIV/CAC smart cards). Notes OMB requires agencies to adopt phishing-resistant MFA. Downloaded and text-extracted with pypdf 2026-08-19; HTTP 200."
+  },
+  {
+    "id": "cisa-more-than-a-password",
+    "title": "More than a Password",
+    "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+    "url": "https://www.cisa.gov/MFA",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Supports the three factor categories named explicitly (Something You Know = PIN/password; Something You Have = authentication application or a confirmation text; Something You Are = fingerprint or face scan), the layered-defense rationale ('even if a malicious cyber actor compromises one factor... they will be unable to meet the second authentication requirement'), that MFA users are 'significantly less likely to get hacked,' the alternate names (2FA, two-step, etc.), and that popular forms include SMS/voice, application-based, phishing-resistant, and biometric. Page carries an 'Archived Content' banner; substance corroborated by current fact sheet and NIST. Read live via curl (browser UA) 2026-08-19; HTTP 200."
+  },
+  {
+    "id": "cisa-protecting-against-malicious-code",
+    "title": "Protecting Against Malicious Code",
+    "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+    "url": "https://www.cisa.gov/news-events/news/protecting-against-malicious-code",
+    "sourceType": "government",
+    "usage": "PUBLIC_DOMAIN",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Primary Tier A source. Defines malicious code and its classifications (viruses, worms, Trojan horses) and malicious data files; gives the defense list used in this lesson: install/maintain reputable antivirus and keep it updated, use caution with links/attachments, block pop-ups, use a limited-permission account, disable AutoRun/AutoPlay, keep software patched, back up data, enable a firewall, use anti-spyware tools. Read via curl with a browser user-agent (default fetcher returns 403)."
+  },
+  {
+    "id": "cisa-recognize-and-report-phishing",
+    "title": "Recognize and Report Phishing",
+    "provider": "CISA (Cybersecurity and Infrastructure Security Agency)",
+    "url": "https://www.cisa.gov/secure-our-world/recognize-and-report-phishing",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "U.S. government guidance. Phishing tries to get you to open harmful links/attachments or reveal personal/financial info, often via a message impersonating a trusted party with urgent language or lookalike addresses; advice is recognize, resist (don't click), report, delete. Used only as the handoff pointer to the dedicated Phishing topic. Fetched via curl with a browser user-agent (direct WebFetch returned 403)."
+  },
+  {
     "id": "cisa-secure-our-world-update-software",
     "title": "Update Software (Secure Our World)",
     "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
@@ -3420,6 +3524,58 @@
     "notes": "Consumer guidance: watch for update notifications, install updates as soon as possible (criminals won't wait), turn on automatic updates so devices install them without user input, and that providers issue updates to 'patch' security weak spots. Read via curl with browser user-agent (site returns 403 to the default fetcher). Supports the automatic-updates, prompt-installation, and 'patch closes security holes' claims."
   },
   {
+    "id": "cisa-securing-video-conferencing",
+    "title": "Guidance for Securing Video Conferencing",
+    "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+    "url": "https://www.cisa.gov/resources-tools/resources/guidance-securing-video-conferencing",
+    "sourceType": "government",
+    "usage": "PUBLIC_DOMAIN",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "U.S. federal government work (public domain). Four principles: connect securely; control access (require an access code/password, manage who can attend, enable waiting rooms to vet attendees, lock the event once everyone has joined, be able to admit and remove attendees, be cautious disseminating invitation links); manage file and screen sharing and recordings (limit sharing to trusted sources, limit file types, make participants aware of recording); update to the latest versions. PDF (CISA_Guidance_for_Securing_Video_Conferencing_S508C.pdf) read via curl with a browser user-agent on 2026-08-19 after the site returned 403 to the fetcher. Used for the security-responsibility-of-sharing claims; facts synthesized in original prose."
+  },
+  {
+    "id": "cisa-stop-ransomware",
+    "title": "Stop Ransomware",
+    "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+    "url": "https://www.cisa.gov/stopransomware",
+    "sourceType": "government",
+    "usage": "PUBLIC_DOMAIN",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Supports the ransomware definition ('a form of malware designed to encrypt files on a device, rendering any files and the systems that rely on them unusable; malicious actors then demand ransom in exchange for decryption') and the offline-backup guidance (maintain offline, encrypted, regularly tested backups because variants try to delete or encrypt accessible backups). Read via curl with a browser user-agent."
+  },
+  {
+    "id": "cisa-stopransomware-guide",
+    "title": "#StopRansomware Guide (September 2023)",
+    "provider": "CISA, FBI, NSA, and MS-ISAC (joint guide, hosted by CISA)",
+    "url": "https://www.cisa.gov/stopransomware/ransomware-guide",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Read via curl with a browser user-agent (WebFetch returned 403). Supports: 'Maintain offline, encrypted backups of critical data, and regularly test the availability and integrity of backups'; 'It is important that backups are maintained offline, as many ransomware variants attempt to find and subsequently delete or encrypt accessible backups to make restoration impossible unless the ransom is paid'; and that some cloud vendors offer immutable storage solutions. Used for the offline/immutable-copy point and the sync/connected-copy exposure to ransomware."
+  },
+  {
+    "id": "cisa-turn-on-mfa",
+    "title": "Turn On MFA (Secure Our World)",
+    "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+    "url": "https://www.cisa.gov/secure-our-world/turn-mfa",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Consumer-facing MFA guidance. Supports the definition of MFA, the three example methods (texted code, authenticator app generating a new code every 30 seconds, biometrics/facial recognition/fingerprint), and the point that even if an unauthorized user steals your password they cannot meet the second-step requirement. Page carries an 'Archived Content' banner; substance is evergreen and corroborated by current CISA and NIST sources. Read live via curl (browser UA) 2026-08-19; HTTP 200."
+  },
+  {
     "id": "cisa-understanding-patches-software-updates",
     "title": "Understanding Patches and Software Updates",
     "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
@@ -3431,6 +3587,19 @@
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-19",
     "notes": "Defines patches as OS/software updates that address security vulnerabilities; explains attackers target vulnerabilities for months/years after updates ship; manual vs automatic updates; recommends enabling automatic updates and only downloading from trusted vendor sites, not email links/attachments; defines end-of-life (EOL) software and recommends retiring EOL products; states keeping software up to date is the most effective defense. Read via curl with browser user-agent (default fetcher gets 403). Primary Tier A source for the security/patching angle."
+  },
+  {
+    "id": "cisa-use-strong-passwords",
+    "title": "Use Strong Passwords (Secure Our World)",
+    "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+    "url": "https://www.cisa.gov/secure-our-world/use-strong-passwords",
+    "sourceType": "government",
+    "usage": "PUBLIC_DOMAIN",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "U.S. federal government consumer guidance (public domain). Read via curl with a browser user-agent on 2026-08-19 (site returns 403 to the default fetcher). Supports: strong passwords should be long (at least 16 characters, longer is stronger), random (a mixed string or a passphrase of 4-7 unrelated words), and unique (a different password for every account); the danger of reuse illustrated by the 'Emma' case, where the same password across bank and email led to account takeover after a company breach appeared online (basis for the reuse/credential-stuffing point); and that a password manager generates, stores, and autofills unique strong passwords so the user remembers only one, plus the reminder to enable MFA on important accounts. Facts synthesized in original prose; no wording reproduced."
   },
   {
     "id": "ciscopress-intro-pc-hardware",
@@ -4379,6 +4548,19 @@
     "notes": "Federal practice-guidance page, read via local text extraction. Supports: effective management and supervision as essential to quality, culturally responsive services, to reducing employee stress and to worker retention; supervisors' administrative, educational and supportive responsibilities; supervisors supporting caseworkers by creating a safe space to manage the secondary trauma they may experience and by providing training opportunities; and the statement that positive supervisor-caseworker relationships can model the collaborative partnership caseworkers establish with children and families. The page also lists federal and state resources on secondary traumatic stress competencies in trauma-informed supervision. No reuse licence is stated on the page, so none is inferred from the .gov domain; wording is not reproduced."
   },
   {
+    "id": "cyber-centre-digital-footprint",
+    "title": "Digital footprint (ITSAP.00.133)",
+    "provider": "Canadian Centre for Cyber Security",
+    "url": "https://www.cyber.gc.ca/en/guidance/digital-footprint-itsap00133",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Government of Canada guidance (February 2024). Defines a digital footprint as 'the trail of data you create while using the Internet.' Distinguishes active footprints (intentional actions like posting on social media, completing online forms, accepting cookies) from passive footprints (data collected unknowingly via monitoring tied to IP addresses, undisclosed cookies, location tracking, activity logging). Lists risks of a compromised footprint: identity theft, issues with background checks, and reputational harm. Notes metadata in photos can expose location and advises removing metadata from photos before sharing, using restrictive privacy settings, and reading privacy policies. Primary anchor for the active/passive split, reputation, and metadata claims. Facts synthesized in original wording."
+  },
+  {
     "id": "dalal-fowlkes-hoadley-1989-shuttle-risk-analysis",
     "title": "Risk Analysis of the Space Shuttle: Pre-Challenger Prediction of Failure",
     "provider": "Journal of the American Statistical Association 84(408): 945-957 (Dalal, Fowlkes and Hoadley)",
@@ -4420,6 +4602,19 @@
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-19",
     "notes": "Open-access CC BY national survey (2021). Supports: an estimated ~97.1% of US hospitals maintain a health care ethics program; clinical ethics functions in nearly all (97.0%), with smaller shares addressing ethical leadership (35.7%), regulatory compliance (29.0%), business ethics (26.2%), and research ethics (12.6%); and that programs provide ethics consultation, policy work, and education to varied audiences. Used to support the clinical/organizational distinction and the prevalence and functions of hospital ethics programs; read via PMC. No long excerpts reproduced."
+  },
+  {
+    "id": "darpa-arpanet",
+    "title": "ARPANET",
+    "provider": "DARPA (U.S. Defense Advanced Research Projects Agency)",
+    "url": "https://www.darpa.mil/news/features/arpanet",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Public-domain U.S. government source. Supports history: first computer-to-computer signal between UCLA and Stanford Research Institute on Oct. 29, 1969; four initial nodes; packet switching adopted so messages did not depend on any single node; Cerf and Kahn developed TCP/IP; by January 1983 ARPANET had evolved into the internet; ARPANET decommissioned 1990."
   },
   {
     "id": "de-boer-2018-teacher-expectation-interventions",
@@ -5110,6 +5305,19 @@
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-18",
     "notes": "Primary historical text. Directly supports the method (163 double tests in 1879-80, eight series of 13 nonsense syllables each learned to two errorless recitations, relearning after about one third of an hour, 1 hour, 9 hours, 1 day, 2 days, 6 days, or 31 days), the savings measure Q = 100D/(L-85), the 33.7 percent one-day figure and Ebbinghaus's own judgement that it is one to two units too large, his statement that after six days about one fourth and after a month fully one fifth of the first work persisted, and his description of the results as special, individual, and uncertain. The numeric table itself is an image on this page, so the full savings series was cross-checked against Murre and Dros's Table 3."
+  },
+  {
+    "id": "ebsco-craap-test",
+    "title": "CRAAP Test (Research Starter)",
+    "provider": "EBSCO Research Starters",
+    "url": "https://www.ebsco.com/research-starters/social-sciences-and-humanities/craap-test",
+    "sourceType": "reference",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Describes the CRAAP test (Currency, Relevance, Authority, Accuracy, Purpose) for evaluating source credibility: Authority asks whether the individual or organization is adequately knowledgeable; Purpose asks why the source was written (to inform, persuade, or entertain; fact vs. opinion). Developed by Sarah Blakeslee and librarians at California State University, Chico, in 2004. Supports the evaluate-credibility claim. REFERENCE_ONLY; criteria described in original wording."
   },
   {
     "id": "ec-csrd-overview",
@@ -5818,6 +6026,21 @@
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-18",
     "notes": "Supports the employment-screening discussion: arrests alone are not job related and consistent with business necessity, and conviction-based exclusions are assessed against the nature and gravity of the offense, time elapsed, and the nature of the job."
+  },
+  {
+    "id": "eff-ssd-manage-digital-footprint",
+    "title": "How to: Manage Your Digital Footprint",
+    "provider": "Surveillance Self-Defense, Electronic Frontier Foundation",
+    "url": "https://ssd.eff.org/module/how-to-manage-your-digital-footprint",
+    "sourceType": "reference",
+    "usage": "EXTRACT_AND_ADAPT",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://www.eff.org/copyright",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "EFF guide, licensed Creative Commons Attribution. Describes searching your name in a search engine to find publicly discoverable personal information; distinguishes information you post voluntarily (pictures, videos, reviews, forum comments, classifieds) from data aggregated passively by third parties such as data brokers that collect, repackage, and sell personal information. Emphasizes that information cannot be fully erased once collected by multiple parties and that brokers repopulate scraped records, so management is ongoing. Practical steps: audit yourself by searching your name in private browsing, secure accounts, review privacy settings, request removals from data brokers, and use search-engine 'results about you' tools. Facts synthesized in original wording; attribution recorded per CC BY."
   },
   {
     "id": "eia-battery-storage-2024",
@@ -6834,6 +7057,32 @@
     "notes": "Fetched via WebFetch (HTTP 200). Supports the derivation of hospitality/host from Latin hospes ('guest, host, stranger') and Proto-Indo-European ghos-ti, and the shared root of guest, hospice, hospital, hostel, hotel. Facts used; wording original."
   },
   {
+    "id": "eu-commission-data-protection-explained",
+    "title": "Data protection explained",
+    "provider": "European Commission",
+    "url": "https://commission.europa.eu/law/law-topic/data-protection/data-protection-explained_en",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Official EU explainer. Defines personal data as any information relating to an identified or identifiable living individual, with examples including names, addresses, email addresses, IP addresses, cookie IDs, medical records, identification numbers, and phone advertising identifiers; irreversibly anonymized data is not personal data. Lists the GDPR as the EU's main data-protection law and enumerates eight individual rights (information, access, rectification, erasure, restriction, portability, objection, automated-decision-making). Reference-only; facts stated in original wording."
+  },
+  {
+    "id": "eu-gdpr-eurlex-summary",
+    "title": "General data protection regulation (GDPR) — summary",
+    "provider": "EUR-Lex (Publications Office of the European Union)",
+    "url": "https://eur-lex.europa.eu/EN/legal-content/summary/general-data-protection-regulation-gdpr.html",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Official EUR-Lex summary of Regulation (EU) 2016/679. Confirms the GDPR was adopted 27 April 2016 and has applied since 25 May 2018. Used only to anchor the application date. Reference-only."
+  },
+  {
     "id": "eubanks-2018-alliance-rupture-repair-meta-analysis",
     "title": "Alliance rupture repair: A meta-analysis (Psychotherapy, 55(4), 508-519)",
     "provider": "Catherine F. Eubanks, J. Christopher Muran and Jeremy D. Safran / American Psychological Association",
@@ -7137,6 +7386,32 @@
     "notes": "Abstract verified through the Europe PMC record (PMID 9635069). Supports the original study design: a questionnaire mailed to 13,494 adults who had completed a standardized medical evaluation at a large HMO, 9,508 responses (70.5 percent), seven categories of adverse childhood experience, and a graded population-level relationship between the number of categories and adult health risk behaviors and diseases. Used for the population-level finding only; the lesson does not restate its effect sizes."
   },
   {
+    "id": "fido-alliance-passkeys",
+    "title": "Passkeys: Passwordless Authentication",
+    "provider": "FIDO Alliance",
+    "url": "https://fidoalliance.org/passkeys/",
+    "sourceType": "standards-body",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Defines passkeys as a password-replacement technology: FIDO credentials for passwordless authentication using cryptographic key pairs, phishing-resistant, always strong, no shared secrets, unlocked by the same method used to unlock the device (biometric, PIN), and either synced across devices or device-bound. Corroborates that passkeys inherit FIDO/WebAuthn phishing resistance. Reuse license not stated; REFERENCE_ONLY, no wording reproduced. Read live via curl (browser UA) 2026-08-19; HTTP 200."
+  },
+  {
+    "id": "firefox-incognito-browser",
+    "title": "Incognito browser: What it really means (Firefox)",
+    "provider": "Mozilla / Firefox",
+    "url": "https://www.firefox.com/en-US/more/incognito-browser/",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Mozilla's own explanation of private/incognito browsing: it deletes local session data (history, cookies) but does not hide activity from the ISP, employer, school, or visited sites, does not hide the IP address or make the user anonymous, and does not protect against malware. Directly supports the incognito-limits framing."
+  },
+  {
     "id": "fla-stat-776-012-defense-of-person",
     "title": "Florida Statutes section 776.012 - Use or threatened use of force in defense of person",
     "provider": "Florida Legislature, Online Sunshine",
@@ -7392,6 +7667,32 @@
     "notes": "eCFR blocked automated fetching on 2026-08-19, so the rule was read from the govinfo bound CFR PDF at https://www.govinfo.gov/content/pkg/CFR-2024-title16-vol1/pdf/CFR-2024-title16-vol1-part460.pdf (1-1-24 edition). Section 460.1 states what the part covers; 460.2 defines home insulation as material mainly used to slow heat flow; 460.5 requires R-values to be based on listed ASTM steady-state test methods run at a 75 degF mean temperature with a 50 +/- 10 degF temperature difference on the insulation alone; 460.12(c) requires the label statement that R means resistance to heat flow and that the higher the R-value the greater the insulating power. The canonical eCFR URL is registered; the govinfo copy is what was read."
   },
   {
+    "id": "ftc-data-brokers-2014",
+    "title": "Data Brokers: A Call for Transparency and Accountability (FTC Report, May 2014)",
+    "provider": "U.S. Federal Trade Commission",
+    "url": "https://www.ftc.gov/reports/data-brokers-call-transparency-accountability-report-federal-trade-commission-may-2014",
+    "sourceType": "government",
+    "usage": "PUBLIC_DOMAIN",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "FTC study of nine data brokers. Finds brokers operate with a fundamental lack of transparency; collect and store billions of data elements covering nearly every U.S. consumer from extensive online and offline sources, largely without consumers' knowledge (purchases, social-media activity, warranty registrations, magazine subscriptions, religious and political affiliations); combine into profiles and sell for marketing, fraud prevention, and other purposes. Quantitative detail: one broker held information on more than 1.4 billion consumer transactions and 700 billion data elements; another adds more than 3 billion data points per month. Facts read from the FTC press release (ftc.gov/news-events/news/press-releases/2014/05/ftc-recommends-congress-require-data-broker-industry-be-more-transparent-give-consumers-greater), retrieved via curl; report landing page registered as canonical URL. Used as dated 2014 figures."
+  },
+  {
+    "id": "ftc-distinguish-ads-search-results",
+    "title": "FTC Consumer Protection Staff Updates Agency's Guidance to Search Engine Industry on the Need to Distinguish Between Advertisements and Search Results",
+    "provider": "U.S. Federal Trade Commission",
+    "url": "https://www.ftc.gov/news-events/news/press-releases/2013/06/ftc-consumer-protection-staff-updates-agencys-guidance-search-engine-industry-need-distinguish",
+    "sourceType": "government",
+    "usage": "PUBLIC_DOMAIN",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "FTC press release (June 2013) announcing updated staff guidance to search engines. States that 'paid search results and other forms of advertising should be clearly distinguishable from natural search results', that 'failing to clearly and prominently distinguish advertising from natural search results could be a deceptive practice', and that the guidance emphasizes visual cues and labels to identify ads. Read via curl with a browser user-agent (the page 403s the default fetcher). Supports the ads-vs-organic and deceptive-practice claims. U.S. government work, public domain."
+  },
+  {
     "id": "ftc-green-guides-16-cfr-260",
     "title": "16 CFR Part 260 - Guides for the Use of Environmental Marketing Claims (Green Guides)",
     "provider": "U.S. Federal Trade Commission / Code of Federal Regulations",
@@ -7403,6 +7704,32 @@
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-19",
     "notes": "Section 260.1 read via the eCFR versioner API (https://www.ecfr.gov/api/versioner/v1/full/2025-01-01/title-16.xml?part=260) because the SPA page and unblock redirect blocked direct fetch. Confirms the Green Guides 'set forth the Federal Trade Commission's current views about environmental claims' and 'help marketers avoid making environmental marketing claims that are unfair or deceptive under Section 5 of the FTC Act,' applying to labeling, advertising, and other marketing. U.S. federal regulation, public domain. Used for U.S. regulation of greenwashing."
+  },
+  {
+    "id": "ftc-how-websites-apps-collect",
+    "title": "How Websites and Apps Collect and Use Your Information",
+    "provider": "U.S. Federal Trade Commission — Consumer Advice",
+    "url": "https://consumer.ftc.gov/articles/how-websites-and-apps-collect-and-use-your-information",
+    "sourceType": "government",
+    "usage": "PUBLIC_DOMAIN",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "FTC consumer guidance. States sites track activity via cookies or pixels and via device fingerprinting (using a browser's unique configuration); phone apps use a unique advertising identifier; activity can be linked across devices. Explains a cookie as information saved by the browser to recognize a device later. Reasons for tracking: save preferences, personalize content, gather analytics, target ads. Protective steps: adjust browser privacy settings, block sites from seeing history, decline location sharing, delete cookies/history, reset phone identifiers, use opt-out tools, review cookie notices. Retrieved via curl with a browser user-agent (WebFetch got HTTP 403). Facts synthesized into original prose."
+  },
+  {
+    "id": "ftc-malware-protect-detect-remove",
+    "title": "Malware: How To Protect Against, Detect, and Remove It",
+    "provider": "U.S. Federal Trade Commission (Consumer Advice)",
+    "url": "https://consumer.ftc.gov/articles/malware-how-protect-against-detect-and-remove-it",
+    "sourceType": "government",
+    "usage": "PUBLIC_DOMAIN",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Supports the plain-language definition ('Malware is harmful software that's installed on your device without your knowledge'), the list of infection signs (runs slowly, drains battery, unexpected errors/crashes, won't shut down or restart, floods of pop-ups, unwanted redirects, changed home page, new icons/toolbars), and avoidance advice (download only from trusted sites, type URLs instead of clicking email links, heed browser security warnings, keep security software updated). Confirmed definition line via curl; signs/avoidance confirmed via WebSearch summary of the same page (older /how-recognize-remove-avoid-malware slug now 404s to this canonical article)."
   },
   {
     "id": "ftc-nixing-the-fix-2021",
@@ -7418,6 +7745,19 @@
     "notes": "U.S. federal government work (public domain). Supports the right-to-repair discussion: manufacturer restrictions (parts limited to authorized networks, adhesives/designs resisting disassembly, software locks/DRM) and the finding of scant evidence that such restrictions are necessary for safety or security. Read the FTC report landing page and PDF."
   },
   {
+    "id": "ftc-recognize-avoid-phishing-scams",
+    "title": "How To Recognize and Avoid Phishing Scams",
+    "provider": "FTC Consumer Advice (Federal Trade Commission)",
+    "url": "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "U.S. government consumer guidance (public domain). Supports the phishing tactics list (fake suspicious-activity/account-problem claims, requests to confirm personal/financial info, fake invoices, malicious payment links, fake refunds and free-stuff offers), the generic-greeting sign, the four protections (security software with auto-updates, phone auto-updates, MFA, backups), what to do (verify with a known number/website, don't click), how to report (ReportFraud.ftc.gov; forward texts to SPAM/7726; emails to reportphishing@apwg.org), and IdentityTheft.gov for recovery. Read 2026-08-19 via curl with a browser user-agent following the redirect from the older /how-recognize-and-avoid-phishing-scams URL."
+  },
+  {
     "id": "ftc-start-with-security",
     "title": "Start with Security: A Guide for Business",
     "provider": "U.S. Federal Trade Commission",
@@ -7429,6 +7769,19 @@
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-19",
     "notes": "U.S. government (public domain) guidance summarizing core data-security practices: collect only needed data, control access sensibly, require secure authentication, store/transmit sensitive data securely (encryption), segment and monitor networks, secure remote access, and dispose of unneeded data. Read via curl (browser user agent) after WebFetch returned 403."
+  },
+  {
+    "id": "ftc-tracking-collect-use-info",
+    "title": "How Websites and Apps Collect and Use Your Information",
+    "provider": "U.S. Federal Trade Commission (Consumer Advice)",
+    "url": "https://consumer.ftc.gov/articles/how-protect-your-privacy-online",
+    "sourceType": "government",
+    "usage": "PUBLIC_DOMAIN",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "FTC consumer article. Explains that sites can record the pages you visited, how long you spent, what you searched for, and the device and browser you used, and can show personalized ads based on browsing history or location. Defines first-party tracking (by a site you visit) and third-party tracking (another company tracking you across most sites you visit). Management guidance: delete cookies and clear browsing/search history, adjust browser privacy settings to block sites from seeing history or location, and notes a private browsing mode 'deletes your browsing history after you end your session, but it doesn't block websites from seeing your online activity.' Read via curl with a browser user-agent (default fetcher 403s). Supports the passive-footprint/tracking and management points. U.S. government work, public domain."
   },
   {
     "id": "galanaki-malafantis-2022-bobo-doll-critique",
@@ -7538,6 +7891,19 @@
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-18",
     "notes": "Full abstract retrieved through the NCBI E-utilities PubMed API (PMID 34600625); the PubMed record states the article is open access under CC BY 4.0. Supports: the study compared the National Vital Statistics System with three non-governmental open-source databases (Fatal Encounters, Mapping Police Violence, and The Counted) and used network meta-regression to estimate under-reporting; it estimated 30,800 deaths (95% uncertainty interval 30,300-31,300) from police violence in the USA between 1980 and 2018, and that the NVSS did not report 55.5 percent of them; and it reported the highest age-standardised mortality rate in non-Hispanic Black people. The lesson presents these as the authors' modeled estimates with uncertainty intervals, attributes the authors' interpretive framing to them, and does not present any figure as a national count."
+  },
+  {
+    "id": "gdpr-article-17-erasure",
+    "title": "Regulation (EU) 2016/679 (GDPR), Article 17 - Right to erasure ('right to be forgotten')",
+    "provider": "European Union (EUR-Lex)",
+    "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "GDPR Article 17 grants a data subject the right to obtain erasure of personal data 'without undue delay' on defined grounds (data no longer necessary; consent withdrawn; objection with no overriding grounds; unlawful processing; legal-obligation erasure; children's data). Article 17(3) sets exceptions where the right does not apply, including where processing is necessary for 'exercising the right of freedom of expression and information,' compliance with a legal obligation or a public-interest task, public-health reasons, archiving/research/statistical purposes, or 'the establishment, exercise or defence of legal claims.' Supports the claim that the right to be forgotten exists but is not absolute. Canonical text cited to EUR-Lex; verified via the gdpr-info.eu reproduction of Article 17."
   },
   {
     "id": "getty-principles-of-design",
@@ -7771,6 +8137,101 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-18",
     "notes": "Full text read via the Europe PMC API. Used narrowly to attribute 'nothing about us without us' to the disability rights movement and to its scholarly source: the review describes the expression as the disability rights movement's, and its reference list cites James I. Charlton, Nothing About Us Without Us: Disability Oppression and Empowerment (Berkeley: University of California Press, 1998). Charlton's book was not read directly; the attribution is reported as it appears in this peer-reviewed source."
+  },
+  {
+    "id": "google-docs-version-history",
+    "title": "See changes in your Google Docs, Sheets & Slides (version history)",
+    "provider": "Google Docs Editors Help",
+    "url": "https://support.google.com/docs/answer/190843",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Supports: version history shows earlier versions of a file and who changed what; users can open a previous version and 'Restore this version', or make a copy; users can create named versions; editing permission is needed to browse history. Used for the version-history/restore claim. Reference-only; original wording used."
+  },
+  {
+    "id": "google-drive-help-share-files",
+    "title": "Share files from Google Drive",
+    "provider": "Google Drive Help",
+    "url": "https://support.google.com/drive/answer/2494822",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Describes share permission roles: Viewer (view and download, cannot change or share), Commenter (view, download, comment, cannot edit or share), Editor (view, comment, edit, download, share; cannot change the owner), and Owner (full permissions). Used, as a named example, to support the view-only-versus-edit permission distinction and the finer commenter/owner roles. Copyrighted; REFERENCE_ONLY; original wording only. Read via WebFetch."
+  },
+  {
+    "id": "google-drive-share-permissions",
+    "title": "Share files from Google Drive (Viewer, Commenter, Editor)",
+    "provider": "Google Drive Help",
+    "url": "https://support.google.com/docs/answer/2494822",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Supports the tiered roles: Viewer (view and download), Commenter (view, comment, download), Editor (edit, share, download); Owner controls all permissions. Also supports sharing with specific people by email versus making a file available to anyone with the link. Used for the permissions/sharing model. Reference-only; original wording used."
+  },
+  {
+    "id": "google-how-search-works",
+    "title": "In-Depth Guide to How Google Search Works",
+    "provider": "Google Search Central (Google for Developers)",
+    "url": "https://developers.google.com/search/docs/fundamentals/how-search-works",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Primary anchor for the three-stage model. States Google is fully automated using web crawlers; crawling 'downloads text, images, and videos from pages it found on the internet with automated programs called crawlers', discovering pages by following links, reading sitemaps, and re-crawling; an algorithmic process decides which sites to crawl, how often, and how many pages. Indexing analyzes content and 'stores the information in the Google index, a large database'; 'Indexing isn't guaranteed; not every page that Google processes will be indexed.' Serving ranks programmatically by relevance and quality using 'hundreds of factors, which could include information such as the user's location, language, and device', and 'Google doesn't accept payment to rank pages higher.' Supports the pipeline, discovery, no-guarantee, ranking-factors, and personalization claims. Facts synthesized in original wording."
+  },
+  {
+    "id": "google-search-operators",
+    "title": "Refine web searches (search operators and refinements)",
+    "provider": "Google Search Help",
+    "url": "https://support.google.com/websearch/answer/2466433",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Product help page listing common refinements: put a word or phrase inside quotes for an exact match; put '-' in front of a word to exclude it; use 'site:' in front of a site or domain to search within it; use 'filetype:' to find a document format; 'before:'/'after:' for date ranges. Supports the operator/refinement claim at a naming level. REFERENCE_ONLY; described in original wording, examples reworked."
+  },
+  {
+    "id": "google-seo-starter-guide",
+    "title": "SEO Starter Guide: The Basics",
+    "provider": "Google Search Central (Google for Developers)",
+    "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Defines SEO as 'helping search engines understand your content, and helping users find your site', states there are 'no secrets here that'll automatically rank your site first in Google' and 'no guarantee that any particular site will be added to Google's index.' Supports the neutral SEO note (sites optimize to rank; no guarantee). Facts synthesized in original wording."
+  },
+  {
+    "id": "google-slides-theme-layout",
+    "title": "Use a template or change the theme, background, or layout in Google Slides",
+    "provider": "Google Docs Editors Help",
+    "url": "https://support.google.com/docs/answer/1705254",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Supports: a theme is a preset group of colors, fonts, background, and layouts; changing the theme applies it to the presentation; a layout is the way text and images are arranged on a slide. Read via WebFetch on 2026-08-19. Reference-only; original wording used."
   },
   {
     "id": "gordon-training-dirty-dozen",
@@ -8623,6 +9084,19 @@
     "notes": "Open-access meta-analysis. Supports the lesson's evidence paragraph: five studies pooled (four RCTs, one quasi-experimental), 194 participants, no significant effect on level of functioning or quality of life, moderate-quality evidence, low trial count, and explicit criticism of unclear randomization/blinding, heterogeneous measures, and the lack of clear description of the underlying intervention. Findings restated in original wording; no text reproduced."
   },
   {
+    "id": "icann-dns-term",
+    "title": "Domain Name System (DNS) - ICANN Acronyms and Terms",
+    "provider": "ICANN",
+    "url": "https://www.icann.org/en/icann-acronyms-and-terms/domain-name-system-en",
+    "sourceType": "reference",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "ICANN describes DNS as the system that lets a familiar domain name be used instead of a hard-to-remember IP address, comparing an IP address to a telephone number. Read via curl with a browser user-agent (WebFetch returned 403). Supports the 'phone book' framing of DNS."
+  },
+  {
     "id": "icc-color-org-profiles",
     "title": "Profile (ICC profiles and the profile connection space)",
     "provider": "International Color Consortium (color.org)",
@@ -9037,6 +9511,58 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-18",
     "notes": "Federal practice guide (Graham et al.) used for Recommendation 1, explicitly teaching appropriate writing strategies using a Model-Practice-Reflect instructional cycle, rated strong evidence. Used as the strongest official evidence that a modeling-based instructional cycle works in a real subject area. Reuse terms not separately verified; recorded as reference only."
+  },
+  {
+    "id": "ietf-rfc-1939-pop3",
+    "title": "RFC 1939: Post Office Protocol - Version 3",
+    "provider": "IETF (Internet Engineering Task Force)",
+    "url": "https://www.rfc-editor.org/rfc/rfc1939.html",
+    "sourceType": "standards-body",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Internet Standard (STD 53, May 1996). Lets a workstation retrieve mail from a server maildrop; typical model is download-then-delete, and it is explicitly not intended for extensive server-side manipulation (contrasted with the more advanced IMAP). Supports the POP-vs-IMAP contrast. Read the RFC-Editor HTML copy."
+  },
+  {
+    "id": "ietf-rfc-5321-smtp",
+    "title": "RFC 5321: Simple Mail Transfer Protocol",
+    "provider": "IETF (Internet Engineering Task Force)",
+    "url": "https://www.rfc-editor.org/rfc/rfc5321.html",
+    "sourceType": "standards-body",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Standards-track (October 2008). Authoritative definition that SMTP transfers/relays mail between servers and handles submission; supports the address local-part@domain form (mailbox = local-part @ domain) and the outgoing-transport claim. Read the RFC-Editor HTML copy."
+  },
+  {
+    "id": "ietf-rfc-5322-internet-message-format",
+    "title": "RFC 5322: Internet Message Format",
+    "provider": "IETF (Internet Engineering Task Force)",
+    "url": "https://www.rfc-editor.org/rfc/rfc5322.html",
+    "sourceType": "standards-body",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Standards-track. Defines the header/body structure and the From, To, Cc, Bcc, Subject, Date fields; addr-spec = local-part '@' domain. Confirms To/Cc addresses are visible to all recipients and describes Bcc handling where the Bcc field is stripped from copies delivered to To/Cc recipients so blind recipients stay hidden. Read the RFC-Editor HTML copy."
+  },
+  {
+    "id": "ietf-rfc-9051-imap4rev2",
+    "title": "RFC 9051: Internet Message Access Protocol (IMAP) - Version 4rev2",
+    "provider": "IETF (Internet Engineering Task Force)",
+    "url": "https://www.rfc-editor.org/rfc/rfc9051.html",
+    "sourceType": "standards-body",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Standards-track (August 2021). Abstract: IMAP4rev2 allows a client to access and manipulate messages on a server; supports mailbox management, searching, selective fetch, and resynchronization. Supports the claim that IMAP keeps mail on the server and syncs across devices/folders. Read the RFC-Editor HTML copy."
   },
   {
     "id": "ifrs-issb-standards-intro",
@@ -9550,6 +10076,19 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-19",
     "notes": "2006 companion standard giving the requirements and guidelines for conducting the LCA phases defined in 14040. Described from the official catalogue listing; no standard text reproduced."
+  },
+  {
+    "id": "iso-32000-2-pdf",
+    "title": "ISO 32000-2 — Document management — Portable document format — Part 2: PDF 2.0",
+    "provider": "International Organization for Standardization (ISO)",
+    "url": "https://www.iso.org/standard/63534.html",
+    "sourceType": "standards-body",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Supports PDF being a standardized fixed-layout format that enables exchanging and viewing documents independent of the environment (software/hardware) in which they were created or viewed. iso.org blocks automated fetchers (Cloudflare 403); scope wording read via ISO news/standard summaries and PDF Association references. Cited for the standard and its environment-independence scope only; no standard text reproduced."
   },
   {
     "id": "iso-astm-52900-2021-am-terminology",
@@ -10557,6 +11096,62 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-18",
     "notes": "Read for the holding that an offense carrying six months or less is presumed petty for Sixth Amendment purposes and that aggregating petty charges in one proceeding does not create a jury-trial right. Opinion delivered by Justice O'Connor, June 24, 1996. Mirror used for retrieval; no site wording reproduced."
+  },
+  {
+    "id": "libreoffice-calc-absolute-relative-references",
+    "title": "Addresses and References, Absolute and Relative (LibreOffice Calc Help)",
+    "provider": "The Document Foundation — LibreOffice",
+    "url": "https://help.libreoffice.org/latest/en-US/text/scalc/guide/relativ_absolut_ref.html",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Official LibreOffice Calc documentation, read via WebFetch on 2026-08-19. Supports: by default references are relative and adjust automatically when copied; copying =SUM(A1:A9) into the adjacent right column produces =SUM(B1:B9); absolute references use dollar signs formatted as $A$1:$B$2 and stay fixed when copied; the F4 key cycles a reference through $A$1, A$1, $A1 and back to relative. Used to verify reference behavior and the copy example underpinning the worked example. Reference-only; no wording reproduced in the lesson."
+  },
+  {
+    "id": "libreoffice-calc-features",
+    "title": "LibreOffice Calc Features (Help overview)",
+    "provider": "The Document Foundation — LibreOffice",
+    "url": "https://help.libreoffice.org/latest/en-US/text/scalc/main0503.html",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Official LibreOffice Calc feature overview, read via WebFetch on 2026-08-19. Supports: Calc provides functions (including statistical and banking functions) used to build formulas for calculations; a Function Wizard assists formula creation; dynamic charts update automatically when data changes; users can reorganize the sheet to show or hide data ranges and quickly calculate subtotals and totals. Used for the functions, charts, and sorting/filtering claims. Reference-only; no wording reproduced."
+  },
+  {
+    "id": "libreoffice-impress-intro",
+    "title": "Introducing Impress (Impress Guide 7.0, Chapter 1)",
+    "provider": "The Document Foundation - LibreOffice Documentation Team",
+    "url": "https://books.libreoffice.org/en/IG70/IG7001-IntroducingImpress.html",
+    "sourceType": "documentation",
+    "usage": "ATTRIBUTION_REQUIRED",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Supports: Impress is the presentation (slide show) program in LibreOffice; slides can contain text, bulleted and numbered lists, tables, charts, and graphic objects such as clip-art, drawings, and photographs, plus animations and slide transitions; standard views are Normal, Outline, Notes, and Slide Sorter; native format is ODP with export to other formats. Documentation is Copyright 2021 LibreOffice Documentation Team, dual-licensed GPLv3+ or CC BY 4.0. Read via WebFetch on 2026-08-19. Used as an open-source example of the software category; original wording used despite reuse rights."
+  },
+  {
+    "id": "libreoffice-writer-guide-intro-styles",
+    "title": "LibreOffice Writer Guide, Chapter 8: Introduction to Styles",
+    "provider": "The Document Foundation (LibreOffice Documentation Team)",
+    "url": "https://books.libreoffice.org/en/WG248/WG24808-IntroStyles.html",
+    "sourceType": "documentation",
+    "usage": "ATTRIBUTION_REQUIRED",
+    "license": "CC BY 4.0 (also GPLv3+)",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Supports what styles are (named formatting sets; 'from what text looks like to what text is'), the style categories (paragraph, character, page, frame, list, table), advantages over manual formatting (consistency + change-once-updates-all; manual formatting overrides styles), and heading styles establishing outline levels that enable an automatic table of contents. Facts synthesized in original wording."
   },
   {
     "id": "libretexts-art104-visual-elements",
@@ -12388,6 +12983,66 @@
     "notes": "Supports: folders can be created inside other folders (sub-folders) as many levels deep as wanted; referencing a file uses the filename in the same folder, folder-name plus forward slash for a subfolder, and '..' for the folder above; the Windows file system uses backslashes (e.g. C:\\Windows) while forward slashes are used elsewhere; keep related files together in one folder and all project folders in one central folder. Reference-only; original wording used."
   },
   {
+    "id": "mdn-glossary-browser",
+    "title": "Browser (MDN Web Docs Glossary)",
+    "provider": "MDN Web Docs (Mozilla)",
+    "url": "https://developer.mozilla.org/en-US/docs/Glossary/Browser",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "license": "CC-BY-SA-2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Defines a browser as a program that retrieves and displays web pages and follows hyperlinks, the most familiar user agent, using a rendering engine. Lists Safari, Chrome, Edge, Firefox, Opera as common browsers. Facts synthesized into original prose; no wording copied."
+  },
+  {
+    "id": "mdn-how-the-internet-works",
+    "title": "How does the Internet work?",
+    "provider": "MDN Web Docs (Mozilla)",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/How_does_the_Internet_work",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Supports the network-of-networks description, ISPs as interconnected routers, IP address as unique device identifier (four dot-separated numbers, e.g. 192.0.2.172), routers forwarding packets like a post office, and the key internet-vs-web distinction ('The Internet is an infrastructure, whereas the Web is a service built on top of the infrastructure'). Facts synthesized; no MDN wording reproduced."
+  },
+  {
+    "id": "mdn-how-the-web-works",
+    "title": "How the web works",
+    "provider": "MDN Web Docs (Mozilla)",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "license": "CC-BY-SA-2.5",
+    "licenseUrl": "https://developer.mozilla.org/docs/MDN/Writing_guidelines/Attrib_copyright_license",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Defines clients (user devices + browser) and servers (computers that store pages and send a copy on request); lists the page-load steps (DNS lookup, HTTP request over TCP/IP, 200 OK response, packets reassembled and rendered) and the HTML/CSS/JavaScript roles. Facts restated in original prose."
+  },
+  {
+    "id": "mdn-http-overview",
+    "title": "An overview of HTTP",
+    "provider": "MDN Web Docs (Mozilla)",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "license": "CC-BY-SA-2.5",
+    "licenseUrl": "https://developer.mozilla.org/docs/MDN/Writing_guidelines/Attrib_copyright_license",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "HTTP is a client-server protocol for fetching resources, layered on TCP (network layer IP); requests carry a method, path, version, headers and optional body; responses carry a version, status code/message, headers and optional body. HTTPS = HTTP over a TLS-encrypted TCP connection. HTTP is stateless. Supports HTTP/HTTPS sections."
+  },
+  {
     "id": "mdn-image-file-types",
     "title": "Image file type and format guide",
     "provider": "MDN Web Docs (Mozilla)",
@@ -12441,6 +13096,21 @@
     "notes": "MDN reference. Read on 2026-08-19. Supports: browsers use the MIME/media type, not the file extension, to decide how to process a resource; filename suffixes are 'sometimes used, especially on Microsoft Windows,' are not meaningful on all operating systems (Linux, macOS), and 'there is no guarantee they are correct.' Grounds the label-not-guarantee claim and the MIME-type vocabulary/compare-contrast. Reference-only; no wording reproduced beyond the short attributed quote in the lesson."
   },
   {
+    "id": "mdn-tls-security-guide",
+    "title": "Transport Layer Security (TLS) — Practical security implementation guides (MDN)",
+    "provider": "MDN Web Docs (Mozilla)",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/TLS",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "license": "CC-BY-SA-2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "States TLS provides confidentiality, authenticity (server identity via certificate), and integrity, defeating man-in-the-middle interception. Supports the point that the padlock means an encrypted, certificate-verified connection, not that the site's content or intentions are trustworthy."
+  },
+  {
     "id": "mdn-video-codecs",
     "title": "Web video codec guide",
     "provider": "MDN Web Docs (Mozilla)",
@@ -12452,6 +13122,36 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-19",
     "notes": "Primary technical reference for compression, frame rate, resolution, bitrate, and codecs. Read on 2026-08-19. Supports: a video codec compresses/encodes video and later decodes it for playback or editing; most video codecs are lossy (decoded video does not precisely match the source, and more compression means more loss). Uncompressed scale: a 1920x1080 full-color frame at 4 bytes/pixel = 8,294,400 bytes, ~249 MB per second at 30 fps. Frame rate: about 12 fps is the minimum for perceived motion, 24 fps is the film standard, ~30 fps standard TV, 24 fps or higher is satisfactorily smooth with 30 or 60 fps an ideal target; more fps means a larger file. Higher resolution directly increases file size. Higher bitrate generally improves quality and increases file size. H.264/AVC is broadly compatible; H.265/HEVC targets about half the file size of AVC at comparable quality but is less widely supported. Key frames (intra-frames / i-frames) are full frames inserted periodically; inter-frame compression stores differences between frames. Reference-only; no wording reproduced, all prose original."
+  },
+  {
+    "id": "mdn-webextensions-what-are",
+    "title": "What are extensions? (MDN Web Docs)",
+    "provider": "MDN Web Docs (Mozilla)",
+    "url": "https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/What_are_WebExtensions",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "license": "CC-BY-SA-2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Describes extensions as add-ons built from HTML/CSS/JS that can modify page content and appearance, block ads, and access browser features (tabs, bookmarks, cookies, history) via a manifest permission system with elevated privileges beyond ordinary web pages. Supports both the capability and the risk framing."
+  },
+  {
+    "id": "mdn-what-is-a-domain-name",
+    "title": "What is a domain name?",
+    "provider": "MDN Web Docs (Mozilla)",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_domain_name",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "license": "CC-BY-SA-2.5",
+    "licenseUrl": "https://developer.mozilla.org/docs/MDN/Writing_guidelines/Attrib_copyright_license",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Domain names are human-readable stand-ins for IP addresses, read right to left (TLD then labels/SLD/subdomains). Describes the DNS lookup flow: browser checks local cache, otherwise queries a DNS server that returns the IP address, then the browser connects to the server. Supports the DNS section."
   },
   {
     "id": "mdn-what-is-a-progressive-web-app",
@@ -12467,6 +13167,21 @@
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-19",
     "notes": "Explains that platform-specific apps are usually distributed and installed via the vendor's app store, while traditional websites/web apps are reached by opening a browser and navigating to a URL, with no need to install from an app store. Grounds the app-store and web-app (no-install) distribution methods. Reference only; no text reproduced."
+  },
+  {
+    "id": "mdn-what-is-a-url",
+    "title": "What is a URL?",
+    "provider": "MDN Web Docs (Mozilla)",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_URL",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "license": "CC-BY-SA-2.5",
+    "licenseUrl": "https://developer.mozilla.org/docs/MDN/Writing_guidelines/Attrib_copyright_license",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "URL as the address of a unique resource; parts are scheme (e.g. https), authority (host/domain + optional port such as 443), path, and optional query (?q=...) and fragment (#...). Fragment is not sent to the server. Used to support the URL-anatomy section."
   },
   {
     "id": "medicare-gov-how-medicare-is-funded",
@@ -12905,6 +13620,84 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-19",
     "notes": "Authoritative for: a filename is a base name plus optional extension separated by a period; a directory is a special type of file following the same naming rules; a path is the string representation of the directory hierarchy to a file, with components separated by a backslash; fully qualified (absolute) vs relative paths and the current directory; '.' is the current directory and '..' the parent. Page dated 2024-08-28. Prose written independently."
+  },
+  {
+    "id": "ms-powerpoint-animations-vs-transitions",
+    "title": "The difference between animations and transitions",
+    "provider": "Microsoft Support",
+    "url": "https://support.microsoft.com/en-us/powerpoint/the-difference-between-animations-and-transitions",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Supports: an animation is a special effect that applies to a single element on a slide (text, shape, image); a transition is the special effect when you exit one slide and move to the next; a transition applies to an entire slide and only one transition can be applied per slide; the four animation categories are entrance (make an object appear), exit (make it disappear), emphasis (draw attention to a visible object), and motion paths (move an object). Read via WebFetch on 2026-08-19. Reference-only; original wording used."
+  },
+  {
+    "id": "ms-powerpoint-presenter-view",
+    "title": "Present on multiple monitors (and view speaker notes privately)",
+    "provider": "Microsoft Support",
+    "url": "https://support.microsoft.com/en-us/office/present-on-multiple-monitors-and-view-speaker-notes-privately-ccfa1894-e3ef-4955-9c3a-444d58248093",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Supports: Presenter view lets you view the presentation with speaker notes on one computer (e.g., your laptop) while only the slides themselves appear on the screen the audience sees; on the Slide Show tab, Use Presenter View enables it, and newer versions set it up automatically when a second monitor is connected. Verified via WebSearch result text quoting the Microsoft Support page on 2026-08-19. Reference-only; original wording used."
+  },
+  {
+    "id": "ms-powerpoint-slide-layout",
+    "title": "What is a slide layout?",
+    "provider": "Microsoft Support",
+    "url": "https://support.microsoft.com/en-us/office/what-is-a-slide-layout-99da5716-92ee-4b6a-a0b5-beea45150f3a",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Supports: slide layouts are templates that contain formatting, positioning, and placeholder boxes for the content on a slide; placeholders are the dotted-line containers that hold titles, body text, tables, charts, SmartArt, pictures, clip art, videos, and sounds; the colors, fonts, effects, and background of a slide are collectively the theme; named examples include the Title slide and Title and Content layout. Read via WebFetch on 2026-08-19. Reference-only; original wording used."
+  },
+  {
+    "id": "ms-support-coauthor-word",
+    "title": "Collaborate on Word documents with real-time co-authoring",
+    "provider": "Microsoft Support",
+    "url": "https://support.microsoft.com/en-us/office/collaborate-on-word-documents-with-real-time-co-authoring-7dd3040c-3f30-4fdd-bab0-8586492a1f1d",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Supports: several people can work in the same document and, if others are working on it, you see their presence and the changes they are making; real-time collaboration requires a current app/subscription, and without it you can still edit simultaneously but must save from time to time to exchange changes; the shared document opens from a link in the browser, i.e. it lives in a shared online location. Reference-only; prose written independently."
+  },
+  {
+    "id": "ms-support-delete-files-onedrive",
+    "title": "Delete files or folders in OneDrive",
+    "provider": "Microsoft Support",
+    "url": "https://support.microsoft.com/en-us/office/delete-files-or-folders-in-onedrive-21fe345a-e488-4fa7-932b-f053c1bebe8a",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "States that deleted files and folders go to the cloud service's recycle bin, 'from which you can restore files if you need to.' Used, as a named example, to support that a deletion in a synced cloud folder is reflected in the cloud/other devices and that the deleted file sits in an online recycle bin restorable for a limited window. The two-way (bidirectional) sync behavior—deletions propagating to all synced devices—is the definitional behavior of file sync and is stated in Microsoft's own delete-confirmation UI and community guidance; the lesson frames it as the general sync mechanic rather than attributing exact wording. Copyrighted; REFERENCE_ONLY; original wording only. Read via WebFetch."
+  },
+  {
+    "id": "ms-support-teams-channels",
+    "title": "Teams and channels in Microsoft Teams",
+    "provider": "Microsoft Support",
+    "url": "https://support.microsoft.com/en-us/office/first-things-to-know-about-teams-and-channels-5e4fd702-85f5-48d7-ae14-98821a1f90d3",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Supports: channels are where a team's conversations, files, and apps are shared with the whole team; a standard channel is open to all team members and its posts are searchable by others; a private channel is limited to invited people; distinct from one-on-one or group chats. Used for the channels-vs-direct-messages distinction. Reference-only; original wording used."
   },
   {
     "id": "mueller-brockmann-swiss-grid",
@@ -13479,6 +14272,19 @@
     "notes": "Downloaded the 236-page PDF from nvlpubs.nist.gov and extracted the executive summary and chapters 1, 2 and 5 locally with pypdf. This is the foundational U.S. document behind reliability-based load criteria. Supports the description of allowable stress design and why it cannot give constant safety, the Ferrybridge counteracting-loads argument, the LRFD partial-factor form, the limit-state list that places buckling beside strength, p_f = Phi(-beta), the notional-probability caveat, and the target beta values of 3.0, 2.5 and 1.75."
   },
   {
+    "id": "nca-tread-lightly-digital-footprint",
+    "title": "Tread Lightly Online: How to Check and Manage Your Digital Footprint",
+    "provider": "National Cybersecurity Alliance (StaySafeOnline)",
+    "url": "https://www.staysafeonline.org/articles/tread-lightly-online-how-to-check-and-manage-your-digital-footprint",
+    "sourceType": "reference",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "National Cybersecurity Alliance consumer article. Advises periodically searching your own name on search engines to see what is publicly visible, warns that 'even private posts and DMs can leak,' recommends reviewing and adjusting privacy settings regularly (suggesting roughly every three months), and recommends identifying and deleting old or unused accounts because fewer accounts mean a smaller footprint. Supports the persistence-of-private-content and management claims. REFERENCE_ONLY; described in original wording."
+  },
+  {
     "id": "ncees-about",
     "title": "About NCEES",
     "provider": "National Council of Examiners for Engineering and Surveying (NCEES)",
@@ -14019,6 +14825,19 @@
     "notes": "Fetched 2026-08-19. Gives sigma = 5.670374419... x 10^-8 W*m^-2*K^-4 from the CODATA 2022 adjustment, listed as exact with no standard uncertainty. This is the value used in every radiation calculation published in the lesson."
   },
   {
+    "id": "nist-csrc-glossary-botnet",
+    "title": "Botnet - Glossary",
+    "provider": "NIST Computer Security Resource Center (CSRC)",
+    "url": "https://csrc.nist.gov/glossary/term/botnet",
+    "sourceType": "government",
+    "usage": "PUBLIC_DOMAIN",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Authoritative definition: 'botnet' from 'robot' + 'network'; criminals use Trojans to breach several users' computers, take control, and organize the infected machines into a network of bots the criminal remotely manages. Read via curl."
+  },
+  {
     "id": "nist-csrc-glossary-fail-safe",
     "title": "NIST Computer Security Resource Center glossary entry: fail safe",
     "provider": "U.S. National Institute of Standards and Technology",
@@ -14069,6 +14888,45 @@
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-19",
     "notes": "Fetched 2026-08-19. Defines hardware as 'the material physical components of a system' (sourced to CNSSI 4009-2015 / NIST SP 800-53 Rev.5, SP 800-37 Rev.2, SP 800-171r3). Supports the hardware-versus-software distinction. Federal work; definition re-expressed in original wording, not quoted at length."
+  },
+  {
+    "id": "nist-csrc-glossary-rootkit",
+    "title": "Rootkit - Glossary",
+    "provider": "NIST Computer Security Resource Center (CSRC)",
+    "url": "https://csrc.nist.gov/glossary/term/rootkit",
+    "sourceType": "government",
+    "usage": "PUBLIC_DOMAIN",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Authoritative definition: a set of tools used by an attacker after gaining root-level access to conceal the attacker's activities and maintain root-level access through covert means. Read via curl."
+  },
+  {
+    "id": "nist-csrc-glossary-spyware",
+    "title": "Spyware - Glossary",
+    "provider": "NIST Computer Security Resource Center (CSRC)",
+    "url": "https://csrc.nist.gov/glossary/term/spyware",
+    "sourceType": "government",
+    "usage": "PUBLIC_DOMAIN",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Authoritative definition: software secretly/surreptitiously installed into a system to gather information on individuals or organizations without their knowledge; a type of malicious code. Read via curl."
+  },
+  {
+    "id": "nist-csrc-glossary-worm",
+    "title": "Worm - Glossary",
+    "provider": "NIST Computer Security Resource Center (CSRC)",
+    "url": "https://csrc.nist.gov/glossary/term/worm",
+    "sourceType": "government",
+    "usage": "PUBLIC_DOMAIN",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Authoritative definition: 'A self-replicating program that propagates itself through a network onto other computer systems without requiring a host program or any user intervention to replicate.' Used for the virus-vs-worm distinction. Read via curl."
   },
   {
     "id": "nist-cuu-expanded-uncertainty",
@@ -14258,17 +15116,17 @@
     "notes": "PDF (doi 10.6028/NIST.GCR.16-003) downloaded and read locally after text extraction with pypdf. Supports: the CAD-to-STEP-to-CAM/CMM workflow in which a model-based definition authored by an OEM is consumed downstream by manufacturing and inspection software; the requirement that data be validated after every transformation because corruption can occur during translation; the point that once the definition is no longer a visually inspectable 2D drawing, automated algorithms are needed to verify it; and the treatment of boundary-representation (BREP) geometry as the geometric content that is mapped between formats."
   },
   {
-    "id": "nist-glossary-firmware",
-    "title": "Firmware — Glossary, NIST Computer Security Resource Center",
-    "provider": "National Institute of Standards and Technology (NIST)",
-    "url": "https://csrc.nist.gov/glossary/term/firmware",
+    "id": "nist-glossary-backup",
+    "title": "Backup - Glossary",
+    "provider": "NIST Computer Security Resource Center (CSRC)",
+    "url": "https://csrc.nist.gov/glossary/term/backup",
     "sourceType": "government",
-    "usage": "REFERENCE_ONLY",
+    "usage": "PUBLIC_DOMAIN",
     "attributionRequired": false,
     "aiIngestionChecked": true,
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-19",
-    "notes": "NIST glossary defines firmware as computer programs and data stored in hardware (typically ROM/PROM or flash) that provide low-level control and generally cannot be modified during execution. Supports the firmware 'middle case' section. Traces to CNSSI 4009-2015; synthesized."
+    "notes": "Defines backup as 'A copy of files and programs made to facilitate recovery if necessary,' sourced to NIST SP 800-34 Rev. 1 (also CNSSI 4009-2015, NISTIR 7621 Rev. 1). Used to anchor the sync-is-not-a-backup distinction: a backup is a separate copy made for recovery, whereas sync mirrors the current state. Read via WebFetch of the CSRC glossary page."
   },
   {
     "id": "nist-glossary-operating-system",
@@ -14297,6 +15155,32 @@
     "notes": "NIST glossary defines software as 'computer programs and associated data that may be dynamically written or modified during execution,' distinguishing it from firmware and hardware. Used for the core definition and the hardware/software distinction. Definitions trace to CNSSI 4009-2015 / RFC 4949; wording synthesized, not copied."
   },
   {
+    "id": "nist-glossary-spear-phishing",
+    "title": "spear phishing — Computer Security Resource Center Glossary",
+    "provider": "NIST (National Institute of Standards and Technology)",
+    "url": "https://csrc.nist.gov/glossary/term/spear_phishing",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "U.S. government glossary (public domain). Definition read 2026-08-19 via curl with a browser user-agent: 'A colloquial term that can be used to describe any highly targeted phishing attack' (glossary source: DoJ Report on Phishing). Used for the spear-phishing variant."
+  },
+  {
+    "id": "nist-glossary-whaling",
+    "title": "whaling — Computer Security Resource Center Glossary",
+    "provider": "NIST (National Institute of Standards and Technology)",
+    "url": "https://csrc.nist.gov/glossary/term/whaling",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "U.S. government glossary (public domain). Definition read 2026-08-19 via curl with a browser user-agent: 'A specific kind of phishing that targets high-ranking members of organizations.' Used for the whaling variant."
+  },
+  {
     "id": "nist-hardness-standard-reference-materials",
     "title": "Hardness Standard Reference Materials (SRM)",
     "provider": "Materials Science and Engineering Division, National Institute of Standards and Technology",
@@ -14308,6 +15192,19 @@
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-19",
     "notes": "Supports that NIST manufactures hardness SRMs as transfer standards for calibrating and verifying hardness testing machines, currently covering the Rockwell C and N scales and the Knoop and Vickers microhardness scales, and that hardness measurement is a common acceptance criterion in the steel industry. Used for the point that hardness readings are traceable to a maintained national scale rather than being self-evident numbers."
+  },
+  {
+    "id": "nist-ir-7621r1-small-business-infosec",
+    "title": "Small Business Information Security: The Fundamentals (NISTIR 7621 Rev. 1)",
+    "provider": "National Institute of Standards and Technology (NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/ir/2016/NIST.IR.7621r1.pdf",
+    "sourceType": "government",
+    "usage": "PUBLIC_DOMAIN",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Author C. Paulsen and R. Toth, November 2016. The Recover section states backups 'let you restore your data in case a computer breaks, an employee makes a mistake, or a malicious program infects your system'; advises storing backups away from your location in a protected place (offsite); notes you can store backups on removable media or online using a Cloud Service Provider, to 'do your due diligence when selecting a Cloud Service Provider,' and that it is 'recommended that you encrypt all data prior to storing it in the Cloud.' Frames making backups as Protect and restoring as Recover. Used for the sync-is-not-a-backup point and the trust/privacy/encryption considerations. PDF downloaded and text extracted locally (pypdf) after the fetcher could not parse it inline."
   },
   {
     "id": "nist-jres-119-012-srm-1450-retrospective",
@@ -14415,6 +15312,58 @@
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-19",
     "notes": "PDF (doi 10.6028/NIST.SP.330-2019) downloaded and read locally after text extraction. This is the U.S. edition of the SI Brochure and is the NIST document that reflects the post-2019 SI; it is what NIST directs readers to instead of SP 811 for current SI guidance. Supports: the constant-based definitions of all seven base units in U.S. spelling, in particular the kilogram defined by fixing h = 6.626 070 15 x 10^-34 J s (= kg m^2 s^-1) with the metre and second defined via c and dNuCs; the entry-into-force date of 20 May 2019; and the derived-unit tables. nvlpubs.nist.gov serves no robots.txt (404)."
+  },
+  {
+    "id": "nist-sp-800-145-cloud-definition",
+    "title": "The NIST Definition of Cloud Computing (SP 800-145)",
+    "provider": "National Institute of Standards and Technology (NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf",
+    "sourceType": "government",
+    "usage": "PUBLIC_DOMAIN",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Authors P. Mell and T. Grance, published September 2011 (this copy dated 2012). Defines cloud computing as a model for on-demand network access to a shared pool of configurable computing resources (networks, servers, storage, applications, services) provisioned with minimal management effort. Lists the five essential characteristics (on-demand self-service, broad network access, resource pooling, rapid elasticity, measured service), three service models (SaaS, PaaS, IaaS), and four deployment models. Used for the definition of cloud storage, the SaaS delivery point, and the metered-capacity/network-dependence characteristics. Read via WebFetch of the NIST PDF."
+  },
+  {
+    "id": "nist-sp-800-34r1",
+    "title": "NIST SP 800-34 Rev. 1: Contingency Planning Guide for Federal Information Systems",
+    "provider": "National Institute of Standards and Technology (NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-34r1.pdf",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Downloaded the PDF and extracted text with pypdf. May 2010, by Marianne Swanson et al. Section 5 defines the three common backup methods: 'Full. A full backup captures all files on the disk or within the folder selected for backup.' 'Incremental. An incremental backup captures files that were created or changed since the last backup, regardless of backup type.' 'Differential. A differential backup stores files that were created or modified since the last full backup.' Section 3.4.2 states 'It is good business practice to store backed-up data offsite.' Used for backup-type definitions, their restore trade-offs, and offsite storage practice."
+  },
+  {
+    "id": "nist-sp-800-63b-4",
+    "title": "NIST Special Publication 800-63B, Digital Identity Guidelines: Authentication and Authenticator Management (Revision 4)",
+    "provider": "National Institute of Standards and Technology (NIST), U.S. Department of Commerce",
+    "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+    "sourceType": "standards-body",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Authoritative U.S. standards publication, Revision 4 finalized August 26, 2025 (read via WebFetch of the official HTML at pages.nist.gov/800-63-4). Supports the memorized-secret (password) requirements used in the lesson: SHALL require 15-character minimum for single-factor passwords and 8-character minimum when used only within MFA; SHOULD permit a maximum of at least 64 characters; SHALL NOT require periodic password changes and force change only on evidence of compromise; SHALL NOT impose composition rules; SHALL screen prospective passwords against a blocklist of commonly used, expected, or compromised values (e.g., breach corpuses); SHALL allow password managers and autofill and SHOULD permit paste. Also the basis for noting this reversed older forced-rotation/complexity advice. Illustrative entropy figures were computed independently (95^8 ~ 53 bits; 7776^5 ~ 65 bits) and verified with Python, not taken from the source. Canonical current URL is the 800-63-4 path; the older 800-63-3 (Revision 3) URL is a different, superseded document. No wording reproduced."
+  },
+  {
+    "id": "nist-sp-800-63b-digital-identity",
+    "title": "NIST Special Publication 800-63B: Digital Identity Guidelines — Authentication and Lifecycle Management",
+    "provider": "National Institute of Standards and Technology (NIST)",
+    "url": "https://pages.nist.gov/800-63-3/sp800-63b.html",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Authoritative standard. Supports the three factor types (something you know / have / are), Authenticator Assurance Levels (AAL1-3), the RESTRICTED status of PSTN/SMS out-of-band authenticators with guidance to consider device swap / SIM change / number porting, and that manually entered OTPs are not verifier-impersonation-resistant because manual entry does not bind the output to the session (verifier impersonation resistance required at AAL3). Read via WebFetch 2026-08-19."
   },
   {
     "id": "nist-sp-811-2008",
@@ -15121,6 +16070,35 @@
     "notes": "State education agency guidance. Supports the three-component structure (student performance, conditions, criterion); the explicit rejection of verbs such as 'learn', 'understand' and 'become familiar with' on the ground that a teacher cannot observe a student understanding; the definition of conditions as the equipment or material required for the demonstration, and the note that conditions can be omitted when they follow from instruction alone; and the warning that vague standards such as 'to the satisfaction of the instructor' are unusable and that a fixed percentage criterion is inappropriate for tasks where partial accuracy is unacceptable. Page carries a NYSED copyright notice; no wording reproduced."
   },
   {
+    "id": "oer-beginning-excel-2019",
+    "title": "Beginning Excel 2019",
+    "provider": "Noreen Brown, Barbara Lave, Julie Romey; Open Oregon Educational Resources (Open Textbook Library)",
+    "url": "https://open.umn.edu/opentextbooks/textbooks/70",
+    "sourceType": "open-textbook",
+    "usage": "REFERENCE_ONLY",
+    "license": "CC BY-NC-SA",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Open textbook (2017, updated 2019), license CC BY-NC-SA per the Open Textbook Library record read via WebFetch on 2026-08-19. Confirms an introductory scope: mathematical computations, formulas, functions, logical and lookup functions, presenting data with charts, tables, and multiple-sheet files, for users without prior spreadsheet experience. Used to corroborate cell addressing, formulas/functions, and charts. NonCommercial-ShareAlike; no wording adapted, facts restated in original prose."
+  },
+  {
+    "id": "oer-exploring-public-speaking-ch9",
+    "title": "Exploring Public Speaking, Chapter 9: Presentation Aids in Speaking",
+    "provider": "Barton & Tucker, Dalton State College (Maricopa Open Digital Press)",
+    "url": "https://open.maricopa.edu/exploringpublicspeaking/chapter/chapter-9-presentation-aids-in-speaking/",
+    "sourceType": "open-textbook",
+    "usage": "REFERENCE_ONLY",
+    "license": "CC BY-NC-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Supports: when a slide has too much text the audience must choose between reading it and listening, and an audience member cannot do both; slides are best used for visual reinforcement and clarification rather than as a script; each aid should be a direct, uncluttered example of a specific point; use text large enough to read (avoid fonts much smaller than 22 point, especially on handouts) and high contrast such as white on dark or black on light backgrounds. License CC BY-NC-SA 4.0 (NonCommercial) confirmed in page footer. Read via curl with a browser user-agent on 2026-08-19 after the fetcher and mirrors returned 403. Reference-only; no prose reproduced."
+  },
+  {
     "id": "oer-generalist-practice-human-services",
     "title": "Generalist Practice - Introduction to Human Services",
     "provider": "Open Oregon Educational Resources (chapter by Aikia Fricke and Ferris State University Department of Social Work)",
@@ -15149,6 +16127,35 @@
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-19",
     "notes": "OER chapter applying Robin Williams' four principles (contrast, repetition, alignment, proximity) to document design, naming The Non-Designer's Design Book as an essential reference used in design programs. Supports the invisible-line framing of alignment and the 'place related objects close together to show connectedness' framing of proximity, with print/document examples (resumes, captions near photos). Book license CC BY-NC-SA 4.0 (page footer confirmed via curl; the plain fetcher received HTTP 403). Facts synthesized; no wording reproduced."
+  },
+  {
+    "id": "oer-most-excellent-spreadsheets-textbook-2025",
+    "title": "The Most EXCELlent OER Spreadsheets Textbook Published (in 2025)",
+    "provider": "Marcus Lacher; Minnesota State Colleges and Universities (Open Textbook Library)",
+    "url": "https://open.umn.edu/opentextbooks/textbooks/the-most-excellent-oer-spreadsheets-textbook-published-in-2025",
+    "sourceType": "open-textbook",
+    "usage": "REFERENCE_ONLY",
+    "license": "CC BY-NC-SA",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Open textbook (2025), license CC BY-NC-SA per the Open Textbook Library catalogue record read via WebFetch on 2026-08-19. Catalogue confirms coverage of data entry/editing/formatting, formulas and functions, statistical/logical (IF) functions, data visualization/charts, and data management including sorting, filtering, and subtotals. Used to corroborate the spreadsheet-fundamentals scope and the cell/formula/function vocabulary. Because the license carries NonCommercial and ShareAlike terms, no wording was adapted; facts restated in original prose."
+  },
+  {
+    "id": "oer-pm-basics-communication-types",
+    "title": "Types of Communication (Project Management Basics, 8.3)",
+    "provider": "Kirkwood Community College (Pressbooks OER)",
+    "url": "https://kirkwood.pressbooks.pub/projectmanagementbasics/chapter/8-3-types-of-communication/",
+    "sourceType": "open-textbook",
+    "usage": "REFERENCE_ONLY",
+    "license": "CC BY-NC-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Open textbook. Defines synchronous communication as all parties taking part at the same time (live meeting, conference/audio/video call, computer-assisted conference with a jointly edited document, instant messaging, texting) and asynchronous communication as not requiring parties to be present at the same time (mail, fax, email, project blog). License CC BY-NC-SA 4.0 confirmed in page footer; NonCommercial, so treated as reference-only. Page read via curl with a browser user-agent on 2026-08-19 after a 403 to the fetcher. Facts synthesized; no prose reproduced."
   },
   {
     "id": "ohchr-icescr",
@@ -16425,6 +17432,36 @@
     "notes": "Page fetched and read. Verifies the classroom significant-figure conventions that NIST's guides do not state in teaching form: multiplication and division limited by the factor with the fewest significant figures; addition and subtraction limited to the decimal place of the least precise term; zeros significant except as placeholders; trailing-zero ambiguity in a value like 1300 resolved by scientific notation; and exact numbers, including defined conversion factors such as 100 cm per 1 m, not limiting significant figures. The NC/SA terms are incompatible with reuse here and openstax.org's robots.txt disallows GPTBot on /books/, so this source is reference-only: the rules were verified and then written from scratch, and every numerical example in the lesson is EliExplains' own and was executed in Python before publication."
   },
   {
+    "id": "openstax-wss-collab-editing-reviewing",
+    "title": "Workplace Software and Skills, 3.4 Collaborative Editing and Reviewing in Microsoft Word",
+    "provider": "OpenStax (Rice University)",
+    "url": "https://openstax.org/books/workplace-software-skills/pages/3-4-collaborative-editing-and-reviewing-in-microsoft-word",
+    "sourceType": "open-textbook",
+    "usage": "REFERENCE_ONLY",
+    "license": "CC BY-NC-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Supports track changes (records edits in distinct colors, shows who edited and when, accept/reject individually or all at once), comments (add, reply, delete or resolve), and the spelling/grammar checker plus its limit that it cannot catch a correctly spelled misused word. Non-commercial license; reference only."
+  },
+  {
+    "id": "openstax-wss-software-basics",
+    "title": "Workplace Software and Skills, 2.1 Software Basics",
+    "provider": "OpenStax (Rice University)",
+    "url": "https://openstax.org/books/workplace-software-skills/pages/2-1-software-basics",
+    "sourceType": "open-textbook",
+    "usage": "REFERENCE_ONLY",
+    "license": "CC BY-NC-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Supports the definition of a word processor (creates text documents such as memos, letters, reports), its wide use, and examples (Microsoft Word as most widely used, Google Docs, Open Office Writer), plus headings being usable to make a table of contents. Non-commercial license; used as reference only, wording original."
+  },
+  {
     "id": "opentextbc-basic-kitchen-food-service-mgmt",
     "title": "Basic Kitchen and Food Service Management (The Principles of Menu Engineering; Menu Costing and Pricing)",
     "provider": "BCcampus Open Education / go2HR",
@@ -17123,6 +18160,73 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-18",
     "notes": "Abstract read via the Europe PMC REST API (PMID 37196207); full text is paywalled and was not obtained. Supports the finding that navigation did not significantly increase the rate of community service provider connections or the rate of need resolution relative to the randomized control group, and that when connections were made resources were often insufficient to resolve the need. Used only for those two findings, which the CMS final evaluation executive summary independently corroborates and cites."
+  },
+  {
+    "id": "rfc-1958-internet-architecture",
+    "title": "RFC 1958: Architectural Principles of the Internet",
+    "provider": "IETF / RFC Editor",
+    "url": "https://www.rfc-editor.org/rfc/rfc1958.txt",
+    "sourceType": "standards-body",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Supports the principle that there should ideally be one protocol at the internet level (IP), kept independent of hardware medium and addressing so diverse networks interconnect, and the end-to-end argument that higher-level functions belong at the endpoints."
+  },
+  {
+    "id": "rfc-791-internet-protocol",
+    "title": "RFC 791: Internet Protocol (DARPA Internet Program Protocol Specification)",
+    "provider": "IETF / RFC Editor",
+    "url": "https://www.rfc-editor.org/rfc/rfc791.txt",
+    "sourceType": "standards-body",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Supports IP's scope: deliver a package of bits (an internet datagram) from source to destination over interconnected networks; implements addressing and fragmentation/reassembly; 32-bit fixed-length addresses; explicitly provides no end-to-end reliability, flow control, or sequencing."
+  },
+  {
+    "id": "rfc-793-tcp",
+    "title": "RFC 793: Transmission Control Protocol (DARPA Internet Program Protocol Specification)",
+    "provider": "IETF / RFC Editor",
+    "url": "https://www.rfc-editor.org/rfc/rfc793.txt",
+    "sourceType": "standards-body",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Supports TCP as a highly reliable host-to-host protocol on packet-switched networks that adds ordered, reliable delivery, flow control, and recovery from lost/damaged/duplicated data on top of IP's unreliable datagram service."
+  },
+  {
+    "id": "rfc-8200-ipv6",
+    "title": "RFC 8200: Internet Protocol, Version 6 (IPv6) Specification",
+    "provider": "IETF / RFC Editor",
+    "url": "https://www.rfc-editor.org/rfc/rfc8200.html",
+    "sourceType": "standards-body",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Supports IPv6 as successor to IPv4, increasing address size from 32 bits to 128 bits to support many more addressable nodes and more addressing hierarchy; motivates IPv4 address exhaustion."
+  },
+  {
+    "id": "rfc-9110-http-semantics",
+    "title": "RFC 9110: HTTP Semantics",
+    "provider": "IETF (Internet Engineering Task Force)",
+    "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "sourceType": "standards-body",
+    "usage": "REFERENCE_ONLY",
+    "license": "IETF Trust Legal Provisions (BSD-style / RFC)",
+    "licenseUrl": "https://trustee.ietf.org/license-info",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Authoritative definition: HTTP is a family of stateless, application-level request/response protocols; clients send request messages toward an identified origin server, which responds; resources are identified by URIs using http or https schemes. Used to anchor the HTTP definition and client-server model."
   },
   {
     "id": "richmond-social-diagnosis-1917",
@@ -20040,6 +21144,19 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-18",
     "notes": "Full text retrieved from the ERIC full-text server and the catalogue record verified through the ERIC API. Used for the practitioner-facing formulation of the three-second minimum of uninterrupted silence, for the reframing of wait time as think time in which the silence is for processing rather than for waiting, and for the point that pauses occur at several distinct places in a lesson rather than only after a teacher question - the digest names eight, including the pause within a student's response and the pause after it. No wording reproduced."
+  },
+  {
+    "id": "statcounter-browser-market-share",
+    "title": "Browser Market Share Worldwide (StatCounter GlobalStats)",
+    "provider": "StatCounter GlobalStats",
+    "url": "https://gs.statcounter.com/browser-market-share",
+    "sourceType": "reference",
+    "usage": "LINK_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-19",
+    "notes": "Worldwide browser share, July 2026 snapshot: Chrome 68.22%, Safari 16.47%, Edge 5.37%, Firefox 3.34%, Samsung Internet 2.06%, Opera 1.88%. Used as a dated, attributed data point; figures rounded in the lesson and explicitly dated."
   },
   {
     "id": "statcounter-os-market-share",

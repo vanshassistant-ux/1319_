@@ -1,0 +1,179 @@
+{
+  "topicId": "computer-literacy:foundations:multifactor-authentication",
+  "subjectId": "computer-literacy",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "MFA (also called 2FA / two-step verification) requires two or more authenticators from different categories",
+      "The three factor categories: something you know, something you have, something you are",
+      "Why a stolen password alone cannot open an MFA-protected account",
+      "Common methods and relative strength: SMS/voice (weakest), authenticator apps / TOTP and push (middle), phishing-resistant FIDO/WebAuthn security keys and passkeys (strongest)",
+      "What makes an authenticator phishing-resistant (cryptographically bound to the real site)"
+    ],
+    "supporting": [
+      "Threats that weaken SMS and app-based MFA: phishing, SIM swapping, SS7 exploitation, push bombing",
+      "Passkeys are FIDO credentials, phishing-resistant, with no shared secret",
+      "PKI-based MFA (government PIV/CAC smart cards) as another phishing-resistant form",
+      "Federal agencies are required by OMB to adopt phishing-resistant MFA"
+    ],
+    "outOfScope": [
+      "How to create or manage strong passwords (owned by Password Security topic)",
+      "How to recognize and report phishing messages in detail (owned by Phishing topic)",
+      "Privacy trade-offs and data protection (owned by Privacy topic)",
+      "Malware types and defenses (owned by Malware topic)",
+      "Step-by-step vendor-specific MFA setup instructions"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "MFA is a security control that requires a user to present a combination of two or more different authenticators (something you know, something you have, or something you are) to verify identity for login.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cisa-implementing-phishing-resistant-mfa", "cisa-more-than-a-password", "nist-sp-800-63b-digital-identity"],
+      "status": "supported"
+    },
+    {
+      "claim": "The three authentication factor categories are something you know (e.g., a password or PIN), something you have (e.g., an authenticator app or a confirmation text on your phone), and something you are (e.g., a fingerprint or face scan).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cisa-more-than-a-password", "cisa-turn-on-mfa", "nist-sp-800-63b-digital-identity"],
+      "status": "supported"
+    },
+    {
+      "claim": "With MFA enabled, if one factor such as a password is compromised, unauthorized users cannot access the account because they cannot also provide the second factor; users who enable MFA are significantly less likely to be hacked.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cisa-more-than-a-password", "cisa-turn-on-mfa", "cisa-implementing-phishing-resistant-mfa"],
+      "status": "supported"
+    },
+    {
+      "claim": "Not all forms of MFA are equally secure; CISA lists MFA forms from strongest to weakest as phishing-resistant MFA (FIDO/WebAuthn, PKI-based), then app-based authentication (OTP, push with number matching, token OTP), then SMS or voice, which should be used only as a last resort.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cisa-implementing-phishing-resistant-mfa"],
+      "status": "supported"
+    },
+    {
+      "claim": "SMS or voice MFA is vulnerable to phishing, SS7 protocol exploitation, and SIM-swap attacks; app-based OTP codes are vulnerable to phishing but resistant to SIM-swap and SS7 attacks because they are generated on the device.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cisa-implementing-phishing-resistant-mfa"],
+      "status": "supported"
+    },
+    {
+      "claim": "FIDO/WebAuthn authentication is the widely available phishing-resistant method; a private cryptographic key stays on the user's device or hardware key and the authenticator is bound to the legitimate site, so it will not authenticate on a look-alike phishing domain. Authenticators can be roaming (USB/NFC hardware keys) or platform (built into a laptop or phone).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cisa-implementing-phishing-resistant-mfa", "fido-alliance-passkeys"],
+      "status": "supported"
+    },
+    {
+      "claim": "A passkey is a FIDO credential for passwordless authentication: a cryptographic key stored on the user's devices and unlocked the same way the device is unlocked (biometric, PIN); passkeys are phishing-resistant, always strong, and involve no shared secret.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["fido-alliance-passkeys", "cisa-implementing-phishing-resistant-mfa"],
+      "status": "supported"
+    },
+    {
+      "claim": "Manually entered one-time passwords are not verifier-impersonation-resistant because manual entry does not bind the authenticator output to the specific session; only cryptographic protocols that bind a channel identifier to the authenticator output provide that resistance (NIST AAL3).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-800-63b-digital-identity"],
+      "status": "supported"
+    },
+    {
+      "claim": "NIST treats SMS/PSTN out-of-band authentication as RESTRICTED and advises considering risk indicators such as device swap, SIM change, or number porting before delivering a secret over the PSTN.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-800-63b-digital-identity"],
+      "status": "supported"
+    },
+    {
+      "claim": "The U.S. Office of Management and Budget requires federal agencies to adopt phishing-resistant MFA methods; CISA calls phishing-resistant MFA the gold standard.",
+      "claimType": "LEGAL",
+      "sourceIds": ["cisa-implementing-phishing-resistant-mfa"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether SMS-based MFA should be recommended at all.",
+      "positions": [
+        "CISA: any MFA is better than none, and SMS can serve as a temporary/last-resort option while migrating to stronger MFA.",
+        "NIST SP 800-63B: PSTN/SMS out-of-band authentication is RESTRICTED and requires alternatives and risk assessment."
+      ],
+      "resolution": "Both agree SMS is the weakest option and stronger methods are preferred. The lesson presents SMS as genuine MFA that beats a password alone but is the weakest tier, and directs readers to move to authenticator apps or passkeys where available, matching both sources."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic placeholder text ('a foundational concept', 'a label on a toolbox drawer') with no actual information about authentication factors, MFA methods, or their security properties. None of it was usable and it was discarded entirely."
+  ],
+  "correctionsNeeded": [
+    "Replaced boilerplate that never defined MFA with the actual definition and the three factor categories.",
+    "Added the substance the assignment requires: factor categories, the different-category rule, method strength ranking, and phishing-resistant MFA (security keys and passkeys).",
+    "Rewrote all five placeholder questions, which tested nothing about the topic, into item-level questions grounded in CISA and NIST."
+  ],
+  "rightsIssues": [
+    "CISA and NIST publications are U.S. federal government works and are generally public domain; facts synthesized and prose written fresh regardless.",
+    "The two CISA 'Secure Our World' consumer pages (Turn On MFA, More than a Password) are labeled Archived Content; their factual substance (factor categories, MFA basics) is evergreen and corroborated by the current phishing-resistant MFA fact sheet and NIST SP 800-63B, so they are used as reference for definitions only.",
+    "FIDO Alliance passkeys page is industry/standards-body material with unknown reuse license; used REFERENCE_ONLY, no wording reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "cisa-turn-on-mfa",
+      "title": "Turn On MFA (Secure Our World)",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/secure-our-world/turn-mfa",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Consumer-facing MFA guidance. Supports the definition of MFA, the three example methods (texted code, authenticator app generating a new code every 30 seconds, biometrics/facial recognition/fingerprint), and the point that even if an unauthorized user steals your password they cannot meet the second-step requirement. Page carries an 'Archived Content' banner; substance is evergreen and corroborated by current CISA and NIST sources. Read live via curl (browser UA) 2026-08-19; HTTP 200."
+    },
+    {
+      "id": "cisa-more-than-a-password",
+      "title": "More than a Password",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/MFA",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the three factor categories named explicitly (Something You Know = PIN/password; Something You Have = authentication application or a confirmation text; Something You Are = fingerprint or face scan), the layered-defense rationale ('even if a malicious cyber actor compromises one factor... they will be unable to meet the second authentication requirement'), that MFA users are 'significantly less likely to get hacked,' the alternate names (2FA, two-step, etc.), and that popular forms include SMS/voice, application-based, phishing-resistant, and biometric. Page carries an 'Archived Content' banner; substance corroborated by current fact sheet and NIST. Read live via curl (browser UA) 2026-08-19; HTTP 200."
+    },
+    {
+      "id": "cisa-implementing-phishing-resistant-mfa",
+      "title": "Implementing Phishing-Resistant MFA (Fact Sheet, October 2022)",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/sites/default/files/publications/fact-sheet-implementing-phishing-resistant-mfa-508c.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Primary source for the strength ranking. Defines MFA as requiring two or more different authenticators; states not all MFA is equally secure. Table 1 ranks forms strongest to weakest: (1) Phishing-resistant MFA = FIDO/WebAuthn and PKI-based, 'gold standard,' resistant to phishing; (2) App-based = OTP, push with number matching, token OTP, vulnerable to phishing but resistant to push bombing/SS7/SIM swap; (3) SMS or Voice, vulnerable to phishing, SS7, and SIM swap, 'should only be used as a last resort.' Describes threats: phishing, push bombing, SS7 exploitation, SIM swap. Explains FIDO/WebAuthn (roaming USB/NFC vs platform authenticators; can add biometric/PIN) and PKI-based (PIV/CAC smart cards). Notes OMB requires agencies to adopt phishing-resistant MFA. Downloaded and text-extracted with pypdf 2026-08-19; HTTP 200."
+    },
+    {
+      "id": "nist-sp-800-63b-digital-identity",
+      "title": "NIST Special Publication 800-63B: Digital Identity Guidelines — Authentication and Lifecycle Management",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://pages.nist.gov/800-63-3/sp800-63b.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Authoritative standard. Supports the three factor types (something you know / have / are), Authenticator Assurance Levels (AAL1-3), the RESTRICTED status of PSTN/SMS out-of-band authenticators with guidance to consider device swap / SIM change / number porting, and that manually entered OTPs are not verifier-impersonation-resistant because manual entry does not bind the output to the session (verifier impersonation resistance required at AAL3). Read via WebFetch 2026-08-19."
+    },
+    {
+      "id": "fido-alliance-passkeys",
+      "title": "Passkeys: Passwordless Authentication",
+      "provider": "FIDO Alliance",
+      "url": "https://fidoalliance.org/passkeys/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Defines passkeys as a password-replacement technology: FIDO credentials for passwordless authentication using cryptographic key pairs, phishing-resistant, always strong, no shared secrets, unlocked by the same method used to unlock the device (biometric, PIN), and either synced across devices or device-bound. Corroborates that passkeys inherit FIDO/WebAuthn phishing resistance. Reuse license not stated; REFERENCE_ONLY, no wording reproduced. Read live via curl (browser UA) 2026-08-19; HTTP 200."
+    }
+  ]
+}

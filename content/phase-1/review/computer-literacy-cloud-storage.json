@@ -1,0 +1,298 @@
+{
+  "id": "computer-literacy:foundations:cloud-storage",
+  "subjectSlug": "computer-literacy",
+  "unitSlug": "foundations",
+  "slug": "cloud-storage",
+  "title": "Cloud Storage",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "computer-literacy",
+    "foundations",
+    "cloud-storage",
+    "file-sync",
+    "data-backup"
+  ],
+  "in30Seconds": "Cloud storage keeps your files on a provider's remote servers—computers in data centers you reach over the internet—instead of only on your own device. A synced folder mirrors those files across your phone, laptop, and the web, so a change made in one place appears everywhere. You can share files or links and set whether others may view or edit. It is convenient and gives you an off-device copy, but it needs internet, trusts the provider with your data, and syncing is not the same as a backup.",
+  "whyItMatters": "Most coursework now lives in cloud storage: you draft an essay on a lab computer, finish it on your laptop, and submit from your phone, all from the same synced folder. Knowing how syncing and sharing actually work helps you collaborate without overwriting a teammate, grant the right level of access, and avoid the common trap of assuming a synced copy protects you. It does not: a mistaken deletion or a ransomware infection spreads through the sync to every device. Understanding cloud storage—and its limits—lets you use it for convenience while keeping a real backup for safety.",
+  "learningObjectives": [
+    "Define cloud storage and relate it to NIST's model of cloud computing.",
+    "Explain how file syncing mirrors changes across your devices and the provider's servers.",
+    "Distinguish sharing permission levels, such as view-only versus edit access.",
+    "Evaluate the benefits and considerations of cloud storage compared with local storage.",
+    "Explain why syncing is not the same as a backup."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "What cloud storage is",
+      "body": "Cloud storage means keeping your files on a provider's remote servers—physical computers housed in data centers—and reaching them over the internet, rather than only on the local drive inside your own device. NIST defines cloud computing as a model for on-demand network access to a shared pool of configurable computing resources, such as networks, servers, storage, and applications, that can be provisioned with minimal management effort. Storage is one of those pooled resources. For an individual, consumer cloud storage is usually delivered as software as a service: you sign in through an app or a browser, and the provider runs the servers, capacity, and maintenance. NIST lists five essential characteristics of this model, including on-demand self-service (you add space or files yourself, without contacting anyone), broad network access (you reach it from many kinds of devices), and measured service (capacity is metered, which is why plans are sold by the gigabyte). Local storage, by contrast, keeps files only on hardware you physically hold—an internal disk, a USB drive—so they are available without a network but travel only as far as that device does."
+    },
+    {
+      "heading": "Syncing across your devices",
+      "body": "Many cloud services offer a synced folder: a folder on your device whose contents are kept mirrored with a copy on the provider's servers and, in turn, with the same folder on your other signed-in devices. When you add, edit, rename, or delete a file in that folder, the service copies the change up to the server and back down to everywhere else, usually within seconds of a connection. The practical payoff is that you stop emailing files to yourself—the document you saved on a desktop is already current on your laptop and phone. The subtlety is that sync is bidirectional and mirrors the current state; it is not versioned safekeeping. If you delete a file on one device, that deletion travels to the others. Most providers move a deleted file to an online recycle bin or trash where it can be restored for a limited window, but the mirrored copies are gone from normal view. (Files and Folders covers files, paths, and the Trash in general.)"
+    },
+    {
+      "heading": "Sharing and permissions",
+      "body": "Beyond your own devices, cloud storage lets you share a file or folder with other people, either by inviting specific accounts or by generating a link. When you share, you choose a permission level. The core distinction is view-only access, where the other person can open and usually download the file but not change it, versus edit access, where they can modify it. Some services add finer roles—for example a commenter who can annotate but not edit, or an owner who can change other people's permissions. Choosing the right level matters: a view-only link suits handing in read-only work or distributing a syllabus, while edit access is for genuine collaborators. Sending an edit link when you meant view-only is a common and avoidable slip. (Real-time co-editing itself is covered by Collaboration Platforms.)"
+    },
+    {
+      "heading": "Benefits and considerations",
+      "body": "The benefits are concrete. You can reach your files from anywhere with an internet connection; you get far more capacity than a phone or laptop holds; sharing is a link instead of a large attachment; and, because a copy lives off your device, losing or breaking the device does not lose the files. The considerations are just as concrete. Cloud storage needs an internet connection to reach the current copy. You are trusting the provider with your data, which raises privacy and security questions—who can see it, how it is protected, and what happens if an account is breached. NIST's small-business guidance advises doing due diligence when choosing a cloud provider and encrypting sensitive data before storing it in the cloud. There is usually a cost once you exceed a free tier, billed by capacity. And access depends on the account: lose the password or the account, and you can lose the files. (Privacy is treated in depth by the Privacy topic.)"
+    },
+    {
+      "heading": "Sync is not a backup",
+      "body": "This is the point most worth remembering. NIST defines a backup as a copy of files and programs made to facilitate recovery—a separate, retained copy you can restore from after something goes wrong. A synced folder is not that. Because sync mirrors the current state, the very events a backup should protect you from—an accidental deletion, a file corrupted by a bad save, or ransomware that encrypts your files—propagate through the sync to every device holding that folder. The provider's recycle bin buys you a limited recovery window, but it is not a substitute for a real backup. NIST's small-business guidance treats restoring from a backup as a recovery activity precisely because a backup is kept apart from the working copy, often offsite and disconnected. The honest rule: use cloud sync for convenience and sharing, and keep a genuine backup—following the strategy the Backups topic covers—for safety."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "Cloud storage",
+      "definition": "A service that keeps your files on a provider's internet-connected servers so you can reach them from your devices, rather than storing them only on local hardware."
+    },
+    {
+      "term": "Cloud computing (NIST)",
+      "definition": "A model of on-demand network access to a shared, managed pool of computing resources such as storage, servers, and applications."
+    },
+    {
+      "term": "Data center",
+      "definition": "A facility of networked computers and storage where a provider runs the servers that hold cloud data."
+    },
+    {
+      "term": "Syncing (file sync)",
+      "definition": "Keeping the contents of a folder mirrored across a device, a provider's servers, and other signed-in devices, so a change in one place is reflected in the others."
+    },
+    {
+      "term": "Local storage",
+      "definition": "Data kept on hardware you physically control, such as an internal disk or USB drive, available without a network."
+    },
+    {
+      "term": "Permission level",
+      "definition": "The degree of access granted to someone you share with, such as view-only versus the ability to edit."
+    },
+    {
+      "term": "Software as a service (SaaS)",
+      "definition": "A delivery model in which you use a provider-run application over the network instead of installing and maintaining it yourself."
+    },
+    {
+      "term": "Backup",
+      "definition": "A separate, retained copy of files made so they can be restored after loss, deletion, or damage."
+    },
+    {
+      "term": "Recycle bin (trash)",
+      "definition": "A holding area where deleted files remain, restorable for a limited time, before permanent removal."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Your files usually live inside one device, like books that sit on one shelf in your room. Cloud storage keeps a copy of those files on big, always-on computers that a company runs, and lets your phone, tablet, and laptop all look at the same copy over the internet. A synced folder is the clever part: whatever you do to a file in that folder—add it, change it, throw it away—quietly happens on all your devices too, because they are kept matching. You can also let a friend see your file, and decide whether they can only look at it or actually change it. The catch is that 'kept matching' cuts both ways. If you delete something by mistake, the deletion matches everywhere as well. That is why a synced folder is handy but is not a safety net.",
+    "analogy": "A synced folder is like a group chat for one file: everyone signed in sees the same latest message, and if you delete a message, it disappears for the whole group—not just for you.",
+    "analogyLimits": "The analogy breaks down because a synced file has one live copy that every device shows, while a group chat keeps a running history of every message. And a real backup is more like a photo you printed and put in a drawer: deleting the chat does nothing to the print, whereas deleting a synced file removes it from the mirror on every device at once."
+  },
+  "workedExample": "Maya keeps her term paper in a synced cloud folder. She edits it on the library desktop; by the time she opens her laptop at home, the latest version is already there—sync copied the change through the provider's servers. She shares a view-only link with her professor for feedback and gives her lab partner edit access to the methods section. The next week she accidentally deletes the whole folder on her phone; the deletion syncs, and the files vanish from her laptop too. She recovers them from the provider's online recycle bin within its retention window—but had she waited too long, or had ransomware encrypted the files instead, sync alone would not have saved her. The separate backup on her external drive would have.",
+  "commonMistakes": [
+    {
+      "mistake": "Assuming a synced cloud folder is a backup.",
+      "correction": "Sync mirrors the current state, so deletions and ransomware propagate to every device. A backup is a separate, retained copy you can restore from; keep one in addition to sync."
+    },
+    {
+      "mistake": "Sharing an edit link when you only meant to let someone read the file.",
+      "correction": "Match the permission level to the need—view-only for read access, edit only for real collaborators—and check the link's setting before sending."
+    },
+    {
+      "mistake": "Believing your cloud files are always available.",
+      "correction": "Reaching the current copy needs an internet connection, and access depends on your account; without either, you may not get to your files."
+    },
+    {
+      "mistake": "Treating cloud storage as automatically private.",
+      "correction": "You are trusting the provider with your data. Understand who can access it and consider encrypting sensitive files, as NIST advises for cloud storage."
+    },
+    {
+      "mistake": "Thinking an emptied recycle bin or a lost account is recoverable.",
+      "correction": "Once a provider's recycle bin is emptied or its retention window passes, the files are gone; losing the account password can also lock you out permanently."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Cloud storage",
+      "b": "Local storage",
+      "distinction": "Cloud keeps files on a provider's internet-reachable servers (access anywhere, needs a network, trusts the provider); local keeps them on hardware you hold (works offline, but travels only with that device)."
+    },
+    {
+      "a": "Syncing",
+      "b": "Backup",
+      "distinction": "Sync mirrors one current state across devices for convenience; a backup is a separate retained copy kept for recovery. Sync propagates deletions; a backup survives them."
+    },
+    {
+      "a": "View-only access",
+      "b": "Edit access",
+      "distinction": "View-only lets someone open and usually download a file but not change it; edit access lets them modify it and sometimes reshare it."
+    }
+  ],
+  "keyTakeaway": "Cloud storage puts your files on a provider's servers and syncs them across your devices for convenient, shareable, off-device access—but because sync mirrors the current state, it is not a backup, and it depends on the internet and on trusting the provider.",
+  "questionBank": [
+    {
+      "id": "computer-literacy:foundations:cloud-storage:1",
+      "prompt": "What does cloud storage do with your files?",
+      "options": [
+        "Stores them only on the internal drive of your current device.",
+        "Keeps them on a provider's internet-connected servers so you can reach them from your devices.",
+        "Compresses them so they take up no space on any device.",
+        "Converts them into a format only the provider can open."
+      ],
+      "correctIndex": 1,
+      "explanation": "Cloud storage keeps files on a provider's remote servers reached over the internet, an application of NIST's cloud computing model. It does not restrict files to one local drive (A), does not compress them to zero (C), and does not change them into a provider-only format (D).",
+      "difficulty": "recall",
+      "skill": "Define cloud storage.",
+      "sourceIds": [
+        "nist-sp-800-145-cloud-definition"
+      ]
+    },
+    {
+      "id": "computer-literacy:foundations:cloud-storage:2",
+      "prompt": "In a synced cloud folder, what happens when you delete a file on one of your devices?",
+      "options": [
+        "Nothing changes on your other devices.",
+        "The file is duplicated on your other devices as a safeguard.",
+        "The file is permanently and immediately erased with no way to recover it.",
+        "The deletion is mirrored to your other devices, though the file usually sits in an online recycle bin for a limited time."
+      ],
+      "correctIndex": 3,
+      "explanation": "Sync mirrors the current state, so the deletion propagates to your other devices; most providers keep the deleted file in a recycle bin or trash, restorable for a limited window. It does not leave the others untouched (A), duplicate the file (B), or necessarily erase it beyond recovery at once (C).",
+      "difficulty": "understanding",
+      "skill": "Explain sync behavior.",
+      "sourceIds": [
+        "ms-support-delete-files-onedrive",
+        "nist-glossary-backup"
+      ]
+    },
+    {
+      "id": "computer-literacy:foundations:cloud-storage:3",
+      "prompt": "You want your professor to read your paper but not change it. Which sharing setting fits?",
+      "options": [
+        "View-only access, letting them open and usually download the file without editing it.",
+        "Edit access, letting them modify the file.",
+        "Owner access, letting them manage everyone's permissions.",
+        "No sharing is possible without granting edit access."
+      ],
+      "correctIndex": 0,
+      "explanation": "View-only access lets someone open and usually download a file without changing it—right for read-only feedback. Edit (B) and owner (C) allow changes, and sharing does not require granting edit access (D).",
+      "difficulty": "application",
+      "skill": "Choose an appropriate permission level.",
+      "sourceIds": [
+        "google-drive-help-share-files"
+      ]
+    },
+    {
+      "id": "computer-literacy:foundations:cloud-storage:4",
+      "prompt": "Why is a synced cloud folder not a substitute for a backup?",
+      "options": [
+        "Because cloud servers are always slower than local drives.",
+        "Because synced files cannot be shared with anyone.",
+        "Because sync mirrors the current state, so an accidental deletion or ransomware encryption propagates to every synced copy, while a backup is a separate retained copy kept for recovery.",
+        "Because backups can only be stored on paper."
+      ],
+      "correctIndex": 2,
+      "explanation": "A backup is a separate copy made to facilitate recovery; sync keeps one mirrored current state, so the very events you would want to recover from spread through the sync. Server speed (A) is irrelevant, synced files can be shared (B), and backups are digital, not paper-only (D).",
+      "difficulty": "analysis",
+      "skill": "Distinguish syncing from backup.",
+      "sourceIds": [
+        "nist-glossary-backup",
+        "nist-ir-7621r1-small-business-infosec"
+      ]
+    },
+    {
+      "id": "computer-literacy:foundations:cloud-storage:5",
+      "prompt": "Which of these is a consideration or limitation of relying on cloud storage, rather than a benefit?",
+      "options": [
+        "You can reach your files from many different devices.",
+        "You get more capacity than a phone or laptop holds.",
+        "Sharing is a link instead of a large email attachment.",
+        "Reaching the current copy needs an internet connection and trusts the provider with your data."
+      ],
+      "correctIndex": 3,
+      "explanation": "Options A, B, and C are benefits of cloud storage. Needing an internet connection and trusting the provider with your data (D) are considerations—ones NIST's guidance addresses by urging due diligence in choosing a provider and encrypting sensitive data before storing it in the cloud.",
+      "difficulty": "application",
+      "skill": "Evaluate benefits versus considerations.",
+      "sourceIds": [
+        "nist-sp-800-145-cloud-definition",
+        "nist-ir-7621r1-small-business-infosec"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "computer-literacy:foundations:cloud-storage:1",
+      "prompt": "What does cloud storage do with your files?",
+      "options": [
+        "Stores them only on the internal drive of your current device.",
+        "Keeps them on a provider's internet-connected servers so you can reach them from your devices.",
+        "Compresses them so they take up no space on any device.",
+        "Converts them into a format only the provider can open."
+      ],
+      "correctIndex": 1,
+      "explanation": "Cloud storage keeps files on a provider's remote servers reached over the internet, an application of NIST's cloud computing model. It does not restrict files to one local drive (A), does not compress them to zero (C), and does not change them into a provider-only format (D).",
+      "difficulty": "recall",
+      "skill": "Define cloud storage.",
+      "sourceIds": [
+        "nist-sp-800-145-cloud-definition"
+      ]
+    },
+    {
+      "id": "computer-literacy:foundations:cloud-storage:2",
+      "prompt": "In a synced cloud folder, what happens when you delete a file on one of your devices?",
+      "options": [
+        "Nothing changes on your other devices.",
+        "The file is duplicated on your other devices as a safeguard.",
+        "The file is permanently and immediately erased with no way to recover it.",
+        "The deletion is mirrored to your other devices, though the file usually sits in an online recycle bin for a limited time."
+      ],
+      "correctIndex": 3,
+      "explanation": "Sync mirrors the current state, so the deletion propagates to your other devices; most providers keep the deleted file in a recycle bin or trash, restorable for a limited window. It does not leave the others untouched (A), duplicate the file (B), or necessarily erase it beyond recovery at once (C).",
+      "difficulty": "understanding",
+      "skill": "Explain sync behavior.",
+      "sourceIds": [
+        "ms-support-delete-files-onedrive",
+        "nist-glossary-backup"
+      ]
+    },
+    {
+      "id": "computer-literacy:foundations:cloud-storage:3",
+      "prompt": "You want your professor to read your paper but not change it. Which sharing setting fits?",
+      "options": [
+        "View-only access, letting them open and usually download the file without editing it.",
+        "Edit access, letting them modify the file.",
+        "Owner access, letting them manage everyone's permissions.",
+        "No sharing is possible without granting edit access."
+      ],
+      "correctIndex": 0,
+      "explanation": "View-only access lets someone open and usually download a file without changing it—right for read-only feedback. Edit (B) and owner (C) allow changes, and sharing does not require granting edit access (D).",
+      "difficulty": "application",
+      "skill": "Choose an appropriate permission level.",
+      "sourceIds": [
+        "google-drive-help-share-files"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "computer-literacy:foundations:files-and-folders",
+    "computer-literacy:foundations:backups",
+    "computer-literacy:foundations:collaboration-platforms",
+    "computer-literacy:foundations:privacy"
+  ],
+  "sources": [
+    "nist-sp-800-145-cloud-definition",
+    "nist-glossary-backup",
+    "nist-ir-7621r1-small-business-infosec",
+    "google-drive-help-share-files",
+    "ms-support-delete-files-onedrive"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Three NIST sources are public-domain U.S. government works; two vendor help pages used REFERENCE_ONLY as named examples, with no source prose reproduced.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Boilerplate draft discarded. Content synthesized from NIST SP 800-145 (cloud computing definition and characteristics), the NIST CSRC glossary and NISTIR 7621 Rev. 1 (backup as a recovery copy; offsite storage; cloud provider due diligence and encryption), and vendor help documentation cited as examples for share-permission levels and deletion-to-recycle-bin behavior. All prose original."
+  },
+  "contentHash": "263d5e54dceb2cf3",
+  "status": "source-verified",
+  "public": false
+}

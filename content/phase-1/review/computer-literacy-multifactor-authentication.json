@@ -1,0 +1,298 @@
+{
+  "id": "computer-literacy:foundations:multifactor-authentication",
+  "subjectSlug": "computer-literacy",
+  "unitSlug": "foundations",
+  "slug": "multifactor-authentication",
+  "title": "Multifactor Authentication",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "computer-literacy",
+    "foundations",
+    "security",
+    "authentication",
+    "mfa",
+    "passkeys"
+  ],
+  "in30Seconds": "Multifactor authentication (MFA, or 2FA) asks you to prove your identity in two or more ways drawn from different categories: something you know (a password or PIN), something you have (a phone, authenticator app, or security key), and something you are (a fingerprint or face scan). Because the factors come from different categories, a stolen password alone is not enough to get in. Not all methods are equally strong: texted codes are the weakest, authenticator-app codes are better, and phishing-resistant options like security keys and passkeys are the strongest.",
+  "whyItMatters": "Passwords leak constantly through breaches, reuse, and phishing, and a password by itself is a single point of failure. MFA adds a second lock so that a stolen password is no longer enough, which is why CISA urges turning it on for every important account and why federal agencies are required to move to the strongest, phishing-resistant forms. Knowing the three factor categories, and which methods resist phishing, lets you make a real security decision instead of accepting whatever a service defaults to. This is a baseline skill for coursework, for any job that touches email or company systems, and for protecting your own money and identity online.",
+  "learningObjectives": [
+    "Define multifactor authentication and state the rule that the factors must come from different categories.",
+    "Distinguish the three factor categories: something you know, something you have, and something you are.",
+    "Explain why MFA blocks account takeover even when a password is stolen.",
+    "Rank common MFA methods by strength, from SMS codes to authenticator apps to phishing-resistant security keys and passkeys.",
+    "Apply the different-category rule to judge whether a given login setup actually counts as MFA.",
+    "Explain what makes an authenticator phishing-resistant."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "What MFA is, and the three factor categories",
+      "body": "Multifactor authentication is a login control that requires you to present two or more different authenticators to prove who you are, drawn from separate categories of evidence. CISA and NIST describe three categories. The first is something you know: a memorized secret such as a password or PIN. The second is something you have: a physical item in your possession, such as your phone, an authenticator app running on it, or a small hardware security key. The third is something you are: a biometric trait like a fingerprint or a face scan. The word 'multifactor' is precise. A genuine second factor has to come from a different category than the first, because the whole point is to defend against different kinds of attack at once. A password and a separate PIN are both 'something you know,' so requiring both is still single-factor authentication, not MFA. You will also hear MFA called two-factor authentication, 2FA, two-step verification, or 2-step authentication; for everyday purposes these names describe the same idea of adding a second proof beyond the password."
+    },
+    {
+      "heading": "Why a second factor stops account takeover",
+      "body": "A password is a shared secret, and shared secrets are fragile. They can be guessed from clues on your social media, cracked, reused across sites so that one breach exposes many accounts, or captured through phishing. MFA is a layered defense: even if an attacker compromises one factor, they still cannot log in unless they also satisfy the second requirement, which they usually do not control. If a thief steals your password but the account also demands a code from your phone or a tap on your security key, the stolen password alone gets them nowhere. CISA puts it plainly: users who turn on MFA are significantly less likely to be hacked, because compromising the password no longer compromises the account. This is why MFA is one of the highest-value steps an ordinary person or a whole organization can take, and why the extra ten seconds it costs at login is a bargain against losing your money, your email, or your identity."
+    },
+    {
+      "heading": "Not all MFA is equally strong: methods ranked",
+      "body": "Every form of MFA is better than none, but they do not all resist the same attacks, and CISA ranks them from strongest to weakest. The weakest common method is a one-time code sent by SMS text or voice call. It is real MFA and far better than a password alone, but it is vulnerable to phishing and to two attacks on the phone network: SIM swapping, where an attacker tricks your carrier into moving your number to their own SIM card, and exploitation of the SS7 signaling protocol to intercept the message. CISA says SMS should be used only as a last resort when nothing stronger is available. In the middle are authenticator apps, which generate a fresh time-based one-time password (a TOTP code) every 30 seconds on your device, or send a push notification you approve. These are stronger than SMS because the code never travels over the phone network and cannot be grabbed by a SIM swap, but they are still phishable: a convincing fake login page can trick you into typing the current code, or 'push bombing' can wear you down until you approve a prompt you should not. The strongest tier is phishing-resistant MFA, and it is the gold standard CISA urges organizations to adopt."
+    },
+    {
+      "heading": "Phishing-resistant MFA: security keys and passkeys",
+      "body": "Phishing-resistant MFA defeats the core trick of phishing, which is fooling you into handing your credentials to a fake site. The widely available form is FIDO/WebAuthn authentication, a standard from the FIDO Alliance and the World Wide Web Consortium built into major browsers, operating systems, and phones. It works with a cryptographic key pair instead of a shared code: a private key stays on your device or hardware key and never leaves it, and the authenticator is cryptographically bound to the real website's address. If you land on a look-alike phishing domain, the key simply refuses to respond, so there is no code to steal and nothing to type into the wrong box. FIDO authenticators come as separate hardware security keys that plug in by USB or tap by NFC ('roaming' authenticators), or built into a laptop or phone ('platform' authenticators), and they typically combine 'something you have' with a biometric or PIN. A passkey is the consumer-friendly form of a FIDO credential: a secret stored on your devices and unlocked the same way you unlock the device, with a fingerprint, face, or PIN. Because passkeys are FIDO credentials, they inherit the same phishing resistance and, unlike passwords, are always strong and involve no shared secret that a breach can leak. Government smart cards (PIV and CAC) achieve phishing resistance a different way, through a public key infrastructure (PKI). The practical takeaway: turn MFA on everywhere, and where a service offers a security key or passkey, prefer it over a texted code."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "Multifactor authentication (MFA)",
+      "definition": "A login control that requires two or more authenticators from different categories to verify your identity, so a single stolen factor is not enough to get in."
+    },
+    {
+      "term": "Authentication factor",
+      "definition": "A piece of evidence used to prove identity, belonging to one of three categories: something you know, something you have, or something you are."
+    },
+    {
+      "term": "Something you know",
+      "definition": "A knowledge factor, such as a password or PIN, that you must remember and enter."
+    },
+    {
+      "term": "Something you have",
+      "definition": "A possession factor, such as your phone, an authenticator app, or a hardware security key, that you must physically hold."
+    },
+    {
+      "term": "Something you are",
+      "definition": "An inherence factor, a biometric trait such as a fingerprint or face scan tied to your body."
+    },
+    {
+      "term": "Authenticator app",
+      "definition": "A phone app that generates a new time-based one-time password (TOTP) roughly every 30 seconds, used as a second factor without relying on the phone network."
+    },
+    {
+      "term": "Phishing-resistant MFA",
+      "definition": "A form of MFA, such as FIDO/WebAuthn security keys and passkeys, that is cryptographically bound to the real site so it cannot be tricked into authenticating on a fake one."
+    },
+    {
+      "term": "Passkey",
+      "definition": "A FIDO credential that replaces the password with a cryptographic key stored on your device and unlocked by biometric or PIN, giving phishing-resistant sign-in with no shared secret."
+    },
+    {
+      "term": "SIM swapping",
+      "definition": "An attack in which someone convinces a mobile carrier to move a victim's phone number to a SIM card they control, letting them receive that person's SMS security codes."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Logging in with just a password is like opening a door with one key. If someone copies that key, they walk right in. Multifactor authentication adds a second, different kind of check, so one copied key is not enough. The three kinds are something you know (a password), something you have (your phone or a little key fob), and something you are (your fingerprint or face). The rule is that your two checks have to be different kinds. Two passwords do not count, because they are both 'something you know.' The strongest second check is a security key or a passkey, because it only works on the real website and quietly refuses to work on a fake one, so a trickster cannot fool it.",
+    "analogy": "Getting into a bank vault often takes a physical key and a code you punch in. Even a thief who steals the key still cannot open it without the code, and knowing the code is useless without the key. MFA does the same thing for your online accounts: two different kinds of proof, so one stolen piece is not enough.",
+    "analogyLimits": "The vault picture misses how the strongest MFA fights phishing. A texted code or a memorized number can still be tricked out of you by a convincing fake login page. A security key or passkey is smarter than the vault code: it checks the website's real address itself and simply will not respond to an impostor site, which is protection a plain punch-code does not give."
+  },
+  "workedExample": "Jordan turns on MFA for his email. The first time, he chooses text-message codes: at login he types his password, then a six-digit code the service texts him. That is genuine MFA, combining something he knows with something he has. A month later he reads that texted codes can be stolen by SIM swapping, so he switches to an authenticator app that generates a new code every 30 seconds on his phone, off the phone network. Stronger, but he realizes a fake login page could still trick him into typing the current code. So for his most important accounts he registers a passkey. Now signing in means unlocking his phone with his fingerprint, and the passkey proves he is on the genuine site. When a phishing email later lures him to 'email-login-secure.example' instead of his real provider, the passkey refuses to authenticate on the wrong domain, and the attack fails with nothing for him to accidentally hand over.",
+  "commonMistakes": [
+    {
+      "mistake": "Thinking a password plus a security question (or a second password or PIN) counts as multifactor authentication.",
+      "correction": "Both are 'something you know,' so together they are still single-factor. Real MFA combines factors from different categories, such as a password plus a code from your phone."
+    },
+    {
+      "mistake": "Believing all MFA methods are equally safe once MFA is turned on.",
+      "correction": "They are not. SMS codes are the weakest and can be intercepted by SIM swapping; authenticator apps are stronger; security keys and passkeys are phishing-resistant and strongest."
+    },
+    {
+      "mistake": "Assuming MFA makes an account impossible to phish.",
+      "correction": "Codes you type by hand can still be phished or approved under pressure ('push bombing'). Only phishing-resistant MFA, bound to the real site, closes that gap."
+    },
+    {
+      "mistake": "Refusing MFA because SMS codes are imperfect.",
+      "correction": "Any MFA is far better than a password alone. SMS is a fine starting point; move to an authenticator app or a passkey when the option is offered."
+    },
+    {
+      "mistake": "Treating a passkey as just another password to memorize.",
+      "correction": "A passkey is a cryptographic key stored on your device and unlocked by fingerprint, face, or PIN. There is no shared secret to remember, type, or leak in a breach."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "SMS text-message codes",
+      "b": "Authenticator-app codes (TOTP)",
+      "distinction": "Both are 'something you have' second factors, but SMS travels over the phone network and can be stolen by SIM swapping or SS7 attacks, while an app generates the code on your device off that network, making it harder to intercept."
+    },
+    {
+      "a": "Authenticator-app code you type",
+      "b": "A security key or passkey (FIDO/WebAuthn)",
+      "distinction": "A typed code can be entered into a fake login page, so it is phishable; a security key or passkey is cryptographically bound to the real site's address and refuses to authenticate on an impostor domain, so it is phishing-resistant."
+    },
+    {
+      "a": "Password plus a PIN",
+      "b": "Password plus a phone code",
+      "distinction": "Password-plus-PIN uses two knowledge factors, so it is still single-factor; password-plus-phone-code combines two categories, so it qualifies as multifactor authentication."
+    }
+  ],
+  "keyTakeaway": "MFA requires two or more proofs from different categories (know, have, are), so a stolen password alone cannot open your account. Turn it on everywhere, and prefer phishing-resistant options like security keys and passkeys over texted codes.",
+  "questionBank": [
+    {
+      "id": "computer-literacy:foundations:multifactor-authentication:1",
+      "prompt": "What are the three categories of authentication factors that MFA draws from?",
+      "options": [
+        "Something you type, something you click, and something you scan",
+        "Something you know, something you have, and something you are",
+        "Something public, something private, and something shared",
+        "Something local, something remote, and something encrypted"
+      ],
+      "correctIndex": 1,
+      "explanation": "CISA and NIST define the three factor categories as something you know (a password or PIN), something you have (a phone or security key), and something you are (a biometric). The other options are invented groupings that do not match the standard categories.",
+      "difficulty": "recall",
+      "skill": "Recalling the three authentication factor categories",
+      "sourceIds": [
+        "cisa-more-than-a-password",
+        "nist-sp-800-63b-digital-identity"
+      ]
+    },
+    {
+      "id": "computer-literacy:foundations:multifactor-authentication:2",
+      "prompt": "According to CISA, which common MFA method is the weakest and should be used only as a last resort?",
+      "options": [
+        "A passkey unlocked by fingerprint",
+        "A hardware security key using FIDO/WebAuthn",
+        "A one-time code sent by SMS text message",
+        "A time-based code from an authenticator app"
+      ],
+      "correctIndex": 2,
+      "explanation": "CISA ranks SMS or voice codes as the weakest form because they are vulnerable to phishing, SS7 interception, and SIM-swap attacks, and says they should be a last resort. Passkeys and FIDO security keys are phishing-resistant and strongest; authenticator-app codes are stronger than SMS because they do not travel over the phone network.",
+      "difficulty": "understanding",
+      "skill": "Ranking MFA methods by relative strength",
+      "sourceIds": [
+        "cisa-implementing-phishing-resistant-mfa"
+      ]
+    },
+    {
+      "id": "computer-literacy:foundations:multifactor-authentication:3",
+      "prompt": "A login asks for your password and then a fingerprint scan. Why does this qualify as multifactor authentication?",
+      "options": [
+        "Because a fingerprint is impossible for anyone to fake",
+        "Because two separate steps are always considered multifactor",
+        "Because the password is encrypted before it is sent",
+        "Because the two proofs come from different categories: something you know and something you are"
+      ],
+      "correctIndex": 3,
+      "explanation": "MFA requires factors from different categories. A password is 'something you know' and a fingerprint is 'something you are,' so together they are multifactor. Being two steps is not enough on its own (two passwords would not qualify), the claim that fingerprints are unfakeable is false, and encryption is unrelated to the factor rule.",
+      "difficulty": "application",
+      "skill": "Applying the different-category rule to a login setup",
+      "sourceIds": [
+        "cisa-more-than-a-password",
+        "cisa-turn-on-mfa"
+      ]
+    },
+    {
+      "id": "computer-literacy:foundations:multifactor-authentication:4",
+      "prompt": "What makes a FIDO/WebAuthn security key or passkey 'phishing-resistant'?",
+      "options": [
+        "The authenticator is cryptographically bound to the real site's address, so it will not respond to a look-alike phishing site",
+        "It sends the code over an encrypted text message instead of a normal one",
+        "It requires the user to change their password every 30 days",
+        "It hides the login page from search engines so attackers cannot find it"
+      ],
+      "correctIndex": 0,
+      "explanation": "FIDO/WebAuthn uses a cryptographic key pair bound to the legitimate website's origin, so on a fake domain the key simply does not respond and there is no code to steal or mistype. The other options describe unrelated mechanisms; phishing resistance comes from binding to the real site, not from encryption of a text, password rotation, or hiding pages.",
+      "difficulty": "understanding",
+      "skill": "Explaining the mechanism of phishing-resistant MFA",
+      "sourceIds": [
+        "cisa-implementing-phishing-resistant-mfa",
+        "fido-alliance-passkeys"
+      ]
+    },
+    {
+      "id": "computer-literacy:foundations:multifactor-authentication:5",
+      "prompt": "An account requires both a password and a separate 6-digit PIN at login. Why is this NOT true multifactor authentication?",
+      "options": [
+        "Because a PIN is longer than a password and so counts as the same factor",
+        "Because MFA is only possible with a fingerprint or face scan",
+        "Because both the password and the PIN are 'something you know,' so they are the same category of factor",
+        "Because a PIN can never be entered on the same device as a password"
+      ],
+      "correctIndex": 2,
+      "explanation": "MFA requires factors from different categories. A password and a PIN are both knowledge factors ('something you know'), so requiring both is still single-factor authentication. MFA does not require a biometric specifically (a phone code works), PIN length is irrelevant to its category, and there is no rule about which device is used.",
+      "difficulty": "analysis",
+      "skill": "Analyzing whether a setup mixes distinct factor categories",
+      "sourceIds": [
+        "cisa-more-than-a-password",
+        "nist-sp-800-63b-digital-identity"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "computer-literacy:foundations:multifactor-authentication:1",
+      "prompt": "What are the three categories of authentication factors that MFA draws from?",
+      "options": [
+        "Something you type, something you click, and something you scan",
+        "Something you know, something you have, and something you are",
+        "Something public, something private, and something shared",
+        "Something local, something remote, and something encrypted"
+      ],
+      "correctIndex": 1,
+      "explanation": "CISA and NIST define the three factor categories as something you know (a password or PIN), something you have (a phone or security key), and something you are (a biometric). The other options are invented groupings that do not match the standard categories.",
+      "difficulty": "recall",
+      "skill": "Recalling the three authentication factor categories",
+      "sourceIds": [
+        "cisa-more-than-a-password",
+        "nist-sp-800-63b-digital-identity"
+      ]
+    },
+    {
+      "id": "computer-literacy:foundations:multifactor-authentication:2",
+      "prompt": "According to CISA, which common MFA method is the weakest and should be used only as a last resort?",
+      "options": [
+        "A passkey unlocked by fingerprint",
+        "A hardware security key using FIDO/WebAuthn",
+        "A one-time code sent by SMS text message",
+        "A time-based code from an authenticator app"
+      ],
+      "correctIndex": 2,
+      "explanation": "CISA ranks SMS or voice codes as the weakest form because they are vulnerable to phishing, SS7 interception, and SIM-swap attacks, and says they should be a last resort. Passkeys and FIDO security keys are phishing-resistant and strongest; authenticator-app codes are stronger than SMS because they do not travel over the phone network.",
+      "difficulty": "understanding",
+      "skill": "Ranking MFA methods by relative strength",
+      "sourceIds": [
+        "cisa-implementing-phishing-resistant-mfa"
+      ]
+    },
+    {
+      "id": "computer-literacy:foundations:multifactor-authentication:3",
+      "prompt": "A login asks for your password and then a fingerprint scan. Why does this qualify as multifactor authentication?",
+      "options": [
+        "Because a fingerprint is impossible for anyone to fake",
+        "Because two separate steps are always considered multifactor",
+        "Because the password is encrypted before it is sent",
+        "Because the two proofs come from different categories: something you know and something you are"
+      ],
+      "correctIndex": 3,
+      "explanation": "MFA requires factors from different categories. A password is 'something you know' and a fingerprint is 'something you are,' so together they are multifactor. Being two steps is not enough on its own (two passwords would not qualify), the claim that fingerprints are unfakeable is false, and encryption is unrelated to the factor rule.",
+      "difficulty": "application",
+      "skill": "Applying the different-category rule to a login setup",
+      "sourceIds": [
+        "cisa-more-than-a-password",
+        "cisa-turn-on-mfa"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "computer-literacy:foundations:password-security",
+    "computer-literacy:foundations:phishing",
+    "computer-literacy:foundations:privacy",
+    "computer-literacy:foundations:malware"
+  ],
+  "sources": [
+    "cisa-turn-on-mfa",
+    "cisa-more-than-a-password",
+    "cisa-implementing-phishing-resistant-mfa",
+    "nist-sp-800-63b-digital-identity",
+    "fido-alliance-passkeys"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "public-domain U.S. government sources (CISA, NIST) plus reference-only standards-body material (FIDO Alliance); all prose written fresh, no source wording adapted",
+    "researchedAt": "2026-08-19",
+    "transformation": "Facts synthesized from CISA MFA guidance and the CISA phishing-resistant MFA fact sheet, NIST SP 800-63B, and the FIDO Alliance passkeys definition into an original lesson; no source prose reproduced."
+  },
+  "contentHash": "876c3daa8e79a427",
+  "status": "source-verified",
+  "public": false
+}

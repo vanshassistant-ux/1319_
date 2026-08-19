@@ -1,31 +1,31 @@
 # ELIEXPLAINS GLOBAL EDITORIAL PROGRESS
 
-Generated: 2026-08-19T22:45:50.842Z
+Generated: 2026-08-19T23:21:26.542Z
 Counts are computed from the phase content stores by `bun run editorial:progress`.
 
 Subjects total: 44
-Subjects processed: 8
-Subjects remaining: 36
-Subject completion: 18.18%
+Subjects processed: 9
+Subjects remaining: 35
+Subject completion: 20.45%
 
 Total topics: 1319
-Topics processed: 194
+Topics processed: 219
 Topics published: 0
-Topics ready to publish: 194
+Topics ready to publish: 219
 Topics held: 0
 Topics requiring review: 0
-Topics remaining: 1125
-Topic processing: 14.71%
+Topics remaining: 1100
+Topic processing: 16.60%
 
-Verified questions: 970
-Unique source records: 1723
-Source usage classes: REFERENCE_ONLY=1180, PUBLIC_DOMAIN=443, ATTRIBUTION_REQUIRED=64, EXTRACT_AND_ADAPT=35, LINK_ONLY=1
+Verified questions: 1095
+Unique source records: 1839
+Source usage classes: REFERENCE_ONLY=1270, PUBLIC_DOMAIN=463, ATTRIBUTION_REQUIRED=67, EXTRACT_AND_ADAPT=37, LINK_ONLY=2
 
 ## Phase progress
 
 | Phase | Subjects | Topics | Percent |
 | --- | --- | --- | --- |
-| 1 | 8 / 11 | 194 / 282 | 68.79% |
+| 1 | 9 / 11 | 219 / 282 | 77.66% |
 | 2 | 0 / 11 | 0 / 325 | 0.00% |
 | 3 | 0 / 11 | 0 / 337 | 0.00% |
 | 4 | 0 / 11 | 0 / 375 | 0.00% |
@@ -35,7 +35,7 @@ Source usage classes: REFERENCE_ONLY=1180, PUBLIC_DOMAIN=443, ATTRIBUTION_REQUIR
 | Collection | Subjects | Topics | Percent |
 | --- | --- | --- | --- |
 | Professional Studies | 7 / 7 | 166 / 166 | 100.00% |
-| Technology | 0 / 8 | 0 / 257 | 0.00% |
+| Technology | 1 / 8 | 25 / 257 | 9.73% |
 | Business & Money | 0 / 9 | 0 / 243 | 0.00% |
 | Humanities & Culture | 0 / 7 | 0 / 202 | 0.00% |
 | Science & Health | 0 / 6 | 0 / 206 | 0.00% |
@@ -51,5 +51,6 @@ Source usage classes: REFERENCE_ONLY=1180, PUBLIC_DOMAIN=443, ATTRIBUTION_REQUIR
 | criminal-justice-and-criminology | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
 | education | 21 / 21 | 0 | 21 | 0 | 0 | 0 |
 | health-administration | 24 / 24 | 0 | 24 | 0 | 0 | 0 |
+| computer-literacy | 25 / 25 | 0 | 25 | 0 | 0 | 0 |
 | graphic-design-and-digital-media | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
 | engineering-fundamentals | 28 / 28 | 0 | 28 | 0 | 0 | 0 |

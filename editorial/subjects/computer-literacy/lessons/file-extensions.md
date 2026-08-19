@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-A file extension is the short suffix after the last dot in a filename, like the .pdf in report.pdf. It tells the operating system what type of file it is and which program to open it with. Common ones name documents (.docx, .txt, .csv), images (.jpg, .png), audio and video (.mp3, .mp4), archives (.zip), and programs (.exe). The extension is only a label, though, so it can be wrong or faked.
+A file extension is the short suffix after the last dot in a filename, like the `.pdf` in report.pdf. It tells the operating system what type of file it is and which program to open it with. Common ones name documents (`.docx`, `.txt`, `.csv`), images (`.jpg`, `.png`), audio and video (`.mp3`, `.mp4`), archives (`.zip`), and programs (`.exe`). The extension is only a label, though, so it can be wrong or faked.
 
 ## Why This Matters
 
@@ -24,17 +24,17 @@ A file extension is the sequence of characters after the final dot in a filename
 
 ### File association: how the OS uses the extension
 
-The reason a double-click "just works" is a mechanism called file association. The operating system keeps a table that maps each registered extension to a default program. When you install software, its installer typically registers the extensions it handles — a word processor claims .docx, a media player claims .mp4. When you open a file, the system reads the extension, looks up the associated program, and launches it with that file. If no program is registered for the extension, the system asks you to choose one (the "Open with" prompt). You can also change the default for an extension so that, say, all .csv files open in a spreadsheet program instead of a plain-text editor. This is why the same file can behave differently on two computers: the association, not the file, differs.
+The reason a double-click "just works" is a mechanism called file association. The operating system keeps a table that maps each registered extension to a default program. When you install software, its installer typically registers the extensions it handles — a word processor claims `.docx`, a media player claims `.mp4`. When you open a file, the system reads the extension, looks up the associated program, and launches it with that file. If no program is registered for the extension, the system asks you to choose one (the "Open with" prompt). You can also change the default for an extension so that, say, all `.csv` files open in a spreadsheet program instead of a plain-text editor. This is why the same file can behave differently on two computers: the association, not the file, differs.
 
 ### Common extensions by category
 
 Learning a handful of families covers most everyday files.
 
-- **Documents and text:** .txt (plain text), .docx (word-processor documents), .pdf (fixed-layout documents), .csv (comma-separated tabular data), .pptx (slides).
-- **Images:** .jpg/.jpeg (lossy, well suited to photographs), .png (lossless, supports transparency), .gif (limited to 256 colors, supports simple animation), .svg (vector graphics that scale without blurring).
-- **Audio and video:** .mp3 and .wav for sound, .mp4 and .mov for video. Formats like .mp4 are *containers* — a wrapper that holds compressed audio and video streams (the codecs) together — so two .mp4 files can be encoded differently inside.
-- **Archives:** .zip and .7z bundle and compress many files into one.
-- **Programs and scripts:** .exe (a Windows program), .app (a macOS application), and script files such as .bat or .ps1.
+- **Documents and text:** `.txt` (plain text), `.docx` (word-processor documents), `.pdf` (fixed-layout documents), `.csv` (comma-separated tabular data), `.pptx` (slides).
+- **Images:** `.jpg`/`.jpeg` (lossy, well suited to photographs), `.png` (lossless, supports transparency), `.gif` (limited to 256 colors, supports simple animation), `.svg` (vector graphics that scale without blurring).
+- **Audio and video:** `.mp3` and `.wav` for sound, `.mp4` and `.mov` for video. Formats like `.mp4` are *containers* — a wrapper that holds compressed audio and video streams (the codecs) together — so two `.mp4` files can be encoded differently inside.
+- **Archives:** `.zip` and `.7z` bundle and compress many files into one.
+- **Programs and scripts:** `.exe` (a Windows program), `.app` (a macOS application), and script files such as `.bat` or `.ps1`.
 
 The program-and-script family is the one to treat with caution, because opening it runs code rather than displaying content.
 
@@ -44,7 +44,7 @@ An extension advertises what a file claims to be; it does not prove what the fil
 
 ### The security angle: hidden and double extensions
 
-This is where the label becomes a safety issue. To look tidy, many systems — Windows by default — hide the extensions of known file types, so you see "invoice" instead of "invoice.pdf". Attackers exploit that by giving a program two extensions: a file named invoice.pdf.exe is a runnable program (the real type is the last extension, .exe), but with hiding turned on it appears as invoice.pdf, complete with a document-style icon. A user double-clicks expecting a PDF and instead runs malware. Security references catalog this as a recognized masquerading technique, and documented malware campaigns have shipped files such as PreviewReport.DOC.exe and disguised .lnk shortcuts. Two defenses follow directly. First, turn on the setting that shows file extensions so the real suffix is always visible. Second, be wary of executable attachments (.exe, .scr, .lnk, .bat, and similar) arriving by email, and do not open one you were not expecting — the details of malware itself belong to a separate lesson, but the disguised-extension trick is the part that lives in a filename. When in doubt, verify with the sender through another channel before opening.
+This is where the label becomes a safety issue. To look tidy, many systems — Windows by default — hide the extensions of known file types, so you see "invoice" instead of "invoice.pdf". Attackers exploit that by giving a program two extensions: a file named invoice.pdf.exe is a runnable program (the real type is the last extension, `.exe`), but with hiding turned on it appears as invoice.pdf, complete with a document-style icon. A user double-clicks expecting a PDF and instead runs malware. Security references catalog this as a recognized masquerading technique, and documented malware campaigns have shipped files such as PreviewReport.DOC.exe and disguised `.lnk` shortcuts. Two defenses follow directly. First, turn on the setting that shows file extensions so the real suffix is always visible. Second, be wary of executable attachments (`.exe`, `.scr`, `.lnk`, `.bat`, and similar) arriving by email, and do not open one you were not expecting — the details of malware itself belong to a separate lesson, but the disguised-extension trick is the part that lives in a filename. When in doubt, verify with the sender through another channel before opening.
 
 ## Key Vocabulary
 
@@ -52,15 +52,15 @@ This is where the label becomes a safety issue. To look tidy, many systems — W
 - **Filename:** The full name given to a file, which typically includes a base name and an extension joined by a dot.
 - **File association:** The operating system's mapping from an extension to the default program used to open files of that type.
 - **Default program:** The application the system launches automatically when you open a given file type.
-- **Executable:** A file that contains a program the computer runs, rather than data it merely displays; on Windows commonly a .exe.
-- **Archive:** A single file, such as a .zip, that bundles and usually compresses many files together.
+- **Executable:** A file that contains a program the computer runs, rather than data it merely displays; on Windows commonly a `.exe`.
+- **Archive:** A single file, such as a `.zip`, that bundles and usually compresses many files together.
 - **MIME type:** A standardized label like image/jpeg that declares a file's media type, used on the web instead of trusting the extension.
-- **Container format:** A file format such as .mp4 that wraps one or more compressed audio or video streams plus metadata into one file.
+- **Container format:** A file format such as `.mp4` that wraps one or more compressed audio or video streams plus metadata into one file.
 - **Double extension:** A filename with two extensions, such as invoice.pdf.exe, used to disguise a program as a harmless document.
 
 ## Eli-10
 
-Every file has a first name and a last name. The last name is the extension — the little tag after the dot, like .jpg or .docx. The computer reads that tag to decide which app should open the file, the same way a librarian reads a label to know which shelf a book goes on. Change the tag and you have only relabeled the file, not rebuilt it: renaming a photo to end in .txt does not turn the picture into words, it just puts on the wrong nametag. That is why the tag can lie. Some computers hide these tags to look neat, and sneaky people take advantage by giving a program two tags — the fake one you see and the real one that runs it.
+Every file has a first name and a last name. The last name is the extension — the little tag after the dot, like `.jpg` or `.docx`. The computer reads that tag to decide which app should open the file, the same way a librarian reads a label to know which shelf a book goes on. Change the tag and you have only relabeled the file, not rebuilt it: renaming a photo to end in `.txt` does not turn the picture into words, it just puts on the wrong nametag. That is why the tag can lie. Some computers hide these tags to look neat, and sneaky people take advantage by giving a program two tags — the fake one you see and the real one that runs it.
 
 ## Eli's Analogy
 
@@ -70,12 +70,12 @@ An extension is like the label on a jar in the pantry. The label says "sugar," s
 
 ## Worked Example
 
-You finish an essay and your professor requires a PDF. You choose "Save As" and pick PDF, producing essay.pdf. Your teammate emails back essay.pdf.exe "with my edits." On your laptop, extensions are hidden, so it shows as essay.pdf with a document icon — but the real extension is .exe, meaning it is a program, not a document. You open your file settings and enable "show file extensions." Now the full name essay.pdf.exe is visible. Recognizing the double extension, you do not open it; you message your teammate, who confirms they never sent it. You then attach your own genuine essay.pdf, which opens correctly because .pdf is associated with your PDF reader.
+You finish an essay and your professor requires a PDF. You choose "Save As" and pick PDF, producing essay.pdf. Your teammate emails back essay.pdf.exe "with my edits." On your laptop, extensions are hidden, so it shows as essay.pdf with a document icon — but the real extension is `.exe`, meaning it is a program, not a document. You open your file settings and enable "show file extensions." Now the full name essay.pdf.exe is visible. Recognizing the double extension, you do not open it; you message your teammate, who confirms they never sent it. You then attach your own genuine essay.pdf, which opens correctly because `.pdf` is associated with your PDF reader.
 
 ## Common Mistakes
 
 - **Believing that renaming a file's extension converts it to that format.** Renaming only changes the label. To truly convert, use "Save As" or an export/convert feature that rewrites the file's contents.
-- **Assuming a file is safe because it appears to end in .pdf or .jpg.** With extensions hidden, the visible suffix may not be the last one. Show extensions and check for a trailing executable type like .exe or .lnk.
+- **Assuming a file is safe because it appears to end in `.pdf` or `.jpg`.** With extensions hidden, the visible suffix may not be the last one. Show extensions and check for a trailing executable type like `.exe` or `.lnk`.
 - **Thinking the dots inside a name are all extensions.** Only the text after the final dot is the extension; budget.2025.xlsx has the extension xlsx, not 2025.xlsx.
 - **Treating the extension as proof of the file's true contents.** The extension is a hint. Software that must be certain inspects the file's bytes or a declared type such as a MIME type.
 - **Expecting every computer to open a file with the same program.** The program is set by each machine's file associations, which can differ; the file itself is unchanged.
@@ -85,7 +85,7 @@ You finish an essay and your professor requires a PDF. You choose "Save As" and 
 - **File extension vs. file association:** The extension is text in the filename that names the type; the association is the system's rule linking that type to a program.
 - **Extension vs. MIME type:** An extension is a filename suffix that may be wrong or missing; a MIME type is a declared media-type label (image/jpeg) that web software trusts instead of the suffix.
 - **Renaming a file vs. converting a file:** Renaming changes only the extension text; converting rewrites the actual data into a new format.
-- **invoice.pdf vs. invoice.pdf.exe:** The first is a document; the second is a program whose real type is the final .exe, disguised by a fake .pdf when extensions are hidden.
+- **invoice.pdf vs. invoice.pdf.exe:** The first is a document; the second is a program whose real type is the final `.exe`, disguised by a fake `.pdf` when extensions are hidden.
 
 ## Key Takeaway
 

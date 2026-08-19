@@ -1,0 +1,160 @@
+{
+  "topicId": "computer-literacy:foundations:privacy",
+  "subjectId": "computer-literacy",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Personal data and personally identifiable information (PII): what they are and why aggregation makes them matter",
+      "How data is collected: accounts and forms, cookies and pixels/trackers, device fingerprinting, app permissions and advertising identifiers, and location",
+      "The data economy: many free services are funded by monetizing user data, usually via targeted advertising",
+      "Data brokers: companies that aggregate personal data from many sources into profiles and sell access, largely without consumer knowledge",
+      "Trade-offs: convenience and personalization versus exposure",
+      "Protective steps: review privacy settings, limit app permissions, use privacy-respecting tools, think before sharing",
+      "Privacy laws exist (EU GDPR; U.S. state laws such as California's CCPA/CPRA) framed as educational background, not legal advice"
+    ],
+    "supporting": [
+      "Tracking can be linked across a user's devices",
+      "No single tool or setting guarantees privacy, anonymity, or legal compliance",
+      "Data already collected can persist and be sold after a user stops using a service"
+    ],
+    "outOfScope": [
+      "Digital footprint and online reputation from what a person posts (owned by 'Digital Footprints')",
+      "Browser-specific privacy features such as the padlock and private/incognito mode (owned by 'Browsers')",
+      "Account security mechanics such as strong passwords and MFA (owned by 'Password Security' and 'Multi-Factor Authentication')",
+      "Individualized legal advice on whether a specific privacy law applies to a specific situation",
+      "How to build trackers, fingerprinting scripts, or profiling systems"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Personal data is any information relating to an identified or identifiable person and is broad, including names, addresses, email addresses, IP addresses, cookie IDs, phone advertising identifiers, medical records, and identification numbers; personally identifiable information (PII) is the related concept of data that can single out a specific individual.",
+      "claimType": "LEGAL",
+      "sourceIds": ["eu-commission-data-protection-explained", "ca-oag-ccpa"],
+      "status": "supported"
+    },
+    {
+      "claim": "Websites and apps collect data both directly (accounts and forms) and automatically: sites may set a cookie or use a pixel to identify a device, may use device fingerprinting from a browser's unique configuration, and on phones advertisers may use a unique advertising identifier; activity can also be linked across a user's devices.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ftc-how-websites-apps-collect"],
+      "status": "supported"
+    },
+    {
+      "claim": "A cookie is information saved by a web browser that a site can place to recognize a device on future visits and track a user over time; browser privacy settings and extensions give users some control, and location sharing can be limited.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ftc-how-websites-apps-collect"],
+      "status": "supported"
+    },
+    {
+      "claim": "Data brokers collect personal information from extensive online and offline sources, largely without consumers' knowledge, ranging from purchases and social-media activity to warranty registrations, magazine subscriptions, and religious and political affiliations, combine it into profiles, and sell it for marketing, fraud prevention, and other purposes; the FTC's 2014 study of nine brokers found the industry operates with a fundamental lack of transparency, with brokers collecting billions of data elements covering nearly every U.S. consumer.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["ftc-data-brokers-2014"],
+      "status": "supported"
+    },
+    {
+      "claim": "Companies track online activity in order to personalize content, serve targeted advertising, and gather analytics, which is the mechanism by which many nominally free services are funded by user data.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["ftc-how-websites-apps-collect", "ftc-data-brokers-2014"],
+      "status": "supported"
+    },
+    {
+      "claim": "Users can reduce (not eliminate) tracking and exposure by adjusting browser and account privacy settings, blocking or limiting cookies, choosing not to share location, deleting cookies or resetting device advertising identifiers, using opt-out tools, and limiting app permissions.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ftc-how-websites-apps-collect"],
+      "status": "supported"
+    },
+    {
+      "claim": "The EU's General Data Protection Regulation (GDPR) has applied since 25 May 2018 and gives individuals rights over their data, including access, rectification, erasure, restriction, portability, objection, and rights regarding automated decision-making.",
+      "claimType": "LEGAL",
+      "sourceIds": ["eu-commission-data-protection-explained", "eu-gdpr-eurlex-summary"],
+      "status": "supported"
+    },
+    {
+      "claim": "California's Consumer Privacy Act (CCPA), expanded by the California Privacy Rights Act (effective January 1, 2023), gives California residents rights to know what personal information a business collects, to delete it, to correct it, to opt out of its sale or sharing, and to non-discrimination for exercising those rights.",
+      "claimType": "LEGAL",
+      "sourceIds": ["ca-oag-ccpa"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft described 'Privacy' only in abstract, generic terms ('a concept students use to organize information') with no reference to personal data, tracking, data brokers, or privacy law. All of it was discarded as boilerplate."
+  ],
+  "correctionsNeeded": [
+    "Replaced the placeholder definition with the actual subject: control over personal data, how it is collected, the data economy, and privacy law as background.",
+    "Added concrete, verified substance on cookies, trackers, fingerprinting, advertising identifiers, app permissions, location, data brokers, and the GDPR and CCPA.",
+    "Framed all legal content as educational, not legal advice, and explicitly stated that no tool or step guarantees privacy, anonymity, or compliance, per subject-map cautions."
+  ],
+  "rightsIssues": [
+    "FTC pages (consumer.ftc.gov and ftc.gov) are U.S. government works in the public domain; facts were synthesized into original prose, no wording copied.",
+    "European Commission and EUR-Lex pages and the California Attorney General page are official public-sector sources used as REFERENCE_ONLY; the lesson states facts in original wording and does not reproduce their text.",
+    "The 2014 FTC data-broker figures are used as dated, attributed data points and explicitly tied to the 2014 study.",
+    "FTC consumer pages returned HTTP 403 to the automated fetcher; content was retrieved via curl with a standard browser user-agent. The data-broker figures were read from the FTC press release; the report landing page is registered as the canonical URL."
+  ],
+  "sourceRecords": [
+    {
+      "id": "ftc-how-websites-apps-collect",
+      "title": "How Websites and Apps Collect and Use Your Information",
+      "provider": "U.S. Federal Trade Commission — Consumer Advice",
+      "url": "https://consumer.ftc.gov/articles/how-websites-and-apps-collect-and-use-your-information",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "FTC consumer guidance. States sites track activity via cookies or pixels and via device fingerprinting (using a browser's unique configuration); phone apps use a unique advertising identifier; activity can be linked across devices. Explains a cookie as information saved by the browser to recognize a device later. Reasons for tracking: save preferences, personalize content, gather analytics, target ads. Protective steps: adjust browser privacy settings, block sites from seeing history, decline location sharing, delete cookies/history, reset phone identifiers, use opt-out tools, review cookie notices. Retrieved via curl with a browser user-agent (WebFetch got HTTP 403). Facts synthesized into original prose."
+    },
+    {
+      "id": "ftc-data-brokers-2014",
+      "title": "Data Brokers: A Call for Transparency and Accountability (FTC Report, May 2014)",
+      "provider": "U.S. Federal Trade Commission",
+      "url": "https://www.ftc.gov/reports/data-brokers-call-transparency-accountability-report-federal-trade-commission-may-2014",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "FTC study of nine data brokers. Finds brokers operate with a fundamental lack of transparency; collect and store billions of data elements covering nearly every U.S. consumer from extensive online and offline sources, largely without consumers' knowledge (purchases, social-media activity, warranty registrations, magazine subscriptions, religious and political affiliations); combine into profiles and sell for marketing, fraud prevention, and other purposes. Quantitative detail: one broker held information on more than 1.4 billion consumer transactions and 700 billion data elements; another adds more than 3 billion data points per month. Facts read from the FTC press release (ftc.gov/news-events/news/press-releases/2014/05/ftc-recommends-congress-require-data-broker-industry-be-more-transparent-give-consumers-greater), retrieved via curl; report landing page registered as canonical URL. Used as dated 2014 figures."
+    },
+    {
+      "id": "eu-commission-data-protection-explained",
+      "title": "Data protection explained",
+      "provider": "European Commission",
+      "url": "https://commission.europa.eu/law/law-topic/data-protection/data-protection-explained_en",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Official EU explainer. Defines personal data as any information relating to an identified or identifiable living individual, with examples including names, addresses, email addresses, IP addresses, cookie IDs, medical records, identification numbers, and phone advertising identifiers; irreversibly anonymized data is not personal data. Lists the GDPR as the EU's main data-protection law and enumerates eight individual rights (information, access, rectification, erasure, restriction, portability, objection, automated-decision-making). Reference-only; facts stated in original wording."
+    },
+    {
+      "id": "eu-gdpr-eurlex-summary",
+      "title": "General data protection regulation (GDPR) — summary",
+      "provider": "EUR-Lex (Publications Office of the European Union)",
+      "url": "https://eur-lex.europa.eu/EN/legal-content/summary/general-data-protection-regulation-gdpr.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Official EUR-Lex summary of Regulation (EU) 2016/679. Confirms the GDPR was adopted 27 April 2016 and has applied since 25 May 2018. Used only to anchor the application date. Reference-only."
+    },
+    {
+      "id": "ca-oag-ccpa",
+      "title": "California Consumer Privacy Act (CCPA)",
+      "provider": "California Office of the Attorney General",
+      "url": "https://oag.ca.gov/privacy/ccpa",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "California Attorney General's CCPA page. States CCPA rights: to know what personal information a business collects and how it is used, to delete personal information (with exceptions), to opt out of sale/sharing, and to non-discrimination; the CPRA (Prop 24, effective January 1, 2023) added rights to correct and to limit use of sensitive personal information. Defines personal information as data that identifies, relates to, or could reasonably be linked with a person or household. Reference-only; stated in original wording."
+    }
+  ]
+}

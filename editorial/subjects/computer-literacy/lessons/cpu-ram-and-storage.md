@@ -85,38 +85,38 @@ The CPU does the computing, RAM is the fast but temporary workspace that empties
 ## Practice Question Bank
 
 1. **You are typing a document and the power suddenly cuts out before you save. What happens to the text that was only in RAM?**
-   - A) It is automatically written to the hard drive the moment power drops.
-   - B) It is lost, because RAM is volatile and needs power to hold its contents.
-   - C) It is moved into the CPU cache, where it stays safe until reboot.
-   - D) It stays in RAM and reappears exactly as it was when power returns.
+   - A. It is automatically written to the hard drive the moment power drops.
+   - B. It is lost, because RAM is volatile and needs power to hold its contents.
+   - C. It is moved into the CPU cache, where it stays safe until reboot.
+   - D. It stays in RAM and reappears exactly as it was when power returns.
    - **Answer: B.** RAM is volatile: it retains data only while powered, so anything in RAM that was not saved is gone when power stops. Saving to non-volatile storage is a deliberate action, not automatic on power loss; cache is also volatile; and RAM does not hold data across a power interruption.
 
 2. **How many bits are there in one byte?**
-   - A) 2
-   - B) 4
-   - C) 16
-   - D) 8
+   - A. 2
+   - B. 4
+   - C. 16
+   - D. 8
    - **Answer: D.** By definition, one byte equals eight bits, where a bit is a single binary digit (0 or 1). The other values are not the standard size of a byte.
 
 3. **What is the name of the basic repeating cycle a CPU uses to process instructions?**
-   - A) The fetch-decode-execute cycle
-   - B) The read-write-erase cycle
-   - C) The input-process-output loop
-   - D) The boot-load-run sequence
+   - A. The fetch-decode-execute cycle
+   - B. The read-write-erase cycle
+   - C. The input-process-output loop
+   - D. The boot-load-run sequence
    - **Answer: A.** The CPU repeatedly fetches an instruction from memory, decodes it, and executes it. "Read-write-erase" describes flash storage operations; "input-process-output" is a general model of a whole system; "boot-load-run" is not a standard term for handling each instruction.
 
 4. **A laptop becomes very slow only when many applications are open at the same time, as if it runs out of room to work in. Which upgrade most directly addresses this?**
-   - A) A faster internet connection
-   - B) A larger-capacity hard drive to hold more files
-   - C) More RAM
-   - D) A higher-resolution display
+   - A. A faster internet connection
+   - B. A larger-capacity hard drive to hold more files
+   - C. More RAM
+   - D. A higher-resolution display
    - **Answer: C.** Running many programs at once requires working memory to hold them all; when RAM fills, the system slows as it shuffles data to and from the drive, so adding RAM addresses this most directly. A larger drive adds file capacity but not working memory; internet speed and display resolution are unrelated.
 
 5. **In the memory hierarchy, which sequence correctly orders components from fastest and smallest to slowest and largest?**
-   - A) RAM, then CPU cache, then SSD storage
-   - B) SSD storage, then RAM, then CPU registers
-   - C) RAM, then CPU registers, then a hard drive
-   - D) CPU registers and cache, then RAM, then storage
+   - A. RAM, then CPU cache, then SSD storage
+   - B. SSD storage, then RAM, then CPU registers
+   - C. RAM, then CPU registers, then a hard drive
+   - D. CPU registers and cache, then RAM, then storage
    - **Answer: D.** The hierarchy runs from the CPU's registers and cache (fastest, smallest, costliest), to RAM, to storage (slowest, largest, cheapest). Option A reverses cache and RAM; option B lists the levels slowest-to-fastest; option C places registers after RAM.
 
 ## Sources
