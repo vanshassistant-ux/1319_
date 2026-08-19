@@ -1,0 +1,286 @@
+{
+  "topicId": "engineering-fundamentals:electrical-fundamentals:voltage-current-and-resistance",
+  "subjectId": "engineering-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Electric charge as the underlying conserved quantity, the coulomb, and the elementary charge",
+      "Electric current as the rate of charge flow; the ampere as one coulomb per second; I = dQ/dt",
+      "Conventional current (positive-charge flow) versus the actual drift of electrons in a metal",
+      "Drift velocity versus the propagation speed of the electrical signal",
+      "Voltage as potential difference: energy per unit charge, the volt as one joule per coulomb, always between two points",
+      "Resistance and the ohm; resistivity as a material property and R = rho*L/A as the geometry-dependent result",
+      "Conductance and the siemens; conductivity as the reciprocal of resistivity",
+      "Temperature dependence of resistivity and resistance",
+      "Conductors, semiconductors and insulators as resistivity ranges",
+      "EMF and sources; ideal versus real sources; internal resistance and terminal voltage",
+      "Ground as a chosen reference node versus a connection to earth",
+      "The water analogy and an explicit statement of where it fails",
+      "Educational-scope and electrical-safety statement"
+    ],
+    "supporting": [
+      "The 2019 SI redefinition fixing the elementary charge exactly",
+      "SI base-unit expressions for the coulomb, volt, ohm and siemens",
+      "Typical resistivities of copper and aluminium and the temperature coefficient of copper",
+      "The OSHA regulatory definitions of ground and qualified person"
+    ],
+    "outOfScope": [
+      "Ohm's law as a relationship and its limits (owned by engineering-fundamentals:electrical-fundamentals:ohm-s-law)",
+      "Series and parallel combination rules, Kirchhoff's laws (owned by engineering-fundamentals:electrical-fundamentals:series-and-parallel-circuits)",
+      "Electrical power, P = VI, and energy billing (owned by engineering-fundamentals:electrical-fundamentals:electrical-power)",
+      "AC quantities, reactance, impedance and phasors",
+      "Semiconductor device physics, doping and junctions",
+      "Any procedure a reader could apply to real wiring, panels or installations"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Since 20 May 2019 the ampere is defined by fixing the elementary charge e at exactly 1.602 176 634 x 10^-19 coulomb, where the coulomb equals the ampere second; one ampere therefore corresponds to the flow of 1/(1.602 176 634 x 10^-19) elementary charges per second, about 6.2415 x 10^18 per second.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["bipm-si-brochure-9th-edition", "nist-sp330-2019-section-2-si-units"],
+      "status": "supported"
+    },
+    {
+      "claim": "Electric current is the rate at which charge flows: I_avg = delta_Q / delta_t and I = dQ/dt, and one ampere is one coulomb per second.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["openstax-university-physics-2-electrical-current"],
+      "status": "supported"
+    },
+    {
+      "claim": "Conventional current is defined as flowing from the positive terminal to the negative terminal, a convention inherited from Franklin-era charge conventions, even though in a metal the moving carriers are electrons drifting in the opposite direction.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["openstax-university-physics-2-electrical-current", "openstax-university-physics-2-model-of-conduction-in-metals"],
+      "status": "supported"
+    },
+    {
+      "claim": "Drift velocity is the average velocity of the free charges and satisfies I = n q A v_d; in a 12-gauge copper wire carrying 20.0 A the drift speed is about 4.54 x 10^-4 m/s, while electrical signals travel on the order of 10^8 m/s, a significant fraction of the speed of light.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-university-physics-2-model-of-conduction-in-metals"],
+      "status": "supported"
+    },
+    {
+      "claim": "Electric potential is potential energy per unit charge, V = U/q, and potential difference is delta_V = delta_U/q, measured in volts where 1 V = 1 J/C; the point chosen as zero volts is arbitrary, so only differences of potential carry physical meaning.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["openstax-university-physics-2-electric-potential-and-potential-difference", "nist-sp330-2019-section-2-si-units"],
+      "status": "supported"
+    },
+    {
+      "claim": "In coherent SI units the coulomb is A s, the volt is W/A = kg m^2 s^-3 A^-1, the ohm is V/A = kg m^2 s^-3 A^-2, and the siemens is A/V = kg^-1 m^-2 s^3 A^2.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp330-2019-section-2-si-units", "bipm-si-brochure-9th-edition"],
+      "status": "supported"
+    },
+    {
+      "claim": "Resistivity rho is a property of the material and is the reciprocal of conductivity; the resistance of a uniform conductor of length L and cross-sectional area A is R = rho L / A, and one ohm equals one volt per ampere.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["openstax-university-physics-2-resistivity-and-resistance"],
+      "status": "supported"
+    },
+    {
+      "claim": "At 20.00 degrees Celsius the resistivity of copper is about 1.68 x 10^-8 ohm metre and that of aluminium about 2.65 x 10^-8 ohm metre; resistivity varies with temperature approximately as rho = rho_0 [1 + alpha (T - T_0)], with alpha about 0.0039 per degree Celsius for both copper and aluminium.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-university-physics-2-resistivity-and-resistance"],
+      "status": "supported"
+    },
+    {
+      "claim": "Materials span an enormous resistivity range: conductors around 10^-8 to 10^-7 ohm metre, semiconductors roughly 10^-5 to 10^3 ohm metre, and insulators above about 10^11 ohm metre (glass 10^9 to 10^14, hard rubber 10^13 to 10^16 ohm metre).",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-university-physics-2-resistivity-and-resistance"],
+      "status": "supported"
+    },
+    {
+      "claim": "Electromotive force is not a force but the work done per unit charge by a source, measured in volts; an ideal source holds its terminal voltage constant, while a real source has internal resistance r so that the terminal voltage is V_terminal = emf - I r and falls as the current rises.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["openstax-university-physics-2-electromotive-force"],
+      "status": "supported"
+    },
+    {
+      "claim": "In U.S. workplace electrical regulation, 'ground' means a conducting connection, intentional or accidental, between an electric circuit or equipment and the earth or to some conducting body that serves in place of the earth; a conducting body may therefore stand in for the earth as the reference.",
+      "claimType": "LEGAL",
+      "sourceIds": ["ecfr-29-cfr-1910-399-electrical-definitions"],
+      "status": "supported"
+    },
+    {
+      "claim": "Live parts to which an employee may be exposed must be deenergized before work on or near them unless the employer can demonstrate that deenergizing introduces additional or increased hazards or is infeasible, and only qualified persons may work on circuit parts that have not been deenergized.",
+      "claimType": "LEGAL",
+      "sourceIds": ["ecfr-29-cfr-1910-333-work-practices"],
+      "status": "supported"
+    },
+    {
+      "claim": "A copper conductor 30.0 m long with a 2.00 mm diameter has cross-sectional area 3.1416 x 10^-6 m^2 and resistance 0.160 ohm at 20.00 degrees Celsius; the same geometry in aluminium gives 0.253 ohm, and heating the copper conductor to 75 degrees Celsius raises its resistance to about 0.19 ohm.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-university-physics-2-resistivity-and-resistance"],
+      "status": "supported"
+    },
+    {
+      "claim": "Because resistance varies as 1/A and A varies as the square of the diameter, halving the diameter of a round conductor quadruples its resistance.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["openstax-university-physics-2-resistivity-and-resistance"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether the ampere or the coulomb is the 'more fundamental' unit.",
+      "positions": [
+        "Historically the ampere was an SI base unit defined by a force between conductors, and the coulomb was derived from it.",
+        "Since 2019 the SI defines the ampere by fixing the elementary charge, so charge is the quantity carrying the exact defining value while the ampere remains a base unit by convention."
+      ],
+      "resolution": "The lesson teaches charge as the physically underlying quantity and states that the ampere remains an SI base unit whose definition now rests on an exactly fixed elementary charge, per the SI Brochure and NIST SP 330. The base/derived split is described as a retained convention rather than a claim about physics."
+    },
+    {
+      "issue": "Reported temperature coefficient of copper varies slightly across references (values near 0.0039 to 0.0043 per degree Celsius appear in different tables, depending on purity and reference temperature).",
+      "positions": [
+        "OpenStax University Physics Volume 2 Table 9.1 lists alpha = 0.0039 per degree Celsius for copper at T_0 = 20.00 degrees Celsius.",
+        "Other handbooks list slightly higher values for annealed commercial copper."
+      ],
+      "resolution": "The lesson uses the single sourced value 0.0039 per degree Celsius, states the reference temperature, calls the result approximate, and reports the heated resistance to two significant figures because alpha carries only two."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained no electrical content at all: it described 'voltage, current, and resistance' as a generic organizing concept, a 'label on a toolbox drawer', with no charge, no units, no equations and no sources.",
+    "The draft's vocabulary block defined the topic in terms of itself ('a foundational Engineering Fundamentals concept covered in this lesson'), which is circular and unverifiable.",
+    "The draft's worked example described a student reading a scenario rather than performing any engineering calculation.",
+    "The draft's question bank tested study technique rather than any electrical fact.",
+    "The draft carried no analogy limits, which this subject's source map requires."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire lesson with sourced electrical content anchored on charge, current, voltage and resistance.",
+    "Added the post-2019 SI basis: the ampere defined by an exactly fixed elementary charge, and the coulomb, volt, ohm and siemens expressed in SI base units.",
+    "Added the conventional-current versus electron-drift confusion to Common Mistakes, as the unit's most persistent beginner error.",
+    "Added drift velocity versus signal speed with sourced magnitudes, correctly explained as a field effect rather than fast-moving electrons.",
+    "Added the requirement that voltage is stated between two points, or relative to a named reference node.",
+    "Added the water analogy together with an explicit statement of where it fails, as required by the subject source map.",
+    "Added an explicit educational-scope and electrical-safety statement citing the governing OSHA requirements.",
+    "Executed every published number in Bash (python3) before writing it, carrying units at each step."
+  ],
+  "rightsIssues": [
+    "OpenStax University Physics Volume 2 pages are recorded REFERENCE_ONLY here, consistent with the existing registry treatment of OpenStax records in this project; per-book terms were not independently verified, so no OpenStax wording is reproduced and all prose is original synthesis.",
+    "The BIPM SI Brochure is CC BY 4.0 and attribution-required; only the definitional numerical value of the elementary charge and unit relations are used, and the surrounding prose is original.",
+    "NIST SP 330 Section 2 is recorded REFERENCE_ONLY because it carries a BIPM copyright note; facts are used, wording is not.",
+    "The eCFR sections are U.S. federal regulation and public domain. The eCFR web pages redirected the fetcher to unblock.federalregister.gov, so the regulatory text was read from OSHA's own copy of the same sections; the canonical eCFR URLs are registered."
+  ],
+  "sourceRecords": [
+    {
+      "id": "bipm-si-brochure-9th-edition",
+      "title": "The International System of Units (SI), 9th edition (2019), version 4.01 (June 2026)",
+      "provider": "Bureau International des Poids et Mesures (BIPM)",
+      "url": "https://www.bipm.org/en/publications/si-brochure",
+      "sourceType": "standards-body",
+      "usage": "ATTRIBUTION_REQUIRED",
+      "license": "Creative Commons Attribution 4.0 International (stated in the brochure's copyright statement)",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Already registered for this project. For this topic the BIPM ampere page (https://www.bipm.org/en/si-base-units/ampere), which carries the brochure's definition, was read live: the ampere is defined by taking the fixed numerical value of the elementary charge e to be 1.602 176 634 x 10^-19 when expressed in the unit C, which is equal to A s, in force since 20 May 2019. Supports the exact value of e, the coulomb as the ampere second, and the framing of the 2019 redefinition. REFERENCE-level use only; no brochure wording reproduced."
+    },
+    {
+      "id": "nist-sp330-2019-section-2-si-units",
+      "title": "The International System of Units (SI), 2019 Edition (NIST SP 330), Section 2: The International System of Units",
+      "provider": "National Institute of Standards and Technology",
+      "url": "https://www.nist.gov/pml/special-publication-330/sp-330-section-2",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the Table 4 coherent derived units used in this lesson: coulomb = A s; volt = W/A = kg m^2 s^-3 A^-1; ohm = V/A = kg m^2 s^-3 A^-2; siemens = A/V = kg^-1 m^-2 s^3 A^2. Also supports the statement that one ampere is the current corresponding to the flow of 1/(1.602 176 634 x 10^-19) elementary charges per second. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-2-electrical-current",
+      "title": "University Physics Volume 2, 9.1 Electrical Current",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/9-1-electrical-current",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports current as the rate of charge flow (I_avg = delta_Q/delta_t, I = dQ/dt), the ampere as one coulomb per second, and the conventional-current convention running from the positive to the negative terminal with its Franklin-era origin. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-2-model-of-conduction-in-metals",
+      "title": "University Physics Volume 2, 9.2 Model of Conduction in Metals",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/9-2-model-of-conduction-in-metals",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports drift velocity as the average velocity of free charges, I = n q A v_d, the worked value of about 4.54 x 10^-4 m/s for a 12-gauge copper wire carrying 20.0 A, and the comparison that electrical signals travel on the order of 10^8 m/s while carriers drift on the order of 10^-4 m/s. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-2-resistivity-and-resistance",
+      "title": "University Physics Volume 2, 9.3 Resistivity and Resistance",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports R = rho L / A for a uniform conductor, one ohm as one volt per ampere, resistivity as the reciprocal of conductivity, the temperature relation rho = rho_0[1 + alpha(T - T_0)] with T_0 = 20.00 degrees Celsius, and the Table 9.1 values used as arithmetic inputs: copper 1.68 x 10^-8 ohm metre, aluminium 2.65 x 10^-8 ohm metre, alpha about 0.0039 per degree Celsius for both, plus the conductor / semiconductor / insulator resistivity ranges and the glass and hard-rubber figures. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-2-electric-potential-and-potential-difference",
+      "title": "University Physics Volume 2, 7.2 Electric Potential and Potential Difference",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/7-2-electric-potential-and-potential-difference",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports V = U/q, delta_V = delta_U/q, the volt as one joule per coulomb, the electron volt as 1.60 x 10^-19 J, and the statement that the point chosen as zero volts is arbitrary so only potential differences are physically meaningful. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-2-electromotive-force",
+      "title": "University Physics Volume 2, 10.1 Electromotive Force",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/10-1-electromotive-force",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports emf as work done per unit charge by the source rather than a force, its measurement in volts, the ideal source with no internal resistance, the real source with internal resistance r, and the terminal-voltage relation V_terminal = emf - I r. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "ecfr-29-cfr-1910-399-electrical-definitions",
+      "title": "29 CFR 1910.399 - Definitions applicable to this subpart (Subpart S, Electrical)",
+      "provider": "Occupational Safety and Health Administration, in the Electronic Code of Federal Regulations (Office of the Federal Register / Government Publishing Office)",
+      "url": "https://www.ecfr.gov/current/title-29/section-1910.399",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. federal regulation; edict of government, not subject to copyright",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "The eCFR page redirected the fetcher to unblock.federalregister.gov; the section text was read from OSHA's own copy at https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.399 using curl with a browser user agent. Supports the regulatory definitions of ground (a conducting connection, intentional or accidental, between an electric circuit or equipment and the earth, or to some conducting body that serves in place of the earth), grounded, qualified person (one who has received training in and demonstrated skills and knowledge in the construction and operation of electric equipment and installations and the hazards involved), and voltage of a circuit as a difference of potential between two conductors."
+    },
+    {
+      "id": "ecfr-29-cfr-1910-333-work-practices",
+      "title": "29 CFR 1910.333 - Selection and use of work practices",
+      "provider": "Occupational Safety and Health Administration, in the Electronic Code of Federal Regulations (Office of the Federal Register / Government Publishing Office)",
+      "url": "https://www.ecfr.gov/current/title-29/section-1910.333",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. federal regulation; edict of government, not subject to copyright",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "The eCFR page redirected the fetcher to unblock.federalregister.gov; the section text was read from OSHA's own copy at https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.333 using curl with a browser user agent. Supports paragraph (a)(1), requiring live parts to be deenergized before an employee works on or near them unless deenergizing introduces additional or increased hazards or is infeasible, and paragraph (c)(2), that only qualified persons may work on electric circuit parts or equipment that have not been deenergized. Used solely for the lesson's scope-and-safety statement, not as work guidance."
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+# Momentum
+
+## In 30 Seconds
+
+Momentum is mass times velocity, a vector that points where the motion is going. Force changes it: the impulse a force delivers, its accumulation over time, equals the change in momentum exactly. Because a crash fixes the momentum change but not its duration, stretching a collision out in time makes the average force smaller in exact inverse proportion. That is the principle behind crumple zones, airbags, helmets, and packaging foam.
+
+## Why This Matters
+
+Momentum is the bridge between the second law and every problem where forces are too brief, too messy, or too unknown to write down. Impact, recoil, propulsion, and the sizing of anything that has to survive being hit all run through it. It also gives you a conservation law that survives collisions in which energy accounting collapses, which is why crash reconstruction, ballistics, and orbital manoeuvring all start with momentum rather than force. Later courses build on it directly: rigid-body dynamics, fluid mechanics through momentum flux, and propulsion all treat momentum as the primary bookkeeping quantity, and the same balance applied to a control volume is how a jet engine, a pump, and a fire hose are analysed.
+
+## Learning Objectives
+
+- Define linear momentum as a vector and state the impulse-momentum theorem in both integral and average-force form.
+- Explain why extending the duration of a collision reduces the average force for a fixed change in momentum, and apply that reasoning to a protective device.
+- Distinguish conservation of a system's total momentum from the momentum of an individual body, and identify the condition under which conservation applies.
+- Analyse elastic, inelastic, and perfectly inelastic collisions, computing the kinetic energy dissipated and interpreting the coefficient of restitution.
+- Explain how the center of mass moves under external forces and why a rocket requires the momentum form of the second law rather than F = m a.
+
+## The College Version
+
+### Momentum, and the law that defines how it changes
+
+Linear momentum is the product of a body's mass and its velocity, p = m v. Because velocity is a vector, momentum is a vector: it has a direction, and in one dimension that direction shows up as a sign you are not allowed to drop. Its SI unit is the kilogram metre per second, kg*m/s. A 1,200 kg car heading east at 20 m/s and an identical car heading west at 20 m/s have momenta of equal magnitude and opposite sign: together they carry zero net momentum while carrying a great deal of kinetic energy.
+
+Force and Motion already introduced the general form of Newton's second law: the net external force on a body equals the rate of change of its momentum, F_net = dp/dt. Momentum is the quantity that statement is about, and the familiar F_net = m a is what you get by assuming mass is constant and pulling it outside the derivative. Everything here follows from taking dp/dt seriously: impulse is what you get by integrating it over time, conservation is what you get when the left side is zero, and rocket propulsion is what you get when m is not constant.
+
+### Impulse: force accumulated over time
+
+Integrate the second law over an interval and the derivative disappears. The impulse delivered by a force is its time integral, J = integral of F(t) dt over the interval, and the result is the impulse-momentum theorem: J = delta p. The impulse applied to a body equals the change in that body's momentum, exactly, with no approximation and no assumption that the force was steady.
+
+The units make the same point. A newton is one kg*m*s^-2, so a newton second is kg*m*s^-2 * s = kg*m/s. Impulse and momentum are measured in the same unit because they are the same kind of quantity, viewed once as a cause and once as an effect.
+
+In a real impact the force history F(t) is a spike that rises and falls over a few tens of milliseconds, and nobody knows its exact shape without instrumenting the event. The theorem still works, because the integral is fixed by the endpoints. If you know the momentum before and after, you know the total impulse regardless of what happened in between, and dividing that impulse by the duration gives the average force, F_ave = J / delta t. The average force is a real, useful number, but it is not the peak force. A short, sharp force history can peak well above its own average, which is why crash engineering is measured rather than inferred from averages.
+
+### Why stretching the collision reduces the force
+
+Here is the engineering payoff of the whole topic. A body that must be brought from some speed to rest has a change in momentum, delta p = m * delta v, set by its mass and its speed. That is fixed by the situation. How long the stopping takes is not.
+
+Since J = delta p and F_ave = J / delta t, holding delta p constant while increasing delta t drives the average force down in exact inverse proportion. Double the stopping time and you halve the average force. Nothing absorbed the momentum, because momentum is not the kind of thing you absorb; it was simply removed more gradually.
+
+That single relationship is the physical principle underneath crumple zones, airbags, helmet liners, fall-arrest lanyards, running-track surfaces, and the foam in a shipping carton. Each of them is a device for making delta t larger. A crumple zone lengthens the time over which the vehicle structure decelerates; an airbag and a belt lengthen the time over which the occupant decelerates, which is a separate and later event; a crushable helmet liner lengthens the time over which the skull decelerates. In every case the momentum change is whatever the crash makes it, and the design variable is time.
+
+### Conservation belongs to the system, not to the body
+
+Return to F_net = dp/dt and set the left-hand side to zero. If the net external force on a system is zero, the system's total momentum does not change with time. That is conservation of linear momentum, and it is a consequence of the second law rather than an independent postulate.
+
+Two pieces of precision matter more than the statement itself. The first is the word system. A system is whatever collection of bodies you decide to draw a boundary around, and forces are internal or external only relative to that boundary. Forces internal to the system come in third-law pairs, so their contributions to the total momentum change cancel identically; only external forces can move the total. Choosing the boundary well is the skill. Put both colliding cars inside it and the enormous contact forces become internal and drop out. Put one car inside it and the same forces are external and you have gained nothing.
+
+The second is that the conserved quantity is the total. Each body's momentum changes, often dramatically. What is constant is the vector sum. Saying momentum is conserved in a collision does not mean any particular object kept its momentum; it means the momentum one object lost, another gained.
+
+External forces are rarely exactly zero. Gravity and friction act on colliding cars the whole time. The usual justification is that a collision is brief and the contact forces are enormous, so over the few tens of milliseconds of contact the external impulse is negligible next to the internal one. Momentum conservation across a collision is therefore an excellent approximation with a stated reason, not an exact law of the scene. It is also directional: momentum can be conserved along one axis and not along another, and treating each axis separately is standard practice.
+
+### Collisions: elastic, inelastic, and the coefficient of restitution
+
+Collisions are classified by what happens to kinetic energy, because momentum is conserved in all of them. In an elastic collision the total kinetic energy after equals the total before. In an inelastic collision some kinetic energy is converted into deformation, heat, sound, and permanent damage, so the final kinetic energy is positive but smaller. In a perfectly inelastic collision the bodies stick together and move off as one composite object, and the kinetic-energy loss is the largest that momentum conservation permits.
+
+The coefficient of restitution, usually written e or epsilon, puts a number on that spectrum. For two bodies in a head-on collision it is the negative ratio of relative velocity after impact to relative velocity before: e = -(v_Af - v_Bf) / (v_Ai - v_Bi). It runs from 0 to 1. A value of 1 is the elastic limit, where the pair separates exactly as fast as it approached; a value of 0 is the perfectly inelastic limit, where the relative velocity after impact is zero and the bodies do not separate at all. Intermediate values describe everything real. Restitution is a property of the colliding pair and the conditions, not of a material alone.
+
+A warning about vocabulary. Engineering dynamics texts and physics texts do not use these words the same way. Physics texts distinguish inelastic from perfectly inelastic; several engineering dynamics texts call the stick-together case simply inelastic and use semi-elastic for everything in between. The physical categories are identical, so read whichever convention your course uses and check what the author means by inelastic before answering a problem.
+
+### Center of mass, and the motion of a system as a whole
+
+A system of particles has a mass-weighted average position, the center of mass, r_CM = (1/M) * sum of m_j r_j, where M is the total mass. Differentiate it and two useful results appear. The total momentum of the system equals M v_CM, so the whole apparatus of conservation can be restated as a statement about how the center of mass moves. And the net external force equals M a_CM, meaning the center of mass accelerates exactly as a single particle of mass M would if all the external force were applied to it.
+
+This is what licenses the habit of treating a car, a satellite, or a thrown wrench as a point. Internal forces, however violent, cannot move the center of mass off its trajectory. When a firework shell bursts, every fragment flies somewhere new, but the center of mass of the fragments continues along the same parabola the intact shell was on until air drag on the individual pieces, an external force, changes it.
+
+### Variable-mass systems and rocket propulsion
+
+F_net = m a is a special case that fails whenever the system's mass changes while it moves. A rocket, a hopper being filled on a moving conveyor, and an aircraft burning fuel are all variable-mass problems, and the momentum form is the one that survives.
+
+A rocket in free space carries no external force to push against, and it does not need one. It expels combustion products backwards at high speed; that exhaust carries momentum away, and since the total momentum of rocket-plus-exhaust cannot change, the rocket's momentum changes by the same magnitude in the opposite direction. Thrust is the rate at which momentum is carried off by the exhaust: the momentum-flux term is the exhaust speed multiplied by the mass flow rate, mdot * Ve. NASA's rocket thrust equation adds a second term for the pressure mismatch at the nozzle exit, F = mdot * Ve + (pe - p0) * Ae, which matters because the exit pressure equals the ambient pressure only at one design condition.
+
+Two consequences are worth noticing. Constant thrust does not produce constant acceleration, because the mass in the denominator keeps falling as propellant burns. And integrating over the burn gives the rocket equation, delta v = u * ln(m_0/m), where u is the exhaust speed: velocity change depends on the logarithm of the mass ratio, which is why propellant mass grows punishingly fast with mission delta v.
+
+### Angular momentum, briefly
+
+Rotation has its own conserved quantity. For a particle, angular momentum about a point is the cross product of the position vector with the linear momentum, l = r x p, measured in kg*m^2/s. For a rigid body rotating about a fixed axis the magnitude is L = I omega, with I the moment of inertia. The rotational analogue of the second law is that the net external torque about a point equals the rate of change of angular momentum about that point, so when the net external torque is zero, total angular momentum is conserved.
+
+The spinning skater is the standard illustration and the standard place people get it wrong. Pulling the arms in moves mass closer to the rotation axis, which lowers I. With L = I omega fixed, omega must rise. The part usually mangled: rotational kinetic energy does not stay the same. Since K = L^2 / (2 I), halving I doubles it. That energy is not created by the conservation law; the skater does mechanical work pulling her arms inward, and that work is exactly what appears as extra kinetic energy. Angular momentum is conserved; energy is supplied.
+
+### Idealizations, and the scope of this lesson
+
+Every result here rests on assumptions worth naming. Bodies were treated as particles or rigid bodies. The collision was treated as instantaneous relative to the external forces, which is why gravity and friction were dropped. Restitution was treated as a constant for the pair, when in practice it varies with speed, temperature, and geometry. Momentum conservation itself is exact; the modelling around it is not.
+
+This lesson is educational material, not engineering design guidance. In particular, nothing here is guidance for designing occupant protection. Crumple zones, restraints, airbags, and helmets are governed by regulation and prescribed test procedure. In the United States, occupant crash protection for passenger vehicles falls under Federal Motor Vehicle Safety Standard No. 208 at 49 CFR 571.208, which sets performance requirements in terms of forces and accelerations measured on anthropomorphic dummies in specified test crashes, along with equipment requirements for active and passive restraint systems. Real design in this space requires a licensed engineer, verified material and component data, physical testing to the governing standard, and margins chosen for the consequences of failure. The arithmetic in this lesson explains why such systems work; it does not tell anyone how to build one.
+
+## Key Vocabulary
+
+- **Linear momentum** — The vector quantity obtained by multiplying a body's mass by its velocity, measured in kilogram metres per second.
+- **Impulse** — The time integral of a force over the interval during which it acts, measured in newton seconds, which is the same unit as kg*m/s.
+- **Impulse-momentum theorem** — The exact statement that the impulse delivered to a body equals the change in that body's momentum over the same interval.
+- **System** — The set of bodies enclosed by a boundary you choose for the analysis; forces count as internal or external only relative to that boundary.
+- **External force** — A force exerted on the chosen set of bodies by something outside the boundary, and the only kind that can change the total momentum.
+- **Elastic collision** — An interaction after which the total kinetic energy of the colliding bodies equals the total before, with restitution equal to one.
+- **Perfectly inelastic collision** — An impact after which the bodies move off together as a single object, giving the largest kinetic-energy loss that momentum conservation allows.
+- **Coefficient of restitution** — A dimensionless number from zero to one giving the negative ratio of relative velocity after an impact to relative velocity before it.
+- **Center of mass** — The mass-weighted average position of the particles in a system; it accelerates as though all external force acted on the total mass there.
+- **Angular momentum** — The rotational counterpart of p, defined for a particle as the cross product of position with linear momentum and equal to I omega for a rigid body on a fixed axis.
+
+## Eli-10
+
+Momentum is how much motion something has, counting both how heavy it is and how fast it is going, plus which way it is headed. A loaded truck rolling slowly can have more momentum than a fast bicycle. To change something's momentum you have to push on it, and what matters is not just how hard you push but how long you keep pushing. A gentle push held for a long time can do the same job as a hard shove that lasts an instant. That is the trick behind almost every safety device you have ever seen. When a car crashes, the passenger's motion has to be taken away no matter what. There is no way around that. The only choice is whether it gets taken away in a hundredth of a second or a tenth of a second, and stretching it out makes the push on the passenger far gentler.
+
+## Eli's Analogy
+
+Think about catching a hard-thrown ball. If you hold your hands stiff, it stings. If you let your hands travel backwards with the ball as you catch it, it does not. You removed exactly the same amount of motion from the ball either way; you just gave yourself more time to do it, so the force at any instant was smaller.
+
+**Where the analogy breaks down.** The analogy covers the impulse idea and nothing else. Your hands can pull backwards because your arms are free to move; a crumple zone does the same job by permanently destroying itself, and it only works once. Catching a ball is also close to a one-body problem, so it hides the part where momentum is conserved for a system of two bodies. And a soft catch does not make the ball's momentum smaller, which is exactly the mistake this lesson is trying to prevent.
+
+## Worked Example
+
+A two-part calculation, both parts executed in Python before publication.
+
+PART 1 - a perfectly inelastic collision. On a low-friction surface, a 1,600 kg car moving east at 15.0 m/s strikes a stationary 1,200 kg car and the two lock together.
+
+Momentum before: p = (1,600 kg)(15.0 m/s) + (1,200 kg)(0 m/s) = 24,000 kg*m/s east.
+No net external force along the direction of travel, so the total is unchanged. The wreck has mass 1,600 + 1,200 = 2,800 kg, so v_f = 24,000 / 2,800 = 8.571 m/s, which is 8.57 m/s east to three significant figures.
+Momentum after: (2,800 kg)(8.5714 m/s) = 24,000 kg*m/s. It balances, as it must.
+
+Now the kinetic energy, which momentum conservation says nothing about.
+K before = 0.5(1,600)(15.0)^2 = 180,000 J = 180 kJ.
+K after = 0.5(2,800)(8.5714)^2 = 102,857 J = 103 kJ.
+Dissipated: 180,000 - 102,857 = 77,143 J, about 77.1 kJ, which is 42.9% of the initial kinetic energy. That energy went into crushing metal, heat, and sound. For a body striking a stationary one and sticking, the fraction lost is m_2/(m_1 + m_2) = 1,200/2,800 = 0.4286, which the numbers confirm. The coefficient of restitution here is 0 by construction.
+
+For contrast, run the same two cars as a perfectly elastic collision using the standard one-dimensional formulas: v_1f = 2.14 m/s and v_2f = 17.1 m/s. Momentum after is 24,000 kg*m/s, identical. Kinetic energy after is 180,000 J, also identical, and the restitution works out to 1. Same momentum, completely different energy outcome - which is the whole point.
+
+PART 2 - impulse and stopping time. An 80 kg occupant travelling at 15.0 m/s must be brought to rest. The momentum change is fixed: |delta p| = (80 kg)(15.0 m/s) = 1,200 kg*m/s = 1,200 N*s. Nothing a designer does changes that number; the crash sets it.
+
+What a designer can change is how long the deceleration takes. Using F_ave = |delta p| / delta t:
+delta t = 0.020 s  ->  F_ave = 60,000 N = 60.0 kN
+delta t = 0.060 s  ->  F_ave = 20,000 N = 20.0 kN
+delta t = 0.120 s  ->  F_ave = 10,000 N = 10.0 kN
+
+Multiplying the stopping time by six divided the average force by exactly six. Expressed against the occupant's own weight (80 kg * 9.80665 m/s^2 = 785 N), those forces are about 76 times, 25 times, and 13 times body weight; the corresponding average decelerations are 750, 250 and 125 m/s^2. Same impulse in every row. Only the time changed.
+
+Two honest caveats. These are average forces; the peak in a real impact is higher, and how much higher depends on the shape of the force history, which is measured rather than assumed. And the times used here are illustrative round numbers chosen to show the proportionality, not values taken from any crash test or standard.
+
+## Common Mistakes
+
+- **Assuming that because momentum is conserved in every collision, kinetic energy must be conserved too.**
+  Momentum conservation follows from the second law and holds in every collision with no net external force. Kinetic energy conservation is a separate, much stronger condition that holds only in elastic collisions. In the worked example both cars kept all 24,000 kg*m/s of momentum while losing 77.1 kJ, roughly 43%, of their kinetic energy.
+- **Saying that an airbag, crumple zone, or helmet absorbs the momentum.**
+  They do not change delta p at all. The occupant still has to go from 15 m/s to zero, so the impulse is 1,200 N*s either way. What these devices change is delta t, and since F_ave = delta p / delta t, a longer stop means a smaller average force. Say they extend the stopping time, not that they absorb momentum.
+- **Reading 'momentum is conserved' as a claim about each object.**
+  The conserved quantity is the vector sum over the system. Individual momenta change, sometimes by a lot; what one body loses, another gains. A statement about a single body's momentum is only correct if no net external force acts on that body, which in a collision is exactly what is not true.
+- **Dropping signs and treating momentum as a scalar in one-dimensional problems.**
+  Momentum is a vector. Pick a positive direction, write every velocity with the sign that direction gives it, and keep the signs through the algebra. Two equal masses approaching each other at equal speeds have zero total momentum, a result you cannot get by adding magnitudes.
+- **Applying F = m a to a rocket or any other system that gains or loses mass.**
+  F = m a is the constant-mass special case of F_net = dp/dt. For a variable-mass system use the momentum form: the rocket accelerates because the exhaust carries momentum away, with the momentum-flux part of thrust equal to exhaust speed times mass flow rate, and NASA's full thrust equation adding a nozzle pressure-area term.
+
+## Compare / Contrast
+
+- **Momentum in a collision vs. Kinetic energy in a collision** — Momentum is conserved in every collision where the net external force on the system is negligible, regardless of how much damage occurs. Kinetic energy is conserved only in elastic collisions. This is the single most confused point in the topic: 'conserved in the collision' is true of momentum always and of kinetic energy only sometimes. Momentum is also a vector, so it can cancel; kinetic energy is a non-negative scalar and cannot.
+- **Elastic collision vs. Perfectly inelastic collision** — Both conserve momentum. The elastic case conserves kinetic energy as well and has a coefficient of restitution of 1, with the bodies separating as fast as they approached. The perfectly inelastic case has restitution 0, the bodies move off as one object, and the kinetic-energy loss is the maximum that momentum conservation allows. Real collisions sit between the two.
+- **Force vs. Impulse** — Force is an instantaneous push, measured in newtons; impulse is that force accumulated over time, measured in newton seconds. Two impacts can deliver identical impulse with wildly different forces if their durations differ. Impulse is what the change in momentum pins down, which is why it, and not force, is the quantity fixed by a crash.
+- **Momentum of one body vs. Momentum of the system** — A single body's momentum changes whenever a net force acts on it, which in a collision it certainly does. The system's total momentum is what conservation protects, because the contact forces between the bodies are internal to the system and cancel in third-law pairs. Which quantity is conserved depends entirely on where you drew the boundary.
+- **Linear momentum vs. Angular momentum** — Linear momentum m v is conserved when the net external force is zero; angular momentum r x p, or I omega for a rigid body on a fixed axis, is conserved when the net external torque about the chosen point is zero. They are independent conditions: a spinning skater has essentially zero linear momentum and non-zero angular momentum, and pulling her arms in changes her angular speed and her kinetic energy without changing either conserved quantity.
+
+## Key Takeaway
+
+Momentum is conserved for a system whenever the net external force on it is zero, and in a collision that holds no matter how much kinetic energy is destroyed. Because the impulse a crash delivers is fixed by the momentum change, the only design lever left is time: stretch the stop and the average force falls in exact proportion.
+
+## Practice Question Bank
+
+**1. Which statement correctly describes linear momentum?**
+
+   A. A vector equal to mass times velocity, with SI unit kg*m/s
+   B. A scalar equal to one half of mass times speed squared, with SI unit J
+   C. A vector equal to mass times acceleration, with SI unit N
+   D. A scalar equal to mass times distance travelled, with SI unit kg*m
+
+   *Answer: A.* Momentum is p = m v. It is a vector because velocity is, and its SI unit is the kilogram metre per second. Option B is kinetic energy, which is a scalar. Option C is net force by the constant-mass form of the second law, in newtons. Option D is not a defined mechanical quantity.
+   *Difficulty:* recall · *Skill:* Recalling the definition, vector character, and SI unit of linear momentum · *Sources:* openstax-university-physics-1-linear-momentum, nist-sp811-chapter-4-classes-of-si-units
+
+**2. A 1,600 kg car moving east strikes a stationary 1,200 kg car on a low-friction surface and the two lock together. Which statement about the collision is exactly right?**
+
+   A. Each car's own momentum is unchanged by the collision
+   B. The total momentum of the two-car system is unchanged, although each car's momentum changes
+   C. Both the total momentum and the total kinetic energy of the system are unchanged
+   D. The total momentum falls, because the wreck moves more slowly than the striking car did
+
+   *Answer: B.* With no net external force along the direction of travel, the vector sum of the two momenta is constant while each car's individual momentum changes sharply; the contact forces are internal and cancel in third-law pairs. Option A misstates conservation as a claim about each body. Option C is wrong because the bodies stick together, which is the perfectly inelastic case and dissipates the maximum kinetic energy momentum conservation permits. Option D confuses lower speed with lower momentum: the wreck is slower but more massive, and the product is unchanged.
+   *Difficulty:* understanding · *Skill:* Distinguishing conservation of a system's total momentum from conservation of each body's momentum · *Sources:* openstax-university-physics-1-conservation-of-linear-momentum, openstax-university-physics-1-types-of-collisions
+
+**3. An 80 kg occupant travelling at 15.0 m/s is brought to rest. A restraint system extends the stopping time from 0.020 s to 0.120 s. What happens to the magnitude of the impulse and to the average force?**
+
+   A. Impulse falls from 1,200 N*s to 200 N*s while the average force stays at 60 kN
+   B. Both the impulse and the average force fall by a factor of six
+   C. The impulse stays at 1,200 N*s and the average force falls from 60 kN to 10 kN
+   D. The impulse rises to 7,200 N*s while the average force stays at 10 kN
+
+   *Answer: C.* The momentum change is fixed by the crash: (80 kg)(15.0 m/s) = 1,200 kg*m/s = 1,200 N*s, and by the impulse-momentum theorem that is the impulse in both cases. Only the duration changes, so F_ave = 1,200/0.020 = 60,000 N becomes 1,200/0.120 = 10,000 N. The impulse is unchanged and the average force drops by the same factor of six the time increased.
+   *Difficulty:* application · *Skill:* Applying the impulse-momentum theorem and F_ave = J/delta t to a stopping problem · *Sources:* openstax-university-physics-1-impulse-and-collisions, nist-sp811-chapter-4-classes-of-si-units
+
+**4. In that same locked-together collision, the 1,600 kg car arrives at 15.0 m/s and the pair leaves at 8.57 m/s. How much kinetic energy is dissipated?**
+
+   A. None, because conservation of momentum forbids any loss
+   B. About 77 kJ, roughly 43 percent of the initial 180 kJ
+   C. About 103 kJ, roughly 57 percent of the initial 180 kJ
+   D. The full 180 kJ, because the bodies end up moving together
+
+   *Answer: B.* K before is 0.5(1,600)(15.0)^2 = 180,000 J. K after is 0.5(2,800)(8.5714)^2 = 102,857 J. The difference is 77,143 J, about 77.1 kJ or 42.9 percent, matching the general result m_2/(m_1 + m_2) = 1,200/2,800 for a body sticking to a stationary target. Option A confuses momentum conservation with energy conservation. Option C quotes the energy that remains rather than the energy lost. Option D would leave the wreck at rest, which momentum conservation forbids.
+   *Difficulty:* analysis · *Skill:* Computing kinetic energy dissipated in a perfectly inelastic collision and distinguishing it from the conserved momentum · *Sources:* openstax-university-physics-1-types-of-collisions, libretexts-mechanics-map-one-dimensional-collisions
+
+**5. Two bodies collide head-on and the coefficient of restitution for the impact is measured as zero. What does that tell you?**
+
+   A. Momentum was not conserved in the collision
+   B. The collision was elastic and the total kinetic energy was conserved
+   C. The bodies separated with the same relative speed at which they approached
+   D. The relative velocity after impact is zero, so the bodies do not separate: the perfectly inelastic case
+
+   *Answer: D.* Restitution is e = -(v_Af - v_Bf)/(v_Ai - v_Bi), and it runs from 0 to 1. A value of zero makes the numerator zero, so the bodies have no relative velocity afterwards and move off together, which is the perfectly inelastic case and the largest kinetic-energy loss momentum conservation allows. Options B and C both describe e = 1. Option A is wrong regardless of restitution: momentum is conserved for the system in every collision with no net external impulse, whatever the value of e.
+   *Difficulty:* understanding · *Skill:* Interpreting the coefficient of restitution and mapping its limiting values onto collision types · *Sources:* libretexts-mechanics-map-coefficient-of-restitution, libretexts-mechanics-map-one-dimensional-collisions
+
+## Sources
+
+- **openstax-university-physics-1-linear-momentum** — University Physics Volume 1, 9.1 Linear Momentum. OpenStax, Rice University. <https://openstax.org/books/university-physics-volume-1/pages/9-1-linear-momentum> (usage: REFERENCE_ONLY; checked 2026-08-19).
+- **openstax-university-physics-1-impulse-and-collisions** — University Physics Volume 1, 9.2 Impulse and Collisions. OpenStax, Rice University. <https://openstax.org/books/university-physics-volume-1/pages/9-2-impulse-and-collisions> (usage: REFERENCE_ONLY; checked 2026-08-19).
+- **openstax-university-physics-1-conservation-of-linear-momentum** — University Physics Volume 1, 9.3 Conservation of Linear Momentum. OpenStax, Rice University. <https://openstax.org/books/university-physics-volume-1/pages/9-3-conservation-of-linear-momentum> (usage: REFERENCE_ONLY; checked 2026-08-19).
+- **openstax-university-physics-1-types-of-collisions** — University Physics Volume 1, 9.4 Types of Collisions. OpenStax, Rice University. <https://openstax.org/books/university-physics-volume-1/pages/9-4-types-of-collisions> (usage: REFERENCE_ONLY; checked 2026-08-19).
+- **openstax-university-physics-1-center-of-mass** — University Physics Volume 1, 9.6 Center of Mass. OpenStax, Rice University. <https://openstax.org/books/university-physics-volume-1/pages/9-6-center-of-mass> (usage: REFERENCE_ONLY; checked 2026-08-19).
+- **openstax-university-physics-1-rocket-propulsion** — University Physics Volume 1, 9.7 Rocket Propulsion. OpenStax, Rice University. <https://openstax.org/books/university-physics-volume-1/pages/9-7-rocket-propulsion> (usage: REFERENCE_ONLY; checked 2026-08-19).
+- **openstax-university-physics-1-angular-momentum** — University Physics Volume 1, 11.2 Angular Momentum. OpenStax, Rice University. <https://openstax.org/books/university-physics-volume-1/pages/11-2-angular-momentum> (usage: REFERENCE_ONLY; checked 2026-08-19).
+- **openstax-university-physics-1-conservation-of-angular-momentum** — University Physics Volume 1, 11.3 Conservation of Angular Momentum. OpenStax, Rice University. <https://openstax.org/books/university-physics-volume-1/pages/11-3-conservation-of-angular-momentum> (usage: REFERENCE_ONLY; checked 2026-08-19).
+- **openstax-university-physics-1-newtons-second-law** — University Physics Volume 1, 5.3 Newton's Second Law. OpenStax, Rice University. <https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law> (usage: REFERENCE_ONLY; checked 2026-08-19).
+- **libretexts-mechanics-map-coefficient-of-restitution** — Mechanics Map, 10.2 Surface Collisions and the Coefficient of Restitution. Jacob Moore and contributors, Mechanics Map project (Pennsylvania State University), hosted on Engineering LibreTexts. <https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_Map_(Moore_et_al.)/10:_Impulse_and_Momentum_in_Particles/10.02:_Surface_Collisions_and_the_Coefficient_of_Restitution> (usage: REFERENCE_ONLY; checked 2026-08-19). Licence: CC BY-SA 4.0 (as stated at the foot of the page).
+- **libretexts-mechanics-map-one-dimensional-collisions** — Mechanics Map, 10.3 One-Dimensional Particle Collisions. Jacob Moore and contributors, Mechanics Map project (Pennsylvania State University), hosted on Engineering LibreTexts. <https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_Map_(Moore_et_al.)/10:_Impulse_and_Momentum_in_Particles/10.03:_One-Dimensional_Particle_Collisions> (usage: REFERENCE_ONLY; checked 2026-08-19). Licence: CC BY-SA 4.0 (as stated at the foot of the page).
+- **nasa-bga-rocket-thrust-equations** — Rocket Thrust Equations (Beginner's Guide to Rockets). NASA Glenn Research Center. <https://www.grc.nasa.gov/WWW/K-12/airplane/rktthsum.html> (usage: REFERENCE_ONLY; checked 2026-08-19).
+- **nist-sp811-chapter-4-classes-of-si-units** — NIST Guide to the SI, Chapter 4: The Two Classes of SI Units and the SI Prefixes. National Institute of Standards and Technology (NIST Special Publication 811, 2008 edition). <https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes> (usage: REFERENCE_ONLY; checked 2026-08-19).
+- **nist-cuu-standard-acceleration-of-gravity** — Standard acceleration of gravity (g_n) - CODATA value page. NIST Physical Measurement Laboratory, Fundamental Physical Constants. <https://physics.nist.gov/cgi-bin/cuu/Value?gn> (usage: REFERENCE_ONLY; checked 2026-08-19).
+- **ecfr-49-cfr-571-208-occupant-crash-protection** — 49 CFR 571.208 - Standard No. 208; Occupant crash protection. National Highway Traffic Safety Administration, via the Electronic Code of Federal Regulations (eCFR). <https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/subpart-B/section-571.208> (usage: REFERENCE_ONLY; checked 2026-08-19).
+
+## Related Topics
+
+- `engineering-fundamentals:mechanics:force-and-motion`
+- `engineering-fundamentals:mechanics:free-body-diagrams`
+- `engineering-fundamentals:mechanics:dynamics`
+- `engineering-fundamentals:mechanics:work-and-energy`
+
+## Editorial Metadata
+
+- **Topic id:** `engineering-fundamentals:mechanics:momentum`
+- **Editorial status:** READY_TO_PUBLISH
+- **Estimated minutes:** 13
+- **Researched at:** 2026-08-19
+- **Research status:** source-verified
+- **Rights status:** All fifteen sources held at REFERENCE_ONLY; no source prose adapted. Every number in the lesson was computed in Bash rather than copied from a source.
+- **Transformation:** Concepts and relationships were verified against OpenStax University Physics Volume 1 (chapters 9 and 11), the Mechanics Map engineering dynamics chapters on impulse and momentum, NASA Glenn's rocket thrust equations, NIST SP 811, and 49 CFR 571.208. All prose, the worked example, its numbers, and the question bank are original to EliExplains; the numeric results were executed in Python before publication.
+- **Source count:** 15 · **Questions:** 5
+- **Scope note:** This lesson is educational material, not engineering design guidance. Nothing in it is guidance for designing occupant-protection systems, which are governed by regulation and prescribed test standards; real design requires a licensed engineer working to the governing code.
+- **Verification:** every number in the worked example, the prose, and the question bank was executed in Python (Bash) before publication.

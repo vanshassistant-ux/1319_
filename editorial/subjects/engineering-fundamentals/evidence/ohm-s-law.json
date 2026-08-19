@@ -1,0 +1,259 @@
+{
+  "topicId": "engineering-fundamentals:electrical-fundamentals:ohm-s-law",
+  "subjectId": "engineering-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "V = IR and its rearrangements I = V/R and R = V/I, solved for whichever quantity is unknown",
+      "Strict unit discipline: the ohm as volt per ampere, prefix handling for mA and kilohm",
+      "Ohmic behaviour defined operationally by a linear current-voltage characteristic through the origin",
+      "Ohm's law as an empirical description of a class of materials rather than a law of nature",
+      "Non-ohmic devices: silicon diodes, thermistors, filament lamps, and why they are built that way",
+      "The microscopic form J = sigma E (equivalently E = rho J) and how it differs from the device statement",
+      "Using the law to size a current-limiting resistor, including tolerance and device-drop sensitivity",
+      "Measurement: ammeter in series with low burden, voltmeter in parallel with high impedance, the consequences of swapping them, and the loading effect of a real meter",
+      "Quantified failure of the constant-resistance assumption for a tungsten filament"
+    ],
+    "supporting": [
+      "Temperature coefficient of resistivity for metals and its sign reversal in semiconductors",
+      "Static (chord) resistance V/I versus dynamic resistance dV/dI at an operating point",
+      "The limited validity range of the linear temperature-coefficient model itself"
+    ],
+    "outOfScope": [
+      "Definitions of voltage, current, resistance, resistivity and sources (owned by voltage-current-and-resistance)",
+      "Series and parallel resistance combination rules and Kirchhoff's laws (owned by series-and-parallel-circuits)",
+      "Power dissipation P = VI = I^2 R and energy accounting (owned by electrical-power)",
+      "AC circuits, impedance, reactance and phasors",
+      "Semiconductor device physics beyond the observed shape of the diode characteristic",
+      "Any procedure applicable to real electrical installations or wiring"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Ohm's law states that the voltage across certain conductors is directly proportional to the current through them, V = IR, with V in volts, I in amperes and R in ohms; it was demonstrated experimentally by Georg Ohm in 1827 using metal wires.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["openstax-university-physics-2-ohms-law"],
+      "status": "supported"
+    },
+    {
+      "claim": "Ohm's law is an empirical law rather than a law of nature: it is an experimentally observed regularity, comparable to friction, and it holds only for materials and devices that happen to behave that way under the conditions of use.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["openstax-university-physics-2-ohms-law"],
+      "status": "supported"
+    },
+    {
+      "claim": "A material, component or device whose current is proportional to the applied voltage is called ohmic; one that is not is called non-ohmic. The operational test is the shape of the measured current-voltage characteristic, which for an ohmic component is a straight line whose slope gives the resistance.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["openstax-university-physics-2-ohms-law"],
+      "status": "supported"
+    },
+    {
+      "claim": "A silicon diode is a non-ohmic device: it has extremely high resistance when reverse biased and conducts when the forward voltage exceeds approximately 0.7 V, the exact value depending on the device.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["openstax-university-physics-2-ohms-law"],
+      "status": "supported"
+    },
+    {
+      "claim": "Ohm's law also has a microscopic form relating current density, conductivity and electric field, which is closer to the original statement of the result; it is written in continuum modelling as E = rho J, equivalently J = sigma E with sigma = 1/rho.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["openstax-university-physics-2-ohms-law", "tolias-2017-tungsten-thermophysical-properties"],
+      "status": "supported"
+    },
+    {
+      "claim": "In the SI the ohm is a derived unit with a special name, equal to the volt per ampere and to m^2 kg s^-3 A^-2 in base units; the volt is the watt per ampere and the ampere is an SI base unit.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp811-chapter-4-classes-of-si-units"],
+      "status": "supported"
+    },
+    {
+      "claim": "Resistance varies with temperature according to the approximate linear relation R = R0(1 + alpha times delta T); OpenStax Table 9.1 gives alpha = 0.0045 per degree Celsius for tungsten, 0.0039 for copper, -0.0005 for pure carbon and -0.075 for pure silicon, with tungsten resistivity at 20 degrees Celsius listed as 5.60e-8 ohm metre.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-university-physics-2-resistivity-and-resistance"],
+      "status": "supported"
+    },
+    {
+      "claim": "Heating a 3.00 kilohm carbon resistor from 20 to 60 degrees Celsius lowers its resistance to 2.94 kilohms, so the current at 9.00 V rises from 3.00 mA to 3.06 mA, a change of about 2 percent.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-university-physics-2-resistivity-and-resistance", "openstax-university-physics-2-ohms-law"],
+      "status": "supported"
+    },
+    {
+      "claim": "An ammeter is connected in series and must have very low resistance, a fraction of a milliohm, because otherwise it changes the equivalent resistance of the circuit and modifies the current being measured; a voltmeter is connected in parallel and must have very large resistance, from about 10 megohms for inexpensive instruments to 10 gigohms for high-precision ones.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["openstax-university-physics-2-electrical-measuring-instruments"],
+      "status": "supported"
+    },
+    {
+      "claim": "NIST's luminous intensity and correlated colour temperature standard lamp is a modified FEL quartz-halogen lamp with a double coil tungsten filament, operated at approximately 7.3 A and 85 V dc at a correlated colour temperature of 2856 K; its hot resistance is therefore 85 V / 7.3 A = 11.6 ohms.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["nist-sp-250-95-photometric-calibrations"],
+      "status": "supported"
+    },
+    {
+      "claim": "Using the White-Minges polynomial fit to critically evaluated tungsten resistivity data (valid 100 K to 3600 K), the resistivity of pure tungsten is 5.31 microhm cm at 293.15 K and 86.5 microhm cm at 2800 K, a ratio of 16.29; the accompanying normalized linear dimension fit gives 1.5 percent linear thermal expansion over the same span, so the filament resistance ratio is 16.0 after the geometric correction.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["tolias-2017-tungsten-thermophysical-properties"],
+      "status": "supported"
+    },
+    {
+      "claim": "Predicting a filament lamp's operating current from its cold resistance overestimates the current by the cold-to-hot resistance ratio: for the NIST standard lamp the predicted cold resistance is 11.6 / 16.0 = 0.73 ohm, giving 85 V / 0.73 ohm = 116 A against an actual 7.3 A, a factor of 16 and an absolute error of about 109 A.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["nist-sp-250-95-photometric-calibrations", "tolias-2017-tungsten-thermophysical-properties", "openstax-university-physics-2-resistivity-and-resistance"],
+      "status": "supported"
+    },
+    {
+      "claim": "A thermistor is a semiconductor resistor, typically a sintered mixture of metal oxides, and the common negative temperature coefficient type is a nonlinear device whose resistance decreases as temperature rises.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-thermistor-mercury-thermometer-alternatives", "openstax-university-physics-2-resistivity-and-resistance"],
+      "status": "supported"
+    },
+    {
+      "claim": "Sizing a current-limiting resistor for a 5.00 V supply driving a silicon diode at 10.0 mA gives R = (5.00 V - 0.70 V) / 0.0100 A = 430 ohms; at plus or minus 5 percent tolerance the current spans 9.52 mA to 10.53 mA, and a diode dropping 0.75 V instead of 0.70 V yields 9.88 mA, 1.2 percent low.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-university-physics-2-ohms-law", "nist-sp811-chapter-4-classes-of-si-units"],
+      "status": "supported"
+    },
+    {
+      "claim": "An ammeter with 0.50 ohm internal resistance inserted into a 5.00 V, 10.0 ohm loop reads 0.476 A instead of 0.500 A, an error of 4.8 percent; at 0.5 milliohm the error is 0.005 percent. Placing that ammeter directly across the source instead gives 10 A, and placing a 10 megohm voltmeter in series reduces the loop current to 0.500 microampere, a factor of a million.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-university-physics-2-electrical-measuring-instruments", "openstax-university-physics-2-ohms-law"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "How far the linear temperature-coefficient model R = R0(1 + alpha delta T) can be pushed for tungsten.",
+      "positions": [
+        "OpenStax University Physics Volume 2, section 9.3, cautions that the relation should be used carefully for temperature changes greater than 100 degrees Celsius but adds that for tungsten the equations work reasonably well for very large temperature changes.",
+        "Evaluating the White-Minges fit to critically evaluated tungsten resistivity data gives a resistivity ratio of 16.29 between 293.15 K and 2800 K, whereas the linear model with alpha = 0.0045 per degree Celsius over the same span gives 12.28, about 25 percent lower."
+      ],
+      "resolution": "The lesson reports both and states plainly that across a 2500 K span the linear coefficient is an order-of-magnitude tool rather than a design value. The qualitative conclusion is unaffected: both models say the hot resistance is more than ten times the cold resistance, which is the pedagogical point. The lesson uses the fitted value (16.0 after the thermal-expansion correction) for the published worked example and does not quote the linear model as if it were accurate at that temperature."
+    },
+    {
+      "issue": "The filament temperature to assume for the NIST FEL standard lamp.",
+      "positions": [
+        "NIST SP 250-95 states only the correlated colour temperature, 2856 K; it does not state the filament's true thermodynamic temperature.",
+        "For a tungsten emitter the true temperature and the correlated colour temperature are not identical, because tungsten's emissivity varies with wavelength."
+      ],
+      "resolution": "The lesson takes 2800 K as an approximation to the true filament temperature and says so, describing it as close to the operating temperature rather than equal to it. The resulting resistance ratio is presented to two significant figures (16), which is well within the sensitivity of the result to a hundred-kelvin uncertainty in the assumed temperature."
+    },
+    {
+      "issue": "Room-temperature resistivity of tungsten.",
+      "positions": [
+        "OpenStax Table 9.1 lists 5.60e-8 ohm metre at 20 degrees Celsius.",
+        "The White-Minges fit, which is corrected for thermal expansion, evaluates to 5.31e-8 ohm metre at 293.15 K."
+      ],
+      "resolution": "The roughly 5 percent difference is consistent with the stated uncertainties on the recommended values (about 2 to 3 percent near room temperature) and with differences between expansion-corrected and uncorrected data. The lesson uses only the ratio of resistivities from a single consistent fit, so the discrepancy does not propagate into the worked example."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The phase-1 generated draft for this topic contained no researched content; the lessons.json entry was machine-generated boilerplate and none of its wording was retained.",
+    "Common textbook framings that state Ohm's law as though it were universal, or that quote a single resistance for a lamp, were not adopted; nothing in the researched sources supports them."
+  ],
+  "correctionsNeeded": [
+    "Recast Ohm's law explicitly as an empirical description of ohmic materials rather than a universal law, which the generated draft did not do.",
+    "Replaced any generic light-bulb hand-waving with a real, sourced operating point (NIST FEL standard lamp at approximately 85 V and 7.3 A) and a computed resistance ratio.",
+    "Added the microscopic form J = sigma E, the measurement section covering meter burden and loading, and an explicit statement that the lesson is educational material and not guidance for work on electrical installations."
+  ],
+  "rightsIssues": [
+    "All seven sources are classified REFERENCE_ONLY. No source prose is reproduced or paraphrase-followed; all lesson wording is original.",
+    "OpenStax per-book terms were not independently verified for University Physics Volume 2, so no OpenStax text is reused; only facts and numerical values are taken.",
+    "The tungsten paper is distributed on arXiv under the arXiv non-exclusive distribution licence, which is not an open reuse licence. Only the published fit coefficients and the form of Ohm's law it states were used, both of which are facts; the coefficients were re-evaluated in executed code.",
+    "NIST SP 250-95 is a U.S. government publication available free of charge; it is nonetheless treated as reference-only here and only its stated lamp operating parameters were used."
+  ],
+  "sourceRecords": [
+    {
+      "id": "openstax-university-physics-2-ohms-law",
+      "title": "University Physics Volume 2, 9.4 Ohm's Law",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Load-bearing source for: the statement V = IR with units volts, amperes and ohms; Ohm's 1827 experiments on metal wires; the explicit statement that despite the name it is not considered a law of nature but an empirical law comparable to friction; the definitions of ohmic and non-ohmic materials and components; the linear current-voltage characteristic swept from -10 V to +10 V with resistance as the slope; the note that the law was originally stated microscopically in terms of current density, conductivity and electric field; and the diode as a non-ohmic device conducting above roughly 0.7 V forward. Also supplies Example 9.8, the carbon resistor at 9.00 V reading 3.00 mA at 20 degrees Celsius and 3.06 mA at 60 degrees Celsius. REFERENCE_ONLY; per-book OpenStax terms not independently verified, so no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-2-resistivity-and-resistance",
+      "title": "University Physics Volume 2, 9.3 Resistivity and Resistance",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supplies the temperature dependence of resistivity and resistance, rho = rho0[1 + alpha(T - T0)] and R = R0(1 + alpha delta T) with T0 normally 20 degrees Celsius, and the Table 9.1 values used as arithmetic inputs and cross-checks: tungsten alpha = 0.0045 per degree Celsius and rho = 5.60e-8 ohm metre, copper alpha = 0.0039, pure carbon alpha = -0.0005, pure silicon alpha = -0.075 and rho = 2300 ohm metre. Also the statement that resistivity rises with temperature in conducting metals because of increased lattice vibration while semiconductors behave oppositely as more carriers become available, and the caution that the linear relations need care above a 100 degree Celsius change although the page adds that they work reasonably well for tungsten over very large changes. That last assertion is recorded in conflictingEvidence because the fitted tungsten data disagree with it at filament temperature. REFERENCE_ONLY; no wording reproduced. This lesson does not re-derive resistivity itself, which belongs to the voltage-current-and-resistance topic."
+    },
+    {
+      "id": "openstax-university-physics-2-electrical-measuring-instruments",
+      "title": "University Physics Volume 2, 10.4 Electrical Measuring Instruments",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/10-4-electrical-measuring-instruments",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Load-bearing source for the measurement section: the ammeter is placed in series with the device and needs a very low resistance, a fraction of a milliohm, because otherwise it changes the equivalent resistance of the circuit and modifies the current being measured; the voltmeter is connected in parallel with the device it is measuring and must have a very large resistance, quoted from about 10 megohms for inexpensive meters to 10 gigohms for high-precision instruments. The lesson's numerical burden and loading calculations were computed independently from these stated instrument resistances. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "nist-sp811-chapter-4-classes-of-si-units",
+      "title": "NIST Guide to the SI, Chapter 4: The Two Classes of SI Units and the SI Prefixes",
+      "provider": "National Institute of Standards and Technology (NIST Special Publication 811, 2008 edition)",
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Re-read the live page for this topic; the record is the one already in the phase-1 registry and the URL is unchanged. Table 3 lists the ohm as an SI derived unit with a special name, expressed as V/A in terms of other SI units and m^2 kg s^-3 A^-2 in base units, and the volt as W/A and m^2 kg s^-3 A^-1; Table 1 lists the ampere among the seven base units. This is the source for the lesson's unit-algebra section and for question 1. Nothing about the 2019 redefinition is relied on here, so the SP 811 caveat recorded elsewhere in the registry does not bite. REFERENCE_ONLY; the table is not reproduced."
+    },
+    {
+      "id": "nist-sp-250-95-photometric-calibrations",
+      "title": "NIST Measurement Services: Photometric Calibrations, NIST Special Publication 250-95 (Y. Zong, M. E. Nadal, B. K. Tsai, C. C. Miller), July 2018",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.250-95.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "PDF downloaded from nvlpubs.nist.gov and read locally after text extraction (doi 10.6028/NIST.SP.250-95; the document states it is available free of charge). Supplies the real, published operating point used in the second worked example: service 37010C issues a 1000 W modified FEL quartz-halogen lamp with a double coil tungsten filament and a clear bulb, operated at approximately 7.3 A / 85 V dc at a correlated colour temperature of 2856 K, with relative expanded uncertainty of luminous intensity below 0.6 percent (k = 2) and expanded uncertainty of correlated colour temperature 8 K (k = 2). The lesson uses only the 85 V, 7.3 A and 2856 K figures; the hot resistance 11.6 ohms is the lesson's own computation. Note that the document reports correlated colour temperature, not the filament's true thermodynamic temperature; the lesson states this distinction. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "nist-thermistor-mercury-thermometer-alternatives",
+      "title": "Mercury Thermometer Alternatives: Thermistor",
+      "provider": "National Institute of Standards and Technology, Sensor Science Division",
+      "url": "https://www.nist.gov/pml/sensor-science/thermodynamic-metrology/mercury-thermometer-alternatives/mercury-thermometer-4",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the lesson's use of the thermistor as a deliberately non-ohmic component: thermistors are made from polymers or ceramics, usually semiconductors sintered from mixtures of metallic oxides such as manganese, nickel, cobalt, copper and iron; most commercial units are negative temperature coefficient types whose resistance decreases as temperature rises, positive temperature coefficient models being reserved for specialised applications; and the page lists non-linearity as a characteristic of the device. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "tolias-2017-tungsten-thermophysical-properties",
+      "title": "Analytical expressions for thermophysical properties of solid and liquid tungsten relevant for fusion applications (P. Tolias and the EUROfusion MST1 Team), Nuclear Materials and Energy 13 (2017) 42-57",
+      "provider": "Nuclear Materials and Energy (Elsevier); preprint on arXiv",
+      "url": "https://doi.org/10.1016/j.nme.2017.08.002",
+      "sourceType": "peer-reviewed",
+      "usage": "REFERENCE_ONLY",
+      "license": "arXiv non-exclusive distribution licence v1.0 on the preprint copy that was read; no open reuse licence asserted here",
+      "licenseUrl": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "The journal DOI is registered as the canonical URL; the copy actually read was the arXiv preprint v4 (arXiv:1703.06302), downloaded as PDF and text-extracted locally. Supplies three things. (1) The statement that for isotropic tungsten Ohm's law becomes E = rho J, used as an independent attestation of the microscopic form. (2) The White-Minges fourth-order polynomial fit to the expansion-corrected recommended tungsten resistivity values, valid 100 K to 3600 K, rho = -0.9680 + 1.9274e-2 T + 7.8260e-6 T^2 - 1.8517e-9 T^3 + 2.0790e-13 T^4 in microhm cm, fitted to the Desai et al. 1984 synthesis of 201 experimental datasets with quoted uncertainties of about 2 percent from 300 to 2500 K and 3 percent from 2500 to 3600 K. (3) The White-Minges normalized linear dimension fit l/l0 = 1 + 4.64942e-6(T - T0) + 2.99884e-11(T - T0)^2 + 1.95525e-13(T - T0)^3 with T0 = 293.15 K, used for the thermal-expansion correction to the filament resistance ratio. All three polynomial evaluations in the lesson were executed in Python; the paper's own numbers were not copied. REFERENCE_ONLY."
+    }
+  ]
+}

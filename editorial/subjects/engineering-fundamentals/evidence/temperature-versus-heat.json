@@ -1,0 +1,379 @@
+{
+  "topicId": "engineering-fundamentals:thermal-and-energy-systems:temperature-versus-heat",
+  "subjectId": "engineering-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Temperature as an intensive property tied to the average translational kinetic energy of molecules",
+      "Heat as energy in transit across a system boundary driven by a temperature difference",
+      "The phrasing correction: a body does not contain heat, it contains internal energy",
+      "Thermal equilibrium and the zeroth law of thermodynamics, and why the zeroth law licenses thermometry",
+      "Celsius, Fahrenheit and thermodynamic kelvin scales; absolute zero; the 2019 SI redefinition fixing the Boltzmann constant",
+      "Temperature values convert between scales by a different rule than temperature differences",
+      "Heat capacity, specific heat capacity, and the sensible-heat relation Q = mc(delta)T",
+      "Latent heat and constant-temperature phase change, Q = mL",
+      "Thermal energy versus internal energy versus enthalpy at introductory depth"
+    ],
+    "supporting": [
+      "Intensive versus extensive properties",
+      "Operational versus kinetic-theory definitions of temperature",
+      "Temperature dependence of specific heat and latent heat; c_p versus c_v as a signpost",
+      "Significant figures in a multi-step energy sum"
+    ],
+    "outOfScope": [
+      "The first law of thermodynamics, work, and closed-system energy balances (owned by engineering-fundamentals:thermal-and-energy-systems:first-law-of-thermodynamics)",
+      "Conduction, convection and radiation as heat-transfer mechanisms and their rate equations (owned by engineering-fundamentals:thermal-and-energy-systems:heat-transfer)",
+      "Entropy and the second law",
+      "Thermodynamic cycles, heat engines, and refrigeration",
+      "Thermal expansion (covered elsewhere in the subject)",
+      "Any design guidance for real thermal equipment"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Temperature is an intensive property: it does not depend on the amount of matter present, so combining two samples at 20 degrees Celsius leaves the temperature at 20 degrees Celsius while mass and internal energy add.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["openstax-chemistry-2e-physical-and-chemical-properties", "openstax-university-physics-2-temperature-and-thermal-equilibrium"],
+      "status": "supported"
+    },
+    {
+      "claim": "Temperature is operationally what a thermometer measures and is proportional to the average kinetic energy of molecular translation.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["openstax-university-physics-2-temperature-and-thermal-equilibrium"],
+      "status": "supported"
+    },
+    {
+      "claim": "Heat is a transfer of energy caused by a temperature difference; a system has a well-defined internal energy but cannot be said to have a 'heat content', because heat and work are not state variables.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["openstax-university-physics-2-specific-heat-and-calorimetry", "openstax-university-physics-2-work-heat-and-internal-energy"],
+      "status": "supported"
+    },
+    {
+      "claim": "Internal energy is the sum of the kinetic and potential energies of all the molecules or entities in a system, and for an ideal monatomic gas it depends on temperature alone.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["openstax-university-physics-2-work-heat-and-internal-energy"],
+      "status": "supported"
+    },
+    {
+      "claim": "Two objects in thermal equilibrium have the same temperature, and the zeroth law of thermodynamics states that if A is in thermal equilibrium with B and B with C, then A is in thermal equilibrium with C; this transitivity is what makes a thermometer a valid instrument. The law was named by Ralph Fowler in the 1930s.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["openstax-university-physics-2-temperature-and-thermal-equilibrium"],
+      "status": "supported"
+    },
+    {
+      "claim": "On the Celsius scale water at standard pressure freezes at 0 degrees Celsius and boils at 100 degrees Celsius; on the Fahrenheit scale those points are 32 degrees Fahrenheit and 212 degrees Fahrenheit; on the kelvin scale they are 273.15 K and 373.15 K, and 0 K is absolute zero, equal to -273.15 degrees Celsius.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["openstax-university-physics-2-thermometers-and-temperature-scales", "nist-sp811-chapter-8-quantities-and-units"],
+      "status": "supported"
+    },
+    {
+      "claim": "Celsius temperature t and thermodynamic temperature T are related by t = T - T0 with T0 = 273.15 K by definition, and the numerical value of a temperature interval or difference is the same whether expressed in degrees Celsius or in kelvins.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp811-chapter-8-quantities-and-units", "openstax-university-physics-2-thermometers-and-temperature-scales"],
+      "status": "supported"
+    },
+    {
+      "claim": "Temperature values convert between Celsius and Fahrenheit as T_F = (9/5)T_C + 32, but a temperature difference converts as delta_F = (9/5)delta_C with no offset; a rise of 45.0 degrees Celsius is a rise of 45.0 K and of 81.0 degrees Fahrenheit, not 113.0 degrees Fahrenheit. Arithmetic executed in Bash.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-university-physics-2-thermometers-and-temperature-scales", "nist-sp811-chapter-8-quantities-and-units"],
+      "status": "supported"
+    },
+    {
+      "claim": "Since 20 May 2019 the kelvin is defined by fixing the numerical value of the Boltzmann constant k at exactly 1.380 649 x 10^-23 J K^-1; Resolution 1 of the 26th CGPM (2018) set that value and the entry-into-force date, and the numerical values of the SI defining constants carry no uncertainty.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["bipm-cgpm-26-2018-resolution-1", "bipm-si-base-unit-kelvin", "bipm-si-brochure-9th-edition", "nist-sp-330-2019"],
+      "status": "supported"
+    },
+    {
+      "claim": "From 1954 until the 2019 redefinition the kelvin was defined as 1/273.16 of the thermodynamic temperature of the triple point of water; NIST states the earlier definition rested on the properties of a particular isotopic mixture of water rather than on a universal constant.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["nist-si-redefinition-kelvin"],
+      "status": "supported"
+    },
+    {
+      "claim": "Specific heat capacity c depends on the material and its phase, and the sensible-heat relation is Q = mc(delta)T; 1.000 kcal = 4186 J.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["openstax-university-physics-2-specific-heat-and-calorimetry"],
+      "status": "supported"
+    },
+    {
+      "claim": "Published specific heat capacities used as arithmetic inputs (read 2026-08-19): ice, averaged over -50 to 0 degrees Celsius, 2090 J/(kg K); liquid water at 15.0 degrees Celsius, 4186 J/(kg K); steam at 100 degrees Celsius, 1520 J/(kg K).",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-university-physics-2-specific-heat-and-calorimetry"],
+      "status": "supported"
+    },
+    {
+      "claim": "During a phase transition heat transfer produces no temperature change, and the energy per unit mass involved is the latent heat: Q = mL_f for melting or freezing and Q = mL_v for vaporization or condensation. For water at standard pressure L_f = 334 kJ/kg at 0.00 degrees Celsius and L_v = 2256 kJ/kg at 100.0 degrees Celsius; at 37.0 degrees Celsius the heat of vaporization is 2430 kJ/kg.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-university-physics-2-phase-changes"],
+      "status": "supported"
+    },
+    {
+      "claim": "Latent heat of vaporization is temperature dependent. Using CODATA review values of the standard enthalpy of formation of water from the NIST Chemistry WebBook, -241.826 kJ/mol (gas) and -285.830 kJ/mol (liquid), the enthalpy of vaporization at 298.15 K is 44.004 kJ/mol, which for a molar mass of 18.0153 g/mol is 2443 kJ/kg — larger than the 2256 kJ/kg quoted at 100.0 degrees Celsius, and consistent with the 2430 kJ/kg quoted at 37.0 degrees Celsius. Arithmetic executed in Bash.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["nist-chemistry-webbook-water", "openstax-university-physics-2-phase-changes"],
+      "status": "supported"
+    },
+    {
+      "claim": "Taking 0.500 kg of ice from -20.0 degrees Celsius to steam at 120.0 degrees Celsius at standard pressure requires 20.90 kJ + 167.00 kJ + 209.30 kJ + 1128.00 kJ + 15.20 kJ = 1540.40 kJ, reported as 1.54 MJ to three significant figures; the two latent steps account for 84.1 percent of the total and boiling alone for 73.2 percent. Arithmetic executed in Bash.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-university-physics-2-specific-heat-and-calorimetry", "openstax-university-physics-2-phase-changes"],
+      "status": "supported"
+    },
+    {
+      "claim": "Enthalpy is defined as H = U + PV, it is a state function, and at constant pressure with only expansion work the enthalpy change equals the heat exchanged, delta_H = q_p.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["openstax-chemistry-2e-enthalpy"],
+      "status": "supported"
+    },
+    {
+      "claim": "Work done by a system is path dependent, so the work associated with a change of state cannot be determined without knowing the thermodynamic path; internal energy, by contrast, is fixed by the state.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["openstax-university-physics-2-work-heat-and-internal-energy"],
+      "status": "supported"
+    },
+    {
+      "claim": "For an ideal monatomic gas the average translational kinetic energy per molecule is (3/2)kT, which with the exact SI value of k gives 6.07 x 10^-21 J at 293.15 K and 7.73 x 10^-21 J at 373.15 K. Arithmetic executed in Bash.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-university-physics-2-work-heat-and-internal-energy", "bipm-si-base-unit-kelvin"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "The date attached to the kelvin redefinition differs between sources.",
+      "positions": [
+        "NIST's SI redefinition pages date the new kelvin definition to November 2018, when the 26th CGPM adopted it.",
+        "BIPM Resolution 1 of the 26th CGPM states the revised SI is effective from 20 May 2019."
+      ],
+      "resolution": "Both are correct about different events. The lesson states that the 26th CGPM adopted the revision in November 2018 and that it entered into force on 20 May 2019, citing the BIPM resolution for the operative date."
+    },
+    {
+      "issue": "Published latent heat of vaporization for water varies with the temperature it is quoted at.",
+      "positions": [
+        "2256 kJ/kg at 100.0 degrees Celsius (OpenStax Table 1.4).",
+        "2430 kJ/kg at 37.0 degrees Celsius (OpenStax note).",
+        "2443 kJ/kg at 298.15 K, computed here from NIST Chemistry WebBook CODATA formation enthalpies."
+      ],
+      "resolution": "Not a conflict. Latent heat falls as temperature rises toward the critical point. The lesson quotes the 100.0 degrees Celsius value for the worked example and uses the WebBook-derived value as an explicit cross-check and as evidence that L is temperature dependent."
+    },
+    {
+      "issue": "Whether the triple point of water now carries an experimental uncertainty.",
+      "positions": [
+        "It follows from fixing k that the triple point is no longer exact by definition.",
+        "Neither NIST redefinition page consulted states this explicitly."
+      ],
+      "resolution": "The lesson says only what the sources say: the defining constant is now k, whose value is exact, and the triple point of water is no longer the defining fixture. No uncertainty figure is quoted."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained no thermodynamic content at all: it described 'Temperature Versus Heat' as a generic organizing concept, defined it circularly as 'a foundational Engineering Fundamentals concept covered in this lesson', and offered a toolbox-drawer analogy unrelated to thermal physics.",
+    "The draft's vocabulary list (context, evidence, application) was subject-agnostic filler with no thermodynamic referent.",
+    "The draft's worked example contained no calculation, which is disqualifying in a quantitative engineering subject.",
+    "The draft's question bank tested study skills rather than the temperature/heat distinction."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire lesson with a sourced treatment of temperature as an intensive property and heat as energy in transit.",
+    "Made the 'a body does not contain heat' correction the first common mistake, as the topic's core phrasing point.",
+    "Added the zeroth law and its role in licensing thermometry, which the draft omitted entirely.",
+    "Added the 2019 SI kelvin definition with the exact Boltzmann constant value, verified against BIPM and NIST, and separated the November 2018 adoption from the 20 May 2019 entry into force.",
+    "Added the values-versus-differences conversion rule with numbers executed in Bash, since it is the arithmetic error students most often make.",
+    "Added a five-step heating-curve worked example with every step executed in Bash and the total reported to three significant figures.",
+    "Added an explicit statement that the lesson is educational material and not engineering design guidance.",
+    "Introduced but did not teach the first law and the three heat-transfer mechanisms, per the unit's anti-duplication boundaries."
+  ],
+  "rightsIssues": [
+    "All OpenStax pages are recorded REFERENCE_ONLY in line with existing registry practice for this project; no OpenStax wording is reproduced and all prose is original.",
+    "NIST Chemistry WebBook data carries a data-compilation copyright notice by the U.S. Secretary of Commerce; only two numerical values were used, and they were transformed by calculation rather than reproduced as a table.",
+    "The BIPM SI Brochure is CC BY 4.0 and is reused only as a factual reference, with attribution recorded in the source record.",
+    "No engineering standard (ASME, ASTM, ISO) text, table, or design value is reproduced or relied on."
+  ],
+  "sourceRecords": [
+    {
+      "id": "openstax-university-physics-2-temperature-and-thermal-equilibrium",
+      "title": "University Physics Volume 2, 1.1 Temperature and Thermal Equilibrium",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/1-1-temperature-and-thermal-equilibrium",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the operational definition of temperature, its proportionality to the average kinetic energy of molecular translation, the definition of thermal equilibrium, the statement of the zeroth law of thermodynamics and its attribution to Ralph Fowler in the 1930s, and the argument that the zeroth law is what makes a thermometer valid. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-2-thermometers-and-temperature-scales",
+      "title": "University Physics Volume 2, 1.2 Thermometers and Temperature Scales",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/1-2-thermometers-and-temperature-scales",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the Celsius, Fahrenheit and kelvin fixed points, absolute zero at -273.15 degrees Celsius, the conversion formulas T_F = (9/5)T_C + 32 and T_K = T_C + 273.15, the equality of a Celsius degree and a kelvin in magnitude, the 100-to-180 span relation between Celsius and Fahrenheit degrees, and the statement that temperature differences are the same in kelvins and degrees Celsius. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-2-specific-heat-and-calorimetry",
+      "title": "University Physics Volume 2, 1.4 Heat Transfer, Specific Heat, and Calorimetry",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/1-4-heat-transfer-specific-heat-and-calorimetry",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports heat as a transfer of energy caused by a temperature difference, the explicit statement that a system has a well-defined internal energy but no 'heat content' or 'work content' because heat and work are not state variables, specific heat as depending on material and phase, the relation Q = mc(delta)T, the mechanical equivalent 1.000 kcal = 4186 J, and the Table 1.3 specific heat values used as arithmetic inputs: ice 2090 J/(kg C) averaged -50 to 0 degrees Celsius, water 4186 J/(kg C) at 15.0 degrees Celsius, steam 1520 J/(kg C) at 100 degrees Celsius. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-2-phase-changes",
+      "title": "University Physics Volume 2, 1.5 Phase Changes",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the definitions of heat of fusion and heat of vaporization, the relations Q = mL_f and Q = mL_v, the statement that heat transfer during a phase transition causes no temperature change, and the Table 1.4 values used as arithmetic inputs: water L_f = 334 kJ/kg at 0.00 degrees Celsius, L_v = 2256 kJ/kg at 100.0 degrees Celsius, and L_v = 2430 kJ/kg at 37.0 degrees Celsius. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-2-work-heat-and-internal-energy",
+      "title": "University Physics Volume 2, 3.2 Work, Heat, and Internal Energy",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/3-2-work-heat-and-internal-energy",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports internal energy as the sum of the mechanical (kinetic plus potential) energies of all the molecules in a system, the result that the internal energy of an ideal monatomic gas is (3/2)nRT and independent of pressure and volume, the (3/2)kT average translational kinetic energy per molecule used in the arithmetic, and the path dependence of work. Used only to introduce and hand off the first law, which belongs to a parallel topic. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-chemistry-2e-enthalpy",
+      "title": "Chemistry 2e, 5.3 Enthalpy",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/chemistry-2e/pages/5-3-enthalpy",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the definition H = U + PV, the statement that enthalpy is a state function, and the result that at constant pressure with only expansion work the enthalpy change equals the heat exchanged (delta_H = q_p), which is the basis for the lesson's distinction between internal energy and enthalpy. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-chemistry-2e-physical-and-chemical-properties",
+      "title": "Chemistry 2e, 1.3 Physical and Chemical Properties",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/chemistry-2e/pages/1-3-physical-and-chemical-properties",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the definitions of intensive and extensive properties and the worked illustration that combining a gallon and a cup of milk at 20 degrees Celsius leaves the temperature at 20 degrees Celsius while mass and volume add. The page also contains a loose 'more heat energy' phrasing that this lesson explicitly corrects; it is cited only for the intensive/extensive definitions. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "bipm-si-base-unit-kelvin",
+      "title": "SI base unit: kelvin (K)",
+      "provider": "Bureau International des Poids et Mesures (BIPM)",
+      "url": "https://www.bipm.org/en/si-base-units/kelvin",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the current SI definition of the kelvin by taking the fixed numerical value of the Boltzmann constant k to be 1.380 649 x 10^-23 when expressed in J K^-1, equivalently kg m^2 s^-2 K^-1. The page does not itself state the entry-into-force date, which is taken from the CGPM resolution instead. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "bipm-cgpm-26-2018-resolution-1",
+      "title": "Resolution 1 of the 26th CGPM (2018): On the revision of the International System of Units (SI)",
+      "provider": "Bureau International des Poids et Mesures (BIPM), Conference generale des poids et mesures",
+      "url": "https://www.bipm.org/en/committees/cg/cgpm/26-2018/resolution-1",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the adoption of the revised SI by the 26th CGPM in November 2018, the fixed value of the Boltzmann constant k = 1.380 649 x 10^-23 J/K, and the operative statement that the revised SI is effective from 20 May 2019. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "nist-si-redefinition-kelvin",
+      "title": "SI Redefinition: Kelvin (introduction) and Kelvin: Boltzmann Constant",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://www.nist.gov/si-redefinition/kelvin-introduction",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live introduction page, and also read https://www.nist.gov/si-redefinition/kelvin-boltzmann-constant for the rationale. Supports the exact fixed Boltzmann constant value 1.380649 x 10^-23 J K^-1, the November 2018 adoption date, the pre-2019 definition of the kelvin as 1/273.16 of the thermodynamic temperature of the triple point of water established in 1954, and NIST's stated rationale that the old definition depended on the properties of a particular isotopic mixture of water rather than on a universal constant. Neither page states an uncertainty for the triple point after redefinition, so the lesson makes no such claim. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "nist-chemistry-webbook-water",
+      "title": "NIST Chemistry WebBook, SRD 69 — Water (CAS 7732-18-5), gas-phase and condensed-phase thermochemistry data",
+      "provider": "National Institute of Standards and Technology (NIST) Standard Reference Data Program",
+      "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185&Units=SI",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "Data compilation copyright by the U.S. Secretary of Commerce on behalf of the U.S.A.; all rights reserved",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "The interactive pages were retrieved with curl using a browser user-agent (Mask=1 gas-phase and Mask=2 condensed-phase views) because the plain fetcher returned only the species header. Supports the molar mass of water, 18.0153 g/mol, and the CODATA review standard enthalpies of formation delta_f H(gas) = -241.826 +/- 0.040 kJ/mol and delta_f H(liquid) = -285.830 +/- 0.040 kJ/mol, from which the lesson computes the enthalpy of vaporization at 298.15 K as a cross-check on the tabulated latent heat. The phase-change view for water lists boiling and critical data but not delta_vap H, which is why the value was derived. REFERENCE_ONLY; only numerical values used, transformed by calculation."
+    },
+    {
+      "id": "nist-sp811-chapter-8-quantities-and-units",
+      "title": "NIST Guide to the SI, Chapter 8: Comments on Some Quantities and Their Units",
+      "provider": "National Institute of Standards and Technology (NIST Special Publication 811, 2008 edition)",
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-8",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Section 8.5 supports the relation t = T - T0 with T0 = 273.15 K by definition, and the rule that the numerical value of a temperature interval or difference is the same expressed in degrees Celsius as in kelvins, illustrated by the gallium-freezing-point example. Note the standing caveat on SP 811: it predates the 2019 SI, so the kelvin definition here is taken from BIPM and SP 330 instead. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "bipm-si-brochure-9th-edition",
+      "title": "The International System of Units (SI), 9th edition (2019), version 4.01 (June 2026)",
+      "provider": "Bureau International des Poids et Mesures (BIPM)",
+      "url": "https://www.bipm.org/en/publications/si-brochure",
+      "sourceType": "standards-body",
+      "usage": "ATTRIBUTION_REQUIRED",
+      "license": "Creative Commons Attribution 4.0 International (stated in the brochure's copyright statement)",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Existing registry record reused unchanged. Supports the definition of the SI by seven defining constants whose numerical values carry no uncertainty, and Resolution 1 of the 26th CGPM (2018) entering into force on 20 May 2019."
+    },
+    {
+      "id": "nist-sp-330-2019",
+      "title": "The International System of Units (SI), NIST Special Publication 330, 2019 edition (D. B. Newell and E. Tiesinga, eds.)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.330-2019.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "Carries a BIPM note that all BIPM works are internationally protected by copyright and that this document was drafted with permission obtained from the BIPM; no open licence is stated",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Existing registry record reused unchanged. This is the U.S. edition of the SI Brochure and is what NIST directs readers to for post-2019 SI definitions, including the constant-based definitions of the base units and the 20 May 2019 entry-into-force date."
+    }
+  ]
+}

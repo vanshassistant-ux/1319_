@@ -1,0 +1,340 @@
+{
+  "id": "engineering-fundamentals:engineering-practice:testing-and-validation",
+  "subjectSlug": "engineering-fundamentals",
+  "unitSlug": "engineering-practice",
+  "slug": "testing-and-validation",
+  "title": "Testing and Validation",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 12,
+  "tags": [
+    "engineering-fundamentals",
+    "engineering-practice",
+    "verification-and-validation",
+    "measurement",
+    "design-of-experiments",
+    "reliability"
+  ],
+  "in30Seconds": "Verification asks whether you built the thing right: does it meet every stated requirement. Validation asks whether you built the right thing: does it serve the real need in the real environment. Engineers answer both with four methods, inspection, analysis, demonstration and test, using acceptance criteria fixed before the run, instruments traceable to standards with stated uncertainty, and enough samples that the result says something about the population instead of one lucky unit.",
+  "whyItMatters": "Testing is where a design stops being an opinion. Courses ask you to build something and then claim it works, and the claim is only as good as the evidence behind it, which is why lab reports without uncertainties and senior projects without acceptance criteria lose marks they did not need to lose. Professionally, the same discipline decides whether hardware ships: qualification and acceptance programmes, calibration records and traceability matrices are the paperwork that turns a working prototype into a certified product. The habits also transfer. Deciding what would count as failure before you look at the data is the difference between an experiment and a demonstration, in engineering and everywhere else.",
+  "learningObjectives": [
+    "Distinguish verification from validation and state which document each traces back to.",
+    "Explain the four verification methods and choose an appropriate one for a given requirement.",
+    "Analyze a written requirement for verifiability and rewrite an untestable one so it can pass or fail.",
+    "Apply a confidence interval to an acceptance criterion and state what the interval does and does not claim.",
+    "Evaluate the assumption behind an accelerated life test and explain when its acceleration factor becomes meaningless.",
+    "Distinguish direct cause from root cause after a test failure and explain why a fix reopens earlier verification."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Two different questions",
+      "body": "Verification and validation get collapsed into one abbreviation and then into one activity, which is where projects lose money. NASA's systems engineering handbook keeps them apart: verification is a formal process, using test, analysis, inspection or demonstration, confirming that a system and its hardware and software components satisfy all specified requirements; validation asks whether the realized product accomplishes its intended purpose, in the intended environment, for the people who will use it. The international vocabulary of metrology compresses the pair into a sentence each. Verification is the provision of objective evidence that a given item fulfils specified requirements. Validation is verification where the specified requirements are adequate for an intended use. Read together, the structure is exact: validation is verification plus a judgement about the requirements themselves. That is why the two trace to different documents, verification to the baselined requirement set and validation to the concept of operations and the need behind it. A product can pass every verification and fail validation: every requirement met, and the requirements wrong. The quieter failure is a system that impresses everyone in a demonstration while some requirement was never verified, only assumed."
+    },
+    {
+      "heading": "Four methods, and when each one is honest",
+      "body": "Verification does not always mean testing. NASA names four methods. Inspection is visual examination of a realized end product, suited to physical features and identification, and it explicitly includes inspection of drawings, documents and records. Analysis uses mathematical modelling and analytical techniques to predict whether a design meets a requirement, drawing on calculated data or on data from lower-level verifications; it is what you use when no prototype exists, and it covers simulation and verification by similarity to a heritage product. Demonstration shows that using the end product achieves the requirement, a basic confirmation of capability separated from testing by the absence of detailed data gathering, as when a pilot is asked to reach every control in a cockpit mock-up. Test uses the end product to obtain detailed data at discrete points under controlled conditions, and is the most resource-intensive of the four. The method is chosen per requirement, by asking what evidence would settle that question at acceptable cost: a label is settled by inspection, behaviour in an environment nobody can build is settled by analysis, a number with a tolerance is settled by test. Configuration matters as much as method, which is the point of the maxim to test as you fly and fly as you test."
+    },
+    {
+      "heading": "Traceable requirements, and plans written before the run",
+      "body": "Verification only means something against a requirement set you can navigate. NASA requires bidirectional traceability: each requirement traces back to a parent in a baselined document, or is explicitly identified as self-derived. A requirement with no parent that is not acceptably self-derived signals one of two problems, either that the traceability work was done badly or that the requirement is gold plating and should be deleted. The matrix that records those links is also what tells you, when a requirement changes, which verification results just went stale. The second gate is verifiability. NASA's checklist asks whether requirements are free of unverifiable terms, then lists offenders, among them easy, sufficient, safe, adequate, user-friendly, fast, robust, quickly, and, memorably, other words ending in ly. The system shall be easy to service cannot fail, so it cannot pass; at review it becomes whatever the reviewer feels that morning, and the argument arrives years later when a technician cannot service it. Rewritten as a stated task, by a stated grade of technician, within a stated time, using stated tools, it becomes refutable. An untestable requirement is defective in the way an unfalsifiable claim is defective. The verification procedure then exists before anything is measured, and NASA's example of its contents is revealing: the objectives and criteria established by the applicable requirements specification, the test configuration and any differences from the operational configuration, the characteristics to be inspected, demonstrated or tested including values with tolerances for acceptance or rejection, the sequence of steps and observations, and identification of the measuring equipment by range, accuracy and type, with provision for recording its calibration. The acceptance tolerance lives in the pre-run document, next to the instrument that will decide it, and NIST's design-of-experiments material makes the same demand from the statistical side, that the detailed plan be drawn up in advance of doing the experiment. The reason is structural: look at the data first and then choose the criterion, and you cannot fail, so passing carries no information. Criteria can legitimately change when a test teaches you the requirement was wrong, but that is a documented change to the requirement followed by a rerun, not a quiet edit to the pass line."
+    },
+    {
+      "heading": "Instruments, uncertainty and calibration traceability",
+      "body": "A test result is a measurement, and a measurement without a stated uncertainty is not a result. Uncertainty components are evaluated statistically from repeated observations, Type A, or from other information such as calibration certificates and manufacturer specifications, Type B; they combine into a combined standard uncertainty, multiplied by a coverage factor to give an expanded uncertainty. NIST notes the coverage factor is typically 2 or 3, with k equal to 2 corresponding to roughly 95 percent confidence when the normal distribution applies. That is what lets a reading be compared against a limit honestly: if the limit is 12.0 N and the expanded uncertainty is 0.5 N, a reading of 11.8 N is consistent with compliance and with failure, and demonstrates neither. Uncertainty in turn rests on calibration, the operation that relates the values carried by measurement standards, with their uncertainties, to an instrument's indications. Metrological traceability is the property of a result that lets it be related to a reference through a documented unbroken chain of calibrations, each contributing to the measurement uncertainty. NIST is blunt about what such a claim requires: uncertainty documented at every step, an unbroken documented chain, and a description of the measurement process. The metrology vocabulary adds the warning that matters most here, that traceability guarantees neither that the uncertainty is adequate for your purpose nor that mistakes are absent."
+    },
+    {
+      "heading": "Designing the experiment, not just running it",
+      "body": "Design of experiments is the discipline of planning runs so the data support valid and objective conclusions, and it starts by naming things. Factors are the inputs you set, levels are the settings you give them, and the response is what you measure. The variables you do not set NIST divides into discrete ones, such as which operator ran the machine, and continuous ones, such as ambient temperature; each is controlled, blocked, randomized over, or left free to contaminate the answer. Replication, running the same treatment combination more than once, is what lets random error be estimated separately from lack of fit. Randomization orders the runs so that conditions in one run neither depend on previous conditions nor predict later ones, which stops a drifting room temperature from being read as a factor effect. Blocking concentrates a known nuisance change, a new material lot or a different operator, into the levels of a blocking variable. The design itself is what catches students out. Varying one factor at a time from a baseline is cheap, three factors costing four runs, but every effect is then measured only at the fixed levels of the others, and no run ever moves two factors together, so no interaction can be estimated. An interaction is exactly the case where the effect of one factor depends on the level of another, so a one-factor-at-a-time study does not merely miss interactions, it reports them as irreproducibility. A two-level full factorial costs 2 to the power k runs, 8 for three factors and 32 for five, and those 8 runs yield seven estimable effects: three main effects, three two-factor interactions and one three-factor interaction."
+    },
+    {
+      "heading": "Destructive and non-destructive, and the probability of detection",
+      "body": "A destructive test consumes what it examines: you load the specimen to failure, section the weld, cut the part apart, and learn a great deal about an article that no longer exists. Everything you then say about the parts you kept is an inference from a sample to a population, which is why destructive testing is inseparable from sampling statistics. Non-destructive evaluation breaks that trade-off. NASA defines it as technical methods that examine materials or components in ways that do not impair their future usefulness and serviceability, in order to detect, locate, measure and evaluate flaws and to assess integrity, properties and composition. The catch is that a clean inspection is not proof the part is sound. Detection is probabilistic, and professional practice quantifies it rather than assuming it. NASA-STD-5009C requires inspections of fracture-critical hardware to detect the crack sizes assumed in the damage-tolerance analysis with at least 90 percent probability of detection at 95 percent confidence, written 90/95, and then assumes flaws of that reliably detectable size are present for the safe-life analysis. Whatever you cannot reliably see, you design as though it is there."
+    },
+    {
+      "heading": "Accelerated life, environments, qualification and acceptance",
+      "body": "Some requirements are about years and you have weeks. Accelerated life testing raises stress, typically temperature, voltage, humidity or cycling rate, to make failures arrive sooner, then converts back with an acceleration factor, the multiplier between the two stress levels obtained as the ratio of the model's time to fail at use stress and at test stress. The models come from the physics or chemistry of a particular degradation mechanism, and that is the whole assumption: true acceleration means high stress produces the same failures that would have occurred at use stress, from the same causes, on a different time scale. When it does not hold, the arithmetic still produces a number, which is the danger. Raise temperature past a transition and you introduce a mechanism that never occurs in service, so the life prediction describes a product that does not exist. NIST states the guardrail directly: different failure modes are affected differently by stress and have different acceleration factors, so data must be separated by mode before anything is extrapolated. Censoring compounds the difficulty, since when the observation window closes some units have not failed, and the more reliable a product is, the harder it is to get the failure data needed to prove it is reliable. Around this sit the programme distinctions. Verification is performed once for a design; qualification is the subset run at the extremes of the environmental envelope to show the design works with expected margins; acceptance is a smaller subset run on every unit produced, showing that workmanship matches the verified design; certification is the audit presenting the evidence to a certifying authority."
+    },
+    {
+      "heading": "From one unit to a population",
+      "body": "Nearly every test that matters is a sample, and the statistics decide what the sample licenses you to say. For a mean, the tool is a confidence interval: the sample mean plus and minus a t critical value at N minus 1 degrees of freedom, times the standard error s over the square root of N. NIST states its meaning carefully, that the intervals are constructed so the probability of the interval containing the mean is 1 minus alpha. That is a property of the procedure across repeated sampling, not a probability distribution over the true mean, and not a claim about individual units: 95 percent of parts do not fall inside a 95 percent confidence interval for the mean, which would be a tolerance interval, wider and answering a different question. The interval also says nothing about systematic error, since miscalibrating the load cell slides the whole interval, tidily and confidently, to the wrong place. The other half of the problem is attribute data, where units pass or fail, and here intuition fails hardest. With zero failures in n trials, the one-sided 95 percent upper bound on the population failure fraction is 1 minus 0.05 to the power 1 over n, which for n equal to 1 is 95 percent: one passing unit is compatible with a population that fails almost always."
+    },
+    {
+      "heading": "When it fails: cause, not symptom",
+      "body": "A failed test is data, and the discipline is in not stopping at the first explanation. The Department of Energy's root cause guideline separates three things. The direct cause is what immediately produced the occurrence, the component that leaked or the operator error in the alignment. A contributing cause made the outcome worse or more likely but would not by itself have produced it. The root cause is the cause that, if corrected, would prevent recurrence of this and similar occurrences; it has generic implications beyond the single event, and you reach it by following the chain of causes to the most fundamental point that can logically be identified and corrected. The guideline's line of reasoning is a usable template: lay out what happened step by step, identify the unwanted condition, ask what program element was supposed to have prevented it and whether that element was missing or failed, then ask why the situation was permitted to exist. Replacing the failed seal addresses the direct cause; finding that maintenance intervals were never controlled addresses the root. Then comes the step teams skip. NASA warns that correcting a deficiency can create a new problem in a part that previously worked, and names regression testing, rerunning previously used acceptance tests, primarily in software, as the defence. A change reopens verification you thought was closed."
+    },
+    {
+      "heading": "What this lesson is and is not",
+      "body": "This is educational material about how engineers gather and judge evidence. It is not engineering design guidance, and nothing here should be used to plan or accept a real test of a real product. Standards are described by designation and by what they govern; no test levels, durations, acceptance limits, flaw sizes or sampling plans have been reproduced from any standard, and none should be inferred from the illustrative numbers used here. Real verification and validation programmes are written against governing codes and standards, and are planned, approved and interpreted by licensed engineers or the responsible technical authority. The measurement set in the worked example is synthetic teaching data invented for this lesson; every calculation shown was executed before publication, but the numbers describe nothing that exists."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "verification method",
+      "definition": "The kind of evidence chosen to settle one requirement, drawn from inspection, analysis, demonstration and test, and recorded per requirement rather than for the project as a whole."
+    },
+    {
+      "term": "acceptance criterion",
+      "definition": "The value with its tolerance, written into the procedure before the run, that decides in advance which outcomes count as passing and which as failing."
+    },
+    {
+      "term": "requirements traceability",
+      "definition": "The recorded link from each requirement up to the parent requirement it derives from and down to the evidence that satisfies it, so that a change anywhere shows which results have gone stale."
+    },
+    {
+      "term": "metrological traceability",
+      "definition": "The property of a measurement result that lets it be related to a reference through a documented unbroken chain of calibrations, each step contributing its own share of the uncertainty."
+    },
+    {
+      "term": "calibration",
+      "definition": "The operation that first relates the values carried by measurement standards to the indications of an instrument, with uncertainties on both sides, and then uses that relation to turn an indication into a result."
+    },
+    {
+      "term": "probability of detection",
+      "definition": "The fraction of flaws of a given size that an inspection actually finds, reported with a confidence bound, because a clean inspection is a probabilistic statement rather than proof of soundness."
+    },
+    {
+      "term": "interaction",
+      "definition": "The situation in which the effect of one factor on the response depends on the level of another factor, so neither factor's effect can be described by a single number."
+    },
+    {
+      "term": "replication",
+      "definition": "Running the same combination of factor settings more than once, which supplies the estimate of pure random error that lack-of-fit and factor effects are judged against."
+    },
+    {
+      "term": "acceleration factor",
+      "definition": "The multiplier between time to failure at test stress and at use stress, valid only while the failure mechanism at the raised stress is the mechanism that acts in service."
+    },
+    {
+      "term": "regression testing",
+      "definition": "Rerunning tests that a product already passed, after a change, to check that the fix has not broken behaviour that was previously verified."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Imagine you order a bookshelf and it arrives flat-packed. Checking that every panel matches the parts list, that the holes are where the drawing says, and that the shelf holds the weight printed on the box is verification: you are comparing the thing against what it was supposed to be. Standing it in your room and discovering that it is two centimetres too tall for the alcove is validation: the shelf is exactly what was specified, and what was specified was wrong. Engineers keep those two checks separate because they fail separately. They also decide, before measuring anything, what counts as a pass. If you measure first and then decide what a good result looks like, you have not tested anything, because you were never going to fail. And they never trust one sample. One shelf that holds is not proof that shelves hold, because you might simply have got a good one.",
+    "analogy": "Verification is checking that a key was cut to match the drawing. Validation is walking to the door and finding out whether it opens your lock.",
+    "analogyLimits": "The key stops being useful almost immediately. A key opens or it does not, while real tests produce measurements that carry uncertainty, so the answer is a number with a range rather than a yes. One key tells you about that key, but engineers need statements about thousands of parts, which takes samples and confidence bounds. And keys do not wear out during the test, whereas much of engineering testing is about what happens after years of heat, vibration and cycling, which is why accelerated and environmental testing exist at all."
+  },
+  "workedExample": "A team must show that a latch meets the requirement: mean actuation force shall not exceed 12.0 N. They measure ten units, in newtons: 11.42, 12.05, 11.78, 12.34, 11.61, 12.11, 11.95, 12.48, 11.70, 12.02. These are synthetic teaching numbers, not data from any product. Executed in Python: the sample mean is 11.946 N and the sample standard deviation is 0.3268 N, so the standard error is 0.3268 divided by the square root of 10, or 0.1033 N. With 9 degrees of freedom the 0.975 t quantile is 2.2622, giving a 95 percent confidence interval for the mean of 11.946 plus or minus 2.2622 times 0.1033, that is 11.71 N to 12.18 N. The point estimate passes, and the test does not. The interval reaches above 12.0 N, so the data are consistent with a population mean that violates the requirement, and the honest report is not proven at 95 percent confidence rather than pass. What the interval means: if this whole sampling procedure were repeated many times, 95 percent of the intervals so constructed would contain the true mean. What it does not mean: it is not a claim that 95 percent of latches actuate between 11.71 and 12.18 N, which is a tolerance interval and much wider, and it says nothing about a load cell reading systematically high, which would move the entire interval without widening it. Tightening it is expensive: holding the same scatter, reaching a half-width of 0.10 N takes 44 measurements. Now the attribute version. Suppose a manager proposes testing one latch, and it passes. With zero failures in n trials the one-sided 95 percent upper bound on the population failure fraction is 1 minus 0.05 to the power 1 over n. For n equal to 1 that is 0.95, so a single pass is compatible with 95 percent of the population failing. Ten passes give 25.9 percent, and thirty passes give 9.5 percent, matching the rule of three, 3 over 30. One passing unit is not evidence that the population passes; it only rules out a population that fails essentially always.",
+  "commonMistakes": [
+    {
+      "mistake": "Running the test first and deciding what counts as acceptable once the numbers are on the screen.",
+      "correction": "Fix the objective, configuration, procedure and the acceptance value with its tolerance in the written procedure before the run. A criterion chosen after the data cannot be failed, so passing it carries no information. If the test shows the requirement itself was wrong, change the requirement explicitly and rerun."
+    },
+    {
+      "mistake": "Reporting a measured value on its own, or treating extra digits on the display as accuracy.",
+      "correction": "Report the value with an uncertainty and the coverage factor used, and check it against the limit including that uncertainty. Compliance also depends on calibration, and a traceability claim requires a documented unbroken chain of calibrations with uncertainty stated at each step, not just an instrument that once visited a calibration lab."
+    },
+    {
+      "mistake": "Treating one passing unit, or one clean non-destructive inspection, as proof that the population is good.",
+      "correction": "One pass out of one bounds the population failure fraction only at 95 percent, which is no bound at all. Attribute claims need sample sizes that make the bound small, and inspections need a stated probability of detection with a confidence level, since a clean inspection is a probabilistic result rather than proof of an unflawed part."
+    },
+    {
+      "mistake": "Converting accelerated test hours to field years without checking what actually broke.",
+      "correction": "An acceleration factor is only valid while the mechanism at raised stress is the mechanism that acts in service. Different failure modes accelerate differently, so separate the data by failure mode first, and if the accelerated units died from something the field never sees, the extrapolation is arithmetic about a product that does not exist."
+    },
+    {
+      "mistake": "Sweeping one variable at a time and concluding you have characterised the design.",
+      "correction": "A one-factor-at-a-time sweep never moves two factors together, so it contains no data from which an interaction could be estimated, and it measures each effect only at the fixed levels of the others. A factorial layout tests the combinations, which is what makes interactions visible instead of appearing as unexplained scatter."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Verification",
+      "b": "Validation",
+      "distinction": "Verification is objective evidence that the item fulfils its specified requirements, so it traces back to the baselined requirement set and answers whether the thing was built right. Validation is verification where the specified requirements are themselves adequate for the intended use, so it traces back to the concept of operations and answers whether the right thing was built. Passing all verifications while failing validation means the requirements were wrong."
+    },
+    {
+      "a": "Qualification testing",
+      "b": "Acceptance testing",
+      "distinction": "Qualification is run once on a design, at the extremes of the environmental envelope, to show it works with the expected margins. Acceptance is a smaller subset run on every unit produced, to show that manufacturing and workmanship match the design that was already verified. Qualification asks whether the design is sound; acceptance asks whether this particular unit was built to it."
+    },
+    {
+      "a": "One factor at a time",
+      "b": "Full factorial",
+      "distinction": "One factor at a time varies each factor from a fixed baseline, costing four runs for three factors, and estimates each effect only at those fixed levels. A two-level full factorial costs 2 to the power k runs, 8 for three factors, and yields seven estimable effects: three main effects, three two-factor interactions and one three-factor interaction. Only the factorial contains runs where factors move together, which is the only way an interaction can be seen."
+    },
+    {
+      "a": "Destructive testing",
+      "b": "Non-destructive evaluation",
+      "distinction": "Destructive testing consumes the article to obtain complete information about it, so conclusions about the parts you kept are statistical inferences from a sample. Non-destructive evaluation examines a part without impairing its future usefulness, so it can be applied to the flight article itself, at the price that detection is probabilistic and must be characterised by a probability of detection with a confidence bound."
+    },
+    {
+      "a": "Direct cause",
+      "b": "Root cause",
+      "distinction": "The direct cause is what immediately produced the failure, such as the component that leaked. The root cause is the one that, if corrected, prevents this and similar occurrences, reached by following the chain of causes to the most fundamental correctable point, such as maintenance intervals never having been controlled. Fixing the direct cause returns the unit to service; fixing the root cause stops the next unit failing the same way."
+    }
+  ],
+  "keyTakeaway": "Verification asks whether the product meets its requirements and validation asks whether those requirements were the right ones, and both are only worth as much as the evidence behind them: criteria fixed before the run, measurements with stated uncertainty traceable to standards, and sample sizes large enough that the conclusion is about the population rather than the one unit you happened to test.",
+  "questionBank": [
+    {
+      "id": "engineering-fundamentals:engineering-practice:testing-and-validation:1",
+      "prompt": "Which statement best captures the difference between verification and validation?",
+      "options": [
+        "Verification is done by the design team and validation is done by an independent reviewer.",
+        "Verification provides objective evidence that the item fulfils its specified requirements, while validation additionally asks whether those specified requirements are adequate for the intended use.",
+        "Verification applies to hardware and validation applies to software.",
+        "Verification happens at the end of the project and validation happens at the beginning."
+      ],
+      "correctIndex": 1,
+      "explanation": "The metrology vocabulary defines verification as objective evidence that an item fulfils specified requirements and validation as verification where the specified requirements are adequate for an intended use, which matches the systems-engineering framing of building the thing right versus building the right thing. Independence, the hardware and software split, and project timing are all real project concerns but none of them is the distinction: both activities can involve either discipline, either party, and can occur throughout the life cycle on models and paper products as well as finished hardware.",
+      "difficulty": "recall",
+      "skill": "Stating the verification and validation distinction precisely",
+      "sourceIds": [
+        "jcgm-200-2012-vim",
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:engineering-practice:testing-and-validation:2",
+      "prompt": "A requirement states that a warning label bearing specific text must be present on the housing. Which verification method fits, and why?",
+      "options": [
+        "Analysis, because a model can predict whether the label will be applied during manufacturing.",
+        "Test, because obtaining detailed data at discrete points under controlled conditions is the most rigorous method available.",
+        "Inspection, because the requirement concerns a physical feature of the realized product that can be settled by visual examination.",
+        "Demonstration, because an operator using the product would encounter the label."
+      ],
+      "correctIndex": 2,
+      "explanation": "Inspection is visual examination of a realized end product, used for physical design features and identification, and it is exactly what settles a label requirement. Analysis is for cases where hardware is not available and prediction from models or heritage data must stand in. Test obtains detailed data under controlled conditions and is the most resource-intensive method, so choosing it here spends effort without adding evidence. Demonstration confirms a capability in use without detailed data gathering, which does not verify the presence of specific text.",
+      "difficulty": "understanding",
+      "skill": "Selecting an appropriate verification method for a given requirement",
+      "sourceIds": [
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:engineering-practice:testing-and-validation:3",
+      "prompt": "A requirement caps the mean actuation force at 12.0 N. Ten units give a mean of 11.95 N and a 95 percent confidence interval for the mean of 11.71 N to 12.18 N. What should the verification report say?",
+      "options": [
+        "Compliance is not demonstrated at 95 percent confidence, because the interval extends above the 12.0 N limit even though the sample mean is below it.",
+        "Pass, because the sample mean of 11.95 N is below the 12.0 N limit.",
+        "Fail, because part of the interval lies above the limit, which proves the requirement is violated.",
+        "Pass, because 95 percent of units will actuate between 11.71 N and 12.18 N, and most of that range is below the limit."
+      ],
+      "correctIndex": 0,
+      "explanation": "The interval includes values above 12.0 N, so the data are consistent with a compliant population and with a non-compliant one; the correct report is that compliance was not demonstrated at that confidence, which normally means more samples or a design change. Declaring a pass on the point estimate alone ignores sampling variability. Declaring a fail overstates the evidence in the other direction, since the interval also contains compliant values. The last option confuses a confidence interval for the mean with a tolerance interval for individual units, which is a different and wider interval.",
+      "difficulty": "application",
+      "skill": "Applying a confidence interval to an acceptance decision",
+      "sourceIds": [
+        "nist-ehandbook-confidence-interval-for-the-mean"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:engineering-practice:testing-and-validation:4",
+      "prompt": "A team studies three two-level factors by holding two fixed and varying the third, one factor at a time, in four runs. The design later behaves inconsistently in production. What is the most likely limitation of the study?",
+      "options": [
+        "Four runs cannot estimate any main effect, so none of the reported factor effects are valid.",
+        "The one-factor-at-a-time schedule automatically randomizes run order, which hides the factor effects.",
+        "One factor at a time cannot be analysed statistically because it produces no replication.",
+        "No run moved two factors together, so the study contains no data from which an interaction could be estimated, and an effect that depends on another factor's level shows up later as unexplained variation."
+      ],
+      "correctIndex": 3,
+      "explanation": "An interaction exists when the effect of one factor on the response depends on the level of another, and detecting one requires runs in which the factors are combined; a one-factor-at-a-time sweep from a baseline has none, so an interaction cannot appear in the analysis and instead surfaces as irreproducibility. The design does estimate main effects, at the fixed levels of the other factors, so the first option is wrong. Randomization is a schedule the experimenter must impose and is not a property of the one-factor-at-a-time layout. Replication can be added to any design, including this one, so lack of replication is not the structural defect here.",
+      "difficulty": "analysis",
+      "skill": "Diagnosing why an experimental design missed an interaction",
+      "sourceIds": [
+        "nist-ehandbook-doe-glossary",
+        "nist-ehandbook-full-factorial-designs",
+        "nist-ehandbook-doe-introduction"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:engineering-practice:testing-and-validation:5",
+      "prompt": "An accelerated test raises temperature well above service conditions. The units fail, but teardown shows a mechanism, softening of a polymer above its transition temperature, that has never been seen in the field. What does this do to the reported life prediction?",
+      "options": [
+        "It strengthens the prediction, because the units failed and produced the failure data the model needed.",
+        "It invalidates the extrapolation, because the acceleration factor only converts test time to service time when the mechanism at raised stress is the mechanism that acts in service.",
+        "It has no effect, because the acceleration factor depends only on the ratio of the two stress levels.",
+        "It means the prediction is conservative and can be reported as a lower bound on service life."
+      ],
+      "correctIndex": 1,
+      "explanation": "True acceleration means high stress produces the same failures as use stress, from the same causes, only sooner; acceleration models are grounded in the physics or chemistry of a specific mechanism, and different modes have different acceleration factors, so data must be separated by mode. A new mechanism means the model no longer describes the field failure, and the resulting number is arithmetic about a product that does not exist. Getting failures is necessary but not sufficient, since the failures must be the right ones. The acceleration factor is not merely a function of the stress ratio, it depends on the model for the mechanism. Nor is the result safely conservative: the field mechanism went entirely unmeasured, so the prediction could be optimistic in either direction.",
+      "difficulty": "analysis",
+      "skill": "Evaluating the validity assumption behind an accelerated life test",
+      "sourceIds": [
+        "nist-ehandbook-physical-acceleration",
+        "nist-ehandbook-reliability-difficulties"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "engineering-fundamentals:engineering-practice:testing-and-validation:1",
+      "prompt": "Which statement best captures the difference between verification and validation?",
+      "options": [
+        "Verification is done by the design team and validation is done by an independent reviewer.",
+        "Verification provides objective evidence that the item fulfils its specified requirements, while validation additionally asks whether those specified requirements are adequate for the intended use.",
+        "Verification applies to hardware and validation applies to software.",
+        "Verification happens at the end of the project and validation happens at the beginning."
+      ],
+      "correctIndex": 1,
+      "explanation": "The metrology vocabulary defines verification as objective evidence that an item fulfils specified requirements and validation as verification where the specified requirements are adequate for an intended use, which matches the systems-engineering framing of building the thing right versus building the right thing. Independence, the hardware and software split, and project timing are all real project concerns but none of them is the distinction: both activities can involve either discipline, either party, and can occur throughout the life cycle on models and paper products as well as finished hardware.",
+      "difficulty": "recall",
+      "skill": "Stating the verification and validation distinction precisely",
+      "sourceIds": [
+        "jcgm-200-2012-vim",
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:engineering-practice:testing-and-validation:2",
+      "prompt": "A requirement states that a warning label bearing specific text must be present on the housing. Which verification method fits, and why?",
+      "options": [
+        "Analysis, because a model can predict whether the label will be applied during manufacturing.",
+        "Test, because obtaining detailed data at discrete points under controlled conditions is the most rigorous method available.",
+        "Inspection, because the requirement concerns a physical feature of the realized product that can be settled by visual examination.",
+        "Demonstration, because an operator using the product would encounter the label."
+      ],
+      "correctIndex": 2,
+      "explanation": "Inspection is visual examination of a realized end product, used for physical design features and identification, and it is exactly what settles a label requirement. Analysis is for cases where hardware is not available and prediction from models or heritage data must stand in. Test obtains detailed data under controlled conditions and is the most resource-intensive method, so choosing it here spends effort without adding evidence. Demonstration confirms a capability in use without detailed data gathering, which does not verify the presence of specific text.",
+      "difficulty": "understanding",
+      "skill": "Selecting an appropriate verification method for a given requirement",
+      "sourceIds": [
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:engineering-practice:testing-and-validation:3",
+      "prompt": "A requirement caps the mean actuation force at 12.0 N. Ten units give a mean of 11.95 N and a 95 percent confidence interval for the mean of 11.71 N to 12.18 N. What should the verification report say?",
+      "options": [
+        "Compliance is not demonstrated at 95 percent confidence, because the interval extends above the 12.0 N limit even though the sample mean is below it.",
+        "Pass, because the sample mean of 11.95 N is below the 12.0 N limit.",
+        "Fail, because part of the interval lies above the limit, which proves the requirement is violated.",
+        "Pass, because 95 percent of units will actuate between 11.71 N and 12.18 N, and most of that range is below the limit."
+      ],
+      "correctIndex": 0,
+      "explanation": "The interval includes values above 12.0 N, so the data are consistent with a compliant population and with a non-compliant one; the correct report is that compliance was not demonstrated at that confidence, which normally means more samples or a design change. Declaring a pass on the point estimate alone ignores sampling variability. Declaring a fail overstates the evidence in the other direction, since the interval also contains compliant values. The last option confuses a confidence interval for the mean with a tolerance interval for individual units, which is a different and wider interval.",
+      "difficulty": "application",
+      "skill": "Applying a confidence interval to an acceptance decision",
+      "sourceIds": [
+        "nist-ehandbook-confidence-interval-for-the-mean"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "engineering-fundamentals:engineering-thinking:engineering-design-process",
+    "engineering-fundamentals:engineering-thinking:units-measurement-and-significant-figures",
+    "engineering-fundamentals:engineering-practice:prototyping",
+    "engineering-fundamentals:engineering-practice:safety-factors-and-failure"
+  ],
+  "sources": [
+    "nasa-se-handbook-sp-2016-6105-rev2",
+    "jcgm-200-2012-vim",
+    "nist-metrological-traceability-faq",
+    "nist-cuu-uncertainty-basics",
+    "nist-cuu-expanded-uncertainty",
+    "nist-ehandbook-doe-introduction",
+    "nist-ehandbook-doe-glossary",
+    "nist-ehandbook-full-factorial-designs",
+    "nist-ehandbook-confidence-interval-for-the-mean",
+    "nist-ehandbook-physical-acceleration",
+    "nist-ehandbook-reliability-difficulties",
+    "nasa-std-5009c-nde-fracture-critical",
+    "doe-ne-std-1004-92-root-cause-analysis"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Mixed: NASA/SP-2016-6105 Rev2, NASA-STD-5009C and DOE-NE-STD-1004-92 are U.S. Government works cleared for public release; the JCGM VIM, the NIST/SEMATECH e-Handbook pages, the NIST CUU pages and the NIST traceability page are reference-only. No source prose was adapted or reproduced; all wording is original.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Facts were verified against primary documents read directly (NASA handbook, NASA-STD-5009C, JCGM 200:2012 and the DOE root cause guideline were downloaded and text-extracted locally; the NIST e-Handbook and NIST metrology pages were fetched and read), then written from scratch as one lesson. Every number in the lesson, worked example and questions was executed in Python before publication, including the t quantile used for the confidence interval, which was validated against published t and z values; the measurement set is synthetic teaching data. The lesson builds on units-measurement-and-significant-figures for uncertainty fundamentals and on engineering-design-process for the design loop, reusing their source ids without repeating their content."
+  }
+}

@@ -1,0 +1,556 @@
+{
+  "topicId": "engineering-fundamentals:engineering-practice:technical-drawing",
+  "subjectId": "engineering-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "The engineering drawing as a controlled specification and contractual/manufacturing document rather than a picture: it must be complete and unambiguous, and it carries the data needed to fabricate, install, and inspect the part.",
+      "Orthographic projection: parallel projectors normal to the projection plane, the six principal views, and the alignment relationship between adjacent views.",
+      "First-angle versus third-angle projection: the two normative arrangements, their regional distribution, and the truncated-cone projection symbol (or the words 'first angle'/'third angle') that identifies which is in force on the sheet.",
+      "Standard line types and their meanings: visible/object, hidden, center, cutting-plane, section (hatch), dimension, extension, leader, phantom, break; line weight and style as the carriers of meaning.",
+      "Section views (full, half, offset, aligned, revolved, removed, broken-out), auxiliary views for true shape of inclined surfaces, and detail views at enlarged scale.",
+      "Pictorials: isometric and oblique projection, what they are good for, and why they do not replace multiview drawings.",
+      "Dimensioning at principle level: dimension to the feature and to mating-part relationships rather than to insignificant construction geometry; size versus location dimensions; each feature dimensioned once; reference dimensions carry no tolerance and are not inspected.",
+      "Tolerances: nothing is manufactured to an exact size, so every dimension carries an allowable variation; bilateral (equal and unequal), unilateral, limit, and single-limit forms; unspecified tolerances taken from the drawing's general tolerance block.",
+      "Tolerance stack-up: chain dimensioning accumulates tolerance in the overall length; baseline/datum dimensioning holds the overall length but accumulates tolerance in derived intermediate distances; worst-case arithmetic sum versus statistical root-sum-square estimate.",
+      "Geometric dimensioning and tolerancing introduced conceptually: it controls form, profile, orientation, location, and runout of features relative to explicitly stated datums, communicating function better than plus/minus alone. Cited to ASME Y14.5 and ISO 1101 by designation only.",
+      "Title block, revision block, scale, units, and the change-control discipline that makes a drawing a controlled document.",
+      "Notes (general and local) and the role of the drawing as the acceptance criterion for inspection."
+    ],
+    "supporting": [
+      "The historical designations: first angle was formerly method E, third angle formerly method A.",
+      "Maximum and least material condition as the tolerance limits that matter for fit.",
+      "Dual dimensioning and the exact inch-to-millimetre relationship (1 in = 25.4 mm) when a drawing must be read in two unit systems.",
+      "Restructuring of the ISO 128 series: ISO 128-30:2001 (views) superseded by ISO 128-3:2022; line conventions now in ISO 128-2:2022."
+    ],
+    "outOfScope": [
+      "CAD software, parametric modelling, and model-based definition, which belong to engineering-fundamentals:engineering-practice:cad-basics.",
+      "Written reports, specifications prose, and oral presentation, which belong to engineering-fundamentals:engineering-practice:engineering-communication.",
+      "Failure analysis driven by tolerance loss and factor-of-safety practice, which belong to engineering-fundamentals:engineering-practice:safety-factors-and-failure.",
+      "Reproduction of any standard's text, symbol tables, tolerance grade tables, standard fit tables, or specific allowable values.",
+      "Detailed GD&T calculation: bonus tolerance arithmetic, datum-shift, composite feature control frames, and inspection fixturing.",
+      "Drafting-board technique, lettering heights, sheet-size tables, and drawing-number schemes specific to any one organisation.",
+      "Architectural and civil drafting conventions, welding symbols, and electrical schematic symbology."
+    ]
+  },
+  "claims": [
+    {
+      "claim": "An engineering drawing is required to be complete and unambiguous in interpretation: a complete drawing contains or references all data necessary for fabricating and installing the part and, where applicable, the test, procurement, and source requirements. This is what makes the drawing a specification rather than an illustration.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-gsfc-engineering-drawing-standards-manual"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Orthographic projection uses projectors that are parallel to one another and perpendicular to the plane of projection, producing up to six principal views (front, top, bottom, rear, left, right); each view shows two of the three principal dimensions of width, depth, and height, and adjacent views stay in alignment (front and top align vertically, front and side align horizontally).",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-iit-engineering-drawing-orthographic-projections",
+        "wistech-blueprint-reading-views-of-an-object"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "First-angle and third-angle projection differ in how the same six views are arranged on the sheet. In third-angle projection the top view sits above the front view and the right-side view sits to the right of it; in first-angle projection those positions are reversed. Third-angle projection is the standard in the United States and Canada and has been the North American norm since the early 1900s; first-angle projection is used in most other industrialised countries.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "wistech-blueprint-reading-views-of-an-object",
+        "libretexts-iit-engineering-drawing-orthographic-projections"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Which projection method is in use is declared on the sheet by a symbol showing two views of a truncated cone, whose relative placement differs between the two methods; the words 'first angle' or 'third angle' may be used instead. NASA GSFC's metric title-block format carries the note 'THIRD ANGLE PROJECTION' in the general-notes area, and the GSFC manual requires third-angle orthographic projection for mechanical engineering drawings.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "wistech-blueprint-reading-views-of-an-object",
+        "nasa-gsfc-engineering-drawing-standards-manual"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Both projection methods remain normative internationally: ISO 128-30:2001 stated that the first-angle method (formerly designated method E) and the third-angle method (formerly method A) are both to be regarded as normative, with the detailed rules given in ISO 5456-2. ISO 128-30:2001 has since been superseded by ISO 128-3:2022, and line conventions now sit in ISO 128-2:2022.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "iso-128-30-2001-basic-conventions-for-views",
+        "iso-128-3-2022-views-sections-and-cuts",
+        "iso-128-2-2022-basic-conventions-for-lines"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Line types carry meaning through weight and style. Visible (object) lines are thick and continuous; hidden lines are thin and dashed and show edges not visible in that view; center lines are thin lines of alternating long and short dashes marking axes of circular features; dimension lines are thin continuous lines terminated with arrowheads and carry the measured value; extension lines run from the feature to the dimension line; section (hatch) lines are thin diagonal lines marking the surfaces cut by the cutting plane; cutting-plane lines are thick with arrowheads showing the viewing direction; phantom lines show alternate position or range of motion.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-iit-engineering-drawing-line-types",
+        "nasa-gsfc-engineering-drawing-standards-manual",
+        "asme-y14-2-line-conventions-and-lettering"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A section view shows internal features by imagining the object cut along a stated plane and the near portion removed; section (hatch) lines appear only on the surfaces the cutting plane actually intersects. Common forms include full, half, offset, aligned, revolved, removed, and broken-out sections. GSFC practice requires that a sectional view be taken through an outside view rather than through another sectional view, and that the section be placed as near as practicable to the portion of the drawing it clarifies.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-iit-engineering-drawing-section-views",
+        "nasa-gsfc-engineering-drawing-standards-manual"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "An auxiliary view is an orthographic view taken on a plane that is not one of the principal planes. It is needed because a surface appears in its true shape only when projected onto a plane parallel to it, so inclined and oblique surfaces are foreshortened in every principal view.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-iit-engineering-drawing-auxiliary-views"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Isometric projection is an axonometric parallel projection in which the object's three principal axes make equal angles with the projection plane, so the axes appear 120 degrees apart and width and depth edges run at 30 degrees to the horizontal. It shows three faces in one view without perspective distortion, and edges are conventionally drawn full size even though true isometric projection foreshortens them uniformly by about 20 percent. Circles appear as ellipses.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-iit-engineering-drawing-isometric-projections"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "GSFC practice requires third-angle orthographic projection for mechanical engineering drawings and confines pictorials such as isometric and perspective to auxiliary views on complex parts where they aid visualisation; only the views necessary to convey the required characteristics of the part are to be drawn, and a drawing need not have three views.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-gsfc-engineering-drawing-standards-manual"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Dimensions are to be chosen and placed based on the part's interrelationships with mating parts, not to insignificant theoretical centre lines; reference dimensions are to be minimised; and implied datums, where no datum letter is specified, are no longer acceptable, with primary, secondary, and tertiary datum features labelled in alphabetical order.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-gsfc-engineering-drawing-standards-manual"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A drawing must fully define the part so that the reader never has to measure or scale the print; each size must appear only once, so some distances have to be calculated from other dimensions, and a dimension should be placed on the view where the feature's profile is most clearly visible rather than to hidden lines. A dimension included for the reader's convenience but not intended to be inspected is marked as a reference dimension, shown in parentheses or followed by REF, and carries no tolerance.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "wistech-blueprint-reading-dimensioning-systems",
+        "wistech-blueprint-reading-tolerance-on-dimensions"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Because it is impossible to produce a part to an exact theoretical size, every dimension carries a tolerance: the allowable deviation from the specified value. Tolerances appear as equal or unequal bilateral values, unilateral values, limit dimensions stating the maximum above the minimum, or single-limit MIN/MAX values; dimensions without a specified tolerance take the value from the drawing's general tolerance block. Tighter tolerance than the function requires raises manufacturing cost.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "wistech-blueprint-reading-tolerance-on-dimensions"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Tolerances accumulate whenever a distance is computed from other dimensions. With chain dimensioning, each of four steps toleranced at plus or minus 0.01 in independently gives an overall length toleranced at plus or minus 0.04 in. With datum (baseline) dimensioning from a common edge, each dimension holds plus or minus 0.01 in and the overall length is controlled directly, but an intermediate step obtained by subtracting two of those dimensions carries plus or minus 0.02 in.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "wistech-blueprint-reading-tolerance-on-dimensions",
+        "wistech-blueprint-reading-dimensioning-systems"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Worked example verified by execution: for a bar with four steps chain-dimensioned at 25.00 +/- 0.10 mm each, the overall length is 100.00 mm with a worst-case tolerance of +/- 0.40 mm (99.60 mm to 100.40 mm). Re-dimensioned from the left end as 25.00, 50.00, 75.00 and 100.00 mm all at +/- 0.10 mm, the overall length is held to +/- 0.10 mm (99.90 mm to 100.10 mm) while the derived second step becomes 25.00 +/- 0.20 mm (24.80 mm to 25.20 mm). Treating each +/- 0.10 mm as +/- 3 sigma and assuming independent, centred contributors, the statistical estimate of the chained overall variation is 3 x sqrt(4 x (0.10/3)^2) = +/- 0.20 mm, which is also 0.10 x sqrt(4), and is 50 percent of the worst-case band.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "wistech-blueprint-reading-tolerance-on-dimensions",
+        "nist-cuu-uncertainty-combination"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The statistical (root-sum-square) stack rests on the same rule NIST states for combined standard uncertainty: variances add and the combined standard uncertainty is the positive square root of the estimated variance, with the covariance term vanishing only when the input estimates are uncorrelated. The RSS stack is therefore an estimate conditional on independence and centred distributions, not a guarantee that no assembly will exceed it.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "nist-cuu-uncertainty-combination"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "ASME Y14.5, Dimensioning and Tolerancing (current edition Y14.5-2018, reaffirmed 2024), establishes the symbols, rules, definitions, requirements, defaults, and recommended practices for stating and interpreting geometric dimensioning and tolerancing on engineering drawings, in models defined in digital data files, and in related documents. It recommends geometric controls of position, profile, orientation, and runout as the proper way to define the relationship between features. Concentricity and symmetry controls were removed in the 2018 revision.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "asme-y14-5-dimensioning-and-tolerancing",
+        "wistech-blueprint-reading-print-symbols-and-notes"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "GD&T controls are grouped by what they govern: form (straightness, flatness, circularity, cylindricity), profile (of a line, of a surface), orientation (angularity, perpendicularity, parallelism), location (position), and runout (circular, total). Form tolerances do not reference datums; the others are read relative to datum features identified by letter. The requirement is carried in a feature control frame holding the geometric symbol, the tolerance value, any material-condition modifier, and the datum references, and true position is located by basic dimensions, which are theoretically exact and carry no tolerance of their own.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "wistech-blueprint-reading-print-symbols-and-notes",
+        "asme-y14-5-dimensioning-and-tolerancing",
+        "iso-1101-2017-geometrical-tolerancing"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The ISO counterpart is ISO 1101:2017, Geometrical product specifications (GPS) - Geometrical tolerancing - Tolerances of form, orientation, location and run-out, prepared by ISO/TC 213, which defines the symbol language for geometrical specification of workpieces and the rules for its interpretation.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "iso-1101-2017-geometrical-tolerancing"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The title block, conventionally in the lower right of the sheet, identifies the drawing: title, drawing number, sheet number, scale, revision level, responsible organisation, approving signatures and dates, and the general tolerance block that governs every dimension without a specified tolerance. GSFC's format additionally specifies the unit system, the interpretation standard the drawing is read under, and the CAD software, file name, and version used to produce it.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "wistech-blueprint-reading-title-blocks",
+        "nasa-gsfc-engineering-drawing-standards-manual"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Change control is formal. Revisions are identified by symbols placed in the field of the drawing and cross-referenced to entries in the revision block; GSFC assigns revision letters in alphabetical order omitting I, O, Q, S, X, and Z, requires that revisions to any sheet of a multisheet drawing be recorded on sheet 1 with the revision level advanced on every sheet, and requires the person incorporating the change, the checker, and the cognizant engineer all to date and initial the revision block. A superseded drawing is marked SUPERSEDED above its title block.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-gsfc-engineering-drawing-standards-manual",
+        "wistech-blueprint-reading-title-blocks"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Scale and units must be stated. GSFC requires drawings to be made full scale unless size forces otherwise, lists preferred ratios (1/1, 1/2, 1/4, 1/10, 1/20 reduced and 2/1, 4/1, 10/1, 20/1 enlarged), requires the scale or the word NONE in the title block, requires a view's scale to be stated only where it differs from the title-block scale, and requires that a feature drawn not to scale have its dimension underlined. Under metric dimensioning it requires linear dimensions in millimetres with the number of decimal places matching the tolerance. Scale is written as drawing size to object size, so 1:2 is a half-size drawing and 2:1 a double-size drawing.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-gsfc-engineering-drawing-standards-manual",
+        "wistech-blueprint-reading-title-blocks"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Drawings carry general notes that apply to the whole drawing and local notes attached by leader to a specific feature, covering material, heat treatment, joining, plating and coating, surface preparation, and testing and inspection requirements; a drawing that omits or blurs this information is not merely unclear but unbuildable and uninspectable, because the drawing is the criterion against which the finished part is accepted or rejected.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-gsfc-engineering-drawing-standards-manual",
+        "wistech-blueprint-reading-print-symbols-and-notes"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "How many categories of geometric control GD&T has.",
+      "positions": [
+        "The WisTech Open OER groups the geometric characteristics into four fundamental categories - size, location, orientation, and form - and then presents profile and runout as further groups of symbols.",
+        "ASME's own description of Y14.5 speaks of position, profile, orientation, and runout tolerances as the recommended way to define relationships between features, and ISO 1101's title enumerates form, orientation, location, and run-out."
+      ],
+      "resolution": "The lesson teaches the grouping that both standards' own titles and descriptions support - form, profile, orientation, location, and runout, with form tolerances not referencing datums - and does not claim any one count of 'fundamental categories' as canonical. Size tolerance is treated as plus/minus (or limit) tolerancing of a feature of size rather than as a geometric control."
+    },
+    {
+      "issue": "Currency of the ISO 128 parts.",
+      "positions": [
+        "ISO 128-30:2001 is the part whose text the lesson's first-angle/third-angle history was verified against.",
+        "ISO 128-30:2001 has been superseded; views, sections and cuts are now in ISO 128-3:2022 and line conventions in ISO 128-2:2022."
+      ],
+      "resolution": "The lesson cites the current parts by designation and notes the supersession; the historical method E / method A designations are attributed to the superseded 2001 part, which is where they were read."
+    },
+    {
+      "issue": "Whether worst-case or statistical stacking is the right analysis.",
+      "positions": [
+        "Worst-case (arithmetic) summation guarantees that every conforming assembly fits, but demands tighter component tolerances and costs more.",
+        "Statistical (root-sum-square) summation gives a much smaller predicted spread but accepts a nonzero fraction of assemblies outside it."
+      ],
+      "resolution": "The lesson presents worst-case as the arithmetic that is always defensible on a drawing, presents RSS as an estimate conditional on independent, centred, similarly-distributed contributors, and states explicitly that choosing between them for real hardware is an engineering decision governed by the applicable code and by the consequence of failure - not something this lesson decides."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's framing of technical drawing as a generic 'concept students use to organize information' with no engineering content.",
+    "The draft's vocabulary entries ('context', 'evidence', 'application') and its circular definition of technical drawing as 'a foundational Engineering Fundamentals concept covered in this lesson'.",
+    "The draft's toolbox-drawer analogy and map-legend analogy, neither of which describes what a drawing does.",
+    "The draft's worked example, which contained no drawing, no dimensions, and no arithmetic.",
+    "The draft's estimate of 8 minutes, which does not match the substance the topic requires."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire generated draft with researched content: projection systems, line types, view types, dimensioning principle, tolerancing, tolerance stack-up, GD&T at concept level, and drawing control.",
+    "Added the first-angle/third-angle distinction and the truncated-cone projection symbol, which the draft did not mention.",
+    "Replaced the non-numeric worked example with a millimetre tolerance stack-up computed and verified in Bash, comparing chained and baseline dimensioning with a worst-case and a root-sum-square result.",
+    "Added the educational-material and not-engineering-design-guidance statements required for this subject.",
+    "Cited ASME Y14.5, ASME Y14.3, ISO 128-2, ISO 128-3, and ISO 1101 by designation only, describing what each governs without reproducing standard text, symbol tables, or tolerance values."
+  ],
+  "rightsIssues": [
+    "ASME and ISO standards are copyrighted and paywalled. Neither standard's text, symbol tables, nor tolerance values are reproduced anywhere in this lesson; the standards are cited by designation and described in the writer's own words from publicly readable scope and catalogue descriptions.",
+    "ISO 128-30:2001 was read as the official ISO preview sample redistributed by iTeh. Its scope and introduction were read to verify the designation, the normative status of both projection methods, and the former method E / method A designations. No ISO text is quoted.",
+    "The NASA GSFC Engineering Drawing Standards Manual carries no explicit reuse licence on the document, so it is classified REFERENCE_ONLY despite being a US federal agency publication; its facts are synthesised and none of its prose is reproduced.",
+    "The two OER sources (Engineering LibreTexts / Illinois Institute of Technology, and WisTech Open Blueprint Reading) are CC BY 4.0 and are attributed in the source list. Their figures are separately licensed CC BY-NC 4.0 and no figure is reproduced or described as if reproduced.",
+    "The WisTech Open chapters list an AI writing tool among their references. Every fact taken from them was cross-checked against the NASA manual, the LibreTexts CC BY book, or the standards' own scope statements, and all arithmetic was recomputed independently in Bash rather than copied."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nasa-gsfc-engineering-drawing-standards-manual",
+      "title": "Engineering Drawing Standards Manual, GSFC X-673-64-1F (August 1994), NASA Goddard Space Flight Center, Mechanical Engineering Branch",
+      "provider": "NASA Goddard Space Flight Center",
+      "url": "https://s3vi.ndc.nasa.gov/ssri-kb/static/resources/NASA%20GSFC-X-673-64-1F.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "128-page PDF downloaded from the NASA NDC host and read in full text. Supports: the completeness/unambiguity requirement that makes a drawing a specification; the requirement for third-angle orthographic projection on mechanical drawings and the confinement of pictorials to auxiliary views; line-type definitions; rules for sections, views, and details; scale rules and preferred ratios; metric dimensioning in millimetres with decimal places matched to the tolerance; title-block and revision-block contents; revision lettering and multisheet revision recording; the statements on dimensioning to mating-part relationships and the unacceptability of implied datums; general and local notes including testing and inspection notes. No licence statement appears on the document, so it is treated as reference-only and none of its prose is reproduced."
+    },
+    {
+      "id": "libretexts-iit-engineering-drawing-orthographic-projections",
+      "title": "Introduction to Engineering Drawing and Design, 2.2: Orthographic projections (Corradi Dell'Acqua and Mohammadi, Illinois Institute of Technology)",
+      "provider": "Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Courses/Illinois_Institute_of_Technology/Introduction_to_Engineering_Drawing_and_Design/02%3A_Module_B_-_Orthographic_projections/2.02%3A_Orthographic_projections",
+      "sourceType": "open-textbook",
+      "usage": "EXTRACT_AND_ADAPT",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the definition of orthographic projection as parallel projectors orthogonal to the projection plane, the six principal views, each view carrying two of the three principal dimensions, surfaces/edges/vertices, and the first-angle versus third-angle observer-and-object geometry with the note that the United States uses third angle. Facts synthesised; wording is the writer's own."
+    },
+    {
+      "id": "libretexts-iit-engineering-drawing-line-types",
+      "title": "Introduction to Engineering Drawing and Design, 1.2: Line types (Corradi Dell'Acqua and Mohammadi, Illinois Institute of Technology)",
+      "provider": "Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Courses/Illinois_Institute_of_Technology/Introduction_to_Engineering_Drawing_and_Design/01%3A_Module_A_-_Fundamentals/1.02%3A_Line_types",
+      "sourceType": "open-textbook",
+      "usage": "EXTRACT_AND_ADAPT",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the line-type inventory and the principle that line meaning is carried by weight and style: visible/object, hidden, center, dimension, extension, section (hatch), cutting-plane, long and short break, and phantom lines."
+    },
+    {
+      "id": "libretexts-iit-engineering-drawing-section-views",
+      "title": "Introduction to Engineering Drawing and Design, 3.2: Section Views (Corradi Dell'Acqua and Mohammadi, Illinois Institute of Technology)",
+      "provider": "Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Courses/Illinois_Institute_of_Technology/Introduction_to_Engineering_Drawing_and_Design/03%3A_Module_C_-__Auxiliary_views_section_views_isometric_and_oblique_projections/3.02%3A_Section_Views",
+      "sourceType": "open-textbook",
+      "usage": "EXTRACT_AND_ADAPT",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the definition of a section view, the cutting plane and its direction arrows, the rule that hatching marks only surfaces the plane actually intersects, and the taxonomy of full, half, offset, aligned, revolved, and broken-out sections."
+    },
+    {
+      "id": "libretexts-iit-engineering-drawing-auxiliary-views",
+      "title": "Introduction to Engineering Drawing and Design, 3.1: Auxiliary views (Corradi Dell'Acqua and Mohammadi, Illinois Institute of Technology)",
+      "provider": "Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Courses/Illinois_Institute_of_Technology/Introduction_to_Engineering_Drawing_and_Design/03%3A_Module_C_-__Auxiliary_views_section_views_isometric_and_oblique_projections/3.01%3A_Auxiliary_views",
+      "sourceType": "open-textbook",
+      "usage": "EXTRACT_AND_ADAPT",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the definition of an auxiliary view as a non-principal orthographic view and the governing principle that a surface appears in true shape only on a projection plane parallel to it, which is why inclined surfaces are foreshortened in every principal view."
+    },
+    {
+      "id": "libretexts-iit-engineering-drawing-isometric-projections",
+      "title": "Introduction to Engineering Drawing and Design, 3.3: Isometric projections (Corradi Dell'Acqua and Mohammadi, Illinois Institute of Technology)",
+      "provider": "Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Courses/Illinois_Institute_of_Technology/Introduction_to_Engineering_Drawing_and_Design/03%3A_Module_C_-__Auxiliary_views_section_views_isometric_and_oblique_projections/3.03%3A_Isometric_projections",
+      "sourceType": "open-textbook",
+      "usage": "EXTRACT_AND_ADAPT",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports isometric projection as an axonometric parallel projection with the principal axes at equal angles to the projection plane, axes 120 degrees apart, width and depth edges at 30 degrees to horizontal, uniform foreshortening of about 20 percent conventionally ignored by drawing edges full size, and circles appearing as ellipses."
+    },
+    {
+      "id": "wistech-blueprint-reading-views-of-an-object",
+      "title": "Blueprint Reading, Chapter 2: Views of an Object (WisTech Open, Wisconsin Technical College System, 2025)",
+      "provider": "WisTech Open",
+      "url": "https://wtcs.pressbooks.pub/blueprintreading/chapter/2-views-of-an-object/",
+      "sourceType": "open-textbook",
+      "usage": "EXTRACT_AND_ADAPT",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports pictorial versus orthographic purpose, view alignment and the 45-degree projection line between top and side views, the glass-box unfolding metaphor, the choice of the most characteristic profile as the front view, the four projection quadrants, the truncated-cone projection symbol used to declare first or third angle (and the alternative of writing the words), third angle as the North American standard since the early 1900s, and the reversal of view positions in first angle. Chapter carries an AI writing tool in its reference list, so every fact used was cross-checked against the LibreTexts CC BY book or the NASA manual."
+    },
+    {
+      "id": "wistech-blueprint-reading-dimensioning-systems",
+      "title": "Blueprint Reading, Chapter 5: Dimensioning Systems (WisTech Open, Wisconsin Technical College System, 2025)",
+      "provider": "WisTech Open",
+      "url": "https://wtcs.pressbooks.pub/blueprintreading/chapter/4-objects-in-different-views/",
+      "sourceType": "open-textbook",
+      "usage": "EXTRACT_AND_ADAPT",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the rule that a print must fully define the part so the reader never scales it, that each size appears only once so some distances must be calculated, that dimensions belong on the view showing the profile most clearly and not to hidden lines; and the definitions of datum, datum (baseline) dimensioning, arrowless dimensioning, chain dimensioning, broken-chain dimensioning, and tabular dimensioning, plus decimal-inch, fractional, metric and dual dimensioning and the exact 1 in = 25.4 mm relationship. The chapter's URL slug does not match its chapter number in the book's own navigation."
+    },
+    {
+      "id": "wistech-blueprint-reading-tolerance-on-dimensions",
+      "title": "Blueprint Reading, Chapter 8: Tolerance on Dimensions (WisTech Open, Wisconsin Technical College System, 2025)",
+      "provider": "WisTech Open",
+      "url": "https://wtcs.pressbooks.pub/blueprintreading/chapter/8-tolerance-on-dimensions/",
+      "sourceType": "open-textbook",
+      "usage": "EXTRACT_AND_ADAPT",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports: nothing can be produced to an exact theoretical size so tolerance is necessary; equal and unequal bilateral, unilateral, limit, and single-limit MIN/MAX forms; specified versus unspecified (title-block) tolerances; maximum and least material condition for external and internal features; clearance and interference fits; the cost penalty of tolerances tighter than function requires; and the tolerance-accumulation comparison of datum, chain, and broken-chain dimensioning with the plus or minus 0.01 in per-dimension example. All arithmetic used in this lesson was recomputed independently in Bash rather than copied."
+    },
+    {
+      "id": "wistech-blueprint-reading-title-blocks",
+      "title": "Blueprint Reading, Chapter 7: Title Blocks (WisTech Open, Wisconsin Technical College System, 2025)",
+      "provider": "WisTech Open",
+      "url": "https://wtcs.pressbooks.pub/blueprintreading/chapter/7-title-blocks/",
+      "sourceType": "open-textbook",
+      "usage": "EXTRACT_AND_ADAPT",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the title block's location in the lower right and its contents (title, drawing number, revision, scale, dates, material, drafter), the DRAWING:OBJECT reading of the scale ratio with NTS for not to scale, the general tolerance block applying to unspecified dimensions with more decimal places meaning a tighter tolerance, and revision practice including the revision letter in the title block, the change list on the sheet, revision triangles at the point of change, and the requirement to work from the current revision."
+    },
+    {
+      "id": "wistech-blueprint-reading-print-symbols-and-notes",
+      "title": "Blueprint Reading, Chapter 9: Print Symbols and Notes (WisTech Open, Wisconsin Technical College System, 2025)",
+      "provider": "WisTech Open",
+      "url": "https://wtcs.pressbooks.pub/blueprintreading/chapter/9-print-symbols-and-notes/",
+      "sourceType": "open-textbook",
+      "usage": "EXTRACT_AND_ADAPT",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports general versus local (leader-attached) notes; the feature control frame carrying symbol, tolerance, modifier, and datum references; datum feature symbols identified by letter; basic dimensions as theoretically exact values in a rectangular frame carrying no title-block tolerance; and the grouping of geometric controls into form (straightness, flatness, circularity, cylindricity, with no datum reference), profile of a line and of a surface, orientation (angularity, perpendicularity, parallelism), location (position), and runout (circular and total). Also records that concentricity and symmetry were removed in ASME Y14.5-2018."
+    },
+    {
+      "id": "asme-y14-5-dimensioning-and-tolerancing",
+      "title": "ASME Y14.5, Dimensioning and Tolerancing (current edition Y14.5-2018, reaffirmed 2024)",
+      "provider": "American Society of Mechanical Engineers",
+      "url": "https://www.asme.org/codes-standards/find-codes-standards/y14-5-dimensioning-tolerancing",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Publicly readable ASME catalogue page for the standard. Supports the designation, current edition and reaffirmation, and the scope: symbols, rules, definitions, requirements, defaults, and recommended practices for stating and interpreting GD&T on drawings, in digital models, and in related documents, with position, profile, orientation, and runout as the recommended way to define feature relationships. The standard itself is copyrighted and paywalled; it was not read and no standard text, symbol table, or tolerance value is reproduced."
+    },
+    {
+      "id": "asme-y14-3-orthographic-and-pictorial-views",
+      "title": "ASME Y14.3-2012, Orthographic and Pictorial Views",
+      "provider": "American Society of Mechanical Engineers",
+      "url": "https://www.asme.org/codes-standards/find-codes-standards/y14-3-orthographic-pictorial-views",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Cited by designation as the US standard governing how orthographic and pictorial views are created on drawing sheets and in models, covering multiview representation, auxiliary, section, and detail views. Verified as a revision of ASME Y14.3-2003 consolidating ASME Y14.4-1989(R2004). The standard is copyrighted and was not read; nothing from it is reproduced."
+    },
+    {
+      "id": "asme-y14-2-line-conventions-and-lettering",
+      "title": "ASME Y14.2, Line Conventions and Lettering (current edition Y14.2-2014, reaffirmed 2020)",
+      "provider": "American Society of Mechanical Engineers",
+      "url": "https://www.asme.org/codes-standards/find-codes-standards/y14-2-line-conventions-lettering",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Cited by designation as the US standard establishing line and lettering practice for engineering drawings including CAD. Verified as the 2014 edition revising the 2008 edition and reaffirmed in 2020, on stabilized maintenance. Corroborated by the NASA GSFC manual's own reference to the predecessor ANSI Y14.2M-1979 for material cross-hatching conventions. Copyrighted and paywalled; not read, nothing reproduced."
+    },
+    {
+      "id": "iso-128-3-2022-views-sections-and-cuts",
+      "title": "ISO 128-3:2022, Technical product documentation (TPD) - General principles of representation - Part 3: Views, sections and cuts",
+      "provider": "International Organization for Standardization",
+      "url": "https://www.iso.org/standard/83356.html",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Cited by designation as the current ISO part specifying general principles for presenting views, sections and cuts across mechanical, electrical, architectural and civil drawings, following the orthographic projection methods of ISO 5456-2. It supersedes ISO 128-30:2001. iso.org blocked the automated fetcher, so the designation, title and scope were confirmed from search-engine result metadata and from the superseded part's own ISO preview sample. The standard is paywalled, was not read, and nothing from it is reproduced."
+    },
+    {
+      "id": "iso-128-2-2022-basic-conventions-for-lines",
+      "title": "ISO 128-2:2022, Technical product documentation (TPD) - General principles of representation - Part 2: Basic conventions for lines",
+      "provider": "International Organization for Standardization",
+      "url": "https://www.iso.org/standard/83355.html",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Cited by designation as the current ISO part defining the basic conventions for lines in technical drawings, diagrams, plans, maps and related documentation. iso.org blocked the automated fetcher; designation, title and scope confirmed from search-engine result metadata and corroborated by the normative-reference list in the ISO 128-30:2001 preview, which cited the predecessor part ISO 128-24:1999 on lines. Paywalled, not read, nothing reproduced."
+    },
+    {
+      "id": "iso-128-30-2001-basic-conventions-for-views",
+      "title": "ISO 128-30:2001, Technical drawings - General principles of presentation - Part 30: Basic conventions for views (official ISO preview sample; superseded)",
+      "provider": "International Organization for Standardization",
+      "url": "https://cdn.standards.iteh.ai/samples/3939/89f3a9b058fa4f7180c3e32444cb67b2/ISO-128-30-2001.pdf",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Nine-page official ISO preview sample, redistributed by iTeh, read directly because iso.org blocks the fetcher. Supports: the designation and title, preparation by ISO/TC 10/SC 1, the statement that both the first-angle method (formerly method E) and the third-angle method (formerly method A) remain normative, that ISO 5456-2 gives the projection rules in detail, and the principle that the number of views should be the minimum sufficient to delineate the object without ambiguity while avoiding hidden outlines and repeated detail. Superseded by ISO 128-3:2022. No ISO text is quoted or reproduced."
+    },
+    {
+      "id": "iso-1101-2017-geometrical-tolerancing",
+      "title": "ISO 1101:2017, Geometrical product specifications (GPS) - Geometrical tolerancing - Tolerances of form, orientation, location and run-out",
+      "provider": "International Organization for Standardization",
+      "url": "https://www.iso.org/standard/66777.html",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Cited by designation as the ISO counterpart to ASME Y14.5. Supports the categories named in its own title - form, orientation, location and run-out - and that it defines the symbol language for geometrical specification of workpieces and the rules for its interpretation, prepared by ISO/TC 213, fourth edition superseding ISO 1101:2012 and confirmed in 2022. iso.org blocked the automated fetcher; designation, title, committee and edition history confirmed from search-engine result metadata across several standards resellers. Paywalled, not read, nothing reproduced."
+    },
+    {
+      "id": "nist-cuu-uncertainty-combination",
+      "title": "NIST Reference on Constants, Units and Uncertainty: Combining uncertainty components",
+      "provider": "National Institute of Standards and Technology",
+      "url": "https://physics.nist.gov/cuu/Uncertainty/combination.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the statistical-stacking footnote: the combined standard uncertainty is the positive square root of the estimated variance obtained from the law of propagation of uncertainty, and the covariance term vanishes only when the input estimates are uncorrelated. Used to justify the root-sum-square estimate and, more importantly, to state its independence condition honestly."
+    }
+  ]
+}

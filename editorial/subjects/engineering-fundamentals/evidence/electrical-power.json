@@ -1,0 +1,328 @@
+{
+  "topicId": "engineering-fundamentals:electrical-fundamentals:electrical-power",
+  "subjectId": "engineering-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "P = VI as the general expression for the power delivered to or by any two-terminal element",
+      "P = I^2 R and P = V^2 / R as consequences of P = VI plus Ohm's law, valid only for a resistance and only with that resistance's own current or voltage",
+      "which form to reach for: I^2 R when the current is the known shared quantity, V^2 / R when the voltage across the element is known, P = VI when the element is not a resistance",
+      "the standard error of substituting a source voltage or a total current that does not belong to the resistance in question",
+      "power as a rate (watt = joule per second) versus energy as an accumulated total (joule)",
+      "the kilowatt-hour as a unit of energy despite reading like a rate, and the numeric conversion 1 kW.h = 3.6 MJ",
+      "resistive (Joule) heating as the dominant loss mechanism in current-carrying conductors",
+      "why bulk transmission runs at high voltage, worked numerically so the 1/V^2 scaling of I^2 R loss at fixed delivered power is visible",
+      "component power ratings as thermal limits and the practice of derating",
+      "efficiency of an electrical device and the fact that the shortfall leaves as heat rather than vanishing",
+      "battery capacity in ampere-hours (charge) versus stored energy in watt-hours, and the conversion Wh = V x Ah",
+      "RMS voltage and current at survey depth, the sinusoidal peak-to-RMS factor of sqrt(2), and why RMS is the value that makes P = VI give average power for a resistive load",
+      "real, reactive and apparent power and power factor at conceptual level"
+    ],
+    "supporting": [
+      "the joule and the watt as SI coherent derived units",
+      "US average retail residential electricity price as a dated, citable input to a cost calculation",
+      "US transmission and distribution loss magnitude as a reality check on the transmission argument",
+      "the FAA's watt-hour limit on spare lithium-ion batteries as a real-world use of the Ah-versus-Wh distinction",
+      "NASA GSFC parts-derating practice as one documented example of how derating is specified"
+    ],
+    "outOfScope": [
+      "the definitions of voltage, current and resistance themselves (owned by voltage-current-and-resistance)",
+      "Ohm's law as a topic, ohmic versus non-ohmic behaviour, and resistivity (owned by ohms-law and voltage-current-and-resistance)",
+      "series and parallel network reduction and current/voltage division (owned by series-and-parallel-circuits)",
+      "mechanical power, the work-energy theorem, and the general framing of efficiency (owned by work-and-energy)",
+      "RLC circuit analysis, phasors, impedance, resonance and transformer turns ratios",
+      "three-phase power, grid operation, protective devices, and any wiring or installation procedure",
+      "battery chemistry, charging procedures, and battery management system design"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The power delivered to a two-terminal element is the product of the voltage across it and the current through it, P = VI, with no assumption about what the element is.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["openstax-university-physics-2-electrical-energy-and-power"],
+      "status": "supported"
+    },
+    {
+      "claim": "Substituting Ohm's law into P = VI gives P = I^2 R and P = V^2 / R, which are stated for a resistor and therefore require a resistance R together with that resistance's own current or voltage.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["openstax-university-physics-2-electrical-energy-and-power"],
+      "status": "supported"
+    },
+    {
+      "claim": "The watt is the SI coherent derived unit of power and equals one joule per second; the joule is the SI coherent derived unit of energy and work.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp811-chapter-4-classes-of-si-units", "nist-sp330-2019-section-2-si-units"],
+      "status": "supported"
+    },
+    {
+      "claim": "The kilowatt-hour is a unit of energy, not power, and equals 3.6 x 10^6 joules.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-university-physics-2-electrical-energy-and-power", "eia-glossary-electricity", "nist-sp811-chapter-4-classes-of-si-units"],
+      "status": "supported"
+    },
+    {
+      "claim": "Because line loss is I^2 R and the current needed to deliver a fixed power falls in proportion to the transmission voltage, raising the transmission voltage by a factor of ten reduces the resistive line loss for the same delivered power by a factor of one hundred. Executed in Bash: 5.0 MW through conductors of total resistance 2.0 ohm gives I = 333.333 A and P_loss = 222,222 W at 15 kV, and I = 33.3333 A and P_loss = 2,222.22 W at 150 kV.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-university-physics-2-transformers", "openstax-university-physics-2-electrical-energy-and-power"],
+      "status": "supported"
+    },
+    {
+      "claim": "Power plants transmit at high voltage and low current specifically to reduce I_rms^2 R ohmic losses in transmission lines, which are significant over lines many kilometres long.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["openstax-university-physics-2-transformers"],
+      "status": "supported"
+    },
+    {
+      "claim": "EIA estimates that annual US electricity transmission and distribution losses averaged about 5 percent of the electricity transmitted and distributed in 2018 through 2022.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["eia-faq-transmission-distribution-losses"],
+      "status": "supported"
+    },
+    {
+      "claim": "The US average retail price of electricity to residential customers was 18.44 cents per kilowatt-hour in May 2026, per EIA Electric Power Monthly Table 5.6.A released 23 July 2026. Applied in Bash: a 1,500 W appliance run 4.0 h/day for 30 days uses 180 kW.h (6.48 x 10^8 J) and costs 180 x 0.1844 = $33.19 at that price.",
+      "claimType": "CURRENT",
+      "sourceIds": ["eia-epm-table-5-6-a-average-price-of-electricity"],
+      "status": "supported"
+    },
+    {
+      "claim": "Derating is a required design practice in high-reliability electronics: NASA GSFC's EEE-INST-002 requires the designer to derate parts against tables given per part category, and its resistor table applies a power derating factor of 0.6 to most listed styles below a stated rated-power temperature, with linear derating to zero allowable power at a higher temperature.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nasa-eee-inst-002-parts-selection-screening-qualification-derating"],
+      "status": "supported"
+    },
+    {
+      "claim": "Battery energy in watt-hours is the product of battery voltage and ampere-hour capacity; the FAA states that Wh is calculated by multiplying the battery voltage by the amp hours, and limits spare lithium-ion batteries in carry-on baggage to a rating of 100 Wh per battery (101-160 Wh with airline approval, maximum two).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["faa-packsafe-lithium-batteries"],
+      "status": "supported"
+    },
+    {
+      "claim": "A 20,000 mAh pack whose cells have a nominal 3.7 V stores 74 W.h, below the FAA's 100 Wh spare-battery limit; the same 4,500 mAh capacity stores 17.325 W.h at 3.85 V but 16.65 W.h at 3.7 V, so ampere-hours alone do not determine energy. Executed in Bash.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["faa-packsafe-lithium-batteries"],
+      "status": "supported"
+    },
+    {
+      "claim": "For a sinusoid the RMS value is the peak divided by the square root of two; a 120 V rms supply has a peak of 169.706 V (executed in Bash), and OpenStax gives the parallel case that a 110 V rms household source has an amplitude of about 156 V.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-university-physics-2-power-in-an-ac-circuit"],
+      "status": "supported"
+    },
+    {
+      "claim": "Average power in an AC circuit is P_ave = I_rms V_rms cos(phi), where cos(phi) is the power factor; for a resistor the average power is I_rms^2 R, so RMS values are the ones that make the DC-style power expressions give the correct average.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["openstax-university-physics-2-power-in-an-ac-circuit"],
+      "status": "supported"
+    },
+    {
+      "claim": "Apparent power is the product of voltage and current, comprises both active and reactive power, and is measured in volt-amperes; reactive power is the portion of electricity that establishes and sustains the electric and magnetic fields of alternating-current equipment such as motors and transformers and is usually expressed in kilovolt-amperes reactive; real (active) power is measured in watts.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["eia-glossary-electricity"],
+      "status": "supported"
+    },
+    {
+      "claim": "Efficiency is the useful output compared with the input, and the shortfall in an electrical device leaves as heat rather than disappearing; a quoted efficiency is only meaningful alongside the boundary it was measured across. Executed in Bash: 1,000 W into a device at 92 percent efficiency yields 920 W of useful output and 80 W dissipated.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["doe-femp-what-is-energy-efficiency"],
+      "status": "supported"
+    },
+    {
+      "claim": "Using a source voltage in V^2 / R for a resistance that drops only part of it produces a nonsense answer: for 12 V across 10 ohm in series with 30 ohm, the current is 0.3 A and the 10 ohm resistor dissipates I^2 R = 0.9 W, while 12^2 / 10 = 14.4 W, sixteen times too large and larger than the whole circuit's 3.6 W. Executed in Bash.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-university-physics-2-electrical-energy-and-power"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "How much of the roughly 5 percent US transmission and distribution loss figure is resistive heating in conductors.",
+      "positions": [
+        "The physics sources establish I^2 R conductor heating as the reason transmission runs at high voltage.",
+        "The EIA FAQ reports an aggregate T&D loss percentage and does not decompose it by mechanism; transformer core losses, other equipment losses and unbilled or unaccounted energy sit inside the same number."
+      ],
+      "resolution": "The lesson uses the EIA figure only as an order-of-magnitude reality check on the size of grid losses, and states explicitly that the published figure is an aggregate that is not broken down into conductor heating versus other mechanisms. No claim is made that 5 percent is the I^2 R share."
+    },
+    {
+      "issue": "Nominal household AC voltage differs between sources (OpenStax uses 110 V rms in its worked statement; 120 V rms is the common US nominal figure).",
+      "positions": [
+        "OpenStax 15.4 states the 110 V from a household outlet is an rms value with an amplitude of 110 x sqrt(2) V.",
+        "US distribution is commonly described as 120 V rms."
+      ],
+      "resolution": "The lesson works its own arithmetic from a stated 120 V rms and computes the peak in Bash (169.706 V), citing OpenStax only for the general peak-to-RMS relation and the fact that quoted household voltages are rms values, not for the specific nominal number."
+    },
+    {
+      "issue": "How general derating factors are.",
+      "positions": [
+        "NASA GSFC EEE-INST-002 specifies particular derating factors for spaceflight parts.",
+        "Derating practice varies widely by industry, mission and failure consequence."
+      ],
+      "resolution": "The lesson names the NASA document as one documented example, gives its resistor power derating factor as an illustration attributed to that document, and states plainly that derating levels are not universal."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained no electrical content at all. Its In 30 Seconds, Why This Matters, College Version, vocabulary, Eli-10, worked example, common mistakes, key takeaway and all quick-check items were subject-agnostic boilerplate with the topic title substituted in, and none of it was supported by or checkable against any source.",
+    "The draft's vocabulary defined 'Electrical Power' circularly as 'a foundational Engineering Fundamentals concept covered in this lesson'.",
+    "The draft's worked example described a student reading a scenario rather than performing any calculation, which is not a worked example in a quantitative subject."
+  ],
+  "correctionsNeeded": [
+    "Replaced every field with researched, source-backed electrical content.",
+    "Added the two required worked calculations (transmission loss at two voltages for the same delivered power; appliance energy and cost at a dated EIA price) and executed all arithmetic in Bash before publishing it.",
+    "Added the explicit condition that P = I^2 R and P = V^2 / R apply to a resistance and require that resistance's own current or voltage, with a numerical demonstration of the failure mode.",
+    "Added the energy-versus-power distinction with the kilowatt-hour conversion executed numerically.",
+    "Added the ampere-hour versus watt-hour distinction with the FAA's stated Wh = V x Ah relation.",
+    "Added RMS at survey depth with the peak-to-RMS factor computed, and real/reactive/apparent power and power factor stated conceptually.",
+    "Added the required safety framing: educational material only, not guidance for electrical installations or battery systems, and no procedures.",
+    "Raised estimatedMinutes from 8 to 11 to match the delivered depth."
+  ],
+  "rightsIssues": [
+    "OpenStax University Physics Volume 2 is classified REFERENCE_ONLY here: the per-book terms were not independently verified for this project, so no OpenStax wording, figure or table is reproduced. All facts drawn from it are restated in original prose and all arithmetic is this lesson's own.",
+    "The EIA pages, the FAA PackSafe page and the NASA technical publication are US federal government material used as REFERENCE_ONLY. No page text is reproduced; only the numeric facts and definitions are used, each attributed in the source notes.",
+    "Per the subject's cautions, no engineering standard's text, tables or design values are reproduced. NASA/TP-2003-212242 (EEE-INST-002) is a NASA technical publication rather than a paywalled consensus standard, and only its stated derating requirement and one illustrative resistor power derating factor are referenced, described in the lesson's own words.",
+    "No safety, installation or battery-handling procedure is given anywhere in the lesson."
+  ],
+  "sourceRecords": [
+    {
+      "id": "openstax-university-physics-2-electrical-energy-and-power",
+      "title": "University Physics Volume 2, 9.5 Electrical Energy and Power",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live OpenStax page. Load-bearing source for the derivation of P = IV from the work done moving charge through a potential difference, for the derived forms P = I^2 R and P = V^2 / R obtained by substituting Ohm's law, for the statement that these derived forms are given for a resistor, for Joule heating in a resistive element, and for 1 kW.h = 3.6 x 10^6 J. The page also carries a lamp-cost illustration at $0.10 per kW.h that this lesson does not use; the lesson's cost example uses a current EIA price instead. The page contains no discussion of transmission-line losses. REFERENCE_ONLY; no wording, figure or table reproduced."
+    },
+    {
+      "id": "openstax-university-physics-2-power-in-an-ac-circuit",
+      "title": "University Physics Volume 2, 15.4 Power in an AC Circuit",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/15-4-power-in-an-ac-circuit",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live OpenStax page. Supports the definition of rms current and voltage as the square root of the time-average of the squared waveform, the sinusoidal results I_rms = I_0 / sqrt(2) and V_rms = V_0 / sqrt(2), the statement that a quoted household outlet voltage is an rms value whose amplitude is that value times sqrt(2), the average-power expression P_ave = I_rms V_rms cos(phi), the identification of cos(phi) as the power factor and its meaning as the shortfall from the maximum caused by voltage and current being out of phase, the resistor result P_ave = I_rms^2 R, and the point that rms values are used because they give the clean form and because AC meters are calibrated in rms. REFERENCE_ONLY; no wording reproduced and all numbers in this lesson are its own."
+    },
+    {
+      "id": "openstax-university-physics-2-transformers",
+      "title": "University Physics Volume 2, 15.6 Transformers",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/15-6-transformers",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live OpenStax page. Supports the physical argument this lesson makes about transmission: that a given power requirement can be met at low voltage with high current or at high voltage with low current because power is the product of rms voltage and rms current, and that the high-voltage choice is made because it results in lower I_rms^2 R ohmic losses in transmission lines, which can be significant over lines many kilometres long. The page's own worked transformer example (12 kV to 240 V, 200 ohm line, 2.0 A) is not reproduced; this lesson computes an independent 15 kV versus 150 kV comparison in Bash. REFERENCE_ONLY."
+    },
+    {
+      "id": "nist-sp811-chapter-4-classes-of-si-units",
+      "title": "NIST Guide to the SI, Chapter 4: The Two Classes of SI Units and the SI Prefixes",
+      "provider": "National Institute of Standards and Technology (NIST Special Publication 811, 2008 edition)",
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Source record already registered by earlier topics in this subject; reused here with the same id and URL. Read the live page for this lesson. Its Table 3 of SI coherent derived units with special names gives the watt (symbol W) expressed in other SI units as J/s and in base units as m^2 . kg . s^-3, and the joule (symbol J) as N . m and m^2 . kg . s^-2. This is the authority for the lesson's statement that one watt is one joule per second, which in turn is what the 1 kW.h = 3.6 MJ conversion rests on. The page does not mention the kilowatt hour. REFERENCE_ONLY; no table reproduced."
+    },
+    {
+      "id": "nist-sp330-2019-section-2-si-units",
+      "title": "The International System of Units (SI), 2019 Edition (NIST SP 330), Section 2: The International System of Units",
+      "provider": "National Institute of Standards and Technology",
+      "url": "https://www.nist.gov/pml/special-publication-330/sp-330-section-2",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Source record already registered by earlier topics in this subject; reused here with the same id and URL. Used only to corroborate the coherent derived units the lesson depends on: the joule as the unit of energy, work and amount of heat, and the watt as the unit of power. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "eia-epm-table-5-6-a-average-price-of-electricity",
+      "title": "Electric Power Monthly, Table 5.6.A. Average Price of Electricity to Ultimate Customers by End-Use Sector, by State, May 2026 and 2025",
+      "provider": "United States Energy Information Administration",
+      "url": "https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Retrieved the live table with curl and parsed the U.S. Total row directly rather than relying on a summary. The table is stated in cents per kilowatthour; the U.S. Total residential figure is 18.44 for May 2026 against 17.37 for May 2025. The page carries Release Date: July 23, 2026 and Next Release Date: August 26, 2026. This is the dated price input to the lesson's appliance cost calculation. It is a monthly national average across all residential customers and will move; the lesson states the month, the release date and that caveat. REFERENCE_ONLY."
+    },
+    {
+      "id": "eia-faq-transmission-distribution-losses",
+      "title": "How much electricity is lost in electricity transmission and distribution in the United States? (Frequently Asked Questions)",
+      "provider": "United States Energy Information Administration",
+      "url": "https://www.eia.gov/tools/faqs/faq.php?id=105&t=3",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Retrieved and parsed the live page with curl. States that EIA estimates annual electricity transmission and distribution losses averaged about 5 percent of the electricity transmitted and distributed in the United States in 2018 through 2022, and explains that the figure is computed from State Electricity Profiles Table 10 by dividing estimated losses by total disposition minus direct use. Page footer reads Last updated: November 7, 2023. Used only as an order-of-magnitude reality check; the page does not decompose losses by mechanism, and the lesson says so rather than attributing the whole figure to conductor heating. REFERENCE_ONLY."
+    },
+    {
+      "id": "eia-glossary-electricity",
+      "title": "EIA Glossary, Electricity terms",
+      "provider": "United States Energy Information Administration",
+      "url": "https://www.eia.gov/tools/glossary/index.php?id=electricity",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Retrieved and parsed the live glossary with curl. Supplies the industry definitions the lesson restates for the AC survey section and the energy units: power as the rate of producing, transferring or using energy, measured in watts, also known as real or active power; apparent power as the product of voltage and current, comprising both active and reactive power, measured in volt-amperes; reactive power as the portion of electricity that establishes and sustains the electric and magnetic fields of alternating-current equipment such as motors and transformers, described as a derived value equal to the vector difference between apparent and real power and usually expressed in kilovolt-amperes reactive (kvar) or megavolt-amperes reactive (Mvar); the watthour as the energy taken from a circuit at one watt steadily for one hour; and the kilowatthour as a unit of work or energy, one kilowatt expended for one hour. The glossary has no entry for power factor. REFERENCE_ONLY; definitions restated in the lesson's own words."
+    },
+    {
+      "id": "faa-packsafe-lithium-batteries",
+      "title": "PackSafe: Lithium Batteries (spare, uninstalled)",
+      "provider": "United States Federal Aviation Administration, Office of Hazardous Materials Safety",
+      "url": "https://www.faa.gov/hazmat/packsafe/lithium-batteries",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Retrieved and parsed the live page with curl after WebFetch was blocked by a 403. Supports the ampere-hour versus watt-hour distinction with a regulator's own arithmetic: the page instructs that to calculate Wh you multiply the battery voltage by the amp hours. It also states the size limits used as the lesson's real-world anchor, that spare lithium-ion batteries are limited to a rating of 100 watt hours per battery, with two larger batteries in the 101-160 Wh band permitted with airline approval. Page footer reads Last updated: Tuesday, August 11, 2026. The lesson cites the limit as an illustration of why regulators measure batteries in energy rather than charge; it gives no battery-handling or packing procedure. REFERENCE_ONLY."
+    },
+    {
+      "id": "nasa-eee-inst-002-parts-selection-screening-qualification-derating",
+      "title": "EEE-INST-002: Instructions for EEE Parts Selection, Screening, Qualification, and Derating (NASA/TP-2003-212242, April 2008 with Addendum 1)",
+      "provider": "National Aeronautics and Space Administration, Goddard Space Flight Center",
+      "url": "https://nepp.nasa.gov/docuploads/FFB52B88-36AE-4378-A05B2C084B5EE2CC/EEE-INST-002_add1.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Downloaded the 338-page PDF with curl and extracted the text with pypdf. Section 1 states the document's purpose as establishing baseline criteria for selection, screening, qualification and derating of EEE parts for NASA GSFC spaceflight projects to meet mission reliability objectives. Section 6.5 requires the designer to derate in accordance with each part category's Table 4 and permits more stringent derating. The resistor derating table (Section R2, Table 4) applies a power derating factor of 0.6 to most listed styles together with a voltage derating factor of 0.8, and its notes direct that the derated power level is the nominal rating times the derating factor for ambient temperatures at or below a rated-power temperature T1, with linear derating from that level to zero power at T2. The lesson uses the 0.6 power figure only as an attributed illustration and states that derating levels vary by industry and consequence. No table is reproduced. REFERENCE_ONLY."
+    },
+    {
+      "id": "doe-femp-what-is-energy-efficiency",
+      "title": "Take Five: What Is Energy Efficiency?",
+      "provider": "United States Department of Energy, Federal Energy Management Program",
+      "url": "https://www.energy.gov/cmei/femp/articles/take-five-what-energy-efficiency",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Source record already registered by the work-and-energy topic; reused here with the same id and URL. Supports the lesson's brief statement of efficiency as the useful service delivered compared with the energy used to produce it. The general treatment of efficiency belongs to work-and-energy; this lesson uses it only to frame where an electrical device's missing watts go. REFERENCE_ONLY; no wording reproduced."
+    }
+  ]
+}

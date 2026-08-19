@@ -1,0 +1,188 @@
+# Ohm's Law
+
+## In 30 Seconds
+
+Ohm's law is the statement V = IR: across many conductors the current is proportional to the voltage, and the ratio is a constant called resistance. Solve it for whichever quantity you do not know and carry the units through. The part most treatments skip is that this is an empirical description of ohmic materials under held conditions, not a law of nature. Diodes, thermistors and lamp filaments disobey it on purpose, and they are everywhere.
+
+## Why This Matters
+
+Ohm's law is the first quantitative tool in electrical engineering and the one you reach for most: sizing a current-limiting resistor, predicting what a sensor will draw, checking whether a meter reading is plausible. It is also where students first meet the idea that an engineering model has a domain of validity. The same equation that gives a 430 ohm answer good to three digits for a carbon-film resistor is wrong by a factor of sixteen for a lamp filament, because there the resistance depends on temperature and the temperature depends on the current you are trying to find. Knowing when a model applies is the transferable skill. The algebra is the easy part.
+
+## Learning Objectives
+
+1. State Ohm's law as V = IR and rearrange it to solve for current, voltage or resistance with units carried at every step.
+2. Define ohmic behaviour by the linear current-voltage characteristic and distinguish ohmic components from non-ohmic ones such as diodes, thermistors and filament lamps.
+3. Explain the microscopic form J = sigma E and how it differs from the device-level statement V = IR.
+4. Apply the law to size a current-limiting resistor and to judge how tolerance and device uncertainty propagate into the resulting current.
+5. Analyze why a cold filament resistance predicts the wrong operating current, and quantify the size of the error.
+6. Evaluate how ammeter burden and voltmeter loading change the very quantity being measured.
+
+## The College Version
+
+### V = IR, and the unit algebra that goes with it
+
+Ohm's law is a proportionality with a name for the constant. Put a voltage V across a conductor, measure the current I through it, and for a large class of materials the two turn out to be proportional. Call the constant of proportionality R and you have V = IR, or equivalently I = V/R and R = V/I. Those are not three laws. They are one relation solved for whichever of the three quantities you do not already know, and the practical skill is deciding which one that is before touching the algebra.
+
+Units keep the arithmetic honest. NIST lists the ohm among the SI derived units with special names: it is one volt per ampere, and in base units m^2 kg s^-3 A^-2. The ampere is an SI base unit and the volt is derived, equal to the watt per ampere. So the unit algebra closes on itself, dividing volts by ohms leaves amperes, and 4.30 V divided by 0.0100 A is 430 V/A, which is 430 ohms.
+
+Most errors at this stage are prefix slips rather than conceptual failures. Currents in electronics are usually milliamperes and resistances are usually kilohms, and a misplaced decimal changes an answer by a factor of a thousand. One habit removes most of the risk: notice that volts divided by milliamperes gives kilohms exactly, since 1 V divided by 1 mA is 1000 ohms, which is 1 kilohm. Then 4.30 V divided by 10.0 mA reads straight off as 0.430 kilohm, or 430 ohms, with no exponent bookkeeping at all. Write the unit beside every number you write down, and the units will tell you when you have inverted a ratio.
+
+### Ohmic behaviour is a finding about a material, not a property of the equation
+
+Georg Ohm published the proportionality in 1827 after experiments on metal wires, and it matters that the result came out of measurement. Despite the name, this is not a law of nature in the way conservation of momentum is. OpenStax puts it in the same category as friction: an experimentally observed regularity that holds for certain materials under certain conditions and is used because it is accurate enough to design with.
+
+The operational test is the current-voltage characteristic. Sweep the applied voltage over a range, positive and negative, and plot the resulting current against it. A component whose characteristic is a straight line through the origin is ohmic, and its resistance is the reciprocal of that line's slope, the same number at every point. A component whose characteristic bends is non-ohmic. Those two sentences are the content of the law. Saying that a component is ohmic is a claim you can falsify with a bench sweep, not an assumption you are entitled to make because the symbol R appears in your equation.
+
+Plenty of components are deliberately non-ohmic, and they are the interesting ones. A silicon diode passes almost nothing when reverse biased and conducts once the forward voltage exceeds roughly 0.7 V, the exact figure depending on the device. Its characteristic is neither straight nor symmetric about the origin, which is precisely what makes rectification possible. A thermistor is a semiconductor resistor, typically a sintered mixture of metal oxides, built so that resistance varies strongly with temperature; NIST describes the common negative-temperature-coefficient type as a nonlinear device whose resistance falls as it warms, which is what makes it a thermometer. An incandescent filament heats itself as it conducts, so its resistance climbs while you are measuring it. In every one of these cases, a single value of R is not so much wrong as meaningless until you say at which operating point it was taken.
+
+### The microscopic form: J = sigma E
+
+The device-level statement V = IR mixes two different things together: what the material does, and how much of it there is and in what shape. The microscopic form separates them. Written for a point inside a conductor, Ohm's law says that the current density J, the current per unit cross-sectional area in A/m^2, is proportional to the local electric field E in V/m, with the conductivity sigma as the constant: J = sigma E. The same statement inverted is E = rho J, where rho = 1/sigma is the resistivity in ohm metres. This is closer to how Ohm's result was originally framed, in terms of current density, conductivity and field rather than terminal voltage and total current, and it is the form used in continuum modelling. The tungsten study drawn on later in this lesson writes it exactly that way, as E = rho J, when solving for the current flowing through a heated tungsten tile.
+
+Two consequences are worth carrying forward. First, sigma and rho are properties of the material, so the same copper has the same conductivity in a hair-thin wire and in a bus bar, while R depends on geometry as well; the companion lesson on voltage, current and resistance develops that geometric step. Second, when a material is ohmic, sigma is a constant, so ohmic really means that the conductivity does not depend on the field strength. The moment conductivity starts to depend on field, on temperature, or on which way the current is flowing, the straight line bends, and a single R stops describing the device.
+
+### Solving for the unknown: sizing a current-limiting resistor
+
+The routine engineering use of the law is not computing a resistance from a voltage and current you already know. It is placing a resistor so that a current you care about takes the value you want. Suppose a 5.00 V regulated bench supply is to drive a silicon diode at 10.0 mA. The diode is the non-ohmic element and refuses to be summarised by a resistance; over the useful range it simply drops about 0.70 V. Everything else in the loop is ohmic, so the reasoning runs: the resistor must absorb whatever the diode does not, which is 5.00 V minus 0.70 V, or 4.30 V; the same current passes through both because they are in series; therefore R = V/I = 4.30 V divided by 0.0100 A, which is 430 ohms.
+
+That is the whole pattern. Identify which element has its voltage set by physics rather than by you, assign the remaining voltage to the element you control, then solve V = IR for the unknown. It also shows why designers give the resistor a decent share of the supply voltage. Build the circuit with a real 430 ohm resistor at a plus or minus 5 percent tolerance and the current lands between 9.52 mA and 10.53 mA. Assume 0.70 V for a diode that actually drops 0.75 V and the current comes out 9.88 mA instead of 10.00 mA, a shift of 1.2 percent. Had the resistor been allotted only 0.30 V to drop, that same 0.05 V uncertainty in the diode would have moved the current by 16.7 percent. The arithmetic is trivial; deciding how much of the supply to spend on the resistor is the engineering.
+
+### Measuring V and I without changing them
+
+Ohm's law is only as good as the two measurements you feed it, and both instruments perturb the circuit they are attached to. An ammeter is placed in series with the component whose current you want, because the current has to pass through it, and it must therefore have very low resistance; OpenStax puts a good one at a fraction of a milliohm. A voltmeter is placed in parallel with the component whose voltage you want, because it must sit across the same two nodes, and it must therefore have very high resistance, quoted at around 10 megohms for an inexpensive instrument and up to 10 gigohms for a precision one.
+
+Put numbers on it. A 5.00 V source drives a 10.0 ohm resistor, so the true current is 0.500 A. Insert an ammeter whose own resistance is 0.50 ohm and the loop becomes 10.5 ohms, so the current falls to 0.476 A, 4.8 percent low, and the meter reports that reduced current perfectly accurately. The instrument is not lying; the circuit is no longer the circuit you meant to measure. Drop the meter resistance to 0.5 milliohm and the error becomes 0.005 percent. Voltmeter loading is the mirror image: a finite meter resistance in parallel pulls the measured node voltage down, and the error matters most when the circuit's own resistances are large compared with the meter's.
+
+Swapping the two instruments is a different order of mistake, and Ohm's law predicts what happens. An ammeter's near-zero resistance placed directly across the 5.00 V source gives 5.00 V divided by 0.50 ohm, which is 10 A, limited only by whatever the source can deliver. A voltmeter placed in series where the ammeter belonged inserts 10 megohms into a loop meant to carry 0.500 A, and the current collapses to 5.00 V divided by 10 000 010 ohms, or 0.500 microampere, a million times less than intended. This lesson is educational material, not guidance for working on electrical installations. Every circuit described here is a low-voltage bench example; real electrical work is governed by codes and carried out by qualified people.
+
+### Temperature is the hidden variable
+
+The condition under which a metal behaves ohmically is that its temperature holds still, because resistivity in metals rises as the lattice vibrates harder and scatters the charge carriers more. Over a modest range the effect is captured by a linear coefficient, R = R0 multiplied by (1 + alpha times the temperature change). OpenStax gives alpha as 0.0045 per degree Celsius for tungsten and 0.0039 for copper, and works an example in which a 3.00 kilohm carbon resistor drops to 2.94 kilohms between 20 and 60 degrees Celsius so that the current at 9.00 V rises from 3.00 mA to 3.06 mA, a 2 percent change. Semiconductors move the other way; the same table lists pure silicon at minus 0.075 per degree Celsius, resistivity falling as the material warms and more carriers become available. That sign reversal is the physical basis of the thermistor.
+
+A 2 percent shift is a nuisance you design around. A filament lamp is a different situation entirely, because it operates thousands of degrees above the temperature at which you measured it, and there the linear coefficient model is itself out of its depth. Using recommended fits to critically evaluated experimental data for pure tungsten, the resistivity at 293.15 K is 5.31 microhm centimetres and at 2800 K it is 86.5 microhm centimetres, a ratio of 16.3. The linear coefficient model applied across the same span predicts a ratio of 12.3, roughly 25 percent low. Both numbers say the same thing qualitatively and disagree quantitatively, which is worth knowing before quoting either to three digits: for temperature changes of this size the linear coefficient is an order-of-magnitude tool, not a design value. The worked example carries the consequence through to a current.
+
+## Key Vocabulary
+
+- **Ohm's law** — The empirical statement that the current through certain conductors is directly proportional to the voltage applied across them, written V = IR.
+- **Ohmic component** — A material or device whose measured current-voltage characteristic is a straight line through the origin, so the ratio of voltage to current is the same at every operating point.
+- **Non-ohmic component** — A material or device whose current-voltage characteristic is curved, so no single ratio of voltage to current describes it; diodes, thermistors and filament lamps are examples.
+- **Current-voltage characteristic** — The measured plot of current through a component against the voltage across it, swept over a range of both polarities; its shape is the operational test of whether V = IR applies.
+- **Current density** — Charge flow per unit cross-sectional area at a point inside a conductor, symbol J, expressed in amperes per square metre.
+- **Electrical conductivity** — The material constant sigma relating current density to the local electric field, J = sigma E; its reciprocal is resistivity, expressed in ohm metres.
+- **Temperature coefficient of resistivity** — The fractional change in a material's resistivity per degree of temperature change near a reference temperature, positive for metals and negative for many semiconductors.
+- **Thermistor** — A semiconductor resistor, usually a sintered metal-oxide ceramic, whose resistance changes strongly and nonlinearly with temperature, used as a temperature sensor.
+- **Ammeter burden** — The unwanted voltage an ammeter's own internal resistance drops when it is inserted in series, which lowers the current it is trying to report.
+- **Loading effect** — The change a measuring instrument causes in the circuit it is attached to, so that the quantity reported is the perturbed value rather than the undisturbed one.
+
+## Eli-10
+
+Three things describe electricity moving through something: how hard it is being pushed, how much is flowing, and how much the thing pushes back. Ohm's law says that for a lot of ordinary materials the first two go up and down together in lockstep. Double the push and you double the flow. The number that connects them is the resistance, and if you know any two of the three you can work out the third by simple division or multiplication. The catch is the phrase for a lot of ordinary materials. Nobody proved this has to be true. People measured it, found it worked for metal wires, and kept using it. Some things flatly refuse to cooperate, and engineers build those on purpose.
+
+## Eli's Analogy
+
+Picture a crowd moving down a corridor. The push from behind is the voltage, the number of people getting through per second is the current, and how narrow the corridor is stands in for resistance. An ohmic corridor has fixed walls: push twice as hard, twice as many people come out the far end, every time. A lamp filament is a corridor whose walls swell as people scrape past them, so the harder you push, the narrower it gets and the flow rises far more slowly than the push does. A diode is a corridor with a one-way gate that stays shut until the pushing passes a threshold and then swings open.
+
+**Where the analogy breaks down.** The corridor gets the proportionality right and almost nothing else. Charge carriers do not queue, and resistance is not a physical narrowing; it comes from electrons scattering off a vibrating atomic lattice, which is why heating a metal raises its resistance while heating a semiconductor lowers it. The corridor has no way to represent a passage that widens when it warms up. It also has no counterpart to an electric field acting everywhere along the conductor at once, so it cannot express J = sigma E. Keep it for remembering that a fixed resistance means a straight line on a graph, and drop it the moment you need to explain why.
+
+## Worked Example
+
+Two problems, both with every number executed rather than estimated.
+
+**Example 1, the straightforward solve.** A 5.00 V bench supply drives a silicon diode at a target 10.0 mA through a series resistor. The diode drops about 0.70 V, so the resistor must take 5.00 V minus 0.70 V = 4.30 V. Series elements share one current, so R = V/I = 4.30 V / 0.0100 A = 430 V/A = 430 ohms. Check the sensitivity: at plus or minus 5 percent the resistor is 408.5 to 451.5 ohms and the current runs 10.53 mA down to 9.52 mA; if the diode really drops 0.75 V, the current is 4.25 V / 430 ohms = 9.88 mA, 1.2 percent below target.
+
+**Example 2, where constant resistance gives the wrong answer.** NIST operates its luminous intensity standard lamp, a modified FEL quartz-halogen type with a tungsten filament, at approximately 85 V dc and 7.3 A at a correlated colour temperature of 2856 K. Its hot resistance is R = V/I = 85 V / 7.3 A = 11.6 ohms. Now take that filament cold. Using recommended fits to critically evaluated tungsten data, resistivity at 293.15 K is 5.31 microhm cm and at 2800 K, close to the filament's true operating temperature, it is 86.5 microhm cm, a ratio of 16.29; correcting for thermal expansion, which lengthens the filament by 1.5 percent and so lowers the resistance ratio slightly, gives a resistance ratio of 16.0. The predicted cold resistance is therefore 11.6 ohms / 16.0 = 0.73 ohm. Someone who measures that 0.73 ohm with an ohmmeter and applies Ohm's law with a constant R predicts I = 85 V / 0.73 ohm = 116 A. The lamp actually draws 7.3 A. The prediction is high by a factor of 16, an absolute error of about 109 A. Nothing is wrong with the algebra; the assumption that R stayed put across a 2500 K temperature rise is what failed.
+
+## Common Mistakes
+
+1. **Treating Ohm's law as a universal law of nature that every component must obey.** It is an empirical description of ohmic materials under held conditions. The test is the current-voltage characteristic: straight through the origin means ohmic, curved means not. Diodes, thermistors and filament lamps are engineered to be non-ohmic, and applying a single R to them produces confident nonsense.
+2. **Measuring a lamp filament cold with an ohmmeter and using that value to predict its operating current.** Metal resistivity climbs steeply with temperature. For the NIST standard lamp the cold-to-hot resistance ratio is about 16, so the cold reading overpredicts the steady current by the same factor, 116 A against an actual 7.3 A. Use the resistance at the operating point, or work from the rated operating voltage and current directly.
+3. **Quoting one resistance for a non-ohmic device without saying which resistance is meant.** For a curved characteristic, V/I at a chosen point, the static or chord resistance, and dV/dI, the slope or dynamic resistance at that point, are different numbers with different uses. Small-signal analysis needs the slope; a power or bias estimate needs the ratio. Name which one you are quoting and at what operating point.
+4. **Connecting an ammeter in parallel with a component, or a voltmeter in series with it.** An ammeter goes in series and has near-zero resistance; placed across a 5.00 V source it draws 5.00 V / 0.50 ohm = 10 A and behaves as a short circuit. A voltmeter goes in parallel and has very high resistance; placed in series it cuts a 0.500 A branch to 0.500 microampere. Ohm's law predicts both outcomes before the meter is connected.
+5. **Dropping unit prefixes and dividing volts by milliamperes as if they were amperes.** Carry the unit with every number. Volts divided by amperes gives ohms; volts divided by milliamperes gives kilohms. Writing 4.30 V / 10.0 mA as 0.430 rather than 0.430 kilohm is a factor-of-1000 error, and it is the single most common arithmetic failure on this topic.
+
+## Compare / Contrast
+
+| A | B | Distinction |
+| --- | --- | --- |
+| An ohmic resistor | A filament lamp | The resistor's current-voltage characteristic is a straight line through the origin, so one value of R describes it at every point. The lamp's characteristic bends towards the voltage axis because each increase in current heats the filament and raises its resistance; between room temperature and about 2800 K the resistance of tungsten rises by roughly a factor of 16. |
+| An ohmic resistor | A silicon diode | The resistor is symmetric about the origin: reverse the voltage and you reverse the current with the same magnitude. The diode passes almost nothing in reverse and conducts once the forward voltage exceeds roughly 0.7 V. The asymmetry is the whole point, and it is why a diode cannot be modelled by a resistance at all. |
+| V = IR, the device statement | J = sigma E, the microscopic statement | V = IR describes a particular object, mixing what the material does with how much of it there is and in what shape. J = sigma E describes a point inside the material and involves only a material property, the conductivity. Geometry is what converts one into the other. |
+| Static resistance, V/I at a point | Dynamic resistance, dV/dI at a point | For an ohmic component these are the same number everywhere. For a curved characteristic they differ: the static value is the slope of the line from the origin to the operating point, the dynamic value is the slope of the curve there, and small-signal circuit models use the second. |
+| An ammeter | A voltmeter | The ammeter goes in series and must have very low resistance, a fraction of a milliohm, so it does not reduce the current it reports. The voltmeter goes in parallel and must have very high resistance, 10 megohms to 10 gigohms, so it does not drain the node it reports. Both requirements exist for the same reason: an instrument that perturbs the circuit measures a different circuit. |
+
+## Key Takeaway
+
+V = IR is exact algebra applied to an empirical claim, so it is only ever as good as the assumption that R held still while you measured. Check that the component is ohmic at the operating point you care about, then do the arithmetic with the units written down.
+
+## Practice Question Bank
+
+**1. In the SI, the ohm is a derived unit with a special name. In terms of other SI units, one ohm is equal to:** *(recall)*
+
+- A. one volt per ampere
+- B. one ampere per volt
+- C. one watt per ampere
+- D. one volt-ampere
+
+Answer: **A**. NIST lists the ohm as the volt per ampere, m^2 kg s^-3 A^-2 in base units, which is exactly the rearrangement R = V/I. The ampere per volt is the siemens, the unit of conductance. The watt per ampere is the volt. The volt-ampere is a unit of apparent power, not resistance.
+
+**2. A technician sweeps the voltage across an unknown two-terminal component from -10 V to +10 V and plots the resulting current. Which observation would establish that the component is ohmic over that range?** *(understanding)*
+
+- A. The current is always positive, whatever the sign of the applied voltage
+- B. The current never exceeds the value predicted by the component's marked resistance
+- C. The plot of current against voltage is a straight line passing through the origin
+- D. The component's resistance measured with an ohmmeter matches the value printed on it
+
+Answer: **C**. Ohmic behaviour is defined by the shape of the measured current-voltage characteristic: a straight line through the origin means the ratio of voltage to current is the same at every operating point. A one-way current would indicate rectification, which is non-ohmic. A ceiling on current says nothing about linearity. A single ohmmeter reading is one point on the curve and cannot reveal whether the rest of it is straight.
+
+**3. A 5.00 V supply is to drive a silicon diode at 10.0 mA through a series resistor. The diode drops 0.70 V. What resistance is required?** *(application)*
+
+- A. 500 ohms
+- B. 430 ohms
+- C. 70 ohms
+- D. 43 ohms
+
+Answer: **B**. The resistor takes the supply voltage minus the diode drop, 5.00 V - 0.70 V = 4.30 V, and carries the same 0.0100 A because the two are in series, so R = 4.30 V / 0.0100 A = 430 ohms. The 500 ohm answer ignores the diode drop and divides 5.00 V by 10.0 mA. The 70 ohm answer divides the diode's own 0.70 V by the current. The 43 ohm answer is a factor-of-ten prefix slip.
+
+**4. A tungsten-filament lamp draws 7.3 A at 85 V in steady operation. With the lamp cold and disconnected, an ohmmeter reads about 0.73 ohm across the filament. Which conclusion is correct?** *(analysis)*
+
+- A. The ohmmeter is faulty, because 85 V divided by 7.3 A gives 11.6 ohms
+- B. The lamp violates Ohm's law, so no resistance can be assigned to it at any operating point
+- C. The filament resistance falls as it heats, which is why the cold reading is the larger number
+- D. The filament is non-ohmic over this range, and using the cold value predicts about 116 A instead of the actual 7.3 A
+
+Answer: **D**. Tungsten's resistivity rises steeply with temperature, so the hot resistance of 85 V / 7.3 A = 11.6 ohms is about 16 times the cold value of 0.73 ohm. Applying Ohm's law with the cold resistance gives 85 V / 0.73 ohm = 116 A, roughly 16 times the true current. The ohmmeter is not faulty; both readings are correct at their own temperatures. The lamp does not violate anything, since a resistance can be quoted at any stated operating point. Option C reverses the direction of the effect for a metal.
+
+**5. A 5.00 V source drives a 10.0 ohm resistor. An ammeter whose own internal resistance is 0.50 ohm is inserted in series to measure the current. What will it read, and why?** *(application)*
+
+- A. 0.500 A, because an ammeter in series does not change the current in the loop
+- B. 0.476 A, because the meter's resistance adds to the loop and lowers the current it reports
+- C. 0.526 A, because the meter provides an additional path for current
+- D. 10 A, because the meter's low resistance dominates the loop
+
+Answer: **B**. The loop resistance becomes 10.0 + 0.50 = 10.5 ohms, so I = 5.00 V / 10.5 ohms = 0.476 A, about 4.8 percent below the undisturbed 0.500 A. The meter reports that reduced current accurately; the loading is real, not an instrument error, which is why good ammeters have resistances of a fraction of a milliohm. An in-series meter cannot raise the current or provide a parallel path, and the 10 A figure is what happens if the ammeter is wrongly placed straight across the source.
+
+## Sources
+
+- OpenStax, *University Physics Volume 2*, 9.4 Ohm's Law — https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law (reference only)
+- OpenStax, *University Physics Volume 2*, 9.3 Resistivity and Resistance — https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance (reference only)
+- OpenStax, *University Physics Volume 2*, 10.4 Electrical Measuring Instruments — https://openstax.org/books/university-physics-volume-2/pages/10-4-electrical-measuring-instruments (reference only)
+- NIST, *Guide to the SI*, Chapter 4: The Two Classes of SI Units and the SI Prefixes — https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes (reference only)
+- NIST, *Measurement Services: Photometric Calibrations*, Special Publication 250-95, July 2018 — https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.250-95.pdf (reference only)
+- NIST Sensor Science Division, *Mercury Thermometer Alternatives: Thermistor* — https://www.nist.gov/pml/sensor-science/thermodynamic-metrology/mercury-thermometer-alternatives/mercury-thermometer-4 (reference only)
+- P. Tolias and the EUROfusion MST1 Team, *Analytical expressions for thermophysical properties of solid and liquid tungsten relevant for fusion applications*, Nuclear Materials and Energy 13 (2017) 42-57 — https://doi.org/10.1016/j.nme.2017.08.002 (read as arXiv:1703.06302v4; reference only)
+
+## Related Topics
+
+- engineering-fundamentals:electrical-fundamentals:voltage-current-and-resistance
+- engineering-fundamentals:electrical-fundamentals:series-and-parallel-circuits
+- engineering-fundamentals:electrical-fundamentals:electrical-power
+- engineering-fundamentals:engineering-thinking:units-measurement-and-significant-figures
+
+## Editorial Metadata
+
+- Topic id: engineering-fundamentals:electrical-fundamentals:ohm-s-law
+- Editorial status: READY_TO_PUBLISH
+- Researched: 2026-08-19
+- Rights: all sources reference-only; no source prose adapted
+- Verification: every published number was computed in Python before publication, including the White-Minges tungsten resistivity fit at 293.15 K and 2800 K, the thermal-expansion correction, the NIST FEL lamp hot and predicted cold resistances, the current-limiting resistor and its tolerance sensitivity, and the ammeter burden and meter-swap currents.
+- Safety: educational material only. Nothing here is guidance for work on real electrical installations; all examples are low-voltage bench circuits.

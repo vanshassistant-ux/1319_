@@ -1,0 +1,435 @@
+{
+  "topicId": "engineering-fundamentals:engineering-practice:safety-factors-and-failure",
+  "subjectId": "engineering-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "A factor of safety is a ratio of a capacity to a demand, and the number is uninterpretable until both terms are named",
+      "The incompatible definitions in circulation: on yield versus on ultimate, on load versus on stress, design factor versus realized factor or margin of safety",
+      "What the factor covers: uncertainty in loads, material property scatter, analysis idealization, manufacturing variation, service degradation",
+      "What the factor does not cover: an unconsidered failure mode, or ignorance removable by analysis",
+      "Allowable stress design versus load and resistance factor design, and why partial factors track uncertainty better than one global multiplier",
+      "Reliability-based design at concept level: limit states, reliability index beta, probability of failure p_f = Phi(-beta), and the notional-probability caveat",
+      "Failure modes with the condition that provokes each: yielding, ductile rupture, brittle fracture, fatigue, creep, buckling, wear, corrosion, thermal",
+      "Fatigue specifics: S-N behaviour, the endurance limit and its material dependence, the dominant role of stress concentration and surface finish, lifetime scatter",
+      "Buckling as a stability failure rather than a strength failure, decided by slenderness, with yield strength absent from the Euler critical load",
+      "Static failure theories at survey level: maximum shear stress (Tresca) and distortion energy (von Mises) for ductile materials, maximum normal stress for brittle materials",
+      "Systems view: single-point failure, redundancy and its independence requirement, fail-safe versus fail-secure, damage tolerance versus safe-life, FMEA"
+    ],
+    "supporting": [
+      "Limit load and ultimate load as defined for transport-category airplanes, and the two-tier strength and deformation check",
+      "Margin of safety as a normalised restatement of the factor of safety",
+      "Critical slenderness ratio beta_c = pi*sqrt(E/sigma_y) as the boundary between elastic buckling and yielding",
+      "Ductile-brittle transition temperature as the reason a mode can switch with weather",
+      "Homologous-temperature thresholds at which creep becomes relevant",
+      "Why an integer design factor and a realized factor differ once stock sizes are chosen"
+    ],
+    "outOfScope": [
+      "Definitions of stress and strain, the stress-strain diagram, elastic constants, and stress concentration factors (owned by engineering-fundamentals:materials:stress-and-strain)",
+      "Property categories, hardness and impact test methods, and handbook versus design values (owned by engineering-fundamentals:materials:material-properties)",
+      "Constraint taxonomy, feasible regions, Pareto tradeoffs and decision matrices (owned by engineering-fundamentals:engineering-thinking:engineering-constraints-and-tradeoffs)",
+      "Test method design, instrumentation, and verification-versus-validation (owned by engineering-fundamentals:engineering-practice:testing-and-validation)",
+      "Professional conduct, licensure duties, and the obligation to report unsafe conditions (owned by engineering-fundamentals:engineering-practice:engineering-ethics)",
+      "Quantitative fracture mechanics beyond naming K_Ic, full LRFD load-combination tables, and any specific allowable stress, load factor, or resistance factor offered as design guidance",
+      "Probabilistic risk assessment methodology, fault tree construction, and Weibull life-data analysis"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Federal airworthiness regulation defines strength requirements in terms of limit loads, the maximum loads expected in service, and ultimate loads, which are limit loads multiplied by prescribed factors of safety; unless otherwise provided, prescribed loads are limit loads.",
+      "claimType": "LEGAL",
+      "sourceIds": ["ecfr-14-cfr-25-301-loads"],
+      "status": "supported"
+    },
+    {
+      "claim": "For transport-category airplanes, unless otherwise specified a factor of safety of 1.5 must be applied to the prescribed limit loads considered as external loads on the structure; where a condition is already prescribed in ultimate-load terms, no further factor need be applied. This is a factor applied to load, not to stress.",
+      "claimType": "LEGAL",
+      "sourceIds": ["ecfr-14-cfr-25-303-factor-of-safety", "ecfr-14-cfr-25-301-loads"],
+      "status": "supported"
+    },
+    {
+      "claim": "The same regulation imposes a two-tier check with different capacities: the structure must support limit loads without detrimental permanent deformation, and must support ultimate loads without failure for at least three seconds. A single quoted factor therefore hides two different governing conditions.",
+      "claimType": "LEGAL",
+      "sourceIds": ["ecfr-14-cfr-25-305-strength-and-deformation"],
+      "status": "supported"
+    },
+    {
+      "claim": "Margin of safety is defined in NASA's structural factors standard as the allowable load, yield or ultimate, divided by the product of the limit load and the corresponding yield or ultimate factor of safety, minus one; the standard notes that 'load' may refer to force, stress, or strain. The definition itself carries the yield-or-ultimate ambiguity explicitly.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nasa-std-5001b-structural-design-and-test-factors"],
+      "status": "supported"
+    },
+    {
+      "claim": "Allowable stress (working stress) design computes elastic stresses under service loads and requires them to stay below allowable stresses set as a preset fraction of yield strength, crushing strength, or modulus of rupture, chosen empirically to reflect the profession's sense of the relative variability of materials.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nbs-sp-577-probability-based-load-criterion"],
+      "status": "supported"
+    },
+    {
+      "claim": "A single set of allowable stresses cannot deliver a constant level of safety: two roofs designed to the same allowable stress for the same snow load have different failure probabilities if their dead-to-live load ratios differ, because dead load can be estimated with much more precision than snow load. The working-stress format can also be unsafe where one load counteracts another, a mechanism associated with the Ferrybridge cooling tower failures.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nbs-sp-577-probability-based-load-criterion"],
+      "status": "supported"
+    },
+    {
+      "claim": "Load and resistance factor design applies partial factors in the form phi*R_n >= sum(gamma_i * Q_i), where R_n is a nominal resistance corresponding to a stated limit state, phi is a resistance factor less than unity reflecting uncertainty in the resistance, and each load effect carries its own factor gamma generally larger than unity reflecting uncertainty in that load. Assigning a larger factor to live load than to dead load reflects live load's larger known variability.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nbs-sp-577-probability-based-load-criterion"],
+      "status": "supported"
+    },
+    {
+      "claim": "In probability-based limit states design, resistance R and load effect Q are treated as random variables, failure is the event R - Q < 0, and the reliability index beta is the mean of the limit-state function divided by its standard deviation. Where the variables are normal and the limit state linear, p_f = Phi(-beta) exactly; the index generally falls in the range of about 2 to 8 depending on structure type and loading, and where the distributions are not exactly known the derived p_f is explicitly a notional probability to be read comparatively rather than as a relative frequency.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["nbs-sp-577-probability-based-load-criterion"],
+      "status": "supported"
+    },
+    {
+      "claim": "Ultimate limit states in structural codes explicitly include loss of load-bearing capacity by exceeding material strength, buckling, fracture, fatigue or fire, and loss of equilibrium as a rigid body; buckling therefore sits alongside strength as a distinct limit state rather than inside it.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nbs-sp-577-probability-based-load-criterion"],
+      "status": "supported"
+    },
+    {
+      "claim": "Fatigue is damage accumulation under repetitive loads that may be well below the yield point, and is dangerous precisely because a single application of the same load produces no ill effect, so a conventional stress analysis can produce an assumption of safety that does not exist. Cracking is generally understood to initiate at an internal or surface flaw where stresses are concentrated.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["libretexts-roylance-fatigue"],
+      "status": "supported"
+    },
+    {
+      "claim": "On an S-N diagram, ferrous alloys typically show a flattening below which failure does not occur however long loads are cycled, called the endurance limit; other materials such as aluminium show no endurance limit, so the designer must instead keep the planned life short of the S-N curve. Fatigue lifetimes scatter over orders of magnitude at a fixed stress amplitude because the scatter is measured horizontally in cycles rather than vertically in stress.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["libretexts-roylance-fatigue"],
+      "status": "supported"
+    },
+    {
+      "claim": "Yield is driven by shearing stresses sliding one atomic plane along another, while fracture is driven by normal stresses acting to separate one plane from another; brittle materials such as ceramics fracture before they yield, and steels have a ductile-brittle transition temperature below which fracture precedes yield, a mechanism implicated in cold-weather ship and pipeline failures.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["libretexts-roylance-yield-and-plastic-flow"],
+      "status": "supported"
+    },
+    {
+      "claim": "For multiaxial stress states, the maximum shear stress (Tresca) criterion holds that yield occurs when the maximum shear stress reaches a critical value k, giving k = sigma_Y/2, while the von Mises criterion takes the driving force to be the strain energy of the deviatoric stress components and gives k = sigma_Y/sqrt(3); von Mises often fits experimental data somewhat better and is routinely computed by commercial finite element codes.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["libretexts-roylance-yield-and-plastic-flow"],
+      "status": "supported"
+    },
+    {
+      "claim": "In the presence of a crack, local stresses are modified so severely that the designer's elastic stress analysis is insufficient, and beyond a critical crack length a crack can propagate catastrophically at a gross stress far below that which would cause yield or failure in a tensile specimen; the critical stress intensity factor K_Ic is the corresponding measure of material toughness.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["libretexts-roylance-introduction-to-fracture-mechanics"],
+      "status": "supported"
+    },
+    {
+      "claim": "Stability of an elastic equilibrium is decided by the sign of the second variation of the total potential energy: positive means stable, zero neutral, negative unstable. This is a question about the equilibrium configuration, not about whether a stress has reached a strength value.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["libretexts-wierzbicki-prelude-to-stability-of-elastic-structures"],
+      "status": "supported"
+    },
+    {
+      "claim": "For a pin-pin column the critical buckling load is P_c = pi^2*E*I/L^2 and the critical buckling stress is sigma_c = pi^2*E/beta^2 where beta = L/rho is the slenderness ratio and rho = sqrt(I/A) is the radius of gyration. Setting sigma_c equal to the yield stress gives a critical slenderness beta_c = pi*sqrt(E/sigma_y): columns more slender than beta_c buckle elastically before yielding, while stockier columns yield first and buckle later in the plastic range, where the tangent modulus replaces E. Yield strength does not appear in the elastic critical load.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["libretexts-wierzbicki-plastic-buckling-of-columns"],
+      "status": "supported"
+    },
+    {
+      "claim": "Creep is time- and temperature-dependent plastic deformation in crystalline materials that becomes a relevant mechanism in metals above roughly 0.3 of the absolute melting temperature and in ceramics above roughly 0.5, and it is insidious because the stress at which it proceeds is far below the measured yield strength; it passes through primary (transient), secondary (steady-state) and tertiary (runaway) regimes, the last of which typically leads to failure.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["libretexts-steimel-creep-fracture-and-fatigue"],
+      "status": "supported"
+    },
+    {
+      "claim": "Airworthiness regulation requires an evaluation showing that catastrophic failure due to fatigue, corrosion, manufacturing defects, or accidental damage will be avoided throughout the operational life of the airplane, and requires inspections or other procedures to be established on the basis of that evaluation.",
+      "claimType": "LEGAL",
+      "sourceIds": ["ecfr-14-cfr-25-571-damage-tolerance-and-fatigue-evaluation"],
+      "status": "supported"
+    },
+    {
+      "claim": "The same rule distinguishes damage tolerance from safe-life. Damage-tolerance evaluation determines probable locations and modes of damage, sets inspection thresholds assuming an initial flaw of the maximum probable size from manufacturing or service-induced damage, and requires a residual strength evaluation of the remaining structure. Fatigue (safe-life) evaluation is permitted only if the applicant establishes that damage tolerance is impractical for the particular structure, and then requires demonstration that the structure withstands its expected repeated loads without detectable cracks, with appropriate safe-life scatter factors applied.",
+      "claimType": "LEGAL",
+      "sourceIds": ["ecfr-14-cfr-25-571-damage-tolerance-and-fatigue-evaluation"],
+      "status": "supported"
+    },
+    {
+      "claim": "The rule uses 'fail-safe' as a structural category, naming multiple load path fail-safe structure and crack arrest fail-safe structure alongside single load path structure when setting inspection thresholds.",
+      "claimType": "LEGAL",
+      "sourceIds": ["ecfr-14-cfr-25-571-damage-tolerance-and-fatigue-evaluation"],
+      "status": "supported"
+    },
+    {
+      "claim": "NASA's reliability and maintainability standard defines a single point failure as an independent element of a system, hardware, software, or human, the failure of which would result in loss of objectives, hardware, or crew; and defines redundancy as the use of more than one independent means to accomplish a given function, with design redundancy requiring that a failure in one function does not impair the system's ability to transfer to a second.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nasa-std-8729-1a-reliability-and-maintainability"],
+      "status": "supported"
+    },
+    {
+      "claim": "The same standard defines a failure mode as the particular way in which a failure can occur, independent of the reason for failure, and defines FMEA as a bottom-up, systematic, inductive, methodical analysis performed to identify and document all identifiable failure modes at a prescribed level and to specify their resultant effects, usually performed to identify critical single failure points; adding criticality evaluation yields an FMECA, and reliability is defined as the probability that an item performs its intended function for a specified interval under stated conditions.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nasa-std-8729-1a-reliability-and-maintainability"],
+      "status": "supported"
+    },
+    {
+      "claim": "Different governing documents impose different structural factors for the same physical concept: 14 CFR 25.303 prescribes 1.5 on limit load for transport-category airplanes, while NASA-STD-5001B tabulates separate yield and ultimate design factors for spaceflight metallic structures that depend on the verification approach, together with qualification and proof test factors. The number a designer must use therefore comes from the governing document for that application, not from a general rule of thumb.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ecfr-14-cfr-25-303-factor-of-safety", "nasa-std-5001b-structural-design-and-test-factors"],
+      "status": "supported"
+    },
+    {
+      "claim": "Worked example arithmetic, executed in Python before publication with units carried at every step and with clearly labelled illustrative property values (sigma_y = 250 MPa, sigma_u = 400 MPa, E = 200 GPa). Bar: d = 20 mm, A = 314.159 mm^2, P = 60 kN, sigma = 191.0 MPa, factor on yield 1.309, factor on ultimate 2.094 (ratio 1.600). Design to a factor of 2.0 on yield: required A = 480.0 mm^2, required d = 24.72 mm, next stock size 25 mm gives A = 490.87 mm^2, sigma = 122.23 MPa and a realized factor of 2.045. Column: h = 25 mm square, A = 625 mm^2, I = 32552.1 mm^4, rho = 7.217 mm; at L = 1.5 m, beta = 207.8, P_cr = 28.56 kN, sigma_cr = 45.69 MPa, P_yield = 156.25 kN, so buckling governs by a factor of 5.47 and a strength-only check reports a factor of 5.47 at the collapse load; beta_c = 88.9 confirms elastic buckling. At L = 0.30 m, beta = 41.6 < beta_c and P_cr = 713.9 kN > P_yield = 156.25 kN, so yielding governs. Partial-factor illustration using the 1979-era criterion formats quoted in NBS SP 577: for 80 kN dead + 20 kN live, 1.4D + 1.7L = 146.0 kN; for 20 kN dead + 80 kN live, 1.4D + 1.7L = 164.0 kN, a 12.3 percent difference, while a single 1.7 multiplier on service load gives 170.0 kN for both. Reliability index check: Phi(-3) = 1.350e-3, Phi(-4) = 3.167e-5.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["libretexts-wierzbicki-plastic-buckling-of-columns", "nbs-sp-577-probability-based-load-criterion", "nasa-std-5001b-structural-design-and-test-factors"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "There is no single definition of 'factor of safety' across engineering practice.",
+      "positions": [
+        "Aviation regulation applies the factor to load: 14 CFR 25.303 multiplies prescribed limit loads by 1.5 to obtain ultimate loads.",
+        "Classical allowable stress design applies the reduction to stress: the allowable stress is a preset fraction of a strength value and the computed elastic stress must stay below it (NBS SP 577).",
+        "NASA's structural standard keeps yield and ultimate factors as separate quantities and normalises the result as a margin of safety.",
+        "Limit-states codes abandon a single factor entirely in favour of separate load and resistance factors."
+      ],
+      "resolution": "The lesson treats the plurality as the point rather than picking a winner: it defines the factor generically as capacity over demand, teaches the three axes of ambiguity (yield versus ultimate, load versus stress, design versus realized), and states that a quoted number is uninterpretable until the axes are fixed. No universal value or definition is asserted."
+    },
+    {
+      "issue": "Whether a computed probability of failure is a real probability.",
+      "positions": [
+        "Reliability-based design computes p_f = Phi(-beta) from the limit-state statistics.",
+        "NBS SP 577 states that where the probability laws cannot be determined exactly, the resulting p_f is a 'notional' probability that should be interpreted comparatively rather than in a classical relative-frequency sense."
+      ],
+      "resolution": "The lesson introduces beta and p_f conceptually and carries the notional caveat explicitly, so students do not read a code-implied p_f as a prediction of collapse frequency."
+    },
+    {
+      "issue": "The critical slenderness worked in the Wierzbicki source gives (l/h)_c of approximately 30 for a square mild-steel column with E = 210 GPa and sigma_y = 250 MPa, whereas the same formula evaluated exactly gives 26.3.",
+      "positions": [
+        "The source rounds generously to a memorable figure.",
+        "Direct evaluation of beta_c = pi*sqrt(E/sigma_y) divided by 2*sqrt(3) gives 26.3 for those inputs."
+      ],
+      "resolution": "The lesson takes the formula and the physical argument from the source but computes its own numbers in Bash with its own clearly labelled illustrative inputs (E = 200 GPa, sigma_y = 250 MPa), and does not repeat the source's rounded figure."
+    },
+    {
+      "issue": "Whether specific factors from engineering standards should appear in the lesson at all.",
+      "positions": [
+        "Citing a concrete number makes the concept tangible.",
+        "The subject's cautions forbid reproducing standard text, tables, or values, and forbid stating an allowable stress, load factor, or design value as if from a standard."
+      ],
+      "resolution": "Only the value appearing in federal regulation (the 1.5 factor of 14 CFR 25.303) is stated, because a regulation is public law rather than a copyrighted standard, and it is presented as an illustration of how codes work rather than as guidance. NASA-STD-5001B was downloaded and read, but its tabulated design and test factors are described structurally without reproducing the numbers, and the historical ACI- and AISC-style load formats used in the partial-factor illustration are attributed to NBS SP 577's 1979-era description and labelled as illustrative and not current."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft asserted that 'Safety Factors And Failure is a foundational concept in Engineering Fundamentals' and described it as a labelling device for organising information. Research supports no such framing: a factor of safety is a specific computed ratio with a contested definition, not an organising label.",
+    "The draft's claim that the topic is best understood by 'defining it and applying it to an example' is content-free and was not sourced; nothing in the research supports treating the topic as a vocabulary exercise.",
+    "The draft's Eli-10 analogy ('a label on a toolbox drawer', 'reading a map legend') has no relationship to the mechanics of failure and carried no analogy limits.",
+    "The draft implied a single meaning for 'safety factor'. Every source consulted shows the term is used with several incompatible meanings, which is the central correction this lesson makes.",
+    "The draft contained no failure modes at all, and therefore no coverage of buckling, fatigue, creep, brittle fracture, wear, corrosion, or thermal failure."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire generated draft. Nothing of its wording survives.",
+    "Defined the factor of safety as a capacity-over-demand ratio and made the ambiguity of that ratio the spine of the lesson.",
+    "Added the load-versus-stress distinction, grounded in 14 CFR 25.301 and 25.303, which apply the factor to load rather than stress.",
+    "Added the design-factor-versus-realized-factor distinction and the margin-of-safety formulation from NASA-STD-5001B.",
+    "Added the allowable stress design versus load and resistance factor design contrast with the dead-versus-live-variability argument from NBS SP 577, and a computed illustration of how the two formats treat two members with identical total service load differently.",
+    "Added reliability index and probability of failure at concept level, with the notional-probability caveat stated rather than suppressed.",
+    "Added the full failure-mode inventory, each defined by the condition that provokes it, and put the buckling-is-not-a-strength-failure error into Common Mistakes as briefed.",
+    "Added the static failure theories at survey level, with the Tresca and von Mises shear-yield disagreement computed rather than asserted.",
+    "Added the systems view with sourced definitions of single-point failure, redundancy, FMEA, fail-safe structure, damage tolerance and safe-life.",
+    "Executed every number in the lesson, its worked example, and its questions in Python with units carried, and labelled every material property as illustrative.",
+    "Added explicit educational-material and not-design-guidance statements, including the statement that real design factors come from the governing code."
+  ],
+  "rightsIssues": [
+    "All LibreTexts pages used (Roylance 6.1, 6.4 and 6.5; Wierzbicki 8.1 and 8.6; Steimel Chapter 10) carry NonCommercial Creative Commons licences (CC BY-NC-SA 4.0 for the MIT OpenCourseWare derivatives, CC BY-NC-ND 4.0 for the Cal Poly Humboldt chapter). All are classified REFERENCE_ONLY and no wording from any of them is reproduced; the CC BY-NC-ND page in particular was used only to confirm facts, since that licence forbids adaptation.",
+    "eCFR sections, NBS Special Publication 577, NASA-STD-5001B and NASA-STD-8729.1A are U.S. Government works in the public domain. Even so, the lesson paraphrases rather than quoting, apart from short defined terms of art.",
+    "Engineering standards published by ASME, ASTM, AISC, ACI, ISO and IEC are copyrighted and were not consulted. No allowable stress, load factor, resistance factor, or design value is stated from any standard that was not read in full text, and the tabulated factors of NASA-STD-5001B are described structurally rather than reproduced.",
+    "The ACI-style and AISC-style load formats used in the partial-factor illustration are taken from NBS SP 577's own description of 1979-era practice, are labelled historical and illustrative, and are not offered as current design values."
+  ],
+  "sourceRecords": [
+    {
+      "id": "ecfr-14-cfr-25-301-loads",
+      "title": "14 CFR 25.301 — Loads",
+      "provider": "Federal Aviation Administration, in the Electronic Code of Federal Regulations (Office of the Federal Register / Government Publishing Office)",
+      "url": "https://www.ecfr.gov/current/title-14/section-25.301",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "The eCFR web page redirected the fetcher to an unblock page; the section text was retrieved instead from the eCFR renderer API (https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-14?chapter=I&subchapter=C&part=25&subpart=C) with a browser user agent, and the section was read in full. Supports the definition of limit loads as the maximum loads to be expected in service and ultimate loads as limit loads multiplied by prescribed factors of safety, and the default that prescribed loads are limit loads. Used to establish that this factor is applied to load rather than to stress. Cited as an example of how a real code frames the question, not as design guidance."
+    },
+    {
+      "id": "ecfr-14-cfr-25-303-factor-of-safety",
+      "title": "14 CFR 25.303 — Factor of safety",
+      "provider": "Federal Aviation Administration, in the Electronic Code of Federal Regulations (Office of the Federal Register / Government Publishing Office)",
+      "url": "https://www.ecfr.gov/current/title-14/section-25.303",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via the eCFR renderer API for 14 CFR part 25 subpart C with a browser user agent, after the ordinary eCFR page redirected the fetcher. Supports the single operative requirement that, unless otherwise specified, a factor of safety of 1.5 must be applied to the prescribed limit loads considered as external loads on the structure, and that no further factor need be applied where a loading condition is already prescribed in ultimate-load terms. This is the one specific numerical factor the lesson states, and it is stated because it is federal regulation (public law) rather than a copyrighted consensus standard; it is presented as an illustration that design factors come from the governing document."
+    },
+    {
+      "id": "ecfr-14-cfr-25-305-strength-and-deformation",
+      "title": "14 CFR 25.305 — Strength and deformation",
+      "provider": "Federal Aviation Administration, in the Electronic Code of Federal Regulations (Office of the Federal Register / Government Publishing Office)",
+      "url": "https://www.ecfr.gov/current/title-14/section-25.305",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via the same eCFR renderer API call for part 25 subpart C. Supports the two-tier structural check that makes the yield-versus-ultimate distinction concrete in law: the structure must support limit loads without detrimental permanent deformation and without deformation that interferes with safe operation, and must support ultimate loads without failure for at least three seconds. Used to show that a single quoted factor of safety conceals two different governing conditions with two different capacities."
+    },
+    {
+      "id": "ecfr-14-cfr-25-571-damage-tolerance-and-fatigue-evaluation",
+      "title": "14 CFR 25.571 — Damage-tolerance and fatigue evaluation of structure",
+      "provider": "Federal Aviation Administration, in the Electronic Code of Federal Regulations (Office of the Federal Register / Government Publishing Office)",
+      "url": "https://www.ecfr.gov/current/title-14/section-25.571",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via the eCFR renderer API for part 25 subpart C with a browser user agent. Supports four things the lesson relies on: that the required evaluation covers catastrophic failure due to fatigue, corrosion, manufacturing defects and accidental damage across the operational life; that damage-tolerance evaluation assumes an initial flaw of the maximum probable size from manufacturing or service-induced damage, uses crack-growth analysis and test to set inspection thresholds, and requires a residual strength evaluation of the remaining structure; that fatigue (safe-life) evaluation is available only where the applicant establishes that damage tolerance is impractical, and then requires demonstration of survival of expected repeated loads without detectable cracks with appropriate scatter factors; and that the rule uses 'fail-safe' for multiple load path and crack arrest structure. Cited for the damage-tolerance versus safe-life contrast and the fail-safe structural category, not as design guidance."
+    },
+    {
+      "id": "nbs-sp-577-probability-based-load-criterion",
+      "title": "NBS Special Publication 577: Development of a Probability Based Load Criterion for American National Standard A58",
+      "provider": "Bruce Ellingwood, Theodore V. Galambos, James G. MacGregor and C. Allin Cornell, National Bureau of Standards (now NIST), U.S. Department of Commerce, June 1980",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication577.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Downloaded the 236-page PDF from nvlpubs.nist.gov and extracted the executive summary and chapters 1 and 2 locally. This is the foundational U.S. document behind reliability-based load criteria. Supports: the definition of limit states and the split into ultimate and serviceability limit states, with buckling, fracture and fatigue named explicitly among ultimate limit states; the description of allowable (working) stress design as keeping elastically computed stresses below a preset fraction of yield strength, crushing strength or modulus of rupture; the two documented disadvantages of that format, namely that a fixed allowable stress does not give constant safety across different dead-to-live ratios and that it can be unsafe when loads counteract, with the Ferrybridge cooling tower failures cited; the LRFD criterion form phi*R_n >= sum(gamma_i * Q_i) with phi below unity for resistance uncertainty and gamma above unity for load uncertainty; the observation that live load carries a larger factor than dead load because its variability is larger; the reliability index beta defined as the mean of the limit-state function over its standard deviation, the exact relation p_f = Phi(-beta) for normal variables and linear limit states, the typical range of beta from about 2 to 8, and the explicit statement that a p_f obtained where distributions are not exactly known is a 'notional' probability to be read comparatively. The 1.4D + 1.7L and 1.7(D+L) criterion formats used in the lesson's partial-factor illustration are taken from this document's description of 1979-era ACI and AISC practice and are labelled historical and illustrative."
+    },
+    {
+      "id": "nasa-std-5001b-structural-design-and-test-factors",
+      "title": "NASA-STD-5001B with Change 3, Structural Design and Test Factors of Safety for Spaceflight Hardware",
+      "provider": "National Aeronautics and Space Administration, Office of the Chief Engineer",
+      "url": "https://standards.nasa.gov/sites/default/files/standards/NASA/B-w/CHANGE-3/3/2022-10-24-NASA-STD-5001B-w-Change-3-Approved.pdf",
+      "sourceType": "standards-body",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work; document approved for public release with unlimited distribution",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Downloaded the 36-page approved PDF from standards.nasa.gov and extracted the definitions and section 4 requirements locally. Supports the definition of limit load as the maximum anticipated load or combination of loads a structure may experience during its design service life under all expected operating conditions; the definition of margin of safety as allowable load (yield or ultimate) divided by the product of limit load and the factor of safety (yield or ultimate), minus one, with the standard's own note that 'load' may refer to force, stress or strain; and the structural fact that the standard tabulates separate ultimate and yield design factors together with qualification and proof test factors, differing by verification approach (prototype versus protoflight) and by material class (metallics, threaded fasteners, composites and bonds, glass and ceramics, pressurised structures, softgoods). The tabulated numerical factors were read but are deliberately NOT reproduced in the lesson, in keeping with the subject's caution against stating design values from standards; only the structure of the table and the fact that different governing documents prescribe different factors are used."
+    },
+    {
+      "id": "nasa-std-8729-1a-reliability-and-maintainability",
+      "title": "NASA-STD-8729.1A, NASA Reliability and Maintainability (R&M) Standard for Spaceflight and Support Systems",
+      "provider": "National Aeronautics and Space Administration, Office of Safety and Mission Assurance",
+      "url": "https://standards.nasa.gov/sites/default/files/standards/NASA/A/0/nasa-std-87291a.pdf",
+      "sourceType": "standards-body",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work; document approved for public release with unlimited distribution",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Downloaded the 52-page PDF from standards.nasa.gov and extracted section 3 (definitions) and the Appendix A reliability analysis methods table locally. Supports the definitions used in the systems section: failure mode as the particular way in which a failure can occur, independent of the reason for failure; FMEA as a bottom-up, systematic, inductive, methodical analysis identifying and documenting all identifiable failure modes at a prescribed level and specifying their resultant effects, usually performed to identify critical single failure points, with FMECA adding mission-criticality evaluation of each mode; single point failure as an independent element of a system (hardware, software or human) whose failure would result in loss of objectives, hardware or crew; redundancy as the use of more than one independent means to accomplish a given function, with design redundancy requiring that a failure in one function does not impair transfer to a second; and reliability as the probability that an item will perform its intended function for a specified interval under stated conditions. Also confirms that FMECA is used to evaluate fault-tolerant capabilities such as redundancy and to identify single point failures requiring corrective action."
+    },
+    {
+      "id": "libretexts-roylance-yield-and-plastic-flow",
+      "title": "Mechanics of Materials, 6.1: Yield and Plastic Flow",
+      "provider": "David Roylance, MIT (Mechanics of Materials, Engineering LibreTexts)",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_of_Materials_(Roylance)/06:_Yield_and_Fracture/6.01:_Yield_and_Plastic_Flow",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Existing registry source, re-read live for this topic. Used here for the failure-theory survey and the yield-versus-fracture mechanism split: that yield is driven by shearing stresses sliding one atomic plane along another while fracture is driven by normal stresses separating planes; that brittle materials such as ceramics fracture before they yield; that below a ductile-brittle transition temperature a material fractures before yielding, a mechanism implicated in cold-weather ship and pipeline failures; the maximum shear stress (Tresca) criterion with tau_max = k and k = sigma_Y/2 from the tension test via Mohr's circle; and the von Mises criterion driven by the deviatoric strain energy, giving k = sigma_Y/sqrt(3), fitting experimental data somewhat better, and being routinely computed by commercial finite element codes. CC BY-NC-SA 4.0; REFERENCE_ONLY, no wording reproduced."
+    },
+    {
+      "id": "libretexts-roylance-fatigue",
+      "title": "Mechanics of Materials, 6.5: Fatigue",
+      "provider": "David Roylance, MIT (Mechanics of Materials, Engineering LibreTexts)",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_of_Materials_(Roylance)/06:_Yield_and_Fracture/6.05:_Fatigue",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page (fetched with a browser user agent; the page number is 6.5 in the LibreTexts numbering, not 6.3). Supports: fatigue as damage accumulation under repetitive loads that may be well below the yield point, dangerous because a single application produces no ill effect and a conventional stress analysis can therefore imply a safety that does not exist; the intrusion-extrusion picture of initiation at an internal or surface flaw where stresses concentrate, and the clamshell and beach-mark appearance of the fracture surface; the S-N diagram with cyclic stress amplitude against cycles to failure on a logarithmic abscissa; the endurance limit as the flattening seen in ferrous alloys below which failure does not occur however long cycling continues, and its absence in materials such as aluminium, which forces a finite-life design; the very large horizontal scatter in fatigue lifetimes and the explanation that fatigue measures variability in cycles at a given stress rather than in stress at a given cycle; the mean-stress treatment via alternating stress, stress ratio R and the Goodman diagram; and Miner's linear cumulative damage rule as a useful approximation. CC BY-NC-SA 4.0; REFERENCE_ONLY, no wording reproduced."
+    },
+    {
+      "id": "libretexts-roylance-introduction-to-fracture-mechanics",
+      "title": "Mechanics of Materials, 6.4: Introduction to Fracture Mechanics",
+      "provider": "David Roylance, MIT (Mechanics of Materials, Engineering LibreTexts)",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_of_Materials_(Roylance)/06:_Yield_and_Fracture/6.04:_Introduction_to_Fracture_Mechanics",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the brittle-fracture entry in the failure-mode inventory: that the presence of a crack modifies local stresses so severely that the designer's elastic stress analysis is insufficient; that beyond a critical crack length a crack can propagate catastrophically through a structure at a gross stress far below what would cause yield or failure in a tensile specimen; that failures have been traced to uncertainties in loading or environment, material defects, design inadequacies and construction or maintenance deficiencies; and that a critical stress intensity factor K_Ic, related to the failure stress by sigma_f = K_Ic/(alpha*sqrt(pi*a)), serves as the measure of material toughness. Used at survey level only; no fracture-mechanics computation appears in the lesson. CC BY-NC-SA 4.0; REFERENCE_ONLY, no wording reproduced."
+    },
+    {
+      "id": "libretexts-wierzbicki-prelude-to-stability-of-elastic-structures",
+      "title": "Structural Mechanics, 8.1: Prelude to Stability of Elastic Structures",
+      "provider": "Tomasz Wierzbicki, MIT (Structural Mechanics, Engineering LibreTexts, via MIT OpenCourseWare 2.080J)",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Structural_Mechanics_(Wierzbicki)/08:_Stability_of_Elastic_Structures/8.01:_Prelude_to_Stability_of_Elastic_Structures",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the central conceptual claim of the buckling section: that equilibrium and stability are separate questions, that vanishing of the first variation of total potential energy establishes equilibrium but says nothing about stability, and that stability is decided by the sign of the second variation — positive for stable, zero for neutral, negative for unstable — illustrated by a ball in a paraboloid. This is what grounds the statement that buckling is a stability failure rather than a strength failure. CC BY-NC-SA 4.0; REFERENCE_ONLY, no wording reproduced."
+    },
+    {
+      "id": "libretexts-wierzbicki-plastic-buckling-of-columns",
+      "title": "Structural Mechanics, 8.6: Plastic Buckling of Columns",
+      "provider": "Tomasz Wierzbicki, MIT (Structural Mechanics, Engineering LibreTexts, via MIT OpenCourseWare 2.080J)",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Structural_Mechanics_(Wierzbicki)/08:_Stability_of_Elastic_Structures/8.06:_Plastic_Buckling_of_Columns",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the whole buckling-versus-yielding comparison: the pin-pin critical load P_c = pi^2*E*I/l^2; the critical buckling stress sigma_c = pi^2*E/beta^2 written with the radius of gyration rho (A*rho^2 = I) and the slenderness ratio beta = l/rho; the hyperbolic fall of buckling stress with slenderness; the critical slenderness beta_c = pi*sqrt(E/sigma_y) obtained by setting sigma_c = sigma_y; the statement that columns more slender than the critical value buckle elastically before yielding while stockier columns yield first and then buckle in the plastic range; and the tangent-modulus extension for plastic buckling. The lesson takes the formulas and the argument but computes its own numbers from its own clearly labelled illustrative inputs; the source's rounded (l/h)_c of approximately 30 is not repeated because exact evaluation of its own inputs gives 26.3. CC BY-NC-SA 4.0; REFERENCE_ONLY, no wording reproduced."
+    },
+    {
+      "id": "libretexts-steimel-creep-fracture-and-fatigue",
+      "title": "Mechanical Behavior of Material, Chapter 10: Creep, Fracture, and Fatigue",
+      "provider": "Joshua P. Steimel, California State Polytechnic University Humboldt (Engineering LibreTexts)",
+      "url": "https://eng.libretexts.org/Courses/California_State_Polytechnic_University_Humboldt/Mechanical_Behavior_of_Material/Chapter_10:_Creep,_Fracture,_and_Fatigue",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-ND 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the creep entry in the failure-mode inventory: creep as time- and temperature-dependent plastic deformation in crystalline materials, becoming a relevant mechanism in metals above roughly 0.3 of the absolute melting temperature and in ceramics above roughly 0.5; the point that creep is insidious because it proceeds at stresses far below the measured yield strength, so a linear-elastic expectation of constant strain under constant sub-yield stress fails at high temperature; the three regimes (primary or transient, secondary or steady-state at constant strain rate, tertiary or runaway leading to failure); and the design consequence that total creep strain must stay below the allowable strain and the service duration below the creep time to failure, with turbine blades as the canonical application. The licence is CC BY-NC-ND, which forbids adaptation, so this source was used strictly to confirm facts; classified REFERENCE_ONLY and no wording reproduced."
+    }
+  ]
+}

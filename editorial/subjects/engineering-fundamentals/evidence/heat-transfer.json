@@ -1,0 +1,379 @@
+{
+  "topicId": "engineering-fundamentals:thermal-and-energy-systems:heat-transfer",
+  "subjectId": "engineering-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Conduction: Fourier's law, thermal conductivity as a material property, the plane-wall result",
+      "Thermal resistance and the electrical-circuit analogy, series and parallel networks",
+      "R-value in building practice and the U.S. customary vs SI R-value unit trap",
+      "Convection: Newton's law of cooling, the convective heat transfer coefficient h and why it is not a material property, natural vs forced convection",
+      "Radiation: Stefan-Boltzmann law, emissivity, absolute temperature to the fourth power, net exchange with surroundings",
+      "Combined modes and the overall heat transfer coefficient U",
+      "Insulation and diminishing returns; thermal bridging as a parallel path",
+      "Fins and extended surfaces at a conceptual level",
+      "Transient conduction: lumped capacitance and the Biot number criterion"
+    ],
+    "supporting": [
+      "Property values are measured, temperature-dependent, and uncertain; typical values are not design values",
+      "Stefan-Boltzmann constant is exact in the 2019 SI (CODATA 2022)",
+      "Building envelope and thermal system design are governed by codes and standards, not by a lesson"
+    ],
+    "outOfScope": [
+      "Temperature vs heat, specific heat and latent heat (owned by engineering-fundamentals:thermal-and-energy-systems:temperature-versus-heat)",
+      "The first-law energy balance and closed/open system energy accounting (owned by engineering-fundamentals:thermal-and-energy-systems:first-law-of-thermodynamics)",
+      "Heat exchanger design, LMTD and effectiveness-NTU methods",
+      "Boiling, condensation, and two-phase heat transfer correlations",
+      "Dimensionless correlations (Nusselt, Reynolds, Prandtl, Grashof) and their derivation",
+      "Radiation view factors, spectral and directional properties",
+      "Numerical/CFD solution of the heat equation",
+      "Any specific code-required R-value, U-factor, or insulation design guidance"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Heat moves by three mechanisms - conduction (interaction between adjacent molecules of a material), convection (bulk motion and mixing of a fluid), and radiation (electromagnetic emission from any surface above absolute zero) - and radiation needs no intervening medium.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "doe-hdbk-1012-2-92-thermodynamics-heat-transfer-fluid-flow-v2",
+        "openstax-university-physics-2-mechanisms-of-heat-transfer"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Steady one-dimensional conduction through a plane wall follows Fourier's law, Q = kA(dT)/(dx), where k is the thermal conductivity of the material.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "doe-hdbk-1012-2-92-thermodynamics-heat-transfer-fluid-flow-v2",
+        "openstax-university-physics-2-mechanisms-of-heat-transfer"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Conduction can be written as Q = dT / R_th with R_th = dx/k, which makes heat flow directly analogous to current in an electrical circuit and lets series and parallel thermal resistances be combined the same way as electrical resistances.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "doe-hdbk-1012-2-92-thermodynamics-heat-transfer-fluid-flow-v2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "R-value is the thermal resistance of insulation; the R-values of the individual layers of a multi-layered installation are added, and R-value depends on the material type, its thickness, and its density.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "doe-ce-0180-insulation-fact-sheet-2008",
+        "ftc-16-cfr-part-460-home-insulation-labeling"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "In the United States the FTC R-value Rule (16 CFR part 460) requires advertised R-values to come from listed ASTM steady-state test methods run at a mean temperature of 75 degrees Fahrenheit with a temperature difference of 50 +/- 10 degrees Fahrenheit, and requires the label statement that R means resistance to heat flow. The rule's framing is therefore in U.S. customary units.",
+      "claimType": "LEGAL",
+      "sourceIds": [
+        "ftc-16-cfr-part-460-home-insulation-labeling"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A U.S. customary R-value in h*ft^2*degF/Btu(IT) and an SI R-value in m^2*K/W differ numerically by a factor of 5.678263: 1 Btu(IT)/(h*ft^2*degF) equals 5.678263 W/(m^2*K), so R_SI = R_US x 0.1761102.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "nist-sp811-appendix-b9-conversion-factors"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Convection is described by Q = hA(dT). The coefficient h is not a property of the fluid alone: it depends on fluid velocity, viscosity, heat flux, surface roughness and the type of flow, is typically lower for laminar than turbulent flow, and is treated empirically.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "doe-hdbk-1012-2-92-thermodynamics-heat-transfer-fluid-flow-v2",
+        "openstax-university-physics-2-mechanisms-of-heat-transfer"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Natural convection is driven by density differences arising from temperature differences within the fluid; forced convection is driven by an external device such as a pump or fan.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "doe-hdbk-1012-2-92-thermodynamics-heat-transfer-fluid-flow-v2",
+        "openstax-university-physics-2-mechanisms-of-heat-transfer"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Radiant emission follows Q = e*sigma*A*T^4 with T the absolute temperature and e the emissivity (dimensionless, maximum 1.0); the net exchange between a surface and its surroundings is Q = e*sigma*A*(T_s^4 - T_sur^4).",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "doe-hdbk-1012-2-92-thermodynamics-heat-transfer-fluid-flow-v2",
+        "openstax-university-physics-2-mechanisms-of-heat-transfer"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The Stefan-Boltzmann constant is 5.670374419 x 10^-8 W*m^-2*K^-4 and is exact in the revised SI; CODATA 2022 lists no uncertainty for it.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "nist-codata-stefan-boltzmann-constant"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "For combined modes it is standard practice to relate total heat transfer to an overall temperature difference through an overall heat transfer coefficient U, Q = U*A*(dT), which lumps the convective coefficients on both sides with the conduction through the solid.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "doe-hdbk-1012-2-92-thermodynamics-heat-transfer-fluid-flow-v2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "NIST SRM 1450d, a high-density molded fibrous-glass board, carries a certified thermal conductivity equation lambda(T) = 1.10489 x 10^-4 * T (W/(m*K), T in kelvin) valid from 280 K to 340 K with a 1 percent expanded uncertainty at coverage factor k = 2.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "nist-jres-119-012-srm-1450-retrospective"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "NIST measurements of U.S. Type X gypsum board at room temperature give a thermal conductivity of 0.258 W/(m*K) with the paper on, a density of 711 kg/m^3 (uncertainty +/- 10 percent in density), and a specific heat of 1089 J/(kg*K).",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "nist-manzello-2008-gypsum-board-thermal-properties"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A representative typical thermal conductivity for copper used in DOE fundamentals training material is 240 Btu/(h*ft*degF), which converts to about 415 W/(m*K).",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "doe-hdbk-1012-2-92-thermodynamics-heat-transfer-fluid-flow-v2",
+        "nist-sp811-appendix-b9-conversion-factors"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The general criterion for using a lumped-capacitance (uniform-temperature) model in transient analysis is a Biot number below 0.1; NASA thermal analysts apply exactly this test and reject the assumption when the local Biot number exceeds it.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-tfaws-2019-xenon-refueling-transient-analysis"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Radiant barriers work by presenting a low-emittance surface; DOE guidance states a radiant barrier must have an emittance of 0.1 or less and a reflectance of 0.9 or more, while ordinary attic surfaces such as wood are modeled at an emittance of about 0.9.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "doe-ce-0180-insulation-fact-sheet-2008",
+        "ornl-stovall-2010-radiant-barrier-fact-sheet-analysis"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Insulation only delivers its rated R-value when installed correctly; compressed insulation does not give its full rated R-value, and the effectiveness of an insulated assembly depends on how and where the insulation is installed.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "doe-ce-0180-insulation-fact-sheet-2008"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Building envelope thermal performance in the United States is governed by adopted energy codes: DOE must determine, under the Energy Conservation and Production Act (42 U.S.C. 6833), whether revised editions of ANSI/ASHRAE/IES Standard 90.1 and the IECC improve energy efficiency, after which states must review, update or certify their codes.",
+      "claimType": "LEGAL",
+      "sourceIds": [
+        "doe-building-energy-codes-determinations"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Numeric value of the Stefan-Boltzmann constant",
+      "positions": [
+        "OpenStax University Physics Vol. 2 gives sigma = 5.67 x 10^-8 J/(s*m^2*K^4), a rounded teaching value",
+        "NIST CODATA 2022 gives sigma = 5.670374419 x 10^-8 W*m^-2*K^-4, exact under the revised SI"
+      ],
+      "resolution": "Not a real conflict. The lesson uses the NIST CODATA value as the reference value and notes that the rounded 5.67 x 10^-8 seen in textbooks is the same number to three significant figures. All published arithmetic uses the CODATA value."
+    },
+    {
+      "issue": "Units used for heat transfer relations",
+      "positions": [
+        "DOE-HDBK-1012/2-92 presents Fourier's law, Newton's law of cooling and the Stefan-Boltzmann law entirely in U.S. customary units (Btu/h, ft, degF, degR)",
+        "OpenStax and the NIST property sources use SI"
+      ],
+      "resolution": "The lesson uses SI as primary, per the subject caution, and converts the DOE handbook's copper conductivity with the NIST SP 811 Appendix B.9 printed factor 1.730735. Both unit systems are shown for R-value because the U.S. customary form is what appears on American insulation labels."
+    },
+    {
+      "issue": "Whether typical property values may be used for design",
+      "positions": [
+        "Handbooks and fact sheets publish representative property values",
+        "Certified values exist only for specific reference materials at stated conditions, and code compliance depends on tested assembly values"
+      ],
+      "resolution": "Every property value in the lesson is labeled typical or certified-for-a-specific-reference-material, dated, and explicitly excluded from use as a design value. The lesson states that envelope and thermal system design is governed by adopted codes."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained no substantive heat transfer content at all: it described 'heat transfer' generically as 'a concept students use to organize information' and offered a toolbox-drawer analogy and a map-legend analogy that carry no physics.",
+    "The draft's vocabulary entries ('Heat Transfer: a foundational Engineering Fundamentals concept covered in this lesson', plus 'context', 'evidence', 'application') are circular or off-topic and were discarded.",
+    "The draft's worked example ('a student reads a short scenario and identifies details that matter') is not a worked example in any engineering sense and was replaced.",
+    "The draft's question bank tested study habits rather than heat transfer and was replaced entirely."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire draft with mechanism-by-mechanism content: Fourier's law, Newton's law of cooling, and the Stefan-Boltzmann law, each with its assumptions stated.",
+    "Added the thermal-resistance / electrical-circuit analogy with a fully executed series composite-wall calculation and a parallel thermal-bridge calculation.",
+    "Added the U.S. customary vs SI R-value unit hazard with the exact NIST conversion factor.",
+    "Added the explicit statement that h is not a material property.",
+    "Added the absolute-temperature requirement in the Stefan-Boltzmann law and a numeric demonstration of the Celsius error.",
+    "Added the educational-material and not-design-guidance statements and the note that envelope and thermal system design is governed by adopted codes."
+  ],
+  "rightsIssues": [
+    "OpenStax University Physics Volume 2 is used as REFERENCE_ONLY; the page's stated license is Creative Commons Attribution-NonCommercial-ShareAlike, whose NonCommercial term is incompatible with unrestricted reuse in this project. No OpenStax wording is reproduced.",
+    "Stovall's 2010 Buildings XI paper is an ORNL-authored conference paper carrying an ASHRAE copyright notice. It is REFERENCE_ONLY: only the numeric emittance values used in the study are cited, no text is reproduced.",
+    "ASTM C177, C518, C1363, C1114, C1045, C739, C1149 and C1374 are cited only by designation as the test methods that 16 CFR part 460 incorporates. No standard text, table, or value was read or reproduced.",
+    "ANSI/ASHRAE/IES Standard 90.1 and the International Energy Conservation Code are named only as the model documents that DOE evaluates and that states adopt. No code text, R-value, or U-factor requirement is reproduced or stated."
+  ],
+  "sourceRecords": [
+    {
+      "id": "doe-hdbk-1012-2-92-thermodynamics-heat-transfer-fluid-flow-v2",
+      "title": "DOE Fundamentals Handbook: Thermodynamics, Heat Transfer, and Fluid Flow, Volume 2 of 3 (DOE-HDBK-1012/2-92)",
+      "provider": "U.S. Department of Energy",
+      "url": "https://www.energy.gov/sites/default/files/2026-04/DOE-HDBK-1012-92_VOL2.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the full 80-page PDF from the energy.gov host on 2026-08-19; the DOE Standards landing page for the same document is https://www.standards.doe.gov/standards-documents/1000/1012-bhdbk-1992-v2. Marked 'Distribution Statement A. Approved for public release; distribution is unlimited.' Supports the three modes, Fourier's law in rectangular and cylindrical form, the equivalent-thermal-resistance (electrical analogy) method, the convection relation Q = hA(dT) and the empirical, flow-dependent character of h, natural vs forced convection, black-body and gray-body radiation with emissivity, and the overall heat transfer coefficient. Also the source of the typical copper conductivity, 240 Btu/(h*ft*degF). Entirely in U.S. customary units."
+    },
+    {
+      "id": "openstax-university-physics-2-mechanisms-of-heat-transfer",
+      "title": "University Physics Volume 2, 1.6 Mechanisms of Heat Transfer",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/1-6-mechanisms-of-heat-transfer",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "Creative Commons Attribution-NonCommercial-ShareAlike (as stated on the page)",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Fetched 2026-08-19. Cross-check on the conduction rate equation P = kA(T_h - T_c)/d, the Stefan-Boltzmann law P = sigma*A*e*T^4 with the rounded constant 5.67 x 10^-8, the net radiative exchange form, and the natural/forced convection distinction. Used only to confirm the standard teaching forms; no wording adapted, and the NonCommercial license term keeps this reference-only."
+    },
+    {
+      "id": "nist-codata-stefan-boltzmann-constant",
+      "title": "CODATA Value: Stefan-Boltzmann constant",
+      "provider": "NIST Physical Measurement Laboratory (Fundamental Physical Constants)",
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?sigma",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Fetched 2026-08-19. Gives sigma = 5.670374419... x 10^-8 W*m^-2*K^-4 from the CODATA 2022 adjustment, listed as exact with no standard uncertainty. This is the value used in every radiation calculation published in the lesson."
+    },
+    {
+      "id": "nist-sp811-appendix-b9-conversion-factors",
+      "title": "NIST Guide to the SI, Appendix B.9: Factors for units listed by kind of quantity or field of science (SP 811)",
+      "provider": "NIST",
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Fetched 2026-08-19. Source of the exact printed conversion factors used in the lesson: Btu(IT)/(h*ft*degF) -> W/(m*K) = 1.730735, and Btu(IT)/(h*ft^2*degF) -> W/(m^2*K) = 5.678263. The R-value factor R_SI = R_US x 0.1761102 was computed as the reciprocal of 5.678263 and executed in Bash."
+    },
+    {
+      "id": "nist-jres-119-012-srm-1450-retrospective",
+      "title": "Retrospective Analysis of NIST Standard Reference Material 1450, Fibrous Glass Board, for Thermal Insulation Measurements",
+      "provider": "NIST Journal of Research, Volume 119 (2014)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/jres/119/jres.119.012.pdf",
+      "sourceType": "peer-reviewed",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Downloaded and read the 75-page PDF on 2026-08-19. Table 4 gives the SRM 1450d certificate regression coefficients, which reduce to lambda(T) = 1.10489 x 10^-4 * T W/(m*K); Table 5 gives the 1 percent expanded uncertainty at k = 2; the abstract gives the density and temperature domains. Source of the insulation conductivity used in the worked example, evaluated at 297.15 K inside the 280-340 K certified range."
+    },
+    {
+      "id": "nist-manzello-2008-gypsum-board-thermal-properties",
+      "title": "Measurement of Thermal Properties of Gypsum Board at Elevated Temperatures",
+      "provider": "NIST (Manzello, Park, Mizukami, Bentz), Proceedings of the Fifth International Conference on Structures in Fire",
+      "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=900117",
+      "sourceType": "peer-reviewed",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Downloaded and read on 2026-08-19 from the NIST publications server. Table 1 gives room-temperature values for U.S. Type X gypsum board with the paper on: k = 0.258 W/(m*K), Cp = 1089 J/(kg*K); the text gives density 711 kg/m^3 with +/- 10 percent uncertainty. Conference proceedings copyright status is not stated on the NIST copy, so this is treated as reference-only: only the measured numbers are used, no wording."
+    },
+    {
+      "id": "ftc-16-cfr-part-460-home-insulation-labeling",
+      "title": "16 CFR Part 460 - Labeling and Advertising of Home Insulation (the FTC R-value Rule)",
+      "provider": "U.S. Federal Trade Commission / Office of the Federal Register",
+      "url": "https://www.ecfr.gov/current/title-16/part-460",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "eCFR blocked automated fetching on 2026-08-19, so the rule was read from the govinfo bound CFR PDF at https://www.govinfo.gov/content/pkg/CFR-2024-title16-vol1/pdf/CFR-2024-title16-vol1-part460.pdf (1-1-24 edition). Section 460.1 states what the part covers; 460.2 defines home insulation as material mainly used to slow heat flow; 460.5 requires R-values to be based on listed ASTM steady-state test methods run at a 75 degF mean temperature with a 50 +/- 10 degF temperature difference on the insulation alone; 460.12(c) requires the label statement that R means resistance to heat flow and that the higher the R-value the greater the insulating power. The canonical eCFR URL is registered; the govinfo copy is what was read."
+    },
+    {
+      "id": "doe-ce-0180-insulation-fact-sheet-2008",
+      "title": "Insulation Fact Sheet (DOE/CE-0180, 2008)",
+      "provider": "U.S. Department of Energy, Office of Energy Efficiency and Renewable Energy",
+      "url": "https://www.energystar.gov/sites/default/files/asset/document/Insulation%20Fact%20Sheet.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Downloaded and read the 33-page PDF on 2026-08-19 (the energy.gov energysaver pages for insulation returned 404 at that date; this DOE-numbered fact sheet is hosted on energystar.gov). Supports: R-value is thermal resistance and indicates resistance to heat flow; R-value depends on material type, thickness and density; layer R-values add; compressed insulation does not deliver its rated R-value and installation quality governs assembly performance; radiant barriers must have emittance of 0.1 or less and reflectance of 0.9 or more."
+    },
+    {
+      "id": "ornl-stovall-2010-radiant-barrier-fact-sheet-analysis",
+      "title": "Analysis in Support of the Radiant Barrier Fact Sheet 2010 Update",
+      "provider": "Oak Ridge National Laboratory (Stovall et al.), Thermal Performance of the Exterior Envelopes of Whole Buildings XI",
+      "url": "https://web.ornl.gov/sci/buildings/conf-archive/2010%20B11%20papers/141_Stovall.pdf",
+      "sourceType": "peer-reviewed",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Downloaded and read on 2026-08-19. Carries a 2010 ASHRAE copyright notice, so reference-only. Used for two numbers: ordinary wood rafter and sheathing surfaces were modeled at emittance 0.9, and a foil radiant barrier stapled under the rafters at 0.05. These are the emissivity values used in the lesson's radiation calculation."
+    },
+    {
+      "id": "nasa-tfaws-2019-xenon-refueling-transient-analysis",
+      "title": "On-Orbit Xenon Refueling Loading Times and Transient Analysis (TFAWS 2019, TFAWS19-ID-16)",
+      "provider": "NASA Glenn Research Center / Thermal and Fluids Analysis Workshop",
+      "url": "https://tfaws.nasa.gov/wp-content/uploads/TFAWS19-ID-16.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Downloaded and read the 53-slide PDF on 2026-08-19. Cited for one thing: a working NASA thermal analysis states the general criterion for lumped capacitance is Bi < 0.1, computes local Biot numbers to test the uniform-temperature assumption, and reports where the assumption fails (Bi = 0.42 at the tank domes). Used as evidence that the Biot criterion is applied in real engineering practice, not only in textbooks."
+    },
+    {
+      "id": "doe-building-energy-codes-determinations",
+      "title": "Building Energy Codes Program: Determinations",
+      "provider": "U.S. Department of Energy",
+      "url": "https://www.energycodes.gov/determinations",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Fetched 2026-08-19. Supports the statement that building envelope thermal performance is governed by adopted energy codes: under the Energy Conservation and Production Act (42 U.S.C. 6833) DOE must determine within 12 months whether a revised ANSI/ASHRAE/IES Standard 90.1 or IECC edition improves energy efficiency, after which states must review, update, or certify their commercial and residential codes. Cited only for the governance point; no code requirement is reproduced."
+    }
+  ]
+}

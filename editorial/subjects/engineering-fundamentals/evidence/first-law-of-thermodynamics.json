@@ -1,0 +1,432 @@
+{
+  "topicId": "engineering-fundamentals:thermal-and-energy-systems:first-law-of-thermodynamics",
+  "subjectId": "engineering-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Defining the thermodynamic system, its boundary, and its surroundings before any energy accounting begins",
+      "Closed system, open system (control volume), and isolated system, and how the classification changes which terms appear in the energy balance",
+      "The first law for a closed system as delta-U = Q - W in the physics/engineering sign convention, with Q positive into the system and W positive for work done by the system",
+      "The competing convention delta-U = Q + W with W defined as work done on the system, and the requirement that a solver state which convention is in use",
+      "Internal energy as a state function versus heat and work as path functions, and why delta-U is written but delta-Q and delta-W are not",
+      "Boundary work for a quasi-static process, W = integral of p dV, and the p-V diagram reading of work as the area under the process path",
+      "Enthalpy H = U + pV, why it is convenient for constant-pressure and flow processes, and delta-H = Q at constant pressure",
+      "The steady-flow energy equation for a control volume at introductory depth",
+      "What the first law reduces to for isothermal, isobaric, isochoric, adiabatic, and cyclic processes",
+      "Why a perpetual motion machine of the first kind is impossible",
+      "The explicit limit that the first law says nothing about the direction of a process"
+    ],
+    "supporting": [
+      "Quasi-static (quasi-equilibrium) processes as an idealization and the reason engineering texts work with them",
+      "Ideal-gas relations used only as arithmetic inputs to the worked example: pV = nRT and internal energy of a monatomic ideal gas as (3/2)nRT",
+      "Molar heat capacities of a monatomic ideal gas, C_V = (3/2)R and C_p = (5/2)R, and Mayer's relation C_p - C_V = R",
+      "The joule as the SI coherent derived unit of energy, work, and amount of heat",
+      "The U.S. Patent and Trademark Office practice of requiring a working model in perpetual-motion cases, as a concrete institutional consequence of the first law"
+    ],
+    "outOfScope": [
+      "The second law of thermodynamics, entropy, reversibility, and Carnot efficiency (named as the next lesson's territory, not taught here)",
+      "Temperature, the definition of heat, specific heat capacity, and latent heat, which belong to the sibling topic temperature-versus-heat",
+      "Conduction, convection, and radiation as transfer mechanisms, which belong to the sibling topic heat-transfer",
+      "Mechanical work, kinetic and potential energy, and power, which belong to the merged topic work-and-energy",
+      "Property tables for real substances, steam tables, quality, and phase-change calculations",
+      "Cycle analysis of specific engines, refrigerators, or heat pumps",
+      "Any design guidance for pressure vessels, boilers, piping, or thermal equipment"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A thermodynamic analysis begins by selecting a system, an imagined boundary, and the surroundings outside it; a closed system exchanges energy but not mass, an open system (control volume) is a region in space through which mass flows, and an isolated system exchanges neither mass nor energy and is an idealization no real device attains.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-intro-eng-thermo-yan-system-and-surroundings",
+        "openstax-university-physics-2-thermodynamic-systems"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The first law of thermodynamics for a closed system, with kinetic and potential energy changes negligible, is delta-U = Q - W, where Q is heat transferred into the system and W is work done by the system; heat removed and work done on the system carry negative signs.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "openstax-university-physics-2-first-law-of-thermodynamics",
+        "libretexts-intro-eng-thermo-yan-first-law-closed-systems",
+        "nasa-bga-first-law-internal-energy"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Heat and work both depend on the process path between two equilibrium states, but their difference does not; that path-independence is what identifies internal energy as a state function, a property of the state rather than of the process.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "nasa-bga-first-law-internal-energy",
+        "openstax-university-physics-2-first-law-of-thermodynamics",
+        "libretexts-intro-eng-thermo-yan-first-law-closed-systems"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Other widely used textbooks write the first law as delta-U = Q + W with W defined as work done on the system; OpenStax Chemistry 2e states the equation in this form and defines w as positive when work is done on the system.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openstax-chemistry-2e-enthalpy",
+        "openstax-university-physics-2-first-law-of-thermodynamics"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "For a quasi-static process the boundary work done by a gas is W = integral from V1 to V2 of p dV, which is the area under the process curve on a p-V diagram; different paths between the same two states enclose different areas and therefore give different work.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openstax-university-physics-2-work-heat-and-internal-energy",
+        "libretexts-intro-eng-thermo-yan-work",
+        "openstax-university-physics-2-thermodynamic-processes"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Enthalpy is defined as H = U + pV; it combines internal energy with the flow work carried by a moving fluid, which is why it is the convenient property for open systems, and for a constant-pressure process the first law reduces to H2 - H1 = Q.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-bga-enthalpy",
+        "libretexts-intro-eng-thermo-yan-enthalpy"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "For steady flow through a control volume the mass entering equals the mass leaving, and the energy balance is Qdot_cv + sum of mdot_i (h_i + V_i^2/2 + g z_i) = Wdot_cv + sum of mdot_e (h_e + V_e^2/2 + g z_e), with i and e denoting inlet and exit.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-intro-eng-thermo-yan-mass-energy-control-volume"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A quasi-static process is an idealization in which the change of state is made infinitesimally slowly so the system stays in thermodynamic equilibrium at every instant; because no finite change can be truly quasi-static, all real processes are non-quasi-static and no path can be drawn for them on a state diagram.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openstax-university-physics-2-thermodynamic-processes"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "An isochoric process does no boundary work, so delta-U = Q; an adiabatic process transfers no heat, so delta-U = -W; and over a complete cycle the system returns to its initial state so delta-U = 0 and Q = W.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openstax-university-physics-2-thermodynamic-processes",
+        "libretexts-intro-eng-thermo-yan-work",
+        "libretexts-intro-eng-thermo-yan-first-law-closed-systems"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "For an ideal monatomic gas the internal energy depends only on temperature and equals (3/2)nRT, the molar heat capacity at constant volume is C_V = (3/2)R = 12.47 J/(mol K), the molar heat capacity at constant pressure is C_p = (5/2)R = 20.79 J/(mol K), and C_p - C_V = R.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "openstax-university-physics-2-work-heat-and-internal-energy",
+        "openstax-university-physics-2-heat-capacities-of-an-ideal-gas"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The first law allows many states that are never observed in nature; explaining which direction a process actually runs is the job of the second law, which this lesson does not cover.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "nasa-bga-first-law-internal-energy",
+        "openstax-university-physics-2-thermodynamic-processes"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The impossibility of a machine that produces net work over a cycle without an energy input is treated as settled enough to shape U.S. patent practice: the Manual of Patent Examining Procedure states that, with the exception of cases involving perpetual motion, a model is not ordinarily required by the Office to demonstrate the operability of a device.",
+      "claimType": "LEGAL",
+      "sourceIds": [
+        "uspto-mpep-608-03-models-exhibits-specimens"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The joule is the SI coherent derived unit of energy, work, and amount of heat, with dimensions kg m^2 s^-2, so heat, work, and internal energy in the first law are all expressed in the same unit.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nist-sp330-2019-section-2-si-units"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Worked-example arithmetic, executed with python3: for 1.20 mol of helium modelled as a monatomic ideal gas at p = 150 kPa expanding quasi-statically and isobarically from 0.0200 m^3 at 300 K to 0.0350 m^3, T2 = 525 K, W = p*deltaV = 2.25 kJ, delta-U = (3/2)nR*deltaT = 3.375 kJ, Q = delta-U + W = 5.625 kJ, and delta-H = 5.625 kJ equals Q as expected at constant pressure; a following isochoric leg removing 1.20 kJ gives W = 0, delta-U = -1.20 kJ, deltaT = -80.0 K and T3 = 445 K, so for the two-step path Q = 4.425 kJ, W = 2.25 kJ and delta-U = 2.175 kJ, which also equals (3/2)nR*(T3 - T1).",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "openstax-university-physics-2-work-heat-and-internal-energy",
+        "openstax-university-physics-2-heat-capacities-of-an-ideal-gas",
+        "libretexts-intro-eng-thermo-yan-work",
+        "nist-sp330-2019-section-2-si-units"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Sign convention for work in the first law",
+      "positions": [
+        "OpenStax University Physics Volume 2 and the LibreTexts engineering thermodynamics text write delta-U = Q - W with W positive when work is done by the system; NASA's Beginner's Guide states the same form and emphasises the words 'into' and 'by'.",
+        "OpenStax Chemistry 2e writes delta-U = q + w and states that w is positive if work is done on the system and negative if done by the system."
+      ],
+      "resolution": "Both are correct bookkeeping and give identical physical answers, because the second convention flips the sign of the work symbol as well as the operator. The lesson teaches delta-U = Q - W, states the alternative explicitly, and demonstrates in the worked example that the two conventions return the same delta-U. It also makes 'state your convention before you compute' a Common Mistakes entry."
+    },
+    {
+      "issue": "The meaning of 'closed system' across disciplines",
+      "positions": [
+        "The LibreTexts engineering thermodynamics text distinguishes a closed system (fixed mass, energy may cross the boundary) from an isolated system (neither mass nor energy crosses).",
+        "OpenStax University Physics Volume 2 introduces the pairing 'closed or isolated system' for a system separated from its environment with minimal interaction, which reads as looser than the engineering definition."
+      ],
+      "resolution": "The lesson uses the engineering definitions, which are the ones a student will meet in a thermodynamics course and which make the three-way classification useful. The distinction is stated explicitly rather than left implicit."
+    },
+    {
+      "issue": "How far the ideal-gas result delta-U = (3/2)nR deltaT can be pushed",
+      "positions": [
+        "For a monatomic ideal gas the internal energy is a function of temperature alone, giving C_V = (3/2)R exactly under that model.",
+        "OpenStax notes that measured molar heat capacities for diatomic and polyatomic gases differ, although C_p - C_V remains close to R for dilute gases."
+      ],
+      "resolution": "The worked example uses helium and says explicitly that the (3/2)nR result is a monatomic-ideal-gas model, not a general property of matter. The lesson names the assumption and its limits rather than generalising."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained no thermodynamics content at all: its In 30 Seconds, Why This Matters, College Version, vocabulary, worked example, and questions were topic-agnostic template prose that described 'a foundational concept' and 'a label on a toolbox drawer'. None of it was verifiable because none of it asserted anything about energy, systems, heat, or work.",
+    "The draft's vocabulary defined the topic circularly ('First Law Of Thermodynamics: A foundational Engineering Fundamentals concept covered in this lesson'), which the gate's non-circularity requirement rejects on its own terms.",
+    "The draft's eli10 block carried an analogy with no analogyLimits field."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire lesson body with sourced thermodynamics content and reordered it so the system, boundary, and surroundings are defined before any energy bookkeeping appears, which is where sign errors originate.",
+    "Added the explicit sign-convention warning (delta-U = Q - W versus delta-U = Q + W) as a Common Mistakes entry, as required by the assignment, and demonstrated numerically that both conventions agree.",
+    "Replaced the placeholder worked example with a two-leg closed-system p-V process whose every number was computed with python3 and cross-checked three ways (boundary work as rectangle area, internal energy from (3/2)nR deltaT, and enthalpy change equal to Q at constant pressure).",
+    "Added the explicit statement that the first law is silent about the direction of a process, that the second law is what addresses direction, and that this lesson does not cover the second law.",
+    "Added the required educational-material and not-engineering-design-guidance statements.",
+    "Raised estimatedMinutes from 8 to 13 to match the actual length of the finished lesson."
+  ],
+  "rightsIssues": [
+    "Every OpenStax page read carries a CC BY-NC-SA licence in its footer together with an explicit statement that the book may not be used in the training of large language models or otherwise ingested into large language models or generative AI offerings without OpenStax's permission. All OpenStax records are therefore held at REFERENCE_ONLY with aiIngestionAllowed false; the pages were consulted to verify facts, and no OpenStax wording is reproduced or paraphrase-followed in the lesson.",
+    "The LibreTexts pages from Introduction to Engineering Thermodynamics (Yan) are CC BY-NC-SA 4.0. The NonCommercial term makes reuse rights unsafe to assume for this project, so these records are also REFERENCE_ONLY and no wording is adapted.",
+    "The NASA Glenn Beginner's Guide pages are U.S. Government works but carry no explicit per-page reuse licence, so they are held at REFERENCE_ONLY in line with the other NASA Beginner's Guide records already in this project's registry. The pages could not be read through the ordinary fetcher because www1.grc.nasa.gov presents a certificate chain the fetcher will not verify; they were retrieved with curl and a browser user agent.",
+    "The MPEP is a U.S. Government publication with no reuse licence stated on the document; it is cited for one procedural statement and held at REFERENCE_ONLY.",
+    "No engineering standard (ASME, ASTM, ISO) was consulted or cited, and no allowable stress, design pressure, or code value appears anywhere in the lesson."
+  ],
+  "sourceRecords": [
+    {
+      "id": "openstax-university-physics-2-thermodynamic-systems",
+      "title": "University Physics Volume 2, 3.1 Thermodynamic Systems",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/3-1-thermodynamic-systems",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "Creative Commons Attribution-NonCommercial-ShareAlike (stated in the page footer); the page also states the book may not be ingested into large language models without OpenStax's permission",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the framing that a thermodynamic system is whatever body of matter or region whose thermodynamic properties are of interest, embedded in surroundings across an imagined boundary through which heat and work pass; supports state variables (p, V, T), the equation of state f(p,V,T)=0, and the extensive/intensive distinction. Its 'closed or isolated system' pairing was noted as looser than the engineering definitions and is recorded in conflictingEvidence. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-2-work-heat-and-internal-energy",
+      "title": "University Physics Volume 2, 3.2 Work, Heat, and Internal Energy",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/3-2-work-heat-and-internal-energy",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "Creative Commons Attribution-NonCommercial-ShareAlike (stated in the page footer); the page also states the book may not be ingested into large language models without OpenStax's permission",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports dW = p dV, W = integral from V1 to V2 of p dV, work as the area under the pV curve, the path dependence of work, internal energy as the sum of the mechanical energies of all the molecules in the system, and the monatomic-ideal-gas result E_int = (3/2)nRT used as an arithmetic input in the worked example. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-2-first-law-of-thermodynamics",
+      "title": "University Physics Volume 2, 3.3 First Law of Thermodynamics",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "Creative Commons Attribution-NonCommercial-ShareAlike (stated in the page footer); the page also states the book may not be ingested into large language models without OpenStax's permission",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports delta-E_int = Q - W as a statement of energy conservation, the explicit sign convention (W positive when work is done by the system, negative when done on it; Q positive when added, negative when removed), and the key logical point that although Q and W each depend on the thermodynamic path, their difference Q - W does not, which is why internal energy is a state function. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-2-thermodynamic-processes",
+      "title": "University Physics Volume 2, 3.4 Thermodynamic Processes",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/3-4-thermodynamic-processes",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "Creative Commons Attribution-NonCommercial-ShareAlike (stated in the page footer); the page also states the book may not be ingested into large language models without OpenStax's permission",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page, and separately retrieved the raw HTML with curl to read the section text directly. Supports the definition of a quasi-static process and the statement that all finite processes in nature are non-quasi-static so no path can be drawn for them; the definitions of isothermal (constant temperature, hyperbolic p proportional to 1/V for an ideal gas), isobaric (constant pressure), isochoric (constant volume), adiabatic (insulated, no heat crosses the boundary, expansion cools and compression heats), and cyclic processes; and the cyclic-process result delta-E_int = 0 with Q = W. Also supports the lesson's statement that the first law permits many states that are not observed in nature. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-2-heat-capacities-of-an-ideal-gas",
+      "title": "University Physics Volume 2, 3.5 Heat Capacities of an Ideal Gas",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/3-5-heat-capacities-of-an-ideal-gas",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "Creative Commons Attribution-NonCommercial-ShareAlike (stated in the page footer); the page also states the book may not be ingested into large language models without OpenStax's permission",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supplies the monatomic-ideal-gas molar heat capacities C_V = (3/2)R = 12.47 J/(mol K) and C_p = (5/2)R = 20.79 J/(mol K), Mayer's relation C_p = C_V + R with the caveat that it is approximately valid for all dilute gases, and the derivations dQ = n C_V dT at constant volume and dQ = n C_p dT at constant pressure. Used to justify the enthalpy cross-check in the worked example and to bound the monatomic assumption. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-chemistry-2e-enthalpy",
+      "title": "Chemistry 2e, 5.3 Enthalpy",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/chemistry-2e/pages/5-3-enthalpy",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (stated in the page footer); the page also states the book may not be ingested into large language models without OpenStax's permission",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. This is the load-bearing evidence that the competing sign convention is real and mainstream rather than a folk error: the page writes the first law as delta-U = q + w and states that w is positive if work is done on the system and negative if done by the system. Used for the Common Mistakes entry, the Compare/Contrast row, and question 4. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "libretexts-intro-eng-thermo-yan-system-and-surroundings",
+      "title": "Introduction to Engineering Thermodynamics, 1.3 System and Surroundings",
+      "provider": "Claire Yu Yan, University of British Columbia Okanagan, via BCcampus, hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Introduction_to_Engineering_Thermodynamics_(Yan)/01%3A_Basic_Concepts_and_Definitions/1.03%3A_System_and_surroundings",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Retrieved the page HTML with curl and a browser user agent and read the section text locally. Supports the engineering three-way classification the lesson teaches: a closed system holds a fixed amount of matter so only heat and work cross its boundary, illustrated with a piston-cylinder device whose boundary is the cylinder walls plus the lower face of the piston; an open system, also called a control volume, is a selected region in space that always exchanges mass with its surroundings and may or may not exchange heat or work; an isolated system exchanges neither mass nor energy and is an idealized, hypothetical system, since in reality no device is absolutely isolated. NonCommercial licence, so REFERENCE_ONLY and no wording adapted."
+    },
+    {
+      "id": "libretexts-intro-eng-thermo-yan-work",
+      "title": "Introduction to Engineering Thermodynamics, 4.4 Work (boundary work)",
+      "provider": "Claire Yu Yan, University of British Columbia Okanagan, via BCcampus, hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Introduction_to_Engineering_Thermodynamics_(Yan)/04%3A_The_First_Law_of_Thermodynamics_for_Closed_Systems/4.04%3A_Work",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Retrieved with curl and a browser user agent and read locally. Supports the term boundary work for work done at the boundary during expansion or compression, the quasi-equilibrium derivation giving W = integral of p dV and specific work w = integral of p dv, the graphical reading of both as the area under the process curve on p-V and p-v diagrams, the demonstration that three different compression paths between the same states give different work and are therefore path functions, and the common sign convention that expansion work is positive and compression work is negative. Also supports the isochoric result that boundary work is zero because the volume does not change. No value from its property tables was used. NonCommercial licence, so REFERENCE_ONLY."
+    },
+    {
+      "id": "libretexts-intro-eng-thermo-yan-first-law-closed-systems",
+      "title": "Introduction to Engineering Thermodynamics, 4.5 The First Law of Thermodynamics for Closed Systems",
+      "provider": "Claire Yu Yan, University of British Columbia Okanagan, via BCcampus, hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Introduction_to_Engineering_Thermodynamics_(Yan)/04%3A_The_First_Law_of_Thermodynamics_for_Closed_Systems/4.05%3A_The_first_law_of_thermodynamics_for_closed_systems",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Retrieved with curl and a browser user agent and read locally. Supports the first law as an energy conservation law in the bookkeeping form 'change in energy = in minus out'; the closed-system statements delta-E = E2 - E1 = Q - W and, when kinetic and potential energy changes are negligible, delta-U = U2 - U1 = Q - W; the explicit contrast table classifying heat and work as energy transfer mechanisms and path functions that are not properties of a system, against internal energy as a state function that is a property; the sign convention heat in positive, heat out negative, work out positive, work in negative; the cyclic result delta-U = 0; and the solution procedure that begins by drawing the system boundary and notes that how the system is set up can determine whether an energy transfer counts as heat or as work. That last point is the basis for the lesson's 'define the system first' framing. NonCommercial licence, so REFERENCE_ONLY."
+    },
+    {
+      "id": "libretexts-intro-eng-thermo-yan-enthalpy",
+      "title": "Introduction to Engineering Thermodynamics, 5.2 Enthalpy",
+      "provider": "Claire Yu Yan, University of British Columbia Okanagan, via BCcampus, hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Introduction_to_Engineering_Thermodynamics_(Yan)/05%3A_The_First_Law_of_Thermodynamics_for_a_Control_Volume/5.02%3A_Enthalpy",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports H = U + pV, specific enthalpy through H = m h, the statement that enthalpy combines internal energy with the flow work associated with a flowing fluid and is therefore the useful property for open systems, and, for an ideal gas, h = f(T) with delta-h = c_p (T2 - T1). Used for the enthalpy subsection and the flow-process motivation. NonCommercial licence, so REFERENCE_ONLY."
+    },
+    {
+      "id": "libretexts-intro-eng-thermo-yan-mass-energy-control-volume",
+      "title": "Introduction to Engineering Thermodynamics, 5.3 Mass and Energy Conservation Equations in a Control Volume",
+      "provider": "Claire Yu Yan, University of British Columbia Okanagan, via BCcampus, hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Introduction_to_Engineering_Thermodynamics_(Yan)/05%3A_The_First_Law_of_Thermodynamics_for_a_Control_Volume/5.03%3A_Mass_and_energy_conservation_equations_in_a_control_volume",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the steady-flow definition (thermodynamic properties within the control volume do not change with time at any point, though they may vary from point to point), the steady-flow mass balance sum of mdot_i = sum of mdot_e, and the steady-flow energy equation Qdot_cv + sum mdot_i (h_i + V_i^2/2 + g z_i) = Wdot_cv + sum mdot_e (h_e + V_e^2/2 + g z_e). Also supports the list of typical steady-flow devices to which it is applied: pipes, turbines, compressors, heat exchangers, expansion valves and mixing chambers. NonCommercial licence, so REFERENCE_ONLY."
+    },
+    {
+      "id": "nasa-bga-first-law-internal-energy",
+      "title": "First Law - Internal Energy (Beginner's Guide to Aeronautics, Guide to Rockets)",
+      "provider": "NASA Glenn Research Center",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/guide-to-rockets/first-law-internal-energy-3/",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Retrieved with curl and a browser user agent because the ordinary fetcher hits a TLS chain error on www1.grc.nasa.gov, matching the handling already recorded for other NASA Beginner's Guide records in this project. Supports the empirical route to internal energy that the lesson uses: the work done on or by a gas depends on the process path, the heat transferred likewise depends on the path, but observations of real gases show the difference between heat flow in and work done by depends only on the initial and final states, which is what motivates defining internal energy as a state variable. States the first law as E2 - E1 = Q - W with Q into the system and W done by the system, and that heat removed and work done on the system take negative signs. Also supports that heat and work cannot be stored or conserved independently because they depend on the process, that an adiabatic process is one with no heat transfer, and that the first law allows many states that are not found in nature while the second law explains that observation. U.S. Government work with no explicit page licence, so REFERENCE_ONLY."
+    },
+    {
+      "id": "nasa-bga-enthalpy",
+      "title": "Enthalpy (Beginner's Guide to Aeronautics)",
+      "provider": "NASA Glenn Research Center",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/enthalpy-2-2/",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Retrieved with curl and a browser user agent after the same TLS chain error. Supports the definition H = E + p V as a state variable built from existing state variables, and the constant-pressure derivation the lesson reproduces in its own worked example: substituting W = p (V2 - V1) into E2 - E1 = Q - W and regrouping gives (E2 + p V2) - (E1 + p V1) = Q, that is H2 - H1 = Q, with the page's own reminder that the result holds only for a constant-pressure process. Also supports the practical motivation that internal energy is hard to measure while temperature is easy, so enthalpy makes first-law problems for gases tractable. U.S. Government work with no explicit page licence, so REFERENCE_ONLY."
+    },
+    {
+      "id": "uspto-mpep-608-03-models-exhibits-specimens",
+      "title": "Manual of Patent Examining Procedure, Section 608.03, Models, Exhibits, Specimens",
+      "provider": "United States Patent and Trademark Office",
+      "url": "https://www.uspto.gov/web/offices/pac/mpep/s608.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "No reuse licence stated on the document; U.S. Government publication",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "The section-level HTML page returned only the 608.01 subsections to the fetcher, so the full Chapter 600 PDF at https://www.uspto.gov/web/offices/pac/mpep/mpep-0600.pdf (240 pages) was downloaded and text-extracted locally with pypdf. MPEP 608.03 states that with the exception of cases involving perpetual motion, a model is not ordinarily required by the Office to demonstrate the operability of a device, and that if operability is questioned the applicant must establish it to the examiner's satisfaction. Cited for exactly one point in the lesson: that the impossibility of a perpetual motion machine is settled enough to be written into examination procedure. No patent-law advice is given and no eligibility or utility standard is stated. REFERENCE_ONLY."
+    },
+    {
+      "id": "nist-sp330-2019-section-2-si-units",
+      "title": "The International System of Units (SI), 2019 Edition (NIST SP 330), Section 2: The International System of Units",
+      "provider": "National Institute of Standards and Technology",
+      "url": "https://www.nist.gov/pml/special-publication-330/sp-330-section-2",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Existing project source record, reused with the same id and URL. Used here for one point only: its Table 4 lists the joule as the coherent derived SI unit of energy, work and amount of heat, with dimensions kg m^2 s^-2, which is why every term in delta-U = Q - W is expressed in joules and why the worked example carries J and kJ through every step. REFERENCE_ONLY."
+    }
+  ]
+}

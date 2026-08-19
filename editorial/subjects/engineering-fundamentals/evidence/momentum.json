@@ -1,0 +1,438 @@
+{
+  "topicId": "engineering-fundamentals:mechanics:momentum",
+  "subjectId": "engineering-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Linear momentum p = m v as a vector quantity, and its SI unit",
+      "Newton's second law in momentum form, F_net = dp/dt, as the law momentum obeys",
+      "Impulse as the time integral of force, the impulse-momentum theorem J = delta p, and average force F_ave = J/delta t",
+      "Why extending collision duration reduces average force for a fixed momentum change, and the protective devices built on that",
+      "Conservation of total system momentum when the net external force is zero, and the internal/external distinction",
+      "The precision that momentum is conserved for the system, not for each body",
+      "Elastic, inelastic, and perfectly inelastic collisions; momentum conserved in all, kinetic energy only in elastic",
+      "Coefficient of restitution as the 0-to-1 measure spanning those cases"
+    ],
+    "supporting": [
+      "Center of mass, total momentum as M v_CM, and F_ext = M a_CM",
+      "Variable-mass systems and rocket propulsion, thrust as exhaust momentum flux, the rocket equation",
+      "Angular momentum l = r x p, L = I omega, its conservation under zero net external torque, and the skater illustration including the work-energy correction",
+      "Idealizations and their limits; regulatory scope of occupant protection"
+    ],
+    "outOfScope": [
+      "Two- and three-dimensional collision solving and scattering geometry",
+      "Detailed work-energy methods, which belong to the parallel work-and-energy topic",
+      "Kinematics and free-body construction, already covered by force-and-motion and free-body-diagrams",
+      "Rigid-body dynamics method and equation-of-motion setup, which belong to the parallel dynamics topic",
+      "Nozzle thermodynamics, specific impulse tables, and staging",
+      "Any specific crashworthiness design value, injury criterion, or test procedure"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Linear momentum is p = m v; it is a vector because velocity is, and its SI unit is kg*m/s.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "openstax-university-physics-1-linear-momentum",
+        "nist-sp811-chapter-4-classes-of-si-units"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Newton's second law in its general form states that the net external force equals the rate of change of momentum, F_net = dp/dt; F_net = m a is the constant-mass special case.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "openstax-university-physics-1-newtons-second-law",
+        "openstax-university-physics-1-rocket-propulsion"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Impulse is the time integral of force, J = integral F(t) dt, and the impulse-momentum theorem states that the impulse applied to a system equals its change in momentum, J = delta p.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "openstax-university-physics-1-impulse-and-collisions"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Because the newton is kg*m*s^-2, the newton second is dimensionally identical to kg*m/s, so impulse and momentum share one unit.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nist-sp811-chapter-4-classes-of-si-units"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "For a fixed change in momentum, the average force is J/delta t, so lengthening the collision duration reduces the average force in exact inverse proportion; the momentum change in a crash is the same with or without an airbag while the force is not.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "openstax-university-physics-1-impulse-and-collisions"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The total momentum of a system is conserved when the net external force on it is zero; internal forces cannot change it because their contributions cancel.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "openstax-university-physics-1-conservation-of-linear-momentum",
+        "openstax-university-physics-1-newtons-second-law"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Conservation applies to the system total: individual bodies' momenta change during a collision, and it is only their vector sum that is constant.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "openstax-university-physics-1-conservation-of-linear-momentum"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Momentum is conserved in elastic, inelastic, and perfectly inelastic collisions alike, whereas total kinetic energy is conserved only in elastic collisions; in a perfectly inelastic collision the bodies move off as one object with the maximum kinetic-energy loss.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "openstax-university-physics-1-types-of-collisions",
+        "libretexts-mechanics-map-one-dimensional-collisions"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The coefficient of restitution is a dimensionless number from 0 to 1, given for two bodies by e = -(v_Af - v_Bf)/(v_Ai - v_Bi), with 1 the elastic limit and 0 the perfectly inelastic limit.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-mechanics-map-coefficient-of-restitution",
+        "libretexts-mechanics-map-one-dimensional-collisions"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The center of mass is the mass-weighted average position; total momentum equals M v_CM and the net external force equals M a_CM, so the center of mass moves as a single particle carrying the total mass.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "openstax-university-physics-1-center-of-mass"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A rocket is a variable-mass system: exhaust carries momentum away and the rocket's momentum changes by an equal and opposite amount; the momentum-flux part of thrust is exhaust speed times mass flow rate, and NASA's rocket thrust equation is F = mdot*Ve + (pe - p0)*Ae.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openstax-university-physics-1-rocket-propulsion",
+        "nasa-bga-rocket-thrust-equations"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Constant thrust produces increasing acceleration as propellant is consumed, and integrating over the burn gives the rocket equation delta v = u ln(m_0/m).",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "openstax-university-physics-1-rocket-propulsion"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Angular momentum is l = r x p for a particle, with SI unit kg*m^2/s and magnitude L = I omega for a rigid body on a fixed axis; net external torque equals dL/dt, so angular momentum is conserved when that torque is zero.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "openstax-university-physics-1-angular-momentum",
+        "openstax-university-physics-1-conservation-of-angular-momentum"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "When a skater pulls her arms in, the moment of inertia falls and angular speed rises to hold L constant, and rotational kinetic energy rises by the factor I/I' because the skater does mechanical work pulling the limbs inward.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "openstax-university-physics-1-conservation-of-angular-momentum"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Occupant crash protection for U.S. passenger vehicles is governed by FMVSS No. 208 at 49 CFR 571.208, which specifies performance requirements in terms of forces and accelerations measured on anthropomorphic dummies in test crashes, plus equipment requirements for active and passive restraint systems.",
+      "claimType": "LEGAL",
+      "sourceIds": [
+        "ecfr-49-cfr-571-208-occupant-crash-protection"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Standard gravity g_n is exactly 9.806 65 m/s^2, used here only to express the worked example's average forces as multiples of body weight.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "nist-cuu-standard-acceleration-of-gravity"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Worked example, part 1: 1,600 kg at 15.0 m/s striking a stationary 1,200 kg and sticking gives p = 24,000 kg*m/s before and after, v_f = 8.571 m/s, K from 180,000 J to 102,857 J, and 77,143 J (42.9%) dissipated; run elastically the same pair gives v_1f = 2.14 m/s and v_2f = 17.1 m/s with p = 24,000 kg*m/s and K = 180,000 J both preserved and e = 1.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "openstax-university-physics-1-types-of-collisions",
+        "libretexts-mechanics-map-one-dimensional-collisions",
+        "openstax-university-physics-1-conservation-of-linear-momentum"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Worked example, part 2: an 80 kg occupant at 15.0 m/s has |delta p| = 1,200 N*s, giving average forces of 60.0 kN, 20.0 kN and 10.0 kN for stopping times of 0.020 s, 0.060 s and 0.120 s - about 76, 25 and 13 times the occupant's 785 N weight, at average decelerations of 750, 250 and 125 m/s^2.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "openstax-university-physics-1-impulse-and-collisions",
+        "nist-cuu-standard-acceleration-of-gravity"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Naming of collision types differs between physics and engineering dynamics texts.",
+      "positions": [
+        "OpenStax University Physics distinguishes an inelastic collision (0 < K_f < K_i) from a perfectly inelastic collision (bodies stick together).",
+        "The Mechanics Map engineering dynamics chapters use 'inelastic' for the stick-together case and 'semi-elastic' for everything between elastic and inelastic."
+      ],
+      "resolution": "The physical categories are identical and only the labels differ. The lesson teaches the physics convention because the topic sits in a mechanics unit built on OpenStax, and explicitly warns readers that engineering dynamics texts may use 'inelastic' for the stick-together case, so they should check the author's usage before answering a problem."
+    },
+    {
+      "issue": "How much of rocket thrust the simple momentum-flux expression accounts for.",
+      "positions": [
+        "OpenStax presents thrust as the rate of change of the exhaust momentum, exhaust speed times mass flow rate.",
+        "NASA Glenn's rocket thrust equation adds a nozzle pressure-area term: F = mdot*Ve + (pe - p0)*Ae."
+      ],
+      "resolution": "No real conflict. The OpenStax treatment is the idealised momentum-flux term, which is exact only when the nozzle exit pressure equals ambient pressure - the single design condition NASA identifies. The lesson gives the momentum-flux term as the conceptual result and names the pressure-area term as the correction, citing NASA for the full equation."
+    },
+    {
+      "issue": "Whether momentum is exactly conserved across a real collision.",
+      "positions": [
+        "Conservation requires the net external force on the system to be exactly zero.",
+        "Gravity, normal forces and friction act on colliding vehicles throughout the impact."
+      ],
+      "resolution": "The lesson states conservation as exact in principle and then names the approximation actually being made: over the few tens of milliseconds of contact the external impulse is negligible next to the internal contact impulse, so momentum conservation across a collision is an excellent approximation with a stated reason rather than an exact property of the scene."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained no substantive claims about momentum at all - it was subject-agnostic boilerplate describing momentum as 'a foundational concept' that helps students 'organize information'. Nothing in it was verifiable because nothing in it was specific.",
+    "The draft's Eli-10 analogy ('a label on a toolbox drawer', 'reading a map legend') carried no physics and was discarded.",
+    "The draft's worked example described a student reading a scenario rather than performing any calculation, and was replaced entirely."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire draft with a physics lesson: p = m v as a vector, impulse as the time integral of force, and the impulse-momentum theorem.",
+    "Added the topic's engineering payoff - fixed delta p, variable delta t - and made it the worked example, with average forces of 60.0, 20.0 and 10.0 kN computed in Python for stopping times of 0.020, 0.060 and 0.120 s.",
+    "Added a fully executed collision analysis checking momentum before and after and computing the 77.1 kJ (42.9%) of kinetic energy dissipated, plus the elastic version of the same collision as a contrast case.",
+    "Made the momentum-versus-kinetic-energy distinction the lead Compare/Contrast entry, as the single most-confused point in the topic.",
+    "Added the precision that momentum is conserved for the system rather than for each body, with the internal/external force distinction that makes it true.",
+    "Added the coefficient of restitution with its 0-to-1 range, plus a warning that engineering dynamics and physics texts label collision types differently.",
+    "Added center of mass, variable-mass systems with the NASA thrust equation, and a brief, correct treatment of angular momentum including the point that the skater's rotational kinetic energy rises because she does work.",
+    "Built on force-and-motion rather than restating it: that lesson already establishes F_net = dp/dt, so this one cites it once and proceeds.",
+    "Added the educational-material statement and an explicit note that nothing here is guidance for designing occupant-protection systems, which are governed by FMVSS No. 208 at 49 CFR 571.208."
+  ],
+  "rightsIssues": [
+    "All fifteen source records are held at REFERENCE_ONLY. No source wording is reproduced anywhere in the lesson.",
+    "OpenStax University Physics: per-book reuse terms were not verified for this subject, so the records are REFERENCE_ONLY, matching how they are already registered for force-and-motion and free-body-diagrams.",
+    "The two Mechanics Map pages state CC BY-SA 4.0. The ShareAlike condition is not relied on here because no wording is reused; the records are held at REFERENCE_ONLY.",
+    "NASA Glenn's rocket thrust page is a U.S. Government work but claims no explicit licence on the page, so it is held at REFERENCE_ONLY and only the equation and the physical facts are stated.",
+    "49 CFR 571.208 is federal regulation and not subject to copyright; it is cited for scope only, with no regulatory text reproduced and no design value quoted from it.",
+    "No engineering standard (ASME, ASTM, SAE, ISO) text, table, or allowable value is reproduced or paraphrased anywhere in this lesson."
+  ],
+  "sourceRecords": [
+    {
+      "id": "openstax-university-physics-1-linear-momentum",
+      "title": "University Physics Volume 1, 9.1 Linear Momentum",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/9-1-linear-momentum",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the definition p = m v, the explicit statement that momentum is a vector because velocity is (and that this distinguishes it from scalar kinetic energy), and the SI unit kg*m/s as used in the page's own examples. Per-book reuse terms were not verified for this subject, so the record is held at REFERENCE_ONLY and no wording is reproduced."
+    },
+    {
+      "id": "openstax-university-physics-1-impulse-and-collisions",
+      "title": "University Physics Volume 1, 9.2 Impulse and Collisions",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/9-2-impulse-and-collisions",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports impulse as the time integral of force, J = integral of F(t) dt; the impulse-momentum theorem J = delta p; the average-force relation F_ave = J / delta t; and the page's own conclusion that the momentum change in a crash is the same with or without an airbag while the force is vastly different. The lesson's numbers are its own, computed in Bash; none of the page's example values are reproduced. REFERENCE_ONLY."
+    },
+    {
+      "id": "openstax-university-physics-1-conservation-of-linear-momentum",
+      "title": "University Physics Volume 1, 9.3 Conservation of Linear Momentum",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/9-3-conservation-of-linear-momentum",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the law of conservation of momentum for a closed system, the requirement that the net external force on the system be zero (external forces may exist provided they cancel), the definition of the system as the collection of objects whose motion is of interest, the statement that internal forces cannot change total momentum because the changes sum to zero, and the critical precision that each body's momentum changes while the total does not. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-1-types-of-collisions",
+      "title": "University Physics Volume 1, 9.4 Types of Collisions",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/9-4-types-of-collisions",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the three-way classification used in the lesson: elastic (total kinetic energy conserved, K_f = K_i), inelastic (0 < K_f < K_i), and perfectly inelastic (bodies stick together, forming one composite object, maximum kinetic-energy loss consistent with momentum conservation), with momentum conserved in all three. Also supplies the one-dimensional elastic final-velocity formulas used to generate the lesson's elastic contrast case. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-1-center-of-mass",
+      "title": "University Physics Volume 1, 9.6 Center of Mass",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/9-6-center-of-mass",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the center of mass as the mass-weighted average position r_CM = (1/M) sum m_j r_j, the result that total momentum equals M v_CM, and the statement that the net external force equals M a_CM so the center of mass moves as though all mass were concentrated there and all external force applied there, with internal forces unable to change it. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-1-rocket-propulsion",
+      "title": "University Physics Volume 1, 9.7 Rocket Propulsion",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/9-7-rocket-propulsion",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the treatment of a rocket as a variable-mass system, the statement that the rocket's momentum changes by the negative of the momentum carried away by the exhaust, thrust as the rate of change of the exhaust momentum (exhaust speed times mass flow rate), the point that constant thrust produces increasing acceleration because mass falls, and the rocket equation delta v = u ln(m_0/m). REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-1-angular-momentum",
+      "title": "University Physics Volume 1, 11.2 Angular Momentum",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/11-2-angular-momentum",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the definition of a particle's angular momentum as l = r x p, the SI unit kg*m^2/s, the rigid-body magnitude L = I omega for rotation about a fixed axis, and the rotational analogue of the second law, dl/dt = sum of torques. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-1-conservation-of-angular-momentum",
+      "title": "University Physics Volume 1, 11.3 Conservation of Angular Momentum",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/11-3-conservation-of-angular-momentum",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports conservation of angular momentum about a point when the net external torque about that point is zero, the precision that the total is conserved while individual angular momenta may change, and the skater analysis: pulling the arms in lowers the moment of inertia, angular speed rises to hold L constant, and rotational kinetic energy rises by the factor I/I' because the skater does mechanical work pulling the limbs inward. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-1-newtons-second-law",
+      "title": "University Physics Volume 1, 5.3 Newton's Second Law",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the restriction of the force sum to external forces and the page's own statement that Newton stated the second law in terms of momentum, F_net = dp/dt, which reduces to F_net = m a only when mass is constant. Reused here exactly as registered for the force-and-motion topic. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "libretexts-mechanics-map-coefficient-of-restitution",
+      "title": "Mechanics Map, 10.2 Surface Collisions and the Coefficient of Restitution",
+      "provider": "Jacob Moore and contributors, Mechanics Map project (Pennsylvania State University), hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_Map_(Moore_et_al.)/10:_Impulse_and_Momentum_in_Particles/10.02:_Surface_Collisions_and_the_Coefficient_of_Restitution",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0 (as stated at the foot of the page)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the coefficient of restitution as a dimensionless number from 0 to 1 measuring the bounciness of the colliding pair, epsilon = -v_f/v_i for a body rebounding from a fixed surface (normal components for oblique impact), with 1 the elastic limit and 0 the no-rebound limit. Held at REFERENCE_ONLY because the ShareAlike condition is not relied on here; no wording reproduced."
+    },
+    {
+      "id": "libretexts-mechanics-map-one-dimensional-collisions",
+      "title": "Mechanics Map, 10.3 One-Dimensional Particle Collisions",
+      "provider": "Jacob Moore and contributors, Mechanics Map project (Pennsylvania State University), hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_Map_(Moore_et_al.)/10:_Impulse_and_Momentum_in_Particles/10.03:_One-Dimensional_Particle_Collisions",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0 (as stated at the foot of the page)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the one-dimensional momentum balance m_A v_Af + m_B v_Bf = m_A v_Ai + m_B v_Bi for a collision with no external impulse, and the two-body restitution equation epsilon = -(v_fA - v_fB)/(v_iA - v_iB). Also the source for the terminology conflict recorded in this packet: engineering dynamics texts of this kind call the stick-together case simply 'inelastic' and the intermediate case 'semi-elastic', where physics texts say 'perfectly inelastic' and 'inelastic'. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "nasa-bga-rocket-thrust-equations",
+      "title": "Rocket Thrust Equations (Beginner's Guide to Rockets)",
+      "provider": "NASA Glenn Research Center",
+      "url": "https://www.grc.nasa.gov/WWW/K-12/airplane/rktthsum.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Fetched with curl and a browser user agent after the HTTPS certificate chain blocked the ordinary fetcher. States that thrust is produced according to Newton's third law, that the thrust depends on mass flow rate, nozzle exit velocity and exit pressure, and gives the rocket thrust equation F = mdot * Ve + (pe - p0) * Ae. Used for the lesson's statement that the momentum-flux term mdot*Ve is only part of real engine thrust, the remainder being the pressure-area term. U.S. Government work; no explicit licence claimed on the page, so held at REFERENCE_ONLY."
+    },
+    {
+      "id": "nist-sp811-chapter-4-classes-of-si-units",
+      "title": "NIST Guide to the SI, Chapter 4: The Two Classes of SI Units and the SI Prefixes",
+      "provider": "National Institute of Standards and Technology (NIST Special Publication 811, 2008 edition)",
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused exactly as registered for the force-and-motion topic. The guide's table of coherent derived units gives the newton as m . kg . s^-2, which is what makes N*s and kg*m/s the same unit and lets impulse and momentum be added and compared directly. REFERENCE_ONLY."
+    },
+    {
+      "id": "nist-cuu-standard-acceleration-of-gravity",
+      "title": "Standard acceleration of gravity (g_n) - CODATA value page",
+      "provider": "NIST Physical Measurement Laboratory, Fundamental Physical Constants",
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?gn",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused exactly as registered for the force-and-motion topic. Gives g_n = 9.806 65 m/s^2, exact by definition. Used only to convert the worked example's average forces into multiples of the occupant's weight. REFERENCE_ONLY."
+    },
+    {
+      "id": "ecfr-49-cfr-571-208-occupant-crash-protection",
+      "title": "49 CFR 571.208 - Standard No. 208; Occupant crash protection",
+      "provider": "National Highway Traffic Safety Administration, via the Electronic Code of Federal Regulations (eCFR)",
+      "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/subpart-B/section-571.208",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "The ordinary fetcher was redirected away from ecfr.gov, so the section was read through the eCFR content renderer API with a browser user agent; the canonical eCFR URL is registered. Sections S1-S3 state that the standard specifies performance requirements for the protection of vehicle occupants in crashes, that its purpose is to reduce deaths and injury severity by specifying crashworthiness requirements in terms of forces and accelerations measured on anthropomorphic dummies in test crashes and equipment requirements for active and passive restraint systems, and that it applies to passenger cars, multipurpose passenger vehicles, trucks and buses, with S9 covering pressure vessels and explosive devices used in occupant protection systems. Used solely to support the lesson's scope statement that occupant protection is governed by regulation and prescribed test procedure, not by the impulse arithmetic taught here."
+    }
+  ]
+}

@@ -1,0 +1,436 @@
+{
+  "topicId": "engineering-fundamentals:electrical-fundamentals:series-and-parallel-circuits",
+  "subjectId": "engineering-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "series defined by a forced common current; parallel defined by a shared pair of nodes and therefore a shared voltage",
+      "topology decided by the physics, not by the appearance of the schematic",
+      "series: current identical throughout, voltages add, R_S = sum of resistances, one open kills the string",
+      "parallel: voltage identical across branches, currents add, reciprocal-sum equivalent, product-over-sum and R/N shortcuts",
+      "the parallel equivalent is always below the smallest branch, and why",
+      "conductance in siemens and its direct addition in parallel",
+      "Kirchhoff's current law from charge conservation and voltage law from energy conservation, with sign conventions",
+      "voltage divider and current divider derived from the definitions, including the two-branch restriction on the closed-form current divider",
+      "stepwise reduction and expansion of combination circuits",
+      "short circuits and open circuits and what each does to current and voltage in series and in parallel",
+      "why household branch circuits are parallel",
+      "node labeling, a reference node, and the resulting placement of ammeters and voltmeters",
+      "verification of a solved circuit by KCL, KVL and a power balance"
+    ],
+    "supporting": [
+      "the ideal-conductor and ideal-source model and where it stops describing real wiring",
+      "significant figures in reported circuit results",
+      "the mention that non-reducible networks such as bridges need KCL and KVL as a system"
+    ],
+    "outOfScope": [
+      "the definitions and physical meaning of voltage, current and resistance (owned by voltage-current-and-resistance)",
+      "the derivation, statement and limits of Ohm's law V = IR, and ohmic versus non-ohmic behaviour (owned by ohm-s-law)",
+      "the power relations P = VI, P = I^2 R, P = V^2/R and their treatment, energy use and efficiency (owned by electrical-power); P = VI is used here only as an independent verification step",
+      "AC circuits, impedance, reactance and phasors",
+      "capacitors, inductors and RC transient response",
+      "mesh and nodal analysis as formal methods, Thevenin and Norton equivalents, and superposition",
+      "internal resistance of sources and terminal-voltage effects",
+      "semiconductor devices and any non-linear element",
+      "any wiring practice, installation procedure, conductor sizing, protective-device rating or electrical code value"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Two elements are in series when the same current is forced through both, with no junction between them that could divert current; the current is the same everywhere in a series connection.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-fiore-dc-the-series-connection",
+        "openstax-university-physics-2-resistors-in-series-and-parallel"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Two elements are in parallel when both connect between the same two nodes, and consequently the voltage across each element of a parallel group is the same.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-fiore-dc-the-parallel-connection",
+        "openstax-university-physics-2-resistors-in-series-and-parallel"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Topology is determined by the physical current path and node connections, not by how the schematic is drawn; elements that look arranged in a line or side by side need not be series or parallel, and two elements carrying equal currents are not thereby in series.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-fiore-dc-the-series-connection",
+        "libretexts-fiore-dc-the-parallel-connection",
+        "libretexts-fiore-dc-series-parallel-connections"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The series equivalent resistance is the sum of the individual resistances, R_S = R_1 + R_2 + ... + R_N.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openstax-university-physics-2-resistors-in-series-and-parallel"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The parallel equivalent resistance is the reciprocal of the sum of the reciprocals, R_P = (1/R_1 + ... + 1/R_N)^-1; for two resistors it reduces to R_1 R_2/(R_1 + R_2), and for N identical resistors to R/N. Conductances add directly in parallel.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openstax-university-physics-2-resistors-in-series-and-parallel",
+        "libretexts-fiore-dc-combining-parallel-components"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The equivalent resistance of a parallel group is always less than the smallest individual resistance in that group.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openstax-university-physics-2-resistors-in-series-and-parallel",
+        "libretexts-fiore-dc-combining-parallel-components"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Kirchhoff's current law states that the currents entering a node equal the currents leaving it, and it follows from conservation of charge, since charge cannot accumulate at a node. A node is a connection region within which the voltage is the same in the ideal model.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openstax-university-physics-2-kirchhoffs-rules",
+        "libretexts-fiore-dc-kirchhoffs-current-law"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Kirchhoff's voltage law states that the algebraic sum of potential changes around any closed loop is zero, equivalently that voltage rises equal voltage drops, and it follows from conservation of energy.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openstax-university-physics-2-kirchhoffs-rules",
+        "libretexts-fiore-dc-kirchhoffs-voltage-law"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The voltage divider relation V = E x R_of_interest / R_total gives each element of a series loop a share of the source voltage in direct proportion to its resistance; it follows from the common series current together with V = IR.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-fiore-dc-series-analysis"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Current divides among parallel branches in proportion to conductance, that is in inverse proportion to resistance; the closed form I_R1 = I_total x R_2/(R_1 + R_2) is valid only for exactly two branches, with the opposite resistance in the numerator.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-fiore-dc-parallel-analysis"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A combination (series-parallel) circuit is analyzed by identifying unambiguously series or unambiguously parallel sub-groups, replacing each with its equivalent, repeating until one equivalent resistance remains, and then expanding back outward to recover branch voltages and currents.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openstax-university-physics-2-resistors-in-series-and-parallel",
+        "libretexts-fiore-dc-series-parallel-connections"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A short circuit is a low-resistance path between the terminals of a voltage source; the resulting current can convert electrical energy into thermal energy faster than it can be safely dissipated, which is the thermal hazard that fuses and circuit breakers exist to limit.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openstax-university-physics-2-household-wiring-and-electrical-safety"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "An open anywhere in a series path leaves no path for current, so no current flows in any element of that string; an open in one branch of a parallel group stops only that branch, because the remaining branches still span the same node pair.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-fiore-dc-the-series-connection",
+        "libretexts-fiore-dc-the-parallel-connection"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Household loads are connected in parallel, so each sees the same supply voltage and can be switched independently, while the branch currents add in the supply conductors.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openstax-university-physics-2-household-wiring-and-electrical-safety",
+        "libretexts-fiore-dc-the-parallel-connection"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "An ammeter is connected in series with the element measured and must have very low resistance; a voltmeter is connected in parallel with the element and must have very high resistance, and both perturb the circuit when non-ideal.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openstax-university-physics-2-electrical-measuring-instruments"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The ampere is an SI base unit; the volt (W/A), the ohm (V/A), the siemens (A/V) and the watt (J/s) are SI derived units with special names.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nist-sp811-chapter-4-two-classes-of-si-units"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Worked-example result, computed in exact rational arithmetic: for a 15.0 V ideal source with R1 = 100 ohm in series, R2 = 300 ohm parallel with R3 = 200 ohm, and R4 = 30.0 ohm in series, the parallel pair is 120 ohm, R_total = 250 ohm, I_total = 60.0 mA, the element voltages are 6.00 V, 7.20 V and 1.80 V (summing to 15.00 V), the branch currents are 24.0 mA and 36.0 mA (summing to 60.0 mA), the node voltages relative to the return node are 15.00 V, 9.00 V, 1.80 V and 0 V, and the resistor powers 0.360 W, 0.1728 W, 0.2592 W and 0.108 W sum exactly to the source power of 0.900 W.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "openstax-university-physics-2-resistors-in-series-and-parallel",
+        "libretexts-fiore-dc-combining-parallel-components",
+        "openstax-university-physics-2-kirchhoffs-rules",
+        "libretexts-fiore-dc-series-parallel-connections"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Question-bank arithmetic, all executed in exact rational arithmetic: 6.0 ohm parallel with 3.0 ohm is 2.0 ohm; a 9.0 V source across 2.0 kohm plus 4.0 kohm in series puts 6.0 V across the 4.0 kohm resistor at a common current of 1.5 mA; 50 mA into 100 ohm parallel with 400 ohm splits as 40 mA and 10 mA; and a 20.0 V source across 7.0 ohm in series with 12.0 ohm parallel to 4.0 ohm gives a 10.0 ohm total, 2.00 A total, 6.00 V across the pair, 0.500 A in the 12.0 ohm branch and 1.50 A in the 4.0 ohm branch, with powers 28.0 W, 3.00 W and 9.00 W summing to the 40.0 W delivered.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "libretexts-fiore-dc-combining-parallel-components",
+        "libretexts-fiore-dc-series-analysis",
+        "libretexts-fiore-dc-parallel-analysis",
+        "libretexts-fiore-dc-series-parallel-connections"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "How the current divider rule should be stated for more than two parallel branches.",
+      "positions": [
+        "Fiore gives the closed form I_R1 = I_total x R_2/(R_1 + R_2) and states that it is valid only when just two resistors are involved.",
+        "The same section states the general principle that current divides in proportion to conductance, which extends to any number of branches."
+      ],
+      "resolution": "The lesson states the two-resistor closed form with its restriction attached, states the conductance-share generalisation for three or more branches, and adds a common-mistake entry about misapplying the two-resistor form. No general resistance-ratio formula is asserted, because none was read in a verified source."
+    },
+    {
+      "issue": "Whether Kirchhoff's laws should be presented as conservation statements or as empirical circuit rules.",
+      "positions": [
+        "Fiore states both laws without explicitly naming an underlying conservation principle.",
+        "OpenStax explicitly derives the junction rule from charge conservation and the loop rule from energy conservation."
+      ],
+      "resolution": "The lesson attributes the conservation framing to OpenStax, which states it directly, and cites Fiore only for the statements of the laws themselves and the definition of a node."
+    },
+    {
+      "issue": "How far the lesson should go into household wiring given the subject's safety caution.",
+      "positions": [
+        "OpenStax section 10.6 contains hazard thresholds, protective-device behaviour and wiring detail.",
+        "The subject source map forbids anything a reader could apply to a real electrical installation."
+      ],
+      "resolution": "Only the topology claim (loads in parallel so each sees the same supply voltage and switches independently) and the conceptual definitions of a short and an open were taken. No current-through-the-body thresholds, no protective-device ratings, no conductor detail and no procedure appear in the lesson, and an explicit educational-material-not-design-guidance statement was added."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft made no claim about circuits at all. Its body text was subject-agnostic boilerplate ('Series And Parallel Circuits is a concept students use to organize information') naming no topology, no formula, no unit and no law.",
+    "The draft's Eli-10 material ('a label on a toolbox drawer', 'reading a map legend') described the act of using a definition rather than any circuit behaviour, and carried no analogy-limits statement at all.",
+    "The draft's worked example described a student reading a scenario; it contained no circuit, no numbers and nothing to verify.",
+    "The draft's quick-check items tested generic study habits rather than circuit content and offered three options each rather than four."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire draft with sourced circuit content organised around the physical definitions of series and parallel.",
+    "Corrected the title casing from 'Series And Parallel Circuits' to 'Series and Parallel Circuits'.",
+    "Added the combination worked example with every value computed in exact rational arithmetic in Python, verified independently by KCL, KVL and a power balance that closes to 0.900 W exactly.",
+    "Added the parallel-equivalent-below-the-smallest-branch result and the forgotten-inversion error to Common Mistakes, as the assignment required.",
+    "Rewrote all five questions with four options each, executed arithmetic, difficulty, skill, explanation and source ids.",
+    "Added the subject-required statement that the lesson is educational material and not wiring, installation or design guidance.",
+    "Scoped out voltage, current, resistance, Ohm's law and the power formulas, which belong to the three sibling topics in this unit, using P = VI only as a verification step."
+  ],
+  "rightsIssues": [
+    "All eight Fiore pages are CC BY-NC-SA 4.0, as stated on each page. The non-commercial term makes reuse unsafe for this project, so every Fiore record is held at REFERENCE_ONLY and no wording, figure, table or worked example from those pages is reproduced; only the facts were extracted and rewritten.",
+    "OpenStax per-book reuse terms were not verified for this subject, so the four OpenStax records are held at REFERENCE_ONLY and no wording is reproduced.",
+    "NIST SP 811 is held at REFERENCE_ONLY; only the unit relationships from Tables 1 and 3 are used, restated in the lesson's own words.",
+    "No engineering standard and no electrical code (NFPA 70, IEC, IEEE) was read or cited, and no ampacity, breaker rating, conductor size or other code value appears anywhere in the lesson.",
+    "All worked-example and question values are fictitious teaching numbers chosen by the writer, not values taken from any source's exercises."
+  ],
+  "sourceRecords": [
+    {
+      "id": "openstax-university-physics-2-resistors-in-series-and-parallel",
+      "title": "University Physics Volume 2, 10.2 Resistors in Series and Parallel",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the series connection as one in which current flows through the resistors sequentially with the same current in each; the parallel connection as one in which all leads on one side are joined and all leads on the other side are joined, giving identical voltage across each resistor; the series equivalent R_S = R_1 + R_2 + ... + R_N; the parallel equivalent R_P = (sum of 1/R_i)^-1; the explicit statement that R_P is less than the smallest of the individual resistances; and the stepwise reduction of combination circuits to a single equivalent resistance. OpenStax per-book reuse terms were not verified for this subject, so the record is held at REFERENCE_ONLY and no wording is reproduced."
+    },
+    {
+      "id": "openstax-university-physics-2-kirchhoffs-rules",
+      "title": "University Physics Volume 2, 10.3 Kirchhoff's Rules",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the junction rule (sum of currents entering a junction equals the sum leaving, sum I_in = sum I_out) as a consequence of charge conservation; the loop rule (algebraic sum of potential changes around any closed loop is zero, sum V = 0) as a consequence of energy conservation; the loop-rule sign conventions used in the lesson (a drop -IR when traversing a resistor along the assumed current direction, a rise +IR against it, +V passing a source from the negative to the positive terminal); and the statement that circuits not reducible by series and parallel steps are solved by writing KCL and KVL as a system. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-2-electrical-measuring-instruments",
+      "title": "University Physics Volume 2, 10.4 Electrical Measuring Instruments",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/10-4-electrical-measuring-instruments",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the claim that an ammeter is placed in series with the element being measured, because series elements share the same current, and must have very low resistance; that a voltmeter is connected in parallel with the element, because parallel elements share the same potential difference, and must have very large resistance; and the direction of the error introduced when either is non-ideal. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-2-household-wiring-and-electrical-safety",
+      "title": "University Physics Volume 2, 10.6 Household Wiring and Electrical Safety",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/10-6-household-wiring-and-electrical-safety",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the definition of a short circuit as a low-resistance path between the terminals of a voltage source; the thermal hazard arising when electrical energy is converted to thermal energy faster than it can be safely dissipated, with the I^2 R_wire dependence; the role of fuses and circuit breakers in limiting excessive current; and the parallel connection of household loads. Used only for the conceptual explanation of why branch circuits are parallel and what shorts and opens do. No wiring procedure, no code value and no installation guidance was taken from it or is given in the lesson. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "libretexts-fiore-dc-the-series-connection",
+      "title": "DC Electrical Circuit Analysis: A Practical Approach, 3.3 The Series Connection",
+      "provider": "James M. Fiore, Mohawk Valley Community College (Engineering LibreTexts)",
+      "url": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/DC_Electrical_Circuit_Analysis_-_A_Practical_Approach_(Fiore)/03%3A_Series_Resistive_Circuits/3.03%3A_The_Series_Connection",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page (license stated on the page as CC BY-NC-SA 4.0). Supports the definition of a series connection as one in which the current through each component must be the same; the statement that the current is the same everywhere in a series connection; the consequence that an open anywhere in a series path leaves no current path at all; and the explicit warning that the appearance of a drawing does not establish a series connection, and that two elements carrying equal current are not thereby in series. Non-commercial licence, so held REFERENCE_ONLY; no wording, figure or example reproduced."
+    },
+    {
+      "id": "libretexts-fiore-dc-kirchhoffs-voltage-law",
+      "title": "DC Electrical Circuit Analysis: A Practical Approach, 3.6 Kirchhoff's Voltage Law",
+      "provider": "James M. Fiore, Mohawk Valley Community College (Engineering LibreTexts)",
+      "url": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/DC_Electrical_Circuit_Analysis_-_A_Practical_Approach_(Fiore)/03%3A_Series_Resistive_Circuits/3.06%3A_Kirchhoff's_Voltage_Law",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page (CC BY-NC-SA 4.0). Supports the statement of KVL as the requirement that the sum of voltage rises and voltage drops around a series loop equals zero, equivalently that the sum of rises equals the sum of drops, with rises and drops carrying opposite polarities. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "libretexts-fiore-dc-series-analysis",
+      "title": "DC Electrical Circuit Analysis: A Practical Approach, 3.7 Series Analysis",
+      "provider": "James M. Fiore, Mohawk Valley Community College (Engineering LibreTexts)",
+      "url": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/DC_Electrical_Circuit_Analysis_-_A_Practical_Approach_(Fiore)/03%3A_Series_Resistive_Circuits/3.07%3A_Series_Analysis",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page (CC BY-NC-SA 4.0). Supports the voltage divider rule: the voltage across any resistor or group of resistors in a series loop is proportional to their resistance compared with the total resistance in that loop, V = E x R_of_interest / R_T, and its restriction to elements sharing the one series current. The lesson derives the same expression from the common series current rather than quoting it. REFERENCE_ONLY; no wording or worked example reproduced."
+    },
+    {
+      "id": "libretexts-fiore-dc-the-parallel-connection",
+      "title": "DC Electrical Circuit Analysis: A Practical Approach, 4.2 The Parallel Connection",
+      "provider": "James M. Fiore, Mohawk Valley Community College (Engineering LibreTexts)",
+      "url": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/DC_Electrical_Circuit_Analysis_-_A_Practical_Approach_(Fiore)/04%3A_Parallel_Resistive_Circuits/4.2%3A_The_Parallel_Connection",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page (CC BY-NC-SA 4.0). Supports the definition of a parallel connection as components joined between the same two common nodes; the statement that in a parallel connection the voltage is the same across each component, argued from a voltmeter contacting the same two nodes; and the warning that the appearance of a diagram does not settle whether elements are parallel, with an example in which two elements that look parallel are actually in series. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "libretexts-fiore-dc-combining-parallel-components",
+      "title": "DC Electrical Circuit Analysis: A Practical Approach, 4.3 Combining Parallel Components",
+      "provider": "James M. Fiore, Mohawk Valley Community College (Engineering LibreTexts)",
+      "url": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/DC_Electrical_Circuit_Analysis_-_A_Practical_Approach_(Fiore)/04%3A_Parallel_Resistive_Circuits/4.3%3A_Combining_Parallel_Components",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page (CC BY-NC-SA 4.0). Supports the general parallel equivalent R = 1/(1/R_1 + ... + 1/R_N); the two-resistor product-over-sum form R_1 R_2/(R_1 + R_2); the N-identical-resistors shortcut R/N; the addition of conductances in parallel, G_total = G_1 + ... + G_N; and the explicit statement that the equivalent resistance of a parallel group is always smaller than the smallest resistance in that group. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "libretexts-fiore-dc-kirchhoffs-current-law",
+      "title": "DC Electrical Circuit Analysis: A Practical Approach, 4.4 Kirchhoff's Current Law",
+      "provider": "James M. Fiore, Mohawk Valley Community College (Engineering LibreTexts)",
+      "url": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/DC_Electrical_Circuit_Analysis_-_A_Practical_Approach_(Fiore)/04%3A_Parallel_Resistive_Circuits/4.4%3A_Kirchhoff's_Current_Law",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page (CC BY-NC-SA 4.0). Supports the statement of KCL as the requirement that all currents entering and exiting a node sum to zero, equivalently that currents entering equal currents exiting; the attribution of that requirement to conservation of charge and the impossibility of charge accumulating at a node; and the definition of a node as a connection area within which the voltage is the same, ignoring the resistance of the connecting wires. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "libretexts-fiore-dc-parallel-analysis",
+      "title": "DC Electrical Circuit Analysis: A Practical Approach, 4.5 Parallel Analysis",
+      "provider": "James M. Fiore, Mohawk Valley Community College (Engineering LibreTexts)",
+      "url": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/DC_Electrical_Circuit_Analysis_-_A_Practical_Approach_(Fiore)/04%3A_Parallel_Resistive_Circuits/4.5%3A_Parallel_Analysis",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page (CC BY-NC-SA 4.0). Supports the current divider rule: currents divide among parallel resistors in proportion to their conductance, that is in inverse proportion to their resistance, with the two-resistor form I_R1 = I_total x R_2/(R_1 + R_2) in which the opposite resistance appears in the numerator, and the restriction of that closed form to exactly two branches. The lesson derives the same expression from the shared parallel voltage. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "libretexts-fiore-dc-series-parallel-connections",
+      "title": "DC Electrical Circuit Analysis: A Practical Approach, 5.2 Series-Parallel Connections",
+      "provider": "James M. Fiore, Mohawk Valley Community College (Engineering LibreTexts)",
+      "url": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/DC_Electrical_Circuit_Analysis_-_A_Practical_Approach_(Fiore)/05%3A_Series-Parallel_Resistive_Circuits/5.2%3A_Series-Parallel_Connections",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page (CC BY-NC-SA 4.0). Supports the characterization of a series-parallel circuit as neither a simple series nor a simple parallel connection but a combination of the two; the tests used to identify sub-groups (elements are in series when the current through one must be the current through the other, and in parallel when they connect to the same two nodes and therefore see the same voltage); and the practice of identifying groupings as sub-circuits before reducing. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "nist-sp811-chapter-4-two-classes-of-si-units",
+      "title": "NIST Guide to the SI, Chapter 4: The Two Classes of SI Units and the SI Prefixes",
+      "provider": "National Institute of Standards and Technology (NIST Special Publication 811, 2008 edition)",
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Table 1 lists the ampere as the SI base unit of electric current. Table 3 gives the SI derived units with special names used in this lesson: the volt (electric potential difference) as W/A, the ohm (electric resistance) as V/A, the siemens (electric conductance) as A/V, and the watt (power) as J/s. These fix the unit statements in the vocabulary entries and the units carried through every calculation. REFERENCE_ONLY."
+    }
+  ]
+}

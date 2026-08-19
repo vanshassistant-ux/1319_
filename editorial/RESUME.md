@@ -8,10 +8,21 @@ Read this first on every new run, then `editorial/reports/EDITORIAL_PROGRESS.md`
   `editorial/reports/subjects/education.md`.
 - **Social Work & Human Services is COMPLETE** — 20/20 topics, audited (0 issues), reported
   at `editorial/reports/subjects/social-work-and-human-services.md`.
-- **Current subject:** `criminal-justice-and-criminology` (Phase 1) — 10 of 28 topics
-  processed. Units done: Criminal Justice System (4/4), Criminal Law Foundations (3/3).
-  Policing is 3 of 5: `search-seizure-and-warrants` and `community-policing` remain, then
-  the Courts (5), Corrections (4), and Criminology (7) units.
+- **Criminal Justice & Criminology is COMPLETE** — 28/28 topics, audited (0 issues),
+  reported at `editorial/reports/subjects/criminal-justice-and-criminology.md`.
+- **Current subject:** `engineering-fundamentals` (Phase 1) — 24 of 28 topics processed.
+  Units done: Engineering Thinking (5/5), Mechanics (6/6), Materials (3/3), Electrical
+  Fundamentals (4/4), Thermal & Energy Systems (3/3). Engineering Practice is 3 of 7:
+  technical-drawing, cad-basics and prototyping are merged.
+
+  **PAUSED BY OWNER 2026-08-19.** Four topics remain and no agent may be assigned until the
+  owner says to continue: `testing-and-validation`, `engineering-ethics`,
+  `safety-factors-and-failure`, `engineering-communication`.
+
+  Interrupted workers left UNVERIFIED partial files for those four — a lesson JSON and/or
+  evidence packet with no markdown, none validated, none merged. They are not counted as
+  processed. A fresh worker should treat them as unverified drafts and re-verify everything,
+  or delete them and start clean.
 - **No other subject may be started** until this one has zero unprocessed topics,
   a subject audit, and a subject report.
 - Authoritative state lives in `content/phase-1/content-progress.json`. A topic is

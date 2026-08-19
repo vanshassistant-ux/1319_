@@ -1,0 +1,424 @@
+{
+  "topicId": "engineering-fundamentals:materials:stress-and-strain",
+  "subjectId": "engineering-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "normal stress sigma = P/A as force intensity",
+      "shear stress tau = V/A",
+      "units: pascal, megapascal, psi and ksi with the NIST conversion",
+      "normal strain, dimensionless, in percent and microstrain",
+      "shear strain as an angle change in radians",
+      "the ductile stress-strain diagram in order: proportional limit, elastic region, Hooke's law and Young's modulus, elastic limit, yield point, 0.2 percent offset yield, strain hardening, ultimate tensile strength, necking, fracture",
+      "the brittle-material curve by contrast",
+      "engineering versus true stress and strain and the post-UTS downturn",
+      "Poisson's ratio",
+      "shear modulus and the isotropic elastic-constant relations",
+      "elastic versus plastic deformation, unloading and residual stress",
+      "stress concentration at holes and notches",
+      "thermal strain and thermal stress in a restrained member",
+      "axial deformation delta = PL/AE"
+    ],
+    "supporting": [
+      "significant figures in reported results",
+      "idealizations behind sigma = P/A (uniform section, away from load points)",
+      "why plasticity blunts an elastic stress concentration"
+    ],
+    "outOfScope": [
+      "property categories, testing methods and the strength-versus-stiffness contrast at the property level (owned by material-properties)",
+      "equilibrium and the determination of internal forces (owned by statics)",
+      "failure theories, von Mises and Tresca criteria, and factors of safety (owned by safety-factors-and-failure)",
+      "bending, torsion and combined stress analysis",
+      "Mohr's circle and stress transformation",
+      "fatigue and fracture mechanics beyond a one-line pointer",
+      "any allowable stress, load factor or code design value"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Normal stress is force per unit area, sigma = P/A0 in the engineering form, and its SI unit is the pascal, equal to one newton per square metre.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openstax-university-physics-1-stress-strain-and-elastic-modulus",
+        "libretexts-roylance-introduction-to-elastic-response"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "One pound-force per square inch equals 6.894 757 x 10^3 pascals and one ksi equals 6.894 757 x 10^6 pascals, so 1 MPa is about 145.0 psi.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "nist-sp811-appendix-b9-conversion-factors"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Shear stress is force per unit area with the force acting in the plane of the area, tau = V/A, and it relates to shear strain through tau = G gamma.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-roylance-shear-and-torsion",
+        "openstax-university-physics-1-stress-strain-and-elastic-modulus"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Normal strain is change in length over original length and is dimensionless; shear strain is the change in an originally right angle, measured in radians, and is also dimensionless.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-roylance-kinematics",
+        "libretexts-roylance-introduction-to-elastic-response",
+        "openstax-university-physics-1-stress-strain-and-elastic-modulus"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Strain of dimension one should be reported as an explicit ratio of like units such as micrometre per metre (microstrain) or as a percentage, and not as ppm, which is not acceptable with the SI.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nist-sp811-chapter-7-expressing-values"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "In the initial region of a stress-strain curve stress is proportional to strain (Hooke's law, sigma = E epsilon), and Young's modulus is the slope of that line and carries the units of stress.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-roylance-introduction-to-elastic-response",
+        "openstax-university-physics-1-stress-strain-and-elastic-modulus"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The proportional limit ends the linear region; a non-linear but still elastic region can follow it; and the elastic limit is the stress beyond which the material is permanently deformed.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openstax-university-physics-1-elasticity-and-plasticity",
+        "libretexts-roylance-stress-strain-curves"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Where a metal has no sharp yield point, yield strength is defined by the 0.2 percent offset construction: a line of slope E drawn from 0.2 percent strain on the strain axis, with the yield stress read at its intersection with the measured curve.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-roylance-stress-strain-curves",
+        "libretexts-roylance-yield-and-plastic-flow"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Beyond yield a ductile metal strain hardens, requiring ever-increasing stress to keep straining, until the engineering curve reaches its maximum, the ultimate tensile strength, after which a neck forms and the specimen eventually fractures.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-roylance-stress-strain-curves"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The engineering stress-strain curve falls after the ultimate tensile strength because engineering stress is referred to the original area while plastic flow reduces the real area faster than strain hardening raises the true stress; the true stress the material carries continues to rise, with sigma_t = sigma_e(1+epsilon_e) and epsilon_t = ln(1+epsilon_e).",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-roylance-stress-strain-curves"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Brittle materials remain approximately linear over their full range of strain and fracture without appreciable plastic flow, so their curve lacks the yield, hardening and necking stages of a ductile metal.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-roylance-stress-strain-curves"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Poisson's ratio is nu = -epsilon_lateral/epsilon_axial, is approximately 0.3 for metals (0.2 ceramics, 0.4 plastics, 0.5 rubber), and cannot exceed 0.5 for an ordinary isotropic material.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-roylance-pressure-vessels"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "An isotropic material has only two independent elastic constants, with G = E/(2(1+nu)) and K = E/(3(1-2nu)).",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-roylance-constitutive-relations",
+        "libretexts-roylance-shear-and-torsion"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Unloading from beyond yield follows a line parallel to the original elastic line, leaving permanent set, and unequal plastic yielding within a member leaves residual internal stresses that persist after the external load is removed.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-roylance-yield-and-plastic-flow",
+        "openstax-university-physics-1-elasticity-and-plasticity"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Elasticity theory gives a maximum stress of three times the applied remote stress at a circular hole in an infinite plate in tension while the material remains elastic, and plastic yielding reduces that concentration.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "naca-tn-2073-stress-concentration-circular-hole"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A temperature change produces a free thermal strain alpha delta_T; a member free to expand carries no stress, while a fully restrained member develops sigma = -E alpha delta_T, independent of its length and cross-sectional area.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-roylance-constitutive-relations",
+        "openstax-university-physics-2-thermal-expansion"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Axial deformation of a uniform member under a constant axial load is delta = PL/(AE).",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-roylance-introduction-to-elastic-response"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Approximate elastic moduli used as arithmetic inputs: steel E = 20.0 x 10^10 Pa, G = 7.5 x 10^10 Pa, K = 16.0 x 10^10 Pa; aluminium E = 7.0 x 10^10 Pa. Approximate linear thermal expansion coefficients: steel 12 x 10^-6 per degree Celsius, aluminium 25 x 10^-6 per degree Celsius.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "openstax-university-physics-1-stress-strain-and-elastic-modulus",
+        "openstax-university-physics-2-thermal-expansion"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Predicted versus tabulated shear and bulk moduli for steel.",
+      "positions": [
+        "G = E/(2(1+nu)) with E = 200 GPa and nu = 0.30 predicts 76.9 GPa, and K = E/(3(1-2nu)) predicts 167 GPa.",
+        "OpenStax Table 12.1 lists approximately 75 GPa and 160 GPa for steel."
+      ],
+      "resolution": "Both were reported in the lesson and the few-percent gap was explained rather than hidden: real steels are only approximately isotropic, nu is not exactly 0.30, and handbook moduli are rounded class averages. No number was adjusted to force agreement."
+    },
+    {
+      "issue": "The psi-to-pascal conversion.",
+      "positions": [
+        "The Roylance page was read as giving 1.449 x 10^-4 (lb/in^2)/(N/m^2) as the inverse factor, which would correspond to about 6901 Pa per psi.",
+        "NIST SP 811 Appendix B.9 gives 6.894 757 E+03 Pa per psi, whose inverse is 1.4504 x 10^-4."
+      ],
+      "resolution": "The NIST value was used throughout. The discrepancy is small and may be a rounding, a typographical slip on the page, or an artifact of how the page was transcribed; because it could not be resolved with certainty, the Roylance figure was simply not repeated anywhere in the lesson."
+    },
+    {
+      "issue": "Whether the stress concentration factor of 3 at a circular hole applies to a real finite-width plate.",
+      "positions": [
+        "The elasticity result of exactly 3 is derived for a small hole in an infinite plate.",
+        "Finite width, finite hole size, and plasticity all change the actual factor."
+      ],
+      "resolution": "The lesson states the factor of 3 only for the idealized infinite-plate elastic case, chooses an example with hole diameter one twentieth of the plate width, labels the peak value as approximate, and explicitly notes that plastic flow reduces the actual concentration in a ductile metal. No finite-width factor is quoted, because none was read in a verifiable source."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained no substantive claims about stress or strain at all; its body text was subject-agnostic boilerplate ('Stress And Strain is a concept students use to organize information') that named no formula, no unit, and no feature of the stress-strain curve.",
+    "The draft's Eli-10 analogy ('a label on a toolbox drawer', 'reading a map legend') described the act of using a definition rather than the physics, and had no analogy-limits statement.",
+    "The draft's three quick-check items tested generic study skills ('Which approach best shows understanding of Stress And Strain?') rather than any mechanics content, and carried three options each rather than four."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire draft body with sourced mechanics content organized around the stress-strain diagram.",
+    "Corrected the title casing from 'Stress And Strain' to 'Stress and Strain'.",
+    "Added the units and the NIST-defined psi and ksi conversions, which the draft omitted entirely.",
+    "Added two fully executed worked examples (axial member; thermal stress in a restrained member) plus an executed stress-concentration case, all computed in Python before publication and reported to justified significant figures.",
+    "Rewrote all questions to four options each with executed arithmetic, difficulty, skill, explanation and source ids.",
+    "Added the explicit educational-material and not-engineering-design-guidance statement required for this subject."
+  ],
+  "rightsIssues": [
+    "All ten Mechanics of Materials pages are CC BY-NC-SA 4.0. The non-commercial term makes reuse unsafe for this project, so every Roylance record is held at REFERENCE_ONLY and no wording, figure or table from those pages is reproduced; only the facts were extracted and rewritten.",
+    "OpenStax per-book reuse terms were not verified for this subject, so the three OpenStax records are held at REFERENCE_ONLY and no wording is reproduced. Their tabulated moduli and expansion coefficients are used as numeric inputs only.",
+    "NACA TN 2073 is a U.S. Government work and is public domain; the scanned PDF was not machine-readable, so the NTRS citation abstract was the copy actually read, which is recorded in the source note.",
+    "No engineering standard (ASTM, ASME, AISC, ISO) was read or cited, and no allowable stress, load factor or design value from any standard appears anywhere in the lesson."
+  ],
+  "sourceRecords": [
+    {
+      "id": "openstax-university-physics-1-stress-strain-and-elastic-modulus",
+      "title": "University Physics Volume 1, 12.3 Stress, Strain, and Elastic Modulus",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/12-3-stress-strain-and-elastic-modulus",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports stress as force per unit area; the pascal as the SI unit (1 Pa = 1 N/m^2); the tensile, compressive, bulk and shear categories; strain as a dimensionless fractional change; the elastic-modulus form stress = modulus x strain; and the definitions of Young's modulus, shear modulus and bulk modulus. Its Table 12.1 supplied the approximate moduli used as arithmetic inputs: steel Y = 20.0e10 Pa, S = 7.5e10 Pa, B = 16.0e10 Pa; aluminium Y = 7.0e10 Pa. Per-book reuse terms were not verified for this subject, so the record is held at REFERENCE_ONLY and no wording is reproduced."
+    },
+    {
+      "id": "openstax-university-physics-1-elasticity-and-plasticity",
+      "title": "University Physics Volume 1, 12.4 Elasticity and Plasticity",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/12-4-elasticity-and-plasticity",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the elastic limit as the stress beyond which a material is permanently deformed, the existence of a linear (proportional) region followed by a non-linear but still elastic region before the elastic limit, plastic behaviour beyond it, and unloading to a new shape along a separate path. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-2-thermal-expansion",
+      "title": "University Physics Volume 2, 1.3 Thermal Expansion",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/1-3-thermal-expansion",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports linear thermal expansion as delta_L = alpha L delta_T and supplied the approximate coefficients used as arithmetic inputs in the worked example and question 5: steel 12e-6 per degree Celsius and aluminium 25e-6 per degree Celsius (Table 1.2). REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "libretexts-roylance-introduction-to-elastic-response",
+      "title": "Mechanics of Materials, 1.1: Introduction to Elastic Response",
+      "provider": "David Roylance, MIT (Mechanics of Materials, Engineering LibreTexts)",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_of_Materials_(Roylance)/01:_Tensile_Response_of_Materials/1.01:_Introduction_to_Elastic_Response",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports engineering stress sigma = P/A0 and engineering strain epsilon = delta/L0 as a dimensionless measure of stretching; the units N/m^2 (pascal) and lb/in^2 (psi); Hooke's law sigma = E epsilon with E carrying the units of stress; and the axial deformation relation delta = PL/(AE). Page is CC BY-NC-SA 4.0, which is non-commercial, so it is held REFERENCE_ONLY and no wording is reproduced."
+    },
+    {
+      "id": "libretexts-roylance-stress-strain-curves",
+      "title": "Mechanics of Materials, 1.4: Stress-Strain Curves",
+      "provider": "David Roylance, MIT (Mechanics of Materials, Engineering LibreTexts)",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_of_Materials_(Roylance)/01:_Tensile_Response_of_Materials/1.04:_Stress-Strain_Curves",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the ordered landmarks of the ductile stress-strain diagram (Hooke's-law region and proportional limit, yield and plastic flow, strain hardening, ultimate tensile strength as the maximum engineering stress, necking, cup-and-cone fracture); the 0.2 percent offset construction using a line of slope E drawn from 0.2 percent strain; true stress sigma_t = P/A and true strain epsilon_t = ln(L/L0) with sigma_t = sigma_e(1+epsilon_e) and epsilon_t = ln(1+epsilon_e); the explanation that the engineering curve falls after the UTS because area loss outruns strain hardening; and the near-linear-to-fracture behaviour of brittle materials. CC BY-NC-SA 4.0; REFERENCE_ONLY, no wording reproduced."
+    },
+    {
+      "id": "libretexts-roylance-pressure-vessels",
+      "title": "Mechanics of Materials, 2.2: Pressure Vessels",
+      "provider": "David Roylance, MIT (Mechanics of Materials, Engineering LibreTexts)",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_of_Materials_(Roylance)/02:_Simple_Tensile_and_Shear_Structures/2.02:_Pressure_Vessels",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports Poisson's ratio nu = -epsilon_lateral/epsilon_longitudinal, the sign convention, the approximate class values (ceramics 0.2, metals 0.3, plastics 0.4, rubber 0.5) and the statement that nu cannot exceed 0.5 for an ordinary material because volume would otherwise increase under compression. CC BY-NC-SA 4.0; REFERENCE_ONLY, no wording reproduced."
+    },
+    {
+      "id": "libretexts-roylance-shear-and-torsion",
+      "title": "Mechanics of Materials, 2.3: Shear and Torsion",
+      "provider": "David Roylance, MIT (Mechanics of Materials, Engineering LibreTexts)",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_of_Materials_(Roylance)/02:_Simple_Tensile_and_Shear_Structures/2.03:_Shear_and_Torsion",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports shear stress as force per unit area with the force acting parallel to (transverse to) the surface, shear strain as the angular distortion approximated by transverse displacement over the separation, the shear form of Hooke's law tau = G gamma, and G = E/(2(1+nu)) for isotropic materials. CC BY-NC-SA 4.0; REFERENCE_ONLY, no wording reproduced."
+    },
+    {
+      "id": "libretexts-roylance-kinematics",
+      "title": "Mechanics of Materials, 3.1: Kinematics",
+      "provider": "David Roylance, MIT (Mechanics of Materials, Engineering LibreTexts)",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_of_Materials_(Roylance)/03:_General_Concepts_of_Stress_and_Strain/3.01:_Kinematics",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports normal strain as differential displacement per unit length with L' = (1+epsilon)L0, and engineering shear strain gamma as the change in an originally right angle, measured in radians under the small-displacement approximation tan(gamma) ~ gamma; both are dimensionless. CC BY-NC-SA 4.0; REFERENCE_ONLY, no wording reproduced."
+    },
+    {
+      "id": "libretexts-roylance-constitutive-relations",
+      "title": "Mechanics of Materials, 3.4: Constitutive Relations",
+      "provider": "David Roylance, MIT (Mechanics of Materials, Engineering LibreTexts)",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_of_Materials_(Roylance)/03:_General_Concepts_of_Stress_and_Strain/3.04:_Constitutive_Relations",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the statement that an isotropic material has only two independent elastic constants, the relations G = E/(2(1+nu)) and K = E/(3(1-2nu)), and the inclusion of a thermal term alpha delta_T in the constitutive law, with alpha the coefficient of linear thermal expansion, together with the statement that thermal stresses arise when expansion is prevented by boundary constraints. The lesson's sigma = -E alpha delta_T for a fully restrained uniaxial member is derived in the lesson from the one-dimensional form of this constitutive law, not quoted. CC BY-NC-SA 4.0; REFERENCE_ONLY, no wording reproduced."
+    },
+    {
+      "id": "libretexts-roylance-yield-and-plastic-flow",
+      "title": "Mechanics of Materials, 6.1: Yield and Plastic Flow",
+      "provider": "David Roylance, MIT (Mechanics of Materials, Engineering LibreTexts)",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_of_Materials_(Roylance)/06:_Yield_and_Fracture/6.01:_Yield_and_Plastic_Flow",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports unloading from beyond yield along a line parallel to the original elastic line rather than back along the loading curve, the resulting permanent set, the 0.2 percent offset method for locating yield, residual stresses defined as internal stresses that remain after external loads are removed and arising when parts of a member yield unequally, and the statement that yield is driven by shearing stresses while fracture is driven by normal stresses. CC BY-NC-SA 4.0; REFERENCE_ONLY, no wording reproduced."
+    },
+    {
+      "id": "naca-tn-2073-stress-concentration-circular-hole",
+      "title": "NACA Technical Note 2073: Stress and Strain Concentration at a Circular Hole in an Infinite Plate",
+      "provider": "National Advisory Committee for Aeronautics (E. Z. Stowell, 1950), via NASA Technical Reports Server",
+      "url": "https://ntrs.nasa.gov/citations/19930082747",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "The scanned PDF at ntrs.nasa.gov could not be machine-read, so the NTRS citation record and abstract were read instead; the note records this. Supports the two claims used: that elasticity theory gives a maximum stress at a circular hole in an infinite plate in tension of three times the applied stress while the material remains elastic, and that plastic yielding of the material reduces that concentration below the elastic value. Public domain as a U.S. Government work."
+    },
+    {
+      "id": "nist-sp811-appendix-b9-conversion-factors",
+      "title": "NIST Guide to the SI, Appendix B.9: Conversion Factors Listed by Kind of Quantity",
+      "provider": "National Institute of Standards and Technology (NIST Special Publication 811, 2008 edition)",
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Existing registry record, re-verified for this lesson. Read the live page. Under PRESSURE OR STRESS it lists pound-force per square inch (psi) to pascal as 6.894 757 E+03 and kilopound-force per square inch (ksi) to pascal as 6.894 757 E+06; these are the factors used for every psi and ksi conversion in this lesson. REFERENCE_ONLY."
+    },
+    {
+      "id": "nist-sp811-chapter-7-expressing-values",
+      "title": "NIST Guide to the SI, Chapter 7: Rules and Style Conventions for Expressing Values of Quantities",
+      "provider": "National Institute of Standards and Technology (NIST Special Publication 811, 2008 edition)",
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-7-rules-and-style-conventions-expressing-values",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Section 7.10.3 supports the lesson's guidance on reporting strain: quantities of dimension one may be expressed as an explicit ratio of like units such as 1.1 nm/m or micrometre per metre, while the abbreviations ppm, ppb and ppt are not acceptable for use with the SI because they are language-dependent. REFERENCE_ONLY."
+    }
+  ]
+}

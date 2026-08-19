@@ -1,0 +1,409 @@
+{
+  "topicId": "engineering-fundamentals:mechanics:dynamics",
+  "subjectId": "engineering-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Dynamics as the analysis of bodies that accelerate, and its division into kinematics and kinetics",
+      "Rectilinear versus curvilinear motion of a particle",
+      "Projectile motion as two independent one-dimensional problems, with the neglect-drag idealization named and bounded",
+      "Normal and tangential components of acceleration, and the fact that a curved path produces a normal (centripetal) component even at constant speed",
+      "Circular motion and the centripetal force requirement; centrifugal force as an artifact of a rotating frame rather than a force in an inertial frame",
+      "Relative motion and the choice of reference frame; the velocity addition relation",
+      "Rigid-body rotation about a fixed axis: angular position, angular velocity, angular acceleration, and v = omega r",
+      "Moment of inertia as rotational inertia and its dependence on how mass is distributed about the axis",
+      "Sum of moments = I alpha as the rotational analogue of the second law, and the requirement to take moments and inertia about the same point",
+      "The three solution routes — force-acceleration, work-energy, impulse-momentum — and how to choose among them"
+    ],
+    "supporting": [
+      "Angular units: radians, rad/s, rad/s^2, and moment of inertia in kg*m^2",
+      "Balanced versus unbalanced fixed-axis rotation",
+      "The drag equation as the reason the no-drag idealization fails at speed",
+      "Constant-acceleration kinematic relations reused in angular form"
+    ],
+    "outOfScope": [
+      "Statement and derivation of Newton's three laws (owned by force-and-motion)",
+      "How to construct a free-body diagram, support reactions, and sign conventions (owned by free-body-diagrams)",
+      "Equilibrium of structures, trusses, and frames (owned by statics)",
+      "Work, energy, power, and the work-energy theorem worked out (owned by work-and-energy)",
+      "Impulse, linear and angular momentum, and collisions worked out (owned by momentum)",
+      "Vibrations, orbital mechanics, three-dimensional general rigid-body motion, and any design or sizing guidance"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Dynamics divides into kinematics — the study of motion in space and time without considering the forces that cause it — and kinetics, the study of motion in relation to mass and forces; kinetics relates forces to accelerations and the equation of motion, while kinematics relates that equation and the constraint equations to the actual motion.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["libretexts-introductory-dynamics-outline-and-elements-of-dynamics"],
+      "status": "supported"
+    },
+    {
+      "claim": "Motions along perpendicular axes are independent and can be analysed separately, which is why projectile motion is treated as constant-velocity horizontal motion (a_x = 0) plus constant-acceleration vertical motion (a_y = -g); the treatment explicitly neglects air resistance, and for launch and landing at the same height the range is R = v0^2 sin(2*theta0)/g, maximised at 45 degrees.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["openstax-university-physics-1-projectile-motion", "openstax-university-physics-1-motion-with-constant-acceleration"],
+      "status": "supported"
+    },
+    {
+      "claim": "Aerodynamic drag depends on air density, the square of the velocity, viscosity, compressibility, and the size, shape and inclination of the body, and is collected into D = Cd * rho * V^2 * A / 2, with Cd almost always determined experimentally; this is why the drag-free idealization degrades as speed rises.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nasa-bga-drag-equation"],
+      "status": "supported"
+    },
+    {
+      "claim": "A particle moving along a curved trajectory has non-zero acceleration even when its speed is constant; in uniform circular motion the acceleration has magnitude a_c = v^2/r and points toward the centre of the circle.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["openstax-university-physics-1-uniform-circular-motion"],
+      "status": "supported"
+    },
+    {
+      "claim": "In normal-tangential coordinates the acceleration of a particle on a plane curve is a = (dv/dt) u_t + (v^2/rho) u_n, where rho is the radius of curvature of the path at that point and the two components are perpendicular, so the total acceleration is their vector sum.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["libretexts-mechanics-map-normal-tangential-coordinates", "openstax-university-physics-1-uniform-circular-motion"],
+      "status": "supported"
+    },
+    {
+      "claim": "Centripetal force is not a new kind of force but the net force requirement F_c = m v^2 / r that any combination of real forces — tension, gravity, friction, normal force — must supply to hold a body on a circular path; for an ideally banked curve tan(theta) = v^2/(r g), independent of vehicle mass.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["openstax-university-physics-1-centripetal-force", "openstax-university-physics-1-newtons-second-law"],
+      "status": "supported"
+    },
+    {
+      "claim": "Centrifugal force does not exist as a force in an inertial frame; it is a fictitious inertial force that appears only when motion is described in a rotating (non-inertial) frame, as is the Coriolis force.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["openstax-university-physics-1-centripetal-force"],
+      "status": "supported"
+    },
+    {
+      "claim": "Velocity is always stated with respect to a reference frame and transforms by v_PS = v_PS' + v_S'S; if the relative velocity of the two frames is constant then their relative acceleration is zero and both observers measure the same acceleration.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["openstax-university-physics-1-relative-motion", "openstax-university-physics-1-newtons-first-law"],
+      "status": "supported"
+    },
+    {
+      "claim": "For rotation about a fixed axis, angular position relates to arc length by theta = s/r, angular velocity is omega = d(theta)/dt in rad/s, angular acceleration is alpha = d(omega)/dt in rad/s^2, the tangential speed of a point at radius r is v = omega r, and every point on the rigid body shares the same omega.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["openstax-university-physics-1-rotational-variables"],
+      "status": "supported"
+    },
+    {
+      "claim": "Moment of inertia I = sum of m_j r_j^2 (units kg*m^2) is the quantitative measure of rotational inertia, the rotational counterpart of mass; the greater the moment of inertia the greater the resistance to a change in angular velocity, and mass placed farther from the axis contributes more than the same mass placed close to it. For a uniform thin disk about its central axis I = (1/2) m R^2, and the parallel-axis theorem gives I = I_cm + m d^2.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["openstax-university-physics-1-moment-of-inertia-and-rotational-kinetic-energy", "openstax-university-physics-1-calculating-moments-of-inertia"],
+      "status": "supported"
+    },
+    {
+      "claim": "For a rigid body rotating about a fixed axis the net torque equals the moment of inertia times the angular acceleration, sum of tau = I alpha; in engineering-dynamics form the pair of equations is sum F = m a and sum M = I alpha, moments may be taken about the axis of rotation O or the centre of mass G provided the moment and the mass moment of inertia are taken about the same point, and in balanced rotation (centre of mass on the axis) the centre of mass has zero acceleration.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["openstax-university-physics-1-newtons-second-law-for-rotation", "libretexts-mechanics-map-fixed-axis-rotation"],
+      "status": "supported"
+    },
+    {
+      "claim": "Standard engineering dynamics organises the kinetics of both point masses and rigid bodies into three parallel method families — the direct force/moment-acceleration equations, work and energy, and impulse and momentum (angular impulse and momentum for rigid bodies) — and textbooks provide explicit solution strategies for choosing among them.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["libretexts-introductory-dynamics-topics", "libretexts-introductory-dynamics-solution-strategy"],
+      "status": "supported"
+    },
+    {
+      "claim": "Worked-example arithmetic, executed with python3: for a uniform disk flywheel m = 12.0 kg, R = 0.250 m, I = 0.5 * 12.0 * 0.250^2 = 0.375 kg*m^2; a 18.0 N belt force at the rim gives M = 18.0 * 0.250 = 4.50 N*m; alpha = 4.50 / 0.375 = 12.0 rad/s^2; 300 rev/min = 300 * 2*pi/60 = 31.4159 rad/s; t = 31.4159 / 12.0 = 2.617994 s, reported as 2.62 s. Check: (1/2)*alpha*t^2 = 41.1234 rad and omega^2/(2*alpha) = 41.1234 rad agree to 7e-15 rad, i.e. 6.54 revolutions. Unit check: N*m / (kg*m^2) reduces to s^-2.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-university-physics-1-newtons-second-law-for-rotation", "openstax-university-physics-1-calculating-moments-of-inertia", "openstax-university-physics-1-rotational-variables", "libretexts-mechanics-map-fixed-axis-rotation"],
+      "status": "supported"
+    },
+    {
+      "claim": "Question-bank arithmetic, executed with python3: 25.0^2 / 125 = 5.00 m/s^2 centripetal; sqrt(2 * 20.0 / 9.81) = 2.019275 s, so 12.0 * 2.019275 = 24.2313 m, reported as 24.2 m (the no-square-root error gives 12.0 * 4.0775 = 48.9 m and the halving error gives 12.1 m); 0.375 * 8.00 = 3.00 N*m, with 0.375/8.00 = 0.046875 and 8.00/0.375 = 21.33 as the inverted distractors.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-university-physics-1-uniform-circular-motion", "openstax-university-physics-1-projectile-motion", "openstax-university-physics-1-newtons-second-law-for-rotation", "nist-cuu-standard-acceleration-of-gravity"],
+      "status": "supported"
+    },
+    {
+      "claim": "The value 9.81 m/s^2 used in the projectile arithmetic is a rounded working value for local free-fall acceleration; the exact defined standard acceleration of gravity is g_n = 9.806 65 m/s^2, and local g varies with position, so results carrying it are reported to three significant figures at most.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["nist-cuu-standard-acceleration-of-gravity"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether 'centrifugal force' is a legitimate term.",
+      "positions": [
+        "Introductory physics treatment: centrifugal force does not exist; it is a fictitious inertial force arising only in a rotating reference frame.",
+        "Working engineering usage: 'centrifugal force' is used loosely for the outward reaction a rotating part exerts on its restraint, and for the d'Alembert inertial term in a rotating-frame formulation."
+      ],
+      "resolution": "The lesson states the inertial-frame position as the correction — in an inertial frame there is no outward force on the body, only an inward net force — and separately acknowledges that a rotating frame legitimately carries an inertial term, so students recognise the working usage without adopting the misconception. Sourced to OpenStax University Physics 6.3, which states the point explicitly."
+    },
+    {
+      "issue": "Which value of g to use in the projectile arithmetic.",
+      "positions": [
+        "g_n = 9.806 65 m/s^2 exactly, the defined conventional standard.",
+        "9.81 m/s^2, the conventional three-figure working value."
+      ],
+      "resolution": "Used 9.81 m/s^2 and stated in the lesson that it is a rounded working value, with results reported to three significant figures. The exact defined value is recorded from the NIST fundamental-constants page."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained no substantive claims about dynamics at all — its body text was subject-agnostic filler ('Dynamics is a concept students use to organize information') that named no equation, no variable, and no idealization.",
+    "The draft's vocabulary entries ('context', 'evidence', 'application') were generic and circular and had no relationship to dynamics.",
+    "The draft's Eli-10 analogy ('a label on a toolbox drawer') carried no mechanical content and had no stated limits."
+  ],
+  "correctionsNeeded": [
+    "Discarded the generated draft entirely and wrote the lesson from verified sources.",
+    "Established the kinematics/kinetics split as the organising frame, which the draft did not mention.",
+    "Added the constant-speed-implies-zero-acceleration misconception and the centrifugal-force correction to Common Mistakes, both of which the draft lacked.",
+    "Named the neglect-of-drag idealization explicitly and bounded it with the NASA drag equation rather than presenting projectile formulas as unconditional.",
+    "Added the required educational-material and not-design-guidance statements per the subject source-map caution.",
+    "Replaced the placeholder worked example with a fixed-axis rotation problem whose every number was executed with python3 and which carries an independent consistency check.",
+    "Raised estimatedMinutes from 8 to 13 to match the actual content."
+  ],
+  "rightsIssues": [
+    "OpenStax University Physics Volume 1 is openly licensed, but the per-book licence terms were not independently verified for this project, so all OpenStax pages are held at REFERENCE_ONLY and no OpenStax wording was reproduced or paraphrased.",
+    "The LibreTexts Mechanics Map pages carry a stated CC BY-SA 4.0 licence and the LibreTexts Introductory Dynamics (Steeneken) pages carry a stated CC BY 4.0 licence, both read from the page footers. Even so, both are held at REFERENCE_ONLY here because no text, figure, or example from either was adapted — only facts were taken and the prose is original.",
+    "The NASA Beginner's Guide to Aeronautics page is U.S. government work; it was read via curl because the WebFetch client could not verify the host's certificate chain. Only the drag equation's form and its stated dependence on the square of velocity were used.",
+    "No engineering standard (ASME, ASTM, ISO, AISC, ACI, IEEE) was consulted, quoted, or relied on, and no allowable stress, load factor, or design value appears anywhere in the lesson."
+  ],
+  "sourceRecords": [
+    {
+      "id": "libretexts-introductory-dynamics-outline-and-elements-of-dynamics",
+      "title": "4.3: Outline and elements of dynamics — Introductory Dynamics: 2D Kinematics and Kinetics of Point Masses and Rigid Bodies",
+      "provider": "Peter G. Steeneken, Delft University of Technology, hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Introductory_Dynamics:_2D_Kinematics_and_Kinetics_of_Point_Masses_and_Rigid_Bodies_(Steeneken)/01:_Introduction/04:_Introduction_to_Dynamics/4.03:_Outline_and_elements_of_dynamics",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY 4.0 (stated in the page footer)",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via curl with a browser user-agent because the LibreTexts page is heavy with MathJax macro preamble. Supports the definition of dynamics and the kinematics/kinetics division, including the statement that kinetics relates forces to accelerations and the equation of motion while kinematics relates that equation and the constraint equations to the actual motion. Also supports the point-mass / rigid-body / deformable-body classification. No wording reused."
+    },
+    {
+      "id": "libretexts-introductory-dynamics-topics",
+      "title": "1.2: Topics — Introductory Dynamics: 2D Kinematics and Kinetics of Point Masses and Rigid Bodies",
+      "provider": "Peter G. Steeneken, Delft University of Technology, hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Introductory_Dynamics:_2D_Kinematics_and_Kinetics_of_Point_Masses_and_Rigid_Bodies_(Steeneken)/01:_Introduction/01:_Preface/1.02:_Topics",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY 4.0 (stated in the page footer)",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via curl. Supports the claim that engineering dynamics is organised into parallel method families — kinematics, kinetics, work and energy, and impulse and momentum — for both point masses and rigid bodies. Used only for the structure of the field, not for any equation."
+    },
+    {
+      "id": "libretexts-introductory-dynamics-solution-strategy",
+      "title": "Chapter 14: Solution Strategy Dynamics — Introductory Dynamics: 2D Kinematics and Kinetics of Point Masses and Rigid Bodies",
+      "provider": "Peter G. Steeneken, Delft University of Technology, hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Introductory_Dynamics:_2D_Kinematics_and_Kinetics_of_Point_Masses_and_Rigid_Bodies_(Steeneken)/04:_Vibrations_and_Strategy/14:_Solution_Strategy_Dynamics",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY 4.0 (stated in the page footer)",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via curl. Supports the claim that choosing among dynamics methods is itself a taught skill, organised in this text as preparation, kinematics, and kinetics flow-charts. The lesson's own selection heuristic is original and does not reproduce the flow-charts."
+    },
+    {
+      "id": "libretexts-mechanics-map-normal-tangential-coordinates",
+      "title": "7.4: Two-Dimensional Kinematics with Normal-Tangential Coordinates — Mechanics Map",
+      "provider": "Jacob Moore and Contributors, Pennsylvania State University Mont Alto, hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_Map_(Moore_et_al.)/07:_Particle_Kinematics/7.04:_Two-Dimensional_Kinematics_with_Normal-Tangential_Coordinates",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0 (stated in the page footer)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via curl with a browser user-agent. Supports the normal-tangential acceleration decomposition a = (dv/dt) u_t + (v^2/rho) u_n, the identification of rho as the radius of curvature of the path, and the requirement to add the two components as vectors. No wording or example reused."
+    },
+    {
+      "id": "libretexts-mechanics-map-fixed-axis-rotation",
+      "title": "12.2: Fixed-Axis Rotation — Mechanics Map",
+      "provider": "Jacob Moore and Contributors, Pennsylvania State University Mont Alto, hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_Map_(Moore_et_al.)/12:_Newton's_Second_Law_for_Rigid_Bodies/12.2:_Fixed-Axis_Rotation",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0 (stated in the page footer)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the engineering-dynamics statement of the rigid-body equations sum F = m a and sum M = I alpha, the balanced versus unbalanced rotation distinction, and the requirement that moments and mass moment of inertia be taken about the same point (O or G). No wording reused."
+    },
+    {
+      "id": "openstax-university-physics-1-projectile-motion",
+      "title": "4.3 Projectile Motion — University Physics Volume 1",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/4-3-projectile-motion",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the independence of motion along perpendicular axes, the explicit neglect of air resistance, the horizontal and vertical component equations, and the level-ground range formula R = v0^2 sin(2 theta0)/g with its 45-degree maximum and complementary-angle property. Prose written independently."
+    },
+    {
+      "id": "openstax-university-physics-1-uniform-circular-motion",
+      "title": "4.4 Uniform Circular Motion — University Physics Volume 1",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/4-4-uniform-circular-motion",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports a_c = v^2/r, the centre-directed direction of centripetal acceleration, the explicit statement that a particle on a curved trajectory can have acceleration even at constant speed, and the decomposition of nonuniform circular motion into perpendicular tangential and centripetal components. Backs the Common Mistakes entry on constant speed."
+    },
+    {
+      "id": "openstax-university-physics-1-centripetal-force",
+      "title": "6.3 Centripetal Force — University Physics Volume 1",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/6-3-centripetal-force",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports centripetal force as a net-force requirement F_c = m v^2 / r rather than a new kind of force, the ideal banking relation tan(theta) = v^2/(r g) and its independence of vehicle mass, and the explicit statement that centrifugal force does not exist as a force and appears only as a fictitious inertial force in a rotating frame, alongside the Coriolis force. This is the sourcing for the centrifugal-force correction."
+    },
+    {
+      "id": "openstax-university-physics-1-relative-motion",
+      "title": "4.5 Relative Motion in One and Two Dimensions — University Physics Volume 1",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/4-5-relative-motion-in-one-and-two-dimensions",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the requirement to state a reference frame with any velocity, the velocity addition relation v_PS = v_PS' + v_S'S with its subscript convention, and the consequence that when the relative velocity of two frames is constant both observers measure the same acceleration."
+    },
+    {
+      "id": "openstax-university-physics-1-rotational-variables",
+      "title": "10.1 Rotational Variables — University Physics Volume 1",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/10-1-rotational-variables",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports theta = s/r, omega = d(theta)/dt in rad/s, alpha = d(omega)/dt in rad/s^2, the tangential-speed relation v = omega r, and the statement that all points on a rigid body rotating about a fixed axis share the same angular velocity."
+    },
+    {
+      "id": "openstax-university-physics-1-moment-of-inertia-and-rotational-kinetic-energy",
+      "title": "10.4 Moment of Inertia and Rotational Kinetic Energy — University Physics Volume 1",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/10-4-moment-of-inertia-and-rotational-kinetic-energy",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports I = sum m_j r_j^2, units of kg*m^2, moment of inertia as the quantitative measure of rotational inertia paralleling mass as the measure of linear inertia, and the statement that a larger moment of inertia means greater resistance to a change in angular velocity. Rotational kinetic energy is noted only as a hand-off to work-and-energy and is not taught here."
+    },
+    {
+      "id": "openstax-university-physics-1-calculating-moments-of-inertia",
+      "title": "10.5 Calculating Moments of Inertia — University Physics Volume 1",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/10-5-calculating-moments-of-inertia",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports I = (1/2) m R^2 for a uniform thin disk about its central axis — the value used in the worked example — together with (1/12) M L^2 and (1/3) M L^2 for a thin rod about its centre and its end, and the parallel-axis theorem I = I_cm + m d^2."
+    },
+    {
+      "id": "openstax-university-physics-1-newtons-second-law-for-rotation",
+      "title": "10.7 Newton's Second Law for Rotation — University Physics Volume 1",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/10-7-newtons-second-law-for-rotation",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports sum tau = I alpha for a rigid body rotating about a fixed axis, the vector alignment of net torque and angular acceleration, and the sign convention treating counterclockwise angular acceleration as positive. Used for the worked example and for question 4."
+    },
+    {
+      "id": "openstax-university-physics-1-newtons-second-law",
+      "title": "5.3 Newton's Second Law — University Physics Volume 1",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused from the force-and-motion topic at the same id and URL. Cited here only for the net-external-force form that the centripetal requirement and the direct force-acceleration route rest on; the law itself is taught in force-and-motion, not re-derived here."
+    },
+    {
+      "id": "openstax-university-physics-1-newtons-first-law",
+      "title": "5.2 Newton's First Law — University Physics Volume 1",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/5-2-newtons-first-law",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused from the force-and-motion topic at the same id and URL. Cited here only for the inertial-frame criterion that underpins the relative-motion and fictitious-force sections."
+    },
+    {
+      "id": "openstax-university-physics-1-motion-with-constant-acceleration",
+      "title": "3.4 Motion with Constant Acceleration — University Physics Volume 1",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused from the force-and-motion topic at the same id and URL. Cited for the constant-acceleration relations that are applied here to the vertical axis of a projectile and, in angular form, to the flywheel spin-up."
+    },
+    {
+      "id": "nist-cuu-standard-acceleration-of-gravity",
+      "title": "Standard acceleration of gravity — CODATA / NIST Fundamental Physical Constants",
+      "provider": "NIST Physical Measurement Laboratory",
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?gn",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused from the force-and-motion topic at the same id and URL. Supports g_n = 9.806 65 m/s^2 as an exact defined value, which is why the lesson labels 9.81 m/s^2 a rounded working value and holds projectile results to three significant figures."
+    },
+    {
+      "id": "nasa-bga-drag-equation",
+      "title": "Drag Equation — Beginner's Guide to Aeronautics",
+      "provider": "NASA Glenn Research Center",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/drag-equation/",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "The WebFetch client could not verify the host's certificate chain, so the page was read with curl -k and a browser user-agent; the identical NASA Glenn mirror at grc.nasa.gov/www/k-12/VirtualAero/BottleRocket/airplane/drageq.html was read as a cross-check and matched. Supports D = Cd * rho * V^2 * A / 2, the dependence of drag on the square of velocity, and the statement that Cd is almost always determined experimentally in a wind tunnel. Used to bound the neglect-drag idealization; no drag coefficient value is quoted."
+    }
+  ]
+}

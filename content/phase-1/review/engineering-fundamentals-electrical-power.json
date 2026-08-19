@@ -1,0 +1,327 @@
+{
+  "id": "engineering-fundamentals:electrical-fundamentals:electrical-power",
+  "subjectSlug": "engineering-fundamentals",
+  "unitSlug": "electrical-fundamentals",
+  "slug": "electrical-power",
+  "title": "Electrical Power",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 11,
+  "tags": [
+    "engineering-fundamentals",
+    "electrical-fundamentals",
+    "electrical-power",
+    "watts",
+    "kilowatt-hour",
+    "resistive-heating",
+    "rms",
+    "power-factor"
+  ],
+  "in30Seconds": "Electrical power is the rate at which a circuit converts electrical energy into something else: heat, light, motion, stored charge. For any two-terminal element, P equals the voltage across it times the current through it. If that element is a resistance, Ohm's law turns the same statement into I squared R and V squared over R. Power is measured in watts. Energy is power multiplied by time, and energy is what a utility actually bills you for.",
+  "whyItMatters": "Nearly every electrical design decision is a power decision. A resistor's value sets the current, but its power rating decides whether it survives. Transmission lines run at hundreds of kilovolts because resistive loss climbs with the square of current, not because high voltage is inherently better. A battery's amp-hour label tells you nothing about run time until you multiply by voltage. Utilities bill in kilowatt-hours, aviation regulators cap batteries in watt-hours, and data centres are sized in megawatts: three audiences reasoning about the same product of voltage, current, and time. Keeping power and energy distinct is the difference between an estimate that lands and one that is wrong by a factor of thousands.",
+  "learningObjectives": [
+    "Define electrical power, distinguish it from electrical energy, and name the SI unit of each.",
+    "Apply P = VI, P = I squared R, and P = V squared over R, and explain which quantities each form legitimately requires.",
+    "Explain why resistive heating scales with the square of current, and analyse why bulk transmission runs at high voltage.",
+    "Distinguish a battery's ampere-hour capacity from its watt-hour energy and convert between them.",
+    "Explain, at survey level, why RMS voltage and current are the values that make P = VI give the average power of a resistive AC load.",
+    "Evaluate a component power rating and an efficiency figure, and account for where the missing watts go."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "P = VI is the general statement; the other two forms carry conditions",
+      "body": "Move a charge q through a potential difference V and the energy exchanged is qV. Divide by the time taken and you have divided the charge by time as well, which is current. So the power delivered to a two-terminal element is P = VI. Nothing in that derivation assumes anything about what the element is. It holds for a resistor, a motor, an LED, a battery being charged, or an entire appliance treated as a black box. What it does demand is bookkeeping discipline: V is the voltage across the two terminals of the element you are asking about, and I is the current through that same element.\n\nIf the element is a resistance obeying Ohm's law, substitute V = IR to get P = I squared R, or substitute I = V/R to get P = V squared over R. Both are algebraic consequences of P = VI, and both inherit the condition that came with them: there has to be a resistance R, and the V and I in the expression have to be that resistance's own voltage and current.\n\nWhich form to reach for is a question about what you already know. Use I squared R when current is the quantity you know and share, which is the case along a series path or down a transmission line. Use V squared over R when you know the voltage sitting directly across the element, which is the case for something wired straight across a supply. Use P = VI whenever the element is not a resistance at all, because then there is no R to put into the other two.\n\nThe standard error is feeding in the wrong V or the wrong I. Take a 12 V source driving a 10 ohm resistor in series with a 30 ohm resistor. The current is 12/40 = 0.3 A, so the 10 ohm resistor dissipates I squared R = 0.9 W and the whole circuit draws VI = 3.6 W. Reach for V squared over R using the source voltage and you get 144/10 = 14.4 W: sixteen times too large, and larger than the power the entire circuit is drawing. The formula did not fail. It was handed a voltage that never appeared across that resistor."
+    },
+    {
+      "heading": "Power is a rate; energy is the accumulated total",
+      "body": "The watt is the SI coherent derived unit of power and equals one joule per second. The joule is the unit of energy. That single sentence settles most of the confusion in this topic: a watt answers how fast, a joule answers how much.\n\nThe kilowatt-hour is where students lose the thread, because it sounds like a rate and is not one. It is a kilowatt sustained for an hour, so it is power multiplied by time, which is energy. Executing the conversion makes the point concrete: 1 kW multiplied by 1 h is 1000 W times 3600 s, and since a watt is a joule per second the seconds cancel to leave 3.6 million joules, or 3.6 MJ. Utility meters accumulate energy, which is why the bill is in kilowatt-hours and not kilowatts. The expression 'kilowatts per hour' is not a smaller version of this; it is a rate of change of power, and it is almost never what someone writing it means.\n\nA space heater whose nameplate reads 1,500 W has a power of 1.5 kW while it is running. That number alone does not tell you what it costs. Run it four hours a day for thirty days and the energy is 1,500 W times 4 h times 30, which is 180,000 W-h, or 180 kW-h, or 6.48 times 10 to the 8 joules."
+    },
+    {
+      "heading": "Resistive heating, and why bulk transmission runs at high voltage",
+      "body": "Charge moving through a resistance dissipates energy as heat. That is Joule heating, and in conductors it is the loss mechanism that dominates. A transmission conductor is not there to make heat, but it has resistance and it carries current, so it makes heat anyway, and the amount is I squared R.\n\nThe squared dependence on current is what drives the design of the grid. For a fixed power delivered to a load, current and voltage trade off directly: I = P/V. Double the transmission voltage and the current halves; halve the current and the I squared R loss falls to a quarter. The loss at fixed delivered power therefore scales as one over V squared, which is a much steeper lever than intuition suggests.\n\nPut numbers on it. Suppose a line must deliver 5.0 MW and its conductors have a total resistance of 2.0 ohm. At 15 kV the current is 5.0 x 10^6 / 15,000 = 333.333 A, and the loss is 333.333 squared times 2.0 = 222,222 W, about 222 kW, or 4.4 percent of the delivered power. At 150 kV the current is 33.3333 A and the loss is 2,222 W, about 2.2 kW, or 0.044 percent. Ten times the voltage, one tenth the current, one hundredth the loss. Note the idealisation being made: the 15 kV case means the sending end must actually supply about 5.22 MW, the line resistance was given rather than computed from conductor geometry, and reactance has been ignored entirely.\n\nAs a reality check on the scale of grid losses, EIA estimates that annual United States transmission and distribution losses averaged about 5 percent of the electricity transmitted and distributed from 2018 through 2022. That published figure is an aggregate. It is not broken down by mechanism, and transformer core losses and other equipment losses sit inside it alongside conductor heating, so do not read it as the I squared R share.\n\nThis is educational material about why the physics points the way it does. It is not guidance for electrical installations. Real power systems and real wiring are governed by codes and require a licensed professional; nothing here is a procedure."
+    },
+    {
+      "heading": "Ratings, derating, and where the missing watts go",
+      "body": "A component's power rating is a thermal limit wearing electrical clothing. A 0.25 W resistor is not forbidden from dissipating more than a quarter of a watt by any law of physics; it is telling you that at a stated ambient temperature it can shed that much heat without its own temperature climbing past what its materials tolerate. Above that ambient temperature the allowable dissipation falls, which is why datasheets carry a derating curve rather than a single number.\n\nDerating means deliberately operating a part below its nameplate maximum so that stress, and therefore degradation rate, stays low. NASA Goddard's EEE-INST-002 is one documented example of how this gets specified: it requires the designer to derate parts against a table for each part category, and its resistor table applies a power derating factor of 0.6 to most listed styles below a stated rated-power temperature, with linear derating to zero allowable power at a higher temperature. On that rule a 0.25 W part would be held to 0.15 W. Do not generalise the number. Derating practice varies by industry, by mission, and by what happens when the part fails; spaceflight practice is deliberately conservative and is not a universal design rule.\n\nEfficiency is the useful output compared with the input. Feed 1,000 W into a device that is 92 percent efficient and 920 W leaves as the output you wanted, while 80 W leaves as heat. Energy is not lost in the sense of ceasing to exist; 'loss' is shorthand for converted into something you were not trying to make. In a motor that missing power is winding I squared R heating, core losses, and friction. Because the number depends entirely on where the boundary is drawn and what is counted as useful, an efficiency figure is only meaningful next to a statement of what went in and what came out."
+    },
+    {
+      "heading": "Batteries: ampere-hours are charge, watt-hours are energy",
+      "body": "An ampere-hour is one ampere flowing for one hour, which is 3,600 coulombs. It is a quantity of charge. On its own it says nothing about how much energy a battery holds, because energy requires the voltage that charge falls through. The FAA states the conversion directly in its packing guidance: watt-hours are the battery voltage multiplied by the amp hours.\n\nThe distinction has teeth. A 4,500 mAh cell at a nominal 3.85 V stores 4.5 A-h times 3.85 V = 17.325 W-h. The same 4,500 mAh at a nominal 3.7 V stores 16.65 W-h. Identical capacity label, different energy, purely because the voltage differs. A 20,000 mAh pack built from cells at a nominal 3.7 V stores 20 A-h times 3.7 V = 74 W-h, which is why it sits under the FAA's 100 W-h ceiling for a spare lithium-ion battery in carry-on baggage even though the milliamp-hour number on the case looks enormous. Regulators write the limit in watt-hours precisely because energy, not charge, is what can be released in a failure.\n\nTwo honest caveats. A nominal voltage is a label, not a measurement: real cell voltage sags under load and drifts with state of charge, so the watt-hour figure computed this way is a rating rather than a guaranteed delivery. And this is educational material about units, not guidance for building, charging, or handling battery systems, which is specialised safety-critical work."
+    },
+    {
+      "heading": "AC at survey depth: RMS, and real versus apparent power",
+      "body": "In an AC circuit the voltage and current vary through every cycle, so the instantaneous power varies too, and a single number has to be defined before P = VI means anything. That number is the root mean square: square the waveform, average the square over a cycle, take the square root. RMS is defined that way for a reason. For a resistive load, using RMS values in the DC expressions returns the correct average power, so a 120 V rms supply heats a resistor exactly as a 120 V DC supply would.\n\nFor a sinusoid the RMS value is the peak divided by the square root of two. A 120 V rms supply therefore peaks at 120 times 1.41421 = 169.706 V, which is why insulation and semiconductor ratings are set by the peak while power arithmetic uses the RMS. A 1,500 W resistive heater on that supply draws I = P/V = 12.5 A rms and presents R = V squared over P = 14,400/1,500 = 9.6 ohm. Both derived forms agree: 12.5 squared times 9.6 = 1,500 W, and 14,400/9.6 = 1,500 W. The instantaneous power still swings between zero and 3,000 W, twice the average.\n\nOnce the load is not purely resistive, current and voltage stop peaking together and the accounting splits three ways. Apparent power is the plain product of RMS voltage and RMS current, expressed in volt-amperes; it comprises both of the parts below. Real, or active, power is the part that actually gets converted, measured in watts, and it is what an energy meter accumulates. Reactive power, in volt-amperes reactive, is the portion that establishes and sustains the electric and magnetic fields in equipment such as motors and transformers; it flows back and forth rather than being consumed. The power factor is the ratio of real to apparent power, written as cos of the phase angle for the sinusoidal case.\n\nWhy engineers care: apparent power sets the current, and current sets the I squared R heating in every conductor between the generator and the load. A load pulling 20 A at 240 V presents 4,800 VA; at a power factor of 0.80 it is doing 3,840 W of real work. Delivering that same 3,840 W at unity power factor would need only 16 A, cutting the loss in a 0.5 ohm feeder from 200 W to 128 W. State this carefully: the cos-phi picture assumes sinusoidal voltage and current, and with the distorted currents drawn by many electronic loads the full accounting needs more machinery than a single phase angle. That belongs to a circuits course, not here."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "electrical power",
+      "definition": "The rate at which a circuit element converts electrical energy into another form, equal to the voltage across the element times the current through it."
+    },
+    {
+      "term": "watt",
+      "definition": "The SI coherent derived unit of power, equal to one joule per second, or in base units kilogram metre squared per second cubed."
+    },
+    {
+      "term": "joule",
+      "definition": "The SI coherent derived unit of energy and work, equal to one newton metre, and the unit in which every energy quantity in this lesson can be expressed."
+    },
+    {
+      "term": "kilowatt-hour",
+      "definition": "An energy unit equal to one thousand watts sustained for one hour, which works out to 3.6 megajoules; utility bills are written in these."
+    },
+    {
+      "term": "resistive heating",
+      "definition": "The conversion of electrical energy into thermal energy as charge moves through a resistance, equal to the current squared times that resistance."
+    },
+    {
+      "term": "derating",
+      "definition": "Deliberately operating a part below its nameplate maximum so that electrical and thermal stress, and therefore the rate of degradation, stay low."
+    },
+    {
+      "term": "ampere-hour",
+      "definition": "A quantity of electric charge equal to one ampere flowing for one hour, or 3,600 coulombs; it becomes an energy figure only after multiplication by voltage."
+    },
+    {
+      "term": "root mean square",
+      "definition": "The square root of the time-average of the squared value of a waveform over one cycle, chosen so that DC power expressions give the correct average for a resistive load."
+    },
+    {
+      "term": "apparent power",
+      "definition": "The plain product of RMS voltage and RMS current in an AC circuit, expressed in volt-amperes, comprising both the active and the reactive part."
+    },
+    {
+      "term": "power factor",
+      "definition": "The ratio of the real power a load actually converts to the apparent power it draws; for sinusoidal voltage and current it equals the cosine of the phase angle between them."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "There are two different questions you can ask about electricity, and mixing them up causes most of the trouble. The first is how fast: how much energy is this thing eating right now? That is power, and it is measured in watts. The second is how much: how much energy has it eaten in total? That is energy, and the electric company measures it in kilowatt-hours. A 1,500 watt heater is always a 1,500 watt heater whether you run it for one minute or one month, but the number on the bill keeps climbing the whole time it is on. Watts come from two things multiplied together: how hard the electricity is being pushed (volts) and how much of it is flowing (amps). That is why the same wattage can be delivered as a gentle push on a huge flow or a huge push on a tiny flow. Power companies pick the second one, because wires get hot from flow, and the heat goes up with the flow squared. Ten times less flow means one hundred times less wasted heat.",
+    "analogy": "Power is the speedometer and energy is the odometer. Sixty miles per hour tells you how fast you are going right now; it never becomes a distance until you multiply by a time. Drive at sixty for two hours and you have gone one hundred and twenty miles. A kilowatt-hour is built exactly that way, from a rate multiplied by a duration, which is why it is a total and not a speed.",
+    "analogyLimits": "The analogy stops in two places. A speedometer reads one number, but electrical power is a product of two independent things, volts and amps, and the same wattage can come from wildly different pairs of them. That trade is the entire reason the grid uses high voltage, and a speedometer has nothing corresponding to it. The analogy also says nothing about heat. A car does not warm up because its odometer climbs, but a resistor's temperature is set by the power it is dissipating at this instant, not by the total energy that has ever passed through it."
+  },
+  "workedExample": "Two calculations, both executed numerically. (1) Transmission at two voltages, same delivered power. A line must deliver 5.0 MW, and its conductors have a total resistance of 2.0 ohm. At 15 kV the current is I = P/V = 5.0 x 10^6 W / 15,000 V = 333.333 A, so the loss is I squared R = 333.333 squared x 2.0 = 222,222 W, about 222 kW, which is 4.4 percent of the delivered power. At 150 kV the current is 33.3333 A and the loss is 33.3333 squared x 2.0 = 2,222 W, about 2.2 kW, or 0.044 percent. Ten times the voltage gives one tenth the current and one hundredth the loss, because the loss depends on the square of current. The idealisation: at 15 kV the sending end must supply about 5.22 MW, the line resistance was stated rather than computed from conductor geometry, and reactance is ignored. (2) An appliance's energy and cost. A space heater with a 1,500 W nameplate runs 4.0 hours a day for 30 days. Energy = 1,500 W x 4.0 h x 30 = 180,000 W-h = 180 kW-h, which is 180 x 3.6 x 10^6 = 6.48 x 10^8 joules. EIA's Electric Power Monthly Table 5.6.A, released 23 July 2026, puts the United States average residential price at 18.44 cents per kilowatt-hour for May 2026. At that price the month costs 180 x $0.1844 = $33.19. That price is a national monthly average and will differ from any particular tariff.",
+  "commonMistakes": [
+    {
+      "mistake": "Using the source voltage in P = V squared over R for a resistor that only drops part of it.",
+      "correction": "V in that expression must be the voltage across the resistor itself. With 12 V across 10 ohm in series with 30 ohm, the current is 0.3 A, the 10 ohm resistor drops 3 V, and it dissipates 0.9 W. Using 12 V gives 14.4 W, which is more than the entire circuit's 3.6 W and is therefore visibly impossible."
+    },
+    {
+      "mistake": "Applying P = I squared R or P = V squared over R to a motor, battery, or LED.",
+      "correction": "Those two forms exist only because Ohm's law was substituted into P = VI, so they require a resistance. For anything that is not one, only P = VI is available, using the element's own terminal voltage and current."
+    },
+    {
+      "mistake": "Treating the kilowatt-hour as a unit of power, or writing kilowatts per hour when kilowatt-hours are meant.",
+      "correction": "A kilowatt-hour is a kilowatt sustained for an hour, so it is power multiplied by time: energy, equal to 3.6 MJ. Kilowatts per hour would be a rate of change of power, which is almost never what is intended."
+    },
+    {
+      "mistake": "Reading a battery's milliamp-hour rating as a measure of stored energy.",
+      "correction": "Ampere-hours measure charge. Energy requires the voltage as well: watt-hours equal volts times amp-hours. 4,500 mAh stores 17.325 W-h at 3.85 V but 16.65 W-h at 3.7 V, so two packs with the same mAh label can hold different energy."
+    },
+    {
+      "mistake": "Assuming a quoted AC voltage such as 120 V is the peak value.",
+      "correction": "Quoted AC supply voltages are RMS values. For a sinusoid the peak is the RMS times the square root of two, so 120 V rms peaks at 169.706 V. RMS is the value that makes the DC power expressions return the correct average power for a resistive load; the peak is what insulation and device ratings must survive."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Power (watt)",
+      "b": "Energy (joule, or kilowatt-hour)",
+      "distinction": "Power is a rate and exists at an instant; energy is power accumulated over a duration. A heater's wattage never changes while it runs, but its energy total climbs every second. One kilowatt-hour is 3.6 megajoules."
+    },
+    {
+      "a": "P = I squared R",
+      "b": "P = V squared over R",
+      "distinction": "Algebraically equivalent for a resistance, but they need different inputs. Reach for I squared R when the current is what you know, as along a series path or a transmission line; reach for V squared over R when the voltage across the element is what you know. Neither applies to a non-resistive element."
+    },
+    {
+      "a": "Ampere-hour",
+      "b": "Watt-hour",
+      "distinction": "An ampere-hour is a quantity of charge, 3,600 coulombs. A watt-hour is a quantity of energy. Converting between them requires the voltage: watt-hours equal volts times amp-hours, so the same amp-hour rating at a different voltage holds different energy."
+    },
+    {
+      "a": "Real (active) power, in watts",
+      "b": "Apparent power, in volt-amperes",
+      "distinction": "Apparent power is the plain product of RMS voltage and RMS current and sets the current a conductor must carry. Real power is the part actually converted and is what the meter bills. Their ratio is the power factor, and it is 1 only when current and voltage are in phase."
+    },
+    {
+      "a": "Nameplate power rating",
+      "b": "Derated operating limit",
+      "distinction": "A nameplate rating is the dissipation a part can shed at a stated ambient temperature. A derated limit is the lower figure a designer chooses to stay under so that stress and degradation rate stay low, and how far to derate depends on the industry and on the consequence of failure."
+    }
+  ],
+  "keyTakeaway": "P = VI is always true for an element's own voltage and current; I squared R and V squared over R are Ohm's law consequences that apply only to a resistance and only with that resistance's own quantities. Watts are a rate, joules and kilowatt-hours are totals, and the squared dependence of resistive heating on current is why grids transmit at high voltage and why amp-hours alone never tell you a battery's energy.",
+  "questionBank": [
+    {
+      "id": "engineering-fundamentals:electrical-fundamentals:electrical-power:1",
+      "prompt": "One watt is equal to which of the following?",
+      "options": [
+        "One joule per second",
+        "One joule",
+        "One coulomb per second",
+        "One volt per ampere"
+      ],
+      "correctIndex": 0,
+      "explanation": "The watt is the SI coherent derived unit of power and is expressed in other SI units as J/s. A joule alone is energy, not a rate. One coulomb per second is an ampere, the unit of current. One volt per ampere is an ohm, the unit of resistance.",
+      "difficulty": "recall",
+      "skill": "Recalling the SI definition of the watt and separating it from the units of energy, current, and resistance.",
+      "sourceIds": [
+        "nist-sp811-chapter-4-classes-of-si-units",
+        "nist-sp330-2019-section-2-si-units"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:electrical-fundamentals:electrical-power:2",
+      "prompt": "A utility bill lists 180 kW-h of consumption for the month. What does that number measure?",
+      "options": [
+        "The average rate at which the household drew power over the month",
+        "The total energy the household used over the month, equal to 6.48 x 10^8 joules",
+        "The highest instantaneous power the household reached during the month",
+        "The average voltage supplied to the household over the month"
+      ],
+      "correctIndex": 1,
+      "explanation": "A kilowatt-hour is a kilowatt sustained for an hour, so it is power multiplied by time, which is energy. Since 1 kW-h is 3.6 x 10^6 J, 180 kW-h is 6.48 x 10^8 J. It is not a rate, so it is neither an average nor a peak power, and it carries no information about voltage.",
+      "difficulty": "understanding",
+      "skill": "Distinguishing an energy total from a power rate and converting kilowatt-hours to joules.",
+      "sourceIds": [
+        "openstax-university-physics-2-electrical-energy-and-power",
+        "eia-glossary-electricity"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:electrical-fundamentals:electrical-power:3",
+      "prompt": "A 12 V source drives a 10 ohm resistor in series with a 30 ohm resistor. How much power does the 10 ohm resistor dissipate?",
+      "options": [
+        "0.9 W",
+        "14.4 W",
+        "3.6 W",
+        "2.7 W"
+      ],
+      "correctIndex": 0,
+      "explanation": "The current is 12 V / 40 ohm = 0.3 A, so the 10 ohm resistor dissipates I squared R = 0.09 x 10 = 0.9 W. The 14.4 W option comes from putting the source voltage into V squared over R, which is the classic error: only 3 V appears across that resistor, and 14.4 W exceeds the whole circuit's 3.6 W. 3.6 W is the total circuit power and 2.7 W is the 30 ohm resistor's share.",
+      "difficulty": "application",
+      "skill": "Selecting the correct power form and supplying the element's own current or voltage rather than the source's.",
+      "sourceIds": [
+        "openstax-university-physics-2-electrical-energy-and-power"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:electrical-fundamentals:electrical-power:4",
+      "prompt": "A line delivers a fixed 5.0 MW through conductors of total resistance 2.0 ohm. If the transmission voltage is raised from 15 kV to 150 kV, what happens to the resistive line loss?",
+      "options": [
+        "It is unchanged, because the delivered power is the same",
+        "It falls to one tenth of its former value",
+        "It falls to one hundredth of its former value, from about 222 kW to about 2.2 kW",
+        "It rises by a factor of one hundred, because the voltage is higher"
+      ],
+      "correctIndex": 2,
+      "explanation": "For a fixed delivered power, current is P/V, so a tenfold rise in voltage cuts the current tenfold, from 333.333 A to 33.3333 A. Loss is I squared R, so it falls by a factor of one hundred, from 222,222 W to 2,222 W. It is not unchanged, because loss depends on current rather than on delivered power directly; it falls by a hundred rather than by ten because the dependence is on the square of current; and it falls rather than rises because higher voltage means less current for the same power.",
+      "difficulty": "analysis",
+      "skill": "Analysing how I squared R loss scales when transmission voltage changes at fixed delivered power.",
+      "sourceIds": [
+        "openstax-university-physics-2-transformers",
+        "openstax-university-physics-2-electrical-energy-and-power"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:electrical-fundamentals:electrical-power:5",
+      "prompt": "A portable power bank is labelled 20,000 mAh and is built from cells with a nominal voltage of 3.7 V. What is its rated stored energy, and how does it compare with the FAA's 100 W-h limit for a spare lithium-ion battery in carry-on baggage?",
+      "options": [
+        "20 W-h, well under the limit, since the milliamp-hour figure converts directly to watt-hours",
+        "20,000 W-h, far over the limit",
+        "100 W-h, exactly at the limit",
+        "74 W-h, under the limit, because watt-hours are the voltage times the amp-hours"
+      ],
+      "correctIndex": 3,
+      "explanation": "Ampere-hours measure charge, not energy; energy requires the voltage. Watt-hours are volts times amp-hours, so 20 A-h x 3.7 V = 74 W-h, which is below the FAA's 100 W-h ceiling. Reading 20,000 mAh as 20 W-h or as 20,000 W-h treats a charge figure as an energy figure, and 100 W-h would require a higher voltage than 3.7 V at this capacity.",
+      "difficulty": "application",
+      "skill": "Converting ampere-hour capacity to watt-hour energy and recognising that charge alone does not determine energy.",
+      "sourceIds": [
+        "faa-packsafe-lithium-batteries"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "engineering-fundamentals:electrical-fundamentals:electrical-power:1",
+      "prompt": "One watt is equal to which of the following?",
+      "options": [
+        "One joule per second",
+        "One joule",
+        "One coulomb per second",
+        "One volt per ampere"
+      ],
+      "correctIndex": 0,
+      "explanation": "The watt is the SI coherent derived unit of power and is expressed in other SI units as J/s. A joule alone is energy, not a rate. One coulomb per second is an ampere, the unit of current. One volt per ampere is an ohm, the unit of resistance.",
+      "difficulty": "recall",
+      "skill": "Recalling the SI definition of the watt and separating it from the units of energy, current, and resistance.",
+      "sourceIds": [
+        "nist-sp811-chapter-4-classes-of-si-units",
+        "nist-sp330-2019-section-2-si-units"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:electrical-fundamentals:electrical-power:2",
+      "prompt": "A utility bill lists 180 kW-h of consumption for the month. What does that number measure?",
+      "options": [
+        "The average rate at which the household drew power over the month",
+        "The total energy the household used over the month, equal to 6.48 x 10^8 joules",
+        "The highest instantaneous power the household reached during the month",
+        "The average voltage supplied to the household over the month"
+      ],
+      "correctIndex": 1,
+      "explanation": "A kilowatt-hour is a kilowatt sustained for an hour, so it is power multiplied by time, which is energy. Since 1 kW-h is 3.6 x 10^6 J, 180 kW-h is 6.48 x 10^8 J. It is not a rate, so it is neither an average nor a peak power, and it carries no information about voltage.",
+      "difficulty": "understanding",
+      "skill": "Distinguishing an energy total from a power rate and converting kilowatt-hours to joules.",
+      "sourceIds": [
+        "openstax-university-physics-2-electrical-energy-and-power",
+        "eia-glossary-electricity"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:electrical-fundamentals:electrical-power:3",
+      "prompt": "A 12 V source drives a 10 ohm resistor in series with a 30 ohm resistor. How much power does the 10 ohm resistor dissipate?",
+      "options": [
+        "0.9 W",
+        "14.4 W",
+        "3.6 W",
+        "2.7 W"
+      ],
+      "correctIndex": 0,
+      "explanation": "The current is 12 V / 40 ohm = 0.3 A, so the 10 ohm resistor dissipates I squared R = 0.09 x 10 = 0.9 W. The 14.4 W option comes from putting the source voltage into V squared over R, which is the classic error: only 3 V appears across that resistor, and 14.4 W exceeds the whole circuit's 3.6 W. 3.6 W is the total circuit power and 2.7 W is the 30 ohm resistor's share.",
+      "difficulty": "application",
+      "skill": "Selecting the correct power form and supplying the element's own current or voltage rather than the source's.",
+      "sourceIds": [
+        "openstax-university-physics-2-electrical-energy-and-power"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "engineering-fundamentals:electrical-fundamentals:voltage-current-and-resistance",
+    "engineering-fundamentals:electrical-fundamentals:ohm-s-law",
+    "engineering-fundamentals:electrical-fundamentals:series-and-parallel-circuits",
+    "engineering-fundamentals:mechanics:work-and-energy"
+  ],
+  "sources": [
+    "openstax-university-physics-2-electrical-energy-and-power",
+    "openstax-university-physics-2-power-in-an-ac-circuit",
+    "openstax-university-physics-2-transformers",
+    "nist-sp811-chapter-4-classes-of-si-units",
+    "nist-sp330-2019-section-2-si-units",
+    "eia-epm-table-5-6-a-average-price-of-electricity",
+    "eia-faq-transmission-distribution-losses",
+    "eia-glossary-electricity",
+    "faa-packsafe-lithium-batteries",
+    "nasa-eee-inst-002-parts-selection-screening-qualification-derating",
+    "doe-femp-what-is-energy-efficiency"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "All sources classified REFERENCE_ONLY; no source prose, table, or figure reproduced. No engineering standard's text or design values reproduced.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Every field was rewritten from scratch against live sources; the generated draft contained no electrical content. Physics relations come from OpenStax University Physics Volume 2 and unit definitions from NIST SP 811 and SP 330, restated in original prose. The electricity price is EIA Electric Power Monthly Table 5.6.A for May 2026, the transmission and distribution loss figure is the EIA FAQ, the AC power vocabulary is the EIA glossary, the ampere-hour to watt-hour relation and the 100 W-h carry-on limit are FAA PackSafe, and the derating illustration is NASA/TP-2003-212242. All arithmetic in the lesson, the worked examples, the common mistakes, and the question explanations was executed with python3 in Bash before publication."
+  },
+  "contentHash": "07f2a2a6fb02f8d7",
+  "status": "source-verified",
+  "public": false
+}

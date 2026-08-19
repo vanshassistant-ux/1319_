@@ -1,0 +1,412 @@
+{
+  "topicId": "engineering-fundamentals:materials:material-properties",
+  "subjectId": "engineering-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "What a material property is: a measured response to a defined stimulus under stated conditions, not an intrinsic label",
+      "The four property families: mechanical, physical, chemical, and manufacturing-related",
+      "Mechanical property vocabulary: strength, stiffness, hardness, toughness, ductility, fatigue resistance, creep",
+      "The distinctions students blur: strength vs stiffness, hardness vs toughness, ductile vs brittle, strength vs hardness",
+      "Structure-property relationships at an introductory level: the four material classes, bonding, microstructure, grain size, alloying, heat treatment",
+      "Property variability: scatter, processing dependence, anisotropy, temperature dependence, loading-rate dependence",
+      "Typical/handbook values versus statistically derived design values",
+      "Testing methods and what each measures: tension test, hardness scales, notched-bar impact, fatigue testing"
+    ],
+    "supporting": [
+      "Why hardness scales are not directly interchangeable and why conversions are material-specific and approximate",
+      "Traceability of hardness measurement through national standard reference materials",
+      "Corrosion and oxidation resistance as chemical properties, including galvanic and stress-corrosion mechanisms",
+      "Grain refinement trade-off: room-temperature strength versus high-temperature creep resistance",
+      "Preferred grain orientation from rolling as a source of anisotropy"
+    ],
+    "outOfScope": [
+      "The stress-strain curve, elastic modulus, yield point, and the formal mechanics definitions of stress and strain (owned by engineering-fundamentals:materials:stress-and-strain)",
+      "Material selection method, weighting, and selection charts (owned by engineering-fundamentals:materials:material-selection)",
+      "Failure theories, fracture mechanics, and factors of safety (owned by engineering-fundamentals:engineering-practice:safety-factors-and-failure)",
+      "Specific allowable stresses, load factors, or design values from any engineering standard",
+      "Phase diagrams, dislocation theory, and quantitative Hall-Petch treatment"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Hardness is the property that lets a material resist plastic deformation, penetration, indentation, and scratching, and resistance to wear generally increases with hardness.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["doe-hdbk-1017-1-93-material-science-v1"],
+      "status": "supported"
+    },
+    {
+      "claim": "Hardness tests are empirical rather than measurements of a single fundamental quantity, and there is no exact mathematical relation between any two hardness test methods; a value converted from one scale to another should be labelled as converted.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["doe-hdbk-1017-1-93-material-science-v1", "astm-e140-hardness-conversion-tables"],
+      "status": "supported"
+    },
+    {
+      "claim": "ASTM E140 publishes hardness conversion tables that are organised by material family (non-austenitic steels, nickel alloys, cartridge brass, austenitic stainless steel plate and sheet, and others), and the standard treats conversion between hardness scales as an approximate process valid only for the specific materials indicated.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["astm-e140-hardness-conversion-tables"],
+      "status": "supported"
+    },
+    {
+      "claim": "NIST produces hardness Standard Reference Materials as transfer standards for calibrating and verifying hardness testing machines, currently covering the Rockwell C and N scales and the Knoop and Vickers microhardness scales.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-hardness-standard-reference-materials"],
+      "status": "supported"
+    },
+    {
+      "claim": "Toughness describes how a material behaves under sudden impact and is measured by the Charpy or Izod notched-bar test; the result depends on the notch and specimen geometry as well as on composition, so it is a comparative rather than an absolute measure.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["doe-hdbk-1017-1-93-material-science-v1", "astm-e23-notched-bar-impact-testing"],
+      "status": "supported"
+    },
+    {
+      "claim": "Ductility is the ability of a material to deform plastically in tension without rupturing; it increases with temperature and decreases with lower temperature, cold working, and irradiation, and a loss of ductility is described as brittleness.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["doe-hdbk-1017-1-93-material-science-v1"],
+      "status": "supported"
+    },
+    {
+      "claim": "Average grain size governs metal properties: a smaller grain size increases tensile strength and tends to increase ductility, while a larger grain size is preferred for improved high-temperature creep properties.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["doe-hdbk-1017-1-93-material-science-v1"],
+      "status": "supported"
+    },
+    {
+      "claim": "Rolling a metal sufficiently in one direction can produce preferred grain orientation, which is desirable in some applications and harmful in others — a structural origin of anisotropy.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["doe-hdbk-1017-1-93-material-science-v1"],
+      "status": "supported"
+    },
+    {
+      "claim": "An alloy is a mixture of two or more materials at least one of which is a metal; alloying changes properties without changing the base element — nickel below about 5 percent raises the toughness and ductility of steel without raising hardness because it does not form carbides, chromium forms a carbide that hardens steel, and stainless steels are alloy steels containing at least 12 percent chromium.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["doe-hdbk-1017-1-93-material-science-v1"],
+      "status": "supported"
+    },
+    {
+      "claim": "Corrosion is a chemical property category in its own right: general corrosion, galvanic corrosion between dissimilar metals in an electrolyte, localized corrosion, and stress-corrosion cracking at grain boundaries under tensile stress each degrade a material in service.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["doe-hdbk-1017-1-93-material-science-v1"],
+      "status": "supported"
+    },
+    {
+      "claim": "14 CFR 25.613 requires transport-category airplane material design values to be chosen to minimize the probability of structural failure due to material variability: 99 percent probability with 95 percent confidence where load passes through a single member whose failure would cause loss of structural integrity, and 90 percent probability with 95 percent confidence for redundant structure.",
+      "claimType": "LEGAL",
+      "sourceIds": ["ecfr-14-cfr-25-613-material-design-values"],
+      "status": "supported"
+    },
+    {
+      "claim": "FAA Advisory Circular 25.613-1 (8/6/03) distinguishes material strength properties from material design values, states that design values are generally statistically determined from enough data that the probability of failure due to material variability is minimized, notes that typical values are used for moduli, requires environmental effects such as temperature and moisture to be accounted for, and directs that testing account for anisotropy where the material is known to be anisotropic.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["faa-ac-25-613-1-material-design-values"],
+      "status": "supported"
+    },
+    {
+      "claim": "ASTM E8/E8M, Standard Test Methods for Tension Testing of Metallic Materials, determines yield strength, yield point elongation, tensile strength, elongation, and reduction of area, and provides information on strength and ductility under uniaxial tensile stress.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["astm-e8-e8m-tension-testing-metallic-materials"],
+      "status": "supported"
+    },
+    {
+      "claim": "ASTM E18 covers Rockwell and Rockwell superficial hardness, ASTM E10 covers Brinell hardness, and ASTM E92 covers Vickers and Knoop hardness — separate standards for separate indentation methods.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["astm-e18-rockwell-hardness", "astm-e10-brinell-hardness", "astm-e92-vickers-knoop-hardness"],
+      "status": "supported"
+    },
+    {
+      "claim": "ASTM E466 covers force-controlled constant-amplitude axial fatigue tests of metallic specimens in air at room temperature, excludes full-scale components and structures, and states that results apply to design only when the test conditions realistically simulate service conditions.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["astm-e466-axial-fatigue-testing"],
+      "status": "supported"
+    },
+    {
+      "claim": "Typical tabulated densities are about 7.8 x 10^3 kg/m^3 for iron or steel and about 2.7 x 10^3 kg/m^3 for aluminium, so a given shape in steel has roughly 2.9 times the mass of the same shape in aluminium.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-college-physics-2e-density"],
+      "status": "supported"
+    },
+    {
+      "claim": "Typical coefficients of linear thermal expansion near 20 degrees Celsius are about 25 x 10^-6 per degree Celsius for aluminium and about 12 x 10^-6 per degree Celsius for iron or steel, roughly a factor of two apart.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-college-physics-2e-thermal-expansion"],
+      "status": "supported"
+    },
+    {
+      "claim": "Strength and stiffness are distinct properties: stiffness is the elastic response quantified by Young's modulus, while strength refers to yield strength, ultimate tensile strength, or fracture stress; ductility is indicated by strain at failure, and a material that is not tough is termed brittle.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["libretexts-intro-mech-eng-materials-science", "doe-hdbk-1017-1-93-material-science-v1"],
+      "status": "supported"
+    },
+    {
+      "claim": "Metals, ceramics, polymers, and composites are the standard introductory material classes, and their bonding explains their characteristic behaviour: metallic bonding gives metals mobile electrons and therefore thermal and electrical conductivity along with ductility; ionic and covalent bonding makes ceramics hard, brittle, corrosion resistant, and electrically non-conductive; polymer chains held by weak intermolecular forces give low density and soft, flexible behaviour; composites combine a matrix and a reinforcement.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["chem-libretexts-classes-of-materials"],
+      "status": "supported"
+    },
+    {
+      "claim": "Body-centred cubic metals such as chromium, vanadium, molybdenum and tungsten tend toward high strength and low ductility, while face-centred cubic metals such as aluminium, copper, silver, gold and nickel tend toward lower strength and higher ductility — crystal structure is one root of characteristic behaviour.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["doe-hdbk-1017-1-93-material-science-v1"],
+      "status": "supported"
+    },
+    {
+      "claim": "Creep is permanent deformation that increases with time under a constant load or stress and becomes progressively easier as temperature rises.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["doe-hdbk-1017-1-93-material-science-v1"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether hardness values from different scales can be converted to one another.",
+      "positions": [
+        "Practitioners routinely use conversion tables and treat the converted number as equivalent.",
+        "ASTM E140 supplies conversion tables but scopes them to named material families and describes conversion as approximate; the DOE handbook states there is no exact mathematical relation between any two methods."
+      ],
+      "resolution": "The lesson teaches that conversions exist, are material-specific, and are approximate, and that a converted reading should be reported as converted. No conversion values are reproduced."
+    },
+    {
+      "issue": "Whether decreasing grain size is simply 'better'.",
+      "positions": [
+        "Grain refinement raises room-temperature tensile strength and tends to raise ductility.",
+        "Larger grain size is preferred where high-temperature creep resistance matters."
+      ],
+      "resolution": "Both are stated in DOE-HDBK-1017/1-93 and the lesson presents grain size as a trade-off tied to service temperature, not as a one-way improvement."
+    },
+    {
+      "issue": "Whether tabulated property values are usable as design values.",
+      "positions": [
+        "Introductory texts print single-value property tables that read like constants.",
+        "14 CFR 25.613 and FAA AC 25.613-1 require design values to be established by statistical analysis of test data at stated probability and confidence levels."
+      ],
+      "resolution": "The lesson gives ranges and conditions, labels every number a typical value, and explains the statistical basis of real design values without quoting any allowable from a standard."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained no substantive claims about material properties at all — its body text was subject-agnostic boilerplate ('Material Properties is a concept students use to organize information') that could have been pasted into any topic in any subject.",
+    "The draft's vocabulary entry defined 'Material Properties' as 'a foundational Engineering Fundamentals concept covered in this lesson', which is circular and carries no technical content.",
+    "The draft's analogy ('a label on a toolbox drawer', 'reading a map legend') described the act of naming a concept rather than anything about materials, and had no statement of where the analogy breaks down.",
+    "The draft's worked example described a student reading a scenario rather than performing any engineering work."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire generated draft with researched technical content; no draft wording survived except the topic title.",
+    "Added the four property families and the specific mechanical, physical, chemical, and manufacturing-related property names the assignment requires as this unit's anchor vocabulary.",
+    "Added explicit hand-offs so the stress-strain curve, modulus and yield belong to stress-and-strain, selection method belongs to material-selection, and failure theory and factors of safety belong to safety-factors-and-failure.",
+    "Added the required educational-material and not-engineering-design-guidance statement.",
+    "All numeric values in the lesson, worked example and question explanations were computed with python3 before publication (scratch script material-properties_calc.py) and every property number is given with its material condition and labelled a typical value, not a design value."
+  ],
+  "rightsIssues": [
+    "ASTM standards are copyrighted and paywalled. Only designations, titles, and scope descriptions read from ASTM's public abstract pages are used; no standard text, table, or numeric value is reproduced, and no allowable stress or design value from any standard is stated.",
+    "OpenStax pages carry a non-commercial Creative Commons licence in the footer and an explicit prohibition on ingestion into large language models; they are recorded REFERENCE_ONLY and used only to confirm numeric anchors, with all prose written independently.",
+    "Chemistry LibreTexts page is CC BY-NC-SA 3.0 and is recorded REFERENCE_ONLY; facts synthesized, no wording adapted.",
+    "DOE-HDBK-1017/1-93, 14 CFR 25.613, FAA AC 25.613-1 and NIST pages are U.S. Government works in the public domain; still synthesized in original prose rather than adapted."
+  ],
+  "sourceRecords": [
+    {
+      "id": "doe-hdbk-1017-1-93-material-science-v1",
+      "title": "DOE Fundamentals Handbook: Material Science, Volume 1 of 2 (DOE-HDBK-1017/1-93)",
+      "provider": "U.S. Department of Energy",
+      "url": "https://www.osti.gov/biblio/10144933",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read as the OSTI full-text PDF at https://www.osti.gov/servlets/purl/10144933 (96 pages, extracted with pypdf). Primary support for: definitions of hardness, toughness, ductility, malleability, strength and creep; grain, grain structure and grain boundary; the effect of grain size on tensile strength, ductility and high-temperature creep; preferred grain orientation from rolling; crystal structure (BCC/FCC/HCP) and characteristic strength and ductility; the definition of an alloy and the specific effects of nickel, chromium, copper and molybdenum in steel; stainless steel as at least 12 percent chromium; the empirical nature of hardness testing and the absence of an exact relation between hardness methods; and general, galvanic, localized and stress-corrosion mechanisms. No text reproduced."
+    },
+    {
+      "id": "ecfr-14-cfr-25-613-material-design-values",
+      "title": "14 CFR 25.613 — Material strength properties and material design values",
+      "provider": "Federal Aviation Administration, in the Electronic Code of Federal Regulations (Office of the Federal Register / Government Publishing Office)",
+      "url": "https://www.ecfr.gov/current/title-14/section-25.613",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "The eCFR web page blocked the fetcher; the section text was retrieved from the eCFR renderer API (https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-14?chapter=I&subchapter=C&part=25&section=25.613) with a browser user agent. Supports the statutory requirement that material design values be chosen to minimize the probability of structural failure due to material variability, and the 99 percent probability / 95 percent confidence (single load path) and 90 percent probability / 95 percent confidence (redundant structure) levels, plus paragraph (c) on environmental effects. Cited as a real-world example of how variability is handled in regulation, not as design guidance."
+    },
+    {
+      "id": "faa-ac-25-613-1-material-design-values",
+      "title": "Advisory Circular 25.613-1: Material Strength Properties and Material Design Values (8/6/03)",
+      "provider": "Federal Aviation Administration, U.S. Department of Transportation",
+      "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_25_613-1.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "WebFetch returned HTTP 403; the 4-page PDF was downloaded with curl using a browser user agent and extracted with pypdf. Supports the distinction between material strength properties and material design values, the statement that design values are generally statistically determined so that the probability of structural failure due to material variability is minimized, the note that typical values are used for moduli, the requirement to account for temperature and moisture effects, the direction that testing account for anisotropy where the material is known to be anisotropic, and the role of MMPDS as the successor to MIL-HDBK-5. No design values taken from it."
+    },
+    {
+      "id": "nist-hardness-standard-reference-materials",
+      "title": "Hardness Standard Reference Materials (SRM)",
+      "provider": "Materials Science and Engineering Division, National Institute of Standards and Technology",
+      "url": "https://www.nist.gov/mml/materials-science-and-engineering-division/mechanical-performance-group/hardness-standard",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports that NIST manufactures hardness SRMs as transfer standards for calibrating and verifying hardness testing machines, currently covering the Rockwell C and N scales and the Knoop and Vickers microhardness scales, and that hardness measurement is a common acceptance criterion in the steel industry. Used for the point that hardness readings are traceable to a maintained national scale rather than being self-evident numbers."
+    },
+    {
+      "id": "astm-e140-hardness-conversion-tables",
+      "title": "ASTM E140-12b(2019)e1: Standard Hardness Conversion Tables for Metals — Relationship Among Brinell, Vickers, Rockwell, Superficial, Knoop, Scleroscope, and Leeb Hardness",
+      "provider": "ASTM International (public abstract page)",
+      "url": "https://store.astm.org/e0140-12br19e01.html",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Paywalled standard; only the public abstract was read. Supports that the conversion tables are organised by material family (non-austenitic steels, nickel and high-nickel alloys, cartridge brass, austenitic stainless steel plate and sheet, and others), that conversions are valid only for the specific materials indicated, and that conversion between hardness scales is an approximate process because the different tests do not measure the same combination of material properties. No table values or standard text reproduced."
+    },
+    {
+      "id": "astm-e8-e8m-tension-testing-metallic-materials",
+      "title": "ASTM E8/E8M-24: Standard Test Methods for Tension Testing of Metallic Materials",
+      "provider": "ASTM International (public abstract page)",
+      "url": "https://store.astm.org/e0008_e0008m-24.html",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Paywalled standard; only the public abstract was read. Supports the designation and title and that the tension test determines yield strength, yield point elongation, tensile strength, elongation and reduction of area, giving information on strength and ductility under uniaxial tensile stress. No standard text or values reproduced."
+    },
+    {
+      "id": "astm-e18-rockwell-hardness",
+      "title": "ASTM E18-25: Standard Test Methods for Rockwell Hardness of Metallic Materials",
+      "provider": "ASTM International (public abstract page)",
+      "url": "https://store.astm.org/standards/e18",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Paywalled standard; only the public abstract was read. Supports the designation, title, and that the standard covers determination of Rockwell and Rockwell superficial hardness by the Rockwell indentation hardness principle. No values reproduced."
+    },
+    {
+      "id": "astm-e10-brinell-hardness",
+      "title": "ASTM E10: Standard Test Method for Brinell Hardness of Metallic Materials",
+      "provider": "ASTM International (public catalogue page)",
+      "url": "https://store.astm.org/standards/e10",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Paywalled standard; identified from the ASTM catalogue listing. Used only to name Brinell hardness testing by its governing ASTM designation and to state that it is a ball-indenter method distinct from Rockwell and Vickers. No values reproduced."
+    },
+    {
+      "id": "astm-e92-vickers-knoop-hardness",
+      "title": "ASTM E92: Standard Test Methods for Vickers Hardness and Knoop Hardness of Metallic Materials",
+      "provider": "ASTM International (public catalogue page)",
+      "url": "https://store.astm.org/standards/e92",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Paywalled standard; identified from the ASTM catalogue listing. Used only to name Vickers and Knoop hardness testing by their governing ASTM designation as a third distinct indentation family. No values reproduced."
+    },
+    {
+      "id": "astm-e23-notched-bar-impact-testing",
+      "title": "ASTM E23-25: Standard Test Methods for Notched Bar Impact Testing of Metallic Materials",
+      "provider": "ASTM International (public abstract page)",
+      "url": "https://store.astm.org/standards/e23",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Paywalled standard; only the public abstract was read. Supports that the standard covers Charpy (simple-beam) and Izod (cantilever-beam) notched-bar impact testing, that it subjects the specimen to a single force application producing multi-axial stresses at a notch under high loading rate and in some cases high or low temperature, and that results predict brittle-fracture likelihood only when correlated with service experience. No values reproduced."
+    },
+    {
+      "id": "astm-e466-axial-fatigue-testing",
+      "title": "ASTM E466-21: Standard Practice for Conducting Force Controlled Constant Amplitude Axial Fatigue Tests of Metallic Materials",
+      "provider": "ASTM International (public abstract page)",
+      "url": "https://store.astm.org/e0466-21.html",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Paywalled standard; only the public abstract was read. Supports that the practice covers constant-amplitude force-controlled axial fatigue tests on notched and unnotched metallic specimens in air at room temperature, that it excludes full-scale components and structures, and that results apply to design only when the test conditions realistically simulate service conditions. No values reproduced."
+    },
+    {
+      "id": "openstax-college-physics-2e-density",
+      "title": "College Physics 2e, Section 11.2: Density (Table 11.1, Densities of Various Substances)",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/college-physics-2e/pages/11-2-density",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "Creative Commons Attribution-NonCommercial-ShareAlike (as stated in the page footer); page also carries an explicit prohibition on ingestion into large language models",
+      "licenseUrl": "https://openstax.org/tos",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Used only to confirm the typical density anchors used in the worked example: iron or steel 7.8 x 10^3 kg/m^3 and aluminium 2.7 x 10^3 kg/m^3. No text reproduced."
+    },
+    {
+      "id": "openstax-college-physics-2e-thermal-expansion",
+      "title": "College Physics 2e, Section 13.2: Thermal Expansion of Solids and Liquids (Table 13.2, Thermal Expansion Coefficients at 20 degrees Celsius)",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/college-physics-2e/pages/13-2-thermal-expansion-of-solids-and-liquids",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "Creative Commons Attribution-NonCommercial-ShareAlike (as stated in the page footer); page also carries an explicit prohibition on ingestion into large language models",
+      "licenseUrl": "https://openstax.org/tos",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Used only to confirm the typical linear thermal expansion anchors at 20 degrees Celsius used in the worked example: aluminium 25 x 10^-6 per degree Celsius, iron or steel 12 x 10^-6 per degree Celsius, ordinary glass 9 x 10^-6, Pyrex 3 x 10^-6, concrete and brick 12 x 10^-6. No text reproduced."
+    },
+    {
+      "id": "libretexts-intro-mech-eng-materials-science",
+      "title": "Introduction to Mechanical Engineering, Chapter 4: Materials Science and Engineering",
+      "provider": "Engineering LibreTexts (California State Polytechnic University, Humboldt course shell)",
+      "url": "https://eng.libretexts.org/Courses/California_State_Polytechnic_University_Humboldt/Introduction_to_Mechanical_Engineering/Chapter_4%3A_Materials_Science_and_Engineering",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-ND (as stated in the page footer)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the explicit strength-versus-stiffness distinction used in this lesson: the chapter states that stiffness refers to Young's modulus while strength refers to yield strength, ultimate tensile strength or fracture stress, that ductility is indicated by strain at failure, and that a material lacking toughness is termed brittle. Also confirms the order-of-magnitude spread in stiffness across material classes. No-derivatives licence, so no wording adapted; used to confirm the distinction only."
+    },
+    {
+      "id": "chem-libretexts-classes-of-materials",
+      "title": "12.1: Classes of Materials (Chemistry: The Central Science map)",
+      "provider": "Chemistry LibreTexts",
+      "url": "https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_Chemistry_-_The_Central_Science_(Brown_et_al.)/12%3A_Solids_and_Modern_Materials/12.01%3A_Classes_of_Materials",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 3.0 (as stated in the page footer)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the four introductory material classes (metals, ceramics, polymers, composites) and the bonding-to-behaviour links: metals hard, ductile and conductive of heat and electricity; ceramics hard, brittle, corrosion resistant and electrically non-conductive; polymers widely variable, often soft and flexible with lower density; composites combining a matrix and reinforcement to exceed either constituent. No text reproduced."
+    }
+  ]
+}

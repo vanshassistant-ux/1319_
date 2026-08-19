@@ -1,0 +1,598 @@
+{
+  "topicId": "engineering-fundamentals:mechanics:statics",
+  "subjectId": "engineering-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "the two equilibrium conditions and their independence",
+      "planar and spatial equation counts",
+      "moment of a force about a point: Fd, sign convention, r x F",
+      "moment sums about an arbitrary point and strategic choice of moment centre",
+      "couples and statically equivalent resultants",
+      "statically determinate versus indeterminate, and improper constraint",
+      "two-force and three-force members",
+      "truss idealisations, method of joints, method of sections, zero-force members",
+      "reduction of distributed loads to equivalent resultants",
+      "centroid, centre of mass and centre of gravity",
+      "friction in equilibrium, impending motion, sliding versus tipping"
+    ],
+    "supporting": [
+      "units of force and moment (N, N.m)",
+      "modelling limits of the rigid-body and coefficient-of-friction idealisations",
+      "the forward link from indeterminacy to mechanics of materials"
+    ],
+    "outOfScope": [
+      "constructing free-body diagrams and the support-reaction inventory (owned by engineering-fundamentals:mechanics:free-body-diagrams)",
+      "Newton's three laws as such (owned by engineering-fundamentals:mechanics:force-and-motion)",
+      "accelerating bodies and kinetics (owned by engineering-fundamentals:mechanics:dynamics)",
+      "internal stress, strain and deformation calculation (owned by engineering-fundamentals:mechanics:stress-and-strain)",
+      "moments of inertia, shear and moment diagrams, frames and machines, fluid statics, wedges, belt and screw friction",
+      "any design values, allowable stresses or factors of safety"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Static equilibrium requires both that the vector sum of external forces on the body is zero and that the vector sum of external moments is zero; the two conditions are independent.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "libretexts-engineering-statics-equations-of-equilibrium",
+        "libretexts-mechanics-map-rigid-body-equilibrium",
+        "libretexts-engineering-statics-equilibrium"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The two vector conditions expand to six independent scalar equations in three dimensions and three in two dimensions (two force equations and one moment equation).",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-engineering-statics-equations-of-equilibrium",
+        "libretexts-mechanics-map-rigid-body-equilibrium"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A pair of equal, opposite, non-collinear forces (a couple) leaves zero net force but a non-zero moment, so force balance alone does not establish equilibrium. Worked instance: two 5.00 N forces 0.400 m apart give 0 N net force and 2.00 N.m of moment.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "libretexts-engineering-statics-couples",
+        "libretexts-engineering-statics-equations-of-equilibrium"
+      ],
+      "status": "supported",
+      "note": "Arithmetic executed in Python: 5.00 x 0.400 = 2.00 N.m."
+    },
+    {
+      "claim": "The magnitude of the moment of a force about a point is the force magnitude times the perpendicular distance from that point to the force's line of action; a force whose line of action passes through the point has zero moment arm and contributes nothing.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-engineering-statics-magnitude-of-a-moment"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The standard planar sign convention takes counter-clockwise moments as positive, corresponding to a moment vector out of the page, and the three-dimensional moment is the cross product of a position vector from the moment centre to any point on the line of action with the force vector.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-engineering-statics-direction-of-a-moment",
+        "libretexts-engineering-statics-magnitude-of-a-moment"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "For a body in equilibrium the moment sum may be taken about any point, and choosing a point that removes unknowns from the equation is the standard strategy.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-mechanics-map-rigid-body-equilibrium",
+        "libretexts-engineering-statics-magnitude-of-a-moment"
+      ],
+      "status": "supported",
+      "note": "Mechanics Map 3.6 states directly that any point should work and advises choosing one that decreases the number of unknowns. The lesson's short justification (the correction term when the moment centre shifts is the shift vector crossed into the total force, which is zero in equilibrium) is a derivation from the cross-product definition, not a claim attributed to a source."
+    },
+    {
+      "claim": "A couple has zero resultant force, a magnitude equal to one force times the perpendicular distance between the two lines of action, and the same moment about every point, so it can be relocated on a rigid body without changing external effects - though relocating it does change internal force distribution.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-engineering-statics-couples"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A system is statically determinate when the unknown reaction components do not exceed the independent equilibrium equations available (three in 2D, six in 3D); a planar frame on two pin supports has four unknowns against three equations and is indeterminate to the first degree.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-engineering-statics-stability-and-determinacy",
+        "libretexts-engineering-statics-equations-of-equilibrium"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Statically indeterminate problems are closed by adding compatibility of deformation and constitutive (force-displacement) relations, which carry material properties; this is why they belong to mechanics of materials rather than statics.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "mit-ocw-1050-indeterminate-systems",
+        "libretexts-engineering-statics-stability-and-determinacy"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Even with the right number of reactions a body can be improperly constrained: reaction lines of action concurrent at a single point leave it unstable in rotation, and reaction components all parallel leave it unstable in translation. Stability of this kind is loading independent.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-engineering-statics-stability-and-determinacy"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A two-force member, loaded at exactly two points with no applied couples, carries forces that are equal, opposite, and collinear along the line joining those points, because non-collinear equal and opposite forces would form a couple.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-mechanics-map-two-force-members",
+        "mit-4441-two-and-three-force-members"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "For a three-force member in equilibrium with non-parallel forces, the three lines of action must be concurrent; the parallel arrangement is the alternative case.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "mit-4441-two-and-three-force-members"
+      ],
+      "status": "supported",
+      "note": "The only source located for this result is a copyrighted MIT 4.441 lecture page with no reuse licence, so it is REFERENCE_ONLY. The result was independently re-derived from moment equilibrium (take moments about the intersection of two of the lines; the third must have zero moment arm there) before it was written into the lesson, so the lesson does not depend on that page's wording."
+    },
+    {
+      "claim": "Truss analysis rests on stated idealisations: frictionless pin joints, loads and reactions applied only at joints, all members two-force members carrying purely axial force, and member weight neglected or split half to each end joint.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-engineering-statics-trusses"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The method of joints gives only two scalar equations per joint because the forces at a pin are concurrent and the moment equation carries no information; unknown member forces are assumed tensile and a negative result means compression.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-engineering-statics-method-of-joints"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The method of sections exposes only the members a cut passes through, and in two dimensions cutting more than three members produces more unknowns than the three available equilibrium equations.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-engineering-statics-method-of-sections"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Zero-force members are identified from joint geometry (two non-collinear members at an unloaded joint; the odd member out where three meet and two are collinear) and are not redundant in practice, because they may brace against buckling or be loaded under other load cases.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-engineering-statics-trusses"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A distributed load may be replaced for rigid-body equilibrium by a single force equal to the area under the load-intensity diagram, acting through the centroid of that area; a uniform intensity w over length L gives wL at mid-length and a triangular load gives wL/2 one third of the length from the tall end.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-engineering-statics-distributed-loads",
+        "libretexts-engineering-statics-centroids"
+      ],
+      "status": "supported",
+      "note": "The one-third position is the centroid of a triangle and follows from the same area-and-centroid rule the page states; it was checked against the general rule rather than quoted."
+    },
+    {
+      "claim": "Centroid, centre of mass and centre of gravity coincide for a homogeneous body in a uniform gravitational field, because density and gravitational acceleration factor out of the weighted average and cancel.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "libretexts-engineering-statics-centroids",
+        "libretexts-engineering-statics-center-of-gravity",
+        "nasa-bga-center-of-gravity"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The centre of gravity is the average location of a body's weight; weight always acts through it, a freely rotating body rotates about it, and for uniformly distributed mass it lies on any plane of symmetry.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "nasa-bga-center-of-gravity",
+        "libretexts-engineering-statics-center-of-gravity"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "In equilibrium, dry static friction takes only the value needed to prevent sliding, bounded above by the static coefficient times the normal force; that bound is the impending-motion condition, and kinetic coefficients are almost always smaller than static ones. The coefficient relation is an approximate empirical model, not a law.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "libretexts-mechanics-map-dry-friction",
+        "openstax-university-physics-1-friction"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Whether a pushed body slides or tips is decided by computing both thresholds and taking the smaller; at impending tipping the distributed normal force acts at the contact edge. Worked instance: a 588 N crate 0.600 m wide with mu_s = 0.400 pushed at 0.900 m height slides at 235 N but tips at 196 N, so it tips first.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "libretexts-mechanics-map-slipping-vs-tipping",
+        "libretexts-mechanics-map-dry-friction"
+      ],
+      "status": "supported",
+      "note": "Executed in Python: W = 60.0 kg x 9.80665 m/s^2 = 588.399 N; P_slide = 0.400 x 588.399 = 235.36 N; P_tip = 588.399 x 0.300 / 0.900 = 196.13 N. The coefficient 0.400 and the geometry are stated as assumed problem data, not taken from any source."
+    },
+    {
+      "claim": "The SI unit of force is the newton (N, equal to m.kg.s^-2) and the SI unit of moment of force is the newton metre (N.m, equal to m^2.kg.s^-2).",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nist-sp811-chapter-4-classes-of-si-units"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Worked beam result: for a 6.00 m simply supported beam with a 12.0 kN point load at 2.00 m, a 4.00 kN/m uniform load over the right 3.00 m and a 9.00 kN.m counter-clockwise couple, the reactions are A_y = 12.5 kN and B_y = 11.5 kN, and the moment sum is zero about every point tested.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "libretexts-engineering-statics-equations-of-equilibrium",
+        "libretexts-engineering-statics-distributed-loads",
+        "libretexts-engineering-statics-couples",
+        "libretexts-mechanics-map-rigid-body-equilibrium"
+      ],
+      "status": "supported",
+      "note": "Executed in Python with exact rationals. UDL resultant 4.00 x 3.00 = 12.0 kN at x = 4.50 m; moments about A give 6.00 B_y = 24.0 + 54.0 - 9.00 = 69.0, B_y = 11.5 kN; vertical force sum gives A_y = 12.5 kN; moments about B give 6.00 A_y = 48.0 + 18.0 + 9.00 = 75.0, A_y = 12.5 kN; moment sums about x = 0, 2.00, 4.50, 6.00 and -3.00 m all return exactly 0."
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether the moment sum for an equilibrium body may be taken about any point.",
+      "positions": [
+        "LibreTexts Engineering Statics 5.3 lists the equilibrium equations without stating that the moment centre is arbitrary.",
+        "Mechanics Map 3.6 states directly that any point should work, and advises choosing one that reduces unknowns."
+      ],
+      "resolution": "Not a real conflict, only different coverage. The lesson states the arbitrary-point result on Mechanics Map's authority and adds a one-line justification derived from the cross-product definition, which the worked example then demonstrates numerically about five different points."
+    },
+    {
+      "issue": "How a truss zero-force member should be described.",
+      "positions": [
+        "Zero-force members can be identified and dropped from the analysis.",
+        "LibreTexts 6.3 warns they are not negligible in practice because of member weight, buckling restraint and other load cases."
+      ],
+      "resolution": "The lesson teaches the identification rules and then states the practical caveat explicitly, and makes the same point a common mistake."
+    },
+    {
+      "issue": "Status of the coefficient-of-friction relations.",
+      "positions": [
+        "They are often presented to students as laws.",
+        "OpenStax 6.2 states plainly that they are an approximate empirical model."
+      ],
+      "resolution": "The lesson calls the coefficient model approximate and empirical, and notes that tabulated coefficients scatter. No coefficient value is quoted from any source; the worked example's 0.400 is declared as assumed problem data."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained no subject content at all: it described statics only as 'a foundational concept in Engineering Fundamentals' and 'a concept students use to organize information'. Nothing in it stated the equilibrium conditions, the moment of a force, determinacy, trusses, or friction, so there was nothing substantive to verify.",
+    "The draft's vocabulary entries ('context', 'evidence', 'application') were generic study-skills terms, not statics terms, and its definition of statics was circular.",
+    "The draft's three quick-check questions tested generic study strategy rather than any statics content, and each offered only three options."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire lesson with subject content: the two equilibrium conditions, moments, moment-centre choice, couples and resultants, determinacy, two- and three-force members, trusses, distributed loads, centroids and centre of gravity, and friction including sliding versus tipping.",
+    "Added a fully worked simply supported beam solved for both reactions and then verified by re-summing moments about a second support and about a non-support point, with every number executed in Python before publication.",
+    "Added the subject's required statements that the lesson is educational material and not engineering design guidance, and that real design requires a licensed engineer working to the governing code.",
+    "Raised the question bank to five items with four options each, spanning recall through analysis, with two quantitative items whose arithmetic was executed before the distractors were written.",
+    "Named the modelling idealisations (rigid bodies, frictionless pins, loads at joints only, empirical friction coefficients, small-displacement geometry) and their limits, per the subject caution."
+  ],
+  "rightsIssues": [
+    "Every source is held REFERENCE_ONLY. The LibreTexts Engineering Statics pages are CC BY-NC-SA 4.0 and the Mechanics Map pages CC BY-SA 4.0; the NonCommercial and ShareAlike terms are not relied on for reuse, and no wording was reproduced or adapted from either.",
+    "MIT OpenCourseWare 1.050 is CC BY-NC-SA 4.0 and the MIT 4.441 lecture page carries a plain 1995-1997 copyright with no licence offered. Both are used as facts only; the three-force-member result was independently re-derived before being written.",
+    "NIST SP 811 and the NASA Glenn Beginner's Guide page are U.S. Government works used as factual references; no text was copied.",
+    "No engineering standard (ASME, ASTM, AISC, ACI, IEEE, ISO) was consulted, quoted, or relied on, and the lesson states no allowable stress, load factor, or design value.",
+    "All numeric values in the lesson are either executed arithmetic or declared assumed problem data; none is a tabulated material or design property taken from a source."
+  ],
+  "sourceRecords": [
+    {
+      "id": "libretexts-engineering-statics-equilibrium",
+      "title": "Engineering Statics: Open and Interactive, 3.1 Equilibrium",
+      "provider": "Daniel W. Baker and William Haynes, Colorado State University, hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Engineering_Statics:_Open_and_Interactive_(Baker_and_Haynes)/03:_Equilibrium_of_Particles/3.01:_Equilibrium",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0 (stated on the page)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Existing registry record, id and URL reused exactly. Supports the framing of equilibrium as zero acceleration (stationary or moving at constant velocity), the vector force-balance condition, and its derivation from Newton's second law. REFERENCE_ONLY; facts synthesized, no wording reproduced."
+    },
+    {
+      "id": "libretexts-engineering-statics-equations-of-equilibrium",
+      "title": "Engineering Statics: Open and Interactive, 5.3 Equations of Equilibrium",
+      "provider": "Daniel W. Baker and William Haynes, Colorado State University, hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Engineering_Statics:_Open_and_Interactive_(Baker_and_Haynes)/05:_Rigid_Body_Equilibrium/5.03:_Equations_of_Equilibrium",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0 (stated on the page)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. States the two vector conditions (sum of forces zero, sum of moments zero) and their expansion into independent scalar equations: three force plus three moment equations in three dimensions, reducing to two force equations and one moment equation in two dimensions. Source for the lesson's equation counts of three in 2D and six in 3D."
+    },
+    {
+      "id": "libretexts-engineering-statics-stability-and-determinacy",
+      "title": "Engineering Statics: Open and Interactive, 5.6 Stability and Determinacy",
+      "provider": "Daniel W. Baker and William Haynes, Colorado State University, hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Engineering_Statics:_Open_and_Interactive_(Baker_and_Haynes)/05:_Rigid_Body_Equilibrium/5.06:_Stability_and_Determinacy",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0 (stated on the page)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Defines a determinate system as one whose unknown reactions can be found by the methods of statics; requires the number of unknown force and moment reaction components to be less than or equal to the number of independent equilibrium equations available (no more than three in 2D, six in 3D). Also supplies the improper-constraint cases: reaction lines of action all intersecting at one point leaves rotational instability, and reaction components all parallel leaves translational instability, and stability is loading independent. The page explicitly declines to teach how over-constrained reactions are found, which is why the lesson points forward to mechanics of materials rather than claiming the method here."
+    },
+    {
+      "id": "libretexts-engineering-statics-magnitude-of-a-moment",
+      "title": "Engineering Statics: Open and Interactive, 4.2 Magnitude of a Moment",
+      "provider": "Daniel W. Baker and William Haynes, Colorado State University, hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Engineering_Statics:_Open_and_Interactive_(Baker_and_Haynes)/04:_Moments_and_Static_Equivalence/4.02:_Magnitude_of_a_Moment",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0 (stated on the page)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Gives the moment magnitude as the force magnitude times the perpendicular distance from the moment center to the line of action of the force (the moment arm), and states that points on the force's line of action experience no moment because the moment arm there is zero. Units shown as N.m and ft.lb. Source for the lesson's Fd rule and for the 'a force whose line passes through the point contributes nothing' shortcut."
+    },
+    {
+      "id": "libretexts-engineering-statics-direction-of-a-moment",
+      "title": "Engineering Statics: Open and Interactive, 4.1 Direction of a Moment",
+      "provider": "Daniel W. Baker and William Haynes, Colorado State University, hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Engineering_Statics:_Open_and_Interactive_(Baker_and_Haynes)/04:_Moments_and_Static_Equivalence/4.01:_Direction_of_a_Moment",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0 (stated on the page)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. States the two-dimensional sign convention that a counter-clockwise rotation corresponds to a moment vector pointing out of the page and is taken as positive, and gives the right-hand-rule constructions relating the position vector, the force vector and the moment direction, with the position vector drawn from the moment center to any point on the force's line of action. Source for the lesson's sign convention and for the cross-product ordering r cross F."
+    },
+    {
+      "id": "libretexts-engineering-statics-couples",
+      "title": "Engineering Statics: Open and Interactive, 4.5 Couples",
+      "provider": "Daniel W. Baker and William Haynes, Colorado State University, hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Engineering_Statics:_Open_and_Interactive_(Baker_and_Haynes)/04:_Moments_and_Static_Equivalence/4.05:_Couples",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0 (stated on the page)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Defines a couple as two parallel forces equal in magnitude, opposite in direction and non-coincident; states that the net force is zero so a couple produces rotation without translation, that its magnitude is force times the perpendicular distance between the two lines of action, and that the moment it produces is the same about every reference point, making a couple-moment a free vector for external effects. Also notes that moving a couple does change internal stresses, which the lesson repeats as a caveat."
+    },
+    {
+      "id": "libretexts-engineering-statics-trusses",
+      "title": "Engineering Statics: Open and Interactive, 6.3 Trusses",
+      "provider": "Daniel W. Baker and William Haynes, Colorado State University, hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Engineering_Statics:_Open_and_Interactive_(Baker_and_Haynes)/06:_Equilibrium_of_Structures/6.03:_Trusses",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0 (stated on the page)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Supplies the simple-truss idealizations: joints modelled as frictionless pins, all applied and reaction forces applied only at those joints, all members two-force members carrying purely axial force, and member weight either neglected or split half to each end pin. Also gives the two zero-force member rules (two non-collinear members at an unloaded joint; the odd member out at an unloaded joint where two of three members are collinear) and the warning that a zero-force member is not useless in practice because of self-weight, buckling restraint and other load cases."
+    },
+    {
+      "id": "libretexts-engineering-statics-method-of-joints",
+      "title": "Engineering Statics: Open and Interactive, 6.4 Method of Joints",
+      "provider": "Daniel W. Baker and William Haynes, Colorado State University, hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Engineering_Statics:_Open_and_Interactive_(Baker_and_Haynes)/06:_Equilibrium_of_Structures/6.04:_Method_of_Joints",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0 (stated on the page)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Supports the method of joints: each pin is treated as a particle, the forces at a joint are concurrent so the moment equation yields no information and only two scalar force equations are available, unknown member forces are assumed to be in tension (pulling away from the joint) with a negative result read as compression, and the solution proceeds from a joint with no more than two unknowns to adjacent joints."
+    },
+    {
+      "id": "libretexts-engineering-statics-method-of-sections",
+      "title": "Engineering Statics: Open and Interactive, 6.5 Method of Sections",
+      "provider": "Daniel W. Baker and William Haynes, Colorado State University, hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Engineering_Statics:_Open_and_Interactive_(Baker_and_Haynes)/06:_Equilibrium_of_Structures/6.05:_Method_of_Sections",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0 (stated on the page)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Supports the method of sections: a cut through the truss exposes only the member forces that were cut, each cut member adds one unknown, and cutting more than three members in a two-dimensional truss is not advised because it produces more unknowns than the three available equilibrium equations. Also supports the point that the method reaches a chosen member without solving for all the others."
+    },
+    {
+      "id": "libretexts-engineering-statics-distributed-loads",
+      "title": "Engineering Statics: Open and Interactive, 7.8 Distributed Loads",
+      "provider": "Daniel W. Baker and William Haynes, Colorado State University, hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Engineering_Statics:_Open_and_Interactive_(Baker_and_Haynes)/07:_Centroids_and_Centers_of_Gravity/7.08:_Distributed_Loads",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0 (stated on the page)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Supports the reduction of a distributed load to an equivalent concentrated force: the magnitude equals the area under the load-intensity curve, the line of action passes through the centroid of that area, load intensity is force per unit length in N/m or lb/ft, and the standard rectangular (base times height, centroid at mid-length) and triangular (half base times height) cases. The lesson states the triangular centroid as one third of the base from the tall end, which follows from the standard triangle centroid and was checked against the general area-and-centroid rule rather than quoted."
+    },
+    {
+      "id": "libretexts-engineering-statics-centroids",
+      "title": "Engineering Statics: Open and Interactive, 7.4 Centroids",
+      "provider": "Daniel W. Baker and William Haynes, Colorado State University, hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Engineering_Statics:_Open_and_Interactive_(Baker_and_Haynes)/07:_Centroids_and_Centers_of_Gravity/7.04:_Centroids",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0 (stated on the page)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Defines a centroid as a weighted average taken with a geometric weight such as area or volume rather than a physical weight, gives the discrete weighted-average formulas, and shows that for a homogeneous plate of uniform thickness and density in a uniform gravitational field the density, thickness and gravitational acceleration cancel, so the area centroid locates the centre of gravity. Source for the lesson's statement of when centroid, centre of mass and centre of gravity coincide."
+    },
+    {
+      "id": "libretexts-engineering-statics-center-of-gravity",
+      "title": "Engineering Statics: Open and Interactive, 7.2 Center of Gravity",
+      "provider": "Daniel W. Baker and William Haynes, Colorado State University, hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Engineering_Statics:_Open_and_Interactive_(Baker_and_Haynes)/07:_Centroids_and_Centers_of_Gravity/7.02:_Center_of_Gravity",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0 (stated on the page)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Defines the centre of gravity as the point at which all of a body's weight may be concentrated with the same external effect, and gives the first-moment-of-weight weighted average (sum of x_i W_i divided by sum of W_i). Source for the lesson's treatment of self-weight as a single equivalent force."
+    },
+    {
+      "id": "libretexts-mechanics-map-rigid-body-equilibrium",
+      "title": "Mechanics Map, 3.6 Equilibrium Analysis for a Rigid Body",
+      "provider": "Jacob Moore and contributors, Penn State Mont Alto, hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_Map_(Moore_et_al.)/03:_Static_Equilibrium_in_Rigid_Body_Systems/3.06:_Equilibrium_Analysis_for_a_Rigid_Body",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0 (stated on the page)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. States the rigid-body equilibrium equations and their counts (three scalar equations in two dimensions, six in three), and states directly that the point about which moments are summed may be any point, with the advice to choose a point that reduces the number of unknowns in the equation. This is the source for the lesson's central strategic claim about choosing the moment centre."
+    },
+    {
+      "id": "libretexts-mechanics-map-two-force-members",
+      "title": "Mechanics Map, 5.2 Two-Force Members",
+      "provider": "Jacob Moore and contributors, Penn State Mont Alto, hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_Map_(Moore_et_al.)/05:_Engineering_Structures/5.02:_Two-Force_Members",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0 (stated on the page)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Defines a two-force member as a body loaded by forces, and no moments, at exactly two locations, and derives that the two forces must be equal in magnitude, opposite in direction and collinear along the line joining the two points, because non-collinear equal and opposite forces would form a couple and violate moment equilibrium. Also supports the practical payoff that the force direction is then known in advance, reducing the unknown count."
+    },
+    {
+      "id": "libretexts-mechanics-map-dry-friction",
+      "title": "Mechanics Map, 6.1 Dry Friction",
+      "provider": "Jacob Moore and contributors, Penn State Mont Alto, hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_Map_(Moore_et_al.)/06:_Friction_and_Friction_Applications/6.01:_Dry_Friction",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0 (stated on the page)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Supports the equilibrium treatment of friction: static friction takes whatever value is needed to prevent sliding, up to a maximum equal to the static coefficient times the normal force; that maximum defines impending motion; once sliding begins the kinetic model applies with a coefficient that is almost always smaller than the static one."
+    },
+    {
+      "id": "libretexts-mechanics-map-slipping-vs-tipping",
+      "title": "Mechanics Map, 6.2 Slipping vs Tipping",
+      "provider": "Jacob Moore and contributors, Penn State Mont Alto, hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_Map_(Moore_et_al.)/06:_Friction_and_Friction_Applications/6.02:_Slipping_vs_Tipping",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0 (stated on the page)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Supports the sliding-versus-tipping comparison: compute the force that would cause slipping and the force that would cause tipping, and whichever requires less force happens first. Also supports the modelling step at impending tipping, where the distributed normal force has migrated as far as it can and acts at the edge of the contact area."
+    },
+    {
+      "id": "mit-ocw-1050-indeterminate-systems",
+      "title": "Solid Mechanics (1.050), Chapter 5: Indeterminate Systems",
+      "provider": "Louis L. Bucciarelli, MIT OpenCourseWare",
+      "url": "https://ocw.mit.edu/courses/1-050-solid-mechanics-fall-2004/",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0 (MIT OpenCourseWare course licence)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "The chapter PDF (d9fdb1614653b59fcfc8088da0c3b354_emech5_04.pdf, linked from the course page) was downloaded and read locally after text extraction on 2026-08-19; the canonical course URL is registered here. Supports the lesson's account of statically indeterminate problems: when the equations of static equilibrium do not suffice for a unique solution, the resolution is to admit displacements and member deformations, and the analysis rests on three sets of relations - equilibrium, compatibility of deformation, and force-displacement (constitutive) relations that carry the material properties. Also supports the small-displacement justification for writing equilibrium on the undeformed geometry."
+    },
+    {
+      "id": "mit-4441-two-and-three-force-members",
+      "title": "Two- and Three-Force Members (4.441 Basic Structural Design lecture notes)",
+      "provider": "Chris H. Luebkeman and Donald Peting, Massachusetts Institute of Technology",
+      "url": "https://web.mit.edu/4.441/1_lectures/1_lecture15/1_lecture15.html",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "No open licence offered; page carries a 1995-1997 copyright notice by the authors",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Used only for the three-force member result: when three non-parallel forces act on a body in equilibrium, their lines of action must intersect at a common point, and the parallel case is the alternative. Also corroborates the two-force result. Copyrighted with no reuse licence, so held REFERENCE_ONLY and no wording reproduced; the same three-force result was independently re-derived from moment equilibrium before it was written into the lesson."
+    },
+    {
+      "id": "nist-sp811-chapter-4-classes-of-si-units",
+      "title": "NIST Guide to the SI, Chapter 4: Two Classes of SI Units and the SI Prefixes",
+      "provider": "National Institute of Standards and Technology",
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Existing registry record, id and URL reused exactly. Re-read 2026-08-19 for this lesson. Table 3 gives force as the newton, symbol N, equal to m.kg.s^-2 in SI base units; Table 4 gives moment of force as the newton metre, symbol N.m, equal to m^2.kg.s^-2. Every force and moment in this lesson is stated in those units or in the kilonewton and kilonewton metre multiples."
+    },
+    {
+      "id": "nasa-bga-center-of-gravity",
+      "title": "Center of Gravity (Beginner's Guide to Aeronautics)",
+      "provider": "NASA Glenn Research Center",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/center-of-gravity/",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Retrieved 2026-08-19 with curl and a browser user agent because the standard fetcher hits a TLS chain error on www1.grc.nasa.gov. States that the centre of gravity is the average location of the weight of an object, that the weight of every object always acts through its centre of gravity, that a body free to rotate rotates about its centre of gravity, that the centre of gravity lies on any line or plane of symmetry when mass is uniformly distributed, and that the balance point found by supporting a body on an edge or string is the centre of gravity. Used for the lesson's centre-of-gravity framing and the balance test."
+    },
+    {
+      "id": "openstax-university-physics-1-friction",
+      "title": "University Physics Volume 1, 6.2 Friction",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Existing registry record, id and URL reused exactly. Supports the static friction inequality, the kinetic friction relation, the page's own characterisation of the coefficient model as an approximate empirical description rather than a law, and the modelled independence from contact area. No coefficient value in this lesson comes from this page; the worked example's coefficient is stated as assumed problem data."
+    }
+  ]
+}

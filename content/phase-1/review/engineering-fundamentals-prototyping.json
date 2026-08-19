@@ -1,0 +1,337 @@
+{
+  "id": "engineering-fundamentals:engineering-practice:prototyping",
+  "subjectSlug": "engineering-fundamentals",
+  "unitSlug": "engineering-practice",
+  "slug": "prototyping",
+  "title": "Prototyping",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 13,
+  "tags": [
+    "engineering-fundamentals",
+    "engineering-practice",
+    "prototyping",
+    "fidelity",
+    "additive-manufacturing",
+    "design-iteration"
+  ],
+  "in30Seconds": "A prototype is an instrument, not a milestone. Decide what you need to learn, then build the cheapest thing that can answer it. That decision sets the fidelity, the fabrication route, the number of parts and the lead time. It also sets the limits of the answer, because the material and process you prototype in are usually not the material and process you ship, and a part made a different way can mislead you.",
+  "whyItMatters": "Prototyping is where a design stops being an opinion. Courses, capstone projects and employers all judge whether your build answered a question or merely produced an object. NASA's systems engineering handbook puts numbers on the stakes: by the end of design roughly fifteen percent of a project's money has been spent, but the design has already committed about seventy-five percent of the life-cycle cost, and the cost of changing direction later climbs by factors of tens and then hundreds. A prototype is the cheapest legitimate way to buy information before that door closes. Knowing which prototype buys which information, and what it cannot tell you, is the part that transfers to every discipline.",
+  "learningObjectives": [
+    "Define a prototype as an instrument built to answer a stated question, and derive fidelity, fabrication route and quantity from that question.",
+    "Distinguish proof-of-concept, appearance, functional, engineering, pre-production and production-representative units by the question each answers.",
+    "Explain why buying high fidelity too early wastes money and anchors design thinking, and distinguish focused from comprehensive prototypes.",
+    "Compare fabrication routes — the seven ISO/ASTM 52900 additive categories, subtractive machining, forming, casting and hand fabrication — on cost, lead time, geometry, materials and surface finish.",
+    "Analyze why a prototype's performance can mislead when its material and process differ from production, using build-direction anisotropy as the worked case.",
+    "Apply a stated learning objective to choose between two prototyping routes, and record what each build was for and what it showed."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "The question comes first, the object second",
+      "body": "A prototype is an instrument. Before you build one, write a sentence in this form: we do not know whether X, and we will believe evidence of kind Y. The prototype is whatever produces evidence Y at the lowest cost. That one sentence then decides everything downstream — how faithful the build has to be, which fabrication route can supply it, how many copies you need, and how long you will wait. NASA's systems engineering handbook uses the same logic when it defines a prototype unit as an article that demonstrates form, fit and function at a scale representative of the final product operating in its operational environment, built to wring out the design so that what you learn feeds back into changes that improve manufacture, integration and maintainability. Notice what that definition does not say. It does not say the prototype proves the design. It says the prototype generates experience you send back into the design. A build with no question attached to it is a model, and models are for showing, not for learning."
+    },
+    {
+      "heading": "Types by purpose",
+      "body": "Prototype types are named for the question they answer, not for how they were made. A proof-of-concept asks whether the underlying principle works at all; NASA's low-fidelity equivalent is the breadboard, which demonstrates function only, without form or fit, often from commercial or ad hoc parts, and is explicitly not intended to give definitive information about operational performance. A form or appearance model answers questions about shape, size, proportion and feel, and usually contains nothing that works. A functional prototype does the opposite: it performs the function and may look nothing like the product. Between these sits NASA's brassboard, a medium-fidelity functional unit that starts to address scaling and can be run in simulated operational environments. An engineering prototype — NASA's engineering unit — is high fidelity: it resembles the final product as closely as possible and is built and tested to establish confidence that the design will function in its expected environments, and it can even become the final product if traceability is maintained. Beyond that lie pre-production and production-representative units: NASA's qualification unit is identical to the flight unit but deliberately taken to environmental extremes and therefore usually not flown, while a protoflight unit is a flight unit given a limited qualification programme. The ordering is a fidelity ladder, and each rung costs more than the last."
+    },
+    {
+      "heading": "Fidelity, and the cost of buying it early",
+      "body": "Fidelity is how closely the article resembles the intended product in form, function and the environment it is exercised in. Low fidelity is cheap, fast, and easy to throw away; high fidelity is expensive, slow, and hard to abandon. Buying high fidelity before you have a question that needs it wastes money twice. The first waste is direct: you paid for precision the question did not require. The second is a working caution rather than a documented cost, and it is worth naming anyway: a polished, expensive object tends to anchor a team, so review discussion drifts toward the artefact and away from the requirement, and options that were still live on paper stop being weighed. Treat that as practical advice from engineering practice, not as a measured effect. A second axis cuts across purpose: how much of the product a prototype contains. A focused prototype carries one subsystem and answers one question about it. A comprehensive prototype integrates most or all of the product and answers questions that only appear at the interfaces — thermal interaction, packaging, assembly order, human use. Focused builds are cheap and can be run in parallel; comprehensive builds are how integration surprises surface at all, which is why they arrive later and cost more."
+    },
+    {
+      "heading": "Fabrication routes, at survey level",
+      "body": "Additive processes build geometry by adding material in successive layers. ISO/ASTM 52900:2021, Additive manufacturing — General principles — Fundamentals and vocabulary, is the terminology standard behind the vocabulary the field uses, and that vocabulary sorts commercial processes into seven categories: material extrusion, vat photopolymerization, powder bed fusion, material jetting, binder jetting, directed energy deposition and sheet lamination. Their shared strengths are geometric freedom, no tooling and lead times measured in days; their shared weaknesses are surface finish, a narrower material menu, per-part cost that does not fall with quantity, and properties that depend on build direction. Subtractive machining removes material from stock: it gives production materials, tight tolerances and good finish, but only for geometry a cutter can reach, and cost and lead time climb with geometric complexity. Forming — sheet metal work, thermoforming — is quick for thin-walled shapes once a pattern or die exists. Casting, whether silicone-tool urethane casting for polymers or investment casting for metals, reaches shapes that are difficult or impossible to machine and yields small batches in production-like materials, but it needs a pattern and its lead time runs to weeks. Hand fabrication can reach geometry that is awkward to describe in a CAD model at all, and suits runs of one to a few parts, at the price of dimensional control that depends entirely on the maker. Sitting between prototype and production is soft tooling — an aluminium or pre-hardened-steel mould — which gives you production material and production process faster and for less money than production tooling, but with limited tool life and lead time still measured in weeks."
+    },
+    {
+      "heading": "The route is part of the answer",
+      "body": "The most common way a prototype misleads is that its material and process are not the production material and process, and nobody wrote that down. Additive processes are the clearest case because they build material directionally. NASA's additive manufacturing standard for spaceflight systems states the point plainly: the process creates material through a directional process, so the likelihood of anisotropic material is high unless controls are in place to limit the effect. That standard requires build orientation to be identified and maintained through all material property work, treats anisotropy as negligible only when properties differ by less than roughly five percent between orientations, and otherwise demands orientation-specific properties. The same concern reaches beyond spaceflight and beyond one alloy: a published dataset compares elastic modulus for additively and conventionally manufactured variants of Ti-6Al-4V, IN718 and 316L stainless steel, which is only worth doing because the manufacturing route changes the number. The practical consequence is a rule you can apply immediately. A material-extrusion part is built from bonded layers, so its stiffness and strength depend on the direction it was built in; it will tell you whether a snap-fit engages, whether an assembly clears, whether a hand can reach a control — and it will not tell you what an injection-moulded part of the same geometry does under load. NASA draws the same line institutionally: taking official verification credit on a prototype is normally not acceptable, and is done instead on a qualification, protoflight or flight unit."
+    },
+    {
+      "heading": "Cadence, and the cost-of-change curve",
+      "body": "The design-process lesson establishes that engineering design is a loop and that late fixes cost more. Prototyping is where that loop turns, so it is worth attaching the numbers. NASA's handbook reproduces a life-cycle cost curve showing that by the end of design only about fifteen percent of a project's money has typically been spent, while the design itself has already committed roughly seventy-five percent of the life-cycle cost — because the design determines how expensive the system will be to test, manufacture, integrate, operate and sustain. On the same figure, the cost of changing design direction rises by factors of roughly twenty to a hundred, and then five hundred to a thousand, as the project moves toward integration and operations. The handbook is explicit that these multipliers vary from project to project and that it is the shape of the curves, not the exact numbers, that transfers. The cadence that follows is many small loops early rather than few large loops late. NASA's own Phase B lists engineering prototyping among the risk-mitigation activities to be completed before detailed design, and lists improving the fidelity of models and prototypes as a phase activity — fidelity is something you raise deliberately, one question at a time, not something you start with."
+    },
+    {
+      "heading": "Prototypes in software and systems work",
+      "body": "The instrument logic is not specific to hardware. NASA's handbook treats the form of an end product as a function of the life-cycle phase and lists hardware, software, models and prototypes side by side, and it allows validation to be performed on product forms including algorithmic models, virtual-reality simulators, plywood mock-ups, breadboards and concept descriptions on paper. Its human-systems integration guidance lists mock-up and prototype human-in-the-loop evaluations among standard activities, and its decision-analysis section lists prototypes, simulations, human-in-the-loop testing and user review among the evaluation methods a team can select from. A paper sketch of a screen tested on five users is a prototype in exactly the sense used here: it is the cheapest artefact that answers whether people can find the control. The caution carries across too. A throwaway prototype that quietly becomes the product inherits every shortcut taken to make it cheap, which is the software version of taking verification credit on a prototype — the same thing the handbook warns against."
+    },
+    {
+      "heading": "Writing down what the prototype showed",
+      "body": "A prototype that is not documented has to be built again. NASA's verification and validation plan outline requires a project to describe the pedigree of its test articles — breadboards, prototypes, engineering units, qualification units, protoflight and flight units — to define what it means by each of those terms, and to describe what testing or analysis each type will undergo. That is the professional form of a habit you can start now: for every build, record the question it was made to answer, the fabrication route and material, the build orientation if it was made additively, what was measured, and what changed as a result. The last field is the one people skip and the one that carries the value, because a negative result is information. Without the log, a team six months later has a shelf of parts and no idea which question any of them settled."
+    },
+    {
+      "heading": "What this lesson is and is not",
+      "body": "This is educational material. It is not engineering design guidance, and nothing here should be used to size, select or qualify a real part. Real design is done by a licensed engineer working to the governing code and to the standards that apply to the product. This lesson deliberately gives no fabrication procedures and no machine settings, because process parameters belong to a qualified process on a specific machine, not to a survey. Shop work is also physically hazardous and requires training and appropriate protective measures before you touch anything. United States workplace regulation makes the baseline concrete: 29 CFR 1910.212 requires one or more methods of machine guarding to protect operators and others from hazards such as point of operation, ingoing nip points, rotating parts, and flying chips and sparks, and requires the point of operation of machines whose operation exposes a worker to injury to be guarded. Student and university shops run their own training, authorisation and supervision rules on top of that. Learn them and follow them before you make anything."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "Prototype",
+      "definition": "A physical or computational article built to answer a stated question about a design before that design is committed to production."
+    },
+    {
+      "term": "Fidelity",
+      "definition": "How closely an article resembles the intended final product in form, in function, and in the environment it is exercised in."
+    },
+    {
+      "term": "Breadboard",
+      "definition": "A low-fidelity build that demonstrates function only, without regard for shape or fit, and is not intended to give definitive information about operational performance."
+    },
+    {
+      "term": "Engineering unit",
+      "definition": "A high-fidelity build that resembles the intended product as closely as possible and is tested to establish confidence that the design will work in its expected environments."
+    },
+    {
+      "term": "Qualification unit",
+      "definition": "A build identical to the delivered article that is deliberately exposed to environmental extremes, and for that reason is usually not delivered or flown."
+    },
+    {
+      "term": "Tooling",
+      "definition": "The dies, moulds, patterns and fixtures a manufacturing route needs before it can make its first part; the cost is fixed and is spread across the parts produced."
+    },
+    {
+      "term": "Break-even quantity",
+      "definition": "The number of parts at which a route with high fixed cost and low per-part cost becomes cheaper than a route with no fixed cost and high per-part cost."
+    },
+    {
+      "term": "Anisotropy",
+      "definition": "The condition of a material whose stiffness or strength differs with direction, so a measured value is meaningful only alongside the direction it was measured in."
+    },
+    {
+      "term": "Additive manufacturing",
+      "definition": "The family of processes that build a three-dimensional geometry by successive addition of material rather than by removing it or forcing it into shape."
+    },
+    {
+      "term": "Production-representative unit",
+      "definition": "An article made with the materials, tooling and process intended for production, so that measurements taken on it apply to delivered parts."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Every prototype starts with something you do not know. Maybe you do not know whether the lid will click shut. Maybe you do not know whether the motor is strong enough. The thing you build exists to find that out, and nothing else. So the smart move is to build the smallest, cheapest, fastest thing that can still give a real answer. If your question is whether the shape feels right in a hand, a block of shaped foam answers it, and a perfect machined metal version tells you the same thing for a hundred times the money. If your question is whether the part survives a year of use, the foam is useless and you need something made much more like the real thing. Same design, different questions, completely different builds. Deciding the question first is most of the skill.",
+    "analogy": "When you cook a big pot of soup, you taste one spoonful before serving it. The spoonful is not the meal. It is a cheap sample that answers one question: does this need salt? Prototyping works the same way. You build a spoonful of the design, ask it one thing, and adjust the pot.",
+    "analogyLimits": "The analogy breaks in two places. A spoonful is made of exactly the same soup as the pot, so it tells the truth about the pot. A prototype is usually made of a different material by a different process, so it can lie about the finished part: a printed bracket is built from bonded layers, so how it behaves depends on which way it was built. And tasting costs almost nothing, while prototypes cost real money and weeks of waiting, so deciding which questions are worth a taste is itself part of the engineering."
+  },
+  "workedExample": "A team needs to know whether a snap-fit latch on a moulded enclosure still retains the lid after repeated opening. Two routes are on the table, and the figures below are illustrative teaching values, not vendor quotes. Route A is in-house material extrusion: no tooling, about 55 currency units per part, two working days from CAD release to parts in hand. Route B is a soft aluminium prototype mould shooting the production resin: about 8,000 currency units for the tool, about 4 units per part, twenty-five working days. Twelve parts are needed. Executed arithmetic: Route A costs 0 + 55 x 12 = 660 units in 2 days; Route B costs 8,000 + 4 x 12 = 8,048 units in 25 days, so Route B is 12.2 times the cost and 12 times the wait. The break-even quantity is (8,000 - 0) / (55 - 4) = 156.9, so 157 parts, far above the twelve needed. Three full Route A iterations cost 3 x 660 = 1,980 units and take 6 days, still under a quarter of one Route B build. Cost alone says Route A. The learning objective overrules it. Retention after cycling depends on how the polymer behaves under repeated strain, and an extruded part is built from bonded layers with direction-dependent properties, so it cannot answer that question about a moulded part. Route A is the right instrument for a different question — does the latch geometry engage and clear? — and Route B is the only instrument for the retention question. The honest decision is to run Route A first to settle the geometry, then commit to Route B once, rather than spending 8,048 units to discover a geometry error that 660 units would have found.",
+  "commonMistakes": [
+    {
+      "mistake": "Building a prototype before writing down the question it is supposed to answer.",
+      "correction": "Write the question first, in the form 'we do not know whether X, and we will believe evidence Y'. Without it you cannot judge what fidelity is enough, and you cannot tell afterwards whether the build succeeded."
+    },
+    {
+      "mistake": "Reaching for high fidelity at the start because it looks more professional.",
+      "correction": "High fidelity costs money the early question did not require. It also tends to anchor a team — people defend an expensive artefact and stop reconsidering options that were still open on paper — which is practical advice from engineering practice rather than a measured effect. Raise fidelity deliberately, one question at a time."
+    },
+    {
+      "mistake": "Treating measurements from a prototype as if they described the production part.",
+      "correction": "The prototype's material and process are usually not the production material and process. NASA does not take official verification credit on a prototype; it takes it on a qualification, protoflight or flight unit. Report the route alongside the number."
+    },
+    {
+      "mistake": "Quoting a strength or stiffness result from an additively made part without recording the build orientation.",
+      "correction": "An additive process builds material directionally, so anisotropy is likely. NASA's additive manufacturing standard requires build orientation to be identified and maintained, and permits an isotropic assumption only when properties vary by less than about five percent with orientation."
+    },
+    {
+      "mistake": "Throwing the prototype on a shelf without logging what it showed.",
+      "correction": "Record the question, the route and material, the build orientation, what was measured and what changed. A negative result is information; undocumented, it has to be bought a second time."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Breadboard",
+      "b": "Engineering unit",
+      "distinction": "A breadboard is low fidelity and demonstrates function only, ignoring form and fit, and is not intended to give definitive performance information. An engineering unit is high fidelity, resembles the final product as closely as possible, and is tested to build confidence that the design works in its expected environments."
+    },
+    {
+      "a": "Focused prototype",
+      "b": "Comprehensive prototype",
+      "distinction": "A focused prototype carries one subsystem and answers one question cheaply, and several can run in parallel. A comprehensive prototype integrates most of the product and is the only way to surface interface and integration problems, which is why it arrives later and costs more."
+    },
+    {
+      "a": "Additive fabrication",
+      "b": "Subtractive machining",
+      "distinction": "Additive routes need no tooling, reach geometry a cutter cannot, and deliver in days, but give poorer surface finish, a narrower material menu, direction-dependent properties and a per-part cost that does not fall with quantity. Machining gives production materials, tight tolerance and good finish, but only for reachable geometry, with cost rising as complexity and removed material rise."
+    },
+    {
+      "a": "Prototype (soft) tooling",
+      "b": "Production tooling",
+      "distinction": "Soft tooling in aluminium or pre-hardened steel gives production material and production process for a fraction of the cost and in weeks rather than months, but has limited tool life. Production tooling costs far more and takes longer, and only pays back across large quantities."
+    },
+    {
+      "a": "Testing on a prototype",
+      "b": "Verification on a controlled unit",
+      "distinction": "Testing on a prototype produces experience fed back into design changes. Formal verification credit against a requirement is normally taken on a qualification, protoflight or flight unit, because only a controlled unit's pedigree supports the claim."
+    }
+  ],
+  "keyTakeaway": "Decide the question before you build the object: the question sets the fidelity, the fabrication route and the cost, and the route you chose sets the limits of what the answer means.",
+  "questionBank": [
+    {
+      "id": "engineering-fundamentals:engineering-practice:prototyping:1",
+      "prompt": "In NASA's systems engineering vocabulary, what does a breadboard demonstrate?",
+      "options": [
+        "Form, fit and function at a scale representative of the final product in its operational environment",
+        "Function only, without regard for form or fit, and not definitive about operational performance",
+        "The same form, fit and function as the flight unit, taken to environmental extremes",
+        "Appearance and proportion only, with no working internal components"
+      ],
+      "correctIndex": 1,
+      "explanation": "NASA defines a breadboard as a low-fidelity unit that demonstrates function only, without considering form or fit, often using commercial or ad hoc components, and explicitly not intended to give definitive information about operational performance. The first option is NASA's prototype unit, the third is the qualification unit, and the fourth describes an appearance model.",
+      "difficulty": "recall",
+      "skill": "Recalling the fidelity ladder and what each product form demonstrates",
+      "sourceIds": [
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:engineering-practice:prototyping:2",
+      "prompt": "NASA's handbook shows that by the end of design only about 15 percent of a project's money has been spent while the design has already committed about 75 percent of life-cycle cost. Why does design commit so much more than it spends?",
+      "options": [
+        "Because design contracts are signed at the design review and cannot afterwards be renegotiated",
+        "Because design labour is billed at a higher rate than fabrication labour",
+        "Because the design itself determines how expensive the system will be to test, manufacture, integrate, operate and sustain",
+        "Because the remaining budget is inflation-adjusted once the design phase closes"
+      ],
+      "correctIndex": 2,
+      "explanation": "The handbook gives the reason directly: the way a system is designed fixes how expensive it will be to test, manufacture, integrate, operate and sustain, so decisions made cheaply on paper lock in most of the money that will later be spent. That is why the cost of changing design direction rises steeply afterwards, through bands of roughly 20-100x and then 500-1000x. The other three options describe accounting or contracting mechanisms the handbook does not invoke.",
+      "difficulty": "understanding",
+      "skill": "Explaining why early design decisions commit life-cycle cost, and why that sets prototyping cadence",
+      "sourceIds": [
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:engineering-practice:prototyping:3",
+      "prompt": "Using illustrative figures, Route A needs no tooling and costs 55 currency units per part; Route B needs an 8,000-unit tool and costs 4 units per part. At roughly what quantity do the two routes cost the same?",
+      "options": [
+        "About 88 parts",
+        "About 157 parts",
+        "About 2,000 parts",
+        "They never cross, because Route B is always more expensive"
+      ],
+      "correctIndex": 1,
+      "explanation": "Setting 55N equal to 8,000 + 4N gives 51N = 8,000, so N = 156.9, or 157 parts once rounded up. Below that quantity the tooling-free route wins; above it the fixed tooling cost is spread thinly enough to pay back. The routes do cross, which is exactly why break-even quantity is worth computing.",
+      "difficulty": "application",
+      "skill": "Computing a break-even quantity between a fixed-cost and a variable-cost fabrication route",
+      "sourceIds": [
+        "libretexts-nwtc-cost-traditional-versus-additive",
+        "mit-ocw-15783j-prototyping-overview"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:engineering-practice:prototyping:4",
+      "prompt": "A team loads a material-extrusion prototype bracket to failure and records the load. The production part will be injection moulded in the same polymer. What is the defensible conclusion?",
+      "options": [
+        "The recorded load is a valid strength value for the moulded part, since the polymer is the same",
+        "The recorded load can be used directly if the safety factor is raised",
+        "The test is worthless and should not have been run",
+        "The result describes a layered, direction-dependent article and supports geometry and assembly questions, not a strength claim about the moulded part"
+      ],
+      "correctIndex": 3,
+      "explanation": "An additive process builds material directionally, so anisotropy is likely and NASA's additive manufacturing standard requires build orientation to be tracked and permits an isotropic assumption only when orientation changes properties by less than about five percent. The extruded article is a different material state from a moulded one, so the number does not transfer, and inflating a safety factor does not repair an invalid measurement. The test is still useful for fit, clearance and geometry.",
+      "difficulty": "analysis",
+      "skill": "Judging what a prototype result does and does not support when the process differs from production",
+      "sourceIds": [
+        "nasa-std-6030-additive-manufacturing-spaceflight",
+        "rehmer-2023-elastic-modulus-data",
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:engineering-practice:prototyping:5",
+      "prompt": "Which of the following is NOT one of the seven additive manufacturing process categories built on the ISO/ASTM 52900 vocabulary?",
+      "options": [
+        "Sheet lamination",
+        "Binder jetting",
+        "Investment casting",
+        "Directed energy deposition"
+      ],
+      "correctIndex": 2,
+      "explanation": "The seven categories are material extrusion, vat photopolymerization, powder bed fusion, material jetting, binder jetting, directed energy deposition and sheet lamination. Investment casting is a casting process: metal is poured into a shell formed around a pattern, which removes material from no stock and adds no layers, so it sits outside the additive family entirely.",
+      "difficulty": "recall",
+      "skill": "Recognising the additive process categories and separating them from conventional routes",
+      "sourceIds": [
+        "iso-astm-52900-2021-am-terminology",
+        "salmi-2021-am-processes-medical-applications",
+        "nist-additive-manufacturing-technologies"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "engineering-fundamentals:engineering-thinking:engineering-design-process",
+    "engineering-fundamentals:engineering-practice:cad-basics",
+    "engineering-fundamentals:engineering-practice:testing-and-validation",
+    "engineering-fundamentals:materials:material-selection",
+    "engineering-fundamentals:engineering-practice:safety-factors-and-failure"
+  ],
+  "sources": [
+    "nasa-se-handbook-sp-2016-6105-rev2",
+    "nasa-std-6030-additive-manufacturing-spaceflight",
+    "iso-astm-52900-2021-am-terminology",
+    "salmi-2021-am-processes-medical-applications",
+    "nist-additive-manufacturing-technologies",
+    "ecfr-29-cfr-1910-212-machine-guarding",
+    "mit-ocw-15783j-prototyping-overview",
+    "libretexts-nwtc-cost-traditional-versus-additive",
+    "rehmer-2023-elastic-modulus-data"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Mixed: two NASA sources are public domain (US Government works), CFR text is public domain, two sources are CC BY and attributed, the rest are reference-only. No source prose adapted; all wording original except short public-domain NASA phrasing paraphrased.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Synthesised from NASA's systems engineering handbook (product forms, fidelity ladder, cost-of-change curve, V&V test-article pedigree), NASA-STD-6030 (build-direction anisotropy), ISO/ASTM 52900 by designation with the seven additive categories corroborated by an open-access review and NIST's technology pages, an MIT OpenCourseWare prototyping deck and an open-textbook cost chapter (fabrication-route and tooling economics), and 29 CFR 1910.212 (shop-safety statement). All worked-example arithmetic executed in Python before publication; all currency figures are labelled illustrative teaching values, not vendor quotes."
+  },
+  "quickCheck": [
+    {
+      "id": "engineering-fundamentals:engineering-practice:prototyping:1",
+      "prompt": "In NASA's systems engineering vocabulary, what does a breadboard demonstrate?",
+      "options": [
+        "Form, fit and function at a scale representative of the final product in its operational environment",
+        "Function only, without regard for form or fit, and not definitive about operational performance",
+        "The same form, fit and function as the flight unit, taken to environmental extremes",
+        "Appearance and proportion only, with no working internal components"
+      ],
+      "correctIndex": 1,
+      "explanation": "NASA defines a breadboard as a low-fidelity unit that demonstrates function only, without considering form or fit, often using commercial or ad hoc components, and explicitly not intended to give definitive information about operational performance. The first option is NASA's prototype unit, the third is the qualification unit, and the fourth describes an appearance model.",
+      "difficulty": "recall",
+      "skill": "Recalling the fidelity ladder and what each product form demonstrates",
+      "sourceIds": [
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:engineering-practice:prototyping:2",
+      "prompt": "NASA's handbook shows that by the end of design only about 15 percent of a project's money has been spent while the design has already committed about 75 percent of life-cycle cost. Why does design commit so much more than it spends?",
+      "options": [
+        "Because design contracts are signed at the design review and cannot afterwards be renegotiated",
+        "Because design labour is billed at a higher rate than fabrication labour",
+        "Because the design itself determines how expensive the system will be to test, manufacture, integrate, operate and sustain",
+        "Because the remaining budget is inflation-adjusted once the design phase closes"
+      ],
+      "correctIndex": 2,
+      "explanation": "The handbook gives the reason directly: the way a system is designed fixes how expensive it will be to test, manufacture, integrate, operate and sustain, so decisions made cheaply on paper lock in most of the money that will later be spent. That is why the cost of changing design direction rises steeply afterwards, through bands of roughly 20-100x and then 500-1000x. The other three options describe accounting or contracting mechanisms the handbook does not invoke.",
+      "difficulty": "understanding",
+      "skill": "Explaining why early design decisions commit life-cycle cost, and why that sets prototyping cadence",
+      "sourceIds": [
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:engineering-practice:prototyping:3",
+      "prompt": "Using illustrative figures, Route A needs no tooling and costs 55 currency units per part; Route B needs an 8,000-unit tool and costs 4 units per part. At roughly what quantity do the two routes cost the same?",
+      "options": [
+        "About 88 parts",
+        "About 157 parts",
+        "About 2,000 parts",
+        "They never cross, because Route B is always more expensive"
+      ],
+      "correctIndex": 1,
+      "explanation": "Setting 55N equal to 8,000 + 4N gives 51N = 8,000, so N = 156.9, or 157 parts once rounded up. Below that quantity the tooling-free route wins; above it the fixed tooling cost is spread thinly enough to pay back. The routes do cross, which is exactly why break-even quantity is worth computing.",
+      "difficulty": "application",
+      "skill": "Computing a break-even quantity between a fixed-cost and a variable-cost fabrication route",
+      "sourceIds": [
+        "libretexts-nwtc-cost-traditional-versus-additive",
+        "mit-ocw-15783j-prototyping-overview"
+      ]
+    }
+  ],
+  "contentHash": "43133c4ae0c52b2c",
+  "status": "source-verified",
+  "public": false
+}

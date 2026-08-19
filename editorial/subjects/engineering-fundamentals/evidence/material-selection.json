@@ -1,0 +1,402 @@
+{
+  "topicId": "engineering-fundamentals:materials:material-selection",
+  "subjectId": "engineering-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "the four-step selection method: translation, screening, ranking, documentation",
+      "function, constraints, objectives and free variables in translation",
+      "derivation of a material index, worked in full for the light stiff tie",
+      "index for a strength-limited beam and the fact that indices are load-case specific",
+      "how property charts encode indices as straight lines on logarithmic axes",
+      "cost as a material property and cost per unit of function",
+      "manufacturing and process constraints as decisive screens",
+      "service environment: temperature, corrosion, UV, wear, fatigue",
+      "sustainability, embodied energy, recyclability and end of life",
+      "supply concentration and substitution risk",
+      "typical values versus design allowables"
+    ],
+    "supporting": [
+      "price volatility and tariff effects on the cost index",
+      "process route affecting properties of the same alloy",
+      "the honest closing point that a constraint left out of the analysis usually decides"
+    ],
+    "outOfScope": [
+      "property categories and mechanical testing methods (owned by material-properties)",
+      "the stress-strain curve, elastic modulus definition and yielding behaviour (owned by stress-and-strain)",
+      "constraint taxonomy, hard constraints versus objectives, Pareto reasoning, weighted decision matrices and weight sensitivity (owned by engineering-constraints-and-tradeoffs)",
+      "materials processing and metallurgy",
+      "any specific allowable stress, load factor or design value from a standard",
+      "life-cycle assessment methodology"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The materials selection method taught in engineering programmes proceeds in four steps: translation, screening, ranking, and documentation.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "ansys-granta-materials-selection-white-paper"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Translation has four parts: the component's function, the constraints that must be met, the objective to be maximised or minimised, and the free variables the designer may adjust.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "ansys-granta-materials-selection-white-paper"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "In screening, constraints act as gates: a material that fails a constraint is eliminated rather than scored down.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "ansys-granta-materials-selection-white-paper"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Performance can be written as a product of a functional term, a geometric term, and a material term, and that separability is what makes a single material index valid across geometries and load magnitudes.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "ansys-granta-materials-selection-white-paper"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "For a tie of fixed length carrying a prescribed axial stiffness with free cross-sectional area, minimising mass is equivalent to maximising E/rho.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "ansys-granta-materials-selection-white-paper",
+        "doitpoms-optimisation-materials-living-systems"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "For a beam of fixed cross-sectional shape and free cross-sectional area required to carry a bending moment without yielding, the material index is sigma_f raised to the two-thirds power divided by rho.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "doitpoms-optimisation-materials-living-systems"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Other standard indices include E^(1/2)/rho for a light stiff beam of free section area and E^(1/3)/rho for a light stiff panel of free thickness.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "doitpoms-optimisation-materials-living-systems",
+        "ansys-granta-materials-selection-white-paper"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "On logarithmic property charts a fixed value of an index of the form E^(1/a)/rho plots as a straight line of slope a, and moving that line up and to the left selects better candidates.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "doitpoms-optimisation-materials-living-systems",
+        "ansys-granta-materials-selection-white-paper"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Ashby-style property charts are published under copyright; the Granta EduPack teaching materials that carry them permit reproduction for teaching purposes only and prohibit commercial use.",
+      "claimType": "LEGAL",
+      "sourceIds": [
+        "ansys-granta-materials-selection-white-paper"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Using typical teaching values, mild 1020 steel and 7075-T6 aluminium score 26.9 and 25.9 MJ/kg on E/rho, a ratio of 1.04, despite steel's modulus being three times aluminium's.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "mit-3-11-material-properties-table"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "On the strength-limited beam index sigma_y^(2/3)/rho the same four survivors reorder completely: 7075-T6 aluminium 23.3, spruce 22.0, polycarbonate 14.2, mild steel 4.38.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "mit-3-11-material-properties-table"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Minimising the material cost of a tie of prescribed stiffness means maximising E/(C_m rho), not minimising price per kilogram.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "ansys-granta-materials-selection-white-paper"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "At an aluminium ingot price of 180 cents per pound (3.968 dollars per kilogram) and an implied raw-steel average of 1.817 dollars per kilogram, mild steel scores 14.8 and 7075-T6 aluminium 6.53 MJ per dollar on E/(C_m rho), a factor of 2.27 in steel's favour.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "usgs-mineral-commodity-summaries-2026",
+        "mit-3-11-material-properties-table",
+        "nist-sp-811-2008"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The average U.S. market spot price of aluminium ingot rose from 129.5 cents per pound in 2024 to an estimated 180 cents per pound in 2025, a 39 percent increase, in a year when Section 232 tariffs on aluminium were imposed at 25 percent in March and doubled to 50 percent for most countries by June.",
+      "claimType": "CURRENT",
+      "sourceIds": [
+        "usgs-mineral-commodity-summaries-2026"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Material selection must account for the service environment, including operational temperature limits, corrosion, stress corrosion, fatigue, moisture and fluid exposure, wear mechanisms such as fretting and galling, and thermal expansion mismatch.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-std-6016c-chg1"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The manufacturing route changes the elastic properties of nominally the same alloy, which is why dedicated modulus datasets have been published comparing additively and conventionally manufactured Ti-6Al-4V, IN718 and 316L.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "rehmer-2023-elastic-modulus-data"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "On U.S. 2010 current-typical on-site energy intensities, primary aluminium production totals 33,295 Btu per pound against 2,796 Btu per pound for the secondary route, about 92 percent less.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "doe-aluminum-bandwidth-study-2017"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "U.S. net import reliance for aluminium was about 60 percent of apparent consumption in 2025, old-scrap recovery was equivalent to about 28 percent of apparent consumption, and the United States produced no titanium sponge in 2025 with net import reliance at 100 percent.",
+      "claimType": "CURRENT",
+      "sourceIds": [
+        "usgs-mineral-commodity-summaries-2026"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Substitution options are documented commodity by commodity: composites, magnesium, steel and titanium can substitute for aluminium in ground transportation, and copper can replace it in electrical and heat-exchange applications.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "usgs-mineral-commodity-summaries-2026"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Typical published property values are not design values; statistical A-, B-, or S-basis allowables must come from the governing source and must match the alloy, heat treatment, product specification, product form, and thickness of the entry they were derived from.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-std-6016c-chg1",
+        "mit-3-11-material-properties-table"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Manufacturability, constructability, cost, and sustainability appear in the U.S. engineering accreditor's own list of realistic design constraints.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "abet-eac-criteria-2026-2027"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Responsibility for a real material selection in a designed structure or device rests with a licensed engineer working to the governing code, under boards whose requirements vary by jurisdiction.",
+      "claimType": "LEGAL",
+      "sourceIds": [
+        "ncees-licensure"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Typical property tables disagree with one another, sometimes badly.",
+      "positions": [
+        "The MIT 3.11 teaching table gives Young's modulus for a graphite CFRP laminate as 1.5 GPa while listing its shear modulus as 53 GPa, which cannot both be right, and its yield stress and UTS columns appear transposed for brittle ceramics.",
+        "Other tabulations place CFRP laminate modulus in the hundred-GPa range and give ceramics very high compressive but low tensile strengths."
+      ],
+      "resolution": "The lesson uses the MIT table only where its entries are internally consistent and widely corroborated (steel, aluminium alloy, spruce, polycarbonate), uses CFRP and the ceramics only for the ductility screen where the breaking-strain column is not in doubt, and never ranks them on modulus or strength. The discrepancy is disclosed in the source record and the lesson makes the typical-versus-design-value distinction explicit."
+    },
+    {
+      "issue": "The steel and aluminium price figures used in the cost index rest on different bases.",
+      "positions": [
+        "USGS publishes an aluminium ingot average U.S. market spot price directly.",
+        "USGS publishes no dollar-per-tonne market price for steel, only a producer price index, so the lesson derives an implied average from reported 2025 raw steel production and estimated sales value."
+      ],
+      "resolution": "Both bases are stated in the worked example and the resulting factor of 2.27 is described as indicative rather than precise. The pedagogical point, that the mass ranking and the cost ranking differ, does not depend on the exact factor."
+    },
+    {
+      "issue": "Published elastic modulus for Ti-6Al-4V varies across sources between roughly 100 and 120 GPa.",
+      "positions": [
+        "The MIT teaching table lists 100 GPa.",
+        "Aerospace and biomedical literature commonly reports 110 to 116 GPa, and values differ by manufacturing route."
+      ],
+      "resolution": "Titanium was removed from the worked example entirely rather than published with a contested modulus. The variability itself is used qualitatively, supported by the 2023 Scientific Data paper on additively versus conventionally manufactured variants."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft asserted nothing specific about material selection; its body text was generic placeholder prose about 'organizing information' and 'asking better questions' that neither described the selection method nor contained a single verifiable claim.",
+    "The draft's vocabulary entry defined material selection circularly as 'a foundational Engineering Fundamentals concept covered in this lesson'.",
+    "The draft's worked example described a student reading a scenario rather than performing any selection, and contained no arithmetic."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire generated draft with a researched lesson built on the four-step selection method, attributed to Ashby via a white paper he co-authored.",
+    "Added a full algebraic derivation of the light stiff tie index E/rho and the strength-limited beam index sigma_y^(2/3)/rho, neither of which appeared in the draft.",
+    "Replaced the placeholder worked example with a screening-and-ranking problem whose every number was executed in Python before publication.",
+    "Added the typical-value versus design-allowable distinction, the educational-material statement, and the not-design-guidance statement, none of which were present.",
+    "Raised estimatedMinutes from 8 to 13 to match the actual length and density of the finished lesson.",
+    "Replaced the draft's three-option quick-check items with a five-item bank of four-option questions carrying difficulty, skill, explanation and source ids."
+  ],
+  "rightsIssues": [
+    "Ashby-style property charts are copyrighted. The Granta EduPack white paper that carries them permits reproduction for teaching purposes only and prohibits commercial use. The lesson describes how the charts are constructed and read; no chart is reproduced or recreated.",
+    "The DoITPoMS teaching package is CC BY-NC-SA 4.0. The NonCommercial and ShareAlike terms make it reference-only for this project, so all derivations were carried out independently and no DoITPoMS wording is reproduced.",
+    "Engineering standards cited by designation (MMPDS, SAE CMH-17, ASTM E1875) are copyrighted and were not read; the lesson states only what NASA-STD-6016C says about them and takes no allowable stress or design value from any standard.",
+    "One quoted phrase of nine words is taken from the CC BY 4.0 Scientific Data paper and is attributed in the lesson text.",
+    "The MIT 3.11 property table carries no explicit licence; it is treated as reference-only and only numeric facts were used, with the source and its typical-value caveat named in the lesson."
+  ],
+  "sourceRecords": [
+    {
+      "id": "ansys-granta-materials-selection-white-paper",
+      "title": "Granta EduPack White Paper: Materials Selection (H. Parnell, K. Tyler, M. F. Ashby)",
+      "provider": "Ansys, Inc. / Ansys Academic Development Team and Department of Engineering, University of Cambridge",
+      "url": "https://www.ansys.com/content/dam/amp/2021/august/webpage-requests/education-resources-dam-upload-batch-6/materials-selection-white-paper-papmtsen22.pdf",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "Stated on the final page: content may only be used or reproduced for teaching purposes; commercial use strictly prohibited. Copyright 2022 Ansys, Inc.",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Downloaded the 13-page PDF and extracted the text locally. Co-authored by Mike Ashby, the originator of the method, which makes it a direct attribution source. Supports: the four-step methodology (translation, screening, ranking, documentation); the four phases of translation (function, constraints, objectives, free variables); constraints acting as gates in screening; ranking by a performance/material index; the documentation step covering failure case histories, manufacturing limitations, and availability; the separable performance equation P = f1(F) f2(G) f3(M) and the fact that separability makes one index valid across geometries and load magnitudes; the worked derivation of the light stiff beam index E^(1/2)/rho with prescribed stiffness and free section area; the index examples Mt = E/rho for a tie and Mp = E^(1/3)/rho for a panel; and property charts as logarithmic bubble charts on which an index plots as a straight selection line (slope 2 for E^(1/2)/rho). Also gives the canonical textbook citation: Ashby, M. F. (2017), Materials Selection in Mechanical Design, 5th ed., Elsevier, ISBN 978-0-08-100599-6. Charts and figures are copyrighted and are described in the lesson, never reproduced."
+    },
+    {
+      "id": "doitpoms-optimisation-materials-living-systems",
+      "title": "Optimisation of Materials Properties in Living Systems (DoITPoMS Teaching and Learning Package)",
+      "provider": "DoITPoMS, Department of Materials Science and Metallurgy, University of Cambridge",
+      "url": "https://www.doitpoms.ac.uk/tlplib/optimisation-biomaterials/index.php",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International for the written material and most media, per the DoITPoMS terms-of-use page",
+      "licenseUrl": "https://www.doitpoms.ac.uk/tlplib/terms.php",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the print-all version of the TLP (optimisation-biomaterials/printall.php) fetched with a browser user-agent, plus the DoITPoMS terms-of-use page for the licence. Supports the merit-index (material-index) framework and the specific indices used in this lesson: E/rho for a tie in tension or a beam of free width, E^(1/2)/rho for a beam of fixed section shape and free area, E^(1/3)/rho for a panel of free thickness, sigma_f/rho for a strut or tie, sigma_f^(2/3)/rho for the strongest beam of given mass with fixed section shape and free area, and sigma_f/E for elastic hinges. Also supports the log-log construction: for E^(1/3)/rho = k, log E = 3 log rho + constant, so a fixed index value is a straight line whose slope depends on the exponent, and moving the line to the top left improves the index. NC-SA licence means reference-only for this project; no DoITPoMS wording is reproduced and the derivations in the lesson were carried out independently."
+    },
+    {
+      "id": "mit-3-11-material-properties-table",
+      "title": "Material Properties (module and property table, 3.11 Mechanics of Materials, D. Roylance)",
+      "provider": "Massachusetts Institute of Technology, Department of Materials Science and Engineering",
+      "url": "https://web.mit.edu/course/3/3.11/www/modules/props.html",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the module page and downloaded the companion machine-readable table (props.csv) from the same directory. The page states explicitly that the values are typical, are intended primarily for educational use, that a wide range can be exhibited for ostensibly identical materials, that cost values are especially prone to variation, and that the values should be used only for preliminary design and analysis with current vendor data and laboratory testing used for final design. That self-description is the reason this source was chosen for the worked example and is quoted in substance in the lesson. Values used: Young's modulus, density, yield stress and breaking strain for mild 1020 steel (210 GPa, 7.8 Mg/m3, 200 MPa, 25%), 7075-T6 aluminium alloy (70, 2.7, 500, 12%), spruce parallel to grain (9, 0.60, 48, 10%), polycarbonate (2.7, 1.2, 70, 60%), and the breaking strains of alumina (0.0%), soda glass (0.0%) and graphite CFRP laminate (2.0%) used in the screening step. CAUTION recorded during checking: the table's Young's modulus entry for the CFRP laminate (1.5 GPa) is inconsistent with its own shear modulus entry (53 GPa) and is not credible, and the yield stress and UTS columns appear transposed for the brittle ceramics; the lesson therefore uses CFRP and the ceramics only for the ductility screen and never for a modulus or strength ranking. No cost values were taken from this table; prices come from USGS instead."
+    },
+    {
+      "id": "usgs-mineral-commodity-summaries-2026",
+      "title": "Mineral Commodity Summaries 2026",
+      "provider": "U.S. Geological Survey, U.S. Department of the Interior",
+      "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Downloaded the full 226-page PDF (version 1.3, May 2026) with a browser user-agent and extracted the aluminium, iron and steel, and titanium chapters locally. Supports: aluminium ingot average U.S. market spot price of 129.5 cents per pound in 2024 and an estimated 180 cents per pound in 2025, with the chapter text stating the average annual U.S. market price increased 39 percent; the March 2025 imposition of a 25 percent Section 232 tariff on aluminium and aluminium derivative products and its doubling to 50 percent for most countries by June; U.S. net import reliance for aluminium of 60 percent of apparent consumption in 2025; aluminium recovered from old scrap in 2025 equivalent to about 28 percent of apparent consumption; the aluminium substitutes list (composites, magnesium, steel and titanium in ground transportation; copper in electrical and heat-exchange uses); U.S. raw steel production of 82 million tons in 2025 with an estimated sales value of about 149 billion dollars, from which the lesson computes an implied average of 1,817 dollars per tonne; and the statement that the United States produced no titanium sponge metal in 2025 after the last domestic sponge plant closed in 2024, with net import reliance at 100 percent. USGS publications are U.S. Government works in the public domain."
+    },
+    {
+      "id": "doe-aluminum-bandwidth-study-2017",
+      "title": "Bandwidth Study on Energy Use and Potential Energy Saving Opportunities in U.S. Aluminum Manufacturing (2017)",
+      "provider": "U.S. Department of Energy, Advanced Manufacturing Office",
+      "url": "https://www.energy.gov/sites/prod/files/2017/12/f46/Aluminum_bandwidth_study_2017.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Downloaded the 50-page PDF and extracted Table 3-2 locally. Supports the current-typical on-site energy intensities for 2010 in Btu per pound of aluminium: raw material beneficiation 8,660; reductant production 744; electrolysis 23,388; primary casting 503; secondary processing 567; secondary melting and casting 2,229. The lesson sums these in Python to 33,295 Btu/lb for the primary route and 2,796 Btu/lb for the secondary route, about 92 percent less on-site energy per pound, and states the year and the on-site basis explicitly. DOE Advanced Manufacturing Office publication prepared for DOE; no explicit rights statement located in the document, so treated as reference only and no DOE prose reproduced."
+    },
+    {
+      "id": "nasa-std-6016c-chg1",
+      "title": "NASA-STD-6016C with Change 1, Standard Materials and Processes Requirements for Spacecraft",
+      "provider": "National Aeronautics and Space Administration",
+      "url": "https://standards.nasa.gov/sites/default/files/standards/NASA/C-w/Change-1/1/2023-11-15-NASA-STD-6016C-w-Chg-1-Final_0.pdf",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "license": "Document is marked APPROVED FOR PUBLIC RELEASE - DISTRIBUTION IS UNLIMITED; no reuse licence stated",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Downloaded the 157-page PDF from standards.nasa.gov and extracted the requirements sections locally. Supports two things the lesson relies on. First, requirement MPR 7: materials shall meet the worst-case useful-life requirements for the application, with useful life covering operational temperature limits, loads, contamination, life expectancy, moisture or other fluid media exposure, and induced and natural space environments; and the accompanying list of properties to be considered in material selection, which includes mechanical properties, fracture toughness, flammability and offgassing, corrosion, stress corrosion, thermal and mechanical fatigue, glass-transition temperature, coefficient of thermal expansion mismatch, vacuum outgassing, fluids compatibility, microbial resistance, moisture resistance, fretting, galling, susceptibility to electrostatic discharge, and susceptibility to contamination. Second, requirements MPR 35 and MPR 36: A-, B-, or S-basis statistical design values shall be taken from MMPDS or SAE CMH-17, and for metallic materials the alloy, heat treatment, product specification, product form, and thickness shall match the MMPDS entry, with an accompanying note that published ambient-temperature properties are typically not appropriate for high-temperature applications. Used for the service-environment section and for the typical-values-are-not-design-values section. No specific allowable stress or design value is taken from this or any other standard."
+    },
+    {
+      "id": "rehmer-2023-elastic-modulus-data",
+      "title": "Elastic modulus data for additively and conventionally manufactured variants of Ti-6Al-4V, IN718 and AISI 316 L",
+      "provider": "Scientific Data (Nature Portfolio); B. Rehmer, F. Bayram, L. A. Avila Calderon, G. Mohr, B. Skrotzki, Bundesanstalt fur Materialforschung und -prufung",
+      "url": "https://www.nature.com/articles/s41597-023-02387-6",
+      "sourceType": "peer-reviewed",
+      "usage": "ATTRIBUTION_REQUIRED",
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the open-access PMC copy at https://pmc.ncbi.nlm.nih.gov/articles/PMC10359337/ because the publisher page was not fetched. Scientific Data 10, 474 (2023), DOI 10.1038/s41597-023-02387-6. Supports: that manufacturing route matters enough for elastic properties that a dedicated dataset was published comparing additively and conventionally manufactured variants of the same three alloys; that the measurements used the resonance method of ASTM E1875 with stated measurement uncertainty of at most 1 percent for Young's modulus at room temperature and at most 3 percent at high temperature; and the authors' nine-word characterisation of Young's modulus as a fundamental material parameter for material selection and design, which is the only quoted phrase in the lesson and is attributed. The numeric modulus values live in a separate Zenodo dataset and were NOT used; the lesson makes no numerical claim from this source."
+    },
+    {
+      "id": "abet-eac-criteria-2026-2027",
+      "title": "Criteria for Accrediting Engineering Programs, 2026-2027",
+      "provider": "ABET Engineering Accreditation Commission",
+      "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2026-2027/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Source record reused unchanged from the engineering-constraints-and-tradeoffs evidence packet (same id, same URL). Used here only to support the claim that manufacturability, constructability, cost, and sustainability appear in the accrediting body's own list of design constraints, which is why the lesson treats them as constraints rather than preferences. No ABET wording reproduced."
+    },
+    {
+      "id": "nist-sp-811-2008",
+      "title": "Guide for the Use of the International System of Units (SI), NIST Special Publication 811, 2008 edition (A. Thompson and B. N. Taylor)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication811e2008.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "No explicit licence statement located in the document; treated as reference-only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Source record reused unchanged from the units-measurement-and-significant-figures evidence packet (same id, same URL). Used here for one thing only: the exact conversion 1 lb = 4.535 923 7 E-01 kg, applied to convert the USGS aluminium ingot price of 180 cents per pound to 3.968 dollars per kilogram."
+    },
+    {
+      "id": "ncees-licensure",
+      "title": "Licensure",
+      "provider": "National Council of Examiners for Engineering and Surveying (NCEES)",
+      "url": "https://ncees.org/licensure/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Source record reused unchanged from the engineering-constraints-and-tradeoffs evidence packet (same id, same URL). Used only to support the closing educational-material and not-design-guidance statement: licensure is administered by state and territorial boards, requirements vary by jurisdiction, and responsibility for a real design rests with a licensed professional engineer."
+    }
+  ]
+}

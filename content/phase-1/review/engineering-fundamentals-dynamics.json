@@ -1,0 +1,347 @@
+{
+  "id": "engineering-fundamentals:mechanics:dynamics",
+  "subjectSlug": "engineering-fundamentals",
+  "unitSlug": "mechanics",
+  "slug": "dynamics",
+  "title": "Dynamics",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 13,
+  "tags": [
+    "engineering-fundamentals",
+    "mechanics",
+    "dynamics",
+    "kinematics",
+    "kinetics",
+    "circular-motion",
+    "rigid-body-rotation"
+  ],
+  "in30Seconds": "Dynamics is mechanics for bodies that accelerate. It splits in two: kinematics describes motion in space and time, and kinetics ties that motion to mass and force. A body's path can curve while its speed never changes, and that curve is an acceleration. Rotating bodies get their own version of the second law, with moment of inertia standing in for mass. Three solution routes exist — force-acceleration, work-energy, and impulse-momentum — and choosing well is most of the skill.",
+  "whyItMatters": "Statics answers what holds still; almost nothing in service does. Rotors spin up, vehicles corner, robot arms swing, packages fall off conveyors, and every one of those is a dynamics problem. The habits you build here — deciding whether a question is kinematic or kinetic before writing an equation, checking whether the path curves, naming the reference frame, and picking the solution route that skips the unknown you do not care about — are the same habits that keep a real analysis short enough to finish and clear enough to check. They also feed directly into vibration, control, machine design, and multibody simulation, where the software solves the equations but you still have to know which ones it is solving.",
+  "learningObjectives": [
+    "Distinguish kinematics from kinetics and identify which one a given question is asking about.",
+    "Apply the independence of perpendicular axes to solve a projectile problem, and state the idealization that makes it valid.",
+    "Explain why a body moving at constant speed along a curved path is accelerating, and resolve its acceleration into normal and tangential components.",
+    "Analyze circular motion in terms of the centripetal force requirement, and correct the claim that a centrifugal force acts on the body.",
+    "Apply the sum of moments equals I alpha to a rigid body rotating about a fixed axis, carrying units through.",
+    "Evaluate which of the three solution routes — force-acceleration, work-energy, or impulse-momentum — fits a given problem."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Two halves: kinematics and kinetics",
+      "body": "Dynamics is the analysis of bodies whose velocity is changing. It is conventionally divided into two domains, and keeping them straight is the single most useful organising habit in the subject. Kinematics studies the motion of objects in space and time without considering the forces that cause it: position, velocity, acceleration, and the geometric constraints that link one body's motion to another's. Kinetics studies motion in relation to mass and force. The two connect through the equation of motion. Kinetics produces that equation by relating forces to accelerations; kinematics takes the equation, together with the constraint equations and the initial conditions, and turns it into an actual trajectory. The link runs both ways: if you know the forces and the initial conditions you can predict the motion, and if you can measure the motion you can back out the forces.\n\nThis matters because a question that looks hard is often only kinematic. \"How long does the arm take to swing 90 degrees at this angular acceleration?\" needs no force at all. Recognising that saves you from drawing a diagram you did not need."
+    },
+    {
+      "heading": "Rectilinear motion, curvilinear motion, and the projectile trick",
+      "body": "Rectilinear motion is motion along a straight line, and one axis is enough to describe it. Curvilinear motion follows a curved path and needs at least two. The bridge between them is that motions along perpendicular axes are independent: what happens along x does not constrain what happens along y. Projectile motion is the cleanest use of that fact. Once the object is in flight, with air resistance neglected, the only force on it is its weight, so the horizontal acceleration is zero and the vertical acceleration is g downward. The horizontal problem is constant-velocity motion; the vertical problem is constant-acceleration motion. They share only the clock. Two one-dimensional problems, solved separately, then recombined.\n\nFor launch and landing at the same height, that analysis yields the range R = v0^2 sin(2*theta0)/g, which is largest at 45 degrees and gives equal ranges for complementary angles such as 15 and 75 degrees.\n\nName the idealization out loud, because it is doing real work. Neglecting air resistance is exactly what makes the horizontal acceleration zero. Drag depends on air density, the square of the velocity, viscosity, compressibility, and the body's size, shape and inclination to the flow; engineers collect all of that into D = Cd * rho * V^2 * A / 2 with a drag coefficient measured in a wind tunnel. Because drag scales with the square of speed, the drag-free model is decent for a thrown ball over a short arc and useless for a golf ball, an arrow, or an artillery shell. A projectile answer is only as good as the sentence that says drag was ignored."
+    },
+    {
+      "heading": "Normal and tangential components: curvature is acceleration",
+      "body": "When a path curves, it is often easier to attach the coordinate axes to the moving particle than to the ground. In normal-tangential coordinates, one unit vector points along the direction of travel and the other points inward, perpendicular to it, toward the centre of curvature. The acceleration then splits cleanly:\n\na = (dv/dt) * u_t + (v^2 / rho) * u_n\n\nThe tangential component is the rate of change of speed. The normal component depends only on speed and rho, the radius of curvature of the path at that instant. The two are perpendicular, so the total acceleration is their vector sum, not their arithmetic sum.\n\nRead that equation slowly, because it contains the correction most students need. Setting dv/dt to zero — constant speed — does not zero the acceleration. It leaves v^2/rho, pointed inward. Velocity is a vector, and changing its direction is a change in velocity just as much as changing its magnitude. A car holding 25 m/s around a bend, a satellite in a circular orbit, and a point on the rim of a flywheel spinning at constant rate are all accelerating continuously. Only a straight path at unchanging speed has zero acceleration, because only then are both components zero."
+    },
+    {
+      "heading": "Circular motion, the centripetal requirement, and the centrifugal mistake",
+      "body": "Circular motion is the special case where rho is constant and equal to the circle's radius r. In uniform circular motion the acceleration is purely normal, with magnitude a_c = v^2/r, directed at the centre. Combining that with the second law gives the centripetal force requirement F_c = m v^2 / r.\n\nCentripetal force is not a new kind of force, and it never belongs on a free-body diagram as a separate arrow. It is a requirement that the real forces already present must satisfy. For a ball on a string, tension supplies it. For a car on a flat road, friction does. For a satellite, gravity does. For a car on a banked curve, the horizontal component of the normal force does; the ideal banking angle satisfies tan(theta) = v^2/(r*g), which contains no mass, so the same bank works for a motorcycle and a loaded truck. If the available force cannot meet the requirement, the body does not travel in the circle — it leaves the path.\n\nThat brings us to centrifugal force. In an inertial frame there is no outward force on the body. There is one net inward force, and the body's own inertia, which is not a force. The outward push a passenger feels is the seat and door supplying the inward force to the passenger's body while the passenger's inertia resists being turned. If you deliberately write the equations in a frame rotating with the car, a centrifugal term does appear — along with a Coriolis term — but these are fictitious inertial forces, bookkeeping introduced by the non-inertial frame, with no physical source and no third-law partner. In the inertial frame where you will do nearly all your work, they are simply absent."
+    },
+    {
+      "heading": "Relative motion and reference frames",
+      "body": "Every velocity is a velocity with respect to something. State the frame or the number is meaningless. Velocities compose by vector addition: the velocity of a particle P relative to frame S equals its velocity relative to an intermediate frame S' plus the velocity of S' relative to S, written v_PS = v_PS' + v_S'S, with the shared subscript adjacent on the right-hand side so the intermediate frame cancels visually.\n\nOne consequence deserves emphasis. If S' moves at constant velocity relative to S, then the relative acceleration is zero and both observers measure the same acceleration for P. That is why the second law holds unchanged in any frame moving at constant velocity relative to an inertial one, and why the accelerating or rotating frames are the ones that force fictitious terms into the equations."
+    },
+    {
+      "heading": "Rigid bodies turning about a fixed axis",
+      "body": "A rigid body is not a point, so describing where it is takes more than a position vector. For rotation about a fixed axis, the extra variable is angular position theta, related to arc length by theta = s/r and measured in radians. Its derivatives are angular velocity omega = d(theta)/dt in rad/s and angular acceleration alpha = d(omega)/dt in rad/s^2. Every point on the body shares the same theta, omega, and alpha; what differs is r, so a point at radius r has tangential speed v = omega*r and tangential acceleration alpha*r, while carrying a centripetal component omega^2*r as well.\n\nThe kinetics needs a rotational stand-in for mass. That is the moment of inertia, I = sum of m_j * r_j^2, in kg*m^2. It is the quantitative measure of rotational inertia exactly as mass is the measure of linear inertia, and the r^2 is the whole story: mass far from the axis counts far more than the same mass near it. That is why a hollow cylinder is harder to spin up than a solid one of the same mass and outer radius, and why I is not a property of the body alone but of the body together with the chosen axis. A uniform thin disk about its central axis has I = (1/2)*m*R^2, and the parallel-axis theorem shifts a known result to a parallel axis a distance d away as I = I_cm + m*d^2.\n\nWith that, the rotational analogue of the second law is sum of M = I*alpha. In engineering practice the rigid-body pair is written together — sum F = m*a for the centre of mass and sum M = I*alpha about the axis — and the standing rule is that the moments and the moment of inertia must be taken about the same point, either the axis of rotation O or the centre of mass G. When the centre of mass sits on the axis the rotation is balanced, its acceleration is zero, and the force equations reduce to the bearing reactions. When it does not, the centre of mass accelerates and the bearings carry that too, which is why rotating machinery is balanced on purpose."
+    },
+    {
+      "heading": "Three routes, and choosing between them",
+      "body": "Engineering dynamics offers three method families for both particles and rigid bodies, and they answer different questions from the same physics. The direct force-acceleration route applies sum F = m*a and sum M = I*alpha at an instant; use it when you want an acceleration, a bearing reaction, or a required torque right now. The work-energy route integrates force over distance and connects speeds at two positions without ever computing acceleration; use it when a problem gives you positions and speeds and does not ask about time. The impulse-momentum route integrates force over time and connects velocities at two instants; use it for impacts, for short bursts of large force, and for anything where several bodies interact and the interaction forces are not worth chasing individually. Work and energy, and impulse and momentum, are developed in their own lessons in this unit; the point here is that they are alternatives to the equation you just learned, not additions to it.\n\nA workable order of questions: is this kinematic only? If not, does the question mention time — impulse-momentum — or distance and speed — work-energy? If neither, or if you need a force at a specific instant, go direct. Pick the route that avoids computing the quantity you do not care about.\n\nA closing note on scope. These lessons are educational material, not engineering design guidance. Real analysis of a machine, vehicle, rotor, or structure requires a licensed engineer working to the governing code, with verified properties, measured loads, and margins chosen for the consequences of failure. Every idealization used above — rigid body, no drag, constant g, frictionless pivot, fixed axis — is an assumption you would have to defend in practice."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "Kinematics",
+      "definition": "The branch of dynamics that describes motion in space and time — position, velocity, acceleration, and constraints — without reference to the forces producing it."
+    },
+    {
+      "term": "Kinetics",
+      "definition": "The branch of dynamics that relates motion to mass and force, producing the equation of motion from the forces acting on a body."
+    },
+    {
+      "term": "Curvilinear motion",
+      "definition": "Motion along a curved path, requiring at least two coordinates to describe, in contrast to straight-line (rectilinear) motion."
+    },
+    {
+      "term": "Radius of curvature",
+      "definition": "Written rho, the radius of the circle that best matches a path at a given point; it sets the size of the inward acceleration component v^2/rho there."
+    },
+    {
+      "term": "Centripetal acceleration",
+      "definition": "The component of acceleration directed toward the centre of curvature, magnitude v^2/r for a circle, present whenever a path bends even at unchanging speed."
+    },
+    {
+      "term": "Fictitious force",
+      "definition": "A term such as the centrifugal or Coriolis term that must be added to the equations when motion is described in an accelerating or rotating frame; it has no physical source and no reaction partner."
+    },
+    {
+      "term": "Angular acceleration",
+      "definition": "Written alpha, the time rate of change of angular velocity, measured in radians per second squared and shared by every point of a rigid body turning about a fixed axis."
+    },
+    {
+      "term": "Moment of inertia",
+      "definition": "Written I and measured in kg*m^2, the sum of each mass element times the square of its distance from a chosen axis; the rotational counterpart of mass."
+    },
+    {
+      "term": "Parallel-axis theorem",
+      "definition": "The rule I = I_cm + m*d^2, which converts a body's rotational inertia about its centre of mass to that about any parallel axis a distance d away."
+    },
+    {
+      "term": "Inertial reference frame",
+      "definition": "A frame in which a body free of net external force keeps constant velocity, so no fictitious terms are needed and the second law applies as written."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Two questions hide inside every motion problem. The first is \"where is it and how fast is it going?\" — you could answer that from a video, without knowing anything about pushes or pulls. The second is \"what made it do that?\" — now you need forces. Engineers named the two halves kinematics and kinetics so they can say which one they are working on. The idea that trips people up is that turning counts as changing. Drive around a roundabout with the speedometer glued to 25 and your speed never changes, but your direction changes every instant, and that is a change in motion just as real as flooring it. Something has to cause it: friction between the tyres and the road, pulling you toward the middle. Nothing pulls you outward. And when a thing spins instead of slides, every quantity gets a twin — angle for distance, spin rate for speed, and, in place of mass, how far the mass sits from the spin axis, because mass at the rim is much harder to get turning than mass near the middle.",
+    "analogy": "Think of a hammer throw. The athlete swings a heavy ball on a wire in a circle, and the wire is pulled tight the whole time — that tension is the athlete hauling the ball inward, over and over, which is the only reason the ball goes in a circle instead of a straight line. When the athlete lets go, nothing flings the ball outward; it simply stops being pulled inward and continues in the straight line it was already headed along, tangent to the circle.",
+    "analogyLimits": "It handles the centripetal idea and the release well, but misleads in three ways. The athlete is also speeding the ball up, so the real motion has a tangential component too. The wire has mass and the ball meets air resistance, both ignored by the clean picture. And the athlete's body is turning, so what they feel is not what a still observer measures — a reminder that the frame changes which terms appear in the equations."
+  },
+  "workedExample": "A uniform disk flywheel of mass m = 12.0 kg and radius R = 0.250 m turns on a fixed central axis with negligible bearing friction. A belt applies a constant tangential force F = 18.0 N at the rim. Starting from rest, how long does the flywheel take to reach 300 rev/min?\n\nThis is a kinetics question first, then a kinematics question. Step 1, rotational inertia of a uniform disk about its central axis: I = (1/2)*m*R^2 = 0.5 * 12.0 kg * (0.250 m)^2 = 0.375 kg*m^2. Step 2, the moment about the axis: M = F*R = 18.0 N * 0.250 m = 4.50 N*m. Step 3, the rotational second law: alpha = M/I = 4.50 N*m / 0.375 kg*m^2 = 12.0 rad/s^2. The units reduce correctly — N*m/(kg*m^2) = (kg*m/s^2)*m/(kg*m^2) = 1/s^2 — and the radian is dimensionless. Step 4, convert the target: 300 rev/min * 2*pi rad/rev / 60 s/min = 31.4159 rad/s. Step 5, constant alpha from rest gives t = omega/alpha = 31.4159 rad/s / 12.0 rad/s^2 = 2.617994 s, which we report as 2.62 s.\n\nCheck: compute the angle turned two independent ways. From (1/2)*alpha*t^2 the answer is 41.1234 rad; from omega^2/(2*alpha) it is 41.1234 rad. They agree to within 7e-15 rad, so the time is consistent with the kinematics. That is 41.1234/(2*pi) = 6.54 revolutions of spin-up, which is a sensible magnitude for a light flywheel under a modest belt force. Every number above was executed with python3 before publication.",
+  "commonMistakes": [
+    {
+      "mistake": "Believing that constant speed means zero acceleration, so a car holding a steady speed around a bend has none.",
+      "correction": "Acceleration is the rate of change of velocity, and velocity is a vector. Whenever the path curves, the normal component v^2/rho is non-zero and points toward the centre of curvature, no matter how steady the speedometer reads. Only straight-line motion at constant speed has zero acceleration."
+    },
+    {
+      "mistake": "Treating centrifugal force as a real outward force acting on a body moving in a circle, and drawing it on a diagram.",
+      "correction": "In an inertial frame there is no outward force on the body — only a net inward force, supplied by tension, friction, gravity, or a normal force, plus the body's own inertia, which is not a force. A centrifugal term appears only if you deliberately write the equations in a rotating frame, where it is a fictitious inertial term with no physical source and no third-law partner."
+    },
+    {
+      "mistake": "Adding a separate centripetal force arrow alongside the real forces when analysing circular motion.",
+      "correction": "F_c = m*v^2/r is a requirement on the net force, not an extra force. Sum the real forces along the radial direction and set that sum equal to m*v^2/r. Listing it twice double-counts and inflates the answer."
+    },
+    {
+      "mistake": "Applying projectile equations without stating that drag was neglected, and then trusting them at high speed.",
+      "correction": "The horizontal acceleration is zero only because air resistance was dropped. Drag grows with the square of speed — D = Cd*rho*V^2*A/2 — so the drag-free model is reasonable for a short, slow arc and badly wrong for a golf ball, an arrow, or a shell. Say the assumption out loud and check that the situation earns it."
+    },
+    {
+      "mistake": "Using a moment of inertia looked up for one axis while taking moments about a different one, or treating I as a fixed property of the body.",
+      "correction": "I depends on the axis as well as the mass distribution, because each element is weighted by the square of its distance from that axis. Take the moments and the moment of inertia about the same point — either the axis of rotation or the centre of mass — and use the parallel-axis theorem, I = I_cm + m*d^2, to move between them."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Kinematics",
+      "b": "Kinetics",
+      "distinction": "Kinematics describes motion in space and time and never mentions force; kinetics links that motion to mass and force. A question asking how long a swing takes at a given angular acceleration is kinematic; a question asking what torque produces that acceleration is kinetic."
+    },
+    {
+      "a": "Tangential acceleration",
+      "b": "Normal (centripetal) acceleration",
+      "distinction": "Tangential acceleration, dv/dt, changes how fast the body is going and lies along the path. Normal acceleration, v^2/rho, changes where the body is going and points at the centre of curvature. They are perpendicular, so either can be zero while the other is not."
+    },
+    {
+      "a": "Mass",
+      "b": "Moment of inertia",
+      "distinction": "Mass measures resistance to a change in linear velocity and belongs to the body alone. Moment of inertia measures resistance to a change in angular velocity and belongs to the body plus a chosen axis, because each mass element counts in proportion to the square of its distance from that axis."
+    },
+    {
+      "a": "Statics",
+      "b": "Dynamics",
+      "distinction": "Statics is the case where the net force and net moment are zero and the body does not accelerate; dynamics is the case where they are not. Statics sets the right-hand side to zero, dynamics sets it to m*a and I*alpha."
+    },
+    {
+      "a": "Force-acceleration route",
+      "b": "Work-energy and impulse-momentum routes",
+      "distinction": "Force-acceleration answers what is happening at one instant and gives you accelerations and reactions directly. Work-energy integrates over distance to link speeds at two positions without time; impulse-momentum integrates over time to link velocities at two instants without distance. Choose the one that avoids the quantity you were never asked about."
+    }
+  ],
+  "keyTakeaway": "Ask first whether the question is kinematic or kinetic, then check whether the path curves — because a bending path means acceleration even at constant speed, supplied by real inward forces and never by a centrifugal one. For rotating bodies the same logic runs with angle, angular acceleration, and moment of inertia in place of distance, acceleration, and mass.",
+  "questionBank": [
+    {
+      "id": "engineering-fundamentals:mechanics:dynamics:1",
+      "prompt": "In the standard division of the subject, what separates kinematics from kinetics?",
+      "options": [
+        "Kinematics applies to point masses and kinetics applies to rigid bodies.",
+        "Kinematics describes motion in space and time without considering the forces that cause it, while kinetics relates motion to mass and force.",
+        "Kinematics covers constant acceleration and kinetics covers varying acceleration.",
+        "Kinematics is the two-dimensional treatment and kinetics is the three-dimensional treatment."
+      ],
+      "correctIndex": 1,
+      "explanation": "Dynamics is divided by whether forces enter the analysis, not by the kind of body, the constancy of acceleration, or the number of dimensions. Kinematics handles position, velocity, acceleration, and constraints on their own; kinetics brings in mass and force to produce the equation of motion. Both branches are developed for point masses and for rigid bodies, in two and three dimensions, and both handle constant and varying acceleration, so the other three options fail.",
+      "difficulty": "recall",
+      "skill": "Recalling the organising division of dynamics",
+      "sourceIds": [
+        "libretexts-introductory-dynamics-outline-and-elements-of-dynamics",
+        "libretexts-introductory-dynamics-topics"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:mechanics:dynamics:2",
+      "prompt": "A car holds a constant speed of 25.0 m/s around a curve of radius 125 m. What is the magnitude and direction of its acceleration?",
+      "options": [
+        "Zero, because the speed is not changing.",
+        "0.200 m/s^2, directed along the direction of travel.",
+        "5.00 m/s^2, directed toward the centre of the curve.",
+        "5.00 m/s^2, directed away from the centre of the curve."
+      ],
+      "correctIndex": 2,
+      "explanation": "Speed is constant, so the tangential component dv/dt is zero, but the path curves, so the normal component is v^2/r = (25.0 m/s)^2 / 125 m = 5.00 m/s^2 (executed with python3), directed toward the centre of curvature. Option A is the constant-speed misconception. Option B is v/r = 0.200 s^-1, which is not even an acceleration dimensionally. Option D has the correct magnitude but the wrong direction — outward is the centrifugal misconception, and in an inertial frame no outward acceleration exists here.",
+      "difficulty": "application",
+      "skill": "Computing centripetal acceleration and identifying its direction",
+      "sourceIds": [
+        "openstax-university-physics-1-uniform-circular-motion",
+        "libretexts-mechanics-map-normal-tangential-coordinates"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:mechanics:dynamics:3",
+      "prompt": "A ball rolls horizontally off a ledge 20.0 m above flat ground at 12.0 m/s. Neglecting air resistance and taking g as 9.81 m/s^2, how far from the base of the ledge does it land?",
+      "options": [
+        "24.2 m, because the fall takes 2.02 s and the horizontal speed stays at 12.0 m/s.",
+        "48.9 m, because the fall takes 4.08 s and the horizontal speed stays at 12.0 m/s.",
+        "12.1 m, because the horizontal speed averages half its initial value during the fall.",
+        "The distance cannot be found without the ball's mass."
+      ],
+      "correctIndex": 0,
+      "explanation": "The two axes are independent. Vertically the ball starts with zero downward speed, so 20.0 m = (1/2)(9.81 m/s^2) t^2 gives t = sqrt(2 * 20.0 / 9.81) = 2.019275 s. Horizontally there is no force once it leaves the ledge, so the speed stays 12.0 m/s and x = 12.0 m/s * 2.019275 s = 24.2313 m, reported as 24.2 m to three significant figures (all executed with python3). Option B drops the square root, giving t = 4.0775 s. Option C invents a horizontal deceleration that the neglect-drag idealization has already removed. Option D is wrong because mass cancels out of both axes.",
+      "difficulty": "application",
+      "skill": "Solving a projectile problem as two independent one-dimensional problems",
+      "sourceIds": [
+        "openstax-university-physics-1-projectile-motion",
+        "openstax-university-physics-1-motion-with-constant-acceleration",
+        "nist-cuu-standard-acceleration-of-gravity"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:mechanics:dynamics:4",
+      "prompt": "A rotor has a moment of inertia of 0.375 kg*m^2 about its fixed axis of rotation. What net moment about that axis is needed to give it an angular acceleration of 8.00 rad/s^2?",
+      "options": [
+        "0.0469 N*m",
+        "8.00 N*m",
+        "21.3 N*m",
+        "3.00 N*m"
+      ],
+      "correctIndex": 3,
+      "explanation": "The rotational form of the second law for a rigid body turning about a fixed axis is sum of M = I*alpha, so M = 0.375 kg*m^2 * 8.00 rad/s^2 = 3.00 N*m (executed with python3), and kg*m^2/s^2 is N*m. Option A divides I by alpha (0.046875), option C divides alpha by I (21.333), and option B simply reports alpha with a force-moment unit attached. Note that the answer depends on the axis: a moment of inertia quoted about a different axis would give a different result, and moments and inertia must be taken about the same point.",
+      "difficulty": "analysis",
+      "skill": "Applying sum of M = I alpha and detecting inverted or unit-confused results",
+      "sourceIds": [
+        "openstax-university-physics-1-newtons-second-law-for-rotation",
+        "libretexts-mechanics-map-fixed-axis-rotation",
+        "openstax-university-physics-1-moment-of-inertia-and-rotational-kinetic-energy"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:mechanics:dynamics:5",
+      "prompt": "A passenger on a fairground ride feels pressed outward against the wall as the ride spins. Which statement correctly describes the centrifugal force in this situation?",
+      "options": [
+        "It is the third-law reaction to the centripetal force and acts on the passenger along with it.",
+        "It is not a force in an inertial frame; it is a fictitious inertial term that appears only when the motion is described in a rotating frame.",
+        "It is a real outward force of magnitude m*v^2/r generated by the passenger's rotation.",
+        "It is the tangential component of the passenger's acceleration as the ride changes speed."
+      ],
+      "correctIndex": 1,
+      "explanation": "Described from the ground — an inertial frame — the only horizontal force on the passenger is the wall pushing inward, supplying the net inward force m*v^2/r; the outward sensation is the passenger's inertia resisting being turned, not a force acting on them. A centrifugal term appears only if you choose to write the equations in the rotating frame, where it is fictitious, along with the Coriolis term. Option A is wrong because a third-law partner acts on a different body, here the wall. Option C asserts the misconception directly. Option D confuses the radial and tangential components, which are perpendicular and describe different things.",
+      "difficulty": "understanding",
+      "skill": "Correcting the centrifugal-force misconception and identifying the role of the reference frame",
+      "sourceIds": [
+        "openstax-university-physics-1-centripetal-force",
+        "openstax-university-physics-1-relative-motion",
+        "openstax-university-physics-1-newtons-first-law"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "engineering-fundamentals:mechanics:dynamics:1",
+      "prompt": "In the standard division of the subject, what separates kinematics from kinetics?",
+      "options": [
+        "Kinematics applies to point masses and kinetics applies to rigid bodies.",
+        "Kinematics describes motion in space and time without considering the forces that cause it, while kinetics relates motion to mass and force.",
+        "Kinematics covers constant acceleration and kinetics covers varying acceleration.",
+        "Kinematics is the two-dimensional treatment and kinetics is the three-dimensional treatment."
+      ],
+      "correctIndex": 1,
+      "explanation": "Dynamics is divided by whether forces enter the analysis, not by the kind of body, the constancy of acceleration, or the number of dimensions. Kinematics handles position, velocity, acceleration, and constraints on their own; kinetics brings in mass and force to produce the equation of motion. Both branches are developed for point masses and for rigid bodies, in two and three dimensions, and both handle constant and varying acceleration, so the other three options fail.",
+      "difficulty": "recall",
+      "skill": "Recalling the organising division of dynamics",
+      "sourceIds": [
+        "libretexts-introductory-dynamics-outline-and-elements-of-dynamics",
+        "libretexts-introductory-dynamics-topics"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:mechanics:dynamics:2",
+      "prompt": "A car holds a constant speed of 25.0 m/s around a curve of radius 125 m. What is the magnitude and direction of its acceleration?",
+      "options": [
+        "Zero, because the speed is not changing.",
+        "0.200 m/s^2, directed along the direction of travel.",
+        "5.00 m/s^2, directed toward the centre of the curve.",
+        "5.00 m/s^2, directed away from the centre of the curve."
+      ],
+      "correctIndex": 2,
+      "explanation": "Speed is constant, so the tangential component dv/dt is zero, but the path curves, so the normal component is v^2/r = (25.0 m/s)^2 / 125 m = 5.00 m/s^2 (executed with python3), directed toward the centre of curvature. Option A is the constant-speed misconception. Option B is v/r = 0.200 s^-1, which is not even an acceleration dimensionally. Option D has the correct magnitude but the wrong direction — outward is the centrifugal misconception, and in an inertial frame no outward acceleration exists here.",
+      "difficulty": "application",
+      "skill": "Computing centripetal acceleration and identifying its direction",
+      "sourceIds": [
+        "openstax-university-physics-1-uniform-circular-motion",
+        "libretexts-mechanics-map-normal-tangential-coordinates"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:mechanics:dynamics:3",
+      "prompt": "A ball rolls horizontally off a ledge 20.0 m above flat ground at 12.0 m/s. Neglecting air resistance and taking g as 9.81 m/s^2, how far from the base of the ledge does it land?",
+      "options": [
+        "24.2 m, because the fall takes 2.02 s and the horizontal speed stays at 12.0 m/s.",
+        "48.9 m, because the fall takes 4.08 s and the horizontal speed stays at 12.0 m/s.",
+        "12.1 m, because the horizontal speed averages half its initial value during the fall.",
+        "The distance cannot be found without the ball's mass."
+      ],
+      "correctIndex": 0,
+      "explanation": "The two axes are independent. Vertically the ball starts with zero downward speed, so 20.0 m = (1/2)(9.81 m/s^2) t^2 gives t = sqrt(2 * 20.0 / 9.81) = 2.019275 s. Horizontally there is no force once it leaves the ledge, so the speed stays 12.0 m/s and x = 12.0 m/s * 2.019275 s = 24.2313 m, reported as 24.2 m to three significant figures (all executed with python3). Option B drops the square root, giving t = 4.0775 s. Option C invents a horizontal deceleration that the neglect-drag idealization has already removed. Option D is wrong because mass cancels out of both axes.",
+      "difficulty": "application",
+      "skill": "Solving a projectile problem as two independent one-dimensional problems",
+      "sourceIds": [
+        "openstax-university-physics-1-projectile-motion",
+        "openstax-university-physics-1-motion-with-constant-acceleration",
+        "nist-cuu-standard-acceleration-of-gravity"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "engineering-fundamentals:mechanics:force-and-motion",
+    "engineering-fundamentals:mechanics:free-body-diagrams",
+    "engineering-fundamentals:mechanics:statics",
+    "engineering-fundamentals:mechanics:work-and-energy",
+    "engineering-fundamentals:mechanics:momentum",
+    "engineering-fundamentals:engineering-thinking:units-measurement-and-significant-figures"
+  ],
+  "sources": [
+    "libretexts-introductory-dynamics-outline-and-elements-of-dynamics",
+    "libretexts-introductory-dynamics-topics",
+    "libretexts-introductory-dynamics-solution-strategy",
+    "libretexts-mechanics-map-normal-tangential-coordinates",
+    "libretexts-mechanics-map-fixed-axis-rotation",
+    "openstax-university-physics-1-projectile-motion",
+    "openstax-university-physics-1-uniform-circular-motion",
+    "openstax-university-physics-1-centripetal-force",
+    "openstax-university-physics-1-relative-motion",
+    "openstax-university-physics-1-rotational-variables",
+    "openstax-university-physics-1-moment-of-inertia-and-rotational-kinetic-energy",
+    "openstax-university-physics-1-calculating-moments-of-inertia",
+    "openstax-university-physics-1-newtons-second-law-for-rotation",
+    "openstax-university-physics-1-newtons-second-law",
+    "openstax-university-physics-1-newtons-first-law",
+    "openstax-university-physics-1-motion-with-constant-acceleration",
+    "nist-cuu-standard-acceleration-of-gravity",
+    "nasa-bga-drag-equation"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "All sources held at REFERENCE_ONLY; no source prose, figure, or example was adapted. OpenStax per-book terms were not independently verified for this project. The LibreTexts Mechanics Map pages state CC BY-SA 4.0 and the LibreTexts Introductory Dynamics (Steeneken) pages state CC BY 4.0, recorded from the page footers, but neither was relied on for reuse. No engineering standard was consulted or quoted, and no design value appears in the lesson.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Original prose written from facts verified against eight OpenStax University Physics Volume 1 sections, two LibreTexts Mechanics Map sections, three LibreTexts Introductory Dynamics (Steeneken) sections, the NIST fundamental-constants page for standard gravity, and the NASA Glenn drag-equation page. The machine-generated draft was discarded in full. Every number in the worked example and in the question bank was executed with python3 before publication, and the worked example carries an independent consistency check on the angular displacement.",
+    "reviewNotes": "Anti-duplication: Newton's three laws and the catalogue of force types are taught in force-and-motion; free-body-diagram construction, support reactions, and sign conventions are taught in free-body-diagrams; equilibrium of structures belongs to statics; the work-energy and impulse-momentum methods are introduced here only as alternatives and are developed in work-and-energy and momentum. Source ids shared with force-and-motion and free-body-diagrams are reused unchanged with identical URLs."
+  },
+  "contentHash": "3f188c68f7509b28",
+  "status": "source-verified",
+  "public": false
+}

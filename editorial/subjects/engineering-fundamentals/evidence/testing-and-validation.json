@@ -1,0 +1,402 @@
+{
+  "topicId": "engineering-fundamentals:engineering-practice:testing-and-validation",
+  "subjectId": "engineering-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Verification versus validation as two different questions, stated precisely from both a systems-engineering source and a metrology vocabulary",
+      "The four verification methods used in systems engineering — inspection, analysis, demonstration, test — and the conditions that make each appropriate",
+      "Bidirectional requirements traceability, and why a requirement that cannot be verified is defective rather than merely vague",
+      "Test planning: objective, configuration, procedure and acceptance criteria with tolerances fixed before the run, and why a criterion chosen afterward destroys the test's evidentiary value",
+      "Instrumentation, measurement uncertainty as a required part of any reported result, and metrological traceability through a documented unbroken chain of calibrations",
+      "Introductory design of experiments: factors, levels, responses, controlled and uncontrolled variables, replication, randomization, blocking, one-factor-at-a-time versus full factorial, and interactions",
+      "Destructive testing versus non-destructive evaluation, and probability of detection as the honest statement of NDE capability",
+      "Accelerated life testing, the acceleration factor, and the assumption that the accelerated failure mechanism is the field failure mechanism",
+      "Qualification, acceptance and certification as distinct programmes; environmental testing at the extremes of the envelope",
+      "Statistical treatment: sample mean, standard deviation, t-based confidence interval for the mean, what such an interval does and does not mean, and why one passing unit cannot support a population claim",
+      "Failure analysis: direct cause, contributing cause and root cause; regression testing after a corrective change"
+    ],
+    "supporting": [
+      "Test-as-you-fly as a configuration-fidelity principle",
+      "Censoring and lack of failures as the structural difficulty of reliability testing",
+      "Fractional factorial and Plackett-Burman designs named only as the answer to run-count growth"
+    ],
+    "outOfScope": [
+      "The design loop itself and the introduction of V and V in context — owned by engineering-design-process",
+      "Prototype types and fidelity levels — owned by prototyping",
+      "Factors of safety and failure theories — owned by safety-factors-and-failure",
+      "Foundational treatment of SI units, significant figures, precision/trueness/accuracy and the Type A/Type B uncertainty framework — owned by units-measurement-and-significant-figures and only referenced here",
+      "Specific test levels, durations, acceptance limits or sampling plans from any standard",
+      "Hypothesis-testing machinery beyond the confidence interval for a mean",
+      "Software test taxonomies (unit, integration, system) beyond regression testing"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Verification is a formal process using test, analysis, inspection or demonstration to confirm that a system and its hardware and software components satisfy all specified requirements; validation asks whether the realized product accomplishes its intended purpose in the intended environment.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nasa-se-handbook-sp-2016-6105-rev2"],
+      "status": "supported"
+    },
+    {
+      "claim": "The international vocabulary of metrology defines verification as the provision of objective evidence that a given item fulfils specified requirements, and validation as verification where the specified requirements are adequate for an intended use — so validation is verification plus a judgement about the requirements themselves.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["jcgm-200-2012-vim"],
+      "status": "supported"
+    },
+    {
+      "claim": "NASA defines the four methods of verification as analysis (mathematical modelling and analytical techniques, used when hardware is not available, including modelling, simulation and verification by similarity to a heritage product), demonstration (basic confirmation of performance capability, differentiated from testing by the lack of detailed data gathering), inspection (visual examination of a realized end product, which can include inspection of drawings, documents or records), and test (use of an end product to obtain detailed data at discrete points under controlled conditions, the most resource-intensive technique).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nasa-se-handbook-sp-2016-6105-rev2"],
+      "status": "supported"
+    },
+    {
+      "claim": "Requirements must be verifiable — stated with enough information that verification will be possible after the end product is implemented — and NASA's own requirements checklist asks whether requirements are free of unverifiable terms, naming easy, sufficient, safe, adequate, user-friendly, fast, robust, quickly and similar words.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nasa-se-handbook-sp-2016-6105-rev2"],
+      "status": "supported"
+    },
+    {
+      "claim": "Each requirement should carry bidirectional traceability to a parent requirement or be identified as self-derived; a requirement with no parent that is not acceptably self-derived indicates either a flawed traceability process or gold plating that should be eliminated, and traceability is normally recorded in a requirements matrix.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nasa-se-handbook-sp-2016-6105-rev2"],
+      "status": "supported"
+    },
+    {
+      "claim": "A verification procedure is written before the run and states the objectives and criteria established by the applicable requirements specification, the test configuration and its differences from the operational configuration, the characteristics and design criteria to be inspected, demonstrated or tested including values with tolerances for acceptance or rejection, the sequence of steps and observations, and the identification of measuring, test and recording equipment specifying range, accuracy and type, with provision for recording equipment calibration.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nasa-se-handbook-sp-2016-6105-rev2"],
+      "status": "supported"
+    },
+    {
+      "claim": "Design of experiments is a procedure for planning experiments so the data obtained can be analysed to yield valid and objective conclusions, and it requires a detailed experimental plan made in advance of doing the experiment; empirical models include interaction terms such as X1X2 to account for a possible interaction effect.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-ehandbook-doe-introduction"],
+      "status": "supported"
+    },
+    {
+      "claim": "An interaction occurs when the effect of one factor on a response depends on the level of another factor; replication is performing the same treatment combination more than once and lets random error be estimated separately from lack-of-fit error; randomization is a schedule for allocating material and conducting runs such that conditions in one run neither depend on previous conditions nor predict subsequent ones; blocking concentrates the effects of known nuisance changes into the levels of a blocking variable.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-ehandbook-doe-glossary"],
+      "status": "supported"
+    },
+    {
+      "claim": "A full factorial design with k factors each at two levels has 2^k runs — 8 runs for three factors and 32 for five — and NIST notes that at five or more factors a full factorial becomes inefficient, pointing to fractional factorial or Plackett-Burman designs instead.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["nist-ehandbook-full-factorial-designs"],
+      "status": "supported"
+    },
+    {
+      "claim": "From a 2^3 full factorial, seven effects can be estimated: three main effects, three two-factor interactions and one three-factor interaction (C(3,1)+C(3,2)+C(3,3) = 3+3+1 = 7); a one-factor-at-a-time sweep of the same three factors from a baseline uses four runs and provides no term for any interaction. The run counts and the count of estimable effects were computed in Python.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["nist-ehandbook-full-factorial-designs", "nist-ehandbook-doe-glossary", "nist-ehandbook-doe-introduction"],
+      "status": "supported"
+    },
+    {
+      "claim": "Metrological traceability is the property of a measurement result whereby the result can be related to a reference through a documented unbroken chain of calibrations, each contributing to the measurement uncertainty; it requires an established calibration hierarchy, and the VIM notes explicitly that traceability does not ensure the measurement uncertainty is adequate for a given purpose or that mistakes are absent.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["jcgm-200-2012-vim", "nist-metrological-traceability-faq"],
+      "status": "supported"
+    },
+    {
+      "claim": "NIST states that a traceability claim requires the uncertainty to be determined and documented at each step of the chain, a documented unbroken chain of calibrations, and a description of the measurement process supporting the claim — having an instrument calibrated by NIST is not by itself sufficient.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-metrological-traceability-faq"],
+      "status": "supported"
+    },
+    {
+      "claim": "Uncertainty components are evaluated as Type A (statistical analysis of repeated observations) or Type B (scientific judgement from calibration certificates, manufacturer specifications and handbook values), combined into a combined standard uncertainty, and expanded as U = k*uc with a coverage factor typically between 2 and 3, k = 2 giving roughly 95 percent confidence when the normal distribution applies.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-cuu-uncertainty-basics", "nist-cuu-expanded-uncertainty"],
+      "status": "supported"
+    },
+    {
+      "claim": "Nondestructive evaluation is the development and application of technical methods to examine materials or components in ways that do not impair future usefulness and serviceability, in order to detect, locate, measure and evaluate flaws and to assess integrity, properties and composition.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nasa-std-5009c-nde-fracture-critical"],
+      "status": "supported"
+    },
+    {
+      "claim": "NASA-STD-5009C requires nondestructive inspections of fracture-critical hardware to detect the initial crack sizes used in damage-tolerance analysis with a capability of at least 90 percent probability of detection at a 95 percent confidence level (90/95), and reliably detectable flaws are then assumed to exist in the part for the safe-life analysis.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nasa-std-5009c-nde-fracture-critical"],
+      "status": "supported"
+    },
+    {
+      "claim": "True physical acceleration means operating a unit at high stress produces the same failures that would occur at typical-use stress, only sooner; the acceleration factor is the constant multiplier between stress levels, AF = G(S1)/G(S2); different failure modes are affected differently by stress and have different acceleration factors, so failure data should be separated by mode.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-ehandbook-physical-acceleration"],
+      "status": "supported"
+    },
+    {
+      "claim": "Reliability testing is structurally hard because of censoring — when the observation period ends not all units have failed — and because too much censoring leaves little information even with many units on test; the more reliable a product is, the harder it is to obtain the failure data needed to demonstrate that reliability.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-ehandbook-reliability-difficulties"],
+      "status": "supported"
+    },
+    {
+      "claim": "Verification, qualification, acceptance and certification are distinct: the verification programme is performed once for a design; qualification is a subset performed at the extremes of the environmental envelope to show the design operates with expected margins; acceptance is a smaller subset performed on each flight unit to show that manufacturing and workmanship conform to the verified design; certification is the audit by which the body of evidence is presented to a certifying authority. Validation testing focuses on expected environments and operations, whereas qualification testing includes worst-case loads and environments.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nasa-se-handbook-sp-2016-6105-rev2"],
+      "status": "supported"
+    },
+    {
+      "claim": "A two-sided confidence interval for a mean with unknown population standard deviation is the sample mean plus and minus the t critical value at N-1 degrees of freedom times s/sqrt(N), and such intervals are constructed so that the probability of the interval containing the mean is 1 minus alpha.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["nist-ehandbook-confidence-interval-for-the-mean"],
+      "status": "supported"
+    },
+    {
+      "claim": "For the ten illustrative measurements 11.42, 12.05, 11.78, 12.34, 11.61, 12.11, 11.95, 12.48, 11.70 and 12.02 N, the sample mean is 11.946 N, the sample standard deviation is 0.3268 N, the standard error is 0.1033 N, t at 0.975 with 9 degrees of freedom is 2.2622, and the 95 percent confidence interval for the mean is 11.71 N to 12.18 N. Reaching a half-width of 0.10 N at the same scatter would need 44 measurements. All values were computed in Python; the t quantile routine was validated against the published values t(0.975, 9) = 2.2622, t(0.975, 29) = 2.0452 and z(0.975) = 1.9600.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["nist-ehandbook-confidence-interval-for-the-mean"],
+      "status": "supported"
+    },
+    {
+      "claim": "With zero failures in n independent trials, the one-sided 95 percent upper confidence bound on the population failure fraction is 1 - 0.05^(1/n): 95 percent for n = 1, 25.9 percent for n = 10 and 9.5 percent for n = 30, matching the familiar rule-of-three approximation 3/30 = 10 percent. Values computed in Python.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["nist-ehandbook-confidence-interval-for-the-mean", "nist-ehandbook-reliability-difficulties"],
+      "status": "supported"
+    },
+    {
+      "claim": "Cause analysis separates the direct cause (the cause that directly resulted in the occurrence), contributing causes (which contributed but by themselves would not have caused it) and the root cause (the cause that, if corrected, would prevent recurrence of this and similar occurrences, pursued through the series of causes until the fundamental correctable cause is reached).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["doe-ne-std-1004-92-root-cause-analysis"],
+      "status": "supported"
+    },
+    {
+      "claim": "After a corrective change, care is needed that fixing one deficiency does not create a new issue in a part or performance that previously operated satisfactorily; regression testing, described as a formal process of rerunning previously used acceptance tests and used primarily for software, is one method of guarding against that.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nasa-se-handbook-sp-2016-6105-rev2"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "How verification and validation are worded differs between systems engineering and metrology.",
+      "positions": [
+        "NASA frames the pair operationally: verification confirms compliance with specified requirements by test, analysis, inspection or demonstration; validation confirms the product accomplishes its intended purpose in the intended environment for the intended users.",
+        "The VIM frames the pair definitionally: verification is objective evidence that an item fulfils specified requirements, and validation is verification where the specified requirements are adequate for an intended use."
+      ],
+      "resolution": "Not a conflict but two levels of abstraction that agree. The lesson gives the VIM wording as the compact logical statement and the NASA wording as the programme-level one, and notes that the VIM formulation makes validation an extension of verification rather than a parallel activity."
+    },
+    {
+      "issue": "Whether regression testing is a software-only practice.",
+      "positions": [
+        "NASA's handbook describes regression testing as a formal process of rerunning previously used acceptance tests, primarily used for software.",
+        "The underlying concern it addresses — that a fix can break something that previously worked — is stated by NASA in general product terms, not software terms."
+      ],
+      "resolution": "The lesson states the practice as NASA states it (named primarily for software) while teaching the general principle that any change reopens previously closed verification, which is what the handbook's re-engineering caution actually says."
+    },
+    {
+      "issue": "Whether one-factor-at-a-time experimentation is condemned by the cited sources.",
+      "positions": [
+        "The NIST handbook pages read do not name or criticise one-factor-at-a-time experimentation.",
+        "The same pages define interactions as effects that exist only when factor levels are combined, and show that a factorial layout carries interaction terms."
+      ],
+      "resolution": "The lesson states the OFAT limitation as a consequence of the sourced definitions rather than as a quotation: an OFAT sweep contains no run in which two factors are moved together, so it has no data from which an interaction term could be estimated. It does not attribute a criticism of OFAT to NIST."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained no factual content about testing or validation at all — its In 30 Seconds, Why This Matters, College Version, vocabulary, worked example, mistakes and questions were topic-agnostic boilerplate that would fit any lesson in any subject.",
+    "The draft's vocabulary entry defined Testing And Validation circularly as 'a foundational Engineering Fundamentals concept covered in this lesson'.",
+    "The draft's analogy (a map legend) carried no engineering content and had no analogyLimits."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire draft with sourced content built on the verification-versus-validation distinction.",
+    "Added the four NASA verification methods with their definitions and the conditions that select each, which the draft did not mention.",
+    "Added measurement uncertainty, calibration and metrological traceability as prerequisites for any test result being evidence.",
+    "Added a fully executed worked example: mean, standard deviation, t-based 95 percent confidence interval, required sample size for a tighter interval, and the binomial upper bound demonstrating that one passing unit supports no population claim.",
+    "Added the educational-material and not-engineering-design-guidance statements required for this subject.",
+    "Raised estimatedMinutes from 8 to 12 to match the actual depth."
+  ],
+  "rightsIssues": [
+    "NASA/SP-2016-6105 Rev2 and NASA-STD-5009C are U.S. Government works released for public use and unlimited distribution; still, no passages were reproduced and all prose here is original.",
+    "DOE-NE-STD-1004-92 is a U.S. Department of Energy guideline in the public domain; its cause definitions were restated in original wording.",
+    "JCGM 200:2012 (VIM) is jointly copyrighted by the JCGM member organizations and requires written permission for reproduction; used REFERENCE_ONLY, with definitions restated rather than quoted.",
+    "NIST/SEMATECH e-Handbook pages and NIST CUU pages carry no explicit licence statement and are treated REFERENCE_ONLY; facts were verified and written from scratch.",
+    "All numbers in the lesson are EliExplains' own computations, executed in Python before publication; the measurement set in the worked example is synthetic teaching data invented for this lesson and is labelled as such."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nasa-se-handbook-sp-2016-6105-rev2",
+      "title": "NASA Systems Engineering Handbook, NASA/SP-2016-6105 Rev2",
+      "provider": "Office of the Chief Engineer, National Aeronautics and Space Administration (record on the NASA Technical Reports Server)",
+      "url": "https://ntrs.nasa.gov/citations/20170001761",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Existing registry source, reused with the same id and URL. For this topic the 508-compliant PDF at https://www.nasa.gov/wp-content/uploads/2018/09/nasa_systems_engineering_handbook_0.pdf was downloaded again and text-extracted locally with pypdf. Supports: the four methods of verification with their full definitions (Sec. 5.3, METHODS OF VERIFICATION box: analysis, demonstration, inspection, test) and the test-as-you-fly maxim; the DIFFERENCES BETWEEN VERIFICATION, QUALIFICATION, ACCEPTANCE AND CERTIFICATION box in Sec. 5.3; the contents of a verification procedure and a verification report in Table 5.3-1, including criteria with tolerances for acceptance or rejection and identification of measuring equipment by range, accuracy and type; the requirements-verifiability check and the list of unverifiable terms in the requirements checklist appendix; bidirectional traceability and the gold-plating test in Sec. 6.2.1.2.3; the statement that validation testing addresses expected environments and operations whereas qualification testing includes worst-case loads and environments (Sec. 5.4.1.2.2); and the re-engineering caution with regression testing described as rerunning previously used acceptance tests (Sec. 5.4)."
+    },
+    {
+      "id": "jcgm-200-2012-vim",
+      "title": "JCGM 200:2012, International vocabulary of metrology - Basic and general concepts and associated terms (VIM), 3rd edition, 2008 version with minor corrections",
+      "provider": "Joint Committee for Guides in Metrology (BIPM, IEC, IFCC, ILAC, ISO, IUPAC, IUPAP, OIML)",
+      "url": "https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "license": "Copyright shared jointly by the JCGM member organizations; the document states that reproduction requires prior written permission from the JCGM",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Existing registry source, reused with the same id and URL. The bilingual PDF was downloaded again and text-extracted locally for this topic. Entries used here, all restated in original wording and none reproduced: 2.39 calibration (the two-step operation relating standard values with uncertainties to indications with uncertainties, then relating an indication to a measurement result), 2.41 metrological traceability (documented unbroken chain of calibrations each contributing to the measurement uncertainty) with Note 2 on the required calibration hierarchy and Note 5 that traceability does not ensure adequate uncertainty or absence of mistakes, 2.44 verification (objective evidence that a given item fulfils specified requirements, with the note that measurement uncertainty should be taken into consideration) and 2.45 validation (verification where the specified requirements are adequate for an intended use)."
+    },
+    {
+      "id": "nist-metrological-traceability-faq",
+      "title": "Metrological Traceability: Frequently Asked Questions and NIST Policy",
+      "provider": "NIST Office of Weights and Measures / metrology programme",
+      "url": "https://www.nist.gov/metrology/metrological-traceability",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "No explicit licence statement on the page; treated as reference-only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Page fetched and read. Supports: NIST's adoption of the VIM definition of metrological traceability; the elements NIST lists as required to establish it (a clearly defined measurand, a described measurement system or working standard, a stated measurement result with documented uncertainty, a specified reference at the time of comparison, and measurement assurance for both the measurement system and the reference); and NIST's position that a traceability claim requires uncertainty determined and documented at each step of an unbroken chain plus a description of the measurement process, so that having an instrument calibrated by NIST is not by itself a traceability claim. www.nist.gov/robots.txt carries no AI-specific disallow directives."
+    },
+    {
+      "id": "nist-cuu-uncertainty-basics",
+      "title": "Essentials of expressing measurement uncertainty: basic definitions and Type B evaluation",
+      "provider": "NIST Physical Measurement Laboratory, Constants, Units and Uncertainty reference",
+      "url": "https://physics.nist.gov/cuu/Uncertainty/basic.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "No explicit licence statement on the page; treated as reference-only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Existing registry source, reused with the same id and URL. Used here only for the Type A versus Type B evaluation distinction and the fact that calibration certificates and manufacturer specifications are Type B inputs, which is the prerequisite the units-measurement-and-significant-figures lesson establishes and this lesson builds on."
+    },
+    {
+      "id": "nist-cuu-expanded-uncertainty",
+      "title": "Expanded uncertainty and coverage factor (Essentials of expressing measurement uncertainty)",
+      "provider": "NIST Physical Measurement Laboratory, Constants, Units and Uncertainty reference",
+      "url": "https://physics.nist.gov/cuu/Uncertainty/coverage.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "No explicit licence statement on the page; treated as reference-only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Existing registry source, reused with the same id and URL. Used here for U = k*uc, k typically 2 to 3, and k = 2 corresponding to approximately 95 percent confidence under a normal distribution, which is what lets a measured value be compared against an acceptance limit honestly."
+    },
+    {
+      "id": "nist-ehandbook-doe-introduction",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods, Section 5.1.1: What is experimental design?",
+      "provider": "NIST Information Technology Laboratory (with SEMATECH)",
+      "url": "https://www.itl.nist.gov/div898/handbook/pri/section1/pri11.htm",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "No explicit licence statement on the page; treated as reference-only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Page fetched and read. Supports: DOE as an efficient procedure for planning experiments so that the data obtained can be analysed to yield valid and objective conclusions; the requirement for a detailed experimental plan in advance of doing the experiment; the black-box process model with controllable input factors, measured responses and uncontrolled variables that may be discrete (such as different operators) or continuous (such as temperature); and empirical models containing main-effect and interaction terms such as X1X2. www.itl.nist.gov serves no robots.txt (the path redirects to www.nist.gov/itl/)."
+    },
+    {
+      "id": "nist-ehandbook-doe-glossary",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods, Section 5.7: A Glossary of DOE Terminology",
+      "provider": "NIST Information Technology Laboratory (with SEMATECH)",
+      "url": "https://www.itl.nist.gov/div898/handbook/pri/section7/pri7.htm",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "No explicit licence statement on the page; treated as reference-only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Page fetched and read. Supports the definitions restated in original wording of factor, main effect, interaction (the effect of one factor on a response depends on the level of another factor), replication (performing the same treatment combination more than once, which allows random error to be estimated separately from lack-of-fit error), randomization (a schedule such that conditions in one run neither depend on previous conditions nor predict subsequent ones) and blocking (concentrating effects of known changes in materials, operators or machines into the levels of a blocking variable). The glossary contains no entry for one-factor-at-a-time, so no OFAT criticism is attributed to it."
+    },
+    {
+      "id": "nist-ehandbook-full-factorial-designs",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods, Section 5.3.3.3: Full factorial designs",
+      "provider": "NIST Information Technology Laboratory (with SEMATECH)",
+      "url": "https://www.itl.nist.gov/div898/handbook/pri/section3/pri333.htm",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "No explicit licence statement on the page; treated as reference-only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Page fetched and read. Supports: with k factors each at two levels a full factorial design has 2^k runs, with the tabulated examples of 8 runs for three factors and 32 runs for five; and the statement that at five or more factors a full factorial requires a large number of runs and is not very efficient, with fractional factorial and Plackett-Burman designs recommended instead. The count of estimable effects from a 2^3 design quoted in the lesson is EliExplains' own combinatorial computation, executed in Python, not a quotation from this page."
+    },
+    {
+      "id": "nist-ehandbook-confidence-interval-for-the-mean",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods, Section 7.2.2.1: Confidence interval approach",
+      "provider": "NIST Information Technology Laboratory (with SEMATECH)",
+      "url": "https://www.itl.nist.gov/div898/handbook/prc/section2/prc221.htm",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "No explicit licence statement on the page; treated as reference-only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Page fetched and read. Supports the two-sided confidence interval for a mean built from the sample mean, s/sqrt(N) and the t critical values at N-1 degrees of freedom, and the statement that confidence intervals are constructed so that the probability of the interval containing the mean is 1 minus alpha. All arithmetic in the worked example is EliExplains' own and was executed in Python; the t-quantile routine used was checked against published values t(0.975, 9) = 2.2622, t(0.975, 29) = 2.0452 and z(0.975) = 1.9600 before use."
+    },
+    {
+      "id": "nist-ehandbook-physical-acceleration",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods, Section 8.1.4: What is 'physical acceleration' and how do we model it?",
+      "provider": "NIST Information Technology Laboratory (with SEMATECH)",
+      "url": "https://www.itl.nist.gov/div898/handbook/apr/section1/apr14.htm",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "No explicit licence statement on the page; treated as reference-only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Page fetched and read, with the companion page 8.1.5 on common acceleration models (https://www.itl.nist.gov/div898/handbook/apr/section1/apr15.htm) read for the acceleration-factor form AF = G(S1)/G(S2) and the statement that acceleration models are usually based on the physics or chemistry underlying a particular failure mechanism. Supports: true acceleration means high stress produces the same failures as typical-use stress only sooner, with the same causes and a different time scale; the acceleration factor as the constant multiplier between stress levels; the requirement for a stress-dependent physical degradation process; and the warning that different failure modes have different acceleration factors so data should be separated by failure mode."
+    },
+    {
+      "id": "nist-ehandbook-reliability-difficulties",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods, Section 8.1.3: What are some common difficulties with reliability data and how are they overcome?",
+      "provider": "NIST Information Technology Laboratory (with SEMATECH)",
+      "url": "https://www.itl.nist.gov/div898/handbook/apr/section1/apr13.htm",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "No explicit licence statement on the page; treated as reference-only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Page fetched and read. Supports: censoring, meaning that when the observation period ends not all units have failed; the point that heavy censoring leaves limited information even when many units are under observation because there are few actual failures; and the handbook's summary that the more reliable a product is, the harder it is to obtain the failure data needed to demonstrate its reliability."
+    },
+    {
+      "id": "nasa-std-5009c-nde-fracture-critical",
+      "title": "NASA-STD-5009C, Nondestructive Evaluation Requirements for Fracture-Critical Metallic Components",
+      "provider": "NASA Office of the Chief Engineer / NASA Technical Standards System",
+      "url": "https://standards.nasa.gov/standard/NASA/NASA-STD-5009",
+      "sourceType": "standards-body",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "Marked APPROVED FOR PUBLIC RELEASE - DISTRIBUTION IS UNLIMITED on every page; U.S. Government work",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "The approved PDF at https://standards.nasa.gov/sites/default/files/standards/NASA/C/0/2023-08-03-NASA-STD-5009C-Approved.pdf (dated 3 August 2023) was downloaded and text-extracted locally with pypdf. Supports: the definition of nondestructive evaluation as technical methods that examine materials or components without impairing future usefulness and serviceability, in order to detect, locate, measure and evaluate flaws; the definition of a flaw as an imperfection or discontinuity that may be detectable and is not necessarily rejectable; the definition of POD 90/95 as 90 percent probability of flaw detection with a 95 percent lower confidence bound; requirement NER 2, that inspections of fracture-critical hardware detect the initial crack sizes used in damage-tolerance analysis with at least 90/95 capability; and the modelling convention that reliably detectable flaws are assumed to exist in the part for safe-life analysis. No standard tables, flaw sizes or numerical requirement values are reproduced in the lesson. standards.nasa.gov/robots.txt carries no AI-specific disallow directives."
+    },
+    {
+      "id": "doe-ne-std-1004-92-root-cause-analysis",
+      "title": "DOE-NE-STD-1004-92, DOE Guideline: Root Cause Analysis Guidance Document",
+      "provider": "U.S. Department of Energy, Office of Nuclear Energy, Office of Nuclear Safety Policy and Standards",
+      "url": "https://www.energy.gov/sites/default/files/2026-04/DOE-NE-STD-1004-92.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "U.S. Department of Energy guideline dated February 1992. The energy.gov PDF recorded in the url field is the copy actually read: downloaded and text-extracted locally with pypdf. The former DOE Technical Standards Program document page at https://www.standards.doe.gov/standards-documents/1000/1004-std-1992 now 301-redirects to a generic programme landing page, so the direct agency PDF is registered as the canonical location. Supports the definitions restated in original wording of direct cause, contributing cause and root cause (the cause that, if corrected, would prevent recurrence of this and similar occurrences, with generic implications beyond the single occurrence, pursued through a series of causes until the fundamental correctable cause is identified), and the assessment line of reasoning: identify the problem, determine its significance, identify the causes immediately preceding and surrounding it, then work back to the root cause, which is the stopping point."
+    }
+  ]
+}

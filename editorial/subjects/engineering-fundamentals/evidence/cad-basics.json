@@ -1,0 +1,402 @@
+{
+  "topicId": "engineering-fundamentals:engineering-practice:cad-basics",
+  "subjectId": "engineering-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "CAD as a geometric modeling and documentation system rather than a source of engineering judgment",
+      "Parametric feature-based modeling: sketch planes, geometric and dimensional constraints, dimensions as parameters",
+      "Features (extrude, revolve, sweep, loft, fillet, chamfer, shell, hole, pattern, mirror) and the feature tree as an editable ordered history",
+      "Design intent as the central skill, and how under-constrained sketches and arbitrary dimension chains produce models that break on edit",
+      "Direct (explicit) modeling as the contrasting history-free paradigm, and when each paradigm fits",
+      "Assemblies: part instances, mates and constraints, six degrees of freedom, interference checking",
+      "Drawings generated from models, and associativity between the master model and its derived data",
+      "Model-based definition and PMI as the shift away from the 2D drawing as the authority, with ASME Y14.41 named by designation only",
+      "File formats: native versus neutral exchange (STEP AP242, IGES as legacy, STL as mesh) and why STL loses exact geometry and PMI",
+      "Interoperability as a real and measured cost, not a solved problem",
+      "Version control, PDM and PLM at a conceptual level",
+      "Downstream uses (CAM, FEA and CFD preprocessing, rendering, additive manufacturing) with the caveats that a model that looks right can be unmanufacturable and that simulation rests on assumptions the CAD model does not carry"
+    ],
+    "supporting": [
+      "Boundary representation as the usual internal form of a mechanical solid model",
+      "Semantic versus graphical PMI",
+      "Native / neutral / viewable data taxonomy from MIL-STD-31000B",
+      "Point-to-point versus neutral-format translation economics",
+      "Partial industrial adoption of PMI-embedded models"
+    ],
+    "outOfScope": [
+      "Orthographic and isometric projection, line types, view layout, dimensioning practice, tolerancing and GD&T symbology (owned by technical-drawing)",
+      "Fabrication methods and prototype building (owned by prototyping)",
+      "Test planning, measurement and verification methods (owned by testing-and-validation)",
+      "Step-by-step instructions for any specific CAD package",
+      "Any design guidance for a real part, structure, vessel, circuit or machine",
+      "Mesh generation theory and finite-element formulation"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Parametric CAD is a history-based, feature-based approach in which the model is built as an ordered sequence of features and the software keeps that sequence; direct modeling is a history-free, parameter-free approach that keeps no change log of features and is therefore inapplicable to parametric sensitivity studies.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nerenst-2023-robust-sketch-constraints"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Commercial CAD systems split sketch constraints into dimensional constraints (lengths, angles, positions) and geometrical constraints (coaxial, tangential, perpendicular and similar); a sketch with exactly enough of them to fix its geometry is called iso-constrained, also known as fully constrained.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nerenst-2023-robust-sketch-constraints",
+        "libretexts-parametric-cad-and-3d-modeling"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Design intent is stated in ISO 10303-108, as reported in the peer-reviewed literature, as the intentions of the designer of a model with regard to how it may be instantiated or modified; in practice a model carries design intent when a parameter change produces the change the designer meant.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nerenst-2023-robust-sketch-constraints"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "How a sketch is constrained determines whether it survives parameter change: documented failure modes include geometry overlapping itself, lines flipping when constraints become inconsistent, and geometry that regenerates without failing but no longer expresses the design intent; an iso-constrained sketch can become over-constrained or inconsistent once variation is applied, and an over-constrained sketch has no unique configuration.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nerenst-2023-robust-sketch-constraints"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Constraint skill is teachable and measurable: in a 2023 study, fewer than 30 minutes of training on three Robust Sketch Principles produced a statistically significant improvement in sketch robustness for all fourteen participants (nine M.Sc. engineering students and five industrial CAD specialists) over dimensional variation of up to plus or minus 80 percent.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "nerenst-2023-robust-sketch-constraints"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Six degrees of freedom means translation and rotation about three orthogonal axes X, Y and Z; an unconstrained rigid part in an assembly therefore has six degrees of freedom that mates remove.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nist-dagalakis-6dof-tri-stage-micro-positioner"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Interference checking against space claims is an established part of industrial design practice: in vehicle concept design, engineers analyze space claims and conduct interference checking in the process called packaging, to confirm that occupants and components fit inside the exterior.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nist-planning-report-99-1-automotive-interoperability"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "MIL-STD-31000B defines Model Based Definition as the practice of using 3D datasets containing the exact solid representation, associated 3D geometry and 3D annotations of a product's dimensions, tolerances, materials, finishes and other notes to specify a complete product definition, and cross-references ASME Y14.41, Digital Product Definition Data Practices.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "mil-std-31000b-technical-data-package"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Associativity is a contractual requirement in a 3D technical data package: MIL-STD-31000B requires that derived engineering design data, including 2D drawings, lightweight viewables and neutral files, be based on and derived from the master native 3D models, and that there be no conflict in data between the master model and its derived data.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "mil-std-31000b-technical-data-package"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "MIL-STD-31000B distinguishes native CAD data (readable and editable only by the authoring system, and generally the only format suitable as master technical data) from neutral CAD data (derived from the native format to a widely available standard such as STEP, and generally not suitable as master data) and viewable CAD data such as 3D PDF.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "mil-std-31000b-technical-data-package"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "STEP is ISO 10303, the standard for product model data; its application protocol AP242, ISO 10303-242, is titled 'Managed model-based 3D engineering', was first published in December 2014, extends earlier protocols for product and manufacturing information, kinematics and tessellation, and in edition 4 has been deployed by all major CAD vendors. NIST was the original secretariat for STEP in the 1990s.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nist-step-at-nist",
+        "nist-ams-300-10-traceability-manufacturing-data"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Product and manufacturing information is the presentation and representation, inside a 3D product definition, of geometric dimensioning and tolerancing, material specifications, component lists, process specifications and inspection requirements; NIST distinguishes semantic PMI, which downstream software can consume directly, from graphical PMI, which preserves the appearance of the annotation for a human reader.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nist-ams-300-10-traceability-manufacturing-data",
+        "nist-mbe-pmi-validation-and-conformance-testing"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "STL supports only a surface mesh to define a part, whereas the ISO/ASTM 52915 additive manufacturing file format additionally supports the part's boundary representation together with colour, texture, material specification and substructures.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nist-ams-300-10-traceability-manufacturing-data"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A neutral exchange format needs only two translators per system (a read and a write half-translator) whereas point-to-point translation needs n(n-1) translators for n systems; the neutral formats in common automotive use in 1999, IGES and DXF, were limited because they were designed mainly to communicate design data, and the U.S. Product Data Association had stated that IGES 6.0 would be its last upgrade with effort moving to STEP.",
+      "claimType": "HISTORICAL",
+      "sourceIds": [
+        "nist-planning-report-99-1-automotive-interoperability"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Interoperability failure is expensive and mostly consists of repair work: a 1999 NIST-commissioned study estimated that imperfect interoperability imposed at least $1 billion per year on the U.S. automotive supply chain, that by far the largest component was resources devoted to repairing or re-entering data files unusable by downstream applications, and that the estimate was conservative.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "nist-planning-report-99-1-automotive-interoperability"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A NIST literature review reports costs associated with interoperability of varying data formats estimated at between $20.9 billion and $42.9 billion, and reports a vendor survey in which an estimated 26.8 percent of respondents had 51 percent or more of their designs released with PMI-embedded 3D models; both figures are cited from other studies rather than measured by NIST, and the survey sampled self-selected respondents.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "nist-ams-100-26-model-based-enterprise"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Every transformation of model data is an opportunity for loss: NIST-sponsored work on CAD-to-CAM and CAD-to-coordinate-metrology exchange requires that data be validated after each transformation to confirm no corruption occurred, and notes that once the definition is no longer a visually inspectable 2D drawing, automated algorithms are needed to verify it.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nist-gcr-16-003-validation-downstream-cam-cmm"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Simulation results depend on assumptions the geometry does not carry: NASA-STD-7009B defines an assumption in modeling and simulation as information asserted to simplify or focus aspects of the model or to presume parameter values, defines model uncertainty as variation due to assumptions, formulas and representations rather than to the real system, and requires that a model's abstractions, assumptions, inclusions, exclusions and parameter limits be stated and that credibility be assessed and conveyed for critical decisions.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-std-7009b-models-and-simulations"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A geometrically correct model is not by itself a producible definition: NIST's model-based-enterprise review records the Boeing 787 case in which some parts did not fit together and caused extensive rework, with the problem traced back to failure to clearly communicate requirements and data to suppliers, and MIL-STD-31000B requires a technical data package to be complete and accurate enough for its intended use rather than merely to depict a shape.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nist-ams-100-26-model-based-enterprise",
+        "mil-std-31000b-technical-data-package"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A Model-Based Enterprise is an organization that applies modeling and simulation technologies to integrate and manage its technical and business processes related to production and product lifecycle support.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nist-ams-100-26-model-based-enterprise"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "How current the interoperability cost figures are",
+      "positions": [
+        "The RTI/NIST study of March 1999 estimates at least $1 billion per year for the U.S. automotive supply chain alone",
+        "NIST AMS 100-26 (2019) cites a much larger range, $20.9 billion to $42.9 billion, for costs associated with interoperability of varying data formats across a wider scope"
+      ],
+      "resolution": "Both are reported with their date, scope and provenance. The lesson uses them to establish that interoperability cost is real and measurable, not to give a current dollar figure, and states that the larger range is NIST's citation of other studies over a broader scope."
+    },
+    {
+      "issue": "Status of IGES",
+      "positions": [
+        "The 1999 report describes IGES as one of the two neutral formats then in common automotive use and reports US Pro's statement that IGES 6.0 would be the last upgrade",
+        "No current authoritative source was located confirming the present publication status of IGES"
+      ],
+      "resolution": "The lesson describes IGES as a legacy neutral format and attributes the end-of-development statement to the 1999 report rather than asserting a current status."
+    },
+    {
+      "issue": "Whether MIL-STD-31000B is the current revision",
+      "positions": [
+        "everyspec lists MIL-STD-31000B (31 October 2018) as the latest revision indexed",
+        "Secondary commentary refers to a later update"
+      ],
+      "resolution": "The lesson cites MIL-STD-31000B by its revision letter and 2018 date and makes no claim that it is the current revision."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained no CAD content at all: it described 'CAD Basics' as a generic concept for organizing information, asking better questions and explaining relationships, with no reference to geometry, modeling, constraints, features, assemblies, drawings or file formats.",
+    "The draft's vocabulary list defined 'CAD Basics' circularly as 'a foundational Engineering Fundamentals concept covered in this lesson' and otherwise listed context, evidence and application.",
+    "The draft's analogy (a label on a toolbox drawer) and its worked example (a student reading a scenario) carried no engineering content and could not be sourced."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire generated draft with sourced technical content on parametric feature-based modeling, design intent, direct modeling, assemblies, derived drawings, MBD/PMI and file interoperability.",
+    "Made the lesson tool-neutral: major CAD systems are named only as examples where a source names them, and no step-by-step procedure for any package is given.",
+    "Named ASME Y14.41 and ASME Y14.5 by designation only, with no standard text, tables or values reproduced, per the subject's standards caution.",
+    "Added the boundary that GD&T, projection and dimensioning practice belong to the parallel technical-drawing topic, that fabrication belongs to prototyping and that verification belongs to testing-and-validation.",
+    "Attributed every dollar figure and adoption percentage to its study, date and scope rather than presenting it as a current industry fact.",
+    "Added the explicit statements that this is educational material and not engineering design guidance."
+  ],
+  "rightsIssues": [
+    "ASME Y14.41 and ASME Y14.5 are copyrighted and paywalled. They are named by designation and described only in terms of what other, readable sources say they govern. No standard text, table or value was read or reproduced.",
+    "ISO 10303 and ISO/ASTM 52915 are likewise paywalled; iso.org catalogue pages returned 403 to the fetcher. Titles, part numbers and first-publication dates are taken from NIST documents that cite them, and no ISO text was read or reproduced.",
+    "The Computer-Aided Design & Applications article is freely downloadable but carries an all-rights-reserved copyright line; recorded REFERENCE_ONLY and used for facts only.",
+    "The Engineering LibreTexts chapter is CC BY-NC; the non-commercial term may not suit this project, so it is recorded REFERENCE_ONLY and no wording was adapted."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-step-at-nist",
+      "title": "STEP at NIST (Smart Connected Manufacturing Systems Group)",
+      "provider": "National Institute of Standards and Technology (NIST), Communications Technology Laboratory",
+      "url": "https://www.nist.gov/ctl/smart-connected-systems-division/smart-connected-manufacturing-systems-group/step-nist",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "No explicit licence statement on the page; treated as reference-only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Page fetched and read. Supports: STEP is ISO 10303, the Standard for Product Model Data, used to share engineering and manufacturing data within organizations and across supply chains; AP242 edition 4 has been deployed by all major CAD vendors; NIST was the original secretariat for STEP in the 1990s and holds project-manager, editor and convener roles in ISO TC 184/SC 4; NIST's STEP File Analyzer and Viewer is used by the CAx Interoperability Forum to check conformance of STEP implementations in CAD software. No source wording reproduced."
+    },
+    {
+      "id": "nist-mbe-pmi-validation-and-conformance-testing",
+      "title": "MBE PMI Validation and Conformance Testing Project",
+      "provider": "National Institute of Standards and Technology (NIST), Smart Connected Manufacturing Systems Group",
+      "url": "https://www.nist.gov/ctl/smart-connected-systems-division/smart-connected-manufacturing-systems-group/mbe-pmi-validation",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "No explicit licence statement on the page; treated as reference-only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Page fetched and read. Supports: the content of product and manufacturing information (geometric dimensioning and tolerancing, 3D annotations, surface texture, finish requirements, process notes, material specifications, welding symbols); the semantic (representation, machine-consumable) versus graphical (presentation, human-readable) PMI distinction; the project's use of ASME Y14.5 for dimensioning and tolerancing symbology and ASME Y14.41 for how PMI is presented in 2D and 3D; and the testing of STEP, JT and 3D PDF derivative files against the original CAD models. Standard designations recorded by designation only; no standard text read or reproduced."
+    },
+    {
+      "id": "nist-ams-100-26-model-based-enterprise",
+      "title": "The Model Based Enterprise: A Literature Review of Costs and Benefits for Discrete Manufacturing, NIST Advanced Manufacturing Series 100-26 (Douglas Thomas, August 2019)",
+      "provider": "National Institute of Standards and Technology (NIST), Engineering Laboratory, Applied Economics Office",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ams/NIST.AMS.100-26.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "No explicit licence statement in the document; treated as reference-only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "PDF (doi 10.6028/NIST.AMS.100-26) downloaded and read locally after text extraction with pypdf. Supports: the definition of a Model-Based Enterprise as an organization that applies modeling and simulation technologies to integrate and manage its technical and business processes for production and product lifecycle support; the report's framing that the accuracy, completeness and speed of design-information transfer is critical and that flaws in it cause clarification labour, inferior products and rework; the Lifecycle Insights survey figure that an estimated 26.8 % of respondents had 51 % or more of their designs released with PMI-embedded 3D models (a vendor survey of self-selected respondents, reported as such); the range of $20.9 billion to $42.9 billion cited for costs associated with interoperability of varying data formats; and the Boeing 787 narrative in which some parts did not fit together, causing extensive rework traced back to failure to communicate requirements and data to suppliers. All dollar figures are the report's citations of other studies and are presented in the lesson as such."
+    },
+    {
+      "id": "nist-ams-300-10-traceability-manufacturing-data",
+      "title": "Recommendations on Ensuring Traceability and Trustworthiness of Manufacturing-Related Data, NIST Advanced Manufacturing Series 300-10 (T. Hedberg Jr., M. Helu, S. Krima, A. Barnard Feeney, July 2020)",
+      "provider": "National Institute of Standards and Technology (NIST), Engineering Laboratory, Systems Integration Division",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ams/NIST.AMS.300-10.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "No explicit licence statement in the document; treated as reference-only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "PDF (doi 10.6028/NIST.AMS.300-10) downloaded and read locally after text extraction with pypdf. Supports: ISO 10303-242:2014 is titled 'Managed model-based 3D engineering' and was first published in December 2014; STEP AP242 extends earlier STEP application protocols for PMI, kinematics and tessellation; the definition of PMI as the presentation and representation of GD&T, material specifications, component lists, process specifications and inspection requirements inside a 3D product definition; typical AP242 uses (CAD-to-CAD, CAD-to-CAM and computer-aided inspection, long-term archiving of design data); the statement that STEP is widely adopted in major CAD systems but users must confirm their tools support AP242; and, critically for this lesson, that STL supports only a surface mesh to define a part while ISO/ASTM 52915 (AMF) additionally supports boundary representation, colour, texture, material specification and substructures. Standards named by designation only."
+    },
+    {
+      "id": "nist-gcr-16-003-validation-downstream-cam-cmm",
+      "title": "Validation for Downstream Computer Aided Manufacturing and Coordinate Metrology Processes, NIST GCR 16-003 (Asa Trainer, International TechneGroup Incorporated, September 2015)",
+      "provider": "National Institute of Standards and Technology (NIST), Engineering Laboratory (grant/contractor report)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/gcr/2016/NIST.GCR.16-003.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "No explicit licence statement in the document; treated as reference-only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "PDF (doi 10.6028/NIST.GCR.16-003) downloaded and read locally after text extraction with pypdf. Supports: the CAD-to-STEP-to-CAM/CMM workflow in which a model-based definition authored by an OEM is consumed downstream by manufacturing and inspection software; the requirement that data be validated after every transformation because corruption can occur during translation; the point that once the definition is no longer a visually inspectable 2D drawing, automated algorithms are needed to verify it; and the treatment of boundary-representation (BREP) geometry as the geometric content that is mapped between formats."
+    },
+    {
+      "id": "nist-planning-report-99-1-automotive-interoperability",
+      "title": "Interoperability Cost Analysis of the U.S. Automotive Supply Chain, Final Report (S. B. Brunnermeier and S. A. Martin, Research Triangle Institute, March 1999; NIST Planning Report 99-1)",
+      "provider": "Research Triangle Institute, prepared for the National Institute of Standards and Technology (NIST)",
+      "url": "https://www.rti.org/sites/default/files/resources/US_Automotive.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "No explicit licence statement in the document; treated as reference-only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "PDF downloaded from RTI and read locally after text extraction with pypdf; the NIST planning-report copy at nist.gov/director/prog-ofc/report99-1.pdf now returns 404, so the contractor's own posting is registered as the URL. Supports: the study's headline estimate that imperfect interoperability imposes at least $1 billion per year on the U.S. automotive supply chain, that the largest component is resources devoted to repairing or re-entering data files unusable downstream, and that the estimate is conservative; the four data-sharing approaches (single-system standardization, point-to-point translation, manual re-entry, neutral-format translation) and the n(n-1) translator count for point-to-point versus two half-translators per system for a neutral format; the description of IGES and DXF as neutral formats limited because they were designed mainly to communicate design data, and the 1999 statement that US Pro's IGES 6.0 would be its last upgrade with development effort moving to STEP; and the description of interference checking and space-claim analysis during vehicle packaging. All statements are from 1999 and are dated as such in the lesson."
+    },
+    {
+      "id": "mil-std-31000b-technical-data-package",
+      "title": "MIL-STD-31000B, Department of Defense Standard Practice: Technical Data Package (TDP), 31 October 2018",
+      "provider": "U.S. Department of Defense",
+      "url": "https://everyspec.com/MIL-STD/MIL-STD-10000-and-Up/MIL-STD-31000B_55788/",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "The official DoD repository for this standard is ASSIST (https://quicksearch.dla.mil), which the fetcher could not read; the everyspec.com mirror landing page is registered and the PDF it serves was downloaded and read locally after text extraction with pypdf. Supports: the purpose of a technical data package as an authoritative, clear, complete and accurate technical description of an item; the 2D versus 3D TDP types; the definition of Model Based Definition as the practice of using 3D datasets containing the exact solid representation, associated 3D geometry and 3D annotations of dimensions, tolerances, materials, finishes and other notes to specify a complete product definition (cross-referenced to ASME Y14.41); the requirement that derived data including 2D TDPs, lightweight viewables and neutral files be based on and derived from the master native 3D models with no conflict between them; the native / neutral / viewable CAD data taxonomy and the rule that native data is generally the only format suitable to serve as master technical data while neutral data is created to a widely available standard such as STEP; and the reference list confirming ASME Y14.41 is titled Digital Product Definition Data Practices and ISO 10303 is the Standard for the Exchange of Product model data. Standards referenced by designation only; no ASME or ISO text read or reproduced."
+    },
+    {
+      "id": "nasa-std-7009b-models-and-simulations",
+      "title": "NASA Technical Standard NASA-STD-7009B, Standard for Models and Simulations (Office of the NASA Chief Engineer, 5 March 2024)",
+      "provider": "National Aeronautics and Space Administration (NASA)",
+      "url": "https://standards.nasa.gov/standard/NASA/NASA-STD-7009",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "The approved PDF at https://standards.nasa.gov/sites/default/files/standards/NASA/B/1/NASA-STD-7009B-Final-3-5-2024.pdf was downloaded and read locally after text extraction with pypdf; the standard's landing page is registered as the canonical URL. Supports: the standard's origin in findings of the Columbia Accident Investigation Board; the definition of an assumption in modeling and simulation as information asserted to simplify or focus aspects of the model with respect to the real-world system or to presume parameter values; the definition of M&S uncertainty as variation in results due to assumptions, formulas and representations rather than to factors inherent in the real-world system; the requirement that a model's abstractions, assumptions, inclusions, exclusions and parameter limits be stated for a proposed use; and the requirement that the credibility of M&S results be assessed and clearly conveyed, especially for critical decisions. Used only to support the caveat that a geometric model does not carry the assumptions a simulation rests on."
+    },
+    {
+      "id": "nerenst-2023-robust-sketch-constraints",
+      "title": "Parametric CAD Modeling: New Principles for Robust Sketch Constraints (T. B. Nerenst, M. Ebro, M. H. Nielsen, T. Eifler, K. L. Nielsen), Computer-Aided Design & Applications 20(1), 2023, 56-81",
+      "provider": "CAD Solutions, LLC (Computer-Aided Design & Applications)",
+      "url": "https://www.cad-journal.net/files/vol_20/CAD_20(1)_2023_56-81.pdf",
+      "sourceType": "peer-reviewed",
+      "usage": "REFERENCE_ONLY",
+      "license": "Copyright 2023 CAD Solutions, LLC; no open licence stated on the article",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Open PDF (doi 10.14733/cadaps.2023.56-81) downloaded and read locally after text extraction with pypdf. Supports: parametric modeling described as a history-based, feature-based approach and direct modeling as a history-free, parameter-free approach that keeps no change log of features and is therefore inapplicable to sensitivity studies; the split of commercial sketch constraints into dimensional (lengths, angles, positions) and geometrical (coaxial, tangential, perpendicular) types; the term iso-constrained as a synonym for fully constrained; the three sketch failure modes studied (geometry overlap, line flip from inconsistent constraints, and loss of design intent through incorrect geometry) and the observation that an iso-constrained sketch can become over-constrained or inconsistent once variation is applied, an over-constrained sketch having no unique configuration; the paper's report that ISO 10303-108 states design intent as the intentions of the designer of a model with regard to how it may be instantiated or modified; and the study result that under 30 minutes of training on the authors' Robust Sketch Principles produced a statistically significant improvement in sketch robustness across nine M.Sc. students and five industrial CAD specialists, over dimensional variation of up to +/-80 %. No article wording reproduced in the lesson."
+    },
+    {
+      "id": "libretexts-parametric-cad-and-3d-modeling",
+      "title": "12: Parametric CAD and 3D Modeling, in Introduction to Engineering - Thinking Like an Engineer (Jonathan Compton)",
+      "provider": "Jonathan Compton; Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Introductory_Engineering/Introduction_to_Engineering_-_Thinking_Like_an_Engineer/12%3A_Parametric_CAD_and_3D_Modeling",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC (as displayed on the chapter pages)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Chapter landing page and sections 12.01 (CAD Is Not Drawing), 12.07 (Five Common Modeling Errors) and 12.08 (CAD in the Engineering Landscape) read via fetch. Used as a second, teaching-level corroboration that CAD differs from drawing because dimensions are parameters that drive geometry rather than labels on a picture, that mass properties come from model geometry, that under-constrained sketches and hand-dragged (unconstrained) positions are among the commonest beginner errors, that omitting an explicit unit on a dimension silently produces the default unit, and that model errors become part errors so hand calculations remain the check. Recorded REFERENCE_ONLY because the non-commercial term may not suit this project; the chapter is also partly tool-specific and none of its tool-specific procedure was used."
+    },
+    {
+      "id": "nist-dagalakis-6dof-tri-stage-micro-positioner",
+      "title": "6-Degree of Freedom Tri-Stage Micro Positioner (N. G. Dagalakis and E. Amatucci), Spring 2002 Workshop on Optical MicroElectroMechanical Systems and Reliability, 12-13 April 2002",
+      "provider": "National Institute of Standards and Technology (NIST) publications record",
+      "url": "https://www.nist.gov/publications/6-degree-freedom-tri-stage-micro-positioner",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "No explicit licence statement on the record page; treated as reference-only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "NIST publication record page fetched and read; only the abstract was used. Supports the single mechanical fact the lesson needs for assembly mates: six degrees of freedom means translation and rotation about three orthogonal axes X-Y-Z. No design or metrology content from the paper is used."
+    }
+  ]
+}

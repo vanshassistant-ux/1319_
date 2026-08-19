@@ -1,0 +1,318 @@
+{
+  "id": "engineering-fundamentals:engineering-practice:safety-factors-and-failure",
+  "subjectSlug": "engineering-fundamentals",
+  "unitSlug": "engineering-practice",
+  "slug": "safety-factors-and-failure",
+  "title": "Safety Factors and Failure",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 14,
+  "tags": [
+    "engineering-fundamentals",
+    "engineering-practice",
+    "factor-of-safety",
+    "failure-modes",
+    "buckling",
+    "fatigue",
+    "reliability",
+    "damage-tolerance"
+  ],
+  "in30Seconds": "A factor of safety is a ratio: some capacity divided by some demand. Quote one without saying which capacity and which demand and the number means nothing, because a factor on yield strength and a factor on ultimate strength describe the same part with different digits. The factor buys margin against uncertainty in loads, materials, analysis, manufacturing, and service wear. It buys nothing against a failure mode you never checked, and buckling is the one students miss.",
+  "whyItMatters": "Every design problem you will be graded on asks the same question in different clothes: is this part good enough, and how do you know? Answering means naming the capacity, naming the demand, and naming the failure mode that connects them. Skip that naming step and you produce a confident number that answers a question nobody asked. Beyond coursework, the vocabulary here — limit load, ultimate load, margin of safety, damage tolerance, single-point failure — is the working vocabulary of design reviews, failure investigations, and regulatory submissions. It is also the vocabulary of honesty about uncertainty, which is most of what separates engineering from guessing with a calculator.",
+  "learningObjectives": [
+    "Define a factor of safety as a ratio of a capacity to a demand, and explain why the bare number is uninterpretable until both terms are named.",
+    "Distinguish a design factor imposed by a governing document from a realized factor of safety or margin of safety computed after a part is sized.",
+    "Explain why partial load and resistance factors represent uncertainty better than one global multiplier, and describe what a reliability index adds.",
+    "Identify the condition that provokes each major failure mode, including yielding, ductile rupture, brittle fracture, fatigue, creep, and buckling.",
+    "Apply a slenderness check to decide whether buckling or yielding governs a column, and explain why a strength-only check can be dangerously reassuring.",
+    "Evaluate a system for single-point failures and describe how redundancy, fail-safe design, damage tolerance, and FMEA address what a part-level factor cannot."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "The ratio, and why the number alone tells you nothing",
+      "body": "A factor of safety is a ratio of a capacity to a demand. Everything interesting lives in what fills those two slots. The capacity might be a yield strength, an ultimate tensile strength, a buckling load, a fatigue endurance limit, or a critical crack size. The demand might be a stress, a force, a bending moment, a pressure, or a count of load cycles. Change what goes in either slot and the number changes, without anything about the hardware changing at all. A steel bar in tension can be at a factor of 1.3 against yielding and 2.1 against rupture at the same instant, under the same load, with no contradiction between the two figures. They answer two different questions.\n\nThree ambiguities recur often enough to be worth naming. First, yield versus ultimate: a factor computed on yield strength protects against permanent set, while a factor on ultimate strength protects against separation, and the second is always the larger number for a ductile metal. Second, load versus stress. Federal airworthiness regulation for transport-category airplanes states strength requirements in terms of limit loads, meaning the maximum loads expected in service, and ultimate loads, meaning limit loads multiplied by prescribed factors of safety; 14 CFR 25.303 then applies a factor of 1.5 to prescribed limit loads treated as external loads on the structure. That is a factor applied to load, not to stress. For a bar in uniform tension the distinction is invisible, since stress is proportional to load. The moment the response stops being proportional — buckling, plastic hinges, deflections large enough to redistribute load — a factor on load and a factor on stress become genuinely different quantities. Third, design factor versus realized factor: a code hands the designer a number to design to, and the finished part usually beats it, because stock comes in discrete sizes. NASA's structural factors standard formalizes the realized quantity as a margin of safety, defined as the allowable load divided by the product of the limit load and the applicable factor of safety, minus one, and notes explicitly that 'load' there may mean force, stress, or strain. A margin of zero means the requirement is exactly met, not that the part is at the point of collapse."
+    },
+    {
+      "heading": "What the factor covers, and what it cannot",
+      "body": "Be specific about which uncertainties the factor is absorbing. It covers variability in the loads the structure will actually see, which are forecast rather than known. It covers scatter in material properties between heats, lots, suppliers, and grain orientations. It covers the idealizations baked into the analysis: a real joint is not a frictionless pin, a real plate is not infinite, a real load is not perfectly axial or perfectly static. It covers manufacturing variation in dimensions, surface finish, weld quality, and residual stress. And it covers degradation over service life through wear, corrosion, and accumulated fatigue damage.\n\nIt does not cover ignorance that analysis could have removed. If nobody checked buckling, no factor on yield strength protects the column. If the part will sit in a chloride environment nobody modeled, the factor was computed against the wrong capacity entirely. A large factor is a hedge on a mode you have already identified; it is not a substitute for identifying the mode. This is why experienced reviewers ask what governs before they ask how much margin there is. Factors also cost real money and real performance — mass, volume, material, sometimes efficiency — so inflating one is never free, and the useful question is always which specific uncertainty the extra margin is buying down."
+    },
+    {
+      "heading": "Allowable stress design, partial factors, and why they differ",
+      "body": "Traditional allowable stress design, also called working stress design, computes elastic stresses under service loads and requires them to stay below an allowable stress set as a preset fraction of a strength value — yield strength, crushing strength, or modulus of rupture. NBS Special Publication 577, the 1980 study behind the modern American limit-states load criterion, records both its appeal and its defect. It is simple, familiar, and produced structures that behaved acceptably. It also cannot deliver a constant level of safety, because a single allowable stress treats a member dominated by dead load, which can be computed from dimensions and densities with real precision, exactly like a member dominated by snow or wind, which cannot. Two roofs designed to the same allowable stress for the same snow load end up with different probabilities of failure if their dead-to-live ratios differ. The format can also be outright unsafe where one load counteracts another, a mechanism the same report associates with the Ferrybridge cooling tower failures.\n\nLoad and resistance factor design applies partial factors instead. The criterion has the form: a factored resistance must be at least as large as the sum of factored load effects. The nominal resistance corresponds to a specific limit state — maximum moment, shear capacity, buckling load — and is multiplied by a resistance factor below one that reflects uncertainty in determining that capacity. Each load effect is separately multiplied by a load factor generally above one, sized to the variability of that particular load. Because live load is more variable than dead load, it carries the larger factor, so the format automatically demands more of a live-load-dominated member than of a dead-load-dominated one carrying the same total service load. A single global multiplier cannot do that: it treats the two identically. That is the entire argument for partial factors. Uncertainty is not one quantity, so one number cannot track it."
+    },
+    {
+      "heading": "From a factor to a probability",
+      "body": "Probability-based limit states design takes the next step and treats resistance and load effect as random variables rather than fixed numbers. Failure is the event that resistance falls below load effect, and the probability of failure is the probability mass in that region. Rather than integrate the joint distribution directly, the standard approach computes a reliability index: the mean of the limit-state function divided by its standard deviation, which is the distance from the mean condition to the failure surface measured in standard deviations. Where the variables are normally distributed and the limit state is linear, the probability of failure is exactly the standard normal distribution evaluated at minus the index — an index of 3 corresponds to about 1.35 in a thousand, and an index of 4 to about 3.2 in a hundred thousand. NBS SP 577 reports indices generally between about 2 and 8 across structure types and loadings.\n\nTwo cautions belong with this. First, the report is careful to call a probability derived this way a notional probability where the underlying distributions are not exactly known: it is a consistent comparative measure for ranking design alternatives, not a forecast of how often real buildings fall down. Real failures are dominated by gross error, bad construction, and loads nobody modeled, none of which appear in the limit-state function. Second, the working designer never computes an index. Code committees do that once, calibrating against existing practice, and hand the designer the resulting load and resistance factors. Reliability methods explain where the factors came from; they are not a step in routine design."
+    },
+    {
+      "heading": "The failure modes and the conditions that provoke them",
+      "body": "Yielding: stress reaches the yield strength and the material takes a permanent set. The part is not in pieces, but it is no longer the shape it was designed to be, and clearances, alignment, and preload are gone. Ductile rupture: loading continues past the ultimate strength, the section necks, and the material separates after substantial visible plastic deformation, usually with warning.\n\nBrittle fracture: a crack propagates rapidly at a gross stress well below yield. Fracture is driven by normal stresses pulling atomic planes apart, whereas yield is driven by shear sliding them past each other, and a pre-existing crack modifies the local stress field so severely that the careful elastic analysis is simply not applicable. Beyond a critical crack length, propagation runs away; the critical stress intensity factor is the material property that sets the threshold. Steels have a ductile-to-brittle transition temperature below which fracture beats yield, which is the mechanism behind several notable cold-weather ship and pipeline failures.\n\nFatigue: damage accumulates under repeated loads that may sit well below the yield point. That is exactly what makes it dangerous, because a single application of the same load does nothing at all, and a conventional static stress check will pronounce the part safe. Plotting cyclic stress amplitude against cycles to failure gives the S-N curve. In some materials, notably ferrous alloys, the curve flattens to an endurance limit below which failure does not occur however long cycling continues; in others, aluminium among them, no endurance limit exists, so the designer must instead keep the planned service life short of the curve. Cracks initiate at surface or internal flaws where stress concentrates, which is why fillet radii, holes, keyways, weld toes, and surface finish dominate fatigue life far more than bulk strength does. Fatigue lifetimes scatter over orders of magnitude at a fixed stress amplitude, so a single test result is close to meaningless.\n\nCreep: time-dependent plastic strain under sustained load at elevated temperature, becoming a live concern in metals above roughly 0.3 of the absolute melting temperature and in ceramics above roughly 0.5, at stresses far below the measured yield strength. It runs through a primary transient stage, a secondary stage at roughly constant strain rate, and a tertiary runaway stage that ends in failure. Wear and corrosion: progressive loss of material at surfaces, mechanical in the first case and electrochemical in the second. Neither appears in a first-day stress calculation, and both change the capacity over service life; airworthiness regulation names corrosion alongside fatigue, manufacturing defects, and accidental damage as causes of catastrophic failure an evaluation must address. Thermal failure: restrained differential expansion generates stress with no external load whatsoever, and elevated temperature separately lowers strength and stiffness. Buckling has its own section, because it is a different kind of failure."
+    },
+    {
+      "heading": "Buckling is a stability failure, not a strength failure",
+      "body": "This is the distinction students most reliably miss, and it is worth stating flatly. Yielding is a question about the material: has the stress reached the strength? Buckling is a question about the equilibrium configuration: is the straight shape still stable? Formally, an elastic equilibrium is stable, neutral, or unstable according to the sign of the second variation of the total potential energy — positive, zero, or negative. Nothing in that criterion mentions a strength value.\n\nFor a column pinned at both ends, the critical load is pi squared times the elastic modulus times the second moment of area, divided by the square of the length. Notice what appears and what does not. Elastic modulus, cross-section geometry, and length appear. Yield strength does not. Substituting a much stronger alloy of the same stiffness changes the buckling load not at all.\n\nWhether buckling or yielding governs is settled by slenderness. Writing the radius of gyration as the square root of the second moment of area over the cross-sectional area, and the slenderness ratio as length over radius of gyration, the critical buckling stress becomes pi squared times the modulus divided by the square of the slenderness ratio. Setting that equal to the yield strength gives a critical slenderness of pi times the square root of modulus over yield strength. Columns more slender than that value buckle elastically before they yield; stockier ones yield first and then buckle in the plastic range, where the tangent modulus replaces the elastic modulus. The practical consequence is severe: checking only stress against yield strength on a slender column returns a large and entirely fictitious factor of safety, one that stays large right up to the instant the column folds."
+    },
+    {
+      "heading": "Failure theories for static loading, at survey level",
+      "body": "Strength data come from a uniaxial tension test, but real parts see multiaxial stress states. A failure theory bridges that gap by naming what it is about a stress state that causes failure. For ductile materials the two standard choices are the maximum shear stress criterion, usually called Tresca, which holds that yield occurs when the maximum shear stress reaches a critical value, and the distortion energy criterion, usually called von Mises, in which the driving quantity is the strain energy associated with the deviatoric part of the stress. The two disagree about how much shear a material tolerates: calibrated against the same tensile yield strength, Tresca puts the shear yield stress at half of it while von Mises puts it at one over the square root of three, about 15.5 percent higher. Von Mises usually fits experimental data better and is what commercial finite element codes report by default; Tresca is simpler and the more conservative of the two.\n\nFor brittle materials, which fracture before they yield, the conventional survey-level choice is instead a maximum normal stress criterion. That is consistent with the underlying mechanism: fracture is driven by normal stress separating planes, not by shear sliding them, so a criterion built on shear is answering the wrong question. Note the consequence for the topic of this lesson. The failure theory you choose changes the computed factor of safety for the identical part under the identical load, which is one more reason a bare number needs qualification before anyone can act on it."
+    },
+    {
+      "heading": "The systems view: what a part-level factor cannot see",
+      "body": "A factor of safety describes one element under one mode. It says nothing about how the system behaves when that element lets go. NASA's reliability and maintainability standard defines a single point failure as an independent element of a system — hardware, software, or human — whose failure alone would result in loss of objectives, hardware, or crew. It defines redundancy as the use of more than one independent means to accomplish a function, and design redundancy as requiring that a failure in one function not impair the system's ability to transfer to the second. Independence is the load-bearing word in both definitions. Two pumps on one power bus are one failure dressed up as two.\n\nTwo further distinctions matter. Fail-safe means that when something fails, the system settles into a state that does not hurt anyone; airworthiness regulation uses the term for multiple-load-path and crack-arrest structure that retains residual strength after a member fails. Fail-secure means the failed state preserves the protected condition instead — a door lock that stays locked when the power dies is fail-secure, and it is exactly the wrong behaviour for a fire exit. The two can be opposites, and choosing between them is a judgement about consequences, not a technical default.\n\nSafe-life and damage tolerance are competing life philosophies. A damage-tolerance evaluation assumes the structure already contains a flaw of the maximum probable size arising from manufacturing or service damage, analyses how that crack grows, and sets inspection intervals so the crack is found while residual strength is still adequate. A safe-life evaluation instead demonstrates by analysis supported by test that the part survives its expected repeated loads without detectable cracks, applies scatter factors, and retires the part at a fixed life whether or not anything is wrong with it. The airworthiness rule permits the safe-life route only where the applicant establishes that damage tolerance is impractical for that structure, which tells you which one the regulator prefers.\n\nFMEA is the structured method for finding failure modes before the hardware finds them. NASA defines it as a bottom-up, systematic, inductive, methodical analysis that identifies and documents every identifiable failure mode at a prescribed level and specifies the resulting effect, usually performed to find critical single failure points; adding a criticality ranking makes it an FMECA. Its value is procedural rather than mathematical. It forces a named person to walk every element and answer the question 'what happens if this one fails', which is precisely the ignorance no factor of safety can cover."
+    },
+    {
+      "heading": "Scope, limits, and what this lesson is not",
+      "body": "This is educational material about how engineers reason about failure. It is not engineering design guidance, and no number in it may be used to size a real part, structure, pressure vessel, or machine. The material property values in the worked example are labelled illustrative because that is what they are: round numbers chosen to make the arithmetic legible, not design allowables. Real design factors, load factors, resistance factors, and allowable values come from the governing code, specification, or regulation for the specific application and jurisdiction, and real design requires a licensed engineer working to that document.\n\nThe two governing documents cited here make the point rather than settle it. For transport-category airplanes, 14 CFR 25.303 prescribes 1.5 on limit load. For spaceflight hardware, NASA-STD-5001B prescribes separate yield and ultimate design factors that also depend on the verification approach and the material class, along with qualification and proof test factors. Same physical concept, different numbers, because the consequences of failure, the test programme, and the load environment differ. There is no universal factor of safety, and any source that offers you one has stopped describing engineering practice. Note finally the boundaries of the lesson: it takes stress, strain, and the stress-strain diagram as already understood, does not develop quantitative fracture mechanics or fatigue-life prediction, and does not cover test method design, which belong elsewhere."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "Factor of safety",
+      "definition": "The ratio of a capacity to the demand placed against it — for example a strength divided by a computed stress, or a critical load divided by an applied load. The value is uninterpretable until both the capacity and the demand are named."
+    },
+    {
+      "term": "Limit load",
+      "definition": "The maximum load, or combination of loads, that a structure is expected to experience in service over its design life under all expected operating conditions."
+    },
+    {
+      "term": "Ultimate load",
+      "definition": "A limit load multiplied by a prescribed factor, representing the load the structure must survive without failing even though it is not expected to see it."
+    },
+    {
+      "term": "Margin of safety",
+      "definition": "A normalised restatement of the factor of safety: the allowable capacity divided by the product of the limit demand and the required factor, minus one. Zero means the requirement is exactly met."
+    },
+    {
+      "term": "Allowable stress design",
+      "definition": "A method that computes elastic stresses under service loads and requires them to remain below a preset fraction of a strength value such as yield strength or modulus of rupture."
+    },
+    {
+      "term": "Load and resistance factor design",
+      "definition": "A limit-states method that multiplies each load effect by its own factor above one and reduces the nominal capacity by a factor below one, rather than applying a single global multiplier."
+    },
+    {
+      "term": "Reliability index",
+      "definition": "A dimensionless measure of how many standard deviations separate the mean of a limit-state function from the failure surface; larger values mean lower computed probability of failure."
+    },
+    {
+      "term": "Endurance limit",
+      "definition": "A cyclic stress amplitude below which certain materials, notably ferrous alloys, survive indefinitely under repeated loading. Many materials, including aluminium alloys, have no such threshold."
+    },
+    {
+      "term": "Single point failure",
+      "definition": "An independent element of a system — hardware, software, or human — whose failure by itself defeats the mission or causes loss of the hardware or crew."
+    },
+    {
+      "term": "Damage tolerance",
+      "definition": "A life philosophy that assumes a flaw of the maximum probable size is already present, analyses how it grows, and schedules inspections so it is found while remaining strength is still adequate."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Suppose a rope snaps at 500 newtons and you hang 100 newtons from it. You have five times what you need, so people say the factor of safety is five. That sounds like a promise, but it answers exactly one question: will this rope break by being pulled apart right now? It says nothing about the rope fraying over a year, the knot slipping, the hook straightening out, or somebody yanking instead of hanging still. The factor covers the things you thought about and measured. It does nothing at all about the things you never checked. And two careful people can look at the same rope and report different factors, because one measured against the load where the rope starts stretching permanently and the other measured against the load where it actually snaps.",
+    "analogy": "A factor of safety is like packing extra food for a hike. Bring twice the calories you expect to need and you are covered for a slower pace, a bigger appetite, or a sandwich dropped in the mud. You are not covered for taking the wrong trail, and no amount of extra food fixes that.",
+    "analogyLimits": "The analogy breaks in two places. Extra food is cheap, but extra structure costs mass, money, and often performance, so engineers argue hard over the size of a factor instead of just rounding it up. And a hiker can eat surplus calories in any order, whereas a structure's margin is mode-specific: margin against being pulled apart does nothing whatsoever against buckling, corrosion, or fatigue. Those are separate accounts, and the balance does not transfer between them."
+  },
+  "workedExample": "Two calculations, both executed with units carried. All material values are ILLUSTRATIVE round numbers, not design allowables: yield strength 250 MPa, ultimate tensile strength 400 MPa, elastic modulus 200 GPa.\n\nPart 1 — one bar, two factors. A round bar of diameter 20 mm carries an axial tensile load of 60 kN. Area = pi(0.020 m)^2/4 = 3.14159e-4 m^2 = 314.159 mm^2. Stress = 60 000 N / 3.14159e-4 m^2 = 1.910e8 Pa = 191.0 MPa. Factor on yield = 250 MPa / 191.0 MPa = 1.309. Factor on ultimate = 400 MPa / 191.0 MPa = 2.094. Same bar, same load, same instant; the two figures differ by 60 percent because 400/250 = 1.600. Neither is wrong, and neither is meaningful unqualified. Now the design-versus-realized distinction. Told to design to a factor of 2.0 on yield, required area = 2.0 x 60 000 N / 250 MPa = 480.0 mm^2, so required diameter = sqrt(4 x 480.0/pi) = 24.72 mm. The next stock size is 25 mm, giving 490.87 mm^2, a stress of 122.23 MPa, and a realized factor of 2.045 against a design factor of 2.0.\n\nPart 2 — does buckling or yielding govern? Take a solid square column 25 mm on a side, pinned at both ends. Area = 625.0 mm^2. Second moment of area I = h^4/12 = (25 mm)^4/12 = 32 552.1 mm^4. Radius of gyration = sqrt(I/A) = sqrt(32 552.1/625.0) mm = 7.217 mm. At a length of 1.50 m the slenderness ratio is 1500 mm / 7.217 mm = 207.8. Euler critical load = pi^2 x 200e9 Pa x 3.2552e-8 m^4 / (1.50 m)^2 = 28 558 N = 28.56 kN, so the critical stress is 28 558 N / 6.250e-4 m^2 = 45.69 MPa. The yield load is 250 MPa x 625.0 mm^2 = 156.25 kN. Buckling governs, and it governs by a factor of 156.25/28.56 = 5.47. The critical slenderness pi x sqrt(200e9/250e6) = 88.9 confirms it: 207.8 is far above 88.9, so the column buckles elastically well before yielding. Here is the trap. A student who checks only stress against strength computes 250 MPa / 45.69 MPa = 5.47 at the exact load that collapses the column, and reports a comfortable factor of safety of 5.5 for a member sitting precisely at failure. Shorten the same column to 0.30 m and the picture inverts: slenderness falls to 41.6, below the critical 88.9, the Euler load rises to 713.9 kN, and yielding at 156.25 kN now governs. Nothing about the material changed. Only the geometry did.",
+  "commonMistakes": [
+    {
+      "mistake": "Treating buckling as a strength problem — checking stress against yield strength on a slender compression member and concluding it is safe.",
+      "correction": "Buckling is a stability failure, not a strength failure. The Euler critical load depends on elastic modulus, cross-section geometry, and length, and yield strength does not appear in it at all. Check slenderness against the critical value pi times the square root of modulus over yield strength first, and only then decide which check governs. In the worked example, the strength-only check reports a factor of 5.47 for a column standing exactly at its collapse load."
+    },
+    {
+      "mistake": "Quoting a factor of safety as a bare number, without saying whether it is on yield or on ultimate, on load or on stress, and whether it is the design requirement or the value the finished part achieved.",
+      "correction": "Always state the capacity, the demand, and which of the two flavours of factor you mean. The same bar in the worked example is simultaneously at 1.309 and 2.094. Federal airworthiness regulation applies its factor to load, while classical allowable stress design applies its reduction to stress, and those coincide only where the response is proportional."
+    },
+    {
+      "mistake": "Believing that a large factor of safety compensates for not understanding the failure mode.",
+      "correction": "A factor hedges against uncertainty in a mode you have already identified. It offers nothing against a mode you never checked. Fatigue, creep, corrosion, and buckling all occur at stresses well below yield strength, so a generous factor computed on yield is not merely inadequate against them — it is measuring the wrong thing. Identify what governs before arguing about how much margin to carry."
+    },
+    {
+      "mistake": "Assuming every material has an endurance limit, so that keeping cyclic stress low enough guarantees infinite life.",
+      "correction": "The flattening of the S-N curve into an endurance limit is a material-dependent behaviour seen notably in ferrous alloys. Aluminium alloys show no such threshold, so parts made from them must be designed to a finite life short of the S-N curve and retired or inspected accordingly. Fatigue lifetimes also scatter over orders of magnitude at a fixed stress, so one test result does not establish a limit."
+    },
+    {
+      "mistake": "Using fail-safe and fail-secure as synonyms.",
+      "correction": "They frequently specify opposite behaviours. Fail-safe means the failed state is the one that does not hurt anyone; in airframe structure the term describes multiple-load-path and crack-arrest construction that keeps carrying load after a member breaks. Fail-secure means the failed state preserves the protected condition, like a lock that stays locked when power is lost — appropriate for a vault door and dangerous on a fire exit. Which one you want is a consequences judgement."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Allowable stress design",
+      "b": "Load and resistance factor design",
+      "distinction": "ASD keeps elastic service-load stresses below a fixed fraction of a strength value, so one global reduction absorbs every uncertainty at once. LRFD factors loads and resistance separately, giving the more variable load the larger factor. Two members carrying the same 100 kN of service load but split 80/20 and 20/80 between dead and live load draw identical demand from a single multiplier and demands differing by about 12 percent from partial factors."
+    },
+    {
+      "a": "Design factor of safety",
+      "b": "Realized factor of safety or margin of safety",
+      "distinction": "The design factor is the requirement the governing document imposes before you size anything. The realized factor is what the finished part actually achieves, and it is usually larger because stock sizes, standard gauges, and fastener series come in steps. Designing to 2.0 in the worked example produces a part at 2.045."
+    },
+    {
+      "a": "Damage tolerance",
+      "b": "Safe-life",
+      "distinction": "Damage tolerance assumes a flaw of the maximum probable size is already there, analyses crack growth, and buys safety with scheduled inspection. Safe-life demonstrates by analysis and test that no detectable crack appears within the demonstrated life, applies scatter factors, and buys safety with mandatory retirement. Airworthiness regulation allows the safe-life route only where damage tolerance is shown to be impractical."
+    },
+    {
+      "a": "Fail-safe",
+      "b": "Fail-secure",
+      "distinction": "Both describe what a system does after something breaks, and they often demand opposite states. Fail-safe settles into the condition that minimises harm; fail-secure settles into the condition that preserves whatever was being protected. The same electrically held door is fail-safe when it unlocks on power loss and fail-secure when it stays locked, and only the consequences of each decide which is correct."
+    },
+    {
+      "a": "Yielding",
+      "b": "Buckling",
+      "distinction": "Yielding is a material question — has stress reached strength — and depends on yield strength. Buckling is a configuration question — is the straight equilibrium still stable — and depends on elastic modulus, geometry, and length while ignoring yield strength entirely. Slenderness decides which one arrives first, and a stronger alloy of equal stiffness improves the first while doing nothing for the second."
+    }
+  ],
+  "keyTakeaway": "A factor of safety is a ratio, and it means nothing until you say which capacity and which demand it compares. It buys margin against uncertainty you have already identified, never against a failure mode you never checked — which is why a slender column can pass a strength check with a factor of 5.5 while standing exactly at the load that folds it.",
+  "questionBank": [
+    {
+      "id": "engineering-fundamentals:engineering-practice:safety-factors-and-failure:1",
+      "prompt": "In federal airworthiness regulation for transport-category airplanes, what is an ultimate load?",
+      "options": [
+        "The largest load ever recorded in service on that airplane type",
+        "The load at which the material first reaches its yield strength",
+        "A limit load multiplied by a prescribed factor of safety",
+        "The load that drives the margin of safety in a fatigue evaluation to zero"
+      ],
+      "correctIndex": 2,
+      "explanation": "14 CFR 25.301 states strength requirements in terms of limit loads, the maximum loads expected in service, and ultimate loads, which are limit loads multiplied by prescribed factors of safety; 25.303 supplies the factor of 1.5 unless otherwise specified. It is a definition by construction, not a measurement, so the service-record option is wrong. Yield strength is a material capacity, not a load definition, and the rule handles yielding separately in 25.305 by requiring that limit loads produce no detrimental permanent deformation. Fatigue and margin of safety belong to different provisions entirely.",
+      "difficulty": "recall",
+      "skill": "Recalling how a governing document defines limit and ultimate load",
+      "sourceIds": ["ecfr-14-cfr-25-301-loads", "ecfr-14-cfr-25-303-factor-of-safety", "ecfr-14-cfr-25-305-strength-and-deformation"]
+    },
+    {
+      "id": "engineering-fundamentals:engineering-practice:safety-factors-and-failure:2",
+      "prompt": "Two engineers analyse the same steel bar under the same 60 kN axial tensile load. One reports a factor of safety of 1.31, the other 2.09. Both calculations are correct. What most likely explains the difference?",
+      "options": [
+        "One worked in SI units and the other in U.S. customary units",
+        "One divided by the yield strength and the other by the ultimate tensile strength",
+        "One included the bar's own weight in the demand and the other did not",
+        "One used true stress and the other engineering stress"
+      ],
+      "correctIndex": 1,
+      "explanation": "A factor of safety is dimensionless, so a change of units cannot alter it, ruling out the first option. The ratio 2.094/1.309 is 1.600, exactly the ratio of the illustrative ultimate strength to the illustrative yield strength (400/250), which is the signature of the yield-versus-ultimate ambiguity. Self-weight is negligible here: a 20 mm steel bar one metre long weighs about 24 N against a 60 000 N load, roughly 0.04 percent. True and engineering stress diverge only after substantial plastic strain, and this bar is loaded well inside the elastic range.",
+      "difficulty": "understanding",
+      "skill": "Diagnosing which definitional ambiguity produces two different factors from one situation",
+      "sourceIds": ["nasa-std-5001b-structural-design-and-test-factors", "libretexts-roylance-yield-and-plastic-flow"]
+    },
+    {
+      "id": "engineering-fundamentals:engineering-practice:safety-factors-and-failure:3",
+      "prompt": "A solid square column 25 mm on a side and 1.50 m long is pinned at both ends. Using illustrative values of 200 GPa for elastic modulus and 250 MPa for yield strength, which mode governs and at approximately what load?",
+      "options": [
+        "Buckling governs, at a critical load of about 28.6 kN",
+        "Yielding governs, at about 156 kN",
+        "Yielding governs, at about 45.7 kN",
+        "Buckling governs, at about 714 kN"
+      ],
+      "correctIndex": 0,
+      "explanation": "I = h^4/12 = 32 552 mm^4 and A = 625 mm^2, so the radius of gyration is 7.217 mm and the slenderness ratio is 1500/7.217 = 207.8, far above the critical slenderness pi x sqrt(E/sigma_y) = 88.9. The Euler load is pi^2 EI/L^2 = 28.56 kN. The 156 kN figure is the yield load, which the column never reaches because it buckles first. The 45.7 MPa figure is the critical buckling stress, not a load. The 714 kN figure is the Euler load for the same section at 0.30 m, where slenderness drops to 41.6 and yielding would govern instead.",
+      "difficulty": "application",
+      "skill": "Deciding whether buckling or yielding governs a compression member from its slenderness",
+      "sourceIds": ["libretexts-wierzbicki-plastic-buckling-of-columns", "libretexts-wierzbicki-prelude-to-stability-of-elastic-structures"]
+    },
+    {
+      "id": "engineering-fundamentals:engineering-practice:safety-factors-and-failure:4",
+      "prompt": "Two members each carry 100 kN of total nominal service load: the first is 80 kN dead plus 20 kN live, the second 20 kN dead plus 80 kN live. Why does a load and resistance factor format demand more capacity of the second member?",
+      "options": [
+        "Because the resistance factor is reduced whenever live load exceeds dead load",
+        "Because live load acts for a shorter time and must be converted to an equivalent permanent load",
+        "Because dead load is subtracted from live load when the two act in the same direction",
+        "Because live load is more variable than dead load and therefore carries a larger load factor"
+      ],
+      "correctIndex": 3,
+      "explanation": "Dead load can be computed from dimensions and densities, so its uncertainty is small; occupancy live load is forecast and its uncertainty is large, so partial-factor formats give it the larger factor. Using the historical 1.4D + 1.7L format described in NBS SP 577, the first member demands 146.0 kN and the second 164.0 kN, about 12 percent more, whereas a single 1.7 multiplier on service load gives 170.0 kN for both and cannot distinguish them. The resistance factor attaches to the member's capacity and its limit state, not to the load mix. Loads acting in the same direction add rather than subtract, and load factors do not convert live load into an equivalent permanent load.",
+      "difficulty": "analysis",
+      "skill": "Explaining why partial factors represent uncertainty better than a single global multiplier",
+      "sourceIds": ["nbs-sp-577-probability-based-load-criterion"]
+    },
+    {
+      "id": "engineering-fundamentals:engineering-practice:safety-factors-and-failure:5",
+      "prompt": "An airframe component is shown by analysis supported by test to withstand its expected repeated loads without detectable cracks, has scatter factors applied, and is retired at a fixed life. Which philosophy is this, and how does airworthiness regulation treat it?",
+      "options": [
+        "Damage tolerance, which the rule requires of every principal structural element without exception",
+        "Safe-life, which the rule permits only where the applicant establishes that damage tolerance is impractical",
+        "Fail-secure, which the rule requires for all single load path structure",
+        "Redundancy, which the rule accepts in place of establishing inspection thresholds"
+      ],
+      "correctIndex": 1,
+      "explanation": "14 CFR 25.571(c) describes fatigue (safe-life) evaluation as demonstration by analysis supported by test that the structure withstands the repeated loads of variable magnitude expected during its service life without detectable cracks, with appropriate safe-life scatter factors applied, and permits it only where compliance with the damage-tolerance requirements is established as impractical for that structure. Damage tolerance is the default rather than an absolute requirement, which is why the first option overstates it. Fail-secure is an access-control concept and does not appear in the rule; the rule instead uses fail-safe for multiple load path and crack arrest structure. Redundancy does not remove the obligation to set inspection thresholds — the rule sets thresholds for multiple load path fail-safe structure too, wherever load path failure would not be detected before the remaining structure fails.",
+      "difficulty": "understanding",
+      "skill": "Distinguishing safe-life from damage tolerance and identifying which a code prefers",
+      "sourceIds": ["ecfr-14-cfr-25-571-damage-tolerance-and-fatigue-evaluation"]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "engineering-fundamentals:engineering-practice:safety-factors-and-failure:1",
+      "prompt": "In federal airworthiness regulation for transport-category airplanes, what is an ultimate load?",
+      "options": [
+        "The largest load ever recorded in service on that airplane type",
+        "The load at which the material first reaches its yield strength",
+        "A limit load multiplied by a prescribed factor of safety",
+        "The load that drives the margin of safety in a fatigue evaluation to zero"
+      ],
+      "correctIndex": 2,
+      "explanation": "14 CFR 25.301 states strength requirements in terms of limit loads, the maximum loads expected in service, and ultimate loads, which are limit loads multiplied by prescribed factors of safety; 25.303 supplies the factor of 1.5 unless otherwise specified. It is a definition by construction, not a measurement, so the service-record option is wrong. Yield strength is a material capacity, not a load definition, and the rule handles yielding separately in 25.305 by requiring that limit loads produce no detrimental permanent deformation. Fatigue and margin of safety belong to different provisions entirely.",
+      "difficulty": "recall",
+      "skill": "Recalling how a governing document defines limit and ultimate load",
+      "sourceIds": ["ecfr-14-cfr-25-301-loads", "ecfr-14-cfr-25-303-factor-of-safety", "ecfr-14-cfr-25-305-strength-and-deformation"]
+    },
+    {
+      "id": "engineering-fundamentals:engineering-practice:safety-factors-and-failure:2",
+      "prompt": "Two engineers analyse the same steel bar under the same 60 kN axial tensile load. One reports a factor of safety of 1.31, the other 2.09. Both calculations are correct. What most likely explains the difference?",
+      "options": [
+        "One worked in SI units and the other in U.S. customary units",
+        "One divided by the yield strength and the other by the ultimate tensile strength",
+        "One included the bar's own weight in the demand and the other did not",
+        "One used true stress and the other engineering stress"
+      ],
+      "correctIndex": 1,
+      "explanation": "A factor of safety is dimensionless, so a change of units cannot alter it, ruling out the first option. The ratio 2.094/1.309 is 1.600, exactly the ratio of the illustrative ultimate strength to the illustrative yield strength (400/250), which is the signature of the yield-versus-ultimate ambiguity. Self-weight is negligible here: a 20 mm steel bar one metre long weighs about 24 N against a 60 000 N load, roughly 0.04 percent. True and engineering stress diverge only after substantial plastic strain, and this bar is loaded well inside the elastic range.",
+      "difficulty": "understanding",
+      "skill": "Diagnosing which definitional ambiguity produces two different factors from one situation",
+      "sourceIds": ["nasa-std-5001b-structural-design-and-test-factors", "libretexts-roylance-yield-and-plastic-flow"]
+    },
+    {
+      "id": "engineering-fundamentals:engineering-practice:safety-factors-and-failure:3",
+      "prompt": "A solid square column 25 mm on a side and 1.50 m long is pinned at both ends. Using illustrative values of 200 GPa for elastic modulus and 250 MPa for yield strength, which mode governs and at approximately what load?",
+      "options": [
+        "Buckling governs, at a critical load of about 28.6 kN",
+        "Yielding governs, at about 156 kN",
+        "Yielding governs, at about 45.7 kN",
+        "Buckling governs, at about 714 kN"
+      ],
+      "correctIndex": 0,
+      "explanation": "I = h^4/12 = 32 552 mm^4 and A = 625 mm^2, so the radius of gyration is 7.217 mm and the slenderness ratio is 1500/7.217 = 207.8, far above the critical slenderness pi x sqrt(E/sigma_y) = 88.9. The Euler load is pi^2 EI/L^2 = 28.56 kN. The 156 kN figure is the yield load, which the column never reaches because it buckles first. The 45.7 MPa figure is the critical buckling stress, not a load. The 714 kN figure is the Euler load for the same section at 0.30 m, where slenderness drops to 41.6 and yielding would govern instead.",
+      "difficulty": "application",
+      "skill": "Deciding whether buckling or yielding governs a compression member from its slenderness",
+      "sourceIds": ["libretexts-wierzbicki-plastic-buckling-of-columns", "libretexts-wierzbicki-prelude-to-stability-of-elastic-structures"]
+    }
+  ],
+  "relatedTopics": [
+    "engineering-fundamentals:materials:stress-and-strain",
+    "engineering-fundamentals:materials:material-properties",
+    "engineering-fundamentals:engineering-practice:testing-and-validation",
+    "engineering-fundamentals:engineering-thinking:engineering-constraints-and-tradeoffs",
+    "engineering-fundamentals:engineering-practice:engineering-ethics"
+  ],
+  "sources": [
+    "ecfr-14-cfr-25-301-loads",
+    "ecfr-14-cfr-25-303-factor-of-safety",
+    "ecfr-14-cfr-25-305-strength-and-deformation",
+    "ecfr-14-cfr-25-571-damage-tolerance-and-fatigue-evaluation",
+    "nbs-sp-577-probability-based-load-criterion",
+    "nasa-std-5001b-structural-design-and-test-factors",
+    "nasa-std-8729-1a-reliability-and-maintainability",
+    "libretexts-roylance-yield-and-plastic-flow",
+    "libretexts-roylance-fatigue",
+    "libretexts-roylance-introduction-to-fracture-mechanics",
+    "libretexts-wierzbicki-prelude-to-stability-of-elastic-structures",
+    "libretexts-wierzbicki-plastic-buckling-of-columns",
+    "libretexts-steimel-creep-fracture-and-fatigue"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Public-domain U.S. Government sources (eCFR, NBS SP 577, NASA technical standards) plus reference-only NonCommercial-licensed open textbook pages; no source prose adapted or reproduced, and no allowable stress or design value taken from any copyrighted consensus standard.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Every claim was verified against primary documents read in full text: 14 CFR part 25 subpart C and 25.571 retrieved through the eCFR renderer API, NBS Special Publication 577 and the NASA structural-factors and reliability standards downloaded and extracted locally, and the LibreTexts mechanics pages read live. The prose is original EliExplains writing organised around the argument that a factor of safety is a ratio whose terms must be named, which no single source states as such; the sources supply the definitions, mechanisms, and formulas. All arithmetic in the worked example, the questions, and the prose was executed in Python with units carried before publication. Material property values are illustrative round numbers, explicitly labelled, and the only numerical factor of safety quoted from a governing document is the 1.5 that appears in federal regulation."
+  }
+}

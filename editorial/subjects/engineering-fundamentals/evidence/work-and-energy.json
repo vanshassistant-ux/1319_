@@ -1,0 +1,421 @@
+{
+  "topicId": "engineering-fundamentals:mechanics:work-and-energy",
+  "subjectId": "engineering-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Work as energy transferred by a force acting through a displacement; W = F d cos(theta) and the path integral of F . dr for a varying force",
+      "The sign of work, and the three counterintuitive zero-work cases: perpendicular force, normal force on a level surface, and holding an object still",
+      "Kinetic energy K = (1/2) m v^2 and the work-energy theorem",
+      "Potential energy for conservative forces: gravitational m g y and elastic (1/2) k x^2, each defined only up to a chosen datum",
+      "Conservative versus non-conservative forces, with path independence as the defining test",
+      "Conservation of mechanical energy and its extension W_nc = delta(K + U) to include friction and other dissipation",
+      "Energy accounted rather than lost: dissipated mechanical energy appears as thermal energy",
+      "Power as the rate of energy transfer, the watt, and the P = F v form",
+      "Efficiency as useful output over total input, below one for a real machine, and dependent on the system boundary drawn",
+      "The joule and the watt as SI coherent derived units, and the SI convention that torque is expressed in newton-metres and never in joules"
+    ],
+    "supporting": [
+      "Kinetic friction f_k = mu_k N as the dissipative force in the worked example",
+      "The constant-acceleration relation v^2 = 2 a d used only to cross-check the energy answer by the force route",
+      "Significant figures: reporting the worked answer to the two figures the assumed friction coefficient justifies",
+      "Frame dependence of kinetic energy"
+    ],
+    "outOfScope": [
+      "Kinematics, projectile and circular motion, and rotational work and energy -- owned by engineering-fundamentals:mechanics:dynamics",
+      "Impulse, the impulse-momentum theorem, conservation of momentum and collisions -- owned by engineering-fundamentals:mechanics:momentum",
+      "Heat, internal energy, enthalpy and the thermodynamic energy balance -- owned by engineering-fundamentals:thermal-and-energy-systems:first-law-of-thermodynamics",
+      "Newton's laws, mass versus weight, and free-body diagram construction -- already taught by force-and-motion and free-body-diagrams",
+      "Electrical power in circuits -- owned by engineering-fundamentals:electrical-fundamentals:electrical-power",
+      "Heat-engine efficiency and the Carnot limit",
+      "Strain energy in deformable bodies",
+      "Any design value, allowable stress, load factor or component rating"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Work is energy transferred by a force acting on a body that undergoes a displacement; for a constant force over a straight displacement it is W = F d cos(theta), and for a varying force or a curved path it is the path integral of F . dr.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "openstax-university-physics-1-work",
+        "libretexts-mechanics-map-2e-work-kinetic-and-potential-energy"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A force perpendicular to the displacement does zero work because cos(90 degrees) is zero; consequently the normal force on a body moving along a surface does no work, and holding a stationary object does no work because the displacement over which the force acts is zero.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "openstax-university-physics-1-work",
+        "libretexts-mechanics-map-2e-work-kinetic-and-potential-energy"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Kinetic energy is K = (1/2) m v^2, a scalar that can never be negative and whose value depends on the reference frame in which the speed is measured.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "openstax-university-physics-1-kinetic-energy"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The work-energy theorem states that the net work done on a particle by all the forces acting on it equals the change in its kinetic energy; it follows from Newton's second law, and omitting any acting force makes the result wrong.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "openstax-university-physics-1-work-energy-theorem"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Potential energy is defined by the difference U_B - U_A = -W_AB, giving U = m g y + constant near Earth's surface and U = (1/2) k x^2 + constant for a Hooke's law spring with x measured from the unstretched length; the additive constant means the zero level is chosen for convenience and only differences are physically meaningful. Potential energy belongs to the interaction between objects in a chosen system, not to a single object.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "openstax-university-physics-1-potential-energy-of-a-system",
+        "libretexts-mechanics-map-2e-work-kinetic-and-potential-energy"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A conservative force is one whose work between two points is the same along every connecting path, equivalently one whose work around any closed path is zero; a non-conservative force is one whose work depends on the path taken. Gravity and spring forces are conservative, friction and air resistance are non-conservative and dissipative, and non-conservative forces have no potential energy function associated with them.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "openstax-university-physics-1-conservative-and-non-conservative-forces"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Mechanical energy K + U is constant when non-conservative forces do no work on the system; when they do, the change in mechanical energy equals the work done by those forces, W_nc = delta(K + U). Energy removed from the mechanical account by friction and drag is described as dissipated rather than destroyed.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "openstax-university-physics-1-conservation-of-energy",
+        "libretexts-mechanics-map-2e-power-and-efficiency"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Power is the rate of doing work, P = dW/dt, with average power equal to work divided by the interval; differentiating the definition of work gives P = F . v. The SI unit is the watt, equal to one joule per second.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openstax-university-physics-1-power",
+        "libretexts-mechanics-map-2e-power-and-efficiency"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Efficiency is useful output divided by total input, eta = W_out/W_in = P_out/P_in, and cannot exceed one for a real device because that would violate conservation of energy; the work or power not delivered appears as heat.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-mechanics-map-2e-power-and-efficiency",
+        "doe-femp-what-is-energy-efficiency"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A quoted efficiency figure depends on the boundary drawn around the system and on what the quoter counts as useful output: the EPA describes total system efficiency and effective electric efficiency as two different methodologies for the same combined heat and power plant, and cautions that the measure must be selected carefully and the results interpreted with caution because each methodology carries implicit assumptions that are not appropriate in all cases.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "epa-chp-methods-for-calculating-efficiency"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The joule is the SI coherent derived unit of energy, work and amount of heat, expressible as kg m^2 s^-2 and as one newton-metre, and the watt is the coherent derived unit of power, kg m^2 s^-3. Even though torque has the same dimension as energy, the joule is never used to express torque; the newton-metre is used instead.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nist-sp330-2019-section-2-si-units",
+        "nist-sp811-chapter-4-classes-of-si-units"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Worked-example arithmetic, executed with python3: for m = 320 kg, d = 12.0 m along a 15.0 degree incline, cable force F = 1600 N parallel to the incline, mu_k = 0.12 (assumed) and g = 9.81 m/s^2 -- W_cable = 19 200 J; rise h = 3.10583 m; W_gravity = -9749.82 J; N = 3032.23 N; f_k = 363.868 N; W_friction = -4366.42 J; net work = 5083.77 J; v = 5.6368 m/s (5.6 m/s to two significant figures). The force route gives F_net = 423.647 N, a = 1.32390 m/s^2 and v = sqrt(2 a d) = 5.6368 m/s, identical to the energy route.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "openstax-university-physics-1-work",
+        "openstax-university-physics-1-work-energy-theorem",
+        "openstax-university-physics-1-friction",
+        "openstax-university-physics-1-mass-and-weight"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Worked-example power and efficiency arithmetic, executed with python3: t = v/a = 4.2577 s; average cable power = 19 200 J / 4.2577 s = 4509.4 W, reported as 4.5 kW; instantaneous power at the top = (1600 N)(5.6368 m/s) = 9018.9 W, reported as 9.0 kW. The 19 200 J input splits into 9749.82 J of gravitational potential energy, 5083.77 J of kinetic energy and 4366.42 J dissipated, which sum to 19 200 J exactly. Efficiency counting only height gained is 0.50780 (about 51 percent); counting kinetic energy as useful too it is 0.77258 (about 77 percent).",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "openstax-university-physics-1-power",
+        "libretexts-mechanics-map-2e-power-and-efficiency",
+        "epa-chp-methods-for-calculating-efficiency"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Question-bank arithmetic, executed with python3: for the 2.0 kg puck, K_initial = 36.0 J, W = -12.0 J, K_final = 24.0 J and v_final = 4.89898 m/s (4.9 m/s), with distractors 3.4641 m/s from dropping the factor of two, 6.9282 m/s from adding the work, and 4.0 m/s from scaling speed by the energy ratio. For the 1.8 kg textbook 0.75 m above the floor, m g h = 13.2435 J. For the 150 kg hoist load at 0.80 m/s, m g = 1471.5 N and P = 1177.2 W (about 1.2 kW), with distractors 120 W from omitting g and 48 J from computing kinetic energy instead.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "openstax-university-physics-1-work-energy-theorem",
+        "openstax-university-physics-1-kinetic-energy",
+        "openstax-university-physics-1-power",
+        "openstax-university-physics-1-potential-energy-of-a-system",
+        "openstax-university-physics-1-mass-and-weight"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether energy removed by friction should be called lost.",
+      "positions": [
+        "Introductory shorthand and the Mechanics Map page speak of work or power 'lost' in a device.",
+        "OpenStax section 8.3 uses 'dissipated' and frames the generalised conservation law so that no energy disappears."
+      ],
+      "resolution": "The lesson uses 'dissipated' throughout and states explicitly where the energy went -- the thermal store of the surfaces and surroundings -- while noting that widening the system boundary restores the balance. The full thermodynamic accounting is handed off to the first-law-of-thermodynamics topic rather than attempted here."
+    },
+    {
+      "issue": "What efficiency figure to quote for the worked example.",
+      "positions": [
+        "Counting only the gravitational potential energy gained as useful output gives 50.8 percent.",
+        "Counting the kinetic energy the cart carries at the top as useful as well gives 77.3 percent."
+      ],
+      "resolution": "Both numbers are computed and both are published, precisely to make the assignment's point that a quoted efficiency is a statement about the boundary drawn and about what the quoter counts as useful. The EPA combined-heat-and-power page is cited as the authority that this ambiguity is real and recognised in practice, not a classroom quibble."
+    },
+    {
+      "issue": "Whether the joule and the newton-metre are interchangeable.",
+      "positions": [
+        "They are dimensionally identical, both kg m^2 s^-2, so arithmetically nothing distinguishes them.",
+        "NIST SP 330 states that the joule is never used for expressing torque even though torque has the same dimension as energy."
+      ],
+      "resolution": "The lesson states the convention as a convention, names its source, and explains the reason -- the two are different kinds of quantity and the distinct unit names are how the SI signals that -- rather than implying a dimensional difference that does not exist."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's framing of 'Work And Energy' as an abstract organising concept with no physics in it: no definition of work, no energy, no units, no equations.",
+    "The draft's vocabulary entries ('context', 'evidence', 'application') and its self-referential definition of the topic term, none of which name a mechanical quantity.",
+    "The draft's toolbox-drawer and map-legend analogies, neither of which teaches anything about work, energy or power.",
+    "The draft's worked example, which contained no quantity, no unit and no calculation.",
+    "The draft's three-option quick-check items, which are below the required four options and test nothing about the subject."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire generated draft; none of its wording survives.",
+    "Stated work as a transfer rather than a possession, and put the cos(theta) factor at the centre of the explanation so that the zero-work cases follow from it rather than being memorised separately.",
+    "Put all three counterintuitive zero-work cases -- perpendicular force, normal force on a level surface, and holding an object still -- into Common Mistakes as the assignment requires, with the physiological-cost distinction stated explicitly.",
+    "Gave the integral form of work alongside the constant-force formula, and said which is the general definition.",
+    "Made the arbitrary datum a first-class point rather than a footnote, including a question that has no numerical answer until a reference level is named.",
+    "Stated path independence as the defining test for a conservative force, in both the two-path and the closed-path forms, and explained why friction fails it.",
+    "Used 'dissipated' rather than 'lost' throughout and said where the energy went.",
+    "Added the SI convention that torque is written in newton-metres and never in joules, sourced to NIST SP 330, and explained that the dimensions genuinely coincide.",
+    "Added the honest caveat that a quoted efficiency depends on the system boundary, and demonstrated it by computing two defensible efficiencies for the same worked example.",
+    "Solved the worked example twice, by energy method and by force-acceleration, and executed both routes with python3 to confirm they agree to every digit carried.",
+    "Handed off kinematics and rotation to the dynamics topic, impulse and momentum to the momentum topic, and thermodynamic energy accounting to the first-law topic instead of teaching them here.",
+    "Added the subject's required educational-material and not-engineering-design-guidance statement."
+  ],
+  "rightsIssues": [
+    "OpenStax University Physics Volume 1 per-book reuse terms were not verified for this project, so all nine OpenStax pages are held at REFERENCE_ONLY and no wording from them is reproduced.",
+    "The two Mechanics Map (Moore, 2nd edition) pages on Engineering LibreTexts carry CC BY-SA 4.0, a share-alike licence this project does not rely on for reuse; both are held at REFERENCE_ONLY and no text is adapted.",
+    "NIST SP 330 and SP 811 pages are U.S. Government works, but no per-page reuse statement was located, so they are held at REFERENCE_ONLY and the lesson states the facts in its own words.",
+    "The EPA and DOE pages are U.S. Government works used as factual references only; no performance figure or table from either is reproduced.",
+    "Three source ids in this packet -- openstax-university-physics-1-mass-and-weight, openstax-university-physics-1-friction and nist-sp811-chapter-4-classes-of-si-units -- were already registered by the merged force-and-motion topic and are reused here with identical ids and identical URLs, verified against content/phase-1/source-registry.json.",
+    "No engineering standard (ASME, ASTM, ISO, IEEE, AISC, ACI) text, table or design value is reproduced or relied on anywhere in this lesson, and no component rating or design value of any kind is stated."
+  ],
+  "sourceRecords": [
+    {
+      "id": "openstax-university-physics-1-work",
+      "title": "University Physics Volume 1, 7.1 Work",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/7-1-work",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the definition of work as energy transferred by a force acting through a displacement, the infinitesimal form dW = F . dr = |F||dr| cos(theta), the path integral W_AB = integral over the path of F . dr for a varying force, the constant-force reduction W = F d cos(theta), the sign convention (positive, negative or zero as the force is along, opposed to or perpendicular to the displacement), the explicit statement that a perpendicular force does zero work, the statement that the normal force never does work on a body moving along a surface, the statement that holding a stationary object does no work because the displacement is zero, and the joule as the unit, equivalent to newtons times metres. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-1-kinetic-energy",
+      "title": "University Physics Volume 1, 7.2 Kinetic Energy",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/7-2-kinetic-energy",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports K = (1/2) m v^2, kinetic energy as a scalar depending only on the magnitude of velocity, the statement that it can never be negative, the frame dependence of its value, and its units of kg m^2/s^2 being the units of force times distance, that is joules. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-1-work-energy-theorem",
+      "title": "University Physics Volume 1, 7.3 Work-Energy Theorem",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/7-3-work-energy-theorem",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the statement W_net = K_B - K_A, its derivation from Newton's second law, and the page's explicit insistence that all forces acting on the object must be included when computing the net work or the result is wrong. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-1-power",
+      "title": "University Physics Volume 1, 7.4 Power",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/7-4-power",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports average power as work divided by the interval, instantaneous power P = dW/dt, the derivation of P = F . v, and the watt defined as one joule per second. The page also gives 1 hp = 746 W, which this lesson does not use. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-1-potential-energy-of-a-system",
+      "title": "University Physics Volume 1, 8.1 Potential Energy of a System",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/8-1-potential-energy-of-a-system",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the definition of the potential energy difference as the negative of the work done, U_B - U_A = -W_AB; the near-Earth gravitational form U(y) = m g y plus a constant; the Hooke's law spring form U(x) = (1/2) k x^2 plus a constant; the statement that the choice of where potential energy is zero is made for convenience while physically meaningful differences do not depend on it; and the statement that potential energy is a property of the interactions between objects in a chosen system rather than of a single object. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-1-conservative-and-non-conservative-forces",
+      "title": "University Physics Volume 1, 8.2 Conservative and Non-Conservative Forces",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/8-2-conservative-and-non-conservative-forces",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the definition of a conservative force as one whose work is the same for any path connecting two points, the equivalent closed-path statement that its work around any closed path is zero, the definition of a non-conservative force as one whose work depends on the path taken, gravity and spring forces as conservative examples, friction and air resistance as dissipative non-conservative examples, and the statement that non-conservative forces have no potential energy associated with them while every potential energy has a conservative force behind it. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-1-conservation-of-energy",
+      "title": "University Physics Volume 1, 8.3 Conservation of Energy",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports mechanical energy E = K + U staying constant when non-conservative forces do no work, the generalised statement W_nc = delta(K + U) = delta E when they do, and the page's use of 'dissipated' rather than 'lost' for the mechanical energy removed by air resistance and friction. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-1-mass-and-weight",
+      "title": "University Physics Volume 1, 5.4 Mass and Weight",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/5-4-mass-and-weight",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Source record already registered by the force-and-motion topic; reused here with the same id and URL. Supports w = m g and the working value of g near Earth's surface used in the worked example and in the hoist question. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "openstax-university-physics-1-friction",
+      "title": "University Physics Volume 1, 6.2 Friction",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Source record already registered by the force-and-motion topic; reused here with the same id and URL. Supports the kinetic friction model f_k = mu_k N used in the worked example, and the characterisation of the coefficient model as approximate and empirical. The coefficient 0.12 in the worked example is stated as assumed problem data and is not taken from this page. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "libretexts-mechanics-map-2e-work-kinetic-and-potential-energy",
+      "title": "Mechanics Map, 10.2: Work, Kinetic Energy and Potential Energy for Particles",
+      "provider": "Jacob Moore and Contributors, Pennsylvania State University Mont Alto, hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_Map_(Moore_2nd_Edition)/10:_Work_and_Energy_in_Particles/10.02:_Work_Kinetic_Energy_and_Potential_Energy_for_Particles",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Gives the engineering-dynamics framing used in this lesson: work as a force exerted over a distance with only the component along travel counting, W = F cos(theta) d for the misaligned constant case, W = integral of F(x) dx for a varying force, forces perpendicular to motion doing no work, KE = (1/2) m v^2 as a directionless quantity, delta PE_gravity = m g delta h depending on vertical displacement rather than distance travelled, and PE_spring = (1/2) k x^2 with x measured from the unstretched length rather than the spring's length. The page carries CC BY-SA 4.0, a share-alike licence not relied on for reuse here; held at REFERENCE_ONLY and no wording reproduced."
+    },
+    {
+      "id": "libretexts-mechanics-map-2e-power-and-efficiency",
+      "title": "Mechanics Map, 10.10: Power and Efficiency for Particles",
+      "provider": "Jacob Moore and Contributors, Pennsylvania State University Mont Alto, hosted on Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_Map_(Moore_2nd_Edition)/10:_Work_and_Energy_in_Particles/10.10:_Power_and_Efficiency_for_Particles",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports power as the derivative of work with respect to time, the average form P = W/t = F d / t = F v, the watt as one joule per second, efficiency defined as eta = W_out/W_in = P_out/P_in, the explicit statement that efficiencies greater than one (100 percent) are impossible because that would violate conservation of energy, and the statement that work or power lost in a device is turned into heat. CC BY-SA 4.0 not relied on for reuse; REFERENCE_ONLY and no wording reproduced."
+    },
+    {
+      "id": "nist-sp330-2019-section-2-si-units",
+      "title": "The International System of Units (SI), 2019 Edition (NIST SP 330), Section 2: The International System of Units",
+      "provider": "National Institute of Standards and Technology",
+      "url": "https://www.nist.gov/pml/special-publication-330/sp-330-section-2",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. This is the load-bearing source for the lesson's units convention: it states that even though torque has the same dimension as energy (SI unit joule), the joule is never used for expressing torque. Its Table 4 lists the joule as the coherent derived unit of energy, work and amount of heat (kg m^2 s^-2) and the watt as the coherent derived unit of power and radiant flux (kg m^2 s^-3). SP 330 is the NIST edition of the SI Brochure; the 2019 edition supersedes the 2008 edition. REFERENCE_ONLY; the lesson states the convention in its own words."
+    },
+    {
+      "id": "nist-sp811-chapter-4-classes-of-si-units",
+      "title": "NIST Guide to the SI, Chapter 4: The Two Classes of SI Units and the SI Prefixes",
+      "provider": "National Institute of Standards and Technology (NIST Special Publication 811, 2008 edition)",
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Source record already registered by the force-and-motion topic; reused here with the same id and URL. Its Table 3 of SI coherent derived units with special names is the corroborating authority for the joule as the unit of energy and work and the watt as the unit of power, alongside the newton for force. REFERENCE_ONLY; no table reproduced."
+    },
+    {
+      "id": "epa-chp-methods-for-calculating-efficiency",
+      "title": "Methods for Calculating CHP Efficiency",
+      "provider": "United States Environmental Protection Agency, Combined Heat and Power Partnership",
+      "url": "https://www.epa.gov/chp/methods-calculating-chp-efficiency",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Used solely for the lesson's honest note that a quoted efficiency depends on the boundary drawn and on what is counted as useful output. The page defines total system efficiency as net useful electric output plus net useful thermal output divided by total fuel energy input, contrasts it with effective electric efficiency which credits the thermal output against the fuel a separate boiler would have burned, and cautions that the measure employed should be selected carefully and the results interpreted with caution because assumptions implicit in each methodology are not appropriate in all cases. No CHP performance figure from the page is quoted in the lesson. REFERENCE_ONLY."
+    },
+    {
+      "id": "doe-femp-what-is-energy-efficiency",
+      "title": "Take Five: What Is Energy Efficiency?",
+      "provider": "United States Department of Energy, Federal Energy Management Program",
+      "url": "https://www.energy.gov/cmei/femp/articles/take-five-what-energy-efficiency",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the live page. Supports the plain framing of efficiency as the energy service delivered compared with the energy used to produce it, and its own summary that efficiency is basically output over input. Used to corroborate the lesson's definition in an applied-engineering context alongside the Mechanics Map definition. REFERENCE_ONLY; no wording reproduced."
+    }
+  ]
+}

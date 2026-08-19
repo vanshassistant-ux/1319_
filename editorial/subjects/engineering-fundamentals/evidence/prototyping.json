@@ -1,0 +1,322 @@
+{
+  "topicId": "engineering-fundamentals:engineering-practice:prototyping",
+  "subjectId": "engineering-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "a prototype as an instrument built to answer a stated question",
+      "prototype types by purpose: proof-of-concept, form/appearance model, functional prototype, engineering prototype, pre-production and production-representative units",
+      "low versus high fidelity, and the cost of buying fidelity too early",
+      "focused versus comprehensive prototypes",
+      "fabrication routes at survey level: the seven ISO/ASTM 52900 additive categories, subtractive machining, forming, casting, hand fabrication, and soft versus production tooling",
+      "why prototype material and process differ from production, and how build-direction anisotropy makes prototype results mislead",
+      "iteration cadence and the cost-of-change curve",
+      "documenting what each prototype was for and what it showed"
+    ],
+    "supporting": [
+      "prototyping in software and human-systems work",
+      "break-even quantity between fixed-cost and variable-cost routes",
+      "shop-safety and not-design-guidance statements"
+    ],
+    "outOfScope": [
+      "the design loop itself, requirements, decision matrices and the iteration argument, which belong to engineering-design-process",
+      "CAD modelling technique, which belongs to cad-basics",
+      "test design, instrumentation and statistical treatment of test data, which belong to testing-and-validation",
+      "fabrication procedures, machine settings and process parameters of any kind",
+      "specific allowable stresses, design values or factor-of-safety practice",
+      "vendor pricing, current lead times and machine or service recommendations"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A prototype's purpose is to generate experience that is fed back into design changes; NASA defines a prototype unit as demonstrating form, fit and function at a scale representative of the final product operating in its operational environment.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Prototype product forms sit on a fidelity ladder: a breadboard is low fidelity and demonstrates function only without form or fit and is not intended to give definitive operational performance information; a brassboard is medium fidelity; an engineering unit is high fidelity and closely resembles the final product; a qualification unit is identical to the flight unit but taken to environmental extremes and typically not flown.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Formal verification credit against a requirement is normally not taken on a prototype; it is taken on a qualification, protoflight, flight or other controlled unit.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "By the end of design roughly 15 percent of a project's life-cycle cost has been expended while the design has committed about 75 percent of it, and the cost of changing design direction rises through bands of about 20-100x and then 500-1000x later in the life cycle; the handbook states these numbers vary by project while the shape of the curves is general.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Additive manufacturing creates material through a directional process, so anisotropic material is likely unless controls limit the effect; build orientation must be identified and maintained for material property work, and anisotropy is treated as negligible only at typically less than about a 5 percent difference in properties by orientation.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-std-6030-additive-manufacturing-spaceflight"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The manufacturing route changes measured elastic properties enough that a dedicated dataset comparing additively and conventionally manufactured variants of Ti-6Al-4V, IN718 and AISI 316L was published.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "rehmer-2023-elastic-modulus-data"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "ISO/ASTM 52900:2021 (Edition 2, published November 2021, ISO/TC 261) is the additive manufacturing terminology standard, and the vocabulary built on it sorts commercial additive processes into seven categories: material extrusion, vat photopolymerization, powder bed fusion, material jetting, binder jetting, directed energy deposition and sheet lamination.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "iso-astm-52900-2021-am-terminology",
+        "salmi-2021-am-processes-medical-applications",
+        "nist-additive-manufacturing-technologies"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Prototype fabrication routes differ qualitatively: hand fabrication reaches any geometry in very small numbers with maker-dependent accuracy; CNC machining gives production materials and strong check models within reachable geometry; casting from a pattern reaches shapes difficult or impossible to machine but takes weeks; and prototype tooling in aluminium or pre-hardened steel is faster and less expensive than production tooling but has limited tool life.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "mit-ocw-15783j-prototyping-overview"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Conventional manufacturing routes carry a large fixed tooling cost that additive routes do not, additive per-part cost stays roughly flat with quantity while conventional per-part cost falls as tooling is amortised, so additive suits low volumes and complex geometry while conventional methods dominate at high volume.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-nwtc-cost-traditional-versus-additive"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Prototypes are not exclusive to hardware: end-product form depends on life-cycle phase and may be hardware, software, a model or a prototype, and validation may be performed on forms including algorithmic models, virtual-reality simulators, mock-ups and paper concept descriptions, with prototypes and human-in-the-loop testing listed among standard evaluation methods.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Documenting what each prototype was for and what it showed is standard practice: a verification and validation plan must describe the pedigree of its test articles, define what it means by breadboard, prototype, engineering unit, qualification unit, protoflight unit and flight unit, and describe what testing each will undergo.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "United States workplace regulation requires one or more methods of machine guarding to protect operators and others from hazards such as point of operation, ingoing nip points, rotating parts, and flying chips and sparks, and requires guarding at the point of operation of machines whose operation exposes an employee to injury.",
+      "claimType": "LEGAL",
+      "sourceIds": [
+        "ecfr-29-cfr-1910-212-machine-guarding"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Illustrative arithmetic: with a tooling-free route at 55 currency units per part and a soft-tooled route at 8,000 units fixed plus 4 units per part, twelve parts cost 660 units versus 8,048 units, and the two routes break even at 156.9, i.e. 157 parts.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "libretexts-nwtc-cost-traditional-versus-additive"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A material-extrusion part is built from bonded layers, so its stiffness and strength depend on the direction it was built in, and results from such a part therefore do not transfer to an injection-moulded part of the same geometry.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-std-6030-additive-manufacturing-spaceflight",
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ],
+      "status": "supported-in-principle",
+      "note": "NASA-STD-6030 supports the general principle that an additive process builds material directionally and is likely to yield anisotropic material, and requires build orientation to be tracked; it is written for spaceflight metal processes, not for polymer material extrusion. The lesson therefore states only the directional-dependence principle and does not assert any specific magnitude, ratio or weak axis for extruded polymer parts. The NASA handbook supports the separate point that verification credit is not taken on a prototype."
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether an authoritative free source states that ISO/ASTM 52900 defines exactly seven additive process categories.",
+      "positions": [
+        "Secondary and scholarly sources uniformly list seven categories on the ISO/ASTM vocabulary.",
+        "NIST's own additive manufacturing technologies page describes only six of them and does not cite the standard; the standard itself is paywalled and its full text was not read."
+      ],
+      "resolution": "The lesson names the seven categories and attributes the vocabulary to ISO/ASTM 52900 by designation, corroborated by an open-access peer-reviewed review that enumerates all seven and by NIST for six of them. The evidence note records explicitly that NIST omits sheet lamination and does not cite the standard, so the corroboration is not overstated, and no text, table or value from the standard is reproduced."
+    },
+    {
+      "issue": "Cost and lead-time figures for prototyping routes.",
+      "positions": [
+        "The MIT OpenCourseWare deck carries 2006 vendor prices and delivery times.",
+        "The LibreTexts cost chapter carries undated dollar ranges for tooling and per-part cost."
+      ],
+      "resolution": "Neither set of figures is reproduced. Both are stale or unsourced enough that quoting them would mislead a student checking current prices. The worked example uses the author's own figures, labelled illustrative teaching values, and every number in it was executed in Python before publication; the two sources support only the qualitative cost structure and the existence of a break-even quantity."
+    },
+    {
+      "issue": "Whether the claim that high-fidelity prototypes anchor a team's thinking can be sourced.",
+      "positions": [
+        "The claim is common in design teaching and is repeated widely.",
+        "None of the nine verified sources for this topic states it; it is a behavioural claim and no measured evidence for it was located within this topic's research."
+      ],
+      "resolution": "Kept, but explicitly demoted in the lesson text and in the common-mistakes entry to a working caution from engineering practice rather than a measured effect, and no question tests it. The money half of the argument - that early design decisions commit most of the life-cycle cost and that changing direction later costs far more - is fully sourced to the NASA handbook and is what the assessment items test."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft asserted nothing specific about prototyping at all: it described prototyping as 'a foundational concept' and 'a label on a toolbox drawer', gave a 4-term generic vocabulary list, and offered a worked example about 'a student reads a short Engineering Fundamentals scenario'. None of it was verifiable because none of it made a claim.",
+    "The draft's implied framing that prototyping is a term to define rather than a decision to make was not supported and was discarded."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire generated draft. Nothing of its wording survives.",
+    "Reframed the topic around the prototype as an instrument answering a stated question, which is the framing that makes fidelity, route, quantity and lead time follow.",
+    "Added the NASA fidelity ladder with the actual definitions of breadboard, brassboard, engineering unit, prototype unit, qualification unit and protoflight unit.",
+    "Added the seven ISO/ASTM 52900 additive categories by designation alongside machining, forming, casting and hand fabrication, with qualitative trade-offs only.",
+    "Added the anisotropy caveat sourced to NASA-STD-6030, including the requirement to track build orientation and the roughly 5 percent negligibility threshold.",
+    "Attached the specific NASA cost-of-change numbers, which the merged engineering-design-process lesson states only qualitatively, so this lesson extends rather than repeats it.",
+    "Added the educational-material and not-design-guidance statements and a shop-safety note sourced to 29 CFR 1910.212, and removed any procedural content.",
+    "Rebuilt all five questions; the draft's three quick-check items had three options each and tested nothing about prototyping."
+  ],
+  "rightsIssues": [
+    "ISO/ASTM 52900:2021 is copyrighted and sold. It is cited by designation only; no standard text, table, term definition or value is reproduced. Catalogue metadata was read from the ISO catalogue mirror at committee.iso.org because www.iso.org and the ISO Online Browsing Platform returned HTTP 403.",
+    "The MIT OpenCourseWare deck is CC BY-NC-SA; the non-commercial and share-alike terms may not suit this project, so it is recorded REFERENCE_ONLY and only its survey structure is used, in original wording.",
+    "The 2006 vendor cost and delivery figures in the MIT deck and the undated dollar ranges in the LibreTexts chapter are deliberately not reproduced.",
+    "Two NASA documents and the CFR section are US Government works and are treated as public domain; the NASA-STD-6030 cover page is marked approved for public release with unlimited distribution.",
+    "Salmi 2021 and Rehmer 2023 are CC BY 4.0 and are attributed in the source records; no wording from either is reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nasa-se-handbook-sp-2016-6105-rev2",
+      "title": "NASA Systems Engineering Handbook, NASA/SP-2016-6105 Rev2",
+      "provider": "Office of the Chief Engineer, National Aeronautics and Space Administration (record on the NASA Technical Reports Server)",
+      "url": "https://ntrs.nasa.gov/citations/20170001761",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Existing registry record, reused with the same id and URL as the engineering-design-process topic. Supports for this lesson: the Types of Hardware definitions (breadboard = low fidelity, function only, no form or fit, not intended to give definitive operational performance information; brassboard = medium fidelity; engineering unit = high fidelity, closely resembles the final product, may become the final product with traceability; prototype unit = form, fit and function at representative scale; qualification unit = identical to flight unit, taken to environmental extremes, typically not flown; protoflight unit = flight unit given a limited qualification programme); the Product Form glossary entry and the product-form list used in verification and validation planning; the NOTE that taking verification credit or final validation on a prototype is normally not acceptable and is done on a qualification, flight or other controlled unit; Figure 2.5-1 and its surrounding text on life-cycle cost, i.e. about 15 percent of cost expended during design while the design commits about 75 percent of life-cycle cost, with cost-to-change-design-direction bands of 20-100x and 500-1000x later in the life cycle, and the handbook's own caveat that numbers vary by project while the shape of the curves transfers; Phase B activities including engineering prototyping and improving the fidelity of models and prototypes; Appendix I section 5.2, which requires the pedigree of test articles (breadboards, prototypes, engineering units, qualification units, protoflight units, flight units) to be described and those terms defined; and the decision-analysis and human-systems-integration lists that place prototypes, simulations, mock-ups and human-in-the-loop testing among standard evaluation methods. Copy actually read: the 508-compliant PDF at https://www.nasa.gov/wp-content/uploads/2018/09/nasa_systems_engineering_handbook_0.pdf, downloaded and text-extracted locally with pypdf. The NASA glossary web page at https://www.nasa.gov/reference/appendix-b-glossary/ was also read and agrees with the PDF."
+    },
+    {
+      "id": "nasa-std-6030-additive-manufacturing-spaceflight",
+      "title": "NASA-STD-6030, Additive Manufacturing Requirements for Spaceflight Systems (approved 2021-04-21)",
+      "provider": "Office of the NASA Chief Engineer, National Aeronautics and Space Administration",
+      "url": "https://standards.nasa.gov/standard/NASA/NASA-STD-6030",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "NASA Technical Standard, cover page marked APPROVED FOR PUBLIC RELEASE - DISTRIBUTION IS UNLIMITED, so treated as a US Government work in the public domain. Supports the central caveat of this lesson: requirement AMR-69 and its rationale state that the additive process creates material using a directional process where the likelihood of the process yielding anisotropic material is high unless controls are in place to minimise the effect, that build orientation should always be identified and maintained for all material property development activities, and that anisotropy is treated as negligible only at typically less than a 5 percent difference in properties by orientation, otherwise orientation-specific properties are required. Also supports that AM influence factors include local feature-driven anisotropy. Copy actually read: the approved PDF at https://standards.nasa.gov/sites/default/files/standards/NASA/Baseline/0/2021-04-21_nasa-std-6030-approveddocx.pdf, downloaded and text-extracted locally with pypdf. The lesson describes the requirement in original wording and applies the principle only qualitatively; no design values are taken from it."
+    },
+    {
+      "id": "iso-astm-52900-2021-am-terminology",
+      "title": "ISO/ASTM 52900:2021, Additive manufacturing - General principles - Fundamentals and vocabulary (Edition 2, published 2021-11, ISO/TC 261)",
+      "provider": "International Organization for Standardization and ASTM International",
+      "url": "https://www.iso.org/standard/74514.html",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Cited by designation only. The standard is copyrighted and sold (CHF 44); its full text was not read and no standard text, table or value is reproduced anywhere in this lesson. The catalogue metadata used here - designation, full title, Edition 2, publication date 2021-11, 28 pages, ISO/TC 261, status Published and confirmed in 2025, and the public abstract stating that the document establishes and defines terms used in additive manufacturing technology, which applies the additive shaping principle and builds three-dimensional geometries by successive addition of material - was read from the ISO catalogue record served at https://committee.iso.org/standard/74514.html, because www.iso.org and the ISO Online Browsing Platform both returned HTTP 403 to the fetcher. The seven process-category names used in the lesson were corroborated from the two independent sources below rather than from the standard itself."
+    },
+    {
+      "id": "salmi-2021-am-processes-medical-applications",
+      "title": "Additive Manufacturing Processes in Medical Applications, Materials 14(1):191 (2021), DOI 10.3390/ma14010191",
+      "provider": "Mika Salmi, Aalto University; Materials (MDPI)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7796413/",
+      "sourceType": "peer-reviewed",
+      "usage": "ATTRIBUTION_REQUIRED",
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Open-access review used solely to corroborate that the additive manufacturing field sorts processes into seven categories on the ISO/ASTM 52900 vocabulary and to confirm the category names: powder bed fusion, material extrusion, vat photopolymerization, material jetting, binder jetting, sheet lamination and directed energy deposition. Read via the PubMed Central copy listed as the URL, which is the copy verified reachable; the publisher page at https://www.mdpi.com/1996-1944/14/1/191 returned HTTP 403 to the fetcher. No medical content from this article is used, and no wording is reproduced."
+    },
+    {
+      "id": "nist-additive-manufacturing-technologies",
+      "title": "Additive Manufacturing Technologies (NIST additive manufacturing research areas)",
+      "provider": "National Institute of Standards and Technology",
+      "url": "https://www.nist.gov/additive-manufacturing/research-areas/technologies",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Second, independent corroboration of the additive process-category names. The page describes powder bed fusion, directed energy deposition, material extrusion, vat photopolymerization, binder jetting and material jetting as the AM technologies NIST works with; it does not name sheet lamination and does not cite ISO/ASTM 52900, which is recorded here so the corroboration is not overstated. Classified REFERENCE_ONLY because the page states no reuse licence; no wording is reproduced."
+    },
+    {
+      "id": "ecfr-29-cfr-1910-212-machine-guarding",
+      "title": "29 CFR 1910.212 - General requirements for all machines (Occupational Safety and Health Standards, Subpart O, Machinery and Machine Guarding)",
+      "provider": "Occupational Safety and Health Administration, U.S. Department of Labor, via the Electronic Code of Federal Regulations",
+      "url": "https://www.ecfr.gov/current/title-29/section-1910.212",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the shop-safety statement: paragraph (a)(1) requires one or more methods of machine guarding to protect the operator and other employees in the machine area from hazards such as those created by point of operation, ingoing nip points, rotating parts, and flying chips and sparks; paragraph (a)(3)(ii) requires the point of operation of machines whose operation exposes an employee to injury to be guarded. Read through the eCFR renderer API at https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-29?part=1910&section=1910.212 with a browser user-agent, because the ordinary eCFR page redirected the fetcher to an unblock interstitial. The lesson restates the duty in original wording and gives no procedures."
+    },
+    {
+      "id": "mit-ocw-15783j-prototyping-overview",
+      "title": "Prototyping (Class 8 lecture notes, courtesy of Allison Rae), 15.783J / 2.739J Product Design and Development, Spring 2006",
+      "provider": "MIT OpenCourseWare, Massachusetts Institute of Technology",
+      "url": "https://ocw.mit.edu/courses/15-783j-product-design-and-development-spring-2006/resources/cls8_prototyping/",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA (MIT OpenCourseWare site licence)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Used only for the survey structure of prototype fabrication routes and their qualitative trade-offs: hand-made models (form-study, looks-like/works-like, geometry too complex for CAD, one to five parts), urethane casting from silicone tools (small batches in production-like rigid, flexible or clear materials, lead time of weeks), thermoforming (quick, thin-walled, simple geometry), investment casting (metal parts difficult or impossible to machine, made from a pattern, weeks of lead time), CNC machining (production materials, strong engineering check models, geometry-dependent), and the distinction between prototype tooling in aluminium or pre-hardened steel (faster and less expensive than production tooling, limited tool life) and hardened multi-cavity production tooling (large quantities, lower part cost). Read the deck as a PDF, downloaded and text-extracted locally with pypdf. Recorded REFERENCE_ONLY because the CC BY-NC-SA non-commercial and share-alike terms may not suit this project. The 2006 vendor cost and delivery figures in the deck are deliberately NOT used anywhere in the lesson; all currency figures in the lesson are the author's own labelled illustrative teaching values."
+    },
+    {
+      "id": "libretexts-nwtc-cost-traditional-versus-additive",
+      "title": "5: Cost Analysis of Traditional Manufacturing vs. Additive Manufacturing Methods, in Design for Various Manufacturing Methods",
+      "provider": "Bryan Guns, Northeast Wisconsin Technical College; Engineering LibreTexts",
+      "url": "https://eng.libretexts.org/Courses/Northeast_Wisconsin_Technical_College/Design_for_Various_Manufacturing_Methods/05:_Cost_Analysis_of_Traditional_Manufacturing_vs._Additive_Manufacturing_Methods",
+      "sourceType": "open-textbook",
+      "usage": "ATTRIBUTION_REQUIRED",
+      "license": "CC BY 4.0 (as displayed on the page)",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Used for the cost-structure argument only: conventional routes such as die casting and injection moulding carry a large fixed tooling cost that additive routes do not, additive per-part cost stays roughly flat with quantity while conventional per-part cost falls as tooling is amortised, and therefore additive suits low volumes or complex geometry while conventional methods dominate at high volume. The page's specific dollar ranges for tooling and per-part cost were read but are NOT reproduced or relied on in the lesson; the worked example uses the author's own labelled illustrative figures instead."
+    },
+    {
+      "id": "rehmer-2023-elastic-modulus-data",
+      "title": "Elastic modulus data for additively and conventionally manufactured variants of Ti-6Al-4V, IN718 and AISI 316 L",
+      "provider": "Scientific Data (Nature Portfolio); B. Rehmer, F. Bayram, L. A. Avila Calderon, G. Mohr, B. Skrotzki, Bundesanstalt fur Materialforschung und -prufung",
+      "url": "https://www.nature.com/articles/s41597-023-02387-6",
+      "sourceType": "peer-reviewed",
+      "usage": "ATTRIBUTION_REQUIRED",
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Existing registry record, reused with the same id and URL. Used here for one claim only: that the manufacturing route matters enough to elastic properties that a dedicated dataset was published comparing additively and conventionally manufactured variants of the same three alloys. No numeric modulus value is taken from it and no wording is reproduced in this lesson."
+    }
+  ]
+}
