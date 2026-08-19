@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "subjectSlug": "computer-science-fundamentals",
+  "note": "Discovery leads for topic workers. Every topic must still research and verify its own sources; nothing here is pre-approved for reuse. A CS-theory/programming subject: correctness of algorithms, complexity, and code/pseudocode examples is the defining control — verify every worked example and every Big-O claim in Bash before publishing.",
+  "reviewProfile": ["technical-cs", "correctness-critical", "language-agnostic"],
+  "tierA": [
+    { "provider": "NIST Dictionary of Algorithms and Data Structures (DADS)", "url": "https://xlinux.nist.gov/dads/", "useFor": "authoritative, public-domain definitions of algorithms, data structures, and complexity terms" },
+    { "provider": "Python Language Documentation", "url": "https://docs.python.org/3/", "useFor": "concrete language semantics for variables/types/functions/data structures (lists, dicts) when using Python for examples" },
+    { "provider": "OpenStax / Open Textbook Library — CS & programming OER", "url": "https://open.umn.edu/opentextbooks", "useFor": "open CS foundations, programming, and data-structures texts" }
+  ],
+  "tierB": [
+    { "provider": "Open Data Structures (Pat Morin)", "url": "https://opendatastructures.org/", "useFor": "data structures and their complexity — CC BY, attribute; describe, adapt in original prose" },
+    { "provider": "Runestone Academy — Problem Solving with Algorithms and Data Structures", "url": "https://runestone.academy/ns/books/published/pythonds3/index.html", "useFor": "algorithms/data structures with Python — REFERENCE_ONLY, verify claims" },
+    { "provider": "OpenDSA", "url": "https://opendsa-server.cs.vt.edu/", "useFor": "interactive data structures & algorithms textbook — REFERENCE_ONLY" },
+    { "provider": "MIT OpenCourseWare — Intro to CS / Algorithms", "url": "https://ocw.mit.edu/", "useFor": "CS foundations and algorithm analysis" },
+    { "provider": "cppreference / language references", "url": "https://en.cppreference.com/", "useFor": "container/complexity guarantees when illustrating with C++/other languages — REFERENCE_ONLY" }
+  ],
+  "cautions": [
+    "CORRECTNESS IS THE PRIMARY CONTROL. Every algorithm walkthrough, code/pseudocode example, numeric trace, and complexity claim must be verified — execute the arithmetic and, where feasible, the algorithm itself in Bash (python3/node/etc. may be available; otherwise trace by hand and check) before publishing. A wrong Big-O or an off-by-one in a worked example is a blocking defect.",
+    "Big-O / asymptotic complexity claims must be standard and correct. Examples of the expected answers: linear search O(n); binary search O(log n) (requires sorted input); bubble/insertion/selection sort O(n^2); merge sort O(n log n); quicksort average O(n log n), worst O(n^2); hash map / dictionary average-case O(1) lookup, worst-case O(n); stack/queue push/pop O(1); array index access O(1), array search O(n). Distinguish average, worst, and best case, and note Big-O is an upper bound (also mention Big-Theta/Big-Omega where relevant). Attribute the notation to Landau/Bachmann historically and its CS use to Knuth.",
+    "Keep examples LANGUAGE-AGNOSTIC where possible (clear pseudocode) or use clearly-labeled Python for concreteness, and note where terminology differs by language — e.g., a Python 'list' is a dynamic array, not a linked list; 'array' means a fixed contiguous block in C/Java; 'dictionary' (Python) = 'map'/'hash map'/'associative array' elsewhere. Do not present one language as the only correct one.",
+    "Define data-structure semantics precisely: array (fixed-size, contiguous, O(1) index) vs list (an abstract sequence; may be array-backed or linked); stack = LIFO (push/pop at one end); queue = FIFO (enqueue rear, dequeue front); dictionary/map = key→value with (average) O(1) access via hashing. State the operations each supports and their complexities.",
+    "Recursion must include a BASE CASE and progress toward it; always show the base case and warn about infinite recursion / stack overflow. Relate recursion to the call stack (connect to the Stacks topic).",
+    "Distinguish TIME complexity from SPACE complexity, and note trade-offs (e.g., a hash map trades space for time). For recursion, note the call-stack space cost.",
+    "OOP, abstraction, and decomposition are conceptual — attribute standard definitions, use small correct examples, and do not tie them to a single language.",
+    "Distribute question answer keys EVENLY across A/B/C/D, ensuring at least one C and one D per topic. Verify keys yourself from the file. Avoid reusing an identical question-stem template across topics (it triggers cross-topic near-duplicate flags)."
+  ]
+}
