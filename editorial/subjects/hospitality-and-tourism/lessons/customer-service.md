@@ -1,0 +1,152 @@
+# Customer Service
+
+## In 30 Seconds
+
+Service quality is hard to manage because a service is not a product: you cannot inspect it before it is sold, it is produced and consumed at the same moment, it varies with every employee and guest, and an unsold room-night is gone forever. Researchers turned this slippery thing into something measurable. SERVQUAL, from Parasuraman, Zeithaml and Berry, scores five dimensions of quality. Their Gaps model locates where quality breaks down. Jan Carlzon called each contact a moment of truth.
+
+## Why This Matters
+
+In hospitality, the product is largely the service, so a hotel or restaurant that cannot define, measure, and manage service quality is managing its core business blind. The frameworks in this lesson give you a shared vocabulary that runs through every operations course, quality-improvement project, and guest-satisfaction survey in the field. Knowing that quality is the gap between what a guest expected and what they perceived, and that the gap has specific organizational causes, lets you diagnose a complaint instead of just apologizing for it. The same reasoning transfers to any industry where the thing being sold is an experience delivered by people, not an object pulled off a shelf.
+
+## Learning Objectives
+
+- Explain the four IHIP characteristics of services and why each makes service quality harder to control than product quality.
+- Define service quality as the gap between expected and perceived service, and identify the five SERVQUAL dimensions, attributing them to Parasuraman, Zeithaml and Berry.
+- Describe the five gaps in the Gaps model and locate the organizational cause of a described quality failure.
+- Explain the moment of truth concept and attribute its popularization to Jan Carlzon.
+- Distinguish service standards from a service culture, and evaluate why written standards alone do not guarantee quality.
+
+## The College Version
+
+### Why services resist quality control
+
+Managing the quality of a physical product is a solved problem in principle: you specify the item, inspect samples against the specification, and reject defects before they reach a customer. Services defeat that routine, and the services-marketing literature explains why through four characteristics usually abbreviated IHIP, set out by Zeithaml, Parasuraman and Berry in their 1985 *Journal of Marketing* article. **Intangibility:** a service is a performance, not an object, so it cannot be seen, touched, or tested before purchase, and the guest buys a promise. **Inseparability:** production and consumption happen at the same time and often in the same place, so the guest is inside the "factory" while the service is being made and there is no chance to fix a defect before delivery. **Heterogeneity**, also called variability: because services are performed by people for people, the same restaurant delivers a different experience on a busy Saturday than on a quiet Tuesday, and no two employees, or two guests, are identical. **Perishability:** a service cannot be stored, so an empty hotel room tonight or an unsold restaurant seat at 7 p.m. is revenue lost forever, which is why capacity and demand management sit so close to service management. These four properties are simplifications, and scholars debate how absolute each is, but they explain the core difficulty: you cannot inspect quality into a service after the fact, so you have to build it into the design and the delivery.
+
+### SERVQUAL: measuring quality as expectations versus perceptions
+
+If you cannot inspect a service against an engineering spec, how do you measure its quality at all? The influential answer came from A. Parasuraman, Valarie Zeithaml and Leonard Berry. Their premise, drawn from the expectancy-disconfirmation view of satisfaction, is that service quality is not an absolute property of the service but the gap between the service a customer expected and the service they perceived they received. If perceptions meet or exceed expectations, quality is judged high; if they fall short, quality is judged low. Their 1985 conceptual paper first identified ten determinants of service quality; their 1988 *Journal of Retailing* paper consolidated these into five dimensions and built a 22-item survey instrument called SERVQUAL to score them. The five dimensions are **reliability** (performing the promised service dependably and accurately), **assurance** (the knowledge and courtesy of employees and their ability to inspire trust and confidence), **tangibles** (the appearance of physical facilities, equipment, and staff), **empathy** (caring, individualized attention given to the customer), and **responsiveness** (willingness to help customers and provide prompt service). A useful memory aid is the initialism RATER. Reliability consistently emerges as the dimension customers weight most heavily. SERVQUAL is a framework, not settled law: Cronin and Taylor argued in 1992 that measuring performance perceptions alone (their SERVPERF instrument) predicts quality better than the expectations-minus-perceptions difference score, and the difference-score method has drawn statistical criticism. Treat SERVQUAL as a widely used and widely debated lens, attributed to its authors, rather than as a formula that ends the argument.
+
+### The Gaps model: where quality actually breaks
+
+The same authors paired SERVQUAL with a diagnostic map of where service quality fails, the Gaps model, from their 1985 paper. The gap the customer feels, between expected and perceived service, is Gap 5, the customer gap. Its usefulness is that it is caused by four internal gaps a manager can actually work on. **Gap 1**, the knowledge or listening gap, is the distance between what customers actually expect and what management thinks they expect; a hotel that assumes guests care most about a lavish lobby when they care most about fast check-in has a Gap 1 problem. **Gap 2**, the design or standards gap, opens when management understands expectations but fails to translate them into clear service standards and specifications. **Gap 3**, the performance or delivery gap, is the difference between the standards set and what employees actually deliver, driven by training, staffing, and supervision. **Gap 4**, the communication gap, appears when marketing and advertising promise more than operations delivers, inflating expectations the service cannot meet. The model's central claim is that the customer gap is the sum of these four, so closing it means diagnosing which internal gap is open rather than simply exhorting staff to try harder. This turns a vague complaint that "service was poor" into a specific question about listening, standard-setting, delivery, or over-promising.
+
+### Moments of truth, standards, and culture
+
+Frameworks describe quality; delivery happens in specific encounters. Jan Carlzon, president of Scandinavian Airlines (SAS) in the 1980s, popularized the term **moment of truth** for each contact between a customer and the organization, an idea he developed from the work of Richard Normann. Carlzon's often-cited calculation was that SAS's roughly ten million customers each came into contact with about five employees for an average of fifteen seconds, so the airline was "created" in its customers' minds some fifty million times a year, fifteen seconds at a time. His managerial point was that those brief frontline encounters, not head-office strategy, are where the company is judged, so the people nearest the customer must be empowered to act. Organizations try to make quality consistent across those encounters with **service standards**, the specific, often measurable expectations for how a task is performed, such as answering the phone within three rings or greeting a guest within a set time. Standards address the design and delivery gaps, but written standards alone cannot cover every situation an employee meets, which is where **service culture** matters: the shared values and norms that lead employees to act in the guest's interest even when no rule tells them how. A strong service culture, backed by empowerment and training, is what turns a standard from a checklist into judgment. This lesson covers the principles of service quality; the wider design of the guest journey, the handling of service failure and recovery, and marketing strategy are treated as their own topics.
+
+## Key Vocabulary
+
+- **Service quality** — A customer's judgment of a service's overall excellence, modeled by Parasuraman, Zeithaml and Berry as the gap between the service the customer expected and the service they perceived they received.
+- **IHIP characteristics** — The four properties that distinguish services from goods: intangibility, inseparability of production and consumption, heterogeneity (variability), and perishability.
+- **Intangibility** — The property that a service is a performance rather than a physical object, so it cannot be seen, touched, or evaluated before it is purchased and experienced.
+- **Perishability** — The property that a service cannot be stored for later sale, so unused capacity such as an empty room-night or restaurant seat is revenue lost permanently.
+- **SERVQUAL** — A survey instrument developed by Parasuraman, Zeithaml and Berry (1988) that scores service quality across five dimensions by comparing customer expectations with perceptions.
+- **Five SERVQUAL dimensions** — Reliability, assurance, tangibles, empathy, and responsiveness (RATER) — the categories along which customers evaluate a service's quality.
+- **Gaps model of service quality** — Parasuraman, Zeithaml and Berry's framework locating the customer's expectation-perception gap (Gap 5) as the result of four internal gaps in listening, standard-setting, delivery, and communication.
+- **Moment of truth** — Any episode in which a customer comes into contact with an organization and forms an impression of its service; the term was popularized by Jan Carlzon of Scandinavian Airlines.
+- **Service standard** — A specific, often measurable expectation for how a service task is performed, such as answering calls within three rings, used to make delivery consistent.
+- **Service culture** — The shared values and norms in an organization that lead employees to act in the guest's interest, guiding judgment in situations that written standards do not cover.
+
+## Eli-10
+
+When you buy a bike, you can look it over and test the brakes before you pay. A service is not like that. Staying at a hotel is something that happens to you while you are there, made fresh by real people each time, and you cannot try it first or return it if it is bad. So how do you know if the service was good? Researchers decided that good service means one simple thing: you got at least as much as you were hoping for. If you expected a friendly, quick check-in and that is what happened, you feel good. If you expected it and got a long, grumpy wait, the same check-in feels bad, because your hopes were higher. Smart companies figure out ahead of time exactly what guests are hoping for, write down clear rules for the staff, and make sure the ads do not promise more than the hotel can actually do. And they remember that every little moment, even a fifteen-second hello, is a tiny test they can pass or fail.
+
+## Eli's Analogy
+
+Service quality is like grading a surprise gift against your secret wish list. The gift itself has not changed, but whether you are delighted or let down depends entirely on what you were quietly hoping to unwrap.
+
+**Where the analogy breaks down:** The analogy understates the company's control. A gift-giver is guessing blind, but a hotel can actually research what guests expect, train staff, and manage its own advertising so the "wish list" and the "gift" are deliberately brought closer together — which is the whole point of the Gaps model.
+
+## Worked Example
+
+A resort's guest surveys show low scores on "the spa experience." Instead of telling staff to be nicer, the manager uses the Gaps model to locate the break. Interviews reveal guests expected the 60-minute massage advertised online to be a full hour of treatment; in practice, ten of those minutes were consultation and dressing, so guests felt short-changed. Management understood the expectation and had a clear standard, so Gaps 1 and 2 are fine. The therapists were delivering exactly what operations specified, so Gap 3 is fine. The break is Gap 4, the communication gap: marketing promised "60 minutes" while operations delivered 50 minutes of hands-on time. The fix is not more training but honest communication — advertise "50 minutes of treatment within a 60-minute appointment." Expectations now match delivery, and perceived quality rises without changing the service at all. This shows why diagnosing the specific gap matters more than a blanket call to improve.
+
+## Common Mistakes
+
+- **Mistake:** Treating service quality as an absolute property of the service, like measuring a steel beam against a spec.
+  **Correction:** In the SERVQUAL tradition, quality is relative to expectations. The same check-in that delights a guest expecting little disappoints one who expected a lot. Quality is the gap between expected and perceived service, not a fixed attribute of the encounter.
+- **Mistake:** Assuming poor quality is always a frontline attitude problem, fixable by telling staff to try harder.
+  **Correction:** The Gaps model shows most quality failures trace to management-controlled gaps: not learning what guests expect (Gap 1), not setting standards (Gap 2), or over-promising in advertising (Gap 4). Only the delivery gap (Gap 3) is mainly about frontline performance, and even that reflects training and staffing decisions.
+- **Mistake:** Reciting the SERVQUAL dimensions but attributing them vaguely or treating SERVQUAL as an undisputed formula.
+  **Correction:** The five dimensions — reliability, assurance, tangibles, empathy, responsiveness — come from Parasuraman, Zeithaml and Berry (1988). The framework is also debated: Cronin and Taylor (1992) argued a performance-only measure (SERVPERF) works better than the expectations-minus-perceptions score. Attribute the framework and acknowledge the debate.
+- **Mistake:** Believing a thick binder of written service standards guarantees consistent quality.
+  **Correction:** Standards address the design and delivery gaps but cannot anticipate every situation. Consistent quality also needs a service culture and empowered employees who exercise judgment in the guest's interest when no rule applies — the point behind Carlzon's emphasis on the frontline moment of truth.
+- **Mistake:** Confusing intangibility with worthlessness, or perishability with mere spoilage.
+  **Correction:** Intangibility means a service cannot be inspected before purchase, not that it lacks value. Perishability means capacity cannot be inventoried — tonight's empty room cannot be sold tomorrow — which is why revenue and capacity management are inseparable from service management, not a warning that services go stale.
+
+## Compare / Contrast
+
+- **SERVQUAL vs. the Gaps model:** SERVQUAL measures how much quality a customer perceives across five dimensions; the Gaps model diagnoses where and why quality falls short inside the organization. One is a measuring instrument, the other a cause-finding map, and Parasuraman, Zeithaml and Berry designed them to work together.
+- **A good product vs. a good service:** A product can be produced, stored, inspected, and then sold, so defects are caught before the customer. A service is intangible, produced and consumed together, variable, and perishable, so quality must be built into the design and delivery rather than inspected in afterward.
+- **Service standards vs. service culture:** Standards are explicit, measurable rules for defined tasks; culture is the shared values that guide behavior when no rule fits. Standards make routine encounters consistent; culture and empowerment handle the unscripted moments of truth that standards cannot anticipate.
+- **Gap 3 (delivery gap) vs. Gap 4 (communication gap):** Gap 3 is a shortfall between the standard set and what staff actually deliver — a performance issue. Gap 4 is a mismatch between what marketing promised and what operations delivers — an expectations issue. The service can be identical; only the source of the disappointment differs.
+
+## Key Takeaway
+
+Service quality is the gap between what a guest expected and what they perceived, which is why services — intangible, inseparable, variable, and perishable — cannot be quality-inspected like products. Parasuraman, Zeithaml and Berry gave the field SERVQUAL to measure that gap and the Gaps model to locate its organizational causes, while Carlzon's moment of truth reminds managers that quality is decided in each frontline encounter.
+
+## Practice Question Bank
+
+**1. The IHIP framework says services differ from goods on four characteristics. Which one refers to a service being produced and consumed at the same time, so the customer is present while it is delivered?**
+- A) Inseparability ✓
+- B) Intangibility
+- C) Heterogeneity
+- D) Perishability
+
+Inseparability is the simultaneous production and consumption of a service, meaning there is no chance to inspect and fix it before the customer receives it. Intangibility is that a service cannot be touched or tested beforehand; heterogeneity is variation from one delivery to the next; perishability is the inability to store unused capacity. *(Recall)*
+
+**2. In the SERVQUAL framework of Parasuraman, Zeithaml and Berry, service quality is best understood as which of the following?**
+- A) The absolute technical excellence of the service, measured against an engineering specification
+- B) The price a customer is willing to pay relative to competitors
+- C) The gap between the service a customer expected and the service they perceived they received ✓
+- D) The number of service standards an organization has documented
+
+SERVQUAL rests on the expectancy-disconfirmation idea: quality is high when perceptions meet or exceed expectations and low when they fall short, so it is inherently the expectation-perception gap. It is deliberately not an absolute engineering measure, it is not defined by price, and documenting standards is a means to quality, not the definition of it. *(Understanding)*
+
+**3. A hotel's advertising promises "a rejuvenating hour-long massage," but the 60-minute appointment includes consultation and changing, leaving about 50 minutes of hands-on treatment. Guests feel short-changed. In the Gaps model, which gap is the primary cause?**
+- A) Gap 1, the listening gap — management does not know what guests expect
+- B) Gap 4, the communication gap — external promises exceed what is delivered ✓
+- C) Gap 2, the standards gap — expectations are not translated into specifications
+- D) Gap 3, the delivery gap — staff fail to perform to the set standard
+
+Marketing promised more (a full hour of massage) than operations delivers (about 50 minutes of treatment), inflating expectations the service cannot meet — the definition of the communication gap, Gap 4. Management does understand the expectation and has a standard, so Gaps 1 and 2 are closed, and the therapists deliver exactly what is specified, so Gap 3 is not the issue. *(Application)*
+
+**4. Who popularized the term "moment of truth" for the brief frontline encounters in which customers judge an organization, using the example of an airline being "created" in customers' minds millions of times a year?**
+- A) Leonard Berry, in developing the SERVQUAL instrument
+- B) W. Edwards Deming, in his work on total quality management
+- C) Valarie Zeithaml, in defining the IHIP characteristics
+- D) Jan Carlzon, president of Scandinavian Airlines (SAS) ✓
+
+Jan Carlzon popularized "moment of truth" in the 1980s, calculating that SAS was created in its customers' minds tens of millions of times a year in fifteen-second encounters, and arguing frontline staff must be empowered because that is where the company is judged. Berry and Zeithaml co-authored the SERVQUAL and IHIP work but did not originate this term; Deming is associated with statistical quality management, not this concept. *(Recall)*
+
+**5. A restaurant has a detailed manual of service standards, yet guests still report inconsistent experiences during unusual situations the manual never anticipated. Which conclusion best fits the service-quality principles in this lesson?**
+- A) Written standards are necessary but not sufficient; consistent quality also needs a service culture and empowered staff who exercise judgment where standards do not reach ✓
+- B) The restaurant should abandon standards entirely and rely on employee instinct
+- C) Inconsistency proves the standards are too detailed and should be deleted
+- D) Service quality cannot be influenced by management because heterogeneity makes every encounter random
+
+Standards close the design and delivery gaps for routine tasks but cannot script every situation, so a service culture and empowerment are needed for the unscripted moments of truth — exactly Carlzon's point. Abandoning or deleting standards discards the consistency they provide, and heterogeneity makes quality harder to control, not impossible; the Gaps model exists precisely because management can act on it. *(Analysis)*
+
+## Sources
+
+- Parasuraman, A., Zeithaml, V.A. & Berry, L.L. (1988). *SERVQUAL: A Multiple-Item Scale for Measuring Consumer Perceptions of Service Quality.* Journal of Retailing 64(1):12-40. — the five dimensions and the instrument. REFERENCE_ONLY.
+- Parasuraman, A., Zeithaml, V.A. & Berry, L.L. (1985). *A Conceptual Model of Service Quality and Its Implications for Future Research.* Journal of Marketing 49(4):41-50. — the Gaps model and the original ten determinants. REFERENCE_ONLY.
+- Zeithaml, V.A., Parasuraman, A. & Berry, L.L. (1985). *Problems and Strategies in Services Marketing.* Journal of Marketing 49(2):33-46. — the IHIP characteristics. REFERENCE_ONLY.
+- Carlzon, J. (1987). *Moments of Truth.* — popularized the moment of truth concept and the SAS calculation. REFERENCE_ONLY.
+- Freeman, R. & Glazer, K. *Introduction to Tourism and Hospitality in BC*, Chapter 9: Customer Service. BCcampus Open Education / Capilano University. CC BY 4.0. — context on service quality, moments of truth, and standards.
+- Cronin, J.J. & Taylor, S.A. (1992). *Measuring Service Quality: A Reexamination and Extension* (SERVPERF). Journal of Marketing 56(3):55-68. — the debate over SERVQUAL's difference-score method. REFERENCE_ONLY.
+
+## Related Topics
+
+- hospitality-and-tourism:foundations:guest-experience
+- hospitality-and-tourism:foundations:service-recovery
+- hospitality-and-tourism:foundations:employee-management
+- hospitality-and-tourism:foundations:hospitality-marketing
+
+## Editorial Metadata
+
+- **Editorial status:** READY_TO_PUBLISH
+- **Estimated time:** 11 minutes
+- **Researched:** 2026-08-19
+- **Rights:** Five reference-only scholarly/trade sources plus one CC BY 4.0 open textbook chapter; no source prose reproduced; all wording original.
+- **Attribution notes:** SERVQUAL and the Gaps model attributed to Parasuraman, Zeithaml and Berry; IHIP to Zeithaml, Parasuraman and Berry (1985); the moment of truth popularized by Jan Carlzon (developed from Richard Normann); the SERVQUAL debate attributed to Cronin and Taylor (1992).
