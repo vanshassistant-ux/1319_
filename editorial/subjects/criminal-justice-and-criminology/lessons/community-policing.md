@@ -1,0 +1,165 @@
+# Community Policing
+
+## In 30 Seconds
+
+The COPS Office defines community policing as a philosophy, not a program: partnerships with the public, organizational transformation inside the agency, and systematic problem solving. Two neighboring ideas get folded into it constantly and should not be. Problem-oriented policing came from Herman Goldstein in 1979. Broken windows came from Wilson and Kelling in 1982. The National Academies evaluated all three in 2018 and reached different conclusions about each.
+
+## Why This Matters
+
+Community policing is the vocabulary American police agencies use to describe themselves, so almost every policing course, grant application, and reform proposal runs through it. Students who can separate the three ideas bundled under the label can read the evidence instead of the branding: they can say what the National Academies actually concluded, distinguish a hot spots patrol result from a community engagement result, and notice when an agency has added a community relations unit rather than changed how it works. That skill transfers to any field where a popular term outruns its definition.
+
+## Learning Objectives
+
+- Define community policing using the COPS Office's three components and explain why it is described as a philosophy rather than a program.
+- Distinguish community policing, problem-oriented policing, and broken windows by origin, logic, and evidence base.
+- Apply the SARA model to a described neighborhood problem.
+- Analyze what the National Academies' 2018 Proactive Policing report concluded about crime outcomes and about community outcomes, and where its conclusions run out.
+- Evaluate a described agency initiative for whether it reflects organizational transformation or a specialized unit bolted onto an unchanged organization.
+
+## The College Version
+
+### A philosophy, not a program
+
+The federal agency that funds and defines this work, the Office of Community Oriented Policing Services (the COPS Office), states the point in its own definition document: community policing is a philosophy that promotes organizational strategies supporting the systematic use of partnerships and problem-solving techniques to proactively address the immediate conditions giving rise to public safety issues such as crime, social disorder, and fear of crime. The word doing the work there is philosophy. A program has a budget line, a start date, and a unit that owns it. A philosophy is supposed to change how the whole organization decides things. That distinction is the single most useful thing to carry out of this lesson, because it explains most of the confusion around the term. An agency that opens a community affairs office, assigns four officers to attend neighborhood meetings, and leaves recruitment, promotion, training, supervision, and performance measurement exactly as they were has adopted a program. Under the COPS Office's own framework it has not adopted community policing. This lesson is educational material about a U.S. institutional practice, not advice to any agency, and it takes no position on whether any of these approaches should be adopted.
+
+### The three components
+
+The COPS Office names three key components. Community partnerships means collaborative relationships between the agency and the people and organizations it serves, built both to develop solutions and to increase trust; the document lists other government agencies, community members and groups, nonprofits and service providers, private businesses, and the media as partner categories, and says the public should have a role in prioritizing problems, not only in reporting them. Organizational transformation means aligning management, structure, personnel, and information systems to support partnerships and proactive problem solving. The document spells this out at unusual length: climate and culture, leadership, labor relations with unions, decentralized decision making and accountability, strategic planning, transparency, geographic assignment of officers to long-term beats, despecialization, recruitment and hiring, supervision, performance evaluation, promotion, training at academy, field, and in-service levels, and the quality and accuracy of the agency's data. Problem solving means the proactive and systematic examination of identified problems to develop and evaluate responses. Its structured vehicle is SARA: scanning, analysis, response, and assessment. Scanning identifies and prioritizes problems, where a problem is defined as two or more incidents similar in one or more ways that concern both the police and the community. Analysis, which the document calls the heart of the process, works out the dynamics of the problem and the limits of current responses. Response develops solutions, with arrest treated as one option among many. Assessment asks whether the problem declined and whether the response caused the decline. The COPS Office stresses that the cycle is circular, not linear.
+
+### Problem-oriented policing is a separate idea
+
+Herman Goldstein published 'Improving Policing: A Problem-Oriented Approach' in Crime and Delinquency in April 1979. His argument was diagnostic rather than programmatic: policing had become susceptible to a 'means over ends' syndrome, investing its improvement efforts in staffing, management, and organization while paying too little attention to the substantive outcome of the work. His remedy was to make the problem, not the incident and not the department's internal machinery, the unit of police work. As the 1988 NIJ paper The Evolving Strategy of Policing put it, problem-oriented policing rejects treating each incident as an isolated event with neither history nor future; by then the approach was being tested in Madison, Wisconsin, Baltimore County, Maryland, and Newport News, Virginia. The relationship between the two ideas is genuinely ambiguous, which is why they are so often merged. The COPS Office treats problem solving as one of the three components of community policing. The National Academies, reviewing the research, treats problem-solving strategies and community-based strategies as two of four separate approach families, precisely because they rest on different logic models. Goldstein's logic is analytic: find patterns, diagnose causes, tailor responses. Community policing's logic is relational: build partnerships that change how priorities are set and how the public regards the police. An agency can do either without the other, and the research literature repeatedly finds them done together, which is a large part of why the evidence is hard to read.
+
+### Broken windows is a third, separate idea
+
+James Q. Wilson and George Kelling published 'Broken Windows' in The Atlantic in March 1982. Read the article rather than the slogan. Its starting point was the Newark foot patrol finding that crime had not fallen but residents felt safer, and its explanation was that much of what frightens people in public places is not crime but disorder. From there the authors proposed that at the community level disorder and crime are linked in a developmental sequence: one unrepaired broken window signals that nobody cares, which lowers the informal barriers that keep a neighborhood orderly, which over time invites more serious predation. They cited Philip Zimbardo's 1969 abandoned-car observations in the Bronx and Palo Alto as an illustration. Their operational recommendation was about allocation and order maintenance, not arrest volume: identify neighborhoods at the 'tipping point' where order is deteriorating but not beyond recovery, and put officers there. The article also raises the equity objection itself. Wilson and Kelling asked how a community can ensure that age, skin color, national origin, or harmless mannerisms do not become the basis for sorting the undesirable from the desirable, and wrote that they could offer no wholly satisfactory answer, hoping only that selection, training, and supervision would give officers a clear sense of the outer limit of their discretion. Later high-volume misdemeanor enforcement programs are one operationalization of the hypothesis. They are not the hypothesis.
+
+### What the evidence says
+
+In 2018 the National Academies of Sciences, Engineering, and Medicine published Proactive Policing: Effects on Crime and Communities, a consensus report that sorted proactive strategies into four approaches - place-based, problem-solving, person-focused, and community-based - and noted these overlap constantly in practice. On crime, the committee did not identify a consistent crime-prevention benefit for community-oriented policing programs (Conclusion 4-10), noting that many such programs were implemented alongside problem solving and that many evaluations used weak designs. On community outcomes, it concluded that community-oriented policing leads to modest short-term improvements in the public's view of policing and the police, most consistently for satisfaction and less so for perceived disorder, fear of crime, and legitimacy, with backfire effects rarely observed, so that deploying it offers prospects of modest gains at little risk of negative consequences (Conclusion 6-1); it also concluded that the small number of studies, mixed findings, and methodological limits allowed no conclusion about effects on collective efficacy or citizen cooperative behavior (Conclusion 6-2). Disorder-focused work splits: aggressive, misdemeanor arrest-based approaches to controlling disorder show small to null crime impacts (Conclusion 4-12), while place-based approaches using problem-solving interventions against social and physical disorder show consistent short-term crime reductions (Conclusion 4-13); evidence was insufficient to say anything about broken windows policing's effect on community social controls, the mechanism the theory actually proposes (Conclusion 6-3). Problem-solving strategies show small-to-moderate short-term gains in community satisfaction (Conclusion 5-2), though because they are usually bundled with community engagement, their independent contribution cannot be isolated (Conclusion 5-3). Two further conclusions matter for reading agencies rather than studies: place-based strategies rarely harm community attitudes but rarely improve them either (Conclusion 5-1), and aggressive person-focused enforcement such as stop, question, and frisk and proactive traffic enforcement is strongly negatively associated with the attitudes of the people subjected to it (Conclusion 5-4). The committee states the reading rule explicitly in one case: insufficient evidence to support an expected outcome is not the same as a finding that the outcome does not exist. The same logic governs every "no conclusion" above.
+
+### Implementation reality
+
+The measurement problem starts with the label. The committee noted that community-oriented policing is widely acknowledged to have many meanings and that definitions still vary considerably; for its own review it required that an intervention involve some consultation or collaboration between police and local citizens to define, prioritize, or solve problems, and it drew on a systematic review of 45 studies whose interventions ranged from foot patrols to community newsletters. Foot patrol shows how much design matters. The Police Foundation's 1981 Newark Foot Patrol Experiment found crime levels unaffected while residents noticed the patrols, believed crime had fallen, took fewer protective measures, and felt safer - though merchants, whose businesses were closed during the night hours when patrols ran, perceived the crime problem as worse. Flint, Michigan became the first city in memory to return to citywide foot patrol, and its residents twice voted to raise their own taxes to fund it, most recently by a two-thirds majority. Thirty years later the Philadelphia Foot Patrol Experiment randomized more than 200 officers across 60 violent-crime hot spots in the summer of 2009 and found that target areas in the top 40 percent on pretreatment violent crime had significantly less violent crime during the operational period, outperforming controls by 23 percent for a net 53 violent crimes prevented after displacement - which its authors framed as evidence about hot spots and place-based policing that requires a threshold level of existing violence, not as a community engagement result. Changing an organization is harder than adding a tactic. In the 2016 LEMAS survey, 42.1 percent of U.S. local police departments maintained a written community-policing plan, covering 65.8 percent of officers, ranging from 80.0 percent of departments serving a million or more residents to 35.8 percent of the smallest. And partnerships do not operate in isolation from everything else the agency does: the committee's report of Skogan's Chicago evaluation found that between 1994 and 2003 confidence in police rose among African American residents but also rose among white residents, leaving the racial gap almost as wide at the end as at the start.
+
+## Key Vocabulary
+
+- **Community policing** — A philosophy the COPS Office defines as promoting organizational strategies that support the systematic use of partnerships and problem-solving techniques to proactively address the immediate conditions producing crime, social disorder, and fear of crime.
+- **Organizational transformation** — Aligning an agency's management, structure, personnel systems, and information systems so that partnerships and proactive problem solving are supported by hiring, training, supervision, evaluation, promotion, and data practices rather than by one unit.
+- **Problem (in problem solving)** — Two or more incidents that are similar in one or more ways and that concern both the police and the community; it may be a behavior, a place, a person or persons, a recurring time or event, or a combination.
+- **SARA model** — The four-phase structure for systematic problem work - scanning, analysis, response, assessment - which the COPS Office treats as circular, so that findings from one phase can send the work back to an earlier one.
+- **Problem-oriented policing** — Herman Goldstein's 1979 approach making recurring problems rather than individual incidents the unit of police work, on the argument that the field had over-invested in internal method and under-invested in the substantive results of its efforts.
+- **Means over ends syndrome** — Goldstein's name for an organization improving its staffing, management, and operating procedures while neglecting the substantive outcomes those procedures are supposed to produce.
+- **Broken windows hypothesis** — Wilson and Kelling's 1982 proposal that visible untended disorder signals that nobody is in charge, weakens the informal controls a neighborhood exercises over behavior, and thereby makes serious crime more likely over time.
+- **Order maintenance** — Police work aimed at regulating public conduct and reducing the disorder that frightens residents, as distinct from investigating and arresting for specific criminal incidents.
+- **Proactive policing** — As the National Academies uses the term, a strategic agency decision to use crime-prevention approaches that are initiated by the police rather than triggered by a reported crime or a call for service.
+- **Backfire effect** — An outcome in which a strategy moves a measured community attitude in the opposite direction from the one intended; the 2018 committee found such results rarely in community-oriented policing evaluations.
+
+## Eli-10
+
+Imagine a city where the police only show up after something bad happens, then leave. Nobody there knows an officer's name and no one asks residents which problems matter most. Community policing is a decision to run the department differently. Officers work with residents, business owners, schools, and other city agencies to pick problems and fix them, and the department changes who it hires, what it trains, and what it rewards so that this becomes the normal job rather than a side project. Two other ideas often get called by the same name. Problem solving means noticing that the same trouble keeps happening at the same corner and figuring out why, instead of handling each call as if it were the first. Broken windows is a guess that ignored small signs of neglect, like a smashed window nobody fixes, make people believe nobody is watching, and that bigger trouble follows. Researchers who checked all three found that community policing usually makes people think better of the police, but they could not find steady proof that it lowers crime by itself.
+
+## Eli's Analogy
+
+It is the difference between a school hiring one counselor and a school deciding every teacher will learn each student's name. The counselor is a program: real, useful, and easy to point at. The second choice is a philosophy, and it changes hiring, training, schedules, and what gets praised at staff meetings.
+
+**Where the analogy breaks down.** The analogy breaks in two places. Schools are not armed, and police carry legal powers to stop, search, and arrest, so the stakes of a relationship going wrong are far higher and the law constrains the work in ways school policy does not. And a school can pursue the friendly version without also running an aggressive version, while many departments run community engagement and heavy enforcement at the same time in the same neighborhoods, which is exactly the situation the analogy cannot represent.
+
+## Worked Example
+
+Scanning: over eight weeks, a patrol district logs 34 calls about fights, litter, and noise in a two-block stretch outside a convenience store, all between 10 p.m. and 1 a.m. That satisfies the definition of a problem - repeated incidents similar in time, place, and kind, and of concern to both residents and police. Analysis, the heart of SARA: officers map the calls, interview the store owner and nearby residents, and find that the only late-night bus stop sits directly outside the store, that the parking lot is unlit, and that the store is the only business open past 10 p.m. Response: rather than a nightly patrol saturation, the agency asks public works to relight the lot, asks the transit authority to move the stop one block to a lit intersection, and works with the owner on closing-hour staffing. Assessment: nine weeks later, calls in the stretch have fallen to 11, with no rise in the surrounding blocks. Notice what makes this community policing rather than a directed patrol: residents helped set the priority, the response is mostly non-enforcement, other agencies did much of the work, and the result was measured. Notice too what the assessment cannot establish - with no comparison area and one short follow-up, this is a plausible local success, not evidence that the tactic generalizes.
+
+## Common Mistakes
+
+- **Treating community policing as a unit, a program, or a set of friendly activities such as neighborhood meetings and youth basketball.** The COPS Office defines it as a philosophy with three components, one of which is organizational transformation: management, structure, personnel systems, and information systems all realigned. An agency that adds a community liaison unit and changes nothing about hiring, training, supervision, promotion, or performance measurement has added a program, not adopted the philosophy.
+- **Using community policing, problem-oriented policing, and broken windows as interchangeable terms.** They have different origins and different logic. Goldstein's 1979 article made recurring problems the unit of work; Wilson and Kelling's 1982 article proposed that untended disorder erodes informal community control; the COPS Office's philosophy is built on partnership and organizational change. The 2018 National Academies report reaches different conclusions about each, which is only possible because they are different things.
+- **Asserting that community policing reduces crime.** The 2018 National Academies committee did not identify a consistent crime-prevention benefit for community-oriented policing programs (Conclusion 4-10). What it did find was modest short-term improvement in the public's view of the police, most reliably in satisfaction (Conclusion 6-1). Note the committee's own caveats: many evaluations were weak, and not identifying a consistent benefit is not the same as finding that no benefit exists.
+- **Citing the Philadelphia Foot Patrol Experiment's 23 percent result as proof that community policing works.** That trial assigned foot patrol to randomized violent-crime hot spots, and the effect appeared only in target areas in the top 40 percent on pretreatment violence. Its authors present it as evidence about hot spots and place-based patrol requiring a threshold of existing violence. Newark in 1981, which tested foot patrol as neighborhood presence, found no crime effect at all.
+- **Reading Wilson and Kelling as having called for mass misdemeanor arrests.** The 1982 article argued for order maintenance and for concentrating officers in neighborhoods at the tipping point, and it raised the risk that police could become agents of neighborhood bigotry while stating plainly that the authors had no wholly satisfactory answer to it. Arrest-driven disorder enforcement is one later operationalization; the National Academies found such approaches generate small to null crime impacts (Conclusion 4-12).
+
+## Compare / Contrast
+
+- **Community policing vs. Problem-oriented policing.** Community policing's logic is relational - partnerships and organizational change that alter how priorities are set and how the public regards the police. Problem-oriented policing's logic is analytic - identify recurring problems, diagnose causes, tailor and evaluate responses. The COPS Office folds problem solving in as one of three components; the National Academies keeps them as separate approach families because their logic models differ.
+- **Community policing vs. Broken windows policing.** Community policing is a philosophy about how an agency should be organized and how it should relate to the public. Broken windows is a causal hypothesis about disorder, fear, informal social control, and crime. The National Academies found modest positive community effects for the first (Conclusion 6-1) and insufficient evidence to judge the second on the community mechanism it proposes (Conclusion 6-3).
+- **Newark Foot Patrol Experiment (1981) vs. Philadelphia Foot Patrol Experiment (2011).** Same tactic, different question. Newark tested foot patrol as neighborhood presence and found crime unchanged while residents felt safer and took fewer protective measures. Philadelphia randomized foot patrol into 60 violent-crime hot spots and found significant violent-crime reduction, but only where pretreatment violence was already high, making it a place-based finding.
+- **Misdemeanor arrest-based disorder control vs. Problem-solving approaches to disorder at places.** Both target disorder, and the 2018 committee separated them deliberately. Aggressive, arrest-based approaches showed small to null crime impacts (Conclusion 4-12); place-based problem-solving interventions against social and physical disorder showed consistent short-term crime reductions (Conclusion 4-13), with little known about long-term or areawide effects.
+
+## Key Takeaway
+
+Community policing is a philosophy about partnerships, organizational transformation, and problem solving - not a unit and not a synonym for problem-oriented policing or broken windows. The 2018 National Academies review found it produces modest short-term gains in how the public sees the police with little risk of backfire, but no consistent crime-prevention benefit, and the three ideas it is bundled with each have their own evidence profile.
+
+## Practice Question Bank
+
+**1. According to the COPS Office's definition document, what are the three key components of community policing?**
+
+   A. Foot patrol, rapid response, and preventive patrol
+   B. Community partnerships, organizational transformation, and problem solving
+   C. Scanning, analysis, and response
+   D. Order maintenance, crime control, and service delivery
+
+   *Answer: B.* The COPS Office publication Community Policing Defined names community partnerships, organizational transformation, and problem solving. Foot patrol and preventive patrol are tactics, not components. Scanning, analysis, and response are three of the four SARA phases, which sit inside the problem-solving component. Order maintenance, crime control, and service delivery describe police functions generally, not this framework. (difficulty: recall; skill: Recalling the COPS Office's definitional framework for community policing)
+
+**2. What did the National Academies' 2018 report Proactive Policing conclude about community-oriented policing and crime?**
+
+   A. It produces large and durable crime reductions across jurisdictions
+   B. It increases crime by diverting officers from enforcement
+   C. The committee did not identify a consistent crime-prevention benefit for community-oriented policing programs
+   D. The committee found it effective only in cities of more than one million residents
+
+   *Answer: C.* Conclusion 4-10 states that, with caveats about programs being bundled with problem solving and about weak evaluation designs, the committee did not identify a consistent crime-prevention benefit. The report makes no finding that community-oriented policing increases crime, no finding of large durable reductions, and no finding keyed to city size; and the committee's phrasing matters - not identifying a consistent benefit is not the same as finding that no benefit exists. (difficulty: understanding; skill: Stating a consensus report's conclusion accurately, including what it does not say)
+
+**3. A student writes that the Philadelphia Foot Patrol Experiment proves community policing reduces violent crime. What is the strongest objection?**
+
+   A. The trial randomized foot patrol into violent-crime hot spots and found effects only where pretreatment violence was high, making it a place-based result rather than a community engagement result
+   B. The trial used fewer than twenty officers, so it lacked statistical power
+   C. The trial measured only fear of crime, never violent crime counts
+   D. The trial was never published in a peer-reviewed journal
+
+   *Answer: A.* Ratcliffe and colleagues assigned more than 200 officers across 60 violent-crime hot spots and found the effect held for target areas in the top 40 percent on pretreatment violent crime, framing the result as evidence about hot spots and place-based patrol requiring a threshold of existing violence. The other options misstate the study: it was large, it measured violent crime counts, and it appeared in Criminology in 2011. (difficulty: analysis; skill: Matching an empirical result to the strategy family it actually tested)
+
+**4. A department announces four initiatives. Which one best reflects the organizational transformation component rather than a program bolted onto an unchanged organization?**
+
+   A. Creating a six-officer community relations unit that attends neighborhood meetings
+   B. Printing a quarterly newsletter about crime prevention for residents
+   C. Hosting an annual open house at each precinct station
+   D. Rewriting promotion criteria and performance evaluations so that problem-solving results and community collaboration count toward advancement
+
+   *Answer: D.* The COPS Office describes organizational transformation as aligning management, structure, personnel, and information systems, explicitly including performance, reward, and promotional procedures. Rewriting promotion and evaluation criteria changes the incentives every officer faces. A dedicated unit, a newsletter, and an open house are all activities that can sit alongside an otherwise unchanged agency. (difficulty: application; skill: Applying the organizational transformation criterion to agency initiatives)
+
+**5. Which statement most accurately describes what Wilson and Kelling argued in their 1982 article 'Broken Windows'?**
+
+   A. Police should maximize misdemeanor arrests citywide, and the authors identified no risk of discriminatory enforcement
+   B. Untended disorder signals that nobody cares and erodes informal community control, so police should concentrate order-maintenance effort on neighborhoods at the tipping point; the authors acknowledged they had no wholly satisfactory answer to the risk that police become agents of neighborhood bigotry
+   C. Foot patrol in Newark reduced crime, proving that visible patrol deters offenders
+   D. Disorder is unrelated to fear of crime, so police should focus exclusively on serious offenses
+
+   *Answer: B.* The article proposed a disorder-to-crime developmental sequence, argued for allocating order-maintenance effort to neighborhoods where order is deteriorating but recoverable, and stated openly that the authors could offer no wholly satisfactory answer to the equity problem. It did not call for citywide arrest maximization, it reported that the Newark evaluation found no crime reduction, and its whole premise is that disorder drives fear. (difficulty: analysis; skill: Distinguishing a source's actual argument from the policy slogan attached to it)
+
+## Sources
+
+- Community Policing Defined (ISBN 978-1-935676-06-5; first published 2012, revised 2014) — Office of Community Oriented Policing Services (COPS Office), U.S. Department of Justice. <https://portal.cops.usdoj.gov/resourcecenter/RIC/Publications/cops-p157-pub.pdf> (usage: PUBLIC_DOMAIN)
+- Improving Policing: A Problem-Oriented Approach, Crime & Delinquency 25(2), 236-258 (April 1979) — Herman Goldstein, SAGE Publications. <https://doi.org/10.1177/001112877902500207> (usage: REFERENCE_ONLY)
+- Broken Windows: The Police and Neighborhood Safety, The Atlantic Monthly, March 1982 — James Q. Wilson and George L. Kelling, The Atlantic Monthly. <https://www.theatlantic.com/magazine/archive/1982/03/broken-windows/304465/> (usage: REFERENCE_ONLY)
+- Proactive Policing: Effects on Crime and Communities — National Academies of Sciences, Engineering, and Medicine, Committee on Law and Justice (National Academies Press, 2018). <https://nap.nationalacademies.org/read/24928/chapter/2> (usage: REFERENCE_ONLY)
+- The Evolving Strategy of Policing (Perspectives on Policing No. 4), NCJ 114213 — National Institute of Justice, U.S. Department of Justice, and the John F. Kennedy School of Government, Harvard University. <https://www.ojp.gov/pdffiles1/nij/114213.pdf> (usage: PUBLIC_DOMAIN)
+- The Newark Foot Patrol Experiment (NCJ 81779, 1981) — Police Foundation, via the NCJRS Virtual Library, Office of Justice Programs. <https://www.ojp.gov/ncjrs/virtual-library/abstracts/newark-foot-patrol-experiment> (usage: REFERENCE_ONLY)
+- The Philadelphia Foot Patrol Experiment: A Randomized Controlled Trial of Police Patrol Effectiveness in Violent Crime Hotspots, Criminology 49(3), 795-831 (August 2011) — Jerry H. Ratcliffe, Travis Taniguchi, Elizabeth R. Groff, and Jennifer D. Wood; American Society of Criminology / Wiley. <https://doi.org/10.1111/j.1745-9125.2011.00240.x> (usage: REFERENCE_ONLY)
+- Local Police Departments: Policies and Procedures, 2016 (NCJ 254826, August 2020) — Connor Brooks, Bureau of Justice Statistics, U.S. Department of Justice. <https://bjs.ojp.gov/content/pub/pdf/lpdpp16.pdf> (usage: REFERENCE_ONLY)
+
+## Related Topics
+
+- `criminal-justice-and-criminology:policing:history-and-role-of-policing`
+- `criminal-justice-and-criminology:policing:police-discretion`
+- `criminal-justice-and-criminology:policing:use-of-force`
+- `criminal-justice-and-criminology:criminal-justice-system:police-courts-and-corrections`
+
+## Editorial Metadata
+
+- Topic id: `criminal-justice-and-criminology:policing:community-policing`
+- Editorial status: READY_TO_PUBLISH
+- Estimated minutes: 12
+- Researched at: 2026-08-19
+- Research status: source-verified
+- Rights status: Two U.S. government works used as public domain (COPS Office, NIJ); the remaining six are reference-only and no source prose was adapted. All lesson wording is original.
+- Transformation: Written from primary documents read directly: the COPS Office definition PDF, the 1982 Atlantic article (Manhattan Institute PDF reproduction), the 1988 NIJ Perspectives on Policing paper, the National Academies 2018 report Summary and Chapter 6 in the online reader, the BJS LEMAS 2016 statistical brief, the NCJRS abstract record for the Newark experiment, and Crossref publisher metadata and abstracts for Goldstein 1979 and Ratcliffe et al. 2011. Conclusions are attributed by number; statistics are dated; no source's wording or structure is reproduced.
+- Scope note: this is educational material about U.S. policing practice and research. It states what agencies and researchers have said and found, and takes no position on any policy debate.

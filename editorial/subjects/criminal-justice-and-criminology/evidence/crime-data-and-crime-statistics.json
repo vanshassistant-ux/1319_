@@ -1,0 +1,512 @@
+{
+  "topicId": "criminal-justice-and-criminology:criminology:crime-data-and-crime-statistics",
+  "subjectId": "criminal-justice-and-criminology",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "the three main U.S. crime-measurement systems and the different question each one answers",
+      "the UCR Summary Reporting System, its aggregate monthly counts, and the hierarchy rule that counted only the most serious offense in an incident",
+      "NIBRS as incident-based reporting: up to 10 offenses per incident, segmented detail on victims, offenders, arrestees, property and location",
+      "the January 1, 2021 move to a NIBRS-only collection, the participation shortfall it produced, and the FBI's decision to resume accepting SRS submissions for 2022 through 2024",
+      "estimation: the FBI's traditional CIUS estimation and the BJS-FBI NIBRS Estimation Program, and why the 2021 break makes year-over-year comparison across it hazardous",
+      "the National Crime Victimization Survey: design, ages 12 and older, reported and unreported victimization, and its exclusions and error sources",
+      "the dark figure of crime and why UCR/NIBRS and NCVS legitimately disagree without either being wrong",
+      "counts versus rates, why per-100,000 (or per-1,000) rates are required for comparison, and why a rate change and a count change differ when the denominator moves",
+      "clearance rates: cleared by arrest versus cleared by exceptional means, and why 'cleared' is not 'convicted'",
+      "arrest data as a measure of police activity as much as of crime, and the UCR counting unit for arrests",
+      "self-report offending surveys and administrative data from courts and corrections as separate systems with separate definitions",
+      "interpretation rules: date every figure, name the instrument, never treat arrests as crimes or reported crime as total crime, watch small-number volatility, and be careful with city rankings",
+      "an explicit statement that the lesson is educational material"
+    ],
+    "supporting": [
+      "the FBI's own statement that it does not rank localities by crime level",
+      "NCVS sample size and rotating-panel design, bounding, telescoping, recall error and series victimizations",
+      "sampling error, standard errors and confidence intervals around NCVS estimates",
+      "the NCS-X initiative and how BJS expanded NIBRS coverage for estimation",
+      "administrative collections named as examples: BJS Federal Justice Statistics and BJS Prisoners"
+    ],
+    "outOfScope": [
+      "the case attrition funnel and the share of victimizations reported to police (owned by criminal-justice-and-criminology:criminal-justice-system:what-is-criminal-justice)",
+      "criminological theory and the causes of crime (owned by criminal-justice-and-criminology:criminology:what-causes-crime)",
+      "hate crime statistics, use-of-force data collection and LEOKA in any depth",
+      "the substance of measured demographic disparities, which belongs to the topics that report them",
+      "any evaluation of, or position on, current crime policy or current crime trends as a political matter",
+      "instructions on statistical software or on running regressions"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The FBI's Uniform Crime Reporting Program has collected crime data from voluntarily participating non-federal law enforcement agencies since 1929, and now collects from more than 19,000 eligible city, university and college, county, state, tribal, territorial and federal agencies.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "fbi-rcn-2024-faqs"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Under the Summary Reporting System's hierarchy rule, only the single most serious offense within a criminal incident was counted, so that a robbery occurring in the same incident as a homicide was not counted at all; SRS therefore undercounted offenses relative to an incident-based system.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "fbi-rcn-2024-faqs",
+        "fbi-guide-to-understanding-nibrs"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "NIBRS is incident-based and allows agencies to report up to 10 offenses per incident, together with administrative, offense, property, victim, offender and arrestee segments; the FBI's July 2019 guide describes 52 Group A offenses within 24 categories, 10 Group B offenses, and 58 data elements.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "fbi-guide-to-understanding-nibrs",
+        "fbi-rcn-2024-faqs"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The FBI began collecting NIBRS data in 1989; the Criminal Justice Information Services Advisory Policy Board endorsed the transition in 2015, the FBI Director approved it in February 2016, and the UCR Program moved to a NIBRS-only collection on January 1, 2021.",
+      "claimType": "HISTORICAL",
+      "sourceIds": [
+        "fbi-rcn-2024-faqs",
+        "fbi-guide-to-understanding-nibrs",
+        "bjs-nibrs-program"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Although more than 11,500 agencies submitted NIBRS data for 2021, participation remained below a statistically acceptable level to be nationally representative for the UCR Program's traditional trending analyses, so the FBI published only a limited release of the traditional CIUS for 2021 and could not produce comparable 5-, 10- and 20-year trends.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "fbi-rcn-2024-faqs"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "To restore nationally representative data, the FBI resumed accepting Summary Reporting System submissions for the 2022, 2023 and 2024 data years from agencies that had not yet transitioned to NIBRS.",
+      "claimType": "CURRENT",
+      "sourceIds": [
+        "fbi-rcn-2024-faqs",
+        "fbi-rcn-2024-ucr-summary"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "For the 2024 data year, 16,675 agencies covering 325,100,512 people submitted through NIBRS or SRS - 86.3% of enrolled agencies and 95.6% of the enrolled population; NIBRS alone accounted for 14,601 agencies (75.5%) covering 296,527,998 people (87.2%), and the 2,074 SRS-only agencies added 8.4 percentage points of population coverage.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "fbi-rcn-2024-ucr-summary",
+        "fbi-rcn-2024-faqs"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The FBI's traditional CIUS estimation uses reported data from participating agencies together with past data and mathematical calculations to approximate values for agencies that did not report a complete 12 months, so published national totals are estimates rather than a census of offenses.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "fbi-rcn-2024-faqs",
+        "fbi-rcn-2024-ucr-summary"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "BJS and the FBI jointly run the NIBRS Estimation Program, which produces national incident-level estimates and summary-level estimates built by converting reported NIBRS data to the aggregate SRS format and combining it with reported SRS data; the FBI states the traditional and NIBRS-only estimates should be viewed as analogous measures rather than one being more accurate than the other.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "bjs-nations-two-crime-measures-2015-2024",
+        "fbi-rcn-2024-ucr-summary",
+        "bjs-nibrs-program"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "In 2024 the FBI estimated 1,221,345 violent crime offenses, a rate of 359.1 per 100,000 inhabitants, down from an estimated 2023 rate of 379.5 per 100,000; the FBI reported the estimated volume of violent crime as down 4.5% and property crime as down 8.1% from 2023 to 2024.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "fbi-rcn-2024-ucr-summary"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Because the population denominator grew, the published 4.5% decline in the estimated violent crime count corresponds to a 5.4% decline in the violent crime rate: (359.1 - 379.5) / 379.5 = -5.375%. The implied population bases (1,221,345 / 359.1 x 100,000 = 340,112,782 for 2024, and 1,221,345 / 0.955 / 379.5 x 100,000 = 336,994,806 for 2023) differ by 0.925%, and (1 - 0.045) / 1.00925 - 1 = -5.375%, which reproduces the rate change exactly.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "fbi-rcn-2024-ucr-summary"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The NCVS is administered by the U.S. Census Bureau for BJS to persons age 12 or older in a nationally representative sample of about 150,000 households and about 240,000 persons per year; households stay in the sample 3.5 years and are interviewed every 6 months for seven interviews, and the survey collects both crimes reported and crimes not reported to police.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "bjs-ncvs-data-collection"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The NCVS measures nonfatal victimization only, so it cannot measure homicide; crimes against commercial establishments, against persons age 11 or younger, and against people who are homeless or institutionalized are out of scope for the NCVS but are within scope for NIBRS.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "bjs-nations-two-crime-measures-2015-2024",
+        "bjs-ncvs-data-collection"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "NCVS estimates carry sampling error, so estimates that appear different may not be statistically different; BJS reports that the 2024 violent victimization rate of 23.3 per 1,000 persons age 12 or older has a standard error of 1.52, giving a 95% confidence interval of about 20.31 to 26.28.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "bjs-ncvs-data-collection",
+        "bjs-criminal-victimization-2024"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The NCVS is also subject to nonsampling error: respondents recall assault least accurately of any crime the survey measures, and telescoping - placing incidents that occurred before the reference period inside it - is minimized but not eliminated by the bounding procedure, in which the first interview is used only to bound and is excluded from annual estimates.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "bjs-ncvs-survey-methodology",
+        "bjs-ncvs-data-collection"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "For 2024, the NCVS rate of violent crime excluding simple assault was 8.9 victimizations per 1,000 persons age 12 or older, the rate of such victimizations reported to police was 5.3 per 1,000, and the NIBRS Estimation Program Summary Estimates rate of violent crime was 3.7 per 1,000 U.S. residents - three different numbers describing overlapping but non-identical quantities.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "bjs-nations-two-crime-measures-2015-2024"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Because many crimes never come to the attention of the criminal justice system - victims do not report, victims do not recognize themselves as victims, or offenders are never identified - criminologists describe the unmeasured remainder as the dark figure of crime.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "sou-ccj230-dark-figure-of-crime",
+        "bjs-nations-two-crime-measures-2015-2024"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "In the UCR Program an offense is cleared by arrest when at least one person has been arrested, charged with the offense, and turned over to the court for prosecution; clearance counts offenses cleared, not persons arrested, and a clearance recorded in one calendar year may pertain to an offense from an earlier year.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "fbi-cius-offenses-cleared"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "An offense is cleared by exceptional means when the agency has identified the offender, gathered enough evidence to support an arrest and charge, identified the offender's exact location, and encountered a circumstance outside its control that prevents arrest and prosecution - for example the offender's death, a victim's refusal to cooperate after the offender is identified, or denial of extradition. Recovery of property alone does not clear an offense.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "fbi-cius-offenses-cleared"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "In 2024 law enforcement agencies cleared 43.8% of reported violent crimes and 15.9% of reported property crimes by arrest or exceptional means; a clearance is not a conviction, and the UCR Program does not collect data on the number of persons prosecuted, convicted or imprisoned.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "fbi-rcn-2024-ucr-summary",
+        "fbi-cius-arrests",
+        "fbi-cius-offenses-cleared"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The UCR Program counts one arrest for each separate instance in which a person is arrested, cited or summoned, so arrest figures show the number of times persons are arrested rather than the number of individuals arrested.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "fbi-cius-arrests"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The FBI's UCR Program does not publish rankings of localities by crime level, stating that any comparison of crime among different locales should take into consideration numerous other factors besides the areas' crime statistics.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "fbi-cius-about"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Self-report offending surveys ask people directly how often they have engaged in particular behaviors regardless of whether they were caught, which is how researchers estimate behaviors such as adolescent substance use that rarely reach police records; Monitoring the Future, funded by the National Institute on Drug Abuse and run at the University of Michigan, surveys roughly 50,000 8th-, 10th- and 12th-grade students annually and relies on confidentiality to improve candor.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "sou-ccj230-self-report-statistics"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Court and corrections data are separate administrative systems with their own units of count and their own definitions: BJS's Federal Justice Statistics tracks federal suspects arrested, prosecuted and sentenced, while BJS's Prisoners series counts people under the jurisdiction of state or federal prison authorities at yearend - a stock figure that cannot be compared directly with an annual count of offenses.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "bjs-federal-justice-statistics-2023",
+        "bjs-prisoners-2023"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Rates make places of different size comparable, but small denominators make percent changes volatile: in a town of 12,000, moving from 2 to 5 homicides moves the rate from 16.7 to 41.7 per 100,000, a 150.0% increase produced by three additional events.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "fbi-cius-about",
+        "fbi-rcn-2024-ucr-summary"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "This lesson is educational material about U.S. crime measurement, not legal advice and not a policy position; offense definitions and reporting practice vary by state and by agency.",
+      "claimType": "LEGAL",
+      "sourceIds": [
+        "fbi-rcn-2024-faqs",
+        "bjs-ncvs-data-collection"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether the FBI's Summary Reporting System was actually retired on January 1, 2021.",
+      "positions": [
+        "Widely repeated: the SRS was retired on January 1, 2021 and no longer exists.",
+        "FBI, 2025: the UCR Program transitioned to a NIBRS-only collection in 2021, but because participation was below a statistically acceptable level, the FBI resumed accepting SRS submissions for the 2022, 2023 and 2024 data years."
+      ],
+      "resolution": "Both halves are stated in the lesson. The NIBRS-only collection did take effect January 1, 2021; the FBI then reopened SRS submissions as a bridge, and 2,074 agencies covering 28,572,514 people still reported via SRS for 2024. Sourced to the FBI's own 'Reported Crimes in the Nation, 2024' FAQs and summary report."
+    },
+    {
+      "issue": "Whether the NCVS or the FBI's collections give the 'real' amount of crime.",
+      "positions": [
+        "The NCVS is more complete because it captures crimes never reported to police.",
+        "The FBI's collections are more authoritative because they come from official records."
+      ],
+      "resolution": "Neither is treated as the true value. The lesson states what each instrument is in scope to measure and shows the 2024 figures side by side (NCVS 8.9 per 1,000 persons 12+, NCVS reported-to-police 5.3 per 1,000, NIBRS EP 3.7 per 1,000 residents), noting different populations, different offense sets and different denominators. The FBI itself calls the two collections complementary, and calls its traditional and NIBRS-only estimates analogous rather than ranked."
+    },
+    {
+      "issue": "Whether a published percent change in crime describes counts or rates.",
+      "positions": [
+        "The FBI's headline 2023-to-2024 figure is a 4.5% decrease.",
+        "The FBI's published violent crime rate fell from 379.5 to 359.1 per 100,000, a 5.4% decrease."
+      ],
+      "resolution": "Both are correct and describe different quantities. The lesson computes the reconciliation in the worked example: the count fell 4.5%, the implied population base grew 0.925%, and (1 - 0.045) / 1.00925 - 1 = -5.375%. All arithmetic was executed in Python before publication."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained no substantive claims about crime measurement at all. Its In 30 Seconds, Why This Matters, learning objectives, College Version, vocabulary, Eli-10, worked example, common mistakes, key takeaway and quick-check items were subject-agnostic boilerplate ('a foundational concept in Criminal Justice & Criminology', 'a label on a toolbox drawer') and were discarded in full.",
+    "The draft's vocabulary defined the topic circularly ('Crime Data And Crime Statistics: A foundational Criminal Justice & Criminology concept covered in this lesson') and was replaced entirely.",
+    "The draft's Eli-10 block had no analogyLimits, which the schema requires."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire generated draft with researched content; no draft wording survives.",
+    "Corrected the common belief that SRS ended in 2021: the FBI moved to a NIBRS-only collection on January 1, 2021 but resumed accepting SRS submissions for 2022, 2023 and 2024.",
+    "Corrected the equation of clearance with conviction by giving the FBI's three conditions for clearance by arrest and four conditions for clearance by exceptional means, and by noting the UCR Program does not collect conviction data.",
+    "Corrected the treatment of arrest counts as counts of people: the UCR counting unit is one arrest per separate instance in which a person is arrested, cited or summoned.",
+    "Distinguished the FBI's published 4.5% decline in the violent crime count from the 5.4% decline in the violent crime rate, and executed the reconciliation in Python rather than asserting it.",
+    "Restricted the NIBRS offense-count figures (52 Group A offenses in 24 categories, 10 Group B offenses, 58 data elements) to the FBI's July 2019 guide and dated them there, because the offense lists have been revised since.",
+    "Deferred the case attrition funnel and NCVS reporting-to-police rates to what-is-criminal-justice, and criminological theory to what-causes-crime, to avoid duplicating the merged anchors."
+  ],
+  "rightsIssues": [
+    "FBI and BJS publications are U.S. government works and were treated as REFERENCE_ONLY out of caution; all prose in this lesson is original and no source wording is reproduced. Short definitional phrases quoted from FBI documents inside evidence notes (for example the hierarchy rule and the clearance conditions) are recorded as facts, not adapted as lesson prose.",
+    "The SOU-CCJ230 open textbook chapters carry an explicit Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license. Because the NC and SA terms would attach obligations to this project's content, the chapters are recorded as REFERENCE_ONLY and used only to confirm framing; no text was extracted or adapted.",
+    "ucr.fbi.gov returns 403 to automated HTML requests behind a bot check; the archived CIUS 2016 topic-page PDFs on the same host served successfully and were read directly. The URL recorded for each is the FBI-hosted PDF actually read.",
+    "No source's AI-ingestion terms were found to grant reuse; aiIngestionAllowed is recorded false throughout."
+  ],
+  "sourceRecords": [
+    {
+      "id": "fbi-rcn-2024-ucr-summary",
+      "title": "UCR Summary of Reported Crimes in the Nation, 2024",
+      "provider": "Federal Bureau of Investigation, Criminal Justice Information Services Division, Uniform Crime Reporting Program",
+      "url": "https://cde.ucr.cjis.gov/LATEST/resources/reports/UCR%20Summary%20of%20Reported%20Crimes%20in%20the%20Nation%202024.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Downloaded the PDF from the FBI's Crime Data Explorer and extracted the full text locally on 2026-08-19; released August 2025, data as of April 2, 2025. Supports: 2024 participation Table 1 (NIBRS 14,601 agencies / 75.5% and 296,527,998 population / 87.2%; SRS 2,074 agencies / 10.7% and 28,572,514 / 8.4%; total 16,675 / 86.3% and 325,100,512 / 95.6%; enrolled 19,328 agencies and 340,110,988 population); the 562-agency year-over-year increase in NIBRS contributors; estimated 1,221,345 violent crime offenses in 2024 at 359.1 per 100,000, down from an estimated 379.5 per 100,000 in 2023; property crime rate 1,760.1 per 100,000 in 2024 down from 1,934.1; violent crime volume down an estimated 4.5% and property crime down 8.1%; 419,423 violent-crime arrests and 910,654 property-crime arrests; 2024 clearance percentages of 43.8% violent and 15.9% property by arrest or exceptional means; 20-year rate tables including murder 5.0 per 100,000 in 2024; and the 'Differences in Crime Measures' section stating that traditional and NIBRS-only estimates are analogous measures rather than one being more accurate. No FBI wording reproduced in the lesson."
+    },
+    {
+      "id": "fbi-rcn-2024-faqs",
+      "title": "\"Reported Crimes in the Nation, 2024\" Frequently Asked Questions",
+      "provider": "Federal Bureau of Investigation, Criminal Justice Information Services Division, Uniform Crime Reporting Program",
+      "url": "https://cde.ucr.cjis.gov/LATEST/resources/reports/Reported%20Crimes%20in%20the%20Nation%202024%20FAQs.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Downloaded and text-extracted locally on 2026-08-19; document dated 07/2/2025. Supports: the UCR Program as the nation's crime reporting system since 1929 with voluntary participation by more than 19,000 eligible agencies; the SRS hierarchy rule stated in the FBI's own words as counting only the one most serious offense within an incident, with the robbery-plus-homicide example; NIBRS collecting up to 10 offenses per incident and offense types SRS did not count at all; the 2015 CJIS Advisory Policy Board endorsement, February 2016 Director approval, and the January 1, 2021 transition; more than 11,500 agencies submitting NIBRS for 2021 with participation below a statistically acceptable level for nationally representative trending; the limited 2021 CIUS release and the inability to produce comparable 5-, 10- and 20-year trends; the FBI's resumption of SRS acceptance for 2022, 2023 and 2024; the 2024 participation counts; the description of traditional estimation as using reported data plus past data and mathematical calculations for agencies that did not report a full 12 months; the renaming of the compilation to 'Reported Crimes in the Nation'; the April 1, 2025 submission deadline; and the statement that the FBI began collecting NIBRS data in 1989 and that all states and Guam are NIBRS certified. No FBI wording reproduced in the lesson."
+    },
+    {
+      "id": "fbi-guide-to-understanding-nibrs",
+      "title": "A Guide to Understanding NIBRS",
+      "provider": "Federal Bureau of Investigation, Uniform Crime Reporting Program",
+      "url": "https://www.fbi.gov/file-repository/ucr/a-guide-to-understanding-nibrs.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Downloaded and text-extracted locally on 2026-08-19; document dated July 2019. Supports: NIBRS reporting up to 10 offenses per incident versus only the most serious offense under the SRS hierarchy rule; 52 Group A offenses within 24 crime categories and 10 Group B offenses as of July 2019, against the roughly 30 crimes collected in SRS; the six incident segments (administrative, offense, property, victim, offender, arrestee) and 58 data elements; the Group A Incident Report and Group B Arrest Report; the crimes-against-persons / property / society categories and the zero-report segment; and that major law enforcement organizations recommended the FBI retire SRS with NIBRS-only adoption targeted for January 1, 2021. The offense counts are dated to this 2019 guide in the lesson because NIBRS offense lists have been revised since. No FBI wording reproduced in the lesson."
+    },
+    {
+      "id": "fbi-cius-offenses-cleared",
+      "title": "Offenses Cleared, Crime in the United States, 2016",
+      "provider": "Federal Bureau of Investigation, Uniform Crime Reporting Program",
+      "url": "https://ucr.fbi.gov/crime-in-the-u.s/2016/crime-in-the-u.s.-2016/topic-pages/clearances.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "ucr.fbi.gov returns 403 to automated HTML requests, but this FBI-hosted PDF served successfully; downloaded and text-extracted locally on 2026-08-19 (released Fall 2017). Used only for the FBI's durable definitions, not for 2016 statistics. Supports: the two ways an offense can be cleared; the three conditions for clearance by arrest (at least one person arrested, charged with the offense, and turned over to the court for prosecution, whether following arrest, court summons or police notice); the four conditions for clearance by exceptional means (offender identified; enough evidence to support arrest, charge and referral for prosecution; offender's exact location identified so the suspect could be taken into custody immediately; and a circumstance outside law enforcement's control preventing arrest, charge and prosecution) with the offender-death, victim-noncooperation and extradition-denial examples; the statement that recovery of property alone does not clear an offense; that clearance calculations count offenses cleared rather than persons arrested, so one arrest may clear several crimes and many arrests may clear one offense; that a clearance recorded in one calendar year may pertain to an earlier year's offense; that administratively closing a case does not necessarily clear it for UCR purposes; and that the Summary Reporting System did not distinguish arrest from exceptional clearances when collecting or publishing. The 2024 clearance percentages used in the lesson come from the RCN 2024 summary, not this document. No FBI wording reproduced in the lesson."
+    },
+    {
+      "id": "fbi-cius-arrests",
+      "title": "Arrests (Persons Arrested), Crime in the United States, 2016",
+      "provider": "Federal Bureau of Investigation, Uniform Crime Reporting Program",
+      "url": "https://ucr.fbi.gov/crime-in-the-u.s/2016/crime-in-the-u.s.-2016/topic-pages/persons-arrested.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Downloaded and text-extracted locally on 2026-08-19 (released Fall 2017). Used for the counting-unit definition and the scope disclaimer, not for 2016 statistics. Supports: the UCR Program counts one arrest for each separate instance in which a person is arrested, cited or summoned for an offense, so arrest figures show the number of times persons are arrested rather than the number of individuals arrested; that arrest data are collected for a defined list of offenses and exclude citations for traffic violations; the definition of a juvenile as under 18 regardless of state definition; and the explicit statement that the UCR Program does not collect the number of persons convicted, prosecuted or imprisoned. No FBI wording reproduced in the lesson."
+    },
+    {
+      "id": "fbi-cius-about",
+      "title": "About Crime in the United States, 2016",
+      "provider": "Federal Bureau of Investigation, Uniform Crime Reporting Program",
+      "url": "https://ucr.fbi.gov/crime-in-the-u.s/2016/crime-in-the-u.s.-2016/resource-pages/about-cius.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Downloaded and text-extracted locally on 2026-08-19 (released Fall 2017). Supports the FBI's standing caution on rankings: the UCR Program does not provide rankings of localities by crime levels, and any comparison of crime among different locales should take into consideration numerous other factors besides the areas' crime statistics, with a separate 'Caution Against Ranking' page providing detail. Also supports the statement that CIUS carries only offenses known to police and that BJS's NCVS is the source for crimes not reported to police. The 'Caution Against Ranking' page itself could not be retrieved (403/404 across several URL forms on 2026-08-19), so only what this document states is asserted. No FBI wording reproduced in the lesson."
+    },
+    {
+      "id": "bjs-ncvs-data-collection",
+      "title": "National Crime Victimization Survey (NCVS) - data collection description and methodology",
+      "provider": "Bureau of Justice Statistics, Office of Justice Programs, U.S. Department of Justice",
+      "url": "https://bjs.ojp.gov/data-collection/ncvs",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the full page via curl with a browser user-agent on 2026-08-19 (WebFetch failed); page reports latest data available 2024, collection period 1973-2024. Supports: the NCVS as the nation's primary source of information on criminal victimization, carried out by the U.S. Census Bureau for BJS; about 240,000 persons in about 150,000 households annually; administered to persons age 12 or older; the 3.5-year rotating panel with interviews every 6 months for seven interviews; the 6-month reference period and the fact that crimes are classified by survey year rather than year of crime; the offense list (rape or sexual assault, robbery, aggravated and simple assault, personal larceny; burglary/trespassing, motor vehicle theft, other theft) collected whether or not reported to police; inclusion of group quarters and exclusion of persons on military bases, in institutional settings and persons who are homeless; series-victimization handling capped at 10; the sampling-error caution that estimates which appear different may not be statistically different; and the worked confidence-interval example around the 2024 violent victimization rate of 23.3 per 1,000 with a standard error of 1.52 giving 20.31 to 26.28. No BJS wording reproduced in the lesson."
+    },
+    {
+      "id": "bjs-criminal-victimization-2024",
+      "title": "Criminal Victimization, 2024 (NCJ 310547)",
+      "provider": "Bureau of Justice Statistics, Office of Justice Programs, U.S. Department of Justice",
+      "url": "https://bjs.ojp.gov/library/publications/criminal-victimization-2024",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the publication landing page and highlights via curl on 2026-08-19; published September 29, 2025, the 52nd report in a series that began in 1973. Supports: 23.3 violent victimizations per 1,000 persons age 12 or older in 2024; 1.45% of persons age 12 or older experiencing at least one violent victimization; and the 2024 split-sample design in which BJS and the Census Bureau ran the legacy and redesigned NCVS instruments concurrently, with this report based on the legacy instrument and redesigned-instrument estimates to be released separately - used in the lesson as an example of an instrument change that must be named before comparing years. No BJS wording reproduced in the lesson."
+    },
+    {
+      "id": "bjs-nations-two-crime-measures-2015-2024",
+      "title": "The Nation's Two Crime Measures, 2015-2024 (NCJ 310700)",
+      "provider": "Bureau of Justice Statistics, Office of Justice Programs, U.S. Department of Justice",
+      "url": "https://bjs.ojp.gov/library/publications/nations-two-crime-measures-2015-2024",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the landing page and downloaded the full report PDF (https://bjs.ojp.gov/document/ntcm1524.pdf), extracting the text locally on 2026-08-19; published March 16, 2026. Supports: the framing of the NCVS and NIBRS as two federal programs with different purposes, methods and offense sets that are complementary rather than competing; 2024 appendix-table values used in the lesson (NCVS violent crime excluding simple assault 8.9 per 1,000 persons age 12 or older with standard error 0.78 and 95% CI 7.36-10.42; the same reported to police 5.3 per 1,000; NIBRS EP Summary Estimates violent crime 3.7 per 1,000 residents); the note that NIBRS EP estimates include crimes against commercial establishments and against persons age 11 or younger, homeless and institutionalized persons, all out of scope for the NCVS; the 2015-2024 property crime series (NCVS 110.7 to 97.6 per 1,000 households; NIBRS EP 24.9 to 17.9 per 1,000, a 28% decline); the description of the NIBRS Estimation Program producing incident-level and summary-level estimates, the latter by converting reported NIBRS data to aggregate SRS and combining it with reported SRS data; and BJS's 2020 shift from generalized variance functions to Balanced Repeated Replication using Fay's method for standard errors. No BJS wording reproduced in the lesson."
+    },
+    {
+      "id": "bjs-ncvs-survey-methodology",
+      "title": "Survey Methodology for Criminal Victimization in the United States",
+      "provider": "Bureau of Justice Statistics, Office of Justice Programs, U.S. Department of Justice",
+      "url": "https://bjs.ojp.gov/sites/g/files/xyckuh236/files/media/document/ncvs_methodology.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Downloaded and text-extracted locally on 2026-08-19; this is BJS's standing NCVS methodology appendix from the Criminal Victimization in the United States series and carries no publication date on its face (its illustrative response-rate table runs through 2007), so it is used only for methodological definitions that the current NCVS documentation still describes, not for any statistic. Supports: the scope statement that individuals age 12 or older in sampled units are eligible while institutionalized persons, armed forces personnel in barracks, merchant-vessel crew and U.S. citizens abroad are excluded; the rotating-panel design with seven interviews at 6-month intervals; the use of the initial interview to bound and its exclusion from annual estimates; the named nonsampling error sources - recall failure, with assault recalled least accurately of any crime the NCVS measures and a resulting likely understatement of the assault rate, and telescoping, defined as incidents that occurred before the reference period being placed within it, minimized by bounding; and the statement that standard errors do not reveal systematic biases. Cross-checked against the current BJS NCVS data-collection page, which describes the same design. No BJS wording reproduced in the lesson."
+    },
+    {
+      "id": "bjs-nibrs-program",
+      "title": "National Incident-Based Reporting System (NIBRS) program page",
+      "provider": "Bureau of Justice Statistics, Office of Justice Programs, U.S. Department of Justice",
+      "url": "https://bjs.ojp.gov/national-incident-based-reporting-system-nibrs",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the full page via curl with a browser user-agent on 2026-08-19. Supports: NIBRS becoming the national standard for law enforcement crime data reporting in January 2021; the kinds of detail NIBRS captures and the offense types (simple assault, animal cruelty, destruction of property, intimidation, identity theft) it surfaces that SRS did not; the 2021 data year as the first time the FBI and BJS estimated reported crime in the United States from NIBRS data; the coverage snapshot as of May 2024 (all 50 states and D.C. certified; 82% of the U.S. population covered by NIBRS-reporting agencies; 125 of 154 agencies serving jurisdictions of 250,000 or more reporting); and the NCS-X initiative funded by BJS in late 2012 to expand NIBRS participation and build the statistical methodology behind national estimates. No BJS wording reproduced in the lesson."
+    },
+    {
+      "id": "bjs-federal-justice-statistics-2023",
+      "title": "Federal Justice Statistics, 2023",
+      "provider": "Bureau of Justice Statistics (BJS), U.S. Department of Justice",
+      "url": "https://bjs.ojp.gov/library/publications/federal-justice-statistics-2023",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Existing registry record, reused with its registered id and URL. Cited here only as a named example of court-side administrative data with its own units of count - federal suspects arrested and booked by the U.S. Marshals Service, and matters concluded by U.S. attorneys - which cannot be compared directly with an annual count of offenses known to police."
+    },
+    {
+      "id": "bjs-prisoners-2023",
+      "title": "Prisoners in 2023 - Statistical Tables",
+      "provider": "Bureau of Justice Statistics (BJS), U.S. Department of Justice",
+      "url": "https://bjs.ojp.gov/library/publications/prisoners-2023-statistical-tables",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Existing registry record, reused with its registered id and URL. Cited here only as a named example of corrections administrative data whose unit of count is a yearend stock - people under the jurisdiction of state or federal prison authorities - rather than a flow of offenses or arrests, illustrating why corrections counts and crime counts are not interchangeable."
+    },
+    {
+      "id": "sou-ccj230-dark-figure-of-crime",
+      "title": "2.1. Dark or Hidden Figure of Crime, in Introduction to the American Criminal Justice System (SOU-CCJ230)",
+      "provider": "Shanell Sanchez, in Burke, Carter, Fedorek, Morey, Rutz-Burri & Sanchez (Open Oregon Educational Resources / Pressbooks)",
+      "url": "https://openoregon.pressbooks.pub/ccj230/chapter/2-1-dark-figure-of-crime-or-unreported-crime/",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the chapter body via curl on 2026-08-19; chapter copyright 2019. Supports the standard criminological framing of the dark figure of crime as the offenses that never come to the attention of the criminal justice system, and the reasons given - victims not reporting, victims not recognizing themselves as victims, and offenders not being caught - together with the three-source structure (official statistics, self-report statistics, victimization statistics) used to organize the lesson. Held REFERENCE_ONLY despite the CC license because the NonCommercial and ShareAlike terms would attach obligations to this project's content; no text extracted or adapted."
+    },
+    {
+      "id": "sou-ccj230-self-report-statistics",
+      "title": "2.4. Self-Report Statistics, in Introduction to the American Criminal Justice System (SOU-CCJ230)",
+      "provider": "Shanell Sanchez, in Burke, Carter, Fedorek, Morey, Rutz-Burri & Sanchez (Open Oregon Educational Resources / Pressbooks)",
+      "url": "https://openoregon.pressbooks.pub/ccj230/chapter/victimization-data/",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the chapter body via curl on 2026-08-19 (the chapter is numbered 2.4 in the book but served at the /victimization-data/ slug); chapter copyright 2019. Supports the definition of self-report statistics as data gathered by asking people how many times they committed a particular offense in a set period regardless of whether they were caught, the observation that far more people report offending than were ever formally sanctioned, and the description of Monitoring the Future as an annual survey of roughly 50,000 8th-, 10th- and 12th-grade students funded by the National Institute on Drug Abuse and conducted at the University of Michigan's Institute for Social Research, with confidentiality used to improve candor. Held REFERENCE_ONLY for the same NC/SA reason; no text extracted or adapted."
+    }
+  ]
+}

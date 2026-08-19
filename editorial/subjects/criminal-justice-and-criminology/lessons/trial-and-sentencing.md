@@ -1,0 +1,228 @@
+# Trial and Sentencing
+
+## In 30 Seconds
+
+A criminal trial is a sequence of decisions with rules attached to each one: who sits on the jury, what evidence the jury hears, what it may infer from silence, and how many jurors must agree. Sentencing is a second proceeding with its own law, purposes, and arithmetic. This lesson walks both halves, using federal rules and statutes as the worked example and flagging where states differ. It is educational material, not legal advice.
+
+## Why This Matters
+
+Trials are rare and disproportionately important. Most convictions come from guilty pleas, but the rules of trial set the terms on which every other case is negotiated, and sentencing law determines what a conviction actually costs. Courses in criminal justice, criminal procedure, and corrections all assume you can name the stages, say what each one decides, and explain why a judge's factfinding power has constitutional limits. Reporting on criminal cases assumes the same. Learning the structure once gives you a frame you can apply to any jurisdiction, and a way to tell the difference between a rule of law and a local practice.
+
+## Learning Objectives
+
+- Sequence a criminal trial from the summoning of the venire through verdict, and state what each stage decides.
+- Distinguish challenges for cause from peremptory challenges, and apply the three-step Batson framework to a contested strike.
+- Explain the constitutional constraints on what a jury hears and infers, including the Confrontation Clause under Crawford, the no-comment rule of Griffin, and the unanimity requirement Ramos v. Louisiana applied to the states in 2020.
+- Distinguish indeterminate from determinate sentencing and explain what United States v. Booker did to the federal sentencing guidelines.
+- Apply the statutory purposes in 18 U.S.C. 3553(a)(2) and the defaults for concurrent and consecutive terms to a sentencing problem.
+- Analyze how mandatory minimums and the Apprendi/Blakely line divide factfinding between judge and jury, and outline the structure of capital sentencing after Furman and Gregg.
+
+## The College Version
+
+### Choosing the jury
+
+A criminal trial begins with a crowd: a venire, or pool of citizens, summoned under the Jury Selection and Service Act. Its declared federal policy is that juries be selected at random from a fair cross section of the community, and that no citizen be excluded from federal jury service on account of race, color, religion, sex, national origin, or economic status (28 U.S.C. 1861-1862). Narrowing that pool is voir dire, the questioning of prospective jurors, which Rule 24(a) lets the judge conduct, counsel conduct, or both. Two instruments do the cutting. A challenge for cause asks the court to excuse a juror for a stated reason, such as a relationship to a party or an inability to apply the law as instructed, and there is no numerical cap because a judge must be persuaded each time. A peremptory challenge removes a juror with no reason given, and precisely because it needs none it is rationed: Rule 24(b) allows 20 per side when the government seeks the death penalty, 6 for the government and 10 jointly for the defense in other felony cases, and 3 per side in misdemeanor cases. A peremptory may still not rest on a forbidden reason. In Batson v. Kentucky, 476 U.S. 79 (1986), where a prosecutor struck all four Black members of the venire, the Court reaffirmed that the Equal Protection Clause forbids striking jurors by race and discarded the near-impossible showing Swain v. Alabama had demanded, of discrimination across many cases. In its place stands a framework of three steps: the objecting party makes a prima facie showing of purposeful discrimination, which may rest on the facts of the defendant's own trial; the burden shifts to the striking party for a neutral explanation, which may not be an assumption that jurors of the defendant's race would favor him or a bare claim of good faith; and the trial court decides whether discrimination has been proved.
+
+### The order of proof
+
+Opening statements come first; they preview what each side expects the evidence to show and are not evidence. The prosecution then presents its case in chief and carries the burden of proving guilt beyond a reasonable doubt on every element, while the defense is obliged to present nothing. Every government witness is subject to cross-examination, which is a constitutional command. Crawford v. Washington, 541 U.S. 36 (2004), holds that where testimonial statements are at issue the only indicium of reliability sufficient to satisfy the Confrontation Clause is confrontation itself, and it places police interrogation squarely in that class; a recorded accusation from an absent witness cannot be admitted because a judge finds it trustworthy. When the government rests, the defense may move for a judgment of acquittal under Rule 29, often called a directed verdict motion. It tests sufficiency, not credibility: the court must acquit on any offense the evidence cannot sustain, and may grant the motion even after a guilty verdict if it is renewed within 14 days. The defendant may testify and may equally decline, and under Griffin v. California, 380 U.S. 609 (1965), the prosecutor may not comment on that silence and the court may not instruct that silence evidences guilt.
+
+### Closing, instructions, and the verdict
+
+Closing arguments follow a fixed federal sequence: the government argues, the defense argues, the government rebuts (Rule 29.1). The judge then instructs the jury on the law. Rule 30 makes timing consequential: the court must tell the parties before closing how it will rule on requested instructions, and an objection not stated specifically before the jury retires is forfeited except for plain error. Deliberation is private, and Rule 31 governs what emerges: the verdict is returned in open court and must be unanimous. A jury may return a partial verdict; on counts it cannot resolve the court may declare a mistrial and the government may retry them, because a hung jury is not an acquittal. Either party may ask that jurors be polled individually. Unanimity is now a national rule. In Ramos v. Louisiana, No. 18-5924, decided April 20, 2020, the Court held that the Sixth Amendment jury-trial right, incorporated against the states through the Fourteenth Amendment, requires a unanimous verdict to convict of a serious offense. Until then Louisiana and Oregon allowed convictions on 10-to-2 verdicts, while 48 states and the federal courts did not.
+
+### When there is no jury
+
+Not every case reaches a jury, and no defendant can simply opt out of one. Rule 23(a) requires that a defendant entitled to a jury be tried by jury unless he waives it in writing, the government consents, and the court approves. In a bench trial the judge finds the defendant guilty or not guilty and, if asked before the finding, must state specific findings of fact. Federal juries are twelve under Rule 23(b), though the parties may stipulate to fewer. The right itself has edges. Duncan v. Louisiana, 391 U.S. 145 (1968), applied it to state prosecutions and held a crime punishable by two years to be serious, while declining to fix the petty-serious boundary. Lewis v. United States, 518 U.S. 322 (1996), treats an offense carrying six months or less as presumptively petty and refuses to create a jury right by adding petty charges together. Williams v. Florida, 399 U.S. 78 (1970), held the Constitution does not fix jury size at twelve, which is why some states use six.
+
+### What a sentence is supposed to accomplish
+
+Criminal justice courses usually teach five purposes of punishment: retribution, deterrence in its general and specific forms, incapacitation, rehabilitation, and restoration. Federal law is a good place to see how those ideas were written down. Under 18 U.S.C. 3553(a) a court must impose a sentence sufficient, but not greater than necessary, to comply with the purposes in paragraph (2), and that paragraph names four: to reflect the seriousness of the offense, promote respect for the law and provide just punishment; to afford adequate deterrence; to protect the public from further crimes of the defendant; and to provide needed educational or vocational training, medical care, or other correctional treatment. Restoration is not among them. It enters at 3553(a)(7), the need to provide restitution to victims. The same subsection also points the court to the offense and the offender, the guideline range, and the avoidance of unwarranted disparities. Section 3551 supplies the menu: probation, a fine, or imprisonment, with a fine addable to another sentence.
+
+### From indeterminate to determinate
+
+The machinery has changed more than the purposes have. The Bureau of Justice Statistics, reporting in January 1999, described the earlier arrangement plainly: in the early 1970s states followed an indeterminate model in which the judge set a wide range and a parole board decided when the prisoner actually left. Pressure for longer terms and more uniform punishment produced mandatory minimums and sentencing guidelines during the 1980s, while good-time and earned-time credits kept time served well below the announced sentence. That report found prisoners released in 1996 had served on average 44 percent of their sentences. Truth-in-sentencing laws, encouraged by federal prison-construction grants awarded to 27 states and the District of Columbia by 1998, pushed states toward requiring a fixed substantial share of the term to be served. Determinate sentencing is the general name for that direction of travel. States did not move in unison and many still use parole boards.
+
+### Guidelines, and what Booker did to them
+
+The Sentencing Reform Act of 1984 created the United States Sentencing Commission and told it to write guidelines. The result is a grid: 43 levels of offense seriousness, with a base offense level per offense type that specific offense characteristics and adjustments raise or lower, and six criminal history categories; their intersection on the sentencing table yields a range in months. Until 2005 that range bound the judge. In United States v. Booker, 543 U.S. 220, decided January 12, 2005, the Court produced two majorities in one case. Justice Stevens, joined by Justices Scalia, Souter, Thomas and Ginsburg, held that because 18 U.S.C. 3553(b) made the ranges mandatory, the Sixth Amendment rule of Blakely applied to them. Justice Breyer, joined by Chief Justice Rehnquist and Justices O'Connor, Kennedy and Ginsburg, answered the remedial question by severing 3553(b)(1), the mandatory-guidelines provision, and 3742(e), the appellate review standard. Justice Ginsburg was the only Justice in both, which is how one case produced two majorities. Courts must still calculate and consider the range under 3553(a)(4) but may sentence outside it, reviewed for unreasonableness. In fiscal year 2025 the Commission recorded 33,979 of 66,036 cases, 51.5 percent, within the range, and 20,577, 31.2 percent, as variances.
+
+### Mandatory minimums and the jury-fact line
+
+A guideline range is advice; a statutory mandatory minimum is a floor written by a legislature. Section 924(c) of Title 18 is the standard illustration: someone who uses or carries a firearm during and in relation to a crime of violence or drug trafficking crime, or possesses one in furtherance of it, must receive at least five years, seven if it was brandished and ten if it was discharged, on top of the punishment for the underlying crime. Two general routes go below such a floor federally, both in section 3553: subsection (e), a government motion recognizing substantial assistance, and subsection (f), the safety valve for certain drug defendants with limited criminal history who used no violence and told the government what they knew. Alongside runs a constitutional line about who finds facts. Apprendi v. New Jersey, 530 U.S. 466 (2000), requires any fact other than a prior conviction that increases the penalty beyond the prescribed statutory maximum to be found by a jury beyond a reasonable doubt. Blakely v. Washington, 542 U.S. 296 (2004), supplied the definition that made the rule bite: the relevant maximum is the most a judge may impose on the facts in the verdict or admitted by the defendant, not the headline maximum in the code. Ring v. Arizona, 536 U.S. 584 (2002), applied that logic to capital aggravating factors, which function as elements and so must be found by a jury.
+
+### Building the actual sentence
+
+Between verdict and sentence sits an investigation. Under Rule 32 a probation officer prepares a presentence report that identifies the applicable guidelines, calculates the offense level and criminal history category, states the resulting range, and gathers the defendant's history, finances and any victim impact. It reaches both sides at least 35 days before sentencing, objections are due within 14 days, and the judge must resolve disputes that matter. At the hearing the court must let defense counsel speak, must address the defendant personally so he may speak in mitigation, which is allocution, and must permit any victim present to be reasonably heard. Where there are several counts or an undischarged term, 18 U.S.C. 3584 sets the defaults: terms imposed at the same time run concurrently unless the court orders, or a statute mandates, that they run consecutively, and terms imposed at different times run consecutively unless the court orders otherwise. A fine may be imposed within the ceilings of 18 U.S.C. 3571; restitution is mandatory for offenses covered by 18 U.S.C. 3663A; and under 18 U.S.C. 3583 the court may, and sometimes must, add supervised release of up to five, three, or one year depending on the offense class.
+
+### Capital sentencing, in outline
+
+Death sentences follow their own track. In Furman v. Georgia, 408 U.S. 238 (1972), a brief per curiam judgment held that the death penalty as imposed in the cases before it violated the Eighth and Fourteenth Amendments; five Justices wrote separately in support and four dissented separately, so no single rationale controlled. The Bureau of Justice Statistics records that Furman effected a moratorium and that executions resumed in 1977. Gregg v. Georgia, 428 U.S. 153 (1976), upheld Georgia's rewritten statute, and the features described there still shape capital procedure: guilt decided in the first stage of a bifurcated trial, a separate penalty hearing on aggravating and mitigating evidence, at least one enumerated statutory aggravating circumstance found beyond a reasonable doubt, and automatic state supreme court review including proportionality. Federal law takes the same shape at 18 U.S.C. 3593, which requires a separate hearing, ordinarily before the jury that decided guilt. Categorical limits followed: Atkins v. Virginia, 536 U.S. 304 (2002), barred executing defendants with intellectual disability, which the opinion called mental retardation, and Roper v. Simmons, 543 U.S. 551 (2005), barred executing offenders under 18 at the time of the crime. The map of jurisdictions is uneven and it moves. In a report published in December 2024, the Bureau of Justice Statistics found that on December 31, 2022, thirty states and the federal government had death penalty statutes while twenty-one jurisdictions, twenty states and the District of Columbia, did not; twenty-six states and the Federal Bureau of Prisons held 2,270 prisoners under sentence of death, and six states carried out 18 executions that year. A statute on the books is not an operating system: the same report notes that in Delaware, New York and Washington, state high courts had held parts of the capital statutes unconstitutional and capital cases were no longer pursued, though the statutes were never repealed. Counts like these change as legislatures and courts act, so any figure needs its date. The same report records who those prisoners were: of the 2,270 under sentence of death at yearend 2022, 1,286 (56.7 percent) were recorded as White and 927 (40.8 percent) as Black, with ethnicity counted separately and 326 recorded as Hispanic. That is a description of what BJS measured, not an explanation of why the composition looks as it does, and the causes are contested.
+
+### Jurisdiction, variation, and what this lesson is
+
+Everything above describes law in the United States, and the rules named by number are federal. The fifty states run their own criminal courts under their own constitutions, statutes and rules, and they differ on points this lesson has had to state concretely: how many jurors sit, how many peremptory challenges each side gets, whether sentencing is guideline-driven or discretionary, whether a parole board decides release, and whether capital punishment exists at all. This lesson is educational material about how the system is structured. It is not legal advice, and it takes no position on whether any sentencing policy, or capital punishment itself, is wise.
+
+## Key Vocabulary
+
+- **Venire** — The pool of prospective jurors summoned to the courthouse, from which the trial jury is chosen.
+- **Voir dire** — The questioning of prospective jurors by the judge, the attorneys, or both, used to expose bias and support challenges.
+- **Challenge for cause** — A request that the court excuse a prospective juror for a stated, articulable reason, granted or denied by the judge and not limited in number.
+- **Peremptory challenge** — A strike of a prospective juror that requires no explanation but is limited in number by rule and may not be exercised for a constitutionally forbidden reason such as race.
+- **Judgment of acquittal** — A ruling, often requested at the close of the prosecution's case, that the evidence is legally insufficient to sustain a conviction, ending the charge without sending it to the jury.
+- **Allocution** — The defendant's personal opportunity to address the court before sentence is imposed, distinct from anything counsel says.
+- **Presentence investigation report** — A document prepared by a probation officer before sentencing that computes the applicable guideline range and assembles the offender's history, finances, and victim impact for the judge.
+- **Determinate sentencing** — A structure in which the term announced by the court largely fixes the time to be served, rather than leaving release to a later parole decision.
+- **Mandatory minimum** — A floor set by statute below which a court may not sentence for a given offense, except through narrow statutory exceptions.
+- **Bifurcated trial** — A proceeding split into a guilt phase and a separate penalty phase, used in capital cases so that aggravating and mitigating evidence is heard only after conviction.
+
+## Eli-10
+
+A trial is a contest with a referee, and almost every rule is about fairness in choosing the players and the evidence. First both sides help pick the jury: they can ask the judge to remove someone for a reason, and each side also gets a small number of removals with no reason at all, though even those cannot be used because of a juror's race. Then the government tells its story with witnesses, and the defense gets to question every one of them. The person on trial never has to say a word, and nobody is allowed to suggest that staying quiet makes them look guilty. When the evidence is done, the judge explains the law and the jurors go talk it over. All of them have to agree to convict. If they cannot agree at all, the case can be tried again. Sentencing is a second, separate job with its own hearing, its own report, and its own rules about how long a sentence may be.
+
+## Eli's Analogy
+
+Sentencing guidelines work like a detailed grading rubric a teacher must read before assigning a grade. Since 2005 in federal court the teacher may grade off the rubric, but has to show the rubric was consulted and can be asked to justify the departure. A mandatory minimum is different: it is a school rule that says no one in this class may receive below a certain grade, no matter what the rubric or the teacher thinks.
+
+**Where the analogy breaks down.** The comparison breaks down in three ways. A grade is one person's judgment, while a sentence is reviewable by an appellate court that can send it back. A teacher may consider anything observed, while a judge may not use a fact to raise the ceiling on a sentence unless a jury found it or the defendant admitted it. And the stakes are not comparable at all: a sentence takes years of a person's liberty, which is why the process around it is so heavily regulated.
+
+## Worked Example
+
+Take a federal defendant convicted of an offense whose guideline calculation ends at offense level 20 with Criminal History Category I. On the Sentencing Commission's table that intersection is 33 to 41 months. Suppose the same defendant is also convicted under 18 U.S.C. 924(c) of brandishing a firearm during the offense. That statute requires at least seven years, 84 months, in addition to the punishment for the underlying crime. The floor for the whole judgment is therefore 33 plus 84, or 117 months, not 84 and not 41. Now notice which numbers are which. The 33-to-41 range is advisory after Booker: the judge must calculate and consider it but may vary from it and be reviewed for reasonableness. The 84 months is statutory and the judge cannot go below it except through the substantial-assistance motion in 18 U.S.C. 3553(e). Reading a sentence correctly means knowing which parts of it a judge could have changed.
+
+## Common Mistakes
+
+- **Saying that United States v. Booker struck down the federal sentencing guidelines.**  
+  Booker severed two statutory provisions, 18 U.S.C. 3553(b)(1) and 3742(e). The guidelines survived as advisory, and federal courts must still calculate the range and consider it under 3553(a)(4); in fiscal year 2025 more than half of federal sentences were within the range.
+- **Reading the Apprendi rule as being about the maximum penalty printed in the criminal code.**  
+  Blakely defines the relevant maximum as the most a judge may impose on the facts in the verdict or admitted by the defendant. A sentence can violate the Sixth Amendment while sitting far below the code's headline maximum.
+- **Treating a hung jury as a verdict of not guilty.**  
+  Under Rule 31 a jury that cannot agree produces no verdict on those counts; the court may declare a mistrial and the government may retry them. Only an acquittal, whether by the jury or by the court under Rule 29, ends the charge.
+- **Assuming a defendant may simply choose a bench trial to avoid a jury.**  
+  Rule 23(a) requires a written waiver by the defendant, the government's consent, and the court's approval. The decision is shared, not the defendant's alone.
+- **Equating a state having a death penalty statute with that state actually carrying out executions.**  
+  BJS reported that at the end of 2022, thirty states and the federal government had capital statutes, yet six states carried out the year's 18 executions, and in Delaware, New York and Washington statutes remained on the books after state high courts held parts of them unconstitutional and capital cases were no longer pursued.
+
+## Compare / Contrast
+
+| | | |
+|---|---|---|
+| **Challenge for cause** | **Peremptory challenge** | A challenge for cause requires a stated reason that persuades the judge and is unlimited in number; a peremptory requires no reason but is capped by rule and, after Batson, cannot rest on race. |
+| **Indeterminate sentencing** | **Determinate sentencing** | Under an indeterminate structure the court sets a range and a parole board decides actual release; under a determinate structure the announced term, adjusted only by limited credits, largely fixes time served. |
+| **Advisory guideline range** | **Statutory mandatory minimum** | A guideline range must be calculated and considered but may be departed from or varied from subject to appellate review; a statutory minimum binds the court absent a narrow statutory exception such as 18 U.S.C. 3553(e) or (f). |
+| **Concurrent terms** | **Consecutive terms** | Concurrent terms run at the same time so the total equals the longest; consecutive terms are served one after another and add together. Under 18 U.S.C. 3584 terms imposed at the same hearing default to concurrent absent a court order or a statute requiring otherwise, while a term imposed at a different time defaults to consecutive. |
+| **Guilt phase** | **Penalty phase in a capital case** | The guilt phase decides whether the elements were proved; the separate penalty phase, described in Gregg and required federally by 18 U.S.C. 3593, weighs statutory aggravating and mitigating circumstances, and under Ring the aggravating factor that makes a defendant death-eligible must be found by a jury. |
+
+## Key Takeaway
+
+A criminal trial allocates decisions: the venire and voir dire decide who judges the facts, the rules of evidence and confrontation decide what they hear, and unanimity decides when they have finished. Sentencing then runs on a different set of rules, where the central question after Booker and Apprendi is which numbers bind the judge and which facts a jury had to find.
+
+## Practice Question Bank
+
+**Q1. Under Federal Rule of Criminal Procedure 24(b), how many peremptory challenges does the government have in a non-capital felony case?**
+
+- A. 3
+- B. 6
+- C. 10
+- D. 20
+
+*Answer: B.* Rule 24(b)(2) gives the government 6 peremptory challenges and the defendants jointly 10 in a felony case. Three per side is the misdemeanor allocation under 24(b)(3), and 20 per side applies only when the government seeks the death penalty under 24(b)(1).
+
+*Difficulty:* recall · *Skill:* Recalling the federal allocation of peremptory challenges · *Sources:* uscourts-federal-rules-of-criminal-procedure
+
+**Q2. In the framework established by Batson v. Kentucky, what happens immediately after the party opposing a peremptory strike makes a prima facie showing of purposeful discrimination?**
+
+- A. The strike is automatically disallowed and the juror is seated.
+- B. The burden shifts to the striking party to offer a neutral explanation for the challenge.
+- C. The court must discharge the entire venire and summon a new panel.
+- D. The objecting party must additionally prove that the prosecutor's office has discriminated in earlier cases.
+
+*Answer: B.* Batson holds that once the prima facie showing is made, the burden shifts to the State to come forward with a neutral explanation; only then does the trial court decide whether purposeful discrimination has been proved. The strike is not automatically disallowed, no rule requires discharging the venire, and the demand for proof of discrimination across earlier cases is precisely the Swain v. Alabama standard that Batson rejected.
+
+*Difficulty:* understanding · *Skill:* Sequencing the burden-shifting steps of a Batson challenge · *Sources:* scotus-batson-v-kentucky-1986
+
+**Q3. What did the remedial majority in United States v. Booker (2005) do to the federal sentencing guidelines?**
+
+- A. It invalidated the guidelines entirely, so federal courts no longer calculate a range.
+- B. It severed 18 U.S.C. 3553(b)(1) and 3742(e), leaving the guidelines advisory but still to be calculated and considered.
+- C. It held that the Sentencing Commission could not constitutionally issue guidelines at all.
+- D. It required a jury to find every fact used in the guideline calculation.
+
+*Answer: B.* Justice Breyer's remedial opinion severed and excised 3553(b)(1), which made the guidelines binding, and 3742(e), the appellate review provision, leaving a system in which courts consult the range under 3553(a)(4) and appellate courts review for unreasonableness. The guidelines were not invalidated, the Court reaffirmed that the Commission's role raises no separation-of-powers problem, and the jury-fact requirement was the substantive holding that the remedy was designed to avoid triggering.
+
+*Difficulty:* understanding · *Skill:* Distinguishing Booker's substantive holding from its remedial holding · *Sources:* scotus-united-states-v-booker-2005, ussc-overview-federal-sentencing-guidelines
+
+**Q4. A defendant pleads guilty to facts that authorize at most 53 months under a state's sentencing scheme. At sentencing the judge finds by a preponderance of the evidence that the crime involved deliberate cruelty, a statutory ground for going higher, and imposes 90 months. Under the Apprendi and Blakely line, how should this be analyzed?**
+
+- A. It is permissible, because 90 months is still below the maximum listed in the criminal code for the offense.
+- B. It is permissible, because sentencing facts need only be proved by a preponderance of the evidence.
+- C. It violates the Sixth Amendment, because the relevant maximum is what the admitted facts alone authorize and the additional fact was not admitted or found by a jury.
+- D. It violates the Confrontation Clause, because the defendant could not cross-examine the source of the cruelty finding.
+
+*Answer: C.* Blakely defines the statutory maximum for Apprendi purposes as the most a judge may impose on the facts reflected in the verdict or admitted by the defendant, so the 53-month figure controls and the cruelty finding had to be admitted or found by a jury beyond a reasonable doubt. The headline code maximum is not the test, preponderance is not sufficient for a fact that raises that ceiling, and the Confrontation Clause governs testimonial hearsay at trial rather than the allocation of factfinding at sentencing.
+
+*Difficulty:* application · *Skill:* Applying the Apprendi/Blakely definition of the statutory maximum to a sentencing enhancement · *Sources:* scotus-blakely-v-washington-2004, scotus-apprendi-v-new-jersey-2000
+
+**Q5. A federal judge sentences a defendant on two counts at the same hearing, imposing 36 months on each. Neither statute requires a consecutive term, and the written judgment says nothing about how the terms relate to each other. Under 18 U.S.C. 3584, what is the result?**
+
+- A. The terms run concurrently, for a total of 36 months.
+- B. The terms run consecutively, for a total of 72 months.
+- C. The judgment is void because the statute requires the court to state the relationship expressly.
+- D. The Bureau of Prisons chooses which way to run the terms.
+
+*Answer: A.* Section 3584(a) provides that multiple terms of imprisonment imposed at the same time run concurrently unless the court orders, or a statute mandates, that they run consecutively, so silence here produces 36 months. The consecutive default applies to terms imposed at different times, such as one added to an undischarged term. The statute supplies a default rather than voiding a silent judgment, and it does not hand the choice to the Bureau of Prisons, though the terms are treated as a single aggregate for administrative purposes.
+
+*Difficulty:* application · *Skill:* Applying the statutory defaults for concurrent and consecutive terms · *Sources:* usc-18-3584-multiple-sentences-of-imprisonment
+
+## Sources
+
+- **28 U.S.C. 1861 - Declaration of policy** — Office of the Law Revision Counsel, U.S. House of Representatives. <https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section1861&num=0&edition=prelim> (`usc-28-1861-jury-selection-policy`, usage: PUBLIC_DOMAIN)
+- **28 U.S.C. 1862 - Discrimination prohibited** — Office of the Law Revision Counsel, U.S. House of Representatives. <https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section1862&num=0&edition=prelim> (`usc-28-1862-jury-service-nondiscrimination`, usage: PUBLIC_DOMAIN)
+- **Federal Rules of Criminal Procedure (effective March 21, 1946, as amended to December 1, 2025)** — Administrative Office of the U.S. Courts (uscourts.gov). <https://www.uscourts.gov/sites/default/files/document/federal-rules-of-criminal-procedure.pdf> (`uscourts-federal-rules-of-criminal-procedure`, usage: PUBLIC_DOMAIN)
+- **Batson v. Kentucky, 476 U.S. 79 (1986)** — U.S. Government Publishing Office, United States Reports volume 476 (govinfo). <https://www.govinfo.gov/content/pkg/USREPORTS-476/pdf/USREPORTS-476-79.pdf> (`scotus-batson-v-kentucky-1986`, usage: PUBLIC_DOMAIN)
+- **Crawford v. Washington, 541 U.S. 36 (2004)** — Library of Congress, United States Reports volume 541 (official bound-volume scan). <https://tile.loc.gov/storage-services/service/ll/usrep/usrep541/usrep541036/usrep541036.pdf> (`scotus-crawford-v-washington-2004`, usage: PUBLIC_DOMAIN)
+- **Griffin v. California, 380 U.S. 609 (1965)** — U.S. Government Publishing Office, United States Reports volume 380 (govinfo). <https://www.govinfo.gov/content/pkg/USREPORTS-380/pdf/USREPORTS-380-609.pdf> (`scotus-griffin-v-california-1965`, usage: PUBLIC_DOMAIN)
+- **Ramos v. Louisiana, No. 18-5924 (U.S. Apr. 20, 2020) (slip opinion)** — Supreme Court of the United States (supremecourt.gov). <https://www.supremecourt.gov/opinions/19pdf/18-5924_n6io.pdf> (`scotus-ramos-v-louisiana-2020`, usage: PUBLIC_DOMAIN)
+- **Duncan v. Louisiana, 391 U.S. 145 (1968)** — U.S. Government Publishing Office, United States Reports volume 391 (govinfo). <https://www.govinfo.gov/content/pkg/USREPORTS-391/pdf/USREPORTS-391-145.pdf> (`scotus-duncan-v-louisiana-1968`, usage: PUBLIC_DOMAIN)
+- **Lewis v. United States, 518 U.S. 322 (1996) (No. 95-6465), majority opinion** — Cornell Legal Information Institute (mirror of the U.S. Supreme Court opinion). <https://www.law.cornell.edu/supct/html/95-6465.ZO.html> (`lewis-v-united-states-518-us-322-1996`, usage: REFERENCE_ONLY)
+- **Williams v. Florida, 399 U.S. 78 (1970)** — U.S. Government Publishing Office, United States Reports volume 399 (govinfo). <https://www.govinfo.gov/content/pkg/USREPORTS-399/pdf/USREPORTS-399-78.pdf> (`scotus-williams-v-florida-1970`, usage: PUBLIC_DOMAIN)
+- **18 U.S.C. 3551 - Authorized sentences (United States Code, 2023 Edition)** — Office of the Law Revision Counsel / U.S. Government Publishing Office (govinfo). <https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partII-chap227-subchapA-sec3551.htm> (`usc-18-3551-authorized-sentences`, usage: PUBLIC_DOMAIN)
+- **18 U.S.C. Sec. 3553 - Imposition of a sentence** — Office of the Law Revision Counsel, via Cornell Legal Information Institute. <https://www.law.cornell.edu/uscode/text/18/3553> (`usc-18-3553-imposition-of-sentence`, usage: PUBLIC_DOMAIN)
+- **Truth in Sentencing in State Prisons (NCJ 170032)** — Bureau of Justice Statistics, U.S. Department of Justice. <https://bjs.ojp.gov/library/publications/truth-sentencing-state-prisons> (`bjs-truth-in-sentencing-in-state-prisons-1999`, usage: REFERENCE_ONLY)
+- **United States Sentencing Commission, Guidelines Manual (November 1, 2025), Chapter One** — United States Sentencing Commission. <https://www.ussc.gov/sites/default/files/pdf/guidelines-manual/2025/CHAPTER_1.pdf> (`ussc-guidelines-manual-2025-chapter-1`, usage: REFERENCE_ONLY)
+- **An Overview of the Federal Sentencing Guidelines** — United States Sentencing Commission. <https://www.ussc.gov/sites/default/files/pdf/about/overview/Overview_Federal_Sentencing_Guidelines.pdf> (`ussc-overview-federal-sentencing-guidelines`, usage: REFERENCE_ONLY)
+- **United States v. Booker, 543 U.S. 220 (2005)** — U.S. Government Publishing Office, United States Reports volume 543 (govinfo). <https://www.govinfo.gov/content/pkg/USREPORTS-543/pdf/USREPORTS-543-220.pdf> (`scotus-united-states-v-booker-2005`, usage: PUBLIC_DOMAIN)
+- **Sourcebook of Federal Sentencing Statistics, Fiscal Year 2025, Table 29: Sentence Imposed Relative to the Guideline Range** — United States Sentencing Commission. <https://www.ussc.gov/sites/default/files/pdf/research-and-publications/annual-reports-and-sourcebooks/2025/Table29.pdf> (`ussc-sourcebook-2025-table29`, usage: REFERENCE_ONLY)
+- **18 U.S.C. 924 - Penalties (firearms)** — Office of the Law Revision Counsel, U.S. House of Representatives. <https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title18-section924&num=0&edition=prelim> (`usc-18-924-penalties-firearms`, usage: PUBLIC_DOMAIN)
+- **Apprendi v. New Jersey, 530 U.S. 466 (2000)** — U.S. Government Publishing Office, United States Reports volume 530 (govinfo). <https://www.govinfo.gov/content/pkg/USREPORTS-530/pdf/USREPORTS-530-466.pdf> (`scotus-apprendi-v-new-jersey-2000`, usage: PUBLIC_DOMAIN)
+- **Blakely v. Washington, 542 U.S. 296 (2004)** — U.S. Government Publishing Office, United States Reports volume 542 (govinfo). <https://www.govinfo.gov/content/pkg/USREPORTS-542/pdf/USREPORTS-542-296.pdf> (`scotus-blakely-v-washington-2004`, usage: PUBLIC_DOMAIN)
+- **Ring v. Arizona, 536 U.S. 584 (2002)** — U.S. Government Publishing Office, United States Reports volume 536 (govinfo). <https://www.govinfo.gov/content/pkg/USREPORTS-536/pdf/USREPORTS-536-584.pdf> (`scotus-ring-v-arizona-2002`, usage: PUBLIC_DOMAIN)
+- **18 U.S.C. 3584 - Multiple sentences of imprisonment** — Office of the Law Revision Counsel, U.S. House of Representatives. <https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title18-section3584&num=0&edition=prelim> (`usc-18-3584-multiple-sentences-of-imprisonment`, usage: PUBLIC_DOMAIN)
+- **18 U.S.C. 3571 - Sentence of fine** — Office of the Law Revision Counsel, U.S. House of Representatives. <https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title18-section3571&num=0&edition=prelim> (`usc-18-3571-sentence-of-fine`, usage: PUBLIC_DOMAIN)
+- **18 U.S.C. 3663A - Mandatory restitution to victims of certain crimes** — Office of the Law Revision Counsel, U.S. House of Representatives. <https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title18-section3663A&num=0&edition=prelim> (`usc-18-3663a-mandatory-restitution`, usage: PUBLIC_DOMAIN)
+- **18 U.S.C. 3583 - Inclusion of a term of supervised release after imprisonment** — Office of the Law Revision Counsel, U.S. House of Representatives. <https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title18-section3583&num=0&edition=prelim> (`usc-18-3583-supervised-release`, usage: PUBLIC_DOMAIN)
+- **Furman v. Georgia, 408 U.S. 238 (1972)** — U.S. Government Publishing Office, United States Reports volume 408 (govinfo). <https://www.govinfo.gov/content/pkg/USREPORTS-408/pdf/USREPORTS-408-238.pdf> (`scotus-furman-v-georgia-1972`, usage: PUBLIC_DOMAIN)
+- **Gregg v. Georgia, 428 U.S. 153 (1976)** — U.S. Government Publishing Office, United States Reports volume 428 (govinfo). <https://www.govinfo.gov/content/pkg/USREPORTS-428/pdf/USREPORTS-428-153.pdf> (`scotus-gregg-v-georgia-1976`, usage: PUBLIC_DOMAIN)
+- **18 U.S.C. 3593 - Special hearing to determine whether a sentence of death is justified** — Office of the Law Revision Counsel, U.S. House of Representatives. <https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title18-section3593&num=0&edition=prelim> (`usc-18-3593-special-hearing-death-sentence`, usage: PUBLIC_DOMAIN)
+- **Atkins v. Virginia, 536 U.S. 304 (2002)** — U.S. Government Publishing Office, United States Reports volume 536 (govinfo). <https://www.govinfo.gov/content/pkg/USREPORTS-536/pdf/USREPORTS-536-304.pdf> (`scotus-atkins-v-virginia-2002`, usage: PUBLIC_DOMAIN)
+- **Roper v. Simmons, 543 U.S. 551 (2005)** — U.S. Government Publishing Office, United States Reports volume 543 (govinfo). <https://www.govinfo.gov/content/pkg/USREPORTS-543/pdf/USREPORTS-543-551.pdf> (`scotus-roper-v-simmons-2005`, usage: PUBLIC_DOMAIN)
+- **Capital Punishment, 2022 - Statistical Tables (NCJ 309498)** — Bureau of Justice Statistics, U.S. Department of Justice. <https://bjs.ojp.gov/library/publications/capital-punishment-2022-statistical-tables> (`bjs-capital-punishment-2022-statistical-tables`, usage: REFERENCE_ONLY)
+
+## Related Topics
+
+- `criminal-justice-and-criminology:courts:court-structure`
+- `criminal-justice-and-criminology:courts:arrest-through-trial`
+- `criminal-justice-and-criminology:courts:plea-bargaining`
+- `criminal-justice-and-criminology:criminal-law-foundations:constitutional-protections`
+- `criminal-justice-and-criminology:corrections:probation-and-parole`
+
+## Editorial Metadata
+
+- **Topic id:** `criminal-justice-and-criminology:courts:trial-and-sentencing`
+- **Editorial status:** READY_TO_PUBLISH
+- **Estimated minutes:** 16
+- **Researched at:** 2026-08-19
+- **Research status:** source-verified
+- **Rights status:** Public-domain U.S. statutes, federal rules and judicial opinions, plus reference-only Bureau of Justice Statistics and U.S. Sentencing Commission publications; no source prose adapted.
+- **Transformation:** Every case name, citation, docket number, decision date, holding and opinion lineup was verified against the official United States Reports bound-volume PDF on govinfo, or, for Ramos v. Louisiana, the Court's own slip opinion; statutory text was read on uscode.house.gov or govinfo; the Federal Rules of Criminal Procedure PDF, the U.S. Sentencing Commission's Chapter One, overview and fiscal year 2025 Table 29, and the Bureau of Justice Statistics reports on capital punishment and truth in sentencing were downloaded and text-extracted locally. The machine-generated draft contained no substantive content and was discarded in full.
+- **Jurisdiction:** United States. Federal rules and statutes are used as the worked example; state law varies. This is educational material, not legal advice.

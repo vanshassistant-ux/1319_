@@ -1,0 +1,227 @@
+# Labeling Theory
+
+## In 30 Seconds
+
+Labeling theory changed the question. Instead of asking why a person broke a rule, it asks what happens after other people react - how being caught, named and treated as a criminal reshapes opportunity, relationships and self-image, and how that can produce more offending. Edwin Lemert's split between primary and secondary deviance is the core distinction. The perspective was heavily criticized for weak empirical support in the 1970s; better-designed longitudinal and experimental work since has revived parts of it.
+
+## Why This Matters
+
+Nearly every decision point in criminal justice carries an implicit answer to labeling theory's question. Whether an officer arrests or warns, whether intake diverts or petitions, whether a record stays visible for decades - each assumes something about what official reaction does to a person. If sanction mostly deters, more contact should mean less later crime; if it mostly stigmatizes, more contact should mean more. Criminology, sociology, social work and public policy courses will ask you to say which prediction a program assumes and what evidence would separate them. Labeling theory is also the field's clearest case of an idea declared dead and then partly rehabilitated by better research designs.
+
+## Learning Objectives
+
+- Explain how labeling theory reframes the explanatory question, from the causes of an initial rule violation to the consequences of social reaction.
+- Distinguish primary deviance from secondary deviance and explain why Lemert treated only the second as his subject.
+- Describe Becker's argument that deviance is a consequence of rules applied by others, and identify moral entrepreneurs and master status in an example.
+- Evaluate the 1970s criticisms of labeling theory against the post-2000 longitudinal and experimental evidence, stating what that evidence does and does not establish.
+- Apply Braithwaite's distinction between reintegrative and disintegrative shaming to a described sanction.
+- Analyze why an association between formal system contact and later offending is hard to read as a causal effect.
+
+## The College Version
+
+### A different question
+
+Most theories in this unit answer one question: why does a person break a rule? Strain, social learning, social disorganization and routine activity each propose a mechanism that operates before the offense. Labeling theory - also called the social reaction perspective - starts after it. Its subject is what happens once a rule violation is noticed: who gets named a delinquent or a criminal, by whom, and what the naming does to the person named. The intellectual roots are in symbolic interactionism, the school of sociology that treats meaning as produced in interaction rather than fixed in the act itself. That move has a consequence worth stating plainly, because it is also the theory's largest vulnerability: labeling theory does not try to explain the first offense. It hands that question back to the other theories and keeps a narrower one for itself - that the response to an offense is a cause of what happens next, and that criminology had been treating official reaction as a neutral measuring instrument when it is in fact part of the process being measured.
+
+### Tannenbaum and Lemert: tagging, and the distinction that organizes the theory
+
+Frank Tannenbaum's Crime and the Community (1938) is the earliest work usually placed in this lineage. Tannenbaum described a process that begins in disagreement: a young person treats an activity as play while adults in the community define it as bad. If the conflict persists, the community's judgment shifts from the act to the actor. Neighbors stop letting their children play with the youth; the youth notices the exclusion and eventually accepts the community's description of him. Tannenbaum called the process of defining, identifying, segregating and making the youth self-conscious about being bad tagging, and the surrounding community drama the dramatization of evil. His argument was that the dramatization itself produces further delinquency.
+
+Edwin Lemert's Social Pathology (1951) supplied the distinction that still organizes the theory. Primary deviance is rule-breaking a person absorbs into an otherwise ordinary life - rationalized, explained away, handled as a function of a socially acceptable role. Because primary deviance is common, transient and usually minor, Lemert did not try to explain it; its causes, he allowed, are whatever the other theories say they are. Secondary deviance is different in kind, not degree: it is behavior a person takes up as a means of defense against, attack on, or adjustment to the problems created by other people's reaction to the original deviance. Moving from the first to the second is a sequence rather than an event - an act, a reaction, further acts, a stronger reaction, and eventually the adoption of a deviant role. Reach for this distinction whenever someone claims labeling theory says labels cause crime. It says something narrower.
+
+### Becker: rules, rule-makers, and the criminal label as master status
+
+Howard Becker's Outsiders (1963) made the perspective famous and gave it its most quoted formulation: deviance is not a quality of the act a person commits but a consequence of other people applying rules and sanctions, so that the deviant is whoever the label has successfully been applied to. Two things follow.
+
+First, if labels are applied by people, then who applies them and why becomes a research question rather than background. Becker described two kinds of moral entrepreneur. Rule-creators campaign to have a rule made because they see some evil in the world that needs prohibiting; they care about the content of the rule. Rule-enforcers care about enforcing whatever rule exists and about justifying their own work; because content is not their concern, they develop working priorities about which rules matter and which of the many rule-breakers to pursue. This is where the labeling tradition's interest in differential enforcement originates, and it connects the theory to what this subject teaches about police and prosecutorial discretion.
+
+Second, Becker argued that in American society the label criminal is so stigmatizing that it becomes a master status - it overrides the person's other statuses, such as parent, worker, student or neighbor, in how others treat them. He sketched a deviant career in three phases: an initial act of rule-breaking, which may or may not be intentional; apprehension and labeling, which changes public identity, interaction and self-identity; and movement into a deviant group, which supplies both the company and the rationalizations, motives and attitudes that support continued deviance. That third phase matters for the modern evidence, because it names a mechanism specific enough to test.
+
+### Goffman and stigma
+
+Erving Goffman's Stigma: Notes on the Management of Spoiled Identity appeared the same year as Outsiders. Goffman defined stigma as an attribute that deeply discredits its bearer, reducing that person in others' eyes from a whole and usual person to a tainted, discounted one. His contribution to this lineage was to treat stigma as relational rather than as a property of the stigmatized individual, and to describe what people do about it - concealing, disclosing, managing the impression they leave on others. Later sociologists refined the concept, defining stigma as the co-occurrence of labeling, stereotyping, separation, status loss and discrimination, and adding that stigmatization requires the exercise of power. For criminal justice, Goffman's frame explains why a criminal record behaves less like a fact stored in a file and more like a status that travels with a person into hiring, housing and personal relationships.
+
+### The 1970s critique and the decline
+
+Labeling's dominance did not last. Through the second half of the 1970s the perspective came under sustained attack, and interest fell away; Charles Wellford's 1975 assessment in Social Problems is among the most-cited statements of the critique. Three objections did most of the damage. First, not everyone who is labeled goes on to offend more - deterrence research showed punishment sometimes reduces reoffending, and labeling theory had little to say about that. Second, the theory treated people as uniform receivers of labels, ignoring how differently individuals respond to the same reaction. Third, and practically: if every official response generates more crime, what is a society supposed to do? The radical non-intervention prescription some labeling writers favored struck critics as unusable.
+
+A fourth objection is the structural one already noted: the theory says nothing about the origin of primary deviance, which for critics meant it was not a theory of crime so much as a theory of one of crime's consequences. The political climate turned as well. As rehabilitation gave way to punishment through the 1980s and correctional populations climbed, a perspective that appeared to locate the problem in society's reaction rather than in the offender found few takers. None of this demonstrated that the theory was wrong. It was genuine empirical weakness, genuine conceptual gaps, and a hostile climate together - and the honest summary is that labeling theory was set aside without ever being settled.
+
+### The modern revival and what the better designs show
+
+Interest returned after 2000, attached to stronger designs. Four studies carry most of the weight in an introductory treatment.
+
+Bernburg and Krohn (2003), in Criminology, used the Rochester Youth Development Study to follow 605 males over nine years. Official intervention by police or the juvenile justice system reduced the chance of graduating from high school; not graduating reduced the chance of employment; and both raised the risk of offending in early adulthood. Effects were stronger for lower-class and African American males, consistent with the labeling prediction that people with fewer resources have a harder time overcoming a label. A direct effect of intervention remained after education and employment were controlled, which the authors read as evidence that other mechanisms are at work.
+
+Bernburg, Krohn and Rivera (2006), using three waves of the same panel, tested Becker's third phase directly. Juvenile justice intervention predicted later involvement in deviant social groups - street gangs and delinquent peers - and more serious subsequent delinquency through that involvement. Again a direct effect remained.
+
+Gatti, Tremblay and Vitaro (2009), working with a Montreal community sample of 779 boys from low-socioeconomic-status backgrounds, showed something the first two studies could not. Among boys reporting the same level of antisocial behavior, those who were poor, impulsive, poorly supervised and exposed to deviant friends were more likely to be processed by the juvenile court in the first place - and that processing was associated with greatly increased penal system involvement in adulthood, with placement dispositions carrying the most negative association.
+
+Petrosino, Turpin-Petrosino and Guckenburg (2010) produced the Campbell systematic review of controlled trials: 29 eligible trials covering 7,304 juveniles, reported from 1973 to 2008. Their conclusion was that formal juvenile system processing does not appear to have a crime control effect. Almost all results ran in the negative direction across prevalence, incidence, severity and self-report outcomes, and studies comparing system processing to a diversion program reported much larger negative effect sizes than studies comparing it to doing nothing.
+
+State the limits as carefully as the findings. The Campbell review matters because randomization addresses the standing objection to the observational work, which Gatti and colleagues document from the inside: youths are not assigned to formal processing at random, and what makes formal handling more likely also predicts later offending. Even together, these studies establish that formal system contact is associated with - and in the experimental subset followed by - worse subsequent outcomes. They do not individually isolate the label as the operating mechanism, and the mediators actually tested - schooling, employment, deviant peers - never account for the whole effect.
+
+### Braithwaite: which kind of reaction, not whether to react
+
+John Braithwaite's Crime, Shame and Reintegration (1989) reframed the argument in a way that survives the 1970s critique. Braithwaite treats shaming - expressions of disapproval intended or effective in producing remorse in the person shamed, or condemnation by others - as coming in two forms. Reintegrative shaming communicates disapproval within a continuum of respect for the person: the offender is treated as a good person who did a bad deed, and the shaming is terminated, with words, gestures or ceremonies that decertify the deviance and return the person to the community of law-abiding people. Stigmatizing or disintegrative shaming is disrespectful: the offender is treated as a bad person, and the status is left in place permanently.
+
+Braithwaite's prediction is that crime rates are lower where shaming is reintegrative and higher where it is stigmatizing, because stigmatization blocks legitimate opportunity and pushes people toward criminal subcultures. He tied the capacity for reintegrative shaming to communitarianism - dense interdependence marked by mutual help and trust - and characterized the United States as relying heavily on the stigmatizing form. The theoretical payoff is that the labeling prediction and the deterrence prediction can both be partly right, because the effect of a sanction now depends on its form rather than on whether one is imposed. Hold that next to what the National Institute of Justice reports about deterrence: that the certainty of being caught deters far more than the severity of punishment, and that imprisonment is not an effective way to deter crime and may work in the opposite direction. Both literatures point away from severity; they disagree about why.
+
+### Policy descendants, and the limit of this lesson
+
+Labeling theory has an unusually direct policy trail, worth naming factually. The Office of Juvenile Justice and Delinquency Prevention's own literature review states that diversion arose from two theoretical rationales, the first being labeling theory, citing Becker, and the second differential association. The National Institute of Justice's CrimeSolutions practice profile for juvenile diversion makes the same attribution and cites the Campbell review as supporting evidence. On the adult side, the U.S. Commission on Civil Rights documents judicial record sealing and expungement, and fair-chance hiring rules restricting when an employer may ask about criminal history - commonly called ban-the-box - as responses to the collateral consequences of conviction.
+
+Naming a policy's intellectual ancestor is not evaluating the policy, and this lesson does not evaluate any of them. That work belongs to program evaluation, and the record there is mixed. OJJDP's review reports one meta-analysis of 28 studies finding diversion's effect on recidivism nonsignificant and no better than traditional processing, and another of 45 studies finding significantly lower recidivism among diverted youths; CrimeSolutions rates juvenile diversion Promising rather than Effective. Whether a particular program works is an empirical question about that program, and a theory cannot answer it.
+
+This lesson is educational material about criminological theory and the research that tests it. It is not legal advice, it describes U.S. institutions where it names them, and it takes no position on any policy.
+
+## Key Vocabulary
+
+- **Labeling theory** - The criminological perspective that studies how society's reaction to rule-breaking - naming, sanctioning and treating someone as an offender - affects that person's later behavior and identity, rather than studying why the rule was broken.
+- **Social reaction perspective** - Another name for the same body of work, emphasizing that its subject is the response to deviance rather than deviance itself.
+- **Primary deviance** - Initial rule-breaking that a person rationalizes or otherwise absorbs into an ordinary, socially acceptable role, with no lasting effect on how that person is seen or sees themselves.
+- **Secondary deviance** - Rule-breaking a person takes up as a means of defense, attack or adjustment to the problems created by other people's reaction to earlier rule-breaking.
+- **Dramatization of evil** - Tannenbaum's name for the community process by which a judgment about a young person's act hardens into a judgment about the young person, through defining, identifying, segregating and making them self-conscious about being bad.
+- **Moral entrepreneur** - In Becker's account, someone who works to create a rule because they see an evil requiring prohibition, or who works to enforce an existing rule and to justify that enforcement work.
+- **Master status** - A social position that overrides every other position a person holds in how others treat them; Becker argued the criminal designation functions this way in the United States.
+- **Stigma** - An attribute that deeply discredits its bearer, reducing that person in others' eyes from a whole and usual person to a tainted, discounted one.
+- **Reintegrative shaming** - Disapproval of an act expressed within continuing respect for the person and then deliberately ended, with words, gestures or ceremonies returning that person to the community of law-abiding people.
+- **Disintegrative shaming** - Disrespectful disapproval that treats the person rather than the act as bad and leaves the resulting status in place permanently; Braithwaite also calls this stigmatization.
+
+## Eli-10
+
+Two questions sound alike but are not. The first is: why did this kid break a window? The second is: what happens to this kid after everyone starts calling him the window-breaker? Labeling theory only works on the second question. It says the reaction can do damage of its own - a kid who gets watched more closely, kept away from other kids and talked about as trouble may start behaving like trouble, partly because that is the role people have left open for him. The theory does not claim labels cause every crime, and it never claimed to explain the first broken window. It also does not treat all reactions as the same. Being told that what you did was wrong and that you are still one of us is a different message from being told that you are a bad person.
+
+## Eli's Analogy
+
+Think of a cast on a broken arm. The break is one problem; the cast is the response to it. A cast fitted well and taken off on schedule helps the arm heal. A cast left on for years does damage of its own - the muscle underneath wastes away, and the arm comes out weaker than the original break alone would have left it. Labeling theory is the claim that a society's response can be the cast left on too long.
+
+**Where the analogy breaks down.** The analogy hides three things. A cast is applied by one professional for a stated medical reason, while criminal labels are applied by police, prosecutors, judges, employers, neighbors and the person themselves, for reasons that include politics and convenience - Becker's point about who makes and enforces rules has no equivalent in orthopedics. A cast holds no opinion about the patient, whereas a stigmatized status changes how the person sees themselves. And nobody argues that casts prevent broken arms, while the live dispute in criminology is exactly that punishment may deter as well as stigmatize.
+
+## Worked Example
+
+Two fifteen-year-olds are caught shoplifting the same item from the same store on the same afternoon. One is warned by the officer and released to a parent. The other is referred to intake, petitioned, adjudicated delinquent and placed on formal probation. Three years later the second has two further arrests and no diploma; the first has neither.
+
+Work through it in order. Both original thefts are primary deviance, and labeling theory offers no account of why either happened - strain, peers or opportunity would. What needs explaining is the divergence afterward. Bernburg and Krohn's Rochester findings suggest one chain: official intervention lowers the odds of graduating, which lowers the odds of employment, which raises adult offending. Bernburg, Krohn and Rivera add a second path, through gang and delinquent-peer involvement.
+
+Now state the objection, because a good answer states it without being asked. You cannot conclude from this pair, or from any observational sample, that the processing caused the divergence. The officer's decision was not random. Gatti and colleagues found that at the same level of self-reported antisocial behavior, poverty, impulsivity, weak supervision and deviant friends all made court intervention more likely - and every one of those also predicts later offending on its own. That is precisely why the Campbell review's 29 controlled trials carry more weight than any number of cases like this one.
+
+## Common Mistakes
+
+- **Mistake:** Saying that labeling theory explains why people commit crime.
+  **Correction:** It explicitly does not. Lemert set primary deviance aside as something the other theories should explain, and Becker did the same for the initial act of rule-breaking. The theory's subject is what follows the reaction. This gap was one of the main criticisms leveled at it in the 1970s, so treating it as an explanation of crime in general both overstates the theory and misses the critique.
+- **Mistake:** Treating labeling theory as either disproven or established.
+  **Correction:** Neither is accurate. It was heavily criticized in the 1970s for weak empirical support and for its silence about the origins of deviance, and interest collapsed. Since then, longitudinal panels and a systematic review of controlled trials have found formal system contact associated with worse later outcomes. Report both halves: the criticisms were real, and so is the newer evidence, which supports the association more strongly than it isolates the label as the mechanism.
+- **Mistake:** Reading the association between juvenile justice contact and later offending as a demonstrated causal effect of labeling.
+  **Correction:** Assignment to formal processing is not random, and the very characteristics that make formal handling more likely - poverty, impulsivity, weak supervision, deviant friends - independently predict later offending. Observational findings are consistent with the theory without confirming it; the experimental evidence in the Campbell review is what gives the claim its strongest support, and even that identifies processing rather than the label specifically.
+- **Mistake:** Assuming any negative reaction to an offense counts as stigmatizing.
+  **Correction:** Braithwaite's whole point is that the form matters. Disapproval expressed within respect for the person and then deliberately ended is reintegrative shaming; disapproval that redefines the person as bad and leaves the status permanent is disintegrative. His theory predicts opposite effects on crime rates for the two.
+- **Mistake:** Concluding that because diversion or expungement descends from labeling theory, those policies work.
+  **Correction:** The theoretical pedigree of a policy says nothing about its measured effect. OJJDP's own review reports one meta-analysis finding no recidivism advantage for diversion over traditional processing and another finding a significant advantage, and NIJ's CrimeSolutions rates juvenile diversion Promising rather than Effective. Evaluating those policies is a separate empirical task and is not part of this lesson.
+
+## Compare / Contrast
+
+- **Primary deviance vs. Secondary deviance** - This is the theory's core distinction. Primary deviance is initial rule-breaking absorbed into an ordinary role and left unexplained by the theory; secondary deviance is behavior adopted in response to the problems created by other people's reaction to that earlier rule-breaking. The difference is not seriousness but origin: only the second is caused, in Lemert's account, by the reaction.
+- **The labeling prediction about official sanction vs. The deterrence prediction about official sanction** - Labeling predicts that formal intervention stigmatizes, narrows legitimate opportunity and raises subsequent offending. Deterrence predicts that sanction risk lowers it - though NIJ's synthesis finds the work is done by the certainty of being caught rather than the severity of the penalty, and that imprisonment is not an effective deterrent. 1970s critics used the deterrence evidence against labeling theory precisely because the theory had no room for it.
+- **Reintegrative shaming vs. Disintegrative (stigmatizing) shaming** - Both express disapproval. Reintegrative shaming keeps the person inside a continuum of respect and is deliberately terminated by gestures or ceremonies of return; stigmatizing shaming treats the person as bad and leaves the status permanently in place. Braithwaite's claim is that the first lowers crime rates and the second raises them, which lets labeling and deterrence each be partly right.
+- **Rule-creators vs. Rule-enforcers** - Becker's two types of moral entrepreneur. Rule-creators campaign for a rule because they care about its content and the evil it targets. Rule-enforcers care about enforcement and about justifying their work, so they develop independent priorities about which rules and which rule-breakers to pursue - which is where differential enforcement enters the theory.
+- **Observational studies of system contact vs. Randomized and controlled trials of system processing** - Panel studies such as the Rochester and Montreal work can trace mechanisms over long periods but cannot rule out that the youths selected for formal handling differed beforehand in ways that predict later offending. Randomization removes that objection, which is why the Campbell review's 29 controlled trials carry the most weight for the causal claim - at the cost of testing processing as a package rather than the label alone.
+
+## Key Takeaway
+
+Labeling theory's claim is narrower and more testable than its reputation suggests: not that labels cause crime in general, but that the way a society reacts to rule-breaking becomes part of what happens next. Lemert's primary-versus-secondary split marks that boundary, and the modern evidence supports the association between formal system contact and worse later outcomes more strongly than it isolates the label itself as the mechanism.
+
+## Practice Question Bank
+
+**1. In Edwin Lemert's Social Pathology (1951), what separates primary deviance from secondary deviance?**
+
+   A. Primary deviance is a felony, and secondary deviance is any misdemeanor committed afterward.
+   B. Primary deviance is initial rule-breaking a person absorbs into an ordinary role; secondary deviance is behavior adopted in response to other people's reaction to that rule-breaking.
+   C. Primary deviance is committed by juveniles, and secondary deviance is committed by adults.
+   D. Primary deviance is rule-breaking the police detect, and secondary deviance is rule-breaking that goes undetected.
+
+   *Answer:* B. Lemert defined primary deviance as rule-breaking rationalized or otherwise handled as a function of a socially acceptable role, and secondary deviance as behavior taken up as defense, attack or adjustment to the problems created by societal reaction. The distinction turns on origin, not on offense grade, the offender's age, or whether anyone was caught - Lemert deliberately left the causes of primary deviance to other theories.
+   *Difficulty:* recall · *Skill:* Recalling the definitions that anchor the labeling perspective · *Sources:* triplett-upton-2015-labeling-theory, lemert-1951-social-pathology
+
+**2. Becker argued in Outsiders (1963) that deviance is not a quality of the act itself. What did he say it is instead?**
+
+   A. A measurable trait of the offender that can be detected before any offense occurs.
+   B. A statistical property of the neighborhood in which the act took place.
+   C. A consequence of other people applying rules and sanctions, so that the deviant is whoever the label has successfully been applied to.
+   D. The predictable outcome of a cost-benefit calculation made by the person committing the act.
+
+   *Answer:* C. Becker located deviance in the social response rather than in the behavior. Option A is closer to biological positivism, option B to social disorganization, and option D to classical deterrence reasoning - all of them explanations of the act, which is exactly the kind of account Becker was arguing against.
+   *Difficulty:* understanding · *Skill:* Identifying the core claim of the social reaction perspective and separating it from rival explanations · *Sources:* becker-1963-outsiders, salt-kougiali-2024-reframed-labels-prison-work, triplett-upton-2015-labeling-theory
+
+**3. A classmate writes that labeling theory was disproven in the 1970s and that criminologists have abandoned it. What is the most accurate correction?**
+
+   A. It drew heavy criticism in the 1970s for weak empirical support and for saying nothing about the origins of primary deviance, and interest declined; since then, longitudinal panels and a systematic review of controlled trials of juvenile system processing have revived parts of it.
+   B. The 1970s criticisms were later shown to be fabricated, and labeling theory is now the field's consensus explanation of crime.
+   C. Labeling theory was never criticized; it simply fell out of fashion when its founders retired.
+   D. Labeling theory was disproven, and it is now taught only for historical interest.
+
+   *Answer:* A. The honest account has two halves. Wellford's 1975 assessment and related critiques faulted the theory's evidence, its silence on the origins of deviance, and its assumption that everyone responds to a label the same way, and a punitive political climate finished the decline. Work since 2000 - Bernburg and Krohn, Bernburg, Krohn and Rivera, Gatti and colleagues, and the Petrosino Campbell review - has restored serious attention without making it a consensus explanation of crime.
+   *Difficulty:* analysis · *Skill:* Stating the empirical status of a contested theory without overclaiming in either direction · *Sources:* triplett-upton-2015-labeling-theory, wellford-1975-labelling-theory-and-criminology, petrosino-2010-formal-system-processing-of-juveniles
+
+**4. A juvenile court requires a youth to meet the shop owner he stole from, hear how the theft affected the business, apologize and repay the loss, and then attend a closing meeting at which the judge states that the matter is finished and the youth is welcome back at his school. In Braithwaite's terms, this is best described as:**
+
+   A. Disintegrative shaming, because the youth is shamed in front of the person he harmed.
+   B. Deterrence through severity, because the youth is required to repay the loss.
+   C. Primary deviance, because the theft was the youth's first offense.
+   D. Reintegrative shaming, because disapproval of the act is expressed within respect for the youth and is deliberately terminated by a ceremony returning him to the community.
+
+   *Answer:* D. Braithwaite's test is not whether disapproval is expressed but whether the person is kept inside a continuum of respect and whether the shaming ends. Here it does, through an explicit closing ceremony - the decertifying gesture his theory calls for. Option A misreads shaming in the victim's presence as automatically stigmatizing; option B describes restitution rather than penalty severity; option C misapplies Lemert's term to the disposition rather than to the original act.
+   *Difficulty:* application · *Skill:* Applying the reintegrative-versus-disintegrative distinction to a described sanction · *Sources:* braithwaite-2000-reintegrative-shaming-chapter, braithwaite-1989-crime-shame-and-reintegration, sou-ccj230-other-criminological-theories
+
+**5. A study finds that youths formally processed by a juvenile court have higher adult arrest rates than youths who were warned and released. Why does this result alone fail to establish that formal processing caused the later arrests?**
+
+   A. Arrest counts can never be used as an outcome measure in criminological research.
+   B. Labeling theory predicts the opposite result, so the finding must reflect a coding error.
+   C. Youths are not assigned to formal processing at random, and the characteristics that make formal handling more likely - such as poverty, impulsivity, weak supervision and deviant friends - independently predict later offending.
+   D. Adult arrests occur too long after a juvenile disposition for any statistical method to connect them.
+
+   *Answer:* C. This is the selection problem, and Gatti, Tremblay and Vitaro documented it directly: at the same level of self-reported antisocial behavior, poorer, more impulsive, less supervised boys with deviant friends were more likely to be taken to court. Option A is false, option B inverts the theory's prediction, and option D is wrong because long follow-up periods are standard in this literature. The selection problem is exactly why the Campbell review's controlled trials carry more weight.
+   *Difficulty:* analysis · *Skill:* Distinguishing association from causation in observational criminal justice research · *Sources:* gatti-tremblay-vitaro-2009-iatrogenic-effect-of-juvenile-justice, petrosino-2010-formal-system-processing-of-juveniles
+
+## Sources
+
+- **Labeling Theory (chapter 14, published under the running title 'Labeling Theory: Past, Present, and Future'), in The Handbook of Criminological Theory** - Ruth Triplett and Lindsey Upton, in Alex R. Piquero (ed.) / John Wiley & Sons. <https://doi.org/10.1002/9781118512449.ch14> (usage: REFERENCE_ONLY; checked 2026-08-19)
+- **Crime and the Community (1938) - Library catalog record** - Frank Tannenbaum; Columbia University Press / Ginn and Company (record via Open Library, Internet Archive). <https://openlibrary.org/works/OL1502956W> (usage: REFERENCE_ONLY; checked 2026-08-19)
+- **Social Pathology: A Systematic Approach to the Theory of Sociopathic Behavior (1951) - Library catalog record** - Edwin M. Lemert; McGraw-Hill (record via Open Library, Internet Archive). <https://openlibrary.org/works/OL1346582W> (usage: REFERENCE_ONLY; checked 2026-08-19)
+- **Outsiders: Studies in the Sociology of Deviance (1963) - Library catalog record** - Howard S. Becker; The Free Press of Glencoe (record via Open Library, Internet Archive). <https://openlibrary.org/works/OL2674332W> (usage: REFERENCE_ONLY; checked 2026-08-19)
+- **"One of Us": Reframed Labels, Compassion and Hope in Voluntary Prison Work With Ex-Servicemen** - Kirsty Salt and Zetta G. Kougiali / International Journal of Offender Therapy and Comparative Criminology (SAGE). <https://doi.org/10.1177/0306624x221124838> (usage: ATTRIBUTION_REQUIRED; checked 2026-08-19)
+- **Stigma: Notes on the Management of Spoiled Identity (1963) - Library catalog record** - Erving Goffman; Prentice-Hall / Simon & Schuster (record via Open Library, Internet Archive). <https://openlibrary.org/works/OL3282007W> (usage: REFERENCE_ONLY; checked 2026-08-19)
+- **Ending Discrimination Against People with Mental and Substance Use Disorders: The Evidence for Stigma Change (2016), Chapter 1: Introduction** - Committee on the Science of Changing Behavioral Health Social Norms, National Academies of Sciences, Engineering, and Medicine; The National Academies Press. <https://doi.org/10.17226/23442> (usage: REFERENCE_ONLY; checked 2026-08-19)
+- **Conceptualizing Stigma** - Bruce G. Link and Jo C. Phelan / Annual Review of Sociology (Annual Reviews). <https://doi.org/10.1146/annurev.soc.27.1.363> (usage: REFERENCE_ONLY; checked 2026-08-19)
+- **Labelling Theory and Criminology: An Assessment** - Charles Wellford / Social Problems (University of California Press for the Society for the Study of Social Problems). <https://doi.org/10.1525/sp.1975.22.3.03a00020> (usage: REFERENCE_ONLY; checked 2026-08-19)
+- **Labeling, Life Chances, and Adult Crime: The Direct and Indirect Effects of Official Intervention in Adolescence on Crime in Early Adulthood** - Jon Gunnar Bernburg and Marvin D. Krohn / Criminology (Wiley, for the American Society of Criminology). <https://doi.org/10.1111/j.1745-9125.2003.tb01020.x> (usage: REFERENCE_ONLY; checked 2026-08-19)
+- **Official Labeling, Criminal Embeddedness, and Subsequent Delinquency: A Longitudinal Test of Labeling Theory** - Jon Gunnar Bernburg, Marvin D. Krohn and Craig J. Rivera / Journal of Research in Crime and Delinquency (SAGE). <https://doi.org/10.1177/0022427805280068> (usage: REFERENCE_ONLY; checked 2026-08-19)
+- **Iatrogenic effect of juvenile justice** - Uberto Gatti, Richard E. Tremblay and Frank Vitaro / Journal of Child Psychology and Psychiatry (Wiley, for the Association for Child and Adolescent Mental Health). <https://doi.org/10.1111/j.1469-7610.2008.02057.x> (usage: REFERENCE_ONLY; checked 2026-08-19)
+- **Formal System Processing of Juveniles: Effects on Delinquency (Campbell Systematic Review)** - Anthony Petrosino, Carolyn Turpin-Petrosino and Sarah Guckenburg / The Campbell Collaboration (Campbell Systematic Reviews). <https://doi.org/10.4073/csr.2010.1> (usage: REFERENCE_ONLY; checked 2026-08-19)
+- **Crime, Shame and Reintegration (1989)** - John Braithwaite / Cambridge University Press. <https://doi.org/10.1017/CBO9780511804618> (usage: REFERENCE_ONLY; checked 2026-08-19)
+- **Reintegrative Shaming (author-posted chapter, 'Shame and Crime')** - John Braithwaite, Australian National University (author's own website). <https://johnbraithwaite.com/wp-content/uploads/2016/05/2000_Reintegrative-Shaming.pdf> (usage: REFERENCE_ONLY; checked 2026-08-19)
+- **Model Programs Guide Literature Review: Diversion from Formal Juvenile Court Processing (February 2017)** - Development Services Group, Inc., for the Office of Juvenile Justice and Delinquency Prevention, U.S. Department of Justice. <https://ojjdp.ojp.gov/model-programs-guide/literature-reviews/diversion_from_formal_juvenile_court_processing.pdf> (usage: REFERENCE_ONLY; checked 2026-08-19)
+- **Practice Profile: Juvenile Diversion Programs** - CrimeSolutions, National Institute of Justice, Office of Justice Programs, U.S. Department of Justice. <https://crimesolutions.ojp.gov/ratedpractices/juvenile-diversion-programs> (usage: REFERENCE_ONLY; checked 2026-08-19)
+- **Collateral Consequences: The Crossroads of Punishment, Redemption, and the Effects on Communities (Briefing Report, June 2019)** - U.S. Commission on Civil Rights. <https://www.usccr.gov/files/pubs/2019/06-13-Collateral-Consequences.pdf> (usage: PUBLIC_DOMAIN; checked 2026-08-19)
+- **Five Things About Deterrence (with the addendum Understanding the Relationship Between Sentencing and Deterrence)** - National Institute of Justice, Office of Justice Programs, U.S. Department of Justice. <https://nij.ojp.gov/topics/articles/five-things-about-deterrence> (usage: REFERENCE_ONLY; checked 2026-08-19)
+- **5.12. Other Criminological Theories, in SOU-CCJ230 Introduction to the American Criminal Justice System** - Brian Fedorek, in Burke, Carter, Fedorek, Morey, Rutz-Burri & Sanchez (Open Oregon Educational Resources / Pressbooks). <https://openoregon.pressbooks.pub/ccj230/chapter/4-12-critical-theories/> (usage: REFERENCE_ONLY; checked 2026-08-19)
+
+## Related Topics
+
+- `criminal-justice-and-criminology:criminology:what-causes-crime`
+- `criminal-justice-and-criminology:criminology:social-learning-theory-of-crime`
+- `criminal-justice-and-criminology:corrections:juvenile-justice`
+- `criminal-justice-and-criminology:corrections:rehabilitation-and-reentry`
+- `criminal-justice-and-criminology:policing:police-discretion`
+
+## Editorial Metadata
+
+- **Topic id:** `criminal-justice-and-criminology:criminology:labeling-theory`
+- **Editorial status:** READY_TO_PUBLISH
+- **Estimated time:** 13 minutes
+- **Researched at:** 2026-08-19
+- **Research status:** source-verified
+- **Rights status:** Reference-only and public-domain sources; no source prose adapted or reproduced. Four in-copyright monographs are cited from catalog records for bibliographic facts only, with their arguments carried on secondary sources that were read in full.
+- **Transformation:** Written from primary scholarly literature, U.S. Department of Justice program and research materials, a National Academies report, and one CC BY open-access article, all read or verified during research on 2026-08-19. The machine-generated draft was discarded in full. Attributions, dates, journal details and sample sizes were checked against Crossref, PubMed, ERIC and the publishing agencies; figures that could not be verified against a readable source were omitted rather than repeated.
+- **Source count:** 20 · **Questions:** 5
+- **Notice:** This is educational material about criminological theory and the research that tests it. It is not legal advice, and it takes no position on any policy. It describes United States institutions where it names them; law and practice vary by state.

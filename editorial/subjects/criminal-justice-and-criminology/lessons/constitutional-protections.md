@@ -58,7 +58,7 @@ Whether exclusion is worth its price is a live disagreement, and a survey course
 
 - **Selective incorporation** - The clause-by-clause process through which the Supreme Court has held that particular Bill of Rights guarantees restrain state and local governments by way of the Fourteenth Amendment's Due Process Clause.
 - **Exclusionary rule** - A judge-made remedy barring the prosecution from using, in its case in chief, evidence obtained in violation of the Fourth Amendment.
-- **Probable cause** - The showing the Constitution's warrant clause names as the basis on which a warrant may issue, supported by oath or affirmation.
+- **Probable cause** - Enough sworn information, judged on the totality of the circumstances, to support a fair probability that evidence will be found in a stated place or that a stated person committed an offense; the warrant clause names it as the showing on which a warrant may issue, supported by oath or affirmation.
 - **Good-faith exception** - The Leon holding that evidence gathered in objectively reasonable reliance on a warrant later found invalid is not suppressed from the prosecution's case in chief.
 - **Inevitable discovery** - The Nix v. Williams limit admitting evidence when the government proves by a preponderance that lawful means would ultimately have turned it up anyway.
 - **Independent source** - The Silverthorne limit allowing proof of facts learned through a route wholly separate from the constitutional violation.

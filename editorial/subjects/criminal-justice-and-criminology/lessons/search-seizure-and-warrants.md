@@ -1,0 +1,238 @@
+# Search, Seizure, and Warrants
+
+## In 30 Seconds
+
+The Fourth Amendment does not forbid police from searching. It forbids unreasonable searches and seizures, and it tells you what a warrant must contain. Working with it means answering three questions in order: was this a search or a seizure at all, did officers have a warrant, and if not does a recognized exception cover what they did. This lesson walks that sequence through the cases that built it. Educational material about United States law, not legal advice.
+
+## Why This Matters
+
+Almost every criminal case that turns on physical evidence turns first on the Fourth Amendment. Suppression motions decide what a jury will ever hear, which is why the framework shows up in criminal justice surveys, criminal procedure courses, police academy training, and paralegal programs alike. It is also the part of constitutional law that changes fastest, because each new sensing technology forces courts to ask again what privacy the Amendment preserves. Learning the sequence rather than a list of case names is what lets you reason about a fact pattern nobody has litigated yet, including whatever device replaces the one in your pocket.
+
+## Learning Objectives
+
+- Define a Fourth Amendment search using both the Katz reasonable-expectation-of-privacy test and the trespass theory restored in United States v. Jones and Florida v. Jardines.
+- Distinguish a consensual encounter from a seizure of a person under Bostick, Hodari D., and Torres v. Madrid.
+- Explain what probable cause, oath or affirmation, particularity, and a neutral judicial officer each contribute to a valid warrant.
+- Apply the recognized warrant exceptions - consent, exigency, search incident to arrest, the automobile exception, plain view, and the Terry frisk - to a described encounter.
+- Evaluate why a search may be lawful under federal doctrine yet unlawful under a state constitution, and why a defendant may be unable to challenge it at all.
+
+## The College Version
+
+### Two clauses, and the order of the questions
+
+The Fourth Amendment is one sentence with two working parts. The first secures the right of the people to be secure in their persons, houses, papers, and effects against unreasonable searches and seizures. The second says no warrants shall issue but upon probable cause, supported by oath or affirmation, and particularly describing the place to be searched and the persons or things to be seized. Notice what the text does not say: it never commands police to get a warrant. It forbids unreasonable searching, and sets terms for warrants.
+
+Courts filled that gap with a presumption. Katz v. United States (1967) called searches conducted without prior approval by a judge or magistrate per se unreasonable, subject only to a few specifically established and well-delineated exceptions. Kentucky v. King (2011) restated it: warrantless searches of a home are presumptively unreasonable, but that presumption can be overcome when the exigencies of a situation make a warrantless search objectively reasonable. The practical law therefore lives in the exceptions; whoever memorizes the presumption without them has learned the smaller half.
+
+Work any problem in this order. First, did government action amount to a search or a seizure at all? If not, the Amendment has nothing to say. Second, was there a warrant, and was it valid? Third, if not, does an exception apply? Only then comes the remedial question: what happens to the evidence, and who may raise it.
+
+### What counts as a search
+
+Originally a search meant a trespass on a protected place; Katz ended that monopoly. FBI agents taped a listening device to the outside of a public telephone booth, entering nothing. Justice Stewart's opinion answered that the Fourth Amendment protects people, not places, so its reach cannot turn on the presence or absence of a physical intrusion. The same passage adds a limit students skip: what a person knowingly exposes to the public, even in his own home or office, is not protected.
+
+The test everyone cites is not in the majority opinion. Justice Harlan, concurring, described a twofold requirement - that a person have exhibited an actual, subjective expectation of privacy, and that the expectation be one society is prepared to recognize as reasonable. Later cases adopted it, and that is what courts mean by the Katz test.
+
+The trespass idea never died. In United States v. Jones (2012) agents attached a GPS tracker to a car and monitored it for 28 days. Justice Scalia's opinion found a search without reaching privacy at all: the government had physically occupied private property for the purpose of obtaining information. Katz, the Court said, has been added to, but not substituted for, the common-law trespassory test. Florida v. Jardines (2013) ran that route at a house, holding that bringing a drug-detection dog onto a front porch was a search, because the porch is curtilage, which counts as part of the home itself.
+
+Sensing technology has its own line. Kyllo v. United States (2001) held that aiming a thermal imager at a house was a search, because the device was not in general public use and exposed details of a home otherwise unknowable without physical intrusion. Carpenter v. United States (2018) reached records rather than rooms: acquiring 127 days of a suspect's historical cell-site location information was a search, and a Stored Communications Act order resting on reasonable grounds fell well short of the probable cause a warrant requires.
+
+### What counts as a seizure of a person
+
+Property is seized when the government meaningfully interferes with a possessory interest. A person is seized on a different test, and the line matters because officers may approach and question anyone without any justification. United States v. Mendenhall (1980) supplied the phrase: a person has been seized only if, in view of all the circumstances, a reasonable person would have believed he was not free to leave. Justice Stewart's opinion drew only one other vote on that point, but later majorities adopted it. It also listed the tells: several officers present, a displayed weapon, physical touching, or a tone indicating that compliance is expected - illustrations, not requirements.
+
+Florida v. Bostick (1991) fixed a defect in that phrasing, in a case where officers questioned passengers on a stopped bus nobody wanted to leave. Justice O'Connor's opinion rejected the Florida court's per se rule that every such encounter is a seizure, and restated the question: whether a reasonable person would feel free to decline the officers' requests or otherwise terminate the encounter.
+
+California v. Hodari D. (1991) added the timing rule. A seizure requires either the application of physical force, however slight, or - absent force - submission to a show of authority. Hodari kept running after an officer gave chase, so he was not seized until he was tackled, and the drugs he threw away while running were not the fruit of any seizure. Torres v. Madrid (2021) completed the force half: applying physical force to the body of a person with intent to restrain is a seizure even if the person does not submit and is not subdued.
+
+### What a valid warrant requires
+
+A warrant is advance permission from someone who is not investigating the case. Probable cause is the quantum of justification, and Illinois v. Gates (1983) fixed how it is measured. Justice Rehnquist's opinion discarded the rigid two-pronged test that had governed informant tips in favor of a totality-of-the-circumstances approach: the magistrate makes a practical, common-sense decision whether there is a fair probability that contraband or evidence of a crime will be found in a particular place, and a reviewing court asks only whether he had a substantial basis for that conclusion. Oath or affirmation is the accountability element - someone swears to the facts. Particularity is the anti-general-warrant element: the document must name the place and the things, so the officer executing it is not deciding on the doorstep how far to go. And the issuer must be a neutral judicial officer, not the investigating agency.
+
+Federal Rule of Criminal Procedure 41 shows what those abstractions look like as paperwork. A judge issues the warrant only on probable cause. It must identify what is to be searched and anything to be seized, command execution within a specified time no longer than fourteen days, and command daytime execution unless the judge finds good cause otherwise. The officer then prepares a verified inventory, leaves a copy and a receipt, and returns the warrant to the judge.
+
+Warrants also mark a spatial boundary. Payton v. New York (1980) held that police may not enter a home without a warrant or consent to make a routine felony arrest: the Amendment draws a firm line at the entrance to the house that, absent exigent circumstances, may not be crossed.
+
+### The recognized exceptions
+
+Consent. If a person voluntarily agrees, no warrant and no cause are needed. Schneckloth v. Bustamonte (1973) held that voluntariness is judged on the totality of the circumstances, and that although knowledge of a right to refuse is a factor, the prosecution need not prove it existed. Georgia v. Randolph (2006) added that a physically present occupant's express refusal defeats a co-occupant's consent as to the objector.
+
+Exigent circumstances. When waiting would defeat the purpose - imminent destruction of evidence, an emergency, an escaping suspect - officers may act without a warrant. Kentucky v. King (2011) added the limit that matters: the exception is available so long as police did not create the exigency by engaging or threatening to engage in conduct that violates the Fourth Amendment. Two later cases refused to make exigency categorical. Missouri v. McNeely (2013) held that the natural dissipation of alcohol in the bloodstream is not by itself an exigency in every drunk-driving case, and Lange v. California (2021) held that pursuit of a fleeing misdemeanor suspect does not always - that is, categorically - justify a warrantless home entry.
+
+Search incident to lawful arrest. Chimel v. California (1969) confined it to the arrestee's person and the area within his immediate control - the space from which he might grab a weapon or destructible evidence - and required a warrant for other rooms. Arizona v. Gant (2009) applied that logic to cars: officers may search the passenger compartment incident to a recent occupant's arrest only if the arrestee might access the vehicle at the time of the search, or it is reasonable to believe the vehicle contains evidence of the offense of arrest. Gant was handcuffed in a patrol car, so neither branch fit him. Riley v. California (2014) drew the line for phones: digital data stored on a phone cannot itself be used as a weapon, so the Chimel rationales do not reach it, and the Court's instruction was three words - get a warrant - though exigency remains available.
+
+The automobile exception. Carroll v. United States (1925) held that the right to search a movable vehicle on probable cause that it carries contraband does not depend on the right to arrest anyone. California v. Acevedo (1991) carried that into containers: officers with probable cause as to a container inside a car may open it without a warrant.
+
+Plain view. Horton v. California (1990) held that inadvertent discovery is not required, then restated what is: the officer must have reached the vantage point lawfully, the object's incriminating character must be immediately apparent, and the officer must have a lawful right of access to the object.
+
+Stop and frisk. Terry v. Ohio (1968) recognized a brief, lesser intrusion on less than probable cause. Chief Justice Warren's opinion conceded both halves the state had denied - restraining someone's freedom to walk away is a seizure, and running hands over the outside of clothing is a search - then held both can be justified when the officer points to specific and articulable facts, taken with rational inferences from them, rather than an inchoate and unparticularized suspicion or hunch. The frisk is limited to weapons. Later cases supplied the label reasonable suspicion; in Terry itself that phrase appears only in Justice Douglas's dissent.
+
+### Searches that are not looking for a crime
+
+A separate family of searches is measured against reasonableness without individualized suspicion, because the purpose is not criminal investigation. Camara v. Municipal Court (1967) held that a municipal inspector needs a warrant to enter a dwelling over the occupant's objection, but that probable cause for an area-inspection warrant may rest on reasonable legislative or administrative standards rather than suspicion about the particular building. South Dakota v. Opperman (1976) upheld the routine inventory of a lawfully impounded car, conducted under standard police procedures, as reasonable without a warrant. Skinner v. Railway Labor Executives' Association (1989) upheld regulations requiring blood and urine tests of railroad employees after major accidents, calling the government's interest a special need beyond normal law enforcement that can justify departing from the usual warrant and probable-cause requirements. What holds the family together is that standardized criteria, not an officer's judgment, supply the check.
+
+### Whose rights, what remedy, and the floor states may raise
+
+Fourth Amendment rights are personal. Rakas v. Illinois (1978) held that passengers who claimed no interest in the car or in the rifle and shells taken from it could not challenge the search, folding the older label of standing into the substantive question: whether the person claiming the Amendment's protection had a legitimate expectation of privacy in the invaded place. A defendant hurt by evidence gathered through a violation of someone else's rights usually has no suppression claim.
+
+Where the right is the defendant's own, the principal consequence is exclusion: evidence obtained in violation of the Fourth Amendment is generally kept out of the prosecution's case, and Mapp v. Ohio (1961) made that binding on the states. The mechanism is procedural - Rule 41(h) routes a federal defendant to Rule 12 to move to suppress - but the stakes are the case. Exclusion is not automatic: United States v. Leon (1984) held that evidence stays in when officers rely in objectively reasonable good faith on a warrant issued by a detached and neutral magistrate that later proves invalid, because suppressing it would deter nothing - though the magistrate may not serve as a rubber stamp. That rule's history and other exceptions belong to this curriculum's constitutional-protections lesson.
+
+One caution follows every Fourth Amendment analysis: all of the above is a federal floor. As the Court put it in Oregon v. Hass (1975), a state is free as a matter of its own law to impose greater restrictions on police activity than federal constitutional standards require. Several state supreme courts read their own search-and-seizure provisions more protectively, so the same conduct can be lawful federally and unlawful under a state constitution. This lesson is educational material about United States law. It is not legal advice, and it does not state the law of any particular state.
+
+## Key Vocabulary
+
+- **Search** - Government conduct that either physically intrudes on a person, house, paper, or effect to obtain information, or that invades an expectation of privacy society is prepared to recognize as reasonable.
+- **Seizure of a person** - A restraint on liberty accomplished either by physical force applied with intent to restrain, or by a show of authority to which the individual submits.
+- **Curtilage** - The area immediately surrounding a dwelling and tied to its everyday use, such as a front porch, which courts treat as part of the home itself for Fourth Amendment purposes.
+- **Probable cause** - Enough sworn information, judged on the totality of the circumstances, to support a fair probability that contraband or evidence of a crime will be found in a stated place, or that a stated person committed an offense.
+- **Reasonable suspicion** - The lesser justification that supports a brief investigative stop and a weapons pat-down: specific and articulable facts plus rational inferences from them, amounting to less than probable cause but more than a hunch.
+- **Particularity requirement** - The constitutional command that a warrant name the specific place to be entered and the specific persons or things to be taken, which is what distinguishes it from the general warrants the Amendment was written against.
+- **Exigent circumstances** - A situation urgent enough - imminent destruction of evidence, an emergency, a fleeing suspect - that acting without judicial authorization first is objectively reasonable on the particular facts.
+- **Search incident to lawful arrest** - The authority, arising from a valid custodial arrest, to examine the arrested person and the area from which that person could reach a weapon or destroy evidence.
+- **Plain view doctrine** - A rule permitting warrantless seizure of an item whose incriminating character is immediately apparent, when the officer both reached the vantage point lawfully and has lawful access to the item.
+- **Fourth Amendment standing** - The requirement that a person seeking suppression show that his own legitimate expectation of privacy was invaded, so that a violation of someone else's rights generally will not support his motion.
+
+## Eli-10
+
+Think of the Fourth Amendment as a rule about doors rather than a rule about police. The government can knock and ask. It can look at whatever is already sitting out in the open. But before it opens a door you have shut - a house, a bag, a phone, a car trunk - it usually has to convince a judge that there is a real reason to think something specific is behind that particular door. The judge writes down which door and what the government is looking for. That written note is a warrant. There is a short list of situations where the government does not have to stop and ask a judge first: you said yes; someone is in danger or evidence is about to be destroyed; the thing is already in plain sight; or an officer has just arrested someone and is checking the space right around them for a weapon. The list is short on purpose, and courts keep arguing about its edges, because every new device creates a new kind of door.
+
+## Eli's Analogy
+
+A warrant works like a hall pass with the destination and the errand written on it. The office does not hand one out because a teacher has a feeling; the teacher has to say what is going on and where. And the pass only covers the trip it names - a pass to the library is not permission to wander through the gym.
+
+**Where the analogy breaks down.** The analogy breaks in three places. A hall pass is issued by the same institution that wants the trip; a warrant is deliberately issued by a judge who is not on the investigating team. A student without a pass is simply sent back; evidence gathered without a valid warrant may be excluded from a trial entirely. And there is no hall-pass equivalent of consent or exigency - a school does not have a rule saying the pass is unnecessary if the building is on fire, but Fourth Amendment law has exactly that kind of rule, and most real disputes are about those exceptions rather than about warrants.
+
+## Worked Example
+
+An officer sees a parked car with a broken taillight and pulls it over. She walks up and asks the driver where he is headed - no justification needed yet, because a question is not a seizure, though the traffic stop itself already is one. Through the open window she sees a bag of pills on the passenger seat, labels facing up. Run the sequence. Looking through a window from a place she is lawfully standing is not a search, since the contents were knowingly exposed. Seizing the bag is a plain-view seizure under Horton if its incriminating character is immediately apparent and she has lawful access to it. If those pills give probable cause to believe the car holds more contraband, Carroll lets her search the vehicle on that cause without a warrant. Suppose she instead arrests the driver, handcuffs him in the patrol car, and then wants to search the passenger compartment. Gant blocks the officer-safety branch, because he cannot reach anything - but the evidence branch may still apply if it is reasonable to believe the car contains evidence of the drug offense he was arrested for. Now she picks up his phone and starts scrolling. Riley stops her. The phone can be secured; its data cannot hurt anyone; absent consent or a genuine exigency, she needs a warrant naming the phone and describing what she is looking for. And note who can complain: under Rakas v. Illinois, a passenger with no interest in the car or the items taken from it generally cannot move to suppress at all, however the search turned out.
+
+## Common Mistakes
+
+- **Mistake:** Believing the Fourth Amendment requires a warrant for every search.
+  **Correction:** The text forbids unreasonable searches and specifies what a warrant must contain; it never states a universal warrant requirement. Courts presume warrantless searches unreasonable, but consent, exigency, search incident to arrest, the automobile exception, plain view, and Terry stops are all established exceptions, and most real encounters are resolved under one of them.
+- **Mistake:** Treating an officer's command to stop as the moment a fleeing person is seized.
+  **Correction:** California v. Hodari D. holds that a show of authority becomes a seizure only when the person submits to it, so anything discarded during flight before submission is not the fruit of a seizure. Physical force is different: Torres v. Madrid holds that force applied with intent to restrain seizes a person even if he keeps going.
+- **Mistake:** Assuming consent is invalid unless the officer first advised the person of the right to refuse - or that any resident's yes settles the matter.
+  **Correction:** Schneckloth v. Bustamonte requires voluntariness judged on the totality of the circumstances, and the government need not prove the person knew he could decline. But Georgia v. Randolph holds that a physically present occupant's express refusal defeats a co-occupant's consent as to the objector.
+- **Mistake:** Reading a lawful arrest as authority to search everything the arrestee had with him, including a phone.
+  **Correction:** Chimel limits the search to the person and the area within immediate control, Gant limits vehicle searches to reachability or evidence of the offense of arrest, and Riley v. California holds that police generally may not search a phone's digital contents incident to arrest at all - the answer there is a warrant.
+- **Mistake:** Concluding that if federal doctrine permits a search, the search is lawful anywhere in the country.
+  **Correction:** Federal constitutional doctrine sets a floor, not a ceiling. Oregon v. Hass states that a state may impose greater restrictions on police as a matter of its own law, and several state supreme courts read their own constitutions more protectively than the Fourth Amendment.
+
+## Compare / Contrast
+
+- **The Katz privacy test vs. The Jones trespass theory** - Katz asks whether the government invaded an expectation of privacy society recognizes as reasonable, which can happen with no physical contact at all. Jones asks whether the government physically intruded on a person, house, paper, or effect to gather information. Jones held the privacy test was added to the trespass test, not substituted for it, so either route can establish a search.
+- **Probable cause vs. The Terry standard** - Probable cause supports a fair probability that evidence is in a place or that a person committed a crime, and it is what a warrant and a full arrest require. Terry permits a brief stop and a weapons pat-down on less - specific articulable facts and rational inferences from them - because the intrusion is briefer and narrower. A hunch satisfies neither.
+- **Automobile exception search vs. Vehicle search incident to arrest** - Carroll rests on probable cause that the vehicle contains contraband and lets officers search wherever that contraband could be, whether or not anyone is arrested. Gant rests on a custodial arrest and reaches the passenger compartment only if the arrestee can access it or the vehicle plausibly holds evidence of the offense of arrest. The same car search can fail under one and succeed under the other.
+- **Seizure by show of authority vs. Seizure by physical force** - Under Hodari D., a show of authority seizes no one until the person submits, so a suspect who keeps running is not yet seized. Under Torres v. Madrid, physical force applied with intent to restrain seizes the person the moment it lands, even if he escapes. Timing, not degree, is what the two rules divide.
+- **Exigency as a category vs. Exigency case by case** - Courts have declined to make whole classes of situations automatically urgent. Missouri v. McNeely held that the natural dissipation of blood alcohol is not by itself an exigency in every drunk-driving case, and Lange v. California held that pursuit of a fleeing misdemeanor suspect does not categorically justify entering a home. The category tells you which facts to weigh; it does not decide the case.
+
+## Key Takeaway
+
+Work Fourth Amendment problems in sequence - was there a search or seizure, was there a valid warrant, does an exception apply - and remember that the exceptions, not the warrant requirement, decide most cases. This is educational material about United States law, not legal advice, and state constitutions may protect more.
+
+## Practice Question Bank
+
+**1. The two-part test asking whether a person exhibited an actual expectation of privacy and whether society is prepared to recognize that expectation as reasonable comes from which part of Katz v. United States?**
+
+   A. The syllabus prepared by the Reporter of Decisions
+   B. Justice Harlan's concurring opinion
+   C. Justice Stewart's majority opinion
+   D. Justice Black's dissenting opinion
+
+   *Answer:* B. Justice Stewart's majority opinion said the Fourth Amendment protects people rather than places and that its reach cannot turn on physical intrusion, but it never stated the two-part formulation. Justice Harlan, concurring, described the twofold requirement of a subjective expectation of privacy plus one society is prepared to recognize as reasonable, and later cases adopted his phrasing. Justice Black dissented and rejected the Court's reading entirely. A syllabus is not part of the opinion and states no new test.
+   *Difficulty:* recall | *Skill:* Attributing a legal test to the opinion that actually states it | *Sources:* scotus-katz-v-united-states-1967
+
+**2. An officer shouts 'Stop, police!' at a man who keeps running and throws a package into a yard before being tackled a block later. Under California v. Hodari D., when was the man seized?**
+
+   A. When the officer shouted, because that was a show of authority
+   B. When he threw the package, because abandoning property signals submission
+   C. When he was tackled, because a show of authority seizes no one until the person submits
+   D. He was never seized, because he initially tried to escape
+
+   *Answer:* C. Hodari D. holds that a seizure requires either the application of physical force or, absent force, submission to a show of authority. The shout alone was a show of authority the suspect did not obey, so no seizure occurred then, and discarding property is not submission. The tackle applied physical force, and that is when the seizure occurred - which is why the discarded drugs were not the fruit of a seizure. Fleeing does not immunize a person from later being seized.
+   *Difficulty:* application | *Skill:* Applying the submission requirement to identify the moment of seizure | *Sources:* scotus-california-v-hodari-d-1991, scotus-torres-v-madrid-2021
+
+**3. Police lawfully arrest a driver for a traffic offense, handcuff him, and secure him in a patrol car. They then open his smartphone and read his messages without a warrant. What does Riley v. California say about that search?**
+
+   A. Police generally need a warrant to search the digital contents of a phone, even after a lawful arrest
+   B. The search is valid because a phone found on an arrestee is within the area of immediate control
+   C. The search is valid because a lawful custodial arrest justifies examining everything in the arrestee's possession
+   D. The search is valid only if the phone was unlocked when officers took it
+
+   *Answer:* A. Riley held that police generally may not search digital information on a cell phone seized from an arrested person without a warrant, reasoning that data cannot be used as a weapon and that officers can secure the device against destruction of evidence. The Chimel immediate-control rationale therefore does not extend to the phone's contents, and the arrest alone does not authorize the search regardless of whether the device was locked. The Court did note that exigent circumstances could still justify a warrantless search in a particular case.
+   *Difficulty:* application | *Skill:* Applying the limits of search incident to arrest to digital devices | *Sources:* scotus-riley-v-california-2014, scotus-chimel-v-california-1969
+
+**4. Officers develop probable cause to believe a parked pickup truck contains stolen electronics, but they arrest no one and get no warrant before searching it. Which doctrine, if any, best supports the search, and why does the other candidate fail?**
+
+   A. Plain view, because probable cause makes an item's incriminating character immediately apparent
+   B. Search incident to arrest, because probable cause is functionally equivalent to an arrest
+   C. Exigent circumstances, because any vehicle can theoretically be driven away
+   D. The automobile exception, because Carroll permits a vehicle search on probable cause independent of any right to arrest, while Gant's rule requires a custodial arrest that never happened here
+
+   *Answer:* D. Carroll v. United States held that the search of a movable vehicle for contraband does not depend on the right to arrest the driver and is lawful where the searching officer has probable cause. Gant's rule is expressly tied to a recent occupant's arrest, and no one was arrested. Plain view requires that an item's incriminating character be immediately apparent to an officer already lawfully positioned, not merely that probable cause exists as to the vehicle. Labeling every car an exigency would swallow the automobile exception's own probable-cause requirement.
+   *Difficulty:* analysis | *Skill:* Distinguishing the automobile exception from search incident to arrest and plain view | *Sources:* scotus-carroll-v-united-states-1925, scotus-arizona-v-gant-2009, scotus-horton-v-california-1990
+
+**5. Under Illinois v. Gates, how should a magistrate decide whether an affidavit establishes probable cause for a search warrant?**
+
+   A. By requiring separate proof of the informant's veracity and basis of knowledge under a rigid two-pronged test
+   B. By determining beyond a reasonable doubt that evidence is present in the place described
+   C. By making a practical, common-sense decision, on the totality of the circumstances, whether there is a fair probability that contraband or evidence of a crime will be found in a particular place
+   D. By deferring to the officer's sworn conclusion that probable cause exists
+
+   *Answer:* C. Gates abandoned the rigid Aguilar-Spinelli two-pronged test and replaced it with a totality-of-the-circumstances approach, describing the magistrate's task as a practical, common-sense fair-probability judgment, with a reviewing court asking only whether there was a substantial basis for the conclusion. Beyond a reasonable doubt is the trial standard for guilt, not a warrant standard. Deference to a bare officer conclusion is what Leon later described as rubber-stamping, which forfeits the magistrate's neutral role.
+   *Difficulty:* understanding | *Skill:* Stating the operative probable-cause standard for warrant issuance | *Sources:* scotus-illinois-v-gates-1983, scotus-united-states-v-leon-1984
+
+## Sources
+
+- **The Bill of Rights: A Transcription** - U.S. National Archives and Records Administration. <https://www.archives.gov/founding-docs/bill-of-rights-transcript> (PUBLIC_DOMAIN)
+- **Katz v. United States, 389 U.S. 347 (1967)** - U.S. Government Publishing Office (govinfo), United States Reports. <https://www.govinfo.gov/content/pkg/USREPORTS-389/pdf/USREPORTS-389-347.pdf> (PUBLIC_DOMAIN)
+- **United States v. Jones, 565 U.S. 400 (2012)** - U.S. Government Publishing Office (govinfo), United States Reports. <https://www.govinfo.gov/content/pkg/USREPORTS-565/pdf/USREPORTS-565-400.pdf> (PUBLIC_DOMAIN)
+- **Florida v. Jardines, 569 U.S. 1 (2013)** - U.S. Supreme Court (via GPO govinfo). <https://www.govinfo.gov/content/pkg/USREPORTS-569/pdf/USREPORTS-569-1.pdf> (PUBLIC_DOMAIN)
+- **Kyllo v. United States, 533 U.S. 27 (2001)** - U.S. Government Publishing Office (govinfo), United States Reports. <https://www.govinfo.gov/content/pkg/USREPORTS-533/pdf/USREPORTS-533-27.pdf> (PUBLIC_DOMAIN)
+- **Carpenter v. United States, 585 U.S. 296 (2018) (slip opinion)** - Supreme Court of the United States. <https://www.supremecourt.gov/opinions/17pdf/16-402_h315.pdf> (PUBLIC_DOMAIN)
+- **United States v. Mendenhall, 446 U.S. 544 (1980)** - U.S. Government Publishing Office (govinfo), United States Reports. <https://www.govinfo.gov/content/pkg/USREPORTS-446/pdf/USREPORTS-446-544.pdf> (PUBLIC_DOMAIN)
+- **Florida v. Bostick, 501 U.S. 429 (1991)** - U.S. Government Publishing Office (govinfo), United States Reports. <https://www.govinfo.gov/content/pkg/USREPORTS-501/pdf/USREPORTS-501-429.pdf> (PUBLIC_DOMAIN)
+- **California v. Hodari D., 499 U.S. 621 (1991)** - U.S. Government Publishing Office (govinfo), United States Reports. <https://www.govinfo.gov/content/pkg/USREPORTS-499/pdf/USREPORTS-499-621.pdf> (PUBLIC_DOMAIN)
+- **Torres v. Madrid, 592 U.S. 306 (2021) (slip opinion)** - Supreme Court of the United States. <https://www.supremecourt.gov/opinions/20pdf/19-292_21p3.pdf> (PUBLIC_DOMAIN)
+- **Illinois v. Gates, 462 U.S. 213 (1983)** - U.S. Government Publishing Office (govinfo), United States Reports. <https://www.govinfo.gov/content/pkg/USREPORTS-462/pdf/USREPORTS-462-213.pdf> (PUBLIC_DOMAIN)
+- **Federal Rules of Criminal Procedure (effective March 21, 1946, as amended to December 1, 2025)** - Administrative Office of the U.S. Courts (uscourts.gov). <https://www.uscourts.gov/sites/default/files/document/federal-rules-of-criminal-procedure.pdf> (PUBLIC_DOMAIN)
+- **Payton v. New York, 445 U.S. 573 (1980)** - U.S. Government Publishing Office (govinfo), United States Reports. <https://www.govinfo.gov/content/pkg/USREPORTS-445/pdf/USREPORTS-445-573.pdf> (PUBLIC_DOMAIN)
+- **Schneckloth v. Bustamonte, 412 U.S. 218 (1973)** - U.S. Government Publishing Office (govinfo), United States Reports. <https://www.govinfo.gov/content/pkg/USREPORTS-412/pdf/USREPORTS-412-218.pdf> (PUBLIC_DOMAIN)
+- **Georgia v. Randolph, 547 U.S. 103 (2006)** - U.S. Supreme Court (via GPO govinfo). <https://www.govinfo.gov/content/pkg/USREPORTS-547/pdf/USREPORTS-547-103.pdf> (PUBLIC_DOMAIN)
+- **Kentucky v. King, 563 U.S. 452 (2011)** - U.S. Government Publishing Office (govinfo), United States Reports. <https://www.govinfo.gov/content/pkg/USREPORTS-563/pdf/USREPORTS-563-452.pdf> (PUBLIC_DOMAIN)
+- **Missouri v. McNeely, 569 U.S. 141 (2013)** - U.S. Supreme Court (via GPO govinfo). <https://www.govinfo.gov/content/pkg/USREPORTS-569/pdf/USREPORTS-569-141.pdf> (PUBLIC_DOMAIN)
+- **Lange v. California, 594 U.S. 295 (2021)** - Supreme Court of the United States. <https://www.supremecourt.gov/opinions/20pdf/594us1r56_7k47.pdf> (PUBLIC_DOMAIN)
+- **Chimel v. California, 395 U.S. 752 (1969)** - U.S. Government Publishing Office (govinfo), United States Reports. <https://www.govinfo.gov/content/pkg/USREPORTS-395/pdf/USREPORTS-395-752.pdf> (PUBLIC_DOMAIN)
+- **Arizona v. Gant, 556 U.S. 332 (2009)** - U.S. Government Publishing Office (govinfo), United States Reports. <https://www.govinfo.gov/content/pkg/USREPORTS-556/pdf/USREPORTS-556-332.pdf> (PUBLIC_DOMAIN)
+- **Riley v. California, 573 U.S. 373 (2014)** - U.S. Government Publishing Office (govinfo), United States Reports. <https://www.govinfo.gov/content/pkg/USREPORTS-573/pdf/USREPORTS-573-373.pdf> (PUBLIC_DOMAIN)
+- **Carroll v. United States, 267 U.S. 132 (1925)** - U.S. Government Publishing Office (govinfo), United States Reports. <https://www.govinfo.gov/content/pkg/USREPORTS-267/pdf/USREPORTS-267-132.pdf> (PUBLIC_DOMAIN)
+- **California v. Acevedo, 500 U.S. 565 (1991)** - U.S. Supreme Court (via GPO govinfo). <https://www.govinfo.gov/content/pkg/USREPORTS-500/pdf/USREPORTS-500-565.pdf> (PUBLIC_DOMAIN)
+- **Horton v. California, 496 U.S. 128 (1990)** - U.S. Government Publishing Office (govinfo), United States Reports. <https://www.govinfo.gov/content/pkg/USREPORTS-496/pdf/USREPORTS-496-128.pdf> (PUBLIC_DOMAIN)
+- **Terry v. Ohio, 392 U.S. 1 (1968)** - U.S. Government Publishing Office (govinfo), United States Reports. <https://www.govinfo.gov/content/pkg/USREPORTS-392/pdf/USREPORTS-392-1.pdf> (PUBLIC_DOMAIN)
+- **Camara v. Municipal Court of the City and County of San Francisco, 387 U.S. 523 (1967)** - U.S. Supreme Court (via GPO govinfo). <https://www.govinfo.gov/content/pkg/USREPORTS-387/pdf/USREPORTS-387-523.pdf> (PUBLIC_DOMAIN)
+- **South Dakota v. Opperman, 428 U.S. 364 (1976)** - U.S. Supreme Court (via GPO govinfo). <https://www.govinfo.gov/content/pkg/USREPORTS-428/pdf/USREPORTS-428-364.pdf> (PUBLIC_DOMAIN)
+- **Skinner v. Railway Labor Executives' Assn., 489 U.S. 602 (1989)** - U.S. Supreme Court (via GPO govinfo). <https://www.govinfo.gov/content/pkg/USREPORTS-489/pdf/USREPORTS-489-602.pdf> (PUBLIC_DOMAIN)
+- **Rakas v. Illinois, 439 U.S. 128 (1978)** - U.S. Supreme Court (via GPO govinfo). <https://www.govinfo.gov/content/pkg/USREPORTS-439/pdf/USREPORTS-439-128.pdf> (PUBLIC_DOMAIN)
+- **Mapp v. Ohio, 367 U.S. 643 (1961)** - Library of Congress, United States Reports volume 367 (official bound-volume scan). <https://tile.loc.gov/storage-services/service/ll/usrep/usrep367/usrep367643/usrep367643.pdf> (PUBLIC_DOMAIN)
+- **United States v. Leon, 468 U.S. 897 (1984)** - Library of Congress, United States Reports volume 468 (official bound-volume scan). <https://tile.loc.gov/storage-services/service/ll/usrep/usrep468/usrep468897/usrep468897.pdf> (PUBLIC_DOMAIN)
+- **Oregon v. Hass, 420 U.S. 714 (1975)** - U.S. Government Publishing Office (govinfo), United States Reports. <https://www.govinfo.gov/content/pkg/USREPORTS-420/pdf/USREPORTS-420-714.pdf> (PUBLIC_DOMAIN)
+
+## Related Topics
+
+- `criminal-justice-and-criminology:criminal-law-foundations:constitutional-protections`
+- `criminal-justice-and-criminology:policing:police-discretion`
+- `criminal-justice-and-criminology:policing:use-of-force`
+- `criminal-justice-and-criminology:courts:arrest-through-trial`
+- `criminal-justice-and-criminology:courts:court-structure`
+
+## Editorial Metadata
+
+- Topic id: `criminal-justice-and-criminology:policing:search-seizure-and-warrants`
+- Editorial status: READY_TO_PUBLISH
+- Estimated minutes: 13
+- Research status: source-verified
+- Researched at: 2026-08-19
+- Rights status: Public-domain primary authority only - U.S. Supreme Court opinions, the Federal Rules of Criminal Procedure, and the constitutional text. No copyrighted prose adapted; short quoted phrases are legal terms of art attributed to the deciding case.
+- Transformation: Each cited opinion was downloaded and its text extracted locally, then searched for the operative language, the authoring Justice, and the vote lineup, so that holdings, dates, authorship, and quoted phrases were confirmed against the opinion rather than against any summary. Bound-volume U.S. Reports PDFs from govinfo were used wherever the volume is published; Carpenter, Torres, and Lange were read in the supremecourt.gov opinion PDFs because govinfo has no downloadable bound volume that high. Rule 41 was read in the current consolidated Federal Rules of Criminal Procedure. The lesson organizes those holdings into an original three-step analytical sequence written for this curriculum; no source's structure or wording was followed.
+- Source count: 32; evidence claims: 33
+- Jurisdiction: United States federal constitutional law. State constitutions may protect more. This is educational material, not legal advice.
