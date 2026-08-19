@@ -1,0 +1,199 @@
+{
+  "topicId": "environmental-sustainability:foundations:part-ii-computer-and-technology",
+  "subjectId": "environmental-sustainability",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "The electricity footprint of computing: data centers and networks as a growing share of global demand, with AI (and historically crypto) adding pressure",
+      "Data-center efficiency metrics, especially Power Usage Effectiveness (PUE) and what it does not capture",
+      "Electronic waste: scale, low recycling rate, value of recoverable materials, and toxics/informal-recycling hazards",
+      "Green computing and sustainable design: efficient hardware, virtualization/cloud consolidation, device longevity, right to repair, responsible recycling and refurbishment",
+      "The honest tension that digital technology both enables efficiencies and consumes energy and materials"
+    ],
+    "supporting": [
+      "Distinction between operational and embedded (manufacturing) footprint",
+      "Distinction between electricity use and carbon intensity (grid dependence)",
+      "Formal vs informal e-waste recycling",
+      "ENERGY STAR labeling as an efficiency program"
+    ],
+    "outOfScope": [
+      "The energy system as a whole (owned by the Energy Use topic)",
+      "General waste management and general recycling systems (owned by Waste Management and Recycling)",
+      "The circular-economy model in general (owned by Circular Economy; here applied specifically to electronics)",
+      "Detailed climate science, GHG accounting, or renewable-capacity figures"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Data centers consumed about 415 TWh of electricity in 2024, roughly 1.5% of global electricity, and demand has grown about 12% per year since 2017 (over four times faster than total electricity).",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["iea-energy-and-ai-2025"],
+      "status": "supported"
+    },
+    {
+      "claim": "The IEA projects data-center electricity use will more than double to about 945 TWh by 2030, with AI the most important driver; in 2024 the US accounted for ~45%, China ~25%, Europe ~15% of data-center electricity.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["iea-energy-and-ai-2025"],
+      "status": "supported"
+    },
+    {
+      "claim": "Cryptocurrency mining used about 110 TWh of electricity in 2022 (comparable to the Netherlands) and was projected by the IEA to rise toward about 160 TWh by 2026.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["iea-electricity-2024-exec"],
+      "status": "supported"
+    },
+    {
+      "claim": "Power Usage Effectiveness (PUE) is the ratio of total facility energy to IT-equipment energy, introduced by The Green Grid in 2007 and standardized as ISO/IEC 30134-2; 1.0 is ideal and higher values mean more overhead.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["lbnl-datacenters-pue"],
+      "status": "supported"
+    },
+    {
+      "claim": "Reported industry-average PUE has been near 1.5-1.6 in recent years (Uptime Institute 2024 survey ~1.56), while the most efficient large operators report values near 1.1.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["uptime-institute-pue-2024"],
+      "status": "supported"
+    },
+    {
+      "claim": "The world generated 62 million tonnes of e-waste in 2022, growing ~2.6 Mt/year and projected to reach 82 million tonnes by 2030; it is rising about five times faster than documented recycling.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["global-e-waste-monitor-2024"],
+      "status": "supported"
+    },
+    {
+      "claim": "Only 22.3% of 2022 e-waste was formally collected and recycled, a rate projected to decline toward 20% by 2030.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["global-e-waste-monitor-2024"],
+      "status": "supported"
+    },
+    {
+      "claim": "Metals embedded in 2022 e-waste were worth about US$91 billion, with about US$62 billion in recoverable resources unrecovered; only ~1% of rare-earth demand is met through recycling.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["global-e-waste-monitor-2024"],
+      "status": "supported"
+    },
+    {
+      "claim": "About 18 million tonnes of e-waste are handled by the informal sector in low- and middle-income countries, where crude recovery releases hazardous substances such as lead and mercury.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["global-e-waste-monitor-2024"],
+      "status": "supported"
+    },
+    {
+      "claim": "The FTC's 2021 report Nixing the Fix catalogued repair restrictions (parts limited to authorized networks, adhesives/designs resisting disassembly, software locks) and found scant evidence they are necessary for safety or security.",
+      "claimType": "LEGAL",
+      "sourceIds": ["ftc-nixing-the-fix-2021"],
+      "status": "supported"
+    },
+    {
+      "claim": "Because a large share of a device's footprint is embedded in manufacturing, extending device life through repair often reduces total impact more than early replacement, which is the sustainability case behind right-to-repair and refurbishment.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["ftc-nixing-the-fix-2021", "global-e-waste-monitor-2024"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Projected data-center electricity demand varies across IEA reports and scenarios.",
+      "positions": [
+        "IEA Electricity 2024 projected data-center total (incl. crypto/AI) exceeding 1,000 TWh by 2026 from ~460 TWh in 2022.",
+        "IEA Energy and AI (2025) reports ~415 TWh for data centers in 2024 and projects ~945 TWh by 2030."
+      ],
+      "resolution": "Definitions and boundaries differ (e.g., inclusion of crypto, base year). The lesson uses the more recent 2025 Energy and AI figures for the headline data-center numbers and cites the 2024 report only for the crypto-specific figure, dating each."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only boilerplate ('a foundational concept... introduces its meaning, its context, and a simple way to apply it') with no factual content about computing sustainability; nothing in it was usable as evidence."
+  ],
+  "correctionsNeeded": [
+    "Replaced the placeholder title 'PART II — COMPUTER & TECHNOLOGY' with the human-readable title 'Sustainable Computing and E-Waste' while keeping the slug/id unchanged per orchestrator instruction.",
+    "Discarded all generic boilerplate and wrote an original, sourced lesson on the environmental sustainability of computing.",
+    "Added dated, sourced statistics for every quantitative claim."
+  ],
+  "rightsIssues": [
+    "IEA reports are copyrighted intergovernmental analysis: used as REFERENCE_ONLY; facts synthesized, no wording reproduced.",
+    "The Global E-waste Monitor 2024 (ITU/UNITAR) is copyrighted: used as REFERENCE_ONLY; figures cited, no substantial text reproduced.",
+    "Uptime Institute survey data is proprietary: used as REFERENCE_ONLY with attribution for the industry-average PUE figure only.",
+    "The Green Grid PUE white paper is copyrighted (hosted on LBNL's data-center site): used as REFERENCE_ONLY for the metric's definition and origin.",
+    "The FTC report is a U.S. federal government work in the public domain."
+  ],
+  "sourceRecords": [
+    {
+      "id": "iea-energy-and-ai-2025",
+      "title": "Energy and AI (Special Report) — Executive Summary and Energy Demand from AI",
+      "provider": "International Energy Agency (IEA)",
+      "url": "https://www.iea.org/reports/energy-and-ai/executive-summary",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Intergovernmental analysis. Supports: data centers ~415 TWh in 2024 (~1.5% of global electricity); ~12%/yr growth since 2017; projection to ~945 TWh by 2030; AI as the leading driver; 2024 regional shares (US 45%, China 25%, Europe 15%). Read the IEA executive summary and 'energy demand from AI' pages directly. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "iea-electricity-2024-exec",
+      "title": "Electricity 2024 — Executive Summary",
+      "provider": "International Energy Agency (IEA)",
+      "url": "https://www.iea.org/reports/electricity-2024/executive-summary",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the cryptocurrency figures: ~110 TWh in 2022 (comparable to the Netherlands) rising toward ~160 TWh by 2026, and the combined data-center/AI/crypto doubling narrative. Verified via IEA summary and corroborating reporting; used only for the crypto-specific and combined-forecast figures."
+    },
+    {
+      "id": "global-e-waste-monitor-2024",
+      "title": "The Global E-waste Monitor 2024",
+      "provider": "ITU and UNITAR (with UNU/SCYCLE)",
+      "url": "https://ewastemonitor.info/the-global-e-waste-monitor-2024/",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Intergovernmental report (ITU/UNITAR). Supports: 62 Mt e-waste in 2022; ~2.6 Mt/yr growth; 82 Mt projected by 2030; rising ~5x faster than recycling; 22.3% documented collection/recycling in 2022 (projected to fall to ~20% by 2030); ~US$91B metals value, ~US$62B unrecovered; ~1% of rare-earth demand met by recycling; ~18 Mt handled informally in low/middle-income countries with lead/mercury hazards. Read via the official ewastemonitor.info and UNITAR press release. Figures cited; no substantial text reproduced."
+    },
+    {
+      "id": "ftc-nixing-the-fix-2021",
+      "title": "Nixing the Fix: An FTC Report to Congress on Repair Restrictions (May 2021)",
+      "provider": "U.S. Federal Trade Commission",
+      "url": "https://www.ftc.gov/reports/nixing-fix-ftc-report-congress-repair-restrictions",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "U.S. federal government work (public domain). Supports the right-to-repair discussion: manufacturer restrictions (parts limited to authorized networks, adhesives/designs resisting disassembly, software locks/DRM) and the finding of scant evidence that such restrictions are necessary for safety or security. Read the FTC report landing page and PDF."
+    },
+    {
+      "id": "lbnl-datacenters-pue",
+      "title": "PUE: A Comprehensive Examination of the Metric (The Green Grid, hosted by LBNL Center of Expertise for Energy Efficiency in Data Centers)",
+      "provider": "Lawrence Berkeley National Laboratory / The Green Grid",
+      "url": "https://datacenters.lbl.gov/sites/default/files/WP49-PUE%20A%20Comprehensive%20Examination%20of%20the%20Metric_v6.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the PUE definition (total facility energy / IT-equipment energy), its origin with The Green Grid in 2007, and standardization as ISO/IEC 30134-2, plus its limitations. White paper is copyrighted (Green Grid); used as REFERENCE_ONLY for the metric's definition, hosted on the U.S. national-lab data-center efficiency site."
+    },
+    {
+      "id": "uptime-institute-pue-2024",
+      "title": "Uptime Institute Global Data Center Survey 2024 (industry-average PUE)",
+      "provider": "Uptime Institute",
+      "url": "https://uptimeinstitute.com/resources/research-and-reports/uptime-institute-global-data-center-survey-results-2024",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Proprietary survey. Supports only the reported industry-average PUE (~1.56 in the 2024 survey), used with attribution to illustrate typical vs best-in-class values. Not relied on for any other claim."
+    }
+  ]
+}

@@ -96,42 +96,42 @@ Sustainability depends on ecosystems and the natural capital they hold: renewabl
 ## Practice Question Bank
 
 1. **The Millennium Ecosystem Assessment (2005) grouped the benefits people obtain from ecosystems into four categories. Which option correctly lists them?**
-   - A) Renewable, non-renewable, cyclic, and finite resources
-   - B) Provisioning, regulating, cultural, and supporting services ✓
-   - C) Biotic, abiotic, energy, and nutrient components
-   - D) Extraction, production, consumption, and disposal stages
+   - A. Renewable, non-renewable, cyclic, and finite resources
+   - B. Provisioning, regulating, cultural, and supporting services ✓
+   - C. Biotic, abiotic, energy, and nutrient components
+   - D. Extraction, production, consumption, and disposal stages
 
    *The MA classified ecosystem services as provisioning (food, fresh water), regulating (water purification, flood control), cultural (recreation, aesthetics), and supporting (soil formation, photosynthesis). The other options describe resource types, ecosystem components, or a materials lifecycle.*
 
 2. **Which of the following is the best example of a regulating ecosystem service?**
-   - A) Timber harvested from a managed forest
-   - B) A forest trail valued for hiking and quiet reflection
-   - C) Photosynthesis that produces atmospheric oxygen
-   - D) A wetland that filters pollutants and buffers floodwaters ✓
+   - A. Timber harvested from a managed forest
+   - B. A forest trail valued for hiking and quiet reflection
+   - C. Photosynthesis that produces atmospheric oxygen
+   - D. A wetland that filters pollutants and buffers floodwaters ✓
 
    *A wetland filtering pollutants and moderating floods is a regulating service. Harvested timber is provisioning, the valued trail is cultural, and photosynthesis is a supporting service.*
 
 3. **How do natural capital and ecosystem services relate to each other?**
-   - A) Natural capital is the stock of natural assets; ecosystem services are the flow of benefits those assets provide ✓
-   - B) Natural capital refers only to non-renewable minerals, while ecosystem services refer only to renewable resources
-   - C) Natural capital and ecosystem services are two names for the same flow of benefits
-   - D) Ecosystem services are the stock of assets, and natural capital is the flow of benefits they produce
+   - A. Natural capital is the stock of natural assets; ecosystem services are the flow of benefits those assets provide ✓
+   - B. Natural capital refers only to non-renewable minerals, while ecosystem services refer only to renewable resources
+   - C. Natural capital and ecosystem services are two names for the same flow of benefits
+   - D. Ecosystem services are the stock of assets, and natural capital is the flow of benefits they produce
 
    *Natural capital is the stock; ecosystem services are the flow it yields, like interest from savings. B wrongly restricts each term to one resource type, C erases the distinction, and D reverses it.*
 
 4. **Fishers share an unregulated coastal fishery. Each boat that adds nets catches more fish immediately, while the decline of the overall stock is shared by everyone, and the fishery eventually collapses. This dynamic is best described as:**
-   - A) The precautionary principle in action
-   - B) Proof that carrying capacity is permanently fixed
-   - C) Garrett Hardin's tragedy of the commons ✓
-   - D) A supporting service in the Millennium Ecosystem Assessment framework
+   - A. The precautionary principle in action
+   - B. Proof that carrying capacity is permanently fixed
+   - C. Garrett Hardin's tragedy of the commons ✓
+   - D. A supporting service in the Millennium Ecosystem Assessment framework
 
    *This is the tragedy of the commons: with open access, each user gains the full benefit of taking more while the cost of overuse is shared, driving collective overexploitation.*
 
 5. **Elinor Ostrom's research, recognized by the 2009 Nobel Memorial Prize in Economic Sciences, qualifies Hardin's commons argument by showing that:**
-   - A) Shared resources never face overuse because markets always self-correct
-   - B) Only government ownership can reliably prevent resource collapse
-   - C) Privatization is always the most efficient solution to shared-resource problems
-   - D) Communities can build their own rules and institutions to govern shared resources sustainably, so collapse is not inevitable ✓
+   - A. Shared resources never face overuse because markets always self-correct
+   - B. Only government ownership can reliably prevent resource collapse
+   - C. Privatization is always the most efficient solution to shared-resource problems
+   - D. Communities can build their own rules and institutions to govern shared resources sustainably, so collapse is not inevitable ✓
 
    *Ostrom documented many communities that sustained fisheries, pastures, and irrigation systems through self-crafted rules, without privatization or state control. B and C restate the two solutions her work moved beyond.*
 

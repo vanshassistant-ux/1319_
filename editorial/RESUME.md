@@ -18,10 +18,14 @@ Read this first on every new run, then `editorial/reports/EDITORIAL_PROGRESS.md`
   `editorial/reports/subjects/hospitality-and-tourism.md`.
 - **Graphic Design and Digital Media is COMPLETE** — 28/28 topics, audited (0 issues),
   reported at `editorial/reports/subjects/graphic-design-and-digital-media.md`.
+- **Environmental Sustainability is COMPLETE** — 25/25 topics, audited (0 issues), reported
+  at `editorial/reports/subjects/environmental-sustainability.md`. (Note: queue entry 25,
+  slug `part-ii-computer-and-technology`, was a mis-ingested section header repurposed into a
+  real lesson titled "Sustainable Computing and E-Waste".)
 
   **RESUMED 2026-08-19 in this `1319_DIR` copy (operator direction: "continue from where
   Hermes left off").** This directory — `/Users/moomoo/Desktop/1319_DIR` — is now the live
-  working repository. Total: **169 / 1,319** topics, 7 / 44 subjects.
+  working repository. Total: **194 / 1,319** topics, 8 / 44 subjects.
 
   **Runtime here: `bun` only (no `node` on PATH).** All `.mjs` pipeline scripts run under
   bun, and the `npm run editorial:*` aliases (which hardcode bun) work as written. The
@@ -29,10 +33,11 @@ Read this first on every new run, then `editorial/reports/EDITORIAL_PROGRESS.md`
   false on this Mac. Use `bun run editorial:*` or `bun scripts/...` directly. Run
   `npm install` once before typecheck/build only.
 
-  Next subject: `environmental-sustainability` (25 topics). The init script does not create
-  `source-map.json` — hand-write it (a science/policy subject: use EPA, NOAA, USGS, DOE/EIA,
-  IPCC, UN sources; date every climate/energy statistic; represent policy debates as
-  attributed and unadjudicated; separate settled science from contested policy).
+  Next subject: `computer-literacy` (25 topics). The init script does not create
+  `source-map.json` — hand-write it (a practical/technical subject: hardware, OS, files,
+  internet, productivity apps, security basics; describe software categories generically
+  without endorsing products; keep security guidance educational; date any statistic).
+  Watch for mis-ingested "PART ..." section-header queue entries as in env-sustainability.
 
   Answer-key note: ask for an EVEN spread across A/B/C/D with "at least one D" — that phrasing
   produced the best balance so far (graphic design 38/36/31/35). Workers frequently MISREPORT

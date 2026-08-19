@@ -92,42 +92,42 @@ Only a small fraction of Earth's water is accessible freshwater, so sustaining i
 ## Practice Question Bank
 
 **1. According to USGS figures, roughly what share of Earth's water is freshwater, and where is most of that freshwater found?**
-- A) About 30% is freshwater, most of it in rivers and lakes
-- B) About 50% is freshwater, split evenly between ice and the oceans
-- C) About 3% is freshwater, and most of that is locked in glaciers, ice, and groundwater ✓
-- D) About 10% is freshwater, nearly all of it in the atmosphere
+- A. About 30% is freshwater, most of it in rivers and lakes
+- B. About 50% is freshwater, split evenly between ice and the oceans
+- C. About 3% is freshwater, and most of that is locked in glaciers, ice, and groundwater ✓
+- D. About 10% is freshwater, nearly all of it in the atmosphere
 
 *USGS puts roughly 96.5% of Earth's water in the oceans as saltwater, leaving about 3.5% freshwater; of that freshwater about 68.7% is in glaciers/ice and about 30.1% is groundwater, so surface water in rivers and lakes is only a sliver. The other options overstate the freshwater share and misplace where it is stored.*
 
 **2. In the United States in 2015, which statement best captures the relationship between water withdrawal and water consumption across sectors?**
-- A) Thermoelectric power withdrew the most water but returned most of it, while irrigation consumed a far larger share of what it withdrew ✓
-- B) Irrigation and thermoelectric power both consumed nearly all of the water they withdrew
-- C) Public supply was the single largest withdrawal category in the United States
-- D) Consumption and withdrawal describe the same quantity, so ranking sectors by either gives identical results
+- A. Thermoelectric power withdrew the most water but returned most of it, while irrigation consumed a far larger share of what it withdrew ✓
+- B. Irrigation and thermoelectric power both consumed nearly all of the water they withdrew
+- C. Public supply was the single largest withdrawal category in the United States
+- D. Consumption and withdrawal describe the same quantity, so ranking sectors by either gives identical results
 
 *USGS 2015 data show thermoelectric power as the largest withdrawal (133 Bgal/d) but it returns most cooling water, whereas irrigation (118 Bgal/d) consumed about 62% of its withdrawals. Public supply (39 Bgal/d) was third, not first, and withdrawal and consumption are distinct metrics.*
 
 **3. Globally, which sector accounts for the largest share of freshwater withdrawals?**
-- A) Industry, at about 69% of global withdrawals
-- B) Municipal and public supply, at about 50% of global withdrawals
-- C) Thermoelectric cooling, at about 41% of global withdrawals
-- D) Agriculture and irrigation, at about 70% of global withdrawals ✓
+- A. Industry, at about 69% of global withdrawals
+- B. Municipal and public supply, at about 50% of global withdrawals
+- C. Thermoelectric cooling, at about 41% of global withdrawals
+- D. Agriculture and irrigation, at about 70% of global withdrawals ✓
 
 *FAO AQUASTAT puts agriculture at about 69% of global freshwater withdrawals, with industry near 19% and municipal use near 12%. The 41% thermoelectric figure is a US withdrawal share, not a global sector total.*
 
 **4. A region has ample rivers and rainfall, but many communities still lack reliable safe water because there are too few wells, treatment plants, and pipes. This situation is best described as:**
-- A) Physical water scarcity
-- B) Economic water scarcity ✓
-- C) Virtual water trade
-- D) Groundwater overdraft
+- A. Physical water scarcity
+- B. Economic water scarcity ✓
+- C. Virtual water trade
+- D. Groundwater overdraft
 
 *Economic water scarcity, in the IWMI framework, means water is physically available but infrastructure and investment to deliver it are lacking. Physical scarcity would mean the resource itself is insufficient, which contradicts the ample rivers described.*
 
 **5. Which statement best describes the aquifer overdraft observed in regions such as the High Plains (Ogallala) aquifer and California's Central Valley?**
-- A) Natural recharge exceeds withdrawals, so stored groundwater is steadily increasing
-- B) The aquifers refill completely within a single wet season, so pumping is fully sustainable
-- C) Depletion is spread evenly across the aquifers and raises no long-term sustainability concern
-- D) Withdrawals persistently exceed recharge, drawing down largely non-renewable "fossil" groundwater faster than it is replaced ✓
+- A. Natural recharge exceeds withdrawals, so stored groundwater is steadily increasing
+- B. The aquifers refill completely within a single wet season, so pumping is fully sustainable
+- C. Depletion is spread evenly across the aquifers and raises no long-term sustainability concern
+- D. Withdrawals persistently exceed recharge, drawing down largely non-renewable "fossil" groundwater faster than it is replaced ✓
 
 *In both regions, sustained pumping for irrigation exceeds slow recharge, depleting fossil groundwater—about 330 cubic kilometers in the High Plains and about 80 cubic kilometers in the Central Valley—that accumulated over thousands of years. Together these regions account for roughly half of US groundwater depletion since 1900.*
 

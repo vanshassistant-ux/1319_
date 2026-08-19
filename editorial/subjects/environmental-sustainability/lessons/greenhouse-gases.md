@@ -89,42 +89,42 @@ A few gases, CO2, methane, nitrous oxide, and synthetic fluorinated gases, drive
 ## Practice Question Bank
 
 1. **In the EPA Inventory of U.S. Greenhouse Gas Emissions and Sinks for 2022, which gas made up the largest share of gross emissions?**
-   - A) Methane (CH4)
-   - B) Carbon dioxide (CO2)
-   - C) Nitrous oxide (N2O)
-   - D) Fluorinated gases
+   - A. Methane (CH4)
+   - B. Carbon dioxide (CO2)
+   - C. Nitrous oxide (N2O)
+   - D. Fluorinated gases
 
    **Answer: B.** CO2 was 79.7% of gross U.S. emissions in 2022. Methane was about 11.1%, nitrous oxide about 6.1%, and fluorinated gases about 3.1%, so none of the others is close to the largest share.
 
 2. **A facility emits 4 metric tons of nitrous oxide (N2O). Using the IPCC AR5 GWP-100 value of 265 that the EPA Inventory applies, what is this in CO2-equivalent?**
-   - A) 265 metric tons CO2e
-   - B) 269 metric tons CO2e
-   - C) 66.25 metric tons CO2e
-   - D) 1,060 metric tons CO2e
+   - A. 265 metric tons CO2e
+   - B. 269 metric tons CO2e
+   - C. 66.25 metric tons CO2e
+   - D. 1,060 metric tons CO2e
 
    **Answer: D.** CO2e = mass x GWP = 4 x 265 = 1,060 metric tons CO2e. "265" ignores the mass, "66.25" divides instead of multiplies, and "269" mistakenly adds the GWP and the mass.
 
 3. **Why does methane slow warming quickly when it is cut, even though carbon dioxide sets the long-run temperature ceiling?**
-   - A) Methane has a much shorter atmospheric lifetime, so reducing it lowers its concentration within about a decade, while CO2 persists for centuries
-   - B) Methane has a lower GWP than CO2, so it warms less overall
-   - C) Methane is emitted in larger quantities than CO2 worldwide
-   - D) Methane is removed from the air by dissolving in the oceans within a year
+   - A. Methane has a much shorter atmospheric lifetime, so reducing it lowers its concentration within about a decade, while CO2 persists for centuries
+   - B. Methane has a lower GWP than CO2, so it warms less overall
+   - C. Methane is emitted in larger quantities than CO2 worldwide
+   - D. Methane is removed from the air by dissolving in the oceans within a year
 
    **Answer: A.** Methane's lifetime is about a decade, so cuts show up fast, whereas a large fraction of emitted CO2 lingers for centuries to millennia and governs the long-run ceiling. Methane's GWP is actually much higher than CO2's, it is emitted in smaller quantities, and its removal takes roughly a decade, not a year.
 
 4. **Two reports list methane's GWP-100 as 28 and as about 27-30. What best explains the difference?**
-   - A) One report measured methane over 20 years and the other over 100 years
-   - B) One value is a measurement error that has since been corrected to zero
-   - C) The values come from different IPCC assessment reports (AR5 versus AR6), each revising the science
-   - D) GWP changes daily with atmospheric methane concentration
+   - A. One report measured methane over 20 years and the other over 100 years
+   - B. One value is a measurement error that has since been corrected to zero
+   - C. The values come from different IPCC assessment reports (AR5 versus AR6), each revising the science
+   - D. GWP changes daily with atmospheric methane concentration
 
    **Answer: C.** The AR5 value is 28 and AR6 (2021) gives roughly 27 for non-fossil and 29.8 for fossil methane; both are GWP-100 values from successive IPCC reports. The horizon is the same (100 years) in both, neither is an error, and GWP is a fixed index, not a daily-varying quantity.
 
 5. **Which statement about a CO2-equivalent (CO2e) figure is correct?**
-   - A) CO2e is meaningful on its own without stating a time horizon
-   - B) CO2e is obtained by multiplying a gas's mass by its GWP over a stated horizon such as GWP-100
-   - C) CO2e applies only to carbon dioxide and not to other gases
-   - D) CO2e equals the gas's atmospheric lifetime in years
+   - A. CO2e is meaningful on its own without stating a time horizon
+   - B. CO2e is obtained by multiplying a gas's mass by its GWP over a stated horizon such as GWP-100
+   - C. CO2e applies only to carbon dioxide and not to other gases
+   - D. CO2e equals the gas's atmospheric lifetime in years
 
    **Answer: B.** CO2e = mass x GWP, and because GWP is defined over a time horizon, a CO2e figure needs that horizon (for example GWP-100) to be meaningful. CO2e is used precisely to put non-CO2 gases on the CO2 scale, and it is a mass, not a lifetime.
 

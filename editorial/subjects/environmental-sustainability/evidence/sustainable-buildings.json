@@ -1,0 +1,241 @@
+{
+  "topicId": "environmental-sustainability:foundations:sustainable-buildings",
+  "subjectId": "environmental-sustainability",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Buildings are a large share of national energy use and emissions",
+      "The pillars of green building: energy efficiency, water efficiency, sustainable materials, indoor environmental quality, and site/location",
+      "Passive design: orientation, glazing/aperture, thermal mass, shading, daylighting, natural ventilation",
+      "Embodied carbon vs operational carbon and why embodied carbon's relative share rises as grids clean up",
+      "Net-zero (zero) energy buildings: efficiency plus on-site renewables on a source-energy basis",
+      "Certification and labeling: LEED (USGBC) and ENERGY STAR for buildings"
+    ],
+    "supporting": [
+      "Building envelope, insulation, and R-value",
+      "Energy codes (ANSI/ASHRAE/IES 90.1, IECC) as the governance layer for envelope performance",
+      "Portfolio Manager benchmarking and the 1-100 ENERGY STAR score"
+    ],
+    "outOfScope": [
+      "Efficiency theory in general (owned by Energy Efficiency topic; applied here to buildings only)",
+      "Urban form and city-scale planning (owned by Sustainable Cities)",
+      "The life-cycle assessment method itself (owned by Life Cycle Assessment; embodied carbon referenced, not the LCA procedure)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Residential and commercial buildings account for roughly 40% of U.S. energy consumption and about 74% of U.S. electricity consumption; EIA's 2023 end-use-plus-losses accounting puts the residential and commercial sectors combined at 36.9% of total U.S. energy consumption.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["gsa-building-energy-use", "eia-buildings-energy-share-faq"],
+      "status": "supported"
+    },
+    {
+      "claim": "Green building addresses several dimensions at once: energy efficiency, water efficiency, sustainable materials, indoor environmental quality, and the building's site/location; LEED's credit categories track these same dimensions.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["usgbc-leed", "doe-ce-0180-insulation-fact-sheet-2008"],
+      "status": "supported"
+    },
+    {
+      "claim": "Passive solar design uses five elements (aperture/collector, absorber, thermal mass, distribution, control) plus south-facing orientation, overhangs for seasonal shading, daylighting, and night ventilation to cut heating, cooling, and lighting loads before any mechanical system is sized.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["doe-passive-solar-home-design-guide"],
+      "status": "supported"
+    },
+    {
+      "claim": "Operational carbon is the emissions from energy used to run a building; embodied carbon is the emissions from making, transporting, installing, and disposing of its materials. Embodied carbon is front-loaded and cannot be reduced after construction, and its relative share of lifecycle emissions grows as buildings get more efficient and grids decarbonize; Architecture 2030 (cited by GSA) projects embodied carbon at about 74% of new-construction emissions over the coming decade.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["gsa-embodied-carbon-imperative"],
+      "status": "supported"
+    },
+    {
+      "claim": "DOE defines a zero (net-zero) energy building as an energy-efficient building where, on a source-energy basis, the actual annual delivered energy is less than or equal to the on-site renewable exported energy — achieved by first minimizing loads and then adding on-site renewables.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["doe-zero-energy-buildings"],
+      "status": "supported"
+    },
+    {
+      "claim": "ENERGY STAR for buildings provides the free Portfolio Manager benchmarking tool and a 1-100 ENERGY STAR score comparing a building to similar U.S. properties; a building scoring in the top 25% nationwide (a score of 75 or higher) is eligible for ENERGY STAR certification, and certified buildings use about 35% less energy than average peers.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["energystar-buildings-about"],
+      "status": "supported"
+    },
+    {
+      "claim": "LEED, administered by USGBC/GBCI, is a voluntary green-building rating system with four ascending certification levels (Certified, Silver, Gold, Platinum) awarded on points earned across categories including energy, water, materials, and indoor environmental quality.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["usgbc-leed"],
+      "status": "supported"
+    },
+    {
+      "claim": "The thermal performance of a building's envelope is governed by adopted energy codes: under the Energy Conservation and Production Act DOE determines whether revised ANSI/ASHRAE/IES 90.1 or IECC editions improve efficiency, after which states review and update their codes.",
+      "claimType": "LEGAL",
+      "sourceIds": ["doe-building-energy-codes-determinations"],
+      "status": "supported"
+    },
+    {
+      "claim": "R-value measures a material's resistance to heat flow; it depends on material, thickness, and density, layer R-values add, and poor installation (gaps, compression) prevents insulation from delivering its rated R-value.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["doe-ce-0180-insulation-fact-sheet-2008"],
+      "status": "supported"
+    },
+    {
+      "claim": "Within U.S. end-use energy in 2025, the residential sector was about 15% and the commercial sector about 13% of the end-use total, confirming buildings as a major demand sector.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["eia-consumption-source-sector-2025"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "The 'buildings = ~40% of U.S. energy' figure varies with accounting method.",
+      "positions": [
+        "DOE/GSA cite ~40% of total U.S. energy and ~74% of electricity for residential + commercial buildings.",
+        "EIA's 2023 breakdown attributes 36.9% of total U.S. energy consumption (end use plus each sector's share of electrical system losses) to the residential and commercial sectors combined."
+      ],
+      "resolution": "Both are correct under different bookkeeping; the lesson presents ~40% as the commonly cited figure and gives EIA's precise 2023 value (36.9%) with its year, and treats the 74% electricity figure separately."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only boilerplate ('Sustainable Buildings is a foundational concept...') with no factual content about buildings, energy, materials, or certification."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire boilerplate draft with researched, sourced content.",
+    "Added dated, sourced energy figures instead of undated generalities.",
+    "Distinguished operational from embodied carbon and net-zero energy on a source-energy basis, which the draft omitted entirely."
+  ],
+  "rightsIssues": [
+    "USGBC LEED is proprietary and REFERENCE_ONLY: the lesson names the four certification levels and credit categories at a high level and describes what LEED does, but does not reproduce the point thresholds or the rating-system tables.",
+    "ENERGY STAR program details are public-facing government material used as REFERENCE_ONLY; no wording reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "gsa-building-energy-use",
+      "title": "Building Energy Use",
+      "provider": "U.S. General Services Administration",
+      "url": "https://www.gsa.gov/governmentwide-initiatives/federal-highperformance-buildings/highperformance-building-clearinghouse/energy/building-energy-use",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Fetched 2026-08-19 (HTTP 200). Supports the commonly cited figures that buildings and facilities account for approximately 40% of annual U.S. energy consumption and 74% of annual U.S. electricity consumption, attributed by GSA to the U.S. Department of Energy. No year specified on the page; paired with the dated EIA FAQ for the precise vintage. No wording reproduced."
+    },
+    {
+      "id": "eia-buildings-energy-share-faq",
+      "title": "How much energy is consumed in U.S. buildings? (FAQ)",
+      "provider": "U.S. Energy Information Administration",
+      "url": "https://www.eia.gov/tools/faqs/faq.php?id=86&t=1",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Fetched 2026-08-19 (HTTP 200). Supports the precise 2023 accounting: residential and commercial sectors were about 27.6% of total U.S. end-use energy consumption, and 36.9% of total U.S. energy consumption when each sector's share of electrical system losses is included (residential 19.7%, commercial 17.2%). Data year 2023, page based on the April 2024 Monthly Energy Review. Used to date the ~40% figure. No wording reproduced."
+    },
+    {
+      "id": "doe-passive-solar-home-design-guide",
+      "title": "Guide to Passive Solar Home Design",
+      "provider": "U.S. Department of Energy",
+      "url": "https://www.energy.gov/sites/prod/files/guide_to_passive_solar_home_design.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "PDF fetched and read 2026-08-19 (HTTP 200; 1.5 MB). Supports the five elements of passive solar design (aperture/collector, absorber, thermal mass, distribution, control), south-facing glazing orientation, overhangs for seasonal shading, daylighting, and night ventilation for summer comfort. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "gsa-embodied-carbon-imperative",
+      "title": "The Embodied Carbon Imperative: GSA's Next Big Sustainability Opportunity",
+      "provider": "U.S. General Services Administration",
+      "url": "https://www.gsa.gov/blog/2021/04/05/the-embodied-carbon-imperative-gsas-next-big-sustainability-opportunity",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Fetched 2026-08-19. Supports the definition of embodied carbon (emissions from mining, harvesting, processing, manufacturing, transportation, and installation of materials) versus operational carbon (day-to-day energy use), the point that embodied carbon's relative share grows as operational efficiency improves, and the Architecture 2030 projection (cited by GSA) that embodied carbon will account for about 74% of new-construction emissions over the coming decade. The 53% embodied-carbon saving on the Edith Green-Wendell Wyatt renovation vs. new construction is used as illustration. Blog dated 2021-04-05. No wording reproduced."
+    },
+    {
+      "id": "doe-zero-energy-buildings",
+      "title": "Zero Energy Buildings Resource Hub",
+      "provider": "U.S. Department of Energy",
+      "url": "https://www.energy.gov/cmei/buildings/zero-energy-buildings-resource-hub",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Fetched 2026-08-19 (page redirects from /eere/buildings/zero-energy-buildings). Supports the DOE common definition of a zero (net-zero) energy building as an energy-efficient building where, on a source-energy basis, actual annual delivered energy is less than or equal to on-site renewable exported energy, achieved by minimizing loads first and then adding on-site renewables such as solar. Definition corroborated by DOE's 'A Common Definition for Zero Energy Buildings' (2015). No wording reproduced."
+    },
+    {
+      "id": "energystar-buildings-about",
+      "title": "About ENERGY STAR for Commercial Buildings",
+      "provider": "U.S. Environmental Protection Agency (ENERGY STAR)",
+      "url": "https://www.energystar.gov/buildings/about-us",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Fetched 2026-08-19. Supports: ENERGY STAR is a voluntary EPA program; Portfolio Manager is a free benchmarking tool (nearly 35 billion sq ft across 330,000+ buildings, ~25% of U.S. commercial space); the 1-100 ENERGY STAR score compares a building to similar U.S. properties; certification requires ranking in the top 25% nationwide (score of 75+); certified buildings use about 35% less energy and produce about 35% fewer emissions than average peers. No wording reproduced."
+    },
+    {
+      "id": "usgbc-leed",
+      "title": "LEED rating system",
+      "provider": "U.S. Green Building Council (USGBC)",
+      "url": "https://www.usgbc.org/leed",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Fetched 2026-08-19. Proprietary rating system; REFERENCE_ONLY. Supports: LEED is a widely used voluntary green-building rating system developed by USGBC and administered through GBCI, with four ascending certification levels (Certified, Silver, Gold, Platinum) awarded on points earned across categories including energy, water, materials/resources, and indoor environmental quality. The lesson describes what LEED does and names its levels/categories; it does NOT reproduce the point thresholds or rating tables."
+    },
+    {
+      "id": "doe-building-energy-codes-determinations",
+      "title": "Building Energy Codes Program: Determinations",
+      "provider": "U.S. Department of Energy",
+      "url": "https://www.energycodes.gov/determinations",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused from source-registry (verified 2026-08-19). Supports the governance point that building envelope thermal performance is set by adopted energy codes: under the Energy Conservation and Production Act (42 U.S.C. 6833) DOE must determine whether a revised ANSI/ASHRAE/IES 90.1 or IECC edition improves energy efficiency, after which states review, update, or certify their codes. No code requirement reproduced."
+    },
+    {
+      "id": "doe-ce-0180-insulation-fact-sheet-2008",
+      "title": "Insulation Fact Sheet (DOE/CE-0180, 2008)",
+      "provider": "U.S. Department of Energy, Office of Energy Efficiency and Renewable Energy",
+      "url": "https://www.energystar.gov/sites/default/files/asset/document/Insulation%20Fact%20Sheet.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused from source-registry (verified 2026-08-19). Supports: R-value is thermal resistance and indicates resistance to heat flow; R-value depends on material type, thickness and density; layer R-values add; compressed or gapped insulation does not deliver its rated R-value, so installation quality governs assembly performance. Used for the envelope/insulation content."
+    },
+    {
+      "id": "eia-consumption-source-sector-2025",
+      "title": "U.S. energy consumption by source and sector, 2025 (chart)",
+      "provider": "U.S. Energy Information Administration",
+      "url": "https://www.eia.gov/energyexplained/us-energy-facts/images/consumption-by-source-and-sector.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused from source-registry (verified 2026-08-19). Supports the sector split within U.S. end-use energy in 2025: residential 11.8 quads (15%) and commercial 9.9 quads (13%) of the 76.5-quad end-use total. Chart based on the EIA Monthly Energy Review dated April 2026. Used to corroborate buildings as a major demand sector."
+    }
+  ]
+}
