@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "subjectSlug": "health-administration",
+  "note": "Discovery leads for topic workers. Every topic must still research and verify its own sources; nothing here is pre-approved for reuse. Prefer primary federal sources for law, financing, and program facts; date every statistic.",
+  "reviewProfile": ["health-adjacent", "legal-adjacent", "financial-adjacent"],
+  "tierA": [
+    { "provider": "CMS — Centers for Medicare & Medicaid Services", "url": "https://www.cms.gov/", "useFor": "Medicare and Medicaid program rules, coverage, payment systems, DRGs, quality programs" },
+    { "provider": "CMS National Health Expenditure Data", "url": "https://www.cms.gov/data-research/statistics-trends-and-reports/national-health-expenditure-data", "useFor": "national health spending totals and shares — date every figure" },
+    { "provider": "Medicare.gov / official program pages", "url": "https://www.medicare.gov/", "useFor": "Medicare Parts A/B/C/D structure and enrollment facts" },
+    { "provider": "Medicaid.gov", "url": "https://www.medicaid.gov/", "useFor": "Medicaid and CHIP as joint federal-state programs, eligibility framework" },
+    { "provider": "HHS Office for Civil Rights (HIPAA)", "url": "https://www.hhs.gov/hipaa/", "useFor": "Privacy Rule, Security Rule, Breach Notification Rule — describe, do not reproduce guidance text" },
+    { "provider": "45 CFR Parts 160, 162, 164 (HIPAA Administrative Simplification)", "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164", "useFor": "the actual regulatory text of the Privacy and Security Rules" },
+    { "provider": "HealthCare.gov glossary", "url": "https://www.healthcare.gov/glossary/", "useFor": "insurance terms: premium, deductible, copay, coinsurance, out-of-pocket maximum, network" },
+    { "provider": "ONC — Office of the National Coordinator for Health IT / HealthIT.gov", "url": "https://www.healthit.gov/", "useFor": "EHR certification, interoperability, USCDI, information blocking, HITECH context" },
+    { "provider": "AHRQ — Agency for Healthcare Research and Quality", "url": "https://www.ahrq.gov/", "useFor": "patient safety, quality measurement, PSNet, TeamSTEPPS concepts" },
+    { "provider": "AHRQ Patient Safety Network (PSNet)", "url": "https://psnet.ahrq.gov/", "useFor": "root cause analysis, never events, just culture, Swiss cheese model context" },
+    { "provider": "CDC / NCHS ICD-10-CM", "url": "https://www.cdc.gov/nchs/icd/icd-10-cm/", "useFor": "diagnosis coding system maintenance and structure" },
+    { "provider": "Bureau of Labor Statistics Occupational Outlook Handbook — Healthcare & Medical/Health Services Managers", "url": "https://www.bls.gov/ooh/management/medical-and-health-services-managers.htm", "useFor": "roles, employment, workforce data — date figures" },
+    { "provider": "MedlinePlus (NLM)", "url": "https://medlineplus.gov/", "useFor": "plain-language definitions of clinical settings and terms" },
+    { "provider": "Federal Register", "url": "https://www.federalregister.gov/", "useFor": "final rules (e.g., interoperability, payment updates) when a primary agency host blocks fetching" }
+  ],
+  "tierB": [
+    { "provider": "National Academies (IOM/NASEM) — To Err Is Human (2000), Crossing the Quality Chasm (2001)", "url": "https://nap.nationalacademies.org/", "useFor": "quality and safety foundations — attribute correctly, do not overstate the mortality estimate" },
+    { "provider": "IHI — Institute for Healthcare Improvement", "url": "https://www.ihi.org/", "useFor": "Triple Aim (Berwick, Nolan, Whittington 2008), Model for Improvement, PDSA — REFERENCE_ONLY" },
+    { "provider": "KFF — Kaiser Family Foundation", "url": "https://www.kff.org/", "useFor": "health policy and coverage data/explainers — secondary; verify underlying primary figures and date them" },
+    { "provider": "Open Textbook Library / health administration & management OER", "url": "https://open.umn.edu/opentextbooks", "useFor": "open texts on healthcare management and US health systems" },
+    { "provider": "AHIMA / body-of-knowledge references", "url": "https://www.ahima.org/", "useFor": "health information management concepts — REFERENCE_ONLY, do not reproduce standards text" }
+  ],
+  "cautions": [
+    "This subject is health-adjacent and administrative. Lessons teach how healthcare organizations, financing, and information systems work — never individualized clinical, diagnostic, treatment, coding, billing, legal, or benefits-eligibility advice. Teach the concept, not case direction.",
+    "Program facts are time-sensitive. Date every statistic (national health spending, Medicare/Medicaid enrollment, uninsured rate, cost figures) and name the year and source. Do not present a figure without its year.",
+    "HIPAA is a 1996 statute implemented through 45 CFR Parts 160, 162, and 164; the HITECH Act (2009) strengthened it. Distinguish the Privacy Rule, the Security Rule, and the Breach Notification Rule precisely. Cite the regulation itself; describe requirements in original wording; do not reproduce OCR guidance verbatim. Say that covered entities and business associates are the regulated parties.",
+    "Medicare has Parts A, B, C (Medicare Advantage), and D; it is federal. Medicaid is a joint federal-state program with state-level variation; do not conflate the two, and do not state eligibility rules as universal.",
+    "Medical coding systems are distinct: ICD-10-CM (diagnoses, maintained by CDC/NCHS and CMS), ICD-10-PCS (inpatient procedures, CMS), CPT (outpatient/professional procedures, owned and copyrighted by the AMA), HCPCS, and MS-DRGs (inpatient payment groups). CPT and DRG descriptors are copyrighted — REFERENCE_ONLY; describe the systems, never reproduce code descriptors or code lists.",
+    "Quality and safety history is widely misquoted. 'To Err Is Human' (IOM, 2000) is the source of the 44,000–98,000 preventable-death estimate — attribute it, give the range, and note it was an estimate that has been debated, not a settled count. 'Crossing the Quality Chasm' (2001) names the six aims (safe, effective, patient-centered, timely, efficient, equitable). Attribute the Triple Aim to IHI (Berwick, Nolan, Whittington, 2008).",
+    "Attribute safety frameworks correctly: the Swiss cheese model to James Reason; 'just culture' as a defined concept distinct from blame-free or punitive culture; root cause analysis as a structured retrospective method, not a tool for assigning individual blame.",
+    "The Joint Commission, NCQA, and AHIMA publish copyrighted standards and materials. Cite and describe them; never reproduce their standards text. Accreditation is voluntary but often tied to CMS Conditions of Participation — state that relationship accurately.",
+    "EHR and interoperability facts rest on the HITECH Act (2009, which funded adoption), the shift from 'Meaningful Use' to 'Promoting Interoperability', ONC certification, USCDI, FHIR, and the 21st Century Cures Act information-blocking rule. Get the chronology and program names right.",
+    "Some federal hosts (cms.gov, hhs.gov, cdc.gov, bls.gov) intermittently block automated fetching. Route via ecfr.gov APIs, federalregister.gov, govinfo, PMC/Europe PMC, or Internet Archive captures, and record in each source note which copy you actually read while registering the canonical agency URL.",
+    "Distribute question answer keys evenly across positions A/B/C/D. Prior subjects skewed the correct answer away from position D; place keys deliberately so no position is under-represented."
+  ]
+}

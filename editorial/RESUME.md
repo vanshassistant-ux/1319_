@@ -13,13 +13,21 @@ Read this first on every new run, then `editorial/reports/EDITORIAL_PROGRESS.md`
 - **Engineering Fundamentals is COMPLETE** — 28/28 topics, audited (0 issues), reported at
   `editorial/reports/subjects/engineering-fundamentals.md`.
 
-  **STOPPED BY OWNER 2026-08-19 after completing this subject.** No agent may be assigned
-  and no new subject may be initialized until the owner says what to do next.
+  **PAUSE LIFTED 2026-08-19. Work moved to a VM.**
 
-  When told to continue, the next Phase 1 subject in order is `health-administration`
-  (24 topics): `bun run editorial:init 1 health-administration`, write its source-map.json
-  (it is health-adjacent — see the social-work source map for the pattern), then run the
-  normal loop below.
+  **The VM copy of `1319_DIR` is the canonical working repository.** This Mac copy at
+  `/Users/moomoo/Desktop/ELI_WEBSITE` is FROZEN at 97 topics (commit 302f8b7) while Hermes
+  runs on the VM. Do not edit it. When Hermes finishes, the VM copy is copied back over this
+  one wholesale — never hand-merged. Exactly one machine holds the live repository at a time.
+
+  **Runtime on the VM: Node 22, no bun.** All pipeline scripts run under Node directly
+  (`node scripts/editorial-progress.mjs`, etc.) — they import only `node:` builtins. The
+  `npm run editorial:*` aliases hardcode bun and will fail; call script paths directly.
+  `scripts/promote-reviewed-topic.mjs` is the one bun-dependent script; it is deprecated and
+  unnecessary. Run `npm install` once before typecheck/build only.
+
+  Next subject: `health-administration` (24 topics). The init script does not create
+  `source-map.json` — hand-write it, using the social-work map as the pattern.
 
 - **No other subject may be started** until this one has zero unprocessed topics,
   a subject audit, and a subject report.
