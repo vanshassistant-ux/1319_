@@ -1,0 +1,168 @@
+{
+  "topicId": "health-administration:law-and-policy:patient-privacy",
+  "subjectId": "health-administration",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "The ethical and practical foundation of confidentiality: candid disclosure and care depend on trust that information is protected",
+      "Privacy vs confidentiality vs security as three distinct but related concepts",
+      "Protected health information (PHI) and the minimum necessary principle, including the treatment exception",
+      "Permitted uses and disclosures at a conceptual level (treatment, payment, operations) and the role of authorization",
+      "Core patient rights over their information (access, amendment, accounting of disclosures, notice of privacy practices)",
+      "Special protections beyond baseline HIPAA: 42 CFR Part 2 for SUD records and stricter state laws",
+      "Everyday privacy practice in a healthcare setting (need-to-know, credentials, verbal privacy, disposal)"
+    ],
+    "supporting": [
+      "De-identified information is not PHI and can be used more freely",
+      "HIPAA is a floor; the more protective rule generally governs (preemption / more stringent)"
+    ],
+    "outOfScope": [
+      "The detailed HIPAA rule structure: Privacy Rule / Security Rule / Breach Notification Rule mechanics, covered entity and business associate machinery, enforcement and penalties (owned by HIPAA Foundations)",
+      "Records governance lifecycle and release-of-information mechanics (owned by Health Information Management)",
+      "EHR and security technical controls in depth (owned by Electronic Health Records)",
+      "Individualized legal, compliance, or benefits advice"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Confidentiality is foundational because honest clinical disclosure, and therefore accurate diagnosis and effective care, depends on patients trusting that their information is protected; the HIPAA Privacy Rule's stated goal is to protect health information while allowing the flow of information needed for care and public health.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["hhs-ocr-summary-privacy-rule", "ecfr-45-cfr-164-subpart-e-privacy-rule"],
+      "status": "supported"
+    },
+    {
+      "claim": "Privacy (the patient's right to control access), confidentiality (the duty of those entrusted to protect information), and security (the administrative, physical, and technical safeguards that enforce protection) are distinct concepts; HIPAA maps them roughly onto the Privacy Rule and Security Rule.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ecfr-45-cfr-164-subpart-e-privacy-rule", "hhs-ocr-summary-privacy-rule"],
+      "status": "supported"
+    },
+    {
+      "claim": "Protected health information is individually identifiable health information held or transmitted by a covered entity or business associate in any form; identifiers tied to health information, including the fact that a person is a patient, are covered. Properly de-identified information is not PHI.",
+      "claimType": "LEGAL",
+      "sourceIds": ["ecfr-45-cfr-160-hipaa-general-provisions", "ecfr-45-cfr-164-subpart-e-privacy-rule"],
+      "status": "supported"
+    },
+    {
+      "claim": "The minimum necessary principle requires reasonable efforts to limit use, disclosure, or request of PHI to the least needed for the purpose (45 CFR 164.502(b), 164.514(d)); it does not apply to disclosures to a health care provider for treatment.",
+      "claimType": "LEGAL",
+      "sourceIds": ["ecfr-45-cfr-164-subpart-e-privacy-rule"],
+      "status": "supported"
+    },
+    {
+      "claim": "A covered entity may use and disclose PHI without separate authorization for treatment, payment, and health care operations (45 CFR 164.506) and for defined public-purpose disclosures; other uses, such as most marketing or releasing psychotherapy notes, generally require the patient's written authorization (45 CFR 164.508).",
+      "claimType": "LEGAL",
+      "sourceIds": ["ecfr-45-cfr-164-subpart-e-privacy-rule"],
+      "status": "supported"
+    },
+    {
+      "claim": "Individuals have rights over their information including the right to inspect and obtain a copy (164.524), request an amendment (164.526), receive an accounting of disclosures (164.528), request restrictions and confidential communications (164.522), and receive a notice of privacy practices (164.520).",
+      "claimType": "LEGAL",
+      "sourceIds": ["ecfr-45-cfr-164-subpart-e-privacy-rule"],
+      "status": "supported"
+    },
+    {
+      "claim": "Substance use disorder treatment records from federally assisted programs receive heightened confidentiality under 42 CFR Part 2, historically requiring patient consent for many disclosures HIPAA would permit; a 2024 final rule (89 FR 12472, effective April 16, 2024, compliance February 16, 2026) aligned parts of Part 2 with HIPAA while preserving heightened protection.",
+      "claimType": "LEGAL",
+      "sourceIds": ["ecfr-42-cfr-part-2-sud-records", "fr-2024-42-cfr-part-2-final-rule"],
+      "status": "supported"
+    },
+    {
+      "claim": "HIPAA sets a national floor; where a state law is more stringent (more protective of privacy) it generally is not preempted and governs (45 CFR 160.202-160.203).",
+      "claimType": "LEGAL",
+      "sourceIds": ["ecfr-45-cfr-160-hipaa-general-provisions"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether 42 CFR Part 2 still meaningfully differs from HIPAA after the 2024 final rule",
+      "positions": [
+        "The 2024 rule aligned several Part 2 provisions (e.g., a single consent for TPO, HIPAA-style breach and enforcement) with HIPAA",
+        "Part 2 retains heightened protections, including restrictions on use in legal proceedings without consent or a court order"
+      ],
+      "resolution": "The lesson states that Part 2 was aligned in part while preserving heightened protection, which both positions support; it avoids asserting Part 2 is now identical to HIPAA."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only boilerplate ('a foundational concept... its meaning, its context, and a simple way to apply it') with no substantive factual claims to support or refute."
+  ],
+  "correctionsNeeded": [
+    "Replaced the boilerplate draft entirely with sourced substance.",
+    "Ensured the lesson references HIPAA's rule structure without re-teaching Privacy/Security/Breach mechanics, honoring the anti-duplication boundary with HIPAA Foundations."
+  ],
+  "rightsIssues": [
+    "HHS OCR 'Summary of the HIPAA Privacy Rule' host blocked automated fetching; recorded REFERENCE_ONLY, framing confirmed via search results and cross-checked against the regulatory text, no wording reproduced.",
+    "All eCFR and Federal Register sources are U.S. government works in the public domain; prose is original synthesis."
+  ],
+  "sourceRecords": [
+    {
+      "id": "ecfr-45-cfr-160-hipaa-general-provisions",
+      "title": "45 CFR Part 160 - General Administrative Requirements (HIPAA applicability, definitions, and preemption)",
+      "provider": "U.S. Government Publishing Office / Office of the Federal Register (eCFR)",
+      "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-160",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. federal regulation; edict of government, not subject to copyright",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused from the shared registry (same id and URL). Sections 160.103 (definitions of covered entity, business associate, and protected health information) and 160.202-160.203 (more stringent / preemption) support the PHI definition, the identity of the regulated parties, and the HIPAA-is-a-floor claim and question 3."
+    },
+    {
+      "id": "ecfr-45-cfr-164-subpart-e-privacy-rule",
+      "title": "45 CFR Part 164 Subpart E - Privacy of Individually Identifiable Health Information",
+      "provider": "U.S. Government Publishing Office / Office of the Federal Register (eCFR)",
+      "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. federal regulation; edict of government, not subject to copyright",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused from the shared registry (same id and URL). Read via the eCFR versioner API at the 2026-08-01 point in time: 164.502(b) and 164.514(d) (minimum necessary and its treatment exception), 164.506 (treatment, payment, health care operations), 164.508 (authorizations), 164.514(a)-(b) (de-identification), and 164.520, 164.522, 164.524, 164.526, 164.528 (notice of privacy practices and the access, restriction, amendment, and accounting-of-disclosures rights). Supports the minimum necessary, permitted-use, de-identification, and patient-rights claims and questions 1, 2, 3, and 5."
+    },
+    {
+      "id": "ecfr-42-cfr-part-2-sud-records",
+      "title": "42 CFR Part 2 - Confidentiality of Substance Use Disorder Patient Records",
+      "provider": "U.S. Government Publishing Office / Office of the Federal Register (eCFR)",
+      "url": "https://www.ecfr.gov/current/title-42/chapter-I/subchapter-A/part-2",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. federal regulation; edict of government, not subject to copyright",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused from the shared registry (same id and URL). Supports the claim that substance use disorder treatment records from federally assisted programs receive heightened confidentiality beyond baseline HIPAA and question 4."
+    },
+    {
+      "id": "fr-2024-42-cfr-part-2-final-rule",
+      "title": "Confidentiality of Substance Use Disorder (SUD) Patient Records; Final Rule, 89 FR 12472",
+      "provider": "U.S. Department of Health and Human Services (Office for Civil Rights and SAMHSA), via the Federal Register",
+      "url": "https://www.federalregister.gov/documents/2024/02/16/2024-02544/confidentiality-of-substance-use-disorder-sud-patient-records",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work; Federal Register document",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused from the shared registry (same id and URL). Supports the statement that a 2024 final rule aligned parts of 42 CFR Part 2 with HIPAA (effective April 16, 2024; compliance February 16, 2026) while preserving heightened protection, informing question 4."
+    },
+    {
+      "id": "hhs-ocr-summary-privacy-rule",
+      "title": "Summary of the HIPAA Privacy Rule",
+      "provider": "U.S. Department of Health and Human Services, Office for Civil Rights",
+      "url": "https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "The hhs.gov host blocked automated fetching (Akamai 'Access Denied' via WebFetch and via curl with a browser user agent; web.archive.org and the OCR privacysummary.pdf path were also blocked). OCR's framing that a major goal of the Privacy Rule is to protect individuals' health information while allowing the flow of information needed to provide high-quality care and protect public health was confirmed from the OCR page surfaced by domain-scoped WebSearch and cross-checked against the regulatory text in 45 CFR Part 164 Subpart E. Cited REFERENCE_ONLY; no OCR guidance wording reproduced. Supports the trust/foundation framing and the individual-rights framing in questions 1, 2, and 5."
+    }
+  ]
+}

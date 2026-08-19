@@ -1,0 +1,219 @@
+{
+  "topicId": "health-administration:information:healthcare-data-and-analytics",
+  "subjectId": "health-administration",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Types of healthcare data: clinical, administrative/claims, financial, and patient-generated data",
+      "The four analytics tiers — descriptive (what happened), diagnostic (why), predictive (what may happen), prescriptive (what to do) — with healthcare examples",
+      "Key data sources: insurance claims, EHR data, disease/patient registries, vital statistics, and population surveys",
+      "Structured versus unstructured data (coded/tabular fields vs free-text notes and images)",
+      "Population health analytics and risk stratification into risk tiers to target resources",
+      "Dashboards and key performance indicators (KPIs) as the delivery layer for descriptive analytics",
+      "How data quality (completeness, accuracy, timeliness) governs what analytics can be trusted",
+      "Predictive models and AI in healthcare: bias, validation, decision-support (not diagnosis) framing, and FDA regulation of AI-enabled medical devices"
+    ],
+    "supporting": [
+      "A simple worked rate/ratio (30-day readmission rate) as descriptive analytics",
+      "Interpreting risk-stratification tiers for a primary-care panel",
+      "USCDI as a standardized set of structured data classes for interoperable exchange"
+    ],
+    "outOfScope": [
+      "EHR system features, adoption history, Meaningful Use / Promoting Interoperability mechanics — owned by Electronic Health Records (EHR is treated here only as a data SOURCE)",
+      "Records governance, retention, and the data lifecycle — owned by Health Information Management",
+      "Quality-measure definitions and the Donabedian framework — owned by Healthcare Quality (quality metrics used here only as analytics examples)",
+      "Individualized clinical, diagnostic, coding, or billing advice",
+      "Detailed national health spending figures — owned by Healthcare Costs"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Healthcare analytics is commonly organized into four types along a maturity ladder: descriptive analytics (reviews historical data to identify patterns; 'what happened'), diagnostic analytics ('why did it happen'), predictive analytics (uses historical data and statistical modeling to forecast future outcomes; 'what may happen'), and prescriptive analytics (builds on diagnostic and predictive analytics to recommend specific actions).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["statpearls-healthcare-analytics"],
+      "status": "supported"
+    },
+    {
+      "claim": "In healthcare, descriptive analytics includes cross-sectional summaries and graphs of past events; predictive analytics includes forecasting readmission risk or staffing needs; and prescriptive analytics includes computerized clinical decision support and automated treatment guidance.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["statpearls-healthcare-analytics"],
+      "status": "supported"
+    },
+    {
+      "claim": "Healthcare data used for analytics originates from many sources, including electronic health records, medical imaging, insurance claims, patient surveys, wearable devices, genomics, and pharmaceutical data.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["statpearls-healthcare-analytics"],
+      "status": "supported"
+    },
+    {
+      "claim": "Structured data are standardized, coded, tabular fields — diagnosis and procedure codes, laboratory values, vital signs, and medications — while unstructured data are free-text and narrative content such as clinical notes, radiology reports, and images; the United States Core Data for Interoperability (USCDI) is a standardized set of data classes and elements (including classes such as Laboratory, Medications, and Clinical Notes) for nationwide interoperable exchange.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["healthit-uscdi", "cdc-nchs-icd10-cm-pcs-background", "statpearls-healthcare-analytics"],
+      "status": "supported"
+    },
+    {
+      "claim": "USCDI is stewarded by ONC on behalf of HHS and has grown from 53 data elements in version 1 (2020) to over 170 elements by version 7 (2026), with a new version finalized each July.",
+      "claimType": "CURRENT",
+      "sourceIds": ["healthit-uscdi"],
+      "status": "supported"
+    },
+    {
+      "claim": "Vital statistics are a core public-health data source: the National Vital Statistics System (NVSS) provides the nation's official statistics on births and deaths, with 57 vital-registration jurisdictions (the 50 states, New York City, the District of Columbia, and 5 territories) transmitting information on more than 6 million vital events to NCHS each year.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["cdc-nvss-about-vital-statistics"],
+      "status": "supported"
+    },
+    {
+      "claim": "Administrative/claims data are a major analytics source: AHRQ Quality Indicators are standardized measures computed from readily available hospital inpatient administrative discharge data, illustrating how billing-oriented claims data are reused for quality and utilization analytics.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ahrq-quality-indicators"],
+      "status": "supported"
+    },
+    {
+      "claim": "Risk stratification is a population health management technique that segments a patient population into distinct groups of similar complexity and need (for example high-risk, rising-risk, and low-risk tiers) so that limited care-management resources can be prioritized and interventions tailored, proactively managing the smaller high-risk group that accounts for a disproportionate share of utilization and spending.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["pmc-population-risk-stratification-primary-care"],
+      "status": "supported"
+    },
+    {
+      "claim": "Analytics is only as trustworthy as its inputs: relying on unverified or third-party data can compromise data integrity through collection errors, misinterpretation, language barriers, human mistakes, or electronic interference, so data quality (completeness, accuracy, timeliness) constrains what any analysis can support.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["statpearls-healthcare-analytics"],
+      "status": "supported"
+    },
+    {
+      "claim": "Predictive and machine-learning models in healthcare are subject to algorithmic bias, where historical data may reinforce existing disparities and lead to unfair outcomes, and model reliability depends heavily on the characteristics and labeling of the training data.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["statpearls-healthcare-analytics"],
+      "status": "supported"
+    },
+    {
+      "claim": "AI-enabled clinical software is regulated: the FDA maintains a public list of AI-enabled medical devices authorized for marketing in the United States, all of which met the FDA's applicable premarket requirements including a focused review of overall safety and effectiveness; these are decision-support tools that must pass regulatory review rather than autonomous replacements for clinician judgment, and radiology accounts for the largest share of authorized devices.",
+      "claimType": "LEGAL",
+      "sourceIds": ["fda-ai-enabled-medical-devices"],
+      "status": "supported"
+    },
+    {
+      "claim": "A 30-day readmission rate is a descriptive-analytics ratio computed as readmissions divided by discharges; for 168 readmissions among 1,200 discharges the rate is 14.0%, and comparing a 15.0% unit with a 13.0% unit gives a ratio of about 1.15, a diagnostic-analytics prompt to ask why the units differ.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["statpearls-healthcare-analytics", "ahrq-quality-indicators"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "The exact count of vital events reported to NCHS each year and the precise number of FDA-authorized AI-enabled devices",
+      "positions": [
+        "NCHS materials variously describe roughly 6.7-6.8 million birth, death, and fetal-death records per year",
+        "Secondary trackers report several hundred to over a thousand FDA AI/ML-enabled devices depending on the cutoff date"
+      ],
+      "resolution": "The lesson states durable, checkable facts — 'more than 6 million vital events per year' and 'a public FDA list of AI-enabled devices that met premarket review' — and avoids asserting a single precise, fast-moving count. Precise figures are dated to their source where used."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft was placeholder boilerplate ('a foundational concept', 'ask better questions') with no substantive, sourced content about data types, analytics tiers, data sources, or AI."
+  ],
+  "correctionsNeeded": [
+    "Replaced all placeholder text with sourced substance on healthcare data types, the four analytics tiers, data sources, structured vs unstructured data, risk stratification, data quality, and regulated clinical AI.",
+    "Kept EHR system mechanics, records governance, and quality-measure definitions out of scope to avoid duplication with sibling topics; EHR, claims, registries, and vital statistics appear only as data sources.",
+    "Framed AI/predictive models honestly as regulated decision-support tools subject to bias and validation, not diagnostic authorities."
+  ],
+  "rightsIssues": [
+    "StatPearls (NCBI Bookshelf) is copyrighted but permits indexing; used REFERENCE_ONLY, facts synthesized in original prose, no passages reproduced.",
+    "FDA, CDC/NCHS, AHRQ, and ONC/HealthIT.gov materials are U.S. government works; described in original wording, no guidance text reproduced.",
+    "The peer-reviewed risk-stratification review is copyrighted; only its factual findings are used, no wording reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "statpearls-healthcare-analytics",
+      "title": "Healthcare Analytics (StatPearls)",
+      "provider": "StatPearls / NCBI Bookshelf",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK614158/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Primary reference for the four analytics types (descriptive/diagnostic/predictive/prescriptive) with their definitions and healthcare examples, the range of healthcare data sources (EHR, imaging, claims, surveys, wearables, genomics, pharma), data-integrity/quality concerns, and algorithmic bias and training-data dependence in machine learning. Read in full via NCBI Bookshelf. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "fda-ai-enabled-medical-devices",
+      "title": "Artificial Intelligence-Enabled Medical Devices (AI-Enabled Medical Device List)",
+      "provider": "U.S. Food and Drug Administration (Center for Devices and Radiological Health)",
+      "url": "https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-aiml-enabled-medical-devices",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Official FDA page establishing that AI-enabled medical devices are authorized for marketing only after meeting the FDA's applicable premarket requirements, including a focused review of overall safety and effectiveness, and that the list provides transparency for providers and patients. Supports the 'regulated decision-support tool' framing and the radiology-heavy landscape (CDRH). Read via curl with a browser user-agent because fda.gov intermittently blocks the fetcher; a precise device count is intentionally not asserted."
+    },
+    {
+      "id": "cdc-nvss-about-vital-statistics",
+      "title": "About the National Vital Statistics System (NVSS)",
+      "provider": "CDC / National Center for Health Statistics (NCHS)",
+      "url": "https://www.cdc.gov/nchs/nvss/about_nvss.htm",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports vital statistics as an official public-health data source: NVSS provides the nation's official birth and death statistics; 57 vital-registration jurisdictions (50 states, NYC, DC, 5 territories) transmit information on more than 6 million vital events per year to NCHS. cdc.gov blocked both WebFetch (403) and curl; facts verified via WebSearch surfacing the NVSS/NCHS Bookshelf and Health, United States source-definition copies. Canonical CDC URL registered; the '>6 million' figure is stated rather than a precise count that varies slightly across NCHS pages."
+    },
+    {
+      "id": "healthit-uscdi",
+      "title": "United States Core Data for Interoperability (USCDI)",
+      "provider": "ONC / HealthIT.gov (Assistant Secretary for Technology Policy)",
+      "url": "https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports USCDI as a standardized set of health data classes and constituent data elements for interoperable exchange, grouped into classes (e.g., Patient Demographics, Laboratory, Medications, Clinical Notes), stewarded by ONC on behalf of HHS, growing from 53 elements (v1, 2020) to 170+ (v7, 2026) with an annual July final version. Used for the structured-data / standardized-elements point. Verified via WebSearch of the HealthIT.gov Interoperability Standards Platform pages and USCDI PDFs."
+    },
+    {
+      "id": "ahrq-quality-indicators",
+      "title": "AHRQ Quality Indicators",
+      "provider": "Agency for Healthcare Research and Quality (AHRQ)",
+      "url": "https://qualityindicators.ahrq.gov/",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused from the shared source registry. Supports administrative/claims data as an analytics source: AHRQ QIs are standardized measures computed from readily available hospital inpatient administrative discharge data. Used here only to illustrate claims/administrative data reuse for analytics, not quality-measure definitions (owned by Healthcare Quality)."
+    },
+    {
+      "id": "pmc-population-risk-stratification-primary-care",
+      "title": "Population risk stratification tools and interventions for chronic disease management in primary care: a systematic literature review",
+      "provider": "PMC (peer-reviewed systematic review)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11983763/",
+      "sourceType": "peer-reviewed",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports risk stratification as a population health management method that segments patients into groups of similar complexity/need to prioritize resources and proactively manage high-risk individuals with chronic disease. Findings used; no wording reproduced. Verified via WebSearch of the PMC record."
+    },
+    {
+      "id": "cdc-nchs-icd10-cm-pcs-background",
+      "title": "ICD-10-CM / ICD-10-PCS (CDC-NCHS background)",
+      "provider": "CDC / National Center for Health Statistics (NCHS)",
+      "url": "https://www.cdc.gov/nchs/icd/",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused from the shared source registry to support that diagnoses are recorded as standardized ICD-10-CM codes — an example of structured, coded data that makes claims and EHR records analyzable. Coding rules and clinical use are out of scope; used only as an example of structured data."
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+# Health Information Management
+
+## In 30 Seconds
+
+Health information management, or HIM, is the profession and function that treats a patient's health data as a governed asset from the moment it is captured to the moment it is destroyed. HIM decides what counts as the official record, keeps that record accurate and complete, makes sure the right patient's data links together, controls who may release it, and sets how long it is kept. It is about governing the information itself, not the software that stores it. This is educational material, not legal, compliance, or coding advice.
+
+## Why This Matters
+
+Every clinical decision, bill, quality measure, lawsuit, and research study depends on health information that is trustworthy and findable. When records are incomplete, attributed to the wrong patient, released to the wrong person, or destroyed too early, the harm is immediate and sometimes irreversible. HIM is the discipline that prevents those failures, and its rules sit at the intersection of patient safety, law, and money. A manager who understands HIM can read a records-retention schedule, judge whether a release of information is lawful, and tell the difference between a documentation problem and a system problem. As records go fully digital and flow between organizations, disciplined governance of the information, separate from the technology, is what keeps a health system's most valuable and most sensitive asset usable.
+
+## Learning Objectives
+
+- Define health information management and describe the lifecycle it governs.
+- Distinguish the legal health record and the HIPAA designated record set from the raw contents of a health IT system.
+- Explain the core data quality dimensions and why documentation integrity matters.
+- Explain the master patient index and why accurate patient matching is a safety issue.
+- Apply release-of-information and record-retention principles to a scenario, recognizing that retention periods are set by varying federal and state rules.
+- Distinguish HIM governance of coding and clinical documentation integrity from the act of coding or the EHR software itself.
+
+## The College Version
+
+### What health information management governs
+
+Health information management (HIM) is the professional practice of acquiring, analyzing, protecting, and governing health information so that it stays accurate, private, and usable for patient care and for every downstream use that depends on it. The unit of concern is not a device or an application but the information itself, treated as an organizational asset with a lifecycle: it is captured when a clinician documents an encounter, stored and indexed so it can be retrieved, exchanged with other providers and payers, retained for as long as law and operations require, and eventually destroyed under a defined schedule. HIM professionals own the rules and workflows around each of those stages. A useful way to hold the distinction is that the electronic health record system is the software, while HIM is the governance of what goes into it, what counts as official, who may see or receive it, and how long it lives. Because the same information feeds billing, quality measurement, public health reporting, litigation, and research, small failures in how it is governed propagate widely, which is why HIM sits alongside privacy, compliance, and finance rather than inside the IT department alone.
+
+### The legal health record and the designated record set
+
+Not everything stored about a patient is the official record, and HIM draws that line deliberately. The legal health record is the subset an organization formally designates as the documentation it will produce as its official business record when a court, auditor, or patient asks for the record of care. It is an organization-defined concept: each facility must specify which documents, images, and data elements make up its legal health record and which working notes or system artifacts do not. Alongside it sits a broader, legally defined category. Under the HIPAA Privacy Rule at 45 CFR 164.501, the designated record set is the medical and billing records a provider maintains about individuals, a health plan's enrollment, payment, claims-adjudication, and case- or medical-management records, and any records the covered entity uses to make decisions about individuals; a record here is any grouping of information that includes protected health information maintained by or for the entity. The designated record set matters because it defines the scope of a patient's right to access and amend their information, and it is usually wider than the legal health record. Underpinning both is documentation integrity: Medicare's Conditions of Participation for hospitals require that every medical-record entry be legible, complete, dated, timed, and authenticated by the person responsible for the service, so that the record is a reliable account of what happened and who is accountable for it.
+
+### Data quality: what makes information trustworthy
+
+Governance is only as good as the quality of the data it governs, and HIM evaluates quality along explicit dimensions rather than treating it as a vague ideal. The professional body for the field, the American Health Information Management Association, publishes a data quality management model built around a set of data characteristics; four that recur across almost every use are accuracy (the data correctly represent what actually happened), completeness (all the required elements are present), timeliness (the data are recorded and available when they are needed), and consistency (the same fact is represented the same way across systems and over time). These dimensions are not academic. An allergy recorded accurately but entered a day after a medication was ordered failed on timeliness; a discharge summary missing the follow-up plan failed on completeness; a patient whose sex is coded one way in the lab system and another way in the pharmacy system has a consistency defect that can misroute an order. HIM builds the audits, edits, and review processes that catch these defects, and it measures them, because information that cannot be trusted cannot safely drive care, billing, or measurement.
+
+### Patient identity and the master patient index
+
+A record is worthless, or dangerous, if it is attached to the wrong person, so a central HIM responsibility is maintaining patient identity. The master patient index (MPI) is the authoritative list that assigns each patient one enduring identifier within an organization and links all of that person's encounters and records to it; across multiple facilities the same function is called an enterprise MPI. The hard problem it solves is patient matching, which the Office of the National Coordinator for Health Information Technology defines as identifying and linking one patient's data within and across health systems to obtain a comprehensive view of that patient's record, typically by comparing demographic fields such as name, date of birth, address, and phone number. Matching fails in two directions, and both are HIM problems. A duplicate record fragments one person's history into two charts, so a clinician may act without the full picture; an overlay merges two different people into one chart, exposing one patient's information and corrupting the other's. HIM sets the registration standards, runs the duplicate-detection and merge processes, and governs how identities are reconciled, because a mismatched record is a patient-safety event as much as a data error.
+
+### Release of information: controlling who gets the record
+
+Because health information is confidential, releasing it is a controlled function rather than a clerical one, and HIM operates it. Release of information (ROI) is the process of disclosing a patient's records to a requester, and its rules come from law layered on top of the record definitions above. The HIPAA Privacy Rule gives individuals a right, at 45 CFR 164.524, to inspect and obtain a copy of their protected health information in the designated record set, and it obliges a covered entity to act on such a request generally within 30 days, with one limited extension; a few categories, such as psychotherapy notes and information compiled for litigation, sit outside that right. Other disclosures, to another provider for treatment, to a payer, or to a third party the patient authorizes, each have their own legal basis, and an ROI professional's job is to verify the requester's identity and authority, confirm that a valid authorization or legal exception exists, disclose only what was actually requested, and log the disclosure. The deeper privacy and security law is a separate topic; the HIM point is that who may receive a record, and exactly which record, is governed by rule, not by whoever asks. This lesson does not tell any reader whether a specific disclosure is lawful; that is a case-by-case legal judgment.
+
+### Retention and destruction: how long records live
+
+Records are not kept forever, nor discarded at will; HIM maintains a retention schedule that states how long each record type is kept and when and how it is destroyed. The critical fact for a manager is that there is no single universal retention period, because the requirements come from several overlapping sources and vary. Medicare's Conditions of Participation require hospitals to retain medical records in retrievable form for at least five years, and some federal program rules set other minimums; the HIPAA Security and Privacy Rules separately require covered entities to retain the compliance documentation the rules mandate, such as policies and certain records, for six years from creation or last effective date, which is a rule about the compliance paperwork, not the clinical chart. On top of the federal floor, each state sets its own retention requirements, which differ by record type and by whether the patient is a minor, and litigation holds can override a schedule entirely by freezing destruction of relevant records. A defensible program follows the strictest applicable requirement, documents its schedule, and destroys records only through a controlled, logged process. Because the specific numbers depend on jurisdiction and record type, the professional move is to consult the governing rules rather than to memorize a single figure.
+
+### Coding and documentation governance, and the profession
+
+HIM also governs how the record becomes coded data and how that data holds up, without doing the case-by-case coding that a separate billing topic covers. Clinical documentation integrity (CDI) is the discipline of ensuring the record accurately and completely reflects the patient's true clinical status, so that the codes drawn from it are supportable; CDI specialists review documentation and, through compliant queries, ask clinicians to clarify or complete it, never to inflate it. HIM sets the governance around coding quality, coding audits, and query ethics so that coded data used for payment, quality measures, and research is trustworthy. All of this rests on people: HIM is a credentialed profession, and its professional body offers designations such as the Registered Health Information Administrator (RHIA), typically tied to a bachelor's-level program, and the Registered Health Information Technician (RHIT), tied to an associate-level program, along with coding credentials. Federal labor data track the roles under titles such as medical records specialists, with a median wage of about $50,250 in May 2024 and projected growth of roughly seven percent from 2024 to 2034, and the newer category of health information technologists and medical registrars, with a higher median and faster projected growth. The connective idea across the whole field is data governance and stewardship: named accountability for health information as an asset, with policies, quality controls, and stewards who answer for its accuracy, security, and appropriate use.
+
+## Key Vocabulary
+
+- **Health information management (HIM):** The professional practice of acquiring, analyzing, protecting, and governing health information across its lifecycle so it stays accurate, private, and usable for care and for downstream uses.
+- **Legal health record:** The subset of documentation an organization formally designates as its official business record of care, produced in response to authorized requests; each organization defines its exact contents.
+- **Designated record set:** A HIPAA-defined category (45 CFR 164.501) covering a provider's medical and billing records, a health plan's enrollment/payment/claims/case-management records, and records used to make decisions about individuals; it scopes a patient's access and amendment rights.
+- **Documentation integrity:** The property that record entries are legible, complete, dated, timed, and authenticated by the responsible author, so the record reliably shows what happened and who is accountable.
+- **Data quality dimensions:** Named, measurable properties of information such as accuracy, completeness, timeliness, and consistency, used to evaluate whether data can be trusted for care, billing, and measurement.
+- **Master patient index (MPI):** The authoritative index that assigns each patient one enduring identifier within an organization and links all of that person's records to it; the cross-facility version is an enterprise MPI.
+- **Patient matching:** Identifying and linking one patient's data within and across systems to build a complete view of their record, usually by comparing demographic fields such as name, date of birth, and address.
+- **Release of information (ROI):** The governed process of disclosing a patient's records to a requester after verifying the requester's authority and a valid legal basis, and disclosing only what was requested.
+- **Retention schedule:** A policy stating how long each type of record is kept and how it is destroyed, built from overlapping federal and state requirements that vary by record type and jurisdiction.
+- **Clinical documentation integrity (CDI):** The discipline of ensuring the record accurately and completely reflects a patient's clinical status, so that codes drawn from it are supportable, using compliant clarifying queries to clinicians.
+
+## Eli-10
+
+Imagine a giant, shared notebook that holds everything about every patient a hospital has ever seen. Someone has to make sure each page is written clearly, filed under the right person, kept safe, handed only to people allowed to see it, and thrown out only at the right time. That someone is health information management. They do not build the notebook, and they are not the doctor writing in it. They make the rules for the notebook: what counts as an official page, how to check the pages are correct and complete, how to keep two patients' pages from getting mixed up, who is allowed a copy, and how many years to keep everything before shredding it safely.
+
+## Eli's Analogy
+
+HIM is like the head librarian of a library where the books are patients' health records. The librarian does not write the books and does not build the building. Instead they decide which copy is the official one, make sure each book is shelved under the right name so nobody grabs the wrong one, check the pages are all there, decide who is allowed to borrow or copy a book, and set the rule for how long old books are kept before they are removed.
+
+**Where the analogy breaks down:** A library's books are public and interchangeable, but health records are confidential and unique to one person, so releasing them is tightly restricted by law rather than open to any member. Mixing up two records is far more dangerous than shelving a novel wrong: it can cause a medical error or expose someone's private information. And the librarian usually cannot decide retention freely, because varying federal and state laws set minimums the organization must follow.
+
+## Worked Example
+
+A hospital HIM department receives a written request: a former patient wants a copy of their own record, and separately a law firm requests the same patient's chart for a lawsuit. Trace the HIM decisions. First, identity and index: the MPI is checked to confirm this is one patient with one linked record, not a duplicate that would return a partial chart. Second, scope: the patient's own request falls under the HIPAA right of access to their designated record set, which the hospital must generally act on within 30 days; the law firm's request is a different disclosure that needs a valid authorization or legal process before anything is released, and it is fulfilled from the organization's defined legal health record. Third, quality and integrity: before release, HIM confirms the entries are authenticated and complete, because an unsigned or missing note is both a documentation-integrity defect and a legal exposure. Fourth, what is released: only the records actually requested are disclosed, and each disclosure is logged. Finally, retention: the department does not purge this chart while a litigation hold is in place, and in normal course it keeps the record for at least the longest period its state law and the Medicare Conditions of Participation require, which is not a single universal number. Notice that no step involved the EHR software's features; every step was a governance decision about the information.
+
+## Common Mistakes
+
+- **Mistake:** Treating health information management as just running the EHR software or doing IT support.
+  **Correction:** HIM governs the information as an asset: what counts as the official record, its quality, patient identity, lawful release, and retention. The EHR is the system that stores data; HIM sets the rules for what goes in, who gets it, and how long it lives. The two are related but distinct.
+- **Mistake:** Assuming there is one universal retention period, such as "seven years," for medical records.
+  **Correction:** There is no single national retention period. Requirements come from overlapping sources that vary: Medicare Conditions of Participation set at least five years for hospitals, HIPAA's six-year rule applies to compliance documentation rather than the clinical chart, and each state sets its own periods that differ by record type and patient age. A retention schedule follows the strictest applicable rule.
+- **Mistake:** Confusing the legal health record with the designated record set, or assuming they are identical.
+  **Correction:** The legal health record is what an organization designates as its official business record of care. The designated record set is a broader HIPAA-defined category, including billing and decision-making records, that scopes a patient's right to access and amend. The designated record set is usually wider than the legal health record.
+- **Mistake:** Thinking a duplicate or mismatched patient record is only a clerical inconvenience.
+  **Correction:** A duplicate fragments one person's history so a clinician may act without the full picture, and an overlay merges two people's data, exposing one and corrupting the other's record. Both are patient-safety events, which is why maintaining the master patient index and patient matching is a core HIM responsibility, not paperwork.
+- **Mistake:** Believing clinical documentation integrity means changing documentation to raise reimbursement.
+  **Correction:** CDI ensures the record accurately and completely reflects the patient's actual clinical status so that codes are supportable. Compliant queries ask clinicians to clarify or complete documentation, never to inflate it. HIM governs query ethics precisely so that improving documentation does not become manipulating it.
+
+## Compare / Contrast
+
+- **Health information management (HIM)** vs **Electronic health record (EHR) system:** HIM is the governance of the information — what is official, its quality, identity, release, and retention. The EHR is the software that captures and stores the data. HIM sets the rules the record must satisfy regardless of which system holds it.
+- **Legal health record** vs **Designated record set:** The legal health record is the organization-defined official business record of care produced on request. The designated record set is the broader HIPAA category, including billing and decision records, that scopes a patient's access and amendment rights; it is usually wider.
+- **Duplicate record** vs **Overlay:** A duplicate splits one patient's data into two charts, hiding history. An overlay merges two different patients into one chart, exposing one person's information and corrupting the other's. Both are matching failures the master patient index exists to prevent.
+- **HIPAA six-year documentation rule** vs **Medical record retention:** HIPAA's six-year requirement covers the compliance documentation the rules mandate, such as policies and certain logs. How long the clinical record itself is kept is set separately by Medicare Conditions of Participation and by varying state law.
+
+## Key Takeaway
+
+Health information management governs a patient's health information as an asset across its whole lifecycle: it designates the official legal health record, keeps data accurate and complete, maintains patient identity through the master patient index, controls lawful release, and sets retention and destruction under varying federal and state rules. It governs the information, not the software that stores it.
+
+## Practice Question Bank
+
+1. **Which statement best describes what health information management (HIM) is responsible for?**
+   - A. Governing health information as an asset across its lifecycle, including what counts as the official record, its quality, patient identity, lawful release, and retention
+   - B. Writing the software code that runs a hospital's electronic health record system
+   - C. Making the clinical diagnosis and treatment decisions documented in the record
+   - D. Setting the prices a hospital charges for the services described in the record
+   - **Correct: A.** HIM is the practice of acquiring, analyzing, protecting, and governing health information across its lifecycle so it stays accurate, private, and usable. It defines the official record, data quality, patient identity, release, and retention. Building EHR software is a health IT function; diagnosing and treating is clinical work; setting charges is a finance function.
+
+2. **A patient asks a hospital for a copy of their own records. Under the HIPAA Privacy Rule, what defines the scope of information the patient generally has a right to access?**
+   - A. Only the notes the treating physician personally chooses to share
+   - B. Every keystroke and system log stored anywhere in the hospital's IT infrastructure
+   - C. The designated record set, and the covered entity must generally act on the request within 30 days
+   - D. Nothing, because patients have no right to see their own health information
+   - **Correct: C.** The Privacy Rule (45 CFR 164.524) gives individuals a right to inspect and obtain a copy of their protected health information in the designated record set, and requires the covered entity to act generally within 30 days, with one limited extension. The right is not limited to what a physician volunteers, patients clearly have this right, and it is scoped to the designated record set rather than every system log, with a few categories such as psychotherapy notes excepted.
+
+3. **During registration, a returning patient is accidentally entered as a new person, creating a second chart under a slightly different spelling of their name. From an HIM standpoint, why is this more than a clerical annoyance?**
+   - A. It only wastes storage space and has no effect on care or safety
+   - B. It is handled automatically by the billing system and never reaches clinicians
+   - C. It improves data quality by giving the hospital two independent copies of the record
+   - D. It is a duplicate record that fragments the patient's history, so a clinician may make decisions without the full picture, making it a patient-safety issue the master patient index exists to prevent
+   - **Correct: D.** A duplicate record splits one patient's history across two charts, so a clinician working from one may miss allergies, prior results, or active problems recorded in the other. Maintaining the master patient index and patient matching is the HIM function that prevents and resolves this. It is not harmless storage waste, it is not confined to billing, and a second uncoordinated copy degrades rather than improves data quality.
+
+4. **A hospital manager asks how many years the department must keep its medical records. What is the most accurate answer from an HIM perspective?**
+   - A. Exactly seven years for every record, everywhere in the United States
+   - B. There is no single universal period; retention is set by overlapping federal rules and by state law and varies by record type, so the schedule follows the strictest applicable requirement
+   - C. Records may be destroyed as soon as the patient is discharged
+   - D. HIPAA's six-year rule sets the retention period for all clinical records nationwide
+   - **Correct: B.** Retention requirements come from multiple overlapping sources that vary: Medicare Conditions of Participation require hospitals to keep records at least five years, states set their own periods differing by record type and patient age, and litigation holds can freeze destruction. There is no single seven-year national rule, records cannot be purged at discharge, and HIPAA's six-year requirement governs compliance documentation rather than the clinical record itself.
+
+5. **A discharge summary is signed and accurate but omits the patient's follow-up plan, and a lab value recorded correctly is not entered until a full day after it was needed for a decision. Which two data quality dimensions do these two problems most directly violate?**
+   - A. Both violate accuracy, because the underlying facts are wrong
+   - B. Both violate confidentiality, because the data were exposed to the wrong people
+   - C. Neither is a data quality problem; both are purely software failures with no governance dimension
+   - D. The missing follow-up plan violates completeness, and the late lab value violates timeliness
+   - **Correct: D.** Completeness means all required elements are present, so a summary missing its follow-up plan is a completeness defect even though what is there is correct. Timeliness means data are available when needed, so a correct value entered a day late is a timeliness defect. Neither fact is itself incorrect, so accuracy is not the primary issue, and nothing here concerns unauthorized disclosure.
+
+## Sources
+
+- **45 CFR 164.501 — Definitions (Designated record set)**, Electronic Code of Federal Regulations. https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.501 (text read via Cornell LII because eCFR blocked the fetcher)
+- **45 CFR 164.524 — Access of individuals to protected health information**, Electronic Code of Federal Regulations. https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.524 (read via Cornell LII)
+- **45 CFR 164.316 — Policies and procedures and documentation requirements**, Electronic Code of Federal Regulations. https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.316 (read via Cornell LII)
+- **42 CFR 482.24 — Condition of participation: Medical record services**, Electronic Code of Federal Regulations. https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-482/subpart-C/section-482.24 (read via Cornell LII)
+- **Patient Identity and Patient Record Matching**, Office of the National Coordinator for Health Information Technology (HealthIT.gov). https://www.healthit.gov/topic/patient-identity-and-patient-record-matching
+- **Medical Records Specialists**, U.S. Bureau of Labor Statistics, Occupational Outlook Handbook (May 2024 figures; 2024-2034 outlook). https://www.bls.gov/ooh/healthcare/medical-records-specialists.htm (figures read via BLS OOH search-result summaries; bls.gov blocks automated fetching)
+- **Health Information Technologists and Medical Registrars**, U.S. Bureau of Labor Statistics, Occupational Outlook Handbook (May 2024 figures; 2024-2034 outlook). https://www.bls.gov/ooh/healthcare/health-information-technologists-and-medical-registrars.htm (figures read via BLS OOH search-result summaries)
+- **Data Quality Management Model and data quality characteristics**, American Health Information Management Association (AHIMA) — REFERENCE_ONLY, concepts described, no standards text reproduced. https://www.ahima.org/
+- **Clinical Documentation Integrity (CDI) practice**, American Health Information Management Association (AHIMA) — REFERENCE_ONLY. https://www.ahima.org/education-events/clinical-documentation-integrity-cdi-education/
+
+## Related Topics
+
+- Electronic Health Records (`health-administration:information:electronic-health-records`)
+- Healthcare Data and Analytics (`health-administration:information:healthcare-data-and-analytics`)
+- Patient Privacy (`health-administration:law-and-policy:patient-privacy`)
+- Healthcare Billing Fundamentals (`health-administration:financing:healthcare-billing-fundamentals`)
+
+## Editorial Metadata
+
+- **Editorial status:** READY_TO_PUBLISH
+- **Estimated minutes:** 11
+- **Research status:** source-verified
+- **Rights status:** U.S. government primary sources (HIPAA and CoP regulations via eCFR, ONC, BLS) used reference-only; AHIMA materials treated REFERENCE_ONLY with concepts described and no standards text reproduced; all wording original.
+- **Researched at:** 2026-08-19
+- **Scope boundaries:** Governs the information lifecycle; excludes EHR features/adoption (Electronic Health Records), analytics methods (Healthcare Data and Analytics), in-depth HIPAA law (Patient Privacy), and billing code sets (Healthcare Billing Fundamentals). No individualized legal, compliance, coding, or benefits advice.

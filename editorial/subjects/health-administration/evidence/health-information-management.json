@@ -1,0 +1,240 @@
+{
+  "topicId": "health-administration:information:health-information-management",
+  "subjectId": "health-administration",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "HIM as the profession and function that governs health information as an asset across its lifecycle: capture, storage, retrieval, exchange, retention, and destruction",
+      "The legal health record (organization-defined official business record) and the HIPAA designated record set (45 CFR 164.501), and how they differ",
+      "Documentation integrity: entries legible, complete, dated, timed, authenticated by the responsible author (Medicare CoP 42 CFR 482.24)",
+      "Data quality dimensions: accuracy, completeness, timeliness, consistency (from AHIMA's data quality management model)",
+      "Master patient index / enterprise MPI and patient identity/matching; duplicates and overlays as safety issues",
+      "Release of information (ROI) and the individual right of access (45 CFR 164.524); who may access records and on what basis",
+      "Record retention as set by overlapping federal rules and state law that vary; no single universal period",
+      "Coding and clinical documentation integrity (CDI) governance at a high level; the HIM profession and credentials (RHIA/RHIT) described generically",
+      "Data governance and stewardship as the connective concept"
+    ],
+    "supporting": [
+      "The HIPAA six-year retention rule (45 CFR 164.316) applies to required compliance documentation, not to the clinical record itself",
+      "The designated record set scopes a patient's access and amendment rights and is usually broader than the legal health record",
+      "Federal workforce data (BLS OOH) on medical records specialists and health information technologists/medical registrars, dated May 2024 with 2024-2034 outlook"
+    ],
+    "outOfScope": [
+      "EHR system features, adoption history, Meaningful Use / Promoting Interoperability, certification, USCDI, FHIR — owned by Electronic Health Records",
+      "Analytics, statistics, and data science methods — owned by Healthcare Data and Analytics",
+      "In-depth HIPAA Privacy/Security/Breach law — owned by Patient Privacy / HIPAA Foundations; only ROI's legal basis is referenced briefly",
+      "Billing code SETS in depth (ICD/CPT/HCPCS/DRG mechanics) — owned by Healthcare Billing Fundamentals; only coding GOVERNANCE/integrity is covered",
+      "Any individualized legal, compliance, coding, or benefits advice; whether a specific disclosure or retention decision is lawful"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Health information management is the professional practice of acquiring, analyzing, protecting, and governing health information across its lifecycle so it stays accurate, private, and usable; it governs the information as an asset rather than being the software (the EHR) that stores it.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["bls-ooh-health-information-technologists-and-medical-registrars", "bls-ooh-medical-records-specialists", "ahima-data-quality-management-model"],
+      "status": "supported"
+    },
+    {
+      "claim": "Under the HIPAA Privacy Rule at 45 CFR 164.501, a designated record set is the medical and billing records a provider maintains about individuals, a health plan's enrollment/payment/claims-adjudication/case-or-medical-management records, and records used by or for the covered entity to make decisions about individuals; a 'record' is any item, collection, or grouping of information that includes protected health information maintained by or for a covered entity.",
+      "claimType": "LEGAL",
+      "sourceIds": ["ecfr-45-cfr-164-501-designated-record-set"],
+      "status": "supported"
+    },
+    {
+      "claim": "Under 45 CFR 164.524 individuals generally have the right to inspect and obtain a copy of their protected health information in the designated record set; a covered entity must act on the request generally within 30 days (with one limited 30-day extension); psychotherapy notes and information compiled for legal proceedings are excepted.",
+      "claimType": "LEGAL",
+      "sourceIds": ["ecfr-45-cfr-164-524-right-of-access"],
+      "status": "supported"
+    },
+    {
+      "claim": "The Medicare Conditions of Participation for hospitals (42 CFR 482.24) require a medical record service, that records be retained in original or legally reproduced form for at least 5 years and be retrievable, and that all entries be legible, complete, dated, timed, and authenticated by the person responsible for providing or evaluating the service.",
+      "claimType": "LEGAL",
+      "sourceIds": ["ecfr-42-cfr-482-24-medical-record-services"],
+      "status": "supported"
+    },
+    {
+      "claim": "The HIPAA rules at 45 CFR 164.316(b)(2)(i) require covered entities and business associates to retain the required compliance documentation for 6 years from the date of its creation or the date when it last was in effect, whichever is later; this is a rule about compliance documentation, not the retention period for the clinical medical record.",
+      "claimType": "LEGAL",
+      "sourceIds": ["ecfr-45-cfr-164-316-documentation-retention"],
+      "status": "supported"
+    },
+    {
+      "claim": "There is no single universal medical-record retention period in the United States; requirements come from overlapping federal rules (such as the Medicare CoP's at-least-5-years) and from state laws that vary by record type and patient age, so retention schedules follow the strictest applicable requirement and litigation holds can freeze destruction.",
+      "claimType": "LEGAL",
+      "sourceIds": ["ecfr-42-cfr-482-24-medical-record-services", "ecfr-45-cfr-164-316-documentation-retention"],
+      "status": "supported"
+    },
+    {
+      "claim": "The Office of the National Coordinator defines patient matching as the identification and linking of one patient's data within and across health systems to obtain a comprehensive view of that patient's record, accomplished by linking demographic fields such as name, birth date, phone number, and address; accurate matching underpins interoperability and patient safety.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["onc-patient-identity-matching"],
+      "status": "supported"
+    },
+    {
+      "claim": "The master patient index (MPI), and the enterprise MPI across facilities, assigns each patient one enduring identifier and links their records to it; matching failures take two forms — duplicates (one person split into two charts) and overlays (two people merged into one chart) — both of which are patient-safety events.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["onc-patient-identity-matching"],
+      "status": "supported"
+    },
+    {
+      "claim": "AHIMA's data quality management model is built around data characteristics including accuracy, consistency, completeness, and timeliness; accuracy means data represent what actually happened, completeness means all required elements are present, timeliness means data are available when needed, and consistency means a fact is represented the same way across systems and over time.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ahima-data-quality-management-model"],
+      "status": "supported"
+    },
+    {
+      "claim": "Clinical documentation integrity (CDI) is the discipline of ensuring the health record accurately and completely reflects the patient's true clinical status so that codes drawn from it are supportable; CDI professionals use compliant queries to ask clinicians to clarify or complete documentation, not to inflate it.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ahima-clinical-documentation-integrity"],
+      "status": "supported"
+    },
+    {
+      "claim": "HIM is a credentialed profession whose professional body (AHIMA) offers designations such as the Registered Health Information Administrator (RHIA, typically bachelor's-level) and Registered Health Information Technician (RHIT, associate-level) plus coding credentials; federal data (BLS OOH, May 2024) report a median wage of about 50,250 dollars for medical records specialists with projected 7 percent growth 2024-2034, and a higher median with faster growth for health information technologists and medical registrars.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["bls-ooh-medical-records-specialists", "bls-ooh-health-information-technologists-and-medical-registrars"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "How long medical records must be retained.",
+      "positions": ["A single national period (e.g., 'seven years') is commonly assumed", "Requirements actually vary: Medicare CoP set at least 5 years for hospitals, HIPAA's 6-year rule covers compliance documentation not the chart, and each state sets its own periods differing by record type and patient age"],
+      "resolution": "The lesson states explicitly that there is no single universal period, names the CoP 5-year and HIPAA 6-year (documentation) rules precisely, and directs the reader to follow the strictest applicable federal and state requirement rather than memorizing a figure."
+    },
+    {
+      "issue": "Whether the legal health record and the designated record set are the same thing.",
+      "positions": ["They are often conflated in casual use", "They are distinct: the legal health record is organization-defined; the designated record set is a broader HIPAA-defined category that scopes access/amendment rights"],
+      "resolution": "The lesson defines and contrasts both, noting the designated record set is usually wider."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The machine-generated draft contained only generic boilerplate ('a foundational concept in Health Administration', 'a building block for later discussions') with no substantive factual claims to verify; all substance was written from primary research."
+  ],
+  "correctionsNeeded": [
+    "Replaced boilerplate placeholder text entirely with researched content on the information lifecycle, the legal health record and designated record set, data quality, MPI/patient matching, ROI/right of access, retention, and CDI governance.",
+    "Explicitly corrected the common misconception of a single universal retention period, and distinguished HIPAA's 6-year documentation rule from clinical-record retention."
+  ],
+  "rightsIssues": [
+    "AHIMA materials are copyrighted and were treated as REFERENCE_ONLY: the data quality characteristics and CDI concept are described in original wording; no AHIMA standards text, model diagram wording, or toolkit text was reproduced.",
+    "All cited federal sources (HIPAA and CoP regulations, ONC, BLS) are U.S. government works used reference-only; the prose is original synthesis, not adapted from source wording. eCFR blocked the fetcher, so regulation text was read via Cornell LII while the canonical eCFR URL is registered; bls.gov blocks automated fetching, so figures were read via the BLS OOH search-result summaries."
+  ],
+  "sourceRecords": [
+    {
+      "id": "ecfr-45-cfr-164-501-designated-record-set",
+      "title": "45 CFR 164.501 — Definitions (Designated record set)",
+      "provider": "Electronic Code of Federal Regulations (eCFR)",
+      "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.501",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Primary regulatory text of the HIPAA Privacy Rule. Confirms the three-part definition of designated record set (provider medical and billing records; health plan enrollment/payment/claims-adjudication/case-or-medical-management records; records used to make decisions about individuals) and the definition of 'record' as any item, collection, or grouping of information that includes PHI maintained by or for a covered entity. Canonical eCFR URL registered; eCFR redirected the fetcher to an unblock page, so the section text was read via Cornell LII (https://www.law.cornell.edu/cfr/text/45/164.501)."
+    },
+    {
+      "id": "ecfr-45-cfr-164-524-right-of-access",
+      "title": "45 CFR 164.524 — Access of individuals to protected health information",
+      "provider": "Electronic Code of Federal Regulations (eCFR)",
+      "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.524",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Primary regulatory text. Confirms the individual right to inspect and obtain a copy of PHI in a designated record set, the general 30-day timeframe to act with one 30-day extension on written notice, and the exceptions for psychotherapy notes and information compiled for legal proceedings, plus reviewable/unreviewable denial grounds. Used only to state the legal basis of release of information / right of access; deep HIPAA law is out of scope. Canonical eCFR URL registered; text read via Cornell LII (https://www.law.cornell.edu/cfr/text/45/164.524) because eCFR blocked the fetcher."
+    },
+    {
+      "id": "ecfr-45-cfr-164-316-documentation-retention",
+      "title": "45 CFR 164.316 — Policies and procedures and documentation requirements",
+      "provider": "Electronic Code of Federal Regulations (eCFR)",
+      "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.316",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Primary regulatory text (HIPAA Security Rule documentation requirement, cross-referenced by the Privacy Rule). Confirms paragraph (b)(2)(i): retain the required documentation for 6 years from the date of its creation or the date when it last was in effect, whichever is later. Used to make the precise point that this 6-year rule covers compliance documentation, not the clinical medical record. Canonical eCFR URL registered; text read via Cornell LII (https://www.law.cornell.edu/cfr/text/45/164.316) because eCFR blocked the fetcher."
+    },
+    {
+      "id": "ecfr-42-cfr-482-24-medical-record-services",
+      "title": "42 CFR 482.24 — Condition of participation: Medical record services",
+      "provider": "Electronic Code of Federal Regulations (eCFR)",
+      "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-482/subpart-C/section-482.24",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Primary regulatory text of the Medicare Conditions of Participation for hospitals. Confirms the requirement for a medical record service with responsibility for all records; retention of records in original or legally reproduced form for at least 5 years with a coding/indexing system enabling retrieval by diagnosis and procedure; confidentiality/access controls; and that all entries be legible, complete, dated, timed, and authenticated by the person responsible for the service. Used for documentation integrity and the federal retention floor. Canonical eCFR URL registered; text read via Cornell LII (https://www.law.cornell.edu/cfr/text/42/482.24) because eCFR blocked the fetcher."
+    },
+    {
+      "id": "onc-patient-identity-matching",
+      "title": "Patient Identity and Patient Record Matching",
+      "provider": "Office of the National Coordinator for Health Information Technology (ONC), HealthIT.gov",
+      "url": "https://www.healthit.gov/topic/patient-identity-and-patient-record-matching",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Primary ONC page. Confirms the definition of patient matching as identifying and linking one patient's data within and across health systems to obtain a comprehensive view of the patient's record, accomplished by linking demographic fields such as name, birth date, phone number, and address, and that accurate matching is foundational to interoperability and patient safety. Read via WebFetch, which returned the page content successfully. Used to support the MPI/patient-identity section (the MPI framing itself is standard HIM terminology; ONC supports the matching definition and its safety rationale)."
+    },
+    {
+      "id": "bls-ooh-medical-records-specialists",
+      "title": "Medical Records Specialists (Occupational Outlook Handbook)",
+      "provider": "U.S. Bureau of Labor Statistics (BLS)",
+      "url": "https://www.bls.gov/ooh/healthcare/medical-records-specialists.htm",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Primary federal workforce source. Supports: median annual wage of 50,250 dollars in May 2024; projected employment growth of about 7 percent from 2024 to 2034 with roughly 14,200 openings per year; entry typically via a postsecondary certificate or associate degree; and AHIMA certifications such as the Registered Health Information Technician (RHIT) and Certified Coding Specialist (CCS). bls.gov returns HTTP 403 to the fetcher and to curl with a browser user-agent, so these figures were read via the BLS OOH search-result summaries (August 2026); the canonical BLS URL is registered. Figures dated to May 2024 and the 2024-2034 projection decade."
+    },
+    {
+      "id": "bls-ooh-health-information-technologists-and-medical-registrars",
+      "title": "Health Information Technologists and Medical Registrars (Occupational Outlook Handbook)",
+      "provider": "U.S. Bureau of Labor Statistics (BLS)",
+      "url": "https://www.bls.gov/ooh/healthcare/health-information-technologists-and-medical-registrars.htm",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Primary federal workforce source. Supports: the occupation of health information technologists and medical registrars, who manage and organize health information data for quality, accuracy, accessibility, and security; a median annual wage of 67,310 dollars in May 2024; and projected employment growth of about 15 percent from 2024 to 2034 (much faster than average). bls.gov returns HTTP 403 to automated fetching, so figures were read via the BLS OOH search-result summaries (August 2026); the canonical BLS URL is registered. Used for the profession/data-governance framing and dated workforce figures."
+    },
+    {
+      "id": "ahima-data-quality-management-model",
+      "title": "Data Quality Management Model and data quality characteristics",
+      "provider": "American Health Information Management Association (AHIMA)",
+      "url": "https://www.ahima.org/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "AHIMA is the professional body for health information management. Supports the existence and content of its data quality management model, built around data characteristics including accuracy, completeness, consistency, and timeliness (among ten characteristics), and the model domains of application, collection, warehousing, and analysis. AHIMA materials are copyrighted (REFERENCE_ONLY): the dimensions are described in original wording and no model text, diagram wording, or toolkit language is reproduced. Concept content confirmed via published AHIMA data quality management model materials as summarized in web research (August 2026); AHIMA journal PDFs of the model exist publicly. Home URL registered as the canonical provider reference."
+    },
+    {
+      "id": "ahima-clinical-documentation-integrity",
+      "title": "Clinical Documentation Integrity (CDI) practice",
+      "provider": "American Health Information Management Association (AHIMA)",
+      "url": "https://www.ahima.org/education-events/clinical-documentation-integrity-cdi-education/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "AHIMA CDI practice reference. Supports the description of clinical documentation integrity as ensuring the record accurately and completely reflects the patient's true clinical status so that codes are supportable, and that CDI professionals use compliant clarifying queries rather than documentation that inflates coding. AHIMA materials are copyrighted (REFERENCE_ONLY): the concept is described in original wording; no AHIMA/ACDIS standards, toolkit, or ethical-standards text is reproduced. Concept confirmed via AHIMA CDI education/body-of-knowledge materials as summarized in web research (August 2026). Only high-level CDI governance is covered; billing code sets are out of scope."
+    }
+  ]
+}

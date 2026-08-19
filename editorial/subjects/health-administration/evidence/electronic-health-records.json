@@ -1,0 +1,247 @@
+{
+  "topicId": "health-administration:information:electronic-health-records",
+  "subjectId": "health-administration",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "The EHR vs EMR distinction: an EMR is a single practice's digital chart; an EHR is built to share a patient's information across organizations and clinicians (scope and shareability)",
+      "Core EHR functions: clinical documentation, computerized provider order entry (CPOE), clinical decision support (CDS), results review, and e-prescribing",
+      "The policy history driving adoption: the HITECH Act (2009), the Medicare/Medicaid EHR Incentive Programs (began 2011), Meaningful Use stages (2011-2017), and the 2018 renaming to Promoting Interoperability",
+      "ONC certification of EHR technology (CEHRT) via the Health IT Certification Program",
+      "Interoperability standards at a naming/conceptual level: HL7, FHIR, USCDI",
+      "The 21st Century Cures Act information-blocking rule: regulated actors, exceptions (45 CFR Part 171), applicability April 5, 2021",
+      "Real trade-offs: documentation burden, alert fatigue, usability"
+    ],
+    "supporting": [
+      "Dated adoption statistics from ONC: 2008 baseline (hospitals ~9%, office-based physicians ~17%); 2024 (physicians 91%, non-federal acute care hospitals >99%)",
+      "CPOE must be certified for at least one of medications, laboratory, or imaging to meet the base EHR definition",
+      "MACRA (2015) folded meaningful use for many clinicians into MIPS; the Medicaid Promoting Interoperability portion ended in 2022, leaving the Medicare program",
+      "ONC was renamed the Assistant Secretary for Technology Policy/Office of the National Coordinator (ASTP/ONC) in 2024",
+      "USCDI defines what data to exchange; FHIR (an HL7 standard) specifies how it is exchanged"
+    ],
+    "outOfScope": [
+      "Health information management as records governance/lifecycle (release of information, retention, coding governance) — owned by Health Information Management",
+      "Healthcare data analytics and secondary data use — owned by Healthcare Data and Analytics",
+      "In-depth privacy/security law, including the HIPAA Security Rule mechanics — owned by Patient Privacy and HIPAA Foundations",
+      "Individualized clinical, IT-procurement, coding, or compliance advice"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "An EMR is a digital version of one practice's chart whose information does not travel easily out of the practice, while an EHR is designed to reach beyond the originating organization and hold information from all the clinicians involved in a patient's care; the defining difference is scope and shareability.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["onc-emr-vs-ehr-blog"],
+      "status": "supported"
+    },
+    {
+      "claim": "Core EHR functions include clinical documentation, computerized provider order entry (CPOE) for medications, laboratory, and imaging orders, clinical decision support that gives real-time feedback such as drug-drug interaction and allergy checks, results review, and e-prescribing; to meet the base EHR definition a system's CPOE must be certified for at least one of medications, laboratory, or imaging.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["onc-cpoe-cds-definitions"],
+      "status": "supported"
+    },
+    {
+      "claim": "The HITECH Act, enacted in 2009 as part of the American Recovery and Reinvestment Act, funded EHR adoption through the Medicare and Medicaid EHR Incentive Programs, which began in 2011 and required meaningful use of certified EHR technology (CEHRT).",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["cms-promoting-interoperability-basics"],
+      "status": "supported"
+    },
+    {
+      "claim": "U.S. EHR adoption rose from about 9% of non-federal acute care hospitals and 17% of office-based physicians in 2008 to 91% of office-based physicians and more than 99% of non-federal acute care hospitals as of 2024.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["healthit-ehr-adoption-quickstats"],
+      "status": "supported"
+    },
+    {
+      "claim": "Meaningful Use rolled out in stages between 2011 and 2017, and in April 2018 CMS renamed the EHR Incentive Programs the Promoting Interoperability Programs to emphasize data exchange and patient access; the Medicaid portion ended in 2022, leaving the Medicare Promoting Interoperability Program.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["cms-promoting-interoperability-basics"],
+      "status": "supported"
+    },
+    {
+      "claim": "The Office of the National Coordinator for Health IT (ONC) runs the Health IT Certification Program, which tests EHR technology against federal criteria for functionality, security, and interoperability; in 2024 ONC was renamed the Assistant Secretary for Technology Policy/Office of the National Coordinator (ASTP/ONC).",
+      "claimType": "CURRENT",
+      "sourceIds": ["onc-uscdi-topic", "hhs-astp-onc-reorg-2024"],
+      "status": "supported"
+    },
+    {
+      "claim": "FHIR (Fast Healthcare Interoperability Resources) is an HL7 standard using API-based, modular 'resources' to exchange clinical and administrative data and is a commonly used interoperability standard; USCDI is a standardized set of health data classes and constituent data elements for nationwide exchange. USCDI defines what data to share while FHIR specifies how.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["onc-fhir-investments", "onc-uscdi-topic"],
+      "status": "supported"
+    },
+    {
+      "claim": "The 21st Century Cures Act (2016) and ONC's Cures Act Final Rule (2020) define information blocking as a practice by a regulated actor likely to interfere with the access, exchange, or use of electronic health information (EHI), except where required by law or covered by an exception; regulated actors are health care providers, health IT developers of certified health IT, and health information exchanges/networks; exceptions are codified at 45 CFR Part 171; the prohibition took effect April 5, 2021.",
+      "claimType": "LEGAL",
+      "sourceIds": ["onc-information-blocking-topic"],
+      "status": "supported"
+    },
+    {
+      "claim": "Congress, in Section 4001 of the 21st Century Cures Act, directed HHS to produce a strategy to reduce EHR-related regulatory and administrative burden; ONC released the final strategy in February 2020, targeting clinical documentation, health IT usability, and reporting requirements, in response to documentation burden associated with clinician burnout.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["onc-burden-reduction-strategy-2020"],
+      "status": "supported"
+    },
+    {
+      "claim": "Clinicians override the large majority of clinical decision support alerts; reported override rates for drug-drug interaction alerts commonly range from roughly half to nearly all, and AHRQ notes alerts are only modestly effective at best while excessive alerting causes alert fatigue that can lead clinicians to miss important warnings.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["ahrq-psnet-cds-alerts"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "The count of information-blocking exceptions",
+      "positions": [
+        "ONC's original Cures Act Final Rule (2020) established eight exceptions",
+        "The ONC information-blocking topic page currently depicts ten exceptions after later rulemaking"
+      ],
+      "resolution": "The lesson avoids asserting a fixed number, stating that the rule 'sets out a set of exceptions, codified at 45 CFR Part 171' and giving privacy and security as illustrative examples. This is accurate regardless of the exact current count."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The machine-generated draft contained only generic boilerplate ('Electronic Health Records is a foundational concept... names the concept, describes its parts') with no substantive, sourceable claims. None of it was retained.",
+    "The draft's placeholder vocabulary (e.g., defining 'Electronic Health Records' as 'A foundational Health Administration concept covered in this lesson') was circular and was discarded."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire generic draft with substantive, sourced content on EHR functions, policy history, standards, and trade-offs.",
+    "Added dated adoption statistics (2008 baseline vs 2024) as required by the subject's caution on time-sensitive figures.",
+    "Established the correct chronology: HITECH 2009 -> EHR Incentive Programs 2011 -> Meaningful Use stages 2011-2017 -> Promoting Interoperability rename 2018 -> Medicaid PI ends 2022; and Cures Act 2016 -> final rule 2020 -> information-blocking applicability April 5, 2021.",
+    "Noted the 2024 renaming of ONC to ASTP/ONC to keep the agency reference current."
+  ],
+  "rightsIssues": [
+    "All sources are U.S. government / federal-agency material used REFERENCE_ONLY; facts were synthesized and restated in original prose, with no source wording reproduced.",
+    "cms.gov intermittently blocks automated fetching; the CMS Promoting Interoperability Program Basics page returned HTTP 403 to the fetcher and was read via the search engine's rendered snapshot of the page content, with the canonical CMS URL registered."
+  ],
+  "sourceRecords": [
+    {
+      "id": "onc-emr-vs-ehr-blog",
+      "title": "EMR vs EHR - What is the Difference? (ONC Blog)",
+      "provider": "Office of the National Coordinator for Health IT (HealthIT.gov)",
+      "url": "https://www.healthit.gov/buzz-blog/electronic-health-and-medical-records/emr-vs-ehr-difference",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read at healthit.gov/blog/electronic-health-and-medical-records/emr-vs-ehr-difference/ (the /buzz-blog/ path is the canonical ONC blog location). Supports the EMR-vs-EHR distinction: an EMR contains one practice's medical and treatment history and does not travel easily out of the practice, while an EHR is designed to reach beyond the originating organization and contain information from all clinicians involved in a patient's care. No wording reproduced."
+    },
+    {
+      "id": "healthit-ehr-adoption-quickstats",
+      "title": "National Trends in Hospital and Physician Adoption of Electronic Health Records (Quick-Stats)",
+      "provider": "Office of the National Coordinator for Health IT (HealthIT.gov)",
+      "url": "https://www.healthit.gov/data/quickstats/national-trends-hospital-and-physician-adoption-electronic-health-records",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Fetched and read. Supports the dated adoption statistics: 2008 baseline of about 9% for non-federal acute care hospitals and 17% for office-based physicians; and the summary that as of 2024, 91% of office-based physicians and more than 99% of non-federal acute care hospitals adopted a certified EHR. Figures are dated in the lesson."
+    },
+    {
+      "id": "cms-promoting-interoperability-basics",
+      "title": "Medicare and Medicaid Promoting Interoperability Program Basics",
+      "provider": "Centers for Medicare & Medicaid Services (CMS)",
+      "url": "https://www.cms.gov/medicare/regulations-guidance/promoting-interoperability-programs/medicare-medicaid-basics",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "cms.gov returned HTTP 403 to the fetcher; the page content was read via the search engine's rendered snapshot. Supports that the EHR Incentive Programs began in 2011 to encourage adoption and meaningful use of CEHRT by eligible professionals, hospitals, and critical access hospitals; that CMS renamed them the Promoting Interoperability Programs in April 2018 to move beyond meaningful use toward interoperability and patient access; and that the Medicaid portion ended beginning CY 2022, leaving the Medicare Promoting Interoperability Program. Canonical CMS URL registered."
+    },
+    {
+      "id": "onc-cpoe-cds-definitions",
+      "title": "Computerized Provider Order Entry (CPOE) certification criteria and clinical decision support definitions",
+      "provider": "Office of the National Coordinator for Health IT (HealthIT.gov)",
+      "url": "https://www.healthit.gov/test-method/computerized-provider-order-entry-cpoe-medications",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via ONC certification test-method content (surfaced through search of healthit.gov). Supports that CPOE lets clinicians electronically enter and transmit medication, laboratory, and diagnostic imaging orders; that meeting the base EHR definition requires CPOE certified for at least one of medications, laboratory, or imaging; and that clinical decision support provides real-time feedback such as drug-drug interaction, allergy, contraindication, and dose checking during ordering, often used with e-prescribing that surfaces allergies and current medications. No wording reproduced."
+    },
+    {
+      "id": "onc-fhir-investments",
+      "title": "Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR)",
+      "provider": "Office of the National Coordinator for Health IT (HealthIT.gov)",
+      "url": "https://www.healthit.gov/interoperability/investments/fhir",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Fetched and read. Supports that FHIR was created by the standards development organization HL7 to enable health data (clinical and administrative) to be exchanged quickly and efficiently, that it is API-focused and built on modular components called Resources, and that it is a commonly used standard for exchanging health information. No wording reproduced."
+    },
+    {
+      "id": "onc-uscdi-topic",
+      "title": "United States Core Data for Interoperability (USCDI)",
+      "provider": "Office of the National Coordinator for Health IT (HealthIT.gov)",
+      "url": "https://www.healthit.gov/topic/uscdi",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Fetched and read. Supports that USCDI is a standardized set of health data classes and constituent data elements for nationwide interoperable health information exchange, and that the ONC Health IT Certification Program ensures products meet standards for functionality, security, and interoperability. Used for the USCDI-defines-what / FHIR-defines-how framing. No wording reproduced."
+    },
+    {
+      "id": "onc-information-blocking-topic",
+      "title": "Information Blocking",
+      "provider": "Office of the National Coordinator for Health IT (HealthIT.gov)",
+      "url": "https://www.healthit.gov/topic/information-blocking",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Fetched and read. Supports the definition of information blocking (a practice by an actor likely to interfere with the access, exchange, or use of EHI except as required by law or covered by an exception), the three regulated actor types (health care providers; health IT developers of certified health IT; health information exchanges/networks), and that exceptions are codified at 45 CFR Part 171. The April 5, 2021 applicability date was cross-verified via ONC materials in search. The page currently depicts ten exceptions (originally eight in the 2020 rule); the lesson avoids stating a fixed count."
+    },
+    {
+      "id": "onc-burden-reduction-strategy-2020",
+      "title": "Strategy on Reducing Regulatory and Administrative Burden Relating to the Use of Health IT and EHRs (Final Report)",
+      "provider": "Office of the National Coordinator for Health IT (HealthIT.gov)",
+      "url": "https://www.healthit.gov/topic/usability-and-provider-burden/strategy-reducing-burden-relating-use-health-it-and-ehrs",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Verified via search of healthit.gov (final report PDF at healthit.gov/wp-content/uploads/2020/02/BurdenReport.pdf). Supports that Section 4001 of the 21st Century Cures Act directed HHS to develop a strategy to reduce EHR-related regulatory and administrative burden, that ONC released the final strategy in February 2020, and that it targets clinical documentation, health IT usability, and EHR/public-health reporting. Used for the documentation-burden trade-off. No wording reproduced."
+    },
+    {
+      "id": "ahrq-psnet-cds-alerts",
+      "title": "The pros and cons of EHR clinical decision support alerts (PSNet)",
+      "provider": "Agency for Healthcare Research and Quality (AHRQ) Patient Safety Network",
+      "url": "https://psnet.ahrq.gov/issue/pros-and-cons-ehr-clinical-decision-support-alerts",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via AHRQ PSNet (surfaced through search). Supports that clinicians override the large majority of CDS/drug-drug interaction alerts, with reported override rates commonly ranging from roughly half to nearly all, that alerts are only modestly effective at best, and that excessive or erroneous alerts cause alert fatigue and unintended consequences. Used for the alert-fatigue trade-off. No wording reproduced."
+    },
+    {
+      "id": "hhs-astp-onc-reorg-2024",
+      "title": "HHS Reorganization renaming ONC to the Assistant Secretary for Technology Policy/Office of the National Coordinator (ASTP/ONC), 2024",
+      "provider": "U.S. Department of Health and Human Services / Federal Register",
+      "url": "https://www.federalregister.gov/documents/2024/12/17/2024-29683/health-data-technology-and-interoperability-protecting-care-access",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Verified via search that HHS announced a reorganization in July 2024 renaming ONC to the Assistant Secretary for Technology Policy/Office of the National Coordinator for Health IT (ASTP/ONC); subsequent Federal Register rulemaking uses the ASTP/ONC designation. Used only to keep the agency name current in the lesson. No wording reproduced."
+    }
+  ]
+}

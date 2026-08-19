@@ -1,0 +1,235 @@
+{
+  "topicId": "health-administration:quality-and-safety:root-cause-analysis",
+  "subjectId": "health-administration",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "RCA as a structured, retrospective method for learning from a serious event",
+      "The sentinel event as the trigger and The Joint Commission's expectation of a credible RCA and corrective action plan (since 1997; ~45 business days)",
+      "RCA as a systems method targeting latent/process causes rather than individual blame",
+      "Core tools: timeline/event flow, the 5 Whys (Taiichi Ohno), and the Ishikawa/fishbone cause-and-effect diagram (Kaoru Ishikawa)",
+      "Output: corrective actions ranked by strength via the RCA2 action hierarchy (stronger/intermediate/weaker), adapted from the VA NCPS",
+      "Contrast with FMEA: RCA reactive/retrospective, FMEA proactive/prospective",
+      "A worked 5 Whys walkthrough of a hypothetical duplicate-dose event"
+    ],
+    "supporting": [
+      "Active failures vs latent conditions (James Reason), referenced in one line",
+      "Direct cause vs contributing cause vs root cause",
+      "The renaming to RCA2 to emphasize action",
+      "Near misses as a voluntary RCA trigger"
+    ],
+    "outOfScope": [
+      "General patient safety history (To Err Is Human, the Swiss cheese model as a main subject, never-events taxonomy) — owned by Patient Safety",
+      "QI methodology (PDSA, Lean, Model for Improvement) — owned by Quality Improvement",
+      "The definition of overall healthcare quality — owned by Healthcare Quality",
+      "Individualized clinical, diagnostic, coding, or benefits advice"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Root cause analysis is a structured method for analyzing serious adverse events, adapted from industrial accident investigation and now a standard error-analysis tool in health care.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ahrq-psnet-primer-root-cause-analysis", "doe-ne-std-1004-92-root-cause-analysis"],
+      "status": "supported"
+    },
+    {
+      "claim": "The Joint Commission has mandated the use of RCA to analyze sentinel events since 1997.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["ahrq-psnet-primer-root-cause-analysis"],
+      "status": "supported"
+    },
+    {
+      "claim": "A sentinel event is a patient safety event, not primarily related to the natural course of the patient's illness, that reaches the patient and results in death, permanent harm, or severe temporary harm; organizations are expected to complete a credible RCA and corrective action plan within roughly 45 business days of recognizing it.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["statpearls-rca-medical-error-prevention"],
+      "status": "supported"
+    },
+    {
+      "claim": "RCA is a systems method that identifies latent (system) causes and active errors, keeping the focus on process conditions rather than assigning blame to individuals; RCA2 guidance directs teams to focus causal statements on system-level issues and excludes deliberately unsafe or criminal acts.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["ahrq-psnet-primer-root-cause-analysis", "ihi-rca2-action-hierarchy-toolkit"],
+      "status": "supported"
+    },
+    {
+      "claim": "The 5 Whys technique repeatedly asks 'why?' until a root cause is reached and is attributed to Taiichi Ohno of the Toyota Production System; a problem may have multiple root causes.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ihi-5-whys-toolkit"],
+      "status": "supported"
+    },
+    {
+      "claim": "The cause-and-effect (fishbone) diagram was introduced by Kaoru Ishikawa and groups possible causes into major categories commonly given as people, methods, equipment, materials, measurement, and environment.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["statpearls-quality-tools-fishbone", "ihi-cause-effect-diagram-toolkit"],
+      "status": "supported"
+    },
+    {
+      "claim": "The RCA2 action hierarchy ranks corrective actions by strength: stronger actions change the system (architectural/physical changes, forcing functions, simplification, standardization); intermediate actions include checklists, software prompts, read-backs, and reducing distractions; weaker actions rely on memory and vigilance (double checks, warnings/labels, new policy/memo, training/education). It recommends at least one strong or intermediate action per RCA, because weaker actions used alone rarely sustain improvement.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ihi-rca2-action-hierarchy-toolkit"],
+      "status": "supported"
+    },
+    {
+      "claim": "FMEA is a prospective, structured process used to identify system failures of high-risk processes before they occur, mapping each step, estimating likelihood, detectability, and impact, often combined into a risk-priority score; this makes it the proactive counterpart to reactive, retrospective RCA.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["pmc-fmea-dispensing-process-2021", "ahrq-psnet-primer-root-cause-analysis"],
+      "status": "supported"
+    },
+    {
+      "claim": "The process was renamed RCA2 (Root Cause Analyses and Actions) by the National Patient Safety Foundation to emphasize that a credible analysis must yield strong corrective actions.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["ahrq-psnet-primer-root-cause-analysis", "ihi-rca2-action-hierarchy-toolkit"],
+      "status": "supported"
+    },
+    {
+      "claim": "An RCA distinguishes a direct cause, contributing causes, and the underlying root cause of an event.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["doe-ne-std-1004-92-root-cause-analysis"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether the 45-day RCA window is stated as calendar days or business days, and whether it is a strict mandate.",
+      "positions": [
+        "StatPearls states organizations must complete the RCA within 45 business days of recognizing a sentinel event.",
+        "Various secondary summaries describe a ~45-day submission window and a 72-hour start expectation; The Joint Commission's own policy frames self-reporting and sharing as encouraged."
+      ],
+      "resolution": "The lesson states 'roughly 45 business days' and frames the RCA and action plan as an accreditation expectation following a sentinel event, avoiding overly precise procedural claims and not reproducing Joint Commission standards text."
+    },
+    {
+      "issue": "Whether RCA reliably produces effective, durable fixes.",
+      "positions": [
+        "RCA is the expected response to serious events and, done well, yields system improvement.",
+        "The AHRQ PSNet primer notes studies find RCAs frequently rely on weak interventions and do not consistently produce sustainable solutions."
+      ],
+      "resolution": "The lesson presents RCA's intent and, honestly, the 'retrain and remind' failure mode, using the RCA2 action hierarchy to explain what a strong action looks like."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic boilerplate ('a foundational concept', 'a simple way to apply it') with no substantive, sourced claims about RCA."
+  ],
+  "correctionsNeeded": [
+    "Replaced boilerplate placeholder text with a substantive, sourced lesson.",
+    "Added the specific trigger (sentinel event) and the 1997 Joint Commission expectation.",
+    "Added correct attributions: 5 Whys to Taiichi Ohno, fishbone diagram to Kaoru Ishikawa, action hierarchy to VA NCPS via RCA2.",
+    "Added the RCA-versus-FMEA (reactive versus proactive) distinction, which the draft lacked."
+  ],
+  "rightsIssues": [
+    "The three IHI Patient Safety Essentials Toolkit PDFs (Action Hierarchy, 5 Whys, Cause and Effect Diagram) are copyrighted by the Institute for Healthcare Improvement; the notice permits photocopying for educational, not-for-profit use with attribution but prohibits commercial reproduction or republication. Used REFERENCE_ONLY for facts, with attribution; no wording reproduced.",
+    "StatPearls articles are copyrighted by StatPearls Publishing (hosted on NCBI Bookshelf); used REFERENCE_ONLY.",
+    "AHRQ PSNet content is US government work; treated conservatively as REFERENCE_ONLY and synthesized in original prose.",
+    "The PMC FMEA article is open access; used REFERENCE_ONLY, no substantial prose reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "ahrq-psnet-primer-root-cause-analysis",
+      "title": "Root Cause Analysis (Patient Safety Primer)",
+      "provider": "Agency for Healthcare Research and Quality (AHRQ), Patient Safety Network (PSNet)",
+      "url": "https://psnet.ahrq.gov/primer/root-cause-analysis",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch this session. Supports: RCA as a structured method adapted from industrial accident investigation; the systems approach identifying active errors (human-system interface) and latent errors; 'The Joint Commission has mandated use of RCA to analyze sentinel events (such as wrong-site surgery) since 1997'; the critique that RCAs often rely on weak interventions and fail to produce sustainable solutions; and the RCA2 renaming to emphasize strong corrective actions. Synthesized in original prose."
+    },
+    {
+      "id": "ihi-rca2-action-hierarchy-toolkit",
+      "title": "Patient Safety Essentials Toolkit: Action Hierarchy (part of RCA2)",
+      "provider": "Institute for Healthcare Improvement (IHI)",
+      "url": "https://www.ihi.org/sites/default/files/SafetyToolkit_ActionHierarchy.pdf",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "Copyright (c) 2019 Institute for Healthcare Improvement; photocopy permitted for educational, not-for-profit use with attribution; commercial reproduction/republication prohibited",
+      "licenseUrl": "https://www.ihi.org",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "PDF downloaded with a browser user-agent and text-extracted locally with pypdf (WebFetch returned binary). Supports the action hierarchy of stronger, intermediate, and weaker actions (levels adapted from the VA National Center for Patient Safety), the instruction to focus causal statements on system-level issues and not assign blame (RCA2 not recommended for blameworthy/criminal acts), the recommendation of at least one strong or intermediate action per RCA, and two worked case examples (shower-chair fall; missed chest x-ray follow-up). Facts only; no wording reproduced."
+    },
+    {
+      "id": "ihi-5-whys-toolkit",
+      "title": "Patient Safety Essentials Toolkit: 5 Whys - Finding the Root Cause of a Problem",
+      "provider": "Institute for Healthcare Improvement (IHI)",
+      "url": "https://www.ihi.org/sites/default/files/SafetyToolkit_5Whys.pdf",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "Copyright (c) 2019 Institute for Healthcare Improvement; photocopy permitted for educational, not-for-profit use with attribution; commercial reproduction/republication prohibited",
+      "licenseUrl": "https://www.ihi.org",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "PDF downloaded with a browser user-agent and text-extracted locally with pypdf. Supports: asking 'why?' repeatedly until the root cause is reached; the attribution of the technique to Taiichi Ohno, father of the Toyota Production System (Lean); and the note that a problem may have multiple root causes and different observers may answer differently. Facts only; no wording reproduced."
+    },
+    {
+      "id": "ihi-cause-effect-diagram-toolkit",
+      "title": "Patient Safety Essentials Toolkit: Cause and Effect Diagram",
+      "provider": "Institute for Healthcare Improvement (IHI)",
+      "url": "https://www.ihi.org/sites/default/files/SafetyToolkit_CauseandEffectDiagram.pdf",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "Copyright (c) 2017 Institute for Healthcare Improvement; photocopy permitted for educational, not-for-profit use with attribution; commercial reproduction/republication prohibited",
+      "licenseUrl": "https://www.ihi.org",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "PDF downloaded with a browser user-agent and text-extracted locally with pypdf. Supports: the cause-and-effect diagram is also known as an Ishikawa diagram 'for its creator' and a fishbone diagram for its shape, and teams group causes under categories of Materials, Methods, Equipment, Environment, and People. Facts only; no wording reproduced."
+    },
+    {
+      "id": "statpearls-quality-tools-fishbone",
+      "title": "Quality Tools and Techniques (Fishbone Diagram, Pareto Chart, Process Map)",
+      "provider": "StatPearls Publishing (NCBI Bookshelf, NBK607994)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK607994/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch this session. Supports: the fishbone/cause-and-effect diagram was introduced by Kaoru Ishikawa, 'often regarded as the father of Japanese quality'; the six major cause categories (methods, machine/equipment, manpower/people, materials, environment, measurement); and its use in QI and RCA in health care. Facts only."
+    },
+    {
+      "id": "statpearls-rca-medical-error-prevention",
+      "title": "Medical Error Prevention and Root Cause Analysis",
+      "provider": "StatPearls Publishing (NCBI Bookshelf, NBK570638)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK570638/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch this session. Supports: the definition of a sentinel event (a safety event not primarily related to the natural course of the illness that reaches a patient and results in death, severe harm, or permanent harm); the Joint Commission expectation of a formal process for identifying sentinel events, conducting timely and credible RCAs, and implementing a corrective action plan; completion within 45 business days of recognizing a sentinel event; and RCA's retrospective, systems-over-blame orientation looking beyond individual mistakes. Facts only."
+    },
+    {
+      "id": "pmc-fmea-dispensing-process-2021",
+      "title": "Application of failure mode and effects analysis (FMEA) to improve medication safety in the dispensing process - a study at a teaching hospital, Sri Lanka",
+      "provider": "BMC Public Health / PubMed Central (PMC8293514)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8293514/",
+      "sourceType": "peer-reviewed",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Open-access article read via WebFetch (pmc.ncbi.nlm.nih.gov canonical after redirect). Supports: 'FMEA is a prospective, team based, structured process used to identify system failures of high risk processes before they occur' and the use of Risk Priority Numbers (RPN = severity x frequency/occurrence x detection) to prioritize failure modes. Used to ground the RCA (reactive) versus FMEA (proactive) contrast. No substantial prose reproduced."
+    },
+    {
+      "id": "doe-ne-std-1004-92-root-cause-analysis",
+      "title": "DOE-NE-STD-1004-92, DOE Guideline: Root Cause Analysis Guidance Document",
+      "provider": "U.S. Department of Energy, Office of Nuclear Energy",
+      "url": "https://www.energy.gov/sites/default/files/2026-04/DOE-NE-STD-1004-92.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Existing source-registry record reused unchanged (same id and URL). Supports the general RCA distinction between direct cause, contributing cause, and root cause, restated in original wording. Used as a public-domain, discipline-general anchor for the definition; the healthcare-specific claims rest on the AHRQ, StatPearls, and IHI sources."
+    }
+  ]
+}
