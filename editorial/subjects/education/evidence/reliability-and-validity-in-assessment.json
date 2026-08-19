@@ -1,0 +1,402 @@
+{
+  "topicId": "education:assessment:reliability-and-validity-in-assessment",
+  "subjectId": "education",
+  "researchedAt": "2026-08-18",
+  "scope": {
+    "core": [
+      "Validity as a judgment about score interpretations for proposed uses, not a property of a test",
+      "The five sources of validity evidence in the 2014 Standards, and the retirement of the content/criterion/construct taxonomy",
+      "Construct underrepresentation and construct-irrelevant variance as the two standing threats",
+      "Reliability as consistency across replications; true score, observed score, measurement error",
+      "Test-retest, parallel forms, internal consistency (KR-20, coefficient alpha), inter-rater agreement",
+      "Percent agreement versus Cohen's kappa, and why kappa is preferred",
+      "The standard error of measurement, score bands, and conditional standard errors",
+      "The limits of coefficient alpha: essential tau-equivalence, the unidimensionality misreading, omega",
+      "How unreliability caps validity evidence without any reliability level guaranteeing validity",
+      "Factors that raise or lower reliability: test length, item and rater quality, range restriction",
+      "Fairness as validity: differential item functioning, accessibility and universal design, accommodations versus modifications"
+    ],
+    "supporting": [
+      "Generalizability theory and item response theory as alternative frameworks for precision",
+      "Decision consistency for classification uses",
+      "Messick's unified validity argument as the origin of the current framing",
+      "Cronbach and Meehl's nomological network as the historical background to construct validity"
+    ],
+    "outOfScope": [
+      "The formative versus summative distinction, which belongs to education:assessment:formative-versus-summative-assessment",
+      "Rubric construction and performance-task design, which belong to education:assessment:rubrics-and-performance-assessment",
+      "Standard setting methods (Angoff, bookmark) and equating",
+      "Item response theory model families and item parameter estimation",
+      "Advice about placement, promotion, graduation or certification decisions for individual students",
+      "Grading policy and grade calculation"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The 2014 Standards define validity as the degree to which evidence and theory support the interpretations of test scores for proposed uses, and state that it is the interpretation rather than the test that is evaluated.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "aera-apa-ncme-standards-2014"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The Standards call the unqualified phrase 'the validity of the test' incorrect and require each intended interpretation for a specified use to be validated separately.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "aera-apa-ncme-standards-2014"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Validity is treated as a unitary concept, and the 2014 Standards deliberately abandon the historical nomenclature of content validity and predictive validity in favour of five sources of validity evidence: test content, response processes, internal structure, relations to other variables, and consequences of testing.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "aera-apa-ncme-standards-2014"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The older taxonomy the lesson retires originates in the 1954 APA Technical Recommendations, which named predictive, concurrent, content and construct validity, with construct validity invoked whenever a test is interpreted as measuring an attribute that is not operationally defined; Messick's later work argued these were complementary evidence for one unified judgment.",
+      "claimType": "HISTORICAL",
+      "sourceIds": [
+        "cronbach-meehl-1955-construct-validity",
+        "messick-1994-validity-of-psychological-assessment"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Under the Standards, evidence about the consequences of testing bears on validity when the consequence can be traced to a source of invalidity such as construct underrepresentation or construct-irrelevant variance; a group score difference that reflects a genuine difference in the measured skill is not by itself a validity problem.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "aera-apa-ncme-standards-2014"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Reliability, which the Standards pair with the term precision, is consistency of scores across replications of the testing procedure, and what counts as a replication depends on whether the attribute is expected to change.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "aera-apa-ncme-standards-2014"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The Standards recognise alternate-form, test-retest and internal-consistency coefficients plus indices of scorer consistency, define reliability in classical test theory as the ratio of true-score variance to observed-score variance, and state that coefficients defining error differently must not be treated as interchangeable.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "aera-apa-ncme-standards-2014"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "KR-20 is coefficient alpha applied to dichotomously scored items, per the Standards' glossary.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "aera-apa-ncme-standards-2014"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The standard error of measurement equals the score standard deviation multiplied by the square root of one minus the reliability coefficient, and is used to place a confidence band around a reported score; conditional standard errors at each score level are more informative than a single average, particularly near a cut score.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "tighe-2010-sem-versus-reliability-mrcp",
+        "aera-apa-ncme-standards-2014"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "With a score standard deviation of 100 and a reliability of .91, the standard error of measurement is 30 scale points, so a one-standard-error band around a score of 512 runs 482 to 542 and a 1.96-standard-error band runs about 453 to 571.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "tighe-2010-sem-versus-reliability-mrcp",
+        "aera-apa-ncme-standards-2014"
+      ],
+      "status": "supported; arithmetic executed in Python (100*sqrt(0.09)=30.0; 512+/-30; 512+/-58.8)"
+    },
+    {
+      "claim": "Restricting the range of examinee ability lowers the reliability coefficient while leaving the standard error of measurement largely unchanged, because reliability is a joint property of an assessment and the people who take it.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "tighe-2010-sem-versus-reliability-mrcp",
+        "nimon-2012-reliability-of-data-pitfalls",
+        "aera-apa-ncme-standards-2014"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Reliability is a property of scores obtained from a particular group under particular conditions rather than a fixed attribute of an instrument, so quoting a manual's coefficient for one's own data is an error; the Standards likewise call blanket statements that a test 'is reliable' rarely acceptable.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nimon-2012-reliability-of-data-pitfalls",
+        "aera-apa-ncme-standards-2014"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Coefficient alpha depends only on the number of items and the average inter-item covariance and is unrelated to the test's internal structure, so it cannot demonstrate unidimensionality.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "sijtsma-2009-cronbachs-alpha",
+        "trizano-hermosilla-2016-alternatives-to-alpha"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Alpha equals reliability only under essential tau-equivalence; when that assumption fails, alpha under classical assumptions is a lower bound and typically understates reliability, by roughly one to eleven per cent in simulation depending on the severity of the violation. The lower-bound guarantee also assumes errors uncorrelated across items.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "trizano-hermosilla-2016-alternatives-to-alpha",
+        "sijtsma-2009-cronbachs-alpha"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "McDonald's omega, estimated from a factor model, does not require tau-equivalence and is the recommended default under approximate normality; the greatest lower bound performs better when a high proportion of items are strongly skewed.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "trizano-hermosilla-2016-alternatives-to-alpha",
+        "sijtsma-2009-cronbachs-alpha"
+      ],
+      "status": "supported, with a recorded disagreement about which alternative is best"
+    },
+    {
+      "claim": "Percent agreement between raters overstates consistency because it ignores chance agreement; Cohen's kappa subtracts the agreement expected from the raters' marginal rates, which is why it is preferred.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "mchugh-2012-interrater-reliability-kappa",
+        "aera-apa-ncme-standards-2014"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "For two raters marking 100 essays pass or fail, where rater A passes 80, rater B passes 85 and they agree on 87, expected chance agreement is .71 and Cohen's kappa is .55, which McHugh's scale labels weak agreement.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "mchugh-2012-interrater-reliability-kappa"
+      ],
+      "status": "supported; contingency table (76, 4, 9, 11) and kappa = (0.87-0.71)/(1-0.71) = 0.5517 computed in Python"
+    },
+    {
+      "claim": "Under classical test theory the correlation between two measures cannot exceed the square root of the product of their reliabilities, so scores with reliability .64 cannot correlate above .80 with a perfectly measured criterion or above .72 with a criterion of reliability .81; when errors correlate with true scores or with each other this bound can fail.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "nimon-2012-reliability-of-data-pitfalls",
+        "aera-apa-ncme-standards-2014"
+      ],
+      "status": "supported; both ceilings reproduced by Monte Carlo simulation in Python (observed r = 0.8003 and 0.7207 against predicted 0.800 and 0.720)"
+    },
+    {
+      "claim": "Reliability indices are insensitive to systematic error, so a test that consistently measures something construct-irrelevant will show high reliability while the intended interpretation fails; the Standards separately note that inconsistent scores limit accurate prediction, diagnosis and decision making.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "aera-apa-ncme-standards-2014",
+        "nimon-2012-reliability-of-data-pitfalls"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Lengthening a test with comparable items raises reliability and shortening it lowers reliability; low variability in the measured construct depresses reliability coefficients, and rater variability estimated from unusually well-trained raters understates operational error.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "aera-apa-ncme-standards-2014"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Differential item functioning occurs when test takers at the same level of the measured attribute but in different groups respond differently to an item; detecting DIF does not by itself establish bias, which requires a substantive explanation, and DIF can reflect anticipated multidimensionality.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "aera-apa-ncme-standards-2014"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The Standards define fairness in validity terms, requiring every step of the testing process to minimise construct-irrelevant variance, and introduce universal design as an approach that maximises accessibility for all intended examinees; accessibility is a legal requirement in some testing contexts.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "aera-apa-ncme-standards-2014"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "In the Standards' usage, an accommodation is a change that retains comparability of score meaning while a modification changes the construct measured and therefore produces scores that differ in meaning from the standard form.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "aera-apa-ncme-standards-2014"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Which estimator should replace coefficient alpha",
+      "positions": [
+        "Sijtsma (2009) argues for the greatest lower bound as the only lower bound attaining a realistic value, and criticises alpha for being able to fall outside the admissible interval.",
+        "Trizano-Hermosilla and Alvarado (2016) recommend McDonald's omega as the default under approximate normality because it corrects alpha's underestimation when tau-equivalence fails, reserving the greatest lower bound for cases with many strongly skewed items."
+      ],
+      "resolution": "The lesson teaches the point both agree on, that alpha's assumptions are usually unmet and that it should not be read as a measure of dimensionality, names omega as the generally better default, and names the greatest lower bound as preferable under strong skew. It does not claim the choice of alternative is settled."
+    },
+    {
+      "issue": "Whether unreliability always attenuates observed relationships",
+      "positions": [
+        "The classical result, on which the correction for attenuation and the ceiling on validity coefficients both rest, assumes measurement errors are uncorrelated.",
+        "Nimon, Zientek and Henson (2012) show that when error scores correlate with true scores or with each other, an observed correlation can exceed its true-score counterpart, so measurement error does not always attenuate."
+      ],
+      "resolution": "The lesson states the ceiling explicitly as a consequence of the classical model with uncorrelated errors, verifies it by simulation, and flags the exception in the same paragraph rather than presenting the bound as a law."
+    },
+    {
+      "issue": "How far consequences belong inside the validity concept",
+      "positions": [
+        "Messick's unified framework places the consequences of test use inside the validity argument as an aspect of construct validity.",
+        "The 2014 Standards accept consequences as a source of evidence but restrict their bearing on validity to consequences traceable to construct underrepresentation or construct-irrelevant variance, treating other consequences as value judgments about test use."
+      ],
+      "resolution": "The lesson teaches the Standards' narrower traceability criterion as current guidance and credits Messick with the unification that produced it, which is also the point most undergraduate treatments blur."
+    },
+    {
+      "issue": "How to interpret a given kappa value",
+      "positions": [
+        "Cohen's original descriptive labels treat .41 to .60 as moderate and .61 to .80 as substantial.",
+        "McHugh (2012) argues those labels are too lenient for practical use and proposes a stricter scale on which .40 to .59 is weak and agreement below .60 is inadequate."
+      ],
+      "resolution": "The lesson uses McHugh's stricter labelling for its worked example and attributes it, rather than presenting any benchmark table as an objective standard."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's definition treated the topic as 'a foundational concept in Education' with no distinction at all between reliability and validity; nothing in the research supports collapsing them.",
+    "The draft's vocabulary entry defined the topic circularly as 'a foundational Education concept covered in this lesson', which is not a definition.",
+    "The draft's Eli-10 analogy (a label on a toolbox drawer, a map legend) carried no measurement content and did not correspond to anything in the literature.",
+    "The draft's three quick-check items tested generic study advice about definitions and context rather than any assessment content, and each offered only three options.",
+    "The draft cited no sources at all."
+  ],
+  "correctionsNeeded": [
+    "Replaced the draft's implied framing of validity as a property a test possesses with the 2014 Standards' position that validity is a judgment about score interpretations for proposed uses.",
+    "Retired the content/criterion/construct taxonomy explicitly as superseded, while explaining what the older terms were reaching for so students can read older textbooks without confusion.",
+    "Replaced the slogan 'a test can be reliable but not valid' with the unpacked logic: unreliability caps the relationships validity evidence depends on, reliability indices are blind to systematic error, and the constraint is a ceiling rather than a threshold.",
+    "Added the standard error of measurement with a computed worked example and score band, since a topic flagged as quantitative cannot be taught with coefficients alone.",
+    "Added the caveat that coefficient alpha does not measure unidimensionality and that its tau-equivalence assumption is normally unmet, which is the single most common error in applied reporting.",
+    "Added inter-rater agreement with the percent-agreement versus kappa contrast and a computed example, without teaching rubric construction, which belongs to a separate topic.",
+    "Added the fairness material (differential item functioning, accessibility, accommodation versus modification) as part of the validity argument rather than as a separate topic.",
+    "Removed all references to decisions about individual students; the worked example is framed explicitly as a statement about measurement precision rather than as placement guidance."
+  ],
+  "rightsIssues": [
+    "The 2014 Standards are openly readable through the sponsoring organizations' open-access page but the copyright page reserves all rights, so the source is recorded REFERENCE_ONLY, no wording was reproduced, and no standard is quoted verbatim.",
+    "Three of the open-access articles (Sijtsma 2009, McHugh 2012, Nimon et al. 2012) carry non-commercial Creative Commons licences; they are recorded as attribution-required and no prose, table or figure was reproduced from any of them.",
+    "McHugh's kappa interpretation table is not reproduced; only the single band relevant to the worked example is described in the lesson's own words and attributed to her.",
+    "All numeric examples in the lesson are original and were computed in Python; none is taken from a source's worked example."
+  ],
+  "sourceRecords": [
+    {
+      "id": "aera-apa-ncme-standards-2014",
+      "title": "Standards for Educational and Psychological Testing (2014 edition)",
+      "provider": "Joint Committee on the Standards for Educational and Psychological Testing of the American Educational Research Association, the American Psychological Association, and the National Council on Measurement in Education; published by AERA",
+      "url": "https://www.testingstandards.net/open-access-files.html",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-18",
+      "notes": "The full 2014 English edition PDF was read from the open-access files page maintained by the three sponsoring organizations. Used for the definition of validity as the degree to which evidence and theory support interpretations of test scores for proposed uses; for the explicit statement that it is the interpretation and not the test that is evaluated and that the unqualified phrase 'the validity of the test' is incorrect (Standard 1.0, Standard 1.1); for validity as a unitary concept and the deliberate replacement of historical validity types with five sources of validity evidence (test content, response processes, internal structure, relations to other variables, consequences of testing); for construct underrepresentation and construct-irrelevant variance; for the traceability criterion governing when consequences count as validity evidence; for chapter 2 on reliability/precision, replications, true score, classical test theory, generalizability theory, IRT information functions, the three families of reliability coefficients plus scorer consistency, KR-20 as the dichotomous special case of coefficient alpha, factors affecting reliability (test length, rater training, population variability), the standard error of measurement and conditional standard errors, Standard 2.0 on precision proportionate to stakes, Standard 2.6 on coefficients not being interchangeable, and the statement that blanket claims that a test 'is reliable' are rarely acceptable; and for chapter 3 on fairness, Standard 3.0, universal design, differential item functioning as a flag requiring substantive explanation, and the accommodation versus modification distinction. Copyright page states all rights reserved, so the text is free to read but nothing was reproduced or adapted."
+    },
+    {
+      "id": "messick-1994-validity-of-psychological-assessment",
+      "title": "Validity of Psychological Assessment: Validation of Inferences From Persons' Responses and Performances as Scientific Inquiry Into Score Meaning (ETS Research Report RR-94-45)",
+      "provider": "Samuel Messick, Educational Testing Service; ERIC full text ED380496 (also published in American Psychologist, 50(9), 741-749, 1995)",
+      "url": "https://files.eric.ed.gov/fulltext/ED380496.pdf",
+      "sourceType": "peer-reviewed",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-18",
+      "notes": "Used for the unified view of validity that the 2014 Standards later codified: that validity is an integrated evaluative judgment rather than a set of separate validities, that it attaches to inferences drawn from scores rather than to instruments, and that construct underrepresentation, construct-irrelevant variance and the consequences of test use belong inside the validity argument. Cited in the lesson for the historical claim that the unification of the older validity types is Messick's argument, not for any specific numeric or empirical result. No reuse terms are stated for the report text, so it is recorded reference only."
+    },
+    {
+      "id": "cronbach-meehl-1955-construct-validity",
+      "title": "Construct Validity in Psychological Tests (Psychological Bulletin, 52, 281-302)",
+      "provider": "Lee J. Cronbach and Paul E. Meehl; Classics in the History of Psychology, an internet resource developed by Christopher D. Green, York University",
+      "url": "https://psychclassics.yorku.ca/Cronbach/construct.htm",
+      "sourceType": "peer-reviewed",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-18",
+      "notes": "Primary source for the superseded taxonomy the lesson retires. Used for the four validity categories set out in the 1954 APA Technical Recommendations (predictive, concurrent, content and construct, with the first two grouped as criterion-oriented), for the statement that construct validity is invoked whenever a test is interpreted as measuring an attribute that is not operationally defined, and for the nomological network. Cited only for what the older framework claimed, never as current guidance."
+    },
+    {
+      "id": "sijtsma-2009-cronbachs-alpha",
+      "title": "On the Use, the Misuse, and the Very Limited Usefulness of Cronbach's Alpha (Psychometrika, 74(1), 107-120)",
+      "provider": "Klaas Sijtsma; PubMed Central (PMC2792363)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2792363/",
+      "sourceType": "peer-reviewed",
+      "usage": "ATTRIBUTION_REQUIRED",
+      "license": "Creative Commons Attribution Noncommercial License (as recorded on the PubMed Central record)",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-18",
+      "notes": "Used for two claims in the lesson: that coefficient alpha is a function only of the number of items and the average inter-item covariance and therefore carries no information about a test's internal structure, so it cannot evidence unidimensionality; and that essential tau-equivalence is the condition under which alpha equals reliability, with real data typically falling short so that alpha understates reliability. Sijtsma advocates the greatest lower bound rather than omega, which the lesson's evidence packet records as a live disagreement. No prose reproduced."
+    },
+    {
+      "id": "mchugh-2012-interrater-reliability-kappa",
+      "title": "Interrater Reliability: The Kappa Statistic (Biochemia Medica, 22(3), 276-282)",
+      "provider": "Mary L. McHugh; PubMed Central (PMC3900052)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3900052/",
+      "sourceType": "peer-reviewed",
+      "usage": "ATTRIBUTION_REQUIRED",
+      "license": "Creative Commons Attribution Non-Commercial License (as stated on the article)",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-18",
+      "notes": "Used for the limitation of raw percent agreement (it does not discount agreement reached by chance), for Cohen's 1960 correction and the kappa formula (observed agreement minus expected agreement, divided by one minus expected agreement), and for the interpretive scale the lesson applies to its own worked example, in which .40 to .59 is labelled weak agreement. The lesson's kappa example uses original numbers computed in Python, not McHugh's worked example, and no table from the article is reproduced."
+    },
+    {
+      "id": "tighe-2010-sem-versus-reliability-mrcp",
+      "title": "The Standard Error of Measurement Is a More Appropriate Measure of Quality for Postgraduate Medical Assessments Than Is Reliability: An Analysis of MRCP(UK) Examinations (BMC Medical Education, 10:40)",
+      "provider": "Jennifer Tighe, I. C. McManus, Nicholas G. Dewhurst, Liliana Chis and John Mucklow; PubMed Central (PMC2893515)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2893515/",
+      "sourceType": "peer-reviewed",
+      "usage": "EXTRACT_AND_ADAPT",
+      "license": "Creative Commons Attribution License 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-18",
+      "notes": "Used for the classical relationship between the standard error of measurement, the score standard deviation and the reliability coefficient; for the range-restriction demonstration in which restricting the MRCP(UK) sample to already-passing candidates dropped reliability from about .90 to about .70 while the standard error of measurement was essentially unchanged; and for the framing that reliability is a joint property of an assessment and the candidates who happen to take it while the standard error behaves more like a property of the measuring instrument. The lesson's own worked example uses different, original numbers. Licence permits reuse with attribution, but no prose was reproduced."
+    },
+    {
+      "id": "nimon-2012-reliability-of-data-pitfalls",
+      "title": "The Assumption of a Reliable Instrument and Other Pitfalls to Avoid When Considering the Reliability of Data (Frontiers in Psychology, 2012)",
+      "provider": "Kim Nimon, Linda Reichwein Zientek and Robin K. Henson; PubMed Central (PMC3324779)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3324779/",
+      "sourceType": "peer-reviewed",
+      "usage": "ATTRIBUTION_REQUIRED",
+      "license": "Creative Commons Attribution Non-Commercial License (as stated on the article)",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-18",
+      "notes": "Used for the claim that reliability is a property of scores rather than of instruments and that citing a manual's coefficient as though it described one's own sample is an error, and for the caution that the attenuation story holds under classical assumptions: when error scores correlate with true scores or with one another, an observed correlation can exceed its true-score counterpart. The lesson therefore states the attenuation ceiling as a consequence of the classical model rather than as a universal law."
+    },
+    {
+      "id": "trizano-hermosilla-2016-alternatives-to-alpha",
+      "title": "Best Alternatives to Cronbach's Alpha Reliability in Realistic Conditions: Congeneric and Asymmetrical Measurements (Frontiers in Psychology, 7:769)",
+      "provider": "Italo Trizano-Hermosilla and Jesus M. Alvarado; Frontiers Media",
+      "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2016.00769/full",
+      "sourceType": "peer-reviewed",
+      "usage": "EXTRACT_AND_ADAPT",
+      "license": "Creative Commons Attribution License (CC BY)",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-18",
+      "notes": "Simulation study used for the three assumptions of coefficient alpha (essential tau-equivalence, uncorrelated errors, unidimensionality), for the magnitude of alpha's underestimation when tau-equivalence is violated (reported in the study as roughly 0.6 to 11.1 per cent, stated in the lesson as roughly one to eleven per cent), for the recommendation of McDonald's omega as the default alternative under approximate normality, and for the finding that the greatest lower bound performs better when a high proportion of items are strongly skewed."
+    }
+  ]
+}

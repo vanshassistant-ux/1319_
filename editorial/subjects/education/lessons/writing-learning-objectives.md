@@ -1,0 +1,179 @@
+# Writing Learning Objectives
+
+## In 30 Seconds
+
+A learning objective is a checkable claim about the learner: what they will be able to do once the teaching has worked. It is not the goal you are aiming at, not the activity you planned for Tuesday, and not the standard your state adopted. The craft is small and unforgiving - choose a verb someone could film, add the condition and the standard only when they change the task, and make sure the assessment asks for the performance the verb promised.
+
+## Why This Matters
+
+Objectives are where a course's intentions become inspectable. Written well, they tell a student what counts, tell a colleague what your course actually delivers, and give you a way to notice that your exam has been quietly teaching something other than what your syllabus promised. Written badly, they are decoration - a page of "students will understand" that nobody can act on and nothing can check. Learning the craft also buys you a working vocabulary for almost everything downstream: rubrics, formative assessment, curriculum mapping, accreditation review, and any argument about whether a programme does what it claims. And it comes with a live disagreement worth knowing, since serious educators have argued for sixty years about what specifying outcomes in advance costs you.
+
+## Learning Objectives
+
+- Define a learning objective and distinguish it from an instructional goal, a classroom activity, and an adopted standard.
+- Apply Mager's performance, condition and criterion components to rewrite a defective objective, and judge when a condition or degree earns its place.
+- Explain why verbs such as understand and appreciate fail as operative verbs, and substitute observable performances that would serve as evidence.
+- Describe the 2001 Anderson and Krathwohl revision, including its two dimensions, and state accurately what it changed about the 1956 hierarchy claim.
+- Analyse a course for constructive alignment among objective, instruction and assessment, and identify the grain size at which each objective belongs.
+- Evaluate Eisner's critique of behavioural objectives and decide when an expressive objective is the better instrument.
+
+## The College Version
+
+### An objective is a claim about the learner, not a description of the class
+
+A learning objective says what a student will be able to do once the teaching has worked. That single constraint - it is about the learner, and it is checkable - separates it from three things it is constantly confused with. A goal is broader and deliberately aspirational: "students will become scientifically literate" is worth wanting and impossible to grade on Thursday. Goals sit above objectives and are reached, if at all, through many of them. An activity describes what happens in the room: "students will work in groups to build a model volcano." A class can complete that activity flawlessly and learn nothing about pressure gradients, because the sentence never says what anyone should end up able to do. A standard is an expectation adopted outside your classroom, written to be shared across thousands of them; it tells you what the system expects but is usually too coarse to teach directly, so part of a teacher's job is unpacking a standard into the objectives that would actually get a student there. The working test is small and brutal. Write "the student will be able to...", finish the sentence, then ask how you would know. If you cannot answer that question with something a second person could observe, you have written a goal, an activity, or a wish.
+
+### The components, and where specification stops paying
+
+Robert Mager's 1962 Preparing Instructional Objectives fixed the format most teacher-preparation programmes still teach. An objective has a performance (what the learner does), a condition (the circumstances under which they do it), and a criterion (how well it has to be done to count). The ABCD variant adds an audience at the front - "the third-grade student will..." - which matters when objectives travel between programmes and matters very little inside your own gradebook. New York State's guidance for licensed schools uses the three-part version and is blunt about the criterion: standards like "to the satisfaction of the instructor" are unusable, and a blanket 70 percent accuracy is absurd for a task like drawing blood, where partial success is failure. That same guidance also permits dropping the condition when it follows obviously from the instruction. Take the permission seriously, because full specification has a cost. Eisner did the arithmetic in 1967 and found a teacher would need thousands of objectives a year to cover the content at that grain; what you get instead is a document nobody reads and a false impression of precision. A more usable rule: state the condition when it changes the difficulty of the task - open book or closed, with a calculator or without, given a labelled diagram or from memory - and state the degree when a real threshold exists, such as a safety tolerance or a fluency rate. Otherwise leave them out and let the verb carry the weight.
+
+### Verbs you could film
+
+The most common defect in a draft objective is a verb naming something that happens inside a head. Understand, appreciate, know, be familiar with, be exposed to, grasp, realise - none of these is observable, and New York State's guidance puts the objection in one line: a teacher cannot watch a student understanding. The point is not that understanding is a bad thing to want. It is the thing you want. The point is that understanding is inferred from performances, so an objective has to name the performance you would accept as the inference. What does a student who understands osmosis do that one who does not cannot? They predict which way water moves across a membrane given two concentrations. They explain why a wilted plant recovers in fresh water. They spot the error in a classmate's diagram. Those are the objectives; understanding is what they are evidence for. This is also why the phrase "be exposed to" deserves special contempt: it describes the teacher's action, not the learner's, and it commits to nothing. One subtlety survives all this. A verb is not self-interpreting. "Solve for x in a two-step equation" is straightforward application for a class that has drilled the procedure all week and something much closer to analysis for a student meeting the form cold. The verb tells you what the student does; only knowing what they already have tells you how hard it is.
+
+### Bloom's taxonomy: what it is, what changed in 2001, and what it cannot do
+
+The taxonomy was not designed as a theory of learning. Benjamin Bloom, then Associate Director of the Board of Examinations of the University of Chicago, wanted to reduce the labour of writing annual comprehensive examinations, and enlisted measurement specialists who met roughly twice a year from 1949. Their handbook appeared in 1956 as a committee product - Bloom as editor, with Max Engelhart, Edward Furst, Walter Hill and David Krathwohl - classifying examination items so that faculty at different universities could trade items and know they were measuring the same objective. Its six categories were Knowledge, Comprehension, Application, Analysis, Synthesis and Evaluation. The affective domain came later and separately, as Handbook II by Krathwohl, Bloom and Masia in 1964; the originating group never published a psychomotor taxonomy at all, and the psychomotor schemes in circulation were produced independently by Simpson, Dave and Harrow. The 2001 revision edited by Anderson and Krathwohl is the one to use. It converts the categories to verbs - remember, understand, apply, analyze, evaluate, create - renames Synthesis as Create and moves it to the top, and adds a second axis, the Knowledge dimension: factual, conceptual, procedural and metacognitive. Crossing the two gives the Taxonomy Table, which is where the revision earns its keep, because an objective is a verb plus an object and the two axes ask you both questions at once. Now the honest part. The 1956 volume assumed a cumulative hierarchy, in which reaching a higher category required the ones beneath it. That was an assumption the committee stated, not a result it demonstrated, and the revision explicitly relaxed the strict-hierarchy requirement so categories may overlap: Krathwohl's own example is that Explaining, filed under Understand, is more complex than Executing, filed under Apply. A 2022 study by Larsen and colleagues pushed harder, coding 940 assessment items, and found the knowledge and cognitive-process dimensions are not independent and that prompt words - action verbs included - showed no clear relationship to the cognitive process the item actually required. Treat the verb lists as a drafting aid that widens what you consider, never as a classifier that certifies what you wrote.
+
+### Alignment: the objective, the teaching, and the test have to be the same promise
+
+John Biggs named the principle in 1996: constructive alignment. Derive the objective as a performance at the cognitive level you actually intend, choose teaching and learning activities because you judge they will elicit that performance, and assess by asking for that same performance. Stated that way it sounds trivial. In practice it is the most frequently broken rule in course design. A syllabus promises that students will evaluate competing explanations of the Reformation; the teaching is lecture; the assessment is fifty multiple-choice items on names and dates. Students are not fooled by the syllabus. They study the test, so the test is the real objective, and the stated one is decoration. Lorin Anderson's re-examination of curricular alignment separates the questions by where you start looking: content coverage asks whether what you are teaching is being tested, opportunity to learn asks whether what is being tested has been taught, and alignment proper concerns the fit between objectives and assessments. All three can fail independently. The cheapest check available is to write each objective and each assessment task into the Taxonomy Table and see whether they land in the same cells. When the objectives cluster in analyze and create and the exam clusters in remember and understand, you have found the gap before your students do.
+
+### Grain size, and the argument you should know about
+
+Objectives exist at three scales and mixing them produces most of the bad ones. Course-level objectives are few, broad, and not assessed by any single task; they are what a transcript line is supposed to mean. Unit-level objectives are assessable over a couple of weeks. Lesson-level objectives are checkable before the students leave the room. Writing "students will think like a historian" as Tuesday's objective is a grain-size error, not an ambition problem, and so is writing "students will list the four stages of mitosis" as the objective of a semester. Every objective should be answerable to one above it and specific enough to check at its own level. Finally, know that the whole apparatus has serious critics. Elliot Eisner argued in 1967 that behavioural objectives assume outcomes are more predictable than teaching actually permits; that they quietly privilege the subject matter which reduces neatly to specifiable behaviour, so spelling and dates flourish while imaginative work is squeezed; that they confuse having a standard with exercising judgment; and that treating objective-writing as the necessary first step in planning confuses logical order with how teachers really work. His alternative was the expressive objective, which names the encounter - the situation, the problem, the task - without prescribing what must be learned from it, and evaluates the result afterwards the way a critic appraises a work. Eisner did not want objectives abandoned; he wanted both kinds available. That is the mature position. Use a behavioural objective where the outcome genuinely is a nameable performance, and stop forcing one where the point of the activity is that you cannot predict the output.
+
+## Key Vocabulary
+
+- **Learning objective** — A statement of what a learner will be able to do after instruction, written so that a second person could tell whether it happened.
+- **Instructional goal** — A broad statement of intended benefit that sits above the assessable level and is approached through many smaller, checkable outcomes.
+- **Observable performance** — An action a second person could watch, read or measure, used as the evidence from which an internal state such as comprehension is inferred.
+- **Condition** — The circumstances, materials or constraints under which a demonstration must occur, stated when they change how hard the task is.
+- **criterion (in an objective)** — The level of accuracy, speed or completeness that counts as acceptable, stated only when a genuine threshold exists.
+- **Cognitive process dimension** — The six-category axis of the 2001 revised taxonomy - remember, understand, apply, analyze, evaluate, create - naming what the learner does.
+- **Knowledge dimension** — The second axis of the 2001 revision, classifying what the learner operates on as factual, conceptual, procedural or metacognitive.
+- **Taxonomy Table** — The two-way grid formed by crossing cognitive process categories with knowledge types, used to place objectives, activities and assessments in comparable cells.
+- **Constructive alignment** — Biggs's design principle requiring that stated outcomes, teaching activities and assessment tasks all call for the same performance.
+- **Expressive objective** — Eisner's term for a planned encounter that names the situation and task but leaves the outcome open, judged after the fact rather than against a pre-set answer.
+
+## Eli-10
+
+Here is the entire trick in one question. If a student walked out of your lesson having learned exactly what you hoped, what could they do that they could not do this morning? Write that down, starting with "the student will be able to," and pick a verb you could film. You cannot film understanding. You can film explaining, sorting, predicting, building, and finding the mistake in something. Then check one more thing: does the test you already planned actually ask for that? If it does not, one of the two is lying to you, and you get to decide which one changes.
+
+## Eli's Analogy
+
+A learning objective works like the road test at the end of driving lessons. "Be a good driver" is a fine ambition and a useless test item. "Reverse into a parking space between two cones without touching either" says exactly what counts, under what conditions, and how well it has to be done. The examiner never has to guess what was going on in your head. They just watch.
+
+**Where the analogy breaks down.** The comparison stops where driving does. A road test measures a short list of manoeuvres because driving largely is a short list of manoeuvres. History, poetry and design are not. A student can clear every checkable objective in a literature unit and still miss the thing the unit was for, and the parts of a subject that resist specification are often the parts worth the most. Objectives are a tool for outcomes you can name in advance, not a complete description of an education - which is exactly what Elliot Eisner warned against treating them as.
+
+## Worked Example
+
+Three drafts from a real syllabus, diagnosed and rewritten. Draft one: "Students will understand photosynthesis." The verb names a mental state nobody can observe, and photosynthesis is a topic, not something the student does. Ask what you would accept as proof and the answer supplies the verb. Rewrite: "Given a labelled diagram of a chloroplast, students will trace the path of carbon from carbon dioxide to glucose, naming the reactants and products at each stage." The condition, the performance and the content are now all visible, and no percentage is needed - the trace is either right or it is not. Draft two: "Students will work in pairs to build a model suspension bridge." This is an activity. A pair can produce a beautiful bridge with one partner doing all the thinking. Rewrite: "Students will predict which member of a suspension bridge carries the largest tensile load and justify the prediction with a free-body diagram." The build survives as the vehicle; the objective now states what the build is supposed to leave in each head. Draft three: "Students will appreciate the diversity of American poetry." Appreciation is an affective aim and a legitimate one - it is simply not a cognitive objective. Two different repairs are available. Make it assessable: "Students will compare two twentieth-century American poems on form and voice and argue which more effectively serves its speaker's purpose." Or keep it expressive in Eisner's sense: "Students will read six poems from different traditions and write a response to the one that unsettled them most," then evaluate what they produce instead of matching it to a pre-set answer. What you cannot do is leave "appreciate" in the objectives column and test it with a multiple-choice quiz on publication dates. That is precisely the alignment failure the whole apparatus exists to catch.
+
+## Common Mistakes
+
+- **Writing what the class will do instead of what the learner will be able to do.**  
+  An activity is a vehicle, not an outcome. Keep the activity in the plan, and write the objective as the performance the activity is supposed to produce in each student.
+- **Using verbs that name internal states - understand, appreciate, know, be familiar with, be exposed to.**  
+  Name the evidence instead. Ask what a student who understands can do that one who does not cannot, and make that the verb. Understanding stays as the goal the objective serves.
+- **Shopping a published Bloom verb list and assuming the verb fixes the cognitive level.**  
+  The same verb sits at different levels depending on what the learner has already seen, and coding of real assessment items found no clean relationship between prompt verbs and the cognitive process required. Use the list to widen your options, then judge the level from the task and the learners.
+- **Attaching a condition and a percentage to every objective in the name of rigour.**  
+  State the condition when it changes the task's difficulty and the degree when a real threshold exists. Otherwise you produce unreadable lists and false precision - a flat 70 percent means nothing on a task where partial success is failure.
+- **Writing ambitious objectives and then assessing something easier.**  
+  Students study the assessment, so the assessment is the operative objective. Place each objective and each assessment task in the Taxonomy Table and change whichever one you did not actually mean.
+
+## Compare / Contrast
+
+| Idea | Contrasted with | Distinction |
+|---|---|---|
+| **Learning objective** | **Instructional goal** | An objective is checkable at the scale of a lesson or unit; a goal is broad, aspirational, and reached only through many objectives. "Predict the direction of osmotic flow" versus "become scientifically literate." |
+| **Learning objective** | **Classroom activity** | The objective names what changes in the learner; the activity names what happens in the room. A class can complete the activity perfectly and satisfy no objective at all. |
+| **Learning objective** | **Adopted standard** | A standard is an external expectation written to be shared across many classrooms and is usually too coarse to teach directly; objectives are what you write to get a particular group of students to it. |
+| **Instructional objective** | **Expressive objective** | Eisner's contrast: an instructional objective specifies the behaviour to be acquired in advance; an expressive objective specifies the encounter and deliberately leaves the outcome open, to be appraised afterwards. |
+| **1956 taxonomy** | **2001 revision** | The original used nouns, ran Knowledge to Evaluation, and assumed a cumulative hierarchy. The revision uses verbs, moves Create to the top, adds a knowledge dimension, and explicitly relaxes the strict hierarchy so categories may overlap. |
+
+## Key Takeaway
+
+An objective is a promise about what the learner will be able to do, written in a verb you could film and matched to the assessment that will check it. The taxonomies help you aim it; they do not certify it, and they were never meant to cover everything a course is for.
+
+## Practice Question Bank
+
+**1. In the 2001 Anderson and Krathwohl revision, what are the six categories of the cognitive process dimension, in order?**
+
+   A. Knowledge, comprehension, application, analysis, synthesis, evaluation
+   B. Remember, understand, apply, analyze, evaluate, create
+   C. Remember, understand, apply, analyze, create, evaluate
+   D. Factual, conceptual, procedural, metacognitive, strategic, reflective
+
+   *Answer: B.* The revision converted the categories to verbs, renamed Synthesis as Create and moved it to the top above Evaluate. Option A is the original 1956 noun sequence. Option C inverts the top two. Option D lists the four knowledge-dimension types plus two extras; the knowledge dimension is the taxonomy's other axis, not the process sequence.
+   *Difficulty: recall · Skill: Recalling the structure of the revised taxonomy's cognitive process dimension · Sources: krathwohl-2002-revision-of-blooms-taxonomy-overview, heer-iowa-state-model-of-learning-objectives*
+
+**2. Why does "Students will understand the causes of the Great Depression" fail as a learning objective?**
+
+   A. Understanding is not a legitimate aim of instruction
+   B. The verb names an internal state nobody can observe, so the statement never says what would count as evidence
+   C. It is missing a percentage criterion, and every objective requires one
+   D. The topic is too narrow to support a full objective
+
+   *Answer: B.* Understanding is exactly what you want; it is just inferred from performances rather than seen, which is why state guidance rejects it as an operative verb - a teacher cannot observe a student understanding. Option A overstates the objection. Option C is false: a numeric criterion is often false precision and guidance explicitly warns against blanket percentages. Option D misdiagnoses scope as the problem.
+   *Difficulty: understanding · Skill: Diagnosing an unobservable verb and explaining the underlying objection · Sources: nysed-writing-performance-objectives, eric-mager-1962-preparing-instructional-objectives*
+
+**3. A teacher drafts: "Students will work in pairs to create a poster about the water cycle." What is the main defect, and what repairs it?**
+
+   A. It is too specific; deleting the pair work would make it a proper objective
+   B. It uses the verb "create", which the revised taxonomy reserves for advanced courses
+   C. It lacks a numeric criterion; adding "with 80 percent accuracy" repairs it
+   D. It names an activity rather than a learner performance; stating what each student must be able to do with the water cycle - predict where water from a lake goes after it evaporates, for instance - repairs it
+
+   *Answer: D.* The sentence describes what happens in the room, and a pair can produce an excellent poster with one partner doing all the thinking. Keeping the poster as the vehicle while writing the objective as an individual performance fixes it. Option A changes nothing about the defect. Option B invents a restriction the taxonomy does not impose. Option C bolts a criterion onto a statement that still names no learner performance.
+   *Difficulty: application · Skill: Distinguishing activities from objectives and rewriting a defective draft · Sources: nysed-writing-performance-objectives, heer-iowa-state-model-of-learning-objectives*
+
+**4. A syllabus objective says students will evaluate competing explanations of a historical event, but the only assessment is a fifty-item multiple-choice test on names and dates. Using constructive alignment, what is the most accurate diagnosis?**
+
+   A. Nothing is wrong: because the taxonomy is a cumulative hierarchy, a recall test also certifies the higher categories
+   B. The objective is invalid, because "evaluate" is not an observable verb
+   C. The assessment does not elicit the performance the objective names, so recall is what students are actually rewarded for learning
+   D. The problem is grain size: an evaluation objective belongs at lesson level rather than course level
+
+   *Answer: C.* Constructive alignment requires the stated outcome, the teaching activities and the assessment to call for the same performance; here the assessment silently replaces the objective, because students study what is tested. Option A leans on a hierarchy claim the 2001 revision explicitly relaxed, and it would not follow even if the hierarchy held. Option B is wrong - evaluating a claim produces observable work. Option D misidentifies scale as the fault.
+   *Difficulty: analysis · Skill: Applying constructive alignment to diagnose an objective-assessment mismatch · Sources: eric-biggs-1996-constructive-alignment, anderson-2002-curricular-alignment-reexamination*
+
+**5. Two classes get the same task - solve for x in 3x + 7 = 22. One has drilled that exact procedure for a week; the other has never met a two-step equation. What does this show about assigning Bloom levels from verb lists?**
+
+   A. The same verb can correspond to different cognitive processes depending on what the learner has already encountered, so the verb alone does not fix the taxonomic level
+   B. Verb lists are reliable so long as the verb is drawn from a published taxonomy table
+   C. The task sits at the create level in both classes, because the student produces an answer that did not previously exist
+   D. Because the revised taxonomy is strictly cumulative, both classes are by definition operating at the apply level
+
+   *Answer: A.* For the drilled class this is routine application; for the class meeting the form cold it demands analysis of an unfamiliar structure. Coding of 940 real assessment items likewise found no clear relationship between prompt verbs and the cognitive process actually required. Option B asserts the reliability that finding undercuts. Option C misreads create, which concerns generating, planning or producing something new, not merely writing an answer. Option D invokes a strict hierarchy the revision deliberately relaxed.
+   *Difficulty: analysis · Skill: Evaluating the limits of verb-based taxonomic classification · Sources: larsen-2022-probing-revised-blooms-taxonomy, krathwohl-2002-revision-of-blooms-taxonomy-overview*
+
+## Sources
+
+- **A Revision of Bloom's Taxonomy: An Overview** — David R. Krathwohl, Syracuse University; Theory Into Practice 41(4), 212-218, Autumn 2002 (College of Education, The Ohio State University); scanned issue hosted by IHMC CmapTools public server. <https://cmapspublic2.ihmc.us/rid=1Q2PTM7HL-26LTFBX-9YN8/Krathwohl%202002.pdf> (usage: REFERENCE_ONLY)
+- **Probing Internal Assumptions of the Revised Bloom's Taxonomy** — Tori M. Larsen, Bianca H. Endo, Alexander T. Yee, Tony Do, Stanley M. Lo; CBE-Life Sciences Education 21(4), ar66 (2022); DOI 10.1187/cbe.20-08-0170; PMID 36112622; PubMed Central PMC9727608. <https://pmc.ncbi.nlm.nih.gov/articles/PMC9727608/> (usage: ATTRIBUTION_REQUIRED; license: Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported (distributed by The American Society for Cell Biology under license from the authors))
+- **A Model of Learning Objectives based on A Taxonomy for Learning, Teaching, and Assessing: A Revision of Bloom's Taxonomy of Educational Objectives** — Rex Heer, Center for Excellence in Learning and Teaching, Iowa State University (updated January 2012); copy hosted by the University of Central Florida Office of Effectiveness and Accreditation Support. <https://oeas.ucf.edu/doc/Bloom_Taxonomy.pdf> (usage: ATTRIBUTION_REQUIRED; license: Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported)
+- **Writing Performance Objectives** — New York State Education Department, Adult Career and Continuing Education Services / Bureau of Proprietary School Supervision. <https://www.acces.nysed.gov/bpss/writing-performance-objectives> (usage: REFERENCE_ONLY)
+- **Preparing Instructional Objectives (ERIC record ED018143)** — Robert F. Mager (Fearon Publishers, 1962); record hosted by ERIC, Institute of Education Sciences, U.S. Department of Education. <https://eric.ed.gov/?id=ED018143> (usage: REFERENCE_ONLY)
+- **Instructional and Expressive Educational Objectives: Their Formulation and Use in Curriculum (ERIC record ED028838)** — Elliot W. Eisner, 1967; record and full text hosted by ERIC, Institute of Education Sciences, U.S. Department of Education. <https://eric.ed.gov/?id=ED028838> (usage: REFERENCE_ONLY)
+- **Enhancing Teaching through Constructive Alignment (ERIC record EJ534311)** — John Biggs, Higher Education 32(3), 347-364, October 1996; record hosted by ERIC, Institute of Education Sciences, U.S. Department of Education. <https://eric.ed.gov/?id=EJ534311> (usage: REFERENCE_ONLY)
+- **Curricular Alignment: A Re-Examination** — Lorin W. Anderson, University of South Carolina; Theory Into Practice 41(4), Autumn 2002 (College of Education, The Ohio State University); same scanned issue as the Krathwohl overview. <https://cmapspublic2.ihmc.us/rid=1Q2PTM7HL-26LTFBX-9YN8/Krathwohl%202002.pdf> (usage: REFERENCE_ONLY)
+
+## Related Topics
+
+- `education:teaching-and-instruction:lesson-planning`
+- `education:assessment:formative-versus-summative-assessment`
+- `education:assessment:rubrics-and-performance-assessment`
+- `education:teaching-and-instruction:instructional-strategies`
+
+## Editorial Metadata
+
+- **Topic id:** `education:teaching-and-instruction:writing-learning-objectives`
+- **Editorial status:** READY_TO_PUBLISH
+- **Estimated minutes:** 13
+- **Research status:** source-verified
+- **Rights status:** Six reference-only sources plus two CC BY-NC-SA 3.0 works used under attribution; no source prose adapted and no published verb table reproduced. All objective examples are original.
+- **Researched at:** 2026-08-18
+- **Transformation:** Facts, chronology and definitions were verified against primary and agency sources and rewritten as original EliExplains prose. The generated draft was discarded entirely apart from topic identity.
+- **Source count:** 8  ·  **Questions:** 5

@@ -1,0 +1,176 @@
+# Person-in-Environment Perspective
+
+## In 30 Seconds
+
+Social work reads a person's difficulty as something happening between that person and the settings they live in - housing, work, family, schools, agencies, funding rules - rather than as a defect sitting inside the person. That stance is the person-in-environment perspective. It is an orienting lens, not a theory that predicts outcomes, and it never claims the environment is the only thing acting. It changes what you assess first, and then it changes which interventions look plausible.
+
+## Why This Matters
+
+Accreditation standards for U.S. social work education ground the profession's purpose and all of generalist practice in a person-in-environment framework, so this is the lens your courses keep returning to. Practically, it decides what you notice. Two workers can meet the same person: one records a motivation problem, the other records a bus route that stopped running at the hour the appointment was scheduled. Only the second reading produces a change that could work. Public health evidence has since caught up with the professional instinct - federal health objectives now treat the conditions of daily life as major drivers of health outcomes, which gives an old idea a measurable form and a research literature.
+
+## Learning Objectives
+
+- Define the person-in-environment perspective and distinguish a perspective from a theory that predicts outcomes.
+- Explain how Richmond's social diagnosis, the settlement house tradition, and the later systems and ecological turn each contributed to the perspective.
+- Distinguish what an ecomap shows from what a genogram shows, and state what neither tool does.
+- Analyze how the social determinants of health express the same idea at population scale, and where that framing stops.
+- Apply a person-in-environment reading to a scenario and evaluate how it changes the interventions that look plausible.
+
+## The College Version
+
+### What the perspective actually claims
+
+The claim is narrow in one direction and demanding in another. It is narrow because it does not say what causes what. It offers no mechanism, no predicted effect size, no rule for which environmental feature matters most. It is demanding because it fixes the unit of attention: the thing being assessed is never the person alone but the transaction between a person and the settings they move through - a household, a landlord, a shift schedule, a school's discipline policy, a clinic's waiting list, an eligibility rule. Behaviour that looks unreasonable when you look only at the person often becomes legible the moment you widen the frame. This is why the accreditation standards for U.S. social work education state the profession's purpose as guided by a person-in-environment framework and describe generalist practice as grounded in it, then attach the same phrase to the engagement, assessment, intervention and evaluation competencies. The standards call it a framework, and the word is doing real work. A theory earns its keep by making predictions you can test and possibly falsify. This perspective earns its keep by ruling out a class of incomplete assessments. It does not tell you what you will find; it tells you that an assessment which stopped at the person is not finished. Critics inside the profession have described it as the discipline's governing metaphor, and have pointed out a consequence of its looseness: in ordinary usage the environment quietly narrows to the social environment, so that relationships, agencies and institutions get examined while the physical and built world - air quality, housing stock, distance, heat, noise - drops out unremarked. Knowing that the frame can shrink is part of using it well.
+
+### Where the idea came from
+
+Two different instincts feed into the perspective, and it exists partly to hold them together. The first is casework investigation. Mary Richmond's Social Diagnosis (1917) gave the young profession its first systematic method, and her own definition of social diagnosis already included the environment: the aim was to define as exactly as possible the situation and personality of a person in social need, in relation to the other people they depend on or who depend on them, and in relation to the social institutions of their community. The environment was inside the unit of study from the start, not added later as context. The second instinct is neighbourhood reform. Hull-House, established in Chicago in 1889 by Jane Addams and Ellen Gates Starr, was the first settlement house in the United States. Its residents ran an employment office, legal aid, childcare and classes, and they also went after protective labour laws, housing conditions and municipal sanitation. The target of change was the district, not only the individuals in it. The mid-twentieth-century systems turn gave both instincts a shared vocabulary, and Carel Germain and Alex Gitterman's Life Model, first published in 1980 and now in a fourth edition with Carolyn Knight, turned the ecological perspective into an actual practice method: organise work around life stressors, including transitions, traumatic events and environmental stressors, attend to the fit between people and their settings, and aim simultaneously at helping people and at pressing communities, organisations and policymakers to be more responsive. Urie Bronfenbrenner's ecological systems model is an adjacent influence rather than a social work product; it came out of developmental psychology, and social work borrowed it. His 1979 monograph named four nested layers - the microsystem of settings a person is directly in, the mesosystem of connections between them, the exosystem of settings that affect the person without including them, and the macrosystem of cultural, economic and political patterns. The chronosystem, which adds time and historical change, came in later work. Two cautions travel with this borrowing. Bronfenbrenner himself moved past a purely contextual reading, reworking the framework into the Process-Person-Context-Time model in which the everyday proximal processes between a person and their immediate world are the engine of development. And reviews of applied research find that studies stopping at the concentric circles, with the person and the processes left out, misrepresent what he argued.
+
+### Making it operational: the ecomap and the genogram
+
+A perspective that stays in the abstract changes nothing, so the profession built diagrams that force the environment onto the page. An ecomap puts the person or household in a circle at the centre and draws the outside systems they are actually connected to around it: the employer, the school, the clinic, the extended family, a faith community, a probation officer, a benefits office. The lines carry the information. Their weight shows how strong the connection is, their form shows whether the tie is supportive or stressful, and arrows show which way support and demand are flowing. It is a picture of the present: which parts of the environment are feeding this household and which are draining it, right now. Social worker Ann Hartman is credited with introducing it in the mid-1970s. A genogram is a different instrument that answers a different question. It is a structured family diagram across generations, recording births, deaths, unions, separations and the patterns of relationship and repetition that run through a family line. It shows inheritance and history rather than current external connections. Confusing the two is common and consequential: a genogram will not tell you that the bus route changed, and an ecomap will not tell you that three generations left school at the same age. These are working instruments, not classroom exercises. Federal child welfare guidance directs caseworkers to build both with parents to record family history and the current support system, and to keep adding to them after meeting the children and reviewing records, providers and the wider network. What neither tool does is measure. There is no score, no norm and no cutoff. Both are structured ways of eliciting and organising an account that comes from the client, which means two workers can draw different maps of the same household and both be honest. The procedural side of assessment belongs to case management and needs assessment as separate topics; what matters here is that these diagrams are how the perspective stops being a slogan.
+
+### The contemporary evidence: social determinants of health
+
+The strongest current evidence for the perspective did not come from social work. It came from population health. Healthy People 2030, the federal government's set of ten-year health objectives, defines social determinants of health as the conditions in the environments where people are born, live, learn, work, play, worship and age that affect a wide range of health, functioning and quality-of-life outcomes and risks. It groups them into five domains: economic stability; education access and quality; health care access and quality; neighbourhood and built environment; and social and community context. One of its five overarching goals is explicitly about creating social, physical and economic environments that let people attain their full potential for health. The framing is deliberately upstream: it directs attention to factors usually unrelated to health care delivery, and it states plainly that promoting healthy choices on its own will not eliminate health disparities. That is a striking convergence. A professional instinct about where to look, argued for over a century, now has a federal measurement programme attached to it. It is also the point at which precision matters most. Social determinants of health is a population-level framework about how health outcomes are distributed across groups. It supports statements about patterns and disparities. It does not license a prediction about the person in front of you, and it is not a diagnostic instrument. Person-in-environment at the case level and social determinants at the population level point in the same direction; they operate at different scales and answer different questions.
+
+### What changes in practice, and two boundaries
+
+The payoff is that the assessment question changes shape. Instead of asking what is wrong with this person, you ask where the fit between this person and these settings is poor, and what is producing the misfit. That question opens intervention options a person-only reading hides: change the setting, change the connection between person and setting, change the demand being made, or build the person's capacity - usually some combination. A person-in-environment reading rarely deletes the individual-level work. It stops that work from being the whole plan, and it makes visible the cases where individual-level work was never going to be enough. Two boundaries keep the perspective honest. The first is that this is not environmental determinism, and reading it that way is the standard student error. The relationship runs in both directions: people act on their environments, choose among them, resist them and rebuild them, and the same neighbourhood produces very different lives. Biology, temperament and individual difference stay real, and so does the person's own interpretation of their situation, which ecological theory treats as part of what shapes functioning. Bronfenbrenner's own correction - proximal processes and person characteristics, not just nested circles - is the same warning made inside developmental psychology. The second boundary is a naming collision. There is a formal instrument called the PIE System, published by NASW Press and developed by James Karls with Karin Wandrei in 1994 and revised in a 2008 manual with Maura O'Keefe. It classifies a case on four factors: Factor I, social role and relationship functioning problems, with type, severity, duration, coping ability and strengths; Factor II, environmental problems across six system types, including basic needs, education and training, judicial and legal, health and safety and social services, voluntary association, and affectional support; Factor III, mental health; and Factor IV, physical health. Factors I and II are the core social work description, while III and IV import other professions' classifications. The manual is explicit that PIE is not an interview guide. That taxonomy is one optional tool sharing an acronym with the general perspective. A programme can teach the perspective without ever coding a case, so 'I did a PIE assessment' is ambiguous until you say which one you mean.
+
+## Key Vocabulary
+
+- **Person-in-environment perspective** - An orienting stance in social work holding that behaviour and difficulty must be assessed in the transaction between an individual and the settings they inhabit, rather than as properties of the individual alone.
+- **Transaction** - A two-way exchange in which a person and a setting each shape the other over time, as opposed to a one-way effect of surroundings on a passive individual.
+- **Goodness of fit** - The degree of match between what a person needs and can do and what a particular setting supplies and demands; poor match, rather than personal deficiency, is often what a practitioner is looking at.
+- **Ecomap** - A diagram placing an individual or household at the centre and charting present-day connections to outside systems, with line weight and form showing how strong, supportive or stressful each connection is.
+- **Genogram** - A structured family diagram across several generations recording births, deaths, unions, separations and recurring relationship patterns, used to see inherited history rather than current outside ties.
+- **Social determinants of health** - The conditions in the environments where people are born, live, learn, work, play, worship and age that affect health, functioning and quality-of-life outcomes and risks, grouped by Healthy People 2030 into five domains.
+- **Ecological systems model** - Urie Bronfenbrenner's developmental framework describing nested layers of context - immediate settings, links between them, settings a person is affected by but not part of, broad cultural and economic patterns, and change over time.
+- **Exosystem** - A setting that shapes a person's life without containing them, such as a parent's workplace or a city council whose decisions reach a resident who has no part in making them.
+- **PIE System** - A formal four-factor classification published by NASW Press for describing social role problems, environmental problems, mental health and physical health in a case record; a specific optional instrument, not the general perspective it shares an acronym with.
+- **Life Model** - Germain and Gitterman's practice method translating ecological ideas into social work technique, organising help around life stressors and person-setting fit while also pressing organisations, communities and policymakers to respond.
+
+## Eli-10
+
+If a plant in a pot is yellowing, you can decide the plant is a weak plant. Or you can check the light, the soil, the drainage and how often anyone waters it. Social workers are trained to check the pot first, and to keep checking it, because a lot of what looks like a problem with a person turns out to be a problem with the fit between that person and where they are. Someone keeps missing appointments: is that carelessness, or is the clinic open only during their shift? A kid keeps getting in trouble at school: is that the kid, or a school that has no room for how that kid behaves when they are hungry? The perspective is not a machine that gives answers. It is a rule about where you are not allowed to stop looking.
+
+## Eli's Analogy
+
+Think of a plant that is not thriving. Before you conclude the plant is defective, you inspect the pot: light, soil, water, drainage, whether the roots have room. A person-in-environment assessment is that inspection of the pot, done systematically and written down.
+
+**Where the analogy breaks down.** The analogy fails in the way that matters most. A plant cannot argue with its gardener, move itself, choose a window, or decide the pot is unacceptable - people do all of that, and they change their environments as much as their environments change them. A plant also has no view of its own situation, while a person's interpretation of where they are is itself part of what is happening. Pushed too far, the plant picture turns into exactly the error this perspective is most often accused of: treating people as objects that surroundings act on. It is a prompt to widen your inspection, not a model of human life.
+
+## Worked Example
+
+A community agency's file says a client is 'non-compliant with services' after four missed appointments. A person-only reading treats missed appointments as evidence about motivation and plans accordingly: a reminder call, a warning letter, maybe closure. A person-in-environment reading treats the same four absences as a question about fit and goes looking. An ecomap drawn with the client shows the appointments fall inside a newly assigned night shift, that the bus route serving the agency was cut in March, and that the relative who used to watch the children moved out of the area. None of those facts is inside the client. Each one suggests a different move: a schedule change, a telehealth or outreach option, transport assistance, a childcare referral, or advocacy with the employer. The individual-level work does not disappear, but it stops being the only plan, and the intervention now has something it can actually change. This is an illustration of assessment reasoning, not guidance for any real case.
+
+## Common Mistakes
+
+- **Mistake:** Treating the perspective as environmental determinism - concluding that the environment caused the behaviour and that individual choice, biology and temperament are irrelevant.
+  **Correction:** The relationship is two-way. People select, resist and reshape their settings, the same setting produces very different lives, and individual differences remain real. The perspective widens the assessment; it does not relocate all causation into the surroundings.
+- **Mistake:** Calling it a theory and expecting it to predict outcomes or explain why a particular difficulty arose.
+  **Correction:** It is an orienting perspective or framework. It specifies where to look and rules out assessments that stopped at the person. Predictions come from specific theories and from empirical literatures, not from the perspective itself.
+- **Mistake:** Using 'PIE' to mean the general perspective and the NASW Press classification interchangeably.
+  **Correction:** The PIE System is a particular four-factor coding instrument for describing social role, environmental, mental health and physical health problems. Most programmes teach the perspective without ever using the classification, so name which one you mean.
+- **Mistake:** Reading 'environment' as only the social environment - relationships, agencies and institutions.
+  **Correction:** Housing quality, distance, transport, heat, noise and the built world belong in the frame too. The narrowing to the social environment is a documented habit of the professional literature rather than a feature of the idea.
+- **Mistake:** Treating an ecomap and a genogram as two versions of the same diagram.
+  **Correction:** An ecomap charts a household's present connections to outside systems and the quality of each. A genogram charts family structure and recurring patterns across generations. They answer different questions, and neither one measures anything.
+
+## Compare / Contrast
+
+- **Person-in-environment perspective vs. Bronfenbrenner's ecological systems model** - The perspective is a professional stance about where assessment must look, developed inside social work and generating no predictions. Bronfenbrenner's model is a developmental theory from psychology with named nested levels and, in its later form, a specified mechanism in proximal processes. Social work borrows the levels; the borrowing is useful but is not the same object.
+- **Ecomap vs. Genogram** - An ecomap shows the present: which outside systems a household is connected to and whether each connection supports or drains it. A genogram shows the past running into the present: family structure, events and repeated patterns across generations.
+- **The person-in-environment perspective vs. The PIE System classification** - The first is an orientation the whole profession works from. The second is a specific optional NASW Press instrument that codes a case on four factors. They share an acronym and nothing else structural.
+- **Person-in-environment at the case level vs. Social determinants of health at the population level** - Both say conditions of life shape outcomes. Person-in-environment guides what a practitioner assesses with one person or family. Social determinants of health describes how outcomes are distributed across groups and supports population claims, not predictions about an individual.
+
+## Key Takeaway
+
+Person-in-environment is a rule about where an assessment is allowed to stop, not a theory that predicts outcomes and not a claim that the environment is the only thing acting; its payoff is that once the misfit between a person and their settings is on the page, interventions become visible that a person-only reading never offers.
+
+## Practice Question Bank
+
+**1. Healthy People 2030 groups the social determinants of health into five domains. Which of the following is one of them?**
+
+   A. Neighborhood and built environment
+   B. Genetic risk and family medical history
+   C. Personal responsibility and lifestyle choice
+   D. Personality traits and coping style
+
+   *Answer: A* — The five Healthy People 2030 domains are economic stability, education access and quality, health care access and quality, neighborhood and built environment, and social and community context. Genetic risk is not one of them - the framework is deliberately about non-medical conditions of daily life. Personal responsibility is close to the opposite of the framing, since the page states that promoting healthy choices alone will not eliminate disparities. Personality traits and coping style are individual attributes, and the framework is explicitly about non-medical conditions of the environment rather than characteristics of the person.
+   *Difficulty: recall · Skill: Recalling the five Healthy People 2030 social determinants of health domains · Sources: healthy-people-2030-sdoh*
+
+**2. Which statement most accurately describes the standing of person-in-environment within social work?**
+
+   A. An empirically validated theory that predicts which clients will improve
+   B. An orienting framework that specifies where assessment must look without predicting outcomes
+   C. A diagnostic manual that assigns clients to environmental categories
+   D. A federally mandated assessment instrument that agencies are required to complete
+
+   *Answer: B* — Accreditation standards describe it as a framework grounding the profession's purpose and generalist practice, and it produces no testable predictions of its own - that is what makes it a perspective rather than a theory. It is not a diagnostic manual; the separate PIE System classification is an optional coding instrument, not a diagnosis of the environment. And no federal rule requires it, though federal practice guidance does draw on tools built from it.
+   *Difficulty: understanding · Skill: Distinguishing an orienting perspective from a predictive theory · Sources: cswe-2022-epas, zapf-2010-people-and-place, nasw-pie-system-manual-2e*
+
+**3. A field supervisor asks a student to record a case on Factor I and Factor II. What is the supervisor referring to?**
+
+   A. Bronfenbrenner's microsystem and mesosystem levels
+   B. The two halves of a completed ecomap
+   C. The PIE System, a four-factor classification distinct from the general perspective
+   D. The person-in-environment perspective itself, which has two standard factors
+
+   *Answer: C* — Factors I and II are the social role and environmental components of the PIE System, the NASW Press classification developed by Karls with Wandrei and later revised with O'Keefe; they form its core social work description, with mental and physical health as Factors III and IV. Bronfenbrenner's levels are called systems, not factors, and come from a different discipline. An ecomap has no numbered factors. The general perspective has no factor structure at all, which is exactly the confusion the shared acronym creates.
+   *Difficulty: understanding · Skill: Separating the PIE System classification from the general perspective · Sources: nasw-pie-system-manual-2e, tong-an-2024-bronfenbrenner-review*
+
+**4. A worker wants to see, at a glance, which outside systems are currently supporting a household and which are draining it. Which tool fits that question?**
+
+   A. A genogram, because it maps the household across three generations
+   B. An ecomap, because it charts present connections to outside systems and their quality
+   C. A PIE Factor III entry, because it records the household's functioning
+   D. A chronosystem diagram, because it tracks change over time
+
+   *Answer: B* — An ecomap places the household at the centre and draws its current ties to employers, schools, clinics, kin and agencies, using line weight and form to show strength and whether each tie supports or stresses. A genogram answers a historical question about family structure and repeated patterns, not a question about present outside ties. PIE Factor III records mental health, not household functioning. The chronosystem is a conceptual level in a developmental theory, not a diagram a worker fills in.
+   *Difficulty: application · Skill: Selecting the assessment diagram that matches the question being asked · Sources: oer-generalist-practice-human-services, acf-comprehensive-family-assessment-guidelines, nasw-pie-system-manual-2e*
+
+**5. A student writes: 'Applying person-in-environment, the client's neighbourhood caused the behaviour, so individual factors are not relevant here.' What is the most accurate critique?**
+
+   A. The claim is correct, since the perspective locates causation in the environment
+   B. The claim is wrong because environments never influence individual behaviour
+   C. The claim converts a two-way perspective into one-way environmental determinism and discards agency, biology and the person's own reading of the situation
+   D. The claim is wrong only because neighbourhood belongs to the exosystem rather than the microsystem
+
+   *Answer: C* — The perspective describes transaction: people are shaped by their settings and also select, resist and remake them, so identical neighbourhoods yield very different lives. It never removes biology, temperament or the person's own interpretation, which ecological theory treats as part of what shapes functioning. Bronfenbrenner made the same correction inside developmental psychology by centring proximal processes rather than contexts alone. The second option overcorrects into denying environmental influence, and the fourth mislabels a level while missing the actual reasoning error.
+   *Difficulty: analysis · Skill: Diagnosing the environmental-determinism misreading of the perspective · Sources: tong-an-2024-bronfenbrenner-review, hbse1-tyler-person-in-environment, columbia-life-model-4e*
+
+## Sources
+
+- **cswe-2022-epas** — 2022 Educational Policy and Accreditation Standards for Baccalaureate and Master's Social Work Programs. Council on Social Work Education (CSWE). <https://www.cswe.org/getmedia/bb5d8afe-7680-42dc-a332-a6e6103f4998/2022-Educational-Policy-and-Accreditation-Standards-(EPAS).pdf> (usage: REFERENCE_ONLY)
+- **healthy-people-2030-sdoh** — Social Determinants of Health - Healthy People 2030. U.S. Department of Health and Human Services, Office of Disease Prevention and Health Promotion. <https://odphp.health.gov/healthypeople/priority-areas/social-determinants-health> (usage: REFERENCE_ONLY)
+- **nasw-pie-system-manual-2e** — Person-in-Environment System Manual, 2nd Edition (sample chapters: Structure of the PIE System; How to Use PIE in Practice). NASW Press - James M. Karls and Maura E. O'Keefe. <https://naswpress.org/wp-content/uploads/2025/08/PIE-Sample-Chapters.pdf> (usage: REFERENCE_ONLY)
+- **richmond-social-diagnosis-1917** — Social Diagnosis. Mary E. Richmond, Russell Sage Foundation (1917), via Internet Archive. <https://archive.org/details/socialdiagnosis00richiala> (usage: PUBLIC_DOMAIN)
+- **nps-hull-house** — Hull-House. National Park Service, U.S. Department of the Interior. <https://www.nps.gov/places/hull-house.htm> (usage: REFERENCE_ONLY)
+- **tong-an-2024-bronfenbrenner-review** — Review of studies applying Bronfenbrenner's bioecological theory in international and intercultural education research. Peiru Tong and I-Shin An, Frontiers in Psychology 14:1233925 (2024). <https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1233925/full> (usage: ATTRIBUTION_REQUIRED — CC BY 4.0)
+- **zapf-2010-people-and-place** — Social Work and the Environment: Understanding People and Place. Michael Kim Zapf, Critical Social Work 11(3) (2010). <https://ojs.uwindsor.ca/index.php/csw/article/view/5831> (usage: REFERENCE_ONLY — CC BY-NC-ND 4.0)
+- **hbse1-tyler-person-in-environment** — Human Behavior and the Social Environment I - The Person in Environment. Susan Tyler, University of Arkansas Pressbooks (2020). <https://uark.pressbooks.pub/hbse1/part/main-body/> (usage: REFERENCE_ONLY — CC BY-NC-SA 4.0)
+- **acf-comprehensive-family-assessment-guidelines** — Comprehensive Family Assessment Guidelines for Child Welfare. Children's Bureau, Administration for Children and Families, U.S. Department of Health and Human Services (2005). <https://acf.gov/sites/default/files/documents/cb/family_assessment.pdf> (usage: REFERENCE_ONLY)
+- **oer-generalist-practice-human-services** — Generalist Practice - Introduction to Human Services. Open Oregon Educational Resources (chapter by Aikia Fricke and Ferris State University Department of Social Work). <https://openoregon.pressbooks.pub/humanservices/chapter/generalist-practice/> (usage: ATTRIBUTION_REQUIRED — CC BY 4.0)
+- **columbia-life-model-4e** — The Life Model of Social Work Practice: Advances in Theory and Practice, Fourth Edition. Columbia University Press - Alex Gitterman, Carolyn Knight and Carel B. Germain (2021). <https://cup.columbia.edu/book/the-life-model-of-social-work-practice/9780231187480/> (usage: REFERENCE_ONLY)
+
+## Related Topics
+
+- `social-work-and-human-services:foundations:what-social-workers-and-human-service-professionals-do`
+- `social-work-and-human-services:foundations:strengths-based-practice`
+- `social-work-and-human-services:case-management:needs-assessment`
+- `social-work-and-human-services:social-context:poverty-and-social-inequality`
+- `social-work-and-human-services:social-context:cultural-humility`
+
+## Editorial Metadata
+
+- Topic id: `social-work-and-human-services:foundations:person-in-environment-perspective`
+- Editorial status: READY_TO_PUBLISH
+- Estimated minutes: 11
+- Researched at: 2026-08-18
+- Research status: source-verified
+- Rights status: One public-domain primary source (Richmond 1917) and one CC BY article; everything else reference-only. No source prose adapted or paraphrase-followed.
+- Transformation: Written from independently verified facts drawn from accreditation standards, two federal health and child welfare sources, a public-domain 1917 primary text, a National Park Service historical record, two peer-reviewed articles, two open textbooks and a university press record. The PIE System's four-factor structure was read directly from publisher-posted manual chapters. All wording is original.
+- Source count: 11 · Question count: 5
+- Scope note: teaches the perspective only. Strengths-based practice, trauma-informed care, poverty and inequality, cultural humility, needs-assessment procedure, and social work roles and licensure are separate topics and are referenced rather than taught here. No individualized clinical, diagnostic, treatment, legal, or benefits-eligibility advice is given.

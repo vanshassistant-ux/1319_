@@ -1,0 +1,331 @@
+{
+  "id": "education:assessment:reliability-and-validity-in-assessment",
+  "subjectSlug": "education",
+  "unitSlug": "assessment",
+  "slug": "reliability-and-validity-in-assessment",
+  "title": "Reliability and Validity in Assessment",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 14,
+  "tags": [
+    "education",
+    "assessment",
+    "psychometrics",
+    "validity",
+    "reliability",
+    "measurement-error",
+    "fairness"
+  ],
+  "in30Seconds": "Two questions sit underneath every test. Reliability asks whether the scores would come out the same if you ran the measurement again. Validity asks whether the meaning you attach to those scores, and the decision you make with them, is actually supported by evidence. Most courses teach the second one wrongly. Validity is not something a test owns. It is a judgment about one interpretation, for one use, and somebody has to argue for it.",
+  "whyItMatters": "Every claim a test makes about a person is an inference, and these two ideas are how the profession checks inferences. Reliability tells you how much of a score is noise, which is the difference between a defensible cut score and a coin flip near the boundary. Validity tells you whether the number means what the score report says it means. The vocabulary is also your entry point to the rest of measurement: item review, fairness analysis, standard setting, program evaluation, and every research paper that reports a coefficient alpha in its methods section. Learning the current framing now saves you from the most expensive error in the field, which is treating a validation study done for one purpose as a licence to use the same scores for a different one.",
+  "learningObjectives": [
+    "Define reliability as consistency of scores across replications of a testing procedure, and validity as the degree to which evidence and theory support a specific score interpretation for a proposed use.",
+    "Distinguish the five sources of validity evidence in the current Standards from the superseded content/criterion/construct taxonomy, and explain what the older terms were reaching for.",
+    "Apply the standard error of measurement to build and interpret a band around a reported score, and compute Cohen's kappa from a rater agreement table.",
+    "Explain why unreliability places a ceiling on validity evidence without any level of reliability guaranteeing a valid interpretation.",
+    "Evaluate which reliability index fits a given source of measurement error, including why kappa is preferred to raw percent agreement and why coefficient alpha is weaker evidence than it is usually taken to be.",
+    "Analyze fairness evidence, including differential item functioning, accessibility, and the accommodation/modification distinction, as part of a validity argument."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Validity is a claim about an interpretation, not a property of a test",
+      "body": "The 2014 Standards for Educational and Psychological Testing, the joint AERA, APA and NCME document the field treats as its reference point, define validity as the degree to which evidence and theory support the interpretations of test scores for proposed uses. Two words carry the weight: interpretations and uses. What gets evaluated is the interpretation, not the instrument. The Standards say outright that the unqualified phrase 'the validity of the test' is incorrect, and their opening standard asks developers to articulate each intended interpretation for a specified use and supply evidence for each one separately. The practical consequence is the part students usually miss. One mathematics test can be read three ways: this student has mastered the year's curriculum, this student would benefit from a particular course, this student is likely to succeed at college-level work. Those are three different claims, and each needs its own evidence. Evidence that supports course placement does not license using the same scores to evaluate the teacher. Validation starts with a construct, the characteristic the test is meant to measure, and then asks what would have to be true for the intended reading of the scores to hold. Two standing threats organise that search. Construct underrepresentation is a test that misses parts of what it claims to cover. Construct-irrelevant variance is scores being pushed around by something outside the construct: reading load on a science item, writing speed on a test of historical reasoning, familiarity with an unusual response format."
+    },
+    {
+      "heading": "Five sources of evidence, and what the old three types were reaching for",
+      "body": "Older textbooks hand you a menu: content validity, criterion validity in predictive and concurrent flavours, and construct validity. That taxonomy comes from the 1954 APA Technical Recommendations, and Cronbach and Meehl's 1955 paper is the canonical statement of the construct variety, invoked whenever a test is read as measuring an attribute that is not operationally defined. Messick spent the following decades arguing that these were never separate certificates but complementary evidence bearing on a single question: does the score mean what we say it means, and does the proposed use follow. The 2014 Standards adopt that unified position explicitly. Validity is a unitary concept, and the document deliberately abandons the historical nomenclature in favour of types of validity evidence. Five sources are named. Test content covers the fit between the themes, wording and format of the items and the specified content domain. Response processes ask whether test takers actually engage the processes the construct assumes, so a claim about mathematical reasoning is weakened if students are matching a memorised algorithm; this source also covers whether judges apply the criteria they are meant to. Internal structure asks whether the relationships among items match the structure the interpretation assumes, one dimension or several, and differential item functioning analyses live here. Relations to other variables covers convergent, discriminant and criterion evidence, which is where the old criterion-related category went. Consequences of testing is the one to get right, because the Standards take a narrower line than the phrase suggests: consequences bear on validity when they can be traced to construct underrepresentation or construct-irrelevant variance. Untraceable consequences may still be excellent reasons not to use a test, but they are value judgments about use rather than validity evidence. None of the five sources is compulsory: which evidence you need depends on which propositions your interpretation rests on."
+    },
+    {
+      "heading": "Reliability: consistency across replications, and where the error comes from",
+      "body": "The Standards pair reliability with the word precision and define it as consistency of scores across replications of the testing procedure. That makes 'what counts as a replication?' the first question rather than a technicality. For an attribute not expected to change, two administrations a day apart are replications. For a state such as mood they are not, because the difference between them is real change rather than error. For a knowledge test, two forms built to the same specification count; for an inventory whose wording is fixed, a reworded form is a different test. Classical test theory formalises this as observed score equals true score plus error, where the true score is the hypothetical average over infinitely many independent replications and the reliability coefficient is the proportion of observed score variance that is true score variance. Generalizability theory splits error into components for items, occasions and raters, so you can see which source is costing you. Item response theory handles the same problem through information functions, which give precision at each point on the scale. One consequence mirrors the point about validity. Reliability is not a fixed attribute of an instrument; it is a property of scores obtained from a particular group under particular conditions. Nimon, Zientek and Henson put it directly: reliability inheres in scores, not in tests, so quoting a manual's coefficient as though it described your own data is an error. The Standards agree from the other direction, calling blanket statements that a test 'is reliable' rarely, if ever, acceptable documentation."
+    },
+    {
+      "heading": "Four families of reliability evidence, and why they are not interchangeable",
+      "body": "Test-retest uses the same form on two occasions and captures instability across occasions, including practice and memory effects. Parallel or alternate forms uses two forms in independent sessions and captures the error introduced by sampling different items. Internal consistency works from the relationships among items within a single administration: split-half with a Spearman-Brown adjustment back up to full length, KR-20 for dichotomously scored items, coefficient alpha in general, with the Standards' glossary treating KR-20 as simply the dichotomous special case of alpha. Inter-rater agreement is required whenever human judgment enters scoring. These indices are not substitutes for one another, and the Standards say so directly: each defines measurement error differently, so a high alpha tells you nothing about stability across days and a high test-retest correlation tells you nothing about whether the items hang together. Reporting one and letting readers assume the others is a routine failure. Inter-rater agreement needs particular care. Raw percent agreement flatters the scoring, because two raters who never spoke will agree a great deal by accident, especially when one category is common. Cohen's kappa discounts that: kappa equals observed agreement minus expected chance agreement, divided by one minus expected chance agreement, where the expected value comes from the raters' own marginal rates. That correction is why kappa is preferred. It is not a cure-all, though. Because expected agreement depends on the marginal distribution, the same percent agreement can produce very different kappas depending on how lopsided the categories are, which is precisely the information percent agreement was concealing."
+    },
+    {
+      "heading": "The standard error of measurement, and the band around a score",
+      "body": "A reliability coefficient describes a group. The standard error of measurement brings the same information down to an individual score and expresses it in the score's own units. Under classical test theory it is the standard deviation of scores multiplied by the square root of one minus the reliability coefficient. Conceptually it estimates how much one person's observed score would bounce around across repeated administrations, which lets you report a band rather than a point. That formula also explains something that surprises people. Reliability depends on the spread of the group being measured, so a selective population with a narrow ability range yields a low reliability coefficient even when the measurement is exactly as precise as before. Tighe and colleagues demonstrated this on the MRCP(UK) postgraduate medical examinations: restricting the sample to candidates who had already passed dropped reliability from about .90 to about .70 while the standard error of measurement barely moved. Their conclusion is worth carrying around: a reliability coefficient describes an assessment together with the particular people who sat it, whereas the standard error behaves much more like a property of the measuring instrument itself. The Standards add one refinement. A single average standard error hides the fact that precision varies along the scale, and conditional standard errors at each score level are more informative, especially in the region where a cut score concentrates decisions. And a band is a statement about how scores from this procedure vary, not a probability statement about where one person's unobservable true score sits."
+    },
+    {
+      "heading": "What coefficient alpha does and does not tell you",
+      "body": "Alpha is the most reported and most misreported statistic in educational measurement, and two claims routinely made for it are false. First, alpha is not a measure of unidimensionality. Sijtsma showed that alpha is a function of the number of items and the average inter-item covariance and nothing else, so unidimensional item sets can produce almost any alpha and multidimensional sets can produce identical ones. 'Alpha was .88, confirming the scale is unidimensional' is not a weak inference; it is a non sequitur. Dimensionality is an internal-structure question needing a factor analysis. Second, alpha is not generally equal to reliability. It equals reliability only under essential tau-equivalence, meaning every item relates to the true score with the same weight, differing at most by an additive constant. Real item sets rarely satisfy that. Under the usual classical assumptions, including errors that are uncorrelated across items, alpha is a lower bound and so tends to understate reliability; the simulation work of Trizano-Hermosilla and Alvarado puts the underestimate in the region of one to eleven per cent as tau-equivalence violations worsen. If item errors are correlated, as they are with shared reading passages or chained items, even the lower-bound guarantee lapses. McDonald's omega, computed from a factor model, does not require tau-equivalence and is generally the better default; where items are strongly skewed, the greatest lower bound performs better than either. The practical reading for a student working through a methods section: an alpha is a floor estimate resting on assumptions the authors almost certainly did not test."
+    },
+    {
+      "heading": "How reliability constrains validity without ever guaranteeing it",
+      "body": "The textbook line, that a test can be reliable without being valid, is true and so compressed that it teaches the wrong lesson. Unpack it in both directions. Reliability constrains. Random error attenuates relationships, and under classical assumptions the correlation between two measures cannot exceed the square root of the product of their reliabilities. Scores with reliability .64 therefore cannot correlate above .80 with any criterion, however perfectly that criterion is measured, and cannot exceed .72 with a criterion whose own reliability is .81. Both ceilings were confirmed by simulation while this lesson was written. Noise also widens every score band, which is where it bites on classification. The Standards make the point without algebra: inconsistent scores limit accurate prediction, diagnosis and decision making. The bound does assume errors are uncorrelated, and Nimon and colleagues show that when errors correlate with true scores or with each other an observed correlation can exceed its true-score counterpart, so treat it as a property of the classical model rather than a law of nature. Reliability does not guarantee. Reliability indices are blind to systematic error. A test that consistently rewards fast reading while claiming to measure science reasoning will look excellent on every reliability coefficient you compute, because construct-irrelevant variance is stable rather than random, and stability is what those coefficients reward. Consistency tells you the measurement repeats; it says nothing about what is repeating. And the constraint is a ceiling, not a threshold. No reliability figure exists above which an interpretation becomes valid. The Standards ask for precision appropriate to the stakes, allowing less where a decision is reversible or corroborated elsewhere, and leave the judgment to the user."
+    },
+    {
+      "heading": "Fairness as part of the validity argument",
+      "body": "The 2014 Standards treat fairness as a foundation alongside validity and reliability and define it in validity terms: design every step of the process to minimise construct-irrelevant variance so that score interpretations hold for all examinees in the intended population. Three ideas carry most of the load. Differential item functioning occurs when test takers who are at the same level on the measured attribute, but belong to different groups, answer a particular item correctly at systematically different rates. DIF is a statistical flag rather than a verdict; the Standards insist that calling an item biased requires a substantive explanation of why it behaves that way, and note that DIF sometimes reveals genuine multidimensionality the test framework anticipated. Accessibility and universal design push the work earlier: build items from the outset so that irrelevant barriers, such as unnecessary reading load, formats that defeat magnification, or language demands beyond the construct, never enter. Accessibility is a legal requirement in some testing contexts. Accommodations and modifications are distinguished in the Standards by what happens to score meaning. An accommodation preserves comparability, so the accommodated scores support the same inferences; a modification changes the construct measured, so the scores differ in meaning from the standard form. Reading items aloud is an accommodation on a mathematics test and a modification on a test of decoding. The line between them is a validity line, and it decides whether the resulting scores belong on the same scale as everyone else's."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "Construct",
+      "definition": "The characteristic or concept a test is designed to measure, such as reading comprehension or mathematical reasoning; naming it precisely is the first step of validation."
+    },
+    {
+      "term": "Construct underrepresentation",
+      "definition": "A test's failure to capture important parts of the characteristic it claims to assess, which narrows what its scores can legitimately be taken to mean."
+    },
+    {
+      "term": "Construct-irrelevant variance",
+      "definition": "Systematic influence on scores from something outside the intended characteristic, such as reading load on a science item or writing speed on a reasoning task."
+    },
+    {
+      "term": "True score",
+      "definition": "In classical test theory, the hypothetical average of a person's scores over infinitely many independent replications of the same testing procedure."
+    },
+    {
+      "term": "Standard error of measurement",
+      "definition": "An estimate, expressed in score units, of how far an individual's observed score would typically fall from the average of repeated administrations."
+    },
+    {
+      "term": "Internal consistency",
+      "definition": "The degree to which items within one administration agree with each other, used as an indirect estimate of how much scores would vary across equivalent forms."
+    },
+    {
+      "term": "Essential tau-equivalence",
+      "definition": "The assumption that every item relates to the underlying true score with the same weight, differing at most by an additive constant; coefficient alpha equals reliability only when it holds."
+    },
+    {
+      "term": "Cohen's kappa",
+      "definition": "An agreement index for categorical judgments that subtracts the agreement two raters would reach by chance from the agreement they actually reached."
+    },
+    {
+      "term": "Differential item functioning",
+      "definition": "A pattern in which examinees of equal standing on the measured attribute but different group membership answer one item correctly at systematically different rates."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Picture two different complaints about a bathroom scale. First complaint: you step on it three times in a minute and get 152, 149, 154. That is a consistency problem. The scale is noisy, and no single reading can be trusted on its own. Second complaint: you step on it once, get a steady 151 every single time, and then somebody uses that number to decide whether you are healthy. That is a validity problem, and notice it has nothing to do with noise. The number is rock solid. What is wrong is the meaning someone attached to it and the decision they made on the strength of it. Almost every muddle in this topic comes from mixing up those two complaints. Consistency is about the measuring. Validity is about the claim.",
+    "analogy": "So treat validity as a court case rather than a certificate. Nobody hands a test a validity badge that it carries around forever. Somebody has to stand up and argue: here is what I say this score means, here is the use I want to put it to, and here is my evidence, that the content matches the domain, that students reason rather than pattern-match, that the items hang together the way I claimed, that the scores predict what I promised. New use, new case, new evidence.",
+    "analogyLimits": "The courtroom picture oversells the finality. A verdict closes a case, whereas validation never quite closes, because new evidence can reopen it and a test can drift out of validity as its population or its curriculum changes. It also suggests a single visible opponent, when the usual failures are quiet ones: a construct drawn too narrowly at the start, or an irrelevant demand nobody thought to look for. And a court returns guilt or innocence, while validity is a matter of degree. The honest output is a level of support, weighed against how much the decision costs when it goes wrong."
+  },
+  "workedExample": "Two calculations, both executed rather than quoted. First, precision. A district reading test reports scale scores with a standard deviation of 100 in the tested grade and a reliability coefficient of .91. The standard error of measurement is 100 times the square root of (1 minus .91), which is 100 times the square root of .09, which is 30 scale points. A student scores 512 and the proficiency cut sits at 500. A one-standard-error band runs from 482 to 542; a 1.96-standard-error band runs from about 453 to 571. Both straddle the cut. The reported score is above 500 but the measurement is not precise enough to establish that the student's standing is, and the honest report of that fact is the band, not the point. Two cautions travel with it: the band describes how scores from this procedure vary, not the probability that a true score sits inside it, and a single average standard error understates the error at some score levels, so the conditional standard error near the cut is the number that actually matters. This is a statement about measurement, not advice about what to do with any individual student. Second, agreement. Two raters independently mark 100 essays pass or fail. Rater A passes 80, rater B passes 85, and the two agree on 87 of the 100. Eighty-seven per cent sounds strong. But chance agreement is (.80 times .85) plus (.20 times .15), which is .71, because both raters pass most essays and would collide constantly even while guessing. Cohen's kappa is (.87 minus .71) divided by (1 minus .71), which is .16 divided by .29, which is .55, weak agreement on McHugh's scale. The scoring is far less consistent than the headline number suggested, and the reason is sitting in the margins: when one category dominates, percent agreement is close to worthless.",
+  "commonMistakes": [
+    {
+      "mistake": "Saying a test 'is valid' or asking whether an instrument 'has validity'.",
+      "correction": "Validity attaches to a specific interpretation of scores for a specific use, supported by evidence. The 2014 Standards call the unqualified phrase incorrect, and require each intended interpretation to be validated separately, so a test validated for course placement is not thereby validated for teacher evaluation."
+    },
+    {
+      "mistake": "Reporting coefficient alpha as evidence that a scale is unidimensional.",
+      "correction": "Alpha depends only on the number of items and the average inter-item covariance, so it cannot distinguish a unidimensional set from a multidimensional one. Dimensionality is internal-structure evidence and needs a factor analysis; alpha at best estimates a lower bound on reliability, and only under assumptions almost nobody checks."
+    },
+    {
+      "mistake": "Treating high percent agreement between raters as proof that scoring is consistent.",
+      "correction": "Raters agree by accident, and the more lopsided the categories the more often they do. Cohen's kappa subtracts the agreement expected from the raters' own marginal rates; 87 per cent agreement can correspond to a kappa near .55, and the gap between the two numbers is the chance agreement percent agreement was hiding."
+    },
+    {
+      "mistake": "Concluding from 'a test can be reliable but not valid' that reliability is irrelevant to validity.",
+      "correction": "Unreliability caps the evidence you can gather: under classical assumptions a correlation cannot exceed the square root of the product of the two reliabilities, so scores with reliability .64 cannot correlate above .80 with any criterion. What the slogan really says is that reliability indices are blind to systematic error, so a test can consistently measure the wrong thing."
+    },
+    {
+      "mistake": "Quoting the reliability coefficient printed in a test manual as the reliability of your own data.",
+      "correction": "Reliability is a property of scores from a particular group under particular conditions, not a fixed attribute of an instrument. A narrower ability range lowers the coefficient even when precision is unchanged, which is why the standard error of measurement often travels better across populations than the coefficient does."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Reliability",
+      "b": "Validity",
+      "distinction": "Reliability asks whether scores repeat across replications of the testing procedure; validity asks whether a particular interpretation of those scores, for a particular use, is supported by evidence. Reliability is estimated with coefficients and standard errors; validity is argued from several sources of evidence and never certified once and for all."
+    },
+    {
+      "a": "Percent agreement between raters",
+      "b": "Cohen's kappa",
+      "distinction": "Percent agreement counts the times two raters matched. Kappa subtracts the matches expected from their marginal rates before dividing by the room left for improvement, so it answers how much agreement exceeded chance. The two diverge most when one category dominates, which is exactly when percent agreement is most flattering."
+    },
+    {
+      "a": "Coefficient alpha",
+      "b": "McDonald's omega",
+      "distinction": "Alpha equals reliability only under essential tau-equivalence and is otherwise a lower bound, typically understating it. Omega is computed from a factor model that allows items to load unequally, so it does not need that assumption and is generally the better default; with strongly skewed items the greatest lower bound outperforms both."
+    },
+    {
+      "a": "Random error",
+      "b": "Construct-irrelevant variance",
+      "distinction": "Random error is unpredictable fluctuation and is what reliability coefficients detect. Construct-irrelevant variance is a systematic pull from something outside the construct, so it is stable across replications, invisible to reliability indices, and can even raise them while corrupting the interpretation."
+    },
+    {
+      "a": "The 1954-era types of validity",
+      "b": "The 2014 sources of validity evidence",
+      "distinction": "The older scheme named content, criterion and construct validity as if a test could hold one and lack another. The Standards now treat validity as unitary and list five sources of evidence, of which criterion evidence is one strand of relations to other variables, so a test cannot possess a type of validity, only accumulate evidence for a reading of its scores."
+    }
+  ],
+  "keyTakeaway": "Reliability is how much of a score survives a repeat of the measurement; validity is whether the meaning you attach to that score, for the use you have in mind, is supported by evidence. Unreliability caps how much validity evidence you can ever gather, and no amount of reliability makes an interpretation valid.",
+  "questionBank": [
+    {
+      "id": "education:assessment:reliability-and-validity-in-assessment:1",
+      "prompt": "Which statement matches how the 2014 Standards for Educational and Psychological Testing define validity?",
+      "options": [
+        "A property of a test that, once established, carries over to any use of its scores.",
+        "The degree to which evidence and theory support the interpretations of test scores for proposed uses.",
+        "The consistency of scores across replications of the testing procedure.",
+        "The proportion of observed score variance that is true score variance."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is the Standards' definition, and both of its key words matter: it is the interpretation, for a stated use, that is evaluated. A is the framing the Standards explicitly reject, calling the unqualified phrase 'the validity of the test' incorrect. C is the definition of reliability, and D is the classical definition of the reliability coefficient.",
+      "difficulty": "recall",
+      "skill": "Recalling the current definition of validity and distinguishing it from reliability",
+      "sourceIds": [
+        "aera-apa-ncme-standards-2014",
+        "messick-1994-validity-of-psychological-assessment"
+      ]
+    },
+    {
+      "id": "education:assessment:reliability-and-validity-in-assessment:2",
+      "prompt": "A journal article states: 'Coefficient alpha was .89, confirming that the scale is unidimensional.' What is wrong with the inference?",
+      "options": [
+        "Nothing; .89 clears the conventional threshold for treating a scale as unidimensional.",
+        "Alpha should have been reported as KR-20, because KR-20 is the correct index for rating-scale items.",
+        "Alpha is a function of the item count and the average inter-item covariance, so unidimensional and multidimensional sets can produce the same value and it carries no information about dimensionality.",
+        "Alpha overstates reliability whenever essential tau-equivalence is violated, so the reported value is inflated."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is the point Sijtsma demonstrates: alpha does not reflect internal structure at all, so no alpha value can confirm unidimensionality, which is an internal-structure question for factor analysis. A invents a threshold that does not exist. B reverses the relationship, since KR-20 is the special case of alpha for dichotomously scored items. D reverses the direction of bias, because under classical assumptions alpha is a lower bound and typically understates reliability when tau-equivalence fails.",
+      "difficulty": "understanding",
+      "skill": "Diagnosing the standard misinterpretation of coefficient alpha",
+      "sourceIds": [
+        "sijtsma-2009-cronbachs-alpha",
+        "trizano-hermosilla-2016-alternatives-to-alpha",
+        "aera-apa-ncme-standards-2014"
+      ]
+    },
+    {
+      "id": "education:assessment:reliability-and-validity-in-assessment:3",
+      "prompt": "Scores on a test have a standard deviation of 60 and a reliability coefficient of .75. What is the standard error of measurement, and what does a one-standard-error band around a reported score of 300 span?",
+      "options": [
+        "SEM = 30; the band runs from 270 to 330.",
+        "SEM = 15; the band runs from 285 to 315.",
+        "SEM = 45; the band runs from 255 to 345.",
+        "SEM = 30; the band runs from 240 to 360."
+      ],
+      "correctIndex": 0,
+      "explanation": "The standard error of measurement is the standard deviation times the square root of one minus the reliability: 60 times the square root of .25, which is 60 times .5, which is 30. A one-standard-error band is the score plus or minus 30, so 270 to 330. B multiplies by (1 minus reliability) instead of its square root, C multiplies by the reliability itself, and D computes the standard error correctly but then applies two standard errors rather than one.",
+      "difficulty": "application",
+      "skill": "Computing the standard error of measurement and building a score band",
+      "sourceIds": [
+        "tighe-2010-sem-versus-reliability-mrcp",
+        "aera-apa-ncme-standards-2014"
+      ]
+    },
+    {
+      "id": "education:assessment:reliability-and-validity-in-assessment:4",
+      "prompt": "Which of these problems would reliability evidence fail to detect?",
+      "options": [
+        "The same students, retested on the same form a day later, shift by an average of eight points.",
+        "Two trained raters place the same essays in the same category only 60 per cent of the time.",
+        "A science test consistently rewards fast, fluent reading, so students with equal science knowledge but different reading speed receive reliably different scores.",
+        "A twelve-item quiz produces a coefficient alpha of .52."
+      ],
+      "correctIndex": 2,
+      "explanation": "A, B and D are all inconsistency across replications, of occasions, raters and items respectively, and reliability indices exist to detect exactly those. C is systematic: the irrelevant influence repeats every time, so it lowers no reliability coefficient and may even raise internal consistency, while corrupting what the scores mean. Construct-irrelevant variance is addressed by validity and fairness evidence, not by reliability estimation.",
+      "difficulty": "analysis",
+      "skill": "Distinguishing random measurement error from construct-irrelevant variance",
+      "sourceIds": [
+        "aera-apa-ncme-standards-2014",
+        "nimon-2012-reliability-of-data-pitfalls"
+      ]
+    },
+    {
+      "id": "education:assessment:reliability-and-validity-in-assessment:5",
+      "prompt": "Under the 2014 Standards, when does evidence about the consequences of a testing programme bear on the validity of the intended score interpretation?",
+      "options": [
+        "Whenever the test produces different average scores for different demographic groups.",
+        "Never, because consequences are policy questions that sit outside the validity framework.",
+        "Only when the consequence was intended by the test developer and stated in advance.",
+        "When the consequence can be traced to a source of invalidity such as construct underrepresentation or construct-irrelevant variance."
+      ],
+      "correctIndex": 3,
+      "explanation": "D states the Standards' traceability criterion. A is the common overreach: a group difference that reflects a genuine difference in the skill measured is not by itself a validity problem, though a difference produced by an irrelevant feature of the test is. B understates the position, since consequences are one of the five named sources of evidence. C is wrong because unintended consequences, positive and negative, are precisely what the analysis examines.",
+      "difficulty": "understanding",
+      "skill": "Applying the Standards' criterion for when consequences count as validity evidence",
+      "sourceIds": [
+        "aera-apa-ncme-standards-2014",
+        "messick-1994-validity-of-psychological-assessment"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "education:assessment:reliability-and-validity-in-assessment:1",
+      "prompt": "Which statement matches how the 2014 Standards for Educational and Psychological Testing define validity?",
+      "options": [
+        "A property of a test that, once established, carries over to any use of its scores.",
+        "The degree to which evidence and theory support the interpretations of test scores for proposed uses.",
+        "The consistency of scores across replications of the testing procedure.",
+        "The proportion of observed score variance that is true score variance."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is the Standards' definition, and both of its key words matter: it is the interpretation, for a stated use, that is evaluated. A is the framing the Standards explicitly reject, calling the unqualified phrase 'the validity of the test' incorrect. C is the definition of reliability, and D is the classical definition of the reliability coefficient.",
+      "difficulty": "recall",
+      "skill": "Recalling the current definition of validity and distinguishing it from reliability",
+      "sourceIds": [
+        "aera-apa-ncme-standards-2014",
+        "messick-1994-validity-of-psychological-assessment"
+      ]
+    },
+    {
+      "id": "education:assessment:reliability-and-validity-in-assessment:2",
+      "prompt": "A journal article states: 'Coefficient alpha was .89, confirming that the scale is unidimensional.' What is wrong with the inference?",
+      "options": [
+        "Nothing; .89 clears the conventional threshold for treating a scale as unidimensional.",
+        "Alpha should have been reported as KR-20, because KR-20 is the correct index for rating-scale items.",
+        "Alpha is a function of the item count and the average inter-item covariance, so unidimensional and multidimensional sets can produce the same value and it carries no information about dimensionality.",
+        "Alpha overstates reliability whenever essential tau-equivalence is violated, so the reported value is inflated."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is the point Sijtsma demonstrates: alpha does not reflect internal structure at all, so no alpha value can confirm unidimensionality, which is an internal-structure question for factor analysis. A invents a threshold that does not exist. B reverses the relationship, since KR-20 is the special case of alpha for dichotomously scored items. D reverses the direction of bias, because under classical assumptions alpha is a lower bound and typically understates reliability when tau-equivalence fails.",
+      "difficulty": "understanding",
+      "skill": "Diagnosing the standard misinterpretation of coefficient alpha",
+      "sourceIds": [
+        "sijtsma-2009-cronbachs-alpha",
+        "trizano-hermosilla-2016-alternatives-to-alpha",
+        "aera-apa-ncme-standards-2014"
+      ]
+    },
+    {
+      "id": "education:assessment:reliability-and-validity-in-assessment:3",
+      "prompt": "Scores on a test have a standard deviation of 60 and a reliability coefficient of .75. What is the standard error of measurement, and what does a one-standard-error band around a reported score of 300 span?",
+      "options": [
+        "SEM = 30; the band runs from 270 to 330.",
+        "SEM = 15; the band runs from 285 to 315.",
+        "SEM = 45; the band runs from 255 to 345.",
+        "SEM = 30; the band runs from 240 to 360."
+      ],
+      "correctIndex": 0,
+      "explanation": "The standard error of measurement is the standard deviation times the square root of one minus the reliability: 60 times the square root of .25, which is 60 times .5, which is 30. A one-standard-error band is the score plus or minus 30, so 270 to 330. B multiplies by (1 minus reliability) instead of its square root, C multiplies by the reliability itself, and D computes the standard error correctly but then applies two standard errors rather than one.",
+      "difficulty": "application",
+      "skill": "Computing the standard error of measurement and building a score band",
+      "sourceIds": [
+        "tighe-2010-sem-versus-reliability-mrcp",
+        "aera-apa-ncme-standards-2014"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "education:assessment:formative-versus-summative-assessment",
+    "education:assessment:rubrics-and-performance-assessment",
+    "education:teaching-and-instruction:writing-learning-objectives"
+  ],
+  "sources": [
+    "aera-apa-ncme-standards-2014",
+    "messick-1994-validity-of-psychological-assessment",
+    "cronbach-meehl-1955-construct-validity",
+    "sijtsma-2009-cronbachs-alpha",
+    "mchugh-2012-interrater-reliability-kappa",
+    "tighe-2010-sem-versus-reliability-mrcp",
+    "nimon-2012-reliability-of-data-pitfalls",
+    "trizano-hermosilla-2016-alternatives-to-alpha"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Three reference-only sources plus five openly licensed articles (two CC BY, three CC BY-NC) used under attribution; no source prose reproduced or adapted, and no table or figure from any source is reproduced.",
+    "researchedAt": "2026-08-18",
+    "transformation": "Definitions, the five sources of validity evidence, the fairness framework and the reliability taxonomy were verified against the full text of the 2014 AERA/APA/NCME Standards and against primary and open-access measurement literature, then rewritten as original EliExplains prose. Every numeric result in the lesson (the standard error of measurement worked example, the Cohen's kappa worked example, and the attenuation ceilings) was computed and verified in Python before publication. The machine-generated draft was discarded apart from topic identity."
+  },
+  "contentHash": "79918d22fbf2e6f4",
+  "status": "source-verified",
+  "public": false
+}

@@ -1,9 +1,17 @@
-import { readFile, writeFile } from 'node:fs/promises';
-const topicId = process.argv[2] ?? 'education:foundations-of-education:what-is-education';
-const review = JSON.parse(await readFile('content/phase-1/review/education-what-is-education.json','utf8'));
-if (review.id !== topicId || review.status !== 'source-verified') throw new Error(`Review record does not match the requested topic or is not source-verified: ${topicId}`);
-const progressPath = 'content/phase-1/content-progress.json'; const progress = JSON.parse(await readFile(progressPath,'utf8')); const topic = progress.topics.find(item => item.id === topicId); if (!topic) throw new Error(`Topic not found: ${topicId}`);
-topic.status = review.status; topic.sourceIds = review.sources; topic.public = false; topic.reviewedAt = review.provenance.researchedAt; topic.rightsStatus = review.provenance.rightsStatus;
-const registryPath = 'content/phase-1/source-registry.json'; const registry = JSON.parse(await readFile(registryPath,'utf8')); const reviewSources = JSON.parse(await readFile('content/phase-1/review/source-registry.json','utf8')); const existing = new Set(registry.map(source => source.id)); for (const source of reviewSources) if (!existing.has(source.id)) registry.push(source);
-const lessonsPath = 'public/content/phase-1/lessons.json'; const lessons = JSON.parse(await readFile(lessonsPath,'utf8')); const index = lessons.findIndex(lesson => lesson.id === topicId); if (index >= 0) lessons[index] = review;
-await Promise.all([writeFile(progressPath, `${JSON.stringify(progress, null, 2)}\n`), writeFile(registryPath, `${JSON.stringify(registry, null, 2)}\n`), writeFile(lessonsPath, JSON.stringify(lessons))]); console.log(`Promoted ${topicId} to ${review.status}; public=${topic.public}.`);
+// DEPRECATED. Superseded by scripts/editorial-accept-topic.mjs, which validates a topic
+// against the full editorial gate before merging. This wrapper remains so that
+// `bun run phase1:promote <topic-id>` keeps working; it resolves the review file from the
+// topic record rather than the single hard-coded path it used to assume.
+import { readFile } from 'node:fs/promises';
+import { spawnSync } from 'node:child_process';
+
+const topicId = process.argv[2];
+if (!topicId) throw new Error('Usage: promote-reviewed-topic.mjs <topic-id>');
+const phase = Number(process.argv[3] ?? 1);
+
+const progress = JSON.parse(await readFile(`content/phase-${phase}/content-progress.json`, 'utf8'));
+if (!progress.topics.some(topic => topic.id === topicId)) throw new Error(`Topic not found in phase ${phase}: ${topicId}`);
+
+console.warn('promote-reviewed-topic is deprecated; delegating to editorial-accept-topic.');
+const result = spawnSync('bun', ['scripts/editorial-accept-topic.mjs', String(phase), topicId], { stdio: 'inherit' });
+process.exit(result.status ?? 1);

@@ -1,0 +1,205 @@
+# Needs Assessment
+
+## In 30 Seconds
+
+A needs assessment is the structured, collaborative process by which a practitioner and a person work out what is happening, what the person wants, what strengths and supports are already in play, and what services would help. Professional standards describe it as an ongoing activity rather than a form completed once at intake. It is not a diagnosis and not an eligibility decision, and its product is a service plan the person recognizes as theirs.
+
+## Why This Matters
+
+A service plan is only as good as the assessment under it, and the two most common failures are structural rather than personal: an assessment done once and never revisited, and a screening score treated as a finding. Federal home and community-based services rules require the plan to be reviewed against a reassessment of functional need at least every twelve months, when circumstances change significantly, or whenever the person asks, because plans built on stale information stop matching the life they were written for. Coursework in case management, child welfare, and behavioral health returns to this material constantly, and the distinctions between screening, assessment, diagnosis, and eligibility determination are tested directly.
+
+## Learning Objectives
+
+- Define individual needs assessment and distinguish it from diagnosis and from eligibility screening.
+- Explain why professional standards treat assessment as ongoing rather than a single intake event, and identify what triggers reassessment.
+- Distinguish the presenting problem, the underlying need, and the person's own stated priorities, and explain how each enters a service plan.
+- Evaluate what a standardized screening score does and does not establish, using positive predictive value reasoning.
+- Analyze how cultural, linguistic, and documentation choices affect the validity and usefulness of an assessment.
+- Distinguish an individual needs assessment from a community needs assessment.
+
+## The College Version
+
+### What the process is actually for
+
+The professional standard for social work case management describes assessment as engaging the person, and where appropriate others in their system, in an ongoing information-gathering and decision-making process that helps them identify their own goals, strengths, and challenges. Two parts of that formulation carry most of the weight. Ongoing: the standard states plainly that assessment is an activity rather than a one-time event, and that reassessment revisits the needs, assets, and priorities named earlier while making room for concerns that have emerged since. Identify their own: the person is a party to the assessment, not its subject. Federal child welfare guidance reaches the same place from the other direction, naming the essential involvement of families and youth in identifying their own needs and strengths as a foundation of quality practice, and stating that gathering and organizing the information is never the point in itself. It exists to produce a plan.
+
+### Three different questions: assessment, diagnosis, eligibility
+
+Diagnosis asks whether a presentation meets defined criteria for a classified condition, and it is made by clinicians whose licensure and scope of practice permit it. Eligibility screening asks a yes-or-no administrative question that a program has already written down. Assessment describes a situation in enough detail to act on it. Medicaid's home and community-based services rules show the split cleanly: a state must evaluate whether a beneficiary requires the level of care provided in a hospital, nursing facility, or intermediate care facility, which is an eligibility determination with two possible answers and an annual reevaluation, and separately must ensure the written person-centered service plan reflects clinical and support needs identified through an assessment of functional need. One conversation can feed all three questions, but the answers travel to different places and carry different consequences. A practitioner who blurs them ends up reporting a program denial as though it were a finding about the person.
+
+### Where the information comes from, and what it is worth
+
+Federal guidance on comprehensive family assessment lists the streams that feed one: review of existing records and any prior service-system history, what was learned from a reporter and from collateral contacts, direct contact with the family, safety and risk assessments already completed, observation of the home and of interactions, and any specialized evaluations. Weighing those streams is a separate skill from collecting them. Ask what question a source was originally answering, since a record written to justify a placement decision is not neutral testimony about what someone needs. Ask how old the information is, and whether it has been copied from file to file until its origin cannot be recovered. Ask whether an account is first-hand or a summary of a summary. The person's own account is the only source with direct access to what they want, and it is also the source most often discounted when it conflicts with a document.
+
+### Presenting problem, underlying need, and the person's priorities
+
+These are three lists, and treating them as one is the standard beginner error. The presenting problem is the reason contact happened: the referral line, the crisis, the sentence the person opens with. Federal guidance is explicit that comprehensive assessment attends not only to presenting issues at a particular moment but to the underlying factors behind them, and that the aim is the family's whole situation rather than a symptom list. The third list belongs to the person, and it does not have to match either of the others. Case management standards direct the worker to support the person in establishing priorities and goals after discussing needs and strengths, and to stay alert to whether the program's approach actually fits what the person is trying to do, recommending flexibility, advocacy, or referral elsewhere when it does not. An assessment that quietly substitutes the practitioner's list for the person's produces a plan that gets complied with rather than used.
+
+### Strengths and resources are assessment content
+
+Standards treat capabilities and supports as material to be gathered, not as a closing courtesy. The domains named for case management assessment include psychosocial strengths, protective factors and points of resilience, relationships with community organizations and other social supports, and the strategies the person has already used to address their concerns. Medicaid's person-centered service plan rules require the written plan to reflect the individual's strengths and preferences and to name the paid and unpaid supports, including natural supports, that will help them reach the goals identified. Federal child welfare guidance adds the sharpest version of the point: protective factors have to be used as leverage in the plan, not recorded as a list of family characteristics, and a family that sees its own contributions in the plan is likelier to treat the plan as achievable.
+
+### Risk and safety run as a separate strand
+
+Safety and risk questions sit alongside needs questions but answer different things on different timelines, with thresholds set by statute, agency policy, and supervision rather than by the practitioner's sense of how the plan is going. Child welfare guidance distinguishes safety assessment and risk assessment from comprehensive family assessment, states that the comprehensive assessment builds on them rather than substituting for them, and notes that significant new information can trigger a fresh safety and risk assessment while the broader work continues. Case management standards likewise place risk of suicide or homicide and risk of abuse, neglect, or exploitation among the assessment domains. It is worth knowing what this strand can and cannot deliver: a meta-analysis of fifty years of longitudinal research on suicidal thoughts and behaviors found that prediction from risk factors was only slightly better than chance across outcomes, and had not improved over five decades. Screening for risk exists to trigger response, review, and support, not to forecast.
+
+### What a score does and does not establish
+
+A screening instrument sorts a population into people who warrant a closer look and people who probably do not. It does not establish a condition. The U.S. Preventive Services Task Force, recommending depression screening for adults in 2023, is direct about this: every positive screening result should be followed by further assessment that confirms the diagnosis, establishes severity, and looks for co-occurring problems, and the benefit of screening depends on systems and staff being in place to do exactly that. The arithmetic explains why. In an individual participant data meta-analysis of the PHQ-9, the standard cutoff of 10 or above produced sensitivity of 0.88 and specificity of 0.85 against semistructured diagnostic interviews; at the 14 percent prevalence in that dataset, the positive predictive value works out to roughly 49 percent, meaning about half of positive screens were not major depression. Individual items are weaker still: the PHQ-9 item about thoughts of death and self-harm is sometimes read as a suicide-risk indicator, but in four studies in non-psychiatric settings only 18 to 35 percent of those endorsing it reported suicidal thoughts on questions written for that purpose. Case management standards put the practice rule simply: instruments are starting points for an individualized assessment, and if used they should be explained to the person so they understand what is being asked and how it will be used.
+
+### Culture, language, and whether the information is any good
+
+Validity is not a property an instrument carries into every room. Federal child welfare guidance lists among its foundations the need to assess the cultural, ethnic, linguistic, and other individual factors that shape how family and youth needs are perceived, including the worker's own willingness to raise them. Case management standards direct the practitioner to treat every interaction as a cross-cultural exchange, to begin with self-examination of their own values and biases, and to collect language preference and proficiency, preferred methods of communication, and levels of literacy as assessment data in their own right. The national CLAS standards require language assistance offered at no cost, notice that it is available, and verification that whoever provides it is competent, with untrained individuals and minors discouraged as interpreters. Interpreter standards require complete rendering of messages without addition, omission, or substitution. Medicaid's rules require the planning process itself to reflect cultural considerations and to be conducted in plain language accessible to people with disabilities and people with limited English proficiency. An assessment conducted through a child translating for a parent has collected something, but not what the record will claim it collected.
+
+### Documentation: what you saw and what you concluded
+
+Records outlive the worker who wrote them. Case management standards require documentation of assessments, contacts, plans, and outcomes, and note that records support continuity between providers, reimbursement and utilization review, and the practitioner in the event of a legal review. That range of readers is why practitioners are taught to keep observation and inference visibly separate on the page. There was no working refrigerator, and the client said three requests to the landlord went unanswered, is checkable by the next reader. The client is neglectful is a conclusion with no visible basis, and it is the version that gets copied forward. The same standards ask that the record carry the person's own language, their account of their situation, the goals as they stated them, and the feedback they gave. Federal child welfare guidance directs that documentation be written in jargon-free language families can understand and be available in the family's language, and Medicaid's rules require the written plan itself to be understandable to the person, in plain language.
+
+### From assessment to a plan the person recognizes
+
+Medicaid's person-centered planning rules describe the handoff in unusual detail: the individual leads the process, it includes people they choose, and the written plan must reflect their strengths and preferences, state individually identified goals and desired outcomes, name the paid and unpaid supports that will help reach them, record risk factors and the measures in place to minimize them including back-up plans, identify who monitors the plan, and be agreed to with the person's informed consent. Case management standards add that plans must rest on meaningful assessments and carry specific, attainable, measurable objectives that the person helped prioritize. Federal child welfare guidance insists the move from information to judgment be transparent, with the tools and information shared so the family can see how what they said shaped the result. Then the loop closes: reassessment at least annually, on significant change, or on request.
+
+### The other thing called a needs assessment
+
+The same phrase names a population-level activity that belongs to community practice, not to case management. Tax-exempt hospital facilities in the United States must conduct a community health needs assessment at least once every three years: define the community they serve, identify and prioritize its significant health needs, identify resources potentially available to address them, take input from a public health department and from members or representatives of medically underserved, low-income, and minority populations, and publish a written report. The unit of analysis is a population, the informants are chosen to represent broad interests rather than to describe one life, and the output is a public document paired with an implementation strategy. Nothing in it tells you what any particular person needs. Keep the two apart in your writing, because the shared name is the whole source of the confusion.
+
+### What this lesson is and is not
+
+This is educational material about how assessment is structured as a professional process. It is not clinical, diagnostic, legal, or benefits-eligibility advice, it is not a protocol to apply to a real person, and nothing here should be used to screen anyone, judge risk, or decide what services someone qualifies for. Assessment instruments, risk thresholds, mandated reporting duties, and eligibility rules are set by law, licensure, payer policy, and agency procedure, and they differ by jurisdiction and setting. Students who will practice learn these under supervision, with the instruments their agency has validated for its population, and with a supervisor who reviews their judgments. If you or someone you know is in crisis in the United States, the 988 Suicide and Crisis Lifeline can be reached by call, text, or online chat, at any hour.
+
+## Key Vocabulary
+
+- **Needs assessment** - The structured, collaborative process of gathering and weighing information about one person's situation, goals, strengths, and risks in order to build and revise a service plan with them.
+- **Presenting problem** - The reason contact happened as it is first stated, by a referral source or by the person, before anything underlying it has been examined.
+- **Collateral contact** - A person or organization outside the household, such as a school, clinician, or relative, consulted for information that supplements what the person and the records supply.
+- **Screening instrument** - A short standardized measure used to sort a population into those who warrant fuller evaluation and those who probably do not; it identifies candidates rather than establishing conditions.
+- **Positive predictive value** - Among everyone who tests or screens positive, the proportion who actually have the condition; it falls as the condition becomes rarer in the group being screened, even when the measure itself is unchanged.
+- **Reassessment** - The scheduled or triggered return to an earlier picture of needs, assets, and priorities, used both to monitor progress and to decide whether goals or services should change.
+- **Assessment of functional need** - In Medicaid home and community-based services rules, the evaluation of what a person can do and what support they require, which supplies the content the written service plan is built from.
+- **Level-of-care evaluation** - A yes-or-no administrative determination of whether someone would require institutional care absent waiver services; it governs program entry rather than describing what help would be useful.
+- **Natural supports** - Unpaid help provided voluntarily by family, friends, neighbors, or community groups, which federal rules require the written plan to name alongside paid services.
+- **Community health needs assessment** - A population-level study, required of tax-exempt hospital facilities every three years, that defines a service area, prioritizes its significant health needs, and is published in a public report.
+
+## Eli-10
+
+Imagine two versions of the same first meeting. In the first, a worker opens a form and asks the questions on it in order, writes short answers in the boxes, and closes the file. In the second, the worker asks what brought the person in, then keeps going: what has already been tried, who helps, what the person wants to be different by next month, what would make things worse, what languages the conversation should happen in. The worker checks a couple of records, calls a school with permission, and writes down what was actually seen and heard separately from what the worker thinks it means. Then they build a short plan together, in the person's own words, and agree when to look at it again. The first version produces a completed form. The second produces something that can be acted on and corrected. Only the second one is an assessment.
+
+## Eli's Analogy
+
+A screening tool is a smoke detector. It is deliberately tuned to go off easily, because missing a real fire is far worse than an unnecessary alarm, which guarantees it will also go off for burnt toast. The alarm means go look. The looking is the assessment.
+
+**Where the analogy breaks down:** It fails in two places. A smoke detector reports one hazard with one binary output, while an assessment covers many strands at once, some of which do not resolve into a yes or no at all. More importantly, nobody asks the kitchen what it wants. A needs assessment is a conversation with someone who has their own account, their own priorities, and the right to set the goals, so the person is a participant rather than the thing being measured.
+
+## Worked Example
+
+Work the screening arithmetic. In the PHQ-9 meta-analysis, the standard cutoff of 10 or above had sensitivity 0.88 and specificity 0.85 against semistructured interviews, and 14 percent of that dataset had major depression. Take 1,000 people at that prevalence: 140 have the condition and 860 do not. The instrument catches 0.88 of the 140, about 123 true positives, and misses 17. It clears 0.85 of the 860, leaving 0.15 of them, about 129, screening positive without the condition. Positive screens total roughly 252, of which 123 are correct: a positive predictive value near 49 percent. The published analysis reports the same figure and notes that 51 percent of positive screens would be false positives. Nothing is wrong with the instrument; it did exactly what a screen is for. What would be wrong is entering the score as a finding instead of as a reason to assess.
+
+## Common Mistakes
+
+- **Treating a score above a cutoff as a verdict about the person.**
+  A cutoff sorts people into further evaluation or not. Even a well-validated instrument at its standard cutoff can be wrong about roughly half of the people it flags, depending on how common the condition is in the group screened. Record the score as a screening result and say what assessment follows.
+- **Treating assessment as an intake form completed once and filed.**
+  Professional standards call assessment an ongoing activity, not a one-time event, and federal rules require the plan to be reviewed against reassessment at least annually, on significant change, and at the person's request. Anything that produces a plan has to be capable of correcting it.
+- **Writing inference into the record as though it were observation.**
+  Separate what was seen, heard, or reported from what you make of it, and label the second as your reading. Records are read by other providers, payers, reviewers, courts, and by the person, and an unsupported conclusion is the part that gets copied forward unchallenged.
+- **Replacing the person's stated priorities with the referral's problem list.**
+  Record all three: the presenting problem, the underlying factors you see, and what the person says matters most. Standards direct the worker to support the person in setting priorities and goals, and to notice when the program's approach does not fit what they are trying to do.
+- **Using the term needs assessment for individual and community work interchangeably.**
+  A community health needs assessment prioritizes the health needs of a defined population and ends in a public report and implementation strategy. An individual needs assessment describes one person's situation to support their own plan. Name which one you mean.
+
+## Compare / Contrast
+
+- **Needs assessment vs Diagnosis** - Assessment describes a situation in enough detail to plan with someone. Diagnosis classifies a presentation against defined criteria and is restricted to clinicians whose licensure and scope of practice permit it.
+- **Needs assessment vs Eligibility screening** - Eligibility answers a yes-or-no question a program wrote in advance, such as whether someone requires an institutional level of care. Assessment produces the content a plan is made from and has no pass or fail.
+- **Screening vs Assessment** - Screening identifies who may need a closer look, using short instruments tuned to miss few cases at the cost of many false positives. Assessment is the closer look, and it is what a positive screen is supposed to trigger.
+- **Safety and risk assessment vs Comprehensive needs assessment** - Safety and risk questions run on their own thresholds and timelines set by statute and agency policy. A comprehensive assessment builds on their results but does not replace them, and new information can trigger a fresh safety and risk review mid-case.
+- **Individual needs assessment vs Community needs assessment** - The unit of analysis differs: one life versus a defined population. The community version prioritizes significant needs, is informed by public health departments and representatives of underserved groups, and ends in a published report.
+
+## Key Takeaway
+
+A needs assessment is an ongoing, shared process that produces a plan, not a form that produces a file: it separates the presenting problem from the underlying need and from what the person actually wants, treats strengths and risk as distinct strands, and reads every instrument score as a reason to look further rather than as a finding.
+
+## Practice Question Bank
+
+**1. How do NASW's Standards for Social Work Case Management characterize the assessment function?**
+
+A. As an ongoing activity rather than a one-time event, revisited through reassessment
+B. As a single intake procedure completed before services begin
+C. As a clinical procedure reserved for practitioners licensed to diagnose
+D. As an administrative step establishing whether a person qualifies for a program
+
+*Answer: A.* The standard states directly that assessment is an ongoing activity and not a one-time event, and describes reassessment as revisiting the needs, assets, and priorities identified earlier. It is not restricted to diagnosticians, is not the intake form, and is separate from eligibility determination, which answers a program's yes-or-no question.
+*Difficulty:* recall - *Skill:* Recalling how professional standards define the assessment function - *Sources:* nasw-standards-social-work-case-management-2013
+
+**2. Under Medicaid's home and community-based services rules, what distinguishes the evaluation of need for an institutional level of care from the assessment of functional need behind the person-centered service plan?**
+
+A. They are the same requirement stated twice in the regulation
+B. The level-of-care evaluation is repeated annually while the functional assessment is done only at entry
+C. The level-of-care evaluation answers a yes-or-no eligibility question, while the functional assessment supplies the content the written plan is built from
+D. The functional assessment establishes a diagnosis that the level-of-care evaluation then confirms
+
+*Answer: C.* The regulation requires an evaluation of whether a beneficiary would need hospital, nursing facility, or intermediate care facility level of care absent waiver services, which is an eligibility determination with two possible answers. Separately, the written plan must reflect clinical and support needs identified through an assessment of functional need. Both are periodically repeated, and neither establishes a diagnosis.
+*Difficulty:* understanding - *Skill:* Distinguishing eligibility determination from needs assessment in a regulatory context - *Sources:* ecfr-42-cfr-441-301-person-centered-service-plan, ecfr-42-cfr-441-302-evaluation-of-need
+
+**3. In a group where 14 percent have major depression, a questionnaire with sensitivity 0.88 and specificity 0.85 yields a positive predictive value of about 49 percent. What follows for practice?**
+
+A. The instrument is invalid for this population and should not be used
+B. Roughly half of positive screens will not be the condition, so a positive result marks someone who needs further assessment rather than someone who has been found to have it
+C. The cutoff should be raised until positive predictive value reaches 100 percent
+D. The score can be recorded as the person's diagnosis, because the instrument was validated against diagnostic interviews
+
+*Answer: B.* A positive predictive value near 49 percent means about half of those flagged do not have the condition, which is the expected behavior of a screen tuned to miss few cases. That is a reason to assess further, not evidence the instrument failed. No cutoff reaches perfect predictive value, and a screening score is not a diagnosis.
+*Difficulty:* application - *Skill:* Interpreting screening accuracy in terms of what a positive result licenses - *Sources:* levis-2019-phq9-screening-accuracy-ipd-meta-analysis, uspstf-2023-depression-suicide-risk-screening-adults
+
+**4. A referral names unstable housing as the problem and the records repeat it, but the person says their first priority is a prescription refill so they can keep working. How should the assessment handle the mismatch?**
+
+A. Record the referral concern as the need, since it came from a professional source
+B. Drop the housing question, since the person did not raise it
+C. Record the presenting problem, the underlying factors the practitioner sees, and the person's stated priority, and build the plan with the person rather than substituting one list for another
+D. Postpone the assessment until the records and the person's account agree
+
+*Answer: C.* The presenting problem, the underlying factors, and the person's priorities are three distinct pieces of information, and standards direct the worker to support the person in establishing priorities and goals after discussing needs and strengths. Deferring to the referral discounts the only source with direct access to what the person wants; dropping housing discards information already gathered; and postponing helps no one.
+*Difficulty:* analysis - *Skill:* Separating presenting problem, underlying need, and stated priorities in a live scenario - *Sources:* nasw-standards-social-work-case-management-2013, acf-comprehensive-family-assessment-guidelines
+
+**5. What separates an individual needs assessment from the community health needs assessment that tax-exempt hospital facilities must conduct?**
+
+A. The community version is carried out by social workers and the individual version by physicians
+B. The community version identifies and prioritizes the significant health needs of a defined population and is published in a written report, while the individual version describes one person's situation to support their own plan
+C. The community version is voluntary while only the individual version is required by federal regulation
+D. They are interchangeable names for the same process carried out at different scales
+
+*Answer: B.* The regulation requires a hospital facility to define its community, identify and prioritize significant health needs, identify available resources, take input from public health authorities and from representatives of underserved populations, and publish a written report. That is population-level work with a public output. An individual assessment describes one life to support one plan; the two share a name and nothing else.
+*Difficulty:* understanding - *Skill:* Distinguishing individual from community-level needs assessment - *Sources:* ecfr-26-cfr-1-501r-3-community-health-needs-assessment, nasw-standards-social-work-case-management-2013
+
+## Sources
+
+- `nasw-standards-social-work-case-management-2013` - NASW Standards for Social Work Case Management (2013). National Association of Social Workers. <https://www.socialworkers.org/LinkClick.aspx?fileticket=acrzqmEfhlo%3d&portalid=0> (usage: REFERENCE_ONLY)
+- `acf-comprehensive-family-assessment-guidelines` - Comprehensive Family Assessment Guidelines for Child Welfare. Children's Bureau, Administration for Children and Families, U.S. Department of Health and Human Services (2005). <https://acf.gov/sites/default/files/documents/cb/family_assessment.pdf> (usage: REFERENCE_ONLY)
+- `ecfr-42-cfr-441-301-person-centered-service-plan` - 42 CFR 441.301 - Contents of request for a waiver (person-centered planning process and person-centered service plan). Office of the Federal Register / Centers for Medicare & Medicaid Services, via eCFR. <https://www.ecfr.gov/current/title-42/section-441.301> (usage: PUBLIC_DOMAIN)
+- `ecfr-42-cfr-441-302-evaluation-of-need` - 42 CFR 441.302 - State assurances (evaluation of need for level of care). Office of the Federal Register / Centers for Medicare & Medicaid Services, via eCFR. <https://www.ecfr.gov/current/title-42/section-441.302> (usage: PUBLIC_DOMAIN)
+- `uspstf-2023-depression-suicide-risk-screening-adults` - Depression and Suicide Risk in Adults: Screening (Final Recommendation Statement, June 20, 2023). U.S. Preventive Services Task Force. <https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/screening-depression-suicide-risk-adults> (usage: PUBLIC_DOMAIN)
+- `levis-2019-phq9-screening-accuracy-ipd-meta-analysis` - Accuracy of Patient Health Questionnaire-9 (PHQ-9) for screening to detect major depression: individual participant data meta-analysis. Levis B, Benedetti A, Thombs BD, for the DEPRESsion Screening Data (DEPRESSD) Collaboration; BMJ 2019;365:l1476. <https://pmc.ncbi.nlm.nih.gov/articles/PMC6454318/> (usage: ATTRIBUTION_REQUIRED, CC BY-NC 4.0)
+- `wu-2020-phq9-item-9-and-suicide-risk` - Equivalency of the diagnostic accuracy of the PHQ-8 and PHQ-9: a systematic review and individual participant data meta-analysis. Wu Y, Levis B, Riehm KE, et al.; Psychological Medicine 2020;50(8):1368-1380 (author manuscript on PMC). <https://pmc.ncbi.nlm.nih.gov/articles/PMC6954991/> (usage: REFERENCE_ONLY)
+- `franklin-2017-suicide-risk-factors-meta-analysis` - Risk factors for suicidal thoughts and behaviors: A meta-analysis of 50 years of research. Franklin JC, Ribeiro JD, Fox KR, et al.; Psychological Bulletin 2017;143(2):187-232 (doi 10.1037/bul0000084; PMID 27841450). <https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1037%2Fbul0000084%22&resultType=core&format=json&pageSize=2> (usage: REFERENCE_ONLY)
+- `ecfr-26-cfr-1-501r-3-community-health-needs-assessment` - 26 CFR 1.501(r)-3 - Community health needs assessments. Office of the Federal Register / Internal Revenue Service, via eCFR. <https://www.ecfr.gov/current/title-26/section-1.501(r)-3> (usage: PUBLIC_DOMAIN)
+- `hhs-omh-national-clas-standards` - National Standards for Culturally and Linguistically Appropriate Services (CLAS) in Health and Health Care. U.S. Department of Health and Human Services, Office of Minority Health (Think Cultural Health). <https://thinkculturalhealth.hhs.gov/clas/standards> (usage: REFERENCE_ONLY)
+- `ncihc-national-standards-of-practice-2005` - National Standards of Practice for Interpreters in Health Care. National Council on Interpreting in Health Care. <https://www.ncihc.org/assets/Accessible-files/NCIHC%20National%20Standards%20of%20Practice%20Sept%202005%20accessible.pdf> (usage: REFERENCE_ONLY)
+- `988-suicide-and-crisis-lifeline` - 988 Suicide & Crisis Lifeline. 988 Suicide & Crisis Lifeline (administered by the Substance Abuse and Mental Health Services Administration through Vibrant Emotional Health). <https://988lifeline.org/> (usage: REFERENCE_ONLY)
+
+## Related Topics
+
+- `social-work-and-human-services:case-management:what-case-management-is`
+- `social-work-and-human-services:case-management:community-resources-and-referrals`
+- `social-work-and-human-services:foundations:strengths-based-practice`
+- `social-work-and-human-services:social-context:community-practice`
+- `social-work-and-human-services:communication:active-listening`
+
+## Editorial Metadata
+
+- **Topic ID:** `social-work-and-human-services:case-management:needs-assessment`
+- **Editorial status:** READY_TO_PUBLISH
+- **Researched:** 2026-08-18
+- **Rights status:** Mixed: U.S. federal regulations and the USPSTF recommendation are public domain; the PHQ-9 accuracy meta-analysis is CC BY-NC; the NASW case management standards, CLAS standards, NCIHC standards, and the remaining scholarly sources are reference-only. No source prose was reproduced or adapted; all wording is original.
+- **Transformation:** Facts, regulatory requirements, standard language, and quantitative estimates were extracted from primary sources and restated in original prose organized around a single teaching argument. The positive predictive value worked example was recomputed from the meta-analysis's reported sensitivity, specificity, and prevalence and independently verified before publication.
+- **Scope notes:** The case management cycle and models belong to What Case Management Is; person-in-environment, ecomaps, and genograms to Person-in-Environment Perspective; the strengths perspective itself to Strengths-Based Practice; interview micro-skills to Active Listening; consent and information sharing to Confidentiality and Privacy; and conducting a community needs assessment to Community Practice.
+- **Educational-material statement:** This lesson is educational material about how needs assessment is structured as a professional process. It is not clinical, diagnostic, legal, or benefits-eligibility advice, it is not a protocol to apply to a real person, and nothing in it should be used to screen anyone, judge risk, or decide what services someone qualifies for. Instruments, risk thresholds, reporting duties, and eligibility rules are set by law, licensure, payer policy, and agency procedure and vary by jurisdiction and setting. In the United States, the 988 Suicide & Crisis Lifeline can be reached by call, text, or chat at any hour.

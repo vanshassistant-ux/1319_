@@ -1,0 +1,204 @@
+# Constitutional Protections
+
+*EliExplains - Criminal Justice & Criminology / Criminal Law Foundations*
+
+> This lesson explains United States federal constitutional law for study purposes. It is educational material, not legal advice. It does not describe the law of any particular state, and state constitutions and statutes often protect more than the federal floor.
+
+## In 30 Seconds
+
+Criminal codes come from legislatures. The amendments in this lesson do something else: they limit how a government may investigate, charge, try, and punish a person. The Fourth, Fifth, Sixth, and Eighth each carry part of that limit, and the Fourteenth is what makes most of them bind state officials at all. This lesson maps that architecture, then follows one remedy - the exclusionary rule - through its exceptions and the argument over what it costs. Educational material on U.S. law, not legal advice.
+
+## Why This Matters
+
+Nearly every later question in criminal justice runs back through this map. Whether a search holds up, whether a confession comes in, whether an indigent defendant gets a lawyer, whether a forfeiture is too large - each traces to a clause and to the cases reading it. Learn the clauses first and doctrine stops being a list of case names and becomes an argument about text. The map also carries a warning students need early: these guarantees did not restrain state police, state prosecutors, or state courts for most of American history, and the process by which they came to is itself a major twentieth-century development, still unfinished. State constitutions may protect more than the federal floor.
+
+## Learning Objectives
+
+- Identify which criminal-process guarantee each of the Fourth, Fifth, Sixth, Eighth, and Fourteenth Amendments supplies.
+- Explain selective incorporation and why the Bill of Rights did not originally restrain state and local governments.
+- Distinguish a constitutional right from the remedy a court applies when that right is violated.
+- Apply the good-faith, inevitable-discovery, independent-source, and attenuation limits to a suppression scenario.
+- Evaluate the competing arguments about the exclusionary rule's costs and benefits without adopting either position.
+
+## The College Version
+
+### What these amendments actually regulate
+
+Legislatures write criminal codes. The constitutional provisions in this lesson do something different: they set conditions on how a government may investigate, charge, try, and punish someone for breaking those codes. Read in the order a case moves, the map is orderly. The Fourth Amendment governs investigation. The Fifth governs federal charging and controls what the government may compel a person to say. The Sixth governs the trial. The Eighth governs bail, fines, and punishment. The Fourteenth is what makes most of the others bind state and local officials at all. Keep two questions apart from the start. The first is whether a right was violated. The second is what a court should do about it. The Supreme Court treated these as separate in United States v. Leon (1984), reasoning that using the fruits of an earlier unlawful search works no new Fourth Amendment wrong, and that exclusion of evidence is a judge-made remedy that has to earn its place. Students who fuse the two questions misread most of the case law that follows. This lesson is educational material about United States federal constitutional law. It is not legal advice, and state constitutions and state statutes often protect more than the federal floor requires.
+
+### The Fourth Amendment: two clauses, not one rule
+
+The text has two halves. The first secures the people in their persons, houses, papers, and effects against unreasonable searches and seizures. The second says no warrants shall issue but upon probable cause, supported by oath or affirmation, and particularly describing the place to be searched and the persons or things to be seized. Read carefully, the Amendment does not forbid searching; it forbids unreasonable searching. It does not say in terms that police must always get a warrant; it says what a warrant must rest on and how specific it must be. Everything students find hard about the Fourth Amendment - what counts as a search, when a warrant is excused, how probable cause is measured - is doctrine built on top of those two sentences, and this curriculum develops it in the later Search, Seizure, and Warrants topic. What matters here is structure, plus one early holding that shows the Amendment is about official conduct rather than about who deserves protection: in Weeks v. United States (1914) the Court said the protection reaches all alike, whether accused of crime or not, and that the duty to give it effect binds everyone entrusted with enforcing federal law.
+
+### The Fifth Amendment: four criminal clauses and one that is not
+
+The Fifth Amendment packs five separate guarantees into one sentence. First, no person answers for a capital or otherwise infamous crime except on presentment or indictment of a grand jury, with an exception for the armed forces and the militia in actual service. Second, no one is twice put in jeopardy of life or limb for the same offence. Third, no one is compelled in any criminal case to be a witness against himself. Fourth, no one is deprived of life, liberty, or property without due process of law. Fifth, private property is not taken for public use without just compensation - a property-law rule that sits in the same amendment but does no work in criminal procedure. The self-incrimination clause is the one students meet first, because Miranda v. Arizona (1966) built a warning regime on it: statements from custodial interrogation are inadmissible unless the government shows it used safeguards effective to secure the privilege, and the Court specified what those warnings must convey - the right to silence, that statements may be used in court, the right to a lawyer present during questioning, and appointed counsel for those who cannot afford one. Miranda is a Fifth Amendment case, not a Sixth Amendment one, and that distinction matters when the two rights attach at different moments. The due process clause is thinner in the text than in practice; In re Winship (1970) gave it hard content by holding that due process requires proof beyond a reasonable doubt of every fact necessary to constitute the crime charged.
+
+### The Sixth Amendment: the trial rights and the lawyer
+
+The Sixth Amendment opens with 'In all criminal prosecutions' and then lists what the accused shall enjoy: a speedy and public trial, an impartial jury of the state and district where the crime was committed, notice of the nature and cause of the accusation, confrontation with the witnesses against him, compulsory process for obtaining witnesses in his favor, and the assistance of counsel for his defence. Four of those have produced the case law students most often encounter. On the jury, Duncan v. Louisiana (1968) held the right fundamental to the American scheme of justice and required jury trial in serious state cases, holding that a crime punishable by two years in prison is serious while expressly declining to draw the full petty-serious boundary. On confrontation, Crawford v. Washington (2004) held that testimonial statements - answers to police interrogation squarely among them - may not be used against a defendant unless the witness is unavailable and the defendant had an earlier chance to cross-examine. On counsel, Gideon v. Wainwright (1963) held that an indigent defendant's right to appointed counsel at a felony trial is fundamental and essential to a fair trial, overruling Betts v. Brady; Argersinger v. Hamlin (1972) then untied the right from the felony label, holding that absent a knowing and intelligent waiver no person may be imprisoned unless represented by counsel at trial. Strickland v. Washington (1984) asked what that lawyer owes the client and answered with two components: performance falling below an objective standard of reasonableness, judged with strong deference to counsel's choices, and prejudice, meaning a reasonable probability that the outcome would have been different, sufficient to undermine confidence in the result.
+
+### The Eighth Amendment: three prohibitions in one sentence
+
+The Eighth Amendment is the shortest of the four and the easiest to state: excessive bail shall not be required, nor excessive fines imposed, nor cruel and unusual punishments inflicted. Read the text closely. It speaks about excessiveness and about the character of punishment; it does not in terms create an entitlement to be released on bail, and how bail actually works is a matter of statutes and court rules taken up in this curriculum's pretrial topic. The Court has described the three clauses together as parallel limits on the power of those entrusted with the criminal-law function of government. The fines clause reached the Court most recently in a case worth remembering for a different reason. Indiana sought civil forfeiture of Tyson Timbs's Land Rover, bought for roughly $42,000, after a drug conviction carrying a maximum $10,000 fine. In Timbs v. Indiana (2019) the Court held the Excessive Fines Clause applies to the states - which tells you that until 2019 it formally did not.
+
+### The Fourteenth Amendment and selective incorporation
+
+Students routinely assume the Bill of Rights has always constrained state and local police, prosecutors, and courts. It did not. In Barron v. Baltimore (1833) Chief Justice Marshall held that the Fifth Amendment's just-compensation provision limits only the federal government, reasoning that the Constitution was ordained by the people for their own government rather than for the governments of the individual states. Nothing changed until the Fourteenth Amendment, passed by Congress in 1866 and ratified in 1868, forbade any state to deprive a person of life, liberty, or property without due process of law, or to deny any person the equal protection of the laws. Even then change came slowly and clause by clause. In Hurtado v. California (1884) the Court held that due process does not require a state to charge murder by grand jury indictment, so California could proceed by information after a magistrate's examination. That pattern - each guarantee tested separately - is what the term selective incorporation names. Most of the criminal guarantees were incorporated in the twentieth century: the exclusionary rule in 1961, appointed counsel in 1963, the criminal jury in 1968. The current test asks whether a protection is fundamental to our scheme of ordered liberty or deeply rooted in this Nation's history and tradition, and once a guarantee is incorporated the Court has said there is no daylight between the federal and state conduct it governs. The list of holdouts is short and still moving. Setting aside the right at issue in that case and an open question about jury unanimity, McDonald v. Chicago (2010) named the remaining guarantees outside full incorporation as the Third Amendment, the Fifth Amendment's grand jury requirement, the Seventh Amendment civil jury, and the Eighth Amendment's excessive fines clause. Timbs removed the last of those in 2019, which leaves the grand jury requirement as the criminal-side exception students should remember.
+
+### The exclusionary rule and its limits
+
+A right needs a remedy, and the remedy the Court built for the Fourth Amendment is exclusion of evidence. Weeks v. United States (1914) held that federal courts could not keep and use a defendant's papers seized from his home without a warrant when he had asked for them back before trial. Silverthorne Lumber Co. v. United States (1920) extended the idea to derivative evidence, with Justice Holmes writing that unlawfully acquired evidence shall not be used at all - while adding the qualification that the facts do not become inaccessible, because if knowledge of them is gained from an independent source they may be proved like any others. That single sentence contains both the rule and its first limit. Weeks bound only federal officers; Mapp v. Ohio (1961) applied exclusion to state criminal trials, overruling Wolf v. Colorado on that point. Four limits now do most of the work. Independent source, from Silverthorne and restated in Nix v. Williams (1984), admits evidence actually found through a route wholly separate from the violation. Inevitable discovery, adopted in Nix, admits evidence when the prosecution shows by a preponderance that it would have been found lawfully anyway; the Court added that the government need not prove the absence of bad faith. Attenuation, from Wong Sun v. United States (1963), asks not whether the evidence would have surfaced but for the illegality, but whether it was reached by exploiting that illegality or instead by means sufficiently distinguishable to purge the taint. Good faith, from United States v. Leon (1984), admits evidence gathered in objectively reasonable reliance on a warrant a court later invalidates - though Leon preserved inquiry into a knowingly or recklessly false affidavit and into a magistrate acting as a rubber stamp. Herring v. United States (2009) extended the reasoning to police recordkeeping, holding the rule inapplicable where the mistake was isolated negligence attenuated from the search rather than systemic error or reckless disregard.
+
+### The argument about what the rule costs
+
+Whether exclusion is worth its price is a live disagreement, and a survey course should present it rather than settle it. The Leon majority framed the question as a balance: exclusion imposes real costs by keeping reliable evidence from juries and letting some guilty defendants go free, and it should apply only where deterrence justifies that cost. The same opinion conceded how thin the evidentiary ground is, quoting an earlier case for the point that no empirical researcher, on either side, had established with assurance whether the rule deters. Justice Brennan, dissenting with Justice Marshall, attacked the framing itself, arguing that cost-benefit language used indiscriminately can have a narcotic effect and creates an illusion of technical precision, and that the majority understated what was constitutionally at stake. Both positions sit in the U.S. Reports. The case for the rule is the one Mapp made: without exclusion, the assurance against unreasonable searches would be, in the Court's words borrowed from Holmes, a form of words. The case against leaning on it is the one Nix made in passing, that departmental discipline and civil liability are themselves significant disincentives to gathering evidence illegally, which implies exclusion is not the only lever available. Your job in a course is to state each argument accurately, identify which empirical claims each depends on, and notice when a court is making a constitutional judgment versus a predictive one about police behavior.
+
+## Key Vocabulary
+
+- **Selective incorporation** - The clause-by-clause process through which the Supreme Court has held that particular Bill of Rights guarantees restrain state and local governments by way of the Fourteenth Amendment's Due Process Clause.
+- **Exclusionary rule** - A judge-made remedy barring the prosecution from using, in its case in chief, evidence obtained in violation of the Fourth Amendment.
+- **Probable cause** - The showing the Constitution's warrant clause names as the basis on which a warrant may issue, supported by oath or affirmation.
+- **Good-faith exception** - The Leon holding that evidence gathered in objectively reasonable reliance on a warrant later found invalid is not suppressed from the prosecution's case in chief.
+- **Inevitable discovery** - The Nix v. Williams limit admitting evidence when the government proves by a preponderance that lawful means would ultimately have turned it up anyway.
+- **Independent source** - The Silverthorne limit allowing proof of facts learned through a route wholly separate from the constitutional violation.
+- **Attenuation** - The Wong Sun test asking whether evidence was reached by exploiting an earlier illegality or by means sufficiently distinguishable to purge its taint.
+- **Effective assistance of counsel** - The Sixth Amendment standard from Strickland requiring both performance below an objective measure of reasonableness and resulting prejudice to the defense.
+- **Testimonial statement** - Under Crawford, an out-of-court statement such as an answer to police questioning, usable against the accused only if the declarant is unavailable and was previously open to cross-examination.
+- **Grand jury indictment** - The Fifth Amendment charging requirement for federal capital and otherwise infamous crimes, which Hurtado held the Fourteenth Amendment does not impose on the states.
+
+## Eli-10
+
+Imagine the government has to walk through four doors to punish someone, and each door has a rule posted on it. The first door is looking for evidence: no unreasonable searching, and a warrant needs a specific reason and a specific target. The second door is accusing: a federal felony charge normally goes through a grand jury, nobody has to help the government convict them by talking, and nobody gets tried twice for the same offense. The third door is the trial: soon, in public, in front of a jury, with the witnesses in the room and a lawyer at your side. The fourth door is punishment: bail, fines, and penalties cannot be excessive or cruel. Then there is a fifth rule, written later, that says the state and city governments have to follow those posted rules too - and the courts added that rule one door at a time, over about a hundred years.
+
+## Eli's Analogy
+
+Think of the amendments as the rules of a game and the exclusionary rule as the penalty for breaking one. The rulebook says what a referee may do. The penalty says what happens when the referee does it anyway - here, the play gets called back and the evidence does not count.
+
+**Where the analogy breaks down:** The analogy breaks down in two places. Referees enforce rules against players, but these rules run the other way: they restrain the government, not the accused. And a real penalty is automatic, while exclusion is not - courts let evidence in anyway when officers relied on a warrant in good faith, when the evidence would have been found lawfully, when it came from an independent route, or when the link to the violation is too faint.
+
+## Worked Example
+
+Officers get a warrant to search an apartment for stolen laptops. A judge later rules the affidavit was too thin to establish probable cause, so the search violated the Fourth Amendment. Ask the questions in order. Was a right violated? Yes. Does the evidence come out? Not automatically. Under Leon, if the affidavit was not knowingly or recklessly false and the judge was not acting as a rubber stamp, officers who reasonably relied on the warrant fall inside the good-faith exception and the laptops are admitted. Change the facts and the analysis changes with them. If a second team had already obtained a valid warrant on separate information, the independent source limit applies. If a documented inventory search of the same apartment was scheduled for that afternoon, the government may try inevitable discovery, which Nix requires it to prove by a preponderance. If officers instead learned of a witness through the illegal search and that witness came forward voluntarily weeks later, the question becomes attenuation under Wong Sun: was the testimony reached by exploiting the illegality, or by means distinguishable enough to purge the taint?
+
+## Common Mistakes
+
+- **Assuming the Bill of Rights has always restrained state and local officials.** Barron v. Baltimore (1833) held it limited only the federal government. Application to the states came through the Fourteenth Amendment one guarantee at a time, mostly in the twentieth century, and the Excessive Fines Clause was not incorporated until Timbs v. Indiana in 2019.
+- **Reading the Fourth Amendment as a flat warrant requirement.** The text bars unreasonable searches and seizures and then states what a warrant must rest on and describe. Whether a warrant is required in a given situation is doctrine layered on that text, not something the sentence itself says.
+- **Treating any constitutional violation as automatic suppression.** The right and the remedy are separate questions. Leon, Nix, Wong Sun, and Herring each identify situations where a violation occurred and the evidence still came in.
+- **Filing Miranda under the Sixth Amendment because it mentions a lawyer.** Miranda is a Fifth Amendment case. Its warnings exist to protect the privilege against compelled self-incrimination during custodial interrogation; the Sixth Amendment counsel line runs through Gideon, Argersinger, and Strickland.
+- **Saying Gideon guarantees a lawyer in every proceeding.** Gideon involved a felony trial. Argersinger tied appointed counsel to actual imprisonment rather than to the felony label, and neither case addresses every kind of hearing.
+
+## Compare / Contrast
+
+| | | |
+| --- | --- | --- |
+| **A constitutional right** | **The remedy for violating it** | The right is in the text and binds officials; the remedy is what a court does afterward. Leon called exclusion a judge-made remedy justified by deterrence, which is why exceptions to it can exist without amending the Fourth Amendment. |
+| **Independent source** | **Inevitable discovery** | Independent source is about what actually happened: investigators really did reach the evidence by a separate lawful route. Inevitable discovery is about what would have happened, and Nix puts the burden on the prosecution to show it by a preponderance. |
+| **Fifth Amendment self-incrimination** | **Sixth Amendment assistance of counsel** | The Fifth limits what the government may compel a person to say and drives the Miranda warnings during custodial questioning. The Sixth guarantees a defense lawyer in a criminal prosecution and sets, through Strickland, a standard for that lawyer's work. |
+| **Incorporated guarantees** | **Guarantees not incorporated** | Incorporated guarantees bind state and federal governments alike. The Fifth Amendment grand jury requirement is the standing criminal-procedure exception, which is why Hurtado allowed California to charge a capital case by information after a magistrate's examination rather than by indictment. |
+
+## Key Takeaway
+
+The Fourth, Fifth, Sixth, and Eighth Amendments restrain how government investigates, charges, tries, and punishes; the Fourteenth is what extended most of those restraints to the states, guarantee by guarantee; and a violation of a right is a separate question from whether a court will suppress the evidence.
+
+## Practice Question Bank
+
+**1. Which amendment's text contains the prohibitions on excessive bail, excessive fines, and cruel and unusual punishments?**
+
+- A. The Fourth Amendment
+- B. The Sixth Amendment
+- C. The Eighth Amendment
+- D. The Fourteenth Amendment
+
+*Answer:* C. All three prohibitions appear in the single sentence of the Eighth Amendment. The Fourth covers searches, seizures, and warrants; the Sixth covers trial rights including jury, confrontation, and counsel; the Fourteenth contains the due process and equal protection clauses that apply other guarantees to the states but does not itself list these punishment limits.
+
+*Difficulty:* recall - *Skill:* Locating a criminal-process guarantee in the correct amendment - *Sources:* us-constitution-bill-of-rights-transcript, us-constitution-amendments-11-27
+
+**2. A student writes that the Bill of Rights has restrained state and local police since 1791. What is the most accurate correction?**
+
+- A. It is correct, because ratification in 1791 bound every level of government at once.
+- B. Barron v. Baltimore held the Bill of Rights limited only the federal government, and its guarantees were applied to the states individually through the Fourteenth Amendment, largely in the twentieth century.
+- C. The Bill of Rights has never applied to state officials; only state constitutions restrain them.
+- D. The Fourteenth Amendment applied the entire Bill of Rights to the states automatically upon ratification in 1868.
+
+*Answer:* B. Barron v. Baltimore (1833) held the Fifth Amendment's just-compensation clause limited only the federal government. Application to the states came clause by clause after the Fourteenth Amendment was ratified in 1868, and mostly much later; the Excessive Fines Clause was not incorporated until Timbs v. Indiana in 2019. That timeline rules out the 1791 answer and the automatic-1868 answer, and Mapp, Gideon, and Duncan disprove the claim that the Bill of Rights never reaches state officials.
+
+*Difficulty:* understanding - *Skill:* Explaining selective incorporation and its timeline - *Sources:* scotus-barron-v-baltimore-1833, us-constitution-amendments-11-27, scotus-timbs-v-indiana-2019, scotus-mcdonald-v-chicago-2010
+
+**3. Police search a garage under a warrant a court later holds was issued without adequate probable cause. The affidavit contained no knowing or reckless falsehood, and the issuing judge reviewed it independently. Which limit on the exclusionary rule most directly supports admitting the evidence?**
+
+- A. Good faith under United States v. Leon
+- B. Inevitable discovery under Nix v. Williams
+- C. Attenuation under Wong Sun v. United States
+- D. The independent source doctrine from Silverthorne Lumber
+
+*Answer:* A. Leon holds that evidence obtained in objectively reasonable reliance on a warrant later found invalid is not excluded from the prosecution's case in chief, provided the affidavit was not knowingly or recklessly false and the magistrate was not a rubber stamp - exactly these facts. Inevitable discovery requires proof that lawful means would have found the evidence anyway, attenuation requires a chain of events distinguishable enough to purge the taint, and independent source requires an actual separate lawful route; none of those facts is present here.
+
+*Difficulty:* application - *Skill:* Selecting the correct exclusionary-rule limit for a fact pattern - *Sources:* scotus-united-states-v-leon-1984, scotus-nix-v-williams-1984, scotus-wong-sun-v-united-states-1963, scotus-silverthorne-lumber-v-united-states-1920
+
+**4. Under Strickland v. Washington, what must a defendant show to win an ineffective-assistance-of-counsel claim?**
+
+- A. That counsel made at least one identifiable error at trial
+- B. That counsel's performance fell below an objective standard of reasonableness and that the deficiency prejudiced the defense
+- C. That a different lawyer would probably have chosen a different strategy
+- D. That counsel failed to consult an expert witness before sentencing
+
+*Answer:* B. Strickland sets two components: deficient performance measured against an objective standard of reasonableness, reviewed with strong deference to counsel's choices, and prejudice, meaning a reasonable probability that the result would have been different - a probability sufficient to undermine confidence in the outcome. A single identifiable error, a differing strategic judgment, or one specific omission does not by itself satisfy both components.
+
+*Difficulty:* understanding - *Skill:* Stating the two-part effective-assistance standard - *Sources:* scotus-strickland-v-washington-1984, scotus-gideon-v-wainwright-1963
+
+**5. A classmate argues that the exclusionary rule debate has been empirically settled in favor of the rule's deterrent effect. Reading the Leon majority and Justice Brennan's dissent together, which characterization is most defensible?**
+
+- A. The majority found the rule strongly deterrent, and the dissent agreed on the data but disagreed on remedy.
+- B. The majority rejected the rule as unconstitutional, while the dissent defended it as constitutionally compelled by the Fourth Amendment's text.
+- C. The majority weighed costs against deterrence benefits while acknowledging that researchers on both sides had not established the rule's deterrent effect with assurance, and the dissent objected to that cost-benefit framing itself.
+- D. Both opinions agreed the empirical question was resolved and disagreed only about how many defendants go free.
+
+*Answer:* C. The Leon majority framed exclusion as a remedy justified by deterrence and weighed its costs, while quoting an earlier case for the point that no researcher, proponent or opponent, had established the rule's deterrent effect with assurance. Justice Brennan, joined by Justice Marshall, attacked the cost-benefit framing as creating an illusion of technical precision. The majority did not declare the rule unconstitutional, and neither opinion treated the empirical question as resolved.
+
+*Difficulty:* analysis - *Skill:* Characterizing a contested legal debate accurately without adopting a side - *Sources:* scotus-united-states-v-leon-1984, scotus-herring-v-united-states-2009
+
+## Sources
+
+- **The Bill of Rights: A Transcription** - U.S. National Archives and Records Administration. <https://www.archives.gov/founding-docs/bill-of-rights-transcript> (`us-constitution-bill-of-rights-transcript`, usage: PUBLIC_DOMAIN)
+- **The Constitution: Amendments 11-27** - U.S. National Archives and Records Administration. <https://www.archives.gov/founding-docs/amendments-11-27> (`us-constitution-amendments-11-27`, usage: PUBLIC_DOMAIN)
+- **Barron v. Baltimore, 32 U.S. (7 Pet.) 243 (1833)** - Library of Congress, United States Reports volume 32 (official bound-volume scan). <https://tile.loc.gov/storage-services/service/ll/usrep/usrep032/usrep032243/usrep032243.pdf> (`scotus-barron-v-baltimore-1833`, usage: PUBLIC_DOMAIN)
+- **Hurtado v. California, 110 U.S. 516 (1884)** - Library of Congress, United States Reports volume 110 (official bound-volume scan). <https://tile.loc.gov/storage-services/service/ll/usrep/usrep110/usrep110516/usrep110516.pdf> (`scotus-hurtado-v-california-1884`, usage: PUBLIC_DOMAIN)
+- **Weeks v. United States, 232 U.S. 383 (1914)** - Library of Congress, United States Reports volume 232 (official bound-volume scan). <https://tile.loc.gov/storage-services/service/ll/usrep/usrep232/usrep232383/usrep232383.pdf> (`scotus-weeks-v-united-states-1914`, usage: PUBLIC_DOMAIN)
+- **Silverthorne Lumber Co. v. United States, 251 U.S. 385 (1920)** - Library of Congress, United States Reports volume 251 (official bound-volume scan). <https://tile.loc.gov/storage-services/service/ll/usrep/usrep251/usrep251385/usrep251385.pdf> (`scotus-silverthorne-lumber-v-united-states-1920`, usage: PUBLIC_DOMAIN)
+- **Mapp v. Ohio, 367 U.S. 643 (1961)** - Library of Congress, United States Reports volume 367 (official bound-volume scan). <https://tile.loc.gov/storage-services/service/ll/usrep/usrep367/usrep367643/usrep367643.pdf> (`scotus-mapp-v-ohio-1961`, usage: PUBLIC_DOMAIN)
+- **Wong Sun v. United States, 371 U.S. 471 (1963)** - Library of Congress, United States Reports volume 371 (official bound-volume scan). <https://tile.loc.gov/storage-services/service/ll/usrep/usrep371/usrep371471/usrep371471.pdf> (`scotus-wong-sun-v-united-states-1963`, usage: PUBLIC_DOMAIN)
+- **Gideon v. Wainwright, 372 U.S. 335 (1963)** - U.S. Government Publishing Office, United States Reports volume 372 (govinfo). <https://www.govinfo.gov/content/pkg/USREPORTS-372/pdf/USREPORTS-372-335.pdf> (`scotus-gideon-v-wainwright-1963`, usage: PUBLIC_DOMAIN)
+- **Miranda v. Arizona, 384 U.S. 436 (1966)** - Library of Congress, United States Reports volume 384 (official bound-volume scan). <https://tile.loc.gov/storage-services/service/ll/usrep/usrep384/usrep384436/usrep384436.pdf> (`scotus-miranda-v-arizona-1966`, usage: PUBLIC_DOMAIN)
+- **Duncan v. Louisiana, 391 U.S. 145 (1968)** - U.S. Government Publishing Office, United States Reports volume 391 (govinfo). <https://www.govinfo.gov/content/pkg/USREPORTS-391/pdf/USREPORTS-391-145.pdf> (`scotus-duncan-v-louisiana-1968`, usage: PUBLIC_DOMAIN)
+- **In re Winship, 397 U.S. 358 (1970)** - U.S. Government Publishing Office, United States Reports volume 397 (govinfo). <https://www.govinfo.gov/content/pkg/USREPORTS-397/pdf/USREPORTS-397-358.pdf> (`scotus-in-re-winship-1970`, usage: PUBLIC_DOMAIN)
+- **Argersinger v. Hamlin, 407 U.S. 25 (1972)** - Library of Congress, United States Reports volume 407 (official bound-volume scan). <https://tile.loc.gov/storage-services/service/ll/usrep/usrep407/usrep407025/usrep407025.pdf> (`scotus-argersinger-v-hamlin-1972`, usage: PUBLIC_DOMAIN)
+- **Strickland v. Washington, 466 U.S. 668 (1984)** - Library of Congress, United States Reports volume 466 (official bound-volume scan). <https://tile.loc.gov/storage-services/service/ll/usrep/usrep466/usrep466668/usrep466668.pdf> (`scotus-strickland-v-washington-1984`, usage: PUBLIC_DOMAIN)
+- **Nix v. Williams, 467 U.S. 431 (1984)** - Library of Congress, United States Reports volume 467 (official bound-volume scan). <https://tile.loc.gov/storage-services/service/ll/usrep/usrep467/usrep467431/usrep467431.pdf> (`scotus-nix-v-williams-1984`, usage: PUBLIC_DOMAIN)
+- **United States v. Leon, 468 U.S. 897 (1984)** - Library of Congress, United States Reports volume 468 (official bound-volume scan). <https://tile.loc.gov/storage-services/service/ll/usrep/usrep468/usrep468897/usrep468897.pdf> (`scotus-united-states-v-leon-1984`, usage: PUBLIC_DOMAIN)
+- **Crawford v. Washington, 541 U.S. 36 (2004)** - Library of Congress, United States Reports volume 541 (official bound-volume scan). <https://tile.loc.gov/storage-services/service/ll/usrep/usrep541/usrep541036/usrep541036.pdf> (`scotus-crawford-v-washington-2004`, usage: PUBLIC_DOMAIN)
+- **Herring v. United States, 555 U.S. 135 (2009)** - Library of Congress, United States Reports volume 555 (official bound-volume scan). <https://tile.loc.gov/storage-services/service/ll/usrep/usrep555/usrep555135/usrep555135.pdf> (`scotus-herring-v-united-states-2009`, usage: PUBLIC_DOMAIN)
+- **McDonald v. City of Chicago, 561 U.S. 742 (2010)** - Library of Congress, United States Reports volume 561 (official bound-volume scan). <https://tile.loc.gov/storage-services/service/ll/usrep/usrep561/usrep561742/usrep561742.pdf> (`scotus-mcdonald-v-chicago-2010`, usage: PUBLIC_DOMAIN)
+- **Timbs v. Indiana, 586 U.S. 146 (2019) (slip opinion, No. 17-1091)** - Supreme Court of the United States (supremecourt.gov slip opinion). <https://www.supremecourt.gov/opinions/18pdf/17-1091_5536.pdf> (`scotus-timbs-v-indiana-2019`, usage: PUBLIC_DOMAIN)
+- **Criminal Cases** - Administrative Office of the U.S. Courts (uscourts.gov). <https://www.uscourts.gov/about-federal-courts/types-cases/criminal-cases> (`uscourts-criminal-cases`, usage: REFERENCE_ONLY)
+
+## Related Topics
+
+- `criminal-justice-and-criminology:criminal-justice-system:criminal-law-versus-civil-law`
+- `criminal-justice-and-criminology:policing:search-seizure-and-warrants`
+- `criminal-justice-and-criminology:courts:arrest-through-trial`
+- `criminal-justice-and-criminology:courts:bail-and-pretrial-procedure`
+- `criminal-justice-and-criminology:courts:trial-and-sentencing`
+
+## Editorial Metadata
+
+- **Topic id:** `criminal-justice-and-criminology:criminal-law-foundations:constitutional-protections`
+- **Editorial status:** READY_TO_PUBLISH
+- **Estimated minutes:** 14
+- **Researched at:** 2026-08-18
+- **Research status:** source-verified
+- **Rights status:** Public-domain U.S. constitutional text and judicial opinions plus one reference-only federal judiciary page; all prose written for EliExplains, with only short doctrinal phrases from public-domain opinions.
+- **Transformation:** Every case name, citation, year, decision date, holding, opinion author, and lineup was verified against the official United States Reports scan or the Court's own slip opinion; nothing was taken from case summaries. The generated draft was discarded entirely and replaced with an original survey of the constitutional architecture of the criminal process.
+- **Source count:** 21 - **Question count:** 5
+- **Notice:** This lesson explains United States federal constitutional law for study purposes. It is not legal advice, does not describe the law of any particular state, and should not be relied on for any legal decision.

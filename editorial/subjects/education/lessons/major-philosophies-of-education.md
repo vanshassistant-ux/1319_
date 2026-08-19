@@ -1,0 +1,201 @@
+# Major Philosophies of Education
+
+## In 30 Seconds
+
+Teacher-preparation courses usually introduce five educational philosophies: perennialism, essentialism, progressivism, social reconstructionism, and existentialism. Each grows out of an older philosophical tradition, and each answers three questions differently: what is worth knowing, what a teacher is for, and how learning should be organized. They are frameworks for examining beliefs about schooling, not research findings about what works, and most teachers hold a mixture rather than one pure position.
+
+## Why This Matters
+
+Curriculum arguments are rarely only about content. A fight over whether every student should read the same classic texts, or whether a class should spend three weeks on a neighborhood problem, is usually a disagreement about what school is for. Naming the philosophies gives you language for that disagreement and lets you hear the commitments underneath a district mission statement, a standards document, or an interview question. Teacher-preparation programs also ask candidates to write a personal philosophy of education, and writing one honestly means knowing what the available positions actually claim and who argued for them, rather than assembling agreeable phrases.
+
+## Learning Objectives
+
+- Define a philosophy of education as a set of normative commitments about aims, worthwhile knowledge, and the roles of teacher and learner.
+- Distinguish idealism, realism, pragmatism, and existentialism as the philosophical roots that educational positions draw on.
+- Explain how perennialism, essentialism, progressivism, social reconstructionism, and existentialism each answer what is worth knowing, what the teacher does, and how learning is organized.
+- Attribute the major figures to the positions they actually argued for, including Hutchins and Adler, Bagley and Hirsch, Dewey, Counts, Brameld, Freire, and Greene.
+- Apply the framework to a classroom or policy description and identify which philosophy it most closely reflects.
+- Evaluate the limits of the five-philosophy taxonomy as a description of what real teachers believe and do.
+
+## The College Version
+
+### What a philosophy of education is
+
+A philosophy of education is a connected set of commitments about what schools are for, what knowledge deserves a place in the curriculum, who decides, and what teachers and students are supposed to do with their time together. It is normative: it says what ought to happen. That makes it a different kind of claim from a learning theory, which tries to describe how learning actually works. Behaviorism, cognitivism, and constructivism belong in that second category and are treated in their own unit. The distinction matters because two teachers can accept exactly the same evidence about memory or motivation and still disagree about whether ninth graders should read the Odyssey. That argument is about aims, and evidence about learning does not settle it.
+
+Throughout this lesson, use three questions to hold the positions apart: what is worth knowing, what is the teacher's role, and how should learning be organized? The five positions below entered American teacher education largely through mid-twentieth-century textbooks that presented the field as a set of competing orientations. The Stanford Encyclopedia of Philosophy notes that this is only one of several ways philosophy of education has been organized; others group work by the branch of philosophy it draws on, or by topic, and Stanford's own overview uses a topical arrangement instead. So treat the five as a working vocabulary, not a natural classification of human beings.
+
+### Four philosophical roots
+
+Idealism, traced to Plato, treats ideas rather than physical objects as what is most real, and treats reasoning as the route to truth. In a classroom it favors great texts, the teacher as an intellectual and moral model, and Socratic questioning. Realism, traced to Aristotle, holds that the world exists independently of any mind and is known through observation and disciplined reasoning; it favors subject-matter expertise, demonstration, and testing what students have mastered.
+
+Pragmatism took shape in the United States in the late nineteenth century through Charles Sanders Peirce, William James, and John Dewey. It treats ideas as instruments: what is true is what holds up when acted on, so learning means testing ideas in experience. Existentialism, a nineteenth- and twentieth-century European tradition running from Soren Kierkegaard and Friedrich Nietzsche to Jean-Paul Sartre, begins with the individual's existence and freedom, and holds that meaning is chosen rather than discovered.
+
+These four are the raw material. The educational philosophies below are what happens when someone takes one of these positions seriously and asks what a school should therefore look like.
+
+### Conserving what lasts: perennialism and essentialism
+
+Perennialism draws on idealism and realism, and has a religious strand running through Thomas Aquinas and Jacques Maritain alongside a secular one. Its claim is that human nature and the deepest human problems do not change, so the most valuable material is the material that has proved durable. Robert Maynard Hutchins, who led the University of Chicago from 1929 to 1951, argued for permanent studies in the liberal arts and became known for the great books, which he taught in evening courses with Mortimer Adler; the university itself never adopted a great books curriculum. Adler's *Paideia Proposal*, published in 1982, pressed the democratic version of the argument: one course of study for every student, and no sorting of children into separate vocational and academic tracks.
+
+Essentialism shares the emphasis on content and teacher authority but justifies it differently. William C. Bagley's 1938 address, *An Essentialist's Platform for the Advancement of American Education*, called for a strong common core, high standards, and well-prepared teachers who know that core. E. D. Hirsch Jr. continued the line with *Cultural Literacy* in 1987 and the Core Knowledge Foundation, arguing that shared background knowledge is what makes reading and public discussion possible.
+
+The two are easy to confuse and worth separating carefully. Perennialism justifies its content by claiming the truths in it do not change, and aims at the individual cultivation of intellect. Essentialism justifies its content by what students need in order to be competent, productive members of society now, and it argues in the language of standards, rigor, and skills; Bagley's platform and Hirsch's list were both framed as answers to the conditions of their moment, which is a justification that can move as those conditions move. Both are largely teacher-directed and content-first, so those surface features will never tell them apart.
+
+### Reconstructing experience: progressivism
+
+Progressivism is pragmatism worked out for schools, and John Dewey is its central figure. Dewey founded and directed a laboratory school at the University of Chicago from 1896 to 1904, having joined its faculty in 1894 and published *Democracy and Education* in 1916, where he defines education as "that reconstruction or reorganization of experience which adds to the meaning of experience, and which increases ability to direct the course of subsequent experience."
+
+What is worth knowing, on this view, is whatever lets a learner act more intelligently next time. The teacher is not a lecturer but a designer of situations: someone who arranges problems worth solving, supplies resources, and shares planning authority with students. Learning is organized around projects and problems that cut across subject lines, often in cooperative groups, and assessment looks at what students can do with what they have learned.
+
+Two cautions. First, progressivism here names Dewey's tradition, not a contemporary political label. Second, Dewey spent much of *Democracy and Education* attacking dualisms in educational theory, so the familiar contest between child-centered and subject-centered teaching is not his framing; he argued that both halves of such oppositions were impoverished on their own.
+
+### Reconstructing society: social reconstructionism and critical pedagogy
+
+Social reconstructionism grew out of progressive education in the 1920s and 1930s among educators who thought schools were failing to confront depression, inequality, and war. George S. Counts put the challenge to the Progressive Education Association in 1932 in the talks published as *Dare the School Build a New Social Order?*, arguing that teachers should stop hovering over the individual child and take a position on the social order. Theodore Brameld is generally named as a founder of the position and pushed its most utopian version.
+
+Paulo Freire, whose *Pedagogy of the Oppressed* appeared in Portuguese in 1968, belongs to the same lineage and is the bridge to critical pedagogy: he attacked what he called banking education, in which teachers deposit information into passive students, and argued for dialogue that develops *conscientizacao*, or critical consciousness.
+
+What is worth knowing here is an accurate analysis of injustice and the means to act on it. The teacher's authority is deliberately decentered, though the teacher is not neutral, since critical pedagogy holds that no curriculum or language ever is. Learning is organized around social problems, civic education, and service or action projects, and often around examining the hidden curriculum, the values a school transmits without announcing them.
+
+### Starting from the individual: existentialism in education
+
+In an existentialist classroom, subject matter takes second place to the student's own project of becoming someone. What is worth knowing is whatever helps a person confront freedom, choice, and responsibility honestly, which usually pulls the curriculum toward literature, the arts, and philosophy. The teacher's role is to create conditions for genuine choice and to refuse to supply the answers, since on this view the answers have to come from the student; existentialists in education oppose standardized measurement on principle, because a score reports conformity rather than authenticity.
+
+Van Cleve Morris brought the position into American teacher education with *Existentialism in Education* in 1966. Maxine Greene, who joined Teachers College, Columbia University in 1965 and taught there for decades, is the best-known figure: she called herself an existentialist, drew on Sartre, Simone de Beauvoir, and Maurice Merleau-Ponty, and argued for wide-awakeness, the refusal to sleepwalk through one's own life, along with imagination, freedom, and aesthetic education.
+
+Note that existentialism appears twice in this lesson, once as a root philosophy and once as an educational position. That is one reason textbook lists differ: some present four educational philosophies and treat existentialism only as background, and some list six or more.
+
+### Using the framework honestly
+
+These five categories organize beliefs; they are not empirically validated types, and no study establishes that a given teacher is a perennialist. Treat them as a set of questions to ask, not boxes to sort people into.
+
+Three habits keep the framework useful. First, expect blending rather than purity. Wanting students to master a common core, to learn through inquiry, and to think hard about their society are not mutually exclusive aims, and foundations textbooks reflect this: they hand candidates a self-assessment and ask them to locate their own beliefs across the positions and write a personal philosophy, not to pick a team. Second, expect the teacher-centered and student-centered labels to leak. Perennialism is usually described as teacher-centered, yet its signature method, the Socratic seminar, hands the discussion to students. Third, notice what the list leaves out. Foundations texts increasingly point out that the philosophies presented as foundational to American schooling represent a narrow, Eurocentric selection, and that the educational thought of many other societies is simply absent from the canon.
+
+The framework is most valuable when you use it on arguments rather than on people: given a proposed graduation requirement, a new reading program, or a school's mission statement, ask which of the three questions it answers and which position that answer implies.
+
+## Key Vocabulary
+
+- **philosophy of education** — A connected set of normative commitments about the aims of schooling, what knowledge is worth teaching, and the proper roles of teacher and learner.
+- **idealism** — The philosophical position that ideas rather than material objects are the most real thing, and that reasoning is the route to truth.
+- **realism** — The philosophical position that the world exists independently of the mind and is known through observation and disciplined reasoning.
+- **pragmatism** — The philosophical tradition, developed by Peirce, James, and Dewey, that treats ideas as instruments tested by their consequences in experience.
+- **perennialism** — The educational position that some truths and works are permanently valuable, so all students should study a common liberal-arts curriculum aimed at cultivating intellect.
+- **essentialism** — The educational position that schools should teach a defined common core of skills and shared knowledge, taught by a knowledgeable teacher and held to firm standards.
+- **progressivism** — The educational position, grounded in pragmatism, that learning proceeds by reconstructing experience through inquiry into real problems, with the teacher as designer and guide.
+- **social reconstructionism** — The educational position that schools should actively work to remedy injustice and build a more equitable social order.
+- **critical pedagogy** — The teaching tradition descended from social reconstructionism which holds that knowledge and language are never neutral and that education should build critical consciousness.
+- **hidden curriculum** — The values, norms, and assumptions a school transmits through its routines and structures without ever stating them as objectives.
+
+## Eli-10
+
+Imagine five teachers handed the same class, the same room, and the same year, and asked to plan it. The first says the year should be spent on the books and ideas that have mattered for centuries, because those questions never go out of date. The second says the year should build a solid core of reading, writing, and mathematics that this student will need soon, and that the teacher should run it. The third says students learn by doing, so the year should be built around real problems the class investigates together. The fourth says the class should study something unjust in the world and try to change it. The fifth says the point is for each student to figure out who they are and take responsibility for their own choices. None of them is confused about the facts. They disagree about what school is for.
+
+## Eli's Analogy
+
+It is like five architects given the same plot of land and the same budget. One builds in a classical style meant to last, one builds the practical structure the town needs right now, one designs around how people will actually move through the space, one designs a building meant to change the neighborhood, and one designs something that lets each occupant shape their own room.
+
+**Where the analogy breaks down:** Architects pick one blueprint and build it, while teachers work inside curricula, standards, and schedules they did not choose and usually blend several approaches within a single week. And a building can be judged by whether it stands up; these positions cannot be settled that way, because they disagree about what the goal is rather than about which method reaches an agreed goal.
+
+## Worked Example
+
+A high school assigns four teachers to build a semester unit on the local river. The perennialist teacher anchors the unit in classic texts on nature, justice, and the common good, and runs Socratic seminars on them. The essentialist teacher specifies the chemistry, statistics, and technical writing every student must master, teaches them directly, and tests them. The progressivist teacher has teams design and run their own water-quality investigations and present findings to the class. The social reconstructionist teacher starts from the fact that the worst readings come from the poorest neighborhood, and the unit ends with students presenting a remediation proposal to the city council. Same river, same students, four different answers to what is worth knowing.
+
+## Common Mistakes
+
+- **Treating essentialism and perennialism as the same thing because both are content-first and teacher-led.** They differ in what justifies the content. Perennialism selects material on the claim that its truth does not change, and aims at cultivating intellect. Essentialism selects material because students need it to be competent members of society now, and argues in terms of standards, rigor, and skills.
+- **Treating progressivism as a learning theory, or using it interchangeably with constructivism.** Progressivism is a normative position about what schools are for, drawn from pragmatism. Constructivism is a theory about how people build understanding and is covered in the learning theories unit. You can accept constructivist evidence and still reject progressivist aims.
+- **Assuming every teacher has one philosophy that explains everything they do.** These are categories for analyzing beliefs, not empirically validated types of person. Most teachers hold a mixture and weight it differently by subject, grade, and situation, so analyze a decision or an argument rather than labeling a colleague.
+- **Scrambling the figures, for instance crediting Dewey with social reconstructionism or Freire with progressivism.** Dewey is the central progressivist. Counts and Brameld founded social reconstructionism and Freire extended it into critical pedagogy. Counts addressed the Progressive Education Association in 1932, but his point was that progressive education needed a social theory it did not have.
+- **Reading progressivism and social reconstructionism as contemporary political party labels.** In this literature the words name early- and mid-twentieth-century educational movements with specific texts and advocates. Map them onto current partisan politics and you will misread both the historical arguments and the classrooms that draw on them.
+
+## Compare / Contrast
+
+| A | B | Distinction |
+| --- | --- | --- |
+| Perennialism | Essentialism | Both are teacher-directed and content-first, so those features cannot separate them. Perennialism selects content on the claim that its truth is permanent and aims at intellect, favoring enduring works studied by everyone; essentialism selects a core of skills and shared knowledge because students need it to be competent members of society now. |
+| Progressivism | Social reconstructionism | Both are student-centered and problem-based, and reconstructionism grew out of progressivism. Progressivism organizes work around problems that develop the learner; reconstructionism organizes work around injustices the class is expected to act on, and treats teaching as an openly political act. |
+| Existentialism as a root philosophy | Existentialism as an educational philosophy | As a root philosophy it is a general claim that individuals create meaning through free choice. As an educational philosophy it is the school-level program that follows: student-chosen paths, humanities and the arts, and refusal of standardized measurement. Textbook lists differ over whether to count it once or twice. |
+| Philosophy of education | Learning theory | A philosophy of education argues about what school should aim at and who decides. A learning theory describes how people acquire and retain knowledge. Evidence can adjudicate the second and can inform but not settle the first. |
+
+## Key Takeaway
+
+The five educational philosophies are a vocabulary for arguing clearly about what school is for, sorted by how they answer what is worth knowing, what teachers do, and how learning is organized. They classify beliefs rather than proven methods, and most working teachers hold a blend.
+
+## Practice Question Bank
+
+**1. Which pair of figures is most closely associated with perennialism in American education?** *(recall)*
+
+- A. William C. Bagley and E. D. Hirsch Jr.
+- B. George S. Counts and Theodore Brameld
+- C. Robert Maynard Hutchins and Mortimer Adler
+- D. John Dewey and Charles Sanders Peirce
+
+**Answer: C.** Hutchins argued for permanent studies and the great books while leading the University of Chicago, and Adler, who co-taught great books courses with him, wrote the 1982 Paideia Proposal. Bagley and Hirsch are essentialists, Counts and Brameld founded social reconstructionism, and Dewey and Peirce are pragmatists behind progressivism.
+
+**2. Perennialism and essentialism are easily confused. What actually separates them?** *(understanding)*
+
+- A. Perennialism justifies its content by claiming the truths it teaches do not change, while essentialism justifies its content by what students currently need in order to be competent members of society
+- B. Perennialism is student-centered while essentialism is teacher-centered
+- C. Perennialism rejects a common curriculum while essentialism requires one for all students
+- D. Perennialism is a theory of how students learn while essentialism is a theory of school funding
+
+**Answer: A.** Both positions are content-first and largely teacher-directed, so those features cannot distinguish them; the real difference is what justifies the content. Both endorse a common curriculum for all students, and neither is a theory of how learning happens or of how schools are funded.
+
+**3. A middle school announces that every student will take the same sequence of reading, writing, mathematics, and science courses, that the department will specify the skills each grade must master, and that teachers will lead instruction directly and test mastery before promotion. Which philosophy does this most closely reflect?** *(application)*
+
+- A. Progressivism, because the school specifies outcomes
+- B. Existentialism, because students take responsibility for passing
+- C. Social reconstructionism, because the policy applies to everyone equally
+- D. Essentialism, because a defined core of skills is taught by a subject authority and held to firm standards
+
+**Answer: D.** A specified common core of practical skills, direct instruction, and mastery standards is the essentialist program described by Bagley and continued by Hirsch. Progressivism would organize the work around student inquiry into problems, existentialism would widen student choice and resist standardized measurement, and social reconstructionism would center the curriculum on social critique and action.
+
+**4. A candidate writes that a teacher's practice can be fully explained by identifying which one of the five philosophies that teacher holds. What is the strongest objection?** *(analysis)*
+
+- A. The five philosophies are ranked, so a teacher must be assigned the highest one they qualify for
+- B. The categories organize normative beliefs about aims rather than name validated types of teacher, so they cannot by themselves explain what a teacher does
+- C. Only social reconstructionism describes real classrooms, so the other four should be dropped
+- D. Philosophies of education apply to curriculum committees but never to individual teachers
+
+**Answer: B.** These positions are analytic frameworks for examining commitments about aims, not empirically validated categories of person, which is why foundations texts ask candidates to locate their own beliefs across the positions rather than to pick one. There is no ranking of the philosophies, none of them is uniquely real, and all of them bear directly on what individual teachers do.
+
+**5. Which pairing of a root philosophy with the educational position that grows most directly out of it is accurate?** *(understanding)*
+
+- A. Idealism gives rise to progressivism
+- B. Realism gives rise to social reconstructionism
+- C. Pragmatism gives rise to progressivism
+- D. Existentialism gives rise to essentialism
+
+**Answer: C.** Progressivism is pragmatism applied to schooling, which is why Dewey appears in both. Idealism and realism stand behind perennialism and essentialism rather than progressivism; social reconstructionism is usually traced to pragmatism and existentialism rather than realism; and essentialism draws on idealism and realism, not existentialism.
+
+## Sources
+
+- Della Perez, *Social Foundations of K-12 Education*, ch. 4 "Foundational Philosophies of Education" — Kansas State University Libraries (Pressbooks), public domain. <https://kstatelibraries.pressbooks.pub/dellaperezproject/chapter/chapter-3-foundational-philosophies-of-education/>
+- Della Perez, *Social Foundations of K-12 Education*, ch. 5 "Perennialism" — public domain. <https://kstatelibraries.pressbooks.pub/dellaperezproject/chapter/chapter-4-perennialism/>
+- Della Perez, *Social Foundations of K-12 Education*, ch. 8 "Essentialism" — public domain. <https://kstatelibraries.pressbooks.pub/dellaperezproject/chapter/chapter-7-essentialism/>
+- Della Perez, *Social Foundations of K-12 Education*, ch. 9 "Social Reconstructionism" — public domain. <https://kstatelibraries.pressbooks.pub/dellaperezproject/chapter/chapter-8-social-reconstructionism/>
+- *Foundations of Education: A Collective Reimagining*, ch. 3 "Educational Philosophies" — Open Oregon Educational Resources, CC BY-NC-SA 4.0. <https://openoregon.pressbooks.pub/foundationsofeducation/chapter/chapter-3-educational-philosophies/>
+- SUNY Oneonta Education Department, *Foundations of Education* 5.3 "Philosophical Perspective of Education" — CC BY 4.0, hosted by Lumen Learning. <https://courses.lumenlearning.com/suny-oneonta-education106/chapter/5-3-philosophical-perspective-of-education/>
+- SUNY Oneonta Education Department, *Foundations of Education* 5.2 "Ontological Frameworks of Philosophy" — CC BY 4.0, hosted by Lumen Learning. <https://courses.lumenlearning.com/suny-oneonta-education106/chapter/5-2-ontological-framewords-of-philosophy/>
+- "John Dewey (1859-1952)" — Internet Encyclopedia of Philosophy (reference only). <https://iep.utm.edu/john-dewey/>
+- John Dewey, *Democracy and Education: An Introduction to the Philosophy of Education* (1916) — Project Gutenberg, public domain in the USA. <https://www.gutenberg.org/ebooks/852>
+- "Philosophy of Education" — Stanford Encyclopedia of Philosophy, CC BY-NC-ND 4.0 (reference only). <https://plato.stanford.edu/entries/education-philosophy/>
+- "Robert Maynard Hutchins, 1929-1951" — Office of the President, The University of Chicago (reference only). <https://president.uchicago.edu/about-the-office/history/robert-maynard-hutchins>
+- "Maxine Greene, TC's Great Philosopher, Dies at 96" — Teachers College, Columbia University (reference only). <https://www.tc.columbia.edu/articles/2014/may/maxine-greene-tcs-great-philosopher-dies-at-96/>
+- Van Cleve Morris, *Existentialism in Education: What It Means* (Harper & Row, 1966) — bibliographic verification via Internet Archive item metadata. <https://archive.org/details/existentialismin00morr>
+- Mortimer J. Adler and the Paideia Group, *The Paideia Proposal: An Educational Manifesto* (Macmillan, 1982) — bibliographic verification via Internet Archive item metadata. <https://archive.org/details/paideiaproposal00mort>
+
+## Related Topics
+
+- `education:foundations-of-education:what-is-education`
+- `education:foundations-of-education:history-of-public-education`
+- `education:learning-theories:constructivism`
+
+## Editorial Metadata
+
+- **Topic id:** `education:foundations-of-education:major-philosophies-of-education`
+- **Editorial status:** READY_TO_PUBLISH
+- **Researched:** 2026-08-18
+- **Rights:** Open-licensed and reference-only sources; no source prose adapted. The single direct quotation is from Dewey's *Democracy and Education* (1916), public domain in the USA.
+- **Transformation:** Written from independently verified facts about each position and its advocates, checked across open textbooks, philosophy reference works, an institutional history, and Dewey's primary text. The machine-generated draft contained no topic content and was discarded.
+- **Scope note:** Learning theories (behaviorism, cognitivism, constructivism, social learning theory) are deliberately excluded and belong to the Learning Theories unit.

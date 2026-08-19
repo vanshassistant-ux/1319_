@@ -1,0 +1,203 @@
+# What Is Education?
+
+## In 30 Seconds
+
+Learning is a change inside one person. Education is the deliberate, organized attempt to bring that change about. Schooling is one institutional form education takes. UNESCO's ISCED standard splits organized education into formal and non-formal, treats intentional but non-institutionalised activity as informal learning, and leaves incidental learning out of the count entirely. Keeping these words apart is what lets you argue about what education is for without talking past everyone else.
+
+## Why This Matters
+
+Almost every later argument in education studies depends on which of these words you meant. A claim that education is failing may be a claim about school systems, about learning outcomes, or about a society's transmission of values, and those three claims need different evidence. The ISCED categories also decide what gets counted: enrolment statistics, attainment rates, and international comparisons all rest on where the formal boundary is drawn. And separating what education is from what education ought to be keeps a rights claim, a policy proposal, and a measurement from being confused for one another in your own writing.
+
+## Learning Objectives
+
+- Define learning, education, and schooling so that each term does distinct work.
+- Distinguish formal education, non-formal education, informal learning, and incidental learning using the ISCED 2011 criteria.
+- Apply those criteria to classify real learning situations, including workplace and community programmes.
+- Explain why the purposes of education are contested on both empirical and normative grounds.
+- Analyze a statement about education to determine whether it is descriptive, normative, or definitional.
+
+## The College Version
+
+### Three words that are not synonyms
+
+Everyday speech uses learning, education, and schooling interchangeably, and the resulting confusion produces arguments that cannot be settled because the participants are discussing different things. The international statistical standard keeps them apart. UNESCO's International Standard Classification of Education, ISCED 2011, defines learning as the individual acquisition or modification of information, knowledge, understanding, attitudes, values, skills, competencies or behaviours through experience, practice, study or instruction. Notice what that definition places at the centre: a change in a person. Learning does not require a teacher, a syllabus, or an institution, and it happens whether or not anyone intended it.
+
+Education, in the same standard, is the set of processes by which societies deliberately transmit their accumulated knowledge, understanding, attitudes, values, skills and behaviours, using communication designed to bring learning about. Two words are carrying the weight there: deliberately, and designed. Education is an intentional attempt to cause learning in someone. It can fail. A lesson that teaches nobody anything was still education; it just did not produce learning.
+
+Schooling is narrower still. It is instruction delivered through established institutions - schools, colleges, universities - with timetables, staff, enrolment, and usually credentials. Schooling is one delivery mechanism for education, historically dominant and legally privileged in most countries, but not identical to it. Once you hold the three apart, a sentence like "education is failing" splits into at least three testable claims: that school systems are performing badly, that people are not learning what they need, or that a society is failing to pass on what it values. Those claims call for different evidence and different remedies.
+
+### How UNESCO sorts organized education
+
+ISCED 2011 exists so that education data from different countries can be compared, which means its categories are drawn where administrative reality can actually be observed. Three criteria do most of the work: whether the activity is institutionalised, whether it is intentional, and whether it is planned.
+
+Formal education is institutionalised, intentional and planned through public organizations and recognised private bodies which together constitute a country's formal education system. Its defining marker is official recognition: a formal programme is one the national or sub-national education authorities recognise as such, and its qualifications are recognised by definition. Most formal education is initial education - the continuous pathway a person travels before first entering the labour market - but adult, vocational and special needs programmes often sit inside the formal system too.
+
+Non-formal education is also institutionalised, intentional and planned, and is provided by an education provider. What distinguishes it is its position: it is an addition, alternative or complement to formal education within the process of lifelong learning. It caters to all ages, does not necessarily follow a continuous pathway, is often short or low-intensity, and typically appears as short courses, workshops or seminars. Its qualifications are mostly not recognised as formal or equivalent - though a non-formal programme can lead to a recognised qualification when the relevant authorities validate it.
+
+Informal learning is intentional or deliberate but not institutionalised. It is the reading, practising, asking and imitating that people do in families, workplaces, communities and daily life, on a self-directed, family-directed or socially-directed basis. It is less organized than either formal or non-formal education, but it is not accidental.
+
+The accidental case has its own name. Incidental or random learning is learning that is not organized, or that arises from communication never designed to bring learning about - what you absorb from a meeting, a radio programme, or a broadcast that was not an education programme. ISCED excludes it from measures of participation in education. Two consequences follow. First, the formal/non-formal line tracks institutional recognition, not location or seriousness: an apprenticeship spent largely in a workplace counts as formal education if it leads to a qualification the education authorities recognise. Second, ISCED counts recognised qualifications toward educational attainment however they were obtained, so learning that began informally can still register officially once it is validated.
+
+### Purposes, and why they are contested
+
+Ask what education is for and you get answers at two levels. Individually, education is pursued for knowledge, capability, credentials, income, autonomy, and the ability to make sense of things. Socially, education is expected to socialise the young, transmit a culture, sustain civic life, allocate people to roles, and supply the skills an economy uses. International instruments add explicitly normative aims: the Universal Declaration of Human Rights directs education to the full development of the human personality and to strengthening respect for human rights and fundamental freedoms, and the ICESCR restates those aims as treaty commitments that education should enable everyone to participate effectively in a free society.
+
+These purposes are contested in two different ways, and it is worth keeping them apart. The first dispute is empirical: what does schooling actually do? Functionalist accounts in sociology describe manifest functions such as socialization, social control, social placement and cultural transmission, along with sorting students by measured merit. Conflict-theory accounts look at the same institutions and describe mechanisms that reproduce existing advantage: cultural capital that makes school easier to navigate for children of some backgrounds, a hidden curriculum of non-academic expectations, and tracking systems that turn early classification into long-term outcomes. Those are rival empirical claims, testable in principle by data on who learns what and who ends up where.
+
+The second dispute is normative: which of these purposes should take priority when they collide? Preparing workers, forming citizens, and developing individuals can pull in different directions when a curriculum has a fixed number of hours. No amount of data settles that question, because it is a question about values. Good academic writing on education names which dispute it is entering, and whose purposes are being served in the answer.
+
+### Lifelong learning
+
+If education were only schooling, it would end. The lifelong learning framing rejects that. The UNESCO Institute for Lifelong Learning describes lifelong learning as the integration of learning and living: it covers people of all ages, spans life-wide contexts including family, school, community and workplace, and uses formal, non-formal and informal modalities together. The framing is both life-long, meaning across the years, and life-wide, meaning across the settings a person occupies at any one time.
+
+This is not only rhetoric; it shapes how systems are built. Sustainable Development Goal 4 is worded as ensuring inclusive and equitable quality education and promoting lifelong learning opportunities for all, and its targets reach well past initial schooling into technical and vocational education, adult skills for work, and youth and adult literacy. ISCED is designed to match: it covers formal and non-formal programmes offered at any stage of a person's life.
+
+The practical machinery of lifelong learning is recognition. If skills gained in a workshop, a job, or a decade of self-directed study cannot be assessed and credited, they remain invisible to admissions offices, employers and statistics. That is why UNESCO's lifelong learning work emphasises recognition, validation and accreditation of non-formally and informally acquired skills, and why ISCED 2011 explicitly allows qualifications awarded through validation of prior learning to be classified and counted toward attainment.
+
+### Descriptive, normative, and definitional claims
+
+Statements about education come in at least three kinds, and mixing them is the most common analytical error in a foundations course.
+
+A descriptive claim reports how things are: that as of 2024, around 273 million children and youth were out of school worldwide - roughly 79 million of primary age, 64 million of lower secondary age and 130 million of upper secondary age, according to UNESCO's dashboards. Descriptive claims are settled by evidence, and revised when better evidence arrives.
+
+A normative claim says how things ought to be. "Everyone has the right to education" is the opening of Article 26 of the Universal Declaration of Human Rights, and it is a statement about what is owed, not a report of what is provided. The ICESCR converts it into obligations: primary education compulsory and free to all; secondary education generally available and progressively free; higher education equally accessible on the basis of capacity; fundamental education encouraged for adults who never completed primary school. UNESCO reports that 155 countries legally guarantee nine or more years of compulsory education while only 99 guarantee at least twelve years of free education - itself a descriptive claim, this time about law.
+
+The out-of-school figure does not refute the right. An unfulfilled obligation is not a nonexistent one; the gap is precisely what makes the norm do work. Arguing from "is" to "ought" in either direction is a mistake.
+
+A definitional claim is a third thing. "A three-day hospital workshop is non-formal education" is not discovered in the world; it follows from a convention that ISCED adopted so that countries could count comparably. Definitional claims are settled by stating which framework you are using - and sociology's looser sense of "informal education" is a reminder that frameworks differ.
+
+## Key Vocabulary
+
+- **education** — The deliberate processes by which a society transmits accumulated knowledge, understanding, attitudes, values, skills and behaviours, using communication designed to bring learning about.
+- **learning** — Acquisition or modification, within an individual, of information, knowledge, understanding, attitudes, values, skills or behaviours through experience, practice, study or instruction.
+- **schooling** — Instruction delivered through established institutions such as schools, colleges and universities; one organized form that education takes.
+- **formal education** — Institutionalised, intentional and planned provision that national or sub-national authorities recognise as part of a country's official education system, with recognised qualifications.
+- **non-formal education** — Institutionalised, intentional and planned provision offered as an addition, alternative or complement to the recognised system, often as short courses, workshops or seminars.
+- **informal learning** — Intentional or deliberate learning that is not institutionalised, arising in families, workplaces, communities and daily life on a self-directed, family-directed or socially-directed basis.
+- **incidental or random learning** — Learning that arises as a by-product of activities or communication never designed to bring it about; excluded from ISCED measures of participation in education.
+- **lifelong learning** — Learning across the whole of life and across settings - family, school, workplace, community - through formal, non-formal and informal modalities together.
+- **educational qualification** — Official confirmation, usually documentary, that a person completed a programme or had prior learning validated by a recognised authority.
+- **normative claim** — A statement about what ought to be the case - what is owed, required or valuable - rather than a report of what currently is.
+
+## Eli-10
+
+Three different things hide behind one word. Learning is what changes inside you: yesterday you could not tie a knot, today you can. Education is somebody deliberately trying to make that change happen, by explaining, showing, or setting you a task. School is one particular place where people do that, with bells, marks, and certificates at the end. So you can learn without education, when you work something out alone. You can get education without school, at a weekend workshop or from an uncle who teaches you to fish. And you can sit in school all day and learn nothing at all, which is exactly why the three words have to stay separate.
+
+## Eli's Analogy
+
+Think of getting stronger. Learning is the muscle you actually build. Education is the training plan someone writes for you, with the right exercises in the right order. A gym is the building with the equipment, the membership card, and the certificate on the wall. A good plan usually builds muscle, but the plan is not the muscle, and the building is not the plan.
+
+**Where the analogy breaks down.** The analogy breaks in three places. Strength belongs to you alone, while education is also something a society does to pass on what it values, so its purposes are argued over publicly. Gym membership is optional; schooling is often compulsory and is claimed as a human right. And muscle is easy to measure, whereas the hardest arguments in education are about which outcomes should count as success in the first place.
+
+## Worked Example
+
+Maya, a nurse, has a busy year. She enrols part-time in a diploma at a college her country's education authority recognises: formal education, and it will change her recorded attainment. Her hospital runs a two-day infection-control workshop with a certificate the education authority does not recognise as equivalent to a qualification: institutionalised, intentional, planned - so non-formal education. She then works through a textbook on her own and asks a senior colleague to drill her on the tricky parts: intentional but not institutionalised, so informal learning. Driving home she absorbs a fact from a podcast she put on for company: incidental learning, outside ISCED entirely. Four categories, one year, and only the first automatically appears in national statistics - unless her informal study is later validated into a recognised qualification.
+
+## Common Mistakes
+
+- **Treating education and schooling as the same thing.** Schooling is one institutional form of education. Education also covers non-formal programmes and, in the wider sense, everything a society deliberately transmits. Substituting one word for the other turns a claim about school systems into a claim about learning itself.
+- **Assuming informal learning means accidental learning.** In ISCED 2011, informal learning is intentional or deliberate but not institutionalised - reading, practising, being coached by a relative. The genuinely accidental case has its own label, incidental or random learning, and ISCED excludes it from participation measures.
+- **Reading non-formal as a synonym for low quality or unimportant.** The formal boundary tracks official recognition of programmes and qualifications, not rigour or value. A demanding professional workshop is non-formal; a weak recognised course is formal. Non-formal programmes can also lead to recognised qualifications once validated.
+- **Deciding that the right to education is not real because hundreds of millions of children are out of school.** That mixes a normative claim with a descriptive one. The out-of-school count describes provision; the right states an obligation. An obligation that is widely unmet is still an obligation - the gap is what the norm is measuring against.
+- **Arguing about whether an activity is 'really' education without naming a framework.** Category questions of this kind are definitional. ISCED's boundaries are conventions adopted for international comparability, and other disciplines use the same words more loosely. State which framework you are applying before you classify anything.
+
+## Compare / Contrast
+
+| Term A | Term B | Distinction |
+| --- | --- | --- |
+| **Learning** | **Education** | Learning is a change in an individual and can happen with nobody teaching. Education is the deliberate, communicative attempt to bring such a change about, and it can occur without producing any learning at all. |
+| **Non-formal education** | **Informal learning** | Both sit outside the recognised system, but non-formal education is institutionalised: a provider plans and delivers it. Informal learning is intentional yet has no institution behind it. |
+| **Informal learning** | **Incidental or random learning** | Informal learning is deliberate - the learner means to learn. Incidental learning is a by-product of activity or communication that was never designed to teach, and ISCED leaves it out of participation statistics. |
+| **Descriptive claim** | **Normative claim** | A descriptive claim about enrolment or attainment is checked against data. A normative claim, such as the right to education, states an obligation and is not refuted by evidence that it is unmet. |
+
+## Key Takeaway
+
+Learning is the change in a person, education is the deliberate attempt to cause it, and schooling is one institutional form of that attempt; ISCED sorts organized education by institutionalisation and recognition, and questions about education's purposes are separate again from questions about what is actually the case.
+
+## Practice Question Bank
+
+**1. In ISCED 2011, what separates informal learning from incidental or random learning?**
+
+A. Informal learning is intentional or deliberate, though it is not institutionalised.
+B. Informal learning always produces a qualification recognised by national authorities.
+C. Informal learning takes place only inside educational institutions.
+D. Incidental learning is planned and delivered by an education provider.
+
+*Answer: A.* ISCED 2011 defines informal learning as intentional or deliberate but not institutionalised, and reserves incidental or random learning for what arises from activity or communication never designed to bring learning about. Informal learning produces no qualification by default, is not confined to institutions, and incidental learning by definition has no provider planning it.
+
+*Difficulty: recall · Skill: Recalling the ISCED 2011 criterion that distinguishes intentional non-institutionalised learning from accidental learning · Sources: unesco-uis-isced-2011*
+
+**2. Which statement best expresses the relationship among learning, education, and schooling?**
+
+A. The three terms describe the same process at different levels of formality.
+B. Education is a subset of schooling, and learning is a subset of education.
+C. Learning is a change in an individual, education is the deliberate attempt to cause it, and schooling is one institutional form of education.
+D. Schooling causes education, which in turn guarantees learning.
+
+*Answer: C.* Learning is defined at the level of the individual; education is the intentional, communicative process aimed at producing it; schooling is one institutional delivery form. Education is not a subset of schooling but the other way round, and schooling plainly does not guarantee learning - which is why the distinction is useful.
+
+*Difficulty: understanding · Skill: Distinguishing the three core terms and the direction of their relationships · Sources: unesco-uis-isced-2011, openstax-sociology-3e-education-world*
+
+**3. A hospital runs a planned three-day infection-control course for its nurses. The certificate is not recognised by the national education authorities as equivalent to a formal qualification. How does ISCED 2011 classify the course?**
+
+A. Formal education, because a professional institution delivers it
+B. Non-formal education, because it is institutionalised and planned but sits outside the recognised system
+C. Informal learning, because it happens at a workplace
+D. Incidental learning, because it does not lead to a recognised qualification
+
+*Answer: B.* The course is institutionalised, intentional and planned by a provider, which rules out informal and incidental learning, but its qualification is not recognised as formal or equivalent, which rules out formal education. That combination is exactly what ISCED calls non-formal education. Workplace setting alone decides nothing.
+
+*Difficulty: application · Skill: Applying the ISCED criteria to classify a real programme · Sources: unesco-uis-isced-2011*
+
+**4. A student writes: "Around 273 million children and youth were out of school in 2024, so the claim that everyone has a right to education is false." What is the flaw in the argument?**
+
+A. The figure is about adults, so it cannot bear on children's rights.
+B. The right to education applies only to countries that have ratified a treaty, so global figures are irrelevant.
+C. Out-of-school counts are estimates, so no conclusion can be drawn from them.
+D. It treats a normative claim as though it were a descriptive one; evidence that an obligation is unmet does not show that the obligation does not exist.
+
+*Answer: D.* The right to education states what is owed; the out-of-school figure describes what is provided. A gap between them is what the norm is meant to expose, not a refutation of it. The other options misstate the data, which covers children and youth, or dodge the reasoning error rather than naming it.
+
+*Difficulty: analysis · Skill: Diagnosing a confusion between descriptive and normative claims · Sources: un-udhr, unesco-out-of-school, ohchr-icescr*
+
+**5. An apprenticeship spends most of its hours in a workshop floor rather than a classroom, yet ISCED 2011 may still count it as formal education. Why?**
+
+A. Because it leads to a qualification recognised by the national education authorities, and recognition rather than location decides the category
+B. Because any training organised by an employer counts as formal education
+C. Because apprenticeships last longer than most short courses
+D. Because practical training is assessed more strictly than classroom study
+
+*Answer: A.* ISCED states that programmes taking place partly in the workplace may be formal education if they lead to a qualification recognised by national education authorities, often through cooperation between institutions and employers. Employer involvement, duration and assessment style are not the criteria - official recognition is.
+
+*Difficulty: application · Skill: Reasoning from the recognition criterion rather than from setting or duration · Sources: unesco-uis-isced-2011, unesco-uis-isced-overview*
+
+## Sources
+
+- **unesco-uis-isced-2011** — International Standard Classification of Education: ISCED 2011. UNESCO Institute for Statistics. <https://unesdoc.unesco.org/ark:/48223/pf0000219109_eng> — usage: REFERENCE_ONLY; checked 2026-08-18.
+- **unesco-uis-isced-overview** — International Standard Classification of Education - ISCED. UNESCO Institute for Statistics. <https://www.uis.unesco.org/en/methods-and-tools/isced> — usage: REFERENCE_ONLY; checked 2026-08-18.
+- **unesco-uis-isced-eds3** — International Standard Classification of Education: Challenges and Solutions Forward (UIS/EDS/3). UNESCO Institute for Statistics. <https://www.uis.unesco.org/sites/default/files/medias/fichiers/2025/08/EDS-3-ISCED-Final-WEB.pdf> — usage: REFERENCE_ONLY; checked 2026-08-18.
+- **un-udhr** — Universal Declaration of Human Rights, Article 26. United Nations. <https://www.un.org/en/about-us/universal-declaration-of-human-rights> — usage: REFERENCE_ONLY; checked 2026-08-18.
+- **ohchr-icescr** — International Covenant on Economic, Social and Cultural Rights, Article 13. UN Office of the High Commissioner for Human Rights. <https://www.ohchr.org/sites/default/files/cescr.pdf> — usage: REFERENCE_ONLY; checked 2026-08-18.
+- **un-sdg-goal-4** — Sustainable Development Goal 4: Quality Education. United Nations Department of Economic and Social Affairs. <https://sdgs.un.org/goals/goal4> — usage: REFERENCE_ONLY; checked 2026-08-18.
+- **unesco-uil-lifelong-learning** — Lifelong learning (UNESCO Institute for Lifelong Learning mandate). UNESCO Institute for Lifelong Learning. <https://www.uil.unesco.org/en/unesco-institute/mandate/lifelong-learning> — usage: REFERENCE_ONLY; checked 2026-08-18.
+- **unesco-out-of-school** — Out-of-school rate (UNESCO education data dashboard). UNESCO / UNESCO Institute for Statistics and GEM Report. <https://www.unesco.org/en/education/view/outofschool> — usage: REFERENCE_ONLY; checked 2026-08-18.
+- **unesco-right-to-education-explainer** — What you need to know about the right to education. UNESCO. <https://www.unesco.org/en/articles/what-you-need-know-about-right-education> — usage: REFERENCE_ONLY; checked 2026-08-18.
+- **openstax-sociology-3e-education-theories** — Introduction to Sociology 3e, 16.2 Theoretical Perspectives on Education. OpenStax, Rice University. <https://openstax.org/books/introduction-sociology-3e/pages/16-2-theoretical-perspectives-on-education> — usage: REFERENCE_ONLY; checked 2026-08-18. Licence: CC BY-NC-SA 4.0 (as stated on the OpenStax page).
+- **openstax-sociology-3e-education-world** — Introduction to Sociology 3e, 16.1 Education around the World. OpenStax, Rice University. <https://openstax.org/books/introduction-sociology-3e/pages/16-1-education-around-the-world> — usage: REFERENCE_ONLY; checked 2026-08-18. Licence: CC BY-NC-SA 4.0 (as stated on the OpenStax page).
+
+## Related Topics
+
+- education:foundations-of-education:major-philosophies-of-education
+- education:foundations-of-education:history-of-public-education
+
+## Editorial Metadata
+
+- Topic id: `education:foundations-of-education:what-is-education`
+- Editorial status: READY_TO_PUBLISH
+- Estimated time: 11 minutes
+- Researched: 2026-08-18
+- Research status: source-verified
+- Rights: All sources reference-only; only short attributed definitional phrases from ISCED 2011 and the UDHR are quoted, and no source prose is adapted.
+- Transformation: Definitions were taken from the ISCED 2011 standard and restated in original wording; normative material was verified against the UDHR and ICESCR texts; quantitative claims were checked live against UNESCO dashboards; sociological perspectives were used as evidence that purposes are contested. All prose written for this lesson.
+- Evidence packet: `editorial/subjects/education/evidence/what-is-education.json`
+- Out of scope (covered elsewhere): Major philosophies of education (perennialism, essentialism, progressivism, etc.) — separate topic in this unit; History of public education and common-school movements — separate topic in this unit; Learning theories (behaviourism, cognitivism, constructivism) — later unit

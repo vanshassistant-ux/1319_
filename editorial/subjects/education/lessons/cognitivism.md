@@ -1,0 +1,199 @@
+# Cognitivism
+
+## In 30 Seconds
+
+Cognitivism explains learning by what happens between the input and the response. It treats the learner as a system that takes in information, holds a very small amount of it in working memory, and encodes what survives into a long-term memory organized as schemas. Its governing fact is a mismatch: working memory holds only a few chunks at a time, while long-term memory has no practical limit. Almost every instructional recommendation in this lesson follows from that mismatch.
+
+## Why This Matters
+
+Most evidence-based study advice you will meet in a teacher preparation program comes from this tradition. When a federal practice guide tells teachers to space review across weeks and to quiz students in order to re-expose them to content, it is applying cognitive research on encoding and retrieval rather than folk wisdom. The same framework explains why an integrated diagram helps and a cluttered one hurts, and why an explanation that rescues a novice can slow down an expert. It also gives you a way to reject bad advice on its own terms: learning styles is a cognitive claim, and cognitive methods are exactly what showed the claim fails.
+
+## Learning Objectives
+
+- Define cognitivism and explain what it added to the behaviorist account of learning.
+- Describe the information-processing model and the division of labor between working memory and long-term memory.
+- Distinguish Miller's seven-plus-or-minus-two claim from the current three-to-four-chunk estimate, including the conditions each depends on.
+- Apply intrinsic and extraneous cognitive load to a piece of instructional material, and state accurately what happened to germane load.
+- Evaluate instructional claims against evidence, including retrieval practice, spaced practice, and the learning-styles meshing hypothesis.
+
+## The College Version
+
+### The turn inward
+
+Cognitivism is the position that you cannot explain learning without describing what the learner does with information internally. Behaviorism deliberately restricted itself to observable behavior and environmental events; cognitivism reopened the box, treating attention, memory, and knowledge structures as things that can be modeled and measured rather than merely introspected. George Miller, who was present for the change and later wrote its history, dated cognitive science to the 1950s and described it as a joint project of psychology, linguistics, anthropology, computer science, and neuroscience, arguing that psychology's escape from behaviorism was the precondition for making cognition scientifically respectable again. Two clarifications. Cognitivism did not refute behaviorism's findings about consequences; it changed the subject to the processing behaviorism had ruled out of bounds. And cognitivism is not constructivism: constructivism is mainly a claim about how knowledge gets built through the learner's own activity and social context, while cognitivism is mainly a claim about the architecture doing the building. This lesson stays on the architecture.
+
+### The information-processing model
+
+The organizing picture of early cognitivism is the modal model published by Atkinson and Shiffrin in 1968. Information arrives at sensory registers, which hold a rich but rapidly decaying trace of what the senses just delivered. Attention selects a fraction of that for a short-term store of very limited capacity. Control processes - the strategies the learner runs, of which rehearsal is the classic example - determine what happens next: material can be kept alive in the short-term store, or encoded into a long-term store that is effectively unlimited in size and duration. Baddeley, Hitch, and Allen, reviewing the model fifty years later, describe how its short-term store grew into the multicomponent working memory framework, in which temporary storage is not one passive box but a set of subsystems under the direction of attentional control. The reason this model matters for teaching is not the boxes. It is the asymmetry: the front end is severely limited and the back end is not, so instruction is mostly a problem of getting material through a narrow opening in a form worth keeping.
+
+### How much fits at once
+
+Miller's 1956 paper is the most quoted and most misquoted result in the field. His actual argument is more interesting than the number. He observed that the span of immediate memory stays roughly constant when counted in items even as the information carried by each item goes up, which means the limit is not a limit on information in the technical sense - and he explicitly separated it from the span of absolute judgment, a different limitation that happens to produce a similar number. Recoding material into fewer, larger units was, in his account, how people got past it. Later work tightened the estimate downward. Cowan puts the core capacity of working memory in young adults at about three to four chunks - his reviews give a range of roughly three to five - and argues that higher figures come from strategies layered on top of that core. To see the core limit you have to block those strategies: prevent rehearsal by having participants repeat a word aloud, present brief simultaneous arrays, mask sensory memory, use running-span procedures whose ending is unpredictable. Under those conditions people recall three or four items, and they recall only three or four longer verbal chunks such as idioms or short sentences. The teaching-relevant version is blunt: assume a handful, not seven, and assume less than that when the learner is also being asked to think.
+
+### Chunking, and why capacity is not a number of facts
+
+A chunk is not a fixed quantity of material. Cowan describes chunking as forming new associations, or recognizing existing ones, so that fewer independent items have to be tracked. That makes capacity relative to knowledge. The string 1-9-4-5 is four items to a child and one item to a history student. A chess position is dozens of pieces to a beginner and a handful of familiar configurations to an expert. This is why the same lesson can be comfortable for one student and impossible for another with identical general ability: they are not holding the same number of things. Cowan's educational recommendation follows. Rather than trying to enlarge working memory, adjust materials to the working memory the learner already has - avoid presenting large amounts of unintegrated information at once, and give structure that lets pieces combine. Building chunks is the point of instruction, not a workaround.
+
+### Encoding, retrieval, and what retrieval does
+
+Cognitive psychology separates three moments: encoding, the initial learning; storage, the persistence over time; and retrieval, the act of getting information back. Failures at each look identical from outside and require different fixes. Retrieval, in particular, is cue-dependent. Whether a memory is accessible depends on what cues are present, and cues work best when they match the conditions under which the material was encoded - the encoding specificity principle. Cues also lose power when overloaded, when the same cue points at too many memories. This is the mechanism behind a familiar classroom experience: a student who genuinely knew something in the review session cannot produce it on a test with a differently worded prompt. The most consequential finding here is that retrieval is not a neutral readout. Retrieving a memory changes it, generally strengthening what was retrieved. This is why practice testing beats rereading on delayed measures even when it looks worse on an immediate one, a reversal documented by Roediger and Karpicke and examined in full in the memory and learning topic. The design consequence belongs here: fluency during a lesson is a poor signal of what will survive until the exam, so a teacher who checks understanding only in the moment is reading the wrong instrument.
+
+### Schemas and prior knowledge
+
+Long-term memory in this tradition is not a warehouse of separate facts but a network of organized structures, usually called schemas, that let a learner interpret new material in already-understood terms. Schemas explain both the power and the distortion in human memory. As the National Academies consensus report How People Learn II puts it, human memory systems generate knowledge rather than replaying stored copies of it, so recall is reconstruction, shaped by prior knowledge and by whatever cues the environment supplies. For teaching, three consequences matter. What a student already knows determines the size of a chunk, and so determines the real difficulty of a task. Reconstruction is why a plausible misconception can be recalled with the same confidence as a correct fact. And building schemas, not covering material, is what makes later learning cheaper - which is exactly how cognitive load theory frames the goal of instruction.
+
+### Cognitive load theory, with the germane load caveat
+
+Cognitive load theory, developed by John Sweller and colleagues from the 1980s, is the most direct instructional application of this architecture. Its premise is that novel information is first handled by a working memory limited in both capacity and duration, and then stored in an effectively unlimited long-term memory for later use, so instruction should be designed around that bottleneck. Two sources of load do the work. Intrinsic load is the inherent complexity of what is being learned, indexed by element interactivity - how many items must be held and related to one another at the same time - and it is relative to expertise, because an expert holds as one chunk what a novice holds as six. Extraneous load is imposed by presentation: a legend that forces students to match keys to a diagram, a worked example split across two pages, a decorative animation competing with the explanation. Extraneous load is the part instructional design controls, and reducing it is the theory's central practical instruction. Now the part that textbooks still get wrong. Older formulations added a third category, germane load, described as productive effort devoted to schema building, and told teachers to increase it. In the current treatment germane load is not an independent, additive source of load: Kirschner, Sweller, Kirschner, and Zambrano work with intrinsic and extraneous load only, cite Kalyuga's argument that germane load is essentially indistinguishable from intrinsic load, and allow the term a role only if it is redefined as the working memory resources actually devoted to dealing with intrinsic rather than extraneous load. Read that as a redistribution, not a third dial: you cut extraneous load so the capacity freed up gets spent on the material itself.
+
+### What the classroom evidence actually supports
+
+The 2007 IES practice guide Organizing Instruction and Study to Improve Student Learning, written by a panel chaired by Harold Pashler, is the most useful bridge from this laboratory work to teaching, because it rates each recommendation separately. Using quizzes to re-expose students to key content was rated strong, based on nine experimental studies with K-12 students, more than thirty with college students, and a large laboratory literature. Asking deep explanatory questions was also rated strong. Spacing learning over time, interleaving worked example solutions with problem solving, combining graphics with verbal descriptions, and connecting abstract with concrete representations were each rated moderate. Three recommendations were rated low: using pre-questions to introduce a topic, teaching delayed judgments of learning, and using tests to identify content that still needs study. That pattern is worth internalizing: even inside a guide built entirely on cognitive research the ratings differ, and the two strongest are both about making students generate something rather than receive it. On spacing, the underlying literature is enormous: the meta-analysis by Cepeda and colleagues located 839 assessments of distributed practice across 317 experiments in 184 articles, and found that interstudy interval and retention interval act jointly - the gap that maximizes final retention grows as the delay before the test grows. Practically, if you want students to remember something in June, review it in weeks, not days.
+
+### The learning-styles correction
+
+The most common misapplication of cognitivism in schools is the learning-styles idea: diagnose a student as visual, auditory, or kinesthetic, then match instruction to the diagnosis. The usual form of the claim is the meshing hypothesis, that instruction is most effective when its format matches the learner's preferred format. Pashler, McDaniel, Rohrer, and Bjork set out exactly what evidence would establish it: divide students by learning style, randomly assign students within each style group to different instructional methods, give everyone the same final test, and show a crossover interaction - the method that produces the best result for one style group is not the method that produces the best result for the other. They found ample evidence that people report preferences and real evidence that people differ in aptitudes, but virtually no evidence of the required interaction; very few studies had even used a design capable of testing it, and several of those that did produced results flatly contradicting the meshing hypothesis. Their conclusion was that there is no adequate evidence base for putting learning-styles assessments into general educational practice, and that limited resources belong with practices that have one. A later direct test made the point concretely: Rogowsky, Calhoun, and Tallal measured adults' auditory and visual-word preferences, then tested comprehension after instruction by audiobook or e-text, and found no significant relationship between preference and outcome either immediately or two weeks later. The honest boundary, which Pashler and colleagues state themselves, is that many versions of the idea have never been tested at all, so this is a failure to find support rather than a proof of impossibility - and still more than enough to stop assigning students to modality tracks.
+
+### Where the theory is still arguing
+
+Cognitivism is a live research program, not settled doctrine, and a college-level treatment should say where it is unsettled. The status of short-term storage is genuinely contested: Baddeley, Hitch, and Allen review recent proposals to dissolve the short-term store into activated long-term memory, and argue against them. Cognitive load theory has revised its own vocabulary once already, which is a reason to hold the current three-part textbook version loosely. And a great deal of the underlying evidence comes from laboratory studies with college students on verbal material, which is precisely why the IES panel rated some of its own recommendations low - not because the effects are fake, but because they had not been demonstrated in ordinary classrooms with school-age learners. Treat the architecture as well supported, the two strongly rated instructional moves as safe, and everything downstream of them as a claim that still has to show its evidence.
+
+## Key Vocabulary
+
+- **sensory register** - The brief buffer that holds a rich trace of what the senses just delivered, decaying quickly unless attention selects part of it.
+- **working memory** - The limited-capacity system that holds and manipulates the small amount of information a person is actively thinking with right now.
+- **chunk** - A unit that prior knowledge lets a learner treat as one item even though it contains several pieces of information.
+- **encoding** - The initial learning step in which experience is turned into a memory trace that can later be found again.
+- **retrieval cue** - Anything present at the moment of recall - a word, a question, a place - that provides access to a stored memory.
+- **schema** - An organized structure of knowledge in long-term memory that lets a learner interpret new material in already-familiar terms.
+- **element interactivity** - How many pieces of material must be held and related to one another simultaneously for the content to make sense.
+- **intrinsic cognitive load** - Demand created by the inherent complexity of the material itself, relative to what the learner already knows.
+- **extraneous cognitive load** - Demand created by the way material is presented rather than by the content that has to be learned.
+- **meshing hypothesis** - The claim that teaching works best when its format is matched to a learner's stated preference for how information is presented.
+
+## Eli-10
+
+Your brain has a tiny workbench and an enormous basement. The workbench is where you hold whatever you are thinking about right now, and it fits only about three or four things. The basement is long-term memory, and it never fills up. Learning is the job of getting something from the workbench down into the basement in a form you can find again later. Two moves do almost all the work. Bundle things together so they take up one slot instead of four, and practice pulling things back up from the basement instead of just looking at them again. Pulling something up is harder than rereading it, which is exactly why it works better.
+
+## Eli's Analogy
+
+Think of cooking in a very small kitchen. You have one narrow counter and a huge pantry. If you drag out every ingredient at once, you run out of counter before you start. A cook who knows the recipe treats make a roux as one step, so it takes one slot on the counter, while a beginner has to hold butter, flour, heat, and timing as four separate things. The pantry is not the problem. The counter is.
+
+**Where the analogy breaks down.** The analogy breaks in three places. Ingredients come out of the pantry unchanged, but a memory changes each time you pull it up, usually getting easier to find afterward - a counter does not work that way. Nothing in a kitchen explains why waiting a few weeks between practice sessions helps more than doing them back to back. And counter space is the same for everyone, while your usable capacity depends on what you already know, since knowledge is what turns four items into one.
+
+## Worked Example
+
+A biology teacher redesigns a unit on cellular respiration as a load problem. She first counts what a novice must hold at once to follow her overview: the reactants, the products, three stages, and the location of each stage - eight interacting elements, against a working memory of roughly four chunks. So she teaches the three stages as three named chunks first, adds locations second, and adds the reactant and product bookkeeping third, so that each new layer attaches to something already chunked. Next she attacks extraneous load: the diagram legend goes, and every label is written directly on the arrow it describes, because matching keys to arrows is work the content never required. Finally she converts her end-of-unit review into three short ungraded quizzes spaced across the term rather than one review the night before. Her students score slightly worse on the quiz taken minutes after the lesson than last year's class did after rereading notes - the same reversal Roediger and Karpicke found at a five-minute delay. Two weeks later, the ordering flips.
+
+## Common Mistakes
+
+- **Mistake:** Teaching to learning styles - diagnosing students as visual, auditory, or kinesthetic and matching instruction to the label.
+  **Correction:** The meshing hypothesis has never met its own evidential test. Validating it requires a crossover interaction in which the best method genuinely differs by style group on a common test; Pashler and colleagues found virtually no such evidence, several adequately designed studies contradicted it, and a direct test by Rogowsky and colleagues found no relationship between preference and comprehension either immediately or after two weeks. Preferences are real; matching instruction to them is not supported. Present material in the form the content requires.
+- **Mistake:** Quoting seven plus or minus two as the current capacity of working memory.
+  **Correction:** That was Miller's 1956 estimate for the span of immediate memory, and he was careful that it counted chunks rather than information and was distinct from the span of absolute judgment. Current estimates put the core capacity at about three to four chunks once rehearsal, grouping, and other strategies are blocked. Plan instruction around a handful, not seven.
+- **Mistake:** Treating germane load as a third dial that instruction should turn up.
+  **Correction:** Cognitive load theory's own authors have moved away from that. Germane load is no longer treated as an independent additive source of load; it survives, if at all, as a name for the working memory resources actually spent on the material's intrinsic demands. The instructional move is to cut extraneous load so those resources are available, not to add a third kind of load.
+- **Mistake:** Assuming that easier and more fluent instruction always means more learning.
+  **Correction:** Immediate performance and durable learning come apart. Restudying beat self-testing on a test given five minutes later and lost badly at two days and one week, and distributing practice across weeks outperforms massing it when the test is far off. Reduce the load that comes from presentation; do not remove the retrieval work that produces the learning.
+- **Mistake:** Treating every recommendation derived from cognitive psychology as equally well established.
+  **Correction:** The 2007 IES panel rated its own recommendations differently: quizzing to re-expose students to content and asking deep explanatory questions were rated strong, spacing and worked-example interleaving moderate, and pre-questions and judgment-of-learning training low. Check the rating attached to the specific practice before adopting it.
+
+## Compare / Contrast
+
+- **Behaviorism vs. Cognitivism** - Behaviorism explains learning through observable behavior and the environmental events before and after it, and declines to model internal states. Cognitivism explains learning through the processing in between - attention, working memory, encoding, retrieval, and the knowledge structures those build.
+- **Working memory vs. Long-term memory** - Working memory is severely limited in both capacity and duration and holds what is being thought about now. Long-term memory is effectively unlimited and holds organized structures that are inert until something cues them.
+- **Miller's seven plus or minus two vs. Cowan's three to four chunks** - Miller estimated the span of immediate memory in ordinary conditions, where rehearsal and grouping are available. Cowan estimates the core capacity once those strategies are experimentally blocked, which is why the number is smaller and better suited to planning instruction.
+- **Intrinsic cognitive load vs. Extraneous cognitive load** - Intrinsic load comes from the material's own element interactivity relative to the learner's expertise and can be sequenced but not wished away. Extraneous load comes from presentation choices and is the load instructional design can simply remove.
+- **Restudying vs. Retrieval practice** - Restudying re-presents the material and produces better performance on an immediate test. Retrieval practice makes the learner produce the material from memory and produces substantially better retention after days or weeks.
+- **A preference for a format vs. A benefit from that format** - People reliably report preferences about how information is presented, and people do differ in specific aptitudes. Neither establishes that matching instruction to the stated preference improves learning, which is the claim the evidence does not support.
+
+## Key Takeaway
+
+Cognitivism explains learning as information moving through a severely limited working memory into an effectively unlimited long-term memory organized as schemas. Design instruction to protect that bottleneck - cut presentation clutter, build chunks, and make students retrieve, spaced out over time - and treat learning-styles matching as the one popular application the evidence does not support.
+
+## Practice Question Bank
+
+**1. Current research places the core capacity of working memory at roughly how many chunks, and under what conditions is that estimate observed?**
+
+   A. About seven chunks, whenever the material is presented as a list.
+   B. About three to four chunks, but only in learners who have never been taught a memory strategy.
+   C. About three to four chunks, observed when rehearsal, grouping, and similar strategies are experimentally prevented.
+   D. About twelve chunks, provided the material is meaningful to the learner.
+
+   *Answer:* C. Cowan argues the core limit is about three to four chunks in young adults, and it is seen when procedures block the strategies that inflate span - articulatory suppression, brief simultaneous arrays, masking, and running-span tasks with unpredictable endings. Seven plus or minus two was Miller's 1956 estimate under ordinary conditions where those strategies are available. The limit is not restricted to strategy-naive learners, and no evidence supports a figure near twelve.
+   *Difficulty:* recall | *Skill:* Stating the current working memory capacity estimate together with its boundary conditions | *Sources:* cowan-2010-magical-mystery-four, cowan-2014-working-memory-education, miller-1956-magical-number-seven
+
+**2. How does current cognitive load theory treat germane load?**
+
+   A. Not as an independent, additive source of load; at most it names the working memory resources actually devoted to the material's intrinsic demands.
+   B. As a third source of load, alongside intrinsic and extraneous, that instruction should maximize.
+   C. As another name for the load created by poorly designed presentation.
+   D. As the fixed share of working memory reserved for transferring material into long-term memory.
+
+   *Answer:* A. Kirschner, Sweller, Kirschner, and Zambrano work with intrinsic and extraneous load only, cite Kalyuga's argument that germane load is essentially indistinguishable from intrinsic load, and retain the term only if it is redefined as the working memory resources devoted to dealing with intrinsic rather than extraneous load. The second option is the older formulation the authors moved away from; the third confuses germane with extraneous load; the fourth describes no construct in the theory.
+   *Difficulty:* understanding | *Skill:* Reporting the revised status of germane load in cognitive load theory | *Sources:* kirschner-2018-collaborative-cognitive-load, sweller-2019-cognitive-architecture-20-years
+
+**3. A student has a cumulative exam in six weeks. Which study plan is best supported by the evidence in this lesson?**
+
+   A. Reread each chapter twice this week, because recall measured right after rereading is higher than recall right after self-testing.
+   B. Take one long practice test the night before the exam, since testing beats studying.
+   C. Highlight the key passages now and review the highlights the evening before the exam.
+   D. Self-test from memory in several short sessions spread across the six weeks, checking answers afterward.
+
+   *Answer:* D. The evidence supports combining retrieval practice with spacing: using quizzes to re-expose students to key content was rated strong in the 2007 IES practice guide, and the distributed-practice literature shows the gap that maximizes retention grows with the delay before the test. The first option mistakes an immediate-performance advantage for durable learning - the same reversal Roediger and Karpicke found between five minutes and one week. The second uses retrieval but abandons spacing, and the third abandons both.
+   *Difficulty:* application | *Skill:* Choosing a study plan that applies retrieval practice and spacing rather than fluency | *Sources:* wwc-organizing-instruction-2007, roediger-karpicke-2006-test-enhanced-learning, cepeda-2006-distributed-practice-meta-analysis
+
+**4. A school proposes sorting students into visual, auditory, and kinesthetic instructional tracks. What result would be needed to justify the plan, and what does the research show?**
+
+   A. Evidence that students report consistent format preferences, which surveys do reliably show.
+   B. A crossover interaction in which the best-performing instructional method differs by style group on a common test; reviews found virtually no such evidence, and several adequately designed studies contradicted the hypothesis.
+   C. Evidence that students score higher when tested in their preferred format, which studies have confirmed.
+   D. Evidence that the tracks raise achievement for the school as a whole, which large trials have demonstrated.
+
+   *Answer:* B. Pashler and colleagues specified the design: group by style, randomly assign to methods, give everyone the same test, and require a crossover interaction. They found ample evidence of preferences and of aptitude differences but virtually none of that interaction, and several studies with adequate designs contradicted the meshing hypothesis; Rogowsky and colleagues later found no relationship between preference and comprehension immediately or after two weeks. Preferences alone (option A) and a whole-school gain (option D) would not isolate the matching effect, and option C asserts a finding the literature does not support.
+   *Difficulty:* analysis | *Skill:* Identifying the evidence that would be required to support instructional matching by learning style | *Sources:* pashler-2008-learning-styles, rogowsky-2015-matching-learning-style
+
+**5. A teacher concludes that because working memory holds about four items, she should never present more than four facts in any lesson. What is the main problem with her rule?**
+
+   A. Capacity is counted in chunks rather than facts, and prior knowledge determines what counts as one chunk, so the goal is to build and use chunks rather than to cap content.
+   B. The real capacity is about seven items, so the rule is roughly half as generous as it should be.
+   C. Working memory limits apply only to verbal material, so the rule has no bearing on diagrams or demonstrations.
+   D. The capacity limit applies only to novices, so it places no constraint on how a lesson is designed.
+
+   *Answer:* A. Chunking means forming or recognizing associations that reduce the number of independent items to track, so a chunk's size depends on the learner's knowledge - 1945 is four items or one depending on who is holding it. Cowan's recommendation is to adjust materials to the learner's working memory and let structure combine pieces, not to ration facts. Seven plus or minus two is the superseded estimate, the limit is not specific to verbal material, and expertise changes chunk size rather than removing the constraint.
+   *Difficulty:* application | *Skill:* Applying the knowledge-dependence of chunks to instructional design decisions | *Sources:* cowan-2014-working-memory-education, cowan-2010-magical-mystery-four
+
+## Sources
+
+- **The cognitive revolution: a historical perspective (Trends in Cognitive Sciences, 7(3), 141-144)** - George A. Miller, Princeton University; Europe PMC record, PMID 12639696. <https://europepmc.org/article/MED/12639696> (usage: REFERENCE_ONLY)
+- **From short-term store to multicomponent working memory: The role of the modal model (Memory and Cognition, 47(4), 575-588)** - Alan D. Baddeley, Graham J. Hitch, Richard J. Allen; author accepted manuscript, White Rose Research Online. <https://eprints.whiterose.ac.uk/146439/> (usage: REFERENCE_ONLY)
+- **The Magical Number Seven, Plus or Minus Two: Some Limits on Our Capacity for Processing Information (Psychological Review, 63, 81-97)** - George A. Miller; hosted by Classics in the History of Psychology, York University. <https://psychclassics.yorku.ca/Miller/> (usage: REFERENCE_ONLY)
+- **The Magical Mystery Four: How Is Working Memory Capacity Limited, and Why? (Current Directions in Psychological Science, 19(1), 51-57)** - Nelson Cowan; NIH author manuscript in PubMed Central (PMC2864034). <https://pmc.ncbi.nlm.nih.gov/articles/PMC2864034/> (usage: REFERENCE_ONLY)
+- **Working Memory Underpins Cognitive Development, Learning, and Education (Educational Psychology Review, 26(2), 197-223)** - Nelson Cowan; NIH author manuscript in PubMed Central (PMC4207727). <https://pmc.ncbi.nlm.nih.gov/articles/PMC4207727/> (usage: REFERENCE_ONLY)
+- **Memory (Encoding, Storage, Retrieval) (Noba Textbook Series: Psychology)** - Kathleen B. McDermott and Henry L. Roediger III / Noba Project, DEF Publishers. <https://nobaproject.com/modules/memory-encoding-storage-retrieval> (usage: REFERENCE_ONLY)
+- **Test-enhanced learning: taking memory tests improves long-term retention (Psychological Science, 17, 249-255)** - Henry L. Roediger III, Jeffrey D. Karpicke; PubMed record 16507066. <https://pubmed.ncbi.nlm.nih.gov/16507066/> (usage: REFERENCE_ONLY)
+- **How People Learn II: Learners, Contexts, and Cultures, Chapter 4: Processes That Support Learning** - National Academies of Sciences, Engineering, and Medicine; The National Academies Press. <https://nap.nationalacademies.org/read/24783/chapter/6> (usage: REFERENCE_ONLY)
+- **Cognitive Architecture and Instructional Design: 20 Years Later (Educational Psychology Review, 31(2), 261-292)** - John Sweller, Jeroen J. G. van Merrienboer, Fred Paas; ERIC record EJ1217401. <https://eric.ed.gov/?id=EJ1217401> (usage: REFERENCE_ONLY)
+- **From cognitive load theory to collaborative cognitive load theory (International Journal of Computer-Supported Collaborative Learning, 13(2), 213-233)** - Paul A. Kirschner, John Sweller, Femke Kirschner, Jimmy Zambrano R.; PubMed Central (PMC6435105). <https://pmc.ncbi.nlm.nih.gov/articles/PMC6435105/> (usage: ATTRIBUTION_REQUIRED)
+- **Organizing Instruction and Study to Improve Student Learning (IES Practice Guide, September 2007, NCER 2007-2004)** - Pashler, H. (chair), Bain, P., Bottge, B., Graesser, A., Koedinger, K., McDaniel, M., Metcalfe, J.; National Center for Education Research, Institute of Education Sciences, U.S. Department of Education. <https://ies.ed.gov/ncee/wwc/PracticeGuide/1> (usage: REFERENCE_ONLY)
+- **Distributed practice in verbal recall tasks: A review and quantitative synthesis (Psychological Bulletin, 132, 354-380)** - Nicholas J. Cepeda, Harold Pashler, Edward Vul, John T. Wixted, Doug Rohrer; publication page, York University. <https://www.yorku.ca/ncepeda/publications/CPVWR2006.html> (usage: REFERENCE_ONLY)
+- **Learning Styles: Concepts and Evidence (Psychological Science in the Public Interest, 9(3), 105-119)** - Harold Pashler, Mark McDaniel, Doug Rohrer, Robert Bjork; author-posted copy, Bjork Learning and Forgetting Lab, UCLA. <https://bjorklab.psych.ucla.edu/wp-content/uploads/sites/13/2016/07/Pashler_McDaniel_Rohrer_Bjork_2009_PSPI.pdf> (usage: REFERENCE_ONLY)
+- **Matching Learning Style to Instructional Method: Effects on Comprehension (Journal of Educational Psychology, 107(1), 64-78)** - Beth A. Rogowsky, Barbara M. Calhoun, Paula Tallal; author copy hosted by the American Psychological Association. <https://www.apa.org/pubs/journals/features/edu-a0037478.pdf> (usage: REFERENCE_ONLY)
+
+## Related Topics
+
+- education:learning-theories:behaviorism
+- education:learning-theories:constructivism
+- education:educational-psychology:memory-and-learning
+- education:teaching-and-instruction:differentiated-instruction
+
+## Editorial Metadata
+
+- Topic id: `education:learning-theories:cognitivism`
+- Editorial status: READY_TO_PUBLISH
+- Estimated minutes: 12
+- Research status: source-verified
+- Rights status: Reference-only sources plus one CC BY 4.0 article; no source prose adapted. Noba (CC BY-NC-SA) was used as reference only.
+- Researched at: 2026-08-18
+- Transformation: Written from independently verified facts drawn from a federal IES practice guide (evidence ratings checked against the published guide text), primary cognitive-psychology articles and meta-analyses, an open-access cognitive load theory paper co-authored by Sweller, a National Academies consensus report, and one open psychology module; all wording is original and no source was paraphrase-followed.
+- Evidence packet: `editorial/subjects/education/evidence/cognitivism.json`

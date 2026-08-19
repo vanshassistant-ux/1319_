@@ -1,0 +1,178 @@
+# What Is Criminal Justice?
+
+## In 30 Seconds
+
+Criminal justice is the set of institutions and processes a society uses to respond to conduct its law defines as crime: police, courts, and corrections, plus the decisions that move a case among them. In the United States there is no single such system. There are federal, state, and local ones, most of the work is state and local, and officials at every stage exercise wide discretion. Most crime never reaches them at all. This lesson is educational material, not legal advice.
+
+## Why This Matters
+
+Every later topic in this subject sits on this vocabulary. You cannot follow an argument about bail, plea bargaining, or sentencing without knowing which institution decides what, who has discretion, and which government is acting. The orientation also protects you from three common errors that distort public argument: treating arrest counts as counts of crime, treating a federal case as typical, and treating the system as one coordinated organization that could be redirected by a single decision. Whether you go on to practice, to research, to policy work, or simply to reading the news carefully, the payoff is the ability to ask where in the process a claim applies and which official actually holds the choice.
+
+## Learning Objectives
+
+- Define criminal justice as institutions plus processes, and distinguish it from criminology as a research discipline.
+- Explain, with attribution, both the case for calling the American arrangement a system and the objection that it is a loose confederation of separately governed agencies.
+- Apply Packer's crime control and due process models as ideal types to a described rule or practice, without treating either as a description of a real agency.
+- Analyze the attrition from crime experienced to crime reported to people confined, using dated BJS figures, and state what that attrition does and does not prove.
+- Distinguish the five purposes commonly assigned to criminal punishment and explain why they compete rather than combine.
+
+## The College Version
+
+### What the phrase actually names
+
+Criminal justice is not a single idea but a label for two things at once: the institutions a society builds to respond to conduct its law defines as crime, and the sequence of decisions those institutions make about particular people. The institutions are conventionally sorted into three groups - law enforcement, courts, and corrections - and the next topic in this unit walks through what each one does; here they matter only as the shape of the whole. The sequence runs from entry into the system through prosecution and pretrial decisions, adjudication, sentencing, and correctional supervision, and it can end at any point along the way. Everything in this lesson describes the United States. American criminal law is mostly state law, and it varies from state to state, so the general shape described here will be true while specific rules, names, and thresholds differ by jurisdiction. This is educational material about how the field is organized; it is not legal advice, and nothing here should be used to decide what to do in an actual case.
+
+### Criminal justice is not criminology
+
+The two words travel together on department signs, and students often use them interchangeably, but they name different activities. Criminal justice refers to the operating institutions and the processes that run through them. Criminology is the research discipline that studies crime and delinquency themselves. The American Society of Criminology, the field's main U.S. professional body, describes its members as pursuing scientific and professional knowledge about how crime and delinquency are measured, what causes them, what follows from them, and how they can be prevented, controlled, and treated. The practical difference is what counts as an answer. Ask a criminal justice question - who decides whether charges are filed? - and the answer is a rule, an office, and a decision-maker. Ask a criminology question - why is burglary more common in some neighborhoods than others? - and the answer is a theory tested against data. This subject's later criminology unit takes up those causal questions; this unit stays with the institutions.
+
+### A system, or a loose confederation?
+
+'The criminal justice system' is the standard phrase, and it earns its keep: there is a recognizable sequence, and the Bureau of Justice Statistics publishes a flowchart of it that updates a chart the President's Commission on Law Enforcement and Administration of Justice prepared in 1967. But the word system implies coordination that the arrangement does not have, and the objection comes from inside the government. BJS writes that Americans apprehend, try, and punish offenders through 'a loose confederation of agencies at all levels of government,' and states plainly that 'There is no single criminal justice system in this country. We have many similar systems that are individually unique.' Criminologists made a version of the same point in scholarship: by 1979, Hagan, Hewitt, and Alwin were analyzing criminal punishment as operating in a loosely coupled system. The reason matters. A police department, a district attorney's office, a trial court, a public defender's office, a jail, and a state prison system typically answer to different budgets, different elected officials, and different professional norms. A change in one can be absorbed, resisted, or reversed by another. Reading the arrangement as one organization with a single chain of command produces bad predictions.
+
+### Packer's two models
+
+The standard analytic frame for the values in tension here comes from Herbert L. Packer's 'Two Models of the Criminal Process,' published in the University of Pennsylvania Law Review in 1964 and carried into his 1968 book The Limits of the Criminal Sanction. The crime control model treats the repression of criminal conduct as the process's most important function and judges it by efficiency: how reliably and quickly it screens out the probably innocent and moves the probably guilty to a disposition. Packer's image for it was an assembly line. The due process model treats the reliability and legitimacy of each step as the point, and builds in checks that make the process harder to complete. Packer's image for it was an obstacle course, each stage placed in the state's path. Two cautions travel with the models, and Packer supplied both. He called them normative constructions, wrote that 'the models are not to be taken as describing real-world situations,' and said neither was offered as a picture of reality or as a prescription for what the criminal process ought to be. They are ideal types: tools for naming which values a given rule or practice favors, not descriptions of any actual agency, and not team jerseys. A real prosecutor's office does both things in a single week.
+
+### Federalism: where criminal justice actually happens
+
+American criminal justice is overwhelmingly state and local. BJS states the structure directly: very few crimes are under exclusive federal jurisdiction, police protection is primarily a function of cities and towns, corrections is primarily a function of state governments, and most justice personnel are employed at the local level. Each state and the federal government has its own criminal justice system, and all of them operate under the individual rights the U.S. Constitution guarantees as courts have interpreted them. The counts show the imbalance. In June 2018, BJS counted 17,541 state and local agencies performing law enforcement functions, two-thirds of them local police departments. At yearend 2023, 1,254,224 people were under the jurisdiction of state or federal prison authorities; 156,627 of them, about one in eight, were federal. In fiscal year 2023, federal law enforcement arrested and booked 94,411 suspects with the U.S. Marshals Service. Federal cases draw attention disproportionate to their share, so a student whose picture of criminal justice comes from national news will systematically overestimate the federal role.
+
+### Discretion is the connective tissue
+
+What holds a loose confederation together is not a command structure but judgment exercised at every stage. BJS defines discretion, borrowing Roscoe Pound's formulation, as authority conferred by law to act in accordance with an official's own considered judgment, and observes that it is exercised throughout the criminal justice system. Legislatures cannot anticipate every circumstance, so officials are expected to decide within limits set by law. Police decide which laws to enforce, which crimes to investigate, and whom to arrest or detain. Prosecutors decide whether to file charges, what to charge, whether to reduce, and whether to drop. Judges and magistrates decide release conditions, whether to accept a plea, and what sentence to impose. Correctional officials decide custody classification and privileges; paroling authorities decide release. The limits on all of this vary by jurisdiction - some states give judges wide sentencing latitude while others constrain it with mandatory minimums - which is one more reason the singular 'system' misleads.
+
+### The funnel, and what it is evidence of
+
+Cases fall out at every stage, and the drop-off starts before the system knows anything. BJS puts it plainly: the justice system does not respond to most crime, because much crime is never discovered or reported. In 2023, the National Crime Victimization Survey estimated that 44.7% of violent victimizations and 29.9% of property victimizations were reported to police - so more than half of violent victimizations and about seven in ten property victimizations never entered the funnel at all. What does enter is filtered again by investigation, charging, adjudication, and sentencing. National police-based counts are themselves assembled from voluntary agency reporting: for 2023 the FBI released data on over 14 million offenses submitted by more than 16,000 agencies covering 94.3% of the population. The measurement machinery behind those numbers, and the gap between what people experience and what agencies record - the dark figure of crime - belong to this subject's crime data topic. What the funnel establishes here is narrower and more important for orientation: arrests are not crimes, reported crime is not all crime, and prison is not the end state for most people under correctional control. At yearend 2022, of 5,496,400 adults under correctional supervision, 3,668,800 were on probation or parole.
+
+### Competing purposes, not a consensus
+
+Ask what the system is for and you get several answers that do not reduce to one. Retribution holds that punishment is deserved in proportion to the wrong. Deterrence aims at future conduct, either by the person punished or by others watching. Incapacitation aims at restraint: someone confined cannot offend against the public. Rehabilitation aims at changing the person. Restoration aims at repairing the harm to victims and communities. Four of these sit side by side in a single federal statute: 18 U.S.C. section 3553(a)(2) directs a sentencing court to consider the need for just punishment, adequate deterrence, protection of the public from further crimes by the defendant, and needed educational, vocational, medical, or other correctional treatment. Restoration came into American sentencing by a different route and appears most concretely as restitution, which BJS lists among available sentencing options. These purposes pull against each other - the sentence that best incapacitates is not always the one that best rehabilitates - and which should dominate is a live political argument. This lesson describes the purposes and takes no position among them.
+
+## Key Vocabulary
+
+- **criminal justice** - The institutions and processes a society uses to respond to conduct its law defines as crime, from investigation through adjudication, punishment, and release.
+- **criminology** - The research discipline that studies crime and delinquency: how much there is, what produces it, what follows from it, and what prevents, controls, or treats it.
+- **discretion** - Authority conferred by law for an official to choose among permissible courses of action according to their own considered judgment, within limits set by statute and policy.
+- **crime control model** - Packer's ideal type in which the process is judged by how efficiently it suppresses criminal conduct; he pictured it as an assembly line moving cases to disposition.
+- **due process model** - Packer's contrasting ideal type in which the process is judged by the reliability and legitimacy of each step; he pictured it as an obstacle course placed in the state's path.
+- **corrections** - The agencies that carry out criminal sentences, including prisons and jails as well as probation and parole supervision in the community.
+- **case attrition** - The narrowing at each stage of the process, from conduct experienced as crime, to crime reported, to arrest, to charges filed, to conviction, to a sentence actually served.
+- **dark figure of crime** - Offenses that occur but never become known to police, and therefore never appear in counts built from agency records.
+- **federalism** - The division of governmental authority between the national government and the states, which in criminal matters leaves most policing, prosecution, and punishment to states and localities.
+
+## Eli-10
+
+When someone breaks a law, a country needs a plan for what happens next. Criminal justice is that plan, plus all the people and buildings that carry it out. In the United States the plan has three big parts. Police find out about crimes and can arrest people. Courts decide whether the government has proved its case and what the punishment should be. Corrections carries the punishment out, in a prison or a jail or by supervising someone who stays at home. Two things surprise people. First, there is not one plan. Every state runs its own, cities and counties run pieces of it, and the national government runs a small one of its own. Second, a case can stop at any point, because a person at each step gets to decide whether it keeps going. Most crimes stop at the very first step: nobody tells the police.
+
+## Eli's Analogy
+
+Picture a long road with a row of gates, each gate owned by a different family. To reach the far end, a case has to be let through every gate. Each family hires its own gatekeeper, pays them out of its own pocket, and answers to its own town meeting - so no one can order all the gates open at once, and any gatekeeper can send a case back down the road.
+
+**Where the analogy breaks down.** The picture breaks down in three ways. It suggests every case starts at gate one, but most crime never arrives at the road, because it is never reported. It suggests the gates only stop things, when officials also choose what to send forward and how hard to push. And a road is neutral about where it goes, while people genuinely disagree about what the destination should be - punishment, prevention, repair, or something else.
+
+## Worked Example
+
+Trace one household burglary against published figures. A garage is broken into in a mid-sized U.S. city. Step one is not police work; it is a decision by the household. In 2023 the National Crime Victimization Survey estimated that 42.7% of burglary and trespassing victimizations were reported to police, so on those odds this incident is more likely than not to end here, unrecorded. Suppose it is reported. A municipal department - one of the 17,541 state and local law enforcement agencies BJS counted in June 2018 - decides whether to investigate and whom, if anyone, to arrest. If someone is arrested, a county prosecutor decides whether to file charges, which charges, or none. Notice what has not happened: no federal agency has appeared, because an ordinary residential burglary is charged under state law, and the case has passed through three separate organizations with three separate budgets and no shared supervisor. Notice also where the crime control and due process models would part company - on how much verification to require before each gate opens - and that neither model tells you what the officials actually did.
+
+## Common Mistakes
+
+- **Using criminal justice and criminology as synonyms.** Criminal justice is the set of operating institutions and the decisions inside them; criminology is the research discipline that studies crime, its causes, and responses to it. A department may teach both, but they answer different kinds of questions.
+- **Reading 'the criminal justice system' as one coordinated organization with a chain of command.** BJS itself calls it a loose confederation of agencies at all levels of government and says there is no single system in the country. Police, prosecutors, courts, and corrections typically answer to different budgets and different officials, so a change in one can be absorbed or reversed by another.
+- **Treating the crime control and due process models as descriptions of real agencies, or as political labels.** Packer built the models as analytic constructions and denied that they describe how any real agency behaves. They are ideal types for naming which values a rule or practice favors; one office routinely acts on both in the same week.
+- **Assuming the federal government runs most of American criminal justice because federal cases dominate the news.** Very few crimes are under exclusive federal jurisdiction. At yearend 2023, about one in eight people in state or federal prison were federal - 156,627 of 1,254,224 - and in fiscal year 2023 federal law enforcement booked 94,411 arrested suspects.
+- **Reading arrest or reported-crime counts as counts of crimes committed.** In 2023, NCVS estimated that 44.7% of violent and 29.9% of property victimizations were reported to police, so agency-based counts start from an incomplete base. How the different measures are built is the subject of this subject's crime data topic.
+
+## Compare / Contrast
+
+- **Criminal justice vs. Criminology** - Institutions and processes that respond to crime, versus the research discipline that studies crime and the responses to it. The first answers 'who decides what, under which rule'; the second answers 'why, and with what effect.'
+- **Crime control model vs. Due process model** - Packer's two ideal types: efficiency in suppressing criminal conduct, imagined as an assembly line, versus reliability and legitimacy at each step, imagined as an obstacle course. Both are analytic constructions, not descriptions of agencies.
+- **State and local criminal justice vs. Federal criminal justice** - Most policing, prosecution, and punishment in the United States is state and local; the federal system covers a comparatively narrow set of offenses and a much smaller population - about 12.5% of prisoners at yearend 2023.
+- **Crime experienced vs. Crime recorded** - Victimization surveys estimate what people experienced; police-based counts record what agencies learned of and wrote down. In 2023 the NCVS put reporting to police at 44.7% for violent and 29.9% for property victimizations, so the two measures cannot be read as the same quantity.
+
+## Key Takeaway
+
+Criminal justice is the set of institutions and processes a society uses to respond to conduct it defines as crime - in the United States, many overlapping state, local, and federal ones rather than a single system, held together by discretion at every stage, filtering out most cases long before anyone is confined, and asked to serve purposes that do not agree with each other.
+
+## Practice Question Bank
+
+**1. According to the Bureau of Justice Statistics, how is the American response to crime organized?**
+
+   A. As a single national criminal justice agency with field offices in every state.
+   B. As a loose confederation of agencies at all levels of government, with no single national system.
+   C. As fifty identical state systems operating under one uniform national criminal code.
+   D. As a federal system that contracts day-to-day enforcement out to private providers.
+
+*Answer: B. (recall - Recalling how the U.S. criminal justice arrangement is officially described)* BJS describes the United States as apprehending, trying, and punishing offenders through 'a loose confederation of agencies at all levels of government,' and states that there is no single criminal justice system in the country - many similar systems that are individually unique. There is no national criminal justice agency, no uniform national criminal code binding the states, and enforcement is a government function, not a contracted one.
+
+**2. Which statement best captures the difference between criminal justice and criminology?**
+
+   A. Criminal justice studies why people offend, while criminology administers punishment.
+   B. They are two names for the same field, and which one is used depends on the region.
+   C. Criminology is the practice of policing, while criminal justice is the study of sentencing law.
+   D. Criminal justice refers to the institutions and processes that respond to crime, while criminology is the research discipline that studies crime and its causes, consequences, and control.
+
+*Answer: D. (understanding - Distinguishing the operating system from the research discipline)* Criminal justice names the operating institutions - police, courts, corrections - and the decisions that move a case through them. Criminology is the study of crime and delinquency, described by the American Society of Criminology as knowledge concerning the measurement, etiology, consequences, prevention, control, and treatment of crime. Option A reverses the two, option B denies a real distinction, and option C misassigns both.
+
+**3. A municipal police officer responds to a reported disturbance, concludes the conduct is a minor offense under state law, and issues a warning rather than making an arrest. Which feature of the U.S. criminal justice system does this best illustrate?**
+
+   A. Discretion: officials are expected to exercise their own judgment within limits set by law.
+   B. Federal preemption, because state misdemeanor law yields to federal standards.
+   C. The due process model, which requires a warning before any arrest can be made.
+   D. The dark figure of crime, because this incident will never be known to police.
+
+*Answer: A. (application - Identifying discretion in a described decision)* BJS describes discretion as authority conferred by law to act according to an official's own considered judgment, exercised throughout the system - including the police decision whether to enforce a specific law or make an arrest. Federal preemption is not at issue in an ordinary state misdemeanor. The due process model is an analytic ideal type, not a rule requiring warnings. And this incident was reported to police, so it is not part of the dark figure of crime.
+
+**4. Packer insisted that his crime control and due process models should not be read as accounts of how any real agency behaves. What follows for a student using them?**
+
+   A. The models cannot support analysis of real practices, since they describe nothing that exists.
+   B. The crime control model describes what police departments do and the due process model describes what courts do.
+   C. They are ideal types for naming which values a rule or practice favors, not descriptions of any actual agency.
+   D. The student should decide which model is correct and evaluate every agency against it.
+
+*Answer: C. (analysis - Using an ideal type correctly rather than as a description or a verdict)* Packer presented the models as normative constructions abstracting two competing value systems, and said neither was offered as a picture of reality or as a prescription for the process. That makes them analytic tools for asking which values a practice favors - useful precisely for examining real practices, which is why option A fails. Option B assigns each model to an institution, which Packer's framing rules out, and option D turns an analytic device into a verdict he declined to render.
+
+**5. In 2023 the National Crime Victimization Survey estimated that about 45% of violent victimizations and about 30% of property victimizations were reported to police. Which conclusion does this most directly support?**
+
+   A. Police-recorded crime counts are close to complete counts of the crime people experience.
+   B. Property offenses are more serious than violent offenses because more of them go unreported.
+   C. Most crimes that are reported to police result in an arrest and a conviction.
+   D. Counts built from crimes known to police understate the volume of crime people experience.
+
+*Answer: D. (application - Reasoning from reporting rates to the limits of police-based counts)* If roughly half of violent victimizations and about seven in ten property victimizations are never reported, then any count assembled from police records is missing a large share of what people experienced - which is what BJS means in saying the justice system does not respond to most crime because so much of it is never discovered or reported. The reporting rate says nothing about seriousness, and nothing about what happens to cases after they are reported.
+
+## Sources
+
+- **The Justice System** - Bureau of Justice Statistics (BJS), U.S. Department of Justice. <https://bjs.ojp.gov/justice-system> (usage: REFERENCE_ONLY; checked 2026-08-18).
+- **Prisoners in 2023 - Statistical Tables (NCJ 310197)** - Bureau of Justice Statistics (BJS), U.S. Department of Justice. <https://bjs.ojp.gov/library/publications/prisoners-2023-statistical-tables> (usage: REFERENCE_ONLY; checked 2026-08-18).
+- **Criminal Victimization, 2023 (NCJ 309335)** - Bureau of Justice Statistics (BJS), U.S. Department of Justice. <https://bjs.ojp.gov/library/publications/criminal-victimization-2023> (usage: REFERENCE_ONLY; checked 2026-08-18).
+- **Federal Justice Statistics, 2023 (NCJ 309946)** - Bureau of Justice Statistics (BJS), U.S. Department of Justice. <https://bjs.ojp.gov/library/publications/federal-justice-statistics-2023> (usage: REFERENCE_ONLY; checked 2026-08-18).
+- **Census of State and Local Law Enforcement Agencies, 2018 - Statistical Tables (NCJ 302187)** - Bureau of Justice Statistics (BJS), U.S. Department of Justice. <https://bjs.ojp.gov/library/publications/census-state-and-local-law-enforcement-agencies-2018-statistical-tables> (usage: REFERENCE_ONLY; checked 2026-08-18).
+- **Correctional Populations in the United States, 2022 - Statistical Tables (NCJ 308699)** - Bureau of Justice Statistics (BJS), U.S. Department of Justice. <https://bjs.ojp.gov/library/publications/correctional-populations-united-states-2022-statistical-tables> (usage: REFERENCE_ONLY; checked 2026-08-18).
+- **Two Models of the Criminal Process, 113 U. Pa. L. Rev. 1 (1964)** - Herbert L. Packer / University of Pennsylvania Law Review. <https://doi.org/10.2307/3310562> (usage: REFERENCE_ONLY; checked 2026-08-18).
+- **Ceremonial Justice: Crime and Punishment in a Loosely Coupled System, Social Forces 58(2):506 (1979)** - John Hagan, John D. Hewitt, and Duane F. Alwin / Social Forces. <https://doi.org/10.2307/2577603> (usage: REFERENCE_ONLY; checked 2026-08-18).
+- **1.8. The Crime Control and Due Process Models, in SOU-CCJ230 Introduction to the American Criminal Justice System** - Shanell Sanchez, in Burke, Carter, Fedorek, Morey, Rutz-Burri & Sanchez (Open Oregon Educational Resources / Pressbooks). <https://openoregon.pressbooks.pub/ccj230/chapter/1-8-due-process-and-crime-control-model/> (usage: REFERENCE_ONLY; checked 2026-08-18). Licence: CC BY-NC-SA 4.0 (this chapter, (c) 2019 Shanell Sanchez); the book as a whole is CC BY-SA 4.0.
+- **18 U.S.C. Sec. 3553 - Imposition of a sentence** - Office of the Law Revision Counsel, via Cornell Legal Information Institute. <https://www.law.cornell.edu/uscode/text/18/3553> (usage: PUBLIC_DOMAIN; checked 2026-08-18). Licence: U.S. federal statute; edict of government, not subject to copyright.
+- **About ASC** - American Society of Criminology. <https://asc41.org/about-asc/> (usage: REFERENCE_ONLY; checked 2026-08-18).
+- **FBI Releases 2023 Crime in the Nation Statistics (press release, September 23, 2024)** - Federal Bureau of Investigation, Criminal Justice Information Services Division. <https://www.fbi.gov/news/press-releases/fbi-releases-2023-crime-in-the-nation-statistics> (usage: REFERENCE_ONLY; checked 2026-08-18).
+- **The Limits of the Criminal Sanction (1968), ch. 8, 'Two Models of the Criminal Process,' pp. 147-173** - Herbert L. Packer / Stanford University Press. <https://doi.org/10.1515/9780804780797-010> (usage: REFERENCE_ONLY; checked 2026-08-18).
+
+## Related Topics
+
+- `criminal-justice-and-criminology:criminal-justice-system:police-courts-and-corrections`
+- `criminal-justice-and-criminology:criminal-justice-system:criminal-law-versus-civil-law`
+- `criminal-justice-and-criminology:policing:police-discretion`
+- `criminal-justice-and-criminology:criminology:crime-data-and-crime-statistics`
+- `criminal-justice-and-criminology:criminology:what-causes-crime`
+
+## Editorial Metadata
+
+- Topic id: `criminal-justice-and-criminology:criminal-justice-system:what-is-criminal-justice`
+- Editorial status: READY_TO_PUBLISH
+- Estimated minutes: 12
+- Researched at: 2026-08-18
+- Research status: source-verified
+- Rights status: Reference-only sources; no source prose adapted. Two short attributed quotations from BJS and short attributed quotations from Packer (1964) are used; the CC BY-NC-SA open textbook was used for corroboration only.
+- Transformation: Written from primary BJS and FBI statistical publications, the text of Packer's 1964 article read via an Internet Archive capture, 18 U.S.C. 3553, and the American Society of Criminology's own description of the discipline. Every scale figure is tied to a named publication and year. The machine-generated draft was discarded entirely.
+- Jurisdiction: United States. Criminal law is mostly state law and varies by state. This is educational material and not legal advice.
