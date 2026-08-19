@@ -1,0 +1,147 @@
+# Three Dimensions of Sustainability
+
+## In 30 Seconds
+
+Sustainability is usually split into three dimensions: environmental, economic, and social, often shortened to people, planet, and profit. The idea grew out of the 1990s triple bottom line and now anchors the UN's 2030 Agenda. But the three are not always in harmony, and thinkers disagree on whether they are equal, overlapping circles or nested layers with the environment as the outer limit.
+
+## Why This Matters
+
+Almost every sustainability framework you will meet in coursework or work, from corporate reports to the UN Sustainable Development Goals, is organized around these three dimensions. Knowing them lets you read those frameworks critically instead of taking a single number at face value. The dimensions also expose real trade-offs: a policy that helps the economy can harm ecosystems or communities, and pretending otherwise is how greenwashing works. Understanding that the model is contested, and that even its inventor asked people to rethink it, prepares you to evaluate sustainability claims rather than repeat them.
+
+## Learning Objectives
+
+- Define the three dimensions of sustainability and the phrase people, planet, profit.
+- Explain the origin of the triple bottom line and why John Elkington later called for its rethink.
+- Distinguish the overlapping-circles model from the nested model of sustainability.
+- Distinguish weak from strong sustainability using the idea of substitutable natural capital.
+- Analyze a scenario to identify trade-offs among the environmental, economic, and social dimensions.
+
+## The College Version
+
+### The three dimensions
+
+Sustainability is most often broken into three dimensions, also called pillars: environmental, economic, and social. The environmental dimension covers the natural systems people depend on, including clean air and water, stable climate, biodiversity, and the resources drawn from ecosystems. The economic dimension covers whether activity can pay for itself and continue over time, including jobs, income, productivity, and financial viability. The social dimension covers people and communities, including health, equity, education, working conditions, and human rights. A popular shorthand compresses these into people, planet, and profit. The core claim of the three-dimension view is that genuine sustainability requires attending to all three at once, rather than optimizing one, usually the economic, while ignoring the others. This framing now sits at the center of global policy: the United Nations 2030 Agenda for Sustainable Development, adopted as resolution A/RES/70/1 in 2015, commits its members to advancing sustainable development in its three dimensions, economic, social, and environmental, in what it calls a balanced and integrated manner.
+
+### From the triple bottom line to a recall
+
+The three-dimension idea was popularized in business by the triple bottom line. The strategist John Elkington coined that phrase in 1994, arguing that a company's performance should be measured not only by its financial bottom line but by three: economic, environmental, and social. The catchphrase people, planet, profit spread from this work. In 2018, writing in the Harvard Business Review, Elkington did something unusual for a management thinker: he called for a recall of his own concept, asking how often the people who invent management ideas subject them to recalls. His complaint was not that the three dimensions are wrong but that the triple bottom line had been flattened into an accounting and box-ticking exercise, a way to publish a tidy report while the underlying system stayed the same. He had intended it to provoke deeper rethinking of capitalism, not to become a balance sheet with two extra columns. This history matters because it warns against treating the three dimensions as a scoreboard to be totaled rather than a set of tensions to be managed.
+
+### Two pictures: overlapping circles versus nested layers
+
+People draw the three dimensions in two competing ways, and the drawing encodes a worldview. The most common is three overlapping circles, one per dimension, with true sustainability sitting in the small overlap at the center. In a 2019 review in the journal Sustainability Science, Purvis, Mao, and Robinson traced this diagram and found the familiar three-circles version was first presented by Barbier in 1987; more strikingly, they found no single point of origin for the three-pillar model and nowhere a theoretically rigorous description of it. The circles suggest the three dimensions are roughly equal and independent, meeting only where they happen to overlap. The rival picture is the nested model: the economy sits inside society, which sits inside the environment. This says the economy is a subsystem of human society, and human society is a subsystem of the biosphere, so environmental limits ultimately bound everything else. The United States Environmental Protection Agency's own framing leans this way, noting that everything people need for survival and well-being depends, directly or indirectly, on the natural environment.
+
+### Weak versus strong sustainability
+
+The choice between those pictures maps onto a genuine debate over weak and strong sustainability, and it turns on one question: can human-made capital substitute for natural capital? Weak sustainability, associated with neoclassical environmental economics and economists such as Robert Solow, John Hartwick, and David Pearce, says the total stock of capital is what matters. If a forest is cut down but the proceeds build factories, schools, and technology of equal or greater value, weak sustainability can count that as sustainable, because human-made capital has substituted for the lost natural capital. Strong sustainability, associated with ecological economics and thinkers such as Herman Daly, denies that this substitution works in general. It holds that some natural capital is critical, providing life-support and regulating functions that no factory can replace, so those stocks must be maintained in their own right. The nested model is the visual expression of strong sustainability. This is not a settled question with a correct answer; it is a live disagreement about how much of nature is replaceable, and reasonable experts fall on both sides.
+
+### Trade-offs and tensions
+
+Because the three dimensions can pull against each other, the interesting work is in the trade-offs, not the harmony. Shutting a polluting factory can help the environmental dimension while hurting the economic and social dimensions for the workers who lose jobs, which is why the phrase just transition exists. Rapid economic growth can lift incomes, the economic and social dimensions, while degrading ecosystems, the environmental dimension. A cheap product can serve consumers economically while depending on unsafe labor, harming the social dimension. Treating the three dimensions honestly means naming these conflicts and deciding among them, not assuming a single choice can maximize all three. It also means resisting the temptation to average them into one comforting score, because a strong economic result can hide a serious environmental or social loss. Whether you weigh the dimensions as equal circles or as nested limits changes which trade-offs you are even willing to consider, which is why the underlying model is worth arguing about rather than memorizing.
+
+## Key Vocabulary
+
+- **Three dimensions of sustainability** — The environmental, economic, and social aspects that a sustainability framework tries to advance together; also called the three pillars.
+- **Triple bottom line** — A business idea, coined by John Elkington in 1994, that performance should be judged on three fronts, economic, environmental, and social, not on profit alone.
+- **People, planet, profit** — A three-word shorthand for the social, environmental, and economic dimensions of sustainability.
+- **Overlapping-circles model** — A diagram showing the three dimensions as three intersecting circles, with sustainability located in their central overlap.
+- **Nested model** — A diagram placing the economy inside society and society inside the environment, so that ecological limits bound the other two dimensions.
+- **Natural capital** — The stock of natural resources and ecosystem functions, such as forests, fisheries, soils, and a stable climate, that provide benefits to people.
+- **Weak sustainability** — The view that human-made capital can substitute for natural capital, so a total capital stock that does not decline can count as sustainable.
+- **Strong sustainability** — The view that critical natural capital cannot be substituted by human-made capital and must be maintained in its own right.
+- **Just transition** — The effort to protect workers and communities economically and socially as an economy shifts away from environmentally harmful activities.
+
+## Eli-10
+
+When people ask if something is sustainable, they are really asking three questions at once: Is it good for nature? Can it keep paying for itself? Is it fair to people? Those are the three dimensions, and something only counts as truly sustainable if the answer to all three is decent. The tricky part is that the three often fight. Making one better can make another worse, so you usually have to choose, not win on all three.
+
+## Eli's Analogy
+
+Think of a three-legged stool. Each leg is one dimension, environmental, economic, and social. If any leg is much shorter than the others, the stool tips over no matter how strong the other two are. Some people go further and say the environmental leg is really the floor the whole stool stands on, because without a livable planet the other legs have nothing to rest on.
+
+**Where the analogy breaks down:** The stool makes the legs look equal and separate, but they are not: the dimensions overlap and trade off against each other, and many experts argue the environment is not just one leg but the ground everything else sits on. A real stool also has one right height, while sustainability has no single correct balance point that everyone agrees on.
+
+## Worked Example
+
+A city debates approving a large new factory. On the economic dimension, it promises 800 jobs and tax revenue. On the social dimension, the picture is mixed: good wages, but the site is in a neighborhood already burdened by pollution. On the environmental dimension, it will raise local air pollution and water use. A weak-sustainability analyst might approve it, arguing the income and jobs outweigh the environmental loss and can fund cleanup elsewhere. A strong-sustainability analyst might object that the affected airshed and watershed are critical natural capital that money cannot replace, and that the social burden falls unfairly on one community. Neither reading is automatically right; the exercise shows how naming all three dimensions, and stating which substitution assumptions you accept, turns a slogan into an actual decision.
+
+## Common Mistakes
+
+- **Treating the three dimensions as a score to be totaled, so a big economic gain cancels out an environmental or social loss.** The dimensions are not a single currency. A strong result in one can hide a serious, sometimes irreversible, loss in another; keep them separate and name the trade-off.
+- **Assuming the overlapping-circles picture is the only or the correct model.** It is one of two common models. The nested model, economy within society within environment, encodes a different and widely held view that ecological limits bound everything else.
+- **Believing the triple bottom line is a settled, endorsed accounting standard.** Its own originator, John Elkington, called in 2018 for a rethink, warning it had been reduced to box-ticking rather than driving systemic change.
+- **Thinking experts agree that money and technology can always replace lost nature.** That is the weak-sustainability position. Strong sustainability holds that critical natural capital is non-substitutable, and the disagreement between them is unresolved.
+- **Assuming the three dimensions naturally reinforce one another, so win-win-win is the norm.** They frequently conflict; managing sustainability is largely about handling trade-offs, such as jobs versus emissions, not assuming harmony.
+
+## Compare / Contrast
+
+- **Overlapping-circles model vs Nested model:** Circles treat the three dimensions as roughly equal and independent, meeting only in a central overlap; the nested model treats the economy as inside society and society as inside the environment, so ecological limits bound the rest.
+- **Weak sustainability vs Strong sustainability:** Weak sustainability allows human-made capital to substitute for natural capital, so total capital is what matters; strong sustainability holds that critical natural capital cannot be substituted and must be preserved.
+- **Triple bottom line as intended vs as used:** Elkington meant it to provoke systemic rethinking of business and capitalism; in practice it often became a reporting and box-ticking format, which is why he called for a recall in 2018.
+
+## Key Takeaway
+
+Sustainability has three dimensions, environmental, economic, and social, but they often conflict, and how you picture them, as equal circles or as nested layers bounded by the environment, reflects a real and unresolved debate over whether nature can be replaced.
+
+## Practice Question Bank
+
+1. **The three dimensions of sustainability, sometimes called people, planet, and profit, are:**
+   - A. Local, national, and global
+   - B. Environmental, economic, and social
+   - C. Past, present, and future
+   - D. Air, water, and land
+
+   **Answer: B.** The three dimensions are environmental, economic, and social, shortened as planet, profit, and people. The other options name real distinctions in sustainability discussions but are not the three-dimension model.
+
+2. **Why did John Elkington call for a rethink of the triple bottom line in 2018, roughly 25 years after coining it?**
+   - A. New research had disproven the environmental dimension
+   - B. Governments had made it a mandatory legal standard
+   - C. He had discovered a fourth dimension that replaced it
+   - D. It had been reduced to accounting and box-ticking rather than driving systemic change
+
+   **Answer: D.** Elkington's 2018 concern was that the triple bottom line had become a reporting and box-ticking exercise instead of provoking deeper change in business and capitalism, as he had intended. The other options misstate his argument and the concept's status.
+
+3. **Which statement best describes the nested model of sustainability?**
+   - A. The economy sits inside society, which sits inside the environment, so ecological limits bound the rest
+   - B. The three dimensions are equal, independent circles that overlap only at the center
+   - C. Only the economic dimension matters because it can fund the others
+   - D. The social dimension contains both the economy and the environment
+
+   **Answer: A.** The nested model places the economy within society and society within the environment, making ecological limits the outer boundary. Option B describes the rival overlapping-circles model; the others misstate the model.
+
+4. **A planner argues that clearing a wetland is sustainable because the resulting development creates enough economic and human-made value to more than offset the lost ecosystem. This reasoning is an example of:**
+   - A. Strong sustainability, because it protects critical natural capital
+   - B. Weak sustainability, because it treats human-made capital as substitutable for natural capital
+   - C. The nested model, because it puts the environment outermost
+   - D. The precautionary principle, because it avoids irreversible harm
+
+   **Answer: B.** Allowing human-made capital to substitute for lost natural capital, as long as total value does not fall, is the defining move of weak sustainability. Strong sustainability and the nested model would resist substituting away critical natural capital, and the reasoning is not precautionary.
+
+5. **A report scores a project 9/10 economically, 3/10 environmentally, and 4/10 socially, then averages these to a "sustainability score" of about 5.3 and calls the project sustainable. What is the strongest critique of this approach?**
+   - A. The environmental score should always be weighted highest, so the average is too low
+   - B. Averaging can mask serious losses in one dimension, and the dimensions are not a single interchangeable currency
+   - C. Sustainability has four dimensions, so the average uses the wrong number of terms
+   - D. The project should be judged only on its economic score, which is the reliable one
+
+   **Answer: B.** Collapsing the dimensions into one average lets a strong economic result hide serious environmental and social losses, which the lesson warns against; the dimensions are not a common currency to be totaled. The other options assert fixed weightings or wrong facts the lesson does not support.
+
+## Sources
+
+- United Nations General Assembly, *Transforming our world: the 2030 Agenda for Sustainable Development* (A/RES/70/1, 2015) — https://sdgs.un.org/2030agenda
+- U.S. Environmental Protection Agency, *Learn About Sustainability* — https://www.epa.gov/sustainability/learn-about-sustainability
+- Purvis, B., Mao, Y. & Robinson, D. (2019), "Three pillars of sustainability: in search of conceptual origins," *Sustainability Science* 14(3):681-695 (CC BY 4.0) — https://doi.org/10.1007/s11625-018-0627-5
+- Elkington, J. (2018), "25 Years Ago I Coined the Phrase 'Triple Bottom Line.' Here's Why It's Time to Rethink It," *Harvard Business Review* — https://hbr.org/2018/06/25-years-ago-i-coined-the-phrase-triple-bottom-line-heres-why-im-giving-up-on-it
+- "Weak and strong sustainability" (secondary overview of natural-capital substitutability) — https://en.wikipedia.org/wiki/Weak_and_strong_sustainability
+
+## Related Topics
+
+- environmental-sustainability:foundations:what-sustainability-means
+- environmental-sustainability:foundations:corporate-sustainability
+- environmental-sustainability:foundations:esg-basics
+- environmental-sustainability:foundations:environmental-justice
+
+## Editorial Metadata
+
+- **Editorial status:** READY_TO_PUBLISH
+- **Researched:** 2026-08-19
+- **Rights:** One CC BY source (Purvis et al., attributed); the rest reference-only. No source prose reproduced; all wording original.
+- **Transformation:** Facts synthesized from a UN resolution, an EPA program page, a peer-reviewed conceptual review, and Elkington's own reflection; all prose written from scratch as an original lesson.

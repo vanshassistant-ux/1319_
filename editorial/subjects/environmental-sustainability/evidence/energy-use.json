@@ -1,0 +1,208 @@
+{
+  "topicId": "environmental-sustainability:foundations:energy-use",
+  "subjectId": "environmental-sustainability",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Distinction between primary energy and electricity (a secondary carrier)",
+      "The current U.S. primary energy mix by source, dated, with the fossil-fuel majority",
+      "Energy consumption by end-use sector (transportation, industrial, residential, commercial)",
+      "Energy units and the power-versus-energy distinction (joule, watt, watt-hour, kWh, BTU, quad)",
+      "Energy intensity and decoupling of energy use from GDP",
+      "Rejected energy / conversion losses — where primary energy actually goes"
+    ],
+    "supporting": [
+      "Worked household kWh and unit-conversion example",
+      "Capacity versus generation distinction",
+      "Electricity transmission and distribution losses"
+    ],
+    "outOfScope": [
+      "Detailed treatment of renewable energy technologies (own topic: renewable-energy, solar, wind)",
+      "Energy efficiency programs and standards in depth (own topic: energy-efficiency)",
+      "Emissions accounting and global warming potential (own topic: greenhouse-gases)",
+      "Transportation systems and building energy design in depth (own topics)",
+      "Energy policy adjudication (carbon taxes, subsidies) — contested policy, not settled here"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Primary energy is energy from natural sources (fossil fuels, nuclear fuel, renewables) before conversion; electricity is a secondary energy carrier produced from primary sources.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["eia-us-energy-facts", "eia-glossary-electricity"],
+      "status": "supported"
+    },
+    {
+      "claim": "In 2025, U.S. primary energy consumption was about 96 quads: petroleum 35.9 (37%), natural gas 34.6 (36%), coal 8.7 (9%), renewables 8.8 (9%), nuclear 8.2 (9%); fossil fuels supplied about 82%.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["eia-consumption-source-sector-2025", "eia-us-energy-facts"],
+      "status": "supported"
+    },
+    {
+      "claim": "Counting direct primary energy use, in 2025 U.S. end-use sectors were transportation 28.2 quads (37%), industrial 26.6 (35%), residential 11.8 (15%), commercial 9.9 (13%); building sectors' shares rise when electricity and its losses are distributed to them.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["eia-consumption-source-sector-2025", "eia-use-of-energy"],
+      "status": "supported"
+    },
+    {
+      "claim": "Power (watt) is the rate of energy use; energy (watt-hour, joule) is power times time. 1 kWh = 3.6 MJ ≈ 3,412 BTU; 1 quad = 10^15 BTU; 1 BTU ≈ 1,055 J.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["eia-glossary-electricity", "eia-us-energy-facts"],
+      "status": "supported"
+    },
+    {
+      "claim": "U.S. energy intensity (energy per real dollar of GDP) has declined for decades; EIA's AEO2020 projected energy use growing ~0.3%/yr and GDP ~1.9%/yr through 2050, a ~1.5%/yr fall in intensity — i.e., decoupling. Falling intensity does not mean falling total energy use.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["eia-energy-intensity"],
+      "status": "supported"
+    },
+    {
+      "claim": "Much primary energy is lost as rejected energy (mostly waste heat). LLNL's 2023 flow chart estimated U.S. energy at 93.6 quads, with 32.1 quads of energy services and 61.5 quads rejected (~34% useful).",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["llnl-energy-flow-charts"],
+      "status": "supported"
+    },
+    {
+      "claim": "Electricity is a lossy carrier: in EIA's 2025 data the electric power sector's output split into 13.8 quads of electricity sales (41%) and 19.7 quads of electrical system energy losses (59%).",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["eia-consumption-source-sector-2025"],
+      "status": "supported"
+    },
+    {
+      "claim": "U.S. electricity transmission and distribution losses averaged about 5% of electricity transmitted and distributed over 2018-2022.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["eia-faq-transmission-distribution-losses"],
+      "status": "supported"
+    },
+    {
+      "claim": "A typical U.S. residential customer purchased about 10,791 kWh of electricity in 2022, roughly 899 kWh per month.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["eia-glossary-electricity"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "End-use sector shares differ depending on accounting method.",
+      "positions": [
+        "Direct primary energy by sector: transportation and industry dominate; residential and commercial appear small.",
+        "Total energy by sector (electricity and electrical system losses distributed back to purchasing sectors): building sectors' shares are substantially larger."
+      ],
+      "resolution": "Both are published by EIA and both are correct; the lesson presents the direct-use figures explicitly and explains why the building sectors look small in that view and grow in the distributed view."
+    },
+    {
+      "issue": "Reporting year differs across EIA products at the time of research (2024 complete-year figures vs the 2025 source-and-sector chart).",
+      "positions": [
+        "2024 Today-in-Energy: ~94 quads, fossil 82%, petroleum 35.3, natural gas 34.2 (record), coal 7.9 (lowest since 1949).",
+        "2025 source-and-sector chart (dated April 2026): ~96 quads, petroleum 35.9, natural gas 34.6, coal 8.7."
+      ],
+      "resolution": "The lesson anchors on the 2025 chart (the most recent EIA source-and-sector dataset) and dates every figure to 2025; the fossil share is ~82% in both years."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft was pure boilerplate ('Energy Use is a foundational concept...') with no factual content about energy at all — nothing in it was substantive enough to support or refute.",
+    "Draft vocabulary defined 'Energy Use' circularly as 'a foundational Environmental Sustainability concept covered in this lesson' — replaced entirely.",
+    "Draft eli10 lacked an analogyLimits field."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire boilerplate draft with researched, dated energy content.",
+    "Added the primary-vs-electricity distinction, the dated U.S. mix, energy units, energy intensity, and rejected energy — none of which existed in the draft.",
+    "Added an analogyLimits field and expanded eli10 to the required length.",
+    "Wrote five substantive, evidence-backed questions in place of the draft's generic ones."
+  ],
+  "rightsIssues": [
+    "All sources are U.S. government (EIA) or a U.S. national laboratory (LLNL). Treated as REFERENCE_ONLY factual data; no source prose was reproduced. Figures are facts, not copyrightable expression, and were re-synthesized into original wording."
+  ],
+  "sourceRecords": [
+    {
+      "id": "eia-us-energy-facts",
+      "title": "U.S. energy facts explained — consumption and production",
+      "provider": "U.S. Energy Information Administration",
+      "url": "https://www.eia.gov/energyexplained/us-energy-facts/",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the primary-vs-secondary definitions ('Secondary energy sources, such as electricity or hydrogen, are produced from primary energy'), the end-use-sector framing, and the current mix. U.S. government work, public domain; used as factual reference only."
+    },
+    {
+      "id": "eia-consumption-source-sector-2025",
+      "title": "U.S. energy consumption by source and sector, 2025 (chart)",
+      "provider": "U.S. Energy Information Administration",
+      "url": "https://www.eia.gov/energyexplained/us-energy-facts/images/consumption-by-source-and-sector.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Exact 2025 figures extracted from the chart's embedded text: petroleum 35.9 (37%), natural gas 34.6 (36%), coal 8.7 (9%), renewables 8.8 (9%), nuclear 8.2 (9%); end-use total 76.5 quads with transportation 28.2 (37%), industrial 26.6 (35%), residential 11.8 (15%), commercial 9.9 (13%); electric power sector split into electricity sales 13.8 (41%) and electrical system energy losses 19.7 (59%). Chart is based on the EIA Monthly Energy Review, dated April 2026. PDF text parsed locally (Bash/zlib) because the fetcher could not render it."
+    },
+    {
+      "id": "eia-use-of-energy",
+      "title": "Use of energy explained",
+      "provider": "U.S. Energy Information Administration",
+      "url": "https://www.eia.gov/energyexplained/use-of-energy/",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the definition that total energy consumption by end-use sectors includes their primary energy use, purchased electricity, and electrical system energy losses — the basis for explaining why building sectors' shares differ between accounting methods."
+    },
+    {
+      "id": "eia-glossary-electricity",
+      "title": "EIA Glossary — Electricity terms and units",
+      "provider": "U.S. Energy Information Administration",
+      "url": "https://www.eia.gov/tools/glossary/index.php?id=electricity",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused existing registry source id. Supports definitions of kilowatt, kilowatt-hour, and the power-versus-energy distinction, plus the residential average electricity purchase figure (10,791 kWh in 2022) cross-checked from EIA FAQ id=97."
+    },
+    {
+      "id": "eia-faq-transmission-distribution-losses",
+      "title": "EIA FAQ — How much electricity is lost in transmission and distribution?",
+      "provider": "U.S. Energy Information Administration",
+      "url": "https://www.eia.gov/tools/faqs/faq.php?id=105&t=3",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused existing registry source id. Supports the ~5% average T&D loss figure for 2018-2022, distinguishing delivery losses from generation/conversion losses."
+    },
+    {
+      "id": "eia-energy-intensity",
+      "title": "EIA projects energy consumption to grow more slowly than the economy (Today in Energy)",
+      "provider": "U.S. Energy Information Administration",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=42895",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the energy-intensity and decoupling claim: AEO2020 projected U.S. energy consumption growing ~0.3%/yr and GDP ~1.9%/yr through 2050, a ~1.5%/yr decline in energy intensity. Framed in the lesson as an EIA projection, not a historical fact."
+    },
+    {
+      "id": "llnl-energy-flow-charts",
+      "title": "Energy Flow Charts (Sankey diagrams of U.S. energy)",
+      "provider": "Lawrence Livermore National Laboratory",
+      "url": "https://flowcharts.llnl.gov/",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the rejected-energy figures: the 2023 chart estimated U.S. energy at 93.6 quads, 32.1 quads of energy services and 61.5 quads of rejected energy (~34% useful). LLNL is a U.S. Department of Energy national laboratory; used as factual reference only."
+    }
+  ]
+}
