@@ -1,0 +1,234 @@
+{
+  "topicId": "engineering-fundamentals:engineering-thinking:engineering-constraints-and-tradeoffs",
+  "subjectId": "engineering-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "What a constraint is and why bounded problems are what distinguish engineering from open-ended problem solving",
+      "A working taxonomy of constraint types: physical and material limits, cost, schedule, manufacturability, regulatory and code requirements, standards, environmental and sustainability limits, ethical and social constraints, maintainability, and safety",
+      "The distinction between a hard constraint (a pass/fail boundary) and an objective (a quantity to be maximized or minimized)",
+      "Tradeoffs: why improving one objective typically costs another",
+      "The feasible region, dominance, and the Pareto frontier explained intuitively and correctly",
+      "Weighted decision matrices, and the honest limitation that the weights encode a value judgment and that small weight changes can reverse the ranking",
+      "Sensitivity analysis of a decision matrix, demonstrated numerically",
+      "Requirements creep, over-constraining a problem into infeasibility, and component optimization versus system optimization",
+      "The point that many binding constraints are non-technical: budget, politics, existing infrastructure, and client acceptance"
+    ],
+    "supporting": [
+      "Regulatory constraints as legally binding pass/fail boundaries, illustrated with 49 CFR 571.7 (applicability of Federal Motor Vehicle Safety Standards)",
+      "Professional ethics as a constraint on acceptable designs (NSPE Fundamental Canon 1; the rule that engineers approve only documents conforming to applicable standards)",
+      "Licensure as an institutional constraint on who may practice and take responsibility for a design",
+      "Standards bodies' documents as copyrighted and paywalled; a lesson may name what a standard governs but not reproduce its values"
+    ],
+    "outOfScope": [
+      "The engineering design loop and the requirements-versus-specifications distinction (owned by engineering-fundamentals:engineering-thinking:engineering-design-process)",
+      "Factors of safety, allowable stress, and failure criteria (owned by engineering-fundamentals:engineering-practice:safety-factors-and-failure)",
+      "Material selection methods, material property charts, and performance indices (owned by engineering-fundamentals:materials:material-selection)",
+      "Formal optimization algorithms, gradient methods, KKT conditions, and multi-objective solver implementation",
+      "Any design guidance applicable to a real structure, vehicle, pressure vessel, electrical installation, or machine"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Engineering design is a process of devising a system, component, or process to meet desired needs and specifications within constraints, and the accrediting body's own list of constraint examples spans aesthetics, codes, constructability, cost, ergonomics, extensibility, functionality, interoperability, legal considerations, maintainability, manufacturability, marketability, policy, regulations, schedule, standards, sustainability, and usability.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["abet-eac-criteria-2026-2027"],
+      "status": "supported"
+    },
+    {
+      "claim": "Many of the constraints that bind an engineering project are not technical: the accrediting definition explicitly includes cost, schedule, legal considerations, policy, regulations, and marketability alongside physical and functional limits.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["abet-eac-criteria-2026-2027", "nasa-sp-2016-6105-suppl-expanded-guidance"],
+      "status": "supported"
+    },
+    {
+      "claim": "Systems engineering is described by NASA as the art and science of developing an operable system capable of meeting requirements within often opposed constraints, and as achieving stakeholder performance requirements within cost, schedule, and other constraints.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nasa-sp-2016-6105-suppl-expanded-guidance"],
+      "status": "supported"
+    },
+    {
+      "claim": "Requirements creep is the term for the way a project's set of requirements grows imperceptibly during development, producing a system more expensive and complex than originally intended; some of the growth is genuinely new requirements that could not have been anticipated.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nasa-sp-2016-6105-suppl-expanded-guidance"],
+      "status": "supported"
+    },
+    {
+      "claim": "A decision matrix is treated in formal engineering practice as a default evaluation method whose setup — criteria selected, options selected, weights selected, and evaluation methods selected — requires documented rationale, and whose reported results are expected to state the assumptions, uncertainties, and sensitivities behind the recommendation.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nasa-sp-2016-6105-suppl-expanded-guidance"],
+      "status": "supported"
+    },
+    {
+      "claim": "Specifying performance as a threshold value plus a desired baseline gives designers trade space to investigate alternatives, and trade studies can show whether relaxing a performance requirement slightly yields a significantly cheaper system.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nasa-sp-2016-6105-suppl-expanded-guidance"],
+      "status": "supported"
+    },
+    {
+      "claim": "One design dominates another if it is superior in all objectives; a point no other evaluated point dominates is nondominated, a point nondominated across the whole domain is Pareto optimal, the set of such points is the Pareto set, and their objective values form the Pareto front.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["martins-ning-engineering-design-optimization"],
+      "status": "supported",
+      "note": "Martins and Ning state dominance in the strict form ('superior in all objectives'). The lesson uses the standard weak form (at least as good on every objective and strictly better on at least one), which is the conventional definition in the multi-objective literature and the one implemented in the worked example's dominance check. The two agree on every candidate in the worked example, since Concept A beats Concept D strictly on all four measures. The lesson's Q2 is worded to be correct under either form: it states only that no weighting can make the dominated candidate preferable, which holds because every non-negative weighting scores the dominating candidate at least as high."
+    },
+    {
+      "claim": "The weighted-sum method combines objectives as a weighted linear combination and has known limitations: evenly spaced weights do not produce evenly spaced points on the Pareto front, the method can only return points on the convex portion of the Pareto front, and choosing appropriate weights is not intuitive.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["martins-ning-engineering-design-optimization"],
+      "status": "supported"
+    },
+    {
+      "claim": "Regulatory constraints operate as legally binding pass/fail boundaries rather than as preferences: under 49 CFR 571.7(a), each Federal Motor Vehicle Safety Standard applies according to its terms to all motor vehicles or items of motor vehicle equipment whose manufacture is completed on or after the standard's effective date, with narrow exceptions for military procurement and export.",
+      "claimType": "LEGAL",
+      "sourceIds": ["ecfr-49-cfr-571-7-applicability"],
+      "status": "supported"
+    },
+    {
+      "claim": "Professional ethics constrains what counts as an acceptable design: the NSPE Code's first Fundamental Canon directs engineers to hold paramount the safety, health, and welfare of the public, and its Rules of Practice direct engineers to approve only those engineering documents that are in conformity with applicable standards.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nspe-code-of-ethics-for-engineers"],
+      "status": "supported"
+    },
+    {
+      "claim": "Practice as a professional engineer in the United States is gated by state and territorial licensing boards; licensure exists to help ensure practice protects the health, safety, and welfare of the public, and the usual path combines an ABET-accredited degree, several years of verifiable experience, and the FE and PE examinations, with requirements varying by jurisdiction and no single nationwide license.",
+      "claimType": "LEGAL",
+      "sourceIds": ["ncees-licensure"],
+      "status": "supported"
+    },
+    {
+      "claim": "In the lesson's illustrative four-candidate comparison, hard-constraint screening (mass 4.0 kg or less, cost 600 USD or less, autonomy 36 h or more) removes Concept C on mass alone despite its strong cost and autonomy figures; within the surviving set Concept D is dominated by Concept A on all four measures; and the weighted totals are 59.99 versus 61.25 (B ahead by 1.25 points) at weights of 0.30/0.20/0.30/0.20 and 62.53 versus 59.64 (A ahead by 2.89) at 0.25/0.20/0.35/0.20, with the break-even cost weight at 1487/5220 (about 0.2849), so a weight change of about 0.015 reverses the recommendation.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["martins-ning-engineering-design-optimization", "nasa-sp-2016-6105-suppl-expanded-guidance"],
+      "status": "supported",
+      "note": "The candidate data are invented for teaching and are labelled as such in the lesson. Every number was computed with exact rational arithmetic in Python (fractions.Fraction) before publication; the arithmetic, not the scenario, is what the sources support."
+    },
+    {
+      "claim": "Adding two further hard constraints to the same illustrative example (cost 450 USD or less and autonomy 100 h or more) empties the feasible set: A and D fail on cost, B fails on autonomy, and C still fails on mass. Over-constraining a problem can make it unsolvable without any single requirement being unreasonable on its own.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["nasa-sp-2016-6105-suppl-expanded-guidance"],
+      "status": "supported",
+      "note": "Arithmetic executed in Python; the general principle that requirement growth drives cost and complexity beyond the original intent is the NASA-supported part."
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether a weighted decision matrix is a legitimate engineering method or a way of dressing up a preference.",
+      "positions": [
+        "NASA's expanded systems engineering guidance treats a documented decision matrix as a default evaluation method and a best practice for major decisions, even when only one option is viable.",
+        "The optimization literature summarized in Martins and Ning notes that weighted-sum scalarization cannot reach non-convex portions of the Pareto front and that choosing weights is not intuitive, which limits what a weighted total can be said to prove."
+      ],
+      "resolution": "The lesson presents both: the matrix is a legitimate way to make a comparison explicit and auditable, but its output is a consequence of the weights, so the honest use is to publish the weights, publish the rationale, and report a sensitivity check. NASA's own reporting checklist asks for the weight rationale and for the sensitivities, which is consistent with this reading."
+    },
+    {
+      "issue": "Whether 'constraint' and 'requirement' are the same thing.",
+      "positions": [
+        "In systems engineering practice, constraints are frequently discussed as a category of input alongside stakeholder expectations and are captured as requirements once written down.",
+        "In design pedagogy and in optimization, 'constraint' has the narrower sense of a pass/fail boundary that partitions the design space, as opposed to an objective that ranks candidates."
+      ],
+      "resolution": "The lesson uses the narrower design-and-optimization sense (boundary versus objective) because that is the distinction students blur, and it notes explicitly that in project documentation both constraints and objectives are usually written as requirements. The requirements-versus-specifications treatment is deliberately handed off to the engineering-design-process topic."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft asserted nothing verifiable about constraints or tradeoffs; its body text was subject-agnostic filler ('a foundational concept', 'a label on a toolbox drawer') that could have been produced for any topic in any subject.",
+    "The draft's vocabulary block defined the topic title in terms of itself ('a foundational Engineering Fundamentals concept covered in this lesson'), which is circular and carries no information.",
+    "The draft's worked example described a student reading a scenario rather than performing any engineering comparison, and contained no numbers.",
+    "The draft's Eli-10 block had no statement of where its analogy breaks down."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire generated draft with researched content; no draft wording survives.",
+    "Introduced the hard-constraint versus objective distinction as the organizing idea, since it is the specific confusion this topic exists to fix.",
+    "Added a numerically executed worked example: four illustrative candidates, hard-constraint screening, a dominance check, a weighted decision matrix, a second weight set that reverses the winner, and the exact break-even weight.",
+    "Added the over-constraining demonstration, in which two further defensible requirements empty the feasible set.",
+    "Added an explicit statement that the lesson is educational material and not engineering design guidance, and that real design requires a licensed engineer working to the governing code.",
+    "Added explicit hand-offs so this lesson does not teach the design loop, factors of safety, or material selection methods."
+  ],
+  "rightsIssues": [
+    "ABET's accreditation criteria carry a copyright notice. The definition of engineering design and its constraint examples are used as facts about how the profession defines its own scope; the source is classified REFERENCE_ONLY and its wording is not reproduced beyond short attributed phrases.",
+    "The NSPE Code of Ethics is a copyrighted publication of the National Society of Professional Engineers. Canon 1 is quoted in a single short attributed phrase; the code text is otherwise summarized, and the source is REFERENCE_ONLY.",
+    "Engineering Design Optimization (Martins and Ning) is a Cambridge University Press book whose HTML edition is free to read online. Free access is not a reuse licence, so it is REFERENCE_ONLY; its definitions are restated in original prose.",
+    "The NASA systems engineering guidance is a U.S. Government publication distributed through NTRS. U.S. Government works are generally not subject to domestic copyright, but no per-document rights statement was located, so it is recorded as REFERENCE_ONLY and no NASA prose is reproduced in the lesson.",
+    "Engineering standards from ASME, ASTM, IEEE, ISO, ACI, and AISC are copyrighted and mostly paywalled. This lesson names standards only as a category of constraint and states no allowable stress, load factor, or design value from any standard.",
+    "The candidate design data in the worked example are invented for teaching and are labelled as invented in the lesson, so no proprietary or safety-relevant real design data is reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "abet-eac-criteria-2026-2027",
+      "title": "Criteria for Accrediting Engineering Programs, 2026-2027",
+      "provider": "ABET Engineering Accreditation Commission",
+      "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2026-2027/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the current criteria page directly. Supplies the profession's own definition of engineering design as devising a system, component, or process to meet desired needs and specifications within constraints, together with the explicit list of constraint examples (aesthetics, codes, constructability, cost, ergonomics, extensibility, functionality, interoperability, legal considerations, maintainability, manufacturability, marketability, policy, regulations, schedule, standards, sustainability, usability). Used for the constraint taxonomy and for the claim that many binding constraints are non-technical. Page carries an ABET copyright notice; no ABET wording is reproduced in the lesson beyond a short attributed phrase."
+    },
+    {
+      "id": "nasa-sp-2016-6105-suppl-expanded-guidance",
+      "title": "NASA/SP-2016-6105-SUPPL, Expanded Guidance for NASA Systems Engineering",
+      "provider": "NASA",
+      "url": "https://ntrs.nasa.gov/api/citations/20170007238/downloads/20170007238.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Downloaded the full 383-page PDF from NASA NTRS and extracted the text locally. Supports: systems engineering as meeting requirements within often opposed constraints; cost, schedule, and other constraints as first-class limits; the definition and mechanics of requirements creep and the techniques for containing it; the decision matrix as a default evaluation method whose criteria, options, weights, and evaluation methods require documented rationale; the expectation that a decision report state assumptions, uncertainties, and sensitivities; and threshold-plus-baseline performance specification as the thing that creates trade space. U.S. Government publication; no per-document rights statement located, so treated as reference only and no NASA prose reproduced."
+    },
+    {
+      "id": "martins-ning-engineering-design-optimization",
+      "title": "Engineering Design Optimization, Chapter 9: Multiobjective Optimization",
+      "provider": "Joaquim R. R. A. Martins and Andrew Ning (Cambridge University Press)",
+      "url": "https://mdobook.github.io/html/multiobj/",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the free online HTML edition of the multiobjective chapter. Supports the definitions of dominance, nondominated points, Pareto optimality, the Pareto set and Pareto front, and the utopia point; and the stated limitations of the weighted-sum method, namely that uniformly spaced weights give non-uniformly spaced points on the front, that the method can only return points on the convex portion of the front, and that choosing weights is not intuitive. Published by Cambridge University Press (DOI 10.1017/9781108980647); free to read is not a reuse licence, so classified REFERENCE_ONLY and all definitions restated in original prose."
+    },
+    {
+      "id": "ecfr-49-cfr-571-7-applicability",
+      "title": "49 CFR 571.7 - Applicability (Federal Motor Vehicle Safety Standards)",
+      "provider": "U.S. Government Publishing Office / Office of the Federal Register (eCFR)",
+      "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/subpart-A/section-571.7",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Canonical eCFR section URL registered; the copy actually read was the eCFR versioner API rendering of the same section (title-49 XML, section 571.7) because the web page redirected the fetcher. Used as a concrete, verifiable example that a regulatory constraint is a legally binding pass/fail boundary applying to all covered vehicles or equipment manufactured on or after a standard's effective date, with narrow military-procurement and export exceptions. Federal regulations are U.S. Government edicts and are not copyrighted."
+    },
+    {
+      "id": "nspe-code-of-ethics-for-engineers",
+      "title": "NSPE Code of Ethics for Engineers",
+      "provider": "National Society of Professional Engineers",
+      "url": "https://www.nspe.org/sites/default/files/resources/pdfs/Ethics/CodeofEthics/NSPECodeofEthicsforEngineers.pdf",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Retrieved the official NSPE PDF with a browser user-agent after the HTML page returned 403, and read the Preamble, the six Fundamental Canons, and the Rules of Practice. Supports the treatment of ethics as a constraint on acceptable designs: Canon 1 directs engineers to hold paramount the safety, health, and welfare of the public, and Rule of Practice 1(b) directs engineers to approve only those engineering documents that are in conformity with applicable standards. Copyrighted NSPE publication; one short attributed phrase quoted, nothing else reproduced."
+    },
+    {
+      "id": "ncees-licensure",
+      "title": "Licensure",
+      "provider": "National Council of Examiners for Engineering and Surveying (NCEES)",
+      "url": "https://ncees.org/licensure/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the NCEES licensure page. Supports the statement that licensure is administered by state and territorial boards to help ensure practice protects the health, safety, and welfare of the public, that the usual path is an ABET-accredited degree plus several years of verifiable experience plus the FE and PE examinations, and that requirements vary by jurisdiction with no single nationwide licence. Used only to support the lesson's educational-material disclaimer and the point that who may sign a design is itself an institutional constraint."
+    }
+  ]
+}

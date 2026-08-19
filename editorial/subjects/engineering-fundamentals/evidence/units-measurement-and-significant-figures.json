@@ -1,0 +1,340 @@
+{
+  "topicId": "engineering-fundamentals:engineering-thinking:units-measurement-and-significant-figures",
+  "subjectId": "engineering-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "The SI is defined by fixing the exact numerical values of seven defining constants; the seven base units are retained as a useful and historically established organizing concept rather than as the logical foundation.",
+      "What the 2019 redefinition actually changed, and why the platinum-iridium kilogram artefact was retired.",
+      "Coherent derived units and the 22 derived units with special names, including newton, joule, pascal, watt, volt, and ohm, expressed in base units.",
+      "SI prefixes as strict powers of ten, and the kilogram as the only coherent SI unit whose name already contains a prefix.",
+      "The rules NIST actually specifies for writing unit symbols, unit names, and quantity symbols: roman versus italic type, capitalization, plurals, punctuation, and the space between numerical value and unit symbol including the degree Celsius.",
+      "Dimensional analysis as an error-catching check, and unit conversion carried out as explicit factor-label multiplication with units cancelled at each step.",
+      "U.S. customary units and which SI relationships are exact by definition (yard, foot, inch, avoirdupois pound, pound-force via the standard acceleration of gravity) versus rounded or measured.",
+      "Precision, trueness, accuracy, and resolution as distinct metrological concepts; systematic versus random measurement error.",
+      "The modern uncertainty framing: standard uncertainty, combined standard uncertainty, coverage factor k, expanded uncertainty U = k*uc, and Type A versus Type B evaluation.",
+      "Significant-figure rules for addition/subtraction (decimal places) versus multiplication/division (significant digits), exact numbers, and rounding including NIST's round-half-to-even convention."
+    ],
+    "supporting": [
+      "The Mars Climate Orbiter loss as a documented cautionary case of a unit mismatch in an interface specification.",
+      "Deprecation of the U.S. survey foot effective 1 January 2023.",
+      "Scientific notation as the fix for trailing-zero significant-figure ambiguity.",
+      "The point that significant figures are a teaching shorthand that formal uncertainty analysis supersedes in professional metrology."
+    ],
+    "outOfScope": [
+      "Estimation and order-of-magnitude technique, which is owned by the parallel topic engineering-fundamentals:engineering-thinking:estimation-and-order-of-magnitude.",
+      "The full GUM uncertainty-propagation mathematics (partial derivatives, sensitivity coefficients, correlated inputs, Monte Carlo methods).",
+      "Statistical process control, gauge R&R, tolerance stack-up, and geometric dimensioning and tolerancing.",
+      "Calibration hierarchy, traceability chains, and laboratory accreditation.",
+      "Any specific allowable stress, design value, load factor, or code-prescribed tolerance."
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The SI is defined as the system of units in which seven defining constants have exact fixed numerical values: the caesium-133 ground-state hyperfine transition frequency dNuCs = 9 192 631 770 Hz, the speed of light in vacuum c = 299 792 458 m/s, the Planck constant h = 6.626 070 15 x 10^-34 J s, the elementary charge e = 1.602 176 634 x 10^-19 C, the Boltzmann constant k = 1.380 649 x 10^-23 J/K, the Avogadro constant NA = 6.022 140 76 x 10^23 mol^-1, and the luminous efficacy Kcd = 683 lm/W. The numerical values of these seven defining constants have no uncertainty.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["bipm-si-brochure-9th-edition", "nist-sp-330-2019"],
+      "status": "supported"
+    },
+    {
+      "claim": "Because the SI is now defined by fixing the numerical values of seven constants, the distinction between base and derived units is in principle no longer needed; all units may be constructed directly from the defining constants. The concept of base and derived units is nevertheless retained because it is useful and historically well established, and because the ISO/IEC 80000 series specifies corresponding base and derived quantities.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["bipm-si-brochure-9th-edition"],
+      "status": "supported"
+    },
+    {
+      "claim": "From 1889 until 2019 the kilogram was defined as the mass of the international prototype of the kilogram, a platinum-iridium artefact kept at the BIPM. The third verification of national prototypes, carried out from 1989 to 1991, found a median difference of about 25 micrograms relative to the international prototype for the set of original prototypes sanctioned in 1889. To assure long-term stability of the unit of mass, a definition based on the Planck constant was adopted by Resolution 1 of the 26th CGPM (2018), entering into force on 20 May 2019.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["bipm-si-brochure-9th-edition", "nist-sp-330-2019"],
+      "status": "supported"
+    },
+    {
+      "claim": "The kilogram is now defined by taking the fixed numerical value of the Planck constant h to be 6.626 070 15 x 10^-34 when expressed in the unit J s, which is equal to kg m^2 s^-1, where the metre and the second are defined in terms of c and dNuCs.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["nist-sp-330-2019", "bipm-si-brochure-9th-edition"],
+      "status": "supported"
+    },
+    {
+      "claim": "The SI includes 22 derived units with special names and symbols. Among them: the newton (N = kg m s^-2), the pascal (Pa = kg m^-1 s^-2 = N/m^2), the joule (J = kg m^2 s^-2 = N m), the watt (W = kg m^2 s^-3 = J/s), the volt (V = kg m^2 s^-3 A^-1 = W/A), and the ohm (Ohm = kg m^2 s^-3 A^-2 = V/A).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["bipm-si-brochure-9th-edition", "nist-sp-330-2019"],
+      "status": "supported"
+    },
+    {
+      "claim": "SI prefixes span 10^30 (quetta) to 10^-30 (quecto) and refer strictly to powers of ten; they must not be used for powers of two, for which the binary prefixes kibi, mebi, gibi and so on exist. Compound prefixes are not permitted. For historical reasons the kilogram is the only coherent SI unit whose name and symbol already include a prefix, so multiples and submultiples of mass are formed on 'gram': 10^-6 kg is written milligram (mg), not microkilogram.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["bipm-si-brochure-9th-edition"],
+      "status": "supported"
+    },
+    {
+      "claim": "NIST specifies that unit symbols are printed in roman (upright) type and quantity symbols in italic type; unit symbols are lower case except where the unit is named after a person (and L is recommended for the litre in the United States); unit symbols are unaltered in the plural (75 cm, not 75 cms) and take no period unless at the end of a sentence; spelled-out unit names are ordinary English nouns and start with a lower-case letter, so the unit of temperature is spelled 'degree Celsius'.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-811-2008"],
+      "status": "supported"
+    },
+    {
+      "claim": "NIST specifies that a space is left between the numerical value and the unit symbol, the only exceptions being the symbols for degree, minute and second of plane angle. This rule means the symbol degC is preceded by a space: t = 30.2 degC, not 30.2degC and not 30.2deg C. The space is kept even when the value is used adjectivally: 'a 10 kOhm resistor', not 'a 10-kOhm resistor'.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-811-2008"],
+      "status": "supported"
+    },
+    {
+      "claim": "Several SI/U.S. customary relationships are exact by definition rather than measured: since 1959 the yard is exactly 0.9144 m, hence the international foot is exactly 0.3048 m and the inch exactly 0.0254 m; the avoirdupois pound is exactly 0.453 592 37 kg; and because the standard acceleration of free fall is defined as exactly 9.806 65 m/s^2, one pound-force is exactly 4.448 221 615 260 5 N. Other tabulated factors in NIST SP 811 are rounded, with exact factors printed in boldface.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-811-2008"],
+      "status": "supported"
+    },
+    {
+      "claim": "From 1893 to 1959 the U.S. yard was defined as exactly 3600/3937 m, leaving a residual 'U.S. survey foot' related to the international foot by 1 international foot = 0.999 998 U.S. survey foot exactly. NIST and NOAA's National Geodetic Survey jointly deprecated the U.S. survey foot on 31 December 2022; beginning 1 January 2023 it should not be used and is superseded by the international foot definition of 1 foot = 0.3048 metre exactly in all applications.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-811-2008", "fr-2020-21902-deprecation-us-survey-foot"],
+      "status": "supported"
+    },
+    {
+      "claim": "Metrology distinguishes measurement accuracy (closeness of agreement between a measured value and a true value), measurement trueness (closeness of agreement between the average of an infinite number of replicate measured values and a reference value, inversely related to systematic error), and measurement precision (closeness of agreement between replicate measurements under specified conditions). The VIM states explicitly that 'measurement accuracy' should not be used for trueness and 'measurement precision' should not be used for accuracy.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["jcgm-200-2012-vim"],
+      "status": "supported"
+    },
+    {
+      "claim": "Systematic measurement error is the component of measurement error that in replicate measurements remains constant or varies in a predictable manner; random measurement error is the component that varies in an unpredictable manner. Resolution is the smallest change in a measured quantity that causes a perceptible change in the corresponding indication. NIST's engineering statistics handbook adds that bias is the quantitative difference between the average of measurements on an object and its true value, and that bias is reduced by calibration against reference standards rather than by repeating the measurement.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["jcgm-200-2012-vim", "nist-ehandbook-bias-and-accuracy"],
+      "status": "supported"
+    },
+    {
+      "claim": "In the framework NIST uses, measurement uncertainty is expressed as a standard uncertainty (an estimated standard deviation), components are evaluated by statistical analysis of repeated observations (Type A) or by scientific judgement from other information such as calibration certificates and manufacturer specifications (Type B), and these are combined into a combined standard uncertainty uc. Expanded uncertainty U is obtained by multiplying uc by a coverage factor k, typically in the range 2 to 3; where the normal distribution applies and uc is a reliable estimate of the standard deviation, k = 2 corresponds to a level of confidence of approximately 95 % and k = 3 to greater than 99 %.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-cuu-expanded-uncertainty", "nist-cuu-uncertainty-basics", "jcgm-200-2012-vim"],
+      "status": "supported"
+    },
+    {
+      "claim": "For multiplication and division, the result carries the same number of significant figures as the input quantity with the fewest significant figures; for addition and subtraction, the result is limited to the decimal place of the least precise term. Exact numbers, including defined conversion factors such as 100 cm per 1 m and counting numbers such as the 2 in C = 2*pi*r, do not limit the number of significant figures. Trailing zeros in a value such as 1300 are ambiguous, and scientific notation removes the ambiguity.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["openstax-university-physics-v1-significant-figures"],
+      "status": "supported"
+    },
+    {
+      "claim": "NIST's rounding rules discard digits beginning with less than 5 without changing the preceding digit, round up when the discarded digits begin with 5 and any following digit exceeds 0, and when the discarded digits are exactly 5 followed by zeros leave the preceding digit unchanged if it is even and increase it by 1 if it is odd, so the final retained digit is always even. NIST also warns that converting a value produces more digits than the input justifies and that the converted value must be rounded to a number of significant digits consistent with the maximum possible rounding error of the unconverted value.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-811-2008"],
+      "status": "supported"
+    },
+    {
+      "claim": "The NASA Mars Climate Orbiter Mishap Investigation Board determined the root cause of the loss to be failure to use metric units in the coding of a ground software file, 'Small Forces', used in trajectory models. The Angular Momentum Desaturation file's impulse bit data was delivered in pound-force seconds (lbf-s) instead of the newton seconds (N-s) specified in the project Software Interface Specification, so the navigation software underestimated the effect on the trajectory by a factor of 4.45. Launched 11 December 1998, the spacecraft's carrier signal was last seen at about 09:04:52 UTC on 23 September 1999.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["nasa-mco-mishap-investigation-board-phase-i-1999"],
+      "status": "supported"
+    },
+    {
+      "claim": "Trajectory Correction Maneuver 4, executed 15 September 1999, was intended to place the first Mars periapsis at 226 km altitude. During the following week orbit determination indicated the first periapsis had decreased to 150-170 km; about one hour before Mars orbit insertion it was computed as low as 110 km, against a minimum survivable periapsis of 80 km. Post-loss navigation estimates using corrected small-forces velocity changes indicated an initial periapsis of 57 km, judged too low for spacecraft survival, with the trajectory approximately 170 km lower than planned at insertion.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["nasa-mco-mishap-investigation-board-phase-i-1999"],
+      "status": "supported"
+    },
+    {
+      "claim": "Worked arithmetic executed with Python's decimal module before publication: 1.75 lbf-s x 4.448 221 615 260 5 N/lbf = 7.784 387 826 705 875 N-s, reported as 7.78 N-s to three significant figures; dividing by a 585 kg mass gives 0.013 306 645 857... m/s, reported as 0.0133 m/s; feeding the unconverted 1.75 as if it were N-s gives 0.002 991 452 991... m/s, or 0.00299 m/s, low by exactly the factor 4.448 221 615 260 5. Separately, 1.25 x 10^3 lbf/in^2 x 4.448 221 615 260 5 N/lbf / (0.0254 m/in)^2 = 8 618 446.616... Pa, or 8.62 MPa to three significant figures, which agrees with NIST's tabulated 6.894 757 x 10^3 Pa per psi (8 618 446.25 Pa). Addition example: 25.400 mm + 1.27 mm + 0.6 mm = 27.270 mm, reported as 27.3 mm. Multiplication example: 12.5 cm x 4.3 cm = 53.75 cm^2, reported as 54 cm^2.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["nist-sp-811-2008", "openstax-university-physics-v1-significant-figures"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether the SI still rests on seven base units.",
+      "positions": [
+        "Traditional teaching: the seven base units are the foundation and derived units are built from them.",
+        "SI Brochure 9th edition: since the 2018/2019 redefinition all units, base and derived alike, may be constructed directly from the seven defining constants, so the base/derived distinction is in principle no longer needed."
+      ],
+      "resolution": "The lesson states both: the constants are now the logical foundation, and the base/derived vocabulary is retained deliberately because it is useful and historically established, as the SI Brochure itself says."
+    },
+    {
+      "issue": "How to round a value exactly halfway between two retained digits.",
+      "positions": [
+        "Most introductory coursework teaches 'round half up' (2.675 to three digits becomes 2.68, 2.685 becomes 2.69).",
+        "NIST SP 811 B.7.1 rule 3 specifies round-half-to-even: the preceding digit is unchanged if even and increased by 1 if odd, so 2.685 to three digits is 2.68."
+      ],
+      "resolution": "The lesson teaches the NIST rule explicitly and names it as the convention used in metrology and in most software, while noting that many courses teach round-half-up. Both examples were executed with Python's decimal module (ROUND_HALF_EVEN) rather than binary floats, because 2.675 is not exactly representable in binary floating point."
+    },
+    {
+      "issue": "The popular retelling of the Mars Climate Orbiter loss.",
+      "positions": [
+        "Common circulating versions say the spacecraft 'crashed because engineers confused miles and kilometres' or 'used pounds instead of kilograms'.",
+        "The NASA Mishap Investigation Board Phase I Report identifies impulse data delivered in pound-force seconds where the Software Interface Specification required newton seconds, producing a factor-of-4.45 underestimate of small-forces velocity changes."
+      ],
+      "resolution": "The lesson uses only the Board's own account: pound-force seconds versus newton seconds, factor 4.45, in the AMD file produced by the SM_FORCES ground software."
+    },
+    {
+      "issue": "Whether significant figures are the right way to express measurement quality.",
+      "positions": [
+        "Introductory science and engineering coursework grades on significant-figure rules.",
+        "NIST, BIPM and the GUM express measurement quality as a standard uncertainty with a stated coverage factor, not as a digit count."
+      ],
+      "resolution": "The lesson teaches the significant-figure rules correctly because coursework uses them, and states plainly that they are a coarse shorthand that formal uncertainty analysis supersedes in professional practice."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained no substantive claims about units, measurement, or significant figures. Its body was subject-agnostic template text ('Units, Measurement, And Significant Figures is a foundational concept in Engineering Fundamentals', 'a concept students use to organize information'), a toolbox-drawer analogy, a map-legend analogy, and a placeholder worked example in which 'a student reads a short Engineering Fundamentals scenario'. None of it was evidence-bearing and all of it was discarded."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire generated draft; no wording from it survives.",
+    "Added the 2019 SI redefinition, which is the single most important recent change in this topic and was absent from the draft.",
+    "Stated NIST SP 811's own caveat that the 2008 edition predates the 20 May 2019 changes, and sourced every redefinition claim to SP 330 (2019) and the SI Brochure 9th edition instead.",
+    "Used the Mishap Investigation Board's own wording of the Mars Climate Orbiter unit error (lbf-s versus N-s in the AMD impulse data) rather than the widely repeated garbled versions.",
+    "Executed every published number with Python's decimal module before writing it, including the impulse conversion, the pressure conversion, the significant-figure examples, and the round-half-to-even examples; used Decimal rather than binary floats specifically so that the half-way rounding cases are exact.",
+    "Recorded that the U.S. survey foot was deprecated effective 1 January 2023, which SP 811 (2008) predates.",
+    "Added an explicit statement that the lesson is educational material and not engineering design guidance, per the subject's safety-adjacent review profile."
+  ],
+  "rightsIssues": [
+    "The BIPM SI Brochure 9th edition carries an explicit CC BY 4.0 copyright statement; attribution is required if any of its wording were reused. None was: all prose in this lesson is original.",
+    "JCGM 200:2012 (the VIM) is jointly copyrighted by the JCGM member organizations and states that reproduction requires prior written permission. Treated as REFERENCE_ONLY; definitions were read and restated in original wording, not reproduced.",
+    "NIST SP 330 (2019) carries a BIPM note stating that all BIPM works are internationally protected by copyright and that the document was drafted with permission obtained from the BIPM. Treated as REFERENCE_ONLY.",
+    "OpenStax University Physics Volume 1 is licensed CC BY-NC-SA 4.0, whose non-commercial and share-alike terms are incompatible with unrestricted reuse in this project, and openstax.org's robots.txt disallows GPTBot on /books/. Used as REFERENCE_ONLY: the significant-figure rules were verified against it and then written from scratch.",
+    "No engineering standard (ASME, ASTM, IEEE, ISO, ACI, AISC) text, table, or design value is reproduced or paraphrased anywhere in this lesson. ISO/IEC 80000 and ISO 5725 are referred to only by designation.",
+    "No source prose was adapted. Every sentence in the lesson and the markdown file is original EliExplains writing."
+  ],
+  "sourceRecords": [
+    {
+      "id": "bipm-si-brochure-9th-edition",
+      "title": "The International System of Units (SI), 9th edition (2019), version 4.01 (June 2026)",
+      "provider": "Bureau International des Poids et Mesures (BIPM)",
+      "url": "https://www.bipm.org/en/publications/si-brochure",
+      "sourceType": "standards-body",
+      "usage": "ATTRIBUTION_REQUIRED",
+      "license": "Creative Commons Attribution 4.0 International (stated in the brochure's copyright statement)",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Bilingual PDF (ISBN 978-92-822-2272-0, doi 10.59161/AUEZ1291) downloaded from https://www.bipm.org/documents/20126/41483022/SI-Brochure-9.pdf and read locally after text extraction; the canonical landing page is registered here. The English text begins at the second half of the volume. Supports: the definition of the SI by seven defining constants with their exact values and the statement that those numerical values have no uncertainty; Table 1 of defining constants; the statement that the base/derived distinction is in principle no longer needed but is retained as useful and historically established; Table 4 listing the 22 derived units with special names with their base-unit expressions; Table 7 of SI prefixes from quetta (10^30) to quecto (10^-30); the prohibition on compound prefixes and on using SI prefixes for powers of two; the kilogram as the only coherent unit whose name contains a prefix; the history of the international prototype of the kilogram including the ~25 microgram median divergence found in the 1989-1991 verification; and Resolution 1 of the 26th CGPM (2018) entering into force on 20 May 2019. bipm.org robots.txt has an empty Disallow directive."
+    },
+    {
+      "id": "nist-sp-330-2019",
+      "title": "The International System of Units (SI), NIST Special Publication 330, 2019 edition (D. B. Newell and E. Tiesinga, eds.)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.330-2019.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "Carries a BIPM note that all BIPM works are internationally protected by copyright and that this document was drafted with permission obtained from the BIPM; no open licence is stated",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "PDF (doi 10.6028/NIST.SP.330-2019) downloaded and read locally after text extraction. This is the U.S. edition of the SI Brochure and is the NIST document that reflects the post-2019 SI; it is what NIST directs readers to instead of SP 811 for current SI guidance. Supports: the constant-based definitions of all seven base units in U.S. spelling, in particular the kilogram defined by fixing h = 6.626 070 15 x 10^-34 J s (= kg m^2 s^-1) with the metre and second defined via c and dNuCs; the entry-into-force date of 20 May 2019; and the derived-unit tables. nvlpubs.nist.gov serves no robots.txt (404)."
+    },
+    {
+      "id": "nist-sp-811-2008",
+      "title": "Guide for the Use of the International System of Units (SI), NIST Special Publication 811, 2008 edition (A. Thompson and B. N. Taylor)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication811e2008.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "No explicit licence statement located in the document; treated as reference-only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "PDF downloaded and read locally after text extraction. IMPORTANT CAVEAT verified on the NIST SP 811 landing page (https://www.nist.gov/pml/special-publication-811): SP 811 has not been updated to reflect the SI changes that took effect on 20 May 2019, and NIST directs readers to SP 330 (2019) for current SI definitions. SP 811 is therefore used here only for material unaffected by the redefinition: Sec. 6.1 (unit-symbol typeface, capitalization, plurals, punctuation), Sec. 7.2 (the space between numerical value and unit symbol, including the degree Celsius rule and the adjectival-use rule), Sec. 9 (spelling of unit names, capitalization, irregular plurals), Sec. 10.2 (quantity symbols in italic, unit symbols in roman), Appendix B.6 (U.S. survey foot versus international foot, 1 international foot = 0.999 998 U.S. survey foot exactly), Appendix B.7 (rounding rules including round-half-to-even, and the 36 ft rounding discussion), and Appendix B.8/B.9 conversion tables with boldface marking exact factors, including 1 in = 2.54 E-02 m exactly, footnote 22 (1 lb = 4.535 923 7 E-01 kg exactly) and footnote 23 (1 lbf = 4.448 221 615 260 5 N exactly, from gn = 9.806 65 m/s^2 exactly), plus the tabulated psi-to-pascal factor 6.894 757 E+03 used as an independent cross-check on the worked example."
+    },
+    {
+      "id": "nist-cuu-expanded-uncertainty",
+      "title": "Expanded uncertainty and coverage factor (Essentials of expressing measurement uncertainty)",
+      "provider": "NIST Physical Measurement Laboratory, Constants, Units and Uncertainty reference",
+      "url": "https://physics.nist.gov/cuu/Uncertainty/coverage.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "No explicit licence statement on the page; treated as reference-only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Page fetched and read. Supports: expanded uncertainty U = k*uc(y), the coverage factor k typically in the range 2 to 3, k = 2 giving a level of confidence of approximately 95 % and k = 3 greater than 99 % when the normal distribution applies and uc is a reliable estimate of the standard deviation, and the relative expanded uncertainty Ur = U/|y|. physics.nist.gov serves no robots.txt (404)."
+    },
+    {
+      "id": "nist-cuu-uncertainty-basics",
+      "title": "Essentials of expressing measurement uncertainty: basic definitions and Type B evaluation",
+      "provider": "NIST Physical Measurement Laboratory, Constants, Units and Uncertainty reference",
+      "url": "https://physics.nist.gov/cuu/Uncertainty/basic.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "No explicit licence statement on the page; treated as reference-only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Pages basic.html and typeb.html fetched and read. Supports: the framing that these NIST 'essentials' are adapted from NIST Technical Note 1297, which is in turn based on the ISO Guide to the Expression of Uncertainty in Measurement; the measurement equation Y = f(X1..XN) with the Xi including corrections and sources of variability; and the distinction between Type A evaluation (statistical analysis of repeated observations) and Type B evaluation (scientific judgement using previous data, manufacturer's specifications, calibration certificates and handbook values, converted to a standard uncertainty by dividing a quoted multiple or confidence interval by the appropriate factor, e.g. 1.960 for 95 % and 2.576 for 99 % under a normal distribution)."
+    },
+    {
+      "id": "jcgm-200-2012-vim",
+      "title": "JCGM 200:2012, International vocabulary of metrology - Basic and general concepts and associated terms (VIM), 3rd edition, 2008 version with minor corrections",
+      "provider": "Joint Committee for Guides in Metrology (BIPM, IEC, IFCC, ILAC, ISO, IUPAC, IUPAP, OIML)",
+      "url": "https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "license": "Copyright shared jointly by the JCGM member organizations; the document states that reproduction requires prior written permission from the JCGM",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Bilingual PDF downloaded and read locally after text extraction. Supports the definitions restated in original wording: 2.13 measurement accuracy, 2.14 measurement trueness (with the note that trueness is inversely related to systematic error but unrelated to random error), 2.15 measurement precision, 2.16 measurement error, 2.17 systematic measurement error, 2.19 random measurement error, 2.26 measurement uncertainty, 2.30 standard measurement uncertainty, 2.31 combined standard uncertainty, 2.35 expanded measurement uncertainty, 2.38 coverage factor, and 4.14 resolution. Also supports the VIM's explicit warnings that 'measurement accuracy' should not be used for trueness and 'measurement precision' should not be used for accuracy. No text reproduced."
+    },
+    {
+      "id": "nist-ehandbook-bias-and-accuracy",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods, Section 2.1.1.3: Bias and Accuracy",
+      "provider": "NIST Information Technology Laboratory",
+      "url": "https://www.itl.nist.gov/div898/handbook/mpc/section1/mpc113.htm",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "No explicit licence statement on the page; treated as reference-only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Page fetched and read. Supports: accuracy as a qualitative term about agreement with a true or reference value; bias as the quantitative difference between the average of measurements on an object and its true value; identification of bias through calibration by a reference laboratory, check standards, measurement assurance programmes and interlaboratory comparisons; reduction of bias by calibration and correction rather than by repetition; and the warning that bias can be present even where all equipment and standards are properly calibrated, with temperature named as the most common such source in dimensional measurement."
+    },
+    {
+      "id": "nasa-mco-mishap-investigation-board-phase-i-1999",
+      "title": "Mars Climate Orbiter Mishap Investigation Board Phase I Report, November 10, 1999",
+      "provider": "NASA (Mishap Investigation Board chaired by Arthur G. Stephenson, Marshall Space Flight Center)",
+      "url": "https://llis.nasa.gov/llis_lib/pdf/1009464main1_0641-mr.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "No explicit licence statement in the report; treated as reference-only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "48-page PDF downloaded from NASA's Lessons Learned Information System and read locally after text extraction. Supports, in the Board's own terms: root cause was failure to use metric units in the coding of the ground software file 'Small Forces' (SM_FORCES) used in trajectory models; the Angular Momentum Desaturation (AMD) file was required by the project Software Interface Specification to carry impulse bit data in newton seconds (N-s) but delivered it in pound-force seconds (lbf-s); navigation therefore underestimated the trajectory effect by a factor of 4.45; AMD events occurred 10-14 times more often than the navigation team expected because MCO's solar array was asymmetric; launch 11 December 1998; carrier last seen ~09:04:52 UTC on 23 September 1999; TCM-4 executed 15 September 1999 targeting a 226 km first periapsis; estimates in the following week fell to 150-170 km, then to as low as 110 km about an hour before Mars orbit insertion against an 80 km minimum survivable periapsis; post-loss reconstruction with corrected small-forces velocity changes gave a 57 km initial periapsis and a trajectory ~170 km lower than planned. llis.nasa.gov robots.txt has an empty Disallow directive."
+    },
+    {
+      "id": "fr-2020-21902-deprecation-us-survey-foot",
+      "title": "Deprecation of the United States (U.S.) Survey Foot, 85 FR 62698 (October 5, 2020)",
+      "provider": "U.S. Department of Commerce (NIST and NOAA National Geodetic Survey), Federal Register",
+      "url": "https://www.federalregister.gov/documents/2020/10/05/2020-21902/deprecation-of-the-united-states-us-survey-foot",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. Government notice; no explicit licence statement recorded from the source, so treated as reference-only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Document metadata and abstract retrieved through the Federal Register public API (https://www.federalregister.gov/api/v1/documents/2020-21902.json) after the HTML page returned a bot-block redirect. Supports: NIST and NOAA's National Geodetic Survey jointly announced the final decision to deprecate the U.S. survey foot on 31 December 2022; beginning 1 January 2023 it should not be used and is superseded by the international foot definition (1 foot = 0.3048 metre exactly) in all applications; either 'foot' or 'international foot' may be used as needed for clarity. federalregister.gov robots.txt disallows only search and account paths, not /documents/."
+    },
+    {
+      "id": "openstax-university-physics-v1-significant-figures",
+      "title": "University Physics Volume 1, Section 1.6: Significant Figures",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/1-6-significant-figures",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (stated on the page)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Page fetched and read. Verifies the classroom significant-figure conventions that NIST's guides do not state in teaching form: multiplication and division limited by the factor with the fewest significant figures; addition and subtraction limited to the decimal place of the least precise term; zeros significant except as placeholders; trailing-zero ambiguity in a value like 1300 resolved by scientific notation; and exact numbers, including defined conversion factors such as 100 cm per 1 m, not limiting significant figures. The NC/SA terms are incompatible with reuse here and openstax.org's robots.txt disallows GPTBot on /books/, so this source is reference-only: the rules were verified and then written from scratch, and every numerical example in the lesson is EliExplains' own and was executed in Python before publication."
+    }
+  ]
+}

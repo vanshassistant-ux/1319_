@@ -29,8 +29,11 @@ agency's own PDF, or an Internet Archive capture — and record in the source no
 you actually read. If you cannot verify a claim, cut it. Never assert something you could
 not check.
 
-Write intermediate files to your session scratchpad, never to shared `/tmp` — parallel
-workers have overwritten each other's scratch files there.
+**Scratch files.** The session scratchpad is SHARED with every other worker running right
+now, and `/tmp` is worse. Workers have already overwritten each other's scripts and one
+executed another's file by mistake. Prefix every scratch file you create with your own topic
+slug — `myslug_build.py`, not `build.py` — and never read back a scratch file you did not
+write in this run.
 
 ## Workflow
 

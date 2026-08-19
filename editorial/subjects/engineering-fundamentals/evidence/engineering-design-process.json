@@ -1,0 +1,268 @@
+{
+  "topicId": "engineering-fundamentals:engineering-thinking:engineering-design-process",
+  "subjectId": "engineering-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "The design process as an iterative loop rather than a one-way sequence of stages",
+      "The distinction between a stakeholder need, an engineering requirement, and a specification",
+      "Functional versus non-functional (performance, interface, crosscutting) requirements",
+      "Verification versus validation",
+      "Design reviews and decision gates",
+      "Concept generation as an activity separate from concept selection",
+      "Decision matrices for selection and the judgment embedded in their weights and scales",
+      "Documentation and captured rationale as an engineering deliverable",
+      "Failure and discrepancy found early as information that redirects the loop",
+      "How authoritative descriptions of the process differ in granularity rather than substance"
+    ],
+    "supporting": [
+      "Iteration versus recursion as NASA defines them",
+      "Requirements creep and change control",
+      "Cost lock-in early in the life cycle",
+      "Trade studies and trade trees as pruning tools"
+    ],
+    "outOfScope": [
+      "The engineering profession and its disciplines (owned by what-engineers-do)",
+      "Constraint taxonomies and quantitative tradeoff analysis (owned by engineering-constraints-and-tradeoffs)",
+      "Prototyping methods in depth (owned by prototyping)",
+      "Test planning and validation methods in depth (owned by testing-and-validation)",
+      "Any design guidance for a real artifact, structure, vessel, circuit, or machine"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "NASA's systems engineering processes are applied both iteratively and recursively; 'iterative' means reapplying a process to the same product to correct a discovered discrepancy or variation from requirements, and 'recursive' means repeating the processes to design the next lower layer or to mature the definition in the next life cycle phase.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "ABET's accreditation criteria define engineering design as an iterative, creative, decision-making process that devises a system, component, or process to meet desired needs and specifications within constraints, and that includes identifying opportunities, developing requirements, analysis and synthesis, generating multiple solutions, evaluating them against requirements, considering risks, and making trade-offs.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "abet-eac-criteria-2025-2026"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "NASA's SE engine comprises 17 common technical processes: four system design processes (stakeholder expectations definition, technical requirements definition, logical decomposition, design solution definition), five product realization processes (implementation, integration, verification, validation, transition), and eight technical management processes (including technical planning, requirements management, configuration management, technical data management, technical assessment, and decision analysis).",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Verification shows compliance with requirements — proof that the product meets each 'shall' statement by test, analysis, inspection, or demonstration — and answers 'Did I build the product right?'; validation shows the product accomplishes its intended purpose in the intended environment for stakeholders and answers 'Am I building the right product?'",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Verification traces back to the approved requirement set and the configuration baseline, while validation traces back to the concept of operations; validation can be performed in each development phase on phase products such as models, not only at delivery on end products.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "NASA distinguishes functional requirements (what functions must be performed) from performance requirements (how well those functions must be performed) and interface requirements, and groups environmental, safety, human factors and '-ilities' requirements as crosscutting.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Technical requirements are validated as clear, correct, complete and achievable, then baselined and placed under configuration control, typically at a System Requirements Review.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Requirements grow during a project ('requirements creep'), and some genuinely new requirements could not have been anticipated during requirements definition; NASA states that a relevant system cannot ignore them, so change is managed through configuration management rather than forbidden.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "NASA life cycle phases are separated by Key Decision Points, events at which a decision authority determines readiness to progress; a Preliminary Design Review demonstrates that the preliminary design meets requirements at acceptable risk, that the correct design option was selected, interfaces are identified and verification methods described, and a Critical Design Review demonstrates design maturity adequate to proceed to fabrication, assembly, integration and test.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "NASA's decision analysis guidance treats generating alternatives as a distinct step, suggests brainstorming with knowledgeable participants and literature search of related systems, says all possible options should be considered, and uses a trade tree to prune variations before extensive analysis.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "NASA describes completing a decision matrix as a default, iterative evaluation method, warns that normalized scales require repeatable operational definitions, and notes that uncertainty matters when reducing it could credibly change the ranking of alternatives.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Documentation is treated as engineering work product: the Technical Data Management process exists to plan for, acquire, manage and use technical data across the life cycle, the design processes end by capturing work products, key decisions, rationale, assumptions and lessons learned, and trade study assumptions, models and results are documented in the project archives.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "NASA states that it is important to detect as many errors and failures as possible at the lowest level of integration and early in the life cycle so that changes can be made through the design processes with minimum impact, and notes that late identification and fixes cost considerably more later in the life cycle.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Authoritative descriptions of the design process differ mainly in granularity: NASA's handbook enumerates 17 technical processes, NASA's grades 6-12 classroom material presents a short verb loop (ask, imagine, plan, create, test, improve, share), an open introductory engineering text gives a seven-step framework that makes constraint identification its own step, and ABET gives a definition of the activity with no step list at all.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "nasa-se-handbook-sp-2016-6105-rev2",
+        "abet-eac-criteria-2025-2026",
+        "nasa-next-gen-stem-engineering-design-process",
+        "libretexts-intro-engineering-design-process"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "ABET Student Outcome 2 requires an ability to apply engineering design to produce solutions meeting specified needs with consideration of public health, safety and welfare as well as global, cultural, social, environmental and economic factors, and Criterion 5 requires a culminating major engineering design experience incorporating appropriate engineering standards and multiple constraints.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "abet-eac-criteria-2025-2026"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "An open introductory engineering text presents the process as define objective, identify constraints, generate alternatives (at least three), model and analyze, evaluate trade-offs with a decision matrix, iterate and refine, and communicate.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-intro-engineering-design-process"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The worked example's arithmetic (records and bytes per day, memory endurance, duty-cycled average current, battery endurance, and the weighted decision-matrix totals) was executed in python3 before publication; all input values are illustrative teaching values rather than component specifications.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "nasa-se-handbook-sp-2016-6105-rev2"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "How many stages the engineering design process has, and what they are called.",
+      "positions": [
+        "NASA/SP-2016-6105 Rev2 enumerates 17 common technical processes grouped as system design, product realization, and technical management.",
+        "NASA Next Gen STEM classroom material for grades 6-12 uses a short verb loop: ask, imagine, plan, create, test, improve, share.",
+        "An open introductory engineering text gives seven steps and promotes constraint identification to its own step.",
+        "ABET defines engineering design as an iterative, creative, decision-making process and lists the activities it involves without prescribing stages."
+      ],
+      "resolution": "Treated as a difference of granularity and audience rather than a factual disagreement. The lesson states all four descriptions, notes that every one contains problem definition, alternative generation, evaluation, iteration and communication, and explains that the professional description mainly adds separations (verification from validation, requirement from specification, gate from ordinary work) that short loops collapse."
+    },
+    {
+      "issue": "Whether 'non-functional requirement' is the standard term.",
+      "positions": [
+        "NASA uses functional, performance and interface requirements plus crosscutting requirements including the '-ilities', safety, environmental and human factors.",
+        "Software and general engineering practice commonly group everything that is not a function as 'non-functional'."
+      ],
+      "resolution": "The lesson teaches the NASA vocabulary as the precise version, presents 'non-functional' as the common umbrella term, and tells students the test that matters is whether a statement is measurable, not which bucket it falls in."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft asserted nothing checkable about engineering design; its body text ('a concept students use to organize information', 'a label on a toolbox drawer') was placeholder boilerplate with no factual content to verify.",
+    "The draft's claim that the topic is best understood by 'defining it and applying it to an example' is not a claim about the engineering design process at all."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire generated draft; no wording was retained.",
+    "Added the need / requirement / specification distinction, which the draft did not mention.",
+    "Added verification versus validation with NASA's definitions, which the draft did not mention.",
+    "Added the iteration-versus-staircase framing that is the substantive point of the topic.",
+    "Added an explicit statement that the lesson is educational material and not engineering design guidance.",
+    "Added an executed, unit-carrying worked example that runs one problem through the loop twice."
+  ],
+  "rightsIssues": [
+    "ABET's criteria document is copyrighted with all rights reserved and reproduction requires written permission; it is recorded REFERENCE_ONLY and none of its wording is reproduced in the lesson.",
+    "The LibreTexts chapter is offered under CC BY-NC, whose non-commercial restriction may not fit this project; it is recorded REFERENCE_ONLY and only its step count and step names are described, in EliExplains' own words.",
+    "NASA/SP-2016-6105 Rev2 is a NASA publication that NTRS marks 'Public Use Permitted' with no copyright owner listed; individual cover photographs and figures carry their own credits, and none are reproduced. All lesson prose is original.",
+    "No engineering standard (ASME, ASTM, IEEE, ISO) text, table, or design value is reproduced or paraphrased anywhere in this lesson."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nasa-se-handbook-sp-2016-6105-rev2",
+      "title": "NASA Systems Engineering Handbook, NASA/SP-2016-6105 Rev2",
+      "provider": "Office of the Chief Engineer, National Aeronautics and Space Administration (record on the NASA Technical Reports Server)",
+      "url": "https://ntrs.nasa.gov/citations/20170001761",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Primary source for iteration versus recursion, the 17 common technical processes, functional/performance/interface requirements, requirements baselining and requirements creep, verification versus validation, Key Decision Points and the PDR/CDR definitions, decision analysis and decision-matrix limits, trade studies, technical data management, and the early-failure-detection argument. NTRS lists this document as 'Public Use Permitted' with no copyright owner. The copy actually read was the 508-compliant PDF at https://www.nasa.gov/wp-content/uploads/2018/09/nasa_systems_engineering_handbook_0.pdf, text-extracted locally with pypdf; page references were checked against the handbook's own section numbering (2.1, 2.4, 4.2, 4.4, 5.0, 6.2, 6.6, 6.8 and Appendix B glossary)."
+    },
+    {
+      "id": "abet-eac-criteria-2025-2026",
+      "title": "Criteria for Accrediting Engineering Programs, Effective for Reviews during the 2025-2026 Accreditation Cycle",
+      "provider": "Engineering Accreditation Commission, ABET",
+      "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2025-2026/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "license": "Copyright (c) 2024 by ABET. All rights reserved; reproduction requires written permission from the publisher.",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Second authoritative description of engineering design: the accreditation definition (iterative, creative, decision-making; identify opportunities, develop requirements, analyze and synthesize, generate multiple solutions, evaluate against requirements, consider risks, make trade-offs), Student Outcome 2, and the Criterion 5 culminating major design experience. Read as the PDF, text-extracted locally. Facts synthesized; no ABET wording reproduced in the lesson. URL aligned to the copy already registered; this worker read https://www.abet.org/wp-content/uploads/2024/11/2025-2026_EAC_Criteria.pdf."
+    },
+    {
+      "id": "nasa-next-gen-stem-engineering-design-process",
+      "title": "Engineering Design Process, Grades 6 to 12 (Next Gen STEM classroom connections)",
+      "provider": "Office of STEM Engagement, National Aeronautics and Space Administration",
+      "url": "https://www.nasa.gov/wp-content/uploads/2022/07/engineering_design_process_classroom_connections_508.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Used only to establish that NASA's own classroom description of the same process is a short verb loop (the student worksheet word bank gives ask, imagine, plan, create, test, improve, share, alongside science, math, technology and ingenuity), which supports the granularity point. Read as the PDF, text-extracted locally."
+    },
+    {
+      "id": "libretexts-intro-engineering-design-process",
+      "title": "7: The Engineering Design Process, in Introduction to Engineering - Thinking Like an Engineer",
+      "provider": "Jonathan Compton; Engineering LibreTexts (Antelope Valley College course shell)",
+      "url": "https://eng.libretexts.org/Courses/Antelope_Valley_College/Introduction_to_Engineering_-_Thinking_Like_an_Engineer/07:_The_Engineering_Design_Process",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC (as displayed on the page)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Used as a third, textbook-variant description of the process: define objective, identify constraints, generate alternatives (at least three), model and analyze, evaluate trade-offs with a decision matrix, iterate and refine, communicate. Recorded REFERENCE_ONLY because the CC BY-NC non-commercial term may not suit this project; only the structure is described, in original wording."
+    }
+  ]
+}

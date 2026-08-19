@@ -1,0 +1,254 @@
+# Estimation and Order of Magnitude
+
+## In 30 Seconds
+
+An order-of-magnitude estimate answers "roughly how big?" before anyone runs a real calculation. You split an unknown into factors you can bound, multiply them at one significant figure, and check the result against a quantity you already trust. Engineers use estimates to kill infeasible concepts cheaply, to size hardware, and to catch a simulation that has quietly gone wrong. The rigour lives in the assumptions, which get written down.
+
+## Why This Matters
+
+Estimation is the skill that decides which detailed work is worth doing. In coursework it lets you check a homework answer that is off by a factor of a thousand before you hand it in. In practice it is how concepts get screened, how systems get sized, and how a computed or simulated result gets an independent second opinion that costs nothing. It also builds a mental library of reference quantities - densities, pressures, power levels, energy contents - that makes every later subject faster to learn. And it carries a professional habit worth forming early: an estimate is only useful if it is labelled as one and shipped with the assumptions behind it.
+
+## Learning Objectives
+
+- Define order of magnitude and explain why an estimate good to a factor of two or three is often decisive early in a design.
+- Apply decomposition to turn an unanswerable quantity into a product of factors that can each be bounded.
+- Use bounding, the geometric mean of limits, dimensional analysis, and comparison with memorised reference quantities to produce and check an estimate.
+- Analyze how errors accumulate when independent estimates are multiplied, and evaluate when the partial-cancellation argument stops applying.
+- Evaluate a finished estimate against published data and document it with its ground rules, assumptions, and expected accuracy band.
+
+## The College Version
+
+### Order of magnitude: the number of tens
+
+The order of magnitude of a quantity is the power of ten closest to it. Earth's atmosphere is of order 10^18 kg. Annual United States gasoline consumption is of order 10^11 gallons. A person's steady power output is of order 10^2 watts. Written this way the question stops being "what is the number?" and becomes "how many tens is it?"
+
+That reframing is what makes estimation cheap. An order-of-magnitude calculation is carried at one significant figure, because a second digit implies precision the inputs do not have. The working target is usually a factor of two or three, and early in a design that band is often decisive. If a concept needs a battery ten times larger than anything that fits the vehicle, no amount of refinement rescues it; if it needs one 30 percent too large, the estimate has told you the concept is alive. Estimation does not compete with analysis - it decides which analysis is worth paying for.
+
+It is also a defence. A spreadsheet or a simulation can be wrong by orders of magnitude for reasons that never show up on screen - a units slip, a sign error, a detached boundary condition - and the only cheap independent check is a number you produced yourself by another route.
+
+### Decomposition and the Fermi method
+
+Estimation is not guessing, because you never guess the answer. You guess inputs you have some grip on and let arithmetic carry them. That is decomposition: rewrite an unknown you cannot judge as a product of quantities you can bound.
+
+The method is named for Enrico Fermi, and the standard anecdote is documented. At the Trinity test on 16 July 1945 he estimated the yield by dropping small pieces of paper into the arriving blast wave and watching how far they were carried sideways; from that displacement he inferred roughly 10 kilotons of TNT equivalent. The long-published Department of Energy figure is 21 kilotons, and a 2021 reanalysis of trinitite by Los Alamos radiochemists puts it at 24.8 plus or minus 2 kilotons. Fermi was low by a factor of about 2.1 to 2.5 - and he produced the number in the field, in seconds, with no instrument.
+
+Two details matter more than the drama. The answer was useful because it was fast - the instrumented determination took far longer. And the error was not random: paper scraps sense only the blast wave, which does not carry the thermal and nuclear-radiation share of the energy, so the method was expected to read low. Knowing the direction of an estimate's bias is often as valuable as knowing its size.
+
+A modern Fermi decomposition uses a few conventional moves: build a large length from a small one you can picture, get areas and volumes from estimated lengths, get masses from volumes and approximate densities, and get rates from a count times a frequency. Each move should be one you could defend out loud.
+
+### Bounding and squeezing
+
+When you have no intuition for a factor, do not invent one - bound it. Ask what value is certainly too large and what is certainly too small, then take the geometric mean of the limits, the square root of their product, as your working figure.
+
+The geometric mean is right here because estimation lives in logarithms. With bounds of 10 and 1000, the arithmetic mean is 505, a factor of 50 above the lower bound but only a factor of 2 below the upper: it has silently sided with the large end. The geometric mean is 100, exactly a factor of 10 from each. Symmetry in ratio, not in difference, is what an order-of-magnitude answer needs.
+
+Bounding also gives a stopping rule. If both limits lead to the same engineering decision, you are finished; if they lead to opposite ones, you have learned which quantity to go and measure. That is the squeeze: tighten only the factor whose range still straddles the decision.
+
+### Sanity checks: dimensions and anchors
+
+Two checks catch most estimation blunders, and both are fast.
+
+The first is dimensional. Before putting numbers in, confirm the expression produces the kind of quantity you want. For the atmosphere estimate below the formula is M = P A / g. Pressure is force per area, kg/(m s^2); times an area in m^2, divided by an acceleration in m/s^2, leaves kilograms. A dimensional check cannot tell you the answer is right, but it reliably catches an inverted or missing factor.
+
+The second is comparison to an anchor. Convert the result into a form you have intuition for and see whether it is absurd. A 250 Calorie snack bar holds 250 x 4184 J, about 1.05 MJ. Lifting a 70 kg person with that energy, at g = 9.80665 m/s^2, would raise them E/(m g) = about 1520 m. Startling, correct, and durable: it fixes how much chemical energy food carries relative to mechanical work.
+
+Anchors only work if you carry a few in your head; a dozen is plenty. Standard gravity is 9.80665 m/s^2, fixed by convention since 1901. The standard atmosphere is exactly 101 325 Pa, fixed since 1954 - also the pressure under about 10.3 m of water, since 101325 / (1000 x 9.80665) = 10.33 m. Water is 1.000 x 10^3 kg/m^3, iron or steel about 7.8 x 10^3, aluminium 2.7 x 10^3, lead 11.3 x 10^3, air about 1.29 kg/m^3 at 0 degrees C. A food Calorie is a kilocalorie, exactly 4184 J thermochemical, so a 2000 Calorie daily intake is 2000 x 4184 / 86400 = 96.9 W of continuous metabolic power - which is why 10^2 W is the right order for human power. Sustained mechanical output tops out in the same decade: race data summarised in a recent review put a grand-tour climbing specialist at about 5.8 W/kg for 20 minutes, roughly 400 W for a 70 kg rider.
+
+### Worked example 1: the mass of the atmosphere
+
+The whole atmosphere presses on the whole planet, so its weight divided by surface area is the surface pressure. Rearranged: M = P A / g, with A = 4 pi R^2.
+
+Assumptions, stated: the atmosphere is thin compared with Earth's radius; g is constant over its depth; surface pressure everywhere equals the sea-level standard atmosphere; Earth is a sphere of its equatorial radius, which slightly overstates the area because Earth is oblate.
+
+Fermi pass, one significant figure: R = 6.4 x 10^6 m, P = 1 x 10^5 Pa, g = 10 m/s^2, giving A = 5.15 x 10^14 m^2 and M = 5.15 x 10^18 kg - order of magnitude 10^18 kg.
+
+Refined pass with the anchors: NASA gives Earth's equatorial diameter as 12 756 km, so R = 6.378 x 10^6 m and A = 5.112 x 10^14 m^2; with P = 101 325 Pa and g = 9.80665 m/s^2, M = 5.28 x 10^18 kg.
+
+Comparison. Trenberth and Smith (2005), using 23 years of reanalysis data, report a total mean atmospheric mass of 5.1480 x 10^18 kg, so the refined estimate is 2.6 percent high. The rough Fermi pass landed at 5.15 x 10^18 kg, within 0.02 percent - and that agreement is luck, not accuracy: rounding R and g down happened to cancel rounding P down. Reporting it as "accurate to 0.02 percent" would be a false claim about the method.
+
+The 2.6 percent overshoot in the refined pass is not luck; it is diagnosable. Sea-level standard pressure is not the mean pressure at the actual solid surface, because most of that surface sits above sea level. The same paper gives a global mean total surface pressure of 985.50 hPa; substituting it gives 5.14 x 10^18 kg, now 0.2 percent low. The estimate did not just produce a number - it located the assumption that limited it.
+
+### Worked example 2: United States gasoline consumption
+
+Assumptions, stated: U.S. population 3 x 10^8; about two-thirds drive, so 2 x 10^8 drivers; each drives 1 x 10^4 miles per year; the fleet averages 25 miles per gallon.
+
+Estimate: (2 x 10^8)(1 x 10^4 mi/yr) / (25 mi/gal) = 8.0 x 10^10 gallons per year, or 2.2 x 10^8 gallons per day - about 5.2 million barrels per day at 42 gallons to the barrel.
+
+Comparison. The Energy Information Administration reports that in 2023 U.S. finished motor gasoline consumption averaged about 8.94 million barrels per day, about 376 million gallons per day, or roughly 1.37 x 10^11 gallons per year. The estimate is 0.58 times that: same order of magnitude, low by a factor of about 1.7.
+
+That is a pass, not a triumph, and the honest reading is that several inputs were rounded the same way. Annual mileage per driver exceeds 10^4, on-road fleet fuel economy is below 25 mi/gal, and finished motor gasoline covers light trucks and commercial vehicles that the word "drivers" quietly ignores. Redo it with 1.4 x 10^4 miles and 22 mi/gal and the result is 1.27 x 10^11 gallons per year, within 8 percent. Only two assumptions changed. That is what a sensitivity check buys - it names the inputs the answer actually depends on.
+
+### How estimation errors really behave
+
+Students often assume that multiplying four shaky numbers produces a catastrophically shaky answer. Usually it does not, and the reason is worth understanding rather than trusting.
+
+For a product of independent quantities, relative uncertainties combine in quadrature: the relative standard deviation of the product is the root of the sum of the squares of the factors' relative standard deviations, as the NIST/SEMATECH handbook states for products of two variables. Error therefore accumulates roughly as the square root of the number of factors rather than in proportion to it - some factors are guessed high, some low, and the misses partially cancel.
+
+A simulation makes the effect concrete. Take four factors, each uncertain by up to a factor of two either way. The worst case is 2^4 = 16. Drawing 400 000 independent trials, with each factor's log error uniform across that range, gives a root-mean-square error of a factor of 2.2, not 16. With eight such factors the worst case is 256 and the simulated RMS error is 3.1.
+
+Now the honest limit, which is where the argument gets abused. Quadrature requires independence; the same handbook formula carries a covariance term that vanishes only when the factors are uncorrelated. Rerun the four-factor simulation with every factor biased the same way - the standard failure of an optimistic estimator, or of a team reading one out-of-date table - and the RMS error grows from 2.2 to 5.0. Correlated errors do compound, and the gasoline estimate above is that case in miniature: mileage low, fuel economy high, driver count understated, all in one direction. Partial cancellation is a reason to fear long product chains less, not a licence to stop asking whether your assumptions share a source.
+
+### Using estimates in practice - and labelling them
+
+Estimates earn their keep in three places. They reject infeasible concepts before anyone builds a model - if required heat rejection exceeds the available surface area by a factor of 30, the concept is dead. They size a system, fixing the rough magnitude of a pump, beam, battery or budget so detailed design starts somewhere sensible. And they check results: an estimate made independently of a simulation is the cheapest available test of it.
+
+The obligation that goes with all three is documentation. An estimate must be labelled as an estimate and must travel with its assumptions - not decorum, but codified practice. The U.S. Government Accountability Office's cost estimating guide names four characteristics of a reliable estimate - comprehensive, well documented, accurate, and credible - and devotes a full step of its twelve-step process to identifying ground rules and assumptions, noting that the most uncertain assumptions are precisely the ones that must be documented for an estimate to be credible at all.
+
+The failure mode is specific and common: an unlabelled estimate propagates into a document, loses its provenance, and is later read as a specification. Nobody decides to do this - a rounded number on a slide looks identical to a measured one. The countermeasure is mechanical: state the figure as an estimate, state its assumptions, state its expected accuracy band, and state what would have to be measured to tighten it.
+
+One standing caution: this lesson is educational material, not engineering design guidance. Estimates are for framing problems and checking work. Real design decisions require a licensed engineer working to the governing code, and no number in this lesson should be used to size anything that carries a load, a current, or a pressure.
+
+## Key Vocabulary
+
+- **Order of magnitude** - The power of ten nearest a quantity's value, used so that quantities of very different size can be compared by counting tens rather than digits.
+- **Fermi problem** - A question with no directly available answer that is attacked by splitting it into a product of factors each of which can be bounded from ordinary knowledge.
+- **Decomposition** - Rewriting a quantity you cannot judge as a product or sum of quantities you can, so that the arithmetic rather than intuition produces the answer.
+- **Bounding** - Fixing a value that is certainly too large and one that is certainly too small for an unknown factor, instead of asserting a single figure for it.
+- **Geometric mean** - The square root of the product of two numbers; the natural midpoint when the two are separated by a ratio rather than a difference, and therefore the right choice between wide estimation bounds.
+- **Dimensional analysis** - Checking that the units produced by an expression match the units of the quantity being sought, which exposes inverted or missing factors before any number is entered.
+- **Reference quantity** - A memorised value - a density, a pressure, a power, an energy content - held to one or two figures so that a new result can be judged against something already known.
+- **Sensitivity check** - Recomputing an estimate with one input changed to see how much the answer moves, which identifies which assumption is worth the effort of measuring.
+- **Correlated error** - A pattern in which several inputs are wrong in the same direction, usually from a shared source or a shared optimism, which makes a product's total error grow far faster than independent errors would.
+- **Ground rules and assumptions** - The recorded conditions an estimate depends on - scope, rates, exclusions, baseline data - which must accompany the figure for the estimate to be auditable.
+
+## Eli-10
+
+Nobody can guess how many gallons of gasoline America burns in a year. But you can guess how many people live there, what fraction of them drive, how far a typical person drives, and how far a car goes on a gallon. Multiply those four guesses and you get a real answer. That is the trick: you never guess the thing you want, you guess smaller things you actually know something about, and let the multiplication do the work. Then you ask whether the answer is even possible - if your car needs more gasoline than exists, something went wrong.
+
+## Eli's Analogy
+
+It is like judging the weight of a suitcase you cannot lift. You do not guess the weight. You think: it is about the size of a big cardboard box, it is packed with clothes rather than books, clothes are lighter than water - so it is well under the weight of a boxful of water. You reasoned from things you know to the thing you do not.
+
+**Where the analogy breaks down.** The suitcase has a real weight waiting to be checked on a scale. Many engineering estimates cover quantities nobody will ever measure directly - a system's lifetime cost, a failure rate, a load that has not happened yet - so there is no scale to settle the matter. The analogy also makes it sound like one clean chain of reasoning. Real estimates need bounds on each step and a note of which assumption the answer is most sensitive to.
+
+## Worked Example
+
+Estimate the mass of Earth's atmosphere. The whole atmosphere presses on the whole surface, so its weight divided by surface area is the surface pressure: M = P A / g, with A = 4 pi R^2. A dimensional check first - kg/(m s^2) times m^2 divided by m/s^2 leaves kg, so the formula is at least the right kind of thing. Fermi pass at one significant figure: R = 6.4 x 10^6 m, P = 1 x 10^5 Pa, g = 10 m/s^2, giving A = 5.15 x 10^14 m^2 and M = 5.15 x 10^18 kg. Refined pass taking Earth as a sphere of its equatorial radius, R = 6.378 x 10^6 m from NASA's 12 756 km equatorial diameter, with P = 101 325 Pa and g = 9.80665 m/s^2, gives 5.28 x 10^18 kg. Trenberth and Smith (2005) report 5.1480 x 10^18 kg, so the refined estimate is 2.6 percent high. The overshoot is diagnosable: sea-level standard pressure exceeds the global mean pressure at the actual solid surface, which the same paper puts at 985.50 hPa; substituting it gives 5.14 x 10^18 kg, 0.2 percent low. The rough pass looked closer than the refined one, but only because its rounding errors cancelled - luck, not accuracy.
+
+## Common Mistakes
+
+**Reporting an estimate to three or four significant figures because the calculator produced them.**
+
+Carry one significant figure. A Fermi answer of 8.0 x 10^10 gallons per year is honest; writing 79,984,000,000 claims a precision none of the four inputs possess.
+
+**Treating a lucky close agreement as evidence that the method is accurate.**
+
+The rough atmosphere pass landed within 0.02 percent of the published mass while the more careful pass was 2.6 percent off, because rounding errors happened to cancel. Judge the method by its assumptions, not by a single result.
+
+**Assuming errors in a product always stack up to the worst case.**
+
+For independent factors, relative uncertainties combine in quadrature, so four factors each uncertain by a factor of two give a typical error near a factor of 2.2, not 16. But this holds only while the errors are genuinely independent.
+
+**Averaging wide bounds arithmetically.**
+
+Bounds of 10 and 1000 have arithmetic mean 505, which sits a factor of 50 above the lower bound and only a factor of 2 below the upper. Use the geometric mean, 100, which is a factor of 10 from each.
+
+**Letting an estimate travel without its label and its assumptions.**
+
+State it as an estimate, record the ground rules it rests on, and give its expected accuracy band. GAO's cost guide treats documentation of assumptions as a condition of an estimate being credible at all; an unlabelled figure is what later gets read as a specification.
+
+## Compare / Contrast
+
+**An estimate vs. A guess** - A guess asserts the answer directly. An estimate asserts only bounded inputs and lets arithmetic produce the answer, so it can be audited, corrected factor by factor, and tested for sensitivity.
+
+**An order-of-magnitude estimate vs. A precision calculation** - The estimate is carried at one significant figure and aims at a factor of two or three, cheaply and early; the precision calculation aims at a few percent and costs orders of magnitude more effort. They answer different questions and the first usually decides whether the second is worth doing.
+
+**Independent errors in a product vs. Correlated errors in a product** - Independent relative errors combine in quadrature and partially cancel; four factors each uncertain by a factor of two give a simulated RMS error near 2.2. Bias every factor the same way and the same simulation gives 5.0, because the covariance term no longer vanishes.
+
+**Arithmetic mean of bounds vs. Geometric mean of bounds** - The arithmetic mean is symmetric in difference and therefore sides with the larger bound when the range spans decades; the geometric mean is symmetric in ratio, which is the symmetry an order-of-magnitude answer needs.
+
+## Key Takeaway
+
+Estimation is decomposition plus arithmetic plus a sanity check: guess only the inputs you can bound, carry one significant figure, and test the answer against a quantity you already know. An estimate that is not labelled as an estimate, with its assumptions attached, eventually gets read as a specification.
+
+## Practice Question Bank
+
+**1. What does it mean to say the mass of Earth's atmosphere is 'of order 10^18 kg'?**
+
+   A. The mass has been measured as exactly 1,000,000,000,000,000,000 kg
+   B. The nearest power of ten to the mass is 10^18, so the figure is being reported to roughly one significant figure
+   C. The mass is known to within plus or minus 10^18 kg
+   D. The mass was calculated using eighteen separate assumptions
+
+*Answer: B.* An order of magnitude is the power of ten nearest a quantity, and order-of-magnitude work is carried at one significant figure. The published value is 5.1480 x 10^18 kg, which is of order 10^18 without being exactly 10^18, so the 'measured exactly' choice is wrong. An uncertainty of plus or minus 10^18 kg would be a band as large as the answer itself, which is not what the phrase describes, and the exponent is a count of tens, not a count of assumptions.
+
+*Difficulty: recall - Skill: Interpreting order-of-magnitude notation - Sources: openstax-university-physics-v1-estimates-and-fermi-calculations, trenberth-smith-2005-mass-of-the-atmosphere*
+
+**2. Fermi estimated the Trinity yield at about 10 kilotons by watching paper scraps displaced by the blast wave. Given a currently assessed yield of 24.8 kilotons, how should this result be characterised?**
+
+   A. The method failed, since the estimate was less than half the assessed value
+   B. The estimate was accurate to within a few percent
+   C. The estimate was low by a factor of about 2.5, a normal and useful outcome for a field estimate - and the shortfall is expected, because the blast wave excludes the thermal and radiation share of the energy
+   D. The estimate was high, because paper scraps overrespond to a shock front
+
+*Answer: C.* 24.8 / 10 = 2.48, so Fermi was low by roughly a factor of 2.5, inside the factor-of-two-to-three band an order-of-magnitude estimate targets. The direction is predictable rather than random: the paper responds only to the blast wave, and the blast wave does not carry the thermal and nuclear radiation. Calling that a failure ignores what the method was for, 'accurate to within a few percent' is simply false, and the estimate came out low rather than high.
+
+*Difficulty: understanding - Skill: Judging estimate quality and diagnosing the direction of bias - Sources: katz-2021-fermi-at-trinity, lanl-trinity-revisited-2021*
+
+**3. You need a factor you have no feel for, but you are confident it lies between 10 and 1000. What single working value should you carry into the estimate?**
+
+   A. 100, the geometric mean of the bounds
+   B. 505, the arithmetic mean of the bounds
+   C. 10, the lower bound, to stay conservative
+   D. 1000, the upper bound, to build in margin
+
+*Answer: A.* The geometric mean, sqrt(10 x 1000) = 100, sits a factor of 10 from each bound, which is the symmetry an order-of-magnitude answer needs. The arithmetic mean, 505, is a factor of 50 above the lower bound but only a factor of 2 below the upper one, so it has silently sided with the large end. Carrying either bound rather than a central value turns the estimate into a one-sided limit and destroys any claim that the result is a best guess.
+
+*Difficulty: application - Skill: Choosing a working value from bounds - Sources: openstax-university-physics-v1-estimates-and-fermi-calculations*
+
+**4. An estimate multiplies four independent factors, each uncertain by up to a factor of two. A colleague says the answer could therefore be off by a factor of 16. What is the best response?**
+
+   A. Agree - worst-case errors are the only defensible way to report an estimate
+   B. Disagree - errors in a product always cancel completely, so the estimate is as good as its best factor
+   C. Agree, because uncertainties in a product add linearly
+   D. 16 is the worst case, but for independent factors relative errors combine in quadrature, and simulation puts the typical error near a factor of 2.2 - though that argument fails if the four assumptions are biased the same way
+
+*Answer: D.* 2^4 = 16 is the worst case, reached only if every factor errs to its limit in the same direction. For independent factors the relative standard deviation of a product is the quadrature sum of the factors' relative standard deviations, so error grows roughly with the square root of the number of factors; a 400,000-trial simulation with each factor's log error uniform over plus or minus a factor of two gives an RMS error of about 2.2. The caveat is essential: rerunning that simulation with all four factors biased in one direction gives 5.0, because the covariance term no longer vanishes. Errors never cancel completely, and uncertainties in a product do not add linearly.
+
+*Difficulty: analysis - Skill: Reasoning about error accumulation in products and its limits - Sources: nist-ehandbook-propagation-of-error-two-variables*
+
+**5. A Fermi estimate of annual U.S. gasoline use gives 8.0 x 10^10 gallons; the EIA figure for 2023 is about 1.37 x 10^11 gallons. What should the engineer do with this comparison, and how should the estimate be recorded?**
+
+   A. Discard the estimate as wrong and use only published data from now on
+   B. Report the estimate as 'about 8 x 10^10 gallons per year' with no further comment, since estimates are inherently approximate
+   C. Note that the estimate is low by a factor of about 1.7, identify which shared assumptions were rounded the same way, and record the figure as an estimate together with its ground rules and expected accuracy band
+   D. Adjust the inputs until the estimate matches the EIA figure exactly, then report the adjusted inputs as the assumptions
+
+*Answer: C.* 1.37 x 10^11 / 8.0 x 10^10 = 1.71, so the estimate is the right order of magnitude and low by about a factor of 1.7 - a pass that also points at a cause, since annual mileage and fleet fuel economy were both rounded favourably and light trucks were ignored. Discarding the method throws away the screening and checking value estimates provide. Reporting the bare number without assumptions is the documented failure mode: GAO's guide makes recording ground rules and assumptions a condition of a credible estimate, and an unlabelled figure is what later gets read as a specification. Tuning inputs to hit a known answer and then presenting them as assumptions is fabrication, not estimation.
+
+*Difficulty: application - Skill: Comparing an estimate against published data and documenting it responsibly - Sources: eia-faq-us-gasoline-consumption, gao-20-195g-cost-estimating-and-assessment-guide*
+
+## Sources
+
+- `openstax-university-physics-v1-estimates-and-fermi-calculations` - [University Physics Volume 1, Section 1.5: Estimates and Fermi Calculations](https://openstax.org/books/university-physics-volume-1/pages/1-5-estimates-and-fermi-calculations), OpenStax, Rice University. Usage: REFERENCE_ONLY.
+- `openstax-college-physics-2e-density` - [College Physics 2e, Section 11.2: Density (Table 11.1, Densities of Various Substances)](https://openstax.org/books/college-physics-2e/pages/11-2-density), OpenStax, Rice University. Usage: REFERENCE_ONLY.
+- `nist-sp-811-2008` - [NIST Special Publication 811 (2008 edition), Guide for the Use of the International System of Units (SI)](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication811e2008.pdf), National Institute of Standards and Technology (U.S. Department of Commerce). Usage: REFERENCE_ONLY.
+- `bipm-cgpm-3-1901-resolution-2-gn` - [Resolution 2 of the 3rd CGPM (1901): Declaration on the unit of mass and on the definition of weight; conventional value of g_n](https://www.bipm.org/en/committees/cg/cgpm/3-1901/resolution-2), Bureau International des Poids et Mesures (BIPM). Usage: REFERENCE_ONLY.
+- `bipm-cgpm-10-1954-resolution-4-standard-atmosphere` - [Resolution 4 of the 10th CGPM (1954): Definition of the standard atmosphere](https://www.bipm.org/en/committees/cg/cgpm/10-1954/resolution-4), Bureau International des Poids et Mesures (BIPM). Usage: REFERENCE_ONLY.
+- `trenberth-smith-2005-mass-of-the-atmosphere` - [The Mass of the Atmosphere: A Constraint on Global Analyses (Journal of Climate 18(6), 864-875, 2005)](https://journals.ametsoc.org/view/journals/clim/18/6/jcli-3299.1.xml), American Meteorological Society. Usage: REFERENCE_ONLY.
+- `eia-faq-us-gasoline-consumption` - [How much gasoline does the United States consume? (Frequently Asked Questions)](https://www.eia.gov/tools/faqs/faq.php?id=23&t=10), U.S. Energy Information Administration. Usage: REFERENCE_ONLY.
+- `nasa-earth-facts` - [Earth Facts (NASA Science, Solar System Exploration)](https://science.nasa.gov/earth/facts/), NASA. Usage: PUBLIC_DOMAIN.
+- `lanl-trinity-revisited-2021` - [Trinity revisited (National Security Science, Los Alamos National Laboratory)](https://www.lanl.gov/media/publications/national-security-science/0721-trinity-revisited), Los Alamos National Laboratory. Usage: REFERENCE_ONLY.
+- `katz-2021-fermi-at-trinity` - [Fermi at Trinity (Nuclear Technology 207, S326, 2021)](https://arxiv.org/abs/2103.05784), American Nuclear Society / J. I. Katz (Washington University in St. Louis). Usage: REFERENCE_ONLY.
+- `nist-ehandbook-propagation-of-error-two-variables` - [NIST/SEMATECH e-Handbook of Statistical Methods, 2.5.5.2: Formulas for functions of two variables](https://www.itl.nist.gov/div898/handbook/mpc/section5/mpc552.htm), National Institute of Standards and Technology / SEMATECH. Usage: REFERENCE_ONLY.
+- `gao-20-195g-cost-estimating-and-assessment-guide` - [Cost Estimating and Assessment Guide: Best Practices for Developing and Managing Program Costs (GAO-20-195G, March 2020)](https://www.gao.gov/products/gao-20-195g), U.S. Government Accountability Office. Usage: REFERENCE_ONLY.
+- `ecfr-21-cfr-101-9-nutrition-labeling` - [21 CFR 101.9 - Nutrition labeling of food](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9), Electronic Code of Federal Regulations (U.S. Government Publishing Office / Office of the Federal Register). Usage: PUBLIC_DOMAIN.
+- `leo-2022-power-profiling-cycling-review` - [Power profiling and the power-duration relationship in cycling: a narrative review (European Journal of Applied Physiology 122:301, published online 27 October 2021)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8783871/), Springer / European Journal of Applied Physiology (Leo, Spragg, Podlogar, Lawley, Mujika). Usage: REFERENCE_ONLY.
+
+## Related Topics
+
+- engineering-fundamentals:engineering-thinking:units-measurement-and-significant-figures
+- engineering-fundamentals:engineering-thinking:engineering-constraints-and-tradeoffs
+- engineering-fundamentals:engineering-thinking:engineering-design-process
+- engineering-fundamentals:engineering-practice:safety-factors-and-failure
+
+## Editorial Metadata
+
+- Topic id: `engineering-fundamentals:engineering-thinking:estimation-and-order-of-magnitude`
+- Editorial status: **READY_TO_PUBLISH**
+- Estimated minutes: 12
+- Researched: 2026-08-19 - research status: source-verified
+- Rights: Reference-only sources; no source prose adapted. OpenStax pages carry an explicit no-AI-ingestion notice and were consulted only to confirm published physical constants and the conventional estimation strategies; all wording is original.
+- Transformation: Original lesson written from primary and peer-reviewed sources. Every numeric result - both worked examples, the Monte Carlo error demonstration, the metabolic power conversion, the geometric-mean comparisons, and all arithmetic inside questions and explanations - was executed in Bash before publication and compared against published values where they exist.
+- Every numeric result in this lesson was executed with Bash (python3) before publication, including both worked examples, the 400,000-trial error simulation, the metabolic-power conversion, and all arithmetic inside the question explanations.
+- **This lesson is educational material, not engineering design guidance.** Real design decisions require a licensed engineer working to the governing code. No allowable stress, load factor, or other design value from any engineering standard appears in this lesson.

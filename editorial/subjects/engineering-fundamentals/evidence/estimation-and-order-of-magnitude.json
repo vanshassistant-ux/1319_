@@ -1,0 +1,443 @@
+{
+  "topicId": "engineering-fundamentals:engineering-thinking:estimation-and-order-of-magnitude",
+  "subjectId": "engineering-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Order of magnitude as the power of ten of a quantity; why a result good to a factor of two or three is often decisive early in design",
+      "Decomposition: breaking an unknown into factors that can each be bounded",
+      "The Fermi-problem method and its documented history (Fermi's Trinity paper-scrap estimate)",
+      "Bounding by upper and lower limits and squeezing; the geometric mean of wide bounds",
+      "Sanity checks by dimensional analysis and by comparison with a known reference quantity",
+      "How errors behave when independent estimates are multiplied: RMS growth like sqrt(n) rather than worst case, and the failure of that argument when errors are correlated",
+      "A dozen reference quantities worth knowing by heart, with correct values and units",
+      "Engineering payoff: rejecting infeasible concepts, sizing systems, checking computed or simulated results",
+      "Professional obligation to label an estimate as an estimate and record its assumptions"
+    ],
+    "supporting": [
+      "Worked Fermi estimate: mass of Earth's atmosphere from surface pressure, compared with Trenberth and Smith (2005)",
+      "Worked Fermi estimate: annual U.S. motor gasoline consumption, compared with EIA data",
+      "GAO cost-estimating practice as a documented professional standard for recording ground rules and assumptions"
+    ],
+    "outOfScope": [
+      "SI base units, unit conversion procedure, and significant-figure rules (owned by engineering-fundamentals:engineering-thinking:units-measurement-and-significant-figures)",
+      "Formal measurement uncertainty budgets, Type A/Type B evaluation, and coverage factors",
+      "Statistical inference, confidence intervals, and regression",
+      "Any design value, allowable stress, or load factor from a governing code"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The order of magnitude of a quantity is the power of ten nearest its value, and an order-of-magnitude estimate is normally carried to one significant figure; the working goal is to land in the right ballpark rather than to be precise.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openstax-university-physics-v1-estimates-and-fermi-calculations"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Standard estimation strategies include building large lengths from small ones, getting areas and volumes from estimated lengths, getting masses from volumes and approximate densities, and bounding an unfamiliar quantity between an upper and a lower limit and taking the geometric mean.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openstax-university-physics-v1-estimates-and-fermi-calculations"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "At the Trinity test on 16 July 1945 Enrico Fermi estimated the yield by dropping small pieces of paper into the blast wave and observing their horizontal displacement, arriving at roughly 10 kilotons of TNT equivalent.",
+      "claimType": "HISTORICAL",
+      "sourceIds": [
+        "katz-2021-fermi-at-trinity",
+        "lanl-trinity-revisited-2021"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The long-standing U.S. Department of Energy yield figure for Trinity is 21 kilotons; a 2021 radiochemical reassessment of trinitite samples by Los Alamos researchers gives 24.8 +/- 2 kilotons. Fermi's 10-kiloton figure is therefore low by a factor of about 2.1 to 2.5.",
+      "claimType": "HISTORICAL",
+      "sourceIds": [
+        "lanl-trinity-revisited-2021",
+        "katz-2021-fermi-at-trinity"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Fermi's method sensed only the blast wave, which does not carry the thermal and nuclear-radiation share of the energy release, so his figure is expected to be low rather than randomly wrong.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "katz-2021-fermi-at-trinity"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The standard acceleration of gravity is fixed by convention at 9.80665 m/s^2 (declared as 980.665 cm/s^2 by the 3rd CGPM in 1901).",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "bipm-cgpm-3-1901-resolution-2-gn"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The standard atmosphere is defined as exactly 101 325 newtons per square metre (1 013 250 dyn/cm^2), adopted by the 10th CGPM in 1954.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "bipm-cgpm-10-1954-resolution-4-standard-atmosphere"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Useful density anchors: water at 4 degrees C is 1.000 x 10^3 kg/m^3, iron or steel about 7.8 x 10^3 kg/m^3, aluminium 2.7 x 10^3 kg/m^3, lead 11.3 x 10^3 kg/m^3, and air about 1.29 kg/m^3 at 0 degrees C and 101.3 kPa.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "openstax-college-physics-2e-density",
+        "openstax-university-physics-v1-estimates-and-fermi-calculations"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The thermochemical calorie is exactly 4.184 J and the thermochemical kilocalorie is exactly 4184 J, so a food Calorie (a kilocalorie) is about 4.2 kJ.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nist-sp-811-2008"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "U.S. nutrition labelling uses a reference caloric intake of 2,000 calories per day for adults and children four years and older, and permits energy per serving to be shown in kilojoules alongside the calorie figure.",
+      "claimType": "LEGAL",
+      "sourceIds": [
+        "ecfr-21-cfr-101-9-nutrition-labeling"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A 2,000 Calorie daily intake corresponds to a continuous metabolic power of about 97 W, which is why 10^2 W is the right order of magnitude for whole-body human power.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "nist-sp-811-2008",
+        "ecfr-21-cfr-101-9-nutrition-labeling"
+      ],
+      "status": "supported",
+      "note": "Arithmetic executed in Bash: 2000 * 4184 J / 86400 s = 96.85 W."
+    },
+    {
+      "claim": "Sustained mechanical power output for an elite cyclist is a few hundred watts: race data summarised in a narrative review indicate that a top male grand-tour general-classification contender must produce about 5.8 W/kg for 20 minutes on key mountain climbs, roughly 400 W for a 70 kg rider.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "leo-2022-power-profiling-cycling-review"
+      ],
+      "status": "supported",
+      "note": "The review attributes the 5.8 W/kg figure to van Erp et al. (2020). Arithmetic executed in Bash: 5.8 W/kg * 70 kg = 406 W."
+    },
+    {
+      "claim": "The total mean mass of Earth's atmosphere is 5.1480 x 10^18 kg, and the global mean total surface pressure is 985.50 hPa, which is lower than the sea-level standard atmosphere because the mean solid surface sits above sea level.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "trenberth-smith-2005-mass-of-the-atmosphere"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A Fermi estimate of atmospheric mass as M = P*A/g with P = 1 x 10^5 Pa, R = 6.4 x 10^6 m and g = 10 m/s^2 gives 5.15 x 10^18 kg; treating Earth as a sphere of its equatorial radius (6.378 x 10^6 m, from NASA's 12 756 km equatorial diameter) with the exact standard atmosphere and standard gravity gives 5.28 x 10^18 kg, 2.6 percent above the published value, and substituting the global mean surface pressure of 985.50 hPa brings it to 5.14 x 10^18 kg, 0.2 percent below.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "trenberth-smith-2005-mass-of-the-atmosphere",
+        "bipm-cgpm-10-1954-resolution-4-standard-atmosphere",
+        "bipm-cgpm-3-1901-resolution-2-gn",
+        "nasa-earth-facts"
+      ],
+      "status": "supported",
+      "note": "All arithmetic executed in Bash. Earth radius taken as half the NASA-published equatorial diameter of 12 756 km; the spherical-equatorial assumption slightly overstates surface area because Earth is oblate, and this is stated in the lesson."
+    },
+    {
+      "claim": "U.S. finished motor gasoline consumption averaged about 8.94 million barrels per day, or about 376 million gallons per day, in 2023; at 42 gallons per barrel that is roughly 1.4 x 10^11 gallons per year.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "eia-faq-us-gasoline-consumption"
+      ],
+      "status": "supported",
+      "note": "Arithmetic executed in Bash: 8.94e6 bbl/d * 42 gal/bbl * 365 d = 1.371e11 gal/yr."
+    },
+    {
+      "claim": "A four-factor Fermi estimate of U.S. annual gasoline use (3 x 10^8 people, two-thirds of them drivers, 10^4 miles each per year, 25 miles per gallon) gives 8.0 x 10^10 gallons per year, which is 0.58 times the EIA figure - the same order of magnitude, low by a factor of about 1.7.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "eia-faq-us-gasoline-consumption",
+        "openstax-university-physics-v1-estimates-and-fermi-calculations"
+      ],
+      "status": "supported",
+      "note": "Arithmetic executed in Bash."
+    },
+    {
+      "claim": "For independent quantities the relative standard deviation of a product is the quadrature sum of the relative standard deviations of the factors; a covariance term must be added when the factors are not independent.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nist-ehandbook-propagation-of-error-two-variables"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "If four independent factors are each uncertain by up to a factor of two, the worst-case product error is a factor of 16, but simulation gives a root-mean-square error of only about a factor of 2.2; if instead every factor is biased in the same direction, the RMS error grows to about a factor of 5.0.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "nist-ehandbook-propagation-of-error-two-variables"
+      ],
+      "status": "supported",
+      "note": "Monte Carlo with 400,000 trials executed in Bash, seed 20260819; log10 errors drawn uniform on +/- log10(2) per factor. Matches the closed form RMS(log10) = halfwidth * sqrt(n/3) for the independent case."
+    },
+    {
+      "claim": "GAO's Cost Estimating and Assessment Guide names four characteristics of a reliable estimate - comprehensive, well documented, accurate, and credible - and devotes Step 5 of its twelve-step process to identifying ground rules and assumptions, stating that the most uncertain assumptions must be well documented for the estimate to be credible.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "gao-20-195g-cost-estimating-and-assessment-guide"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Engineering lessons of this kind are educational material, not engineering design guidance; real design work requires a licensed engineer working to the governing code.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "gao-20-195g-cost-estimating-and-assessment-guide"
+      ],
+      "status": "editorial-statement",
+      "note": "Project-level editorial requirement from the subject source map, not a sourced factual claim; the GAO id is attached only because it is the closest professional-practice reference in the packet."
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "The accepted yield of the Trinity test",
+      "positions": [
+        "The long-published U.S. Department of Energy figure is 21 kilotons.",
+        "Selby et al. (2021), reanalysing trinitite by high-precision mass spectrometry at Los Alamos, report 24.8 +/- 2 kilotons.",
+        "Katz (2021) works against an accepted radiochemical value of 25 +/- 2 kilotons."
+      ],
+      "resolution": "The lesson gives both figures and states the comparison as a range: Fermi's 10 kilotons is low by a factor of roughly 2.1 (against 21 kt) to 2.5 (against 24.8 kt). No single number is asserted as the settled value."
+    },
+    {
+      "issue": "Which pressure to use when estimating atmospheric mass",
+      "positions": [
+        "The sea-level standard atmosphere, 101 325 Pa, is the familiar anchor.",
+        "Trenberth and Smith (2005) report a global mean total surface pressure of 985.50 hPa, because the mean solid surface is above sea level."
+      ],
+      "resolution": "The lesson uses the standard atmosphere for the estimate, reports the resulting 2.4 percent overshoot, and names the surface-elevation effect as the physical reason, showing the refined calculation as a check."
+    },
+    {
+      "issue": "Whether a rough Fermi pass that lands within a fraction of a percent should be reported as accurate",
+      "positions": [
+        "The rounded pass (R = 6.4e6 m, P = 1e5 Pa, g = 10 m/s^2) returns 5.15e18 kg, within 0.02 percent of the published value.",
+        "The refined pass with exact constants is 2.4 percent high."
+      ],
+      "resolution": "The lesson states explicitly that the rounded pass agrees so closely only because rounding errors happened to cancel, and that a Fermi estimate should never be reported to better precision than a factor of two regardless of how close it lands."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained no substantive claims about estimation at all - its In 30 Seconds, Why This Matters, college sections, vocabulary, worked example and questions were subject-agnostic boilerplate that would read identically for any topic.",
+    "The draft's vocabulary entry defined the topic circularly as 'a foundational Engineering Fundamentals concept covered in this lesson'.",
+    "The draft's eli10 block had no analogyLimits field."
+  ],
+  "correctionsNeeded": [
+    "Replaced every field with researched, source-backed content specific to order-of-magnitude estimation.",
+    "Executed all arithmetic in Bash before publishing, including both worked examples, the Monte Carlo error demonstration, the metabolic power conversion, and every number appearing in a question or explanation.",
+    "Attributed the Fermi Trinity anecdote to documented sources and stated both the 21 kt and 24.8 +/- 2 kt yield figures rather than repeating a single folk number.",
+    "Added the required educational-material statement and kept the lesson clear of design guidance.",
+    "Kept SI definitions, unit conversion procedure, and significant-figure rules out of scope so as not to duplicate the parallel units-measurement-and-significant-figures topic."
+  ],
+  "rightsIssues": [
+    "OpenStax pages carry an explicit notice prohibiting ingestion into large language models or generative AI offerings, and a CC BY-NC-SA notice in the page footer. Both OpenStax records are marked REFERENCE_ONLY with aiIngestionAllowed false. No OpenStax wording was reproduced or paraphrased; the pages were consulted only to confirm widely published physical constants (densities) and to confirm that the standard estimation strategies taught here are the conventional ones.",
+    "Trenberth and Smith (2005) is an American Meteorological Society journal article. REFERENCE_ONLY: numeric results were checked and restated in the writer's own words; no text was reproduced.",
+    "Leo et al. (2022) is CC BY 4.0 but is used REFERENCE_ONLY - only the numeric power figure was taken, and its own upstream attribution to van Erp et al. is recorded.",
+    "Katz (2021) is a Nuclear Technology article read via its open arXiv preprint (arXiv:2103.05784); REFERENCE_ONLY.",
+    "BIPM CGPM resolutions, NIST SP 811, the NIST/SEMATECH e-Handbook, the eCFR, GAO and EIA pages are U.S. or intergovernmental public-interest publications used as REFERENCE_ONLY; no text was reproduced.",
+    "No engineering standard (ASME, ASTM, IEEE, ISO, ACI, AISC) was cited or reproduced, and no allowable stress, load factor, or design value is stated anywhere in the lesson."
+  ],
+  "sourceRecords": [
+    {
+      "id": "openstax-university-physics-v1-estimates-and-fermi-calculations",
+      "title": "University Physics Volume 1, Section 1.5: Estimates and Fermi Calculations",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/1-5-estimates-and-fermi-calculations",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "Creative Commons Attribution-NonCommercial-ShareAlike (as stated in the page footer); per-book terms not independently verified",
+      "licenseUrl": "https://openstax.org/tos",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Confirms that order-of-magnitude estimates are carried to one significant figure, and that the conventional strategies are scaling lengths, deriving areas and volumes, converting volumes to masses with approximate densities, and bounding an unknown between limits and taking the geometric mean. Also supplies the coarse density anchors (air ~1 kg/m^3, water ~10^3 kg/m^3, dense solids ~10^4 kg/m^3). No wording reused."
+    },
+    {
+      "id": "openstax-college-physics-2e-density",
+      "title": "College Physics 2e, Section 11.2: Density (Table 11.1, Densities of Various Substances)",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/college-physics-2e/pages/11-2-density",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "Creative Commons Attribution-NonCommercial-ShareAlike (as stated in the page footer); page also carries an explicit prohibition on ingestion into large language models",
+      "licenseUrl": "https://openstax.org/tos",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Used only to confirm numeric density anchors: water at 4 C 1.000 x 10^3 kg/m^3, iron or steel 7.8 x 10^3, aluminium 2.7 x 10^3, lead 11.3 x 10^3, air 1.29 x 10^-3 g/mL, concrete 2.30-3.0 x 10^3. No text reproduced."
+    },
+    {
+      "id": "nist-sp-811-2008",
+      "title": "NIST Special Publication 811 (2008 edition), Guide for the Use of the International System of Units (SI)",
+      "provider": "National Institute of Standards and Technology (U.S. Department of Commerce)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication811e2008.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read both the online Appendix B.9 conversion tables at nist.gov and the canonical SP 811 (2008) PDF registered here. Confirms calorie (thermochemical) = 4.184 J exactly and kilocalorie (thermochemical) = 4184 J, 1 atm = 101 325 Pa, 1 kgf = 9.806 65 N, and the footnote stating that the kilocalorie is the calorie used to express the energy content of foods with the 'kilo' prefix usually omitted. Cited only for the energy conversion anchor and the food-Calorie definition; SI definitions, conversion procedure, and significant-figure rules belong to the parallel units-measurement-and-significant-figures topic, whose source id and URL for this document are reused exactly."
+    },
+    {
+      "id": "bipm-cgpm-3-1901-resolution-2-gn",
+      "title": "Resolution 2 of the 3rd CGPM (1901): Declaration on the unit of mass and on the definition of weight; conventional value of g_n",
+      "provider": "Bureau International des Poids et Mesures (BIPM)",
+      "url": "https://www.bipm.org/en/committees/cg/cgpm/3-1901/resolution-2",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Confirms the conventional standard acceleration of gravity as 980.665 cm/s^2, i.e. 9.80665 m/s^2. Used as the reference value of g in the atmosphere worked example and in the reference-quantity table."
+    },
+    {
+      "id": "bipm-cgpm-10-1954-resolution-4-standard-atmosphere",
+      "title": "Resolution 4 of the 10th CGPM (1954): Definition of the standard atmosphere",
+      "provider": "Bureau International des Poids et Mesures (BIPM)",
+      "url": "https://www.bipm.org/en/committees/cg/cgpm/10-1954/resolution-4",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Confirms the standard atmosphere as 1 013 250 dyn/cm^2 = 101 325 N/m^2, adopted for general use. Used as the pressure anchor in the reference-quantity table and the atmosphere worked example."
+    },
+    {
+      "id": "trenberth-smith-2005-mass-of-the-atmosphere",
+      "title": "The Mass of the Atmosphere: A Constraint on Global Analyses (Journal of Climate 18(6), 864-875, 2005)",
+      "provider": "American Meteorological Society",
+      "url": "https://journals.ametsoc.org/view/journals/clim/18/6/jcli-3299.1.xml",
+      "sourceType": "peer-reviewed",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Supplies the published comparison value for worked example 1: total mean mass of the atmosphere 5.1480 x 10^18 kg, dry air mass 5.1352 +/- 0.0003 x 10^18 kg, global mean total surface pressure 985.50 hPa, from ERA-40 data 1979-2001. The 985.50 hPa figure is what explains the 2.4 percent overshoot when the sea-level standard atmosphere is used instead. The AMS site refused the automated fetcher (HTTP 403); the article page was read with curl using a browser user agent. No text reproduced."
+    },
+    {
+      "id": "eia-faq-us-gasoline-consumption",
+      "title": "How much gasoline does the United States consume? (Frequently Asked Questions)",
+      "provider": "U.S. Energy Information Administration",
+      "url": "https://www.eia.gov/tools/faqs/faq.php?id=23&t=10",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Page as read on 2026-08-19 states that in 2023 U.S. finished motor gasoline consumption averaged about 8.94 million barrels per day, about 376 million gallons per day, with 42 U.S. gallons per barrel, and that the record was about 392 million gallons per day in 2018; page last updated March 29, 2024 with Petroleum Supply Monthly data. Supplies the published comparison value for worked example 2."
+    },
+    {
+      "id": "lanl-trinity-revisited-2021",
+      "title": "Trinity revisited (National Security Science, Los Alamos National Laboratory)",
+      "provider": "Los Alamos National Laboratory",
+      "url": "https://www.lanl.gov/media/publications/national-security-science/0721-trinity-revisited",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the previously accepted 21-kiloton Trinity yield and the 2021 reassessment of about 24.8 kilotons by Hugh Selby and colleagues in the Laboratory's nuclear and radiochemistry group, using inorganic separations chemistry and high-precision mass spectrometry on trinitite samples."
+    },
+    {
+      "id": "katz-2021-fermi-at-trinity",
+      "title": "Fermi at Trinity (Nuclear Technology 207, S326, 2021)",
+      "provider": "American Nuclear Society / J. I. Katz (Washington University in St. Louis)",
+      "url": "https://arxiv.org/abs/2103.05784",
+      "sourceType": "peer-reviewed",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the arXiv abstract page for the open preprint of the Nuclear Technology article. Confirms that Fermi estimated the Trinity yield by dropping small pieces of paper and observing their motion in the blast wave, that his figure was about 10 kilotons, that this is roughly 40 percent of the accepted radiochemical value of 25 +/- 2 kilotons, and that the shortfall is expected because the blast wave excludes the thermal and nuclear-radiation share of the energy. The paper reconstructs the analysis Fermi is likely to have used, which had not previously been documented. No text reproduced."
+    },
+    {
+      "id": "nist-ehandbook-propagation-of-error-two-variables",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 2.5.5.2: Formulas for functions of two variables",
+      "provider": "National Institute of Standards and Technology / SEMATECH",
+      "url": "https://www.itl.nist.gov/div898/handbook/mpc/section5/mpc552.htm",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the statement that for a product of independent quantities the relative standard deviation is the quadrature sum of the relative standard deviations, and that a covariance term must be added when the factors are correlated. Used to justify the quadrature argument in the lesson and to bound its validity."
+    },
+    {
+      "id": "gao-20-195g-cost-estimating-and-assessment-guide",
+      "title": "Cost Estimating and Assessment Guide: Best Practices for Developing and Managing Program Costs (GAO-20-195G, March 2020)",
+      "provider": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/products/gao-20-195g",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the GAO product page and extracted text from the full PDF copy hosted at https://www.energy.gov/sites/default/files/2024-08/gao-20-195g.pdf. Confirms the four characteristics of a reliable estimate (comprehensive, well documented, accurate, credible), the 18 best practices, the 12-step process, Chapter 8 / Step 5 'Identify Ground Rules and Assumptions', and the statement that element-specific ground rules and assumptions carry the most uncertainty and must be checked for realism and well documented for the estimate to be considered credible. Supports the professional obligation to label an estimate and record its assumptions."
+    },
+    {
+      "id": "ecfr-21-cfr-101-9-nutrition-labeling",
+      "title": "21 CFR 101.9 - Nutrition labeling of food",
+      "provider": "Electronic Code of Federal Regulations (U.S. Government Publishing Office / Office of the Federal Register)",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read through the eCFR enhanced-content API because the ordinary page redirected the fetcher. Confirms the reference caloric intake of 2,000 calories for adults and children four years and older, the general Atwater factors of 4, 4, and 9 calories per gram for protein, carbohydrate and fat, and that energy content per serving may also be expressed in kilojoules. Used to anchor the 2,000 Calorie per day figure behind the 10^2 W human-power reference quantity."
+    },
+    {
+      "id": "leo-2022-power-profiling-cycling-review",
+      "title": "Power profiling and the power-duration relationship in cycling: a narrative review (European Journal of Applied Physiology 122:301, published online 27 October 2021)",
+      "provider": "Springer / European Journal of Applied Physiology (Leo, Spragg, Podlogar, Lawley, Mujika)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8783871/",
+      "sourceType": "peer-reviewed",
+      "usage": "REFERENCE_ONLY",
+      "license": "Creative Commons Attribution 4.0 International",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supplies the sourced upper anchor for sustained human mechanical power: race power data indicate a top male grand-tour general-classification contender must produce about 5.8 W/kg for 20 minutes on key mountain climbs. The review attributes that figure to van Erp et al. (2020). Used only for the numeric anchor; no text reproduced."
+    },
+    {
+      "id": "nasa-earth-facts",
+      "title": "Earth Facts (NASA Science, Solar System Exploration)",
+      "provider": "NASA",
+      "url": "https://science.nasa.gov/earth/facts/",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supplies Earth's equatorial diameter of 7,926 miles (12,756 km), i.e. an equatorial radius of 6.378 x 10^6 m, used for the surface-area term in worked example 1. The NSSDC planetary fact sheet at nssdc.gsfc.nasa.gov now redirects, so this NASA Science page was used instead."
+    }
+  ]
+}

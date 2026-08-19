@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "subjectSlug": "engineering-fundamentals",
+  "note": "Discovery leads for topic workers. Every topic must still research and verify its own sources.",
+  "reviewProfile": ["technical", "quantitative", "safety-adjacent"],
+  "tierA": [
+    { "provider": "NIST", "url": "https://www.nist.gov/pml/special-publication-811", "useFor": "SI units, unit conversion, significant figures, measurement uncertainty — SP 811 and SP 330 are definitive" },
+    { "provider": "BIPM SI Brochure", "url": "https://www.bipm.org/en/publications/si-brochure", "useFor": "the definitive definition of SI base units and the 2019 redefinition" },
+    { "provider": "NASA technical resources", "url": "https://www.nasa.gov/", "useFor": "worked engineering examples, materials, thermal and structural fundamentals" },
+    { "provider": "NIST Engineering Statistics Handbook", "url": "https://www.itl.nist.gov/div898/handbook/", "useFor": "measurement, error, tolerance, statistical treatment of data" },
+    { "provider": "OSHA", "url": "https://www.osha.gov/", "useFor": "workplace safety obligations where a topic touches practice" },
+    { "provider": "NIST Digital Library of Mathematical Functions", "url": "https://dlmf.nist.gov/", "useFor": "mathematical reference" }
+  ],
+  "tierB": [
+    { "provider": "OpenStax University Physics", "url": "https://openstax.org/details/books/university-physics-volume-1", "useFor": "mechanics, thermodynamics, electricity — REFERENCE_ONLY, per-book terms unverified" },
+    { "provider": "LibreTexts Engineering", "url": "https://eng.libretexts.org/", "useFor": "statics, mechanics of materials, thermodynamics; check per-page license" },
+    { "provider": "Open Textbook Library", "url": "https://open.umn.edu/opentextbooks", "useFor": "open engineering texts" },
+    { "provider": "MIT OpenCourseWare", "url": "https://ocw.mit.edu/", "useFor": "course material — CC BY-NC-SA, reference only for this project" }
+  ],
+  "cautions": [
+    "EVERY calculation published in this subject must be executed with Bash (python3) before it ships — the worked example, any number in the prose, and any arithmetic inside a question or its explanation. State units at every step and carry them through. A wrong worked example is the worst failure mode in a technical subject because students check their work against it.",
+    "Use SI units as primary. Where U.S. customary units are conventional in American practice, give both and show the conversion with the NIST-defined factor.",
+    "Significant figures and precision must be handled honestly: do not report more digits than the inputs justify, and say so when rounding.",
+    "Engineering standards (ASME, ASTM, IEEE, ISO, ACI, AISC) are copyrighted and mostly paywalled. Describe what a standard governs and cite it by designation, but never reproduce standard text, tables, or values — and never state a specific allowable stress, load factor, or design value as if from a standard you did not read.",
+    "This subject is safety-adjacent. Teach principles, never design guidance a reader could apply to a real structure, pressure vessel, electrical installation, or machine. Add an explicit statement that lessons are educational material and not engineering design guidance, and that real design requires a licensed engineer working to the governing code.",
+    "Distinguish idealized models from reality throughout — rigid bodies, frictionless surfaces, ideal gases, ohmic conductors, and small-deflection assumptions all have limits, and naming those limits is part of the lesson.",
+    "Do not overstate factor-of-safety practice as universal; it varies by code, industry, and failure consequence."
+  ]
+}

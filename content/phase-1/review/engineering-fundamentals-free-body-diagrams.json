@@ -1,0 +1,326 @@
+{
+  "id": "engineering-fundamentals:mechanics:free-body-diagrams",
+  "subjectSlug": "engineering-fundamentals",
+  "unitSlug": "mechanics",
+  "slug": "free-body-diagrams",
+  "title": "Free-Body Diagrams",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 14,
+  "tags": [
+    "engineering-fundamentals",
+    "mechanics",
+    "free-body-diagrams",
+    "statics",
+    "problem-solving",
+    "support-reactions"
+  ],
+  "in30Seconds": "A free-body diagram shows one chosen object, cut loose from everything touching it, with an arrow for every force acting on that object and nothing else. Each thing you removed - floor, cable, pin, the block next door - comes back as the force it was exerting. You then pick axes, label knowns and unknowns, and write the sum of forces along each axis. The arrows are the easy part. Choosing which object to isolate is the skill.",
+  "whyItMatters": "Almost every mechanics problem you will meet for the next three years starts with a free-body diagram, and an error in the diagram cannot be recovered by careful algebra afterward. Statics, dynamics, mechanics of materials, machine design, and structural analysis all reduce a physical situation to a chosen body and the forces crossing its boundary. The habit generalises further than mechanics: deciding what is inside your system, what is outside, and what crosses the boundary is the same move you will make in thermodynamics with control volumes and in circuits with nodes. Engineers also use these diagrams to communicate, so a diagram a colleague can read is part of the deliverable.",
+  "learningObjectives": [
+    "Define a free-body diagram and explain why the choice of body determines which forces appear on it.",
+    "Apply the isolate-and-replace procedure to draw a labelled diagram with stated axes for a given physical situation.",
+    "Identify the standard two-dimensional support reactions and state how many unknowns each introduces.",
+    "Distinguish forces that belong on a diagram from third-law partners, internal forces, net force, and mass-times-acceleration terms.",
+    "Analyze a multi-body problem by choosing between a whole-system free body and a cut that exposes an internal force.",
+    "Interpret a negative solved force as a reversed assumed direction rather than an arithmetic error."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Choosing the body is the whole decision",
+      "body": "A free-body diagram answers one question: if this object were cut away from everything around it, what would the surroundings still be doing to it? The word free is literal. You draw the object detached - off the floor, off the pin, off the cable, away from the block beside it - and everything you removed reappears only as the force it was exerting.\n\nThat cut is a decision, and it is the decision that determines the answer you can get. Forces that cross the boundary you drew are external and appear on the diagram. Forces entirely inside the boundary are internal and do not appear at all. Isolate two blocks together and the push between them vanishes from the picture; isolate one of them and that same push becomes an arrow you can solve for. Neither choice is more correct - they answer different questions.\n\nSo work backwards from the unknown. Ask what you are trying to find, then choose the body whose boundary that unknown has to cross. If you want the force in a connection, your cut must pass through the connection. If you want the acceleration of an assembly and do not care about its internal forces, take the whole assembly and let the internal forces disappear. Practising engineers do this at whatever scale suits the question: NASA's introductory aeronautics material treats a whole aircraft in flight as one body carrying weight, lift, thrust, and drag, with the distributed weight collected at the center of gravity - a single body chosen because the question was about the aircraft's overall motion, not about the load in any one wing spar."
+    },
+    {
+      "heading": "The procedure, step by step",
+      "body": "The sequence below is worth running mechanically until it becomes automatic.\n\n1. Name the body. Write it down - \"block B alone\", \"the beam plus both blocks\". If you cannot name it in words, you have not chosen it.\n\n2. Draw it isolated. Sketch the body by itself, not traced over the original picture. Drawing on top of the original is the single most reliable way to keep a support in the diagram that you were supposed to have removed. The sketch does not need to be pretty; for a particle problem a box or a dot is fine.\n\n3. Walk the boundary. Go around the outline of the body. At every place where something was touching it, ask what that thing can push or pull with, and draw that force at the point of contact. This is the replace step, and doing it as a systematic lap around the perimeter is what stops you from forgetting the normal force or the friction force.\n\n4. Add the body forces. Gravity does not act at a contact point; it acts throughout the body and is drawn as one arrow at the center of mass. Weight in the engineering sense is a force, measured in newtons, not a mass in kilograms; NIST's SI guide is explicit that the newton is the unit of the quantity weight, even though everyday speech uses \"weight\" for mass.\n\n5. Choose and draw axes. Put the axes on the diagram, with the positive directions marked. Unstated axes are the source of most sign errors.\n\n6. Label everything. Every arrow gets a name. Known values get their numbers and units; unknowns get symbols. Angles and the dimensions you will need for moments get labelled too.\n\n7. Count. Count your unknowns and compare with the number of independent equations your chosen body will give you - two force equations in a two-dimensional particle problem, three (two force, one moment) for a rigid body in two dimensions. If you have more unknowns than equations, you need another body or another cut before you start algebra."
+    },
+    {
+      "heading": "What each support permits, prevents, and costs",
+      "body": "Replacing a support with a force is not guesswork. A support prevents certain motions and permits others, and it can only exert force in the directions it prevents motion. That correspondence gives a short standard inventory for two-dimensional problems, with the number of unknowns each one adds:\n\n- Roller or rocker: prevents motion perpendicular to its surface, permits sliding along the surface and rotation. One unknown - a single force normal to the surface.\n\n- Frictionless pin: prevents translation in both directions, permits rotation. Two unknowns - usually taken as x and y components, because the direction of the pin force is not known in advance. It contributes no couple-moment, which is exactly why the pin is drawn as two force components and not three.\n\n- Fixed support (built-in, welded, cantilevered into a wall): prevents translation in both directions and rotation. Three unknowns - two force components plus a couple-moment.\n\n- Cable, rope, or chain: can only pull, and only along its own line. One unknown, a tension whose direction is known. A negative cable tension is not a compression; it is a signal that the cable would have gone slack and the model no longer holds.\n\n- Smooth surface: one unknown, normal to the surface. Add friction and you add a second unknown, tangent to the surface, whose direction opposes impending or actual relative sliding.\n\n- Spring or two-force link: one unknown along its axis.\n\nCounting unknowns this way gives you a cheap sanity check before any algebra. A beam held by a pin at one end and a roller at the other carries two plus one, that is three unknown reaction components, which is exactly the number of independent equilibrium equations available for a rigid body in two dimensions. That match is why the simply supported beam is solvable from statics alone."
+    },
+    {
+      "heading": "Axes, signs, and what a negative answer means",
+      "body": "Signs do not come from intuition; they come from the axes you drew. Once positive x and positive y are on the diagram, every force component's sign is determined, and your job is to be consistent rather than clever.\n\nChoose axes to reduce work. On an inclined surface, aligning x with the slope and y with the normal means only the weight has to be resolved into components, instead of the normal force and friction both needing resolution. For a 25 kg crate on a 20 degree ramp, with the standard acceleration of free fall g_n = 9.806 65 m/s^2, the weight is 25 kg x 9.806 65 m/s^2 = 245.17 N. With rotated axes its components are 245.17 N x cos 20 deg = 230.4 N pressing into the surface and 245.17 N x sin 20 deg = 83.9 N down the slope. A student who leaves the axes horizontal and vertical and then writes the normal force as equal to the full 245 N is about 6.4 percent high, and the error is purely bookkeeping.\n\nWhen you do not know which way an unknown force points, assume a direction, draw the arrow, and let the algebra decide. If the answer comes out negative, the magnitude is right and the assumed direction was wrong. That is a result, not a mistake - do not flip the arrow and re-solve, and above all do not quietly drop the minus sign. The one thing you must not do is change the assumed direction partway through, because the sign of every other term in the equation was written relative to it."
+    },
+    {
+      "heading": "One body or several: where to cut",
+      "body": "Because every part of a body in equilibrium is itself in equilibrium, you are free to isolate at any scale. That freedom is the main strategic lever you have.\n\nTake the whole assembly as one body and the forces that connected its parts cancel in pairs. They are equal and opposite, they act on two different parts of the same body, and they contribute nothing to the sum of external forces. This is why a whole-system diagram is short: fewer arrows, fewer unknowns, and often a single equation for the acceleration or an overall reaction.\n\nBut those cancelled forces are frequently exactly what you were asked for. The force in a pin, the tension in a cable, the push between two blocks, the internal load in a beam - none of these appears on the whole-system diagram, because it never crosses that boundary. To see one, you must draw a boundary that cuts through it. The moment your cut passes through a connection, the interaction that was invisible becomes an external force on each of the two new free bodies, pointing one way on one diagram and the opposite way on the other.\n\nThe practical routine follows: use the whole system first to get the global quantity cheaply, then cut where the unknown lives and use the value you just found. And keep a check in reserve - the third free body you did not need is an independent test of the two you used."
+    },
+    {
+      "heading": "From diagram to equations",
+      "body": "A finished diagram converts into equations mechanically. For each axis, sum the components of every arrow on the diagram, set the sum equal to zero if the body is in equilibrium or to mass times the acceleration component if it is not, and solve.\n\nTwo disciplines matter here. First, the mass-times-acceleration term is not a force and does not belong on the diagram. It lives on the other side of the equation. Drawing an ma arrow among the real forces double-counts it and produces equations that balance to nonsense. (There is an alternative convention, d'Alembert's, in which a fictitious inertial force of magnitude ma is deliberately added so the problem can be handled as a static balance - it is legitimate, but it is a different bookkeeping system and the two must never be mixed.) Second, take moments about a point that kills unknowns: summing moments about a pin removes both of that pin's force components from the equation at a stroke.\n\nA worked instance: a 6.0 m beam, pin at A, roller at B, with a 1200 N load 2.0 m from A. Summing moments about A removes both pin components, leaving R_B x 6.0 m - 1200 N x 2.0 m = 0, so R_B = 400 N; then vertical equilibrium gives R_A = 1200 N - 400 N = 800 N. Checking moments about B independently gives 800 N x 6.0 m - 1200 N x 4.0 m = 0, which confirms the pair."
+    },
+    {
+      "heading": "What the diagram assumes, and what this lesson is not",
+      "body": "Every free-body diagram is a model, and the modelling assumptions are usually invisible until they fail. A rigid body does not deform, so the geometry you measured before loading is the geometry you use after - true enough for a steel bracket, badly wrong for a cable-stayed structure at large deflection. A frictionless pin transmits no moment, which is why it costs two unknowns and not three; a real pin that has seized transmits a moment your diagram denies. A smooth surface has no tangential force, which is exactly the assumption that fails the moment a crate stops sliding. A massless cable has the same tension throughout and pulls only along its line, which stops being true for a heavy chain hanging under its own weight. Naming the assumption you are making is part of drawing the diagram, not an afterthought.\n\nThis lesson is educational material. It teaches how to construct and read a free-body diagram; it is not engineering design guidance, and nothing here should be used to size, check, or approve a real structure, machine, lifting arrangement, or pressure-retaining part. Real design is performed by a licensed engineer working to the governing code or standard, with the load cases, load factors, and allowable values that code specifies."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "Free-body diagram",
+      "definition": "A sketch of one chosen object drawn detached from its surroundings, showing every external force and couple-moment acting on it, with axes and labels, and showing nothing else."
+    },
+    {
+      "term": "External force",
+      "definition": "A force exerted on the chosen body by something outside the boundary you drew; only these appear on the diagram."
+    },
+    {
+      "term": "Internal force",
+      "definition": "A force exerted between two parts that both lie inside the chosen boundary; these cancel in pairs and are absent from the diagram until a cut exposes them."
+    },
+    {
+      "term": "Contact force",
+      "definition": "A force transmitted where another object touches the body, such as a normal force, friction, cable tension, or a joint reaction; contrasted with a body force such as gravity, which acts throughout the volume and is drawn as one arrow at the center of mass."
+    },
+    {
+      "term": "Support reaction",
+      "definition": "The force or couple-moment a support supplies in place of the motion it prevents; it replaces the support once the body is isolated."
+    },
+    {
+      "term": "Normal force",
+      "definition": "The component of a contact force perpendicular to the contacting surface, which can push but never pull."
+    },
+    {
+      "term": "Roller support",
+      "definition": "A support that blocks motion perpendicular to its surface while allowing sliding along it and rotation, contributing one unknown force normal to the surface."
+    },
+    {
+      "term": "Pin support",
+      "definition": "A connection that blocks translation in both directions while allowing rotation, contributing two unknown force components and no couple-moment."
+    },
+    {
+      "term": "Fixed support",
+      "definition": "A connection that blocks translation in both directions and rotation, contributing two unknown force components plus one unknown couple-moment."
+    },
+    {
+      "term": "Sign convention",
+      "definition": "The agreement, set by the axes drawn on the diagram, about which direction counts as positive for each component, from which every sign in the equations follows."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Pick one thing. Draw just that thing, floating by itself. Now think about everything that was touching it a moment ago - the table under it, the rope tied to it, the hand pushing it - and for each one draw an arrow showing which way that thing pushes or pulls. Add one arrow straight down for gravity. Those arrows are the whole picture. Two rules keep it honest: only arrows for pushes on your thing, never pushes your thing gives to something else, and never an arrow for where you think it will go. Then you add up the arrows in each direction.",
+    "analogy": "A free-body diagram is a bank statement for one account. The statement lists only money crossing that account's boundary - deposits in, withdrawals out. If you move money between two of your own sub-accounts and then ask for a statement of the combined account, those transfers do not show up at all: they net to zero inside the boundary. Ask for a statement of just one sub-account and the same transfer suddenly appears as a real line item. Drawing the boundary in a different place is what makes an internal transfer visible.",
+    "analogyLimits": "The analogy breaks in three places. Money is a single number; forces are vectors, so where an arrow acts and which way it points both matter, and two forces of equal size can leave a body spinning rather than balanced. A bank balance is allowed to be any value, while a body in equilibrium requires the arrows to sum to exactly zero on every axis. And a bank statement records history, whereas a free-body diagram is a snapshot of one instant - change the configuration and you need a new diagram."
+  },
+  "workedExample": "PROBLEM. Two blocks sit touching each other on a frictionless horizontal floor. Block A has mass 4.0 kg, block B has mass 2.0 kg. A horizontal force F = 18 N pushes on A, driving both blocks along. Find the acceleration, and find the contact force between the blocks. Use g_n = 9.806 65 m/s^2 (NIST standard acceleration of free fall).\n\n                        F = 18 N\n                     -------->  +-------+ +-----+\n                                |   A   | |  B  |\n                                +-------+ +-----+\n                     ==========================================  frictionless floor\n                     positive x to the right, positive y up\n\nSTEP 1 - CHOOSE A BODY. The question asks for the acceleration of the pair, so start with the pair: body = \"A and B together\". The contact force lives inside that boundary, so it will not appear - which is exactly why this diagram is short.\n\nSTEP 2 - ISOLATE AND WALK THE BOUNDARY. Redraw the pair floating free. Touching it: the floor (below), the applied push (left face). Gravity acts throughout, at the combined center of mass.\n\n        FBD 1 - system (A + B):\n\n                             N = 58.84 N\n                                 ^\n                                 |\n                          +--------------+\n             F = 18 N --->|    A + B     |\n                          +--------------+\n                                 |\n                                 v\n                             W = 58.84 N\n\n  W = (4.0 kg + 2.0 kg) x 9.806 65 m/s^2 = 58.8399 N, reported 59 N at two significant figures.\n\nSTEP 3 - EQUATIONS. Sum(F_y) = N - W = 0, so N = 58.84 N (59 N at two significant figures). Sum(F_x) = F = (m_A + m_B) a.\n  a = 18 N / 6.0 kg = 3.0 m/s^2, directed along +x.\nNote what this diagram cannot tell you: it gives the total floor reaction, not how it splits between the two blocks, and it says nothing at all about the contact force. Both are internal here.\n\nSTEP 4 - A WRONG DIAGRAM, AND HOW TO SPOT IT. Here is the version students actually draw for block B:\n\n        FBD 2 - block B, INCORRECT:\n\n                             N_B\n                              ^\n                              |\n                        +-----+-----+\n        F = 18 N ------>|     B     |------> P' (B pushes A)\n                        +-----+-----+     ------> m_B a\n                              |\n                              v\n                             W_B\n\nThree separate errors. (i) F = 18 N is applied to A, not to B; nothing outside is pushing B's left face except A. Using it gives a_B = 18 N / 2.0 kg = 9.0 m/s^2, which would mean B accelerates at 9.0 m/s^2 while A accelerates at 3.0 m/s^2 - the blocks would separate, contradicting the premise that they stay in contact. (ii) P' is the force B exerts on A. It is the third-law partner of the force A exerts on B, it acts on A, and it belongs on A's diagram, never on B's. Including both partners here would give a net contact contribution of P - P = 0 N and predict a_B = 0. (iii) m_B a is not a force. It is the right-hand side of the equation, not an arrow.\n\nDelete all three. What remains is the correct diagram:\n\n        FBD 3 - block B, CORRECT:\n\n                          N_B = 19.61 N\n                              ^\n                              |\n                        +-----+-----+\n        P (A on B) ---->|     B     |\n                        +-----+-----+\n                              |\n                              v\n                          W_B = 19.61 N\n\nSTEP 5 - SOLVE WITH THE NEW BODY CHOICE. Cutting between the blocks made the contact force external, so now it is solvable.\n  Sum(F_y) = N_B - W_B = 0 -> N_B = 2.0 kg x 9.806 65 m/s^2 = 19.6133 N, reported 20 N.\n  Sum(F_x) = P = m_B a = 2.0 kg x 3.0 m/s^2 = 6.0 N.\n\nSTEP 6 - VERIFY WITH A THIRD BODY YOU DID NOT NEED. Block A alone carries F to the right and the reaction P to the left (this is where P' from FBD 2 legitimately belongs), plus W_A = 39.2266 N down and N_A = 39.2266 N up, reported 39 N each.\n  Sum(F_x): 18 N - 6.0 N = 12 N, and m_A a = 4.0 kg x 3.0 m/s^2 = 12 N. They agree.\nSolving instead from the two part diagrams alone, without ever using the system view, means solving m_A a + P = 18 N together with m_B a - P = 0 simultaneously; that pair returns a = 3.0 m/s^2 and P = 6.0 N, the same numbers. The system view and the part-by-part view are not two methods with two answers - they are two boundaries drawn around the same physics.\n\nSIGN-CONVENTION CHECK. Suppose on FBD 3 you had guessed that A pulls B backwards and drawn P in the -x direction. The equation becomes -P = m_B a, giving P = -6.0 N. The minus sign is the answer telling you the assumed direction was wrong; the magnitude 6.0 N was right all along. Report 6.0 N in the +x direction and move on.\n\n(Idealizations in force here: frictionless floor, rigid blocks, and a contact that only pushes. All three are modelling choices, not facts about the world.)",
+  "commonMistakes": [
+    {
+      "mistake": "Drawing the third-law partner - the force the body exerts on something else - on the body's own diagram.",
+      "correction": "Only forces exerted ON the chosen body belong. The two members of an action-reaction pair act on different bodies and can never appear on the same diagram; when you analyse both bodies, the pair shows up once on each diagram, pointing opposite ways."
+    },
+    {
+      "mistake": "Drawing the mass-times-acceleration term as an extra arrow, or drawing the net force as an arrow alongside the real ones.",
+      "correction": "The diagram carries only real forces. ma and the net force belong on the other side of the equation. Adding an ma arrow double-counts it. (The d'Alembert convention deliberately adds an inertial force instead, but it is a separate bookkeeping system and must never be mixed with the standard one.)"
+    },
+    {
+      "mistake": "Omitting a normal force or a friction force because the contact felt passive.",
+      "correction": "Walk the perimeter of the isolated body and stop at every point where something was touching it. A surface that stops the body sinking is supplying a normal force whether or not anyone mentioned it, and a surface that stops it sliding is supplying friction. If you sketch on top of the original figure instead of redrawing the body free, these are the forces you will miss."
+    },
+    {
+      "mistake": "Including the force between two connected parts when the whole assembly is the chosen body.",
+      "correction": "With both parts inside the boundary, that force is internal: it occurs as an equal and opposite pair inside the body and contributes nothing to the external sum. If you need its value, redraw with a boundary that cuts through the connection - that cut is what makes it external and solvable."
+    },
+    {
+      "mistake": "Adding an arrow with no physical source - a leftover 'applied force', a mysterious force 'of motion', or centrifugal force in an inertial frame.",
+      "correction": "Every arrow must be traceable to a specific object outside the boundary: this cable, that surface, the Earth's gravity. If you cannot name what is exerting it, it is not a force on this body and it comes off the diagram."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Whole-system free body",
+      "b": "Part-by-part free bodies",
+      "distinction": "The system diagram hides every connection force because those forces are internal to it, which makes it short and ideal for global quantities like overall acceleration or total support reaction. Cutting into parts exposes exactly those connection forces, at the cost of more diagrams and more unknowns. Choose by what you are solving for."
+    },
+    {
+      "a": "Roller support",
+      "b": "Pin support",
+      "distinction": "A roller blocks motion in one direction only and adds one unknown, a force normal to its surface. A pin blocks translation in both directions and adds two unknown force components. Neither transmits a couple-moment; a fixed support does, which is why it adds three unknowns."
+    },
+    {
+      "a": "Sum of forces = 0",
+      "b": "Sum of forces = ma",
+      "distinction": "Both are read off the same diagram, drawn the same way. Equilibrium is the special case where the acceleration is zero. Nothing about the arrows changes; only the right-hand side does, which is why the free-body skill transfers unchanged from statics to dynamics."
+    },
+    {
+      "a": "Mass",
+      "b": "Weight",
+      "distinction": "Mass is an amount of matter in kilograms and is a property of the body. Weight is the gravitational force on it, measured in newtons - NIST's SI guide defines it as a force. A 2.0 kg block has a weight of 2.0 kg x 9.806 65 m/s^2 = 19.6 N, and only the newton value belongs on the diagram."
+    },
+    {
+      "a": "Negative answer",
+      "b": "Arithmetic error",
+      "distinction": "A negative result for an assumed-direction force is a valid answer: the magnitude stands and the true direction is opposite the arrow you drew. An arithmetic error shows up differently - as an equation that fails an independent check, such as a second free body or moments taken about a different point."
+    }
+  ],
+  "keyTakeaway": "A free-body diagram is a decision about a boundary followed by an inventory of what crosses it: choose the body, replace everything you removed with the force it exerted, draw only forces acting on that body, and let the axes you drew fix every sign. This lesson is educational material, not engineering design guidance.",
+  "questionBank": [
+    {
+      "id": "engineering-fundamentals:mechanics:free-body-diagrams:1",
+      "prompt": "A crate rests on a warehouse floor. Which of the following belongs on the free-body diagram of the crate?",
+      "options": [
+        "The downward force the crate exerts on the floor.",
+        "The upward normal force the floor exerts on the crate.",
+        "The net force on the crate, drawn as an additional arrow.",
+        "The compressive forces the crate's own particles exert on one another."
+      ],
+      "correctIndex": 1,
+      "explanation": "Only forces exerted on the chosen body by things outside its boundary belong. The floor pushes up on the crate, so that normal force is drawn. The force the crate exerts on the floor acts on the floor, not the crate, and is the third-law partner that belongs on a diagram of the floor. The net force is a result of summing the arrows, never an extra arrow. Forces between the crate's own particles are internal to the chosen body and cancel.",
+      "difficulty": "recall",
+      "skill": "Distinguishing forces acting on the body from third-law partners, net force, and internal forces",
+      "sourceIds": [
+        "openstax-university-physics-1-drawing-free-body-diagrams",
+        "libretexts-mechanics-map-free-body-diagrams"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:mechanics:free-body-diagrams:2",
+      "prompt": "A student's free-body diagram of block B shows two horizontal arrows: 'force of A on B' and 'force of B on A'. What is wrong, and why?",
+      "options": [
+        "Nothing is wrong; action and reaction always have to be shown together.",
+        "The two arrows should be added together to give a single net contact force on B.",
+        "They are an action-reaction pair acting on two different bodies, so only the force A exerts on B belongs on B's diagram.",
+        "The force of B on A belongs on B's diagram only when B is the heavier block."
+      ],
+      "correctIndex": 2,
+      "explanation": "An action-reaction pair never acts on the same body: one member acts on A and the other on B. Only the force A exerts on B crosses B's boundary, so only it is drawn. Showing both makes the horizontal contribution cancel to zero and predicts that B does not accelerate. They cannot be added, because they act on different bodies. Relative mass is irrelevant to which forces act on which body.",
+      "difficulty": "understanding",
+      "skill": "Applying the action-reaction rule to decide what appears on a given diagram",
+      "sourceIds": [
+        "openstax-university-physics-1-drawing-free-body-diagrams",
+        "libretexts-engineering-statics-interactions-between-members"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:mechanics:free-body-diagrams:3",
+      "prompt": "Block A (3.0 kg) and block B (2.0 kg) sit in contact on a frictionless horizontal floor. A horizontal force of 30 N is applied to A, pushing both blocks. What is the magnitude of the contact force between the blocks?",
+      "options": [
+        "12 N",
+        "18 N",
+        "30 N",
+        "15 N"
+      ],
+      "correctIndex": 0,
+      "explanation": "Take the pair as one body first: the contact force is internal, so 30 N = (3.0 kg + 2.0 kg) a gives a = 6.0 m/s^2. Then cut between the blocks and take B alone; the only horizontal force on B is the contact push, so P = 2.0 kg x 6.0 m/s^2 = 12 N. 18 N is m_A x a, which is the net force on A rather than the contact force. 30 N is the applied force, which acts on A only. 15 N assumes the force simply splits in half, which no free body supports.",
+      "difficulty": "application",
+      "skill": "Selecting a body, cutting to expose an internal force, and computing it",
+      "sourceIds": [
+        "libretexts-engineering-statics-interactions-between-members",
+        "libretexts-engineering-statics-free-body-diagrams"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:mechanics:free-body-diagrams:4",
+      "prompt": "A straight beam is held by a pin at one end and a roller at the other and carries a vertical load. How do the unknown reaction components on its free-body diagram compare with the equations available?",
+      "options": [
+        "Two unknowns, fewer than the three available equations, so the reactions cannot all be determined.",
+        "Four unknowns, more than the three available equations.",
+        "Three unknowns, but only two independent equilibrium equations exist in two dimensions.",
+        "Three unknowns - two from the pin and one from the roller - matching the three independent two-dimensional equilibrium equations."
+      ],
+      "correctIndex": 3,
+      "explanation": "A pin blocks translation in both directions and contributes two unknown force components; a roller blocks motion normal to its surface only and contributes one. That is three unknowns. A rigid body in two dimensions supplies three independent scalar equilibrium equations - two force sums and one moment sum - so the reactions are determinable from statics alone. The pin contributes two components, not one, and no couple-moment, so neither two nor four is correct, and there are three equations available, not two.",
+      "difficulty": "analysis",
+      "skill": "Counting support unknowns against available equilibrium equations",
+      "sourceIds": [
+        "libretexts-engineering-statics-free-body-diagrams"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:mechanics:free-body-diagrams:5",
+      "prompt": "On a free-body diagram of a crate on a ramp, a student assumes the friction force acts down the slope, writes the equations from the axes drawn, and obtains f = -85 N. What should the student conclude?",
+      "options": [
+        "The arithmetic must be wrong, because a force magnitude cannot be negative.",
+        "The magnitude is 85 N and the friction force actually acts up the slope, opposite the assumed arrow.",
+        "The body cannot be in equilibrium, so no solution exists.",
+        "The axes were chosen badly and the whole problem must be redrawn and re-solved."
+      ],
+      "correctIndex": 1,
+      "explanation": "The direction of a friction force is often not known before solving, so assuming a sense and letting the algebra decide is standard practice: a negative result means the true direction is opposite the assumed one, while the magnitude stands. Nothing needs redrawing or re-solving, and the axes were not at fault - signs follow from whatever axes were drawn. A negative result also says nothing about whether equilibrium holds; the equations were written on the assumption that it does.",
+      "difficulty": "application",
+      "skill": "Interpreting the sign of a solved unknown against the assumed direction",
+      "sourceIds": [
+        "libretexts-engineering-statics-free-body-diagrams"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "engineering-fundamentals:mechanics:free-body-diagrams:1",
+      "prompt": "A crate rests on a warehouse floor. Which of the following belongs on the free-body diagram of the crate?",
+      "options": [
+        "The downward force the crate exerts on the floor.",
+        "The upward normal force the floor exerts on the crate.",
+        "The net force on the crate, drawn as an additional arrow.",
+        "The compressive forces the crate's own particles exert on one another."
+      ],
+      "correctIndex": 1,
+      "explanation": "Only forces exerted on the chosen body by things outside its boundary belong. The floor pushes up on the crate, so that normal force is drawn. The force the crate exerts on the floor acts on the floor, not the crate, and is the third-law partner that belongs on a diagram of the floor. The net force is a result of summing the arrows, never an extra arrow. Forces between the crate's own particles are internal to the chosen body and cancel.",
+      "difficulty": "recall",
+      "skill": "Distinguishing forces acting on the body from third-law partners, net force, and internal forces",
+      "sourceIds": [
+        "openstax-university-physics-1-drawing-free-body-diagrams",
+        "libretexts-mechanics-map-free-body-diagrams"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:mechanics:free-body-diagrams:2",
+      "prompt": "A student's free-body diagram of block B shows two horizontal arrows: 'force of A on B' and 'force of B on A'. What is wrong, and why?",
+      "options": [
+        "Nothing is wrong; action and reaction always have to be shown together.",
+        "The two arrows should be added together to give a single net contact force on B.",
+        "They are an action-reaction pair acting on two different bodies, so only the force A exerts on B belongs on B's diagram.",
+        "The force of B on A belongs on B's diagram only when B is the heavier block."
+      ],
+      "correctIndex": 2,
+      "explanation": "An action-reaction pair never acts on the same body: one member acts on A and the other on B. Only the force A exerts on B crosses B's boundary, so only it is drawn. Showing both makes the horizontal contribution cancel to zero and predicts that B does not accelerate. They cannot be added, because they act on different bodies. Relative mass is irrelevant to which forces act on which body.",
+      "difficulty": "understanding",
+      "skill": "Applying the action-reaction rule to decide what appears on a given diagram",
+      "sourceIds": [
+        "openstax-university-physics-1-drawing-free-body-diagrams",
+        "libretexts-engineering-statics-interactions-between-members"
+      ]
+    },
+    {
+      "id": "engineering-fundamentals:mechanics:free-body-diagrams:3",
+      "prompt": "Block A (3.0 kg) and block B (2.0 kg) sit in contact on a frictionless horizontal floor. A horizontal force of 30 N is applied to A, pushing both blocks. What is the magnitude of the contact force between the blocks?",
+      "options": [
+        "12 N",
+        "18 N",
+        "30 N",
+        "15 N"
+      ],
+      "correctIndex": 0,
+      "explanation": "Take the pair as one body first: the contact force is internal, so 30 N = (3.0 kg + 2.0 kg) a gives a = 6.0 m/s^2. Then cut between the blocks and take B alone; the only horizontal force on B is the contact push, so P = 2.0 kg x 6.0 m/s^2 = 12 N. 18 N is m_A x a, which is the net force on A rather than the contact force. 30 N is the applied force, which acts on A only. 15 N assumes the force simply splits in half, which no free body supports.",
+      "difficulty": "application",
+      "skill": "Selecting a body, cutting to expose an internal force, and computing it",
+      "sourceIds": [
+        "libretexts-engineering-statics-interactions-between-members",
+        "libretexts-engineering-statics-free-body-diagrams"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "engineering-fundamentals:mechanics:force-and-motion",
+    "engineering-fundamentals:mechanics:statics",
+    "engineering-fundamentals:mechanics:dynamics"
+  ],
+  "sources": [
+    "openstax-university-physics-1-drawing-free-body-diagrams",
+    "libretexts-engineering-statics-free-body-diagrams",
+    "libretexts-engineering-statics-interactions-between-members",
+    "libretexts-mechanics-map-free-body-diagrams",
+    "nist-sp811-chapter-4-classes-of-si-units",
+    "nist-sp811-chapter-8-quantities-and-units",
+    "nist-cuu-standard-acceleration-of-gravity",
+    "nasa-bga-four-forces-on-an-airplane"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "All six sources recorded REFERENCE_ONLY; three carry CC BY-NC-SA or CC BY-SA terms and no source prose, figure, or table was reproduced. No engineering-standard text or design value is used.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Procedure, support-reaction unknown counts, and the internal/external distinction were synthesized from OpenStax University Physics 5.7, LibreTexts Engineering Statics 5.2 and 6.2, and Mechanics Map 1.4, then written in original prose. The newton in base units comes from NIST SI guide chapter 4, the definition of weight as a force from chapter 8, and g_n = 9.806 65 m/s^2 from the NIST constants page. Every number in the worked example, the incline aside, the beam reactions, and question 3 was executed in Python before publication; the incorrect worked-example diagram and its diagnosis are original to this lesson."
+  },
+  "contentHash": "51ca5fec631709e9",
+  "status": "source-verified",
+  "public": false
+}

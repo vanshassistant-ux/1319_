@@ -1,0 +1,293 @@
+{
+  "topicId": "engineering-fundamentals:mechanics:free-body-diagrams",
+  "subjectId": "engineering-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "What a free-body diagram is and why choosing the body is the decisive step",
+      "The isolate-and-replace procedure: cut the body free, replace every contacting body with the force it exerts",
+      "Drawing only forces acting ON the body; excluding third-law partners, internal forces, and the net force",
+      "Standard two-dimensional support reactions and the unknown count each introduces",
+      "Choosing and stating a coordinate system; sign convention discipline and the meaning of a negative answer",
+      "Whole-system versus part-by-part free bodies and where to cut to expose an internal force",
+      "Translating a finished diagram into scalar equations per axis"
+    ],
+    "supporting": [
+      "Body forces versus contact forces",
+      "The newton as the SI unit of force and weight as a force rather than a mass",
+      "Idealizations built into a free body: rigid body, frictionless pin, smooth surface, massless cable",
+      "Counting unknowns against available equations as a first sanity check"
+    ],
+    "outOfScope": [
+      "Derivation or statement of Newton's three laws as such (owned by force-and-motion)",
+      "Types of force treated as a catalogue (owned by force-and-motion)",
+      "Equilibrium of full structures, trusses, frames, and general moment analysis (owned by statics)",
+      "Kinematics and the full treatment of accelerating systems (owned by dynamics)",
+      "Internal shear and bending-moment diagrams, stress, and any design or sizing guidance"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A free-body diagram isolates one chosen body from its surroundings and shows every external force and moment acting on that body, and nothing else.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-mechanics-map-free-body-diagrams",
+        "libretexts-engineering-statics-free-body-diagrams",
+        "openstax-university-physics-1-drawing-free-body-diagrams"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Forces the body exerts on other objects, and forces internal to the body itself, do not belong on that body's free-body diagram; the net force is also never drawn as an additional arrow.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openstax-university-physics-1-drawing-free-body-diagrams",
+        "libretexts-mechanics-map-free-body-diagrams"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The two members of an action-reaction pair act on different bodies and therefore never appear on the same free-body diagram; when two bodies are analyzed, the pair appears once on each diagram in opposite directions.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openstax-university-physics-1-drawing-free-body-diagrams",
+        "libretexts-engineering-statics-interactions-between-members"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Standard two-dimensional supports introduce a known number of unknown reaction components: a roller one, a frictionless pin two, a fixed support three (two force components plus a couple-moment), a cable one along its known line, a smooth surface one normal to the surface, and a spring or two-force link one along its axis.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-engineering-statics-free-body-diagrams"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "When the sense of an unknown force is not known in advance, an analyst may assume a direction; a negative result means the true direction is opposite the assumed one, not that the arithmetic failed.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-engineering-statics-free-body-diagrams"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Interaction forces between connected bodies cancel and are invisible while the assembly is treated as one body, and become visible only when the isolation step cuts through the connection; because every part of a body in equilibrium is itself in equilibrium, a free body may be isolated at any scale.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-engineering-statics-interactions-between-members"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Forces on a free-body diagram divide into body forces, such as gravity acting at the center of mass, and contact or surface forces, such as normal force, friction, cable tension, and joint reactions.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "libretexts-mechanics-map-free-body-diagrams"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The newton is the SI coherent derived unit of force, equal to m*kg*s^-2 in SI base units.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "nist-sp811-chapter-4-classes-of-si-units"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "In science and technology the weight of a body is a force measured in newtons, not a mass in kilograms, and the standard acceleration of free fall is g_n = 9.806 65 m/s^2 exactly.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "nist-sp811-chapter-8-quantities-and-units",
+        "nist-cuu-standard-acceleration-of-gravity"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "For two blocks in contact on a frictionless horizontal surface with m_A = 4.0 kg, m_B = 2.0 kg and an applied horizontal force F = 18 N on A, the system free body gives a = 18 N / 6.0 kg = 3.0 m/s^2 and cutting between the blocks gives a contact force of 2.0 kg * 3.0 m/s^2 = 6.0 N; the free body of A independently satisfies 18 N - 6.0 N = 4.0 kg * 3.0 m/s^2 = 12 N.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "libretexts-engineering-statics-interactions-between-members",
+        "libretexts-engineering-statics-free-body-diagrams"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "With g_n = 9.806 65 m/s^2, the weights in that example are 4.0 kg * 9.806 65 m/s^2 = 39.2266 N and 2.0 kg * 9.806 65 m/s^2 = 19.6133 N, reported as 39 N and 20 N at the two significant figures the masses justify.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "nist-cuu-standard-acceleration-of-gravity",
+        "nist-sp811-chapter-8-quantities-and-units"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A simply supported beam with a pin at one end and a roller at the other carries three unknown reaction components, matching the three independent scalar equilibrium equations available in two dimensions; for a 6.0 m span with a 1200 N load 2.0 m from the pin, the roller reaction is 1200 N * 2.0 m / 6.0 m = 400 N and the pin's vertical reaction is 800 N.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "libretexts-engineering-statics-free-body-diagrams"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "An aircraft in flight is commonly analyzed as a single body acted on by four external forces - weight, lift, thrust, and drag - with the distributed weight collected at the center of gravity and lift acting through the center of pressure.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nasa-bga-four-forces-on-an-airplane"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether the mass-times-acceleration term should be drawn on the diagram.",
+      "positions": [
+        "Introductory dynamics practice draws only real forces on the free body and keeps ma on the other side of the equation.",
+        "The d'Alembert or inertial-force convention adds a fictitious force of magnitude ma opposite the acceleration so the problem can be treated as a static balance."
+      ],
+      "resolution": "The lesson teaches the first convention, consistent with the OpenStax rule that the net force is never drawn on the diagram, and names d'Alembert only as an alternative bookkeeping scheme that is not mixed with the standard one."
+    },
+    {
+      "issue": "Number of significant figures to report for the computed weights.",
+      "positions": [
+        "Carrying the full product of mass and g_n gives 39.2266 N and 19.6133 N.",
+        "The stated masses carry two significant figures."
+      ],
+      "resolution": "Full products are shown once so the reader can check the arithmetic, then rounded to 39 N and 20 N, with the rounding stated explicitly."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's definition of the topic as 'a foundational concept students use to organize information' is content-free and describes no property of a free-body diagram.",
+    "The draft's vocabulary block defined 'Free-Body Diagrams' circularly as 'a foundational Engineering Fundamentals concept covered in this lesson'.",
+    "The draft's worked example contained no body, no forces, and no numbers, and so demonstrated nothing about the skill.",
+    "The draft's common mistakes ('treating the term as a definition to recite') are generic study advice, not the systematic errors that actually break free-body diagrams."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire generated draft with a procedural lesson built around isolating a chosen body.",
+    "Added the standard two-dimensional support-reaction inventory with unknown counts, verified against Baker and Haynes.",
+    "Added a fully executed numerical worked example including a wrong diagram, its diagnosis, and a second body choice reproducing the same result.",
+    "Replaced the generic common mistakes with the five systematic free-body-diagram errors.",
+    "Added the explicit statement that this is educational material and not engineering design guidance, per the subject's safety-adjacent review profile.",
+    "Used g_n = 9.806 65 m/s^2 from NIST SP 811 for every weight rather than an unsourced 9.8 or 9.81."
+  ],
+  "rightsIssues": [
+    "OpenStax University Physics and both LibreTexts texts carry NonCommercial or ShareAlike terms; all three are recorded REFERENCE_ONLY and no wording, figure, or table was reproduced. The support-reaction unknown counts are conventional engineering facts stated in many texts, restated here in original prose.",
+    "The NIST guide pages and the NASA Beginner's Guide page are U.S. federal publications, but no per-page reuse grant was verified, so both are recorded REFERENCE_ONLY and only facts were taken.",
+    "No engineering standard (ASME, ASTM, AISC, ISO) text, table, or design value is reproduced or relied on anywhere in this lesson."
+  ],
+  "sourceRecords": [
+    {
+      "id": "openstax-university-physics-1-drawing-free-body-diagrams",
+      "title": "University Physics Volume 1, Section 5.7: Drawing Free-Body Diagrams",
+      "provider": "OpenStax (Rice University)",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/5-7-drawing-free-body-diagrams",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0 (stated on the page)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read in full 2026-08-19. Supports the four construction rules: draw the body, include every external force acting on it, exclude the net force and exclude forces the body exerts on its environment, resolve into components, and draw a separate diagram per body. Explicitly states that both members of an action-reaction pair are never drawn on one diagram. NC-SA terms mean this project treats it as reference only; no wording adapted."
+    },
+    {
+      "id": "libretexts-engineering-statics-free-body-diagrams",
+      "title": "Engineering Statics: Open and Interactive, Section 5.2: Free Body Diagrams",
+      "provider": "LibreTexts Engineering (Baker and Haynes, Colorado State University)",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Engineering_Statics:_Open_and_Interactive_(Baker_and_Haynes)/05:_Rigid_Body_Equilibrium/5.02:_Free_Body_Diagrams",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0 (stated on the page)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Supports the five-step procedure (isolate the body from its supports, choose a coordinate system, add applied loads, replace each removed support with the reactions it provides, label everything), the two-dimensional support-reaction inventory and unknown counts (roller 1, frictionless pin 2, fixed support 3, cable 1, smooth surface 1, spring or link 1), and the rule that an unknown sense may be assumed and a negative result means the assumed direction was wrong. Facts synthesized; no wording adapted."
+    },
+    {
+      "id": "libretexts-engineering-statics-interactions-between-members",
+      "title": "Engineering Statics: Open and Interactive, Section 6.2: Interactions between members",
+      "provider": "LibreTexts Engineering (Baker and Haynes, Colorado State University)",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Engineering_Statics:_Open_and_Interactive_(Baker_and_Haynes)/06:_Equilibrium_of_Structures/6.02:_Interactions_between_members",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0 (stated on the page)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Supports the whole-system versus part-by-part material: forces transfer between contacting bodies as equal and opposite action-reaction pairs; those forces cancel and are invisible while the structure is intact and become visible only when the isolation step cuts through a member or joint; if a structure is in equilibrium every part of it is also in equilibrium, so a free body may be isolated at any scale to expose the target unknowns."
+    },
+    {
+      "id": "libretexts-mechanics-map-free-body-diagrams",
+      "title": "Mechanics Map, Section 1.4: Free Body Diagrams",
+      "provider": "LibreTexts Engineering (Jacob Moore and contributors, Penn State Mont Alto)",
+      "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_Map_(Moore_et_al.)/01:_Basics_of_Newtonian_Mechanics/1.04:_Free_Body_Diagrams",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0 (stated on the page)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Supports the definition of a free-body diagram as a tool that frees a chosen body from its surroundings so it can be studied in isolation, the instruction to identify the body's boundary carefully, the exclusion of forces internal to the body being analyzed and of forces that do not act directly on it, and the split between body forces (gravity acting at the center of mass) and contact or surface forces (normal, friction, cable tension, joint reactions)."
+    },
+    {
+      "id": "nist-sp811-chapter-4-classes-of-si-units",
+      "title": "NIST Guide to the SI, Chapter 4: Two Classes of SI Units and the SI Prefixes",
+      "provider": "National Institute of Standards and Technology",
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "HTML chapter read 2026-08-19 and cross-checked against the SP 811 (2008) PDF at nvlpubs.nist.gov, whose text was extracted locally. Table 3 gives the newton (N) as the SI coherent derived unit of force, expressed in SI base units as m*kg*s^-2. Used for the unit of every force stated in this lesson."
+    },
+    {
+      "id": "nist-sp811-chapter-8-quantities-and-units",
+      "title": "NIST Guide to the SI, Chapter 8: Comments on Some Quantities and Their Units",
+      "provider": "National Institute of Standards and Technology",
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-8",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "HTML chapter read 2026-08-19 and cross-checked against the SP 811 (2008) PDF. Section 8.3 defines the weight of a body in a reference frame as the force that gives it an acceleration equal to the local acceleration of free fall, with the newton as the SI unit, and notes that in commercial and everyday use weight is normally used as a synonym for mass in kilograms. Supports the lesson's insistence that the arrow labelled weight on a free-body diagram carries newtons, not kilograms."
+    },
+    {
+      "id": "nist-cuu-standard-acceleration-of-gravity",
+      "title": "Standard acceleration of gravity (CODATA value, NIST Reference on Constants, Units, and Uncertainty)",
+      "provider": "National Institute of Standards and Technology",
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?gn",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Retrieved 2026-08-19. Gives the standard acceleration of gravity g_n = 9.806 65 m/s^2 with the uncertainty listed as exact. This is the value used for every weight computed in this lesson; NIST SP 811 Appendix B lists the same figure."
+    },
+    {
+      "id": "nasa-bga-four-forces-on-an-airplane",
+      "title": "Four Forces on an Airplane (Beginner's Guide to Aeronautics)",
+      "provider": "NASA Glenn Research Center",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/four-forces-on-an-airplane/",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Retrieved 2026-08-19 with curl and a browser user agent after the standard fetcher hit a TLS chain error on www1.grc.nasa.gov. Supports the real-engineering framing: an aircraft in flight is treated as one body carrying four external forces (weight, lift, thrust, drag); weight is distributed but is collected at a single point, the center of gravity; lift acts through the center of pressure; drag opposes the flight direction. Used only to motivate why choosing the body and its representative point matters."
+    }
+  ]
+}

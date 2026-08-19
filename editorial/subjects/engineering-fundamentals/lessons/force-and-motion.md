@@ -1,0 +1,239 @@
+# Force and Motion
+
+## In 30 Seconds
+
+Kinematics describes how a body moves — position, displacement, velocity, and acceleration, all of them vectors. Dynamics asks why. Newton's answer is three laws: a body with no net external force on it keeps constant velocity, which is what picks out an inertial frame; in such a frame the net external force equals mass times acceleration; and every force is half of a pair whose two halves act on different bodies. Force is measured in newtons, mass in kilograms, and the two are not the same quantity.
+
+## Why This Matters
+
+Every later topic in this unit is a special case of this one. Free-body diagrams are a way of organising the net-force sum, statics is the case where that sum is zero, dynamics is the case where it is not, and work, energy, and momentum accumulate force over distance and over time. Get the vocabulary wrong here — confuse mass with weight, or believe that steady motion needs a steady push — and the error propagates through every problem you solve afterwards. The habits also carry into practice: naming the body you are analysing, listing every external force on it, and checking that the units balance is the same discipline whether the object is a lab cart or a bridge deck.
+
+## Learning Objectives
+
+- Distinguish distance from displacement and speed from velocity, and explain why acceleration is a vector.
+- Apply the constant-acceleration equations and state the assumption that makes them valid.
+- State Newton's three laws precisely, including the first law's role in defining an inertial frame and the third law's requirement that the paired forces act on different bodies.
+- Distinguish mass from weight, express force in newtons, and treat g correctly as an acceleration.
+- Analyse a simple system by summing external forces, identifying gravitational, normal, tension, friction, and applied forces, and recognising equilibrium as the zero-net-force case.
+- Evaluate the idealizations behind a mechanics model — point mass, rigid body, massless rope, frictionless pulley, constant g — and say where each one breaks down.
+
+## The College Version
+
+### Kinematics: describing motion before explaining it
+
+Mechanics splits into two questions. Kinematics asks how a body moves; dynamics asks why. Doing them in that order matters, because you cannot check a force analysis until you can say precisely what motion it is supposed to produce.
+
+Position is where a body is, measured from an origin you choose. Displacement is the change in position, the vector from start point to end point. Distance travelled is the length of the path actually followed: a scalar, never negative, and never smaller than the magnitude of the displacement. A car that leaves a parking space, drives eight kilometres of city streets, and returns to the same space has travelled eight kilometres and been displaced by zero.
+
+Velocity is the rate of change of position and inherits the vector character of displacement. Average velocity is total displacement divided by elapsed time; instantaneous velocity is the limit of that ratio as the time interval shrinks. Speed is the magnitude of instantaneous velocity, so it has size but no direction. The distinction survives at the average level too: average speed is total distance over elapsed time, while average velocity is total displacement over elapsed time, and the two are not generally the same number. The car above had a healthy average speed and an average velocity of exactly zero.
+
+Acceleration is the rate of change of velocity. Because velocity is a vector, a body accelerates whenever its speed changes, its direction changes, or both. A car holding a steady 50 km/h around a curve is accelerating, and that is not a verbal trick: a real sideways force from the tyres is producing it.
+
+### The constant-acceleration equations and the assumption inside them
+
+When acceleration is constant, calculus collapses into algebra and you get the familiar set: v = v0 + a t; x = x0 + v0 t + (1/2) a t squared; v squared = v0 squared + 2 a (x - x0); and x = x0 + v-bar t, where the average velocity v-bar is (v0 + v)/2. Any three of the five quantities — initial velocity, final velocity, acceleration, elapsed time, and displacement — fix the other two.
+
+The assumption is doing real work, and it is easy to forget that it is there. These equations hold only while acceleration is constant in both magnitude and direction. They do not describe a rocket whose mass falls as it burns propellant, a skydiver once air resistance has grown with speed, or any stretch of motion that spans a change in the forces acting. Constant acceleration is a sound model when the net force and the mass are both constant — exactly the situation of a block sliding under a steady push against steady friction, and exactly not the situation of most real machines across a full cycle. When the forces change, either break the motion into intervals over which they are effectively constant, or integrate.
+
+One habit protects you here: choose a positive direction before writing any equation and hold it for the whole problem, so that a negative answer means something. Treat one-dimensional motion as vector motion carrying a sign, not as scalar motion.
+
+### Newton's three laws, stated carefully
+
+First law. A body at rest stays at rest, and a body in motion continues at constant velocity, unless a net external force acts on it. Read as a claim about objects this looks like nothing more than the second law with zero on the right-hand side, which is why the more useful reading is the other one: the first law tells you which reference frames the rest of Newtonian mechanics is entitled to use. A frame in which an isolated body really does keep constant velocity is an inertial frame. Any frame moving at constant velocity relative to an inertial frame is also inertial; an accelerating or rotating frame is not, and in such a frame the second law fails unless you add correction terms. Earth's surface is close enough to inertial for essentially every problem in a first course, and not close enough for problems in which Earth's own rotation matters.
+
+Second law. In an inertial frame, the acceleration of a body is proportional to the net external force on it and inversely proportional to its mass: acceleration equals net force divided by mass, usually written as the sum of forces equals mass times acceleration. Three details carry weight. The sum runs over external forces only, because internal forces between parts of the chosen body cancel in pairs and cannot accelerate it. The statement is a vector equation, which in practice means one scalar equation per axis. And the mass-times-acceleration form is the constant-mass special case: Newton's general statement is that net force equals the rate of change of momentum. For a rocket, a hopper being filled on a moving belt, or any system whose mass changes while it moves, the momentum form is the one that still holds.
+
+Third law. If body A exerts a force on body B, then B exerts on A a force of equal magnitude and opposite direction. The half of this that students lose is the important half: the two forces act on different bodies. They therefore never cancel, because cancellation happens only among forces acting on the same body, and the two halves of a third-law pair by construction never appear in the same net-force sum. When you push on a wall, your push acts on the wall and the wall's push acts on you; that neither of you accelerates much is down to the other forces acting on each of you, not to the pair cancelling. When a swimmer pushes off the end of a pool, the wall's reaction is the only forward force she gets, and she accelerates precisely because that force acts on her while hers acts on the wall.
+
+### Mass, weight, and the newton
+
+Mass measures inertia: how much force a given acceleration costs. Its SI unit is the kilogram, and it does not change when you move the body. Weight, in scientific and engineering usage, is a force: the force that would give the body an acceleration equal to the local acceleration of free fall. Its unit is the newton, and it does change with location. NIST's guide to the SI is direct about the resulting trap: in everyday and commercial speech, weight means mass and is quoted in kilograms, so technical writing should say mass when it means mass, and should make the intended sense explicit on any occasion when it says weight.
+
+The newton is the SI coherent derived unit of force, equal to one metre kilogram per second squared — one newton gives one kilogram an acceleration of one metre per second squared. Where U.S. customary units are conventional, force is quoted in pounds-force, and NIST's conversion factor is one pound-force equals 4.448 222 newtons; the obsolete kilogram-force equals 9.806 65 newtons exactly.
+
+Then there is g. It is an acceleration, not a force, and not a property of the object: near Earth's surface a body in free fall accelerates at roughly 9.81 metres per second squared, and the weight of a body of mass m is w = m g. Two cautions follow. Local g varies across Earth's surface, so weight is genuinely location-dependent — on the Moon, where g is about 1.62 metres per second squared, a one-kilogram mass weighs about 1.6 newtons instead of about 9.8. And the standard acceleration of gravity, 9.806 65 metres per second squared, is a defined conventional value adopted by the 3rd General Conference on Weights and Measures in 1901 and listed by NIST as exact. Use it for defined conversions; do not treat it as a measurement of the field in the room you are standing in.
+
+### Force types, net force, and equilibrium
+
+A force is a push or a pull that one body exerts on another, which means every force in a Newtonian problem has an identifiable source body. Five kinds cover most of an introductory course.
+
+Gravitational force is Earth's attraction on the body, w = m g near the surface, directed toward Earth's centre. Normal force is the contact force a surface exerts perpendicular to itself. It is a response force with no fixed value of its own: it takes whatever magnitude the rest of the problem demands, up to the load at which the surface fails. On a level floor with no vertical acceleration it happens to equal the weight; on an incline, or inside an accelerating lift, it does not. Tension is the force transmitted along a rope, cable, or chain, and it pulls along the line of the rope — it never pushes. Applied force is the catch-all for a push or pull whose source falls outside the other categories.
+
+Friction is the contact force parallel to a surface, opposing sliding or the tendency to slide. The standard coefficient model is empirical rather than fundamental, as its own sources state. Static friction obeys an inequality — it is at most the static coefficient times the normal force — because static friction takes exactly the value needed to prevent sliding, right up to a maximum. Kinetic friction is modelled as an equality: the kinetic coefficient times the normal force, once sliding has begun. For a given pair of materials the kinetic coefficient is generally smaller than the static one, which is why a stuck crate lurches when it finally breaks free. The model also treats friction as independent of contact area and of sliding speed — approximations that fail at high speeds, at high contact pressures, and with lubrication, wear, or surface contamination.
+
+Net force is the vector sum of every external force on the chosen body, and it is the only thing the second law responds to. Equilibrium is the special case in which that sum is zero, which by the first law means the body is at rest or moving at constant velocity — not necessarily at rest. Organising that sum on paper, by isolating one body and accounting for every external force on it, is the free-body diagram, the next topic in this unit and where that technique is taught. The zero-sum case is statics; the non-zero case is dynamics; accumulating force over distance and over time gives work and energy, and momentum. All four build on the vocabulary set here.
+
+### Idealizations, and where each one breaks
+
+Everything above is a model, and the models carry named simplifications. Say them out loud when you use them, because a model is not wrong for being idealized — it is wrong when it is used outside the range where its simplifications hold, and naming the assumption is what lets you check that.
+
+Point mass, or particle: the body is treated as all of its mass concentrated at a point, so forces have no moment arms and the body cannot rotate. Fine for a crate sliding as a unit; it fails the moment rotation, tipping, or the location where a force is applied begins to matter.
+
+Rigid body: distances between points within the body never change. A working approximation for a steel bracket under modest load, a poor one for a rubber mount, a long slender member, or any component near yield — deformation is the whole subject of mechanics of materials.
+
+Massless rope and frictionless pulley: tension is then the same everywhere along the rope and unchanged around the pulley. Real cables have mass that matters over long spans, and real pulleys have bearing friction and rotational inertia that matter whenever accelerations are large.
+
+Constant g: sound over the height of a building, wrong across the altitude range of a launch vehicle. Frictionless surface: a deliberate fiction used to isolate one effect, and nothing real is frictionless. Constant mass: assumed by the mass-times-acceleration form of the second law and violated by anything that burns, sheds, or accumulates material.
+
+A closing note on scope. These lessons are educational material, not engineering design guidance. Real design of a structure, machine, pressure vessel, or electrical installation requires a licensed engineer working to the governing code, with verified material properties and margins chosen for the consequences of failure. Nothing here — including the assumed friction coefficients in the worked example — should be carried into a real design.
+
+## Key Vocabulary
+
+- **Displacement** — The vector running from a body's starting position to its ending position; its magnitude is the straight-line separation between them and is independent of the path taken.
+- **Acceleration** — The rate at which velocity changes with time, a vector quantity measured in metres per second squared; a change of direction at constant speed counts.
+- **Net force** — The vector sum of every external force acting on one chosen body, and the only quantity the second law responds to.
+- **Inertial reference frame** — A frame of observation in which a body free of external influence keeps constant velocity, so that the second law applies without correction terms.
+- **Newton (N)** — The SI coherent derived unit of force, equal to one metre kilogram per second squared, which is the force that accelerates one kilogram at one metre per second squared.
+- **Mass** — A measure of a body's resistance to acceleration and of how much matter it contains, expressed in kilograms and unchanged by moving the body to another location.
+- **Weight** — In scientific and engineering usage, the force that gives a body an acceleration equal to the local acceleration of free fall, expressed in newtons and dependent on location.
+- **Normal force** — The contact force that a surface exerts perpendicular to itself on a body pressed against it, taking whatever magnitude the rest of the problem requires.
+- **Coefficient of kinetic friction** — An experimentally determined dimensionless ratio between the sliding resistance at a contact and the perpendicular force pressing the surfaces together.
+- **Equilibrium** — The condition in which the vector sum of external forces on a body is zero, so the body either stays at rest or keeps moving at constant velocity.
+
+## Eli-10
+
+Here is a different way in. Instead of starting with forces, start with a question: what would this thing do if the universe left it completely alone? Newton's surprising answer is that it would keep doing exactly what it is already doing — sitting still if it is sitting still, gliding forever in a straight line at the same speed if it is already moving. Nothing has to push an object to keep it going. Force is not what causes motion. Force is what causes a change in motion. Once you believe that, the rest is bookkeeping: add up the pushes and pulls coming from outside the object, divide by how much stuff the object is made of, and what you get is the change.
+
+## Eli's Analogy
+
+Picture a hockey puck on ice that keeps getting smoother. On a rough floor it stops in about a second. On ordinary ice it slides for ten. On freshly resurfaced ice it slides most of the length of the rink. Every time you take away a bit more friction, the puck goes further before stopping. Extend the pattern to the end: take friction all the way to zero and the puck never stops. The stopping was never the natural behaviour — it was a force you had not been counting.
+
+**Where the analogy breaks down.** The ice makes friction visible but hides two things. Real ice is never frictionless, so the endless glide is an extrapolation you can never actually watch, which is a large part of why the idea took two thousand years to arrive. And the puck is not force-free even at its smoothest: gravity pulls it down and the ice pushes it up the entire time. What we really mean is that those two cancel and the horizontal ones have been removed. Zero net force is not the same thing as no forces at all.
+
+## Worked Example
+
+A crate of mass m = 24.0 kg rests on a level concrete floor. Take the local acceleration of free fall as g = 9.81 m/s^2, and assume, as given problem data rather than as values from any standard, a static friction coefficient of 0.45 and a kinetic friction coefficient of 0.35 for this crate-and-floor pair.
+
+Step 1, weight. w = m g = (24.0 kg)(9.81 m/s^2) = 235.44 kg.m/s^2 = 235.44 N. The units multiplying out to the newton is the check that the setup is right.
+
+Step 2, normal force. The floor is level and the crate has no vertical acceleration, so the vertical forces sum to zero and the normal force N equals the weight, 235.44 N.
+
+Step 3, does a 96.0 N horizontal push move it? The most static friction available is 0.45 x 235.44 N = 105.9 N, which two-digit coefficients justify reporting as 1.1 x 10^2 N. Since 96.0 N is less than that, static friction simply matches the push at 96.0 N and the crate stays put.
+
+Step 4, push with 118 N. That exceeds the 105.9 N available, so the crate breaks free and kinetic friction takes over: f_k = 0.35 x 235.44 N = 82.404 N, reported as 82 N.
+
+Step 5, acceleration. The net horizontal force is 118 N - 82.404 N = 35.596 N, so a = 35.596 N / 24.0 kg = 1.483 m/s^2. Because the coefficients carry only two significant figures, the honest answer is a = 1.5 m/s^2, not 1.48317 m/s^2.
+
+Step 6, motion. Applied force, weight, normal force, and kinetic friction are all constant while the crate slides, so the acceleration is constant and the constant-acceleration equations apply. Starting from rest, after t = 1.50 s: v = a t = (1.483 m/s^2)(1.50 s) = 2.22 m/s, reported as 2.2 m/s; and the displacement is (1/2) a t^2 = (0.5)(1.483 m/s^2)(2.25 s^2) = 1.67 m, reported as 1.7 m. Every figure above was executed numerically before publication.
+
+## Common Mistakes
+
+- **Mistake:** Believing that the two forces in a Newton's third law pair cancel, so nothing can ever accelerate.
+  **Correction:** The pair acts on two different bodies — A's force on B, and B's force on A. Forces cancel only inside the net-force sum for one body, and the two halves of a third-law pair never appear in the same sum. This is the single most misunderstood point in introductory mechanics.
+- **Mistake:** Assuming that keeping something moving requires a continuing forward force, so that when the push stops the motion must stop.
+  **Correction:** This is the Aristotelian intuition that Newton's first law replaces. Constant velocity is what a body does when the net force is zero. Things stop on Earth because friction and drag are acting, not because motion decays on its own. Force changes motion; it does not maintain it.
+- **Mistake:** Treating mass and weight as the same quantity, and treating g as a force or as a property of the object.
+  **Correction:** Mass is inertia, measured in kilograms, and it is the same everywhere. Weight is a force, measured in newtons, equal to mass times the local acceleration of free fall. g is an acceleration in metres per second squared; the same 12 kg toolbox weighs about 118 N on Earth and about 19 N on the Moon.
+- **Mistake:** Reaching for v = v0 + a t and its companions whenever a problem mentions acceleration.
+  **Correction:** Those equations were derived by assuming acceleration is constant in magnitude and direction. If the net force changes during the interval — drag rising with speed, a spring force rising with extension, mass changing as fuel burns — split the motion into intervals where the force is effectively constant, or integrate.
+- **Mistake:** Writing static friction as an equality, f_s = mu_s N, in every problem.
+  **Correction:** Static friction is an inequality: it is at most mu_s N. Its actual value is whatever is needed to prevent sliding, so a crate under a 96 N push with 106 N of static friction available experiences 96 N of friction, not 106 N. Only the kinetic case is modelled as an equality, and even that is an approximate empirical model.
+
+## Compare / Contrast
+
+| | | |
+| --- | --- | --- |
+| **Distance travelled** | **Displacement** | Distance is a scalar path length that only accumulates; displacement is a vector from start to finish. One lap of a 400 m track gives 400 m of distance and zero displacement. |
+| **Speed** | **Velocity** | Speed is the magnitude of velocity and carries no direction. Average speed is total distance over elapsed time; average velocity is total displacement over elapsed time, so the two differ whenever the path is not a straight line in one direction. |
+| **Mass** | **Weight** | Mass is inertia in kilograms and is location-independent. Weight is a force in newtons, equal to mass times the local acceleration of free fall, and it changes with location. |
+| **Static friction** | **Kinetic friction** | Static friction is an inequality bounded by mu_s N and adjusts itself to whatever prevents sliding; kinetic friction is modelled as the fixed product mu_k N once sliding has started, and mu_k is generally the smaller coefficient. |
+| **Newton's first law** | **Newton's second law** | The first law defines the class of reference frames in which the second law is valid; the second law then quantifies how a non-zero net force produces acceleration in such a frame. |
+
+## Key Takeaway
+
+Force does not maintain motion; it changes motion. Describe the motion first with position, velocity, and acceleration as vectors, then account for every external force acting on one clearly named body — remembering that each of those forces has a third-law partner acting on a different body, which is why the pair never cancels.
+
+## Practice Question Bank
+
+**1. Newton's third law says that the two forces in an interaction pair are equal in magnitude and opposite in direction. Why does this not mean that every interaction produces zero acceleration?**
+
+- A. **(correct)** Because the two forces act on different bodies, and forces cancel only within the net-force sum for a single body
+- B. Because the reaction force is always slightly smaller than the action force once friction is included
+- C. Because the reaction force arrives a short time after the action force
+- D. Because the pair cancels only when the two bodies happen to have equal masses
+
+*Answer:* A. A third-law pair consists of A's force on B and B's force on A. Cancellation only happens among forces entered into the same net-force sum, and those two never are. The reaction force is exactly equal in magnitude, not smaller; it is simultaneous, not delayed; and the masses of the two bodies are irrelevant to the equality.
+
+*Difficulty:* recall · *Skill:* Stating Newton's third law precisely and identifying the bodies each force acts on · *Sources:* openstax-university-physics-1-newtons-third-law
+
+**2. A runner completes exactly one lap of a 400 m oval track in 80.0 s, finishing at her starting line. Which set of values is correct for the lap?**
+
+- A. Distance 0 m, average speed 0 m/s, displacement 400 m, average velocity 5.00 m/s
+- B. Distance 400 m, average speed 5.00 m/s, displacement 400 m, average velocity 5.00 m/s
+- C. **(correct)** Distance 400 m, average speed 5.00 m/s, displacement 0 m, average velocity 0 m/s
+- D. Distance 400 m, average speed 0 m/s, displacement 0 m, average velocity 5.00 m/s
+
+*Answer:* C. Distance is the path length actually covered, 400 m, so average speed is 400 m / 80.0 s = 5.00 m/s. Displacement is the vector from start to finish, and she finished where she started, so it is zero and the average velocity — total displacement over elapsed time — is also zero. The other options swap the scalar and vector quantities.
+
+*Difficulty:* understanding · *Skill:* Distinguishing distance from displacement and average speed from average velocity · *Sources:* openstax-university-physics-1-position-displacement-velocity, openstax-university-physics-1-instantaneous-velocity-and-speed
+
+**3. A toolbox has a mass of 12 kg on Earth, where g is about 9.81 m/s^2. It is carried to the Moon, where the local acceleration of free fall is about 1.62 m/s^2. What happens to its mass and its weight?**
+
+- A. **(correct)** Mass stays 12 kg; weight falls from about 118 N to about 19 N
+- B. Mass and weight both fall to about one sixth of their Earth values
+- C. Mass falls to about 2 kg while the weight stays about 118 N
+- D. Mass stays 12 kg and weight stays about 118 N, because weight is a fixed property of the object
+
+*Answer:* A. Mass measures inertia and does not depend on location, so it remains 12 kg. Weight is a force, w = m g, so it tracks the local acceleration of free fall: 12 kg x 9.81 m/s^2 = 118 N on Earth and 12 kg x 1.62 m/s^2 = 19 N on the Moon. Mass does not shrink, and weight is not a fixed property of the object.
+
+*Difficulty:* application · *Skill:* Applying w = m g and separating mass from weight across locations · *Sources:* openstax-university-physics-1-mass-and-weight, nist-sp811-chapter-8-quantities-and-units
+
+**4. A 5.0 kg block on a frictionless horizontal surface is acted on by two horizontal forces: 22 N to the right and 9.0 N to the left. What is the block's acceleration?**
+
+- A. 6.2 m/s^2 to the right
+- B. **(correct)** 2.6 m/s^2 to the right
+- C. 1.8 m/s^2 to the left
+- D. 2.6 m/s^2 to the left
+
+*Answer:* B. The forces are opposed, so the net force is 22 N - 9.0 N = 13 N to the right, and a = 13 N / 5.0 kg = 2.6 m/s^2 in the direction of the net force, that is, to the right. The 6.2 m/s^2 option comes from adding the magnitudes instead of subtracting them, 1.8 m/s^2 from using only the 9.0 N force, and the last option reverses the direction of the net force.
+
+*Difficulty:* application · *Skill:* Computing a net force from opposed forces and applying the second law with direction · *Sources:* openstax-university-physics-1-newtons-second-law
+
+**5. A spacecraft far from any star coasts at a constant 8 km/s with its engines shut down. A student argues that a small forward force must still be acting, because otherwise the craft would gradually slow down. What is wrong with the reasoning?**
+
+- A. Nothing is wrong: a steady forward force is what keeps velocity constant
+- B. **(correct)** Newton's first law says constant velocity is exactly what happens when the net force is zero; a net force would change the velocity rather than sustain it
+- C. The craft really is slowing, but too gradually for its instruments to register
+- D. A forward force is required, and it is supplied by the craft's own momentum acting back on the craft
+
+*Answer:* B. The student is applying the Aristotelian intuition that motion needs a continuing cause. Newton's first law replaces it: with zero net force a body keeps constant velocity indefinitely. Applying a net force would produce acceleration, not steady motion. Deep space supplies no appreciable resisting force, so there is nothing to slow the craft, and a body cannot exert a net force on itself because internal forces cancel in pairs.
+
+*Difficulty:* analysis · *Skill:* Diagnosing the misconception that sustained motion requires a sustained force · *Sources:* openstax-university-physics-1-newtons-first-law, openstax-university-physics-1-newtons-second-law
+
+## Sources
+
+- `openstax-university-physics-1-position-displacement-velocity` — University Physics Volume 1, 3.1 Position, Displacement, and Average Velocity. OpenStax, Rice University. <https://openstax.org/books/university-physics-volume-1/pages/3-1-position-displacement-and-average-velocity> — usage: REFERENCE_ONLY
+- `openstax-university-physics-1-instantaneous-velocity-and-speed` — University Physics Volume 1, 3.2 Instantaneous Velocity and Speed. OpenStax, Rice University. <https://openstax.org/books/university-physics-volume-1/pages/3-2-instantaneous-velocity-and-speed> — usage: REFERENCE_ONLY
+- `openstax-university-physics-1-motion-with-constant-acceleration` — University Physics Volume 1, 3.4 Motion with Constant Acceleration. OpenStax, Rice University. <https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration> — usage: REFERENCE_ONLY
+- `openstax-university-physics-1-newtons-first-law` — University Physics Volume 1, 5.2 Newton's First Law. OpenStax, Rice University. <https://openstax.org/books/university-physics-volume-1/pages/5-2-newtons-first-law> — usage: REFERENCE_ONLY
+- `openstax-university-physics-1-newtons-second-law` — University Physics Volume 1, 5.3 Newton's Second Law. OpenStax, Rice University. <https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law> — usage: REFERENCE_ONLY
+- `openstax-university-physics-1-mass-and-weight` — University Physics Volume 1, 5.4 Mass and Weight. OpenStax, Rice University. <https://openstax.org/books/university-physics-volume-1/pages/5-4-mass-and-weight> — usage: REFERENCE_ONLY
+- `openstax-university-physics-1-newtons-third-law` — University Physics Volume 1, 5.5 Newton's Third Law. OpenStax, Rice University. <https://openstax.org/books/university-physics-volume-1/pages/5-5-newtons-third-law> — usage: REFERENCE_ONLY
+- `openstax-university-physics-1-friction` — University Physics Volume 1, 6.2 Friction. OpenStax, Rice University. <https://openstax.org/books/university-physics-volume-1/pages/6-2-friction> — usage: REFERENCE_ONLY
+- `libretexts-engineering-statics-equilibrium` — Engineering Statics: Open and Interactive, 3.1 Equilibrium. Daniel W. Baker and William Haynes, Colorado State University, hosted on Engineering LibreTexts. <https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Engineering_Statics:_Open_and_Interactive_(Baker_and_Haynes)/03:_Equilibrium_of_Particles/3.01:_Equilibrium> — usage: REFERENCE_ONLY — license: CC BY-NC-SA 4.0
+- `nist-sp811-chapter-4-classes-of-si-units` — NIST Guide to the SI, Chapter 4: The Two Classes of SI Units and the SI Prefixes. National Institute of Standards and Technology (NIST Special Publication 811, 2008 edition). <https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes> — usage: REFERENCE_ONLY
+- `nist-sp811-chapter-8-quantities-and-units` — NIST Guide to the SI, Chapter 8: Comments on Some Quantities and Their Units. National Institute of Standards and Technology (NIST Special Publication 811, 2008 edition). <https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-8> — usage: REFERENCE_ONLY
+- `nist-sp811-appendix-b9-conversion-factors` — NIST Guide to the SI, Appendix B.9: Conversion Factors Listed by Kind of Quantity. National Institute of Standards and Technology (NIST Special Publication 811, 2008 edition). <https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9> — usage: REFERENCE_ONLY
+- `nist-cuu-standard-acceleration-of-gravity` — Standard acceleration of gravity (g_n) — CODATA value page. NIST Physical Measurement Laboratory, Fundamental Physical Constants. <https://physics.nist.gov/cgi-bin/cuu/Value?gn> — usage: REFERENCE_ONLY
+- `bipm-cgpm-1901-resolution-2-standard-gravity` — Resolution 2 of the 3rd CGPM (1901): Declaration on the unit of mass and on the definition of weight; conventional value of g_n. Bureau International des Poids et Mesures (BIPM), Conference generale des poids et mesures. <https://www.bipm.org/en/committees/cg/cgpm/3-1901/resolution-2> — usage: REFERENCE_ONLY
+- `bipm-si-brochure-9th-edition` — The International System of Units (SI), 9th edition (SI Brochure). Bureau International des Poids et Mesures (BIPM). <https://www.bipm.org/en/publications/si-brochure> — usage: REFERENCE_ONLY — license: CC BY 4.0 (as stated on the BIPM publications page)
+
+## Related Topics
+
+- `engineering-fundamentals:mechanics:free-body-diagrams`
+- `engineering-fundamentals:mechanics:statics`
+- `engineering-fundamentals:mechanics:dynamics`
+- `engineering-fundamentals:mechanics:work-and-energy`
+- `engineering-fundamentals:mechanics:momentum`
+- `engineering-fundamentals:engineering-thinking:units-measurement-and-significant-figures`
+
+## Editorial Metadata
+
+- Topic id: `engineering-fundamentals:mechanics:force-and-motion`
+- Editorial status: READY_TO_PUBLISH
+- Researched: 2026-08-19
+- Estimated minutes: 12
+- Sources: 15 records, all REFERENCE_ONLY; no source prose adapted.
+- Every number in the worked example and the question bank was executed with python3 before publication.
+- Scope note: free-body diagram construction, statics, dynamics, work and energy, and momentum are separate topics in this unit and are only handed off here.
+- Safety note: educational material only, not engineering design guidance.
