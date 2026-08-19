@@ -1,0 +1,140 @@
+{
+  "topicId": "computer-science-fundamentals:foundations:space-complexity",
+  "subjectId": "computer-science-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Space complexity: how memory use grows with input size n, expressed in Big-O",
+      "Total space (input space + auxiliary space) vs auxiliary space; comparisons use auxiliary space",
+      "In-place algorithms = O(1) auxiliary space (e.g. in-place array reverse)",
+      "Common space costs: O(1) a few variables, O(n) a copy or table",
+      "Recursion call-stack space = O(depth): one frame per pending call",
+      "Time-space trade-off (e.g. hash set spends O(n) space to reach O(n) time)"
+    ],
+    "supporting": [
+      "Big-O as an asymptotic upper bound applies to memory as well as time",
+      "In-place methods mutate the input; copies preserve it",
+      "Converting recursion to iteration reduces O(n) stack space to O(1)",
+      "Excessive recursion depth overflows the stack (RecursionError in Python)"
+    ],
+    "outOfScope": [
+      "How Big-O notation is derived and manipulated (owned by time-complexity topic)",
+      "How recursion works mechanically and base cases (owned by recursion topic)",
+      "Array/list internals beyond their space cost (owned by arrays/lists topics)",
+      "Space complexity classes (PSPACE/L) and Turing-machine formalization"
+    ]
+  },
+  "claims": [
+    { "claim": "Complexity is the minimum amount of resources, including memory as well as time, needed to solve a problem or execute an algorithm; space complexity applies this to memory.", "claimType": "TECHNICAL", "sourceIds": ["nist-dads-complexity"], "status": "supported" },
+    { "claim": "Big-O notation is a theoretical, asymptotic-upper-bound measure of an algorithm's execution, expressly of the time OR memory needed given problem size n.", "claimType": "TECHNICAL", "sourceIds": ["nist-dads-big-o-notation"], "status": "supported" },
+    { "claim": "An in-place algorithm keeps at most a constant number of items in auxiliary memory at any time (O(1) auxiliary space), with the result occupying the same storage as the original input.", "claimType": "TECHNICAL", "sourceIds": ["nist-dads-in-place-sort"], "status": "supported" },
+    { "claim": "Total space complexity includes the input space plus the auxiliary (extra working) space; auxiliary space is the space other than that consumed by the input.", "claimType": "TECHNICAL", "sourceIds": ["wikipedia-space-complexity", "nist-dads-complexity"], "status": "supported" },
+    { "claim": "Allocating a new array of length n (e.g. reversing by copying into a fresh array) uses O(n) auxiliary space, while an array supports O(1) indexed access.", "claimType": "TECHNICAL", "sourceIds": ["nist-dads-array"], "status": "supported" },
+    { "claim": "Recursive calls consume interpreter/call-stack depth; the recursion limit exists to prevent infinite recursion from overflowing the underlying (C) stack and crashing the program, so recursion to depth d costs O(d) stack space.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-sys-recursion-limit"], "status": "supported" },
+    { "claim": "In-place reverse uses constant auxiliary memory while copy reverse grows linearly: measured peak extra memory was ~84 bytes (constant) for the in-place version at n=1,000/10,000/100,000 vs ~8 KB/80 KB/800 KB for the copy version.", "claimType": "QUANTITATIVE", "sourceIds": ["python-docs-sys-recursion-limit", "nist-dads-in-place-sort"], "status": "supported" },
+    { "claim": "A hash-set approach to the two-sum problem uses O(n) auxiliary space to achieve about O(n) time, versus O(1) space and O(n squared) time for nested loops, illustrating the time-space trade-off.", "claimType": "TECHNICAL", "sourceIds": ["nist-dads-big-o-notation", "nist-dads-complexity"], "status": "supported" }
+  ],
+  "conflictingEvidence": [
+    { "issue": "Whether 'in-place' strictly means O(1) auxiliary space or permits sub-linear (o(n)) bookkeeping.", "positions": ["Common textbook usage: in-place = O(1) auxiliary space", "NIST DADS: an in-place sort may use o(n) additional memory for bookkeeping but keeps at most a constant number of items in auxiliary memory at any time"], "resolution": "The lesson teaches the standard O(1)-auxiliary meaning, matching the brief and the everyday textbook definition, and does not depend on the finer sub-linear-bookkeeping nuance. NIST's phrasing is consistent with the O(1)-items characterization used here." }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic boilerplate ('a concept students use to organize information', 'like reading a map legend') with no actual space-complexity content, no memory/Big-O material, and no sources.",
+    "The draft's questions tested vague 'define and apply' meta-skills rather than space complexity."
+  ],
+  "correctionsNeeded": [
+    "Replaced all boilerplate with substantive content: total vs auxiliary space, in-place O(1), O(n) copies, recursion O(depth) stack space, and the time-space trade-off.",
+    "Added a verified worked example (in-place vs copy array reverse) with measured peak-memory figures.",
+    "Wrote five real questions with distractors, an even A/B/C/D key spread, and Big-O answers cross-checked by execution.",
+    "Attached six real, resolvable sources (four NIST public-domain, one Python docs, one reference-only encyclopedia)."
+  ],
+  "rightsIssues": [
+    "NIST DADS entries are U.S. Government works in the public domain; used for definitions, synthesized into original prose.",
+    "Python documentation is authoritative reference; the recursion-limit behavior is restated in original prose, no passages reproduced.",
+    "Wikipedia 'Space complexity' is used REFERENCE_ONLY to corroborate the total = input + auxiliary framing; no wording reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-dads-complexity",
+      "title": "complexity — Dictionary of Algorithms and Data Structures (DADS)",
+      "provider": "U.S. National Institute of Standards and Technology (NIST)",
+      "url": "https://xlinux.nist.gov/dads/HTML/complexity.html",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via curl (browser UA) 2026-08-19. Defines complexity as 'the intrinsic minimum amount of resources, for instance, memory, time, messages, etc., needed to solve a problem or execute an algorithm.' Supports that memory is a first-class complexity resource and that space complexity is the memory instance of complexity. Facts synthesized; no wording reproduced beyond the short attributed idea."
+    },
+    {
+      "id": "nist-dads-big-o-notation",
+      "title": "big-O notation — Dictionary of Algorithms and Data Structures (DADS)",
+      "provider": "U.S. National Institute of Standards and Technology (NIST)",
+      "url": "https://xlinux.nist.gov/dads/HTML/bigOnotation.html",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via curl (browser UA) 2026-08-19. Defines big-O as 'a theoretical measure of the execution of an algorithm, usually the time or memory needed, given the problem size n,' and as an asymptotic upper bound. Explicitly names memory as a measurable resource, supporting Big-O's use for space. Also confirms the notation was introduced by Bachmann (1894), is a Landau symbol, and its CS analysis role via Knuth. Facts synthesized in original prose."
+    },
+    {
+      "id": "nist-dads-in-place-sort",
+      "title": "in-place sort — Dictionary of Algorithms and Data Structures (DADS)",
+      "provider": "U.S. National Institute of Standards and Technology (NIST)",
+      "url": "https://xlinux.nist.gov/dads/HTML/inplacesort.html",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via curl (browser UA) 2026-08-19. States an in-place sort is one 'in which the sorted items occupy the same storage as the original ones,' possibly using o(n) memory for bookkeeping but keeping 'at most a constant number of items in auxiliary memory at any time.' Supports the O(1)-auxiliary characterization of in-place algorithms. Facts synthesized; noted the o(n)-bookkeeping nuance in conflictingEvidence."
+    },
+    {
+      "id": "nist-dads-array",
+      "title": "array — Dictionary of Algorithms and Data Structures (DADS)",
+      "provider": "U.S. National Institute of Standards and Technology (NIST)",
+      "url": "https://xlinux.nist.gov/dads/HTML/array.html",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused from source-registry (id and URL unchanged). Authoritative public-domain definition of an array as items randomly accessible by an integer index (O(1) indexed access), typically fixed size. Supports the claim that allocating a new array of size n costs O(n) auxiliary memory and that index access is O(1). Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "python-docs-sys-recursion-limit",
+      "title": "sys.setrecursionlimit / sys.getrecursionlimit — Python 3 Standard Library documentation",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/library/sys.html#sys.setrecursionlimit",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19. States the recursion limit is 'the maximum depth of the Python interpreter stack' and 'prevents infinite recursion from causing an overflow of the C stack and crashing Python,' and that too high a limit 'can lead to a crash.' Supports the claim that each pending recursive call consumes stack depth (O(depth) auxiliary space) and that exceeding it overflows the stack. Behavior restated in original prose; no passages reproduced."
+    },
+    {
+      "id": "wikipedia-space-complexity",
+      "title": "Space complexity — Wikipedia",
+      "provider": "Wikimedia Foundation",
+      "url": "https://en.wikipedia.org/wiki/Space_complexity",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19. Corroborates that total space complexity 'includes the memory space used by its inputs, called input space, and any other (auxiliary) memory it uses during execution, which is called auxiliary space,' and that 'auxiliary space refers to space other than that consumed by the input.' Used REFERENCE_ONLY to confirm the total = input + auxiliary framing already grounded in NIST; no wording reproduced. CC BY-SA is not relied upon for reuse since only facts are synthesized."
+    }
+  ]
+}

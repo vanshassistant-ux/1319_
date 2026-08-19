@@ -1,0 +1,173 @@
+{
+  "topicId": "computer-science-fundamentals:foundations:object-oriented-programming-basics",
+  "subjectId": "computer-science-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "OOP as a paradigm organizing code around objects that bundle data (attributes/fields) and behavior (methods)",
+      "Class as a blueprint/template vs object/instance as a concrete thing built from it",
+      "Attributes (an object's data/state) and methods (functions defined in the class that operate on instances)",
+      "The four commonly-taught pillars: encapsulation, inheritance, polymorphism, abstraction (one to two correct sentences each)",
+      "Brief contrast with procedural programming",
+      "One small verified example: a class with an attribute and a method, and creating an instance (labeled Python)"
+    ],
+    "supporting": [
+      "OOP is language-agnostic; terminology differs (attribute/field/data member; method/member function; dictionary/map)",
+      "Instantiation in Python uses call notation and __init__ initializes instance state",
+      "'Four pillars' is a common teaching convention, not a single universally agreed definition of OOP"
+    ],
+    "outOfScope": [
+      "Deep treatment of abstraction as a broad CS idea (own topic: abstraction) — give only the one-sentence OOP-pillar meaning here",
+      "Decomposition as a problem-solving technique (own topic)",
+      "Re-teaching functions: parameters, return values, scope (own topic: functions) — methods are functions on objects",
+      "Design patterns, SOLID principles, UML, access-modifier syntax per language",
+      "Prototype-based OOP mechanics beyond a passing mention"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Object-oriented programming is a paradigm that organizes a program around objects, which bundle related data (attributes/fields) together with the behavior (methods) that operates on that data.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["python-tutorial-scopes-namespaces", "oop-wikipedia"],
+      "status": "supported"
+    },
+    {
+      "claim": "A class is a blueprint or template that defines the attributes and methods shared by a kind of object; an object (instance) is a specific value created from that class, with its own state.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["python-glossary", "python-tutorial-scopes-namespaces"],
+      "status": "supported"
+    },
+    {
+      "claim": "An attribute is a named value associated with an object (its data/state); a method is a function defined inside a class that, when called on an instance, receives that instance as its first argument (self in Python).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-glossary"],
+      "status": "supported"
+    },
+    {
+      "claim": "Encapsulation is bundling an object's data together with the methods that act on it and restricting direct outside access to that internal state (information hiding).",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["oop-wikipedia", "libretexts-cpp-inheritance-polymorphism"],
+      "status": "supported"
+    },
+    {
+      "claim": "Inheritance lets a new (derived/child) class reuse and extend the attributes and methods of an existing (base/parent) class.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["libretexts-cpp-inheritance-polymorphism", "oop-wikipedia"],
+      "status": "supported"
+    },
+    {
+      "claim": "Polymorphism lets a single method name or interface work across different types, with each type supplying its own behavior.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["oop-wikipedia", "libretexts-cpp-inheritance-polymorphism"],
+      "status": "supported"
+    },
+    {
+      "claim": "As an OOP pillar, abstraction means exposing an object's essential features and behavior while hiding implementation detail; the broader idea of abstraction is developed in its own topic.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["oop-wikipedia", "libretexts-cpp-inheritance-polymorphism"],
+      "status": "supported"
+    },
+    {
+      "claim": "The 'four pillars' framing (encapsulation, inheritance, polymorphism, abstraction) is a common teaching convention rather than a single, universally agreed definition of OOP; sources note there is no one accepted definition of the paradigm.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["oop-wikipedia", "libretexts-cpp-inheritance-polymorphism"],
+      "status": "supported"
+    },
+    {
+      "claim": "OOP contrasts with procedural programming, which organizes a program around procedures/functions that act on data kept separate from them rather than bundling data and behavior into objects.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["oop-wikipedia"],
+      "status": "supported"
+    },
+    {
+      "claim": "OOP is supported by many languages and is not tied to one; terminology varies (Python 'attribute' vs C++ 'data member'; 'method' vs 'member function').",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["python-glossary", "oop-wikipedia"],
+      "status": "supported"
+    },
+    {
+      "claim": "In Python, a class is instantiated with function-call notation (e.g., a = Account(100)); if the class defines __init__, instantiation automatically calls it to initialize the new instance's state.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-tutorial-scopes-namespaces"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether OOP has a fixed set of defining 'pillars.'",
+      "positions": [
+        "Common teaching materials enumerate exactly four pillars: encapsulation, inheritance, polymorphism, abstraction.",
+        "Reference sources note there is no single agreed-upon definition of OOP, and language features vary; some lists add 'information hiding' or 'dynamic dispatch' as separate items."
+      ],
+      "resolution": "Present the four pillars as a widely used teaching convention, define each correctly in one to two sentences, and state plainly that it is a convention, not a universal formal definition."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft was placeholder boilerplate ('a foundational concept ... its meaning, its context, and a simple way to apply it') with no OOP-specific content; none of its substantive claims were usable.",
+    "Draft analogy ('a label on a toolbox drawer' / 'map legend') did not explain OOP and was discarded."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic placeholder text with an actual definition of OOP built around objects bundling data and behavior.",
+    "Added the class-vs-object/instance distinction, attributes and methods, the four pillars, the procedural contrast, and a verified Python example, none of which were in the draft."
+  ],
+  "rightsIssues": [
+    "All four sources treated as REFERENCE_ONLY; no source prose reproduced. Python documentation is PSF-licensed; the short class/instantiation syntax used is standard language idiom, independently reproduced and verified by execution, not creative expression copied from the source.",
+    "The LibreTexts page carries an undeclared page license and adapts content from GeeksforGeeks (CC BY-SA 4.0); used only to confirm the four-pillars teaching convention and standard definitions of inheritance/polymorphism, with all wording written originally."
+  ],
+  "sourceRecords": [
+    {
+      "id": "python-tutorial-scopes-namespaces",
+      "title": "The Python Tutorial — 9.2 Python Scopes and Namespaces",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/tutorial/classes.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "The Classes chapter (docs.python.org/3/tutorial/classes.html). States 'Classes provide a means of bundling data and functionality together' and that creating a class creates a new type whose instances can be made; a method is 'a function that belongs to an object'; data attributes 'spring into existence when they are first assigned to'; class instantiation uses function notation and, when __init__ is defined, calls it automatically to initialize the new instance. Supports the bundling claim, class/instance distinction, attributes/methods, and the Python instantiation claim. Fetched and read directly."
+    },
+    {
+      "id": "python-glossary",
+      "title": "Python Documentation — Glossary (immutable, mutable, namespace, object)",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/glossary.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Glossary entries used here: class = 'A template for creating user-defined objects'; object = 'Any data with state (attributes or value) and defined behavior (methods)'; method = 'A function which is defined inside a class body ... will get the instance object as its first argument (usually called self)'; attribute = 'A value associated with an object which is usually referenced by name using dotted expressions.' Supports the class/object/attribute/method definitions. Fetched and read directly."
+    },
+    {
+      "id": "oop-wikipedia",
+      "title": "Object-oriented programming",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Object-oriented_programming",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Defines OOP as a paradigm based on objects that encapsulate data and functions; an object is an instance of a class; emphasizes encapsulation/information hiding, inheritance, dynamic dispatch, and polymorphism; notes there is no clear, agreed-upon definition of OOP and that features vary by language; mentions procedural programming as an alternative style. Supports the paradigm definition, class-vs-instance point, pillar definitions, the 'no single agreed definition' nuance, and the procedural contrast. Used REFERENCE_ONLY; no wording reproduced. Fetched and read directly."
+    },
+    {
+      "id": "libretexts-cpp-inheritance-polymorphism",
+      "title": "C++ Data Structures — 5.4: Difference between Inheritance and Polymorphism",
+      "provider": "Engineering LibreTexts (Delta College)",
+      "url": "https://eng.libretexts.org/Courses/Delta_College/C_-_Data_Structures/05:_Polymorphism/5.4:_Difference_between_Inheritance_and_Polymorphism",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Open-courseware page defining inheritance ('a new class is created (derived class) that inherits the features from the already existing class (Base class)') and polymorphism ('perform a task in multiple forms or ways'), within a unit that also covers abstraction/encapsulation. Page license is undeclared and the content is adapted from GeeksforGeeks (CC BY-SA 4.0), so treated strictly as REFERENCE_ONLY to confirm the standard four-pillars teaching framing; all lesson wording is original. Fetched and read directly."
+    }
+  ]
+}

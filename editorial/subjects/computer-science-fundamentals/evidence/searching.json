@@ -1,0 +1,162 @@
+{
+  "topicId": "computer-science-fundamentals:foundations:searching",
+  "subjectId": "computer-science-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Linear (sequential) search checks each element one at a time; O(n); works on unsorted data",
+      "Binary search repeatedly halves a sorted range using lo/hi/mid; O(log n); requires sorted input",
+      "Worked trace of linear search and of binary search on a small array, verified in Bash"
+    ],
+    "supporting": [
+      "Why binary search needs sorted input (the mid comparison must rule out a whole half)",
+      "Growth contrast: doubling n adds only one worst-case comparison for binary search",
+      "Best/worst/average case distinction for each search"
+    ],
+    "outOfScope": [
+      "How to sort a collection (own topic: sorting) — named only as a prerequisite for binary search",
+      "Big-O theory and formal asymptotic analysis (own topic: time-complexity) — complexities are stated, not derived",
+      "Array/list internals (own topic)",
+      "Hash-based O(1) lookup mechanics (owned by dictionaries-maps) — one contrast sentence only"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Linear (sequential) search finds a target by checking elements one at a time until it is found or the collection ends.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-linear-search", "openstax-intro-cs-sample-algorithms"],
+      "status": "supported"
+    },
+    {
+      "claim": "Linear search runs in O(n) time; on average it examines about half the elements when the target is present.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-linear-search", "openstax-intro-cs-sample-algorithms"],
+      "status": "supported"
+    },
+    {
+      "claim": "Binary search searches a SORTED array by repeatedly dividing the search interval in half, comparing the target to the middle element and discarding the half that cannot contain it.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-binary-search", "openstax-intro-cs-sample-algorithms"],
+      "status": "supported"
+    },
+    {
+      "claim": "Binary search runs in O(log n) time.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-binary-search", "openstax-intro-cs-sample-algorithms"],
+      "status": "supported"
+    },
+    {
+      "claim": "Binary search requires the input to be sorted; correctness depends on that precondition, which is why library bisection tools document that the list must already be in sorted order.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-binary-search", "python-docs-bisect"],
+      "status": "supported"
+    },
+    {
+      "claim": "A search is an application of an algorithm: a well-defined computational procedure that takes input and produces output.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-algorithm"],
+      "status": "supported"
+    },
+    {
+      "claim": "For the sorted array [1,3,5,7,9,11], binary search for 7 first compares against the middle element 5 (index 2), then 9 (index 4), then 7 (index 3), finding index 3 in three comparisons; linear search for 9 in the same array takes five comparisons.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["nist-dads-binary-search", "nist-dads-linear-search"],
+      "status": "supported"
+    },
+    {
+      "claim": "On a sorted array of 1,000,000 elements, worst-case linear search needs about 1,000,000 comparisons while binary search needs about 20 (floor(log2 n)+1).",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["nist-dads-binary-search"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "NIST DADS writes binary search run time as 'O(ln n)'.",
+      "positions": [
+        "NIST DADS: 'Run time is O(ln n).'",
+        "Standard CS convention and OpenStax: O(log n)."
+      ],
+      "resolution": "In Big-O, the logarithm base is a constant factor, so O(ln n), O(log2 n), and O(log n) denote the same class. The lesson uses the conventional O(log n) and notes the base is immaterial under Big-O."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic boilerplate ('Searching is a foundational concept...', 'a label on a toolbox drawer') with no algorithmic content, no distinction between linear and binary search, and no complexity claims. None of it was usable as evidence."
+  ],
+  "correctionsNeeded": [
+    "Replaced boilerplate with the actual linear-vs-binary distinction, the sorted-input precondition, verified traces, and correct complexities (O(n) and O(log n)).",
+    "Added the sorting prerequisite handoff and a one-line hash-lookup contrast."
+  ],
+  "rightsIssues": [
+    "NIST DADS and Python documentation are authoritative; facts synthesized and prose written originally. No source wording reproduced beyond short definitional phrases used for verification, not copied into the lesson."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-dads-linear-search",
+      "title": "linear search — Dictionary of Algorithms and Data Structures",
+      "provider": "NIST (National Institute of Standards and Technology)",
+      "url": "https://xlinux.nist.gov/dads/HTML/linearSearch.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Authoritative definition: 'Search an array or list by checking items one at a time.' Gives average run time Theta(n/2) when found. Supports the linear-search definition and O(n) claim. Read live via WebFetch 2026-08-19."
+    },
+    {
+      "id": "nist-dads-binary-search",
+      "title": "binary search — Dictionary of Algorithms and Data Structures",
+      "provider": "NIST (National Institute of Standards and Technology)",
+      "url": "https://xlinux.nist.gov/dads/HTML/binarySearch.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Definition: 'Search a sorted array by repeatedly dividing the search interval in half... narrow the interval to the lower/upper half... until the value is found or the interval is empty.' States run time O(ln n) (= O(log n) under Big-O) and explicitly requires a sorted array. Read live via WebFetch 2026-08-19."
+    },
+    {
+      "id": "openstax-intro-cs-sample-algorithms",
+      "title": "Introduction to Computer Science, 3.5 Sample Algorithms by Problem (Sequential and Binary Search)",
+      "provider": "OpenStax (Rice University)",
+      "url": "https://openstax.org/books/introduction-computer-science/pages/3-5-sample-algorithms-by-problem",
+      "sourceType": "open-textbook",
+      "usage": "ATTRIBUTION_REQUIRED",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "OER covering sequential (linear) search at O(N) and binary search: 'By comparing the target to the middle element of the range, we can rule-out half of the elements... repeated until we have found the expected location of the target in the sorted list,' achieving O(log N). Facts synthesized in original prose; no wording copied. Read live via WebFetch 2026-08-19."
+    },
+    {
+      "id": "python-docs-bisect",
+      "title": "bisect — Array bisection algorithm (Python Standard Library)",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/library/bisect.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Concrete example of a real bisection (binary-search) tool that documents the sorted-order precondition and refers to 'the O(log n) search'. Supports the claim that binary search requires sorted input. Read live via WebFetch 2026-08-19."
+    },
+    {
+      "id": "nist-dads-algorithm",
+      "title": "algorithm — Dictionary of Algorithms and Data Structures",
+      "provider": "NIST (National Institute of Standards and Technology)",
+      "url": "https://xlinux.nist.gov/dads/HTML/algorithm.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused from source registry (same id and URL). Supports framing a search as an algorithm: a computational procedure taking input and producing output."
+    }
+  ]
+}

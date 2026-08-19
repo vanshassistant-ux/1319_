@@ -1,0 +1,230 @@
+{
+  "topicId": "computer-science-fundamentals:foundations:sorting",
+  "subjectId": "computer-science-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "What sorting is: arranging items into a predetermined order by a key",
+      "The three simple comparison sorts - bubble, insertion, selection - all O(n^2) worst and average case",
+      "That insertion sort is O(n) in the best case on nearly-sorted data",
+      "Naming the efficient sorts: merge sort O(n log n); quicksort average O(n log n), worst O(n^2)",
+      "Comparison-based sorting and the meaning of a stable sort",
+      "One traced worked example: bubble sort on [5, 2, 4, 1], pass by pass, verified in Bash"
+    ],
+    "supporting": [
+      "That the choice of sort depends on data size, orderliness, and the cost of comparing vs. moving items",
+      "That sorting enables efficient techniques such as binary search (one-sentence handoff)",
+      "That merge sort and quicksort are recursive (named only, recursion is its own topic)"
+    ],
+    "outOfScope": [
+      "Formal Big-O theory and how to derive complexity bounds (own sibling topic: time-complexity) - complexities are stated here, not derived",
+      "Searching algorithms in depth (own sibling topic: searching) - only the sorting-enables-binary-search link is named",
+      "Recursion mechanics and the call stack (own sibling topic: recursion) - merge/quicksort are named as recursive only",
+      "Array vs. list data-structure internals (own sibling topics: arrays, lists)",
+      "Non-comparison sorts (counting sort, radix sort) and heapsort internals beyond a passing name"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "To sort is to arrange items in a predetermined order; the choice of algorithm depends on factors such as the number of items relative to working memory, prior knowledge of the data's orderliness or key range, and the cost of comparing keys versus moving items.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-sort"],
+      "status": "supported"
+    },
+    {
+      "claim": "Bubble sort compares each adjacent pair in turn, swapping when out of order, and repeats passes until a pass makes no swaps; it is O(n^2) for arbitrary data but approaches Theta(n) when the list is already nearly in order.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-bubble-sort"],
+      "status": "supported"
+    },
+    {
+      "claim": "Insertion sort repeatedly takes the next item and inserts it into its proper place among the already-sorted items; its run time is O(n^2) because of the moves required, and it is O(n) in the best case when the input is already nearly sorted.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-insertion-sort", "nist-dads-bubble-sort"],
+      "status": "supported"
+    },
+    {
+      "claim": "Selection sort repeatedly searches the remaining items for the least one and moves it to its final position; its run time is Theta(n^2), though it performs only O(n) swaps.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-selection-sort"],
+      "status": "supported"
+    },
+    {
+      "claim": "Merge sort splits the items into two groups, recursively sorts each group, and merges them into one sorted sequence; its run time is Theta(n log n).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-merge-sort", "openstax-intro-cs-sample-algorithms"],
+      "status": "supported"
+    },
+    {
+      "claim": "Quicksort picks a pivot, partitions the remaining elements into those less than and greater than the pivot, and recursively sorts the partitions; it typically runs in O(n log n) but has Theta(n^2) worst-case running time.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-quicksort", "openstax-intro-cs-sample-algorithms"],
+      "status": "supported"
+    },
+    {
+      "claim": "A sort is stable when the relative order of items with equal keys in the input is always preserved in the output.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-stable-sort"],
+      "status": "supported"
+    },
+    {
+      "claim": "No comparison-based sorting algorithm can do better than O(n log n) comparisons in the worst case, and a sorted list is what makes index-based techniques like binary search possible.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["openstax-intro-cs-sample-algorithms"],
+      "status": "supported"
+    },
+    {
+      "claim": "Running bubble sort on [5, 2, 4, 1] yields the pass sequence [2, 4, 1, 5] then [2, 1, 4, 5] then [1, 2, 4, 5], ending in the sorted list [1, 2, 4, 5].",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-bubble-sort"],
+      "status": "supported",
+      "verification": "Executed and traced in Python 3 via Bash on 2026-08-19; each pass and the final result [1, 2, 4, 5] match sorted([5,2,4,1])."
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether bubble sort's complexity is best written O(n^2) or Theta(n^2).",
+      "positions": [
+        "NIST DADS gives bubble sort as O(n^2) for arbitrary data, approaching Theta(n) when nearly ordered.",
+        "Many texts state a tight Theta(n^2) average/worst bound for the naive version."
+      ],
+      "resolution": "The lesson follows NIST: worst and average case O(n^2), with a best case near Theta(n)/O(n) on nearly-sorted input for bubble and insertion sort. Selection sort is stated as Theta(n^2) in all cases, matching NIST."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft was generic boilerplate ('Sorting is a foundational concept... names the concept, describes its parts') with no definition of sorting, no algorithms, no complexity, and circular vocabulary ('Sorting: a foundational concept covered in this lesson'). None of its substantive wording was retained."
+  ],
+  "correctionsNeeded": [
+    "Replaced the placeholder definition with NIST's 'arrange items in a predetermined order' and the factors that drive algorithm choice.",
+    "Added the three simple comparison sorts with correct, sourced complexities (bubble/insertion/selection all O(n^2); insertion O(n) best case; selection Theta(n^2)).",
+    "Named the efficient sorts with correct complexities (merge O(n log n); quicksort avg O(n log n), worst O(n^2)) instead of leaving the draft empty.",
+    "Added stability, comparison-sort framing, and a Bash-verified bubble-sort trace, replacing the draft's empty worked example.",
+    "Replaced circular vocabulary with non-circular, verified definitions."
+  ],
+  "rightsIssues": [
+    "NIST DADS is a U.S. Government work (public domain); all lesson prose is original synthesis, not copied.",
+    "OpenStax Introduction to Computer Science is CC BY 4.0: facts were synthesized and restated in original words, with attribution recorded; no passages reproduced.",
+    "Knuth's The Art of Computer Programming is copyrighted and used REFERENCE_ONLY for historical attribution of algorithm analysis; no passages reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-dads-sort",
+      "title": "sort - Dictionary of Algorithms and Data Structures (DADS)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://xlinux.nist.gov/dads/HTML/sort.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Authoritative, public-domain definition of 'sort' as arranging items in a predetermined order, plus the factors that govern algorithm choice (item count vs. memory, orderliness/key range, comparison cost vs. move cost). Supports the core definition and the 'many algorithms, choose by context' framing. Prose synthesized, not copied."
+    },
+    {
+      "id": "nist-dads-bubble-sort",
+      "title": "bubble sort - Dictionary of Algorithms and Data Structures (DADS)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://xlinux.nist.gov/dads/HTML/bubblesort.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Defines bubble sort (compare adjacent pairs, swap if needed, repeat passes until no swaps) and gives its complexity as O(n^2) for arbitrary data, approaching Theta(n) if the list is nearly in order. Supports the bubble-sort mechanism, its O(n^2) cost, and the near-sorted best case. Also anchors the worked-example trace."
+    },
+    {
+      "id": "nist-dads-insertion-sort",
+      "title": "insertion sort - Dictionary of Algorithms and Data Structures (DADS)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://xlinux.nist.gov/dads/HTML/insertionSort.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Defines insertion sort (repeatedly insert the next item into its proper place among already-sorted items) with run time O(n^2) because of the moves. Supports the insertion-sort mechanism and its O(n^2) cost; the O(n) best case on nearly-sorted input is the standard corollary of few moves."
+    },
+    {
+      "id": "nist-dads-selection-sort",
+      "title": "selection sort - Dictionary of Algorithms and Data Structures (DADS)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://xlinux.nist.gov/dads/HTML/selectionSort.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Defines selection sort (repeatedly find the least remaining item and move it to its final place) with run time Theta(n^2) and only O(n) swaps. Supports the selection-sort mechanism, its Theta(n^2) cost, and the swap-count contrast with bubble sort."
+    },
+    {
+      "id": "nist-dads-merge-sort",
+      "title": "merge sort - Dictionary of Algorithms and Data Structures (DADS)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://xlinux.nist.gov/dads/HTML/mergesort.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Defines merge sort (split into two groups, recursively sort each, merge into one sorted sequence) with run time Theta(n log n). Supports naming merge sort as an efficient recursive sort with O(n log n) cost."
+    },
+    {
+      "id": "nist-dads-quicksort",
+      "title": "quicksort - Dictionary of Algorithms and Data Structures (DADS)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://xlinux.nist.gov/dads/HTML/quicksort.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Defines quicksort (pick a pivot, partition remaining elements into those less than and greater than the pivot, recursively sort the partitions) with Theta(n^2) worst-case but typically O(n log n) performance. Supports quicksort's mechanism and its average O(n log n) / worst O(n^2) complexities."
+    },
+    {
+      "id": "nist-dads-stable-sort",
+      "title": "stable sort - Dictionary of Algorithms and Data Structures (DADS)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://xlinux.nist.gov/dads/HTML/stable.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Defines a stable sort as one where the relative order of items with equal keys on input is always preserved in the output. Supports the stability definition and its role in multi-key sorting."
+    },
+    {
+      "id": "openstax-intro-cs-sample-algorithms",
+      "title": "Introduction to Computer Science, Section 3.5: Sample Algorithms by Problem (Sorting)",
+      "provider": "OpenStax (Rice University)",
+      "url": "https://openstax.org/books/introduction-computer-science/pages/3-5-sample-algorithms-by-problem",
+      "sourceType": "open-textbook",
+      "usage": "EXTRACT_AND_ADAPT",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. OER coverage of sorting: defines sorting as rearranging elements into a logical order; describes merge sort and quicksort with O(n log n) typical runtime; states that a comparison sorting algorithm cannot do better than O(n log n) comparisons; and notes binary search relies on a sorted, index-accessible list. Used for the comparison-sort lower bound, the sorting-enables-binary-search link, and cross-checking merge/quicksort. Facts synthesized in original prose."
+    },
+    {
+      "id": "knuth-taocp-fundamental-algorithms",
+      "title": "The Art of Computer Programming, Volume 1: Fundamental Algorithms (Section 1.1)",
+      "provider": "Donald E. Knuth (Addison-Wesley)",
+      "url": "https://www-cs-faculty.stanford.edu/~knuth/taocp.html",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Canonical reference for the systematic analysis of algorithms and their running times (Volume 3 of TAOCP is devoted to sorting and searching). Cited only to attribute the discipline of analyzing sort algorithms by their growth rates; copyrighted, so REFERENCE_ONLY with no passages reproduced. url is Knuth's official Stanford TAOCP page."
+    }
+  ]
+}

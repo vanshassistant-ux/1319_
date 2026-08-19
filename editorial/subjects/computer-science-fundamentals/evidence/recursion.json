@@ -1,0 +1,127 @@
+{
+  "topicId": "computer-science-fundamentals:foundations:recursion",
+  "subjectId": "computer-science-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Recursion is an algorithmic technique in which a function calls itself with a smaller part of the problem",
+      "A recursive definition needs a base case (stops the recursion) and a recursive case (progresses toward the base case)",
+      "Each recursive call adds a frame to the call stack; frames are removed when calls return",
+      "A missing or unreachable base case causes infinite recursion, which overflows the stack (Python raises RecursionError; default limit 1000)",
+      "Worked trace of factorial(4) = 24 showing the wind-up and unwinding of calls"
+    ],
+    "supporting": [
+      "Recursion builds on functions and function calls",
+      "Brief contrast with iteration (loops) as the alternative way to repeat work",
+      "The call stack behaves as a stack (LIFO) data structure"
+    ],
+    "outOfScope": [
+      "Stack push/pop mechanics as an owned data-structure topic (named, not re-taught)",
+      "Function definition/parameters as an owned topic (built upon)",
+      "Loop syntax as an owned topic (one contrast only)",
+      "Formal time/space complexity analysis (owned time-complexity topic)",
+      "Tail-call optimization, mutual recursion internals, divide-and-conquer algorithm design"
+    ]
+  },
+  "claims": [
+    { "claim": "Recursion is an algorithmic technique where a function, to accomplish a task, calls itself with some part of the task.", "claimType": "TECHNICAL", "sourceIds": ["nist-dads-recursion"], "status": "supported" },
+    { "claim": "A recursive solution has a base case (simple enough to solve directly) and a recursive case (divide into smaller parts, call the function on each, combine results).", "claimType": "TECHNICAL", "sourceIds": ["nist-dads-recursion", "downey-think-python-conditionals"], "status": "supported" },
+    { "claim": "If a recursion never reaches a base case, it makes recursive calls forever and the program never terminates (infinite recursion).", "claimType": "TECHNICAL", "sourceIds": ["downey-think-python-conditionals"], "status": "supported" },
+    { "claim": "Each recursive call adds a frame to the call stack; the base case does not make a recursive call, so no further frames are added, and frames are removed as calls return.", "claimType": "TECHNICAL", "sourceIds": ["downey-think-python-conditionals", "nist-dads-stack"], "status": "supported" },
+    { "claim": "The call stack is a stack: the most recently added item (the active call's frame) is the one removed next (last-in, first-out).", "claimType": "TECHNICAL", "sourceIds": ["nist-dads-stack"], "status": "supported" },
+    { "claim": "Python's default recursion limit is 1000, and exceeding the interpreter stack depth raises a RecursionError; the limit exists to prevent infinite recursion from overflowing the C stack and crashing the interpreter.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-sys-recursionlimit"], "status": "supported" },
+    { "claim": "factorial(4) = 4*3*2*1 = 24, and the recursive definition factorial(n) = 1 if n==0 else n*factorial(n-1) computes this by calling factorial five times (n = 4,3,2,1,0) and multiplying on the way back up.", "claimType": "QUANTITATIVE", "sourceIds": ["nist-dads-recursion", "downey-think-python-conditionals"], "status": "supported" },
+    { "claim": "Recursion and iteration are alternative techniques for repeating work; the same computation (e.g., factorial) can be written either as a self-calling function or as a loop with explicit variables.", "claimType": "TECHNICAL", "sourceIds": ["nist-dads-recursion", "think-python-2e-functions"], "status": "supported" },
+    { "claim": "Recursion is built on functions: a function that calls itself is still an ordinary named sequence of statements that performs a computation and can return a value.", "claimType": "TECHNICAL", "sourceIds": ["think-python-2e-functions"], "status": "supported" }
+  ],
+  "conflictingEvidence": [
+    { "issue": "Some sources quote a RecursionError near 3000 frames rather than 1000.", "positions": ["Python's documented default recursion limit is 1000 (sys.getrecursionlimit()).", "A specific Think Python run reported roughly 3000 frames before the error, reflecting a raised or version-specific limit."], "resolution": "The lesson states the documented default is 1000 and was verified in Bash (sys.getrecursionlimit() returned 1000); the exact number can be changed with sys.setrecursionlimit(), so the lesson presents 1000 as the default, not a universal constant." }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft described recursion only in generic 'concept/context/evidence' language and never mentioned base case, recursive case, the call stack, or infinite recursion.",
+    "The draft's worked example ('a student reads a scenario and explains how recursion helps organize it') is not a recursion example and was discarded.",
+    "The draft's vocabulary ('context', 'evidence', 'application') was generic filler unrelated to recursion and was replaced."
+  ],
+  "correctionsNeeded": [
+    "Replaced boilerplate definition with the NIST DADS technical definition (a function calling itself with part of the task).",
+    "Added the two required components (base case, recursive case) and the call-stack / stack-overflow mechanism.",
+    "Added a verified traced worked example, factorial(4) = 24.",
+    "Added the iteration contrast and the Python recursion-limit / RecursionError detail."
+  ],
+  "rightsIssues": [
+    "Think Python sources are CC BY-NC / CC BY-NC-SA: facts synthesized in original prose, no wording reproduced, attribution retained.",
+    "Knuth TAOCP not cited here; not needed for this topic.",
+    "NIST DADS is U.S. government public-domain reference; definitions restated in original prose."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-dads-recursion",
+      "title": "recursion - Dictionary of Algorithms and Data Structures (DADS)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://xlinux.nist.gov/dads/HTML/recursion.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19. Authoritative public-domain definition: 'An algorithmic technique where a function, in order to accomplish a task, calls itself with some part of the task.' Identifies the two components of a recursive solution: base case(s) (simple enough to solve directly) and recursive case(s) (divide the problem, call recursively on each part, combine the solutions). Lists iteration and divide-and-conquer as related. Supports the definition, the base/recursive-case framing, and the iteration contrast. Prose synthesized, not copied."
+    },
+    {
+      "id": "nist-dads-stack",
+      "title": "stack - Dictionary of Algorithms and Data Structures (DADS)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://xlinux.nist.gov/dads/HTML/stack.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused registry record. Authoritative public-domain definition of a stack: a collection in which only the most recently added item may be removed (last-in, first-out; push and pop). Used only to justify that the call stack behaves as a LIFO stack; stack operations themselves are the owned Stacks topic and are named, not re-taught."
+    },
+    {
+      "id": "downey-think-python-conditionals",
+      "title": "Think Python (3rd ed.), Chapter 5: Conditionals and Recursion",
+      "provider": "Allen B. Downey / Green Tea Press",
+      "url": "https://allendowney.github.io/ThinkPython/chap05.html",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19. Chapter 'Conditionals and Recursion' introduces recursion with a countdown function, defines the base case as the bottom of the stack that makes no recursive call (so no more frames), and states that a recursion that never reaches a base case 'goes on making recursive calls forever, and the program never terminates,' producing a RecursionError ('maximum recursion depth exceeded'). Supports base case, call-stack frames, and infinite recursion. CC BY-NC-SA: original prose only, no wording reproduced."
+    },
+    {
+      "id": "python-docs-sys-recursionlimit",
+      "title": "sys - System-specific parameters and functions (recursion limit)",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/library/sys.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19 and verified in Bash. sys.getrecursionlimit() returns the maximum depth of the Python interpreter stack; sys.setrecursionlimit() changes it. The documented purpose: the limit 'prevents infinite recursion from causing an overflow of the C stack and crashing Python.' Bash check on this machine: sys.getrecursionlimit() returned 1000, and a base-case-free function raised RecursionError. Supports the default-1000 and RecursionError statements."
+    },
+    {
+      "id": "think-python-2e-functions",
+      "title": "Think Python, 2e - Chapter 3: Functions",
+      "provider": "Allen B. Downey / Green Tea Press",
+      "url": "https://greenteapress.com/thinkpython2/html/thinkpython2004.html",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused registry record. Defines a function as a named sequence of statements that performs a computation and can return a value (fruitful vs void). Used to ground the point that a recursive function is an ordinary function that happens to call itself, and to support the iteration-vs-recursion framing where the same computation is written two ways. No wording reproduced (NC license); original prose only."
+    }
+  ]
+}

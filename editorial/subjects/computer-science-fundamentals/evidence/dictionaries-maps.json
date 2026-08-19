@@ -1,0 +1,178 @@
+{
+  "topicId": "computer-science-fundamentals:foundations:dictionaries-maps",
+  "subjectId": "computer-science-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "A dictionary/map/associative array is a collection of key->value pairs",
+      "Keys are unique within one dictionary and are (usually) required to be hashable/immutable",
+      "Access is BY KEY, not by integer position",
+      "Average-case O(1) lookup/insert/delete via hashing; worst-case O(n) when many keys collide",
+      "Ordering: classically unordered; Python dicts preserve insertion order (guaranteed since 3.7)"
+    ],
+    "supporting": [
+      "Terminology map: Python 'dictionary' = 'map'/'hash map'/'associative array' in other languages",
+      "A hash table is the usual implementation: a hash function maps keys to array positions; a collision is two keys mapping to the same slot",
+      "Common operations: insert/update by key, lookup, membership test, delete, size",
+      "One small correct worked example building and querying a dict"
+    ],
+    "outOfScope": [
+      "Big-O theory itself (own topic time-complexity: state complexities, do not teach the notation)",
+      "Arrays and lists in depth (own topics: contrast in one sentence — index vs key access)",
+      "Searching algorithms (own topic)",
+      "Internals of specific hash functions and collision-resolution schemes beyond one sentence"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A dictionary (associative array) is a collection of items randomly accessible by a key; it stores key->value pairs.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-associative-array", "python-tutorial-datastructures"],
+      "status": "supported"
+    },
+    {
+      "claim": "The keys of one dictionary must be unique, and keys must be an immutable/hashable type; dictionaries are indexed by keys rather than by a range of numbers as sequences are.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-tutorial-datastructures", "python-docs-stdtypes"],
+      "status": "supported"
+    },
+    {
+      "claim": "The usual implementation is a hash table: a hash function maps keys to array positions, and two keys mapping to the same position is a collision.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-hash-table"],
+      "status": "supported"
+    },
+    {
+      "claim": "With a good hash function and enough table space, lookup/insert/delete run in average-case constant time O(1); with many collisions the worst case degrades to O(n).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-hash-table", "opendatastructures-hashtables"],
+      "status": "supported"
+    },
+    {
+      "claim": "Dictionaries are classically unordered, but Python dict objects preserve insertion order; this was an implementation detail in CPython 3.6 and became part of the language specification in Python 3.7.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-docs-whatsnew-37", "python-docs-stdtypes"],
+      "status": "supported"
+    },
+    {
+      "claim": "Worked example (verified in python3): building {'apple':30,'banana':10,'cherry':75}, inserting 'date', updating 'apple', dict['cherry'] returns 75, .get('mango','not found') returns the default, 'banana' in d is True, len is 4, and keys iterate in insertion order.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-tutorial-datastructures"],
+      "status": "supported"
+    },
+    {
+      "claim": "The name differs by language: Python calls it 'dictionary'; other languages/traditions call the same structure a 'map', 'hash map', or 'associative array'.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-associative-array", "python-tutorial-datastructures"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Is a dictionary ordered or unordered?",
+      "positions": [
+        "Abstractly, a map/associative array is an unordered collection keyed by value, not position.",
+        "Concretely, Python dicts preserve insertion order (guaranteed since 3.7); many other languages' hash maps do not."
+      ],
+      "resolution": "Teach the abstract structure as unordered-by-definition, then note the concrete Python guarantee as a language-specific property, distinguishing 'insertion order preserved' from 'sorted by key'."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only boilerplate ('a foundational concept... names the concept, describes its parts') with no substantive or verifiable claims about dictionaries/maps."
+  ],
+  "correctionsNeeded": [
+    "Replaced all placeholder text with substantive, sourced content on key->value structure, hashing, complexity, ordering, and terminology.",
+    "Added correct average O(1) / worst O(n) complexity statements and a Bash-verified Python worked example."
+  ],
+  "rightsIssues": [
+    "NIST DADS is a U.S. government work in the public domain. Python documentation is REFERENCE_ONLY (PSF license); facts synthesized, prose original. Open Data Structures is CC BY (Pat Morin); described/adapted in original prose with attribution, no long excerpts reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-dads-associative-array",
+      "title": "associative array — Dictionary of Algorithms and Data Structures (DADS)",
+      "provider": "NIST (National Institute of Standards and Technology)",
+      "url": "https://xlinux.nist.gov/dads/HTML/assocarray.html",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19. Defines an associative array as 'A collection of items that are randomly accessible by a key, often a string,' cross-referencing array, key, and dictionary. Supports the key->value definition and the terminology mapping. NIST DADS is a U.S. government public-domain reference."
+    },
+    {
+      "id": "nist-dads-hash-table",
+      "title": "hash table — Dictionary of Algorithms and Data Structures (DADS)",
+      "provider": "NIST (National Institute of Standards and Technology)",
+      "url": "https://xlinux.nist.gov/dads/HTML/hashtab.html",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19. Defines a hash table as 'A dictionary in which keys are mapped to array positions by hash functions,' notes collisions when multiple keys map to one position, and states complexity 'may be constant (Theta(1)) if the table is big enough.' Supports the hashing mechanism and the average-constant-time claim."
+    },
+    {
+      "id": "python-tutorial-datastructures",
+      "title": "Data Structures — The Python Tutorial (Dictionaries, section 5.5)",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/tutorial/datastructures.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "PSF License",
+      "licenseUrl": "https://docs.python.org/3/license.html",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19. States a dictionary is 'a set of key: value pairs, with the requirement that the keys are unique (within one dictionary)' and that 'dictionaries are indexed by keys, which can be any immutable type.' Supports the key->value / uniqueness / key-not-index / immutable-key claims. Facts used; prose original."
+    },
+    {
+      "id": "python-docs-stdtypes",
+      "title": "Built-in Types — Mapping Types (dict)",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/library/stdtypes.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "PSF License",
+      "licenseUrl": "https://docs.python.org/3/license.html",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19. Documents dict as a mapping type whose keys must be hashable, and carries the 'Changed in version 3.7: Dictionary order is guaranteed to be insertion order' note. Supports hashable-keys and insertion-order claims."
+    },
+    {
+      "id": "python-docs-whatsnew-37",
+      "title": "What's New In Python 3.7",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/whatsnew/3.7.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "PSF License",
+      "licenseUrl": "https://docs.python.org/3/license.html",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19. States 'the insertion-order preservation nature of dict objects has been declared to be an official part of the Python language spec,' i.e. an implementation detail in CPython 3.6 became a language guarantee in 3.7. Supports the ordering claim."
+    },
+    {
+      "id": "opendatastructures-hashtables",
+      "title": "Open Data Structures — Chapter 5: Hash Tables",
+      "provider": "Pat Morin (Open Data Structures)",
+      "url": "https://opendatastructures.org/ods-python/5_Hash_Tables.html",
+      "sourceType": "open-textbook",
+      "usage": "EXTRACT_AND_ADAPT",
+      "license": "CC BY",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5/ca/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19. Open-textbook chapter on hash tables: hashing arbitrary data via integer hash codes into array slots, with chaining and linear-probing implementations giving expected constant-time operations. Used to corroborate the hashing mechanism and expected-O(1) behavior. Described and adapted in original prose with attribution; no long excerpts reproduced."
+    }
+  ]
+}

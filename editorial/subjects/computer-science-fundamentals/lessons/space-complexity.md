@@ -1,0 +1,152 @@
+# Space Complexity
+
+## In 30 Seconds
+
+Space complexity measures how much memory an algorithm needs as its input grows, written in Big-O just like running time. The number that usually matters is auxiliary space: the extra working memory beyond the input itself. An in-place algorithm uses only O(1) auxiliary space; copying data into a new array costs O(n); and each pending recursive call adds a frame to the call stack, so recursion to depth d costs O(d) stack space.
+
+## Why This Matters
+
+Memory is finite, and an algorithm that looks fast on paper can still fail if it needs more working memory than the machine has. Choosing an in-place method can be the difference between processing a large dataset and running out of memory. Space analysis also exposes hidden costs: a recursive routine that seems lightweight can exhaust the call stack and crash the program. And because memory and time can often be traded against each other, reasoning about space lets you decide when spending extra memory to save time is worth it and when it is not. These judgments recur throughout data structures, systems programming, and algorithm design.
+
+## Learning Objectives
+
+- Define space complexity and express it in Big-O notation.
+- Distinguish auxiliary space from total space, and identify what counts as the input.
+- Explain why an in-place algorithm uses O(1) auxiliary space.
+- Analyze the call-stack space of a recursive algorithm as O(depth).
+- Evaluate a time-space trade-off and decide when spending memory to save time is justified.
+
+## The College Version
+
+### What space complexity measures
+
+Space complexity describes how the memory an algorithm needs grows as a function of the input size, usually written n. It is expressed in Big-O notation, the same asymptotic upper bound used for running time; the time-complexity topic owns how that notation works, so here the focus is strictly on memory. NIST's Dictionary of Algorithms and Data Structures defines complexity broadly as the minimum resources needed to solve a problem, and explicitly lists memory alongside time as one of those resources, so Big-O applies to space just as naturally as it does to speed.
+
+Total space has two parts: the input space (the memory already occupied by the data you were handed) plus the auxiliary space (any extra working memory the algorithm allocates while it runs). Because every algorithm must at least hold its input, the input term is often the same across competing methods and tells you little about which is more efficient. So when people compare algorithms by "space," they almost always mean auxiliary space: the extra beyond the input. An algorithm that reads a list of n numbers and keeps just a running total uses O(1) auxiliary space, even though the input itself occupies O(n).
+
+### In-place algorithms and O(1) auxiliary space
+
+An in-place algorithm transforms its input using only a constant amount of auxiliary memory, no matter how large the input is. NIST describes an in-place sort as one in which the sorted items occupy the same storage as the original ones, keeping at most a constant number of items in auxiliary memory at any time. Reversing an array by swapping the two ends and working inward is the canonical example: it needs only a couple of index variables and one temporary slot for each swap, so its auxiliary space is O(1) regardless of length.
+
+The contrast is an approach that builds a brand-new structure. Reversing by copying elements into a freshly allocated array of the same length uses O(n) auxiliary space, because the extra memory grows in step with the input. Both versions are O(n) in time, but they differ sharply in memory, and on a large or memory-constrained input that difference decides whether the program completes. In-place methods trade a little algorithmic convenience for a large saving in memory; the cost is that they overwrite (mutate) the original data, which is not always acceptable.
+
+### Common space costs and recursion
+
+A few patterns cover most cases. O(1) auxiliary space means a fixed handful of variables whose count does not depend on n. O(n) auxiliary space means allocating a copy, a lookup table, or another structure that scales with the input. Recursion introduces a subtler cost. Each call that has not yet returned occupies a frame on the call stack, storing that call's local variables and the address to return to. A recursion that reaches depth d therefore holds up to d frames at once, giving O(d) auxiliary space even if each individual call does almost nothing. For a simple linear recursion over n items, d is proportional to n, so the stack cost is O(n).
+
+This space is real and bounded. Python, for instance, caps the interpreter stack; its documentation notes the limit exists to prevent infinite recursion from overflowing the underlying C stack and crashing the interpreter. Exceed it and the program raises a RecursionError rather than silently corrupting memory. An iterative loop over the same data usually keeps only a few variables, so converting deep recursion to iteration is a standard way to cut O(n) stack space down to O(1).
+
+### The time-space trade-off
+
+Time and space are often exchangeable, and recognizing the trade-off is a core design skill. Spending memory can buy speed: to test whether any two values in a list add up to a target, storing the values already seen in a hash set uses O(n) auxiliary space but finishes in about O(n) time, whereas a nested-loop scan uses O(1) auxiliary space but takes O(n²) time. Lookup tables, caches, and precomputed indexes all follow the same logic, trading memory to avoid repeated work. The trade also runs the other way: an in-place algorithm gives up scratch space to stay within a tight memory budget, sometimes accepting more complex logic or a constant-factor slowdown in return. There is no universally correct choice. The right decision depends on which resource is scarce for your problem: the size of the data, the memory available on the target machine, and how often the operation runs. Analyzing both dimensions, rather than time alone, is what lets you make that call deliberately instead of by accident.
+
+## Key Vocabulary
+
+- **Space complexity** — A measure of how much memory an algorithm requires as a function of its input size n, expressed as an asymptotic upper bound in Big-O notation.
+- **Auxiliary space** — The extra working memory an algorithm allocates while it runs, not counting the memory already occupied by the input.
+- **Total space** — The full memory footprint of an algorithm: the input space plus the auxiliary space.
+- **In-place algorithm** — An algorithm that transforms its input using only a constant amount of auxiliary memory, O(1), independent of input size.
+- **Call stack** — A region of memory holding one frame for each function call that has started but not yet returned, storing that call's local variables and return address.
+- **Recursion depth** — The maximum number of recursive calls that are simultaneously active before the base case is reached and calls begin returning.
+- **Time-space trade-off** — The design choice of using more memory to reduce running time, or accepting more running time to reduce memory use.
+- **Big-O notation** — An asymptotic upper bound describing how a resource, such as memory or time, grows as the input size grows.
+
+## Eli-10
+
+Space complexity asks a simple question: as the pile of data gets bigger, how much extra scratch space does your method need? Some methods need only a tiny fixed amount of scratch space no matter how big the pile gets, so we call that O(1). Others need a second pile just as big as the first, which is O(n). And when a method calls itself over and over before finishing, every unfinished call has to be remembered on a stack, so a chain that goes d deep needs room to remember d things at once.
+
+## Eli's Analogy
+
+Think of solving a jigsaw puzzle on a table. The finished picture is the input. Working in-place is rearranging pieces right on top of the picture area, needing almost no extra table. Making a copy is clearing a whole second table the same size to build the answer separately. Deep recursion is like pausing puzzle A to start puzzle B, then pausing B for C: every paused puzzle stays spread out on its own table until you come back, so the tables pile up with the depth.
+
+**Where the analogy breaks down:** The tables are discrete and equal-sized, but real memory is measured in bytes and grows smoothly; auxiliary space can be any function of n, not just "one more table." And a paused puzzle physically occupies a table, whereas a paused function call stores only a small frame of variables, which is usually far less memory than a full copy of the data.
+
+## Worked Example
+
+Reverse an array of n integers two ways. In-place: set i to the front and j to the back, swap the elements at i and j using one temporary variable, then step i forward and j backward until they meet. This touches every element once (O(n) time) but only ever holds two indices and one temporary, so its auxiliary space is O(1). Copy: allocate a new array of length n and fill position k with the element from the far end, leaving the original untouched. This is also O(n) time, but the new array grows with the input, so its auxiliary space is O(n). Measuring peak extra memory confirms it: the in-place version held a constant amount (about 84 bytes) at n = 1,000, 10,000, and 100,000, while the copy version rose from roughly 8 KB to 80 KB to 800 KB, scaling linearly with n. Same time bound, very different memory.
+
+## Common Mistakes
+
+- **Assuming a good time complexity implies a good space complexity.** They are independent. Merge sort is O(n log n) in time but needs O(n) auxiliary space, while an in-place sort with the same or worse time can use O(1). Analyze memory separately.
+- **Counting the input array as auxiliary space.** Auxiliary space is the extra memory beyond the input. An algorithm that only scans an existing n-element array while keeping a few variables uses O(1) auxiliary space, not O(n).
+- **Believing recursion is free because it uses no explicit extra variables.** Each pending recursive call occupies a call-stack frame. Recursion to depth d costs O(d) auxiliary space and can overflow the stack, raising an error, if the depth is too large.
+- **Treating "in-place" as meaning "no extra memory at all."** In-place means a constant amount, O(1), of auxiliary memory, such as a few index variables and a temporary for swapping, not literally zero extra memory.
+- **Assuming more memory always makes an algorithm slower.** Often the opposite: a lookup table or hash set spends O(n) memory to cut running time. That deliberate exchange is the time-space trade-off.
+
+## Compare / Contrast
+
+- **Auxiliary space vs Total space** — Auxiliary space counts only the extra working memory beyond the input; total space adds the input space. Comparisons of algorithms usually use auxiliary space because the input term is shared.
+- **In-place reverse (O(1) auxiliary) vs Copy-into-new-array reverse (O(n) auxiliary)** — Both take O(n) time, but the in-place version holds a constant few variables while the copy allocates a second array that grows with n. The copy preserves the original; the in-place version overwrites it.
+- **Recursive traversal (O(depth) stack space) vs Iterative loop (O(1) space)** — The recursive version keeps one call-stack frame per pending call, costing O(depth); an equivalent loop keeps a few variables, costing O(1). Converting recursion to iteration is a common way to reduce stack space.
+
+## Key Takeaway
+
+Space complexity is the Big-O growth of an algorithm's memory use, and the figure that usually matters is auxiliary space, the extra beyond the input: O(1) for in-place work, O(n) for a copy or table, and O(depth) for a recursive call stack, with time often exchangeable for space.
+
+## Practice Question Bank
+
+1. **In Big-O terms, an algorithm's space complexity describes:**
+   - A. The number of basic operations it performs as the input grows.
+   - B. How the memory it needs grows as the input size n grows.
+   - C. The wall-clock seconds it runs on a particular computer.
+   - D. The number of lines of source code it contains.
+
+   **Answer: B.** Space complexity is the asymptotic growth of memory use as a function of input size n. A describes time complexity (operation count); C is a machine-specific measured time, not an asymptotic bound; D is unrelated to runtime resource use.
+
+2. **When algorithms are compared by "space," the figure usually meant is auxiliary space, which is:**
+   - A. The total memory including the memory occupied by the input.
+   - B. The memory occupied by the input alone.
+   - C. The running time saved by using extra memory.
+   - D. The extra working memory used beyond the input itself.
+
+   **Answer: D.** Auxiliary space is the extra working memory an algorithm allocates beyond its input. A is total space; B is input space; C confuses space with a time benefit. Comparisons use auxiliary space because the input term is shared across methods.
+
+3. **Reversing an array by swapping elements from both ends inward, using two index variables and one temporary, has an auxiliary space complexity of:**
+   - A. O(1)
+   - B. O(log n)
+   - C. O(n)
+   - D. O(n²)
+
+   **Answer: A.** The number of extra variables is fixed and does not depend on the array length, so the auxiliary space is constant, O(1) — the defining property of an in-place algorithm. O(n) would apply to a version that allocates a second array; O(log n) and O(n²) do not arise here.
+
+4. **A recursive function calls itself to a depth of d before hitting its base case, and each pending call keeps its own local variables on the call stack. The auxiliary space from the call stack is:**
+   - A. O(1), because recursion never uses extra memory.
+   - B. O(1), because the local variables are reused across calls.
+   - C. O(d), one stack frame for each pending call.
+   - D. O(2 to the d), doubling at every level.
+
+   **Answer: C.** Every call that has started but not returned occupies its own frame, so up to d frames coexist, giving O(d) auxiliary space. A and B wrongly claim recursion is free; frames are not reused while calls are still pending. O(2^d) would describe the number of calls in some branching recursions, not the simultaneous stack depth.
+
+5. **To check whether any two values in a list sum to a target, one method stores seen values in a hash set (about O(n) extra memory, O(n) time) while a nested-loop method uses O(1) extra memory but O(n²) time. This contrast best illustrates:**
+   - A. That adding memory always makes an algorithm slower.
+   - B. A time-space trade-off: spending memory can reduce running time.
+   - C. That the two methods have identical complexity in both dimensions.
+   - D. That a hash set guarantees O(n) time for a single lookup.
+
+   **Answer: B.** The hash-set method spends O(n) auxiliary space to cut time from O(n²) to O(n) — a deliberate time-space trade-off. A is the reverse of what happens here; C is false since the methods differ in both time and space; D is wrong because a hash-set lookup is on average O(1), not O(n).
+
+## Sources
+
+- NIST, *Dictionary of Algorithms and Data Structures* — "complexity" (public domain): https://xlinux.nist.gov/dads/HTML/complexity.html
+- NIST, *Dictionary of Algorithms and Data Structures* — "big-O notation" (public domain): https://xlinux.nist.gov/dads/HTML/bigOnotation.html
+- NIST, *Dictionary of Algorithms and Data Structures* — "in-place sort" (public domain): https://xlinux.nist.gov/dads/HTML/inplacesort.html
+- NIST, *Dictionary of Algorithms and Data Structures* — "array" (public domain): https://xlinux.nist.gov/dads/HTML/array.html
+- Python Software Foundation, *Python 3 documentation* — `sys.setrecursionlimit` / `sys.getrecursionlimit` (reference): https://docs.python.org/3/library/sys.html#sys.setrecursionlimit
+- Wikipedia — "Space complexity" (reference-only, corroborating): https://en.wikipedia.org/wiki/Space_complexity
+
+## Related Topics
+
+- computer-science-fundamentals:foundations:time-complexity
+- computer-science-fundamentals:foundations:recursion
+- computer-science-fundamentals:foundations:arrays
+- computer-science-fundamentals:foundations:algorithms
+- computer-science-fundamentals:foundations:sorting
+
+## Editorial Metadata
+
+- **Editorial status:** READY_TO_PUBLISH
+- **Sanitized notice:** Original EliExplains lesson for owner review; not verified course material or professional advice.
+- **Research status:** source-verified (NIST DADS + Python docs; Wikipedia reference-only)
+- **Rights status:** Public-domain NIST definitions and Python documentation used as references; Wikipedia reference-only; no source prose reproduced.
+- **Researched at:** 2026-08-19
+- **Transformation:** Facts drawn from NIST DADS, Python documentation, and a reference-only encyclopedia entry, then synthesized into original prose. The in-place vs copy reverse worked example and the recursion-depth stack claim were verified by executing Python before writing.

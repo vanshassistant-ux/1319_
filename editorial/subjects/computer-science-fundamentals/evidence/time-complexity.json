@@ -1,0 +1,175 @@
+{
+  "topicId": "computer-science-fundamentals:foundations:time-complexity",
+  "subjectId": "computer-science-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Time complexity describes how an algorithm's running time GROWS as the input size n grows, not the wall-clock time on a particular machine",
+      "The analysis method: count basic operations as a function of n, keep the dominant term, drop constant factors and lower-order terms",
+      "Big-O notation and its formal meaning: f(n) is O(g(n)) if there are positive constants c and k with 0 <= f(n) <= c*g(n) for all n >= k",
+      "The common complexity classes and their ordering: O(1) < O(log n) < O(n) < O(n log n) < O(n^2) < O(2^n)",
+      "Best, average, and worst case, and that Big-O typically expresses a worst-case upper bound",
+      "That Big-O is an upper bound; Big-Omega is a lower bound and Big-Theta a tight bound (named briefly)",
+      "One worked example counting operations: a nested-loop pair scan performs n(n-1)/2 comparisons, which is O(n^2)"
+    ],
+    "supporting": [
+      "History: the O symbol was introduced by Paul Bachmann (1894) and popularized by Edmund Landau (hence 'Landau symbols'); Donald Knuth standardized O, Omega, and Theta for algorithm analysis in computer science (1976)",
+      "Concrete anchoring examples drawn from sibling topics (array index O(1), linear scan O(n), binary search O(log n), dictionary lookup O(1) average) cited only as illustrations",
+      "Why growth rate matters more than constants for large inputs"
+    ],
+    "outOfScope": [
+      "Space complexity - the memory analog - which is its own sibling topic (named in one sentence and handed off)",
+      "Teaching specific searching or sorting algorithms in detail (own sibling topics); their complexities are cited only as examples",
+      "Amortized analysis and the master theorem for recurrences (beyond an introductory lesson)",
+      "Formal proofs of asymptotic bounds"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Time complexity measures how the number of basic operations an algorithm performs grows as a function of the input size n, abstracting away hardware and language so the same analysis holds across machines.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mit-ocw-6006-intro-algorithms", "nist-dads-big-o-notation"],
+      "status": "supported"
+    },
+    {
+      "claim": "Big-O notation gives an asymptotic upper bound: f(n) = O(g(n)) means there are positive constants c and k such that 0 <= f(n) <= c*g(n) for all n >= k.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-big-o-notation"],
+      "status": "supported",
+      "verification": "Definition quoted from NIST DADS 'big-O notation' entry, read 2026-08-19."
+    },
+    {
+      "claim": "In analysis we keep the dominant term and drop constant factors and lower-order terms: an algorithm doing 3n + 5 operations is O(n), and a nested double loop doing n(n-1)/2 comparisons is O(n^2).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mit-ocw-6006-intro-algorithms", "nist-dads-big-o-notation"],
+      "status": "supported",
+      "verification": "Verified in Python 3 via Bash on 2026-08-19: nested-loop comparison count equals n(n-1)/2 for n in {1,2,5,8,10}; the linear sum over [3,9,2,7,5] performs exactly 5 additions and returns 26."
+    },
+    {
+      "claim": "The standard complexity classes grow in the strict order O(1) < O(log n) < O(n) < O(n log n) < O(n^2) < O(2^n); at n = 1024, log2(n) = 10, n = 1024, n*log2(n) = 10240, and n^2 = 1048576.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mit-ocw-6006-intro-algorithms", "python-wiki-time-complexity"],
+      "status": "supported",
+      "verification": "Growth values and the strictly-increasing ordering computed in Python 3 via Bash on 2026-08-19."
+    },
+    {
+      "claim": "An algorithm can have different best-, average-, and worst-case running times; a linear one-by-one scan of n items is O(1) best case (target first) and O(n) worst case (target last or absent), and Big-O usually reports the worst case.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mit-ocw-6006-intro-algorithms", "nist-dads-big-o-notation"],
+      "status": "supported"
+    },
+    {
+      "claim": "Big-O is an upper bound; Big-Omega expresses a lower bound and Big-Theta a tight (matching upper and lower) bound. Because O is only an upper bound, an O(n) algorithm is also technically O(n^2).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-big-o-notation", "knuth-big-omicron-1976"],
+      "status": "supported"
+    },
+    {
+      "claim": "A Python dictionary (hash map) lookup is O(1) on average but O(n) in the worst case when hash collisions are frequent; average-case timings assume a hash function robust enough that collisions are uncommon.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["python-wiki-time-complexity"],
+      "status": "supported",
+      "verification": "Values and the collision caveat taken from the official Python wiki TimeComplexity table, read 2026-08-19."
+    },
+    {
+      "claim": "The O symbol was introduced by the number theorist Paul Bachmann in 1894 (in Analytische Zahlentheorie), and adopted and popularized by Edmund Landau, so O and o are called Landau symbols.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["maa-math-origins-orders-of-growth"],
+      "status": "supported"
+    },
+    {
+      "claim": "Donald Knuth established the standard use of O, Omega, and Theta in computer science in his 1976 SIGACT News note 'Big Omicron and Big Omega and Big Theta,' which also corrected the loose habit of writing O(n^2) for a lower bound when Omega was meant.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["knuth-big-omicron-1976"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft was placeholder boilerplate ('Time Complexity is a foundational concept... names the concept, describes its parts, and shows how those parts work together') with no definition of Big-O, no complexity classes, no ordering, no worked example, and circular vocabulary. None of its substantive wording was retained."
+  ],
+  "correctionsNeeded": [
+    "Replaced the empty placeholder definition with the standard growth-rate definition and the formal Big-O condition (constants c and k) attributed to NIST DADS.",
+    "Added the six standard complexity classes and their correct strict ordering, verified numerically in Bash.",
+    "Added a Bash-verified worked example (nested-loop pair scan = n(n-1)/2 comparisons = O(n^2), plus a linear O(n) contrast) in place of the draft's empty workedExample.",
+    "Added best/average/worst case and the upper-bound nature of Big-O (with Big-Omega/Big-Theta named), which the draft omitted.",
+    "Added correct historical attribution (Bachmann 1894, Landau, Knuth 1976).",
+    "Replaced circular vocabulary with non-circular, source-verified definitions."
+  ],
+  "rightsIssues": [
+    "NIST DADS is a U.S. Government work (public domain); the formal definition was restated in original prose and attributed, not copied verbatim beyond the short standard inequality.",
+    "MIT OpenCourseWare 6.006 is CC BY-NC-SA 4.0 and used REFERENCE_ONLY: only facts about analysis technique were synthesized, no course text reproduced, so no ShareAlike obligation is triggered.",
+    "Knuth's 1976 SIGACT News note is copyrighted (ACM) and used REFERENCE_ONLY: its role and thesis are attributed and paraphrased; no passages reproduced.",
+    "The Python wiki TimeComplexity page's factual complexity values are not copyrightable as facts; used REFERENCE_ONLY with original prose.",
+    "The MAA Convergence article is copyrighted and used REFERENCE_ONLY for the one-paragraph history; prose original."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-dads-big-o-notation",
+      "title": "big-O notation - Dictionary of Algorithms and Data Structures (DADS)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://xlinux.nist.gov/dads/HTML/bigOnotation.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Authoritative, public-domain definition of big-O as an asymptotic upper bound: 'f(n) = O(g(n)) means there are positive constants c and k, such that 0 <= f(n) <= cg(n) for all n >= k.' Links to Big-Theta, Big-Omega, little-o, and complexity, and notes O is an upper bound frequently misused to mean equality. Supports the formal definition, the upper-bound framing, and the naming of Theta/Omega. Prose synthesized, not copied."
+    },
+    {
+      "id": "mit-ocw-6006-intro-algorithms",
+      "title": "6.006 Introduction to Algorithms, Spring 2020",
+      "provider": "MIT OpenCourseWare",
+      "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Undergraduate MIT algorithms course that introduces performance measures and analysis techniques (asymptotic analysis, orders of growth, worst-case running time). Used REFERENCE_ONLY as a reputable OER anchor for the analysis method and the complexity-class framing; no course text reproduced, so ShareAlike is not triggered."
+    },
+    {
+      "id": "knuth-big-omicron-1976",
+      "title": "Big Omicron and Big Omega and Big Theta (SIGACT News, Apr.-June 1976, 8(2), pp. 18-24)",
+      "provider": "Donald E. Knuth / ACM SIGACT News",
+      "url": "https://dl.acm.org/doi/10.1145/1008328.1008329",
+      "sourceType": "peer-reviewed",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Confirmed 2026-08-19 via ACM Digital Library citation and multiple corroborating references. Knuth's note that standardized O, Omega, and Theta for computer science and argued against using O for lower bounds (his example: rejecting a sort 'because its running time is O(n^2)' misuses O). Used REFERENCE_ONLY to attribute the CS standardization of the notation to Knuth (1976); thesis paraphrased, no passages reproduced. DOI 10.1145/1008328.1008329."
+    },
+    {
+      "id": "python-wiki-time-complexity",
+      "title": "TimeComplexity - Python Wiki",
+      "provider": "Python Software Foundation (python.org wiki)",
+      "url": "https://wiki.python.org/moin/TimeComplexity",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read 2026-08-19. Reference table of operation complexities for CPython's list and dict. Confirms list index access and append are O(1), 'x in s' membership is O(n), and dict get/set item are O(1) average but O(n) worst case, with the stated caveat that average-case times assume collisions are uncommon. Used REFERENCE_ONLY for concrete anchoring examples; values are non-copyrightable facts and prose is original."
+    },
+    {
+      "id": "maa-math-origins-orders-of-growth",
+      "title": "Math Origins: Orders of Growth",
+      "provider": "Mathematical Association of America (MAA Convergence)",
+      "url": "https://old.maa.org/press/periodicals/convergence/math-origins-orders-of-growth",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Reputable MAA history article corroborating that the O symbol was introduced by Paul Bachmann (1894, Analytische Zahlentheorie) and adopted/formalized by Edmund Landau (1909), hence 'Landau symbols.' Cross-checked 2026-08-19 against standard references. Used REFERENCE_ONLY for the one-paragraph mathematical history; prose original."
+    }
+  ]
+}

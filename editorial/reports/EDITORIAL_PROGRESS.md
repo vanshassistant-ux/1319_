@@ -1,6 +1,6 @@
 # ELIEXPLAINS GLOBAL EDITORIAL PROGRESS
 
-Generated: 2026-08-19T23:32:25.162Z
+Generated: 2026-08-19T23:41:17.812Z
 Counts are computed from the phase content stores by `bun run editorial:progress`.
 
 Subjects total: 44
@@ -9,23 +9,23 @@ Subjects remaining: 35
 Subject completion: 20.45%
 
 Total topics: 1319
-Topics processed: 227
+Topics processed: 235
 Topics published: 0
-Topics ready to publish: 227
+Topics ready to publish: 235
 Topics held: 0
 Topics requiring review: 0
-Topics remaining: 1092
-Topic processing: 17.21%
+Topics remaining: 1084
+Topic processing: 17.82%
 
-Verified questions: 1135
-Unique source records: 1867
-Source usage classes: REFERENCE_ONLY=1297, PUBLIC_DOMAIN=464, ATTRIBUTION_REQUIRED=67, EXTRACT_AND_ADAPT=37, LINK_ONLY=2
+Verified questions: 1175
+Unique source records: 1894
+Source usage classes: REFERENCE_ONLY=1317, PUBLIC_DOMAIN=466, ATTRIBUTION_REQUIRED=70, EXTRACT_AND_ADAPT=39, LINK_ONLY=2
 
 ## Phase progress
 
 | Phase | Subjects | Topics | Percent |
 | --- | --- | --- | --- |
-| 1 | 9 / 11 | 227 / 282 | 80.50% |
+| 1 | 9 / 11 | 235 / 282 | 83.33% |
 | 2 | 0 / 11 | 0 / 325 | 0.00% |
 | 3 | 0 / 11 | 0 / 337 | 0.00% |
 | 4 | 0 / 11 | 0 / 375 | 0.00% |
@@ -35,7 +35,7 @@ Source usage classes: REFERENCE_ONLY=1297, PUBLIC_DOMAIN=464, ATTRIBUTION_REQUIR
 | Collection | Subjects | Topics | Percent |
 | --- | --- | --- | --- |
 | Professional Studies | 7 / 7 | 166 / 166 | 100.00% |
-| Technology | 1 / 8 | 33 / 257 | 12.84% |
+| Technology | 1 / 8 | 41 / 257 | 15.95% |
 | Business & Money | 0 / 9 | 0 / 243 | 0.00% |
 | Humanities & Culture | 0 / 7 | 0 / 202 | 0.00% |
 | Science & Health | 0 / 6 | 0 / 206 | 0.00% |
@@ -53,5 +53,5 @@ Source usage classes: REFERENCE_ONLY=1297, PUBLIC_DOMAIN=464, ATTRIBUTION_REQUIR
 | health-administration | 24 / 24 | 0 | 24 | 0 | 0 | 0 |
 | computer-literacy | 25 / 25 | 0 | 25 | 0 | 0 | 0 |
 | graphic-design-and-digital-media | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
-| computer-science-fundamentals | 8 / 27 | 0 | 8 | 0 | 0 | 19 |
+| computer-science-fundamentals | 16 / 27 | 0 | 16 | 0 | 0 | 11 |
 | engineering-fundamentals | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
