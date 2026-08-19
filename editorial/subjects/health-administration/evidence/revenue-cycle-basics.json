@@ -1,0 +1,195 @@
+{
+  "topicId": "health-administration:financing:revenue-cycle-basics",
+  "subjectId": "health-administration",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "The revenue cycle as the end-to-end administrative and financial process that captures, manages, and collects patient service revenue",
+      "The three-stage framing: front-end (patient access), mid-cycle (charge capture/coding/documentation/utilization review), back-end (claims/remittance/denials/A-R/collections)",
+      "Front-end tasks: scheduling, registration, insurance eligibility verification, prior authorization, point-of-service collection",
+      "Mid-cycle tasks: charge capture, clinical documentation, coding (referenced as a stage only), utilization review",
+      "Back-end tasks: claim submission, remittance/payment posting, denial management and appeals, patient billing, A/R follow-up, collections",
+      "The clean-claim concept and its regulatory definition",
+      "Timely-payment rules: Medicare 30-day payment ceiling and 14/29-day payment floor with interest; Medicaid 90%/30-day and 99%/90-day and 12-month filing limit",
+      "Core metrics: days in A/R, clean claim rate, denial rate, net collection rate, cost to collect",
+      "The feedback-loop insight that front-end accuracy determines back-end outcomes",
+      "Worked example computing days in A/R and net collection rate"
+    ],
+    "supporting": [
+      "HIPAA Administrative Simplification standard electronic transactions that structure the cycle (270/271 eligibility, 278 authorization, 837 claim, 835 remittance, 276/277 status)",
+      "Contractual adjustment versus avoidable write-off as the reason net collection rate is not just a discount measure"
+    ],
+    "outOfScope": [
+      "The mechanics of code sets (ICD-10-CM/PCS, CPT, MS-DRG) and construction of the claim form itself (owned by Healthcare Billing Fundamentals)",
+      "Patient-side cost-sharing definitions such as deductible, copay, coinsurance, out-of-pocket maximum (owned by Health Insurance Basics)",
+      "National health cost trends, drivers, and totals (owned by Healthcare Costs)",
+      "Individualized billing, coding, legal, or benefits-eligibility advice for any specific claim"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The healthcare revenue cycle is the end-to-end administrative and financial process a provider uses to capture, manage, and collect revenue for patient services, commonly grouped into front-end (patient access), mid-cycle (charge capture, coding, documentation), and back-end (claims, payment, denials, collections) stages.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["hfma-map-keys", "cms-administrative-simplification-transactions"],
+      "status": "supported"
+    },
+    {
+      "claim": "Federal regulation defines a clean claim as one that can be processed without obtaining additional information from the provider of the service or from a third party; it excludes claims from providers under fraud or abuse investigation and claims under medical-necessity review.",
+      "claimType": "LEGAL",
+      "sourceIds": ["ecfr-42-cfr-447-45-timely-claims-payment"],
+      "status": "supported"
+    },
+    {
+      "claim": "The Medicare Claims Processing Manual defines a clean claim as one that does not require the carrier or contractor to investigate or develop it externally to Medicare operations on a prepayment basis, and requires such claims to be filed within the timely filing period.",
+      "claimType": "LEGAL",
+      "sourceIds": ["cms-medicare-claims-processing-manual-ch1"],
+      "status": "supported"
+    },
+    {
+      "claim": "For Medicare, clean claims must be paid or denied within 30 calendar days of the receipt date (the payment ceiling, in effect since 10-01-93), and interest must be paid on clean claims not paid timely.",
+      "claimType": "LEGAL",
+      "sourceIds": ["cms-medicare-claims-processing-manual-ch1"],
+      "status": "supported"
+    },
+    {
+      "claim": "Medicare's payment floor bars paying a clean claim before the 14th day for HIPAA-compliant electronic claims and before the 29th day for paper claims (01/01/2006 and later), which delays cash to providers.",
+      "claimType": "LEGAL",
+      "sourceIds": ["cms-medicare-claims-processing-manual-ch1"],
+      "status": "supported"
+    },
+    {
+      "claim": "Federal Medicaid regulation requires the state agency to pay 90 percent of clean claims from practitioners within 30 days of receipt and 99 percent within 90 days, and generally requires providers to submit claims within 12 months of the date of service.",
+      "claimType": "LEGAL",
+      "sourceIds": ["ecfr-42-cfr-447-45-timely-claims-payment"],
+      "status": "supported"
+    },
+    {
+      "claim": "Days in accounts receivable is calculated as the net accounts-receivable balance divided by average daily net patient service revenue, and is a headline measure of how quickly a provider collects.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["hfma-map-keys"],
+      "status": "supported"
+    },
+    {
+      "claim": "Clean claim rate is the number of claims passing edits with no manual intervention divided by the number of claims accepted into the claims-processing tool; denial rate is the number of claims denied divided by the number of claims remitted.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["hfma-map-keys"],
+      "status": "supported"
+    },
+    {
+      "claim": "Cost to collect is total revenue-cycle cost divided by total patient service cash collected, an efficiency measure of the whole revenue-cycle operation.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["hfma-map-keys"],
+      "status": "supported"
+    },
+    {
+      "claim": "Net collection rate measures payments received as a share of the amount collectible after contractual adjustments, so the gap from 100 percent reflects collectible revenue lost to avoidable write-offs (unworked denials, bad debt), not the negotiated contractual discount.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["hfma-map-keys"],
+      "status": "supported"
+    },
+    {
+      "claim": "Much of the revenue cycle runs on HIPAA Administrative Simplification standard electronic transactions, including eligibility inquiry/response (270/271), referral certification and authorization (278), the health care claim (837), and the claim payment/remittance advice (835).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cms-administrative-simplification-transactions"],
+      "status": "supported"
+    },
+    {
+      "claim": "In the worked scenario, average daily net revenue of $2,700,000/90 = $30,000 gives Days in A/R of $600,000/$30,000 = 20.0 days, and a $620,000 collectible allowed amount ($1,000,000 charges minus $380,000 contractual adjustment) with $589,000 received gives a net collection rate of 95.0 percent, a $31,000 avoidable gap.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["hfma-map-keys"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether \"net collection rate\" is defined against the allowed amount or against net patient service revenue.",
+      "positions": [
+        "The widely used practice-management definition is payments divided by (charges minus contractual adjustments), i.e., collection of the collectible/allowed amount.",
+        "HFMA's MAP Key FM-2 frames a related measure as cash collections as a percentage of net patient service revenue over a trailing period."
+      ],
+      "resolution": "The lesson teaches net collection rate with the payments-over-allowed-amount definition because it most directly isolates avoidable losses from contractual discounts, and notes explicitly that contractual adjustments are removed from the denominator. HFMA's cash-collection-as-percent-of-NPSR key is acknowledged as a closely related but distinct metric; the arithmetic in the worked example uses only the allowed-amount definition."
+    },
+    {
+      "issue": "Stage boundaries (front/mid/back) are conventions, not statutory categories, and different organizations draw them slightly differently.",
+      "positions": [
+        "Some group utilization review and clinical documentation into the mid-cycle; others treat parts of it as front-end or a separate clinical function.",
+        "HFMA's MAP Keys organize KPIs into Patient Access, Pre-Billing, Claims, Account Resolution, and Financial Management, which map onto but do not exactly equal the three-stage model."
+      ],
+      "resolution": "The lesson presents front/mid/back as the standard teaching convention and states it is a grouping, not a legal taxonomy, keeping individual tasks assigned to the stage where the field most commonly places them."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The machine-generated draft contained no revenue-cycle content: it described 'Revenue Cycle Basics' generically as 'a foundational concept in Health Administration' students use 'to organize information and ask better questions,' with no stages, no metrics, no regulatory basis, and no sources.",
+    "The draft's vocabulary defined the topic circularly ('A foundational Health Administration concept covered in this lesson') and listed generic study words (context, evidence, application).",
+    "The draft's worked example described a student reading a scenario rather than performing any revenue-cycle calculation.",
+    "The draft's questions tested study technique rather than any revenue-cycle fact."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire lesson with sourced revenue-cycle content: the end-to-end definition, the three stages and their tasks, the clean-claim concept, timely-payment rules, and the core metrics.",
+    "Anchored the clean-claim definition and timely-payment timelines to primary regulation (42 CFR 447.45) and the CMS Medicare Claims Processing Manual rather than to secondary summaries.",
+    "Added a worked example computing days in A/R and net collection rate with arithmetic executed and verified in code.",
+    "Enforced the anti-duplication boundaries: coding and the claim form referenced as a stage only; patient cost-sharing terms mentioned only as items the front end estimates/collects; no national cost trends.",
+    "Distributed the five answer keys across positions (B, A, D, C, A) so no slot holds more than two."
+  ],
+  "rightsIssues": [
+    "The CMS Medicare Claims Processing Manual (Pub. 100-04) and 42 CFR 447.45 are U.S. federal government works and public domain; their facts are used and their definitional language is described in original wording rather than block-quoted.",
+    "HFMA MAP Keys material is proprietary and recorded REFERENCE_ONLY; only the underlying metric concepts and formulas (facts, not expression) are used, and no HFMA wording is reproduced.",
+    "CMS Administrative Simplification web content is recorded REFERENCE_ONLY; the standard-transaction identifiers are facts adopted under 45 CFR part 162 and are described in original wording."
+  ],
+  "sourceRecords": [
+    {
+      "id": "cms-medicare-claims-processing-manual-ch1",
+      "title": "Medicare Claims Processing Manual (Pub. 100-04), Chapter 1 - General Billing Requirements, sections 80.2 (Definition of Clean Claim), 80.2.1.1 (Payment Ceiling Standards), 80.2.1.2 (Payment Floor Standards), 80.2.2 (Interest Payment on Clean Claims Not Paid Timely)",
+      "provider": "Centers for Medicare & Medicaid Services (CMS)",
+      "url": "https://www.cms.gov/regulations-and-guidance/guidance/manuals/downloads/clm104c01.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. federal government work; not subject to copyright",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Downloaded the official CMS PDF via curl with a browser user agent and extracted text with pypdf. Section 80.2 defines a clean claim as one that does not require the carrier or FI to investigate or develop external to Medicare operations on a prepayment basis, filed within the timely filing period. Section 80.2.1.1 states clean claims must be paid or denied within 30 calendar days of receipt (since 10-01-93) and that interest must be paid on clean claims not paid timely. Section 80.2.1.2 gives the payment floor: 14th day for HIPAA-compliant EMC and 29th day for paper (01/01/2006 and later). REFERENCE for facts; no manual wording reproduced verbatim in the lesson."
+    },
+    {
+      "id": "ecfr-42-cfr-447-45-timely-claims-payment",
+      "title": "42 CFR 447.45 - Timely claims payment (Medicaid)",
+      "provider": "Centers for Medicare & Medicaid Services, in the Electronic Code of Federal Regulations (Office of the Federal Register / Government Publishing Office)",
+      "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-447/subpart-A/section-447.45",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. federal regulation; edict of government, not subject to copyright",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "The eCFR page redirected the WebFetch tool to unblock.federalregister.gov; the regulatory text was read via the eCFR renderer API (https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-42?...section=447.45) using curl with a browser user agent. Supports the clean-claim definition (a claim that can be processed without obtaining additional information from the provider or a third party; excludes fraud/abuse-investigation and medical-necessity-review claims), the timeliness thresholds (pay 90 percent of clean claims within 30 days, 99 percent within 90 days), and the 12-month provider filing requirement. Public domain; described in original wording."
+    },
+    {
+      "id": "hfma-map-keys",
+      "title": "MAP Keys - Industry-standard revenue cycle KPIs (MAP Initiative)",
+      "provider": "Healthcare Financial Management Association (HFMA)",
+      "url": "https://www.hfma.org/data-and-insights/map-initiative/map-keys/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Secondary industry source, read for the standard metric definitions/formulas only. Confirms Net Days in A/R (FM-1) = net A/R / average daily net patient service revenue; Clean Claim Rate (CL-1) = claims passing edits with no manual intervention / claims accepted into the claims-processing tool; Remittance Denial Rate (AR-5) = claims denied / claims remitted; Cash Collection as % of Net Patient Service Revenue (FM-2); and Cost to Collect (FM-6) = total revenue-cycle cost / total patient service cash collected. REFERENCE_ONLY per the subject source map (HFMA is a secondary industry source); no HFMA wording reproduced, and only the metric concepts (facts/formulas) are used."
+    },
+    {
+      "id": "cms-administrative-simplification-transactions",
+      "title": "HIPAA Administrative Simplification - Standard electronic transactions overview",
+      "provider": "Centers for Medicare & Medicaid Services (CMS)",
+      "url": "https://www.cms.gov/priorities/key-initiatives/burden-reduction/administrative-simplification/hipaa/transactions-overview",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "The CMS page returns a JavaScript shell to the fetcher, so the transaction content was not read from the live DOM; the HIPAA standard-transaction identifiers used here (270/271 eligibility, 278 referral/authorization, 837 claim, 835 remittance advice, 276/277 claim status) were confirmed through CMS/HHS Administrative Simplification materials and multiple concurring industry sources, and rest on the standards adopted in 45 CFR part 162. Used only for the supporting statement that the cycle runs on standardized electronic transactions; described in original wording."
+    }
+  ]
+}

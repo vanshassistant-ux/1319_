@@ -1,0 +1,266 @@
+{
+  "topicId": "health-administration:financing:healthcare-billing-fundamentals",
+  "subjectId": "health-administration",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "The distinction between medical coding (translating documentation into standardized codes) and billing (assembling and submitting the claim and managing payment)",
+      "The major U.S. code sets and what each is FOR: ICD-10-CM (diagnoses), ICD-10-PCS (inpatient procedures), CPT/HCPCS Level I (physician/outpatient procedures, AMA), HCPCS Level II (supplies/drugs/services), MS-DRGs (inpatient payment grouping)",
+      "Who maintains each code set and the annual update cadence for ICD-10 (October 1)",
+      "The two claim families at a naming level: CMS-1500/837P (professional) and UB-04 (CMS-1450)/837I (institutional)",
+      "Charge vs allowed amount vs reimbursement",
+      "Clean claims, adjudication, rejection vs denial, and timely-payment standards",
+      "Fee-for-service vs value-based/bundled payment at a conceptual level"
+    ],
+    "supporting": [
+      "The 837 electronic formats are the HIPAA standard claim transactions (ANSI ASC X12N)",
+      "HCPCS is a claims naming system, not a coverage or payment determination",
+      "MS-DRG assignment is driven by principal diagnosis, secondary diagnoses, procedures, and sometimes discharge status; payment is base rate times DRG weight",
+      "Coded data also feeds quality measurement, surveillance, and research"
+    ],
+    "outOfScope": [
+      "Patient-side cost-sharing mechanics (premium, deductible, coinsurance, out-of-pocket max) — owned by Health Insurance Basics",
+      "The full front-to-back revenue cycle workflow (registration, scheduling, AR follow-up) — owned by Revenue Cycle Basics",
+      "National health cost trends and totals — owned by Healthcare Costs",
+      "Any individualized coding, billing, benefits, or legal advice; how to assign specific codes",
+      "Reproduction of any CPT or MS-DRG descriptors, code numbers, or code lists (copyrighted)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Medical coding translates a clinician's documentation into standardized national code sets, while billing is the separate downstream step of assembling those codes onto a claim, submitting it, and managing payment.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cms-overview-coding-classification-systems", "cdc-nchs-icd10-cm-pcs-background"],
+      "status": "supported"
+    },
+    {
+      "claim": "ICD-10-CM encodes diagnoses in every care setting and is developed and maintained by the CDC's National Center for Health Statistics; ICD-10-PCS encodes hospital inpatient procedures and was developed and is maintained by CMS.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cms-overview-coding-classification-systems", "cdc-nchs-icd10-cm-pcs-background"],
+      "status": "supported"
+    },
+    {
+      "claim": "ICD-10-CM and ICD-10-PCS replaced ICD-9-CM in October 2015 and are updated on a fiscal-year cycle effective each October 1 through the federal ICD-10 Coordination and Maintenance Committee run jointly by CMS and NCHS.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cms-overview-coding-classification-systems", "cdc-nchs-icd10-cm-pcs-background"],
+      "status": "supported"
+    },
+    {
+      "claim": "HCPCS has two levels: Level I is the CPT code set maintained by the CPT Editorial Panel and copyrighted by the American Medical Association, identifying physician and outpatient procedures and services; Level II is maintained by CMS for products, supplies, and services outside CPT, such as certain drugs and biologicals, ambulance services, and durable medical equipment, prosthetics, orthotics, and supplies.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cms-overview-coding-classification-systems"],
+      "status": "supported"
+    },
+    {
+      "claim": "CMS states that HCPCS coding is not a methodology for making coverage or payment determinations, and the existence of a code does not by itself determine coverage.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cms-overview-coding-classification-systems"],
+      "status": "supported"
+    },
+    {
+      "claim": "Under the Inpatient Prospective Payment System, an inpatient admission is assigned to one MS-DRG based mainly on the principal diagnosis plus secondary diagnoses, procedures, and sometimes discharge status; each MS-DRG has a relative weight, and payment is essentially the hospital's base rate multiplied by that weight, producing one prospective payment per discharge.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["medpac-payment-basics-hospital-ipps", "cms-msdrg-classifications-software"],
+      "status": "supported"
+    },
+    {
+      "claim": "Professional claims (physicians, non-physician practitioners, suppliers) use Form CMS-1500 or its electronic equivalent the 837P; institutional/facility claims use the UB-04 (also called CMS-1450) or its electronic equivalent the 837I. The 837 formats are the HIPAA standard electronic claim transactions built on the ANSI ASC X12N standard.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cms-mln-837p-cms-1500", "cms-mln-cms-1450-837i"],
+      "status": "supported"
+    },
+    {
+      "claim": "The allowed amount is the maximum a plan will recognize for a covered service (also called eligible expense, payment allowance, or negotiated rate); reimbursement is the plan's share of that allowed amount, with the remainder assigned to the patient. In Medicare, accepting assignment means agreeing to treat the Medicare-approved amount as full payment.",
+      "claimType": "FINANCIAL",
+      "sourceIds": ["healthcaregov-glossary-allowed-amount", "medicaregov-medicare-costs-assignment"],
+      "status": "supported"
+    },
+    {
+      "claim": "A clean claim is one that can be processed without the payer obtaining additional information from the provider or a third party (Medicaid definition); the Medicare definition frames it as a claim with no defect, impropriety, or missing required documentation preventing timely payment. Medicaid rules require states to pay 90 percent of clean practitioner claims within 30 days and 99 percent within 90 days.",
+      "claimType": "LEGAL",
+      "sourceIds": ["ecfr-42-cfr-447-45-timely-claims-payment", "ecfr-42-cfr-405-902-appeals-definitions"],
+      "status": "supported"
+    },
+    {
+      "claim": "Fee-for-service pays for each coded service so revenue tracks volume; value-based and bundled models tie payment to the quality and total cost of care. In CMS's Bundled Payments for Care Improvement Advanced model, a clinical episode covered an inpatient stay or outpatient procedure plus 90 days after discharge; services were billed under fee-for-service and total episode spending was reconciled against a target price, with the provider sharing savings or owing money based on cost and quality.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cms-bpci-advanced-model", "cms-value-based-programs"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "The specific number of MS-DRGs and base DRGs changes each fiscal year.",
+      "positions": ["MedPAC's payment basics cited 767 MS-DRGs from 338 base DRGs for fiscal year 2022", "Later fiscal years use slightly different counts"],
+      "resolution": "The lesson avoids stating a specific count and instead teaches the mechanism (one grouped payment per discharge weighted by resource use), which is stable across years."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The machine-generated draft contained only generic boilerplate ('a foundational concept in Health Administration', 'a building block for later discussions') with no substantive factual claims to verify; all substance was written from primary research."
+  ],
+  "correctionsNeeded": [
+    "Replaced boilerplate placeholder text entirely with researched content on code sets, claim vehicles, money concepts, adjudication, and payment models."
+  ],
+  "rightsIssues": [
+    "CPT is owned and copyrighted by the American Medical Association; MS-DRG titles are copyrighted. Both systems are described functionally only. No CPT or MS-DRG descriptors, code numbers, or code lists are reproduced anywhere in the lesson.",
+    "All cited sources are U.S. government works (public domain) used as reference-only; the prose is original synthesis, not adapted from source wording."
+  ],
+  "sourceRecords": [
+    {
+      "id": "cms-overview-coding-classification-systems",
+      "title": "Overview of Coding and Classification Systems",
+      "provider": "Centers for Medicare & Medicaid Services (CMS)",
+      "url": "https://www.cms.gov/cms-guide-medical-technology-companies-and-other-interested-parties/coding/overview-coding-classification-systems",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Primary CMS page. Confirms ICD-10-CM (diagnoses, maintained by CDC/NCHS), ICD-10-PCS (inpatient procedures, developed/maintained by CMS), the ICD-10 Coordination and Maintenance Committee, HCPCS Level I = CPT (CPT Editorial Panel, copyrighted by AMA, six sections), HCPCS Level II = CMS (drugs/biologicals, ambulance, DMEPOS), that a code does not itself determine coverage, and the existence of NDC (FDA) and CDT (ADA). Read via curl with a browser user-agent (the plain fetcher gets HTTP 403). U.S. government work; describes but does not reproduce copyrighted CPT/DRG content."
+    },
+    {
+      "id": "cdc-nchs-icd10-cm-pcs-background",
+      "title": "ICD-10-CM/PCS Transition: Background (National Center for Health Statistics)",
+      "provider": "CDC / National Center for Health Statistics",
+      "url": "https://www.cdc.gov/nchs/icd/",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Confirms that the U.S. developed ICD-10-CM (Clinical Modification) for diagnoses from WHO's ICD-10, that CMS developed ICD-10-PCS for inpatient procedures, that these replace ICD-9-CM volumes 1-2 and volume 3 respectively, that HIPAA-covered entities produce the coded data, and that coders assign codes from documentation. Canonical NCHS ICD-10 URL registered; the current CDC page returns 403/permission errors to the fetcher, so the background text was read from the CDC archive capture at https://archive.cdc.gov/www_cdc_gov/nchs/icd/icd10cm_pcs_background.htm via curl."
+    },
+    {
+      "id": "cms-mln-837p-cms-1500",
+      "title": "Medicare Billing: 837P and Form CMS-1500 (MLN Fact Sheet)",
+      "provider": "Centers for Medicare & Medicaid Services (CMS) — Medicare Learning Network",
+      "url": "https://www.cms.gov/files/document/837p-cms-1500pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Primary CMS fact sheet. Confirms the 837P is the electronic transaction for professionals and suppliers; the CMS-1500 is the standard paper claim form when a paper claim is allowed; the current electronic version is ANSI ASC X12N 837P Version 5010A1; 837 = standard electronic claim format, P = professional; and the NUCC developed a crosswalk between the 837P and the CMS-1500. PDF read via curl with a browser user-agent and pypdf text extraction."
+    },
+    {
+      "id": "cms-mln-cms-1450-837i",
+      "title": "Medicare Billing: CMS-1450 & 837I (MLN Booklet, MLN006926)",
+      "provider": "Centers for Medicare & Medicaid Services (CMS) — Medicare Learning Network",
+      "url": "https://www.cms.gov/files/document/837i-form-cms-1450-mln006926.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Primary CMS booklet. Confirms CMS-1450 (also known as UB-04) is the standard paper claim form used by institutional providers, that the 837I is the standard electronic format institutional providers use, and that the National Uniform Billing Committee (NUBC) maintains approved coding for the form. PDF read via curl with a browser user-agent and pypdf text extraction."
+    },
+    {
+      "id": "cms-msdrg-classifications-software",
+      "title": "MS-DRG Classifications and Software",
+      "provider": "Centers for Medicare & Medicaid Services (CMS)",
+      "url": "https://www.cms.gov/medicare/payment/prospective-payment-systems/acute-inpatient-pps/ms-drg-classifications-and-software",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Canonical CMS page for MS-DRG classification maintenance. Used for the fact that CMS maintains the MS-DRG system used to group inpatient stays for IPPS payment. Confirmed via CMS search-result summary of this page; the detailed payment mechanics were read directly in the MedPAC payment-basics source below. DRG titles are copyrighted and are not reproduced."
+    },
+    {
+      "id": "medpac-payment-basics-hospital-ipps",
+      "title": "Hospital Acute Inpatient Services Payment System (Payment Basics)",
+      "provider": "Medicare Payment Advisory Commission (MedPAC)",
+      "url": "https://www.medpac.gov/wp-content/uploads/2021/11/medpac_payment_basics_21_hospital_final_sec.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "MedPAC (nonpartisan congressional advisory agency) payment-basics brief. Confirms the IPPS pays prospectively per discharge; each stay is assigned to an MS-DRG based on the principal diagnosis; each MS-DRG carries a weight; and payment reflects the base rate multiplied by the DRG weight. PDF read via curl and pypdf text extraction."
+    },
+    {
+      "id": "ecfr-42-cfr-447-45-timely-claims-payment",
+      "title": "42 CFR 447.45 — Timely claims payment (definitions of claim and clean claim; payment standards)",
+      "provider": "Electronic Code of Federal Regulations (eCFR)",
+      "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-447/subpart-A/section-447.45",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Primary regulatory text. Defines a clean claim (Medicaid) as one that can be processed without obtaining additional information from the provider or a third party, and sets timely-payment standards: 90 percent of clean practitioner claims within 30 days, 99 percent within 90 days, and a 12-month filing limit. Canonical eCFR URL registered; the eCFR host redirected the fetcher, so the section text was read via Cornell LII (https://www.law.cornell.edu/cfr/text/42/447.45)."
+    },
+    {
+      "id": "ecfr-42-cfr-405-902-appeals-definitions",
+      "title": "42 CFR 405.902 — Definitions (Medicare 'clean claim')",
+      "provider": "Electronic Code of Federal Regulations (eCFR)",
+      "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-405/subpart-I/section-405.902",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Primary regulatory text. Provides the Medicare definition of a clean claim: a claim with no defect or impropriety (including lack of required substantiating documentation) or circumstance requiring special treatment that prevents timely payment. Read via CMS/eCFR/Cornell LII search-result summary of the section."
+    },
+    {
+      "id": "healthcaregov-glossary-allowed-amount",
+      "title": "Allowed Amount — HealthCare.gov Glossary",
+      "provider": "HealthCare.gov (U.S. Centers for Medicare & Medicaid Services)",
+      "url": "https://www.healthcare.gov/glossary/allowed-amount/",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Official glossary. Defines the allowed amount as the maximum a plan will pay for a covered service (also 'eligible expense', 'payment allowance', 'negotiated rate') and defines balance billing as billing the patient for the difference between the provider's charge and the allowed amount, which a preferred provider generally may not do. Read via curl with a browser user-agent."
+    },
+    {
+      "id": "medicaregov-medicare-costs-assignment",
+      "title": "Medicare costs / Medicare-approved amount and assignment",
+      "provider": "Medicare.gov (U.S. Centers for Medicare & Medicaid Services)",
+      "url": "https://www.medicare.gov/basics/costs/medicare-costs",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Official Medicare page. Confirms the Medicare-approved amount is the payment amount Original Medicare sets for a covered service and that 'accepting assignment' means the provider agrees to that amount as full payment. Read via curl with a browser user-agent."
+    },
+    {
+      "id": "cms-bpci-advanced-model",
+      "title": "Bundled Payments for Care Improvement (BPCI) Advanced Model",
+      "provider": "CMS — Center for Medicare and Medicaid Innovation",
+      "url": "https://www.cms.gov/priorities/innovation/innovation-models/bpci-advanced",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Primary CMS Innovation Center page. Confirms bundled payment as a move away from individual fee-for-service toward a coordinated approach; a clinical episode covers an inpatient stay or outpatient procedure plus 90 days after discharge; services were billed under standard fee-for-service and total episode spending was reconciled against a target price, with the provider receiving additional payment or owing money based on cost and quality. (Model period of performance ended December 31, 2025; used as an illustrative example of the bundled-payment mechanism.) Read via curl with a browser user-agent."
+    },
+    {
+      "id": "cms-value-based-programs",
+      "title": "CMS' Value-Based Programs",
+      "provider": "Centers for Medicare & Medicaid Services (CMS)",
+      "url": "https://www.cms.gov/medicare/quality/value-based-programs",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Official CMS page framing value-based payment as rewarding quality of care rather than volume of services, in contrast to traditional fee-for-service. Read via curl with a browser user-agent."
+    }
+  ]
+}

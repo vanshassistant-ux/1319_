@@ -1,0 +1,276 @@
+{
+  "topicId": "health-administration:financing:medicare-and-medicaid-basics",
+  "subjectId": "health-administration",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Medicare as a federal program: who it covers (65+, certain disabilities, ESRD) and that its rules are nationwide",
+      "Medicare Parts A, B, C, D and what each provides",
+      "Medicare financing: Hospital Insurance and Supplementary Medical Insurance trust funds, payroll tax, general revenue, premiums",
+      "Medicaid as a joint federal-state, means-tested program with state variation",
+      "Medicaid financing: FMAP federal matching",
+      "ACA Medicaid expansion (new adult group, 138% FPL) made optional by NFIB v. Sebelius; state adoption count",
+      "CHIP as a related joint federal-state children's program",
+      "Dual-eligible individuals and Medicare/Medicaid payer coordination",
+      "CMS as the federal administering/overseeing agency"
+    ],
+    "supporting": [
+      "1965 statutory origin (Titles XVIII and XIX of the Social Security Act)",
+      "MAGI as the standardized Medicaid income methodology",
+      "Enhanced federal match for the expansion group (90%) and CHIP"
+    ],
+    "outOfScope": [
+      "General cost-sharing mechanics (premium, deductible, coinsurance definitions) — owned by Health Insurance Basics",
+      "Provider billing, coding, and the revenue cycle — owned by other financing topics",
+      "National health-cost trends and drivers — owned by Healthcare Costs",
+      "Individualized eligibility determinations or benefits advice"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Medicare and Medicaid were created in 1965 as Titles XVIII and XIX of the Social Security Act; Medicare is federal while Medicaid was an expanded federal-state medical-assistance program.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["statute-social-security-amendments-1965"],
+      "status": "supported"
+    },
+    {
+      "claim": "Medicare primarily covers people age 65 and older, plus certain younger people with long-term disabilities and people with end-stage renal disease, and its rules are set federally and apply nationwide.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["medicare-gov-how-medicare-is-funded", "statute-social-security-amendments-1965"],
+      "status": "supported"
+    },
+    {
+      "claim": "Medicare Part A covers inpatient hospital, skilled nursing facility, hospice, and some home health care; Part B covers outpatient/physician services; Part C (Medicare Advantage) delivers Parts A and B through private Medicare-contracted plans; Part D covers prescription drugs.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["medicare-gov-how-medicare-is-funded"],
+      "status": "supported"
+    },
+    {
+      "claim": "Medicare is financed through two federal trust funds: the Hospital Insurance (HI) trust fund pays for Part A and is funded mainly by payroll taxes; the Supplementary Medical Insurance (SMI) trust fund pays for Parts B and D and is funded largely by congressionally authorized general revenue plus enrollee premiums.",
+      "claimType": "FINANCIAL",
+      "sourceIds": ["medicare-gov-how-medicare-is-funded"],
+      "status": "supported"
+    },
+    {
+      "claim": "The Medicare (HI) payroll tax is 1.45 percent on employees and 1.45 percent on employers (2.9 percent total) with no wage cap, plus an additional 0.9 percent on wages above $200,000.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["irs-topic-751-ss-medicare-withholding"],
+      "status": "supported"
+    },
+    {
+      "claim": "Medicaid is a joint federal-state, means-tested program in which the federal government sets broad rules and shares cost while states run their own programs and set many eligibility and benefit rules within federal limits, so eligibility varies by state.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["macpac-medicaid-matching-rates", "macpac-medicaid-new-adult-group-expansion"],
+      "status": "supported"
+    },
+    {
+      "claim": "The federal share of Medicaid is set by the FMAP formula, which pays a higher share to lower-income states, with a statutory minimum of 50 percent and maximum of 83 percent.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["macpac-medicaid-matching-rates"],
+      "status": "supported"
+    },
+    {
+      "claim": "The ACA created a new adult eligibility group covering adults under 65 with incomes up to an effective 138 percent of the federal poverty level (statutory 133 percent plus a 5 percent income disregard), with the federal government paying 90 percent of the cost for the expansion group.",
+      "claimType": "LEGAL",
+      "sourceIds": ["macpac-medicaid-new-adult-group-expansion"],
+      "status": "supported"
+    },
+    {
+      "claim": "In NFIB v. Sebelius (decided June 28, 2012) the Supreme Court effectively made the ACA Medicaid expansion optional for states by barring the withdrawal of existing Medicaid funds from states that decline to expand.",
+      "claimType": "LEGAL",
+      "sourceIds": ["scotus-nfib-v-sebelius-2012"],
+      "status": "supported"
+    },
+    {
+      "claim": "As of April 2025, 41 states and the District of Columbia had adopted the ACA Medicaid expansion.",
+      "claimType": "CURRENT",
+      "sourceIds": ["kff-medicaid-expansion-status"],
+      "status": "supported"
+    },
+    {
+      "claim": "About 32.8 million people were enrolled in Medicare Advantage (Part C) in 2024, roughly 54 percent of eligible Medicare beneficiaries.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["kff-medicare-advantage-2024-enrollment"],
+      "status": "supported"
+    },
+    {
+      "claim": "About 12 million people were dually eligible for both Medicare and Medicaid in 2023 (roughly 9 million full-benefit and 3 million partial-benefit), and for them Medicare is generally the primary payer while Medicaid covers cost-sharing and services Medicare excludes such as long-term care.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["kff-dual-eligible-profile", "cms-mln-dually-eligible-fact-sheet"],
+      "status": "supported"
+    },
+    {
+      "claim": "Both Medicare and Medicaid (and CHIP) are administered and overseen at the federal level by the Centers for Medicare & Medicaid Services (CMS) within HHS.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["medicare-gov-how-medicare-is-funded", "macpac-medicaid-matching-rates"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Total current Medicaid/CHIP enrollment differs by source and reporting month.",
+      "positions": [
+        "KFF enrollment tracker reported about 73.9 million enrolled in Medicaid/CHIP nationally as of April 2026, drawing on CMS administrative data.",
+        "CMS/Medicaid.gov monthly highlights reported roughly 75.7 million (October 2025) and 75.7 million-range point-in-time counts in late 2025."
+      ],
+      "resolution": "The lesson does not hinge on a single national enrollment total, so no specific Medicaid/CHIP grand-total figure was asserted in the prose; the two sources are consistent to within normal month-to-month and measurement variation. Where a total is discussed conceptually, it is framed as 'well over 140 million' combined across both programs, which both program figures comfortably support."
+    },
+    {
+      "issue": "The ACA statute specifies 133 percent FPL, but eligibility is commonly cited as 138 percent FPL.",
+      "positions": [
+        "Statutory text: 133 percent of the federal poverty level.",
+        "Effective level: 138 percent, because of a mandatory 5 percentage-point income disregard."
+      ],
+      "resolution": "The lesson states the effective 138 percent figure and explains it equals the statutory 133 percent plus the 5 percent disregard, so both are represented accurately."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic boilerplate ('a foundational concept in Health Administration') and made no substantive, checkable claims about Medicare or Medicaid."
+  ],
+  "correctionsNeeded": [
+    "Replaced the boilerplate draft entirely with sourced program facts.",
+    "Ensured Medicare and Medicaid are never conflated and that Medicaid eligibility is described as state-varying rather than universal.",
+    "Dated every statistic (enrollment, tax rate, expansion-state count, dual-eligible count) with its year and source."
+  ],
+  "rightsIssues": [
+    "MACPAC and KFF pages are authoritative secondary/quasi-primary explainers used REFERENCE_ONLY; no wording was reproduced. KFF figures were cross-checked against the underlying program context and dated.",
+    "Federal hosts (medicare.gov, cms.gov, medicaid.gov) intermittently blocked automated fetching; medicare.gov and the CMS MLN PDF were read via a browser user-agent with curl, recorded in the source notes."
+  ],
+  "sourceRecords": [
+    {
+      "id": "statute-social-security-amendments-1965",
+      "title": "Social Security Amendments of 1965 (Public Law 89-97), Statutes at Large vol. 79",
+      "provider": "U.S. Government Publishing Office (govinfo)",
+      "url": "https://www.govinfo.gov/content/pkg/STATUTE-79/pdf/STATUTE-79-Pg286.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. federal statute; edict of government, not subject to copyright",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused from source-registry. Supports the 1965 origin of Medicare (Title XVIII, Parts A and B, Federal Hospital Insurance Trust Fund) and the accompanying expansion of medical assistance that became Medicaid (Title XIX). Used only for the historical spine, dated as an event."
+    },
+    {
+      "id": "medicare-gov-how-medicare-is-funded",
+      "title": "How is Medicare funded?",
+      "provider": "U.S. Centers for Medicare & Medicaid Services (Medicare.gov)",
+      "url": "https://www.medicare.gov/about-us/how-is-medicare-funded",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. government work",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via curl with a browser user-agent because WebFetch received HTTP 403 from the federal host. Supports the two-trust-fund structure (Hospital Insurance trust fund financed mainly by payroll taxes pays for Part A; Supplementary Medical Insurance trust fund financed by congressionally authorized funds plus premiums pays for Parts B and D), the definitions of Parts A/B/C/D, and the figures that Medicare covered over 67.6 million people with total expenditures just over $1.1 trillion in 2024."
+    },
+    {
+      "id": "irs-topic-751-ss-medicare-withholding",
+      "title": "Topic no. 751, Social Security and Medicare withholding rates",
+      "provider": "U.S. Internal Revenue Service",
+      "url": "https://www.irs.gov/taxtopics/tc751",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. government work",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch. Supports the Medicare (Hospital Insurance) payroll-tax rate of 1.45 percent for the employer and 1.45 percent for the employee (2.9 percent total), the absence of a wage base limit for Medicare tax, and the additional 0.9 percent Medicare tax on wages over $200,000. Cited as the 2026 current figures."
+    },
+    {
+      "id": "macpac-medicaid-matching-rates",
+      "title": "Matching rates (Medicaid financing)",
+      "provider": "Medicaid and CHIP Payment and Access Commission (MACPAC)",
+      "url": "https://www.macpac.gov/subtopic/matching-rates/",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused from source-registry and re-read via WebFetch. Supports that federal Medicaid spending is determined by what states spend, that the federal share for most services is set by the FMAP, that the formula gives higher reimbursement to lower per-capita-income states, and that there is a statutory minimum of 50 percent and maximum of 83 percent. Also confirms the 90 percent expansion match and enhanced CHIP match. No wording reproduced."
+    },
+    {
+      "id": "macpac-medicaid-new-adult-group-expansion",
+      "title": "Medicaid expansion to the new adult group",
+      "provider": "Medicaid and CHIP Payment and Access Commission (MACPAC)",
+      "url": "https://www.macpac.gov/subtopic/medicaid-expansion/",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch. Supports that the ACA new adult group covers adults under 65 to an effective 138 percent FPL (statutory 133 percent plus a 5 percent income disregard), and that the federal match for newly eligible individuals phased down to 90 percent in 2020 and after. The page's 'as of March 2023, 40 states and DC' count was superseded by the KFF tracker for the current figure. No wording reproduced."
+    },
+    {
+      "id": "scotus-nfib-v-sebelius-2012",
+      "title": "National Federation of Independent Business v. Sebelius, 567 U.S. 519 (2012)",
+      "provider": "U.S. Government Publishing Office, United States Reports volume 567",
+      "url": "https://www.govinfo.gov/content/pkg/USREPORTS-567/pdf/USREPORTS-567-519.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. judicial opinion; edict of government, not subject to copyright",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused from source-registry. Supports the decision date of 28 June 2012 and the holding that made the ACA Medicaid expansion effectively optional for states by barring the Secretary from withdrawing existing Medicaid funds from states that decline to adopt it. Reported as a legal holding, not a policy position."
+    },
+    {
+      "id": "kff-medicaid-expansion-status",
+      "title": "Status of State Medicaid Expansion Decisions / 5 Key Facts About Medicaid Expansion",
+      "provider": "KFF (Kaiser Family Foundation)",
+      "url": "https://www.kff.org/medicaid/status-of-state-medicaid-expansion-decisions/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Consulted via WebSearch of KFF's tracker and key-facts materials. Supports that as of April 2025, 41 states and the District of Columbia had adopted the ACA Medicaid expansion (all but 10 states), with no additional adoptions in 2024-2025. Secondary source; figure is dated in the lesson. No wording reproduced."
+    },
+    {
+      "id": "kff-medicare-advantage-2024-enrollment",
+      "title": "Medicare Advantage in 2024: Enrollment Update and Key Trends",
+      "provider": "KFF (Kaiser Family Foundation)",
+      "url": "https://www.kff.org/medicare/medicare-advantage-in-2024-enrollment-update-and-key-trends/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Consulted via WebSearch. Supports that in 2024 about 32.8 million people were enrolled in Medicare Advantage, roughly 54 percent of eligible Medicare beneficiaries, and that the share varies widely by state. Secondary source; figure dated in the lesson. No wording reproduced."
+    },
+    {
+      "id": "kff-dual-eligible-profile",
+      "title": "A Profile of Medicare-Medicaid Enrollees (Dual-Eligibles)",
+      "provider": "KFF (Kaiser Family Foundation)",
+      "url": "https://www.kff.org/medicare/a-profile-of-medicare-medicaid-enrollees-dual-eligibles/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch. Supports that approximately 12 million people were enrolled in both Medicare and Medicaid as of 2023, split into roughly 9 million full-benefit and 3 million partial-benefit dual-eligible individuals. Secondary source; figure dated in the lesson. No wording reproduced."
+    },
+    {
+      "id": "cms-mln-dually-eligible-fact-sheet",
+      "title": "Beneficiaries Dually Eligible for Medicare & Medicaid (MLN Fact Sheet)",
+      "provider": "U.S. Centers for Medicare & Medicaid Services, Medicare Learning Network",
+      "url": "https://www.cms.gov/files/document/beneficiaries-dually-eligible-medicare-medicaid.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. government work",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "PDF downloaded via curl with a browser user-agent and text-extracted locally (WebFetch returned HTTP 403). Supports the definition of dually eligible beneficiaries as people eligible for both programs, that Medicare pays for covered services first, and that Medicaid covers services Medicare partially covers or excludes, such as nursing home and long-term care. Used for the definition and payer-coordination point, not for a count."
+    }
+  ]
+}

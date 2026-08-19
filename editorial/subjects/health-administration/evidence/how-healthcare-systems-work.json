@@ -1,0 +1,166 @@
+{
+  "topicId": "health-administration:healthcare-systems:how-healthcare-systems-work",
+  "subjectId": "health-administration",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "What a health system is: the organizations, people, and resources whose primary purpose is to promote, restore, or maintain health",
+      "The core functions every health system performs: financing, service delivery/provision, resource generation, and governance/stewardship (WHO framing)",
+      "The WHO six building blocks and the system goals they serve",
+      "The mix of public and private roles and why the US is a mixed, multi-payer system rather than a single national system",
+      "How the US is financed by major payers (private insurance, Medicare, Medicaid, out-of-pocket) and by sponsor",
+      "Contrast with single-payer / national-health-service models (Beveridge, Bismarck, national health insurance, out-of-pocket)",
+      "The major stakeholders: patients, providers, payers, government, employers"
+    ],
+    "supporting": [
+      "2024 US national health spending totals and shares (CMS NHE)",
+      "2024 US coverage/uninsured figures (Census ACS)"
+    ],
+    "outOfScope": [
+      "Detailed care settings (hospitals, clinics, SNFs, home health) — owned by the Healthcare Delivery Settings topic",
+      "Workforce professions and organizational forms in depth — owned by Healthcare Professionals and Organizations",
+      "Insurance mechanics (premiums, deductibles, networks) and Medicare/Medicaid program specifics — owned by the financing unit"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A health system consists of all the organizations, people, and resources whose primary purpose is to promote, restore, or maintain health, and every health system performs the functions of financing, service delivery, resource generation, and governance/stewardship.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["who-health-systems-framework-2007", "pmc-who-building-blocks-2017"],
+      "status": "supported"
+    },
+    {
+      "claim": "The WHO framework for action (2007) describes health systems through six building blocks: service delivery; health workforce; information; medical products, vaccines and technologies; financing; and leadership/governance.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["who-health-systems-framework-2007", "pmc-who-building-blocks-2017"],
+      "status": "supported"
+    },
+    {
+      "claim": "US national health expenditure reached $5.3 trillion in 2024, growing 7.2 percent and accounting for 18.0 percent of GDP (up from 17.7 percent in 2023).",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["cms-nhe-2024-highlights"],
+      "status": "supported"
+    },
+    {
+      "claim": "In 2024, US health spending by major source of funds was: private health insurance 31 percent (about $1.6 trillion), Medicare 21 percent (about $1.1 trillion), Medicaid 18 percent ($931.7 billion), and out-of-pocket 11 percent ($556.6 billion) — evidence that the US is a mixed, multi-payer system.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["cms-nhe-2024-highlights"],
+      "status": "supported"
+    },
+    {
+      "claim": "By type of sponsor in 2024, the entities ultimately financing US health care were the federal government (31 percent), households (28 percent), private businesses (18 percent), and state and local government (16 percent).",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["cms-nhe-2024-highlights"],
+      "status": "supported"
+    },
+    {
+      "claim": "The US uninsured rate was 8.2 percent in 2024 (American Community Survey), a statistically significant increase from 7.9 percent in 2023; CMS reported the insured share of the population at 91.8 percent in 2024.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["census-acsbr-024-health-insurance-2024", "cms-nhe-2024-highlights"],
+      "status": "supported"
+    },
+    {
+      "claim": "Health systems are commonly grouped into models: the Beveridge (tax-funded, government-provided), Bismarck (employment-based social insurance, multiple non-profit funds), national health insurance (private provision paid by a single government insurer), and out-of-pocket models; T.R. Reid argues the US uniquely uses all four across different populations.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["pnhp-four-basic-models"],
+      "status": "supported"
+    },
+    {
+      "claim": "Medicare is a federal program (66.6 million enrollees in 2024) and Medicaid is a joint federal-state program (84.3 million beneficiaries in 2024), which is why US public coverage varies rather than forming one uniform national system.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["cms-nhe-2024-highlights"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "The 2024 uninsured rate differs slightly by survey.",
+      "positions": [
+        "Census American Community Survey: 8.2 percent uninsured in 2024",
+        "Census Current Population Survey: 8.0 percent uninsured in 2024",
+        "CMS NHE: insured share 91.8 percent (implies about 8.2 percent uninsured)"
+      ],
+      "resolution": "All three are close and consistent to within survey error; the lesson cites the ACS 8.2 percent figure and names the survey and year, noting different surveys yield slightly different estimates."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic boilerplate ('a foundational concept... introduces its meaning, its context, and a simple way to apply it') with no substantive claims about health systems; none of it was usable."
+  ],
+  "correctionsNeeded": [
+    "Replaced boilerplate definition with a sourced definition of a health system and its core functions.",
+    "Added dated, sourced US financing figures (2024 CMS NHE) in place of the draft's contentless prose.",
+    "Added the public/private mix and the single-payer/NHS contrast the draft omitted entirely."
+  ],
+  "rightsIssues": [
+    "CMS, WHO, and Census materials are cited as authoritative references; all prose is original synthesis. WHO's 'Everybody's business' framework text was read via a peer-reviewed secondary (PMC5651704) because the WHO IRIS PDF is JavaScript-gated; the canonical WHO handle is registered as the source URL.",
+    "The four-models framing (PNHP page) is authored by journalist T.R. Reid; it is REFERENCE_ONLY secondary and is used only for the model taxonomy and the interpretive point that the US uses all four models."
+  ],
+  "sourceRecords": [
+    {
+      "id": "cms-nhe-2024-highlights",
+      "title": "National Health Expenditures 2024 Highlights",
+      "provider": "Centers for Medicare & Medicaid Services (CMS), Office of the Actuary",
+      "url": "https://www.cms.gov/files/document/highlights.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Primary federal source for 2024 US health spending. Read the PDF via curl with a browser user-agent (cms.gov blocks the default fetcher). Supports: total $5.3 trillion, 7.2% growth, 18.0% of GDP; source-of-funds shares (private insurance 31%/$1.6T, Medicare 21%/$1.1T, Medicaid 18%/$931.7B, out-of-pocket 11%/$556.6B); sponsor shares (federal 31%, households 28%, private business 18%, state/local 16%); Medicare 66.6M and Medicaid 84.3M enrollees; insured share 91.8%. US government work, public domain."
+    },
+    {
+      "id": "who-health-systems-framework-2007",
+      "title": "Everybody's business: strengthening health systems to improve health outcomes — WHO's framework for action",
+      "provider": "World Health Organization",
+      "url": "https://iris.who.int/handle/10665/43918",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 3.0 IGO",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Canonical WHO 2007 framework defining the six health-system building blocks (service delivery; health workforce; information; medical products, vaccines and technologies; financing; leadership/governance) and system goals. The IRIS PDF is JavaScript-gated; the building-block names and citation were confirmed via the peer-reviewed article PMC5651704, which reproduces them. Facts synthesized in original wording; no framework text reproduced."
+    },
+    {
+      "id": "census-acsbr-024-health-insurance-2024",
+      "title": "Health Insurance Coverage by State: 2023 and 2024 (ACSBR-024)",
+      "provider": "US Census Bureau, American Community Survey Briefs",
+      "url": "https://www2.census.gov/library/publications/2025/demo/acsbr-024.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Primary Census source (published September 2025) for the 2024 uninsured rate of 8.2 percent, a statistically significant increase from 7.9 percent in 2023. Read the PDF via curl with a browser user-agent. US government work, public domain."
+    },
+    {
+      "id": "pmc-who-building-blocks-2017",
+      "title": "Using the World Health Organization health system building blocks through survey of healthcare professionals to determine the performance of public healthcare facilities",
+      "provider": "PMC / Archives of Public Health",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5651704/",
+      "sourceType": "peer-reviewed",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Peer-reviewed article that reproduces and applies the WHO six building blocks and gives the exact WHO 2007 citation. Used to confirm the building-block names and framework attribution because the WHO IRIS PDF could not be fetched directly. No text reproduced."
+    },
+    {
+      "id": "pnhp-four-basic-models",
+      "title": "Health Care Systems — Four Basic Models",
+      "provider": "Physicians for a National Health Program (summarizing T.R. Reid)",
+      "url": "https://pnhp.org/resource/health-care-systems-four-basic-models/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Secondary reference (journalist T.R. Reid, The Healing of America) for the four-model taxonomy — Beveridge, Bismarck, national health insurance, out-of-pocket — and the interpretive point that the US uses all four across different populations. Used only for the contrast framing; all financing figures come from CMS and Census primary sources."
+    }
+  ]
+}

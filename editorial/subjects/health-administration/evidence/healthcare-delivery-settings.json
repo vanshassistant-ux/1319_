@@ -1,0 +1,249 @@
+{
+  "topicId": "health-administration:healthcare-systems:healthcare-delivery-settings",
+  "subjectId": "health-administration",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "The continuum of settings where care is delivered, ordered roughly by acuity, and what distinguishes them (acuity of illness, clinical function, and the payment context that pays for each)",
+      "Primary care as first-contact, continuous, comprehensive care, using the Institute of Medicine (1996) functional definition",
+      "Ambulatory / outpatient care: physician offices, clinics, hospital outpatient departments, ambulatory surgery centers (ASCs), and urgent care",
+      "Ambulatory surgical center defined at 42 CFR 416.2 (surgery for patients not requiring hospitalization, expected duration under 24 hours)",
+      "Acute care hospitals and the hospital emergency department as the setting for inpatient and emergency care",
+      "Specialty and tertiary / quaternary care as escalating levels of specialization",
+      "Post-acute and long-term care: skilled nursing facilities (SNFs), inpatient rehabilitation facilities (IRFs), and long-term care hospitals (LTCHs)",
+      "Long-term care hospital defined by an average Medicare inpatient length of stay greater than 25 days (42 CFR 412.23(e))",
+      "Home health care delivered in the patient's residence",
+      "Hospice and palliative care",
+      "Behavioral health settings across an inpatient-to-outpatient continuum",
+      "Telehealth / virtual care as a mode of delivery cutting across settings",
+      "The levels-of-care framework: primary, secondary, tertiary, quaternary"
+    ],
+    "supporting": [
+      "The inpatient vs. outpatient (observation) distinction and why it matters for what counts as a setting",
+      "The Medicare 3-day qualifying inpatient hospital stay as an example of how payment rules attach to settings"
+    ],
+    "outOfScope": [
+      "The overall structure and financing model of the U.S. health system (owned by 'How Healthcare Systems Work')",
+      "Profiles of the health professions, workforce, and organizational ownership forms (owned by 'Healthcare Professionals and Organizations')",
+      "Insurance and billing mechanics, coding systems, and eligibility rules",
+      "Individualized clinical, diagnostic, or benefits advice"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Care is delivered across a continuum of settings that differ in the acuity of illness they handle, their clinical function, and the payment context that reimburses them.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["medlineplus-health-facilities", "medicare-snf-care-coverage", "keiser-levels-of-patient-care"],
+      "status": "supported"
+    },
+    {
+      "claim": "Ambulatory (outpatient) care is care for patients who are not admitted for an overnight stay, delivered in settings such as physician offices, clinics, hospital outpatient centers, and specialized centers.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["medlineplus-health-facilities", "ecfr-42-cfr-416-2-asc-definition"],
+      "status": "supported"
+    },
+    {
+      "claim": "Under 42 CFR 416.2, an ambulatory surgical center is a distinct entity operating exclusively to provide surgical services to patients not requiring hospitalization, where the expected duration of services would not exceed 24 hours following an admission.",
+      "claimType": "LEGAL",
+      "sourceIds": ["ecfr-42-cfr-416-2-asc-definition"],
+      "status": "supported"
+    },
+    {
+      "claim": "Medicare describes skilled care as nursing and therapy care that can only be safely and effectively performed by, or under the supervision of, professional or technical personnel, and defines a skilled nursing facility as a nursing facility with the staff and equipment to give skilled nursing care and usually skilled rehabilitative services.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["medicare-snf-care-coverage"],
+      "status": "supported"
+    },
+    {
+      "claim": "Medicare coverage of a skilled nursing facility stay generally requires a qualifying inpatient hospital stay of at least 3 days in a row, and time spent under observation or in the emergency department before formal inpatient admission does not count toward it.",
+      "claimType": "LEGAL",
+      "sourceIds": ["medicare-snf-care-coverage"],
+      "status": "supported"
+    },
+    {
+      "claim": "A long-term care hospital is classified under 42 CFR 412.23(e) by having an average Medicare inpatient length of stay greater than 25 days; the same regulation separately classifies rehabilitation hospitals/units and psychiatric hospitals.",
+      "claimType": "LEGAL",
+      "sourceIds": ["ecfr-42-cfr-412-23-hospital-classifications"],
+      "status": "supported"
+    },
+    {
+      "claim": "Home health is a range of skilled health care services delivered in the patient's own home for an illness or injury, and Medicare covers it for eligible patients who are largely confined to home and need intermittent skilled care.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["medicare-home-health-coverage"],
+      "status": "supported"
+    },
+    {
+      "claim": "Hospice is end-of-life care for people with illnesses that cannot be cured, organized around a plan of care set by the patient, family, and hospice team.",
+      "claimType": "HEALTH",
+      "sourceIds": ["medicare-hospice-coverage"],
+      "status": "supported"
+    },
+    {
+      "claim": "Telehealth is medical or health services delivered by a provider located elsewhere using audio and video communication technology, or audio-only communication in some cases, and can include office visits, psychotherapy, consultations, e-visits, and virtual check-ins.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["medicare-telehealth-coverage"],
+      "status": "supported"
+    },
+    {
+      "claim": "The Institute of Medicine (1996) defines primary care as the provision of integrated, accessible health care services by clinicians accountable for addressing a large majority of personal health care needs, developing a sustained partnership with patients, and practicing in the context of family and community.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["iom-1996-primary-care-definition"],
+      "status": "supported"
+    },
+    {
+      "claim": "A levels-of-care framework ranks care by specialization and complexity: primary (first-contact, generalist), secondary (specialist, usually by referral), tertiary (highly specialized, complex hospital care), and quaternary (rare, advanced, or experimental care offered at a limited number of centers).",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["keiser-levels-of-patient-care", "iom-1996-primary-care-definition"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether 'ambulatory care' and 'outpatient care' are strictly synonymous.",
+      "positions": [
+        "Common usage treats them as interchangeable: care without an overnight admission.",
+        "Some administrative usage reserves 'outpatient' for hospital-based departments and 'ambulatory' for free-standing settings."
+      ],
+      "resolution": "The lesson treats them as effectively synonymous for the introductory levels framework, while noting that the defining feature is the absence of an inpatient admission, not the building."
+    },
+    {
+      "issue": "Whether the 3-hour intensive-therapy expectation and the 60% compliance threshold belong in a definition of an inpatient rehabilitation facility.",
+      "positions": [
+        "Those thresholds are widely cited features of IRFs.",
+        "They are set in CMS coverage and classification policy (Benefit Policy Manual and 42 CFR 412.29), not in the 412.23 hospital-classification text this lesson cites."
+      ],
+      "resolution": "The lesson describes IRFs functionally as providing intensive inpatient rehabilitation and does not assert the specific 3-hour or 60% figures as verified from the cited regulation."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic boilerplate ('Healthcare Delivery Settings is a foundational concept...') with no factual claims about actual care settings; all of it was discarded."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire boilerplate draft with sourced descriptions of each setting.",
+    "Added the levels-of-care framework and precise regulatory definitions for ASCs and LTCHs that the draft lacked.",
+    "Kept payment context at a high level (acuity/function/who-pays) to avoid crossing into billing mechanics owned by other topics."
+  ],
+  "rightsIssues": [
+    "MedlinePlus, Medicare.gov, and the eCFR are U.S. government works used as REFERENCE_ONLY; facts were synthesized and rewritten in original prose, not copied.",
+    "The Keiser University article is a secondary university source used REFERENCE_ONLY to confirm the four-tier terminology; no wording was reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "medlineplus-health-facilities",
+      "title": "Health Facilities",
+      "provider": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/healthfacilities.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch. Supports that health facilities are places that provide health care and names facility types (hospitals, clinics, outpatient care centers, specialized/psychiatric/birthing centers, skilled nursing and rehabilitation facilities). Used for framing the continuum; definitions synthesized, no wording copied."
+    },
+    {
+      "id": "medicare-snf-care-coverage",
+      "title": "Skilled Nursing Facility (SNF) Care Coverage",
+      "provider": "Medicare.gov (Centers for Medicare & Medicaid Services)",
+      "url": "https://www.medicare.gov/coverage/skilled-nursing-facility-snf-care",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via curl with a browser user-agent (WebFetch of medicare.gov was blocked 403). Supports the definition of skilled care and of a skilled nursing facility, the 3-day qualifying inpatient hospital stay, and that observation/ED time before inpatient admission does not count. Facts restated in original prose."
+    },
+    {
+      "id": "medicare-home-health-coverage",
+      "title": "Home Health Services Coverage",
+      "provider": "Medicare.gov (Centers for Medicare & Medicaid Services)",
+      "url": "https://www.medicare.gov/coverage/home-health-services",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via curl with a browser user-agent. Supports that home health is a range of health care services delivered in the patient's home for an illness or injury to help recover, maintain function, or slow decline, and is usually less costly than hospital or SNF care."
+    },
+    {
+      "id": "medicare-hospice-coverage",
+      "title": "Hospice Care Coverage",
+      "provider": "Medicare.gov (Centers for Medicare & Medicaid Services)",
+      "url": "https://www.medicare.gov/coverage/hospice-care",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via curl with a browser user-agent. Supports that hospice is end-of-life care for people with illnesses that can't be cured and that a plan of care is set with the hospice team. Used for the hospice/palliative section."
+    },
+    {
+      "id": "medicare-telehealth-coverage",
+      "title": "Telehealth Insurance Coverage",
+      "provider": "Medicare.gov (Centers for Medicare & Medicaid Services)",
+      "url": "https://www.medicare.gov/coverage/telehealth",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via curl with a browser user-agent. Supports that telehealth uses audio and video (or audio-only in some cases) communication technology to deliver services from a provider located elsewhere, and can include office visits, psychotherapy, consultations, e-visits, and virtual check-ins."
+    },
+    {
+      "id": "ecfr-42-cfr-412-23-hospital-classifications",
+      "title": "42 CFR 412.23 - Excluded hospitals: Classifications",
+      "provider": "Electronic Code of Federal Regulations (eCFR)",
+      "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-412/subpart-B/section-412.23",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the current eCFR HTML via curl. Supports that a long-term care hospital is classified by an average Medicare inpatient length of stay greater than 25 days (paragraph (e)), and that the section separately classifies rehabilitation hospitals/units and psychiatric hospitals. Regulatory text described, not reproduced."
+    },
+    {
+      "id": "ecfr-42-cfr-416-2-asc-definition",
+      "title": "42 CFR 416.2 - Definitions (ASC)",
+      "provider": "Electronic Code of Federal Regulations (eCFR)",
+      "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-416/subpart-A/section-416.2",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the current eCFR HTML via curl. Confirms the regulatory definition: an ASC is a distinct entity operating exclusively to provide surgical services to patients not requiring hospitalization, with expected duration of services not exceeding 24 hours following an admission."
+    },
+    {
+      "id": "iom-1996-primary-care-definition",
+      "title": "Primary Care: America's Health in a New Era (1996), Summary",
+      "provider": "Institute of Medicine / National Academies (via NCBI Bookshelf)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK232646/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch. Supplies the IOM committee's functional definition of primary care (integrated, accessible services; clinicians accountable for a large majority of needs; sustained partnership; family and community context) and the point that primary care is defined by function rather than by profession."
+    },
+    {
+      "id": "keiser-levels-of-patient-care",
+      "title": "Understanding Primary, Secondary, Tertiary & Quaternary Levels of Patient Care",
+      "provider": "Keiser University",
+      "url": "https://www.keiseruniversity.edu/articles/primary-secondary-tertiary-and-quaternary-understanding-levels-of-patient-care/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Secondary university explainer read via WebSearch result summary. Used only to confirm the standard four-tier terminology (primary/secondary/tertiary/quaternary) and the escalating-specialization ordering; descriptions rewritten in original prose and cross-checked against the IOM definition of primary care."
+    }
+  ]
+}

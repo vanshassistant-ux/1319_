@@ -1,0 +1,155 @@
+# Healthcare Professionals and Organizations
+
+## In 30 Seconds
+
+American healthcare is delivered by a layered workforce and by several distinct organizational forms. Physicians (MD and DO), registered and advanced practice nurses, physician assistants, pharmacists, allied health professionals, and managers each work under state-defined licensure and scope of practice. They are employed by hospitals of different ownership types, physician group practices, community health centers, and networks. A hospital is governed by a board, an organized medical staff, and executive administration working together.
+
+## Why This Matters
+
+Administrators cannot manage what they cannot name. Knowing which professionals hold which credentials, and how each organizational form is owned and governed, is the groundwork for staffing, contracting, compliance, and payment work later in the program. Ownership type shapes tax status, mission, and accountability; scope of practice shapes who may legally do what; and the board–medical staff–administration structure determines who decides. Employers and policymakers also watch these workforce categories closely: several clinical roles are among the fastest-growing occupations the Bureau of Labor Statistics tracks, which drives recruitment, training pipelines, and the redesign of care teams.
+
+## Learning Objectives
+
+- Distinguish the major clinical professions (MD vs DO physicians, RNs, advanced practice nurses, physician assistants, pharmacists, and allied health roles) by their credential and typical entry-level education.
+- Define licensure and scope of practice and explain why both are set at the state level.
+- Compare hospital ownership types (nongovernment not-for-profit, investor-owned for-profit, and government) and identify other organizational forms including group practices, FQHCs, integrated delivery networks, academic medical centers, and ACOs.
+- Explain the three-part governance structure of a hospital (governing body, organized medical staff, executive administration) and how the parts relate.
+- Apply these categories to classify a described professional or organization correctly.
+
+## The College Version
+
+### The clinical workforce and its credentials
+
+Healthcare is labor-intensive, and the people who deliver it are separated less by job title than by credential and legal authority. Physicians hold one of two doctoral degrees: the MD (Doctor of Medicine) or the DO (Doctor of Osteopathic Medicine). The Bureau of Labor Statistics describes both as physicians who use the same methods of treatment, including drugs and surgery; DOs receive additional training emphasizing the body's musculoskeletal system, preventive medicine, and whole-person care, and are disproportionately found in primary care. Both complete medical school and a residency, and every state requires physicians to be licensed. Physicians and surgeons numbered about 839,000 in 2024.
+
+Nursing is the largest clinical profession. Registered nurses (RNs) enter through a bachelor's degree, an associate degree, or a diploma program, then must be licensed by their state, which requires passing a national examination. RNs held roughly 3,391,000 jobs in 2024, making them the backbone of hospital and clinic staffing. Above the RN sits the advanced practice registered nurse (APRN), a category that includes nurse practitioners, nurse anesthetists, and nurse midwives; these roles require a master's degree and, depending on state law, may diagnose conditions and prescribe. BLS grouped these advanced roles at about 382,700 jobs in 2024 and projected 35 percent growth through 2034, among the fastest of any occupation.
+
+Physician assistants (also called physician associates, PAs) complete a master's-level program and practice medicine in collaboration with physicians; they numbered about 162,700 in 2024. Pharmacists earn a Doctor of Pharmacy (PharmD) and are licensed to dispense medications and counsel on their use, at roughly 335,100 jobs. Beyond these are the allied health professions, a broad family that includes physical, occupational, and respiratory therapists; radiologic and laboratory technologists; and many technicians. "Technologist" and "technician" are not interchangeable: technologists generally hold more education and perform more complex work than technicians.
+
+### Licensure and scope of practice
+
+Two concepts govern who may legally do what. Licensure is government permission to practice a profession, granted when a person meets education, examination, and character requirements. Scope of practice is the set of activities a license actually authorizes. Both are defined by state law, not by the federal government, which is why a nurse practitioner may prescribe independently in one state but only under a physician agreement in another. Employers layer their own privileges on top of the license: a hospital decides, through credentialing, which specific procedures a given practitioner may perform in that building. Understanding scope of practice is central to administration because assigning work outside a person's legal scope exposes the organization to liability, and because expanding scope is a recurring policy lever for addressing workforce shortages. This lesson teaches the concept, not legal advice; the exact scope for any role is whatever the relevant state's practice act says.
+
+### Organizational forms and ownership
+
+The same professionals work inside very different organizations. Hospitals are classified first by ownership. Using American Hospital Association figures from its 2024 annual survey, the United States had about 6,100 hospitals, of which 5,121 were community hospitals. Of those community hospitals, 2,984 were nongovernment not-for-profit, 1,224 were investor-owned (for-profit), and 913 were owned by state or local government; a further 210 hospitals were run by the federal government. Not-for-profit hospitals are exempt from most taxes in exchange for a community-benefit obligation; for-profit hospitals answer to investors and pay taxes; public hospitals are owned by a government body and often serve as safety-net providers.
+
+Outside the hospital, physicians frequently organize into group practices, which range from single-specialty partnerships to large multispecialty groups. Community health centers, most of them federally qualified health centers (FQHCs) funded under Section 330 of the Public Health Service Act, deliver primary care in medically underserved areas on a sliding fee scale. An academic medical center pairs a teaching hospital with a medical school and faculty practice, adding research and training to patient care. An integrated delivery network (or system) is a group of hospitals, physician practices, and other providers under common ownership or contract that spans several levels of care. A newer form, the accountable care organization (ACO), is not a building but an agreement: under the Medicare Shared Savings Program, groups of doctors, hospitals, and other providers collaborate to coordinate care for Medicare patients and may share in the savings when they hold down cost while meeting quality targets.
+
+### How a hospital is governed
+
+Hospital governance is often described as a three-legged stool: the board of directors, the organized medical staff, and executive administration. Federal Medicare Conditions of Participation make this concrete. Under 42 CFR 482.12, a hospital must have an effective governing body that is legally responsible for the conduct of the hospital; that body appoints members of the medical staff after considering the medical staff's own recommendations, approves the medical staff bylaws, and appoints a chief executive officer who is responsible for managing the hospital. Under 42 CFR 482.22, the hospital must have an organized medical staff that operates under bylaws approved by the governing body and is accountable to that body for the quality of medical care; the medical staff is composed of doctors of medicine or osteopathy. So the board holds ultimate legal responsibility and sets policy, the administration led by the CEO runs day-to-day operations, and the medical staff, though largely made up of independent practitioners rather than employees, self-governs clinical quality under bylaws the board approves. FQHCs are governed differently: their board must have between 9 and 25 members, and at least 51 percent of them must be patients served by the health center, which keeps the organization accountable to the community it serves. The point across all these forms is that authority is deliberately divided among people with different expertise, and administration is one leg of that structure rather than the whole of it.
+
+## Key Vocabulary
+
+- **MD (Doctor of Medicine) and DO (Doctor of Osteopathic Medicine):** The two degrees that qualify a person as a physician in the United States. Both complete medical school, a residency, and state licensure and may practice in any specialty; DO training adds emphasis on the musculoskeletal system, prevention, and whole-person care.
+- **Advanced practice registered nurse (APRN):** A registered nurse with graduate (master's or doctoral) education in a role such as nurse practitioner, nurse anesthetist, or nurse midwife, who may diagnose and prescribe to the extent state law allows.
+- **Physician assistant / associate (PA):** A clinician educated in a master's-level program who practices medicine in collaboration with physicians, including examining patients, ordering tests, and prescribing.
+- **Allied health professional:** A clinical worker who is neither a physician, nurse, nor pharmacist, such as a physical or respiratory therapist, radiologic technologist, or laboratory technician. Technologists typically hold more education than technicians.
+- **Licensure:** Government permission to practice a profession, granted after a person meets education, examination, and character requirements; issued and defined by each state.
+- **Scope of practice:** The range of activities a professional license legally authorizes a person to perform, defined by state practice acts and varying from state to state.
+- **Federally qualified health center (FQHC):** A community-based provider funded under Section 330 of the Public Health Service Act to deliver primary care in underserved areas on a sliding fee scale, governed by a board on which patients hold a majority of seats.
+- **Integrated delivery network (IDN):** A group of hospitals, physician practices, and other providers under common ownership or contract that together deliver care across multiple levels and settings.
+- **Accountable care organization (ACO):** A voluntary group of doctors, hospitals, and other providers that agrees to coordinate care for a defined patient population and may share in savings when it meets quality and cost targets, as in the Medicare Shared Savings Program.
+- **Organized medical staff:** The self-governing body of physicians (and, where applicable, other practitioners) that operates under bylaws approved by the hospital's governing body and is accountable to that body for the quality of medical care.
+
+## Eli-10
+
+A hospital is like a busy airport. Lots of specialists keep it running, and each one is only allowed to do certain jobs. Doctors (the MD and DO kinds) and nurses and pharmacists all had to earn a license from their state, which is like a permit that says exactly what they are allowed to do. That permit is their scope of practice. The buildings themselves come in different types too: some are charities that pay no taxes, some are companies owned by investors, and some belong to the government. And no single person runs the whole hospital. A board of directors sits at the top and makes the big rules, the administrators run the daily operations, and the doctors govern themselves on questions of medical quality.
+
+## Eli's Analogy
+
+Think of a hospital like a school district. The elected school board sets policy and hires the superintendent; the superintendent and principals run the buildings each day; and the teachers, who are the experts in the classroom, decide how to teach. Board, administration, teachers — three groups sharing control — is the same shape as a hospital's board, administration, and medical staff.
+
+**Where the analogy breaks down:** teachers are employees of the district, but a hospital's medical staff are often independent practitioners who admit patients there without being on the payroll, so the medical staff has more independence than schoolteachers usually do.
+
+## Worked Example
+
+Classify each of these. A clinic advertises for a provider with a master's degree who can diagnose and prescribe under a collaborative agreement with a physician: that is a physician assistant or a nurse practitioner — an APRN — not a physician, because the entry credential is a master's rather than an MD or DO. The clinic itself is a nonprofit that receives Section 330 funding, serves an underserved neighborhood on a sliding fee scale, and is governed by a board that is majority patients: that is a federally qualified health center. It then joins with several doctors, a hospital, and a lab that agree to coordinate care for their Medicare patients and share in any savings: that arrangement is an accountable care organization. Notice that the FQHC is an employer you can point to, while the ACO is a contract linking separate organizations rather than a place.
+
+## Common Mistakes
+
+- **Mistake:** Believing a DO is a lesser credential than an MD, or that DOs cannot perform surgery or specialize.
+  **Correction:** MD and DO are both full physician degrees. Both are licensed, complete residencies, and may enter any specialty; DO training simply adds an emphasis on the musculoskeletal system and whole-person care.
+- **Mistake:** Thinking scope of practice is set nationally, so a role does the same things everywhere.
+  **Correction:** Licensure and scope of practice are defined by each state. A nurse practitioner may practice independently in one state and only under physician oversight in another.
+- **Mistake:** Assuming "nonprofit" hospital means it cannot earn a surplus or that most U.S. hospitals are for-profit.
+  **Correction:** Nonprofit hospitals can and do run surpluses; they simply reinvest them and accept a community-benefit obligation in exchange for tax exemption. Nongovernment not-for-profit hospitals are the single largest ownership group among U.S. community hospitals.
+- **Mistake:** Picturing the CEO or administrator as the top of the hospital with final authority.
+  **Correction:** The governing body (board) holds ultimate legal responsibility and appoints the CEO. Administration is one leg of a three-legged structure alongside the board and the organized medical staff.
+- **Mistake:** Treating an ACO or integrated delivery network as a type of hospital.
+  **Correction:** Neither is a building. An IDN is a network of providers under common ownership or contract, and an ACO is a voluntary agreement among providers to coordinate care and share savings.
+
+## Compare / Contrast
+
+- **Registered nurse (RN) vs. Advanced practice registered nurse (APRN):** An RN enters through a bachelor's, associate, or diploma program; an APRN adds graduate education and, within state limits, may diagnose and prescribe.
+- **Nongovernment not-for-profit hospital vs. Investor-owned (for-profit) hospital:** The nonprofit is tax-exempt and carries a community-benefit obligation; the for-profit is owned by investors, distributes earnings, and pays taxes.
+- **Governing body (board) vs. Organized medical staff:** The board holds ultimate legal responsibility and approves the medical staff bylaws; the medical staff self-governs clinical quality under those bylaws and is accountable to the board.
+- **Integrated delivery network (IDN) vs. Accountable care organization (ACO):** An IDN is a set of providers under shared ownership or contract delivering care across settings; an ACO is a voluntary coordination-and-shared-savings agreement, often among otherwise separate organizations.
+
+## Key Takeaway
+
+The healthcare workforce is organized by credential and by state-defined scope of practice, and the organizations that employ it differ by ownership and by governance — most visibly the hospital's three-legged division of authority among board, administration, and organized medical staff.
+
+## Practice Question Bank
+
+1. **How do the MD and DO degrees compare in the United States?**
+   - A. Both are full physician degrees whose holders are licensed and may practice in any specialty, with DO training adding emphasis on the musculoskeletal system and whole-person care
+   - B. The MD is a physician degree, while the DO permits only assisting a physician and cannot lead to surgery
+   - C. The DO is an advanced nursing degree, while the MD is the only true physician degree
+   - D. They are identical degrees awarded by different accreditors, with no difference in training emphasis
+
+   **Answer: A.** BLS describes MDs and DOs as physicians who use the same methods of treatment, including drugs and surgery; both are licensed and may enter any specialty, and DO training adds emphasis on the musculoskeletal system, prevention, and whole-person care.
+
+2. **A nurse practitioner can prescribe independently in one state but only under a physician agreement in a neighboring state. This difference exists because scope of practice is:**
+   - A. Set by each hospital's medical staff bylaws and therefore identical across a state
+   - B. Defined by state law, which varies from state to state
+   - C. Fixed nationally by the Bureau of Labor Statistics
+   - D. Determined by the individual practitioner's preference
+
+   **Answer: B.** Licensure and scope of practice are established by state practice acts, so the same role's legal authority differs across states.
+
+3. **A defining governance requirement of a federally qualified health center (FQHC) is that its board:**
+   - A. Must be appointed entirely by the state Medicaid agency
+   - B. Is prohibited from including anyone who receives care at the center
+   - C. Must have a majority (at least 51 percent) of members who are patients served by the center
+   - D. Consists only of the physicians on the medical staff
+
+   **Answer: C.** HRSA rules require an FQHC governing board of 9 to 25 members, at least 51 percent of whom are patients served by the center, keeping it accountable to the community.
+
+4. **Under Medicare's Conditions of Participation, which body appoints the members of a hospital's medical staff and hires the chief executive officer?**
+   - A. The organized medical staff, acting through its bylaws committee
+   - B. The state licensing board that certifies the hospital
+   - C. The chief executive officer, who then reports to the medical staff
+   - D. The governing body, which is legally responsible for the conduct of the hospital
+
+   **Answer: D.** 42 CFR 482.12 makes the governing body legally responsible for the hospital: it appoints medical staff members (after considering the medical staff's recommendations) and appoints a CEO responsible for managing the hospital.
+
+5. **Using American Hospital Association data from its 2024 survey, which ownership category accounts for the largest share of U.S. community hospitals?**
+   - A. Nongovernment not-for-profit hospitals
+   - B. Investor-owned (for-profit) hospitals
+   - C. Federal government hospitals
+   - D. State and local government hospitals
+
+   **Answer: A.** Of about 5,121 community hospitals, 2,984 were nongovernment not-for-profit, far more than the 1,224 investor-owned and 913 state/local government community hospitals; federal hospitals (210) are counted separately and are not community hospitals.
+
+## Sources
+
+- U.S. Bureau of Labor Statistics — Occupational Outlook Handbook: Physicians and Surgeons; Registered Nurses; Nurse Anesthetists, Nurse Midwives, and Nurse Practitioners; Physician Assistants; Pharmacists; Medical and Health Services Managers (2024 data). https://www.bls.gov/ooh/ — read via Internet Archive Wayback captures because bls.gov blocked direct fetching.
+- HRSA Bureau of Primary Health Care — Health Center Program Compliance Manual, governance/board authority under Section 330 of the Public Health Service Act. https://bphc.hrsa.gov/compliance/compliance-manual/chapter20 — read via Internet Archive Wayback capture.
+- Centers for Medicare & Medicaid Services — Shared Savings Program (accountable care organizations). https://www.cms.gov/medicare/payment/shared-savings-program
+- American Hospital Association — Fast Facts on U.S. Hospitals, 2026 (2024 AHA Annual Survey data). https://www.aha.org/statistics/fast-facts-us-hospitals
+- Electronic Code of Federal Regulations — 42 CFR Part 482, Conditions of Participation for Hospitals (§ 482.12 Governing body; § 482.22 Medical staff). https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-482
+
+## Related Topics
+
+- Healthcare Delivery Settings
+- Healthcare Leadership
+- Staffing and Workforce Management
+
+## Editorial Metadata
+
+- **Editorial status:** READY_TO_PUBLISH
+- **Estimated time:** 10 minutes
+- **Researched:** 2026-08-19
+- **Rights:** Reference-only government and trade-association sources; all prose original, no source wording reproduced. Statistics dated and attributed.

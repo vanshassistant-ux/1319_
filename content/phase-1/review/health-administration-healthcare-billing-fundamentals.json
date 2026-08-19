@@ -1,0 +1,338 @@
+{
+  "id": "health-administration:financing:healthcare-billing-fundamentals",
+  "subjectSlug": "health-administration",
+  "unitSlug": "financing",
+  "slug": "healthcare-billing-fundamentals",
+  "title": "Healthcare Billing Fundamentals",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 11,
+  "tags": [
+    "medical-coding",
+    "claims",
+    "reimbursement",
+    "icd-10",
+    "cpt-hcpcs",
+    "ms-drg",
+    "united-states"
+  ],
+  "in30Seconds": "When a clinician treats a patient, the visit has to be turned into a bill and then into a paid claim. First a coder translates the documented diagnoses and procedures into standardized code sets. Then a biller assembles those codes onto a claim form and sends it to the payer, which adjudicates it and pays an agreed amount that is almost never the sticker price. Learn the code sets, the two claim vehicles, and how a clean claim moves to payment, and the money side of healthcare stops being a black box. This is educational material, not billing or coding advice.",
+  "whyItMatters": "Almost every administrative, financial, and compliance job in a provider organization touches this pipeline. Revenue depends on documentation being coded correctly and claims going out clean, because a denied or rejected claim is unpaid work that someone has to rework. Coding also feeds far more than billing: the same coded data drives quality measurement, public health surveillance, and research. Understanding which code set answers which question, and why the charge, the allowed amount, and the actual reimbursement are three different numbers, lets a manager read a payer contract, a denial report, or a payment model without being lost. As payment shifts from paying per service toward paying for value, knowing the fee-for-service machinery is what makes the newer models legible.",
+  "learningObjectives": [
+    "Distinguish medical coding from billing and outline how a clinical service becomes a submitted claim.",
+    "Match each major U.S. code set (ICD-10-CM, ICD-10-PCS, CPT/HCPCS Level I, HCPCS Level II, MS-DRG) to what it encodes and who maintains it.",
+    "Distinguish the professional claim (CMS-1500 / 837P) from the institutional claim (UB-04 / 837I).",
+    "Explain the difference between a charge, an allowed amount, and reimbursement.",
+    "Explain claim adjudication, what makes a claim clean, and what a denial is.",
+    "Contrast fee-for-service payment with value-based and bundled payment at a conceptual level."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Coding and billing are two different jobs",
+      "body": "People outside the field use \"coding and billing\" as one phrase, but they are distinct steps, usually done by different people using different software. Coding comes first. A coder reads the clinician's documentation for an encounter and abstracts it into standardized codes: what the patient was diagnosed with, and what was done for them. The codes are not free text; they come from national code sets that every payer and provider agrees to use, which is what lets a claim generated in one office be understood by an insurer across the country. Billing comes second. A biller takes the coded encounter, assembles it onto the correct claim format with the patient, provider, and insurance details, and submits it to the payer; the biller then tracks whether it was accepted, paid, or refused, and reworks it if necessary. The distinction matters because errors live in different places. A wrong code is a coding problem that can trigger a denial or, if it inflates payment, a compliance problem; a missing subscriber number or an untimely submission is a billing problem. The same coded data also travels well beyond the bill, feeding quality reporting, disease surveillance, and research, so accuracy is not only a revenue concern."
+    },
+    {
+      "heading": "The diagnosis and procedure classifications: ICD-10-CM and ICD-10-PCS",
+      "body": "Two code sets carry the \"what was wrong\" and \"what was done in the hospital\" halves of the story, and they share a name but not a job. ICD-10-CM, the Clinical Modification of the World Health Organization's International Classification of Diseases, encodes diagnoses: the conditions, symptoms, and reasons for the encounter. It is used by providers in every care setting, and in the United States it is developed and maintained by the CDC's National Center for Health Statistics. ICD-10-PCS, the Procedure Coding System, encodes procedures performed during hospital inpatient stays; it was built and is maintained by the Centers for Medicare & Medicaid Services (CMS). Both replaced the older ICD-9-CM in October 2015 and are updated on a fiscal-year cycle that takes effect each October 1, through a federal ICD-10 Coordination and Maintenance Committee that CMS and NCHS run jointly. The practical rule of thumb: diagnoses are always ICD-10-CM; ICD-10-PCS shows up only for inpatient hospital procedures, not for physician office work."
+    },
+    {
+      "heading": "The service and procedure code sets: CPT and HCPCS Level II",
+      "body": "Outside the hospital inpatient setting, procedures and services are reported with the Healthcare Common Procedure Coding System, HCPCS, which CMS describes as having two levels. Level I is the Current Procedural Terminology (CPT) code set, which the CPT Editorial Panel maintains and the American Medical Association owns and copyrights. CPT identifies physician and outpatient procedures and professional services, organized into broad sections such as evaluation and management, surgery, radiology, pathology and laboratory, anesthesia, and medicine. Because CPT is copyrighted, this lesson describes what it is for and never reproduces its code numbers or their official descriptions. Level II, established and maintained by CMS, covers products, supplies, and services that CPT does not, such as certain drugs and biologicals, ambulance transport, and durable medical equipment, prosthetics, orthotics, and supplies. HCPCS is a naming system for claims, not a coverage or payment decision: CMS is explicit that the existence of a code does not by itself mean an item is covered or paid."
+    },
+    {
+      "heading": "Grouping an inpatient stay for payment: MS-DRGs",
+      "body": "Diagnosis and procedure codes describe a stay, but Medicare does not pay an inpatient hospital line by line for them. Instead, under the Inpatient Prospective Payment System, an entire admission is assigned to one Medicare Severity Diagnosis-Related Group (MS-DRG), a category meant to gather stays that use similar hospital resources. The assignment is driven mainly by the principal diagnosis, along with secondary diagnoses, the procedures performed, and in some groups the patient's discharge status. Each MS-DRG carries a relative weight, and the hospital's prospective payment is essentially its base rate multiplied by that weight, so a resource-heavy stay maps to a higher-weighted group and a larger predetermined payment. The point is that the codes feed a grouping that produces one payment per discharge rather than a sum of itemized services. MS-DRGs are maintained by CMS, and their official titles are copyrighted, so this lesson describes the mechanism without reproducing group descriptors."
+    },
+    {
+      "heading": "The claim itself: professional versus institutional",
+      "body": "A coded encounter has to travel on the right vehicle, and there are two families. Professional claims, for the work of physicians, non-physician practitioners, and suppliers, use the paper Form CMS-1500 or, far more commonly, its electronic equivalent, the 837P. Institutional claims, for facility charges from hospitals, skilled nursing facilities, home health agencies, and the like, use the paper form known as the UB-04 (also called the CMS-1450) or its electronic equivalent, the 837I. The electronic 837 formats are the HIPAA standard transactions for submitting claims, built on the ANSI ASC X12N standard; paper forms are allowed only in limited circumstances. The two paper forms are maintained by different multi-stakeholder bodies: the CMS-1500 by the National Uniform Claim Committee and the UB-04 by the National Uniform Billing Committee. You do not need to know a form's field layout to work with it, but you do need to know which family a given provider bills under, because it determines the form, the electronic transaction, and even which procedure code sets appear on it."
+    },
+    {
+      "heading": "Three different numbers: charge, allowed amount, reimbursement",
+      "body": "The dollar figures on a claim are easy to conflate and important to separate. The charge is the provider's list price for a service, drawn from its internal price list (the chargemaster). For an in-network claim, that charge is largely a starting point, because the provider and payer have already agreed on an allowed amount, which HealthCare.gov defines as the maximum the plan will recognize for a covered service, also called the eligible expense, payment allowance, or negotiated rate. Reimbursement is what actually changes hands: the portion of the allowed amount the plan pays, with the remainder assigned to the patient under the plan's rules. In Medicare terms, when a provider \"accepts assignment,\" it agrees to treat the Medicare-approved amount as full payment. If a provider charges more than the allowed amount, the gap between the charge and the allowed amount is the territory of balance billing, which contracted providers generally may not do to the patient. The gap between a charge and what is actually collected is why a hospital's gross charges tell you almost nothing about its revenue."
+    },
+    {
+      "heading": "From submission to payment: clean claims, adjudication, and denials",
+      "body": "Once submitted, a claim is adjudicated: the payer reviews it against the patient's eligibility, the plan's rules, coding logic, and medical-necessity criteria, then decides to pay it in full, pay it in part, or refuse it. Speed and success depend heavily on whether the claim is clean. In Medicaid's regulation a clean claim is defined as one that can be processed without obtaining additional information from the provider or a third party; Medicare's rule frames it as a claim with no defect, impropriety, or missing required documentation that would prevent timely payment. Clean claims move fast, and payers face timeliness standards: Medicaid rules, for instance, require states to pay 90 percent of clean claims from practitioners within 30 days and 99 percent within 90 days. A claim can fail in two broad ways. A rejection means the claim never entered adjudication, usually because of a formatting or data error, and can be corrected and resubmitted. A denial means the claim was adjudicated and payment was refused, for reasons such as a service not covered, a coding mismatch, missing authorization, or lack of documented medical necessity; denials can often be appealed. Reworking denied and rejected claims is a large part of the administrative cost of billing."
+    },
+    {
+      "heading": "How the payment is structured: fee-for-service versus value",
+      "body": "All of the above assumes a payment logic, and historically that logic is fee-for-service: each coded service generates its own payment, so revenue rises with the volume of services delivered. Fee-for-service is administratively clear but rewards doing more rather than doing well, and it splits a patient's care into separate transactions among providers who may never coordinate. Value-based payment reorients the incentive, tying what a provider earns to the quality and total cost of care rather than the count of services. Bundled payment is one common form: instead of paying separately for every service in an episode, a payer sets one amount, or a target price, for the whole episode of care. In CMS's Bundled Payments for Care Improvement Advanced model, for example, a clinical episode covered an inpatient stay or outpatient procedure plus the 90 days after discharge; services were still billed under fee-for-service, but total spending for the episode was later measured against a target price, and the accountable provider shared in savings or owed money back depending on cost and quality. The coding and claims machinery does not disappear under these models; it becomes the measurement layer on which the newer payment logic is built."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "Medical coding",
+      "definition": "The task of translating a clinician's documentation of an encounter into standardized national codes for the diagnoses and the procedures or services performed."
+    },
+    {
+      "term": "ICD-10-CM",
+      "definition": "The U.S. Clinical Modification of the international diagnosis classification, used in every care setting to encode patient diagnoses; maintained by the CDC's National Center for Health Statistics."
+    },
+    {
+      "term": "ICD-10-PCS",
+      "definition": "The Procedure Coding System used to encode procedures performed during hospital inpatient stays; developed and maintained by CMS."
+    },
+    {
+      "term": "CPT (HCPCS Level I)",
+      "definition": "The Current Procedural Terminology code set that identifies physician, outpatient, and professional procedures and services; maintained by the CPT Editorial Panel and copyrighted by the American Medical Association."
+    },
+    {
+      "term": "HCPCS Level II",
+      "definition": "A CMS-maintained national code set for products, supplies, and services outside CPT, such as certain drugs, ambulance transport, and durable medical equipment, prosthetics, orthotics, and supplies."
+    },
+    {
+      "term": "MS-DRG",
+      "definition": "A Medicare Severity Diagnosis-Related Group: a category that assigns an entire inpatient stay to one payment group of similar expected resource use, driving a single prospective payment per discharge."
+    },
+    {
+      "term": "Clean claim",
+      "definition": "A claim that can be processed and paid without the payer having to request additional information; in Medicare terms, one with no defect or missing required documentation that would delay timely payment."
+    },
+    {
+      "term": "Adjudication",
+      "definition": "The payer's process of reviewing a submitted claim against eligibility, plan rules, coding logic, and medical necessity, and deciding to pay it fully, pay it partially, or refuse it."
+    },
+    {
+      "term": "Allowed amount",
+      "definition": "The maximum a plan will recognize for a covered service under its contract, also called the eligible expense, payment allowance, or negotiated rate; usually well below the provider's list charge."
+    },
+    {
+      "term": "Fee-for-service",
+      "definition": "A payment logic in which each coded service is paid separately, so a provider's revenue rises with the number of services delivered."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Think of turning a doctor's visit into money as a two-step assembly line. Step one, a coder reads the chart and replaces the story in words with agreed-upon codes: one kind of code for what was wrong with the patient, other kinds for what was done and what supplies were used. Step two, a biller puts those codes on the right form and mails it, electronically, to the insurance company. The insurer checks the form, agrees on a price that was already negotiated, pays its share, and leaves the rest to the patient. If the form has a mistake, it bounces back and someone has to fix it. The sticker price the hospital lists is almost never the price anyone actually pays.",
+    "analogy": "It is like returning something to a big store using a gift receipt. The tag still shows the original price, but that number barely matters. The register scans a code that says exactly what the item is, looks up the price the store and the card company already agreed on, and only that agreed price moves. If the barcode is smudged, the register rejects it and you go back and fix it before anything happens.",
+    "analogyLimits": "The analogy undersells the coding. A store item has one barcode, but a single encounter needs several kinds of code at once, from different national systems, and choosing them requires reading clinical documentation, not scanning a tag. It also hides the split payment: unlike a store refund that goes to one card, a healthcare claim's agreed amount is divided between the insurer and the patient. And a rejected claim is not always a simple re-scan; a denial can require an appeal with added documentation."
+  },
+  "workedExample": "Follow one outpatient visit. A patient sees a physician at a clinic for a persistent cough and receives a minor in-office procedure. A coder abstracts the chart: the cough and any confirmed condition become ICD-10-CM diagnosis codes, and the office visit and the procedure become CPT (HCPCS Level I) codes; a supply used might carry a HCPCS Level II code. Because this is professional, not facility, work, the biller assembles these onto an 837P (the electronic CMS-1500) and submits it to the payer. Note what does NOT appear: no ICD-10-PCS code, because the patient was not a hospital inpatient, and no MS-DRG, because that grouping applies to inpatient stays. The clinic's chargemaster lists the visit at 400 dollars, but the payer contract sets an allowed amount of 250. The payer adjudicates the clean claim, pays 200 as reimbursement, and assigns 50 to the patient under the plan's rules. Now change the setting: admit the same patient to a hospital overnight. The facility side is billed on an 837I (the UB-04), inpatient procedures are coded in ICD-10-PCS, and the whole stay is grouped into one MS-DRG that yields a single prospective payment for the admission rather than a line-by-line total.",
+  "commonMistakes": [
+    {
+      "mistake": "Treating \"coding\" and \"billing\" as the same job.",
+      "correction": "Coding is abstracting documentation into standardized codes; billing is assembling those codes onto a claim, submitting it, and managing payment. They are usually separate roles, and errors in each cause different problems: a wrong code risks a denial or a compliance issue, while a missing subscriber number or a late submission is a billing failure."
+    },
+    {
+      "mistake": "Assuming one code set covers everything, or mixing up the diagnosis and procedure systems.",
+      "correction": "Diagnoses are always ICD-10-CM. Inpatient hospital procedures are ICD-10-PCS. Physician and outpatient procedures are CPT (HCPCS Level I). Supplies, drugs, and equipment outside CPT are HCPCS Level II. A single encounter typically needs several of these at once, each answering a different question."
+    },
+    {
+      "mistake": "Using CPT to code hospital inpatient procedures, or ICD-10-PCS for physician office procedures.",
+      "correction": "ICD-10-PCS exists specifically for inpatient hospital procedures and is maintained by CMS; CPT is for physician and outpatient procedures and professional services and is maintained by the AMA. The care setting, not the type of procedure alone, tells you which one applies."
+    },
+    {
+      "mistake": "Believing the provider is paid its charge.",
+      "correction": "The charge is a list price from the chargemaster and, for an in-network claim, is largely notional. The plan pays based on the contracted allowed amount, and actual reimbursement is the plan's share of that allowed amount, with the rest assigned to the patient. Gross charges tell you little about real revenue."
+    },
+    {
+      "mistake": "Thinking a rejection and a denial are the same thing.",
+      "correction": "A rejection means the claim never entered adjudication, typically because of a data or format error, and is corrected and resubmitted. A denial means the claim was adjudicated and payment was refused for a substantive reason, such as non-coverage or missing medical necessity, and is handled through appeal."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "ICD-10-CM",
+      "b": "ICD-10-PCS",
+      "distinction": "ICD-10-CM encodes diagnoses in every care setting and is maintained by the CDC/NCHS; ICD-10-PCS encodes procedures done during hospital inpatient stays and is maintained by CMS. Same ICD-10 family, different halves of the record."
+    },
+    {
+      "a": "CPT (HCPCS Level I)",
+      "b": "HCPCS Level II",
+      "distinction": "CPT, owned by the AMA, names physician and outpatient procedures and professional services; HCPCS Level II, maintained by CMS, names products, supplies, and services outside CPT, such as drugs, ambulance, and durable medical equipment."
+    },
+    {
+      "a": "CMS-1500 / 837P (professional)",
+      "b": "UB-04 / 837I (institutional)",
+      "distinction": "The CMS-1500 and its electronic 837P carry professional claims for physicians, practitioners, and suppliers; the UB-04 (CMS-1450) and its electronic 837I carry institutional claims for facility charges from hospitals and similar providers."
+    },
+    {
+      "a": "Charge (chargemaster price)",
+      "b": "Allowed amount",
+      "distinction": "The charge is the provider's list price and mostly notional for a contracted claim; the allowed amount is the maximum the plan recognizes under its negotiated contract, and reimbursement is the plan's share of that allowed amount."
+    },
+    {
+      "a": "Fee-for-service",
+      "b": "Value-based / bundled payment",
+      "distinction": "Fee-for-service pays for each coded service, so revenue tracks volume; value-based and bundled models tie payment to the quality and total cost of care, for example paying one amount or a target price for a whole episode rather than each service."
+    }
+  ],
+  "keyTakeaway": "A service becomes a paid claim in two steps: coding turns documentation into standardized codes (ICD-10-CM for diagnoses, ICD-10-PCS for inpatient procedures, CPT and HCPCS Level II for outpatient procedures and supplies, grouped into MS-DRGs for inpatient payment), and billing puts those codes on the right claim (CMS-1500/837P professional or UB-04/837I institutional) for the payer to adjudicate; the charge, the allowed amount, and the reimbursement are three different numbers, and payment is shifting from paying per service toward paying for value.",
+  "questionBank": [
+    {
+      "id": "health-administration:financing:healthcare-billing-fundamentals:1",
+      "prompt": "On a healthcare claim, what does the ICD-10-CM code set report?",
+      "options": [
+        "The procedures performed during a hospital inpatient stay",
+        "Physician office procedures and professional services",
+        "The patient's diagnoses, that is, the conditions and reasons for the encounter",
+        "Durable medical equipment and supplies dispensed to the patient"
+      ],
+      "correctIndex": 2,
+      "explanation": "ICD-10-CM, the Clinical Modification of the international disease classification, encodes diagnoses and is used in every care setting; it is maintained by the CDC's National Center for Health Statistics. Inpatient procedures are ICD-10-PCS, physician and outpatient procedures are CPT (HCPCS Level I), and supplies and equipment outside CPT are HCPCS Level II.",
+      "difficulty": "recall",
+      "skill": "Identifying what a specific code set encodes",
+      "sourceIds": [
+        "cms-overview-coding-classification-systems",
+        "cdc-nchs-icd10-cm-pcs-background"
+      ]
+    },
+    {
+      "id": "health-administration:financing:healthcare-billing-fundamentals:2",
+      "prompt": "A hospital employee reads a clinician's documentation and translates the recorded conditions and procedures into standardized national codes. Which task is this, and how does it relate to billing?",
+      "options": [
+        "This is coding; billing is the separate later step that assembles those codes onto a claim and manages its submission and payment",
+        "This is billing; coding happens only after the payer has paid the claim",
+        "Coding and billing are a single task performed by one system, so no distinction applies",
+        "This is billing; coding is done exclusively by the insurance company after the claim arrives"
+      ],
+      "correctIndex": 0,
+      "explanation": "Abstracting documentation into standardized codes is coding. Billing is the distinct downstream step: assembling the coded encounter onto the correct claim format, submitting it, and tracking payment or rework. They are usually separate roles, and the errors they produce differ, so the two should not be conflated. Coding does not wait for payment, and it is done by the provider's coders, not the insurer.",
+      "difficulty": "understanding",
+      "skill": "Distinguishing coding from billing",
+      "sourceIds": [
+        "cms-overview-coding-classification-systems",
+        "cdc-nchs-icd10-cm-pcs-background"
+      ]
+    },
+    {
+      "id": "health-administration:financing:healthcare-billing-fundamentals:3",
+      "prompt": "An independent physician practice bills a payer for an office visit and a minor in-office procedure. Which claim vehicle and procedure code set apply?",
+      "options": [
+        "The UB-04 / 837I institutional claim, using ICD-10-PCS procedure codes",
+        "The MS-DRG grouper, which sets one payment for the visit",
+        "A National Drug Code claim maintained by the FDA",
+        "The CMS-1500 / 837P professional claim, using CPT (HCPCS Level I) procedure codes"
+      ],
+      "correctIndex": 3,
+      "explanation": "Physician and other professional services are billed on the CMS-1500 or its electronic equivalent, the 837P, with procedures coded in CPT (HCPCS Level I). The UB-04/837I and ICD-10-PCS are for institutional, inpatient facility billing; the MS-DRG grouping applies to inpatient stays, not office visits; and the NDC identifies manufactured drugs, not a claim vehicle for an office visit.",
+      "difficulty": "application",
+      "skill": "Selecting the correct claim vehicle and code set for a setting",
+      "sourceIds": [
+        "cms-mln-837p-cms-1500",
+        "cms-overview-coding-classification-systems"
+      ]
+    },
+    {
+      "id": "health-administration:financing:healthcare-billing-fundamentals:4",
+      "prompt": "A clinic's chargemaster lists a service at 400 dollars. The patient's in-network plan has a contracted allowed amount of 250 dollars, and after adjudication the clinic receives 200 dollars from the plan with 50 dollars assigned to the patient. Which statement is correct?",
+      "options": [
+        "The 400-dollar charge is the amount the plan is contractually obligated to pay",
+        "The 250-dollar allowed amount is the maximum the plan recognizes for the service; the 400-dollar charge is largely notional for an in-network claim, and the 200 dollars paid is the reimbursement",
+        "Reimbursement is always the charge minus a fixed ten percent discount",
+        "For a contracted provider the allowed amount and the charge are always identical"
+      ],
+      "correctIndex": 1,
+      "explanation": "The allowed amount is the maximum the plan recognizes under its negotiated contract, and reimbursement is the plan's share of that allowed amount, with the remainder assigned to the patient. The list charge is largely notional for an in-network claim, is not what the plan owes, is not tied to a fixed percentage discount, and is generally higher than the allowed amount rather than equal to it.",
+      "difficulty": "application",
+      "skill": "Distinguishing charge, allowed amount, and reimbursement in a scenario",
+      "sourceIds": [
+        "healthcaregov-glossary-allowed-amount",
+        "medicaregov-medicare-costs-assignment"
+      ]
+    },
+    {
+      "id": "health-administration:financing:healthcare-billing-fundamentals:5",
+      "prompt": "Under a bundled payment model for a hip-replacement episode, how does the payment logic differ from traditional fee-for-service?",
+      "options": [
+        "Each service in the episode is paid separately by its own code, with no overall accountability for the episode",
+        "The provider is paid only if the patient personally files the claim",
+        "One amount, or a target price the episode's total spending is measured against, covers the whole episode, tying payment to the cost and quality of the episode rather than the count of services",
+        "Bundled payment removes the need for any coding or claims"
+      ],
+      "correctIndex": 2,
+      "explanation": "Fee-for-service pays for each coded service, so revenue tracks volume. Bundled payment instead sets one amount or a target price for an entire episode of care and holds a provider accountable for its cost and quality, as in CMS's Bundled Payments for Care Improvement Advanced model. Coding and claims do not disappear; they remain the measurement layer, with services still coded even when spending is reconciled against a target price.",
+      "difficulty": "analysis",
+      "skill": "Contrasting fee-for-service with bundled/value-based payment",
+      "sourceIds": [
+        "cms-bpci-advanced-model",
+        "cms-value-based-programs"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "health-administration:financing:healthcare-billing-fundamentals:1",
+      "prompt": "On a healthcare claim, what does the ICD-10-CM code set report?",
+      "options": [
+        "The procedures performed during a hospital inpatient stay",
+        "Physician office procedures and professional services",
+        "The patient's diagnoses, that is, the conditions and reasons for the encounter",
+        "Durable medical equipment and supplies dispensed to the patient"
+      ],
+      "correctIndex": 2,
+      "explanation": "ICD-10-CM, the Clinical Modification of the international disease classification, encodes diagnoses and is used in every care setting; it is maintained by the CDC's National Center for Health Statistics. Inpatient procedures are ICD-10-PCS, physician and outpatient procedures are CPT (HCPCS Level I), and supplies and equipment outside CPT are HCPCS Level II.",
+      "difficulty": "recall",
+      "skill": "Identifying what a specific code set encodes",
+      "sourceIds": [
+        "cms-overview-coding-classification-systems",
+        "cdc-nchs-icd10-cm-pcs-background"
+      ]
+    },
+    {
+      "id": "health-administration:financing:healthcare-billing-fundamentals:2",
+      "prompt": "A hospital employee reads a clinician's documentation and translates the recorded conditions and procedures into standardized national codes. Which task is this, and how does it relate to billing?",
+      "options": [
+        "This is coding; billing is the separate later step that assembles those codes onto a claim and manages its submission and payment",
+        "This is billing; coding happens only after the payer has paid the claim",
+        "Coding and billing are a single task performed by one system, so no distinction applies",
+        "This is billing; coding is done exclusively by the insurance company after the claim arrives"
+      ],
+      "correctIndex": 0,
+      "explanation": "Abstracting documentation into standardized codes is coding. Billing is the distinct downstream step: assembling the coded encounter onto the correct claim format, submitting it, and tracking payment or rework. They are usually separate roles, and the errors they produce differ, so the two should not be conflated. Coding does not wait for payment, and it is done by the provider's coders, not the insurer.",
+      "difficulty": "understanding",
+      "skill": "Distinguishing coding from billing",
+      "sourceIds": [
+        "cms-overview-coding-classification-systems",
+        "cdc-nchs-icd10-cm-pcs-background"
+      ]
+    },
+    {
+      "id": "health-administration:financing:healthcare-billing-fundamentals:3",
+      "prompt": "An independent physician practice bills a payer for an office visit and a minor in-office procedure. Which claim vehicle and procedure code set apply?",
+      "options": [
+        "The UB-04 / 837I institutional claim, using ICD-10-PCS procedure codes",
+        "The MS-DRG grouper, which sets one payment for the visit",
+        "A National Drug Code claim maintained by the FDA",
+        "The CMS-1500 / 837P professional claim, using CPT (HCPCS Level I) procedure codes"
+      ],
+      "correctIndex": 3,
+      "explanation": "Physician and other professional services are billed on the CMS-1500 or its electronic equivalent, the 837P, with procedures coded in CPT (HCPCS Level I). The UB-04/837I and ICD-10-PCS are for institutional, inpatient facility billing; the MS-DRG grouping applies to inpatient stays, not office visits; and the NDC identifies manufactured drugs, not a claim vehicle for an office visit.",
+      "difficulty": "application",
+      "skill": "Selecting the correct claim vehicle and code set for a setting",
+      "sourceIds": [
+        "cms-mln-837p-cms-1500",
+        "cms-overview-coding-classification-systems"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "health-administration:financing:health-insurance-basics",
+    "health-administration:financing:medicare-and-medicaid-basics",
+    "health-administration:financing:revenue-cycle-basics",
+    "health-administration:financing:healthcare-costs"
+  ],
+  "sources": [
+    "cms-overview-coding-classification-systems",
+    "cdc-nchs-icd10-cm-pcs-background",
+    "cms-mln-837p-cms-1500",
+    "cms-mln-cms-1450-837i",
+    "cms-msdrg-classifications-software",
+    "medpac-payment-basics-hospital-ipps",
+    "ecfr-42-cfr-447-45-timely-claims-payment",
+    "ecfr-42-cfr-405-902-appeals-definitions",
+    "healthcaregov-glossary-allowed-amount",
+    "medicaregov-medicare-costs-assignment",
+    "cms-bpci-advanced-model",
+    "cms-value-based-programs"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "U.S. government primary sources (CMS, CDC/NCHS, eCFR, MedPAC) used as reference-only; CPT and MS-DRG systems are described but no copyrighted AMA/DRG descriptors, code numbers, or code lists were reproduced. All wording original.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Facts on the code sets, claim forms, clean-claim rules, and payment models were verified in primary agency documents (the CMS Overview of Coding and Classification Systems, CMS MLN billing fact sheets for the 837P/CMS-1500 and 837I/CMS-1450, the CDC/NCHS ICD-10 background, MedPAC's hospital inpatient payment basics, eCFR sections 447.45 and 405.902, the HealthCare.gov and Medicare.gov glossaries, and the CMS BPCI Advanced model page) and then restated in original prose organized as a pipeline from service to paid claim. Copyrighted CPT and MS-DRG descriptors and code numbers were deliberately not reproduced; both systems are described functionally. The lesson states U.S. scope, dates the October 2015 ICD-10 transition and the annual October 1 update cycle, and carries an explicit educational-material disclaimer."
+  },
+  "contentHash": "f380e839459a6448",
+  "status": "source-verified",
+  "public": false
+}

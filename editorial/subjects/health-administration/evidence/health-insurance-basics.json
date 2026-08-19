@@ -1,0 +1,184 @@
+{
+  "topicId": "health-administration:financing:health-insurance-basics",
+  "subjectId": "health-administration",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Risk pooling and why insurance exists (including adverse selection at a naming level)",
+      "Cost-sharing terms defined precisely: premium, deductible, copayment, coinsurance, out-of-pocket maximum",
+      "How deductible, coinsurance, and out-of-pocket maximum interact, with a worked arithmetic example",
+      "Provider networks; in-network vs out-of-network; plan types HMO, PPO, EPO, POS",
+      "Covered benefits (ACA essential health benefits) and the claims process at a high level",
+      "Prior authorization and formularies as utilization-management tools",
+      "Major US coverage sources at a naming level: employer-sponsored, individual/marketplace, public programs"
+    ],
+    "supporting": [
+      "Allowed amount / negotiated rate as the base for cost-sharing",
+      "Preventive services covered without cost-sharing under the ACA",
+      "Explanation of Benefits as a statement rather than a bill",
+      "2023 coverage shares from the Census Bureau"
+    ],
+    "outOfScope": [
+      "Medicare Parts A/B/C/D structure and Medicaid eligibility rules (owned by Medicare and Medicaid Basics)",
+      "Provider-side billing mechanics and claim/code assignment (owned by Healthcare Billing Fundamentals)",
+      "The revenue cycle and national health-cost trends (owned by Revenue Cycle Basics and Healthcare Costs)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Insurance works by pooling risk: a risk pool combines many people's medical costs to set premiums, letting the higher costs of the less healthy be offset by the lower costs of the healthy, with larger, more stable pools yielding more predictable premiums.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["aaa-risk-pooling-individual-market", "commonwealth-fund-risk-pooling-2026"],
+      "status": "supported"
+    },
+    {
+      "claim": "A premium is the amount paid (typically monthly) to keep coverage regardless of care used; a deductible is what the enrollee pays for covered services before the plan starts to pay.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["healthcaregov-glossary"],
+      "status": "supported"
+    },
+    {
+      "claim": "A copayment is a fixed dollar amount for a covered service paid after the deductible; coinsurance is a percentage (e.g., 20%) of a covered service's allowed amount paid after the deductible.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["healthcaregov-glossary"],
+      "status": "supported"
+    },
+    {
+      "claim": "The out-of-pocket maximum is the most an enrollee pays for covered in-network services in a plan year; after it is reached the plan pays 100% of covered benefits, and it does not include premiums, non-covered services, or out-of-network care.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["healthcaregov-glossary"],
+      "status": "supported"
+    },
+    {
+      "claim": "For a plan with a $2,000 deductible, 20% coinsurance, and a $6,000 out-of-pocket maximum, an enrollee with $50,000 of covered in-network allowed charges pays $6,000 total and the plan pays $44,000.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["healthcaregov-glossary"],
+      "status": "supported"
+    },
+    {
+      "claim": "A network is the facilities, providers, and suppliers a plan has contracted with; in-network care costs less, and out-of-network care costs more or is not covered.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["healthcaregov-glossary"],
+      "status": "supported"
+    },
+    {
+      "claim": "HMOs usually limit coverage to in-network care (except emergencies) and often require referrals; PPOs also cover out-of-network care at higher cost with no referral; EPOs cover in-network only, typically without referrals; POS plans give in-network savings but require referrals to specialists.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["healthcaregov-glossary"],
+      "status": "supported"
+    },
+    {
+      "claim": "ACA Marketplace plans must cover ten categories of essential health benefits (including outpatient, emergency, hospitalization, maternity/newborn, mental health and substance use, prescription drugs, rehabilitative/habilitative, lab, preventive/chronic-disease management, and pediatric services with dental and vision) and cover certain preventive services at no cost.",
+      "claimType": "LEGAL",
+      "sourceIds": ["healthcaregov-marketplace-plans-cover", "healthcaregov-glossary"],
+      "status": "supported"
+    },
+    {
+      "claim": "Prior authorization is approval a plan may require before covering a service or prescription; a formulary is the list of prescription drugs a plan covers.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["healthcaregov-glossary"],
+      "status": "supported"
+    },
+    {
+      "claim": "In 2023, 92.0% of US people had coverage for some or all of the year and 8.0% (about 26.4 million) were uninsured; employment-based coverage was most common at 53.7%, direct-purchase 10.2%, Medicare 18.9%, and Medicaid 18.9%.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["census-p60-284-health-insurance-2023"],
+      "status": "supported"
+    },
+    {
+      "claim": "Cost-sharing percentages apply to the plan's allowed amount (negotiated rate), not the provider's original charge.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["healthcaregov-glossary"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "A larger risk pool is sometimes assumed to guarantee lower premiums.",
+      "positions": [
+        "Larger pools make premiums more predictable and stable.",
+        "Premium level depends on the average health cost of the pool's enrollees, so a large pool of high-cost members can still have high premiums."
+      ],
+      "resolution": "The lesson states that larger, stable pools make premiums more predictable (not necessarily lower), following the American Academy of Actuaries."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only boilerplate ('a foundational concept... its meaning, its context, and a simple way to apply it') with no substantive, sourceable claims; all of it was discarded."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic placeholder text with precise, HealthCare.gov-sourced definitions of each cost-sharing term.",
+    "Added a verified worked example rather than an abstract 'apply to a simple scenario' instruction.",
+    "Added dated 2023 coverage-source statistics with the Census Bureau as source."
+  ],
+  "rightsIssues": [
+    "HealthCare.gov and Census Bureau materials are US government works (public domain); used as reference and restated in original prose, with short definitional phrases attributed.",
+    "American Academy of Actuaries and Commonwealth Fund are copyrighted secondary/professional-body explainers; treated as REFERENCE_ONLY and synthesized, not reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "healthcaregov-glossary",
+      "title": "Glossary (HealthCare.gov): deductible, premium, copayment, coinsurance, out-of-pocket maximum/limit, network, HMO, PPO, EPO, POS, formulary, prior authorization",
+      "provider": "U.S. Centers for Medicare & Medicaid Services / HealthCare.gov",
+      "url": "https://www.healthcare.gov/glossary/",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Authoritative plain-language definitions of every cost-sharing term and plan type. Read the individual glossary pages directly via curl with a browser user-agent (the WebFetch fetcher timed out): /glossary/deductible/ (defines deductible with a $2,000 example and states you then pay copay or coinsurance while the insurer pays the rest), /glossary/premium/, /glossary/co-payment/ (fixed amount, applies to allowed cost), /glossary/co-insurance/ (percentage of allowed amount after deductible), /glossary/out-of-pocket-maximum-limit/ (plan pays 100% after; excludes premiums, non-covered services, out-of-network care), /glossary/network/, /glossary/health-maintenance-organization-hmo/, /glossary/preferred-provider-organization-ppo/, /glossary/exclusive-provider-organization-epo-plan/, /glossary/point-of-service-plan-pos-plan/, /glossary/formulary/, /glossary/prior-authorization/. US government work, public domain."
+    },
+    {
+      "id": "healthcaregov-marketplace-plans-cover",
+      "title": "What Marketplace health insurance plans cover (essential health benefits)",
+      "provider": "U.S. Centers for Medicare & Medicaid Services / HealthCare.gov",
+      "url": "https://www.healthcare.gov/coverage/what-marketplace-plans-cover/",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Lists the essential health benefits ACA Marketplace plans must cover (ambulatory, emergency, hospitalization, pregnancy/newborn, mental health and substance use, prescription drugs, rehabilitative/habilitative, laboratory, preventive/wellness and chronic disease management, pediatric services including dental and vision) and states preventive services are covered at no cost. Read via curl with a browser user-agent (WebFetch timed out). US government work, public domain."
+    },
+    {
+      "id": "census-p60-284-health-insurance-2023",
+      "title": "Health Insurance Coverage in the United States: 2023 (Current Population Reports, P60-284)",
+      "provider": "U.S. Census Bureau",
+      "url": "https://www.census.gov/library/publications/2024/demo/p60-284.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Source for 2023 coverage shares: 92.0% covered (305.2 million), 8.0% uninsured (26.4 million); employment-based 53.7%, Medicaid 18.9%, Medicare 18.9%, direct-purchase 10.2%, TRICARE 2.6%, VA/CHAMPVA 1.0%. Report P60-284, released September 2024, based on the Current Population Survey ASEC. Figures confirmed via WebSearch of the Census library page and the p60-284.pdf; the .gov host intermittently blocks the fetcher. US government work, public domain."
+    },
+    {
+      "id": "aaa-risk-pooling-individual-market",
+      "title": "Risk Pooling: How Health Insurance in the Individual Market Works",
+      "provider": "American Academy of Actuaries",
+      "url": "https://actuary.org/risk-pooling-how-health-insurance-in-the-individual-market-works/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Professional actuarial body. Supports the risk-pooling mechanism ('a group of individuals whose medical costs are combined to calculate premiums'; pooling lets higher costs of the less healthy be offset by lower costs of the healthy; larger pools are more predictable and stable) and defines adverse selection and the premium spiral. Read the full page via curl with a browser user-agent. Copyrighted; synthesized in original prose, not reproduced."
+    },
+    {
+      "id": "commonwealth-fund-risk-pooling-2026",
+      "title": "What Health Insurance Risk Pooling Is, and Why It's Key to Maintaining Affordability",
+      "provider": "The Commonwealth Fund",
+      "url": "https://www.commonwealthfund.org/publications/explainer/2026/mar/health-insurance-risk-pooling-key-maintaining-affordability",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Secondary explainer corroborating that risk pooling spreads cost across healthy and sicker individuals so higher-risk costs are subsidized by lower-risk members, and that broader pooling improves affordability. Content confirmed via WebSearch summary of the Commonwealth Fund explainer. Copyrighted; used only as corroboration and synthesized, not reproduced."
+    }
+  ]
+}

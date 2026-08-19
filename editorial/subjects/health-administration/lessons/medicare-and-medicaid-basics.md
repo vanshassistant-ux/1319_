@@ -1,0 +1,152 @@
+# Medicare and Medicaid Basics
+
+## In 30 Seconds
+
+Medicare and Medicaid are the two largest public health-insurance programs in the United States, and they are not the same thing. Medicare is a federal program mainly for people 65 and older, organized into Parts A, B, C, and D. Medicaid is a joint federal-state program for people with low incomes, so its rules vary by state. Both are overseen by CMS, and some people qualify for both.
+
+## Why This Matters
+
+Together Medicare and Medicaid cover well over 140 million people and pay for a large share of every hospital's and clinic's revenue, so anyone working in health administration constantly encounters their rules. Confusing the two, or assuming Medicaid eligibility works the same everywhere, leads to real errors in coverage counseling, budgeting, and compliance. Understanding how each program is structured and financed is the foundation for later topics on payment systems, coverage policy, and the economics of delivering care. It also lets you read policy debates critically, because most arguments about the future of public coverage turn on these program designs.
+
+## Learning Objectives
+
+- Distinguish Medicare from Medicaid by who runs each program, who it covers, and how eligibility is set.
+- Explain what Medicare Parts A, B, C, and D each provide.
+- Describe how Medicare and Medicaid are financed, including the Hospital Insurance trust fund and federal-state matching.
+- Explain why Medicaid eligibility varies by state and how the ACA expansion changed it.
+- Define CHIP and dual-eligible individuals and locate them relative to the two main programs.
+
+## The College Version
+
+### Two programs, one agency, very different designs
+
+Medicare and Medicaid were created together in 1965 as Titles XVIII and XIX of the Social Security Act, and they are still frequently confused, but their designs are opposites in important ways. Medicare is a single federal program: the national government sets its rules and eligibility, and those rules are the same in every state. It primarily covers people age 65 and older, along with certain younger people with long-term disabilities and people with end-stage renal disease. Eligibility is tied mainly to age and work history, not to income. Medicaid is a joint federal-state program: the federal government sets broad requirements and pays a share of the cost, but each state runs its own program, sets many of its own eligibility and benefit rules within federal limits, and gives it a state-specific name. Medicaid is means-tested, meaning eligibility depends on income and, for some groups, on assets. Because states make choices within the federal framework, who qualifies for Medicaid genuinely differs from one state to the next. Both programs are administered and overseen at the federal level by the Centers for Medicare & Medicaid Services (CMS), an agency within the Department of Health and Human Services. A single administrator should never treat "CMS oversees it" as meaning "the rules are identical nationwide" — that is true for Medicare and false for Medicaid.
+
+### The four parts of Medicare
+
+Medicare is organized into four parts. Part A, Hospital Insurance, covers inpatient hospital stays, skilled nursing facility care following a qualifying hospital stay, hospice care, and some home health care. Part B, Medical Insurance, covers outpatient and physician services: office visits, outpatient hospital care, preventive services, durable medical equipment, and other care furnished outside an inpatient admission. Parts A and B together are often called "Original Medicare," in which the beneficiary uses any provider that accepts Medicare and the government pays providers directly. Part C, Medicare Advantage, is a private alternative: instead of Original Medicare, a beneficiary enrolls in a plan offered by a private insurer that has contracted with Medicare to deliver at least all Part A and Part B benefits, usually through a provider network and often bundling extra benefits and drug coverage. In 2024 about 32.8 million people — roughly 54 percent of eligible beneficiaries — were enrolled in Medicare Advantage (KFF). Part D is outpatient prescription-drug coverage, delivered through private plans that contract with Medicare. A student should be able to say, without hesitation, that A is inpatient/hospital, B is outpatient/medical, C is the private-plan option that replaces A and B, and D is drugs.
+
+### How the two programs are financed
+
+The financing of Medicare and Medicaid is as different as their governance. Medicare is paid for through two federal trust funds held at the Treasury. The Hospital Insurance (HI) trust fund pays for Part A and is financed mainly by a dedicated payroll tax: employees and employers each pay 1.45 percent of all wages, for 2.9 percent total, with no wage cap, and high earners pay an additional 0.9 percent on wages above $200,000 (IRS, 2026). The Supplementary Medical Insurance (SMI) trust fund pays for Parts B and D and is financed largely by general federal revenues authorized by Congress plus premiums paid by enrollees. Medicare covered over 67.6 million people, with total expenditures just over $1.1 trillion, in 2024 (Medicare.gov). Medicaid is financed jointly by the federal government and the states. The federal government matches state spending according to the Federal Medical Assistance Percentage (FMAP), a formula that pays a higher share to states with lower per capita income, with a statutory floor of 50 percent and ceiling of 83 percent (MACPAC). Because federal dollars follow state spending, there is no fixed national Medicaid budget in the way there is a capped appropriation for some programs. This lesson does not re-teach premiums, deductibles, or coinsurance as general cost-sharing mechanics — those are covered in Health Insurance Basics — it focuses on where each program's money comes from.
+
+### State variation, the ACA expansion, CHIP, and dual eligibles
+
+Medicaid's most important administrative feature is that eligibility is not universal across states. Federal law requires states to cover certain mandatory groups and lets them cover optional groups, and it sets most income eligibility using a standardized income measure called Modified Adjusted Gross Income (MAGI). The Affordable Care Act created a new adult eligibility group covering adults under 65 with incomes up to 138 percent of the federal poverty level (a statutory 133 percent plus a 5 percent income disregard). In 2012 the Supreme Court, in *NFIB v. Sebelius*, effectively made that expansion optional for states rather than mandatory, so states choose whether to adopt it; as of April 2025, 41 states and the District of Columbia had done so (KFF). The federal government pays 90 percent of the cost for the expansion group. The Children's Health Insurance Program (CHIP), enacted in 1997, is a closely related joint federal-state program that covers children in families with incomes too high for regular Medicaid but too low to afford private coverage, financed at an enhanced federal match. Finally, some people qualify for both programs at once: these dual-eligible individuals — about 12 million people in 2023 (KFF) — are typically low-income older adults or people with disabilities, for whom Medicare is generally the primary payer and Medicaid may cover premiums, cost-sharing, and services Medicare does not, such as long-term care. Because eligibility rules differ by state and change over time, administrators explain how the programs work but never give individuals eligibility determinations; that is the state agency's job.
+
+## Key Vocabulary
+
+- **Medicare** — A federal health-insurance program, created in 1965, that primarily covers people age 65 and older plus certain younger people with disabilities or end-stage renal disease; its rules are set nationally and do not vary by state.
+- **Medicaid** — A joint federal-state health-insurance program for people with low incomes, in which the federal government sets broad rules and shares the cost while each state runs its own program and sets many eligibility and benefit rules within federal limits.
+- **CMS (Centers for Medicare & Medicaid Services)** — The federal agency within the Department of Health and Human Services that administers and oversees Medicare and helps oversee Medicaid and CHIP.
+- **Part A (Hospital Insurance)** — The part of Medicare covering inpatient hospital stays, skilled nursing facility care after a qualifying stay, hospice, and some home health care; financed mainly by payroll taxes.
+- **Part C (Medicare Advantage)** — A private-plan alternative to Original Medicare in which a Medicare-contracted insurer delivers at least all Part A and Part B benefits, usually through a network.
+- **Federal Medical Assistance Percentage (FMAP)** — The formula setting the federal government's share of a state's Medicaid costs, higher for lower-income states, with a statutory minimum of 50 percent and maximum of 83 percent.
+- **Medicaid expansion (new adult group)** — The ACA option, made effectively voluntary by *NFIB v. Sebelius* (2012), for states to cover adults under 65 with incomes up to 138 percent of the federal poverty level, with 90 percent federal funding.
+- **CHIP (Children's Health Insurance Program)** — A joint federal-state program, enacted in 1997, covering children in families earning too much for regular Medicaid but unable to afford private coverage, at an enhanced federal match.
+- **Dual-eligible individual** — A person enrolled in both Medicare and Medicaid, for whom Medicare is generally the primary payer and Medicaid may cover premiums, cost-sharing, and services Medicare excludes.
+
+## Eli-10
+
+The United States has two big government health-insurance programs that people mix up. Medicare is run by the national government and is mainly for people once they turn 65. It comes in parts with letters: A pays for hospital stays, B pays for doctor visits, C lets you get all of that through a private plan instead, and D pays for prescription drugs. Medicaid is different: the national government and each state run it together, and it is for people who do not have much money. Because each state makes some of its own rules, Medicaid does not look exactly the same everywhere you go. A few people are covered by both programs at the same time.
+
+## Eli's Analogy
+
+Think of Medicare as a nationwide train line: one company sets the schedule, so the rules are the same whether you board in Maine or Arizona, and you pick which cars you ride (A, B, C, D). Medicaid is more like local bus systems: the federal government helps pay for buses everywhere and sets some ground rules, but each city decides many of its own routes and who rides for free, so the map really does change when you cross a state line.
+
+**Where the analogy breaks down:** Medicare parts are not just optional "cars" — Part C actually replaces Parts A and B rather than adding to them — and a real bus system is fully local, while Medicaid always operates inside binding federal requirements, not purely on local whim. It also leaves out that some riders travel on both systems at once.
+
+## Worked Example
+
+A hospital's financial-counseling office sees three patients in one morning. The first is 70 and was just admitted overnight for pneumonia; her inpatient stay falls under Medicare Part A, and her follow-up outpatient chest X-ray falls under Part B. The second is 45, earns about 130 percent of the federal poverty level, and lives in a state that adopted the ACA expansion; conceptually he falls in Medicaid's new adult group, but the counselor explains that only the state Medicaid agency can determine his eligibility. The third is 68, low-income, and already enrolled in both programs — a dual-eligible individual, so Medicare pays first for her hospital and physician care while Medicaid may pick up her Medicare cost-sharing and cover long-term services Medicare does not. The counselor never states a final eligibility decision; she explains how each program works and refers determinations to the state agency and to Medicare.
+
+## Common Mistakes
+
+- **Mistake:** Using "Medicare" and "Medicaid" interchangeably, or thinking one is just the state version of the other.
+  **Correction:** They are separate programs with different designs: Medicare is federal and age/disability-based; Medicaid is joint federal-state and income-based. CMS oversees both, but that does not make them the same.
+- **Mistake:** Assuming Medicaid eligibility rules are the same in every state.
+  **Correction:** States set many eligibility and benefit rules within federal limits, and not all states adopted the ACA expansion, so who qualifies genuinely varies by state. Never present Medicaid eligibility as universal.
+- **Mistake:** Thinking Medicare Advantage (Part C) is an add-on that sits on top of Parts A and B.
+  **Correction:** Part C is an alternative way to receive Part A and Part B benefits through a private, Medicare-contracted plan; it replaces Original Medicare rather than adding to it, and often includes Part D drug coverage.
+- **Mistake:** Believing all of Medicare is paid for by the payroll tax.
+  **Correction:** Only Part A's Hospital Insurance trust fund is financed mainly by the payroll tax. Parts B and D are paid through the Supplementary Medical Insurance trust fund, funded largely by general federal revenue plus enrollee premiums.
+- **Mistake:** Assuming a low-income older adult must choose between Medicare and Medicaid.
+  **Correction:** Many low-income seniors and people with disabilities are dual-eligible and enrolled in both at once; Medicare generally pays first and Medicaid wraps around it, covering cost-sharing and services such as long-term care.
+
+## Compare / Contrast
+
+- **Medicare** vs **Medicaid** — Medicare is a single federal program with nationwide rules, based mainly on age (65+) and disability; Medicaid is a joint federal-state program, means-tested, with rules that vary by state.
+- **Medicare Part A financing** vs **Medicare Part B and D financing** — Part A runs through the Hospital Insurance trust fund, funded mainly by the 2.9 percent payroll tax; Parts B and D run through the Supplementary Medical Insurance trust fund, funded largely by general revenue and enrollee premiums.
+- **Medicaid** vs **CHIP** — Both are joint federal-state programs, but Medicaid covers broad low-income populations while CHIP specifically covers children in families earning too much for Medicaid yet unable to afford private coverage, at an enhanced federal match.
+
+## Key Takeaway
+
+Medicare is federal and age/disability-based with Parts A (hospital), B (medical), C (private plans), and D (drugs); Medicaid is a joint federal-state, income-based program whose rules vary by state. CMS oversees both, and some people qualify for both.
+
+## Practice Question Bank
+
+1. **Under Medicare, which part covers inpatient hospital stays and skilled nursing facility care that follows a qualifying hospital stay?**
+   - A. Part B
+   - B. Part A ✓
+   - C. Part C
+   - D. Part D
+
+   Part A is Hospital Insurance, covering inpatient hospital care, skilled nursing facility care after a qualifying stay, hospice, and some home health care. Part B covers outpatient and physician services; Part C (Medicare Advantage) is the private-plan way to receive Parts A and B; Part D is prescription drugs.
+
+2. **How is Medicare Part A primarily financed?**
+   - A. By monthly premiums paid by every Medicare beneficiary
+   - B. By state general revenue matched by the federal government
+   - C. By rebates that drug manufacturers pay to enrollees
+   - D. By a dedicated payroll tax paid by employees and employers into the Hospital Insurance trust fund ✓
+
+   Part A is paid through the Hospital Insurance trust fund, financed mainly by the payroll tax of 1.45 percent each from employees and employers (2.9 percent total, no wage cap). Most beneficiaries pay no Part A premium; state matching funds Medicaid, not Medicare; and drug rebates do not fund Part A.
+
+3. **Which statement correctly distinguishes how Medicare and Medicaid are governed and financed?**
+   - A. Medicare is a federal program with nationwide rules, while Medicaid is jointly run and financed by the federal government and the states, so its rules vary by state. ✓
+   - B. Both are purely federal programs with identical, nationwide eligibility rules.
+   - C. Medicare is run entirely by the states, while Medicaid is run entirely by the federal government.
+   - D. Both are means-tested programs limited to people with low incomes.
+
+   Medicare is a single federal program whose rules apply nationwide; Medicaid is a joint federal-state program in which states set many rules within federal limits, so eligibility genuinely varies by state. Medicare is based mainly on age and disability rather than income, so only Medicaid is means-tested.
+
+4. **A hospital administrator reviews a 72-year-old patient who receives all of her Part A and Part B benefits through a private insurer that has contracted with Medicare, using the plan's provider network. Which part of Medicare is she using?**
+   - A. Part D
+   - B. Original Medicare Part A only
+   - C. Part C (Medicare Advantage) ✓
+   - D. Medicaid
+
+   Receiving all Part A and Part B benefits through a private, Medicare-contracted plan with a network describes Part C, Medicare Advantage. Part D is only prescription drugs; Original Medicare pays providers directly rather than through a private plan; and Medicaid is a separate program.
+
+5. **A 68-year-old with very low income is enrolled in both Medicare and Medicaid. How is this situation best described, and how do the programs interact?**
+   - A. She is effectively uninsured, because a person cannot hold both forms of coverage.
+   - B. She is a CHIP beneficiary, since CHIP covers low-income older adults.
+   - C. She is enrolled through the ACA marketplace, which replaces both programs.
+   - D. She is a dual-eligible individual: Medicare generally pays first, and Medicaid may cover her Medicare cost-sharing and services Medicare excludes, such as long-term care. ✓
+
+   People enrolled in both programs are dual-eligible individuals — about 12 million people in 2023. Medicare is generally the primary payer, and Medicaid wraps around it, covering cost-sharing and benefits Medicare does not, such as long-term care. CHIP covers children, and the marketplace does not replace Medicare or Medicaid.
+
+## Sources
+
+- Social Security Amendments of 1965 (Public Law 89-97), Statutes at Large vol. 79 — U.S. Government Publishing Office (govinfo). https://www.govinfo.gov/content/pkg/STATUTE-79/pdf/STATUTE-79-Pg286.pdf
+- How is Medicare funded? — Medicare.gov (CMS). https://www.medicare.gov/about-us/how-is-medicare-funded (read via browser user-agent; federal host blocked automated fetching)
+- Topic no. 751, Social Security and Medicare withholding rates — U.S. Internal Revenue Service. https://www.irs.gov/taxtopics/tc751
+- Matching rates (Medicaid financing) — MACPAC. https://www.macpac.gov/subtopic/matching-rates/
+- Medicaid expansion to the new adult group — MACPAC. https://www.macpac.gov/subtopic/medicaid-expansion/
+- National Federation of Independent Business v. Sebelius, 567 U.S. 519 (2012) — U.S. Government Publishing Office. https://www.govinfo.gov/content/pkg/USREPORTS-567/pdf/USREPORTS-567-519.pdf
+- Status of State Medicaid Expansion Decisions — KFF. https://www.kff.org/medicaid/status-of-state-medicaid-expansion-decisions/
+- Medicare Advantage in 2024: Enrollment Update and Key Trends — KFF. https://www.kff.org/medicare/medicare-advantage-in-2024-enrollment-update-and-key-trends/
+- A Profile of Medicare-Medicaid Enrollees (Dual-Eligibles) — KFF. https://www.kff.org/medicare/a-profile-of-medicare-medicaid-enrollees-dual-eligibles/
+- Beneficiaries Dually Eligible for Medicare & Medicaid (MLN Fact Sheet) — CMS. https://www.cms.gov/files/document/beneficiaries-dually-eligible-medicare-medicaid.pdf (PDF read via browser user-agent)
+
+## Related Topics
+
+None assigned from this subject's queue.
+
+## Editorial Metadata
+
+- **Topic ID:** health-administration:financing:medicare-and-medicaid-basics
+- **Editorial status:** READY_TO_PUBLISH
+- **Estimated minutes:** 10
+- **Researched at:** 2026-08-19
+- **Rights status:** Public-domain federal statute, Supreme Court opinion, IRS tax-topic, and CMS/Medicare.gov materials; MACPAC and KFF explainers recorded REFERENCE_ONLY with no wording adapted. All prose is original.
+- **Anti-duplication:** Defers general cost-sharing mechanics to Health Insurance Basics, provider billing/coding to other financing topics, and national cost trends to Healthcare Costs.
