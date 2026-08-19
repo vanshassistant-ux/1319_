@@ -1,0 +1,140 @@
+{
+  "topicId": "computer-literacy:foundations:installing-and-updating-software",
+  "subjectId": "computer-literacy",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "How software is distributed: app stores/managed catalogs, downloadable installers, package managers, and browser-based web apps",
+      "What installation does: files copied to storage and program registered with the operating system",
+      "Why updates matter: bug fixes, new features, and security patches that close vulnerabilities",
+      "Automatic updates and the risk of outdated / end-of-life software",
+      "Trust and sources: install only from reputable sources; installers as a malware vector; clean uninstalling"
+    ],
+    "supporting": [
+      "Package managers resolve dependencies and pull from repositories (dpkg/apt layering)",
+      "Manual vs automatic updates",
+      "CISA Known Exploited Vulnerabilities as evidence attackers exploit known flaws"
+    ],
+    "outOfScope": [
+      "In-depth malware taxonomy and how attacks work (owned by the Malware topic)",
+      "General overview of what software is and its categories (owned by the Software topic)",
+      "Operating-system internals beyond the install/registration touchpoint (owned by Operating Systems)",
+      "How to create malware, phishing, or exploits"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Patches are software and operating-system updates that address security vulnerabilities within a program or product; vendors may also release updates to fix performance bugs or add features.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cisa-understanding-patches-software-updates"],
+      "status": "supported"
+    },
+    {
+      "claim": "Users should install updates as soon as possible because attackers exploit known vulnerabilities for months or even years after a fix is available; keeping software up to date is the most effective measure to protect a device.",
+      "claimType": "CURRENT",
+      "sourceIds": ["cisa-understanding-patches-software-updates", "cisa-secure-our-world-update-software"],
+      "status": "supported"
+    },
+    {
+      "claim": "CISA recommends enabling automatic updates whenever possible so updates install as quickly as possible; when automatic options are unavailable, users should periodically check the vendor's website.",
+      "claimType": "CURRENT",
+      "sourceIds": ["cisa-secure-our-world-update-software", "cisa-understanding-patches-software-updates"],
+      "status": "supported"
+    },
+    {
+      "claim": "Software updates and installers should be downloaded only from trusted vendor sites; attackers use email links and attachments disguised as legitimate updates to deliver malware.",
+      "claimType": "CURRENT",
+      "sourceIds": ["cisa-understanding-patches-software-updates", "cisa-secure-our-world-update-software"],
+      "status": "supported"
+    },
+    {
+      "claim": "End-of-life (EOL) software is no longer supported or patched by the vendor, leaving newly discovered vulnerabilities open to exploitation; CISA recommends retiring EOL products.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cisa-understanding-patches-software-updates"],
+      "status": "supported"
+    },
+    {
+      "claim": "Package managers such as apt install software from managed repositories and rely on the low-level dpkg tool, which unpacks and configures packages onto the filesystem; the system records installed packages so they can be tracked and removed.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["debian-faq-package-management-tools"],
+      "status": "supported"
+    },
+    {
+      "claim": "Platform-specific apps are typically distributed and installed through a vendor's app store, whereas a website/web app is accessed by navigating in a browser and does not need to be installed from any app store.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mdn-what-is-a-progressive-web-app"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft was placeholder boilerplate ('a foundational concept... a label on a toolbox drawer') with no factual content about installation methods, updates, or security; it was discarded entirely."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic placeholder body with substantive, sourced content on distribution channels, installation mechanics, patching, and safe sourcing.",
+    "Added the security/patching dimension (absent from the draft) grounded in CISA guidance.",
+    "Replaced circular vocabulary (e.g., defining the topic by its own title) with non-circular, verifiable definitions."
+  ],
+  "rightsIssues": [
+    "CISA pages are U.S. federal government works, treated as public domain; facts used, no verbatim copying beyond short factual phrasing.",
+    "Debian FAQ carries a permissive verbatim-copying notice (Software in the Public Interest); used as reference only, prose written fresh.",
+    "MDN content is CC BY-SA; attribution recorded, no text reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "cisa-secure-our-world-update-software",
+      "title": "Update Software (Secure Our World)",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/secure-our-world/update-software",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Consumer guidance: watch for update notifications, install updates as soon as possible (criminals won't wait), turn on automatic updates so devices install them without user input, and that providers issue updates to 'patch' security weak spots. Read via curl with browser user-agent (site returns 403 to the default fetcher). Supports the automatic-updates, prompt-installation, and 'patch closes security holes' claims."
+    },
+    {
+      "id": "cisa-understanding-patches-software-updates",
+      "title": "Understanding Patches and Software Updates",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/news-events/news/understanding-patches-and-software-updates",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Defines patches as OS/software updates that address security vulnerabilities; explains attackers target vulnerabilities for months/years after updates ship; manual vs automatic updates; recommends enabling automatic updates and only downloading from trusted vendor sites, not email links/attachments; defines end-of-life (EOL) software and recommends retiring EOL products; states keeping software up to date is the most effective defense. Read via curl with browser user-agent (default fetcher gets 403). Primary Tier A source for the security/patching angle."
+    },
+    {
+      "id": "debian-faq-package-management-tools",
+      "title": "The Debian GNU/Linux FAQ, Chapter 8: The Debian package management tools",
+      "provider": "Debian Project / Software in the Public Interest",
+      "url": "https://www.debian.org/doc/manuals/debian-faq/pkgtools.en.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "Debian FAQ verbatim/derived-copying permission notice",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Authoritative explanation that high-level tools (apt, aptitude, synaptic) rely on the low-level dpkg to manage packages; dpkg installs by unpacking and configuring a package onto the filesystem and removes prior versions. Used to ground the package-manager distribution method, the 'installation = files placed + registered/tracked' mechanic, and dependency/clean-removal points. Reference only; prose written fresh."
+    },
+    {
+      "id": "mdn-what-is-a-progressive-web-app",
+      "title": "What is a progressive web app?",
+      "provider": "MDN Web Docs (Mozilla)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/What_is_a_progressive_web_app",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Explains that platform-specific apps are usually distributed and installed via the vendor's app store, while traditional websites/web apps are reached by opening a browser and navigating to a URL, with no need to install from an app store. Grounds the app-store and web-app (no-install) distribution methods. Reference only; no text reproduced."
+    }
+  ]
+}

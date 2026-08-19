@@ -1,0 +1,139 @@
+{
+  "topicId": "computer-literacy:foundations:files-and-folders",
+  "subjectId": "computer-literacy",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "A file is a named collection of data stored and handled as a single unit",
+      "A folder (directory) is a container that holds files and other folders",
+      "Folders nest to form a hierarchy (tree) with a single top-level root",
+      "A file path is the text address that locates a file within the hierarchy",
+      "Absolute (fully qualified) vs relative paths, and the current directory",
+      "Common operations: create, open, rename, move, copy, delete; delete usually sends the file to the Recycle Bin/Trash first",
+      "Good organization and naming practices"
+    ],
+    "supporting": [
+      "Path separator differs as a naming detail: Windows backslash vs macOS/Linux forward slash",
+      "Root is a drive root (C:\\) on Windows and a single '/' on Unix-like systems",
+      "'..' means the parent directory and '.' means the current directory"
+    ],
+    "outOfScope": [
+      "File extensions and file types (owned by File Extensions topic; named and handed off)",
+      "Operating-system and file-system internals such as NTFS/exFAT mechanics (owned by Operating Systems)",
+      "Cloud storage sync and online drives (owned by Cloud Storage)",
+      "Backups and data recovery strategy (owned by Backups)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A file is a named unit of stored data, described in file-system documentation as a base file name plus an optional extension separated by a period.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ms-learn-naming-files-paths"],
+      "status": "supported"
+    },
+    {
+      "claim": "A directory (folder) is treated by the file system as a special file that contains other files and directories, and folders can be nested as subfolders as many levels deep as needed.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ms-learn-naming-files-paths", "mdn-dealing-with-files"],
+      "status": "supported"
+    },
+    {
+      "claim": "A path is the string representation of the hierarchy of directories leading to a file; on Windows the components are separated by a backslash.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ms-learn-naming-files-paths"],
+      "status": "supported"
+    },
+    {
+      "claim": "An absolute path identifies a file from the root regardless of the current location, while a relative path is read from the current directory; '..' denotes the parent directory.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ms-learn-naming-files-paths", "mdn-dealing-with-files"],
+      "status": "supported"
+    },
+    {
+      "claim": "Windows path components are separated by a backslash, whereas file references on macOS/Linux (and in HTML) use a forward slash; this is a separator convention, not a difference in the underlying idea.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ms-learn-naming-files-paths", "mdn-dealing-with-files"],
+      "status": "supported"
+    },
+    {
+      "claim": "On Unix-like systems every file and directory appears under a single root directory written as a forward slash '/', the top of one unified tree, as standardized by the Filesystem Hierarchy Standard.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["linux-fhs-3-root"],
+      "status": "supported"
+    },
+    {
+      "claim": "Deleting a file on a personal computer usually moves it to the Recycle Bin (Windows) or Trash (macOS) first, where it remains and can be restored to its original location until that container is emptied, which is the step that actually removes it.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["apple-support-delete-files-mac"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic placeholder text ('Files And Folders is a concept students use to organize information...') with no substantive, verifiable claims about files, folders, or paths. All of it was discarded."
+  ],
+  "correctionsNeeded": [
+    "Replaced boilerplate definitions with sourced definitions of file, folder/directory, hierarchy, root, and path.",
+    "Added the absolute-vs-relative path distinction, the backslash-vs-forward-slash separator detail, and the Recycle Bin/Trash behavior on delete, none of which the draft mentioned.",
+    "Handed off file extensions, OS/file-system internals, cloud storage, and backups to their owning topics per anti-duplication guidance."
+  ],
+  "rightsIssues": [
+    "Microsoft Learn, Apple Support, and MDN pages are copyrighted; used REFERENCE_ONLY. All lesson prose is original synthesis; no source wording was reproduced. MDN is CC BY-SA 2.5 but was still treated as reference-only here."
+  ],
+  "sourceRecords": [
+    {
+      "id": "ms-learn-naming-files-paths",
+      "title": "Naming Files, Paths, and Namespaces",
+      "provider": "Microsoft Learn (Win32 apps documentation)",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/fileio/naming-a-file",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Authoritative for: a filename is a base name plus optional extension separated by a period; a directory is a special type of file following the same naming rules; a path is the string representation of the directory hierarchy to a file, with components separated by a backslash; fully qualified (absolute) vs relative paths and the current directory; '.' is the current directory and '..' the parent. Page dated 2024-08-28. Prose written independently."
+    },
+    {
+      "id": "mdn-dealing-with-files",
+      "title": "Dealing with files",
+      "provider": "MDN Web Docs (Mozilla)",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Environment_setup/Dealing_with_files",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports: folders can be created inside other folders (sub-folders) as many levels deep as wanted; referencing a file uses the filename in the same folder, folder-name plus forward slash for a subfolder, and '..' for the folder above; the Windows file system uses backslashes (e.g. C:\\Windows) while forward slashes are used elsewhere; keep related files together in one folder and all project folders in one central folder. Reference-only; original wording used."
+    },
+    {
+      "id": "linux-fhs-3-root",
+      "title": "Filesystem Hierarchy Standard 3.0 — The Root Filesystem",
+      "provider": "The Linux Foundation",
+      "url": "https://refspecs.linuxfoundation.org/FHS_3.0/fhs/ch03.html",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Standardizes the Unix-like directory layout in which all files and directories appear under a single root filesystem. Used to support the claim that macOS/Linux hang the entire system from one root written as '/'. Prose written independently."
+    },
+    {
+      "id": "apple-support-delete-files-mac",
+      "title": "Delete files and folders on Mac",
+      "provider": "Apple Support (macOS User Guide)",
+      "url": "https://support.apple.com/en-us/guide/mac-help/mchlp1093/mac",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports: items moved to the Trash remain until you empty the Trash; you can restore an item with drag-out or File > Put Back; any items emptied from the Trash are permanently deleted and no longer available. Used for the delete-goes-to-Trash/Recycle-Bin-first claim (Windows equivalent is the Recycle Bin). Reference-only."
+    }
+  ]
+}

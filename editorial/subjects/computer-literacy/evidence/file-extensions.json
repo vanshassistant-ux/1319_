@@ -1,0 +1,116 @@
+{
+  "topicId": "computer-literacy:foundations:file-extensions",
+  "subjectId": "computer-literacy",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Definition of a file extension as the suffix after the last dot in a filename",
+      "How the operating system uses the extension for file association to pick a default program",
+      "Common extensions across documents, images, audio/video, archives, and programs",
+      "The extension is a label/hint, not a guarantee of contents; renaming does not convert",
+      "Security angle: hidden extensions and double extensions (e.g., invoice.pdf.exe) disguise malware"
+    ],
+    "supporting": [
+      "Windows relies on extensions more than Linux/macOS, which can also inspect contents",
+      "MIME/media types are what web software trusts instead of the extension",
+      "Container formats like .mp4 wrap codecs; two files with the same extension can differ internally",
+      "Practical defenses: enable 'show file extensions'; be cautious with executable attachments"
+    ],
+    "outOfScope": [
+      "Files, folders, and paths in depth (owned by files-and-folders)",
+      "Malware mechanics and broader phishing defense in depth (owned by malware)",
+      "What software is and application categories in depth (owned by software)",
+      "Word-processing features in depth (owned by word-processing)"
+    ]
+  },
+  "claims": [
+    { "claim": "A file extension is the sequence of characters after the final dot in a filename and typically indicates the file's type (e.g., 'xlsx' in budget.xlsx); it is usually two to four characters.", "claimType": "TECHNICAL", "sourceIds": ["microsoft-file-types-associations", "mdn-mime-types"], "status": "supported" },
+    { "claim": "The operating system uses file association — a mapping from extension to a default program — to decide which application opens a file when it is double-clicked; installers register the extensions they handle, and if none is registered the system prompts the user to choose.", "claimType": "TECHNICAL", "sourceIds": ["microsoft-file-types-associations"], "status": "supported" },
+    { "claim": "The extension is only a naming convention and does not determine the file's actual bytes; renaming a file's extension does not convert its format, and there is no guarantee the extension is correct. Not all operating systems treat the suffix as meaningful (Linux and macOS can inspect contents).", "claimType": "TECHNICAL", "sourceIds": ["mdn-mime-types"], "status": "supported" },
+    { "claim": "Web browsers determine how to process a resource from its declared MIME/media type (e.g., image/jpeg) rather than from the file extension, because the suffix may be absent or incorrect.", "claimType": "TECHNICAL", "sourceIds": ["mdn-mime-types"], "status": "supported" },
+    { "claim": "Common raster image extensions map to distinct formats: .jpg/.jpeg is lossy and suited to photographs; .png is lossless with optional transparency; .gif is limited to a 256-color palette and supports simple animation; .svg is vector and scales without loss.", "claimType": "TECHNICAL", "sourceIds": ["mdn-image-file-types"], "status": "supported" },
+    { "claim": "A media container format such as .mp4, .mov, or .webm wraps one or more compressed audio/video streams (codecs) plus metadata; two files sharing a container extension can use different codecs internally.", "claimType": "TECHNICAL", "sourceIds": ["mdn-media-containers"], "status": "supported" },
+    { "claim": "Windows defaults to hiding file extensions for known file types, which enables a masquerading technique: a file with a double extension such as invoice.pdf.exe or PreviewReport.DOC.exe is executed according to its final extension (.exe) while appearing to be a harmless document.", "claimType": "TECHNICAL", "sourceIds": ["mitre-attack-t1036-007"], "status": "supported" },
+    { "claim": "Recommended mitigations for the double-extension technique include disabling the 'hide extensions for known file types' setting so real extensions are visible, and training users to recognize double extensions and phishing; documented malware (e.g., Bazar loader, DarkGate) has used this technique.", "claimType": "TECHNICAL", "sourceIds": ["mitre-attack-t1036-007"], "status": "supported" }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic boilerplate ('a foundational concept students use to organize information') with no substantive, verifiable claims about file extensions."
+  ],
+  "correctionsNeeded": [
+    "Replaced placeholder definition with a precise, sourced definition (suffix after the final dot; type indicator).",
+    "Added the file-association mechanism, common extension categories, the label-not-guarantee point, and the hidden/double-extension security angle, none of which appeared in the draft.",
+    "Rewrote vocabulary that circularly defined 'File Extensions' as 'a foundational concept covered in this lesson.'"
+  ],
+  "rightsIssues": [
+    "All sources treated as REFERENCE_ONLY; no source wording reproduced. MDN content is CC BY-SA (attribution required) and was used only to verify facts. MITRE ATT&CK and Microsoft Learn documentation used for facts only, prose original."
+  ],
+  "sourceRecords": [
+    {
+      "id": "microsoft-file-types-associations",
+      "title": "File Types and File Associations (Win32 apps)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/shell/fa-intro",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Official Windows shell documentation. Read on 2026-08-19. Supports the file-association model: the shell maps registered file-type extensions to handlers/default programs (application registration, programmatic identifiers/ProgIDs), how associations work, and the 'Open with' behavior for unassociated types. Used to ground the definition and the association mechanism. Reference-only; no wording reproduced."
+    },
+    {
+      "id": "mitre-attack-t1036-007",
+      "title": "Masquerading: Double File Extension (T1036.007)",
+      "provider": "MITRE ATT&CK",
+      "url": "https://attack.mitre.org/techniques/T1036/007/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Recognized adversary-technique knowledge base. Read on 2026-08-19. Supports: adversaries use a second, benign-looking extension so a file like Evil.txt.exe displays as Evil.txt; Windows' default 'hide extensions for known file types' is the enabling condition; the OS uses the final extension as the true type; documented examples include Bazar loader (PreviewReport.DOC.exe) and DarkGate (.pdf.lnk). Mitigations: disable the hide-extensions default (M1028) and user training (M1017). Used for the security angle only, framed as defense/recognition. Reference-only; no wording reproduced."
+    },
+    {
+      "id": "mdn-mime-types",
+      "title": "MIME types (IANA media types)",
+      "provider": "MDN Web Docs (Mozilla)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC-BY-SA-2.5",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "MDN reference. Read on 2026-08-19. Supports: browsers use the MIME/media type, not the file extension, to decide how to process a resource; filename suffixes are 'sometimes used, especially on Microsoft Windows,' are not meaningful on all operating systems (Linux, macOS), and 'there is no guarantee they are correct.' Grounds the label-not-guarantee claim and the MIME-type vocabulary/compare-contrast. Reference-only; no wording reproduced beyond the short attributed quote in the lesson."
+    },
+    {
+      "id": "mdn-image-file-types",
+      "title": "Image file type and format guide",
+      "provider": "MDN Web Docs (Mozilla)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused from source registry. Supports the image-extension categories: JPEG lossy for photographs; PNG lossless with optional alpha transparency; GIF 8-bit 256-color palette with animation; SVG vector and scalable. Used for the common-extensions section and Q5. Reference-only; no wording reproduced."
+    },
+    {
+      "id": "mdn-media-containers",
+      "title": "Media container formats (file types)",
+      "provider": "MDN Web Docs (Mozilla)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Containers",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused from source registry. Supports the container-vs-codec distinction: a container (.mp4, .mov, .webm) wraps one or more media streams plus metadata; the same container extension can hold different codec combinations. Used for the audio/video portion of the common-extensions section. Reference-only; no wording reproduced."
+    }
+  ]
+}

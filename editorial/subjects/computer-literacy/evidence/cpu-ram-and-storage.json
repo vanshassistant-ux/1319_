@@ -1,0 +1,153 @@
+{
+  "topicId": "computer-literacy:foundations:cpu-ram-and-storage",
+  "subjectId": "computer-literacy",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "The CPU (central processing unit / processor) executes instructions via the fetch-decode-execute cycle; cores, clock speed in GHz, and cache",
+      "RAM as fast, volatile working memory that holds active programs and data and is cleared when power is lost",
+      "Storage as slower, non-volatile memory that retains data without power; HDD (magnetic platters, moving parts) vs SSD (flash, no moving parts, faster)",
+      "The memory hierarchy: registers/cache -> RAM -> storage, faster/smaller/costlier at the top",
+      "The RAM-versus-storage distinction (a common point of confusion)",
+      "Correct units: bit and byte, KB/MB/GB/TB, decimal vs binary prefixes, GHz for clock speed"
+    ],
+    "supporting": [
+      "Why the hierarchy exists: fast memory is expensive, so a small amount is used where speed matters most",
+      "Cache bridges the speed gap between the CPU and RAM",
+      "Diagnosing 'out of memory' (too little RAM) versus 'out of space' (full drive) as different problems"
+    ],
+    "outOfScope": [
+      "Whole-system hardware overview and how components connect (owned by Computer Hardware)",
+      "Peripherals and input/output devices (owned by Input and Output Devices)",
+      "GPUs, motherboards, buses, and power supplies in depth",
+      "CPU microarchitecture, pipelining, and assembly programming detail"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The CPU processes instructions by repeating a fetch-decode-execute cycle: it fetches the next instruction from memory, decodes it, executes it, and repeats.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["bergmann-computer-organization-mips"],
+      "status": "supported"
+    },
+    {
+      "claim": "Clock speed is measured in hertz (cycles per second); modern CPUs are rated in gigahertz (GHz), so a 3 GHz processor runs on the order of three billion cycles per second, and many CPUs contain multiple cores.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["bergmann-computer-organization-mips", "nist-binary-prefixes-data-units"],
+      "status": "supported"
+    },
+    {
+      "claim": "RAM is volatile: it holds its contents only while powered, so data in RAM is lost at shutdown or on power loss. Storage is non-volatile: it retains data without power.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["bergmann-computer-organization-mips", "csfieldguide-data-representation", "aws-ssd-vs-hard-drive"],
+      "status": "supported"
+    },
+    {
+      "claim": "Computer memory is organized as a hierarchy - CPU registers and cache, then RAM, then storage - in which higher levels are faster, smaller, and more expensive per byte, and lower levels are slower, larger, and cheaper.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["bergmann-computer-organization-mips"],
+      "status": "supported"
+    },
+    {
+      "claim": "A bit is a single binary digit (0 or 1) and eight bits make one byte; larger capacities are expressed in kilobytes, megabytes, gigabytes, and terabytes.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-binary-prefixes-data-units", "csfieldguide-data-representation"],
+      "status": "supported"
+    },
+    {
+      "claim": "Decimal (SI) prefixes are powers of 1,000 (1 MB = 1,000,000 bytes) while IEC binary prefixes are powers of 1,024 (1 MiB = 2^20 = 1,048,576 bytes; 1 GiB = 2^30 = 1,073,741,824 bytes), which is why a labeled drive can appear to hold slightly less once formatted.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["nist-binary-prefixes-data-units"],
+      "status": "supported"
+    },
+    {
+      "claim": "A hard disk drive (HDD) stores data magnetically on spinning platters read by a moving arm, whereas a solid-state drive (SSD) stores data in NAND flash memory with no moving parts, making SSDs faster and more durable; both are non-volatile.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["aws-ssd-vs-hard-drive"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether 'kilobyte/megabyte/gigabyte' mean powers of 1,000 or powers of 1,024",
+      "positions": [
+        "Storage manufacturers and the SI convention use decimal powers of 1,000",
+        "Operating systems and older usage often report binary powers of 1,024, which the IEC names kibibyte/mebibyte/gibibyte"
+      ],
+      "resolution": "Both conventions are in use. The lesson explains the difference and uses the IEC binary-prefix names for the powers-of-1,024 quantities, following NIST/IEC guidance, and notes this is why formatted capacity looks smaller than the label."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained no substantive, verifiable technical claims about CPU, RAM, or storage; it was placeholder boilerplate ('a foundational concept', 'a label on a toolbox drawer') with an empty sources list and was discarded entirely."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic placeholder text with the actual subject matter: the three performance components, their roles, the memory hierarchy, the volatile/non-volatile distinction, and correct units.",
+    "Added real sources; the draft had none.",
+    "Rewrote all five questions, which previously tested nothing about CPU/RAM/storage."
+  ],
+  "rightsIssues": [
+    "Bergmann OER is CC BY-NC-ND 4.0 (no derivatives): used as REFERENCE_ONLY - facts synthesized, no prose adapted.",
+    "CS Field Guide is CC BY-SA 4.0: used as REFERENCE_ONLY; no text reproduced, so share-alike is not triggered.",
+    "AWS explainer is a proprietary vendor reference page: REFERENCE_ONLY, cited for the HDD/SSD mechanical distinction only, wording not reproduced.",
+    "NIST material (physics.nist.gov) is a U.S. Government work in the public domain."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-binary-prefixes-data-units",
+      "title": "Prefixes for Binary Multiples",
+      "provider": "NIST (National Institute of Standards and Technology)",
+      "url": "https://physics.nist.gov/cuu/Units/binary.html",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work, public domain",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Authoritative source for information units. States 1 kbit = 10^3 bits vs 1 Kibit = 2^10 = 1,024 bits; 1 MB = 10^6 B vs 1 MiB = 2^20 = 1,048,576 B; 1 GB = 10^9 B vs 1 GiB = 2^30 = 1,073,741,824 B, and that the IEC binary prefixes (IEC 60027-2, Amendment 2, 1999) are not part of the SI. Supports the bit/byte and decimal-vs-binary-prefix claims."
+    },
+    {
+      "id": "bergmann-computer-organization-mips",
+      "title": "Computer Organization with MIPS",
+      "provider": "Seth D. Bergmann, Rowan University (Open Educational Resources / Rowan Digital Works)",
+      "url": "https://rdw.rowan.edu/oer/9/",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-ND 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Open computer-organization textbook (2018, v4 2023). Covers the CPU datapath and instruction (fetch-decode-execute) cycle, registers, cache memory, RAM, and the memory hierarchy including virtual memory. Used to verify the CPU cycle, clock/cores framing, and the memory-hierarchy ordering. No-derivatives license: facts synthesized in original prose, nothing adapted."
+    },
+    {
+      "id": "csfieldguide-data-representation",
+      "title": "Computer Science Field Guide - Data Representation",
+      "provider": "Computer Science Education Research Group, University of Canterbury, New Zealand",
+      "url": "https://www.csfieldguide.org.nz/en/chapters/data-representation/",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "OER on how computers represent data in memory and storage using bits and bytes. Used to corroborate that data is stored as binary digits and that memory and storage hold data as bits/bytes. No text reproduced."
+    },
+    {
+      "id": "aws-ssd-vs-hard-drive",
+      "title": "What's the Difference Between SSD and Hard Drive?",
+      "provider": "Amazon Web Services",
+      "url": "https://aws.amazon.com/compare/the-difference-between-ssd-hard-drive/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Reputable vendor technical explainer. Corroborates that HDDs store data magnetically on spinning platters with mechanical read/write heads while SSDs use NAND flash memory with no moving parts (faster, more durable), and that both are non-volatile. Cited only for the HDD/SSD mechanical distinction; wording not reproduced."
+    }
+  ]
+}

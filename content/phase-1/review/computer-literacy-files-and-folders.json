@@ -1,0 +1,303 @@
+{
+  "id": "computer-literacy:foundations:files-and-folders",
+  "subjectSlug": "computer-literacy",
+  "unitSlug": "foundations",
+  "slug": "files-and-folders",
+  "title": "Files and Folders",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "computer-literacy",
+    "foundations",
+    "files",
+    "folders",
+    "file-paths",
+    "directory-hierarchy"
+  ],
+  "in30Seconds": "A file is a named collection of data saved as one unit — a document, a photo, or a program. A folder (also called a directory) is a container that holds files and other folders, so storage forms a branching tree with a single top called the root. A file path is the text address that locates a file within that tree. Once you can tell a file from a folder from a path, organizing a computer stops feeling like guesswork.",
+  "whyItMatters": "Nearly every task on a computer — writing a paper, submitting an assignment, editing a photo, running a program — means creating, finding, or moving files. Students who understand the folder hierarchy and how paths work waste less time hunting for lost work and are less likely to overwrite or misplace it. The same mental model scales up: command-line tools, code projects, shared drives, and servers all organize data as files inside nested folders addressed by paths. Good naming and folder habits formed early make later coursework in any field, technical or not, noticeably smoother.",
+  "learningObjectives": [
+    "Define a file, a folder, and a file path in your own words.",
+    "Distinguish a file from a folder and explain how folders nest to form a hierarchy with a single root.",
+    "Explain the difference between an absolute path and a relative path.",
+    "Apply the create, move, copy, rename, and delete operations, and predict where a deleted file goes.",
+    "Evaluate a folder structure and naming scheme for how easily files can be found."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "What a file is",
+      "body": "A file is the basic unit a computer uses to store information on a disk or device. Each file has a name and holds a specific kind of content: a text document, a spreadsheet, a photograph, an audio clip, or the code of a program. The operating system keeps track of where each file's data physically lives and lets you work with it by name rather than by hardware location, so you can open, edit, copy, or move it as a single package. File-system documentation describes a filename as a base name plus an optional extension separated by a period, such as report.docx — the extension signals the file's type, a detail covered in its own lesson. The idea to hold onto here is that a file is one named, self-contained unit of data."
+    },
+    {
+      "heading": "Folders and the hierarchy",
+      "body": "A folder — equivalently a directory — is a container used to group files. A folder can hold files and also other folders, called subfolders, and those subfolders can hold folders of their own, as many levels deep as you need. Because containers nest inside containers, the whole collection forms a tree: a branching hierarchy that grows from one starting point at the top. That top is the root. On Windows each drive has its own root, such as C:\\; on macOS and Linux the entire system hangs from a single root written as a forward slash (/), the arrangement standardized for Unix-like systems by the Filesystem Hierarchy Standard. Every file and folder sits somewhere on this tree, inside exactly one parent folder, and that single-parent structure is what makes orderly storage possible."
+    },
+    {
+      "heading": "Paths: how a file is located",
+      "body": "A path is the text address that says where a file or folder sits in the hierarchy. It lists the folders you pass through, separated by a special character, ending in the file's name. An absolute path (also called fully qualified) names the complete route from the root, so it identifies the file no matter where you currently are — for example C:\\Users\\Sam\\Documents\\essay.docx. A relative path is shorter and is read from your current location, known as the current directory: essay.docx means a file in the current folder, images\\logo.png points into a subfolder, and two dots (..) mean go up to the parent folder. One naming detail differs by system: Windows separates path components with a backslash (\\), while macOS and Linux use a forward slash (/). The concept is identical; only the separator character changes."
+    },
+    {
+      "heading": "Working with files and folders",
+      "body": "The everyday operations are create, open, rename, move, copy, and delete. Moving relocates a file to a different folder; copying leaves the original in place and makes a duplicate elsewhere; renaming changes only the name, not the contents or location. Delete deserves special attention, because on a personal computer deleting a file usually does not erase it right away. Windows moves it to the Recycle Bin and macOS moves it to the Trash, where it stays and can be restored to its original place until you empty that container. Emptying the Recycle Bin or Trash is the step that actually removes the file. This two-stage design is a deliberate safety net against accidental loss, and it is worth knowing so you neither panic over a deletion you can undo nor assume a file is gone when it is still recoverable."
+    },
+    {
+      "heading": "Organizing and naming well",
+      "body": "Because you decide the folder structure, a little planning pays off. Keep related files together — one folder per course, project, or year — and use subfolders to break large groups into smaller ones instead of piling hundreds of files into a single place. Give files clear, specific names that will still make sense months later; a name like biology-lab3-2026-02.docx tells you far more than doc1.docx. Consistent names also sort predictably, so dating files or numbering them keeps a folder in a sensible order. Avoid characters the system reserves for other purposes, and do not rely on remembering where something is instead of putting it where it belongs. Good structure is not decoration: it is the difference between finding a file in seconds and losing an afternoon to searching."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "File",
+      "definition": "A named collection of data stored and handled as a single unit, such as a document, image, audio clip, or program."
+    },
+    {
+      "term": "Folder (directory)",
+      "definition": "A container that groups files and can also contain other folders; the file system treats it as a special kind of file."
+    },
+    {
+      "term": "Subfolder",
+      "definition": "A folder located inside another folder, used to break a large group of files into smaller ones."
+    },
+    {
+      "term": "Hierarchy (tree)",
+      "definition": "The branching structure formed when folders nest inside folders, with each item having exactly one parent."
+    },
+    {
+      "term": "Root",
+      "definition": "The single top of the file hierarchy from which every other folder branches (a drive root like C:\\ on Windows, or / on macOS/Linux)."
+    },
+    {
+      "term": "File path",
+      "definition": "The text address that specifies where a file or folder is located within the hierarchy."
+    },
+    {
+      "term": "Absolute path",
+      "definition": "A path that names the complete route from the root, identifying a file regardless of your current location."
+    },
+    {
+      "term": "Relative path",
+      "definition": "A path read from the current directory rather than the root, often using '..' to mean the parent folder."
+    },
+    {
+      "term": "Path separator",
+      "definition": "The character between components of a path: a backslash (\\) on Windows and a forward slash (/) on macOS and Linux."
+    },
+    {
+      "term": "Current directory",
+      "definition": "The folder you are working in at a given moment, which is the starting point a relative path is measured from."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Picture a big filing cabinet. The whole cabinet is your computer's storage. Inside are drawers, and inside each drawer are folders, and you can put smaller folders inside those. The actual papers — your essay, your photo, your song — are the files. A folder is just a container; a file is the thing with content in it. To tell a friend exactly where one paper is, you would say which drawer, then which folder, then which paper. That set of directions is the path: a list of every container you open, in order, to reach the file.",
+    "analogy": "A file path is like directions to a specific book in a library: go to floor 3, aisle H, shelf 4, the third book — each step narrows down where the book sits until only one place is left.",
+    "analogyLimits": "The library analogy breaks down in two ways. A real shelf runs out of room and you cannot easily nest shelves inside shelves, but digital folders can hold other folders essentially without limit. And a physical book sits in exactly one spot, while a computer can also make shortcuts or links that point to the same file from several places without copying it."
+  },
+  "workedExample": "Suppose Sam is writing a history paper. The file lives at the absolute path C:\\Users\\Sam\\Documents\\History\\paper.docx. Read from the root, that route is: drive C:, then the Users folder, then Sam, then Documents, then the History folder, and finally the file paper.docx. If Sam is already working inside the History folder, the relative path to the same file is just paper.docx, because the current directory supplies the rest of the route. A chart stored in a sibling subfolder named images would be reached from the History folder as images\\chart.png, and a references file one level up in Documents as ..\\references.txt, where the two dots mean the parent folder. Same file, two ways to name its location: absolute from the top, relative from where you stand.",
+  "commonMistakes": [
+    {
+      "mistake": "Treating 'file' and 'folder' as interchangeable words.",
+      "correction": "A file holds content and is opened to be read or edited; a folder holds no content of its own — it is a container for files and other folders. Confusing them makes paths and organization impossible to reason about."
+    },
+    {
+      "mistake": "Believing that deleting a file erases it immediately and permanently.",
+      "correction": "On a personal computer, deleting usually moves the file to the Recycle Bin (Windows) or Trash (macOS) first, where it can be restored. It is removed only when you empty that container."
+    },
+    {
+      "mistake": "Confusing an absolute path with a relative one.",
+      "correction": "An absolute path starts from the root and works from anywhere; a relative path is read from your current directory and can point to different files depending on where you are."
+    },
+    {
+      "mistake": "Assuming every system separates path components the same way.",
+      "correction": "Windows uses a backslash (C:\\Users\\Sam), while macOS and Linux use a forward slash (/Users/Sam). It is only a naming convention — the underlying idea of a nested hierarchy is the same."
+    },
+    {
+      "mistake": "Saving everything into one folder with vague names like doc1, doc2, final, finalfinal.",
+      "correction": "Group related files into clearly named subfolders and give files specific, dated or numbered names so they sort predictably and stay findable months later."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "File",
+      "b": "Folder",
+      "distinction": "A file is a named unit of data with content you open; a folder is a container that organizes files and other folders and has no content of its own."
+    },
+    {
+      "a": "Absolute path",
+      "b": "Relative path",
+      "distinction": "An absolute path names the full route from the root and works from anywhere; a relative path is measured from the current directory and is shorter but location-dependent."
+    },
+    {
+      "a": "Folder",
+      "b": "Path",
+      "distinction": "A folder is one container in the hierarchy; a path is the whole sequence of folders (ending in a filename) that locates a specific item."
+    }
+  ],
+  "keyTakeaway": "A file is a named unit of data, a folder is a container that nests to form a tree rooted at a single top, and a path is the address that locates a file within that tree — absolute from the root or relative from where you are.",
+  "questionBank": [
+    {
+      "id": "computer-literacy:foundations:files-and-folders:1",
+      "prompt": "Which statement best distinguishes a folder from a file?",
+      "options": [
+        "A folder stores data as a single unit, while a file only holds other folders.",
+        "A file is a named unit of data, while a folder is a container that holds files and other folders.",
+        "A file can contain folders, but a folder cannot contain files.",
+        "There is no real difference; the two terms mean the same thing."
+      ],
+      "correctIndex": 1,
+      "explanation": "A file is a named, self-contained unit of data (a document, image, or program), whereas a folder (directory) is a container that groups files and other folders. Option A reverses the roles, C is backwards (folders contain files, not the other way around), and D is false — the distinction is fundamental to how storage is organized.",
+      "difficulty": "recall",
+      "skill": "Defining and distinguishing file vs folder",
+      "sourceIds": [
+        "ms-learn-naming-files-paths",
+        "mdn-dealing-with-files"
+      ]
+    },
+    {
+      "id": "computer-literacy:foundations:files-and-folders:2",
+      "prompt": "In a file system, the single top-level point from which all other folders branch is called the:",
+      "options": [
+        "extension",
+        "subfolder",
+        "path separator",
+        "root"
+      ],
+      "correctIndex": 3,
+      "explanation": "The root is the top of the hierarchy — a drive root such as C:\\ on Windows, or / on macOS and Linux. An extension signals a file's type, a subfolder is a folder nested inside another, and a path separator is the character (\\ or /) between path components; none of these is the top of the tree.",
+      "difficulty": "understanding",
+      "skill": "Identifying the root of the hierarchy",
+      "sourceIds": [
+        "linux-fhs-3-root",
+        "ms-learn-naming-files-paths"
+      ]
+    },
+    {
+      "id": "computer-literacy:foundations:files-and-folders:3",
+      "prompt": "A file is stored at C:\\Users\\Lee\\Documents\\notes.txt. Which statement about this is correct?",
+      "options": [
+        "It is an absolute path that locates the file starting from the drive's root.",
+        "It is a relative path read from whatever folder you are currently in.",
+        "The backslashes are part of the file's actual name.",
+        "'notes' is the folder and 'txt.Documents' is the file."
+      ],
+      "correctIndex": 0,
+      "explanation": "The path begins at the drive root C:\\ and lists every folder down to the file, which makes it absolute — it points to the same file from anywhere. A relative path would omit the root and be read from the current directory. Backslashes are separators, not part of any name, and the file is notes.txt inside the Documents folder.",
+      "difficulty": "application",
+      "skill": "Interpreting an absolute path",
+      "sourceIds": [
+        "ms-learn-naming-files-paths"
+      ]
+    },
+    {
+      "id": "computer-literacy:foundations:files-and-folders:4",
+      "prompt": "On a typical personal computer, what usually happens the first time you delete a file?",
+      "options": [
+        "It is immediately and permanently erased from the disk.",
+        "It is copied into every other folder as an automatic backup.",
+        "It is moved to the Recycle Bin or Trash, where it can be restored until that is emptied.",
+        "It is renamed with a period in front so it becomes permanently hidden."
+      ],
+      "correctIndex": 2,
+      "explanation": "Deleting normally moves the file to the Recycle Bin (Windows) or Trash (macOS), where it remains and can be restored to its original location. It is removed only when that container is emptied. The file is not erased immediately (A), deletion does not create backups (B), and a leading period is unrelated to deletion (D).",
+      "difficulty": "understanding",
+      "skill": "Predicting the result of a delete operation",
+      "sourceIds": [
+        "apple-support-delete-files-mac"
+      ]
+    },
+    {
+      "id": "computer-literacy:foundations:files-and-folders:5",
+      "prompt": "Which difference between operating systems is only a naming convention rather than a difference in the underlying idea?",
+      "options": [
+        "Windows separates path components with a backslash, while macOS and Linux use a forward slash.",
+        "Windows uses folders, while macOS and Linux use only files with no folders.",
+        "Only Windows supports a hierarchy of nested folders.",
+        "macOS and Linux have no root directory at all."
+      ],
+      "correctIndex": 0,
+      "explanation": "The backslash-versus-forward-slash choice is purely a separator convention; the concept of a nested folder hierarchy addressed by paths is the same across systems. Options B, C, and D are false — all mainstream systems use folders, support nesting, and have a root (a drive root on Windows, / on Unix-like systems).",
+      "difficulty": "understanding",
+      "skill": "Separating naming conventions from underlying concepts",
+      "sourceIds": [
+        "mdn-dealing-with-files",
+        "ms-learn-naming-files-paths"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "computer-literacy:foundations:files-and-folders:1",
+      "prompt": "Which statement best distinguishes a folder from a file?",
+      "options": [
+        "A folder stores data as a single unit, while a file only holds other folders.",
+        "A file is a named unit of data, while a folder is a container that holds files and other folders.",
+        "A file can contain folders, but a folder cannot contain files.",
+        "There is no real difference; the two terms mean the same thing."
+      ],
+      "correctIndex": 1,
+      "explanation": "A file is a named, self-contained unit of data (a document, image, or program), whereas a folder (directory) is a container that groups files and other folders. Option A reverses the roles, C is backwards (folders contain files, not the other way around), and D is false — the distinction is fundamental to how storage is organized.",
+      "difficulty": "recall",
+      "skill": "Defining and distinguishing file vs folder",
+      "sourceIds": [
+        "ms-learn-naming-files-paths",
+        "mdn-dealing-with-files"
+      ]
+    },
+    {
+      "id": "computer-literacy:foundations:files-and-folders:2",
+      "prompt": "In a file system, the single top-level point from which all other folders branch is called the:",
+      "options": [
+        "extension",
+        "subfolder",
+        "path separator",
+        "root"
+      ],
+      "correctIndex": 3,
+      "explanation": "The root is the top of the hierarchy — a drive root such as C:\\ on Windows, or / on macOS and Linux. An extension signals a file's type, a subfolder is a folder nested inside another, and a path separator is the character (\\ or /) between path components; none of these is the top of the tree.",
+      "difficulty": "understanding",
+      "skill": "Identifying the root of the hierarchy",
+      "sourceIds": [
+        "linux-fhs-3-root",
+        "ms-learn-naming-files-paths"
+      ]
+    },
+    {
+      "id": "computer-literacy:foundations:files-and-folders:3",
+      "prompt": "A file is stored at C:\\Users\\Lee\\Documents\\notes.txt. Which statement about this is correct?",
+      "options": [
+        "It is an absolute path that locates the file starting from the drive's root.",
+        "It is a relative path read from whatever folder you are currently in.",
+        "The backslashes are part of the file's actual name.",
+        "'notes' is the folder and 'txt.Documents' is the file."
+      ],
+      "correctIndex": 0,
+      "explanation": "The path begins at the drive root C:\\ and lists every folder down to the file, which makes it absolute — it points to the same file from anywhere. A relative path would omit the root and be read from the current directory. Backslashes are separators, not part of any name, and the file is notes.txt inside the Documents folder.",
+      "difficulty": "application",
+      "skill": "Interpreting an absolute path",
+      "sourceIds": [
+        "ms-learn-naming-files-paths"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "computer-literacy:foundations:file-extensions",
+    "computer-literacy:foundations:operating-systems",
+    "computer-literacy:foundations:cloud-storage",
+    "computer-literacy:foundations:backups"
+  ],
+  "sources": [
+    "ms-learn-naming-files-paths",
+    "mdn-dealing-with-files",
+    "linux-fhs-3-root",
+    "apple-support-delete-files-mac"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only sources; no source prose adapted",
+    "researchedAt": "2026-08-19",
+    "transformation": "Definitions and mechanics of files, folders, the directory hierarchy, paths, delete behavior, and organization were synthesized from authoritative documentation (Microsoft Learn, MDN, the Linux Foundation FHS, and Apple Support) and rewritten as original EliExplains prose. No wording was copied from any source."
+  },
+  "contentHash": "8fe3b81c657d6ea8",
+  "status": "source-verified",
+  "public": false
+}

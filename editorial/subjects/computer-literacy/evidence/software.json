@@ -1,0 +1,173 @@
+{
+  "topicId": "computer-literacy:foundations:software",
+  "subjectId": "computer-literacy",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "What software is: coded instructions and data that direct hardware, distinct from the physical hardware",
+      "Two broad categories: system software (operating systems, drivers, utilities) and application software (user-task programs)",
+      "High-level path from source code to a runnable program executed by hardware via the operating system",
+      "Proprietary vs open-source / free software and the basics of software licensing (licensing a right to use vs owning)",
+      "Firmware as a middle case between hardware and software"
+    ],
+    "supporting": [
+      "The operating system as the central piece of system software (named, then handed off)",
+      "Programs / apps as the everyday unit of application software",
+      "The idea that source code is human-readable and machine code is what the CPU executes"
+    ],
+    "outOfScope": [
+      "In-depth operating-system internals (owned by 'Operating Systems')",
+      "How to install and update software (owned by 'Installing and Updating Software')",
+      "File extensions and file formats (owned by 'File Extensions')",
+      "Writing code / programming instruction",
+      "Detailed comparison of specific commercial products"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Software is the computer programs and associated data that direct a computer's hardware, and it has no physical form of its own, in contrast to hardware, which is the physical machine.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-glossary-software", "libretexts-categories-of-software"],
+      "status": "supported"
+    },
+    {
+      "claim": "Software divides into two broad families: system software (operating systems, device drivers, and utility programs that run the machine) and application software (programs for user tasks such as writing, browsing, or editing).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["libretexts-categories-of-software"],
+      "status": "supported"
+    },
+    {
+      "claim": "The operating system is the central piece of system software: it manages the hardware and provides the environment and services in which application software runs.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["libretexts-categories-of-software", "nist-glossary-software"],
+      "status": "supported"
+    },
+    {
+      "claim": "Software is generally written as human-readable source code, which is translated into the machine instructions the processor executes; this translation is done ahead of time by a compiler or at run time by an interpreter.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["libretexts-categories-of-software"],
+      "status": "supported"
+    },
+    {
+      "claim": "Under the OSI Open Source Definition, open-source software must allow free redistribution (including selling it as part of a distribution), must include source code, and must permit modifications and derived works under the license terms.",
+      "claimType": "LEGAL",
+      "sourceIds": ["osi-open-source-definition"],
+      "status": "supported"
+    },
+    {
+      "claim": "The Free Software Foundation defines free software by four essential freedoms: to run the program for any purpose, to study and change it (which requires access to source code), to redistribute copies, and to distribute modified versions.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["gnu-free-software-definition"],
+      "status": "supported"
+    },
+    {
+      "claim": "Firmware is software stored in a device's non-volatile memory (such as ROM or flash) that provides low-level control of the device's hardware, making it a middle case between hardware and ordinary software.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-glossary-firmware", "libretexts-categories-of-software"],
+      "status": "supported"
+    },
+    {
+      "claim": "Proprietary software is commonly licensed rather than sold outright: the user typically acquires the right to use the software under stated terms (an end-user license agreement) rather than ownership of the software itself.",
+      "claimType": "LEGAL",
+      "sourceIds": ["osi-open-source-definition", "gnu-free-software-definition"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether 'open source' and 'free software' mean the same thing.",
+      "positions": [
+        "The OSI frames open source through the ten-point Open Source Definition emphasizing distribution terms.",
+        "The FSF frames free software through four essential freedoms emphasizing user liberty."
+      ],
+      "resolution": "The two definitions overlap heavily in practice and most licenses qualify under both; the lesson treats them together as the 'source-available, freely modifiable' family while noting the framings differ. It does not equate them outright."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft treated 'software' as a generic study concept ('a concept students use to organize information') rather than as coded instructions that run hardware; this was discarded as unsupported and off-topic.",
+    "The draft's analogy ('a label on a toolbox drawer') and vocabulary ('context', 'evidence', 'application' as a study skill) did not describe software and were replaced."
+  ],
+  "correctionsNeeded": [
+    "Replaced boilerplate definition with the hardware/software distinction grounded in the NIST glossary.",
+    "Added the system-vs-application taxonomy, source-code-to-program path, licensing, and firmware, none of which appeared in the draft."
+  ],
+  "rightsIssues": [
+    "OSI Open Source Definition is CC BY 4.0 (attribution required); its wording was not copied, only the criteria synthesized.",
+    "GNU 'What is Free Software?' is under a CC BY-ND 4.0 license (no derivatives); the four freedoms are described in original wording rather than adapted.",
+    "LibreTexts page is CC BY-NC-SA; treated as REFERENCE_ONLY and described in original wording.",
+    "NIST glossary entries are U.S. government works and reference CNSSI/RFC sources; used as reference and synthesized."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-glossary-software",
+      "title": "Software — Glossary, NIST Computer Security Resource Center",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://csrc.nist.gov/glossary/term/software",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "NIST glossary defines software as 'computer programs and associated data that may be dynamically written or modified during execution,' distinguishing it from firmware and hardware. Used for the core definition and the hardware/software distinction. Definitions trace to CNSSI 4009-2015 / RFC 4949; wording synthesized, not copied."
+    },
+    {
+      "id": "nist-glossary-firmware",
+      "title": "Firmware — Glossary, NIST Computer Security Resource Center",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://csrc.nist.gov/glossary/term/firmware",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "NIST glossary defines firmware as computer programs and data stored in hardware (typically ROM/PROM or flash) that provide low-level control and generally cannot be modified during execution. Supports the firmware 'middle case' section. Traces to CNSSI 4009-2015; synthesized."
+    },
+    {
+      "id": "osi-open-source-definition",
+      "title": "The Open Source Definition",
+      "provider": "Open Source Initiative",
+      "url": "https://opensource.org/osd",
+      "sourceType": "standards-body",
+      "usage": "ATTRIBUTION_REQUIRED",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Authoritative ten-criteria definition of open-source distribution terms: free redistribution (including sale), mandatory source-code availability, permitted derived works, and non-discrimination. Supports the open-source and licensing discussion. Criteria synthesized in original wording; site content is CC BY 4.0."
+    },
+    {
+      "id": "gnu-free-software-definition",
+      "title": "What is Free Software? (The Free Software Definition)",
+      "provider": "Free Software Foundation / GNU Project",
+      "url": "https://www.gnu.org/philosophy/free-sw.html",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-ND 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nd/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Defines free software by four essential freedoms (0 run, 1 study/change, 2 redistribute, 3 distribute modified versions), with freedoms 1 and 3 requiring source-code access. Under a no-derivatives license, so described in original wording only; used to explain the 'free/libre' framing alongside OSI."
+    },
+    {
+      "id": "libretexts-categories-of-software",
+      "title": "Categories of Software and Their Purposes (Concepts in Computing)",
+      "provider": "Workforce LibreTexts (Prince George's Community College)",
+      "url": "https://workforce.libretexts.org/Courses/Prince_Georges_Community_College/INT_1010:_Concepts_in_Computing_(PGCC)/04:_System_and_Application_Software/4.01:_Purpose_and_Functions_of_Software/4.1.03:_Categories_of_Software_and_Their_Purposes",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "OER that organizes software into system software (operating system, utility programs, device drivers) and application software (browsers, office suites, media tools, games), and notes firmware written to read-only chips. NonCommercial license, so REFERENCE_ONLY and described in original wording. Supports the taxonomy and source-code-to-program framing."
+    }
+  ]
+}

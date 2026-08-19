@@ -1,0 +1,175 @@
+{
+  "topicId": "computer-literacy:foundations:operating-systems",
+  "subjectId": "computer-literacy",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "What an operating system is: the system software that manages hardware and resources and provides common services to programs",
+      "Core OS functions: CPU scheduling, memory management, storage/file-system management, input/output handling, running and coordinating programs",
+      "The kernel as the core of the OS: loaded at startup, resident in memory, controls hardware via device drivers, runs in privileged/protected mode",
+      "Security and access control: user accounts, permissions, isolation between user space and kernel space",
+      "User interfaces: graphical (GUI) versus command-line (CLI)",
+      "The OS as the layer between applications and hardware; desktop OS examples (Windows, macOS, Linux) and mobile OS examples (Android, iOS)"
+    ],
+    "supporting": [
+      "Dated market-share context showing which OS families are most common (July 2026)",
+      "Why understanding the OS explains everyday behavior (slowdowns, permission errors, updates)"
+    ],
+    "outOfScope": [
+      "The software overview and application-vs-system-software framing (owned by 'Software')",
+      "File and folder structure and file management in depth (owned by 'Files and Folders')",
+      "Installing and updating software procedures (owned by 'Installing and Updating Software')",
+      "Detailed CPU/RAM/storage hardware internals (owned by 'Computer Hardware')"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "An operating system is the system software that manages a computer's hardware resources and provides common services for application programs.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-glossary-operating-system", "wikipedia-operating-system"],
+      "status": "supported"
+    },
+    {
+      "claim": "The operating system allocates the processor and memory among running programs, deciding when each program gets CPU time or space in memory.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["wikipedia-operating-system", "nist-glossary-operating-system"],
+      "status": "supported"
+    },
+    {
+      "claim": "The operating system acts as an intermediary between users/applications and the hardware, abstracting hardware details and providing services such as access to disk and network devices.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-glossary-operating-system", "wikipedia-operating-system"],
+      "status": "supported"
+    },
+    {
+      "claim": "The kernel is the core of the operating system: it is among the first programs loaded at startup, stays resident in memory, controls all hardware resources via device drivers, and arbitrates conflicts between processes over those resources.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["wikipedia-kernel-operating-system", "linux-kernel-readme"],
+      "status": "supported"
+    },
+    {
+      "claim": "The kernel runs in a protected/privileged mode separate from user space, which protects kernel and application data from interfering with each other and provides protection between different applications and users.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["wikipedia-kernel-operating-system", "wikipedia-operating-system"],
+      "status": "supported"
+    },
+    {
+      "claim": "Operating systems perform input/output control, resource scheduling, and data management functions.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-glossary-operating-system"],
+      "status": "supported"
+    },
+    {
+      "claim": "A command-line interface (CLI) is text-only, driven by typed commands, while a graphical user interface (GUI) lets users interact visually with windows and pointers; the GUI proved more approachable for most users than the text-only CLI.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["wikipedia-operating-system"],
+      "status": "supported"
+    },
+    {
+      "claim": "Linux is a Unix-like operating system created by Linus Torvalds that includes features such as true multitasking, virtual memory, shared libraries, and proper memory management, and has been ported to many hardware architectures.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["linux-kernel-readme"],
+      "status": "supported"
+    },
+    {
+      "claim": "As of July 2026, worldwide operating-system usage across all platforms was led by Android (about 41%), followed by Windows (about 28%) and iOS (about 20%), with macOS and Linux each a low single-digit share; Windows, macOS, and Linux are common on desktops and laptops while Android and iOS dominate phones.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["statcounter-os-market-share"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "How strictly to define 'the operating system' — kernel only, or kernel plus bundled utilities and interface.",
+      "positions": [
+        "Some definitions treat the OS narrowly as the kernel (the always-resident core that controls hardware).",
+        "Common usage and several NIST definitions treat the OS as the broader collection of software that manages hardware and provides services, including the interface and system utilities."
+      ],
+      "resolution": "The lesson names the kernel as the core of the OS and treats the OS as the broader system software layer, which matches everyday usage and the NIST 'manages hardware resources and provides common services' definition."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained no substantive OS content: it described 'operating systems' abstractly as a study concept ('a label on a toolbox drawer', 'organize information, ask better questions') and never explained what an operating system actually does. All of that placeholder framing was discarded."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic placeholder prose with a concrete, sourced explanation of OS functions, the kernel, interfaces, and examples.",
+    "Removed vocabulary entries ('context', 'evidence', 'application' as a study term) that were unrelated to operating systems and replaced them with domain vocabulary.",
+    "Rewrote all questions, which previously tested generic 'study skills' rather than operating-system knowledge, and expanded from 3 to the required 5 with four options each."
+  ],
+  "rightsIssues": [
+    "NIST CSRC glossary content is U.S. government work and public domain; used as the authoritative anchor, prose written originally.",
+    "Wikipedia (CC BY-SA) and the Linux kernel documentation are used as REFERENCE_ONLY: facts synthesized and rewritten in original wording, no source sentences reproduced.",
+    "StatCounter figures are a dated secondary statistic (July 2026), cited with date; no proprietary content reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-glossary-operating-system",
+      "title": "Operating System — Glossary",
+      "provider": "NIST Computer Security Resource Center (CSRC)",
+      "url": "https://csrc.nist.gov/glossary/term/operating_system",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Authoritative anchor. Aggregates several federal definitions of 'operating system', including 'a collection of software that manages computer hardware resources and provides common services for computer programs' (SP 800-152) and 'an integrated collection of service routines for supervising the sequencing of programs... input/output control, resource scheduling, and data management' (SP 800-82r3). Supports the definition, resource-management, intermediary, and I/O claims. U.S. government work, public domain."
+    },
+    {
+      "id": "linux-kernel-readme",
+      "title": "Linux kernel README (Administration guide)",
+      "provider": "kernel.org — The Linux Kernel documentation",
+      "url": "https://www.kernel.org/doc/html/latest/admin-guide/README.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Primary project documentation. States Linux is a Unix clone written by Linus Torvalds with true multitasking, virtual memory, shared libraries, proper memory management, and multistack networking, ported to many architectures. Supports the Linux example and kernel-as-hardware-manager claims. Facts synthesized in original wording."
+    },
+    {
+      "id": "wikipedia-operating-system",
+      "title": "Operating system",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Operating_system",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Reference cross-check for OS functions: allocating CPU time and memory between applications, abstracting hardware access for programmers, providing common services (network/disk), the kernel providing protection between applications and users, and the GUI-vs-CLI distinction (text-only CLI vs more user-friendly GUI). REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "wikipedia-kernel-operating-system",
+      "title": "Kernel (operating system)",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kernel_(operating_system)",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Reference cross-check for the kernel: 'at the core of a computer's operating system that always has complete control over everything in the system', resident in memory, loaded early after the bootloader, controls hardware resources via device drivers, arbitrates conflicts between processes, and runs in protected kernel space separate from user space. REFERENCE_ONLY; no wording reproduced."
+    },
+    {
+      "id": "statcounter-os-market-share",
+      "title": "Operating System Market Share Worldwide",
+      "provider": "StatCounter GlobalStats",
+      "url": "https://gs.statcounter.com/os-market-share",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Dated secondary statistic. Worldwide all-platform share, July 2026: Android ~41.4%, Windows ~27.7%, iOS ~19.7%, OS X ~4.8%, macOS ~3.0%, Linux ~2.9%. Used only to justify 'Windows/macOS/Linux common on computers; Android/iOS dominate phones', cited with date. Figures move over time."
+    }
+  ]
+}

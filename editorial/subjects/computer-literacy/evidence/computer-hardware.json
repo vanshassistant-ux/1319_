@@ -1,0 +1,147 @@
+{
+  "topicId": "computer-literacy:foundations:computer-hardware",
+  "subjectId": "computer-literacy",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "The distinction between hardware (physical) and software (instructions), with firmware between them",
+      "The major components of a typical computer: case/system unit, motherboard, CPU, RAM, storage, power supply, graphics (GPU), cooling",
+      "How components connect: motherboard sockets/slots, buses, expansion slots (PCIe), and ports for peripherals",
+      "That desktops, laptops, tablets, and phones share the same basic parts in different form factors"
+    ],
+    "supporting": [
+      "Naming peripherals as input/output devices that attach through ports",
+      "Integrated versus discrete graphics",
+      "Active versus passive cooling"
+    ],
+    "outOfScope": [
+      "In-depth treatment of CPU, RAM, and storage (owned by 'CPU, RAM, and Storage')",
+      "In-depth treatment of input/output peripherals (owned by 'Input and Output Devices')",
+      "Software categories and the operating system (owned by 'Software' and 'Operating Systems')",
+      "Assembly/repair instructions, overclocking, or purchasing recommendations for specific products"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Hardware is the material, physical components of a computer system, as distinct from the software that runs on it.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-csrc-glossary-hardware"],
+      "status": "supported"
+    },
+    {
+      "claim": "Firmware is programs and data stored inside a hardware component, typically in read-only memory, and is distinct from ordinary software.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-csrc-glossary-firmware"],
+      "status": "supported"
+    },
+    {
+      "claim": "The motherboard is the main circuit board that connects the other components and provides communication and power among them through sockets, slots, and buses.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ciscopress-intro-pc-hardware", "openbookproject-intro2ict-internal-hardware"],
+      "status": "supported"
+    },
+    {
+      "claim": "A functional desktop computer is built from a short list of core parts: a case, motherboard, CPU, memory (RAM), storage drive, and power supply, plus graphics and cooling.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ciscopress-intro-pc-hardware", "openbookproject-intro2ict-internal-hardware"],
+      "status": "supported"
+    },
+    {
+      "claim": "The power supply unit converts alternating current from the wall outlet into the low-voltage direct current the internal components use.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ciscopress-intro-pc-hardware", "openbookproject-intro2ict-internal-hardware"],
+      "status": "supported"
+    },
+    {
+      "claim": "RAM is fast, volatile memory whose contents are cleared when power is removed, in contrast to non-volatile storage that keeps files when the machine is off.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["openbookproject-intro2ict-internal-hardware"],
+      "status": "supported"
+    },
+    {
+      "claim": "Modern expansion cards, including discrete graphics cards, connect through PCI Express (PCIe) expansion slots; graphics may instead be integrated with the CPU or motherboard.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ciscopress-intro-pc-hardware"],
+      "status": "supported"
+    },
+    {
+      "claim": "Desktops use standardized motherboard form factors such as ATX, micro-ATX, and mini-ITX; laptops, tablets, and phones package the same basic parts more compactly.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ciscopress-intro-pc-hardware"],
+      "status": "supported"
+    },
+    {
+      "claim": "Cooling, whether active (fans) or passive (heat sinks), prevents components such as the CPU from overheating.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ciscopress-intro-pc-hardware"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic placeholder text (e.g., 'Computer Hardware is a foundational concept... this lesson introduces its meaning') with no substantive, sourced claims about hardware components; all of it was discarded."
+  ],
+  "correctionsNeeded": [
+    "Replaced placeholder definitions and vocabulary (which defined 'computer hardware' circularly as 'a foundational Computer Literacy concept') with a concrete, physical-versus-instructions definition and specific component vocabulary.",
+    "Added the actual component inventory (case, motherboard, CPU, RAM, storage, PSU, GPU, cooling) and the connection model (buses, slots, ports) that the draft entirely lacked.",
+    "Corrected the eli10/analogy to a substantive kitchen model with stated limits, replacing the draft's empty 'map legend' placeholder."
+  ],
+  "rightsIssues": [
+    "openbookproject and Cisco Press pages are copyrighted; used as REFERENCE_ONLY. No wording was reproduced; all prose is original synthesis.",
+    "NIST CSRC glossary entries are U.S. federal government works; treated as reference and re-expressed in original wording rather than quoted at length."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-csrc-glossary-hardware",
+      "title": "Hardware — Glossary",
+      "provider": "NIST Computer Security Resource Center (CSRC)",
+      "url": "https://csrc.nist.gov/glossary/term/hardware",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Fetched 2026-08-19. Defines hardware as 'the material physical components of a system' (sourced to CNSSI 4009-2015 / NIST SP 800-53 Rev.5, SP 800-37 Rev.2, SP 800-171r3). Supports the hardware-versus-software distinction. Federal work; definition re-expressed in original wording, not quoted at length."
+    },
+    {
+      "id": "nist-csrc-glossary-firmware",
+      "title": "Firmware — Glossary",
+      "provider": "NIST Computer Security Resource Center (CSRC)",
+      "url": "https://csrc.nist.gov/glossary/term/firmware",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Fetched 2026-08-19. Defines firmware as computer programs and data stored in hardware, typically in ROM/PROM, that cannot be dynamically modified during execution (CNSSI 4009-2015 via RFC 4949). Supports the firmware-between-hardware-and-software point. Original wording used in the lesson."
+    },
+    {
+      "id": "openbookproject-intro2ict-internal-hardware",
+      "title": "Internal Computer Hardware — Introduction to Information and Communication Technology",
+      "provider": "OpenBookProject (Will Brady and Jeffrey Elkner)",
+      "url": "http://openbookproject.net/courses/intro2ict/hardware/internal.html",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Fetched 2026-08-19. Describes motherboard as the central board through which components interface, CPU as executing programs (fetch/decode/execute/writeback), RAM as fast-access memory cleared at power-down, power supply converting AC to low-voltage DC (ATX), and storage (HDD/SSD, RAID). Page marked '© Copyright 2017, Will Brady and Jeffrey Elkner'; treated as reference only, no wording reproduced. Supports motherboard, RAM-volatility, PSU, and storage claims."
+    },
+    {
+      "id": "ciscopress-intro-pc-hardware",
+      "title": "Introduction to Personal Computer Hardware — PC Components (1.2)",
+      "provider": "Cisco Press (Pearson)",
+      "url": "https://www.ciscopress.com/articles/article.asp?p=3188196&seqNum=5",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Fetched 2026-08-19. Reputable technical publisher excerpt from IT Essentials curriculum. Covers case/form factors, PSU converting AC to DC with 3.3V/5V/12V rails and ATX12V, motherboard form factors (ATX 12x9.6, micro-ATX, mini-ITX), CPU socket types (PGA/LGA), RAM types/modules, storage (HDD/SSD/SATA), expansion cards via PCIe (x1/x4/x8/x16) including video/GPU, and active/passive cooling. Marked '© 2026 Pearson. All rights reserved.' Used as REFERENCE_ONLY; facts synthesized, no wording reproduced. Supports motherboard-hub, core-components, PSU, PCIe/discrete-GPU, form-factor, and cooling claims."
+    }
+  ]
+}

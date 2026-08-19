@@ -1,0 +1,137 @@
+{
+  "topicId": "computer-literacy:foundations:input-and-output-devices",
+  "subjectId": "computer-literacy",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Definition of input devices (data flows into the computer) and output devices (data flows out to the user)",
+      "Common input devices: keyboard, mouse/trackpad, touchscreen, microphone, webcam, scanner, game controller",
+      "Common output devices: monitor/display, printer, speakers/headphones, projector",
+      "Devices that are both input and output: touchscreen, headset, network interface",
+      "The idea that the CPU processes what input captures and sends results to output devices",
+      "Ports and connections at a naming level: USB, HDMI, audio jack, Bluetooth/wireless"
+    ],
+    "supporting": [
+      "Peripheral as the general term for devices around the CPU and memory",
+      "Plug and Play / how peripherals are recognized",
+      "Accessibility framing: swapping input or output devices"
+    ],
+    "outOfScope": [
+      "Whole-system hardware overview (owned by Computer Hardware topic)",
+      "CPU, RAM, and storage internals (owned by CPU, RAM, and Storage topic)",
+      "Detailed electrical specifications, data rates, and protocol internals of each port standard"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Input devices provide data and control signals into a computer; a keyboard, mouse, scanner, microphone, webcam, and game controller are input devices.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["lumen-computer-devices", "microsoft-learn-usb"],
+      "status": "supported"
+    },
+    {
+      "claim": "Output devices convert processed information into human-readable form; monitors, printers, speakers, headphones, and projectors are output devices.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["lumen-computer-devices"],
+      "status": "supported"
+    },
+    {
+      "claim": "Some devices are both input and output, including touchscreens, headsets, modems, and network interface controllers.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["lumen-computer-devices"],
+      "status": "supported"
+    },
+    {
+      "claim": "USB (Universal Serial Bus) is an expandable Plug and Play interface that provides a standard, low-cost connection for peripheral devices such as keyboards, mice, printers, scanners, and storage; the USB-IF maintains the standard.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["microsoft-learn-usb"],
+      "status": "supported"
+    },
+    {
+      "claim": "Bluetooth is a short-range wireless standard operating in the 2.4 GHz band, used to connect peripherals such as keyboards, mice, speakers, and headphones, and is maintained by the Bluetooth SIG.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["bluetooth-sig-overview"],
+      "status": "supported"
+    },
+    {
+      "claim": "HDMI (High-Definition Multimedia Interface) carries digital video and audio over a single cable and connects displays to computers and consumer electronics.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["hdmi-org-spec"],
+      "status": "supported"
+    },
+    {
+      "claim": "Input and output devices are called peripherals because they surround the core CPU and memory of the computer.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["lumen-computer-devices", "microsoft-learn-usb"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic filler ('Input And Output Devices is a foundational concept... a simple way to apply it') with no device-specific content; none of it was usable as evidence."
+  ],
+  "correctionsNeeded": [
+    "Replaced boilerplate title-casing 'Input And Output Devices' with correct title 'Input and Output Devices'.",
+    "Replaced empty generic vocabulary (context, evidence, application) with domain vocabulary (peripheral, port, USB, HDMI, Bluetooth, etc.).",
+    "Added real device examples, the input-process-output loop, and connection standards that the draft entirely lacked."
+  ],
+  "rightsIssues": [
+    "Lumen/LibreTexts page is CC BY-SA (derived from Wikipedia); facts synthesized and prose written originally, so no ShareAlike obligation is triggered. Microsoft Learn, Bluetooth SIG, and HDMI.org are used REFERENCE_ONLY for facts; no wording reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "lumen-computer-devices",
+      "title": "Computer Devices (Information Literacy) — Computer Concepts",
+      "provider": "Lumen Learning / LibreTexts",
+      "url": "https://human.libretexts.org/Courses/Lumen_Learning/Information_Literacy_(Lumen)/17:_Computer_Concepts_2/17.2:_Computer_Devices",
+      "sourceType": "open-textbook",
+      "usage": "EXTRACT_AND_ADAPT",
+      "license": "CC BY-SA",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "OER page defining input devices, output devices, and input/output devices with example lists (keyboard, mouse, scanner, microphone, webcam, game controller; monitor, printer, speakers, projector; modems, NICs, multifunction printers). Facts synthesized into original prose; no sentences reproduced."
+    },
+    {
+      "id": "microsoft-learn-usb",
+      "title": "Universal Serial Bus (USB) — Windows drivers",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/usbcon/",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Authoritative documentation: USB is an expandable Plug and Play serial interface giving a standard, low-cost connection for peripheral devices (keyboards, mice, joysticks, printers, scanners, storage, cameras); the USB-IF maintains the official specification. Used for USB and peripheral facts; no wording reproduced."
+    },
+    {
+      "id": "bluetooth-sig-overview",
+      "title": "Bluetooth Technology Overview",
+      "provider": "Bluetooth SIG",
+      "url": "https://www.bluetooth.com/learn-about-bluetooth/tech-overview/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Bluetooth SIG overview: wireless standard in the 2.4 GHz band, maintained by the SIG, used for wireless audio (headphones, speakers) and peripherals (keyboards, mice). Used for the Bluetooth/wireless facts; no wording reproduced."
+    },
+    {
+      "id": "hdmi-org-spec",
+      "title": "What is HDMI? — HDMI Specification",
+      "provider": "HDMI Licensing Administrator (HDMI.org)",
+      "url": "https://www.hdmi.org/spec/index",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Official HDMI site: HDMI is a digital video, audio, and data interface connecting displays to computers and consumer electronics over a single cable. Used for the HDMI naming-level facts; no wording reproduced."
+    }
+  ]
+}
