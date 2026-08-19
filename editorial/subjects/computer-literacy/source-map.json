@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "subjectSlug": "computer-literacy",
+  "note": "Discovery leads for topic workers. Every topic must still research and verify its own sources; nothing here is pre-approved for reuse. A practical/technical subject: describe categories and standards, not specific commercial products; keep security guidance current and educational. Date any statistic.",
+  "reviewProfile": ["practical-technical", "security-sensitive", "consumer-facing"],
+  "tierA": [
+    { "provider": "NIST — Digital Identity Guidelines (SP 800-63B)", "url": "https://pages.nist.gov/800-63-3/sp800-63b.html", "useFor": "CURRENT password and authentication guidance (length over complexity, no forced periodic rotation, screen against breach lists) and MFA/authenticator assurance — note this reversed older advice" },
+    { "provider": "CISA — Cybersecurity & Infrastructure Security Agency", "url": "https://www.cisa.gov/secure-our-world", "useFor": "phishing recognition, malware defense, MFA, strong passwords/managers, updates, backups — teach defense, not attacks" },
+    { "provider": "FTC Consumer Advice", "url": "https://consumer.ftc.gov/", "useFor": "phishing/scams, identity theft, online privacy, protecting personal data" },
+    { "provider": "IETF / RFCs", "url": "https://www.ietf.org/", "useFor": "internet protocols (IP, TCP, HTTP, DNS, SMTP) — authoritative technical definitions" },
+    { "provider": "MDN Web Docs (Mozilla)", "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions", "useFor": "how the web works, browsers, HTTP, URLs, DNS — clear technical explanations (CC BY-SA, describe/attribute)" },
+    { "provider": "ICANN", "url": "https://www.icann.org/resources/pages/what-2012-02-25-en", "useFor": "domain names / DNS governance" },
+    { "provider": "Internet Society", "url": "https://www.internetsociety.org/", "useFor": "how the internet works, its history and architecture" }
+  ],
+  "tierB": [
+    { "provider": "GCFGlobal (Goodwill Community Foundation)", "url": "https://edu.gcfglobal.org/en/topics/computerbasics/", "useFor": "computer basics, internet, email, productivity apps — well-established free digital-literacy curriculum; REFERENCE_ONLY (copyrighted), describe in original wording" },
+    { "provider": "Open Textbook Library — computer/digital literacy OER", "url": "https://open.umn.edu/opentextbooks", "useFor": "open computer-literacy and productivity texts (e.g., 'Computer Usage and Applications', spreadsheet/word-processing OER)" },
+    { "provider": "StaySafeOnline / National Cybersecurity Alliance", "url": "https://staysafeonline.org/", "useFor": "consumer security best practices" },
+    { "provider": "StatCounter GlobalStats", "url": "https://gs.statcounter.com/", "useFor": "browser/OS market-share figures — date them; secondary" }
+  ],
+  "cautions": [
+    "Describe software CATEGORIES and functions generically. Name common examples (e.g., Windows/macOS/Linux; a word processor like Microsoft Word, Google Docs, or LibreOffice Writer) as examples, not as requirements, and never as the only option; reproduce no proprietary UI, icons, or copyrighted screenshots.",
+    "Security guidance must reflect CURRENT best practice, which has changed. Follow NIST SP 800-63B: favor long passphrases over forced complexity, do NOT recommend routine periodic password changes (only on evidence of compromise), and screen new passwords against known-breach lists. Recommend a password manager and multifactor authentication (phishing-resistant MFA where possible). Explicitly note where this reverses older advice.",
+    "Teach phishing and malware for RECOGNITION and DEFENSE only. Do not provide instructions, code, or techniques for creating malware, phishing kits, or attacks. Frame everything as how to protect oneself and one's organization.",
+    "Technical explanations (how the web/DNS/HTTP/TCP work, file systems, storage types) must be accurate and sourced to standards bodies or reputable technical documentation. Distinguish the internet from the web; distinguish RAM (volatile) from storage (non-volatile); distinguish a URL, a domain, and an IP address.",
+    "Privacy and security content is educational, not individualized legal or security advice. Represent privacy as involving trade-offs and note that laws (e.g., GDPR, state privacy laws) exist without giving legal advice; do not tell readers they are safe or compliant.",
+    "Date any statistic (breach costs, market share, adoption rates) with its year and source; technology figures move quickly.",
+    "Distribute question answer keys EVENLY across A/B/C/D, ensuring at least one C and one D per topic; do not single out any position. Verify keys yourself from the file."
+  ]
+}
