@@ -1,0 +1,98 @@
+{
+  "topicId": "graphic-design-and-digital-media:foundations:photography-fundamentals",
+  "subjectId": "graphic-design-and-digital-media",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Exposure as the total light recorded by the sensor for one frame",
+      "The exposure triangle: aperture, shutter speed, ISO",
+      "The stop as the doubling/halving unit of light shared by all three controls",
+      "Aperture and f-number, and aperture's control of depth of field",
+      "Shutter speed and its control of motion (freeze vs blur)",
+      "ISO and its control of noise",
+      "Trading settings in stops to hold exposure constant"
+    ],
+    "supporting": [
+      "Focal length / lenses at an introductory level",
+      "Depth of field as a concept",
+      "RAW vs JPEG and editing latitude",
+      "Aperture priority and shutter priority modes"
+    ],
+    "outOfScope": [
+      "Post-capture photo editing workflows (owned by the photo-editing topic)",
+      "Composition and the rule of thirds (owned by the composition topic)",
+      "Pixels, ppi/dpi, and image resolution (owned by the image-resolution topic)",
+      "Color management, white balance detail, lighting setups, printing"
+    ]
+  },
+  "claims": [
+    { "claim": "Exposure is the total amount of light the sensor records for one frame; too little light underexposes (dark) and too much overexposes (washed out).", "claimType": "TECHNICAL", "sourceIds": ["learning-digital-photography-nic", "libretexts-fundamentals-photography"], "status": "supported" },
+    { "claim": "Aperture, shutter speed, and ISO form the exposure triangle and together determine exposure; changing one affects the balance and usually must be compensated by another.", "claimType": "TECHNICAL", "sourceIds": ["learning-digital-photography-nic", "libretexts-fundamentals-photography"], "status": "supported" },
+    { "claim": "Aperture is the lens opening, measured in f-stops; a wide aperture (low f-number) lets in more light and gives shallow depth of field, and a narrow aperture (high f-number) lets in less light and gives deeper depth of field.", "claimType": "TECHNICAL", "sourceIds": ["learning-digital-photography-nic", "wikipedia-f-number"], "status": "supported" },
+    { "claim": "The f-number is the focal length divided by the diameter of the entrance pupil, so a larger f-number denotes a smaller opening; the full-stop scale (f/1, 1.4, 2, 2.8, 4, 5.6, 8, 11, 16, 22) steps by the square root of two, each step halving or doubling the light.", "claimType": "TECHNICAL", "sourceIds": ["wikipedia-f-number"], "status": "supported" },
+    { "claim": "Shutter speed is how long the sensor is exposed; fast shutter speeds freeze motion and slow shutter speeds blur it.", "claimType": "TECHNICAL", "sourceIds": ["learning-digital-photography-nic", "libretexts-fundamentals-photography"], "status": "supported" },
+    { "claim": "ISO is the sensor's sensitivity/amplification; higher ISO brightens the image from the same light but increases noise and can reduce image quality.", "claimType": "TECHNICAL", "sourceIds": ["learning-digital-photography-nic", "libretexts-fundamentals-photography"], "status": "supported" },
+    { "claim": "A stop is a doubling or halving of the light in an exposure, and each control is calibrated in stops so they can be traded against one another (e.g. going from 1/500 s to 1/250 s adds one stop; the full f-stop scale changes light by one stop per step).", "claimType": "TECHNICAL", "sourceIds": ["wikipedia-f-number", "learning-digital-photography-nic"], "status": "supported" },
+    { "claim": "RAW files store the sensor's full unprocessed capture and give greater latitude to adjust exposure and white balance in post-processing without degrading the image; JPEG files are compressed and processed in-camera, smaller and ready to use but with less editing flexibility.", "claimType": "TECHNICAL", "sourceIds": ["learning-digital-photography-nic"], "status": "supported" },
+    { "claim": "Worked example: from f/8, 1/250 s, ISO 100, opening to f/2.8 is three stops brighter (f/8 -> f/5.6 -> f/4 -> f/2.8); shortening the shutter three stops to 1/2000 s (1/250 -> 1/500 -> 1/1000 -> 1/2000) restores the same exposure value.", "claimType": "QUANTITATIVE", "sourceIds": ["wikipedia-f-number", "learning-digital-photography-nic"], "status": "supported" }
+  ],
+  "conflictingEvidence": [
+    { "issue": "Whether ISO physically changes sensor 'sensitivity' or amplifies the captured signal.", "positions": ["Introductory texts describe ISO as sensor sensitivity to light.", "Engineering descriptions frame ISO as amplification/gain applied to the captured signal."], "resolution": "The lesson uses 'how strongly the signal is amplified' as the primary framing and mentions sensitivity as the conventional term, avoiding an overclaim while matching the OER sources; the practical fact (higher ISO = brighter file + more noise) is identical either way." }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic boilerplate ('a foundational concept... introduces its meaning, its context') with no photographic substance; nothing in it was usable and all of it was discarded."
+  ],
+  "correctionsNeeded": [
+    "Replaced boilerplate with substantive coverage of the exposure triangle, stops, depth of field, motion, noise, and RAW vs JPEG.",
+    "Rewrote vocabulary, which in the draft was placeholder terms (context, evidence, application) unrelated to photography.",
+    "Replaced the placeholder worked example with a stop-based exposure-compensation calculation verified in Bash."
+  ],
+  "rightsIssues": [
+    "Learning Digital Photography is CC BY-NC-SA 4.0 (non-commercial, share-alike). No wording or images were reproduced; only facts were synthesized into original prose, so the lesson does not create a derivative-license obligation on the source's text and no images are used.",
+    "No copyrighted photographs, logos, font files, or proprietary color values are reproduced anywhere in the lesson."
+  ],
+  "sourceRecords": [
+    {
+      "id": "learning-digital-photography-nic",
+      "title": "Learning Digital Photography",
+      "provider": "Eric Demattos, North Idaho College (Open Textbook Library / Pressbooks)",
+      "url": "https://nic.pressbooks.pub/learningdigitalphotography/chapter/understanding-the-exposure-triangle/",
+      "sourceType": "open-textbook",
+      "usage": "ATTRIBUTION_REQUIRED",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Open textbook, CC BY-NC-SA 4.0 (license stated inline throughout the chapters and confirmed via the Open Textbook Library record; author Eric Demattos, North Idaho College, 2024). The canonical opentextbc/pressbooks page returned HTTP 403 to the WebFetch fetcher; the chapters 'Understanding the Exposure Triangle' and 'Image Formats: JPEG vs RAW' were read via curl with a browser user-agent (HTTP 200) on 2026-08-19. Supports: the exposure-triangle framing (shutter speed, aperture, ISO working together for correct exposure); shutter speed measured in fractions of a second, fast freezes / slow blurs motion; aperture measured in f-stops, wide aperture (low f-stop) = more light + shallow depth of field, narrow (high f-stop) = less light + deep depth of field; ISO = sensitivity, low ISO = cleaner, high ISO = brighter in low light but more noise; changing one setting must be compensated by another; RAW keeps all sensor data with greater post-processing flexibility for exposure and white balance, JPEG is compressed with limited editing flexibility. Facts synthesized into original prose; no wording or images reproduced." },
+    {
+      "id": "libretexts-fundamentals-photography",
+      "title": "Fundamentals of Photography and Creative Practice",
+      "provider": "Jessica Labatte & Larissa Garcia, Northern Illinois University (CARLI), Humanities LibreTexts",
+      "url": "https://human.libretexts.org/Courses/Northern_Illinois_University/Fundamentals_of_Photography_and_Creative_Practice/01:_Creative_Camera_Functions",
+      "sourceType": "open-textbook",
+      "usage": "EXTRACT_AND_ADAPT",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Open textbook, CC BY 4.0 (stated on the page and confirmed via the LibreTexts course front matter; authored by Jessica Labatte and Larissa Garcia at Northern Illinois University through the Consortium of Academic and Research Libraries in Illinois). Chapter 1 'Creative Camera Functions' covers the exposure triangle — aperture for light intake and depth of field, shutter speed for exposure duration, ISO settings — and manual-mode exercises combining the three to reach proper exposure. Used to corroborate the exposure-triangle structure and the mapping of each control to its exposure role and side effect. Facts synthesized into original prose; no wording reproduced." },
+    {
+      "id": "wikipedia-f-number",
+      "title": "F-number",
+      "provider": "Wikipedia (Wikimedia Foundation)",
+      "url": "https://en.wikipedia.org/wiki/F-number",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Encyclopedia reference read via WebFetch on 2026-08-19, used only to corroborate the well-established, evergreen optics that underlie the stop concept: the f-number equals focal length divided by entrance-pupil diameter (so a larger number is a smaller opening); the standard full-stop scale f/1, 1.4, 2, 2.8, 4, 5.6, 8, 11, 16, 22 steps by the square root of two because light depends on the square of the aperture diameter, so each step halves or doubles the light (one stop); and a lower f-number gives a larger aperture, more light, and shallower depth of field. This mathematics was independently re-derived and checked in Bash. Treated as reference only; no wording reproduced." }
+  ]
+}

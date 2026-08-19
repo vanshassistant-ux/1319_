@@ -97,42 +97,42 @@ A grid is an invisible framework of margins, columns, gutters, and modules that 
 ## Practice Question Bank
 
 1. **In the anatomy of a grid, what is a gutter?**
-   - A) The outer negative space between the content and the edge of the format
-   - B) The consistent space that separates one column or row from the next ✓
-   - C) The horizontal line that text sits on
-   - D) A merged group of modules assigned a single function
+   - A. The outer negative space between the content and the edge of the format
+   - B. The consistent space that separates one column or row from the next ✓
+   - C. The horizontal line that text sits on
+   - D. A merged group of modules assigned a single function
 
    A gutter is the internal space that separates adjacent columns (or rows). The outer negative space is the margin (A), a horizontal line type sits on is a baseline/flowline (C), and a merged group of modules is a spatial zone (D). *(recall)*
 
 2. **Which grid type is a single large text block defined only by the margins, typical of a novel or essay?**
-   - A) Modular grid
-   - B) Column grid
-   - C) Hierarchical grid
-   - D) Manuscript grid ✓
+   - A. Modular grid
+   - B. Column grid
+   - C. Hierarchical grid
+   - D. Manuscript grid ✓
 
    The manuscript (block) grid is one large block of continuous text framed by the margins. A modular grid is a matrix of cells (A), a column grid divides into vertical columns (B), and a hierarchical grid uses irregular, content-driven divisions (C). *(recall)*
 
 3. **What does a baseline grid control, and why does it matter?**
-   - A) The vertical position of each line of type, so text stays in step and creates a consistent rhythm ✓
-   - B) The number of columns a layout is divided into horizontally
-   - C) The width of the outer margins relative to the gutters
-   - D) Which modules are merged into spatial zones
+   - A. The vertical position of each line of type, so text stays in step and creates a consistent rhythm ✓
+   - B. The number of columns a layout is divided into horizontally
+   - C. The width of the outer margins relative to the gutters
+   - D. Which modules are merged into spatial zones
 
    A baseline grid fixes the vertical position of every line of type so text aligns across columns and pages. Column count is set by the column grid (B), margin-to-gutter proportion is a separate convention (C), and merging cells is a modular-grid feature (D). *(understanding)*
 
 4. **You are designing a product catalog with many equal-sized items, each needing an image, a title, a price, and a short blurb, arranged in a tidy repeating matrix. Which grid best fits, and why?**
-   - A) A manuscript grid, because the catalog is mostly continuous text
-   - B) A baseline grid alone, because it controls vertical rhythm
-   - C) A modular grid, because its matrix of equal cells organizes repeating multi-part items in two dimensions ✓
-   - D) No grid, because catalogs work best with freeform placement
+   - A. A manuscript grid, because the catalog is mostly continuous text
+   - B. A baseline grid alone, because it controls vertical rhythm
+   - C. A modular grid, because its matrix of equal cells organizes repeating multi-part items in two dimensions ✓
+   - D. No grid, because catalogs work best with freeform placement
 
    A modular grid's matrix of equal cells is ideal for repeating multi-part items that must align both ways. A manuscript grid suits prose (A), a baseline grid governs only vertical text rhythm (B), and freeform placement sacrifices the needed alignment (D). *(application)*
 
 5. **A designer says, "I put a single strong image bleeding past the columns to grab attention, and it works because the rest of the page rigorously follows the grid." Which principle, rooted in the Swiss-style view of the grid, best explains why this is effective?**
-   - A) The golden ratio guarantees that any image placed at 1:1.618 will look correct
-   - B) A grid removes all need for design judgment once it is in place
-   - C) Responsive breakpoints automatically emphasize the largest image on the page
-   - D) A deliberate break reads as emphasis only against a clear, consistent grid; the grid is an aid to be used well, then broken on purpose ✓
+   - A. The golden ratio guarantees that any image placed at 1:1.618 will look correct
+   - B. A grid removes all need for design judgment once it is in place
+   - C. Responsive breakpoints automatically emphasize the largest image on the page
+   - D. A deliberate break reads as emphasis only against a clear, consistent grid; the grid is an aid to be used well, then broken on purpose ✓
 
    Müller-Brockmann held that the grid is an aid, not a guarantee, and mastering it is what lets a designer break it meaningfully. The golden ratio guarantees nothing (A), a grid organizes but does not replace judgment (B), and breakpoints control reflow, not emphasis (C). *(analysis)*
 

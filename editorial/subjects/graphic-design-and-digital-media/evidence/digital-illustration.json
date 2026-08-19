@@ -1,0 +1,153 @@
+{
+  "topicId": "graphic-design-and-digital-media:foundations:digital-illustration",
+  "subjectId": "graphic-design-and-digital-media",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Digital illustration as creating original artwork on a computer, distinct from editing an existing photograph",
+      "The two approaches: vector illustration (editable geometric objects) and raster (pixel) painting",
+      "Vector illustration mechanics: anchor points, paths, Bezier curves, the pen/curvature tool, shape primitives, fills and strokes; objects stay independent and editable; scalable",
+      "Raster painting mechanics: brushes and brush engines, opacity, blending/composite modes, layers; resolution-dependent canvas set up front",
+      "Shared tools: drawing tablet and pressure-sensitive stylus (pressure 0-1, tilt, rotation), layers, brush/style presets",
+      "Choosing an approach by look and use, and combining vector and raster in one workflow",
+      "Professional applications: editorial illustration, iconography/interface art, character and concept art, infographics, product/spot illustration, technical/scientific illustration"
+    ],
+    "supporting": [
+      "Vector art's scalability follows from shapes being stored mathematically and recomputed at any size (mechanism owned by Raster vs Vector; referenced)",
+      "Raster art's resolution-dependence follows from a fixed pixel count (mechanism owned by Raster vs Vector; referenced)",
+      "Techniques are the same across professional, free, and open-source tools; the lesson describes techniques generically without product endorsement"
+    ],
+    "outOfScope": [
+      "The pixel-grid-versus-math mechanism in depth (owned by Raster versus Vector; referenced, not re-taught)",
+      "Editing, retouching, or compositing existing photographs (owned by Photo Editing)",
+      "The detailed catalog of file formats and their compression/transparency/color properties (owned by File Formats; a few named in passing)",
+      "Color theory, gamut, and color encoding (owned by Color Theory / RGB and CMYK)",
+      "ppi/dpi and print-size math (owned by Image Resolution)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Digital illustration means creating original artwork with a computer, as opposed to capturing a scene with a camera or editing an existing photograph; almost all of this work uses one of two families of tools, vector or raster, corresponding to the raster-versus-vector distinction.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["bccampus-graphic-design-print-production-fundamentals", "krita-manual"],
+      "status": "supported"
+    },
+    {
+      "claim": "In vector illustration an image is built from objects: paths defined by anchor points connected by straight or curved segments, where curved segments are Bezier curves controlled by handles; SVG defines its content as vector graphic shapes such as paths consisting of straight lines and curves, and each closed shape can carry a fill and a stroke.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["w3c-svg11", "bccampus-graphic-design-print-production-fundamentals"],
+      "status": "supported"
+    },
+    {
+      "claim": "Because vector shapes are stored mathematically, a renderer recomputes them at any requested size and the edges stay sharp, which is why vectors are used for logos, icons, symbols, and flat illustration that must appear at many sizes; the underlying scalability mechanism is the same one demonstrated by outline fonts (points and Bezier curves rendered crisply at each device resolution).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["bccampus-graphic-design-print-production-fundamentals", "w3c-svg11"],
+      "status": "supported"
+    },
+    {
+      "claim": "In raster digital painting, color is deposited directly onto a fixed grid of pixels using brushes; painting programs use brush engines that determine how each stroke deposits pixels (so one program can imitate airbrush, ink, oil, or texture), and provide many blending/composite modes and layers for building an image non-destructively.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["krita-manual"],
+      "status": "supported"
+    },
+    {
+      "claim": "Raster painting is resolution-dependent: because the canvas is a fixed pixel grid, the artist chooses canvas dimensions and resolution before starting, since enlarging a finished painting past its pixel count degrades it (the mechanism is owned by the Raster versus Vector topic).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["bccampus-graphic-design-print-production-fundamentals"],
+      "status": "supported"
+    },
+    {
+      "claim": "A pressure-sensitive stylus reports its input to software in detail: modern input specifications define pen/stylus as a distinct pointer type and expose a normalized pressure value in the range 0 to 1 (0.5 when a button is active on hardware without pressure), plus tilt (tiltX and tiltY, -90 to 90 degrees) and twist (0 to 359 degrees), which software maps to a stroke's width, opacity, or size.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["w3c-pointer-events"],
+      "status": "supported"
+    },
+    {
+      "claim": "Choosing between the approaches depends on look and use: vector suits clean, scalable, re-editable shapes and flat color (logos, icons, wayfinding, diagrams); raster suits texture, soft blending, and painterly or photographic detail at a known size (concept art, character painting, covers). The two are frequently combined in one workflow.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["bccampus-graphic-design-print-production-fundamentals", "krita-manual", "w3c-svg11"],
+      "status": "supported"
+    },
+    {
+      "claim": "The techniques of digital illustration (paths and anchor points, brushes, pressure, layers, blending) are the same concepts across professional, free, and open-source applications, so the lesson describes techniques generically rather than endorsing a specific product.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["krita-manual"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft was generic boilerplate ('a foundational concept students use to organize information', 'a label on a toolbox drawer', 'reading a map legend') with no substantive, verifiable statement about digital illustration; none of it was usable as evidence."
+  ],
+  "correctionsNeeded": [
+    "Replaced placeholder definitions with substantive treatments of the two illustration approaches (vector geometry versus raster painting) and their actual mechanics.",
+    "Added the vector workflow (anchor points, paths, Bezier curves, pen/shape tools, fills and strokes, editable stacked objects) grounded in the SVG spec and BCcampus OER.",
+    "Added the raster painting workflow (brush engines, opacity, blending modes, layers, resolution-dependent canvas) grounded in the Krita manual, with the pixel-versus-math mechanism deferred to Raster versus Vector.",
+    "Added pressure-sensitive stylus/tablet input with real values (normalized 0-1 pressure, tilt, rotation, pen pointer type) grounded in the W3C Pointer Events spec.",
+    "Added when-to-use guidance, combined workflows, and a list of professional applications; kept photo editing and the file-format catalog out of scope for their sibling topics; described techniques generically without endorsing any product."
+  ],
+  "rightsIssues": [
+    "BCcampus Graphic Design and Print Production Fundamentals is CC BY 4.0, permitting adaptation with attribution; the lesson uses original wording and credits the source rather than reproducing text.",
+    "The W3C SVG 1.1 and Pointer Events specifications are reference-only standards documents; only short attributed definitional phrases (e.g., the SVG 'vector graphic shapes' phrasing and the numeric pressure/tilt ranges) are used, with no substantial wording reproduced.",
+    "The Krita manual is licensed GNU Free Documentation License 1.3+; it is treated as reference-only and no manual wording is reproduced, only factual concepts (brush engines, blending modes, layers) synthesized in original prose.",
+    "No copyrighted artwork, logos, font files, proprietary UI, or proprietary color values were reproduced; software categories and techniques are described generically."
+  ],
+  "sourceRecords": [
+    {
+      "id": "bccampus-graphic-design-print-production-fundamentals",
+      "title": "Graphic Design and Print Production Fundamentals (Chapter 5, Pre-press / Raster Image Processing)",
+      "provider": "BCcampus / Graphic Communications Open Textbook Collective (Ken Jeffery, Alan Martin, Roberto Medeiros, Steve Tomljanovic; Chapter 5 by Wayne Collins)",
+      "url": "https://opentextbc.ca/graphicdesign/",
+      "sourceType": "open-textbook",
+      "usage": "EXTRACT_AND_ADAPT",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Existing registry source reused with its canonical id and URL. Supports the raster/vector foundations underlying illustration: that a raster image is a grid of pixels created at a fixed resolution and that a raster image processor 'does not do a good job of interpolating more data to produce additional detail... if that information is missing to begin with' (raster resolution-dependence, referenced not re-derived); and that a font describes glyphs as 'a series of points and vector curves between those points' rendered crisply at any device resolution (the anchor-points-and-Bezier-curves mechanism and vector scalability). Used to ground the definition of illustration as original artwork, the vector points/curves model, and the resolution-dependent raster canvas. The canonical opentextbc.ca host returned HTTP 403 to the fetcher in prior runs; the chapter content is available in an identical Internet Archive text copy. Canonical URL recorded; no wording reproduced beyond the short attributed phrases; all lesson prose is original."
+    },
+    {
+      "id": "w3c-svg11",
+      "title": "Scalable Vector Graphics (SVG) 1.1 (Second Edition), Introduction",
+      "provider": "World Wide Web Consortium (W3C)",
+      "url": "https://www.w3.org/TR/SVG11/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": false,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the Introduction (https://www.w3.org/TR/SVG11/intro.html), which states that 'SVG allows for three types of graphic objects: vector graphic shapes (e.g., paths consisting of straight lines and curves), images and text.' Used to ground the vector illustration model: an image built from mathematically described paths of straight lines and curves, and the meaning of 'Scalable Vector Graphics.' Standards-body reference; document reuse terms not separately verified, so reference only and only the short attributed definitional phrase used, no substantial wording reproduced."
+    },
+    {
+      "id": "krita-manual",
+      "title": "Krita Manual — Introduction Coming From Other Software (brush engines, blending modes, layers)",
+      "provider": "Krita Foundation / KDE",
+      "url": "https://docs.krita.org/en/user_manual/introduction_from_other_software/introduction_from_photoshop.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "GNU Free Documentation License 1.3+",
+      "licenseUrl": "https://www.gnu.org/licenses/fdl-1.3.html",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Open-source painting application manual, licensed GNU FDL 1.3+ per the page footer ('licensed under the GNU Free Documentation License 1.3+ unless stated otherwise'). Read to ground raster digital-painting mechanics generically: that the program uses 'a lot of different so-called brush engines' that determine how pixels appear on the canvas, saved as presets; that it offers many blending/composite modes (with erasing implemented as a blending mode); and that painting is organized in layers with standard operations (duplicate, merge). Used as a representative, non-endorsed example of raster painting concepts; treated as reference only, with all lesson prose original and no manual wording reproduced. Techniques are described generically in the lesson, not attributed to any single product."
+    },
+    {
+      "id": "w3c-pointer-events",
+      "title": "Pointer Events (W3C Recommendation / Level 3) — pressure, tilt, twist, and the pen pointer type",
+      "provider": "World Wide Web Consortium (W3C)",
+      "url": "https://www.w3.org/TR/pointerevents3/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": false,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read to ground pressure-sensitive stylus input. The spec defines pressure as 'the normalized pressure of the pointer input in the range of [0,1], where 0 and 1 represent the minimum and maximum pressure the hardware is capable of detecting' (0.5 when a button is active on hardware without pressure support); defines tiltX and tiltY (each -90 to 90 degrees) and twist (0 to 359 degrees) for a stylus; and lists 'pen' as a pointerType value designating pen/stylus input alongside 'mouse' and 'touch.' Used to support that a pressure-sensitive stylus reports pressure (0-1), tilt, and rotation, which software maps to stroke width, opacity, or size. Standards-body reference; reuse terms not separately verified, so reference only; only the short attributed numeric definitions used, no substantial wording reproduced."
+    }
+  ]
+}

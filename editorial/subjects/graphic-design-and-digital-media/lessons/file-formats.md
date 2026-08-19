@@ -84,42 +84,42 @@ Match the format to the job: JPEG or WebP/AVIF for photos, PNG for web graphics 
 ## Practice Question Bank
 
 1. **Which raster format uses lossy compression, stores 24-bit color, and does not support transparency, making it the common default for photographs?**
-   - A) JPEG ✓
-   - B) PNG
-   - C) GIF
-   - D) SVG
+   - A. JPEG ✓
+   - B. PNG
+   - C. GIF
+   - D. SVG
 
    JPEG uses lossy compression, stores millions of colors, and has no alpha channel, which is why it is the standard for photographs. PNG is lossless with transparency, GIF is limited to 256 colors, and SVG is a vector format, not a raster photo format.
 
 2. **How does GIF differ from PNG?**
-   - A) GIF uses lossy compression while PNG uses lossless compression
-   - B) GIF supports a full alpha channel while PNG allows only one transparent color
-   - C) GIF is limited to a 256-color palette with on/off transparency and can animate, while PNG supports full color and a smooth alpha channel ✓
-   - D) GIF supports CMYK for print while PNG is restricted to the web
+   - A. GIF uses lossy compression while PNG uses lossless compression
+   - B. GIF supports a full alpha channel while PNG allows only one transparent color
+   - C. GIF is limited to a 256-color palette with on/off transparency and can animate, while PNG supports full color and a smooth alpha channel ✓
+   - D. GIF supports CMYK for print while PNG is restricted to the web
 
    GIF uses an 8-bit indexed palette of at most 256 colors, offers only binary (on/off) transparency, and can animate, whereas PNG supports millions of colors and a smooth alpha channel. GIF is lossless (not lossy), it is PNG that has the fuller transparency, and neither format supports CMYK.
 
 3. **A studio needs one logo file that stays perfectly sharp everywhere, from a tiny site icon to a highway billboard, and whose colors can be restyled in code. Which format best fits?**
-   - A) A high-resolution JPEG
-   - B) A 256-color GIF
-   - C) A large TIFF
-   - D) SVG ✓
+   - A. A high-resolution JPEG
+   - B. A 256-color GIF
+   - C. A large TIFF
+   - D. SVG ✓
 
    SVG stores the logo as vector drawing commands, so it scales to any size without blur and can be styled with CSS. JPEG, GIF, and TIFF are all raster formats with a fixed pixel grid that blurs or pixelates when enlarged beyond its resolution, and none can be recolored in code the way SVG can.
 
 4. **You are publishing a large photograph on a website and want the smallest file at good quality while still displaying for visitors on older browsers. What is the best approach?**
-   - A) Use a GIF, because it is universally supported
-   - B) Serve a modern format such as WebP or AVIF with a JPEG fallback via the HTML picture element ✓
-   - C) Use an SVG so it scales to any screen
-   - D) Use an uncompressed TIFF for maximum quality
+   - A. Use a GIF, because it is universally supported
+   - B. Serve a modern format such as WebP or AVIF with a JPEG fallback via the HTML picture element ✓
+   - C. Use an SVG so it scales to any screen
+   - D. Use an uncompressed TIFF for maximum quality
 
    WebP and AVIF compress photographs markedly smaller than JPEG at similar quality, and pairing them with a JPEG fallback in a picture element gives older browsers a format they support. GIF's 256-color limit ruins photographs, SVG is a vector format unsuited to photos, and an uncompressed TIFF would be enormous and is not a web delivery format.
 
 5. **A print shop asks for a press-ready file that preserves CMYK color at full quality for a magazine cover, plus an archival master to keep for 20 years. Which pairing fits those two needs?**
-   - A) An animated GIF for the cover and a JPEG master
-   - B) A PNG for the cover and a WebP master
-   - C) An SVG for the cover and a GIF master
-   - D) A press-ready PDF (or high-quality TIFF) for the cover and a lossless TIFF archival master ✓
+   - A. An animated GIF for the cover and a JPEG master
+   - B. A PNG for the cover and a WebP master
+   - C. An SVG for the cover and a GIF master
+   - D. A press-ready PDF (or high-quality TIFF) for the cover and a lossless TIFF archival master ✓
 
    PDF and TIFF can carry CMYK and full-quality data, so a press-ready PDF (with CMYK TIFF images) suits the cover, and a lossless TIFF is the standard archival master used by libraries and museums. GIF, JPEG, PNG, WebP, and SVG are RGB-oriented or lossy web formats: PNG and SVG cannot carry CMYK, and JPEG and GIF discard quality unsuitable for a print master.
 

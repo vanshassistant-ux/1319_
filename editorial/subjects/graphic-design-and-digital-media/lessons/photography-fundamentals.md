@@ -1,0 +1,138 @@
+# Photography Fundamentals
+
+## In 30 Seconds
+
+A photograph is a measured amount of light recorded by a sensor. Three controls set that amount: aperture (how wide the lens opens), shutter speed (how long the sensor is exposed), and ISO (how strongly the signal is amplified). Together they form the exposure triangle. Each also changes the look of the image — depth of field, motion blur, and noise — so photographers trade one setting against another to reach a correct exposure while choosing the picture they want.
+
+## Why This Matters
+
+Anyone who makes or directs images — designers, marketers, journalists, product and social-media teams — has to judge whether a photo is usable and, when shooting, has to get exposure right in the moment. Understanding the exposure triangle turns guesswork into reasoning: you can predict what happens when light drops, decide whether to blur or freeze motion, and know the cost of a cleaner or noisier file. It also clarifies later decisions in the workflow, such as why a RAW file gives an editor more room to recover a too-dark shot than a JPEG does. These fundamentals are stable across camera brands and carry directly into video, where the same three controls apply.
+
+## Learning Objectives
+
+- Define aperture, shutter speed, and ISO and state which aspect of exposure each controls.
+- Explain what a "stop" is and why halving or doubling light equals one stop.
+- Distinguish the exposure effect of each control from its side effect (depth of field, motion blur, noise).
+- Apply stop reasoning to compensate one setting with another and keep exposure constant.
+- Explain why RAW files give more editing latitude than JPEG files.
+
+## The College Version
+
+### Exposure and the three controls
+
+A digital photograph is the record of how much light reached the camera's sensor during a single frame. When too little light arrives the image is underexposed (dark, with crushed shadows); when too much arrives it is overexposed (washed out, with blown highlights). Correct exposure is the amount of light that renders the scene the way you intend. Three controls set that amount. **Aperture** is the adjustable opening inside the lens, described by an f-number such as f/2.8 or f/11; it governs how wide the lens is open at the moment of capture. **Shutter speed** is how long the sensor is exposed, measured in fractions of a second such as 1/1000 s or in whole seconds. **ISO** is how strongly the sensor's signal is amplified before it becomes an image; higher ISO produces a brighter file from the same light. These three are usually drawn as the exposure triangle because they work together — a change to any one must be balanced by the others if the overall brightness is to stay the same.
+
+### The stop: photography's unit of light
+
+The single most useful idea in exposure is the **stop**. One stop is a doubling or a halving of the light in the exposure. Every control is calibrated in stops, which is what lets you trade them against each other. Shutter speed is the clearest case: 1/250 s lets the sensor gather light for twice as long as 1/500 s, so it is one stop brighter. ISO behaves the same way — ISO 400 yields a file one stop brighter than ISO 200. Aperture is less obvious because of how f-numbers are defined. The f-number is the lens's focal length divided by the diameter of its opening, so a bigger number means a smaller hole. Because the amount of light depends on the area of that hole, the full-stop f-numbers step by a factor of the square root of two: f/1.4, f/2, f/2.8, f/4, f/5.6, f/8, f/11, f/16, f/22. Moving from one to the next either doubles or halves the area, and therefore the light, by one stop. A smaller f-number means a wider opening and more light; a larger f-number means a narrower opening and less light. Thinking in stops turns exposure into simple counting rather than memorized settings.
+
+### Side effects: depth of field, motion, and noise
+
+If the three controls only changed brightness, you could pick any combination that added up. They do not — each leaves a fingerprint on the image, which is why the choice is creative as well as technical. **Aperture controls depth of field**, the range of distance that appears acceptably sharp. A wide aperture (small f-number such as f/2) gives a shallow depth of field that blurs the background, useful for isolating a portrait subject; a narrow aperture (large f-number such as f/16) keeps foreground-to-background sharp, useful for landscapes. **Shutter speed controls how motion is recorded.** A fast shutter such as 1/1000 s freezes a moving subject; a slow shutter such as 1/15 s lets it blur, which can render flowing water smooth or convey speed. **ISO controls noise.** Low ISO gives the cleanest file; raising ISO brightens a dim scene but adds visible grain and can reduce fine detail. So a photographer chooses settings not just to reach correct exposure but to get the depth of field, the degree of motion, and the cleanliness the picture calls for — and accepts the trade-offs among them.
+
+### Trading settings, plus focal length and RAW
+
+Because each control is measured in stops, you can change the look of an image while keeping exposure constant: whatever stops you add with one control, you remove with another. Open the aperture by three stops for a blurrier background and you must shorten the shutter by three stops (or lower ISO by three stops) to avoid overexposing. This is the everyday arithmetic of manual shooting and of the semi-automatic modes — aperture priority and shutter priority — where you set one control and the camera solves for another. Two further fundamentals sit alongside the triangle. **Focal length**, the property that makes a lens wide-angle or telephoto, changes angle of view and, at a given aperture, interacts with depth of field. And **file format** shapes what you can do afterward: a JPEG is processed and compressed in-camera, discarding data for a smaller, ready-to-use file, whereas a RAW file preserves the sensor's full capture. That extra data gives an editor far more latitude to adjust exposure and white balance later without visibly degrading the image — though good exposure at capture still beats fixing it in software. Composition, resolution, and editing each have their own fundamentals; this lesson stays on how light becomes a correctly exposed frame.
+
+## Key Vocabulary
+
+- **Exposure** — The total amount of light recorded by the sensor for one frame; too little reads as dark (underexposed), too much as washed out (overexposed).
+- **Exposure triangle** — The three controls (aperture, shutter speed, and ISO) that together set exposure and are balanced against one another.
+- **Aperture** — The adjustable opening in the lens that light passes through, described by an f-number; it sets both how much light enters and the depth of field.
+- **F-number (f-stop)** — The lens focal length divided by the diameter of the aperture; a larger number means a smaller opening and less light.
+- **Shutter speed** — How long the sensor is exposed to light, measured in fractions of a second or in whole seconds; it also sets whether motion is frozen or blurred.
+- **ISO** — How strongly the sensor's signal is amplified; raising it brightens the image from the same light but adds noise.
+- **Stop** — A doubling or halving of light; the shared unit that lets aperture, shutter speed, and ISO be traded against each other.
+- **Depth of field** — The range of distance in a scene that appears acceptably sharp; controlled mainly by aperture.
+- **Noise** — Random speckle in an image, increased by higher ISO, that can obscure fine detail.
+- **RAW** — A file format that stores the sensor's full unprocessed capture, giving more latitude to adjust exposure and white balance in editing than a compressed JPEG.
+
+## Eli-10
+
+A photo needs a certain amount of light, no more and no less. You have three taps that fill the bucket. Aperture is how wide the tap opens, shutter speed is how long you leave it running, and ISO is a booster that makes whatever water you collected count for more. If you open one tap wider, you can run another for less time and still fill the bucket to the same line. But each tap has a side habit: a wide aperture blurs the background, a slow shutter smears anything that moves, and too much ISO boost makes the picture look grainy. Good photographers fill the bucket exactly to the line while picking the side effects they actually want.
+
+## Eli's Analogy
+
+Exposure is like filling a bucket to a marked line using three taps — open one more, and you run another one less, so the water still reaches the same line.
+
+**Where the analogy breaks down:** The bucket makes the trade-off feel free, but it is not — each "tap" also changes the picture itself. Aperture decides what is in focus, shutter decides how motion looks, and ISO adds grain — side effects plain water does not have. And light is not really stored in a bucket; the sensor reads it continuously while the shutter is open.
+
+## Worked Example
+
+You meter a scene and get a correct exposure at **f/8, 1/250 s, ISO 100**. You want a portrait with a blurred background, so you open the aperture three stops to **f/2.8** (the full stops are f/8 → f/5.6 → f/4 → f/2.8). Each stop doubles the light, so f/2.8 lets in eight times as much — three stops brighter — and the shot would badly overexpose. To hold exposure constant, remove three stops elsewhere. Keeping ISO at 100, shorten the shutter three stops: 1/250 s → 1/500 → 1/1000 → 1/2000. Now **f/2.8 at 1/2000 s, ISO 100** gathers the same total light as the original f/8 at 1/250 s, ISO 100 — the exposure value is unchanged — but you have gained the shallow depth of field you wanted, and the faster shutter freezes motion as a bonus.
+
+## Common Mistakes
+
+- **Assuming a bigger f-number means a bigger opening and more light.** It is the reverse. The f-number is focal length divided by opening diameter, so a larger number (f/16) is a smaller hole with less light; a smaller number (f/2) is a wider hole with more light.
+- **Treating ISO as "free" brightness and raising it by default.** ISO amplifies the signal but also amplifies noise, adding grain and reducing detail. Use the lowest ISO the light allows, and raise it only when aperture and shutter cannot get you there.
+- **Changing one setting for its look and forgetting to compensate.** Aperture, shutter, and ISO all affect exposure. Open the aperture two stops and you must remove two stops with shutter or ISO, or the frame overexposes.
+- **Believing RAW automatically makes a better-looking photo.** RAW stores more data, giving more editing latitude, but it is not processed for you and needs work. A well-exposed JPEG can look great; RAW's advantage is recovery room, not automatic quality.
+- **Thinking only shutter speed affects whether motion is sharp.** Shutter speed controls motion blur, but a subject can also be soft because depth of field (set by aperture) is too shallow to keep it in focus. Diagnose which cause you have before changing a setting.
+
+## Compare / Contrast
+
+- **Wide aperture (small f-number, e.g. f/2)** vs **Narrow aperture (large f-number, e.g. f/16):** Wide lets in more light and gives shallow depth of field (blurred background); narrow lets in less light and gives deep depth of field (more of the scene sharp).
+- **Fast shutter (e.g. 1/1000 s)** vs **Slow shutter (e.g. 1/15 s):** Both change how long light is collected, but fast freezes motion into a sharp instant while slow lets moving subjects blur.
+- **RAW file** vs **JPEG file:** RAW keeps the sensor's full capture for maximum editing latitude but is large and unprocessed; JPEG is compressed and finished in-camera — smaller and ready to use, but with less room to recover exposure or white balance.
+
+## Key Takeaway
+
+Aperture, shutter speed, and ISO each set exposure and each add a side effect — depth of field, motion blur, and noise. Because all three are measured in stops (a doubling or halving of light), you can trade one against another to reach correct exposure while choosing the look you want.
+
+## Practice Question Bank
+
+1. **In the exposure triangle, which control primarily determines the depth of field — how much of the scene is in sharp focus?**
+   - A. Shutter speed
+   - B. ISO
+   - C. Aperture ✓
+   - D. White balance
+   - *Aperture (the f-number) sets depth of field: a wide aperture gives shallow focus, a narrow aperture keeps more of the scene sharp. Shutter speed governs motion, ISO governs noise, and white balance sets color, not focus range.*
+
+2. **A photographer changes the shutter speed from 1/500 s to 1/250 s and makes no other change. What happens to the exposure?**
+   - A. It increases by one stop (twice as much light) ✓
+   - B. It decreases by one stop (half as much light)
+   - C. It stays the same because shutter speed does not affect exposure
+   - D. It increases by two stops
+   - *At 1/250 s the sensor is exposed twice as long as at 1/500 s, so it collects twice the light — exactly one stop brighter. A stop is a doubling or halving of light, and this is a single doubling, not two stops.*
+
+3. **A correct exposure is f/5.6, 1/125 s, ISO 200. To blur the background you open up two stops to f/2.8. Keeping ISO at 200, what shutter speed keeps the exposure the same?**
+   - A. 1/60 s
+   - B. 1/125 s
+   - C. 1/250 s
+   - D. 1/500 s ✓
+   - *Opening from f/5.6 to f/2.8 is two stops brighter (f/5.6 → f/4 → f/2.8). To remove two stops with shutter speed you halve the time twice: 1/125 → 1/250 → 1/500 s. 1/60 goes the wrong way, and 1/125 or 1/250 do not remove enough light.*
+
+4. **Shooting indoors in dim light, a photographer needs a faster shutter to avoid motion blur but the aperture is already as wide as it goes. What is the standard next move, and its main cost?**
+   - A. Switch from RAW to JPEG, losing editing latitude
+   - B. Raise the ISO, accepting more image noise ✓
+   - C. Lengthen the shutter, accepting more motion blur
+   - D. Increase the f-number, accepting a darker image
+   - *With the aperture maxed out and shutter speed constrained, raising ISO brightens the exposure so a fast shutter still records enough light — at the cost of added noise. File format does not change exposure, a longer shutter worsens the blur being avoided, and a higher f-number makes the image darker.*
+
+5. **Two frames of the same still subject are both correctly exposed: Frame A is f/2.8, 1/2000 s, ISO 100; Frame B is f/16, 1/60 s, ISO 100. What visible difference should you expect?**
+   - A. Frame A has a shallower depth of field than Frame B ✓
+   - B. Frame B has more image noise than Frame A
+   - C. Frame A is brighter than Frame B
+   - D. Frame B freezes motion better than Frame A
+   - *Both are the same overall exposure, so neither is brighter, and identical ISO 100 means equal noise. The difference is aperture: f/2.8 gives shallow depth of field (blurred background) while f/16 keeps much more in focus. Frame A's faster shutter would also freeze motion better, so the claim about Frame B is wrong.*
+
+## Sources
+
+- **Learning Digital Photography** — Eric Demattos, North Idaho College (Open Textbook Library / Pressbooks), CC BY-NC-SA 4.0. <https://nic.pressbooks.pub/learningdigitalphotography/chapter/understanding-the-exposure-triangle/>
+- **Fundamentals of Photography and Creative Practice** — Jessica Labatte & Larissa Garcia, Northern Illinois University (CARLI), Humanities LibreTexts, CC BY 4.0. <https://human.libretexts.org/Courses/Northern_Illinois_University/Fundamentals_of_Photography_and_Creative_Practice/01:_Creative_Camera_Functions>
+- **F-number** — Wikipedia (reference only; used to corroborate f-number/stop mathematics, independently checked). <https://en.wikipedia.org/wiki/F-number>
+
+## Related Topics
+
+- graphic-design-and-digital-media:foundations:photo-editing
+- graphic-design-and-digital-media:foundations:image-resolution
+- graphic-design-and-digital-media:foundations:composition
+- graphic-design-and-digital-media:foundations:digital-illustration
+
+## Editorial Metadata
+
+- **Editorial status:** READY_TO_PUBLISH
+- **Estimated minutes:** 10
+- **Researched:** 2026-08-19
+- **Rights:** OER sources (CC BY 4.0 and CC BY-NC-SA 4.0) plus one reference-only encyclopedia source; no source prose or images reproduced, all wording original.
+- **Transformation:** Facts synthesized from two open photography textbooks; the f-number/stop mathematics and the worked exposure-compensation arithmetic were independently verified in Bash.

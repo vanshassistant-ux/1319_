@@ -1,0 +1,189 @@
+{
+  "topicId": "graphic-design-and-digital-media:foundations:photo-editing",
+  "subjectId": "graphic-design-and-digital-media",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "What photo editing is: adjusting a photograph after capture, distinct from taking the photo",
+      "Global tonal and color adjustments: exposure/brightness, contrast, levels and curves read against the histogram, white balance, saturation vs vibrance",
+      "Local adjustments and retouching: masks, dodge and burn, healing and clone tools",
+      "Cropping and straightening as compositional and corrective edits",
+      "Non-destructive editing (layers, adjustment layers, smart objects, editing RAW) versus destructive editing",
+      "Resizing and exporting to appropriate file formats",
+      "Ethics of photo manipulation: acceptable correction versus misleading alteration, with journalism as the strict case"
+    ],
+    "supporting": [
+      "The histogram as a graph of tonal distribution from shadows (0) to highlights (255)",
+      "RAW files as minimally processed sensor data that widen editing latitude",
+      "Lossy versus lossless export formats (JPEG, PNG, TIFF)"
+    ],
+    "outOfScope": [
+      "Capture-time exposure, aperture, shutter, ISO and composition (owned by Photography Fundamentals)",
+      "ppi/dpi and resampling mathematics (owned by Image Resolution)",
+      "Creating original artwork from scratch (owned by Digital Illustration)",
+      "RGB vs CMYK color model theory (owned by Color Models)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A histogram is a graph of the statistical distribution of tonal/color values in an image, from shadows on the left to highlights on the right, and reading it is purely informational; making the corresponding correction is done with a tool such as Levels.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["gimp-histogram-dialog", "gimp-curves-tool"],
+      "status": "supported"
+    },
+    {
+      "claim": "The Curves adjustment lets an editor remap brightness across any tonal range, giving finer control than Levels, which works on shadows, midtones, and highlights; both change color, brightness, and contrast.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["gimp-curves-tool", "gimp-histogram-dialog"],
+      "status": "supported"
+    },
+    {
+      "claim": "Healing tools blend copied pixels with the texture, lighting, and color surrounding the destination area rather than copying pixels verbatim as the clone tool does, which makes them well suited to retouching blemishes and wrinkles.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["gimp-heal-tool"],
+      "status": "supported"
+    },
+    {
+      "claim": "Dodge lightens and burn darkens selected areas of an image, terms and techniques inherited from darkroom printing.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["gimp-dodge-burn-tool"],
+      "status": "supported"
+    },
+    {
+      "claim": "A camera RAW file contains data captured by the sensor that has received only a very modest amount of processing before output, which is why RAW gives an editor more latitude to set white balance and tone non-destructively.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["loc-raw-formats"],
+      "status": "supported"
+    },
+    {
+      "claim": "JPEG uses lossy compression and does not support transparency; PNG uses lossless compression with full alpha transparency; TIFF is typically lossless and used for print/archival images.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mdn-image-file-types"],
+      "status": "supported"
+    },
+    {
+      "claim": "Professional photojournalism ethics hold that editing must maintain the integrity of a photograph's content and context, and that it is wrong to alter the content of a documentary photograph in any way that deceives the public; permitted post-processing is limited to basic adjustments such as toning, contrast, and cropping, while adding, removing, or moving content and staging scenes are prohibited.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["nppa-code-of-ethics"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Where the line between acceptable correction and unacceptable manipulation falls",
+      "positions": [
+        "Photojournalism and documentary practice draw a strict line: only global tonal/color correction and cropping that preserve content and context are acceptable.",
+        "Commercial, fashion, and fine-art photography routinely accept heavy retouching and compositing as a creative norm."
+      ],
+      "resolution": "The lesson frames the ethics as context-dependent: the same edit can be acceptable in advertising and dishonest in a news photograph. Journalism is presented as the strict reference case, per the NPPA standard, without implying the same rules govern all photography."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic filler ('Photo Editing is a foundational concept ... this lesson introduces its meaning') with no substantive, verifiable claims about editing techniques; none of it was reused."
+  ],
+  "correctionsNeeded": [
+    "Replaced boilerplate definition with a concrete account of post-capture tonal/color/local adjustment and retouching.",
+    "Added the histogram, levels/curves, white balance, and dodge/burn as named, sourced techniques.",
+    "Added the non-destructive vs destructive distinction and RAW latitude, absent from the draft.",
+    "Added an ethics section grounded in a professional journalism standard, absent from the draft."
+  ],
+  "rightsIssues": [
+    "No copyrighted photographs, proprietary UI, or named commercial products' assets are reproduced. Software techniques are described generically; GIMP documentation is used as a technical reference and none of its prose is copied.",
+    "NPPA Code of Ethics text is summarized, not reproduced at length; the canonical NPPA URL is recorded even though the live page is JavaScript-rendered and the wording was verified through a text mirror and NPPA's own Best of Photojournalism visual-integrity guidance."
+  ],
+  "sourceRecords": [
+    {
+      "id": "gimp-histogram-dialog",
+      "title": "GIMP User Manual 2.10 - Histogram dialog",
+      "provider": "The GIMP Documentation Team",
+      "url": "https://docs.gimp.org/2.10/en/gimp-histogram-dialog.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Confirms the histogram shows the statistical distribution of color/tonal values per channel (levels 0-255), is purely informational, and that histogram-based correction is performed with the Levels tool. Open-source software documentation; described generically, no prose copied."
+    },
+    {
+      "id": "gimp-curves-tool",
+      "title": "GIMP User Manual 2.10 - Curves tool",
+      "provider": "The GIMP Documentation Team",
+      "url": "https://docs.gimp.org/2.10/en/gimp-tool-curves.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Confirms Curves changes color, brightness, contrast or transparency across any tonal range, offering finer control than Levels (which works on shadows/highlights). Used generically to describe tonal-curve editing."
+    },
+    {
+      "id": "gimp-heal-tool",
+      "title": "GIMP User Manual 2.10 - Heal tool",
+      "provider": "The GIMP Documentation Team",
+      "url": "https://docs.gimp.org/2.10/en/gimp-tool-heal.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Confirms the healing tool is a smarter relative of the clone tool: instead of copying pixels verbatim, it takes the area around the destination into account before cloning, typical use being removal of small defects and wrinkles. Used to distinguish healing from cloning."
+    },
+    {
+      "id": "gimp-dodge-burn-tool",
+      "title": "GIMP User Manual 2.10 - Dodge/Burn tool",
+      "provider": "The GIMP Documentation Team",
+      "url": "https://docs.gimp.org/2.10/en/gimp-tool-dodge-burn.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Confirms the Dodge/Burn tool lightens (dodge) or darkens (burn) colors in an image. Supports the local-adjustment section and the darkroom origin of the terms."
+    },
+    {
+      "id": "loc-raw-formats",
+      "title": "Sustainability of Digital Formats: Raw Formats (Group Description)",
+      "provider": "Library of Congress",
+      "url": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000241.shtml",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Confirms RAW files contain data captured by the camera's sensor array that receives only a very modest amount of processing before output, and that RAW formats are largely proprietary while DNG is an open alternative. Read via curl with a browser user-agent (WebFetch was 403-blocked). Supports RAW editing latitude and non-destructive workflow claims."
+    },
+    {
+      "id": "mdn-image-file-types",
+      "title": "Image file type and format guide",
+      "provider": "MDN Web Docs (Mozilla)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types",
+      "sourceType": "documentation",
+      "usage": "ATTRIBUTION_REQUIRED",
+      "license": "CC-BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Confirms JPEG is lossy with no alpha channel, PNG is lossless with full alpha transparency, and TIFF is typically lossless and print/archival oriented. Supports the resizing/exporting section. Reused existing registry source id and URL."
+    },
+    {
+      "id": "nppa-code-of-ethics",
+      "title": "NPPA Code of Ethics for Visual Journalists",
+      "provider": "National Press Photographers Association",
+      "url": "https://nppa.org/code-ethics",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Professional-association ethics standard. Establishes that editing must maintain the integrity of a photograph's content and context, that altering documentary content to deceive the public is wrong, and that only basic corrections (toning/contrast) and cropping are acceptable while adding/removing/moving content and staging are prohibited. Canonical NPPA URL recorded; the live page is JavaScript-rendered, so wording was verified via a text mirror of the code (pirate.shu.edu/~mckenndo/ethics_codes-NPPA.htm) and NPPA's own Best of Photojournalism visual-integrity guidance. Summarized only; no extended text reproduced."
+    }
+  ]
+}

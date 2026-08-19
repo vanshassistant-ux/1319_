@@ -1,0 +1,178 @@
+{
+  "topicId": "graphic-design-and-digital-media:foundations:video-basics",
+  "subjectId": "graphic-design-and-digital-media",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Video as a sequence of still frames displayed rapidly; frame rate (fps) measures frames per second",
+      "Common frame rates: ~12 fps minimum for perceived motion, 24 fps traditional cinema, ~30 fps standard TV, 60 fps for extra smoothness; higher fps looks smoother but increases file size",
+      "Resolution as pixel dimensions: 720p = 1280x720, 1080p (Full HD) = 1920x1080, 4K UHD = 3840x2160; more pixels means more detail and larger files",
+      "Aspect ratio as the width-to-height proportion: 16:9 landscape (standard HD/UHD), 9:16 vertical, 1:1 square",
+      "The codec vs container distinction: a codec (e.g., H.264/AVC, H.265/HEVC) compresses/encodes and decodes the streams, while a container (MP4, MOV, WebM) is the file wrapper that bundles video, audio, and metadata tracks",
+      "Most video codecs are lossy; compression and bitrate trade image quality against file size",
+      "Bitrate as data per second: higher bitrate generally means better quality and a larger file",
+      "High-level non-linear editing (NLE) workflow: import footage, cut/trim clips, arrange on a sequence/timeline, add transitions and titles/lower-thirds, then export/render to a delivery file",
+      "Two distinct meanings of keyframe: an animation keyframe sets a property value at a point in time and the software interpolates (tweens) between them; a codec key frame (I-frame/intra-frame) is a full self-contained reference frame in the compressed stream"
+    ],
+    "supporting": [
+      "Uncompressed video is enormous: a 1920x1080 frame at 4 bytes/pixel is 8,294,400 bytes, and at 30 fps that is roughly 249 MB per second, which is why compression is essential",
+      "H.265/HEVC is designed to reach about half the file size of H.264/AVC at comparable quality, but is less universally supported",
+      "Inter-frame compression stores only the differences between successive frames; periodic key frames reset accumulated error and improve seeking",
+      "ITU-R BT.709 underlies 1080p HDTV at 1920x1080, 16:9; ITU-R BT.2020 defines UHDTV at 3840x2160 (4K) and 7680x4320 (8K), 16:9",
+      "On the web, video is commonly served with a modern codec plus a broadly compatible H.264/MP4 fallback"
+    ],
+    "outOfScope": [
+      "Still-image file formats (JPEG, PNG, GIF, TIFF, SVG), owned by the File Formats topic",
+      "Still-image pixels-per-inch / print resolution (ppi/dpi), owned by the Image Resolution topic",
+      "Platform-specific social graphic dimensions and specs, owned by the Social Media Graphics topic",
+      "RGB vs CMYK color models and gamut, owned by the Color Models topic",
+      "Deep audio codec detail, color grading, and camera/lens operation"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Digital video is a sequence of still images (frames) shown in quick succession; frame rate, measured in frames per second (fps), is how many frames are displayed each second. Roughly 12 fps is the minimum for perceived motion, 24 fps is the traditional film rate, about 30 fps is standard for television, and 24 fps or higher is generally seen as satisfactorily smooth with 30 or 60 fps an ideal target. Higher frame rates look smoother but, all else equal, increase the output file size.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mdn-video-codecs"],
+      "status": "supported"
+    },
+    {
+      "claim": "The number of frames in a clip equals frame rate times duration: a 24 fps clip lasting 10 seconds holds 240 frames, a 30 fps clip lasting 10 seconds holds 300 frames, and a 60 fps clip lasting 10 seconds holds 600 frames.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["mdn-video-codecs"],
+      "status": "supported"
+    },
+    {
+      "claim": "Resolution is the pixel dimensions of the frame: 720p is 1280x720, 1080p (Full HD) is 1920x1080 as standardized for HDTV under ITU-R BT.709, and 4K UHD is 3840x2160 as defined for UHDTV under ITU-R BT.2020 (which also defines 8K at 7680x4320). More pixels carry more detail but produce larger files; higher resolution directly increases output file size.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["itu-r-bt709", "itu-r-bt2020", "mdn-video-codecs"],
+      "status": "supported"
+    },
+    {
+      "claim": "Aspect ratio is the proportion of frame width to height. 16:9 is the standard landscape ratio for HD and UHD video (used by ITU-R BT.709 and BT.2020); 9:16 is the vertical (portrait) ratio used for phone-first video; and 1:1 is square.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["itu-r-bt709", "itu-r-bt2020"],
+      "status": "supported"
+    },
+    {
+      "claim": "A codec and a container are different things. A video codec compresses (encodes) the video data and later decodes it for playback or editing; H.264/AVC and H.265/HEVC are widely used video codecs, and most video codecs are lossy, meaning decoded video does not exactly match the source. A container (media file format) such as MP4, QuickTime/MOV, or WebM is a wrapper that encapsulates one or more media streams (video and audio tracks) together with metadata so they store and play back together. The same container can hold different codecs; for example MP4 commonly carries H.264/AVC video with AAC audio.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mdn-media-containers", "mdn-video-codecs"],
+      "status": "supported"
+    },
+    {
+      "claim": "Uncompressed video is impractically large, which is why codecs compress it: a single full-color 1920x1080 frame at 4 bytes per pixel is 8,294,400 bytes, so at 30 fps one second of raw HD is about 249 MB. Higher bitrate (data per second) generally improves quality but produces a larger file, so compression trades quality against size.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["mdn-video-codecs"],
+      "status": "supported"
+    },
+    {
+      "claim": "H.265/HEVC is designed to achieve compressed file sizes about half those of H.264/AVC at comparable image quality, but is less universally supported across browsers and devices than H.264, which is broadly compatible.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mdn-video-codecs"],
+      "status": "supported"
+    },
+    {
+      "claim": "The word keyframe has two distinct meanings a designer will meet. In animation and motion graphics, a keyframe fixes a property value (such as position or scale) at a specific point on the timeline, and the software interpolates (tweens) the intermediate frames between keyframes. In video compression, a key frame (also called an intra-frame or I-frame) is a full, self-contained reference frame in the encoded stream; the frames between key frames store only differences, and periodic key frames reset accumulated error and improve seeking.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mdn-css-animations-keyframes", "mdn-video-codecs"],
+      "status": "supported"
+    },
+    {
+      "claim": "A typical non-linear editing workflow moves through import (bring footage, audio, and graphics into the project), cutting and trimming clips, arranging them on a sequence/timeline, adding transitions and titles or lower-thirds, and finally exporting/rendering the finished sequence to a delivery file by choosing a codec, container, resolution, and bitrate.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["mdn-video-codecs", "mdn-media-containers"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether a higher frame rate is always better.",
+      "positions": [
+        "Higher frame rates (e.g., 60 fps) render fast motion more smoothly and are preferred for sports and gameplay.",
+        "24 fps remains the deliberate aesthetic standard for cinema, and higher rates can look unnaturally smooth ('soap-opera effect') to some viewers, so higher is not universally better."
+      ],
+      "resolution": "The lesson states that higher frame rates look smoother and cost more file size, while noting 24 fps is the intentional cinema convention, so the right rate depends on the goal rather than always being the highest."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft was generic placeholder text ('Video Basics is a foundational concept in Graphic Design & Digital Media... this lesson introduces its meaning, its context, and a simple way to apply it') containing no verifiable statement about frame rate, resolution, codecs, containers, or editing; none of it was usable as evidence."
+  ],
+  "correctionsNeeded": [
+    "Replaced placeholder text with substantive, verified treatment of frame rate, resolution, aspect ratio, the codec-vs-container distinction, compression/bitrate trade-offs, the editing workflow, and keyframes.",
+    "Explicitly disambiguated the two meanings of 'keyframe' (animation interpolation keyframe vs codec I-frame), which are frequently conflated.",
+    "Scoped the lesson to moving-image fundamentals and deferred still-image formats (File Formats), still-image resolution/ppi (Image Resolution), platform graphic specs (Social Media Graphics), and RGB/CMYK color to their own topics per the anti-duplication instructions."
+  ],
+  "rightsIssues": [
+    "MDN Web Docs pages are used as reference only; no wording reproduced and all prose is original synthesis.",
+    "ITU-R BT.709 and BT.2020 are standards-body recommendations cited as reference only; the recommendation titles and status were confirmed on itu.int and the specific pixel formats corroborated via secondary technical summaries because the full ITU documents require registration. No wording reproduced.",
+    "No copyrighted footage, film frames, logos, or proprietary media were reproduced or described in reproducible detail."
+  ],
+  "sourceRecords": [
+    {
+      "id": "mdn-video-codecs",
+      "title": "Web video codec guide",
+      "provider": "MDN Web Docs (Mozilla)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Video_codecs",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": false,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Primary technical reference for compression, frame rate, resolution, bitrate, and codecs. Read on 2026-08-19. Supports: a video codec compresses/encodes video and later decodes it for playback or editing; most video codecs are lossy (decoded video does not precisely match the source, and more compression means more loss). Uncompressed scale: a 1920x1080 full-color frame at 4 bytes/pixel = 8,294,400 bytes, ~249 MB per second at 30 fps. Frame rate: about 12 fps is the minimum for perceived motion, 24 fps is the film standard, ~30 fps standard TV, 24 fps or higher is satisfactorily smooth with 30 or 60 fps an ideal target; more fps means a larger file. Higher resolution directly increases file size. Higher bitrate generally improves quality and increases file size. H.264/AVC is broadly compatible; H.265/HEVC targets about half the file size of AVC at comparable quality but is less widely supported. Key frames (intra-frames / i-frames) are full frames inserted periodically; inter-frame compression stores differences between frames. Reference-only; no wording reproduced, all prose original."
+    },
+    {
+      "id": "mdn-media-containers",
+      "title": "Media container formats (file types)",
+      "provider": "MDN Web Docs (Mozilla)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Containers",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": false,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Reference for the container-vs-codec distinction. Read on 2026-08-19. Supports: a media container is a file format that encapsulates one or more media streams (audio/video) plus metadata so they store and play back together; the format of a media file is defined by the codecs used plus the container (file type). MP4 commonly carries AVC/H.264 (also AV1, VP9) video with AAC/MP3/Opus audio; QuickTime/MOV carries AVC/H.264 and others; WebM carries VP8/VP9/AV1 with Opus/Vorbis. The container is the wrapper (.mp4, .mov, .webm) and codecs are the compression formats inside it; one container can hold different codec combinations. Reference-only; no wording reproduced."
+    },
+    {
+      "id": "itu-r-bt709",
+      "title": "Recommendation ITU-R BT.709: Parameter values for the HDTV standards for production and international programme exchange",
+      "provider": "International Telecommunication Union (ITU-R)",
+      "url": "https://www.itu.int/rec/R-REC-BT.709",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": false,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Standards-body reference for HDTV parameters. The recommendation page on itu.int confirms BT.709 as the HDTV parameter standard; the 1920x1080 active-pixel image format at 16:9 was corroborated via secondary technical summaries on 2026-08-19 because the full ITU PDF requires registration. Used only to ground that 1080p Full HD is 1920x1080 at a 16:9 aspect ratio. Reference-only; no wording reproduced."
+    },
+    {
+      "id": "itu-r-bt2020",
+      "title": "Recommendation ITU-R BT.2020: Parameter values for ultra-high definition television systems for production and international programme exchange",
+      "provider": "International Telecommunication Union (ITU-R)",
+      "url": "https://www.itu.int/rec/R-REC-BT.2020",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": false,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Standards-body reference for UHDTV parameters. Fetched itu.int on 2026-08-19: title 'Parameter values for ultra-high definition television systems for production and international programme exchange', in force (BT.2020-2, approved October 2015). The two UHDTV image formats 3840x2160 (4K) and 7680x4320 (8K) at 16:9 were corroborated via secondary technical summaries because the full ITU PDF requires registration. Used only to ground 4K UHD = 3840x2160 at 16:9. Reference-only; no wording reproduced."
+    },
+    {
+      "id": "mdn-css-animations-keyframes",
+      "title": "Using CSS animations",
+      "provider": "MDN Web Docs (Mozilla)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": false,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Reference for the animation sense of 'keyframe'. Read on 2026-08-19. Supports: keyframes describe how an animated element should render at given times along the sequence, establishing start, end, and optional intermediate waypoints; the software automatically calculates (interpolates/tweens) the intermediate values between keyframes over the duration. Used to define animation keyframes precisely and distinguish them from codec key frames. Reference-only; no wording reproduced."
+    }
+  ]
+}
