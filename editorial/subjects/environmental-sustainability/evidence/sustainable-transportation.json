@@ -1,0 +1,234 @@
+{
+  "topicId": "environmental-sustainability:foundations:sustainable-transportation",
+  "subjectId": "environmental-sustainability",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Transportation as the largest source of U.S. GHG emissions (EPA Inventory, 2022 data: 28% of the total; 29% including electricity used by the sector)",
+      "The within-sector breakdown by mode (light-duty vehicles 57%, medium/heavy trucks 23%, aircraft 9%, ships/boats 3%, rail 2%)",
+      "Emissions intensity per passenger-mile across modes and why occupancy, not the mode label alone, decides it (CBO, 2019 data)",
+      "Electric vehicles: zero tailpipe emissions and lower lifecycle emissions than gasoline vehicles, with honest caveats on grid mix and battery manufacturing (Argonne R&D GREET; EPA)",
+      "The Avoid-Shift-Improve framing and the naming of U.S. fuel-economy/GHG standards (CAFE by NHTSA; GHG tailpipe standards by EPA)"
+    ],
+    "supporting": [
+      "That transportation GHG emissions grew more in absolute terms than any other sector between 1990 and 2022",
+      "That most transportation GHGs are CO2 from combustion of petroleum-based gasoline and diesel",
+      "That grid decarbonization lowers an EV's operating emissions over time, widening the EV-gasoline gap by 2050",
+      "That public transit is not automatically cleaner per passenger-mile: a lightly loaded transit bus can exceed a car"
+    ],
+    "outOfScope": [
+      "The energy system and generation mix (owned by Energy Use)",
+      "The mechanics of greenhouse gases, GWP, and CO2e (owned by Greenhouse Gases)",
+      "Urban form, density, and land use as such (owned by Sustainable Cities)",
+      "Personal or organizational footprint accounting and scopes (owned by Carbon Footprints)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Transportation was the largest source of U.S. greenhouse gas emissions in 2022, accounting for 28% of the total (29% when electricity used by the sector is included).",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["epa-fast-facts-transportation-2022", "epa-transportation-sector-emissions", "epa-inventory-us-ghg-1990-2022"],
+      "status": "supported"
+    },
+    {
+      "claim": "Within U.S. transportation in 2022, light-duty vehicles (passenger cars plus light-duty trucks) produced 57% of sector GHG emissions, medium- and heavy-duty trucks 23%, aircraft 9%, ships and boats 3%, and rail 2%; most of these emissions are CO2 from burning petroleum-based gasoline and diesel.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["epa-fast-facts-transportation-2022", "epa-transportation-sector-emissions"],
+      "status": "supported"
+    },
+    {
+      "claim": "In 2019, personal vehicles averaged 0.47 pounds of CO2 per passenger-mile, and on average rail transit, passenger railroads, commercial air travel, and buses each emitted less per passenger-mile than personal vehicles; but intensity varies widely within a mode, e.g. transit buses averaged 0.95 lb/passenger-mile when lightly occupied while intercity motorcoaches averaged 0.15.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["cbo-co2-transportation-2022"],
+      "status": "supported"
+    },
+    {
+      "claim": "Argonne National Laboratory's R&D GREET 2024 model estimates that a 2025 electric vehicle produces about 46% fewer life-cycle GHG emissions than a comparable gasoline (internal-combustion) vehicle, using E10 gasoline for the gasoline car and the U.S. average grid mix for the EV; the assessment counts vehicle and battery production, fuel production, and use.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["doe-greet-ldv-fact-sheet-2025"],
+      "status": "supported"
+    },
+    {
+      "claim": "Manufacturing an EV, especially its battery, can create more emissions than manufacturing a gasoline car, but over the vehicle's lifetime total emissions from making, charging, and driving an EV are typically lower because EVs have zero tailpipe emissions; how much lower depends on the local electricity grid mix.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["epa-ev-myths", "doe-greet-ldv-fact-sheet-2025", "cbo-co2-transportation-2022"],
+      "status": "supported"
+    },
+    {
+      "claim": "Because an EV's operating emissions track the grid that charges it, the same electric sedan in 2020 was estimated at 0.15 lb CO2/mile in California versus 0.33 lb CO2/mile in Colorado; as the grid decarbonizes, GREET projects the 2050 EV at 77 gCO2e/mile against 306 gCO2e/mile for the 2050 gasoline vehicle, widening the gap.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["cbo-co2-transportation-2022", "doe-greet-ldv-fact-sheet-2025"],
+      "status": "supported"
+    },
+    {
+      "claim": "The Avoid-Shift-Improve (A-S-I) framework organizes transport policy into avoiding or reducing motorized trips, shifting remaining travel to more efficient modes (public transit, walking, cycling), and improving the technology and fuels of the vehicles that remain.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["tumi-asi-2019"],
+      "status": "supported"
+    },
+    {
+      "claim": "U.S. light-duty vehicles are governed by two parallel federal programs: Corporate Average Fuel Economy (CAFE) standards, set in miles per gallon by NHTSA (Department of Transportation) under the Energy Policy and Conservation Act of 1975, and greenhouse-gas tailpipe standards, set in grams of CO2 per mile by EPA under the Clean Air Act (first adopted for 2010); the MY2026 CAFE rule targets a fleet-wide average near 49 mpg.",
+      "claimType": "LEGAL",
+      "sourceIds": ["c2es-federal-vehicle-standards", "afdc-cafe-standards"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether public transit is automatically lower-emitting than driving.",
+      "positions": [
+        "On average across the U.S., rail, air, and bus travel each emitted less CO2 per passenger-mile than personal vehicles in 2019 (CBO).",
+        "Intensity depends on occupancy: a lightly loaded transit bus averaged 0.95 lb/passenger-mile in 2019, more than the 0.47 lb personal-vehicle average, while a full motorcoach was 0.15 (CBO)."
+      ],
+      "resolution": "Both are true. The lesson states the average finding and immediately qualifies it: the mode's per-passenger-mile advantage is realized only when vehicles carry enough people. It avoids the greenwashing claim that transit is unconditionally cleaner."
+    },
+    {
+      "issue": "Whether EVs are 'clean' given battery manufacturing and grid electricity.",
+      "positions": [
+        "EVs shift emissions upstream: making the battery raises manufacturing emissions, and charging emissions depend on the grid (EPA; CBO).",
+        "Even so, life-cycle emissions are typically lower than a gasoline car's (~46% lower for a 2025 EV on the U.S. average grid per GREET), and fall further as the grid decarbonizes (EPA; Argonne GREET)."
+      ],
+      "resolution": "The lesson presents the honest trade-off — higher build emissions, grid-dependent charging — and the net result that lifetime emissions are generally lower, attributing each figure to GREET, EPA, or CBO and dating it."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft treated 'Sustainable Transportation' as a generic organizing concept with no data, no modal comparison, no EV analysis, and no policy naming. All of that boilerplate was discarded and replaced with dated, sourced content."
+  ],
+  "correctionsNeeded": [
+    "Replaced placeholder definitions with the EPA 2022 sector share (28%) and modal breakdown.",
+    "Added an honest, occupancy-aware treatment of per-passenger-mile intensity using CBO 2019 data, including the case where a transit bus exceeds a car.",
+    "Represented the EV question with both the lifecycle-lower finding (GREET/EPA) and the manufacturing and grid-mix caveats, with figures dated.",
+    "Named the actual U.S. standards (CAFE by NHTSA, GHG standards by EPA) and the Avoid-Shift-Improve framework at a naming level rather than asserting policy positions."
+  ],
+  "rightsIssues": [
+    "Sources are U.S. federal agency works (EPA, DOE/Argonne, NHTSA/AFDC, CBO — public domain under 17 U.S.C. 105), one reputable NGO analysis (C2ES, reference-only), and one intergovernmental/development-community explainer of A-S-I (TUMI/SUTP/GIZ, reference-only). All lesson prose is original synthesis; no source wording reproduced beyond short attributed factual figures."
+  ],
+  "sourceRecords": [
+    {
+      "id": "epa-fast-facts-transportation-2022",
+      "title": "Fast Facts: U.S. Transportation Sector Greenhouse Gas Emissions 1990-2022 (EPA-420-F-24-022)",
+      "provider": "U.S. Environmental Protection Agency, Office of Transportation and Air Quality",
+      "url": "https://www.epa.gov/greenvehicles/fast-facts-transportation-greenhouse-gas-emissions",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work (17 U.S.C. 105)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Fact sheet PDF (nepis.epa.gov Dockey P101AKR0) downloaded and text-extracted locally with pypdf on 2026-08-19. Source for: transportation = largest portion (28%) of total U.S. GHG emissions in 2022 per the Inventory of U.S. GHG Emissions and Sinks 1990-2022; the sector pie (light-duty vehicles 57%, medium/heavy-duty trucks 23%, aircraft 9%, ships & boats 3%, rail 2%, all other 6%); that transportation grew more in absolute terms than any other sector 1990-2022; and that emissions are chiefly CO2 (plus small CH4, N2O, HFCs) from fuel combustion. May 2024 edition."
+    },
+    {
+      "id": "epa-transportation-sector-emissions",
+      "title": "Transportation Sector Emissions (GHG Emissions)",
+      "provider": "U.S. Environmental Protection Agency",
+      "url": "https://www.epa.gov/ghgemissions/transportation-sector-emissions",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work (17 U.S.C. 105)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Live page read 2026-08-19. Source for transportation = 28% of total U.S. GHG emissions counting direct emissions, or 29% including the electricity the sector uses (2022 data); the finer modal split (light-duty trucks 37%, passenger cars 20%, medium/heavy trucks 23%, commercial aircraft 7%, pipelines 4%, ships/boats 3%, other aircraft 2%, rail 2%); and that the majority of the sector's GHGs are CO2 from combustion of petroleum-based gasoline and diesel."
+    },
+    {
+      "id": "epa-inventory-us-ghg-1990-2022",
+      "title": "Inventory of U.S. Greenhouse Gas Emissions and Sinks: 1990-2022 (Chapter 2, Trends)",
+      "provider": "U.S. Environmental Protection Agency",
+      "url": "https://www.epa.gov/ghgemissions/inventory-us-greenhouse-gas-emissions-and-sinks",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work (17 U.S.C. 105)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "The national inventory underlying the Fast Facts. Used here to anchor the 2022 total against which transportation's 28% share is taken (gross U.S. emissions 6,341.2 MMT CO2e in 2022) and to confirm transportation as the largest end-use sector. Same record already registered for the Greenhouse Gases topic; reused with identical id and URL."
+    },
+    {
+      "id": "doe-greet-ldv-fact-sheet-2025",
+      "title": "Light Duty Vehicle Greenhouse Gas Life Cycle Assessment: An Assessment Using R&D GREET 2024 (DOE/EE-2973)",
+      "provider": "U.S. Department of Energy, Office of Energy Efficiency & Renewable Energy / Argonne National Laboratory",
+      "url": "https://www.energy.gov/sites/default/files/2025-01/eere-greet-ldv-fact-sheet_january-2025.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work (17 U.S.C. 105)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "PDF downloaded and text-extracted locally with pypdf on 2026-08-19 (January 2025, DOE/EE-2973). Source for: a 2025 EV produces 46% fewer life-cycle GHGs than a comparable gasoline (ICE) SUV; the assessment counts fuel-production-facility construction, vehicle and battery production and end-of-life, and fuel production and use; assumptions of E10 gasoline for the ICE and the U.S. average grid (2023 NREL Standard Scenarios Midcase) for the EV; that fuel use dominates ICE emissions while electricity generation dominates EV emissions; and the 2050 projections of 306 gCO2e/mile (ICE) and 77 gCO2e/mile (EV). R&D GREET is Argonne National Laboratory's life-cycle model."
+    },
+    {
+      "id": "epa-ev-myths",
+      "title": "Electric Vehicle Myths",
+      "provider": "U.S. Environmental Protection Agency",
+      "url": "https://www.epa.gov/greenvehicles/electric-vehicle-myths",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work (17 U.S.C. 105)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Live page read 2026-08-19. Source for EPA's honest lifecycle framing: EVs typically have a smaller carbon footprint even accounting for charging electricity; making an EV can create more carbon pollution than making a gasoline car because of battery manufacturing, but over the vehicle's lifetime total GHGs from manufacturing, charging, and driving are typically lower thanks to zero tailpipe emissions; and that charging emissions vary with how local power is generated (coal/gas vs wind/solar). References Argonne National Laboratory lifecycle comparison."
+    },
+    {
+      "id": "cbo-co2-transportation-2022",
+      "title": "Emissions of Carbon Dioxide in the Transportation Sector (Report, December 2022)",
+      "provider": "Congressional Budget Office",
+      "url": "https://www.cbo.gov/publication/58861",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "cbo.gov and cbo.gov PDF blocked the fetcher (JS challenge); read via an Internet Archive capture of https://www.cbo.gov/publication/58861 on 2026-08-19. Source for 2019 CO2 per passenger-mile figures: personal vehicles 0.47 lb; personal vehicles carried 81% of passenger-miles; rail transit, passenger railroads, commercial air, and buses each averaged less per passenger-mile than personal vehicles, with wide within-mode variation (transit buses 0.95 lb when lightly occupied; intercity motorcoaches 0.15 lb; heavy-rail transit 0.09-0.99 lb). Also the grid-dependence of EV operating emissions: a popular all-electric sedan estimated at 0.15 lb CO2/mile charged in California vs 0.33 lb in Colorado (2020)."
+    },
+    {
+      "id": "tumi-asi-2019",
+      "title": "Sustainable Urban Transport: Avoid-Shift-Improve (A-S-I)",
+      "provider": "Transformative Urban Mobility Initiative (TUMI) / Sustainable Urban Transport Project (GIZ)",
+      "url": "https://www.transformative-mobility.org/wp-content/uploads/2023/03/ASI_TUMI_SUTP_iNUA_No-9_April-2019-Mykme0.pdf",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "TUMI/GIZ publication; used for factual reference only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "PDF (iNUA No. 9, April 2019) downloaded and text-extracted locally with pypdf on 2026-08-19. Source for the Avoid-Shift-Improve definition: three pillars (avoid/reduce motorized trips through compact, mixed land use and demand management; shift to public transport and active modes; improve vehicle technologies and fuels); origin in Germany in the early 1990s, first officially named in a 1994 German parliamentary Enquete Commission report. Framework described, no wording reproduced."
+    },
+    {
+      "id": "c2es-federal-vehicle-standards",
+      "title": "Regulating Transportation Sector Carbon Emissions (Federal Vehicle Standards)",
+      "provider": "Center for Climate and Energy Solutions (C2ES)",
+      "url": "https://www.c2es.org/content/regulating-transportation-sector-carbon-emissions/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "C2ES copyright; used for factual reference only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Live page read 2026-08-19. Source for the two-agency structure: NHTSA sets CAFE (mpg) under the Energy Policy and Conservation Act of 1975 (extended in 2007 to medium/heavy-duty vehicles); EPA sets GHG tailpipe standards (grams CO2 per mile) under the Clean Air Act, with the first federal GHG vehicle standards adopted for 2010; the two programs are coordinated but legally separate. Facts corroborate the AFDC/NHTSA record; no wording reproduced."
+    },
+    {
+      "id": "afdc-cafe-standards",
+      "title": "Corporate Average Fuel Economy (CAFE) Standards (Laws & Incentives 12859)",
+      "provider": "U.S. Department of Energy, Alternative Fuels Data Center",
+      "url": "https://afdc.energy.gov/laws/12859",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work (17 U.S.C. 105)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19. Source for NHTSA (within the U.S. Department of Transportation) administering CAFE standards, and the March 2022 final rule targeting an industry-wide average fleet fuel economy of approximately 49 mpg in model year 2026 with 8% annual increases in MY2024-2025 and 10% in MY2026."
+    }
+  ]
+}

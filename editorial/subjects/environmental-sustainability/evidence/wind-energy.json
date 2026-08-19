@@ -1,0 +1,207 @@
+{
+  "topicId": "environmental-sustainability:foundations:wind-energy",
+  "subjectId": "environmental-sustainability",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "How a wind turbine converts the wind's kinetic energy to electricity (aerodynamic lift on blades -> rotor -> shaft, gearbox or direct drive -> generator)",
+      "The wind power relation P = 1/2 * rho * A * v^3: power scales with the cube of wind speed and with swept area (rotor diameter squared)",
+      "The Betz limit (theoretical maximum ~59.3% = 16/27 of the wind's kinetic energy extractable), attributed to Albert Betz (1919)",
+      "Onshore versus offshore wind (offshore stronger and steadier but more expensive)",
+      "Capacity factor of wind (~33-36% for the U.S. onshore fleet, dated; higher offshore)",
+      "Trade-offs: variability/intermittency, siting and transmission, wildlife, visual and noise impacts"
+    ],
+    "supporting": [
+      "Wind's share of U.S. electricity generation, dated",
+      "A worked example applying P = 1/2 * rho * A * v^3 (doubling wind speed -> 8x power)",
+      "Representative costs and the onshore vs offshore cost gap, dated"
+    ],
+    "outOfScope": [
+      "The overview of renewable energy as a category (own topic: renewable-energy)",
+      "Solar energy technology (own topic: solar-energy)",
+      "Energy units, primary-vs-electricity accounting, and the U.S. energy mix in depth (own topic: energy-use)",
+      "Grid storage, transmission policy, and detailed power-system engineering",
+      "Adjudication of subsidy/tax/siting policy (contested policy, not settled here)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A wind turbine converts the wind's kinetic energy to electricity: wind flowing across the blades creates a pressure difference that produces aerodynamic lift, spinning a rotor connected through a shaft (directly or via a gearbox) to a generator.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["doe-eere-how-do-wind-turbines-work"],
+      "status": "supported"
+    },
+    {
+      "claim": "The power available in the wind is P = 1/2 * rho * A * v^3, where rho is air density (~1.225 kg/m^3 at sea level), A is the rotor swept area (A = pi*(D/2)^2), and v is wind speed; power is directly proportional to swept area and to the cube of wind speed, so doubling wind speed multiplies available power by eight and doubling rotor diameter quadruples swept area and available power.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["kirkwood-wind-energy-theoretical-power"],
+      "status": "supported"
+    },
+    {
+      "claim": "No turbine can capture more than about 59.3% (16/27) of the wind's kinetic energy; this theoretical maximum is the Betz limit, derived by German physicist Albert Betz in 1919, and real turbines fall short of it (common overall efficiencies near 35-45%).",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["energyeducation-betz-limit", "kirkwood-wind-energy-theoretical-power"],
+      "status": "supported"
+    },
+    {
+      "claim": "Offshore wind tends to operate at a higher capacity factor than onshore wind because of stronger and less variable wind speeds, but offshore wind electricity is generally more expensive than land-based generation.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["eia-offshore-wind-2022"],
+      "status": "supported"
+    },
+    {
+      "claim": "The U.S. onshore wind fleet's annual capacity factor was 33.5% in 2023 (an eight-year low) and 35.9% in 2022 (its all-time high), meaning the fleet produces roughly a third of the electricity it would at full nameplate output.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["eia-wind-capacity-factor-2024"],
+      "status": "supported"
+    },
+    {
+      "claim": "Wind supplied about 10.5% of total U.S. utility-scale electricity generation in 2025, roughly 464 billion kWh, up from about 6 billion kWh in 2000.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["eia-electricity-generation-from-wind"],
+      "status": "supported"
+    },
+    {
+      "claim": "Key trade-offs of wind energy include its variability (output rises and falls with the wind), remote siting that requires new transmission, wildlife impacts, and noise and visual concerns; land-based utility-scale wind is nonetheless among the lower-cost sources of new generation.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["doe-eere-advantages-challenges-wind"],
+      "status": "supported"
+    },
+    {
+      "claim": "As of March 2022 the U.S. had more than 135 GW of net summer onshore wind capacity, while only two small offshore projects were operating (Block Island, 30 MW, 2016; Coastal Virginia pilot, 12 MW, 2021), with more than 6 GW of additional offshore capacity planned along the eastern seaboard.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["eia-offshore-wind-2022"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "The word 'efficiency' is used two different ways in wind sources.",
+      "positions": [
+        "The Betz limit (~59.3%) is the theoretical ceiling on the fraction of the wind's kinetic energy any rotor can extract.",
+        "Capacity factor (~34% for the U.S. fleet) is the ratio of actual annual generation to nameplate output over time, not an instantaneous energy-conversion efficiency."
+      ],
+      "resolution": "The lesson keeps these separate: Betz is an instantaneous physical ceiling on energy capture; capacity factor is a time-averaged utilization measure driven mainly by how often and how hard the wind blows."
+    },
+    {
+      "issue": "Reported wind generation share depends on the reporting year and whether small-scale (distributed) generation is included.",
+      "positions": [
+        "EIA reports ~10.5% of total U.S. utility-scale generation from wind in 2025.",
+        "Earlier full-year data (2024) put wind near 10.3% of utility-scale generation."
+      ],
+      "resolution": "The lesson anchors on the most recent EIA figure (~10.5%, 2025), states it is utility-scale, and dates it."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft was pure boilerplate ('Wind Energy is a foundational concept in Environmental Sustainability...') with no factual content about turbines, the power relation, the Betz limit, or costs.",
+    "Draft vocabulary defined 'Wind Energy' circularly as 'A foundational Environmental Sustainability concept covered in this lesson' - replaced entirely.",
+    "Draft eli10 lacked the required analogyLimits field."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire boilerplate draft with researched, dated, and sourced wind-energy content.",
+    "Added the energy-conversion pathway, the P = 1/2 rho A v^3 relation with its cube-of-speed and swept-area scaling, the Betz limit attributed to Albert Betz (1919), the onshore/offshore contrast, dated capacity factors, and the main trade-offs - none of which existed in the draft.",
+    "Added a worked example computed in Bash (D=100 m rotor: 2.46 MW of wind power at 8 m/s, 19.70 MW at 16 m/s, an 8x increase).",
+    "Added an analogyLimits field and expanded the Eli-10 block to the required length.",
+    "Wrote five substantive, evidence-backed questions with answer keys distributed across positions."
+  ],
+  "rightsIssues": [
+    "DOE/EERE and EIA sources are U.S. government works (public domain); used as REFERENCE_ONLY factual data with no source prose reproduced.",
+    "The Kirkwood 'Wind Energy' OER (Jim Trepka) is CC BY 4.0; the standard physics relation P = 1/2 rho A v^3 is a scientific fact, re-derived and re-worded here, with attribution recorded.",
+    "Energy Education (University of Calgary) is used REFERENCE_ONLY to corroborate the Betz value and attribution; no prose reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "doe-eere-how-do-wind-turbines-work",
+      "title": "How Do Wind Turbines Work?",
+      "provider": "U.S. Department of Energy, Wind Energy Technologies Office",
+      "url": "https://www.energy.gov/eere/wind/how-do-wind-turbines-work",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the energy-conversion pathway: 'When wind flows across the blade, the air pressure on one side of the blade decreases... creates both lift and drag,' with lift exceeding drag to spin the rotor, which connects to a generator directly or through a gearbox. U.S. government work, public domain; used as factual reference only."
+    },
+    {
+      "id": "doe-eere-advantages-challenges-wind",
+      "title": "Advantages and Challenges of Wind Energy",
+      "provider": "U.S. Department of Energy, Wind Energy Technologies Office",
+      "url": "https://www.energy.gov/eere/wind/advantages-and-challenges-wind-energy",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the trade-offs and the low-cost point: ideal sites are often remote and need transmission upgrades; concerns include turbine-blade noise, visual impacts, and wildlife interactions; 'Land-based, utility-scale wind turbines can provide low-cost energy'; wind provides more than 10% of the country's electricity. U.S. government work, public domain; reference only."
+    },
+    {
+      "id": "eia-electricity-generation-from-wind",
+      "title": "Wind explained - Electricity generation from wind",
+      "provider": "U.S. Energy Information Administration",
+      "url": "https://www.eia.gov/energyexplained/wind/electricity-generation-from-wind.php",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the dated generation share: 'In 2025, wind turbines were the source of about 10.5% of total U.S. utility-scale electricity generation,' and total wind generation rising from about 6 billion kWh in 2000 to about 464 billion kWh in 2025. U.S. government work, public domain; reference only."
+    },
+    {
+      "id": "eia-wind-capacity-factor-2024",
+      "title": "U.S. wind generation and capacity factor (Today in Energy, Apr 30, 2024)",
+      "provider": "U.S. Energy Information Administration",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=61943",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the onshore capacity-factor figures: the U.S. wind fleet's average annual capacity factor 'fell to an eight-year low of 33.5% (compared with 35.9% in 2022, the all-time high).' Data from EIA Electric Power Monthly and Power Plant Operations Report. U.S. government work, public domain; reference only."
+    },
+    {
+      "id": "eia-offshore-wind-2022",
+      "title": "Developers plan to add 6 gigawatts of U.S. offshore wind capacity through 2029 (Today in Energy)",
+      "provider": "U.S. Energy Information Administration",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=52940",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the onshore-vs-offshore contrast (June 2022): 'Offshore wind tends to operate at a higher capacity factor than onshore wind because of stronger and less variable wind speeds' and 'Offshore wind electricity generation is generally more expensive than land-based energy sources.' Also >135 GW net summer onshore capacity (March 2022); operating offshore limited to Block Island (30 MW, 2016) and Coastal Virginia pilot (12 MW, 2021), with >6 GW planned. Figures dated 2022. U.S. government work, public domain; reference only."
+    },
+    {
+      "id": "kirkwood-wind-energy-theoretical-power",
+      "title": "Wind Energy - Theoretical Power of Wind",
+      "provider": "Jim Trepka, Kirkwood Community College (Pressbooks OER)",
+      "url": "https://kirkwood.pressbooks.pub/windenergy/chapter/theoretical-power-of-wind/",
+      "sourceType": "open-textbook",
+      "usage": "EXTRACT_AND_ADAPT",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Open textbook (CC BY 4.0). Supports the derivation and relation: KE = 1/2 m v^2 with m = rho*A*v*t gives wind power = 1/2 rho A v^3; power directly proportional to swept area (pi*(d/2)^2), to air density rho, and to v^3; worked example shows 187.5 kW at one speed and 1500 kW at double the speed, 'an 8x increase in power for a 2x increase in velocity.' Relation re-derived and re-worded here; attribution recorded."
+    },
+    {
+      "id": "energyeducation-betz-limit",
+      "title": "Betz limit",
+      "provider": "Energy Education, University of Calgary",
+      "url": "https://energyeducation.ca/encyclopedia/Betz_limit",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Corroborates the Betz limit and its attribution: 'conjectured by German physicist Albert Betz in 1919'; the maximum is 59.3% (16/27) of the wind's kinetic energy; common real efficiencies 35-45%. Used only to confirm the value and attribution; no prose reproduced."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "topicId": "environmental-sustainability:foundations:sustainable-food-systems",
+  "subjectId": "environmental-sustainability",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "What a food system is (production through disposal) and sustainability applied to food",
+      "Environmental footprint of food: land use, freshwater withdrawals, greenhouse-gas emissions share (with year and range)",
+      "Sustainable practices: regenerative agriculture, cover crops, reduced/no-till, crop rotation, IPM, agroforestry (USDA/NRCS)",
+      "Food loss and waste: scale in the U.S. and the national reduction goal",
+      "Diet and emissions: animal products vs plant foods per calorie/protein (Poore & Nemecek 2018)",
+      "Food miles misconception: transport is a small share of a food's footprint"
+    ],
+    "supporting": [
+      "Life-cycle assessment as the measurement method",
+      "Methane and nitrous oxide make agricultural emissions chemically distinct (pointer to Greenhouse Gases lesson)",
+      "Waste hierarchy favors prevention over disposal (pointer to Waste Management lesson)"
+    ],
+    "outOfScope": [
+      "Ecosystem structure and biodiversity mechanics (owned by Ecosystems and Natural Resources)",
+      "Water cycle and water sustainability in depth (owned by Water Sustainability)",
+      "GHG warming mechanics, GWP, time horizons (owned by Greenhouse Gases)",
+      "Municipal waste and recycling systems (owned by Waste Management)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Roughly half of the world's habitable land is used for agriculture, and about three-quarters of that farmland is used for livestock, which supplies only about 18% of global calories.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["owid-environmental-impacts-of-food", "poore-nemecek-2018-food-environmental-impacts"],
+      "status": "supported"
+    },
+    {
+      "claim": "Agriculture is the largest human user of freshwater, accounting for roughly 70% of global freshwater withdrawals (FAO), though the exact figure is uncertain and should be treated as an approximation.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["owid-environmental-impacts-of-food"],
+      "status": "supported"
+    },
+    {
+      "claim": "The food system accounts for roughly a quarter to a third of global anthropogenic GHG emissions: IPCC SRCCL (2019) estimated 21–37% (medium confidence); Crippa et al. (2021, EDGAR-FOOD) estimated about 34% for 2015 (~18 Gt CO2e); Poore & Nemecek (2018) estimated about 26% for food production.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["ipcc-srccl-2019-chapter5-food-security", "crippa-2021-food-systems-emissions-nature-food", "poore-nemecek-2018-food-environmental-impacts", "fao-2021-food-systems-third-emissions-newsroom"],
+      "status": "supported"
+    },
+    {
+      "claim": "The USDA/NRCS organizes soil-health management around four principles — minimize soil disturbance, keep the soil covered, maximize living roots, maximize biodiversity — implemented via no-till/reduced-till, cover crops, crop rotation, IPM, and agroforestry.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nrcs-soil-health"],
+      "status": "supported"
+    },
+    {
+      "claim": "USDA and EPA estimate that 30–40% of the U.S. food supply goes uneaten; a 2014 USDA ERS study estimated retail- and consumer-level food loss at 31% of the supply in 2010 (~133 billion pounds, ~$161 billion).",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["usda-food-loss-and-waste", "ers-2014-estimated-food-loss-eib121", "epa-2030-food-loss-waste-reduction-goal"],
+      "status": "supported"
+    },
+    {
+      "claim": "In 2015 the USDA and EPA set the first U.S. national goal to cut food loss and waste in half by 2030 against a 2016 baseline.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["epa-2030-food-loss-waste-reduction-goal", "usda-food-loss-and-waste"],
+      "status": "supported"
+    },
+    {
+      "claim": "Transport ('food miles') is only about 6% of food-system emissions globally, so what a food is matters far more for its carbon footprint than how far it traveled; beef emits roughly 25 kg CO2e per 100 g protein versus under 1 kg for peas/lentils.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["owid-environmental-impacts-of-food", "poore-nemecek-2018-food-environmental-impacts"],
+      "status": "supported"
+    },
+    {
+      "claim": "Shifting toward plant-rich diets is evidence-based as a way to lower food's footprint, but individual dietary choices also reflect culture, health, budget, and personal values.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["poore-nemecek-2018-food-environmental-impacts"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "The precise share of global GHG emissions attributable to the food system.",
+      "positions": [
+        "IPCC SRCCL (2019): 21–37% of net anthropogenic emissions, including pre- and post-production (medium confidence).",
+        "Crippa et al. (2021, Nature Food/EDGAR-FOOD): about 34% of the global total in 2015 (~18 Gt CO2e).",
+        "Poore & Nemecek (2018, Science): about 26% for food production."
+      ],
+      "resolution": "Differences stem from system boundaries (what stages are counted) and base year. The lesson presents 'roughly a quarter to a third' and attributes any specific figure to its dated source rather than asserting one exact number."
+    },
+    {
+      "issue": "The reliability of the widely cited '70% of freshwater withdrawals' figure for agriculture.",
+      "positions": [
+        "FAO and standard references cite ~70% (recent AQUASTAT ~72%).",
+        "A 2024 analysis (PMC) found much of the supporting citation chain lacks empirical grounding and the true share could span a wide range."
+      ],
+      "resolution": "The lesson states ~70% as an approximation and flags the uncertainty, while noting agriculture is unambiguously the dominant water-using sector."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic boilerplate ('a foundational concept... a simple way to apply it') with no substantive, sourced claims about food systems; none of it was usable as evidence.",
+    "Draft vocabulary defined the topic circularly ('A foundational Environmental Sustainability concept covered in this lesson') and defined only generic study-skills terms."
+  ],
+  "correctionsNeeded": [
+    "Replaced all placeholder boilerplate with sourced substance on land, water, emissions, practices, waste, and diet.",
+    "Added dated, attributed emissions figures with an explicit range instead of an undated single number.",
+    "Added the food-miles misconception correction, which the draft lacked entirely.",
+    "Rewrote vocabulary to be non-circular and independently defined."
+  ],
+  "rightsIssues": [
+    "Poore & Nemecek (2018) and Crippa et al. (2021) are copyrighted journal articles — REFERENCE_ONLY; figures cited, no prose reproduced.",
+    "IPCC, USDA, NRCS, ERS, EPA content used as REFERENCE_ONLY facts; U.S. federal works are generally public domain but treated conservatively as reference-only here.",
+    "Our World in Data text/charts are CC BY 4.0 (attribution) but only facts were used; no text adapted."
+  ],
+  "sourceRecords": [
+    {
+      "id": "poore-nemecek-2018-food-environmental-impacts",
+      "title": "Reducing food's environmental impacts through producers and consumers",
+      "provider": "Science (AAAS); Poore, J. & Nemecek, T.",
+      "url": "https://www.science.org/doi/10.1126/science.aaq0216",
+      "sourceType": "peer-reviewed",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Landmark 2018 meta-analysis of ~38,700 farms across 119 countries and 570 LCA studies. Supports: food production ~26% of global GHG emissions; beef ~25 kg CO2e per 100 g protein vs <1 kg for peas/lentils; transport a small share of footprint; plant-based diets can cut food emissions substantially. Cited from DOI 10.1126/science.aaq0216 and the Oxford ORA copy; figures cross-checked via Our World in Data."
+    },
+    {
+      "id": "crippa-2021-food-systems-emissions-nature-food",
+      "title": "Food systems are responsible for a third of global anthropogenic GHG emissions (EDGAR-FOOD)",
+      "provider": "Nature Food; Crippa et al. (FAO / EC Joint Research Centre)",
+      "url": "https://www.nature.com/articles/s43016-021-00225-9",
+      "sourceType": "peer-reviewed",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "2021 study introducing the EDGAR-FOOD database. Supports: food-system emissions ~34% of the global total in 2015, ~18 Gt CO2e; share declined from 44% (1990) to 34% (2015) even as absolute emissions rose. Confirmed via the FAO newsroom summary of the same study."
+    },
+    {
+      "id": "ipcc-srccl-2019-chapter5-food-security",
+      "title": "IPCC Special Report on Climate Change and Land (SRCCL), Chapter 5: Food Security",
+      "provider": "Intergovernmental Panel on Climate Change (IPCC)",
+      "url": "https://www.ipcc.ch/srccl/chapter/chapter-5/",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "2019 report. Supports: food systems account for 21–37% of total net anthropogenic GHG emissions including pre- and post-production (medium confidence); within-farm-gate crop/livestock 9–14%, land use/land-use change 5–14%, supply chain 5–10%. Used to anchor the emissions range."
+    },
+    {
+      "id": "fao-2021-food-systems-third-emissions-newsroom",
+      "title": "Food systems account for more than one third of global greenhouse gas emissions",
+      "provider": "UN Food and Agriculture Organization (FAO)",
+      "url": "https://www.fao.org/newsroom/detail/Food-systems-account-for-more-than-one-third-of-global-greenhouse-gas-emissions/en",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "FAO newsroom summary of the EDGAR-FOOD / Crippa et al. 2021 result: ~34% of global anthropogenic GHG in 2015, ~18 Gt CO2e; methane ~35% of food-system GHG. Corroborates the peer-reviewed source."
+    },
+    {
+      "id": "usda-food-loss-and-waste",
+      "title": "Food Loss and Waste / Food Waste FAQs",
+      "provider": "U.S. Department of Agriculture (USDA)",
+      "url": "https://www.usda.gov/about-food/food-safety/food-loss-and-waste",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports: USDA/EPA estimate 30–40% of the U.S. food supply is uneaten; USDA co-leads the 2030 halving goal. U.S. federal work, generally public domain."
+    },
+    {
+      "id": "epa-2030-food-loss-waste-reduction-goal",
+      "title": "United States 2030 Food Loss and Waste Reduction Goal",
+      "provider": "U.S. Environmental Protection Agency (EPA)",
+      "url": "https://www.epa.gov/sustainable-management-food/united-states-2030-food-loss-and-waste-reduction-goal",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports: USDA and EPA jointly announced (Sept 16, 2015) the first national goal to cut food loss and waste in half by 2030 against a 2016 baseline (328 to 164 lbs/person); '30 to 40 percent of the food supply is never eaten.' U.S. federal work."
+    },
+    {
+      "id": "ers-2014-estimated-food-loss-eib121",
+      "title": "The Estimated Amount, Value, and Calories of Postharvest Food Losses at the Retail and Consumer Levels in the United States (EIB-121)",
+      "provider": "USDA Economic Research Service; Buzby, Wells & Hyman",
+      "url": "https://www.ers.usda.gov/media/7364/eib-121-report-summary.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "2014 ERS study. Supports: 31% food loss at retail and consumer levels in 2010 (~133 billion pounds, ~$161 billion); meat/poultry/fish the largest share of loss value. U.S. federal work."
+    },
+    {
+      "id": "nrcs-soil-health",
+      "title": "Soil Health Principles and Practices",
+      "provider": "USDA Natural Resources Conservation Service (NRCS) / Farmers.gov",
+      "url": "https://www.farmers.gov/conservation/soil-health",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the four NRCS soil-health principles (minimize disturbance, keep soil covered, maximize living roots, maximize biodiversity) and the practices that implement them: no-till/reduced-till, cover crops, crop rotation, diverse mixes. Cross-checked against the NRCS 'Unlock the Secrets in the Soil' factsheet (2021) and North Dakota NRCS soil-health principle pages."
+    },
+    {
+      "id": "owid-environmental-impacts-of-food",
+      "title": "Environmental Impacts of Food Production",
+      "provider": "Our World in Data (Hannah Ritchie & Max Roser)",
+      "url": "https://ourworldindata.org/environmental-impacts-of-food",
+      "sourceType": "reference",
+      "usage": "ATTRIBUTION_REQUIRED",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "CC BY 4.0. Aggregates Poore & Nemecek (2018) and FAO data. Supports: food ~26% of global GHG; half of habitable land farmed (three-quarters for livestock, 18% of calories); ~70% of freshwater withdrawals to agriculture; transport ~6% of food emissions; beef vs peas per-100g-protein figures. Only facts used; no text reproduced."
+    }
+  ]
+}

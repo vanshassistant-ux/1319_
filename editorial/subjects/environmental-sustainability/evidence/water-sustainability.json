@@ -1,0 +1,184 @@
+{
+  "topicId": "environmental-sustainability:foundations:water-sustainability",
+  "subjectId": "environmental-sustainability",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Distribution of Earth's water: ~97% saltwater, ~3% freshwater; most freshwater in ice and groundwater",
+      "High-level water cycle and the concept of recharge",
+      "Water use by sector (US and global); withdrawal vs consumptive use",
+      "Physical vs economic water scarcity",
+      "Groundwater depletion / aquifer overdraft (Ogallala/High Plains, Central Valley)",
+      "Conservation/efficiency and virtual water / water footprint"
+    ],
+    "supporting": [
+      "Water quality: point vs nonpoint source pollution (brief)",
+      "Renewable vs non-renewable (fossil) groundwater"
+    ],
+    "outOfScope": [
+      "Ecosystems and natural-capital framing (owned by Ecosystems and Natural Resources)",
+      "In-depth agriculture and food systems (owned by Sustainable Food Systems; only water's role covered here)",
+      "Urban water infrastructure systems in depth (owned by Sustainable Cities)"
+    ]
+  },
+  "claims": [
+    { "claim": "About 96.5% of Earth's water is saltwater in the oceans; roughly 3.5% is freshwater, of which about 68.7% is in glaciers/ice and about 30.1% is groundwater, leaving surface water in rivers and lakes a tiny fraction (rivers ~2,120 km3, about one ten-thousandth of one percent of all water).", "claimType": "QUANTITATIVE", "sourceIds": ["usgs-water-distribution"], "status": "supported" },
+    { "claim": "The water cycle, driven by solar energy and gravity, moves water through evaporation/transpiration, condensation, precipitation, infiltration/recharge, and runoff, with no beginning or end, making surface water and shallow groundwater renewable within their recharge rate.", "claimType": "SCIENTIFIC", "sourceIds": ["usgs-water-cycle-diagram"], "status": "supported" },
+    { "claim": "US total water withdrawals in 2015 were about 322 Bgal/d (9% below 2010's 354 Bgal/d, lowest since before 1970); the three largest categories were thermoelectric power 133 Bgal/d (41%), irrigation 118 Bgal/d (37%), and public supply 39 Bgal/d (12%), together ~90% of the total.", "claimType": "QUANTITATIVE", "sourceIds": ["usgs-water-use-2015-fs20183035"], "status": "supported" },
+    { "claim": "Withdrawal (water removed from a source) differs from consumptive use (water not returned). Thermoelectric power leads US withdrawals but returns most cooling water; irrigation consumed about 62% (73.2 Bgal/d) of its 2015 withdrawals.", "claimType": "TECHNICAL", "sourceIds": ["usgs-water-use-2015-fs20183035"], "status": "supported" },
+    { "claim": "Globally, agriculture accounts for about 69% of freshwater withdrawals, with industry near 19% and municipal use near 12%; agriculture is the dominant user across most regions.", "claimType": "QUANTITATIVE", "sourceIds": ["fao-aquastat-water-withdrawal"], "status": "supported" },
+    { "claim": "Physical water scarcity (introduced in IWMI's 2007 Comprehensive Assessment) exists where the resource itself cannot meet demand; economic water scarcity exists where water is physically available but infrastructure/investment to access it is lacking (common in sub-Saharan Africa and parts of South Asia).", "claimType": "INTERPRETIVE", "sourceIds": ["iwmi-water-scarcity-definitions"], "status": "supported" },
+    { "claim": "Groundwater overdraft in the High Plains (Ogallala) aquifer (which underlies ~174,000 sq mi across eight states) has depleted roughly 330 km3 of largely non-renewable fossil groundwater; California's Central Valley has lost about 80 km3 since the 1960s; together the two regions account for roughly half of US groundwater depletion since 1900.", "claimType": "SCIENTIFIC", "sourceIds": ["scanlon-2012-groundwater-irrigation-pnas", "usgs-water-use-2015-fs20183035"], "status": "supported" },
+    { "claim": "Estimated cumulative US groundwater depletion during 1900-2008 totals about 1,000 km3, with the rate reaching almost 25 km3 per year during 2000-2008.", "claimType": "QUANTITATIVE", "sourceIds": ["usgs-groundwater-depletion-sir2013-5079"], "status": "supported" },
+    { "claim": "Groundwater is neither fully renewable like solar energy nor non-renewable like a petroleum deposit: recharge replenishes it, but often at much smaller rates than withdrawals, so overdraft can persistently draw down storage.", "claimType": "SCIENTIFIC", "sourceIds": ["usgs-groundwater-sustainability-circ1186"], "status": "supported" },
+    { "claim": "US water pollution is divided into point sources (discrete Clean Water Act discharges) and nonpoint sources (diffuse runoff carrying fertilizers, pesticides, sediment, salts, bacteria, and nutrients); states report nonpoint source pollution as the leading remaining cause of water-quality problems.", "claimType": "TECHNICAL", "sourceIds": ["epa-nonpoint-source-pollution"], "status": "supported" },
+    { "claim": "Virtual water (introduced by Tony Allan in the early 1990s; Stockholm Water Prize 2008) is the freshwater embedded in producing a good; the water footprint (developed by Arjen Hoekstra, 2002) measures total green, blue, and grey freshwater used to make what a person/business/nation consumes, with roughly 15,000 liters estimated behind one kilogram of beef.", "claimType": "INTERPRETIVE", "sourceIds": ["waterfootprint-network"], "status": "supported" }
+  ],
+  "conflictingEvidence": [
+    { "issue": "The '15,000 liters per kilogram of beef' figure is widely cited but contested.", "positions": ["Water Footprint Network global average is ~15,000 L/kg, ~93% green (rain-fed feed) water", "Critics note the figure blends green and blue water and varies enormously by production system, so it can overstate pressure on scarce blue-water supplies"], "resolution": "Presented as a Water Footprint Network estimate that is mostly green water, with an explicit caveat that local context and water source matter; not stated as a fixed universal cost." }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic placeholder text ('a foundational concept... introduces its meaning, its context, and a simple way to apply it') with no substantive, sourced claims about water; all of it was discarded."
+  ],
+  "correctionsNeeded": [
+    "Replaced boilerplate definition-of-a-concept framing with substantive hydrology and water-use content.",
+    "Added dated, sourced quantitative figures (Earth's water distribution, US 2015 withdrawals, global sector shares, groundwater depletion volumes).",
+    "Introduced the withdrawal-vs-consumption distinction, which the draft lacked entirely."
+  ],
+  "rightsIssues": [
+    "All sources treated as REFERENCE_ONLY; no wording reproduced. USGS, EPA, and FAO content is government/intergovernmental. Water Footprint Network and Global Water Forum are secondary; only facts and definitions used, reworded originally.",
+    "The '15,000 L/kg beef' figure is attributed to the Water Footprint Network and flagged as contested."
+  ],
+  "sourceRecords": [
+    {
+      "id": "usgs-water-distribution",
+      "title": "How Much Water Is There on Earth? (USGS Water Science School)",
+      "provider": "U.S. Geological Survey",
+      "url": "https://www.usgs.gov/special-topics/water-science-school/science/how-much-water-there-earth",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch on 2026-08-19. Supports the distribution of Earth's water: ~96.54% oceans/saltwater, ~3.46% freshwater; of freshwater ~68.7% ice caps/glaciers/permanent snow and ~30.1% groundwater; rivers ~509 mi3 (2,120 km3), about one ten-thousandth of one percent of all water. U.S. federal work (public domain); figures reworded, no prose reproduced."
+    },
+    {
+      "id": "usgs-water-cycle-diagram",
+      "title": "The Water Cycle (USGS Water Science School)",
+      "provider": "U.S. Geological Survey",
+      "url": "https://www.usgs.gov/special-topics/water-science-school/science/water-cycle",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch on 2026-08-19. Supports the high-level water-cycle description: continuous movement among atmosphere, land, and subsurface via evaporation/evapotranspiration, condensation, precipitation, infiltration/recharge, runoff/streamflow, and snowmelt; driven by solar energy and gravity; the statement that ~96% of Earth's water is in the oceans and that human activity alters storage, movement, and quality. U.S. federal work; reworded originally."
+    },
+    {
+      "id": "usgs-water-use-2015-fs20183035",
+      "title": "Summary of Estimated Water Use in the United States in 2015 (USGS Fact Sheet 2018-3035; Circular 1441)",
+      "provider": "U.S. Geological Survey",
+      "url": "https://pubs.usgs.gov/fs/2018/3035/fs20183035.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Fact-sheet summary of USGS Circular 1441. Figures corroborated across the USGS 'Total Water Use' and thermoelectric pages and the Circular 1441 record (downloaded fs20183035.pdf; text layer did not extract, so figures were verified from the USGS web pages and Circular 1441 abstract). Supports: 2015 US total withdrawals 322 Bgal/d, 9% below 2010's 354 Bgal/d and lowest since before 1970; the three largest categories thermoelectric 133 Bgal/d (41%), irrigation 118 Bgal/d (37%), public supply 39 Bgal/d (12%), together ~90% of the national total; and that irrigation consumptive use was about 62% (73.2 Bgal/d) of irrigation withdrawals, with thermoelectric withdrawals nearly all surface water returned to the source. U.S. federal work (public domain); reworded originally."
+    },
+    {
+      "id": "fao-aquastat-water-withdrawal",
+      "title": "AQUASTAT — Water withdrawal by sector (methodology / global ratios)",
+      "provider": "Food and Agriculture Organization of the United Nations (FAO)",
+      "url": "http://www.fao.org/aquastat/en/overview/methodology/water-use/index.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch on 2026-08-19 (followed 301 redirect to the index.html copy). Supports the global freshwater withdrawal ratios of about 69% agricultural, 12% municipal, and 19% industrial, the note that the global figures are weighted by a few high-withdrawal countries, and that the agricultural share ranges from more than 80% in Africa and Asia to just over 20% in Europe. Intergovernmental source; only figures used, reworded originally."
+    },
+    {
+      "id": "iwmi-water-scarcity-definitions",
+      "title": "Understanding water scarcity: definitions and measurements (IWMI 2007 physical vs economic scarcity)",
+      "provider": "Global Water Forum (summarizing IWMI Comprehensive Assessment of Water Management in Agriculture, 2007)",
+      "url": "https://globalwaterforum.org/2012/05/07/understanding-water-scarcity-definitions-and-measurements/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch on 2026-08-19. Secondary source that states the physical-vs-economic water scarcity distinction was defined in IWMI's 2007 Comprehensive Assessment: physical scarcity = the resource itself cannot meet demand (including environmental needs); economic scarcity = water is available but investment/infrastructure to access it is lacking. Corroborated by a WebSearch summary noting economic scarcity predominates in sub-Saharan Africa and parts of South Asia. Definitions reworded originally; no wording reproduced."
+    },
+    {
+      "id": "usgs-groundwater-depletion-sir2013-5079",
+      "title": "Groundwater Depletion in the United States (1900-2008) (USGS SIR 2013-5079, Konikow)",
+      "provider": "U.S. Geological Survey",
+      "url": "https://pubs.usgs.gov/sir/2013/5079/",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the USGS publication summary page via WebFetch on 2026-08-19. Supports: estimated cumulative US groundwater depletion 1900-2008 of approximately 1,000 km3; a 108-year average depletion rate of about 9.2 km3/yr; and an accelerated rate of almost 25 km3/yr during 2000-2008, based on 40 aquifers/areas. Authored by Leonard F. Konikow. U.S. federal work (public domain); figures reworded."
+    },
+    {
+      "id": "scanlon-2012-groundwater-irrigation-pnas",
+      "title": "Groundwater depletion and sustainability of irrigation in the US High Plains and Central Valley (Scanlon et al., 2012, PNAS; also a USGS publication)",
+      "provider": "Proceedings of the National Academy of Sciences / U.S. Geological Survey",
+      "url": "https://www.pnas.org/doi/10.1073/pnas.1200311109",
+      "sourceType": "peer-reviewed",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Abstract and findings obtained via WebSearch on 2026-08-19 (PNAS full text and USGS pub page 70176442 returned 403 to the fetcher). Supports: focused depletion of ~330 km3 of largely fossil groundwater in the central/southern High Plains (Ogallala), mostly recharged over the past ~13,000 years, with about a third of depletion concentrated in ~4% of the aquifer area; ~80 km3 of Central Valley depletion since the 1960s, concentrated during droughts; and that these two irrigated regions account for roughly 50% of US groundwater depletion since 1900. High Plains extent (~174,000 sq mi, eight states) corroborated by the USGS High Plains Aquifer page. Peer-reviewed; figures used, no wording reproduced."
+    },
+    {
+      "id": "waterfootprint-network",
+      "title": "What is a Water Footprint? / Virtual water and the water footprint concept",
+      "provider": "Water Footprint Network (concepts by A. Y. Hoekstra and J. A. Allan)",
+      "url": "https://www.waterfootprint.org/water-footprint-2/what-is-a-water-footprint/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch on 2026-08-19. Supports: the water footprint as a measure of freshwater appropriation across supply chains, developed by Arjen Y. Hoekstra (2002); the green/blue/grey component split; and the estimate of roughly 15,000 liters of water behind one kilogram of beef (about 93% green, 4% blue, 3% grey). The attribution of 'virtual water' to Tony (J. A.) Allan (early 1990s; Stockholm Water Prize 2008) is corroborated by a WebSearch summary. Secondary source; definitions and figures reworded, and the beef figure flagged as a contested global average dominated by green water."
+    },
+    {
+      "id": "epa-nonpoint-source-pollution",
+      "title": "Basic Information about Nonpoint Source (NPS) Pollution",
+      "provider": "U.S. Environmental Protection Agency",
+      "url": "https://www.epa.gov/nps/basic-information-about-nonpoint-source-nps-pollution",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch on 2026-08-19. Supports: the definition of nonpoint source pollution as any water pollution not meeting the Clean Water Act definition of a point source (a discrete conveyance such as a pipe or ditch); examples including excess fertilizers, herbicides, pesticides, sediment, salts, bacteria, and nutrients from farmland and urban runoff; and the statement that states report nonpoint source pollution as the leading remaining cause of water-quality problems. U.S. federal work; reworded originally."
+    },
+    {
+      "id": "usgs-groundwater-sustainability-circ1186",
+      "title": "Sustainability of Ground-Water Resources (USGS Circular 1186)",
+      "provider": "U.S. Geological Survey",
+      "url": "https://pubs.usgs.gov/circ/circ1186/html/intro.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused from the source registry (same id and URL). Supports the intermediate renewable status of groundwater: recharge from precipitation replenishes it, but often at much smaller rates than withdrawals, so it is neither fully renewable like solar energy nor non-renewable like a petroleum deposit. U.S. federal work; reworded originally."
+    }
+  ]
+}

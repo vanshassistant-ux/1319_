@@ -1,0 +1,192 @@
+{
+  "topicId": "environmental-sustainability:foundations:solar-energy",
+  "subjectId": "environmental-sustainability",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Photovoltaics (PV): the photovoltaic effect in semiconductor cells converting sunlight directly to electricity",
+      "Concentrating solar-thermal power (CSP): mirrors concentrate heat to drive a turbine, with optional thermal storage",
+      "Capacity factor: definition, why solar's is roughly 24%, and capacity vs generation",
+      "The past decade's dramatic decline in solar cost, with dated attributed figures",
+      "Utility-scale vs rooftop/distributed solar and their cost difference",
+      "Trade-offs: intermittency, land use, materials"
+    ],
+    "supporting": [
+      "Solar's share of U.S. electricity generation and its growth",
+      "Soft costs as the driver of the utility-vs-residential cost gap",
+      "Thermal storage (molten salt) as a way CSP extends output past sunset"
+    ],
+    "outOfScope": [
+      "General renewable-energy overview (owned by Renewable Energy topic)",
+      "Wind energy (owned by Wind Energy topic)",
+      "Energy efficiency and total energy use (owned by their own topics)",
+      "Detailed semiconductor physics / band-gap theory beyond the photovoltaic effect",
+      "Solar policy specifics such as the Investment Tax Credit mechanics"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "PV cells absorb sunlight and, via the photovoltaic effect, create electric charges that move under an internal electric field, causing electricity to flow; CSP uses mirrors to concentrate sunlight into heat that produces electricity or is stored for later use.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["doe-eere-how-solar-works"],
+      "status": "supported"
+    },
+    {
+      "claim": "U.S. utility-scale solar photovoltaics had an annual capacity factor of 24.4% in 2025; wind was 23.6% and nuclear 91.0% the same year.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["eia-epm-capacity-factor-6-07-b"],
+      "status": "supported"
+    },
+    {
+      "claim": "The installed cost of U.S. utility-scale PV fell about 75% since 2010, with module prices down roughly 90% over that period (LBNL Utility-Scale Solar 2024 edition).",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["lbnl-utility-scale-solar-2024"],
+      "status": "supported"
+    },
+    {
+      "claim": "In the 2024 U.S. benchmark, utility-scale PV cost roughly $1 per watt (about $0.98-1.12/Wdc) while a residential rooftop system cost roughly $3 per watt (about $2.74-3.15/Wdc); utility-scale benchmarks are down roughly 80% since 2010.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["doe-nrel-pv-cost-benchmarks-2024"],
+      "status": "supported"
+    },
+    {
+      "claim": "The IEA's World Energy Outlook 2020 stated that for well-financed projects tapping high-quality resources, solar PV is now the cheapest source of electricity in history, and cheaper than new coal and gas in major markets including the United States.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["iea-weo-2020-electricity"],
+      "status": "supported"
+    },
+    {
+      "claim": "A 2013 NREL analysis of U.S. solar plants found utility-scale solar used on average about 8.9 acres of total land per MWac (about 7.3 acres of direct land).",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["nrel-land-use-solar-2013"],
+      "status": "supported"
+    },
+    {
+      "claim": "Wind and utility-scale solar together provided about 17% of U.S. utility-scale electricity generation in 2025, up from less than 1% in 2005; utility-scale solar generated about 296,000 GWh in 2025.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["eia-wind-solar-17pct-2025"],
+      "status": "supported"
+    },
+    {
+      "claim": "Solar is intermittent (no output at night, reduced under clouds), so solar-heavy grids require storage, flexible backup, transmission, or demand shifting to match a 24-hour demand curve.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["doe-eere-how-solar-works", "eia-epm-capacity-factor-6-07-b"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether solar installed costs are still falling every year",
+      "positions": [
+        "Long-run trend is a steep decline (about 75-80% since 2010)",
+        "Some recent years (e.g., 2024 vs 2023 in LBNL data) show small upticks in capacity-weighted installed cost and rising LCOE"
+      ],
+      "resolution": "Lesson presents the multi-year decline as the dominant, well-established trend while explicitly cautioning that figures are dated snapshots and recent years have seen small upticks rather than uninterrupted declines."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic boilerplate ('Solar Energy is a foundational concept... a label on a toolbox drawer') with no substantive, verifiable claims about solar technology, cost, or performance."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire boilerplate draft with substantive, sourced content on PV vs CSP, capacity factor, cost decline, scale, and trade-offs.",
+    "Added precise, dated quantitative figures where the draft had none."
+  ],
+  "rightsIssues": [
+    "IEA World Energy Outlook is copyrighted; used as REFERENCE_ONLY with one short attributed quote and facts synthesized in original prose.",
+    "LBNL report used as REFERENCE_ONLY; figures cited, no prose reproduced.",
+    "DOE/EIA/NREL are U.S. federal works, generally public domain; one short attributed DOE quote used."
+  ],
+  "sourceRecords": [
+    {
+      "id": "doe-eere-how-solar-works",
+      "title": "How Does Solar Work?",
+      "provider": "U.S. Department of Energy, Solar Energy Technologies Office (EERE)",
+      "url": "https://www.energy.gov/eere/solar/how-does-solar-work",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read by the fetcher on 2026-08-19. Supports the PV mechanism (sunlight absorbed by PV cells creates electrical charges that move under an internal electric field, causing electricity to flow) and the CSP mechanism (mirrors reflect and concentrate sunlight onto receivers that collect it as heat, used to produce electricity or stored for later use, e.g., molten salt). Also supports PV being the more common, distributed technology and CSP being deployed primarily in very large power plants. Short attributed quotes used. U.S. federal work, public domain."
+    },
+    {
+      "id": "eia-epm-capacity-factor-6-07-b",
+      "title": "Electric Power Monthly, Table 6.7.B (Capacity Factors for Utility-Scale Generators Primarily Using Non-Fossil Fuels)",
+      "provider": "U.S. Energy Information Administration",
+      "url": "https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_6_07_b",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read by the fetcher on 2026-08-19. Supports the 2025 annual capacity factors: solar photovoltaic 24.4%, wind 23.6%, nuclear 91.0%, hydroelectric 35.3%, geothermal 65.9%. Used for the capacity-factor discussion and the worked example. U.S. federal data, public domain."
+    },
+    {
+      "id": "doe-nrel-pv-cost-benchmarks-2024",
+      "title": "Solar Photovoltaic System Cost Benchmarks (Q1 2024)",
+      "provider": "U.S. Department of Energy / National Renewable Energy Laboratory",
+      "url": "https://www.energy.gov/cmei/systems/solar-photovoltaic-system-cost-benchmarks",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read by the fetcher on 2026-08-19. Supports the 2024Q1 benchmark installed costs: utility-scale PV about $0.98-1.12/Wdc and residential rooftop PV about $2.74-3.15/Wdc (i.e., roughly $1/W vs $3/W), and that the gap is driven by soft costs. Corroborating WebSearch of NREL/DOE benchmark reporting indicated utility-scale down roughly 80% since 2010. U.S. federal work, public domain."
+    },
+    {
+      "id": "lbnl-utility-scale-solar-2024",
+      "title": "Utility-Scale Solar, 2024 Edition: Empirical Trends in Deployment, Technology, Cost, Performance, PPA Pricing, and Value",
+      "provider": "Lawrence Berkeley National Laboratory (Energy Markets & Policy)",
+      "url": "https://emp.lbl.gov/publications/utility-scale-solar-2024-edition",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Identified and figures verified via WebSearch of the LBNL/EMP publication on 2026-08-19. Supports that utility-scale PV installed cost has fallen about 75% since 2010 (about $1.43/WAC in 2023) and that module prices fell on the order of 90% over the period, plus the caution that 2024 saw a small uptick and LCOE rose recently. Cited as reference-only; figures used, no prose reproduced."
+    },
+    {
+      "id": "iea-weo-2020-electricity",
+      "title": "World Energy Outlook 2020 — Outlook for Electricity",
+      "provider": "International Energy Agency",
+      "url": "https://www.iea.org/reports/world-energy-outlook-2020/outlook-for-electricity",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read by the fetcher on 2026-08-19. Supports the attributed 2020 statement that 'For projects with low cost financing that tap high quality resources, solar PV is now the cheapest source of electricity in history,' and that new solar PV is more cost-effective than coal- and gas-fired power in many countries including the United States. IEA content is copyrighted; treated as reference-only, one short attributed quote used."
+    },
+    {
+      "id": "nrel-land-use-solar-2013",
+      "title": "Land-Use Requirements for Solar Power Plants in the United States (Technical Report NREL/TP-6A20-56290)",
+      "provider": "National Renewable Energy Laboratory (Ong, Campbell, Denholm, Margolis, Heath)",
+      "url": "https://www.nrel.gov/docs/fy13osti/56290.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Figures verified via WebSearch summarizing the June 2013 NREL report and its OSTI copy (osti.gov/servlets/purl/1086349) on 2026-08-19; the OSTI PDF downloaded but rendered as binary to the fetcher, so figures are taken from the report's reported values: total-area capacity-weighted average about 8.9 acres/MWac and direct-area about 7.3 acres/MWac for U.S. solar plants. Dated 2013 explicitly in the lesson. U.S. federal work, public domain."
+    },
+    {
+      "id": "eia-wind-solar-17pct-2025",
+      "title": "Wind and solar generated a record 17% of U.S. electricity in 2025 (Today in Energy)",
+      "provider": "U.S. Energy Information Administration",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67367",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read by the fetcher on 2026-08-19. Supports that wind and utility-scale solar together reached 17% of U.S. utility-scale net generation in 2025 (19% including small-scale solar), up from less than 1% in 2005, and that utility-scale solar generated about 296,000 GWh in 2025 (up 34% from 2024). U.S. federal data, public domain."
+    }
+  ]
+}
