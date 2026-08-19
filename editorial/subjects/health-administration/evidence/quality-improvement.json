@@ -1,0 +1,186 @@
+{
+  "topicId": "health-administration:quality-and-safety:quality-improvement",
+  "subjectId": "health-administration",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "The Model for Improvement (Associates in Process Improvement) and its three questions",
+      "The Plan-Do-Study-Act (PDSA) cycle and small tests of change",
+      "Lean (waste reduction, value stream mapping; Toyota roots) applied to healthcare",
+      "Six Sigma (DMAIC, variation/defect reduction) and Lean Six Sigma",
+      "Common-cause vs special-cause variation; run charts and control (Shewhart) charts",
+      "Measurement over time as the basis for judging whether a change is an improvement"
+    ],
+    "supporting": [
+      "Shewhart-Deming historical roots of PDSA/PDCA",
+      "A worked before/after rate calculation and relative-reduction arithmetic",
+      "The run-chart shift rule (six or more consecutive points on one side of the median)"
+    ],
+    "outOfScope": [
+      "Definitions of quality, the six aims, and Donabedian structure/process/outcome (owned by Healthcare Quality)",
+      "Root cause analysis as a retrospective event-investigation method (owned by Root Cause Analysis)",
+      "Patient-safety mechanics such as never events and just culture (owned by Patient Safety)",
+      "Individualized clinical, coding, billing, or eligibility advice"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The Model for Improvement was developed by Associates in Process Improvement and is built around three questions: what are we trying to accomplish, how will we know that a change is an improvement, and what change can we make that will result in improvement.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ihi-model-for-improvement"],
+      "status": "supported"
+    },
+    {
+      "claim": "The PDSA (Plan-Do-Study-Act) cycle tests a change on a small scale in the real-world setting by planning it, trying it, observing the results, and acting on what is learned; teams run multiple cycles before full implementation.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ihi-model-for-improvement", "ahrq-qi-process-approaches"],
+      "status": "supported"
+    },
+    {
+      "claim": "PDSA descends from Walter Shewhart's 1939 specification-production-inspection cycle and W. Edwards Deming's 1950 cycle; the Japanese PDCA form appeared in 1951, and Deming later named the Plan-Do-Study-Act version, preferring 'Study' over 'Check'.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["deming-pdsa-history-moen"],
+      "status": "supported"
+    },
+    {
+      "claim": "Lean, sometimes called the Toyota Production System, focuses on cutting wasteful steps so that only value-adding activity remains, and uses value stream mapping to visualize each step in the flow of care.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ahrq-qi-process-approaches", "ahrq-lean-case-studies"],
+      "status": "supported"
+    },
+    {
+      "claim": "Six Sigma aims to eliminate defects and reduce variation using the DMAIC roadmap (Define, Measure, Analyze, Improve, Control); a six-sigma process is one in which 99.99966% of production opportunities are expected to be free of defects.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ahrq-qi-process-approaches"],
+      "status": "supported"
+    },
+    {
+      "claim": "Common-cause variation is inherent in a process, while special-cause variation is due to an attributable cause; Shewhart (control) charts display data over time with upper and lower control limits and are the way to distinguish the two.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ihi-shewhart-chart-mistakes"],
+      "status": "supported"
+    },
+    {
+      "claim": "A run chart plots data over time against the median; a shift signaling non-random change is six or more consecutive points all above or all below the median, with points on the median skipped.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ihi-run-chart-rules"],
+      "status": "supported"
+    },
+    {
+      "claim": "A central-line infection rate falling from 12 infections per 4,000 line-days (3.00 per 1,000) to 5 per 4,500 line-days (1.11 per 1,000) is a 63% relative reduction.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["ihi-model-for-improvement"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "The threshold for a 'shift' in time-series data",
+      "positions": [
+        "Run-chart rules use six or more consecutive points on one side of the median (eight if 20+ data points)",
+        "Control-chart practice commonly uses eight consecutive points on one side of the centerline"
+      ],
+      "resolution": "The lesson uses the IHI run-chart rule (six points) and notes that control-chart conventions differ, so the two tools are described separately."
+    },
+    {
+      "issue": "PDSA vs PDCA naming",
+      "positions": [
+        "Deming preferred 'Plan-Do-Study-Act' and objected to 'Check'",
+        "Industry widely uses 'Plan-Do-Check-Act' (PDCA)"
+      ],
+      "resolution": "The lesson uses PDSA (the healthcare-standard term) and explains PDCA as the closely related industrial form with shared Shewhart-Deming roots."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic boilerplate ('a foundational concept', 'a label on a toolbox drawer') with no specific, verifiable QI content."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic placeholder text with the actual methodology: Model for Improvement, PDSA, Lean, Six Sigma, and variation/charts.",
+    "Added correct attributions (Associates in Process Improvement, Shewhart, Deming, Toyota) and dated the Six Sigma defect figure to its definition."
+  ],
+  "rightsIssues": [
+    "IHI materials are copyrighted; used REFERENCE_ONLY, facts synthesized in original wording, no standards or course text reproduced.",
+    "AHRQ pages are U.S. government works (generally public domain) but treated REFERENCE_ONLY here; prose is original.",
+    "Deming Institute history PDF is copyrighted; used REFERENCE_ONLY for dates and attribution only."
+  ],
+  "sourceRecords": [
+    {
+      "id": "ihi-model-for-improvement",
+      "title": "Model for Improvement",
+      "provider": "Institute for Healthcare Improvement (IHI)",
+      "url": "https://www.ihi.org/library/model-for-improvement",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch of the live IHI page. Supports the Model for Improvement's development by Associates in Process Improvement, the three questions (verbatim), and the PDSA cycle as small-scale testing (plan/try/observe/act) with multiple cycles before implementation."
+    },
+    {
+      "id": "ahrq-qi-process-approaches",
+      "title": "Section 4: Ways To Approach the Quality Improvement Process (Page 2 of 2)",
+      "provider": "Agency for Healthcare Research and Quality (AHRQ) — CAHPS Ambulatory Care Improvement Guide",
+      "url": "https://www.ahrq.gov/cahps/quality-improvement/improvement-guide/4-approach-qi-process/sect4part2.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "WebFetch returned HTTP 403; read via curl with a browser user-agent (HTTP 200). Supports PDSA in QI, Lean/Toyota Production System with value stream mapping and 5S, Six Sigma with DMAIC (Define, Measure, Analyze, Improve, Control), and the 99.99966% defect-free definition of a six-sigma process."
+    },
+    {
+      "id": "ihi-shewhart-chart-mistakes",
+      "title": "Avoid Two Common Mistakes with a Shewhart Chart",
+      "provider": "Institute for Healthcare Improvement (IHI)",
+      "url": "https://www.ihi.org/library/blog/avoid-two-common-mistakes-shewhart-chart",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch. Supports definitions of common-cause (inherent) vs special-cause (attributable) variation, the Shewhart/control chart with upper and lower control limits as the means to distinguish them, and the run-chart-when-no-data guidance."
+    },
+    {
+      "id": "ihi-run-chart-rules",
+      "title": "Run Chart Rules Reference Sheet (IHI Open School)",
+      "provider": "Institute for Healthcare Improvement (IHI)",
+      "url": "https://www.ihi.org/education/IHIOpenSchool/Courses/Documents/11_RunChartRulesReferenceSheet.pdf",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Identified via WebSearch summary of the IHI run-chart rules sheet. Supports the shift rule (six or more consecutive points above or below the median; eight if 20+ points; skip points on the median) and the trend/runs/astronomical-point rules."
+    },
+    {
+      "id": "deming-pdsa-history-moen",
+      "title": "Foundation and History of the PDSA Cycle",
+      "provider": "The W. Edwards Deming Institute (Ronald Moen)",
+      "url": "https://deming.org/wp-content/uploads/2020/06/PDSA_History_Ron_Moen.pdf",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "PDF binary could not be parsed by the fetcher; historical dates cross-checked via WebSearch summaries of this document and corroborating sources. Supports the Shewhart 1939 cycle, Deming's 1950 wheel, the 1951 Japanese PDCA, and Deming's later PDSA naming (preferring 'Study' over 'Check'). Used for attribution/dates only."
+    },
+    {
+      "id": "ahrq-lean-case-studies",
+      "title": "Improving Care Delivery Through Lean: Implementation Case Studies",
+      "provider": "Agency for Healthcare Research and Quality (AHRQ)",
+      "url": "https://www.ahrq.gov/sites/default/files/publications/files/leancasestudies.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "AHRQ publication referenced from the QI-process page as evidence that Lean has been applied in U.S. healthcare settings (hospitals and ambulatory care). Used to support the claim that Lean methods are used in healthcare, not for any reproduced text."
+    }
+  ]
+}

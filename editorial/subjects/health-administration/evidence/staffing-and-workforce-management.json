@@ -1,0 +1,186 @@
+{
+  "topicId": "health-administration:administration:staffing-and-workforce-management",
+  "subjectId": "health-administration",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Labor is healthcare's largest operating expense",
+      "Workforce and staffing planning and demand forecasting",
+      "Skill mix and scope-appropriate assignment",
+      "Nurse staffing models and the evidence linking nurse staffing to patient outcomes (Aiken et al. 2002)",
+      "Mandated nurse-to-patient ratios (California AB 394) and the debate over them",
+      "Scheduling, FTEs, and productivity measurement (worked hours per unit of service, HPPD/NHPPD)",
+      "Turnover, retention, burnout, and the cost of turnover"
+    ],
+    "supporting": [
+      "Full-time equivalent (FTE) as the budgeting unit (2,080 paid hours/year)",
+      "Productive vs. nonproductive hours",
+      "RN turnover and vacancy rates as workforce indicators"
+    ],
+    "outOfScope": [
+      "Profiling the professions and their credentials (owned by Healthcare Professionals and Organizations)",
+      "Leadership theory (Healthcare Leadership) and organizational culture (Organizational Culture)",
+      "General operations, patient flow, and supply chain (Healthcare Operations)",
+      "Individualized HR, labor-law, or collective-bargaining advice"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Labor (total compensation and related expenses) is the single largest category of hospital operating expense, accounting for about 56% of total hospital costs in the AHA's 2025 Cost of Caring report.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["aha-cost-of-caring-2025"],
+      "status": "supported"
+    },
+    {
+      "claim": "In Aiken et al.'s 2002 JAMA study of 168 Pennsylvania hospitals (10,184 nurses; 232,342 surgical patients), each additional patient per nurse was associated with a 7% increase in the odds of 30-day mortality (OR 1.07, 95% CI 1.03-1.12) and a 7% increase in failure-to-rescue (OR 1.07, 95% CI 1.02-1.11); higher ratios also raised nurse burnout (OR 1.23) and job dissatisfaction (OR 1.15).",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["aiken-2002-jama-nurse-staffing"],
+      "status": "supported"
+    },
+    {
+      "claim": "California was the first U.S. state to enact minimum licensed nurse-to-patient ratios (Assembly Bill 394, 1999); implementing regulations took effect January 1, 2004, setting, for example, a 1-nurse-to-5-patient ratio on medical-surgical units. Whether such mandates improve outcomes is debated, and there is no single universal national ratio standard.",
+      "claimType": "LEGAL",
+      "sourceIds": ["ca-ab394-nurse-staffing-1999"],
+      "status": "supported"
+    },
+    {
+      "claim": "One full-time equivalent (1.0 FTE) conventionally represents 2,080 paid hours per year (40 hours x 52 weeks); hours per patient day (HPPD/NHPPD) divides the productive nursing hours worked in 24 hours by the patient census and is a standard productivity and budgeting measure.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["american-nurse-hppd-fte"],
+      "status": "supported"
+    },
+    {
+      "claim": "In the 2026 NSI National Health Care Retention & RN Staffing Report (527 hospitals; calendar-year 2025 data), the average staff-RN turnover rate was 17.6% (up from 16.4% in 2024), the average cost of turnover for one bedside RN was $60,090, and the average hospital lost between $4.2 million and $6.2 million; each one-percentage-point change in RN turnover was worth about $295,000 per year to the average hospital.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["nsi-2026-retention-report"],
+      "status": "supported"
+    },
+    {
+      "claim": "Registered nurses are the largest clinical profession, holding about 3,391,000 jobs in 2024, which makes nurse staffing the dominant driver of hospital labor budgets; medical and health services managers (about 616,200 jobs in 2024) plan and direct this workforce.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["bls-ooh-registered-nurses", "bls-ooh-medical-and-health-services-managers"],
+      "status": "supported"
+    },
+    {
+      "claim": "Skill mix (the proportion of RNs to LPNs, aides, and other staff) and scope-appropriate assignment let organizations match staff qualifications to the acuity of the work, which is central to controlling labor cost while maintaining safe care.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["american-nurse-hppd-fte", "aiken-2002-jama-nurse-staffing"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether mandated minimum nurse-to-patient ratios improve patient outcomes and are the right policy tool.",
+      "positions": [
+        "Observational studies (e.g., Aiken et al.) associate richer nurse staffing with lower mortality and failure-to-rescue, supporting minimum-staffing arguments.",
+        "Critics note that mandated fixed ratios can be costly, may not account for patient acuity or unit context, and that the causal effect of California's ratios on outcomes has been mixed in later evaluations."
+      ],
+      "resolution": "The lesson reports the association evidence and attributes it carefully to specific studies, states that California enacted the first mandated ratios, and explicitly notes the debate rather than asserting a settled universal standard."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The machine-generated draft contained only generic placeholder text ('a foundational concept', 'a building block for later discussions') with no factual staffing, FTE, turnover, or nurse-outcome content; essentially all of it was discarded."
+  ],
+  "correctionsNeeded": [
+    "Replaced placeholder boilerplate with sourced content on labor cost share, workforce planning, skill mix, nurse-staffing outcome evidence, mandated ratios, FTE/HPPD productivity, and turnover cost.",
+    "Added a worked FTE/HPPD calculation executed in Bash rather than asserted."
+  ],
+  "rightsIssues": [
+    "Aiken 2002 (JAMA) is a copyrighted peer-reviewed article: cited as REFERENCE_ONLY; only numeric results and study design synthesized, no prose reproduced.",
+    "NSI and AHA reports are copyrighted industry/association publications: REFERENCE_ONLY; figures reported with dates, no wording reproduced.",
+    "American Nurse Journal article is copyrighted: REFERENCE_ONLY for the HPPD/FTE concept."
+  ],
+  "sourceRecords": [
+    {
+      "id": "aha-cost-of-caring-2025",
+      "title": "The Cost of Caring (2025)",
+      "provider": "American Hospital Association",
+      "url": "https://www.aha.org/costsofcaring",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports labor/total compensation and related expenses at about 56% of total hospital costs (Figure 1), the single largest expense category. Read the April 2025 report PDF (https://www.aha.org/system/files/media/file/2025/04/The-Cost-of-Caring-April-2025.pdf) by decompressing the file's Flate streams after the WebFetch parser returned only metadata; canonical landing page registered."
+    },
+    {
+      "id": "aiken-2002-jama-nurse-staffing",
+      "title": "Hospital Nurse Staffing and Patient Mortality, Nurse Burnout, and Job Dissatisfaction (Aiken, Clarke, Sloane, Sochalski, Silber, 2002)",
+      "provider": "JAMA (American Medical Association)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12387650/",
+      "sourceType": "peer-reviewed",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the association between patient-to-nurse ratio and outcomes: each additional patient per nurse OR 1.07 (95% CI 1.03-1.12) for 30-day mortality and OR 1.07 (1.02-1.11) for failure-to-rescue; burnout OR 1.23; dissatisfaction OR 1.15; 168 PA hospitals, 10,184 nurses, 232,342 surgical patients. PubMed abstract page required cookies for the fetcher; verified the numeric results via the Europe PMC REST API (EXT_ID:12387650). Canonical PubMed URL registered."
+    },
+    {
+      "id": "ca-ab394-nurse-staffing-1999",
+      "title": "Assembly Bill 394 (1999) — Health facilities: nursing staff (California minimum nurse-to-patient ratios)",
+      "provider": "California Legislature",
+      "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=199920000AB394",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports that AB 394 (1999) directed California's Department of Health Services to set minimum, specific, numerical licensed nurse-to-patient ratios by classification and unit — the first such state law. Implementing regulations took effect January 1, 2004 (e.g., 1:5 on medical-surgical units, phased from 1:6). Bill text read from the California Legislative Information site; implementation timeline corroborated by CHCF/CGA secondary summaries."
+    },
+    {
+      "id": "nsi-2026-retention-report",
+      "title": "2026 NSI National Health Care Retention & RN Staffing Report",
+      "provider": "NSI Nursing Solutions, Inc.",
+      "url": "https://www.nsinursingsolutions.com/documents/library/nsi_national_health_care_retention_report.pdf",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports CY2025 workforce metrics from 527 participating hospitals: staff-RN turnover 17.6% (up from 16.4% in CY2024), overall hospital turnover 18.5%, RN vacancy 8.6%, average cost of turnover for one bedside RN $60,090, average hospital loss $4.2M-$6.2M, and $295,000 per year per one-point change in RN turnover; hospitals lost $5.19M on average in 2025. Verified by decompressing the PDF's Flate streams locally (WebFetch returned only binary); figures cross-checked against Becker's Hospital Review summary."
+    },
+    {
+      "id": "american-nurse-hppd-fte",
+      "title": "Hours per patient day: Understanding this key measure of productivity",
+      "provider": "American Nurse Journal (American Nurses Association)",
+      "url": "https://www.myamericannurse.com/hours-per-patient-day-understanding-key-measure-productivity/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the definitions of hours per patient day (HPPD/NHPPD) as total productive nursing hours in 24 hours divided by census, the distinction between productive and nonproductive hours, that there is no single standard HPPD calculation, and its use as a budgeting/productivity measure. FTE = 2,080 paid hours/year corroborated by the ScienceDirect article 'Understanding FTEs and Nursing Hours Per Patient Day.'"
+    },
+    {
+      "id": "bls-ooh-registered-nurses",
+      "title": "Registered Nurses — Occupational Outlook Handbook",
+      "provider": "U.S. Bureau of Labor Statistics",
+      "url": "https://www.bls.gov/ooh/healthcare/registered-nurses.htm",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports RNs as the largest clinical profession at ~3,391,000 jobs in 2024, which makes nurse staffing the dominant driver of hospital labor budgets. Read via Wayback capture 20260815180540 (bls.gov blocked direct fetch)."
+    },
+    {
+      "id": "bls-ooh-medical-and-health-services-managers",
+      "title": "Medical and Health Services Managers — Occupational Outlook Handbook",
+      "provider": "U.S. Bureau of Labor Statistics",
+      "url": "https://www.bls.gov/ooh/management/medical-and-health-services-managers.htm",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the administrative/management workforce that plans and directs staffing: ~616,200 jobs in 2024, typical bachelor's-degree entry. Read via Wayback 2026 capture (bls.gov blocked direct fetch)."
+    }
+  ]
+}

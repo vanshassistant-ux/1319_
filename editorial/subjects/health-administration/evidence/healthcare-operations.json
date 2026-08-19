@@ -1,0 +1,207 @@
+{
+  "topicId": "health-administration:administration:healthcare-operations",
+  "subjectId": "health-administration",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Healthcare operations as operations management applied to care delivery, framed as inputs-process-outputs (the transformation model)",
+      "Patient flow and throughput; the movement of patients through a setting from arrival to departure",
+      "Asplin et al. (2003) input-throughput-output conceptual model of ED crowding and the role of boarding as an output failure",
+      "Capacity vs utilization; the bottleneck as the constraint that sets process throughput",
+      "The nonlinear relationship between high utilization, variability, and waiting time (queuing intuition)",
+      "Matching demand and capacity; appointment and operating-room scheduling; natural vs artificial variability and smoothing elective schedules",
+      "Materials management and the healthcare supply chain as physical inputs; inventory balance and stockout risk",
+      "Service lines as an organizing structure; common operational metrics (length of stay, arrival-to-departure time, boarding time, left without being seen)"
+    ],
+    "supporting": [
+      "Utilization = demand/capacity; Little's Law (L = lambda x W); single-server queue time-in-system = 1/(capacity - demand) as an intuition",
+      "AHRQ 2011 statistics on ED crowding and boarding to motivate hospital-wide flow",
+      "GAO 2025 drug-shortage figure to illustrate supply-chain fragility"
+    ],
+    "outOfScope": [
+      "Quality-improvement methodology (PDSA, Lean, Six Sigma as improvement methods) - owned by 'Quality Improvement'",
+      "Staffing ratios, scheduling of the workforce, and retention in depth - owned by 'Staffing and Workforce Management'",
+      "Leadership theory and organizational culture",
+      "Insurance, billing, coding, and reimbursement mechanics",
+      "Individualized clinical, diagnostic, or benefits advice"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Operations management is the management of the process that converts an organization's inputs (resources) into its outputs (services or products); in health care the inputs include patients, staff time, beds, equipment, supplies, and information, and the output is completed care.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-intro-business-production-operations"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Asplin and colleagues (2003) proposed a conceptual model partitioning emergency department crowding into three interdependent components - input (patient arrival), throughput (internal ED operations), and output (patient disposition, including inpatient admission).",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "asplin-2003-ed-crowding-conceptual-model"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Boarding - holding admitted patients in the ED while they await inpatient beds - is an output-side failure that backs up ED throughput; AHRQ's 2011 guide reported roughly nine in ten hospitals boarded admitted patients and about half of EDs operated at or above capacity.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "ahrq-2011-patient-flow-ed-crowding-guide",
+        "asplin-2003-ed-crowding-conceptual-model"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A process's throughput is limited by its lowest-capacity step (the bottleneck); adding capacity at a non-bottleneck step does not raise overall throughput.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openstax-intro-business-production-operations",
+        "ihi-2020-achieving-hospital-wide-patient-flow"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "As a resource's utilization approaches 100 percent, waiting times rise sharply and nonlinearly because arrival and service-time variability has little slack to absorb it; operations managers therefore protect a capacity buffer at bottlenecks rather than maximizing utilization.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "ihi-2020-achieving-hospital-wide-patient-flow",
+        "openstax-intro-business-production-operations"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Matching capacity and demand is a core operations task; IHI distinguishes natural variability (random illness) from artificial variability (created by scheduling choices), and smoothing/level-loading elective surgical schedules reduces artificial variability and downstream bed surges without adding resources.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "ihi-2020-achieving-hospital-wide-patient-flow"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Materials management and the healthcare supply chain move medications, supplies, and equipment to the point of care; inventory must be balanced against stockout risk, and supply-chain disruptions have clinical consequences.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-intro-business-production-operations",
+        "gao-2025-drug-shortages"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A 2025 GAO report (GAO-25-107110, published April 9, 2025) found that as of July 31, 2024 the FDA was tracking 102 active drug shortages, with sterile injectable medications - central to hospital and cancer care - the most commonly affected, and that shortages can delay or limit care.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "gao-2025-drug-shortages"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Utilization equals demand divided by capacity; Little's Law states the average number of items in a system equals the throughput rate times the average time each spends in the system (L = lambda x W).",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openstax-intro-business-production-operations"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether the single-server queue formula used in the worked example (time in system = 1/(capacity - demand)) is exact for a real imaging department.",
+      "positions": [
+        "It is the exact mean for an idealized M/M/1 queue with Poisson arrivals and exponential service.",
+        "Real departments have multiple servers, scheduled arrivals, and non-exponential service, so the formula is only an intuition, not a precise predictor."
+      ],
+      "resolution": "The lesson presents the numbers explicitly as a simple single-server queuing intuition to show the nonlinear blow-up near full utilization, not as an operational prediction; the qualitative conclusion (waits rise sharply near 100 percent utilization) is robust and matches IHI's flow guidance."
+    },
+    {
+      "issue": "Whether the AHRQ crowding statistics (circa 2011) still describe current conditions.",
+      "positions": [
+        "They are the figures in AHRQ's 2011 hospital guide.",
+        "ED volumes and boarding have shifted since, so exact percentages may differ today."
+      ],
+      "resolution": "The figures are attributed to the 2011 guide and dated in the prose; they are used to motivate why flow is a hospital-wide problem, not as current-year statistics."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft was generic boilerplate ('Healthcare Operations is a foundational concept... a simple way to apply it') with no operational content; all of it was discarded."
+  ],
+  "correctionsNeeded": [
+    "Replaced the boilerplate draft with sourced operations content: the transformation model, patient flow and the input-throughput-output model, capacity/utilization/bottleneck, demand-capacity matching and variability, and the supply chain.",
+    "Added a worked example (bottleneck, utilization, Little's Law, queuing intuition) with arithmetic executed this session.",
+    "Kept improvement methodology, workforce staffing depth, and leadership out of scope per anti-duplication boundaries, referencing labor and process improvement only as context."
+  ],
+  "rightsIssues": [
+    "AHRQ guide, GAO report are U.S. government works used REFERENCE_ONLY (GAO is public domain); facts synthesized and rewritten.",
+    "IHI white paper and the Annals of Emergency Medicine article are copyrighted; used REFERENCE_ONLY with no wording reproduced.",
+    "OpenStax Introduction to Business is CC BY 4.0 (EXTRACT_AND_ADAPT with attribution); concepts were adapted and rewritten in original prose, attribution recorded."
+  ],
+  "sourceRecords": [
+    {
+      "id": "ahrq-2011-patient-flow-ed-crowding-guide",
+      "title": "Improving Patient Flow and Reducing Emergency Department Crowding: A Guide for Hospitals",
+      "provider": "Agency for Healthcare Research and Quality (AHRQ)",
+      "url": "https://www.ahrq.gov/research/findings/final-reports/ptflow/index.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "AHRQ Publication (2011), based on the Urgent Matters program. The HTML sections returned HTTP 405 to WebFetch/curl, so the full PDF (ptflowguide.pdf) was downloaded via curl with a browser user-agent and text-extracted with pypdf. Supports definitions of patient flow, throughput, and boarding, that crowding is a hospital-wide (not ED-only) issue, and the figures that ~9 in 10 hospitals boarded admitted patients and about half of EDs operated at or above capacity, plus the CMS ED throughput measures. Facts restated in original prose."
+    },
+    {
+      "id": "ihi-2020-achieving-hospital-wide-patient-flow",
+      "title": "Achieving Hospital-wide Patient Flow (IHI White Paper, 2nd edition)",
+      "provider": "Institute for Healthcare Improvement (IHI)",
+      "url": "https://www.ihi.org/resources/white-papers/achieving-hospital-wide-patient-flow",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Copyright (c) 2020 IHI, all rights reserved (updated edition of the 2017 white paper). PDF downloaded via curl with a browser user-agent and text-extracted with pypdf. Supports the framing of hospital-wide flow as 'right care, right place, right time', the three approaches (shape/reduce demand, match capacity and demand, redesign the system), identifying the current constraint/bottleneck, natural vs artificial variability, and smoothing/level-loading elective surgical schedules. No wording reproduced."
+    },
+    {
+      "id": "asplin-2003-ed-crowding-conceptual-model",
+      "title": "A conceptual model of emergency department crowding",
+      "provider": "Asplin BR, Magid DJ, Rhodes KV, Solberg LI, Lurie N, Camargo CA - Annals of Emergency Medicine, 2003;42(2):173-180",
+      "url": "https://doi.org/10.1067/mem.2003.302",
+      "sourceType": "peer-reviewed",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Citation and abstract confirmed via the Europe PMC REST API (PMID 12883504; DOI 10.1067/mem.2003.302; Ann Emerg Med 2003 Aug;42(2):173-180). Supports the input-throughput-output conceptual model of ED crowding and that the three components are interdependent within an unscheduled acute-care system. Only the abstract was read; described, not reproduced."
+    },
+    {
+      "id": "openstax-intro-business-production-operations",
+      "title": "Introduction to Business, Chapter 10 (Achieving World-Class Operations Management) and 12.4 (Supply Chain Management)",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/introduction-business/pages/10-1-production-and-operations-management-an-overview",
+      "sourceType": "open-textbook",
+      "usage": "EXTRACT_AND_ADAPT",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch (10.1) and cross-checked with WebSearch summaries of 10.4, 12.4, and the chapter 10 key terms. Supplies the general operations-management framing: production/operations as a conversion of inputs into outputs, that it applies to services as well as goods, capacity as maximum output, utilization, the bottleneck concept, inventory management, and supply-chain management. CC BY 4.0; concepts adapted to health care and written in original prose with attribution recorded."
+    },
+    {
+      "id": "gao-2025-drug-shortages",
+      "title": "Drug Shortages: HHS Should Implement a Mechanism to Coordinate Its Activities (GAO-25-107110)",
+      "provider": "U.S. Government Accountability Office (GAO)",
+      "url": "https://www.gao.gov/products/gao-25-107110",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch. Published April 9, 2025. Supports that as of July 31, 2024 the FDA was tracking 102 active drug shortages, that sterile injectable medications (central to hospital and cancer care) are most commonly affected, and that shortages can delay or limit care - used to illustrate healthcare supply-chain fragility. U.S. government work, public domain."
+    }
+  ]
+}
