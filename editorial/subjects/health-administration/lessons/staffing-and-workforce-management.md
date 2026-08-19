@@ -96,42 +96,42 @@ Because labor is healthcare's largest expense, workforce management, forecasting
 ## Practice Question Bank
 
 **1. Across U.S. hospitals, labor (total compensation and related expenses) accounts for roughly what share of total operating costs, making it the single largest expense category?**
-- A) About one-tenth of total costs
-- B) About 56 percent, just over half of total costs
-- C) About one-quarter of total costs
-- D) Nearly 90 percent of total costs
+- A. About one-tenth of total costs
+- B. About 56 percent, just over half of total costs
+- C. About one-quarter of total costs
+- D. Nearly 90 percent of total costs
 
 **Correct: B.** The AHA's 2025 Cost of Caring report put total compensation and related expenses at about 56 percent of total hospital costs, the largest single category. One-tenth (A) and one-quarter (C) understate it, and nearly 90 percent (D) overstates it; labor is just over half, which is exactly why staffing is the budget's biggest lever.
 
 **2. In Aiken and colleagues' 2002 JAMA study of surgical patients in Pennsylvania hospitals, each additional patient added to the average nurse's workload was associated with:**
-- A) A 7 percent decrease in the odds of 30-day mortality
-- B) No measurable change in patient mortality
-- C) A roughly 7 percent increase in the odds of 30-day mortality and of failure-to-rescue
-- D) A guaranteed doubling of the number of patient deaths
+- A. A 7 percent decrease in the odds of 30-day mortality
+- B. No measurable change in patient mortality
+- C. A roughly 7 percent increase in the odds of 30-day mortality and of failure-to-rescue
+- D. A guaranteed doubling of the number of patient deaths
 
 **Correct: C.** The study reported an odds ratio of about 1.07 for both 30-day mortality and failure-to-rescue per extra patient per nurse, a 7 percent increase in the odds, along with more burnout and dissatisfaction. It was an increase, not a decrease (A) or no effect (B); and as an association from observational data it does not establish a guaranteed doubling of deaths (D).
 
 **3. In workforce budgeting, one full-time equivalent (1.0 FTE) conventionally represents how many paid hours per year?**
-- A) 2,080 hours (40 hours per week for 52 weeks)
-- B) 1,000 hours
-- C) 4,160 hours
-- D) 365 hours
+- A. 2,080 hours (40 hours per week for 52 weeks)
+- B. 1,000 hours
+- C. 4,160 hours
+- D. 365 hours
 
 **Correct: A.** One FTE equals 2,080 paid hours per year (40 x 52), which is why part-time staff sum into fractional FTEs and budgets are written in FTEs. 1,000 hours (B) is roughly half-time, 4,160 (C) is two FTEs, and 365 (D) confuses hours with days.
 
 **4. A medical-surgical unit has an average daily census of 24 patients and budgets 8.0 nursing hours per patient day (NHPPD). How many productive nursing hours must be staffed per day to hit that target?**
-- A) 32 hours
-- B) 3 hours
-- C) 300 hours
-- D) 192 hours
+- A. 32 hours
+- B. 3 hours
+- C. 300 hours
+- D. 192 hours
 
 **Correct: D.** HPPD is productive nursing hours divided by census, so required hours = census x target HPPD = 24 x 8.0 = 192 hours per day. Adding 24 and 8 gives 32 (A); dividing 24 by 8 gives 3 (B), which inverts the formula; and 300 (C) does not follow from the figures.
 
 **5. Which statement best reflects the current evidence and policy status of nurse staffing standards in the United States?**
-- A) Federal law sets a single nationwide nurse-to-patient ratio for every hospital unit.
-- B) California was the first state to mandate minimum nurse-to-patient ratios (effective 2004); research associates richer nurse staffing with better outcomes, but a single universal ratio standard is debated rather than settled.
-- C) Studies have shown that nurse staffing levels have no relationship to patient outcomes.
-- D) Nurse staffing levels are determined solely by each individual nurse's personal preference.
+- A. Federal law sets a single nationwide nurse-to-patient ratio for every hospital unit.
+- B. California was the first state to mandate minimum nurse-to-patient ratios (effective 2004); research associates richer nurse staffing with better outcomes, but a single universal ratio standard is debated rather than settled.
+- C. Studies have shown that nurse staffing levels have no relationship to patient outcomes.
+- D. Nurse staffing levels are determined solely by each individual nurse's personal preference.
 
 **Correct: B.** California's AB 394 made it the first state to require minimum ratios (regulations effective 2004), and studies like Aiken's link better staffing to better outcomes, yet mandated ratios remain debated and there is no single national standard. There is no federal universal ratio (A); staffing is linked to outcomes, not unrelated (C); and staffing is set by planning, law, and budget, not personal preference (D).
 

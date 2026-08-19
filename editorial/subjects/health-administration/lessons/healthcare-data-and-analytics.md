@@ -87,42 +87,42 @@ Analytics turns healthcare data into decisions along a ladder — describe, diag
 ## Practice Question Bank
 
 1. **A hospital reports that 168 of 1,200 heart-failure patients were readmitted within 30 days last quarter and displays the 14% rate on its leadership dashboard. Which analytics tier does this display represent?**
-   - A) Descriptive analytics ✓
-   - B) Predictive analytics
-   - C) Prescriptive analytics
-   - D) Diagnostic analytics
+   - A. Descriptive analytics ✓
+   - B. Predictive analytics
+   - C. Prescriptive analytics
+   - D. Diagnostic analytics
 
    Summarizing what already happened (a past readmission rate on a dashboard) is descriptive analytics. It is not predictive (no forecast), not prescriptive (no recommended action), and not yet diagnostic, which would require digging into why the rate is what it is.
 
 2. **An analyst needs data on almost every insured encounter — diagnoses, procedures, dates, and charges — to study utilization and cost across a health plan. Which data source is the natural first choice, and what is its key limitation?**
-   - A) Vital statistics; they omit outpatient visits
-   - B) Wearable device data; they cover only chronic patients
-   - C) Insurance claims data; they reflect what was billed rather than the full clinical picture ✓
-   - D) Free-text clinical notes; they cannot be searched at all
+   - A. Vital statistics; they omit outpatient visits
+   - B. Wearable device data; they cover only chronic patients
+   - C. Insurance claims data; they reflect what was billed rather than the full clinical picture ✓
+   - D. Free-text clinical notes; they cannot be searched at all
 
    Claims (administrative) data cover nearly every insured encounter and are ideal for utilization and cost analysis, but they are generated for billing, so they record what was billed, not the complete clinical story.
 
 3. **Which pairing correctly separates structured from unstructured healthcare data?**
-   - A) Structured: a physician's free-text progress note; unstructured: an ICD-10 diagnosis code
-   - B) Structured: ICD-10 codes, lab values, and vital signs; unstructured: free-text notes, radiology reports, and images ✓
-   - C) Structured: patient survey comments; unstructured: medication lists
-   - D) Structured: scanned discharge summaries; unstructured: numeric lab results
+   - A. Structured: a physician's free-text progress note; unstructured: an ICD-10 diagnosis code
+   - B. Structured: ICD-10 codes, lab values, and vital signs; unstructured: free-text notes, radiology reports, and images ✓
+   - C. Structured: patient survey comments; unstructured: medication lists
+   - D. Structured: scanned discharge summaries; unstructured: numeric lab results
 
    Structured data are standardized, coded values in labeled fields that software can count directly. Unstructured data are free-text and image content such as notes, radiology reports, and images. The other options invert these categories.
 
 4. **A clinic segments its 2,500-patient panel into high-risk, rising-risk, and low-risk tiers so that its two care managers focus first on the high-risk group. This technique is best described as, and justified by, which of the following?**
-   - A) Prescriptive diagnosis; it tells each patient exactly which drug to take
-   - B) Data cleaning; it removes low-quality records before analysis
-   - C) Predictive coding; it assigns billing codes automatically
-   - D) Risk stratification; a small share of patients accounts for a large share of need, so tiering targets scarce resources ✓
+   - A. Prescriptive diagnosis; it tells each patient exactly which drug to take
+   - B. Data cleaning; it removes low-quality records before analysis
+   - C. Predictive coding; it assigns billing codes automatically
+   - D. Risk stratification; a small share of patients accounts for a large share of need, so tiering targets scarce resources ✓
 
    Segmenting a population into tiers of complexity to prioritize care-management resources is risk stratification, justified by the fact that a small high-risk group drives a disproportionate share of utilization and spending.
 
 5. **A vendor pitches a machine-learning model that flags patients at high risk of deterioration. Which response best reflects sound, current understanding of predictive models and AI in healthcare?**
-   - A) Ask what data trained it, whether it was validated on new data and checked for bias, and confirm any clinical AI is FDA-authorized decision support rather than a diagnosis ✓
-   - B) Adopt it immediately, since a model's output is objective and removes the need for clinician judgment
-   - C) Reject all predictive tools, because algorithms are never allowed in clinical settings
-   - D) Assume that because it uses more data than a human, its predictions must be free of bias
+   - A. Ask what data trained it, whether it was validated on new data and checked for bias, and confirm any clinical AI is FDA-authorized decision support rather than a diagnosis ✓
+   - B. Adopt it immediately, since a model's output is objective and removes the need for clinician judgment
+   - C. Reject all predictive tools, because algorithms are never allowed in clinical settings
+   - D. Assume that because it uses more data than a human, its predictions must be free of bias
 
    A model learns from historical data and can reproduce its biases, so it must be validated on data it did not learn from and monitored; its output is decision support that informs, not replaces, clinician judgment, and AI-enabled medical devices are FDA-regulated.
 

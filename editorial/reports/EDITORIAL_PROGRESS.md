@@ -1,6 +1,6 @@
 # ELIEXPLAINS GLOBAL EDITORIAL PROGRESS
 
-Generated: 2026-08-19T16:28:04.586Z
+Generated: 2026-08-19T16:39:17.672Z
 Counts are computed from the phase content stores by `bun run editorial:progress`.
 
 Subjects total: 44
@@ -18,8 +18,8 @@ Topics remaining: 1198
 Topic processing: 9.17%
 
 Verified questions: 605
-Unique source records: 1381
-Source usage classes: REFERENCE_ONLY=904, PUBLIC_DOMAIN=401, ATTRIBUTION_REQUIRED=54, EXTRACT_AND_ADAPT=21, LINK_ONLY=1
+Unique source records: 1379
+Source usage classes: REFERENCE_ONLY=903, PUBLIC_DOMAIN=400, ATTRIBUTION_REQUIRED=54, EXTRACT_AND_ADAPT=21, LINK_ONLY=1
 
 ## Phase progress
 

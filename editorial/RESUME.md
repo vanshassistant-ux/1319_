@@ -12,24 +12,24 @@ Read this first on every new run, then `editorial/reports/EDITORIAL_PROGRESS.md`
   reported at `editorial/reports/subjects/criminal-justice-and-criminology.md`.
 - **Engineering Fundamentals is COMPLETE** — 28/28 topics, audited (0 issues), reported at
   `editorial/reports/subjects/engineering-fundamentals.md`.
+- **Health Administration is COMPLETE** — 24/24 topics, audited (0 issues), reported at
+  `editorial/reports/subjects/health-administration.md`.
 
-  **PAUSE LIFTED 2026-08-19. Work moved to a VM.**
+  **RESUMED 2026-08-19 in this `1319_DIR` copy (operator direction: "continue from where
+  Hermes left off").** This directory — `/Users/moomoo/Desktop/1319_DIR` — is now the live
+  working repository. Total: **121 / 1,319** topics, 5 / 44 subjects.
 
-  **The VM copy of `1319_DIR` is the canonical working repository.** This Mac copy at
-  `/Users/moomoo/Desktop/ELI_WEBSITE` is FROZEN at 97 topics (commit 302f8b7) while Hermes
-  runs on the VM. Do not edit it. When Hermes finishes, the VM copy is copied back over this
-  one wholesale — never hand-merged. Exactly one machine holds the live repository at a time.
+  **Runtime here: `bun` only (no `node` on PATH).** All `.mjs` pipeline scripts run under
+  bun, and the `npm run editorial:*` aliases (which hardcode bun) work as written. The
+  START_HERE / HERMES handoff docs assume a Node VM and say the npm aliases fail — that is
+  false on this Mac. Use `bun run editorial:*` or `bun scripts/...` directly. Run
+  `npm install` once before typecheck/build only.
 
-  **Runtime on the VM: Node 22, no bun.** All pipeline scripts run under Node directly
-  (`node scripts/editorial-progress.mjs`, etc.) — they import only `node:` builtins. The
-  `npm run editorial:*` aliases hardcode bun and will fail; call script paths directly.
-  `scripts/promote-reviewed-topic.mjs` is the one bun-dependent script; it is deprecated and
-  unnecessary. Run `npm install` once before typecheck/build only.
+  Next subject: `hospitality-and-tourism` (20 topics). The init script does not create
+  `source-map.json` — hand-write it (health-administration and social-work maps are the
+  patterns for service/consumer-facing subjects).
 
-  Next subject: `health-administration` (24 topics). The init script does not create
-  `source-map.json` — hand-write it, using the social-work map as the pattern.
-
-- **No other subject may be started** until this one has zero unprocessed topics,
+- **No other subject may be started** until the current one has zero unprocessed topics,
   a subject audit, and a subject report.
 - Authoritative state lives in `content/phase-1/content-progress.json`. A topic is
   processed if and only if it carries an `editorialStatus`. Never estimate counts by
@@ -37,10 +37,14 @@ Read this first on every new run, then `editorial/reports/EDITORIAL_PROGRESS.md`
 
 ## Next action
 
-Assign the next unprocessed topic in `editorial/subjects/criminal-justice-and-criminology/topic-queue.json`
-to a FRESH single-topic worker (see `editorial/TOPIC_AGENT_BRIEF.md`). Up to 4 workers
-may run at once, but every one of them must belong to the current subject, and each
-worker gets exactly one topic. Queue order is the processing order.
+Initialize `hospitality-and-tourism` (`bun run editorial:init 1 hospitality-and-tourism`),
+hand-write its `source-map.json`, then assign the next unprocessed topic in
+`editorial/subjects/hospitality-and-tourism/topic-queue.json` to a FRESH single-topic
+worker (see `editorial/TOPIC_AGENT_BRIEF.md`). Up to ~8 workers may run at once, but every
+one of them must belong to the current subject, and each worker gets exactly one topic.
+Queue order is the processing order. Give each worker the sibling topic-id list so it
+populates `relatedTopics` itself, and tell it to distribute answer keys evenly across
+A/B/C/D. Verify every answer key against the file (workers can misreport their own keys).
 
 Read the current subject's `source-map.json` first; its cautions are binding on every topic.
 
