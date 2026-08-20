@@ -1,0 +1,265 @@
+{
+  "id": "web-development:foundations:javascript",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "javascript",
+  "title": "JavaScript",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "web-development",
+    "foundations",
+    "javascript",
+    "browser",
+    "scripting"
+  ],
+  "in30Seconds": "JavaScript is a programming language commonly used in browsers to give a web page behavior. HTML supplies content and structure; CSS describes presentation; JavaScript can respond to changes and user actions, calculate values, or update the interface. It runs in an execution environment, such as a browser tab, and can use browser-provided APIs. JavaScript is not limited to browsers, but this lesson focuses on its client-side web role.",
+  "whyItMatters": "JavaScript is the layer that makes many web interfaces respond instead of merely display information. Knowing its role helps a developer choose the right tool: revise HTML when meaning or content is wrong, revise CSS when appearance is wrong, and use JavaScript when the page needs behavior. This boundary also makes debugging clearer and prepares you for later work with JavaScript fundamentals, the DOM, events, and network requests.",
+  "learningObjectives": [
+    "Define JavaScript in the context of web development.",
+    "Distinguish the roles of HTML, CSS, and JavaScript.",
+    "Explain the browser's role as a client-side JavaScript execution environment.",
+    "Identify when a change calls for behavior rather than structure or presentation.",
+    "Describe the difference between JavaScript itself and browser APIs it can use."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "A language for behavior",
+      "body": "JavaScript is a programming language. In client-side web development, a browser can execute JavaScript as part of loading and running a page. That makes it useful for behavior: a page can respond when a person chooses a control, update a displayed result after a calculation, or change part of an interface as new information becomes available. Calling JavaScript the “behavior layer” is a useful starting model, but it should not be mistaken for a complete definition of the language. JavaScript can also run outside a browser, including in server environments. This lesson uses the model only to locate JavaScript among the basic web technologies.\n\nThe basic division of responsibilities is practical. HTML provides a document's content, structure, and meaning: a button is a button, a heading is a heading, and a paragraph contains text. CSS describes how those document parts are presented: colors, spacing, positioning, and type treatment. JavaScript can decide what should happen at runtime. A button that is visibly styled but does nothing is an HTML-and-CSS result; connecting an appropriate response to an interaction is a JavaScript concern. The layers cooperate, but they are not interchangeable.\n\nThis separation supports clear maintenance. If an event notice contains the wrong date, correct the content in HTML or in the system that supplies it. If the notice is difficult to read because of its contrast or spacing, examine CSS. If a “show details” control should reveal already-present details when activated, behavior is the missing piece. A real application can involve more than one layer, so this is not a rule that every change has only one file. It is a way to begin debugging with the right question."
+    },
+    {
+      "heading": "The browser supplies an execution environment",
+      "body": "A browser tab provides an execution environment for client-side JavaScript. The browser receives page resources, processes HTML and CSS, and can execute scripts associated with the page. JavaScript code does not automatically have every capability a computer has. Instead, the browser offers defined interfaces—browser APIs—that scripts may use according to the platform's rules and the user's permissions. The Document Object Model (DOM) API, for example, represents the page so JavaScript can inspect or change document content, attributes, and styles. The DOM is not the JavaScript language itself; it is a browser-provided API that JavaScript can call.\n\nThat distinction prevents a common category error. A language supplies grammar and semantics for expressing computations. A host environment supplies facilities around it. In a browser, those facilities can include page-related APIs, timers, storage, and media interfaces. Another JavaScript environment can expose a different collection. Therefore, “JavaScript can change a page” is shorthand for a more precise statement: JavaScript running in a browser can use browser facilities such as the DOM API to change page-related state. Later lessons will examine the DOM and events directly; for now, keep the language and the host separate.\n\nBrowser execution also has boundaries. MDN describes each tab as its own execution environment and explains that code in one tab is generally separated from code in another. This is a helpful security property, not permission for a script to ignore web security rules. A page must still treat data from users and networks carefully, follow browser restrictions, and use appropriate server-side controls. This introductory lesson does not teach security testing or bypasses. Its lesson is architectural: JavaScript runs inside a host with rules, not as unrestricted code floating above the web platform."
+    },
+    {
+      "heading": "How scripts join a web page",
+      "body": "HTML connects JavaScript to a document with the `script` element. A script can be written in the document or, more commonly for a maintainable project, referenced from a separate JavaScript file. External files make it easier to organize behavior separately from markup and to reuse a script where appropriate. The connection does not erase the role boundaries: HTML still declares that a script belongs to the page, while the script contains behavior.\n\nLoading order matters when code needs a part of the page to exist before the code uses it. Module scripts are deferred by default, meaning their execution waits until the document has been parsed. Other loading approaches have different timing rules. Rather than memorize every attribute here, use the durable principle: understand when the script runs relative to the HTML it needs, and verify behavior in a browser. A later lesson on JavaScript fundamentals and another on the DOM can make that principle concrete.\n\nConsider a help panel that begins hidden by a CSS class. HTML gives the panel a meaningful heading and a real button. CSS controls the panel's visual state. JavaScript can attach behavior so activating the button changes the state that CSS presents. The code should not replace a meaningful button with a nonsemantic imitation merely to make scripting convenient. It should also avoid embedding a growing collection of inline handlers into markup when a separate script can manage behavior. The result is easier to inspect: HTML explains what exists, CSS explains how it appears, and JavaScript explains what changes and when."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "JavaScript",
+      "definition": "A programming language commonly executed in browsers to implement behavior on web pages and also used in other environments."
+    },
+    {
+      "term": "client-side",
+      "definition": "Running on the user's device, such as in a browser, rather than on the web server."
+    },
+    {
+      "term": "execution environment",
+      "definition": "The host context that runs code and provides the facilities available to it."
+    },
+    {
+      "term": "browser API",
+      "definition": "An interface supplied by a browser that code can use to request a browser capability."
+    },
+    {
+      "term": "DOM",
+      "definition": "The Document Object Model: a browser API representation of a document that scripts can inspect and change."
+    },
+    {
+      "term": "script",
+      "definition": "A program or program source associated with a web document for execution."
+    },
+    {
+      "term": "module script",
+      "definition": "A script processed as a JavaScript module; in HTML, module scripts are deferred by default."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Imagine a school play. HTML is the script that says which people, props, and scenes exist. CSS is the costume and lighting plan that says how those things look. JavaScript is the stage manager's set of instructions for what should happen while the play is running: when a curtain opens, when a sign changes, or what happens after someone presses a button.\n\nThe stage manager works inside the theater. In the same way, JavaScript in a browser works inside a browser tab. The browser gives it tools, such as a way to look at and update the page. Those tools are browser APIs. JavaScript is the language used to give instructions; the browser API is a tool the browser makes available. The same language can be used in a different place, such as a server, where the available tools are different.",
+    "analogy": "HTML is a play's script, CSS is its visual design plan, and JavaScript is the stage manager's runtime instructions.",
+    "analogyLimits": "A stage manager is a person with broad real-world judgment, whereas JavaScript follows exact program instructions and browser rules. The analogy also does not explain how code is written or how browser APIs are specified."
+  },
+  "workedExample": "A museum page has a real HTML button labeled “Show exhibit hours” and a paragraph containing the hours. CSS initially presents that paragraph as hidden. The page needs the paragraph to appear when a visitor activates the button. HTML supplies the button and the information, CSS supplies the hidden and visible presentation, and JavaScript supplies the behavior that changes the relevant state after activation. If the button label is inaccurate, edit HTML; if the panel uses unreadable colors, edit CSS; if activation produces no change, investigate the JavaScript-to-browser-API behavior path. The example deliberately stops before teaching the syntax for selecting elements or listening for events, which belong to later lessons.",
+  "commonMistakes": [
+    {
+      "mistake": "Treating JavaScript as a replacement for meaningful HTML.",
+      "correction": "Use suitable HTML for content and semantics, then add JavaScript behavior where it is needed."
+    },
+    {
+      "mistake": "Treating the DOM as another name for the JavaScript language.",
+      "correction": "JavaScript is the language; the DOM is a browser API that JavaScript can use."
+    },
+    {
+      "mistake": "Assuming JavaScript always runs in a browser.",
+      "correction": "JavaScript has browser and non-browser environments; identify the host when reasoning about available capabilities."
+    },
+    {
+      "mistake": "Changing CSS when the requirement is an interaction or state change.",
+      "correction": "Use CSS for presentation and JavaScript for behavior, while recognizing that a feature can involve both."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "HTML",
+      "b": "JavaScript",
+      "distinction": "HTML represents content and structure; JavaScript can implement runtime behavior for a page."
+    },
+    {
+      "a": "CSS",
+      "b": "JavaScript",
+      "distinction": "CSS describes presentation; JavaScript can decide or trigger changes in response to runtime conditions."
+    },
+    {
+      "a": "JavaScript language",
+      "b": "browser API",
+      "distinction": "JavaScript is the programming language; a browser API is a host-provided interface usable from JavaScript."
+    },
+    {
+      "a": "client-side JavaScript",
+      "b": "server-side JavaScript",
+      "distinction": "Client-side code runs in a user's browser; server-side code runs on server infrastructure and has a different host environment."
+    }
+  ],
+  "keyTakeaway": "JavaScript commonly provides web-page behavior in a browser. It works with, rather than replaces, HTML structure and CSS presentation, and it uses browser APIs within the browser's execution environment.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:javascript:1",
+      "prompt": "What is JavaScript commonly used for in a browser-based web page?",
+      "options": [
+        "Defining the page's heading hierarchy",
+        "Adding runtime behavior and dynamic updates",
+        "Choosing only font families and colors",
+        "Registering a domain name"
+      ],
+      "correctIndex": 1,
+      "explanation": "JavaScript commonly implements behavior and dynamic updates. HTML provides structure, CSS handles presentation, and domain registration is an infrastructure task.",
+      "difficulty": "recall",
+      "skill": "Identify JavaScript's browser role",
+      "sourceIds": [
+        "mdn-what-is-javascript"
+      ]
+    },
+    {
+      "id": "web-development:foundations:javascript:2",
+      "prompt": "Which pairing correctly matches a web technology to its primary introductory role?",
+      "options": [
+        "HTML—runtime behavior; CSS—server database; JavaScript—document headings",
+        "HTML—content and structure; CSS—presentation; JavaScript—behavior",
+        "HTML—browser API; CSS—programming language host; JavaScript—markup",
+        "HTML—domain lookup; CSS—encryption; JavaScript—file hosting"
+      ],
+      "correctIndex": 1,
+      "explanation": "The second pairing captures the standard division of introductory web roles. The other pairings confuse the technologies with infrastructure or APIs.",
+      "difficulty": "understanding",
+      "skill": "Distinguish the web technology layers",
+      "sourceIds": [
+        "mdn-what-is-javascript"
+      ]
+    },
+    {
+      "id": "web-development:foundations:javascript:3",
+      "prompt": "A developer says, “The DOM is JavaScript.” What is the more accurate correction?",
+      "options": [
+        "The DOM is a CSS feature that JavaScript cannot use.",
+        "The DOM is a server-only database.",
+        "The DOM is a browser-provided API that JavaScript can use to work with a document.",
+        "The DOM is the name for a module script's file extension."
+      ],
+      "correctIndex": 2,
+      "explanation": "The DOM is a browser API, not the JavaScript language. JavaScript running in a browser can use it to work with a page; the other descriptions are incorrect.",
+      "difficulty": "understanding",
+      "skill": "Separate language from host API",
+      "sourceIds": [
+        "mdn-what-is-javascript",
+        "mdn-js-introduction"
+      ]
+    },
+    {
+      "id": "web-development:foundations:javascript:4",
+      "prompt": "A page has accurate HTML and an attractive CSS layout, but activating “Show details” should reveal an existing panel and does nothing. Which layer should be investigated first?",
+      "options": [
+        "JavaScript behavior associated with the activation",
+        "The document's heading wording",
+        "The page's font-size declaration only",
+        "The site's domain registration"
+      ],
+      "correctIndex": 0,
+      "explanation": "The unmet requirement is behavior after activation, so JavaScript is the appropriate first layer to investigate. HTML wording, CSS font size, and domain registration do not directly provide that behavior.",
+      "difficulty": "application",
+      "skill": "Choose a layer based on a runtime requirement",
+      "sourceIds": [
+        "mdn-what-is-javascript"
+      ]
+    },
+    {
+      "id": "web-development:foundations:javascript:5",
+      "prompt": "Why does a script's loading timing matter when it will work with page elements?",
+      "options": [
+        "It changes the semantic meaning of every HTML element.",
+        "It guarantees that CSS color choices meet accessibility requirements.",
+        "It lets one browser tab read all data from other tabs.",
+        "The code may need the relevant HTML to have been parsed before it uses those elements."
+      ],
+      "correctIndex": 3,
+      "explanation": "A script that works with page elements may depend on the relevant HTML having been parsed. Timing does not alter semantics, guarantee colors, or remove browser isolation.",
+      "difficulty": "analysis",
+      "skill": "Reason about script timing and document availability",
+      "sourceIds": [
+        "mdn-what-is-javascript",
+        "html-script-element"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:javascript:1",
+      "prompt": "What is JavaScript commonly used for in a browser-based web page?",
+      "options": [
+        "Defining the page's heading hierarchy",
+        "Adding runtime behavior and dynamic updates",
+        "Choosing only font families and colors",
+        "Registering a domain name"
+      ],
+      "correctIndex": 1,
+      "explanation": "JavaScript commonly implements behavior and dynamic updates. HTML provides structure, CSS handles presentation, and domain registration is an infrastructure task."
+    },
+    {
+      "id": "web-development:foundations:javascript:2",
+      "prompt": "Which pairing correctly matches a web technology to its primary introductory role?",
+      "options": [
+        "HTML—runtime behavior; CSS—server database; JavaScript—document headings",
+        "HTML—content and structure; CSS—presentation; JavaScript—behavior",
+        "HTML—browser API; CSS—programming language host; JavaScript—markup",
+        "HTML—domain lookup; CSS—encryption; JavaScript—file hosting"
+      ],
+      "correctIndex": 1,
+      "explanation": "The second pairing captures the standard division of introductory web roles. The other pairings confuse the technologies with infrastructure or APIs."
+    },
+    {
+      "id": "web-development:foundations:javascript:3",
+      "prompt": "A developer says, “The DOM is JavaScript.” What is the more accurate correction?",
+      "options": [
+        "The DOM is a CSS feature that JavaScript cannot use.",
+        "The DOM is a server-only database.",
+        "The DOM is a browser-provided API that JavaScript can use to work with a document.",
+        "The DOM is the name for a module script's file extension."
+      ],
+      "correctIndex": 2,
+      "explanation": "The DOM is a browser API, not the JavaScript language. JavaScript running in a browser can use it to work with a page; the other descriptions are incorrect."
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:javascript-fundamentals",
+    "web-development:foundations:dom",
+    "web-development:foundations:events",
+    "web-development:foundations:html",
+    "web-development:foundations:css"
+  ],
+  "sources": [
+    "mdn-what-is-javascript",
+    "mdn-js-introduction",
+    "html-script-element"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only MDN and WHATWG documentation; no source prose adapted.",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original instructional explanation based on independently checked current browser documentation and the HTML standard."
+  },
+  "contentHash": "39b3917a08be982e",
+  "status": "source-verified",
+  "public": false
+}

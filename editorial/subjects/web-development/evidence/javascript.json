@@ -1,0 +1,27 @@
+{
+  "topicId": "web-development:foundations:javascript",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {
+    "core": ["JavaScript's role as a scripting language", "the browser as a JavaScript execution environment", "JavaScript behavior alongside HTML and CSS", "scripts and modules as ways to load browser JavaScript"],
+    "supporting": ["client-side versus server-side execution", "browser APIs as capabilities used from JavaScript", "basic script loading order"],
+    "outOfScope": ["JavaScript syntax", "variables", "functions", "arrays", "DOM programming details", "events", "fetch", "asynchronous programming", "security exploit techniques"]
+  },
+  "claims": [
+    {"claim":"JavaScript is a scripting language used to implement dynamic behavior on web pages.","claimType":"TECHNICAL","sourceIds":["mdn-what-is-javascript","mdn-js-introduction"],"status":"supported"},
+    {"claim":"HTML provides structure and meaning, CSS provides presentation, and JavaScript can add behavior to a page.","claimType":"TECHNICAL","sourceIds":["mdn-what-is-javascript"],"status":"supported"},
+    {"claim":"Browser APIs provide capabilities that JavaScript code can use, including the DOM API for changing a page's HTML and CSS.","claimType":"TECHNICAL","sourceIds":["mdn-what-is-javascript"],"status":"supported"},
+    {"claim":"A browser tab is an execution environment for client-side JavaScript, and code in different tabs is generally separated.","claimType":"TECHNICAL","sourceIds":["mdn-what-is-javascript"],"status":"supported"},
+    {"claim":"The HTML script element can embed or reference executable script, and module scripts are deferred by default.","claimType":"TECHNICAL","sourceIds":["html-script-element","mdn-what-is-javascript"],"status":"supported"},
+    {"claim":"JavaScript is also used outside browsers, including on servers; the client-side browser role is only one execution context.","claimType":"TECHNICAL","sourceIds":["mdn-what-is-javascript","mdn-js-introduction"],"status":"supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft described JavaScript only as a generic foundational concept and supplied no usable evidence."],
+  "correctionsNeeded": ["Replaced boilerplate with a technical account of JavaScript's browser role.", "Separated content and structure (HTML), presentation (CSS), and behavior (JavaScript).", "Avoided teaching syntax, variables, functions, DOM details, and event mechanics reserved for sibling lessons."],
+  "rightsIssues": ["MDN and WHATWG sources were used as reference-only documentation. All lesson prose is original synthesis; no source wording was adapted."],
+  "sourceRecords": [
+    {"id":"mdn-what-is-javascript","title":"MDN Web Docs — What is JavaScript?","provider":"Mozilla / MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/What_is_JavaScript","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"CC BY-SA 2.5","licenseUrl":"https://creativecommons.org/licenses/by-sa/2.5/","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Supports JavaScript's high-level role, its relationship to HTML and CSS, browser APIs, client/server distinction, execution environments, and script loading guidance."},
+    {"id":"mdn-js-introduction","title":"MDN Web Docs — JavaScript Guide: Introduction","provider":"Mozilla / MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"CC BY-SA 2.5","licenseUrl":"https://creativecommons.org/licenses/by-sa/2.5/","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Corroborates JavaScript as a cross-host programming language and distinguishes the language from host-provided facilities."},
+    {"id":"html-script-element","title":"WHATWG HTML Living Standard — The script element","provider":"WHATWG","url":"https://html.spec.whatwg.org/multipage/scripting.html#the-script-element","sourceType":"standards-body","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read as the current HTML standard reference for script elements and module-script processing. Used to corroborate the loading boundary, not to reproduce specification prose."}
+  ]
+}

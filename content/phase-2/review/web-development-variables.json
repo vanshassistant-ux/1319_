@@ -1,0 +1,286 @@
+{
+  "id": "web-development:foundations:variables",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "variables",
+  "title": "Variables",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "web-development",
+    "javascript",
+    "variables",
+    "let",
+    "const",
+    "scope"
+  ],
+  "in30Seconds": "In JavaScript, a variable is commonly introduced with `let` or `const`. Each declaration creates a named binding: a name the program can use to refer to a value. Use `let` when the binding will later be assigned a different value. Use `const` when the binding itself should not be reassigned after initialization. Both are block-scoped, so a name declared inside braces is available only within that block and nested blocks.",
+  "whyItMatters": "Variables give a program a way to keep track of changing information without losing the meaning of each value. The `let`/`const` distinction also makes an intention visible to a reader: is this name expected to change, or should a later assignment be treated as a mistake? Block scope prevents temporary names from leaking into unrelated code. These habits make small scripts easier to debug and scale into later JavaScript work, where data moves through functions, browser events, and page updates.",
+  "learningObjectives": [
+    "Define a JavaScript binding and distinguish declaration from initialization.",
+    "Choose `let` or `const` for a simple binding based on reassignment intent.",
+    "Explain why a `const` binding cannot receive a new assignment.",
+    "Trace the visibility of a `let` or `const` name across nested blocks.",
+    "Identify a temporal-dead-zone error caused by using a lexical binding too early."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Names bind to values",
+      "body": "JavaScript code needs a way to associate a meaningful name with a value. In this lesson, that association is called a binding. A declaration introduces the name; an initializer supplies its first value when one is present. For example, `const campus = \"North\";` declares the binding `campus` and initializes it with a string value in one statement. `let visits;` declares a binding without giving it an initial value; JavaScript initially gives that binding the value `undefined`, and a later assignment such as `visits = 1;` changes it. The terms matter because declaration, initialization, and assignment are different operations. A program can assign to an already declared `let` binding, but it cannot declare the same `let` name twice in the same scope. Precise vocabulary makes error messages easier to interpret and helps a reader see what a line is intended to do. This lesson discusses bindings, not a physical storage box: the useful model is the language rule that a name refers to a value in a particular scope."
+    },
+    {
+      "heading": "Choosing let or const",
+      "body": "`let` and `const` are lexical declarations. For an introductory rule, choose `const` when a binding will keep the same assignment, and choose `let` when the program will later give that binding another value. For example, a score that changes after a correct answer can be introduced with `let score = 0;` and later updated with `score = score + 1;`. A label that the program does not reassign can use `const label = \"Practice\";`. A `const` declaration must have an initializer, so `const label;` is an error. Once a const binding is initialized, attempting `label = \"Quiz\";` is also an error. This rule concerns the binding, not a broad promise that every value associated with it is permanently unchanged; later lessons on objects and arrays introduce a separate distinction about changing properties or elements. Here, keep the question narrow: will this name receive a new assignment? If yes, use `let`; if no, `const` communicates that plan and lets JavaScript reject an accidental reassignment."
+    },
+    {
+      "heading": "Block scope controls where a name works",
+      "body": "A block is code surrounded by braces, as in `{ ... }`. Bindings declared with `let` and `const` are block-scoped. A binding introduced inside a block can be used in that block and in blocks nested within it, but not after the block closes. This supports local reasoning. A short-lived calculation can have a temporary name without risking a collision with code after the block. Consider `let message = \"outside\"; { let message = \"inside\"; }`. The second declaration creates a distinct inner binding. While execution is inside the braces, `message` names the inner value; after the braces, it names the outer value again. This is shadowing: an inner name temporarily hides an outer binding with the same spelling. Shadowing is legal in nested scopes but can make code harder to read, so use it intentionally and favor descriptive names when the relationship is not obvious. A binding declared within the braces does not become available outside them merely because code in the block ran."
+    },
+    {
+      "heading": "Declaration order and the temporal dead zone",
+      "body": "Lexical scope is not permission to use a binding before its declaration has been evaluated. Within the scope of a `let` or `const` declaration, the name is in a temporal dead zone from the start of that scope until the declaration executes. Reading the name during that interval throws a `ReferenceError`. For example, `{ console.log(total); let total = 4; }` does not print `undefined`; it fails before the declaration initializes `total`. Put declarations before code that reads them. This ordering rule is one reason `let` and `const` avoid a class of confusing behavior associated with older declaration patterns. It also gives a practical debugging checklist: if a name is reported as unavailable even though a declaration appears later in the same block, look for a use above the declaration. The temporal-dead-zone idea does not mean the name is invisible forever. It means the block has begun to reserve that name, but the binding is not ready for access until its declaration has run."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "binding",
+      "definition": "The association a program creates between an identifier and a value in a particular scope."
+    },
+    {
+      "term": "declaration",
+      "definition": "A statement that introduces a binding name, such as one beginning with `let` or `const`."
+    },
+    {
+      "term": "initializer",
+      "definition": "The expression that provides a declared binding's first value."
+    },
+    {
+      "term": "assignment",
+      "definition": "An operation that gives a new value to an existing assignable binding."
+    },
+    {
+      "term": "reassignment",
+      "definition": "An assignment that replaces the value previously associated with a binding."
+    },
+    {
+      "term": "block scope",
+      "definition": "Visibility limited to a brace-delimited block and any blocks nested inside it."
+    },
+    {
+      "term": "shadowing",
+      "definition": "A nested declaration using the same name as an outer binding, so the inner binding is selected within its scope."
+    },
+    {
+      "term": "temporal dead zone",
+      "definition": "The interval after a lexical scope begins but before a particular `let` or `const` declaration is evaluated, when that binding cannot be accessed."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "A variable name is like a label a program uses when it needs to find a value again. `let` is a label the program plans to replace later, such as a score that starts at zero and then goes up. `const` is a label the program promises not to replace, such as the title chosen for a page. Both kinds of labels follow the room made by curly braces. A label made inside one room is not on the table outside that room. If there is a smaller room inside, it can use a label with the same spelling, but while you are in the smaller room, that inner label is the one you see.",
+    "analogy": "Imagine color-coded sticky notes on folders. A `let` note can be moved to another folder later. A `const` note is attached with a rule that says it cannot be moved to a different folder. Curly braces make a temporary work area: sticky notes placed inside are usable there but are removed from the shared desk when the work area closes. A smaller work area can use a note with the same word, temporarily covering the view of the older one.",
+    "analogyLimits": "JavaScript bindings are language-defined relationships, not physical notes. In particular, the analogy should not suggest that `const` makes every possible aspect of a value immutable; this lesson only establishes that the binding cannot be reassigned. JavaScript also enforces scope and early access rules mechanically, whereas people can read a sticky note before a meeting starts."
+  },
+  "workedExample": "Run this JavaScript in order: `let score = 0; score = score + 1; const course = \"Web Basics\"; { let score = 10; console.log(score); } console.log(score); console.log(course);`. The first assignment changes the outer `score` from `0` to `1`, which is permitted because it was declared with `let`. The block then declares a separate inner `score` with value `10`; the first log prints `10`. When the block ends, that inner binding is no longer selected, so the next log prints the unchanged outer value `1`. The final log prints `Web Basics`. Replacing the final `course` use with `course = \"Advanced Web\";` would throw because a const binding cannot be reassigned. The example was executed with Bun: its output was `10`, `1`, and `Web Basics` on separate lines.",
+  "commonMistakes": [
+    {
+      "mistake": "Using `const` for a name that the program will deliberately update.",
+      "correction": "Use `let` when a later assignment is part of the design; otherwise the later assignment will fail."
+    },
+    {
+      "mistake": "Thinking `let` and `const` names declared inside braces exist after the closing brace.",
+      "correction": "Treat the block as the boundary: a lexical binding is usable in its block and nested blocks, not outside it."
+    },
+    {
+      "mistake": "Expecting a `let` or `const` name used before its declaration to behave as if it were initialized to `undefined`.",
+      "correction": "Put the declaration before the first use; early access is a temporal-dead-zone `ReferenceError`."
+    },
+    {
+      "mistake": "Assuming the inner and outer uses of the same name are automatically one binding.",
+      "correction": "A nested declaration creates an inner binding that shadows the outer one only within the nested block."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "`let`",
+      "b": "`const`",
+      "distinction": "A let binding may receive a new assignment; a const binding must be initialized and may not be reassigned."
+    },
+    {
+      "a": "Declaration",
+      "b": "Assignment",
+      "distinction": "A declaration introduces a binding name, while an assignment gives a value to an already existing assignable binding."
+    },
+    {
+      "a": "Outer binding",
+      "b": "Shadowing inner binding",
+      "distinction": "The outer binding is selected outside the nested block; the inner binding with the same name is selected while execution is inside its own block."
+    }
+  ],
+  "keyTakeaway": "Use `let` for a binding that will be reassigned and `const` for one that will not. Both are block-scoped, so declare names before using them and keep track of the braces that define where each name is available.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:variables:1",
+      "prompt": "Which statement correctly describes a `const` declaration?",
+      "options": [
+        "It must include an initializer and its binding cannot later be reassigned.",
+        "It can be declared without a value and assigned only outside a block.",
+        "It is visible in every script regardless of braces.",
+        "It is a special syntax for an array."
+      ],
+      "correctIndex": 0,
+      "explanation": "A const declaration needs an initializer, and later reassignment of that binding is an error. The other options incorrectly describe initialization, scope, or introduce an unrelated array claim.",
+      "difficulty": "recall",
+      "skill": "Recalling the basic const rule",
+      "sourceIds": [
+        "mdn-const-statement",
+        "ecma262-lexical-declarations"
+      ]
+    },
+    {
+      "id": "web-development:foundations:variables:2",
+      "prompt": "Which change is permitted after this declaration: `let count = 2;`?",
+      "options": [
+        "`let count = 3;` in the same scope",
+        "`count = 3;`",
+        "`const count = 3;` in the same scope",
+        "`count` cannot be used again."
+      ],
+      "correctIndex": 1,
+      "explanation": "`count = 3;` reassigns the existing let binding. Declaring it again with let or const in the same scope is not permitted, and a let binding remains usable after declaration.",
+      "difficulty": "understanding",
+      "skill": "Distinguishing reassignment from redeclaration",
+      "sourceIds": [
+        "mdn-let-statement"
+      ]
+    },
+    {
+      "id": "web-development:foundations:variables:3",
+      "prompt": "What happens when this code runs? `let label = \"outer\"; { let label = \"inner\"; } console.log(label);`",
+      "options": [
+        "It throws because two blocks cannot use the same name.",
+        "It logs `inner` because the inner binding permanently replaces the outer one.",
+        "It logs `outer` because the inner binding exists only inside the braces.",
+        "It logs `undefined` because block scope removes both bindings."
+      ],
+      "correctIndex": 2,
+      "explanation": "The nested declaration creates an inner binding that shadows the outer one only in the block. After the block closes, `label` again selects the outer binding, whose value is `outer`.",
+      "difficulty": "application",
+      "skill": "Tracing block scope and shadowing",
+      "sourceIds": [
+        "mdn-let-statement"
+      ]
+    },
+    {
+      "id": "web-development:foundations:variables:4",
+      "prompt": "Why does `{ console.log(total); const total = 4; }` fail before logging a value?",
+      "options": [
+        "The `console` identifier is allowed only in a function.",
+        "Const values must be numeric strings rather than numbers.",
+        "The braces turn every declaration into a global binding.",
+        "The code accesses the lexical binding before its declaration has been evaluated, during its temporal dead zone."
+      ],
+      "correctIndex": 3,
+      "explanation": "The binding is in its temporal dead zone until the const declaration evaluates, so early access throws a ReferenceError. The other answers do not describe JavaScript's lexical declaration rule.",
+      "difficulty": "analysis",
+      "skill": "Diagnosing an early lexical-binding access",
+      "sourceIds": [
+        "mdn-const-statement",
+        "mdn-let-statement"
+      ]
+    },
+    {
+      "id": "web-development:foundations:variables:5",
+      "prompt": "A program will update `attempts` after each retry. Which declaration best communicates that plan?",
+      "options": [
+        "`let attempts = 0;`",
+        "`const attempts = 0;`",
+        "`const attempts;`",
+        "`attempts = let 0;`"
+      ],
+      "correctIndex": 0,
+      "explanation": "`let attempts = 0;` creates a binding that can later receive another assignment. A const binding is not appropriate for planned reassignment and must have an initializer; the final option is not JavaScript declaration syntax.",
+      "difficulty": "application",
+      "skill": "Choosing a declaration from reassignment intent",
+      "sourceIds": [
+        "mdn-let-statement",
+        "mdn-const-statement"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:variables:1",
+      "prompt": "Which statement correctly describes a `const` declaration?",
+      "options": [
+        "It must include an initializer and its binding cannot later be reassigned.",
+        "It can be declared without a value and assigned only outside a block.",
+        "It is visible in every script regardless of braces.",
+        "It is a special syntax for an array."
+      ],
+      "correctIndex": 0,
+      "explanation": "A const declaration needs an initializer, and later reassignment of that binding is an error. The other options incorrectly describe initialization, scope, or introduce an unrelated array claim.",
+      "difficulty": "recall",
+      "skill": "Recalling the basic const rule",
+      "sourceIds": [
+        "mdn-const-statement",
+        "ecma262-lexical-declarations"
+      ]
+    },
+    {
+      "id": "web-development:foundations:variables:2",
+      "prompt": "Which change is permitted after this declaration: `let count = 2;`?",
+      "options": [
+        "`let count = 3;` in the same scope",
+        "`count = 3;`",
+        "`const count = 3;` in the same scope",
+        "`count` cannot be used again."
+      ],
+      "correctIndex": 1,
+      "explanation": "`count = 3;` reassigns the existing let binding. Declaring it again with let or const in the same scope is not permitted, and a let binding remains usable after declaration.",
+      "difficulty": "understanding",
+      "skill": "Distinguishing reassignment from redeclaration",
+      "sourceIds": [
+        "mdn-let-statement"
+      ]
+    },
+    {
+      "id": "web-development:foundations:variables:3",
+      "prompt": "What happens when this code runs? `let label = \"outer\"; { let label = \"inner\"; } console.log(label);`",
+      "options": [
+        "It throws because two blocks cannot use the same name.",
+        "It logs `inner` because the inner binding permanently replaces the outer one.",
+        "It logs `outer` because the inner binding exists only inside the braces.",
+        "It logs `undefined` because block scope removes both bindings."
+      ],
+      "correctIndex": 2,
+      "explanation": "The nested declaration creates an inner binding that shadows the outer one only in the block. After the block closes, `label` again selects the outer binding, whose value is `outer`.",
+      "difficulty": "application",
+      "skill": "Tracing block scope and shadowing",
+      "sourceIds": [
+        "mdn-let-statement"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:javascript",
+    "web-development:foundations:javascript-fundamentals",
+    "web-development:foundations:functions",
+    "web-development:foundations:arrays",
+    "web-development:foundations:objects"
+  ],
+  "sources": [
+    "mdn-let-statement",
+    "mdn-const-statement",
+    "ecma262-lexical-declarations"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only documentation and specification; no source prose adapted",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original instructional lesson synthesized from MDN and the ECMAScript specification; the worked example was executed with Bun."
+  },
+  "contentHash": "edc923c0657c9af9",
+  "status": "source-verified",
+  "public": false
+}

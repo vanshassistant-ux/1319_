@@ -1,0 +1,227 @@
+{
+  "id": "web-development:foundations:javascript-fundamentals",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "javascript-fundamentals",
+  "title": "JavaScript Fundamentals",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "web-development",
+    "javascript",
+    "expressions",
+    "primitive-types"
+  ],
+  "in30Seconds": "JavaScript source code is made from pieces that produce values and pieces that tell the engine to do something. An expression, such as `2 + 3`, evaluates to a value. A statement, such as an expression followed by a semicolon, is an instruction in the program. Values have types: familiar primitive examples include strings, numbers, booleans, `null`, and `undefined`. Learning to identify these roles makes short programs easier to read and debug.",
+  "whyItMatters": "JavaScript is the programming language commonly used to add behavior to web pages, but its fundamentals matter before browser-specific work begins. Reading expressions and statements accurately helps a student predict what code will evaluate to, recognize a type mismatch, and locate an error without guessing. These concepts also transfer to later topics: variables give names to values, functions combine statements into reusable behavior, and browser APIs use the same expression-and-value model. This lesson stays deliberately below those later layers.",
+  "learningObjectives": [
+    "Define a JavaScript value, expression, and statement.",
+    "Identify common primitive value types.",
+    "Distinguish evaluation from an instruction that performs an action.",
+    "Apply arithmetic and comparison operators to predict simple results."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Values and their types",
+      "body": "A value is a piece of data that JavaScript can work with. The language has several primitive value types: `undefined`, `null`, Boolean, Number, BigInt, String, and Symbol. A primitive is a value that is not an object. At an introductory level, the most visible examples are numbers such as `12`, strings such as `\"hello\"`, Booleans `true` and `false`, and the special values `null` and `undefined`. These labels are not interchangeable. A number is suitable for arithmetic; a string represents text; a Boolean represents one of two logical states. `null` is an explicit primitive value often used to represent an intentional absence, whereas `undefined` is its own primitive value and commonly appears when no value has been supplied. Later lessons explain how names, collections, and objects hold or organize values; this lesson concentrates on the values themselves.\n\nType matters because an operator's behavior depends on its operands. `2 + 3` is numeric addition and produces the Number value `5`. The comparison `2 < 3` produces the Boolean value `true`. A careful reader therefore asks both questions: what values are present, and what type of result should this operation produce? That habit is more reliable than reading punctuation as decoration. JavaScript can perform conversions in some situations, but relying on an unexamined conversion makes code harder to reason about. When a result surprises you, inspect the values and their types first."
+    },
+    {
+      "heading": "Expressions evaluate",
+      "body": "An expression is code that resolves to a value. A literal such as `\"Ada\"` is an expression: evaluating it yields that string. An arithmetic expression such as `6 * 7` evaluates to `42`. Expressions can be combined. In `2 + 3 * 4`, multiplication is evaluated before addition, so the resulting Number value is `14`, not `20`. Parentheses can deliberately change that grouping: `(2 + 3) * 4` evaluates to `20`. Executing these examples in a JavaScript runtime confirms the results.\n\nOperators are symbols or keywords that participate in expressions. Arithmetic operators include `+`, `-`, `*`, and `/`. Comparison operators, including `===`, `<`, and `>`, evaluate whether a relationship is true and yield a Boolean result. `5 === 5` evaluates to `true`; `5 === 6` evaluates to `false`. The strict equality operator compares without first converting the operands to a common type, which makes its result easier to predict than a loose equality check in many introductory cases. This lesson does not attempt to catalog every operator. The central model is that operators receive operands and an expression evaluates to one resulting value.\n\nA result need not be displayed merely because an expression has a value. Interactive developer consoles often show the result of an entered expression as a convenience. That display is a feature of the host environment, not an implication that every expression automatically appears on a web page. Separating JavaScript language evaluation from browser output prevents a common early misunderstanding."
+    },
+    {
+      "heading": "Statements organize actions",
+      "body": "A statement is a complete instruction in a program. ECMAScript source text contains statements, and an expression statement is one familiar form: it evaluates an expression as an instruction. In many JavaScript examples, a semicolon marks the end of a statement. JavaScript has automatic semicolon insertion rules, but beginners should not treat omitted punctuation as a separate feature to depend on; clear formatting makes statement boundaries easier for humans to see. A program generally contains a sequence of statements, with each statement contributing to the program's behavior.\n\nThe expression/statement distinction is about role, not about which one is more advanced. `3 * 5` is an expression because it yields `15`. Written as a standalone expression statement, it instructs the engine to evaluate that expression, though the completion value is not thereby made useful to a person. By contrast, a comment is not an instruction for the engine at all. JavaScript comments—`//` to the end of a line and `/* ... */` across text—are ignored by the engine. They can record intent for future readers, but a comment cannot alter an evaluated result.\n\nThis vocabulary helps with debugging. If an expected result is wrong, inspect the expression: its operands, operator, precedence, and types. If intended work never occurs, inspect whether the necessary statement exists and is reached; control flow is a later topic. If only a comment describes an intended action, the engine will not carry it out. These distinctions remain useful as code becomes more complex, even though later lessons add variables, functions, arrays, objects, and web APIs."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "value",
+      "definition": "A piece of data produced, represented, or used by JavaScript code."
+    },
+    {
+      "term": "primitive",
+      "definition": "A JavaScript value that is not an object, such as a string, number, Boolean, null, or undefined."
+    },
+    {
+      "term": "expression",
+      "definition": "A unit of JavaScript code that evaluates to a value."
+    },
+    {
+      "term": "statement",
+      "definition": "A complete JavaScript instruction in program source text."
+    },
+    {
+      "term": "operator",
+      "definition": "A symbol or keyword used in an expression to act on one or more operands."
+    },
+    {
+      "term": "operand",
+      "definition": "A value or expression to which an operator is applied."
+    },
+    {
+      "term": "Boolean",
+      "definition": "The JavaScript primitive type with the two values true and false."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Imagine JavaScript as a tiny workshop. Values are the materials on the table: a number, a piece of text, or a yes/no card. An expression is a small calculation card. When the workshop reads `2 + 3`, it works with two number materials and produces a new material, `5`. A comparison card such as `2 < 3` produces a yes/no card: `true`.\n\nA statement is closer to an instruction posted for the workshop: do this piece of work now. It can contain an expression, but the two words answer different questions. Ask “what value comes out?” for an expression and “what instruction is this?” for a statement. A comment is a sticky note for another person, not an instruction the workshop follows.",
+    "analogy": "Values are workshop materials, expressions are calculation cards that make a result, and statements are posted work instructions.",
+    "analogyLimits": "Real JavaScript is formal language processing, not a person choosing materials. The analogy does not cover execution order, browser APIs, or how later code stores values."
+  },
+  "workedExample": "Run these expressions in a JavaScript console: `2 + 3 * 4` evaluates to `14`, because multiplication groups before addition. `(2 + 3) * 4` evaluates to `20`, because the parentheses change the grouping. Next, `14 === 20` evaluates to the Boolean `false`; it compares two Number values and finds they differ. The first two snippets are arithmetic expressions that produce Number values. The third is a comparison expression that produces a Boolean. If each is entered as a standalone line, the console may show its result, but that display is the console helping the reader. A line comment such as `// compare the two totals` explains the next line to a human and has no evaluated value or effect on the calculation.",
+  "commonMistakes": [
+    {
+      "mistake": "Calling every line of code an expression.",
+      "correction": "Ask whether the code's role is to produce a value; if it is a complete instruction, call it a statement."
+    },
+    {
+      "mistake": "Expecting a comparison to produce a number.",
+      "correction": "Comparison operators such as `<` and `===` produce Boolean results."
+    },
+    {
+      "mistake": "Assuming a console result is automatically page output.",
+      "correction": "A console may display evaluated values for convenience; displaying content in a page needs later browser APIs."
+    },
+    {
+      "mistake": "Treating `null` and `undefined` as the same value.",
+      "correction": "They are distinct JavaScript primitive values, even though both can arise in absence-related situations."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "expression",
+      "b": "statement",
+      "distinction": "An expression evaluates to a value; a statement is a program instruction and may contain expressions."
+    },
+    {
+      "a": "number",
+      "b": "Boolean",
+      "distinction": "A number represents numeric data; a Boolean is either true or false."
+    },
+    {
+      "a": "comment",
+      "b": "statement",
+      "distinction": "A comment assists human readers and is ignored by the engine; a statement is processed as program source."
+    }
+  ],
+  "keyTakeaway": "Values have types, expressions evaluate to values, and statements organize program instructions. Naming the role of each piece of code makes JavaScript behavior more predictable.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:javascript-fundamentals:1",
+      "prompt": "Which JavaScript expression evaluates to a Boolean value?",
+      "options": [
+        "`4 + 1`",
+        "`\"4\"`",
+        "`4 > 1`",
+        "`null`"
+      ],
+      "correctIndex": 2,
+      "explanation": "`4 > 1` is a comparison and evaluates to `true`, a Boolean. The others evaluate to a number, a string, and null respectively.",
+      "difficulty": "recall",
+      "skill": "Identify the result type of a comparison expression",
+      "sourceIds": [
+        "mdn-js-expressions-operators"
+      ]
+    },
+    {
+      "id": "web-development:foundations:javascript-fundamentals:2",
+      "prompt": "What does `(2 + 3) * 4` evaluate to?",
+      "options": [
+        "14",
+        "20",
+        "9",
+        "24"
+      ],
+      "correctIndex": 1,
+      "explanation": "Parentheses make `2 + 3` evaluate first to 5; 5 multiplied by 4 is 20. The other values come from different or incorrect groupings.",
+      "difficulty": "application",
+      "skill": "Apply operator precedence and parentheses",
+      "sourceIds": [
+        "mdn-js-expressions-operators",
+        "ecma262-expressions"
+      ]
+    },
+    {
+      "id": "web-development:foundations:javascript-fundamentals:3",
+      "prompt": "Which description best distinguishes an expression from a statement?",
+      "options": [
+        "An expression evaluates to a value; a statement is a program instruction.",
+        "An expression is only text; a statement is only a number.",
+        "An expression runs only in browsers; a statement runs only on servers.",
+        "An expression is a comment; a statement is punctuation."
+      ],
+      "correctIndex": 0,
+      "explanation": "The first option states the roles accurately. Expressions are not limited by host environment, and comments are ignored by the engine.",
+      "difficulty": "understanding",
+      "skill": "Distinguish JavaScript code roles",
+      "sourceIds": [
+        "ecma262-expressions",
+        "ecma262-statements"
+      ]
+    },
+    {
+      "id": "web-development:foundations:javascript-fundamentals:4",
+      "prompt": "A developer writes `// calculate total` above an arithmetic expression. What does the comment do?",
+      "options": [
+        "It changes the expression into a string.",
+        "It forces the result to appear on the page.",
+        "It makes the expression evaluate twice.",
+        "It explains intent to readers while the engine ignores it."
+      ],
+      "correctIndex": 3,
+      "explanation": "A comment can guide a human reader but is ignored by the JavaScript engine. It does not change evaluation or page output.",
+      "difficulty": "application",
+      "skill": "Analyze the role of a source-code comment",
+      "sourceIds": [
+        "mdn-js-grammar-and-types"
+      ]
+    },
+    {
+      "id": "web-development:foundations:javascript-fundamentals:5",
+      "prompt": "Why is `5 === 6` expected to evaluate to `false`?",
+      "options": [
+        "It is a string expression.",
+        "The strict equality comparison finds that the two Number values differ.",
+        "JavaScript cannot compare numbers.",
+        "`false` is the same primitive value as `undefined`."
+      ],
+      "correctIndex": 1,
+      "explanation": "The values 5 and 6 are different, so strict equality yields the Boolean `false`. The other statements are incorrect.",
+      "difficulty": "analysis",
+      "skill": "Reason about strict equality and Boolean results",
+      "sourceIds": [
+        "mdn-js-expressions-operators"
+      ]
+    }
+  ],
+  "quickCheck": [
+    "Which JavaScript expression evaluates to a Boolean value?",
+    "What does `(2 + 3) * 4` evaluate to?",
+    "Which description best distinguishes an expression from a statement?"
+  ],
+  "relatedTopics": [
+    "web-development:foundations:javascript",
+    "web-development:foundations:variables",
+    "web-development:foundations:functions",
+    "web-development:foundations:arrays",
+    "web-development:foundations:objects"
+  ],
+  "sources": [
+    "mdn-js-data-types",
+    "mdn-js-expressions-operators",
+    "ecma262-expressions",
+    "ecma262-statements",
+    "mdn-js-grammar-and-types"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only documentation and standard; no source prose adapted.",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original lesson synthesized from MDN documentation and ECMA-262, with examples checked in a JavaScript runtime."
+  },
+  "contentHash": "6509a8fb4e877de5",
+  "status": "source-verified",
+  "public": false
+}

@@ -1,6 +1,6 @@
 # ELIEXPLAINS GLOBAL EDITORIAL PROGRESS
 
-Generated: 2026-08-20T10:27:56.923Z
+Generated: 2026-08-20T10:33:49.980Z
 Counts are computed from the phase content stores by `bun run editorial:progress`.
 
 Subjects total: 44
@@ -9,24 +9,24 @@ Subjects remaining: 30
 Subject completion: 31.82%
 
 Total topics: 1307
-Topics processed: 420
+Topics processed: 423
 Topics published: 282
-Topics ready to publish: 138
+Topics ready to publish: 141
 Topics held: 0
 Topics requiring review: 0
-Topics remaining: 887
-Topic processing: 32.13%
+Topics remaining: 884
+Topic processing: 32.36%
 
-Verified questions: 2100
-Unique source records: 2543
-Source usage classes: REFERENCE_ONLY=1804, PUBLIC_DOMAIN=532, ATTRIBUTION_REQUIRED=115, EXTRACT_AND_ADAPT=90, LINK_ONLY=2
+Verified questions: 2115
+Unique source records: 2554
+Source usage classes: REFERENCE_ONLY=1815, PUBLIC_DOMAIN=532, ATTRIBUTION_REQUIRED=115, EXTRACT_AND_ADAPT=90, LINK_ONLY=2
 
 ## Phase progress
 
 | Phase | Subjects | Topics | Percent |
 | --- | --- | --- | --- |
 | 1 | 11 / 11 | 282 / 282 | 100.00% |
-| 2 | 0 / 11 | 22 / 325 | 6.77% |
+| 2 | 0 / 11 | 25 / 325 | 7.69% |
 | 3 | 0 / 11 | 0 / 337 | 0.00% |
 | 4 | 3 / 11 | 116 / 363 | 31.96% |
 
@@ -35,7 +35,7 @@ Source usage classes: REFERENCE_ONLY=1804, PUBLIC_DOMAIN=532, ATTRIBUTION_REQUIR
 | Collection | Subjects | Topics | Percent |
 | --- | --- | --- | --- |
 | Professional Studies | 7 / 7 | 166 / 166 | 100.00% |
-| Technology | 3 / 8 | 110 / 257 | 42.80% |
+| Technology | 3 / 8 | 113 / 257 | 43.97% |
 | Business & Money | 0 / 9 | 0 / 243 | 0.00% |
 | Humanities & Culture | 0 / 7 | 0 / 202 | 0.00% |
 | Science & Health | 0 / 6 | 0 / 206 | 0.00% |
@@ -56,7 +56,7 @@ Source usage classes: REFERENCE_ONLY=1804, PUBLIC_DOMAIN=532, ATTRIBUTION_REQUIR
 | python-programming | 36 / 36 | 36 | 0 | 0 | 0 | 0 |
 | history | 49 / 49 | 0 | 49 | 0 | 0 | 0 |
 | economics | 39 / 39 | 0 | 39 | 0 | 0 | 0 |
-| web-development | 22 / 47 | 0 | 22 | 0 | 0 | 25 |
+| web-development | 25 / 47 | 0 | 25 | 0 | 0 | 22 |
 | computer-science-fundamentals | 27 / 27 | 27 | 0 | 0 | 0 | 0 |
 | human-geography | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
 | engineering-fundamentals | 28 / 28 | 28 | 0 | 0 | 0 | 0 |

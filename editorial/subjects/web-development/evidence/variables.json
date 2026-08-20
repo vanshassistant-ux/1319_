@@ -1,0 +1,27 @@
+{
+  "topicId": "web-development:foundations:variables",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {
+    "core": ["JavaScript bindings declared with let and const", "reassignment", "block scope", "declaration versus initialization"],
+    "supporting": ["the temporal dead zone as a practical ordering rule", "shadowing in nested blocks"],
+    "outOfScope": ["functions and parameters", "objects and arrays", "var", "closures", "modules", "type coercion"]
+  },
+  "claims": [
+    {"claim":"A JavaScript lexical declaration uses let or const to create bindings in a lexical environment.","claimType":"TECHNICAL","sourceIds":["ecma262-lexical-declarations","mdn-let-statement"],"status":"supported"},
+    {"claim":"A let binding can be assigned a different value after its declaration.","claimType":"TECHNICAL","sourceIds":["mdn-let-statement"],"status":"supported"},
+    {"claim":"A const declaration must include an initializer and a const binding cannot be reassigned after it is initialized.","claimType":"TECHNICAL","sourceIds":["mdn-const-statement","ecma262-lexical-declarations"],"status":"supported"},
+    {"claim":"Let and const declarations are block-scoped, so a binding declared inside a block is not available outside that block.","claimType":"TECHNICAL","sourceIds":["mdn-let-statement","mdn-const-statement"],"status":"supported"},
+    {"claim":"A nested block may declare a new binding with the same name; inside that block the inner binding is the one named by the identifier.","claimType":"TECHNICAL","sourceIds":["mdn-let-statement"],"status":"supported"},
+    {"claim":"Accessing a let or const binding before its declaration is evaluated produces a ReferenceError because it is in the temporal dead zone.","claimType":"TECHNICAL","sourceIds":["mdn-let-statement","mdn-const-statement"],"status":"supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft had no verifiable JavaScript-specific content."],
+  "correctionsNeeded": ["Replaced boilerplate with a standards-grounded distinction between declaration, initialization, reassignment, and block scope."],
+  "rightsIssues": ["MDN and ECMA-262 are used as reference-only sources. The lesson uses original prose and independently executed examples."],
+  "sourceRecords": [
+    {"id":"mdn-let-statement","title":"let - JavaScript | MDN","provider":"MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-20","notes":"Read directly via curl. Supports let declaration, reassignment, block scope, redeclaration restrictions, shadowing, and temporal-dead-zone behavior. No source prose was reproduced."},
+    {"id":"mdn-const-statement","title":"const - JavaScript | MDN","provider":"MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-20","notes":"Read directly via curl. Supports const initialization requirements, inability to reassign a const binding, and block scope. No source prose was reproduced."},
+    {"id":"ecma262-lexical-declarations","title":"ECMAScript Language Specification — Lexical Declarations","provider":"Ecma International / TC39","url":"https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-lexical-declarations","sourceType":"standards-body","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-20","notes":"Read as the current ECMAScript specification. Corroborates lexical declarations and the distinct let/const declaration forms; used for technical verification only."}
+  ]
+}
