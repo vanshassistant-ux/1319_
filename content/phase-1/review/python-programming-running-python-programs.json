@@ -1,0 +1,279 @@
+{
+  "id": "python-programming:foundations:running-python-programs",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "running-python-programs",
+  "title": "Running Python Programs",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "python",
+    "interpreter",
+    "scripts",
+    "command-line",
+    "main-guard"
+  ],
+  "in30Seconds": "Python can execute a small expression interactively or run the statements stored in a .py file. The interactive interpreter is useful for quick checks; a script makes a repeatable program you can run again. When Python runs a file as the top-level program, that file's __name__ is '__main__'. Output shows normal progress, while a traceback tells you where an unhandled error stopped execution.",
+  "whyItMatters": "Running code is the boundary between an idea that looks plausible and behavior you have actually observed. Interactive checks help you test a small expression before you build on it. Scripts preserve a sequence of steps so you, a classmate, or a grader can repeat the same run. Reading the output and the last line of a traceback also gives you a concrete starting point when a program does not finish.",
+  "learningObjectives": [
+    "Distinguish interactive interpreter use from running a saved Python script.",
+    "Run a script by giving its path to the Python interpreter.",
+    "Explain the basic purpose of an if __name__ == '__main__' guard.",
+    "Interpret ordinary output and the final line of a simple traceback.",
+    "Choose an appropriate execution mode for a quick check or a repeatable program."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Two places Python can execute code",
+      "body": "Python's interpreter is a program that reads Python code and executes it. One way to use it is interactively: start the interpreter with no program file and, when standard input is a terminal, it presents a primary prompt. You enter one expression or statement at a time. For example, entering `2 + 3` produces `5`. That short feedback loop is useful when you want to check what a small expression does. It is not a permanent record of a program unless you separately save the code.\n\nThe other common mode is a script: a text file containing Python code, conventionally named with `.py`. Giving that file's path to the interpreter asks Python to read and execute the file. From the directory that contains `hello.py`, the command `python3 hello.py` runs it on this Mac. The important general idea is not one shell spelling: identify the Python interpreter your environment provides, then pass it the path to the script. An IDE's Run button normally performs that same broad operation for a selected file, but you should still know which file it is running and where its output appears.\n\nA script is valuable because the exact statements can be run again. If `hello.py` contains `print(\"hello from a file\")`, each successful run writes that line to standard output. The lesson is not that every program should be launched from a terminal; it is that the file, interpreter, current location, and output panel are the pieces to check when you ask, “What did I run?”"
+    },
+    {
+      "heading": "Top-level execution and the main guard",
+      "body": "Every module has a `__name__` value. Python documents a special top-level code environment named `__main__`. When Python executes a file as the top-level program, it sets that file's `__name__` to the string `'__main__'`. That makes this small conditional useful:\n\n`if __name__ == \"__main__\":`\n`    announce()`\n\nThe indented call runs when the file is launched as a program. If another program loads the file to use its definitions, the condition is false because the loaded module has its module name instead. The guard is therefore a narrow control over what happens automatically at top level. It is not a requirement for every tiny script, and it does not replace a full discussion of imports or module design. Its beginner-level value is simple: define reusable pieces above it, then put the “start this program” action inside it.\n\nFor instance, a file can define `announce()` to print `started`, then call it only under the main guard. Direct execution prints `started`. Loading the same file under another module name makes the function available without that automatic print. This distinction prevents surprising side effects when code meant for reuse is loaded elsewhere."
+    },
+    {
+      "heading": "Observe output, errors, and the exact run",
+      "body": "Program output is evidence of one execution. It tells you what the program wrote, but it must be read with the command or run configuration that produced it. A fast, documented option for a one-line experiment is `python3 -c 'print(2 + 3)'`, which prints `5`; this is convenient for a quick check but does not create a script file. For a saved program, rerunning the same file repeats its statements in order while no unhandled error intervenes.\n\nWhen an exception is unhandled, Python prints a traceback to show the path of calls that led to it. In a simple top-level script, the traceback identifies the file and line that failed, and its final line names the exception. A file containing `print(\"before\")`, then `1 / 0`, then `print(\"after\")` writes `before`, reports `ZeroDivisionError: division by zero`, and never reaches `after`. The path on your machine will differ, so do not memorize a path from an example; find the path and line in your own traceback.\n\nThis is observation, not yet a debugging method. Before changing code, verify that you ran the intended file, inspect the normal output in order, and read the exception type and location. Those checks avoid a common beginner confusion: editing one copy of a file while an IDE or terminal is executing another one."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "Python interpreter",
+      "definition": "The program that reads Python code and executes it."
+    },
+    {
+      "term": "interactive mode",
+      "definition": "A mode in which the interpreter accepts code one entry at a time and displays results or errors immediately."
+    },
+    {
+      "term": "script",
+      "definition": "A saved text file containing program statements for an interpreter to execute."
+    },
+    {
+      "term": "standard output",
+      "definition": "The normal output stream where a program commonly writes displayed results."
+    },
+    {
+      "term": "traceback",
+      "definition": "Python's report of the call stack and exception when an exception is not handled."
+    },
+    {
+      "term": "exception",
+      "definition": "A runtime event that interrupts normal program flow unless code handles it."
+    },
+    {
+      "term": "top-level code",
+      "definition": "Code executing in the environment where Python starts a program, module, command string, or interactive session."
+    },
+    {
+      "term": "main guard",
+      "definition": "An if statement that tests whether __name__ equals '__main__' before performing a top-level action."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Think of Python as a careful reader. You can hand it one tiny note at a time and it will answer right away; that is the interactive interpreter. Or you can hand it a page called a script and say, “Read this page from top to bottom.” A saved page is easier to run again tomorrow because the instructions stay put.\n\nSometimes the same page might be used in two ways: as the program itself, or as a collection of useful pieces for another program. The main guard is a note saying, “Only press the start button if this page is the program we launched.” When something goes wrong, Python leaves a traceback: a trail showing where it was when it tripped.",
+    "analogy": "Interactive mode is like asking a calculator one question at a time. A script is like saving a recipe: you can follow the same steps again. The main guard is a sign by the stove saying “turn on the oven only when cooking this recipe,” not when someone merely borrows the ingredient list.",
+    "analogyLimits": "Python is more than a calculator or recipe card. Interactive entries can define names that later entries use, scripts can receive arguments and use files, and the exact effects of loading code are broader than this simple main-guard picture. The analogy only explains the basic choice of quick interaction versus a repeatable file."
+  },
+  "workedExample": "Create `start.py` with a function and a main guard: `def announce():` followed by an indented `print(\"started\")`, then `if __name__ == \"__main__\":` followed by an indented `announce()`. Running `python3 start.py` produced `started` when verified. Python runs this file as the top-level program, so the condition is true and calls the function. Next, consider a failing file with three top-level statements: print `before`; evaluate `1 / 0`; print `after`. Its verified output begins with `before`, then ends in `ZeroDivisionError: division by zero`; `after` is absent because the unhandled exception stopped the sequence before that statement.",
+  "commonMistakes": [
+    {
+      "mistake": "Assuming an interactive experiment automatically becomes a saved program.",
+      "correction": "Interactive entries are useful for checks, but save code in a .py file when you need a repeatable script."
+    },
+    {
+      "mistake": "Believing a Run button makes the file path irrelevant.",
+      "correction": "An IDE abstracts the command, but you still need to know which file and configuration it executes and where it shows output."
+    },
+    {
+      "mistake": "Treating every traceback line as the error name.",
+      "correction": "Read the file and line information, then use the final line to identify the exception type and its message."
+    },
+    {
+      "mistake": "Expecting statements after an unhandled exception to run.",
+      "correction": "Execution stops at that point unless the exception is handled; observe which output appeared before it."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Interactive interpreter",
+      "b": "Saved script",
+      "distinction": "The interpreter accepts short entries immediately; a script stores a sequence in a file for repeatable execution."
+    },
+    {
+      "a": "Normal output",
+      "b": "Traceback output",
+      "distinction": "Normal output is what the program intentionally writes; a traceback reports an unhandled exception and where it occurred."
+    },
+    {
+      "a": "Direct execution",
+      "b": "Loading code under another module name",
+      "distinction": "Direct top-level execution gives the file __name__ == '__main__'; loading it under a module name does not."
+    }
+  ],
+  "keyTakeaway": "Use interactive mode for small checks and a .py script for a repeatable program. Know what file ran, observe its output, and use the traceback's location and final exception line when execution stops.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:running-python-programs:1",
+      "prompt": "What does Python do when you give it a path to a .py script file?",
+      "options": [
+        "It reads and executes the file.",
+        "It enters interactive mode only.",
+        "It installs Python packages.",
+        "It converts the file to a different language."
+      ],
+      "correctIndex": 0,
+      "explanation": "A script path tells the interpreter to execute that file. The other options describe neither script execution nor its purpose.",
+      "difficulty": "recall",
+      "skill": "Identify script execution",
+      "sourceIds": [
+        "python-docs-interpreter"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:running-python-programs:2",
+      "prompt": "A learner wants to check the result of one small expression without making a file. Which mode best fits?",
+      "options": [
+        "A package installer",
+        "A saved script only",
+        "The interactive interpreter",
+        "A traceback"
+      ],
+      "correctIndex": 2,
+      "explanation": "Interactive mode is designed for entering and observing small pieces of code immediately. A traceback is an error report, not an execution mode.",
+      "difficulty": "application",
+      "skill": "Choose an execution mode",
+      "sourceIds": [
+        "python-docs-interpreter"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:running-python-programs:3",
+      "prompt": "During direct execution of a file, when does code inside if __name__ == '__main__': run?",
+      "options": [
+        "Whenever the file is merely loaded under any name.",
+        "Only after every possible exception is handled.",
+        "Only in interactive mode.",
+        "When Python gives that top-level file the name '__main__'."
+      ],
+      "correctIndex": 3,
+      "explanation": "The guard is true for a file Python executes as the top-level program. It is not a general import rule or an exception handler.",
+      "difficulty": "understanding",
+      "skill": "Explain the main guard",
+      "sourceIds": [
+        "python-docs-main"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:running-python-programs:4",
+      "prompt": "A script prints 'before', then evaluates 1 / 0, then prints 'after'. It has no exception handler. Which observation is correct?",
+      "options": [
+        "Both words print because Python skips the failed expression.",
+        "'before' prints, then a ZeroDivisionError traceback appears, and 'after' does not print.",
+        "Only 'after' prints because it is last.",
+        "No output can appear before a traceback."
+      ],
+      "correctIndex": 1,
+      "explanation": "The first print completes before the division raises an unhandled exception. Execution then stops, so the final print is not reached.",
+      "difficulty": "analysis",
+      "skill": "Trace sequential execution after an error",
+      "sourceIds": [
+        "python-docs-errors",
+        "python-docs-interpreter"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:running-python-programs:5",
+      "prompt": "Which command-line option runs Python code supplied directly as a command string?",
+      "options": [
+        "-m",
+        "-c",
+        "-i",
+        "-O"
+      ],
+      "correctIndex": 1,
+      "explanation": "The documented -c option executes a command string. The question asks only for that option, not for ways to run files or modules.",
+      "difficulty": "recall",
+      "skill": "Recognize documented command execution",
+      "sourceIds": [
+        "python-docs-command-line"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "python-programming:foundations:running-python-programs:1",
+      "prompt": "What does Python do when you give it a path to a .py script file?",
+      "options": [
+        "It reads and executes the file.",
+        "It enters interactive mode only.",
+        "It installs Python packages.",
+        "It converts the file to a different language."
+      ],
+      "correctIndex": 0,
+      "explanation": "A script path tells the interpreter to execute that file. The other options describe neither script execution nor its purpose.",
+      "difficulty": "recall",
+      "skill": "Identify script execution",
+      "sourceIds": [
+        "python-docs-interpreter"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:running-python-programs:2",
+      "prompt": "A learner wants to check the result of one small expression without making a file. Which mode best fits?",
+      "options": [
+        "A package installer",
+        "A saved script only",
+        "The interactive interpreter",
+        "A traceback"
+      ],
+      "correctIndex": 2,
+      "explanation": "Interactive mode is designed for entering and observing small pieces of code immediately. A traceback is an error report, not an execution mode.",
+      "difficulty": "application",
+      "skill": "Choose an execution mode",
+      "sourceIds": [
+        "python-docs-interpreter"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:running-python-programs:3",
+      "prompt": "During direct execution of a file, when does code inside if __name__ == '__main__': run?",
+      "options": [
+        "Whenever the file is merely loaded under any name.",
+        "Only after every possible exception is handled.",
+        "Only in interactive mode.",
+        "When Python gives that top-level file the name '__main__'."
+      ],
+      "correctIndex": 3,
+      "explanation": "The guard is true for a file Python executes as the top-level program. It is not a general import rule or an exception handler.",
+      "difficulty": "understanding",
+      "skill": "Explain the main guard",
+      "sourceIds": [
+        "python-docs-main"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "python-programming:foundations:installing-python",
+    "python-programming:foundations:python-syntax",
+    "python-programming:foundations:input-and-output",
+    "python-programming:foundations:exceptions",
+    "python-programming:foundations:modules"
+  ],
+  "sources": [
+    "python-docs-interpreter",
+    "python-docs-command-line",
+    "python-docs-main",
+    "python-docs-errors"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only official documentation; no source prose adapted.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Original instructional prose and locally executed Python 3 examples synthesized from official documentation."
+  },
+  "contentHash": "581b1972128bc9b4",
+  "status": "source-verified",
+  "public": false
+}

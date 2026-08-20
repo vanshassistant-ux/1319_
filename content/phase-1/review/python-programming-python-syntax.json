@@ -1,0 +1,285 @@
+{
+  "id": "python-programming:foundations:python-syntax",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "python-syntax",
+  "title": "Python Syntax",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "python",
+    "syntax",
+    "indentation",
+    "whitespace",
+    "source-code"
+  ],
+  "in30Seconds": "Python syntax is the set of rules that lets Python turn source text into a program. Characters become tokens, tokens form logical lines, and statements follow those lines. Most whitespace merely separates tokens, but leading whitespace is meaningful: it groups a suite under a colon-ended header. Comments begin with # outside a string. For long expressions, parentheses, brackets, and braces provide the safest line continuation.",
+  "whyItMatters": "Syntax is the agreement between your source file and the parser. Knowing which spaces carry structure makes code easier to read and prevents a large class of immediate errors. It also helps when you encounter a SyntaxError, IndentationError, or TabError: these messages describe a failure to form valid program text, before Python can carry out the program's intended work. The same conventions make your code legible to classmates, collaborators, and future you.",
+  "learningObjectives": [
+    "Distinguish physical lines, logical lines, tokens, statements, and suites.",
+    "Explain why leading indentation is structural in Python while most internal whitespace is not.",
+    "Apply implicit line joining to format a multi-line expression clearly.",
+    "Distinguish a SyntaxError from indentation-related errors at a basic level.",
+    "Recognize comments and continuations that are valid Python source."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "From characters to statements",
+      "body": "Python does not treat a source file as a bag of English-like sentences. Before the parser can decide whether a program follows the grammar, lexical analysis reads decoded source characters and produces tokens. Common token categories include names, literals, operators, delimiters, and special structural markers such as NEWLINE, INDENT, and DEDENT. You do not need to inspect tokens for ordinary programming, but the model explains why apparently small edits can change a program's structure. For example, `total=3` and `total = 3` have the same essential tokens; spacing is not needed around the equals sign in that case. By contrast, `blue sky` contains two name tokens, whereas `bluesky` is one name token. Whitespace is required when omitting it would make adjacent characters a different token.\n\nA physical line is a sequence of characters ending in a line ending. A logical line is what the language uses for a statement boundary. One logical line may occupy more than one physical line when a continuation rule applies. This distinction is useful because a source file can be formatted over several screen lines without necessarily becoming several statements. A simple statement is contained in one logical line. Several simple statements can technically share a logical line when separated by semicolons, but one statement per line is usually easier to scan and edit.\n\nAn expression is source text that Python evaluates to obtain a value; it can appear as part of a larger statement. A statement is a complete instruction in the grammar. This lesson does not attempt to catalogue expression forms or statements such as assignment, import, or return. The useful syntax-level distinction is that expressions are ingredients, while statements establish the program's top-level actions and structure."
+    },
+    {
+      "heading": "Whitespace, comments, and continued lines",
+      "body": "Most spaces, tabs, and formfeeds between tokens are interchangeable delimiters. At the beginning of a logical line, however, leading spaces and tabs have another job: Python uses their indentation level to determine how statements are grouped. This is the famous meaningful whitespace rule. It is not a style convention layered on top of braces; indentation is part of the language's structure.\n\nA comment starts with `#` when that character is outside a string literal and continues through the physical line's end. The parser ignores the comment's text. Comments are for a reader: explain a non-obvious decision, constraint, or consequence rather than narrating a line that already reads clearly. A hash inside a quoted string is ordinary string content, not a comment starter.\n\nThere are two ways to continue a logical line. Explicit joining uses a backslash at the end of a physical line. The backslash joins that line to the next one, but it is fragile: it cannot be followed by a comment, and an accidental trailing character defeats the continuation. Implicit joining is usually clearer. An expression inside parentheses, square brackets, or curly braces may span physical lines without a backslash, and those continuation lines may contain comments. Format the pieces vertically so a reader can see what belongs together.\n\nFor example, this valid expression uses parentheses for continuation:\n\n```python\nmessage = (\n    \"syntax gives code structure\"\n    \" before it runs\"\n)\nprint(message)\n```\n\nAdjacent string literals inside parentheses are concatenated by the language, so the output is `syntax gives code structure before it runs`. The point here is formatting and grouping, not string techniques: the parentheses permit line breaks while preserving one logical line."
+    },
+    {
+      "heading": "Suites: indentation that groups work",
+      "body": "Some statements are compound statements. A compound statement is made of one or more clauses. Each clause has a header and a suite: the header begins with a keyword, ends in a colon, and its suite is the group of statements that the clause controls. Although a suite can be written as simple statements on the same line as a header, the normal multi-line form is the one that supports nested compound statements and is much more readable.\n\nA deliberately minimal example shows only the shape:\n\n```python\nif ready:\n    print(\"begin\")\nprint(\"outside the suite\")\n```\n\nThe indented `print` is in the `if` header's suite. The final `print` returns to the surrounding indentation level, so it is outside that suite. This lesson is about that structural boundary, not about how conditions work. A suite must have at least one statement; when a structure is intentionally empty during drafting, Python provides the `pass` statement as a syntactic placeholder.\n\nThe tokenizer compares leading indentation levels across logical lines and emits INDENT and DEDENT markers to represent changes. A line indented farther than the current level begins an indented block; returning to an earlier level closes one or more blocks. Use one consistent indentation convention in a file—four spaces is a widespread convention—and configure your editor to display whitespace when an indentation problem is hard to see. The language specifically rejects mixes of tabs and spaces when their meaning depends on tab width, raising TabError. Even a visually aligned mixture can therefore be a poor choice."
+    },
+    {
+      "heading": "What syntax-related errors mean",
+      "body": "A SyntaxError means Python could not parse the source as valid Python grammar. It can arise from many forms of invalid source: a missing colon after a compound-statement header, an unclosed delimiter, a misplaced keyword, or source that cannot be decoded. The caret and location in the message are clues, not always a proof that the indicated character is the original mistake; an earlier unclosed construct can make a later location look surprising.\n\nIndentationError is the exception family associated with indentation problems. A common instance reports an unexpected indent when an indentation increase does not follow a construct that starts a suite. Another reports an expected indented block after a colon-ended header when the required suite is absent. TabError is a more specific indentation-related error for a problematic mixture of tabs and spaces. These errors occur while Python is processing source structure, not because a later computation produced an unwanted result.\n\nWhen you read one, first compare the line with the surrounding structural pattern: does a header end in a colon; does its following suite align consistently; did a closing parenthesis or bracket go missing above? This is source reading, not a full debugging workflow. Fix the program's structure, then let Python parse it again. Keeping code short, using one statement per line, and preferring implicit continuation reduce opportunities for structural ambiguity."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "token",
+      "definition": "A categorized unit of source text produced during lexical analysis, such as a name, literal, operator, or delimiter."
+    },
+    {
+      "term": "physical line",
+      "definition": "Characters in source code ending at a line-ending sequence."
+    },
+    {
+      "term": "logical line",
+      "definition": "A line as recognized by Python's syntax; it may be formed from one or more physical lines."
+    },
+    {
+      "term": "statement",
+      "definition": "A complete grammatical instruction in Python source."
+    },
+    {
+      "term": "expression",
+      "definition": "Source text that Python evaluates to obtain a value and that can be part of a statement."
+    },
+    {
+      "term": "suite",
+      "definition": "A group of statements controlled by a clause of a compound statement."
+    },
+    {
+      "term": "indentation",
+      "definition": "Leading whitespace on a logical line that Python uses to determine statement grouping."
+    },
+    {
+      "term": "implicit line joining",
+      "definition": "Continuing an expression across physical lines inside parentheses, brackets, or braces without a backslash."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Python reads a program a little like a music reader reads a score. The words and symbols matter, but so does where each line begins. Most spaces merely keep words from running together. The spaces at the left edge are different: they show which instructions belong in the same group. A line ending in a colon is like a label that says, “the next indented lines are together.” A `#` begins a note for people; Python skips that note when it follows the program's rules.\n\nLong lines do not need to become messy. Put an expression inside parentheses, then lay its pieces out over several lines. Python knows the closing parenthesis means the thought is still continuing. If the punctuation or indentation cannot form a valid score, Python stops before playing anything and reports a syntax-related error.",
+    "analogy": "Imagine a stage script. The words are the dialogue, indentation shows which directions belong under the same scene cue, and a comment is a pencil note for the crew that is not spoken aloud.",
+    "analogyLimits": "A stage script is interpreted by people who may infer intent; Python follows its grammar mechanically. Also, indentation has formal token-level consequences in Python, whereas a printed script's indentation is usually only visual design."
+  },
+  "workedExample": "Suppose you want a readable label built across lines. Write and run this exact code:\n\n```python\nlabel = (\n    \"one logical line, \"\n    \"three physical lines\"\n)\nprint(label)  # show the completed text\n```\n\nIt prints `one logical line, three physical lines`. The opening parenthesis permits implicit continuation, so the four physical lines that make the expression are treated as one logical line. The aligned string literals are adjacent and therefore form one string value. The `print` line begins at the left margin, so it is a separate statement rather than part of any indented suite. Finally, the text after `#` is a comment; it helps a reader but does not change the output.",
+  "commonMistakes": [
+    {
+      "mistake": "Treating every space as either meaningless or structural.",
+      "correction": "Whitespace between most tokens is only a separator, but leading whitespace on a logical line determines grouping. Check its position before deciding its role."
+    },
+    {
+      "mistake": "Using a backslash continuation when parentheses would show the grouping.",
+      "correction": "Prefer implicit continuation inside parentheses, brackets, or braces. It is less fragile and permits comments on continuation lines."
+    },
+    {
+      "mistake": "Forgetting the colon before an indented suite.",
+      "correction": "A compound-statement clause header ends in a colon. The following indented statements form its suite."
+    },
+    {
+      "mistake": "Mixing tabs and spaces because they look aligned.",
+      "correction": "Use one consistent indentation method. A mix whose meaning depends on tab width raises TabError."
+    },
+    {
+      "mistake": "Assuming a hash always begins a comment.",
+      "correction": "A hash starts a comment only when it is outside a string literal; inside quoted text it is a character in that text."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Physical line",
+      "b": "Logical line",
+      "distinction": "A physical line ends at a source-file line ending; a logical line may combine physical lines under continuation rules and serves as a syntax boundary."
+    },
+    {
+      "a": "Explicit line joining",
+      "b": "Implicit line joining",
+      "distinction": "Explicit joining uses a line-final backslash; implicit joining occurs inside parentheses, brackets, or braces and is usually clearer."
+    },
+    {
+      "a": "SyntaxError",
+      "b": "Indentation-related error",
+      "distinction": "SyntaxError broadly reports source that cannot satisfy Python grammar; indentation-related errors specifically concern source structure involving indentation, with TabError covering a problematic tab/space mix."
+    }
+  ],
+  "keyTakeaway": "Python source is structured before it runs: tokens form logical lines, and leading indentation groups suites. Use comments for readers, parentheses for multi-line expressions, and consistent indentation so the structure is both valid and visible.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:python-syntax:1",
+      "prompt": "Which character begins a Python comment when it appears outside a string literal?",
+      "options": [
+        "#",
+        ";",
+        ":",
+        "a quotation mark"
+      ],
+      "correctIndex": 0,
+      "explanation": "A hash outside a string starts a comment that ends at the physical line's end. A semicolon can separate simple statements, a colon ends a clause header, and a quotation mark begins or ends a string literal.",
+      "difficulty": "recall",
+      "skill": "Identify Python comment syntax",
+      "sourceIds": [
+        "python-lexical-analysis-operators"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:python-syntax:2",
+      "prompt": "What is the clearest standard way to split a long Python expression across lines?",
+      "options": [
+        "Indent every later line by one space without delimiters.",
+        "Place the expression inside parentheses, brackets, or braces and break within them.",
+        "Put # at each line ending.",
+        "End each line with a semicolon."
+      ],
+      "correctIndex": 1,
+      "explanation": "Parentheses, brackets, and braces allow implicit line joining. Indentation alone does not continue an expression, comments do not join lines, and semicolons separate simple statements.",
+      "difficulty": "understanding",
+      "skill": "Choose valid line continuation",
+      "sourceIds": [
+        "python-lexical-analysis-operators"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:python-syntax:3",
+      "prompt": "In this shape, what is the indented group after the colon called? `if ready:` followed by indented statements",
+      "options": [
+        "A token",
+        "A comment",
+        "A suite",
+        "A physical line"
+      ],
+      "correctIndex": 2,
+      "explanation": "A suite is the group of statements controlled by a clause. A token is a lexical unit, a comment is ignored by syntax, and a physical line is a source-text line ending at a line ending.",
+      "difficulty": "recall",
+      "skill": "Name a compound-statement component",
+      "sourceIds": [
+        "python-lang-ref-compound-stmts"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:python-syntax:4",
+      "prompt": "A file mixes tabs and spaces so that its indentation meaning depends on tab width. What does Python raise?",
+      "options": [
+        "NameError",
+        "ValueError",
+        "TypeError",
+        "TabError"
+      ],
+      "correctIndex": 3,
+      "explanation": "Python raises TabError for inconsistent tab/space indentation whose meaning depends on tab width. The other exceptions concern runtime names, values, or types rather than this source-indentation rule.",
+      "difficulty": "application",
+      "skill": "Diagnose a tab/space indentation case",
+      "sourceIds": [
+        "python-lexical-analysis-operators"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:python-syntax:5",
+      "prompt": "Why can the expression below span several physical lines? `message = (` followed by two indented string-literal lines and then `)`",
+      "options": [
+        "The open parenthesis enables implicit line joining until its matching close.",
+        "Strings always ignore every newline in source code.",
+        "Indentation converts the lines into a suite.",
+        "Python treats each physical line as an independent statement."
+      ],
+      "correctIndex": 0,
+      "explanation": "An expression inside matching parentheses can span physical lines under implicit line joining. Strings do not make all newlines irrelevant, indentation alone does not create a suite, and the example forms one logical line rather than independent statements.",
+      "difficulty": "analysis",
+      "skill": "Relate delimiters to logical-line structure",
+      "sourceIds": [
+        "python-lexical-analysis-operators"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "python-programming:foundations:python-syntax:1",
+      "prompt": "Which character begins a Python comment when it appears outside a string literal?",
+      "options": [
+        "#",
+        ";",
+        ":",
+        "a quotation mark"
+      ],
+      "correctIndex": 0,
+      "explanation": "A hash outside a string starts a comment that ends at the physical line's end. A semicolon can separate simple statements, a colon ends a clause header, and a quotation mark begins or ends a string literal.",
+      "difficulty": "recall",
+      "skill": "Identify Python comment syntax",
+      "sourceIds": [
+        "python-lexical-analysis-operators"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:python-syntax:2",
+      "prompt": "What is the clearest standard way to split a long Python expression across lines?",
+      "options": [
+        "Indent every later line by one space without delimiters.",
+        "Place the expression inside parentheses, brackets, or braces and break within them.",
+        "Put # at each line ending.",
+        "End each line with a semicolon."
+      ],
+      "correctIndex": 1,
+      "explanation": "Parentheses, brackets, and braces allow implicit line joining. Indentation alone does not continue an expression, comments do not join lines, and semicolons separate simple statements.",
+      "difficulty": "understanding",
+      "skill": "Choose valid line continuation",
+      "sourceIds": [
+        "python-lexical-analysis-operators"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:python-syntax:3",
+      "prompt": "In this shape, what is the indented group after the colon called? `if ready:` followed by indented statements",
+      "options": [
+        "A token",
+        "A comment",
+        "A suite",
+        "A physical line"
+      ],
+      "correctIndex": 2,
+      "explanation": "A suite is the group of statements controlled by a clause. A token is a lexical unit, a comment is ignored by syntax, and a physical line is a source-text line ending at a line ending.",
+      "difficulty": "recall",
+      "skill": "Name a compound-statement component",
+      "sourceIds": [
+        "python-lang-ref-compound-stmts"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "python-programming:foundations:running-python-programs",
+    "python-programming:foundations:variables",
+    "python-programming:foundations:conditionals",
+    "python-programming:foundations:debugging",
+    "python-programming:foundations:include-small-executable-examples-throughout"
+  ],
+  "sources": [
+    "python-lexical-analysis-operators",
+    "python-lang-ref-compound-stmts",
+    "python-reference-assignment-statements"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only official documentation; no source prose adapted.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Original introductory explanation derived from live Python language-reference checks and locally executed examples."
+  },
+  "contentHash": "a08339b7d8526dcb",
+  "status": "source-verified",
+  "public": false
+}

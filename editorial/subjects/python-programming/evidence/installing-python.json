@@ -1,0 +1,28 @@
+{
+  "topicId": "python-programming:foundations:installing-python",
+  "subjectId": "python-programming",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": ["obtaining a supported Python interpreter", "checking the interpreter and version selected by a command", "creating an isolated project environment"],
+    "supporting": ["platform-specific installers and command names", "the relationship between a virtual environment and its base interpreter"],
+    "outOfScope": ["using the REPL or running scripts", "Python syntax", "installing packages with pip", "programming language fundamentals"]
+  },
+  "claims": [
+    {"claim": "The official Python documentation provides distinct setup guidance for Windows, macOS, and Unix platforms.", "claimType": "CURRENT", "sourceIds": ["python-docs-setup-and-usage"], "status": "supported"},
+    {"claim": "Running python3 --version asks the selected python3 interpreter to report its version.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-command-line"], "status": "supported"},
+    {"claim": "sys.executable identifies the absolute path of the interpreter currently running a program.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-sys-executable"], "status": "supported"},
+    {"claim": "The standard-library venv module creates lightweight virtual environments, each with its own Python binary and site-packages directory.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-venv"], "status": "supported"},
+    {"claim": "A program can test whether it is in a venv by comparing sys.prefix and sys.base_prefix.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-venv"], "status": "supported"},
+    {"claim": "Activating a virtual environment changes the shell PATH so its commands are found first, but activation is not required when the environment's interpreter path is used directly.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-venv"], "status": "supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft supplied no substantive installation guidance or verifiable sources."],
+  "correctionsNeeded": ["Replaced generic boilerplate with platform-aware interpreter acquisition, verification, and environment isolation; added independently checkable command examples."],
+  "rightsIssues": ["Official documentation was used as reference-only material; this lesson uses original prose and no copied source text."],
+  "sourceRecords": [
+    {"id": "python-docs-setup-and-usage", "title": "Setup and Usage — Python 3 documentation", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/using/", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "license": "PSF License", "licenseUrl": "https://docs.python.org/3/license.html", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": false, "checkedAt": "2026-08-19", "notes": "Read the official setup landing page and its platform-specific navigation. Supports the distinction between Windows, macOS, and Unix setup paths."},
+    {"id": "python-docs-command-line", "title": "1. Command line and environment — Python 3 documentation", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/using/cmdline.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "license": "PSF License", "licenseUrl": "https://docs.python.org/3/license.html", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": false, "checkedAt": "2026-08-19", "notes": "Read the command-line documentation. Supports use of the interpreter command and command-line options; examples were independently executed with python3."},
+    {"id": "python-docs-sys-executable", "title": "sys — System-specific parameters and functions — Python 3 documentation", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/library/sys.html#sys.executable", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "license": "PSF License", "licenseUrl": "https://docs.python.org/3/license.html", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": false, "checkedAt": "2026-08-19", "notes": "Read the sys.executable entry. Supports the claim that it gives the absolute path of the executable for the running interpreter."},
+    {"id": "python-docs-venv", "title": "venv — Creation of virtual environments — Python 3 documentation", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/library/venv.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "license": "PSF License", "licenseUrl": "https://docs.python.org/3/license.html", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": false, "checkedAt": "2026-08-19", "notes": "Read the venv documentation. Supports creation command, isolated environment structure, activation behavior, and the sys.prefix versus sys.base_prefix test. A temporary venv and its interpreter were executed with python3 for this lesson."}
+  ]
+}

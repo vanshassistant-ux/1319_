@@ -1,0 +1,27 @@
+{
+  "topicId": "python-programming:foundations:python-syntax",
+  "subjectId": "python-programming",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": ["tokens and logical lines", "comments and whitespace", "indentation and suites", "explicit and implicit line joining", "syntax and indentation errors"],
+    "supporting": ["simple versus compound statements", "expressions as parts of statements"],
+    "outOfScope": ["installing or invoking Python", "name binding", "numeric operators", "control-flow logic", "functions", "debugging workflow"]
+  },
+  "claims": [
+    {"claim":"Python's lexical analyzer turns decoded source text into tokens before parsing; source that cannot be decoded raises SyntaxError.","claimType":"TECHNICAL","sourceIds":["python-lexical-analysis-operators"],"status":"supported"},
+    {"claim":"A logical line can be made from one or more physical lines according to explicit or implicit line-joining rules.","claimType":"TECHNICAL","sourceIds":["python-lexical-analysis-operators"],"status":"supported"},
+    {"claim":"A comment starts with a hash outside a string literal, ends at the physical line's end, and is ignored by syntax.","claimType":"TECHNICAL","sourceIds":["python-lexical-analysis-operators"],"status":"supported"},
+    {"claim":"Leading whitespace on a logical line determines grouping, and inconsistent tab/space indentation that depends on tab width raises TabError.","claimType":"TECHNICAL","sourceIds":["python-lexical-analysis-operators"],"status":"supported"},
+    {"claim":"A compound statement has clauses with headers and suites; a suite is a group of statements controlled by a clause and the header ends with a colon.","claimType":"TECHNICAL","sourceIds":["python-lang-ref-compound-stmts"],"status":"supported"},
+    {"claim":"A simple statement occupies one logical line, while multiple simple statements can be separated by semicolons on that line.","claimType":"TECHNICAL","sourceIds":["python-reference-assignment-statements"],"status":"supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft made no substantive, source-supported claims about Python syntax."],
+  "correctionsNeeded": ["Replaced generic boilerplate with a bounded treatment of lexical structure, suites, whitespace, comments, and syntax-related errors.", "Excluded variable binding, expressions involving operators, control-flow semantics, and debugging procedures assigned to sibling topics."],
+  "rightsIssues": ["Official Python documentation was used as reference-only authority. This lesson uses original explanatory prose and does not reproduce source prose."],
+  "sourceRecords": [
+    {"id":"python-lexical-analysis-operators","title":"The Python Language Reference — 2. Lexical analysis","provider":"Python Software Foundation","url":"https://docs.python.org/3/reference/lexical_analysis.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Read live. Supports tokens, logical and physical lines, comments, explicit and implicit joining, indentation, TabError, and whitespace between tokens."},
+    {"id":"python-lang-ref-compound-stmts","title":"8. Compound statements - The Python Language Reference","provider":"Python Software Foundation","url":"https://docs.python.org/3/reference/compound_stmts.html","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"PSF License","licenseUrl":"https://docs.python.org/3/license.html","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Read live. Supports the definition of clauses, headers, and suites, including the colon and indentation relationship."},
+    {"id":"python-reference-assignment-statements","title":"The Python Language Reference — Simple statements (assignment statements)","provider":"Python Software Foundation","url":"https://docs.python.org/3/reference/simple_stmts.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Read live. Supports the distinction that a simple statement is contained in one logical line and that semicolons can separate simple statements."}
+  ]
+}

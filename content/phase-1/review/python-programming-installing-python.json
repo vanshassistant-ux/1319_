@@ -1,0 +1,273 @@
+{
+  "id": "python-programming:foundations:installing-python",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "installing-python",
+  "title": "Installing Python",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "python",
+    "installation",
+    "interpreter",
+    "version",
+    "virtual-environments"
+  ],
+  "in30Seconds": "Installing Python means obtaining a Python 3 interpreter appropriate for your operating system, then confirming which interpreter your terminal will use. The command `python3 --version` checks a version, while `sys.executable` reveals the exact interpreter running code. For a project, `python3 -m venv .venv` creates a separate environment so that project-specific tools do not get mixed with other projects.",
+  "whyItMatters": "A computer can contain more than one Python interpreter, and a terminal command is only useful if you know which one it selects. Verifying the version and path prevents a surprising number of setup problems before an assignment or project begins. Virtual environments add a second kind of clarity: they give one project its own Python context. That separation becomes valuable as soon as different projects need different third-party dependencies, even though dependency installation itself is a separate topic.",
+  "learningObjectives": [
+    "Identify the platform-appropriate route for obtaining Python 3.",
+    "Verify an interpreter's version and executable path.",
+    "Distinguish an interpreter installation from a virtual environment.",
+    "Create an isolated project environment with the standard-library venv module.",
+    "Apply a check that confirms whether a Python process is using a virtual environment."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "An installation is an interpreter, not just an icon",
+      "body": "Python source code is carried out by a program called the Python interpreter. Installing Python therefore means placing an interpreter and its standard library on the machine in a way the operating system can find. The official documentation organizes setup separately for Windows, macOS, and Unix platforms because the native installation mechanisms and command discovery rules differ. Start from the official Python documentation or its linked download route for your platform rather than treating a command copied from another operating system as universal. On a managed computer, an instructor or organization may specify a supported installation method; follow that method when it exists. Keep a note of the installation route for future troubleshooting. This lesson deliberately stops at acquiring and identifying Python. Writing a script, working interactively, and installing third-party packages are later skills with their own failure modes. The goal here is a dependable interpreter selection: you should be able to state what program will run Python code and where it came from."
+    },
+    {
+      "heading": "Verify the command your shell selects",
+      "body": "After setup, check the interpreter before relying on it. On systems where the Python 3 command is named `python3`, run `python3 --version`. This asks that selected executable to print its version; it does not prove that every possible Python command on the machine refers to the same program. To inspect the exact executable from Python itself, use `python3 -c 'import sys; print(sys.executable)'`. The `-c` option supplies a one-line command to the interpreter, and `sys.executable` reports the absolute path of the executable running it. Together, these checks answer two distinct questions: which release is this, and which file supplied it? A result such as `Python 3.12.x` is not a promise about a class requirement; compare it with the version the course or project specifies. If a command is not found, do not guess by renaming random files. Return to the operating-system-specific setup guidance, or use the command name documented by the installation method you chose."
+    },
+    {
+      "heading": "Why a project gets its own environment",
+      "body": "A virtual environment is a lightweight directory that represents an isolated Python context for one project. The standard library supplies `venv` to create one. From the project directory, `python3 -m venv .venv` creates an environment in a folder conventionally named `.venv`; the name is a convention, not a special keyword. The documentation describes an environment as having its own Python binary and site-packages directory. In practical terms, that lets a project keep its installed add-ons separate from another project's add-ons, without claiming that the project has installed a new programming language. The environment is based on a Python interpreter that already exists. This is a small but important distinction: first obtain a base interpreter, then make a project environment from it. Do not delete or move an environment casually after configuring a project; recreate it with the intended interpreter if the project needs a fresh one."
+    },
+    {
+      "heading": "Activation is a convenience, not the environment itself",
+      "body": "Many setup guides tell you to activate an environment. Activation changes shell settings, chiefly PATH, so that typing `python` resolves to the environment's interpreter first. It is useful at an interactive terminal, but the environment exists even when it is not activated. A tool or automation can invoke its interpreter by its path instead. On macOS and Linux that interpreter is typically `.venv/bin/python`; on Windows it is typically `.venv\\Scripts\\python.exe`. The platform difference is exactly why blindly copying activation commands causes confusion. A direct, portable diagnostic is `python -c 'import sys; print(sys.prefix != sys.base_prefix)'` after the intended interpreter has been selected. In a venv, the documented comparison is true: `sys.prefix` points to the environment while `sys.base_prefix` refers to the base installation. This check verifies isolation without turning this lesson into a guide to using the REPL or installing packages."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "Python interpreter",
+      "definition": "The program that executes Python code and provides access to Python's standard library."
+    },
+    {
+      "term": "Python 3",
+      "definition": "The current major language line identified by version numbers beginning with 3."
+    },
+    {
+      "term": "executable",
+      "definition": "A file the operating system can run as a program; for Python, it is the interpreter program."
+    },
+    {
+      "term": "PATH",
+      "definition": "A shell or operating-system setting listing directories searched when a command is entered without a full path."
+    },
+    {
+      "term": "virtual environment",
+      "definition": "A lightweight, project-specific Python context with its own interpreter path and site-packages directory."
+    },
+    {
+      "term": "base interpreter",
+      "definition": "The existing Python installation from which a virtual environment is created."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Think of Python as a translator. You write Python instructions, but the computer needs the translator program—the interpreter—to carry them out. Installing Python puts that translator on your computer. Checking its version is like checking which edition of a dictionary you picked up: two editions can be similar but not identical. Checking its path tells you which physical copy you actually grabbed.\n\nA virtual environment is a smaller workspace for one project. It starts with a real Python interpreter already installed, then gives the project its own labeled shelf for extra tools. That prevents one project's choices from quietly spilling into another's. You can activate the workspace so your terminal reaches it first, but the workspace is still there even if you point directly to its Python program.",
+    "analogy": "Imagine a building with several identical-looking toolboxes. `python3 --version` reads the model label on the toolbox you opened, and `sys.executable` tells you its storage location. A `.venv` is a project-specific toolbox beside the workbench.",
+    "analogyLimits": "A virtual environment is not a sealed computer or a completely separate Python installation. It is a directory built from a base interpreter and it can still depend on operating-system details. The toolbox image also hides the fact that commands are selected by PATH rules, which can vary by shell and platform."
+  },
+  "workedExample": "A student has just installed Python and wants to prepare a course project without assuming which interpreter the terminal chose. First they run `python3 --version`; on the checked system it printed `Python 3.9.6`. Next they run `python3 -c 'import sys; print(sys.executable)'`, which printed the full path of that interpreter. In the project folder, they create an environment with `python3 -m venv .venv`. To verify the new environment rather than merely trust the folder name, they invoke its Python and run `import sys; print(sys.prefix != sys.base_prefix)`. The result is `True`, confirming that the process has a virtual-environment prefix distinct from its base prefix. They have verified interpreter selection and isolation without yet installing any package or writing a program.",
+  "commonMistakes": [
+    {
+      "mistake": "Assuming every platform uses the same Python command.",
+      "correction": "Use the command and installation route documented for the operating system and installation method; verify the selected executable afterward."
+    },
+    {
+      "mistake": "Treating a version check as proof of which file ran.",
+      "correction": "Check both `--version` and `sys.executable`; version and executable path answer different questions."
+    },
+    {
+      "mistake": "Thinking a virtual environment replaces the base Python installation.",
+      "correction": "Create a venv from an already available interpreter; it is a project-specific context, not the first step in obtaining Python."
+    },
+    {
+      "mistake": "Believing activation creates the environment.",
+      "correction": "Activation changes shell command lookup. The environment is created by `python3 -m venv .venv` and can be used through its interpreter path."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Python installation",
+      "b": "virtual environment",
+      "distinction": "An installation supplies a base interpreter for the computer; a virtual environment is a project-specific context created from a base interpreter."
+    },
+    {
+      "a": "version check",
+      "b": "executable-path check",
+      "distinction": "`--version` reports the selected interpreter's release, while `sys.executable` identifies the actual executable file running the command."
+    },
+    {
+      "a": "creating a venv",
+      "b": "activating a venv",
+      "distinction": "Creation builds the environment directory; activation adjusts a shell so its interpreter is found first."
+    }
+  ],
+  "keyTakeaway": "A reliable Python setup is one you can identify: obtain the interpreter through the appropriate platform route, verify its version and path, then create a separate venv when a project needs its own context.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:installing-python:1",
+      "prompt": "What does `sys.executable` report for a running Python process?",
+      "options": [
+        "The absolute path of the executable running that interpreter",
+        "Every Python version installed on the computer",
+        "The name of the current project folder",
+        "A list of installed third-party packages"
+      ],
+      "correctIndex": 0,
+      "explanation": "`sys.executable` identifies the executable for the current interpreter. It does not inventory installations, report a project directory, or list packages.",
+      "difficulty": "recall",
+      "skill": "Identifying an interpreter-path diagnostic",
+      "sourceIds": [
+        "python-docs-sys-executable"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:installing-python:2",
+      "prompt": "A student has created `.venv` for a project. Which statement best distinguishes that directory from the original Python installation?",
+      "options": [
+        "It changes Python syntax only inside the project",
+        "It is a project-specific environment created from a base interpreter",
+        "It is a second operating system",
+        "It permanently replaces the system's base interpreter"
+      ],
+      "correctIndex": 1,
+      "explanation": "A venv is created from an existing interpreter and gives a project its own context. It does not alter syntax, create an operating system, or replace the base installation.",
+      "difficulty": "understanding",
+      "skill": "Distinguishing a venv from an installation",
+      "sourceIds": [
+        "python-docs-venv"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:installing-python:3",
+      "prompt": "After selecting the intended Python executable inside a virtual environment, which result is evidence that it is using that environment?",
+      "options": [
+        "`sys.prefix == sys.base_prefix`",
+        "`sys.executable` prints no path",
+        "`sys.prefix != sys.base_prefix`",
+        "`python --version` has no number"
+      ],
+      "correctIndex": 2,
+      "explanation": "The venv documentation gives the differing `sys.prefix` and `sys.base_prefix` values as the test. The other results do not indicate an active virtual environment.",
+      "difficulty": "application",
+      "skill": "Verifying venv use",
+      "sourceIds": [
+        "python-docs-venv"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:installing-python:4",
+      "prompt": "Why can activation help at a terminal without being required for a virtual environment to exist?",
+      "options": [
+        "Activation downloads a new interpreter",
+        "Activation changes the Python language version",
+        "Activation deletes global packages",
+        "Activation changes shell command lookup so the environment's commands are found first"
+      ],
+      "correctIndex": 3,
+      "explanation": "Activation adjusts PATH and related shell settings; the environment was created earlier and can also be used by calling its interpreter path directly. It does not download Python, alter the language, or delete packages.",
+      "difficulty": "analysis",
+      "skill": "Separating shell activation from environment creation",
+      "sourceIds": [
+        "python-docs-venv"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:installing-python:5",
+      "prompt": "A terminal's `python3 --version` output is correct, but a project tool behaves differently than expected. What is the most useful next check?",
+      "options": [
+        "Print `sys.executable` through that selected interpreter to identify its full path",
+        "Rewrite the project's Python syntax",
+        "Install unrelated packages system-wide",
+        "Assume all Python commands select the same executable"
+      ],
+      "correctIndex": 0,
+      "explanation": "The path check reveals which executable actually ran, complementing the version check. Changing syntax or installing unrelated packages does not diagnose interpreter selection, and commands can select different executables.",
+      "difficulty": "application",
+      "skill": "Diagnosing interpreter selection",
+      "sourceIds": [
+        "python-docs-command-line",
+        "python-docs-sys-executable"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "python-programming:foundations:installing-python:1",
+      "prompt": "What does `sys.executable` report for a running Python process?",
+      "options": [
+        "The absolute path of the executable running that interpreter",
+        "Every Python version installed on the computer",
+        "The name of the current project folder",
+        "A list of installed third-party packages"
+      ],
+      "correctIndex": 0,
+      "explanation": "`sys.executable` identifies the executable for the current interpreter. It does not inventory installations, report a project directory, or list packages.",
+      "difficulty": "recall",
+      "skill": "Identifying an interpreter-path diagnostic",
+      "sourceIds": [
+        "python-docs-sys-executable"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:installing-python:2",
+      "prompt": "A student has created `.venv` for a project. Which statement best distinguishes that directory from the original Python installation?",
+      "options": [
+        "It changes Python syntax only inside the project",
+        "It is a project-specific environment created from a base interpreter",
+        "It is a second operating system",
+        "It permanently replaces the system's base interpreter"
+      ],
+      "correctIndex": 1,
+      "explanation": "A venv is created from an existing interpreter and gives a project its own context. It does not alter syntax, create an operating system, or replace the base installation.",
+      "difficulty": "understanding",
+      "skill": "Distinguishing a venv from an installation",
+      "sourceIds": [
+        "python-docs-venv"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:installing-python:3",
+      "prompt": "After selecting the intended Python executable inside a virtual environment, which result is evidence that it is using that environment?",
+      "options": [
+        "`sys.prefix == sys.base_prefix`",
+        "`sys.executable` prints no path",
+        "`sys.prefix != sys.base_prefix`",
+        "`python --version` has no number"
+      ],
+      "correctIndex": 2,
+      "explanation": "The venv documentation gives the differing `sys.prefix` and `sys.base_prefix` values as the test. The other results do not indicate an active virtual environment.",
+      "difficulty": "application",
+      "skill": "Verifying venv use",
+      "sourceIds": [
+        "python-docs-venv"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "python-programming:foundations:running-python-programs",
+    "python-programming:foundations:packages",
+    "python-programming:foundations:debugging"
+  ],
+  "sources": [
+    "python-docs-setup-and-usage",
+    "python-docs-command-line",
+    "python-docs-sys-executable",
+    "python-docs-venv"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only official documentation; no source prose adapted.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Original instructional explanation synthesized from official Python documentation and independently executed Python examples."
+  },
+  "contentHash": "e85fb7990056631d",
+  "status": "source-verified",
+  "public": false
+}

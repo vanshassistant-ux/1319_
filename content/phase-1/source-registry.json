@@ -18880,6 +18880,19 @@
     "notes": "States deque supports thread-safe, memory-efficient appends and pops from either side with approximately O(1) performance, and that list objects incur O(n) memory-movement cost for pop(0) and insert(0, v). Supports the O(1)-proper-implementation claim and the O(n) naive-array-front caveat, and the deque-as-queue use. Used to select the concrete implementation for the executed worked example. Fetched 2026-08-19."
   },
   {
+    "id": "python-docs-command-line",
+    "title": "Command line and environment",
+    "provider": "Python Documentation",
+    "url": "https://docs.python.org/3/using/cmdline.html",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Official reference read directly. Supports the documented -c command-string option."
+  },
+  {
     "id": "python-docs-datamodel",
     "title": "The Python Language Reference — Data model",
     "provider": "Python Software Foundation",
@@ -18906,6 +18919,45 @@
     "notes": "States appends and pops from the end are fast while inserts/pops from the beginning are slow because all other elements must shift by one; documents list.append and list.insert. Supports the Python-list-is-a-dynamic-array framing. Read live 2026-08-19."
   },
   {
+    "id": "python-docs-errors",
+    "title": "Errors and Exceptions",
+    "provider": "Python Documentation",
+    "url": "https://docs.python.org/3/tutorial/errors.html",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Official tutorial read directly. Supports how tracebacks represent an unhandled exception."
+  },
+  {
+    "id": "python-docs-interpreter",
+    "title": "Using the Python Interpreter",
+    "provider": "Python Documentation",
+    "url": "https://docs.python.org/3/tutorial/interpreter.html",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Official tutorial read directly. Supports interactive mode, script-file execution, prompts, and error display."
+  },
+  {
+    "id": "python-docs-main",
+    "title": "__main__ — Top-level code environment",
+    "provider": "Python Documentation",
+    "url": "https://docs.python.org/3/library/__main__.html",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Official reference read directly. Supports __name__ behavior for top-level execution and the main guard pattern."
+  },
+  {
     "id": "python-docs-pdb",
     "title": "pdb — The Python Debugger",
     "provider": "Python Software Foundation",
@@ -18920,6 +18972,21 @@
     "notes": "Supports the description of what a debugger does: breakpoints, single-stepping at the source-line level, stack-frame inspection, source listing, evaluating expressions in a frame. Used to describe the tool category, not Python-specific syntax."
   },
   {
+    "id": "python-docs-setup-and-usage",
+    "title": "Setup and Usage — Python 3 documentation",
+    "provider": "Python Software Foundation",
+    "url": "https://docs.python.org/3/using/",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "license": "PSF License",
+    "licenseUrl": "https://docs.python.org/3/license.html",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Read the official setup landing page and its platform-specific navigation. Supports the distinction between Windows, macOS, and Unix setup paths."
+  },
+  {
     "id": "python-docs-stdtypes",
     "title": "Built-in Types — Python 3 documentation",
     "provider": "Python Software Foundation",
@@ -18931,6 +18998,21 @@
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-19",
     "notes": "Authoritative list and semantics of int, float, complex, bool, str, list, tuple, set, dict. Confirms bool is a subclass of int and that True/False behave like 1/0 in numeric contexts. Used to support the primitive/collection type inventory and conversion behavior. Facts synthesized; no wording reproduced."
+  },
+  {
+    "id": "python-docs-sys-executable",
+    "title": "sys — System-specific parameters and functions — Python 3 documentation",
+    "provider": "Python Software Foundation",
+    "url": "https://docs.python.org/3/library/sys.html#sys.executable",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "license": "PSF License",
+    "licenseUrl": "https://docs.python.org/3/license.html",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Read the sys.executable entry. Supports the claim that it gives the absolute path of the executable for the running interpreter."
   },
   {
     "id": "python-docs-sys-recursion-limit",
@@ -18957,6 +19039,21 @@
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-19",
     "notes": "Read via WebFetch 2026-08-19 and verified in Bash. sys.getrecursionlimit() returns the maximum depth of the Python interpreter stack; sys.setrecursionlimit() changes it. The documented purpose: the limit 'prevents infinite recursion from causing an overflow of the C stack and crashing Python.' Bash check on this machine: sys.getrecursionlimit() returned 1000, and a base-case-free function raised RecursionError. Supports the default-1000 and RecursionError statements."
+  },
+  {
+    "id": "python-docs-venv",
+    "title": "venv — Creation of virtual environments — Python 3 documentation",
+    "provider": "Python Software Foundation",
+    "url": "https://docs.python.org/3/library/venv.html",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "license": "PSF License",
+    "licenseUrl": "https://docs.python.org/3/license.html",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-19",
+    "notes": "Read the venv documentation. Supports creation command, isolated environment structure, activation behavior, and the sys.prefix versus sys.base_prefix test. A temporary venv and its interpreter were executed with python3 for this lesson."
   },
   {
     "id": "python-docs-whatsnew-37",
