@@ -1,0 +1,158 @@
+# Indigenous North America
+
+## In 30 Seconds
+
+Long before Europeans arrived, North America was home to hundreds of distinct nations speaking hundreds of languages, from the cliff cities of the Ancestral Puebloans to Cahokia, a Mississippian city larger than London in 1250. These peoples farmed, traded across a continent, and governed themselves through systems such as the Haudenosaunee Great Law of Peace. European contact brought catastrophic epidemics, yet Native nations were never erased. More than 570 sovereign tribal nations continue today.
+
+## Why This Matters
+
+Two myths still distort how people picture early North America: that it was an empty wilderness, and that its peoples were primitive. Both are false, and both were used to justify taking Native land. Getting this history right matters for reading American history honestly, for understanding present-day tribal sovereignty and legal disputes, and for the basic historical skill of weighing evidence against inherited assumptions. It also shapes how you interpret every later chapter of U.S. history, from colonization to removal, because those events happened to populous, organized societies with their own histories, not to a blank frontier.
+
+## Learning Objectives
+
+- Explain why the ideas of a "sparsely populated wilderness" and "primitive" Native peoples are historically inaccurate.
+- Describe the diversity of Indigenous North America across major culture regions before European contact.
+- Identify the achievements of specific societies, including Cahokia, the Ancestral Puebloans, and the Haudenosaunee Confederacy.
+- Explain how the Three Sisters agriculture worked and why it was productive.
+- Analyze the catastrophic demographic impact of European contact and distinguish it from the myth that Native peoples vanished.
+- Apply the concept of tribal sovereignty to the status of Native nations in the United States today.
+
+## The College Version
+
+### Two false pictures, and the real one
+
+Popular imagination often fills North America before 1492 with one of two mistaken pictures: an empty wilderness waiting to be settled, or scattered bands of "primitive" people. Neither survives contact with the evidence. Recent scholarship estimates the population of the Americas on the eve of European arrival at roughly 60 million people, comparable to Europe at the same moment. North America north of Mexico held hundreds of distinct nations speaking hundreds of mutually unintelligible languages, organized in a vast range of political forms, from small autonomous clans to large confederacies and cities. Describing all of them as one "Native American culture" is like describing every society from Ireland to Iran as a single "European culture." These were separate peoples with their own histories, religions, economies, and rivalries. The "empty wilderness" and "primitive" labels are not neutral errors: both were used, then and later, to argue that the land was free for the taking and its inhabitants beneath serious negotiation. Reading this period honestly means starting from diversity, density, and sophistication rather than absence.
+
+### Culture regions and their diversity
+
+Scholars group Indigenous North America into culture regions shaped by climate and geography, each with distinct ways of life. In the Southwest, the Ancestral Puebloans built multi-story stone dwellings, some carved into canyon cliffs reached by ladders. Their roads ran some 180 miles, connecting outlying communities to Chaco Canyon, which by about 1050 CE had become an administrative, religious, and cultural center; drought helped drive the abandonment of these towns about a century later. In the Mississippi and Ohio valleys, Mississippian peoples built earthen mounds and cities. The largest, Cahokia, near present-day St. Louis, held more than ten thousand residents at its peak around 1100 CE, with tens of thousands more on surrounding farms and roughly 120 mounds across a site whose central tract covers about 2,200 acres; it was larger than London was in 1250. In the Eastern Woodlands, peoples such as the Haudenosaunee, Lenape, Muscogee, and Cherokee farmed and lived in settled communities, many organized so that women held real political power. The Great Plains, the Northwest Coast with its salmon economy and monumental carving traditions, and the Arctic homelands of Inuit and Yup'ik peoples each supported still other, highly adapted ways of life. Variety, not uniformity, is the defining fact.
+
+### Governance, farming, and trade
+
+Indigenous societies developed sophisticated institutions. The Haudenosaunee Confederacy, also called the Iroquois or Six Nations, united the Mohawk, Oneida, Onondaga, Cayuga, and Seneca (joined in the early 1700s by the Tuscarora) under the Great Law of Peace, a constitution preserved in oral tradition. Fifty hereditary chiefs, chosen by clan mothers, met in a Grand Council to decide shared matters by consensus while each nation kept its own internal affairs. So striking was this system that in 1988 the U.S. Congress passed a resolution acknowledging the Confederacy's contribution to the development of the U.S. Constitution, though historians debate how direct that influence was. Agriculture was equally advanced. Across much of the continent, farmers grew the "Three Sisters"—corn, beans, and squash—together in one mound. The corn stalk gives the climbing bean a trellis; the bean's roots host bacteria that fix nitrogen, replenishing the soil the hungry corn depletes; the broad squash leaves shade the ground, holding moisture and suppressing weeds. Grown together the three also form a nearly complete diet. Long-distance trade moved copper from the Great Lakes, marine shell from the coasts, and obsidian and other goods across networks that spanned the continent, linking regions that never met face to face.
+
+### Contact and catastrophe
+
+European contact after 1492 brought a demographic catastrophe with few parallels in human history. Native peoples had no prior exposure and therefore no immunity to Old World diseases such as smallpox, measles, mumps, and chickenpox. Epidemics swept ahead of Europeans themselves, often reaching communities before any colonist arrived. One careful study estimates that the Indigenous population of the Americas fell by about 90 percent, from roughly 60 million to about 6 million, within roughly a century of contact. On Hispaniola the Spanish friar Bartolomé de las Casas recorded a population collapsing from millions to a few hundred within decades. Disease did the greatest killing, but it did not act alone: warfare, enslavement, famine, and forced displacement compounded the loss. It is important to state this plainly and without minimizing it, and also to be precise about cause. The scale of death was not evidence that these societies were weak; it was the result of biological vulnerability to unfamiliar pathogens, exploited and worsened by colonial violence.
+
+### Not vanished: living, sovereign nations
+
+The single most common error in this history is to treat Native peoples as a vanished people, a chapter that closed in the past. They did not vanish. Native nations survived the catastrophe, adapted, resisted, and persist as living communities with their own languages, governments, and cultures. In the United States today there are more than 570 federally recognized tribal nations. They are not ethnic groups in the ordinary sense but sovereigns: the federal government maintains a government-to-government relationship with them, and tribes retain inherent powers of self-government recognized in U.S. law and the Constitution. Understanding Indigenous North America therefore means holding two truths at once—the depth and diversity of these societies before contact, and their continued existence as sovereign nations now. History here is not only about what was lost but about who is still here.
+
+## Key Vocabulary
+
+- **Culture region** — A geographic area whose peoples share broadly similar ways of life shaped by a common environment, used by scholars to organize the study of Indigenous North America.
+- **Ancestral Puebloans** — Southwestern peoples who built multi-story stone and cliff dwellings and centered a road-linked society on Chaco Canyon around 1050 CE.
+- **Mississippian culture** — Mound-building societies of the Mississippi and Ohio valleys, known for large towns, maize farming, and earthen pyramids.
+- **Cahokia** — The largest Mississippian city, near present-day St. Louis, with over ten thousand residents at its peak around 1100 CE and roughly 120 mounds.
+- **Haudenosaunee Confederacy** — An alliance of five (later six) Eastern Woodlands nations governed under the Great Law of Peace; also called the Iroquois or Six Nations.
+- **Great Law of Peace** — The founding constitution of the Haudenosaunee Confederacy, preserved in oral tradition, setting out a Grand Council of hereditary chiefs and consensus decision-making.
+- **Three Sisters** — The companion planting of corn, beans, and squash together, in which the crops support one another agronomically and form a nearly complete diet.
+- **Nitrogen fixation** — The process by which bacteria on bean roots convert atmospheric nitrogen into a form plants can use, replenishing soil fertility.
+- **Tribal sovereignty** — The inherent authority of Native nations to govern themselves, recognized in U.S. law through a government-to-government relationship with the federal government.
+- **Virgin-soil epidemic** — An outbreak in a population with no prior exposure or immunity to a disease, which can cause exceptionally high mortality.
+
+## Eli-10
+
+Before ships came from Europe, North America was full of people, not empty. Hundreds of different nations lived here, each with its own language, food, and government, the way Europe has France, Italy, and Sweden. Some built big cities out of earth, like Cahokia, which had more people than London. Others carved stone homes into cliffs, farmed corn, beans, and squash together, or joined nations into a peace alliance with its own set of rules. When Europeans arrived, they carried diseases no one here had ever met, and terribly, many, many people died. But the nations did not disappear. Their descendants are still here today, running their own governments as more than 570 nations inside the United States.
+
+## Eli's Analogy
+
+Picture North America before 1492 as a whole continent of countries, like Europe, not one empty campground. Each nation was its own country with its own language and leaders.
+
+**Where the analogy breaks down:** The comparison fails because these nations were even more varied than Europe's, spanning deserts, plains, coasts, and the Arctic, and because Europe was never struck by a wave of new diseases that killed most of its people in a single century, as happened here after contact.
+
+## Worked Example
+
+Suppose you read a textbook line calling pre-contact North America a "sparsely settled wilderness." Test it against evidence. Cahokia alone held more than ten thousand people around 1100 CE, larger than London in 1250. Scholars estimate the whole hemisphere held about 60 million people. The Ancestral Puebloans built road networks running 180 miles; the Haudenosaunee ran a multi-nation government by consensus. None of that fits "wilderness." Now ask why the myth persists: a population that fell by roughly 90 percent after contact left emptied land that later arrivals mistook for land that had always been empty. The evidence overturns the claim and explains where the false impression came from.
+
+## Common Mistakes
+
+- **Treating "Native American" as a single culture.** There were hundreds of distinct nations and languages. Name the specific people or region when you can, just as you would distinguish the French from the Greeks.
+- **Believing the Americas were nearly empty before Europeans came.** Estimates put the pre-contact population of the Americas near 60 million. The land looked emptier later because disease had killed a huge share of the people.
+- **Assuming Native societies were "primitive" or lacked government and agriculture.** They built cities and road networks, ran confederacies with written-down-in-oral-tradition constitutions, and farmed sophisticated systems like the Three Sisters.
+- **Describing Native peoples only in the past tense, as if they vanished.** Native nations survive today. More than 570 federally recognized tribal nations hold sovereign, government-to-government status with the United States.
+- **Explaining the population collapse as proof the societies were weak.** The collapse came from biological vulnerability to unfamiliar diseases, worsened by colonial violence, not from any weakness in the societies themselves.
+
+## Compare / Contrast
+
+- **Ancestral Puebloans (Southwest) vs. Mississippian Cahokia (Mississippi valley):** Both built lasting monumental architecture, but the Ancestral Puebloans worked in stone and cliff dwellings around Chaco Canyon, while Mississippians built earthen mounds and a river city; both declined before European contact, partly from environmental stress.
+- **The myth of a "vanished" people vs. the reality of living sovereign nations:** The myth treats Native history as closed in the past; the reality is more than 570 federally recognized tribal nations governing themselves today under a recognized government-to-government relationship.
+
+## Key Takeaway
+
+Indigenous North America before contact was densely populated, diverse, and sophisticated, home to hundreds of nations, cities, confederacies, and advanced agriculture. European contact caused a catastrophic epidemic collapse, but Native nations survived and remain sovereign, living peoples today.
+
+## Practice Question Bank
+
+**1. Which statement best describes Cahokia at its height around 1100 CE?** *(recall)*
+
+- A. A small seasonal hunting camp on the Great Plains
+- B. A Spanish mission town founded after 1492
+- C. A Mississippian city of more than ten thousand residents with roughly 120 earthen mounds, larger than London was in 1250
+- D. A cliff-dwelling complex carved into canyon walls in New Mexico
+
+**Answer: C.** Cahokia, near present-day St. Louis, was the largest Mississippian mound-building city, home to more than ten thousand residents (with tens of thousands more on surrounding farms) and about 120 mounds at its peak around 1100 CE; it was larger than London was in 1250. Option D describes the Ancestral Puebloans of the Southwest, not Cahokia. Options A and B mistake a major urban center for a camp or a post-contact European settlement.
+
+**2. In the Three Sisters planting method, what is the specific role of the beans?** *(understanding)*
+
+- A. They fix nitrogen in the soil and climb the corn stalks as a natural trellis
+- B. They shade the ground to hold in moisture and block weeds
+- C. They provide the tall stalk that supports the other two crops
+- D. They repel all insects with a strong scent, so no other crop is needed
+
+**Answer: A.** Beans host bacteria on their roots that fix atmospheric nitrogen, replenishing soil that corn depletes, and they climb the corn stalk for support. Option B describes the squash, whose broad leaves shade the soil; option C describes the corn, which provides the trellis; option D is invented and contradicts the whole point of companion planting, which is that the three crops work together.
+
+**3. Which statement accurately reflects the status of Native nations in the United States today?** *(recall)*
+
+- A. Native peoples vanished after European contact and survive only in museum exhibits
+- B. All Native nations were long ago merged into a single federally administered tribe
+- C. Native cultures continue only as historical reenactments with no legal standing
+- D. More than 570 federally recognized tribal nations hold a sovereign, government-to-government relationship with the United States
+
+**Answer: D.** The United States federally recognizes more than 570 tribal nations, which retain inherent powers of self-government and a government-to-government relationship with the federal government. Options A and C repeat the false "vanished people" myth; option B is incorrect because tribes remain distinct sovereigns, not a single merged entity.
+
+**4. The Great Law of Peace is best described as which of the following?** *(understanding)*
+
+- A. A European treaty imposed on Native nations after 1492
+- B. The founding constitution of the Haudenosaunee Confederacy, uniting nations such as the Mohawk, Oneida, Onondaga, Cayuga, and Seneca under a Grand Council
+- C. A trade agreement setting prices for the exchange of corn, beans, and squash
+- D. A religious text composed by Spanish missionaries for the Pueblo peoples
+
+**Answer: B.** The Great Law of Peace is the founding constitution of the Haudenosaunee (Iroquois) Confederacy, preserved in oral tradition, which united the five original nations under a Grand Council of hereditary chiefs chosen by clan mothers. It was an Indigenous institution that predated European contact, so options A and D (both European in origin) are wrong, and option C confuses a governing constitution with a commercial deal.
+
+**5. A student reads that the Indigenous population of the Americas fell from roughly 60 million to about 6 million within about a century of 1492. Which conclusion is best supported by the historical evidence?** *(analysis)*
+
+- A. Native societies were too primitive to sustain large populations in the first place
+- B. The decline was caused mainly by Native peoples voluntarily migrating back to Asia
+- C. Epidemic diseases such as smallpox, to which Native peoples had no prior immunity, were the leading cause of a catastrophic collapse worsened by colonial violence
+- D. European records simply exaggerated a population that was never actually large
+
+**Answer: C.** The best-supported explanation is that Old World diseases like smallpox, encountered by populations with no prior immunity, caused most of the deaths, with warfare, enslavement, famine, and displacement compounding the loss. Option A is contradicted by the evidence of large cities and dense settlement; option B has no basis; option D is wrong because multiple independent estimates, not a single inflated record, point to a large pre-contact population.
+
+## Sources
+
+- OpenStax, *U.S. History*, Section 1.1 "The Americas" (CC BY-NC-SA 4.0) — reference only. https://openstax.org/books/us-history/pages/1-1-the-americas
+- OpenStax, *U.S. History*, Section 2.4 "New Worlds in the Americas" (CC BY-NC-SA 4.0) — reference only. https://openstax.org/books/us-history/pages/2-4-new-worlds-in-the-americas-labor-commerce-and-the-columbian-exchange
+- Cahokia Mounds State Historic Site (UNESCO World Heritage Site) — reference only. https://cahokiamounds.org/learn/
+- U.S. Fish & Wildlife Service, "Three Sisters Planting Method" (public domain). https://www.fws.gov/media/three-sisters-planting-method
+- U.S. Bureau of Indian Affairs, "Frequently Asked Questions" (public domain). https://www.bia.gov/frequently-asked-questions
+- Koch, Brierley, Maslin & Lewis (2019), "Earth system impacts of the European arrival and Great Dying in the Americas after 1492," *Quaternary Science Reviews* 207:13-36 — reference only. https://www.sciencedirect.com/science/article/pii/S0277379118307261
+- Haudenosaunee Confederacy, "The Confederacy's Creation" — reference only. https://www.haudenosauneeconfederacy.com/confederacys-creation/
+- H.Con.Res.331, 100th Congress (1988), congress.gov / Library of Congress (public domain). https://www.congress.gov/bill/100th-congress/house-concurrent-resolution/331
+
+## Related Topics
+
+- history:foundations:colonial-america
+- history:foundations:u-s-history-foundations
+- history:foundations:expansion
+- history:foundations:atlantic-world
+- history:foundations:american-revolution
+
+## Editorial Metadata
+
+- **Editorial status:** READY_TO_PUBLISH
+- **Estimated minutes:** 11
+- **Researched at:** 2026-08-20
+- **Answer key positions:** 1-C, 2-A, 3-D, 4-B, 5-C
+- **Rights:** All sources reference-only; no source prose reproduced. Government sources (BIA, FWS, congress.gov) are public domain; OpenStax is CC BY-NC-SA treated reference-only; the Koch et al. study and the Haudenosaunee and Cahokia sites are reference-only.
