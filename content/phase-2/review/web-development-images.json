@@ -1,0 +1,291 @@
+{
+  "id": "web-development:foundations:images",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "images",
+  "title": "Images",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "web-development",
+    "HTML",
+    "accessibility",
+    "images"
+  ],
+  "in30Seconds": "Use HTML's `img` element to embed an image resource. Its `src` attribute identifies the resource, while `alt` gives a text alternative chosen for the image's job in that page. A meaningful photo usually needs a concise description; an image that is only decoration uses `alt=\"\"`. Add truthful `width` and `height` values when known so the browser can reserve the image's shape before it finishes loading.",
+  "whyItMatters": "Images can communicate a product, diagram, result, or action quickly, but a visual alone is not equally usable by every visitor or in every loading condition. Deliberate image markup makes a page more understandable when the resource fails, when a person uses a screen reader or Braille display, and when the page is still loading. It also develops a key web-authoring habit: choose markup from what content means and does, rather than from how it happens to look. CSS layout, responsive-image strategies, and media rights build on this foundation later.",
+  "learningObjectives": [
+    "Define the distinct roles of `img`, `src`, and `alt`.",
+    "Write an `img` element with an alternative suited to the image's purpose.",
+    "Distinguish an informative image from a decorative image.",
+    "Explain why a functional image needs a function-focused alternative.",
+    "Apply width and height attributes without treating them as a substitute for CSS layout."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "The image element and its resource",
+      "body": "The HTML `img` element represents an image in a document. It is a replaced, void element: it does not wrap child HTML or have a separate closing tag. An author normally supplies `src`, whose value is the address of the image resource. For example, `<img src=\"campus-map.png\" alt=\"Map of the north entrance\">` asks the browser to obtain the resource named by `campus-map.png` and supplies text that can stand in for the image. `src` is not a description; it is resource-location data. Conversely, `alt` is not the filename or an optional caption field. It is replacement text for the image when the image is not available and a text equivalent in contexts that expose that alternative. Keeping those jobs separate prevents a common error: putting `campus-map.png` in `alt` tells a visitor almost nothing about the information in the image. This lesson focuses on the ordinary `img` element. Selecting different image files for different screens and controlling the image's visual layout are separate topics."
+    },
+    {
+      "heading": "Alternative text is about purpose, not decoration in words",
+      "body": "An alternative must communicate what the image contributes in its particular context. The same image file can need different alternatives in different uses. A portrait beside a news story might be meaningfully identified as the person pictured; the identical file used only as a background flourish beside a headline contributes no new information. For an informative image, write a short description that conveys the essential information. For an image that contains important text, the alternative should provide the words. For a complex chart or diagram, a short `alt` may identify its subject, while nearby text or a linked description provides the detailed data or explanation. Do not start every alternative with “image of” or “picture of” when that fact adds no useful information. More importantly, do not mechanically describe pixels. The author decides what a visitor needs to know from the image's usage, context, and content. Good alternatives are therefore authored content, not something a browser can reliably invent from a filename."
+    },
+    {
+      "heading": "Informative, decorative, and functional uses",
+      "body": "An image is informative when it carries content that a reader needs, such as an explanatory photograph, a diagram, or a chart. It needs an alternative that conveys that contribution. An image is decorative when it adds visual styling but conveys no information and has no function. In that limited case, use a null alternative: `alt=\"\"`. The empty value is intentional. It indicates that there is no information for assistive technology to announce from this particular image; omitting `alt` does not make the same clear decision. A functional image is part of an interaction, such as a printer icon inside a button or a logo that is the only content of a home-page link. Its alternative should name the action or destination, such as `alt=\"Print this page\"` or `alt=\"EliExplains home\"`, rather than merely saying “printer icon” or “blue logo.” If an image is adjacent to text that already supplies the same information, assess the combined pattern. Repeating the alternative can be noise; a null alternative may be appropriate only when the image is genuinely redundant in that context."
+    },
+    {
+      "heading": "Dimensions describe space; they do not create a design",
+      "body": "The `width` and `height` attributes state the image's horizontal and vertical dimensions in CSS pixels. When both are provided, the browser can use their ratio to reserve the image's expected area before the image data arrives. That reduces a frustrating kind of layout shift in which text and controls move when an image finally loads. For an image whose intrinsic size is 1200 by 800 pixels, `width=\"1200\" height=\"800\"` communicates a 3:2 ratio. A stylesheet can still display that image at a smaller responsive size; the attributes provide dimension information, while CSS handles presentation rules. The values must describe the actual intended ratio. Deliberately mismatched values can distort the image if CSS does not correct them, and arbitrary numbers do not improve accessibility. Dimensions also do not replace `alt`: reserving space helps visual stability, whereas an alternative addresses what the image means or does."
+    },
+    {
+      "heading": "A compact authoring check",
+      "body": "Before adding an image, identify its role. Ask: what information or function would disappear if the image did not load? Write the alternative for that loss. If the honest answer is “nothing,” use `alt=\"\"` for a purely decorative image. Next, use a real `src` that points to the intended resource and provide width and height when the image's dimensions are known. Finally, read the surrounding sentence, link, or button as a visitor would. An alternative should add the missing meaning, not repeat visible text pointlessly. Consider `<a href=\"/print\"><img src=\"printer.svg\" alt=\"Print this page\"></a>`. The image's role is to activate printing, so the action—not its SVG format, color, or icon shape—is the useful alternative. That reasoning works better than a memorized list of generic alt-text formulas."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "img element",
+      "definition": "The HTML void element that represents an image resource in a document."
+    },
+    {
+      "term": "src",
+      "definition": "An img attribute whose value identifies the image resource to fetch."
+    },
+    {
+      "term": "alt",
+      "definition": "An img attribute that supplies replacement text selected for the image's purpose and context."
+    },
+    {
+      "term": "text alternative",
+      "definition": "Text that communicates the information or function a non-text item contributes."
+    },
+    {
+      "term": "informative image",
+      "definition": "An image that conveys content a visitor needs to understand or use the page."
+    },
+    {
+      "term": "decorative image",
+      "definition": "An image used only for visual decoration and not for information or function."
+    },
+    {
+      "term": "null alternative",
+      "definition": "An intentionally empty alt value, written alt=\"\", for an image that contributes no information."
+    },
+    {
+      "term": "functional image",
+      "definition": "An image that activates or represents an interaction, such as a link or button."
+    },
+    {
+      "term": "aspect ratio",
+      "definition": "The proportional relationship between an image's width and height."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "An image tag is like a card that gives a browser two kinds of instructions: where to find a picture and what the picture means here. `src` is the address for finding the picture. `alt` is the useful message to keep when someone cannot see it or it has not appeared. If a picture explains a map, its message should mention the map. If it is just a decorative flourish, it has no message to add, so `alt=\"\"` says to skip it. A picture used as a button should say what pressing it does.",
+    "analogy": "Think of a museum label beside an object. The object is the image resource, and `src` is the museum's storage location. The label is the alternative: it tells visitors the important thing about the object in this exhibit. A plain wall pattern does not need a label, but an emergency-exit sign does.",
+    "analogyLimits": "A web alternative is not always a visible museum label, and it may be announced through software rather than printed next to an image. Also, the browser fetches the resource using `src`; the attribute itself does not store a physical picture or decide a page's visual layout."
+  },
+  "workedExample": "A course page links to a printable worksheet using only a printer icon. The author begins with `<a href=\"worksheet.pdf\"><img src=\"printer.svg\" alt=\"Print the worksheet\" width=\"48\" height=\"48\"></a>`. `src` identifies the icon file. The image is functional because activating it opens the printable worksheet, so `alt=\"Print the worksheet\"` names the action rather than saying “printer icon.” The 48-by-48 dimensions have a 1:1 ratio, allowing the browser to reserve a square before the SVG finishes loading. Changing the alt to `\"\"` would hide the link's only label from people who use the alternative; changing it to `\"blue printer\"` would describe appearance but omit the page action.",
+  "commonMistakes": [
+    {
+      "mistake": "Using a filename such as `IMG_1042.jpg` as alt text.",
+      "correction": "Describe the image's needed information or function in this context; filenames rarely do that."
+    },
+    {
+      "mistake": "Leaving alt out to mark an image decorative.",
+      "correction": "Use the deliberate null value `alt=\"\"` only when the image truly adds no information or function."
+    },
+    {
+      "mistake": "Writing “search icon” for an image button that opens search.",
+      "correction": "Name what the control does, such as “Search,” rather than only its visual shape."
+    },
+    {
+      "mistake": "Treating width and height as the entire responsive-design solution.",
+      "correction": "Use them to communicate truthful dimensions and reserve the aspect ratio; CSS and responsive-image tools manage display choices."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "src",
+      "b": "alt",
+      "distinction": "src identifies the image resource; alt supplies its replacement text."
+    },
+    {
+      "a": "informative image",
+      "b": "decorative image",
+      "distinction": "An informative image needs a meaningful alternative; a purely decorative image uses a null alternative."
+    },
+    {
+      "a": "functional image",
+      "b": "informative image",
+      "distinction": "A functional image alternative names the action or destination, while an informative image alternative conveys content."
+    }
+  ],
+  "keyTakeaway": "Image markup is not just a URL and a picture. Use `src` to identify the resource, write `alt` for what the image contributes in context, and provide accurate dimensions to help the browser reserve its space.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:images:1",
+      "prompt": "Which attribute identifies the image resource an img element should fetch?",
+      "options": [
+        "`src`",
+        "`alt`",
+        "`height`",
+        "`role`"
+      ],
+      "correctIndex": 0,
+      "explanation": "`src` identifies the image resource. `alt` is replacement text, while height describes a dimension and role is not the resource address.",
+      "difficulty": "recall",
+      "skill": "Identifying img attribute roles",
+      "sourceIds": [
+        "whatwg-html-img-element",
+        "mdn-html-img-element"
+      ]
+    },
+    {
+      "id": "web-development:foundations:images:2",
+      "prompt": "A leaf illustration appears beside a heading purely for visual styling and repeats no information. What is the best alt value?",
+      "options": [
+        "`alt=\"leaf illustration\"`",
+        "`alt=\"\"`",
+        "Omit the alt attribute",
+        "`alt=\"decorative image\"`"
+      ],
+      "correctIndex": 1,
+      "explanation": "A purely decorative image uses a null alternative, `alt=\"\"`. Omitting alt is not the same intentional decision, and announcing the decoration adds no useful information.",
+      "difficulty": "application",
+      "skill": "Selecting a null alternative for a decorative image",
+      "sourceIds": [
+        "w3c-wai-images-alt-decision-tree"
+      ]
+    },
+    {
+      "id": "web-development:foundations:images:3",
+      "prompt": "A linked logo is the only content of a link to an organization's home page. Which alternative best serves the link?",
+      "options": [
+        "`alt=\"blue circular logo\"`",
+        "`alt=\"logo.png\"`",
+        "`alt=\"EliExplains home\"`",
+        "`alt=\"\"`"
+      ],
+      "correctIndex": 2,
+      "explanation": "Because the image is functional and is the link's only label, its alternative should identify the destination or function. Appearance and filename do not do that, and a null alternative would leave the link unnamed.",
+      "difficulty": "application",
+      "skill": "Writing function-focused alternative text",
+      "sourceIds": [
+        "w3c-wai-images-alt-decision-tree"
+      ]
+    },
+    {
+      "id": "web-development:foundations:images:4",
+      "prompt": "Why might an author supply both width and height on an img element?",
+      "options": [
+        "They automatically write a text alternative.",
+        "They guarantee the image will never be resized by CSS.",
+        "They convert the image into a decorative image.",
+        "They let the browser reserve space using the image's aspect ratio while it loads."
+      ],
+      "correctIndex": 3,
+      "explanation": "Truthful width and height let the browser determine an aspect ratio and reserve space before loading completes. They do not replace alt, prevent CSS resizing, or change the image's meaning.",
+      "difficulty": "understanding",
+      "skill": "Explaining image dimension attributes",
+      "sourceIds": [
+        "whatwg-html-img-element",
+        "mdn-html-img-element"
+      ]
+    },
+    {
+      "id": "web-development:foundations:images:5",
+      "prompt": "A chart shows monthly enrollment, but the nearby paragraph already lists every value and trend. What should the author decide before choosing the chart's alt text?",
+      "options": [
+        "Whether the chart adds information beyond the nearby text in this context.",
+        "Which filename has the most descriptive extension.",
+        "Whether every image must use the phrase “image of.”",
+        "Whether width and height can replace all text."
+      ],
+      "correctIndex": 0,
+      "explanation": "Alternative text depends on what the image contributes in context. When nearby prose already provides the chart's information, the author should evaluate redundancy rather than blindly repeat it. Filenames, stock phrases, and dimensions do not answer that question.",
+      "difficulty": "analysis",
+      "skill": "Assessing contextual redundancy",
+      "sourceIds": [
+        "w3c-wai-images-alt-decision-tree"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:images:1",
+      "prompt": "Which attribute identifies the image resource an img element should fetch?",
+      "options": [
+        "`src`",
+        "`alt`",
+        "`height`",
+        "`role`"
+      ],
+      "correctIndex": 0,
+      "explanation": "`src` identifies the image resource. `alt` is replacement text, while height describes a dimension and role is not the resource address.",
+      "difficulty": "recall",
+      "skill": "Identifying img attribute roles",
+      "sourceIds": [
+        "whatwg-html-img-element",
+        "mdn-html-img-element"
+      ]
+    },
+    {
+      "id": "web-development:foundations:images:2",
+      "prompt": "A leaf illustration appears beside a heading purely for visual styling and repeats no information. What is the best alt value?",
+      "options": [
+        "`alt=\"leaf illustration\"`",
+        "`alt=\"\"`",
+        "Omit the alt attribute",
+        "`alt=\"decorative image\"`"
+      ],
+      "correctIndex": 1,
+      "explanation": "A purely decorative image uses a null alternative, `alt=\"\"`. Omitting alt is not the same intentional decision, and announcing the decoration adds no useful information.",
+      "difficulty": "application",
+      "skill": "Selecting a null alternative for a decorative image",
+      "sourceIds": [
+        "w3c-wai-images-alt-decision-tree"
+      ]
+    },
+    {
+      "id": "web-development:foundations:images:3",
+      "prompt": "A linked logo is the only content of a link to an organization's home page. Which alternative best serves the link?",
+      "options": [
+        "`alt=\"blue circular logo\"`",
+        "`alt=\"logo.png\"`",
+        "`alt=\"EliExplains home\"`",
+        "`alt=\"\"`"
+      ],
+      "correctIndex": 2,
+      "explanation": "Because the image is functional and is the link's only label, its alternative should identify the destination or function. Appearance and filename do not do that, and a null alternative would leave the link unnamed.",
+      "difficulty": "application",
+      "skill": "Writing function-focused alternative text",
+      "sourceIds": [
+        "w3c-wai-images-alt-decision-tree"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:html",
+    "web-development:foundations:links",
+    "web-development:foundations:css",
+    "web-development:foundations:responsive-design",
+    "web-development:foundations:accessibility"
+  ],
+  "sources": [
+    "whatwg-html-img-element",
+    "mdn-html-img-element",
+    "w3c-wai-images-alt-decision-tree"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only sources; no source prose adapted.",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original explanation synthesized from the current HTML standard, MDN documentation, and W3C accessibility guidance."
+  },
+  "contentHash": "5dafd3af735b4418",
+  "status": "source-verified",
+  "public": false
+}

@@ -1,0 +1,27 @@
+{
+  "topicId": "web-development:foundations:images",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {
+    "core": ["the HTML img element", "src and alt attributes", "meaningful and decorative alternatives", "width and height attributes"],
+    "supporting": ["intrinsic image dimensions", "layout stability"],
+    "outOfScope": ["CSS image layout", "responsive-image selection", "image licensing", "image-format comparisons"]
+  },
+  "claims": [
+    {"claim":"The HTML img element represents an image, and its src attribute supplies the image resource address.","claimType":"TECHNICAL","sourceIds":["whatwg-html-img-element","mdn-html-img-element"],"status":"supported"},
+    {"claim":"The alt attribute supplies replacement text when an image is unavailable and an appropriate text alternative depends on the image's purpose and context.","claimType":"TECHNICAL","sourceIds":["whatwg-html-img-element","w3c-wai-images-alt-decision-tree"],"status":"supported"},
+    {"claim":"A decorative image that conveys no information should use a null alternative, alt=\"\".","claimType":"TECHNICAL","sourceIds":["w3c-wai-images-alt-decision-tree"],"status":"supported"},
+    {"claim":"For a functional image such as an image link or button, the alternative should identify the function rather than merely describe the picture.","claimType":"TECHNICAL","sourceIds":["w3c-wai-images-alt-decision-tree"],"status":"supported"},
+    {"claim":"The width and height attributes express an image's horizontal and vertical dimensions; providing both lets a browser reserve space using the image's aspect ratio while it loads.","claimType":"TECHNICAL","sourceIds":["whatwg-html-img-element","mdn-html-img-element"],"status":"supported"},
+    {"claim":"Text alternatives can make image information available to people using screen readers or Braille output.","claimType":"EVERGREEN","sourceIds":["w3c-wai-images-alt-decision-tree"],"status":"supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft did not contain usable image-specific claims or evidence."],
+  "correctionsNeeded": ["Replaced generic boilerplate with verified img markup, alternative-text, and dimensions guidance."],
+  "rightsIssues": ["All sources are used as reference-only sources; no source prose was reproduced."],
+  "sourceRecords": [
+    {"id":"whatwg-html-img-element","title":"HTML Living Standard — The img element","provider":"WHATWG","url":"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element","sourceType":"standards-body","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Primary standard for img, src, alt, width, and height semantics. Used to verify technical claims; prose is original synthesis."},
+    {"id":"mdn-html-img-element","title":"MDN Web Docs — <img>: The Image Embed element","provider":"Mozilla / MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"CC BY-SA 2.5","licenseUrl":"https://creativecommons.org/licenses/by-sa/2.5/","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Supports practical explanation of img attributes and that width plus height reserve layout space through the aspect ratio. No source prose reproduced."},
+    {"id":"w3c-wai-images-alt-decision-tree","title":"An alt Decision Tree (Images Tutorial)","provider":"W3C Web Accessibility Initiative (WAI)","url":"https://www.w3.org/WAI/tutorials/images/decision-tree/","sourceType":"standards-body","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-20","notes":"Read directly. Supports descriptive alternatives for informative images, null alternatives for decorative images, function-focused alternatives for image controls, and context-sensitive author decisions. No source prose reproduced."}
+  ]
+}

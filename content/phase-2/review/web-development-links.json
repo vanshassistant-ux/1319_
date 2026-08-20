@@ -1,0 +1,291 @@
+{
+  "id": "web-development:foundations:links",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "links",
+  "title": "Links",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "web-development",
+    "foundations",
+    "html",
+    "links",
+    "accessibility"
+  ],
+  "in30Seconds": "An HTML link is usually an `a` element with an `href` attribute. Its link text or other content gives people a destination they can activate; `href` supplies the URL or another valid link target. A relative URL is resolved from the current document's location, while an absolute URL includes a scheme and location of its own. Good links make their destination understandable before activation and use ordinary HTML behavior whenever possible.",
+  "whyItMatters": "Links turn separate documents and locations within documents into navigable information. In coursework, a precise link can connect a claim to evidence; in a site, it lets a visitor choose a next task without guessing. Link markup also has an accessibility consequence: assistive technology can expose links and their accessible names. Learning to distinguish destination, text, and URL form helps you write maintainable navigation now and gives later lessons on routing, security, and accessibility a reliable foundation.",
+  "learningObjectives": [
+    "Define an HTML hyperlink and identify the roles of `a` and `href`.",
+    "Distinguish an absolute URL from a relative URL.",
+    "Explain why meaningful link text helps people decide where a link goes.",
+    "Apply a relative URL to connect two files in the same site.",
+    "Evaluate when opening a link in a new browsing context adds a user-facing obligation."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "A link connects a source anchor to a destination",
+      "body": "The HTML `a` element represents a hyperlink when it has an `href` attribute. The element is the source anchor: it is the item a visitor encounters in the current document. Its `href` value is the destination reference. In `<a href=\"/guides/start.html\">Read the setup guide</a>`, the sentence is the source anchor's visible text and `/guides/start.html` is the reference a browser resolves when the link is followed. A link can contain more than plain text, but its accessible name still needs to convey a useful purpose. The `a` element without `href` is not a hyperlink, so authors should not use it as a substitute for a button or a styling hook. Links are for navigation to a destination; a control that changes the current page or submits data belongs to a later behavior or form lesson. This distinction makes both keyboard interaction and meaning clearer. The `href` can also name a fragment such as `#contact`, which refers to a location in a document, but this lesson concentrates on ordinary document links rather than page architecture."
+    },
+    {
+      "heading": "URL form changes how the browser resolves a destination",
+      "body": "An absolute URL supplies enough information to identify a resource without the current page's location, such as `https://www.example.org/learn/`. It includes a scheme (`https` here) and an authority containing the host. A relative URL is interpreted in relation to a base URL, normally the current document's URL. Suppose the current page is `https://example.edu/courses/index.html`. The value `syllabus.html` resolves to `https://example.edu/courses/syllabus.html`; the value `../about.html` moves one path level upward before naming `about.html`; and `/library/` is root-relative, so it uses the same origin's `/library/` path. Relative links are useful inside a site because a site can move from one host to another without changing every internal reference. They are not automatically safer or better: choose the form that accurately expresses the intended destination. Do not confuse a filesystem-looking path with a promise about a server's routing rules; deployment and routing are separate concerns."
+    },
+    {
+      "heading": "Link text is part of the interface, not decoration",
+      "body": "A person often sees a link out of surrounding prose: in a menu, a search result, a link list, or a screen reader's list of links. WCAG's Link Purpose guidance therefore requires that the purpose of each link can be determined from the link text alone or from link text together with programmatically determined context, subject to listed exceptions. `Read the 2026 lab-safety guide` tells a visitor more than `Click here`. A meaningful name does not need to repeat a whole URL; it needs to identify the destination or action well enough for an informed choice. When several nearby links would otherwise all say `More`, give each a destination-specific label. The link's visible content and its accessible name should also agree rather than giving contradictory cues. This is a content-design responsibility as well as an accessibility responsibility. CSS can change a link's appearance, but appearance cannot rescue unclear wording."
+    },
+    {
+      "heading": "New contexts deserve deliberate, disclosed use",
+      "body": "The `target` attribute tells the browser where to display the linked resource. The special value `_blank` commonly asks for a new, unnamed browsing context. Opening a new tab or window can be appropriate when a person expects to keep a task open, but it changes navigation behavior, so do it deliberately and communicate that consequence when it matters to the task. It is not a substitute for normal navigation or an accessibility fix. For an untrusted destination opened with `_blank`, add `rel=\"noopener\"`; MDN documents that this prevents the opened page from obtaining a `window.opener` reference to the originating window. Modern HTML handling supplies equivalent `noopener` behavior for `_blank` in many cases, but writing the relationship makes the intent explicit and is easy to review. This is a defensive boundary, not permission to treat every external page as safe. Check the destination, avoid misleading labels, and let users retain control of their browsing context."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "hyperlink",
+      "definition": "A connection in a document that a user can activate to reach a referenced destination."
+    },
+    {
+      "term": "anchor element",
+      "definition": "The HTML `a` element, which represents a hyperlink when it has an `href` attribute."
+    },
+    {
+      "term": "href",
+      "definition": "The `a` element attribute that supplies the link's destination reference."
+    },
+    {
+      "term": "URL",
+      "definition": "A standardized address or reference used to locate a resource or identify a target."
+    },
+    {
+      "term": "absolute URL",
+      "definition": "A URL with its own scheme and authority, so it can identify a destination without the current page's location."
+    },
+    {
+      "term": "relative URL",
+      "definition": "A URL reference interpreted against a base URL, usually the current document's address."
+    },
+    {
+      "term": "fragment",
+      "definition": "The portion of a URL beginning with `#` that identifies a location within a resource."
+    },
+    {
+      "term": "accessible name",
+      "definition": "The label assistive technologies use to identify an interface element such as a link."
+    },
+    {
+      "term": "browsing context",
+      "definition": "A place where a browser presents a document, such as a tab, window, or embedded frame."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "A link is a signpost on a web page. The words you can choose are the sign people read, and the `href` is the address written on the back of the sign. If the sign says `Download the biology worksheet`, people can decide whether that is useful before they follow it. If it says `here`, they have to guess. A relative address is like directions from the room you are already in: `next-door.html` means the next door from this page. An absolute address is the full street address, including the city.",
+    "analogy": "Think of a library card catalog. The card's title is the link text, and the call number is the destination reference. A clear title helps a reader choose a book before walking to the shelf. A relative reference is like saying `one shelf to the left from here`; a full reference tells you the whole building and shelf.",
+    "analogyLimits": "A browser does not walk through physical shelves. It resolves URLs using formal rules, and a destination can be a web page, a file, or a fragment in one document. Link text also has accessibility rules that a paper catalog card does not automatically provide."
+  },
+  "workedExample": "A course page is published at `https://school.example/courses/web/index.html`. Its author wants a link to a lesson stored at `https://school.example/courses/web/links.html`. Because both pages share the `courses/web/` directory, this markup is enough: `<a href=\"links.html\">Study HTML links</a>`. Resolving `links.html` against the page URL replaces `index.html` with `links.html`. If the author instead wrote `<a href=\"/courses/web/links.html\">Study HTML links</a>`, the leading slash would resolve from the site's root and reach the same target on this site. The visible phrase identifies the destination; `Click here` would not. For an external reference that intentionally opens separately, `<a href=\"https://standards.example/\" target=\"_blank\" rel=\"noopener\">Read the external standard (opens in a new tab)</a>` makes the new-context behavior and defensive relationship explicit.",
+  "commonMistakes": [
+    {
+      "mistake": "Using `href`-less `a` elements as buttons.",
+      "correction": "Use a real link for navigation and use a button for an in-page action; add behavior in the appropriate later layer."
+    },
+    {
+      "mistake": "Writing several links called `click here` or `more`.",
+      "correction": "Name the destination or result so each link remains understandable in a list or brief context."
+    },
+    {
+      "mistake": "Assuming a relative URL begins at the site's root.",
+      "correction": "Without a leading slash, resolve it from the current document's base URL; test the result against that page's location."
+    },
+    {
+      "mistake": "Using `_blank` by default.",
+      "correction": "Open a new browsing context only for a reason, disclose the behavior when useful, and use `rel=\"noopener\"` for untrusted destinations."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Absolute URL",
+      "b": "Relative URL",
+      "distinction": "An absolute URL includes its own scheme and authority; a relative URL gets its meaning from a base URL."
+    },
+    {
+      "a": "Link",
+      "b": "Button",
+      "distinction": "A link navigates to a destination; a button invokes an action in the current interface."
+    },
+    {
+      "a": "Meaningful link text",
+      "b": "Generic link text",
+      "distinction": "Meaningful text communicates the destination or purpose, while generic text requires readers to infer it from elsewhere."
+    }
+  ],
+  "keyTakeaway": "Use an `a` element with `href` to create a destination-oriented link. Choose URL form based on how the browser should resolve the destination, write text that identifies its purpose, and treat new browsing contexts as a deliberate user-facing choice.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:links:1",
+      "prompt": "Which attribute normally gives an HTML `a` element its destination reference?",
+      "options": [
+        "`href`",
+        "`class`",
+        "`alt`",
+        "`method`"
+      ],
+      "correctIndex": 0,
+      "explanation": "`href` contains the destination reference for an anchor hyperlink. `class` labels elements, `alt` belongs to image alternatives, and `method` is used by forms.",
+      "difficulty": "recall",
+      "skill": "Identifying the destination attribute",
+      "sourceIds": [
+        "whatwg-html-links",
+        "mdn-a-element"
+      ]
+    },
+    {
+      "id": "web-development:foundations:links:2",
+      "prompt": "A page at `https://example.edu/course/index.html` contains `href=\"notes.html\"`. What destination does that reference resolve to?",
+      "options": [
+        "`https://example.edu/notes.html`",
+        "`https://example.edu/course/notes.html`",
+        "`https://notes.html/`",
+        "The browser cannot resolve it without a scheme."
+      ],
+      "correctIndex": 1,
+      "explanation": "A path-relative reference is resolved against the current document's directory, giving `https://example.edu/course/notes.html`. It does not start at the root unless it begins with `/`.",
+      "difficulty": "application",
+      "skill": "Resolving a relative URL",
+      "sourceIds": [
+        "whatwg-html-links",
+        "mdn-url-relative"
+      ]
+    },
+    {
+      "id": "web-development:foundations:links:3",
+      "prompt": "Which link text best communicates its destination when read by itself?",
+      "options": [
+        "Click here",
+        "More",
+        "Download the 2026 field-notes template",
+        "This link"
+      ],
+      "correctIndex": 2,
+      "explanation": "The third option identifies the destination and purpose without requiring nearby context. The other labels force a person to guess what will open.",
+      "difficulty": "understanding",
+      "skill": "Evaluating link purpose",
+      "sourceIds": [
+        "wai-link-purpose-context"
+      ]
+    },
+    {
+      "id": "web-development:foundations:links:4",
+      "prompt": "What is the best defensive addition when an untrusted external destination is intentionally opened with `target=\"_blank\"`?",
+      "options": [
+        "Replace the `href` with a `class` attribute.",
+        "Hide the destination URL from users.",
+        "Use a generic label so the page looks cleaner.",
+        "Add `rel=\"noopener\"` and make the new-context behavior clear when relevant."
+      ],
+      "correctIndex": 3,
+      "explanation": "`noopener` prevents the opened page from receiving a `window.opener` reference, and clear communication lets people anticipate the navigation change. Hiding or making the label generic is misleading; `class` does not set the destination.",
+      "difficulty": "application",
+      "skill": "Applying safe new-context guidance",
+      "sourceIds": [
+        "mdn-a-element"
+      ]
+    },
+    {
+      "id": "web-development:foundations:links:5",
+      "prompt": "Which statement correctly contrasts a link and a button?",
+      "options": [
+        "A link can never contain text, but a button must.",
+        "A button always opens a different document, while a link changes color.",
+        "A link is for navigation to a destination; a button is for an action in the current interface.",
+        "They are interchangeable whenever CSS makes them look alike."
+      ],
+      "correctIndex": 2,
+      "explanation": "Their meaning and expected interaction differ: links navigate and buttons invoke actions. Styling does not make two different semantic controls interchangeable.",
+      "difficulty": "analysis",
+      "skill": "Choosing semantic controls",
+      "sourceIds": [
+        "whatwg-html-links",
+        "mdn-a-element"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:links:1",
+      "prompt": "Which attribute normally gives an HTML `a` element its destination reference?",
+      "options": [
+        "`href`",
+        "`class`",
+        "`alt`",
+        "`method`"
+      ],
+      "correctIndex": 0,
+      "explanation": "`href` contains the destination reference for an anchor hyperlink. `class` labels elements, `alt` belongs to image alternatives, and `method` is used by forms.",
+      "difficulty": "recall",
+      "skill": "Identifying the destination attribute",
+      "sourceIds": [
+        "whatwg-html-links",
+        "mdn-a-element"
+      ]
+    },
+    {
+      "id": "web-development:foundations:links:2",
+      "prompt": "A page at `https://example.edu/course/index.html` contains `href=\"notes.html\"`. What destination does that reference resolve to?",
+      "options": [
+        "`https://example.edu/notes.html`",
+        "`https://example.edu/course/notes.html`",
+        "`https://notes.html/`",
+        "The browser cannot resolve it without a scheme."
+      ],
+      "correctIndex": 1,
+      "explanation": "A path-relative reference is resolved against the current document's directory, giving `https://example.edu/course/notes.html`. It does not start at the root unless it begins with `/`.",
+      "difficulty": "application",
+      "skill": "Resolving a relative URL",
+      "sourceIds": [
+        "whatwg-html-links",
+        "mdn-url-relative"
+      ]
+    },
+    {
+      "id": "web-development:foundations:links:3",
+      "prompt": "Which link text best communicates its destination when read by itself?",
+      "options": [
+        "Click here",
+        "More",
+        "Download the 2026 field-notes template",
+        "This link"
+      ],
+      "correctIndex": 2,
+      "explanation": "The third option identifies the destination and purpose without requiring nearby context. The other labels force a person to guess what will open.",
+      "difficulty": "understanding",
+      "skill": "Evaluating link purpose",
+      "sourceIds": [
+        "wai-link-purpose-context"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:html-document-structure",
+    "web-development:foundations:images",
+    "web-development:foundations:semantic-html",
+    "web-development:foundations:accessibility",
+    "web-development:foundations:http-basics"
+  ],
+  "sources": [
+    "whatwg-html-links",
+    "mdn-a-element",
+    "mdn-url-relative",
+    "wai-link-purpose-context"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only standards and documentation; no source prose adapted",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original instructional synthesis from the HTML Living Standard, MDN documentation, and W3C accessibility guidance; URL-resolution examples were manually derived from their stated base URLs."
+  },
+  "contentHash": "cc9d6faf57c57742",
+  "status": "source-verified",
+  "public": false
+}

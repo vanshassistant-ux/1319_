@@ -1,0 +1,230 @@
+{
+  "id": "web-development:foundations:lists",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "lists",
+  "title": "Lists",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "html",
+    "lists",
+    "semantic-markup",
+    "web-development"
+  ],
+  "in30Seconds": "HTML has three common list forms. Use `ul` with `li` items when their order does not carry meaning, and `ol` with `li` items when position or sequence matters. Use `dl` for name-and-description groups, with `dt` for a term and `dd` for its description. The browser's default bullets and numbers are not the deciding factor: choose the element that expresses the relationship among the items.",
+  "whyItMatters": "Lists make a page's structure explicit instead of leaving relationships to punctuation and visual styling. That matters when a browser renders the page differently, when CSS changes the appearance, and when software reads the document structure. In coursework and professional work, the ability to select `ul`, `ol`, or `dl` communicates whether readers should treat items as peers, steps, or labeled descriptions. It also makes markup easier to maintain: a later editor can see the intended relationship before touching a stylesheet.",
+  "learningObjectives": [
+    "Define unordered, ordered, and description lists in HTML.",
+    "Distinguish when item order is meaningful from when it is not.",
+    "Identify the permitted roles of `li`, `dt`, and `dd` in a basic list.",
+    "Apply appropriate list markup to a short content scenario.",
+    "Explain why visual bullets or numbers alone do not determine HTML semantics."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "A list expresses a relationship",
+      "body": "A list is not merely several short lines that happen to sit together. In HTML, it is a grouping whose elements say how the pieces relate. The `ul` element represents a list of items where their order is not important; its direct list-item children are `li` elements. A shopping list is a straightforward example: apples, rice, and soap are items to obtain, but swapping their positions does not normally alter the task. An unordered list may appear with bullets in a browser, but the bullet is a default presentation, not the reason to choose `ul`. CSS can replace, remove, or reposition a marker while the source still communicates an unordered collection. This distinction prevents a common mistake: choosing elements by the symbol a browser happens to draw. Choose `ul` when the content is a set of peer items and the sequence itself does not convey a different meaning. This lesson concerns list semantics; navigation structures, page landmarks, and visual list styling have their own lessons."
+    },
+    {
+      "heading": "Ordered lists make sequence part of the content",
+      "body": "The `ol` element represents a list in which the order of the items is intentionally meaningful. Its items are also `li` elements. A procedure such as first measure, then cut, then assemble is a strong use case because rearranging the steps can change the result. Ranked results and a chronology can also be ordered lists when the position is information rather than decoration. Browsers commonly show numeric markers for an `ol`, but numbers are not a substitute for deciding whether order matters. If a designer uses CSS to display an ordered list without visible numbers, the underlying markup still represents a sequence; conversely, applying decorative numbers to unrelated paragraphs does not make them an ordered list. HTML also provides attributes such as `start` and `reversed` for particular ordered-list cases, but an author should first establish that a real ordered relationship exists. Do not use `ol` just to obtain a numbered appearance for a group whose order can freely change."
+    },
+    {
+      "heading": "Description lists pair terms with details",
+      "body": "A description list uses a different relationship from `ul` and `ol`. The `dl` element represents associations of names and values, terms and definitions, or other descriptions. In its basic form, `dt` supplies a term or name and `dd` supplies the associated description. A glossary can therefore use a `dl`: one `dt` might be `HTTP`, followed by a `dd` that explains it. The standard allows grouping patterns that can associate multiple terms with one description or multiple descriptions with one term; beginners should still keep pairings clear and close together. A description list is not a universal layout tool and is not simply a list with a different marker. Use it when the content really consists of labels and their explanations. For a checklist, use `ul`; for instructions with order, use `ol`; for tabular data with headers and cells, use a table. Correctly matching the element to the relationship makes the HTML describe content rather than imitate a visual arrangement."
+    },
+    {
+      "heading": "Reading and validating a small fragment",
+      "body": "Consider `<ol><li>Draft</li><li>Review</li><li>Publish</li></ol>`. The outer `ol` asserts that the three stages have an order, while each `li` is one item in that list. If the stages could be performed in any order, changing only CSS from numbers to bullets would not correct the semantic choice; the outer element should become `ul`. For a glossary fragment, `<dl><dt>Cache</dt><dd>Stored data reused to avoid repeating work.</dd></dl>` makes the label-and-description relationship explicit. The WHATWG standard gives `ol` and `ul` a list-item content model and gives `dl` a description-group model; a conforming author should not place loose text where a required list item or description component belongs. A markup validator is useful for catching structural errors, but validation cannot decide the author’s meaning. That decision comes first: identify whether the reader needs a peer collection, a sequence, or paired labels and explanations, then write the matching elements."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "unordered list",
+      "definition": "An HTML `ul` collection whose items do not have a meaningful sequence."
+    },
+    {
+      "term": "ordered list",
+      "definition": "An HTML `ol` collection whose item positions or sequence convey information."
+    },
+    {
+      "term": "list item",
+      "definition": "An `li` element representing one item in an ordered or unordered list."
+    },
+    {
+      "term": "description list",
+      "definition": "A `dl` grouping that associates terms, names, or labels with descriptions."
+    },
+    {
+      "term": "term",
+      "definition": "A `dt` entry in a description list that names the item being described."
+    },
+    {
+      "term": "description",
+      "definition": "A `dd` entry in a description list that supplies information associated with a term."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "HTML lists are labels for three kinds of groups. A `ul` says, “Here are several things, and their order is not a message.” An `ol` says, “These things go in this order.” A `dl` says, “Here is a name, and here is what it means.” The marks a browser draws—bullets or numbers—can change, so look at the relationship, not the decoration. Each `li`, `dt`, or `dd` plays a specific role inside its matching group.",
+    "analogy": "Imagine three classroom boards. One holds supplies to bring, where any order works. One holds recipe steps, where changing the order can spoil the result. One has vocabulary cards, with a word on the front and its explanation on the back. Those are like `ul`, `ol`, and `dl`.",
+    "analogyLimits": "A web list is markup parsed by a browser, not a physical board. Description lists can also represent other name-value relationships, and a real page may contain nested lists or more complex groups than this introductory picture shows."
+  },
+  "workedExample": "A course page needs a short section titled “Lab preparation.” Its content is: bring goggles, bring a notebook, and bring a pencil. Because exchanging those three items changes nothing, write `<ul><li>Goggles</li><li>Notebook</li><li>Pencil</li></ul>`. A separate procedure says: collect materials, set up the apparatus, then record observations. Here the order affects the task, so use `<ol>` with the same three `li` elements. Finally, if the page defines `Variable` and `Control`, use `<dl>`, place each word in `dt`, and put its explanation in `dd`. The choice comes from the relationship, not from whether the author prefers dots or numerals.",
+  "commonMistakes": [
+    {
+      "mistake": "Using `ol` only because numbered markers look nicer.",
+      "correction": "Use `ol` when order is meaningful; use CSS for a visual treatment after choosing the semantic element."
+    },
+    {
+      "mistake": "Putting list text directly inside `ul` or `ol` without `li` elements.",
+      "correction": "Represent each ordinary item with an `li` child of the ordered or unordered list."
+    },
+    {
+      "mistake": "Using a description list for a sequence of instructions.",
+      "correction": "Use `ol` for steps whose order affects the task; reserve `dl` for labels and associated descriptions."
+    },
+    {
+      "mistake": "Assuming bullets always mean an unordered list.",
+      "correction": "Bullets are presentation. Determine whether the content is unordered, ordered, or term-description pairs."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "`ul`",
+      "b": "`ol`",
+      "distinction": "Both contain `li` items, but `ul` is for items without meaningful order and `ol` is for an ordered sequence."
+    },
+    {
+      "a": "`ol` or `ul`",
+      "b": "`dl`",
+      "distinction": "The first two organize items; `dl` organizes associations between terms or names and descriptions."
+    },
+    {
+      "a": "HTML list semantics",
+      "b": "CSS list styling",
+      "distinction": "HTML describes the relationship among content; CSS can alter visual markers without changing that relationship."
+    }
+  ],
+  "keyTakeaway": "Use `ul` for peer items, `ol` for meaningful sequence, and `dl` for terms or names paired with descriptions. Let the content relationship choose the markup, then use CSS for appearance.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:lists:1",
+      "prompt": "Which element represents an unordered list in HTML?",
+      "options": [
+        "`ol`",
+        "`dl`",
+        "`ul`",
+        "`dd`"
+      ],
+      "correctIndex": 2,
+      "explanation": "`ul` represents an unordered list. `ol` is ordered, `dl` is a description list, and `dd` is a description within a `dl`.",
+      "difficulty": "recall",
+      "skill": "Identify the basic unordered-list element",
+      "sourceIds": [
+        "whatwg-html-grouping-content",
+        "mdn-html-ul"
+      ]
+    },
+    {
+      "id": "web-development:foundations:lists:2",
+      "prompt": "A page gives assembly steps that must be followed in sequence. Which markup is most appropriate?",
+      "options": [
+        "A `ul` with `li` items",
+        "A `dl` with `dt` and `dd` pairs",
+        "Separate paragraphs styled with numbers",
+        "An `ol` with `li` items"
+      ],
+      "correctIndex": 3,
+      "explanation": "An ordered list represents items whose order is meaningful. The other choices do not express the required sequence.",
+      "difficulty": "application",
+      "skill": "Select markup from a content relationship",
+      "sourceIds": [
+        "whatwg-html-grouping-content",
+        "mdn-html-ol"
+      ]
+    },
+    {
+      "id": "web-development:foundations:lists:3",
+      "prompt": "In a basic glossary built with a description list, what is the role of `dt`?",
+      "options": [
+        "It supplies the term or name being described",
+        "It creates one ordinary list item",
+        "It forces a numbered marker",
+        "It contains a stylesheet rule"
+      ],
+      "correctIndex": 0,
+      "explanation": "A `dt` is a term or name in a description list. A `dd` supplies the associated description.",
+      "difficulty": "understanding",
+      "skill": "Distinguish description-list components",
+      "sourceIds": [
+        "whatwg-html-grouping-content",
+        "mdn-html-dl"
+      ]
+    },
+    {
+      "id": "web-development:foundations:lists:4",
+      "prompt": "Why is choosing `ol` solely because a browser shows numbers a semantic mistake?",
+      "options": [
+        "Ordered lists cannot contain text",
+        "Numbers are only a default appearance; `ol` should represent meaningful order",
+        "Only `dl` can display numbers",
+        "CSS cannot change list markers"
+      ],
+      "correctIndex": 1,
+      "explanation": "`ol` communicates an ordered relationship. Its visual markers are presentation and can be styled; the content must justify the ordered list.",
+      "difficulty": "analysis",
+      "skill": "Separate semantic structure from presentation",
+      "sourceIds": [
+        "whatwg-html-grouping-content",
+        "mdn-html-ol"
+      ]
+    },
+    {
+      "id": "web-development:foundations:lists:5",
+      "prompt": "Which fragment best marks up a set of course materials whose order does not matter?",
+      "options": [
+        "`<ol><li>Notebook</li><li>Pencil</li></ol>`",
+        "`<dl><dt>Notebook</dt><dd>Pencil</dd></dl>`",
+        "`<ul><li>Notebook</li><li>Pencil</li></ul>`",
+        "`<p>• Notebook<br>• Pencil</p>`"
+      ],
+      "correctIndex": 2,
+      "explanation": "The items are peers without meaningful order, so `ul` with `li` items is appropriate. The other fragments assert a different relationship or rely on visual characters.",
+      "difficulty": "application",
+      "skill": "Apply unordered-list markup",
+      "sourceIds": [
+        "whatwg-html-grouping-content",
+        "mdn-html-ul"
+      ]
+    }
+  ],
+  "quickCheck": [
+    "Which element represents an unordered list in HTML?",
+    "A page gives assembly steps that must be followed in sequence. Which markup is most appropriate?",
+    "In a basic glossary built with a description list, what is the role of `dt`?"
+  ],
+  "relatedTopics": [
+    "web-development:foundations:html",
+    "web-development:foundations:html-document-structure",
+    "web-development:foundations:headings-and-paragraphs",
+    "web-development:foundations:semantic-html",
+    "web-development:foundations:tables"
+  ],
+  "sources": [
+    "whatwg-html-grouping-content",
+    "mdn-html-ul",
+    "mdn-html-ol",
+    "mdn-html-dl"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only standards and documentation; no source prose adapted.",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original explanation and examples synthesized from the HTML standard and MDN element references."
+  },
+  "contentHash": "9eee42a4ea90cdd4",
+  "status": "source-verified",
+  "public": false
+}
