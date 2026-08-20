@@ -1,0 +1,274 @@
+{
+  "id": "web-development:foundations:box-model",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "box-model",
+  "title": "The CSS Box Model",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "web-development",
+    "css",
+    "box-model",
+    "sizing"
+  ],
+  "in30Seconds": "Browsers lay out most CSS elements as boxes. From the center outward, a box has a content area, optional padding, a border, and a margin outside the border. A declared `width` does not always mean the same thing: `box-sizing: content-box` measures the content area, while `box-sizing: border-box` includes padding and border in that declared width. Margin remains outside either sizing box. Keeping those layers separate makes unexpected gaps and widths understandable.",
+  "whyItMatters": "The box model turns a vague visual problem—“why is this card wider than 320 pixels?”—into quantities you can inspect. It is central to reading browser developer tools, setting predictable component dimensions, and explaining spacing decisions to teammates. It also prevents a frequent maintenance error: changing a width without noticing that padding and borders change the element’s outer footprint under the default sizing model. This lesson focuses on an individual element’s dimensions; flexbox, grid, and positioning decide broader layout relationships later.",
+  "learningObjectives": [
+    "Define the four areas of the CSS box model.",
+    "Distinguish content-box sizing from border-box sizing.",
+    "Calculate an outer horizontal size under content-box sizing.",
+    "Explain why margin is separate from a border box.",
+    "Apply box-sizing to diagnose a width mismatch."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Four nested areas, each with a job",
+      "body": "CSS describes an element as a rectangular box. Its content area is where text, an image, or child content is laid out. Padding is the space between that content and the border. A border draws around the padding and content. Margin is the space outside the border that separates the element from nearby boxes. These are not four alternative names for “empty space”: they occupy different locations and respond to different CSS properties. For a box with visible content, the layers run outward as content, padding, border, and margin. Padding can show the element’s background; a border can be visible or have zero width; margin is outside the border.\n\nA useful debugging habit is to ask which boundary a measurement refers to. The content width answers how much horizontal room the content gets. The border edge encloses content, padding, and border. The margin edge goes farther out when margins are present. A background or a click target may appear to extend through padding, whereas a margin creates separation outside the element. The exact visual result can also involve other CSS rules, but naming the relevant edge is the first step. This lesson is about the dimensions of one box, not about using flexbox, grid, or positioning to distribute many boxes."
+    },
+    {
+      "heading": "Declared width depends on box-sizing",
+      "body": "The `box-sizing` property states how CSS applies a specified `width` or `height`. The initial model, `content-box`, treats `width` as the content width. Horizontal padding and horizontal border widths are then added outside that declared width. Therefore, an element with `width: 300px`, `padding: 20px`, and `border: 5px solid` has a border-box width of 350 pixels: 300 + 20 + 20 + 5 + 5. If it also has `margin: 12px`, its outer horizontal footprint is 374 pixels after adding both margins. Margins are not part of the border box.\n\nWith `box-sizing: border-box`, the declared width instead includes the content, padding, and border. A `width: 300px` border box remains 300 pixels wide at its border edge; padding and border reduce the remaining content width rather than making that border box wider. Margins still sit outside and can increase the space the element occupies among neighbors. Neither model is universally “right.” The point is to choose and read one deliberately. A stylesheet may set `border-box` broadly because component dimensions are easier to reason about that way, while a specific component can still use another model when its design calls for it."
+    },
+    {
+      "heading": "Calculate first, then inspect the right edge",
+      "body": "When a visible width surprises you, write a small accounting statement rather than guessing. Under `content-box`, start with the declared content width. Add left and right padding, then left and right border widths, to reach the border-box width. Add left and right margins only if the question asks about the total external footprint. Under `border-box`, the declared width is already the border-box width; do not add padding and border a second time. Add margins only for the external footprint. The same layer-by-layer reasoning applies vertically with height, top and bottom padding, borders, and margins.\n\nFor example, `.notice { box-sizing: content-box; width: 240px; padding: 16px; border: 2px solid; margin: 10px; }` has a 276-pixel border-box width: 240 + 16 + 16 + 2 + 2. Including both margins, it spans 296 pixels of horizontal space. Changing only `box-sizing` to `border-box` while keeping `width: 240px` makes the border-box width 240 pixels; its content area must share that 240 pixels with the two padding and border sides. Developer tools can show these layers visually, but the arithmetic tells you what to expect before opening them. Record the sizing model beside any component dimension in a design note. This calculation says nothing about which element gets placed where; that belongs to later layout topics."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "CSS box model",
+      "definition": "A model that describes an element’s content, padding, border, and margin areas."
+    },
+    {
+      "term": "content box",
+      "definition": "The area allocated to an element’s content before its padding and border are added in content-box sizing."
+    },
+    {
+      "term": "padding",
+      "definition": "Space between an element’s content area and its border."
+    },
+    {
+      "term": "border",
+      "definition": "The edge drawn around an element’s padding and content areas."
+    },
+    {
+      "term": "margin",
+      "definition": "Space outside an element’s border that separates it from neighboring boxes."
+    },
+    {
+      "term": "border box",
+      "definition": "The rectangle formed by an element’s content, padding, and border, excluding margin."
+    },
+    {
+      "term": "box-sizing",
+      "definition": "The CSS property that selects whether specified width and height use the content box or border box."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Imagine packing an object for shipping. The object is the content. Bubble wrap around it is padding. The cardboard carton is the border. The empty clearance you leave between cartons on a shelf is margin. They all affect how much room the package needs, but they are in different places.\n\nCSS has two ways to read a label saying a package is 300 pixels wide. With `content-box`, the label measures only the object area, so bubble wrap and carton make the outside bigger. With `border-box`, the label measures the carton’s outside, so the object gets less room after wrap and carton take their share. Shelf clearance—margin—is outside either measurement.",
+    "analogy": "The shipping package separates inner space, protective layers, an outer wall, and clearance around the package.",
+    "analogyLimits": "A CSS border need not look like cardboard, and CSS margins do not physically push every neighbor in every layout situation. The analogy is for box boundaries and measurement, not a full browser layout simulation."
+  },
+  "workedExample": "Consider `.card { box-sizing: content-box; width: 240px; padding: 16px; border: 2px solid; margin: 10px; }`. The `width` is content width, so calculate the border-box width as 240 + 16 left padding + 16 right padding + 2 left border + 2 right border = 276px. The card’s margins are outside its border. If the question is how much horizontal room the card and its margins occupy, add 10px on each side: 276 + 10 + 10 = 296px. If the rule changes to `box-sizing: border-box` while retaining `width: 240px`, then 240px is already the border-box width; the two padding and border sides share that width with the content, and the two margins make its external footprint 260px.",
+  "commonMistakes": [
+    {
+      "mistake": "Assuming a declared width always describes the visible outer width.",
+      "correction": "Check box-sizing. With content-box, padding and border add beyond the declared width."
+    },
+    {
+      "mistake": "Adding margin when calculating a border-box width.",
+      "correction": "Margin is outside the border box; add it only when calculating external footprint."
+    },
+    {
+      "mistake": "Treating padding as empty margin around an element.",
+      "correction": "Padding lies inside the border, between content and border; margin lies outside the border."
+    },
+    {
+      "mistake": "Using a box-model calculation to explain flex or grid placement.",
+      "correction": "Use the box model for one box’s dimensions; learn layout systems separately for placement among boxes."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "content-box",
+      "b": "border-box",
+      "distinction": "Content-box applies declared width to content alone; border-box applies it to content, padding, and border together."
+    },
+    {
+      "a": "padding",
+      "b": "margin",
+      "distinction": "Padding is inside the border; margin is outside the border."
+    }
+  ],
+  "keyTakeaway": "The box model separates content, padding, border, and margin. Before calculating a width, identify whether `box-sizing` measures the content box or the border box, and add margins only when the external footprint matters.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:box-model:1",
+      "prompt": "Which sequence lists the standard box-model areas from the center outward?",
+      "options": [
+        "margin, border, padding, content",
+        "content, border, padding, margin",
+        "content, padding, border, margin",
+        "padding, content, border, margin"
+      ],
+      "correctIndex": 2,
+      "explanation": "Content is innermost, followed by padding, border, and then margin outside the border. The other sequences put at least one layer in the wrong position.",
+      "difficulty": "recall",
+      "skill": "Identify box-model layers",
+      "sourceIds": [
+        "mdn-css-box-model"
+      ]
+    },
+    {
+      "id": "web-development:foundations:box-model:2",
+      "prompt": "Under `box-sizing: border-box`, what does a declared width include?",
+      "options": [
+        "Content, padding, and border",
+        "Content and margin only",
+        "Padding, border, and margin but no content",
+        "Only the content area"
+      ],
+      "correctIndex": 0,
+      "explanation": "Border-box sizing includes content, padding, and border in the specified width. Margin stays outside; content-box alone measures only content.",
+      "difficulty": "understanding",
+      "skill": "Distinguish sizing models",
+      "sourceIds": [
+        "mdn-css-box-sizing",
+        "css-sizing-3"
+      ]
+    },
+    {
+      "id": "web-development:foundations:box-model:3",
+      "prompt": "A content-box element has `width: 200px`, left and right padding of 10px, and left and right borders of 3px. What is its border-box width?",
+      "options": [
+        "200px",
+        "220px",
+        "226px",
+        "246px"
+      ],
+      "correctIndex": 2,
+      "explanation": "Start with 200px content width, then add 10 + 10 padding and 3 + 3 border: 226px. Margin is not part of this question.",
+      "difficulty": "application",
+      "skill": "Calculate a content-box border width",
+      "sourceIds": [
+        "mdn-css-box-model",
+        "css-sizing-3"
+      ]
+    },
+    {
+      "id": "web-development:foundations:box-model:4",
+      "prompt": "A border-box element has `width: 300px` and horizontal margins of 12px on both sides. What horizontal external footprint do the element and its margins occupy?",
+      "options": [
+        "276px",
+        "300px",
+        "312px",
+        "324px"
+      ],
+      "correctIndex": 3,
+      "explanation": "The 300px declared width is already the border-box width. Add 12px left and 12px right margin for 324px. Padding and border are already included in the 300px.",
+      "difficulty": "application",
+      "skill": "Calculate external footprint",
+      "sourceIds": [
+        "mdn-css-box-sizing",
+        "mdn-css-box-model"
+      ]
+    },
+    {
+      "id": "web-development:foundations:box-model:5",
+      "prompt": "Which change directly makes padding and border count within a declared width while keeping margin outside it?",
+      "options": [
+        "Set `box-sizing: content-box`",
+        "Set `box-sizing: border-box`",
+        "Set `margin: 0`",
+        "Set `display: grid`"
+      ],
+      "correctIndex": 1,
+      "explanation": "`border-box` includes padding and border in specified width and height while margin remains outside. Content-box does the opposite measurement; changing margin or display does not define the sizing model.",
+      "difficulty": "understanding",
+      "skill": "Apply box-sizing",
+      "sourceIds": [
+        "mdn-css-box-sizing",
+        "css-sizing-3"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:box-model:1",
+      "prompt": "Which sequence lists the standard box-model areas from the center outward?",
+      "options": [
+        "margin, border, padding, content",
+        "content, border, padding, margin",
+        "content, padding, border, margin",
+        "padding, content, border, margin"
+      ],
+      "correctIndex": 2,
+      "explanation": "Content is innermost, followed by padding, border, and then margin outside the border. The other sequences put at least one layer in the wrong position.",
+      "difficulty": "recall",
+      "skill": "Identify box-model layers",
+      "sourceIds": [
+        "mdn-css-box-model"
+      ]
+    },
+    {
+      "id": "web-development:foundations:box-model:2",
+      "prompt": "Under `box-sizing: border-box`, what does a declared width include?",
+      "options": [
+        "Content, padding, and border",
+        "Content and margin only",
+        "Padding, border, and margin but no content",
+        "Only the content area"
+      ],
+      "correctIndex": 0,
+      "explanation": "Border-box sizing includes content, padding, and border in the specified width. Margin stays outside; content-box alone measures only content.",
+      "difficulty": "understanding",
+      "skill": "Distinguish sizing models",
+      "sourceIds": [
+        "mdn-css-box-sizing",
+        "css-sizing-3"
+      ]
+    },
+    {
+      "id": "web-development:foundations:box-model:3",
+      "prompt": "A content-box element has `width: 200px`, left and right padding of 10px, and left and right borders of 3px. What is its border-box width?",
+      "options": [
+        "200px",
+        "220px",
+        "226px",
+        "246px"
+      ],
+      "correctIndex": 2,
+      "explanation": "Start with 200px content width, then add 10 + 10 padding and 3 + 3 border: 226px. Margin is not part of this question.",
+      "difficulty": "application",
+      "skill": "Calculate a content-box border width",
+      "sourceIds": [
+        "mdn-css-box-model",
+        "css-sizing-3"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:cascade",
+    "web-development:foundations:specificity",
+    "web-development:foundations:colors",
+    "web-development:foundations:typography",
+    "web-development:foundations:flexbox",
+    "web-development:foundations:css-grid"
+  ],
+  "sources": [
+    "mdn-css-box-model",
+    "mdn-css-box-sizing",
+    "css-sizing-3"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only documentation and standards sources; no source prose adapted.",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original teaching explanation, checked CSS arithmetic, and original assessment items based on documented box-model behavior."
+  },
+  "contentHash": "b4f177e33cdc4e7a",
+  "status": "source-verified",
+  "public": false
+}

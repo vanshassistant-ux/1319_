@@ -1,0 +1,17 @@
+{
+  "topicId":"web-development:foundations:specificity","subjectId":"web-development","researchedAt":"2026-08-20",
+  "scope":{"core":["CSS specificity calculation","selector comparison","functional pseudo-class exceptions","`:where()` zero specificity"],"supporting":["selector matching","limited relation to cascade"],"outOfScope":["full cascade origin and importance ordering","`!important` strategy","CSS nesting"]},
+  "claims":[
+    {"claim":"Specificity is compared in ordered ID, class/attribute/pseudo-class, and type/pseudo-element columns.","claimType":"TECHNICAL","sourceIds":["mdn-css-specificity","w3c-selectors-level-4"],"status":"supported"},
+    {"claim":"A selector with an ID is more specific than a selector with no IDs regardless of its class and type counts.","claimType":"TECHNICAL","sourceIds":["mdn-css-specificity","w3c-selectors-level-4"],"status":"supported"},
+    {"claim":"Universal selectors and combinators do not add specificity.","claimType":"TECHNICAL","sourceIds":["mdn-css-specificity","w3c-selectors-level-4"],"status":"supported"},
+    {"claim":"`:is()`, `:not()`, and `:has()` take the specificity of their most specific argument, rather than adding their own pseudo-class weight.","claimType":"TECHNICAL","sourceIds":["mdn-css-specificity","w3c-selectors-level-4"],"status":"supported"},
+    {"claim":"`:where()` always has zero specificity, including the selectors in its argument.","claimType":"TECHNICAL","sourceIds":["mdn-css-specificity","w3c-selectors-level-4"],"status":"supported"},
+    {"claim":"Specificity is not the entire cascade; it is relevant when competing declarations are compared at the same origin and importance.","claimType":"TECHNICAL","sourceIds":["mdn-css-specificity"],"status":"supported"}
+  ],
+  "conflictingEvidence":[],"unsupportedExistingClaims":["The generated draft had generic, unsupported content and an incomplete Eli-10 schema."],"correctionsNeeded":["Replaced the generic draft with source-verified CSS selector calculations and a limited cascade boundary."],"rightsIssues":["Both sources are reference-only; no prose was reproduced."],
+  "sourceRecords":[
+    {"id":"mdn-css-specificity","title":"CSS cascade: Specificity","provider":"Mozilla / MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascade/Specificity","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"CC BY-SA 2.5","licenseUrl":"https://creativecommons.org/licenses/by-sa/2.5/","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Supports the three-column comparison, no-weight selectors, cascade boundary, and functional pseudo-class specificity rules. No source prose reproduced."},
+    {"id":"w3c-selectors-level-4","title":"Selectors Level 4","provider":"W3C","url":"https://www.w3.org/TR/selectors-4/","sourceType":"standards-body","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly, including the specificity rules. Primary standards source for selector specificity and the specificity-adjustment pseudo-class. Used for verification only."}
+  ]
+}

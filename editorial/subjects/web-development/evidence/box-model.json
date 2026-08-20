@@ -1,0 +1,26 @@
+{
+  "topicId": "web-development:foundations:box-model",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {
+    "core": ["content, padding, border, and margin areas", "content-box and border-box sizing", "calculating an element's outer horizontal size"],
+    "supporting": ["declared width versus rendered outer width", "transparent padding and border"],
+    "outOfScope": ["flexbox and grid layout", "positioning", "cascade and specificity", "responsive layout systems"]
+  },
+  "claims": [
+    {"claim":"The CSS box model describes rectangular boxes with content, padding, border, and margin areas.","claimType":"TECHNICAL","sourceIds":["mdn-css-box-model"],"status":"supported"},
+    {"claim":"With content-box sizing, a declared width applies to the content box and horizontal padding and borders add to the outer width.","claimType":"TECHNICAL","sourceIds":["mdn-css-box-model","css-sizing-3"],"status":"supported"},
+    {"claim":"With border-box sizing, declared width includes content, padding, and border but not margin.","claimType":"TECHNICAL","sourceIds":["mdn-css-box-sizing","css-sizing-3"],"status":"supported"},
+    {"claim":"Margins create space outside an element's border and are not included by border-box sizing.","claimType":"TECHNICAL","sourceIds":["mdn-css-box-model","mdn-css-box-sizing"],"status":"supported"},
+    {"claim":"The box-sizing property chooses how the specified width and height are applied to an element's box.","claimType":"TECHNICAL","sourceIds":["mdn-css-box-sizing","css-sizing-3"],"status":"supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft supplied no usable technical explanation or sources."],
+  "correctionsNeeded": ["Replaced generic boilerplate with sourced CSS box-model terminology and a checked arithmetic example."],
+  "rightsIssues": ["All sources are used as reference-only documentation; lesson prose and examples are original synthesis."],
+  "sourceRecords": [
+    {"id":"mdn-css-box-model","title":"The box model","provider":"MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-20","notes":"Read directly. Supports the four areas of the standard box model and the distinction between content-box and border-box sizing."},
+    {"id":"mdn-css-box-sizing","title":"box-sizing CSS property","provider":"MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-20","notes":"Read directly. Supports how content-box and border-box treat specified dimensions and that margin stays outside the box."},
+    {"id":"css-sizing-3","title":"CSS Box Sizing Module Level 3","provider":"W3C CSS Working Group","url":"https://www.w3.org/TR/css-sizing-3/","sourceType":"standards-body","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-20","notes":"Read directly. Supports CSS sizing terminology and the box-sizing property definition."}
+  ]
+}

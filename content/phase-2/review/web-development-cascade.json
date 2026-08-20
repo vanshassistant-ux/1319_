@@ -1,0 +1,273 @@
+{
+  "id": "web-development:foundations:cascade",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "cascade",
+  "title": "The CSS Cascade",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 10,
+  "tags": [
+    "web-development",
+    "css",
+    "cascade",
+    "layers"
+  ],
+  "in30Seconds": "The CSS cascade is the rule system a browser uses when more than one CSS declaration could set the same property on the same element. First, a declaration must be relevant and match the element. Then CSS considers origin and `!important`, layer precedence, and later tie-breakers such as specificity and source order. The cascade is why two matching rules can produce one computed result instead of a contradiction.",
+  "whyItMatters": "The cascade turns a stylesheet from a list of guesses into a system you can inspect. In a course, it explains why an apparently correct declaration is crossed out in browser developer tools. In a project, it helps teams keep third-party styles, base styles, and local changes predictable. Knowing the order also discourages reflexive use of `!important`, which changes the normal precedence rules and can make future maintenance harder.",
+  "learningObjectives": [
+    "Define the CSS cascade as conflict resolution for declarations.",
+    "Identify relevance, origin, importance, layer precedence, and source order as cascade decisions.",
+    "Distinguish normal declarations from important declarations.",
+    "Explain the normal and important ordering of cascade layers.",
+    "Apply source order after earlier cascade tests leave declarations tied."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "A decision process, not a selector",
+      "body": "The cascade is CSS's method for choosing one value when multiple declarations could set the same property on an element. Consider two rules that both set a paragraph's `color`. CSS does not average the colors or report an error. It evaluates the declarations in an ordered process and selects a winning value. That process is central to the name Cascading Style Sheets.\n\nThe first question is relevance. A declaration is not a candidate merely because it appears in a stylesheet. Its media or other conditional context must apply, and its selector must match the element. Selector matching belongs to the selectors topic: `p.notice` either identifies a particular element or it does not. Once more than one relevant declaration targets the same property, the cascade determines precedence. This distinction is useful in debugging. Ask “does this rule match?” before asking “why did it lose?”\n\nThe cascade's stages are ordered. Origin and importance are considered before specificity; source order is a later tie-breaker. Therefore “the more specific selector always wins” is not a sound rule. Specificity only compares declarations that survived the earlier decisions at the same applicable origin and importance level. A less-specific author declaration may defeat a more-specific user-agent declaration because origin precedence is evaluated first. This lesson uses specificity only to mark that boundary; calculating selector weights is a separate topic."
+    },
+    {
+      "heading": "Origins and importance establish broad precedence",
+      "body": "CSS declarations can come from several origins. A user agent—the browser—has default styles. A user can have user styles, and the page author provides author styles. For normal declarations, author styles outrank user styles, which outrank user-agent styles. This lets a page's stylesheet ordinarily override the browser's default presentation. Transitions and animations also have defined places in the cascade, but they are not needed to understand the everyday author-style example.\n\n`!important` changes a declaration's importance, and important declarations use a reversed origin order. Important user-agent declarations outrank important user declarations, which outrank important author declarations. The reversal exists so a user or browser can preserve certain necessary preferences against ordinary author styling. It is not a general-purpose “make my rule win” button. An author who adds `!important` has moved a declaration into a different precedence category and may make a component difficult to override later.\n\nRead origin and importance as a combined step, not as a contest between selector shapes. A highly specific selector in a lower-precedence origin does not leap ahead. Similarly, a normal declaration does not beat a relevant important declaration simply by being written later. Source order has no role until CSS has compared the earlier precedence dimensions."
+    },
+    {
+      "heading": "Layers organize author styles without selector escalation",
+      "body": "Cascade layers let an author place groups of declarations in a stated precedence order. They are created with `@layer`. Within one origin, normal declarations in layers have lower precedence than normal declarations written outside any layer. Among normal layers, a later layer has higher precedence than an earlier layer. This makes layers useful for giving a reset, a vendor package, or broad defaults a deliberate lower-priority place while leaving local unlayered rules able to override them without increasingly complicated selectors.\n\nImportant declarations reverse this layer order. For important declarations, an earlier layer has higher precedence than a later layer, and important declarations inside layers outrank important declarations outside layers. That reversal parallels the origin reversal for important declarations. It is a reason to use `!important` sparingly: a mental shortcut based on normal layer behavior becomes wrong as soon as importance changes.\n\nAfter relevance, origin/importance, and layer precedence have narrowed the candidates, CSS can use specificity for a remaining conflict. If specificity is also tied, order of appearance resolves it: the declaration that occurs last in document order wins. This familiar “later rule wins” statement is true only at that late stage. For example, two equal-specificity, normal, unlayered author rules for the same matching paragraph and property can be settled by their order. Moving the later rule to a lower-precedence layer changes the result because layer precedence is decided first."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "cascade",
+      "definition": "The CSS process for choosing a value when relevant declarations compete for the same property on an element."
+    },
+    {
+      "term": "relevance",
+      "definition": "The requirement that a declaration's conditions apply and its selector matches the element before it can compete."
+    },
+    {
+      "term": "origin",
+      "definition": "The source category of a declaration, such as user-agent, user, or author styles."
+    },
+    {
+      "term": "important declaration",
+      "definition": "A declaration marked with `!important`, which uses important precedence rules."
+    },
+    {
+      "term": "cascade layer",
+      "definition": "A named or anonymous grouping of CSS declarations with an ordered precedence relationship."
+    },
+    {
+      "term": "order of appearance",
+      "definition": "The late cascade tie-breaker in which the last otherwise-tied declaration in document order wins."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Imagine several instruction cards trying to choose one shirt color for the same character in a game. The cascade is the referee. It first discards cards that are for a different character. Then it checks who wrote the card and whether the card has a special important stamp. It also checks which labeled stack of cards the card came from. Only after those checks does it use smaller tie-breakers, including which card appears last.\n\nSo CSS is not simply “last rule wins.” A late card can still lose if it comes from a lower-priority stack or is ordinary while another matching card is important. Selectors are how the referee knows which character a card concerns. Specificity is one later tie-breaker, but it does not decide every disagreement.",
+    "analogy": "The cascade is a referee using a written sequence of tie-breakers to select one instruction.",
+    "analogyLimits": "A human referee may use judgment or negotiate. The CSS cascade follows specified precedence rules; it does not infer the author's preferred visual result."
+  },
+  "workedExample": "Suppose a paragraph matches these normal author declarations: `p { color: navy; }` in `@layer base`, then `p { color: teal; }` outside any layer. Both match, have the same origin and importance, and set the same property. The unlayered declaration wins before CSS needs source order, because normal unlayered author styles have higher layer precedence than normal layered styles. If both declarations were unlayered and had equal specificity, the one written later would win. Changing the first declaration to `color: navy !important` is not a casual override: important layer rules follow reversed layer precedence, so inspect origin, importance, and layers again rather than assuming the last line wins.",
+  "commonMistakes": [
+    {
+      "mistake": "Saying that the last matching declaration always wins.",
+      "correction": "Source order is used only after relevance, origin/importance, layer precedence, and applicable tie-breakers leave a tie."
+    },
+    {
+      "mistake": "Treating selector specificity as the first cascade rule.",
+      "correction": "A selector must match first, but origin and importance are considered before specificity."
+    },
+    {
+      "mistake": "Assuming `!important` simply adds strength to an ordinary declaration.",
+      "correction": "It places the declaration in important precedence, where origin and layer orders reverse."
+    },
+    {
+      "mistake": "Assuming a normal rule in a layer overrides normal unlayered author CSS.",
+      "correction": "Normal unlayered author declarations outrank normal layered author declarations."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "selector matching",
+      "b": "the cascade",
+      "distinction": "Matching decides whether a declaration is a candidate; the cascade resolves competing candidates for a property."
+    },
+    {
+      "a": "normal declaration",
+      "b": "important declaration",
+      "distinction": "Normal and important declarations use different origin and layer precedence orders."
+    },
+    {
+      "a": "layer precedence",
+      "b": "source order",
+      "distinction": "Layer precedence is evaluated earlier; source order only resolves declarations that are otherwise tied."
+    }
+  ],
+  "keyTakeaway": "The cascade is a sequence: establish relevance, compare origin and importance, account for layers, then use later tie-breakers. “Last rule wins” is only a narrow final case, not the whole model.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:cascade:1",
+      "prompt": "What is the CSS cascade primarily for?",
+      "options": [
+        "Choosing a value when relevant declarations compete for one property",
+        "Creating new HTML elements from selectors",
+        "Compressing stylesheets before delivery",
+        "Giving every selector the same weight"
+      ],
+      "correctIndex": 0,
+      "explanation": "The cascade selects between competing relevant declarations; it does not create HTML, compress CSS, or equalize selectors.",
+      "difficulty": "recall",
+      "skill": "Define the cascade",
+      "sourceIds": [
+        "mdn-css-cascade-introduction",
+        "w3c-css-cascade-5"
+      ]
+    },
+    {
+      "id": "web-development:foundations:cascade:2",
+      "prompt": "Two equal-specificity, normal, unlayered author declarations match the same element and set `color`. What resolves the conflict?",
+      "options": [
+        "The browser discards both declarations",
+        "The first declaration in the file",
+        "The declaration that appears later in document order",
+        "Whichever selector has more words"
+      ],
+      "correctIndex": 2,
+      "explanation": "After the earlier cascade steps and a specificity tie, order of appearance makes the later declaration win.",
+      "difficulty": "application",
+      "skill": "Apply order of appearance",
+      "sourceIds": [
+        "mdn-css-cascade-introduction",
+        "w3c-css-cascade-5"
+      ]
+    },
+    {
+      "id": "web-development:foundations:cascade:3",
+      "prompt": "Within one origin, which statement about normal author declarations is correct?",
+      "options": [
+        "A normal layer always outranks unlayered CSS",
+        "A normal unlayered declaration outranks a normal declaration in a layer",
+        "The first declared layer is always strongest",
+        "Layers replace selector matching"
+      ],
+      "correctIndex": 1,
+      "explanation": "For normal declarations, unlayered author styles have higher precedence than layered author styles. Layers do not replace matching.",
+      "difficulty": "understanding",
+      "skill": "Distinguish normal layer precedence",
+      "sourceIds": [
+        "mdn-css-cascade-introduction",
+        "w3c-css-cascade-5"
+      ]
+    },
+    {
+      "id": "web-development:foundations:cascade:4",
+      "prompt": "Why can a less-specific selector win over a more-specific selector?",
+      "options": [
+        "CSS ignores specificity whenever selectors differ",
+        "It may have higher origin, importance, or layer precedence, which are checked first",
+        "Less-specific selectors are always later in the file",
+        "Specificity applies only to HTML attributes"
+      ],
+      "correctIndex": 1,
+      "explanation": "Specificity is a later tie-breaker, so a higher-precedence origin, importance, or layer result can settle the conflict first.",
+      "difficulty": "analysis",
+      "skill": "Explain precedence stages",
+      "sourceIds": [
+        "mdn-css-cascade-introduction"
+      ]
+    },
+    {
+      "id": "web-development:foundations:cascade:5",
+      "prompt": "What changes when an author marks a declaration `!important`?",
+      "options": [
+        "It becomes a selector that matches more elements",
+        "It is moved outside every cascade layer",
+        "It is ignored unless it is last in the stylesheet",
+        "It enters important precedence, where origin and layer order are reversed"
+      ],
+      "correctIndex": 3,
+      "explanation": "`!important` creates an important declaration and the important origin and layer precedence orders reverse; it does not alter matching or require last position.",
+      "difficulty": "understanding",
+      "skill": "Explain important precedence",
+      "sourceIds": [
+        "mdn-css-cascade-introduction",
+        "w3c-css-cascade-5"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:cascade:1",
+      "prompt": "What is the CSS cascade primarily for?",
+      "options": [
+        "Choosing a value when relevant declarations compete for one property",
+        "Creating new HTML elements from selectors",
+        "Compressing stylesheets before delivery",
+        "Giving every selector the same weight"
+      ],
+      "correctIndex": 0,
+      "explanation": "The cascade selects between competing relevant declarations; it does not create HTML, compress CSS, or equalize selectors.",
+      "difficulty": "recall",
+      "skill": "Define the cascade",
+      "sourceIds": [
+        "mdn-css-cascade-introduction",
+        "w3c-css-cascade-5"
+      ]
+    },
+    {
+      "id": "web-development:foundations:cascade:2",
+      "prompt": "Two equal-specificity, normal, unlayered author declarations match the same element and set `color`. What resolves the conflict?",
+      "options": [
+        "The browser discards both declarations",
+        "The first declaration in the file",
+        "The declaration that appears later in document order",
+        "Whichever selector has more words"
+      ],
+      "correctIndex": 2,
+      "explanation": "After the earlier cascade steps and a specificity tie, order of appearance makes the later declaration win.",
+      "difficulty": "application",
+      "skill": "Apply order of appearance",
+      "sourceIds": [
+        "mdn-css-cascade-introduction",
+        "w3c-css-cascade-5"
+      ]
+    },
+    {
+      "id": "web-development:foundations:cascade:3",
+      "prompt": "Within one origin, which statement about normal author declarations is correct?",
+      "options": [
+        "A normal layer always outranks unlayered CSS",
+        "A normal unlayered declaration outranks a normal declaration in a layer",
+        "The first declared layer is always strongest",
+        "Layers replace selector matching"
+      ],
+      "correctIndex": 1,
+      "explanation": "For normal declarations, unlayered author styles have higher precedence than layered author styles. Layers do not replace matching.",
+      "difficulty": "understanding",
+      "skill": "Distinguish normal layer precedence",
+      "sourceIds": [
+        "mdn-css-cascade-introduction",
+        "w3c-css-cascade-5"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:css-syntax",
+    "web-development:foundations:selectors",
+    "web-development:foundations:specificity",
+    "web-development:foundations:box-model"
+  ],
+  "sources": [
+    "mdn-css-cascade-introduction",
+    "w3c-css-cascade-5"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only sources; no source prose adapted.",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original educational explanation based on the CSS cascade specification and MDN documentation."
+  },
+  "contentHash": "7f9647e032fafd92",
+  "status": "source-verified",
+  "public": false
+}

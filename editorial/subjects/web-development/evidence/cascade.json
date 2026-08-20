@@ -1,0 +1,26 @@
+{
+  "topicId": "web-development:foundations:cascade",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {
+    "core": ["CSS cascade conflict resolution", "origin and importance", "cascade layers", "order of appearance"],
+    "supporting": ["relevance", "the separation of cascade from selector matching and specificity"],
+    "outOfScope": ["selector syntax", "specificity calculation", "@scope proximity", "individual CSS properties"]
+  },
+  "claims": [
+    {"claim":"The CSS cascade is the algorithm used to combine property values when declarations from more than one source apply to an element.","claimType":"TECHNICAL","sourceIds":["mdn-css-cascade-introduction","w3c-css-cascade-5"],"status":"supported"},
+    {"claim":"Before a declaration can compete in the cascade, it must be relevant: its condition must match and its selector must match the element.","claimType":"TECHNICAL","sourceIds":["mdn-css-cascade-introduction","w3c-css-cascade-5"],"status":"supported"},
+    {"claim":"Origin and importance are considered before specificity and order of appearance; normal author declarations outrank normal user-agent declarations, while important declarations reverse the origin precedence.","claimType":"TECHNICAL","sourceIds":["mdn-css-cascade-introduction","w3c-css-cascade-5"],"status":"supported"},
+    {"claim":"Within an origin, normal declarations in a layer have lower priority than normal declarations outside layers; important declarations reverse layer order and take precedence over important declarations outside layers.","claimType":"TECHNICAL","sourceIds":["mdn-css-cascade-introduction","w3c-css-cascade-5"],"status":"supported"},
+    {"claim":"When competing declarations remain tied after the earlier cascade steps, order of appearance is used and the last declaration in document order wins.","claimType":"TECHNICAL","sourceIds":["mdn-css-cascade-introduction","w3c-css-cascade-5"],"status":"supported"},
+    {"claim":"Specificity is a later tie-breaker, so a declaration with lower specificity can win when it has higher origin, importance, or layer precedence.","claimType":"TECHNICAL","sourceIds":["mdn-css-cascade-introduction"],"status":"supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft was generic boilerplate and did not explain CSS conflict resolution."],
+  "correctionsNeeded": ["Replaced generic prose with the cascade's ordered decision process.", "Separated selector matching and specificity from cascade origin, importance, layers, and source order."],
+  "rightsIssues": ["MDN and W3C sources were used as REFERENCE_ONLY. No source prose was reproduced."],
+  "sourceRecords": [
+    {"id":"mdn-css-cascade-introduction","title":"MDN Web Docs — Introduction to the CSS cascade","provider":"Mozilla / MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascade/Introduction","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"CC BY-SA 2.5","licenseUrl":"https://creativecommons.org/licenses/by-sa/2.5/","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Supports relevance, origin and importance precedence, layers, order of appearance, and the separation from specificity."},
+    {"id":"w3c-css-cascade-5","title":"CSS Cascading and Inheritance Level 5","provider":"W3C CSS Working Group","url":"https://www.w3.org/TR/css-cascade-5/","sourceType":"standards-body","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Primary specification for cascade sorting, importance, origin, and layer ordering."}
+  ]
+}
