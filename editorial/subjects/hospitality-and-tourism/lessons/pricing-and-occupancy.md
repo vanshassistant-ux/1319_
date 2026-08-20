@@ -58,7 +58,7 @@ Think of a movie theater with 100 seats for one showing. Occupancy is how many s
 
 ## Worked Example
 
-A 100-room hotel, one night. It sells 80 rooms and takes in $12,000 in rooms revenue. Occupancy = 80 / 100 = 80%. ADR = $12,000 / 80 = $150. RevPAR = $12,000 / 100 = $120, and the identity checks out: ADR x occupancy = $150 x 0.80 = $120. Now test the trade-off. Discount to fill more rooms: sell 95 rooms but ADR falls to $110. Revenue = 95 x $110 = $10,450, so RevPAR = $104.50 — below the $120 baseline despite higher occupancy. Push to a full house (100 rooms) at a $95 ADR and RevPAR drops again to $95. Reverse course: raise the rate to $180 and sell only 70 rooms. Revenue = 70 x $180 = $12,600, and RevPAR rises to $126. Fewer guests, more revenue per available room. Every figure here was computed and checked with arithmetic run in Bash.
+A 100-room hotel, one night. It sells 80 rooms and takes in $12,000 in rooms revenue. Occupancy = 80 / 100 = 80%. ADR = $12,000 / 80 = $150. RevPAR = $12,000 / 100 = $120, and the identity checks out: ADR x occupancy = $150 x 0.80 = $120. Now test the trade-off. Discount to fill more rooms: sell 95 rooms but ADR falls to $110. Revenue = 95 x $110 = $10,450, so RevPAR = $104.50 — below the $120 baseline despite higher occupancy. Push to a full house (100 rooms) at a $95 ADR and RevPAR drops again to $95. Reverse course: raise the rate to $180 and sell only 70 rooms. Revenue = 70 x $180 = $12,600, and RevPAR rises to $126. Fewer guests, more revenue per available room.
 
 ## Common Mistakes
 

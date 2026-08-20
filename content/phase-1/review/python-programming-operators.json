@@ -4,7 +4,7 @@
   "unitSlug": "foundations",
   "slug": "operators",
   "title": "Operators",
-  "editorialStatus": "READY_TO_PUBLISH",
+  "editorialStatus": "PUBLISHED",
   "estimatedMinutes": 10,
   "tags": [
     "python",
@@ -199,9 +199,57 @@
     }
   ],
   "quickCheck": [
-    "Which term names the values an operator acts on?",
-    "In `2 + 3 * 4`, which operation does Python perform first?",
-    "Which expression explicitly produces 64 by grouping exponentiation from the left?"
+    {
+      "id": "python-programming:foundations:operators:1",
+      "prompt": "Which term names the values an operator acts on?",
+      "options": [
+        "Operands",
+        "Precedence levels",
+        "Suites",
+        "Modules"
+      ],
+      "correctIndex": 0,
+      "explanation": "Operands are the values or expressions on which an operator operates. Precedence ranks grouping, suites are code blocks, and modules are importable units.",
+      "difficulty": "recall",
+      "skill": "Identify operator terminology",
+      "sourceIds": [
+        "python-language-reference-expressions"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:operators:2",
+      "prompt": "In `2 + 3 * 4`, which operation does Python perform first?",
+      "options": [
+        "Add 2 and 3",
+        "Multiply 3 by 4",
+        "Add 2 and 4",
+        "Multiply 2 by 3"
+      ],
+      "correctIndex": 1,
+      "explanation": "Multiplication has higher precedence than addition, so Python first evaluates `3 * 4`; it then adds 2 to that product. The other options do not follow the expression's precedence or operands.",
+      "difficulty": "understanding",
+      "skill": "Apply arithmetic precedence",
+      "sourceIds": [
+        "python-language-reference-expressions"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:operators:3",
+      "prompt": "Which expression explicitly produces 64 by grouping exponentiation from the left?",
+      "options": [
+        "`2 ** 3 ** 2`",
+        "`2 ** (3 ** 2)`",
+        "`(2 ** 3) ** 2`",
+        "`2 * 3 ** 2`"
+      ],
+      "correctIndex": 2,
+      "explanation": "Parentheses make `(2 ** 3)` evaluate first, giving 8, and then `8 ** 2` gives 64. The unparenthesized and right-parenthesized forms produce 512.",
+      "difficulty": "application",
+      "skill": "Analyze exponent associativity",
+      "sourceIds": [
+        "python-language-reference-expressions"
+      ]
+    }
   ],
   "relatedTopics": [
     "python-programming:foundations:numbers",
@@ -222,7 +270,7 @@
     "researchedAt": "2026-08-19",
     "transformation": "Original instructional synthesis of official Python expression, assignment, and tutorial documentation; all displayed computational examples were executed with python3."
   },
-  "contentHash": "ad6ceb2ccf4ef5bf",
-  "status": "source-verified",
-  "public": false
+  "contentHash": "edb48ad3377df9e3",
+  "status": "published",
+  "public": true
 }

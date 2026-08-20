@@ -4,7 +4,7 @@
   "unitSlug": "foundations",
   "slug": "while-loops",
   "title": "while Loops",
-  "editorialStatus": "READY_TO_PUBLISH",
+  "editorialStatus": "PUBLISHED",
   "estimatedMinutes": 10,
   "tags": [
     "python",
@@ -205,9 +205,58 @@
     }
   ],
   "quickCheck": [
-    "When does Python evaluate a `while` loop's condition?",
-    "What is the main defect in this code? `n = 2; while n > 0: print(n)`",
-    "A loop should append only odd values from 1 through 7. Which body preserves progress when even values are skipped?"
+    {
+      "id": "python-programming:foundations:while-loops:1",
+      "prompt": "When does Python evaluate a `while` loop's condition?",
+      "options": [
+        "Only after the first body execution",
+        "Before each possible body execution",
+        "Only when `break` appears",
+        "Exactly once when the loop is defined"
+      ],
+      "correctIndex": 1,
+      "explanation": "Python tests a while condition before each possible pass. It may therefore skip the body entirely; break is not required for testing.",
+      "difficulty": "recall",
+      "skill": "Identify while-loop control flow",
+      "sourceIds": [
+        "python-lang-ref-compound-stmts"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:while-loops:2",
+      "prompt": "What is the main defect in this code? `n = 2; while n > 0: print(n)`",
+      "options": [
+        "The condition is checked too early",
+        "`print` cannot appear in a loop",
+        "Nothing changes `n`, so the condition stays true",
+        "The loop should use an `else` clause"
+      ],
+      "correctIndex": 2,
+      "explanation": "With n initialized to 2 and never updated, n remains greater than zero, so the loop has no normal progress toward termination.",
+      "difficulty": "understanding",
+      "skill": "Diagnose missing loop progress",
+      "sourceIds": [
+        "think-python-2e-iteration"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:while-loops:3",
+      "prompt": "A loop should append only odd values from 1 through 7. Which body preserves progress when even values are skipped?",
+      "options": [
+        "`if n % 2 == 0: continue; n += 1`",
+        "`if n % 2 == 0: break; n += 1`",
+        "`if n % 2 == 0: n += 1; continue`",
+        "`if n % 2 == 0: pass; continue`"
+      ],
+      "correctIndex": 2,
+      "explanation": "The counter must increase before continue skips the remaining body. The first option loops forever at the first even n; break exits early; pass followed by continue also leaves n unchanged.",
+      "difficulty": "application",
+      "skill": "Place a progress update safely with continue",
+      "sourceIds": [
+        "python-lang-ref-compound-stmts",
+        "think-python-2e-iteration"
+      ]
+    }
   ],
   "relatedTopics": [
     "python-programming:foundations:booleans",
@@ -228,7 +277,7 @@
     "researchedAt": "2026-08-19",
     "transformation": "Original lesson explaining official while-loop semantics with independently executed examples."
   },
-  "contentHash": "eb6c637709bd3535",
-  "status": "source-verified",
-  "public": false
+  "contentHash": "73c685bbbb4b202f",
+  "status": "published",
+  "public": true
 }

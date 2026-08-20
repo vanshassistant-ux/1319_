@@ -4,7 +4,7 @@
   "unitSlug": "foundations",
   "slug": "dictionaries",
   "title": "Dictionaries",
-  "editorialStatus": "READY_TO_PUBLISH",
+  "editorialStatus": "PUBLISHED",
   "estimatedMinutes": 9,
   "tags": [
     "python",
@@ -79,7 +79,7 @@
     "analogy": "A dictionary is like labeled cubbies: each label identifies one place, and each place holds its associated information.",
     "analogyLimits": "A Python dictionary is not a physical cabinet. Its lookup rules depend on hashable keys, equal keys can refer to the same entry, and stored values may be any Python objects."
   },
-  "workedExample": "Run this Python 3 code:\n\n```python\nstock = {\"apples\": 3, \"pears\": 1}\nstock[\"pears\"] += 2\nstock[\"oranges\"] = 4\nprint(stock)\nprint(stock.get(\"bananas\", 0))\nprint(list(stock))\n```\n\nIt prints `{\"apples\": 3, \"pears\": 3, \"oranges\": 4}`, then `0`, then `[\"apples\", \"pears\", \"oranges\"]`. The pears key already existed, so its value changed from 1 to 3 without changing its position. Oranges was new, so it was added at the end of insertion order. `get` supplied a fallback for an absent key and did not insert bananas.",
+  "workedExample": "Run this Python 3 code:\n\n```python\nstock = {\"apples\": 3, \"pears\": 1}\nstock[\"pears\"] += 2\nstock[\"oranges\"] = 4\nprint(stock)\nprint(stock.get(\"bananas\", 0))\nprint(list(stock))\n```\n\nIt prints `{'apples': 3, 'pears': 3, 'oranges': 4}`, then `0`, then `['apples', 'pears', 'oranges']`. The pears key already existed, so its value changed from 1 to 3 without changing its position. Oranges was new, so it was added at the end of insertion order. `get` supplied a fallback for an absent key and did not insert bananas.",
   "commonMistakes": [
     {
       "mistake": "Using a list as a dictionary key.",
@@ -274,7 +274,7 @@
     "researchedAt": "2026-08-19",
     "transformation": "Original explanatory lesson and independently executed Python 3 trace based on official Python documentation."
   },
-  "contentHash": "ebb49d8c6bcd047e",
-  "status": "source-verified",
-  "public": false
+  "contentHash": "583973e5f31968e5",
+  "status": "published",
+  "public": true
 }

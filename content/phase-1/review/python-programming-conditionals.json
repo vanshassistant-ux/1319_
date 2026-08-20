@@ -4,7 +4,7 @@
   "unitSlug": "foundations",
   "slug": "conditionals",
   "title": "Conditionals",
-  "editorialStatus": "READY_TO_PUBLISH",
+  "editorialStatus": "PUBLISHED",
   "estimatedMinutes": 9,
   "tags": [
     "python",
@@ -196,9 +196,57 @@
     }
   ],
   "quickCheck": [
-    "What does a Python comparison such as `score >= 60` produce?",
-    "A rule says “a score of 60 or more is eligible.” Which condition matches that rule?",
-    "With `score = 59`, what does `'eligible' if score >= 60 else 'review'` evaluate to?"
+    {
+      "id": "python-programming:foundations:conditionals:1",
+      "prompt": "What does a Python comparison such as `score >= 60` produce?",
+      "options": [
+        "A Boolean value",
+        "A branch statement",
+        "A string label",
+        "An exception"
+      ],
+      "correctIndex": 0,
+      "explanation": "Python comparisons yield Boolean values. A branch or selected label may use that result, but neither is the comparison's result.",
+      "difficulty": "recall",
+      "skill": "Identifying the result of a comparison",
+      "sourceIds": [
+        "python-language-reference-expressions"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:conditionals:2",
+      "prompt": "A rule says “a score of 60 or more is eligible.” Which condition matches that rule?",
+      "options": [
+        "`score > 60`",
+        "`score >= 60`",
+        "`score == 60`",
+        "`score <= 60`"
+      ],
+      "correctIndex": 1,
+      "explanation": "“Or more” includes 60 and values above it, so `>=` matches the rule. `>` incorrectly excludes 60; `==` permits only 60; `<=` reverses the direction.",
+      "difficulty": "application",
+      "skill": "Matching a stated threshold rule to a condition",
+      "sourceIds": [
+        "python-language-reference-expressions"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:conditionals:3",
+      "prompt": "With `score = 59`, what does `'eligible' if score >= 60 else 'review'` evaluate to?",
+      "options": [
+        "`True`",
+        "`'eligible'`",
+        "`'review'`",
+        "It raises `TypeError`"
+      ],
+      "correctIndex": 2,
+      "explanation": "`59 >= 60` is false, so Python selects the expression after `else`, producing `'review'`. The expression returns a selected string, not the Boolean condition.",
+      "difficulty": "application",
+      "skill": "Tracing a two-outcome conditional expression",
+      "sourceIds": [
+        "python-language-reference-expressions"
+      ]
+    }
   ],
   "relatedTopics": [
     "python-programming:foundations:booleans",
@@ -219,7 +267,7 @@
     "researchedAt": "2026-08-19",
     "transformation": "Original explanation synthesized from official Python documentation; every displayed Python expression and worked result was executed with Python 3."
   },
-  "contentHash": "57d390f57d512afe",
-  "status": "source-verified",
-  "public": false
+  "contentHash": "e93440f82c92f7ea",
+  "status": "published",
+  "public": true
 }

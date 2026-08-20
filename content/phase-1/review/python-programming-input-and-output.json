@@ -4,7 +4,7 @@
   "unitSlug": "foundations",
   "slug": "input-and-output",
   "title": "Input and Output",
-  "editorialStatus": "READY_TO_PUBLISH",
+  "editorialStatus": "PUBLISHED",
   "estimatedMinutes": 9,
   "tags": [
     "python",
@@ -194,9 +194,58 @@
     }
   ],
   "quickCheck": [
-    "What type of value does input() return after a person enters a line?",
-    "Which statement accurately distinguishes an input() prompt from its returned value?",
-    "What is printed by print('north', 'south', sep=' -> ')?"
+    {
+      "id": "python-programming:foundations:input-and-output:1",
+      "prompt": "What type of value does input() return after a person enters a line?",
+      "options": [
+        "A string",
+        "An integer",
+        "A Boolean",
+        "A list"
+      ],
+      "correctIndex": 0,
+      "explanation": "input() returns the entered line as a string after removing its trailing newline. Digits in that text do not by themselves make it an integer; the other options are not input()'s documented return type.",
+      "difficulty": "recall",
+      "skill": "Recall input() return behavior",
+      "sourceIds": [
+        "python-docs-builtins-conversion"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:input-and-output:2",
+      "prompt": "Which statement accurately distinguishes an input() prompt from its returned value?",
+      "options": [
+        "Both are stored automatically in the same string.",
+        "The prompt is written to output, while the returned value is the entered text.",
+        "The prompt is read from standard input after the value.",
+        "The returned value always includes the prompt text."
+      ],
+      "correctIndex": 1,
+      "explanation": "Python writes a supplied prompt to standard output and then returns the user's entered line as text. It neither stores them together nor reads the prompt from input.",
+      "difficulty": "understanding",
+      "skill": "Distinguish prompt from returned input",
+      "sourceIds": [
+        "python-docs-builtins-conversion",
+        "python-docs-sys-stdio"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:input-and-output:3",
+      "prompt": "What is printed by print('north', 'south', sep=' -> ')?",
+      "options": [
+        "north south",
+        "north->south",
+        "north -> south",
+        "'north', 'south'"
+      ],
+      "correctIndex": 2,
+      "explanation": "sep is inserted exactly between positional objects, so the spaces included in ' -> ' appear on both sides of the arrow. The default space and the no-space arrow are different separators.",
+      "difficulty": "application",
+      "skill": "Predict custom-separator output",
+      "sourceIds": [
+        "python-docs-builtins-conversion"
+      ]
+    }
   ],
   "relatedTopics": [
     "python-programming:foundations:running-python-programs",
@@ -216,7 +265,7 @@
     "researchedAt": "2026-08-19",
     "transformation": "Original instructional synthesis of official Python 3 documentation, focused on a small console input-process-output interaction."
   },
-  "contentHash": "126c3bc8a2bc9bec",
-  "status": "source-verified",
-  "public": false
+  "contentHash": "a47e4f11f7ac06ab",
+  "status": "published",
+  "public": true
 }

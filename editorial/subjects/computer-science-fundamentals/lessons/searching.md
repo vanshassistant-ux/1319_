@@ -37,7 +37,7 @@ Binary search's speed rests entirely on one assumption: the data is sorted. The 
 - **Binary search** — A method for sorted collections that repeatedly compares the target to the middle of the current range and discards the half that cannot contain it.
 - **Target (search key)** — The value you are trying to locate in the collection.
 - **Sorted** — Arranged so that elements follow a consistent order (for example, ascending numeric order), the precondition binary search depends on.
-- **Midpoint (mid)** — The index halfway between the current low and high bounds, computed as (lo + hi) using integer division by 2.
+- **Midpoint (mid)** — The index halfway between the current low and high bounds, computed as (lo + hi) / 2 using integer division.
 - **Search range (interval)** — The portion of the collection still under consideration, tracked in binary search by the lo and hi bounds.
 - **Logarithmic time (O(log n))** — A growth rate in which the work increases by only a constant amount each time the input size doubles.
 

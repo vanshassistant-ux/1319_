@@ -4,7 +4,7 @@
   "unitSlug": "foundations",
   "slug": "exceptions",
   "title": "Exceptions",
-  "editorialStatus": "READY_TO_PUBLISH",
+  "editorialStatus": "PUBLISHED",
   "estimatedMinutes": 10,
   "tags": [
     "python",
@@ -209,7 +209,60 @@
       ]
     }
   ],
-  "quickCheck": [],
+  "quickCheck": [
+    {
+      "id": "python-programming:foundations:exceptions:1",
+      "prompt": "Which event is a Python exception rather than a syntax error?",
+      "options": [
+        "A missing colon in a `def` statement.",
+        "An unmatched opening parenthesis while parsing.",
+        "`int(\"blue\")` raising `ValueError` during execution.",
+        "An indentation violation detected before execution."
+      ],
+      "correctIndex": 2,
+      "explanation": "`int(\"blue\")` is syntactically valid but fails during execution, producing `ValueError`. The other choices are detected while Python parses code.",
+      "difficulty": "recall",
+      "skill": "Distinguish runtime exceptions from syntax errors",
+      "sourceIds": [
+        "python-docs-errors"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:exceptions:2",
+      "prompt": "A function expects an integer typed as text. Which handler is most appropriate directly around `int(text)`?",
+      "options": [
+        "`except KeyboardInterrupt:`",
+        "`except BaseException:`",
+        "`except TypeError:`",
+        "`except ValueError:`"
+      ],
+      "correctIndex": 3,
+      "explanation": "Invalid integer text causes `int()` to raise `ValueError`, so that is the targeted handler. The other choices are unrelated or much too broad.",
+      "difficulty": "application",
+      "skill": "Select a targeted handler",
+      "sourceIds": [
+        "python-docs-errors"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:exceptions:3",
+      "prompt": "When a try suite completes without raising an exception, what happens to an attached `else` suite?",
+      "options": [
+        "It runs before the `finally` suite.",
+        "It is skipped whenever `finally` exists.",
+        "It runs only after an exception is handled.",
+        "It runs only if the handler re-raises an error."
+      ],
+      "correctIndex": 0,
+      "explanation": "`else` is the success path and runs when the try suite completes normally; `finally`, if present, then runs as the statement completes.",
+      "difficulty": "understanding",
+      "skill": "Trace try/else control flow",
+      "sourceIds": [
+        "python-docs-errors",
+        "python-reference-try-statement"
+      ]
+    }
+  ],
   "relatedTopics": [
     "python-programming:foundations:input-and-output",
     "python-programming:foundations:functions",
@@ -229,7 +282,7 @@
     "researchedAt": "2026-08-19",
     "transformation": "Original explanatory lesson based on official Python 3 documentation; code and stated output executed with python3."
   },
-  "contentHash": "5b362a250290f4b1",
-  "status": "source-verified",
-  "public": false
+  "contentHash": "592b11d890e3b89e",
+  "status": "published",
+  "public": true
 }

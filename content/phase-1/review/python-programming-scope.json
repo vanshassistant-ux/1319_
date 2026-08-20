@@ -4,7 +4,7 @@
   "unitSlug": "foundations",
   "slug": "scope",
   "title": "Scope",
-  "editorialStatus": "READY_TO_PUBLISH",
+  "editorialStatus": "PUBLISHED",
   "estimatedMinutes": 9,
   "tags": [
     "python",
@@ -209,7 +209,61 @@
       ]
     }
   ],
-  "quickCheck": [],
+  "quickCheck": [
+    {
+      "id": "python-programming:foundations:scope:1",
+      "prompt": "Which sequence describes normal lookup for an unqualified name inside a nested function?",
+      "options": [
+        "Local, enclosing, global, built-in.",
+        "Global, local, enclosing, built-in.",
+        "Built-in, global, enclosing, local.",
+        "Enclosing, local, global, built-in."
+      ],
+      "correctIndex": 0,
+      "explanation": "Python checks local, then enclosing function scopes, then the defining module's global scope, then built-ins. The other sequences put one or more scopes in the wrong order.",
+      "difficulty": "recall",
+      "skill": "Recall the LEGB lookup order",
+      "sourceIds": [
+        "python-tutorial-scopes-namespaces",
+        "python-language-reference-execution-model"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:scope:2",
+      "prompt": "A function contains `total = total + 1` and no `global` or `nonlocal` statement. Why can its first call raise `UnboundLocalError`?",
+      "options": [
+        "`+` cannot add integers.",
+        "The assignment makes `total` local in that function, so its right side reads the unbound local.",
+        "Module globals are never visible in functions.",
+        "`total` becomes built-in."
+      ],
+      "correctIndex": 1,
+      "explanation": "A binding anywhere in the block makes `total` local by default, so the right side attempts to read it before it is bound. Integers can be added, globals can be read when not shadowed, and the name does not become built-in.",
+      "difficulty": "application",
+      "skill": "Diagnose a local-binding error",
+      "sourceIds": [
+        "python-language-reference-execution-model"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:scope:3",
+      "prompt": "In a nested function, what does `nonlocal score` require?",
+      "options": [
+        "A module-level `score`.",
+        "A built-in named `score`.",
+        "A previously bound `score` in an enclosing function scope.",
+        "A parameter named `score`."
+      ],
+      "correctIndex": 2,
+      "explanation": "`nonlocal` targets an existing enclosing-function binding. A module binding is addressed with `global`, and neither a built-in nor a parameter alone meets the requirement.",
+      "difficulty": "understanding",
+      "skill": "Distinguish nonlocal from other namespaces",
+      "sourceIds": [
+        "python-language-reference-execution-model",
+        "python-tutorial-scopes-namespaces"
+      ]
+    }
+  ],
   "relatedTopics": [
     "python-programming:foundations:variables",
     "python-programming:foundations:functions",
@@ -228,7 +282,7 @@
     "researchedAt": "2026-08-19",
     "transformation": "Original technical lesson, independently verified against official Python documentation and executed with python3."
   },
-  "contentHash": "23329b85d9459430",
-  "status": "source-verified",
-  "public": false
+  "contentHash": "7e9754d0bf8ddef9",
+  "status": "published",
+  "public": true
 }

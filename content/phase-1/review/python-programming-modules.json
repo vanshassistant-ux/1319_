@@ -4,7 +4,7 @@
   "unitSlug": "foundations",
   "slug": "modules",
   "title": "Modules",
-  "editorialStatus": "READY_TO_PUBLISH",
+  "editorialStatus": "PUBLISHED",
   "estimatedMinutes": 9,
   "tags": [
     "python",
@@ -202,7 +202,60 @@
       ]
     }
   ],
-  "quickCheck": [],
+  "quickCheck": [
+    {
+      "id": "python-programming:foundations:modules:1",
+      "prompt": "What is the ordinary module name for a file named `reports.py`?",
+      "options": [
+        "`reports.py`",
+        "`python.reports`",
+        "`reports`",
+        "`__main__`"
+      ],
+      "correctIndex": 2,
+      "explanation": "The module name is normally the filename without the `.py` suffix: `reports`. The suffix is not used in the import name, and `__main__` describes top-level execution rather than the ordinary module name.",
+      "difficulty": "recall",
+      "skill": "Identify a module name",
+      "sourceIds": [
+        "python-tutorial-modules"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:modules:2",
+      "prompt": "After `import geometry`, which expression accesses a function named `area` from that module?",
+      "options": [
+        "`import.area`",
+        "`area.geometry`",
+        "`geometry`",
+        "`geometry.area`"
+      ],
+      "correctIndex": 3,
+      "explanation": "`import geometry` binds the module name, so its attribute is accessed as `geometry.area`. The other expressions do not perform module attribute access.",
+      "difficulty": "application",
+      "skill": "Apply qualified module access",
+      "sourceIds": [
+        "python-tutorial-modules",
+        "python-import-system"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:modules:3",
+      "prompt": "Which statement best describes `from tools import clean`?",
+      "options": [
+        "It binds `clean` directly in the importing scope.",
+        "It renames the `tools.py` file.",
+        "It removes `clean` from the tools module.",
+        "It guarantees that no other name can be called `clean`."
+      ],
+      "correctIndex": 0,
+      "explanation": "This form binds the selected name directly where the import appears. It does not rename the source file, remove its attribute, or prevent other bindings with that name.",
+      "difficulty": "understanding",
+      "skill": "Distinguish import binding forms",
+      "sourceIds": [
+        "python-tutorial-modules"
+      ]
+    }
+  ],
   "relatedTopics": [
     "python-programming:foundations:variables",
     "python-programming:foundations:scope",
@@ -222,7 +275,7 @@
     "researchedAt": "2026-08-19",
     "transformation": "Original instructional explanation built from verified Python documentation and a locally executed Python 3 example."
   },
-  "contentHash": "fbedc29b0bc432a6",
-  "status": "source-verified",
-  "public": false
+  "contentHash": "fceaf3f6921d1fd3",
+  "status": "published",
+  "public": true
 }

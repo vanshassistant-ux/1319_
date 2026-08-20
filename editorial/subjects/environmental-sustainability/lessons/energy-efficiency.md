@@ -62,7 +62,7 @@ Efficiency is like a car that goes twice as far on a gallon of gas. You get wher
 
 ## Worked Example
 
-Compare one 60-watt incandescent bulb with a 9-watt LED that gives the same brightness (the U.S. DOE lists roughly 6 to 10.5 watts of LED as equivalent to a 60-watt incandescent). Run each 3 hours a day for a year: that is 3 × 365 = 1,095 hours. The incandescent draws 60 W × 1,095 h = 65.7 kWh per year; the LED draws 9 W × 1,095 h = 9.9 kWh. The efficient bulb cuts electricity use by about 85 percent. At roughly 16 cents per kWh (near the U.S. residential average in 2024), that is about $10.51 versus $1.58 a year, saving close to $8.94 per bulb annually — and the LED also lasts many times longer, so you replace it far less often. Multiply across every socket in a house and the savings compound. This is efficiency: identical light, a fraction of the energy.
+Compare one 60-watt incandescent bulb with a 9-watt LED that gives the same brightness (the U.S. DOE lists roughly 6 to 10.5 watts of LED as equivalent to a 60-watt incandescent). Run each 3 hours a day for a year: that is 3 × 365 = 1,095 hours. The incandescent draws 60 W × 1,095 h = 65.7 kWh per year; the LED draws 9 W × 1,095 h = 9.9 kWh. The efficient bulb cuts electricity use by about 85 percent. At roughly 16 cents per kWh (near the U.S. residential average in 2024), that is about $10.51 versus $1.58 a year, saving close to $8.93 per bulb annually — and the LED also lasts many times longer, so you replace it far less often. Multiply across every socket in a house and the savings compound. This is efficiency: identical light, a fraction of the energy.
 
 ## Common Mistakes
 

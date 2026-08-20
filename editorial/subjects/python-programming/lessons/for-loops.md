@@ -66,7 +66,7 @@ for position, color in enumerate(colors, start=1):
 
 Output:
 
-```python
+```text
 1 red
 2 blue
 ```

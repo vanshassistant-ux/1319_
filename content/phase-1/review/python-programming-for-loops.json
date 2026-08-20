@@ -4,7 +4,7 @@
   "unitSlug": "foundations",
   "slug": "for-loops",
   "title": "For Loops",
-  "editorialStatus": "READY_TO_PUBLISH",
+  "editorialStatus": "PUBLISHED",
   "estimatedMinutes": 9,
   "tags": [
     "python",
@@ -71,7 +71,7 @@
     "analogy": "A for loop is a cafeteria line: the server handles one tray at a time using the same procedure. `enumerate()` adds a tray number to each handoff.",
     "analogyLimits": "A real cafeteria line may change its procedure or add trays while it operates. The basic examples here assume the iterable supplies items in order and focus only on the loop's ordinary visit-one-item-at-a-time behavior."
   },
-  "workedExample": "Suppose a program needs to print a numbered packing list. `colors = ['red', 'blue']` is the iterable. The loop `for position, color in enumerate(colors, start=1):` receives the pair `(1, 'red')` first, so `print(position, color)` prints `1 red`. The next pair is `(2, 'blue')`, printing `2 blue`. The output is therefore:\n\n```python\n1 red\n2 blue\n```\n\nFor a numeric progression, `for n in range(2, 10, 3): print(n)` visits 2, 5, and 8. It does not visit 10 because range excludes its stop endpoint.",
+  "workedExample": "Suppose a program needs to print a numbered packing list. `colors = ['red', 'blue']` is the iterable. The loop `for position, color in enumerate(colors, start=1):` receives the pair `(1, 'red')` first, so `print(position, color)` prints `1 red`. The next pair is `(2, 'blue')`, printing `2 blue`. The output is therefore:\n\n```text\n1 red\n2 blue\n```\n\nFor a numeric progression, `for n in range(2, 10, 3): print(n)` visits 2, 5, and 8. It does not visit 10 because range excludes its stop endpoint.",
   "commonMistakes": [
     {
       "mistake": "Expecting `range(4)` to include 4.",
@@ -261,7 +261,7 @@
     "researchedAt": "2026-08-19",
     "transformation": "Original explanatory lesson built from verified Python language-reference, tutorial, and built-in-function semantics; all displayed examples were executed in Python 3."
   },
-  "contentHash": "e56648995c486d56",
-  "status": "source-verified",
-  "public": false
+  "contentHash": "75456e149ff7f2ad",
+  "status": "published",
+  "public": true
 }

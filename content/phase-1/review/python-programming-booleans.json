@@ -4,7 +4,7 @@
   "unitSlug": "foundations",
   "slug": "booleans",
   "title": "Booleans",
-  "editorialStatus": "READY_TO_PUBLISH",
+  "editorialStatus": "PUBLISHED",
   "estimatedMinutes": 9,
   "tags": [
     "python",
@@ -205,9 +205,58 @@
     }
   ],
   "quickCheck": [
-    "Which two instances belong to Python's `bool` type?",
-    "What is the result of `bool([0])`?",
-    "Given `items = []`, what does `items and items[0]` evaluate to?"
+    {
+      "id": "python-programming:foundations:booleans:1",
+      "prompt": "Which two instances belong to Python's `bool` type?",
+      "options": [
+        "`True` and `False`",
+        "Two lowercase names that Python does not predefine",
+        "`0` and `1`",
+        "`yes` and `no`"
+      ],
+      "correctIndex": 0,
+      "explanation": "Python's Boolean type has exactly the two constant instances `True` and `False`. Python does not predefine lowercase Boolean names, and 0/1 are integers even though Boolean values have numeric behavior.",
+      "difficulty": "recall",
+      "skill": "Identifying Python Boolean values",
+      "sourceIds": [
+        "python-docs-stdtypes"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:booleans:2",
+      "prompt": "What is the result of `bool([0])`?",
+      "options": [
+        "`False`, because the element is zero",
+        "`False`, because lists cannot be truth-tested",
+        "`True`, because the list is nonempty",
+        "It raises `TypeError` because zero cannot occur in a list"
+      ],
+      "correctIndex": 2,
+      "explanation": "A nonempty collection is truthy. `[0]` has one element, so its truth test is true; Python does not use the element's truth value to decide whether the list is empty.",
+      "difficulty": "understanding",
+      "skill": "Applying truth-value testing to a collection",
+      "sourceIds": [
+        "python-docs-stdtypes"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:booleans:3",
+      "prompt": "Given `items = []`, what does `items and items[0]` evaluate to?",
+      "options": [
+        "It raises `IndexError`",
+        "It evaluates to `[]`",
+        "It evaluates to `False`",
+        "It evaluates to `None`"
+      ],
+      "correctIndex": 1,
+      "explanation": "The empty list is falsey, so `and` returns its first operand and skips `items[0]`. It returns the list itself, not the Boolean `False`.",
+      "difficulty": "application",
+      "skill": "Tracing `and` short circuiting and operand return",
+      "sourceIds": [
+        "python-docs-stdtypes",
+        "python-language-reference-expressions"
+      ]
+    }
   ],
   "relatedTopics": [
     "python-programming:foundations:installing-python",
@@ -257,7 +306,7 @@
     "researchedAt": "2026-08-19",
     "transformation": "Original explanation based on the Python documentation's truth-value, Boolean-type, and expression semantics; examples executed with Python 3."
   },
-  "contentHash": "fb4c8ef588255185",
-  "status": "source-verified",
-  "public": false
+  "contentHash": "32b64664dab5938f",
+  "status": "published",
+  "public": true
 }

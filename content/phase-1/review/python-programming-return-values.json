@@ -4,7 +4,7 @@
   "unitSlug": "foundations",
   "slug": "return-values",
   "title": "Return Values",
-  "editorialStatus": "READY_TO_PUBLISH",
+  "editorialStatus": "PUBLISHED",
   "estimatedMinutes": 10,
   "tags": [
     "python",
@@ -206,9 +206,58 @@
     }
   ],
   "quickCheck": [
-    "What does a Python function return when it reaches the end of its body without executing a `return` statement?",
-    "What happens after this path executes `return total * rate` inside a function?",
-    "What value is assigned to `saved` by this code? `def show(x): print(x + 1)` followed by `saved = show(4)`"
+    {
+      "id": "python-programming:foundations:return-values:1",
+      "prompt": "What does a Python function return when it reaches the end of its body without executing a `return` statement?",
+      "options": [
+        "The last expression it evaluated",
+        "An empty string",
+        "None",
+        "A syntax error"
+      ],
+      "correctIndex": 2,
+      "explanation": "Reaching the end of a function without a return expression gives the caller None. Python does not automatically return the last calculated expression, and this situation is not a syntax error.",
+      "difficulty": "recall",
+      "skill": "Identify Python's default function result",
+      "sourceIds": [
+        "python-reference-assignment-statements"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:return-values:2",
+      "prompt": "What happens after this path executes `return total * rate` inside a function?",
+      "options": [
+        "The expression is evaluated, its value is sent to the caller, and the current call ends",
+        "Python prints the value and continues with the next statement in the function",
+        "The value is assigned automatically to a global name named `return`",
+        "The function restarts from its first line with the new value"
+      ],
+      "correctIndex": 0,
+      "explanation": "A return statement evaluates its expression, passes the result to the caller, and exits the current function call. It neither prints automatically nor assigns a global name or restarts the function.",
+      "difficulty": "understanding",
+      "skill": "Explain return control flow",
+      "sourceIds": [
+        "python-reference-assignment-statements"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:return-values:3",
+      "prompt": "What value is assigned to `saved` by this code? `def show(x): print(x + 1)` followed by `saved = show(4)`",
+      "options": [
+        "4",
+        "5",
+        "The text `5`",
+        "None"
+      ],
+      "correctIndex": 3,
+      "explanation": "show prints 5 as a side effect, but it has no return statement, so its call evaluates to None and saved receives None. Printing output is not the same as returning a value.",
+      "difficulty": "application",
+      "skill": "Distinguish print from return",
+      "sourceIds": [
+        "python-reference-assignment-statements",
+        "python-tutorial-controlflow"
+      ]
+    }
   ],
   "relatedTopics": [
     "python-programming:foundations:functions",
@@ -228,7 +277,7 @@
     "researchedAt": "2026-08-19",
     "transformation": "Official Python language-reference and tutorial material was independently read; examples and explanations were written from scratch and executed in python3."
   },
-  "contentHash": "dc684ad4db4c8d83",
-  "status": "source-verified",
-  "public": false
+  "contentHash": "6168b3d75a99b0ea",
+  "status": "published",
+  "public": true
 }

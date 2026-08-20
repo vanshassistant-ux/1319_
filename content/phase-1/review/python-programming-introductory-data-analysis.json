@@ -4,7 +4,7 @@
   "unitSlug": "foundations",
   "slug": "introductory-data-analysis",
   "title": "Introductory Data Analysis",
-  "editorialStatus": "READY_TO_PUBLISH",
+  "editorialStatus": "PUBLISHED",
   "estimatedMinutes": 10,
   "tags": [
     "python",
@@ -200,9 +200,57 @@
     }
   ],
   "quickCheck": [
-    "What is the best reason to print the cleaned values and their count in a small analysis?",
-    "For the cleaned values [30, 45, 90], what does `median(values)` return?",
-    "A minutes field contains `''` in one row. Which practice is most reproducible?"
+    {
+      "id": "python-programming:foundations:introductory-data-analysis:1",
+      "prompt": "What is the best reason to print the cleaned values and their count in a small analysis?",
+      "options": [
+        "It lets a reader check which values the summaries used.",
+        "It guarantees the data has no errors.",
+        "It proves the sample represents everyone.",
+        "It turns an association into causation."
+      ],
+      "correctIndex": 0,
+      "explanation": "Printing the cleaned set and count makes the transformation reviewable; it neither guarantees error-free data nor proves representativeness or cause.",
+      "difficulty": "recall",
+      "skill": "identify reproducibility information",
+      "sourceIds": [
+        "python-docs-csv-intro-data-analysis"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:introductory-data-analysis:2",
+      "prompt": "For the cleaned values [30, 45, 90], what does `median(values)` return?",
+      "options": [
+        "30",
+        "45",
+        "55",
+        "90"
+      ],
+      "correctIndex": 1,
+      "explanation": "After ordering, 45 is the middle value. 55 is the mean, while 30 and 90 are the minimum and maximum.",
+      "difficulty": "application",
+      "skill": "compute a median",
+      "sourceIds": [
+        "python-docs-statistics-intro-data-analysis"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:introductory-data-analysis:3",
+      "prompt": "A minutes field contains `''` in one row. Which practice is most reproducible?",
+      "options": [
+        "Always replace it with zero without recording it.",
+        "Delete the entire file.",
+        "State a rule—for example, exclude blanks—and report the usable count.",
+        "Convert every text field to 90."
+      ],
+      "correctIndex": 2,
+      "explanation": "A documented cleaning rule and usable count make the treatment checkable. The other choices are arbitrary or discard more than the stated problem requires.",
+      "difficulty": "application",
+      "skill": "apply a cleaning rule",
+      "sourceIds": [
+        "python-docs-csv-intro-data-analysis"
+      ]
+    }
   ],
   "relatedTopics": [
     "python-programming:foundations:lists",
@@ -223,7 +271,7 @@
     "researchedAt": "2026-08-19",
     "transformation": "Original introductory workflow and executed Python 3 example based on documented standard-library behavior and a sourced causal-inference limitation."
   },
-  "contentHash": "03d4ebcccfdfd3b0",
-  "status": "source-verified",
-  "public": false
+  "contentHash": "4c645002b8ae3302",
+  "status": "published",
+  "public": true
 }

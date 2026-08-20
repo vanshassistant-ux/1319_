@@ -102,7 +102,7 @@ People who are stuck usually already know both sides of their own argument. They
 
 Think of a tug-of-war. If you pull hard on the rope shouting that the person should change, they have to pull back to stay standing, and now they are the one arguing for staying the same. MI is the choice to drop your end of the rope and walk around to their side, so you are both looking at the same problem instead of at each other.
 
-**Where the analogy breaks down:** Dropping the rope sounds passive, and MI is not passive or neutral: it deliberately leans toward one side of the person's own ambivalence, which is what separates it from simply listening well. And a tug-of-war is one moment, while MI is a repeated pattern of behavior that gets measured across whole sessions. Some situations also need action, not a conversation.
+**Where the analogy breaks down:** Dropping the rope sounds passive, and MI is not passive or neutral: it deliberately leans toward one side of the person's own mixed feelings (wanting to change and not wanting to, both at once), which is what separates it from simply listening well. And a tug-of-war is one moment, while MI is a repeated pattern of behavior that gets measured across whole sessions. Some situations also need action, not a conversation.
 
 ## Worked Example
 

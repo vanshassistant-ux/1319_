@@ -34,7 +34,7 @@
     {
       "claim": "If a name is bound in a block it is a local variable of that block unless declared global or nonlocal; a name bound at module level is a global variable.",
       "claimType": "TECHNICAL",
-      "sourceIds": ["python-reference-execution-model"],
+      "sourceIds": ["python-language-reference-execution-model"],
       "status": "supported"
     },
     {
@@ -46,19 +46,19 @@
     {
       "claim": "A variable created inside a function is local: it only exists inside the function and cannot be referenced from outside it (referencing it outside raises NameError).",
       "claimType": "TECHNICAL",
-      "sourceIds": ["think-python-2e-functions", "python-reference-execution-model"],
+      "sourceIds": ["think-python-2e-functions", "python-language-reference-execution-model"],
       "status": "supported"
     },
     {
       "claim": "By default, if no global or nonlocal statement is in effect, an assignment to a name goes into the innermost (local) scope; a local binding of an existing outer name shadows the outer one for the rest of that block.",
       "claimType": "TECHNICAL",
-      "sourceIds": ["python-tutorial-scopes-namespaces", "python-reference-execution-model"],
+      "sourceIds": ["python-tutorial-scopes-namespaces", "python-language-reference-execution-model"],
       "status": "supported"
     },
     {
       "claim": "The global statement makes named variables refer to and rebind bindings in the module's top-level namespace; nonlocal makes them refer to and rebind bindings in the nearest enclosing function scope.",
       "claimType": "TECHNICAL",
-      "sourceIds": ["python-reference-execution-model", "python-tutorial-scopes-namespaces"],
+      "sourceIds": ["python-language-reference-execution-model", "python-tutorial-scopes-namespaces"],
       "status": "supported"
     },
     {
@@ -70,13 +70,13 @@
     {
       "claim": "If a name-binding operation occurs anywhere in a block, all uses of that name in the block are treated as references to the local binding, which is why a name assigned later in a function is local for the whole function.",
       "claimType": "TECHNICAL",
-      "sourceIds": ["python-reference-execution-model"],
+      "sourceIds": ["python-language-reference-execution-model"],
       "status": "supported"
     },
     {
       "claim": "The worked example (a local y not visible outside show(); a local x in shadow() that shadows the global x without changing it; and a global-declared rebinding in change()) produces: y triggers NameError outside the function, the global x stays 'global' after shadow(), and becomes 'changed global' after change().",
       "claimType": "TECHNICAL",
-      "sourceIds": ["python-reference-execution-model", "python-tutorial-scopes-namespaces"],
+      "sourceIds": ["python-language-reference-execution-model", "python-tutorial-scopes-namespaces"],
       "status": "supported"
     }
   ],
@@ -108,7 +108,7 @@
       "notes": "Section 9.2 defines a namespace as 'a mapping from names to objects' and a scope as 'a textual region of a Python program where a namespace is directly accessible,' lists the 3-or-4 nested scopes searched in order (innermost local, enclosing functions, module global, builtins = LEGB), states that assignments go into the innermost scope unless global/nonlocal is in effect, and summarizes what global and nonlocal do. Fetched and read directly."
     },
     {
-      "id": "python-reference-execution-model",
+      "id": "python-language-reference-execution-model",
       "title": "The Python Language Reference — Execution model (naming and binding)",
       "provider": "Python Software Foundation",
       "url": "https://docs.python.org/3/reference/executionmodel.html",

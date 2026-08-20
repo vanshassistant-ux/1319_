@@ -4,7 +4,7 @@
   "unitSlug": "foundations",
   "slug": "include-small-executable-examples-throughout",
   "title": "Small Executable Python Examples",
-  "editorialStatus": "READY_TO_PUBLISH",
+  "editorialStatus": "PUBLISHED",
   "estimatedMinutes": 9,
   "tags": [
     "python",
@@ -186,9 +186,58 @@
     }
   ],
   "quickCheck": [
-    "What happens when an enabled Python assertion has a false condition?",
-    "Why should a reader predict output before running a small example?",
-    "Given `x = 7`, `y = 3`, and `assert x + y == 10`, what occurs at that assertion?"
+    {
+      "id": "python-programming:foundations:include-small-executable-examples-throughout:1",
+      "prompt": "What happens when an enabled Python assertion has a false condition?",
+      "options": [
+        "Python silently changes the condition to True.",
+        "Python prints the condition and continues.",
+        "Python raises AssertionError.",
+        "Python converts the condition to a string."
+      ],
+      "correctIndex": 2,
+      "explanation": "A false enabled assert raises AssertionError; it does not repair, print, or stringify the condition.",
+      "difficulty": "recall",
+      "skill": "Identify assertion behavior",
+      "sourceIds": [
+        "python-reference-assignment-statements"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:include-small-executable-examples-throughout:2",
+      "prompt": "Why should a reader predict output before running a small example?",
+      "options": [
+        "It makes the program execute faster.",
+        "It reveals the reader's current interpretation, which execution can check.",
+        "It removes the need to run the code.",
+        "It guarantees every environment will behave identically."
+      ],
+      "correctIndex": 1,
+      "explanation": "Prediction exposes an interpretation; execution then compares it with observed behavior. It does not replace execution or guarantee all environments match.",
+      "difficulty": "understanding",
+      "skill": "Explain the predict-run-compare cycle",
+      "sourceIds": [
+        "python-tutorial-numbers"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:include-small-executable-examples-throughout:3",
+      "prompt": "Given `x = 7`, `y = 3`, and `assert x + y == 10`, what occurs at that assertion?",
+      "options": [
+        "It succeeds and execution continues.",
+        "It prints 10 automatically.",
+        "It raises AssertionError.",
+        "It changes y to 10."
+      ],
+      "correctIndex": 0,
+      "explanation": "7 + 3 equals 10, so the condition is true and the assertion completes silently. It neither prints nor changes a value.",
+      "difficulty": "application",
+      "skill": "Evaluate a small assertion",
+      "sourceIds": [
+        "python-tutorial-numbers",
+        "python-reference-assignment-statements"
+      ]
+    }
   ],
   "relatedTopics": [
     "python-programming:foundations:running-python-programs",
@@ -206,7 +255,7 @@
     "researchedAt": "2026-08-19",
     "transformation": "Original explanation and verified Python 3 example based on official documentation."
   },
-  "contentHash": "ade57313af33ab49",
-  "status": "source-verified",
-  "public": false
+  "contentHash": "622412716474935b",
+  "status": "published",
+  "public": true
 }

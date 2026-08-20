@@ -4,7 +4,7 @@
   "unitSlug": "foundations",
   "slug": "running-python-programs",
   "title": "Running Python Programs",
-  "editorialStatus": "READY_TO_PUBLISH",
+  "editorialStatus": "PUBLISHED",
   "estimatedMinutes": 9,
   "tags": [
     "python",
@@ -25,7 +25,7 @@
   "collegeVersion": [
     {
       "heading": "Two places Python can execute code",
-      "body": "Python's interpreter is a program that reads Python code and executes it. One way to use it is interactively: start the interpreter with no program file and, when standard input is a terminal, it presents a primary prompt. You enter one expression or statement at a time. For example, entering `2 + 3` produces `5`. That short feedback loop is useful when you want to check what a small expression does. It is not a permanent record of a program unless you separately save the code.\n\nThe other common mode is a script: a text file containing Python code, conventionally named with `.py`. Giving that file's path to the interpreter asks Python to read and execute the file. From the directory that contains `hello.py`, the command `python3 hello.py` runs it on this Mac. The important general idea is not one shell spelling: identify the Python interpreter your environment provides, then pass it the path to the script. An IDE's Run button normally performs that same broad operation for a selected file, but you should still know which file it is running and where its output appears.\n\nA script is valuable because the exact statements can be run again. If `hello.py` contains `print(\"hello from a file\")`, each successful run writes that line to standard output. The lesson is not that every program should be launched from a terminal; it is that the file, interpreter, current location, and output panel are the pieces to check when you ask, “What did I run?”"
+      "body": "Python's interpreter is a program that reads Python code and executes it. One way to use it is interactively: start the interpreter with no program file and, when standard input is a terminal, it presents a primary prompt. You enter one expression or statement at a time. For example, entering `2 + 3` produces `5`. That short feedback loop is useful when you want to check what a small expression does. It is not a permanent record of a program unless you separately save the code.\n\nThe other common mode is a script: a text file containing Python code, conventionally named with `.py`. Giving that file's path to the interpreter asks Python to read and execute the file. From the directory that contains `hello.py`, the command `python3 hello.py` runs it. The important general idea is not one shell spelling: identify the Python interpreter your environment provides, then pass it the path to the script. An IDE's Run button normally performs that same broad operation for a selected file, but you should still know which file it is running and where its output appears.\n\nA script is valuable because the exact statements can be run again. If `hello.py` contains `print(\"hello from a file\")`, each successful run writes that line to standard output. The lesson is not that every program should be launched from a terminal; it is that the file, interpreter, current location, and output panel are the pieces to check when you ask, “What did I run?”"
     },
     {
       "heading": "Top-level execution and the main guard",
@@ -273,7 +273,7 @@
     "researchedAt": "2026-08-19",
     "transformation": "Original instructional prose and locally executed Python 3 examples synthesized from official documentation."
   },
-  "contentHash": "581b1972128bc9b4",
-  "status": "source-verified",
-  "public": false
+  "contentHash": "d1c0e8ee53c2d641",
+  "status": "published",
+  "public": true
 }

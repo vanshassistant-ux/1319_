@@ -4,7 +4,7 @@
   "unitSlug": "foundations",
   "slug": "function-parameters",
   "title": "Function Parameters",
-  "editorialStatus": "READY_TO_PUBLISH",
+  "editorialStatus": "PUBLISHED",
   "estimatedMinutes": 9,
   "tags": [
     "python",
@@ -198,9 +198,59 @@
     }
   ],
   "quickCheck": [
-    "In `def show(color): ...` followed by `show(\"green\")`, which item is the parameter?",
-    "Which call is valid for `def greet(name, greeting=\"Hello\"): ...`?",
-    "A function is defined as `def record(item, *tags): ...`. What does `record(\"pen\", \"blue\", \"sale\")` bind to `tags`?"
+    {
+      "id": "python-programming:foundations:function-parameters:1",
+      "prompt": "In `def show(color): ...` followed by `show(\"green\")`, which item is the parameter?",
+      "options": [
+        "`color`",
+        "`show`",
+        "`\"green\"`",
+        "the parentheses in the call"
+      ],
+      "correctIndex": 0,
+      "explanation": "`color` is the named placeholder in the definition. `\"green\"` is the argument supplied to it, while the function name and parentheses are not parameters.",
+      "difficulty": "recall",
+      "skill": "Distinguish a parameter from an argument",
+      "sourceIds": [
+        "python-tutorial-controlflow",
+        "python-reference-expressions-calls"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:function-parameters:2",
+      "prompt": "Which call is valid for `def greet(name, greeting=\"Hello\"): ...`?",
+      "options": [
+        "`greet(name=\"Mina\", \"Hello\")`",
+        "`greet(\"Mina\", greeting=\"Welcome\")`",
+        "`greet(greeting=\"Welcome\", \"Mina\")`",
+        "`greet(\"Mina\", name=\"Lee\")`"
+      ],
+      "correctIndex": 1,
+      "explanation": "The valid call puts its positional argument before the keyword argument. A positional argument cannot follow a keyword argument, and the last option gives `name` twice.",
+      "difficulty": "understanding",
+      "skill": "Apply positional-before-keyword call order",
+      "sourceIds": [
+        "python-tutorial-controlflow"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:function-parameters:3",
+      "prompt": "A function is defined as `def record(item, *tags): ...`. What does `record(\"pen\", \"blue\", \"sale\")` bind to `tags`?",
+      "options": [
+        "`\"blue\"`",
+        "`[\"blue\", \"sale\"]`",
+        "`(\"blue\", \"sale\")`",
+        "`{\"blue\": \"sale\"}`"
+      ],
+      "correctIndex": 2,
+      "explanation": "The starred parameter collects surplus positional arguments into a tuple, so `tags` is `(\"blue\", \"sale\")`.",
+      "difficulty": "application",
+      "skill": "Predict `*args` collection",
+      "sourceIds": [
+        "python-tutorial-controlflow",
+        "python-reference-expressions-calls"
+      ]
+    }
   ],
   "relatedTopics": [
     "python-programming:foundations:functions",
@@ -218,7 +268,7 @@
     "researchedAt": "2026-08-19",
     "transformation": "Original beginner lesson synthesized from Python's tutorial and language reference, with Python 3-executed examples."
   },
-  "contentHash": "6c05641e6379e249",
-  "status": "source-verified",
-  "public": false
+  "contentHash": "03e02ec0bc75e140",
+  "status": "published",
+  "public": true
 }

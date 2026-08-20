@@ -104,7 +104,7 @@ A search engine crawls the web, indexes what it finds, and ranks that index for 
 
    **Answer: D.** Crawlers discover pages, chiefly by following links from known pages and reading submitted sitemaps, and download their content for later processing. Ranking happens later, at serving; nothing is stored on the user's device; and selling ads is not what a crawler does.
 
-3. **You want results only from a single university's website, nih.gov. Which refinement does that directly?**
+3. **You want results only from a single website, nih.gov. Which refinement does that directly?**
    - A. Put the whole query inside quotation marks
    - B. Put a minus sign in front of the site's name
    - C. Use the `site:` operator, e.g. `site:nih.gov`

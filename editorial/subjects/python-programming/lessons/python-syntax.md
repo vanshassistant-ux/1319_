@@ -90,12 +90,12 @@ Run this code:
 ```python
 label = (
     "one logical line, "
-    "three physical lines"
+    "four physical lines"
 )
 print(label)  # show the completed text
 ```
 
-It prints `one logical line, three physical lines`. The open parenthesis enables implicit continuation, so the four physical lines of the expression are one logical line. The adjacent literals form one string. The `print` begins at the left margin, making it a separate statement, while its trailing comment changes no output.
+It prints `one logical line, four physical lines`. The open parenthesis enables implicit continuation, so the four physical lines of the expression are one logical line. The adjacent literals form one string. The `print` begins at the left margin, making it a separate statement, while its trailing comment changes no output.
 
 ## Common Mistakes
 

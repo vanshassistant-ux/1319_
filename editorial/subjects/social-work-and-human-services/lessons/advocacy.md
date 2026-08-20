@@ -70,7 +70,7 @@ Two different jobs share one name. The first job is getting the right answer for
 
 Think about a store's returns desk. Getting your own return accepted by pointing at your receipt and the posted policy is case advocacy. Getting the policy rewritten because everyone who buys that item keeps being wrongly refused is cause advocacy. You only learn the policy is broken by standing at the desk enough times to see the pattern.
 
-**Where the analogy breaks down.** The comparison breaks in three places. A store can rewrite its return policy any afternoon it likes, while an agency is bound by statute and by a public rulemaking process that takes months. Nothing at a returns desk is at stake the way housing, health coverage, or custody is. And a customer has no constitutional right to a hearing, while a benefits recipient may have one: in Goldberg v. Kelly the Supreme Court held that an evidentiary hearing must come before public assistance benefits are terminated.
+**Where the analogy breaks down.** The comparison breaks in three places. A store can rewrite its return policy any afternoon it likes, while an agency must follow written laws, and changing them takes months of public steps. Nothing at a returns desk is at stake the way housing, health coverage, or custody is. And a customer is not promised a meeting first, but a person getting government help may be: in a famous case called Goldberg v. Kelly, the Supreme Court said the government must give someone a fair chance to tell their side before stopping their benefits.
 
 ## Worked Example
 

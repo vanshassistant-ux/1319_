@@ -61,7 +61,7 @@ Think of visitor spending as water poured into a bucket that has a few small hol
 
 ## Worked Example
 
-Using real 2023 figures (arithmetic run in Bash, illustrative), the National Park Service reports 325.5 million park visitors spent $26.4 billion in gateway towns, and the NPS/USGS model estimates this supported $55.6 billion in total U.S. output. Dividing gives an implied output multiplier of 55.6 / 26.4 = 2.11, so the $29.2 billion above the direct spend is indirect plus induced activity.
+Using real 2023 figures (illustrative), the National Park Service reports 325.5 million park visitors spent $26.4 billion in gateway towns, and the NPS/USGS model estimates this supported $55.6 billion in total U.S. output. Dividing gives an implied output multiplier of 55.6 / 26.4 = 2.11, so the $29.2 billion above the direct spend is indirect plus induced activity.
 
 Now an illustrative case: suppose a smaller destination lands $10 million in new visitor spending and an analyst uses a lower output multiplier of 1.6, reasonable where more supplies are imported.
 

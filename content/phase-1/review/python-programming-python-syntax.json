@@ -4,7 +4,7 @@
   "unitSlug": "foundations",
   "slug": "python-syntax",
   "title": "Python Syntax",
-  "editorialStatus": "READY_TO_PUBLISH",
+  "editorialStatus": "PUBLISHED",
   "estimatedMinutes": 9,
   "tags": [
     "python",
@@ -79,7 +79,7 @@
     "analogy": "Imagine a stage script. The words are the dialogue, indentation shows which directions belong under the same scene cue, and a comment is a pencil note for the crew that is not spoken aloud.",
     "analogyLimits": "A stage script is interpreted by people who may infer intent; Python follows its grammar mechanically. Also, indentation has formal token-level consequences in Python, whereas a printed script's indentation is usually only visual design."
   },
-  "workedExample": "Suppose you want a readable label built across lines. Write and run this exact code:\n\n```python\nlabel = (\n    \"one logical line, \"\n    \"three physical lines\"\n)\nprint(label)  # show the completed text\n```\n\nIt prints `one logical line, three physical lines`. The opening parenthesis permits implicit continuation, so the four physical lines that make the expression are treated as one logical line. The aligned string literals are adjacent and therefore form one string value. The `print` line begins at the left margin, so it is a separate statement rather than part of any indented suite. Finally, the text after `#` is a comment; it helps a reader but does not change the output.",
+  "workedExample": "Suppose you want a readable label built across lines. Write and run this exact code:\n\n```python\nlabel = (\n    \"one logical line, \"\n    \"four physical lines\"\n)\nprint(label)  # show the completed text\n```\n\nIt prints `one logical line, four physical lines`. The opening parenthesis permits implicit continuation, so the four physical lines that make the expression are treated as one logical line. The aligned string literals are adjacent and therefore form one string value. The `print` line begins at the left margin, so it is a separate statement rather than part of any indented suite. Finally, the text after `#` is a comment; it helps a reader but does not change the output.",
   "commonMistakes": [
     {
       "mistake": "Treating every space as either meaningless or structural.",
@@ -279,7 +279,7 @@
     "researchedAt": "2026-08-19",
     "transformation": "Original introductory explanation derived from live Python language-reference checks and locally executed examples."
   },
-  "contentHash": "a08339b7d8526dcb",
-  "status": "source-verified",
-  "public": false
+  "contentHash": "b1e48006fdc4b90c",
+  "status": "published",
+  "public": true
 }
