@@ -1,0 +1,28 @@
+{
+  "topicId": "web-development:foundations:browser-developer-tools",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {
+    "core": ["opening browser developer tools", "Inspector", "JavaScript console", "network request inspection", "breakpoints and debugging"],
+    "supporting": ["live DOM and CSS inspection", "console API differences between runtimes", "reading request timing and status information"],
+    "outOfScope": ["security exploitation", "intercepting or modifying third-party traffic", "browser-specific automation", "performance profiling", "server administration"]
+  },
+  "claims": [
+    {"claim":"Browser developer tools include an Inspector for exploring the DOM and editing CSS, a JavaScript debugger, and a JavaScript console.","claimType":"TECHNICAL","sourceIds":["mdn-browser-developer-tools"],"status":"supported"},
+    {"claim":"The Inspector can expose the document structure and styles currently applied to a selected element.","claimType":"TECHNICAL","sourceIds":["mdn-browser-developer-tools"],"status":"supported"},
+    {"claim":"The console object provides access to a debugging console, while details of console APIs can differ by runtime.","claimType":"TECHNICAL","sourceIds":["mdn-console-api"],"status":"supported"},
+    {"claim":"A browser network monitor records requests and provides request details and a request list for inspection.","claimType":"TECHNICAL","sourceIds":["mdn-firefox-network-monitor"],"status":"supported"},
+    {"claim":"A JavaScript debugger can pause execution and let a developer inspect values and control execution.","claimType":"TECHNICAL","sourceIds":["mdn-firefox-javascript-debugger"],"status":"supported"},
+    {"claim":"Temporary edits in developer tools are observations and experiments on the live page, not automatically edits to the project source files.","claimType":"TECHNICAL","sourceIds":["mdn-browser-developer-tools"],"status":"supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft provided no usable explanation of any developer-tool panel or workflow."],
+  "correctionsNeeded": ["Replaced generic boilerplate with a bounded, safe workflow for Inspector, Console, Network, and Debugger use."],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {"id":"mdn-browser-developer-tools","title":"What are browser developer tools?","provider":"MDN Web Docs (Mozilla)","url":"https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Tools_and_setup/What_are_browser_developer_tools","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"CC BY-SA 2.5","licenseUrl":"https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Attrib_copyright_license","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Supports the basic tool categories and Inspector use; lesson prose is original synthesis."},
+    {"id":"mdn-console-api","title":"console","provider":"MDN Web Docs (Mozilla)","url":"https://developer.mozilla.org/en-US/docs/Web/API/console","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"CC BY-SA 2.5","licenseUrl":"https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Attrib_copyright_license","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Supports the debugging-console role and the runtime-variation caution; original prose only."},
+    {"id":"mdn-firefox-network-monitor","title":"Network Monitor","provider":"MDN Firefox Source Docs","url":"https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"CC BY-SA 2.5","licenseUrl":"https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Attrib_copyright_license","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Supports the Network Monitor's request list and request-detail inspection; original prose only."},
+    {"id":"mdn-firefox-javascript-debugger","title":"The Firefox JavaScript Debugger","provider":"MDN Firefox Source Docs","url":"https://developer.mozilla.org/en-US/docs/Tools/Debugger","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"CC BY-SA 2.5","licenseUrl":"https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Attrib_copyright_license","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Supports pausing execution, controlling execution, and examining values; original prose only."}
+  ]
+}

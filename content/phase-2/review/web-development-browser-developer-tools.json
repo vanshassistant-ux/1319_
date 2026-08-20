@@ -1,0 +1,280 @@
+{
+  "id": "web-development:foundations:browser-developer-tools",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "browser-developer-tools",
+  "title": "Browser Developer Tools",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 10,
+  "tags": [
+    "web-development",
+    "browser",
+    "debugging",
+    "developer-tools"
+  ],
+  "in30Seconds": "Browser developer tools are panels built into a browser for examining the page that is currently loaded. The Inspector helps you see the live document structure and styles. The Console displays messages and can evaluate small JavaScript expressions. The Network panel shows requests made while a page loads or changes. A debugger can pause a script so you can inspect what it is doing. These tools help turn a vague symptom into an observable fact.",
+  "whyItMatters": "Developer tools make web-development questions testable. Instead of guessing why a button looks wrong, a student can select it and check its computed styles. Instead of assuming a script ran, they can read a message or pause at a breakpoint. Instead of treating a slow or failed page load as mysterious, they can inspect the requests involved. The tools are also valuable in group work because evidence such as a selector, error message, or status code gives teammates a concrete starting point.",
+  "learningObjectives": [
+    "Identify the main jobs of the Inspector, Console, Network panel, and debugger.",
+    "Explain why a live developer-tool edit is not automatically a source-code change.",
+    "Use a narrow observation workflow to diagnose a simple visual or script problem.",
+    "Interpret a breakpoint as a controlled pause in program execution.",
+    "Distinguish safe inspection of your own page from changing systems outside your authority."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "A window into the page that is running",
+      "body": "A browser renders a page from resources, builds a live document model, applies styles, and may run scripts. Developer tools expose useful views of that running environment. They are not one single tool: common panels have different questions they answer. MDN's introductory guide identifies an Inspector for exploring the DOM and editing CSS, a JavaScript debugger, and a JavaScript console. Browser layouts and labels differ, so the transferable skill is knowing the purpose of a panel rather than memorizing one browser's button arrangement. Open tools while working on a page you own, a course exercise, or another environment where you have permission to inspect it. Treat what you see as evidence about this particular browser session: the current viewport, data, browser extensions, cache state, and network conditions can all affect it.\n\nThe Inspector begins with a practical question: what element is actually on the page? Selecting an element reveals its place in the live DOM and the CSS rules that apply to it. A heading may look too small because it has a class you did not expect, because a later rule wins in the cascade, or because a parent affects the layout. The Inspector lets you observe before editing. Many tools allow temporary changes to HTML attributes or CSS declarations. Those experiments are valuable because they test a hypothesis quickly, but they change the live page in the current session. They do not automatically change an HTML, CSS, or JavaScript file in the project. When an experiment works, make the corresponding deliberate source edit in the editor, save it, and reload to confirm it survives."
+    },
+    {
+      "heading": "Console messages are clues, not a substitute for reasoning",
+      "body": "The Console is a debugging console available through the browser; MDN notes that implementations of the console API can differ between runtimes. A developer might use console.log() to display a value at a known point in their own code, or read an error that the browser reported while evaluating a script. A message is most useful when it is connected to a question: Did this function run? What value did this variable have immediately before the failure? Did a selector return an element? Logging every object repeatedly usually produces noise rather than understanding. Prefer a small number of labeled messages, then remove or reconsider temporary diagnostic logging once the cause is understood.\n\nConsole errors need careful reading. The first visible error is not always the original cause; a failed earlier operation can lead to later messages. Read the message, the file and line reference when present, and the surrounding code. Then make one narrow change and retest. It is also wise not to paste commands into a console merely because a webpage or stranger instructs you to do so. The console can run code in the context of the page, so use it for code you understand and are authorized to run. This lesson uses the Console for observation and small self-authored checks, not for bypassing controls or interacting with other people's systems."
+    },
+    {
+      "heading": "Following a page request through the Network panel",
+      "body": "A Network panel records requests and can show a request list and details. Reloading a page with that panel open produces a timeline-like record of resources the browser requested, such as an HTML document, stylesheet, script, image, or API response. A useful first pass is modest: find the request connected to the thing that failed, then inspect its status, type, and timing information as the browser presents it. For example, if a stylesheet is missing, the page may load but lack intended formatting. The Network list gives evidence about whether the browser requested that resource and what response it received.\n\nA request entry is not automatically a verdict. A successful-looking request can still accompany a logic or rendering problem, and a cached resource can change what appears in a later reload. Build a chain of evidence: identify the visible symptom, identify the expected resource or action, locate the relevant request, and compare the result with the page's source and browser output. Keep this work within an authorized development or learning environment. Inspecting your own application's requests is a normal debugging practice; attempting to modify, replay, or probe third-party services is outside the safe scope of this lesson."
+    },
+    {
+      "heading": "Debuggers turn a fast sequence into inspectable steps",
+      "body": "A script often runs too quickly to understand by watching the page. A debugger solves that problem by pausing execution at a chosen statement, commonly called a breakpoint. MDN's debugger documentation describes pausing execution, controlling execution, and looking at values. When execution is paused, the developer can inspect the current value of variables and the call stack, then continue or move through code according to the browser's controls. The central question is not “where can I stop?” but “where would a pause distinguish competing explanations?” Put a breakpoint just before a suspicious calculation or branch, reproduce the action, and inspect the values that determine the next result.\n\nConsider a click handler that should display a selected product name but leaves a status area blank. First use the Inspector to confirm the status element exists and has the expected identifier. Next, if an error appears, read it in the Console. If the handler is still unclear, place a breakpoint at its first line and click the control. At the pause, inspect the selected value and the element reference. If the reference is null, the problem is likely selection or timing; if it exists but the value is unexpected, follow the value backward. This workflow uses evidence from the appropriate panel and changes one assumption at a time. It is more reliable than repeatedly rewriting code without knowing which condition failed."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "browser developer tools",
+      "definition": "Built-in browser panels for inspecting and debugging the page currently running."
+    },
+    {
+      "term": "Inspector",
+      "definition": "A developer-tool panel for examining the live document structure and applied styles."
+    },
+    {
+      "term": "Console",
+      "definition": "A debugging interface that displays messages and can evaluate JavaScript expressions."
+    },
+    {
+      "term": "Network panel",
+      "definition": "A developer-tool view that records browser requests and shows information about them."
+    },
+    {
+      "term": "debugger",
+      "definition": "A tool that pauses program execution so its state can be examined."
+    },
+    {
+      "term": "breakpoint",
+      "definition": "A chosen location where a debugger pauses execution."
+    },
+    {
+      "term": "live DOM",
+      "definition": "The current in-memory document structure the browser is rendering."
+    },
+    {
+      "term": "call stack",
+      "definition": "The ordered record of active function calls while code is running or paused."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Developer tools are like the browser's dashboard for a page that is already running. The Inspector lets you point at a visible piece and see what it is made of. The Console is where the browser can show a note about something that went wrong. The Network panel is a delivery list: it shows what the browser asked for while loading the page. The debugger is a pause button for code, so you can look at its variables before it races onward.",
+    "analogy": "Imagine a school play with a backstage window. The Inspector shows which prop and costume belong to the actor on stage. The Console is the stage manager's message board. The Network panel is the list of deliveries that arrived. A debugger calls a rehearsal pause so the crew can see what happened at one exact moment.",
+    "analogyLimits": "A web page is not a play, and the panels do not give a complete explanation by themselves. They show observations about a particular running browser session; developers still need to test a hypothesis and make a source-code change deliberately."
+  },
+  "workedExample": "A student opens a course page and sees that the Save button has no blue background. In the Inspector, they select the button and find its class is save-button, not saveBtn. The styles panel shows the expected .saveBtn rule does not match. They temporarily add the expected class in the Inspector; the blue background appears. That proves the visual symptom is a selector/class mismatch in this session, not a network problem. The student then changes the class in the actual HTML source, saves, reloads, and confirms the button remains blue. If it had still failed, the next narrow check would be the stylesheet request in the Network panel, not random changes to unrelated rules.",
+  "commonMistakes": [
+    {
+      "mistake": "Assuming an Inspector edit saved the project.",
+      "correction": "Use it as a temporary experiment, then make and save the matching source edit."
+    },
+    {
+      "mistake": "Treating every Console message as the root cause.",
+      "correction": "Read the message and context, then test a focused hypothesis."
+    },
+    {
+      "mistake": "Using the Network panel only as a list of failures.",
+      "correction": "Connect a relevant request's status, type, and timing to a specific visible symptom."
+    },
+    {
+      "mistake": "Setting breakpoints everywhere.",
+      "correction": "Pause where the next value or branch would distinguish the likely explanations."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Inspector",
+      "b": "Network panel",
+      "distinction": "The Inspector examines the live document and styles; the Network panel examines browser requests and their details."
+    },
+    {
+      "a": "Console logging",
+      "b": "Breakpoint debugging",
+      "distinction": "Logging leaves messages as code runs; a breakpoint pauses execution so current values and control flow can be inspected."
+    },
+    {
+      "a": "Temporary tool edit",
+      "b": "Source-code edit",
+      "distinction": "A temporary edit affects the current browser session; a source edit changes the project file and can persist after reload."
+    }
+  ],
+  "keyTakeaway": "Developer tools are most effective when each panel answers a narrow question: inspect the element, read the message, examine the relevant request, or pause at the decisive line. Observe first, test one hypothesis, then make the durable fix in source code.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:browser-developer-tools:1",
+      "prompt": "Which developer-tool panel is the best starting point for finding which CSS rules currently apply to a visible button?",
+      "options": [
+        "Network panel",
+        "Console",
+        "Inspector",
+        "Debugger"
+      ],
+      "correctIndex": 2,
+      "explanation": "The Inspector exposes the selected element and applied styles. The Network panel concerns requests, the Console concerns messages/expressions, and the debugger pauses script execution.",
+      "difficulty": "recall",
+      "skill": "Match a development question to the correct tool",
+      "sourceIds": [
+        "mdn-browser-developer-tools"
+      ]
+    },
+    {
+      "id": "web-development:foundations:browser-developer-tools:2",
+      "prompt": "A student changes a paragraph's color in the Inspector and sees the new color. What should they do to make that correction persist in the project?",
+      "options": [
+        "Close and reopen the browser",
+        "Copy the Console output",
+        "Clear all network requests",
+        "Edit and save the corresponding CSS source, then reload"
+      ],
+      "correctIndex": 3,
+      "explanation": "Inspector edits are session experiments; the durable correction belongs in the source CSS. Closing a browser, copying Console output, or clearing the request list does not save the style change.",
+      "difficulty": "application",
+      "skill": "Distinguish a live experiment from a source edit",
+      "sourceIds": [
+        "mdn-browser-developer-tools"
+      ]
+    },
+    {
+      "id": "web-development:foundations:browser-developer-tools:3",
+      "prompt": "What does a breakpoint primarily provide while debugging a script?",
+      "options": [
+        "A permanent rewrite of the function",
+        "A list of all browser requests",
+        "A pause where current values and execution state can be inspected",
+        "A replacement for testing in the browser"
+      ],
+      "correctIndex": 2,
+      "explanation": "A breakpoint pauses execution for inspection. It neither rewrites code nor lists requests, and it supports rather than replaces testing.",
+      "difficulty": "understanding",
+      "skill": "Explain the purpose of a breakpoint",
+      "sourceIds": [
+        "mdn-firefox-javascript-debugger"
+      ]
+    },
+    {
+      "id": "web-development:foundations:browser-developer-tools:4",
+      "prompt": "A page loads without its intended stylesheet. Which evidence would the Network panel most directly help a developer inspect?",
+      "options": [
+        "Whether the HTML element has child nodes",
+        "The current value of a paused JavaScript variable",
+        "Whether a request for the stylesheet appears and what response details it has",
+        "Which CSS declaration wins after an Inspector edit"
+      ],
+      "correctIndex": 2,
+      "explanation": "The Network panel records requests and request details, so it directly supports checking the stylesheet request. DOM structure and winning declarations are Inspector questions; paused variables are debugger questions.",
+      "difficulty": "application",
+      "skill": "Use request inspection for a loading symptom",
+      "sourceIds": [
+        "mdn-firefox-network-monitor"
+      ]
+    },
+    {
+      "id": "web-development:foundations:browser-developer-tools:5",
+      "prompt": "Why should a developer avoid pasting an unfamiliar command into a page's Console?",
+      "options": [
+        "The Console cannot run JavaScript",
+        "Console APIs always behave identically in every runtime",
+        "The Inspector automatically saves all Console commands",
+        "A Console can evaluate code in the page context, so an unfamiliar command may do something the developer does not understand"
+      ],
+      "correctIndex": 3,
+      "explanation": "The Console can evaluate code, so only understood, authorized commands should be used. It can run JavaScript; runtime details may differ; and Inspector behavior does not make Console commands automatically saved.",
+      "difficulty": "analysis",
+      "skill": "Apply safe Console-use boundaries",
+      "sourceIds": [
+        "mdn-console-api"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:browser-developer-tools:1",
+      "prompt": "Which developer-tool panel is the best starting point for finding which CSS rules currently apply to a visible button?",
+      "options": [
+        "Network panel",
+        "Console",
+        "Inspector",
+        "Debugger"
+      ],
+      "correctIndex": 2,
+      "explanation": "The Inspector exposes the selected element and applied styles. The Network panel concerns requests, the Console concerns messages/expressions, and the debugger pauses script execution.",
+      "difficulty": "recall",
+      "skill": "Match a development question to the correct tool",
+      "sourceIds": [
+        "mdn-browser-developer-tools"
+      ]
+    },
+    {
+      "id": "web-development:foundations:browser-developer-tools:2",
+      "prompt": "A student changes a paragraph's color in the Inspector and sees the new color. What should they do to make that correction persist in the project?",
+      "options": [
+        "Close and reopen the browser",
+        "Copy the Console output",
+        "Clear all network requests",
+        "Edit and save the corresponding CSS source, then reload"
+      ],
+      "correctIndex": 3,
+      "explanation": "Inspector edits are session experiments; the durable correction belongs in the source CSS. Closing a browser, copying Console output, or clearing the request list does not save the style change.",
+      "difficulty": "application",
+      "skill": "Distinguish a live experiment from a source edit",
+      "sourceIds": [
+        "mdn-browser-developer-tools"
+      ]
+    },
+    {
+      "id": "web-development:foundations:browser-developer-tools:3",
+      "prompt": "What does a breakpoint primarily provide while debugging a script?",
+      "options": [
+        "A permanent rewrite of the function",
+        "A list of all browser requests",
+        "A pause where current values and execution state can be inspected",
+        "A replacement for testing in the browser"
+      ],
+      "correctIndex": 2,
+      "explanation": "A breakpoint pauses execution for inspection. It neither rewrites code nor lists requests, and it supports rather than replaces testing.",
+      "difficulty": "understanding",
+      "skill": "Explain the purpose of a breakpoint",
+      "sourceIds": [
+        "mdn-firefox-javascript-debugger"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:css",
+    "web-development:foundations:javascript",
+    "web-development:foundations:dom",
+    "web-development:foundations:events"
+  ],
+  "sources": [
+    "mdn-browser-developer-tools",
+    "mdn-console-api",
+    "mdn-firefox-network-monitor",
+    "mdn-firefox-javascript-debugger"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only documentation sources; no source prose adapted.",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original instructional synthesis based on directly read MDN documentation."
+  },
+  "contentHash": "a3bcdb5f63e76938",
+  "status": "source-verified",
+  "public": false
+}

@@ -1,0 +1,212 @@
+{
+  "id": "web-development:foundations:wcag-basics",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "wcag-basics",
+  "title": "WCAG Basics",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "web-development",
+    "accessibility",
+    "WCAG",
+    "standards"
+  ],
+  "in30Seconds": "The Web Content Accessibility Guidelines (WCAG) are W3C guidance for making web content more accessible to people with disabilities. WCAG 2 organizes accessibility around four principles: content should be perceivable, operable, understandable, and robust. Its testable success criteria are arranged at Levels A, AA, and AAA. WCAG is a framework for evaluating web content; it is not a promise that one automated scan, one feature, or one checklist item makes an experience accessible.",
+  "whyItMatters": "WCAG gives designers, developers, testers, and content authors a shared way to discuss accessibility requirements and tradeoffs. In a course or project, it helps turn a vague goal—\"make it accessible\"—into questions about whether people can perceive information, use controls, understand the interface, and use it with different technologies. Conformance requirements and legal obligations depend on context and jurisdiction, so this lesson treats WCAG as a technical standard rather than legal advice.",
+  "learningObjectives": [
+    "Define WCAG and its four organizing principles.",
+    "Distinguish principles, guidelines, success criteria, and conformance levels.",
+    "Explain why Level A, AA, and AAA are not simply three ratings for a whole website.",
+    "Apply POUR to identify an accessibility question in a small interface change."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "What WCAG is designed to organize",
+      "body": "WCAG is developed through the World Wide Web Consortium's accessibility work and is used internationally as a technical framework for web accessibility. The current WCAG 2 family is organized in layers. At the highest layer are four principles, commonly abbreviated POUR: Perceivable, Operable, Understandable, and Robust. A person needs information and interface components to be available to their senses or assistive technology (perceivable); controls must be usable through available methods such as a keyboard (operable); content and operation must make sense (understandable); and the content must work reliably with user agents and assistive technologies as technologies change (robust).\n\nThese principles are deliberately broad. They help a team reason about a problem, but they are not individual pass/fail tests. For example, replacing an image with useful text may address a perceivable-information question, while a visible focus indicator concerns operation. A clear error message can support understanding. Valid, semantic markup can contribute to robust interpretation by different tools. One design decision can matter to more than one principle, and one principle contains many more specific requirements. WCAG therefore should not be reduced to a collection of isolated attributes or a screen-reader-only checklist."
+    },
+    {
+      "heading": "From principles to testable requirements",
+      "body": "Below the principles, WCAG 2 presents guidelines that state goals, then success criteria that are written to be testable. A success criterion is the level at which conformance is evaluated. Techniques and failures can help people understand ways to meet or fail a criterion, but they are informative guidance rather than the conformance requirements themselves. This distinction matters during a review: a tool may suggest a particular coding technique, yet the team should still identify the relevant success criterion and inspect whether the finished experience meets it.\n\nThe success criteria have three conformance levels: A, AA, and AAA. Level A is the baseline set of requirements; AA includes A plus additional requirements; AAA includes A and AA plus further requirements. That structure does not mean that an interface with a few AAA features has \"earned AAA.\" A conformance claim needs to state the evaluated scope, the version of WCAG, and the conformance level, and it depends on meeting all applicable success criteria at that level for the complete process or page scope. WCAG also describes complete processes: if users must complete several steps to accomplish a task, accessibility must be considered across those steps rather than at a single attractive screen.\n\nWCAG 2.2 extends the WCAG 2 series and is backward compatible with earlier WCAG 2 versions, according to W3C. A project should name the version and target it actually uses rather than casually saying \"WCAG compliant.\" Contract terms, institutional policies, and laws can specify a version and level; interpreting those requirements is a legal or policy matter outside this lesson."
+    },
+    {
+      "heading": "Using POUR without turning it into a survey",
+      "body": "A productive early review uses POUR to form narrow questions about a user task. Suppose a site adds a \"Save changes\" control. Perceivable asks whether users can find out what the control is and what happened after activation. Operable asks whether it can be reached and activated with the supported input methods. Understandable asks whether its label and result are clear. Robust asks whether the control's semantics and state can be exposed consistently to user agents and assistive technology. Those questions guide design and testing; they do not substitute for checking applicable success criteria.\n\nThis approach also prevents a common mistake: treating WCAG as an implementation recipe. WCAG says what outcomes success criteria require, while a particular HTML element, ARIA pattern, test tool, or design system component is a possible means of achieving an outcome in context. Native semantic HTML is often a sound starting point, but no single markup choice proves that labels, instructions, focus behavior, errors, contrast, and task flow are all usable. Automated checks can locate some issues efficiently; human testing and careful review remain necessary for many questions about meaning, sequence, and interaction.\n\nFor a class project, record the scope of what you reviewed, the WCAG version and target level, the relevant success criteria, the evidence you observed, and the remaining uncertainty. That makes the work falsifiable and useful to the next person. It is more responsible than declaring an entire site accessible after checking one page or one tool result."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "WCAG",
+      "definition": "The Web Content Accessibility Guidelines: W3C guidance that defines testable accessibility success criteria for web content."
+    },
+    {
+      "term": "perceivable",
+      "definition": "A WCAG principle requiring information and interface components to be available in ways users can perceive."
+    },
+    {
+      "term": "operable",
+      "definition": "A WCAG principle requiring users to be able to operate interface components and navigation."
+    },
+    {
+      "term": "understandable",
+      "definition": "A WCAG principle requiring information and operation of the interface to be understandable."
+    },
+    {
+      "term": "robust",
+      "definition": "A WCAG principle concerned with content being reliably interpreted by a range of user agents and assistive technologies."
+    },
+    {
+      "term": "success criterion",
+      "definition": "A testable WCAG requirement used to evaluate conformance."
+    },
+    {
+      "term": "conformance level",
+      "definition": "The WCAG grouping—A, AA, or AAA—that identifies which success criteria are included in a conformance target."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Think of WCAG as a set of questions a team uses when building a public library's website. Can people get the information in a form they can perceive? Can they operate the buttons with the ways they use a computer? Can they understand what will happen? Can their browser or assistive tool interpret the page? POUR is a memory aid for those four kinds of questions.\n\nThe questions get more specific as you go. The four big ideas are principles. More detailed, testable requirements are success criteria. Levels A, AA, and AAA tell you which groups of those requirements a conformance target includes. A team cannot fairly say a whole process meets a level because it checked only its homepage.",
+    "analogy": "POUR is like four safety categories for a bicycle: can you see it, operate it, understand how to use it, and rely on its parts working together? Each category points you toward checks, but none is a single magic inspection sticker.",
+    "analogyLimits": "A bicycle is a physical object with a fixed set of parts; a web experience changes with content, devices, browsers, assistive technologies, and multi-step tasks. WCAG has specific written criteria, so the analogy cannot decide whether a page conforms."
+  },
+  "workedExample": "A student team adds a confirmation banner after a user saves profile changes. They do not declare the banner \"WCAG compliant\" just because it is visible. Using POUR, they ask: is the confirmation available as text rather than color alone (perceivable)? Can a keyboard user still reach the next needed control (operable)? Does the message say what was saved and what to do next, if anything (understandable)? Is the status communicated through appropriate semantics so assistive technologies can expose it (robust)? The team then identifies the applicable WCAG 2.2 success criteria, tests the real save flow, and documents the page/process scope and target level. The four questions organized the investigation; the criteria and observed behavior support any conformance conclusion.",
+  "commonMistakes": [
+    {
+      "mistake": "Calling a page accessible after one automated scan passes.",
+      "correction": "Use automated results as evidence for some checks, then inspect applicable criteria and real task behavior."
+    },
+    {
+      "mistake": "Treating POUR as four individual tests.",
+      "correction": "Use the principles to organize reasoning; evaluate conformance against applicable success criteria."
+    },
+    {
+      "mistake": "Assuming AA means only a few extra optional features beyond A.",
+      "correction": "A Level AA claim includes the applicable Level A and Level AA success criteria within the stated scope."
+    },
+    {
+      "mistake": "Saying a site is compliant without a version or scope.",
+      "correction": "State the WCAG version, target level, and the complete page or process scope evaluated."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "WCAG principle",
+      "b": "WCAG success criterion",
+      "distinction": "A principle is a broad organizing idea; a success criterion is a specific testable requirement used for conformance."
+    },
+    {
+      "a": "Technique",
+      "b": "Conformance requirement",
+      "distinction": "A technique is an informative way to address an outcome; the success criterion is the requirement being evaluated."
+    }
+  ],
+  "keyTakeaway": "WCAG uses POUR to organize accessibility and success criteria to evaluate conformance. A credible claim names its WCAG version, level, and scope and is based on the complete experience—not one feature or scan.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:wcag-basics:1",
+      "prompt": "Which set names WCAG's four organizing principles?",
+      "options": [
+        "Predictable, Open, Usable, Reusable",
+        "Perceivable, Operable, Understandable, Robust",
+        "Portable, Observable, Uniform, Responsive",
+        "Performant, Organized, Understandable, Reliable"
+      ],
+      "correctIndex": 1,
+      "explanation": "WCAG organizes its guidelines under Perceivable, Operable, Understandable, and Robust. The other sets are invented labels.",
+      "difficulty": "recall",
+      "skill": "Recall the POUR principles",
+      "sourceIds": [
+        "w3c-wcag-overview"
+      ]
+    },
+    {
+      "id": "web-development:foundations:wcag-basics:2",
+      "prompt": "At what WCAG layer is conformance evaluated?",
+      "options": [
+        "A success criterion",
+        "A broad principle",
+        "A suggested technique",
+        "A project slogan"
+      ],
+      "correctIndex": 0,
+      "explanation": "Success criteria are the testable requirements used to evaluate conformance. Principles organize the guidelines, and techniques are informative guidance.",
+      "difficulty": "understanding",
+      "skill": "Distinguish WCAG layers",
+      "sourceIds": [
+        "w3c-wcag22"
+      ]
+    },
+    {
+      "id": "web-development:foundations:wcag-basics:3",
+      "prompt": "A team says its checkout is \"AA\" because the final confirmation page was reviewed. What is the best response?",
+      "options": [
+        "That is enough because confirmation is the last page.",
+        "AA applies only to visual design, not interaction.",
+        "The team should state a WCAG version and evaluate applicable Level A and AA criteria across the complete checkout process in scope.",
+        "AAA features on the page automatically make the checkout AA."
+      ],
+      "correctIndex": 2,
+      "explanation": "A credible Level AA claim identifies its version and scope and includes applicable Level A and AA criteria; a multi-step process cannot be represented by one page alone.",
+      "difficulty": "application",
+      "skill": "Apply conformance scope to a process",
+      "sourceIds": [
+        "w3c-wcag22"
+      ]
+    },
+    {
+      "id": "web-development:foundations:wcag-basics:4",
+      "prompt": "Which question most directly reflects the Operable principle when reviewing a new menu?",
+      "options": [
+        "Does the menu use the brand's preferred color?",
+        "Is every image compressed?",
+        "Does the menu load from a CDN?",
+        "Can users reach and use its controls with available input methods, including a keyboard where relevant?"
+      ],
+      "correctIndex": 3,
+      "explanation": "Operable concerns users being able to operate interface components and navigation. Color, compression, and hosting do not directly answer that question.",
+      "difficulty": "application",
+      "skill": "Apply POUR to an interface",
+      "sourceIds": [
+        "w3c-wcag-overview"
+      ]
+    },
+    {
+      "id": "web-development:foundations:wcag-basics:5",
+      "prompt": "Why is a specific HTML or ARIA pattern not, by itself, proof of WCAG conformance?",
+      "options": [
+        "WCAG does not apply to web content.",
+        "Conformance requires evaluating applicable success criteria in context; a pattern is only one possible implementation approach.",
+        "ARIA is prohibited by WCAG.",
+        "Only automated tools can establish conformance."
+      ],
+      "correctIndex": 1,
+      "explanation": "WCAG's testable success criteria are the conformance requirements. A coding pattern may help, but it does not establish every relevant outcome in context.",
+      "difficulty": "analysis",
+      "skill": "Separate implementation from conformance",
+      "sourceIds": [
+        "w3c-wcag22"
+      ]
+    }
+  ],
+  "quickCheck": [],
+  "relatedTopics": [
+    "web-development:foundations:accessibility",
+    "web-development:foundations:semantic-html",
+    "web-development:foundations:forms-2",
+    "web-development:foundations:browser-developer-tools"
+  ],
+  "sources": [
+    "w3c-wcag-overview",
+    "w3c-wcag22"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only W3C standards sources; no source prose adapted.",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original educational explanation of WCAG structure, POUR, and conformance context."
+  },
+  "contentHash": "1c9c6c535e4bd8c0",
+  "status": "source-verified",
+  "public": false
+}

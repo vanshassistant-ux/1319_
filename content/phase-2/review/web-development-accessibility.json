@@ -1,0 +1,268 @@
+{
+  "id": "web-development:foundations:accessibility",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "accessibility",
+  "title": "Accessibility",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "web-development",
+    "foundations",
+    "accessibility",
+    "semantic-html",
+    "keyboard"
+  ],
+  "in30Seconds": "Web accessibility is the practice of designing and developing websites so people with disabilities can perceive, understand, navigate, interact with, and contribute to the web. It is not a screen-reader-only feature or a final checklist. Useful starting points are meaningful HTML, names for controls, text alternatives that match an image's purpose, and every essential action working from a keyboard.",
+  "whyItMatters": "A web page can look polished and still block someone from reading a chart, locating a button, or completing a form. Accessibility gives developers a way to treat those barriers as design and engineering problems early in a project. It also builds transferable habits: using native HTML accurately, testing the actual interaction path, and checking whether a page communicates its structure and controls beyond its visual layout.",
+  "learningObjectives": [
+    "Define web accessibility.",
+    "Explain how the accessibility tree relates to the DOM.",
+    "Apply keyboard and visible-focus checks to a simple interaction.",
+    "Distinguish informative, functional, and decorative image alternatives.",
+    "Evaluate why native HTML is a useful accessibility starting point."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Accessibility is an interaction requirement",
+      "body": "Web accessibility means designing and developing websites, tools, and technologies so people with disabilities can use them. In practical terms, people should be able to perceive information, understand it, navigate it, operate controls, and contribute where the site permits contribution. This scope includes more than a particular assistive technology. A person might use a screen reader, a keyboard, voice input, browser zoom, captions, or a combination of tools and settings. A useful engineering question is therefore not “Does this page work with my mouse?” but “Can a person obtain the information and complete the task with the input and output methods available to them?”\n\nAccessibility should be built while decisions are inexpensive: when choosing an element, naming a control, arranging a form, or defining a component's behavior. It is not a promise that one attribute makes a page accessible, nor is it a substitute for testing. Browsers, authoring tools, assistive technologies, and the site itself all participate. This lesson stays at that practical foundation rather than treating accessibility as a memorized list of conformance criteria."
+    },
+    {
+      "heading": "Structure becomes an accessibility representation",
+      "body": "A browser first turns HTML into a DOM tree. It also builds an accessibility tree from that information and exposes that representation through platform accessibility APIs for assistive technologies such as screen readers. Objects in that tree can carry a role, accessible name, description, state, and information about available actions. Consequently, the visible appearance of a control is not the whole interface. A blue rectangle with a click handler may look like a button, yet its role, name, keyboard behavior, and state can be absent or misleading in the accessibility representation.\n\nNative HTML is a strong starting point because native elements bring defined semantics and ordinary interaction behavior. A real `button` is preferable to constructing a button-shaped generic element and then trying to recreate its behavior. Likewise, a properly associated form label gives a control a clear label; semantic headings and landmarks give the page a usable structure. ARIA can supply semantics where a native element cannot express a necessary pattern, but it does not repair bad structure automatically. Choose the native element that matches the job first, then add only the information the particular interface needs."
+    },
+    {
+      "heading": "Keyboard operation and focus are observable behavior",
+      "body": "A keyboard check is a direct way to inspect an interaction path. Starting in the browser chrome, use Tab and Shift+Tab to move through interactive items. Each needed link, form control, button, and media control should be reachable; after an item receives focus, the user must be able to move away again. The sequence should make sense in the reading order, and the focused item should be visibly identifiable. A focus indicator may be an outline, border, or other clear treatment. Removing it because it changes the visual design trades away orientation for keyboard users.\n\nKeyboard access is also about outcomes, not merely landing on elements. If a menu, disclosure, dialog, or custom control exposes an action by mouse hover or click, its required action needs a keyboard-operable path too. Test the actual task: open the control, make a choice, submit, and return to the next expected place. Do not confuse keyboard testing with a complete accessibility evaluation; it is a focused, valuable check that can reveal missing focus, illogical order, mouse-only behavior, and a keyboard trap."
+    },
+    {
+      "heading": "Alternatives communicate purpose, not pixels",
+      "body": "Text alternatives for images depend on context and purpose. For an informative photograph or diagram, the alternative should convey the information the image contributes in that location. For an image used as the only visible content of a control, the alternative communicates the action or destination, not a literal inventory of its pixels. A purely decorative image, or an image whose content is already repeated as nearby text, can use an empty `alt` attribute so it is not announced as extra noise. Complex visuals such as charts need their information available elsewhere in the page; a short alt text alone cannot carry an entire data explanation.\n\nThis is why “write alt text for every image” is an incomplete rule. The author must decide what information or function a person would lose if the image disappeared. The same file can need different alternatives in different placements. In a course card, a campus photo might be decorative; on a page about a building's accessibility entrance, that same photo may be informative. The goal is equivalent access to the meaningful content or function, written in original, concise language that matches the surrounding task."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "web accessibility",
+      "definition": "Design and development that enable people with disabilities to use web content and tools."
+    },
+    {
+      "term": "accessibility tree",
+      "definition": "A browser-produced representation of accessibility-related information derived from the DOM for platform accessibility APIs."
+    },
+    {
+      "term": "accessible name",
+      "definition": "The label by which assistive technology can identify an interface object."
+    },
+    {
+      "term": "role",
+      "definition": "The kind of interface object an element represents, such as a button or navigation region."
+    },
+    {
+      "term": "keyboard focus",
+      "definition": "The current target for keyboard input on a page."
+    },
+    {
+      "term": "focus indicator",
+      "definition": "A visible treatment that shows which element currently has keyboard focus."
+    },
+    {
+      "term": "keyboard trap",
+      "definition": "A situation in which keyboard focus enters an interface component but cannot be moved out normally."
+    },
+    {
+      "term": "text alternative",
+      "definition": "Text that provides an image's relevant information or function in its context."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "A website is not only the picture on a screen. People may use keys instead of a mouse, hear the page through a screen reader, or need words in place of a picture. Accessibility means planning the site so those routes work too. A clear button, label, heading, and image description help a browser explain what is on the page and let a person operate it.",
+    "analogy": "Think of a museum with more than one way to learn: signs in clear language, an audio guide, ramps, and staff directions all point to the same exhibits. A web page needs more than its painted walls. Its HTML structure, names, keyboard route, and alternatives are the other ways visitors find and use the same information.",
+    "analogyLimits": "A web page is not a building, and accessibility is not achieved by adding a fixed set of physical features. Different content and interactions need context-specific decisions and testing with real tasks."
+  },
+  "workedExample": "A student builds a course-search card with a magnifying-glass icon, a search field, and a “Search” control. They use a native `<button>` with the text “Search” rather than a clickable `div`, and associate a visible `<label>` with the input. The magnifying-glass image is decorative because the adjacent button text already names the action, so it uses `alt=\"\"`. The student then tabs through the card: focus reaches the field and button in a sensible order, the focused item is visible, Enter activates the button, and Shift+Tab moves backward. If the icon alone were the button content, its text alternative would instead name the action, such as “Search courses.”",
+  "commonMistakes": [
+    {
+      "mistake": "Treating a mouse test as the complete interaction test.",
+      "correction": "Tab through the actual task and verify visible focus, order, activation, and the ability to move away."
+    },
+    {
+      "mistake": "Replacing native controls with generic clickable elements.",
+      "correction": "Use the native element matching the job unless a justified custom pattern is necessary."
+    },
+    {
+      "mistake": "Writing the same image alternative regardless of context.",
+      "correction": "Describe the information or function the image contributes in that placement; use empty alt for decoration."
+    },
+    {
+      "mistake": "Hiding focus to preserve a visual style.",
+      "correction": "Provide a clear visible focus treatment instead of removing the user's orientation cue."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "DOM tree",
+      "b": "accessibility tree",
+      "distinction": "The DOM represents markup and content; the accessibility tree exposes accessibility-related information derived from it to platform accessibility APIs."
+    },
+    {
+      "a": "informative image",
+      "b": "decorative image",
+      "distinction": "An informative image contributes content that needs an equivalent alternative; a decorative image does not and can use empty alt text."
+    },
+    {
+      "a": "native button",
+      "b": "button-shaped generic element",
+      "distinction": "A native button supplies defined semantics and ordinary control behavior; a generic element needs additional work and is easier to implement incorrectly."
+    }
+  ],
+  "keyTakeaway": "Accessibility is part of building the interface, not a visual afterthought. Use meaningful native structure, communicate each control and image's purpose, and test essential tasks with a keyboard and visible focus.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:accessibility:1",
+      "prompt": "Which statement best defines web accessibility?",
+      "options": [
+        "Adding a special screen-reader mode after launch.",
+        "Making every page look identical in all browsers.",
+        "Designing and developing web content so people with disabilities can use it.",
+        "Replacing HTML with assistive technology APIs."
+      ],
+      "correctIndex": 2,
+      "explanation": "Web accessibility concerns designing and developing sites, tools, and technologies so people with disabilities can use them. It is broader than a separate mode, visual sameness, or replacing HTML.",
+      "difficulty": "recall",
+      "skill": "Defining web accessibility",
+      "sourceIds": [
+        "w3c-wai-accessibility-introduction"
+      ]
+    },
+    {
+      "id": "web-development:foundations:accessibility:2",
+      "prompt": "A person tabs into a custom menu but cannot move focus to anything outside it. What problem has the test found?",
+      "options": [
+        "A keyboard trap.",
+        "A decorative image.",
+        "A DOM tree.",
+        "A text alternative."
+      ],
+      "correctIndex": 0,
+      "explanation": "A keyboard trap occurs when focus enters a component but cannot be moved away normally. The other options name unrelated concepts.",
+      "difficulty": "application",
+      "skill": "Diagnosing keyboard navigation",
+      "sourceIds": [
+        "w3c-wai-easy-checks"
+      ]
+    },
+    {
+      "id": "web-development:foundations:accessibility:3",
+      "prompt": "What does the browser use to expose accessibility-related information to platform accessibility APIs?",
+      "options": [
+        "Only the page's CSS cascade.",
+        "The accessibility tree built from the DOM.",
+        "A screenshot of the rendered page.",
+        "The server's HTTP status code."
+      ],
+      "correctIndex": 1,
+      "explanation": "Browsers build an accessibility tree based on the DOM and use platform accessibility APIs to expose it. CSS, screenshots, and HTTP status are not that representation.",
+      "difficulty": "understanding",
+      "skill": "Explaining the accessibility tree",
+      "sourceIds": [
+        "mdn-accessibility-tree"
+      ]
+    },
+    {
+      "id": "web-development:foundations:accessibility:4",
+      "prompt": "A magnifying-glass image is the only content inside a button that opens search. What should its text alternative communicate?",
+      "options": [
+        "Its pixel dimensions and file type.",
+        "That it is blue and circular.",
+        "Nothing, because all icons are decorative.",
+        "The button's action, such as searching."
+      ],
+      "correctIndex": 3,
+      "explanation": "When an image supplies a control's understandable function, its alternative communicates that action. Pixel details and color are usually irrelevant, and an icon is not decorative when it is the only control label.",
+      "difficulty": "application",
+      "skill": "Selecting a functional image alternative",
+      "sourceIds": [
+        "w3c-wai-images-alt-decision-tree"
+      ]
+    },
+    {
+      "id": "web-development:foundations:accessibility:5",
+      "prompt": "Which change is the best first choice for a control that should activate an action when selected?",
+      "options": [
+        "Use a native `button` when it fits the action.",
+        "Use a `div` because it is visually flexible.",
+        "Remove the focus indicator to reduce clutter.",
+        "Require mouse hover before the action is available."
+      ],
+      "correctIndex": 0,
+      "explanation": "A native button supplies appropriate semantics and ordinary interaction behavior for an action. Generic elements, hidden focus, and mouse-only activation introduce avoidable accessibility risk.",
+      "difficulty": "analysis",
+      "skill": "Choosing an accessible control foundation",
+      "sourceIds": [
+        "mdn-accessibility-tree",
+        "w3c-wai-easy-checks"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:accessibility:1",
+      "prompt": "Which statement best defines web accessibility?",
+      "options": [
+        "Adding a special screen-reader mode after launch.",
+        "Making every page look identical in all browsers.",
+        "Designing and developing web content so people with disabilities can use it.",
+        "Replacing HTML with assistive technology APIs."
+      ],
+      "correctIndex": 2,
+      "explanation": "Web accessibility concerns designing and developing sites, tools, and technologies so people with disabilities can use them."
+    },
+    {
+      "id": "web-development:foundations:accessibility:2",
+      "prompt": "A person tabs into a custom menu but cannot move focus to anything outside it. What problem has the test found?",
+      "options": [
+        "A keyboard trap.",
+        "A decorative image.",
+        "A DOM tree.",
+        "A text alternative."
+      ],
+      "correctIndex": 0,
+      "explanation": "A keyboard trap occurs when focus enters a component but cannot be moved away normally."
+    },
+    {
+      "id": "web-development:foundations:accessibility:3",
+      "prompt": "What does the browser use to expose accessibility-related information to platform accessibility APIs?",
+      "options": [
+        "Only the page's CSS cascade.",
+        "The accessibility tree built from the DOM.",
+        "A screenshot of the rendered page.",
+        "The server's HTTP status code."
+      ],
+      "correctIndex": 1,
+      "explanation": "Browsers build an accessibility tree based on the DOM and expose it through platform accessibility APIs."
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:semantic-html",
+    "web-development:foundations:images",
+    "web-development:foundations:forms",
+    "web-development:foundations:headings-and-paragraphs",
+    "web-development:foundations:wcag-basics"
+  ],
+  "sources": [
+    "w3c-wai-accessibility-introduction",
+    "w3c-wai-easy-checks",
+    "mdn-accessibility-tree",
+    "w3c-wai-images-alt-decision-tree"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only sources; no source prose adapted.",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original educational synthesis of W3C WAI and MDN documentation."
+  },
+  "contentHash": "6b3008aa215dfec3",
+  "status": "source-verified",
+  "public": false
+}
