@@ -1,0 +1,29 @@
+{
+  "topicId": "web-development:foundations:web-security-basics",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {
+    "core": ["defense-oriented web-security basics", "authentication and authorization", "MFA", "least privilege and deny by default", "dependency maintenance", "responsible reporting"],
+    "supporting": ["layered controls", "account-protection limits", "test-environment validation", "authorized response paths"],
+    "outOfScope": ["attack chains", "payloads", "bypass methods", "target-specific testing", "XSS mechanics or mitigation", "TLS and HTTPS mechanics", "personalized security advice"]
+  },
+  "claims": [
+    {"claim": "Authentication verifies control of one or more authenticators used to claim a digital identity.", "claimType": "TECHNICAL", "sourceIds": ["nist-sp-800-63b-digital-authentication", "owasp-authentication-cheat-sheet"], "status": "supported"},
+    {"claim": "Authorization is distinct from authentication and decides whether an entity may perform a requested action or access a resource.", "claimType": "TECHNICAL", "sourceIds": ["owasp-authorization-cheat-sheet"], "status": "supported"},
+    {"claim": "NIST describes higher assurance as requiring proof of control of two distinct authentication factors; this supports the lesson's general explanation of MFA.", "claimType": "TECHNICAL", "sourceIds": ["nist-sp-800-63b-digital-authentication"], "status": "supported"},
+    {"claim": "OWASP recommends least privilege, deny-by-default access decisions, and permission validation for requests.", "claimType": "TECHNICAL", "sourceIds": ["owasp-authorization-cheat-sheet"], "status": "supported"},
+    {"claim": "Third-party dependencies affect an application's security posture, and OWASP recommends awareness of issues and appropriate mitigation.", "claimType": "TECHNICAL", "sourceIds": ["owasp-vulnerable-dependency-management"], "status": "supported"},
+    {"claim": "When a patched dependency version is available, OWASP describes updating it in a testing environment and validating relevant application behavior before release.", "claimType": "TECHNICAL", "sourceIds": ["owasp-vulnerable-dependency-management"], "status": "supported"},
+    {"claim": "Security controls reduce risk but do not provide an absolute guarantee; the lesson treats security as layered, ongoing risk reduction rather than a promise of invulnerability.", "claimType": "INTERPRETIVE", "sourceIds": ["nist-sp-800-63b-digital-authentication", "owasp-authorization-cheat-sheet", "owasp-vulnerable-dependency-management"], "status": "supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft provided generic statements without a usable definition of authentication, authorization, least privilege, MFA, maintenance, or a responsible reporting boundary."],
+  "correctionsNeeded": ["Replaced boilerplate with an original, defense-only lesson that keeps XSS and HTTPS mechanisms out of scope and does not provide exploitation or testing instructions."],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {"id": "nist-sp-800-63b-digital-authentication", "title": "NIST Special Publication 800-63B: Authentication and Authenticator Management", "provider": "National Institute of Standards and Technology", "url": "https://pages.nist.gov/800-63-4/sp800-63b.html", "sourceType": "government", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": false, "checkedAt": "2026-08-20", "notes": "Read directly. Supports the definition of authentication, authenticator terminology, and the distinction between one and two distinct authentication factors. No source wording reproduced."},
+    {"id": "owasp-authentication-cheat-sheet", "title": "Authentication Cheat Sheet", "provider": "OWASP Cheat Sheet Series", "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": false, "checkedAt": "2026-08-20", "notes": "Read directly. Supports the authentication definition and defensive account-protection context. No source wording reproduced."},
+    {"id": "owasp-authorization-cheat-sheet", "title": "Authorization Cheat Sheet", "provider": "OWASP Cheat Sheet Series", "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": false, "checkedAt": "2026-08-20", "notes": "Read directly. Supports the authentication-versus-authorization distinction, least privilege, deny by default, and per-request permission checks. No source wording reproduced."},
+    {"id": "owasp-vulnerable-dependency-management", "title": "Vulnerable Dependency Management Cheat Sheet", "provider": "OWASP Cheat Sheet Series", "url": "https://cheatsheetseries.owasp.org/cheatsheets/Vulnerable_Dependency_Management_Cheat_Sheet.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": false, "checkedAt": "2026-08-20", "notes": "Read directly. Supports controlled handling of dependency issues and testing of a patched version before release. No source wording reproduced."}
+  ]
+}

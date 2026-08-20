@@ -1,0 +1,23 @@
+{
+  "topicId":"web-development:foundations:xss-basics",
+  "subjectId":"web-development",
+  "researchedAt":"2026-08-20",
+  "scope":{"core":["XSS as a data-versus-code boundary risk","untrusted data and trust boundaries","context-aware output handling","safe plain-text DOM rendering","sanitization and framework boundaries"],"supporting":["rich-text feature design","Trusted Types and CSP as additional controls","authorized defensive testing"],"outOfScope":["payload construction","exploit steps","evasion methods","injection testing","target enumeration","offensive security operations","HTTPS/TLS mechanics"]},
+  "claims":[
+    {"claim":"XSS prevention requires a combination of defensive techniques rather than a single technique.","claimType":"TECHNICAL","sourceIds":["owasp-xss-prevention-cheat-sheet"],"status":"supported"},
+    {"claim":"Output encoding must match the HTML, attribute, URL, CSS, or JavaScript context because browsers parse these contexts differently.","claimType":"TECHNICAL","sourceIds":["owasp-xss-prevention-cheat-sheet"],"status":"supported"},
+    {"claim":"When user-provided content should be plain text, `textContent` avoids parsing it as HTML; MDN advises against `innerHTML` for setting text because it deals with raw HTML and can be susceptible to XSS.","claimType":"TECHNICAL","sourceIds":["mdn-node-textcontent","mdn-element-innerhtml"],"status":"supported"},
+    {"claim":"When an application intentionally permits user-authored HTML, HTML sanitization is a distinct requirement, and modifying sanitized content later can undermine the protection.","claimType":"TECHNICAL","sourceIds":["owasp-xss-prevention-cheat-sheet"],"status":"supported"},
+    {"claim":"Modern framework template protections can reduce XSS bugs, but developers must understand gaps created by escape hatches and other insecure uses.","claimType":"TECHNICAL","sourceIds":["owasp-xss-prevention-cheat-sheet"],"status":"supported"},
+    {"claim":"`innerHTML` parses its input as HTML and is an injection sink when a supplied string originated from an attacker.","claimType":"TECHNICAL","sourceIds":["mdn-element-innerhtml"],"status":"supported"}
+  ],
+  "conflictingEvidence":[],
+  "unsupportedExistingClaims":["The generated draft provided only generic boilerplate and did not define XSS, a trust boundary, output contexts, or safe DOM rendering."],
+  "correctionsNeeded":["Replaced generic draft with a strictly defensive lesson focused on safe rendering choices and authorized testing; excluded payloads, exploit construction, and target interaction."],
+  "rightsIssues":[],
+  "sourceRecords":[
+    {"id":"owasp-xss-prevention-cheat-sheet","title":"Cross Site Scripting Prevention Cheat Sheet","provider":"OWASP Cheat Sheet Series","url":"https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-20","notes":"Read directly. Supports defensive XSS principles, context-aware output encoding, safe sinks, sanitization boundaries, and framework limitations; lesson prose is original synthesis."},
+    {"id":"mdn-node-textcontent","title":"Node: textContent property","provider":"MDN Web Docs (Mozilla)","url":"https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"CC BY-SA 2.5","licenseUrl":"https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Attrib_copyright_license","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Supports textContent as text content and MDN's comparison with raw-HTML handling; original prose only."},
+    {"id":"mdn-element-innerhtml","title":"Element: innerHTML property","provider":"MDN Web Docs (Mozilla)","url":"https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"CC BY-SA 2.5","licenseUrl":"https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Attrib_copyright_license","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Supports innerHTML parsing HTML, its injection-sink warning, textContent for plain user content, and Trusted Types as a mitigation; original prose only."}
+  ]
+}

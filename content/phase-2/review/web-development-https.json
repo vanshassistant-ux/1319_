@@ -1,0 +1,262 @@
+{
+  "id": "web-development:foundations:https",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "https",
+  "title": "HTTPS",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 10,
+  "tags": [
+    "web-development",
+    "https",
+    "tls",
+    "web-security"
+  ],
+  "in30Seconds": "HTTPS is HTTP carried over Transport Layer Security, or TLS. It protects the connection between a client and server against eavesdropping and undetected modification, while authentication helps the client determine which server it reached. A browser uses HTTPS for a particular connection; it is not a guarantee that a site is trustworthy, that an account is safe, or that an application has no bugs. Treat browser certificate warnings as a reason to pause rather than bypass protection.",
+  "whyItMatters": "HTTPS is a boundary web developers and users depend on whenever a browser exchanges information with a server. For developers, it changes how a site must serve pages and subresources: mixing insecure HTTP resources into an HTTPS page can undermine the security expectation and browsers can block or upgrade those requests. For users, HTTPS helps protect the connection, but it does not replace careful decisions about a site's identity, requested permissions, or application behavior. Understanding that limited promise prevents both overconfidence and unsafe warning bypasses.",
+  "learningObjectives": [
+    "Define HTTPS as HTTP over TLS.",
+    "Explain the distinct confidentiality, integrity, and server-authentication goals of TLS-protected communication.",
+    "Interpret a browser certificate warning as a signal to stop and investigate rather than a routine obstacle.",
+    "Identify mixed content and describe why a secure page should request its resources securely.",
+    "Apply a safe HTTPS observation workflow to a site or course project you are authorized to inspect."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "HTTPS adds a protected transport to HTTP",
+      "body": "HTTP supplies application-level request and response semantics: a client requests a resource or asks a service to process data, and a server responds. HTTPS does not replace those semantics. It places the HTTP exchange inside a TLS-protected connection. This division is useful when debugging. A `404` response is an HTTP result about a requested target; a certificate warning is about whether the browser can establish the expected protected connection; DNS is concerned with resolving a name. They can occur during the same visit, but they are different layers and should not be diagnosed as one issue.\n\nTLS is designed to make network eavesdropping, tampering, and message forgery far harder for the protected client-server communication. In introductory terms, confidentiality means a passive observer on the path should not be able to read the protected application data. Integrity means an on-path party should not be able to alter protected data without detection. Authentication helps the client establish the identity it is communicating with under the protocol's rules. These are related goals, but they are not interchangeable. Encryption alone would not tell a browser which server controls a name; identity checking alone would not keep page data private.\n\nThe word \"secure\" can invite an overly broad conclusion. HTTPS protects a connection between a client and a server; it does not prove that the server's content is accurate, that a merchant is honest, that a password is strong, or that the web application has no authorization or input-handling flaws. A carefully designed application still needs its own authentication, authorization, validation, update, and incident-response practices. The right mental model is a strong transport boundary with explicit limits, not a badge that settles every security question."
+    },
+    {
+      "heading": "Certificates support server identity checks",
+      "body": "Before a browser treats a connection as HTTPS, TLS negotiation includes authentication material. In the ordinary Web case, the server presents a certificate, and the browser checks it according to its trust and name-matching rules. The details include certificate chains, names, validity periods, and browser trust decisions; memorizing the implementation details is less useful at this level than understanding the outcome. The browser is trying to determine whether it can establish the expected protected connection to the requested site.\n\nA certificate warning therefore deserves attention. It can reflect an expired certificate, a name mismatch, an untrusted issuer, a network interception scenario, a local device configuration problem, or another validation failure. A user generally should not click through a warning just to continue an ordinary task, especially before entering credentials, payment information, or other sensitive data. Instead, confirm the address, retry later if an outage is plausible, use a known official route, or contact the organization through a separately verified channel. Developers should diagnose warnings in their own authorized environments by examining their deployment and certificate configuration rather than training users to ignore them.\n\nThe lock icon or `https://` prefix also has a limited meaning. It tells the browser that it established an HTTPS connection under its checks for that visit; it does not endorse every statement, download, or business practice on the page. A deceptive site can use HTTPS too. Conversely, a browser warning is a valuable sign that the connection did not meet the browser's expected validation conditions. Good security communication makes both ideas clear: HTTPS is necessary for modern web transport, but it is not a substitute for evaluating what a service is asking someone to do."
+    },
+    {
+      "heading": "A secure page should not pull insecure resources",
+      "body": "A page can begin at an HTTPS URL yet still request a script, stylesheet, image, media file, or download over HTTP. This is mixed content: a securely loaded page using a resource fetched over an insecure protocol. The insecure portion can expose or permit modification of that resource while it travels across the network. Scripts are especially significant because a script that runs in a page can change page behavior and read or alter page content. The broader lesson is simple: the page's security expectation depends on the resources it uses, not only on the address in the location bar.\n\nModern browsers mitigate mixed content in different ways. Some insecure resource requests may be automatically upgraded to HTTPS; other types are blocked. Neither behavior makes an HTTP reference a good design choice. An automatic upgrade can fail if a secure version is unavailable, while blocking can break a feature. The durable fix is to serve first-party resources over HTTPS and reference known secure versions of third-party resources when they are necessary. A browser console can help an authorized developer identify mixed-content warnings on a project they control.\n\nFor a bounded local example, imagine a page delivered at `https://course.example/` that includes a stylesheet at `http://course.example/theme.css`. The source URL is the problem: the stylesheet is requested insecurely even though the document itself is HTTPS. Changing the reference to `https://course.example/theme.css`, after confirming that the resource is served there, keeps that page dependency on the protected channel. This is an example of resource hygiene, not a certificate-bypass technique or a substitute for a full security review."
+    },
+    {
+      "heading": "Use HTTPS safely and diagnose it within scope",
+      "body": "For ordinary browsing, prefer the organization's known HTTPS address, read certificate warnings as a stop signal, and avoid entering sensitive information after a warning. Do not treat a new URL, a familiar-looking logo, or the presence of a lock icon as sufficient proof that a request is legitimate. If a message urges immediate action, independently locate the organization's site rather than following its link. Those habits complement HTTPS instead of assuming that transport protection can solve every trust decision.\n\nFor development work, start with an authorized site or local course project. Confirm that the main document and intentional subresources use HTTPS. Use the browser's visible security information and developer console to observe warnings, but do not attempt to evade browser checks or probe systems you do not control. If a certificate issue appears in a project, record the exact hostname and browser message, then investigate the deployment, certificate, or local environment through the project's approved maintenance process. This produces useful evidence without turning a normal lesson into unauthorized security testing.\n\nKeep the boundaries sharp. The HTTP Basics lesson explains requests, responses, methods, and status codes. The Domains and DNS lessons explain naming and name resolution. Web Security Basics covers broader application and operational practices, while XSS Basics focuses on defensive handling of untrusted content. HTTPS is the lesson for protected HTTP transport, certificate-warning judgment, and avoiding mixed content. Clear boundaries make each concept easier to apply accurately."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "HTTPS",
+      "definition": "HTTP communication carried over a TLS-protected connection."
+    },
+    {
+      "term": "TLS",
+      "definition": "A transport security protocol designed to protect client-server communication from eavesdropping, tampering, and message forgery."
+    },
+    {
+      "term": "confidentiality",
+      "definition": "Protection against unauthorized reading of information in transit."
+    },
+    {
+      "term": "integrity",
+      "definition": "Protection that allows unauthorized alteration of protected information to be detected."
+    },
+    {
+      "term": "certificate",
+      "definition": "Cryptographic identity material a server presents during TLS authentication for the browser to validate under its trust rules."
+    },
+    {
+      "term": "certificate warning",
+      "definition": "A browser notice that it could not validate an HTTPS connection under its expected certificate or trust conditions."
+    },
+    {
+      "term": "mixed content",
+      "definition": "A securely loaded page that asks for one or more resources through an insecure protocol such as HTTP."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "HTTPS is like putting a web conversation inside a sealed, tamper-evident tube. Your browser can send a request and receive an answer while the tube helps keep strangers on the route from reading or secretly changing that conversation. Before using the tube, the browser checks evidence about which server is at the other end. That is why a certificate warning matters: the browser could not make the expected check. HTTPS protects the trip between browser and server, but it cannot decide whether the person running the site is honest or whether every message on the page is wise.",
+    "analogy": "Imagine sending a package through a courier that seals the box and checks the recipient's official delivery marker before handing it over. The seal makes casual opening or swapping noticeable, and the marker helps the courier avoid delivering to the wrong address.",
+    "analogyLimits": "TLS uses cryptographic protocols rather than a physical box or one courier. A valid delivery marker does not judge the quality of what the recipient says or does, and HTTPS does not protect insecure resources that a page separately asks for over HTTP."
+  },
+  "workedExample": "A student is checking an authorized course project at `https://demo.example`. The page itself loads with HTTPS, but the browser console reports that `http://demo.example/app.js` was requested as mixed content. The student does not disable browser protection or tell visitors to ignore the warning. Instead, the student verifies that the project serves the script at `https://demo.example/app.js`, updates the project reference to that HTTPS URL, and reloads the page. The focused conclusion is that the page had an insecure dependency, not that TLS or the certificate system was broken. If a browser instead showed a certificate warning before the page loaded, the student would pause and use the project's approved deployment process to investigate the hostname and certificate configuration.",
+  "commonMistakes": [
+    {
+      "mistake": "Equating HTTPS with a guarantee that a site or its content is trustworthy.",
+      "correction": "HTTPS protects a connection and supports server identity checks; evaluate the site, request, and application behavior separately."
+    },
+    {
+      "mistake": "Treating a certificate warning as a harmless inconvenience.",
+      "correction": "Pause instead of bypassing the warning, particularly before sharing sensitive information; verify the address through an independent route."
+    },
+    {
+      "mistake": "Assuming an HTTPS page is fully protected even when it requests HTTP resources.",
+      "correction": "Avoid mixed content by serving and referencing intentional page resources over HTTPS."
+    },
+    {
+      "mistake": "Diagnosing a certificate warning as an HTTP status-code error or a DNS answer.",
+      "correction": "Keep layers separate: HTTP reports exchange results, DNS resolves names, and HTTPS/TLS establishes the protected connection."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "HTTP",
+      "b": "HTTPS",
+      "distinction": "HTTP defines request-response semantics; HTTPS carries HTTP over TLS to add transport protection and authentication checks."
+    },
+    {
+      "a": "A valid HTTPS connection",
+      "b": "A trustworthy application decision",
+      "distinction": "The first concerns the protected connection and browser validation; the second also requires judgment about the service, content, and requested action."
+    },
+    {
+      "a": "Secure page resource",
+      "b": "Mixed content resource",
+      "distinction": "A secure resource is requested through a secure channel; mixed content is an insecure request made by a securely loaded page."
+    }
+  ],
+  "keyTakeaway": "HTTPS is HTTP over TLS: it protects the connection against eavesdropping and undetected modification and supports server identity checks. Use it everywhere for web resources, treat certificate warnings as a reason to stop, and avoid mixed content rather than relying on browser mitigation.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:https:1",
+      "prompt": "What does HTTPS add to ordinary HTTP communication?",
+      "options": [
+        "A permanent guarantee that a website's claims are true",
+        "TLS protection for the client-server connection",
+        "DNS records that map every name to an address",
+        "A browser feature that stores all passwords"
+      ],
+      "correctIndex": 1,
+      "explanation": "HTTPS carries HTTP over TLS. DNS, password storage, and judging a site's claims are separate concerns.",
+      "difficulty": "recall",
+      "skill": "Define HTTPS's scope",
+      "sourceIds": [
+        "mdn-https-glossary",
+        "rfc-8446-tls13"
+      ]
+    },
+    {
+      "id": "web-development:foundations:https:2",
+      "prompt": "Which statement best distinguishes confidentiality from integrity in a TLS-protected connection?",
+      "options": [
+        "Confidentiality chooses the DNS provider, while integrity chooses an HTTP method.",
+        "Confidentiality proves a business is honest, while integrity blocks every browser extension.",
+        "Confidentiality protects against unauthorized reading; integrity helps detect unauthorized alteration.",
+        "Confidentiality creates certificates, while integrity automatically fixes mixed content."
+      ],
+      "correctIndex": 2,
+      "explanation": "TLS is designed to resist eavesdropping and tampering. Those goals map to keeping protected data from being read and detecting improper changes.",
+      "difficulty": "understanding",
+      "skill": "Distinguish transport-security goals",
+      "sourceIds": [
+        "rfc-8446-tls13"
+      ]
+    },
+    {
+      "id": "web-development:foundations:https:3",
+      "prompt": "A browser shows a certificate warning before a student signs in to a familiar-looking site. What is the safest next action?",
+      "options": [
+        "Enter credentials quickly before the warning becomes permanent.",
+        "Disable certificate checks for every website in the browser settings.",
+        "Assume the lock icon on a different tab validates this site too.",
+        "Pause, do not enter sensitive information, and verify the address through an independent official route."
+      ],
+      "correctIndex": 3,
+      "explanation": "A certificate warning means the browser could not establish the expected trusted HTTPS connection. Pausing and independently verifying the destination avoids normalizing a protection bypass.",
+      "difficulty": "application",
+      "skill": "Respond safely to a certificate warning",
+      "sourceIds": [
+        "rfc-8446-tls13",
+        "mdn-https-glossary"
+      ]
+    },
+    {
+      "id": "web-development:foundations:https:4",
+      "prompt": "In an authorized project, which change directly addresses a page at `https://app.example` that references `http://app.example/site.css`?",
+      "options": [
+        "Serve the stylesheet securely and change the reference to its verified HTTPS URL.",
+        "Keep the HTTP reference because the document URL already begins with HTTPS.",
+        "Tell users to ignore every browser mixed-content warning.",
+        "Replace the stylesheet with a DNS record."
+      ],
+      "correctIndex": 0,
+      "explanation": "The HTTP stylesheet is mixed content. Serving and referencing the resource over HTTPS addresses the insecure dependency; the other choices do not.",
+      "difficulty": "application",
+      "skill": "Recognize and remediate mixed content",
+      "sourceIds": [
+        "mdn-mixed-content"
+      ]
+    },
+    {
+      "id": "web-development:foundations:https:5",
+      "prompt": "Which conclusion is justified by a browser successfully establishing an HTTPS connection to a site?",
+      "options": [
+        "The site has no application-security defects.",
+        "Every statement on the page has been independently verified as true.",
+        "The browser established a TLS-protected connection under its validation checks, but the site still requires normal trust and security judgment.",
+        "All resources the page might later request must be secure."
+      ],
+      "correctIndex": 2,
+      "explanation": "A successful HTTPS connection supports protected transport and browser validation for that connection. It does not guarantee application quality, content truth, or the security of every later resource request.",
+      "difficulty": "analysis",
+      "skill": "State HTTPS's limits accurately",
+      "sourceIds": [
+        "mdn-https-glossary",
+        "mdn-mixed-content"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:https:1",
+      "prompt": "What does HTTPS add to ordinary HTTP communication?",
+      "options": [
+        "A permanent guarantee that a website's claims are true",
+        "TLS protection for the client-server connection",
+        "DNS records that map every name to an address",
+        "A browser feature that stores all passwords"
+      ],
+      "correctIndex": 1,
+      "explanation": "HTTPS carries HTTP over TLS. DNS, password storage, and judging a site's claims are separate concerns."
+    },
+    {
+      "id": "web-development:foundations:https:2",
+      "prompt": "Which statement best distinguishes confidentiality from integrity in a TLS-protected connection?",
+      "options": [
+        "Confidentiality chooses the DNS provider, while integrity chooses an HTTP method.",
+        "Confidentiality proves a business is honest, while integrity blocks every browser extension.",
+        "Confidentiality protects against unauthorized reading; integrity helps detect unauthorized alteration.",
+        "Confidentiality creates certificates, while integrity automatically fixes mixed content."
+      ],
+      "correctIndex": 2,
+      "explanation": "TLS is designed to resist eavesdropping and tampering. Those goals map to keeping protected data from being read and detecting improper changes."
+    },
+    {
+      "id": "web-development:foundations:https:3",
+      "prompt": "A browser shows a certificate warning before a student signs in to a familiar-looking site. What is the safest next action?",
+      "options": [
+        "Enter credentials quickly before the warning becomes permanent.",
+        "Disable certificate checks for every website in the browser settings.",
+        "Assume the lock icon on a different tab validates this site too.",
+        "Pause, do not enter sensitive information, and verify the address through an independent official route."
+      ],
+      "correctIndex": 3,
+      "explanation": "A certificate warning means the browser could not establish the expected trusted HTTPS connection. Pausing and independently verifying the destination avoids normalizing a protection bypass."
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:http-basics",
+    "web-development:foundations:web-security-basics",
+    "web-development:foundations:cookies-and-storage"
+  ],
+  "sources": [
+    "mdn-https-glossary",
+    "rfc-8446-tls13",
+    "mdn-mixed-content"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only standards and documentation sources; no source prose adapted.",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original instructional synthesis based on directly read IETF RFC 8446 and MDN HTTPS and mixed-content documentation."
+  },
+  "contentHash": "342c940f44a4107b",
+  "status": "source-verified",
+  "public": false
+}
