@@ -1,0 +1,162 @@
+{
+  "topicId": "computer-science-fundamentals:foundations:decomposition",
+  "subjectId": "computer-science-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Decomposition is breaking a large, complex problem into smaller, more manageable subproblems that can be understood, solved, and tested independently.",
+      "Decomposition is one of the four widely-taught pillars of computational thinking (decomposition, pattern recognition, abstraction, algorithm design).",
+      "Top-down design / stepwise refinement: begin with a statement of the whole task, then repeatedly break it into subtasks and refine each until it is simple enough to implement directly (Wirth 1971).",
+      "Modularity: a decomposition maps a problem's parts onto program units such as functions, modules, and components; each unit is responsible for one coherent subtask.",
+      "Benefits of a good decomposition: each part is easier to reason about on its own; parts can be reused; work can be divided across a team and built in parallel; parts can be tested in isolation (Parnas 1972's managerial, flexibility, and comprehensibility benefits of modular programming).",
+      "A worked example decomposing a real task ('build a simple to-do app') into a small hierarchy of subtasks: a data part (add/remove/complete/persist tasks), a display part (render list, input form, handle clicks), and a glue part (filter, wire events to data operations); each leaf is small enough to code and test alone.",
+      "Critical contrast: decomposition SPLITS a problem into smaller parts (divide-and-organize); abstraction HIDES a part's inner detail behind a simpler interface (what-not-how). They are complementary but distinct computational-thinking pillars."
+    ],
+    "supporting": [
+      "Decomposition is language-agnostic and pre-code: it is a way of organizing a problem, not a feature of any one programming language.",
+      "Functions are one concrete mechanism a decomposition maps onto (named, don't re-teach); computational-thinking is the overview that lists decomposition as one pillar (named, don't re-teach).",
+      "Parnas's specific recommended criterion for choosing module boundaries — hiding design decisions / information hiding — is an abstraction principle and is developed in the sibling abstraction topic; here Parnas is cited for the benefits of modular decomposition and for the point that HOW you split a system matters."
+    ],
+    "outOfScope": [
+      "Information hiding, interface design, and layering as techniques (owned by computer-science-fundamentals:foundations:abstraction).",
+      "The mechanics, syntax, parameters, and return values of functions (owned by computer-science-fundamentals:foundations:functions).",
+      "The overview and enumeration of all four computational-thinking pillars (owned by computer-science-fundamentals:foundations:computational-thinking).",
+      "Objects, classes, encapsulation, and inheritance (owned by computer-science-fundamentals:foundations:object-oriented-programming-basics).",
+      "Any specific programming-language syntax; decomposition is a language-agnostic design skill."
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Decomposition, in computational thinking and software design, is the practice of breaking a complex problem into smaller, more manageable subproblems that can be analyzed, solved, and tested separately.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["openstax-intro-cs-computational-thinking", "wing-2006-computational-thinking"],
+      "status": "supported"
+    },
+    {
+      "claim": "Decomposition is one of the four cornerstones of computational thinking as commonly taught in CS education, alongside pattern recognition, abstraction, and algorithm design.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["openstax-intro-cs-computational-thinking"],
+      "status": "supported"
+    },
+    {
+      "claim": "Jeannette Wing identifies 'using abstraction and decomposition when attacking a large complex task or designing a large complex system' as central to computational thinking, establishing decomposition as a core problem-formulation skill rather than a coding trick.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["wing-2006-computational-thinking"],
+      "status": "supported"
+    },
+    {
+      "claim": "Top-down program development by stepwise refinement, described by Niklaus Wirth in 1971, proceeds by stating the whole task and then decomposing it into subtasks, refining each subtask further until every part is simple enough to express directly; this is the classic top-down decomposition strategy.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["wirth-1971-stepwise-refinement"],
+      "status": "supported"
+    },
+    {
+      "claim": "Parnas (1972) argues that decomposing a system into modules yields three benefits: managerial — separate groups can develop different modules with little communication between them; flexibility — a module can be changed drastically without changing others; and comprehensibility — the system can be studied and understood one module at a time.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["parnas-1972-decomposing-systems-into-modules"],
+      "status": "supported"
+    },
+    {
+      "claim": "How a system is decomposed into modules matters, not merely that it is: Parnas shows that two different decompositions of the same task (one mirroring the sequence of processing steps, one organized so each module conceals a data-structure decision) differ sharply in how well they tolerate change.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["parnas-1972-decomposing-systems-into-modules"],
+      "status": "supported"
+    },
+    {
+      "claim": "Decomposition and abstraction are distinct: decomposition splits a problem into smaller parts (divide-and-organize), while abstraction hides a part's inner detail behind a simpler interface (what-not-how); both appear as separate pillars in the standard computational-thinking framing.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["openstax-intro-cs-computational-thinking", "wing-2006-computational-thinking"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether decomposition is inherently 'top-down.'",
+      "positions": [
+        "Wirth's stepwise refinement presents decomposition as a top-down process: start from the whole task and refine downward into subtasks.",
+        "In practice, developers also compose systems bottom-up from small reusable parts, and Parnas's module-oriented decomposition is driven by which design decisions to isolate rather than by a strict top-down walk of the flowchart."
+      ],
+      "resolution": "The lesson teaches top-down stepwise refinement as the canonical worked technique while noting that decomposition is really about producing independent, coherent parts, and that in practice designers move both top-down and bottom-up. It does not claim top-down is the only valid direction."
+    },
+    {
+      "issue": "Parnas's recommended criterion (information hiding) overlaps with abstraction.",
+      "positions": [
+        "Parnas's headline recommendation — decompose so each module hides a design decision — is an information-hiding (abstraction) principle.",
+        "This decomposition topic is scoped to SPLITTING a problem into parts and its benefits, not to how to design interfaces or hide detail."
+      ],
+      "resolution": "Parnas is cited only for the three benefits of modular decomposition and for the point that the choice of module boundaries matters. Information hiding, interfaces, and layering are explicitly deferred to the sibling abstraction topic, keeping the two lessons from overlapping."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft was generic boilerplate ('Decomposition is a foundational concept in Computer Science Fundamentals... a simple way to apply it') with placeholder vocabulary ('context', 'evidence', 'application') and a circular self-referential definition of the term. All of it was discarded."
+  ],
+  "correctionsNeeded": [
+    "Replaced placeholder text with a sourced definition of decomposition, its place among the computational-thinking pillars, top-down stepwise refinement (Wirth 1971), the mapping to modules/functions/components, the benefits of modular decomposition (Parnas 1972), and an explicit decomposition-vs-abstraction contrast.",
+    "Removed the circular vocabulary entry that defined 'Decomposition' as 'A foundational Computer Science Fundamentals concept covered in this lesson' and replaced it with a non-circular definition and related, independently-defined terms.",
+    "Scoped out information hiding, interface design, and function mechanics, deferring them to the abstraction and functions sibling topics."
+  ],
+  "rightsIssues": [
+    "Wing's 2006 CACM Viewpoint is copyrighted by the ACM and is treated as REFERENCE_ONLY; only a brief attributed quotation of a few words is used, and all prose is original.",
+    "Parnas's 1972 CACM paper and Wirth's 1971 CACM paper are copyrighted by the ACM and are treated as REFERENCE_ONLY; their facts and arguments are synthesized in original prose with attribution, and no substantial passage is reproduced.",
+    "OpenStax 'Introduction to Computer Science' is CC BY-NC-SA 4.0 (attribution required); facts were synthesized in original prose, so no license conflict arises, and it is attributed in the sources."
+  ],
+  "sourceRecords": [
+    {
+      "id": "wing-2006-computational-thinking",
+      "title": "Computational Thinking (Viewpoint)",
+      "provider": "Jeannette M. Wing, Communications of the ACM, Vol. 49, No. 3",
+      "url": "https://dl.acm.org/doi/10.1145/1118178.1118215",
+      "sourceType": "peer-reviewed",
+      "usage": "REFERENCE_ONLY",
+      "license": "Copyright ACM",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused id from the source registry (same URL). The originating article that popularized 'computational thinking.' Supports that decomposition (paired with abstraction) is central to CT: Wing writes that computational thinking is 'using abstraction and decomposition when attacking a large complex task or designing a large complex system.' Verified against the author/CMU-hosted PDF (https://www.cs.cmu.edu/~15110-s13/Wing06-ct.pdf) previously in this project. REFERENCE_ONLY (ACM copyright); only a brief attributed quotation used."
+    },
+    {
+      "id": "openstax-intro-cs-computational-thinking",
+      "title": "Introduction to Computer Science, Section 2.1: Computational Thinking",
+      "provider": "OpenStax (Rice University)",
+      "url": "https://openstax.org/books/introduction-computer-science/pages/2-1-computational-thinking",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused id from the source registry (same URL). OpenStax OER. Defines the four pillars of computational thinking and characterizes decomposition as breaking a complex problem into smaller, manageable parts, distinct from abstraction (focusing on essential information while ignoring irrelevant detail). Used to ground the definition of decomposition and its place among the CT pillars, and the decomposition-vs-abstraction distinction. CC BY-NC-SA 4.0; facts synthesized in original prose."
+    },
+    {
+      "id": "parnas-1972-decomposing-systems-into-modules",
+      "title": "On the Criteria To Be Used in Decomposing Systems into Modules",
+      "provider": "D. L. Parnas, Communications of the ACM, Vol. 15, No. 12",
+      "url": "https://dl.acm.org/doi/10.1145/361598.361623",
+      "sourceType": "peer-reviewed",
+      "usage": "REFERENCE_ONLY",
+      "license": "Copyright ACM",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Foundational software-engineering paper (CACM Vol. 15, No. 12, December 1972, pp. 1053-1058; DOI 10.1145/361598.361623). Bibliographic details confirmed via web search (SciRP, ACM DL, Semantic Scholar). Content verified from a text-readable retyped copy (cse.msu.edu/~cse870/Public/Lectures/SS2007/ParnasPapers/decomposition-macklem.pdf, read 2026-08-19): Parnas lists three expected benefits of modular decomposition — managerial (separate groups develop modules with little inter-group communication), product flexibility (a module can be changed drastically without changing others), and comprehensibility (the system can be studied one module at a time) — and compares two decompositions of a KWIC-index program (one by processing steps, one where each module hides a design decision) to show the choice of module boundaries determines how well the system tolerates change. Cited here only for the benefits of modular decomposition and the point that how you split a system matters; the information-hiding criterion itself is deferred to the abstraction topic. REFERENCE_ONLY (ACM copyright); argument synthesized in original prose."
+    },
+    {
+      "id": "wirth-1971-stepwise-refinement",
+      "title": "Program Development by Stepwise Refinement",
+      "provider": "Niklaus Wirth, Communications of the ACM, Vol. 14, No. 4",
+      "url": "https://dl.acm.org/doi/10.1145/362575.362577",
+      "sourceType": "peer-reviewed",
+      "usage": "REFERENCE_ONLY",
+      "license": "Copyright ACM",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Classic paper (CACM Vol. 14, No. 4, April 1971, pp. 221-227; DOI 10.1145/362575.362577). Bibliographic details confirmed via web search (ACM DL, Semantic Scholar, MIT-hosted copy). Describes top-down program development: state the whole task, decompose it into subtasks, and refine each subtask progressively until it is simple enough to express directly (illustrated with the eight-queens problem). Cited here to ground top-down design / stepwise refinement as the canonical decomposition technique. REFERENCE_ONLY (ACM copyright); facts synthesized in original prose."
+    }
+  ]
+}

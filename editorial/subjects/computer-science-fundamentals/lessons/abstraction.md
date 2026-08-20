@@ -1,0 +1,148 @@
+# Abstraction
+
+## In 30 Seconds
+
+Abstraction is how computing manages complexity: you expose only the essential features of something through a simple interface and hide the messy implementation details behind it. You drive a car with a wheel and pedals without touching the engine, and you call a function by its name and inputs without reading its code. Every layer of a computer, from hardware to operating system to application, works this way, letting you use a thing by knowing what it does instead of how it does it.
+
+## Why This Matters
+
+Abstraction is the single idea that makes large software possible. No one can hold a whole system in their head at once, so we hide each part behind an interface and reason about one layer at a time. It lets teams work in parallel, lets a library's internals be rewritten without breaking the programs that call it, and lets you learn to use a database or a network without first understanding its internals. In coursework it underlies data structures, object-oriented programming, APIs, and computer architecture. Naming what is essential and hiding the rest is also a general problem-solving skill: it is one of the pillars of computational thinking, useful well beyond writing code.
+
+## Learning Objectives
+
+- Define abstraction as exposing essential features through an interface while hiding implementation details.
+- Explain information hiding and distinguish an interface (what a component does) from its implementation (how it does it).
+- Describe levels of abstraction from hardware to operating system to application, and explain how abstraction barriers isolate them.
+- Apply the idea of an abstract data type to separate the operations a structure offers from how they are implemented.
+- Distinguish abstraction from decomposition.
+
+## The College Version
+
+### The core idea: essential features behind an interface
+
+Abstraction is the practice of managing complexity by exposing only the essential features of something while hiding everything else behind a simpler interface. An interface is the set of ways you are allowed to interact with a thing; the implementation is the hidden machinery that actually carries those interactions out. When you use an abstraction, you rely on what it does, not on how it does it. A car is a clean example. The driver's interface is a small set of controls: a steering wheel, an accelerator, a brake, a gear selector. Behind that interface sits an engine, a transmission, fuel injection, and control software, none of which the driver needs to understand. You can drive an unfamiliar car immediately because the interface is stable even when the implementation differs. Abstraction does not make the hidden complexity disappear; it relocates it behind a boundary so that the person on the outside can ignore it. The value is cognitive: a human can only track a handful of things at once, so we package complexity into named units and reason about the units instead of their contents.
+
+### Information hiding: what versus how
+
+The design principle behind abstraction is information hiding, introduced by David Parnas in a 1972 paper on how to break systems into modules. The idea is to draw the boundary of each component around the decisions most likely to change, exposing a stable interface and hiding those decisions inside. A component has two properties worth separating: what it does, given by its specification or interface, and how it does it, given by its implementation. A function makes this concrete. Its signature — a name, the inputs it takes, and what it returns — is its interface. You can call a square-root function by writing the equivalent of `sqrt(2)` and trust the returned value without knowing whether it uses Newton's method, a lookup table, or a hardware instruction. Because callers depend only on the interface, the implementation can be replaced, optimized, or fixed without changing a single line of the code that calls it, as long as the interface keeps its promise. This is why information hiding makes software maintainable: it localizes change. An API (application programming interface) is the same principle at the scale of a whole service or library — a published set of operations that clients program against while the provider is free to change what happens behind it.
+
+### Levels of abstraction and abstraction barriers
+
+Computers are built as a stack of abstraction levels, each one implemented in terms of the level below and offering a simpler interface to the level above. Physical hardware sits at the bottom. The operating system wraps the hardware and offers processes, files, and memory as clean concepts, so an application can open a file without issuing raw disk commands. Applications and high-level languages sit above the operating system, and a program written in a high-level language never manipulates individual transistors. Each boundary between levels is an abstraction barrier: a line that separates the code that uses a service from the code that implements it. The barrier is what lets a lower level be reimplemented — a new disk, a new memory manager — without disturbing the higher levels that use only its interface. This layering is what allows a small number of people to build on the work of many others: you program against the interface at your level and treat everything beneath it as a reliable black box.
+
+### Data abstraction and abstract data types
+
+Abstraction applies to data as well as to actions. Data abstraction isolates how a compound data object is used from the details of how it is built, so a program can work with a value through a defined set of operations rather than by reaching into its representation. Formalized, this gives an abstract data type (ADT): the NIST Dictionary of Algorithms and Data Structures defines it as "a set of data values and associated operations that are precisely specified independent of any particular implementation." An ADT answers what operations exist and what they mean, and deliberately leaves how they are implemented open. A stack is a classic ADT: it offers push, pop, peek, and is-empty, with the rule that the last item pushed is the first popped. That specification says nothing about storage. One team can implement the stack with a resizable array and another with a linked list; both satisfy the same interface, so code that uses the stack does not change when you swap one implementation for the other. Separating the operations from their representation is exactly the information-hiding idea applied to data structures.
+
+### Abstraction versus decomposition, and where else abstraction appears
+
+Abstraction is easy to confuse with decomposition, its sibling problem-solving technique, but they act along different axes. Abstraction is vertical: it hides detail behind an interface and asks what a thing does rather than how, stacking simpler views on top of complex machinery. Decomposition is horizontal: it splits a single problem into smaller, more manageable parts that can be understood or built separately. One hides and layers; the other divides and organizes. They cooperate — you often decompose a system into parts and then hide each part behind an interface — but they are not the same move, and confusing them blurs why each is useful. Abstraction also shows up as a named pillar in two larger frameworks this course treats elsewhere. It is one of the four pillars of computational thinking, alongside decomposition, pattern recognition, and algorithmic thinking. It is also one of the four pillars of object-oriented programming, where exposing an object's behavior while hiding its internal state is the same principle expressed in a particular programming style.
+
+## Key Vocabulary
+
+- **Abstraction** — Managing complexity by exposing only the essential features of something through a simpler interface while hiding its implementation details.
+- **Interface** — The agreed set of operations through which you interact with a component, describing what it does without revealing how.
+- **Implementation** — The hidden internal machinery that actually carries out an interface's operations.
+- **Information hiding** — The design principle of enclosing the decisions most likely to change inside a component and exposing only a stable interface, so callers cannot depend on hidden details.
+- **Abstraction barrier** — The boundary between a level that uses a service and the level that implements it, allowing either side to change without disturbing the other as long as the interface holds.
+- **Abstract data type (ADT)** — A set of data values and their operations, specified precisely and independently of any particular implementation.
+- **API (application programming interface)** — A published set of operations a service or library offers to client programs, letting clients use it without knowing its internals.
+- **Encapsulation** — Bundling data with the operations allowed on it and restricting outside access to its internals; the mechanism commonly used to enforce information hiding.
+
+## Eli-10
+
+Abstraction means you get to use something by knowing what it does, not how it works inside. A light switch is a promise: flip it up and the light comes on. You do not need to know about the wiring, the power plant, or the bulb's chemistry to keep that promise useful. Computing is built out of promises like this, stacked on top of each other. Your app trusts the operating system, the operating system trusts the hardware, and each layer only shows the layer above a small, tidy set of buttons to press while hiding its own tangle of details.
+
+## Eli's Analogy
+
+Think of a restaurant menu. The menu is the interface: it lists what you can order and what you will get. The kitchen is the implementation: the recipes, the equipment, the cooks. You order from the menu without stepping into the kitchen, and the restaurant can change its recipes or hire new cooks without reprinting the menu, as long as the dish still matches its description.
+
+**Where the analogy breaks down:** The menu analogy captures the interface-versus-kitchen split, but it is imperfect. A menu is a static list of choices, while a software interface is a set of active operations that do things and hand back results. And a diner can always ask to peek into the kitchen; a well-designed abstraction is meant to keep its internals genuinely sealed so nothing outside can come to depend on them.
+
+## Worked Example
+
+Suppose you need a stack — a last-in, first-out collection. You first define it as an abstract data type by naming its operations, not its storage: `push(item)` adds an element, `pop()` takes the most recent one off, `peek()` reads it in place without removing it, and `isEmpty()` reports whether it holds anything. That specification is the interface. Now two engineers implement it differently. Engineer A uses a resizable array and treats the last slot as the top: push appends, pop removes the last element. Engineer B uses a linked list and treats the head as the top: push inserts a new head node, pop unlinks it. Both implementations honor the same four operations with the same last-in-first-out behavior. Here is the payoff of abstraction: any program written against push/pop/peek/isEmpty runs correctly on either implementation, and if you swap Engineer A's array for Engineer B's list, the calling code does not change at all. The interface hid the representation, so the representation was free to vary. That is information hiding and the abstraction barrier doing their job.
+
+## Common Mistakes
+
+- **Treating abstraction as the same thing as decomposition.** Abstraction hides detail behind an interface (vertical: what, not how); decomposition splits a problem into smaller parts (horizontal: divide and organize). They cooperate but are different moves.
+- **Thinking abstraction makes complexity disappear.** The complexity is still there; abstraction only relocates it behind a boundary so the user on the outside can ignore it. Someone still has to implement and maintain the hidden part.
+- **Confusing the interface with the implementation, or assuming one interface means one implementation.** An interface says what operations exist; many different implementations can satisfy the same interface, which is exactly why the implementation can be swapped without breaking callers.
+- **Reaching around an abstraction to depend on its internal details.** Depending on hidden internals defeats information hiding: when those details change, your code breaks. Program only against the published interface.
+- **Believing abstraction is purely an object-oriented-programming idea.** Abstraction is a general principle — functions, APIs, layered systems, and abstract data types all use it. It is one pillar of OOP, but it is not owned by OOP.
+
+## Compare / Contrast
+
+- **Abstraction vs. Decomposition** — Abstraction hides detail behind an interface and layers simpler views over complex machinery (vertical: what, not how). Decomposition splits one problem into smaller parts that can be handled separately (horizontal: divide and organize).
+- **Interface vs. Implementation** — The interface is the stable, public description of what operations a component offers; the implementation is the hidden, changeable machinery that performs them.
+- **Abstract data type (ADT) vs. Data structure** — An ADT specifies what operations exist and what they mean, independent of representation; a data structure is a concrete way to store the data and implement those operations.
+
+## Key Takeaway
+
+Abstraction manages complexity by exposing only what something does through a stable interface and hiding how it does it; that separation is what lets systems be layered, maintained, and built by many hands. It hides detail behind an interface, which is different from decomposition's splitting a problem into parts.
+
+## Practice Question Bank
+
+1. **Which statement best captures what abstraction does in computing?**
+   - A. It breaks a large problem into independent subproblems that can be solved separately.
+   - B. It exposes only the essential features of something through a simpler interface while hiding the implementation details.
+   - C. It copies data from one representation into another to make a program run faster.
+   - D. It records every implementation detail so that nothing is hidden from the user.
+
+   **Answer: B.** Abstraction manages complexity by showing essential features through an interface and hiding the rest. Option A describes decomposition, option C describes copying or conversion, and option D is the opposite of abstraction.
+
+2. **An abstract data type (ADT) is best described as which of the following?**
+   - A. A block of contiguous memory whose size is fixed when it is created.
+   - B. The specific lines of code that implement a data structure in one programming language.
+   - C. A set of data values and associated operations specified independently of any particular implementation.
+   - D. A diagram that shows how the modules of a program call one another.
+
+   **Answer: C.** By the NIST definition, an ADT is a set of values and operations specified independently of any implementation. Option A describes an array, option B describes an implementation, and option D describes a call graph.
+
+3. **Pressing the accelerator and turning the wheel to drive a car without knowing how the engine works illustrates which idea?**
+   - A. Decomposition, because driving has been split into separate independent tasks.
+   - B. Recursion, because each control repeats the same action on itself.
+   - C. Pattern recognition, because similar roads keep recurring on the trip.
+   - D. Abstraction, because the controls form a simple interface that hides the engine's internals.
+
+   **Answer: D.** The controls are a stable interface that lets you operate the car while its mechanism stays hidden. The other options name concepts that do not fit the scenario.
+
+4. **How does abstraction differ from decomposition?**
+   - A. Abstraction hides detail behind an interface (what, not how), whereas decomposition splits a problem into smaller parts.
+   - B. Abstraction splits a problem into smaller parts, whereas decomposition hides detail behind an interface.
+   - C. They are two names for exactly the same technique and can be used interchangeably.
+   - D. Abstraction applies only to hardware, whereas decomposition applies only to software.
+
+   **Answer: A.** Abstraction is vertical (what, not how); decomposition is horizontal (divide into parts). Option B reverses them, option C denies the distinction, and option D invents a nonexistent hardware/software split.
+
+5. **A team replaces a stack's internal array with a linked list, yet no code that calls push and pop needs to change. Which principle best explains why the callers are unaffected?**
+   - A. It worked only by luck; interfaces do nothing to protect callers from implementation changes.
+   - B. Information hiding: callers depend on the stack's interface, not its hidden representation, so the implementation can change behind the abstraction barrier.
+   - C. Decomposition: because the work was divided into a caller module and a stack module, callers are automatically immune to any change.
+   - D. The callers must in fact be rewritten every time the stack's implementation changes.
+
+   **Answer: B.** The callers use only the interface, so the hidden representation can change without affecting them. Option A denies the protection interfaces provide, option C names the wrong cause (dividing code does not by itself shield callers), and option D contradicts the scenario.
+
+## Sources
+
+- NIST, *Dictionary of Algorithms and Data Structures* — "abstract data type (ADT)". https://xlinux.nist.gov/dads/HTML/abstractDataType.html (public domain)
+- Abelson & Sussman, *Structure and Interpretation of Computer Programs*, Section 2.1 (data abstraction and abstraction barriers). https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/6515/sicp.zip/full-text/book/book-Z-H-14.html
+- David Gries, *Information Hiding and Encapsulation* (Cornell course note), attributing information hiding to Parnas (1972). https://www.cs.cornell.edu/courses/JavaAndDS/files/infoHiding.pdf
+- Jeannette M. Wing, "Computational Thinking," *Communications of the ACM* 49(3), 2006. https://dl.acm.org/doi/10.1145/1118178.1118215
+- OpenStax, *Introduction to Computer Science*, Section 2.1: Computational Thinking. https://openstax.org/books/introduction-computer-science/pages/2-1-computational-thinking
+
+## Related Topics
+
+- computer-science-fundamentals:foundations:decomposition
+- computer-science-fundamentals:foundations:object-oriented-programming-basics
+- computer-science-fundamentals:foundations:functions
+- computer-science-fundamentals:foundations:computational-thinking
+- computer-science-fundamentals:foundations:data-types
+
+## Editorial Metadata
+
+- **Editorial status:** READY_TO_PUBLISH
+- **Estimated minutes:** 9
+- **Research status:** source-verified
+- **Rights status:** reference-only and public-domain sources; one short attributed NIST quotation; no copyrighted prose adapted
+- **Researched at:** 2026-08-19

@@ -14,7 +14,7 @@
     "foundations"
   ],
   "in30Seconds": "A queue is a collection that serves items in the order they arrived: first in, first out (FIFO). You enqueue new items at the rear and dequeue them from the front, like a line at a checkout. Its core operations - enqueue, dequeue, front (peek), and isEmpty - each run in constant O(1) time when the queue is implemented properly. Queues drive job scheduling, print spooling, buffering, and breadth-first search.",
-  "whyItMatters": "Queues are one of the handful of data structures you meet again and again, so understanding them early pays off across the rest of computer science. Operating systems queue processes and print jobs; networks buffer packets in queues; breadth-first search explores a graph using a queue; and streaming systems smooth bursts of data with queues. Knowing that a queue guarantees first-in-first-out order - and that its operations are O(1) only with the right implementation - lets you pick the correct structure for a problem and reason about how a system behaves under load. The same FIFO idea also shows up outside code, in any fair 'first come, first served' line, which makes it an intuitive model for scheduling and fairness.",
+  "whyItMatters": "Queues rank among the core data structures you meet again and again, so understanding them early pays off across the rest of computer science. Operating systems queue processes and print jobs; networks buffer packets in queues; breadth-first search explores a graph using a queue; and streaming systems smooth bursts of data with queues. Knowing that a queue guarantees first-in-first-out order - and that its operations are O(1) only with the right implementation - lets you pick the correct structure for a problem and reason about how a system behaves under load. The same FIFO idea also shows up outside code, in any fair 'first come, first served' line, which makes it an intuitive model for scheduling and fairness.",
   "learningObjectives": [
     "Define a queue as a FIFO (first-in, first-out) abstract data type.",
     "Describe the core operations enqueue, dequeue, front/peek, and isEmpty and state that each is O(1) with a proper implementation.",
@@ -29,7 +29,7 @@
     },
     {
       "heading": "The core operations",
-      "body": "A queue exposes a small, fixed set of operations. Enqueue adds an item at the rear (the tail). Dequeue removes and returns the item at the front (the head) - the item that has been waiting longest. Front, often called peek, returns the front item without removing it, so you can look at who is next without serving them. IsEmpty reports whether the queue currently holds any items, which matters because dequeuing from an empty queue is an error you must guard against. Some libraries add a size operation that reports how many items are stored. The important performance fact is that all of these operations can run in O(1) - constant time, independent of how many items the queue holds - when the queue is implemented properly, for example with a linked list that tracks both head and tail pointers, or with a circular array. Python's standard library offers collections.deque for exactly this purpose: its documentation states that appends and pops from either end run with approximately O(1) performance."
+      "body": "A queue exposes a small, fixed set of operations. Enqueue adds an item at the rear (the tail). Dequeue removes and returns the item at the front (the head) - the item that has been waiting longest. Front, often called peek, returns the front item but leaves it in place, so you can see who is next without serving them. IsEmpty reports whether the queue currently holds any items, which matters because dequeuing from an empty queue is an error you must guard against. Some libraries add a size operation that reports how many items are stored. The important performance fact is that all of these operations can run in O(1) - constant time, independent of how many items the queue holds - when the queue is implemented properly, for example with a linked list that tracks both head and tail pointers, or with a circular array. Python's standard library offers collections.deque for exactly this purpose: its documentation states that appends and pops from either end run with approximately O(1) performance."
     },
     {
       "heading": "Why the implementation matters",
@@ -300,7 +300,7 @@
     "researchedAt": "2026-08-19",
     "transformation": "The FIFO definition and enqueue/dequeue/front/isEmpty operation set were built from the NIST DADS 'queue' entry and the Open Data Structures Queue/Stack/Deque interface section. The O(1) operation cost and the O(n) cost of removing from the front of a plain list were taken from Python's collections.deque documentation (deque O(1) both ends; list pop(0)/insert(0) O(n)). The enqueue 1,2,3 / dequeue worked example was executed in Python 3.9 with collections.deque and confirmed to return 1,2,3. Variants (circular queue, deque, priority queue) are named, not deeply taught; LIFO/stacks are only contrasted, not taught here."
   },
-  "contentHash": "f620ae0fcecdca5e",
+  "contentHash": "f12cf915f5739f26",
   "status": "source-verified",
   "public": false
 }

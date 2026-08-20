@@ -1,0 +1,157 @@
+{
+  "topicId": "computer-science-fundamentals:foundations:abstraction",
+  "subjectId": "computer-science-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Abstraction manages complexity by exposing only the essential features of something through a simpler interface while hiding the implementation details.",
+      "Information hiding: separating what a component does (its interface/specification) from how it does it (its implementation), so the hidden details can change without disturbing users.",
+      "Levels/layers of abstraction: hardware -> operating system -> application, each layer presenting an interface to the layer above and hiding the layer below; abstraction barriers isolate the levels.",
+      "Concrete examples: driving a car through pedals/wheel without engine internals; calling a function by its signature without its body; an API; data abstraction / abstract data types where the operations that exist are separated from how they are implemented.",
+      "An abstract data type (ADT) specifies a set of values and operations independently of any particular implementation."
+    ],
+    "supporting": [
+      "Abstraction is one of the four pillars of computational thinking (with decomposition, pattern recognition, and algorithmic thinking).",
+      "Abstraction is also one of the four pillars of object-oriented programming (named, not owned, here).",
+      "The term information hiding originates with David Parnas's 1972 paper."
+    ],
+    "outOfScope": [
+      "How to break a problem into subproblems (owned by the decomposition topic).",
+      "The full four-pillar overview of object-oriented programming (owned by object-oriented-programming-basics).",
+      "Mechanics of defining and calling functions (owned by the functions topic).",
+      "Detailed complexity analysis of specific data structures."
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Abstraction focuses on the essential information about something while ignoring or hiding irrelevant implementation details, exposing behavior through a simpler interface.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["openstax-intro-cs-computational-thinking", "sicp-data-abstraction", "wing-2006-computational-thinking"],
+      "status": "supported"
+    },
+    {
+      "claim": "Information hiding separates what a component does (its specification/interface) from how it does it (its implementation body); the concept was introduced by David Parnas in a 1972 CACM paper.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["gries-cornell-information-hiding"],
+      "status": "supported"
+    },
+    {
+      "claim": "In a layered system, horizontal abstraction barriers isolate different levels; procedures at each level are the interfaces that connect levels, so a change to a lower-level implementation does not force changes in higher-level code that uses only the interface.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["sicp-data-abstraction"],
+      "status": "supported"
+    },
+    {
+      "claim": "An abstract data type is a set of data values and associated operations that are precisely specified independently of any particular implementation.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-dads-abstract-data-type"],
+      "status": "supported"
+    },
+    {
+      "claim": "Data abstraction lets a program isolate how a compound data object is used from the details of how it is constructed, using selector and constructor procedures as the interface.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["sicp-data-abstraction"],
+      "status": "supported"
+    },
+    {
+      "claim": "Abstraction is one of the pillars of computational thinking; Wing characterizes computational thinking as using abstraction and decomposition when attacking a large complex task or designing a large complex system.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["wing-2006-computational-thinking", "openstax-intro-cs-computational-thinking"],
+      "status": "supported"
+    },
+    {
+      "claim": "Abstraction (hide detail behind an interface; what-not-how) is a distinct technique from decomposition (split a problem into smaller parts); computational thinking uses both together.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["wing-2006-computational-thinking", "openstax-intro-cs-computational-thinking"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft defined abstraction only as 'a foundational Computer Science Fundamentals concept' with no substantive content; it never mentioned interfaces, information hiding, layers, or abstract data types.",
+    "The draft's vocabulary entry defined 'Abstraction' circularly as 'A foundational Computer Science Fundamentals concept covered in this lesson.'"
+  ],
+  "correctionsNeeded": [
+    "Replaced all placeholder boilerplate with a substantive, sourced treatment of abstraction as hiding implementation behind an interface.",
+    "Added the explicit contrast with decomposition required to keep the sibling topics from overlapping.",
+    "Added correct, verified examples (car controls, function signature, API, stack ADT with two implementations)."
+  ],
+  "rightsIssues": [
+    "SICP text is available under a Creative Commons license but is treated REFERENCE_ONLY here; facts synthesized in original prose, no passages reproduced.",
+    "Wing 2006 is ACM-copyrighted (REFERENCE_ONLY). Gries note and ISTE/OpenStax facts restated in original wording.",
+    "NIST DADS is a U.S. Government public-domain work; its short ADT definition is used as an attributed quotation."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-dads-abstract-data-type",
+      "title": "abstract data type (ADT) — Dictionary of Algorithms and Data Structures (DADS)",
+      "provider": "U.S. National Institute of Standards and Technology (NIST)",
+      "url": "https://xlinux.nist.gov/dads/HTML/abstractDataType.html",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19. Supports the ADT definition 'A set of data values and associated operations that are precisely specified independent of any particular implementation,' with the note that the values and operations are defined with mathematical precision rather than as an implementation in a computer language, so one can reason about effects and correctness without reference to a specific language. Used as a short attributed quotation; NIST DADS is a U.S. government public-domain reference work."
+    },
+    {
+      "id": "sicp-data-abstraction",
+      "title": "Structure and Interpretation of Computer Programs, Section 2.1 (Introduction to Data Abstraction / Abstraction Barriers)",
+      "provider": "Harold Abelson and Gerald Jay Sussman with Julie Sussman (MIT Press)",
+      "url": "https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/6515/sicp.zip/full-text/book/book-Z-H-14.html",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0 (2016 MIT Press Creative Commons edition)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19. Supports that data abstraction 'isolate[s] how a compound data object is used from the details of how it is constructed,' that selector and constructor procedures form the interface, and that horizontal 'abstraction barriers' isolate different levels of a system so that a change to a lower-level implementation does not require changes to higher-level code depending only on the interface. Treated REFERENCE_ONLY; facts synthesized in original prose, no passages reproduced (so ShareAlike is not triggered)."
+    },
+    {
+      "id": "gries-cornell-information-hiding",
+      "title": "Information Hiding and Encapsulation (course note)",
+      "provider": "David Gries, Cornell University (JavaHyperText / Java and Data Structures)",
+      "url": "https://www.cs.cornell.edu/courses/JavaAndDS/files/infoHiding.pdf",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "PDF downloaded and text extracted locally 2026-08-19 (WebFetch could not read the binary; decoded the FlateDecode streams). Supports that information hiding 'has been an important design principle ever since it was first discussed in a paper by David Parnas in 1972 (On the criteria to be used in decomposing systems into modules, CACM, Dec. 1972)' and the distinction that 'A method has two important properties: what it does and how it does it. The what is given in its specification ... The how is given by the method body.' Used to ground the information-hiding definition and its attribution to Parnas 1972; REFERENCE_ONLY, wording original."
+    },
+    {
+      "id": "wing-2006-computational-thinking",
+      "title": "Computational Thinking (Viewpoint)",
+      "provider": "Jeannette M. Wing, Communications of the ACM, Vol. 49, No. 3",
+      "url": "https://dl.acm.org/doi/10.1145/1118178.1118215",
+      "sourceType": "peer-reviewed",
+      "usage": "REFERENCE_ONLY",
+      "license": "Copyright ACM",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused from registry; author/CMU-hosted PDF read previously. Supports that computational thinking 'is using abstraction and decomposition when attacking a large complex task or designing a large complex system,' establishing abstraction as a core computational-thinking pillar and pairing it with decomposition. REFERENCE_ONLY (ACM copyright); only the concept, not passages, used here."
+    },
+    {
+      "id": "openstax-intro-cs-computational-thinking",
+      "title": "Introduction to Computer Science, Section 2.1: Computational Thinking",
+      "provider": "OpenStax (Rice University)",
+      "url": "https://openstax.org/books/introduction-computer-science/pages/2-1-computational-thinking",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Reused from registry. Supports that abstraction means 'focusing on essential information while ignoring irrelevant details' and that it is one of the four computational-thinking pillars alongside decomposition, pattern recognition, and algorithmic thinking. CC BY-NC-SA 4.0; facts synthesized in original prose."
+    }
+  ]
+}

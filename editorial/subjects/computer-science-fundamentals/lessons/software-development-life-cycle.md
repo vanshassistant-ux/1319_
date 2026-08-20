@@ -1,0 +1,156 @@
+# Software Development Life Cycle
+
+## In 30 Seconds
+
+The software development life cycle (SDLC) is the structured process teams use to build and maintain software. It runs through recognizable phases: understand requirements and plan, design a solution, implement the code, test and verify it, deploy the release, then operate and maintain it in production. Different process models organize those phases differently. Waterfall runs them once in sequence; iterative and agile approaches repeat them in short cycles. A defined process exists to manage risk, coordinate people, and catch defects while they are still cheap to fix.
+
+## Why This Matters
+
+Almost every course project, internship, and engineering job places you somewhere inside a life cycle, even when nobody names it. Knowing the phases tells you what question is actually being asked: are we still deciding what to build, or already testing what we built? Understanding the models helps you read a team's culture. A group running two-week sprints works very differently from one shipping a single large release. The rationale matters most of all, because the reason for any process is to manage risk and to catch problems early, when a fix costs far less than the same fix after release. That reasoning carries into security, reliability, and cost long after you have forgotten any single tool.
+
+## Learning Objectives
+
+- Define the software development life cycle and list its standard phases in order.
+- Explain the purpose of each phase and how the phases connect.
+- Distinguish the waterfall, iterative/incremental, and agile process models.
+- Explain why a defined process reduces risk, aids coordination, and lowers the cost of fixing defects.
+- Apply the models to classify how a described team actually works.
+
+## The College Version
+
+### What the life cycle is
+
+The software development life cycle (SDLC) is the structured process an organization uses to conceive, build, deliver, and maintain a software system. It is best understood as a set of phases, each answering a different question. Requirements and planning ask what the software must do and for whom, turning vague wishes into specific, testable statements of need. Design asks how the system will meet those requirements, deciding on its structure, major components, data, and interfaces before anyone writes production code. Implementation (coding) is where developers write the software that realizes the design. Testing and verification check that the software actually satisfies the requirements and behaves correctly, including finding and removing defects. Deployment (or release) delivers the working software into the environment where people use it. Operation and maintenance keep it running: fixing newly found defects, adapting it to changing needs, and eventually retiring it.
+
+The international standard ISO/IEC/IEEE 12207 formalizes this idea, defining a common framework of life cycle processes that span the acquisition, development, operation, maintenance, and disposal of software. The phases are not watertight boxes. Information flows backward as often as forward: a test can send you back to design, and an operations incident can reopen requirements. What makes it a life cycle rather than a checklist is that software is long-lived, so the work loops and continues after the first release.
+
+### Why a defined process matters
+
+A defined process is not bureaucracy for its own sake; it exists to manage three real problems. The first is risk. Building software means committing time and money before you know whether the result will work, and an explicit process forces you to surface unknowns early, when changing course is cheap. The second is coordination. Once more than one or two people are involved, they need shared expectations about what is being built, who does what, and when work is considered done; the phases and their handoffs give that shared language. The third is the cost of defects, which is the most quantified benefit. Barry Boehm's studies of large software projects found that the cost of fixing a defect rises sharply the later it is discovered, so an error caught while reviewing requirements is far cheaper to fix than the same error caught after release, often by roughly an order of magnitude or more.
+
+That single finding explains much of why teams invest in reviews, testing, and early feedback: catching a problem in an early phase avoids paying to rebuild everything downstream of it. Security follows the same logic. NIST's Secure Software Development Framework (SP 800-218) recommends weaving security practices into every phase rather than bolting them on at the end, because a vulnerability designed out early is cheaper and safer than one patched after attackers find it.
+
+### Process models: waterfall, iterative, and agile
+
+A process model is a way of arranging the phases in time. The waterfall model runs the phases once, in a strict sequence: complete requirements, then design, then implementation, then testing, then deployment, with each phase finished and signed off before the next begins. Its strength is predictability and documentation; its weakness is that it assumes you understood the requirements correctly up front, so mistakes discovered late are expensive to undo. Iterative and incremental models instead repeat the phases in cycles, building the system in successive slices; each iteration produces a working, if incomplete, version, and lessons from one iteration feed the next.
+
+Agile approaches are a family of iterative methods that push this further. The Manifesto for Agile Software Development (2001) states four values, preferring individuals and interactions over processes and tools, working software over comprehensive documentation, customer collaboration over contract negotiation, and responding to change over following a plan. Agile teams favor short iterations and adapting to change: they aim to deliver working software frequently and to welcome changing requirements even late in development. Scrum is the most common agile framework; it organizes work into fixed-length iterations called sprints, timeboxed to one month or less, with regular planning, review, and reflection.
+
+None of these models is universally best. Waterfall suits projects with stable, well-understood requirements and heavy documentation needs, while agile suits projects where requirements are expected to change and fast feedback is valuable. The right choice depends on the project's risks and constraints.
+
+### The phases in a little more depth
+
+It helps to see how a defect moves through the phases, because that is where the rationale becomes concrete. Suppose a banking app must let customers transfer money. In requirements, the team writes down exactly what a transfer means, including limits and error cases, and a missed rule here becomes a design and coding gap later. In design, they decide how accounts, transactions, and the transfer service fit together. In implementation, developers write and integrate the code. In testing and verification, they confirm the transfer works and, importantly, that it fails safely on bad input; debugging, the separate discipline of finding and fixing defects, lives mostly in this phase and in maintenance. In deployment, the release goes to real users, often gradually. In operation and maintenance, the team monitors it, fixes issues that only appear under real load, and adapts it as regulations or needs change.
+
+Two boundaries are worth keeping straight. The life cycle is about the process of building software, not about how to write a specific algorithm or decompose a problem into parts; those are separate skills used inside the implementation phase. And a process model tells you how the phases are ordered in time, whereas a standard such as ISO/IEC/IEEE 12207 defines what processes should exist regardless of the model you choose.
+
+## Key Vocabulary
+
+- **Software development life cycle (SDLC)**: The structured, phased process an organization uses to plan, build, deliver, and maintain a software system over its lifetime.
+- **Requirements**: Specific, testable statements of what the software must do and the constraints it must satisfy, gathered before design begins.
+- **Design phase**: The stage that decides how the system will be structured, including its components, data, and interfaces, before production code is written.
+- **Implementation**: The coding stage, in which developers write the software that realizes the design.
+- **Verification and testing**: The phase that checks whether the software meets its requirements and behaves correctly, including finding and removing defects.
+- **Deployment**: Delivering the working software into the environment where users run it; also called release.
+- **Maintenance**: Ongoing work after release: fixing newly found defects, adapting the software to changing needs, and eventually retiring it.
+- **Process model**: A scheme for arranging the life cycle phases in time, such as waterfall, iterative, or agile.
+- **Waterfall model**: A model that runs the phases once in a strict sequence, finishing and signing off each before the next begins.
+- **Agile**: A family of iterative methods that favor short iterations, frequent delivery of working software, and adapting to change, as expressed in the 2001 Agile Manifesto.
+
+## Eli-10
+
+Building software is like building a house that people keep living in while you improve it. First you figure out what the family needs, then you draw the plans, then you build, then you inspect everything, then the family moves in, and then you keep fixing and upgrading it for years. The software life cycle is just the name for those steps. Some teams do every step once, all the way through, like building a house from a finished blueprint. Other teams build one room at a time, move the family in, and ask what to build next based on how the first room worked out. Neither way is cheating; they suit different situations.
+
+## Eli's Analogy
+
+Think of a restaurant kitchen fixing a bad dish. Catching a wrong ingredient while reading the recipe costs a moment; catching it once the plate is at the table means remaking everything. Software works the same way, which is why teams test early instead of waiting until customers are using it.
+
+**Where the analogy breaks down:** A dish is thrown out and remade fresh, while software is not discarded after each order. It keeps running for years and is repaired and changed in place, which is exactly why the life cycle has an operation and maintenance phase that a single meal never needs.
+
+## Worked Example
+
+A startup builds a to-do app. In week one they interview users and write requirements: tasks have a title, a due date, and a done flag (requirements phase). They sketch the data model and screens (design). They code the first version (implementation) and write tests that confirm a task can be added, completed, and deleted (verification and testing). They release it to a hundred beta users (deployment). Two weeks later a user reports that overdue tasks vanish; the team reproduces it, fixes the bug, and ships an update (maintenance). Because they release every two weeks, welcome the feedback, and reprioritize based on it, they are working in an agile, iterative style rather than waterfall. Notice the bug was cheap to fix because their tests and short cycle caught it days after the mistake, not months.
+
+## Common Mistakes
+
+- **Treating the SDLC and a specific model like waterfall as the same thing.** The SDLC is the set of phases every project passes through; a model such as waterfall or agile is one way of ordering those phases in time. You can run the same phases sequentially or iteratively.
+- **Believing agile means no planning, no design, and no documentation.** Agile still does all the phases; it just does them in short, repeated cycles and values working software over heavy documentation. The Agile Manifesto states a preference, not an outright ban on plans or documents.
+- **Assuming one model, usually agile, is always the best choice.** The models are neutral tools. Waterfall fits stable, well-understood requirements with strong documentation needs; agile fits changing requirements and fast feedback. The right choice depends on the project's risks.
+- **Thinking the process ends at deployment.** Operation and maintenance is a full phase. Most software spends far longer being maintained than being first built, and standards like ISO/IEC/IEEE 12207 explicitly include maintenance and disposal.
+- **Confusing testing or debugging with the whole life cycle.** Finding and fixing defects is important but sits inside the verification and maintenance phases. The life cycle also covers requirements, design, deployment, and operation.
+
+## Compare / Contrast
+
+- **Waterfall model vs. Agile model**: Waterfall runs the phases once in a fixed sequence with sign-off between them; agile repeats the phases in short iterations, delivering working software frequently and welcoming changing requirements.
+- **SDLC (the phases) vs. Process model (the ordering)**: The SDLC names the phases every project moves through; a process model decides how those phases are arranged in time. The phases stay the same across models.
+- **Verification/testing phase vs. Operation and maintenance phase**: Testing checks the software before release; maintenance keeps it working afterward, fixing defects that surface in real use and adapting it as needs change.
+
+## Key Takeaway
+
+The software development life cycle is the phased process for building and maintaining software (requirements, design, implementation, testing, deployment, operation and maintenance); models like waterfall and agile order those phases differently, and the whole point of having a defined process is to manage risk, coordinate people, and catch defects while they are still cheap to fix.
+
+## Practice Question Bank
+
+1. **Which sequence lists standard software development life cycle phases in their typical order?**
+   - A. Design, requirements, deployment, implementation, testing, maintenance
+   - B. Requirements, design, implementation, testing, deployment, maintenance
+   - C. Implementation, requirements, design, maintenance, testing, deployment
+   - D. Testing, deployment, requirements, design, implementation, maintenance
+
+   **Answer: B.** The standard flow is requirements and planning, then design, then implementation (coding), then testing and verification, then deployment, then operation and maintenance. The other options scramble that order, for example placing design or implementation before requirements.
+
+2. **What most distinguishes the waterfall model from iterative and agile models?**
+   - A. It skips the testing phase entirely to save time
+   - B. It has no requirements or design work at any point
+   - C. It is the only model that produces any documentation
+   - D. It runs the phases once in a fixed sequence, finishing each before the next begins
+
+   **Answer: D.** Waterfall is defined by running the phases once, in strict order, with each phase completed and signed off before the next starts. It does test, does gather requirements and design, and is not the only model that documents.
+
+3. **A team ships working software to users every two weeks, holds a short planning and review around each cycle, and readily reworks its plan when requirements change. Which model best describes how they work?**
+   - A. Agile (iterative, short cycles that welcome change)
+   - B. Pure waterfall with a single up-front sign-off
+   - C. A model with no testing or verification phase
+   - D. A process that ends permanently at first deployment
+
+   **Answer: A.** Short repeated cycles that deliver working software frequently and adapt to changing requirements are the hallmarks of agile, matching the Agile Manifesto's values. Waterfall would not welcome late change or ship every two weeks.
+
+4. **Why do teams invest in reviews and testing to catch defects during the early phases of the life cycle?**
+   - A. Early phases are the only phases where any defects can occur
+   - B. Regulations forbid writing any code until testing is complete
+   - C. The cost of fixing a defect tends to rise sharply the later it is found
+   - D. Fixing defects early makes the software run measurably faster at runtime
+
+   **Answer: C.** Boehm's studies of large projects found defect-fix cost rises steeply with how late the defect is discovered, so early detection avoids expensive downstream rework. Defects can arise in any phase, no regulation bans coding before testing, and fixing a defect corrects behavior rather than inherently speeding execution.
+
+5. **According to the 2001 Agile Manifesto, which pairing correctly states something agile teams value more highly?**
+   - A. Comprehensive documentation over working software
+   - B. Responding to change over following a plan
+   - C. Contract negotiation over customer collaboration
+   - D. Processes and tools over individuals and interactions
+
+   **Answer: B.** The Manifesto values responding to change over following a plan, working software over comprehensive documentation, customer collaboration over contract negotiation, and individuals and interactions over processes and tools. The other options reverse those stated preferences.
+
+## Sources
+
+- [ISO/IEC/IEEE 12207-2017 — Systems and software engineering — Software life cycle processes](https://standards.ieee.org/ieee/12207/5672/) (IEEE Standards Association) — defines the common framework of software life cycle processes across acquisition, development, operation, maintenance, and disposal.
+- [Manifesto for Agile Software Development](https://agilemanifesto.org/) (Beck et al., 2001) — the four agile values and preference for short iterations and welcoming change.
+- [The Scrum Guide (2020)](https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf) (Schwaber & Sutherland, CC BY-SA 4.0) — sprints as fixed-length iterations timeboxed to one month or less.
+- [NIST SP 800-218: Secure Software Development Framework](https://csrc.nist.gov/pubs/sp/800/218/final) (NIST, public domain) — integrating security practices into each phase of the SDLC.
+- [Handbook of Software Engineering Methods](https://open.oregonstate.education/setextbook/) (Oregon State University, CC BY-NC 4.0) — waterfall, iterative, and agile models, and the cost-of-late-defects principle.
+
+## Related Topics
+
+- computer-science-fundamentals:foundations:debugging
+- computer-science-fundamentals:foundations:decomposition
+- computer-science-fundamentals:foundations:algorithms
+- computer-science-fundamentals:foundations:object-oriented-programming-basics
+- computer-science-fundamentals:foundations:abstraction
+
+## Editorial Metadata
+
+- **Editorial status:** READY_TO_PUBLISH
+- **Estimated minutes:** 9
+- **Researched at:** 2026-08-19
+- **Research status:** source-verified
+- **Rights status:** reference-only and openly licensed sources; no source prose adapted, only the Agile Manifesto's four short value statements quoted with attribution.

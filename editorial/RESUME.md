@@ -24,10 +24,25 @@ Read this first on every new run, then `editorial/reports/EDITORIAL_PROGRESS.md`
   real lesson titled "Sustainable Computing and E-Waste".)
 - **Computer Literacy is COMPLETE** — 25/25 topics, audited (0 issues), reported at
   `editorial/reports/subjects/computer-literacy.md`.
+- **Computer Science Fundamentals is COMPLETE** — 27/27 topics, audited (0 issues), reported at
+  `editorial/reports/subjects/computer-science-fundamentals.md`. (Correctness-critical subject:
+  every worked example and Big-O claim was re-derived in `python3` at merge. Five duplicate
+  Python/OpenStax source ids from parallel workers were consolidated to one id each and re-gated;
+  11 homonym/compatible glossary-term collisions and the literal bracket-matching paren lines are
+  excused with reasons in the subject's `audit-exceptions.json`.)
 
   **RESUMED 2026-08-19 in this `1319_DIR` copy (operator direction: "continue from where
   Hermes left off").** This directory — `/Users/moomoo/Desktop/1319_DIR` — is now the live
-  working repository. Total: **219 / 1,319** topics, 9 / 44 subjects.
+  working repository. Total: **246 / 1,319** topics, 10 / 44 subjects.
+
+  Next subject: `python-programming` (36 topics) — last of Phase 1. Hand-write its `source-map.json`
+  (a hands-on programming subject: verify every code example runs in `python3`; keep examples
+  idiomatic and version-correct; cite the official Python docs/tutorial as Tier A). Then Phases 2–4
+  (11 subjects each). Full order in `HERMES_READ_THIS.md` §6.
+
+  **Operator note (2026-08-19):** after finishing Computer Science Fundamentals the operator asked
+  to pause at the subject boundary and be pinged before more agents launch. Do NOT start
+  python-programming without a go-ahead.
 
   **Runtime here: `bun` only (no `node` on PATH).** All `.mjs` pipeline scripts run under
   bun, and the `npm run editorial:*` aliases (which hardcode bun) work as written. The

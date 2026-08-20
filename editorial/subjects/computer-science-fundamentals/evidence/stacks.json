@@ -27,7 +27,7 @@
     {
       "claim": "A stack is a collection in which only the most recently added item may be removed; the latest added item is at the top, and the discipline is last-in, first-out (LIFO).",
       "claimType": "TECHNICAL",
-      "sourceIds": ["nist-dads-stack", "python-tutorial-datastructures"],
+      "sourceIds": ["nist-dads-stack", "python-docs-datastructures"],
       "status": "supported"
     },
     {
@@ -46,14 +46,14 @@
     {
       "claim": "In Python a list can be used directly as a stack: append() pushes to the top and pop() without an index removes and returns the top, giving last-in, first-out order.",
       "claimType": "TECHNICAL",
-      "sourceIds": ["python-tutorial-datastructures"],
+      "sourceIds": ["python-docs-datastructures"],
       "status": "supported",
       "verification": "Executed in Python 3.9.6 via Bash on 2026-08-19: pushing 1,2,3 with append then calling pop three times returned 3,2,1."
     },
     {
       "claim": "Pushing three values 1, 2, 3 onto an empty stack and then popping twice returns 3 then 2 and leaves 1 on the stack.",
       "claimType": "TECHNICAL",
-      "sourceIds": ["python-tutorial-datastructures", "nist-dads-stack"],
+      "sourceIds": ["python-docs-datastructures", "nist-dads-stack"],
       "status": "supported",
       "verification": "Traced and executed in Python 3.9.6 via Bash on 2026-08-19; pop order was [3, 2] with [1] remaining."
     },
@@ -67,7 +67,7 @@
     {
       "claim": "The mechanism that tracks active function calls is the call stack: the most recently called function is the first to finish and return, which is LIFO order; recursion relies on this call stack.",
       "claimType": "TECHNICAL",
-      "sourceIds": ["nist-dads-stack", "python-tutorial-datastructures"],
+      "sourceIds": ["nist-dads-stack", "python-docs-datastructures"],
       "status": "supported"
     },
     {
@@ -108,7 +108,7 @@
       "notes": "Read 2026-08-19. Authoritative, public-domain definition: a stack is 'a collection of items in which only the most recently added item may be removed,' the latest added item is at the top, basic operations are push and pop, and top and isEmpty are often available too; identified as last-in, first-out (LIFO). Supports the definition, the operations, and the LIFO framing. Prose synthesized, not copied."
     },
     {
-      "id": "python-tutorial-datastructures",
+      "id": "python-docs-datastructures",
       "title": "5. Data Structures - The Python Tutorial (Using Lists as Stacks)",
       "provider": "Python Software Foundation",
       "url": "https://docs.python.org/3/tutorial/datastructures.html",

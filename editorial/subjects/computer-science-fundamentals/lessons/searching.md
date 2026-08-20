@@ -59,7 +59,7 @@ Take the sorted array [1, 3, 5, 7, 9, 11] (indices 0 through 5) and search for 7
 - **Step 2:** lo=3, hi=5, mid=4; arr[4]=9; since 7 < 9, discard the upper half and set hi=3.
 - **Step 3:** lo=3, hi=3, mid=3; arr[3]=7; match found at index 3.
 
-That is three comparisons. For contrast, a linear search for 9 in the same array checks 1, 3, 5, 7, then 9, finding it at index 4 after five comparisons. Both traces were executed in Python to confirm the indices and counts.
+That is three comparisons. For contrast, a linear search for 9 in the same array checks 1, 3, 5, 7, then 9, finding it at index 4 after five comparisons. Both walkthroughs were re-run in Python to check the indices and counts.
 
 ## Common Mistakes
 

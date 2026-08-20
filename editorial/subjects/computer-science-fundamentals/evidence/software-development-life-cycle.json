@@ -1,0 +1,126 @@
+{
+  "topicId": "computer-science-fundamentals:foundations:software-development-life-cycle",
+  "subjectId": "computer-science-fundamentals",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Definition of the software development life cycle (SDLC) as a phased process",
+      "Standard phases: requirements/planning, design, implementation, testing/verification, deployment, operation and maintenance",
+      "Process models: waterfall (sequential), iterative/incremental, agile (e.g., Scrum)",
+      "Why a defined process matters: risk management, coordination, cost of fixing defects late",
+      "ISO/IEC/IEEE 12207 as the authoritative life cycle standard"
+    ],
+    "supporting": [
+      "Agile Manifesto four values and preference for short iterations and change",
+      "Scrum sprints as fixed-length iterations timeboxed to one month or less",
+      "Boehm's finding that defect-fix cost rises the later a defect is found",
+      "Security-in-SDLC via NIST SP 800-218 (SSDF)"
+    ],
+    "outOfScope": [
+      "Debugging technique (finding/fixing specific defects) — named, owned by the debugging topic",
+      "Decomposition of problems into parts — named, owned separately",
+      "Algorithm design and how to write code — used inside implementation, owned separately"
+    ]
+  },
+  "claims": [
+    { "claim": "The SDLC is a structured, phased process for planning, building, delivering, and maintaining software, standardized as a framework of life cycle processes by ISO/IEC/IEEE 12207 spanning acquisition, development, operation, maintenance, and disposal.", "claimType": "TECHNICAL", "sourceIds": ["iso-iec-ieee-12207-2017"], "status": "supported" },
+    { "claim": "The standard phases run requirements/planning, then design, then implementation (coding), then testing/verification, then deployment, then operation and maintenance.", "claimType": "EVERGREEN", "sourceIds": ["oregonstate-handbook-software-engineering", "iso-iec-ieee-12207-2017"], "status": "supported" },
+    { "claim": "The waterfall model runs the phases once in a strict sequence, completing and signing off each before the next begins; iterative/incremental models repeat the phases in cycles that each produce a working version.", "claimType": "TECHNICAL", "sourceIds": ["oregonstate-handbook-software-engineering"], "status": "supported" },
+    { "claim": "The 2001 Agile Manifesto states four values: individuals and interactions over processes and tools; working software over comprehensive documentation; customer collaboration over contract negotiation; and responding to change over following a plan. Agile teams favor short iterations, delivering working software frequently, and welcoming changing requirements even late in development.", "claimType": "EVERGREEN", "sourceIds": ["agile-manifesto-2001"], "status": "supported" },
+    { "claim": "Scrum, the most common agile framework, organizes work into fixed-length iterations called sprints, timeboxed to one month or less.", "claimType": "TECHNICAL", "sourceIds": ["scrum-guide-2020"], "status": "supported" },
+    { "claim": "The cost of fixing a software defect rises sharply the later in the life cycle it is discovered, per Barry Boehm's studies of large projects; catching defects early therefore reduces cost and risk.", "claimType": "QUANTITATIVE", "sourceIds": ["oregonstate-handbook-software-engineering"], "status": "supported" },
+    { "claim": "Security is more effective and cheaper when integrated into every SDLC phase rather than added at the end; NIST SP 800-218 (SSDF) recommends secure development practices woven throughout the life cycle.", "claimType": "TECHNICAL", "sourceIds": ["nist-sp-800-218-ssdf"], "status": "supported" },
+    { "claim": "No process model is universally best; waterfall suits stable, well-understood requirements with heavy documentation needs, while agile suits changing requirements and fast feedback.", "claimType": "INTERPRETIVE", "sourceIds": ["oregonstate-handbook-software-engineering", "agile-manifesto-2001"], "status": "supported" }
+  ],
+  "conflictingEvidence": [
+    { "issue": "Exact defect-cost multipliers between phases", "positions": ["Boehm's 1981 data suggested roughly 1x/5x/10x/20x/100x across requirements to post-release", "Later commentators note the precise multipliers vary widely by project, context, and study and should not be treated as universal constants"], "resolution": "Stated qualitatively in the lesson: cost 'rises sharply' and is 'often by roughly an order of magnitude or more,' attributed to Boehm, without asserting a fixed numeric law." }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic filler ('a foundational concept... a simple way to apply it') with no substantive, verifiable claims about the SDLC, its phases, or its models."
+  ],
+  "correctionsNeeded": [
+    "Replaced boilerplate that never named the phases with the actual ordered phases (requirements through maintenance).",
+    "Added the three process models (waterfall, iterative/incremental, agile/Scrum) presented neutrally, which the draft omitted entirely.",
+    "Added the risk/coordination/cost-of-late-defects rationale and the ISO/IEC/IEEE 12207 and NIST references, none of which the draft included.",
+    "Rewrote vague vocabulary (e.g., 'context', 'evidence') into SDLC-specific terms."
+  ],
+  "rightsIssues": [
+    "ISO/IEC/IEEE 12207 full text is paywalled; used the public IEEE SA description page and standard abstract for scope only, no protected text reproduced (REFERENCE_ONLY).",
+    "Agile Manifesto text is freely copyable in its entirety per its own notice; only the four short value statements are quoted, with attribution.",
+    "Scrum Guide is published under CC BY-SA 4.0; only the factual sprint-timebox detail is used, described in original prose.",
+    "Oregon State Handbook of Software Engineering Methods is CC BY-NC 4.0; facts synthesized and written originally, attribution recorded."
+  ],
+  "sourceRecords": [
+    {
+      "id": "iso-iec-ieee-12207-2017",
+      "title": "ISO/IEC/IEEE 12207-2017 — Systems and software engineering — Software life cycle processes",
+      "provider": "ISO / IEC / IEEE Standards Association",
+      "url": "https://standards.ieee.org/ieee/12207/5672/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "license": "Proprietary standard (paywalled full text)",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read the IEEE SA public description page and cross-checked the ISO abstract (iso.org/standard/63712.html returned 403 to the fetcher; scope confirmed via IEEE SA page and search of the ISO catalog entry) on 2026-08-19. Supports that 12207 establishes a common framework of software life cycle processes with defined terminology, covering acquisition, supply, development, operation, maintenance, and disposal; published 2017-11-15. Used only for scope and authority; no standard text reproduced. Cited for the definition and phase framing."
+    },
+    {
+      "id": "agile-manifesto-2001",
+      "title": "Manifesto for Agile Software Development",
+      "provider": "Beck, Beedle, van Bennekum, Cockburn, Cunningham, Fowler, et al.",
+      "url": "https://agilemanifesto.org/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "Freely copyable in entirety per the manifesto's own notice; authors retain copyright",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19 (main page and principles.html). Confirms the four values verbatim (individuals and interactions over processes and tools; working software over comprehensive documentation; customer collaboration over contract negotiation; responding to change over following a plan) and the 17 signatories, 2001. Principles page confirms 'welcome changing requirements, even late in development' and delivering working software frequently 'from a couple of weeks to a couple of months, with a preference to the shorter timescale.' Supports the agile values, short-iteration and change claims. Only the four short value statements are quoted."
+    },
+    {
+      "id": "scrum-guide-2020",
+      "title": "The Scrum Guide (2020)",
+      "provider": "Ken Schwaber and Jeff Sutherland",
+      "url": "https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Verified via web search of the official 2020 Scrum Guide 2026-08-19. Supports that Scrum organizes work into fixed-length iterations called Sprints, timeboxed to one month or less, with Sprint Planning, Review, and Retrospective events. Used for the single factual detail about sprints; described in original prose."
+    },
+    {
+      "id": "nist-sp-800-218-ssdf",
+      "title": "NIST SP 800-218: Secure Software Development Framework (SSDF) Version 1.1",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19. U.S. government work, public domain. Supports that most SDLC models do not explicitly address security, and that SSDF recommends integrating a core set of secure software development practices into each phase of any SDLC to reduce vulnerabilities. Published February 2022; authors Souppaya, Scarfone, Dodson. Cited for the security-across-the-life-cycle point."
+    },
+    {
+      "id": "oregonstate-handbook-software-engineering",
+      "title": "Handbook of Software Engineering Methods",
+      "provider": "Oregon State University Open Educational Resources",
+      "url": "https://open.oregonstate.education/setextbook/",
+      "sourceType": "open-textbook",
+      "usage": "ATTRIBUTION_REQUIRED",
+      "license": "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "License confirmed via curl (CC BY-NC) and content via search/summary 2026-08-19; the agile chapter (open.oregonstate.education/setextbook/chapter/agile/) returned 403 to the fetcher but the book overview and search results confirm coverage. Supports the description of waterfall as linear/sequential with signed-off phase documents, iterative development producing a working version each cycle, agile emphasizing iterative development and customer collaboration, and the general principle that defects found later cost more (Boehm). Facts synthesized into original prose; attributed here."
+    }
+  ]
+}

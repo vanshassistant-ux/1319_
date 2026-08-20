@@ -24,7 +24,7 @@ Pseudocode is a kind of structured English for describing an algorithm—a finit
 
 ### Common conventions
 
-Although styles vary, a familiar core recurs across courses and reference guides. Keywords—the words that mark structure—are usually written in upper case so they stand out: IF, ELSE, WHILE, FOR, REPEAT, INPUT, OUTPUT. Assignment, meaning "store this value in this variable," is commonly written with a left arrow: `total ← 0` reads as "total gets zero." The right-hand side is evaluated first, then stored in the name on the left; this keeps assignment visually distinct from an equality test, which uses `=`. Selection—choosing between paths based on a condition—is written with IF/THEN/ELSE, often closed by ENDIF. Iteration—repeating steps—comes in a few shapes: a WHILE loop tests its condition before each pass and runs the body only while the condition holds; a FOR loop counts through a range; a REPEAT loop tests its condition at the bottom. Reading and displaying values use INPUT and OUTPUT. Finally, indentation carries real meaning: statements are indented to show that they belong inside a loop or a decision, so the shape on the page mirrors the structure of the logic. One step per line and clear, descriptive names round out the style.
+Although styles vary, a familiar core recurs across courses and reference guides. Keywords—the words that mark structure—are usually written in upper case so they stand out: IF, ELSE, WHILE, FOR, REPEAT, INPUT, OUTPUT. Assignment, meaning "store this value in this variable," is commonly written with a left arrow: `total ← 0` reads as "total gets zero." The right-hand side is evaluated first, then stored in the name on the left; this keeps assignment visually distinct from an equality test, which uses `=`. Selection—choosing between paths based on a condition—is written with IF/THEN/ELSE, often closed by ENDIF. Iteration—repeating steps—comes in a few shapes: a WHILE loop checks its condition at the start of each iteration and repeats while it stays true; a FOR loop counts through a range; a REPEAT loop tests its condition at the bottom. Reading and displaying values use INPUT and OUTPUT. Finally, indentation carries real meaning: statements are indented to show that they belong inside a loop or a decision, so the shape on the page mirrors the structure of the logic. One step per line and clear, descriptive names round out the style.
 
 ### Why we use it: design and communication
 
@@ -91,7 +91,7 @@ Pseudocode is an informal, language-agnostic way to write an algorithm's steps f
 
 ## Practice Question Bank
 
-1. **Which statement best describes pseudocode?**
+1. **Which option most accurately defines pseudocode?**
    - A. An informal, language-agnostic description of an algorithm's logic, written for humans to read.
    - B. A programming language that a compiler translates directly into machine code.
    - C. A diagram that shows control flow using boxes and arrows.

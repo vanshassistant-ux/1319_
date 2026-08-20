@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "subjectSlug": "computer-science-fundamentals",
+  "accepted": [
+    {
+      "match": "stacks.md:36 unbalanced parentheses",
+      "reason": "False positive. The line teaches balanced-bracket matching and contains the literal bracket characters `(`, `[`, `{` as content; the round-paren counter cannot balance a lesson whose subject is unbalanced brackets. Verified the prose is correct."
+    },
+    {
+      "match": "stacks.md:65 unbalanced parentheses",
+      "reason": "False positive. This line traces bracket matching on the deliberately-unbalanced string `([)]`, quoting the literal openers/closers; the imbalance is the teaching point. Verified correct."
+    },
+    {
+      "match": "stacks.md:148 unbalanced parentheses",
+      "reason": "False positive. Verification note listing the unbalanced test strings `(]`, `(()`, `)(`, `([)]` as literals; round-paren counting cannot balance intentionally-unbalanced examples. Verified correct."
+    },
+    {
+      "match": "what-computer-science-is / algorithms share 3 8-word sequences, e.g. \"a computable set of steps to achieve a\"",
+      "reason": "Reviewed: the shared text is the single authoritative NIST DADS definition of 'algorithm' ('a computable set of steps to achieve a desired result'), appropriately cited in the discipline overview and quoted in the dedicated Algorithms topic. A canonical source definition, not paraphrase reuse."
+    },
+    {
+      "match": "searching / sorting share 3 8-word sequences, e.g. \"nist s dictionary of algorithms and data structures\"",
+      "reason": "Reviewed: all three shared shingles are the proper-noun citation 'NIST's Dictionary of Algorithms and Data Structures', which both topics legitimately cite as their Tier-A source. Shared citation name, not prose reuse."
+    },
+    {
+      "match": "\"algorithm\" defined differently in what-computer-science-is and computational-thinking",
+      "reason": "Reviewed: compatible definitions at different depths. Both describe a finite, precise set of steps to achieve a result; the Algorithms topic owns the full definition. Low lexical overlap only because the overview entries are briefer."
+    },
+    {
+      "match": "\"algorithm\" defined differently in computational-thinking and algorithms",
+      "reason": "Reviewed: compatible. Computational Thinking gives a brief 'finite, ordered set of unambiguous instructions'; the Algorithms topic gives the full input→output/computable-procedure definition. Same concept, different depth."
+    },
+    {
+      "match": "\"algorithm\" defined differently in computational-thinking and pseudocode",
+      "reason": "Reviewed: compatible. Both are 'finite, well-defined steps to achieve a result'; Pseudocode additionally quotes the NIST DADS phrasing. No contradiction."
+    },
+    {
+      "match": "\"abstraction\" defined differently in what-computer-science-is and abstraction",
+      "reason": "Reviewed: compatible at different depths. The overview says 'ignoring irrelevant detail so essential structure stands out'; the Abstraction topic (owner) gives the full 'expose essentials through an interface, hide implementation' definition."
+    },
+    {
+      "match": "\"abstraction\" defined differently in computational-thinking and abstraction",
+      "reason": "Reviewed: compatible. Computational Thinking frames abstraction as 'keep only details that matter'; the Abstraction topic owns the interface/information-hiding treatment. Complementary, non-contradictory."
+    },
+    {
+      "match": "\"iteration\" defined differently in pseudocode and loops",
+      "reason": "Reviewed: two standard senses of a polysemous term. Pseudocode uses 'iteration' = the technique of repeating a block; Loops uses 'an iteration' = one pass through the body. Both are correct, conventional CS usage."
+    },
+    {
+      "match": "\"iteration\" defined differently in loops and recursion",
+      "reason": "Reviewed: compatible. Loops (owner) defines 'an iteration' as one pass; Recursion refers to iteration as the loop-based alternative to recursion. No contradiction."
+    },
+    {
+      "match": "\"contiguous memory\" defined differently in arrays and lists",
+      "reason": "Reviewed: complementary at different depths. Arrays (owner) defines it as consecutive locations with no gaps; Lists references contiguous storage as the basis for a dynamic array's O(1) indexing. Same meaning."
+    },
+    {
+      "match": "\"call stack\" defined differently in stacks and space-complexity",
+      "reason": "Reviewed: complementary. Stacks describes the call stack as the LIFO structure tracking active calls; Space Complexity describes it as memory holding one frame per pending call. Same structure, two lenses."
+    },
+    {
+      "match": "\"key\" defined differently in dictionaries-maps and sorting",
+      "reason": "Reviewed: genuine homonym. In Dictionaries/Maps a 'key' is the unique hashable label a value is filed under; in Sorting a 'key' is the value an item is ordered by. Different meanings sharing a word."
+    },
+    {
+      "match": "\"implementation\" defined differently in abstraction and software-development-life-cycle",
+      "reason": "Reviewed: different senses of one word. In Abstraction 'implementation' is the hidden machinery behind an interface; in the SDLC 'implementation' is the coding phase that realizes the design. Distinct, non-contradictory senses."
+    }
+  ]
+}

@@ -49,7 +49,7 @@ Any boolean expression built from these operators can be fully checked by writin
 
 ### De Morgan's laws
 
-Two equivalences, named for Augustus De Morgan, a contemporary of Boole in the nineteenth-century algebra-of-logic tradition, describe how negation distributes across AND and OR.
+Two equivalences, named for Augustus De Morgan, a contemporary of Boole in the nineteenth-century algebra-of-logic tradition, describe how negation distributes over conjunctions and disjunctions.
 
 - **First law:** `NOT(A AND B)` is equivalent to `(NOT A) OR (NOT B)`.
 - **Second law:** `NOT(A OR B)` is equivalent to `(NOT A) AND (NOT B)`.
@@ -62,7 +62,7 @@ De Morgan's laws matter in practice because programmers frequently need to negat
 
 ### Short-circuit evaluation and program conditions
 
-Most languages evaluate AND and OR with short-circuit semantics: they stop as soon as the result is determined. For AND, if the first operand is false, the whole expression is already false regardless of the second operand, so the second operand is never evaluated. For OR, if the first operand is true, the whole expression is already true, so the second operand is skipped. Python's documentation states this directly: `and` only evaluates its second argument if the first is true, and `or` only evaluates its second argument if the first is false.
+Most languages evaluate AND together with OR using short-circuit semantics: they stop as soon as the result is determined. For AND, if the first operand is false, the whole expression is already false regardless of the second operand, so the second operand is never evaluated. For OR, if the first operand is true, the whole expression is already true, so the second operand is skipped. Python's documentation states this directly: `and` only evaluates its second argument if the first is true, and `or` only evaluates its second argument if the first is false.
 
 Short-circuiting is not just an optimization; it changes what programs can safely express. A guard such as `x != 0 and y / x > 2` relies on it: when `x` is zero, the first operand is false, so the division is never attempted and no divide-by-zero error occurs. Reordering the operands would break that protection. A related language detail worth knowing is that in Python `and` and `or` return one of their operands rather than a strict `True` or `False`, while `not` always returns `True` or `False`; the truth-table behavior still holds when the result is used as a condition.
 
@@ -77,7 +77,7 @@ All of this exists to serve program decisions. A conditional statement evaluates
 - **Truth table** — A table listing every combination of input values for an expression alongside the resulting output value.
 - **Boolean expression** — A combination of boolean values, variables, and operators that evaluates to a single true or false result.
 - **Operator precedence** — The rules that decide which operator is applied first; for boolean logic, NOT before AND before OR.
-- **Short-circuit evaluation** — Stopping evaluation of AND or OR as soon as the outcome is known, so the second operand may be skipped.
+- **Short-circuit evaluation** — Stopping evaluation of an AND/OR expression as soon as the outcome is known, so the second operand may be skipped.
 - **De Morgan's laws** — Two equivalences: `NOT(A AND B)` equals `(NOT A) OR (NOT B)`, and `NOT(A OR B)` equals `(NOT A) AND (NOT B)`.
 - **Logical equivalence** — Two expressions are equivalent when their truth tables produce identical outputs for every combination of inputs.
 
@@ -107,8 +107,8 @@ The `NOT(A AND B)` column and the `(NOT A) OR (NOT B)` column agree on all four 
 ## Common Mistakes
 
 - **Reading OR as exclusive, assuming `true OR true` is false.** The logical OR is inclusive: it is true whenever at least one operand is true, including when both are true. Only `false OR false` is false.
-- **Negating a compound condition by flipping the operands but keeping AND or OR unchanged.** De Morgan's laws require flipping the operator too: `NOT(A AND B)` becomes `(NOT A) OR (NOT B)`, not `(NOT A) AND (NOT B)`.
-- **Assuming AND and OR have the same precedence and evaluating strictly left to right.** NOT binds tightest, then AND, then OR; `A OR B AND C` means `A OR (B AND C)`. Use parentheses when in doubt.
+- **Negating a compound condition by flipping the operands but keeping the AND/OR operator unchanged.** De Morgan's laws require flipping the operator too: `NOT(A AND B)` becomes `(NOT A) OR (NOT B)`, not `(NOT A) AND (NOT B)`.
+- **Assuming the AND/OR operators share one precedence and evaluating strictly left to right.** NOT binds tightest, then AND, then OR; `A OR B AND C` means `A OR (B AND C)`. Use parentheses when in doubt.
 - **Ordering a guard condition so the risky test runs first, then relying on it to prevent an error.** Short-circuiting only protects you if the safe check comes first: write `x != 0 and y / x > 2`, not the reverse.
 - **Believing the operator symbols differ in meaning across languages.** Python's `and`/`or`/`not` and C's `&&`/`||`/`!` denote the same operators with the same truth tables; only the spelling changes.
 
@@ -162,7 +162,7 @@ Boolean logic reduces every condition to true or false using three operators wit
    - C. A AND B
    - D. NOT(A) OR B
 
-   **Answer: B.** De Morgan's second law: `NOT(A OR B)` equals `(NOT A) AND (NOT B)`. The negation flips OR to AND and negates each operand. Option A keeps OR and is wrong; options C and D are different expressions entirely.
+   **Answer: B.** De Morgan's second law: `NOT(A OR B)` equals `(NOT A) AND (NOT B)`. The negation flips OR to AND, and negates each operand. Option A keeps OR and is wrong; options C and D are different expressions entirely.
 
 ## Sources
 

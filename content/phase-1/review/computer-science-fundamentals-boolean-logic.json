@@ -34,11 +34,11 @@
     },
     {
       "heading": "De Morgan's laws",
-      "body": "Two equivalences, named for Augustus De Morgan, a contemporary of Boole in the nineteenth-century algebra-of-logic tradition, describe how negation distributes across AND and OR. The first law: NOT(A AND B) is equivalent to (NOT A) OR (NOT B). The second law: NOT(A OR B) is equivalent to (NOT A) AND (NOT B). In words, when you push a NOT inside a parenthesis, each operand gets negated and the operator flips: AND becomes OR, and OR becomes AND.\n\nThese laws are not intuitions to trust on faith; they are provable by truth table. Build the table for NOT(A AND B) and the table for (NOT A) OR (NOT B), and the two output columns match on all four rows, which is exactly what logical equivalence means. The worked example below does this.\n\nDe Morgan's laws matter in practice because programmers frequently need to negate a condition. Suppose a feature should run only when a user is 'not (logged in and verified)'. By the first law, that is the same as 'not logged in, or not verified', which is often easier to read and to reason about. Getting this transformation wrong, for instance by flipping the operands but forgetting to change AND to OR, is a classic logic error that produces code that looks correct but behaves backwards on some inputs."
+      "body": "Two equivalences, named for Augustus De Morgan, a contemporary of Boole in the nineteenth-century algebra-of-logic tradition, describe how negation distributes over conjunctions and disjunctions. The first law: NOT(A AND B) is equivalent to (NOT A) OR (NOT B). The second law: NOT(A OR B) is equivalent to (NOT A) AND (NOT B). In words, when you push a NOT inside a parenthesis, each operand gets negated and the operator flips: AND becomes OR, and OR becomes AND.\n\nThese laws are not intuitions to trust on faith; they are provable by truth table. Build the table for NOT(A AND B) and the table for (NOT A) OR (NOT B), and the two output columns match on all four rows, which is exactly what logical equivalence means. The worked example below does this.\n\nDe Morgan's laws matter in practice because programmers frequently need to negate a condition. Suppose a feature should run only when a user is 'not (logged in and verified)'. By the first law, that is the same as 'not logged in, or not verified', which is often easier to read and to reason about. Getting this transformation wrong, for instance by flipping the operands but forgetting to change AND to OR, is a classic logic error that produces code that looks correct but behaves backwards on some inputs."
     },
     {
       "heading": "Short-circuit evaluation and program conditions",
-      "body": "Most languages evaluate AND and OR with short-circuit semantics: they stop as soon as the result is determined. For AND, if the first operand is false, the whole expression is already false regardless of the second operand, so the second operand is never evaluated. For OR, if the first operand is true, the whole expression is already true, so the second operand is skipped. Python's documentation states this directly: `and` only evaluates its second argument if the first is true, and `or` only evaluates its second argument if the first is false.\n\nShort-circuiting is not just an optimization; it changes what programs can safely express. A guard such as `x != 0 and y / x > 2` relies on it: when `x` is zero, the first operand is false, so the division is never attempted and no divide-by-zero error occurs. Reordering the operands would break that protection. A related language detail worth knowing is that in Python `and` and `or` return one of their operands rather than a strict True or False, and `not` always returns True or False; the truth-table behavior still holds when the result is used as a condition.\n\nAll of this exists to serve program decisions. A conditional statement evaluates a boolean expression and runs one branch when the result is true and another when it is false; a loop re-evaluates a boolean expression to decide whether to continue. Because these tests sit at the fork of every decision, a small logic mistake changes the program's behavior for real inputs. Reading truth tables, respecting precedence, and applying De Morgan's laws are the tools that let you write conditions you can actually verify."
+      "body": "Most languages evaluate AND together with OR using short-circuit semantics: they stop as soon as the result is determined. For AND, if the first operand is false, the whole expression is already false regardless of the second operand, so the second operand is never evaluated. For OR, if the first operand is true, the whole expression is already true, so the second operand is skipped. Python's documentation states this directly: `and` only evaluates its second argument if the first is true, and `or` only evaluates its second argument if the first is false.\n\nShort-circuiting is not just an optimization; it changes what programs can safely express. A guard such as `x != 0 and y / x > 2` relies on it: when `x` is zero, the first operand is false, so the division is never attempted and no divide-by-zero error occurs. Reordering the operands would break that protection. A related language detail worth knowing is that in Python `and` and `or` return one of their operands rather than a strict True or False, and `not` always returns True or False; the truth-table behavior still holds when the result is used as a condition.\n\nAll of this exists to serve program decisions. A conditional statement evaluates a boolean expression and runs one branch when the result is true and another when it is false; a loop re-evaluates a boolean expression to decide whether to continue. Because these tests sit at the fork of every decision, a small logic mistake changes the program's behavior for real inputs. Reading truth tables, respecting precedence, and applying De Morgan's laws are the tools that let you write conditions you can actually verify."
     }
   ],
   "vocabulary": [
@@ -72,7 +72,7 @@
     },
     {
       "term": "Short-circuit evaluation",
-      "definition": "Stopping evaluation of AND or OR as soon as the outcome is known, so the second operand may be skipped."
+      "definition": "Stopping evaluation of an AND/OR expression as soon as the outcome is known, so the second operand may be skipped."
     },
     {
       "term": "De Morgan's laws",
@@ -95,11 +95,11 @@
       "correction": "The logical OR is inclusive: it is true whenever at least one operand is true, including when both are true. Only 'false OR false' is false."
     },
     {
-      "mistake": "Negating a compound condition by flipping the operands but keeping AND or OR unchanged.",
+      "mistake": "Negating a compound condition by flipping the operands but keeping the AND/OR operator unchanged.",
       "correction": "De Morgan's laws require flipping the operator too: NOT(A AND B) becomes (NOT A) OR (NOT B), not (NOT A) AND (NOT B)."
     },
     {
-      "mistake": "Assuming AND and OR have the same precedence and evaluating strictly left to right.",
+      "mistake": "Assuming the AND/OR operators share one precedence and evaluating strictly left to right.",
       "correction": "NOT binds tightest, then AND, then OR; 'A OR B AND C' means 'A OR (B AND C)'. Use parentheses when in doubt."
     },
     {
@@ -179,7 +179,7 @@
       "difficulty": "application",
       "skill": "Applying short-circuit evaluation to a guard condition",
       "sourceIds": [
-        "python-docs-stdtypes-boolean"
+        "python-docs-stdtypes"
       ]
     },
     {
@@ -197,7 +197,7 @@
       "skill": "Evaluating a compound expression with precedence",
       "sourceIds": [
         "levin-discrete-open-introduction",
-        "python-docs-stdtypes-boolean"
+        "python-docs-stdtypes"
       ]
     },
     {
@@ -210,7 +210,7 @@
         "NOT(A) OR B"
       ],
       "correctIndex": 1,
-      "explanation": "De Morgan's second law: NOT(A OR B) equals (NOT A) AND (NOT B). The negation flips OR to AND and negates each operand. Option A keeps OR and is wrong; options C and D are different expressions entirely.",
+      "explanation": "De Morgan's second law: NOT(A OR B) equals (NOT A) AND (NOT B). The negation flips OR to AND, and negates each operand. Option A keeps OR and is wrong; options C and D are different expressions entirely.",
       "difficulty": "understanding",
       "skill": "Applying De Morgan's second law",
       "sourceIds": [
@@ -268,7 +268,7 @@
       "difficulty": "application",
       "skill": "Applying short-circuit evaluation to a guard condition",
       "sourceIds": [
-        "python-docs-stdtypes-boolean"
+        "python-docs-stdtypes"
       ]
     }
   ],
@@ -280,7 +280,7 @@
     "computer-science-fundamentals:foundations:algorithms"
   ],
   "sources": [
-    "python-docs-stdtypes-boolean",
+    "python-docs-stdtypes",
     "levin-discrete-open-introduction",
     "sep-algebra-of-logic-tradition"
   ],
@@ -291,7 +291,7 @@
     "researchedAt": "2026-08-19",
     "transformation": "Truth tables, De Morgan's laws, short-circuit behavior, and expression evaluations were verified in Python (Bash) before writing; all prose is original synthesis from authoritative references."
   },
-  "contentHash": "aa097cd0c9a3bd47",
+  "contentHash": "242291c17ea22bb6",
   "status": "source-verified",
   "public": false
 }
