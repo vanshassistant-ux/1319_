@@ -1,0 +1,148 @@
+# Industry and Industrial Location
+
+## In 30 Seconds
+
+Industry is the part of the economy that turns raw materials into goods, the secondary sector, and industrial geography asks where factories locate and why. The Industrial Revolution, beginning in Britain around the 1760s, gathered production into factories and cities. Alfred Weber's 1909 least-cost model explains location as a balance of transport, labor, and agglomeration costs. Across the twentieth century, rigid Fordist mass production gave way to flexible, globally dispersed manufacturing, shifting factories toward newly industrialized countries while older industrial regions deindustrialized.
+
+## Why This Matters
+
+Where things get made shapes wages, city growth, trade, and political power, so industrial location sits near the center of economic and urban life. Academically, this topic ties population, transportation, development, and globalization together: the same map of factories helps explain migration streams, regional inequality, and supply chains. Practically, the logic Weber described still guides real decisions, a steel mill near its ore, a brewery near its market, a research campus near skilled labor. Looking ahead, automation, reshoring, and shifting trade politics are redrawing the industrial map again, so understanding why manufacturing clusters where it does helps you read economic change rather than just react to it.
+
+## Learning Objectives
+
+- Distinguish the primary, secondary, tertiary, and quaternary sectors and place manufacturing among them.
+- Explain how the Industrial Revolution, beginning in Britain around the 1760s, reorganized where production happened.
+- Apply Alfred Weber's least-cost model, transport, labor, and agglomeration costs, to predict where an industry locates.
+- Distinguish bulk-reducing from bulk-gaining industries and their opposite location pulls.
+- Contrast Fordism with post-Fordism and explain the global shift of manufacturing and deindustrialization.
+
+## The College Version
+
+### From economic sectors to the factory age
+
+Economic activity is conventionally divided into sectors. The primary sector extracts raw materials from the earth: farming, fishing, forestry, mining. The secondary sector, where industry belongs, transforms those raw materials into finished goods through manufacturing. The tertiary sector provides services, from retail to transport to healthcare, and geographers often split off a quaternary sector for knowledge and information work such as research, finance, and software. These categories are a rough ladder rather than sealed boxes, but they let us track how an economy's center of gravity shifts over time. For most of human history the primary sector dominated. That changed with the Industrial Revolution, which began in Britain around the 1760s and is conventionally dated to roughly 1760 to 1840; the term itself was popularized by the historian Arnold Toynbee in 1884. It started in the textile industry, where a run of inventions let cloth be made faster and more cheaply, and it accelerated once steam power was harnessed to drive machinery. The decisive geographic change was the factory. Instead of goods being made by hand in scattered households, wage laborers and machines were gathered under one roof, and industry concentrated where power, materials, and workers could be assembled together. Cities swelled as people moved to factory jobs, in England the urban share of the population rose from under one-tenth in 1800 to roughly three-fifths by 1900, and manufacturing spread outward from Britain to continental Europe, North America, and beyond.
+
+### Weber and the least-cost model of industrial location
+
+Once factories existed, a natural question followed: why does a given industry settle where it does? The most influential early answer came from the German economist Alfred Weber (1868-1958), whose least-cost theory of industrial location was published in 1909. Weber assumed firms are profit-seeking and will choose the site with the lowest total cost. He identified three forces, transport costs, labor costs, and agglomeration, and treated transport as the strongest. He modeled it with a location triangle: a simple figure with the market at one corner and raw-material sources at the others, inside which lies the least-cost point that minimizes the combined cost of hauling inputs in and finished products out. Because transport cost rises with both weight and distance, the pull depends on what happens to a material during manufacturing. A bulk-reducing industry loses weight as it processes, a copper smelter or a lumber mill discards most of its input as waste, so it locates near the raw material to avoid shipping worthless bulk. A bulk-gaining industry assembles lighter inputs into a heavier or more awkward product, so it locates near the market. Labor can override transport: if wages are much lower somewhere, a firm may pull away from the least-transport site to capture the saving. Agglomeration, the clustering of firms that share suppliers, infrastructure, and a skilled workforce, is a third pull that can concentrate industry in a place none of the individual firms would have chosen alone. Weber's model is a deliberate simplification, it sets aside politics, history, and changing technology, but its three-way tug among resource, labor, and market orientation remains the backbone of how geographers reason about location.
+
+### Fordism, post-Fordism, and flexible production
+
+The twentieth century reorganized not just where factories stood but how they worked. Fordism names the system of standardized mass production associated with Henry Ford's moving assembly line: simplify and specialize each job, standardize parts, produce enormous quantities of identical goods, and pay wages high enough that workers can buy what they make. Fordist plants drove much of the century's manufacturing growth and put cars and appliances within reach of ordinary households, but they were rigid, retooling a line for a new product was slow and expensive. From roughly the 1980s a different model, often called post-Fordism or flexible production, took hold. Instead of making a whole product in one giant plant, firms break production into components that can be made wherever it is cheapest or best and then assembled elsewhere, using flexible machinery and just-in-time delivery to turn out small or large batches as demand requires. A single wireless mouse or smartphone may be designed in one country, built from parts made in several others, and assembled in yet another before being sold worldwide. This flexibility is what made the geographic dispersal of manufacturing across borders possible in the first place.
+
+### The global shift and deindustrialization
+
+Flexible production combined with cheaper transport and communication to produce what geographers call the global shift: the movement of manufacturing away from the older industrial regions of Europe and North America toward newly industrialized countries (NICs). Places such as South Korea, Taiwan, and later coastal China built export manufacturing on the strength of lower labor costs, and as their own wages rose, some production moved on again, for example toward Vietnam and Indonesia. In the older industrial regions the mirror image is deindustrialization: manufacturing's share of jobs and output falls, factory towns lose their economic base, and employment tilts toward services. Manufacturing income in the long-industrialized economies is generally reckoned to have peaked in the mid-1960s to mid-1970s before declining as a share of the economy. Deindustrialization does not always mean less is made, automation lets developed countries produce more goods with far fewer workers, but it does mean the geography of who makes what has been redrawn. Reading that redrawing is exactly what industrial geography is for, and it connects directly to economic development, transportation, and globalization, which neighboring topics treat in depth.
+
+## Key Vocabulary
+
+- **Industry** — Economic activity that processes raw materials into finished goods; in the sector scheme it is the secondary sector, or manufacturing.
+- **Primary sector** — The part of the economy that extracts raw materials directly from the earth, such as agriculture, fishing, forestry, and mining.
+- **Secondary sector** — The part of the economy that manufactures finished goods from primary-sector raw materials; the home of industry.
+- **Tertiary sector** — The part of the economy that provides services rather than physical goods, such as retail, transport, and healthcare.
+- **Least-cost theory** — Alfred Weber's 1909 model holding that a manufacturer locates at the site of lowest total cost, weighing transport, labor, and agglomeration.
+- **Agglomeration** — The clustering of firms in one area so they can share suppliers, infrastructure, services, and a skilled labor pool, lowering costs for all.
+- **Bulk-reducing industry** — An industry whose product weighs much less than its raw inputs, so it locates near the material source to avoid shipping waste; for example, ore smelting.
+- **Fordism** — A system of standardized mass production using a moving assembly line to make large quantities of identical goods, associated with Henry Ford.
+- **Post-Fordism** — Flexible production that replaced rigid mass production from about the 1980s, dispersing components across many places and making varied batch sizes on demand.
+- **Deindustrialization** — The decline of manufacturing's share of employment and output in an established industrial region as production shifts elsewhere and jobs move to services.
+
+## Eli-10
+
+Industry means making things, taking raw materials and turning them into products in factories. Human geographers care less about how a factory works and more about where it sits and why. The short story: long ago almost everyone farmed. Then, starting in Britain in the 1760s, machines and factories changed everything, and huge numbers of people moved to cities for factory jobs. A thinker named Alfred Weber pointed out that a factory owner picks a spot to keep costs low, mostly the cost of moving heavy things. If making something throws away a lot of weight, like melting metal out of rock, you build close to the mine. If your product turns bulky and awkward, you build close to your customers. Later, companies stopped making everything in one giant plant and instead made the pieces in whichever country was cheapest, then snapped them together somewhere else. That is why so many factories moved from old industrial cities to newer ones around the world.
+
+## Eli's Analogy
+
+Think of deciding where to set up a lemonade stand when the lemons are heavy and grow far away, but cups and sugar are everywhere. If squeezing the lemons lets you carry just a light bottle of juice, you set up near the trees and bring the juice to buyers. If instead you must lug whole crates of lemons to the customers, you set up right next to the customers. Weber's model is that same weighing: put the factory wherever the total carrying cost comes out smallest.
+
+**Where the analogy breaks down:** The lemonade picture captures transport cost but leaves out the other pulls Weber named: firms also chase cheap labor and the advantages of clustering near other companies, and they weigh taxes, politics, and technology the stand ignores. And unlike a stand you can move in an afternoon, a steel mill or an assembly plant is a long-term, expensive commitment, which is why industrial location changes slowly and whole regions can be left with factories after the logic that built them has moved on.
+
+## Worked Example
+
+Compare two factories using Weber's logic. First, an aluminum smelter: its raw material, bauxite ore, is heavy, and smelting throws away most of that weight as waste, so this is a bulk-reducing industry. Shipping the ore is expensive and shipping the finished metal is comparatively cheap, so the least-cost site sits near the ore body or near cheap power, not near the customer. Now a manufacturer of travel trailers: it takes in relatively compact steel, panels, and fittings and assembles them into a large, awkward object that is costly to transport. That is a bulk-gaining industry, so its least-cost site sits near its market. Same model, opposite conclusions, because the decisive question in each case is what manufacturing does to weight, and therefore to transport cost, between input and output.
+
+## Common Mistakes
+
+- **Treating "industry" as the whole economy rather than one sector.** Industry is the secondary sector, manufacturing. It sits alongside the primary (extraction), tertiary (services), and quaternary (information) sectors, and in many modern economies it is no longer the largest.
+- **Assuming every factory wants to be near its customers.** It depends on weight. Bulk-reducing industries locate near raw materials to avoid shipping waste, while bulk-gaining industries locate near the market. Weber's model turns on which way transport cost points.
+- **Thinking Weber's model claims transport is the only thing that matters.** Weber called transport the strongest factor, but his model explicitly weighs labor costs and agglomeration too, and either can pull a plant away from the least-transport site.
+- **Using "Industrial Revolution" loosely without a time or place.** It began in Britain around the 1760s and is conventionally dated to roughly 1760 to 1840, starting in textiles and accelerating with steam power. Attach that date and place rather than treating it as a vague era.
+- **Reading deindustrialization as proof that developed countries make nothing anymore.** Deindustrialization means manufacturing's share of jobs and output falls and production shifts elsewhere, but automation often lets those economies make more goods with far fewer workers.
+
+## Compare / Contrast
+
+- **Bulk-reducing industry vs Bulk-gaining industry** — A bulk-reducing industry (e.g., ore smelting) yields a product lighter than its inputs, so it locates near the raw material; a bulk-gaining industry (e.g., trailer assembly) yields a heavier or bulkier product, so it locates near the market. The difference is which direction transport cost pushes.
+- **Fordism vs Post-Fordism** — Fordism makes huge quantities of identical goods on a rigid assembly line, typically concentrated in one large plant. Post-Fordism uses flexible machinery and just-in-time delivery to make varied batch sizes with components dispersed across many places and countries.
+- **Primary sector vs Secondary sector** — The primary sector extracts raw materials from the earth (mining, farming, forestry); the secondary sector processes those materials into finished goods (manufacturing). Industrial geography is chiefly concerned with the secondary sector.
+
+## Key Takeaway
+
+Industry is the secondary sector, and industrial geography explains where manufacturing locates. Since the Industrial Revolution (Britain, roughly 1760 to 1840), that question has been analyzed through Weber's 1909 least-cost model of transport, labor, and agglomeration, and reshaped by the move from Fordist mass production to flexible, globally dispersed manufacturing.
+
+## Practice Question Bank
+
+1. **In the standard classification of economic sectors, manufacturing, turning raw materials into finished goods, belongs to which sector?** (recall)
+   - A. The secondary sector ✓
+   - B. The primary sector
+   - C. The tertiary sector
+   - D. The quaternary sector
+
+   Manufacturing is the secondary sector. The primary sector extracts raw materials; the tertiary sector provides services; the quaternary sector handles knowledge and information work. Only the secondary sector processes raw materials into goods.
+
+2. **The Industrial Revolution is conventionally dated to which period and place?** (recall)
+   - A. Ancient Rome, around 100 CE
+   - B. The United States, 1870s to 1920s
+   - C. Northern Italy, the 1500s
+   - D. Britain, roughly 1760 to 1840 ✓
+
+   The Industrial Revolution began in Britain around the 1760s and is conventionally dated to about 1760 to 1840, starting in textiles and accelerating with steam power. The other options misplace it in time or geography.
+
+3. **A copper smelter loses most of its input weight as waste rock during processing. Following Weber's least-cost logic, where should it locate to minimize transport costs?** (application)
+   - A. Near its largest consumer market, wherever that is
+   - B. Near the copper ore source ✓
+   - C. Wherever wages are lowest, regardless of transport
+   - D. At a port chosen at random, far from both ore and market
+
+   Smelting is bulk-reducing: the finished metal weighs far less than the ore, so shipping the ore is the costly leg. Weber's model puts a bulk-reducing industry near its raw material to avoid transporting waste.
+
+4. **According to Weber's least-cost theory, which set correctly lists the three factors that shape where an industry locates?** (understanding)
+   - A. Climate, soil quality, and elevation
+   - B. Language, religion, and ethnicity
+   - C. Transport costs, labor costs, and agglomeration ✓
+   - D. Tariffs, exchange rates, and interest rates
+
+   Weber identified transport costs, labor costs, and agglomeration as the three forces determining industrial location, treating transport as the strongest. Physical, cultural, and macroeconomic variables are not his three factors.
+
+5. **A company designs a product in one country, makes its components in several low-wage countries, and assembles them in another before selling globally. This flexible, geographically dispersed arrangement best illustrates which development?** (analysis)
+   - A. A return to primary-sector dominance
+   - B. Weber's location triangle for a single self-contained factory
+   - C. Classic Fordist mass production concentrated in one plant
+   - D. Post-Fordism and the global shift of manufacturing ✓
+
+   Breaking production into components made wherever costs are lowest and assembled elsewhere is post-Fordist flexible production, which underlies the global shift of manufacturing toward newly industrialized countries. It is the opposite of Fordist single-plant production.
+
+## Sources
+
+- Dastrup, R. Adam. *Introduction to Human Geography*, 5.1 The Industrial Revolution (Pressbooks, CC BY 4.0). https://pressbooks.pub/humangeography/chapter/5-1/
+- Dastrup, R. Adam. *Introduction to Human Geography*, 5.2 Economic Geography (Pressbooks, CC BY 4.0). https://pressbooks.pub/humangeography/chapter/5-2/
+- Dorrell, David, and Joseph P. Henderson. *Introduction to Human Geography*, 11.3 Factors for Location (Social Sci LibreTexts, CC BY 4.0). https://socialsci.libretexts.org/Bookshelves/Geography_(Human)/Introduction_to_Human_Geography_(Dorrell_and_Henderson)/11%3A_Industry/11.03%3A_Factors_for_Location
+- Crain, Barbara. *Introduction to Cultural Geography*, 13.3 The Industrial Landscape (NVCC Pressbooks, CC BY-NC-SA 4.0). https://pressbooks.nvcc.edu/nolgeo210/chapter/13-3-the-industrial-landscape/
+- Fleming, Rachel. *Cultural Geography (C-ID GEOG 120)*, 11.10 Industry Introduction (Social Sci LibreTexts, CC BY-NC 4.0). https://socialsci.libretexts.org/Courses/Coalinga_College/Cultural_Geography__(C-ID_GEOG_120)/11%3A_Geographies_of_Economies_and_Industries/11.10%3A_Industry_Introduction
+- Fleming, Rachel. *Cultural Geography (C-ID GEOG 120)*, 11.15 Global Production (Social Sci LibreTexts, CC BY-NC 4.0). https://socialsci.libretexts.org/Courses/Coalinga_College/Cultural_Geography__(C-ID_GEOG_120)/11%3A_Geographies_of_Economies_and_Industries/11.15%3A_Global_Production
+- Cartwright, Mark. "The British Industrial Revolution" (World History Encyclopedia, reference only). https://www.worldhistory.org/British_Industrial_Revolution/
+- Rodrigue, Jean-Paul. "Weber's Location Triangle," *The Geography of Transport Systems* (reference only). https://transportgeography.org/contents/chapter2/transport-and-location/weber-location-triangle/
+
+## Related Topics
+
+- human-geography:foundations:economic-development
+- human-geography:foundations:transportation
+- human-geography:foundations:globalization
+- human-geography:foundations:cities
+- human-geography:foundations:agriculture
+
+## Editorial Metadata
+
+- **Editorial status:** READY_TO_PUBLISH
+- **Researched:** 2026-08-19
+- **Rights:** CC BY, CC BY-NC, and CC BY-NC-SA OER plus reference-only sources; facts synthesized, no source prose reproduced.
+- **Answer key (verified from file):** 1-A, 2-D, 3-B, 4-C, 5-D.
