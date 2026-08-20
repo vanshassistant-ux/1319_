@@ -1,0 +1,140 @@
+{
+  "topicId": "web-development:foundations:domains",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {
+    "core": [
+      "domain-name labels and hierarchy",
+      "top-level domains and subdomains",
+      "registrant, registrar, and registry-operator roles",
+      "domain names as URL hostnames",
+      "distinguishing registration from web hosting"
+    ],
+    "supporting": [
+      "URL authority and host components",
+      "hostname-versus-path parsing",
+      "generic top-level-domain registration agreements"
+    ],
+    "outOfScope": [
+      "DNS resolution, records, caching, and delegation mechanics",
+      "HTTP request and response mechanics",
+      "HTTPS and certificate operation",
+      "hosting-platform configuration",
+      "domain-transfer procedures or legal trademark disputes"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Domain names are organized as dot-separated labels in a hierarchy; the rightmost label is the top-level domain in examples such as whois.icann.org.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "icann-about-domain-names"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A party that has registered a domain can create names below it, such as subdomains, subject to the relevant naming rules.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "icann-about-domain-names"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A domain name is distinct from a website and a URL; web hosting or another service is still needed to make an Internet presence functional and accessible.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "icann-about-domain-names"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "For generic top-level domains, a registrant may register through an ICANN-accredited registrar, and the registrant-registrar relationship is governed by a registration agreement.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "icann-accredited-registrars"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "In a typical web URL authority, the domain indicates which web server is requested, while a path identifies a resource location handled by that server.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "mdn-url-relative"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The generic URI standard treats a host as a subcomponent of authority and describes DNS-oriented registered names as domain labels separated by dots.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "rfc-3986-uri-syntax"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft did not contain a subject-specific, source-verified explanation of domain names."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic boilerplate with a verified distinction among domain names, URLs, registration roles, and hosting.",
+    "Added explicit scope boundaries so DNS resolution and HTTP mechanics remain with their dedicated lessons.",
+    "Added original URL-parsing and subdomain examples supported by the cited standards and documentation."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "icann-about-domain-names",
+      "title": "About Domain Names",
+      "provider": "Internet Corporation for Assigned Names and Numbers",
+      "url": "https://www.icann.org/resources/pages/about-domain-names-2018-08-30-en",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-20",
+      "notes": "Read directly. Supports domain-name hierarchy, dot-separated labels, creating subdomains below a registered name, and the distinction among a domain name, website, URL, and hosting. No source prose was reproduced."
+    },
+    {
+      "id": "icann-accredited-registrars",
+      "title": "Welcome Accredited Registrars",
+      "provider": "Internet Corporation for Assigned Names and Numbers",
+      "url": "https://www.icann.org/en/contracted-parties/accredited-registrars",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-20",
+      "notes": "Read directly. Supports the role of an ICANN-accredited registrar for generic-top-level-domain registration and the registrant-registrar registration agreement. No source prose was reproduced."
+    },
+    {
+      "id": "mdn-url-relative",
+      "title": "Understanding URLs",
+      "provider": "MDN Web Docs",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_URL",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-20",
+      "notes": "Read directly. Supports absolute and relative URL explanation. The concrete resolution examples are original applications of the documented resolution model."
+    },
+    {
+      "id": "rfc-3986-uri-syntax",
+      "title": "RFC 3986: Uniform Resource Identifier (URI): Generic Syntax",
+      "provider": "IETF / RFC Editor",
+      "url": "https://www.rfc-editor.org/rfc/rfc3986.html",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-20",
+      "notes": "Read directly. Supports generic URI components, the authority and host relationship, and dot-separated DNS-oriented registered names. No source prose was reproduced."
+    }
+  ]
+}

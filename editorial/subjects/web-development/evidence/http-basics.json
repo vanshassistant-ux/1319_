@@ -1,0 +1,26 @@
+{
+  "topicId": "web-development:foundations:http-basics",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {
+    "core": ["HTTP request-response model", "request method and target", "response status codes", "header fields", "GET and POST semantics"],
+    "supporting": ["browser as common client", "response content", "broad status-code classes", "authorized Network-panel observation"],
+    "outOfScope": ["domain registration", "DNS resolution", "HTTPS or TLS", "cookies and browser storage", "hosting configuration", "authentication and exploit instruction"]
+  },
+  "claims": [
+    {"claim": "HTTP is a stateless application-level protocol whose shared semantics cover request-response communication.", "claimType": "TECHNICAL", "sourceIds": ["rfc-9110-http-semantics"], "status": "supported"},
+    {"claim": "HTTP is a client-server protocol for fetching resources, and a browser commonly initiates the request.", "claimType": "TECHNICAL", "sourceIds": ["mdn-http-overview"], "status": "supported"},
+    {"claim": "An HTTP message includes control data, header fields, and potentially content; request control data includes method and target, while response control data includes a status code.", "claimType": "TECHNICAL", "sourceIds": ["rfc-9110-http-semantics"], "status": "supported"},
+    {"claim": "GET requests transfer of a current selected representation of the target resource, while POST asks the target resource to process enclosed content according to its own semantics.", "claimType": "TECHNICAL", "sourceIds": ["rfc-9110-http-semantics"], "status": "supported"},
+    {"claim": "HTTP response status codes are three-digit integers from 100 through 599, with the first digit defining the response class.", "claimType": "TECHNICAL", "sourceIds": ["rfc-9110-http-semantics"], "status": "supported"},
+    {"claim": "The 204 status indicates successful fulfillment with no additional response content, and 404 Not Found is a 4xx client-error-class status.", "claimType": "TECHNICAL", "sourceIds": ["rfc-9110-http-semantics"], "status": "supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft supplied only generic boilerplate and did not explain any HTTP message, method, header, or status-code semantics."],
+  "correctionsNeeded": ["Replaced the generated draft with a bounded, source-verified introduction to HTTP exchanges and explicitly separated DNS, HTTPS, cookies, storage, hosting, and security from this lesson's scope."],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {"id": "rfc-9110-http-semantics", "title": "RFC 9110 — HTTP Semantics", "provider": "IETF", "url": "https://www.rfc-editor.org/rfc/rfc9110.html", "sourceType": "standards-body", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-20", "notes": "Read directly. Primary standard supporting HTTP's request-response semantics, message components, GET and POST, and status-code meanings. No source prose was reproduced."},
+    {"id": "mdn-http-overview", "title": "MDN Web Docs — Overview of HTTP", "provider": "Mozilla / MDN Web Docs", "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "license": "CC BY-SA 2.5", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-20", "notes": "Read directly. Supports the browser-initiated client-server lifecycle and page-resource context. No source prose was reproduced."}
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "id": "web-development:foundations:dns",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "dns",
+  "title": "DNS",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 10,
+  "tags": [
+    "web-development",
+    "dns",
+    "networking",
+    "domain-names",
+    "caching"
+  ],
+  "in30Seconds": "The Domain Name System (DNS) is a distributed naming system for the Internet. It lets software ask for information associated with a domain name, such as an address record. A resolver makes or coordinates those lookups, name servers hold or provide DNS data, and a cache can temporarily reuse an earlier answer. A time to live (TTL) limits how long a record may be cached. DNS supplies naming information; it does not download a web page or establish HTTPS.",
+  "whyItMatters": "People use names such as example.edu, while network software needs precise information to reach a named service. DNS connects those two needs. Knowing its roles makes ordinary web behavior easier to reason about: a name may resolve before an HTTP request begins, a recent answer may come from a cache, and a change to a DNS record may not appear everywhere at once. It also helps students avoid a common debugging mistake: calling every failure involving a website a DNS failure.",
+  "learningObjectives": [
+    "Define DNS, a resolver, a name server, and a resource record.",
+    "Distinguish a domain name from the information returned for that name.",
+    "Explain the high-level role of A records and CNAME records.",
+    "Interpret a TTL as a cacheability limit rather than a delivery guarantee.",
+    "Trace a bounded name-lookup scenario without confusing DNS with HTTP or HTTPS."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "DNS is a naming system with several roles",
+      "body": "Internet applications need a way to associate readable names with technical information. DNS supplies that naming layer. RFC 1034 describes the domain name space as a tree: labels form a hierarchy, and each node can have information associated with it. A name such as portal.school.example is therefore not merely a decorative website label. It is an identifier in a structured namespace. Different parts of that tree can be served by different organizations and name servers, which makes DNS distributed rather than one universal phone book held by one computer.\n\nIt helps to separate three actors. A user program is the application that wants an answer, perhaps a browser or command-line utility. A resolver is the component that handles DNS lookup work on behalf of that program. A name server is a server that supplies DNS information. In practice, a device may use an operating-system resolver and a nearby recursive resolver supplied by a network or service. Those implementation details vary, but the conceptual division remains useful: an application asks for information; a resolver obtains or reuses it; name servers answer from the relevant DNS data.\n\nA DNS name is not the same thing as an IP address, a web server, or a web page. A name can be used to ask for an address record, but DNS can also hold other kinds of data. An address lets network software direct traffic toward an endpoint; a server then handles later application work. A browser normally performs an HTTP request only after it has enough destination information to connect. HTTPS adds protections to the later HTTP exchange. Those are related steps in a web visit, but they are separate systems with separate failure modes."
+    },
+    {
+      "heading": "Resource records say what kind of answer is being requested",
+      "body": "DNS data is organized as resource records. RFC 1035 specifies fields including a record owner name, type, class, TTL, and record data. The type matters because the same domain name can be associated with several kinds of information. For a basic web-development example, an A record contains an IPv4 host address. A CNAME record identifies the canonical name for an alias. NS records identify name servers for a zone, and MX records identify mail-exchange routing information. The record type tells a resolver how to interpret the record data; it is not just a label attached after the fact.\n\nSuppose a program asks for an A record for learn.example. A usable answer can provide an IPv4 address associated with that name. If the name is instead configured as an alias through a CNAME record, the resolver may need to follow the canonical-name relationship to obtain the address information that the program requested. This is why a lookup can involve more than one record even when the user entered only one hostname. The details of referral following and recursion are specified more deeply in DNS standards, but the key idea for a web developer is simpler: a question has a name and a requested record type, and the answer must be read in that context.\n\nRecord types also prevent an imprecise mental model. DNS does not contain one generic value called the answer for every name. Asking for an address record is different from asking which name servers serve a zone or which destination handles mail. A DNS tool may display several rows because several records are relevant to the question. Reading the name, type, and data together is more reliable than treating any visible IP address as proof that every service under that name is working."
+    },
+    {
+      "heading": "Resolvers and caches trade freshness for fewer repeated lookups",
+      "body": "A resolver can answer from cached information when it has a still-usable result. Caching reduces repeated work and can make later lookups faster, but it means an answer is not necessarily fetched anew for every visit. RFC 1035 defines the TTL field as the interval for which a resource record may be cached before the source must be consulted again. A TTL is therefore a cache-control value attached to DNS data. It is not a promise that a browser will load quickly, that a server is healthy, or that every user sees a change at the same instant.\n\nA simple timeline illustrates the effect. Imagine that a resolver receives an address record with a TTL of 300 seconds. It can retain that record for up to five minutes under the DNS rules governing that cached data. If another local client asks the same resolver for the same record type while that answer remains usable, the resolver may reply from its cache. After the TTL expires, the resolver must seek refreshed information before treating that cached record as current. A student should not infer the original TTL solely from one displayed remaining value: tools commonly show the time left in the cache at the moment of the response.\n\nCaching is why DNS changes require planning. An organization can update authoritative DNS data, yet resolvers that already obtained the previous record may continue using it until their cached TTL expires. Other factors, including application behavior and multiple caching layers, can affect what an individual device observes. The disciplined conclusion is limited: TTL bounds the permitted caching of that record. It does not diagnose all connection problems and does not justify guessing about a particular user's network."
+    },
+    {
+      "heading": "A focused lookup workflow",
+      "body": "When investigating a name-resolution question in an authorized development environment, start with a precise query. Ask which hostname is being looked up and which record type the application needs. Then examine whether a resolver returns an answer, whether the answer has the expected type, and whether caching could explain a recently changed value. Command-line tools such as dig can show the record rows returned for a requested type, but their presentation is diagnostic evidence rather than a universal verdict. A result can be affected by the resolver queried, the time of the query, and the DNS data available then.\n\nKeep the next protocol boundary clear. A successful DNS answer means the resolver returned naming information. It does not prove that a TCP connection will succeed, that TLS authentication will succeed, that an HTTP server will return a desired response, or that page content is correct. Conversely, a page failure does not prove DNS failed. The useful habit is to locate the stage for which there is evidence, then investigate that stage rather than changing unrelated settings."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "DNS",
+      "definition": "The Domain Name System, which provides information that maps hostnames to IP addresses."
+    },
+    {
+      "term": "domain name space",
+      "definition": "The hierarchical tree of DNS names in which nodes can have associated information."
+    },
+    {
+      "term": "resolver",
+      "definition": "Software that obtains or reuses DNS answers on behalf of an application."
+    },
+    {
+      "term": "name server",
+      "definition": "A server that provides DNS information for names in the system."
+    },
+    {
+      "term": "resource record",
+      "definition": "A typed DNS data entry with fields such as an owner name, TTL, and record data."
+    },
+    {
+      "term": "A record",
+      "definition": "A DNS resource-record type that carries an IPv4 host address."
+    },
+    {
+      "term": "CNAME record",
+      "definition": "A DNS resource-record type that identifies the canonical name for an alias."
+    },
+    {
+      "term": "TTL",
+      "definition": "A time-to-live value that specifies how long a DNS resource record may be cached before the source is consulted again."
+    },
+    {
+      "term": "DNS cache",
+      "definition": "Stored DNS information that a resolver can reuse while the relevant record remains cacheable."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "DNS helps a computer look up information connected to a name. When you type a site name, your computer usually asks a resolver, which checks whether it already knows a recent answer. If it does not, the resolver asks the right name servers. The answer might say which address belongs with the name. It can also say something else, because DNS stores different kinds of records. The answer is useful for starting a connection, but it is not the web page itself.",
+    "analogy": "Think of a school directory. A student asks where a club meets, and the office checks a directory card. The card has a category and a value: a meeting location is different from a club leader or a mail address. The office may keep a recent copy of the card, but the card has a note saying when the copy must be checked again. DNS works similarly: a resolver looks up typed records, and a TTL limits how long a cached copy may be reused.",
+    "analogyLimits": "A DNS answer is not a paper card and a resolver does much more than an office clerk. The analogy also does not mean that a successful lookup guarantees a successful website visit. DNS provides naming data; the later network connection and web exchange are separate."
+  },
+  "workedExample": "In an authorized terminal, run dig example.com A +noall +answer. This worker executed that command with Bun before publication; it returned A-record rows, although the live addresses and remaining TTLs are expected to change. A row is read as name, remaining TTL, class, type, and record data. For a stable format exercise, imagine the row learn.example. 300 IN A 198.51.100.23. It means the query received an IPv4 address record with 300 seconds of cacheability at that point. It does not mean that an HTTP request succeeded. If a later query shows a smaller TTL, that can be a cached answer counting down; after it expires, the resolver must refresh rather than continue treating the old record as current.",
+  "commonMistakes": [
+    {
+      "mistake": "Saying DNS downloads the website.",
+      "correction": "DNS returns naming information; a later connection and HTTP or HTTPS exchange obtain web resources."
+    },
+    {
+      "mistake": "Treating a domain name, an IP address, and a server as interchangeable.",
+      "correction": "A name identifies a DNS lookup target, an address supports network delivery, and a server handles later service work."
+    },
+    {
+      "mistake": "Assuming TTL is a countdown to a website outage or a guaranteed propagation time.",
+      "correction": "TTL limits caching of a DNS record; it does not guarantee availability or describe every cache layer."
+    },
+    {
+      "mistake": "Reading an A record as proof that every service at a name works.",
+      "correction": "An A record supplies IPv4 address data; test later protocol stages separately when authorized."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "domain name",
+      "b": "IP address",
+      "distinction": "A domain name is an identifier in the DNS name space; an IP address is network address information that DNS can return for a name."
+    },
+    {
+      "a": "resolver",
+      "b": "name server",
+      "distinction": "A resolver obtains or reuses answers for an application; a name server provides DNS information."
+    },
+    {
+      "a": "A record",
+      "b": "CNAME record",
+      "distinction": "An A record carries an IPv4 address, while a CNAME record names the canonical target of an alias."
+    },
+    {
+      "a": "DNS lookup",
+      "b": "HTTP request",
+      "distinction": "A DNS lookup obtains naming information; an HTTP request exchanges a request and response for web resources."
+    }
+  ],
+  "keyTakeaway": "DNS is a distributed system for typed information about names. A resolver can use a cached record only for its permitted TTL, and a successful DNS answer should be understood as one step before—not proof of—a later web connection and request.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:dns:1",
+      "prompt": "What does the type field of a DNS resource record primarily tell a resolver?",
+      "options": [
+        "Which browser rendered the name",
+        "Whether the web page was downloaded",
+        "How to interpret the record's data",
+        "Whether the domain was purchased recently"
+      ],
+      "correctIndex": 2,
+      "explanation": "The record type identifies the kind of DNS data, such as an A record or CNAME record, so it determines how the record data is interpreted. It does not describe a browser, a downloaded page, or registration timing.",
+      "difficulty": "recall",
+      "skill": "Identify the role of a DNS record type",
+      "sourceIds": [
+        "rfc-1035-domain-names-implementation-and-specification"
+      ]
+    },
+    {
+      "id": "web-development:foundations:dns:2",
+      "prompt": "A browser needs address information for a hostname and its resolver has no usable cached answer. What is the resolver's relevant next job?",
+      "options": [
+        "Render the site's HTML into pixels",
+        "Encrypt an HTTP response",
+        "Register the hostname with a registrar",
+        "Obtain DNS information from name servers"
+      ],
+      "correctIndex": 3,
+      "explanation": "Without a usable cached answer, a resolver obtains DNS information through the name-server system. Rendering, HTTP encryption, and domain registration are different concerns.",
+      "difficulty": "application",
+      "skill": "Apply the resolver role to a lookup scenario",
+      "sourceIds": [
+        "rfc-1034-domain-names-concepts-and-facilities"
+      ]
+    },
+    {
+      "id": "web-development:foundations:dns:3",
+      "prompt": "Which statement correctly separates DNS from a later web transaction?",
+      "options": [
+        "DNS transfers the HTML response body after it finds a name",
+        "DNS can provide naming information before an HTTP request exchanges web resources",
+        "DNS makes TLS certificates unnecessary",
+        "DNS guarantees that the named website will return a successful response"
+      ],
+      "correctIndex": 1,
+      "explanation": "DNS provides name-related information, while HTTP performs a later request and response exchange. DNS neither transfers an HTML body nor replaces TLS or guarantees a successful website response.",
+      "difficulty": "understanding",
+      "skill": "Distinguish DNS from later web protocols",
+      "sourceIds": [
+        "rfc-1034-domain-names-concepts-and-facilities",
+        "rfc-9110-http-semantics"
+      ]
+    },
+    {
+      "id": "web-development:foundations:dns:4",
+      "prompt": "A resolver cached an A record with a TTL of 300 seconds. Two minutes later, another local client asks that resolver for the same record. Which conclusion is justified?",
+      "options": [
+        "The resolver may still use the cached record because its TTL has not yet expired",
+        "The resolver must register the domain again before replying",
+        "The record proves the site's HTTP response will be successful",
+        "The TTL means every Internet user must see the same answer at the same moment"
+      ],
+      "correctIndex": 0,
+      "explanation": "A 300-second TTL permits caching for up to five minutes, so after two minutes the cached record may still be usable. TTL does not cause registration, guarantee HTTP success, or synchronize all users' observations.",
+      "difficulty": "application",
+      "skill": "Reason about DNS cache timing",
+      "sourceIds": [
+        "rfc-1035-domain-names-implementation-and-specification",
+        "rfc-2181-clarifications-to-the-dns-specification"
+      ]
+    },
+    {
+      "id": "web-development:foundations:dns:5",
+      "prompt": "What information does a CNAME record identify?",
+      "options": [
+        "The number of HTTP requests a browser may send",
+        "The encryption key for HTTPS",
+        "The canonical name for an alias",
+        "The remaining cache time for every record at a domain"
+      ],
+      "correctIndex": 2,
+      "explanation": "RFC 1035 defines CNAME as the canonical or primary name for an alias. It does not define HTTP limits, HTTPS keys, or a universal cache duration.",
+      "difficulty": "recall",
+      "skill": "Recognize the purpose of a CNAME record",
+      "sourceIds": [
+        "rfc-1035-domain-names-implementation-and-specification"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:dns:1",
+      "prompt": "What does the type field of a DNS resource record primarily tell a resolver?",
+      "options": [
+        "Which browser rendered the name",
+        "Whether the web page was downloaded",
+        "How to interpret the record's data",
+        "Whether the domain was purchased recently"
+      ],
+      "correctIndex": 2,
+      "explanation": "The record type identifies the kind of DNS data, such as an A record or CNAME record, so it determines how the record data is interpreted. It does not describe a browser, a downloaded page, or registration timing.",
+      "difficulty": "recall",
+      "skill": "Identify the role of a DNS record type",
+      "sourceIds": [
+        "rfc-1035-domain-names-implementation-and-specification"
+      ]
+    },
+    {
+      "id": "web-development:foundations:dns:2",
+      "prompt": "A browser needs address information for a hostname and its resolver has no usable cached answer. What is the resolver's relevant next job?",
+      "options": [
+        "Render the site's HTML into pixels",
+        "Encrypt an HTTP response",
+        "Register the hostname with a registrar",
+        "Obtain DNS information from name servers"
+      ],
+      "correctIndex": 3,
+      "explanation": "Without a usable cached answer, a resolver obtains DNS information through the name-server system. Rendering, HTTP encryption, and domain registration are different concerns.",
+      "difficulty": "application",
+      "skill": "Apply the resolver role to a lookup scenario",
+      "sourceIds": [
+        "rfc-1034-domain-names-concepts-and-facilities"
+      ]
+    },
+    {
+      "id": "web-development:foundations:dns:3",
+      "prompt": "Which statement correctly separates DNS from a later web transaction?",
+      "options": [
+        "DNS transfers the HTML response body after it finds a name",
+        "DNS can provide naming information before an HTTP request exchanges web resources",
+        "DNS makes TLS certificates unnecessary",
+        "DNS guarantees that the named website will return a successful response"
+      ],
+      "correctIndex": 1,
+      "explanation": "DNS provides name-related information, while HTTP performs a later request and response exchange. DNS neither transfers an HTML body nor replaces TLS or guarantees a successful website response.",
+      "difficulty": "understanding",
+      "skill": "Distinguish DNS from later web protocols",
+      "sourceIds": [
+        "rfc-1034-domain-names-concepts-and-facilities",
+        "rfc-9110-http-semantics"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:how-websites-work",
+    "web-development:foundations:http-basics",
+    "web-development:foundations:domains",
+    "web-development:foundations:web-hosting",
+    "web-development:foundations:https"
+  ],
+  "sources": [
+    "rfc-1034-domain-names-concepts-and-facilities",
+    "rfc-1035-domain-names-implementation-and-specification",
+    "rfc-2181-clarifications-to-the-dns-specification",
+    "rfc-9110-http-semantics"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only standards sources; no source prose adapted.",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original instructional synthesis after directly reading IETF DNS specifications and the existing IETF HTTP semantics source record for a boundary comparison."
+  },
+  "contentHash": "d85ac8e415f84a33",
+  "status": "source-verified",
+  "public": false
+}

@@ -1,0 +1,284 @@
+{
+  "id": "web-development:foundations:domains",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "domains",
+  "title": "Domain Names",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 10,
+  "tags": [
+    "web-development",
+    "domain-names",
+    "urls",
+    "registration",
+    "subdomains"
+  ],
+  "in30Seconds": "A domain name is a human-readable name in the Internet's naming hierarchy, such as `example.org`. Its dot-separated labels identify a place in that hierarchy; the label on the right is the top-level domain. A domain can also have names below it, such as `courses.example.org`. Domain registration makes a name available for use under applicable rules, but it does not by itself create a website, provide a server, or make a URL's path exist.",
+  "whyItMatters": "Domain names appear in links, browser address bars, email addresses, deployment settings, and project documentation. Knowing their structure helps a developer read an address without confusing the name with the whole URL or with a hosting service. It also makes purchasing and configuring a name less mysterious: a registrant, registrar, registry operator, and hosting provider can have different jobs. Those distinctions help teams assign the right task when a site needs a new address or a new section under an existing address.",
+  "learningObjectives": [
+    "Identify the labels and hierarchy in a simple domain name.",
+    "Distinguish a domain name from a URL, a website, and a hosting service.",
+    "Explain the roles of a registrant, registrar, and registry operator in a generic top-level-domain registration.",
+    "Apply the idea of a subdomain to organize a separate section of an existing domain.",
+    "Read the hostname portion of a URL without treating the path or port as part of the domain name."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Names are organized as labels in a hierarchy",
+      "body": "A domain name is a name in the Domain Name System's hierarchy. What a person sees as a dotted string is a sequence of labels. In `library.example.edu`, the labels are `library`, `example`, and `edu`. Reading from the right, `edu` is the top-level domain in this illustration; labels to its left name increasingly specific parts of the hierarchy. ICANN's domain-name overview uses the same pattern: in `whois.icann.org`, `org` is top-level, `icann` is second-level, and `whois` is third-level. The labels are not merely decoration. Authority to create names at a lower level can be managed below the relevant dot, subject to the rules governing that part of the hierarchy.\n\nThe informal word subdomain is useful when a name is created below another domain. For example, an organization that controls `example.org` might create `events.example.org` for an event area and `help.example.org` for documentation. A subdomain is a naming choice, not an automatic feature that appears with every domain registration. It also does not require a particular word such as `www`. `www.example.org` is a familiar convention, but a hostname can use other labels or none before the registered name. A developer should record the exact hostname a project uses rather than assuming that typing `www` will always refer to the intended site.\n\nThe hierarchy does not mean that every dotted string has the same business meaning. The final label is a top-level-domain label in the public DNS hierarchy, but registration policies and the ability to create names can differ by top-level domain. This lesson uses common public-web examples to explain names; the next DNS lesson covers the separate process by which a system looks up those names."
+    },
+    {
+      "heading": "Registration involves several different roles",
+      "body": "For a generic top-level domain, domain registration is a process with distinct participants. A registrant is the person or organization seeking to register a name. A registrar processes registrations for customers, and a registry operator maintains the registry for a particular top-level domain. ICANN explains that an entity seeking a generic-top-level-domain name can use an ICANN-accredited registrar, and that the registrant's relationship with that registrar is governed by a registration agreement. That relationship is important because renewal notices, contact details, transfers, and account security are usually handled through the registrar account or its authorized reseller.\n\nA registrar is not the same thing as the registry operator. The registrar is the customer-facing registration channel; the registry operator maintains the relevant top-level-domain registry. Nor is either role automatically a web host. A provider may offer registration and hosting in one product, which can make the roles look identical, but they remain conceptually separate. Separating them helps when a team wants to keep a domain name while moving a website to another hosting provider, or when it wants to add an address without changing the site's files.\n\nRegistration also is not a claim that a name will work forever without maintenance. A registration is subject to the governing agreement and applicable policy, and it is normally time-limited. Treat the registrar account as an important administrative asset: keep its contact information current, understand renewal terms, and limit access to authorized people. Those practical safeguards concern the management of a name; they do not require this lesson to teach DNS records, which belong to a later topic."
+    },
+    {
+      "heading": "A domain is one component of a URL, not the entire address",
+      "body": "A URL identifies the location of a resource and has several components. In `https://docs.example.org:8443/guides/start?mode=student#next`, the scheme is `https`; the authority contains the host `docs.example.org` and the optional port `8443`; `/guides/start` is a path; the query starts after `?`; and the fragment starts after `#`. MDN describes the domain in the authority as indicating which web server is requested, while the path identifies the resource path handled by that server. The Internet standard for generic URI syntax likewise treats the host as a subcomponent of authority and describes DNS-oriented registered names as labels separated by dots.\n\nThis distinction prevents a common deployment error: registering `example.org` does not create every possible URL beginning with that name. Someone still has to arrange for an appropriate service to respond for the hostname and to handle paths such as `/about` or `/courses`. ICANN explicitly distinguishes a domain name from a website and a URL, noting that hosting or another service is still needed to make an Internet presence functional. A path is also not a subdomain: `blog.example.org/articles` has the hostname `blog.example.org` and the path `/articles`. Changing one may require a different kind of configuration from changing the other.\n\nDomain names are useful because they give people stable, readable identifiers to use in web addresses and related systems. They are not promises about the page's content, security, ownership of an ordinary-language word, or the server currently behind the name. Treat the name as a precise identifier in a broader set of technical and administrative arrangements."
+    },
+    {
+      "heading": "Choose names and boundaries deliberately",
+      "body": "A small project may use one hostname, such as `example.org`, for its public pages. As it grows, a team may choose a subdomain to separate a responsibility: `status.example.org` for availability information, `docs.example.org` for documentation, or `courses.example.org` for course material. The choice should reflect the project's needs, not a superstition that subdomains are always more professional or more secure. A subdomain may clarify ownership and navigation, but it still needs deliberate configuration and maintenance.\n\nWhen documenting a web project, write down the registered domain, the public hostnames, the registrar account owner or organizational procedure, and the hosting responsibility. Do not put account credentials in source code or in a public repository. A useful troubleshooting question is therefore specific: “Is the issue with the registration, the hostname being used, the DNS configuration, or the web host?” This lesson gives the vocabulary to separate the first two questions; later lessons address resolution and hosting mechanics. Clear names and clear responsibility boundaries make routine changes easier to review."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "domain name",
+      "definition": "A dot-separated, human-readable name in the Internet naming hierarchy used in web addresses and other services."
+    },
+    {
+      "term": "label",
+      "definition": "One textual segment of a domain name, separated from neighboring segments by a dot."
+    },
+    {
+      "term": "top-level domain",
+      "definition": "The rightmost domain label in the public DNS hierarchy, such as `org` in `example.org`."
+    },
+    {
+      "term": "subdomain",
+      "definition": "A domain name created below another domain, often used to name a distinct service or section."
+    },
+    {
+      "term": "registrant",
+      "definition": "The person or organization that seeks to register and manage a domain name."
+    },
+    {
+      "term": "registrar",
+      "definition": "An organization that processes domain-name registrations for registrants under applicable registry rules."
+    },
+    {
+      "term": "registry operator",
+      "definition": "The organization that maintains the registry of registered names for a particular top-level domain."
+    },
+    {
+      "term": "hostname",
+      "definition": "The host portion of a URL authority, often expressed with a domain name or an IP address."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "A domain name is like the readable name on a large campus directory. Instead of remembering a difficult number, you can remember a name such as `example.org`. The dots organize the name into pieces. The part on the far right is a broad category, and pieces farther left can make the name more specific. A team that controls `example.org` can choose a more specific name such as `library.example.org` for its library area.\n\nBuying or registering the name does not build the library, though. It only gives the team a name they can use. They still need a place that serves the pages and someone to set up the details. That is why a domain, a website, and a full web address are related but not identical.",
+    "analogy": "Think of a domain as an address range in a campus mail system. `example.org` is the organization’s main address, while `library.example.org` is a labeled department within it. A registrar is a service desk that processes the address registration, and a web host is closer to the building that actually receives and serves what people request.",
+    "analogyLimits": "Internet names are governed by technical and contractual rules, not physical mail routes. A domain is not a street, and the analogy does not explain how computers resolve names or how a server handles a web request."
+  },
+  "workedExample": "A course team owns the illustrative domain `example.edu` and wants a separate documentation area. It chooses the hostname `docs.example.edu`, leaving the public site at `example.edu`. In the URL `https://docs.example.edu/getting-started`, `docs.example.edu` is the hostname: `docs` is a label below `example.edu`; `/getting-started` is a path, not another domain label. The team records that the registrar account manages the domain registration and that a separate hosting service serves the documentation. If a teammate asks why `/getting-started` returns an error, the team knows to investigate the application's path handling or hosting setup rather than assuming the domain registration alone controls that page.",
+  "commonMistakes": [
+    {
+      "mistake": "Calling a full URL a domain name.",
+      "correction": "Separate the hostname from the scheme, port, path, query, and fragment before naming the domain component."
+    },
+    {
+      "mistake": "Assuming domain registration automatically creates a website.",
+      "correction": "Arrange hosting and application configuration separately from the registration of the name."
+    },
+    {
+      "mistake": "Treating a registrar and a registry operator as the same role.",
+      "correction": "Recognize the registrar as the registration channel and the registry operator as the maintainer of a top-level-domain registry."
+    },
+    {
+      "mistake": "Treating a path such as `/docs` as a subdomain.",
+      "correction": "A subdomain is in the hostname, such as `docs.example.org`; a path comes after the hostname."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Domain name",
+      "b": "URL",
+      "distinction": "A domain name is a dotted name in the hierarchy; a URL can include a scheme, hostname, port, path, query, and fragment."
+    },
+    {
+      "a": "Registrar",
+      "b": "Registry operator",
+      "distinction": "A registrar processes registrations for registrants, while a registry operator maintains the registry for a top-level domain."
+    },
+    {
+      "a": "Subdomain",
+      "b": "URL path",
+      "distinction": "A subdomain is part of the hostname before the registered domain; a path begins after the hostname and identifies a resource location."
+    }
+  ],
+  "keyTakeaway": "A domain name is a dot-separated identifier in a hierarchy. Registering it establishes a managed name, but a functioning web address also depends on separate hosting and application arrangements.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:domains:1",
+      "prompt": "In the illustrative name `courses.example.org`, which label is the top-level domain?",
+      "options": [
+        "courses",
+        "example",
+        "org",
+        "courses.example"
+      ],
+      "correctIndex": 2,
+      "explanation": "The top-level domain is the rightmost label, so `org` is correct. `courses` and `example` are labels farther left, and `courses.example` is not one label.",
+      "difficulty": "recall",
+      "skill": "Identify a top-level-domain label",
+      "sourceIds": [
+        "icann-about-domain-names"
+      ]
+    },
+    {
+      "id": "web-development:foundations:domains:2",
+      "prompt": "Which role processes a registrant's request to register a generic top-level-domain name?",
+      "options": [
+        "Registrar",
+        "Web browser",
+        "Path handler",
+        "HTML element"
+      ],
+      "correctIndex": 0,
+      "explanation": "A registrar processes the registration for the registrant. Browsers and HTML elements are web-client or page concepts, while a path handler is not the registration role.",
+      "difficulty": "understanding",
+      "skill": "Distinguish registration roles",
+      "sourceIds": [
+        "icann-accredited-registrars"
+      ]
+    },
+    {
+      "id": "web-development:foundations:domains:3",
+      "prompt": "A team registers `example.org` but has not arranged any hosting. What is the most accurate conclusion?",
+      "options": [
+        "Every URL below the domain now exists automatically",
+        "The registration itself publishes a website",
+        "The registrar now serves the team's application files",
+        "The team has registered a name but still needs an appropriate service to make web content accessible"
+      ],
+      "correctIndex": 3,
+      "explanation": "Registration and hosting are distinct. The team has a managed name, but a website or other service must still be arranged; registration neither creates all paths nor makes a registrar serve application files.",
+      "difficulty": "application",
+      "skill": "Separate domain registration from hosting",
+      "sourceIds": [
+        "icann-about-domain-names"
+      ]
+    },
+    {
+      "id": "web-development:foundations:domains:4",
+      "prompt": "In `https://docs.example.org/guides/setup`, which part is a subdomain-style hostname label rather than a URL path?",
+      "options": [
+        "https",
+        "docs",
+        "guides",
+        "setup"
+      ],
+      "correctIndex": 1,
+      "explanation": "`docs` is a label in the hostname `docs.example.org`. `guides` and `setup` are path segments after the hostname, and `https` is the URL scheme.",
+      "difficulty": "application",
+      "skill": "Parse hostname labels and path segments",
+      "sourceIds": [
+        "mdn-url-relative",
+        "icann-about-domain-names"
+      ]
+    },
+    {
+      "id": "web-development:foundations:domains:5",
+      "prompt": "Why is it useful to distinguish a domain name from a full URL during a deployment discussion?",
+      "options": [
+        "It proves all URLs are permanent",
+        "It makes a registrar responsible for page content",
+        "It helps the team identify whether a change concerns the hostname or another component such as a path or service",
+        "It guarantees a subdomain needs no configuration"
+      ],
+      "correctIndex": 2,
+      "explanation": "Separating components helps assign the right work: a hostname, a path, hosting, and page content are different concerns. The distinction does not make URLs permanent, shift page-content responsibility to a registrar, or remove configuration work.",
+      "difficulty": "analysis",
+      "skill": "Use domain and URL boundaries to reason about deployment work",
+      "sourceIds": [
+        "mdn-url-relative",
+        "icann-about-domain-names"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:domains:1",
+      "prompt": "In the illustrative name `courses.example.org`, which label is the top-level domain?",
+      "options": [
+        "courses",
+        "example",
+        "org",
+        "courses.example"
+      ],
+      "correctIndex": 2,
+      "explanation": "The top-level domain is the rightmost label, so `org` is correct. `courses` and `example` are labels farther left, and `courses.example` is not one label.",
+      "difficulty": "recall",
+      "skill": "Identify a top-level-domain label",
+      "sourceIds": [
+        "icann-about-domain-names"
+      ]
+    },
+    {
+      "id": "web-development:foundations:domains:2",
+      "prompt": "Which role processes a registrant's request to register a generic top-level-domain name?",
+      "options": [
+        "Registrar",
+        "Web browser",
+        "Path handler",
+        "HTML element"
+      ],
+      "correctIndex": 0,
+      "explanation": "A registrar processes the registration for the registrant. Browsers and HTML elements are web-client or page concepts, while a path handler is not the registration role.",
+      "difficulty": "understanding",
+      "skill": "Distinguish registration roles",
+      "sourceIds": [
+        "icann-accredited-registrars"
+      ]
+    },
+    {
+      "id": "web-development:foundations:domains:3",
+      "prompt": "A team registers `example.org` but has not arranged any hosting. What is the most accurate conclusion?",
+      "options": [
+        "Every URL below the domain now exists automatically",
+        "The registration itself publishes a website",
+        "The registrar now serves the team's application files",
+        "The team has registered a name but still needs an appropriate service to make web content accessible"
+      ],
+      "correctIndex": 3,
+      "explanation": "Registration and hosting are distinct. The team has a managed name, but a website or other service must still be arranged; registration neither creates all paths nor makes a registrar serve application files.",
+      "difficulty": "application",
+      "skill": "Separate domain registration from hosting",
+      "sourceIds": [
+        "icann-about-domain-names"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:links",
+    "web-development:foundations:http-basics",
+    "web-development:foundations:dns",
+    "web-development:foundations:web-hosting",
+    "web-development:foundations:https"
+  ],
+  "sources": [
+    "icann-about-domain-names",
+    "icann-accredited-registrars",
+    "mdn-url-relative",
+    "rfc-3986-uri-syntax"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only sources; no source prose adapted.",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original instructional explanation synthesized from ICANN, MDN, and IETF source material after direct reading."
+  },
+  "contentHash": "d6d14868ff4cd200",
+  "status": "source-verified",
+  "public": false
+}

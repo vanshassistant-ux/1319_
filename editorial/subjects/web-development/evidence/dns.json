@@ -1,0 +1,151 @@
+{
+  "topicId": "web-development:foundations:dns",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {
+    "core": [
+      "DNS name space",
+      "resolvers and name servers",
+      "resource-record types",
+      "DNS caching and TTL"
+    ],
+    "supporting": [
+      "A and CNAME records",
+      "bounded command-line lookup interpretation",
+      "the DNS versus HTTP boundary"
+    ],
+    "outOfScope": [
+      "domain registration and registrars",
+      "HTTP request mechanics",
+      "HTTPS or TLS mechanics",
+      "DNS deployment and zone administration",
+      "DNS security configuration",
+      "web-hosting operations"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The DNS domain name space is a tree structure in which nodes and leaves have associated information.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "rfc-1034-domain-names-concepts-and-facilities"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Resolvers provide applications access to DNS name servers and can use cached data.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "rfc-1034-domain-names-concepts-and-facilities",
+        "rfc-1035-domain-names-implementation-and-specification"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A DNS resource record includes an owner name, type, class, TTL, and record data.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "rfc-1035-domain-names-implementation-and-specification"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "RFC 1035 defines A as a host-address record and CNAME as the canonical or primary name for an alias.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "rfc-1035-domain-names-implementation-and-specification"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The TTL of a resource record specifies the interval for which it may be cached before its source is consulted again.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "rfc-1035-domain-names-implementation-and-specification"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Within an RRSet, RFC 2181 requires all sent records to have equal TTLs and directs caches to treat unequal TTLs using the lowest value.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "rfc-2181-clarifications-to-the-dns-specification"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "DNS supplies naming information, while HTTP defines a separate application-layer request and response model for web resources.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "rfc-1034-domain-names-concepts-and-facilities",
+        "rfc-9110-http-semantics"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft consisted of generic boilerplate and made no specific, source-supported claims about DNS."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic content with a bounded explanation of DNS names, records, resolvers, caches, and TTL.",
+    "Separated DNS lookup from domain registration, HTTP delivery, HTTPS, and hosting.",
+    "Used a command-format example without presenting volatile live address data as a durable fact.",
+    "Added an explicit warning that a successful DNS answer does not prove a successful web transaction."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "rfc-1034-domain-names-concepts-and-facilities",
+      "title": "RFC 1034 — Domain Names: Concepts and Facilities",
+      "provider": "IETF / RFC Editor",
+      "url": "https://www.rfc-editor.org/rfc/rfc1034.html",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-20",
+      "notes": "Read directly. Supports the distributed DNS model, the name-space tree, the resolver and name-server roles, and cached resolver data. No source prose reproduced."
+    },
+    {
+      "id": "rfc-1035-domain-names-implementation-and-specification",
+      "title": "RFC 1035 — Domain Names: Implementation and Specification",
+      "provider": "IETF / RFC Editor",
+      "url": "https://www.rfc-editor.org/rfc/rfc1035.html",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-20",
+      "notes": "Read directly. Supports resource-record fields, the A and CNAME definitions, resolver cache discussion, and the TTL cacheability rule. No source prose reproduced."
+    },
+    {
+      "id": "rfc-2181-clarifications-to-the-dns-specification",
+      "title": "RFC 2181 — Clarifications to the DNS Specification",
+      "provider": "IETF / RFC Editor",
+      "url": "https://www.rfc-editor.org/rfc/rfc2181.html",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-20",
+      "notes": "Read directly. Supports the clarification that records in an RRSet use equal TTLs and cache handling of unequal TTL values. No source prose reproduced."
+    },
+    {
+      "id": "rfc-9110-http-semantics",
+      "title": "RFC 9110 — HTTP Semantics",
+      "provider": "IETF",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-20",
+      "notes": "Existing phase-2 source record reused exactly. Supports the scoped comparison between DNS naming information and the separate HTTP request-response model. No prose reproduced."
+    }
+  ]
+}
