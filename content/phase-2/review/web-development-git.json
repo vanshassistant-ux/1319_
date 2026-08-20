@@ -1,0 +1,279 @@
+{
+  "id": "web-development:foundations:git",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "git",
+  "title": "Git",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 10,
+  "tags": [
+    "git",
+    "version-control",
+    "repository",
+    "web-development"
+  ],
+  "in30Seconds": "Git is a distributed version-control system for recording a project's history. In a local repository, you edit files in a working tree, choose the changes for the next snapshot in the staging area, and create a commit. A commit records the staged project state and points back to earlier commits. Branches are named references that let a project develop lines of history without turning a branch into a separate copy of every file.",
+  "whyItMatters": "Web projects change in small, sometimes risky steps. Git gives those steps a reviewable local history, so a developer can inspect what changed and make a focused commit instead of relying on folders named \"final-final\". In coursework, Git also makes it easier to explain the state of an assignment: which files are modified, which edits are ready to record, and which snapshot is current. This lesson deliberately stays local; collaboration services, remotes, and conflict recovery belong in later lessons.",
+  "learningObjectives": [
+    "Define version control, repository, working tree, staging area, commit, and branch.",
+    "Distinguish modified, staged, and committed file states.",
+    "Explain how a commit relates to the staging area and earlier history.",
+    "Use Git status information to choose the next local step.",
+    "Explain why a branch is a movable name for a line of commits rather than a backup folder."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Git records project history as snapshots",
+      "body": "Version control is a way to record changes to files over time so earlier versions can be inspected or recovered. Git is a distributed version-control system: a repository on a developer's computer contains the project's history as well as the files currently checked out for work. That local history is useful even before anyone shares code. A developer can compare a new edit with an earlier commit, see what is still unrecorded, and make a small, intentional record of one change. A repository is therefore more than a project folder. It includes Git's stored objects and references in addition to the files a person normally opens in an editor.\n\nGit is often described as storing snapshots rather than a permanent list of line-by-line edits. At a commit, Git records the project state represented by the staged files and links the commit to its parent or parents. Git can later calculate a difference between commits, which is why diff views are useful, but the central mental model is a history of connected snapshots. A first commit has no parent; an ordinary later commit normally has one. Commit records also contain metadata such as a message and author/committer information. The message should explain the change's purpose in the project's context, not merely repeat a filename.\n\nThis model does not make a commit a magical backup of every possible file on a computer. Git records content that has been placed under version control and selected for a commit. It also does not require a network connection for ordinary local history operations. A hosting service can store a copy of a repository and add collaboration features, but Git itself and a particular hosting service are separate things. Keeping that boundary clear prevents the common error of calling every Git command a \"GitHub command.\""
+    },
+    {
+      "heading": "The working tree, staging area, and commit answer different questions",
+      "body": "The working tree is the checked-out set of project files that a developer edits. After changing a tracked file, that change is modified: it exists in the working tree but is not yet selected for the next commit. The staging area, also called the index, is Git's proposed contents for the next commit. Running `git add path` updates the staging area with the current version of that path. Staging is a deliberate selection step, not a synonym for saving a file in an editor. It lets a developer make a focused commit when several unrelated edits are present.\n\n`git commit` creates a new commit from the current contents of the index and a log message. This means a file can be modified in the working tree while an earlier version of that file is staged, or a change can be staged while other changes remain unstaged. `git status` is the usual place to examine these distinctions: it reports files that differ between the working tree, staging area, and current commit. When the status says a new file is untracked, Git has not yet been told to include it in version control. `git add` can stage it, but learners should inspect the intended paths rather than blindly staging an entire directory.\n\nA short local workflow follows from these roles: inspect with `git status`; edit a file; inspect again; stage the intended path with `git add`; inspect the staged set; then create a commit with a meaningful message. This lesson does not teach destructive repair commands, because their right choice depends on whether a change is untracked, modified, staged, or committed. The safer introductory habit is to inspect state before acting and to make a small commit only when its contents form one coherent change."
+    },
+    {
+      "heading": "History and branches organize, rather than duplicate, work",
+      "body": "A Git history is a chain or graph of commits. `git log` displays commits so a developer can inspect recent records and their messages. The working tree usually reflects the commit currently named by `HEAD`, plus any local modifications. `HEAD` normally identifies the current branch. A branch is a reference that names the newest commit in a line of history. When a new commit is made while that branch is current, Git updates the branch name to point at the new commit. Thus a branch is lightweight bookkeeping around commits, not a separate archive that copies the whole project each time it is created.\n\nCreating a branch before an experiment can make the experiment's local history distinguishable from another line of work. At this level, the important idea is the named pointer and the history it reaches—not sophisticated merge procedures. A branch is not a guarantee that work is safe, complete, or shared with anyone. It remains a local reference until a later workflow deliberately connects it to another repository. Nor does a branch replace clear commits: a vague branch containing several unrelated changes is still difficult to review or understand.\n\nFor a personal web exercise, one sound pattern is to initialize a repository, make one commit for an initial page, revise the page, then make a second commit describing that revision. `git log` will show two records in order, and a branch made at the second commit names that point in history. This history helps answer a precise question—what did the project look like after the first page?—without pretending that Git eliminates the need for testing, backups, or careful review."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "version control",
+      "definition": "A system that records changes to files over time so earlier versions can be inspected or recovered."
+    },
+    {
+      "term": "repository",
+      "definition": "A Git-managed project and its stored history, objects, and references."
+    },
+    {
+      "term": "working tree",
+      "definition": "The checked-out project files on disk that a developer can edit."
+    },
+    {
+      "term": "staging area",
+      "definition": "Git's selected set of file contents for the next commit; also called the index."
+    },
+    {
+      "term": "commit",
+      "definition": "A recorded snapshot made from the staging area, with a message and links to earlier history."
+    },
+    {
+      "term": "branch",
+      "definition": "A movable reference that names the latest commit in a line of history."
+    },
+    {
+      "term": "HEAD",
+      "definition": "Git's reference to the current branch or, in a detached state, directly to a commit."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Think of a school project with a notebook that keeps dated snapshots. Your desk is the working tree: you change the page there. Before taking a snapshot, you put only the pages you want to include into a tray. That tray is the staging area. Taking the snapshot is a commit, and its note says what changed. Git can later show the snapshots in order, so you do not have to guess which folder called \"new version\" is actually newer.",
+    "analogy": "The working tree is your desk, the staging area is the tray of pages chosen for the next photograph, and a commit is the labeled photograph. A branch is a bookmark pointing at one photograph in a sequence.",
+    "analogyLimits": "Git does not photograph paper pages, and the staging area can select individual file contents more precisely than a physical tray. A branch also points into a connected history; it is not simply a duplicate notebook."
+  },
+  "workedExample": "This local example was run in a disposable directory with Git. First, `git init` created a repository. After writing `index.html`, `git add index.html` made `git status --short` print `A  index.html`: the file was staged for the first commit. `git commit -m \"Add first page\"` recorded that snapshot. The example then changed the heading; status printed ` M index.html`, meaning the tracked file was modified but not staged. After staging and committing the revision, `git log --oneline --max-count=2` showed `Revise heading` above `Add first page`. Finally, `git branch lesson-copy` created a second local branch name at the latest commit; `git branch --format=%(refname:short)` listed both `lesson-copy` and `main`.",
+  "commonMistakes": [
+    {
+      "mistake": "Assuming saving a file also stages it.",
+      "correction": "Saving changes the working tree; use `git add` to select the current file content for the next commit."
+    },
+    {
+      "mistake": "Treating every change visible in `git status` as ready for one commit.",
+      "correction": "Inspect the changes and stage only the paths that belong to the focused change you intend to record."
+    },
+    {
+      "mistake": "Calling Git and a hosting service the same product.",
+      "correction": "Git manages local version history; a hosting service is a separate service that can store or collaborate around repositories."
+    },
+    {
+      "mistake": "Thinking a branch is a complete duplicated folder.",
+      "correction": "A branch is a reference to a commit that moves as new commits are made on that branch."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "working tree",
+      "b": "staging area",
+      "distinction": "The working tree holds files being edited; the staging area holds the selected contents for the next commit."
+    },
+    {
+      "a": "staged",
+      "b": "committed",
+      "distinction": "Staged content is proposed for the next snapshot; committed content has been recorded in repository history."
+    },
+    {
+      "a": "Git",
+      "b": "a repository-hosting service",
+      "distinction": "Git is the version-control system; a hosting service is a separate platform that may store Git repositories and support collaboration."
+    }
+  ],
+  "keyTakeaway": "Git separates editing, selecting, and recording. Read `git status`, stage the coherent change you intend to record, and make a meaningful commit; branches then provide names for points and lines in that local history.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:git:1",
+      "prompt": "Which Git area contains the project files a developer is currently editing?",
+      "options": [
+        "The working tree",
+        "The commit message",
+        "The remote repository",
+        "The branch log"
+      ],
+      "correctIndex": 0,
+      "explanation": "The working tree is the checked-out set of files on disk that a developer edits. The staging area selects content for a commit, and a branch names a history position.",
+      "difficulty": "recall",
+      "skill": "Identify Git areas",
+      "sourceIds": [
+        "git-pro-git-what-is-git",
+        "git-data-model-doc"
+      ]
+    },
+    {
+      "id": "web-development:foundations:git:2",
+      "prompt": "A tracked file has been changed in an editor, but the developer has not run `git add`. What is true about that change?",
+      "options": [
+        "It is already in the next commit",
+        "It is modified in the working tree but not staged",
+        "It has been deleted from history",
+        "It automatically starts a new branch"
+      ],
+      "correctIndex": 1,
+      "explanation": "A saved edit changes the working tree. `git add` is the normal command that updates the staging area for a later commit.",
+      "difficulty": "understanding",
+      "skill": "Distinguish modified and staged states",
+      "sourceIds": [
+        "git-pro-git-what-is-git",
+        "git-commit-doc"
+      ]
+    },
+    {
+      "id": "web-development:foundations:git:3",
+      "prompt": "A developer has staged changes to `index.html` and `style.css`. They then edit `style.css` again without staging the new edit. What does a plain `git commit` record for `style.css`?",
+      "options": [
+        "The newest unstaged edit only",
+        "Both versions of the file",
+        "The version currently in the staging area",
+        "No version of the file"
+      ],
+      "correctIndex": 2,
+      "explanation": "A normal commit records the current contents of the index. The later working-tree edit remains unstaged unless the developer stages it again.",
+      "difficulty": "application",
+      "skill": "Predict a commit from staged state",
+      "sourceIds": [
+        "git-commit-doc",
+        "git-data-model-doc"
+      ]
+    },
+    {
+      "id": "web-development:foundations:git:4",
+      "prompt": "Which description best fits a normal Git branch?",
+      "options": [
+        "A required online account",
+        "A full duplicate of every project file",
+        "A list of unstaged changes",
+        "A movable reference to the latest commit in a line of history"
+      ],
+      "correctIndex": 3,
+      "explanation": "A branch is a reference to a commit and normally moves to the newly created commit when that branch is current. It is neither an account nor a copied folder.",
+      "difficulty": "understanding",
+      "skill": "Explain branches",
+      "sourceIds": [
+        "git-data-model-doc"
+      ]
+    },
+    {
+      "id": "web-development:foundations:git:5",
+      "prompt": "Before making a commit, a developer sees three unrelated edits in `git status`. Which next step best supports a focused commit?",
+      "options": [
+        "Inspect and stage only the files that belong to one coherent change",
+        "Commit every visible change without inspection",
+        "Create a hosting-service account",
+        "Delete the repository and begin again"
+      ],
+      "correctIndex": 0,
+      "explanation": "The staging area lets a developer select the contents of the next commit. Inspecting and staging a coherent set makes the commit easier to understand; the other choices do not solve the selection problem.",
+      "difficulty": "analysis",
+      "skill": "Plan a focused local commit",
+      "sourceIds": [
+        "git-pro-git-what-is-git",
+        "git-commit-doc"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:git:1",
+      "prompt": "Which Git area contains the project files a developer is currently editing?",
+      "options": [
+        "The working tree",
+        "The commit message",
+        "The remote repository",
+        "The branch log"
+      ],
+      "correctIndex": 0,
+      "explanation": "The working tree is the checked-out set of files on disk that a developer edits. The staging area selects content for a commit, and a branch names a history position.",
+      "difficulty": "recall",
+      "skill": "Identify Git areas",
+      "sourceIds": [
+        "git-pro-git-what-is-git",
+        "git-data-model-doc"
+      ]
+    },
+    {
+      "id": "web-development:foundations:git:2",
+      "prompt": "A tracked file has been changed in an editor, but the developer has not run `git add`. What is true about that change?",
+      "options": [
+        "It is already in the next commit",
+        "It is modified in the working tree but not staged",
+        "It has been deleted from history",
+        "It automatically starts a new branch"
+      ],
+      "correctIndex": 1,
+      "explanation": "A saved edit changes the working tree. `git add` is the normal command that updates the staging area for a later commit.",
+      "difficulty": "understanding",
+      "skill": "Distinguish modified and staged states",
+      "sourceIds": [
+        "git-pro-git-what-is-git",
+        "git-commit-doc"
+      ]
+    },
+    {
+      "id": "web-development:foundations:git:3",
+      "prompt": "A developer has staged changes to `index.html` and `style.css`. They then edit `style.css` again without staging the new edit. What does a plain `git commit` record for `style.css`?",
+      "options": [
+        "The newest unstaged edit only",
+        "Both versions of the file",
+        "The version currently in the staging area",
+        "No version of the file"
+      ],
+      "correctIndex": 2,
+      "explanation": "A normal commit records the current contents of the index. The later working-tree edit remains unstaged unless the developer stages it again.",
+      "difficulty": "application",
+      "skill": "Predict a commit from staged state",
+      "sourceIds": [
+        "git-commit-doc",
+        "git-data-model-doc"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:github",
+    "web-development:foundations:web-hosting",
+    "web-development:foundations:browser-developer-tools",
+    "web-development:foundations:javascript-fundamentals",
+    "web-development:foundations:web-platform"
+  ],
+  "sources": [
+    "git-pro-git-what-is-git",
+    "git-commit-doc",
+    "git-data-model-doc"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only Git documentation; no source prose adapted",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original instructional lesson synthesized from directly read official Git documentation. The local Git workflow was executed in a disposable directory."
+  },
+  "contentHash": "02cc456f89fd3667",
+  "status": "source-verified",
+  "public": false
+}

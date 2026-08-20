@@ -1,0 +1,267 @@
+{
+  "id": "web-development:foundations:github",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "github",
+  "title": "GitHub",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "web-development",
+    "foundations",
+    "github",
+    "collaboration",
+    "version-control"
+  ],
+  "in30Seconds": "GitHub is a web-based service for hosting repositories, collaborating on work, and tracking changes over time. Git provides the version-control system underneath; GitHub provides hosted repositories and collaboration features around it. A team can use issues to record work, a branch to isolate a proposed change, and a pull request to discuss and review that change before it joins a base branch. Access is governed by account and repository permissions.",
+  "whyItMatters": "Web projects are rarely maintained by one person forever. GitHub gives a team a shared place to see project files and history, discuss a task, propose a focused change, and review it before merging. Understanding the platform boundary prevents a common confusion: Git records versions, while GitHub hosts repositories and adds collaboration tools. It also helps a new contributor choose a responsible workflow—read project guidance, work within the permissions granted, and make a clear pull request rather than editing unrelated work.",
+  "learningObjectives": [
+    "Distinguish GitHub's hosted collaboration role from Git's version-control role.",
+    "Explain how repositories, remotes, and local copies relate at a high level.",
+    "Describe how issues can plan and track work.",
+    "Trace a focused pull request from a branch through review to a possible merge.",
+    "Explain why repository permissions shape what a contributor can do."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "GitHub hosts collaboration around Git repositories",
+      "body": "GitHub is a web-based application that hosts files in repositories, supports collaboration, and tracks changes to files over time. Its version tracking is powered by Git, an open-source version-control system. The distinction matters. Git is the system that records a repository's history through commits and branches; GitHub is one platform that can host a Git repository and add a web interface, issue tracking, pull-request discussion, permissions, and other collaboration features. A Git repository can exist locally without being on GitHub, and a developer can use GitHub through a browser, desktop application, editor integration, or command-line tools.\n\nA repository is the project container: it can hold files and the revision history that explains how those files changed. A local clone is a copy of that repository on a developer's computer. A remote is a named connection to a repository hosted elsewhere; in a common GitHub workflow, the remote points to the GitHub-hosted repository so locally made commits can be shared and collaborators can fetch changes. The remote is not a magical backup of every file on a computer, and GitHub is not another name for the local repository. It is a shared destination and collaboration surface for a particular repository.\n\nThis separation helps when diagnosing a problem. A change can be saved locally in a commit yet not be visible to teammates until it reaches the shared repository. Conversely, seeing a project on GitHub does not automatically grant every visitor authority to change it. Whether someone can view, comment on, push to, or administer a repository depends on its visibility and the permission model that applies. This lesson uses the platform-level view; local Git commands and conflict resolution belong in the Git lesson."
+    },
+    {
+      "heading": "Issues turn work into visible, discussable units",
+      "body": "GitHub Issues can be used to plan, discuss, and track work. An issue may record a bug report, a feature idea, feedback, or another task the team needs to consider. It is not the same thing as a code change. An issue states or explores the work; the eventual implementation can happen in one or more commits, branches, and pull requests. Keeping those roles separate makes a project easier to follow: a reader can understand why work was proposed, while a change set can show exactly what was modified.\n\nIssues can also carry organizing information. GitHub documents labels, milestones, and issue types as examples of metadata used to organize work. A team might label an issue as a documentation problem, assign it to a contributor, or connect it to a milestone. These labels are planning aids, not proof that a problem is resolved. The useful habit is to make the issue specific enough that another person can understand the context, desired outcome, and relevant constraints. A vague title such as “Fix site” gives reviewers little help; a clear issue gives a scoped task a home.\n\nIssues and pull requests can be connected. GitHub notes that mentioning an issue in a pull request creates a reference, and certain closing keywords can automatically close an associated issue when the pull request is merged. That convenience should not replace human review. Before closing an issue, a team still needs to confirm that the change actually addresses the stated work. The key idea is traceability: an issue can explain the need, while a pull request can present a proposed response to that need."
+    },
+    {
+      "heading": "Pull requests create a reviewable proposal within permission boundaries",
+      "body": "A pull request proposes changes from one branch into a base branch so that people can review them before a merge. A focused change normally begins in an isolated branch. The contributor edits and commits there, then opens a pull request that identifies the base branch, the branch containing the proposal, and an explanation of what changed and why. Further commits pushed to that same branch are added to the pull request, allowing the proposal to evolve without losing the conversation around it. A pull request can be marked as a draft when it is not yet ready for review.\n\nReview is a process, not merely a button. Reviewers may comment, suggest a change, or request changes. The author can respond with new commits, and the pull request updates to include them. Once required reviews and status checks pass, an authorized person may merge the proposal into the base branch. Requirements differ by repository, so contributors should read that project's contribution guidance rather than assuming every project permits the same path. A pull request may also be closed without merging if the proposal is no longer appropriate.\n\nPermissions define who can take which actions. GitHub describes a permission as the ability to perform a particular action and a role as a set of permissions assigned to an individual or team. On organization repositories, roles can range from read access through more capable roles, while personal-account repositories have a different model. A contributor should not work around a missing permission. If they lack write access, a fork may provide a separate copy from which they can propose a pull request; if a repository has review requirements, they should wait for the required review. Least-privilege access and clear review records protect both the project and its collaborators."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "GitHub",
+      "definition": "A web-based platform for hosting repositories and collaborating around work tracked with Git."
+    },
+    {
+      "term": "repository",
+      "definition": "A project collection of files and their recorded revision history, hosted locally or on a service."
+    },
+    {
+      "term": "remote",
+      "definition": "A named connection from a local Git repository to a repository hosted at another location."
+    },
+    {
+      "term": "issue",
+      "definition": "A trackable record used to discuss, plan, or organize a task, bug, idea, or feedback."
+    },
+    {
+      "term": "pull request",
+      "definition": "A proposal to merge changes from one branch into another after discussion and review."
+    },
+    {
+      "term": "base branch",
+      "definition": "The target branch that a pull request proposes to change through a merge."
+    },
+    {
+      "term": "permission",
+      "definition": "Authorization to perform a particular action on an account, repository, or other resource."
+    },
+    {
+      "term": "role",
+      "definition": "A defined collection of permissions assigned to a person or team for a resource."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Imagine that a class is building a shared science notebook. Git is the careful history keeper: it remembers each saved version of the notebook. GitHub is the shared classroom shelf and discussion board around that notebook. Everyone who is allowed can see the shared copy, talk about a task, and propose a change without scribbling over the main version immediately.\n\nAn issue is like a card that says, “The chart on page three needs a clearer label.” A student makes a copy of the relevant work area, improves the label, and brings the proposed change to the group. That proposal is like a pull request. Other students can read it, leave notes, and ask for a correction. If the group rules are met, the proposal can be added to the main notebook.\n\nNot every student has the same authority. Some may only read, some may comment, and some may merge changes. Those permissions are rules about who can do which action. They are not a judgment about whose ideas matter.",
+    "analogy": "Git is the notebook's version history, while GitHub is the shared shelf and discussion board that helps a class collaborate around it.",
+    "analogyLimits": "A real repository contains structured files and exact commit history, not paper pages, and GitHub permissions are configured technical rules rather than a teacher deciding informally. The analogy also omits the mechanics of Git commands and network synchronization."
+  },
+  "workedExample": "A small website team receives a report that the contact page has an outdated email address. They open an issue that states the old address, the intended replacement, and where it appears. A contributor with the appropriate access creates a focused branch, changes only the contact-page content, and opens a pull request against the project's base branch. The pull request links the issue and explains the change. A reviewer checks that the new address is correct and that no unrelated edits are included. After the repository's required review and checks pass, an authorized person merges the pull request. The issue can then be closed because the visible task and the reviewed change are connected. This is a collaboration example, not a substitute for the local Git commands used to make the branch or commit.",
+  "commonMistakes": [
+    {
+      "mistake": "Using Git and GitHub as if they were the same tool.",
+      "correction": "Git records version history; GitHub can host Git repositories and provide collaboration features around them."
+    },
+    {
+      "mistake": "Treating an issue as proof that a code change has been made.",
+      "correction": "Use an issue to describe and track work, then connect it to the reviewed change that addresses it."
+    },
+    {
+      "mistake": "Opening a broad pull request with several unrelated changes.",
+      "correction": "Keep a pull request focused so reviewers can understand, test, and discuss one proposal."
+    },
+    {
+      "mistake": "Assuming every repository grants the same actions to every contributor.",
+      "correction": "Check the repository's access and contribution rules; permissions and merge requirements vary."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Git",
+      "b": "GitHub",
+      "distinction": "Git is version-control software; GitHub is a hosted platform that can provide repositories and collaboration features around Git."
+    },
+    {
+      "a": "issue",
+      "b": "pull request",
+      "distinction": "An issue records or discusses work; a pull request proposes a specific branch's changes for review and possible merge."
+    },
+    {
+      "a": "local clone",
+      "b": "remote repository",
+      "distinction": "A local clone is a copy on a developer's machine; a remote repository is a connected repository hosted elsewhere."
+    },
+    {
+      "a": "permission",
+      "b": "role",
+      "distinction": "A permission authorizes one action, while a role groups permissions for assignment to people or teams."
+    }
+  ],
+  "keyTakeaway": "GitHub hosts repositories and adds collaboration tools around Git. A clear issue, a focused pull request, thoughtful review, and appropriate permissions make team changes easier to trace and safer to merge.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:github:1",
+      "prompt": "Which statement best distinguishes GitHub from Git?",
+      "options": [
+        "GitHub is the version-control system, while Git only stores website files.",
+        "GitHub can host Git repositories and add collaboration features, while Git provides version control.",
+        "GitHub is required for every local Git repository to exist.",
+        "GitHub replaces branches and commits with issues."
+      ],
+      "correctIndex": 1,
+      "explanation": "Git supplies version control, while GitHub can host repositories and offer collaboration features. A local Git repository can exist without GitHub, and GitHub does not replace commits or branches.",
+      "difficulty": "recall",
+      "skill": "Distinguish a platform from its underlying version-control system",
+      "sourceIds": [
+        "github-docs-connecting-to-github"
+      ]
+    },
+    {
+      "id": "web-development:foundations:github:2",
+      "prompt": "A team wants a visible place to record a bug report, discuss its scope, and connect it to later work. Which GitHub feature fits that purpose?",
+      "options": [
+        "A remote name",
+        "A base branch",
+        "An issue",
+        "A local clone"
+      ],
+      "correctIndex": 2,
+      "explanation": "Issues are used to plan, discuss, and track work such as bugs, ideas, and feedback. A remote, branch, and clone serve different repository-management roles.",
+      "difficulty": "application",
+      "skill": "Select a planning tool for a collaboration scenario",
+      "sourceIds": [
+        "github-docs-about-issues"
+      ]
+    },
+    {
+      "id": "web-development:foundations:github:3",
+      "prompt": "What does a pull request propose?",
+      "options": [
+        "Merging changes from one branch into a base branch after review",
+        "Deleting every branch after a local commit",
+        "Granting all visitors administrator access",
+        "Replacing a repository's file history with an issue"
+      ],
+      "correctIndex": 0,
+      "explanation": "A pull request proposes branch changes for review and a possible merge into a base branch. It does not erase history, grant universal access, or replace issues.",
+      "difficulty": "understanding",
+      "skill": "Explain the purpose of a pull request",
+      "sourceIds": [
+        "github-docs-pull-request-quickstart"
+      ]
+    },
+    {
+      "id": "web-development:foundations:github:4",
+      "prompt": "A contributor pushes another commit to the branch already used by an open pull request. What happens to that pull request according to GitHub's quickstart?",
+      "options": [
+        "It automatically becomes a new repository.",
+        "It loses its review conversation permanently.",
+        "It merges immediately regardless of review requirements.",
+        "It updates to include the additional commit."
+      ],
+      "correctIndex": 3,
+      "explanation": "Further commits on the pull request's branch are automatically added to that pull request. They do not create a new repository, discard discussion, or bypass requirements.",
+      "difficulty": "analysis",
+      "skill": "Trace how branch changes affect an open pull request",
+      "sourceIds": [
+        "github-docs-pull-request-quickstart"
+      ]
+    },
+    {
+      "id": "web-development:foundations:github:5",
+      "prompt": "Why should a contributor check repository permissions before attempting a merge?",
+      "options": [
+        "Permissions determine the colors used in pull-request comments.",
+        "Permissions control who is authorized to perform particular actions on resources.",
+        "Permissions convert every issue into a pull request.",
+        "Permissions make a local clone identical to all remotes."
+      ],
+      "correctIndex": 1,
+      "explanation": "GitHub defines permissions as authorization for specific actions, and roles group permissions. Repository rules can therefore limit who may review, push, or merge changes.",
+      "difficulty": "understanding",
+      "skill": "Explain the purpose of access control in collaboration",
+      "sourceIds": [
+        "github-docs-access-permissions"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:github:1",
+      "prompt": "Which statement best distinguishes GitHub from Git?",
+      "options": [
+        "GitHub is the version-control system, while Git only stores website files.",
+        "GitHub can host Git repositories and add collaboration features, while Git provides version control.",
+        "GitHub is required for every local Git repository to exist.",
+        "GitHub replaces branches and commits with issues."
+      ],
+      "correctIndex": 1,
+      "explanation": "Git supplies version control, while GitHub can host repositories and offer collaboration features. A local Git repository can exist without GitHub, and GitHub does not replace commits or branches."
+    },
+    {
+      "id": "web-development:foundations:github:2",
+      "prompt": "A team wants a visible place to record a bug report, discuss its scope, and connect it to later work. Which GitHub feature fits that purpose?",
+      "options": [
+        "A remote name",
+        "A base branch",
+        "An issue",
+        "A local clone"
+      ],
+      "correctIndex": 2,
+      "explanation": "Issues are used to plan, discuss, and track work such as bugs, ideas, and feedback. A remote, branch, and clone serve different repository-management roles."
+    },
+    {
+      "id": "web-development:foundations:github:3",
+      "prompt": "What does a pull request propose?",
+      "options": [
+        "Merging changes from one branch into a base branch after review",
+        "Deleting every branch after a local commit",
+        "Granting all visitors administrator access",
+        "Replacing a repository's file history with an issue"
+      ],
+      "correctIndex": 0,
+      "explanation": "A pull request proposes branch changes for review and a possible merge into a base branch. It does not erase history, grant universal access, or replace issues."
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:git",
+    "web-development:foundations:web-hosting",
+    "web-development:foundations:web-security-basics",
+    "web-development:foundations:browser-developer-tools"
+  ],
+  "sources": [
+    "github-docs-connecting-to-github",
+    "github-docs-about-issues",
+    "github-docs-pull-request-quickstart",
+    "github-docs-access-permissions"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only GitHub documentation; no source prose adapted.",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original instructional explanation based on current GitHub documentation read directly."
+  },
+  "contentHash": "efcf961083f1d97b",
+  "status": "source-verified",
+  "public": false
+}

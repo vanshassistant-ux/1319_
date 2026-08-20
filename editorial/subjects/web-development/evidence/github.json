@@ -1,0 +1,143 @@
+{
+  "topicId": "web-development:foundations:github",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {
+    "core": [
+      "GitHub as a hosted collaboration platform around Git repositories",
+      "repository, local clone, and remote concepts at a high level",
+      "issues as work tracking",
+      "pull-request review workflow",
+      "permissions and roles"
+    ],
+    "supporting": [
+      "branches and base branches",
+      "forks as a route for proposing changes without write access",
+      "focused changes and project-specific merge requirements"
+    ],
+    "outOfScope": [
+      "local Git command syntax",
+      "merging conflict resolution",
+      "deployment or web hosting configuration",
+      "credential setup and authentication instructions",
+      "advanced automation and GitHub Actions"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "GitHub is a web-based application for hosting files in repositories, collaborating on work, and tracking changes; its version tracking is powered by Git.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "github-docs-connecting-to-github"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "GitHub's browser interface can support a collaboration flow that includes creating a branch or fork, editing, committing, and creating a pull request.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "github-docs-connecting-to-github",
+        "github-docs-pull-request-quickstart"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "GitHub Issues can plan, discuss, and track work such as bugs, features, ideas, and feedback, and can be connected to pull requests.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "github-docs-about-issues"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A pull request proposes changes from a separate branch for review before a possible merge into a base branch; later commits on that branch are added to the pull request.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "github-docs-pull-request-quickstart"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Reviewers can comment, suggest changes, or request changes, and a pull request can be merged when repository requirements such as required reviews and status checks pass.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "github-docs-pull-request-quickstart"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A permission authorizes a particular action, while a role is a set of permissions assigned to individuals or teams; access models vary by account type.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "github-docs-access-permissions"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft described GitHub only as a generic foundational concept and supplied no usable source support."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic boilerplate with a sourced distinction between Git and GitHub.",
+    "Added current GitHub documentation for issues, pull requests, and access permissions.",
+    "Kept local Git command syntax, credential setup, deployment, and advanced automation out of scope."
+  ],
+  "rightsIssues": [
+    "GitHub Docs were used as reference-only documentation. All lesson prose is original synthesis and does not reproduce source prose."
+  ],
+  "sourceRecords": [
+    {
+      "id": "github-docs-connecting-to-github",
+      "title": "GitHub Docs — Connecting to GitHub",
+      "provider": "GitHub Docs",
+      "url": "https://docs.github.com/en/get-started/using-github/connecting-to-github",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-20",
+      "notes": "Read directly. Supports GitHub as a web-based repository-hosting and collaboration application powered by Git, the browser and desktop ways to work with hosted repositories, and the high-level branch-or-fork contribution flow."
+    },
+    {
+      "id": "github-docs-about-issues",
+      "title": "GitHub Docs — About issues",
+      "provider": "GitHub Docs",
+      "url": "https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-20",
+      "notes": "Read directly after the current official URL redirected here. Supports issues as planning, discussion, and tracking records; issue metadata; issue-to-pull-request references; and issue assignment."
+    },
+    {
+      "id": "github-docs-pull-request-quickstart",
+      "title": "GitHub Docs — Quickstart for pull requests",
+      "provider": "GitHub Docs",
+      "url": "https://docs.github.com/en/pull-requests/get-started/pull-request-quickstart",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-20",
+      "notes": "Read directly. Supports the branch-or-fork, focused-change, pull-request, review-feedback, and merge workflow, including the fact that later commits to the same branch update the pull request."
+    },
+    {
+      "id": "github-docs-access-permissions",
+      "title": "GitHub Docs — Access permissions on GitHub",
+      "provider": "GitHub Docs",
+      "url": "https://docs.github.com/en/get-started/learning-about-github/access-permissions-on-github",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-20",
+      "notes": "Read directly. Supports the definitions of permissions and roles and the fact that roles and access models differ across personal, organization, and enterprise accounts."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "topicId": "web-development:foundations:git",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {
+    "core": ["local version control", "repository", "working tree", "staging area", "commits", "local history", "branches"],
+    "supporting": ["git status", "git add", "git log", "HEAD"],
+    "outOfScope": ["GitHub and remote collaboration", "complex merges and conflict recovery", "hosting and deployment", "destructive history rewriting"]
+  },
+  "claims": [
+    {"claim": "Version control records changes to files over time so specific earlier versions can be recalled.", "claimType": "TECHNICAL", "sourceIds": ["git-pro-git-what-is-git"], "status": "supported"},
+    {"claim": "Git models committed project state as snapshots and many ordinary operations can use local repository data.", "claimType": "TECHNICAL", "sourceIds": ["git-pro-git-what-is-git"], "status": "supported"},
+    {"claim": "The working tree is the checked-out project copy; the staging area or index stores selected content for the next commit.", "claimType": "TECHNICAL", "sourceIds": ["git-pro-git-what-is-git", "git-data-model-doc"], "status": "supported"},
+    {"claim": "A normal git commit creates a commit from the current index and a log message, while git add incrementally adds file changes to the index.", "claimType": "TECHNICAL", "sourceIds": ["git-commit-doc", "git-data-model-doc"], "status": "supported"},
+    {"claim": "A commit has a directory tree, parent commit IDs, author and committer information, and a commit message.", "claimType": "TECHNICAL", "sourceIds": ["git-data-model-doc"], "status": "supported"},
+    {"claim": "A branch refers to the latest commit on that branch, and a new commit updates the current branch to point to it.", "claimType": "TECHNICAL", "sourceIds": ["git-data-model-doc", "git-commit-doc"], "status": "supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft described Git only as a generic concept and did not provide an accurate version-control workflow or sources."],
+  "correctionsNeeded": ["Replaced generic boilerplate with verified local Git concepts; excluded GitHub, remotes, deployment, and conflict-recovery instructions."],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {"id": "git-pro-git-what-is-git", "title": "Pro Git — What is Git?", "provider": "Git", "url": "https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "license": "CC BY-NC-SA 3.0", "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": false, "checkedAt": "2026-08-20", "notes": "Read directly. Supports version-control purpose, Git's snapshot model, local operations, and the working-tree/staging-area/commit workflow. Used for factual verification only; no prose adapted."},
+    {"id": "git-commit-doc", "title": "git-commit Documentation", "provider": "Git", "url": "https://git-scm.com/docs/git-commit", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": false, "checkedAt": "2026-08-20", "notes": "Read directly. Supports how git add updates the index and how a normal commit records current index contents. Used for factual verification only."},
+    {"id": "git-data-model-doc", "title": "gitdatamodel Documentation", "provider": "Git", "url": "https://git-scm.com/docs/gitdatamodel.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": false, "checkedAt": "2026-08-20", "notes": "Read directly. Supports commit components, references and branches, HEAD, and the index/staging-area definition. Used for factual verification only."}
+  ]
+}

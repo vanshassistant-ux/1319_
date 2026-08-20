@@ -1,0 +1,26 @@
+{
+  "topicId": "web-development:foundations:web-hosting",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {
+    "core": ["web hosting purpose", "web server roles", "static and dynamic delivery", "deployment", "domain-to-host relationship"],
+    "supporting": ["hosted website assets", "provider-supplied preview address", "safe basic deployment verification"],
+    "outOfScope": ["domain registration procedure", "DNS record mechanics", "Git and GitHub workflows", "TLS or HTTPS configuration", "detailed cloud-provider setup", "security exploitation"]
+  },
+  "claims": [
+    {"claim": "A web server can refer to hardware, server software, or both together; it stores or serves website components and responds to browser requests.", "claimType": "TECHNICAL", "sourceIds": ["mdn-what-is-web-server"], "status": "supported"},
+    {"claim": "A static web server delivers hosted files as stored, while a dynamic web server adds software such as an application server and database to process or generate content.", "claimType": "TECHNICAL", "sourceIds": ["mdn-what-is-web-server"], "status": "supported"},
+    {"claim": "Web hosting is rented file space on a hosting company's web server, where the web server provides website content to visitors.", "claimType": "EVERGREEN", "sourceIds": ["mdn-publishing-website"], "status": "supported"},
+    {"claim": "A domain name is a web address; when hosting and domain services are separate, configuration is needed to direct the domain to the correct server.", "claimType": "TECHNICAL", "sourceIds": ["mdn-publishing-website"], "status": "supported"},
+    {"claim": "Website files can reach a host through provider-supported approaches such as an upload interface, an FTP program, a connected source repository, or command-line tools.", "claimType": "TECHNICAL", "sourceIds": ["mdn-publishing-website"], "status": "supported"},
+    {"claim": "Prepared pages and assets can be hosted as static content even when a site includes browser-side JavaScript; dynamic delivery refers to server-side processing before a response is sent.", "claimType": "TECHNICAL", "sourceIds": ["mdn-what-is-web-server"], "status": "supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft supplied generic boilerplate and did not define hosting, web-server roles, deployment, static delivery, dynamic delivery, or the relationship between a domain and a host."],
+  "correctionsNeeded": ["Replaced generic boilerplate with a bounded lesson on hosting and deployment; separated domains and DNS mechanics, Git workflows, HTTPS, and security configuration into their own topics."],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {"id": "mdn-what-is-web-server", "title": "MDN Web Docs — What is a web server?", "provider": "Mozilla / MDN Web Docs", "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_web_server", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "license": "CC BY-SA 2.5", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-20", "notes": "Read directly. Supports the hardware/software meanings of web server, hosted files, HTTP serving, and the high-level static-versus-dynamic distinction. No source prose was reproduced."},
+    {"id": "mdn-publishing-website", "title": "MDN Web Docs — Publishing your website", "provider": "Mozilla / MDN Web Docs", "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Publishing_your_website", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "license": "CC BY-SA 2.5", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-20", "notes": "Read directly. Supports the relationship among hosting, domain names, servers, deployment pathways, and a provider-supplied live address. No source prose was reproduced."}
+  ]
+}
