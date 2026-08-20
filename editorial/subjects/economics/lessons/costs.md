@@ -20,7 +20,7 @@ Cost curves are the backbone of how firms decide what to produce and what to cha
 
 ### Fixed, variable, and total cost in the short run
 
-Economists split a firm's costs by asking a single question: if output changed right now, would this cost change too? Costs that would not change are fixed costs. They are the price of inputs the firm is locked into for the current period, such as a factory lease, insurance, or specialized machinery. A bakery pays the same monthly rent whether it bakes one loaf or a thousand. Costs that rise and fall with output are variable costs, the price of inputs the firm can adjust immediately, such as flour, electricity, and hourly labor. Total cost is simply the two added together: TC = FC + VC. The distinction only makes sense over a defined time horizon. The short run is the period during which at least one input is fixed, so the firm can change output only by using more or fewer variable inputs. That single locked input is what gives fixed cost its meaning; stretch the horizon far enough and every cost becomes changeable.
+Economists split a firm's costs by asking a single question: if output changed right now, would this cost change too? Costs that would not change are fixed costs. They are the price of inputs the firm is locked into for the current period, such as a factory lease, insurance, or specialized machinery. A bakery pays the same monthly rent whether it bakes one loaf or a thousand. Costs that rise and fall with output are variable costs, the price of inputs the firm can adjust immediately, such as flour, electricity, and hourly labor. Total cost is simply the two added together: TC = FC + VC. The distinction only makes sense over a defined time horizon. As the production topic explains, the short run is a horizon in which some input (often plant or equipment) stays fixed and only the variable inputs can be adjusted. That single locked input is what gives fixed cost its meaning; stretch the horizon far enough and every cost becomes changeable.
 
 ### Four per-unit costs: AFC, AVC, ATC, and marginal cost
 
@@ -43,7 +43,7 @@ In the long run, no input is fixed. The firm can build a bigger factory, sign di
 - **Average fixed cost (AFC):** Fixed cost divided by the quantity produced (FC/Q); it falls continuously as output rises because a fixed amount is spread over more units.
 - **Average variable cost (AVC):** Variable cost divided by the quantity produced (VC/Q).
 - **Average total cost (ATC):** Total cost divided by the quantity produced (TC/Q); it equals AFC plus AVC and is typically U-shaped.
-- **Short run:** The time horizon over which at least one input is fixed, so output can change only by adjusting variable inputs.
+- **Short run:** The horizon in which some input cannot yet be varied, so output changes only through the variable inputs.
 - **Long-run average cost curve (LRAC):** The curve showing the lowest average cost of producing each quantity when the firm can vary every input, including its scale; it is the lower envelope of the short-run ATC curves.
 - **Economies of scale:** A situation in which the per-unit cost of production falls as the firm increases its scale of output; the opposite case, where per-unit cost rises with scale, is diseconomies of scale.
 

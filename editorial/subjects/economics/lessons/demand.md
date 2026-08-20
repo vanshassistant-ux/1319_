@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Demand is the whole relationship between a good's price and how much buyers are willing and able to purchase. The law of demand says that, holding everything else constant, a higher price brings a lower quantity demanded and a lower price a higher quantity demanded, which is why the demand curve slopes downward. Change the good's own price and you move along the curve; change income, tastes, related prices, expectations, or the number of buyers and the whole curve shifts.
+Demand is the full schedule linking each possible price of a good to the amount buyers will purchase at that price. The law of demand states that, with all other factors unchanged, buyers purchase a smaller quantity as the price rises and a larger quantity as it falls — the reason the demand curve runs downhill. Change the good's own price and you move along the curve; change income, tastes, related prices, expectations, or the number of buyers and the whole curve shifts.
 
 ## Why This Matters
 
@@ -36,11 +36,11 @@ Market demand is simply the sum of every individual buyer's demand at each price
 
 ### Movement along the curve versus a shift of the curve
 
-There are exactly two ways the amount people buy can change, and the model treats them very differently. If the good's own price changes and nothing else does, buyers slide from one point on the fixed curve to another point on the same curve. That is a movement along the demand curve, and we call it a change in quantity demanded. A frost that pushes the price of coffee up, causing shoppers to buy fewer bags this week, is a movement along coffee's demand curve.
+There are exactly two ways the amount people buy can change, and the model treats them very differently. When only the good's own price moves and every other factor stays put, buyers slide from one point on the unchanged curve to another point on it. That is a movement along the demand curve, and we call it a change in quantity demanded. A frost that pushes the price of coffee up, causing shoppers to buy fewer bags this week, is a movement along coffee's demand curve.
 
-If instead something other than the good's own price changes, the entire curve moves to a new position, so that a different quantity is now demanded at every possible price. That is a shift of the demand curve, and we call it a change in demand. A rightward shift (an increase in demand) means more is wanted at each price; a leftward shift (a decrease in demand) means less is wanted at each price.
+If instead some factor apart from the good's own price moves, the entire curve jumps to a new position, so that a different quantity is now demanded at every possible price. That is a shift of the demand curve, and we call it a change in demand. A rightward shift (an increase in demand) means more is wanted at each price; a leftward shift (a decrease in demand) means less is wanted at each price.
 
-The test is simple. Ask what changed. If it was the good's own price, you have a movement along the curve, a change in quantity demanded. If it was anything else, you have a shift, a change in demand. Mislabeling the two leads to circular reasoning, such as claiming a price rise "lowers demand," when a price rise (with all else equal) lowers quantity demanded and leaves demand, the curve itself, exactly where it was.
+The quick check: identify what actually changed. If the good's own price did, it is a movement along the curve — a change in quantity demanded. If any other factor did, it is a shift — a change in demand. Mislabeling the two leads to circular reasoning, such as claiming a price rise "lowers demand," when a price rise (with all else equal) lowers quantity demanded and leaves demand, the curve itself, exactly where it was.
 
 ### The determinants: what shifts the whole curve
 
