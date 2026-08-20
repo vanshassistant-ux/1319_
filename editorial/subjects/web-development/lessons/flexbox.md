@@ -60,7 +60,7 @@ Flexbox is like a shelf manager assigning space to boxes in one direction, then 
 
 ## Worked Example
 
-A 720px-wide row flex container has three items, each with `flex-basis: 160px`. Their bases use 480px, leaving 240px of positive free space. Set the grow factors to 2, 1, and 1: `flex: 2 1 160px`, `flex: 1 1 160px`, and `flex: 1 1 160px`. The factors total 4, so the first item receives 2/4 of 240px = 120px; each other item receives 1/4 = 60px. Their resulting main-axis sizes are 280px, 220px, and 220px. `justify-content` has no remaining free space to distribute in this simplified case. If the container instead had extra height, `align-items: center` would move the items on the cross axis, not change those widths.
+A 720px-wide row flex container has three items, each with `flex-basis: 160px`. Their bases use 480px, leaving 240px of positive free space. Give the items grow factors 2, 1, and 1; give each a shrink factor of 1. The first item can use `flex: 2 1 160px`; the other two can express the same settings with separate `flex-grow: 1`, `flex-shrink: 1`, and `flex-basis: 160px` declarations. The factors total 4, so the first item receives 2/4 of 240px = 120px; each other item receives 1/4 = 60px. Their resulting main-axis sizes are 280px, 220px, and 220px. `justify-content` has no remaining free space to distribute in this simplified case. If the container instead had extra height, `align-items: center` would move the items on the cross axis, not change those widths.
 
 ## Common Mistakes
 

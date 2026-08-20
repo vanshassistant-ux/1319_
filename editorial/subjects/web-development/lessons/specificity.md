@@ -22,13 +22,13 @@ Specificity explains many apparent CSS surprises: a rule can match an element an
 
 Specificity is a weight associated with a selector. It matters only after CSS reaches the stage of comparing declarations that otherwise compete for the same property on the same element. A selector first has to match; the cascade also considers origin and importance. If specificity is tied, source order can settle the conflict. This lesson focuses on selector weights rather than the full cascade.
 
-For ordinary selectors, use three columns: ID selectors; class selectors, attribute selectors, and pseudo-classes; then type selectors and pseudo-elements. `#panel` is 1-0-0. `main .card .title` is 0-2-1. Compare columns from the left, not as decimal points: one ID outweighs any number of class and type selectors.
+For ordinary selectors, use three columns: ID selectors; class selectors, attribute selectors, and pseudo-classes; then type selectors and pseudo-elements. `#panel` is 1-0-0. A descendant selector with one type selector and two class selectors is 0-2-1. Compare columns from the left, not as decimal points: one ID outweighs any number of class and type selectors.
 
 ### Calculate what appears in the selector
 
 `button.primary` is 0-1-1: one class and one type selector. `form [type="email"]:focus` is 0-2-1: `form` is a type selector, while the attribute selector and pseudo-class each count in the middle column. The universal selector and combinators do not add weight. A pseudo-element such as `::before` belongs in the final column.
 
-A comma-separated selector list has separate weights. In `h1, .heading`, `h1` is 0-0-1 and `.heading` is 0-1-0; do not add them. Use the branch that actually matched. Specificity describes selector structure, not visual importance or the number of elements a selector matches.
+A selector list has separate weights for its branches. A list with `h1` as one branch and `.heading` as another gives the first 0-0-1 and the second 0-1-0; do not add them. Use the branch that actually matched. Specificity describes selector structure, not visual importance or the number of elements a selector matches.
 
 ### Functional pseudo-classes and the `:where()` boundary
 
@@ -50,7 +50,7 @@ A comma-separated selector list has separate weights. In `h1, .heading`, `h1` is
 
 Imagine several labels competing to tell a librarian where to put one book. An ID label is an exact shelf code, a class label is a category sticker, and a type label is a broad kind such as “book.” CSS counts those kinds of labels in three columns and checks exact shelf codes first.
 
-` :where()` is like a removable pencil note: it can describe the books to include, but it deliberately carries no authority in the comparison. A normal selector can replace its default easily. Specificity does not decide every CSS disagreement; it helps only after CSS has reached competing relevant rules.
+`:where()` is like a removable pencil note: it can describe the books to include, but it deliberately carries no authority in the comparison. A normal selector can replace its default easily. Specificity does not decide every CSS disagreement; it helps only after CSS has reached competing relevant rules.
 
 ## Eli's Analogy
 
@@ -60,7 +60,7 @@ The analogy omits origin, importance, and source order, which can matter before 
 
 ## Worked Example
 
-Both rules match one link: `:where(.card) a { color: teal; }` and `.card a { color: rebeccapurple; }`. The first is 0-0-0 because `:where()` is always zero. The second is 0-1-1, so at the same origin and importance its declaration wins and the link is rebeccapurple. Compare `#sale .card a` (1-1-1) with `.page .card a` (0-2-1): the first selector wins because it has an ID. Do not add the right-hand columns into a larger total.
+Both rules match one link: `:where(.card) a { color: teal; }` and `.card a { color: rebeccapurple; }`. The first is 0-0-0 because `:where()` is always zero. The second is 0-1-1, so at the same origin and importance its declaration wins and the link is rebeccapurple. Compare a selector with one ID, one class, and one type (1-1-1) with one that has two classes and one type (0-2-1): the first wins because its ID is in the first column. Do not add the right-hand columns into a larger total.
 
 ## Common Mistakes
 
@@ -83,7 +83,7 @@ Calculate specificity as ordered ID, class/attribute/pseudo-class, and type/pseu
 
 1. Which three categories make up ordinary CSS specificity? **Answer: IDs; classes, attributes, and pseudo-classes; types and pseudo-elements.**
 2. What is the specificity of `button.primary`? **Answer: 0-1-1.**
-3. Which is more specific: `.page .card a` or `#sale .card a`? **Answer: `#sale .card a`.**
+3. At the same origin and importance, which has greater specificity: a selector with two classes and one type, or one with an ID, a class, and a type? **Answer: The selector with an ID, a class, and a type.**
 4. What specificity does `:where(nav a)` have? **Answer: 0-0-0.**
 5. How do `:is()` and `:where()` differ? **Answer: `:is()` uses its most specific argument; `:where()` is always zero.**
 

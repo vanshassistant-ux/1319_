@@ -1,132 +1,22 @@
 # Resume point
 
-Read this first on every new run, then `editorial/reports/EDITORIAL_PROGRESS.md`.
+Read this file first on every new run, then run `bun scripts/editorial-progress.mjs` for live totals.
 
 ## Current position
 
-- **Education is COMPLETE** — 21/21 topics, audited (0 issues), reported at
-  `editorial/reports/subjects/education.md`.
-- **Social Work & Human Services is COMPLETE** — 20/20 topics, audited (0 issues), reported
-  at `editorial/reports/subjects/social-work-and-human-services.md`.
-- **Criminal Justice & Criminology is COMPLETE** — 28/28 topics, audited (0 issues),
-  reported at `editorial/reports/subjects/criminal-justice-and-criminology.md`.
-- **Engineering Fundamentals is COMPLETE** — 28/28 topics, audited (0 issues), reported at
-  `editorial/reports/subjects/engineering-fundamentals.md`.
-- **Health Administration is COMPLETE** — 24/24 topics, audited (0 issues), reported at
-  `editorial/reports/subjects/health-administration.md`.
-- **Hospitality and Tourism is COMPLETE** — 20/20 topics, audited (0 issues), reported at
-  `editorial/reports/subjects/hospitality-and-tourism.md`.
-- **Graphic Design and Digital Media is COMPLETE** — 28/28 topics, audited (0 issues),
-  reported at `editorial/reports/subjects/graphic-design-and-digital-media.md`.
-- **Environmental Sustainability is COMPLETE** — 25/25 topics, audited (0 issues), reported
-  at `editorial/reports/subjects/environmental-sustainability.md`. (Note: queue entry 25,
-  slug `part-ii-computer-and-technology`, was a mis-ingested section header repurposed into a
-  real lesson titled "Sustainable Computing and E-Waste".)
-- **Computer Literacy is COMPLETE** — 25/25 topics, audited (0 issues), reported at
-  `editorial/reports/subjects/computer-literacy.md`.
-- **Computer Science Fundamentals is COMPLETE** — 27/27 topics, audited (0 issues), reported at
-  `editorial/reports/subjects/computer-science-fundamentals.md`. (Correctness-critical subject:
-  every worked example and Big-O claim was re-derived in `python3` at merge. Five duplicate
-  Python/OpenStax source ids from parallel workers were consolidated to one id each and re-gated;
-  11 homonym/compatible glossary-term collisions and the literal bracket-matching paren lines are
-  excused with reasons in the subject's `audit-exceptions.json`.)
-
-- **Python Programming is COMPLETE** — 36/36 topics, audited (0 issues), reported at
-  `editorial/reports/subjects/python-programming.md`. The final mis-ingested instruction-header
-  slug was repurposed as “Small Executable Python Examples.”
-
-  **RESUMED 2026-08-19 in this `1319_DIR` copy (operator direction: "continue from where
-  Hermes left off").** This directory — `/Users/moomoo/Desktop/1319_DIR` — is now the live
-  working repository. Total: **246 / 1,319** topics, 10 / 44 subjects.
-
-  **Phase 1 is COMPLETE.** Next subject: `web-development` (Phase 2, 47 topics). Confirm phase 2
-  before initialization, hand-write its source map, then follow the usual one-fresh-worker-per-topic
-  serial-merge loop.
-  (a hands-on programming subject: verify every code example runs in `python3`; keep examples
-  idiomatic and version-correct; cite the official Python docs/tutorial as Tier A). Then Phases 2–4
-  (11 subjects each). Full order in `HERMES_READ_THIS.md` §6.
-
-  **Operator note (2026-08-19):** after finishing Computer Science Fundamentals the operator asked
-  to pause at the subject boundary and be pinged before more agents launch. Do NOT start
-  python-programming without a go-ahead.
-
-  **Runtime here: `bun` only (no `node` on PATH).** All `.mjs` pipeline scripts run under
-  bun, and the `npm run editorial:*` aliases (which hardcode bun) work as written. The
-  START_HERE / HERMES handoff docs assume a Node VM and say the npm aliases fail — that is
-  false on this Mac. Use `bun run editorial:*` or `bun scripts/...` directly. Run
-  `npm install` once before typecheck/build only.
-
-  Next subject: `computer-science-fundamentals` (27 topics). The init script does not create
-  `source-map.json` — hand-write it (a technical/CS-theory subject: algorithms, data
-  structures, Big-O, binary/number systems, boolean logic, programming concepts, etc.
-  Use authoritative CS OER, standards, and primary references; verify all worked algorithm/
-  complexity examples in Bash; keep code examples correct and language-appropriate).
-  Watch for mis-ingested "PART ..." section-header queue entries.
-
-  Answer-key note: ask for an EVEN spread across A/B/C/D with "at least one D" — that phrasing
-  produced the best balance so far (graphic design 38/36/31/35). Workers frequently MISREPORT
-  their own key positions, so always verify keys by reading the review JSON.
-
-- **No other subject may be started** until the current one has zero unprocessed topics,
-  a subject audit, and a subject report.
-- Authoritative state lives in `content/phase-1/content-progress.json`. A topic is
-  processed if and only if it carries an `editorialStatus`. Never estimate counts by
-  hand — run `bun run editorial:progress`.
+- Phase 1 is complete, including Python Programming.
+- **Web Development is COMPLETE** — 47/47 topics accepted at `source-verified`, `READY_TO_PUBLISH`, and `public: false`; subject audit returned 0 issues; report: `editorial/reports/subjects/web-development.md`.
+- The Web Development queue was completed on 2026-08-20. Its audited exceptions are documented in `editorial/subjects/web-development/audit-exceptions.json`.
 
 ## Next action
 
-Initialize `hospitality-and-tourism` (`bun run editorial:init 1 hospitality-and-tourism`),
-hand-write its `source-map.json`, then assign the next unprocessed topic in
-`editorial/subjects/hospitality-and-tourism/topic-queue.json` to a FRESH single-topic
-worker (see `editorial/TOPIC_AGENT_BRIEF.md`). Up to ~8 workers may run at once, but every
-one of them must belong to the current subject, and each worker gets exactly one topic.
-Queue order is the processing order. Give each worker the sibling topic-id list so it
-populates `relatedTopics` itself, and tell it to distribute answer keys evenly across
-A/B/C/D. Verify every answer key against the file (workers can misreport their own keys).
+Stop at this subject boundary unless the owner explicitly directs continuation. The next subject in the required Phase 2 order is `data-science-and-ai-literacy` (Phase 2; confirm its current queue count before work). Do not initialize it until continuation is authorized.
 
-Read the current subject's `source-map.json` first; its cautions are binding on every topic.
+When work resumes, read in this order:
 
-**Known issue to fix in the next worker brief:** answer keys skew away from position D
-across three consecutive subjects (Social Work 20/34/31/15, Criminal Justice 29/49/43/19,
-Engineering 33/48/40/19). Tell workers to distribute keys evenly rather than letting the
-correct answer drift toward the middle options.
+1. `CODEX_READ_THIS.md`
+2. `editorial/RESUME.md`
+3. `editorial/TOPIC_AGENT_BRIEF.md`
+4. `HERMES_READ_THIS.md` (subject/phase order)
 
-Up to 5 workers may run at once. Give each one explicit scope boundaries against the
-other topics in flight, since parallel workers cannot read each other's output.
-
-## The loop
-
-1. Launch fresh workers (one topic each) with the brief.
-2. Workers self-validate with `bun scripts/editorial-accept-topic.mjs 1 <topic-id> --dry-run`.
-   Workers must NOT run the gate without `--dry-run`; only the orchestrator merges,
-   because the shared stores cannot take concurrent writes.
-3. Orchestrator independently reviews each topic — correct topic, no unrelated files
-   touched, sources resolve, spot-check the highest-risk facts against live sources,
-   verify every answer key personally.
-4. Orchestrator merges: `bun scripts/editorial-accept-topic.mjs 1 <topic-id>`.
-   If the gate rejects on "already registered with a different URL", run
-   `bun run editorial:align 1 <subject-slug> <topic-slug>` to see the two URLs, confirm they
-   are the same document, then rerun it with `--apply` and accept again. Do NOT align two
-   genuinely different documents — give the new one its own id.
-5. `bun run editorial:progress`, then the next batch.
-
-## When the current subject reaches zero unprocessed topics
-
-Stop launching workers. Run `bun scripts/editorial-audit-subject.mjs 1 <subject-slug>`
-and drive it to zero issues — fixing what is wrong, and recording anything genuinely
-correct in that subject's `audit-exceptions.json` with a stated reason. Then write
-`editorial/reports/subjects/<subject-slug>.md` following the Education report as the
-template, update global progress, and only then initialize the next subject with
-`bun run editorial:init 1 <next-subject-slug>`.
-
-Phase 1 subject order after social work: criminal-justice-and-criminology,
-engineering-fundamentals, health-administration, hospitality-and-tourism,
-graphic-design-and-digital-media, environmental-sustainability, computer-literacy,
-computer-science-fundamentals, python-programming.
-
-## Publication policy
-
-Accepted topics land at `READY_TO_PUBLISH` (`status: source-verified`, `public: false`),
-matching the precedent set by the first reviewed topic in this repository. Nothing is
-served publicly until the owner signs off. Flipping a topic to `PUBLISHED` is a
-deliberate owner decision, not something a worker or the orchestrator does on its own.
+Then run `bun scripts/editorial-progress.mjs`. Use Bun only; remain local-only; do not push, publish, deploy, or touch `/Users/moomoo/Desktop/1_/_Web_v`.

@@ -70,7 +70,7 @@ With `<article><p class="lead">Welcome</p><p>Details</p><input type="email" disa
 
 ## Compare / Contrast
 
-- `p.lead` matches a paragraph with class `lead`; `p .lead` matches a classed element inside a paragraph.
+- `p.lead` matches a paragraph with class `lead`; a descendant selector with `p` as its ancestor and `.lead` as its descendant matches a classed element inside a paragraph.
 - `[disabled]` tests presence; `[type="email"]` tests a specific value.
 
 ## Key Takeaway

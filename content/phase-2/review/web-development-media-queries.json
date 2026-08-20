@@ -70,7 +70,7 @@
     "analogy": "A media query is like a note on a classroom activity box: “Use these materials only if the class is working outdoors.” The activity is still part of the plan, but its condition decides whether it is used.",
     "analogyLimits": "A browser does not make a one-time classroom choice. Conditions can change while a page is open, and matched CSS rules still interact with the cascade, selectors, and other CSS rules."
   },
-  "workedExample": "Start with a readable base rule: `.nav { display: flex; flex-direction: column; gap: 0.5rem; }`. Suppose testing shows that the navigation has enough room to become a row at 48rem. Add `@media (width >= 48rem) { .nav { flex-direction: row; } }`. At 47rem, the condition is false, so the column direction remains. At exactly 48rem and above, it is true, so the later matching declaration changes only `flex-direction` to `row`. The query does not create the navigation or identify a device; it selects one presentation rule from an explicit width condition. A separate `@media (prefers-reduced-motion: reduce)` rule could reduce decorative transition duration without changing the navigation's content or controls.",
+  "workedExample": "Start with a readable base rule: `.nav { display: flex; flex-direction: column; gap: 0.5rem; }`. Suppose testing shows that the navigation has enough room to become a row at 48rem. Add `@media (width >= 48rem){.nav { flex-direction: row; } }`. At 47rem, the condition is false, so the column direction remains. At exactly 48rem and above, it is true, so the later matching declaration changes only `flex-direction` to `row`. The query does not create the navigation or identify a device; it selects one presentation rule from an explicit width condition. A separate `@media (prefers-reduced-motion: reduce)` rule could reduce decorative transition duration without changing the navigation's content or controls.",
   "commonMistakes": [
     {
       "mistake": "Writing a query to identify a specific phone model.",
@@ -256,7 +256,7 @@
     "researchedAt": "2026-08-20",
     "transformation": "Original explanation and examples synthesized from current MDN documentation and W3C specifications."
   },
-  "contentHash": "a1c9b981bdf1b7a7",
+  "contentHash": "6b34a6ac79b1d9a3",
   "status": "source-verified",
   "public": false
 }

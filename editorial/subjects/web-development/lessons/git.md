@@ -64,7 +64,7 @@ The analogy has limits: Git does not photograph paper pages, and the staging are
 
 ## Worked Example
 
-This local example was run in a disposable directory with Git. First, `git init` created a repository. After writing `index.html`, `git add index.html` made `git status --short` print `A  index.html`: the file was staged for the first commit. `git commit -m "Add first page"` recorded that snapshot. The example then changed the heading; status printed ` M index.html`, meaning the tracked file was modified but not staged. After staging and committing the revision, `git log --oneline --max-count=2` showed `Revise heading` above `Add first page`. Finally, `git branch lesson-copy` created a second local branch name at the latest commit; `git branch --format=%(refname:short)` listed both `lesson-copy` and `main`.
+This local example was run in a disposable directory with Git. First, `git init` created a repository. After writing `index.html`, `git add index.html` made `git status --short` mark the file as staged for the first commit. `git commit -m "Add first page"` recorded that snapshot. The example then changed the heading; status identified `index.html` as modified in the working tree but not staged. After staging and committing the revision, `git log --oneline --max-count=2` showed `Revise heading` above `Add first page`. Finally, `git branch lesson-copy` created a second local branch name at the latest commit; `git branch --format=%(refname:short)` listed both `lesson-copy` and `main`.
 
 ## Common Mistakes
 

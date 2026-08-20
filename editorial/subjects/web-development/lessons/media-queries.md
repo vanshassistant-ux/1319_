@@ -60,7 +60,7 @@ The browser is not making a one-time classroom choice: conditions can change whi
 
 ## Worked Example
 
-Start with `.nav { display: flex; flex-direction: column; gap: 0.5rem; }`. Suppose testing shows the navigation has enough room to become a row at 48rem. Add `@media (width >= 48rem) { .nav { flex-direction: row; } }`. At 47rem, the condition is false, so the column direction remains. At exactly 48rem and above, it is true, so the later matching declaration changes only `flex-direction` to `row`. The query selects a presentation rule from an explicit width condition; it does not create the navigation or identify a device. A separate reduced-motion query could alter decorative transition duration without changing content or controls.
+Start with `.nav { display: flex; flex-direction: column; gap: 0.5rem; }`. Suppose testing shows the navigation has enough room to become a row at 48rem. Add `@media (width >= 48rem){.nav { flex-direction: row; } }`. At 47rem, the condition is false, so the column direction remains. At exactly 48rem and above, it is true, so the later matching declaration changes only `flex-direction` to `row`. The query selects a presentation rule from an explicit width condition; it does not create the navigation or identify a device. A separate reduced-motion query could alter decorative transition duration without changing content or controls.
 
 ## Common Mistakes
 

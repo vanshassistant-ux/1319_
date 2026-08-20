@@ -32,7 +32,7 @@ Media needs the same attention. A rule such as `img { max-width: 100%; height: a
 
 ### Viewport, content priority, and inclusive checks
 
-On mobile browsers, a page normally needs `<meta name="viewport" content="width=device-width, initial-scale=1">` in the document head. `width=device-width` tells the browser to use the device width for the viewport, helping layout rules operate against mobile-sized space rather than a simulated wider desktop viewport. It is configuration, not a layout by itself. It cannot repair a fixed-width component, an unlabeled control, or a page whose important action is hidden.
+On mobile browsers, a page normally needs viewport metadata in the document head that sets its width to the device width and its initial scale to 1. That configuration helps layout rules operate against mobile-sized space rather than a simulated wider desktop viewport. It is configuration, not a layout by itself. It cannot repair a fixed-width component, an unlabeled control, or a page whose important action is hidden.
 
 Plan the narrow view as a real experience: put the main task and essential content where a person can reach and understand them, then use extra room as it becomes available. Accessibility belongs in the same review. Headings should describe structure, links should make sense in context, images need appropriate text alternatives, and text and controls must remain usable under zoom and varied input methods. Test by resizing and inspecting content order, not merely by comparing screenshots.
 

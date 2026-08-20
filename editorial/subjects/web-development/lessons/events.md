@@ -63,10 +63,11 @@ This listener has one job: record a cancelable `save` event and prevent its defa
 ```js
 const target = new EventTarget();
 const log = [];
-target.addEventListener("save", event => {
+const recordSave = event => {
   log.push(event.type);
   event.preventDefault();
-});
+};
+target.addEventListener("save", recordSave);
 const allowed = target.dispatchEvent(new Event("save", { cancelable: true }));
 ```
 

@@ -78,7 +78,7 @@ The web platform combines standards with the capabilities browsers implement. Id
 
 ## Practice Question Bank
 
-1. Which statement best describes a Web API? **A.** A browser-exposed interface that a web application can use.
+1. In browser development, what is a Web API? **A.** A browser-exposed interface that a web application can use.
 2. A browser parses HTML and exposes `document.querySelector()`. Which pairing is accurate? **B.** The browser provides the DOM API; JavaScript code can call it.
 3. Why is feature detection preferable to deciding behavior from a browser name? **C.** It tests whether the needed capability is available in the current environment.
 4. What is the clearest difference between a web specification and a browser implementation? **D.** A specification defines expected behavior, while an implementation provides it in software.

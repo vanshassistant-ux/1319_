@@ -70,7 +70,7 @@
     "analogy": "The working tree is your desk, the staging area is the tray of pages chosen for the next photograph, and a commit is the labeled photograph. A branch is a bookmark pointing at one photograph in a sequence.",
     "analogyLimits": "Git does not photograph paper pages, and the staging area can select individual file contents more precisely than a physical tray. A branch also points into a connected history; it is not simply a duplicate notebook."
   },
-  "workedExample": "This local example was run in a disposable directory with Git. First, `git init` created a repository. After writing `index.html`, `git add index.html` made `git status --short` print `A  index.html`: the file was staged for the first commit. `git commit -m \"Add first page\"` recorded that snapshot. The example then changed the heading; status printed ` M index.html`, meaning the tracked file was modified but not staged. After staging and committing the revision, `git log --oneline --max-count=2` showed `Revise heading` above `Add first page`. Finally, `git branch lesson-copy` created a second local branch name at the latest commit; `git branch --format=%(refname:short)` listed both `lesson-copy` and `main`.",
+  "workedExample": "This local example was run in a disposable directory with Git. First, `git init` created a repository. After writing `index.html`, `git add index.html` made `git status --short` mark the file as staged for the first commit. `git commit -m \"Add first page\"` recorded that snapshot. The example then changed the heading; status identified `index.html` as modified in the working tree but not staged. After staging and committing the revision, `git log --oneline --max-count=2` showed `Revise heading` above `Add first page`. Finally, `git branch lesson-copy` created a second local branch name at the latest commit; `git branch --format=%(refname:short)` listed both `lesson-copy` and `main`.",
   "commonMistakes": [
     {
       "mistake": "Assuming saving a file also stages it.",
@@ -273,7 +273,7 @@
     "researchedAt": "2026-08-20",
     "transformation": "Original instructional lesson synthesized from directly read official Git documentation. The local Git workflow was executed in a disposable directory."
   },
-  "contentHash": "02cc456f89fd3667",
+  "contentHash": "b722044178be49f4",
   "status": "source-verified",
   "public": false
 }

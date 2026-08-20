@@ -69,7 +69,7 @@
     "analogy": "Imagine a school office has notice boards for different announcements. You pin a specific instruction under the ‘fire drill’ board, not under every board. When a drill notice arrives, the office follows that instruction. The notice says what kind of announcement it is and where it began. Some announcements have an automatic next step unless the office explicitly cancels it.",
     "analogyLimits": "Browser events are software objects, not paper notices, and dispatch can follow capture and bubble rules through a document tree. A browser default action also has precise platform rules; it is not an office worker freely choosing what to do."
   },
-  "workedExample": "This listener has one job: record a cancelable `save` event and prevent its default action. `const target = new EventTarget(); const log = []; target.addEventListener(\"save\", event => { log.push(event.type); event.preventDefault(); }); const allowed = target.dispatchEvent(new Event(\"save\", { cancelable: true }));` When this exact code was run with Bun, `log` became `[\"save\"]` and `allowed` was `false`. The callback ran because its registered type matched the dispatched event. The result was false because the event was cancelable and the listener called `preventDefault()`. In a page, the target might instead be a button and the event might be a browser-dispatched `click`; this example isolates the event mechanics without needing a page or a form.",
+  "workedExample": "This listener has one job: record a cancelable `save` event and prevent its default action. `const target = new EventTarget(); const log = []; const recordSave = event => { log.push(event.type); event.preventDefault(); }; target.addEventListener(\"save\", recordSave); const allowed = target.dispatchEvent(new Event(\"save\", { cancelable: true }));` When this exact code was run with Bun, `log` became `[\"save\"]` and `allowed` was `false`. The callback ran because its registered type matched the dispatched event. The result was false because the event was cancelable and the listener called `preventDefault()`. In a page, the target might instead be a button and the event might be a browser-dispatched `click`; this example isolates the event mechanics without needing a page or a form.",
   "commonMistakes": [
     {
       "mistake": "Expecting `addEventListener()` to execute the callback while registering it.",
@@ -268,7 +268,7 @@
     "researchedAt": "2026-08-20",
     "transformation": "Original instructional synthesis from MDN and the DOM Standard; the custom EventTarget worked example was executed with Bun."
   },
-  "contentHash": "6d2446cdb45a6c02",
+  "contentHash": "f5d26d93794cfae3",
   "status": "source-verified",
   "public": false
 }

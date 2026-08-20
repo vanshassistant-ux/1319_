@@ -32,7 +32,7 @@
     },
     {
       "heading": "Viewport, content priority, and inclusive checks",
-      "body": "On mobile browsers, a page normally needs `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">` in its document head. The `width=device-width` portion tells the browser to use the device width for the viewport, helping layout rules operate against the mobile-sized space rather than a simulated wider desktop viewport. It is configuration, not a responsive layout by itself. It cannot repair a fixed-width component, an unlabeled form control, or a page whose most important action is hidden.\n\nPlan the narrow view as a real experience: place the main task and essential content where a person can reach and understand them, then add room and arrangement as space permits. Do not equate “mobile first” with “mobile only”; it is a way to establish a resilient baseline. Accessibility belongs in the same review. Headings should describe the structure, links should make sense in context, images need appropriate text alternatives, and text and controls must remain usable under zoom and different input methods. Test a layout by resizing a browser and by inspecting its content order—not merely by comparing screenshots. When a design change discards context, makes text illegible, or turns a clear label into an icon with no accessible name, it is not a successful responsive improvement."
+      "body": "On mobile browsers, a page normally needs viewport metadata in its document head that sets its width to the device width and its initial scale to 1. That configuration helps layout rules operate against mobile-sized space rather than a simulated wider desktop viewport. It is not a responsive layout by itself. It cannot repair a fixed-width component, an unlabeled form control, or a page whose most important action is hidden.\n\nPlan the narrow view as a real experience: place the main task and essential content where a person can reach and understand them, then add room and arrangement as space permits. Do not equate “mobile first” with “mobile only”; it is a way to establish a resilient baseline. Accessibility belongs in the same review. Headings should describe the structure, links should make sense in context, images need appropriate text alternatives, and text and controls must remain usable under zoom and different input methods. Test a layout by resizing a browser and by inspecting its content order—not merely by comparing screenshots. When a design change discards context, makes text illegible, or turns a clear label into an icon with no accessible name, it is not a successful responsive improvement."
     }
   ],
   "vocabulary": [
@@ -247,7 +247,7 @@
     "researchedAt": "2026-08-20",
     "transformation": "Original lesson synthesized from current MDN and W3C documentation."
   },
-  "contentHash": "257fb63279b61f9e",
+  "contentHash": "d0db89c073764ca8",
   "status": "source-verified",
   "public": false
 }

@@ -91,7 +91,7 @@ GitHub hosts repositories and adds collaboration tools around Git. A clear issue
 
 ## Practice Question Bank
 
-1. **Which statement best distinguishes GitHub from Git?**
+1. **How do Git and GitHub serve different purposes?**
    - GitHub is the version-control system, while Git only stores website files.
    - GitHub can host Git repositories and add collaboration features, while Git provides version control.
    - GitHub is required for every local Git repository to exist.

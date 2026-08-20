@@ -96,7 +96,7 @@ HTTP lets a client request a target and lets a server report the result. Read me
 
 ## Practice Question Bank
 
-1. Which statement best describes HTTP's basic role on the Web? **It defines request-and-response semantics for fetching or processing Web resources.**
+1. What kind of client-server interaction does HTTP define? **Request-and-response semantics for fetching or processing Web resources.**
 2. What does the HTTP `GET` method ordinarily request? **Transfer of a current selected representation for the target resource.**
 3. A Network panel shows `GET /catalog/4200` followed by `404`. What is the focused next check? **The route or identifier, because that target received a client-error-class HTTP response.**
 4. Which status-code class represents a successful response? **`2xx`.**
