@@ -1,0 +1,277 @@
+{
+  "id": "web-development:foundations:colors",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "colors",
+  "title": "CSS Colors",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "web-development",
+    "css",
+    "color",
+    "design"
+  ],
+  "in30Seconds": "CSS lets a page express colors as keywords, hexadecimal values, and functions such as `rgb()` and `hsl()`. These values can set text, backgrounds, borders, and more. A color value describes a color; the property using it decides what is colored. `currentColor` is a useful special keyword: it reuses an element’s computed text color. Learn to read the notation, then test a color in its actual background and context.",
+  "whyItMatters": "Color choices affect whether people can scan a page, recognize a state, and understand its visual hierarchy. In CSS, a precise notation also makes a design easier to maintain: a teammate can tell whether a value is opaque, translucent, hue-based, or intentionally tied to text through `currentColor`. This lesson supplies the language for writing and debugging color declarations. It does not replace accessibility testing: readable contrast depends on the actual foreground, background, size, and context.",
+  "learningObjectives": [
+    "Define a CSS color value and name common notations.",
+    "Distinguish a color value from the property that uses it.",
+    "Interpret RGB, HSL, hexadecimal, and alpha notation.",
+    "Explain how `currentColor` relates to `color`.",
+    "Apply a color declaration to a small component."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "A value is not the painted thing",
+      "body": "CSS uses color values in many properties. `color` normally establishes an element’s foreground text color; `background-color` paints a background; `border-color` paints a border. The same value, such as `#1d4ed8`, can appear in each property, but the property tells the browser where to apply it. Keeping that distinction straight helps when a rule seems to “do nothing”: a text color will not paint a background, and an inherited text color can affect descendants even when they have no own `color` declaration. The `color` property is inherited, so child text commonly receives its parent’s computed foreground color unless a more specific rule supplies another value.\n\nCSS accepts several ways to describe a color. A keyword such as `rebeccapurple` is readable but offers a fixed named palette. Hexadecimal notation such as `#2563eb` represents red, green, and blue channels in sRGB notation. Its pairs are `25`, `63`, and `eb` in base 16. The shorter `#fff` is a compact form of white because each digit is duplicated: `#fff` means `#ffffff`. Functional notation makes the channels more explicit. `rgb(37 99 235)` gives red, green, and blue components; `hsl(221 83% 53%)` describes hue, saturation, and lightness. These are alternative descriptions, not separate kinds of paint."
+    },
+    {
+      "heading": "Alpha changes the visible result",
+      "body": "A color can include an alpha component, which controls opacity. Modern functional syntax places it after a slash: `rgb(37 99 235 / 0.5)` and `hsl(221 83% 53% / 50%)` both request a half-opaque color. Hex has alpha forms too: `#RRGGBBAA`, where the final pair is alpha; `#00000080` is black with an alpha value of hexadecimal 80. Alpha does not mean “make the original color lighter.” It makes the foreground partly transparent, so the browser composites it with what lies behind it. The same semi-transparent blue can look different over white, gray, and a photograph.\n\nThat fact has a practical consequence: do not judge a translucent color from its token alone. Inspect it over its intended background and in the actual state where it appears. A badge background may be translucent while its text remains opaque; a disabled-looking treatment may need more than reduced opacity to remain understandable. This lesson does not calculate accessibility conformance. Later accessibility material addresses testing contrast and non-color cues. Here, the narrower rule is to treat a color declaration as part of a stack of layers, not a guarantee of a single visible result."
+    },
+    {
+      "heading": "Use currentColor to keep related parts aligned",
+      "body": "`currentColor` is a CSS keyword whose value is the computed value of the element’s `color` property. It can be used where a CSS color is accepted. That makes it useful when an ornament should follow the text color without repeating a literal value. For example, `.notice { color: #0f3d8a; border: 2px solid currentColor; }` gives the notice text and its border the same computed color. If another rule later changes the notice’s `color`, the border follows automatically. This is a relationship, not a global variable: it takes the color computed for the particular element.\n\nUse this pattern deliberately. A border tied to `currentColor` is easier to keep visually coherent, but it may not be the right choice if the border must retain a different semantic role or remain visible when text color changes. Likewise, centralizing repeated colors with custom properties is useful, but custom-property design is separate from this lesson. Before choosing notation, decide what must share a color, what must stay independent, and which CSS property owns each visual part. Then check the result in a browser rather than relying only on the code’s appearance."
+    },
+    {
+      "heading": "Choosing notation for communication",
+      "body": "No notation automatically communicates intent. A team may choose hex for compact design tokens, RGB when channel values or alpha are useful, and HSL when a hue-oriented adjustment is easier to reason about. The browser evaluates a valid CSS color value; readers of a stylesheet still need clear names, component boundaries, and tests that show the intended relationship. Prefer one documented convention in a codebase, but do not confuse visual consistency with proof that a color works in every context."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "CSS color value",
+      "definition": "A value CSS can use to specify a color for a property."
+    },
+    {
+      "term": "hexadecimal notation",
+      "definition": "A base-16 color notation such as `#2563eb` that encodes sRGB channels."
+    },
+    {
+      "term": "RGB",
+      "definition": "A color model that describes colors through red, green, and blue components."
+    },
+    {
+      "term": "HSL",
+      "definition": "A color notation using hue, saturation, and lightness components."
+    },
+    {
+      "term": "alpha component",
+      "definition": "The portion of a color value that controls its opacity."
+    },
+    {
+      "term": "computed value",
+      "definition": "The value a CSS property has after relevant CSS rules are resolved for an element."
+    },
+    {
+      "term": "currentColor",
+      "definition": "A CSS keyword that resolves to an element’s computed `color` value."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Think of CSS colors as labels for paint mixtures. `#2563eb`, `rgb(37 99 235)`, and `hsl(221 83% 53%)` can describe a blue color in different ways, like giving the same location by a street address or map coordinates. The CSS property says where that paint goes: text, a border, or a background.\n\nAlpha is like mixing clear glass into the paint: some of what is behind it still shows through. That means the same see-through paint looks different over different walls. `currentColor` is like telling a border, “use whatever color the label text is using.” If the text color changes, the border follows automatically.",
+    "analogy": "Color notation is a recipe label, while the CSS property identifies the surface that receives the recipe. A consistent label lets a reader see which parts of a component are intended to match.",
+    "analogyLimits": "Actual color rendering depends on displays, browser handling, and layers, not physical paint; alpha is browser compositing rather than a literal mixture."
+  },
+  "workedExample": "A notice needs matching text and border plus a pale background. Write `.notice { color: #0f3d8a; border: 2px solid currentColor; background-color: rgb(219 234 254); }`. The `color` declaration supplies the foreground text color. `currentColor` makes the border use that computed text color, so there is no second blue literal to keep synchronized. The background uses a separate color property because it paints a different part of the box. If the text changes to `#7c2d12`, the border changes too; the pale blue background does not. If a half-opaque background were used instead, test it over the page behind the notice because its visible result would depend on that backdrop.",
+  "commonMistakes": [
+    {
+      "mistake": "Using `color` when the intended target is a background.",
+      "correction": "Use the property that owns the surface, such as `background-color` for the background."
+    },
+    {
+      "mistake": "Reading alpha as a brightness setting.",
+      "correction": "Alpha controls opacity; the backdrop contributes to the visible result."
+    },
+    {
+      "mistake": "Assuming `#fff` and `#ffff` are the same notation.",
+      "correction": "Three digits describe RGB shorthand; four digits include an alpha component."
+    },
+    {
+      "mistake": "Treating `currentColor` as a fixed named color.",
+      "correction": "It resolves from the element’s computed `color` value and can differ by element."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "`color`",
+      "b": "`background-color`",
+      "distinction": "`color` sets foreground text color and inherits; `background-color` paints an element background."
+    },
+    {
+      "a": "opaque color",
+      "b": "color with alpha",
+      "distinction": "An opaque color covers its backdrop; alpha allows the backdrop to influence the visible result."
+    }
+  ],
+  "keyTakeaway": "CSS color notations describe values, while properties determine what receives them. Use alpha with awareness of the backdrop and `currentColor` when an element’s parts should follow its computed text color.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:colors:1",
+      "prompt": "Which CSS value is hexadecimal color notation?",
+      "options": [
+        "`hsl(200 50% 40%)`",
+        "`#2563eb`",
+        "`currentColor`",
+        "`rgb(37 99 235 / 50%)`"
+      ],
+      "correctIndex": 1,
+      "explanation": "`#2563eb` uses hexadecimal digits after `#`. HSL and RGB are functions, while currentColor is a keyword that refers to computed color.",
+      "difficulty": "recall",
+      "skill": "Recognize color notation",
+      "sourceIds": [
+        "mdn-css-color-value",
+        "w3c-css-color-4"
+      ]
+    },
+    {
+      "id": "web-development:foundations:colors:2",
+      "prompt": "What does the alpha component in `rgb(37 99 235 / 0.5)` control?",
+      "options": [
+        "The color’s opacity",
+        "The font size",
+        "The hue angle",
+        "The border width"
+      ],
+      "correctIndex": 0,
+      "explanation": "The slash component supplies alpha, which controls opacity. It does not set type, hue, or border dimensions.",
+      "difficulty": "understanding",
+      "skill": "Interpret alpha notation",
+      "sourceIds": [
+        "mdn-css-color-value",
+        "w3c-css-color-4"
+      ]
+    },
+    {
+      "id": "web-development:foundations:colors:3",
+      "prompt": "A rule is `.tag { color: #0f3d8a; border-color: currentColor; }`. If the computed `color` becomes `#7c2d12`, what happens to the border color?",
+      "options": [
+        "It remains `#0f3d8a`",
+        "It becomes transparent",
+        "It becomes `#7c2d12`",
+        "It becomes the parent background"
+      ],
+      "correctIndex": 2,
+      "explanation": "currentColor resolves to the element’s computed `color`, so the border follows the changed text color.",
+      "difficulty": "application",
+      "skill": "Apply currentColor",
+      "sourceIds": [
+        "mdn-css-color-value",
+        "w3c-css-color-4"
+      ]
+    },
+    {
+      "id": "web-development:foundations:colors:4",
+      "prompt": "Why can a semi-transparent blue background look different in two places on a page?",
+      "options": [
+        "CSS converts blue to a random value",
+        "Its alpha allows different backdrops to contribute to the visible result",
+        "Background colors never use RGB",
+        "The browser ignores the color property"
+      ],
+      "correctIndex": 1,
+      "explanation": "A color with alpha is composited with what is behind it, so changing the backdrop can change the visible result.",
+      "difficulty": "analysis",
+      "skill": "Reason about compositing context",
+      "sourceIds": [
+        "w3c-css-color-4"
+      ]
+    },
+    {
+      "id": "web-development:foundations:colors:5",
+      "prompt": "Which property is the direct choice for painting an element’s background?",
+      "options": [
+        "`color`",
+        "`currentColor`",
+        "`opacity`",
+        "`background-color`"
+      ],
+      "correctIndex": 3,
+      "explanation": "`background-color` paints the background. `color` normally sets foreground text, currentColor is a value keyword, and opacity affects an element’s compositing.",
+      "difficulty": "recall",
+      "skill": "Choose the correct color property",
+      "sourceIds": [
+        "mdn-css-color-property"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:colors:1",
+      "prompt": "Which CSS value is hexadecimal color notation?",
+      "options": [
+        "`hsl(200 50% 40%)`",
+        "`#2563eb`",
+        "`currentColor`",
+        "`rgb(37 99 235 / 50%)`"
+      ],
+      "correctIndex": 1,
+      "explanation": "`#2563eb` uses hexadecimal digits after `#`. HSL and RGB are functions, while currentColor is a keyword that refers to computed color.",
+      "difficulty": "recall",
+      "skill": "Recognize color notation",
+      "sourceIds": [
+        "mdn-css-color-value",
+        "w3c-css-color-4"
+      ]
+    },
+    {
+      "id": "web-development:foundations:colors:2",
+      "prompt": "What does the alpha component in `rgb(37 99 235 / 0.5)` control?",
+      "options": [
+        "The color’s opacity",
+        "The font size",
+        "The hue angle",
+        "The border width"
+      ],
+      "correctIndex": 0,
+      "explanation": "The slash component supplies alpha, which controls opacity. It does not set type, hue, or border dimensions.",
+      "difficulty": "understanding",
+      "skill": "Interpret alpha notation",
+      "sourceIds": [
+        "mdn-css-color-value",
+        "w3c-css-color-4"
+      ]
+    },
+    {
+      "id": "web-development:foundations:colors:3",
+      "prompt": "A rule is `.tag { color: #0f3d8a; border-color: currentColor; }`. If the computed `color` becomes `#7c2d12`, what happens to the border color?",
+      "options": [
+        "It remains `#0f3d8a`",
+        "It becomes transparent",
+        "It becomes `#7c2d12`",
+        "It becomes the parent background"
+      ],
+      "correctIndex": 2,
+      "explanation": "currentColor resolves to the element’s computed `color`, so the border follows the changed text color.",
+      "difficulty": "application",
+      "skill": "Apply currentColor",
+      "sourceIds": [
+        "mdn-css-color-value",
+        "w3c-css-color-4"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:css-syntax",
+    "web-development:foundations:selectors",
+    "web-development:foundations:typography",
+    "web-development:foundations:accessibility",
+    "web-development:foundations:wcag-basics"
+  ],
+  "sources": [
+    "mdn-css-color-value",
+    "mdn-css-color-property",
+    "w3c-css-color-4"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only documentation and standard sources; no source prose adapted.",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original technical explanation, examples, and assessment items based on checked CSS documentation and standard terminology."
+  },
+  "contentHash": "362be6567bda0f28",
+  "status": "source-verified",
+  "public": false
+}

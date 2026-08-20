@@ -1,0 +1,23 @@
+{
+  "topicId": "web-development:foundations:flexbox",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {"core": ["flex containers and direct-item relationship", "main and cross axes", "flex basis, grow, and shrink", "main- and cross-axis alignment"], "supporting": ["flex-direction", "default flex values", "flex shorthand", "a positive-free-space allocation"], "outOfScope": ["CSS Grid", "responsive media queries", "advanced multi-line sizing", "browser-specific workarounds"]},
+  "claims": [
+    {"claim": "Flexbox is a one-dimensional layout model that distributes space and offers alignment capabilities.", "claimType": "TECHNICAL", "sourceIds": ["mdn-flexbox-basic-concepts", "w3c-css-flexbox-1"], "status": "supported"},
+    {"claim": "Setting display:flex establishes a flex container and its direct children become flex items.", "claimType": "TECHNICAL", "sourceIds": ["mdn-flexbox-basic-concepts", "w3c-css-flexbox-1"], "status": "supported"},
+    {"claim": "flex-direction establishes the main axis and the cross axis is perpendicular to it.", "claimType": "TECHNICAL", "sourceIds": ["mdn-flexbox-basic-concepts", "w3c-css-flexbox-1"], "status": "supported"},
+    {"claim": "The initial flex-item values include flex-grow:0, flex-shrink:1, and flex-basis:auto; the container's initial align-items value is stretch.", "claimType": "TECHNICAL", "sourceIds": ["mdn-flexbox-basic-concepts", "w3c-css-flexbox-1"], "status": "supported"},
+    {"claim": "Positive flex-grow factors allocate available positive free space proportionally, while flex-shrink is used when room is insufficient.", "claimType": "TECHNICAL", "sourceIds": ["mdn-flexbox-basic-concepts", "w3c-css-flexbox-1"], "status": "supported"},
+    {"claim": "justify-content acts on the main axis and align-items acts on the cross axis.", "claimType": "TECHNICAL", "sourceIds": ["mdn-flexbox-basic-concepts", "w3c-css-flexbox-1"], "status": "supported"},
+    {"claim": "With three 160px bases in 720px and grow factors 2,1,1, positive free space is 240px and the resulting simplified allocation is 280px, 220px, 220px.", "claimType": "QUANTITATIVE", "sourceIds": ["mdn-flexbox-basic-concepts", "w3c-css-flexbox-1"], "status": "supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft did not supply a technical definition, source-supported mechanics, or a valid example of flexbox."],
+  "correctionsNeeded": ["Replaced generic boilerplate with verified CSS terminology and a calculated example; distinguished flexbox from two-dimensional layout without teaching grid."],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {"id": "mdn-flexbox-basic-concepts", "title": "Basic concepts of flexbox", "provider": "Mozilla / MDN Web Docs", "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout/Basic_concepts", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "license": "CC BY-SA 2.5", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-20", "notes": "Read directly. Supports the one-dimensional model, axes, container/item relationship, initial values, basis/grow/shrink, and alignment. No source prose reproduced."},
+    {"id": "w3c-css-flexbox-1", "title": "CSS Flexible Box Layout Module Level 1", "provider": "W3C CSS Working Group", "url": "https://www.w3.org/TR/css-flexbox-1/", "sourceType": "standards-body", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-20", "notes": "Read directly. Primary specification corroborating the flex formatting context, axes, flex sizing terminology, flex factors, and alignment model. Used for verification only."}
+  ]
+}

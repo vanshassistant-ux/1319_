@@ -1,0 +1,22 @@
+{
+  "topicId": "web-development:foundations:colors",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {"core":["CSS color values", "named, hexadecimal, rgb(), and hsl() notation", "currentColor"],"supporting":["alpha channels", "foreground/background distinction"],"outOfScope":["WCAG contrast conformance", "typography", "image color management"]},
+  "claims":[
+    {"claim":"CSS color values can be represented by named colors, hexadecimal notation, and rgb() or hsl() functional notation.","claimType":"TECHNICAL","sourceIds":["mdn-css-color-value","w3c-css-color-4"],"status":"supported"},
+    {"claim":"The modern rgb() and hsl() functions accept an optional alpha component separated with a slash.","claimType":"TECHNICAL","sourceIds":["mdn-css-color-value","w3c-css-color-4"],"status":"supported"},
+    {"claim":"The currentColor keyword represents the computed value of an element's color property and can be used where a CSS color is accepted.","claimType":"TECHNICAL","sourceIds":["mdn-css-color-value","w3c-css-color-4"],"status":"supported"},
+    {"claim":"The color property sets an element's foreground text color and is inherited.","claimType":"TECHNICAL","sourceIds":["mdn-css-color-property"],"status":"supported"},
+    {"claim":"A translucent foreground color blends with what is behind it, so its visible result depends on its backdrop.","claimType":"TECHNICAL","sourceIds":["w3c-css-color-4"],"status":"supported"}
+  ],
+  "conflictingEvidence":[],
+  "unsupportedExistingClaims":["The generated draft contained generic claims rather than a usable explanation of CSS colors."],
+  "correctionsNeeded":["Replaced boilerplate with verified CSS notation, inheritance, alpha, and currentColor explanations."],
+  "rightsIssues":["Sources are reference-only documentation and a standard; the lesson uses original prose and examples."],
+  "sourceRecords":[
+    {"id":"mdn-css-color-value","title":"<color> CSS data type","provider":"MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Web/CSS/color_value","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-20","notes":"Read directly. Supports CSS color notation families, alpha syntax, and currentColor."},
+    {"id":"mdn-css-color-property","title":"color CSS property","provider":"MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Web/CSS/color","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-20","notes":"Read directly. Supports foreground color and inheritance behavior."},
+    {"id":"w3c-css-color-4","title":"CSS Color Module Level 4","provider":"W3C CSS Working Group","url":"https://www.w3.org/TR/css-color-4/","sourceType":"standards-body","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-20","notes":"Read directly. Supports sRGB hex notation, color functions, alpha, compositing context, and currentcolor definition."}
+  ]
+}

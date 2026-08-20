@@ -1,0 +1,270 @@
+{
+  "id": "web-development:foundations:typography",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "typography",
+  "title": "Typography for the Web",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "web-development",
+    "css",
+    "typography",
+    "readability"
+  ],
+  "in30Seconds": "Web typography is the CSS-controlled presentation of written language: the typeface a browser tries first, the size of letters, their weight, and the space between lines. `font-family`, `font-size`, `font-weight`, and `line-height` solve different problems, so changing one is not a substitute for another. A readable text style makes ordinary content easier to scan without turning every paragraph into a visual effect.",
+  "whyItMatters": "Text is the interface for instructions, forms, articles, error messages, and documentation. In a course, typography gives you a precise vocabulary for explaining why a style is hard to read and for predicting what a CSS declaration changes. In a project, a short type rule can establish a durable baseline while allowing headings and small interface labels to vary deliberately. This lesson focuses on type selection and spacing; color contrast, page layout, and advanced font loading are separate concerns.",
+  "learningObjectives": [
+    "Define font family, font size, font weight, and line height.",
+    "Distinguish a font-family fallback list from a single guaranteed font.",
+    "Explain how unitless line-height relates to an element’s font size.",
+    "Apply a small CSS type rule to body text and headings.",
+    "Diagnose a readability problem without confusing it with color contrast or layout."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Typography is a system of related choices",
+      "body": "On the web, typography is not merely choosing a decorative typeface. It is the presentation of language through choices that shape how text is recognized, grouped, and read. CSS exposes those choices as separate properties. `font-family` identifies an ordered list of preferred fonts. `font-size` sets the size of the font. `font-weight` requests a weight or boldness, and the weights actually available depend on the selected family. `line-height` controls the height of line boxes in ordinary horizontal writing and is commonly used to control the distance between lines. Because these properties answer different questions, a good edit begins by naming the problem. Text that is cramped may need line-height; text with weak hierarchy may need a measured weight or size change; a missing typeface needs a useful fallback.\n\nA browser cannot promise that a particular installed font exists on every device. A family list is therefore a preference order, such as `font-family: Georgia, \"Times New Roman\", serif;`. The browser uses the first available family and can fall back to the generic `serif` family if the named choices are unavailable. Quoting a family name is needed when its name contains spaces. The generic family is not a clone of the preceding named font; it is a broad category supplied by the environment. Treating a family list as a resilience plan prevents an interface from depending on one machine’s font collection. Font loading and licensing introduce further decisions, but they are outside this foundation lesson."
+    },
+    {
+      "heading": "Size, weight, and leading have distinct effects",
+      "body": "`font-size` establishes the size of the font and also changes font-size-relative units such as `em`. It does not by itself specify how much vertical room a paragraph receives. That is the job of `line-height`. A unitless `line-height` value is a multiplier: with `font-size: 18px` and `line-height: 1.5`, the preferred line-box height is 27px. The number is useful because it scales with the computed font size of an element that inherits it. A length such as `27px` can be intentional too, but it does not automatically scale when a descendant uses a different font size. The goal is not to memorize a universal number; it is to recognize the relation between letter size and the vertical space that lets lines remain distinct.\n\n`font-weight` requests boldness. Keywords such as `normal` and `bold`, or numeric values where supported by the family, communicate hierarchy or emphasis. Weight is not a reliable replacement for semantic structure: a bold sentence is not automatically a heading, and a visual heading should still use the appropriate HTML heading element. Likewise, a larger size does not resolve every reading problem. Long lines, poor contrast, unfamiliar vocabulary, and clutter can still hinder reading. This lesson does not claim that one CSS value makes text accessible; instead it teaches the adjustable type variables a developer can inspect alongside semantic structure and other accessibility work."
+    },
+    {
+      "heading": "Build a restrained text rule and test the outcome",
+      "body": "A practical baseline starts with ordinary paragraph text, then makes a small and observable change. For example: `body { font-family: system-ui, sans-serif; font-size: 18px; line-height: 1.5; } h1 { font-size: 2rem; font-weight: 700; line-height: 1.1; }`. The body rule offers a generic fallback and creates 27px line boxes for 18px body text. The heading rule changes hierarchy deliberately: a heading can have a larger size, heavier weight, and tighter line height because its short lines perform a different role from a multi-line paragraph. These declarations do not select a page layout and do not establish color contrast; they only describe type presentation.\n\nTesting means looking at real content, not only a single sample word. Read a paragraph at narrow and wide viewport widths, inspect whether a wrapped heading has enough room, and check whether the fallback family remains acceptable. If text feels crowded, first identify whether the crowding is between lines, between blocks, or caused by a narrow container. Only the first is primarily a `line-height` question. If a heading loses hierarchy, compare its size and weight with surrounding text before making every element bold. CSS values are hypotheses that should be tested in the browser with representative content. This disciplined separation makes later work on responsive layout, color contrast, and custom font files easier rather than mixing all visual issues into one rule."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "typography",
+      "definition": "The presentation and arrangement of written language, including choices about typeface, size, weight, and spacing."
+    },
+    {
+      "term": "font family",
+      "definition": "A named font or a generic category that CSS can use to render text."
+    },
+    {
+      "term": "fallback list",
+      "definition": "An ordered font-family list that lets the browser use a later choice when an earlier one is unavailable."
+    },
+    {
+      "term": "generic family",
+      "definition": "A broad CSS font category, such as serif or sans-serif, supplied by the user’s environment."
+    },
+    {
+      "term": "font size",
+      "definition": "The CSS-controlled size of a font used to render text."
+    },
+    {
+      "term": "font weight",
+      "definition": "The requested boldness of a font, subject to the weights available in that family."
+    },
+    {
+      "term": "line height",
+      "definition": "The height CSS assigns to a line box; it is commonly used to control the spacing between lines of text."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Imagine setting type for a school poster. The font family is the kind of letter shapes you ask for, but you keep backup choices in case the first set is missing. Font size is how large the letters are. Font weight is how thick they look. Line height is the room from one line’s space to the next.\n\nIf you only make letters bigger, a paragraph can still look squashed. If you only add lots of space, it can look disconnected. A heading can be larger and heavier because it labels a section, while a paragraph needs steady spacing so several lines can be read together. CSS lets you describe those jobs separately.",
+    "analogy": "A poster-maker chooses a letter set, a letter size, a thickness, and the vertical slots where each line sits.",
+    "analogyLimits": "Browser fonts can have many technical features, and CSS line boxes are not physical shelves. The analogy explains separate controls, not font loading, licensing, semantic HTML, or every accessibility requirement."
+  },
+  "workedExample": "A page has body text at `18px` and uses `line-height: 1.5`. Because the line-height is unitless, calculate its preferred line-box height as 18 × 1.5 = 27px. The page also has a heading with `font-size: 2rem`, `font-weight: 700`, and `line-height: 1.1`. Those heading values create hierarchy without changing the paragraph’s reading rhythm. To avoid relying on one installed font, the body can use `font-family: system-ui, sans-serif;`: the browser first tries its system UI family and then a generic sans-serif fallback. If the paragraph feels cramped, inspect its 27px line spacing before changing the heading’s weight or trying to solve the issue with color.",
+  "commonMistakes": [
+    {
+      "mistake": "Assuming the first named font will appear on every device.",
+      "correction": "Use an ordered fallback list that ends in an appropriate generic family."
+    },
+    {
+      "mistake": "Using font size to solve cramped lines.",
+      "correction": "Check line-height when the issue is vertical space between lines."
+    },
+    {
+      "mistake": "Treating bold text as a replacement for a heading element.",
+      "correction": "Use semantic HTML for structure; use weight as a visual choice."
+    },
+    {
+      "mistake": "Claiming one typography value makes text accessible.",
+      "correction": "Treat typography as one part of readable presentation alongside separate semantic, contrast, and layout work."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "font-family",
+      "b": "font-size",
+      "distinction": "A family selects preferred letter designs; size controls the size used to render them."
+    },
+    {
+      "a": "unitless line-height",
+      "b": "length line-height",
+      "distinction": "A unitless value scales as a multiplier of font size, while a length specifies a fixed length."
+    }
+  ],
+  "keyTakeaway": "Typography works best when family, size, weight, and line height are treated as distinct controls. Use a resilient family list and test short rules with real text rather than expecting one declaration to solve every reading problem.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:typography:1",
+      "prompt": "What is the main purpose of a generic family such as `sans-serif` at the end of a font-family list?",
+      "options": [
+        "It provides a fallback category if earlier fonts are unavailable.",
+        "It guarantees a specific installed font.",
+        "It sets line spacing.",
+        "It makes text bold."
+      ],
+      "correctIndex": 0,
+      "explanation": "A generic family is a fallback category. It does not guarantee a particular named font, set line height, or request weight.",
+      "difficulty": "recall",
+      "skill": "Identify the role of a fallback family",
+      "sourceIds": [
+        "mdn-font-family"
+      ]
+    },
+    {
+      "id": "web-development:foundations:typography:2",
+      "prompt": "A paragraph uses `font-size: 18px; line-height: 1.5`. What line-box height does that unitless line-height imply?",
+      "options": [
+        "12px",
+        "18px",
+        "27px",
+        "30px"
+      ],
+      "correctIndex": 2,
+      "explanation": "Multiply 18 by 1.5 to get 27px. The other options use the wrong operation or value.",
+      "difficulty": "application",
+      "skill": "Calculate unitless line height",
+      "sourceIds": [
+        "mdn-line-height",
+        "mdn-font-size"
+      ]
+    },
+    {
+      "id": "web-development:foundations:typography:3",
+      "prompt": "Which change directly targets the vertical space between successive lines in a paragraph?",
+      "options": [
+        "Changing `font-family`",
+        "Changing `font-weight`",
+        "Changing `font-size`",
+        "Changing `line-height`"
+      ],
+      "correctIndex": 3,
+      "explanation": "`line-height` controls line-box height and is commonly used for distance between lines. The other properties control family, boldness, or font size.",
+      "difficulty": "understanding",
+      "skill": "Distinguish typography properties",
+      "sourceIds": [
+        "mdn-line-height"
+      ]
+    },
+    {
+      "id": "web-development:foundations:typography:4",
+      "prompt": "A designer makes a sentence bold to look like a section title. What is the better structural practice?",
+      "options": [
+        "Use a semantic heading element and then style its weight if needed.",
+        "Use only `font-weight: bold` because it creates document structure.",
+        "Remove all heading styles so text is uniform.",
+        "Use a generic font family instead of a heading."
+      ],
+      "correctIndex": 0,
+      "explanation": "HTML headings communicate structure; CSS weight is visual presentation. The other choices either confuse presentation with structure or do not solve the structural need.",
+      "difficulty": "analysis",
+      "skill": "Separate semantic structure from visual styling",
+      "sourceIds": [
+        "mdn-font-weight"
+      ]
+    },
+    {
+      "id": "web-development:foundations:typography:5",
+      "prompt": "Why can a fixed `line-height: 27px` behave differently from `line-height: 1.5` when a descendant has a different font size?",
+      "options": [
+        "A fixed length turns all fonts into serif fonts.",
+        "The unitless value scales with the element’s font size, while 27px remains a length.",
+        "A fixed length always becomes bold.",
+        "The unitless value changes only font family."
+      ],
+      "correctIndex": 1,
+      "explanation": "A unitless line-height is a multiplier of font size; a length is a specified length. Neither setting changes family or weight by itself.",
+      "difficulty": "analysis",
+      "skill": "Compare line-height value types",
+      "sourceIds": [
+        "mdn-line-height"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:typography:1",
+      "prompt": "What is the main purpose of a generic family such as `sans-serif` at the end of a font-family list?",
+      "options": [
+        "It provides a fallback category if earlier fonts are unavailable.",
+        "It guarantees a specific installed font.",
+        "It sets line spacing.",
+        "It makes text bold."
+      ],
+      "correctIndex": 0,
+      "explanation": "A generic family is a fallback category. It does not guarantee a particular named font, set line height, or request weight.",
+      "difficulty": "recall",
+      "skill": "Identify the role of a fallback family",
+      "sourceIds": [
+        "mdn-font-family"
+      ]
+    },
+    {
+      "id": "web-development:foundations:typography:2",
+      "prompt": "A paragraph uses `font-size: 18px; line-height: 1.5`. What line-box height does that unitless line-height imply?",
+      "options": [
+        "12px",
+        "18px",
+        "27px",
+        "30px"
+      ],
+      "correctIndex": 2,
+      "explanation": "Multiply 18 by 1.5 to get 27px. The other options use the wrong operation or value.",
+      "difficulty": "application",
+      "skill": "Calculate unitless line height",
+      "sourceIds": [
+        "mdn-line-height",
+        "mdn-font-size"
+      ]
+    },
+    {
+      "id": "web-development:foundations:typography:3",
+      "prompt": "Which change directly targets the vertical space between successive lines in a paragraph?",
+      "options": [
+        "Changing `font-family`",
+        "Changing `font-weight`",
+        "Changing `font-size`",
+        "Changing `line-height`"
+      ],
+      "correctIndex": 3,
+      "explanation": "`line-height` controls line-box height and is commonly used for distance between lines. The other properties control family, boldness, or font size.",
+      "difficulty": "understanding",
+      "skill": "Distinguish typography properties",
+      "sourceIds": [
+        "mdn-line-height"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:css",
+    "web-development:foundations:css-syntax",
+    "web-development:foundations:colors",
+    "web-development:foundations:responsive-design",
+    "web-development:foundations:accessibility"
+  ],
+  "sources": [
+    "mdn-font-family",
+    "mdn-font-size",
+    "mdn-font-weight",
+    "mdn-line-height"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only documentation; no source prose adapted.",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original instructional explanation and checked CSS arithmetic based on current MDN documentation."
+  },
+  "contentHash": "3cc455340938d1a3",
+  "status": "source-verified",
+  "public": false
+}
