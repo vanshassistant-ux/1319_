@@ -2,21 +2,116 @@
   "topicId": "python-programming:foundations:while-loops",
   "subjectId": "python-programming",
   "researchedAt": "2026-08-19",
-  "scope": {"core": ["condition-controlled repetition", "termination and progress", "break and continue", "while else"], "supporting": ["counter and sentinel patterns", "indentation as loop body"], "outOfScope": ["for-loop iteration and range", "recursion", "conditionals as a separate topic", "list comprehensions", "concurrent loops"]},
+  "scope": {
+    "core": [
+      "condition-controlled repetition",
+      "termination and progress",
+      "break and continue",
+      "while else"
+    ],
+    "supporting": [
+      "counter and sentinel patterns",
+      "indentation as loop body"
+    ],
+    "outOfScope": [
+      "for-loop iteration and range",
+      "recursion",
+      "conditionals as a separate topic",
+      "list comprehensions",
+      "concurrent loops"
+    ]
+  },
   "claims": [
-    {"claim": "Python repeatedly tests a while condition and executes its suite while that expression is true; if it is false, the loop terminates.", "claimType": "TECHNICAL", "sourceIds": ["python-lang-ref-compound-stmts"], "status": "supported"},
-    {"claim": "A break in the while suite terminates the loop without running its else suite.", "claimType": "TECHNICAL", "sourceIds": ["python-lang-ref-compound-stmts"], "status": "supported"},
-    {"claim": "A continue in a while suite skips the rest of that suite and returns to testing the expression.", "claimType": "TECHNICAL", "sourceIds": ["python-lang-ref-compound-stmts"], "status": "supported"},
-    {"claim": "A normal terminating while loop needs its body to change relevant state so its condition can eventually become false; otherwise it can repeat forever.", "claimType": "TECHNICAL", "sourceIds": ["think-python-2e-iteration"], "status": "supported"},
-    {"claim": "An update such as x = x + 1 requires prior initialization because Python evaluates the right-hand side before assigning the left-hand name.", "claimType": "TECHNICAL", "sourceIds": ["think-python-2e-iteration"], "status": "supported"},
-    {"claim": "The lesson's countdown produces [2, 1, 0] and stops after three executions.", "claimType": "TECHNICAL", "sourceIds": ["python-lang-ref-compound-stmts", "think-python-2e-iteration"], "status": "supported"}
+    {
+      "claim": "Python repeatedly tests a while condition and executes its suite while that expression is true; if it is false, the loop terminates.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-lang-ref-compound-stmts"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A break in the while suite terminates the loop without running its else suite.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-lang-ref-compound-stmts"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A continue in a while suite skips the rest of that suite and returns to testing the expression.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-lang-ref-compound-stmts"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A normal terminating while loop needs its body to change relevant state so its condition can eventually become false; otherwise it can repeat forever.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "think-python-2e-iteration"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "An update such as x = x + 1 requires prior initialization because Python evaluates the right-hand side before assigning the left-hand name.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "think-python-2e-iteration"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The lesson's countdown produces [2, 1, 0] and stops after three executions.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-lang-ref-compound-stmts",
+        "think-python-2e-iteration"
+      ],
+      "status": "supported"
+    }
   ],
   "conflictingEvidence": [],
-  "unsupportedExistingClaims": ["The generated draft's broad comparison of every loop construct was removed to keep this lesson scoped to while loops."],
-  "correctionsNeeded": ["Kept examples Python 3 compatible and executed all output claims with python3; distinguished normal condition completion from break termination."],
-  "rightsIssues": ["Both sources are used as reference-only; all lesson prose is original synthesis."],
+  "unsupportedExistingClaims": [
+    "The generated draft's broad comparison of every loop construct was removed to keep this lesson scoped to while loops."
+  ],
+  "correctionsNeeded": [
+    "Kept examples Python 3 compatible and executed all output claims with python3; distinguished normal condition completion from break termination."
+  ],
+  "rightsIssues": [
+    "Both sources are used as reference-only; all lesson prose is original synthesis."
+  ],
   "sourceRecords": [
-    {"id": "python-lang-ref-compound-stmts", "title": "8. Compound statements - The Python Language Reference (while, for, break, continue)", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/reference/compound_stmts.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "license": "PSF License", "licenseUrl": "https://docs.python.org/3/license.html", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-19", "notes": "Read live on 2026-08-19. Supports while-condition testing, while else, break termination, and continue semantics. Facts synthesized; no prose copied."},
-    {"id": "think-python-2e-iteration", "title": "Think Python 2e, Chapter 7: Iteration", "provider": "Allen B. Downey (Green Tea Press)", "url": "https://greenteapress.com/thinkpython2/html/thinkpython2008.html", "sourceType": "open-textbook", "usage": "REFERENCE_ONLY", "license": "CC BY-NC 3.0", "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-19", "notes": "Read live on 2026-08-19. Supports initialization, update, countdown progress, infinite loops, and sentinel-plus-break framing. Facts synthesized; no prose copied."}
+    {
+      "id": "python-lang-ref-compound-stmts",
+      "title": "8. Compound statements - The Python Language Reference (while, for, break, continue)",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/reference/compound_stmts.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "PSF License",
+      "licenseUrl": "https://docs.python.org/3/license.html",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read live on 2026-08-19. Supports while-condition testing, while else, break termination, and continue semantics. Facts synthesized; no prose copied."
+    },
+    {
+      "id": "think-python-2e-iteration",
+      "title": "Think Python 2e, Chapter 7: Iteration",
+      "provider": "Allen B. Downey (Green Tea Press)",
+      "url": "https://greenteapress.com/thinkpython2/html/thinkpython2008.html",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read live on 2026-08-19. Supports initialization, update, countdown progress, infinite loops, and sentinel-plus-break framing. Facts synthesized; no prose copied."
+    }
   ]
 }

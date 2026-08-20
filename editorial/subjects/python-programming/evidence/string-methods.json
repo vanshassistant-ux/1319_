@@ -3,24 +3,113 @@
   "subjectId": "python-programming",
   "researchedAt": "2026-08-19",
   "scope": {
-    "core": ["calling methods on str values", "case conversion", "edge trimming", "finding and replacing substrings", "splitting text", "joining text", "returned strings and immutability"],
-    "supporting": ["the -1 sentinel from find", "separator choice", "a method call's receiver"],
-    "outOfScope": ["string literals, indexes, slices, and f-strings", "type conversion", "regular expressions", "parsing file formats", "function definition and return-value design"]
+    "core": [
+      "calling methods on str values",
+      "case conversion",
+      "edge trimming",
+      "finding and replacing substrings",
+      "splitting text",
+      "joining text",
+      "returned strings and immutability"
+    ],
+    "supporting": [
+      "the -1 sentinel from find",
+      "separator choice",
+      "a method call's receiver"
+    ],
+    "outOfScope": [
+      "string literals, indexes, slices, and f-strings",
+      "type conversion",
+      "regular expressions",
+      "parsing file formats",
+      "function definition and return-value design"
+    ]
   },
   "claims": [
-    {"claim": "Python str values are immutable sequences, and the standard library documents no mutable string type.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-string-methods", "python-tutorial-strings"], "status": "supported"},
-    {"claim": "lower returns a copy with cased characters converted to lowercase, while strip returns a copy with leading and trailing characters removed.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-string-methods"], "status": "supported"},
-    {"claim": "find returns the lowest position of a substring in the requested slice and returns -1 when the substring is absent.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-string-methods"], "status": "supported"},
-    {"claim": "replace returns a copy with occurrences of one substring replaced by another; its optional count limits how many replacements are made.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-string-methods"], "status": "supported"},
-    {"claim": "split returns a list of words when no separator is supplied or splits on the supplied delimiter, and join concatenates strings from an iterable using the receiver as the separator.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-string-methods"], "status": "supported"},
-    {"claim": "The Python tutorial identifies the standard types page as the reference for String Methods.", "claimType": "TECHNICAL", "sourceIds": ["python-tutorial-strings"], "status": "supported"}
+    {
+      "claim": "Python str values are immutable sequences, and the standard library documents no mutable string type.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-string-methods",
+        "python-tutorial-numbers"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "lower returns a copy with cased characters converted to lowercase, while strip returns a copy with leading and trailing characters removed.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-string-methods"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "find returns the lowest position of a substring in the requested slice and returns -1 when the substring is absent.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-string-methods"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "replace returns a copy with occurrences of one substring replaced by another; its optional count limits how many replacements are made.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-string-methods"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "split returns a list of words when no separator is supplied or splits on the supplied delimiter, and join concatenates strings from an iterable using the receiver as the separator.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-string-methods"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The Python tutorial identifies the standard types page as the reference for String Methods.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-numbers"
+      ],
+      "status": "supported"
+    }
   ],
   "conflictingEvidence": [],
-  "unsupportedExistingClaims": ["The generated draft offered no definition of a Python string method, no executable behavior, and no sources."],
-  "correctionsNeeded": ["Replaced generic study-skills prose with documented str method behavior; added a worked normalization example and method-specific questions."],
+  "unsupportedExistingClaims": [
+    "The generated draft offered no definition of a Python string method, no executable behavior, and no sources."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic study-skills prose with documented str method behavior; added a worked normalization example and method-specific questions."
+  ],
   "rightsIssues": [],
   "sourceRecords": [
-    {"id": "python-docs-string-methods", "title": "Built-in Types — Text Sequence Type: str and String Methods", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/library/stdtypes.html#string-methods", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": false, "checkedAt": "2026-08-19", "notes": "Read live. Authoritative documentation for immutable str values and lower, strip, find, replace, split, and join behavior. All lesson prose and examples are original and were executed with python3."},
-    {"id": "python-tutorial-strings", "title": "The Python Tutorial — An Informal Introduction to Python", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/tutorial/introduction.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": false, "checkedAt": "2026-08-19", "notes": "Read live. Its Strings section points learners to the standard-type reference's String Methods section. Used as a corroborating official learning source; prose is original."}
+    {
+      "id": "python-docs-string-methods",
+      "title": "Built-in Types — Text Sequence Type: str and String Methods",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/library/stdtypes.html#string-methods",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read live. Authoritative documentation for immutable str values and lower, strip, find, replace, split, and join behavior. All lesson prose and examples are original and were executed with python3."
+    },
+    {
+      "id": "python-tutorial-numbers",
+      "title": "The Python Tutorial — An Informal Introduction to Python",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/tutorial/introduction.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read live. Its Strings section points learners to the standard-type reference's String Methods section. Used as a corroborating official learning source; prose is original."
+    }
   ]
 }

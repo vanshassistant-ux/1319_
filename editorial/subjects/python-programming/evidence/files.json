@@ -3,24 +3,109 @@
   "subjectId": "python-programming",
   "researchedAt": "2026-08-19",
   "scope": {
-    "core": ["file paths", "file objects", "open modes", "context managers", "text encodings"],
-    "supporting": ["closing a file", "current working directory"],
-    "outOfScope": ["step-by-step reading workflows", "step-by-step writing workflows", "exception handling", "pathlib API", "binary formats"]
+    "core": [
+      "file paths",
+      "file objects",
+      "open modes",
+      "context managers",
+      "text encodings"
+    ],
+    "supporting": [
+      "closing a file",
+      "current working directory"
+    ],
+    "outOfScope": [
+      "step-by-step reading workflows",
+      "step-by-step writing workflows",
+      "exception handling",
+      "pathlib API",
+      "binary formats"
+    ]
   },
   "claims": [
-    {"claim":"The built-in open() function returns a file object and accepts a file name, mode, and optional encoding.","claimType":"TECHNICAL","sourceIds":["python-tutorial-input-output","python-docs-builtins-conversion"],"status":"supported"},
-    {"claim":"In text mode, r is the default mode; w truncates an existing file, a appends to the end, and x fails if the file already exists.","claimType":"TECHNICAL","sourceIds":["python-tutorial-input-output","python-docs-builtins-conversion"],"status":"supported"},
-    {"claim":"Using a file object in a with statement closes it when the suite finishes, including when an exception occurs while the suite runs.","claimType":"TECHNICAL","sourceIds":["python-tutorial-input-output"],"status":"supported"},
-    {"claim":"Text files use an encoding to translate between stored bytes and Python strings; specifying encoding='utf-8' makes the intended text encoding explicit.","claimType":"TECHNICAL","sourceIds":["python-tutorial-input-output","python-docs-builtins-conversion"],"status":"supported"},
-    {"claim":"A relative path is interpreted from the program's current working directory, whereas an absolute path identifies a location from a filesystem root.","claimType":"TECHNICAL","sourceIds":["python-docs-builtins-conversion"],"status":"supported"},
-    {"claim":"The worked example creates a temporary file, verifies that append mode preserves existing text, and prints two lines.","claimType":"TECHNICAL","sourceIds":["python-tutorial-input-output","python-docs-builtins-conversion"],"status":"supported"}
+    {
+      "claim": "The built-in open() function returns a file object and accepts a file name, mode, and optional encoding.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-input-output",
+        "python-docs-builtins-conversion"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "In text mode, r is the default mode; w truncates an existing file, a appends to the end, and x fails if the file already exists.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-input-output",
+        "python-docs-builtins-conversion"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Using a file object in a with statement closes it when the suite finishes, including when an exception occurs while the suite runs.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-input-output"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Text files use an encoding to translate between stored bytes and Python strings; specifying encoding='utf-8' makes the intended text encoding explicit.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-input-output",
+        "python-docs-builtins-conversion"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A relative path is interpreted from the program's current working directory, whereas an absolute path identifies a location from a filesystem root.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-builtins-conversion"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The worked example creates a temporary file, verifies that append mode preserves existing text, and prints two lines.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-input-output",
+        "python-docs-builtins-conversion"
+      ],
+      "status": "supported"
+    }
   ],
   "conflictingEvidence": [],
   "unsupportedExistingClaims": [],
   "correctionsNeeded": [],
   "rightsIssues": [],
   "sourceRecords": [
-    {"id":"python-tutorial-input-output","title":"The Python Tutorial — 7. Input and Output (Reading and Writing Files)","provider":"Python Software Foundation","url":"https://docs.python.org/3/tutorial/inputoutput.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Read directly on 2026-08-19. Supports open() returning a file object, mode meanings, text encodings, and the with-statement closing behavior. Reference only; prose and examples are original."},
-    {"id":"python-docs-builtins-conversion","title":"Python Standard Library — Built-in Functions (open)","provider":"Python Software Foundation","url":"https://docs.python.org/3/library/functions.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Read directly on 2026-08-19, including the open() reference. Supports the open signature, modes, encoding, and filesystem-path semantics. Reference only; no source prose adapted."}
+    {
+      "id": "python-tutorial-input-output",
+      "title": "The Python Tutorial — 7. Input and Output (Reading and Writing Files)",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/tutorial/inputoutput.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read directly on 2026-08-19. Supports open() returning a file object, mode meanings, text encodings, and the with-statement closing behavior. Reference only; prose and examples are original."
+    },
+    {
+      "id": "python-docs-builtins-conversion",
+      "title": "Python Standard Library — Built-in Functions (open)",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/library/functions.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read directly on 2026-08-19, including the open() reference. Supports the open signature, modes, encoding, and filesystem-path semantics. Reference only; no source prose adapted."
+    }
   ]
 }

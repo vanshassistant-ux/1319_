@@ -2,21 +2,112 @@
   "topicId": "python-programming:foundations:return-values",
   "subjectId": "python-programming",
   "researchedAt": "2026-08-19",
-  "scope": {"core":["return statement semantics","None as the implicit result","return versus print","consistent return paths and unreachable statements"],"supporting":["tuples as returned structured values","function-result testing"],"outOfScope":["parameter binding","LEGB scope rules","generators and yield","exception control flow","a general survey of functions"]},
+  "scope": {
+    "core": [
+      "return statement semantics",
+      "None as the implicit result",
+      "return versus print",
+      "consistent return paths and unreachable statements"
+    ],
+    "supporting": [
+      "tuples as returned structured values",
+      "function-result testing"
+    ],
+    "outOfScope": [
+      "parameter binding",
+      "LEGB scope rules",
+      "generators and yield",
+      "exception control flow",
+      "a general survey of functions"
+    ]
+  },
   "claims": [
-    {"claim":"A Python return statement evaluates its expression if present and transfers control from the current function call to its caller.","claimType":"TECHNICAL","sourceIds":["python-reference-assignment-statements"],"status":"supported"},
-    {"claim":"A bare return substitutes None, and reaching the end of a function without a return expression also returns None.","claimType":"TECHNICAL","sourceIds":["python-reference-assignment-statements"],"status":"supported"},
-    {"claim":"A return expression list may be comma-separated and thereby yields a tuple result.","claimType":"TECHNICAL","sourceIds":["python-reference-assignment-statements"],"status":"supported"},
-    {"claim":"Python function definitions use def and functions may return a value to their caller.","claimType":"TECHNICAL","sourceIds":["python-tutorial-controlflow"],"status":"supported"},
-    {"claim":"The worked `final_price` example returns 72.0 for (80, True) and 80 for (80, False).","claimType":"TECHNICAL","sourceIds":["python-reference-assignment-statements","python-tutorial-controlflow"],"status":"supported"},
-    {"claim":"Statements after an unconditional return in the same executed block cannot run on that path because the return has already ended the call.","claimType":"TECHNICAL","sourceIds":["python-reference-assignment-statements"],"status":"supported"}
+    {
+      "claim": "A Python return statement evaluates its expression if present and transfers control from the current function call to its caller.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-reference-assignment-statements"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A bare return substitutes None, and reaching the end of a function without a return expression also returns None.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-reference-assignment-statements"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A return expression list may be comma-separated and thereby yields a tuple result.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-reference-assignment-statements"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Python function definitions use def and functions may return a value to their caller.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-controlflow"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The worked `final_price` example returns 72.0 for (80, True) and 80 for (80, False).",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-reference-assignment-statements",
+        "python-tutorial-controlflow"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Statements after an unconditional return in the same executed block cannot run on that path because the return has already ended the call.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-reference-assignment-statements"
+      ],
+      "status": "supported"
+    }
   ],
   "conflictingEvidence": [],
-  "unsupportedExistingClaims": ["The lesson deliberately does not claim that Python uses a void type; Python functions that do not provide an expression return None."],
-  "correctionsNeeded": ["Separated printing from returning, made fall-through-to-None explicit, and executed all displayed output claims with python3."],
-  "rightsIssues": ["Both documentation pages are reference-only. The lesson contains original explanatory prose and original small examples."],
+  "unsupportedExistingClaims": [
+    "The lesson deliberately does not claim that Python uses a void type; Python functions that do not provide an expression return None."
+  ],
+  "correctionsNeeded": [
+    "Separated printing from returning, made fall-through-to-None explicit, and executed all displayed output claims with python3."
+  ],
+  "rightsIssues": [
+    "Both documentation pages are reference-only. The lesson contains original explanatory prose and original small examples."
+  ],
   "sourceRecords": [
-    {"id":"python-reference-assignment-statements","title":"The Python Language Reference — Simple statements (assignment statements)","provider":"Python Software Foundation","url":"https://docs.python.org/3/reference/simple_stmts.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Official language-reference page read live. Its return-statement section supports expression evaluation, control transfer, implicit None, bare return, and tuple formation from a comma-separated expression list. Facts synthesized; no wording reproduced."},
-    {"id":"python-tutorial-controlflow","title":"The Python Tutorial — 4. More Control Flow Tools (if Statements)","provider":"Python Software Foundation","url":"https://docs.python.org/3/tutorial/controlflow.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Official tutorial page read live, including its defining-functions material. Supports the surrounding Python function-definition context; facts are synthesized and no source prose is copied."}
+    {
+      "id": "python-reference-assignment-statements",
+      "title": "The Python Language Reference — Simple statements (assignment statements)",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/reference/simple_stmts.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Official language-reference page read live. Its return-statement section supports expression evaluation, control transfer, implicit None, bare return, and tuple formation from a comma-separated expression list. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "python-tutorial-controlflow",
+      "title": "The Python Tutorial — 4. More Control Flow Tools (if Statements)",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/tutorial/controlflow.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Official tutorial page read live, including its defining-functions material. Supports the surrounding Python function-definition context; facts are synthesized and no source prose is copied."
+    }
   ]
 }

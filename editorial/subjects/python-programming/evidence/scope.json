@@ -3,24 +3,113 @@
   "subjectId": "python-programming",
   "researchedAt": "2026-08-19",
   "scope": {
-    "core": ["LEGB name lookup", "local, global, and enclosing function scopes", "global and nonlocal declarations", "UnboundLocalError"],
-    "supporting": ["closures as a context for enclosing scopes", "name binding"],
-    "outOfScope": ["function-definition, parameter, and return mechanics", "module import namespaces", "object mutation and aliasing", "class scopes"]
+    "core": [
+      "LEGB name lookup",
+      "local, global, and enclosing function scopes",
+      "global and nonlocal declarations",
+      "UnboundLocalError"
+    ],
+    "supporting": [
+      "closures as a context for enclosing scopes",
+      "name binding"
+    ],
+    "outOfScope": [
+      "function-definition, parameter, and return mechanics",
+      "module import namespaces",
+      "object mutation and aliasing",
+      "class scopes"
+    ]
   },
   "claims": [
-    {"claim": "Python resolves an unqualified name by searching local, enclosing-function, module-global, then built-in scopes when those scopes apply.", "claimType": "TECHNICAL", "sourceIds": ["python-tutorial-scopes-namespaces", "python-language-reference-execution-model"], "status": "supported"},
-    {"claim": "A binding operation anywhere in a function block makes that name local throughout that block unless a global or nonlocal statement changes that treatment.", "claimType": "TECHNICAL", "sourceIds": ["python-language-reference-execution-model"], "status": "supported"},
-    {"claim": "Using a local name before it has been bound in a function raises UnboundLocalError, a subclass of NameError.", "claimType": "TECHNICAL", "sourceIds": ["python-language-reference-execution-model"], "status": "supported"},
-    {"claim": "A global statement directs references and assignments for its listed names to the module's global namespace.", "claimType": "TECHNICAL", "sourceIds": ["python-tutorial-scopes-namespaces", "python-language-reference-execution-model"], "status": "supported"},
-    {"claim": "A nonlocal statement refers to a previously bound name in the nearest enclosing function scope; without a suitable enclosing binding it is a compile-time SyntaxError.", "claimType": "TECHNICAL", "sourceIds": ["python-language-reference-execution-model", "python-tutorial-scopes-namespaces"], "status": "supported"},
-    {"claim": "A nested function can retain access to an enclosing function's names, which makes enclosing scope relevant to closures.", "claimType": "TECHNICAL", "sourceIds": ["python-tutorial-scopes-namespaces"], "status": "supported"}
+    {
+      "claim": "Python resolves an unqualified name by searching local, enclosing-function, module-global, then built-in scopes when those scopes apply.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-scopes-namespaces",
+        "python-language-reference-execution-model"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A binding operation anywhere in a function block makes that name local throughout that block unless a global or nonlocal statement changes that treatment.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-language-reference-execution-model"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Using a local name before it has been bound in a function raises UnboundLocalError, a subclass of NameError.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-language-reference-execution-model"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A global statement directs references and assignments for its listed names to the module's global namespace.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-scopes-namespaces",
+        "python-language-reference-execution-model"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A nonlocal statement refers to a previously bound name in the nearest enclosing function scope; without a suitable enclosing binding it is a compile-time SyntaxError.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-language-reference-execution-model",
+        "python-tutorial-scopes-namespaces"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A nested function can retain access to an enclosing function's names, which makes enclosing scope relevant to closures.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-scopes-namespaces"
+      ],
+      "status": "supported"
+    }
   ],
   "conflictingEvidence": [],
-  "unsupportedExistingClaims": ["The generated draft contained no Python-specific, sourced account of scope."],
-  "correctionsNeeded": ["Replaced generic prose with verified Python name-resolution rules and executed examples.", "Added the required analogy limit, source-backed questions, and a full college-level explanation."],
-  "rightsIssues": ["Both sources are Python documentation used as REFERENCE_ONLY. The lesson is original synthesis and does not reproduce source prose."],
+  "unsupportedExistingClaims": [
+    "The generated draft contained no Python-specific, sourced account of scope."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic prose with verified Python name-resolution rules and executed examples.",
+    "Added the required analogy limit, source-backed questions, and a full college-level explanation."
+  ],
+  "rightsIssues": [
+    "Both sources are Python documentation used as REFERENCE_ONLY. The lesson is original synthesis and does not reproduce source prose."
+  ],
   "sourceRecords": [
-    {"id": "python-tutorial-scopes-namespaces", "title": "The Python Tutorial — 9.2 Python Scopes and Namespaces", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/tutorial/classes.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-19", "notes": "Read live. Supports the nested lookup order, default local assignment, and the practical effects of global and nonlocal."},
-    {"id": "python-language-reference-execution-model", "title": "The Python Language Reference — Execution model (naming and binding)", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/reference/executionmodel.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-19", "notes": "Read live. Supports scope visibility, the whole-block rule for local bindings, UnboundLocalError, and the formal effects and constraints of global and nonlocal."}
+    {
+      "id": "python-tutorial-scopes-namespaces",
+      "title": "The Python Tutorial — 9.2 Python Scopes and Namespaces",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/tutorial/classes.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read live. Supports the nested lookup order, default local assignment, and the practical effects of global and nonlocal."
+    },
+    {
+      "id": "python-language-reference-execution-model",
+      "title": "The Python Language Reference — Execution model (naming and binding)",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/reference/executionmodel.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read live. Supports scope visibility, the whole-block rule for local bindings, UnboundLocalError, and the formal effects and constraints of global and nonlocal."
+    }
   ]
 }

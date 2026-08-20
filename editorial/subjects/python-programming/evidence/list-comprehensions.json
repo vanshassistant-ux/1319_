@@ -3,23 +3,105 @@
   "subjectId": "python-programming",
   "researchedAt": "2026-08-19",
   "scope": {
-    "core": ["list-comprehension syntax", "expression / for / optional if order", "equivalence to an explicit loop", "readability decisions"],
-    "supporting": ["iterables", "filter condition", "result list"],
-    "outOfScope": ["list mutation methods", "generator expressions", "general loop instruction", "nested comprehensions beyond a brief caution"]
+    "core": [
+      "list-comprehension syntax",
+      "expression / for / optional if order",
+      "equivalence to an explicit loop",
+      "readability decisions"
+    ],
+    "supporting": [
+      "iterables",
+      "filter condition",
+      "result list"
+    ],
+    "outOfScope": [
+      "list mutation methods",
+      "generator expressions",
+      "general loop instruction",
+      "nested comprehensions beyond a brief caution"
+    ]
   },
   "claims": [
-    {"claim":"A list comprehension creates a new list using bracketed syntax containing an expression and at least one for clause.","claimType":"TECHNICAL","sourceIds":["python-docs-datastructures","python-docs-expressions-comprehensions"],"status":"supported"},
-    {"claim":"A list comprehension may include zero or more if clauses that filter candidate values before the expression contributes an element.","claimType":"TECHNICAL","sourceIds":["python-docs-datastructures","python-docs-expressions-comprehensions"],"status":"supported"},
-    {"claim":"The for and if clauses in a comprehension correspond in left-to-right nesting order to an explicit loop-and-condition version.","claimType":"TECHNICAL","sourceIds":["python-docs-datastructures","python-docs-expressions-comprehensions"],"status":"supported"},
-    {"claim":"In Python 3, a comprehension executes in an implicitly nested scope except for the leftmost iterable expression, so its target name does not leak into the enclosing scope.","claimType":"TECHNICAL","sourceIds":["python-docs-expressions-comprehensions"],"status":"supported"},
-    {"claim":"A simple one-line transformation or filter can be clear as a comprehension, while several clauses or substantial branching are often clearer as an explicit loop.","claimType":"INTERPRETIVE","sourceIds":["python-docs-datastructures"],"status":"supported"}
+    {
+      "claim": "A list comprehension creates a new list using bracketed syntax containing an expression and at least one for clause.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-datastructures",
+        "python-docs-expressions-comprehensions"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A list comprehension may include zero or more if clauses that filter candidate values before the expression contributes an element.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-datastructures",
+        "python-docs-expressions-comprehensions"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The for and if clauses in a comprehension correspond in left-to-right nesting order to an explicit loop-and-condition version.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-datastructures",
+        "python-docs-expressions-comprehensions"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "In Python 3, a comprehension executes in an implicitly nested scope except for the leftmost iterable expression, so its target name does not leak into the enclosing scope.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-expressions-comprehensions"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A simple one-line transformation or filter can be clear as a comprehension, while several clauses or substantial branching are often clearer as an explicit loop.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "python-docs-datastructures"
+      ],
+      "status": "supported"
+    }
   ],
   "conflictingEvidence": [],
-  "unsupportedExistingClaims": ["The generated draft supplied no substantive, source-supported explanation of Python list comprehensions."],
-  "correctionsNeeded": ["Replaced generic boilerplate with executable Python 3 examples and documentation-backed syntax and scope explanations."],
-  "rightsIssues": ["Both sources are used as reference-only documentation. All lesson prose and examples are original; no source wording is reproduced."],
+  "unsupportedExistingClaims": [
+    "The generated draft supplied no substantive, source-supported explanation of Python list comprehensions."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic boilerplate with executable Python 3 examples and documentation-backed syntax and scope explanations."
+  ],
+  "rightsIssues": [
+    "Both sources are used as reference-only documentation. All lesson prose and examples are original; no source wording is reproduced."
+  ],
   "sourceRecords": [
-    {"id":"python-docs-datastructures","title":"5. Data Structures — Python 3 documentation","provider":"Python Software Foundation","url":"https://docs.python.org/3/tutorial/datastructures.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Read live. The list-comprehensions tutorial section explains concise list construction, the expression/for/if arrangement, and an explicit-loop equivalent. Used for syntax, filtering, output order, and original examples."},
-    {"id":"python-docs-expressions-comprehensions","title":"6.2.5 Displays for lists, sets and dictionaries — Python 3 documentation","provider":"Python Software Foundation","url":"https://docs.python.org/3/reference/expressions.html#displays-for-lists-sets-and-dictionaries","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Read live. Defines comprehension grammar, left-to-right nesting behavior, and the separate implicit scope used for comprehension targets. Used for precise semantics; all prose is original."}
+    {
+      "id": "python-docs-datastructures",
+      "title": "5. Data Structures — Python 3 documentation",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/tutorial/datastructures.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read live. The list-comprehensions tutorial section explains concise list construction, the expression/for/if arrangement, and an explicit-loop equivalent. Used for syntax, filtering, output order, and original examples."
+    },
+    {
+      "id": "python-docs-expressions-comprehensions",
+      "title": "6.2.5 Displays for lists, sets and dictionaries — Python 3 documentation",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/reference/expressions.html#displays-for-lists-sets-and-dictionaries",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read live. Defines comprehension grammar, left-to-right nesting behavior, and the separate implicit scope used for comprehension targets. Used for precise semantics; all prose is original."
+    }
   ]
 }

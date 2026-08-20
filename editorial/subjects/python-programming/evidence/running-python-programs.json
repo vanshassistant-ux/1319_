@@ -3,26 +3,136 @@
   "subjectId": "python-programming",
   "researchedAt": "2026-08-19",
   "scope": {
-    "core": ["interactive interpreter and script execution", "the basic meaning of __name__ == '__main__'", "reading normal output and traceback output"],
-    "supporting": ["command-line -c execution", "working-directory-relative script paths"],
-    "outOfScope": ["installing or selecting Python versions", "syntax and indentation instruction", "input() and print() in depth", "module design and packaging", "debugging workflows"]
+    "core": [
+      "interactive interpreter and script execution",
+      "the basic meaning of __name__ == '__main__'",
+      "reading normal output and traceback output"
+    ],
+    "supporting": [
+      "command-line -c execution",
+      "working-directory-relative script paths"
+    ],
+    "outOfScope": [
+      "installing or selecting Python versions",
+      "syntax and indentation instruction",
+      "input() and print() in depth",
+      "module design and packaging",
+      "debugging workflows"
+    ]
   },
   "claims": [
-    {"claim":"Starting Python without a script enters interactive mode when its standard input is a terminal, where primary prompts accept commands and display results of expressions.","claimType":"TECHNICAL","sourceIds":["python-docs-interpreter"],"status":"supported"},
-    {"claim":"Giving Python a script file causes the interpreter to read and execute that file.","claimType":"TECHNICAL","sourceIds":["python-docs-interpreter"],"status":"supported"},
-    {"claim":"The -c option runs the command supplied as a string.","claimType":"TECHNICAL","sourceIds":["python-docs-command-line"],"status":"supported"},
-    {"claim":"When a module is run as the top-level program, its __name__ is set to '__main__'.","claimType":"TECHNICAL","sourceIds":["python-docs-main"],"status":"supported"},
-    {"claim":"A traceback reports the call stack at an exception; the final line identifies the exception type and its detail.","claimType":"TECHNICAL","sourceIds":["python-docs-errors"],"status":"supported"},
-    {"claim":"In a script, statements run in order until execution ends or an unhandled exception interrupts it.","claimType":"TECHNICAL","sourceIds":["python-docs-interpreter","python-docs-errors"],"status":"supported"}
+    {
+      "claim": "Starting Python without a script enters interactive mode when its standard input is a terminal, where primary prompts accept commands and display results of expressions.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-interpreter"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Giving Python a script file causes the interpreter to read and execute that file.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-interpreter"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The -c option runs the command supplied as a string.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-command-line"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "When a module is run as the top-level program, its __name__ is set to '__main__'.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-main"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A traceback reports the call stack at an exception; the final line identifies the exception type and its detail.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-errors"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "In a script, statements run in order until execution ends or an unhandled exception interrupts it.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-interpreter",
+        "python-docs-errors"
+      ],
+      "status": "supported"
+    }
   ],
   "conflictingEvidence": [],
-  "unsupportedExistingClaims": ["The generated draft supplied only generic statements and no verified explanation of interpreter modes, script execution, __main__, or tracebacks."],
-  "correctionsNeeded": ["Replaced boilerplate with executable Python 3 examples and official-documentation-supported explanations."],
-  "rightsIssues": ["All sources are official documentation used as reference-only; the lesson prose and examples are original."],
+  "unsupportedExistingClaims": [
+    "The generated draft supplied only generic statements and no verified explanation of interpreter modes, script execution, __main__, or tracebacks."
+  ],
+  "correctionsNeeded": [
+    "Replaced boilerplate with executable Python 3 examples and official-documentation-supported explanations."
+  ],
+  "rightsIssues": [
+    "All sources are official documentation used as reference-only; the lesson prose and examples are original."
+  ],
   "sourceRecords": [
-    {"id":"python-docs-interpreter","title":"Using the Python Interpreter","provider":"Python Documentation","url":"https://docs.python.org/3/tutorial/interpreter.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-19","notes":"Official tutorial read directly. Supports interactive mode, script-file execution, prompts, and error display."},
-    {"id":"python-docs-command-line","title":"Command line and environment","provider":"Python Documentation","url":"https://docs.python.org/3/using/cmdline.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-19","notes":"Official reference read directly. Supports the documented -c command-string option."},
-    {"id":"python-docs-main","title":"__main__ — Top-level code environment","provider":"Python Documentation","url":"https://docs.python.org/3/library/__main__.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-19","notes":"Official reference read directly. Supports __name__ behavior for top-level execution and the main guard pattern."},
-    {"id":"python-docs-errors","title":"Errors and Exceptions","provider":"Python Documentation","url":"https://docs.python.org/3/tutorial/errors.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-19","notes":"Official tutorial read directly. Supports how tracebacks represent an unhandled exception."}
+    {
+      "id": "python-docs-interpreter",
+      "title": "Using the Python Interpreter",
+      "provider": "Python Documentation",
+      "url": "https://docs.python.org/3/tutorial/interpreter.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Official tutorial read directly. Supports interactive mode, script-file execution, prompts, and error display."
+    },
+    {
+      "id": "python-docs-command-line",
+      "title": "Command line and environment",
+      "provider": "Python Documentation",
+      "url": "https://docs.python.org/3/using/cmdline.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Official reference read directly. Supports the documented -c command-string option."
+    },
+    {
+      "id": "python-docs-main",
+      "title": "__main__ — Top-level code environment",
+      "provider": "Python Documentation",
+      "url": "https://docs.python.org/3/library/__main__.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Official reference read directly. Supports __name__ behavior for top-level execution and the main guard pattern."
+    },
+    {
+      "id": "python-docs-errors",
+      "title": "Errors and Exceptions",
+      "provider": "Python Documentation",
+      "url": "https://docs.python.org/3/tutorial/errors.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Official tutorial read directly. Supports how tracebacks represent an unhandled exception."
+    }
   ]
 }

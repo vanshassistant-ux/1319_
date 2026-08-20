@@ -24,7 +24,7 @@
   "collegeVersion": [
     {
       "heading": "Opening a text stream safely",
-      "body": "A file is data stored outside the running program. Python's built-in `open()` creates a file object that gives code a way to interact with that data. For an ordinary text file, a focused reading pattern is `with open(\"names.txt\", encoding=\"utf-8\") as file:` followed by an indented block. The `with` statement makes the file object a context manager: when the block finishes, Python closes the file, even if the block exits because of an exception. Closing is not a decorative cleanup step. It ends the program's use of that resource and helps prevent later code from accidentally relying on an open handle. This lesson concentrates on reading; Writing Files covers changing file contents, and Exceptions covers how programs deliberately respond when a file cannot be opened.\n\nText is not raw bytes with a universal meaning. An encoding specifies how stored bytes represent characters. Python documentation notes that a default encoding can depend on the locale, so code that expects UTF-8 text should say `encoding=\"utf-8\"` rather than silently depend on the machine's default. That is especially useful when a file contains names, accented characters, or symbols and the same code runs on different systems. In normal text reading, Python also translates common platform line endings into `\\n`; code can therefore treat a line ending consistently without guessing which operating system created the file."
+      "body": "A file is data stored outside the running program. Python's built-in `open()` creates a file object that gives code a way to interact with that data. For an ordinary text file, a focused reading pattern is `with open(\"names.txt\", encoding=\"utf-8\") as file:` then enter an indented block. The `with` statement makes the file object a context manager: when the block finishes, Python closes the file, even if the block exits because of an exception. Closing is not a decorative cleanup step. It ends the program's use of that resource and helps prevent later code from accidentally relying on an open handle. This lesson concentrates on reading; Writing Files covers changing file contents, and Exceptions covers how programs deliberately respond when a file cannot be opened.\n\nText is not raw bytes with a universal meaning. An encoding specifies how stored bytes represent characters. Python documentation notes that a default encoding can depend on the locale, so code that expects UTF-8 text should say `encoding=\"utf-8\"` rather than silently depend on the machine's default. That is especially useful when a file contains names, accented characters, or symbols and the same code runs on different systems. In normal text reading, Python also translates common platform line endings into `\\n`; code can therefore treat a line ending consistently without guessing which operating system created the file."
     },
     {
       "heading": "Three ways to obtain text",
@@ -266,7 +266,7 @@
     "researchedAt": "2026-08-19",
     "transformation": "Original explanation and verified Python 3 examples derived from official documentation."
   },
-  "contentHash": "47ce0e71ab9741a4",
+  "contentHash": "cab0cc23c6185caa",
   "status": "source-verified",
   "public": false
 }

@@ -3,24 +3,113 @@
   "subjectId": "python-programming",
   "researchedAt": "2026-08-19",
   "scope": {
-    "core": ["opening a text file for reading", "context managers", "read and readline", "iterating over lines", "text encodings"],
-    "supporting": ["newline characters", "end of file", "memory-aware line processing"],
-    "outOfScope": ["writing or appending files", "a survey of file modes", "binary-file processing", "exception-handling strategies", "path manipulation"]
+    "core": [
+      "opening a text file for reading",
+      "context managers",
+      "read and readline",
+      "iterating over lines",
+      "text encodings"
+    ],
+    "supporting": [
+      "newline characters",
+      "end of file",
+      "memory-aware line processing"
+    ],
+    "outOfScope": [
+      "writing or appending files",
+      "a survey of file modes",
+      "binary-file processing",
+      "exception-handling strategies",
+      "path manipulation"
+    ]
   },
   "claims": [
-    {"claim":"Python's open() returns a file object; text files read through it produce strings.","claimType":"TECHNICAL","sourceIds":["python-tutorial-input-output","python-docs-io"],"status":"supported"},
-    {"claim":"Using a with statement to open a file closes it when the suite finishes, including when an exception occurs.","claimType":"TECHNICAL","sourceIds":["python-tutorial-input-output"],"status":"supported"},
-    {"claim":"read() reads the remaining contents, while readline() reads one line and returns an empty string at end of file.","claimType":"TECHNICAL","sourceIds":["python-tutorial-input-output"],"status":"supported"},
-    {"claim":"Iterating directly over a file object is a simple, memory-efficient way to process its lines.","claimType":"TECHNICAL","sourceIds":["python-tutorial-input-output"],"status":"supported"},
-    {"claim":"When the intended text encoding is UTF-8, Python documentation recommends specifying encoding='utf-8' explicitly because defaults can be locale-specific.","claimType":"TECHNICAL","sourceIds":["python-tutorial-input-output","python-docs-io"],"status":"supported"},
-    {"claim":"In text mode, Python translates platform-specific line endings to \n when reading.","claimType":"TECHNICAL","sourceIds":["python-tutorial-input-output"],"status":"supported"}
+    {
+      "claim": "Python's open() returns a file object; text files read through it produce strings.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-input-output",
+        "python-docs-io"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Using a with statement to open a file closes it when the suite finishes, including when an exception occurs.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-input-output"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "read() reads the remaining contents, while readline() reads one line and returns an empty string at end of file.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-input-output"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Iterating directly over a file object is a simple, memory-efficient way to process its lines.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-input-output"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "When the intended text encoding is UTF-8, Python documentation recommends specifying encoding='utf-8' explicitly because defaults can be locale-specific.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-input-output",
+        "python-docs-io"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "In text mode, Python translates platform-specific line endings to \n when reading.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-input-output"
+      ],
+      "status": "supported"
+    }
   ],
   "conflictingEvidence": [],
-  "unsupportedExistingClaims": ["The generated draft did not contain technical claims about Python file objects to retain."],
-  "correctionsNeeded": ["Replaced generic boilerplate with verified Python 3 file-reading semantics and executable examples.", "Excluded writing, broad mode coverage, and detailed exception handling because sibling lessons own them."],
+  "unsupportedExistingClaims": [
+    "The generated draft did not contain technical claims about Python file objects to retain."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic boilerplate with verified Python 3 file-reading semantics and executable examples.",
+    "Excluded writing, broad mode coverage, and detailed exception handling because sibling lessons own them."
+  ],
   "rightsIssues": [],
   "sourceRecords": [
-    {"id":"python-tutorial-input-output","title":"The Python Tutorial — 7.2 Reading and Writing Files","provider":"Python Software Foundation","url":"https://docs.python.org/3/tutorial/inputoutput.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Read directly on 2026-08-19, including section 7.2 and 7.2.1. Supports open(), text mode, explicit UTF-8 guidance, with-based closure, read(), readline(), newline/end-of-file behavior, and direct iteration. Facts synthesized; no source prose adapted."},
-    {"id":"python-docs-io","title":"Python Library Reference — io: Core tools for working with streams","provider":"Python Software Foundation","url":"https://docs.python.org/3/library/io.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Read directly on 2026-08-19, especially Text I/O and Text Encoding. Supports text streams, open() with an explicit encoding, locale-specific defaults, and the recommendation to specify UTF-8 when that encoding is intended. Facts synthesized; no source prose adapted."}
+    {
+      "id": "python-tutorial-input-output",
+      "title": "The Python Tutorial — 7.2 Reading and Writing Files",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/tutorial/inputoutput.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read directly on 2026-08-19, including section 7.2 and 7.2.1. Supports open(), text mode, explicit UTF-8 guidance, with-based closure, read(), readline(), newline/end-of-file behavior, and direct iteration. Facts synthesized; no source prose adapted."
+    },
+    {
+      "id": "python-docs-io",
+      "title": "Python Library Reference — io: Core tools for working with streams",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/library/io.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read directly on 2026-08-19, especially Text I/O and Text Encoding. Supports text streams, open() with an explicit encoding, locale-specific defaults, and the recommendation to specify UTF-8 when that encoding is intended. Facts synthesized; no source prose adapted."
+    }
   ]
 }

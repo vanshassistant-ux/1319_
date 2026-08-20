@@ -3,25 +3,122 @@
   "subjectId": "python-programming",
   "researchedAt": "2026-08-19",
   "scope": {
-    "core": ["syntax, runtime, and logic errors", "reading a traceback", "a repeatable debugging loop", "print-based inspection", "the pdb debugger"],
-    "supporting": ["minimal reproducible examples", "breakpoints", "stack frames"],
-    "outOfScope": ["exception-handling design", "unit-test design", "IDE-specific debugging", "performance profiling", "advanced pdb command reference"]
+    "core": [
+      "syntax, runtime, and logic errors",
+      "reading a traceback",
+      "a repeatable debugging loop",
+      "print-based inspection",
+      "the pdb debugger"
+    ],
+    "supporting": [
+      "minimal reproducible examples",
+      "breakpoints",
+      "stack frames"
+    ],
+    "outOfScope": [
+      "exception-handling design",
+      "unit-test design",
+      "IDE-specific debugging",
+      "performance profiling",
+      "advanced pdb command reference"
+    ]
   },
   "claims": [
-    {"claim":"Python reports invalid syntax as a SyntaxError, whereas an exception may occur while syntactically valid code is executing.","claimType":"TECHNICAL","sourceIds":["python-tutorial-errors","think-python-2e-debugging"],"status":"supported"},
-    {"claim":"For an unhandled exception, Python displays a traceback that identifies the call sequence and ends with the exception type and message.","claimType":"TECHNICAL","sourceIds":["python-docs-errors"],"status":"supported"},
-    {"claim":"A semantic or logic error is a program that runs but produces behavior or a result different from the programmer's intention.","claimType":"TECHNICAL","sourceIds":["think-python-2e-debugging"],"status":"supported"},
-    {"claim":"The standard-library pdb debugger supports breakpoints, source-level stepping, inspecting stack frames, listing source, and evaluating expressions in a frame.","claimType":"TECHNICAL","sourceIds":["python-docs-pdb"],"status":"supported"},
-    {"claim":"Reducing a problem to a small reproducible case can make the relevant behavior easier to inspect without changing the claim that must be checked.","claimType":"TECHNICAL","sourceIds":["think-python-2e-debugging"],"status":"supported"}
+    {
+      "claim": "Python reports invalid syntax as a SyntaxError, whereas an exception may occur while syntactically valid code is executing.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-errors",
+        "think-python-2e-debugging"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "For an unhandled exception, Python displays a traceback that identifies the call sequence and ends with the exception type and message.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-errors"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A semantic or logic error is a program that runs but produces behavior or a result different from the programmer's intention.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "think-python-2e-debugging"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The standard-library pdb debugger supports breakpoints, source-level stepping, inspecting stack frames, listing source, and evaluating expressions in a frame.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-pdb"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Reducing a problem to a small reproducible case can make the relevant behavior easier to inspect without changing the claim that must be checked.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "think-python-2e-debugging"
+      ],
+      "status": "supported"
+    }
   ],
   "conflictingEvidence": [],
-  "unsupportedExistingClaims": ["The generated draft contained no usable debugging-specific factual content."],
-  "correctionsNeeded": ["Replaced generic boilerplate with an executable Python 3 debugging workflow and a precise distinction among syntax, runtime, and logic errors."],
-  "rightsIssues": ["The documentation and open textbook were used as reference-only sources; all lesson prose and examples are original."],
+  "unsupportedExistingClaims": [
+    "The generated draft contained no usable debugging-specific factual content."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic boilerplate with an executable Python 3 debugging workflow and a precise distinction among syntax, runtime, and logic errors."
+  ],
+  "rightsIssues": [
+    "The documentation and open textbook were used as reference-only sources; all lesson prose and examples are original."
+  ],
   "sourceRecords": [
-    {"id":"python-tutorial-errors","title":"The Python Tutorial — 8. Errors and Exceptions","provider":"Python Software Foundation","url":"https://docs.python.org/3/tutorial/errors.html","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"PSF License / Zero-Clause BSD (docs)","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Read directly. Supports the distinction between syntax errors and exceptions and the form of an unhandled-exception traceback."},
-    {"id":"python-docs-errors","title":"Errors and Exceptions","provider":"Python Documentation","url":"https://docs.python.org/3/tutorial/errors.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-19","notes":"Official tutorial read directly. Supports how tracebacks represent an unhandled exception."},
-    {"id":"python-docs-pdb","title":"pdb — The Python Debugger","provider":"Python Software Foundation","url":"https://docs.python.org/3/library/pdb.html","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"PSF License / Zero-Clause BSD (docs)","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Read directly. Supports breakpoints, source-line stepping, stack-frame inspection, source listing, and expression evaluation in a frame."},
-    {"id":"think-python-2e-debugging","title":"Think Python, 2nd Edition — Appendix A: Debugging","provider":"Allen B. Downey / Green Tea Press","url":"https://greenteapress.com/thinkpython2/html/thinkpython2021.html","sourceType":"open-textbook","usage":"REFERENCE_ONLY","license":"CC BY-NC 3.0","licenseUrl":"https://creativecommons.org/licenses/by-nc/3.0/","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Read directly. Supports syntax/runtime/semantic-error categories and a disciplined approach that reduces a program to isolate a defect. No wording reproduced."}
+    {
+      "id": "python-docs-errors",
+      "title": "The Python Tutorial — 8. Errors and Exceptions",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/tutorial/errors.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "PSF License / Zero-Clause BSD (docs)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read directly. Supports the distinction between syntax errors and exceptions and the form of an unhandled-exception traceback."
+    },
+    {
+      "id": "python-docs-pdb",
+      "title": "pdb — The Python Debugger",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/library/pdb.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "PSF License / Zero-Clause BSD (docs)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read directly. Supports breakpoints, source-line stepping, stack-frame inspection, source listing, and expression evaluation in a frame."
+    },
+    {
+      "id": "think-python-2e-debugging",
+      "title": "Think Python, 2nd Edition — Appendix A: Debugging",
+      "provider": "Allen B. Downey / Green Tea Press",
+      "url": "https://greenteapress.com/thinkpython2/html/thinkpython2021.html",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read directly. Supports syntax/runtime/semantic-error categories and a disciplined approach that reduces a program to isolate a defect. No wording reproduced."
+    }
   ]
 }

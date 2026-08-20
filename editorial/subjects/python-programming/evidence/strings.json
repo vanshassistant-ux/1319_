@@ -3,24 +3,112 @@
   "subjectId": "python-programming",
   "researchedAt": "2026-08-19",
   "scope": {
-    "core": ["string literals", "strings as immutable text sequences", "indexing and slicing", "concatenation", "basic f-strings", "common escape sequences and Unicode escapes"],
-    "supporting": ["zero-based and negative indices", "slice stop boundaries", "single-character strings"],
-    "outOfScope": ["string methods", "input and output", "type conversion", "variables and binding", "files and source encodings", "collections beyond the sequence comparison"]
+    "core": [
+      "string literals",
+      "strings as immutable text sequences",
+      "indexing and slicing",
+      "concatenation",
+      "basic f-strings",
+      "common escape sequences and Unicode escapes"
+    ],
+    "supporting": [
+      "zero-based and negative indices",
+      "slice stop boundaries",
+      "single-character strings"
+    ],
+    "outOfScope": [
+      "string methods",
+      "input and output",
+      "type conversion",
+      "variables and binding",
+      "files and source encodings",
+      "collections beyond the sequence comparison"
+    ]
   },
   "claims": [
-    {"claim": "Python strings can be indexed, with the first character at index 0; a one-character string is used where learners might expect a separate character type.", "claimType": "TECHNICAL", "sourceIds": ["python-tutorial-numbers"], "status": "supported"},
-    {"claim": "A slice selects a substring using a start boundary that is included and a stop boundary that is excluded; omitted bounds default to the start or end of the string.", "claimType": "TECHNICAL", "sourceIds": ["python-tutorial-numbers"], "status": "supported"},
-    {"claim": "Strings are immutable, so assigning to an indexed position is an error; making changed text produces a different string value instead.", "claimType": "TECHNICAL", "sourceIds": ["python-tutorial-numbers"], "status": "supported"},
-    {"claim": "The language reference defines string literals, escape sequences, and formatted string literals (f-strings), whose replacement fields contain expressions.", "claimType": "TECHNICAL", "sourceIds": ["python-lexical-analysis-operators"], "status": "supported"},
-    {"claim": "Python lexical analysis works on Unicode text and permits Unicode escape forms in string literals; the lesson uses a named Unicode escape as a small executable example.", "claimType": "TECHNICAL", "sourceIds": ["python-lexical-analysis-operators"], "status": "supported"},
-    {"claim": "Out-of-range individual string indexing raises an error, while an out-of-range slice is handled by the slice rules.", "claimType": "TECHNICAL", "sourceIds": ["python-tutorial-numbers"], "status": "supported"}
+    {
+      "claim": "Python strings can be indexed, with the first character at index 0; a one-character string is used where learners might expect a separate character type.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-numbers"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A slice selects a substring using a start boundary that is included and a stop boundary that is excluded; omitted bounds default to the start or end of the string.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-numbers"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Strings are immutable, so assigning to an indexed position is an error; making changed text produces a different string value instead.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-numbers"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The language reference defines string literals, escape sequences, and formatted string literals (f-strings), whose replacement fields contain expressions.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-lexical-analysis-operators"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Python lexical analysis works on Unicode text and permits Unicode escape forms in string literals; the lesson uses a named Unicode escape as a small executable example.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-lexical-analysis-operators"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Out-of-range individual string indexing raises an error, while an out-of-range slice is handled by the slice rules.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-numbers"
+      ],
+      "status": "supported"
+    }
   ],
   "conflictingEvidence": [],
-  "unsupportedExistingClaims": ["The generated draft supplied no technical definition, executable examples, or sources for Python strings."],
-  "correctionsNeeded": ["Replaced generic discussion of context and evidence with Python 3 string semantics; added verified examples and source-backed questions."],
+  "unsupportedExistingClaims": [
+    "The generated draft supplied no technical definition, executable examples, or sources for Python strings."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic discussion of context and evidence with Python 3 string semantics; added verified examples and source-backed questions."
+  ],
   "rightsIssues": [],
   "sourceRecords": [
-    {"id": "python-tutorial-numbers", "title": "The Python Tutorial — An Informal Introduction to Python", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/tutorial/introduction.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": false, "checkedAt": "2026-08-19", "notes": "Read live. The Strings section documents indexing from 0, negative indices, slicing and its defaults, out-of-range indexing versus slicing, and string immutability. Used for semantics and examples; prose is original."},
-    {"id": "python-lexical-analysis-operators", "title": "The Python Language Reference — Lexical analysis", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/reference/lexical_analysis.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": false, "checkedAt": "2026-08-19", "notes": "Read live. Sections 2.5 and 2.5.4–2.5.7 define string literal forms, escape sequences, Unicode escapes, and f-strings. Used for literal, escape, Unicode, and f-string claims; prose is original."}
+    {
+      "id": "python-tutorial-numbers",
+      "title": "The Python Tutorial — An Informal Introduction to Python",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/tutorial/introduction.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read live. The Strings section documents indexing from 0, negative indices, slicing and its defaults, out-of-range indexing versus slicing, and string immutability. Used for semantics and examples; prose is original."
+    },
+    {
+      "id": "python-lexical-analysis-operators",
+      "title": "The Python Language Reference — Lexical analysis",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/reference/lexical_analysis.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read live. Sections 2.5 and 2.5.4–2.5.7 define string literal forms, escape sequences, Unicode escapes, and f-strings. Used for literal, escape, Unicode, and f-string claims; prose is original."
+    }
   ]
 }

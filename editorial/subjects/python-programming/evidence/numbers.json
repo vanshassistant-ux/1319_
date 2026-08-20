@@ -3,25 +3,125 @@
   "subjectId": "python-programming",
   "researchedAt": "2026-08-19",
   "scope": {
-    "core": ["Python int, float, and complex values", "exact versus approximate numeric representation", "rounding and arithmetic results"],
-    "supporting": ["floor division and remainder as numeric results", "checking a numeric result in a small Python program"],
-    "outOfScope": ["operator precedence", "explicit type conversion", "Boolean values and comparisons", "decimal module and financial rounding policy", "strings and collections"]
+    "core": [
+      "Python int, float, and complex values",
+      "exact versus approximate numeric representation",
+      "rounding and arithmetic results"
+    ],
+    "supporting": [
+      "floor division and remainder as numeric results",
+      "checking a numeric result in a small Python program"
+    ],
+    "outOfScope": [
+      "operator precedence",
+      "explicit type conversion",
+      "Boolean values and comparisons",
+      "decimal module and financial rounding policy",
+      "strings and collections"
+    ]
   },
   "claims": [
-    {"claim":"Python's built-in numeric types include integers, floating-point numbers, and complex numbers.","claimType":"TECHNICAL","sourceIds":["python-docs-stdtypes"],"status":"supported"},
-    {"claim":"Python integers have arbitrary precision, subject to practical memory limits.","claimType":"TECHNICAL","sourceIds":["python-docs-stdtypes"],"status":"supported"},
-    {"claim":"A complex number has real and imaginary components, written with a j suffix in Python literals such as 1+2j.","claimType":"TECHNICAL","sourceIds":["python-docs-stdtypes"],"status":"supported"},
-    {"claim":"Most decimal fractions cannot be represented exactly as binary floating-point fractions, so a displayed or computed float can contain a small representation error.","claimType":"TECHNICAL","sourceIds":["python-docs-floating-point-tutorial"],"status":"supported"},
-    {"claim":"Python's round() rounds ties to the nearest even multiple and can produce results that surprise users when the input is a float such as 2.675.","claimType":"TECHNICAL","sourceIds":["python-docs-builtins-round","python-docs-floating-point-tutorial"],"status":"supported"},
-    {"claim":"For integers a//b is floor division and a%b has a result consistent with a == (a//b)*b + (a%b).","claimType":"TECHNICAL","sourceIds":["python-docs-stdtypes"],"status":"supported"}
+    {
+      "claim": "Python's built-in numeric types include integers, floating-point numbers, and complex numbers.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-stdtypes"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Python integers have arbitrary precision, subject to practical memory limits.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-stdtypes"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A complex number has real and imaginary components, written with a j suffix in Python literals such as 1+2j.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-stdtypes"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Most decimal fractions cannot be represented exactly as binary floating-point fractions, so a displayed or computed float can contain a small representation error.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-floating-point-tutorial"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Python's round() rounds ties to the nearest even multiple and can produce results that surprise users when the input is a float such as 2.675.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-builtins-round",
+        "python-docs-floating-point-tutorial"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "For integers a//b is floor division and a%b has a result consistent with a == (a//b)*b + (a%b).",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-stdtypes"
+      ],
+      "status": "supported"
+    }
   ],
   "conflictingEvidence": [],
-  "unsupportedExistingClaims": ["The generated draft gave no substantive, source-supported account of Python numeric types or floating-point limits."],
-  "correctionsNeeded": ["Replaced generic discussion with executable Python 3 numeric examples.", "Added the binary floating-point representation caveat and a precise explanation of round().", "Kept conversion, comparison, and operator-precedence instruction for their dedicated lessons."],
-  "rightsIssues": ["All sources are official documentation used as reference-only sources; this lesson uses original explanatory prose and no reproduced source passages."],
+  "unsupportedExistingClaims": [
+    "The generated draft gave no substantive, source-supported account of Python numeric types or floating-point limits."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic discussion with executable Python 3 numeric examples.",
+    "Added the binary floating-point representation caveat and a precise explanation of round().",
+    "Kept conversion, comparison, and operator-precedence instruction for their dedicated lessons."
+  ],
+  "rightsIssues": [
+    "All sources are official documentation used as reference-only sources; this lesson uses original explanatory prose and no reproduced source passages."
+  ],
   "sourceRecords": [
-    {"id":"python-docs-stdtypes","title":"Built-in Types — Python 3 documentation","provider":"Python Software Foundation","url":"https://docs.python.org/3/library/stdtypes.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Official numeric-type documentation read directly. Supports int, float, complex, arbitrary-precision integers, complex components, and floor-division/remainder semantics. Facts synthesized; no wording reproduced."},
-    {"id":"python-docs-floating-point-tutorial","title":"Floating-Point Arithmetic: Issues and Limitations — Python 3 documentation","provider":"Python Software Foundation","url":"https://docs.python.org/3/tutorial/floatingpoint.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Official tutorial read directly. Supports the binary-fraction model, representation error, and the 2.675 rounding example. Facts synthesized; no wording reproduced."},
-    {"id":"python-docs-builtins-round","title":"Built-in Functions: round — Python 3 documentation","provider":"Python Software Foundation","url":"https://docs.python.org/3/library/functions.html#round","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Official built-in-function documentation read directly. Supports round()'s nearest-even tie rule and notes that float rounding can be surprising. Facts synthesized; no wording reproduced."}
+    {
+      "id": "python-docs-stdtypes",
+      "title": "Built-in Types — Python 3 documentation",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/library/stdtypes.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Official numeric-type documentation read directly. Supports int, float, complex, arbitrary-precision integers, complex components, and floor-division/remainder semantics. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "python-docs-floating-point-tutorial",
+      "title": "Floating-Point Arithmetic: Issues and Limitations — Python 3 documentation",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/tutorial/floatingpoint.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Official tutorial read directly. Supports the binary-fraction model, representation error, and the 2.675 rounding example. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "python-docs-builtins-round",
+      "title": "Built-in Functions: round — Python 3 documentation",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/library/functions.html#round",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Official built-in-function documentation read directly. Supports round()'s nearest-even tie rule and notes that float rounding can be surprising. Facts synthesized; no wording reproduced."
+    }
   ]
 }

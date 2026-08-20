@@ -71,7 +71,7 @@
     "analogy": "Imagine borrowing a library binder. Its shelf address is the path, the checkout purpose is the mode, and the `with` block is the checkout period that returns the binder automatically when the task is over.",
     "analogyLimits": "Computer files can have permissions, byte formats, and simultaneous users that ordinary binders do not. The analogy explains the roles and the bounded lifetime, not every operating-system rule."
   },
-  "workedExample": "This short program demonstrates setup rather than a reading or writing recipe. It uses a temporary directory so it does not leave a file behind. First, exclusive creation makes `status.txt`; then append mode adds a second line. Both openings use a context manager and explicit UTF-8 encoding. Run with Python 3:\n\n```python\nfrom pathlib import Path\nfrom tempfile import TemporaryDirectory\n\nwith TemporaryDirectory() as folder:\n    path = Path(folder) / \"status.txt\"\n    with open(path, \"x\", encoding=\"utf-8\") as file:\n        file.write(\"created\\n\")\n    with open(path, \"a\", encoding=\"utf-8\") as file:\n        file.write(\"updated\\n\")\n    print(path.read_text(encoding=\"utf-8\"), end=\"\")\n```\n\nOutput:\n\n```text\ncreated\nupdated\n```\n\nThe first mode, `x`, would reject an already-existing `status.txt`; the second, `a`, adds rather than replaces. The inner `with` blocks close each file before the next operation. `Path.read_text()` appears only to inspect the demonstration result; Reading Files owns a fuller treatment of reading.",
+  "workedExample": "This short program demonstrates setup rather than a reading or writing recipe. It uses a temporary directory so it does not leave a file behind. First, exclusive creation makes `status.txt`; then append mode adds a second line. Both openings use a context manager and explicit UTF-8 encoding. Run with Python 3:\n\n```python\nfrom pathlib import Path\nfrom tempfile import TemporaryDirectory\n\nwith TemporaryDirectory() as folder:\n    path = Path(folder) / \"status.txt\"\n    with open(path, \"x\", encoding=\"utf-8\") as file:\n        file.write(\"created\\n\")\n    with path.open(\"a\", encoding=\"utf-8\") as file:\n        file.write(\"updated\\n\")\n    print(path.read_text(encoding=\"utf-8\"), end=\"\")\n```\n\nOutput:\n\n```text\ncreated\nupdated\n```\n\nThe first mode, `x`, would reject an already-existing `status.txt`; the second, `a`, adds rather than replaces. The inner `with` blocks close each file before the next operation. `Path.read_text()` appears only to inspect the demonstration result; Reading Files owns a fuller treatment of reading.",
   "commonMistakes": [
     {
       "mistake": "Using `w` when the goal is to preserve an existing file's content.",
@@ -267,7 +267,7 @@
     "researchedAt": "2026-08-19",
     "transformation": "Original introductory lesson synthesizing official Python documentation, with independently executed Python 3 example."
   },
-  "contentHash": "add0edcc320fafbb",
+  "contentHash": "51890e615a444a98",
   "status": "source-verified",
   "public": false
 }

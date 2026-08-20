@@ -60,7 +60,7 @@ with TemporaryDirectory() as folder:
     path = Path(folder) / "status.txt"
     with open(path, "x", encoding="utf-8") as file:
         file.write("created\n")
-    with open(path, "a", encoding="utf-8") as file:
+    with path.open("a", encoding="utf-8") as file:
         file.write("updated\n")
     print(path.read_text(encoding="utf-8"), end="")
 ```

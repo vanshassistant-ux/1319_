@@ -1,17 +1,115 @@
 {
-  "topicId":"python-programming:foundations:booleans","subjectId":"python-programming","researchedAt":"2026-08-19",
-  "scope":{"core":["True and False","truth-value testing","falsey and truthy built-ins","bool as an int subclass","and/or/not operand behavior and short circuiting"],"supporting":["custom __bool__ and __len__ hooks","explicit bool() display of a truth test"],"outOfScope":["comparison and identity operator catalog","conditional statement branches","general type-conversion instruction","input handling","bitwise-operator instruction"]},
-  "claims":[
-    {"claim":"Python's bool type has exactly two constant instances, True and False.","claimType":"TECHNICAL","sourceIds":["python-docs-stdtypes"],"status":"supported"},
-    {"claim":"An object is normally truthy unless __bool__ returns False or __len__ returns zero; built-in falsey examples include None, numeric zero, and empty collections.","claimType":"TECHNICAL","sourceIds":["python-docs-stdtypes"],"status":"supported"},
-    {"claim":"bool is a subclass of int, and False/True behave as 0/1 in many numeric contexts; the documentation discourages relying on that behavior.","claimType":"TECHNICAL","sourceIds":["python-docs-stdtypes"],"status":"supported"},
-    {"claim":"x or y returns x when x is true and otherwise y; x and y returns x when x is false and otherwise y.","claimType":"TECHNICAL","sourceIds":["python-docs-stdtypes"],"status":"supported"},
-    {"claim":"or evaluates its second operand only when the first is false, while and evaluates its second operand only when the first is true.","claimType":"TECHNICAL","sourceIds":["python-docs-stdtypes","python-language-reference-expressions"],"status":"supported"},
-    {"claim":"not performs truth testing and returns True or False.","claimType":"TECHNICAL","sourceIds":["python-docs-stdtypes"],"status":"supported"}
+  "topicId": "python-programming:foundations:booleans",
+  "subjectId": "python-programming",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "True and False",
+      "truth-value testing",
+      "falsey and truthy built-ins",
+      "bool as an int subclass",
+      "and/or/not operand behavior and short circuiting"
+    ],
+    "supporting": [
+      "custom __bool__ and __len__ hooks",
+      "explicit bool() display of a truth test"
+    ],
+    "outOfScope": [
+      "comparison and identity operator catalog",
+      "conditional statement branches",
+      "general type-conversion instruction",
+      "input handling",
+      "bitwise-operator instruction"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Python's bool type has exactly two constant instances, True and False.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-stdtypes"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "An object is normally truthy unless __bool__ returns False or __len__ returns zero; built-in falsey examples include None, numeric zero, and empty collections.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-stdtypes"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "bool is a subclass of int, and False/True behave as 0/1 in many numeric contexts; the documentation discourages relying on that behavior.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-stdtypes"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "x or y returns x when x is true and otherwise y; x and y returns x when x is false and otherwise y.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-stdtypes"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "or evaluates its second operand only when the first is false, while and evaluates its second operand only when the first is true.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-stdtypes",
+        "python-language-reference-expressions"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "not performs truth testing and returns True or False.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-stdtypes"
+      ],
+      "status": "supported"
+    }
   ],
-  "conflictingEvidence":[],"unsupportedExistingClaims":["The generated draft contained generic, unsupported prose and was replaced rather than relied upon."],"correctionsNeeded":["Added the documented distinction between Boolean objects and truthy/falsey values.","Corrected the draft's lack of technical content with executable Python 3 examples and source-backed questions."],"rightsIssues":["Official Python documentation was used as reference-only; all lesson prose is original synthesis."],
-  "sourceRecords":[
-    {"id":"python-docs-stdtypes","title":"Built-in Types — Python 3 documentation","provider":"Python Software Foundation","url":"https://docs.python.org/3/library/stdtypes.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Live official documentation read for truth-value testing, Boolean type, bool/int relationship, and and/or/not semantics. Used as reference only."},
-    {"id":"python-language-reference-expressions","title":"The Python Language Reference — 6. Expressions (Operator precedence)","provider":"Python Software Foundation","url":"https://docs.python.org/3/reference/expressions.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Live official language-reference page read to corroborate expression semantics. Used as reference only."}
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft contained generic, unsupported prose and was replaced rather than relied upon."
+  ],
+  "correctionsNeeded": [
+    "Added the documented distinction between Boolean objects and truthy/falsey values.",
+    "Corrected the draft's lack of technical content with executable Python 3 examples and source-backed questions."
+  ],
+  "rightsIssues": [
+    "Official Python documentation was used as reference-only; all lesson prose is original synthesis."
+  ],
+  "sourceRecords": [
+    {
+      "id": "python-docs-stdtypes",
+      "title": "Built-in Types — Python 3 documentation",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/library/stdtypes.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Live official documentation read for truth-value testing, Boolean type, bool/int relationship, and and/or/not semantics. Used as reference only."
+    },
+    {
+      "id": "python-language-reference-expressions",
+      "title": "The Python Language Reference — 6. Expressions (Operator precedence)",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/reference/expressions.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Live official language-reference page read to corroborate expression semantics. Used as reference only."
+    }
   ]
 }

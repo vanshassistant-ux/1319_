@@ -3,24 +3,112 @@
   "subjectId": "python-programming",
   "researchedAt": "2026-08-19",
   "scope": {
-    "core": ["parameters and arguments", "positional and keyword arguments", "default values", "*args and **kwargs"],
-    "supporting": ["call binding rules", "tuple and dictionary collection of surplus arguments"],
-    "outOfScope": ["writing a full function definition lesson", "return values", "local and global scope", "positional-only and keyword-only parameter syntax"]
+    "core": [
+      "parameters and arguments",
+      "positional and keyword arguments",
+      "default values",
+      "*args and **kwargs"
+    ],
+    "supporting": [
+      "call binding rules",
+      "tuple and dictionary collection of surplus arguments"
+    ],
+    "outOfScope": [
+      "writing a full function definition lesson",
+      "return values",
+      "local and global scope",
+      "positional-only and keyword-only parameter syntax"
+    ]
   },
   "claims": [
-    {"claim":"A parameter is a name in a function definition, while an argument is a value supplied in a call.","claimType":"TECHNICAL","sourceIds":["python-tutorial-controlflow","python-reference-expressions-calls"],"status":"supported"},
-    {"claim":"Ordinary parameters can receive arguments by position or by matching keyword; positional arguments must precede keyword arguments in a call.","claimType":"TECHNICAL","sourceIds":["python-tutorial-controlflow"],"status":"supported"},
-    {"claim":"A default value is used when the caller does not provide that argument, and default expressions are evaluated once when the function is defined.","claimType":"TECHNICAL","sourceIds":["python-tutorial-controlflow"],"status":"supported"},
-    {"claim":"A parameter prefixed with * collects surplus positional arguments into a tuple.","claimType":"TECHNICAL","sourceIds":["python-tutorial-controlflow","python-reference-expressions-calls"],"status":"supported"},
-    {"claim":"A parameter prefixed with ** collects surplus keyword arguments into a dictionary.","claimType":"TECHNICAL","sourceIds":["python-tutorial-controlflow","python-reference-expressions-calls"],"status":"supported"},
-    {"claim":"Using a mutable object such as a list as a default can preserve changes between calls, so None plus initialization inside the function is a safer common pattern when a fresh list is intended.","claimType":"TECHNICAL","sourceIds":["python-tutorial-controlflow"],"status":"supported"}
+    {
+      "claim": "A parameter is a name in a function definition, while an argument is a value supplied in a call.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-controlflow",
+        "python-reference-expressions-calls"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Ordinary parameters can receive arguments by position or by matching keyword; positional arguments must precede keyword arguments in a call.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-controlflow"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A default value is used when the caller does not provide that argument, and default expressions are evaluated once when the function is defined.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-controlflow"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A parameter prefixed with * collects surplus positional arguments into a tuple.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-controlflow",
+        "python-reference-expressions-calls"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A parameter prefixed with ** collects surplus keyword arguments into a dictionary.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-controlflow",
+        "python-reference-expressions-calls"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Using a mutable object such as a list as a default can preserve changes between calls, so None plus initialization inside the function is a safer common pattern when a fresh list is intended.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-controlflow"
+      ],
+      "status": "supported"
+    }
   ],
   "conflictingEvidence": [],
-  "unsupportedExistingClaims": ["The generated draft contained no Python-specific, sourced claims."],
-  "correctionsNeeded": ["Replaced generic boilerplate with verified Python parameter-binding semantics and executable examples."],
-  "rightsIssues": ["Both sources are used as reference-only documentation; all instructional prose and examples are original."],
+  "unsupportedExistingClaims": [
+    "The generated draft contained no Python-specific, sourced claims."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic boilerplate with verified Python parameter-binding semantics and executable examples."
+  ],
+  "rightsIssues": [
+    "Both sources are used as reference-only documentation; all instructional prose and examples are original."
+  ],
   "sourceRecords": [
-    {"id":"python-tutorial-controlflow","title":"The Python Tutorial — 4. More Control Flow Tools","provider":"Python Software Foundation","url":"https://docs.python.org/3/tutorial/controlflow.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Read directly. Sections 4.9.1, 4.9.2, and 4.9.4 document default values, keyword arguments, positional-before-keyword order, and arbitrary argument lists. Used for the beginner-level parameter semantics; no source wording reproduced."},
-    {"id":"python-reference-expressions-calls","title":"The Python Language Reference — 6.3.4 Calls","provider":"Python Software Foundation","url":"https://docs.python.org/3/reference/expressions.html#calls","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Read directly. Specifies how positional and keyword arguments are assigned to formal parameter slots and how excess positional and keyword arguments are collected by * and ** parameters. Used to cross-check call binding; no source wording reproduced."}
+    {
+      "id": "python-tutorial-controlflow",
+      "title": "The Python Tutorial — 4. More Control Flow Tools",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/tutorial/controlflow.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read directly. Sections 4.9.1, 4.9.2, and 4.9.4 document default values, keyword arguments, positional-before-keyword order, and arbitrary argument lists. Used for the beginner-level parameter semantics; no source wording reproduced."
+    },
+    {
+      "id": "python-reference-expressions-calls",
+      "title": "The Python Language Reference — 6.3.4 Calls",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/reference/expressions.html#calls",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read directly. Specifies how positional and keyword arguments are assigned to formal parameter slots and how excess positional and keyword arguments are collected by * and ** parameters. Used to cross-check call binding; no source wording reproduced."
+    }
   ]
 }

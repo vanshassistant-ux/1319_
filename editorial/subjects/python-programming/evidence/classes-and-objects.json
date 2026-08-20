@@ -3,25 +3,126 @@
   "subjectId": "python-programming",
   "researchedAt": "2026-08-19",
   "scope": {
-    "core": ["class definitions", "instances", "attributes", "instance methods and self", "class versus instance attributes"],
-    "supporting": ["object identity and type", "attribute lookup"],
-    "outOfScope": ["inheritance", "special methods", "testing", "a general survey of object-oriented design"]
+    "core": [
+      "class definitions",
+      "instances",
+      "attributes",
+      "instance methods and self",
+      "class versus instance attributes"
+    ],
+    "supporting": [
+      "object identity and type",
+      "attribute lookup"
+    ],
+    "outOfScope": [
+      "inheritance",
+      "special methods",
+      "testing",
+      "a general survey of object-oriented design"
+    ]
   },
   "claims": [
-    {"claim":"A class statement creates a class object and its suite becomes the class namespace.","claimType":"TECHNICAL","sourceIds":["python-tutorial-scopes-namespaces","python-lang-ref-compound-stmts"],"status":"supported"},
-    {"claim":"Calling a class creates a new instance, and attributes can be read with dotted notation.","claimType":"TECHNICAL","sourceIds":["python-tutorial-scopes-namespaces"],"status":"supported"},
-    {"claim":"An instance method receives the instance when called through that instance; the conventional first parameter name is self.","claimType":"TECHNICAL","sourceIds":["python-tutorial-scopes-namespaces"],"status":"supported"},
-    {"claim":"An assignment such as self.name creates or changes an instance attribute, so different instances can hold different values.","claimType":"TECHNICAL","sourceIds":["python-tutorial-scopes-namespaces"],"status":"supported"},
-    {"claim":"A class attribute is shared through the class unless an instance attribute of the same name shadows it; mutable class attributes can unintentionally be shared.","claimType":"TECHNICAL","sourceIds":["python-tutorial-scopes-namespaces"],"status":"supported"},
-    {"claim":"Every Python object has an identity, type, and value.","claimType":"TECHNICAL","sourceIds":["python-docs-datamodel"],"status":"supported"}
+    {
+      "claim": "A class statement creates a class object and its suite becomes the class namespace.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-scopes-namespaces",
+        "python-lang-ref-compound-stmts"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Calling a class creates a new instance, and attributes can be read with dotted notation.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-scopes-namespaces"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "An instance method receives the instance when called through that instance; the conventional first parameter name is self.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-scopes-namespaces"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "An assignment such as self.name creates or changes an instance attribute, so different instances can hold different values.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-scopes-namespaces"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A class attribute is shared through the class unless an instance attribute of the same name shadows it; mutable class attributes can unintentionally be shared.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-scopes-namespaces"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Every Python object has an identity, type, and value.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-datamodel"
+      ],
+      "status": "supported"
+    }
   ],
   "conflictingEvidence": [],
-  "unsupportedExistingClaims": ["The generated draft contained only generic boilerplate and no verifiable instruction about Python classes."],
-  "correctionsNeeded": ["Replaced boilerplate with an executable, source-verified introduction to classes, instances, attributes, and methods."],
-  "rightsIssues": ["Official documentation is used as reference-only; all instructional prose and examples are original."],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic boilerplate and no verifiable instruction about Python classes."
+  ],
+  "correctionsNeeded": [
+    "Replaced boilerplate with an executable, source-verified introduction to classes, instances, attributes, and methods."
+  ],
+  "rightsIssues": [
+    "Official documentation is used as reference-only; all instructional prose and examples are original."
+  ],
   "sourceRecords": [
-    {"id":"python-tutorial-scopes-namespaces","title":"The Python Tutorial — 9. Classes","provider":"Python Software Foundation","url":"https://docs.python.org/3/tutorial/classes.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Read directly. Supports class definition syntax, class and instance objects, instance attributes, method objects, the self convention, and class-versus-instance-variable behavior. No source prose reproduced."},
-    {"id":"python-lang-ref-compound-stmts","title":"The Python Language Reference — 8.8 Class definitions","provider":"Python Software Foundation","url":"https://docs.python.org/3/reference/compound_stmts.html","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"PSF License","licenseUrl":"https://docs.python.org/3/license.html","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Read directly at the Class definitions section. Supports the formal class-definition grammar and execution of a class suite. No source prose reproduced."},
-    {"id":"python-docs-datamodel","title":"The Python Language Reference — Data model","provider":"Python Software Foundation","url":"https://docs.python.org/3/reference/datamodel.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Supports the statement that every object has identity, type, and value. No source prose reproduced."}
+    {
+      "id": "python-tutorial-scopes-namespaces",
+      "title": "The Python Tutorial — 9. Classes",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/tutorial/classes.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read directly. Supports class definition syntax, class and instance objects, instance attributes, method objects, the self convention, and class-versus-instance-variable behavior. No source prose reproduced."
+    },
+    {
+      "id": "python-lang-ref-compound-stmts",
+      "title": "The Python Language Reference — 8.8 Class definitions",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/reference/compound_stmts.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "PSF License",
+      "licenseUrl": "https://docs.python.org/3/license.html",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read directly at the Class definitions section. Supports the formal class-definition grammar and execution of a class suite. No source prose reproduced."
+    },
+    {
+      "id": "python-docs-datamodel",
+      "title": "The Python Language Reference — Data model",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/reference/datamodel.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the statement that every object has identity, type, and value. No source prose reproduced."
+    }
   ]
 }

@@ -20,7 +20,7 @@ Programs often begin with information stored outside the program: a class roster
 
 ### Opening a text stream safely
 
-A file is data stored outside the running program. Python's built-in `open()` creates a file object that gives code a way to interact with that data. For ordinary text, use `with open("names.txt", encoding="utf-8") as file:` followed by an indented block. The `with` statement makes the file object a context manager: when the block finishes, Python closes the file, even if the block exits because of an exception. This lesson focuses on reading; Writing Files covers changing contents, and Exceptions covers deliberate error responses.
+A file is data stored outside the running program. Python's built-in `open()` creates a file object that gives code a way to interact with that data. For ordinary text, use `with open("names.txt", encoding="utf-8") as file:` then enter an indented block. The `with` statement makes the file object a context manager: when the block finishes, Python closes the file, even if the block exits because of an exception. This lesson focuses on reading; Writing Files covers changing contents, and Exceptions covers deliberate error responses.
 
 Text is not raw bytes with a universal meaning. An encoding specifies how stored bytes represent characters. Python documentation notes that a default encoding can depend on the locale, so code expecting UTF-8 should say `encoding="utf-8"` rather than depend on the machine's default. In normal text reading, Python translates common platform line endings into `\n`, allowing code to treat a line ending consistently.
 

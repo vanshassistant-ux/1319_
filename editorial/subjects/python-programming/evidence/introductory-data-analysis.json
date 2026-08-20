@@ -3,24 +3,118 @@
   "subjectId": "python-programming",
   "researchedAt": "2026-08-19",
   "scope": {
-    "core": ["checking and cleaning a small tabular dataset", "descriptive statistics with Python's standard library", "reproducible analysis", "association versus causation"],
-    "supporting": ["CSV structure", "missing values", "mean and median"],
-    "outOfScope": ["pandas and other third-party libraries", "statistical inference", "predictive modelling", "causal study design"]
+    "core": [
+      "checking and cleaning a small tabular dataset",
+      "descriptive statistics with Python's standard library",
+      "reproducible analysis",
+      "association versus causation"
+    ],
+    "supporting": [
+      "CSV structure",
+      "missing values",
+      "mean and median"
+    ],
+    "outOfScope": [
+      "pandas and other third-party libraries",
+      "statistical inference",
+      "predictive modelling",
+      "causal study design"
+    ]
   },
   "claims": [
-    {"claim": "The csv module reads and writes tabular data, while CSV conventions can differ between producers.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-csv-intro-data-analysis"], "status": "supported"},
-    {"claim": "The standard-library statistics module provides functions including mean() and median() for numeric real-valued data.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-statistics-intro-data-analysis"], "status": "supported"},
-    {"claim": "A mean is an arithmetic average and a median is a middle value; they can summarize the same data differently.", "claimType": "QUANTITATIVE", "sourceIds": ["python-docs-statistics-intro-data-analysis"], "status": "supported"},
-    {"claim": "A reproducible small analysis records its input, cleaning rule, code, and output so the calculation can be rerun and checked.", "claimType": "EVERGREEN", "sourceIds": ["python-docs-csv-intro-data-analysis", "python-docs-statistics-intro-data-analysis"], "status": "supported"},
-    {"claim": "A pattern in observational values is not, by itself, evidence that one measured variable caused the other.", "claimType": "SCIENTIFIC", "sourceIds": ["openstax-introductory-statistics-correlation-causation"], "status": "supported"}
+    {
+      "claim": "The csv module reads and writes tabular data, while CSV conventions can differ between producers.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-csv-intro-data-analysis"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The standard-library statistics module provides functions including mean() and median() for numeric real-valued data.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-statistics-intro-data-analysis"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A mean is an arithmetic average and a median is a middle value; they can summarize the same data differently.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "python-docs-statistics-intro-data-analysis"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A reproducible small analysis records its input, cleaning rule, code, and output so the calculation can be rerun and checked.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "python-docs-csv-intro-data-analysis",
+        "python-docs-statistics-intro-data-analysis"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A pattern in observational values is not, by itself, evidence that one measured variable caused the other.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "openstax-introductory-statistics-correlation-causation"
+      ],
+      "status": "supported"
+    }
   ],
   "conflictingEvidence": [],
-  "unsupportedExistingClaims": ["The generated draft supplied no substantive, verifiable account of Python data analysis."],
-  "correctionsNeeded": ["Replaced generic concept language with a bounded standard-library workflow and an explicit causation limit."],
-  "rightsIssues": ["All sources are used as reference-only documentation or OER; lesson prose and examples are original."],
+  "unsupportedExistingClaims": [
+    "The generated draft supplied no substantive, verifiable account of Python data analysis."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic concept language with a bounded standard-library workflow and an explicit causation limit."
+  ],
+  "rightsIssues": [
+    "All sources are used as reference-only documentation or OER; lesson prose and examples are original."
+  ],
   "sourceRecords": [
-    {"id": "python-docs-csv-intro-data-analysis", "title": "csv — CSV File Reading and Writing", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/library/csv.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-19", "notes": "Read live. Supports that csv reads and writes tabular data and that CSV formats may differ in delimiters and quoting."},
-    {"id": "python-docs-statistics-intro-data-analysis", "title": "statistics — Mathematical statistics functions", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/library/statistics.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-19", "notes": "Read live. Supports standard-library statistics functions for numeric data, including mean and median, and its stated limited scope relative to third-party libraries."},
-    {"id": "openstax-introductory-statistics-correlation-causation", "title": "Introduction to Statistics 2e — Correlation and Causation", "provider": "OpenStax, Rice University", "url": "https://openstax.org/books/introductory-statistics-2e/pages/12-2-correlation-and-causation", "sourceType": "open-textbook", "usage": "REFERENCE_ONLY", "license": "Creative Commons Attribution 4.0 International", "licenseUrl": "https://creativecommons.org/licenses/by/4.0/", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-19", "notes": "Read live. Supports the distinction between correlation/association and causation; used for the lesson's limit on descriptive patterns."}
+    {
+      "id": "python-docs-csv-intro-data-analysis",
+      "title": "csv — CSV File Reading and Writing",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/library/csv.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read live. Supports that csv reads and writes tabular data and that CSV formats may differ in delimiters and quoting."
+    },
+    {
+      "id": "python-docs-statistics-intro-data-analysis",
+      "title": "statistics — Mathematical statistics functions",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/library/statistics.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read live. Supports standard-library statistics functions for numeric data, including mean and median, and its stated limited scope relative to third-party libraries."
+    },
+    {
+      "id": "openstax-introductory-statistics-correlation-causation",
+      "title": "Introduction to Statistics 2e — Correlation and Causation",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/12-2-correlation-and-causation",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "Creative Commons Attribution 4.0 International",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read live. Supports the distinction between correlation/association and causation; used for the lesson's limit on descriptive patterns."
+    }
   ]
 }

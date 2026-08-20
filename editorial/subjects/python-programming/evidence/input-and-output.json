@@ -3,24 +3,111 @@
   "subjectId": "python-programming",
   "researchedAt": "2026-08-19",
   "scope": {
-    "core": ["console input with input()", "text output with print()", "prompts, separators, line endings, and standard streams"],
-    "supporting": ["the fact that input() returns text", "a small input-process-output interaction"],
-    "outOfScope": ["running a REPL or script", "detailed type conversion", "file input/output", "exception-handling policy", "format-string techniques"]
+    "core": [
+      "console input with input()",
+      "text output with print()",
+      "prompts, separators, line endings, and standard streams"
+    ],
+    "supporting": [
+      "the fact that input() returns text",
+      "a small input-process-output interaction"
+    ],
+    "outOfScope": [
+      "running a REPL or script",
+      "detailed type conversion",
+      "file input/output",
+      "exception-handling policy",
+      "format-string techniques"
+    ]
   },
   "claims": [
-    {"claim":"When a prompt is supplied, input() writes it to standard output without a trailing newline, reads a line, removes the trailing newline, and returns a string.","claimType":"TECHNICAL","sourceIds":["python-docs-builtins-input-print"],"status":"supported"},
-    {"claim":"input() raises EOFError when it reads end-of-file.","claimType":"TECHNICAL","sourceIds":["python-docs-builtins-input-print"],"status":"supported"},
-    {"claim":"print() converts positional objects to text, separates them with its sep value, and follows them with its end value; the defaults are a space and a newline.","claimType":"TECHNICAL","sourceIds":["python-docs-builtins-input-print"],"status":"supported"},
-    {"claim":"By default, print() writes to sys.stdout, while sys.stdin is used for interactive input and input() prompts use stdout.","claimType":"TECHNICAL","sourceIds":["python-docs-builtins-input-print","python-docs-sys-stdio"],"status":"supported"},
-    {"claim":"The sep, end, file, and flush arguments of print() are keyword arguments; sep and end must be strings or None.","claimType":"TECHNICAL","sourceIds":["python-docs-builtins-input-print"],"status":"supported"},
-    {"claim":"Because input() returns text, a program should make the intended interpretation explicit before using an entered value as a number; the conversion details belong to a separate lesson.","claimType":"TECHNICAL","sourceIds":["python-docs-builtins-input-print"],"status":"supported"}
+    {
+      "claim": "When a prompt is supplied, input() writes it to standard output without a trailing newline, reads a line, removes the trailing newline, and returns a string.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-builtins-conversion"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "input() raises EOFError when it reads end-of-file.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-builtins-conversion"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "print() converts positional objects to text, separates them with its sep value, and follows them with its end value; the defaults are a space and a newline.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-builtins-conversion"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "By default, print() writes to sys.stdout, while sys.stdin is used for interactive input and input() prompts use stdout.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-builtins-conversion",
+        "python-docs-sys-stdio"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The sep, end, file, and flush arguments of print() are keyword arguments; sep and end must be strings or None.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-builtins-conversion"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Because input() returns text, a program should make the intended interpretation explicit before using an entered value as a number; the conversion details belong to a separate lesson.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-builtins-conversion"
+      ],
+      "status": "supported"
+    }
   ],
   "conflictingEvidence": [],
-  "unsupportedExistingClaims": ["The generated draft did not explain Python input(), print(), standard streams, or the text return type of input()."],
-  "correctionsNeeded": ["Replaced generic boilerplate with source-verified Python 3 behavior and an executable console interaction.", "Separated prompt/output fundamentals from REPL execution, explicit conversion, files, and exception handling."],
-  "rightsIssues": ["Official Python documentation was used as reference-only material. All explanatory prose and examples are original; no source prose was adapted."],
+  "unsupportedExistingClaims": [
+    "The generated draft did not explain Python input(), print(), standard streams, or the text return type of input()."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic boilerplate with source-verified Python 3 behavior and an executable console interaction.",
+    "Separated prompt/output fundamentals from REPL execution, explicit conversion, files, and exception handling."
+  ],
+  "rightsIssues": [
+    "Official Python documentation was used as reference-only material. All explanatory prose and examples are original; no source prose was adapted."
+  ],
   "sourceRecords": [
-    {"id":"python-docs-builtins-input-print","title":"Built-in Functions: input and print — Python 3 documentation","provider":"Python Software Foundation","url":"https://docs.python.org/3/library/functions.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Official built-in-function documentation read directly at the input and print entries. Supports prompt behavior, input's string return value and EOFError, print's conversion, separator, ending, stream, and flush behavior. Facts synthesized; no wording reproduced."},
-    {"id":"python-docs-sys-stdio","title":"sys — System-specific parameters and functions: stdin, stdout, stderr — Python 3 documentation","provider":"Python Software Foundation","url":"https://docs.python.org/3/library/sys.html#sys.stdin","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Official sys documentation read directly. Supports the roles of stdin, stdout, and stderr, including input(), print(), and prompts. Facts synthesized; no wording reproduced."}
+    {
+      "id": "python-docs-builtins-conversion",
+      "title": "Built-in Functions: input and print — Python 3 documentation",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/library/functions.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Official built-in-function documentation read directly at the input and print entries. Supports prompt behavior, input's string return value and EOFError, print's conversion, separator, ending, stream, and flush behavior. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "python-docs-sys-stdio",
+      "title": "sys — System-specific parameters and functions: stdin, stdout, stderr — Python 3 documentation",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/library/sys.html#sys.stdin",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Official sys documentation read directly. Supports the roles of stdin, stdout, and stderr, including input(), print(), and prompts. Facts synthesized; no wording reproduced."
+    }
   ]
 }

@@ -3,25 +3,129 @@
   "subjectId": "python-programming",
   "researchedAt": "2026-08-19",
   "scope": {
-    "core": ["conditional decision making", "Boolean conditions", "comparison results", "two-way choice", "conditional expressions"],
-    "supporting": ["truth-value testing", "evaluation order", "boundary cases"],
-    "outOfScope": ["detailed if/elif/else statement syntax", "operator catalog", "loops", "exception handling", "pattern matching"]
+    "core": [
+      "conditional decision making",
+      "Boolean conditions",
+      "comparison results",
+      "two-way choice",
+      "conditional expressions"
+    ],
+    "supporting": [
+      "truth-value testing",
+      "evaluation order",
+      "boundary cases"
+    ],
+    "outOfScope": [
+      "detailed if/elif/else statement syntax",
+      "operator catalog",
+      "loops",
+      "exception handling",
+      "pattern matching"
+    ]
   },
   "claims": [
-    {"claim": "A Python comparison produces a Boolean value.", "claimType": "TECHNICAL", "sourceIds": ["python-language-reference-expressions"], "status": "supported"},
-    {"claim": "Python uses truth-value testing when an expression is used in a Boolean context.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-stdtypes", "python-language-reference-expressions"], "status": "supported"},
-    {"claim": "A conditional decision selects one outcome when its condition is true and another when it is false.", "claimType": "TECHNICAL", "sourceIds": ["python-tutorial-controlflow", "python-language-reference-expressions"], "status": "supported"},
-    {"claim": "Python's conditional expression has the form x if condition else y and evaluates the condition before selecting one of the two expressions.", "claimType": "TECHNICAL", "sourceIds": ["python-language-reference-expressions"], "status": "supported"},
-    {"claim": "The expression not x produces a Boolean truth-test result, while and and or can return one of their operands.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-stdtypes", "python-language-reference-expressions"], "status": "supported"},
-    {"claim": "The official tutorial presents if/elif/else mechanics; detailed branch syntax is deliberately reserved for the adjacent lesson.", "claimType": "TECHNICAL", "sourceIds": ["python-tutorial-controlflow"], "status": "supported"}
+    {
+      "claim": "A Python comparison produces a Boolean value.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-language-reference-expressions"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Python uses truth-value testing when an expression is used in a Boolean context.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-stdtypes",
+        "python-language-reference-expressions"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A conditional decision selects one outcome when its condition is true and another when it is false.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-controlflow",
+        "python-language-reference-expressions"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Python's conditional expression has the form x if condition else y and evaluates the condition before selecting one of the two expressions.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-language-reference-expressions"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The expression not x produces a Boolean truth-test result, while and and or can return one of their operands.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-stdtypes",
+        "python-language-reference-expressions"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The official tutorial presents if/elif/else mechanics; detailed branch syntax is deliberately reserved for the adjacent lesson.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-tutorial-controlflow"
+      ],
+      "status": "supported"
+    }
   ],
   "conflictingEvidence": [],
-  "unsupportedExistingClaims": ["The generated draft supplied generic prose rather than a sourced explanation of Python conditional decisions."],
-  "correctionsNeeded": ["Replaced boilerplate with a precise decision model, executable examples, and a distinction between Boolean conditions and selected outcomes.", "Kept detailed if/elif/else syntax out of scope for its dedicated sibling topic."],
-  "rightsIssues": ["Official Python documentation was used as reference-only; all lesson prose and examples are original synthesis."],
+  "unsupportedExistingClaims": [
+    "The generated draft supplied generic prose rather than a sourced explanation of Python conditional decisions."
+  ],
+  "correctionsNeeded": [
+    "Replaced boilerplate with a precise decision model, executable examples, and a distinction between Boolean conditions and selected outcomes.",
+    "Kept detailed if/elif/else syntax out of scope for its dedicated sibling topic."
+  ],
+  "rightsIssues": [
+    "Official Python documentation was used as reference-only; all lesson prose and examples are original synthesis."
+  ],
   "sourceRecords": [
-    {"id": "python-docs-stdtypes", "title": "Built-in Types — Python 3 documentation", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/library/stdtypes.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-19", "notes": "Live official documentation read for truth-value testing and Boolean-operation behavior. Used as reference only."},
-    {"id": "python-language-reference-expressions", "title": "The Python Language Reference — 6. Expressions (Operator precedence)", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/reference/expressions.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-19", "notes": "Live official language-reference page read for comparison results, Boolean contexts, and conditional-expression evaluation. Used as reference only."},
-    {"id": "python-tutorial-controlflow", "title": "The Python Tutorial — 4. More Control Flow Tools (if Statements)", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/tutorial/controlflow.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-19", "notes": "Live official tutorial read for the role of conditional statements in Python control flow. Used as reference only; this lesson intentionally does not teach its detailed syntax."}
+    {
+      "id": "python-docs-stdtypes",
+      "title": "Built-in Types — Python 3 documentation",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/library/stdtypes.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Live official documentation read for truth-value testing and Boolean-operation behavior. Used as reference only."
+    },
+    {
+      "id": "python-language-reference-expressions",
+      "title": "The Python Language Reference — 6. Expressions (Operator precedence)",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/reference/expressions.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Live official language-reference page read for comparison results, Boolean contexts, and conditional-expression evaluation. Used as reference only."
+    },
+    {
+      "id": "python-tutorial-controlflow",
+      "title": "The Python Tutorial — 4. More Control Flow Tools (if Statements)",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/tutorial/controlflow.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Live official tutorial read for the role of conditional statements in Python control flow. Used as reference only; this lesson intentionally does not teach its detailed syntax."
+    }
   ]
 }

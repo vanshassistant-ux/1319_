@@ -1,19 +1,118 @@
 {
-  "topicId":"python-programming:foundations:type-conversion", "subjectId":"python-programming", "researchedAt":"2026-08-19",
-  "scope":{"core":["Explicit int(), float(), str(), and bool() conversion", "Suitable numeric strings and predictable ValueError", "Nonempty-string behavior of bool()"],"supporting":["Checking the target type", "Input-format contracts"],"outOfScope":["Arithmetic (Numbers)", "String sequence operations (Strings)", "Full truth testing (Booleans)", "Input/output and exception-handling patterns"]},
-  "claims":[
-    {"claim":"int(), float(), str(), and bool() are built-in type constructors whose calls can explicitly create values of their target types.","claimType":"TECHNICAL","sourceIds":["python-docs-builtins-conversion"],"status":"supported"},
-    {"claim":"int('42') returns an integer, while int('6.25') raises ValueError because decimal text is not an integer literal.","claimType":"TECHNICAL","sourceIds":["python-docs-builtins-conversion"],"status":"supported","verification":"Executed with python3 on 2026-08-19."},
-    {"claim":"float('6.25') returns a float, while unsuitable numeric text such as 'not-a-number' raises ValueError.","claimType":"TECHNICAL","sourceIds":["python-docs-builtins-conversion"],"status":"supported","verification":"Executed with python3 on 2026-08-19."},
-    {"claim":"str(19) creates the string '19', and str(7.0) creates '7.0'.","claimType":"TECHNICAL","sourceIds":["python-docs-builtins-conversion","python-docs-stdtypes"],"status":"supported","verification":"Executed with python3 on 2026-08-19."},
-    {"claim":"bool('') is False and bool('False') is True because the latter string is nonempty.","claimType":"TECHNICAL","sourceIds":["python-docs-builtins-conversion","python-docs-stdtypes"],"status":"supported","verification":"Executed with python3 on 2026-08-19."},
-    {"claim":"bool is a subclass of int, although Boolean values are conventionally used to represent truth values.","claimType":"TECHNICAL","sourceIds":["python-docs-stdtypes"],"status":"supported"}
+  "topicId": "python-programming:foundations:type-conversion",
+  "subjectId": "python-programming",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Explicit int(), float(), str(), and bool() conversion",
+      "Suitable numeric strings and predictable ValueError",
+      "Nonempty-string behavior of bool()"
+    ],
+    "supporting": [
+      "Checking the target type",
+      "Input-format contracts"
+    ],
+    "outOfScope": [
+      "Arithmetic (Numbers)",
+      "String sequence operations (Strings)",
+      "Full truth testing (Booleans)",
+      "Input/output and exception-handling patterns"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "int(), float(), str(), and bool() are built-in type constructors whose calls can explicitly create values of their target types.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-builtins-conversion"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "int('42') returns an integer, while int('6.25') raises ValueError because decimal text is not an integer literal.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-builtins-conversion"
+      ],
+      "status": "supported",
+      "verification": "Executed with python3 on 2026-08-19."
+    },
+    {
+      "claim": "float('6.25') returns a float, while unsuitable numeric text such as 'not-a-number' raises ValueError.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-builtins-conversion"
+      ],
+      "status": "supported",
+      "verification": "Executed with python3 on 2026-08-19."
+    },
+    {
+      "claim": "str(19) creates the string '19', and str(7.0) creates '7.0'.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-builtins-conversion",
+        "python-docs-stdtypes"
+      ],
+      "status": "supported",
+      "verification": "Executed with python3 on 2026-08-19."
+    },
+    {
+      "claim": "bool('') is False and bool('False') is True because the latter string is nonempty.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-builtins-conversion",
+        "python-docs-stdtypes"
+      ],
+      "status": "supported",
+      "verification": "Executed with python3 on 2026-08-19."
+    },
+    {
+      "claim": "bool is a subclass of int, although Boolean values are conventionally used to represent truth values.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "python-docs-stdtypes"
+      ],
+      "status": "supported"
+    }
   ],
-  "conflictingEvidence":[], "unsupportedExistingClaims":["The generated draft was generic boilerplate with no technical conversion behavior, source support, or executable example."],
-  "correctionsNeeded":["Replaced circular vocabulary with documented type definitions.","Added executed examples and ValueError boundaries.","Added the distinction between Boolean conversion and parsing words such as 'False'."],
-  "rightsIssues":["Python documentation was used as REFERENCE_ONLY. All lesson prose is original synthesis; no documentation prose was reproduced."],
-  "sourceRecords":[
-    {"id":"python-docs-builtins-conversion","title":"Built-in Functions — Python 3 documentation","provider":"Python Software Foundation","url":"https://docs.python.org/3/library/functions.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Official built-in-function documentation read directly on 2026-08-19, including bool(), float(), int(), and str(). Supports their construction behavior and ValueError conditions. Facts synthesized; no wording reproduced."},
-    {"id":"python-docs-stdtypes","title":"Built-in Types — Python 3 documentation","provider":"Python Software Foundation","url":"https://docs.python.org/3/library/stdtypes.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Existing canonical registry record; read directly on 2026-08-19. Supports numeric types, strings, truth-value testing, and bool's relationship to int. Facts synthesized; no wording reproduced."}
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [
+    "The generated draft was generic boilerplate with no technical conversion behavior, source support, or executable example."
+  ],
+  "correctionsNeeded": [
+    "Replaced circular vocabulary with documented type definitions.",
+    "Added executed examples and ValueError boundaries.",
+    "Added the distinction between Boolean conversion and parsing words such as 'False'."
+  ],
+  "rightsIssues": [
+    "Python documentation was used as REFERENCE_ONLY. All lesson prose is original synthesis; no documentation prose was reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "python-docs-builtins-conversion",
+      "title": "Built-in Functions — Python 3 documentation",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/library/functions.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Official built-in-function documentation read directly on 2026-08-19, including bool(), float(), int(), and str(). Supports their construction behavior and ValueError conditions. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "python-docs-stdtypes",
+      "title": "Built-in Types — Python 3 documentation",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/library/stdtypes.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Existing canonical registry record; read directly on 2026-08-19. Supports numeric types, strings, truth-value testing, and bool's relationship to int. Facts synthesized; no wording reproduced."
+    }
   ]
 }
