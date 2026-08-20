@@ -88,7 +88,7 @@ An estimate is a transparent, conditional approximation rather than a certainty 
 
 ## Practice Question Bank
 
-1. **Which statement best defines a project estimate?**
+1. **How should a forecast of project cost, duration, or effort be interpreted?**
    - A. A contractual promise to deliver a fixed outcome.
    - B. A final number that cannot change once recorded.
    - C. A reasoned approximation based on available information and assumptions. **Correct.**

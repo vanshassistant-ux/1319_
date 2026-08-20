@@ -91,7 +91,7 @@ Agile is a disciplined way to learn through small useful results, feedback, and 
 
 ## Practice Question Bank
 
-1. **Which statement best describes agile in this lesson?**
+1. **Which approach reflects adaptive, feedback-informed project work?**
    - A. A single required process with fixed roles and meetings.
    - B. An approach that eliminates planning once work begins.
    - C. A family of adaptive approaches that uses feedback and adjustment to guide work. **Correct.**

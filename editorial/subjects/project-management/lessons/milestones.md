@@ -90,7 +90,7 @@ Milestones make meaningful project states visible. Separate them from tasks and 
 
 ## Practice Question Bank
 
-1. **Which item is most clearly a milestone?**
+1. **Which schedule entry marks a significant point rather than work to be performed?**
    - A. Write the workshop handout.
    - B. The workshop handout file.
    - C. Accessibility feedback reviewed and summarized. **Correct.**

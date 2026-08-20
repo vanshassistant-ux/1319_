@@ -99,7 +99,7 @@ Project closure makes a temporary effort end responsibly: establish what is comp
 
 ## Practice Question Bank
 
-1. **Which statement best describes project closure?**
+1. **What set of activities completes a project after its work is finished or ended?**
    - A. A team celebration held whenever a task list is empty.
    - B. A prediction that a delivered result will create all expected benefits.
    - C. Deliberate work to establish completion, acceptance, transition, closeout status, and retained records. **Correct.**

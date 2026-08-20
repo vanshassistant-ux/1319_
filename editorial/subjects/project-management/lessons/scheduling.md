@@ -89,7 +89,7 @@ A schedule makes a project’s current time plan visible through activities, est
 
 ## Practice Question Bank
 
-1. **Which description best fits a project schedule?**
+1. **What does a time-based project plan represent?**
    - A. A time-based representation of planned activities and significant events. **Correct.**
    - B. A guarantee that all work will finish on the displayed date.
    - C. An unordered collection of possible project ideas.
