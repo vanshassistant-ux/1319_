@@ -1,0 +1,154 @@
+# Reconstruction
+
+## In 30 Seconds
+
+Reconstruction was the era after the Civil War, roughly 1865 to 1877, when the United States tried to rebuild the South and define the place of about four million newly freed people. Three amendments abolished slavery, granted birthright citizenship and equal protection, and barred racial denial of the vote. Black men voted and held office, and freedpeople built schools and churches. But violent white resistance, the Ku Klux Klan, and the disputed 1876 election ended the effort, opening the way to segregation and Jim Crow.
+
+## Why This Matters
+
+Reconstruction was the nation's first serious experiment in multiracial democracy, and its Thirteenth, Fourteenth, and Fifteenth Amendments still anchor American civil-rights law today. Studying it honestly shows both what freedpeople achieved in a few years, voting, holding office, founding institutions, and how organized violence and a political bargain rolled those gains back. The period explains why segregation and disenfranchisement took hold for nearly a century, and why the civil-rights movement of the twentieth century described itself as finishing unfinished business. It also teaches a durable lesson: rights written into law still require enforcement to be real.
+
+## Learning Objectives
+
+- Explain what the Thirteenth, Fourteenth, and Fifteenth Amendments each established, with their ratification years.
+- Describe the concrete gains freedpeople made during Reconstruction, including voting, officeholding, and the Freedmen's Bureau.
+- Distinguish Presidential Reconstruction from Radical (Congressional) Reconstruction.
+- Explain how Black Codes, the Ku Klux Klan, and organized violence worked to restore white supremacy.
+- Analyze how the disputed 1876 election and the Compromise of 1877 ended Reconstruction and led toward Jim Crow.
+
+## The College Version
+
+### A constitutional revolution: the three Reconstruction Amendments
+
+The Civil War ended slavery as a fact on the ground, but it took constitutional change to end it in law and to define what freedom would mean. Three amendments, ratified in quick succession, remade the Constitution. The Thirteenth Amendment, ratified December 6, 1865, abolished slavery and involuntary servitude throughout the United States, except as punishment for a crime. That exception clause mattered: Southern states would later exploit it through convict labor. The Fourteenth Amendment, ratified July 9, 1868, was the most sweeping. It established birthright citizenship, declaring that all persons born or naturalized in the United States are citizens, overturning the 1857 Dred Scott decision, and it guaranteed every person the due process of law and the equal protection of the laws. The Fifteenth Amendment, ratified February 3, 1870, barred the denial of the vote on account of race, color, or previous condition of servitude. Together the three are sometimes called the "second founding," because they shifted the balance of power toward the national government and made the federal Constitution, for the first time, a guarantor of individual rights against the states. Crucially, though, the Fifteenth Amendment left a gap: it did not ban literacy tests or poll taxes, which Southern states would later use to disenfranchise Black voters while claiming to obey the letter of the law.
+
+### Presidential Reconstruction and the Black Codes
+
+Reconstruction began even before the war ended. President Abraham Lincoln's wartime Ten Percent Plan (1863) offered a lenient path back for Southern states, and in March 1865 Congress created the Bureau of Refugees, Freedmen, and Abandoned Lands, the Freedmen's Bureau, inside the War Department. After Lincoln's assassination in April 1865, President Andrew Johnson, a Southern Democrat, pursued a lenient restoration of his own, issuing broad pardons and letting former Confederate leaders return to power. Under Johnson's plan, the newly reconstituted Southern legislatures promptly passed the Black Codes in 1865 and 1866, laws designed to reproduce the conditions of slavery without the name. The codes forced freedpeople into restrictive labor contracts, punished those who left an employer as vagrants, barred them from serving on juries or owning firearms, and in some places restricted their right to rent or own land. Northern Republicans in Congress were alarmed that the war's outcome was being undone. They responded with the Civil Rights Act of 1866, which affirmed Black citizenship and passed over Johnson's veto, and then wrote its principles into the Fourteenth Amendment so that a future Congress or court could not simply repeal them. The clash between a lenient president and a Republican Congress set the stage for a far more assertive phase.
+
+### Radical Reconstruction and the fragile gains
+
+In 1867 Congress seized control of Reconstruction from President Johnson. The Reconstruction Acts divided ten former Confederate states into five military districts under federal troops and required each state to write a new constitution and ratify the Fourteenth Amendment before its representatives could return to Congress. These acts also enfranchised Black men. The result was a brief, remarkable flowering of Black political life. Freedmen registered and voted in large numbers, and hundreds of Black men won office as local officials, state legislators, and members of Congress. Hiram Revels of Mississippi became the first Black U.S. senator in 1870, and Blanche K. Bruce, also of Mississippi, served a full Senate term. When Johnson obstructed Congress and violated the Tenure of Office Act, the House impeached him in 1868; the Senate acquitted him by a single vote. Beyond politics, freedpeople built the institutions of a free community with striking speed. They founded independent Black churches, and, working with the Freedmen's Bureau and Northern aid societies, they established thousands of schools; the drive for literacy among people the law had recently forbidden to read was one of the era's defining achievements. The Freedmen's Bureau also negotiated labor contracts, distributed food and medical care, and helped legalize marriages formed under slavery, though it was always underfunded and largely wound down by the end of 1868, closing in 1872.
+
+### White backlash and racial terror
+
+These gains provoked fierce and often violent resistance. White Southerners who rejected Black citizenship organized both politically and through terror. The Ku Klux Klan, founded in 1866 by former Confederates, grew into a paramilitary force that used intimidation, arson, whipping, and murder to drive Black men from the polls and to punish Black success and its white allies. Other groups, such as the White League and the Red Shirts, operated openly as the armed wing of the Democratic Party in the 1870s. The violence was not random; it was aimed at destroying Black political power. Congress fought back for a time with the Enforcement Acts of 1870 and 1871, including the Ku Klux Klan Act, which let the federal government prosecute conspiracies to deny civil rights and briefly suppressed the Klan. But federal will faded. Northern voters grew weary of the expense and the recurring crises, the Republican Party split, and an economic depression after the Panic of 1873 turned attention elsewhere. One by one, Southern Democrats, calling themselves "Redeemers," regained control of state governments, often through fraud and violence, and set about dismantling Reconstruction from within.
+
+### The disputed election of 1876 and the end of Reconstruction
+
+Reconstruction ended in a contested presidential election. In 1876 Democrat Samuel Tilden won the popular vote over Republican Rutherford B. Hayes, but the electoral votes of three Southern states still under Republican governments, plus one Oregon vote, were disputed, leaving the outcome unresolved. With no constitutional procedure to settle it, Congress created a fifteen-member electoral commission that voted 8 to 7 along party lines to award every disputed vote, and the presidency, to Hayes. To secure Democratic acceptance, Republican and Democratic leaders reached the informal Compromise of 1877: Hayes would take office, and the remaining federal troops would be withdrawn from the South. Their departure removed the last protection for Reconstruction governments, and the Redeemers completed their takeover, creating the one-party "Solid South." What followed was not a sudden collapse but a steady rollback. Southern states used literacy tests, poll taxes, and outright violence to strip Black men of the vote, and by the 1890s they were building the formal system of racial segregation known as Jim Crow, which the Supreme Court blessed as "separate but equal" in Plessy v. Ferguson (1896). Reconstruction is best understood not as a doomed "tragic era" but as a genuine and unfinished attempt at multiracial democracy: its achievements were real, its defeat was engineered, and the amendments it added would become the legal foundation for the civil-rights struggles of the next century.
+
+## Key Vocabulary
+
+- **Reconstruction** — The period from about 1865 to 1877 when the United States rebuilt the South after the Civil War and worked out the legal status of roughly four million newly freed people.
+- **Thirteenth Amendment** — The 1865 constitutional amendment that abolished slavery and involuntary servitude in the United States, except as punishment for a crime.
+- **Fourteenth Amendment** — The 1868 amendment that granted birthright citizenship and guaranteed all persons due process and the equal protection of the laws.
+- **Fifteenth Amendment** — The 1870 amendment barring the denial of the vote on account of race, color, or previous condition of servitude; it did not prohibit literacy tests or poll taxes.
+- **Freedmen's Bureau** — The federal agency (the Bureau of Refugees, Freedmen, and Abandoned Lands), created in 1865, that provided food, schools, medical care, and legal aid to freedpeople and refugees.
+- **Black Codes** — State laws passed across the South in 1865-1866 that restricted freedpeople's labor, movement, and rights in order to recreate the conditions of slavery.
+- **Radical (Congressional) Reconstruction** — The phase beginning in 1867 in which Congress took control, placed the South under military districts, and required Black male suffrage and ratification of the Fourteenth Amendment.
+- **Ku Klux Klan** — A white-supremacist terrorist organization founded in 1866 that used violence and intimidation to suppress Black voting and political power.
+- **Compromise of 1877** — The informal bargain that resolved the disputed 1876 election by making Rutherford B. Hayes president in exchange for withdrawing the last federal troops from the South, ending Reconstruction.
+- **Jim Crow** — The system of state and local laws enforcing racial segregation and Black disenfranchisement that took hold across the South after Reconstruction.
+
+## Eli-10
+
+After the Civil War freed about four million enslaved people, the country had to decide what freedom would actually mean. The government added three big rules to the Constitution: slavery was over, everyone born here is a citizen who must be treated equally, and no one can be blocked from voting because of their race. For a while it worked: Black men voted and were elected to office, and freed families built their own schools and churches. But many white Southerners fought back with unfair laws and with violence from groups like the Ku Klux Klan. After a close, disputed election in 1876, the government pulled its soldiers out of the South, and the people trying to restore white control took over. Segregation and voting barriers followed and lasted for generations.
+
+## Eli's Analogy
+
+Think of a school that finally writes fair rules saying every student can join any club and vote in student council. At first it works and new students lead clubs they were once shut out of. But some older students bully and threaten the newcomers, and when the teachers who enforced the rules leave the hallway, the bullies quietly take the clubs back, even though the fair rules are still written down.
+
+**Where the analogy breaks down:** The analogy shrinks a national tragedy to a schoolyard. Real Reconstruction involved organized deadly violence, not bullying, and the harm to millions of people lasted for nearly a century. And unlike a temporary hallway, the loss of federal protection was a deliberate political bargain, not a teacher simply stepping away.
+
+## Worked Example
+
+Trace how a written right can fail without enforcement. In 1870 the Fifteenth Amendment made it illegal to deny a man the vote because of his race, and across the South Black men registered and cast ballots, electing sheriffs, legislators, and members of Congress. Now follow the mechanics of the rollback. The amendment said nothing about literacy tests or poll taxes, so a state could require every voter to pass a reading test or pay a fee, rules that were race-neutral on paper but applied to shut out Black voters in practice. Add the threat of Klan violence at the polls, and then remove the federal troops who might intervene, as the Compromise of 1877 did. The right on the page never changed, yet by the 1890s Black turnout in much of the South had been crushed. The example shows why historians say a legal right is only as strong as the willingness to enforce it.
+
+## Common Mistakes
+
+- **Mistake:** Thinking the Thirteenth Amendment gave freed people citizenship and voting rights.
+  **Correction:** The Thirteenth (1865) only abolished slavery. Citizenship and equal protection came with the Fourteenth (1868), and the vote regardless of race with the Fifteenth (1870).
+- **Mistake:** Describing Reconstruction as a total failure or a "tragic era" imposed on a helpless South.
+  **Correction:** Reconstruction produced real gains, Black voting, officeholding, schools, and churches, and lasting amendments. It was defeated by organized violence and a political bargain, not doomed from the start.
+- **Mistake:** Confusing Presidential Reconstruction with Radical (Congressional) Reconstruction.
+  **Correction:** Presidential Reconstruction under Lincoln and Johnson was lenient and allowed the Black Codes; Radical Reconstruction after 1867 put Congress in charge, used military districts, and enfranchised Black men.
+- **Mistake:** Believing federal troops occupied the South for decades after the war.
+  **Correction:** Federal enforcement was always limited and faded through the 1870s; the last troops protecting Reconstruction governments were withdrawn under the Compromise of 1877.
+- **Mistake:** Assuming the Fifteenth Amendment guaranteed Black Southerners the vote permanently.
+  **Correction:** It barred denial "on account of race," but left openings, literacy tests and poll taxes, that states used to disenfranchise Black voters while formally complying.
+
+## Compare / Contrast
+
+- **Presidential Reconstruction (1865-1867)** vs **Radical Reconstruction (1867-1877):** Presidential Reconstruction under Lincoln and Johnson was lenient toward former Confederates and permitted the Black Codes; Radical Reconstruction put Congress in charge, imposed military districts, and required Black male suffrage and Fourteenth Amendment ratification.
+- **Fourteenth Amendment** vs **Fifteenth Amendment:** The Fourteenth (1868) established citizenship, due process, and equal protection for all persons; the Fifteenth (1870) specifically barred denying the vote on account of race, color, or previous servitude.
+- **Black Codes (1865-1866)** vs **Jim Crow laws (1890s onward):** Black Codes were early state laws to control freedpeople's labor and rights immediately after emancipation; Jim Crow was the later, fuller system of legal segregation and disenfranchisement that followed the end of Reconstruction.
+
+## Key Takeaway
+
+Reconstruction was a genuine but unfinished experiment in multiracial democracy: the Thirteenth, Fourteenth, and Fifteenth Amendments abolished slavery and promised citizenship, equality, and the vote, and freedpeople briefly held office and built institutions, but organized white violence and the Compromise of 1877 ended federal protection and opened the way to Jim Crow.
+
+## Practice Question Bank
+
+1. **Which Reconstruction amendment established birthright citizenship and guaranteed all persons the equal protection of the laws?**
+   - A. The Fourteenth Amendment (1868)
+   - B. The Thirteenth Amendment (1865)
+   - C. The Fifteenth Amendment (1870)
+   - D. The Nineteenth Amendment (1920)
+
+   **Answer: A.** The Fourteenth Amendment (1868) made all persons born or naturalized in the United States citizens and guaranteed due process and equal protection. The Thirteenth abolished slavery, the Fifteenth barred racial denial of the vote, and the Nineteenth (well after Reconstruction) extended the vote to women.
+
+2. **What was the main purpose of the Freedmen's Bureau, created by Congress in 1865?**
+   - A. To organize the Ku Klux Klan's suppression by the U.S. Army
+   - B. To draft the Fourteenth and Fifteenth Amendments
+   - C. To manage the withdrawal of federal troops from the South
+   - D. To provide freedpeople and refugees with food, schools, medical care, and legal aid
+
+   **Answer: D.** The Bureau of Refugees, Freedmen, and Abandoned Lands distributed rations, helped establish schools, ran hospitals, supervised labor contracts, and offered legal aid to freedpeople. It did not write the amendments, manage troop withdrawal, or exist to suppress the Klan.
+
+3. **What were the Black Codes that Southern states passed in 1865 and 1866?**
+   - A. Federal laws that guaranteed freedpeople the right to vote
+   - B. Rules written by the Freedmen's Bureau to fund Black schools
+   - C. State laws restricting freedpeople's labor, movement, and rights to recreate the conditions of slavery
+   - D. Constitutional amendments protecting formerly enslaved people
+
+   **Answer: C.** The Black Codes were state laws that forced freedpeople into restrictive labor contracts, punished those who left employers as vagrants, and barred them from juries, firearms, and in places land. Congress responded with the Civil Rights Act of 1866 and the Fourteenth Amendment.
+
+4. **A Southern state in the 1890s wants to keep Black men from voting without openly violating the Fifteenth Amendment. Which approach best fits that goal?**
+   - A. Passing a state law that explicitly bans Black citizens from voting
+   - B. Requiring a literacy test and a poll tax that are race-neutral on paper but used to exclude Black voters
+   - C. Repealing the Fifteenth Amendment within the state
+   - D. Ordering federal troops to guard the polls
+
+   **Answer: B.** The Fifteenth Amendment barred denying the vote "on account of race" but said nothing about literacy tests or poll taxes, so states used those ostensibly neutral requirements to disenfranchise Black voters. An explicit racial ban would violate it directly, a state cannot repeal a federal amendment, and federal troops would have protected Black voting.
+
+5. **How did the disputed 1876 election and the Compromise of 1877 bring Reconstruction to an end?**
+   - A. They added a new amendment that repealed Black citizenship
+   - B. They expanded the Freedmen's Bureau and sent more troops south
+   - C. They made Hayes president in exchange for withdrawing the last federal troops from the South, ending federal protection of Reconstruction governments
+   - D. They gave the disputed electoral votes to Tilden, who dismantled Reconstruction
+
+   **Answer: C.** An electoral commission awarded the disputed votes to Republican Rutherford B. Hayes, and the informal Compromise of 1877 secured Democratic acceptance by withdrawing the remaining federal troops from the South. Without that protection, Redeemer Democrats completed their takeover, opening the way to disenfranchisement and Jim Crow.
+
+## Sources
+
+- U.S. National Archives, "The Constitution: Amendments 11-27" — text and ratification dates of the 13th, 14th, and 15th Amendments. https://www.archives.gov/founding-docs/amendments-11-27
+- U.S. National Archives, "The Freedmen's Bureau" — the Bureau's official name, 1865 establishment, functions, and closure. https://www.archives.gov/research/african-americans/freedmens-bureau
+- OpenStax, *U.S. History*, Chapter 16: "The Era of Reconstruction, 1865-1877" (CC BY 4.0) — narrative, dates, and events of Reconstruction. https://openstax.org/books/us-history/pages/16-introduction
+- U.S. National Archives, "Plessy v. Ferguson (1896)" — the 1896 "separate but equal" decision anchoring the Jim Crow aftermath. https://www.archives.gov/milestone-documents/plessy-v-ferguson
+
+## Related Topics
+
+- history:foundations:civil-war
+- history:foundations:slavery
+- history:foundations:constitution
+- history:foundations:progressive-era
+- history:foundations:u-s-history-foundations
+
+## Editorial Metadata
+
+- **Editorial status:** READY_TO_PUBLISH
+- **Research status:** source-verified
+- **Rights status:** Public-domain U.S. government/primary sources plus CC BY 4.0 OER; no source prose reproduced.
+- **Researched at:** 2026-08-20
+- **Framing note:** Reconstruction is presented honestly as a genuine but unfinished experiment in multiracial democracy, centering freedpeople and stating the white-supremacist backlash factually; the Lost-Cause "tragic era" framing is rejected.
