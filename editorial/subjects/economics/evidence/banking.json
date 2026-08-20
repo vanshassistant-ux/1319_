@@ -1,0 +1,182 @@
+{
+  "topicId": "economics:foundations:banking",
+  "subjectId": "economics",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Banks as financial intermediaries between savers and borrowers",
+      "Bank balance sheet: assets (reserves, loans, bonds) vs liabilities (deposits) and net worth",
+      "Fractional-reserve banking and how lending creates money",
+      "The simple money multiplier (1/reserve ratio), a worked example, and real-world leakages",
+      "Bank runs: why they happen",
+      "Deposit insurance (FDIC, $250,000) as the safeguard"
+    ],
+    "supporting": [
+      "Net worth / bank capital and solvency",
+      "Money destruction when loans are repaid",
+      "Distinction between illiquidity and insolvency"
+    ],
+    "outOfScope": [
+      "What money is and its functions / M1 and M2 (economics:foundations:money)",
+      "The central bank as regulator and lender of last resort (economics:foundations:federal-reserve)",
+      "Monetary-policy tools such as open-market operations (economics:foundations:monetary-policy)",
+      "Personal financial or investment advice"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A bank is a financial intermediary that takes deposits from savers and lends to borrowers, standing between the two.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-macro-3e-role-of-banks"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "On a bank's balance sheet, assets include reserves, loans, and bonds, while deposits are liabilities; net worth (bank capital) equals assets minus liabilities.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openstax-macro-3e-role-of-banks"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Under fractional-reserve banking a bank holds only a fraction of deposits as reserves and lends the rest, and the banking system creates money as loans become new deposits.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-macro-3e-how-banks-create-money"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The simple money multiplier equals 1 divided by the reserve ratio; with a $10 million deposit and a 10 percent reserve ratio the multiplier is 10 and about $90 million in new money can be created, total deposits reaching $100 million.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "openstax-macro-3e-how-banks-create-money"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The real-world money multiplier is smaller than the simple version because people hold cash outside banks and banks hold excess reserves, both of which interrupt the re-deposit chain.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openstax-macro-3e-how-banks-create-money"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A bank run occurs when depositors, fearing the bank has or will have negative net worth, rush to withdraw; because reserves are fractional, even a solvent bank can be forced to close, and the fear can be self-fulfilling.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-macro-3e-bank-regulation"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Deposit insurance repays depositors even if their bank fails, removing the incentive to run; the FDIC was created in 1933.",
+      "claimType": "HISTORICAL",
+      "sourceIds": [
+        "openstax-macro-3e-bank-regulation",
+        "fdic-deposit-insurance"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Standard FDIC deposit insurance coverage is $250,000 per depositor, per insured bank, per ownership category.",
+      "claimType": "LEGAL",
+      "sourceIds": [
+        "fdic-deposit-insurance"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The $250,000 standard maximum deposit insurance amount was made permanent by the Dodd-Frank Act, effective July 22, 2010 (retroactive to January 1, 2008).",
+      "claimType": "LEGAL",
+      "sourceIds": [
+        "federal-register-2010-smdia-permanent"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [],
+  "correctionsNeeded": [
+    "No prior draft existed for this topic in lessons.json; the lesson was written from sources."
+  ],
+  "rightsIssues": [
+    "OpenStax Principles of Macroeconomics 3e is CC BY-NC-SA 4.0 (NonCommercial). Treated as REFERENCE_ONLY; no wording reproduced, all prose original."
+  ],
+  "sourceRecords": [
+    {
+      "id": "openstax-macro-3e-role-of-banks",
+      "title": "Principles of Macroeconomics 3e, 14.3 The Role of Banks",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/14-3-the-role-of-banks",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports banks as financial intermediaries and the balance-sheet structure (assets: reserves, loans, bonds; liabilities: deposits; net worth = bank capital). Read via WebFetch; NonCommercial license, so facts synthesized and prose written originally."
+    },
+    {
+      "id": "openstax-macro-3e-how-banks-create-money",
+      "title": "Principles of Macroeconomics 3e, 14.4 How Banks Create Money",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/14-4-how-banks-create-money",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports fractional-reserve money creation, the Singleton Bank example ($10M deposit, 10% reserve, $9M lent), the money multiplier = 1/reserve requirement (10x $9M = $90M), and leakages (cash held outside banks, excess reserves). Arithmetic independently verified in Bash."
+    },
+    {
+      "id": "openstax-macro-3e-bank-regulation",
+      "title": "Principles of Macroeconomics 3e, 15.2 Bank Regulation",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/15-2-bank-regulation",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the definition of a bank run (fear of negative net worth, self-fulfilling), why fractional reserves make even solvent banks vulnerable, and deposit insurance / lender of last resort as the two safeguards. Lender-of-last-resort detail handed off to the federal-reserve topic."
+    },
+    {
+      "id": "fdic-deposit-insurance",
+      "title": "Deposit Insurance",
+      "provider": "Federal Deposit Insurance Corporation (FDIC)",
+      "url": "https://www.fdic.gov/deposit-insurance",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "U.S. government source for the standard $250,000 coverage per depositor, per insured bank, per ownership category, and that coverage is automatic for deposit accounts. URL confirmed HTTP 200."
+    },
+    {
+      "id": "federal-register-2010-smdia-permanent",
+      "title": "Deposit Insurance Regulations; Permanent Increase in Standard Coverage Amount",
+      "provider": "Federal Register (FDIC final rule)",
+      "url": "https://www.federalregister.gov/documents/2010/08/13/2010-20008/deposit-insurance-regulations-permanent-increase-in-standard-coverage-amount-advertisement-of",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Primary U.S. government record that the Dodd-Frank Act permanently raised the standard maximum deposit insurance amount to $250,000, effective July 22, 2010 (retroactive to January 1, 2008). Used to date the FDIC limit. URL confirmed HTTP 200."
+    }
+  ]
+}
