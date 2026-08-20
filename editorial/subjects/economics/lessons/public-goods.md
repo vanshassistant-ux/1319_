@@ -1,0 +1,155 @@
+# Public Goods
+
+## In 30 Seconds
+
+A public good has two features. It is non-rival, meaning one person's use does not reduce what is left for anyone else, and non-excludable, meaning you cannot easily stop non-payers from enjoying it. National defense is the classic case. Because anyone can benefit without paying, people free-ride, and private markets under-provide these goods. That market failure is the standard reason governments fund them through taxes.
+
+## Why This Matters
+
+Public goods explain why some of the most valuable things in an economy will not appear in the right quantity if we leave them to buyers and sellers alone: national defense, basic research, a working legal system, clean air. Knowing what non-rivalry and non-excludability mean tells you when a market can be trusted to allocate a good and when it predictably fails. That distinction sits underneath real fights over taxes, government budgets, and how communities manage shared resources like fisheries and groundwater. It also gives you precise vocabulary — free-rider, common resource, club good — for arguments you will meet in policy, business, and everyday civic life.
+
+## Learning Objectives
+
+- Define the two properties that make a good public: non-rivalry and non-excludability.
+- Explain the free-rider problem and why it leads private markets to under-provide public goods.
+- Distinguish public goods from private goods, common resources, and club goods using the rivalry-by-excludability grid.
+- Apply the concept to classify real examples such as national defense, a lighthouse, and an ocean fishery.
+- Contrast Hardin's tragedy of the commons with Ostrom's finding that communities can self-govern shared resources.
+
+## The College Version
+
+### Two properties, not one
+
+Economists call a good "public" when it has two specific properties at the same time, and the two are easy to confuse. The first is non-rivalry. A good is non-rival when one person's use does not reduce the amount available to anyone else. If you watch a fireworks display, your neighbor sees exactly the same show; your viewing subtracts nothing from theirs. Contrast that with a slice of pizza, which is rival: every bite you take is a bite no one else can have. The second property is non-excludability. A good is non-excludable when it is costly or impossible to prevent someone from using it, and therefore hard to charge them for. Once a navy patrols the coast, it protects everyone within its reach, including people who paid no tax and even people who oppose the policy. A good is a public good only when both properties hold together. Drop either one and you are looking at a different kind of good, as the classification grid below makes clear. In practice both properties are matters of degree — a crowded park becomes a little rival, and a scrambled satellite signal becomes excludable — so "pure" public goods are the clean end of a spectrum rather than a strict on/off category.
+
+### The free-rider problem and market failure
+
+Non-excludability creates a predictable trap called the free-rider problem. If you cannot be excluded from a good whether or not you pay, your best individual move is to let everyone else pay and then enjoy it for free. The catch is that everyone reasons the same way, so voluntary contributions collapse and the good is never funded, even though every person would gladly have it. Imagine a neighborhood that would all benefit from a flood levee. Each household hopes the others will chip in; each holds back; the levee is never built. This is why competitive markets tend to under-provide public goods, and it is a genuine market failure — an outcome where self-interested trading leaves everyone worse off than they could be. The root cause is specifically non-excludability, not non-rivalry: a firm cannot run a profitable business selling something it cannot stop non-payers from taking. The standard remedy is collective financing. A government can require everyone to contribute through taxes and then supply the good, converting a situation nobody would voluntarily fund into one that gets built. Social pressure, philanthropy, and clever pricing sometimes solve smaller cases, but taxation is the usual answer for large public goods like defense.
+
+### Classic examples
+
+National defense is the cleanest example and the one textbooks reach for first. It is non-rival because protecting one resident does not leave less protection for the next, and non-excludable because a missile shield or a patrolling navy covers everyone in the territory regardless of who paid. A lighthouse is the traditional illustration: its beam warns every passing ship, one ship's use of the light does not dim it for the next, and the keeper cannot practically switch it off for a captain who did not pay. Public fireworks work the same way — visible to the whole town, undiminished by each extra spectator. Basic research is a subtler case: once a mathematical result or a fundamental discovery is published, anyone can build on it (non-rival) and it is hard to keep others from using the underlying knowledge (largely non-excludable), which is one reason governments and universities, rather than private firms alone, fund it. Fire and police services and public health surveillance are often grouped here too. Not every example is perfectly pure — some economists point out that lighthouses were at times funded through port fees — which is a useful reminder that excludability is a matter of degree.
+
+### The 2x2 classification of goods
+
+Public goods sit inside a larger scheme that sorts every good along two axes: is it rival, and is it excludable? Crossing those two yes/no questions gives four categories. Private goods are both rival and excludable — food, clothing, a haircut — and ordinary markets handle them well because sellers can charge and each unit goes to one buyer. Public goods are neither rival nor excludable — national defense — and markets under-provide them. Common resources (also called common goods or common-pool resources) are rival but non-excludable: ocean fish stocks, a shared aquifer, or a public grazing field. Anyone can take from them, but every fish caught is one less for someone else, which sets up overuse. Club goods, sometimes called artificially scarce goods, are the mirror image: non-rival but excludable, such as cable television, a subscription streaming service, or an uncongested toll road. One more viewer costs the provider almost nothing, yet the provider can still fence off non-payers. Naming the quadrant a good falls into tells you immediately whether to expect a market to work, a free-rider problem, or an overuse problem.
+
+| | Excludable | Non-excludable |
+| --- | --- | --- |
+| **Rival** | Private good (food, clothing) | Common resource (ocean fishery) |
+| **Non-rival** | Club good (cable TV, toll road) | Public good (national defense) |
+
+### Common resources: Hardin and Ostrom
+
+The common-resources quadrant has its own famous failure mode. In a 1968 article in the journal Science, Garrett Hardin popularized the phrase "the tragedy of the commons" to describe how a shared, non-excludable but rival resource gets overexploited: each user gains the full benefit of taking one more unit while the cost of depletion is spread across everyone, so each rationally overuses the resource until it collapses. Overfishing and groundwater depletion follow this logic. But the story is not deterministic. Elinor Ostrom won the 2009 Nobel Memorial Prize in Economic Sciences for her analysis of exactly this problem, and her fieldwork on Swiss alpine pastures, Philippine irrigation systems, and Maine lobster fisheries showed that communities frequently craft their own rules — quotas, monitoring, and graduated penalties — to manage a commons sustainably without either government takeover or full privatization. The lesson to take away is that public goods and common resources both stem from non-excludability, but they fail in different directions: public goods tend to be under-supplied, while common resources tend to be over-used. This is distinct from an externality, a separate market failure covered in its own topic, where a transaction imposes costs or benefits on third parties.
+
+## Key Vocabulary
+
+- **Public good** — A good that is both non-rival and non-excludable, which makes it hard for private sellers to supply through ordinary markets.
+- **Non-rival** — A property of a good for which one person's use does not reduce the amount available for others to use.
+- **Non-excludable** — A property of a good for which it is costly or impossible to prevent people from using it, and therefore hard to charge them for it.
+- **Free-rider problem** — The tendency of people to let others pay for a non-excludable good and then benefit without contributing, which can leave the good unfunded.
+- **Market failure** — A situation in which self-interested market trading produces an outcome that is worse for society than an achievable alternative.
+- **Private good** — A good that is both rival and excludable, such as food or clothing, which ordinary markets allocate well.
+- **Common resource** — A good that is rival but non-excludable, such as an ocean fishery, so that use by one person reduces what others can use even though no one can be shut out.
+- **Club good** — A good that is non-rival but excludable, such as cable television or a toll road, where extra users add little cost yet non-payers can be fenced out.
+- **Tragedy of the commons** — The overexploitation of a shared, non-excludable but rival resource because each user reaps the full gain from using more while the cost of depletion is shared by all; the phrase was popularized by Garrett Hardin in 1968.
+
+## Eli-10
+
+Some things are made once and then everybody can use them at the same time, and there is no good way to stop people who did not chip in. A fireworks show is like that: once it is in the sky, the whole town sees it, and you cannot hide it from someone who did not help pay. When something works this way, people wait for others to pay so they can watch for free. If everybody waits, the fireworks never get bought. So towns collect a little money from everyone through taxes and buy the show for the whole community. Big examples are the army that protects the country and a lighthouse that warns every ship.
+
+## Eli's Analogy
+
+A public good is like a campfire in a public park on a cold night. Once it is burning, your warmth does not steal any warmth from the person next to you, and you cannot really stop a stranger from standing near it to warm up. So nobody wants to be the one who buys the firewood — everyone hopes someone else will — and without a plan to share the cost, the fire never gets lit.
+
+**Where the analogy breaks down:** The campfire is not perfect. A real fire is a bit rival if the space around it gets crowded and people block each other, and you could in principle build a fence and charge admission, which a truly non-excludable good like national defense does not allow. Big public goods also cannot be funded by passing a hat around one park; they need something the size of a government collecting taxes.
+
+## Worked Example
+
+Suppose four neighbors would each value a shared security patrol at $30 a month, so the patrol is worth $120 a month to the group, and a company offers it for $80. The patrol is non-excludable — once it drives the street it deters break-ins at every house — and non-rival, since watching one house does not reduce the watching of another. Clearly the group should buy it: $120 of value for $80. But watch what each neighbor reasons individually. "If the other three pay the $80, I get protected for free, so I will contribute nothing. And if they do not pay, my $30 or even $80 alone cannot buy it, so again I should hold back." Every neighbor reasons the same way, each waits for the others, and the patrol that is plainly worth buying never gets funded. That gap between the $120 of value and the $0 that actually gets collected is the free-rider problem in miniature. The fix is to remove the choice to opt out: the four agree in advance to split the cost $20 each and bind themselves to pay, which is exactly what taxation does at the scale of a whole country for goods like national defense.
+
+## Common Mistakes
+
+- **Thinking a public good just means anything the government provides or pays for.** The label is about two economic properties — non-rivalry and non-excludability — not about who supplies it. Governments provide many rival, excludable private goods (like electricity or public housing), and some public goods have been provided privately. Judge the good by its properties, not its provider.
+- **Believing non-rivalry is what stops firms from selling a public good.** Non-excludability is the property that breaks the market. A firm cannot run a business if it cannot stop non-payers from consuming. Non-rivalry describes the sharing; non-excludability is why no one will pay.
+- **Confusing a public good with a common resource.** Both are non-excludable, but a common resource is rival — every fish caught is one fewer for others — so it tends to be over-used, while a public good is non-rival and tends to be under-supplied. The rivalry axis separates them.
+- **Treating the tragedy of the commons as inevitable.** Hardin described the risk, but Elinor Ostrom's Nobel-winning research showed communities often self-govern shared resources with rules, monitoring, and penalties, avoiding collapse without full privatization or government takeover.
+- **Lumping public goods together with externalities as the same market failure.** They are related but distinct. An externality is a cost or benefit spilling onto a third party outside a transaction; a public good problem is about non-excludable, non-rival goods that markets under-provide. Externalities are their own topic.
+
+## Compare / Contrast
+
+- **Public good vs. Private good** — A public good is non-rival and non-excludable, so markets under-provide it; a private good is rival and excludable, so ordinary markets allocate it well.
+- **Public good vs. Common resource** — Both are non-excludable, but a public good is non-rival and tends to be under-supplied, while a common resource is rival and tends to be over-used (the tragedy of the commons).
+- **Public good vs. Club good** — Both are non-rival, but a club good is excludable — the provider can charge and shut out non-payers (cable TV, a toll road) — so private firms can and do supply it, unlike a public good.
+- **Public good problem vs. Externality** — A public good is under-provided because non-payers cannot be excluded; an externality is a cost or benefit that spills onto third parties outside a transaction. Different market failures, handled as separate topics.
+
+## Key Takeaway
+
+A public good is non-rival and non-excludable; the non-excludability invites free-riding, so private markets under-provide it, which is the standard economic case for funding it collectively. Placing any good on the rivalry-by-excludability grid tells you whether to expect a market to work, a free-rider problem, or an overuse problem.
+
+## Practice Question Bank
+
+1. **Which pair of properties defines a public good?**
+   - A. Non-rival and non-excludable
+   - B. Rival and excludable
+   - C. Non-rival and excludable
+   - D. Rival and non-excludable
+
+   **Answer: A.** A public good is both non-rival (one person's use does not reduce what others can use) and non-excludable (non-payers cannot easily be kept out). Rival and excludable describes a private good; non-rival and excludable describes a club good; rival and non-excludable describes a common resource.
+
+2. **Which property of a public good is the direct reason a private firm cannot run a profitable business selling it?**
+   - A. Its non-rivalry, because extra users add no cost
+   - B. It is a physical service rather than a physical product
+   - C. Its non-excludability, because non-payers cannot be kept from using it
+   - D. Its high production cost
+
+   **Answer: C.** Non-excludability is what breaks the market: if a firm cannot stop non-payers from consuming, it cannot reliably collect revenue. Non-rivalry describes the sharing but does not by itself prevent charging (club goods are non-rival yet excludable and are sold profitably). Being a service or being expensive is not the defining barrier.
+
+3. **A town's residents would each benefit from a mosquito-control program, but each resident decides to wait and hope neighbors pay for it, so it is never funded. This outcome is best described as:**
+   - A. A shift in the demand curve
+   - B. The free-rider problem
+   - C. Comparative advantage
+   - D. An economy of scale
+
+   **Answer: B.** Mosquito control is non-excludable, so each resident has an incentive to let others pay and still benefit; when everyone reasons this way, contributions fall short and the good goes unfunded — the free-rider problem. The other terms describe unrelated concepts (a demand shift, gains from specialization, and falling per-unit cost).
+
+4. **An ocean fishery in international waters is rival (each fish caught is one fewer for others) but non-excludable (no one can be barred from fishing). Which category does it fall into, and what failure does it invite?**
+   - A. A private good, invites monopoly pricing
+   - B. A club good, invites congestion fees
+   - C. A public good, invites under-provision
+   - D. A common resource, invites the tragedy of the commons
+
+   **Answer: D.** Rival plus non-excludable places the fishery in the common-resource quadrant, which invites over-use — the tragedy of the commons Hardin described. A private good is excludable; a club good is non-rival; a public good is non-rival and is under-provided rather than over-used, so those options misclassify the good or its failure mode.
+
+5. **A cable-television service lets one more household watch at almost no extra cost, yet the company can still block anyone who does not pay. How is this good classified?**
+   - A. A club good (non-rival but excludable)
+   - B. A public good (non-rival and non-excludable)
+   - C. A common resource (rival but non-excludable)
+   - D. A private good (rival and excludable)
+
+   **Answer: A.** One more viewer adds almost no cost (non-rival), but the provider can fence out non-payers (excludable), which defines a club good, sometimes called an artificially scarce good. It is not a public good because it is excludable, not a common resource because it is non-rival, and not a private good because it is non-rival.
+
+## Sources
+
+- OpenStax, *Principles of Economics 3e*, Section 13.3: Public Goods (CC BY-NC-SA 4.0; reference only) — https://openstax.org/books/principles-economics-3e/pages/13-3-public-goods
+- LibreTexts (Social Sciences), *Econ 101* (Sorce), Section 7.5.1: Public Goods and Common Resources (license not declared; reference only) — https://socialsci.libretexts.org/Courses/Diablo_Valley_College/Econ_101:_Economics_of_Public_Issues_(Sorce)/07:_Market_Failures/7.05:_Public_Goods_and_Common_Resources/7.5.01:_Public_Goods
+- Garrett Hardin, "The Tragedy of the Commons," *Science* (1968) — https://www.science.org/doi/10.1126/science.162.3859.1243
+- The Nobel Foundation, Sveriges Riksbank Prize in Economic Sciences 2009 (Elinor Ostrom) — https://www.nobelprize.org/prizes/economic-sciences/2009/summary/
+
+## Related Topics
+
+- economics:foundations:externalities
+- economics:foundations:incentives
+- economics:foundations:fiscal-policy
+- economics:foundations:scarcity
+- economics:foundations:market-equilibrium
+
+## Editorial Metadata
+
+- **Editorial status:** READY_TO_PUBLISH
+- **Estimated minutes:** 10
+- **Researched at:** 2026-08-19
+- **Research status:** source-verified
+- **Rights status:** Reference-only sources (OpenStax CC BY-NC-SA 4.0, LibreTexts undeclared, Hardin, Ostrom Nobel); no source prose adapted, all wording original.
+- **Transformation:** Definitions, the free-rider/market-failure argument, examples, the four-category classification, and the Hardin/Ostrom history were synthesized from authoritative OER and reference sources and rewritten entirely in original prose; the worked example and analogy are original constructions.
