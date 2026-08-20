@@ -1,0 +1,301 @@
+{
+  "id": "web-development:foundations:how-websites-work",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "how-websites-work",
+  "title": "How Websites Work",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "web-development",
+    "foundations",
+    "browser",
+    "server",
+    "HTTP",
+    "DNS",
+    "HTTPS"
+  ],
+  "in30Seconds": "Opening a web page is a chain of coordinated jobs. Your browser uses the domain name in an address to find a network destination, sends a request for a resource, and receives a response from a server. It then parses the returned material, requests other resources the page refers to, and turns the result into pixels and interactive controls. HTTP defines the request-and-response conversation; HTTPS is the protected form of that conversation, using TLS.",
+  "whyItMatters": "This model makes web problems less mysterious. A page can fail before a browser reaches a server, while it is waiting for a response, or after resources arrive but before the browser has rendered them. The same sequence explains why a page may need several requests, why a domain name is not the same thing as a server, and why HTTPS matters when information travels over a network. It also gives later web-development lessons a place to fit: HTML supplies a document, CSS affects presentation, and JavaScript can request or change resources—but none of those is the whole trip from address bar to page.",
+  "learningObjectives": [
+    "Distinguish the Internet's network infrastructure from the World Wide Web service.",
+    "Explain the high-level roles of a browser, DNS, a web server, and HTTP in a page navigation.",
+    "Describe the difference between an HTTP request and an HTTP response.",
+    "Explain what HTTPS adds at a high level without treating it as a complete security guarantee.",
+    "Trace a simple page load from a typed address through basic rendering."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "The Web uses the Internet; it is not the Internet",
+      "body": "A useful first distinction is between infrastructure and a service built on it. The Internet is a network of networks that lets computers exchange data. The World Wide Web is one service that uses that infrastructure: it connects retrievable resources through addresses and hyperlinks, with browsers and servers using shared protocols. Email and other services also use the Internet, so opening a web page is not the same operation as ‘using the Internet’ in every possible sense. This distinction keeps the rest of the model honest. Cables, Wi-Fi, routers, Internet providers, and network addresses help data reach a destination. A browser, a web server, web addresses, and HTTP provide the web-specific conversation layered above that infrastructure. In ordinary use, these layers are deliberately hidden: a person types an address or follows a link, and the browser coordinates many steps. A developer does not need to memorize every network device to reason about a page load, but does need to know that an address must be associated with a reachable network destination before a browser can ask for a page."
+    },
+    {
+      "heading": "From a domain name to a destination",
+      "body": "A web address normally contains a hostname, such as `www.example.edu`. That name is readable for people, but network delivery ultimately needs an IP address. The Domain Name System (DNS) is the naming system that provides this translation. On a navigation, the browser or operating system may already have a usable cached answer. If not, a DNS lookup asks name servers for the address associated with the hostname. The result is not a promise that the browser has downloaded a page; it is the information needed to begin reaching the named service. A page may also refer to resources on several hostnames. Each distinct hostname can need its own lookup unless an appropriate cached result is available. This is why a domain name, an IP address, and a web server should not be treated as synonyms. The name identifies where the browser should look; an IP address is used for network delivery; and server software handles the web request. Modern hosting can make one public-facing site rely on several machines or services, so ‘the server’ is often best understood as the system answering the request, not necessarily one physical computer."
+    },
+    {
+      "heading": "HTTP gives the browser and server a common exchange",
+      "body": "After the browser can reach the intended web service, it uses HTTP, the Hypertext Transfer Protocol, for an application-level exchange. HTTP is a request/response protocol. The client—usually a browser in this lesson—sends a request that identifies what it wants. The server evaluates that request and returns a response. A response includes a status indicating the result and may include a representation of the requested resource, such as a document, image, or data. The familiar `200 OK` is one example of a successful status, but success is not the only possible outcome; a response can also say that a resource was not found, that access is not allowed, or that another address should be used. HTTP's core semantics are stateless: the protocol does not itself remember a previous request simply because a new one arrives. Applications can add mechanisms such as cookies or server-side records when they need continuity, but that is a design choice built around HTTP, not the basic request/response rule. Equally important, HTTP is not a synonym for ‘download one complete website.’ A browser may make many distinct requests while building one visible page."
+    },
+    {
+      "heading": "HTTPS protects the HTTP exchange in transit",
+      "body": "HTTPS is HTTP sent over a TLS-protected connection. TLS provides encryption for information moving between the browser and server and supports authentication of the server in the usual web setup. In practical terms, HTTPS helps prevent an observer on the network from simply reading or altering the HTTP conversation in transit, and it lets the browser check evidence that it is speaking to the intended server name. It does not mean a site is automatically trustworthy in every other way. HTTPS cannot decide whether a page's content is accurate, whether an account holder chose a weak password, or whether a server's own application logic has a defect. It is one important boundary, not a seal of overall quality. For web authors and users, the basic habit is straightforward: use HTTPS for sites, especially wherever information is exchanged. When diagnosing a load, remember that securing the connection can involve setup work before the browser obtains the resource, and a certificate or connection problem may stop the request from proceeding normally."
+    },
+    {
+      "heading": "A visible page is assembled, parsed, and rendered",
+      "body": "The first successful response is often only a starting point. For a normal document navigation, the browser receives an initial document, reads it from top to bottom, and discovers references to other resources. It can then request those resources as needed. The browser parses the document and relevant styling information, constructs internal structures, calculates layout, and paints pixels to the screen. Script can trigger later requests or changes, but detailed scripting belongs in later lessons. The key point here is that rendering is a process, not a single conversion from a file into a picture. A page may show some content while other resources are still arriving; conversely, a response can arrive successfully while a later rendering or resource problem prevents the expected result. This staged model also improves debugging questions. Is the hostname resolving? Did the server send a response? Did it report a useful status? Did the browser receive the expected resource? Did the browser discover a missing additional resource? Those questions separate network naming, server behavior, protocol results, and browser rendering rather than blaming ‘the website’ as one undifferentiated object."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "browser",
+      "definition": "A client application that retrieves web resources, interprets them, and presents a web page to a user."
+    },
+    {
+      "term": "web server",
+      "definition": "Software or a system that receives web requests and sends responses for resources or application results."
+    },
+    {
+      "term": "DNS",
+      "definition": "The Domain Name System, which provides information that maps hostnames to IP addresses."
+    },
+    {
+      "term": "IP address",
+      "definition": "A numeric network address used to identify a destination for Internet Protocol delivery."
+    },
+    {
+      "term": "HTTP",
+      "definition": "A stateless application-level protocol in which clients and servers exchange requests and responses."
+    },
+    {
+      "term": "request",
+      "definition": "A message a client sends to ask a server to perform an action on or provide a resource."
+    },
+    {
+      "term": "response",
+      "definition": "A server's message reporting the result of a request and, when appropriate, carrying a resource representation."
+    },
+    {
+      "term": "HTTPS",
+      "definition": "HTTP carried over a TLS-protected connection."
+    },
+    {
+      "term": "rendering",
+      "definition": "The browser process of turning parsed web resources into a laid-out, painted page a person can see."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Imagine you ask a library for a particular book. Your browser is the helper who takes the request. The website name is like the library's easy-to-remember name, and DNS is the directory that finds where that library can be reached. The browser asks the server for a page using HTTP. The server answers with the first materials, and the browser notices other materials it needs, such as pictures or instructions for displaying the page. Then it organizes all of that into what you see.",
+    "analogy": "It is like ordering a meal from a restaurant through a delivery service. The restaurant name must be matched with an address, the order tells the kitchen what is wanted, and the delivered bag may contain several items that must be arranged before the meal is ready. HTTPS is like using a sealed, verified delivery channel so strangers along the route cannot simply read or swap the order.",
+    "analogyLimits": "A browser and server exchange precisely defined network messages, not spoken orders, and a page may involve caches, several servers, and many requests. A sealed delivery bag is also not a perfect model of TLS: HTTPS protects the connection in transit but does not independently judge whether the restaurant's food or the page's claims are good."
+  },
+  "workedExample": "Suppose Maya enters `https://catalog.example.edu/books` in a browser. The browser needs an IP address for `catalog.example.edu`, so it uses a cached DNS result if one is available or performs a lookup. It establishes a protected HTTPS connection and sends an HTTP request for `/books`. The server returns a response whose status and body describe the result. If the initial document refers to a logo and a stylesheet on other hostnames, the browser may make additional requests after discovering them. Finally, it parses the document and its related resources, calculates where content belongs, and paints the page. If Maya sees a server error status, she is looking at a request/response problem; if the document arrives but the logo is absent, an additional-resource request may be the more specific question. This reasoning does not require guessing that all failures are ‘DNS problems.’",
+  "commonMistakes": [
+    {
+      "mistake": "Using ‘the Internet’ and ‘the Web’ as identical terms.",
+      "correction": "Treat the Internet as the underlying network infrastructure and the Web as a service that uses it."
+    },
+    {
+      "mistake": "Assuming DNS downloads the web page.",
+      "correction": "DNS supplies destination information for a hostname; HTTP(S) is used for the later resource exchange."
+    },
+    {
+      "mistake": "Thinking one HTTP response is always the entire visible page.",
+      "correction": "A browser can discover and request additional resources while it processes an initial document."
+    },
+    {
+      "mistake": "Treating HTTPS as proof that every aspect of a site is safe or true.",
+      "correction": "HTTPS protects the HTTP connection in transit; it does not guarantee correct content, sound application design, or safe user choices."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "DNS",
+      "b": "HTTP",
+      "distinction": "DNS provides destination information for a hostname; HTTP defines a request/response exchange for web resources."
+    },
+    {
+      "a": "HTTP",
+      "b": "HTTPS",
+      "distinction": "HTTPS is HTTP carried over TLS protection, adding encryption and server authentication to the connection."
+    },
+    {
+      "a": "Browser",
+      "b": "Web server",
+      "distinction": "The browser normally initiates requests on behalf of a user; the server handles those requests and sends responses."
+    }
+  ],
+  "keyTakeaway": "A web page is assembled through a sequence: resolve a hostname, exchange HTTP(S) requests and responses with a server, then parse and render the returned resources. DNS, HTTP, HTTPS, and rendering solve different parts of that sequence.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:how-websites-work:1",
+      "prompt": "What is DNS mainly used for during a typical web navigation?",
+      "options": [
+        "Mapping a hostname to destination information such as an IP address.",
+        "Encrypting the page after it has rendered.",
+        "Writing the HTML document for the server.",
+        "Painting pixels on the browser screen."
+      ],
+      "correctIndex": 0,
+      "explanation": "DNS provides destination information for a hostname. TLS protects a connection, a server or author provides a document, and the browser renders pixels.",
+      "difficulty": "recall",
+      "skill": "Identifying DNS's role",
+      "sourceIds": [
+        "mdn-browser-navigation-and-rendering",
+        "mdn-how-internet-works"
+      ]
+    },
+    {
+      "id": "web-development:foundations:how-websites-work:2",
+      "prompt": "Which statement best describes HTTP?",
+      "options": [
+        "A naming system for translating domains into IP addresses.",
+        "A stateless application-level protocol for client requests and server responses.",
+        "A visual layout language used only inside browsers.",
+        "A guarantee that every site is trustworthy."
+      ],
+      "correctIndex": 1,
+      "explanation": "HTTP is the request/response protocol. DNS is the naming system, layout is a browser-rendering concern, and HTTP alone makes no trust guarantee.",
+      "difficulty": "understanding",
+      "skill": "Defining HTTP's protocol role",
+      "sourceIds": [
+        "rfc-9110-http-semantics",
+        "mdn-http-overview"
+      ]
+    },
+    {
+      "id": "web-development:foundations:how-websites-work:3",
+      "prompt": "A browser receives an initial document that refers to an image and a stylesheet. What should you expect next?",
+      "options": [
+        "The browser must stop because one response can contain only text.",
+        "DNS will convert the image into an IP address.",
+        "The browser can discover those references and make additional resource requests.",
+        "The server will automatically paint the image on the user's screen."
+      ],
+      "correctIndex": 2,
+      "explanation": "Browsers parse an initial document and can request referenced subresources. DNS does not convert an image, and rendering occurs in the browser, not on the server.",
+      "difficulty": "application",
+      "skill": "Tracing multi-resource page loading",
+      "sourceIds": [
+        "mdn-http-overview",
+        "mdn-browser-navigation-and-rendering"
+      ]
+    },
+    {
+      "id": "web-development:foundations:how-websites-work:4",
+      "prompt": "What does HTTPS add to the basic HTTP exchange?",
+      "options": [
+        "A rule that all server responses must be successful.",
+        "A promise that a site's content is accurate.",
+        "A replacement for every DNS lookup.",
+        "TLS protection that encrypts the exchange in transit and supports server authentication."
+      ],
+      "correctIndex": 3,
+      "explanation": "HTTPS is HTTP over TLS, which protects the connection and supports server authentication. It does not guarantee successful responses or content quality, and it does not replace DNS.",
+      "difficulty": "understanding",
+      "skill": "Distinguishing HTTPS from broader trust claims",
+      "sourceIds": [
+        "mdn-https-glossary",
+        "mdn-browser-navigation-and-rendering"
+      ]
+    },
+    {
+      "id": "web-development:foundations:how-websites-work:5",
+      "prompt": "A page name resolves and the server returns a successful initial document, but a referenced image is missing. Which conclusion is most justified?",
+      "options": [
+        "DNS must have failed for the main page.",
+        "The browser may need to investigate the separate request for that image or its response.",
+        "HTTP cannot transfer images.",
+        "The browser has already finished rendering every resource."
+      ],
+      "correctIndex": 1,
+      "explanation": "A successful initial document does not prove every subsequent resource request succeeded. The missing image points to its own request or response; HTTP can transfer images, and rendering may still be in progress.",
+      "difficulty": "analysis",
+      "skill": "Separating stages of a page-load diagnosis",
+      "sourceIds": [
+        "mdn-http-overview",
+        "mdn-browser-navigation-and-rendering"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:how-websites-work:1",
+      "prompt": "What is DNS mainly used for during a typical web navigation?",
+      "options": [
+        "Mapping a hostname to destination information such as an IP address.",
+        "Encrypting the page after it has rendered.",
+        "Writing the HTML document for the server.",
+        "Painting pixels on the browser screen."
+      ],
+      "correctIndex": 0,
+      "explanation": "DNS provides destination information for a hostname. TLS protects a connection, a server or author provides a document, and the browser renders pixels.",
+      "difficulty": "recall",
+      "skill": "Identifying DNS's role",
+      "sourceIds": [
+        "mdn-browser-navigation-and-rendering",
+        "mdn-how-internet-works"
+      ]
+    },
+    {
+      "id": "web-development:foundations:how-websites-work:2",
+      "prompt": "Which statement best describes HTTP?",
+      "options": [
+        "A naming system for translating domains into IP addresses.",
+        "A stateless application-level protocol for client requests and server responses.",
+        "A visual layout language used only inside browsers.",
+        "A guarantee that every site is trustworthy."
+      ],
+      "correctIndex": 1,
+      "explanation": "HTTP is the request/response protocol. DNS is the naming system, layout is a browser-rendering concern, and HTTP alone makes no trust guarantee.",
+      "difficulty": "understanding",
+      "skill": "Defining HTTP's protocol role",
+      "sourceIds": [
+        "rfc-9110-http-semantics",
+        "mdn-http-overview"
+      ]
+    },
+    {
+      "id": "web-development:foundations:how-websites-work:3",
+      "prompt": "A browser receives an initial document that refers to an image and a stylesheet. What should you expect next?",
+      "options": [
+        "The browser must stop because one response can contain only text.",
+        "DNS will convert the image into an IP address.",
+        "The browser can discover those references and make additional resource requests.",
+        "The server will automatically paint the image on the user's screen."
+      ],
+      "correctIndex": 2,
+      "explanation": "Browsers parse an initial document and can request referenced subresources. DNS does not convert an image, and rendering occurs in the browser, not on the server.",
+      "difficulty": "application",
+      "skill": "Tracing multi-resource page loading",
+      "sourceIds": [
+        "mdn-http-overview",
+        "mdn-browser-navigation-and-rendering"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:http-basics",
+    "web-development:foundations:domains",
+    "web-development:foundations:dns",
+    "web-development:foundations:https",
+    "web-development:foundations:web-platform"
+  ],
+  "sources": [
+    "mdn-how-internet-works",
+    "mdn-http-overview",
+    "rfc-9110-http-semantics",
+    "mdn-browser-navigation-and-rendering",
+    "mdn-https-glossary"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only sources; no source prose adapted",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original explanatory lesson synthesized from current MDN documentation and the IETF HTTP semantics standard."
+  },
+  "contentHash": "03996b4b343e0d29",
+  "status": "source-verified",
+  "public": false
+}

@@ -1,0 +1,24 @@
+{
+  "topicId": "web-development:foundations:headings-and-paragraphs",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {"core": ["HTML h1-h6 elements", "HTML p element", "heading hierarchy", "heading navigation accessibility"], "supporting": ["structure versus CSS presentation", "paragraph content limits"], "outOfScope": ["document head and body", "semantic landmarks", "links and lists as standalone lessons", "CSS implementation", "ARIA techniques"]},
+  "claims": [
+    {"claim": "HTML provides six heading elements, h1 through h6, for headings.", "claimType": "TECHNICAL", "sourceIds": ["whatwg-html-heading-elements"], "status": "supported"},
+    {"claim": "The p element represents a paragraph and has phrasing content as its content model.", "claimType": "TECHNICAL", "sourceIds": ["whatwg-html-p-element"], "status": "supported"},
+    {"claim": "Heading information can be used by user agents to construct a document table of contents, and MDN advises authors not to skip heading levels.", "claimType": "TECHNICAL", "sourceIds": ["mdn-html-heading-elements"], "status": "supported"},
+    {"claim": "W3C WAI states that headings communicate content organization and can support in-page navigation in browsers, plug-ins, and assistive technologies.", "claimType": "TECHNICAL", "sourceIds": ["w3c-wai-headings-tutorial"], "status": "supported"},
+    {"claim": "The HTML Standard says that a p element should not be used when a more specific element is appropriate and that lists cannot be children of p elements.", "claimType": "TECHNICAL", "sourceIds": ["whatwg-html-p-element"], "status": "supported"},
+    {"claim": "Visual treatment can vary independently of paragraph semantics, so CSS rather than heading rank should determine desired appearance.", "claimType": "TECHNICAL", "sourceIds": ["whatwg-html-p-element", "mdn-html-heading-elements"], "status": "supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft contained generic, unsupported statements about headings and paragraphs and had no usable source citations."],
+  "correctionsNeeded": ["Replaced boilerplate with verified HTML semantics, clarified that heading level is structural rather than visual, and added accurate paragraph constraints and accessibility context."],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {"id": "whatwg-html-heading-elements", "title": "HTML Living Standard — The h1, h2, h3, h4, h5, and h6 elements", "provider": "WHATWG", "url": "https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements", "sourceType": "standards-body", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-20", "notes": "Read directly. Primary standard used to verify the heading-element set and their role in the HTML sections model; prose is original synthesis."},
+    {"id": "whatwg-html-p-element", "title": "HTML Living Standard — The p element", "provider": "WHATWG", "url": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-p-element", "sourceType": "standards-body", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-20", "notes": "Read directly. Primary standard used to verify that p represents a paragraph, its phrasing-content model, its presentation note, and its list/content guidance."},
+    {"id": "mdn-html-heading-elements", "title": "MDN Web Docs — h1–h6: The HTML Section Heading elements", "provider": "Mozilla / MDN Web Docs", "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "license": "CC BY-SA 2.5", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-20", "notes": "Read directly. Supports practical authoring guidance on table-of-contents use, avoiding heading-level skips, and separating font-size styling from heading markup. No wording reproduced."},
+    {"id": "w3c-wai-headings-tutorial", "title": "W3C Web Accessibility Initiative — Headings", "provider": "W3C Web Accessibility Initiative", "url": "https://www.w3.org/WAI/tutorials/page-structure/headings/", "sourceType": "standards-body", "usage": "REFERENCE_ONLY", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-20", "notes": "Read directly. Supports the accessibility explanation that headings communicate page organization and can provide in-page navigation. No source prose reproduced."}
+  ]
+}

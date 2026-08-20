@@ -1,0 +1,284 @@
+{
+  "id": "web-development:foundations:html-document-structure",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "html-document-structure",
+  "title": "HTML Document Structure",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "web-development",
+    "foundations",
+    "html",
+    "document-structure",
+    "metadata"
+  ],
+  "in30Seconds": "A complete HTML page has a predictable outer structure: a `<!doctype html>` declaration, one `html` root element, and a `head` and `body` inside that root. The head holds document metadata, such as the page title and character encoding; the body holds the page content intended for people to use. This arrangement tells browsers how to parse the document and gives tools a reliable place to find page-level information.",
+  "whyItMatters": "A clear document skeleton prevents confusing browser repairs and makes later work more reliable. The title can identify a page in browser interfaces and bookmarks; the character encoding declaration helps text be interpreted correctly; and viewport metadata can guide layout on small screens. Separating metadata from visible content also gives CSS, JavaScript, search tools, and assistive technologies a more predictable document to work with. It is a small pattern that every later HTML lesson assumes.",
+  "learningObjectives": [
+    "Identify the required high-level parts of a conventional HTML document.",
+    "Explain the distinct jobs of `doctype`, `html`, `head`, and `body`.",
+    "Distinguish document metadata from visible document content.",
+    "Apply a valid basic structure including character encoding, title, and viewport metadata.",
+    "Diagnose whether a page-level item belongs in the head or body."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "The outer document model",
+      "body": "An HTML document is more than a collection of tags placed in a file. It has a document-level arrangement that parsers recognize. A modern document normally begins with `<!doctype html>`, followed by an `html` element. The doctype is a declaration, not an HTML element: it tells a browser to use standards mode rather than an older compatibility mode. The `html` element is the document element, meaning the root of the HTML element tree. In a normal page it contains two main children: `head` and `body`. Keeping that mental tree is more useful than memorizing indentation. The root is the container for document-level settings; the head supplies metadata about the document; the body contains the content that makes up the page. Browsers have error-recovery rules and may insert omitted elements while parsing, but an author should not use that recovery as a design method. Writing the complete outer structure makes intent legible to people and to validation tools. This lesson concerns the page skeleton only. It does not choose headings, paragraphs, landmarks, visual styles, scripts, or network behavior; those have dedicated topics."
+    },
+    {
+      "heading": "What belongs in the head",
+      "body": "The `head` element represents a collection of metadata for the document. Metadata describes the document or tells the browser how to handle it; it is not the ordinary page material a visitor reads in the main window. A basic head commonly includes a `meta` element declaring UTF-8 character encoding, a `meta` element whose `name` is `viewport`, and a `title` element. The encoding declaration should occur early in the document so the browser can interpret bytes as characters before it has read much text. The title is required as document metadata in a normal HTML document and supplies the document's title, which user agents can expose in places such as a tab or history entry. It is not a substitute for the page's visible top-level heading; a title identifies the document, while a heading organizes content in the body. A viewport meta element such as `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">` gives the browser viewport-related instructions used particularly by mobile browsers. It helps a responsive layout start from an appropriate viewport width, but it does not itself create a responsive design. Other metadata, stylesheets, and scripts can also occur in a head when their rules permit, but this lesson deliberately limits itself to the foundational metadata."
+    },
+    {
+      "heading": "What belongs in the body",
+      "body": "The `body` element represents the document's content. Visible prose, images, navigation, forms, tables, and other page material belong there when their individual HTML rules allow it. That does not mean every body child is visually visible at every moment, nor that metadata never affects what a person experiences. It means the body is the place where the page's content structure lives, whereas the head describes or configures the document. This boundary avoids a common beginner error: putting a title-like sentence in `title` and expecting it to appear in the page itself, or putting a metadata declaration among visible page content. A browser can repair some misplaced markup, but repair may not reflect the intended result. Think in terms of audience and role: document-level information for the browser and related tools goes in the head; the information and interface presented as the page go in the body. Later lessons decide how body content should be marked up semantically. For this lesson, an otherwise empty body is acceptable in a structural example because the point is the arrangement, not the content."
+    },
+    {
+      "heading": "A minimal, valid-looking template",
+      "body": "A useful starting template is:\n\n`<!doctype html>`\n`<html lang=\"en\">`\n`  <head>`\n`    <meta charset=\"utf-8\">`\n`    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">`\n`    <title>Trail Notes</title>`\n`  </head>`\n`  <body>`\n`    Page content goes here.\n`  </body>`\n`</html>`\n\nThe language attribute shown on `html` is useful document-level information, but language selection is not this lesson's focus. The key structural test is nesting: the head and body close before the html root closes, and metadata stays inside the head. The doctype stands before the root element because it is a declaration about parsing, not a child of the page. The template also shows why indentation is helpful: it makes the hierarchy easy to inspect, while the tags—not the spaces—create the hierarchy. Copying a template is only the first step. Before treating it as finished, replace the placeholder title with a specific description, confirm the encoding declaration, and add only the head entries the page actually needs. A small, intentional head is easier to maintain than a collection of copied tags with unknown effects."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "doctype",
+      "definition": "A declaration placed before an HTML document that triggers standards mode in modern browsers."
+    },
+    {
+      "term": "root element",
+      "definition": "The top-level element in an element tree; in an HTML document, this is the `html` element."
+    },
+    {
+      "term": "metadata",
+      "definition": "Information that describes a document or gives processing information rather than forming its ordinary page content."
+    },
+    {
+      "term": "head",
+      "definition": "The HTML element that collects document metadata and related document-level resources."
+    },
+    {
+      "term": "body",
+      "definition": "The HTML element that contains the document's content structure."
+    },
+    {
+      "term": "character encoding",
+      "definition": "The rule used to interpret stored bytes as characters, commonly declared as UTF-8 in HTML metadata."
+    },
+    {
+      "term": "viewport",
+      "definition": "The visible area through which a browser displays a document; viewport metadata can provide layout-related instructions."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "An HTML page has a label on the outside and two main rooms. The outside label is the doctype, which tells a browser how to read the page. Inside, the head is a planning room: it keeps facts about the page, like its name and how to read its letters. The body is the room visitors use: it holds the page's actual material. Putting each thing in its room helps the browser know what it is looking at.",
+    "analogy": "Imagine a book with a cover page and the pages readers read. The doctype is an instruction to the printer about which modern book rules to use. The head is like the book's catalog card: it records the title and other facts about the book. The body is the chapters. A catalog card is useful, but it is not one of the chapters.",
+    "analogyLimits": "A web document is not a printed book. Browsers parse and may repair text according to HTML rules, and metadata can affect browser behavior rather than merely describe a page. A browser tab title is also not the same thing as a printed cover title, so a visible body heading can still be needed."
+  },
+  "workedExample": "A student starts a new page called Trail Notes. They place `<!doctype html>` first, then open `<html lang=\"en\">`. In the head, they add `<meta charset=\"utf-8\">`, the viewport meta element, and `<title>Trail Notes</title>`. They then close the head, open the body, and place the sentence `Page content goes here.` there before closing body and html. The title belongs in the head because it names the document for browser interfaces; the sentence belongs in the body because it is page content. If the student moved the title text into only a `title` element, it would not create a visible heading in the page content. The tags close from the inside out: body, then html.",
+  "commonMistakes": [
+    {
+      "mistake": "Treating `<!doctype html>` as an element inside the page.",
+      "correction": "Place it before the `html` element; it is a document declaration, not a child element."
+    },
+    {
+      "mistake": "Using `title` as the visible page heading.",
+      "correction": "Use `title` for document metadata and create visible content in the body with the appropriate body markup."
+    },
+    {
+      "mistake": "Putting visible page content in the head.",
+      "correction": "Keep the head for document metadata and put page content in the body."
+    },
+    {
+      "mistake": "Assuming the viewport meta element makes any design responsive.",
+      "correction": "It provides viewport-related instructions; responsive layouts still require appropriate CSS and content decisions."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "`head`",
+      "b": "`body`",
+      "distinction": "The head collects metadata and document-level resources; the body holds the document's content structure."
+    },
+    {
+      "a": "`title`",
+      "b": "Visible heading",
+      "distinction": "A title identifies the document in user-agent contexts; a visible heading organizes content in the body."
+    },
+    {
+      "a": "doctype",
+      "b": "`html` element",
+      "distinction": "The doctype is a parsing declaration before the document element; `html` is the root element of the page."
+    }
+  ],
+  "keyTakeaway": "Start a modern HTML page with a doctype and one html root, then keep metadata in head and page content in body. A specific title, early UTF-8 declaration, and sensible viewport metadata make the skeleton more useful without replacing semantic body markup or responsive CSS.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:html-document-structure:1",
+      "prompt": "Which item is placed before the `html` root element in a modern HTML document?",
+      "options": [
+        "`<!doctype html>`",
+        "`<body>`",
+        "`<title>`",
+        "A visible page heading"
+      ],
+      "correctIndex": 0,
+      "explanation": "The doctype is a declaration placed before the html element to trigger standards mode. Body, title, and visible content occur within the document structure.",
+      "difficulty": "recall",
+      "skill": "Identifying the doctype's position",
+      "sourceIds": [
+        "whatwg-html-the-doctype"
+      ]
+    },
+    {
+      "id": "web-development:foundations:html-document-structure:2",
+      "prompt": "What is the primary job of the `head` element?",
+      "options": [
+        "To hold all visible page paragraphs",
+        "To collect document metadata and related document-level information",
+        "To supply the page's only heading",
+        "To replace CSS rules"
+      ],
+      "correctIndex": 1,
+      "explanation": "Head holds metadata such as title and character encoding. Visible page content belongs in body, and CSS remains a separate technology.",
+      "difficulty": "understanding",
+      "skill": "Distinguishing metadata from content",
+      "sourceIds": [
+        "whatwg-html-head-element",
+        "mdn-basic-html-syntax"
+      ]
+    },
+    {
+      "id": "web-development:foundations:html-document-structure:3",
+      "prompt": "A student wants the browser tab to identify a page as Trail Notes. Where should `Trail Notes` be placed?",
+      "options": [
+        "Inside a doctype declaration",
+        "As the value of `charset`",
+        "Inside a `title` element in the head",
+        "As the viewport width"
+      ],
+      "correctIndex": 2,
+      "explanation": "The title element supplies the document title. A charset declares text encoding, viewport is separate metadata, and doctype is not a content container.",
+      "difficulty": "application",
+      "skill": "Applying document-title metadata",
+      "sourceIds": [
+        "whatwg-html-head-element",
+        "mdn-basic-html-syntax"
+      ]
+    },
+    {
+      "id": "web-development:foundations:html-document-structure:4",
+      "prompt": "Which template fragment keeps metadata and page content in their appropriate high-level locations?",
+      "options": [
+        "`<html><body><meta charset=\"utf-8\"></body></html>`",
+        "`<html><head>Welcome</head><body><title>Site</title></body></html>`",
+        "`<head><html><title>Site</title></html><body>Welcome</body></head>`",
+        "`<html><head><meta charset=\"utf-8\"><title>Site</title></head><body>Welcome</body></html>`"
+      ],
+      "correctIndex": 3,
+      "explanation": "The correct fragment puts metadata in head and visible content in body, both inside the html root. The other choices misplace metadata, content, or the root structure.",
+      "difficulty": "analysis",
+      "skill": "Analyzing a high-level HTML structure",
+      "sourceIds": [
+        "whatwg-html-head-element",
+        "whatwg-html-the-html-element"
+      ]
+    },
+    {
+      "id": "web-development:foundations:html-document-structure:5",
+      "prompt": "What does `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">` do by itself?",
+      "options": [
+        "It writes a visible page title",
+        "It gives viewport-related instructions but does not by itself make a layout responsive",
+        "It changes every character to UTF-8",
+        "It turns body content into metadata"
+      ],
+      "correctIndex": 1,
+      "explanation": "Viewport metadata provides viewport-related instructions, commonly for mobile layout. It neither creates visible content nor declares character encoding, and responsive design still needs suitable CSS and content choices.",
+      "difficulty": "understanding",
+      "skill": "Distinguishing viewport metadata from responsive design",
+      "sourceIds": [
+        "mdn-viewport-meta"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:html-document-structure:1",
+      "prompt": "Which item is placed before the `html` root element in a modern HTML document?",
+      "options": [
+        "`<!doctype html>`",
+        "`<body>`",
+        "`<title>`",
+        "A visible page heading"
+      ],
+      "correctIndex": 0,
+      "explanation": "The doctype is a declaration placed before the html element to trigger standards mode. Body, title, and visible content occur within the document structure.",
+      "difficulty": "recall",
+      "skill": "Identifying the doctype's position",
+      "sourceIds": [
+        "whatwg-html-the-doctype"
+      ]
+    },
+    {
+      "id": "web-development:foundations:html-document-structure:2",
+      "prompt": "What is the primary job of the `head` element?",
+      "options": [
+        "To hold all visible page paragraphs",
+        "To collect document metadata and related document-level information",
+        "To supply the page's only heading",
+        "To replace CSS rules"
+      ],
+      "correctIndex": 1,
+      "explanation": "Head holds metadata such as title and character encoding. Visible page content belongs in body, and CSS remains a separate technology.",
+      "difficulty": "understanding",
+      "skill": "Distinguishing metadata from content",
+      "sourceIds": [
+        "whatwg-html-head-element",
+        "mdn-basic-html-syntax"
+      ]
+    },
+    {
+      "id": "web-development:foundations:html-document-structure:3",
+      "prompt": "A student wants the browser tab to identify a page as Trail Notes. Where should `Trail Notes` be placed?",
+      "options": [
+        "Inside a doctype declaration",
+        "As the value of `charset`",
+        "Inside a `title` element in the head",
+        "As the viewport width"
+      ],
+      "correctIndex": 2,
+      "explanation": "The title element supplies the document title. A charset declares text encoding, viewport is separate metadata, and doctype is not a content container.",
+      "difficulty": "application",
+      "skill": "Applying document-title metadata",
+      "sourceIds": [
+        "whatwg-html-head-element",
+        "mdn-basic-html-syntax"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:html",
+    "web-development:foundations:headings-and-paragraphs",
+    "web-development:foundations:semantic-html",
+    "web-development:foundations:responsive-design",
+    "web-development:foundations:accessibility"
+  ],
+  "sources": [
+    "whatwg-html-the-doctype",
+    "whatwg-html-the-html-element",
+    "whatwg-html-head-element",
+    "mdn-basic-html-syntax",
+    "mdn-viewport-meta"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only standards and documentation; no source prose adapted",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original educational explanation based on current WHATWG and MDN documentation."
+  },
+  "contentHash": "11248cd1ab557378",
+  "status": "source-verified",
+  "public": false
+}

@@ -1,0 +1,270 @@
+{
+  "id": "web-development:foundations:headings-and-paragraphs",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "headings-and-paragraphs",
+  "title": "Headings and Paragraphs",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "web-development",
+    "html",
+    "headings",
+    "paragraphs",
+    "accessibility"
+  ],
+  "in30Seconds": "HTML headings (`h1` through `h6`) name and rank the sections of a page. Paragraphs (`p`) group ordinary prose into distinct paragraphs. They are structural markup, not font-size controls: a heading tells software that a passage begins a section, and a paragraph tells it that a block is paragraph text. A logical heading sequence and real paragraph elements make a page easier to read, maintain, and navigate with assistive technology.",
+  "whyItMatters": "Readers use headings to scan a page before deciding what to read, and assistive technologies can use them for in-page navigation. Paragraph markup also gives prose a meaningful boundary instead of relying on visual spacing alone. In coursework, these elements are a compact introduction to semantic HTML: choose markup for what content is, then use CSS later for its appearance. That separation helps a team change a visual design without silently changing the document's organization.",
+  "learningObjectives": [
+    "Define the HTML heading elements and the paragraph element.",
+    "Explain how heading ranks communicate a document hierarchy.",
+    "Distinguish structural heading markup from visual text styling.",
+    "Apply a logical heading sequence to a short page fragment.",
+    "Identify when prose belongs in a paragraph rather than a heading."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Heading elements express rank",
+      "body": "HTML supplies six heading elements: `h1`, `h2`, `h3`, `h4`, `h5`, and `h6`. The number is a rank in a document's organization, not an instruction to use a particular visual size. In a simple article, an `h1` can name the page's main subject, `h2` elements can name its peer sections, and an `h3` can name a subsection within one of those sections. The WHATWG HTML Standard defines these as headings, while MDN advises authors to start with `h1` and progress through the ranks without skipping levels. A useful authoring test is to imagine an outline: each lower-ranked heading should introduce a subdivision of the higher-ranked idea above it. Headings that merely make a phrase large or bold communicate the wrong structure. If text only needs a different look, CSS owns that decision; the heading element should be chosen because the text actually labels a section. A page generally has one `h1` that describes its content, although the HTML Standard permits multiple non-nested `h1` elements. For introductory authoring, one clear page-level `h1` is the less surprising convention. This lesson concerns the ranking of headings, not page landmarks or the full document outline algorithm."
+    },
+    {
+      "heading": "Paragraphs are prose units",
+      "body": "The `p` element represents a paragraph. A paragraph is often displayed as a separated block of text, but the HTML Standard emphasizes that the presentation can vary: a stylesheet or browser may render paragraph breaks differently. That is why blank-looking space, a line break, or a styled `div` is not automatically a substitute for a paragraph element. Use `p` for a coherent run of ordinary prose. A heading is not a tiny paragraph and a paragraph is not a heading with smaller default type; each has a different structural meaning. The content model for `p` is phrasing content, so it is not a general wrapper for any arrangement a design needs. In particular, a list cannot be placed inside a paragraph. Close the paragraph before the list and begin a new paragraph after it if the surrounding sentence continues. The standard also says that `p` should not be used when a more specific element fits the content. That principle does not require memorizing every element today. It does mean that authors should first ask whether the content is ordinary prose, then select `p` when the answer is yes rather than using paragraphs as a generic layout device."
+    },
+    {
+      "heading": "Accessible organization comes from the sequence",
+      "body": "Heading markup has practical accessibility consequences. W3C's Web Accessibility Initiative explains that headings communicate a page's organization and that browsers and assistive technologies can use them to provide in-page navigation. The text inside a heading should therefore describe the section it introduces. A page that jumps from an `h1` directly to an `h4` because the author prefers the smaller default appearance hides the relationship that the rank is meant to express. A better approach is to choose ranks by hierarchy and use CSS separately if a particular visual treatment is needed. Consider a page about campus recycling. `h1` might be “Campus Recycling”; `h2` headings could be “What Goes in Each Bin” and “Pickup Schedule”; an `h3` under the first `h2` might be “Paper.” The paragraphs after each heading explain that topic until another heading starts a new section. This organization helps every reader scan the subject and gives navigation tools a useful hierarchy. It also makes later editing safer: a contributor can see which explanation belongs to which labeled topic. It is not a promise that headings alone make an entire page accessible: useful link text, images, form labels, keyboard behavior, and many other choices still matter. It is a concrete first step toward preserving the meaning of the content in the markup."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "heading element",
+      "definition": "An HTML element from `h1` through `h6` that labels a section or subsection of content."
+    },
+    {
+      "term": "heading rank",
+      "definition": "A heading's level in the hierarchy, indicated by the number in its element name."
+    },
+    {
+      "term": "paragraph",
+      "definition": "A unit of ordinary prose represented in HTML by a `p` element."
+    },
+    {
+      "term": "structural markup",
+      "definition": "Markup chosen to express the role or organization of content rather than its visual styling."
+    },
+    {
+      "term": "hierarchy",
+      "definition": "An arrangement in which broader topics contain more specific subtopics."
+    },
+    {
+      "term": "assistive technology",
+      "definition": "Software or hardware that helps people access digital content, including tools that offer heading-based navigation."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Think of a web page as a well-organized notebook. A heading is the label at the start of a big idea or a smaller idea inside it. A paragraph is the group of sentences that explains one part of that idea. The labels tell readers where they are before they read every word. Computers can understand those labels too when you use real HTML heading and paragraph elements. That lets a reader jump to the part they need instead of hunting through one long wall of text.",
+    "analogy": "An `h1` is the label on a notebook's cover, `h2` labels are major dividers, and `h3` labels are smaller dividers inside one section. Paragraphs are the short blocks of notes filed under the right divider.",
+    "analogyLimits": "A web page is not physically arranged in a notebook, and heading numbers do not have to match the font size that appears on screen. CSS can change the appearance without changing the markup's hierarchy."
+  },
+  "workedExample": "A student is marking up a page called “Campus Recycling.” They start with `<h1>Campus Recycling</h1>`, because it names the page's main subject. Two peer topics follow: `<h2>What Goes in Each Bin</h2>` and `<h2>Pickup Schedule</h2>`. Under the first topic, paper is a narrower category, so it receives `<h3>Paper</h3>`, followed by `<p>Place clean paper in the blue bin.</p>`. The student does not choose `h3` because it looks smaller; it is `h3` because Paper belongs inside What Goes in Each Bin. If the designer wants the `h2` to look smaller, CSS can change its font size without changing the HTML rank.",
+  "commonMistakes": [
+    {
+      "mistake": "Choosing `h3` or `h4` solely for a preferred font size.",
+      "correction": "Choose the rank from the content hierarchy, then use CSS for appearance."
+    },
+    {
+      "mistake": "Skipping from `h1` to `h4` because intermediate headings are unused.",
+      "correction": "Use a sequence that reflects subdivisions, normally progressing through levels."
+    },
+    {
+      "mistake": "Putting an entire article in one paragraph element.",
+      "correction": "Split distinct prose units into separate paragraphs."
+    },
+    {
+      "mistake": "Using a paragraph as a wrapper around content with a more specific structure.",
+      "correction": "Use `p` for ordinary prose and choose the appropriate element when the content has another role."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Heading",
+      "b": "Paragraph",
+      "distinction": "A heading labels a section in the content hierarchy; a paragraph contains ordinary prose within that organization."
+    },
+    {
+      "a": "HTML heading rank",
+      "b": "CSS font size",
+      "distinction": "A rank communicates structure; a font size controls presentation and can be changed independently."
+    }
+  ],
+  "keyTakeaway": "Use `h1`–`h6` to label a real hierarchy of topics and `p` for ordinary prose. Let CSS control how those elements look; let HTML preserve what they mean.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:headings-and-paragraphs:1",
+      "prompt": "Which HTML element represents a paragraph of ordinary prose?",
+      "options": [
+        "`<p>`",
+        "`<h1>`",
+        "`<strong>`",
+        "`<br>`"
+      ],
+      "correctIndex": 0,
+      "explanation": "`p` represents a paragraph. A heading labels a section, `strong` marks strong importance, and `br` represents a line break.",
+      "difficulty": "recall",
+      "skill": "Identifying paragraph markup",
+      "sourceIds": [
+        "whatwg-html-p-element"
+      ]
+    },
+    {
+      "id": "web-development:foundations:headings-and-paragraphs:2",
+      "prompt": "What does the number in an `h3` element primarily communicate?",
+      "options": [
+        "The exact font size the browser must use.",
+        "Its rank as a subsection in the heading hierarchy.",
+        "The third paragraph on the page.",
+        "The number of words in its section."
+      ],
+      "correctIndex": 1,
+      "explanation": "The number communicates heading rank, not a fixed font size, paragraph position, or word count.",
+      "difficulty": "understanding",
+      "skill": "Interpreting heading rank",
+      "sourceIds": [
+        "whatwg-html-heading-elements",
+        "mdn-html-heading-elements"
+      ]
+    },
+    {
+      "id": "web-development:foundations:headings-and-paragraphs:3",
+      "prompt": "A page has `<h1>Travel Guide</h1>` and then begins a peer topic called “Packing.” Which markup best represents that new peer topic?",
+      "options": [
+        "`<h1>Packing</h1>`",
+        "`<p>Packing</p>`",
+        "`<h2>Packing</h2>`",
+        "`<h4>Packing</h4>`"
+      ],
+      "correctIndex": 2,
+      "explanation": "A peer section under the page's main topic is an `h2`. Another `h1` is not the usual page-level pattern, `p` does not label a section, and `h4` skips hierarchy levels.",
+      "difficulty": "application",
+      "skill": "Applying a heading hierarchy",
+      "sourceIds": [
+        "mdn-html-heading-elements",
+        "w3c-wai-headings-tutorial"
+      ]
+    },
+    {
+      "id": "web-development:foundations:headings-and-paragraphs:4",
+      "prompt": "Why is using an `h4` just because it looks smaller a poor authoring choice?",
+      "options": [
+        "Headings cannot contain text.",
+        "Only CSS can contain font sizes.",
+        "`h4` is reserved for footnotes.",
+        "Heading rank conveys document structure, while CSS should control visual size."
+      ],
+      "correctIndex": 3,
+      "explanation": "Heading elements express hierarchy. Use CSS to change the visual treatment instead of choosing an incorrect rank for its default size.",
+      "difficulty": "analysis",
+      "skill": "Separating structure from presentation",
+      "sourceIds": [
+        "mdn-html-heading-elements"
+      ]
+    },
+    {
+      "id": "web-development:foundations:headings-and-paragraphs:5",
+      "prompt": "Which change most directly improves heading-based navigation for a long article?",
+      "options": [
+        "Replacing every heading with bold paragraph text.",
+        "Using headings whose ranks reflect the article's real sections and subsections.",
+        "Making every heading an `h1`.",
+        "Adding blank lines before each paragraph."
+      ],
+      "correctIndex": 1,
+      "explanation": "A meaningful hierarchy gives navigation tools structured headings. Bold text, repeated `h1` elements, and blank lines do not provide the same organization.",
+      "difficulty": "application",
+      "skill": "Connecting heading structure to navigation",
+      "sourceIds": [
+        "w3c-wai-headings-tutorial",
+        "mdn-html-heading-elements"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:headings-and-paragraphs:1",
+      "prompt": "Which HTML element represents a paragraph of ordinary prose?",
+      "options": [
+        "`<p>`",
+        "`<h1>`",
+        "`<strong>`",
+        "`<br>`"
+      ],
+      "correctIndex": 0,
+      "explanation": "`p` represents a paragraph. A heading labels a section, `strong` marks strong importance, and `br` represents a line break.",
+      "difficulty": "recall",
+      "skill": "Identifying paragraph markup",
+      "sourceIds": [
+        "whatwg-html-p-element"
+      ]
+    },
+    {
+      "id": "web-development:foundations:headings-and-paragraphs:2",
+      "prompt": "What does the number in an `h3` element primarily communicate?",
+      "options": [
+        "The exact font size the browser must use.",
+        "Its rank as a subsection in the heading hierarchy.",
+        "The third paragraph on the page.",
+        "The number of words in its section."
+      ],
+      "correctIndex": 1,
+      "explanation": "The number communicates heading rank, not a fixed font size, paragraph position, or word count.",
+      "difficulty": "understanding",
+      "skill": "Interpreting heading rank",
+      "sourceIds": [
+        "whatwg-html-heading-elements",
+        "mdn-html-heading-elements"
+      ]
+    },
+    {
+      "id": "web-development:foundations:headings-and-paragraphs:3",
+      "prompt": "A page has `<h1>Travel Guide</h1>` and then begins a peer topic called “Packing.” Which markup best represents that new peer topic?",
+      "options": [
+        "`<h1>Packing</h1>`",
+        "`<p>Packing</p>`",
+        "`<h2>Packing</h2>`",
+        "`<h4>Packing</h4>`"
+      ],
+      "correctIndex": 2,
+      "explanation": "A peer section under the page's main topic is an `h2`. Another `h1` is not the usual page-level pattern, `p` does not label a section, and `h4` skips hierarchy levels.",
+      "difficulty": "application",
+      "skill": "Applying a heading hierarchy",
+      "sourceIds": [
+        "mdn-html-heading-elements",
+        "w3c-wai-headings-tutorial"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:html",
+    "web-development:foundations:html-document-structure",
+    "web-development:foundations:semantic-html",
+    "web-development:foundations:css",
+    "web-development:foundations:accessibility"
+  ],
+  "sources": [
+    "whatwg-html-heading-elements",
+    "whatwg-html-p-element",
+    "mdn-html-heading-elements",
+    "w3c-wai-headings-tutorial"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only standards and documentation; no source prose adapted",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original instructional synthesis from the HTML Living Standard, MDN, and W3C WAI documentation; markup examples were inspected for matching tags and logical heading rank."
+  },
+  "contentHash": "0ae02ce33007c368",
+  "status": "source-verified",
+  "public": false
+}

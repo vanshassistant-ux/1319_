@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "subjectSlug": "web-development",
+  "note": "Discovery leads for web-development workers. Every claim, markup example, accessibility statement, browser behavior claim, and security boundary must be independently verified against current primary standards or platform documentation.",
+  "reviewProfile": ["technical-web", "standards-based", "accessibility-aware", "security-aware"],
+  "tierA": [
+    { "provider": "WHATWG HTML Living Standard", "url": "https://html.spec.whatwg.org/", "useFor": "HTML elements, document processing, forms, links, images, and platform semantics" },
+    { "provider": "MDN Web Docs", "url": "https://developer.mozilla.org/", "useFor": "practical browser-compatible explanations and executable HTML/CSS/JavaScript examples" },
+    { "provider": "W3C Web Accessibility Initiative", "url": "https://www.w3.org/WAI/", "useFor": "accessibility principles, semantic HTML, forms, alternatives, and inclusive design" }
+  ],
+  "tierB": [
+    { "provider": "ECMAScript specification", "url": "https://tc39.es/ecma262/", "useFor": "JavaScript language semantics where MDN needs primary-spec corroboration" },
+    { "provider": "OWASP", "url": "https://owasp.org/", "useFor": "defensive web-security concepts; teach recognition and mitigation only" }
+  ],
+  "cautions": [
+    "Standards and browser behavior evolve. Cite the current WHATWG, MDN, W3C, or ECMAScript primary source and execute or inspect every code example before publication; do not claim universal support without a source.",
+    "Keep HTML structure, semantics, CSS presentation, JavaScript behavior, networking, accessibility, and security boundaries distinct. Prefer semantic native elements before ARIA; explain that ARIA supplements rather than repairs incorrect structure.",
+    "Security content is defense-only: explain safe practices such as input handling, HTTPS, authentication boundaries, and recognizing risks without providing exploit instructions or payloads.",
+    "Use accessible examples: meaningful headings, labels, alt-text guidance, keyboard-aware controls, and sufficient context for links. Never promise that a single attribute alone makes a page accessible.",
+    "Distribute question answer keys EVENLY across A/B/C/D, ensuring at least one C and one D per topic. Verify keys from the completed review JSON and avoid duplicate question-stem templates."
+  ]
+}
