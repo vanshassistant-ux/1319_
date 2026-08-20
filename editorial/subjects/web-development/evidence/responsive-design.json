@@ -1,0 +1,23 @@
+{
+  "topicId": "web-development:foundations:responsive-design",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {"core": ["responsive design as an approach", "fluid layout and content-driven adaptation", "viewport configuration", "responsive media and accessibility"], "supporting": ["flexbox and grid as flexible layout tools", "mobile-first planning"], "outOfScope": ["media-query syntax", "breakpoint implementation", "responsive-image markup details", "device detection"]},
+  "claims": [
+    {"claim":"Responsive web design is an approach for layouts that work well across screen sizes and resolutions, not a separate technology.","claimType":"TECHNICAL","sourceIds":["mdn-responsive-web-design"],"status":"supported"},
+    {"claim":"Plain HTML text normally reflows as the viewport changes, while a fixed-width page can cause scrolling or excess empty space.","claimType":"TECHNICAL","sourceIds":["mdn-responsive-web-design"],"status":"supported"},
+    {"claim":"Flexible grids and modern layout methods such as Flexbox and Grid support responsive layouts without targeting every device size.","claimType":"TECHNICAL","sourceIds":["mdn-responsive-web-design"],"status":"supported"},
+    {"claim":"The viewport meta value width=device-width tells mobile browsers to use the device width for the viewport.","claimType":"TECHNICAL","sourceIds":["mdn-responsive-web-design","mdn-viewport-meta"],"status":"supported"},
+    {"claim":"Media constrained by max-width: 100% can avoid overflowing its container; supplying one oversized image to small screens can waste bandwidth.","claimType":"TECHNICAL","sourceIds":["mdn-responsive-web-design"],"status":"supported"},
+    {"claim":"Responsive design must retain usable text, structure, labels, and alternatives; W3C guidance recommends clear structure, descriptive links, and text alternatives.","claimType":"TECHNICAL","sourceIds":["w3c-wai-designing-accessibility"],"status":"supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft contained only generic statements and did not explain responsive layout behavior or cite evidence."],
+  "correctionsNeeded": ["Replaced boilerplate with source-verified explanation and a fluid-layout example; reserved media-query syntax for its sibling lesson."],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {"id":"mdn-responsive-web-design","title":"Responsive web design","provider":"Mozilla / MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"CC BY-SA 2.5","licenseUrl":"https://creativecommons.org/licenses/by-sa/2.5/","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Supports the definition of RWD, HTML reflow, fluid layouts, flexible grid tools, media sizing, mobile-first planning, and viewport configuration. No source prose reproduced."},
+    {"id":"mdn-viewport-meta","title":"<meta name=\"viewport\">","provider":"Mozilla / MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name/viewport","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"CC BY-SA 2.5","licenseUrl":"https://creativecommons.org/licenses/by-sa/2.5/","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Corroborates the viewport meta setting and its mobile rendering purpose. No source prose reproduced."},
+    {"id":"w3c-wai-designing-accessibility","title":"Designing for Web Accessibility – Tips for Getting Started","provider":"W3C Web Accessibility Initiative","url":"https://www.w3.org/WAI/tips/designing/","sourceType":"standards-body","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Supports accessible structure, descriptive links, alternatives, and readable content as design responsibilities. Used for verification only."}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "topicId": "web-development:foundations:media-queries",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {
+    "core": ["the @media rule", "media query conditions", "width and user-preference media features", "conditional CSS"],
+    "supporting": ["media types", "range syntax", "and/or/not logical operators", "print styles"],
+    "outOfScope": ["a full responsive-design process", "CSS Grid and Flexbox instruction", "container queries", "JavaScript matchMedia()"]
+  },
+  "claims": [
+    {"claim":"Media queries test characteristics of the user environment so that CSS can be applied conditionally.","claimType":"TECHNICAL","sourceIds":["mdn-css-media-queries","w3c-media-queries-4"],"status":"supported"},
+    {"claim":"The @media at-rule applies its contained rules when its media query is true.","claimType":"TECHNICAL","sourceIds":["mdn-css-media-queries","w3c-css-conditional-3"],"status":"supported"},
+    {"claim":"A media query can include a media type and one or more media conditions, and comma-separated queries act as an OR list.","claimType":"TECHNICAL","sourceIds":["w3c-media-queries-4","mdn-css-media-queries"],"status":"supported"},
+    {"claim":"Width features can be written with min-/max- prefixes or modern range syntax such as width >= 48rem.","claimType":"TECHNICAL","sourceIds":["w3c-media-queries-4","mdn-css-media-queries"],"status":"supported"},
+    {"claim":"The prefers-reduced-motion media feature expresses whether a user has requested reduced non-essential motion.","claimType":"TECHNICAL","sourceIds":["mdn-css-media-queries","w3c-media-queries-5"],"status":"supported"},
+    {"claim":"The print media type can conditionally apply print-oriented CSS.","claimType":"TECHNICAL","sourceIds":["w3c-media-queries-4","mdn-css-media-queries"],"status":"supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft supplied only generic boilerplate and no technically supported explanation or valid query syntax."],
+  "correctionsNeeded": ["Replaced generic prose with standards-based CSS syntax, conditional behavior, and user-preference examples; kept broader responsive-design strategy out of scope."],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {"id":"mdn-css-media-queries","title":"CSS media queries","provider":"Mozilla / MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"CC BY-SA 2.5","licenseUrl":"https://creativecommons.org/licenses/by-sa/2.5/","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Supports the purpose of media queries, @media use, width and preference examples, and conditional styling. No source prose reproduced."},
+    {"id":"w3c-media-queries-4","title":"Media Queries Level 4","provider":"W3C CSS Working Group","url":"https://www.w3.org/TR/mediaqueries-4/","sourceType":"standards-body","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read as the primary CSS media-query specification. Supports media types, conditions, range context, boolean logic, and evaluation semantics."},
+    {"id":"w3c-css-conditional-3","title":"CSS Conditional Rules Module Level 3","provider":"W3C CSS Working Group","url":"https://www.w3.org/TR/css-conditional-3/","sourceType":"standards-body","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Corroborates the conditional grouping behavior of @media rules."},
+    {"id":"w3c-media-queries-5","title":"Media Queries Level 5","provider":"W3C CSS Working Group","url":"https://www.w3.org/TR/mediaqueries-5/","sourceType":"standards-body","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly for the prefers-reduced-motion definition and its user-preference role."}
+  ]
+}

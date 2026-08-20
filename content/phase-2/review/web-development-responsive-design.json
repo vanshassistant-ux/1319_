@@ -1,0 +1,253 @@
+{
+  "id": "web-development:foundations:responsive-design",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "responsive-design",
+  "title": "Responsive Design",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 10,
+  "tags": [
+    "web-development",
+    "css",
+    "layout",
+    "responsive-design"
+  ],
+  "in30Seconds": "Responsive web design is an approach to making a page usable across many viewport sizes and resolutions. Instead of drawing a separate, fixed page for each device, a responsive page lets content reflow and lets layout rules use available space. Flexible containers, flexible media, sensible text measures, and a correctly configured viewport all help. The goal is not identical pixels on every screen; it is a readable, operable experience when the viewing conditions change.",
+  "whyItMatters": "People open the same web page on narrow phones, wide monitors, tablets, and resized browser windows. A fixed layout can force horizontal scrolling, leave awkward empty space, or make controls and text hard to use. Responsive design gives students a way to reason from content and constraints instead of a catalogue of devices. It also connects visual layout to accessibility and performance: an image that fits its box is not automatically an appropriate download, and a layout that looks compact must still preserve readable text, meaningful structure, and usable controls.",
+  "learningObjectives": [
+    "Define responsive web design as an approach rather than a device-specific template.",
+    "Explain why fixed widths can fail across viewports.",
+    "Apply fluid sizing and maximum constraints to a simple content layout.",
+    "Explain the purpose of a viewport meta element on mobile browsers.",
+    "Evaluate whether a proposed responsive change preserves content and accessibility."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Adapt to conditions, not a device list",
+      "body": "Responsive web design (RWD) is an approach for making web pages render well and remain usable across screen sizes and resolutions. It is not a single CSS feature and it is not a promise that every screen receives the same arrangement. The browser already provides a useful starting point: an HTML document with ordinary text reflows when the viewport narrows or widens. CSS design choices can either preserve that flexibility or defeat it. A page locked to one wide fixed width can overflow a narrow viewport; a narrow column that looked comfortable on a laptop can become cramped if it is never allowed to adapt.\n\nThe useful question is therefore not “Which phone is this?” but “When does this content stop working?” Start with the information a person must read or act on. Let a layout grow and shrink where it can, then make an intentional change when the content becomes crowded, excessively wide, or otherwise hard to use. This is content-first design. It accommodates unfamiliar screen sizes better than a collection of pixel-perfect targets. Responsive design also has constraints beyond geometry: bandwidth, zoom, input method, and assistive technology affect whether an experience is actually usable."
+    },
+    {
+      "heading": "Fluid layout rules and bounded media",
+      "body": "A fluid layout uses available room rather than assuming a fixed canvas. Relative measures, flexible columns, and layout systems such as Flexbox or Grid can distribute space as a container changes. They do not remove the need for judgment. A long line of text on a wide display can be tiring to read, so a content column may need a maximum width. Conversely, a fixed-width card may squeeze or overflow on a narrow screen. The practical pattern is flexible within a useful range: allow a box to take available width, but set a maximum where a wider result stops helping.\n\nMedia needs the same attention. A basic defensive CSS rule such as `img { max-width: 100%; height: auto; }` lets an image shrink with its containing box instead of extending past it. `max-width` is a ceiling, not a request to enlarge a small image. This rule prevents one kind of overflow, but it does not select a smaller file or improve an unclear image. A responsive design review should inspect the content at several widths and ask whether text wraps sensibly, images fit, controls remain reachable, and the essential information still appears in a useful order. Flexbox and Grid can make flexible arrangements easier; this lesson does not teach their individual syntax or media-query rules."
+    },
+    {
+      "heading": "Viewport, content priority, and inclusive checks",
+      "body": "On mobile browsers, a page normally needs `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">` in its document head. The `width=device-width` portion tells the browser to use the device width for the viewport, helping layout rules operate against the mobile-sized space rather than a simulated wider desktop viewport. It is configuration, not a responsive layout by itself. It cannot repair a fixed-width component, an unlabeled form control, or a page whose most important action is hidden.\n\nPlan the narrow view as a real experience: place the main task and essential content where a person can reach and understand them, then add room and arrangement as space permits. Do not equate “mobile first” with “mobile only”; it is a way to establish a resilient baseline. Accessibility belongs in the same review. Headings should describe the structure, links should make sense in context, images need appropriate text alternatives, and text and controls must remain usable under zoom and different input methods. Test a layout by resizing a browser and by inspecting its content order—not merely by comparing screenshots. When a design change discards context, makes text illegible, or turns a clear label into an icon with no accessible name, it is not a successful responsive improvement."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "responsive web design",
+      "definition": "A design approach that adapts a page’s layout and presentation to available viewing conditions while preserving usability."
+    },
+    {
+      "term": "viewport",
+      "definition": "The area of a browser window used to display a web document."
+    },
+    {
+      "term": "reflow",
+      "definition": "The browser’s rearrangement of content as available layout space changes."
+    },
+    {
+      "term": "fluid layout",
+      "definition": "A layout designed to use available container or viewport space instead of a single fixed width."
+    },
+    {
+      "term": "content-first design",
+      "definition": "Planning layout changes from when content becomes difficult to use rather than from a list of device models."
+    },
+    {
+      "term": "max-width",
+      "definition": "A CSS constraint that limits an element’s used width without requiring it to reach that limit."
+    },
+    {
+      "term": "text alternative",
+      "definition": "Text that communicates the purpose or content of non-text material for people who cannot use the material directly."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Think of a web page as a backpack that has to work in a small locker, on a desk, and in a big closet. A responsive design does not make three separate backpacks. It lets the pockets and objects rearrange so the important things still fit and can be found. Words can wrap into new lines, boxes can use less or more room, and pictures can shrink before sticking out.\n\nThe designer first protects what a visitor needs: the title, instructions, button, and useful details. Then the design gets extra room when it has it. A small note in the page head tells a phone browser to measure the page using the phone’s width. That note helps, but it cannot fix a crowded or confusing design on its own.",
+    "analogy": "Responsive design is like a well-packed backpack whose contents can be arranged for different storage spaces without losing the map, water, or first-aid kit.",
+    "analogyLimits": "A web layout is not a physical backpack. Browsers calculate sizes and reflow rules, while real users also need readable language, keyboard access, text alternatives, and suitable downloads."
+  },
+  "workedExample": "A student designs an event page with a heading, a short description, a registration button, and a poster image. The original card is `width: 760px`; on a 360px viewport it causes horizontal scrolling. The student changes the card to `width: 100%; max-width: 760px` and centers it within a padded parent. The poster gets `max-width: 100%; height: auto`, so it can shrink with the card instead of overflowing. The student keeps the heading and button above the poster, adds the viewport meta element, then resizes the browser. The narrow version still shows the event purpose and action first; the wider version gains comfortable reading space. This is a fluid-layout repair, not a separate phone page.",
+  "commonMistakes": [
+    {
+      "mistake": "Building a fixed version for each popular device.",
+      "correction": "Let content and available space guide a flexible layout; unknown screens will exist."
+    },
+    {
+      "mistake": "Treating the viewport meta element as a complete mobile solution.",
+      "correction": "It configures the viewport but does not repair fixed widths, priority, labels, or readability."
+    },
+    {
+      "mistake": "Using only max-width: 100% and assuming media is optimized.",
+      "correction": "It can prevent visual overflow, but file choice and content suitability still require review."
+    },
+    {
+      "mistake": "Removing labels or essential text to make a narrow screenshot look cleaner.",
+      "correction": "Preserve meaning and accessible names; rearrange or simplify presentation without hiding necessary context."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "responsive design",
+      "b": "device-specific fixed layout",
+      "distinction": "Responsive design adapts to available conditions; a fixed layout assumes one predetermined canvas."
+    },
+    {
+      "a": "fluid sizing",
+      "b": "unbounded sizing",
+      "distinction": "Fluid sizing can still use maximum or minimum constraints to preserve usability."
+    }
+  ],
+  "keyTakeaway": "Responsive design is a content-first approach: make the baseline usable in limited space, let layout and media adapt, and verify that meaning and access survive every arrangement.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:responsive-design:1",
+      "prompt": "What best defines responsive web design?",
+      "options": [
+        "A separate website for every phone model",
+        "A CSS feature that only changes text size",
+        "An approach for keeping pages usable across viewing conditions",
+        "A requirement that every screen have identical pixels"
+      ],
+      "correctIndex": 2,
+      "explanation": "RWD is an approach to adaptable, usable layouts; it is not a device catalogue, one feature, or identical rendering.",
+      "difficulty": "recall",
+      "skill": "define responsive design",
+      "sourceIds": [
+        "mdn-responsive-web-design"
+      ]
+    },
+    {
+      "id": "web-development:foundations:responsive-design:2",
+      "prompt": "Why can a single fixed page width be a problem?",
+      "options": [
+        "It can overflow narrow viewports and waste space on wide ones",
+        "It prevents HTML from having headings",
+        "It makes all images inaccessible",
+        "It always improves text reflow"
+      ],
+      "correctIndex": 0,
+      "explanation": "A fixed width can cause horizontal scrolling when narrow and unused space when wide; the other claims do not follow.",
+      "difficulty": "understanding",
+      "skill": "identify fixed-width risk",
+      "sourceIds": [
+        "mdn-responsive-web-design"
+      ]
+    },
+    {
+      "id": "web-development:foundations:responsive-design:3",
+      "prompt": "A card must fit a narrow screen but should not become excessively wide on a desktop. Which strategy fits that goal?",
+      "options": [
+        "Give it one 760px fixed width",
+        "Use a flexible width with a reasonable max-width",
+        "Hide its heading on small screens",
+        "Choose a breakpoint based only on a phone model"
+      ],
+      "correctIndex": 1,
+      "explanation": "A flexible width plus a maximum lets the card adapt within useful bounds; the other choices either overflow, remove meaning, or target a device rather than content.",
+      "difficulty": "application",
+      "skill": "apply fluid constraints",
+      "sourceIds": [
+        "mdn-responsive-web-design"
+      ]
+    },
+    {
+      "id": "web-development:foundations:responsive-design:4",
+      "prompt": "What does width=device-width in a viewport meta element do?",
+      "options": [
+        "It downloads smaller images automatically",
+        "It turns every layout into a grid",
+        "It disables zoom for all users",
+        "It tells mobile browsers to use the device width for the viewport"
+      ],
+      "correctIndex": 3,
+      "explanation": "It configures the mobile viewport width. It neither chooses image files, creates a grid, nor by itself controls every zoom behavior.",
+      "difficulty": "understanding",
+      "skill": "explain viewport configuration",
+      "sourceIds": [
+        "mdn-responsive-web-design",
+        "mdn-viewport-meta"
+      ]
+    },
+    {
+      "id": "web-development:foundations:responsive-design:5",
+      "prompt": "Which review finding shows a responsive redesign needs more work?",
+      "options": [
+        "The main action remains clear after reflow",
+        "An image shrinks within its container",
+        "A button becomes icon-only without an accessible name",
+        "Text wraps into more lines on a narrow view"
+      ],
+      "correctIndex": 2,
+      "explanation": "An unlabeled icon can remove meaning and access. Reflow, contained media, and additional line wrapping can be appropriate when content remains usable.",
+      "difficulty": "analysis",
+      "skill": "evaluate responsive accessibility",
+      "sourceIds": [
+        "w3c-wai-designing-accessibility"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:responsive-design:1",
+      "prompt": "What best defines responsive web design?",
+      "options": [
+        "A separate website for every phone model",
+        "A CSS feature that only changes text size",
+        "An approach for keeping pages usable across viewing conditions",
+        "A requirement that every screen have identical pixels"
+      ],
+      "correctIndex": 2,
+      "explanation": "RWD is an approach to adaptable, usable layouts; it is not a device catalogue, one feature, or identical rendering."
+    },
+    {
+      "id": "web-development:foundations:responsive-design:2",
+      "prompt": "Why can a single fixed page width be a problem?",
+      "options": [
+        "It can overflow narrow viewports and waste space on wide ones",
+        "It prevents HTML from having headings",
+        "It makes all images inaccessible",
+        "It always improves text reflow"
+      ],
+      "correctIndex": 0,
+      "explanation": "A fixed width can cause horizontal scrolling when narrow and unused space when wide; the other claims do not follow."
+    },
+    {
+      "id": "web-development:foundations:responsive-design:3",
+      "prompt": "A card must fit a narrow screen but should not become excessively wide on a desktop. Which strategy fits that goal?",
+      "options": [
+        "Give it one 760px fixed width",
+        "Use a flexible width with a reasonable max-width",
+        "Hide its heading on small screens",
+        "Choose a breakpoint based only on a phone model"
+      ],
+      "correctIndex": 1,
+      "explanation": "A flexible width plus a maximum lets the card adapt within useful bounds; the other choices either overflow, remove meaning, or target a device rather than content."
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:flexbox",
+    "web-development:foundations:css-grid",
+    "web-development:foundations:media-queries",
+    "web-development:foundations:images",
+    "web-development:foundations:accessibility"
+  ],
+  "sources": [
+    "mdn-responsive-web-design",
+    "mdn-viewport-meta",
+    "w3c-wai-designing-accessibility"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only sources; no source prose adapted.",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original lesson synthesized from current MDN and W3C documentation."
+  },
+  "contentHash": "257fb63279b61f9e",
+  "status": "source-verified",
+  "public": false
+}

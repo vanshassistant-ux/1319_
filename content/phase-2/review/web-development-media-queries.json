@@ -1,0 +1,262 @@
+{
+  "id": "web-development:foundations:media-queries",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "media-queries",
+  "title": "Media Queries",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 10,
+  "tags": [
+    "web-development",
+    "css",
+    "responsive-design",
+    "media-queries"
+  ],
+  "in30Seconds": "A CSS media query asks whether a condition about the current environment is true, then lets the browser use a matching set of styles. Most often, the condition concerns available viewport width, but it can also concern output such as print or a user preference such as reduced motion. Put a query on an `@media` rule, and the declarations inside are conditional—not a separate language or a command to detect a particular device.",
+  "whyItMatters": "Media queries make one stylesheet adapt its presentation to changing conditions without changing the page's HTML or duplicating a site for every screen size. They also support considerate design: a user preference such as reduced motion can select a calmer presentation. In a course, queries clarify how CSS rules become active and how the cascade resolves rules that do match. In practice, writing conditions around content and layout pressure rather than a list of device names produces CSS that is easier to test and maintain.",
+  "learningObjectives": [
+    "Define a CSS media query and the @media rule.",
+    "Identify a media type, media feature, and media condition.",
+    "Distinguish a minimum-width condition from a maximum-width condition.",
+    "Apply a media query that changes a rule only when its condition matches.",
+    "Explain why a reduced-motion preference should change non-essential animation rather than remove essential information."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "A conditional group of CSS rules",
+      "body": "A media query is a boolean test about the media environment. CSS can use that test in an `@media` at-rule to make a group of rules conditional. In a stylesheet, the familiar pattern is `@media (width >= 48rem) { ... }`. The declarations inside do not become a new stylesheet and they do not replace the ordinary rules by themselves. Instead, when the condition is true, those declarations participate in the normal cascade alongside any other matching declarations. When it is false, the grouped rules do not apply. That distinction matters when debugging: an apparent failure may be a false condition, an unmatched selector, or a cascade conflict after the condition has matched.\n\nThe query can begin with a media type such as `screen` or `print`. It can also test a media feature: `width`, `orientation`, `hover`, `prefers-color-scheme`, and `prefers-reduced-motion` are examples of features with different kinds of values. A query can combine conditions with `and`, negate one with `not`, or use a comma-separated list for alternatives. A list such as `@media print, (width >= 48rem)` matches when either alternative matches. Media queries therefore describe a condition, not a device inventory. A rule based on width means what it says: it tests width; it does not reliably identify a phone, tablet, or laptop."
+    },
+    {
+      "heading": "Width conditions and readable syntax",
+      "body": "Width is a common feature because available space can create a genuine layout constraint. CSS supports older prefixed forms such as `(min-width: 48rem)` and `(max-width: 47.999rem)`. It also supports range syntax, including `(width >= 48rem)` and a bounded range such as `(30rem <= width < 48rem)`. The two minimum forms express the same threshold idea: the query matches at 48rem or wider. Exact boundary choices are design decisions, not universal breakpoints. A 48rem condition is not a claim that every device at that size has the same needs; it is a rule a particular layout can test.\n\nConsider a navigation component that is ordinarily a vertical list. If a wider inline space makes a horizontal arrangement legible, a matching query can set its list to a row layout. The base CSS should remain meaningful when no width query matches, and the conditional rule should make one explicit, testable change. This lesson does not prescribe a complete responsive strategy or teach a particular layout system. Its point is narrower: a query selects CSS based on a stated condition. Test the threshold by resizing a browser or using responsive tools, then inspect which rule wins. Avoid overlapping conditions that accidentally give competing declarations the same responsibility; when overlap is intentional, understand the cascade order and specificity that decide the result."
+    },
+    {
+      "heading": "Preferences and non-screen output",
+      "body": "Environment conditions are not only measurements. The `prefers-reduced-motion` media feature reports whether the user has requested reduced non-essential motion. A query such as `@media (prefers-reduced-motion: reduce)` can shorten or remove decorative transitions and animations. It should not hide information, remove a control's visible state, or make a necessary change impossible to perceive; the goal is to reduce optional motion while preserving meaning and operation. The condition reflects a preference exposed by the user environment, so authors should not treat it as a medical diagnosis or as proof that every visitor needs the same treatment.\n\nMedia types make another useful distinction. `@media print` can apply styles while printing or generating print-oriented output: for example, a site may avoid a decorative background or adjust spacing for paper. A print rule is still CSS governed by the same conditional model. It does not automatically make a document print-accessible, and it does not change the HTML's semantic structure. Likewise, media queries are useful alongside semantic HTML, accessible labels, usable focus indicators, and correctly structured content; they do not repair those foundations. Keep the jobs separate. HTML supplies meaning and structure, ordinary CSS supplies base presentation, and media queries select additional or alternative presentation when a documented environment condition matches. This separation makes each decision easier to inspect and revise."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "media query",
+      "definition": "A condition that tests characteristics of the media environment for conditional styling."
+    },
+    {
+      "term": "@media",
+      "definition": "A CSS at-rule that conditionally applies its enclosed rules when its media query matches."
+    },
+    {
+      "term": "media feature",
+      "definition": "A characteristic that a media query can test, such as width, orientation, or a user preference."
+    },
+    {
+      "term": "media type",
+      "definition": "A broad output category in a media query, such as screen or print."
+    },
+    {
+      "term": "media condition",
+      "definition": "A boolean expression made from one or more media-feature tests and logical operators."
+    },
+    {
+      "term": "range syntax",
+      "definition": "Media-query notation that compares a feature with a value, such as width >= 48rem."
+    },
+    {
+      "term": "prefers-reduced-motion",
+      "definition": "A media feature that indicates a user preference to reduce non-essential motion."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Think of ordinary CSS as instructions that are always available: make this text this size, put space here, use this color. A media query adds an “if” label to some instructions. It says, “If the page has at least this much room, use these extra rules,” or “If the person asked for less motion, use the quieter version.” The browser checks the condition and includes those rules only when the answer is yes.\n\nThe condition is about the current situation, not the name of a gadget. A narrow browser window on a large computer can meet a narrow-width condition, and a wide window on a small device can meet a wide-width condition. That is why it is more useful to name the condition than to guess the visitor’s hardware.",
+    "analogy": "A media query is like a note on a classroom activity box: “Use these materials only if the class is working outdoors.” The activity is still part of the plan, but its condition decides whether it is used.",
+    "analogyLimits": "A browser does not make a one-time classroom choice. Conditions can change while a page is open, and matched CSS rules still interact with the cascade, selectors, and other CSS rules."
+  },
+  "workedExample": "Start with a readable base rule: `.nav { display: flex; flex-direction: column; gap: 0.5rem; }`. Suppose testing shows that the navigation has enough room to become a row at 48rem. Add `@media (width >= 48rem) { .nav { flex-direction: row; } }`. At 47rem, the condition is false, so the column direction remains. At exactly 48rem and above, it is true, so the later matching declaration changes only `flex-direction` to `row`. The query does not create the navigation or identify a device; it selects one presentation rule from an explicit width condition. A separate `@media (prefers-reduced-motion: reduce)` rule could reduce decorative transition duration without changing the navigation's content or controls.",
+  "commonMistakes": [
+    {
+      "mistake": "Writing a query to identify a specific phone model.",
+      "correction": "Test the actual condition the layout needs, such as available width, rather than assuming a device category."
+    },
+    {
+      "mistake": "Assuming every @media rule overrides all ordinary CSS.",
+      "correction": "A matched rule joins the usual cascade; selector matching, specificity, and order still matter."
+    },
+    {
+      "mistake": "Using a reduced-motion rule to remove essential information or feedback.",
+      "correction": "Reduce decorative motion while preserving meaning, controls, and usable state changes."
+    },
+    {
+      "mistake": "Treating a print query as a substitute for semantic HTML.",
+      "correction": "Use print CSS for presentation while keeping the document structurally meaningful in HTML."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "media query",
+      "b": "container query",
+      "distinction": "A media query tests the media environment, while a container query can test characteristics of a containing element."
+    },
+    {
+      "a": "min-width / width >=",
+      "b": "max-width / width <=",
+      "distinction": "A minimum condition matches at or above its threshold; a maximum condition matches at or below its threshold."
+    },
+    {
+      "a": "media feature",
+      "b": "media type",
+      "distinction": "A feature is a specific tested characteristic such as width; a type is a broad category such as print."
+    }
+  ],
+  "keyTakeaway": "Media queries are conditional CSS. State the environment condition precisely, keep a usable base style, and remember that a matching @media rule still participates in the normal cascade.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:media-queries:1",
+      "prompt": "What does an @media rule do when its media query is true?",
+      "options": [
+        "It deletes ordinary CSS rules.",
+        "It changes the page's HTML structure.",
+        "It lets the rules inside the @media block participate in the CSS cascade.",
+        "It permanently stores the viewport width."
+      ],
+      "correctIndex": 2,
+      "explanation": "A true media query makes the enclosed CSS applicable; HTML and other CSS rules remain, and the cascade still resolves conflicts.",
+      "difficulty": "recall",
+      "skill": "Identify the effect of a matching @media rule",
+      "sourceIds": [
+        "mdn-css-media-queries",
+        "w3c-css-conditional-3"
+      ]
+    },
+    {
+      "id": "web-development:foundations:media-queries:2",
+      "prompt": "Which query matches when the viewport width is at least 48rem?",
+      "options": [
+        "@media (width < 48rem)",
+        "@media (width >= 48rem)",
+        "@media print",
+        "@media (prefers-reduced-motion: reduce)"
+      ],
+      "correctIndex": 1,
+      "explanation": "The >= comparison includes 48rem and larger widths. The other options test a narrower width, print media, or a motion preference.",
+      "difficulty": "understanding",
+      "skill": "Interpret range syntax",
+      "sourceIds": [
+        "w3c-media-queries-4",
+        "mdn-css-media-queries"
+      ]
+    },
+    {
+      "id": "web-development:foundations:media-queries:3",
+      "prompt": "A site has a decorative spinning icon but must preserve the status text beside it. Which conditional rule best respects a visitor who requests reduced motion?",
+      "options": [
+        "Hide the entire status component.",
+        "Remove the text and keep the spinner.",
+        "Disable all CSS on the page.",
+        "Use prefers-reduced-motion to remove or shorten the decorative animation while leaving the status text available."
+      ],
+      "correctIndex": 3,
+      "explanation": "Reduced-motion styling should reduce non-essential movement while preserving information and operation; hiding content or all CSS does not meet that goal.",
+      "difficulty": "application",
+      "skill": "Apply a user-preference media feature responsibly",
+      "sourceIds": [
+        "mdn-css-media-queries",
+        "w3c-media-queries-5"
+      ]
+    },
+    {
+      "id": "web-development:foundations:media-queries:4",
+      "prompt": "Why is @media (width >= 48rem) more accurate than a rule named “tablet mode”?",
+      "options": [
+        "It tests a stated width condition instead of guessing the visitor's device category.",
+        "It guarantees a two-column layout is accessible.",
+        "It works only on tablets.",
+        "It changes the HTML into a tablet-specific document."
+      ],
+      "correctIndex": 0,
+      "explanation": "The query evaluates width, not device identity. It does not guarantee accessibility, limit itself to tablets, or alter HTML.",
+      "difficulty": "analysis",
+      "skill": "Separate environment conditions from device labels",
+      "sourceIds": [
+        "mdn-css-media-queries",
+        "w3c-media-queries-4"
+      ]
+    },
+    {
+      "id": "web-development:foundations:media-queries:5",
+      "prompt": "What is the effect of the comma in @media print, (width >= 48rem)?",
+      "options": [
+        "Both print and width conditions must be true.",
+        "It makes the second condition invalid.",
+        "The query matches if either the print type or the width condition matches.",
+        "It tests whether a printer is 48rem wide."
+      ],
+      "correctIndex": 2,
+      "explanation": "A comma-separated media-query list is an OR list. `and`, rather than a comma, combines conditions that must both match.",
+      "difficulty": "understanding",
+      "skill": "Interpret a media-query list",
+      "sourceIds": [
+        "w3c-media-queries-4",
+        "mdn-css-media-queries"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:media-queries:1",
+      "prompt": "What does an @media rule do when its media query is true?",
+      "options": [
+        "It deletes ordinary CSS rules.",
+        "It changes the page's HTML structure.",
+        "It lets the rules inside the @media block participate in the CSS cascade.",
+        "It permanently stores the viewport width."
+      ],
+      "correctIndex": 2,
+      "explanation": "A true media query makes the enclosed CSS applicable; HTML and other CSS rules remain, and the cascade still resolves conflicts."
+    },
+    {
+      "id": "web-development:foundations:media-queries:2",
+      "prompt": "Which query matches when the viewport width is at least 48rem?",
+      "options": [
+        "@media (width < 48rem)",
+        "@media (width >= 48rem)",
+        "@media print",
+        "@media (prefers-reduced-motion: reduce)"
+      ],
+      "correctIndex": 1,
+      "explanation": "The >= comparison includes 48rem and larger widths."
+    },
+    {
+      "id": "web-development:foundations:media-queries:3",
+      "prompt": "A site has a decorative spinning icon but must preserve the status text beside it. Which conditional rule best respects a visitor who requests reduced motion?",
+      "options": [
+        "Hide the entire status component.",
+        "Remove the text and keep the spinner.",
+        "Disable all CSS on the page.",
+        "Use prefers-reduced-motion to remove or shorten the decorative animation while leaving the status text available."
+      ],
+      "correctIndex": 3,
+      "explanation": "Reduced-motion styling should reduce non-essential movement while preserving information and operation."
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:css-grid",
+    "web-development:foundations:responsive-design",
+    "web-development:foundations:accessibility",
+    "web-development:foundations:wcag-basics"
+  ],
+  "sources": [
+    "mdn-css-media-queries",
+    "w3c-media-queries-4",
+    "w3c-css-conditional-3",
+    "w3c-media-queries-5"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only sources; no source prose adapted.",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original explanation and examples synthesized from current MDN documentation and W3C specifications."
+  },
+  "contentHash": "a1c9b981bdf1b7a7",
+  "status": "source-verified",
+  "public": false
+}

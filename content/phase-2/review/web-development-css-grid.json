@@ -1,0 +1,231 @@
+{
+  "id": "web-development:foundations:css-grid",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "css-grid",
+  "title": "CSS Grid",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 10,
+  "tags": [
+    "web-development",
+    "css",
+    "layout",
+    "grid"
+  ],
+  "in30Seconds": "CSS Grid is CSS's two-dimensional layout system. A grid container defines columns and rows; its direct children become grid items that can be placed into the resulting cells or made to span several tracks. Set `display: grid` on the parent, then describe its tracks with properties such as `grid-template-columns` and `grid-template-rows`. Grid is useful when both horizontal and vertical structure matter.",
+  "whyItMatters": "Grid gives a page or component an explicit spatial plan instead of relying on offsets and coincidences. In coursework, its terms—container, item, track, line, and area—make layout decisions testable and explainable. In practice, a named grid can keep a header, navigation, main content, and supplementary content coherent as the design evolves. This lesson focuses on Grid's rows, columns, lines, areas, and sizing; flexbox and responsive adaptations are separate subjects.",
+  "learningObjectives": [
+    "Define grid container, grid item, track, line, and area.",
+    "Explain how explicit columns and rows create a grid.",
+    "Distinguish line placement from named-area placement.",
+    "Apply `fr`, `repeat()`, and `minmax()` to a simple track definition.",
+    "Calculate a simple `fr` allocation after fixed tracks are removed."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "A two-dimensional formatting context",
+      "body": "An element with `display: grid` establishes a grid formatting context. Its direct children are grid items; deeper descendants are not automatically items of that same grid. Grid is two-dimensional because the container has a column axis and a row axis. A column or row is a grid track, and the dividing boundaries are grid lines. The rectangle between adjacent row and column lines is a grid cell. One or more cells together form a grid area. These names are diagnostic tools: when an item appears in the wrong place, ask which lines, tracks, or area the rule actually addresses. The container controls this arrangement; setting a placement property on an item does not convert that item into a new parent grid for its own descendants.\n\nThe author can define an explicit grid with `grid-template-columns` and `grid-template-rows`. For example, `grid-template-columns: 12rem 1fr;` makes two explicit column tracks: a fixed 12rem first track and a second track that receives the remaining available space as a flexible fraction. If items need more slots than the explicit grid supplies, Grid can create implicit tracks; `grid-auto-rows` and `grid-auto-columns` control their size. This lesson uses explicit tracks so that placement is visible and intentional."
+    },
+    {
+      "heading": "Placing items with lines and areas",
+      "body": "Grid offers more than one readable placement language. Line placement uses `grid-column` and `grid-row`. In a three-column grid, `grid-column: 1 / 3` places an item from column line 1 up to, but not including, line 3, so it spans two column tracks. Line numbers refer to boundaries, not the tracks themselves. The end line can also be expressed with `span`, as in `grid-column: 1 / span 2`. An item without an explicit placement participates in the auto-placement algorithm. Author-defined names can also be attached to grid lines when a design benefits from a more meaningful placement vocabulary.\n\nNamed areas make a larger page pattern easier to inspect. `grid-template-areas` writes a row-by-row diagram using names, and an item joins a named rectangle through `grid-area`. Every repeated name must make a rectangle; an L-shaped repetition is invalid for a named area. Areas are particularly useful when the layout has meaningful regions such as `header`, `nav`, `main`, and `aside`. They do not replace semantic HTML: a landmark element still needs appropriate HTML structure. Grid describes placement, while HTML communicates document meaning."
+    },
+    {
+      "heading": "Sizing tracks deliberately",
+      "body": "Track lists can mix fixed lengths and flexible sizes. The `fr` unit represents a share of leftover space in the grid container after fixed-size tracks and gaps are accounted for. Thus `1fr 2fr` divides the available flexible space into three equal shares, assigning one to the first track and two to the second. It does not mean a fraction of the entire viewport, and content constraints can affect an actual used size. `repeat(3, 1fr)` is a compact way to write three equal flexible tracks.\n\n`minmax(min, max)` gives a track a range. For example, `minmax(12rem, 1fr)` says a track should not be smaller than 12rem and may take a flexible share up to its maximum behavior. Grid's sizing algorithm considers intrinsic content contributions and constraints, so a classroom calculation should state its simplifying assumptions. `gap` creates deliberate separation between tracks; it is not a column or row itself. A fixed length, a percentage, an intrinsic size keyword, and a flexible fraction answer different sizing questions; do not replace one mechanically with another. In particular, an item's unbreakable content may impose a minimum that makes a simplified fraction calculation unsuitable for a production layout. When debugging, inspect the computed grid, identify fixed and flexible tracks, and then distinguish a sizing question from a placement question. Do not use this lesson as a substitute for flexbox, media-query, or container-query decisions."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "grid container",
+      "definition": "An element that establishes a grid formatting context with a grid display value."
+    },
+    {
+      "term": "grid item",
+      "definition": "A direct child that participates in its parent grid container's layout."
+    },
+    {
+      "term": "grid track",
+      "definition": "A column or row between two adjacent grid lines."
+    },
+    {
+      "term": "grid line",
+      "definition": "A dividing boundary that can be used to place or span grid items."
+    },
+    {
+      "term": "grid cell",
+      "definition": "The smallest grid unit, bounded by adjacent row and column grid lines."
+    },
+    {
+      "term": "grid area",
+      "definition": "A rectangular region made from one or more grid cells."
+    },
+    {
+      "term": "fr unit",
+      "definition": "A flexible fraction that shares leftover grid space with other flexible tracks."
+    },
+    {
+      "term": "implicit grid",
+      "definition": "Tracks created by Grid when placement needs extend beyond the explicit grid."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Imagine a bulletin board ruled into rows and columns. The board owner decides how wide each column and how tall each row should be. A note can occupy one square, or stretch across several squares. CSS Grid gives a web page that kind of board. The parent makes the board; its direct children are the notes placed on it. You can point to the board's boundary lines, or give a rectangular region a name such as `main`.\n\nSome columns can have a fixed width, while others share the room left over. A `1fr` track gets one share; a `2fr` track gets two shares when the board has flexible space to divide. That is why Grid is helpful when a layout needs both rows and columns planned together.",
+    "analogy": "Grid is like a labeled bulletin board with ruled rows and columns, where notes can occupy named rectangles or span boundary lines.",
+    "analogyLimits": "A real grid layout also follows CSS sizing rules, content minimums, and auto-placement. The board analogy does not calculate those rules or provide HTML meaning."
+  },
+  "workedExample": "A dashboard container uses `display: grid; grid-template-columns: 160px 1fr 2fr; gap: 20px;`. Assume its content box is 800px wide and ignore content minimums. The fixed first column uses 160px. Two gaps use 40px, leaving 600px of flexible space. The remaining tracks have 1 + 2 = 3 fraction shares, so the second track receives 200px and the third receives 400px. A summary card with `grid-column: 2 / 4` starts at line 2 and ends before line 4, spanning the second and third tracks. It does not occupy the gaps as tracks; the gaps remain separation between tracks.",
+  "commonMistakes": [
+    {
+      "mistake": "Calling every descendant a grid item.",
+      "correction": "Only direct children of the grid container are items in that grid."
+    },
+    {
+      "mistake": "Treating a line number as a track number.",
+      "correction": "Lines are boundaries; placement from line 1 to line 3 spans two tracks."
+    },
+    {
+      "mistake": "Assuming `fr` is a fixed percentage of the viewport.",
+      "correction": "Flexible fractions share leftover space after applicable fixed sizing and gaps."
+    },
+    {
+      "mistake": "Using named grid areas as HTML semantics.",
+      "correction": "Use semantic HTML for meaning; areas only describe layout placement."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "grid line",
+      "b": "grid track",
+      "distinction": "A line is a boundary; a track is the row or column space between adjacent lines."
+    },
+    {
+      "a": "explicit grid",
+      "b": "implicit grid",
+      "distinction": "Explicit tracks come from the template; implicit tracks are created when placement requires more tracks."
+    },
+    {
+      "a": "line placement",
+      "b": "named-area placement",
+      "distinction": "Line placement addresses numbered or named boundaries; named-area placement addresses a declared rectangular region."
+    }
+  ],
+  "keyTakeaway": "CSS Grid plans rows and columns together. Define tracks, then place direct-child grid items by lines or named areas while treating flexible sizing as a share of leftover space.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:css-grid:1",
+      "prompt": "After a parent receives `display: grid`, which elements are that grid's items?",
+      "options": [
+        "Its direct children",
+        "Every descendant",
+        "Only elements with `grid-area`",
+        "Only block elements"
+      ],
+      "correctIndex": 0,
+      "explanation": "A grid container lays out its direct children as grid items. Deeper descendants belong to their immediate parent unless it establishes another grid.",
+      "difficulty": "recall",
+      "skill": "Identify grid items",
+      "sourceIds": [
+        "mdn-grid-basic-concepts",
+        "w3c-css-grid-2"
+      ]
+    },
+    {
+      "id": "web-development:foundations:css-grid:2",
+      "prompt": "What does `grid-column: 1 / 3` do in an explicit grid?",
+      "options": [
+        "Uses only the first column track",
+        "Starts at line 1 and spans to line 3, covering two column tracks",
+        "Creates three new columns",
+        "Places an item in row 3"
+      ],
+      "correctIndex": 1,
+      "explanation": "Grid-column uses boundary lines. The interval from line 1 to line 3 contains two tracks.",
+      "difficulty": "understanding",
+      "skill": "Interpret line placement",
+      "sourceIds": [
+        "mdn-grid-basic-concepts",
+        "w3c-css-grid-2"
+      ]
+    },
+    {
+      "id": "web-development:foundations:css-grid:3",
+      "prompt": "A 800px grid has columns `160px 1fr 2fr` and two 20px column gaps. Ignoring content constraints, how wide is the `2fr` track?",
+      "options": [
+        "200px",
+        "320px",
+        "400px",
+        "640px"
+      ],
+      "correctIndex": 2,
+      "explanation": "After 160px and 40px of gaps, 600px remains. Three fraction shares split it into 200px shares, so 2fr is 400px.",
+      "difficulty": "application",
+      "skill": "Calculate flexible track allocation",
+      "sourceIds": [
+        "mdn-grid-basic-concepts",
+        "w3c-css-grid-2"
+      ]
+    },
+    {
+      "id": "web-development:foundations:css-grid:4",
+      "prompt": "Which statement about `grid-template-areas` is correct?",
+      "options": [
+        "It gives HTML landmarks automatically",
+        "It can define an L-shaped area with one repeated name",
+        "It works only with fixed pixel tracks",
+        "A repeated area name must form a rectangle"
+      ],
+      "correctIndex": 3,
+      "explanation": "Named grid areas must be rectangular. They describe layout rather than adding HTML semantics.",
+      "difficulty": "analysis",
+      "skill": "Evaluate named-area constraints",
+      "sourceIds": [
+        "mdn-grid-basic-concepts",
+        "w3c-css-grid-2"
+      ]
+    },
+    {
+      "id": "web-development:foundations:css-grid:5",
+      "prompt": "What is an implicit grid track?",
+      "options": [
+        "A track created when placement needs extend beyond the explicit grid",
+        "A track that is always 1fr",
+        "A named area in the HTML document",
+        "A gap between two rows"
+      ],
+      "correctIndex": 0,
+      "explanation": "The implicit grid supplies tracks beyond the template when item placement requires them; it is neither a gap nor an area.",
+      "difficulty": "understanding",
+      "skill": "Distinguish explicit and implicit tracks",
+      "sourceIds": [
+        "mdn-grid-basic-concepts",
+        "w3c-css-grid-2"
+      ]
+    }
+  ],
+  "quickCheck": [
+    "After a parent receives `display: grid`, which elements are that grid's items?",
+    "What does `grid-column: 1 / 3` do in an explicit grid?",
+    "A 800px grid has columns `160px 1fr 2fr` and two 20px column gaps. Ignoring content constraints, how wide is the `2fr` track?"
+  ],
+  "relatedTopics": [
+    "web-development:foundations:flexbox",
+    "web-development:foundations:responsive-design",
+    "web-development:foundations:box-model",
+    "web-development:foundations:css"
+  ],
+  "sources": [
+    "mdn-grid-basic-concepts",
+    "w3c-css-grid-2"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only documentation and specification; no source prose adapted.",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original explanation and verified simplified track-sizing calculation based on current Grid documentation and specification."
+  },
+  "contentHash": "009bc35d9a97c1e3",
+  "status": "source-verified",
+  "public": false
+}
