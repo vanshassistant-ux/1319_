@@ -1,0 +1,20 @@
+{
+  "topicId":"python-programming:foundations:lists", "subjectId":"python-programming", "researchedAt":"2026-08-19",
+  "scope":{"core":["list literals", "indexing and slicing", "mutability and append", "aliasing and shallow copying"],"supporting":["negative indexes", "IndexError for an out-of-range single index"],"outOfScope":["tuples, sets, and dictionaries", "list methods beyond append", "list comprehensions", "files", "nested-list operations in depth"]},
+  "claims":[
+    {"claim":"A list can be written with comma-separated items between square brackets; lists can contain different types and are sequence types.","claimType":"TECHNICAL","sourceIds":["python-tutorial-numbers"],"status":"supported"},
+    {"claim":"Lists support indexing and slicing, and a list slice returns a new list.","claimType":"TECHNICAL","sourceIds":["python-tutorial-numbers","python-docs-stdtypes"],"status":"supported"},
+    {"claim":"List indexes may be negative, while a too-large single index raises IndexError; slice bounds beyond the sequence are handled gracefully.","claimType":"TECHNICAL","sourceIds":["python-tutorial-numbers","python-docs-stdtypes"],"status":"supported"},
+    {"claim":"Lists are mutable: item assignment can replace content and list.append() adds an item at the end.","claimType":"TECHNICAL","sourceIds":["python-tutorial-numbers","python-docs-stdtypes"],"status":"supported"},
+    {"claim":"Simple assignment never copies data: two names can refer to one list, and changes through either name are visible through the other.","claimType":"TECHNICAL","sourceIds":["python-tutorial-numbers"],"status":"supported"},
+    {"claim":"A full slice returns a shallow copy of a list; changing a top-level item in that copy does not replace the corresponding top-level item in the original.","claimType":"TECHNICAL","sourceIds":["python-tutorial-numbers"],"status":"supported"}
+  ],
+  "conflictingEvidence":[],
+  "unsupportedExistingClaims":["The generated draft was generic placeholder prose and did not define Python lists, indexing, slicing, mutation, append, or aliasing."],
+  "correctionsNeeded":["Replaced the boilerplate lesson with original, source-verified Python semantics and Python 3-executed examples."],
+  "rightsIssues":["Official Python documentation was used as REFERENCE_ONLY. The documentation page states it is licensed under the Python Software Foundation License Version 2; this lesson uses original synthesis and does not reproduce source prose."],
+  "sourceRecords":[
+    {"id":"python-tutorial-numbers","title":"The Python Tutorial — 3. An Informal Introduction","provider":"Python Software Foundation","url":"https://docs.python.org/3/tutorial/introduction.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Read the Lists section on the live official tutorial. It supports list literals, index and slice behavior, mutability, append, assignment aliasing, and full-slice shallow copies. Facts were synthesized and examples were independently executed with python3."},
+    {"id":"python-docs-stdtypes","title":"Built-in Types — Python 3 documentation","provider":"Python Software Foundation","url":"https://docs.python.org/3/library/stdtypes.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Read the official Built-in Types page as a second authoritative source for sequence and mutable-collection semantics. Facts were synthesized; no wording reproduced."}
+  ]
+}

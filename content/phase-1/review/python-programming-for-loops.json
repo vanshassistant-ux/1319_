@@ -1,0 +1,267 @@
+{
+  "id": "python-programming:foundations:for-loops",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "for-loops",
+  "title": "For Loops",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "python",
+    "iteration",
+    "for-loop",
+    "range",
+    "enumerate"
+  ],
+  "in30Seconds": "A Python `for` loop takes items from an iterable one at a time and runs an indented block for each item. The loop target is the name that receives the current item. Use `for color in colors` when the values matter, `range()` when a numeric sequence is appropriate, and `enumerate()` when you need both a position and a value.",
+  "whyItMatters": "For loops let a program apply the same small operation to every item in a sequence without copying the operation by hand. They are central to introductory programming exercises, data cleaning, text processing, and later algorithms. Learning the difference between an item and its position also helps students write clearer code: direct iteration expresses work on values, while `enumerate()` expresses work that needs a numbered location.",
+  "learningObjectives": [
+    "Define an iterable, loop target, and loop suite.",
+    "Explain how a `for` statement assigns successive items to its target.",
+    "Apply `range()` while accounting for its excluded stop endpoint.",
+    "Use `enumerate()` to obtain a position and value together.",
+    "Trace the output of a short `for` loop."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Iteration and the shape of a for statement",
+      "body": "A `for` statement expresses iteration: repeated work over the successive items supplied by an iterable. An iterable is an object that can provide items for iteration; common beginner examples are strings, lists, and `range` objects. In `for item in iterable:`, Python obtains one item, assigns it to `item`, and executes the indented suite. It repeats that process until the iterable has no more items. The loop does not mean “repeat a fixed number of times” in every case. It means “visit the items this iterable supplies.” That distinction makes direct iteration easy to read: `for name in names:` says that the body works with each name, not with a mysterious counter.\n\nThe target can be any valid assignment target, commonly a simple name. Its value changes as the loop advances. The colon and indentation are structural, not decoration: the indented statements form the suite that runs once per supplied item. A line at the outer indentation is outside the loop and runs after iteration finishes. Keep the loop body focused on the current item, and choose a target name that explains what that item represents. This lesson concentrates on ordinary `for` iteration; conditionals, `while` loops, and custom iterator machinery are separate topics."
+    },
+    {
+      "heading": "Using range without an off-by-one error",
+      "body": "`range()` is useful when the loop should receive a progression of integers. With one argument, `range(stop)` begins at 0 and stops before `stop`. Thus `range(4)` supplies 0, 1, 2, and 3: four values, not five. With three arguments, `range(start, stop, step)` supplies values separated by `step` while still excluding `stop`. For example, `range(2, 10, 3)` supplies 2, 5, and 8. A negative step can move downward when its start, stop, and step agree.\n\nThe excluded endpoint is a frequent source of off-by-one mistakes, so trace a small range rather than guessing. Python's tutorial describes `range()` as generating arithmetic progressions and explains that a range object supplies values as it is iterated; it is not itself a list of all those values. Use `range()` when the number sequence is the thing the program needs—for example, a fixed set of numbered attempts. Do not reach for `range(len(items))` merely to obtain each value of a sequence. Direct iteration is usually clearer when only the values are needed. For instance, `for title in titles:` tells the reader immediately that the body uses titles. An index is useful only if its number has a purpose, such as referring to a particular location or displaying an ordered label. Choosing the direct form when possible reduces the chance of accidentally using a number where the program expected the item."
+    },
+    {
+      "heading": "Positions and values with enumerate",
+      "body": "Sometimes a loop needs both an item and a count showing its position. `enumerate(iterable)` produces pairs containing a count and each value from the iterable. Its count defaults to 0, and `enumerate(iterable, start=1)` changes the first count to 1. Python can unpack each pair into two loop targets: `for position, color in enumerate(colors, start=1):`. On the first pass, `position` receives 1 and `color` receives the first color; on the next pass they receive the next pair.\n\nThis pattern communicates intent better than manually maintaining a counter, and it avoids mixing up an index with an item. It is especially useful for user-facing numbered lists, where numbering often begins at 1 even though many Python sequence positions begin at 0. `enumerate()` does not change the underlying iterable; it yields count-and-value pairs while the loop runs. If the program only needs each color, `for color in colors:` remains the simplest expression. If it needs a number displayed next to each color, use `enumerate()` and state the starting number explicitly. A loop header should make clear whether the body needs the value, its displayed position, or both; that choice is part of communicating the program's purpose to a future reader."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "iteration",
+      "definition": "The process of taking successive items from an iterable and performing a loop's suite for each one."
+    },
+    {
+      "term": "iterable",
+      "definition": "An object that can supply items for iteration, such as a string, a list, or a range object."
+    },
+    {
+      "term": "loop target",
+      "definition": "The assignment target in a for statement that receives the current item or unpacked part of an item."
+    },
+    {
+      "term": "suite",
+      "definition": "The indented block of statements controlled by a Python statement such as for."
+    },
+    {
+      "term": "range",
+      "definition": "A built-in object for an arithmetic progression of integers, commonly used in numeric iteration."
+    },
+    {
+      "term": "stop endpoint",
+      "definition": "The boundary passed to range that the generated progression does not include."
+    },
+    {
+      "term": "enumerate",
+      "definition": "A built-in function that yields a count together with each value from an iterable."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Imagine a row of labeled bins. A `for` loop opens one bin at a time, gives its contents a temporary name, and performs the same instruction on those contents. When the row ends, the repeated job ends. The name after `for` is not a container holding all the bins; it is the label for the item currently being handled.\n\n`range()` is like a ticket dispenser whose last printed number is just before the number on its stop sign. `range(4)` hands out 0 through 3. `enumerate()` is like putting a number sticker on each bin as you visit it. It gives you both the sticker number and the bin's contents, so you can say “1: red” and then “2: blue.”",
+    "analogy": "A for loop is a cafeteria line: the server handles one tray at a time using the same procedure. `enumerate()` adds a tray number to each handoff.",
+    "analogyLimits": "A real cafeteria line may change its procedure or add trays while it operates. The basic examples here assume the iterable supplies items in order and focus only on the loop's ordinary visit-one-item-at-a-time behavior."
+  },
+  "workedExample": "Suppose a program needs to print a numbered packing list. `colors = ['red', 'blue']` is the iterable. The loop `for position, color in enumerate(colors, start=1):` receives the pair `(1, 'red')` first, so `print(position, color)` prints `1 red`. The next pair is `(2, 'blue')`, printing `2 blue`. The output is therefore:\n\n```python\n1 red\n2 blue\n```\n\nFor a numeric progression, `for n in range(2, 10, 3): print(n)` visits 2, 5, and 8. It does not visit 10 because range excludes its stop endpoint.",
+  "commonMistakes": [
+    {
+      "mistake": "Expecting `range(4)` to include 4.",
+      "correction": "Trace it as 0, 1, 2, 3; the stop endpoint is excluded."
+    },
+    {
+      "mistake": "Using `range(len(items))` when the loop only needs each item.",
+      "correction": "Write `for item in items:` for direct, value-focused iteration."
+    },
+    {
+      "mistake": "Treating the loop target as a collection of all items.",
+      "correction": "It names the current item for the current pass through the suite."
+    },
+    {
+      "mistake": "Manually changing a counter when a count and value are needed together.",
+      "correction": "Use `enumerate(iterable, start=...)` and unpack its pair into two targets."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "`for item in items`",
+      "b": "`for index, item in enumerate(items)`",
+      "distinction": "The first supplies values only; the second supplies a count and a value."
+    },
+    {
+      "a": "`range(4)`",
+      "b": "`[0, 1, 2, 3]`",
+      "distinction": "Both can supply these values in iteration, but range is a range object rather than a list."
+    }
+  ],
+  "keyTakeaway": "A Python `for` loop visits the items an iterable supplies and runs its indented suite once per item. Use direct iteration for values, `range()` for a numeric progression with an excluded stop, and `enumerate()` when a count and value belong together.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:for-loops:1",
+      "prompt": "In `for fruit in fruits:`, what does `fruit` receive on each pass?",
+      "options": [
+        "The entire `fruits` iterable",
+        "The current item supplied by `fruits`",
+        "Only the numeric position of the item",
+        "A newly created list of the remaining items"
+      ],
+      "correctIndex": 1,
+      "explanation": "The for statement assigns each successive item from the iterable to its target. The target is not the full iterable, an automatic index, or a list of leftovers.",
+      "difficulty": "recall",
+      "skill": "Identify the role of a loop target",
+      "sourceIds": [
+        "python-lang-ref-compound-stmts"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:for-loops:2",
+      "prompt": "What values are printed by `for n in range(2, 10, 3): print(n)`?",
+      "options": [
+        "2, 5, 8, 11",
+        "2, 5, 8, 10",
+        "3, 6, 9",
+        "2, 5, 8"
+      ],
+      "correctIndex": 3,
+      "explanation": "The progression starts at 2, advances by 3, and stops before 10, so it supplies 2, 5, and 8. The other options include an excluded or overshot value, or start from the wrong value.",
+      "difficulty": "application",
+      "skill": "Trace a range progression",
+      "sourceIds": [
+        "python-tutorial-controlflow"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:for-loops:3",
+      "prompt": "Which loop is clearest when a program only needs to print every name in `names`?",
+      "options": [
+        "`for name in names: print(name)`",
+        "`for index, name in enumerate(names): print(index)`",
+        "`for number in range(len(names)): print(number)`",
+        "`for name in range(names): print(name)`"
+      ],
+      "correctIndex": 0,
+      "explanation": "Direct iteration gives the needed values and expresses the task. The enumerate and range choices focus on positions instead; the final choice incorrectly passes a collection to range.",
+      "difficulty": "understanding",
+      "skill": "Choose direct iteration",
+      "sourceIds": [
+        "python-lang-ref-compound-stmts"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:for-loops:4",
+      "prompt": "A menu should display `1 tea` and `2 coffee` from `drinks = ['tea', 'coffee']`. Which header supplies the needed values?",
+      "options": [
+        "`for drink in drinks:`",
+        "`for number in range(drinks):`",
+        "`for number, drink in enumerate(drinks, start=1):`",
+        "`for number, drink in range(len(drinks)):`"
+      ],
+      "correctIndex": 2,
+      "explanation": "enumerate with start=1 yields a count and each drink, which can be unpacked into the two targets. The alternatives omit a needed number or misuse range.",
+      "difficulty": "application",
+      "skill": "Apply enumerate with a custom start",
+      "sourceIds": [
+        "python-docs-builtins-conversion"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:for-loops:5",
+      "prompt": "Why can `enumerate(colors, start=1)` be preferable to manually updating a counter in this lesson's numbered-list example?",
+      "options": [
+        "It changes each color into a string",
+        "It yields a count and a value together for each iteration",
+        "It makes `colors` contain one more item",
+        "It includes the stop endpoint of a range"
+      ],
+      "correctIndex": 1,
+      "explanation": "enumerate yields count-and-value pairs and accepts a starting count. It does not change the values or length of the iterable, and it is unrelated to range's stop rule.",
+      "difficulty": "analysis",
+      "skill": "Explain why enumerate fits a requirement",
+      "sourceIds": [
+        "python-docs-builtins-conversion"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "python-programming:foundations:for-loops:1",
+      "prompt": "In `for fruit in fruits:`, what does `fruit` receive on each pass?",
+      "options": [
+        "The entire `fruits` iterable",
+        "The current item supplied by `fruits`",
+        "Only the numeric position of the item",
+        "A newly created list of the remaining items"
+      ],
+      "correctIndex": 1,
+      "explanation": "The for statement assigns each successive item from the iterable to its target. The target is not the full iterable, an automatic index, or a list of leftovers.",
+      "difficulty": "recall",
+      "skill": "Identify the role of a loop target",
+      "sourceIds": [
+        "python-lang-ref-compound-stmts"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:for-loops:2",
+      "prompt": "What values are printed by `for n in range(2, 10, 3): print(n)`?",
+      "options": [
+        "2, 5, 8, 11",
+        "2, 5, 8, 10",
+        "3, 6, 9",
+        "2, 5, 8"
+      ],
+      "correctIndex": 3,
+      "explanation": "The progression starts at 2, advances by 3, and stops before 10, so it supplies 2, 5, and 8. The other options include an excluded or overshot value, or start from the wrong value.",
+      "difficulty": "application",
+      "skill": "Trace a range progression",
+      "sourceIds": [
+        "python-tutorial-controlflow"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:for-loops:3",
+      "prompt": "Which loop is clearest when a program only needs to print every name in `names`?",
+      "options": [
+        "`for name in names: print(name)`",
+        "`for index, name in enumerate(names): print(index)`",
+        "`for number in range(len(names)): print(number)`",
+        "`for name in range(names): print(name)`"
+      ],
+      "correctIndex": 0,
+      "explanation": "Direct iteration gives the needed values and expresses the task. The enumerate and range choices focus on positions instead; the final choice incorrectly passes a collection to range.",
+      "difficulty": "understanding",
+      "skill": "Choose direct iteration",
+      "sourceIds": [
+        "python-lang-ref-compound-stmts"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "python-programming:foundations:while-loops",
+    "python-programming:foundations:lists",
+    "python-programming:foundations:list-comprehensions",
+    "python-programming:foundations:conditionals"
+  ],
+  "sources": [
+    "python-lang-ref-compound-stmts",
+    "python-tutorial-controlflow",
+    "python-docs-builtins-conversion"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only official documentation; no source prose adapted.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Original explanatory lesson built from verified Python language-reference, tutorial, and built-in-function semantics; all displayed examples were executed in Python 3."
+  },
+  "contentHash": "e56648995c486d56",
+  "status": "source-verified",
+  "public": false
+}

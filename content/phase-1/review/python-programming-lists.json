@@ -1,0 +1,288 @@
+{
+  "id": "python-programming:foundations:lists",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "lists",
+  "title": "Lists",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "python-programming",
+    "foundations",
+    "lists",
+    "sequences",
+    "mutability"
+  ],
+  "in30Seconds": "A Python list is a mutable sequence: one object that keeps values in an order. Write a list with square brackets, such as [\"tea\", \"coffee\"]. The first item has index 0; negative indexes count backward from the end. An index selects one item, while a slice selects a new list of a range. Because a list is mutable, assignment and append() can change it. Assigning it to another name does not copy it: both names can refer to the same list.",
+  "whyItMatters": "Lists let a program keep a changing ordered collection under one name: items in a cart, readings from an instrument, or tasks still to do. They also teach a central Python idea: names refer to objects. That idea explains both useful updates, such as adding an observation, and surprising bugs, such as changing a list through one name and seeing the change through another. Careful indexing, slicing, and copying make later work with loops, functions, and data analysis easier to reason about.",
+  "learningObjectives": [
+    "Define a Python list and create one with a list literal.",
+    "Use zero-based and negative indexes to select list items.",
+    "Explain the inclusive-start, exclusive-stop rule for list slices.",
+    "Apply item assignment and append() to deliberately change a list.",
+    "Distinguish an alias made by assignment from a shallow copy made with a full slice."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "A list is an ordered, mutable sequence",
+      "body": "Python uses a list to group values in one ordered collection. A list literal places comma-separated items inside square brackets: [\"red\", \"green\", \"blue\"]. The brackets create a list object; the values inside are its items. Lists can contain values of different types, although a focused program often keeps a consistent kind of item together because that makes the collection easier for people to understand. Order matters: [\"red\", \"green\"] is not the same sequence as [\"green\", \"red\"]. An empty list is written []. Python's tutorial calls lists a compound data type and shows that they are sequence types, so they support selecting positions and ranges. This lesson concentrates on those basic operations rather than on the broad catalog of list methods or list comprehensions.\n\nThe word mutable is the key contrast. A mutable object can have its contents changed after it is created. For a list, that can mean replacing an item or adding an item. Mutability is about the object, not about a variable name having special powers. A name is bound to an object; an update written through a name changes the object that name currently refers to. That distinction becomes essential when more than one name refers to the same list."
+    },
+    {
+      "heading": "Indexes select one item; slices select a range",
+      "body": "List positions are indexes, and the first item is at index 0. With colors = [\"red\", \"green\", \"blue\"], colors[0] is \"red\" and colors[2] is \"blue\". A negative index counts from the right, so colors[-1] is the final item, \"blue\". Asking for one index outside the available positions raises IndexError; it is a signal that the program tried to select an item that is not there. A helpful boundary check is that a list with length n has ordinary nonnegative indexes 0 through n - 1.\n\nA slice uses a colon, such as colors[1:3]. It returns a new list containing positions from the start up to, but not including, the stop. Therefore colors[1:3] produces [\"green\", \"blue\"]. Leaving out the start means the beginning, and leaving out the stop means the end: colors[:2] gives [\"red\", \"green\"] and colors[1:] gives [\"green\", \"blue\"]. The start-inclusive, stop-exclusive convention makes adjacent slices fit together: colors[:1] + colors[1:] reconstructs the original values. Unlike a single bad index, slice bounds beyond the ends are handled by the slicing operation; colors[2:99] simply returns the portion that exists. For the basic list cases taught here, a slice creates a distinct outer list object."
+    },
+    {
+      "heading": "Changing a list on purpose",
+      "body": "Because a list is mutable, item assignment replaces an existing item. If temperatures = [18, 20, 19], then temperatures[1] = 21 changes the list to [18, 21, 19]. This differs from merely computing a new expression: assignment writes a replacement into the list object. To add one value at the end, use append(): temperatures.append(22) changes that same list to [18, 21, 19, 22]. append() adds its one argument as one item; it does not return a newly built list for you to save. That is why a beginner should not write temperatures = temperatures.append(22): the method changes the list in place and returns None.\n\nThese operations are useful when a program deliberately collects information over time. Yet they also call for care. Mutating a list while another part of a program expects its old contents can make reasoning harder. Before changing a collection, ask whether the intended result is an update to this object or a separate collection. The next distinction answers that question."
+    },
+    {
+      "heading": "Assignment makes an alias, not a copy",
+      "body": "Suppose first = [\"draft\", \"review\"] and second = first. Simple assignment does not copy the list. It binds second to the existing object, so first and second are aliases: two names for the same list. If second.append(\"publish\") runs, printing first also shows [\"draft\", \"review\", \"publish\"]. This is not Python randomly synchronizing variables; it is one object being observed through two names. Checking first is second returns True in this example because identity asks whether the names refer to the same object.\n\nWhen a separate outer list is needed, a full slice is a compact option: third = first[:]. The documentation describes a full slice as a shallow copy. After third[0] = \"outline\", first[0] remains \"draft\", because the outer list containers are different. Shallow matters when list items are themselves mutable objects: the new outer list initially contains references to the same nested items. This lesson does not rely on nested-list mechanics, but it is important not to overpromise that a full slice recursively copies everything. The practical habit is simple: use assignment when shared updates are intended; use a copy when independent outer collections are intended, and test a small example when nested mutable values are involved."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "list",
+      "definition": "A mutable Python sequence that stores an ordered collection of items."
+    },
+    {
+      "term": "list literal",
+      "definition": "Square-bracket syntax that creates a list, such as [1, 2, 3]."
+    },
+    {
+      "term": "item",
+      "definition": "One value stored at a position in a list."
+    },
+    {
+      "term": "index",
+      "definition": "An integer position used to select one list item; the first position is 0."
+    },
+    {
+      "term": "negative index",
+      "definition": "An index counted from the end of a sequence, with -1 selecting the last item."
+    },
+    {
+      "term": "slice",
+      "definition": "A selection of a sequence range written with colon syntax, such as values[1:3]."
+    },
+    {
+      "term": "mutable",
+      "definition": "Able to have its contents changed after it is created."
+    },
+    {
+      "term": "alias",
+      "definition": "A second name that refers to the same object as another name."
+    },
+    {
+      "term": "shallow copy",
+      "definition": "A new outer container whose elements initially refer to the same element objects as the original."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Imagine a list as a labeled row of little trays. The trays are numbered starting at 0, so the first tray is tray 0. You can look in one tray with an index, or take a run of trays with a slice. The row is flexible: you can replace what is in a tray or attach another tray at the end with append().\n\nNames such as first and second are not separate rows just because their spelling differs. If you write second = first, you give the very same row a second label. Adding an item through second means anyone looking through first sees it too. To make another row, use first[:] to make a new outer row before changing it.",
+    "analogy": "A list is like a row of numbered trays, and variable names are labels pointing to that row.",
+    "analogyLimits": "Actual Python lists are objects in memory, not physical trays, and a shallow copy is subtler than making a completely independent physical duplicate: mutable objects inside both lists can still be shared."
+  },
+  "workedExample": "Run this Python 3 code: tasks = [\"read\", \"write\", \"submit\"]; urgent = tasks; urgent.append(\"email\"); snapshot = tasks[:]; snapshot[0] = \"plan\". The first append changes the one list referred to by both tasks and urgent, so tasks becomes [\"read\", \"write\", \"submit\", \"email\"]. The full slice creates a different outer list for snapshot. Replacing snapshot[0] therefore leaves tasks[0] as \"read\" while snapshot[0] becomes \"plan\". Also, tasks[1:3] evaluates to [\"write\", \"submit\"]: position 1 is included and position 3 is not. These results were executed with python3.",
+  "commonMistakes": [
+    {
+      "mistake": "Treating index 1 as the first list item.",
+      "correction": "Python uses zero-based indexing, so the first item is at index 0."
+    },
+    {
+      "mistake": "Expecting a slice stop to be included.",
+      "correction": "A slice starts at its first bound and stops before its second bound; values[1:3] has positions 1 and 2."
+    },
+    {
+      "mistake": "Assuming second = first makes a second list.",
+      "correction": "Assignment aliases the existing list. Use a copy such as first[:] when a separate outer list is intended."
+    },
+    {
+      "mistake": "Saving the result of append().",
+      "correction": "append() changes the list in place and returns None; call it as a statement."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "list[index]",
+      "b": "list[start:stop]",
+      "distinction": "An index selects one item; a slice selects a range and returns a new list."
+    },
+    {
+      "a": "other = items",
+      "b": "other = items[:]",
+      "distinction": "Assignment makes another name for the same list; a full slice makes a shallow copy of the outer list."
+    },
+    {
+      "a": "items[1] = value",
+      "b": "items.append(value)",
+      "distinction": "Item assignment replaces an existing position; append() adds one item at the end."
+    }
+  ],
+  "keyTakeaway": "Lists are ordered, mutable Python sequences. Indexes select individual items, slices select ranges, and assignment can create aliases rather than copies—so choose a shallow copy when you need an independent outer list.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:lists:1",
+      "prompt": "Which expression creates a list containing the values 3 and 5?",
+      "options": [
+        "A. [3, 5]",
+        "B. (3, 5)",
+        "C. {3, 5}",
+        "D. 3, 5"
+      ],
+      "correctIndex": 0,
+      "explanation": "[3, 5] is a list literal. Parentheses create a tuple in this context, braces create a set, and commas alone make a tuple expression.",
+      "difficulty": "recall",
+      "skill": "Recognizing list-literal syntax",
+      "sourceIds": [
+        "python-tutorial-numbers"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:lists:2",
+      "prompt": "For colors = [\"red\", \"green\", \"blue\"], what does colors[-1] select?",
+      "options": [
+        "A. \"red\"",
+        "B. \"green\"",
+        "C. \"blue\"",
+        "D. It raises IndexError"
+      ],
+      "correctIndex": 2,
+      "explanation": "Negative index -1 selects the final item, so it selects \"blue\". The other two options are different positions, and -1 is a valid index for this nonempty list.",
+      "difficulty": "understanding",
+      "skill": "Using negative indexes",
+      "sourceIds": [
+        "python-tutorial-numbers",
+        "python-docs-stdtypes"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:lists:3",
+      "prompt": "Given values = [10, 20, 30, 40], what is values[1:3]?",
+      "options": [
+        "A. [10, 20, 30]",
+        "B. [20, 30]",
+        "C. [20, 30, 40]",
+        "D. [30, 40]"
+      ],
+      "correctIndex": 1,
+      "explanation": "A slice includes start index 1 and excludes stop index 3, yielding the items at positions 1 and 2: [20, 30].",
+      "difficulty": "application",
+      "skill": "Applying slice boundaries",
+      "sourceIds": [
+        "python-tutorial-numbers",
+        "python-docs-stdtypes"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:lists:4",
+      "prompt": "What is printed by this code?\nitems = [\"a\"]\nother = items\nother.append(\"b\")\nprint(items)",
+      "options": [
+        "A. [\"a\"]",
+        "B. [\"b\"]",
+        "C. None",
+        "D. [\"a\", \"b\"]"
+      ],
+      "correctIndex": 3,
+      "explanation": "Simple assignment does not copy the list, so other and items refer to the same object. append() changes that object, and items prints both values.",
+      "difficulty": "analysis",
+      "skill": "Analyzing aliasing and mutation",
+      "sourceIds": [
+        "python-tutorial-numbers"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:lists:5",
+      "prompt": "Which statement makes a shallow copy of the outer list named original?",
+      "options": [
+        "A. copy = original",
+        "B. copy = original[:]",
+        "C. copy = original.append(0)",
+        "D. copy = original[0]"
+      ],
+      "correctIndex": 1,
+      "explanation": "A full slice returns a new list containing the requested elements, so original[:] is a shallow copy. Assignment aliases, append() mutates and returns None, and original[0] selects one item.",
+      "difficulty": "application",
+      "skill": "Choosing an independent outer list",
+      "sourceIds": [
+        "python-tutorial-numbers",
+        "python-docs-stdtypes"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "python-programming:foundations:lists:1",
+      "prompt": "Which expression creates a list containing the values 3 and 5?",
+      "options": [
+        "A. [3, 5]",
+        "B. (3, 5)",
+        "C. {3, 5}",
+        "D. 3, 5"
+      ],
+      "correctIndex": 0,
+      "explanation": "[3, 5] is a list literal. Parentheses create a tuple in this context, braces create a set, and commas alone make a tuple expression.",
+      "difficulty": "recall",
+      "skill": "Recognizing list-literal syntax",
+      "sourceIds": [
+        "python-tutorial-numbers"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:lists:2",
+      "prompt": "For colors = [\"red\", \"green\", \"blue\"], what does colors[-1] select?",
+      "options": [
+        "A. \"red\"",
+        "B. \"green\"",
+        "C. \"blue\"",
+        "D. It raises IndexError"
+      ],
+      "correctIndex": 2,
+      "explanation": "Negative index -1 selects the final item, so it selects \"blue\". The other two options are different positions, and -1 is a valid index for this nonempty list.",
+      "difficulty": "understanding",
+      "skill": "Using negative indexes",
+      "sourceIds": [
+        "python-tutorial-numbers",
+        "python-docs-stdtypes"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:lists:3",
+      "prompt": "Given values = [10, 20, 30, 40], what is values[1:3]?",
+      "options": [
+        "A. [10, 20, 30]",
+        "B. [20, 30]",
+        "C. [20, 30, 40]",
+        "D. [30, 40]"
+      ],
+      "correctIndex": 1,
+      "explanation": "A slice includes start index 1 and excludes stop index 3, yielding the items at positions 1 and 2: [20, 30].",
+      "difficulty": "application",
+      "skill": "Applying slice boundaries",
+      "sourceIds": [
+        "python-tutorial-numbers",
+        "python-docs-stdtypes"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "python-programming:foundations:for-loops",
+    "python-programming:foundations:tuples",
+    "python-programming:foundations:list-comprehensions",
+    "python-programming:foundations:variables"
+  ],
+  "sources": [
+    "python-tutorial-numbers",
+    "python-docs-stdtypes"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only Python documentation; no source prose adapted.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Original explanation and executed examples synthesized from official Python documentation."
+  },
+  "contentHash": "0f0d3f03badc111d",
+  "status": "source-verified",
+  "public": false
+}

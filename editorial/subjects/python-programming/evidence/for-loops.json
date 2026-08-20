@@ -1,0 +1,26 @@
+{
+  "topicId": "python-programming:foundations:for-loops",
+  "subjectId": "python-programming",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": ["for statement iteration over an iterable", "loop targets and indented suites", "range() stop behavior", "enumerate() for positions and values"],
+    "supporting": ["iteration", "iterable", "tuple unpacking"],
+    "outOfScope": ["while loops", "list comprehensions", "dictionary and set iteration details", "custom iterator implementation", "break, continue, and loop else clauses", "conditional logic in depth"]
+  },
+  "claims": [
+    {"claim": "A Python for statement iterates over the items of an iterable and executes its suite once for each item, assigning each item to the loop target.", "claimType": "TECHNICAL", "sourceIds": ["python-lang-ref-compound-stmts"], "status": "supported"},
+    {"claim": "range() generates an arithmetic progression; its stop endpoint is not included.", "claimType": "TECHNICAL", "sourceIds": ["python-tutorial-controlflow"], "status": "supported"},
+    {"claim": "The range object supplies successive values when iterated rather than constructing a list of all values.", "claimType": "TECHNICAL", "sourceIds": ["python-tutorial-controlflow"], "status": "supported"},
+    {"claim": "enumerate(iterable, start=0) returns an enumerate object whose iterator yields count-and-value tuples; its count begins at start.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-builtins-conversion"], "status": "supported"},
+    {"claim": "Multiple loop targets can unpack each pair yielded by enumerate into a position and a value.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-builtins-conversion"], "status": "supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft gave only generic statements and did not supply source-supported Python loop semantics."],
+  "correctionsNeeded": ["Replaced boilerplate with executable Python 3 examples and official-documentation-supported explanations."],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {"id": "python-lang-ref-compound-stmts", "title": "8. Compound statements - The Python Language Reference (while, for, break, continue)", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/reference/compound_stmts.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "license": "PSF License", "licenseUrl": "https://docs.python.org/3/license.html", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-19", "notes": "Read directly on 2026-08-19. Supports the for statement's iterable, target assignment, and once-per-item suite behavior. Facts synthesized; no source prose adapted."},
+    {"id": "python-tutorial-controlflow", "title": "The Python Tutorial — 4. More Control Flow Tools (if Statements)", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/tutorial/controlflow.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-19", "notes": "Read directly on 2026-08-19, including the for-statements and range() sections. Supports range arithmetic progressions, excluded stop endpoint, and its iteration behavior. Facts synthesized; no source prose adapted."},
+    {"id": "python-docs-builtins-conversion", "title": "Built-in Functions — Python 3 documentation", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/library/functions.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-19", "notes": "Read directly on 2026-08-19, including enumerate(). Supports enumerate's iterable input, start parameter, and count/value tuple output. Facts synthesized; no source prose adapted."}
+  ]
+}
