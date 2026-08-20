@@ -1,0 +1,154 @@
+# Medieval Societies
+
+## In 30 Seconds
+
+The Middle Ages, or medieval period, runs roughly 500-1500 CE. That label is European: it names a stretch of European history, and the old "Dark Ages" idea of total decline is now rejected, since the Islamic world, Tang and Song China, and the Byzantine Empire were flourishing at the same time. In western Europe, loose feudal arrangements bound lords and vassals, serfs worked the manors, and the Christian Church was the central institution — through wars like the Crusades, the Black Death, and the slow rise of towns and universities.
+
+## Why This Matters
+
+Medieval Europe is the bridge between the ancient world and the modern one, so history, literature, art, and political-thought courses keep returning to it. Studying it well trains a specific skill: refusing lazy shorthand. "The Dark Ages" is exactly the kind of myth historians teach you to dismantle — the period had real institutions, learning, and long-distance trade, and calling it "dark" mostly reveals that the label was coined by later Europeans looking down on their own past. Getting medieval societies right also means keeping the whole globe in view, because while parts of Europe rebuilt, the Islamic caliphates and East Asian empires were among the most advanced societies on earth.
+
+## Learning Objectives
+
+- Explain why "medieval" and "Middle Ages" are European periodization labels and why historians reject the "Dark Ages" framing.
+- Define feudalism and manorialism and describe the roles of lords, vassals, and serfs as a loose set of arrangements rather than a rigid system.
+- Describe the central role of the Christian Church and the place of the Byzantine (Eastern Roman) Empire in the medieval world.
+- Place the Crusades and the Black Death in time with verified dates and state basic facts about each.
+- Explain the gradual growth of towns, trade, and universities toward the period's end, and situate Europe within a flourishing wider world.
+
+## The College Version
+
+### What "medieval" means — and the "Dark Ages" myth
+
+The medieval period, or Middle Ages, is conventionally dated from roughly 500 to 1500 CE — from about the fall of the western Roman Empire (traditionally placed in 476) to about 1500, when the Renaissance, printing, and European ocean voyages mark a shift. Those endpoints are conventions, not sharp lines, and different textbooks nudge them a few decades either way. The word itself is a clue to a trap. "Medieval" comes from Latin for "the middle age," and "Middle Ages" was coined by later European scholars who saw themselves as reviving classical antiquity across a dull gap in between. In other words, the label describes European history from a particular later viewpoint; it is not a neutral name for what the whole world was doing between 500 and 1500. The harsher version of that viewpoint — the "Dark Ages," a period of decline and ignorance — is now rejected by historians. The early Middle Ages did see the western Roman state fragment and cities shrink, but it also built lasting institutions, preserved and copied classical texts, and stayed connected to a wider world. Al-Andalus in Muslim Spain was a multireligious, multiethnic society tied into Mediterranean trade and diplomacy, which OpenStax calls "a testament to the global context of the early Middle Ages." Beyond Europe, the Islamic caliphates, Tang and Song China, and the Byzantine Empire were among the most advanced societies on earth. So the age was not globally "dark" — the phrase mostly reveals the prejudices of the people who invented it.
+
+### Feudalism and the manor: a loose set of arrangements
+
+After centralized Roman authority receded in the West, power in much of western Europe rested on personal bonds and on land. Historians describe this with two linked terms. Feudalism was a collection of practices that bound lesser lords to greater lords through land and privileges given in return for personal and military support. A greater lord granted a fighter — a vassal — a piece of land called a fief, whose produce the vassal could enjoy; in return the vassal swore loyalty and owed military service and counsel. It is important not to picture this as a tidy, uniform legal pyramid. It was a flexible, unequal, and locally variable set of arrangements that looked different from region to region and changed over time; the neat diagrams in old textbooks impose more order than really existed. Underneath the warrior class sat the economy that fed everyone: manorialism. Under the manor system — named for the manor house where the lord lived — agricultural production was directed by a lord and carried out mostly by serfs, unfree peasants who owed labor to the lord, lived under his authority, and were tied to the land they worked. Serfs were gathered into manor villages where labor and tools could be shared. Not everyone was unfree — some peasants owned land and worked for themselves — but in western Europe most rural laborers were servile. Feudal and manorial relationships together organized medieval European society from the top warrior down to the village field.
+
+### The Church, the papacy, and the Byzantine East
+
+The Christian Church was the central institution of medieval western Europe. It converted the Germanic peoples who had settled the former Roman provinces, preserved and copied classical and religious texts in its monasteries, educated clergy and administrators, and lent legitimacy to rulers — most famously when Pope Leo III crowned Charlemagne, king of the Franks, emperor in 800, reviving the idea of a Roman emperor in the West. The Church was governed through the papacy, centered on Rome. But Christianity was not united. In the Great Schism of 1054, after the pope's envoy and the patriarch of Constantinople excommunicated each other, the eastern and western churches formally separated into what became the Eastern Orthodox Church and the Roman Catholic Church. That eastern church belonged to a different medieval power: the Byzantine Empire, the continuation of the eastern Roman state. Greek-speaking and Christian, centered on Constantinople, it existed from 330 to 1453 and was the longest-lasting medieval power. Under the emperor Justinian (reigned 527-565) it reached a cultural height, codifying Roman law in the Code of Justinian and building the great domed church of Hagia Sophia. The empire finally ended on 29 May 1453, when the Ottoman sultan Mehmed II captured Constantinople. Remembering Byzantium is a good corrective on its own: for most of the "Middle Ages," a wealthy Roman-descended empire flourished in the East while western Europe was rebuilding.
+
+### The Crusades and the Black Death
+
+Two events from the later medieval centuries are named again and again, and both deserve to be stated factually rather than mythologized. The Crusades were religiously motivated military campaigns that began when Pope Urban II, responding to a Byzantine request for aid, called at the Council of Clermont in France in 1095 for a war to help eastern Christians and "liberate Jerusalem." The First Crusade reached and captured Jerusalem in the summer of 1099. Further crusades followed over roughly two centuries, aimed mainly at the eastern Mediterranean, until the fall of the port city of Acre in 1291 ended the last of the Crusader States. The Black Death was a plague pandemic caused by the bacterium *Yersinia pestis*. Spreading from central Asia along Silk Road caravans and Black Sea shipping, it reached the ports of Europe in 1346-1347 — arriving at Messina and Genoa in the summer of 1347 — and swept the continent in the years around 1347-1351. It killed roughly 30 percent of Europe's population, perhaps as many as twenty-four million people. In its terror, Jewish communities were falsely blamed for spreading the plague by poisoning wells and suffered widespread persecution that escalated in several cities into massacres, even though Jewish people were dying of the disease alongside everyone else. That scapegoating is a documented atrocity, not a matter of dispute.
+
+### Towns, trade, universities — and the wider world
+
+The later medieval centuries were not static. Towns grew, long-distance commerce revived — the Crusades and renewed Mediterranean trade helped stimulate it — and a new institution appeared: the university. The first European universities emerged in the 11th and 12th centuries, with Bologna founded about 1088, followed by Paris and Oxford, offering advanced study in law, theology, medicine, and the liberal arts. Here even-handedness matters. The world's oldest continuously operating university is not European at all: it is Al-Qarawiyyin in Fez, Morocco, founded in the 9th century and recognized as such by UNESCO and Guinness World Records — older than Bologna by more than two centuries. Some historians reserve the word "university" for the specifically European institution and call Al-Qarawiyyin a madrasa; the honest move is to note the debate rather than to pretend higher learning began in Europe. That is the throughline of the whole topic. The Middle Ages were a real, developing period in European history, not a blank "dark" interval — and Europe was one region among several thriving centers of a connected world, not its lone flame in the dark.
+
+## Key Vocabulary
+
+- **Middle Ages (medieval period):** The era of European history conventionally dated from roughly 500 to 1500 CE; the name was coined by later scholars who saw it as a "middle" age between classical antiquity and their own time.
+- **Dark Ages:** An outdated, pejorative label for the early Middle Ages that portrayed it as a time of total decline; now rejected by historians because the period had real institutions and learning and the wider world was flourishing.
+- **Feudalism:** A collection of practices that bound lesser lords to greater lords through land (fiefs) and privileges given in return for personal and military support — a flexible, locally variable set of arrangements, not a single rigid system.
+- **Vassal:** A fighter who received a fief from a lord and in return swore loyalty and owed military service and counsel.
+- **Fief:** A grant of land (and its income) given by a lord to a vassal in exchange for service.
+- **Manorialism:** The medieval economic system in which agricultural production on an estate was directed by a lord and carried out mainly by serfs and other unfree laborers gathered into manor villages.
+- **Serf:** An unfree peasant who owed labor to a lord, lived under the lord's authority, and was tied to the land — not enslaved property, but not free to leave.
+- **Byzantine Empire:** The continuation of the eastern Roman Empire, Greek-speaking and Christian, centered on Constantinople; it existed from 330 to 1453.
+- **Great Schism of 1054:** The formal split of Christianity into the western (Roman Catholic) and eastern (Eastern Orthodox) churches after mutual excommunications between the pope's envoy and the patriarch of Constantinople.
+- **Crusades:** Religiously motivated military campaigns, beginning with the call at the Council of Clermont in 1095, aimed mainly at the eastern Mediterranean and the Holy Land.
+
+## Eli-10
+
+"The Middle Ages" is a nickname later Europeans gave to about a thousand years of their own history, from around 500 to 1500. Some people used to call it the "Dark Ages," as if nothing good happened, but that is wrong: people built things, wrote books, traded, and started universities, and huge parts of the world — the Muslim empires, China, and the Byzantine Empire in the east — were doing brilliantly the whole time. In western Europe, powerful lords gave land to fighters who promised to serve them, and farmers called serfs worked that land without being allowed to leave. The Christian Church was the biggest and most important organization around. Two events get mentioned a lot: the Crusades, which were religious wars over the Holy Land, and the Black Death, a plague in the 1340s that killed about a third of Europe.
+
+## Eli's Analogy
+
+Think of medieval Europe like a school with no single principal after the old head teacher leaves. Instead, senior students (lords) each protect a group of younger ones (vassals) in exchange for help, and everyone answers to one big club — the Church — that everybody belongs to.
+
+**Where the analogy breaks down:** A school is one building with shared rules, but medieval Europe had no single government at all, and the deals between lords and vassals varied wildly from place to place. And a friendly student hierarchy leaves out the harshest part: serfs were not free to walk away from the land, which no ordinary school membership resembles.
+
+## Worked Example
+
+Suppose you are handed four facts about medieval Europe and asked to put them in order and label each: (1) Charlemagne is crowned emperor; (2) the eastern and western churches split; (3) the First Crusade takes Jerusalem; (4) the Black Death sweeps Europe. Verify the dates one at a time. Charlemagne's coronation was in 800; the Great Schism was in 1054; the capture of Jerusalem was in 1099; and the Black Death's main sweep was around 1347-1351. So the sequence is 800, 1054, 1099, then 1347-1351 — Charlemagne, schism, crusade, plague. Notice that all four fall well inside the roughly 500-1500 span, and that they are spread across the whole period rather than bunched at the start, which is itself evidence against a "nothing happened" picture of the age.
+
+## Common Mistakes
+
+- **Mistake:** Calling the whole period the "Dark Ages" and assuming nothing important happened.
+  **Correction:** Historians reject that label. The Middle Ages had lasting institutions, learning, and trade, and the wider world — the Islamic caliphates, China, and the Byzantine Empire — was flourishing, so the era was not globally "dark."
+- **Mistake:** Picturing feudalism as one rigid, uniform legal pyramid that worked the same everywhere.
+  **Correction:** Feudalism was a loose, locally variable set of personal arrangements binding lords and vassals through land and service. It differed by region and changed over time; the neat charts overstate its order.
+- **Mistake:** Confusing serfs with enslaved people, or thinking they could freely leave.
+  **Correction:** Serfs were unfree peasants tied to the land who owed labor to a lord and lived under his authority, but they were not owned as property and could not simply be sold apart from the land. They were also not free to leave at will.
+- **Mistake:** Assuming the Roman Empire vanished entirely in 476 and that Europe was the medieval world's only center.
+  **Correction:** The eastern Roman (Byzantine) Empire continued until 1453, and the oldest continuously operating university is Al-Qarawiyyin in Morocco (9th century), older than Europe's. Europe was one region among several thriving centers.
+
+## Compare / Contrast
+
+- **Feudalism vs. Manorialism:** Feudalism describes the political-military bonds among lords and vassals (land and service for loyalty); manorialism describes the economic system of the estate, where serfs worked the lord's land. One organizes the warriors, the other the fields.
+- **Roman Catholic Church vs. Eastern Orthodox Church:** After the Great Schism of 1054 the western church (Latin, led by the pope in Rome) and the eastern church (Greek, led by the patriarch of Constantinople and tied to the Byzantine Empire) were formally separate branches of Christianity.
+- **The Crusades vs. The Black Death:** The Crusades were deliberate religious military campaigns (1095-1291) aimed at the Holy Land; the Black Death (c. 1347-1351) was an unplanned plague pandemic that killed about a third of Europe. One was a human undertaking, the other a biological catastrophe.
+
+## Key Takeaway
+
+The Middle Ages (c. 500-1500) is a European label, not a global "Dark Age": western Europe was organized by loose feudal and manorial arrangements under a powerful Christian Church, while the Byzantine Empire and the Islamic and East Asian worlds flourished at the same time — an era of real development, named factually through Charlemagne, the Great Schism, the Crusades, and the Black Death.
+
+## Practice Question Bank
+
+1. **In medieval western Europe, what does the term "feudalism" best describe?**
+   - A. A centralized empire in which a single emperor directly governed all of Europe
+   - B. An economic theory holding that land should be owned in common by peasant villages
+   - C. A loose, locally variable set of arrangements binding lesser lords to greater lords through land (fiefs) and privileges in return for military and personal service
+   - D. A body of Church law issued by the pope to govern monasteries
+
+   **Answer: C.** Feudalism was a collection of practices that bound lesser lords to greater lords through land and privileges given in return for personal and military support — flexible and varying by region, not uniform. Option A is wrong because medieval Europe had no single emperor governing it all. Option B misdescribes it as communal ownership. Option D confuses it with canon law.
+
+2. **The Black Death that struck Europe around 1347-1351 killed approximately what share of the continent's population?**
+   - A. About 1 percent
+   - B. About 5 percent
+   - C. About 90 percent
+   - D. About 30 percent
+
+   **Answer: D.** The plague killed roughly 30 percent of Europe's population — perhaps as many as twenty-four million people. Options A and B drastically understate the toll, while option C overstates it: the mortality was catastrophic but did not approach nine in ten across the continent.
+
+3. **A serf lives in a manor village and wants to move to a nearby town to look for other work. Under the manorial system as it typically operated in western Europe, what was his situation?**
+   - A. As an unfree peasant tied to the land, he owed labor to the lord and was not free to leave at will
+   - B. As a free wage laborer, he could relocate whenever he wished with no obligations
+   - C. As the lord's legal property, he could be sold individually to a buyer in the town
+   - D. As a vassal, he owed the lord military service but was otherwise free to travel
+
+   **Answer: A.** Serfs were unfree peasants who owed labor to the lord, lived under his authority, and were tied to the land, so they could not simply leave. Option B describes a free laborer, which most western European peasants were not. Option C wrongly equates serfdom with chattel slavery — serfs were bound to the land, not sold as individual property. Option D confuses a serf with a vassal (a fighting man who held a fief).
+
+4. **Which statement about the Byzantine Empire is accurate?**
+   - A. It was a short-lived Germanic kingdom that collapsed shortly after 476 CE
+   - B. It was the Greek-speaking, Christian continuation of the eastern Roman Empire, centered on Constantinople, that lasted until 1453
+   - C. It was the western European empire founded by Charlemagne in 800
+   - D. It was a Muslim caliphate that ruled Spain during the early Middle Ages
+
+   **Answer: B.** The Byzantine Empire was the continuation of the eastern Roman state — Greek-speaking, Christian, centered on Constantinople — and existed from 330 until the Ottomans took Constantinople in 1453. Option A is wrong because Byzantium long outlasted the western empire's fall. Option C describes Charlemagne's Frankish realm. Option D describes al-Andalus, a different society.
+
+5. **Historians reject the label "Dark Ages" for the early Middle Ages. Which piece of evidence best supports that rejection?**
+   - A. Written records from the period were completely destroyed, so nothing can be known about it
+   - B. The western Roman Empire's institutions continued unchanged, so there was no disruption at all
+   - C. Europe was cut off from every other region, proving it developed entirely on its own
+   - D. While parts of Europe rebuilt, the Islamic caliphates, China, and the Byzantine Empire were flourishing, and Europe kept trade and learning alive — so the era was neither empty nor globally "dark"
+
+   **Answer: D.** The "Dark Ages" label fails because the wider world was thriving and Europe itself preserved learning and stayed connected through trade — the era was one of development, not a blank. Option A is false (the period is well documented). Option B overstates continuity — Roman institutions did fragment in the West. Option C is the opposite of the truth: Europe was connected to a wider world, as al-Andalus's Mediterranean ties show.
+
+## Sources
+
+- **OpenStax, *World History, Volume 1: to 1500* — Chapter 13, The Post-Roman West and the Crusading Movement (13.1; Key Terms).** Feudalism, manorialism, serfs, the Church, the fall of Rome (476), and Charlemagne's coronation (800). CC BY-NC-SA 4.0; reference only. <https://openstax.org/books/world-history-volume-1/pages/13-1-the-post-roman-west-in-the-early-middle-ages>
+- **OpenStax, *World History, Volume 1* — Chapter 13 (13.3 Patriarch and Papacy; 13.4 The Crusading Movement).** Great Schism of 1054; Urban II and the Council of Clermont (1095); Jerusalem (1099); Acre (1291); trade. CC BY-NC-SA 4.0; reference only. <https://openstax.org/books/world-history-volume-1/pages/13-3-patriarch-and-papacy-the-church-and-the-call-to-crusade>
+- **OpenStax, *World History, Volume 1* — Chapter 10 (10.2 The Byzantine Empire and Persia).** Byzantium as the eastern Roman continuation; Justinian (r. 527-565); the Code of Justinian; Hagia Sophia. CC BY-NC-SA 4.0; reference only. <https://openstax.org/books/world-history-volume-1/pages/10-2-the-byzantine-empire-and-persia>
+- **OpenStax, *World History, Volume 1* — Chapter 16 (16.3 The Black Death from East to West).** Spread from central Asia (1346-1347), *Yersinia pestis*, ~30 percent mortality, and the persecution of Jewish communities. CC BY-NC-SA 4.0; reference only. <https://openstax.org/books/world-history-volume-1/pages/16-3-the-black-death-from-east-to-west>
+- **World History Encyclopedia, "Byzantine Empire" (Mark Cartwright).** The empire existed 330-1453, was the longest-lasting medieval power, and ended on 29 May 1453 when Mehmed II took Constantinople. Reference only. <https://www.worldhistory.org/Byzantine_Empire/>
+- **World History Encyclopedia, "Fatima Al-Fihri and Al-Qarawiyyin University" (Sikeena Karmali Ahmed).** Al-Qarawiyyin (Fez, 9th century) as the world's oldest continuously operating university per UNESCO and Guinness, with Bologna founded about 230 years later. Reference only. <https://www.worldhistory.org/article/2662/fatima-al-fihri-and-al-qarawiyyin-university/>
+
+## Related Topics
+
+- history:foundations:roman-world
+- history:foundations:renaissance
+- history:foundations:islamic-civilizations
+- history:foundations:major-world-religions
+- history:foundations:world-history-foundations
+
+## Editorial Metadata
+
+- **Editorial status:** READY_TO_PUBLISH
+- **Estimated minutes:** 10
+- **Research status:** source-verified
+- **Rights status:** Reference-only sources (OpenStax World History Volume 1, CC BY-NC-SA; two World History Encyclopedia entries, copyrighted); all wording original, no source prose reproduced. Museum sources (Met Heilbrunn Timeline, Smarthistory) and Britannica were unreachable behind bot-detection and were not used.
+- **Researched at:** 2026-08-19

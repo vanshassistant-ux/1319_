@@ -1,0 +1,155 @@
+# The Reformation
+
+## In 30 Seconds
+
+The Reformation was the sixteenth-century split in Western Christianity. Beginning in 1517, when Martin Luther publicized his Ninety-five Theses criticizing the sale of indulgences, reformers challenged the authority and practices of the Roman Catholic Church. Aided by the printing press, their ideas spread quickly and produced new Protestant churches. The Catholic Church answered with its own reforms while rejecting Protestant theology, and Europe was left permanently, and often violently, divided along religious lines.
+
+## Why This Matters
+
+The Reformation reshaped Europe's religion, politics, and culture, and its effects still frame debates about authority, conscience, and the relationship between church and state. Studying it teaches you to trace how a dispute over specific practices grew into a continental transformation, and how a new technology, printing, can accelerate ideas beyond anyone's control. It is also a test case in reading history even-handedly: Catholics and Protestants each believed they were defending true Christianity, and understanding the period means describing both positions fairly rather than choosing a winner. Those habits, separating fact from interpretation and weighing multiple causes, apply well beyond this one century.
+
+## Learning Objectives
+
+- Explain the main causes of the Reformation, including criticism of indulgences and broader political and economic pressures.
+- Describe Martin Luther's core positions on faith and scripture as his theological claims, without endorsing them.
+- Distinguish the major reform movements, Lutheran, Calvinist, and the Church of England, from one another.
+- Explain the Catholic Church's response through the Counter-Reformation and the Council of Trent.
+- Analyze the long-term consequences of the Reformation for European politics, warfare, and literacy.
+
+## The College Version
+
+### A Church under criticism
+
+By the early 1500s, the Roman Catholic Church was the central institution of western European life, but many people voiced complaints about its practices. A frequent target was the sale of indulgences. In Catholic teaching, an indulgence reduced the temporal punishment a soul would face in purgatory before reaching heaven; by the sixteenth century, indulgences were sometimes sold, and the money funded church projects such as the rebuilding of St. Peter's Basilica in Rome. Critics argued that selling forgiveness confused spiritual grace with a financial transaction.
+
+Calls for reform were not new, and they were not only about theology. Some rulers resented the wealth and political power of the Church and the flow of money to Rome. Humanist scholars of the Renaissance, studying the Bible and early Christian writings in their original languages, questioned later practices they could not find in scripture. Ordinary people and clergy alike criticized corruption, absentee bishops, and poorly educated priests. These grievances had circulated for generations without breaking the Church apart. What made the sixteenth century different was the combination of a compelling reformer, receptive rulers, and a new technology that could carry arguments to a wide audience faster than the Church could respond.
+
+### Luther and the Ninety-five Theses (1517)
+
+In 1517, Martin Luther, a monk and professor at the University of Wittenberg in Germany, wrote a list of arguments, the Ninety-five Theses, objecting to the sale of indulgences. According to tradition he posted them on the door of the castle church on 31 October 1517, a common way to invite academic debate. Printers copied and distributed the theses, and within about a year they were being read across Germany.
+
+Luther's objections soon widened into deeper theological claims. He taught that salvation comes through faith alone, often called sola fide, rather than through good works or payments, and that scripture alone, sola scriptura, not the pope or church tradition, is the ultimate authority for Christian belief. These were his positions in a dispute the Catholic Church rejected; the Church held that both faith and good works matter for salvation and that scripture must be read alongside church tradition and authority. In 1521, Luther was summoned to the Diet of Worms, an assembly of the Holy Roman Empire, where he refused to recant and was declared an outlaw. Protected by a sympathetic prince, he hid at Wartburg Castle and translated the New Testament into German, making scripture readable by people who knew no Latin. This lesson describes these ideas to explain the conflict, not to endorse either side.
+
+### The spread of Protestantism
+
+Luther's break was only the beginning. Other reformers developed their own movements, and the word Protestant came to describe those who separated from Rome. In Geneva, the French reformer John Calvin built an influential system centered on the doctrine of predestination, the belief that God has already determined which souls will be saved. Calvin's *Institutes of the Christian Religion* (1536) shaped reformed churches across Europe, from the Netherlands to Scotland.
+
+England's break followed a different path. In 1534, Parliament passed the Act of Supremacy, making the English monarch, Henry VIII, the head of a Church of England independent of the pope. Henry's split began as a political and dynastic dispute, because the pope would not annul his marriage, rather than as a doctrinal quarrel like Luther's, though Protestant ideas soon shaped the new church. By the mid-sixteenth century, western Christianity included Catholics, Lutherans, Calvinists, Anglicans, and smaller radical groups, each claiming to represent authentic Christian teaching.
+
+### The Catholic response: the Counter-Reformation
+
+The Catholic Church did not stand still. Its response, known as the Counter-Reformation or Catholic Reformation, combined the defense of Catholic doctrine with internal reform. The centerpiece was the Council of Trent, which met in three sessions between 1545 and 1563. There, bishops reaffirmed core Catholic teachings that the reformers had challenged: that salvation requires both faith and good works, and that scripture and church tradition are both sources of authority. At the same time, the council addressed abuses. It did not abolish indulgences but forbade selling them, and it ordered reforms such as better training for priests. New religious orders, notably the Jesuits, spread Catholic teaching and education across Europe and beyond. The Counter-Reformation shows that reformation was not only a Protestant project; the Catholic Church reformed itself while rejecting Protestant theology. Describing both the Protestant and Catholic sides on their own terms is essential to understanding the period fairly.
+
+### Consequences: a divided Christendom
+
+The Reformation permanently divided western Christianity, and the division had consequences far beyond church walls. Religious differences became entangled with politics and war. The Peace of Augsburg (1555) tried to settle the German lands with the principle *cuius regio, eius religio*, "whose realm, his religion," letting each prince choose Lutheranism or Catholicism for his territory. That compromise did not hold, and religious and political rivalries helped fuel the Thirty Years' War (1618-1648), one of the deadliest conflicts in European history, ended by the Peace of Westphalia in 1648.
+
+Other effects were slower but lasting. The reformers' emphasis on reading scripture in the vernacular encouraged literacy and the spread of printed books, and competing churches invested in schools. The idea that an individual conscience could stand against a powerful institution influenced later political thought. The settlement of the religious wars strengthened the authority of states over churches, contributing to the modern nation-state. Historians debate how much of this Luther intended, which was very little, but the long chain of consequences is why the Reformation is treated as a turning point between the medieval and modern worlds.
+
+## Key Vocabulary
+
+- **Indulgence** — In Catholic practice, a remission of the temporal punishment a soul faces for sin; by the 1500s some indulgences were sold, a practice reformers sharply criticized.
+- **Ninety-five Theses** — The list of arguments Martin Luther wrote in 1517 objecting to the sale of indulgences, an event that helped set the Reformation in motion.
+- **Sola fide (faith alone)** — Luther's teaching that a person is saved through faith rather than through good works or payments.
+- **Sola scriptura (scripture alone)** — Luther's teaching that the Bible, rather than the pope or church tradition, is the ultimate authority for Christian belief.
+- **Protestant** — A general term for Christians and churches that broke away from the Roman Catholic Church during the Reformation.
+- **Predestination** — The doctrine, associated with John Calvin, that God has already determined which souls will be saved.
+- **Counter-Reformation** — The Catholic Church's response to the Reformation, combining a defense of Catholic doctrine with internal reform, centered on the Council of Trent.
+- **Council of Trent** — The council of Catholic bishops, meeting in three sessions from 1545 to 1563, that reaffirmed Catholic doctrine and reformed abuses such as the sale of indulgences.
+- **Cuius regio, eius religio** — "Whose realm, his religion," the principle from the Peace of Augsburg (1555) that let a ruler set the official religion of his own territory.
+
+## Eli-10
+
+For centuries, almost everyone in western Europe belonged to one church, led from Rome. In the 1500s, some people said the church had drifted from what they read in the Bible, and they were especially angry that forgiveness seemed to be for sale through payments called indulgences. A monk named Martin Luther wrote down his objections in 1517. Because the printing press had recently been invented, his arguments were copied and shared faster than anyone could stop them. Luther and other reformers ended up starting new churches, called Protestant churches, that disagreed with Rome about who had authority and how people are saved. The Catholic Church fixed some of the problems people complained about but kept its core teachings and rejected the reformers' ideas. When the dust settled, western Christianity was split into several churches instead of one, and that split led to sharp political conflict and even wars.
+
+## Eli's Analogy
+
+Imagine one company that nearly everyone in town works for. A well-known employee posts a public letter listing things the company is doing wrong. Copiers spread it everywhere overnight, other employees agree and start rival companies, and the original company responds by fixing some complaints while insisting its main rules were right all along. Now the town has several competing companies instead of one.
+
+**Where the analogy breaks down:** The analogy captures the split and the role of fast copying, but it misses what was truly at stake. These were disagreements about salvation, scripture, and religious truth, not business practices. People believed their eternal fate depended on being right, which is why the divisions ran so deep and sometimes led to war, far more serious than ordinary competition.
+
+## Worked Example
+
+Suppose you are handed two accounts of the Council of Trent. A Protestant pamphlet from 1560 calls it a stubborn refusal to reform; a Catholic bishop's record calls it a faithful defense of true doctrine. A historian would not simply pick one. Reading them side by side, an approach called corroboration, you can separate fact from interpretation. It is a verifiable fact that the council met from 1545 to 1563, reaffirmed that salvation requires both faith and good works, and forbade the sale of indulgences. Whether that made it "stubborn" or "faithful" is interpretation, shaped by each writer's side. Stating the dated facts plainly while attributing the judgments to their authors is how you stay even-handed.
+
+## Common Mistakes
+
+- **Thinking Luther set out to create a new church or destroy Catholicism from the start.** He began by seeking to reform specific practices, especially the sale of indulgences. The permanent split emerged from a conflict that neither side fully intended at the outset.
+- **Assuming all Protestants believed the same things.** Lutherans, Calvinists, and the Church of England differed significantly. For example, Calvin emphasized predestination, and England's break began as a political dispute under Henry VIII.
+- **Treating the Reformation as a purely religious event.** Political ambitions, economic resentment of Church wealth, and the new printing technology were all essential causes alongside theology.
+- **Believing the Catholic Church made no reforms of its own.** The Counter-Reformation, centered on the Council of Trent (1545-1563), reformed real abuses, including forbidding the sale of indulgences, while reaffirming Catholic doctrine.
+- **Assuming the printing press caused the Reformation by itself.** Printing spread and accelerated the reformers' ideas, but the underlying grievances and theological arguments came first.
+
+## Compare / Contrast
+
+- **Sola fide (Luther's position) vs. Faith and works (Council of Trent):** Luther taught that salvation comes through faith alone; the Catholic Church at Trent reaffirmed that both faith and good works are necessary. The lesson presents these as competing positions, not as right and wrong.
+- **Luther's break with Rome vs. Henry VIII's break with Rome:** Luther's split was driven by theology; England's 1534 break began as a political and dynastic dispute over the annulment of Henry VIII's marriage, though Protestant ideas later shaped the Church of England.
+- **The Reformation vs. The Counter-Reformation:** The Reformation created new Protestant churches separate from Rome; the Counter-Reformation was the Catholic Church's response, reforming abuses while defending Catholic doctrine.
+
+## Key Takeaway
+
+The Reformation began as a call to reform specific church practices, especially the sale of indulgences, and grew, amplified by the printing press, into a permanent split in western Christianity. Catholics and Protestants each defended what they saw as true Christianity, so understanding the period means describing both sides fairly rather than declaring a winner.
+
+## Practice Question Bank
+
+1. **In what year did Martin Luther write and publicize his Ninety-five Theses?**
+   - A. 1517
+   - B. 1521
+   - C. 1534
+   - D. 1545
+
+   **Answer: A.** Luther wrote the Ninety-five Theses in 1517, by tradition on 31 October. 1521 was the Diet of Worms, 1534 was the Act of Supremacy in England, and 1545 was the opening of the Council of Trent. *(recall)*
+
+2. **What practice did Luther's Ninety-five Theses most directly criticize?**
+   - A. The translation of the Bible into vernacular languages
+   - B. The election of the Holy Roman Emperor
+   - C. The sale of indulgences
+   - D. The reforms enacted by the Council of Trent
+
+   **Answer: C.** The Theses objected to the sale of indulgences, payments said to reduce punishment in purgatory. Luther actually favored vernacular scripture; the imperial election and the Council of Trent are unrelated to the Theses, and Trent came decades later. *(recall)*
+
+3. **Which statement best summarizes two of Martin Luther's core theological positions?**
+   - A. He affirmed that salvation requires both faith and good works.
+   - B. He taught that faith alone brings salvation and that scripture is the ultimate authority.
+   - C. He argued that only the pope could correctly interpret scripture.
+   - D. He rejected the Bible in favor of church tradition.
+
+   **Answer: B.** Luther's positions were salvation by faith alone (sola fide) and scripture as the ultimate authority (sola scriptura). Option A describes the Catholic position reaffirmed at Trent, and options C and D contradict Luther's actual claims. The lesson describes these views without endorsing them. *(understanding)*
+
+4. **A historian notes that Luther's ideas spread across Germany within about a year, far faster than earlier calls for reform. Which factor best explains this speed?**
+   - A. The Council of Trent endorsed and circulated his writings.
+   - B. The Peace of Augsburg required rulers to distribute them.
+   - C. Henry VIII promoted them throughout England.
+   - D. The printing press let his works be reproduced and circulated quickly.
+
+   **Answer: D.** The printing press, developed in Europe around 1440, allowed Luther's texts to be copied and spread rapidly. The Council of Trent (1545-1563) opposed his theology and came later; the Peace of Augsburg (1555) came later still; and Henry VIII's break was a separate English matter. *(application)*
+
+5. **At the Council of Trent (1545-1563), how did the Catholic Church respond to the Protestant challenge?**
+   - A. It adopted salvation by faith alone.
+   - B. It abolished the office of the pope.
+   - C. It reaffirmed that both faith and good works are needed for salvation and reformed abuses such as the sale of indulgences.
+   - D. It merged with the Lutheran churches.
+
+   **Answer: C.** Trent reaffirmed that salvation requires both faith and good works and that scripture and tradition are both authoritative, while reforming abuses, forbidding the sale of indulgences without abolishing indulgences themselves. It rejected sola fide, kept the papacy, and did not merge with Protestant churches. *(analysis)*
+
+## Sources
+
+- OpenStax, *World History, Volume 2: from 1400* — 5.1 The Protestant Reformation. https://openstax.org/books/world-history-volume-2/pages/5-1-the-protestant-reformation (CC BY 4.0; used as reference, no wording reproduced)
+- World History Encyclopedia, "Protestant Reformation." https://www.worldhistory.org/Protestant_Reformation/ (reference only)
+- World History Encyclopedia, "Council of Trent." https://www.worldhistory.org/Council_of_Trent/ (reference only)
+
+## Related Topics
+
+- history:foundations:renaissance
+- history:foundations:major-world-religions
+- history:foundations:exploration
+- history:foundations:revolutions
+- history:foundations:medieval-societies
+
+## Editorial Metadata
+
+- **Editorial status:** READY_TO_PUBLISH
+- **Research status:** source-verified
+- **Rights status:** reference-only sources; no source prose adapted
+- **Researched at:** 2026-08-19
+- **Even-handedness:** Catholic and Protestant positions are presented descriptively; the lesson takes no side on contested theology and verifies all dates against multiple sources.
