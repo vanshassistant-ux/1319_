@@ -1,0 +1,27 @@
+{
+  "topicId": "web-development:foundations:cookies-and-storage",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {
+    "core": ["browser cookies", "localStorage and sessionStorage", "persistence and scope", "privacy-aware data minimization"],
+    "supporting": ["origin partitioning", "non-sensitive preference and short-lived workflow examples"],
+    "outOfScope": ["HTTP request mechanics", "authentication or authorization design", "tracking implementation", "security attack paths", "fingerprinting", "client-server code beyond a harmless local model"]
+  },
+  "claims": [
+    {"claim": "A cookie is data a server sends to a browser that may be stored and sent back to the same server with later requests.", "claimType": "TECHNICAL", "sourceIds": ["mdn-using-http-cookies"], "status": "supported"},
+    {"claim": "Cookies may support session management, personalization, and tracking, while modern storage APIs are recommended for general client-side data storage.", "claimType": "TECHNICAL", "sourceIds": ["mdn-using-http-cookies"], "status": "supported"},
+    {"claim": "sessionStorage is partitioned by browser tab and origin and is destroyed when its tab closes, while localStorage is partitioned by origin and persists after the browser is reopened.", "claimType": "TECHNICAL", "sourceIds": ["mdn-web-storage-api"], "status": "supported"},
+    {"claim": "Web Storage set, retrieval, and removal operations are synchronous and large or intensive operations can affect responsiveness.", "claimType": "TECHNICAL", "sourceIds": ["mdn-web-storage-api"], "status": "supported"},
+    {"claim": "Third-party cookies can be used across sites to build a profile of browsing activity, creating a privacy reason to examine purpose, transparency, and user choices.", "claimType": "EVERGREEN", "sourceIds": ["mdn-third-party-cookies"], "status": "supported"},
+    {"claim": "A developer should use an organization's approved security and privacy process for sensitive data rather than casually placing it in browser storage.", "claimType": "INTERPRETIVE", "sourceIds": ["mdn-using-http-cookies", "mdn-web-storage-api"], "status": "supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft contained generic boilerplate and did not explain browser cookies, Web Storage scope, or privacy boundaries."],
+  "correctionsNeeded": ["Replaced generic content with a bounded, source-backed comparison of cookies, local storage, and session storage.", "Separated browser state from HTTP mechanics, authentication design, and tracking implementation.", "Added privacy awareness and data minimization without providing legal advice or tracking instructions.", "Used a harmless executed local model rather than browser or network code."],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {"id": "mdn-using-http-cookies", "title": "MDN Web Docs — Using HTTP cookies", "provider": "Mozilla / MDN Web Docs", "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Cookies", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "license": "CC BY-SA 2.5", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-20", "notes": "Read directly. Supports cookie definition, later request behavior, typical uses, and the distinction between cookies and modern browser storage. No prose reproduced."},
+    {"id": "mdn-web-storage-api", "title": "MDN Web Docs — Web Storage API", "provider": "Mozilla / MDN Web Docs", "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "license": "CC BY-SA 2.5", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-20", "notes": "Read directly. Supports origin and tab partitioning, normal persistence behavior, synchronous operations, and the `localStorage`/`sessionStorage` distinction. No prose reproduced."},
+    {"id": "mdn-third-party-cookies", "title": "MDN Web Docs — Third-party cookies", "provider": "Mozilla / MDN Web Docs", "url": "https://developer.mozilla.org/en-US/docs/Web/Privacy/Guides/Third-party_cookies", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "license": "CC BY-SA 2.5", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-20", "notes": "Read directly. Supports the privacy implications of third-party cookies and cross-site profiles. No tracking implementation or legal claims were copied into the lesson."}
+  ]
+}
