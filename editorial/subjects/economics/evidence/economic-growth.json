@@ -1,0 +1,149 @@
+{
+  "topicId": "economics:foundations:economic-growth",
+  "subjectId": "economics",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Economic growth as the sustained, long-run increase in an economy's real output, usually measured as growth in real GDP per capita",
+      "Labor productivity (output per worker or per hour) as the fundamental driver of rising living standards",
+      "The sources of growth: physical capital per person, human capital, technology/innovation, and institutions (rule of law, property rights, contracts)",
+      "Compounding and the rule of 70 (years to double is approximately 70 divided by the annual growth rate in percent), with a verified worked example",
+      "Catch-up / convergence: the idea that lower-income economies can grow faster and narrow the gap with richer ones"
+    ],
+    "supporting": [
+      "The historically recent arrival of sustained growth (roughly since the Industrial Revolution, early 1800s)",
+      "The aggregate (per capita) production function as the framework linking inputs to output per person",
+      "Small differences in growth rates producing large differences in output over decades"
+    ],
+    "outOfScope": [
+      "The definition and measurement of GDP itself (C+I+G+NX) — owned by economics:foundations:gdp",
+      "Short-run business-cycle fluctuations, recessions, and expansions — owned by economics:foundations:business-cycle",
+      "Aggregate supply / aggregate demand model mechanics — owned by economics:foundations:aggregate-supply",
+      "Unemployment definitions and measurement — owned by economics:foundations:unemployment"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Sustained long-term economic growth comes from increases in worker productivity; labor productivity is the value each employed person creates per unit of input (per worker or per hour).",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["openstax-principles-economics-3e-labor-productivity"],
+      "status": "supported"
+    },
+    {
+      "claim": "Growth in output per person is driven by increases in physical capital per person, human capital per person, and the level of technology, within an aggregate (per capita) production function.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["openstax-principles-economics-3e-components-growth", "openstax-principles-economics-3e-labor-productivity"],
+      "status": "supported"
+    },
+    {
+      "claim": "Institutions — a legal system that sustains property rights and contractual rights — are important contributors to a healthy economic climate and thus to growth.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["openstax-principles-economics-3e-components-growth"],
+      "status": "supported"
+    },
+    {
+      "claim": "Small differences in annual growth rates compound into large differences over decades; e.g., an economy growing 5% per year for 10 years gains almost as much as one growing 1% per year for 50 years (verified: 1.05^10 = 1.629, a 62.9% rise; 1.01^50 = 1.645, a 64.5% rise).",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-principles-economics-3e-labor-productivity"],
+      "status": "supported"
+    },
+    {
+      "claim": "The rule of 70 estimates doubling time as approximately 70 divided by the annual growth rate in percent; verified against exact doubling time ln(2)/ln(1+r): at 2% the rule gives 35 years and the exact value is 35.0 years; at 3.5% the rule gives 20 years and the exact value is 20.15 years; at 7% the rule gives 10 years and the exact value is 10.24 years.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-principles-economics-3e-labor-productivity", "owid-economic-growth"],
+      "status": "supported"
+    },
+    {
+      "claim": "Convergence (the catch-up effect): lower-income economies can grow faster than high-income economies and narrow the gap; a poor country growing 7% per year while a rich country grows 2% closes a tenfold gap to roughly 2.4-fold after 30 years (verified: 10 x 1.02^30 / 1.07^30 = 2.38).",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-principles-economics-3e-convergence"],
+      "status": "supported"
+    },
+    {
+      "claim": "Sustained economic growth is historically recent, beginning roughly with the Industrial Revolution in the early 1800s; before then, average living standards rose very little over long stretches. Growth means an increase in the quantity or quality of goods and services people produce, and GDP per capita is the standard per-person measure.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["owid-economic-growth", "openstax-principles-economics-3e-labor-productivity"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether the rule of 70 or the rule of 72 is the better doubling-time shortcut.",
+      "positions": [
+        "Rule of 70 is exact at about 1% (ln(2) = 0.693) and standard in economics textbooks.",
+        "Rule of 72 is more accurate near 6-10% and 72 has more divisors, so it is common in finance."
+      ],
+      "resolution": "Taught the rule of 70 as the economics convention, noting both are approximations of ln(2)/ln(1+r); verified numerically that both bracket the exact doubling time across 1-10%."
+    }
+  ],
+  "unsupportedExistingClaims": [],
+  "correctionsNeeded": [
+    "No prior published draft existed for this topic in lessons.json; the lesson was written from verified sources rather than edited from boilerplate."
+  ],
+  "rightsIssues": [
+    "OpenStax Principles of Economics 3e is CC BY-NC-SA 4.0; the site's Terms restrict AI/automated ingestion, so it is treated REFERENCE_ONLY — facts synthesized, no prose adapted.",
+    "Our World in Data is CC BY 4.0; attributed, described rather than reproduced, no charts copied."
+  ],
+  "sourceRecords": [
+    {
+      "id": "openstax-principles-economics-3e-labor-productivity",
+      "title": "Principles of Economics 3e, Section 20.2: Labor Productivity and Economic Growth",
+      "provider": "OpenStax, Rice University (Steven A. Greenlaw, David Shapiro, Daniel MacDonald)",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/20-2-labor-productivity-and-economic-growth",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19. Supports: sustained long-term growth comes from increases in worker productivity; labor productivity as 'the value that each employed person creates per unit of their input'; human capital as 'accumulated knowledge (from education and experience), skills, and expertise that the average worker in an economy possesses'; technological change as a combination of invention and innovation; the aggregate production function turning inputs into outputs; and the compounding illustration that 5% for 10 years gains nearly as much as 1% for 50 years (verified in Bash). CC BY-NC-SA 4.0 confirmed on the book; REFERENCE_ONLY, original prose only."
+    },
+    {
+      "id": "openstax-principles-economics-3e-components-growth",
+      "title": "Principles of Economics 3e, Section 20.3: Components of Economic Growth",
+      "provider": "OpenStax, Rice University (Steven A. Greenlaw, David Shapiro, Daniel MacDonald)",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/20-3-components-of-economic-growth",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19. Supports: the per capita production function where output is GDP per capita and inputs are average human capital per person, physical capital per person, and technology; physical capital as 'the plant and equipment that firms use as well as things like roads (also called infrastructure)', affecting productivity through quantity and quality; human capital as 'the skills and knowledge that make workers productive'; technology as the combination of invention and innovation including new ways of organizing work; and that 'a legal system that governs and sustains property rights and contractual rights' is an important contributor to a healthy economic climate. REFERENCE_ONLY, original prose only."
+    },
+    {
+      "id": "openstax-principles-economics-3e-convergence",
+      "title": "Principles of Economics 3e, Section 20.4: Economic Convergence",
+      "provider": "OpenStax, Rice University (Steven A. Greenlaw, David Shapiro, Daniel MacDonald)",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/20-4-economic-convergence",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19. Supports: convergence as the pattern where lower-income economies grow faster than high-income economies and narrow the gap, with the worked illustration of a poor country growing 7% and a rich country growing 2% shrinking a tenfold gap to roughly 2.4-fold after 30 years (verified in Bash: 10 x 1.02^30 / 1.07^30 = 2.38), while the poorer country still feels quite poor. REFERENCE_ONLY, original prose only."
+    },
+    {
+      "id": "owid-economic-growth",
+      "title": "Economic Growth",
+      "provider": "Our World in Data (Max Roser and colleagues), University of Oxford / Global Change Data Lab",
+      "url": "https://ourworldindata.org/economic-growth",
+      "sourceType": "reference",
+      "usage": "ATTRIBUTION_REQUIRED",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19. Supports: sustained economic growth is historically recent, beginning around the Industrial Revolution and allowing societies to escape the Malthusian trap; 'Economic growth means an increase in the quantity or quality of the many goods and services that people produce'; GDP per capita as the standard measure of average output/income per person; and that differential growth rates across countries drive divergence in living standards. CC BY 4.0; attributed and described, no charts reproduced."
+    }
+  ]
+}

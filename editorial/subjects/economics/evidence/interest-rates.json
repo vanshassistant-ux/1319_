@@ -1,0 +1,167 @@
+{
+  "topicId": "economics:foundations:interest-rates",
+  "subjectId": "economics",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "The interest rate as the price of borrowing money and the reward for saving, expressed as a percent per year",
+      "Nominal vs real interest rates and the Fisher relationship (real interest rate approximately equals the nominal rate minus expected inflation)",
+      "How market interest rates are set in the market for loanable funds: saving supplies funds, borrowing demands them, and the equilibrium rate clears the market",
+      "How a central bank influences short-term interest rates by setting a target for the policy (federal funds) rate",
+      "Why different loans carry different rates: default risk, term/maturity, inflation expectations, and liquidity",
+      "Present value / discounting: a dollar received later is worth less than a dollar now, and higher interest rates lower present value"
+    ],
+    "supporting": [
+      "The equilibrium interest rate as the price where quantity of funds demanded equals quantity supplied",
+      "That an unexpected rise in inflation transfers value from lenders to borrowers when the loan rate is fixed",
+      "That a change in the policy rate is reflected in other short-term borrowing costs and influences longer-term rates"
+    ],
+    "outOfScope": [
+      "The Fed's rate-setting TOOLS and actions in depth (owned by economics:foundations:monetary-policy)",
+      "What money IS and its functions/measures (owned by economics:foundations:money)",
+      "How inflation is measured and its causes (owned by economics:foundations:inflation, which owns purchasing power)",
+      "How commercial banks create money and take deposits (owned by economics:foundations:banking)",
+      "Government borrowing, deficits, and the national debt (owned by economics:foundations:government-debt)",
+      "Individualized investment, borrowing, or savings advice"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The interest rate is the price paid to borrow money and the reward earned for saving or lending it, stated as a percent of the principal per year; in a financial market it is the price that brings the quantity of funds supplied and demanded into balance.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["openstax-principles-macroeconomics-3e-4-2"],
+      "status": "supported"
+    },
+    {
+      "claim": "Savers (those who make financial investments) are on the supply side of the financial market and borrowers are on the demand side; the equilibrium interest rate is where quantity of funds demanded equals quantity supplied, and rates above or below equilibrium create surpluses or shortages that push the rate back.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["openstax-principles-macroeconomics-3e-4-2"],
+      "status": "supported"
+    },
+    {
+      "claim": "The nominal interest rate is the stated percentage; the real interest rate adjusts for inflation and approximately equals the nominal rate minus inflation, so with 4 percent nominal interest and 5 percent inflation the real return is about negative 1 percent.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["openstax-principles-economics-2e-ch22-4"],
+      "status": "supported"
+    },
+    {
+      "claim": "When a loan's interest rate is fixed, an unexpected rise in inflation penalizes lenders (repaid in dollars worth less) and benefits borrowers (repay in cheaper dollars), which is why expected inflation is built into nominal rates.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["openstax-principles-economics-2e-ch22-4"],
+      "status": "supported"
+    },
+    {
+      "claim": "Suppliers of financial capital weigh the rate of return against the risk involved, so lenders demand a higher interest rate to bear higher default risk; differences in risk are a central reason different borrowers pay different rates.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["openstax-principles-macroeconomics-3e-4-2"],
+      "status": "supported"
+    },
+    {
+      "claim": "The Federal Reserve conducts monetary policy chiefly by changing its target for the federal funds rate, and a change in that rate is rapidly reflected in the short-term interest rates banks and other lenders charge households and businesses and also influences longer-term rates; since 2008 the target is stated as a 25-basis-point range. Congress directs the Fed to promote maximum employment, stable prices, and moderate long-term interest rates.",
+      "claimType": "LEGAL",
+      "sourceIds": ["fed-monetary-policy-goals"],
+      "status": "supported"
+    },
+    {
+      "claim": "Present discounted value equals a future amount divided by (1 + interest rate) raised to the number of years; at a 10 percent interest rate a 110 dollar payment one year from now has a present value of 100 dollars, because 100 dollars today grows to 110 dollars in a year.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-principles-economics-3e-present-value"],
+      "status": "supported"
+    },
+    {
+      "claim": "Because present value divides by (1 + interest rate) raised to the term, a higher interest rate lowers present value: a two-year bond paying 240 dollars then 3,240 dollars is worth 3,000 dollars when discounted at 8 percent but only about 2,845.80 dollars when discounted at 11 percent.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-principles-economics-3e-present-value"],
+      "status": "supported"
+    },
+    {
+      "claim": "A dollar received in the future is worth less than a dollar today, so present value is the indispensable tool for comparing costs and benefits that arrive at different times.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["openstax-principles-economics-3e-present-value"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Exact vs approximate real interest rate",
+      "positions": [
+        "The teaching approximation: real rate = nominal rate minus (expected) inflation",
+        "The exact Fisher identity: 1 + real = (1 + nominal) / (1 + inflation), which for 6 percent nominal and 4 percent inflation gives 1.923 percent rather than the 2 percent approximation"
+      ],
+      "resolution": "The lesson teaches the subtraction approximation (standard at the introductory level and used by OpenStax) and notes it is an approximation, giving the verified exact figure so no precision is misstated."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The machine-generated boilerplate draft in lessons.json contained only generic filler ('Interest Rates is a concept students use to organize information...') and no substantive claims; it was treated as editorial intent only, not evidence."
+  ],
+  "correctionsNeeded": [
+    "Replaced all boilerplate with sourced definitions and mechanics.",
+    "Kept the Fed's rate-setting TOOLS at reference level and handed monetary-policy detail to the sibling topic; likewise handed off money, inflation, banking, and government-debt."
+  ],
+  "rightsIssues": [
+    "OpenStax pages are CC BY 4.0 but treated REFERENCE_ONLY here: facts used with attribution, all prose original.",
+    "Federalreserve.gov content is a U.S. government work (public domain in the U.S.); used as REFERENCE_ONLY with original prose.",
+    "The 'Fisher equation' name is standard textbook terminology (after economist Irving Fisher); the sourced claim is limited to the real-minus-inflation relationship itself, which OpenStax supports."
+  ],
+  "sourceRecords": [
+    {
+      "id": "openstax-principles-macroeconomics-3e-4-2",
+      "title": "Principles of Macroeconomics 3e, Section 4.2: Demand and Supply in Financial Markets",
+      "provider": "OpenStax (Rice University)",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/4-2-demand-and-supply-in-financial-markets",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19. Supports: the interest rate as the 'price' in financial markets ('the interest the bank pays you as a percent of your deposits is the interest rate'); savers on the supply side and borrowers on the demand side; equilibrium where quantity of funds demanded equals quantity supplied (worked illustration at a 15% equilibrium rate) with above/below-equilibrium surpluses and shortages pushing the rate back; and that suppliers of financial capital weigh rates of return against the risks involved. Facts used under CC BY with attribution; all prose original."
+    },
+    {
+      "id": "openstax-principles-economics-3e-present-value",
+      "title": "Principles of Economics 3e, Appendix C: Present Discounted Value",
+      "provider": "OpenStax (Rice University)",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/c-present-discounted-value",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19. Supports: present discounted value = future amount / (1 + interest rate)^t; that at 10% a $110 payment one year out has a present value of $100; and the two-year $3,000 bond ($240 then $3,240) worth $3,000 discounted at 8% and about $2,845.80 discounted at 11%. All four figures independently recomputed in Bash and confirmed (PV $110 -> $100.00; sum at 8% -> $3,000.00; sum at 11% -> $2,845.87). Facts used under CC BY with attribution; all prose original."
+    },
+    {
+      "id": "openstax-principles-economics-2e-ch22-4",
+      "title": "Principles of Economics 2e, Section 22.4: The Confusion Over Inflation",
+      "provider": "OpenStax (Rice University)",
+      "url": "https://openstax.org/books/principles-economics-2e/pages/22-4-the-confusion-over-inflation",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19. Supports the real-vs-nominal relationship: a bank account paying 4% interest when inflation is 5% yields a real return of about negative 1%; and that with fixed rates, a rise in inflation penalizes suppliers of financial capital (repaid in dollars worth less) while benefiting demanders (borrowers). Used for the real = nominal - inflation approximation and the borrower/lender redistribution point. Facts used under CC BY with attribution; all prose original."
+    },
+    {
+      "id": "fed-monetary-policy-goals",
+      "title": "Monetary Policy: What Are Its Goals? How Does It Work?",
+      "provider": "Board of Governors of the Federal Reserve System",
+      "url": "https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. Government Work (public domain in the United States)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19. Supports: the Fed adjusts policy 'primarily by changing its target for the federal funds rate,' steering it via the rate it pays on reserve balances; that a change in the funds rate is 'rapidly reflected in the interest rates that banks and other lenders charge on short-term loans' to households and businesses and also influences longer-term rates; the 25-basis-point target range since 2008; and the statutory goals of maximum employment, stable prices, and moderate long-term interest rates. Referenced only to place rate-setting; the tools themselves belong to the monetary-policy sibling. Public-domain U.S. government source; prose original."
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+# Monopolistic Competition
+
+## In 30 Seconds
+
+Monopolistic competition is the market structure that describes most of what you shop at: many firms selling similar but DIFFERENTIATED products, with free entry and exit. Differentiation gives each firm a sliver of market power, so its demand curve slopes down and it can set price above marginal cost. Firms compete less on price and more on branding, quality, and variety. Short-run profit is possible, but free entry drives long-run economic profit to about zero. The catch: firms end up with excess capacity and price above marginal cost, so the market is not fully efficient.
+
+## Why This Matters
+
+Restaurants, clothing labels, coffee shops, breweries, hair salons, app developers, and most consumer brands live in monopolistic competition, so it is the market structure that best fits everyday economic life. It explains why so much business energy goes into advertising, branding, and small product tweaks rather than price wars: a differentiated product is the only source of the modest pricing power these firms have. It also sharpens a policy debate you will meet again and again. Compared with perfect competition, monopolistic competition wastes some efficiency through excess capacity and prices above marginal cost, yet it hands consumers something perfect competition cannot: genuine variety and choice. Deciding how much that variety is worth is one of the recurring judgment calls in microeconomics.
+
+## Learning Objectives
+
+- Define monopolistic competition by its three defining features: many firms, differentiated products, and free entry and exit
+- Explain why product differentiation gives a firm a downward-sloping demand curve and lets it set price above marginal cost
+- Distinguish price competition from non-price competition and give examples of branding, advertising, quality, and variety
+- Analyze how free entry and exit drive long-run economic profit toward zero at the point where perceived demand is tangent to average cost
+- Evaluate the long-run outcome: excess capacity and P greater than MC versus the benefit of product variety
+- Contrast monopolistic competition with perfect competition, monopoly, and oligopoly in one line each
+
+## The College Version
+
+### What defines monopolistic competition
+
+Monopolistic competition is defined by three features working together. First, there are MANY firms, enough that each is fairly small and no one firm's decisions noticeably change what the others do. Second, and decisively, the firms sell DIFFERENTIATED products: goods that serve the same basic purpose but are distinct in some way buyers notice. Third, entry and exit are free, with no patents, licenses, or large barriers keeping newcomers out or trapping firms in. The name captures the mix. The "monopolistic" part comes from differentiation, which hands each firm a small, private mini-monopoly over its own particular version of the product. The "competition" part comes from the crowd of close substitutes just next door and the open door that lets still more of them appear. The theory was developed independently in 1933 by Edward Chamberlin, who published *The Economics of Monopolistic Competition*, and Joan Robinson, who published *The Economics of Imperfect Competition* — two economists arriving at the same idea in the same year. Think of the restaurants, clothing brands, coffee shops, and hair salons around you: many sellers, each offering its own recognizable take on a familiar product, and new ones always able to open.
+
+### Differentiation, market power, and a downward-sloping demand curve
+
+Differentiation is what separates this structure from perfect competition, where every firm sells an identical product and must accept the single market price. Because a monopolistic competitor's product is distinctive, some buyers prefer it specifically and will stay even if it charges a little more; if it cuts price, it draws some extra buyers away from rivals. In other words, the firm faces a DOWNWARD-SLOPING demand curve of its own rather than the flat line a price taker faces. That gives it a small amount of market power: it is a price setter, not a price taker, though a weak one, hemmed in by the many close substitutes. A firm can differentiate along four dimensions. Physical aspects are the tangible features an ad boasts about — a spicier recipe, a softer fabric, a redesigned interface. Location matters, as anyone who has paid more for coffee at a convenient corner knows. Intangible aspects include guarantees, reputation, and service. And perception, shaped heavily by branding, can make buyers treat near-identical goods as meaningfully different. Any of these can make a product distinctive enough to bend the firm's demand curve downward.
+
+### Choosing output: MR = MC, and why price sits above marginal cost
+
+Like every firm, a monopolistic competitor maximizes profit by producing the quantity where marginal revenue equals marginal cost — the last unit whose extra revenue still covers its extra cost. But here the demand curve slopes down, and that has a crucial consequence. When a firm must lower its price to sell one more unit, the marginal revenue from that unit is LESS than its price, because the lower price applies to the earlier units too. So marginal revenue lies below the demand curve, and price is higher than marginal revenue. The firm sets output where MR = MC, then reads the price up on its demand curve above that quantity. The result is that PRICE EXCEEDS MARGINAL COST. That gap is the signature of market power: buyers pay more for the last unit than it costs the firm to make, unlike perfect competition where P = MC. The cost curves behind this decision — how marginal and average cost arise from fixed and variable costs — belong to the costs topic; this lesson simply treats them as the firm's given cost structure.
+
+### The long run: free entry, zero profit, and the tangency point
+
+In the short run a monopolistic competitor can earn an economic profit if price exceeds average total cost, or take a loss if it falls short — the same possibilities a monopoly faces. What changes the story is free entry and exit. When existing firms are earning profit, new firms enter with their own differentiated versions, and every newcomer pulls some customers away from the firms already there. Each existing firm's perceived demand curve shifts LEFT (and tends to flatten, as buyers gain more substitutes). New firms keep entering until that economic profit has been competed away to zero. When firms are losing money, exit does the reverse, shifting the survivors' demand curves right until losses disappear. Both forces converge on a distinctive resting point: the firm's demand curve just barely TOUCHES its average cost curve — the two are tangent. At that single point price equals average total cost, so economic profit is exactly zero. This is the same zero-economic-profit endpoint as perfect competition, reached by the same engine of free entry and exit. The difference lies in WHERE on the cost curve it happens, which is what the next section unpacks.
+
+### Excess capacity, inefficiency, and the payoff of variety
+
+Because the demand curve slopes down, it can only be tangent to the average cost curve on that curve's downward-sloping stretch — never at its very bottom. That has two consequences. First, the firm produces LESS than the output that would minimize average cost: it operates with EXCESS CAPACITY, the room it has to produce more cheaply per unit but no demand to justify doing so. The half-empty restaurant that could serve more meals at a lower cost per plate is the everyday picture of this. Second, price still exceeds marginal cost, so the last unit is valued by buyers at more than it costs society to make — the market underproduces relative to the efficient quantity. On both counts, productive and allocative, monopolistic competition falls short of the perfectly competitive benchmark. But the comparison is not one-sided. The very differentiation that creates the inefficiency also delivers something perfect competition cannot: real VARIETY. A world of identical products would be efficient and dull; monopolistic competition trades a measure of efficiency for the range of choices consumers actually enjoy. Much of the competition here is NON-PRICE competition — advertising, branding, quality, and service rather than price cuts — and advertising in particular aims to shift a firm's perceived demand curve outward or make it less price-sensitive, protecting the slim margin differentiation provides.
+
+## Key Vocabulary
+
+- **Monopolistic competition** — A market structure with many firms selling differentiated (not identical) products, with free entry and exit, so each firm has a little market power but no lasting economic profit.
+- **Product differentiation** — Making a product distinct from competitors' along physical features, location, intangible aspects like service and reputation, or buyer perception shaped by branding.
+- **Differentiated product** — A good that serves the same basic purpose as its rivals but is distinctive enough that some buyers prefer it specifically.
+- **Perceived demand curve** — The downward-sloping demand a single differentiated firm faces; because its product is distinctive, it can change price without gaining or losing all of its customers.
+- **Market power** — The ability to set price above marginal cost rather than accept a single market price; monopolistic competitors have a small amount of it.
+- **Non-price competition** — Competing for customers through branding, advertising, quality, variety, and service instead of by lowering price.
+- **Marginal revenue** — The extra revenue from selling one more unit; when a firm must cut price to sell more, marginal revenue is below the price.
+- **Long-run tangency** — The point free entry and exit push a firm to, where its perceived demand curve just touches its average cost curve, so price equals average cost and economic profit is zero.
+- **Excess capacity** — The gap between a firm's actual output and the output that would minimize its average cost; a standing feature of monopolistic competition because the tangency lies on the downward-sloping part of average cost.
+- **Economic profit** — Total revenue minus both explicit costs and implicit opportunity costs; zero economic profit means owners earn exactly their next-best return, a normal profit.
+
+## Eli-10
+
+Imagine a street with lots of pizza shops. They all sell pizza, but each one is a little different: this one has a wood-fired crust, that one has the corner spot, another has a logo everyone recognizes. Because your favorite is a bit special to you, it can charge a little more without losing you, so it has a tiny bit of pricing power that a plain corn-seller at a farmers market does not. If pizza shops are making good money, new ones open, and each new shop steals a few customers from the rest. That keeps happening until nobody is making extra money anymore. The shops survive, but each ends up a little emptier than it could be, and pizza costs a bit more than it strictly needs to. In exchange, you get lots of kinds of pizza to choose from.
+
+## Eli's Analogy
+
+A monopolistically competitive firm is like a food truck at a busy festival. Yours sells great tacos, so a loyal line forms even if you charge a dollar more than the truck next door. But nothing stops new trucks from rolling in, and each one that parks nearby shortens your line. Trucks keep arriving until everyone is just breaking even, and every truck ends up with a few empty spots it could have filled.
+
+**Where the analogy breaks down:** The food-truck picture captures differentiation, weak pricing power, and free entry competing profit away, but it understates how strong the substitutes are: your festival taco feels quite unique, whereas many differentiated products are near-clones separated mostly by branding. It also does not show the cost curves that make "excess capacity" precise — the empty spots are a loose stand-in for producing below minimum average cost.
+
+## Worked Example
+
+A coffee shop is monopolistically competitive: its location, blend, and atmosphere make it distinctive, so it faces a downward-sloping demand curve. In the short run it applies MR = MC and chooses to sell 180 cups a day at $4.50 each, while its average total cost at that volume is $3.50 per cup. Its economic profit is (P − ATC) × Q = (4.50 − 3.50) × 180 = $180 a day. Notice price ($4.50) sits above marginal cost, the mark of its small market power. That profit attracts imitators: new cafes open nearby, and each pulls a few regulars away, shifting this shop's demand curve to the left. Entry stops only when profit is gone. Suppose the shop settles at 120 cups a day at $3.75 each, where average total cost has risen to $3.75 too. Now profit is (3.75 − 3.75) × 120 = $0 — the long-run tangency. Yet its marginal cost at 120 cups is only about $2.50, so price still exceeds marginal cost, and it is brewing 120 cups when it could reach lower average cost at, say, 200 — that unused room is excess capacity. (Figures illustrative.)
+
+## Common Mistakes
+
+- **Mistake:** Confusing monopolistic competition with monopoly because both names contain "monopoly." **Correction:** A monopoly is a single firm with no close substitutes and lasting barriers to entry. Monopolistic competition has MANY firms and FREE entry; the "monopolistic" label refers only to the small pricing power each firm gets from differentiating its product.
+- **Mistake:** Assuming that because firms have some market power, they earn economic profit in the long run. **Correction:** Free entry competes profit away just as in perfect competition. In the long run economic profit is about zero; the market power only lets the firm set price above marginal cost, not keep a lasting profit.
+- **Mistake:** Thinking the long-run firm produces at the minimum of its average cost curve, like a perfectly competitive firm does. **Correction:** Because demand slopes downward, it can only be tangent to average cost on the downward-sloping part, above the minimum. The firm therefore carries excess capacity — it produces less than the cost-minimizing output.
+- **Mistake:** Treating advertising and branding as pure waste with no economic role. **Correction:** Non-price competition is how these firms compete. Advertising can shift a firm's perceived demand outward or make it less price-sensitive, and differentiation is what gives buyers variety. Whether the spending is excessive is a separate, contested question.
+- **Mistake:** Believing price equals marginal cost because the market looks competitive. **Correction:** With a downward-sloping demand curve, marginal revenue is below price, and the firm sets output where MR = MC. So price ends up ABOVE marginal cost — the allocative inefficiency that separates this structure from perfect competition, where P = MC.
+
+## Compare / Contrast
+
+- **Monopolistic competition vs. Perfect competition:** Both have many firms and free entry driving long-run profit to zero, but perfect competitors sell an IDENTICAL product as price takers (P = MC, no excess capacity), while monopolistic competitors sell DIFFERENTIATED products, set price above marginal cost, and carry excess capacity.
+- **Monopolistic competition vs. Monopoly:** A monopoly is ONE firm shielded by barriers to entry and can hold economic profit indefinitely; monopolistic competition has MANY firms and free entry that competes long-run profit away.
+- **Monopolistic competition vs. Oligopoly:** An oligopoly is a FEW interdependent firms whose choices depend strategically on rivals' reactions, often behind entry barriers; monopolistic competition has many firms too small to be interdependent, with free entry.
+- **Price competition vs. Non-price competition:** Price competition fights for customers by cutting price; non-price competition — branding, advertising, quality, variety — is where monopolistic competitors put most of their effort, because differentiation, not a lower price, is the source of their pricing power.
+
+## Key Takeaway
+
+Monopolistic competition is many firms selling differentiated products with free entry: differentiation gives each a downward-sloping demand curve and price above marginal cost, but free entry drives long-run economic profit to about zero at the tangency of demand and average cost — leaving excess capacity and some inefficiency in exchange for product variety.
+
+## Practice Question Bank
+
+1. **Which set of features defines a monopolistically competitive market?**
+   - A. A single firm protected by high barriers to entry, facing the whole market demand curve
+   - B. Many firms selling differentiated products, with free entry and exit
+   - C. A few interdependent firms whose pricing decisions depend on rivals' reactions
+   - D. Many firms selling an identical product, each a price taker at the market price
+
+   **Answer: B.** Monopolistic competition is many firms, differentiated products, and free entry and exit. Option A describes a monopoly, C describes an oligopoly, and D describes perfect competition — the three structures monopolistic competition is contrasted against.
+
+2. **Why does a monopolistically competitive firm face a downward-sloping demand curve rather than a horizontal one?**
+   - A. Because a regulator assigns each firm a fixed price it must charge
+   - B. Because there is only one seller of the product in the entire market
+   - C. Because firms secretly coordinate to keep the market price high
+   - D. Because its product is differentiated, so some buyers stay when it raises price and it gains buyers when it lowers price
+
+   **Answer: D.** Product differentiation means some buyers prefer this firm's specific version, so a small price increase does not cost it every customer and a price cut attracts some. A invents regulation not in the model; B describes a monopoly; C describes collusion, an oligopoly behavior.
+
+3. **A coffee shop with a differentiated product maximizes profit by producing where marginal revenue equals marginal cost. What does this imply about its price?**
+   - A. Price equals marginal cost, exactly as in perfect competition
+   - B. Price equals marginal revenue, because the two are always the same
+   - C. Price is above marginal cost, because a downward-sloping demand curve puts marginal revenue below price
+   - D. Price is below marginal cost, because differentiation forces the firm to undercut rivals
+
+   **Answer: C.** With a downward-sloping demand curve the firm must lower price to sell more, so marginal revenue is below price; setting MR = MC leaves price above marginal cost. A is the perfectly competitive result; B is true only for a price taker; D reverses the logic.
+
+4. **In long-run equilibrium a monopolistically competitive firm produces where its demand curve is tangent to its average cost curve. Because that tangency lies on the downward-sloping part of average cost, the firm:**
+   - A. Operates with excess capacity, producing less than the output that would minimize average cost
+   - B. Produces exactly at the minimum of its average cost curve, like a perfectly competitive firm
+   - C. Earns a large positive economic profit that persists indefinitely
+   - D. Sets price equal to marginal cost, making the market allocatively efficient
+
+   **Answer: A.** A downward-sloping demand curve can only touch average cost above its minimum, so the firm produces below the cost-minimizing output and carries excess capacity. B needs a flat demand curve; C ignores free entry; D is false because price stays above marginal cost.
+
+5. **Several restaurants in a neighborhood are earning healthy economic profits. Under monopolistic competition, what happens over time and why?**
+   - A. The existing restaurants raise prices together and profits grow, because they act as one monopoly
+   - B. New restaurants enter and pull away customers, shifting each existing firm's demand curve left until economic profit falls to about zero
+   - C. Nothing changes, because differentiation lets each restaurant keep its profit permanently
+   - D. The restaurants are forced to exit, because differentiated firms cannot survive competition
+
+   **Answer: B.** Free entry is the defining response to profit: new differentiated competitors open, each taking some customers, shifting existing firms' demand curves left until profit is competed away. A describes collusion free entry prevents; C ignores free entry; D is backwards — entry, not exit, is the response to profit.
+
+## Sources
+
+- OpenStax, *Principles of Economics 3e*, Section 10.1: Monopolistic Competition — https://openstax.org/books/principles-economics-3e/pages/10-1-monopolistic-competition (CC BY-NC-SA 4.0; reference only, facts synthesized, no wording reused)
+- University of Victoria / eCampusOntario Pressbooks, *Principles of Microeconomics*, Section 8.3: Monopolistic Competition — https://ecampusontario.pressbooks.pub/uvicmicroeconomics/chapter/8-3-monopolistic-competition/ (CC BY 4.0; used for the four dimensions of differentiation and the 1933 Chamberlin/Robinson history)
+
+## Related Topics
+
+- economics:foundations:perfect-competition
+- economics:foundations:monopoly
+- economics:foundations:oligopoly
+- economics:foundations:costs
+- economics:foundations:demand
+
+## Editorial Metadata
+
+- **Editorial status:** READY_TO_PUBLISH
+- **Estimated time:** 9 minutes
+- **Research status:** source-verified
+- **Rights:** Reference-only OpenStax 3e (CC BY-NC-SA 4.0) plus attributed UVic Principles of Microeconomics (CC BY 4.0); original prose, no source wording adapted; worked-example numbers independently chosen and verified.
+- **Researched at:** 2026-08-19

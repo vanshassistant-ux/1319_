@@ -1,0 +1,194 @@
+{
+  "topicId": "human-geography:foundations:human-development-indicators",
+  "subjectId": "human-geography",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Why income (GNI/GDP per capita) alone is an incomplete measure of development",
+      "The Human Development Index (HDI): three dimensions and their indicators",
+      "How the HDI normalizes indicators with goalposts and combines them via a geometric mean into a 0-1 score",
+      "The four human development groups (low/medium/high/very high) and their fixed HDI thresholds",
+      "Origin: UNDP Human Development Reports (first 1990), Mahbub ul Haq and Amartya Sen, capability approach",
+      "Companion UNDP indices named briefly: IHDI, GII, MPI",
+      "Using indicators to compare places, and the limitations of any single composite index"
+    ],
+    "supporting": [
+      "A dated HDI figure/example from the 2023/24 Human Development Report",
+      "Purchasing power parity (PPP) adjustment of income; logarithm of income"
+    ],
+    "outOfScope": [
+      "Broad development overview and theories (modernization/dependency/world-systems) — owned by economic-development topic",
+      "Population totals, growth rates, and the demographic transition model — handed off to population and demographic-transition topics",
+      "World Bank income-group thresholds in depth — owned by economic-development"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The human development approach, developed by economist Mahbub ul Haq and anchored in Amartya Sen's capability work, was introduced in the first UN Human Development Report in 1990 to shift focus from the richness of the economy to the richness of human life.",
+      "claimType": "HISTORICAL",
+      "sourceIds": [
+        "undp-about-human-development"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The HDI has three dimensions: a long and healthy life (life expectancy at birth), knowledge (expected years of schooling and mean years of schooling), and a decent standard of living (GNI per capita).",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "undp-hdi-data-center",
+        "owid-human-development-index"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Each HDI indicator is rescaled to a 0-1 dimension index using fixed goalposts (life expectancy 20-85 years; expected schooling 0-18; mean schooling 0-15; GNI per capita $100-$75,000 in 2017 PPP dollars, entered as a logarithm), and the three dimension indices are combined using their geometric mean.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "owid-human-development-index",
+        "undp-hdi-data-center"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "UNDP groups countries into four categories using fixed HDI cutoffs: low (below 0.550), medium (0.550-0.699), high (0.700-0.799), and very high (0.800 and above).",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "undp-hdi-data-center",
+        "un-news-hdr-2023-24-record"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "In the 2023/24 Human Development Report (released March 2024, based on 2022 data), the global HDI reached a record high of about 0.74 after pandemic-era declines; Switzerland, Norway, and Iceland recorded the highest values while the Central African Republic, South Sudan, and Somalia recorded the lowest.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "un-news-hdr-2023-24-record"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The HDI uses national averages and does not capture within-country inequality; the inequality-adjusted HDI (IHDI) discounts each dimension for its inequality and equals the HDI only when there is no inequality.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "owid-human-development-index"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The Gender Inequality Index (GII) measures loss in human development from gender inequality across three dimensions: reproductive health, empowerment, and the labour market.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "undp-gender-inequality-index"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The global Multidimensional Poverty Index (MPI), produced by UNDP with the Oxford Poverty and Human Development Initiative, counts overlapping household-level deprivations across health, education, and standard of living to identify who is multidimensionally poor.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "undp-hdi-data-center",
+        "owid-human-development-index"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A worked HDI calculation with life expectancy 75, expected schooling 14, mean schooling 9, and GNI per capita $20,000 yields dimension indices of about 0.846, 0.689, and 0.800 and an HDI of about 0.776 by geometric mean (vs 0.779 by arithmetic mean).",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "owid-human-development-index"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Reported top/bottom HDI values differ between report editions.",
+      "positions": [
+        "2023/24 HDR (2022 data): Switzerland highest, global ~0.74",
+        "Later 2025 HDR (2023 data): Iceland ~0.972 highest, South Sudan ~0.388 lowest"
+      ],
+      "resolution": "Lesson dates its figure explicitly to the 2023/24 Human Development Report (2022 data) and states values at the level UN News confirms; avoids over-precise contested decimals."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft was machine boilerplate with no specific claims about HDI dimensions, methodology, thresholds, or figures; all content was written from researched sources."
+  ],
+  "correctionsNeeded": [
+    "Replaced placeholder definitions and objectives with the actual HDI construction (dimensions, goalposts, geometric mean, thresholds).",
+    "Added a dated, attributed figure from the 2023/24 Human Development Report.",
+    "Respected the boundary with economic-development (which names HDI and hands off its full construction and variants here)."
+  ],
+  "rightsIssues": [
+    "UNDP HDRO pages used as REFERENCE_ONLY (facts synthesized, prose written original).",
+    "Our World in Data content is CC BY; used for methodology facts with attribution, no chart or long text reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "undp-hdi-data-center",
+      "title": "Human Development Index (HDI)",
+      "provider": "UNDP Human Development Reports Office",
+      "url": "https://hdr.undp.org/data-center/human-development-index",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the three dimensions and their indicators, aggregation by geometric mean, use of the logarithm of income, and the four human development groups. Facts synthesized; wording original."
+    },
+    {
+      "id": "undp-about-human-development",
+      "title": "About Human Development",
+      "provider": "UNDP Human Development Reports Office",
+      "url": "https://hdr.undp.org/about/human-development",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the origin of the human development approach (developed by Mahbub ul Haq, anchored in Amartya Sen's capability work, first Human Development Report 1990) and the concept of expanding the richness of human life beyond the economy."
+    },
+    {
+      "id": "un-news-hdr-2023-24-record",
+      "title": "'Record high' in UN development index masks stark disparities",
+      "provider": "UN News",
+      "url": "https://news.un.org/en/story/2024/03/1147532",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the dated figure: the 2023/24 Human Development Report reported HDI at a record high (~0.74 globally) after pandemic declines, with Switzerland/Norway/Iceland highest and Central African Republic/South Sudan/Somalia lowest."
+    },
+    {
+      "id": "owid-human-development-index",
+      "title": "The Human Development Index and related indices: what they are and what we can learn from them",
+      "provider": "Our World in Data",
+      "url": "https://ourworldindata.org/human-development-index",
+      "sourceType": "reference",
+      "usage": "EXTRACT_AND_ADAPT",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the goalpost min/max values (life expectancy 20-85, expected schooling 0-18, mean schooling 0-15, GNI $100-$75,000 in 2017 PPP, logged), the geometric-mean aggregation, and descriptions of the IHDI. Underlying HDI data is UNDP's; OWID text is CC BY, attributed, not reproduced."
+    },
+    {
+      "id": "undp-gender-inequality-index",
+      "title": "Gender Inequality Index (GII)",
+      "provider": "UNDP Human Development Reports Office",
+      "url": "https://hdr.undp.org/data-center/thematic-composite-indices/gender-inequality-index",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports the GII definition and its three dimensions (reproductive health, empowerment, labour market) as a measure of human development loss from gender inequality."
+    }
+  ]
+}

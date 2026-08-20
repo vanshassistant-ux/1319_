@@ -1,0 +1,95 @@
+{
+  "topicId": "economics:foundations:elasticity",
+  "subjectId": "economics",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Elasticity as a unit-free ratio of percentage changes measuring responsiveness of one variable to another",
+      "Price elasticity of demand: percentage change in quantity demanded divided by percentage change in price",
+      "The midpoint (arc) method for computing percentage changes so elasticity is direction-independent",
+      "Elastic (>1), inelastic (<1), unit elastic (=1), and the perfectly elastic/perfectly inelastic extremes",
+      "Determinants of price elasticity of demand: availability of substitutes, necessity vs luxury, share of budget, time horizon",
+      "The total revenue test: price up raises revenue if inelastic, lowers it if elastic, unchanged if unit elastic",
+      "A worked midpoint calculation with independently verified arithmetic"
+    ],
+    "supporting": [
+      "Price elasticity of supply (one-line definition)",
+      "Cross-price elasticity of demand and its sign convention (substitutes vs complements)",
+      "Income elasticity of demand and its sign convention (normal vs inferior goods)"
+    ],
+    "outOfScope": [
+      "The demand and supply curves themselves, and shift-vs-movement (economics:foundations:demand, economics:foundations:supply)",
+      "How equilibrium price is determined (economics:foundations:market-equilibrium)",
+      "Utility maximization and full consumer-choice theory (economics:foundations:consumer-choice)",
+      "Firm cost curves (economics:foundations:costs)"
+    ]
+  },
+  "claims": [
+    { "claim": "Price elasticity of demand is the percentage change in quantity demanded of a good divided by the percentage change in its price; because both are percentages the measure is unit-free.", "claimType": "EVERGREEN", "sourceIds": ["openstax-principles-economics-2e-ch5-1"], "status": "supported" },
+    { "claim": "The midpoint (arc) method computes the percentage change in quantity as (Q2-Q1) divided by the average of Q1 and Q2 (times 100), and the percentage change in price as (P2-P1) divided by the average of P1 and P2 (times 100), giving the same elasticity in either direction.", "claimType": "TECHNICAL", "sourceIds": ["openstax-principles-economics-2e-ch5-1"], "status": "supported" },
+    { "claim": "Demand is elastic when the elasticity exceeds one (quantity changes by a larger percentage than price), inelastic when it is below one, and unit elastic when it equals one; perfectly inelastic demand has elasticity zero (vertical curve) and perfectly elastic demand has elasticity approaching infinity (horizontal curve).", "claimType": "EVERGREEN", "sourceIds": ["openstax-principles-economics-2e-ch5-1"], "status": "supported" },
+    { "claim": "In OpenStax's worked demand example (points B to A: Q from 2,800 to 3,000, P from $70 to $60), the midpoint method gives a quantity change of about 6.9%, a price change of about -15.4%, and an elasticity of about 0.45, classified as inelastic.", "claimType": "QUANTITATIVE", "sourceIds": ["openstax-principles-economics-2e-ch5-1"], "status": "supported" },
+    { "claim": "The total revenue test: because total revenue equals price times quantity, a price increase raises total revenue when demand is inelastic, lowers total revenue when demand is elastic, and leaves it unchanged when demand is unit elastic.", "claimType": "EVERGREEN", "sourceIds": ["openstax-principles-economics-2e-ch5-3"], "status": "supported" },
+    { "claim": "Price elasticity of demand is larger when close substitutes are available, when the good is a luxury rather than a necessity, when it takes a larger share of the budget, and when buyers have more time to adjust (elasticity is generally greater in the long run than the short run).", "claimType": "EVERGREEN", "sourceIds": ["openstax-principles-economics-2e-ch5-3"], "status": "supported" },
+    { "claim": "OpenStax cites illustrative estimated elasticities such as roughly 0.12 for housing (inelastic) and about 2.3 for restaurant meals (elastic), showing necessities tend to be inelastic and discretionary goods elastic.", "claimType": "QUANTITATIVE", "sourceIds": ["openstax-principles-economics-2e-ch5-3"], "status": "supported" },
+    { "claim": "Price elasticity of supply is the percentage change in quantity supplied divided by the percentage change in price.", "claimType": "EVERGREEN", "sourceIds": ["openstax-principles-economics-2e-ch5-1"], "status": "supported" },
+    { "claim": "Cross-price elasticity of demand is the percentage change in quantity demanded of one good divided by the percentage change in the price of another; it is positive for substitutes and negative for complements.", "claimType": "EVERGREEN", "sourceIds": ["openstax-principles-economics-2e-ch5-4"], "status": "supported" },
+    { "claim": "Income elasticity of demand is the percentage change in quantity demanded divided by the percentage change in income; it is positive for normal goods and negative for inferior goods.", "claimType": "EVERGREEN", "sourceIds": ["openstax-principles-economics-2e-ch5-4"], "status": "supported" },
+    { "claim": "Independent worked example (constructed, not from a source): with price $4 to $5 and quantity 200 to 140, the midpoint method gives -35.3% quantity change, +22.2% price change, elasticity about 1.59 (elastic), and total revenue falls from $800 to $700 — consistent with the total revenue test.", "claimType": "QUANTITATIVE", "sourceIds": ["openstax-principles-economics-2e-ch5-1", "openstax-principles-economics-2e-ch5-3"], "status": "supported" }
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [],
+  "correctionsNeeded": [
+    "No prior published draft for this topic existed in lessons.json (economics is a fresh subject); the lesson was written from verified sources rather than corrected from generated boilerplate."
+  ],
+  "rightsIssues": [
+    "All three sources are OpenStax Principles of Economics 2e, licensed CC BY 4.0 (reuse permitted with attribution). All lesson prose is nonetheless original synthesis; no passages were reproduced. The worked example and every numeric result were computed and verified independently in Python."
+  ],
+  "sourceRecords": [
+    {
+      "id": "openstax-principles-economics-2e-ch5-1",
+      "title": "Principles of Economics 2e, Section 5.1: Price Elasticity of Demand and Price Elasticity of Supply",
+      "provider": "OpenStax (Rice University)",
+      "url": "https://openstax.org/books/principles-economics-2e/pages/5-1-price-elasticity-of-demand-and-price-elasticity-of-supply",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19. Supports: price elasticity of demand as 'the percentage change in the quantity demanded of a good or service divided by the percentage change in the price'; price elasticity of supply as the percentage change in quantity supplied over the percentage change in price; the midpoint-method equations (% change in quantity = (Q2-Q1)/((Q2+Q1)/2) x 100; % change in price = (P2-P1)/((P2+P1)/2) x 100); the elastic (>1) / unitary (=1) / inelastic (<1) classification; and the worked demand example (points B->A: Q 2,800->3,000, P $70->$60 giving ~6.9%, ~-15.4%, elasticity ~0.45, inelastic). Example arithmetic re-verified in Python (6.8966%, -15.3846%, 0.4483). Written as original prose; used for facts under CC BY with attribution."
+    },
+    {
+      "id": "openstax-principles-economics-2e-ch5-3",
+      "title": "Principles of Economics 2e, Section 5.3: Elasticity and Pricing",
+      "provider": "OpenStax (Rice University)",
+      "url": "https://openstax.org/books/principles-economics-2e/pages/5-3-elasticity-and-pricing",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19. Supports: the total revenue test (when demand is inelastic a price increase raises total revenue; when elastic a price increase lowers total revenue; when unitary revenue is unchanged); determinants of elasticity (availability of substitutes, necessity vs luxury, share of budget, and time horizon with elasticity lower in the short run than the long run); and illustrative estimated elasticities of ~0.12 for housing and ~2.27 for restaurant meals. These estimates are labeled in the lesson as OpenStax's illustrative figures. Original prose; facts used under CC BY with attribution."
+    },
+    {
+      "id": "openstax-principles-economics-2e-ch5-4",
+      "title": "Principles of Economics 2e, Section 5.4: Elasticity in Areas Other Than Price",
+      "provider": "OpenStax (Rice University)",
+      "url": "https://openstax.org/books/principles-economics-2e/pages/5-4-elasticity-in-areas-other-than-price",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Read via WebFetch 2026-08-19. Supports: income elasticity of demand as the percentage change in quantity demanded divided by the percentage change in income (positive = normal good, negative = inferior good); and cross-price elasticity of demand as the percentage change in quantity demanded of good A divided by the percentage change in the price of good B (positive for substitutes such as coffee/tea, negative for complements such as coffee/sugar). Original prose; facts used under CC BY with attribution."
+    }
+  ]
+}

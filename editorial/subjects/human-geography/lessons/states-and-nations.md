@@ -1,0 +1,149 @@
+# States and Nations
+
+## In 30 Seconds
+
+In everyday speech we swap the words interchangeably, but political geography keeps them apart. A state is a political container: a sovereign government, a defined territory with borders, and a permanent population. A nation is a group of people who feel bound by a shared identity, such as language, ancestry, religion, or history. A nation-state is the rare case where the two line up. When they do not, you get multinational states and stateless nations.
+
+## Why This Matters
+
+Almost every headline about borders, independence movements, migration, or international recognition rests on the state-versus-nation distinction, so mixing the terms up quietly distorts the analysis. Getting it right lets you read a map of countries and a map of peoples as two different layers that only sometimes align. In courses it is a foundation for political geography, geopolitics, and the study of ethnicity and culture. Practically, it clarifies why a group can have a strong national identity without a government of its own, and why a single country can hold many nations at once.
+
+## Learning Objectives
+
+- Define state, nation, nation-state, multinational state, and stateless nation in precise, non-interchangeable terms.
+- Distinguish a state (political sovereignty) from a nation (cultural identity) and explain why their borders need not match.
+- List the four classic criteria of statehood and explain the role recognition plays in practice.
+- Apply the vocabulary to classify a described territory or people using neutral, widely-recognized examples.
+- Analyze why genuine nation-states are relatively rare and what multinational states and stateless nations reveal about that.
+
+## The College Version
+
+### Two words the news treats as one
+
+In ordinary English, "state," "nation," and "country" are used almost interchangeably. We talk about "nations" at the Olympics, the "United Nations" is an organization of governments, and Americans call their federal subdivisions "states." Political geography cannot afford that looseness, because the whole field depends on separating two ideas that everyday language blends. A state is a political and territorial fact: a government that rules a defined patch of land and the people on it. A nation is a social and cultural fact: a body of people who believe they belong together. These are different kinds of thing. One is about who governs a territory; the other is about who feels they share an identity. Because they are measured differently, they need not cover the same ground, and much of political geography is the study of what happens where they do not.
+
+### What makes a state
+
+In everyday terms a state is simply a country. More precisely, geographers describe a state as an independent government together with the territory it governs. International law sharpens this into four classic criteria, set out in the 1933 Montevideo Convention and widely treated as customary international law: a state should possess a permanent population, a defined territory, a government, and the capacity to enter into relations with other states. The last item is sovereignty in action, the ability to deal with other governments as an equal. Recognition adds a practical layer. The Montevideo Convention's Article 3 states the declarative view that a state's political existence is independent of recognition by others, yet in practice recognition by other governments and admission to bodies such as the United Nations strongly shape whether an entity can act as a state on the world stage. The UN reached 193 member states when South Sudan was admitted in 2011, a useful marker for how many widely-recognized sovereign states exist. Note the vocabulary trap: the United States is one state in the international sense, even though it contains fifty internal "states," which are provinces, not sovereign countries.
+
+### What makes a nation
+
+A nation is a large group of people who see themselves as sharing a collective identity. That identity can rest on some mix of common ancestry, language, religion, history, traditions, or simply a felt sense of common destiny. The key word is "shared," because a nation is partly a matter of self-understanding: a nation exists when a people regard themselves as one. Crucially, a nation may or may not have a state. A nation can be spread across several countries, and a single country can contain many nations. That single sentence is the heart of the topic. It means the map of governments and the map of peoples are separate layers. Where they align, one national group fills one sovereign territory. Where they do not, a people may be split by borders they did not draw, or several peoples may share one government. This is why "nation" in the cultural sense and "nation" as a synonym for "country" can point at genuinely different things in the same sentence.
+
+### Where states and nations meet: nation-states, multinational states, and stateless nations
+
+When a state's borders and a single dominant national identity largely coincide, we call it a nation-state: one national group is demographically, culturally, and politically dominant within the country. Commonly cited examples include Japan and Iceland. In truth, a perfectly homogeneous nation-state is rare, because almost every country has minorities, so "nation-state" is best read as a matter of degree rather than a pure type. When a state instead contains two or more national groups with no single group dominant, it is a multinational (or multi-ethnic) state; many large countries fit here. The mirror image of the nation-state is the stateless nation: a large group of people who share a common cultural identity, often occupying a traditional homeland, but who do not have a sovereign state of their own, and who may be divided among several existing states. These categories are analytical tools, not verdicts on any particular case. Because sovereignty and identity are contested in the real world, geographers apply the vocabulary descriptively and stay neutral on specific disputes, using it to name a situation rather than to settle it.
+
+## Key Vocabulary
+
+- **State** — A sovereign political territory: an independent government, a defined territory with borders, and a permanent population. In everyday English this is a "country."
+- **Sovereignty** — The recognized authority of a government to rule its territory and deal with other governments as an equal, without being subordinate to an outside power.
+- **Nation** — A large group of people who see themselves as sharing a collective identity based on some mix of ancestry, language, religion, history, or traditions, whether or not they have a state.
+- **Nation-state** — A state whose borders and a single dominant national identity largely coincide, so that one national group is demographically, culturally, and politically dominant.
+- **Multinational state** — A state that contains two or more national groups where no single group is demographically, culturally, and politically dominant.
+- **Multi-ethnic state** — A state whose population includes several ethnic or cultural groups; often used interchangeably with multinational state.
+- **Stateless nation** — A people who share a common cultural identity, often with a traditional homeland, but who do not have a sovereign state of their own and may be split among several states.
+- **Recognition** — Acceptance by other governments (and admission to bodies such as the UN) that an entity is a state; important in practice even though, in declarative theory, statehood does not depend on it.
+- **Country** — The everyday word for a sovereign state; unlike the analytic term "nation," it refers to the political-territorial unit rather than a cultural group.
+
+## Eli-10
+
+Think of two different maps laid on top of each other. The first map is drawn with hard lines: it shows countries, each with a government, a border, and people living inside. That map is about states. The second map has no hard lines at all. It shows where groups of people live who feel like they belong together because they speak the same language or share the same history and traditions. That map is about nations. Sometimes the two maps match up almost exactly, and one group of people fills one country. That is a nation-state. But usually the maps do not match. One country can hold several of those groups, and one group can be spread across several countries. When many groups share one country, that country is multinational. When a group feels like one people but has no country of its own, they are a stateless nation.
+
+## Eli's Analogy
+
+A state is like a house with an address, a fence, and a deed. A nation is like a family. Ideally one family lives in one house, but sometimes several families share one house, and sometimes a big family is scattered across many houses with no house that is truly theirs.
+
+**Where the analogy breaks down:** You can prove who owns a house with a legal deed, while whether a state is "recognized" can be disputed between governments. And a family is defined by blood, whereas a nation is defined mostly by how people see themselves, so its edges are blurrier than any family tree.
+
+## Worked Example
+
+Suppose a course hands you three descriptions and asks you to name each. First: "A government controls a defined territory, its population lives inside recognized borders, and it holds a seat at the UN." That is a state, because it meets the political criteria of territory, population, government, and the capacity to deal with other states. Second: "A people share a language, ancestry, and long history, and think of themselves as one, but they are divided across the borders of several existing countries and have no sovereign government of their own." That is a stateless nation, because the identity is strong but the sovereignty is absent. Third: "One country in which a single national group is clearly dominant in numbers, culture, and politics." That is a nation-state, the case where the political container and the cultural group line up. The trick each time is to ask two separate questions: is there sovereignty (a state?), and is there a shared identity (a nation?). Answering them independently, rather than assuming they travel together, is the whole skill.
+
+## Common Mistakes
+
+- **Mistake:** Using "nation" and "country" as exact synonyms in analysis, so a "nation" always means a sovereign state.
+  **Correction:** In political geography "nation" means a people bound by shared identity; it may have no state at all. Reserve "state" or "country" for the sovereign political unit.
+- **Mistake:** Assuming every country is a nation-state because it appears as one unit on a map.
+  **Correction:** Most countries contain more than one national group. A true nation-state requires one national group to be demographically, culturally, and politically dominant, and even then perfect homogeneity is rare.
+- **Mistake:** Treating the fifty U.S. "states" (or provinces elsewhere) as states in the international sense.
+  **Correction:** Internal "states" are subdivisions of one sovereign country. The state in political geography is the sovereign country as a whole, such as the United States.
+- **Mistake:** Believing a stateless nation is just a small ethnic minority with no real cohesion.
+  **Correction:** A stateless nation is a large group with a strong shared identity and often a traditional homeland; what it lacks is a sovereign state, not identity or numbers.
+- **Mistake:** Assuming statehood depends only on other countries recognizing you, or only on meeting the criteria, and treating the two as the same thing.
+  **Correction:** The classic criteria (population, territory, government, capacity for relations) define statehood; recognition is legally declarative but practically decisive. Keep the definition and the recognition question separate.
+
+## Compare / Contrast
+
+- **State vs. Nation:** A state is a sovereign political-territorial unit (government + borders + population). A nation is a people bound by shared identity. One is about who governs; the other is about who belongs.
+- **Nation-state vs. Multinational state:** In a nation-state one national group is dominant and borders and identity largely coincide. In a multinational state two or more national groups coexist with none dominant.
+- **Stateless nation vs. Nation-state:** A stateless nation is a people with a shared identity but no sovereign state; a nation-state is a people whose identity is matched by their own sovereign state. They are opposite outcomes of the same state-nation relationship.
+
+## Key Takeaway
+
+A state is about sovereignty and territory; a nation is about shared identity. Ask the two questions separately, and the special cases fall out: nation-states are where they align, multinational states hold several nations, and stateless nations have identity without a state of their own.
+
+## Practice Question Bank
+
+1. **Under the classic (Montevideo) criteria treated as customary international law, which set best lists what an entity should possess to qualify as a state?**
+   - A. A shared language, a common religion, a national anthem, and a flag
+   - B. A permanent population, a defined territory, a government, and the capacity to enter into relations with other states
+   - C. A single ethnic group, an elected parliament, a written constitution, and a central bank
+   - D. A traditional homeland, a shared history, cultural cohesion, and self-identification as one people
+
+   **Answer: B.** The 1933 Montevideo Convention lists a permanent population, a defined territory, a government, and the capacity to enter into relations with other states. A and D describe features of a nation (shared identity), not the political criteria of a state; C lists specific institutions that real states may lack while still being states.
+
+2. **A large group of people share a language, ancestry, and long history and think of themselves as one people, but they live divided across several existing countries and have no sovereign government of their own. In political-geography terms, this group is best described as a:**
+   - A. Nation-state, because it has a strong single identity
+   - B. Multinational state, because it spans several countries
+   - C. Stateless nation, because it has a shared identity but no sovereign state
+   - D. Sovereign state, because a people always constitutes a state
+
+   **Answer: C.** The group has a shared cultural identity (a nation) but lacks a sovereign state, which is exactly a stateless nation. It is not a nation-state or a sovereign state because there is no state at all, and it is not a multinational state because that term describes a single state containing several nations.
+
+3. **Which statement best captures the core distinction between a state and a nation?**
+   - A. A state is a sovereign political-territorial unit, while a nation is a group of people bound by a shared cultural identity
+   - B. A state is a cultural group, while a nation is the land that group lives on
+   - C. A state and a nation mean the same thing; the difference is only which language uses which word
+   - D. A state must contain exactly one nation, and a nation must contain exactly one state
+
+   **Answer: A.** A state is defined by sovereignty and territory; a nation is defined by shared identity. B reverses the two, C denies a distinction that political geography depends on, and D is false because states can hold several nations and a nation can lack a state entirely.
+
+4. **A single sovereign country contains several national groups, and no one group is demographically, culturally, and politically dominant over the others. This country is best described as a:**
+   - A. Stateless nation
+   - B. Nation without a state
+   - C. Nation-state
+   - D. Multinational state
+
+   **Answer: D.** A single state containing two or more national groups with none dominant is a multinational (multi-ethnic) state. It is not a nation-state, which requires one dominant national group; and it is not a stateless nation or a "nation without a state," since here there is a sovereign state.
+
+5. **Why do geographers say that genuine nation-states are relatively rare?**
+   - A. Because the United Nations refuses to recognize most nation-states
+   - B. Because international law forbids a country from having a single dominant national group
+   - C. Because almost every country contains minorities, so a state's borders rarely enclose just one homogeneous national group
+   - D. Because a nation-state must be small, and most countries are too large to qualify
+
+   **Answer: C.** A nation-state requires state borders and a single national identity to largely coincide, but nearly every country contains minority groups, so perfect homogeneity is rare and "nation-state" is a matter of degree. A and B misstate UN practice and international law, and there is no size rule (D) governing whether a country is a nation-state.
+
+## Sources
+
+- Quam, J., & Campbell, G. S. *The Western World: Daily Readings on Geography*, 1.07 Political Geography (College of DuPage, Social Sci LibreTexts, CC BY-NC-SA). Definitions of state, nation, nation-state, multinational state, and stateless nation.
+- National Geographic Society, "Nation" (National Geographic Education, encyclopedic entry). A nation as a shared-identity community; one nation may span several countries, and one country may include many nations.
+- United Nations, "Growth in United Nations membership." The UN reached 193 member states with the admission of South Sudan in 2011.
+- Montevideo Convention on the Rights and Duties of States (1933), Articles 1 and 3. The four criteria of statehood and the declarative principle that political existence is independent of recognition.
+
+## Related Topics
+
+- human-geography:foundations:political-geography
+- human-geography:foundations:borders
+- human-geography:foundations:ethnicity
+- human-geography:foundations:geopolitics
+- human-geography:foundations:culture
+
+## Editorial Metadata
+
+- **Editorial status:** READY_TO_PUBLISH
+- **Researched at:** 2026-08-19
+- **Research status:** source-verified
+- **Rights status:** One CC BY-NC-SA OER (facts only, prose rewritten); National Geographic and UN reference-only; Montevideo Convention public domain.
+- **Transformation:** Definitions and criteria synthesized from an OER political-geography chapter, National Geographic Education, the UN, and the Montevideo Convention; all prose original.
