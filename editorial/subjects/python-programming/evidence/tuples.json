@@ -1,0 +1,23 @@
+{
+  "topicId": "python-programming:foundations:tuples",
+  "subjectId": "python-programming",
+  "researchedAt": "2026-08-19",
+  "scope": {"core": ["tuple construction", "comma syntax", "empty and singleton tuples", "immutability", "direct packing and unpacking"], "supporting": ["indexing", "name rebinding", "matching target counts"], "outOfScope": ["lists, sets, and dictionaries", "function parameters and return values", "starred unpacking", "tuple hashing and dictionary keys"]},
+  "claims": [
+    {"claim": "Tuples are immutable sequences in Python.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-stdtypes", "python-docs-datastructures"], "status": "supported"},
+    {"claim": "A comma, not parentheses alone, forms a tuple; `()` is the empty-tuple display.", "claimType": "TECHNICAL", "sourceIds": ["python-language-reference-expressions", "python-docs-datastructures"], "status": "supported"},
+    {"claim": "A one-item tuple requires a trailing comma, such as `(value,)`.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-stdtypes", "python-docs-datastructures"], "status": "supported"},
+    {"claim": "Comma-separated values can be packed into a tuple and unpacked into matching assignment targets.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-datastructures"], "status": "supported"},
+    {"claim": "Basic sequence unpacking requires the number of targets to match the number of values.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-datastructures"], "status": "supported"},
+    {"claim": "Assigning a new tuple to a name is rebinding and differs from assigning to an existing tuple position.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-stdtypes", "python-docs-datastructures"], "status": "supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft contained generic statements about tuples without technical source support."],
+  "correctionsNeeded": ["Replaced boilerplate with verified tuple syntax, immutability, packing, and unpacking content; added the required singleton-comma distinction."],
+  "rightsIssues": ["Official documentation was used as reference-only authority. The lesson uses original prose and independently executed examples."],
+  "sourceRecords": [
+    {"id": "python-docs-datastructures", "title": "5. Data Structures — The Python Standard Library Documentation", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/tutorial/datastructures.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-19", "notes": "Live official tutorial read 2026-08-19. Its tuples section supports tuple syntax, immutability, singleton construction, packing, direct sequence unpacking, and target-count matching. Facts synthesized; no wording reproduced."},
+    {"id": "python-docs-stdtypes", "title": "Built-in Types — Python 3 documentation", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/library/stdtypes.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-19", "notes": "Live official documentation read 2026-08-19. Its immutable sequence and tuple sections support the tuple-as-immutable-sequence definition and singleton tuple syntax. Facts synthesized; no wording reproduced."},
+    {"id": "python-language-reference-expressions", "title": "The Python Language Reference — 6. Expressions", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/reference/expressions.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-19", "notes": "Live official language reference read 2026-08-19. Its tuple-display section supports the rule that commas, not parentheses alone, form tuples and that empty parentheses produce an empty tuple. Facts synthesized; no wording reproduced."}
+  ]
+}

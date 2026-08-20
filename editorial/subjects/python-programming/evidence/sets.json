@@ -1,0 +1,22 @@
+{
+  "topicId": "python-programming:foundations:sets",
+  "subjectId": "python-programming",
+  "researchedAt": "2026-08-19",
+  "scope": {"core": ["set uniqueness", "membership", "union, intersection, and difference", "set versus frozenset"], "supporting": ["empty set syntax", "hashability", "lack of indexing"], "outOfScope": ["dictionary mappings", "list operations", "set comprehensions", "algorithmic complexity guarantees"]},
+  "claims": [
+    {"claim": "A Python set is an unordered collection of distinct hashable objects.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-stdtypes"], "status": "supported"},
+    {"claim": "Sets support membership testing and mathematical operations including union, intersection, and difference.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-stdtypes", "python-docs-datastructures"], "status": "supported"},
+    {"claim": "Sets do not record element position or insertion order and do not support indexing or slicing.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-stdtypes"], "status": "supported"},
+    {"claim": "An empty Python set is created with set(), while {} creates an empty dictionary.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-datastructures"], "status": "supported"},
+    {"claim": "set is mutable and unhashable; frozenset is immutable and hashable.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-stdtypes"], "status": "supported"},
+    {"claim": "Converting a sequence with set() eliminates duplicate elements.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-datastructures"], "status": "supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft contained no substantive, source-backed Python set claims."],
+  "correctionsNeeded": ["Replaced generic boilerplate with documented Python set semantics, executable examples, and questions with four options."],
+  "rightsIssues": ["Official Python documentation was used as reference-only authority; lesson prose is original synthesis."],
+  "sourceRecords": [
+    {"id": "python-docs-stdtypes", "title": "Built-in Types — Python 3 documentation", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/library/stdtypes.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-19", "notes": "Read live 2026-08-19, section ‘Set Types — set, frozenset’. Supports distinct hashable members, unordered/no-index behavior, set mutability, frozenset immutability and hashability, and documented set operations. Facts synthesized; no wording reproduced."},
+    {"id": "python-docs-datastructures", "title": "5. Data Structures — The Python Standard Library Documentation", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/tutorial/datastructures.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-19", "notes": "Read live 2026-08-19, section 5.4 ‘Sets’. Supports empty-set syntax, deduplication with set(), unordered output caution, and the introductory union/intersection/difference examples. Facts synthesized; no wording reproduced."}
+  ]
+}

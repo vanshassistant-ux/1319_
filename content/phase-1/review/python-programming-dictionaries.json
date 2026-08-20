@@ -1,0 +1,280 @@
+{
+  "id": "python-programming:foundations:dictionaries",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "dictionaries",
+  "title": "Dictionaries",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "python",
+    "dictionary",
+    "mapping",
+    "keys",
+    "values"
+  ],
+  "in30Seconds": "A Python dictionary is a mutable mapping from unique, hashable keys to values. Write a literal with braces and key-value pairs, such as {\"apples\": 3}. Use a key in square brackets to retrieve or set its value. Assigning with an existing key replaces that key's value; assigning with a new key adds a pair. Dictionaries preserve insertion order, but their main idea is lookup by a meaningful key rather than position.",
+  "whyItMatters": "Many programs need to connect a label to information: a course code to a title, a username to preferences, or a product code to available stock. A dictionary makes that relationship explicit. It also develops useful habits for later programming: choosing stable keys, handling missing information deliberately, and knowing whether an operation adds a record or updates one. These habits transfer to JSON-like data, configuration, and data analysis.",
+  "learningObjectives": [
+    "Define a dictionary as a mutable mapping of unique keys to values.",
+    "Create and update a dictionary with literal and subscription syntax.",
+    "Distinguish direct lookup from get() when a key may be absent.",
+    "Explain why dictionary keys must be hashable and unique.",
+    "Apply insertion-order and update behavior to trace a small program."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Mapping names to information",
+      "body": "A Python dictionary, usually called a dict, stores associations rather than a numbered sequence. Each association has a key and a value. In `{\"course\": \"CS101\", \"credits\": 3}`, `\"course\"` is a key whose value is `\"CS101\"`; `\"credits\"` is another key whose value is `3`. Braces make a dictionary literal, and an empty dictionary is `{}`. The standard documentation describes a dictionary as a mutable mapping: it maps a key to an arbitrary object. Values therefore do not all need to have the same type, even though a clear program commonly uses a predictable shape. The important constraint is on keys. A key must be hashable, which excludes mutable containers such as lists and dictionaries. Strings, integers, and tuples made entirely from suitable contents are common keys. A dictionary has one current value for each key. Writing a repeated key in a literal or assigning to an already present key does not make a second entry; the later value replaces the earlier association. Python also treats equal keys as the same entry: `1`, `1.0`, and `True` compare equal, so using them as keys can address one shared entry. That is a reason to choose key types deliberately."
+    },
+    {
+      "heading": "Lookup, missing keys, and deliberate updates",
+      "body": "Subscription uses square brackets with a key. If `stock = {\"apples\": 3}`, then `stock[\"apples\"]` evaluates to `3`. The same syntax on the left of assignment changes the mapping: `stock[\"apples\"] = 4` updates the existing value, while `stock[\"pears\"] = 2` adds a new key-value pair. Direct lookup is appropriate when a missing key signals a mistake or a required condition; `stock[\"bananas\"]` raises `KeyError` if that key is absent. When absence is expected, `stock.get(\"bananas\")` returns `None`, and `stock.get(\"bananas\", 0)` supplies a chosen fallback. That distinction matters: a fallback is not proof that the key was present. Use `key in stock` when the program needs to test membership explicitly. Dictionaries also provide views through `keys()`, `values()`, and `items()`. An item is a two-part key-value pair, which is convenient when a loop needs both pieces. This lesson does not cover loops; the essential point is that the key determines which value is retrieved or changed."
+    },
+    {
+      "heading": "Order, equality, and a useful trace",
+      "body": "Modern Python dictionaries preserve insertion order. If keys are first added as `\"apples\"`, then `\"pears\"`, then `\"oranges\"`, iterating over the dictionary or applying `list(stock)` yields those keys in that order. Updating `stock[\"pears\"]` changes its value but does not move that key to the end. Deleting a key and adding it again is a new insertion, so it appears later. This ordering is useful for predictable display and traces, but it should not obscure the mapping idea: dictionary equality is based on having the same key-value pairs, regardless of their order. Thus two dictionaries can compare equal even if their pairs were inserted in different orders. A dictionary is mutable, so methods and assignments can change an existing object. Passing one to later code therefore needs the same care as passing other mutable collections: that code can observe or change the mapping unless the program deliberately makes a separate copy. That concern is separate from insertion order and is a reason to state clearly which part of a program owns an update. A small trace makes the rules concrete. Start with `stock = {\"apples\": 3, \"pears\": 1}`. Add two to pears with `stock[\"pears\"] += 2`, then set `stock[\"oranges\"] = 4`. The result is `{\"apples\": 3, \"pears\": 3, \"oranges\": 4}`; the pears association was updated, and oranges was inserted last. A request for `stock.get(\"bananas\", 0)` returns `0` without adding bananas. Choosing between a required lookup, a tested lookup, and a fallback makes code state its expectations clearly."
+    },
+    {
+      "heading": "Choosing a clear dictionary shape",
+      "body": "A dictionary is easiest to use when its keys have a single stated meaning. For example, a stock mapping can use product names as keys and counts as values. Mixing unrelated meanings into the same mapping makes later lookup unclear, even though Python technically permits values of different types. Before adding a key, decide what it identifies and what a missing key means. That small design step prevents a program from confusing an unknown record with a known record whose value is zero or None."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "dictionary (dict)",
+      "definition": "A mutable Python mapping that associates unique hashable keys with values."
+    },
+    {
+      "term": "mapping",
+      "definition": "A collection that retrieves a value by its associated key rather than by a numeric position."
+    },
+    {
+      "term": "key",
+      "definition": "A hashable value used to locate one association in a dictionary."
+    },
+    {
+      "term": "value",
+      "definition": "The object associated with a particular dictionary key."
+    },
+    {
+      "term": "key-value pair",
+      "definition": "One association consisting of a key and its value."
+    },
+    {
+      "term": "hashable",
+      "definition": "Suitable for use as a dictionary key because its hash value remains usable during its lifetime."
+    },
+    {
+      "term": "KeyError",
+      "definition": "The exception raised by direct dictionary subscription when the requested key is absent."
+    },
+    {
+      "term": "insertion order",
+      "definition": "The order in which keys were added to a dictionary; Python dictionaries preserve it."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Think of a dictionary as a row of labeled cubbies. Instead of saying \"give me cubby number 2,\" you can say \"give me the cubby labeled apples.\" Inside that cubby is a value, perhaps the number 3. A dictionary keeps the label together with what it points to. You can put in a new labeled cubby or replace what is in one that already has that label.\n\nThe label has to be something dependable. A string like \"apples\" stays the same, so it works well. A list can be changed, so Python does not allow it as a dictionary key. If you ask for a label that was never added, square-bracket lookup complains with `KeyError`. `get()` is the polite alternative when an empty cubby is normal: it can return `None` or a fallback value.\n\nPython remembers the order labels were first added, which helps when showing the dictionary. But the labels are still for finding values, not positions like the numbered slots in a list.",
+    "analogy": "A dictionary is like labeled cubbies: each label identifies one place, and each place holds its associated information.",
+    "analogyLimits": "A Python dictionary is not a physical cabinet. Its lookup rules depend on hashable keys, equal keys can refer to the same entry, and stored values may be any Python objects."
+  },
+  "workedExample": "Run this Python 3 code:\n\n```python\nstock = {\"apples\": 3, \"pears\": 1}\nstock[\"pears\"] += 2\nstock[\"oranges\"] = 4\nprint(stock)\nprint(stock.get(\"bananas\", 0))\nprint(list(stock))\n```\n\nIt prints `{\"apples\": 3, \"pears\": 3, \"oranges\": 4}`, then `0`, then `[\"apples\", \"pears\", \"oranges\"]`. The pears key already existed, so its value changed from 1 to 3 without changing its position. Oranges was new, so it was added at the end of insertion order. `get` supplied a fallback for an absent key and did not insert bananas.",
+  "commonMistakes": [
+    {
+      "mistake": "Using a list as a dictionary key.",
+      "correction": "Use a hashable key such as a string, integer, or appropriate tuple; lists are mutable and cannot be keys."
+    },
+    {
+      "mistake": "Expecting a repeated key to create two entries.",
+      "correction": "A dictionary has one association per key; a later assignment replaces that key's value."
+    },
+    {
+      "mistake": "Using direct lookup when absence is normal.",
+      "correction": "Use get with an appropriate default, or test membership with in, when the key may be missing."
+    },
+    {
+      "mistake": "Treating insertion order as numeric indexing.",
+      "correction": "Use keys to retrieve values; order is preserved for iteration and display, not a substitute for positional access."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "stock[\"bananas\"]",
+      "b": "stock.get(\"bananas\", 0)",
+      "distinction": "The first raises KeyError when bananas is absent; the second returns the supplied fallback without inserting a key."
+    },
+    {
+      "a": "stock[\"pears\"] = 3",
+      "b": "stock[\"oranges\"] = 4",
+      "distinction": "The first updates an existing association; the second adds a new key-value pair."
+    }
+  ],
+  "keyTakeaway": "A dictionary maps unique hashable keys to values. Use direct lookup for required keys and get or membership testing when absence is expected; assignment either updates a key or inserts a new one.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:dictionaries:1",
+      "prompt": "What is required of a Python dictionary key?",
+      "options": [
+        "A. It must be a string.",
+        "B. It must be an integer.",
+        "C. It must be hashable.",
+        "D. It must be a list."
+      ],
+      "correctIndex": 2,
+      "explanation": "Dictionary keys must be hashable. Strings and integers are common examples, but neither type is required; a list is mutable and cannot be a key.",
+      "difficulty": "recall",
+      "skill": "Identifying the key requirement",
+      "sourceIds": [
+        "python-docs-mapping-types-dict",
+        "python-docs-datastructures"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:dictionaries:2",
+      "prompt": "After `scores = {\"Ada\": 8}` and `scores[\"Ada\"] = 10`, what is `scores[\"Ada\"]`?",
+      "options": [
+        "A. 8",
+        "B. 10",
+        "C. [8, 10]",
+        "D. It raises KeyError."
+      ],
+      "correctIndex": 1,
+      "explanation": "Assigning with a key already present replaces that key's associated value, so Ada maps to 10.",
+      "difficulty": "application",
+      "skill": "Tracing an update to an existing key",
+      "sourceIds": [
+        "python-docs-mapping-types-dict",
+        "python-docs-datastructures"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:dictionaries:3",
+      "prompt": "Which expression returns 0 rather than raising an exception when `\"late\"` is not a key in `attendance`?",
+      "options": [
+        "A. `attendance[\"late\"]`",
+        "B. `attendance.keys(\"late\")`",
+        "C. `attendance.values(0)`",
+        "D. `attendance.get(\"late\", 0)`"
+      ],
+      "correctIndex": 3,
+      "explanation": "get accepts a key and optional default, returning 0 here when the key is absent. Subscription raises KeyError, and keys and values do not take those lookup arguments.",
+      "difficulty": "understanding",
+      "skill": "Handling a potentially missing key",
+      "sourceIds": [
+        "python-docs-datastructures"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:dictionaries:4",
+      "prompt": "A dictionary receives keys in this order: `\"first\"`, `\"second\"`, then `\"third\"`. It next updates the value for `\"second\"`. What does `list(the_dictionary)` contain?",
+      "options": [
+        "A. [\"first\", \"second\", \"third\"]",
+        "B. [\"first\", \"third\", \"second\"]",
+        "C. Only [\"second\"]",
+        "D. The order is always random."
+      ],
+      "correctIndex": 0,
+      "explanation": "Dictionaries preserve insertion order, and updating an existing key does not change its order. Therefore the keys remain first, second, third.",
+      "difficulty": "analysis",
+      "skill": "Applying insertion-order and update rules",
+      "sourceIds": [
+        "python-docs-mapping-types-dict"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:dictionaries:5",
+      "prompt": "Why does `{[1, 2]: \"pair\"}` fail in Python?",
+      "options": [
+        "A. Dictionary values cannot be strings.",
+        "B. A dictionary needs exactly two entries.",
+        "C. Square brackets cannot appear in a literal.",
+        "D. A list is mutable and is not hashable, so it cannot be a key."
+      ],
+      "correctIndex": 3,
+      "explanation": "The list is in key position. Because lists are mutable and unhashable, Python raises TypeError rather than creating this dictionary.",
+      "difficulty": "application",
+      "skill": "Diagnosing an invalid key type",
+      "sourceIds": [
+        "python-docs-mapping-types-dict",
+        "python-docs-datastructures"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "python-programming:foundations:dictionaries:1",
+      "prompt": "What is required of a Python dictionary key?",
+      "options": [
+        "A. It must be a string.",
+        "B. It must be an integer.",
+        "C. It must be hashable.",
+        "D. It must be a list."
+      ],
+      "correctIndex": 2,
+      "explanation": "Dictionary keys must be hashable. Strings and integers are common examples, but neither type is required; a list is mutable and cannot be a key.",
+      "difficulty": "recall",
+      "skill": "Identifying the key requirement",
+      "sourceIds": [
+        "python-docs-mapping-types-dict",
+        "python-docs-datastructures"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:dictionaries:2",
+      "prompt": "After `scores = {\"Ada\": 8}` and `scores[\"Ada\"] = 10`, what is `scores[\"Ada\"]`?",
+      "options": [
+        "A. 8",
+        "B. 10",
+        "C. [8, 10]",
+        "D. It raises KeyError."
+      ],
+      "correctIndex": 1,
+      "explanation": "Assigning with a key already present replaces that key's associated value, so Ada maps to 10.",
+      "difficulty": "application",
+      "skill": "Tracing an update to an existing key",
+      "sourceIds": [
+        "python-docs-mapping-types-dict",
+        "python-docs-datastructures"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:dictionaries:3",
+      "prompt": "Which expression returns 0 rather than raising an exception when `\"late\"` is not a key in `attendance`?",
+      "options": [
+        "A. `attendance[\"late\"]`",
+        "B. `attendance.keys(\"late\")`",
+        "C. `attendance.values(0)`",
+        "D. `attendance.get(\"late\", 0)`"
+      ],
+      "correctIndex": 3,
+      "explanation": "get accepts a key and optional default, returning 0 here when the key is absent. Subscription raises KeyError, and keys and values do not take those lookup arguments.",
+      "difficulty": "understanding",
+      "skill": "Handling a potentially missing key",
+      "sourceIds": [
+        "python-docs-datastructures"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "python-programming:foundations:lists",
+    "python-programming:foundations:tuples",
+    "python-programming:foundations:sets",
+    "python-programming:foundations:for-loops",
+    "python-programming:foundations:functions"
+  ],
+  "sources": [
+    "python-docs-mapping-types-dict",
+    "python-docs-datastructures"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only official documentation; no source prose adapted.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Original explanatory lesson and independently executed Python 3 trace based on official Python documentation."
+  },
+  "contentHash": "ebb49d8c6bcd047e",
+  "status": "source-verified",
+  "public": false
+}

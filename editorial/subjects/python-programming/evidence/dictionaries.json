@@ -1,0 +1,17 @@
+{
+  "topicId":"python-programming:foundations:dictionaries", "subjectId":"python-programming", "researchedAt":"2026-08-19",
+  "scope":{"core":["dictionary literals","unique hashable keys","lookup and get","updates and insertion order"],"supporting":["KeyError","membership","keys values and items"],"outOfScope":["sets","list semantics","loops","custom hashing implementation","functions"]},
+  "claims":[
+    {"claim":"A dictionary is a mutable mapping from hashable keys to arbitrary objects.","claimType":"TECHNICAL","sourceIds":["python-docs-mapping-types-dict"],"status":"supported"},
+    {"claim":"A dictionary has one value per key; assigning an existing key replaces its associated value.","claimType":"TECHNICAL","sourceIds":["python-docs-mapping-types-dict","python-docs-datastructures"],"status":"supported"},
+    {"claim":"Direct subscription of an absent key raises KeyError, while get returns None or a supplied default.","claimType":"TECHNICAL","sourceIds":["python-docs-datastructures"],"status":"supported"},
+    {"claim":"Python dictionaries preserve insertion order, and updating a key does not move it.","claimType":"TECHNICAL","sourceIds":["python-docs-mapping-types-dict"],"status":"supported"},
+    {"claim":"Lists cannot be dictionary keys because they are mutable and not hashable.","claimType":"TECHNICAL","sourceIds":["python-docs-mapping-types-dict","python-docs-datastructures"],"status":"supported"},
+    {"claim":"Dictionary equality depends on having the same key-value pairs rather than their ordering.","claimType":"TECHNICAL","sourceIds":["python-docs-mapping-types-dict"],"status":"supported"}
+  ],
+  "conflictingEvidence":[], "unsupportedExistingClaims":["The generated draft contained generic, unsupported statements and no usable dictionary-specific instruction."], "correctionsNeeded":["Replaced boilerplate with sourced Python 3 dictionary semantics and executed a worked trace."], "rightsIssues":["Official documentation used as reference-only; lesson prose is original."],
+  "sourceRecords":[
+    {"id":"python-docs-mapping-types-dict","title":"Mapping Types — dict — Python 3 documentation","provider":"Python Software Foundation","url":"https://docs.python.org/3/library/stdtypes.html#mapping-types-dict","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Read live. Authoritative source for dict as a mutable mapping, hashable keys, creation, equality, insertion order, and update behavior. Facts synthesized; no prose copied."},
+    {"id":"python-docs-datastructures","title":"5. Data Structures — The Python Standard Library Documentation","provider":"Python Software Foundation","url":"https://docs.python.org/3/tutorial/datastructures.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Read live. Reused registry record at its canonical existing URL. Supports dictionary key-value pairs, unique keys, subscription, KeyError, get defaults, membership, and key insertion order."}
+  ]
+}
