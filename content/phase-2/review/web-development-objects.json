@@ -1,0 +1,227 @@
+{
+  "id": "web-development:foundations:objects",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "objects",
+  "title": "Objects",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "web-development",
+    "javascript",
+    "objects",
+    "properties",
+    "data"
+  ],
+  "in30Seconds": "A JavaScript object groups related information as properties. Each property connects a key to a value, such as a course object's `title` and `seats`. An object literal uses braces: `const course = { title: \"Web Basics\", seats: 24 };`. Use dot notation when you know a simple property name, and bracket notation when the key comes from a variable or is not a valid identifier. Assigning to a property can add it or replace its value.",
+  "whyItMatters": "Objects give web programs a readable way to keep related facts together. A product, a user preference, or a page setting can be represented by one object rather than a collection of unrelated variables. Learning exactly how keys are read and changed prevents common bugs, especially when a program chooses a property name at runtime. This foundation leads into browser APIs and DOM work, but the immediate skill is smaller: represent a record of related data, read the needed value, and update the intended property.",
+  "learningObjectives": [
+    "Define an object, property, key, and value in JavaScript.",
+    "Create a plain object with an object literal.",
+    "Read a known property with dot notation.",
+    "Use bracket notation for a computed or non-identifier key.",
+    "Trace an assignment that adds or replaces an object property."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "An object is a collection of named properties",
+      "body": "In JavaScript, an object is a value that can have properties. A property associates a key (also called a property name) with a value. That value may be a string, number, boolean, another object, or a function; this lesson uses ordinary data values so the structure stays visible. An object literal is a direct expression for creating an object. In `const course = { title: \"Web Basics\", seats: 24 };`, the braces create one object. `title` and `seats` are keys, while `\"Web Basics\"` and `24` are their values. The variable `course` holds a reference to that object. Grouping these facts says that they describe the same course. It does not impose a fixed record layout: JavaScript objects can receive new properties later. That flexibility is useful, but it also means a reader must pay attention to the exact spelling of each key. Property names are case-sensitive, so `course.title` and `course.Title` ask for different names. This lesson concerns plain objects used as records, not classes, JSON text, or browser network data."
+    },
+    {
+      "heading": "Reading properties: dot notation and brackets",
+      "body": "Property access has two common forms. Dot notation places an identifier directly after a dot: `course.title`. It is concise when the program literally knows the simple name `title`. Bracket notation puts an expression in square brackets: `course[\"title\"]`. With that string, it reads the same property. Brackets are required when a key has characters that cannot appear in an identifier, such as `course[\"meeting day\"]`, and when the key is held in a variable. For example, `const field = \"seats\"; course[field]` reads `24`; `course.field` instead looks for a property literally named `field`. This distinction is central: brackets evaluate the expression inside them, while dot notation treats the characters after the dot as the property name. A request for a property that the object does not have normally produces `undefined`, which is different from `null`. Do not treat a missing property as proof that an object is broken; first check the intended key and whether the program was expected to add that property."
+    },
+    {
+      "heading": "Adding and replacing a property",
+      "body": "An assignment through a property access changes the object. `course.seats = 30;` replaces the old value for the existing `seats` property. `course.room = \"Lab 3\";` adds a new property because no `room` property existed. The same rule applies with brackets: `course[field] = 30;` changes whichever property name the expression in `field` evaluates to. This is separate from reassigning the variable. `const course` means the binding `course` cannot be assigned to a different object, but it does not freeze the object it already refers to. Therefore `course.seats = 30` can work while `course = { title: \"Other\" }` throws a reassignment error. When code updates data, identify what is changing: the binding, or one property of the referenced object. Use carefully controlled keys for bracket access. This lesson does not cover accepting arbitrary external keys; later security work addresses trust boundaries."
+    },
+    {
+      "heading": "Trace a small record deliberately",
+      "body": "Consider `const schedule = { day: \"Tuesday\", start: 9 }; const chosen = \"start\"; schedule[chosen] = schedule[chosen] + 1; schedule.room = \"204\";`. The literal first creates properties `day` and `start`. `chosen` stores the string `\"start\"`. Each occurrence of `schedule[chosen]` therefore accesses `schedule.start`, first reading `9` and then writing `10`. The final line adds `room`. At the end, the object represents `{ day: \"Tuesday\", start: 10, room: \"204\" }`. This style of tracing is more reliable than guessing from punctuation: write the key selected by every bracket expression, then mark whether an assignment replaces an existing property or creates one. If the code used `schedule.chosen`, it would refer to a different, literal key named `chosen`. Objects are often passed between functions or connected to page elements later, but the access rules do not change: a property read needs the intended key, and an assignment acts on that selected property."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "object",
+      "definition": "A JavaScript value that can hold properties."
+    },
+    {
+      "term": "property",
+      "definition": "A named association between a key and a value on an object."
+    },
+    {
+      "term": "key",
+      "definition": "The property name used to select a value from an object."
+    },
+    {
+      "term": "value",
+      "definition": "The data currently associated with a property key."
+    },
+    {
+      "term": "object literal",
+      "definition": "A brace-delimited JavaScript expression that creates an object with listed properties."
+    },
+    {
+      "term": "dot notation",
+      "definition": "Property access written with a dot and a literal identifier, such as `book.title`."
+    },
+    {
+      "term": "bracket notation",
+      "definition": "Property access written with square brackets containing an expression, such as `book[field]`."
+    },
+    {
+      "term": "computed property access",
+      "definition": "Selecting a property by evaluating an expression to obtain its key."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Think of an object as one labeled information card. The card for a class can have a line called `title` and another called `seats`. Instead of keeping those facts in separate piles, the object keeps them together. A dot is a quick way to point at a line whose name you already know: `course.title`. Square brackets are useful when someone hands you the line name in another note: if `field` says `\"seats\"`, then `course[field]` means the seats line. You can erase and replace the value on a line, or add a new line.",
+    "analogy": "Imagine a campus directory card. The headings on the card are keys, and the entries written beside them are values. Saying `card.phone` is like pointing at the printed Phone heading. Saying `card[heading]` is like reading a small note that tells you which heading to use, then pointing there.",
+    "analogyLimits": "A JavaScript object is not a paper card: values can be other objects or functions, and JavaScript applies formal access rules. The card image also should not suggest that `const` makes the entries unchangeable; it only prevents replacing the variable's reference to the card."
+  },
+  "workedExample": "Run `const schedule = { day: \"Tuesday\", start: 9 }; const field = \"start\"; schedule[field] = schedule[field] + 1; schedule.room = \"204\"; console.log(schedule.start, schedule[\"room\"]);`. `field` evaluates to `\"start\"`, so the bracket reads 9 and writes 10 back to the `start` property. The last assignment adds `room`; it does not replace the `schedule` variable. The output is `10 204`. In contrast, `schedule.field` would seek a property literally named `field`, which was never added, so it would be `undefined`. This example was executed with Bun.",
+  "commonMistakes": [
+    {
+      "mistake": "Writing `object.variableName` when a variable holds the desired key.",
+      "correction": "Use `object[variableName]`; dot notation would use the literal word `variableName`."
+    },
+    {
+      "mistake": "Using dot notation for a key that contains a space or hyphen.",
+      "correction": "Use bracket notation with the exact string key, such as `record[\"meeting-day\"]`."
+    },
+    {
+      "mistake": "Assuming `const` prevents all changes to an object's properties.",
+      "correction": "Distinguish rebinding the variable from assigning to a property of the existing object."
+    },
+    {
+      "mistake": "Treating a missing-property result as `null`.",
+      "correction": "A normal read of an absent property yields `undefined`; verify the key spelling and creation path."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "dot notation",
+      "b": "bracket notation",
+      "distinction": "Dot notation names a literal identifier; bracket notation evaluates an expression to determine the key."
+    },
+    {
+      "a": "reassigning a binding",
+      "b": "assigning a property",
+      "distinction": "Reassignment changes what a variable refers to; property assignment changes or adds data on the currently referenced object."
+    }
+  ],
+  "keyTakeaway": "Objects organize related data as key–value properties. Use dots for known simple keys, brackets for computed or unusual keys, and trace assignments to see exactly which property changes.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:objects:1",
+      "prompt": "In `{ name: \"Ari\" }`, what is `name`?",
+      "options": [
+        "A property key",
+        "An object literal",
+        "A method call",
+        "A variable reassignment"
+      ],
+      "correctIndex": 0,
+      "explanation": "`name` is the key naming a property; the whole braced expression is the object literal.",
+      "difficulty": "recall",
+      "skill": "Identify an object property key",
+      "sourceIds": [
+        "mdn-working-with-objects"
+      ]
+    },
+    {
+      "id": "web-development:foundations:objects:2",
+      "prompt": "Given `const field = \"room\";`, which expression reads the property selected by `field` from `schedule`?",
+      "options": [
+        "`schedule.field`",
+        "`schedule[field]`",
+        "`field.schedule`",
+        "`schedule.(field)`"
+      ],
+      "correctIndex": 1,
+      "explanation": "Brackets evaluate `field` to the string `room`; dot notation would request a literal key named `field`.",
+      "difficulty": "application",
+      "skill": "Apply computed property access",
+      "sourceIds": [
+        "mdn-working-with-objects"
+      ]
+    },
+    {
+      "id": "web-development:foundations:objects:3",
+      "prompt": "Why is `profile[\"home city\"]` appropriate when `profile.home city` is not?",
+      "options": [
+        "Brackets make the object immutable",
+        "Brackets convert every value to a string",
+        "The property must be an array",
+        "The key includes a space, so it is not a dot-notation identifier"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bracket notation can use a string key containing a space; dot notation requires an identifier after the dot.",
+      "difficulty": "understanding",
+      "skill": "Choose property-access syntax",
+      "sourceIds": [
+        "mdn-working-with-objects"
+      ]
+    },
+    {
+      "id": "web-development:foundations:objects:4",
+      "prompt": "What does `const book = { title: \"A\" }; book.pages = 200;` do?",
+      "options": [
+        "Replaces `book` with a number",
+        "Throws because every `const` object is frozen",
+        "Deletes the `title` property",
+        "Adds a `pages` property with value 200"
+      ],
+      "correctIndex": 3,
+      "explanation": "The assignment adds a property to the existing object; `const` prevents rebinding `book`, not ordinary property mutation.",
+      "difficulty": "application",
+      "skill": "Trace property assignment",
+      "sourceIds": [
+        "mdn-working-with-objects"
+      ]
+    },
+    {
+      "id": "web-development:foundations:objects:5",
+      "prompt": "If `const item = {};` has no `price` property, what does `item.price` normally evaluate to?",
+      "options": [
+        "`false`",
+        "`null`",
+        "`undefined`",
+        "A new empty property"
+      ],
+      "correctIndex": 2,
+      "explanation": "Reading a nonexistent ordinary property produces `undefined`; it does not create the property.",
+      "difficulty": "recall",
+      "skill": "Recognize a missing-property result",
+      "sourceIds": [
+        "mdn-working-with-objects"
+      ]
+    }
+  ],
+  "quickCheck": [
+    "In `{ name: \"Ari\" }`, what is `name`?",
+    "Given `const field = \"room\";`, which expression reads the property selected by `field` from `schedule`?",
+    "Why is `profile[\"home city\"]` appropriate when `profile.home city` is not?"
+  ],
+  "relatedTopics": [
+    "web-development:foundations:variables",
+    "web-development:foundations:arrays",
+    "web-development:foundations:functions",
+    "web-development:foundations:dom",
+    "web-development:foundations:events"
+  ],
+  "sources": [
+    "mdn-working-with-objects",
+    "ecma262-object-type"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only sources; no source prose adapted.",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original explanatory lesson verified against MDN and the ECMAScript specification."
+  },
+  "contentHash": "ad4b54d58bc299cb",
+  "status": "source-verified",
+  "public": false
+}

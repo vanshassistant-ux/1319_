@@ -1,0 +1,16 @@
+{
+  "topicId":"web-development:foundations:functions", "subjectId":"web-development", "researchedAt":"2026-08-20",
+  "scope":{"core":["function declarations and calls","parameters and arguments","return values and undefined"],"supporting":["local function body work","reusable calculations"],"outOfScope":["arrow functions","callbacks","async functions","DOM events and browser APIs"]},
+  "claims":[
+    {"claim":"A JavaScript function declaration uses the function keyword, a name, a parameter list, and a body.","claimType":"TECHNICAL","sourceIds":["mdn-js-functions-guide","ecma262-functions-and-classes"],"status":"supported"},
+    {"claim":"A call invokes a function and supplies argument values; parameters name inputs in the declaration.","claimType":"TECHNICAL","sourceIds":["mdn-js-functions-guide"],"status":"supported"},
+    {"claim":"A return statement ends function execution and supplies a value to the caller.","claimType":"TECHNICAL","sourceIds":["mdn-js-functions-guide","ecma262-functions-and-classes"],"status":"supported"},
+    {"claim":"When an ordinary function completes without a return value, its call result is undefined.","claimType":"TECHNICAL","sourceIds":["mdn-js-functions-guide","ecma262-functions-and-classes"],"status":"supported"},
+    {"claim":"The worked example totalWithTax(20, 0.05) evaluates to 21.","claimType":"QUANTITATIVE","sourceIds":["mdn-js-functions-guide"],"status":"supported"}
+  ],
+  "conflictingEvidence":[], "unsupportedExistingClaims":["The generated draft made only generic claims and did not teach JavaScript function behavior."], "correctionsNeeded":["Replaced boilerplate with source-verified JavaScript terminology, a Bun-executed example, and supported questions."], "rightsIssues":["Both sources are used as reference-only sources; no source prose was reproduced."],
+  "sourceRecords":[
+    {"id":"mdn-js-functions-guide","title":"Functions — JavaScript Guide","provider":"MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"CC BY-SA 2.5","licenseUrl":"https://creativecommons.org/licenses/by-sa/2.5/","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Supports declarations, calls, parameters versus arguments, return behavior, and the result of a missing return."},
+    {"id":"ecma262-functions-and-classes","title":"ECMAScript Language: Functions and Classes","provider":"Ecma International / TC39","url":"https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html","sourceType":"standards-body","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-20","notes":"Read directly. Primary specification corroborating function definitions and return-completion semantics."}
+  ]
+}

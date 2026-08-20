@@ -1,0 +1,285 @@
+{
+  "id": "web-development:foundations:arrays",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "arrays",
+  "title": "Arrays",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "web-development",
+    "javascript",
+    "arrays",
+    "indexed-collections"
+  ],
+  "in30Seconds": "A JavaScript array is an ordered collection whose elements are accessed with numeric indexes. The first position is index `0`, and the `length` property reports one more than the greatest present index. Bracket notation reads or assigns an element, while methods such as `push()`, `pop()`, `shift()`, and `unshift()` add or remove elements. Many common array operations change the same array, so track that mutation deliberately.",
+  "whyItMatters": "Arrays give JavaScript programs a compact way to keep related values in an order: tasks in a queue, test scores, or items a page should render. Indexing makes it possible to select one item, while the length makes bounds checks and loops possible. The essential habit is distinguishing a method that changes an existing array from one that creates a result without changing it. That distinction prevents surprising data changes in browser interfaces and is a foundation for later work with loops, DOM updates, and API data.",
+  "learningObjectives": [
+    "Define a JavaScript array and identify its zero-based indexes.",
+    "Use bracket notation to read or assign an array element.",
+    "Explain what an array's length represents.",
+    "Trace the effects of basic methods that add or remove elements.",
+    "Distinguish mutation of an array from reassignment of its variable binding."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Ordered elements and indexes",
+      "body": "An array is an object-like JavaScript collection designed around ordered element positions. An array literal uses square brackets: `const colors = [\"red\", \"blue\", \"green\"];`. Its elements occupy numeric indexes. JavaScript begins indexing at zero, so `colors[0]` is `\"red\"`, `colors[1]` is `\"blue\"`, and `colors[2]` is `\"green\"`. The bracket expression is not a one-based human counting system; it asks for the element associated with a property key representing an array index. That is why asking for `colors[3]` in this example returns `undefined`: no element has been stored at that position. Zero-based indexing can initially feel off by one, but it gives a direct relationship between an index and its offset from the start: index 0 is zero positions away, index 1 is one position away. Keep this lesson focused on ordered elements; named properties belong to the separate topic on objects."
+    },
+    {
+      "heading": "Length is a boundary, not the last index",
+      "body": "Every array has a `length` property. For `const colors = [\"red\", \"blue\", \"green\"];`, `colors.length` is `3`. The last existing element is therefore at `colors.length - 1`, or index 2. A frequent error is to use `colors[colors.length]` when trying to retrieve the last element; that expression instead asks for the first position after the normal end and returns `undefined` here. Array length is maintained from indexed elements, and it can describe a range that includes empty positions. For introductory code, the safe model is that valid existing positions in a dense array run from 0 through `length - 1`. Check the boundary before reading a position when input might be empty. An empty array `[]` has length 0 and no last element, so `items[items.length - 1]` is not a useful element lookup until the program has established that `items.length > 0`."
+    },
+    {
+      "heading": "Reading, assigning, and changing the collection",
+      "body": "Bracket notation can read an element or assign an element at an index. Given `const tasks = [\"plan\", \"draft\"];`, `tasks[1]` reads `\"draft\"`; `tasks[1] = \"review\"` replaces that element. Arrays also provide methods for common end and front operations. `push(value)` appends one or more values and returns the new length. `pop()` removes and returns the final element. `unshift(value)` adds one or more values at the beginning and returns the new length; `shift()` removes and returns the first element. These methods mutate the target array. Mutation means the collection itself changes, so another part of a program observing the same array will observe the updated elements. By contrast, `slice()` returns a new array containing a selected portion and does not mutate the source. Knowing which category a method belongs to is more useful than memorizing a long method list: inspect the documentation and make the intended data change explicit."
+    },
+    {
+      "heading": "Mutation is not reassignment",
+      "body": "An array can be held by a `const` binding and still have elements changed. `const list = [\"a\"]; list.push(\"b\");` is permitted because `push()` mutates the array rather than assigning a different value to the binding `list`. In contrast, `list = [\"a\", \"b\"];` attempts to reassign that const binding and throws. The difference matters when reading code: `const` protects the association between the name and the array, not the array's contents. When an operation should preserve the original array, use a non-mutating operation such as `slice()` and store its result under an appropriate binding. This is also a design choice: a function that silently mutates input can surprise a caller, while a clearly named operation and a documented returned array make ownership easier to reason about. For values arriving from an unknown source, `Array.isArray(value)` tests whether the value is an array; do not rely only on a value's appearance in console output. This lesson does not treat arrays as a substitute for keyed records, nested data structures, functions, or browser APIs; those choices require different concepts."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "array",
+      "definition": "A JavaScript collection that stores elements at ordered numeric index positions."
+    },
+    {
+      "term": "element",
+      "definition": "A value stored in an array at a particular index."
+    },
+    {
+      "term": "index",
+      "definition": "A zero-based numeric position used to access an array element."
+    },
+    {
+      "term": "length",
+      "definition": "An array property giving the boundary one position beyond its highest normal indexed element."
+    },
+    {
+      "term": "bracket notation",
+      "definition": "The `[index]` syntax used to read or assign an element at an array position."
+    },
+    {
+      "term": "mutation",
+      "definition": "A change made to an existing collection rather than a replacement of the variable binding that refers to it."
+    },
+    {
+      "term": "append",
+      "definition": "To add an element after the current final position of an array."
+    },
+    {
+      "term": "dense array",
+      "definition": "An array whose positions from zero through length minus one each hold an element."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "An array is a numbered row of slots for related things. JavaScript starts the slot numbers at zero, so the first song in a playlist is in slot 0. The array's length tells you how many slots are in use, but it is not itself the number of the last slot. You can replace something in a slot, add a thing at the end with `push`, or remove the last thing with `pop`. Those actions change the same row of slots.",
+    "analogy": "Imagine a tray of numbered cubbies. The first cubby says 0, the next says 1, and so on. `push` puts a new item in the next cubby at the end; `pop` takes the item from the final cubby. The tray's length is the number of cubbies currently counted, so the last item's cubby number is one less than that count.",
+    "analogyLimits": "JavaScript arrays are not fixed physical trays. Their length can change, and they can even have missing positions, so a real tray is only a guide to indexing and order. The analogy also cannot tell you whether an operation mutates an array; that comes from JavaScript's method rules."
+  },
+  "workedExample": "Execute: `const tasks = [\"plan\", \"draft\", \"review\"]; tasks.push(\"publish\"); const first = tasks.shift(); const last = tasks.pop(); console.log(JSON.stringify(tasks), tasks.length, first, last);`. Start with three elements at indexes 0–2. `push` appends `publish`, so the array becomes four elements. `shift` removes and returns the first element, `plan`, leaving `[\"draft\", \"review\", \"publish\"]`. `pop` then removes and returns `publish`, leaving `[\"draft\", \"review\"]`. The remaining array has length 2, with elements at indexes 0 and 1. Run with Bun, the output is `[\"draft\",\"review\"] 2 plan publish`. The original `tasks` array changed at each method call; no reassignment was needed.",
+  "commonMistakes": [
+    {
+      "mistake": "Treating index 1 as the first array position.",
+      "correction": "JavaScript arrays are zero-indexed, so the first element is at index 0."
+    },
+    {
+      "mistake": "Using `array[array.length]` for the last element.",
+      "correction": "For a nonempty dense array, the last element is at `array[array.length - 1]`."
+    },
+    {
+      "mistake": "Expecting `push`, `pop`, `shift`, or `unshift` to leave the original array unchanged.",
+      "correction": "These methods mutate their target array; use a documented non-mutating operation when preservation is required."
+    },
+    {
+      "mistake": "Assuming `const` prevents changes to elements.",
+      "correction": "Const prevents reassignment of the binding, not mutation of the array stored through that binding."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Index",
+      "b": "Length",
+      "distinction": "An index selects a position starting at zero; length is the boundary one past the final normal position."
+    },
+    {
+      "a": "`push()`",
+      "b": "`pop()`",
+      "distinction": "Push appends and returns a new length; pop removes and returns the final element."
+    },
+    {
+      "a": "Mutation",
+      "b": "Reassignment",
+      "distinction": "Mutation changes elements in an existing array; reassignment makes a binding refer to a different value."
+    }
+  ],
+  "keyTakeaway": "Use arrays for ordered values, count from index 0, and treat `length` as the boundary after the final element. Before calling an array method, know whether it changes the original array and what it returns.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:arrays:1",
+      "prompt": "What is the index of the first element in a JavaScript array?",
+      "options": [
+        "0",
+        "1",
+        "-1",
+        "It is determined by the array's length."
+      ],
+      "correctIndex": 0,
+      "explanation": "JavaScript array indexing begins at 0. The other choices do not name the first array index.",
+      "difficulty": "recall",
+      "skill": "Recalling zero-based indexing",
+      "sourceIds": [
+        "mdn-array"
+      ]
+    },
+    {
+      "id": "web-development:foundations:arrays:2",
+      "prompt": "For `const pets = [\"cat\", \"dog\", \"fish\"];`, which expression reads `\"fish\"`?",
+      "options": [
+        "`pets[3]`",
+        "`pets[2]`",
+        "`pets.length`",
+        "`pets[1]`"
+      ],
+      "correctIndex": 1,
+      "explanation": "Fish is the third element but has zero-based index 2. `pets[3]` is past the normal end, length is 3, and index 1 selects dog.",
+      "difficulty": "understanding",
+      "skill": "Applying an index to an array literal",
+      "sourceIds": [
+        "mdn-array"
+      ]
+    },
+    {
+      "id": "web-development:foundations:arrays:3",
+      "prompt": "After `const names = [\"Ari\", \"Bo\"]; names.push(\"Cy\");`, what are `names` and the return value of `push`?",
+      "options": [
+        "`[\"Ari\", \"Bo\"]` and `\"Cy\"`",
+        "`[\"Cy\", \"Ari\", \"Bo\"]` and 3",
+        "`[\"Ari\", \"Bo\", \"Cy\"]` and 3",
+        "`[\"Ari\", \"Bo\", \"Cy\"]` and `\"Cy\""
+      ],
+      "correctIndex": 2,
+      "explanation": "Push appends to the end, mutates the array, and returns its new length, 3. The other choices get the position, mutation, or return value wrong.",
+      "difficulty": "application",
+      "skill": "Tracing append mutation and return value",
+      "sourceIds": [
+        "mdn-array",
+        "ecma262-array-objects"
+      ]
+    },
+    {
+      "id": "web-development:foundations:arrays:4",
+      "prompt": "Why is this allowed? `const queue = [\"first\"]; queue.push(\"next\");`",
+      "options": [
+        "Push creates a new const declaration.",
+        "Arrays ignore const declarations.",
+        "The array has no length after const is used.",
+        "Push mutates the existing array; it does not reassign the `queue` binding."
+      ],
+      "correctIndex": 3,
+      "explanation": "Const forbids reassignment of the binding, not a method's mutation of the referenced array. The other options do not describe JavaScript's behavior.",
+      "difficulty": "analysis",
+      "skill": "Distinguishing mutation from reassignment",
+      "sourceIds": [
+        "mdn-array",
+        "mdn-const-statement"
+      ]
+    },
+    {
+      "id": "web-development:foundations:arrays:5",
+      "prompt": "A program must remove and use the final item in `pending`. Which operation fits?",
+      "options": [
+        "`pending.pop()`",
+        "`pending.push()`",
+        "`pending.shift()`",
+        "`pending.length`"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pop removes and returns the final array element. Push adds an end element, shift removes the first one, and length only reports a boundary.",
+      "difficulty": "application",
+      "skill": "Selecting an end-removal method",
+      "sourceIds": [
+        "mdn-array"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:arrays:1",
+      "prompt": "What is the index of the first element in a JavaScript array?",
+      "options": [
+        "0",
+        "1",
+        "-1",
+        "It is determined by the array's length."
+      ],
+      "correctIndex": 0,
+      "explanation": "JavaScript array indexing begins at 0. The other choices do not name the first array index.",
+      "difficulty": "recall",
+      "skill": "Recalling zero-based indexing",
+      "sourceIds": [
+        "mdn-array"
+      ]
+    },
+    {
+      "id": "web-development:foundations:arrays:2",
+      "prompt": "For `const pets = [\"cat\", \"dog\", \"fish\"];`, which expression reads `\"fish\"`?",
+      "options": [
+        "`pets[3]`",
+        "`pets[2]`",
+        "`pets.length`",
+        "`pets[1]`"
+      ],
+      "correctIndex": 1,
+      "explanation": "Fish is the third element but has zero-based index 2. `pets[3]` is past the normal end, length is 3, and index 1 selects dog.",
+      "difficulty": "understanding",
+      "skill": "Applying an index to an array literal",
+      "sourceIds": [
+        "mdn-array"
+      ]
+    },
+    {
+      "id": "web-development:foundations:arrays:3",
+      "prompt": "After `const names = [\"Ari\", \"Bo\"]; names.push(\"Cy\");`, what are `names` and the return value of `push`?",
+      "options": [
+        "`[\"Ari\", \"Bo\"]` and `\"Cy\"",
+        "`[\"Cy\", \"Ari\", \"Bo\"]` and 3",
+        "`[\"Ari\", \"Bo\", \"Cy\"]` and 3",
+        "`[\"Ari\", \"Bo\", \"Cy\"]` and `\"Cy\""
+      ],
+      "correctIndex": 2,
+      "explanation": "Push appends to the end, mutates the array, and returns its new length, 3. The other choices get the position, mutation, or return value wrong.",
+      "difficulty": "application",
+      "skill": "Tracing append mutation and return value",
+      "sourceIds": [
+        "mdn-array",
+        "ecma262-array-objects"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:javascript",
+    "web-development:foundations:javascript-fundamentals",
+    "web-development:foundations:variables",
+    "web-development:foundations:functions",
+    "web-development:foundations:objects",
+    "web-development:foundations:dom"
+  ],
+  "sources": [
+    "mdn-array",
+    "mdn-array-isarray",
+    "ecma262-array-objects",
+    "mdn-const-statement"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only documentation and specification sources; no source prose adapted.",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original instructional prose based on current MDN and ECMAScript technical documentation; worked example executed with Bun."
+  },
+  "contentHash": "d7c448ba2887c86d",
+  "status": "source-verified",
+  "public": false
+}

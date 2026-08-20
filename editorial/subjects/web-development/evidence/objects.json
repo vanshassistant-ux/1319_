@@ -1,0 +1,16 @@
+{
+  "topicId":"web-development:foundations:objects", "subjectId":"web-development", "researchedAt":"2026-08-20",
+  "scope":{"core":["plain objects","properties","dot and bracket access","property assignment"],"supporting":["missing-property result","const binding versus property mutation"],"outOfScope":["classes","prototypes","JSON","networking","external-input security handling"]},
+  "claims":[
+    {"claim":"A JavaScript object has properties associating keys with values.","claimType":"TECHNICAL","sourceIds":["mdn-working-with-objects","ecma262-object-type"],"status":"supported"},
+    {"claim":"Object literals create objects with listed properties.","claimType":"TECHNICAL","sourceIds":["mdn-working-with-objects"],"status":"supported"},
+    {"claim":"Dot and bracket notation access properties, and brackets support a runtime-determined key.","claimType":"TECHNICAL","sourceIds":["mdn-working-with-objects"],"status":"supported"},
+    {"claim":"A property name with spaces or a key held in a variable requires bracket notation.","claimType":"TECHNICAL","sourceIds":["mdn-working-with-objects"],"status":"supported"},
+    {"claim":"Assigning to a property can add it or replace its value, and an absent ordinary property reads as undefined.","claimType":"TECHNICAL","sourceIds":["mdn-working-with-objects"],"status":"supported"},
+    {"claim":"A const binding cannot be reassigned, which is distinct from changing a property on a referenced object.","claimType":"TECHNICAL","sourceIds":["mdn-working-with-objects"],"status":"supported"}
+  ], "conflictingEvidence":[], "unsupportedExistingClaims":["The generated draft did not provide technical claims or sources."], "correctionsNeeded":["Replaced generic boilerplate with verified JavaScript object behavior."], "rightsIssues":["Both sources are used as reference-only documentation/standard; source wording was not reproduced."],
+  "sourceRecords":[
+    {"id":"mdn-working-with-objects","title":"Working with objects","provider":"MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"CC BY-SA 2.5","licenseUrl":"https://creativecommons.org/licenses/by-sa/2.5/","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Supports object literals, properties, dot and bracket notation, dynamic keys, property assignment, and missing-property behavior. Prose independently synthesized."},
+    {"id":"ecma262-object-type","title":"ECMAScript Language Specification — Object Type","provider":"Ecma International / TC39","url":"https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-object-type","sourceType":"standards-body","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-20","notes":"Read directly as the current ECMAScript specification. Corroborates that objects are ECMAScript language values with properties; used for technical verification only."}
+  ]
+}

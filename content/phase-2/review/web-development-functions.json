@@ -1,0 +1,265 @@
+{
+  "id": "web-development:foundations:functions",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "functions",
+  "title": "Functions",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "javascript",
+    "functions",
+    "web-development"
+  ],
+  "in30Seconds": "A JavaScript function is reusable code that can be called to perform a task or calculate a value. A declaration gives the function a name, optional parameters, and a body. A call supplies arguments for those parameters. When a function uses `return`, the call evaluates to the returned value; without a return statement, an ordinary function call produces `undefined`.",
+  "whyItMatters": "Functions let a program give one job a clear name and reuse its logic instead of copying it into every place that needs it. That makes a page's behavior easier to test, explain, and change. In later web work, functions organize event handlers, data transformations, and requests, but the same fundamentals still apply: understand what inputs a function expects, what it returns, and which work belongs inside it.",
+  "learningObjectives": [
+    "Define a JavaScript function declaration, call, parameter, and argument.",
+    "Distinguish a parameter from an argument.",
+    "Explain how `return` determines the value produced by a call.",
+    "Apply a small function to calculate and reuse a result."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Declaration, body, and call",
+      "body": "A function declaration introduces a callable function with the `function` keyword, an identifier, a parenthesized parameter list, and a statement body in braces. For example, `function greet(name) { return `Hello, ${name}!`; }` declares a function named `greet`. Declaring it does not run the body. The body runs when code evaluates a call expression such as `greet(\"Mina\")`. Separating declaration from call is useful: the declaration describes a reusable operation, while each call is one use of that operation. This lesson focuses on ordinary declared functions; arrow functions, methods, callbacks, asynchronous functions, and browser DOM work are separate subjects.\n\nThe function body is a block of statements. It can create local values, make decisions, and calculate a result. Good beginner functions tend to have one understandable responsibility, such as formatting a label or computing a total. That is not a rule that every function must be tiny, but it is a practical way to make behavior easier to inspect. A useful name describes the operation—`calculateTotal` says more than `doThing`. Naming also helps a reader identify the intended job at each call site, but a name cannot substitute for checking the body and its returned value."
+    },
+    {
+      "heading": "Parameters receive arguments",
+      "body": "Parameters are names written in a function's definition. They act as local bindings when a call begins. Arguments are the actual values written at a particular call site. In `function square(number) { return number * number; }`, `number` is a parameter. In `square(5)`, `5` is an argument. The distinction matters because the same declared function can be called with different arguments: `square(2)` and `square(9)` reuse the same body but produce different results.\n\nJavaScript does not require a call to provide the same number of arguments as the declaration has parameters. When no argument is supplied for a parameter, its initial value is `undefined` unless the declaration supplies a default parameter value. Extra arguments do not create additional named parameters in this simple declaration. That flexibility is not a reason to ignore expected inputs. A function's name, parameter names, and documentation should communicate what callers are meant to provide. Keep values that are only needed during one call inside that function unless there is a deliberate reason to share state."
+    },
+    {
+      "heading": "Return values and observable results",
+      "body": "A `return` statement ends the current function execution and supplies a value to the caller. In `function add(a, b) { return a + b; }`, the expression `add(3, 4)` evaluates to `7`, so another expression can use it: `const total = add(3, 4);`. Returning a value is different from merely displaying one. `console.log(total)` writes a diagnostic message to a console, while `return total` gives the calling code a value it can store, compare, or pass onward.\n\nIf execution reaches the end of an ordinary function without a `return` statement, the call's result is `undefined`. A bare `return;` also returns `undefined`. This is often appropriate for a function whose purpose is an effect, but it is a bug when calling code expects a calculation. A return statement can appear before later statements in the same body; those later statements are not reached on that call. That is another reason to keep a function's result logic clear and deliberate. A caller can compose returned values—for example, use one function's result as an argument to another—without the called function knowing who will consume it. Testing a function with representative inputs and comparing the returned value with an expected value can reveal errors before its behavior is connected to any interface. When reading or writing a function, ask three concrete questions: What arguments does it use? What work does it perform? What value, if any, does the caller receive? Those questions make function behavior testable without involving a web page or a network request."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "function declaration",
+      "definition": "Syntax that creates a named function with a parameter list and a body."
+    },
+    {
+      "term": "function call",
+      "definition": "An expression that invokes a function, usually by writing its name followed by parentheses."
+    },
+    {
+      "term": "parameter",
+      "definition": "A named local binding listed in a function definition for receiving an input."
+    },
+    {
+      "term": "argument",
+      "definition": "A value supplied in the parentheses of a particular function call."
+    },
+    {
+      "term": "return statement",
+      "definition": "A statement that ends the current function execution and optionally supplies a value to its caller."
+    },
+    {
+      "term": "undefined",
+      "definition": "The JavaScript value commonly produced when a function finishes without returning a value."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Think of a function as a named mini-recipe in a program. You write the recipe once, then call its name whenever you want the program to follow those steps. The empty spots in the recipe are parameters. When you call the function, you put actual ingredients—arguments—into those spots. A `return` is what the recipe hands back when it finishes, such as a finished total or a formatted message. A function can also finish without handing anything back; in JavaScript, that result is `undefined`.",
+    "analogy": "A smoothie counter has a recipe called `makeSmoothie(fruit, milk)`. `fruit` and `milk` are the labels on the recipe's blanks (parameters). Saying `makeSmoothie(\"banana\", \"oat milk\")` provides this order's ingredients (arguments). The finished smoothie is the return value.",
+    "analogyLimits": "A program does not have a person or physical ingredients, and a function may do more than calculate one finished object. Also, JavaScript permits calls with missing or extra arguments, unlike a real counter that might reject an incomplete order."
+  },
+  "workedExample": "Suppose a checkout needs a total including tax. Write `function totalWithTax(price, rate) { const tax = price * rate; return price + tax; }`. Here `price` and `rate` are parameters; `20` and `0.05` are arguments in `totalWithTax(20, 0.05)`. The calculation is `20 * 0.05`, which is `1`, then `20 + 1`, which is `21`. Executing this exact function with Bun printed `21`. Because it returns the result, a caller can store it: `const due = totalWithTax(20, 0.05);`. Replacing `return price + tax` with `console.log(price + tax)` would display 21 but would not make `due` equal to 21.",
+  "commonMistakes": [
+    {
+      "mistake": "Calling a parameter an argument everywhere.",
+      "correction": "Use parameter for the name in the declaration and argument for the value in a call."
+    },
+    {
+      "mistake": "Expecting a declaration to run immediately.",
+      "correction": "A declaration creates the function; a call invokes its body."
+    },
+    {
+      "mistake": "Using `console.log` when later code needs a computed value.",
+      "correction": "Return the value and let the caller decide whether to display it."
+    },
+    {
+      "mistake": "Assuming a function without `return` produces its last computed expression.",
+      "correction": "An ordinary JavaScript function that reaches its end without returning produces `undefined`."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "parameter",
+      "b": "argument",
+      "distinction": "A parameter is named in the function definition; an argument is supplied by one call."
+    },
+    {
+      "a": "return",
+      "b": "console.log",
+      "distinction": "`return` supplies a value to the caller and ends the function; `console.log` displays a value but does not return that displayed value."
+    }
+  ],
+  "keyTakeaway": "A function declaration defines reusable behavior. Calls provide arguments for parameters, and `return` determines the value a caller can use afterward.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:functions:1",
+      "prompt": "In `function square(number) { return number * number; }`, what is `number`?",
+      "options": [
+        "An argument",
+        "A return value",
+        "A parameter",
+        "A function call"
+      ],
+      "correctIndex": 2,
+      "explanation": "`number` appears in the declaration's parameter list, so it is a parameter. An argument would be a value supplied in a call such as `square(5)`.",
+      "difficulty": "recall",
+      "skill": "Identify function parts",
+      "sourceIds": [
+        "mdn-js-functions-guide",
+        "ecma262-functions-and-classes"
+      ]
+    },
+    {
+      "id": "web-development:foundations:functions:2",
+      "prompt": "What does `totalWithTax(20, 0.05)` do in a program after `totalWithTax` has been declared?",
+      "options": [
+        "It calls the function with two arguments.",
+        "It declares two parameters.",
+        "It renames the function.",
+        "It creates a return statement."
+      ],
+      "correctIndex": 0,
+      "explanation": "Writing a function name followed by parentheses invokes it; 20 and 0.05 are arguments for that call.",
+      "difficulty": "understanding",
+      "skill": "Distinguish declaration and call",
+      "sourceIds": [
+        "mdn-js-functions-guide"
+      ]
+    },
+    {
+      "id": "web-development:foundations:functions:3",
+      "prompt": "A calculation function must give its result to code that will store it in a variable. Which body is appropriate?",
+      "options": [
+        "`console.log(price + tax);`",
+        "`return price + tax;`",
+        "`function price + tax;`",
+        "`parameter price + tax;`"
+      ],
+      "correctIndex": 1,
+      "explanation": "`return price + tax` supplies the computed value to the caller. Logging can display a value but does not supply that displayed value as the call result.",
+      "difficulty": "application",
+      "skill": "Select a return statement",
+      "sourceIds": [
+        "mdn-js-functions-guide",
+        "ecma262-functions-and-classes"
+      ]
+    },
+    {
+      "id": "web-development:foundations:functions:4",
+      "prompt": "What is the result of calling an ordinary JavaScript function that reaches its end without a `return` statement?",
+      "options": [
+        "Its last local variable",
+        "`null`",
+        "The function's name",
+        "`undefined`"
+      ],
+      "correctIndex": 3,
+      "explanation": "When such a function completes without returning a value, its call result is `undefined`; local variables and the function name are not returned automatically.",
+      "difficulty": "recall",
+      "skill": "Predict a missing-return result",
+      "sourceIds": [
+        "mdn-js-functions-guide",
+        "ecma262-functions-and-classes"
+      ]
+    },
+    {
+      "id": "web-development:foundations:functions:5",
+      "prompt": "Which change lets the same `square` function calculate both 4² and 9² without rewriting its body?",
+      "options": [
+        "Use different arguments in separate calls: `square(4)` and `square(9)`.",
+        "Declare `square` twice with the same parameter.",
+        "Remove the parameter from the declaration.",
+        "Replace `return` with `console.log`."
+      ],
+      "correctIndex": 0,
+      "explanation": "Different calls can supply different argument values to the same parameterized body. The other changes do not provide reusable input-driven calculation.",
+      "difficulty": "analysis",
+      "skill": "Reason about reuse through parameters",
+      "sourceIds": [
+        "mdn-js-functions-guide"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:functions:1",
+      "prompt": "In `function square(number) { return number * number; }`, what is `number`?",
+      "options": [
+        "An argument",
+        "A return value",
+        "A parameter",
+        "A function call"
+      ],
+      "correctIndex": 2,
+      "explanation": "`number` appears in the declaration's parameter list, so it is a parameter. An argument would be a value supplied in a call such as `square(5)`.",
+      "difficulty": "recall",
+      "skill": "Identify function parts",
+      "sourceIds": [
+        "mdn-js-functions-guide",
+        "ecma262-functions-and-classes"
+      ]
+    },
+    {
+      "id": "web-development:foundations:functions:2",
+      "prompt": "What does `totalWithTax(20, 0.05)` do in a program after `totalWithTax` has been declared?",
+      "options": [
+        "It calls the function with two arguments.",
+        "It declares two parameters.",
+        "It renames the function.",
+        "It creates a return statement."
+      ],
+      "correctIndex": 0,
+      "explanation": "Writing a function name followed by parentheses invokes it; 20 and 0.05 are arguments for that call.",
+      "difficulty": "understanding",
+      "skill": "Distinguish declaration and call",
+      "sourceIds": [
+        "mdn-js-functions-guide"
+      ]
+    },
+    {
+      "id": "web-development:foundations:functions:3",
+      "prompt": "A calculation function must give its result to code that will store it in a variable. Which body is appropriate?",
+      "options": [
+        "`console.log(price + tax);`",
+        "`return price + tax;`",
+        "`function price + tax;`",
+        "`parameter price + tax;`"
+      ],
+      "correctIndex": 1,
+      "explanation": "`return price + tax` supplies the computed value to the caller. Logging can display a value but does not supply that displayed value as the call result.",
+      "difficulty": "application",
+      "skill": "Select a return statement",
+      "sourceIds": [
+        "mdn-js-functions-guide",
+        "ecma262-functions-and-classes"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:javascript",
+    "web-development:foundations:javascript-fundamentals",
+    "web-development:foundations:variables",
+    "web-development:foundations:arrays",
+    "web-development:foundations:objects"
+  ],
+  "sources": [
+    "mdn-js-functions-guide",
+    "ecma262-functions-and-classes"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only documentation and specification; no source prose adapted",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original instructional lesson synthesized from MDN and ECMAScript; the worked example and missing-return result were executed with Bun."
+  },
+  "contentHash": "bfeed2042c2dcba0",
+  "status": "source-verified",
+  "public": false
+}
