@@ -1,0 +1,273 @@
+{
+  "id": "python-programming:foundations:files",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "files",
+  "title": "Files",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "python",
+    "files",
+    "paths",
+    "open",
+    "context-managers"
+  ],
+  "in30Seconds": "A file lets a program keep information beyond one run, but Python needs clear instructions before it can use one. A path identifies the file, a mode states the intended kind of access, and `open()` creates a file object. Put that object in a `with` statement so Python closes it when the block ends. This overview establishes those safe basics; the neighboring lessons handle detailed reading and writing workflows.",
+  "whyItMatters": "Programs use files for notes, settings, logs, reports, and data exchanged with other tools. Understanding the setup prevents several costly surprises: opening the wrong relative path, accidentally replacing a file with write mode, or leaving a file open longer than needed. The `with open(...)` pattern makes resource cleanup part of the program's structure, while an explicit text encoding makes a program's expectations clearer across computers. These habits scale from a tiny script to larger applications.",
+  "learningObjectives": [
+    "Distinguish a file path from the file object returned by `open()`.",
+    "Explain the practical purposes and risks of common text-file modes.",
+    "Apply a `with open(...)` statement to delimit a file operation.",
+    "Explain why an explicit UTF-8 encoding can improve clarity for text files.",
+    "Analyze which mode matches a stated file-access intention."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "A path identifies a location; open() supplies an object",
+      "body": "A file is stored data managed by an operating system, not automatically a Python value. Before Python can work with it, code names the intended location with a path and calls `open()`. The result is a file object: an object through which a program can perform operations on that opened file. Keeping those ideas separate helps diagnose problems. A string such as `\"notes/today.txt\"` is a path description; it is not the open file itself. A call such as `open(\"notes/today.txt\", \"r\", encoding=\"utf-8\")` asks the operating system to open the named location for a particular kind of access.\n\nPaths can be relative or absolute. A relative path is interpreted from the process's current working directory, so `\"data/scores.txt\"` may mean different locations when the same program is launched from different directories. An absolute path starts from a filesystem root and identifies a particular location on that system. Absolute-path spelling differs across operating systems, which is one reason examples often use short relative paths. Neither kind automatically proves that a file exists or that the program has permission to use it. This lesson focuses on choosing and opening a location; handling a failed open belongs to Exceptions."
+    },
+    {
+      "heading": "Modes state the intended access before work starts",
+      "body": "The mode argument tells `open()` what sort of relationship the program wants with the file. In ordinary text-file examples, `r` means read and is the default. It expects an existing file. `w` means write and creates a file if it is absent, but it truncates an existing file first—its former contents are removed. That makes `w` appropriate only when replacement is intentional. `a` means append: writes go at the end of the file, preserving earlier content. `x` requests exclusive creation and fails if the file already exists, which can be useful when an existing name should never be silently reused.\n\nThese letters are not merely syntax to memorize; they express a safety decision. If a program's job is to add one dated record without discarding prior records, append mode matches that intent better than write mode. If its job is to make a new, never-before-existing setup file, exclusive creation provides a useful guard. Modes can also include `b` for binary data or `t` for text, with text being the usual default. Binary data and detailed read/write techniques are intentionally outside this overview. Before choosing a mode, say the intended effect in plain language: inspect existing content, replace content, add content, or create only when absent."
+    },
+    {
+      "heading": "Context managers make the lifetime visible",
+      "body": "An opened file uses an operating-system resource. It should be closed when the program is finished with that particular operation so buffered work can be finalized and the resource can be released. Python's usual pattern is a context manager: `with open(...) as name:` followed by an indented suite. The file object is available through `name` only for the work inside that suite. When execution leaves the suite, Python closes the file, including when an exception interrupts the suite. This does not eliminate the need to understand errors; it makes cleanup dependable once the file was opened.\n\nA bare `open()` followed later by `close()` can work, but it makes cleanup depend on every possible route through the intervening code. The `with` form places acquisition and cleanup beside each other and communicates the intended lifetime to readers. It is not a special file-only trick: it is a general Python protocol for resources that need entry and exit behavior. Here, its practical benefit is modest but important—one block describes one bounded interaction with a file.\n\nFor text files, `encoding=\"utf-8\"` says how stored bytes should be interpreted as Python text and how Python text should be encoded when stored. UTF-8 is widely used, but the important point is precision: explicit encoding prevents a program from silently relying on a machine's default when a file format expects a particular encoding. The mode, path, encoding, and `with` block together form a readable opening contract. Detailed calls that consume text are Reading Files; detailed calls that produce it are Writing Files."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "file path",
+      "definition": "A string that identifies a file location in a filesystem."
+    },
+    {
+      "term": "relative path",
+      "definition": "A path interpreted from the process's current working directory."
+    },
+    {
+      "term": "absolute path",
+      "definition": "A path that identifies a location from a filesystem root on its operating system."
+    },
+    {
+      "term": "file object",
+      "definition": "The Python object returned by opening a file and used to interact with that opened file."
+    },
+    {
+      "term": "mode",
+      "definition": "An argument to `open()` that states the requested kind of file access, such as reading, replacing, appending, or exclusive creation."
+    },
+    {
+      "term": "context manager",
+      "definition": "An object used with `with` to establish a bounded block and perform defined cleanup when that block ends."
+    },
+    {
+      "term": "encoding",
+      "definition": "A rule for converting between text characters and the bytes stored in a text file."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "A file is like a labeled folder stored in a building. The path is the address that helps you find the right folder. The mode is the permission note you bring: look inside, replace what is there, add a page, or make a new folder only if no folder has that name. `open()` gives you a handle for the folder. The safest habit is to use the handle inside a `with` block, which is like signing the folder out for one task and automatically returning it when that task ends. For text, an encoding is the alphabet agreement that tells a computer how marks in the folder represent characters.",
+    "analogy": "Imagine borrowing a library binder. Its shelf address is the path, the checkout purpose is the mode, and the `with` block is the checkout period that returns the binder automatically when the task is over.",
+    "analogyLimits": "Computer files can have permissions, byte formats, and simultaneous users that ordinary binders do not. The analogy explains the roles and the bounded lifetime, not every operating-system rule."
+  },
+  "workedExample": "This short program demonstrates setup rather than a reading or writing recipe. It uses a temporary directory so it does not leave a file behind. First, exclusive creation makes `status.txt`; then append mode adds a second line. Both openings use a context manager and explicit UTF-8 encoding. Run with Python 3:\n\n```python\nfrom pathlib import Path\nfrom tempfile import TemporaryDirectory\n\nwith TemporaryDirectory() as folder:\n    path = Path(folder) / \"status.txt\"\n    with open(path, \"x\", encoding=\"utf-8\") as file:\n        file.write(\"created\\n\")\n    with open(path, \"a\", encoding=\"utf-8\") as file:\n        file.write(\"updated\\n\")\n    print(path.read_text(encoding=\"utf-8\"), end=\"\")\n```\n\nOutput:\n\n```text\ncreated\nupdated\n```\n\nThe first mode, `x`, would reject an already-existing `status.txt`; the second, `a`, adds rather than replaces. The inner `with` blocks close each file before the next operation. `Path.read_text()` appears only to inspect the demonstration result; Reading Files owns a fuller treatment of reading.",
+  "commonMistakes": [
+    {
+      "mistake": "Using `w` when the goal is to preserve an existing file's content.",
+      "correction": "Choose `a` for intentional end-of-file additions, or use a reading workflow before deciding how to replace content."
+    },
+    {
+      "mistake": "Treating a relative path as though it were anchored beside the script automatically.",
+      "correction": "Check the current working directory or deliberately construct the intended path; relative paths depend on where the process runs."
+    },
+    {
+      "mistake": "Opening a text file without documenting the expected encoding when the format requires one.",
+      "correction": "Specify `encoding=\"utf-8\"` when UTF-8 is the intended text format."
+    },
+    {
+      "mistake": "Calling `open()` and relying on a later manual `close()` along every possible code path.",
+      "correction": "Use `with open(...) as file:` so leaving the suite closes the file."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "relative path",
+      "b": "absolute path",
+      "distinction": "A relative path starts from the current working directory; an absolute path starts from a filesystem root."
+    },
+    {
+      "a": "`w` mode",
+      "b": "`a` mode",
+      "distinction": "`w` replaces an existing file's content by truncating it; `a` positions writes at the end to preserve earlier content."
+    },
+    {
+      "a": "file path",
+      "b": "file object",
+      "distinction": "A path describes where a file is located; a file object is the opened Python interface used to operate on it."
+    }
+  ],
+  "keyTakeaway": "Opening a file is a deliberate contract: choose the correct path, mode, and text encoding, then use `with open(...)` to bound the operation and close the file reliably. Treat write mode carefully because it replaces existing contents.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:files:1",
+      "prompt": "What does `open()` return when it successfully opens a file?",
+      "options": [
+        "A file object",
+        "A folder path only",
+        "A list of every line",
+        "A permanent copy of the file"
+      ],
+      "correctIndex": 0,
+      "explanation": "`open()` returns a file object used for interaction with the opened file. A path identifies a location, while line reading and copying are separate operations.",
+      "difficulty": "recall",
+      "skill": "Identify the result of opening a file",
+      "sourceIds": [
+        "python-tutorial-input-output",
+        "python-docs-builtins-conversion"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:files:2",
+      "prompt": "Which mode is designed to add new text after existing text rather than truncate the file first?",
+      "options": [
+        "`r`",
+        "`w`",
+        "`a`",
+        "`x`"
+      ],
+      "correctIndex": 2,
+      "explanation": "Append mode, `a`, writes at the end of the file. `r` is for reading, `w` truncates an existing file, and `x` requests exclusive creation.",
+      "difficulty": "understanding",
+      "skill": "Distinguish common file modes",
+      "sourceIds": [
+        "python-tutorial-input-output"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:files:3",
+      "prompt": "Why is `with open(path, \"r\", encoding=\"utf-8\") as file:` usually preferred for a bounded file task?",
+      "options": [
+        "It turns every file into binary data",
+        "It ensures the file is closed when the suite exits",
+        "It makes a relative path absolute",
+        "It allows `w` to preserve all old content"
+      ],
+      "correctIndex": 1,
+      "explanation": "The context-manager form closes the file when its suite ends, including if an exception leaves the suite. It does not change paths, modes, or data into binary form.",
+      "difficulty": "application",
+      "skill": "Apply context-manager resource handling",
+      "sourceIds": [
+        "python-tutorial-input-output"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:files:4",
+      "prompt": "A program must create `settings.txt` only if that name is unused; overwriting an existing file would be a mistake. Which mode best expresses that requirement?",
+      "options": [
+        "`r`",
+        "`w`",
+        "`a`",
+        "`x`"
+      ],
+      "correctIndex": 3,
+      "explanation": "`x` requests exclusive creation and fails if the file already exists. `w` can replace an existing file, `a` can add to one, and `r` expects one to exist for reading.",
+      "difficulty": "application",
+      "skill": "Choose a mode from a safety requirement",
+      "sourceIds": [
+        "python-docs-builtins-conversion"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:files:5",
+      "prompt": "A teammate says `data/report.txt` always identifies the same place because the characters never change. What is the best correction?",
+      "options": [
+        "It is always an absolute path",
+        "It names a file object, not a location",
+        "It may be a relative path whose location depends on the current working directory",
+        "It can be used only with binary mode"
+      ],
+      "correctIndex": 2,
+      "explanation": "Without a filesystem-root prefix, this may be relative, so its resolved location depends on the current working directory. The string is a path, not a file object, and text mode is possible.",
+      "difficulty": "analysis",
+      "skill": "Analyze relative-path behavior",
+      "sourceIds": [
+        "python-docs-builtins-conversion"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "python-programming:foundations:files:1",
+      "prompt": "What does `open()` return when it successfully opens a file?",
+      "options": [
+        "A file object",
+        "A folder path only",
+        "A list of every line",
+        "A permanent copy of the file"
+      ],
+      "correctIndex": 0,
+      "explanation": "`open()` returns a file object used for interaction with the opened file. A path identifies a location, while line reading and copying are separate operations.",
+      "difficulty": "recall",
+      "skill": "Identify the result of opening a file",
+      "sourceIds": [
+        "python-tutorial-input-output",
+        "python-docs-builtins-conversion"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:files:2",
+      "prompt": "Which mode is designed to add new text after existing text rather than truncate the file first?",
+      "options": [
+        "`r`",
+        "`w`",
+        "`a`",
+        "`x`"
+      ],
+      "correctIndex": 2,
+      "explanation": "Append mode, `a`, writes at the end of the file. `r` is for reading, `w` truncates an existing file, and `x` requests exclusive creation.",
+      "difficulty": "understanding",
+      "skill": "Distinguish common file modes",
+      "sourceIds": [
+        "python-tutorial-input-output"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:files:3",
+      "prompt": "Why is `with open(path, \"r\", encoding=\"utf-8\") as file:` usually preferred for a bounded file task?",
+      "options": [
+        "It turns every file into binary data",
+        "It ensures the file is closed when the suite exits",
+        "It makes a relative path absolute",
+        "It allows `w` to preserve all old content"
+      ],
+      "correctIndex": 1,
+      "explanation": "The context-manager form closes the file when its suite ends, including if an exception leaves the suite. It does not change paths, modes, or data into binary form.",
+      "difficulty": "application",
+      "skill": "Apply context-manager resource handling",
+      "sourceIds": [
+        "python-tutorial-input-output"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "python-programming:foundations:reading-files",
+    "python-programming:foundations:writing-files",
+    "python-programming:foundations:exceptions",
+    "python-programming:foundations:modules"
+  ],
+  "sources": [
+    "python-tutorial-input-output",
+    "python-docs-builtins-conversion"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only official documentation; no source prose adapted.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Original introductory lesson synthesizing official Python documentation, with independently executed Python 3 example."
+  },
+  "contentHash": "add0edcc320fafbb",
+  "status": "source-verified",
+  "public": false
+}

@@ -1,0 +1,272 @@
+{
+  "id": "python-programming:foundations:reading-files",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "reading-files",
+  "title": "Reading Files",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "python-programming",
+    "files",
+    "input",
+    "text"
+  ],
+  "in30Seconds": "To read a text file in Python, open it with `with open(path, encoding=\"utf-8\") as file:` and then ask the file object for content. `read()` gets the remaining text at once; `readline()` gets one line; and `for line in file` processes lines one at a time. The `with` block closes the file after its indented suite finishes.",
+  "whyItMatters": "Programs often begin with information stored outside the program: a class roster, a log, a configuration file, or notes saved as text. Reading that information carefully is a foundation for later analysis and automation. The method matters as much as the result: an explicit text encoding makes assumptions visible, and processing a large file line by line can avoid holding all of it in memory. These habits transfer to data work, command-line tools, and debugging.",
+  "learningObjectives": [
+    "Define a Python text file object and a context manager.",
+    "Distinguish `read()`, `readline()`, and direct line iteration.",
+    "Explain why `with open(...)` is a reliable reading pattern.",
+    "Apply an explicit UTF-8 encoding in a text-reading example.",
+    "Analyze when line-by-line processing is more appropriate than reading all text at once."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Opening a text stream safely",
+      "body": "A file is data stored outside the running program. Python's built-in `open()` creates a file object that gives code a way to interact with that data. For an ordinary text file, a focused reading pattern is `with open(\"names.txt\", encoding=\"utf-8\") as file:` followed by an indented block. The `with` statement makes the file object a context manager: when the block finishes, Python closes the file, even if the block exits because of an exception. Closing is not a decorative cleanup step. It ends the program's use of that resource and helps prevent later code from accidentally relying on an open handle. This lesson concentrates on reading; Writing Files covers changing file contents, and Exceptions covers how programs deliberately respond when a file cannot be opened.\n\nText is not raw bytes with a universal meaning. An encoding specifies how stored bytes represent characters. Python documentation notes that a default encoding can depend on the locale, so code that expects UTF-8 text should say `encoding=\"utf-8\"` rather than silently depend on the machine's default. That is especially useful when a file contains names, accented characters, or symbols and the same code runs on different systems. In normal text reading, Python also translates common platform line endings into `\\n`; code can therefore treat a line ending consistently without guessing which operating system created the file."
+    },
+    {
+      "heading": "Three ways to obtain text",
+      "body": "The method should fit the next operation. `file.read()` obtains the remaining contents as one string. It is convenient when a file is known to be small and the program truly needs the whole text at once—for example, checking whether one short configuration note contains a phrase. Calling it again at the end of the file returns an empty string because there is no remaining content.\n\n`file.readline()` obtains one line at a time. Usually its returned string retains the trailing newline character. An empty string means end of file, whereas a blank line is normally `\"\\n\"`; that distinction lets a loop tell an empty line apart from no more lines. A program using `readline()` directly must manage that repeated step itself.\n\nFor many text-processing tasks, the clearest form is direct iteration: `for line in file:`. A file object is iterable, so the loop requests successive lines without building a list of all lines first. The Python tutorial describes this as memory efficient and simple. It does not make a file magically small, but it means the program can process one line, discard or summarize it, and move to the next. If code needs to compare every line later, collecting lines may be appropriate; otherwise, iteration communicates that each line is handled as it arrives."
+    },
+    {
+      "heading": "Position, transformations, and deliberate output",
+      "body": "A file object has a current position. Reading advances that position, so `read()` followed by a loop over the same object will usually leave the loop with nothing to process. Choose one reading plan or reopen the file for a separate pass. Within a loop, `line` includes its newline when one was present in the source. `line.rstrip(\"\\n\")` is a deliberate way to remove that line ending while leaving other leading and trailing spaces alone. Plain `strip()` is broader and may remove meaningful spaces, so it should not be used automatically.\n\nConsider a short attendee list with a deliberately blank line. Iteration can count nonblank names while preserving the distinction between a blank record and the end of the file. The program's output depends on three small choices: the context manager establishes the resource lifetime, `encoding=\"utf-8\"` states how to decode text, and the loop reads one line at a time. This is a useful model for later data-processing code: make resource handling and transformations visible, and do not infer facts from data that have not been read."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "file object",
+      "definition": "An object returned by `open()` that provides operations for interacting with an opened file."
+    },
+    {
+      "term": "context manager",
+      "definition": "An object used by a `with` statement to set up work and perform its defined cleanup when the block ends."
+    },
+    {
+      "term": "text stream",
+      "definition": "A stream that reads or writes character strings while handling conversion between characters and stored bytes."
+    },
+    {
+      "term": "encoding",
+      "definition": "A defined mapping used to represent characters as bytes and decode those bytes back into text."
+    },
+    {
+      "term": "newline",
+      "definition": "The `\\n` character used in Python text to mark the end of a line."
+    },
+    {
+      "term": "end of file",
+      "definition": "The point at which a read operation has no more data available from a file."
+    },
+    {
+      "term": "iteration",
+      "definition": "Repeatedly obtaining successive items from an iterable, such as successive lines from a file object."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "A text file is like a notebook that lives outside your program. `open` lets the program look at it. The `with` block is a promise: use the notebook for this small job, then put it away when the job is over. Inside the block, `read()` means “show me all the remaining pages,” while a `for` loop means “show me one line, then the next.” A file remembers how far you have read, so the next request begins after the text already received.",
+    "analogy": "Imagine reading a long attendance sheet through a checkout scanner. Reading all at once is dumping the whole sheet onto a table. Iterating is scanning one name at a time and updating a count. If a line is blank, the scanner can notice that separately instead of pretending it is a name.",
+    "analogyLimits": "A computer file is not paper: it has an encoding, a current read position, and can be much larger than a physical sheet. The scanner picture explains the choice of one-at-a-time processing, not every file behavior."
+  },
+  "workedExample": "Assume `attendees.txt` contains three lines: `Ada`, a blank line, and `Lin`. This program counts names without treating the blank line as a name:\n\n```python\nname_count = 0\n\nwith open(\"attendees.txt\", encoding=\"utf-8\") as file:\n    for line in file:\n        name = line.rstrip(\"\\n\")\n        if name != \"\":\n            name_count += 1\n\nprint(name_count)\n```\n\nIt prints `2`. The loop receives `\"Ada\\n\"`, `\"\\n\"`, and `\"Lin\\n\"`; `rstrip(\"\\n\")` changes them to `Ada`, an empty string, and `Lin`. The `if` skips only the blank line. The `with` block closes the file when its indented suite ends, before the outside `print` runs.",
+  "commonMistakes": [
+    {
+      "mistake": "Opening expected UTF-8 text without stating the encoding.",
+      "correction": "Use `encoding=\"utf-8\"` when UTF-8 is the intended format rather than relying on a locale-dependent default."
+    },
+    {
+      "mistake": "Using `read()` and then expecting a loop over the same file object to start at the beginning.",
+      "correction": "Reading advances the current position; choose one pass or reopen the file for another pass."
+    },
+    {
+      "mistake": "Treating `readline() == \"\"` as a blank line.",
+      "correction": "An empty string signals end of file; a blank line is normally represented by `\"\\n\"`."
+    },
+    {
+      "mistake": "Using `strip()` when only the line ending should disappear.",
+      "correction": "Use `rstrip(\"\\n\")` to preserve other spaces unless removing them is intentional."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "`read()`",
+      "b": "`for line in file`",
+      "distinction": "`read()` returns all remaining text as one string; direct iteration yields successive lines for processing."
+    },
+    {
+      "a": "empty string from `readline()`",
+      "b": "a blank line",
+      "distinction": "The empty string marks end of file; a blank text line normally contains a newline character."
+    },
+    {
+      "a": "implicit default encoding",
+      "b": "`encoding=\"utf-8\"`",
+      "distinction": "The default can be locale-specific; the explicit argument documents and enforces the intended UTF-8 decoding."
+    }
+  ],
+  "keyTakeaway": "Use `with open(path, encoding=\"utf-8\")` for expected UTF-8 text, then choose `read()`, `readline()`, or direct iteration based on how much content the next step needs. Treat each choice as part of the program's data-handling design.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:reading-files:1",
+      "prompt": "What does `with open(\"notes.txt\", encoding=\"utf-8\") as file:` help ensure after its indented block finishes?",
+      "options": [
+        "The file is closed according to the context manager's cleanup behavior.",
+        "Every line has been printed.",
+        "The file is converted into a list.",
+        "The file is rewritten in UTF-8."
+      ],
+      "correctIndex": 0,
+      "explanation": "The context manager closes the file when the suite ends; opening does not print, list, or rewrite its contents.",
+      "difficulty": "recall",
+      "skill": "identify context-manager cleanup",
+      "sourceIds": [
+        "python-tutorial-input-output"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:reading-files:2",
+      "prompt": "Which operation is usually the clearest choice when a program must process a large text file one line at a time?",
+      "options": [
+        "Call `file.read()` before the loop.",
+        "Use `for line in file:`.",
+        "Call `file.readline()` once after closing the file.",
+        "Convert the path string to an integer."
+      ],
+      "correctIndex": 1,
+      "explanation": "Direct file iteration supplies successive lines and avoids first collecting all text in one string; the other choices do not perform the stated line-by-line task.",
+      "difficulty": "application",
+      "skill": "choose a reading strategy",
+      "sourceIds": [
+        "python-tutorial-input-output"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:reading-files:3",
+      "prompt": "For a text file expected to be UTF-8, why is `encoding=\"utf-8\"` useful?",
+      "options": [
+        "It forces every line to have the same length.",
+        "It removes blank lines automatically.",
+        "It states the intended decoding instead of relying on a possibly locale-specific default.",
+        "It makes `read()` return bytes."
+      ],
+      "correctIndex": 2,
+      "explanation": "The encoding argument specifies character decoding; it does not alter line length, remove lines, or turn text reads into bytes.",
+      "difficulty": "understanding",
+      "skill": "explain text encoding",
+      "sourceIds": [
+        "python-docs-io",
+        "python-tutorial-input-output"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:reading-files:4",
+      "prompt": "A file's next `readline()` returns `\"\"`. What should the program conclude?",
+      "options": [
+        "The current line contains one space.",
+        "The file was opened in UTF-8.",
+        "The previous line was blank.",
+        "The file object has reached end of file."
+      ],
+      "correctIndex": 3,
+      "explanation": "An empty string from `readline()` signals no more data. A blank line is normally `\"\\n\"`, and encoding cannot be inferred from this return value.",
+      "difficulty": "application",
+      "skill": "interpret readline results",
+      "sourceIds": [
+        "python-tutorial-input-output"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:reading-files:5",
+      "prompt": "After `text = file.read()` consumes a short file, what is the most likely result of immediately looping `for line in file:` without changing the file position?",
+      "options": [
+        "The loop begins again at the first line.",
+        "The loop repeats the contents stored in `text`.",
+        "The loop has no remaining lines to yield.",
+        "The loop changes text encoding to UTF-8."
+      ],
+      "correctIndex": 2,
+      "explanation": "`read()` advances through the remaining content, so no lines remain for the immediate loop. It does not rewind, repeat a variable, or change encoding.",
+      "difficulty": "analysis",
+      "skill": "reason about file position",
+      "sourceIds": [
+        "python-tutorial-input-output"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "python-programming:foundations:reading-files:1",
+      "prompt": "What does `with open(\"notes.txt\", encoding=\"utf-8\") as file:` help ensure after its indented block finishes?",
+      "options": [
+        "The file is closed according to the context manager's cleanup behavior.",
+        "Every line has been printed.",
+        "The file is converted into a list.",
+        "The file is rewritten in UTF-8."
+      ],
+      "correctIndex": 0,
+      "explanation": "The context manager closes the file when the suite ends; opening does not print, list, or rewrite its contents.",
+      "difficulty": "recall",
+      "skill": "identify context-manager cleanup",
+      "sourceIds": [
+        "python-tutorial-input-output"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:reading-files:2",
+      "prompt": "Which operation is usually the clearest choice when a program must process a large text file one line at a time?",
+      "options": [
+        "Call `file.read()` before the loop.",
+        "Use `for line in file:`.",
+        "Call `file.readline()` once after closing the file.",
+        "Convert the path string to an integer."
+      ],
+      "correctIndex": 1,
+      "explanation": "Direct file iteration supplies successive lines and avoids first collecting all text in one string; the other choices do not perform the stated line-by-line task.",
+      "difficulty": "application",
+      "skill": "choose a reading strategy",
+      "sourceIds": [
+        "python-tutorial-input-output"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:reading-files:3",
+      "prompt": "For a text file expected to be UTF-8, why is `encoding=\"utf-8\"` useful?",
+      "options": [
+        "It forces every line to have the same length.",
+        "It removes blank lines automatically.",
+        "It states the intended decoding instead of relying on a possibly locale-specific default.",
+        "It makes `read()` return bytes."
+      ],
+      "correctIndex": 2,
+      "explanation": "The encoding argument specifies character decoding; it does not alter line length, remove lines, or turn text reads into bytes.",
+      "difficulty": "understanding",
+      "skill": "explain text encoding",
+      "sourceIds": [
+        "python-docs-io",
+        "python-tutorial-input-output"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "python-programming:foundations:files",
+    "python-programming:foundations:writing-files",
+    "python-programming:foundations:exceptions",
+    "python-programming:foundations:for-loops"
+  ],
+  "sources": [
+    "python-tutorial-input-output",
+    "python-docs-io"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only documentation sources; no source prose adapted",
+    "researchedAt": "2026-08-19",
+    "transformation": "Original explanation and verified Python 3 examples derived from official documentation."
+  },
+  "contentHash": "47ce0e71ab9741a4",
+  "status": "source-verified",
+  "public": false
+}

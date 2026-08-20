@@ -1,0 +1,273 @@
+{
+  "id": "python-programming:foundations:writing-files",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "writing-files",
+  "title": "Writing Files",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "python",
+    "files",
+    "text",
+    "context-managers",
+    "encoding"
+  ],
+  "in30Seconds": "Writing a text file means sending strings from a Python program to a named location on disk. Use `with open(path, mode, encoding=\"utf-8\") as file:` so Python closes the file when the block ends. Mode `\"w\"` starts a new text file or replaces an existing file's contents; mode `\"a\"` adds new output at the end. `write()` writes one string, while `writelines()` writes strings from an iterable without inserting newlines for you.",
+  "whyItMatters": "Files let a program preserve output after the program stops: a report, a log, an exported list, or a configuration it generated. The key design decision is not merely how to call `write`, but what should happen to existing content. Choosing `w` when preservation was expected can erase a prior file; choosing `a` when a fresh report was expected can mix old and new results. A context manager and an explicit text encoding make ordinary output code clearer and more portable.",
+  "learningObjectives": [
+    "Distinguish text-file modes `w` and `a` by their effect on existing content.",
+    "Use `with open(..., encoding=\"utf-8\")` to write a text file.",
+    "Explain the difference between `write()` and `writelines()`.",
+    "Apply explicit newline characters when producing separate text lines.",
+    "Analyze which writing mode fits a fresh report versus an added log entry."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Opening a text file for an intentional kind of write",
+      "body": "Python's built-in `open()` returns a file object connected to a path. For ordinary text output, a clear pattern is `with open(\"report.txt\", \"w\", encoding=\"utf-8\") as file:` followed by an indented block. The path says where the output goes; the mode says what kind of access is requested; and the encoding says how Python converts text strings to bytes for storage. This lesson uses UTF-8 explicitly because Python's documentation notes that an unspecified text encoding is platform-dependent and recommends UTF-8 unless another encoding is known to be needed. An encoding is not decoration: it is the agreed mapping between characters in a Python string and stored bytes.\n\nThe mode changes the consequences of the operation. `\"w\"` opens a file for writing and truncates it if it already exists. In plain language, a successful `w` write begins with an empty file; it is suitable for a report whose complete current version should replace an old version. `\"a\"` opens for appending, so new output is written at the end. It suits a simple log where a new event should follow earlier events. Neither mode is universally safer. The correct choice follows the program's promise to its user. Before using `w`, decide whether replacement is really intended; before using `a`, decide whether retaining prior entries is really intended. Exclusive creation (`x`) and file-existence handling are useful adjacent concerns, but they are outside this focused lesson."
+    },
+    {
+      "heading": "The context manager owns the closing boundary",
+      "body": "A file is a resource with a lifecycle. A program opens it, uses it, and should close it. The `with` statement creates a context-managed block: Python binds the opened file object after `as file`, runs the block, and closes the file when the block is left, including when normal flow leaves it because the block finishes. That makes the intended lifetime visible in the code. It also avoids relying on a later, easily forgotten `file.close()` call. The official tutorial presents this pattern as good practice because the file is properly closed after its suite finishes.\n\nClosing matters because buffered output may need to be finalized and because a program should release resources it no longer needs. The practical rule is simple: keep the write operations inside the `with` block and do not try to use the file object as an open writer after the block. A context manager does not decide what content belongs in a file or protect a program from choosing `w` accidentally. It handles the resource boundary; the programmer still chooses the path, mode, encoding, and strings deliberately.\n\nThis lesson is about producing output, not inspecting it afterward. Reading a file is covered separately. In real work, a program may later verify output through a read or test, but that is a distinct workflow. Likewise, detailed exception strategies belong with exceptions. Here, the dependable starting pattern is an explicit text encoding plus a short `with` block whose purpose is to write the planned content."
+    },
+    {
+      "heading": "Writing strings, lines, and delimiters",
+      "body": "`file.write(text)` accepts one string and returns the number of characters written. It does not automatically add a line break. Thus `file.write(\"First line\")` followed by `file.write(\"Second line\")` produces adjacent text unless the programmer includes a separator such as `\"\\n\"`. A newline is data in the string, not an invisible side effect of `write`. This detail is important for line-oriented formats and logs: a visual line in source code is not automatically a line in the output file.\n\n`file.writelines(lines)` writes each string from an iterable of strings. Despite its name, it also does not add line separators. A useful call is `file.writelines([\"April\\n\", \"May\\n\"])`, where each supplied string already carries its own newline. If the supplied strings are `[\"April\", \"May\"]`, the stored result is `AprilMay`. Use `write` when one constructed string is clearest; use `writelines` when the program already has a sequence of complete string fragments or line strings. Neither method turns arbitrary values into text automatically, so format numbers or other data into strings before passing them.\n\nA good output design makes separators visible. For a small report, collecting strings with explicit `\\n` characters can be more readable than scattering many write calls. For a log, a single `write` call that includes one message and one terminating newline is often enough. The point is not to prefer one method by habit. State the output structure first, then choose the method whose input naturally matches that structure. This lesson deliberately does not cover parsing the resulting text, binary files, or error recovery; those need separate decisions and examples."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "file object",
+      "definition": "The Python object returned by `open()` that provides operations on an opened file."
+    },
+    {
+      "term": "text mode",
+      "definition": "A file mode in which Python reads or writes strings using a character encoding."
+    },
+    {
+      "term": "encoding",
+      "definition": "A mapping used to convert text characters to stored bytes and back."
+    },
+    {
+      "term": "truncate",
+      "definition": "To reduce a file to zero length; opening an existing file with mode `w` does this before writing."
+    },
+    {
+      "term": "append",
+      "definition": "To add new output after the existing contents of a file."
+    },
+    {
+      "term": "context manager",
+      "definition": "An object used with `with` to set up and clean up a resource around a block of code."
+    },
+    {
+      "term": "newline",
+      "definition": "A character sequence such as `\\n` that separates lines in text output."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Think of a text file as a notebook your program can leave on a shelf. Opening it with `w` is like taking out the old pages and starting a replacement notebook. Opening it with `a` is like keeping the old pages and writing the next note after them. `write()` puts down the exact text you hand it; it does not press Enter by itself. To make a new line, include `\\n`. A `with` block is the routine for borrowing the notebook: take it out, write during the marked time, and put it away when the marked time ends.",
+    "analogy": "A context-managed file write is like using a library desk: the desk checks out the item for one defined session and handles its return when the session ends.",
+    "analogyLimits": "A file is not a physical notebook: modes can replace or append stored bytes, encodings determine how characters are represented, and closing a file can finalize buffered program output."
+  },
+  "workedExample": "This program creates or replaces a small text report, then appends one later line. It was executed with Python 3.\n\n```python\nfrom pathlib import Path\n\npath = Path(\"notes.txt\")\nwith open(path, \"w\", encoding=\"utf-8\") as file:\n    count = file.write(\"First line\\n\")\n    file.writelines([\"Second line\\n\", \"Third line\\n\"])\n\nwith open(path, \"a\", encoding=\"utf-8\") as file:\n    file.write(\"Fourth line\\n\")\n\nprint(count)\n```\n\nThe output from `print(count)` is `11`, because `First line\\n` has 11 characters. The first block uses `w`, so it starts the file with the first three lines. `writelines` receives strings that already include `\\n`; it supplies no separators of its own. The second block uses `a`, so its write follows the earlier contents. The resulting file has four separate lines, ending with `Fourth line`.",
+  "commonMistakes": [
+    {
+      "mistake": "Using mode `w` when earlier content was supposed to remain.",
+      "correction": "Use `a` for intentional addition, or choose a different design after deciding the replacement policy."
+    },
+    {
+      "mistake": "Expecting `write()` to place each call on a new line.",
+      "correction": "Include `\\n` or another intended delimiter in the string."
+    },
+    {
+      "mistake": "Expecting `writelines()` to insert separators.",
+      "correction": "Place newline characters in the supplied strings when separate lines are needed."
+    },
+    {
+      "mistake": "Leaving the encoding implicit for ordinary portable text output.",
+      "correction": "Specify `encoding=\"utf-8\"` unless the task requires and documents another encoding."
+    },
+    {
+      "mistake": "Keeping a writer open beyond the small block that needs it.",
+      "correction": "Use `with open(...) as file:` and perform the related writes inside its block."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "`w` mode",
+      "b": "`a` mode",
+      "distinction": "`w` writes from an empty file and truncates an existing one; `a` directs new writes to the end of existing content."
+    },
+    {
+      "a": "`write()`",
+      "b": "`writelines()`",
+      "distinction": "`write()` accepts one string; `writelines()` writes strings from an iterable, and neither inserts newline characters automatically."
+    }
+  ],
+  "keyTakeaway": "For predictable text output, use a short `with open(..., encoding=\"utf-8\")` block, choose `w` only for intended replacement and `a` only for intended addition, and put every required newline in the strings you write.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:writing-files:1",
+      "prompt": "What happens when an existing text file is opened with mode `\"w\"`?",
+      "options": [
+        "New writes are placed after its existing content",
+        "The file can only be read",
+        "Its existing contents are truncated before writing",
+        "Python automatically creates a backup copy"
+      ],
+      "correctIndex": 2,
+      "explanation": "Mode `w` opens for writing and truncates an existing file. Appending uses `a`; reading and automatic backup creation are different behaviors.",
+      "difficulty": "recall",
+      "skill": "Identify the effect of write mode",
+      "sourceIds": [
+        "python-docs-builtins-conversion"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:writing-files:2",
+      "prompt": "Which call writes two separate lines with `writelines()`?",
+      "options": [
+        "`file.writelines([\"red\", \"blue\"])`",
+        "`file.writelines(\"red\\nblue\")`",
+        "`file.writelines([\"red\", \"\\n\", \"blue\"])`",
+        "`file.writelines([\"red\\n\", \"blue\\n\"])`"
+      ],
+      "correctIndex": 3,
+      "explanation": "`writelines()` adds no line separators, so the strings themselves need `\\n`. The first option joins the words; the second passes one string character by character; the third gives a break before, not after, `blue`.",
+      "difficulty": "application",
+      "skill": "Apply explicit newline handling",
+      "sourceIds": [
+        "python-docs-io-base"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:writing-files:3",
+      "prompt": "Why does this pattern use `with open(\"log.txt\", \"a\", encoding=\"utf-8\") as file:`?",
+      "options": [
+        "It limits writing to an explicit block and closes the file when that block ends",
+        "It converts every value to a string automatically",
+        "It makes `write()` add a newline",
+        "It prevents all possible file errors"
+      ],
+      "correctIndex": 0,
+      "explanation": "The context-managed block defines the file's use and closes it afterward. It does not automatically convert arbitrary values, insert newlines, or prevent every error.",
+      "difficulty": "understanding",
+      "skill": "Explain a context manager's role",
+      "sourceIds": [
+        "python-tutorial-input-output"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:writing-files:4",
+      "prompt": "A program produces a new daily summary each run and should discard yesterday's summary at the same path. Which mode fits that stated policy?",
+      "options": [
+        "`\"a\"`",
+        "`\"w\"`",
+        "`\"r\"`",
+        "No mode is needed"
+      ],
+      "correctIndex": 1,
+      "explanation": "A fresh summary that should replace the prior file calls for `w`, which truncates an existing file. `a` preserves and adds to existing output; `r` is read mode.",
+      "difficulty": "application",
+      "skill": "Choose a mode from a replacement requirement",
+      "sourceIds": [
+        "python-docs-builtins-conversion"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:writing-files:5",
+      "prompt": "Why specify `encoding=\"utf-8\"` for ordinary text output when UTF-8 is appropriate?",
+      "options": [
+        "It changes append mode into replacement mode",
+        "It guarantees a newline after every write",
+        "It makes the text encoding explicit instead of relying on a platform-dependent default",
+        "It turns the file into a binary file"
+      ],
+      "correctIndex": 2,
+      "explanation": "An explicit UTF-8 encoding states how text is encoded rather than relying on the platform-dependent default. It does not change mode, insert newlines, or make the file binary.",
+      "difficulty": "analysis",
+      "skill": "Analyze the purpose of an explicit encoding",
+      "sourceIds": [
+        "python-tutorial-input-output",
+        "python-docs-builtins-conversion"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "python-programming:foundations:writing-files:1",
+      "prompt": "What happens when an existing text file is opened with mode `\"w\"`?",
+      "options": [
+        "New writes are placed after its existing content",
+        "The file can only be read",
+        "Its existing contents are truncated before writing",
+        "Python automatically creates a backup copy"
+      ],
+      "correctIndex": 2,
+      "explanation": "Mode `w` opens for writing and truncates an existing file. Appending uses `a`; reading and automatic backup creation are different behaviors.",
+      "difficulty": "recall",
+      "skill": "Identify the effect of write mode",
+      "sourceIds": [
+        "python-docs-builtins-conversion"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:writing-files:2",
+      "prompt": "Which call writes two separate lines with `writelines()`?",
+      "options": [
+        "`file.writelines([\"red\", \"blue\"])`",
+        "`file.writelines(\"red\\nblue\")`",
+        "`file.writelines([\"red\", \"\\n\", \"blue\"])`",
+        "`file.writelines([\"red\\n\", \"blue\\n\"])`"
+      ],
+      "correctIndex": 3,
+      "explanation": "`writelines()` adds no line separators, so the strings themselves need `\\n`. The first option joins the words; the second passes one string character by character; the third gives a break before, not after, `blue`.",
+      "difficulty": "application",
+      "skill": "Apply explicit newline handling",
+      "sourceIds": [
+        "python-docs-io-base"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:writing-files:3",
+      "prompt": "Why does this pattern use `with open(\"log.txt\", \"a\", encoding=\"utf-8\") as file:`?",
+      "options": [
+        "It limits writing to an explicit block and closes the file when that block ends",
+        "It converts every value to a string automatically",
+        "It makes `write()` add a newline",
+        "It prevents all possible file errors"
+      ],
+      "correctIndex": 0,
+      "explanation": "The context-managed block defines the file's use and closes it afterward. It does not automatically convert arbitrary values, insert newlines, or prevent every error.",
+      "difficulty": "understanding",
+      "skill": "Explain a context manager's role",
+      "sourceIds": [
+        "python-tutorial-input-output"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "python-programming:foundations:reading-files",
+    "python-programming:foundations:files",
+    "python-programming:foundations:exceptions",
+    "python-programming:foundations:basic-testing",
+    "python-programming:foundations:strings"
+  ],
+  "sources": [
+    "python-docs-builtins-conversion",
+    "python-tutorial-input-output",
+    "python-docs-io-base"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only sources; no source prose adapted",
+    "researchedAt": "2026-08-19",
+    "transformation": "Original explanation synthesized from official Python documentation; examples executed with Python 3."
+  },
+  "contentHash": "b763019ce6bd12d4",
+  "status": "source-verified",
+  "public": false
+}
