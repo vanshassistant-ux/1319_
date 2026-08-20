@@ -98,7 +98,7 @@ Bootstrapping organizes a venture around available resources, operating revenue,
 
 ## Practice Question Bank
 
-1. **Which description best defines bootstrapping in this lesson?**
+1. **In this lesson, what makes a venture's approach an example of bootstrapping?**
    - A. Using available resources and operating revenue while deliberately limiting cash outflows
    - B. Avoiding every business expense regardless of consequences
    - C. Receiving capital only from outside investors

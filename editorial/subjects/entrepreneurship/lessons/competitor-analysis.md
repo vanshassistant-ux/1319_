@@ -63,7 +63,7 @@ Write down what you can actually check. If the shop's sign says it closes at 6 p
 
 ## Eli's Analogy
 
-It is like comparing routes home on a map: driving, walking, taking a bus, asking for a ride, or staying where you are are all alternatives. You compare the same features for each route, such as time, cost, and reliability.
+It is like comparing routes home on a map: driving, walking, taking a bus, asking for a ride, or staying put all count as alternatives. You compare the same features for each route, such as time, cost, and reliability.
 
 The analogy has limits. People do not choose products as predictably as routes. They may have habits, preferences, access needs, or constraints that a simple grid cannot show. A comparison helps form questions; it does not forecast what everyone will do.
 
