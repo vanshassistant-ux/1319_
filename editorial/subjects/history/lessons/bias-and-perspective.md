@@ -1,0 +1,154 @@
+# Bias and Perspective
+
+## In 30 Seconds
+
+Every source was made by someone with a point of view. Perspective is the unavoidable standpoint shaped by who a person was and when they lived; bias is a distortion that unfairly favors one side. Historians ask who wrote a source, for whom, and why, then read against the grain to notice whose voices are present and whose are missing. Recognizing perspective does not make all accounts equally reliable, so you weigh and corroborate.
+
+## Why This Matters
+
+Sorting perspective from bias is the skill that turns reading into analysis. In college history courses you will be asked not just what a document says but why it says it that way, and a strong answer names the author's purpose and audience. The same habit protects you outside class: news, advertising, memoirs, and social media all come from a standpoint, and mistaking a persuasive voice for a neutral one leads to bad conclusions. Learning to weigh sources against each other, rather than trusting or dismissing them wholesale, is what lets you build claims that hold up under scrutiny.
+
+## Learning Objectives
+
+- Distinguish perspective (an inevitable standpoint) from bias (an unfair distortion).
+- Explain how a source's author, intended audience, and purpose shape what it says and omits.
+- Apply "reading against the grain" to ask whose voices a record includes and whose it silences.
+- Analyze why recognizing perspective still requires weighing reliability and corroborating across sources.
+
+## The College Version
+
+### Perspective is universal; bias is a distortion
+
+Start with a distinction that is easy to blur. Perspective is the standpoint every source inevitably has. Because a document is made by a particular person, in a particular place and time, for particular reasons, it can only show the past from where that person stood. A soldier's letter, a queen's decree, a merchant's ledger, and a temple inscription each see the same world differently, and none of them could have done otherwise. Perspective is not a flaw to be removed; it is a feature of all human testimony.
+
+Bias is narrower and more pointed: it is a distortion that unfairly favors one side, whether through selective evidence, loaded language, or a stake in the outcome. A source can have a strong perspective and still be careful and fair; another can share that perspective but slant its account to protect the author or flatter a patron. The historian's job is not to find a source with no perspective, because none exists, but to identify the perspective, judge whether it has hardened into bias, and account for both. Keeping the two ideas separate matters: treating every perspective as "bias" would let you dismiss every source, while ignoring bias would let you accept distortion as fact.
+
+### Author, audience, and purpose
+
+Three questions do most of the analytical work. **Who is the author, and what position did they hold?** People generally present themselves favorably and rarely record their own weaknesses, so an author with a stake in events will shape the story around that stake. **For whom was the source made?** A private diary, a public proclamation, a letter to a superior, and a pamphlet meant to persuade strangers are written under different pressures, and the intended audience changes what an author will admit, emphasize, or hide. **Why was it made?** A source written to justify a decision reads differently from one written to record supplies or to entertain.
+
+The Stanford History Education Group frames this as "sourcing," and its prompts are worth internalizing: who wrote this, what is the author's perspective, when and where, why, and is it reliable? The Library of Congress teaches a companion routine of observe, reflect, and question, asking learners to consider who the intended audience was and why someone made the item. Neither routine asks you to judge whether an author was a good person; both ask you to reconstruct the situation that produced the document, because that situation explains the choices the author made on the page.
+
+### Reading against the grain and the missing voices
+
+Sources can be read two ways. Reading *with* the grain takes a document as its author intended, following the story it means to tell. Reading *against* the grain uses a source to recover things it never set out to reveal. A plantation account book was written to track property and profit, yet a careful historian can mine it for evidence about the enslaved people it reduces to first names and monetary values, and can note, plainly, that the enslaved people's own perspective is absent from it.
+
+This points to a structural problem in the record itself. Written sources often preserve the lives of elites while leaving out ordinary people, and women, the poor, and minority communities are frequently hard to represent equally because fewer of their words were written down or kept. Some records were destroyed on purpose: in the Americas, conquerors deliberately destroyed much Indigenous writing tied to a religion and culture they intended to replace. So a full analysis asks not only what a source says but who is missing from it and why. The silence is itself evidence of how power shaped what got recorded.
+
+### Weighing and corroborating: perspective is not the same as equal reliability
+
+A common misreading of all this is relativism: if every source has a perspective, aren't they all equally good, or equally suspect? No. Recognizing perspective is the beginning of judgment, not a substitute for it. Some sources are better positioned, more careful, or more consistent with independent evidence than others, and part of the historian's work is to say so.
+
+Corroboration is the main tool: compare a source against others and see where they agree and where they diverge. SHEG describes this as establishing what is probable by comparing documents and recognizing disparities between accounts; the Library of Congress has students compare related sources to see how they support or challenge one another. Historians themselves have perspectives too. As OpenStax notes, we cannot wholly disconnect ourselves from our environment and beliefs, and a standpoint can even be productive: a bias toward the lives of ordinary people led historians in the 1960s and 1970s to open questions their predecessors had ignored. The safeguard is not neutrality, which is unattainable, but breadth. The danger lies in using only one lens; the more strands of evidence you bring together, the more accurate the picture becomes.
+
+## Key Vocabulary
+
+- **Perspective** — The standpoint from which a source sees events, shaped by the author's identity, time, place, and situation. Every source has one.
+- **Bias** — A distortion that unfairly favors one side, through selective evidence, loaded language, or a personal stake in the outcome.
+- **Sourcing** — Examining who created a source, when, where, and why before interpreting its content, in order to judge its reliability.
+- **Intended audience** — The person or group a source was made for, which shapes what its author chooses to include, emphasize, or hide.
+- **Purpose** — The reason a source was created, such as to record, justify, persuade, or entertain, which colors how it presents events.
+- **Reading against the grain** — Drawing from a source evidence it was not designed to provide, including information about people it barely mentions.
+- **Corroboration** — Comparing a source with other sources to see where accounts agree or disagree and to establish what most likely happened.
+- **Silenced voices** — People whose experiences are largely absent from the record because their words were not written down, not preserved, or deliberately destroyed.
+
+## Eli-10
+
+Imagine four people describe the same soccer game: a player on the losing team, the winning coach, a referee, and a fan of neither side. None of them is lying, but each notices different things and cares about different outcomes. That built-in point of view is perspective, and everyone has one. Bias is when someone bends the story on purpose, like the losing player saying the ref cheated when the replay shows a clean goal. To figure out what really happened, you do not pick one voice and trust it completely. You ask who is talking and why, and you check their story against the others.
+
+## Eli's Analogy
+
+A source is like a photograph: it shows something real, but only what fit inside the frame the photographer chose, from the angle they stood at.
+
+**Where it breaks down:** A photo mostly captures whatever is in front of the lens, while a written source is shaped by memory, motive, and the audience the author was writing for, so it can distort or omit far more deliberately than a camera can. And a photo cannot tell you who was standing just out of frame; with sources you must actively ask who is missing.
+
+## Worked Example
+
+Suppose you are studying a battle and your only account is an official dispatch a defeated general sent to his king, stressing that the enemy vastly outnumbered his troops. Sourcing comes first: the author is the commander responsible for the loss (a clear stake), the audience is the ruler who could punish or reward him, and the purpose is partly to explain a defeat without accepting blame. That does not make the dispatch worthless. It has a perspective, and it may even be broadly accurate, but the emphasis on enemy numbers is exactly where you would expect the account to bend. So you read against the grain, noting what the general does not mention, and you corroborate: are there enemy records, a chronicler's report, or supply logs that speak to the real numbers? If independent sources agree the armies were roughly equal, you weigh the dispatch accordingly rather than accepting or discarding it whole.
+
+## Common Mistakes
+
+- **Using "perspective" and "bias" as synonyms.** Perspective is the unavoidable standpoint of every source; bias is a distortion that unfairly favors one side. A source can have perspective without being biased.
+- **Deciding that because every source has a perspective, all sources are equally reliable (or equally worthless).** Recognizing perspective is where analysis starts. You still weigh how well-positioned, careful, and corroborated each source is.
+- **Judging a source only by whether its author seems trustworthy as a person.** Focus on author, audience, and purpose, which reconstruct the situation that shaped the document, rather than on the author's character.
+- **Treating a record as a complete picture of everyone involved.** Ask whose voices are present and whose are missing; records often omit ordinary people and the marginalized, and some were deliberately destroyed.
+- **Throwing out a source the moment you detect a point of view.** Read it against the grain and corroborate it; a source with an obvious stake can still yield reliable evidence when checked.
+
+## Compare / Contrast
+
+- **Perspective vs. Bias** — Perspective is the inevitable standpoint every source has; bias is a distortion that unfairly favors one side. All sources have the first; not all have the second.
+- **Reading with the grain vs. Reading against the grain** — Reading with the grain follows the story a source means to tell; reading against the grain extracts evidence the source never intended to give, and notices who is absent.
+- **Recognizing perspective vs. Assuming equal reliability** — Naming a source's standpoint is the start of judgment; concluding that all standpoints are therefore equally reliable skips the weighing and corroboration that judgment requires.
+
+## Key Takeaway
+
+Every source has a perspective, but not every source is biased, and not every source is equally reliable. Ask who made it, for whom, and why; notice whose voices are missing; then weigh and corroborate rather than trusting or dismissing any single account.
+
+## Practice Question Bank
+
+**1. Which statement best distinguishes perspective from bias?**
+
+- A. Perspective is the standpoint every source unavoidably has; bias is a distortion that unfairly favors one side.
+- B. Perspective is always a flaw, while bias is always neutral and harmless.
+- C. Perspective and bias mean the same thing when analyzing historical sources.
+- D. Only primary sources have perspective, and only secondary sources can have bias.
+
+**Answer: A.** Perspective is the inevitable standpoint of every source; bias is a distortion that unfairly favors one side. They are not synonyms (C), perspective is not itself a flaw (B), and both can appear in any source type (D).
+
+**2. A general who lost a battle writes an official dispatch to his king emphasizing that the enemy vastly outnumbered his troops. What is the strongest sourcing move?**
+
+- A. Accept the account as fully reliable simply because it is a firsthand primary source.
+- B. Dismiss the account entirely because its author has a perspective.
+- C. Ask how the author's purpose and intended audience may have shaped what he emphasized, then corroborate with other sources.
+- D. Assume the reported enemy numbers are exact because the author was present at the battle.
+
+**Answer: C.** The author has a stake and writes to the ruler who judges him, so purpose and audience likely shaped the emphasis; the sound response is to analyze those factors and corroborate. Being primary (A) or present (D) does not guarantee accuracy, and a perspective is not grounds to discard a source (B).
+
+**3. An estate's tax ledger lists enslaved laborers only by first name and monetary value. What does "reading against the grain" involve here?**
+
+- A. Concluding the ledger is useless for history because it was made for accounting.
+- B. Using the ledger to recover evidence about people it was never meant to give voice to, while noting whose perspective is absent.
+- C. Trusting that the ledger fully represents the enslaved people's own experiences and views.
+- D. Treating the recorded monetary values as how the enslaved people saw themselves.
+
+**Answer: B.** Reading against the grain draws from a source evidence it was not designed to provide, while acknowledging that the enslaved people's own perspective is missing. The ledger is not useless (A), and it neither represents their experiences (C) nor their self-understanding (D).
+
+**4. Recognizing that every source has a perspective should lead a historian to do what?**
+
+- A. Treat all accounts as equally reliable, since none is truly neutral.
+- B. Discard any source whose author had a personal stake in the events.
+- C. Rely only on sources written by observers with no connection to the events.
+- D. Weigh each source's reliability and corroborate across multiple sources instead of assuming neutrality or equal reliability.
+
+**Answer: D.** Perspective is universal, but that does not make sources equally reliable; the historian weighs positioning and corroborates. Equal reliability (A) is the relativist error, discarding staked sources (B) throws out most testimony, and unconnected "neutral" observers rarely exist (C).
+
+**5. Which question best helps a historian identify whose voices are missing from the record on a topic?**
+
+- A. Whose experiences would not have been written down or preserved, and why?
+- B. Which surviving source uses the most persuasive and vivid language?
+- C. Which surviving source was written closest in time to the event?
+- D. Which surviving source is the longest and most detailed?
+
+**Answer: A.** Locating silenced voices means asking who was left out of the record and why, since records often omit ordinary and marginalized people and some were destroyed. Persuasiveness (B), proximity (C), and length (D) help evaluate surviving sources but do not reveal who is absent.
+
+## Sources
+
+- Stanford History Education Group, *Historical Thinking Chart (Reading Like a Historian)* — <https://sheg.stanford.edu/history-lessons/historical-thinking-chart> (sourcing, contextualization, corroboration, close reading; verified from the identical reading copy hosted by the Truman Library).
+- U.S. Library of Congress, *Teacher's Guide: Analyzing Primary Sources* — <https://www.loc.gov/static/programs/teachers/getting-started-with-primary-sources/documents/Analyzing_Primary_Sources.pdf> (observe / reflect / question; audience and purpose; comparing related sources).
+- OpenStax, *World History Volume 1, to 1500*, Section 1.2 Primary Sources — <https://openstax.org/books/world-history-volume-1/pages/1-2-primary-sources> (author agenda, audience, corroboration, missing and destroyed voices). CC BY-NC-SA 4.0.
+- OpenStax, *World History Volume 1, to 1500*, Section 1.3 Causation and Interpretation in History — <https://openstax.org/books/world-history-volume-1/pages/1-3-causation-and-interpretation-in-history> (historians' unavoidable standpoint, multiple lenses, the danger of a single lens). CC BY-NC-SA 4.0.
+
+## Related Topics
+
+- history:foundations:primary-sources
+- history:foundations:evidence-and-interpretation
+- history:foundations:historical-context
+- history:foundations:historical-thinking
+- history:foundations:what-historians-do
+
+## Editorial Metadata
+
+- **Editorial status:** READY_TO_PUBLISH
+- **Researched:** 2026-08-19
+- **Rights:** Reference-only and public-domain sources plus CC BY-NC-SA OER; original prose throughout, no source text reproduced.
+- **Research status:** source-verified
