@@ -6,7 +6,7 @@ Consumer protection is the collection of laws, institutions, and enforcement too
 
 ## Why This Matters
 
-Consumer protection helps explain why a marketplace question can involve more than a private disagreement between a buyer and seller. Students learn to separate a misleading or harmful practice from a legal finding, and to identify the institution and legal authority that may be relevant. The topic also makes clear that the United States has overlapping federal and state roles, with specialized agencies for some markets. This is general U.S. legal education, not advice about a purchase, complaint, contract, dispute, or regulatory obligation.
+Consumer protection helps explain why a marketplace question can involve more than a private disagreement between a buyer and seller. Students learn to separate a misleading or harmful practice from a legal finding, and to identify the institution and legal authority that may be relevant. The topic also makes clear that the United States has overlapping federal and state roles, with specialized agencies for some markets. This introductory overview cannot advise on a particular purchase, complaint, contract, dispute, or regulatory obligation.
 
 ## Learning Objectives
 
@@ -146,8 +146,8 @@ Consumer protection is a layered, jurisdiction-dependent field. Identify the pra
 
 - Advertising Law
 - Contract Formation
-- Business Ethics
-- Privacy and Data Protection
+- Compliance
+- Corporate Ethics
 
 ## Editorial Metadata
 

@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-A limited liability company, or LLC, is a business structure created under state law. Its owners are usually called members. An LLC can be managed by members or by designated managers, depending on the applicable statute and governing agreement. Limited liability is a qualified legal feature, not a guarantee that nobody can ever be responsible. Federal tax classification is a separate question that can depend on membership and elections. This lesson explains the framework; it does not recommend, form, or evaluate an LLC.
+A limited liability company, or LLC, is a business structure created under state law. Its owners are usually called members. An LLC can be managed by members or by designated managers, depending on the applicable statute and governing agreement. Its liability boundary may distinguish the entity's obligations from those of members or managers, but it does not assure that no person will ever be liable. Federal tax classification is a separate question that can depend on membership and elections. This lesson explains the framework; it does not recommend, form, or evaluate an LLC.
 
 ## Why This Matters
 

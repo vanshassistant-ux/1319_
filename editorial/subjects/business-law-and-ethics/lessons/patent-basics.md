@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-In a general U.S. overview, a patent is a government-granted, time-limited right to exclude others from specified acts involving a claimed invention in the United States. It is not an automatic permission to make, use, or sell a product, and it does not apply worldwide. Utility patents may concern qualifying new and useful processes, machines, manufactures, compositions of matter, or improvements. This lesson introduces eligibility, novelty, utility, nonobviousness, disclosure, and limited duration without deciding whether any invention qualifies.
+In this U.S.-focused overview, a patent is a government grant of a time-limited right to prevent specified acts involving an invention covered by its claims. The right operates under U.S. law; it neither authorizes the holder to make, use, or sell a product nor extends worldwide. Utility patents may concern qualifying new and useful processes, machines, manufactures, compositions of matter, or improvements. This lesson introduces eligibility, novelty, utility, nonobviousness, disclosure, and limited duration without deciding whether any invention qualifies.
 
 ## Why This Matters
 

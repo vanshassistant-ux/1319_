@@ -117,7 +117,7 @@ Torts are civil wrongs that can support civil liability and remedies, but the ca
    D. The only possible issue is a criminal charge.  
    **Answer: C.** Allegedly unsafe conduct may suggest a negligence framework, but an injury does not establish all elements or exclude defenses. The fuller negligence analysis is separate.
 
-4. **Which statement best describes strict liability at this introductory level?**  
+4. **In a broad classification of tort claims, what best distinguishes strict liability from negligence?**  
    A. It applies whenever a business makes a mistake.  
    B. It guarantees damages whenever a product causes dissatisfaction.  
    C. It means courts never consider evidence or defenses.  

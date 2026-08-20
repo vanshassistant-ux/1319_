@@ -6,7 +6,7 @@ Product liability is the area of law concerning responsibility for harm allegedl
 
 ## Why This Matters
 
-Product liability shows why a product problem is not automatically a legal conclusion. It gives students a vocabulary for separating a defect category from a legal theory, and for seeing why a manufacturer, distributor, or seller may be discussed differently under different rules. The framework is useful when reading consumer-safety news and business-risk hypotheticals. This is general U.S. legal education only, not advice about an injury, product, recall, warranty, insurance claim, or lawsuit.
+Product liability shows why a product problem is not automatically a legal conclusion. It gives students a vocabulary for separating a defect category from a legal theory, and for seeing why a manufacturer, distributor, or seller may be discussed differently under different rules. The framework is useful when reading consumer-safety news and business-risk hypotheticals. This lesson offers general U.S. legal context; it cannot assess any injury, product, recall, warranty, insurance claim, or lawsuit.
 
 ## Learning Objectives
 
