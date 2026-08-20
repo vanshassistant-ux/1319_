@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "subjectSlug": "python-programming",
+  "note": "Discovery leads for hands-on Python topic workers. Every topic must independently read and verify its sources. Correct, idiomatic, version-current executable examples are the defining control: execute every code sample with python3 before publication.",
+  "reviewProfile": ["technical-programming", "correctness-critical", "python3"],
+  "tierA": [
+    { "provider": "Python Documentation", "url": "https://docs.python.org/3/", "useFor": "authoritative Python 3 language, library, tutorial, packaging, testing, exceptions, and data-model semantics" },
+    { "provider": "Python Enhancement Proposals", "url": "https://peps.python.org/", "useFor": "authoritative rationale and specifications where a language feature needs historical or design context" },
+    { "provider": "Python Packaging Authority", "url": "https://packaging.python.org/", "useFor": "authoritative packaging, virtual-environment, distribution, and dependency guidance" }
+  ],
+  "tierB": [
+    { "provider": "Think Python, 3rd edition", "url": "https://allendowney.github.io/ThinkPython/", "useFor": "open textbook explanations and small introductory examples; synthesize in original prose" },
+    { "provider": "Python Tutor", "url": "https://pythontutor.com/", "useFor": "supplementary visual traces only; verify all semantic claims against official documentation" },
+    { "provider": "pytest documentation", "url": "https://docs.pytest.org/", "useFor": "supplementary testing examples; distinguish third-party pytest from Python's standard unittest module" }
+  ],
+  "cautions": [
+    "CORRECTNESS IS THE PRIMARY CONTROL. Execute every Python code block, expression, output claim, numeric trace, and algorithmic assertion with python3 before publishing. Use idiomatic, version-current Python 3; do not rely on Python 2 behavior or undocumented implementation details.",
+    "Use the official Python documentation as the primary authority for language and standard-library behavior. Reuse an existing source-registry id exactly when it has the same URL; do not mint parallel ids for the same Python documentation page.",
+    "Teach language semantics precisely: indentation forms suites; equality (==) differs from identity (is); mutable objects and aliases can share state; dict and set order behavior must be stated only as documented; a Python list is a mutable dynamic array, not a linked list. Separate built-ins, standard library modules, third-party packages, and user code.",
+    "Keep adjacent lessons distinct: Installing Python owns interpreter acquisition and version checks; Running Python Programs owns REPL versus script execution; Python Syntax owns lexical/indentation conventions; Variables owns names and binding; Numbers owns arithmetic; Strings owns text sequences; Booleans owns truth values; Type Conversion owns explicit conversions. Do not turn one topic into a survey of the whole subject.",
+    "For files, use safe and portable examples: context managers (with open(...)) and explicit encodings when text encoding matters; keep Reading Files, Writing Files, and Files distinct. For exceptions, teach targeted handling and avoid bare except. For packages, distinguish import packages from installable distributions and cite PyPA guidance.",
+    "For introductory data analysis, keep claims modest and reproducible: show small, standard-library examples unless an external library is specifically introduced and sourced. Do not imply that a small example establishes a real-world conclusion.",
+    "The final queue entry is a mis-ingested instruction header. Keep its slug but retitle it as a genuine lesson about building and verifying small executable Python examples; do not write a meta instruction as a lesson.",
+    "Distribute question answer keys EVENLY across A/B/C/D, ensuring at least one C and one D per topic. Verify keys yourself from the file, and avoid reusing identical question-stem templates across topics."
+  ]
+}
