@@ -25,7 +25,7 @@ Economic development is the study of how and why material prosperity varies from
 
 ### Beyond income: the Human Development Index
 
-Income tells you what an economy produces, not how people live. A country can be middling in income yet have long lifespans and near-universal schooling, or rich yet unequal. To capture more, the UN Development Programme publishes the Human Development Index (HDI). It combines three dimensions of well-being: a long and healthy life, measured by life expectancy at birth; knowledge, measured by expected years of schooling for children and mean years of schooling for adults; and a decent standard of living, measured by GNI per capita. Each of the three is scaled to run from 0 to 1, and the three are combined using their geometric mean to give an overall score between 0 and 1, where higher is better. Using a geometric mean rather than a simple average means a country cannot fully offset a weak score in one dimension with a strong score in another, so balanced progress counts. This lesson only names the HDI; its full construction and its variants belong to the human-development-indicators topic.
+A per-capita income figure captures output, but it says little about health, schooling, or daily living conditions. A country can be middling in income yet have long lifespans and near-universal schooling, or rich yet unequal. To capture more, the UN Development Programme publishes the Human Development Index (HDI). It combines three dimensions of well-being: a long and healthy life, measured by life expectancy at birth; knowledge, measured by expected years of schooling for children and mean years of schooling for adults; and a decent standard of living, measured by GNI per capita. Each of the three is scaled to run from 0 to 1, and the three are combined using their geometric mean to give an overall score between 0 and 1, where higher is better. Using a geometric mean rather than a simple average means a country cannot fully offset a weak score in one dimension with a strong score in another, so balanced progress counts. This lesson only names the HDI; its full construction and its variants belong to the human-development-indicators topic.
 
 ### The trouble with "developed" and "developing"
 
@@ -85,7 +85,7 @@ Development is measured, not just described: income per person and the broader H
 
 ## Practice Question Bank
 
-1. **Which three dimensions does the UN's Human Development Index (HDI) combine?**
+1. **Beyond national income, the HDI gauges development by combining which set of measures?**
    - A. Health (life expectancy), education (schooling), and income (GNI per capita)
    - B. Income, unemployment, and inflation
    - C. Population size, land area, and natural resources

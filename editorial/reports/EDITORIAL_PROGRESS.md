@@ -1,25 +1,25 @@
 # ELIEXPLAINS GLOBAL EDITORIAL PROGRESS
 
-Generated: 2026-08-20T01:33:37.191Z
+Generated: 2026-08-20T03:24:57.870Z
 Counts are computed from the phase content stores by `bun run editorial:progress`.
 
 Subjects total: 44
-Subjects processed: 10
-Subjects remaining: 34
-Subject completion: 22.73%
+Subjects processed: 12
+Subjects remaining: 32
+Subject completion: 27.27%
 
-Total topics: 1319
-Topics processed: 266
+Total topics: 1308
+Topics processed: 325
 Topics published: 0
-Topics ready to publish: 266
+Topics ready to publish: 325
 Topics held: 0
 Topics requiring review: 0
-Topics remaining: 1053
-Topic processing: 20.17%
+Topics remaining: 983
+Topic processing: 24.85%
 
-Verified questions: 1330
-Unique source records: 1968
-Source usage classes: REFERENCE_ONLY=1382, PUBLIC_DOMAIN=472, ATTRIBUTION_REQUIRED=72, EXTRACT_AND_ADAPT=40, LINK_ONLY=2
+Verified questions: 1625
+Unique source records: 2211
+Source usage classes: REFERENCE_ONLY=1561, PUBLIC_DOMAIN=493, ATTRIBUTION_REQUIRED=96, EXTRACT_AND_ADAPT=59, LINK_ONLY=2
 
 ## Phase progress
 
@@ -28,7 +28,7 @@ Source usage classes: REFERENCE_ONLY=1382, PUBLIC_DOMAIN=472, ATTRIBUTION_REQUIR
 | 1 | 10 / 11 | 258 / 282 | 91.49% |
 | 2 | 0 / 11 | 0 / 325 | 0.00% |
 | 3 | 0 / 11 | 0 / 337 | 0.00% |
-| 4 | 0 / 11 | 8 / 375 | 2.13% |
+| 4 | 2 / 11 | 67 / 364 | 18.41% |
 
 ## Collection progress
 
@@ -39,7 +39,7 @@ Source usage classes: REFERENCE_ONLY=1382, PUBLIC_DOMAIN=472, ATTRIBUTION_REQUIR
 | Business & Money | 0 / 9 | 0 / 243 | 0.00% |
 | Humanities & Culture | 0 / 7 | 0 / 202 | 0.00% |
 | Science & Health | 0 / 6 | 0 / 206 | 0.00% |
-| Society & Government | 1 / 7 | 36 / 245 | 14.69% |
+| Society & Government | 3 / 7 | 95 / 234 | 40.60% |
 
 ## Subjects in progress
 
@@ -54,6 +54,7 @@ Source usage classes: REFERENCE_ONLY=1382, PUBLIC_DOMAIN=472, ATTRIBUTION_REQUIR
 | computer-literacy | 25 / 25 | 0 | 25 | 0 | 0 | 0 |
 | graphic-design-and-digital-media | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
 | python-programming | 12 / 36 | 0 | 12 | 0 | 0 | 24 |
-| economics | 8 / 50 | 0 | 8 | 0 | 0 | 42 |
+| economics | 39 / 39 | 0 | 39 | 0 | 0 | 0 |
 | computer-science-fundamentals | 27 / 27 | 0 | 27 | 0 | 0 | 0 |
+| human-geography | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
 | engineering-fundamentals | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
