@@ -1,0 +1,224 @@
+{
+  "id": "python-programming:foundations:function-parameters",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "function-parameters",
+  "title": "Function Parameters",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "python",
+    "functions",
+    "parameters",
+    "arguments"
+  ],
+  "in30Seconds": "Parameters are the named inputs a function is prepared to receive; arguments are the actual values supplied when it is called. Python lets many ordinary parameters receive values by position or by name. Defaults make an input optional, while `*args` gathers extra positional values and `**kwargs` gathers extra named values. Clear parameter choices make one small operation useful in more than one situation.",
+  "whyItMatters": "Parameters are how a program communicates the information a reusable operation needs. In coursework, they help you read function calls accurately and design examples that work with varied inputs. In practical code, sensible parameter names, defaults, and keyword calls make an interface easier to use without memorizing a fragile order. Understanding the binding rules also makes common `TypeError` messages—such as a missing argument or an unexpected keyword—much easier to diagnose.",
+  "learningObjectives": [
+    "Distinguish a parameter from an argument.",
+    "Apply positional and keyword arguments to an ordinary Python parameter list.",
+    "Explain when a default value is used and why mutable defaults are risky.",
+    "Predict the tuple and dictionary formed by `*args` and `**kwargs`.",
+    "Choose a clear calling style for a small function."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Parameters describe a function's input contract",
+      "body": "A function definition can name inputs in its parenthesized parameter list. Those names are parameters: placeholders the function can use while it runs. A function call supplies arguments, the concrete objects to bind to those placeholders. For example, in `announce(\"Mina\")`, `name` is a parameter if it appears in the definition, and `\"Mina\"` is an argument in this particular call. The distinction is small but useful. A parameter describes what a function accepts; an argument describes what a caller provided. This lesson focuses on that input contract, not on how to define an entire function, what it returns, or how names behave outside the call.\n\nA function's parameter list is therefore a small interface. A caller needs to know which inputs are required, which are optional, and which names are meaningful. Good parameter names communicate the role of an input—`width` is easier to interpret than `x` when a function calculates an area. Names do not enforce correctness by themselves, but they make a call easier for another person to read and reduce the chance that an ordered value is misunderstood.\n\nFor ordinary parameters, Python can bind arguments by position. In `greet(\"Mina\", \"Welcome\")`, the first supplied argument goes to the first parameter and the second goes to the second. This is compact, but it depends on remembering the order. If the call names a parameter, Python instead matches the argument by that name: `greet(greeting=\"Welcome\", name=\"Mina\")`. Keyword calls can make a line more self-explanatory and can state the arguments in a different order. A call may combine styles, but positional arguments must come before keyword arguments. `greet(\"Mina\", greeting=\"Welcome\")` is valid; placing a positional argument after a keyword argument is not."
+    },
+    {
+      "heading": "Defaults make an input optional, with a caveat",
+      "body": "A default value appears after `=` in a parameter list. In `def greet(name, greeting=\"Hello\")`, a call that supplies only `name` uses `\"Hello\"` for `greeting`; a caller can replace it with its own argument. Defaults are appropriate when one choice is conventional but another should remain available. They are not a separate type of parameter, and they do not mean that every input is optional: `name` remains required in this example.\n\nPython evaluates a default expression once, when the function definition is executed, rather than rebuilding it for every call. That behavior matters for mutable objects such as lists and dictionaries. A default `items=[]` can retain additions made during an earlier call, which often surprises beginners who expected a new empty list. When a function needs a fresh list if none was supplied, a common pattern is `items=None`, followed by an initialization inside the function when `items is None`. The point is not that lists are forbidden as inputs; it is that a shared default object should be intentional."
+    },
+    {
+      "heading": "Collecting a flexible number of arguments",
+      "body": "Sometimes a function genuinely accepts an open-ended set of inputs. A parameter written as `*args` collects extra positional arguments into a tuple. The spelling `args` is a convention, not a magic word; the leading `*` creates the collecting behavior. For a call such as `label(\"notebook\", \"blue\", \"lined\")`, a first ordinary parameter can receive `\"notebook\"`, and the remaining positional values can be collected as `('blue', 'lined')`. A tuple preserves the collected sequence and is useful when the function needs to examine any number of similarly ordered values.\n\nLikewise, `**kwargs` collects extra keyword arguments into a dictionary whose keys are the supplied keyword names. Again, `kwargs` is conventional; `**settings` has the same behavior. In `label(\"notebook\", urgent=True)`, a `**settings` parameter can receive `{'urgent': True}` after ordinary parameters have been matched. These tools are flexible, but they can make an interface harder to discover if used merely to avoid choosing clear parameters. Prefer explicit named parameters for the important, expected inputs. Use `*args` or `**kwargs` when an arbitrary collection is truly part of the function's contract, and document what those collected values mean."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "parameter",
+      "definition": "A name in a function definition that receives an argument when the function is called."
+    },
+    {
+      "term": "argument",
+      "definition": "An object or expression supplied in a function call for a parameter."
+    },
+    {
+      "term": "positional argument",
+      "definition": "An argument matched to a parameter according to its place in the call."
+    },
+    {
+      "term": "keyword argument",
+      "definition": "An argument written with a parameter name and `=`, matched by that name."
+    },
+    {
+      "term": "default value",
+      "definition": "A value used for a parameter when the caller omits an argument for it."
+    },
+    {
+      "term": "`*args`",
+      "definition": "Conventional name for a starred parameter that collects extra positional arguments into a tuple."
+    },
+    {
+      "term": "`**kwargs`",
+      "definition": "Conventional name for a double-starred parameter that collects extra keyword arguments into a dictionary."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Imagine a smoothie counter. The recipe card has blanks for what the blender needs: a fruit and, perhaps, a milk choice. Those blanks are parameters. When a customer says “banana” and “oat milk,” those supplied choices are arguments. The same recipe card can make different smoothies because different customers can fill in its blanks.\n\nGiving the choices by position is like saying the first word is fruit and the second is milk. Giving them by name is like attaching labels: `fruit=\"banana\"` and `milk=\"oat\"`. A default is the counter's usual milk if no one asks for another. `*args` is a basket for extra unlabelled toppings, and `**kwargs` is a clipboard for extra labelled requests.",
+    "analogy": "A function's parameters are the labelled blanks on an order form; arguments are the entries a customer writes into those blanks.",
+    "analogyLimits": "A real order form may reject or charge for choices, while parameters do not decide a program's business rules by themselves. Also, Python's exact rules for binding arguments are defined by the language, not by a human cashier."
+  },
+  "workedExample": "Run this Python 3 code:\n\n```python\ndef make_label(item, count=1, *tags, **settings):\n    return {\"item\": item, \"count\": count, \"tags\": tags, \"settings\": settings}\n\nprint(make_label(\"notebook\", 2, \"blue\", \"lined\", urgent=True))\n```\n\nThe first two positional arguments bind `item` to `\"notebook\"` and `count` to `2`, so the default count is not used. The two remaining positional arguments are collected by `*tags` into `('blue', 'lined')`. The named argument `urgent=True` does not match an ordinary parameter, so `**settings` collects it as `{'urgent': True}`. The printed result is `{'item': 'notebook', 'count': 2, 'tags': ('blue', 'lined'), 'settings': {'urgent': True}}`.",
+  "commonMistakes": [
+    {
+      "mistake": "Calling every supplied value a parameter.",
+      "correction": "Use parameter for the name in the definition and argument for the value in a call."
+    },
+    {
+      "mistake": "Putting a positional argument after a keyword argument.",
+      "correction": "Place positional arguments first, then use keyword arguments."
+    },
+    {
+      "mistake": "Assuming a default expression is rebuilt on each call.",
+      "correction": "Remember that Python evaluates a default once at function definition time; avoid mutable defaults when a fresh object is intended."
+    },
+    {
+      "mistake": "Treating `args` and `kwargs` as magic names.",
+      "correction": "The `*` or `**` changes collection behavior; the names after them are conventions."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "parameter",
+      "b": "argument",
+      "distinction": "A parameter is named in the function definition; an argument is supplied by a particular call."
+    },
+    {
+      "a": "positional argument",
+      "b": "keyword argument",
+      "distinction": "Position matches by order, while a keyword matches by the parameter name."
+    },
+    {
+      "a": "`*args`",
+      "b": "`**kwargs`",
+      "distinction": "A single star collects extra positional values in a tuple; two stars collect extra named values in a dictionary."
+    }
+  ],
+  "keyTakeaway": "Parameters describe the inputs a function can accept, and arguments supply those inputs in a call. Use explicit parameters when possible, defaults for genuine optional choices, and `*args` or `**kwargs` only when flexible collections are part of the intended interface.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:function-parameters:1",
+      "prompt": "In `def show(color): ...` followed by `show(\"green\")`, which item is the parameter?",
+      "options": [
+        "`color`",
+        "`show`",
+        "`\"green\"`",
+        "the parentheses in the call"
+      ],
+      "correctIndex": 0,
+      "explanation": "`color` is the named placeholder in the definition. `\"green\"` is the argument supplied to it, while the function name and parentheses are not parameters.",
+      "difficulty": "recall",
+      "skill": "Distinguish a parameter from an argument",
+      "sourceIds": [
+        "python-tutorial-controlflow",
+        "python-reference-expressions-calls"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:function-parameters:2",
+      "prompt": "Which call is valid for `def greet(name, greeting=\"Hello\"): ...`?",
+      "options": [
+        "`greet(name=\"Mina\", \"Hello\")`",
+        "`greet(\"Mina\", greeting=\"Welcome\")`",
+        "`greet(greeting=\"Welcome\", \"Mina\")`",
+        "`greet(\"Mina\", name=\"Lee\")`"
+      ],
+      "correctIndex": 1,
+      "explanation": "The valid call puts its positional argument before the keyword argument. A positional argument cannot follow a keyword argument, and the last option gives `name` twice.",
+      "difficulty": "understanding",
+      "skill": "Apply positional-before-keyword call order",
+      "sourceIds": [
+        "python-tutorial-controlflow"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:function-parameters:3",
+      "prompt": "A function is defined as `def record(item, *tags): ...`. What does `record(\"pen\", \"blue\", \"sale\")` bind to `tags`?",
+      "options": [
+        "`\"blue\"`",
+        "`[\"blue\", \"sale\"]`",
+        "`(\"blue\", \"sale\")`",
+        "`{\"blue\": \"sale\"}`"
+      ],
+      "correctIndex": 2,
+      "explanation": "The starred parameter collects surplus positional arguments into a tuple, so `tags` is `(\"blue\", \"sale\")`.",
+      "difficulty": "application",
+      "skill": "Predict `*args` collection",
+      "sourceIds": [
+        "python-tutorial-controlflow",
+        "python-reference-expressions-calls"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:function-parameters:4",
+      "prompt": "For `def configure(name, **settings): ...`, what does `configure(\"app\", theme=\"dark\")` place in `settings`?",
+      "options": [
+        "`(\"theme\", \"dark\")`",
+        "`[\"theme\", \"dark\"]`",
+        "`\"dark\"`",
+        "`{\"theme\": \"dark\"}`"
+      ],
+      "correctIndex": 3,
+      "explanation": "A double-starred parameter gathers surplus keyword arguments into a dictionary, with the keyword names as keys.",
+      "difficulty": "application",
+      "skill": "Predict `**kwargs` collection",
+      "sourceIds": [
+        "python-tutorial-controlflow",
+        "python-reference-expressions-calls"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:function-parameters:5",
+      "prompt": "Why can `def collect(items=[]): items.append(1); return items` surprise a caller who calls `collect()` twice?",
+      "options": [
+        "Python rejects list defaults in every function.",
+        "The same default list can retain the first call's addition.",
+        "`append` always returns a new list.",
+        "A default makes `items` a keyword-only parameter."
+      ],
+      "correctIndex": 1,
+      "explanation": "Python evaluates the default list once when the definition runs, so the same list can be reused and retain mutation. Lists are allowed defaults, `append` mutates rather than returning a new list, and a default alone does not make a parameter keyword-only.",
+      "difficulty": "analysis",
+      "skill": "Analyze mutable default behavior",
+      "sourceIds": [
+        "python-tutorial-controlflow"
+      ]
+    }
+  ],
+  "quickCheck": [
+    "In `def show(color): ...` followed by `show(\"green\")`, which item is the parameter?",
+    "Which call is valid for `def greet(name, greeting=\"Hello\"): ...`?",
+    "A function is defined as `def record(item, *tags): ...`. What does `record(\"pen\", \"blue\", \"sale\")` bind to `tags`?"
+  ],
+  "relatedTopics": [
+    "python-programming:foundations:functions",
+    "python-programming:foundations:return-values",
+    "python-programming:foundations:scope"
+  ],
+  "sources": [
+    "python-tutorial-controlflow",
+    "python-reference-expressions-calls"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only official documentation; no source prose adapted.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Original beginner lesson synthesized from Python's tutorial and language reference, with Python 3-executed examples."
+  },
+  "contentHash": "6c05641e6379e249",
+  "status": "source-verified",
+  "public": false
+}

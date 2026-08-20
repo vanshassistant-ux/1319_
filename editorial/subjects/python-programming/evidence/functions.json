@@ -1,0 +1,25 @@
+{
+  "topicId": "python-programming:foundations:functions",
+  "subjectId": "python-programming",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": ["function definitions", "function calls", "indented function bodies", "reuse and abstraction", "docstrings"],
+    "supporting": ["decomposition", "testing a small named behavior"],
+    "outOfScope": ["parameter binding", "return values", "scope", "recursion", "methods and classes", "decorators"]
+  },
+  "claims": [
+    {"claim":"In Python, def introduces a function definition; it is followed by a function name and parenthesized parameter list, and the body begins on the next indented line.","claimType":"TECHNICAL","sourceIds":["python-tutorial-controlflow"],"status":"supported"},
+    {"claim":"Defining a function associates its name with a user-defined function object; calling the named function later executes its body.","claimType":"TECHNICAL","sourceIds":["python-tutorial-controlflow","think-python-2e-functions"],"status":"supported"},
+    {"claim":"A docstring may be the first statement in a function body, and Python tools can use docstrings to provide documentation.","claimType":"TECHNICAL","sourceIds":["python-tutorial-controlflow"],"status":"supported"},
+    {"claim":"A named function can package a small behavior so callers can use that behavior repeatedly without duplicating its implementation.","claimType":"EVERGREEN","sourceIds":["think-python-2e-functions"],"status":"supported"},
+    {"claim":"A function call uses parentheses after the function name; a definition and a call are different program actions.","claimType":"TECHNICAL","sourceIds":["think-python-2e-functions","python-tutorial-controlflow"],"status":"supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": [],
+  "correctionsNeeded": ["Kept parameter binding, returned values, and name scope out of this lesson because dedicated sibling topics own them."],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {"id":"python-tutorial-controlflow","title":"The Python Tutorial — 4. More Control Flow Tools (Defining Functions)","provider":"Python Software Foundation","url":"https://docs.python.org/3/tutorial/controlflow.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Read directly on 2026-08-19, including section 4.8. Supports def syntax, indented function bodies, docstrings, the distinction between defining and calling a function, and function names referring to function objects. Facts synthesized; no source prose adapted."},
+    {"id":"think-python-2e-functions","title":"Think Python, 2e — Chapter 3: Functions","provider":"Allen B. Downey / Green Tea Press","url":"https://greenteapress.com/thinkpython2/html/thinkpython2004.html","sourceType":"open-textbook","usage":"REFERENCE_ONLY","license":"CC BY-NC 3.0","licenseUrl":"https://creativecommons.org/licenses/by-nc/3.0/","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-19","notes":"Read directly on 2026-08-19. Supports the function-definition and function-call distinction and the reusable named-sequence framing. No wording reproduced; original prose only."}
+  ]
+}

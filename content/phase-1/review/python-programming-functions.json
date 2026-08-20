@@ -1,0 +1,267 @@
+{
+  "id": "python-programming:foundations:functions",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "functions",
+  "title": "Functions",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "python",
+    "functions",
+    "abstraction",
+    "code-reuse",
+    "docstrings"
+  ],
+  "in30Seconds": "A Python function gives a name to a small, reusable piece of behavior. Write a definition with `def`, an indented body, and a meaningful name; the body is saved, not run immediately. Write the name followed by parentheses to call it later. This separation lets a program ask for the same job in several places without copying the job's steps each time.",
+  "whyItMatters": "Functions are a practical way to keep programs understandable as they grow. A well-named function turns several implementation steps into one readable action, so a reader can first follow what the program is doing and inspect details only when needed. Reuse also gives maintenance a single home: when a repeated behavior changes, its definition can change once. Small functions are easier to run, inspect, and test than one long script.",
+  "learningObjectives": [
+    "Define a Python function and distinguish its definition from its call.",
+    "Identify the role of `def`, parentheses, the colon, and indentation in a basic definition.",
+    "Explain how a function name supports reuse and abstraction.",
+    "Apply a function call to execute a previously defined behavior.",
+    "Evaluate whether a repeated task should become a small named function."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "A definition records behavior; a call requests it",
+      "body": "A function is a named unit of behavior. In Python, `def` begins a definition. It is followed by a name, parentheses, a colon, and an indented suite of statements. When the interpreter reaches this definition, it creates a function object and associates the chosen name with it. The body does not run merely because the definition appears in the file. That fact is useful: a program can establish many available actions before choosing which ones to perform.\n\nA call is the later act of requesting one of those actions. In the simplest form, a call is the name followed by parentheses, as in `show_banner()`. Each call starts the body again from its first statement. A definition is therefore like putting a labeled tool on a workbench; a call is picking up that tool to do its job. Do not confuse a name such as `show_banner` with the call `show_banner()`: the parentheses are what make this example invoke the function. This lesson deliberately leaves the values inside those parentheses to Function Parameters and leaves results passed back to Return Values."
+    },
+    {
+      "heading": "Readable boundaries and small responsibilities",
+      "body": "A function creates a boundary in a program. Code outside the definition can use the function's name without needing to read every statement inside it at that moment. This is abstraction: a useful name communicates the job while hiding routine detail temporarily. `display_welcome_message()` says more about a program's intent than three copied `print` statements scattered through a file. The detail is still available in the definition when it needs inspection.\n\nThat boundary works best when the name names one coherent responsibility. A function named `print_divider` should print a divider, not also read a file, change a menu, and save a report. Small responsibilities make calls predictable and definitions easier to revise. They also support decomposition: instead of trying to write an entire program in one uninterrupted block, identify the smaller actions it needs and give each action a name. Decomposition is not a demand to make every line its own function; it is a way to choose useful boundaries around behavior that would otherwise be repeated, obscure, or difficult to check."
+    },
+    {
+      "heading": "Reuse, documentation, and checking behavior",
+      "body": "Copying a block of code may appear quick, but copied blocks can drift apart. If a greeting must change in four copied locations, one location may be missed. A shared function gives the behavior one definition and many calls. That makes a change more local and lets the name act as a compact explanation wherever it is called. Reuse is not limited to exact repetition: it also lets one part of a program call a behavior that another part has already defined.\n\nPython permits a documentation string, or docstring, as the first statement of a function body. A docstring is a concise explanation intended for people and tools; it does not replace a clear name or correct behavior. A short function can also be checked directly: call it, observe its intended visible effect, and compare that observation with the expected result. Larger testing techniques belong to Basic Testing, but the design benefit begins here. When a function's responsibility is narrow, a check can focus on that responsibility instead of untangling an entire program.\n\nConsider a program that needs the same divider before several sections. Defining `print_divider` once makes the sequence of actions readable: call the name whenever the divider is wanted. The body is indented, so Python knows which statements belong to the function. Calls can occur later in the file and can occur more than once. This is not magic or a shortcut around understanding: the program still performs every statement in the body on each call. The gain is that the statements have one trustworthy home and a name that states their purpose."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "function",
+      "definition": "A named, callable unit of code that groups statements for a particular behavior."
+    },
+    {
+      "term": "function definition",
+      "definition": "The `def` statement and indented body that create a named function for later use."
+    },
+    {
+      "term": "function call",
+      "definition": "An expression that uses a function name with parentheses to request that function's execution."
+    },
+    {
+      "term": "function body",
+      "definition": "The indented suite of statements that a function executes when it is called."
+    },
+    {
+      "term": "abstraction",
+      "definition": "Using a meaningful interface or name for a behavior while temporarily setting aside its implementation details."
+    },
+    {
+      "term": "decomposition",
+      "definition": "Breaking a larger task into smaller, understandable responsibilities."
+    },
+    {
+      "term": "docstring",
+      "definition": "A string literal placed first in a function body to document that function for people and tools."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "A function is a labeled instruction card. Writing the card does not make anything happen; it only puts the instructions where the program can find them. Calling the function is like saying, ‘Use the card now.’ The program follows the steps on the card each time it hears that call. Because the card has a name, you do not need to rewrite the same steps in every place that needs them. A helpful label also lets another reader understand the job before studying the instructions themselves.",
+    "analogy": "Think of a function as a button labeled ‘ring bell.’ Installing the button is the definition. Pressing it is the call. Many people can press the same button, and the bell action stays in one place.",
+    "analogyLimits": "A software function can run many kinds of statements and may have no physical effect at all. The button image only explains the separation between setting up a named action and requesting it."
+  },
+  "workedExample": "This program defines one behavior, then calls it twice. Run it with Python 3:\n\n```python\ndef print_divider():\n    \"\"\"Display a simple section divider.\"\"\"\n    print(\"-\" * 12)\n\nprint(\"Morning\")\nprint_divider()\nprint(\"Afternoon\")\nprint_divider()\n```\n\nOutput:\n\n```text\nMorning\n------------\nAfternoon\n------------\n```\n\nThe `def` block establishes `print_divider`; it produces no divider at definition time. Each later `print_divider()` call runs the two statements in its body. The repeated output comes from two calls to one definition, not from two copied definitions. The docstring is the first body statement and describes the function for readers and documentation tools.",
+  "commonMistakes": [
+    {
+      "mistake": "Expecting a function body to run as soon as `def` is encountered.",
+      "correction": "A definition creates the named function; add a call with parentheses where execution is wanted."
+    },
+    {
+      "mistake": "Writing a call name without parentheses when the behavior should run.",
+      "correction": "Use `print_divider()` to call the function, not just `print_divider`."
+    },
+    {
+      "mistake": "Forgetting to indent the statements that belong to a function.",
+      "correction": "Indent the body consistently after the definition line so Python forms the intended suite."
+    },
+    {
+      "mistake": "Putting unrelated jobs into one vaguely named function.",
+      "correction": "Choose a focused responsibility and a name that tells callers what that responsibility is."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "function definition",
+      "b": "function call",
+      "distinction": "A definition creates a named behavior for later use; a call requests that behavior's execution now."
+    },
+    {
+      "a": "reused function",
+      "b": "copied code",
+      "distinction": "A reused function keeps one definition with multiple calls; copied code creates multiple places that can diverge."
+    }
+  ],
+  "keyTakeaway": "Define a function once with `def` and an indented body, then call its name with parentheses whenever that focused behavior is needed. A good name and small responsibility make the program easier to read, reuse, and check.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:functions:1",
+      "prompt": "What does a Python `def` statement do in this lesson's basic model?",
+      "options": [
+        "Creates a named function for later calls",
+        "Immediately runs the indented body twice",
+        "Imports a module",
+        "Converts a name into a string"
+      ],
+      "correctIndex": 0,
+      "explanation": "`def` introduces a function definition, creating a named function. The body runs when the function is called, not because it was defined; importing and conversion are separate operations.",
+      "difficulty": "recall",
+      "skill": "Identify the purpose of a function definition",
+      "sourceIds": [
+        "python-tutorial-controlflow"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:functions:2",
+      "prompt": "Which expression calls a previously defined function named `print_divider`?",
+      "options": [
+        "`def print_divider:`",
+        "`print_divider()`",
+        "`print_divider:`",
+        "`call print_divider`"
+      ],
+      "correctIndex": 1,
+      "explanation": "A basic Python call uses the function name followed by parentheses: `print_divider()`. The other choices are not that call syntax.",
+      "difficulty": "recall",
+      "skill": "Recognize function-call syntax",
+      "sourceIds": [
+        "think-python-2e-functions"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:functions:3",
+      "prompt": "A script prints the same section divider in five places. Which change best uses a function?",
+      "options": [
+        "Copy the divider statements into five new blocks",
+        "Put the divider text in a comment",
+        "Define `print_divider()` once and call it at each needed location",
+        "Replace every divider with an empty line"
+      ],
+      "correctIndex": 2,
+      "explanation": "One focused definition with multiple calls gives the repeated behavior a single home. Copying creates multiple maintenance locations; a comment or empty line does not perform the intended behavior.",
+      "difficulty": "application",
+      "skill": "Apply reuse to repeated behavior",
+      "sourceIds": [
+        "think-python-2e-functions"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:functions:4",
+      "prompt": "Why is indentation required after a basic Python function-definition line?",
+      "options": [
+        "It changes the function name into a keyword",
+        "It tells Python to execute the body during definition",
+        "It makes the docstring optional",
+        "It marks the statements that form the function body"
+      ],
+      "correctIndex": 3,
+      "explanation": "The indented suite is the function body. Indentation does not invoke the function, rename it, or control whether a docstring may appear.",
+      "difficulty": "understanding",
+      "skill": "Explain the role of an indented function body",
+      "sourceIds": [
+        "python-tutorial-controlflow"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:functions:5",
+      "prompt": "Which function design most clearly supports abstraction for displaying a divider?",
+      "options": [
+        "A focused `print_divider()` whose name states its job",
+        "A function called `do_everything()` that prints, reads files, and changes menus",
+        "Five pasted copies of `print('-' * 12)`",
+        "A variable named `divider` with no function body"
+      ],
+      "correctIndex": 0,
+      "explanation": "A focused, descriptive function lets callers understand the intended action without reopening implementation details. The other choices are vague, duplicated, or do not define callable behavior.",
+      "difficulty": "analysis",
+      "skill": "Evaluate a function boundary",
+      "sourceIds": [
+        "think-python-2e-functions"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "python-programming:foundations:functions:1",
+      "prompt": "What does a Python `def` statement do in this lesson's basic model?",
+      "options": [
+        "Creates a named function for later calls",
+        "Immediately runs the indented body twice",
+        "Imports a module",
+        "Converts a name into a string"
+      ],
+      "correctIndex": 0,
+      "explanation": "`def` introduces a function definition, creating a named function. The body runs when the function is called, not because it was defined; importing and conversion are separate operations.",
+      "difficulty": "recall",
+      "skill": "Identify the purpose of a function definition",
+      "sourceIds": [
+        "python-tutorial-controlflow"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:functions:2",
+      "prompt": "Which expression calls a previously defined function named `print_divider`?",
+      "options": [
+        "`def print_divider:`",
+        "`print_divider()`",
+        "`print_divider:`",
+        "`call print_divider`"
+      ],
+      "correctIndex": 1,
+      "explanation": "A basic Python call uses the function name followed by parentheses: `print_divider()`. The other choices are not that call syntax.",
+      "difficulty": "recall",
+      "skill": "Recognize function-call syntax",
+      "sourceIds": [
+        "think-python-2e-functions"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:functions:3",
+      "prompt": "A script prints the same section divider in five places. Which change best uses a function?",
+      "options": [
+        "Copy the divider statements into five new blocks",
+        "Put the divider text in a comment",
+        "Define `print_divider()` once and call it at each needed location",
+        "Replace every divider with an empty line"
+      ],
+      "correctIndex": 2,
+      "explanation": "One focused definition with multiple calls gives the repeated behavior a single home. Copying creates multiple maintenance locations; a comment or empty line does not perform the intended behavior.",
+      "difficulty": "application",
+      "skill": "Apply reuse to repeated behavior",
+      "sourceIds": [
+        "think-python-2e-functions"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "python-programming:foundations:function-parameters",
+    "python-programming:foundations:return-values",
+    "python-programming:foundations:scope",
+    "python-programming:foundations:basic-testing",
+    "python-programming:foundations:modules"
+  ],
+  "sources": [
+    "python-tutorial-controlflow",
+    "think-python-2e-functions"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only sources; no source prose adapted",
+    "researchedAt": "2026-08-19",
+    "transformation": "Official Python documentation and an open textbook were read; concepts were synthesized into original instruction and executable examples."
+  },
+  "contentHash": "6743f05c494e74a4",
+  "status": "source-verified",
+  "public": false
+}
