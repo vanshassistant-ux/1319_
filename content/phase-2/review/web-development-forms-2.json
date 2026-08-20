@@ -1,0 +1,287 @@
+{
+  "id": "web-development:foundations:forms-2",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "forms-2",
+  "title": "Form Validation and Submission",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 10,
+  "tags": [
+    "web-development",
+    "html",
+    "forms",
+    "validation",
+    "accessibility",
+    "security"
+  ],
+  "in30Seconds": "HTML can describe constraints such as required fields, an email-shaped value, or a minimum length. Browsers can use those constraints to give immediate feedback before ordinary form submission. That feedback improves the interaction, but it is not a security boundary: the receiving server must validate every submitted value again before relying on it. Good validation also makes errors understandable, connected to the relevant field, and usable without depending only on color.",
+  "whyItMatters": "Validation has two distinct jobs. On the client, it helps someone correct an entry while the form is in front of them. On the server, it protects the application’s rules and data when a request arrives. Keeping those jobs separate avoids a costly misunderstanding: browser checks are useful, but requests are not guaranteed to come through a particular page or browser. Clear accessible error feedback also reduces abandonment and makes a form usable with keyboards and assistive technology.",
+  "learningObjectives": [
+    "Explain the difference between browser-side constraint validation and server-side validation.",
+    "Apply required, type, minlength, and pattern only as appropriate input constraints.",
+    "Use checkValidity() and reportValidity() for their distinct browser behaviors.",
+    "Design an error message that identifies the field and correction needed.",
+    "Trace a form submission without treating client checks as a trust boundary."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Constraints describe an acceptable browser input",
+      "body": "HTML’s constraint-validation model lets authors state some ordinary requirements in markup. `required` says that a value must be supplied for controls to which it applies. `type=\"email\"` asks the browser to apply its email-address validity rules; it does not prove that an address belongs to a particular person. `minlength` and `maxlength` place limits on text that a user edits, while `pattern` can add a regular-expression constraint when a well-defined format is genuinely needed. A constraint is not a substitute for a clear label, instructions, or an explanation of why a field is requested. It is also not a database schema. The browser evaluates a control’s validity as a client-side feature and can expose a `ValidityState` explaining categories such as missing value, type mismatch, or too-short value. The practical goal is to prevent predictable accidental errors early, not to write a miniature security policy in attributes. Use the smallest set of constraints that accurately reflects the user-facing requirement. Overly strict formats can reject legitimate names, addresses, or international data and turn validation into an obstacle rather than assistance."
+    },
+    {
+      "heading": "Validation APIs and submission behavior",
+      "body": "A form normally performs interactive constraint validation when a user submits it. JavaScript can also ask whether constraints pass with `form.checkValidity()`. That method returns a Boolean and dispatches invalid events for invalid controls, but it does not display the browser’s validation message. `form.reportValidity()` also returns a Boolean and asks the user agent to report invalid controls to the user. These APIs are useful when a page has a deliberate interaction flow, but custom scripting should not suppress the browser’s useful semantics without replacing them with an equivalent accessible experience. The `submit` event is a good place to decide whether application-specific client feedback is needed; calling `preventDefault()` stops that submission event’s default action. Programmatic `form.submit()` differs from a user-initiated submission because it does not perform constraint validation and does not fire the submit event. The `requestSubmit()` method follows the submitter path instead. These details matter when testing: a green scripted path can accidentally skip the exact browser check the author expected."
+    },
+    {
+      "heading": "Accessible error feedback is part of the interface",
+      "body": "An error state should tell a person what happened and how to repair it. WAI guidance recommends describing errors in text, identifying the affected field, and preserving enough context for someone to find it. Color alone is not sufficient because people perceive color differently and may not see a visual change. A useful pattern has a visible label, concise instructions before a field when needed, and an error message placed near the control after validation. When a form has multiple errors, an error summary near the beginning can identify the problem fields and link to them, while the field-level message supplies the specific repair. Error messages must remain accurate: ‘Enter an email address in the form name@example.com’ is actionable, whereas ‘Invalid input’ is vague. Authors should test keyboard focus and screen-reader announcements rather than assuming an ARIA attribute fixes a weak structure. Native labels and controls provide the foundation; ARIA can communicate dynamically added status only when it is used with an understood interaction design."
+    },
+    {
+      "heading": "The server is the authority after submission",
+      "body": "Client-side validation is exposed to the person using the page, so it cannot be the final decision about whether data is allowed. A person can alter markup, turn off scripts, or send an HTTP request by another route. The server must therefore treat every received value as untrusted input: check required business rules, expected type and range, authorization, and any format the application truly requires before performing an action or storing data. This is not a reason to omit browser validation. The two layers solve different problems: client feedback reduces routine mistakes and unnecessary round trips, while server validation protects the application’s integrity. A server should return a clear error response when its validation fails, because even a careful browser form can be stale or incomplete. Do not put secrets in client-side constraints or assume a hidden or disabled control establishes authorization. Form controls influence a browser’s interface and submission entry list; they do not decide what a server permits. Designing the boundary explicitly makes both the user experience and the defensive model easier to reason about."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "constraint validation",
+      "definition": "The browser feature that evaluates applicable HTML form-control constraints before or during interactive validation."
+    },
+    {
+      "term": "required",
+      "definition": "A form-control attribute that makes an otherwise empty value invalid when the control is a candidate for validation."
+    },
+    {
+      "term": "ValidityState",
+      "definition": "The browser-exposed collection of flags describing whether a control fails a particular validity condition."
+    },
+    {
+      "term": "checkValidity()",
+      "definition": "A method that evaluates constraints and returns whether they pass without asking the browser to show validation messages."
+    },
+    {
+      "term": "reportValidity()",
+      "definition": "A method that evaluates constraints and asks the browser to report invalid controls to the user."
+    },
+    {
+      "term": "client-side validation",
+      "definition": "Feedback or checks performed in the browser before a request reaches the receiving application."
+    },
+    {
+      "term": "server-side validation",
+      "definition": "Verification by the receiving application that submitted data meets its rules before the application relies on it."
+    },
+    {
+      "term": "error summary",
+      "definition": "A message near the start of a form that identifies one or more submission problems and can guide a person to them."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "A form can have rules like ‘this box cannot be empty’ or ‘this needs to look like an email address.’ The browser can point out a broken rule before it sends the form. That is helpful coaching, but it is not a locked door. The place that receives the form must check the answers too, because someone can send a request without using the page. Error messages should say which answer needs changing and what to do.",
+    "analogy": "Think of a school worksheet and a teacher. The worksheet can circle a blank answer before it is handed in. The teacher still reads the sheet and checks the answers, because a student could hand in a different sheet or make a mistake the circle did not catch.",
+    "analogyLimits": "Browsers do not judge whether information is true in the way a teacher judges answers. They apply defined technical constraints. A server’s checks are also application rules, not a guarantee that every real-world statement is true."
+  },
+  "workedExample": "A newsletter form contains `<input id=\"email\" name=\"email\" type=\"email\" required>` and a visible `<label for=\"email\">Email address</label>`. If the person submits it empty, interactive browser validation can identify the missing required value. If they enter `hello`, the email type can produce a type-mismatch result. A script could call `form.checkValidity()` to decide whether constraints pass, or `form.reportValidity()` to request browser feedback. Neither call means the server may trust the request. When the server receives an email value, it must still apply the application’s own validation before creating a subscription. If the server rejects it, the page should present a specific text error associated with the email field, not only a red outline.",
+  "commonMistakes": [
+    {
+      "mistake": "Treating a required attribute as a server security control.",
+      "correction": "Keep the attribute for browser feedback, but validate the required rule again on the server."
+    },
+    {
+      "mistake": "Using pattern for every text field.",
+      "correction": "Use a pattern only for a stable, well-understood user-facing format; unnecessary patterns reject valid input."
+    },
+    {
+      "mistake": "Showing errors only by changing a border color.",
+      "correction": "Provide clear text that identifies the field and the needed correction."
+    },
+    {
+      "mistake": "Calling submit() while expecting normal constraint validation.",
+      "correction": "Understand that submit() bypasses interactive validation; use the appropriate flow and test it."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "checkValidity()",
+      "b": "reportValidity()",
+      "distinction": "Both evaluate constraints; reportValidity() additionally asks the browser to report invalid controls."
+    },
+    {
+      "a": "client-side validation",
+      "b": "server-side validation",
+      "distinction": "Client checks improve immediate feedback; server checks are required before the application relies on received data."
+    },
+    {
+      "a": "required",
+      "b": "minlength",
+      "distinction": "required rejects an empty required value, while minlength constrains a nonempty user-entered value's length."
+    }
+  ],
+  "keyTakeaway": "HTML constraints and browser feedback help people correct routine mistakes, but they are not authorization or data-integrity controls. Use accessible, specific error messages and require the receiving server to validate every submitted value.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:forms-2:1",
+      "prompt": "What is the server’s role when a browser form uses required fields?",
+      "options": [
+        "It may trust the browser’s checks as final",
+        "It only needs to validate values from mobile browsers",
+        "It must validate received values before relying on them",
+        "It should remove client-side feedback"
+      ],
+      "correctIndex": 2,
+      "explanation": "A request can arrive without following client-side checks, so the receiving application must validate it. Client feedback remains useful but is not the final authority.",
+      "difficulty": "recall",
+      "skill": "Identify the validation trust boundary",
+      "sourceIds": [
+        "whatwg-form-control-infrastructure",
+        "mdn-client-side-form-validation"
+      ]
+    },
+    {
+      "id": "web-development:foundations:forms-2:2",
+      "prompt": "Which method asks the browser to show feedback for invalid controls?",
+      "options": [
+        "checkValidity()",
+        "requestSubmit()",
+        "submit()",
+        "reportValidity()"
+      ],
+      "correctIndex": 3,
+      "explanation": "reportValidity() evaluates constraints and requests browser reporting. checkValidity() evaluates without that reporting; the submission methods have different behavior.",
+      "difficulty": "understanding",
+      "skill": "Distinguish constraint-validation APIs",
+      "sourceIds": [
+        "whatwg-form-control-infrastructure",
+        "mdn-client-side-form-validation"
+      ]
+    },
+    {
+      "id": "web-development:foundations:forms-2:3",
+      "prompt": "A form marks an account name invalid only with a red border. What improvement best addresses the main accessibility problem?",
+      "options": [
+        "Add a text message explaining the field and correction",
+        "Make the red border thicker",
+        "Remove the label to reduce clutter",
+        "Replace the input with a generic div"
+      ],
+      "correctIndex": 0,
+      "explanation": "Text that identifies the problem and correction does not depend only on color. A border alone is not sufficient feedback, and the other choices weaken semantics.",
+      "difficulty": "application",
+      "skill": "Apply accessible error-feedback guidance",
+      "sourceIds": [
+        "wai-form-validation"
+      ]
+    },
+    {
+      "id": "web-development:foundations:forms-2:4",
+      "prompt": "What does minlength=\"8\" do when an optional text control is left empty?",
+      "options": [
+        "It makes the empty field valid only after eight characters are entered",
+        "It encrypts the value before submission",
+        "It makes the empty field invalid because minlength implies required",
+        "It prevents the server from receiving the field"
+      ],
+      "correctIndex": 0,
+      "explanation": "minlength does not imply required. An optional empty control can be valid; if a user enters a value, the applicable minimum length matters.",
+      "difficulty": "application",
+      "skill": "Reason about HTML length constraints",
+      "sourceIds": [
+        "whatwg-form-control-infrastructure"
+      ]
+    },
+    {
+      "id": "web-development:foundations:forms-2:5",
+      "prompt": "Why is calling form.submit() a risky shortcut when testing required fields?",
+      "options": [
+        "It changes every input into a hidden field",
+        "It bypasses constraint validation and does not fire the submit event",
+        "It sends the form only with GET",
+        "It automatically validates the server response"
+      ],
+      "correctIndex": 1,
+      "explanation": "The HTML standard distinguishes submit() from a submission path that performs validation. It does not alter fields, force GET, or validate a response.",
+      "difficulty": "analysis",
+      "skill": "Analyze a programmatic-submission path",
+      "sourceIds": [
+        "whatwg-form-control-infrastructure",
+        "mdn-client-side-form-validation"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:forms-2:1",
+      "prompt": "What is the server’s role when a browser form uses required fields?",
+      "options": [
+        "It may trust the browser’s checks as final",
+        "It only needs to validate values from mobile browsers",
+        "It must validate received values before relying on them",
+        "It should remove client-side feedback"
+      ],
+      "correctIndex": 2,
+      "explanation": "A request can arrive without following client-side checks, so the receiving application must validate it. Client feedback remains useful but is not the final authority.",
+      "difficulty": "recall",
+      "skill": "Identify the validation trust boundary",
+      "sourceIds": [
+        "whatwg-form-control-infrastructure",
+        "mdn-client-side-form-validation"
+      ]
+    },
+    {
+      "id": "web-development:foundations:forms-2:2",
+      "prompt": "Which method asks the browser to show feedback for invalid controls?",
+      "options": [
+        "checkValidity()",
+        "requestSubmit()",
+        "submit()",
+        "reportValidity()"
+      ],
+      "correctIndex": 3,
+      "explanation": "reportValidity() evaluates constraints and requests browser reporting. checkValidity() evaluates without that reporting; the submission methods have different behavior.",
+      "difficulty": "understanding",
+      "skill": "Distinguish constraint-validation APIs",
+      "sourceIds": [
+        "whatwg-form-control-infrastructure",
+        "mdn-client-side-form-validation"
+      ]
+    },
+    {
+      "id": "web-development:foundations:forms-2:3",
+      "prompt": "A form marks an account name invalid only with a red border. What improvement best addresses the main accessibility problem?",
+      "options": [
+        "Add a text message explaining the field and correction",
+        "Make the red border thicker",
+        "Remove the label to reduce clutter",
+        "Replace the input with a generic div"
+      ],
+      "correctIndex": 0,
+      "explanation": "Text that identifies the problem and correction does not depend only on color. A border alone is not sufficient feedback, and the other choices weaken semantics.",
+      "difficulty": "application",
+      "skill": "Apply accessible error-feedback guidance",
+      "sourceIds": [
+        "wai-form-validation"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:forms",
+    "web-development:foundations:events",
+    "web-development:foundations:accessibility",
+    "web-development:foundations:http-basics",
+    "web-development:foundations:web-security-basics"
+  ],
+  "sources": [
+    "whatwg-form-control-infrastructure",
+    "mdn-client-side-form-validation",
+    "wai-form-validation"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only sources; no source prose adapted",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original explanation of current HTML validation, accessible errors, and the server-validation boundary."
+  },
+  "contentHash": "4157dac11ba7aa3d",
+  "status": "source-verified",
+  "public": false
+}

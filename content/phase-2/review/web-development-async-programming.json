@@ -1,0 +1,283 @@
+{
+  "id": "web-development:foundations:async-programming",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "async-programming",
+  "title": "Async Programming",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 10,
+  "tags": [
+    "javascript",
+    "promises",
+    "async-await",
+    "web-development"
+  ],
+  "in30Seconds": "Asynchronous JavaScript starts an operation and lets the surrounding program continue instead of waiting for every result immediately. A Promise represents the operation's eventual outcome. You can use `.then()` and `.catch()` to handle fulfillment and rejection, or write an `async` function and use `await` inside it. `await` pauses that async function at one point; it does not turn the whole program into a stop sign.",
+  "whyItMatters": "Web programs often need to coordinate work whose result is not available right away. Promises give that later result—and a possible failure—a defined path through the program. Learning the model helps a student read JavaScript without assuming that the next line always receives a finished value. It also builds habits that matter beyond a browser: return promises deliberately, handle failures near the operation that can explain them, and avoid making independent work wait needlessly.",
+  "learningObjectives": [
+    "Define Promise, pending, fulfilled, rejected, and settled.",
+    "Trace a simple promise chain including a rejection handler.",
+    "Explain what `async` changes about a function's return value.",
+    "Apply `await` with `try...catch` to handle a rejected operation.",
+    "Distinguish sequential work from independent work that may be started together."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Promises describe a result that is not ready yet",
+      "body": "A Promise is a JavaScript object representing the eventual completion or failure of an asynchronous operation and its resulting value. It has an initial pending state. A pending promise has not yet produced a final outcome. It later becomes fulfilled, carrying a fulfillment value, or rejected, carrying a reason such as an Error. Once it is fulfilled or rejected, it is settled: its state will not change again. A promise is therefore not the completed value itself. If a function returns a promise, code that calls the function receives an object that describes a future outcome, not a shortcut around waiting for that outcome.\n\nHandlers say what to do after that outcome. `promise.then(onFulfilled)` registers work for fulfillment, while `promise.catch(onRejected)` registers work for rejection. A useful chain returns values or promises from each handler, so the next link receives the appropriate eventual value. `then()` itself returns a new promise. That detail is why a chain can express consecutive steps without nesting one handler inside another. A rejection can come from the original operation, from an explicit `throw`, or from an error thrown by a handler. Ending a chain with `catch()` gives one place to handle an unhandled rejection from an earlier link. This lesson uses locally created promises so the model stays separate from the later Fetch/API topic."
+    },
+    {
+      "heading": "async functions and await use the same promise model",
+      "body": "Putting `async` before a function declaration or expression makes an async function. Calling an async function always returns a Promise, even when the body appears to `return` an ordinary value. If the body returns `42`, the returned promise fulfills with `42`; if an error escapes the body, the returned promise rejects with that error. The caller can still use `.then()` and `.catch()` on the result. This is a common beginner trap: `const result = makeLabel()` is a promise if `makeLabel` is async, not the label that its body will later produce.\n\nInside an async function, `await expression` evaluates the expression and waits for its promise-like result to settle before continuing that async function. On fulfillment, the await expression produces the fulfillment value. On rejection, it throws the rejection reason at that line. `try...catch` therefore works naturally around awaited work: put the steps that might reject in `try`, and decide in `catch` how to report, recover, or rethrow the error. Handling an error does not mean silently hiding it. A good handler gives useful context or deliberately passes the error onward when the current function cannot make a sound recovery decision. In normal non-module code, `await` belongs inside an async function; modules also permit top-level await, but module loading is outside this lesson."
+    },
+    {
+      "heading": "Choose ordering from dependencies, not from habit",
+      "body": "`await` makes sequential code readable, but it also means the next awaited expression does not begin until execution reaches it. That is correct when a later step needs the earlier result: compute a student ID first, then use that ID to make a label. It is unnecessarily slow when two tasks are independent. For independent promises, start both operations first and then coordinate their results. `Promise.all([first, second])` returns one promise that fulfills with an array of values in the same order as its input when every input fulfills. If an input rejects, the returned promise rejects.\n\nThis is not an instruction to run every operation concurrently. Dependencies, resource limits, and error policy determine the appropriate design. The important reasoning step is to ask whether the next operation needs the prior operation's value. If yes, await in sequence. If no, starting work before awaiting can avoid accidental serial delay. In either style, keep the promise boundary visible. Do not write a function that begins asynchronous work and then claim it already has the final value. Return the promise, await it in an async caller, or attach explicit handlers. Those choices make success and failure paths inspectable in tests and easier for a teammate to understand."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "Promise",
+      "definition": "An object representing the eventual completion or failure of an asynchronous operation and its resulting value."
+    },
+    {
+      "term": "pending",
+      "definition": "The initial promise state before it has fulfilled or rejected."
+    },
+    {
+      "term": "fulfilled",
+      "definition": "The state of a promise that completed successfully with a value."
+    },
+    {
+      "term": "rejected",
+      "definition": "The state of a promise that completed unsuccessfully with a reason."
+    },
+    {
+      "term": "settled",
+      "definition": "No longer pending: a promise has either fulfilled or rejected."
+    },
+    {
+      "term": "async function",
+      "definition": "A function whose call returns a Promise and whose body can use await."
+    },
+    {
+      "term": "await",
+      "definition": "An operator that pauses an async function at an expression until its promise-like operand settles."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Imagine asking a library helper to find a book in storage. You get a claim ticket now, not the book. The ticket is like a Promise: it will later lead to either the book being ready or a notice that something went wrong. You can leave instructions for each outcome. An `async` function is a helper who works with those tickets. When it uses `await`, that one helper pauses at a ticket until it is resolved, then continues with the book or handles the problem. Other people in the library can still keep working.",
+    "analogy": "A Promise is a library claim ticket. `.then()` is an instruction for what to do when the book arrives; `.catch()` is an instruction for a problem. `await` is the helper waiting at that one counter for the ticket's result.",
+    "analogyLimits": "A JavaScript promise is not a physical ticket and does not guarantee a particular time. Also, `await` pauses an async function's progress, not a person or every task in the program."
+  },
+  "workedExample": "This Bun-verified program has no network work: `async function labelJob() { const label = await Promise.resolve(\"ready\"); return label.toUpperCase(); } labelJob().then(console.log); Promise.reject(new Error(\"paused\")).catch(error => console.log(error.message)); console.log(\"started\");`. Bun printed `started`, then `paused`, then `READY`. `labelJob()` immediately returned a promise, so the program could print `started` before its awaited fulfillment continuation ran. The separate rejected promise called its `catch` handler. Inside `labelJob`, `await` turned the fulfilled value `\"ready\"` into `label`; the async function's `return` fulfilled its own promise with `\"READY\"`.",
+  "commonMistakes": [
+    {
+      "mistake": "Treating a Promise as if it were already its fulfilled value.",
+      "correction": "Await it in an async function or attach a fulfillment handler before using its eventual value."
+    },
+    {
+      "mistake": "Using `await` outside an async function in a normal script.",
+      "correction": "Place it inside an async function; top-level await is a separate module feature."
+    },
+    {
+      "mistake": "Handling only success in a chain that can reject.",
+      "correction": "Add a considered `catch()` or use `try...catch` around awaited work."
+    },
+    {
+      "mistake": "Awaiting independent operations one after another by default.",
+      "correction": "When their results do not depend on each other, start them first and coordinate with an appropriate promise combinator such as `Promise.all`."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "fulfilled",
+      "b": "rejected",
+      "distinction": "A fulfilled promise has a successful value; a rejected promise has a failure reason."
+    },
+    {
+      "a": "`.then().catch()`",
+      "b": "`try { await ... } catch ...`",
+      "distinction": "Both handle promise outcomes; the latter lets an async function express the failure path with statement syntax."
+    },
+    {
+      "a": "sequential awaits",
+      "b": "Promise.all",
+      "distinction": "Sequential awaits fit dependent steps; Promise.all coordinates promises that can be started independently."
+    }
+  ],
+  "keyTakeaway": "Promises make later success and failure explicit. Async functions still return promises; `await` unwraps a settled result only inside the async function, where `try...catch` can handle rejection.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:async-programming:1",
+      "prompt": "Which state describes a Promise before it has fulfilled or rejected?",
+      "options": [
+        "pending",
+        "returned",
+        "awaited",
+        "settled"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pending is the initial state. A settled promise has already fulfilled or rejected; returned and awaited are not Promise states.",
+      "difficulty": "recall",
+      "skill": "Identify Promise states",
+      "sourceIds": [
+        "mdn-promise-guide",
+        "mdn-promise-reference"
+      ]
+    },
+    {
+      "id": "web-development:foundations:async-programming:2",
+      "prompt": "What does calling an async function return immediately?",
+      "options": [
+        "Its eventual ordinary value",
+        "A Promise",
+        "Only an Error",
+        "Nothing until every task ends"
+      ],
+      "correctIndex": 1,
+      "explanation": "An async function call returns a Promise. That promise may later fulfill with a returned value or reject with an uncaught error.",
+      "difficulty": "understanding",
+      "skill": "Explain async function return behavior",
+      "sourceIds": [
+        "mdn-async-function",
+        "ecma262-async-function-objects"
+      ]
+    },
+    {
+      "id": "web-development:foundations:async-programming:3",
+      "prompt": "Inside an async function, a Promise used with await rejects. What happens at the await expression?",
+      "options": [
+        "It silently becomes undefined",
+        "It automatically retries",
+        "Its rejection reason is thrown",
+        "The whole JavaScript program stops"
+      ],
+      "correctIndex": 2,
+      "explanation": "A rejected awaited promise throws its rejection reason at the await expression, so surrounding try...catch can handle it. It does not automatically retry or stop the whole program.",
+      "difficulty": "application",
+      "skill": "Predict await rejection behavior",
+      "sourceIds": [
+        "mdn-await",
+        "mdn-promise-guide"
+      ]
+    },
+    {
+      "id": "web-development:foundations:async-programming:4",
+      "prompt": "A promise chain has several consecutive then handlers. Which addition can handle a rejection from an earlier unhandled link?",
+      "options": [
+        "A second pending state",
+        "A variable declaration",
+        "A return outside the chain",
+        "A catch handler at the end of the chain"
+      ],
+      "correctIndex": 3,
+      "explanation": "A catch handler at the end can receive an unhandled rejection from an earlier chain step. The other choices do not register rejection handling.",
+      "difficulty": "understanding",
+      "skill": "Plan promise error handling",
+      "sourceIds": [
+        "mdn-promise-guide",
+        "mdn-promise-reference"
+      ]
+    },
+    {
+      "id": "web-development:foundations:async-programming:5",
+      "prompt": "Two operations are independent: neither needs the other's result. Which design avoids making the second wait merely because of code order?",
+      "options": [
+        "Start both promises, then coordinate them with Promise.all",
+        "Await the first before starting the second",
+        "Convert both operations to ordinary values",
+        "Use catch before either operation starts"
+      ],
+      "correctIndex": 0,
+      "explanation": "Starting independent work first and then using Promise.all can coordinate both results without accidental serial waiting. Sequential await is appropriate when a later step depends on an earlier value.",
+      "difficulty": "analysis",
+      "skill": "Choose ordering from dependencies",
+      "sourceIds": [
+        "mdn-promise-guide",
+        "mdn-promise-reference"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:async-programming:1",
+      "prompt": "Which state describes a Promise before it has fulfilled or rejected?",
+      "options": [
+        "pending",
+        "returned",
+        "awaited",
+        "settled"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pending is the initial state. A settled promise has already fulfilled or rejected; returned and awaited are not Promise states.",
+      "difficulty": "recall",
+      "skill": "Identify Promise states",
+      "sourceIds": [
+        "mdn-promise-guide",
+        "mdn-promise-reference"
+      ]
+    },
+    {
+      "id": "web-development:foundations:async-programming:2",
+      "prompt": "What does calling an async function return immediately?",
+      "options": [
+        "Its eventual ordinary value",
+        "A Promise",
+        "Only an Error",
+        "Nothing until every task ends"
+      ],
+      "correctIndex": 1,
+      "explanation": "An async function call returns a Promise. That promise may later fulfill with a returned value or reject with an uncaught error.",
+      "difficulty": "understanding",
+      "skill": "Explain async function return behavior",
+      "sourceIds": [
+        "mdn-async-function",
+        "ecma262-async-function-objects"
+      ]
+    },
+    {
+      "id": "web-development:foundations:async-programming:3",
+      "prompt": "Inside an async function, a Promise used with await rejects. What happens at the await expression?",
+      "options": [
+        "It silently becomes undefined",
+        "It automatically retries",
+        "Its rejection reason is thrown",
+        "The whole JavaScript program stops"
+      ],
+      "correctIndex": 2,
+      "explanation": "A rejected awaited promise throws its rejection reason at the await expression, so surrounding try...catch can handle it. It does not automatically retry or stop the whole program.",
+      "difficulty": "application",
+      "skill": "Predict await rejection behavior",
+      "sourceIds": [
+        "mdn-await",
+        "mdn-promise-guide"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:javascript-fundamentals",
+    "web-development:foundations:functions",
+    "web-development:foundations:fetch-api-basics",
+    "web-development:foundations:events",
+    "web-development:foundations:web-platform"
+  ],
+  "sources": [
+    "mdn-promise-guide",
+    "mdn-promise-reference",
+    "mdn-async-function",
+    "mdn-await",
+    "ecma262-promise-objects",
+    "ecma262-async-function-objects"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only documentation and specification; no source prose adapted",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original instructional lesson synthesized from MDN and ECMAScript; the local promise example was executed with Bun."
+  },
+  "contentHash": "50ef871b3d274fe5",
+  "status": "source-verified",
+  "public": false
+}

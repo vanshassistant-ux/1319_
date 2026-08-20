@@ -1,0 +1,27 @@
+{
+  "topicId": "web-development:foundations:web-platform",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {
+    "core": ["meaning of the web platform", "standards, browser implementations, and Web APIs", "feature detection and progressive enhancement"],
+    "supporting": ["HTML parsing into a DOM", "Web IDL interfaces"],
+    "outOfScope": ["a survey of individual APIs", "DOM manipulation", "events", "network requests", "accessibility conformance", "browser-specific debugging"]
+  },
+  "claims": [
+    {"claim":"Web APIs are interfaces available while developing a web app or site.","claimType":"TECHNICAL","sourceIds":["mdn-web-apis-index"],"status":"supported"},
+    {"claim":"HTML user agents such as browsers parse HTML markup into a DOM.","claimType":"TECHNICAL","sourceIds":["whatwg-html-introduction"],"status":"supported"},
+    {"claim":"Web IDL is an interface definition language used to describe interfaces developers use in web applications.","claimType":"TECHNICAL","sourceIds":["whatwg-web-idl-standard"],"status":"supported"},
+    {"claim":"Feature detection tests whether a capability is available before code uses it, which lets a site choose a fallback path.","claimType":"TECHNICAL","sourceIds":["mdn-feature-detection"],"status":"supported"},
+    {"claim":"The web platform is best understood as interoperating specifications and browser-provided capabilities, rather than as a single JavaScript library.","claimType":"TECHNICAL","sourceIds":["mdn-web-apis-index","whatwg-html-introduction","whatwg-web-idl-standard"],"status":"supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft supplied no concrete, source-verified explanation of the web platform."],
+  "correctionsNeeded": ["Replaced generic boilerplate with a scoped explanation of standards, user agents, Web APIs, and capability checks."],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {"id":"mdn-web-apis-index","title":"Web APIs","provider":"MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Web/API","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"CC BY-SA 2.5","licenseUrl":"https://creativecommons.org/licenses/by-sa/2.5/","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly via curl. Supports the description of Web APIs as interfaces available to web applications; no source prose reproduced."},
+    {"id":"whatwg-html-introduction","title":"HTML Standard — Introduction","provider":"WHATWG","url":"https://html.spec.whatwg.org/multipage/introduction.html","sourceType":"standards-body","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-20","notes":"Read directly via curl. Supports that HTML user agents, including browsers, parse markup into a DOM and have defined requirements; prose is original synthesis."},
+    {"id":"whatwg-web-idl-standard","title":"Web IDL Standard","provider":"WHATWG","url":"https://webidl.spec.whatwg.org/","sourceType":"standards-body","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-20","notes":"Read directly via curl. Supports Web IDL as an interface definition language for interfaces used by web applications; prose is original synthesis."},
+    {"id":"mdn-feature-detection","title":"Feature detection","provider":"MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Testing/Feature_detection","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"CC BY-SA 2.5","licenseUrl":"https://creativecommons.org/licenses/by-sa/2.5/","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly via curl. Supports feature detection as checking whether a feature is available before using it and choosing an alternative path."}
+  ]
+}

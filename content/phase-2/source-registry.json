@@ -26,6 +26,19 @@
     "notes": "Read directly through the published W3C specification. Primary source for style rules, qualified-rule blocks, declarations, property/value parsing, at-rules, and invalid declarations being ignored. Used for verification only."
   },
   {
+    "id": "dom-standard-events",
+    "title": "DOM Standard: Events",
+    "provider": "WHATWG",
+    "url": "https://dom.spec.whatwg.org/#events",
+    "sourceType": "standards-body",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-20",
+    "notes": "Read live. Supports EventTarget, event dispatch, event listeners, event target/currentTarget, cancelability, default prevention, and propagation concepts."
+  },
+  {
     "id": "ecma262-array-objects",
     "title": "ECMAScript Language Specification — Indexed Collections",
     "provider": "Ecma International / TC39",
@@ -37,6 +50,19 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-20",
     "notes": "Read as the current ECMAScript specification. Corroborates Array constructor and prototype operation semantics; used for technical verification only."
+  },
+  {
+    "id": "ecma262-async-function-objects",
+    "title": "ECMAScript Language Specification — Async Function Objects",
+    "provider": "Ecma International / TC39",
+    "url": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-async-function-objects",
+    "sourceType": "standards-body",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-20",
+    "notes": "Read directly as primary specification corroborating async function behavior."
   },
   {
     "id": "ecma262-expressions",
@@ -89,6 +115,19 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-20",
     "notes": "Read directly as the current ECMAScript specification. Corroborates that objects are ECMAScript language values with properties; used for technical verification only."
+  },
+  {
+    "id": "ecma262-promise-objects",
+    "title": "ECMAScript Language Specification — Promise Objects",
+    "provider": "Ecma International / TC39",
+    "url": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise-objects",
+    "sourceType": "standards-body",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-20",
+    "notes": "Read directly as primary specification corroborating Promise object semantics."
   },
   {
     "id": "ecma262-statements",
@@ -156,6 +195,32 @@
     "notes": "Read directly via curl. Supports the array identity test used as a brief supporting concept. No source prose was reproduced."
   },
   {
+    "id": "mdn-async-function",
+    "title": "async function",
+    "provider": "MDN Web Docs",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-20",
+    "notes": "Read as current JavaScript reference. Supports async-function return and rejection behavior."
+  },
+  {
+    "id": "mdn-await",
+    "title": "await",
+    "provider": "MDN Web Docs",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-20",
+    "notes": "Read as current JavaScript reference. Supports await suspension and fulfilled/rejected outcomes."
+  },
+  {
     "id": "mdn-basic-html-syntax",
     "title": "MDN Web Docs — Basic HTML syntax",
     "provider": "Mozilla / MDN Web Docs",
@@ -184,6 +249,21 @@
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-20",
     "notes": "Read directly. Supports the DNS lookup, navigation, initial response, parsing, and rendering overview. No prose reproduced."
+  },
+  {
+    "id": "mdn-client-side-form-validation",
+    "title": "MDN Web Docs — Client-side form validation",
+    "provider": "Mozilla / MDN Web Docs",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-20",
+    "notes": "Read directly. Practical corroboration for constraints, validation methods, and the need for server validation."
   },
   {
     "id": "mdn-const-statement",
@@ -354,6 +434,92 @@
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-20",
     "notes": "Read directly. Supports the conceptual definitions of declarations, properties, values, and rules. The lesson deliberately does not teach syntax details."
+  },
+  {
+    "id": "mdn-document-createelement",
+    "title": "Document: createElement() method",
+    "provider": "MDN Web Docs (Mozilla)",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Attrib_copyright_license",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-20",
+    "notes": "Read directly. Supports createElement() creating an HTMLElement with the requested local name; original prose only."
+  },
+  {
+    "id": "mdn-document-queryselector",
+    "title": "Document: querySelector() method",
+    "provider": "MDN Web Docs (Mozilla)",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Attrib_copyright_license",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-20",
+    "notes": "Read directly. Supports first matching Element behavior and null when there is no match; original prose only."
+  },
+  {
+    "id": "mdn-dom-introduction",
+    "title": "Document Object Model (DOM)",
+    "provider": "MDN Web Docs (Mozilla)",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Attrib_copyright_license",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-20",
+    "notes": "Read directly. Supports DOM as the in-memory representation connecting a document structure to scripts; all lesson prose is original synthesis."
+  },
+  {
+    "id": "mdn-event-preventdefault",
+    "title": "Event: preventDefault() method",
+    "provider": "MDN Web Docs",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-20",
+    "notes": "Read live. Supports cancellation of a cancelable default action and distinction from propagation control."
+  },
+  {
+    "id": "mdn-eventtarget-addeventlistener",
+    "title": "EventTarget: addEventListener() method",
+    "provider": "MDN Web Docs",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-20",
+    "notes": "Read live. Supports listener registration, callback behavior, options, currentTarget/target guidance, and listener removal matching."
+  },
+  {
+    "id": "mdn-feature-detection",
+    "title": "Feature detection",
+    "provider": "MDN Web Docs",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Testing/Feature_detection",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-20",
+    "notes": "Read directly via curl. Supports feature detection as checking whether a feature is available before using it and choosing an alternative path."
   },
   {
     "id": "mdn-flexbox-basic-concepts",
@@ -676,6 +842,73 @@
     "notes": "Read directly. Supports line-box height, common line spacing use, and unitless multiplier behavior."
   },
   {
+    "id": "mdn-node-textcontent",
+    "title": "Node: textContent property",
+    "provider": "MDN Web Docs (Mozilla)",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Attrib_copyright_license",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-20",
+    "notes": "Read directly. Supports textContent representing the text of a node and descendants; original prose only."
+  },
+  {
+    "id": "mdn-promise-guide",
+    "title": "How to use promises",
+    "provider": "MDN Web Docs",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Async_JS/Promises",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-20",
+    "notes": "Read directly. Supports promise states, chaining, catch handling, async/await behavior, and serial versus independent work. Used for factual verification only."
+  },
+  {
+    "id": "mdn-promise-reference",
+    "title": "Promise",
+    "provider": "MDN Web Docs",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-20",
+    "notes": "Read as API reference. Supports Promise states, handlers, chaining, and Promise.all behavior. Used for factual verification only."
+  },
+  {
+    "id": "mdn-response-json",
+    "title": "Response: json() method",
+    "provider": "MDN Web Docs",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/Response/json",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-20",
+    "notes": "Read directly. Supports consuming a Response body and parsing JSON through a Promise."
+  },
+  {
+    "id": "mdn-response-ok",
+    "title": "Response: ok property",
+    "provider": "MDN Web Docs",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/Response/ok",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-20",
+    "notes": "Read directly via curl. Supports the 200–299 success range for Response.ok."
+  },
+  {
     "id": "mdn-responsive-web-design",
     "title": "Responsive web design",
     "provider": "Mozilla / MDN Web Docs",
@@ -734,6 +967,21 @@
     "notes": "Read directly. Supports viewport meta syntax and its relationship to mobile viewport layout. No source prose reproduced."
   },
   {
+    "id": "mdn-web-apis-index",
+    "title": "Web APIs",
+    "provider": "MDN Web Docs",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-20",
+    "notes": "Read directly via curl. Supports the description of Web APIs as interfaces available to web applications; no source prose reproduced."
+  },
+  {
     "id": "mdn-what-is-css",
     "title": "MDN Web Docs — What is CSS?",
     "provider": "Mozilla / MDN Web Docs",
@@ -762,6 +1010,19 @@
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-20",
     "notes": "Read directly. Supports JavaScript's high-level role, its relationship to HTML and CSS, browser APIs, client/server distinction, execution environments, and script loading guidance."
+  },
+  {
+    "id": "mdn-window-fetch",
+    "title": "Window: fetch() method",
+    "provider": "MDN Web Docs",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/fetch",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-20",
+    "notes": "Read directly via curl. Supports that fetch returns a Promise resolving to Response and rejects for request/network failure, not HTTP error statuses."
   },
   {
     "id": "mdn-working-with-objects",
@@ -976,6 +1237,19 @@
     "notes": "Read directly. Supports landmark use and labeling guidance. Used for accessibility context without claiming that markup alone guarantees accessibility."
   },
   {
+    "id": "wai-form-validation",
+    "title": "W3C WAI — Validating Input",
+    "provider": "W3C Web Accessibility Initiative",
+    "url": "https://www.w3.org/WAI/tutorials/forms/validation/",
+    "sourceType": "standards-body",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-20",
+    "notes": "Read directly. Supports accessible identification and description of validation errors."
+  },
+  {
     "id": "wai-labeling-controls",
     "title": "W3C WAI — Labeling Controls",
     "provider": "W3C Web Accessibility Initiative",
@@ -1013,6 +1287,32 @@
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-20",
     "notes": "Read directly. Supports accessible data-table guidance, captions, headers, and simple versus complex table associations. No source prose reproduced."
+  },
+  {
+    "id": "whatwg-fetch-standard",
+    "title": "Fetch Standard",
+    "provider": "WHATWG",
+    "url": "https://fetch.spec.whatwg.org/",
+    "sourceType": "standards-body",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-20",
+    "notes": "Read directly via curl. Primary specification defining the fetch() JavaScript API and fetch processing."
+  },
+  {
+    "id": "whatwg-form-control-infrastructure",
+    "title": "HTML Living Standard — Form control infrastructure",
+    "provider": "WHATWG",
+    "url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html",
+    "sourceType": "standards-body",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-20",
+    "notes": "Read directly. Primary source for constraints, validation APIs, submission behavior, and the standard’s security boundary."
   },
   {
     "id": "whatwg-html-elements-and-attributes",
@@ -1093,6 +1393,19 @@
     "notes": "Read directly. Primary standard for img, src, alt, width, and height semantics. Used to verify technical claims; prose is original synthesis."
   },
   {
+    "id": "whatwg-html-introduction",
+    "title": "HTML Standard — Introduction",
+    "provider": "WHATWG",
+    "url": "https://html.spec.whatwg.org/multipage/introduction.html",
+    "sourceType": "standards-body",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-20",
+    "notes": "Read directly via curl. Supports that HTML user agents, including browsers, parse markup into a DOM and have defined requirements; prose is original synthesis."
+  },
+  {
     "id": "whatwg-html-links",
     "title": "HTML Living Standard: Links",
     "provider": "WHATWG",
@@ -1169,5 +1482,18 @@
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-20",
     "notes": "Primary current standard, read directly. Supports the document element and high-level content model. Used for verification only."
+  },
+  {
+    "id": "whatwg-web-idl-standard",
+    "title": "Web IDL Standard",
+    "provider": "WHATWG",
+    "url": "https://webidl.spec.whatwg.org/",
+    "sourceType": "standards-body",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-20",
+    "notes": "Read directly via curl. Supports Web IDL as an interface definition language for interfaces used by web applications; prose is original synthesis."
   }
 ]

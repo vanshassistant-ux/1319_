@@ -1,0 +1,275 @@
+{
+  "id": "web-development:foundations:dom",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "dom",
+  "title": "The Document Object Model (DOM)",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 10,
+  "tags": [
+    "web-development",
+    "javascript",
+    "dom",
+    "browser"
+  ],
+  "in30Seconds": "The Document Object Model, usually called the DOM, is the browser's in-memory object representation of a document such as an HTML page. It organizes the page as a tree: the document contains elements, and elements can contain other elements and text. JavaScript can locate nodes in that tree, read them, change them, or create and attach new ones. The DOM is a browser-provided API, not a feature built into JavaScript itself.",
+  "whyItMatters": "The DOM is the bridge between a static HTML document and a page whose visible content can change after it loads. In coursework, it makes document structure, tree relationships, and APIs concrete. In practice, DOM work supports things such as updating a counter, showing a validation message, or rendering a list from data. Knowing what the DOM represents also helps you choose a narrowly targeted selector and avoid accidentally replacing more of a page than intended.",
+  "learningObjectives": [
+    "Define the DOM as a document representation exposed to scripts.",
+    "Identify parent, child, element, and text-node relationships in a DOM tree.",
+    "Use querySelector() to locate the first element matching a CSS selector.",
+    "Explain the difference between changing textContent and inserting HTML markup.",
+    "Apply a small, safe DOM update to a known element."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "A document becomes a tree of objects",
+      "body": "HTML is sent or loaded as text, but the browser builds a document model it can render and expose to programs. MDN describes the DOM as the representation in memory that connects a document's structure to a script or programming language. In a typical HTML document, the document is the root; html contains head and body; body may contain main, headings, paragraphs, and lists. That containment is why DOM diagrams are commonly drawn as trees. A node can have children, and a child has a parent. An element node corresponds to an element such as a p or button, while text inside an element is represented as text content. The DOM is not the original source file and is not JavaScript syntax. It is an API supplied by the browser, which JavaScript can call. This distinction matters when reading code: document is a browser object, whereas JavaScript supplies the language constructs used to work with it."
+    },
+    {
+      "heading": "Finding a specific node",
+      "body": "Most DOM work begins by getting a reference to an existing node. document.querySelector(selector) accepts a CSS selector and returns the first element in document order that matches it; if nothing matches, it returns null. For example, document.querySelector('#status') looks for the element with id status. A selector should describe the intended target as precisely and simply as the page design allows. Code must account for the possibility of null before trying to use the returned value. querySelector() is useful for one target; it does not return every matching element. Other selection APIs exist, but they are not interchangeable merely because their names look similar. The important habit is to identify the node you intend to change, check that it was found, and then make the smallest appropriate update."
+    },
+    {
+      "heading": "Reading and changing content",
+      "body": "Once code has an element reference, it can inspect or modify properties. The textContent property represents the text content of a node and its descendants. Assigning a string to element.textContent changes the element's text rather than asking the browser to interpret that string as HTML markup. That is a useful default when inserting ordinary labels, names, or counts. DOM code can also create an element with document.createElement('li'), set its textContent, and attach it with append(). Creating and attaching are separate steps: making a node alone does not put it into the visible document. These operations change the live DOM after the page has loaded; they do not rewrite the HTML file on disk. This lesson focuses on selecting and updating document nodes. User-event handlers, form processing, and data fetched from a server are separate topics that can later decide when or what to update."
+    },
+    {
+      "heading": "A constrained update is easier to reason about",
+      "body": "Consider an existing paragraph: <p id=\"status\">Waiting</p>. A script can obtain it with const status = document.querySelector('#status');. If status is not null, status.textContent = 'Ready'; changes only the paragraph's text. The selector identifies the target; the null check handles an absent target; textContent makes the intended kind of change clear. This is easier to audit than selecting a broad container and replacing all of its contents. It also separates data from markup: the string Ready is treated as text. DOM APIs can build rich interfaces, but reliable code still depends on a correct model of the tree, carefully scoped selection, and an appropriate mutation method. A developer can inspect the page before and after the statement and identify exactly which node changed. That narrow boundary makes a bug easier to diagnose and makes later maintenance less surprising. It also reduces accidental changes to headings, controls, and neighboring content whose structure is unrelated to the current task. Specific selection is therefore a design choice as well as a debugging habit for shared, long-lived pages and teams."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "Document Object Model (DOM)",
+      "definition": "A browser API that represents a document's structure in memory as objects and nodes that scripts can access."
+    },
+    {
+      "term": "node",
+      "definition": "An item in the DOM tree, such as a document, element, text item, or comment."
+    },
+    {
+      "term": "element",
+      "definition": "A DOM node representing an HTML element, with properties and possible child nodes."
+    },
+    {
+      "term": "parent",
+      "definition": "A node that directly contains another node in the DOM tree."
+    },
+    {
+      "term": "child",
+      "definition": "A node directly contained by another node."
+    },
+    {
+      "term": "CSS selector",
+      "definition": "A pattern used to match elements; DOM selection APIs can use these patterns."
+    },
+    {
+      "term": "querySelector()",
+      "definition": "A Document method that returns the first element matching a specified CSS selector, or null when none matches."
+    },
+    {
+      "term": "textContent",
+      "definition": "A node property representing the text content of that node and its descendants."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Imagine the browser turns a web page into a family tree it can keep on its desk. The page is not just a long sentence anymore: it has parts, and parts can contain smaller parts. JavaScript can ask for one part by name, read its text, or replace its text. For example, it can find the paragraph named status and change Waiting to Ready. It needs the exact label so it does not change a different part by accident.",
+    "analogy": "The DOM is like a labeled tree of storage boxes. A box can hold smaller boxes or a note. A precise label helps you open just the box you mean to change. Putting new text on the note changes what someone reads in that box.",
+    "analogyLimits": "A DOM tree is a programming representation, not a physical tree or a collection of independent boxes. Nodes have browser-defined behavior and properties, and changing the DOM may change what is displayed without changing the original HTML file."
+  },
+  "workedExample": "Start with <p id=\"status\">Waiting</p>. The selector '#status' means “the element whose id is status.” In a browser script, const status = document.querySelector('#status'); either returns that paragraph element or null. The guard if (status) checks the latter case. Then status.textContent = 'Ready'; assigns text to the selected node. The resulting visible paragraph is Ready. This update does not create a new paragraph, does not react to an event, and does not interpret Ready as HTML; it modifies the text content of the already selected element.",
+  "commonMistakes": [
+    {
+      "mistake": "Calling the DOM another name for HTML.",
+      "correction": "HTML is markup; the DOM is the browser's in-memory object model built from a document."
+    },
+    {
+      "mistake": "Assuming querySelector() always returns an element.",
+      "correction": "It returns null when no element matches, so check before using the result."
+    },
+    {
+      "mistake": "Expecting querySelector() to return every match.",
+      "correction": "It returns the first matching element; use an API designed for multiple results when that is the goal."
+    },
+    {
+      "mistake": "Treating textContent as a way to parse markup.",
+      "correction": "Use textContent for text; it does not ask the browser to interpret the assigned string as HTML."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "HTML",
+      "b": "DOM",
+      "distinction": "HTML is markup text; the DOM is the browser's object representation of a document."
+    },
+    {
+      "a": "querySelector()",
+      "b": "textContent",
+      "distinction": "querySelector() finds an element; textContent reads or changes node text."
+    }
+  ],
+  "keyTakeaway": "The DOM gives scripts a tree-shaped representation of a document. Select a specific node, handle the possibility that it is absent, and use a narrow update such as textContent when text is what you intend to change.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:dom:1",
+      "prompt": "What does the DOM provide to a browser script?",
+      "options": [
+        "A compressed copy of every web page",
+        "A server-side database schema",
+        "An in-memory representation of a document that scripts can access",
+        "A replacement for the JavaScript language"
+      ],
+      "correctIndex": 2,
+      "explanation": "The DOM represents a document in memory for scripts. It is not a database, a compressed page archive, or JavaScript itself.",
+      "difficulty": "recall",
+      "skill": "Identify the DOM's role",
+      "sourceIds": [
+        "mdn-dom-introduction"
+      ]
+    },
+    {
+      "id": "web-development:foundations:dom:2",
+      "prompt": "A page has <p id=\"status\">Waiting</p>. Which selector asks for that element?",
+      "options": [
+        ".status",
+        "p.status",
+        "status",
+        "#status"
+      ],
+      "correctIndex": 3,
+      "explanation": "#status is the CSS id selector. A leading period selects a class, and the other strings do not select the specified id.",
+      "difficulty": "understanding",
+      "skill": "Apply an id selector",
+      "sourceIds": [
+        "mdn-document-queryselector"
+      ]
+    },
+    {
+      "id": "web-development:foundations:dom:3",
+      "prompt": "What should code expect from document.querySelector('.missing') when no element matches?",
+      "options": [
+        "null",
+        "An empty array",
+        "A newly created div",
+        "The document body"
+      ],
+      "correctIndex": 0,
+      "explanation": "querySelector() returns null if no element matches. It neither creates an element nor returns a list or fallback body.",
+      "difficulty": "recall",
+      "skill": "Recognize an absent selection",
+      "sourceIds": [
+        "mdn-document-queryselector"
+      ]
+    },
+    {
+      "id": "web-development:foundations:dom:4",
+      "prompt": "Which update is the best fit for placing the ordinary label 'Ready' into a selected status paragraph?",
+      "options": [
+        "status.querySelector('Ready')",
+        "status.textContent = 'Ready'",
+        "document.createElement('Ready')",
+        "status = null"
+      ],
+      "correctIndex": 1,
+      "explanation": "Assigning textContent updates a node's text. querySelector finds elements, createElement creates an element with a tag name, and null discards the reference.",
+      "difficulty": "application",
+      "skill": "Choose a text update API",
+      "sourceIds": [
+        "mdn-node-textcontent"
+      ]
+    },
+    {
+      "id": "web-development:foundations:dom:5",
+      "prompt": "Why is an if (status) check useful after const status = document.querySelector('#status')?",
+      "options": [
+        "It guarantees the selector matches every element",
+        "It converts the DOM back into HTML source",
+        "It listens for a user event",
+        "It avoids using the result when the requested element was not found"
+      ],
+      "correctIndex": 3,
+      "explanation": "The check handles the null result possible when no element matches. It does not change the selector's matching rules, rewrite source HTML, or add event handling.",
+      "difficulty": "analysis",
+      "skill": "Reason about null-safe DOM code",
+      "sourceIds": [
+        "mdn-document-queryselector"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:dom:1",
+      "prompt": "What does the DOM provide to a browser script?",
+      "options": [
+        "A compressed copy of every web page",
+        "A server-side database schema",
+        "An in-memory representation of a document that scripts can access",
+        "A replacement for the JavaScript language"
+      ],
+      "correctIndex": 2,
+      "explanation": "The DOM represents a document in memory for scripts. It is not a database, a compressed page archive, or JavaScript itself.",
+      "difficulty": "recall",
+      "skill": "Identify the DOM's role",
+      "sourceIds": [
+        "mdn-dom-introduction"
+      ]
+    },
+    {
+      "id": "web-development:foundations:dom:2",
+      "prompt": "A page has <p id=\"status\">Waiting</p>. Which selector asks for that element?",
+      "options": [
+        ".status",
+        "p.status",
+        "status",
+        "#status"
+      ],
+      "correctIndex": 3,
+      "explanation": "#status is the CSS id selector. A leading period selects a class, and the other strings do not select the specified id.",
+      "difficulty": "understanding",
+      "skill": "Apply an id selector",
+      "sourceIds": [
+        "mdn-document-queryselector"
+      ]
+    },
+    {
+      "id": "web-development:foundations:dom:3",
+      "prompt": "What should code expect from document.querySelector('.missing') when no element matches?",
+      "options": [
+        "null",
+        "An empty array",
+        "A newly created div",
+        "The document body"
+      ],
+      "correctIndex": 0,
+      "explanation": "querySelector() returns null if no element matches. It neither creates an element nor returns a list or fallback body.",
+      "difficulty": "recall",
+      "skill": "Recognize an absent selection",
+      "sourceIds": [
+        "mdn-document-queryselector"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:objects",
+    "web-development:foundations:events",
+    "web-development:foundations:forms-2",
+    "web-development:foundations:accessibility"
+  ],
+  "sources": [
+    "mdn-dom-introduction",
+    "mdn-document-queryselector",
+    "mdn-node-textcontent",
+    "mdn-document-createelement"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only documentation sources; no source prose adapted.",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original explanation and examples synthesized from current MDN API documentation."
+  },
+  "contentHash": "d138f32999b6b7a5",
+  "status": "source-verified",
+  "public": false
+}

@@ -1,0 +1,23 @@
+{
+  "topicId": "web-development:foundations:fetch-api-basics",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {"core": ["fetch()", "Response", "response.ok", "response.json()", "network-error boundary"], "supporting": ["Promise", "HTTP status"], "outOfScope": ["authentication", "credentials", "CORS configuration", "streaming", "retries"]},
+  "claims": [
+    {"claim":"fetch() returns a Promise that resolves to a Response for a completed HTTP response.","claimType":"TECHNICAL","sourceIds":["mdn-window-fetch"],"status":"supported"},
+    {"claim":"A fetch promise does not reject merely because an HTTP response has a 404 or 500 status.","claimType":"TECHNICAL","sourceIds":["mdn-window-fetch"],"status":"supported"},
+    {"claim":"Response.ok is true for statuses in the inclusive 200–299 range.","claimType":"TECHNICAL","sourceIds":["mdn-response-ok"],"status":"supported"},
+    {"claim":"Response.json() reads a response body and returns a Promise resolving to JavaScript data parsed as JSON.","claimType":"TECHNICAL","sourceIds":["mdn-response-json"],"status":"supported"},
+    {"claim":"The Fetch Standard defines the fetch() JavaScript API and fetch processing.","claimType":"TECHNICAL","sourceIds":["whatwg-fetch-standard"],"status":"supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft contained no technical Fetch API claims suitable for reuse."],
+  "correctionsNeeded": ["Replaced generic boilerplate with a bounded browser Fetch API explanation and explicit HTTP-error handling."],
+  "rightsIssues": ["All sources are reference-only documentation; the lesson uses original synthesis and no reproduced source prose."],
+  "sourceRecords": [
+    {"id":"mdn-window-fetch","title":"Window: fetch() method","provider":"MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Web/API/Window/fetch","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-20","notes":"Read directly via curl. Supports that fetch returns a Promise resolving to Response and rejects for request/network failure, not HTTP error statuses."},
+    {"id":"mdn-response-ok","title":"Response: ok property","provider":"MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Web/API/Response/ok","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-20","notes":"Read directly via curl. Supports the 200–299 success range for Response.ok."},
+    {"id":"mdn-response-json","title":"Response: json() method","provider":"MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Web/API/Response/json","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-20","notes":"Read directly. Supports consuming a Response body and parsing JSON through a Promise."},
+    {"id":"whatwg-fetch-standard","title":"Fetch Standard","provider":"WHATWG","url":"https://fetch.spec.whatwg.org/","sourceType":"standards-body","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-20","notes":"Read directly via curl. Primary specification defining the fetch() JavaScript API and fetch processing."}
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "id": "web-development:foundations:fetch-api-basics",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "fetch-api-basics",
+  "title": "Fetch API Basics",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 10,
+  "tags": [
+    "web-development",
+    "javascript",
+    "fetch",
+    "http",
+    "api"
+  ],
+  "in30Seconds": "The browser Fetch API lets JavaScript request a resource over the network. Calling fetch(url) returns a Promise, so the response arrives later rather than as an immediate value. When that Promise resolves, inspect the Response before reading its body: response.ok tells you whether its status is in the 200–299 range. Then a method such as response.json() can read and parse JSON data. A 404 response is still a response, so it needs an explicit check.",
+  "whyItMatters": "Fetch connects a page to data and services beyond its original HTML: course projects may load a public data file, and production interfaces may request an application’s own endpoint. The important reasoning skill is separating transport from success. A request can reach a server and still receive a 404 or 500 response. Checking the response deliberately gives a user-facing program a clear place to choose a message or fallback. This lesson keeps the boundary narrow: requesting public data, examining a response, parsing JSON, and reporting ordinary failures without handling credentials or private information.",
+  "learningObjectives": [
+    "Define fetch() as a Promise-based browser request API.",
+    "Distinguish a network/request rejection from an HTTP error response.",
+    "Use Response.ok to evaluate a basic successful HTTP response.",
+    "Explain why response.json() is asynchronous.",
+    "Apply a check-before-parse pattern to a public JSON request."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "A request begins an asynchronous operation",
+      "body": "The Fetch API is a browser interface for requesting resources. The global fetch() function accepts a resource location and optional request settings, then returns a Promise. A Promise represents a result that is not available at the moment the call is made. This matters because a browser must allow time for a request to travel, a server to respond, and response headers to arrive. Code therefore does not write const data = fetch(url) and expect data immediately. Instead, it uses await inside an async function or attaches Promise handlers. When fetch resolves, its value is a Response object. That object describes the HTTP response and provides methods for reading its body. Fetch is an API supplied by the browser environment; JavaScript supplies the async and await language features used to organize the waiting. This lesson uses a public relative path such as /data/message.json as a safe example. A real application must choose resources it is authorized to request and should not put secrets into client-side code."
+    },
+    {
+      "heading": "A response is not automatically a successful result",
+      "body": "A frequent mistake is to treat a resolved fetch Promise as proof that an application got useful data. MDN documents an important boundary: fetch rejects for failures such as a malformed URL or a network failure, but it does not reject merely because the server answers with an HTTP error status such as 404 or 500. In both the successful and error-status cases, the browser has received an HTTP response, so fetch can resolve to a Response. The Response has a status number and an ok Boolean. The ok property is true when the status is from 200 through 299; otherwise it is false. A simple program can check if (!response.ok) and throw its own Error before parsing. That converts an unacceptable HTTP result into the program’s chosen error path. It does not diagnose every cause of failure, and it does not make a retry, authentication, or security policy. It simply preserves the distinction between ‘a response arrived’ and ‘this code accepts that response as successful.’"
+    },
+    {
+      "heading": "Reading JSON is a second asynchronous step",
+      "body": "A Response body is not already a JavaScript object. If an endpoint sends JSON, response.json() reads the body and parses it as JSON, returning another Promise. That is why the common await sequence has two awaits: first await fetch(url), then await response.json(). Checking ok before the second step avoids presenting an error page as though it were expected data. For a small public response shaped as {\"message\": \"Hello\"}, the parsed value can be assigned to data and data.message can be displayed as text. The data shape still matters: a syntactically valid JSON value might be an array, a number, or an object without a message field. Robust applications validate the shape needed by their interface. Parsing also can fail if the body is not valid JSON, so a surrounding try/catch is appropriate for a small user-facing example. Keep user text separate from HTML markup when rendering it; a DOM topic covers safe text updates. Fetch/API basics ends at a clear boundary: request, assess response, parse expected public data, and communicate failure."
+    },
+    {
+      "heading": "A small pattern with visible decisions",
+      "body": "Consider an async loadMessage function. It requests /data/message.json, checks response.ok, parses JSON, and assigns data.message to an already selected element’s textContent. Each line has a different role. The fetch call starts the request. The ok condition applies the application’s acceptance rule. json() consumes and parses the body. The final textContent assignment presents a known field as text. The catch block covers a rejected request, a thrown HTTP-status error, or a JSON parsing error and supplies a general message. This pattern is intentionally modest. It does not send a password, add an authorization header, assume every endpoint returns JSON, or claim that fetch alone solves cross-origin access. Those are separate design and security concerns. The value of the pattern is that a reader can trace each outcome: acceptable response and expected data display a message; an unacceptable response or parsing/request problem produces a controlled status message."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "Fetch API",
+      "definition": "Browser interfaces for making network requests and working with their responses."
+    },
+    {
+      "term": "fetch()",
+      "definition": "A function that starts a fetch request and returns a Promise for a Response."
+    },
+    {
+      "term": "Promise",
+      "definition": "An object representing the eventual completion or failure of an asynchronous operation."
+    },
+    {
+      "term": "Response",
+      "definition": "An object representing the HTTP response to a fetch request, including status and body-reading methods."
+    },
+    {
+      "term": "HTTP status",
+      "definition": "A numeric code in an HTTP response that communicates the result category."
+    },
+    {
+      "term": "response.ok",
+      "definition": "A Response Boolean that is true when its status is from 200 through 299."
+    },
+    {
+      "term": "JSON",
+      "definition": "A text data format commonly used to represent structured values."
+    },
+    {
+      "term": "response.json()",
+      "definition": "A Response method that reads its body and returns a Promise for JSON-parsed data."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Imagine asking a library desk to bring you a book. You get a claim ticket first, not the book right away. Fetch gives JavaScript a claim ticket called a Promise. Later, the desk may hand back a book, or it may hand back a note saying the book was not found. Both are replies from the desk. That is why code must look at the reply before treating it as the book it wanted. If the reply is okay, json() is like opening the book and reading its organized information.",
+    "analogy": "Fetch is like ordering a labeled package: the Promise is the tracking slip, the Response is the package that arrives, response.ok is the inspection label, and json() is opening a package expected to contain structured information.",
+    "analogyLimits": "Network requests do not follow a single delivery route, and an HTTP response is not a physical package. A status code describes a protocol result, while parsing JSON is a software operation that can fail independently."
+  },
+  "workedExample": "Assume a page already has <p id=\"status\">Loading…</p> and a public file at /data/message.json containing {\"message\":\"Welcome\"}. An async function gets the status element, then runs const response = await fetch('/data/message.json');. If !response.ok, it throws new Error('Request failed');. Otherwise it runs const data = await response.json(); and sets status.textContent = data.message. If the file is missing and the server returns 404, fetch can still resolve, but response.ok is false, so the code follows the catch path and can show ‘Could not load message.’ The same catch also handles a rejected request or invalid JSON. This example deliberately handles no credentials, headers, or private data.",
+  "commonMistakes": [
+    {
+      "mistake": "Assuming fetch rejects for every 404 or 500 response.",
+      "correction": "Inspect response.ok or response.status because an HTTP error response can still resolve fetch."
+    },
+    {
+      "mistake": "Using a Response as if it were parsed data.",
+      "correction": "Read the body with an appropriate asynchronous method such as response.json()."
+    },
+    {
+      "mistake": "Parsing before deciding whether the HTTP response is acceptable.",
+      "correction": "Apply the application’s response check before reading expected data."
+    },
+    {
+      "mistake": "Treating arbitrary JSON as the exact object the interface expects.",
+      "correction": "Check the fields and shape required by the program before using them."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "fetch Promise rejection",
+      "b": "HTTP error response",
+      "distinction": "A rejection reflects request/network failure; an HTTP error response can resolve to Response and needs an explicit status check."
+    },
+    {
+      "a": "response.ok",
+      "b": "response.json()",
+      "distinction": "ok evaluates a response’s status range; json() consumes and parses its body."
+    }
+  ],
+  "keyTakeaway": "fetch() starts an asynchronous request and yields a Response, not immediately usable JSON. Check response.ok, then parse the body you expect, and handle request, status, and parsing failures as separate possibilities.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:fetch-api-basics:1",
+      "prompt": "What does fetch('/data/message.json') return immediately?",
+      "options": [
+        "A Promise",
+        "A parsed JavaScript object",
+        "A completed Response body",
+        "An HTTP status number"
+      ],
+      "correctIndex": 0,
+      "explanation": "fetch() returns a Promise. A Response and any parsed data are available later through asynchronous handling.",
+      "difficulty": "recall",
+      "skill": "Identify fetch() output",
+      "sourceIds": [
+        "mdn-window-fetch"
+      ]
+    },
+    {
+      "id": "web-development:foundations:fetch-api-basics:2",
+      "prompt": "Why should code check response.ok after awaiting fetch()?",
+      "options": [
+        "It turns JSON into HTML",
+        "It detects whether the status is in the 200–299 range",
+        "It guarantees the network is offline",
+        "It creates a new request"
+      ],
+      "correctIndex": 1,
+      "explanation": "response.ok is true for 200–299 statuses. It neither parses JSON nor creates a request.",
+      "difficulty": "understanding",
+      "skill": "Explain Response.ok",
+      "sourceIds": [
+        "mdn-response-ok"
+      ]
+    },
+    {
+      "id": "web-development:foundations:fetch-api-basics:3",
+      "prompt": "A server returns HTTP 404. Which outcome is possible for fetch()?",
+      "options": [
+        "It must reject before producing a Response",
+        "It must parse JSON automatically",
+        "It can resolve to a Response whose ok is false",
+        "It changes the status to 200"
+      ],
+      "correctIndex": 2,
+      "explanation": "HTTP error statuses can still produce a resolved Response; ok is false outside the 200–299 range.",
+      "difficulty": "application",
+      "skill": "Distinguish HTTP status from rejection",
+      "sourceIds": [
+        "mdn-window-fetch",
+        "mdn-response-ok"
+      ]
+    },
+    {
+      "id": "web-development:foundations:fetch-api-basics:4",
+      "prompt": "After an acceptable JSON response, which statement obtains parsed data?",
+      "options": [
+        "const data = response.ok;",
+        "const data = fetch(response);",
+        "const data = response.status;",
+        "const data = await response.json();"
+      ],
+      "correctIndex": 3,
+      "explanation": "response.json() reads and parses the body asynchronously. ok and status are metadata, while fetch starts a request.",
+      "difficulty": "application",
+      "skill": "Select a JSON parsing step",
+      "sourceIds": [
+        "mdn-response-json"
+      ]
+    },
+    {
+      "id": "web-development:foundations:fetch-api-basics:5",
+      "prompt": "Which order best handles a public JSON request?",
+      "options": [
+        "Parse JSON, then start fetch, then check status",
+        "Await fetch, check response.ok, then await response.json()",
+        "Check response.ok before fetch, then parse HTML",
+        "Await response.json() without obtaining a Response"
+      ],
+      "correctIndex": 1,
+      "explanation": "First obtain the Response, assess whether the application accepts its status, and then parse the expected body. The other sequences use values before they exist or choose the wrong operation.",
+      "difficulty": "analysis",
+      "skill": "Order a basic Fetch API flow",
+      "sourceIds": [
+        "mdn-window-fetch",
+        "mdn-response-ok",
+        "mdn-response-json"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:fetch-api-basics:1",
+      "prompt": "What does fetch('/data/message.json') return immediately?",
+      "options": [
+        "A Promise",
+        "A parsed JavaScript object",
+        "A completed Response body",
+        "An HTTP status number"
+      ],
+      "correctIndex": 0,
+      "explanation": "fetch() returns a Promise. A Response and any parsed data are available later through asynchronous handling.",
+      "difficulty": "recall",
+      "skill": "Identify fetch() output",
+      "sourceIds": [
+        "mdn-window-fetch"
+      ]
+    },
+    {
+      "id": "web-development:foundations:fetch-api-basics:2",
+      "prompt": "Why should code check response.ok after awaiting fetch()?",
+      "options": [
+        "It turns JSON into HTML",
+        "It detects whether the status is in the 200–299 range",
+        "It guarantees the network is offline",
+        "It creates a new request"
+      ],
+      "correctIndex": 1,
+      "explanation": "response.ok is true for 200–299 statuses. It neither parses JSON nor creates a request.",
+      "difficulty": "understanding",
+      "skill": "Explain Response.ok",
+      "sourceIds": [
+        "mdn-response-ok"
+      ]
+    },
+    {
+      "id": "web-development:foundations:fetch-api-basics:3",
+      "prompt": "A server returns HTTP 404. Which outcome is possible for fetch()?",
+      "options": [
+        "It must reject before producing a Response",
+        "It must parse JSON automatically",
+        "It can resolve to a Response whose ok is false",
+        "It changes the status to 200"
+      ],
+      "correctIndex": 2,
+      "explanation": "HTTP error statuses can still produce a resolved Response; ok is false outside the 200–299 range.",
+      "difficulty": "application",
+      "skill": "Distinguish HTTP status from rejection",
+      "sourceIds": [
+        "mdn-window-fetch",
+        "mdn-response-ok"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:async-programming",
+    "web-development:foundations:dom",
+    "web-development:foundations:forms-2",
+    "web-development:foundations:web-platform"
+  ],
+  "sources": [
+    "mdn-window-fetch",
+    "mdn-response-ok",
+    "mdn-response-json",
+    "whatwg-fetch-standard"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only documentation sources; no source prose adapted.",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original instructional explanation and safe relative-path example synthesized from current MDN documentation and the Fetch Standard."
+  },
+  "contentHash": "17d26c976ec527ea",
+  "status": "source-verified",
+  "public": false
+}

@@ -1,0 +1,17 @@
+{
+  "topicId":"web-development:foundations:events", "subjectId":"web-development", "researchedAt":"2026-08-20",
+  "scope":{"core":["event targets","addEventListener","event object","basic propagation vocabulary","cancelable default actions"],"supporting":["currentTarget","listener removal"],"outOfScope":["DOM selection","form validation","event delegation implementation","security controls","asynchronous events"]},
+  "claims":[
+    {"claim":"Objects implementing EventTarget can register listeners with addEventListener to observe events.","claimType":"TECHNICAL","sourceIds":["dom-standard-events","mdn-eventtarget-addeventlistener"],"status":"supported"},
+    {"claim":"A listener callback receives an event object and event type is used to match a listener.","claimType":"TECHNICAL","sourceIds":["dom-standard-events","mdn-eventtarget-addeventlistener"],"status":"supported"},
+    {"claim":"target identifies the dispatch target while currentTarget is the listener's current target.","claimType":"TECHNICAL","sourceIds":["dom-standard-events","mdn-eventtarget-addeventlistener"],"status":"supported"},
+    {"claim":"preventDefault prevents a default action only for a cancelable event and does not itself stop propagation.","claimType":"TECHNICAL","sourceIds":["dom-standard-events","mdn-event-preventdefault"],"status":"supported"},
+    {"claim":"removeEventListener requires the matching event type, listener callback, and relevant capture setting.","claimType":"TECHNICAL","sourceIds":["mdn-eventtarget-addeventlistener","dom-standard-events"],"status":"supported"}
+  ],
+  "conflictingEvidence":[], "unsupportedExistingClaims":["The generated draft made no usable technical claims."], "correctionsNeeded":["Replaced generic boilerplate with source-verified browser event behavior and a tested EventTarget example."], "rightsIssues":[],
+  "sourceRecords":[
+    {"id":"mdn-eventtarget-addeventlistener","title":"EventTarget: addEventListener() method","provider":"MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-20","notes":"Read live. Supports listener registration, callback behavior, options, currentTarget/target guidance, and listener removal matching."},
+    {"id":"mdn-event-preventdefault","title":"Event: preventDefault() method","provider":"MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-20","notes":"Read live. Supports cancellation of a cancelable default action and distinction from propagation control."},
+    {"id":"dom-standard-events","title":"DOM Standard: Events","provider":"WHATWG","url":"https://dom.spec.whatwg.org/#events","sourceType":"standards-body","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-20","notes":"Read live. Supports EventTarget, event dispatch, event listeners, event target/currentTarget, cancelability, default prevention, and propagation concepts."}
+  ]
+}

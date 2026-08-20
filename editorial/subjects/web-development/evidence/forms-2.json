@@ -1,0 +1,17 @@
+{
+  "topicId":"web-development:foundations:forms-2", "subjectId":"web-development", "researchedAt":"2026-08-20",
+  "scope":{"core":["HTML constraint validation","accessible error feedback","programmatic submission","server revalidation"],"supporting":["required, type, minlength, pattern","ValidityState"],"outOfScope":["backend framework implementation","authentication design","exploit techniques"]},
+  "claims":[
+    {"claim":"HTML defines constraint validation for applicable form controls and exposes validity through APIs.","claimType":"EVERGREEN","sourceIds":["whatwg-form-control-infrastructure"],"status":"supported"},
+    {"claim":"minlength does not itself make a control required; an optional field may be omitted.","claimType":"EVERGREEN","sourceIds":["whatwg-form-control-infrastructure"],"status":"supported"},
+    {"claim":"checkValidity() evaluates constraints, while reportValidity() also asks the browser to report invalid controls.","claimType":"EVERGREEN","sourceIds":["whatwg-form-control-infrastructure","mdn-client-side-form-validation"],"status":"supported"},
+    {"claim":"Client-side validation improves user feedback but must not be trusted instead of server-side validation.","claimType":"EVERGREEN","sourceIds":["whatwg-form-control-infrastructure","mdn-client-side-form-validation"],"status":"supported"},
+    {"claim":"Accessible error feedback should identify the error in text and identify the affected control; color alone is insufficient.","claimType":"EVERGREEN","sourceIds":["wai-form-validation"],"status":"supported"},
+    {"claim":"Calling form.submit() bypasses constraint validation and does not fire the submit event.","claimType":"EVERGREEN","sourceIds":["whatwg-form-control-infrastructure","mdn-client-side-form-validation"],"status":"supported"}
+  ],"conflictingEvidence":[],"unsupportedExistingClaims":[],"correctionsNeeded":[],"rightsIssues":[],
+  "sourceRecords":[
+    {"id":"whatwg-form-control-infrastructure","title":"HTML Living Standard — Form control infrastructure","provider":"WHATWG","url":"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html","sourceType":"standards-body","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Primary source for constraints, validation APIs, submission behavior, and the standard’s security boundary."},
+    {"id":"mdn-client-side-form-validation","title":"MDN Web Docs — Client-side form validation","provider":"Mozilla / MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"CC BY-SA 2.5","licenseUrl":"https://creativecommons.org/licenses/by-sa/2.5/","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Practical corroboration for constraints, validation methods, and the need for server validation."},
+    {"id":"wai-form-validation","title":"W3C WAI — Validating Input","provider":"W3C Web Accessibility Initiative","url":"https://www.w3.org/WAI/tutorials/forms/validation/","sourceType":"standards-body","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Supports accessible identification and description of validation errors."}
+  ]
+}

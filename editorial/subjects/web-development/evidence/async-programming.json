@@ -1,0 +1,30 @@
+{
+  "topicId": "web-development:foundations:async-programming",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {
+    "core": ["Promise states and handlers", "async functions", "await", "error propagation and handling"],
+    "supporting": ["sequential versus independent asynchronous work", "Promise.all"],
+    "outOfScope": ["Fetch and HTTP details", "network APIs", "callbacks in depth", "event-loop internals"]
+  },
+  "claims": [
+    {"claim":"A Promise represents the eventual completion or failure of an asynchronous operation and its resulting value.","claimType":"TECHNICAL","sourceIds":["mdn-promise-reference"],"status":"supported"},
+    {"claim":"A promise begins pending and can become fulfilled or rejected; a settled promise is no longer pending.","claimType":"TECHNICAL","sourceIds":["mdn-promise-guide","ecma262-promise-objects"],"status":"supported"},
+    {"claim":"then() registers fulfillment handling, catch() registers rejection handling, and then() returns a new promise for chaining.","claimType":"TECHNICAL","sourceIds":["mdn-promise-guide","mdn-promise-reference"],"status":"supported"},
+    {"claim":"An async function call always returns a new Promise; a returned value fulfills that promise and an uncaught thrown error rejects it.","claimType":"TECHNICAL","sourceIds":["mdn-async-function","ecma262-async-function-objects"],"status":"supported"},
+    {"claim":"await pauses evaluation of its surrounding async function until its operand settles, producing the fulfillment value or throwing the rejection reason.","claimType":"TECHNICAL","sourceIds":["mdn-await","mdn-promise-guide"],"status":"supported"},
+    {"claim":"Promise.all fulfills with results in input order when all input promises fulfill, and rejects if an input promise rejects.","claimType":"TECHNICAL","sourceIds":["mdn-promise-reference"],"status":"supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft gave no technical explanation, usable code, or sources."],
+  "correctionsNeeded": ["Replaced generic boilerplate with verified promise and async/await semantics; deliberately excluded fetch/API mechanics."],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {"id":"mdn-promise-guide","title":"How to use promises","provider":"MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Async_JS/Promises","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-20","notes":"Read directly. Supports promise states, chaining, catch handling, async/await behavior, and serial versus independent work. Used for factual verification only."},
+    {"id":"mdn-promise-reference","title":"Promise","provider":"MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-20","notes":"Read as API reference. Supports Promise states, handlers, chaining, and Promise.all behavior. Used for factual verification only."},
+    {"id":"mdn-async-function","title":"async function","provider":"MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-20","notes":"Read as current JavaScript reference. Supports async-function return and rejection behavior."},
+    {"id":"mdn-await","title":"await","provider":"MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-20","notes":"Read as current JavaScript reference. Supports await suspension and fulfilled/rejected outcomes."},
+    {"id":"ecma262-promise-objects","title":"ECMAScript Language Specification — Promise Objects","provider":"Ecma International / TC39","url":"https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise-objects","sourceType":"standards-body","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-20","notes":"Read directly as primary specification corroborating Promise object semantics."},
+    {"id":"ecma262-async-function-objects","title":"ECMAScript Language Specification — Async Function Objects","provider":"Ecma International / TC39","url":"https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-async-function-objects","sourceType":"standards-body","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-20","notes":"Read directly as primary specification corroborating async function behavior."}
+  ]
+}

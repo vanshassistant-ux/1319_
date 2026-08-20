@@ -1,0 +1,274 @@
+{
+  "id": "web-development:foundations:events",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "events",
+  "title": "Events",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "javascript",
+    "browser-events",
+    "web-development"
+  ],
+  "in30Seconds": "A browser event is an object that signals an occurrence, such as a user activating a button or a page finishing a load. Code can register an event listener with `addEventListener()` so a callback runs when a matching event is dispatched. The event object tells the listener about that occurrence. Some cancelable events also have a default browser action that a listener can prevent deliberately.",
+  "whyItMatters": "Events connect JavaScript to what happens in a page. They let an interface respond to an activation, a keystroke, a loaded resource, or another platform occurrence without repeatedly checking every element. Understanding listener registration, the event object, and default actions helps students trace behavior responsibly. It also creates a base for later topics on forms, the DOM, accessibility, asynchronous work, and event delegation without treating those larger subjects as interchangeable.",
+  "learningObjectives": [
+    "Define an event, event target, event listener, and callback.",
+    "Explain how `addEventListener()` associates a callback with an event type.",
+    "Distinguish `event.target` from `event.currentTarget` in a listener.",
+    "Predict the effect of `preventDefault()` on a cancelable default action.",
+    "Apply a listener to a small event-driven scenario."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Events and event targets",
+      "body": "The DOM Standard describes events as objects dispatched to objects to signal an occurrence, including user interaction and network activity. An object that implements the `EventTarget` interface can have event listeners. In ordinary page code, elements such as a button are familiar event targets, but the idea is broader: `window`, `document`, and some other web-platform objects can also receive events. The event has a type, such as `click` or `load`. A listener is registered for a particular type, so a listener for `click` is not a general instruction to run on every possible occurrence.\n\nThe usual registration API is `target.addEventListener(type, callback, options)`. The `type` is a string naming the event type, and the callback is code the platform calls when a matching event reaches that listener. Registering the listener does not run the callback immediately. The callback runs later when the relevant event is dispatched. This separation is the core event-driven pattern: first describe what should happen, then let the platform invoke it when the occurrence happens. This lesson focuses on that basic pattern, rather than on selecting DOM elements, form validation, or security handling."
+    },
+    {
+      "heading": "The event object and listener context",
+      "body": "When the listener callback is invoked, it normally receives an event object. The object carries information about the particular event. Its `type` identifies the event type. Its `target` is the object to which the event was dispatched. Its `currentTarget` is the object whose listener is currently being invoked. These can be the same in a simple direct listener. They can differ when an event travels through a document tree and a listener is attached on an ancestor: the descendant that originated the event can be `target`, while the ancestor handling the listener can be `currentTarget`.\n\nThe DOM event model includes capture, target, and bubble phases. Many beginner listeners use the default option, which does not request capture. For common bubbling events, an event can then be observed by a listener on an ancestor after it is handled at its target. That fact supports a later pattern called event delegation, but delegation is not required to understand a single listener. More importantly, `target` should not be treated as a synonym for the element where every listener was registered. Read the event object and the registration site together. A listener can also be removed with `removeEventListener()` when supplied the matching type, callback, and relevant capture setting; this helps avoid behavior that should no longer be active."
+    },
+    {
+      "heading": "Default actions and cancellation",
+      "body": "Some events are cancelable and have a default action supplied by the user agent. For example, following a link after an activation is a familiar default action. Calling `event.preventDefault()` tells the user agent not to perform that default action for a cancelable event. It does not stop other listeners from running, and it does not automatically stop the event from moving through the event path. Those are separate concerns: `stopPropagation()` concerns propagation, while `preventDefault()` concerns a default action. A call to `preventDefault()` on a non-cancelable event has no effect on a default action.\n\nCancel a default action only when code provides an intentional alternative. For instance, a client-side interaction might manage an action itself, but an ordinary link should not be blocked simply because a listener exists. This is especially relevant for keyboard and assistive-technology use: behavior should preserve a meaningful, operable control rather than replacing it with an unannounced side effect. `addEventListener()` is generally preferable to assigning an `on...` property when code needs multiple independently registered listeners, because the API maintains an event-listener list. A listener callback should do focused work, use the event data it needs, and avoid assuming that every event shares the same cancelability, target, or propagation behavior."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "event",
+      "definition": "An object dispatched by the platform to signal an occurrence."
+    },
+    {
+      "term": "event target",
+      "definition": "An object that can have event listeners and can be involved in event dispatch."
+    },
+    {
+      "term": "event listener",
+      "definition": "A registered callback that observes a specified event type on an event target."
+    },
+    {
+      "term": "callback",
+      "definition": "A function supplied to an API so that the API can invoke it later."
+    },
+    {
+      "term": "event type",
+      "definition": "The string that identifies a category of event, such as `click` or `load`."
+    },
+    {
+      "term": "default action",
+      "definition": "Behavior the user agent performs for a cancelable event unless it is prevented."
+    },
+    {
+      "term": "cancelable",
+      "definition": "Describes an event for which `preventDefault()` can signal that its default action should not occur."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "An event is like a small notice that says something happened. A button can send a notice when someone activates it. A listener is the instruction you leave with the button: when that kind of notice arrives, run this little job. The listener gets an event object, like the notice card itself, so it can inspect what happened. Some notices would normally trigger a built-in browser action. If the event is cancelable, code can say `preventDefault()` to stop that built-in action—but only when it has a clear replacement.",
+    "analogy": "Imagine a school office has notice boards for different announcements. You pin a specific instruction under the ‘fire drill’ board, not under every board. When a drill notice arrives, the office follows that instruction. The notice says what kind of announcement it is and where it began. Some announcements have an automatic next step unless the office explicitly cancels it.",
+    "analogyLimits": "Browser events are software objects, not paper notices, and dispatch can follow capture and bubble rules through a document tree. A browser default action also has precise platform rules; it is not an office worker freely choosing what to do."
+  },
+  "workedExample": "This listener has one job: record a cancelable `save` event and prevent its default action. `const target = new EventTarget(); const log = []; target.addEventListener(\"save\", event => { log.push(event.type); event.preventDefault(); }); const allowed = target.dispatchEvent(new Event(\"save\", { cancelable: true }));` When this exact code was run with Bun, `log` became `[\"save\"]` and `allowed` was `false`. The callback ran because its registered type matched the dispatched event. The result was false because the event was cancelable and the listener called `preventDefault()`. In a page, the target might instead be a button and the event might be a browser-dispatched `click`; this example isolates the event mechanics without needing a page or a form.",
+  "commonMistakes": [
+    {
+      "mistake": "Expecting `addEventListener()` to execute the callback while registering it.",
+      "correction": "Registration records the callback; invocation occurs when a matching event is dispatched."
+    },
+    {
+      "mistake": "Calling `preventDefault()` to stop all other listeners.",
+      "correction": "It addresses a cancelable default action; it does not by itself stop propagation or other listeners."
+    },
+    {
+      "mistake": "Assuming `event.target` always names the object whose listener is running.",
+      "correction": "Compare `target` with `currentTarget`, especially when an ancestor has the listener."
+    },
+    {
+      "mistake": "Blocking a native action without offering an intentional replacement.",
+      "correction": "Prevent a default action only when the resulting interaction remains purposeful and operable."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "event.target",
+      "b": "event.currentTarget",
+      "distinction": "`target` is the object to which the event was dispatched; `currentTarget` is the object whose listener is currently being invoked."
+    },
+    {
+      "a": "preventDefault()",
+      "b": "stopPropagation()",
+      "distinction": "The first prevents a cancelable default action; the second addresses event propagation and does not itself cancel a default action."
+    }
+  ],
+  "keyTakeaway": "Use `addEventListener()` to register focused callbacks for named event types. Inspect the event object, and prevent a cancelable default action only when the interaction has a deliberate alternative.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:events:1",
+      "prompt": "What does `addEventListener(\"click\", handler)` primarily do?",
+      "options": [
+        "Runs `handler` immediately",
+        "Registers `handler` to observe matching click events",
+        "Changes every event into a click",
+        "Cancels the browser's click behavior"
+      ],
+      "correctIndex": 1,
+      "explanation": "It registers a listener for the named type; the callback is invoked later if a matching event is dispatched. Registration neither runs the callback immediately nor automatically cancels a default action.",
+      "difficulty": "recall",
+      "skill": "Identify listener registration",
+      "sourceIds": [
+        "mdn-eventtarget-addeventlistener",
+        "dom-standard-events"
+      ]
+    },
+    {
+      "id": "web-development:foundations:events:2",
+      "prompt": "A listener is attached to a parent element, but a child element is the event's dispatch target. Which property identifies the parent while that parent's listener runs?",
+      "options": [
+        "`event.currentTarget`",
+        "`event.target`",
+        "`event.defaultPrevented`",
+        "`event.type`"
+      ],
+      "correctIndex": 0,
+      "explanation": "During that listener invocation, `currentTarget` is the parent with the listener. `target` identifies the object to which the event was dispatched, here the child.",
+      "difficulty": "application",
+      "skill": "Distinguish target and current target",
+      "sourceIds": [
+        "mdn-eventtarget-addeventlistener",
+        "dom-standard-events"
+      ]
+    },
+    {
+      "id": "web-development:foundations:events:3",
+      "prompt": "What is the direct purpose of `event.preventDefault()` on a cancelable event?",
+      "options": [
+        "Remove every listener",
+        "Rename the event type",
+        "Tell the user agent not to perform the event's default action",
+        "Force the event to bubble"
+      ],
+      "correctIndex": 2,
+      "explanation": "For a cancelable event, it prevents the default action. It does not remove listeners, rename an event, or itself control propagation.",
+      "difficulty": "understanding",
+      "skill": "Explain default-action cancellation",
+      "sourceIds": [
+        "mdn-event-preventdefault",
+        "dom-standard-events"
+      ]
+    },
+    {
+      "id": "web-development:foundations:events:4",
+      "prompt": "A script calls `preventDefault()` inside a listener for an event whose `cancelable` property is false. What should the programmer expect?",
+      "options": [
+        "The event gains a default action",
+        "The listener is removed",
+        "All propagation stops",
+        "No default action is prevented by that call"
+      ],
+      "correctIndex": 3,
+      "explanation": "A non-cancelable event cannot have its default action prevented through `preventDefault()`. The call does not remove the listener or stop propagation.",
+      "difficulty": "analysis",
+      "skill": "Reason about cancelability",
+      "sourceIds": [
+        "mdn-event-preventdefault",
+        "dom-standard-events"
+      ]
+    },
+    {
+      "id": "web-development:foundations:events:5",
+      "prompt": "Which design is the clearest use of an event listener?",
+      "options": [
+        "Register a callback that updates a status message when a matching event occurs",
+        "Put a long-running loop in the listener to check every possible event",
+        "Call `preventDefault()` for every event as a precaution",
+        "Treat every event target as the same element"
+      ],
+      "correctIndex": 0,
+      "explanation": "A focused callback for a matching occurrence is the event-driven pattern. The other choices either block behavior indiscriminately or make unsupported assumptions.",
+      "difficulty": "application",
+      "skill": "Choose appropriate event-driven behavior",
+      "sourceIds": [
+        "mdn-eventtarget-addeventlistener",
+        "dom-standard-events"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:events:1",
+      "prompt": "What does `addEventListener(\"click\", handler)` primarily do?",
+      "options": [
+        "Runs `handler` immediately",
+        "Registers `handler` to observe matching click events",
+        "Changes every event into a click",
+        "Cancels the browser's click behavior"
+      ],
+      "correctIndex": 1,
+      "explanation": "It registers a listener for the named type; the callback is invoked later if a matching event is dispatched. Registration neither runs the callback immediately nor automatically cancels a default action.",
+      "difficulty": "recall",
+      "skill": "Identify listener registration",
+      "sourceIds": [
+        "mdn-eventtarget-addeventlistener",
+        "dom-standard-events"
+      ]
+    },
+    {
+      "id": "web-development:foundations:events:2",
+      "prompt": "A listener is attached to a parent element, but a child element is the event's dispatch target. Which property identifies the parent while that parent's listener runs?",
+      "options": [
+        "`event.currentTarget`",
+        "`event.target`",
+        "`event.defaultPrevented`",
+        "`event.type`"
+      ],
+      "correctIndex": 0,
+      "explanation": "During that listener invocation, `currentTarget` is the parent with the listener. `target` identifies the object to which the event was dispatched, here the child.",
+      "difficulty": "application",
+      "skill": "Distinguish target and current target",
+      "sourceIds": [
+        "mdn-eventtarget-addeventlistener",
+        "dom-standard-events"
+      ]
+    },
+    {
+      "id": "web-development:foundations:events:3",
+      "prompt": "What is the direct purpose of `event.preventDefault()` on a cancelable event?",
+      "options": [
+        "Remove every listener",
+        "Rename the event type",
+        "Tell the user agent not to perform the event's default action",
+        "Force the event to bubble"
+      ],
+      "correctIndex": 2,
+      "explanation": "For a cancelable event, it prevents the default action. It does not remove listeners, rename an event, or itself control propagation.",
+      "difficulty": "understanding",
+      "skill": "Explain default-action cancellation",
+      "sourceIds": [
+        "mdn-event-preventdefault",
+        "dom-standard-events"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:javascript",
+    "web-development:foundations:functions",
+    "web-development:foundations:dom",
+    "web-development:foundations:forms-2",
+    "web-development:foundations:accessibility"
+  ],
+  "sources": [
+    "mdn-eventtarget-addeventlistener",
+    "mdn-event-preventdefault",
+    "dom-standard-events"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only documentation and standard; no source prose adapted",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original instructional synthesis from MDN and the DOM Standard; the custom EventTarget worked example was executed with Bun."
+  },
+  "contentHash": "6d2446cdb45a6c02",
+  "status": "source-verified",
+  "public": false
+}

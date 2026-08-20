@@ -1,0 +1,269 @@
+{
+  "id": "web-development:foundations:web-platform",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "web-platform",
+  "title": "The Web Platform",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 10,
+  "tags": [
+    "web-development",
+    "web-platform",
+    "web-apis",
+    "standards",
+    "browsers"
+  ],
+  "in30Seconds": "The web platform is the shared set of web standards and browser-provided capabilities used to build sites and web applications. HTML, CSS, and JavaScript are familiar parts of that environment, but browsers also expose Web APIs such as the DOM. Specifications describe expected behavior; browser teams implement that behavior. A web developer therefore needs to distinguish the JavaScript language from the browser capabilities that JavaScript can call.",
+  "whyItMatters": "Calling everything “JavaScript” hides an important boundary. A language feature and a browser API have different specifications, availability, and fallback choices. In a course, that distinction makes it easier to read documentation and reason about why code works in a browser but not necessarily in another JavaScript environment. In practice, it helps teams select a capability deliberately, test for it when appropriate, and provide a useful baseline when it is unavailable.",
+  "learningObjectives": [
+    "Define the web platform as standards plus browser-provided capabilities.",
+    "Distinguish JavaScript language features from Web APIs.",
+    "Explain the roles of a specification and a browser implementation.",
+    "Identify the DOM as a browser-provided interface created from a document.",
+    "Apply feature detection to choose a fallback path."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "A platform, not one library",
+      "body": "The web platform is the environment in which a browser turns web resources into an interactive experience. It is not a package that a developer imports, and it is not another name for JavaScript. It includes interoperating technologies and the interfaces browsers make available to pages. HTML describes document markup; CSS describes presentation rules; JavaScript is a programming language used in many places, including browsers. In a browser, JavaScript can also call Web APIs. MDN describes Web APIs as interfaces available while developing a web app or site. The Document Object Model (DOM), for example, lets a script inspect and change the document that the browser has built. A page may use no JavaScript at all and still use the web platform through HTML and CSS. Conversely, JavaScript can run outside a browser, where a browser-specific object such as document may not exist. That difference is a useful diagnostic clue: ask whether a name belongs to the language itself or to the host environment. The platform is broad, but that does not mean every lesson must list every API. A sound mental model focuses on the boundary between specifications, browser implementations, and the particular capabilities a page chooses to use."
+    },
+    {
+      "heading": "Standards describe behavior; browsers provide an implementation",
+      "body": "Web standards are technical agreements written as specifications. They describe concepts, data, algorithms, and required behavior so independent implementations can aim for compatible results. WHATWG's HTML Standard, for instance, specifies HTML and describes HTML user agents such as web browsers parsing markup into a DOM. A specification is not itself the browser running on a person's device. Browser engines and surrounding browser software implement specifications, ship versions over time, and may expose a capability differently depending on version, settings, permissions, or context. This is why careful documentation distinguishes a standard from observed support. A developer should avoid saying that a feature works “everywhere” merely because it worked in one browser. Instead, check the relevant documentation and define what the application should do when the desired capability is unavailable. Standards make interoperability possible; testing and fallbacks make a real application more resilient. The goal is not to memorize standards organizations. It is to recognize that a browser API has a defined contract and an implementation boundary, so requirements should be checked rather than guessed."
+    },
+    {
+      "heading": "Interfaces are the bridge from code to browser capability",
+      "body": "An API is an application programming interface: a defined way for code to request a service or work with an object. Web APIs are commonly exposed as objects, methods, events, and interfaces. Web IDL is a standard language for describing such interfaces, which helps specifications state the names, inputs, outputs, and relationships that an implementation must provide. The DOM illustrates the arrangement. When a browser parses an HTML document, it creates a document representation; the DOM APIs expose that representation to scripts. A script can use document.querySelector in a browser because the browser provides document and the associated DOM interface. The method call uses JavaScript syntax, but the capability being invoked is supplied by the browser. Keeping those roles separate reduces confusion when reading error messages, documentation, or code examples. This lesson does not attempt to teach each API. Fetching data, handling events, storage, media, and accessibility each involve their own APIs and constraints. Here, the transferable skill is to locate the owning platform feature, read its contract, and decide whether it belongs in the application's supported baseline."
+    },
+    {
+      "heading": "Use capabilities deliberately and detect them when a fallback exists",
+      "body": "A capability check asks whether the current environment provides the particular feature code plans to use. It is more reliable than guessing from a browser name or version because it tests the capability directly. A small example is checking whether geolocation is present before offering a location-based option: if ('geolocation' in navigator) { /* offer the optional feature */ } else { /* keep a manual location choice */ }. The check does not grant permission, guarantee a useful location, or replace error handling; it only establishes whether that API is exposed. The fallback should preserve the core task rather than leaving the person stranded. For a manual location choice, that might mean allowing a person to enter a city or postal code. This approach is often called progressive enhancement: begin with a useful base experience, then add an optional enhancement where the platform supports it. It also makes requirements visible to reviewers. A team can document which path is essential, which is optional, and how each is tested. Feature detection is not a reason to scatter checks everywhere or to avoid reading compatibility information. It is one tool for expressing an intentional boundary between the application and the capabilities supplied by the user's browser."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "web platform",
+      "definition": "The collection of web standards and browser capabilities used to create and run web pages and applications."
+    },
+    {
+      "term": "Web API",
+      "definition": "A browser-exposed interface that code in a web application can use to interact with a platform capability."
+    },
+    {
+      "term": "specification",
+      "definition": "A technical document that defines expected behavior and interfaces for an implementation."
+    },
+    {
+      "term": "implementation",
+      "definition": "A concrete browser or other program that provides behavior described by a specification."
+    },
+    {
+      "term": "user agent",
+      "definition": "Software, such as a web browser, that obtains and processes web content."
+    },
+    {
+      "term": "DOM",
+      "definition": "A browser-provided object representation of a document that scripts can access."
+    },
+    {
+      "term": "Web IDL",
+      "definition": "An interface definition language used by web specifications to describe programming interfaces."
+    },
+    {
+      "term": "feature detection",
+      "definition": "Testing whether a capability is available in the current environment before using it."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Think of a browser as a workshop that follows shared instruction books. HTML tells it about the page's pieces, CSS tells it how those pieces can look, and JavaScript lets code ask the workshop to do things. The workshop also provides special tools, called Web APIs. The DOM tool lets code look at the page the browser has built. Those special tools are not automatically part of JavaScript; they are tools the browser makes available. Different browser versions can have different tools or settings, so a careful page checks for an optional tool and still offers a useful basic path.",
+    "analogy": "The web platform is like a set of common building codes plus the equipment in a workshop. The code says how a door should fit; each workshop builds actual doors and supplies its own tools. A builder can use a tool only if that workshop has it.",
+    "analogyLimits": "Browsers are software implementations rather than workshops, and web standards can specify detailed algorithms, not merely general suggestions. The analogy also does not mean every browser exposes exactly the same optional capability at every time or permission setting."
+  },
+  "workedExample": "A transit page has an optional “Use my location” button and a manual station search. The developer treats the manual search as the core path. Before enabling the optional button, the page checks whether the browser exposes navigator.geolocation. If it does, the button can request location through that Web API; if it does not, the button is hidden or explained while the station search remains usable. The check does not assume that the user will grant permission or that a location request will succeed, so the page still handles those outcomes. JavaScript supplies the if statement and property check; the browser supplies navigator and its geolocation capability. This separation tells the team where to find the correct documentation and why a fallback belongs in the design.",
+  "commonMistakes": [
+    {
+      "mistake": "Calling every browser capability “JavaScript.”",
+      "correction": "Separate JavaScript language syntax from Web APIs exposed by the browser."
+    },
+    {
+      "mistake": "Treating a specification as proof that a feature is available in every current context.",
+      "correction": "Use the specification to understand behavior and check support or capabilities for the environments you support."
+    },
+    {
+      "mistake": "Checking a browser name instead of the capability needed.",
+      "correction": "When an optional feature has a fallback, test for that feature directly."
+    },
+    {
+      "mistake": "Making an optional API the only way to finish a core task.",
+      "correction": "Provide a baseline path, then enhance it when the browser offers the capability."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "JavaScript",
+      "b": "Web API",
+      "distinction": "JavaScript is a programming language; a Web API is a browser-provided interface that JavaScript can call."
+    },
+    {
+      "a": "Specification",
+      "b": "Implementation",
+      "distinction": "A specification defines expected behavior; an implementation is software that provides that behavior."
+    },
+    {
+      "a": "Feature detection",
+      "b": "Browser sniffing",
+      "distinction": "Feature detection checks the capability itself, while browser sniffing guesses from product identity or version."
+    }
+  ],
+  "keyTakeaway": "The web platform combines standards with the capabilities browsers implement. Identify whether code relies on the JavaScript language or a Web API, then design a supported baseline and a deliberate optional path.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:web-platform:1",
+      "prompt": "Which statement best describes a Web API?",
+      "options": [
+        "A browser-exposed interface that a web application can use",
+        "A synonym for the JavaScript language specification",
+        "A CSS rule for arranging elements",
+        "A server-only database protocol"
+      ],
+      "correctIndex": 0,
+      "explanation": "Web APIs are interfaces exposed for web applications. JavaScript, CSS, and server protocols are distinct concepts.",
+      "difficulty": "recall",
+      "skill": "Identifying a Web API",
+      "sourceIds": [
+        "mdn-web-apis-index"
+      ]
+    },
+    {
+      "id": "web-development:foundations:web-platform:2",
+      "prompt": "A browser parses an HTML page and exposes document.querySelector(). Which pairing is accurate?",
+      "options": [
+        "HTML parsing is a JavaScript-only feature; querySelector is CSS",
+        "The browser provides the DOM API; JavaScript code can call it",
+        "The DOM is a replacement for HTML markup",
+        "A specification executes the method on the user's device"
+      ],
+      "correctIndex": 1,
+      "explanation": "Browsers parse HTML into a DOM and expose DOM APIs; JavaScript is commonly used to call them. The other choices confuse the roles.",
+      "difficulty": "understanding",
+      "skill": "Distinguishing language, document model, and browser roles",
+      "sourceIds": [
+        "whatwg-html-introduction",
+        "whatwg-web-idl-standard"
+      ]
+    },
+    {
+      "id": "web-development:foundations:web-platform:3",
+      "prompt": "Why is feature detection usually preferable to deciding behavior from a browser name?",
+      "options": [
+        "It guarantees that a person will grant permission",
+        "It makes all browsers implement every API",
+        "It tests whether the needed capability is available in the current environment",
+        "It converts an optional capability into a standard requirement"
+      ],
+      "correctIndex": 2,
+      "explanation": "Feature detection checks the actual capability. It cannot guarantee permission, create support, or turn an option into a requirement.",
+      "difficulty": "application",
+      "skill": "Choosing a compatibility strategy",
+      "sourceIds": [
+        "mdn-feature-detection"
+      ]
+    },
+    {
+      "id": "web-development:foundations:web-platform:4",
+      "prompt": "What is the clearest difference between a web specification and a browser implementation?",
+      "options": [
+        "A specification is a programming language, while an implementation is a stylesheet",
+        "A specification is a list of websites, while an implementation is a domain name",
+        "A specification applies only to servers, while an implementation applies only to phones",
+        "A specification defines expected behavior, while an implementation provides that behavior in software"
+      ],
+      "correctIndex": 3,
+      "explanation": "Specifications define expected behavior and interfaces; browsers implement them in software. The other pairings are inaccurate.",
+      "difficulty": "understanding",
+      "skill": "Explaining standards and implementations",
+      "sourceIds": [
+        "whatwg-html-introduction",
+        "whatwg-web-idl-standard"
+      ]
+    },
+    {
+      "id": "web-development:foundations:web-platform:5",
+      "prompt": "A form's core task can be completed by typing a city, but a location API can prefill it when present. Which design is strongest?",
+      "options": [
+        "Remove manual entry so every visitor uses the API",
+        "Use the manual entry as a baseline and add the API as an optional enhancement",
+        "Assume every browser exposes the API because it is standardized",
+        "Check only a browser brand and show no fallback"
+      ],
+      "correctIndex": 1,
+      "explanation": "A useful baseline plus an optional enhancement preserves the core task when the API is unavailable or unsuitable. The other designs rely on unsupported assumptions.",
+      "difficulty": "analysis",
+      "skill": "Applying progressive enhancement",
+      "sourceIds": [
+        "mdn-feature-detection"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:web-platform:1",
+      "prompt": "Which statement best describes a Web API?",
+      "options": [
+        "A browser-exposed interface that a web application can use",
+        "A synonym for the JavaScript language specification",
+        "A CSS rule for arranging elements",
+        "A server-only database protocol"
+      ],
+      "correctIndex": 0,
+      "explanation": "Web APIs are interfaces exposed for web applications. JavaScript, CSS, and server protocols are distinct concepts."
+    },
+    {
+      "id": "web-development:foundations:web-platform:2",
+      "prompt": "A browser parses an HTML page and exposes document.querySelector(). Which pairing is accurate?",
+      "options": [
+        "HTML parsing is a JavaScript-only feature; querySelector is CSS",
+        "The browser provides the DOM API; JavaScript code can call it",
+        "The DOM is a replacement for HTML markup",
+        "A specification executes the method on the user's device"
+      ],
+      "correctIndex": 1,
+      "explanation": "Browsers parse HTML into a DOM and expose DOM APIs; JavaScript is commonly used to call them. The other choices confuse the roles."
+    },
+    {
+      "id": "web-development:foundations:web-platform:3",
+      "prompt": "Why is feature detection usually preferable to deciding behavior from a browser name?",
+      "options": [
+        "It guarantees that a person will grant permission",
+        "It makes all browsers implement every API",
+        "It tests whether the needed capability is available in the current environment",
+        "It converts an optional capability into a standard requirement"
+      ],
+      "correctIndex": 2,
+      "explanation": "Feature detection checks the actual capability. It cannot guarantee permission, create support, or turn an option into a requirement."
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:javascript",
+    "web-development:foundations:dom",
+    "web-development:foundations:fetch-api-basics",
+    "web-development:foundations:accessibility",
+    "web-development:foundations:browser-developer-tools"
+  ],
+  "sources": [
+    "mdn-web-apis-index",
+    "whatwg-html-introduction",
+    "whatwg-web-idl-standard",
+    "mdn-feature-detection"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only sources; no source prose adapted.",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original explanation connecting standards, browser implementations, Web APIs, and feature detection."
+  },
+  "contentHash": "657fc1599a5c85b7",
+  "status": "source-verified",
+  "public": false
+}

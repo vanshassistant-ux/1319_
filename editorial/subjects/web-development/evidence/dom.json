@@ -1,0 +1,20 @@
+{
+  "topicId": "web-development:foundations:dom",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {"core":["DOM tree","nodes and elements","querySelector()","textContent","creating and attaching an element"],"supporting":["CSS selectors","null result handling"],"outOfScope":["event handlers","form processing","fetch and network APIs","HTML injection techniques"]},
+  "claims": [
+    {"claim":"The DOM represents a document's structure in memory and connects web pages to scripts or programming languages.","claimType":"TECHNICAL","sourceIds":["mdn-dom-introduction"],"status":"supported"},
+    {"claim":"Document.querySelector() returns the first element matching a CSS selector and returns null if none matches.","claimType":"TECHNICAL","sourceIds":["mdn-document-queryselector"],"status":"supported"},
+    {"claim":"Node.textContent represents the text content of a node and its descendants.","claimType":"TECHNICAL","sourceIds":["mdn-node-textcontent"],"status":"supported"},
+    {"claim":"Document.createElement() creates an HTMLElement with the specified local name.","claimType":"TECHNICAL","sourceIds":["mdn-document-createelement"],"status":"supported"},
+    {"claim":"DOM work can distinguish selection, a null check, and a targeted text update.","claimType":"TECHNICAL","sourceIds":["mdn-document-queryselector","mdn-node-textcontent"],"status":"supported"}
+  ],
+  "conflictingEvidence": [], "unsupportedExistingClaims":["The generated draft did not contain usable verified DOM claims."], "correctionsNeeded":["Replaced generic boilerplate with a standards-grounded DOM tree and safe text-update lesson."], "rightsIssues":[],
+  "sourceRecords": [
+    {"id":"mdn-dom-introduction","title":"Document Object Model (DOM)","provider":"MDN Web Docs (Mozilla)","url":"https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"CC BY-SA 2.5","licenseUrl":"https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Attrib_copyright_license","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Supports DOM as the in-memory representation connecting a document structure to scripts; all lesson prose is original synthesis."},
+    {"id":"mdn-document-queryselector","title":"Document: querySelector() method","provider":"MDN Web Docs (Mozilla)","url":"https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"CC BY-SA 2.5","licenseUrl":"https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Attrib_copyright_license","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Supports first matching Element behavior and null when there is no match; original prose only."},
+    {"id":"mdn-node-textcontent","title":"Node: textContent property","provider":"MDN Web Docs (Mozilla)","url":"https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"CC BY-SA 2.5","licenseUrl":"https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Attrib_copyright_license","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Supports textContent representing the text of a node and descendants; original prose only."},
+    {"id":"mdn-document-createelement","title":"Document: createElement() method","provider":"MDN Web Docs (Mozilla)","url":"https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"CC BY-SA 2.5","licenseUrl":"https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Attrib_copyright_license","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Supports createElement() creating an HTMLElement with the requested local name; original prose only."}
+  ]
+}
