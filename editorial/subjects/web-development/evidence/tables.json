@@ -1,0 +1,23 @@
+{
+  "topicId": "web-development:foundations:tables",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {"core": ["tabular data", "table, row, header, and data cells", "caption", "thead and tbody", "scope-based header associations"], "supporting": ["accessible simple tables", "table section grouping"], "outOfScope": ["CSS layout", "responsive table styling", "complex multi-level header algorithms", "forms", "ARIA replacement patterns"]},
+  "claims": [
+    {"claim": "The HTML table element represents data with more than one dimension and must not be used as a layout aid.", "claimType": "TECHNICAL", "sourceIds": ["whatwg-html-tables"], "status": "supported"},
+    {"claim": "A table's rows, columns, and cells form a grid, and the caption is the table's title or identifying description.", "claimType": "TECHNICAL", "sourceIds": ["whatwg-html-tables", "mdn-html-table-basics"], "status": "supported"},
+    {"claim": "The thead and tbody elements group header and body rows; they are structural groups rather than a substitute for header cells.", "claimType": "TECHNICAL", "sourceIds": ["whatwg-html-tables", "mdn-html-table-basics"], "status": "supported"},
+    {"claim": "The th element identifies a header cell and the td element identifies a data cell; scope can explicitly associate a header with its row or column in a simple table.", "claimType": "TECHNICAL", "sourceIds": ["whatwg-html-tables", "wai-tables-tutorial"], "status": "supported"},
+    {"claim": "A caption and clear row or column headers help people understand a data table, including people using assistive technology.", "claimType": "TECHNICAL", "sourceIds": ["wai-tables-tutorial", "whatwg-html-tables"], "status": "supported"},
+    {"claim": "For more complex tables, header associations may need more careful design than a simple row-or-column scope pattern.", "claimType": "TECHNICAL", "sourceIds": ["wai-tables-tutorial", "whatwg-html-tables"], "status": "supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft was generic boilerplate and made no supported explanation of HTML data tables."],
+  "correctionsNeeded": ["Replaced generic prose with standards-based guidance for data tables.", "Added caption, table sections, header cells, and scope associations.", "Explicitly excluded tables as a page-layout technique and did not substitute CSS or ARIA guidance for HTML table structure."],
+  "rightsIssues": ["All three sources were read as REFERENCE_ONLY. The lesson is original synthesis; no source prose was adapted."],
+  "sourceRecords": [
+    {"id": "whatwg-html-tables", "title": "HTML Living Standard — Tabular data", "provider": "WHATWG", "url": "https://html.spec.whatwg.org/multipage/tables.html", "sourceType": "standards-body", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-20", "notes": "Read directly. Primary current standard for the table model, permitted child order, caption, table sections, cells, header associations, and the prohibition on layout tables. Used for fact-checking only."},
+    {"id": "mdn-html-table-basics", "title": "MDN Web Docs — HTML table basics", "provider": "Mozilla / MDN Web Docs", "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_table_basics", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "license": "CC BY-SA 2.5", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-20", "notes": "Read directly. Supports beginner-facing table markup, captions, header/data cells, and row grouping. No source prose reproduced."},
+    {"id": "wai-tables-tutorial", "title": "W3C WAI — Tables Tutorial", "provider": "W3C Web Accessibility Initiative", "url": "https://www.w3.org/WAI/tutorials/tables/", "sourceType": "standards-body", "usage": "REFERENCE_ONLY", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-20", "notes": "Read directly. Supports accessible data-table guidance, captions, headers, and simple versus complex table associations. No source prose reproduced."}
+  ]
+}

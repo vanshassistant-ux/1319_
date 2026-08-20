@@ -1,0 +1,259 @@
+{
+  "id": "web-development:foundations:css",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "css",
+  "title": "CSS",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "web-development",
+    "foundations",
+    "css",
+    "presentation",
+    "style-sheets"
+  ],
+  "in30Seconds": "CSS, short for Cascading Style Sheets, is the language used to write style sheets for web documents. HTML supplies a page's content and structure; CSS describes its presentation, such as color, spacing, and type. A CSS rule gives the browser an instruction for some document content. Within that rule, declarations pair a property—the feature to change—with a value—the setting to use.",
+  "whyItMatters": "CSS lets one set of presentation choices serve many pages instead of mixing visual decisions into every piece of HTML. That separation makes a site easier to revise, test, and keep consistent. In coursework, CSS also provides a useful boundary: HTML answers what the content is, while CSS answers how that content should appear. Later lessons build on this foundation to examine syntax, targeting content, layout, and responsive presentation.",
+  "learningObjectives": [
+    "Define CSS and explain its role as a style-sheet language.",
+    "Distinguish HTML's structural role from CSS's presentation role.",
+    "Explain the relationship among a CSS rule, declaration, property, and value.",
+    "Apply that relationship to identify the purpose of a small styling instruction."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "CSS is a language for presentation",
+      "body": "Cascading Style Sheets (CSS) is a language for writing style sheets. A style sheet is associated with a document and provides instructions about presentation. On a web page, HTML normally expresses the document's content and structure: a heading, a paragraph, a list, or a form control. CSS describes presentation: visual characteristics such as a color, a type size, or space around an element. The browser reads the HTML and the applicable CSS, then renders the document for the user.\n\nThis division is a design practice, not a claim that HTML and CSS operate in isolation. A style instruction needs content to affect, and an HTML element may carry a class or other hook that a later CSS rule uses. Still, the responsibilities differ. Rewriting a paragraph's words is an HTML-content task. Changing the paragraph's visual treatment is a CSS-presentation task. Keeping the distinction clear makes later debugging less confusing: first ask whether the document contains and structures the intended content, then ask whether its presentation instructions are appropriate.\n\nCSS is not a single unchanging handbook. The W3C's CSS Snapshot describes the current state of a collection of CSS specifications. That is one reason careful web authors consult current documentation when browser behavior or a feature's status matters. At this introductory level, the durable idea is simpler: CSS tells user agents how a document should be presented; it does not replace the document's meaningful structure."
+    },
+    {
+      "heading": "Rules turn presentation decisions into instructions",
+      "body": "A CSS rule connects a presentation instruction to document content. The exact way content is selected is a later topic; for now, treat the rule as an instruction addressed to a part of the page. The instruction contains one or more declarations. Each declaration has two conceptual pieces: a property and a value. The property names the feature under consideration, such as `color`. The value gives the chosen setting for that feature, such as `navy`. Together, property plus value say what change is requested.\n\nConsider the conceptual instruction “make this heading navy.” `color` is the property because it names the visual feature. `navy` is the value because it supplies the selected setting. The whole property–value pair is a declaration. If the instruction applies to a heading, the complete instruction is a rule. These names matter because they locate an error precisely. If a developer chose the wrong shade, the value is the likely problem. If the wrong visual feature changed, the property is suspect. If the instruction affected the wrong content, the part that identifies content—not the declaration's value—needs investigation.\n\nDo not confuse a declaration with a rule. A declaration is one setting. A rule can contain several declarations, allowing related presentation choices to travel together. The punctuation and exact grammar that write rules are CSS syntax, covered separately. The present goal is to understand the jobs the pieces perform rather than memorize symbols."
+    },
+    {
+      "heading": "Separation helps maintenance without guaranteeing quality",
+      "body": "Putting presentation in CSS can allow the same visual decision to be reused across a document or across multiple documents that use a shared stylesheet. For example, a team can define a consistent heading treatment once and apply it where needed rather than placing a visual instruction beside every heading. When the design changes, a focused change to the stylesheet may update all of those uses. That is a practical reason CSS is central to site maintenance.\n\nSeparation is useful, but it is not magic. CSS cannot repair missing meaning in an HTML document. A visually large paragraph is not automatically a heading, and a color choice alone does not guarantee that all users can understand a page. Semantic HTML and accessibility both deserve their own analysis. Likewise, a stylesheet can be well organized yet still make poor visual choices. CSS supplies the mechanism for presentation; judgment is still needed to choose legible, consistent, and appropriate presentation.\n\nA productive workflow reflects the boundary. Write and check the content and its HTML structure. Add CSS to express a presentation decision. Inspect the result in a browser, then revise either the structure or the presentation according to the kind of problem found. As the course progresses, selectors, the cascade, layout systems, and responsive techniques provide more precise tools. They all build on the basic model established here: rules contain declarations, declarations pair properties with values, and CSS works alongside rather than in place of HTML."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "CSS",
+      "definition": "A language used to write style sheets that describe the presentation of a document."
+    },
+    {
+      "term": "style sheet",
+      "definition": "A collection of CSS instructions associated with a document to describe its presentation."
+    },
+    {
+      "term": "presentation",
+      "definition": "The visual rendering or appearance of document content, such as its color, spacing, or type treatment."
+    },
+    {
+      "term": "CSS rule",
+      "definition": "A complete CSS instruction that associates one or more declarations with document content."
+    },
+    {
+      "term": "declaration",
+      "definition": "One CSS setting made from a property and a value."
+    },
+    {
+      "term": "property",
+      "definition": "The named presentation feature that a CSS declaration sets."
+    },
+    {
+      "term": "value",
+      "definition": "The chosen setting assigned to a CSS property in a declaration."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Think of a web page as an illustrated museum label. HTML is the information on the label: its title, its sentences, and which words form a list. CSS is the display plan that tells the museum how the label should look: perhaps titles are large, body text has space around it, and warnings use a different color. The display plan does not change the words into a different kind of information; it changes how visitors see them.\n\nA CSS rule is like one instruction card in that plan. A declaration is one line on the card. If the line says the title's color should be navy, `color` names what is being adjusted and `navy` is the choice. Several lines can sit on one instruction card.",
+    "analogy": "HTML is the written museum label; CSS is the display plan for presenting that label.",
+    "analogyLimits": "A museum display plan is usually made for a physical object, while CSS is interpreted by browser software and can react to different screens and settings. Also, CSS has technical rules about which instructions apply; the analogy does not explain those rules."
+  },
+  "workedExample": "A campus club page contains an HTML heading and a paragraph announcing a meeting. The content editor changes the meeting date in the paragraph; that is a content task. The designer decides all club headings should appear navy. In the CSS, the relevant rule contains a declaration whose property is `color` and whose value is `navy`. The browser applies that presentation instruction when it renders the heading. If the date is wrong, altering CSS would be the wrong repair because CSS changes presentation, not the paragraph's information. If the heading's shade is wrong, the designer should inspect the declaration's value. This distinction guides the team to the right file and the right kind of fix.",
+  "commonMistakes": [
+    {
+      "mistake": "Treating CSS as the language that supplies a page's written content.",
+      "correction": "Use HTML to structure and contain web content; use CSS to describe presentation."
+    },
+    {
+      "mistake": "Calling a property–value pair a complete rule.",
+      "correction": "Call the pair a declaration; a rule is the larger instruction that contains declarations."
+    },
+    {
+      "mistake": "Assuming CSS can give a visually styled element semantic meaning.",
+      "correction": "Use appropriate HTML structure for meaning, then use CSS for presentation."
+    },
+    {
+      "mistake": "Assuming a shared stylesheet automatically makes every design accessible or effective.",
+      "correction": "Evaluate the actual structure and presentation; CSS is a mechanism, not a quality guarantee."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "HTML",
+      "b": "CSS",
+      "distinction": "HTML represents document content and structure; CSS describes the document's presentation."
+    },
+    {
+      "a": "declaration",
+      "b": "CSS rule",
+      "distinction": "A declaration is one property-and-value setting; a rule is the complete instruction that can contain one or more declarations."
+    },
+    {
+      "a": "property",
+      "b": "value",
+      "distinction": "A property names the feature to set; a value supplies the selected setting for that feature."
+    }
+  ],
+  "keyTakeaway": "CSS is the style-sheet language for document presentation. Its basic instruction model is rule → declaration → property plus value, and it works alongside HTML rather than replacing HTML's structure.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:css:1",
+      "prompt": "What is CSS primarily used to describe on a web page?",
+      "options": [
+        "How the document is presented",
+        "The server's file system",
+        "The page's written facts",
+        "A visitor's account password"
+      ],
+      "correctIndex": 0,
+      "explanation": "CSS describes presentation. HTML represents the document's content and structure; server files and credentials are separate concerns.",
+      "difficulty": "recall",
+      "skill": "Identify CSS's primary role",
+      "sourceIds": [
+        "mdn-what-is-css",
+        "w3c-css-snapshot-2025"
+      ]
+    },
+    {
+      "id": "web-development:foundations:css:2",
+      "prompt": "Which statement correctly distinguishes an HTML paragraph from CSS?",
+      "options": [
+        "CSS supplies the paragraph's words, while HTML chooses its color.",
+        "HTML supplies the paragraph's content and structure, while CSS can describe its visual presentation.",
+        "Both are used only to request data from a server.",
+        "HTML and CSS have exactly the same responsibility."
+      ],
+      "correctIndex": 1,
+      "explanation": "HTML carries the paragraph as document content and structure. CSS can describe how it is presented; neither language is a server-request protocol.",
+      "difficulty": "understanding",
+      "skill": "Distinguish structure from presentation",
+      "sourceIds": [
+        "mdn-what-is-css"
+      ]
+    },
+    {
+      "id": "web-development:foundations:css:3",
+      "prompt": "In a declaration that sets the visual feature `color` to `navy`, what is `navy`?",
+      "options": [
+        "A CSS rule",
+        "A property",
+        "A value",
+        "An HTML element"
+      ],
+      "correctIndex": 2,
+      "explanation": "The property names the feature (`color`); the value supplies its chosen setting (`navy`). A declaration contains both, while a rule is a larger instruction.",
+      "difficulty": "recall",
+      "skill": "Identify a declaration's parts",
+      "sourceIds": [
+        "mdn-css-syntax-introduction"
+      ]
+    },
+    {
+      "id": "web-development:foundations:css:4",
+      "prompt": "A page has the correct heading text but the design team wants every heading to use a different visual color. What should the team change first?",
+      "options": [
+        "The wording inside every heading",
+        "The page's domain name",
+        "The server's password policy",
+        "The relevant CSS presentation instruction"
+      ],
+      "correctIndex": 3,
+      "explanation": "The content is already correct and the requested change is visual presentation, so the relevant CSS instruction is the appropriate starting point. The other choices do not address heading color.",
+      "difficulty": "application",
+      "skill": "Choose the appropriate layer for a visual change",
+      "sourceIds": [
+        "mdn-what-is-css",
+        "mdn-css-syntax-introduction"
+      ]
+    },
+    {
+      "id": "web-development:foundations:css:5",
+      "prompt": "Why is a declaration not the same thing as a CSS rule?",
+      "options": [
+        "A declaration can only be written in HTML.",
+        "A declaration is a browser extension, but a rule is a server command.",
+        "A declaration is one property-and-value setting, while a rule can contain one or more declarations.",
+        "A declaration always changes meaning, while a rule always changes content."
+      ],
+      "correctIndex": 2,
+      "explanation": "A declaration is a single setting formed from a property and value. A rule is the broader instruction that may contain declarations; the other descriptions confuse CSS with other web layers.",
+      "difficulty": "analysis",
+      "skill": "Analyze the rule/declaration relationship",
+      "sourceIds": [
+        "mdn-css-syntax-introduction"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:css:1",
+      "prompt": "What is CSS primarily used to describe on a web page?",
+      "options": [
+        "How the document is presented",
+        "The server's file system",
+        "The page's written facts",
+        "A visitor's account password"
+      ],
+      "correctIndex": 0,
+      "explanation": "CSS describes presentation. HTML represents the document's content and structure; server files and credentials are separate concerns."
+    },
+    {
+      "id": "web-development:foundations:css:2",
+      "prompt": "Which statement correctly distinguishes an HTML paragraph from CSS?",
+      "options": [
+        "CSS supplies the paragraph's words, while HTML chooses its color.",
+        "HTML supplies the paragraph's content and structure, while CSS can describe its visual presentation.",
+        "Both are used only to request data from a server.",
+        "HTML and CSS have exactly the same responsibility."
+      ],
+      "correctIndex": 1,
+      "explanation": "HTML carries the paragraph as document content and structure. CSS can describe how it is presented; neither language is a server-request protocol."
+    },
+    {
+      "id": "web-development:foundations:css:3",
+      "prompt": "In a declaration that sets the visual feature `color` to `navy`, what is `navy`?",
+      "options": [
+        "A CSS rule",
+        "A property",
+        "A value",
+        "An HTML element"
+      ],
+      "correctIndex": 2,
+      "explanation": "The property names the feature (`color`); the value supplies its chosen setting (`navy`). A declaration contains both, while a rule is a larger instruction."
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:html",
+    "web-development:foundations:css-syntax",
+    "web-development:foundations:selectors",
+    "web-development:foundations:cascade",
+    "web-development:foundations:semantic-html"
+  ],
+  "sources": [
+    "mdn-what-is-css",
+    "mdn-css-syntax-introduction",
+    "w3c-css-snapshot-2025"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only documentation and standards sources; no source prose adapted.",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original instructional explanation based on independently checked MDN and W3C documentation."
+  },
+  "contentHash": "467a00c781a441b4",
+  "status": "source-verified",
+  "public": false
+}

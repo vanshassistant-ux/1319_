@@ -1,0 +1,28 @@
+{
+  "topicId": "web-development:foundations:css-syntax",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {
+    "core": ["CSS qualified rules", "declaration blocks", "properties and values", "semicolons and braces", "CSS comments"],
+    "supporting": ["the browser's parsing and invalid-declaration handling", "the difference between a style rule and an at-rule"],
+    "outOfScope": ["types of selectors", "the cascade", "specificity", "CSS layout", "color systems", "responsive design", "at-rule details"]
+  },
+  "claims": [
+    {"claim": "A CSS stylesheet contains style rules and at-rules; a typical style rule has a selector prelude and a curly-braced block of declarations.", "claimType": "TECHNICAL", "sourceIds": ["css-syntax-level-3", "mdn-css-syntax-introduction"], "status": "supported"},
+    {"claim": "A declaration pairs a property name with a value using a colon, and declarations in a block are separated by semicolons.", "claimType": "TECHNICAL", "sourceIds": ["css-syntax-level-3", "mdn-css-syntax-introduction"], "status": "supported"},
+    {"claim": "The meaning and allowed syntax of a value come from the property being set, so a string that looks syntactically placed after a colon is not automatically a valid value for every property.", "claimType": "TECHNICAL", "sourceIds": ["css-syntax-level-3", "mdn-css-properties-reference"], "status": "supported"},
+    {"claim": "CSS uses slash-asterisk through asterisk-slash for both single-line and multi-line comments; a CSS comment cannot be nested inside another CSS comment.", "claimType": "TECHNICAL", "sourceIds": ["mdn-css-comments", "css-syntax-level-3"], "status": "supported"},
+    {"claim": "For a style rule, an unknown property or a value that does not match that property's syntax is invalid and is ignored, while valid declarations elsewhere in the rule can still be used.", "claimType": "TECHNICAL", "sourceIds": ["css-syntax-level-3"], "status": "supported"},
+    {"claim": "Whitespace can make CSS readable, but the structural punctuation in a basic style rule is the colon between property and value, semicolons between declarations, and braces around the declaration block.", "claimType": "TECHNICAL", "sourceIds": ["css-syntax-level-3", "mdn-css-syntax-introduction"], "status": "supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated lesson was generic boilerplate, with no CSS-specific supported content; it was replaced."],
+  "correctionsNeeded": ["Defined rule, declaration block, property, value, and comments with standards-backed terminology.", "Kept selector categories, cascade, and specificity out of scope for their dedicated lessons.", "Explained invalid declarations as parser behavior without promising that all malformed CSS will be interpreted identically in every situation."],
+  "rightsIssues": ["The CSSWG specification and MDN documentation were consulted as REFERENCE_ONLY sources. The lesson is independently written and contains no adapted source prose."],
+  "sourceRecords": [
+    {"id": "css-syntax-level-3", "title": "CSS Syntax Module Level 3", "provider": "W3C CSS Working Group", "url": "https://www.w3.org/TR/css-syntax-3/", "sourceType": "standards-body", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-20", "notes": "Read directly through the published W3C specification. Primary source for style rules, qualified-rule blocks, declarations, property/value parsing, at-rules, and invalid declarations being ignored. Used for verification only."},
+    {"id": "mdn-css-syntax-introduction", "title": "MDN Web Docs — Introduction to CSS syntax: declarations, rulesets, and statements", "provider": "MDN Web Docs", "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Syntax/Introduction", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "license": "CC BY-SA 2.5", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-20", "notes": "Read directly. Supports beginner-facing terminology for declarations, declaration blocks, rulesets, and statements. No source wording reproduced."},
+    {"id": "mdn-css-comments", "title": "MDN Web Docs — Comments", "provider": "MDN Web Docs", "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Syntax/Comments", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "license": "CC BY-SA 2.5", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-20", "notes": "Read directly. Supports CSS comment delimiters, use on one or many lines, and the no-nesting limitation. No source wording reproduced."},
+    {"id": "mdn-css-properties-reference", "title": "MDN Web Docs — CSS properties", "provider": "MDN Web Docs", "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "license": "CC BY-SA 2.5", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-20", "notes": "Read directly. Supports the property-oriented view of CSS declarations and property-specific value syntax. No source wording reproduced."}
+  ]
+}

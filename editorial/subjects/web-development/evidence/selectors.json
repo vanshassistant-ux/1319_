@@ -1,0 +1,25 @@
+{
+  "topicId": "web-development:foundations:selectors",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {
+    "core": ["CSS selector matching", "type, class, ID, and attribute selectors", "descendant combinator"],
+    "supporting": ["HTML attributes", "matching elements in a document tree"],
+    "outOfScope": ["cascade resolution", "specificity calculation", "pseudo-classes", "child and sibling combinators"]
+  },
+  "claims": [
+    {"claim":"A CSS selector is a pattern used to select elements in a document tree for styling.","claimType":"TECHNICAL","sourceIds":["mdn-css-selectors-and-combinators","w3c-selectors-level-4"],"status":"supported"},
+    {"claim":"A type selector matches elements by their element name, while class and ID selectors use class and id attribute values.","claimType":"TECHNICAL","sourceIds":["mdn-css-selectors-and-combinators","w3c-selectors-level-4"],"status":"supported"},
+    {"claim":"An attribute selector can match an element based on whether it has an attribute or on an attribute value.","claimType":"TECHNICAL","sourceIds":["mdn-css-selectors-and-combinators","w3c-selectors-level-4"],"status":"supported"},
+    {"claim":"Whitespace between selectors is the descendant combinator and matches an element that has an ancestor matching the selector to its left.","claimType":"TECHNICAL","sourceIds":["mdn-css-selectors-and-combinators","w3c-selectors-level-4"],"status":"supported"},
+    {"claim":"A compound selector combines simple selectors with no combinator, so every component must match the same element.","claimType":"TECHNICAL","sourceIds":["w3c-selectors-level-4"],"status":"supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft contained no usable technical explanation or source support."],
+  "correctionsNeeded": ["Replaced generic draft with a scoped explanation and verified examples."],
+  "rightsIssues": ["Both sources were used as reference-only sources; no source prose was reproduced."],
+  "sourceRecords": [
+    {"id":"mdn-css-selectors-and-combinators","title":"MDN Web Docs — CSS selectors and combinators","provider":"Mozilla / MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Basic_selectors","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"CC BY-SA 2.5","licenseUrl":"https://creativecommons.org/licenses/by-sa/2.5/","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Supports the beginner-facing definitions and examples for type, class, ID, attribute selectors, and descendant combinators. No source prose reproduced."},
+    {"id":"w3c-selectors-level-4","title":"Selectors Level 4","provider":"W3C","url":"https://www.w3.org/TR/selectors-4/","sourceType":"standards-body","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Primary specification corroborating selector matching, simple selectors, compound selectors, and combinators. Used for fact checking only."}
+  ]
+}

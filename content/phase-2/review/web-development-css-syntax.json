@@ -1,0 +1,272 @@
+{
+  "id": "web-development:foundations:css-syntax",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "css-syntax",
+  "title": "CSS Syntax",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "web-development",
+    "css",
+    "syntax",
+    "declarations",
+    "properties"
+  ],
+  "in30Seconds": "CSS syntax is the punctuation and arrangement that let a browser read a stylesheet. A common style rule has a selector, then a declaration block in curly braces. Inside the block, each declaration pairs a property with a value using a colon, and semicolons separate declarations. For example, `p { color: navy; margin: 1rem; }` has one rule and two declarations. This lesson explains that grammatical structure, not which selectors to choose or which competing rule wins.",
+  "whyItMatters": "Syntax is the first debugging layer in CSS. Before asking whether a layout method, selector, or cascade decision is right, you need to see whether the browser can read the rule you wrote. A missing brace can accidentally absorb later code; a missing colon means there is no property/value declaration; an inappropriate value can make just that declaration unusable. Reading CSS as small, named parts also helps in college courses, design-system work, browser developer tools, and collaborative code review. It lets you explain an error precisely instead of describing a rule only as “broken.”",
+  "learningObjectives": [
+    "Identify the selector, declaration block, property, and value in a basic CSS style rule.",
+    "Explain the purpose of colons, semicolons, and curly braces in a declaration block.",
+    "Distinguish a declaration from a complete style rule.",
+    "Apply CSS comment syntax without confusing comments with active CSS.",
+    "Diagnose simple syntax and property/value mistakes in a short rule."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "A stylesheet is made from rules and declarations",
+      "body": "CSS is a language for describing the presentation of structured documents. Its syntax gives the browser a way to break stylesheet text into meaningful units. At a broad level, a stylesheet can contain style rules and at-rules. This lesson concentrates on the ordinary style rule, sometimes called a ruleset in teaching material. A style rule has two visible regions: a prelude before the opening brace and a declaration block between `{` and `}`. In the usual case, the prelude is a selector: it identifies which document elements the declarations are intended to address. Selector categories and the details of matching belong to the selectors lesson; here, treat `p` in `p { color: navy; }` simply as the rule's selector. The braces begin and end the declaration block. Within that block, `color: navy;` is one declaration. It says that the CSS property named `color` is being given the value `navy` for elements that the rule addresses. A second declaration can follow in the same block: `p { color: navy; margin: 1rem; }`. This is one style rule, not two, because there is one selector prelude and one brace-delimited block. It contains two declarations. That distinction matters when diagnosing errors: deleting a declaration is a small change inside a rule, while deleting a brace can change where the rule ends. CSS also has at-rules, which begin with `@` and have their own grammars. For example, an at-rule may group other rules or make a statement. They are part of CSS syntax, but their individual purposes are outside this introduction. Do not assume every brace-delimited CSS construct has exactly the same contents or behavior as a basic style rule."
+    },
+    {
+      "heading": "Declarations pair a property with a value",
+      "body": "The core grammar inside a declaration block is property, colon, value, and normally a semicolon. In `margin: 1rem;`, `margin` is the property name, `:` separates that name from the value, `1rem` is the value, and `;` marks the end of the declaration. CSS properties are defined names with particular jobs and particular allowed value grammars. The colon does not make an arbitrary word sequence valid. `color: navy;` is a declaration that uses a color value, whereas `color: 17px;` is not a usable `color` declaration because a length is not a valid color value for that property. Conversely, `margin: 17px;` can use a length value. The property definition, rather than visual intuition alone, determines what a value may mean. Semicolons separate declarations. In a simple block, the last semicolon is often optional before the closing brace, but retaining it is a reliable editing habit: adding another declaration later does not require repairing the preceding line. Whitespace and line breaks are largely for readability in this example. These two forms carry the same structural punctuation: `p{color:navy;margin:1rem}` and the multiline version. The multiline form is usually easier for people to scan, revise, and review. Colons, semicolons, and braces are not decoration, however. They tell the parser where the property/value relationship begins and ends, and where the declaration block is bounded. A common beginner error is to write `color navy;`. That text lacks the colon, so it is not a normal property declaration. Another is to use a comma where a semicolon should separate declarations. Read each declaration as a complete small statement before moving to the next one."
+    },
+    {
+      "heading": "Parsing, invalid pieces, and comments",
+      "body": "Browsers parse CSS rather than merely display its characters. For an ordinary style rule, a property the browser does not recognize, or a value that does not match that property's defined syntax, makes that declaration invalid and the browser ignores it. The remaining valid declarations in the rule can still apply. Consider `p { color: navy; margin: nope; padding: 1rem; }`. `margin: nope;` is not a valid standard margin value, but that does not turn the neighboring `color` and `padding` declarations into margin declarations or automatically erase them. This is useful for focused debugging: inspect the property, colon, value, semicolon, and braces before assuming the entire stylesheet failed. It is not a guarantee that every malformed fragment has a simple outcome; error recovery and the grammar of a particular construct can matter. Comments are text for human readers that the CSS parser treats as comments rather than active style instructions. CSS uses `/*` to start a comment and `*/` to end it. The same form works on one line or across many lines. For example, `/* spacing for the card */` can explain why a declaration exists. Comments should clarify a decision, a constraint, or a temporary investigation; they should not replace a clear property name or act as a way to hide unexplained code. CSS comments do not nest. Starting another `/*` inside an open comment does not create a safely nested comment layer, so use separate comments or rewrite the note. Be especially cautious when commenting out code: the opening and closing delimiters must surround exactly the text you intend to deactivate. A missing closing `*/` can cause later text to be treated as part of the comment. Syntax knowledge therefore supports both writing and safe, reversible debugging."
+    },
+    {
+      "heading": "Read a rule from the outside inward",
+      "body": "A dependable reading routine starts with the outside boundaries. Find the opening `{` and its matching `}`; everything between them is the declaration block for that rule. Next, look immediately before the opening brace to identify the selector portion, without trying to classify its type yet. Then split the block at semicolons and inspect each candidate declaration: find its property name, colon, and value. For `article { color: #223; padding: 16px; /* interior space */ }`, the selector is `article`; the block has two active declarations; and the final text is a comment, not a third declaration. The property `color` receives `#223`, while `padding` receives `16px`. This routine helps separate syntax questions from later CSS questions. It does not determine which rule wins when several rules address the same element—that is the cascade and specificity territory. It also does not decide whether `article` is the best selector—that belongs to selector design and document semantics. It merely establishes what text forms one rule and what each declaration says. Once you can label the pieces accurately, browser developer tools become more useful: an ignored declaration can be investigated as an invalid property or value, a spelling error, unsupported feature, or later competing rule instead of all those possibilities being blurred together. Keep small examples formatted consistently, use comments sparingly and precisely, and make one intentional change at a time while debugging. CSS becomes easier to repair when its grammar is visible to you."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "style rule",
+      "definition": "A CSS construct that associates a selector with a block of declarations intended for the elements it addresses."
+    },
+    {
+      "term": "selector",
+      "definition": "The part of a CSS style rule that identifies the document elements the rule is intended to address."
+    },
+    {
+      "term": "declaration block",
+      "definition": "The brace-delimited portion of a CSS rule that contains declarations."
+    },
+    {
+      "term": "declaration",
+      "definition": "A property-and-value pair in CSS, written with a colon between the property name and its value."
+    },
+    {
+      "term": "property",
+      "definition": "A defined CSS name that identifies the aspect of presentation a declaration sets."
+    },
+    {
+      "term": "value",
+      "definition": "The data supplied to a CSS property according to that property's allowed syntax."
+    },
+    {
+      "term": "semicolon",
+      "definition": "The `;` punctuation mark that separates CSS declarations in a declaration block."
+    },
+    {
+      "term": "comment",
+      "definition": "A human-readable CSS note enclosed by `/*` and `*/` that is not an active style declaration."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "CSS is written like short instructions in labeled folders. First you name the part of the page the instruction is for. Then you open curly braces, which are like opening that part's folder. Inside, each instruction has a label, a colon, and an answer: `color: navy;` means the color setting gets navy. The semicolon says that instruction is finished. You can put several instructions in the same folder, then close it with the other curly brace. A comment is a note for people reading the stylesheet, not an instruction for the browser to carry out.",
+    "analogy": "Imagine a paint order for a room. The room name is the selector. The curly braces are the edges of that room's order sheet. Each line says what is being chosen and what it should be: `wall-color: navy;` would be one line. The colon separates the question from the choice, and the semicolon ends the line. A note in the margin is a comment: useful to the painter, but not an instruction that changes the paint by itself.",
+    "analogyLimits": "A CSS selector is not literally a room name, and a declaration does not always produce a simple paint-like visual change. CSS values follow formal property-specific rules, and several rules can later interact through the cascade. This lesson only uses the order sheet to explain the punctuation and pieces of one rule."
+  },
+  "workedExample": "Read this rule from the outside inward: `p { color: navy; margin: 1rem; /* separate paragraphs */ }`. The text `p` is the selector portion. The opening `{` begins its declaration block and the final `}` closes it. There are two active declarations. In `color: navy;`, `color` is the property, `navy` is its value, `:` links them, and `;` ends the declaration. `margin: 1rem;` has the same structure with a different property and value. `/* separate paragraphs */` is a comment, so it neither creates a property nor changes the preceding value. If `margin: 1rem` were changed to `margin 1rem;`, the missing colon would prevent it from being a normal declaration; the valid `color: navy;` declaration would still be a separate part of the block.",
+  "commonMistakes": [
+    {
+      "mistake": "Calling a whole `selector { ... }` construct a declaration.",
+      "correction": "Call the whole construct a style rule; each `property: value;` line inside it is a declaration."
+    },
+    {
+      "mistake": "Replacing the colon between a property and value with a space.",
+      "correction": "Use `property: value;`; whitespace can improve readability but does not replace the colon."
+    },
+    {
+      "mistake": "Assuming any text after a colon is a valid value.",
+      "correction": "Check the property definition, because each property accepts its own kinds of values."
+    },
+    {
+      "mistake": "Using `//` for a CSS comment or attempting to nest CSS comments.",
+      "correction": "Use `/* comment */`; CSS comments use that form for one or many lines and do not nest."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Style rule",
+      "b": "Declaration",
+      "distinction": "A style rule combines a selector with a declaration block; a declaration is one property/value instruction within that block."
+    },
+    {
+      "a": "Property",
+      "b": "Value",
+      "distinction": "A property names what is being set, while a value supplies the data for that particular property."
+    },
+    {
+      "a": "Active declaration",
+      "b": "Comment",
+      "distinction": "An active declaration participates in styling when valid; a comment is a human note ignored as styling instruction."
+    }
+  ],
+  "keyTakeaway": "A basic CSS style rule is selector plus braces plus declarations. Read each declaration as `property: value;`, and use comments as notes rather than as active CSS. Correct punctuation makes later CSS reasoning possible.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:css-syntax:1",
+      "prompt": "In `p { color: navy; }`, which part is the declaration?",
+      "options": [
+        "`p`",
+        "`{ color: navy; }`",
+        "`color: navy;`",
+        "the final `}`"
+      ],
+      "correctIndex": 2,
+      "explanation": "`color: navy;` pairs a property with a value. `p` is the selector, the braces enclose the declaration block, and the final brace closes it.",
+      "difficulty": "recall",
+      "skill": "Identify a CSS declaration",
+      "sourceIds": [
+        "css-syntax-level-3",
+        "mdn-css-syntax-introduction"
+      ]
+    },
+    {
+      "id": "web-development:foundations:css-syntax:2",
+      "prompt": "Which punctuation separates the property name from its value in a normal CSS declaration?",
+      "options": [
+        "A comma",
+        "A semicolon",
+        "A pair of braces",
+        "A colon"
+      ],
+      "correctIndex": 3,
+      "explanation": "A colon separates property and value, as in `padding: 1rem;`. Semicolons separate declarations, braces bound the block, and commas have other uses.",
+      "difficulty": "recall",
+      "skill": "Recognize declaration punctuation",
+      "sourceIds": [
+        "css-syntax-level-3",
+        "mdn-css-syntax-introduction"
+      ]
+    },
+    {
+      "id": "web-development:foundations:css-syntax:3",
+      "prompt": "A rule is `p { color: navy; margin 1rem; }`. What is the most accurate diagnosis?",
+      "options": [
+        "The `margin 1rem;` text lacks the colon needed for a normal declaration.",
+        "The selector must always end with a semicolon.",
+        "The `color` declaration becomes a margin declaration.",
+        "The braces turn both lines into comments."
+      ],
+      "correctIndex": 0,
+      "explanation": "`margin 1rem;` has no colon between a property and a value, so it is not a normal declaration. The selector does not require a semicolon, and the other alternatives misstate the role of syntax.",
+      "difficulty": "application",
+      "skill": "Diagnose a missing colon",
+      "sourceIds": [
+        "css-syntax-level-3",
+        "mdn-css-syntax-introduction"
+      ]
+    },
+    {
+      "id": "web-development:foundations:css-syntax:4",
+      "prompt": "Which form is a CSS comment that can be used on one line or across multiple lines?",
+      "options": [
+        "`// note`",
+        "`/* note */`",
+        "`<!-- note -->`",
+        "`# note`"
+      ],
+      "correctIndex": 1,
+      "explanation": "CSS comments begin with `/*` and end with `*/`. The other forms belong to other languages or are not CSS comment delimiters.",
+      "difficulty": "understanding",
+      "skill": "Use CSS comment syntax",
+      "sourceIds": [
+        "mdn-css-comments",
+        "css-syntax-level-3"
+      ]
+    },
+    {
+      "id": "web-development:foundations:css-syntax:5",
+      "prompt": "Why is `color: 17px;` not automatically a usable color declaration?",
+      "options": [
+        "Numbers may never appear in CSS values.",
+        "A semicolon is forbidden after values.",
+        "Each property has its own allowed value syntax, and a length is not a color value.",
+        "Only comments may follow a colon."
+      ],
+      "correctIndex": 2,
+      "explanation": "Property definitions determine what values are valid. A length can be suitable for some properties, but it is not a color value for `color`.",
+      "difficulty": "analysis",
+      "skill": "Relate a property to its allowed values",
+      "sourceIds": [
+        "css-syntax-level-3",
+        "mdn-css-properties-reference"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:css-syntax:1",
+      "prompt": "In `p { color: navy; }`, which part is the declaration?",
+      "options": [
+        "`p`",
+        "`{ color: navy; }`",
+        "`color: navy;`",
+        "the final `}`"
+      ],
+      "correctIndex": 2,
+      "explanation": "`color: navy;` pairs a property with a value. `p` is the selector, the braces enclose the declaration block, and the final brace closes it."
+    },
+    {
+      "id": "web-development:foundations:css-syntax:2",
+      "prompt": "Which punctuation separates the property name from its value in a normal CSS declaration?",
+      "options": [
+        "A comma",
+        "A semicolon",
+        "A pair of braces",
+        "A colon"
+      ],
+      "correctIndex": 3,
+      "explanation": "A colon separates property and value, as in `padding: 1rem;`. Semicolons separate declarations, braces bound the block, and commas have other uses."
+    },
+    {
+      "id": "web-development:foundations:css-syntax:3",
+      "prompt": "A rule is `p { color: navy; margin 1rem; }`. What is the most accurate diagnosis?",
+      "options": [
+        "The `margin 1rem;` text lacks the colon needed for a normal declaration.",
+        "The selector must always end with a semicolon.",
+        "The `color` declaration becomes a margin declaration.",
+        "The braces turn both lines into comments."
+      ],
+      "correctIndex": 0,
+      "explanation": "`margin 1rem;` has no colon between a property and a value, so it is not a normal declaration. The selector does not require a semicolon, and the other alternatives misstate the role of syntax."
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:css",
+    "web-development:foundations:selectors",
+    "web-development:foundations:cascade",
+    "web-development:foundations:specificity",
+    "web-development:foundations:box-model"
+  ],
+  "sources": [
+    "css-syntax-level-3",
+    "mdn-css-syntax-introduction",
+    "mdn-css-comments",
+    "mdn-css-properties-reference"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only standards and documentation; no source prose adapted.",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original explanatory lesson synthesized from CSSWG and MDN documentation, with independently written examples and questions."
+  },
+  "contentHash": "6dee0c8a9c3fbfc3",
+  "status": "source-verified",
+  "public": false
+}

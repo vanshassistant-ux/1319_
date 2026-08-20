@@ -1,0 +1,27 @@
+{
+  "topicId": "web-development:foundations:css",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {
+    "core": ["CSS as a style-sheet language", "the relationship between HTML structure and CSS presentation", "rules, declarations, properties, and values", "the browser applying styles to a document"],
+    "supporting": ["separation of concerns", "where CSS can be supplied to a document", "CSS as an evolving collection of specifications"],
+    "outOfScope": ["CSS syntax punctuation", "selectors", "the cascade", "specificity", "the box model", "responsive design", "individual CSS properties"]
+  },
+  "claims": [
+    {"claim":"CSS is a language for writing style sheets, and a style sheet applies to a document.","claimType":"TECHNICAL","sourceIds":["w3c-css-snapshot-2025","mdn-what-is-css"],"status":"supported"},
+    {"claim":"HTML supplies a page's structure and content while CSS describes how HTML elements should be displayed or presented.","claimType":"TECHNICAL","sourceIds":["mdn-what-is-css"],"status":"supported"},
+    {"claim":"A CSS rule associates a styling instruction with the document content it applies to; declarations state a property and its value.","claimType":"TECHNICAL","sourceIds":["mdn-css-syntax-introduction"],"status":"supported"},
+    {"claim":"A property names the visual feature being set and a value selects that feature's setting; a declaration consists of a property and value.","claimType":"TECHNICAL","sourceIds":["mdn-css-syntax-introduction"],"status":"supported"},
+    {"claim":"CSS is maintained as an evolving set of specifications rather than one frozen document.","claimType":"TECHNICAL","sourceIds":["w3c-css-snapshot-2025"],"status":"supported"},
+    {"claim":"CSS can be placed in a separate stylesheet or associated with an HTML document, allowing presentation rules to be reused across documents.","claimType":"TECHNICAL","sourceIds":["mdn-what-is-css"],"status":"supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft was generic boilerplate; it did not make source-supported claims about CSS and was replaced."],
+  "correctionsNeeded": ["Defined CSS as a style-sheet language rather than a vague web-development concept.", "Separated HTML structure from CSS presentation.", "Introduced the rule/declaration/property/value roles without teaching selector syntax or cascade behavior."],
+  "rightsIssues": ["MDN and W3C materials were read as REFERENCE_ONLY sources. The lesson uses independently written explanation and no source prose."],
+  "sourceRecords": [
+    {"id":"mdn-what-is-css","title":"MDN Web Docs — What is CSS?","provider":"Mozilla / MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/What_is_CSS","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"CC BY-SA 2.5","licenseUrl":"https://creativecommons.org/licenses/by-sa/2.5/","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Supports CSS's role in styling HTML, the HTML/CSS distinction, and stylesheets associated with documents. Used only for fact checking."},
+    {"id":"mdn-css-syntax-introduction","title":"MDN Web Docs — Introduction to CSS syntax: declarations, rulesets, and statements","provider":"Mozilla / MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Syntax/Introduction","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"CC BY-SA 2.5","licenseUrl":"https://creativecommons.org/licenses/by-sa/2.5/","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Supports the conceptual definitions of declarations, properties, values, and rules. The lesson deliberately does not teach syntax details."},
+    {"id":"w3c-css-snapshot-2025","title":"W3C — CSS Snapshot 2025","provider":"W3C","url":"https://www.w3.org/TR/css-2025/","sourceType":"standards-body","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Current standards snapshot defining CSS as a language for style sheets and documenting CSS as a set of specifications. Used for technical corroboration."}
+  ]
+}

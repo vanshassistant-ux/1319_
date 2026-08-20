@@ -1,0 +1,283 @@
+{
+  "id": "web-development:foundations:semantic-html",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "semantic-html",
+  "title": "Semantic HTML",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "web-development",
+    "html",
+    "semantics",
+    "accessibility",
+    "landmarks"
+  ],
+  "in30Seconds": "Semantic HTML means choosing HTML elements for the job their defined meaning describes. A `main` element marks a page's dominant content, `nav` marks a major navigation block, and `article` marks a self-contained item such as a post. `section`, `aside`, `header`, and `footer` add more specific structure. These names are useful information for browsers, tools, and people using the page; they are not just substitutes for `div` chosen because they look different.",
+  "whyItMatters": "Semantic markup turns a page from a pile of boxes into a document with roles. That makes code easier for a team to read and makes the structure available to browser features and assistive technologies. It also gives later work a better foundation: CSS can style a meaningful structure without changing what it means, and JavaScript can select elements whose purpose is clear. Semantics are not an accessibility guarantee by themselves—content, labels, interaction, and visual design still matter—but native elements are usually the first structural choice before adding ARIA.",
+  "learningObjectives": [
+    "Define semantic HTML as markup chosen for its specified meaning.",
+    "Distinguish a page's main content from navigation and complementary content.",
+    "Choose between article and section for a short content scenario.",
+    "Explain why header and footer can belong to a nested article.",
+    "Apply landmark labels when repeated landmarks need distinction."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Meaning is the design input",
+      "body": "HTML has generic containers, especially `div`, but it also has elements whose names carry defined roles. Choosing `nav` says that a block is navigation; choosing `main` identifies the document's dominant content; choosing `aside` identifies content that is related but separate from the surrounding content. This is semantic HTML: deciding what a piece of content is before deciding how it should look. CSS can put a `div` and a `nav` in the same position and give them identical colors, yet the two choices communicate different structure. A semantic element is not a decorative CSS class. It is a statement about the purpose of content in the document. Use a generic container when there is no more meaningful element for the grouping, such as a wrapper needed solely for layout. Do not turn every visible box into a section merely because it has a border."
+    },
+    {
+      "heading": "Landmarks organize a page-level view",
+      "body": "Several native elements commonly provide page regions, often called landmarks. `main` represents the dominant content of the document body; a normal page should have one main content region. `nav` is for a major block of navigation links, not every pair of links in a sentence or every small link list in a footer. `aside` represents content that is tangentially related to the nearby content, such as a pull quote, a related-resources panel, or a sidebar. `header` and `footer` provide introductory or concluding material for their nearest sectioning context. A site-wide header might contain a logo and primary navigation, while an article header can contain that article's title and byline; similarly, an article footer can contain tags or author information. Landmark-aware tools can expose these regions as ways to move through a page. When two landmarks of the same type are not distinguishable by their contents, a clear accessible name can distinguish them. That is guidance for a specific need, not a reason to add redundant labels to every element."
+    },
+    {
+      "heading": "Article, section, and the generic container",
+      "body": "`article` and `section` both group content, but they answer different questions. An `article` is a complete, self-contained composition that could in principle be reused or distributed independently. A news story, forum post, product review, or individual comment can qualify. A `section` is a thematic grouping within a document or application, usually with a heading: the chapters of a guide or the parts of a profile page are familiar examples. The HTML standard explicitly warns that section is not a generic container for styling or scripting; use `div` if grouping has no document-level meaning. A useful test is: would the group make sense as an entry in an outline or table of contents? If yes, section may fit. If the item could stand alone in a feed, article may fit. Neither test substitutes for reading the actual content, and an article can contain sections when its own content has thematic subdivisions."
+    },
+    {
+      "heading": "Build structure before adding extra roles",
+      "body": "Native HTML elements already have standardized meanings, so they should be the starting point for ordinary page structure. Adding an ARIA role that merely repeats a native element's role does not make the markup more semantic and can create maintenance confusion; this lesson does not cover complex ARIA patterns. Instead, begin with the content: identify the page's dominant task, separate major navigation from the content users came to read, then identify material that is complementary rather than central. Add headers and footers at the scope they actually describe. Finally, inspect whether repeated regions can be told apart by their visible or accessible names. Semantic choices do not repair a missing form label, unclear link text, bad keyboard interaction, or insufficient contrast. They make the document's structure available so those other accessibility responsibilities can be addressed on a sound base."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "semantic HTML",
+      "definition": "HTML chosen because its standardized meaning describes the role of the content."
+    },
+    {
+      "term": "landmark",
+      "definition": "A named structural region that can help users and tools identify major parts of a page."
+    },
+    {
+      "term": "main",
+      "definition": "The HTML element representing the dominant content of a document body."
+    },
+    {
+      "term": "navigation",
+      "definition": "A region containing links for moving to pages or locations, commonly marked with nav when it is a major block."
+    },
+    {
+      "term": "article",
+      "definition": "A self-contained composition that could in principle be independently distributed or reused."
+    },
+    {
+      "term": "section",
+      "definition": "A thematic grouping of content, typically with a heading."
+    },
+    {
+      "term": "aside",
+      "definition": "Content related to nearby content but separate from its main flow."
+    },
+    {
+      "term": "generic container",
+      "definition": "An element such as div used to group content when no more specific HTML meaning applies."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Semantic HTML is like labeling rooms by what people do in them instead of calling every room “space.” A library can tell you which room is for reading, which is for help, and which is the entrance. On a web page, `main` says where the central material is, `nav` says where major directions are, and `aside` says “this is related, but not the main story.” The labels help a reader of the code and can help tools describe the page’s shape.",
+    "analogy": "Imagine a school map with a cafeteria, gym, library, and classrooms rather than a grid of identical rectangles. The rooms may all have walls and doors, but their labels tell visitors what they are for. Semantic elements provide those purpose labels in a web document. A `section` is a themed room within a larger area, while an `article` is more like a complete handout that could be passed to someone by itself.",
+    "analogyLimits": "A web element is not a physical room, and a semantic name does not force content to be good or accessible. A `nav` full of vague links is still vague, and a correct landmark does not supply keyboard behavior, labels, or contrast. HTML meaning comes from the standard and the content's actual role, not from a visual map."
+  },
+  "workedExample": "A campus-news page has a site banner, a primary link list, one story, a related-events panel, and site information. A clear structure is: `<header>` for the site identity; `<nav aria-label=\"Primary\">` for the major links; `<main>` for the dominant page content; an `<article>` inside main for the self-contained story; an `<aside>` for the related-events panel; and a page `<footer>` for site information. Within the article, its own `<header>` can hold the headline and byline, and its own `<footer>` can hold the author credit. If the story has “Background” and “What happens next” divisions, each can be a headed `<section>`. A layout-only wrapper around a pair of cards should remain a `div`, because it does not add a document role. The example's nesting follows the definitions: article content is central, the events are complementary, and the two headers have different scopes.",
+  "commonMistakes": [
+    {
+      "mistake": "Using section for every visual box.",
+      "correction": "Use section for a thematic part of the document, usually with a heading; use div when grouping is only for layout or scripting."
+    },
+    {
+      "mistake": "Putting every group of links inside nav.",
+      "correction": "Reserve nav for major navigation blocks; ordinary inline links or a short footer link list may not need it."
+    },
+    {
+      "mistake": "Treating article as a synonym for any large container.",
+      "correction": "Use article for a complete item that could make sense independently, such as a post or comment."
+    },
+    {
+      "mistake": "Assuming semantic tags alone make a page accessible.",
+      "correction": "Use meaningful native structure, then also address names, content, interaction, and visual accessibility requirements."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "article",
+      "b": "section",
+      "distinction": "An article is self-contained and potentially reusable by itself; a section is a thematic subdivision of a document or application."
+    },
+    {
+      "a": "section",
+      "b": "div",
+      "distinction": "Section conveys a thematic document grouping; div is a generic container when no semantic grouping applies."
+    },
+    {
+      "a": "nav",
+      "b": "a group of links",
+      "distinction": "Nav identifies a major navigation block; not every collection of links is navigation."
+    }
+  ],
+  "keyTakeaway": "Choose HTML by the role its content actually serves. Use native landmarks and sectional elements where their meanings fit, and use a generic container when the grouping is only presentational or technical.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:semantic-html:1",
+      "prompt": "What is the best description of semantic HTML?",
+      "options": [
+        "HTML chosen for the meaning defined by its element.",
+        "HTML that always has a special visual style.",
+        "HTML that uses only class attributes.",
+        "HTML that replaces CSS and JavaScript."
+      ],
+      "correctIndex": 0,
+      "explanation": "Semantic HTML uses elements whose standardized meanings fit their content. Styling, class use, and replacing other technologies are separate matters.",
+      "difficulty": "recall",
+      "skill": "Defining semantic HTML",
+      "sourceIds": [
+        "whatwg-html-sections",
+        "mdn-semantics"
+      ]
+    },
+    {
+      "id": "web-development:foundations:semantic-html:2",
+      "prompt": "A page has a large list of site-wide destination links near its top. Which element best identifies that major block?",
+      "options": [
+        "`aside`",
+        "`nav`",
+        "`footer`",
+        "`section`"
+      ],
+      "correctIndex": 1,
+      "explanation": "A major block of navigation links belongs in nav. Aside is complementary content, footer is concluding material for a section, and section is a thematic grouping rather than a navigation-specific element.",
+      "difficulty": "application",
+      "skill": "Selecting a navigation landmark",
+      "sourceIds": [
+        "whatwg-html-sections"
+      ]
+    },
+    {
+      "id": "web-development:foundations:semantic-html:3",
+      "prompt": "Which situation most strongly supports using `article`?",
+      "options": [
+        "A wrapper used only to align two buttons.",
+        "A heading-free color band used by CSS.",
+        "An individual forum post that could be shown in a feed.",
+        "A site-wide list of primary links."
+      ],
+      "correctIndex": 2,
+      "explanation": "An independently meaningful forum post is a self-contained composition, which fits article. The other cases fit div, a generic container, or nav more closely.",
+      "difficulty": "application",
+      "skill": "Distinguishing article from other grouping choices",
+      "sourceIds": [
+        "whatwg-html-sections"
+      ]
+    },
+    {
+      "id": "web-development:foundations:semantic-html:4",
+      "prompt": "When is `section` a better choice than `div`?",
+      "options": [
+        "Whenever CSS needs a new layout row.",
+        "Whenever a programmer wants a shorter tag name.",
+        "Whenever content includes more than one paragraph.",
+        "When the content forms a thematic part of the document, typically with a heading."
+      ],
+      "correctIndex": 3,
+      "explanation": "Section represents a thematic grouping, usually headed. A div remains appropriate for layout-only or scripting-only grouping; paragraph count and tag length do not decide the meaning.",
+      "difficulty": "understanding",
+      "skill": "Choosing section versus a generic container",
+      "sourceIds": [
+        "whatwg-html-sections"
+      ]
+    },
+    {
+      "id": "web-development:foundations:semantic-html:5",
+      "prompt": "A story has its own headline and byline inside an article. What is the most accurate use of `header` there?",
+      "options": [
+        "It is invalid because header can appear only once per page.",
+        "It identifies introductory material for the article's own sectioning context.",
+        "It must contain the site's primary navigation.",
+        "It automatically gives every image accessible text."
+      ],
+      "correctIndex": 1,
+      "explanation": "Header can describe the nearest sectioning context, including an article. It is not limited to one per page, does not require navigation, and does not create image alternatives.",
+      "difficulty": "analysis",
+      "skill": "Reasoning about nested structural scope",
+      "sourceIds": [
+        "whatwg-html-sections"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:semantic-html:1",
+      "prompt": "What is the best description of semantic HTML?",
+      "options": [
+        "HTML chosen for the meaning defined by its element.",
+        "HTML that always has a special visual style.",
+        "HTML that uses only class attributes.",
+        "HTML that replaces CSS and JavaScript."
+      ],
+      "correctIndex": 0,
+      "explanation": "Semantic HTML uses elements whose standardized meanings fit their content. Styling, class use, and replacing other technologies are separate matters.",
+      "difficulty": "recall",
+      "skill": "Defining semantic HTML",
+      "sourceIds": [
+        "whatwg-html-sections",
+        "mdn-semantics"
+      ]
+    },
+    {
+      "id": "web-development:foundations:semantic-html:2",
+      "prompt": "A page has a large list of site-wide destination links near its top. Which element best identifies that major block?",
+      "options": [
+        "`aside`",
+        "`nav`",
+        "`footer`",
+        "`section`"
+      ],
+      "correctIndex": 1,
+      "explanation": "A major block of navigation links belongs in nav. Aside is complementary content, footer is concluding material for a section, and section is a thematic grouping rather than a navigation-specific element.",
+      "difficulty": "application",
+      "skill": "Selecting a navigation landmark",
+      "sourceIds": [
+        "whatwg-html-sections"
+      ]
+    },
+    {
+      "id": "web-development:foundations:semantic-html:3",
+      "prompt": "Which situation most strongly supports using `article`?",
+      "options": [
+        "A wrapper used only to align two buttons.",
+        "A heading-free color band used by CSS.",
+        "An individual forum post that could be shown in a feed.",
+        "A site-wide list of primary links."
+      ],
+      "correctIndex": 2,
+      "explanation": "An independently meaningful forum post is a self-contained composition, which fits article. The other cases fit div, a generic container, or nav more closely.",
+      "difficulty": "application",
+      "skill": "Distinguishing article from other grouping choices",
+      "sourceIds": [
+        "whatwg-html-sections"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:html",
+    "web-development:foundations:html-document-structure",
+    "web-development:foundations:headings-and-paragraphs",
+    "web-development:foundations:accessibility",
+    "web-development:foundations:wcag-basics"
+  ],
+  "sources": [
+    "whatwg-html-sections",
+    "mdn-semantics",
+    "w3c-wai-landmark-regions"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only standards and documentation; no source prose adapted",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original instruction synthesized from WHATWG, MDN, and W3C WAI sources; markup was reviewed for structural correspondence to the cited definitions."
+  },
+  "contentHash": "70094bc77a182075",
+  "status": "source-verified",
+  "public": false
+}

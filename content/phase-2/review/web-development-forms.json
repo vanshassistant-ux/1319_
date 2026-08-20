@@ -1,0 +1,284 @@
+{
+  "id": "web-development:foundations:forms",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "forms",
+  "title": "Forms",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "web-development",
+    "html",
+    "forms",
+    "accessibility",
+    "user-input"
+  ],
+  "in30Seconds": "An HTML form is a part of a web page where people use controls—such as text fields, checkboxes, and buttons—to provide data. A useful form connects each control to a clear label, gives submitted controls meaningful names, and provides a submit button. When submitted, the browser packages control names and values and sends them to the form's configured destination. The page interface and the server that receives data are separate parts of the system.",
+  "whyItMatters": "Forms are how people search, sign up, send feedback, place orders, and complete many other web tasks. Their structure affects whether a person can understand what information is requested and whether an application receives usable data. In later web-development work, forms connect HTML semantics with HTTP, JavaScript interaction, server-side processing, accessibility, and security. Starting with labels, appropriate controls, and clear names prevents a common mistake: treating the visual arrangement of boxes as the whole design while ignoring what users and receiving software need to know.",
+  "learningObjectives": [
+    "Define an HTML form and distinguish its browser interface from its server-side receiver.",
+    "Choose basic controls for text, a single choice, multiple choices, and longer text.",
+    "Explain how labels, ids, and names serve different purposes in a form.",
+    "Apply fieldset and legend to a related set of choices.",
+    "Trace a simple control name and value through a form submission."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "A form is an interface and a data contract",
+      "body": "A form is a component of a web page containing controls with which a person can provide data. Common controls include text inputs, checkboxes, radio buttons, textareas, select menus, and buttons. The browser presents the controls and collects the user's current selections or entries. If the form is submitted, the browser can send data to a service for further processing. That division matters: HTML describes the interface and how its data is named; a server-side application decides what to do after receipt. A form can be useful without client-side JavaScript. JavaScript may enhance interaction, but it does not replace the basic semantics of controls, labels, or submission. In this lesson, a form is a small, understandable agreement between a person, a browser, and a receiving service. It is not itself the database, business logic, login system, or security policy. Those are later layers with their own responsibilities."
+    },
+    {
+      "heading": "Controls should express the requested choice",
+      "body": "Start from the information needed, then select a native control that fits it. A one-line response such as an email address can use an input; a longer comment can use textarea. Radio buttons represent alternatives when a person should choose one option from a set. Checkboxes suit independent yes-or-no selections, including cases where more than one selection is allowed. A submit button asks the browser to submit the form. Native controls carry browser-defined behavior and semantics, so recreating them from generic containers creates unnecessary work and can lose expected keyboard and assistive-technology support. The type attribute can distinguish kinds of input, but type is not a guarantee that data is trustworthy or valid. It communicates an intended control and lets browsers offer appropriate interaction. A good label explains the requested information in ordinary language; placeholder text is not a substitute for a persistent label because it can disappear while someone is entering data."
+    },
+    {
+      "heading": "Labels, ids, names, and groups have different jobs",
+      "body": "A visible label tells a person what a control is for, and an associated label gives software a programmatic relationship to that control. One reliable pattern uses a label's for attribute with the input's matching id: `<label for=\"email\">Email address</label><input id=\"email\" name=\"email\" type=\"email\">`. The id identifies this particular element in the document. The name is different: it is the key used when the control's value is included in a submission. Leaving out name often means the receiving service will not receive that control's value as ordinary form data. For a set of radio buttons, sharing one name creates one choice group; the selected button's value identifies the choice. Related controls can be wrapped in fieldset, with legend naming the group, such as a delivery method. This provides context that individual labels alone may not supply. Labels, ids, names, and legends are therefore not interchangeable decorations; each answers a different question about the interface or its data."
+    },
+    {
+      "heading": "Submission crosses a boundary",
+      "body": "The form element can declare where and how a submission is sent. Its action attribute identifies the destination URL, and its method attribute identifies the submission method; GET and POST are common methods. For every successful control, the browser represents a name and value for the receiving service according to the form configuration. For example, a selected radio button with `name=\"delivery\"` and `value=\"pickup\"` can result in delivery=pickup among the submitted data. This is why opaque or duplicated names make downstream handling harder. The exact encoding and server implementation are outside this lesson, but the boundary is essential: browser-side messages and constraints do not make data safe or authoritative. A receiving server must verify and handle input appropriately because a person or program can send a request without following the page's interface. The design goal here is modest and practical: make the user's task explicit, send clearly named data, and avoid promising that HTML alone secures or validates an application."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "form",
+      "definition": "An HTML component containing controls through which a user can provide data for browser handling or submission."
+    },
+    {
+      "term": "form control",
+      "definition": "An interactive HTML element, such as an input, textarea, checkbox, or button, used in a form."
+    },
+    {
+      "term": "label",
+      "definition": "Text and markup associated with a control to identify the information or choice it represents."
+    },
+    {
+      "term": "id",
+      "definition": "A value assigned to one element so another part of the document, such as a label, can refer to that element."
+    },
+    {
+      "term": "name",
+      "definition": "The key by which a successful control's value is represented in a form submission."
+    },
+    {
+      "term": "value",
+      "definition": "The data associated with a control, such as entered text or the selected radio option's configured value."
+    },
+    {
+      "term": "fieldset",
+      "definition": "An HTML element that groups related form controls."
+    },
+    {
+      "term": "legend",
+      "definition": "The caption that names a fieldset's group of controls."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "A form is a page's question sheet. It has places where a person can type or choose an answer, plus a button that sends the completed sheet somewhere. Each place needs a clear name so the person knows what to answer. The computer also needs a name for each answer so it can tell the answers apart after they arrive. A form is useful when both kinds of naming are clear.",
+    "analogy": "Imagine a labeled paper order slip. The printed question ‘Email address’ is the label, the blank is the control, and the small field code used by the kitchen is the name. Several mutually exclusive choices belong under one heading, like delivery method. Pressing submit is putting the slip in a mailbox addressed to the receiving service.",
+    "analogyLimits": "A browser does not literally mail paper, and a server is not a kitchen. The browser follows formal rules for controls and submission. Also, putting a slip in a mailbox does not prove every answer is acceptable; the receiver still has to check the information."
+  },
+  "workedExample": "Consider a pickup-order form with an email field and two delivery choices. `<label for=\"email\">Email address</label><input id=\"email\" name=\"email\" type=\"email\">` makes the visible label refer to the one input whose id is email; its submitted key is also named email. For delivery, use `<fieldset><legend>Delivery method</legend><label><input type=\"radio\" name=\"delivery\" value=\"pickup\"> Pick up</label><label><input type=\"radio\" name=\"delivery\" value=\"ship\"> Ship</label></fieldset>`. The shared name means the radio buttons are one group. If the user chooses Pick up and enters a@b.example, the relevant pairs can be email=a@b.example and delivery=pickup. The browser can send those pairs only to the destination configured on the form; the destination must still check them before acting.",
+  "commonMistakes": [
+    {
+      "mistake": "Using placeholder text as the only description of a control.",
+      "correction": "Provide a real, associated label; placeholder text is supplemental and disappears when a value is entered."
+    },
+    {
+      "mistake": "Giving every radio button a different name.",
+      "correction": "Give alternatives in one radio group the same name and distinct values."
+    },
+    {
+      "mistake": "Assuming id and name are synonyms.",
+      "correction": "Use id to identify an element in the document and name to identify submitted control data."
+    },
+    {
+      "mistake": "Treating browser checks as the only validation.",
+      "correction": "Use browser feedback for usability, but ensure the receiving server verifies input before relying on it."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "label",
+      "b": "name",
+      "distinction": "A label explains a control to users and associates it with that control; name is the submission key for its value."
+    },
+    {
+      "a": "radio buttons",
+      "b": "checkboxes",
+      "distinction": "A radio group represents one choice among alternatives; independent checkboxes can represent multiple selected options."
+    },
+    {
+      "a": "browser form",
+      "b": "server-side receiver",
+      "distinction": "The browser presents controls and sends data; the receiver interprets, verifies, and processes the submission."
+    }
+  ],
+  "keyTakeaway": "A sound basic form uses native controls, clear associated labels, meaningful submission names, and grouped related choices. Submission sends data across a browser-to-server boundary; it does not remove the receiving system's responsibility to verify it.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:forms:1",
+      "prompt": "What does the name attribute primarily provide for a successful form control?",
+      "options": [
+        "The key used for its submitted value",
+        "The visible text that describes it",
+        "A unique document-wide selector in every case",
+        "The URL that receives the form"
+      ],
+      "correctIndex": 0,
+      "explanation": "name identifies submitted control data. A label provides visible description, id can identify an element, and action identifies a submission destination.",
+      "difficulty": "recall",
+      "skill": "Identify the submission role of name",
+      "sourceIds": [
+        "whatwg-html-forms"
+      ]
+    },
+    {
+      "id": "web-development:foundations:forms:2",
+      "prompt": "Which markup best associates a visible label with one input?",
+      "options": [
+        "<label>Email</label><input name=\"email\">",
+        "<label for=\"email\">Email</label><input id=\"email\" name=\"email\">",
+        "<input label=\"Email\" name=\"email\">",
+        "<legend>Email</legend><input name=\"email\">"
+      ],
+      "correctIndex": 1,
+      "explanation": "A label's for value matches the target control's id. The other examples do not make that explicit label-control association.",
+      "difficulty": "application",
+      "skill": "Apply explicit label association",
+      "sourceIds": [
+        "whatwg-html-forms",
+        "wai-labeling-controls"
+      ]
+    },
+    {
+      "id": "web-development:foundations:forms:3",
+      "prompt": "A person must select exactly one shipping speed. Which setup expresses that relationship?",
+      "options": [
+        "Several checkboxes, each with a different name",
+        "Several text inputs named speed",
+        "Radio inputs sharing name=\"shipping\" and using distinct values",
+        "One button for each speed with no controls"
+      ],
+      "correctIndex": 2,
+      "explanation": "Radio buttons sharing a name form one choice group, while their values distinguish the choices. Checkboxes express independent selections.",
+      "difficulty": "application",
+      "skill": "Choose a control group for a single choice",
+      "sourceIds": [
+        "whatwg-html-forms"
+      ]
+    },
+    {
+      "id": "web-development:foundations:forms:4",
+      "prompt": "Why should a server verify submitted input even when the browser gives a required-field message?",
+      "options": [
+        "Required makes the data encrypted",
+        "A form never sends named values",
+        "The browser cannot submit a POST request",
+        "A user or program can bypass browser-side checks"
+      ],
+      "correctIndex": 3,
+      "explanation": "Client-side checks help users but are not a trust boundary; requests can be made without following the page's checks. The other statements are false.",
+      "difficulty": "analysis",
+      "skill": "Recognize the browser-server validation boundary",
+      "sourceIds": [
+        "whatwg-html-forms"
+      ]
+    },
+    {
+      "id": "web-development:foundations:forms:5",
+      "prompt": "What is the purpose of fieldset with legend around related controls?",
+      "options": [
+        "To group related controls and give the group a caption",
+        "To turn every field into a required field",
+        "To send data without a form element",
+        "To replace labels for each individual control"
+      ],
+      "correctIndex": 0,
+      "explanation": "fieldset groups related controls and legend captions that group. They do not impose requiredness, submit data alone, or replace individual labels.",
+      "difficulty": "understanding",
+      "skill": "Explain group context in forms",
+      "sourceIds": [
+        "whatwg-html-forms",
+        "wai-labeling-controls"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:forms:1",
+      "prompt": "What does the name attribute primarily provide for a successful form control?",
+      "options": [
+        "The key used for its submitted value",
+        "The visible text that describes it",
+        "A unique document-wide selector in every case",
+        "The URL that receives the form"
+      ],
+      "correctIndex": 0,
+      "explanation": "name identifies submitted control data. A label provides visible description, id can identify an element, and action identifies a submission destination.",
+      "difficulty": "recall",
+      "skill": "Identify the submission role of name",
+      "sourceIds": [
+        "whatwg-html-forms"
+      ]
+    },
+    {
+      "id": "web-development:foundations:forms:2",
+      "prompt": "Which markup best associates a visible label with one input?",
+      "options": [
+        "<label>Email</label><input name=\"email\">",
+        "<label for=\"email\">Email</label><input id=\"email\" name=\"email\">",
+        "<input label=\"Email\" name=\"email\">",
+        "<legend>Email</legend><input name=\"email\">"
+      ],
+      "correctIndex": 1,
+      "explanation": "A label's for value matches the target control's id. The other examples do not make that explicit label-control association.",
+      "difficulty": "application",
+      "skill": "Apply explicit label association",
+      "sourceIds": [
+        "whatwg-html-forms",
+        "wai-labeling-controls"
+      ]
+    },
+    {
+      "id": "web-development:foundations:forms:3",
+      "prompt": "A person must select exactly one shipping speed. Which setup expresses that relationship?",
+      "options": [
+        "Several checkboxes, each with a different name",
+        "Several text inputs named speed",
+        "Radio inputs sharing name=\"shipping\" and using distinct values",
+        "One button for each speed with no controls"
+      ],
+      "correctIndex": 2,
+      "explanation": "Radio buttons sharing a name form one choice group, while their values distinguish the choices. Checkboxes express independent selections.",
+      "difficulty": "application",
+      "skill": "Choose a control group for a single choice",
+      "sourceIds": [
+        "whatwg-html-forms"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:semantic-html",
+    "web-development:foundations:forms-2",
+    "web-development:foundations:accessibility",
+    "web-development:foundations:http-basics",
+    "web-development:foundations:web-security-basics"
+  ],
+  "sources": [
+    "whatwg-html-forms",
+    "mdn-your-first-form",
+    "wai-labeling-controls"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only documentation and standards sources; no source prose adapted.",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original instructional explanation synthesized from current standards and accessibility guidance."
+  },
+  "contentHash": "60ebb2161d8b672e",
+  "status": "source-verified",
+  "public": false
+}

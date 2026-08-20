@@ -1,0 +1,291 @@
+{
+  "id": "web-development:foundations:tables",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "tables",
+  "title": "Tables",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "web-development",
+    "html",
+    "tables",
+    "accessibility",
+    "semantic-markup"
+  ],
+  "in30Seconds": "An HTML table represents related data arranged in rows and columns, such as a course schedule or a comparison of measurements. Use `table` for data that has that grid relationship, not to position a page's visual layout. Inside it, `tr` makes a row, `th` marks a header cell, and `td` marks a data cell. A `caption` names the table, while `thead` and `tbody` can group its header and body rows. Clear headers make the data easier to read and navigate.",
+  "whyItMatters": "Tables turn a two-dimensional data relationship into markup that browsers and assistive technologies can interpret. In college work, they are useful for presenting observations, schedules, and comparisons without flattening the relationships among values. In professional work, correct table structure helps a reader identify which heading belongs to a number before drawing a conclusion. The same discipline prevents a common web mistake: using a table to arrange a page visually. Layout belongs to CSS; a data table should communicate data and its labels.",
+  "learningObjectives": [
+    "Define an HTML table as markup for tabular data rather than page layout.",
+    "Identify the jobs of `table`, `tr`, `th`, and `td`.",
+    "Explain how a `caption`, `thead`, and `tbody` add useful structure.",
+    "Apply `scope` to simple row and column headers.",
+    "Evaluate whether a short grid of information should be marked up as a table."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "A table is a data relationship",
+      "body": "An HTML `table` represents data with more than one dimension. A useful test is whether a reader needs both a row label and a column label to interpret a value. In a small enrollment table, for example, the number 28 is incomplete until the reader knows which course and which term it describes. The table model expresses that relationship as a grid of rows, columns, and cells. This is different from a collection of cards, a navigation menu, or two side-by-side page regions. Those may look rectangular, but they do not necessarily express row-and-column data. The HTML standard specifically says that tables must not be used as layout aids. This is more than a style preference: a layout table gives data-extraction and assistive tools a misleading grid to interpret. Keep the division of labor clear. HTML says that information is tabular and identifies its parts; CSS can later control spacing, borders, and responsive presentation. This lesson concerns the data structure, not visual design."
+    },
+    {
+      "heading": "Cells, rows, captions, and sections",
+      "body": "The outer `table` element contains the table's structural parts. A `tr` is a table row. Within a row, `th` is a header cell and `td` is a data cell. A `caption` gives the table a title or identifying description; it describes the table as a whole rather than repeating a column heading. In a basic table, authors often put the column-header row in `thead` and the data rows in `tbody`. These elements group rows into sections. They do not turn ordinary data cells into headers: use `th` for that semantic job. A simple structure might begin with a caption, then a `thead` containing one row of column headers, then a `tbody` containing the records. The standard defines an ordered content model for these elements, so treating them as interchangeable wrappers is a poor habit. A table can be simple without every optional section, but structure should reflect the data honestly. Do not add a `thead` merely because a design mockup has a colored first row; use it when those rows are the table's header group."
+    },
+    {
+      "heading": "Header associations make values interpretable",
+      "body": "A value cell is most useful when its relevant headers are clear. In a table whose first row names columns, each column heading can be a `th` with `scope=\"col\"`. In a table whose first cell in each data row names the record, that row label can be a `th` with `scope=\"row\"`. The `scope` value expresses which direction the header covers. This explicit pattern is especially clear for a simple grid, and it gives authors a way to review the intended association instead of assuming appearance communicates it. A caption supplies the table-level context; headers supply local context for individual cells. Neither is a replacement for the other. Complex tables with multiple levels of headers, merged cells, or irregular groups need deliberate association design and testing, so do not blindly copy a simple pattern into them. For a beginning lesson, the goal is narrower: make a simple table whose columns and rows have unambiguous labels, then ensure each data cell can be understood from those labels."
+    },
+    {
+      "heading": "Read a table before you write one",
+      "body": "Before writing markup, sketch the data relationship. Ask what the table is called, what each column means, whether each record needs a row label, and what each remaining cell measures. Then write the caption and headers in plain language. If a proposed cell cannot be explained by combining its row and column headings, the data model is probably incomplete. This review also catches a frequent accessibility mistake: placing visually bold text in a `td` and assuming it is a header. Visual emphasis may help some readers, but the markup still describes a data cell. Use `th` where the content labels other cells. Next, check whether the example is actually a table. A pair of labels beside form controls belongs in a form; a list of site links belongs in navigation; a product-card grid often is a list. Tables are valuable precisely because they carry a specific meaning. Using them only when that meaning exists produces simpler markup and more reliable reading experiences."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "data table",
+      "definition": "An HTML table used to represent related information arranged by rows and columns."
+    },
+    {
+      "term": "table cell",
+      "definition": "One position in a table's row-and-column grid that contains a header or data value."
+    },
+    {
+      "term": "row",
+      "definition": "A horizontal collection of table cells represented in HTML by a `tr` element."
+    },
+    {
+      "term": "header cell",
+      "definition": "A table cell, represented by `th`, that labels related data cells."
+    },
+    {
+      "term": "data cell",
+      "definition": "A table cell, represented by `td`, that holds a data value rather than a label."
+    },
+    {
+      "term": "caption",
+      "definition": "A table child element that supplies the table's title or identifying description."
+    },
+    {
+      "term": "table head",
+      "definition": "The `thead` section that groups a table's header rows."
+    },
+    {
+      "term": "table body",
+      "definition": "The `tbody` section that groups a table's main data rows."
+    },
+    {
+      "term": "scope",
+      "definition": "A `th` attribute that states whether a header applies to a row, column, row group, or column group."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "A data table is a careful way to make a grid of facts. The labels at the top and side are part of the information, not just decoration. When you see a number in the middle, the labels tell you what it means. HTML has special pieces for the table, its rows, its labels, and its values so that a browser can understand the same relationships a person sees. A table is not a tool for shoving a page into columns; it is for facts that belong in a grid.",
+    "analogy": "Imagine a spreadsheet with name labels taped above each column and beside each row. A cell such as 28 only becomes meaningful when you can trace upward and sideways to those labels. The table caption is the folder label telling you what the whole sheet is about. `th` cells are the row and column labels, while `td` cells are the entries on the sheet.",
+    "analogyLimits": "HTML is not a spreadsheet program: it does not calculate formulas or decide the best visual layout. Also, a complicated table can have more than one applicable header, so a simple upward-and-sideways tracing picture is not enough for every real table."
+  },
+  "workedExample": "Suppose a department wants to publish course seats for two terms. The table's caption is `Available seats by course and term`. Its column headers are `Course`, `Fall`, and `Spring`, each written as `th scope=\"col\"` in a `thead` row. In the body, the row begins with `<th scope=\"row\">BIO 101</th>`, followed by `<td>28</td>` and `<td>19</td>`. The first data value is therefore read using the column header Fall and the row header BIO 101: it means 28 Fall seats for BIO 101. The `scope` directions match the data relationship. Replacing the first cell with a bold `td` would make it look like a row label but would not mark it as a header cell.",
+  "commonMistakes": [
+    {
+      "mistake": "Using a table to arrange page columns or visual spacing.",
+      "correction": "Use a table only for tabular data; use CSS for page presentation and layout."
+    },
+    {
+      "mistake": "Using `td` for text that labels a row or column.",
+      "correction": "Use `th` for a cell that serves as a header, and use `scope` in a simple row-or-column pattern."
+    },
+    {
+      "mistake": "Treating a caption as one more column heading.",
+      "correction": "Use a caption to identify the table as a whole; use header cells to label columns or rows."
+    },
+    {
+      "mistake": "Assuming `thead` makes every cell inside it a header.",
+      "correction": "`thead` groups header rows, while `th` is the element that marks an individual header cell."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "`th`",
+      "b": "`td`",
+      "distinction": "`th` is a header cell that labels related cells; `td` is a data cell holding a value."
+    },
+    {
+      "a": "`caption`",
+      "b": "column header",
+      "distinction": "A caption identifies the complete table; a column header identifies the meaning of values in one column."
+    },
+    {
+      "a": "data table",
+      "b": "page layout",
+      "distinction": "A data table communicates a row-and-column relationship; page layout controls visual placement and belongs to CSS."
+    }
+  ],
+  "keyTakeaway": "Use HTML tables for real row-and-column data. Give the table a caption, mark labels with header cells, and make simple row or column relationships explicit with `scope`; do not use tables as a layout mechanism.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:tables:1",
+      "prompt": "What kind of content is an HTML `table` intended to represent?",
+      "options": [
+        "Related data organized by rows and columns.",
+        "Any two areas placed side by side.",
+        "A page's primary navigation links.",
+        "A set of form labels and inputs."
+      ],
+      "correctIndex": 0,
+      "explanation": "A table represents tabular, multidimensional data. Side-by-side layout, navigation, and forms have different HTML structures.",
+      "difficulty": "recall",
+      "skill": "Identifying a data table's purpose",
+      "sourceIds": [
+        "whatwg-html-tables",
+        "mdn-html-table-basics"
+      ]
+    },
+    {
+      "id": "web-development:foundations:tables:2",
+      "prompt": "Which element marks a header cell that labels related data cells?",
+      "options": [
+        "`table`",
+        "`th`",
+        "`tr`",
+        "`td`"
+      ],
+      "correctIndex": 1,
+      "explanation": "`th` represents a header cell. `td` is a data cell, `tr` is a row, and `table` is the outer table element.",
+      "difficulty": "recall",
+      "skill": "Distinguishing table elements",
+      "sourceIds": [
+        "whatwg-html-tables",
+        "mdn-html-table-basics"
+      ]
+    },
+    {
+      "id": "web-development:foundations:tables:3",
+      "prompt": "A simple schedule has column headings for Monday and Tuesday. Which markup most clearly states that the Monday heading applies down its column?",
+      "options": [
+        "`<td>Monday</td>`",
+        "`<caption>Monday</caption>`",
+        "`<th scope=\"col\">Monday</th>`",
+        "`<tbody>Monday</tbody>`"
+      ],
+      "correctIndex": 2,
+      "explanation": "A column header is a `th`, and `scope=\"col\"` explicitly identifies its column relationship. The other choices do not express that association.",
+      "difficulty": "application",
+      "skill": "Applying column-header scope",
+      "sourceIds": [
+        "whatwg-html-tables",
+        "wai-tables-tutorial"
+      ]
+    },
+    {
+      "id": "web-development:foundations:tables:4",
+      "prompt": "What is the best role for a table caption in a sales table?",
+      "options": [
+        "Giving each number its row label.",
+        "Grouping only the footer rows.",
+        "Adding visual spacing above the grid.",
+        "Identifying what the whole table describes."
+      ],
+      "correctIndex": 3,
+      "explanation": "A caption identifies the table as a whole. Row labels belong in row headers, grouping is done by table sections, and spacing is presentation rather than a caption's role.",
+      "difficulty": "understanding",
+      "skill": "Explaining caption purpose",
+      "sourceIds": [
+        "whatwg-html-tables",
+        "wai-tables-tutorial"
+      ]
+    },
+    {
+      "id": "web-development:foundations:tables:5",
+      "prompt": "A designer proposes a table solely to put an article beside a sidebar. What is the correct response?",
+      "options": [
+        "Use the table because any rectangle is tabular.",
+        "Use CSS layout instead because the content is not row-and-column data.",
+        "Put the sidebar in a `caption` so the table becomes accessible.",
+        "Use `scope=\"row\"` on the article to create the layout."
+      ],
+      "correctIndex": 1,
+      "explanation": "The proposed structure is page layout, not tabular data; the HTML standard says tables must not be used as layout aids. Captions and scope do not change that purpose.",
+      "difficulty": "analysis",
+      "skill": "Evaluating table versus layout use",
+      "sourceIds": [
+        "whatwg-html-tables"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:tables:1",
+      "prompt": "What kind of content is an HTML `table` intended to represent?",
+      "options": [
+        "Related data organized by rows and columns.",
+        "Any two areas placed side by side.",
+        "A page's primary navigation links.",
+        "A set of form labels and inputs."
+      ],
+      "correctIndex": 0,
+      "explanation": "A table represents tabular, multidimensional data. Side-by-side layout, navigation, and forms have different HTML structures.",
+      "difficulty": "recall",
+      "skill": "Identifying a data table's purpose",
+      "sourceIds": [
+        "whatwg-html-tables",
+        "mdn-html-table-basics"
+      ]
+    },
+    {
+      "id": "web-development:foundations:tables:2",
+      "prompt": "Which element marks a header cell that labels related data cells?",
+      "options": [
+        "`table`",
+        "`th`",
+        "`tr`",
+        "`td`"
+      ],
+      "correctIndex": 1,
+      "explanation": "`th` represents a header cell. `td` is a data cell, `tr` is a row, and `table` is the outer table element.",
+      "difficulty": "recall",
+      "skill": "Distinguishing table elements",
+      "sourceIds": [
+        "whatwg-html-tables",
+        "mdn-html-table-basics"
+      ]
+    },
+    {
+      "id": "web-development:foundations:tables:3",
+      "prompt": "A simple schedule has column headings for Monday and Tuesday. Which markup most clearly states that the Monday heading applies down its column?",
+      "options": [
+        "`<td>Monday</td>`",
+        "`<caption>Monday</caption>`",
+        "`<th scope=\"col\">Monday</th>`",
+        "`<tbody>Monday</tbody>`"
+      ],
+      "correctIndex": 2,
+      "explanation": "A column header is a `th`, and `scope=\"col\"` explicitly identifies its column relationship. The other choices do not express that association.",
+      "difficulty": "application",
+      "skill": "Applying column-header scope",
+      "sourceIds": [
+        "whatwg-html-tables",
+        "wai-tables-tutorial"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:html-document-structure",
+    "web-development:foundations:semantic-html",
+    "web-development:foundations:css",
+    "web-development:foundations:css-grid"
+  ],
+  "sources": [
+    "whatwg-html-tables",
+    "mdn-html-table-basics",
+    "wai-tables-tutorial"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only standards and documentation sources; no source prose adapted.",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original explanation and questions based on independently checked HTML and accessibility guidance."
+  },
+  "contentHash": "31b4421df56596f1",
+  "status": "source-verified",
+  "public": false
+}

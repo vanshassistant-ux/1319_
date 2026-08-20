@@ -1,0 +1,27 @@
+{
+  "topicId": "web-development:foundations:semantic-html",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {
+    "core": ["semantic HTML", "native landmarks", "article versus section", "header and footer context"],
+    "supporting": ["document structure", "assistive-technology navigation"],
+    "outOfScope": ["heading-level fundamentals", "ARIA authoring patterns", "CSS layout", "form semantics"]
+  },
+  "claims": [
+    {"claim":"Semantic HTML uses element names whose defined meanings describe the role of content rather than merely acting as generic containers.","claimType":"TECHNICAL","sourceIds":["whatwg-html-sections","mdn-semantics"],"status":"supported"},
+    {"claim":"The main element represents the dominant content of a document's body and a document must not have more than one main element without a hierarchy attribute.","claimType":"TECHNICAL","sourceIds":["whatwg-html-sections"],"status":"supported"},
+    {"claim":"An article is a self-contained composition that could in principle be independently distributed or reused, while a section is a thematic grouping and not a generic styling container.","claimType":"TECHNICAL","sourceIds":["whatwg-html-sections"],"status":"supported"},
+    {"claim":"A nav element identifies a major navigation block; not every cluster of links needs nav markup.","claimType":"TECHNICAL","sourceIds":["whatwg-html-sections"],"status":"supported"},
+    {"claim":"Native HTML landmark elements provide landmark semantics, and labeling distinguishable landmarks is useful when more than one exists.","claimType":"TECHNICAL","sourceIds":["w3c-wai-landmark-regions","whatwg-html-sections"],"status":"supported"},
+    {"claim":"A header or footer describes the nearest sectioning content or sectioning root, rather than always the whole page.","claimType":"TECHNICAL","sourceIds":["whatwg-html-sections"],"status":"supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft contained no source-verifiable semantic HTML instruction."],
+  "correctionsNeeded": ["Replaced generic boilerplate with standards-based distinctions among landmarks and sectional elements."],
+  "rightsIssues": ["All sources are reference-only documentation or standards; no source wording was reproduced."],
+  "sourceRecords": [
+    {"id":"whatwg-html-sections","title":"HTML Living Standard — Sections","provider":"WHATWG","url":"https://html.spec.whatwg.org/multipage/sections.html","sourceType":"standards-body","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Defines article, section, nav, aside, header, footer, and main; used to verify element-specific claims and the original example."},
+    {"id":"mdn-semantics","title":"Semantics — MDN Web Docs","provider":"MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Glossary/Semantics","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"CC BY-SA 2.5","licenseUrl":"https://creativecommons.org/licenses/by-sa/2.5/","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Supports the practical distinction between semantic and non-semantic HTML. No documentation wording was adapted."},
+    {"id":"w3c-wai-landmark-regions","title":"Landmark Regions","provider":"W3C Web Accessibility Initiative","url":"https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/","sourceType":"standards-body","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Supports landmark use and labeling guidance. Used for accessibility context without claiming that markup alone guarantees accessibility."}
+  ]
+}

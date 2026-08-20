@@ -1,0 +1,276 @@
+{
+  "id": "web-development:foundations:selectors",
+  "subjectSlug": "web-development",
+  "unitSlug": "foundations",
+  "slug": "selectors",
+  "title": "CSS Selectors",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "web-development",
+    "css",
+    "selectors",
+    "html"
+  ],
+  "in30Seconds": "A CSS selector is the part of a rule that says which HTML elements the declaration block can style. `p` selects paragraph elements, `.note` selects elements whose class includes `note`, and `#summary` selects the element with that ID. `[disabled]` selects elements that have a disabled attribute. A space joins selectors as a descendant relationship: `article p` matches paragraphs inside an article. Selectors identify matches; cascade and specificity decide conflicts later.",
+  "whyItMatters": "Selectors connect an HTML document's structure and attributes to CSS rules. Reading them accurately helps you find why a rule applies to one element but not another, and writing them carefully keeps a stylesheet tied to meaningful markup rather than arbitrary visual positions. They also prepare you for later work with the cascade and specificity: first determine which elements a selector matches, then reason about competing rules. A small, precise selector is often easier for a teammate to maintain and safer to reuse when a page changes.",
+  "learningObjectives": [
+    "Define a CSS selector and distinguish matching from conflict resolution.",
+    "Identify type, class, ID, and attribute selectors in a CSS rule.",
+    "Explain how a descendant combinator uses document ancestry.",
+    "Apply a compound selector to determine which element matches.",
+    "Diagnose why a selector does not match a proposed HTML element."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Selectors are matching patterns",
+      "body": "A CSS rule has a selector and a declaration block. The selector is a pattern evaluated against elements in the document tree; the block supplies declarations for the elements that match. In `p { color: navy; }`, `p` is a type selector. It matches paragraph elements, not every node that happens to display text. This distinction matters because CSS works from the document's element structure and attributes. The same selector can match zero, one, or many elements. A selector is therefore not an instruction to create an element or a promise that a style will visibly win; it is a way of identifying candidate elements. Whether a declaration ultimately wins against another matching declaration belongs to the later topics of cascade and specificity. Keep those questions separate while learning matching. When debugging, begin with the concrete question: does this selector match this particular element in this document?\n\nThe basic selector forms are intentionally close to HTML vocabulary. A type selector uses an element name, such as `button` or `h2`. A class selector begins with a period, so `.warning` matches an element with `class=\"warning\"`; an element may have several class tokens and can match several class selectors. An ID selector begins with `#`, so `#site-search` matches an element whose ID value is `site-search`. IDs are commonly used as unique document identifiers, but the selector notation itself is about that value. These forms can be combined without spaces. For example, `button.primary` is a compound selector: it matches a single button element that also has the `primary` class. It does not mean a `primary` element inside a button."
+    },
+    {
+      "heading": "Attributes and relationships add precision",
+      "body": "Attribute selectors inspect the attributes written on an element. `[disabled]` matches an element that has a `disabled` attribute, regardless of the attribute's spelling in CSS. `[type=\"email\"]` matches elements whose `type` attribute has the value `email`. The equals form is useful when an HTML attribute carries an explicit category; the presence form is useful when the mere presence of an attribute is meaningful. Attribute selectors do not invent accessibility or behavior. They only match what the HTML already contains, so the underlying element and attribute must still be appropriate for the task.\n\nA space between two selectors has a specific meaning: it is the descendant combinator. `main a` matches an anchor element if it occurs anywhere inside a `main` element, even if other elements lie between them. It does not match the `main` itself, and it does not require the anchor to be an immediate child. This is a relationship in the document tree, not a visual relationship on the screen. In `<main><section><a href=\"/help\">Help</a></section></main>`, `main a` matches the link because `main` is an ancestor of the anchor. In contrast, `maina` would be a type selector for an element named `maina`, which is a different pattern altogether. Spaces in selectors deserve deliberate attention because removing one can change matching completely."
+    },
+    {
+      "heading": "Build selectors from the markup outward",
+      "body": "A reliable workflow starts with the HTML. Name the element or elements you mean to style, then choose the smallest stable detail that distinguishes them. If every call-to-action is a button with the class `primary`, `button.primary` expresses both facts. If the rule should apply only to email inputs, `input[type=\"email\"]` states the element type and the attribute value. If the target is links inside an article, `article a` describes ancestry. Test the selector against multiple examples, including an element that looks similar but should not match.\n\nConsider this markup: `<article class=\"story\"><h2>News</h2><p class=\"lead\">Opening text</p><p>More text</p><a href=\"/read\">Read</a></article>`. `p` matches both paragraphs. `.lead` matches only the first paragraph. `article .lead` also matches that first paragraph because it is inside the article. `article p.lead` is a compound-and-descendant pattern: the selected element must be a paragraph with class `lead` and have an article ancestor. `[href]` matches the link because it has that attribute. None of these statements answers whether a competing rule takes precedence; they are matching facts. Separating matching from conflict resolution makes CSS inspection much less mysterious and keeps this lesson's boundary clear."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "selector",
+      "definition": "A CSS pattern used to identify elements in a document tree."
+    },
+    {
+      "term": "type selector",
+      "definition": "A selector that matches elements by element name, such as `p` or `button`."
+    },
+    {
+      "term": "class selector",
+      "definition": "A selector beginning with `.` that matches an element carrying the named class token."
+    },
+    {
+      "term": "ID selector",
+      "definition": "A selector beginning with `#` that matches an element with the named ID value."
+    },
+    {
+      "term": "attribute selector",
+      "definition": "A selector that matches according to an element's attribute presence or value."
+    },
+    {
+      "term": "compound selector",
+      "definition": "Simple selectors written together with no combinator, all of which must match one element."
+    },
+    {
+      "term": "descendant combinator",
+      "definition": "Whitespace between selectors that matches an element with a matching ancestor."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Think of a web page as a school directory. CSS selectors are the ways you ask the directory for people: all students in grade six, everyone in the chess club, or the person with one particular locker number. A selector does not paint anything by itself. It points CSS to the entries that should receive a rule.\n\n`p` is like asking for every paragraph-shaped entry. `.note` is like asking for every entry carrying a Note sticker. `#summary` is like using one exact name tag. `[disabled]` is like asking for every device marked Disabled. `article p` is like asking for paragraphs that appear somewhere inside an article folder.\n\nWhen two rules point at the same entry, another set of CSS rules decides which one wins. That later decision is not what selectors do.",
+    "analogy": "A selector is a directory search filter: it identifies a group before any action is taken on that group.",
+    "analogyLimits": "A real directory search may rank results or correct spelling. CSS selector matching does not guess an intended element, and the cascade—not the selector—settles competing style declarations."
+  },
+  "workedExample": "Start with `<article><p class=\"lead\">Welcome</p><p>Details</p><input type=\"email\" disabled></article>`. The selector `p` matches both paragraph elements. `.lead` matches only `Welcome` because only its class list contains `lead`. `article p` still matches both paragraphs: each has an `article` ancestor. `input[type=\"email\"]` matches the input because it is an input and its type value is `email`; `[disabled]` also matches it because the attribute is present. `p.lead` matches one element, not two: no space means the same element must satisfy both the type and class conditions. This example asks only which elements match, not which rule would win if two declarations conflict.",
+  "commonMistakes": [
+    {
+      "mistake": "Reading `button.primary` as a primary element inside a button.",
+      "correction": "There is no space, so it is one button element that must also have class `primary`."
+    },
+    {
+      "mistake": "Assuming `article p` means a direct child paragraph.",
+      "correction": "A descendant can occur at any depth below the article; direct-child matching is a separate selector form."
+    },
+    {
+      "mistake": "Using `#` when the HTML has a class value.",
+      "correction": "Use `.` for a class selector and `#` for an ID selector."
+    },
+    {
+      "mistake": "Treating a selector match as proof that its declaration wins.",
+      "correction": "First establish matching; use cascade and specificity rules later to resolve conflicts."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "`p.lead`",
+      "b": "`p .lead`",
+      "distinction": "The first matches a paragraph that has class `lead`; the second matches an element with class `lead` inside a paragraph."
+    },
+    {
+      "a": "`[disabled]`",
+      "b": "`[type=\"email\"]`",
+      "distinction": "The first tests attribute presence; the second tests a specific attribute value."
+    },
+    {
+      "a": "class selector",
+      "b": "ID selector",
+      "distinction": "A class selector uses `.name`; an ID selector uses `#name` and refers to an ID value."
+    }
+  ],
+  "keyTakeaway": "Selectors match elements from their names, attributes, and relationships in the document tree. Determine matching before moving on to cascade or specificity questions.",
+  "questionBank": [
+    {
+      "id": "web-development:foundations:selectors:1",
+      "prompt": "What does the selector `.notice` match?",
+      "options": [
+        "An element with ID `notice`.",
+        "Every `notice` element.",
+        "An element whose class list includes `notice`.",
+        "Every element inside a notice."
+      ],
+      "correctIndex": 2,
+      "explanation": "A period begins a class selector. `#notice` would select an ID value, while `notice` alone is a type selector.",
+      "difficulty": "recall",
+      "skill": "Identifying class-selector syntax",
+      "sourceIds": [
+        "mdn-css-selectors-and-combinators",
+        "w3c-selectors-level-4"
+      ]
+    },
+    {
+      "id": "web-development:foundations:selectors:2",
+      "prompt": "Which selector matches an input whose `type` attribute is `email`?",
+      "options": [
+        "`input[type=\"email\"]`",
+        "`input .type-email`",
+        "`#input-email`",
+        "`email input`"
+      ],
+      "correctIndex": 0,
+      "explanation": "The attribute selector `[type=\"email\"]` tests the value on an input. The other forms express different matching conditions.",
+      "difficulty": "understanding",
+      "skill": "Reading an attribute-value selector",
+      "sourceIds": [
+        "mdn-css-selectors-and-combinators",
+        "w3c-selectors-level-4"
+      ]
+    },
+    {
+      "id": "web-development:foundations:selectors:3",
+      "prompt": "Given `<article><section><p>Text</p></section></article>`, which statement about `article p` is correct?",
+      "options": [
+        "It matches only if `p` is an immediate child of `article`.",
+        "It matches the paragraph because the article is its ancestor.",
+        "It matches the article but not the paragraph.",
+        "It cannot match because a section is between them."
+      ],
+      "correctIndex": 1,
+      "explanation": "Whitespace is the descendant combinator, so intervening elements are allowed as long as the paragraph has an article ancestor.",
+      "difficulty": "application",
+      "skill": "Applying descendant matching",
+      "sourceIds": [
+        "mdn-css-selectors-and-combinators",
+        "w3c-selectors-level-4"
+      ]
+    },
+    {
+      "id": "web-development:foundations:selectors:4",
+      "prompt": "Which element matches `button.primary`?",
+      "options": [
+        "`<primary><button>Save</button></primary>`",
+        "`<button><span class=\"primary\">Save</span></button>`",
+        "`<button id=\"primary\">Save</button>`",
+        "`<button class=\"primary\">Save</button>`"
+      ],
+      "correctIndex": 3,
+      "explanation": "With no space, both the type and class must match the same element: a button whose class list includes `primary`.",
+      "difficulty": "application",
+      "skill": "Distinguishing a compound selector from a descendant selector",
+      "sourceIds": [
+        "w3c-selectors-level-4"
+      ]
+    },
+    {
+      "id": "web-development:foundations:selectors:5",
+      "prompt": "A CSS rule matches an element, but a different matching rule controls the visible color. Which topic addresses why?",
+      "options": [
+        "Attribute selector syntax",
+        "HTML parsing",
+        "The cascade and specificity",
+        "Descendant matching"
+      ],
+      "correctIndex": 2,
+      "explanation": "Selectors establish matching. The cascade and specificity determine how conflicting declarations are resolved.",
+      "difficulty": "analysis",
+      "skill": "Separating selector matching from later CSS conflict resolution",
+      "sourceIds": [
+        "mdn-css-selectors-and-combinators"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "web-development:foundations:selectors:1",
+      "prompt": "What does the selector `.notice` match?",
+      "options": [
+        "An element with ID `notice`.",
+        "Every `notice` element.",
+        "An element whose class list includes `notice`.",
+        "Every element inside a notice."
+      ],
+      "correctIndex": 2,
+      "explanation": "A period begins a class selector.",
+      "difficulty": "recall",
+      "skill": "Identifying class-selector syntax",
+      "sourceIds": [
+        "mdn-css-selectors-and-combinators",
+        "w3c-selectors-level-4"
+      ]
+    },
+    {
+      "id": "web-development:foundations:selectors:2",
+      "prompt": "Which selector matches an input whose `type` attribute is `email`?",
+      "options": [
+        "`input[type=\"email\"]`",
+        "`input .type-email`",
+        "`#input-email`",
+        "`email input`"
+      ],
+      "correctIndex": 0,
+      "explanation": "The attribute selector tests the input's type value.",
+      "difficulty": "understanding",
+      "skill": "Reading an attribute-value selector",
+      "sourceIds": [
+        "mdn-css-selectors-and-combinators",
+        "w3c-selectors-level-4"
+      ]
+    },
+    {
+      "id": "web-development:foundations:selectors:3",
+      "prompt": "Given `<article><section><p>Text</p></section></article>`, which statement about `article p` is correct?",
+      "options": [
+        "It matches only if `p` is an immediate child of `article`.",
+        "It matches the paragraph because the article is its ancestor.",
+        "It matches the article but not the paragraph.",
+        "It cannot match because a section is between them."
+      ],
+      "correctIndex": 1,
+      "explanation": "Whitespace is the descendant combinator, so intervening elements are allowed.",
+      "difficulty": "application",
+      "skill": "Applying descendant matching",
+      "sourceIds": [
+        "mdn-css-selectors-and-combinators",
+        "w3c-selectors-level-4"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "web-development:foundations:css",
+    "web-development:foundations:css-syntax",
+    "web-development:foundations:cascade",
+    "web-development:foundations:specificity"
+  ],
+  "sources": [
+    "mdn-css-selectors-and-combinators",
+    "w3c-selectors-level-4"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only sources; no source prose adapted.",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original explanation and checked examples synthesized from MDN and the W3C Selectors Level 4 specification."
+  },
+  "contentHash": "658f55c18fad7b10",
+  "status": "source-verified",
+  "public": false
+}

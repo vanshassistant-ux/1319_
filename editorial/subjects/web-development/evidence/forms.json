@@ -1,0 +1,23 @@
+{
+  "topicId": "web-development:foundations:forms",
+  "subjectId": "web-development",
+  "researchedAt": "2026-08-20",
+  "scope": {"core": ["form element", "labels and controls", "name/value submission", "basic accessible grouping", "server boundary"], "supporting": ["text, email, radio, checkbox, textarea, submit button", "action and method"], "outOfScope": ["constraint validation", "server implementation", "authentication", "security attacks", "JavaScript form events", "advanced accessibility testing"]},
+  "claims": [
+    {"claim": "A web form contains controls with which a user supplies data that can be sent to a server for processing.", "claimType": "TECHNICAL", "sourceIds": ["whatwg-html-forms", "mdn-your-first-form"], "status": "supported"},
+    {"claim": "A label identifies a form control; a label can contain its control or refer to a labelable control with its for attribute and the control's id.", "claimType": "TECHNICAL", "sourceIds": ["whatwg-html-forms", "wai-labeling-controls"], "status": "supported"},
+    {"claim": "The name attribute supplies the name under which a successful form control's value is submitted; radio buttons with a common name act as a group.", "claimType": "TECHNICAL", "sourceIds": ["whatwg-html-forms"], "status": "supported"},
+    {"claim": "A form action identifies the service URL for a submission and method selects a submission method; GET and POST are common methods.", "claimType": "TECHNICAL", "sourceIds": ["whatwg-html-forms", "mdn-your-first-form"], "status": "supported"},
+    {"claim": "fieldset groups related controls and legend gives that group a caption, helping users understand related choices.", "claimType": "TECHNICAL", "sourceIds": ["whatwg-html-forms", "wai-labeling-controls"], "status": "supported"},
+    {"claim": "Browser-side checks can improve feedback but a server must still verify submitted input because a hostile user can bypass client-side validation.", "claimType": "TECHNICAL", "sourceIds": ["whatwg-html-forms"], "status": "supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft was generic boilerplate without sources, so it was replaced."],
+  "correctionsNeeded": ["Defined a form as a data-collection and submission interface rather than a generic web concept.", "Separated the browser interface from the server's handling of submitted data.", "Added explicit labels, grouped choices, and names as basic accessible, interoperable markup."],
+  "rightsIssues": ["WHATWG, MDN, and W3C WAI were used as reference-only sources. All lesson wording is original synthesis."],
+  "sourceRecords": [
+    {"id":"whatwg-html-forms","title":"HTML Living Standard — Forms","provider":"WHATWG","url":"https://html.spec.whatwg.org/multipage/forms.html","sourceType":"standards-body","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Primary source for form controls, labels, fieldsets, names and values, submission configuration, and the server-validation boundary. Used for fact checking only."},
+    {"id":"mdn-your-first-form","title":"MDN Web Docs — Your first form","provider":"Mozilla / MDN Web Docs","url":"https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Your_first_form","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"CC BY-SA 2.5","licenseUrl":"https://creativecommons.org/licenses/by-sa/2.5/","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Supports introductory form anatomy, controls, attributes, and the relationship between a browser interface and a submission destination."},
+    {"id":"wai-labeling-controls","title":"W3C WAI — Labeling Controls","provider":"W3C Web Accessibility Initiative","url":"https://www.w3.org/WAI/tutorials/forms/labels/","sourceType":"standards-body","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-20","notes":"Read directly. Supports explicit labels, visible labels, and labels for grouped controls. Used to check accessibility claims without reproducing source wording."}
+  ]
+}

@@ -1,45 +1,45 @@
 # ELIEXPLAINS GLOBAL EDITORIAL PROGRESS
 
-Generated: 2026-08-20T05:00:36.079Z
+Generated: 2026-08-20T07:28:18.784Z
 Counts are computed from the phase content stores by `bun run editorial:progress`.
 
 Subjects total: 44
-Subjects processed: 11
-Subjects remaining: 33
-Subject completion: 25.00%
+Subjects processed: 14
+Subjects remaining: 30
+Subject completion: 31.82%
 
-Total topics: 1319
-Topics processed: 289
+Total topics: 1307
+Topics processed: 411
 Topics published: 0
-Topics ready to publish: 289
+Topics ready to publish: 411
 Topics held: 0
 Topics requiring review: 0
-Topics remaining: 1030
-Topic processing: 21.91%
+Topics remaining: 896
+Topic processing: 31.45%
 
-Verified questions: 1445
-Unique source records: 1984
-Source usage classes: REFERENCE_ONLY=1398, PUBLIC_DOMAIN=472, ATTRIBUTION_REQUIRED=72, EXTRACT_AND_ADAPT=40, LINK_ONLY=2
+Verified questions: 2055
+Unique source records: 2520
+Source usage classes: REFERENCE_ONLY=1781, PUBLIC_DOMAIN=532, ATTRIBUTION_REQUIRED=115, EXTRACT_AND_ADAPT=90, LINK_ONLY=2
 
 ## Phase progress
 
 | Phase | Subjects | Topics | Percent |
 | --- | --- | --- | --- |
 | 1 | 11 / 11 | 282 / 282 | 100.00% |
-| 2 | 0 / 11 | 7 / 325 | 2.15% |
+| 2 | 0 / 11 | 13 / 325 | 4.00% |
 | 3 | 0 / 11 | 0 / 337 | 0.00% |
-| 4 | 0 / 11 | 0 / 375 | 0.00% |
+| 4 | 3 / 11 | 116 / 363 | 31.96% |
 
 ## Collection progress
 
 | Collection | Subjects | Topics | Percent |
 | --- | --- | --- | --- |
 | Professional Studies | 7 / 7 | 166 / 166 | 100.00% |
-| Technology | 3 / 8 | 95 / 257 | 36.96% |
+| Technology | 3 / 8 | 101 / 257 | 39.30% |
 | Business & Money | 0 / 9 | 0 / 243 | 0.00% |
 | Humanities & Culture | 0 / 7 | 0 / 202 | 0.00% |
 | Science & Health | 0 / 6 | 0 / 206 | 0.00% |
-| Society & Government | 1 / 7 | 28 / 245 | 11.43% |
+| Society & Government | 4 / 7 | 144 / 233 | 61.80% |
 
 ## Subjects in progress
 
@@ -54,6 +54,9 @@ Source usage classes: REFERENCE_ONLY=1398, PUBLIC_DOMAIN=472, ATTRIBUTION_REQUIR
 | computer-literacy | 25 / 25 | 0 | 25 | 0 | 0 | 0 |
 | graphic-design-and-digital-media | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
 | python-programming | 36 / 36 | 0 | 36 | 0 | 0 | 0 |
-| web-development | 7 / 47 | 0 | 7 | 0 | 0 | 40 |
+| history | 49 / 49 | 0 | 49 | 0 | 0 | 0 |
+| economics | 39 / 39 | 0 | 39 | 0 | 0 | 0 |
+| web-development | 13 / 47 | 0 | 13 | 0 | 0 | 34 |
 | computer-science-fundamentals | 27 / 27 | 0 | 27 | 0 | 0 | 0 |
+| human-geography | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
 | engineering-fundamentals | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
