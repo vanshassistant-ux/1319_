@@ -1,0 +1,263 @@
+{
+  "id": "python-programming:foundations:booleans",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "booleans",
+  "title": "Booleans",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "python",
+    "boolean",
+    "truth-values",
+    "short-circuiting"
+  ],
+  "in30Seconds": "Python's Boolean type, `bool`, represents truth values with exactly two instances: `True` and `False`. Python can also test the truth value of other objects: empty collections and numeric zero are falsey, while most other objects are truthy. This lets a program use a value as a yes-or-no test without changing what the value itself is.",
+  "whyItMatters": "Boolean reasoning is how a Python program represents whether a condition holds. It appears in validation, searches, loop guards, and expressions that choose a fallback value. Understanding truth testing avoids two common bugs: treating an empty value as though it were the same thing as every other falsey value, and expecting `and` or `or` to always produce `True` or `False`. It also makes short-circuit expressions safe and readable.",
+  "learningObjectives": [
+    "Define Python's two Boolean values.",
+    "Explain how Python determines an object's truth value.",
+    "Distinguish a Boolean value from a truthy or falsey object.",
+    "Explain the `bool`/`int` relationship without treating them as interchangeable in clear code.",
+    "Trace `and`, `or`, and `not`, including their short-circuit behavior."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "The Boolean type and truth testing",
+      "body": "A Boolean value answers a truth question. Python's built-in type is `bool`, and it has exactly two instances: `True` and `False`. Capitalization matters: `True` is the Boolean object, whereas `true` is not a predefined Boolean name in Python. A Boolean is a value with its own type, so `type(True)` is `bool`.\n\nPython also has a broader operation called truth-value testing. Almost any object can be used where Python needs a yes-or-no result. The standard documentation describes the default rule: an object is considered true unless its class supplies `__bool__()` returning `False`, or supplies `__len__()` returning zero. That protocol is why a custom object can define what it means to be empty without giving up the rest of its behavior. An exception raised while computing one of those methods propagates; it is not silently treated as either answer.\n\nSeveral built-in values are falsey: `False`, `None`, numeric zero such as `0` or `0.0`, and empty sequences or collections such as `''`, `[]`, `{}`, and `set()`. A nonempty string such as `'0'` is truthy because it contains a character; Python does not parse its text during truth testing. Likewise, `[0]` is truthy because the list has one element, even though that element is itself falsey. Everything not on the falsey side is normally truthy.\n\nTruthy and falsey are descriptions of a value's behavior in a truth test, not alternate names for `True` and `False`. For example, `bool([])` produces `False`, but the list remains a list; `[] == False` is false. This distinction matters when a program must tell apart an absent value, a numeric measurement of zero, and an empty collection. The separate Type Conversion lesson owns detailed conversion practice; here, `bool()` is useful only as a way to display the result of a truth test."
+    },
+    {
+      "heading": "The `bool` and `int` nuance",
+      "body": "Python documents `bool` as a subclass of `int`. In many numeric contexts, `False` behaves like `0` and `True` behaves like `1`; for example, `True + True` evaluates to `2`, and `isinstance(True, int)` is true. That historical and language-level relationship can be useful when reading existing code or counting results, but it should not erase the conceptual distinction. A Boolean records truth, while an integer represents a whole number.\n\nClear code normally keeps that distinction visible. If an API or calculation genuinely needs an integer, use an explicit `int(flag)` conversion rather than relying on implicit numeric behavior. Conversely, do not use `1` and `0` as substitutes for `True` and `False` merely because they compare equal. Python's own documentation discourages relying on the numeric relationship. In particular, an equality result is not an identity claim: `True == 1` is true, yet `True` is the Boolean singleton and `1` is an integer object. This lesson does not catalog equality, identity, arithmetic, or comparison operators; the Operators lesson treats those tools in depth.\n\nThe type relationship also does not mean that every expression involving Boolean values is best thought of as arithmetic. A list of checks such as `[True, False, True]` may be summed intentionally to count successful checks, but naming the result `passed_count` communicates the purpose. When the result is meant to steer later program behavior, preserve it as a Boolean. Good names such as `has_access` and `is_empty` also make the intended truth question easier to inspect."
+    },
+    {
+      "heading": "Boolean operations and short circuiting",
+      "body": "Python provides the logical operators `and`, `or`, and `not`. `not` performs a truth test and always returns a Boolean: `not []` is `True`, while `not [1]` is `False`. `and` and `or` are different: they use truth testing to decide which operand to return. For `x or y`, Python returns `x` if `x` is truthy; otherwise it returns `y`. For `x and y`, it returns `x` if `x` is falsey; otherwise it returns `y`. Therefore `0 or 'fallback'` evaluates to `'fallback'`, and `[1] and 'next'` evaluates to `'next'`, not to Boolean objects.\n\nThese operators are short-circuit operators. `x or y` evaluates `y` only if `x` is falsey, because a truthy `x` already decides which operand will be returned. `x and y` evaluates `y` only if `x` is truthy, because a falsey `x` already decides the result. This is observable behavior, not merely a speed improvement. A guard such as `items and items[0]` can avoid indexing an empty list: when `items` is empty, Python returns it and never attempts `items[0]`. Reversing the terms would not be safe.\n\nUse short-circuit expressions when the returned operand is useful and the ordering is obvious. If a program needs a strict Boolean result, wrap the final value with `bool()` or use `not` where its inversion is actually intended. Conditional statements and branch structure are deliberately outside this lesson; the conditionals lessons own how a truth result selects code. The key point here is narrower: Python can test any object for truth, and its logical operators use that test while retaining useful operand values."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "Boolean",
+      "definition": "A value of Python's `bool` type: either `True` or `False`."
+    },
+    {
+      "term": "truth value",
+      "definition": "The true-or-false result Python obtains when it tests an object."
+    },
+    {
+      "term": "truthy",
+      "definition": "Describes a value whose truth test produces true."
+    },
+    {
+      "term": "falsey",
+      "definition": "Describes a value whose truth test produces false."
+    },
+    {
+      "term": "truth-value testing",
+      "definition": "Python's process for deciding whether an object counts as true or false in a Boolean context."
+    },
+    {
+      "term": "short circuit",
+      "definition": "Skipping the second operand of `and` or `or` when the first operand already determines the result."
+    },
+    {
+      "term": "operand",
+      "definition": "A value or expression on which an operator acts."
+    },
+    {
+      "term": "subclass",
+      "definition": "A type that inherits behavior from another type; Python's `bool` is a subclass of `int`."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "A Boolean is Python's answer card for a question with only two choices: `True` or `False`. But Python can look at many ordinary values and decide whether they count as yes or no. An empty backpack counts as no; a backpack with even one pencil counts as yes. The pencil could be broken or small—the backpack is still not empty. In the same way, `[0]` is truthy because the list contains something, while `[]` is falsey because it does not.\n\nThe words `and` and `or` can make a decision early. If the first part of an `and` is already no, Python need not inspect the second part. If the first part of an `or` is already yes, it can stop there. That can protect a program from trying an operation that only makes sense after a prior check.",
+    "analogy": "Think of a hallway with two checkpoints. For an `and` rule, failing the first checkpoint means there is no reason to walk to the second. For an `or` rule, passing the first checkpoint means there is no reason to visit the second. An empty box is like an empty backpack: it counts as no, while a box containing any item counts as yes.",
+    "analogyLimits": "Checkpoints usually deliver literal yes-or-no badges, but Python's `and` and `or` often return the original value they inspected, such as a string or list. The analogy also cannot show the custom `__bool__()` and `__len__()` methods that let a programmer define truth testing for a new kind of object."
+  },
+  "workedExample": "Suppose a program receives an optional list of names and wants the first name only when one exists. Running `names = []; result = names and names[0]` produces `[]`. The empty list is falsey, so `and` returns that first operand and does not evaluate `names[0]`; no index error occurs. With `names = ['Ada']`, the list is truthy, so Python evaluates and returns `names[0]`, which is `'Ada'`. This is not a conditional-statement lesson: the example demonstrates the value returned by `and` and the order in which its operands are evaluated. If the program instead needs a strict Boolean answer, `bool(names)` returns `False` for the empty list and `True` for `['Ada']`.",
+  "commonMistakes": [
+    {
+      "mistake": "Calling every truthy value `True`.",
+      "correction": "A nonempty list may be truthy, but it is still a list. Reserve `True` for the Boolean object."
+    },
+    {
+      "mistake": "Assuming `and` and `or` always return Boolean values.",
+      "correction": "They return one operand; use `bool(...)` when a strict Boolean is required."
+    },
+    {
+      "mistake": "Treating the string `'0'` as falsey because it looks like zero.",
+      "correction": "A nonempty string is truthy. Its contents are not converted during a truth test."
+    },
+    {
+      "mistake": "Writing a risky expression before the guard that should protect it.",
+      "correction": "Put the safe truth test first so short circuiting can skip the risky second operand."
+    },
+    {
+      "mistake": "Using `1` and `0` interchangeably with Boolean names in clear code.",
+      "correction": "`bool` is an `int` subclass, but `True` and `False` communicate truth intent more directly."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "`False`",
+      "b": "a falsey value such as `[]`",
+      "distinction": "`False` is a Boolean object; an empty list merely produces false in a truth test and remains a list."
+    },
+    {
+      "a": "`not x`",
+      "b": "`x and y` or `x or y`",
+      "distinction": "`not` always returns a Boolean; `and` and `or` return one of their operands."
+    },
+    {
+      "a": "`bool`",
+      "b": "`int`",
+      "distinction": "`bool` is a subclass of `int`, so Boolean values work numerically as 0 and 1, but the types express different program meanings."
+    }
+  ],
+  "keyTakeaway": "Python has two Boolean objects, `True` and `False`, but it can truth-test almost any object. Learn which values are falsey, remember that `and` and `or` return operands and short-circuit, and use the `bool`/`int` connection deliberately rather than accidentally.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:booleans:1",
+      "prompt": "Which two instances belong to Python's `bool` type?",
+      "options": [
+        "`True` and `False`",
+        "Two lowercase names that Python does not predefine",
+        "`0` and `1`",
+        "`yes` and `no`"
+      ],
+      "correctIndex": 0,
+      "explanation": "Python's Boolean type has exactly the two constant instances `True` and `False`. Python does not predefine lowercase Boolean names, and 0/1 are integers even though Boolean values have numeric behavior.",
+      "difficulty": "recall",
+      "skill": "Identifying Python Boolean values",
+      "sourceIds": [
+        "python-docs-stdtypes"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:booleans:2",
+      "prompt": "What is the result of `bool([0])`?",
+      "options": [
+        "`False`, because the element is zero",
+        "`False`, because lists cannot be truth-tested",
+        "`True`, because the list is nonempty",
+        "It raises `TypeError` because zero cannot occur in a list"
+      ],
+      "correctIndex": 2,
+      "explanation": "A nonempty collection is truthy. `[0]` has one element, so its truth test is true; Python does not use the element's truth value to decide whether the list is empty.",
+      "difficulty": "understanding",
+      "skill": "Applying truth-value testing to a collection",
+      "sourceIds": [
+        "python-docs-stdtypes"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:booleans:3",
+      "prompt": "Given `items = []`, what does `items and items[0]` evaluate to?",
+      "options": [
+        "It raises `IndexError`",
+        "It evaluates to `[]`",
+        "It evaluates to `False`",
+        "It evaluates to `None`"
+      ],
+      "correctIndex": 1,
+      "explanation": "The empty list is falsey, so `and` returns its first operand and skips `items[0]`. It returns the list itself, not the Boolean `False`.",
+      "difficulty": "application",
+      "skill": "Tracing `and` short circuiting and operand return",
+      "sourceIds": [
+        "python-docs-stdtypes",
+        "python-language-reference-expressions"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:booleans:4",
+      "prompt": "Which statement best describes Python's `bool` type?",
+      "options": [
+        "It is unrelated to numeric types",
+        "It is a string subtype that stores words",
+        "It has arbitrary instances created for each test",
+        "It is a subclass of `int`, so `True` and `False` can act as 1 and 0 in many numeric contexts"
+      ],
+      "correctIndex": 3,
+      "explanation": "Python documents `bool` as an `int` subclass, with `True` and `False` behaving as 1 and 0 in many numeric contexts. This does not make Boolean names and integers equally clear for every purpose.",
+      "difficulty": "understanding",
+      "skill": "Explaining the `bool`/`int` relationship",
+      "sourceIds": [
+        "python-docs-stdtypes"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:booleans:5",
+      "prompt": "What does `'ready' or 'fallback'` return?",
+      "options": [
+        "`True`",
+        "`'fallback'`",
+        "`'ready'`",
+        "It raises an error because `or` accepts only Boolean objects"
+      ],
+      "correctIndex": 2,
+      "explanation": "For `x or y`, Python returns `x` when `x` is truthy. The nonempty string `'ready'` is truthy, so the second operand is not evaluated and the expression returns `'ready'`.",
+      "difficulty": "analysis",
+      "skill": "Tracing `or` return behavior",
+      "sourceIds": [
+        "python-docs-stdtypes",
+        "python-language-reference-expressions"
+      ]
+    }
+  ],
+  "quickCheck": [
+    "Which two instances belong to Python's `bool` type?",
+    "What is the result of `bool([0])`?",
+    "Given `items = []`, what does `items and items[0]` evaluate to?"
+  ],
+  "relatedTopics": [
+    "python-programming:foundations:installing-python",
+    "python-programming:foundations:running-python-programs",
+    "python-programming:foundations:python-syntax",
+    "python-programming:foundations:variables",
+    "python-programming:foundations:numbers",
+    "python-programming:foundations:strings",
+    "python-programming:foundations:type-conversion",
+    "python-programming:foundations:input-and-output",
+    "python-programming:foundations:operators",
+    "python-programming:foundations:conditionals",
+    "python-programming:foundations:if-elif-and-else",
+    "python-programming:foundations:for-loops",
+    "python-programming:foundations:while-loops",
+    "python-programming:foundations:lists",
+    "python-programming:foundations:tuples",
+    "python-programming:foundations:sets",
+    "python-programming:foundations:dictionaries",
+    "python-programming:foundations:functions",
+    "python-programming:foundations:function-parameters",
+    "python-programming:foundations:return-values",
+    "python-programming:foundations:scope",
+    "python-programming:foundations:string-methods",
+    "python-programming:foundations:list-comprehensions",
+    "python-programming:foundations:files",
+    "python-programming:foundations:reading-files",
+    "python-programming:foundations:writing-files",
+    "python-programming:foundations:exceptions",
+    "python-programming:foundations:modules",
+    "python-programming:foundations:packages",
+    "python-programming:foundations:object-oriented-programming",
+    "python-programming:foundations:classes-and-objects",
+    "python-programming:foundations:basic-testing",
+    "python-programming:foundations:debugging",
+    "python-programming:foundations:introductory-data-analysis",
+    "python-programming:foundations:include-small-executable-examples-throughout"
+  ],
+  "sources": [
+    "python-docs-stdtypes",
+    "python-language-reference-expressions"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only official documentation; no source prose adapted.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Original explanation based on the Python documentation's truth-value, Boolean-type, and expression semantics; examples executed with Python 3."
+  },
+  "contentHash": "fb4c8ef588255185",
+  "status": "source-verified",
+  "public": false
+}

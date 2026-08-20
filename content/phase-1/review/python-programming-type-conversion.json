@@ -1,0 +1,280 @@
+{
+  "id": "python-programming:foundations:type-conversion",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "type-conversion",
+  "title": "Type Conversion",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "python",
+    "types",
+    "conversion",
+    "built-in-functions"
+  ],
+  "in30Seconds": "Type conversion is making a value in one form into a value in another form. In Python, constructors such as int(), float(), str(), and bool() perform explicit conversions. The result depends on both the target type and the value supplied: int('42') produces the integer 42, while int('3.5') raises ValueError because that text is not an integer literal. Convert deliberately, then check what kind of value you received.",
+  "whyItMatters": "Programs often receive text but need a number, or need a number rendered as text. Explicit conversion makes that boundary visible, which helps you diagnose bad data instead of accidentally using the wrong kind of value. In coursework, it gives you a precise way to explain why an expression succeeds or raises an exception. Later lessons use the same habit with collections, files, and data-processing code: establish the shape and type of data before relying on it.",
+  "learningObjectives": [
+    "Define explicit type conversion and name four common Python conversion constructors.",
+    "Predict the result and resulting type of straightforward int(), float(), str(), and bool() calls.",
+    "Distinguish a successful conversion from a ValueError caused by unsuitable text.",
+    "Apply a safe conversion sequence to a small text-data example.",
+    "Explain why bool('False') is True rather than interpreting the word False."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "A constructor call asks for a target type",
+      "body": "Every Python value has a type. A conversion call asks a built-in type to construct a value from the object supplied to it. For introductory code, the common conversions are int(), float(), str(), and bool(). int('42') returns the integer 42; float('3.5') returns the floating-point number 3.5; and str(19) returns the text string '19'. This is explicit conversion: the programmer writes the operation rather than expecting Python to silently reinterpret a value. The target type matters. str(7.0) preserves a textual representation of the float and returns '7.0', not the integer 7. Conversion is therefore not a generic cleanup command; it is a request for one particular type's documented construction rules. This lesson concentrates on those boundary-crossing calls. Arithmetic with numbers, string sequence operations, and the full truth-testing rules belong to their neighboring lessons."
+    },
+    {
+      "heading": "Text must match the requested numeric form",
+      "body": "When int() receives a string without an explicit base argument, the string must be a valid integer literal, allowing surrounding whitespace and a sign. Thus int('  -12  ') produces -12. A decimal point changes the situation: int('6.25') raises ValueError rather than quietly discarding .25. float() accepts appropriately formed numeric text such as float('6.25'), but float('not-a-number') also raises ValueError. These are predictable data-quality signals, not evidence that conversion is unreliable. A program that obtains text from a user, file, or service should decide what format it accepts and handle unsuitable input at the boundary. Do not use int(float(text)) as a casual workaround: it changes the meaning by first accepting a decimal value and then truncating it toward zero. If the input is meant to be a whole number, reject a decimal-looking string; if decimals are allowed, preserve the float or use a representation appropriate to the domain."
+    },
+    {
+      "heading": "String and Boolean conversions have their own rules",
+      "body": "str() makes a string representation of an object. It is useful when a program needs text for display, logging, or building a message, but it does not turn a number into a number-like string with a hidden numeric behavior; after str(19), the result is text. bool() constructs a Boolean value according to truth-value testing. The key beginner surprise is that a nonempty string is truthy regardless of the letters inside it. bool('') is False because the string is empty, but bool('False') is True because it contains five characters. That is why bool() is not a parser for answers such as 'true', 'false', 'yes', and 'no'. Code that needs to interpret those words should normalize the text and compare it against an allowed vocabulary; the Booleans lesson develops truth testing more fully. Another related detail is that bool is a subclass of int, but treating True and False as ordinary numeric labels makes code harder to read. Use Boolean values to express conditions, not as a shortcut for arithmetic."
+    },
+    {
+      "heading": "Make conversion boundaries easy to inspect",
+      "body": "A dependable pattern is to keep raw input, convert it once, and then use the converted value. Suppose a program receives the text '18'. `age_text = '18'` preserves what arrived, and `age = int(age_text)` establishes that the next steps expect an integer. During development, `type(age).__name__` can confirm the result is 'int'. If the input is '18.0', the same int() call raises ValueError, making the mismatch visible at exactly the conversion boundary. That is preferable to allowing a later calculation to fail mysteriously. It also lets tests state the intended input contract plainly. In production code, pair a narrowly scoped conversion attempt with a clear response appropriate to the program; exception handling is covered separately. The design principle is simple: know the accepted format, request the target type explicitly, and do not claim a conversion succeeded when Python raised an error. Conversion produces a new value; it does not mutate a string in place or retroactively change the source object."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "type conversion",
+      "definition": "The explicit construction of a value of one Python type from an object of another type."
+    },
+    {
+      "term": "constructor",
+      "definition": "A callable type such as int or str that creates an instance of that type according to its rules."
+    },
+    {
+      "term": "integer",
+      "definition": "A whole-number value represented in Python by the int type."
+    },
+    {
+      "term": "floating-point number",
+      "definition": "A numeric value represented by the float type, commonly used for values with a fractional part."
+    },
+    {
+      "term": "string",
+      "definition": "An ordered sequence of Unicode characters represented by Python's str type."
+    },
+    {
+      "term": "Boolean",
+      "definition": "A value of type bool, whose two possible values are True and False."
+    },
+    {
+      "term": "ValueError",
+      "definition": "An exception raised when an operation receives an argument of an acceptable type but an unsuitable value."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Think of a Python value as something written on a card. A card with `42` written as text is not automatically the same as a card holding the number 42. int('42') asks Python to read the text card as a whole number; str(42) asks it to make a text card from the number. Python follows rules for each request. If you ask for a whole number from '3.5', it refuses because a decimal is not written as an integer. That refusal is useful: it prevents Python from guessing what you meant.",
+    "analogy": "A conversion is like choosing a labeled measuring cup. A cup marked `int` accepts whole units; a cup marked `float` can represent a decimal amount; a cup marked `str` writes a label. Putting the wrong material into a cup does not make it fit. A label saying 'False' still has ink on it, so it is not an empty label—just as bool('False') is True because the string is nonempty.",
+    "analogyLimits": "Python types are not physical containers, and bool() has more rules than checking whether a label has ink. The analogy also does not mean int(), float(), and str() can convert every possible object. Each constructor has documented rules and may raise an exception."
+  },
+  "workedExample": "A form supplies `count_text = '  -12  '` and `price_text = '6.25'`. First, `count = int(count_text)` returns -12, an int; surrounding whitespace and the sign are allowed in an integer string. Next, `price = float(price_text)` returns 6.25, a float. For a message, `label = 'Count: ' + str(count)` returns 'Count: -12'; str() supplies text so concatenation is well-defined. Now consider `int(price_text)`. Python raises ValueError because '6.25' is not an integer literal. The right fix depends on the data contract: if counts must be whole numbers, reject that input; if decimal quantities are intended, retain `float(price_text)`. Finally, `bool('False')` is True—not because Python read the word as a logical value, but because the string is nonempty. Each result and error in this trace was executed with python3.",
+  "commonMistakes": [
+    {
+      "mistake": "Expecting int('3.5') to return 3.",
+      "correction": "It raises ValueError because the string is not an integer literal. Decide whether decimal input should be rejected or converted to float first for a deliberately different operation."
+    },
+    {
+      "mistake": "Using bool('False') to parse a written yes/no answer.",
+      "correction": "bool() tests whether the string is empty; any nonempty string is True. Parse allowed text values explicitly when that is the requirement."
+    },
+    {
+      "mistake": "Assuming str(19) leaves a number ready for arithmetic.",
+      "correction": "str(19) returns text. Convert back with a suitable numeric constructor before numeric work."
+    },
+    {
+      "mistake": "Ignoring a conversion error and guessing a fallback value.",
+      "correction": "Treat ValueError as a signal that the input failed the expected format; report or handle that mismatch at the boundary."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "int('42')",
+      "b": "float('42')",
+      "distinction": "Both convert numeric text, but the first returns the integer 42 and the second returns the float 42.0."
+    },
+    {
+      "a": "bool('')",
+      "b": "bool('False')",
+      "distinction": "The empty string converts to False; the word 'False' is nonempty and therefore converts to True."
+    },
+    {
+      "a": "ValueError",
+      "b": "successful conversion",
+      "distinction": "A successful conversion produces the requested type; ValueError says the supplied value did not satisfy that constructor's required format."
+    }
+  ],
+  "keyTakeaway": "Use int(), float(), str(), and bool() as explicit, rule-governed requests for a target type. Check the input format and the resulting type: a clear ValueError is safer than a silent guess.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:type-conversion:1",
+      "prompt": "What does `int('42')` return?",
+      "options": [
+        "The string '42'",
+        "The integer 42",
+        "The float 42.0",
+        "A ValueError"
+      ],
+      "correctIndex": 1,
+      "explanation": "int() constructs an integer from a valid integer string, so the result is the integer 42. The other choices describe a different type or an error that this valid input does not cause.",
+      "difficulty": "recall",
+      "skill": "Identifying an int conversion result",
+      "sourceIds": [
+        "python-docs-builtins-conversion",
+        "python-docs-stdtypes"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:type-conversion:2",
+      "prompt": "Why does `int('6.25')` raise ValueError?",
+      "options": [
+        "int() accepts only positive numbers",
+        "The string contains a decimal point, so it is not an integer literal",
+        "Python cannot convert strings to numbers",
+        "The call returns a float instead"
+      ],
+      "correctIndex": 1,
+      "explanation": "int() can construct an integer from suitable integer text, but '6.25' is decimal text rather than an integer literal. Python can convert many strings to numbers, and this call does not return a float.",
+      "difficulty": "understanding",
+      "skill": "Explaining a predictable conversion error",
+      "sourceIds": [
+        "python-docs-builtins-conversion"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:type-conversion:3",
+      "prompt": "A program needs text to build the message `'Score: 19'` from the integer `19`. Which conversion is appropriate for the number?",
+      "options": [
+        "str(19)",
+        "bool(19)",
+        "float(19)",
+        "int('19')"
+      ],
+      "correctIndex": 0,
+      "explanation": "str(19) produces the text '19', which can be joined with other strings. bool(19) creates a Boolean, float(19) creates 19.0, and int('19') starts with text rather than converting the given integer to display text.",
+      "difficulty": "application",
+      "skill": "Selecting a conversion for text output",
+      "sourceIds": [
+        "python-docs-builtins-conversion",
+        "python-docs-stdtypes"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:type-conversion:4",
+      "prompt": "What is the value of `bool('False')`?",
+      "options": [
+        "False, because the letters spell False",
+        "False, because strings cannot be converted to bool",
+        "It raises ValueError",
+        "True, because the string is nonempty"
+      ],
+      "correctIndex": 3,
+      "explanation": "bool() uses truth-value testing, and a nonempty string is true. It does not parse the English word inside the string; the empty string, not 'False', converts to False.",
+      "difficulty": "application",
+      "skill": "Applying Boolean conversion rules to text",
+      "sourceIds": [
+        "python-docs-builtins-conversion",
+        "python-docs-stdtypes"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:type-conversion:5",
+      "prompt": "A field is documented to contain a whole-number count, but it contains `'12.5'`. Which response best preserves the field's contract?",
+      "options": [
+        "Call bool('12.5') and use True as the count",
+        "Call str('12.5') so it becomes a number",
+        "Treat the failed int conversion as invalid input and request or report a whole-number value",
+        "Silently remove the decimal point and use 125"
+      ],
+      "correctIndex": 2,
+      "explanation": "If the contract requires a whole-number count, '12.5' fails that format and should be handled as invalid input. The other actions either change the type without producing a count or silently change the meaning of the data.",
+      "difficulty": "analysis",
+      "skill": "Reasoning about a conversion boundary and data contract",
+      "sourceIds": [
+        "python-docs-builtins-conversion"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "python-programming:foundations:type-conversion:1",
+      "prompt": "What does `int('42')` return?",
+      "options": [
+        "The string '42'",
+        "The integer 42",
+        "The float 42.0",
+        "A ValueError"
+      ],
+      "correctIndex": 1,
+      "explanation": "int() constructs an integer from a valid integer string, so the result is the integer 42. The other choices describe a different type or an error that this valid input does not cause.",
+      "difficulty": "recall",
+      "skill": "Identifying an int conversion result",
+      "sourceIds": [
+        "python-docs-builtins-conversion",
+        "python-docs-stdtypes"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:type-conversion:2",
+      "prompt": "Why does `int('6.25')` raise ValueError?",
+      "options": [
+        "int() accepts only positive numbers",
+        "The string contains a decimal point, so it is not an integer literal",
+        "Python cannot convert strings to numbers",
+        "The call returns a float instead"
+      ],
+      "correctIndex": 1,
+      "explanation": "int() can construct an integer from suitable integer text, but '6.25' is decimal text rather than an integer literal. Python can convert many strings to numbers, and this call does not return a float.",
+      "difficulty": "understanding",
+      "skill": "Explaining a predictable conversion error",
+      "sourceIds": [
+        "python-docs-builtins-conversion"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:type-conversion:3",
+      "prompt": "A program needs text to build the message `'Score: 19'` from the integer `19`. Which conversion is appropriate for the number?",
+      "options": [
+        "str(19)",
+        "bool(19)",
+        "float(19)",
+        "int('19')"
+      ],
+      "correctIndex": 0,
+      "explanation": "str(19) produces the text '19', which can be joined with other strings. bool(19) creates a Boolean, float(19) creates 19.0, and int('19') starts with text rather than converting the given integer to display text.",
+      "difficulty": "application",
+      "skill": "Selecting a conversion for text output",
+      "sourceIds": [
+        "python-docs-builtins-conversion",
+        "python-docs-stdtypes"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "python-programming:foundations:numbers",
+    "python-programming:foundations:strings",
+    "python-programming:foundations:booleans",
+    "python-programming:foundations:input-and-output",
+    "python-programming:foundations:exceptions"
+  ],
+  "sources": [
+    "python-docs-builtins-conversion",
+    "python-docs-stdtypes"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only official documentation; no source prose adapted.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Original explanatory lesson synthesized from Python 3 documentation and verified with python3 executions."
+  },
+  "contentHash": "09e07c09b14695bc",
+  "status": "source-verified",
+  "public": false
+}
