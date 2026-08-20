@@ -1,0 +1,283 @@
+{
+  "id": "python-programming:foundations:variables",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "variables",
+  "title": "Variables",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "python",
+    "foundations",
+    "variables",
+    "names",
+    "assignment"
+  ],
+  "in30Seconds": "In Python, a variable is usually best understood as a name bound to an object. Assignment, written with =, creates a binding or replaces an existing one. If place is first bound to one object and later assigned another value, the name has been rebound. A second name can still refer to the original object. This model explains why a variable is not simply a box that contains a value.",
+  "whyItMatters": "Reading Python accurately starts with tracing names. When a program assigns, reassigns, or copies a name into another name, ask which object each name refers to now. That habit helps predict output and later reason about shared references. It also prevents the mistaken assumption that changing one name must change every other name that once pointed at the same object.",
+  "learningObjectives": [
+    "Define a Python name binding.",
+    "Distinguish an object from a name that refers to it.",
+    "Explain what reassignment, or rebinding, changes.",
+    "Trace two names that initially refer to the same object.",
+    "Use identity carefully to check whether two names refer to one object."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Names are references, not containers",
+      "body": "Python's execution model says that names refer to objects. A name is the spelling a program uses to reach an object; the object is the program's data. Assignment is one operation that creates that connection. In this lesson, variable is convenient everyday language for a name whose binding a program can use, but the more precise idea is name binding. For example, `campus = \"Riverside\"` binds the name `campus` to a string object. The equals sign is not a mathematical statement that two sides will remain identical. It performs an assignment. Python does not require a separate declaration before this statement; the binding is made when the statement executes. Identifier spelling belongs with Python Syntax, and the details of particular kinds of values belong in their own lessons."
+    },
+    {
+      "heading": "Assignment can replace a binding",
+      "body": "An assignment statement can bind a name for the first time or rebind one that already has a connection. Rebinding changes the name's connection; it does not reach backward and edit another name's connection. In `direction = \"north\"; direction = \"south\"; print(direction)`, the output is `south`. The second assignment makes `direction` refer to the later object. In ordinary speech, it is acceptable to say the variable now has the later value, but a precise trace says the name's binding changed. The first object may or may not still be reachable through another name; that is a separate question. This is why tracing statements in execution order matters."
+    },
+    {
+      "heading": "One object, more than one name",
+      "body": "Python objects have an identity, type, and value. Identity lets a program ask whether two expressions refer to the same object. The `is` operator tests identity, unlike `==`, an equality operation covered elsewhere. When two names refer to one object, they are aliases. Consider `marker = object(); alias = marker; print(alias is marker)`. The result is `True` because both names refer to one object. If the program next executes `marker = object(); print(alias is marker)`, the result is `False`. The later assignment gives `marker` a new binding, but it does not automatically rebind `alias`. The trace distinguishes aliasing from rebinding without depending on changes to a list or dictionary."
+    },
+    {
+      "heading": "Keep two kinds of change separate",
+      "body": "A variable-as-box picture can help as a first sketch, but it blurs a distinction. Rebinding changes which object a name refers to. Some objects can themselves change value, while others cannot; that behavior depends on the object and its type. Later collection lessons examine changes to mutable objects. Do not infer an object change merely because a name was assigned again. A practical tracing routine is to write every name on the left of an assignment and draw an arrow to the object reached on the right. If the right side is another name, copy that arrow's destination, not the letters of the name. On a later assignment to the left-hand name, erase and redraw only that arrow. This makes it visible why aliases can begin at one object and then diverge after one name is rebound. Predict the trace before execution, then run the code and compare output. This routine also avoids a misleading shortcut: seeing the same displayed value twice does not, by itself, prove that two names share an object. Identity is a separate property, and a program should use an identity check only when that is genuinely the question. Conversely, a shared reference is not evidence that two names will always remain aligned: a later assignment can redirect either name. Trace statements in order instead of guessing from variable names. That discipline scales from a three-line exercise to a larger program where a binding may be introduced far from the print statement you are interpreting. Accurate tracing is a practical skill, not merely vocabulary to memorize."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "name",
+      "definition": "An identifier that refers to an object in a Python program."
+    },
+    {
+      "term": "binding",
+      "definition": "The association between a name and an object."
+    },
+    {
+      "term": "assignment statement",
+      "definition": "A statement that binds or rebinds a target name."
+    },
+    {
+      "term": "rebinding",
+      "definition": "Replacing a name's existing association with another one."
+    },
+    {
+      "term": "object",
+      "definition": "Python's representation of data or a relation between data."
+    },
+    {
+      "term": "identity",
+      "definition": "The property that distinguishes one object from another during its lifetime."
+    },
+    {
+      "term": "alias",
+      "definition": "One of two or more names that refer to the same object."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Think of an object as a particular library book and a name as a catalog card that points readers to that book. Writing `alias = marker` is like making a second catalog card that points to the same copy. If you later update the `marker` card so it points to a different book, the `alias` card does not magically move. It still points to the original copy. The names are not the books, and copying a name does not necessarily make a new object.",
+    "analogy": "Imagine two sticky notes, `marker` and `alias`, attached to the same sealed envelope. Replacing the `marker` note with one attached to another envelope leaves `alias` on the first envelope. The notes are names; the envelopes stand for objects.",
+    "analogyLimits": "Python does not expose literal cards or envelopes, and object identity should not be treated as a street address. Some objects can change while their identity stays the same; the analogy is only for tracing each name's connection separately."
+  },
+  "workedExample": "Run this trace: `first = \"North\"; second = first; first = \"South\"; print(first); print(second)`. Python prints `South` and then `North`. The first statement binds `first` to the object represented by `\"North\"`. The second binds `second` to the same object currently reached by `first`. The third statement rebinds only `first` to the object represented by `\"South\"`. It does not command Python to rewrite every binding made earlier, so `second` still refers to `\"North\"`. This example traces bindings rather than arithmetic or a mutation of a collection.",
+  "commonMistakes": [
+    {
+      "mistake": "Treating = as a permanent mathematical equality sign.",
+      "correction": "Read it as an assignment that establishes or changes a binding."
+    },
+    {
+      "mistake": "Assuming b = a creates an independent object in every case.",
+      "correction": "It makes b refer to the object currently reached by a."
+    },
+    {
+      "mistake": "Assuming rebinding one alias rebinds all aliases.",
+      "correction": "Redraw only the assigned name's arrow."
+    },
+    {
+      "mistake": "Using is as a general replacement for equality.",
+      "correction": "is asks whether two references have the same identity; equality is a different question."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Binding",
+      "b": "Object",
+      "distinction": "A binding is a name-to-object connection; an object is the data entity reached through it."
+    },
+    {
+      "a": "Rebinding",
+      "b": "Object change",
+      "distinction": "Rebinding changes a name's connection; it does not by itself establish that an object changed."
+    },
+    {
+      "a": "Alias",
+      "b": "Copy",
+      "distinction": "An alias is another name for the same object; a copy is a distinct object with separately determined identity."
+    }
+  ],
+  "keyTakeaway": "Python assignment binds names to objects, and assigning an already used name rebinds that name. Trace each name separately: aliases may start at the same object, then differ after one name is rebound.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:variables:1",
+      "prompt": "In Python's execution model, what does a name refer to?",
+      "options": [
+        "An object.",
+        "Only a line number.",
+        "A required memory address visible to every program.",
+        "Always a string."
+      ],
+      "correctIndex": 0,
+      "explanation": "Python's execution model says names refer to objects. A name is not inherently a string, a line number, or a user-visible memory address.",
+      "difficulty": "recall",
+      "skill": "Recall the name-to-object model",
+      "sourceIds": [
+        "python-reference-execution-model"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:variables:2",
+      "prompt": "What does the second statement do in `a = object(); b = a`?",
+      "options": [
+        "Deletes a.",
+        "Binds b to the object currently referred to by a.",
+        "Guarantees a new independent object.",
+        "Rebinds every name in the program."
+      ],
+      "correctIndex": 1,
+      "explanation": "The assignment binds b to the object reached by a. It neither deletes a nor guarantees a separate object, and it affects no unrelated names.",
+      "difficulty": "understanding",
+      "skill": "Interpret assignment as binding",
+      "sourceIds": [
+        "python-reference-assignment-statements",
+        "python-reference-execution-model"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:variables:3",
+      "prompt": "After `x = object(); y = x; x = object()`, what is `y is x`?",
+      "options": [
+        "It raises NameError.",
+        "It is always implementation-dependent.",
+        "False, because x was rebound while y still refers to the earlier object.",
+        "True, because assignment changes all aliases."
+      ],
+      "correctIndex": 2,
+      "explanation": "The last assignment changes x's binding only. y remains bound to the first object, so the two references have different identities.",
+      "difficulty": "application",
+      "skill": "Trace rebinding after aliasing",
+      "sourceIds": [
+        "python-reference-assignment-statements",
+        "python-docs-datamodel"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:variables:4",
+      "prompt": "Which statement best describes rebinding?",
+      "options": [
+        "Editing every object with the same value.",
+        "Comparing two objects for equality.",
+        "Creating an indentation block.",
+        "Changing which object a name refers to."
+      ],
+      "correctIndex": 3,
+      "explanation": "Rebinding replaces a name's association with another object. It is not equality comparison, indentation, or a mass edit of objects.",
+      "difficulty": "understanding",
+      "skill": "Distinguish rebinding from unrelated operations",
+      "sourceIds": [
+        "python-reference-assignment-statements"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:variables:5",
+      "prompt": "Why is the phrase 'a variable is a box' limited in Python?",
+      "options": [
+        "It can hide the distinction between a name and the object it refers to.",
+        "Assignment cannot change a name.",
+        "Python objects lack identity.",
+        "Two names can never refer to one object."
+      ],
+      "correctIndex": 0,
+      "explanation": "The box metaphor can conceal the documented name-to-object relationship. Assignment can rebind a name, objects have identity, and aliases can refer to one object.",
+      "difficulty": "analysis",
+      "skill": "Evaluate a beginner model against Python semantics",
+      "sourceIds": [
+        "python-reference-execution-model",
+        "python-docs-datamodel"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "python-programming:foundations:variables:1",
+      "prompt": "In Python's execution model, what does a name refer to?",
+      "options": [
+        "An object.",
+        "Only a line number.",
+        "A required memory address visible to every program.",
+        "Always a string."
+      ],
+      "correctIndex": 0,
+      "explanation": "Python's execution model says names refer to objects. A name is not inherently a string, a line number, or a user-visible memory address.",
+      "difficulty": "recall",
+      "skill": "Recall the name-to-object model",
+      "sourceIds": [
+        "python-reference-execution-model"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:variables:2",
+      "prompt": "What does the second statement do in `a = object(); b = a`?",
+      "options": [
+        "Deletes a.",
+        "Binds b to the object currently referred to by a.",
+        "Guarantees a new independent object.",
+        "Rebinds every name in the program."
+      ],
+      "correctIndex": 1,
+      "explanation": "The assignment binds b to the object reached by a. It neither deletes a nor guarantees a separate object, and it affects no unrelated names.",
+      "difficulty": "understanding",
+      "skill": "Interpret assignment as binding",
+      "sourceIds": [
+        "python-reference-assignment-statements",
+        "python-reference-execution-model"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:variables:3",
+      "prompt": "After `x = object(); y = x; x = object()`, what is `y is x`?",
+      "options": [
+        "It raises NameError.",
+        "It is always implementation-dependent.",
+        "False, because x was rebound while y still refers to the earlier object.",
+        "True, because assignment changes all aliases."
+      ],
+      "correctIndex": 2,
+      "explanation": "The last assignment changes x's binding only. y remains bound to the first object, so the two references have different identities.",
+      "difficulty": "application",
+      "skill": "Trace rebinding after aliasing",
+      "sourceIds": [
+        "python-reference-assignment-statements",
+        "python-docs-datamodel"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "python-programming:foundations:python-syntax",
+    "python-programming:foundations:numbers",
+    "python-programming:foundations:scope",
+    "python-programming:foundations:lists",
+    "python-programming:foundations:classes-and-objects"
+  ],
+  "sources": [
+    "python-reference-assignment-statements",
+    "python-reference-execution-model",
+    "python-docs-datamodel",
+    "python-glossary"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only official documentation; no source prose adapted.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Original introductory lesson synthesized from official Python language-reference material; executable traces were verified with python3."
+  },
+  "contentHash": "aa26c3f3464222b8",
+  "status": "source-verified",
+  "public": false
+}

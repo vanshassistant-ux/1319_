@@ -1,0 +1,275 @@
+{
+  "id": "python-programming:foundations:strings",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "strings",
+  "title": "Strings",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "python",
+    "text",
+    "sequences",
+    "f-strings"
+  ],
+  "in30Seconds": "A Python string is text written as a sequence of characters, usually between quotes. You can read one character with an index, take a range with a slice, and join strings with +. Strings are immutable: an operation that appears to change text instead creates a new string. F-strings let a literal include the value of an expression inside braces.",
+  "whyItMatters": "Programs constantly work with names, labels, messages, and other text. Strings give that text predictable rules: positions start at zero, slices stop before their ending boundary, and the original text cannot be edited in place. Those rules make it easier to diagnose an off-by-one result, assemble a clear message, or understand why an attempted character assignment fails. Careful string reasoning also carries into later work with lists, files, and user-facing output.",
+  "learningObjectives": [
+    "Define a Python string and recognize common string literal forms.",
+    "Explain how zero-based, negative indexing and slicing select text.",
+    "Distinguish an immutable string from a mutable sequence.",
+    "Apply concatenation and a basic f-string to construct a message.",
+    "Interpret common escape sequences and a Unicode escape."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Text values and literal notation",
+      "body": "A string is Python's built-in representation for textual data. A program usually creates one with a quoted literal, such as 'hello' or \"hello\". Choosing one quote style over the other can make punctuation easier to express: \"don't\" needs no backslash around its apostrophe, while 'She said \"yes\"' needs no backslash around the double quotes. The quote marks are source notation; they delimit the value rather than becoming part of it. A string can be empty ('') and can contain one character. Python does not introduce a separate character type for that one-character case: 'P' is a string whose length is one.\n\nBackslash begins an escape sequence inside an ordinary string literal. For example, '\\n' represents a newline, '\\t' represents a tab, and '\\\\' represents one backslash. This lets source code describe characters that would otherwise be awkward to place directly in a literal. Python also recognizes Unicode escape forms; for example, '\\N{GREEK SMALL LETTER PI}' evaluates to π. This lesson concerns the text value after Python evaluates a literal, not the encoding of a source file or the mechanics of reading text from a file."
+    },
+    {
+      "heading": "A string is an immutable sequence",
+      "body": "Strings are sequences: their characters have an order and positions. The first character has index 0, so in word = 'Python', word[0] is 'P'. Negative indices count back from the end: word[-1] is 'n'. Asking for one position with an index returns a one-character string. An index outside the available positions raises IndexError, which is a useful signal that a calculation selected no character.\n\nA slice uses a colon to select a run of positions. In word[1:4], the start position 1 is included and the stop position 4 is excluded, producing 'yth'. Omitting the start means the beginning; omitting the stop means the end. Thus word[:2] is 'Py' and word[4:] is 'on'. Thinking of a slice as boundaries between characters prevents a common off-by-one error: the right boundary is not included. Unlike a single out-of-range index, a slice can extend beyond the available boundaries and is clipped by the sequence rules.\n\nImmutable means the characters of an existing string cannot be replaced in place. word[0] = 'J' raises TypeError. To get different text, calculate a new string, perhaps with a slice and concatenation. This does not make strings unusable; it makes their existing character sequence stable. Do not confuse immutability with a rule that a program can never use a different value later. A name may be bound to a new string, but that is distinct from altering characters within an already existing string."
+    },
+    {
+      "heading": "Building text with operations and f-strings",
+      "body": "The + operator concatenates strings: 'Ada' + ' Lovelace' produces 'Ada Lovelace'. The space belongs in the second literal; concatenation does not automatically insert punctuation or spaces. This is a direct way to assemble a small fixed message. It is also a place to inspect types carefully: + joins two strings here, while adding numbers is covered separately.\n\nAn f-string is a string literal with an f prefix, such as f'{name} has {items} tasks.'. Braces introduce replacement fields containing expressions. When Python evaluates the f-string, it evaluates each expression and incorporates its result into the resulting text. With name = 'Ada' and items = 3, that example produces 'Ada has 3 tasks.'. The prefix is what makes braces special in this form; ordinary string literals do not evaluate text between braces. Use f-strings when a message has fixed surrounding wording and a few values to insert.\n\nA disciplined trace follows each operation. For 'Python'[1:4], mark positions 1, 2, and 3, then stop before 4: y, t, h. For f'{2 + 3} items', calculate the expression first, then place 5 into the sentence. These small traces establish a reliable habit before later lessons add methods, input, or more complex data structures."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "string",
+      "definition": "An ordered, immutable sequence of text characters in Python."
+    },
+    {
+      "term": "string literal",
+      "definition": "Source-code notation that creates a string value, usually by placing text between matching quotes."
+    },
+    {
+      "term": "index",
+      "definition": "An integer position used to select one item from a sequence."
+    },
+    {
+      "term": "slice",
+      "definition": "A selection of a sequence between boundaries, written with colon notation such as text[1:4]."
+    },
+    {
+      "term": "immutable",
+      "definition": "Unable to have its existing contents altered in place."
+    },
+    {
+      "term": "concatenation",
+      "definition": "Creating one sequence by joining sequences end to end."
+    },
+    {
+      "term": "escape sequence",
+      "definition": "A backslash-led notation in a literal that represents a character or special action, such as \\n for a newline."
+    },
+    {
+      "term": "f-string",
+      "definition": "A formatted string literal whose replacement fields in braces contain expressions."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "A string is a row of letter tiles. In Python, the row might spell 'Python'. You can point at one tile: position 0 is P, and position -1 is the last tile, n. You can also take a strip of tiles. [1:4] means start at tile 1 and stop just before tile 4, so it gives yth.\n\nThe row is protected under clear plastic. You may read it, but you cannot pry out the first tile and swap in J. If you want 'Jython', you make a new row of tiles. Joining 'Ada' and ' Lovelace' is like placing two strips end to end. An f-string is a printed sentence with blank spaces: Python calculates what goes in the braces and fills it in.",
+    "analogy": "Strings are numbered rows of protected letter tiles, and slices are scissors placed between tiles.",
+    "analogyLimits": "Python strings hold more than visible single-width letters, and a program stores values rather than physical tiles. The tile picture is mainly for order, positions, and slice boundaries."
+  },
+  "workedExample": "Trace the value of word = 'Python'. The positions are 0:P, 1:y, 2:t, 3:h, 4:o, and 5:n. word[1:4] starts at y and stops before position 4, so its value is 'yth'; word[-1] is 'n'. To create a label, 'Language: ' + word produces 'Language: Python'. For a message with a calculated value, f'{word[0]} is the first character' first evaluates word[0] as 'P', then produces 'P is the first character'. Trying word[0] = 'J' does not produce 'Jython': it raises TypeError because the existing string is immutable.",
+  "commonMistakes": [
+    {
+      "mistake": "Treating the stop in text[a:b] as included.",
+      "correction": "Select from a through b - 1; the stop boundary is excluded."
+    },
+    {
+      "mistake": "Expecting text[0] = 'J' to edit the first character.",
+      "correction": "Strings are immutable; construct a new string instead."
+    },
+    {
+      "mistake": "Forgetting that the first index is 0.",
+      "correction": "Write a small position map before tracing an index or slice."
+    },
+    {
+      "mistake": "Expecting + to add a missing space between pieces of text.",
+      "correction": "Put the intended space in one of the string operands."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Indexing: text[2]",
+      "b": "Slicing: text[2:5]",
+      "distinction": "Indexing selects one character and fails if its position is out of range; slicing selects a substring between boundaries."
+    },
+    {
+      "a": "Ordinary string: '{name}'",
+      "b": "f-string: f'{name}'",
+      "distinction": "Only the f-string evaluates the expression in braces as part of creating its result."
+    },
+    {
+      "a": "Changing a name's binding",
+      "b": "Changing a character in an existing string",
+      "distinction": "A program can use a newly calculated string value, but it cannot mutate the original string's indexed character."
+    }
+  ],
+  "keyTakeaway": "Strings are immutable, ordered text sequences. Read them with zero-based indices or boundary-based slices, create new text with operations such as concatenation or f-strings, and trace the exact characters selected.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:strings:1",
+      "prompt": "What is the value of 'Python'[0]?",
+      "options": [
+        "'P'",
+        "'y'",
+        "0",
+        "'Python'"
+      ],
+      "correctIndex": 0,
+      "explanation": "Strings use zero-based indexing, so index 0 selects the first one-character string, 'P'. Index 1 would select 'y'; 0 is the position, not the result; and the whole string is not selected.",
+      "difficulty": "recall",
+      "skill": "identify zero-based string indexing",
+      "sourceIds": [
+        "python-tutorial-numbers"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:strings:2",
+      "prompt": "Given word = 'Python', what does word[1:4] evaluate to?",
+      "options": [
+        "'Pyt'",
+        "'yth'",
+        "'ytho'",
+        "'thon'"
+      ],
+      "correctIndex": 1,
+      "explanation": "The slice includes position 1 and stops before position 4, selecting y, t, and h. The other choices include the wrong start or stop positions.",
+      "difficulty": "application",
+      "skill": "trace a start-inclusive, stop-exclusive slice",
+      "sourceIds": [
+        "python-tutorial-numbers"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:strings:3",
+      "prompt": "Why does this statement fail? text = 'cat'; text[0] = 'b'",
+      "options": [
+        "Index 0 does not exist in a string.",
+        "A string index must be negative.",
+        "Strings are immutable, so an indexed character cannot be assigned in place.",
+        "The replacement character must be written with double quotes."
+      ],
+      "correctIndex": 2,
+      "explanation": "'cat' has index 0 and either quote style can make a string literal. The failure is that a Python string's existing characters cannot be changed in place.",
+      "difficulty": "understanding",
+      "skill": "explain string immutability",
+      "sourceIds": [
+        "python-tutorial-numbers"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:strings:4",
+      "prompt": "With name = 'Ada' and items = 3, which expression produces 'Ada has 3 tasks.'?",
+      "options": [
+        "'{name} has {items} tasks.'",
+        "'name has items tasks.'",
+        "f'name has items tasks.'",
+        "f'{name} has {items} tasks.'"
+      ],
+      "correctIndex": 3,
+      "explanation": "The f prefix activates replacement fields, and the braces contain the expressions name and items. Without f, braces are ordinary literal characters; without braces, the names are ordinary letters.",
+      "difficulty": "application",
+      "skill": "construct a basic f-string",
+      "sourceIds": [
+        "python-lexical-analysis-operators"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:strings:5",
+      "prompt": "What does the escape sequence '\\n' represent inside an ordinary Python string literal?",
+      "options": [
+        "A newline character",
+        "The two visible characters backslash and n",
+        "A tab character",
+        "A Unicode name lookup"
+      ],
+      "correctIndex": 0,
+      "explanation": "In an ordinary string literal, \\n is the newline escape sequence. A raw literal has different treatment of backslashes; \\t is tab; named Unicode escapes use \\N{...}.",
+      "difficulty": "understanding",
+      "skill": "interpret a common escape sequence",
+      "sourceIds": [
+        "python-lexical-analysis-operators"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "python-programming:foundations:strings:1",
+      "prompt": "What is the value of 'Python'[0]?",
+      "options": [
+        "'P'",
+        "'y'",
+        "0",
+        "'Python'"
+      ],
+      "correctIndex": 0,
+      "explanation": "Strings use zero-based indexing, so index 0 selects the first one-character string, 'P'. Index 1 would select 'y'; 0 is the position, not the result; and the whole string is not selected.",
+      "difficulty": "recall",
+      "skill": "identify zero-based string indexing",
+      "sourceIds": [
+        "python-tutorial-numbers"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:strings:2",
+      "prompt": "Given word = 'Python', what does word[1:4] evaluate to?",
+      "options": [
+        "'Pyt'",
+        "'yth'",
+        "'ytho'",
+        "'thon'"
+      ],
+      "correctIndex": 1,
+      "explanation": "The slice includes position 1 and stops before position 4, selecting y, t, and h. The other choices include the wrong start or stop positions.",
+      "difficulty": "application",
+      "skill": "trace a start-inclusive, stop-exclusive slice",
+      "sourceIds": [
+        "python-tutorial-numbers"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:strings:3",
+      "prompt": "Why does this statement fail? text = 'cat'; text[0] = 'b'",
+      "options": [
+        "Index 0 does not exist in a string.",
+        "A string index must be negative.",
+        "Strings are immutable, so an indexed character cannot be assigned in place.",
+        "The replacement character must be written with double quotes."
+      ],
+      "correctIndex": 2,
+      "explanation": "'cat' has index 0 and either quote style can make a string literal. The failure is that a Python string's existing characters cannot be changed in place.",
+      "difficulty": "understanding",
+      "skill": "explain string immutability",
+      "sourceIds": [
+        "python-tutorial-numbers"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "python-programming:foundations:python-syntax",
+    "python-programming:foundations:variables",
+    "python-programming:foundations:string-methods",
+    "python-programming:foundations:lists",
+    "python-programming:foundations:input-and-output"
+  ],
+  "sources": [
+    "python-tutorial-numbers",
+    "python-lexical-analysis-operators"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only official documentation sources; no source prose adapted.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Original introductory lesson synthesized from Python documentation and verified with python3 examples."
+  },
+  "contentHash": "882b799afc96f341",
+  "status": "source-verified",
+  "public": false
+}

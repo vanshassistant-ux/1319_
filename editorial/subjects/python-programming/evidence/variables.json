@@ -1,0 +1,28 @@
+{
+  "topicId": "python-programming:foundations:variables",
+  "subjectId": "python-programming",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": ["names", "binding by assignment", "rebinding", "object references", "introductory aliasing"],
+    "supporting": ["object identity", "reading a simple trace"],
+    "outOfScope": ["indentation and syntax conventions", "numeric operations", "strings, booleans, and conversion", "scope rules", "functions", "mutating collection operations"]
+  },
+  "claims": [
+    {"claim": "In Python, names refer to objects, and assignment is a name-binding operation.", "claimType": "TECHNICAL", "sourceIds": ["python-reference-execution-model", "python-reference-assignment-statements"], "status": "supported"},
+    {"claim": "Assignment statements can rebind a name; a previously bound name is rebound when assigned again.", "claimType": "TECHNICAL", "sourceIds": ["python-reference-assignment-statements"], "status": "supported"},
+    {"claim": "Every Python object has an identity, type, and value; `is` compares identity.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-datamodel"], "status": "supported"},
+    {"claim": "Two names can refer to the same object, so rebinding one name does not by itself rebind the other.", "claimType": "TECHNICAL", "sourceIds": ["python-reference-execution-model", "python-reference-assignment-statements"], "status": "supported"},
+    {"claim": "Whether an object's value can change is a property of the object and its type, not a consequence of the variable-like name alone.", "claimType": "TECHNICAL", "sourceIds": ["python-docs-datamodel", "python-glossary"], "status": "supported"},
+    {"claim": "Python has no declarations in the execution-model sense; this lesson therefore teaches assignment as binding rather than a separate declaration step.", "claimType": "TECHNICAL", "sourceIds": ["python-reference-execution-model"], "status": "supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft supplied no Python-specific explanation, verified source support, or executable example."],
+  "correctionsNeeded": ["Replaced generic statements about context and evidence with Python's documented name-binding model.", "Added a tested trace that distinguishes rebinding a name from changing an object.", "Added original, source-supported questions with four options each."],
+  "rightsIssues": ["All sources are official Python documentation used as REFERENCE_ONLY. No source prose is reproduced."],
+  "sourceRecords": [
+    {"id": "python-reference-assignment-statements", "title": "The Python Language Reference — Simple statements (assignment statements)", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/reference/simple_stmts.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-19", "notes": "Read live from the official documentation. Supports the facts that assignment statements bind or rebind names to values and that an already bound name is rebound. Used for assignment and reassignment terminology; prose is original."},
+    {"id": "python-reference-execution-model", "title": "The Python Language Reference — Execution model (naming and binding)", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/reference/executionmodel.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-19", "notes": "Read live from the official documentation. Supports that names refer to objects and that name binding introduces names; it also notes that Python lacks declarations. Used for the name-versus-object model and aliasing explanation; prose is original."},
+    {"id": "python-docs-datamodel", "title": "The Python Language Reference — Data model", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/reference/datamodel.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-19", "notes": "Read live from the official documentation. Supports the object model: every object has identity, type, and value, and `is` compares identity. Used for the tested aliasing trace; prose is original."},
+    {"id": "python-glossary", "title": "Python Documentation — Glossary (immutable, mutable, namespace, object)", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/glossary.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-19", "notes": "Official glossary read directly. Supports the distinction that changing the stored value for an immutable object entails a new object. Used only to frame the name/object distinction, not to teach collection mutation."}
+  ]
+}

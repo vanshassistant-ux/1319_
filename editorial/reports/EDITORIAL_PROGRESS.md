@@ -1,6 +1,6 @@
 # ELIEXPLAINS GLOBAL EDITORIAL PROGRESS
 
-Generated: 2026-08-20T00:36:01.854Z
+Generated: 2026-08-20T00:40:14.626Z
 Counts are computed from the phase content stores by `bun run editorial:progress`.
 
 Subjects total: 44
@@ -9,23 +9,23 @@ Subjects remaining: 34
 Subject completion: 22.73%
 
 Total topics: 1319
-Topics processed: 249
+Topics processed: 252
 Topics published: 0
-Topics ready to publish: 249
+Topics ready to publish: 252
 Topics held: 0
 Topics requiring review: 0
-Topics remaining: 1070
-Topic processing: 18.88%
+Topics remaining: 1067
+Topic processing: 19.11%
 
-Verified questions: 1245
-Unique source records: 1937
-Source usage classes: REFERENCE_ONLY=1351, PUBLIC_DOMAIN=472, ATTRIBUTION_REQUIRED=72, EXTRACT_AND_ADAPT=40, LINK_ONLY=2
+Verified questions: 1260
+Unique source records: 1939
+Source usage classes: REFERENCE_ONLY=1353, PUBLIC_DOMAIN=472, ATTRIBUTION_REQUIRED=72, EXTRACT_AND_ADAPT=40, LINK_ONLY=2
 
 ## Phase progress
 
 | Phase | Subjects | Topics | Percent |
 | --- | --- | --- | --- |
-| 1 | 10 / 11 | 249 / 282 | 88.30% |
+| 1 | 10 / 11 | 252 / 282 | 89.36% |
 | 2 | 0 / 11 | 0 / 325 | 0.00% |
 | 3 | 0 / 11 | 0 / 337 | 0.00% |
 | 4 | 0 / 11 | 0 / 375 | 0.00% |
@@ -35,7 +35,7 @@ Source usage classes: REFERENCE_ONLY=1351, PUBLIC_DOMAIN=472, ATTRIBUTION_REQUIR
 | Collection | Subjects | Topics | Percent |
 | --- | --- | --- | --- |
 | Professional Studies | 7 / 7 | 166 / 166 | 100.00% |
-| Technology | 2 / 8 | 55 / 257 | 21.40% |
+| Technology | 2 / 8 | 58 / 257 | 22.57% |
 | Business & Money | 0 / 9 | 0 / 243 | 0.00% |
 | Humanities & Culture | 0 / 7 | 0 / 202 | 0.00% |
 | Science & Health | 0 / 6 | 0 / 206 | 0.00% |
@@ -53,6 +53,6 @@ Source usage classes: REFERENCE_ONLY=1351, PUBLIC_DOMAIN=472, ATTRIBUTION_REQUIR
 | health-administration | 24 / 24 | 0 | 24 | 0 | 0 | 0 |
 | computer-literacy | 25 / 25 | 0 | 25 | 0 | 0 | 0 |
 | graphic-design-and-digital-media | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
-| python-programming | 3 / 36 | 0 | 3 | 0 | 0 | 33 |
+| python-programming | 6 / 36 | 0 | 6 | 0 | 0 | 30 |
 | computer-science-fundamentals | 27 / 27 | 0 | 27 | 0 | 0 | 0 |
 | engineering-fundamentals | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
