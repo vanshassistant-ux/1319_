@@ -1,0 +1,225 @@
+{
+  "id": "python-programming:foundations:conditionals",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "conditionals",
+  "title": "Conditionals",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "python",
+    "conditionals",
+    "decisions",
+    "boolean-conditions"
+  ],
+  "in30Seconds": "A conditional is a decision: evaluate a condition, then choose an outcome that matches its truth value. In Python, comparisons such as `score >= 60` produce `True` or `False`, and other values can also be truth-tested. Conditionals let a program respond differently to its input or state instead of following one unchanging path.",
+  "whyItMatters": "Programs make decisions constantly: whether input is acceptable, whether a user may proceed, whether a value needs a fallback, or which message explains a result. Conditional reasoning turns a vague rule into a testable rule with defined outcomes. It also builds habits that matter in later programming work: state the condition precisely, test edge cases, and keep the condition separate from the action chosen after it. Those habits make code easier to test and explain.",
+  "learningObjectives": [
+    "Define a conditional as a decision based on a truth-tested condition.",
+    "Explain how a comparison can supply a Boolean condition.",
+    "Distinguish a condition from the outcome selected by that condition.",
+    "Trace a two-outcome conditional expression.",
+    "Apply boundary-case reasoning to a simple program rule."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "A program decision has separate parts",
+      "body": "A conditional gives a program more than one possible path. Its central idea is small but important: first evaluate a condition, then select an outcome that matches the result. The condition is a question about program state, such as whether a score meets a stated threshold. The outcome is what the program chooses after the question has an answer. Keeping those jobs distinct is useful. `score >= 60` is a condition; the word `'eligible'` is one possible outcome. Neither is a substitute for the other.\n\nIn Python, comparisons yield Boolean values, `True` or `False`. A condition can therefore be written as an expression whose truth value Python can determine. The Booleans lesson covers truth-value testing in depth: a condition need not literally contain `True` or `False`, because Python can test other objects in a Boolean context. Still, clear conditions usually make the rule visible. A name such as `has_permission` communicates a yes-or-no question more directly than a vague name such as `value`.\n\nA conditional rule should say what happens on both sides of the decision. For a course rule, “a score of 60 or more is eligible; otherwise it needs review” has an explicit boundary and two outcomes. That is stronger than “high scores are eligible,” which leaves the threshold and the result for other scores unclear. The detailed statement syntax used to organize branches belongs to the next `if-elif-and-else` lesson. This lesson concentrates on the decision model that syntax expresses."
+    },
+    {
+      "heading": "Conditions are rules, not labels",
+      "body": "A condition must be evaluated from current values. Suppose `score` is `72`. The expression `score >= 60` evaluates to `True`; if `score` is `59`, it evaluates to `False`. The comparison itself answers the question. The values 72 and 59 are not Boolean objects, and the selected labels `'eligible'` and `'review'` are not the condition. Confusing those roles causes errors such as storing a result where a test was expected or using a display message as though it were evidence that a rule holds.\n\nThe design of the comparison matters. A rule that says “60 or more” needs `>=`, not `>`, because 60 is included. This is a boundary case: a value exactly on the edge of a rule. Testing at 59, 60, and 61 is a compact way to check that the condition matches its written policy. Likewise, a rule about an empty collection should test the property that matters—whether the collection is empty—not merely use a nearby-looking value. Python's truth-value testing can make an empty list useful as a condition, but it does not make an empty list equal to the Boolean object `False`.\n\nBoolean operators can combine or negate conditions, but an operators catalog is outside this lesson. The conceptual point is enough here: a compound condition still needs a definite truth result, and the program should make clear which requirement is being tested. Write the policy in ordinary language first, identify its boundary, then express a condition that actually matches it. That workflow is more reliable than writing symbols first and guessing what rule they describe."
+    },
+    {
+      "heading": "Selecting one of two values",
+      "body": "Python also has a conditional expression for choosing between two expressions: `first_value if condition else second_value`. Python evaluates the condition, then evaluates and returns the selected expression. For example, `'eligible' if score >= 60 else 'review'` returns `'eligible'` when the score is 60 or greater and `'review'` otherwise. The result is a string because the two selected values are strings; the condition remains the Boolean result of `score >= 60`.\n\nThis form is most readable when both outcomes are short values and the choice is genuinely two-way. It is not a shortcut for every decision. When each outcome needs several operations, a named branch structure is generally clearer; that detailed form is intentionally reserved for the adjacent lesson. Similarly, repeated decisions over changing items belong with the lessons on loops, and a failure signaled by an operation belongs with exceptions. A conditional is about choosing based on a tested state, not about every way a program changes control flow.\n\nEvaluation order matters. In a conditional expression, the condition is evaluated before Python selects an outcome, and only the selected outcome is evaluated. This lets a program avoid an expression that is irrelevant on the other side of the rule. The benefit is not an invitation to hide complicated work in a compact line. A good conditional has a readable condition, outcomes appropriate to the condition, and tests at the boundary. When those pieces are visible, another reader can check whether the program implements the intended rule rather than merely producing a plausible result on one example."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "conditional",
+      "definition": "A program decision that selects an outcome after testing a condition."
+    },
+    {
+      "term": "condition",
+      "definition": "An expression whose truth value determines which outcome a conditional selects."
+    },
+    {
+      "term": "Boolean",
+      "definition": "A value of Python's `bool` type: `True` or `False`."
+    },
+    {
+      "term": "comparison",
+      "definition": "An expression that relates values and yields a Boolean result in Python."
+    },
+    {
+      "term": "outcome",
+      "definition": "The value or action selected after a conditional's condition is evaluated."
+    },
+    {
+      "term": "boundary case",
+      "definition": "An input at the exact edge of a rule, used to check whether the rule includes or excludes that edge."
+    },
+    {
+      "term": "conditional expression",
+      "definition": "Python's two-value selection expression, written `x if condition else y`."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "A conditional is like a rule at a school gate: first check the question, then choose what happens. If the rule is “a score of 60 or more may proceed,” the question is “is this score at least 60?” A score of 72 gets yes; a score of 59 gets no. The score, the yes-or-no answer, and the message chosen afterward are different things.\n\nPython can use that yes-or-no answer to select one of two values. It checks the condition first and uses only the matching result. The tricky part is the edge: 60 itself. Because the rule says “60 or more,” 60 must go with the yes side. Trying numbers just below, at, and just above the edge helps catch mistakes.",
+    "analogy": "Think of a railroad switch controlled by a sensor. The sensor asks one question about the train's ticket, and the switch directs the train onto one of two tracks. The sensor's answer is the condition; the track chosen is the outcome.",
+    "analogyLimits": "A real railroad switch moves a train, while a Python conditional can select a value or choose which code runs. Python conditions can also be more complex than one sensor question, and the analogy does not show the exact statement syntax used to organize branches."
+  },
+  "workedExample": "A program labels a score as eligible when it is at least 60 and as review otherwise. With `score = 72`, running `result = 'eligible' if score >= 60 else 'review'` produces `'eligible'`: the comparison `72 >= 60` is `True`, so Python selects the first string. With `score = 59`, the comparison is `False`, so the same expression produces `'review'`. Test the boundary too: at `score = 60`, `60 >= 60` is `True`, which matches the stated rule. The condition is the comparison; `result` is the selected outcome.",
+  "commonMistakes": [
+    {
+      "mistake": "Treating the selected message as the condition.",
+      "correction": "Keep the truth-tested question separate from the value or action selected after it."
+    },
+    {
+      "mistake": "Using `>` for a rule that says “or more.”",
+      "correction": "Use an inclusive comparison and test the exact boundary value."
+    },
+    {
+      "mistake": "Assuming a non-Boolean value is literally `True` or `False`.",
+      "correction": "Python can truth-test a value without changing its type into a Boolean object."
+    },
+    {
+      "mistake": "Putting a multi-step decision into a terse conditional expression.",
+      "correction": "Use a clearer branch structure when the outcomes need several operations."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "condition",
+      "b": "outcome",
+      "distinction": "A condition is the truth-tested question; an outcome is the selected value or action."
+    },
+    {
+      "a": "`score >= 60`",
+      "b": "`'eligible'`",
+      "distinction": "The comparison yields a Boolean; the string is a possible result selected after that Boolean is known."
+    },
+    {
+      "a": "conditional expression",
+      "b": "branch statement",
+      "distinction": "A conditional expression selects one of two values inline; detailed statement-based branching is covered in the next lesson."
+    }
+  ],
+  "keyTakeaway": "A conditional first evaluates a clear condition, then selects an outcome that matches `True` or `False`. Separate the rule from its result, and test the boundary values that define the rule.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:conditionals:1",
+      "prompt": "What does a Python comparison such as `score >= 60` produce?",
+      "options": [
+        "A Boolean value",
+        "A branch statement",
+        "A string label",
+        "An exception"
+      ],
+      "correctIndex": 0,
+      "explanation": "Python comparisons yield Boolean values. A branch or selected label may use that result, but neither is the comparison's result.",
+      "difficulty": "recall",
+      "skill": "Identifying the result of a comparison",
+      "sourceIds": [
+        "python-language-reference-expressions"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:conditionals:2",
+      "prompt": "A rule says “a score of 60 or more is eligible.” Which condition matches that rule?",
+      "options": [
+        "`score > 60`",
+        "`score >= 60`",
+        "`score == 60`",
+        "`score <= 60`"
+      ],
+      "correctIndex": 1,
+      "explanation": "“Or more” includes 60 and values above it, so `>=` matches the rule. `>` incorrectly excludes 60; `==` permits only 60; `<=` reverses the direction.",
+      "difficulty": "application",
+      "skill": "Matching a stated threshold rule to a condition",
+      "sourceIds": [
+        "python-language-reference-expressions"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:conditionals:3",
+      "prompt": "With `score = 59`, what does `'eligible' if score >= 60 else 'review'` evaluate to?",
+      "options": [
+        "`True`",
+        "`'eligible'`",
+        "`'review'`",
+        "It raises `TypeError`"
+      ],
+      "correctIndex": 2,
+      "explanation": "`59 >= 60` is false, so Python selects the expression after `else`, producing `'review'`. The expression returns a selected string, not the Boolean condition.",
+      "difficulty": "application",
+      "skill": "Tracing a two-outcome conditional expression",
+      "sourceIds": [
+        "python-language-reference-expressions"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:conditionals:4",
+      "prompt": "Why should a programmer test scores 59, 60, and 61 for a “60 or more” rule?",
+      "options": [
+        "To make the program use three different types",
+        "To replace the need for a condition",
+        "To prove every possible score works",
+        "To check the boundary and values immediately around it"
+      ],
+      "correctIndex": 3,
+      "explanation": "Those values test just below, exactly at, and just above the threshold. They cannot prove every possible input, but they are a focused check of the rule's boundary.",
+      "difficulty": "analysis",
+      "skill": "Using boundary cases to evaluate a decision rule",
+      "sourceIds": [
+        "python-language-reference-expressions"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:conditionals:5",
+      "prompt": "Which statement correctly distinguishes a condition from an outcome?",
+      "options": [
+        "A condition is always a string, while an outcome is always Boolean",
+        "A condition is the rule's truth-tested question, while an outcome is what the program selects after the test",
+        "A condition and an outcome are two names for the same Boolean",
+        "An outcome must be evaluated before its condition"
+      ],
+      "correctIndex": 1,
+      "explanation": "The condition supplies the decision information; the outcome is selected after that test. Conditions need not be strings, outcomes need not be Boolean, and the condition is evaluated first.",
+      "difficulty": "understanding",
+      "skill": "Separating decision inputs from selected results",
+      "sourceIds": [
+        "python-docs-stdtypes",
+        "python-language-reference-expressions"
+      ]
+    }
+  ],
+  "quickCheck": [
+    "What does a Python comparison such as `score >= 60` produce?",
+    "A rule says “a score of 60 or more is eligible.” Which condition matches that rule?",
+    "With `score = 59`, what does `'eligible' if score >= 60 else 'review'` evaluate to?"
+  ],
+  "relatedTopics": [
+    "python-programming:foundations:booleans",
+    "python-programming:foundations:operators",
+    "python-programming:foundations:if-elif-and-else",
+    "python-programming:foundations:input-and-output",
+    "python-programming:foundations:basic-testing"
+  ],
+  "sources": [
+    "python-docs-stdtypes",
+    "python-language-reference-expressions",
+    "python-tutorial-controlflow"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only official documentation; no source prose adapted.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Original explanation synthesized from official Python documentation; every displayed Python expression and worked result was executed with Python 3."
+  },
+  "contentHash": "57d390f57d512afe",
+  "status": "source-verified",
+  "public": false
+}

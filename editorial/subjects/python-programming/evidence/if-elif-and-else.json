@@ -1,0 +1,22 @@
+{
+  "topicId": "python-programming:foundations:if-elif-and-else",
+  "subjectId": "python-programming",
+  "researchedAt": "2026-08-19",
+  "scope": {"core": ["if/elif/else syntax", "top-to-bottom branch selection", "fallback behavior", "modest nesting"], "supporting": ["indentation-defined suites", "independent if statements"], "outOfScope": ["boolean truth rules", "comparison-operator catalog", "loops", "exception handling", "match statements"]},
+  "claims": [
+    {"claim": "Python's if statement is a compound statement with if, optional elif, and optional else clauses and suites.", "claimType": "TECHNICAL", "sourceIds": ["python-lang-ref-compound-stmts"], "status": "supported"},
+    {"claim": "An if/elif/else chain evaluates alternatives in order and selects at most one suite.", "claimType": "TECHNICAL", "sourceIds": ["python-lang-ref-compound-stmts"], "status": "supported"},
+    {"claim": "An else suite runs when no preceding condition in the chain is true.", "claimType": "TECHNICAL", "sourceIds": ["python-lang-ref-compound-stmts"], "status": "supported"},
+    {"claim": "The Python tutorial describes elif as short for else if and identifies an if/elif sequence as an alternative to switch or case constructs in other languages.", "claimType": "TECHNICAL", "sourceIds": ["python-tutorial-controlflow"], "status": "supported"},
+    {"claim": "An earlier broad threshold can make a later stricter threshold unavailable in the same chain.", "claimType": "TECHNICAL", "sourceIds": ["python-lang-ref-compound-stmts"], "status": "supported"},
+    {"claim": "A suite may contain another compound statement, allowing a nested decision.", "claimType": "TECHNICAL", "sourceIds": ["python-lang-ref-compound-stmts"], "status": "supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft gave no substantive Python semantics or verified sources."],
+  "correctionsNeeded": ["Replaced generic boilerplate with official-documentation-backed syntax, selection, ordering, and fallback explanations; added executable Python 3 example and complete question metadata."],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {"id": "python-lang-ref-compound-stmts", "title": "8. Compound statements — Python Language Reference", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/reference/compound_stmts.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "license": "PSF License", "licenseUrl": "https://docs.python.org/3/license.html", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-19", "notes": "Read live official reference on 2026-08-19. Supports the grammar and semantics of if/elif/else clauses, suites, order, and nesting. Prose is original synthesis."},
+    {"id": "python-tutorial-controlflow", "title": "The Python Tutorial — More Control Flow Tools", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/tutorial/controlflow.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-19", "notes": "Read live official tutorial on 2026-08-19. Supports introductory if-statement mechanics and the meaning of elif. Prose is original synthesis."}
+  ]
+}

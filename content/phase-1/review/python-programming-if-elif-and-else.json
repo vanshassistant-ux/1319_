@@ -1,0 +1,273 @@
+{
+  "id": "python-programming:foundations:if-elif-and-else",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "if-elif-and-else",
+  "title": "if, elif, and else",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "python",
+    "control-flow",
+    "branching",
+    "foundations"
+  ],
+  "in30Seconds": "An `if` statement chooses whether to run an indented block of code. Add `elif` clauses when there are more cases to test, and use `else` for the fallback when none of the earlier conditions succeeds. Python evaluates an if/elif chain from top to bottom and runs at most one selected branch. Put more specific cases before broader ones so an earlier branch does not catch them first.",
+  "whyItMatters": "Branching lets one program respond differently to different inputs or states: a score can receive a letter grade, or an order can receive a shipping rule. In coursework, it is a foundation for tracing program behavior and expressing requirements precisely. In later programs, clear branch order makes policies easier to review and change. A correct condition is not enough if it appears after an earlier condition that already matches the same case.",
+  "learningObjectives": [
+    "Define an `if` clause, an `elif` clause, and an `else` clause.",
+    "Explain how Python selects one branch in an if/elif/else chain.",
+    "Apply ordered conditions to a small classification problem.",
+    "Distinguish an `else` fallback from another condition that must be tested.",
+    "Analyze how branch order can make a later case unreachable."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "A conditional statement is a sequence of clauses",
+      "body": "Python places `if`, `elif`, and `else` in a compound statement. An `if` clause begins with the keyword `if`, followed by an expression and a colon. The indented suite below it is the code associated with that clause. An `elif` clause has its own expression and suite; it can follow an `if` and can be repeated. An optional `else` clause has no expression. Its suite is the fallback when every preceding condition in that chain is false. Indentation is part of the statement structure, so code at the same indentation level as the `if` is outside the chain.\n\nFor a simple two-way choice, `if` plus `else` is often enough. For several mutually exclusive categories, an if/elif/else chain states the categories in their priority order. `elif` is Python's spelling for “else if”; it is not a separate nested statement that runs after a successful `if`. The official tutorial also notes that an if/elif sequence can fill the role that switch or case constructs serve in some other languages. Python also has `match` for some pattern-based choices, but that is a separate topic and is not needed to understand ordinary branch chains."
+    },
+    {
+      "heading": "Selection proceeds from top to bottom",
+      "body": "When Python reaches a chain, it evaluates the `if` expression first. If that expression is true, Python executes that suite and skips every `elif` and `else` in the same chain. If it is false, Python tries the first `elif`, then later `elif` clauses in order until one is true. If none succeeds and an `else` exists, Python runs the `else` suite. Thus a single chain selects zero or one suite: zero is possible when there is no `else` and every tested expression is false.\n\nOrder is therefore program logic, not formatting. Consider categories `score >= 90`, `score >= 80`, and `score >= 70`. They must appear in descending threshold order. If `score >= 70` came first, a score of 93 would satisfy it immediately, and the later 90 and 80 branches would never be considered. This is a common source of quietly wrong results because each individual comparison can look reasonable when viewed alone. Use an `else` only when every remaining possibility truly belongs in the same fallback category; otherwise state another explicit condition."
+    },
+    {
+      "heading": "Nested choices versus independent choices",
+      "body": "A suite can contain another `if` statement, producing a nested decision. Nesting is useful when the second decision matters only after the first one has selected a context. For example, a program might first decide whether a user is a member and, only for members, choose among member-specific options. The inner statement has its own indentation and its own branch chain. Keeping nesting modest makes the path a reader must trace easier to see.\n\nDo not confuse a chain with two independent `if` statements. Two separate `if` statements may both run: success in the first does not prevent Python from evaluating the second. An if/elif/else chain is for alternatives where one selected branch is intended. This distinction helps when translating a written requirement. Ask whether the program should choose one category, or whether it should carry out multiple applicable actions. When requirements change, name the cases in plain language first, then check whether their conditions overlap and which case should have priority. This small design step is often clearer than repairing a surprising result after the fact. The topic here is branch structure and order; the expressions themselves may use booleans or comparisons, but their detailed rules belong to the lessons on booleans and operators."
+    },
+    {
+      "heading": "Planning a readable chain",
+      "body": "Before writing the code, list a few representative inputs and the exact branch each input should choose. Include boundary values such as 70, 80, and 90 when thresholds are involved. This makes missing ranges and accidental overlaps visible before they become bugs."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "conditional statement",
+      "definition": "A statement that chooses whether to execute a suite based on tested conditions."
+    },
+    {
+      "term": "clause",
+      "definition": "One keyword-led part of a compound statement, such as an if, elif, or else part."
+    },
+    {
+      "term": "suite",
+      "definition": "The indented block of statements controlled by a clause."
+    },
+    {
+      "term": "if clause",
+      "definition": "The first clause in a conditional chain; its expression is tested first."
+    },
+    {
+      "term": "elif clause",
+      "definition": "An optional alternative clause whose expression is tested only after earlier clauses fail."
+    },
+    {
+      "term": "else clause",
+      "definition": "An optional fallback clause that runs when no earlier condition in its chain succeeds."
+    },
+    {
+      "term": "branch order",
+      "definition": "The top-to-bottom arrangement that determines which conditions get a chance to be tested."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Imagine a school office sorting report cards. It looks at one card at a time. First it asks, “Is this score at least 90?” If yes, it puts the card in the A tray and stops asking questions for that card. If not, it asks the next question: “Is it at least 80?” It keeps going down the trays. If no labeled tray fits, the card goes in the last tray.\n\nAn `if` is the first question. Each `elif` is another question to ask only when the earlier answer was no. `else` is the last tray: it does not ask a question because it accepts what is left. The order matters. If the office asked “at least 70?” first, a 93 card would go into that tray too soon.",
+    "analogy": "A top-to-bottom set of labeled sorting trays for one card.",
+    "analogyLimits": "Programs evaluate expressions, not people or physical cards, and an else branch can perform any code rather than merely sorting an item."
+  },
+  "workedExample": "This function classifies a numeric score. Python tests the thresholds from highest to lowest, so the first matching threshold chooses the result.\n\n```python\ndef label(score):\n    if score >= 90:\n        return \"A\"\n    elif score >= 80:\n        return \"B\"\n    elif score >= 70:\n        return \"C\"\n    else:\n        return \"Needs work\"\n\nfor score in (93, 84, 71, 62):\n    print(score, label(score))\n```\n\nRunning it with Python 3 prints `93 A`, `84 B`, `71 C`, and `62 Needs work`. For 84, the 90 test fails, the 80 test succeeds, and the function returns `B`; later clauses are skipped. Reversing the 70 and 90 tests would misclassify 93 because the broad 70 condition would win first.",
+  "commonMistakes": [
+    {
+      "mistake": "Putting a broad threshold before a stricter threshold.",
+      "correction": "Order overlapping ranges from most specific or highest threshold to broadest."
+    },
+    {
+      "mistake": "Expecting a later elif to run after a successful if.",
+      "correction": "Use a separate if only when more than one action may legitimately run."
+    },
+    {
+      "mistake": "Giving else a condition.",
+      "correction": "Put a condition on elif; use else only for the remaining case."
+    },
+    {
+      "mistake": "Losing the suite indentation.",
+      "correction": "Indent every statement controlled by a clause consistently."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "elif",
+      "b": "else",
+      "distinction": "An elif tests a new expression after earlier failures; else is the untested fallback."
+    },
+    {
+      "a": "if/elif/else chain",
+      "b": "separate if statements",
+      "distinction": "A chain selects at most one suite, while separate if statements can each execute."
+    }
+  ],
+  "keyTakeaway": "An if/elif/else chain tests alternatives in written order and selects at most one branch. Put overlapping cases in the correct priority order, and reserve else for the true fallback.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:if-elif-and-else:1",
+      "prompt": "What is the role of an `else` clause in an if/elif/else chain?",
+      "options": [
+        "It retests the original if expression.",
+        "It must contain a new condition.",
+        "It runs when no earlier condition in the chain succeeds.",
+        "It runs after every successful elif."
+      ],
+      "correctIndex": 2,
+      "explanation": "Else is the fallback with no condition. It does not retest an expression, require a condition, or follow a successful branch.",
+      "difficulty": "recall",
+      "skill": "Identify the purpose of an else clause",
+      "sourceIds": [
+        "python-lang-ref-compound-stmts",
+        "python-tutorial-controlflow"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:if-elif-and-else:2",
+      "prompt": "A chain begins with `if score >= 70` and later has `elif score >= 90`. What happens for `score = 93`?",
+      "options": [
+        "The first branch runs because 93 is at least 70.",
+        "The 90 branch runs because it is more specific.",
+        "Python runs both branches.",
+        "Python raises an error because ranges overlap."
+      ],
+      "correctIndex": 0,
+      "explanation": "Python tests from top to bottom. The first condition is true for 93, so its suite is selected and the later elif is skipped.",
+      "difficulty": "application",
+      "skill": "Trace ordered branch selection",
+      "sourceIds": [
+        "python-lang-ref-compound-stmts"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:if-elif-and-else:3",
+      "prompt": "Which arrangement correctly expresses mutually exclusive score bands?",
+      "options": [
+        "Test `>= 70`, then `>= 80`, then `>= 90`.",
+        "Use only an else clause for every score.",
+        "Put every threshold in a separate unrelated if statement.",
+        "Test `>= 90`, then `>= 80`, then `>= 70`, followed by else."
+      ],
+      "correctIndex": 3,
+      "explanation": "Descending thresholds prevent a broad earlier test from capturing scores meant for a stricter band. The other arrangements either misclassify or do not express one exclusive chain.",
+      "difficulty": "analysis",
+      "skill": "Design correct branch ordering",
+      "sourceIds": [
+        "python-tutorial-controlflow"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:if-elif-and-else:4",
+      "prompt": "When can two separate `if` statements be preferable to an if/elif/else chain?",
+      "options": [
+        "When both applicable actions should be allowed to run.",
+        "When only one category may be selected.",
+        "When a fallback is required after every test.",
+        "When Python must skip all expressions."
+      ],
+      "correctIndex": 0,
+      "explanation": "Separate if statements are independent, so both can run. A chain is for alternatives where one selected branch is intended.",
+      "difficulty": "understanding",
+      "skill": "Distinguish independent from exclusive decisions",
+      "sourceIds": [
+        "python-lang-ref-compound-stmts"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:if-elif-and-else:5",
+      "prompt": "A program needs a special member rule, then a nonmember free-shipping rule for subtotals of 50 or more, and a standard fallback. Which structure best fits?",
+      "options": [
+        "An else clause before the member test.",
+        "An if for membership, an elif for the nonmember subtotal rule, then else.",
+        "Only an if and no fallback, regardless of requirements.",
+        "An elif without a preceding if."
+      ],
+      "correctIndex": 1,
+      "explanation": "An if/elif/else chain can state these ordered alternatives and reserve else for the remaining standard case. Else cannot come first, and elif requires a preceding if.",
+      "difficulty": "application",
+      "skill": "Choose a branch-chain structure",
+      "sourceIds": [
+        "python-tutorial-controlflow",
+        "python-lang-ref-compound-stmts"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "python-programming:foundations:if-elif-and-else:1",
+      "prompt": "What is the role of an `else` clause in an if/elif/else chain?",
+      "options": [
+        "It retests the original if expression.",
+        "It must contain a new condition.",
+        "It runs when no earlier condition in the chain succeeds.",
+        "It runs after every successful elif."
+      ],
+      "correctIndex": 2,
+      "explanation": "Else is the fallback with no condition. It does not retest an expression, require a condition, or follow a successful branch.",
+      "difficulty": "recall",
+      "skill": "Identify the purpose of an else clause",
+      "sourceIds": [
+        "python-lang-ref-compound-stmts",
+        "python-tutorial-controlflow"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:if-elif-and-else:2",
+      "prompt": "A chain begins with `if score >= 70` and later has `elif score >= 90`. What happens for `score = 93`?",
+      "options": [
+        "The first branch runs because 93 is at least 70.",
+        "The 90 branch runs because it is more specific.",
+        "Python runs both branches.",
+        "Python raises an error because ranges overlap."
+      ],
+      "correctIndex": 0,
+      "explanation": "Python tests from top to bottom. The first condition is true for 93, so its suite is selected and the later elif is skipped.",
+      "difficulty": "application",
+      "skill": "Trace ordered branch selection",
+      "sourceIds": [
+        "python-lang-ref-compound-stmts"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:if-elif-and-else:3",
+      "prompt": "Which arrangement correctly expresses mutually exclusive score bands?",
+      "options": [
+        "Test `>= 70`, then `>= 80`, then `>= 90`.",
+        "Use only an else clause for every score.",
+        "Put every threshold in a separate unrelated if statement.",
+        "Test `>= 90`, then `>= 80`, then `>= 70`, followed by else."
+      ],
+      "correctIndex": 3,
+      "explanation": "Descending thresholds prevent a broad earlier test from capturing scores meant for a stricter band. The other arrangements either misclassify or do not express one exclusive chain.",
+      "difficulty": "analysis",
+      "skill": "Design correct branch ordering",
+      "sourceIds": [
+        "python-tutorial-controlflow"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "python-programming:foundations:conditionals",
+    "python-programming:foundations:booleans",
+    "python-programming:foundations:operators",
+    "python-programming:foundations:for-loops",
+    "python-programming:foundations:while-loops"
+  ],
+  "sources": [
+    "python-lang-ref-compound-stmts",
+    "python-tutorial-controlflow"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only official documentation; no source prose adapted.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Original explanatory lesson and independently executed examples synthesized from official Python documentation."
+  },
+  "contentHash": "1a7312759781a66a",
+  "status": "source-verified",
+  "public": false
+}

@@ -1,0 +1,228 @@
+{
+  "id": "python-programming:foundations:operators",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "operators",
+  "title": "Operators",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 10,
+  "tags": [
+    "python",
+    "operators",
+    "expressions",
+    "precedence"
+  ],
+  "in30Seconds": "An operator is notation that tells Python to perform an operation on one or more values. Arithmetic operators calculate, comparison operators produce a Boolean result, logical operators combine or reverse Boolean conditions, and augmented-assignment operators update a bound name. When several operators appear in one expression, Python’s precedence and associativity rules determine how it groups them; parentheses make the intended grouping explicit.",
+  "whyItMatters": "Operators turn values into calculations, tests, and updates, so they appear in nearly every Python program. Reading their grouping correctly prevents quiet errors such as calculating a discount in the wrong order or assuming exponentiation groups left to right. A precise grasp of comparisons and logical operators also makes later lessons on conditionals, loops, and filtering easier to reason about.",
+  "learningObjectives": [
+    "Define operator, operand, precedence, and associativity.",
+    "Distinguish arithmetic, comparison, logical, and augmented-assignment operators.",
+    "Explain how parentheses alter expression grouping.",
+    "Apply Python’s precedence and right-associative exponentiation rule to evaluate an expression.",
+    "Check whether a comparison-and-logic expression has the intended meaning."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Operators form expressions",
+      "body": "An expression combines values, names, calls, and operators to compute a value. An operator’s operands are the values or expressions it acts on. For familiar numeric work, `+`, `-`, `*`, `/`, `//`, `%`, and `**` express addition, subtraction, multiplication, true division, floor division, remainder, and exponentiation. In Python, `/` returns a float for numeric operands, while `//` discards the fractional part for the usual positive-integer examples. Thus `17 / 5` is `3.4`, `17 // 5` is `3`, and `17 % 5` is `2`. The relationship `17 == 5 * (17 // 5) + (17 % 5)` is a useful check for this example. This lesson uses arithmetic to illustrate operators; numeric types, representation, and conversion belong in the Numbers and Type Conversion lessons.\n\nComparison operators ask how two values relate: `==`, `!=`, `<`, `<=`, `>`, and `>=`. A comparison evaluates to `True` or `False`. Python also permits chains such as `0 < score <= 100`; the language reference specifies that comparisons chain from left to right. Chaining is not the same as comparing a Boolean to a number: it is a compact way to express a range test. Equality `==` asks whether values compare equal. Identity `is` is a different operator with a different purpose and should not be substituted for equality in ordinary value comparisons."
+    },
+    {
+      "heading": "Logical operators and short, readable conditions",
+      "body": "The logical operators are `not`, `and`, and `or`. At the precedence level relevant to ordinary Boolean expressions, `not` binds more tightly than `and`, and `and` binds more tightly than `or`. So `not ready or paid and approved` groups as `(not ready) or (paid and approved)`, not as `not (ready or paid) and approved`. Parentheses can state the desired grouping even when a reader knows the table.\n\nA comparison produces a Boolean result, while logical operators are typically used to combine conditions. For example, `(age >= 18) and (has_ticket)` describes two requirements. Keep the conditions visible instead of relying on a reader to reconstruct a dense expression. Truth testing and the fact that `and` and `or` can return an operand rather than a newly created Boolean are useful details, but they belong to the Booleans lesson rather than this introductory operator lesson. The practical habit here is to make a condition’s grouping unambiguous before using it in a later conditional."
+    },
+    {
+      "heading": "Precedence, associativity, and assignment updates",
+      "body": "Precedence is the priority used to group operators when parentheses do not decide the grouping. Multiplication, matrix multiplication, division, floor division, and remainder have higher precedence than addition and subtraction. Consequently, `2 + 3 * 4` evaluates as `2 + (3 * 4)`, producing `14`; `(2 + 3) * 4` produces `20`. Parentheses are evaluated as a grouped expression and are the clearest way to document an exception to the normal order.\n\nWhen operators share a precedence level, associativity supplies a grouping direction. Most Python operators group left to right, but exponentiation is a notable exception: `**` groups right to left. Therefore `2 ** 3 ** 2` means `2 ** (3 ** 2)`, which is `512`; `(2 ** 3) ** 2` is `64`. Treat that exception as a reason to parenthesize an exponent expression whose intent matters.\n\nAssignment statements bind or rebind names. Augmented assignment combines an operation with assignment: after `total = 7`, `total += 4` updates the name so that `total` is `11`. Similar forms include `-=`, `*=`, `/=`, `//=`, `%=`, and `**=`. Augmented assignment is concise, but it does not erase the need to understand the operation on the right kind of value. It can also be clearer than repeating a long name on both sides of a simple update. Names and binding have their own lesson; here, the central point is that an augmented operator expresses an update using the corresponding operation."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "operator",
+      "definition": "A symbol or keyword that directs Python to perform an operation on one or more operands."
+    },
+    {
+      "term": "operand",
+      "definition": "A value or expression to which an operator is applied."
+    },
+    {
+      "term": "expression",
+      "definition": "Code that Python evaluates to produce a value."
+    },
+    {
+      "term": "precedence",
+      "definition": "The ranking that determines which operator groups first when parentheses do not specify grouping."
+    },
+    {
+      "term": "associativity",
+      "definition": "The grouping direction used when operators of the same precedence appear together."
+    },
+    {
+      "term": "comparison operator",
+      "definition": "An operator such as `==` or `<` that tests a relationship and produces a Boolean result."
+    },
+    {
+      "term": "logical operator",
+      "definition": "One of `not`, `and`, or `or`, used to reverse or combine conditions."
+    },
+    {
+      "term": "augmented assignment",
+      "definition": "An update notation such as `+=` that combines an operation with assignment."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Operators are the action signs in Python. A number by itself is just a value, but `+` tells Python to add two values, `<` tells it to compare them, and `and` tells it to combine two yes-or-no checks. The order of signs matters. Python usually does multiplication before addition, so `2 + 3 * 4` gives 14. Parentheses are your way of saying, “Do this part first.” One special sign, `**`, works from the right: `2 ** 3 ** 2` first calculates `3 ** 2`.\n\n`+=` is a compact update sign. If a game score starts at 7, `score += 4` means add 4 and keep the new score under the name `score`.",
+    "analogy": "Think of an expression as a recipe line. Operators are action words such as mix, compare, and repeat. Precedence is the recipe’s built-in order, while parentheses are a note that says to prepare one mixture before combining it with the rest.",
+    "analogyLimits": "Python does not literally perform kitchen actions, and its precedence rules are exact language rules rather than flexible cooking advice. A recipe analogy also does not explain every operator, so use the documentation when a particular operator matters."
+  },
+  "workedExample": "Suppose a program calculates a shipping charge. Start with `items = 3` and `unit_price = 12`. The subtotal expression `items * unit_price` evaluates to 36. A 5-dollar fee makes `total = items * unit_price + 5`, which evaluates multiplication before addition and produces 41. If the fee is waived only when both conditions hold, write `member and subtotal >= 30`; with `member = True`, the comparison is true and the whole expression is `True`. Finally, after a 4-dollar surcharge, `total += 4` changes `total` from 41 to 45. Each result was executed in Python 3.",
+  "commonMistakes": [
+    {
+      "mistake": "Reading `2 + 3 * 4` from left to right as 20.",
+      "correction": "Apply precedence: multiplication happens before addition, so the result is 14; use parentheses for 20."
+    },
+    {
+      "mistake": "Assuming `2 ** 3 ** 2` means `(2 ** 3) ** 2`.",
+      "correction": "Exponentiation groups right to left; parenthesize either version when teaching or maintaining code."
+    },
+    {
+      "mistake": "Using `is` where a value comparison needs `==`.",
+      "correction": "Use `==` to compare ordinary values; `is` tests object identity and has a separate purpose."
+    },
+    {
+      "mistake": "Writing a mixed `and`/`or` condition without checking grouping.",
+      "correction": "Know that `and` binds more tightly than `or`, and add parentheses to express the intended rule."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "`/`",
+      "b": "`//`",
+      "distinction": "For numeric operands, `/` performs true division and returns a float; `//` performs floor division."
+    },
+    {
+      "a": "`==`",
+      "b": "`is`",
+      "distinction": "`==` compares values for equality, while `is` tests whether two references designate the same object."
+    },
+    {
+      "a": "`=`",
+      "b": "`+=`",
+      "distinction": "`=` assigns a value; `+=` applies addition and assignment as an update."
+    }
+  ],
+  "keyTakeaway": "Operators make Python expressions calculate, compare, combine conditions, and update values. Use parentheses to communicate grouping, especially around mixed operators and exponentiation, whose `**` operator groups from the right.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:operators:1",
+      "prompt": "Which term names the values an operator acts on?",
+      "options": [
+        "Operands",
+        "Precedence levels",
+        "Suites",
+        "Modules"
+      ],
+      "correctIndex": 0,
+      "explanation": "Operands are the values or expressions on which an operator operates. Precedence ranks grouping, suites are code blocks, and modules are importable units.",
+      "difficulty": "recall",
+      "skill": "Identify operator terminology",
+      "sourceIds": [
+        "python-language-reference-expressions"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:operators:2",
+      "prompt": "What is the value of `2 + 3 * 4` in Python?",
+      "options": [
+        "20",
+        "14",
+        "24",
+        "9"
+      ],
+      "correctIndex": 1,
+      "explanation": "Multiplication has higher precedence than addition, so Python evaluates `3 * 4` first and then adds 2. The other results use incorrect grouping or arithmetic.",
+      "difficulty": "understanding",
+      "skill": "Apply arithmetic precedence",
+      "sourceIds": [
+        "python-language-reference-expressions"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:operators:3",
+      "prompt": "Which expression explicitly produces 64 by grouping exponentiation from the left?",
+      "options": [
+        "`2 ** 3 ** 2`",
+        "`2 ** (3 ** 2)`",
+        "`(2 ** 3) ** 2`",
+        "`2 * 3 ** 2`"
+      ],
+      "correctIndex": 2,
+      "explanation": "Parentheses make `(2 ** 3)` evaluate first, giving 8, and then `8 ** 2` gives 64. The unparenthesized and right-parenthesized forms produce 512.",
+      "difficulty": "application",
+      "skill": "Analyze exponent associativity",
+      "sourceIds": [
+        "python-language-reference-expressions"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:operators:4",
+      "prompt": "After `total = 7`, what does `total += 4` leave in `total`?",
+      "options": [
+        "3",
+        "4",
+        "7",
+        "11"
+      ],
+      "correctIndex": 3,
+      "explanation": "`+=` combines addition with assignment, so the new value is 7 plus 4, or 11. It does not subtract, replace the value with 4, or leave it unchanged.",
+      "difficulty": "application",
+      "skill": "Trace augmented assignment",
+      "sourceIds": [
+        "python-reference-assignment-statements"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:operators:5",
+      "prompt": "Without parentheses, how does Python group `ready or paid and approved`?",
+      "options": [
+        "`(ready or paid) and approved`",
+        "`ready or (paid and approved)`",
+        "`(ready or paid) or approved`",
+        "`ready and (paid or approved)`"
+      ],
+      "correctIndex": 1,
+      "explanation": "`and` has higher precedence than `or`, so the `paid and approved` part groups first. The other options impose groupings Python does not use here.",
+      "difficulty": "analysis",
+      "skill": "Interpret logical-operator precedence",
+      "sourceIds": [
+        "python-language-reference-expressions"
+      ]
+    }
+  ],
+  "quickCheck": [
+    "Which term names the values an operator acts on?",
+    "What is the value of `2 + 3 * 4` in Python?",
+    "Which expression explicitly produces 64 by grouping exponentiation from the left?"
+  ],
+  "relatedTopics": [
+    "python-programming:foundations:numbers",
+    "python-programming:foundations:booleans",
+    "python-programming:foundations:variables",
+    "python-programming:foundations:conditionals",
+    "python-programming:foundations:if-elif-and-else"
+  ],
+  "sources": [
+    "python-language-reference-expressions",
+    "python-reference-assignment-statements",
+    "python-tutorial-numbers"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only official documentation; no source prose adapted",
+    "researchedAt": "2026-08-19",
+    "transformation": "Original instructional synthesis of official Python expression, assignment, and tutorial documentation; all displayed computational examples were executed with python3."
+  },
+  "contentHash": "738f68930b201f26",
+  "status": "source-verified",
+  "public": false
+}
