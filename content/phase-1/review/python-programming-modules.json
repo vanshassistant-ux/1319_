@@ -1,0 +1,228 @@
+{
+  "id": "python-programming:foundations:modules",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "modules",
+  "title": "Modules",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "python",
+    "modules",
+    "import",
+    "namespace",
+    "__name__"
+  ],
+  "in30Seconds": "A Python module is a Python file whose definitions and statements can be used from another file. An `import` statement finds a module, runs its top-level code when it is first loaded, and gives your program a name for that module. Keeping names inside a module helps organize code: write `math.sqrt(9)` rather than hoping a bare `sqrt` name means the same thing everywhere.",
+  "whyItMatters": "Modules let a program divide work into focused files and reuse dependable code, including Python's standard library. They also make a program's dependencies visible: an `import` signals which outside names a file expects. Understanding import names and search paths makes common errors easier to diagnose, such as importing the wrong local file or using a function without its module qualifier. Packages and installation build on modules, but start with this smaller idea.",
+  "learningObjectives": [
+    "Define a Python module and its namespace.",
+    "Distinguish `import module` from `from module import name`.",
+    "Explain the basic role of the module search path.",
+    "Apply qualified access to a name defined in an imported module.",
+    "Interpret the usual values of `__name__` for imported and top-level code."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "A module is a named namespace",
+      "body": "A module is a Python file containing definitions and statements. If a file is named `greetings.py`, its ordinary module name is `greetings`: the `.py` suffix is not part of the name used in an import. When Python loads that file, it creates a module object and gives the module its own namespace, a mapping of names to objects. A variable, function, or class defined at top level in that file belongs to that module namespace. This is one reason modules make larger programs manageable: names that would otherwise collide can be qualified by where they come from.\n\nFor example, after `import math`, `math.sqrt` identifies the `sqrt` attribute of the `math` module. The dot is not a decorative convention. It tells Python to look up a name in the module object, rather than first treating `sqrt` as an unqualified name in the current file. Modules can contain executable top-level statements as well as definitions. Those statements are part of module initialization, so importing a module is not simply copying text from one file into another. Keep top-level work modest and predictable; detailed patterns for choosing script-only work belong with running programs rather than this lesson."
+    },
+    {
+      "heading": "Import forms choose which names your file receives",
+      "body": "The form `import greetings` binds the name `greetings` in the importing file. Code then reaches public content with qualified expressions such as `greetings.greet(\"Ada\")`. This form preserves information about origin, which often improves readability and lowers the chance that two modules provide the same short name. `import greetings as welcome` instead binds the chosen alias `welcome`; the module itself has not been renamed on disk.\n\nThe form `from greetings import greet` has a different binding effect. It places `greet` directly in the importing scope, so the call can be written `greet(\"Ada\")`. That can be convenient for a small, unambiguous import, but the qualification that showed its source is no longer present at each use. `from greetings import *` is generally a poor choice in ordinary application code because it makes many bindings appear implicitly and can overwrite names already present. These forms do not create different copies of the module's definitions. They specify how the importing scope refers to content from the loaded module. Variables and scope cover the general rules for names in one scope; this lesson focuses on the module boundary."
+    },
+    {
+      "heading": "Finding, loading, and naming a module",
+      "body": "Before Python can bind a module name, it must find the named module. For a normal import, the interpreter uses a search path exposed as `sys.path`. Its initial contents depend on how Python started and typically include the directory of the input script (or the current directory in interactive use), entries from `PYTHONPATH` when configured, and installation-dependent standard locations. This explains a frequent surprise: a file named `math.py` beside a script can be found before the standard-library `math` module. Naming a personal file after a standard-library module can therefore shadow the module the program meant to import.\n\nAfter a module is found, Python normally initializes it the first time it is imported in a session and retains the resulting module object in `sys.modules`. Later imports of that name ordinarily reuse that object instead of rerunning all top-level statements. This behavior is useful for shared module state, but it also means an import is not a request to restart a file. Interactive reloading and custom import machinery are advanced topics; the practical beginner rule is to avoid relying on repeated imports for repeated actions. Call a function when you want an action repeated.\n\nEvery module receives a `__name__` binding. When `greetings.py` is imported as `greetings`, its `__name__` is usually `\"greetings\"`. When that file is the top-level program Python starts, its `__name__` is `\"__main__\"`. The special value describes the execution context; it does not mean the file ceased to be a module. You will later see a conventional guard that tests this value, but knowing the values themselves is enough here. Packages, which organize related modules, and installable distributions, which are artifacts delivered to users, are related but separate ideas handled in the Packages lesson."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "module",
+      "definition": "A Python file containing definitions and statements that can be loaded under a module name."
+    },
+    {
+      "term": "namespace",
+      "definition": "A mapping that associates names with objects within a particular context, such as a module."
+    },
+    {
+      "term": "import",
+      "definition": "A statement that finds and loads a module as needed, then creates specified name bindings in the importing scope."
+    },
+    {
+      "term": "qualified name",
+      "definition": "A name reached through another object or namespace, such as `math.sqrt`."
+    },
+    {
+      "term": "module search path",
+      "definition": "The ordered locations Python consults while locating modules for ordinary imports."
+    },
+    {
+      "term": "sys.path",
+      "definition": "The runtime list that exposes Python's module search path."
+    },
+    {
+      "term": "module object",
+      "definition": "The object Python creates to represent a loaded module and hold its namespace."
+    },
+    {
+      "term": "__name__",
+      "definition": "A module-level binding that identifies a module's execution name, commonly `__main__` for top-level code."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Think of each module as a labeled drawer of instructions. A drawer named `greetings` can hold a note called `message` and a tool called `greet`. Writing `import greetings` gives your program a way to open that drawer, so `greetings.greet` clearly means the tool from that drawer. If you instead import just `greet`, you place that one tool on your desk, where its label no longer shows which drawer it came from. Python uses a list of places to look for the labeled drawer. If it finds a nearby drawer with the same label as a standard one, that nearby drawer can be chosen, which is why filenames matter.",
+    "analogy": "A module is like a labeled drawer in a workshop. Importing the drawer lets you request a particular tool by drawer and tool name, such as `greetings.greet`.",
+    "analogyLimits": "Real modules are runtime objects with executable initialization and name bindings; drawers do not run instructions or participate in a search path."
+  },
+  "workedExample": "Save this first file as `greetings.py` in an empty temporary directory:\n\n```python\nmessage = \"hello\"\n\ndef greet(name):\n    return f\"{message}, {name}\"\n\nprint(__name__)\n```\n\nIn the same directory, run this command:\n\n```bash\npython3 -c 'import greetings; print(greetings.greet(\"Ada\")); print(greetings.message)'\n```\n\nIt prints:\n\n```text\ngreetings\nhello, Ada\nhello\n```\n\nThe first line comes from `greetings.py` while Python imports it; because it was imported, its `__name__` is `greetings`. The command receives the module binding `greetings`, then uses qualified names to call `greet` and read `message`. Running `python3 greetings.py` instead would make that first line `__main__`. The example was executed with Python 3 before publication.",
+  "commonMistakes": [
+    {
+      "mistake": "Assuming `import helpers` puts every helper name directly in the current file.",
+      "correction": "With this form, use qualified access such as `helpers.format_title`; import a particular name only when that is intentional."
+    },
+    {
+      "mistake": "Naming a local file after a standard-library module, such as `math.py`.",
+      "correction": "Use a distinctive project filename so the search path does not select the local file instead of the intended module."
+    },
+    {
+      "mistake": "Expecting another `import` statement to rerun a module's top-level code.",
+      "correction": "A loaded module is normally reused in the current session; call a function for behavior that should run repeatedly."
+    },
+    {
+      "mistake": "Treating a package or an installable distribution as exactly the same thing as a module.",
+      "correction": "Start with a module as one Python file; learn package structure and distribution installation separately."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "`import greetings`",
+      "b": "`from greetings import greet`",
+      "distinction": "The first binds the module name and uses `greetings.greet`; the second binds `greet` directly in the importing scope."
+    },
+    {
+      "a": "imported module",
+      "b": "top-level script",
+      "distinction": "An imported module commonly has its module name in `__name__`; top-level code has `__main__`."
+    },
+    {
+      "a": "module",
+      "b": "package",
+      "distinction": "A module is a Python file; a package organizes related modules and is covered separately."
+    }
+  ],
+  "keyTakeaway": "Modules organize Python code into named namespaces. Choose an import form deliberately, use qualified names when their origin helps readers, and remember that Python must find and initialize a module before it can bind it.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:modules:1",
+      "prompt": "What is the ordinary module name for a file named `reports.py`?",
+      "options": [
+        "`reports.py`",
+        "`python.reports`",
+        "`reports`",
+        "`__main__`"
+      ],
+      "correctIndex": 2,
+      "explanation": "The module name is normally the filename without the `.py` suffix: `reports`. The suffix is not used in the import name, and `__main__` describes top-level execution rather than the ordinary module name.",
+      "difficulty": "recall",
+      "skill": "Identify a module name",
+      "sourceIds": [
+        "python-tutorial-modules"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:modules:2",
+      "prompt": "After `import geometry`, which expression accesses a function named `area` from that module?",
+      "options": [
+        "`import.area`",
+        "`area.geometry`",
+        "`geometry`",
+        "`geometry.area`"
+      ],
+      "correctIndex": 3,
+      "explanation": "`import geometry` binds the module name, so its attribute is accessed as `geometry.area`. The other expressions do not perform module attribute access.",
+      "difficulty": "application",
+      "skill": "Apply qualified module access",
+      "sourceIds": [
+        "python-tutorial-modules",
+        "python-language-reference-import-system"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:modules:3",
+      "prompt": "Which statement best describes `from tools import clean`?",
+      "options": [
+        "It binds `clean` directly in the importing scope.",
+        "It renames the `tools.py` file.",
+        "It removes `clean` from the tools module.",
+        "It guarantees that no other name can be called `clean`."
+      ],
+      "correctIndex": 0,
+      "explanation": "This form binds the selected name directly where the import appears. It does not rename the source file, remove its attribute, or prevent other bindings with that name.",
+      "difficulty": "understanding",
+      "skill": "Distinguish import binding forms",
+      "sourceIds": [
+        "python-tutorial-modules"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:modules:4",
+      "prompt": "A script unexpectedly imports a nearby file named `math.py` instead of the standard-library module. What most directly explains this?",
+      "options": [
+        "All local modules are ignored.",
+        "The module search path can include the script or current directory before standard locations.",
+        "Python chooses a module at random.",
+        "A standard-library import always requires a package."
+      ],
+      "correctIndex": 1,
+      "explanation": "The search path can include the script directory or current directory, so a nearby matching filename can shadow the intended standard-library module. The behavior is ordered, not random.",
+      "difficulty": "analysis",
+      "skill": "Diagnose a module-shadowing problem",
+      "sourceIds": [
+        "python-tutorial-modules",
+        "python-language-reference-import-system"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:modules:5",
+      "prompt": "When `greetings.py` is imported as `greetings`, what value normally appears in its `__name__` binding?",
+      "options": [
+        "`__main__`",
+        "The current directory",
+        "`greetings`",
+        "The name of the importing function"
+      ],
+      "correctIndex": 2,
+      "explanation": "An imported module normally receives its module name in `__name__`, here `greetings`. `__main__` is the special value for the top-level code environment.",
+      "difficulty": "recall",
+      "skill": "Interpret module execution context",
+      "sourceIds": [
+        "python-tutorial-modules",
+        "python-docs-main"
+      ]
+    }
+  ],
+  "quickCheck": [],
+  "relatedTopics": [
+    "python-programming:foundations:variables",
+    "python-programming:foundations:scope",
+    "python-programming:foundations:packages",
+    "python-programming:foundations:running-python-programs",
+    "python-programming:foundations:include-small-executable-examples-throughout"
+  ],
+  "sources": [
+    "python-tutorial-modules",
+    "python-language-reference-import-system",
+    "python-docs-main"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only official documentation; no source prose adapted.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Original instructional explanation built from verified Python documentation and a locally executed Python 3 example."
+  },
+  "contentHash": "5f45cd19be601285",
+  "status": "source-verified",
+  "public": false
+}

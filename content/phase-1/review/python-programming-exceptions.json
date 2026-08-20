@@ -1,0 +1,235 @@
+{
+  "id": "python-programming:foundations:exceptions",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "exceptions",
+  "title": "Exceptions",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 10,
+  "tags": [
+    "python",
+    "exceptions",
+    "error-handling",
+    "try-except"
+  ],
+  "in30Seconds": "An exception is a runtime event that interrupts normal Python execution, such as converting invalid text with `int()` or dividing by zero. A `try` statement lets a program handle an expected kind of exception deliberately. Put only the operation that may fail in `try`, catch its specific exception in `except`, use `else` for the success path, and use `finally` for work that must happen before the statement finishes.",
+  "whyItMatters": "Exceptions let a program distinguish an expected problem from a successful result instead of pretending every operation succeeds. In coursework, they make input-validation and code tracing more precise. In production code, a targeted handler can give a useful response to a known condition while allowing unexpected defects to remain visible. That distinction prevents both crashes from routine bad input and silent failures caused by catching too much.",
+  "learningObjectives": [
+    "Define a Python runtime exception and distinguish it from a syntax error.",
+    "Trace the control flow of `try`, `except`, `else`, and `finally`.",
+    "Select a targeted exception handler for a known operation.",
+    "Explain how exception inheritance and handler order affect matching.",
+    "Use `raise ValueError` to enforce a simple function contract."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Exceptions describe execution-time problems",
+      "body": "Python can reject code before it runs when its syntax is invalid, but syntactically valid code can also fail while executing. Python calls these execution-time errors exceptions. For example, `int(\"four\")` is valid code, yet the conversion cannot produce an integer and raises `ValueError`. Similarly, `1 / 0` raises `ZeroDivisionError`. If no code handles an exception, Python reports a traceback that identifies the route through source code to the point where it occurred. An exception is therefore not merely a printed message; it is an object-based control-flow event that can be handled, allowed to propagate to a caller, or left unhandled.\n\nThe exception type carries important meaning. `ValueError` says an operation received a value of an appropriate general type but an inappropriate value; `TypeError` commonly signals an operation applied to an unsuitable type. Choosing a handler based on that meaning is safer than treating every failure alike. This lesson is about handling expected, local conditions. Finding an unexpected defect through tracing and inspection belongs to debugging, and safe acquisition and closing of files belongs to the file lessons."
+    },
+    {
+      "heading": "A try statement separates protected work from outcomes",
+      "body": "A `try` statement begins by executing its `try` suite. If that suite completes normally, its `except` suites are skipped. If an exception occurs in the `try` suite, the rest of that suite is skipped and Python looks for a matching `except` clause. A matching handler runs, after which execution continues after the whole statement. If no handler matches, the exception propagates to an enclosing caller or becomes unhandled. A handler does not automatically catch a problem raised inside a different `except` suite.\n\nKeep a `try` suite narrow. If a program intends to handle a conversion failure, the conversion—not unrelated printing, calculation, or state changes—belongs in the protected suite. A narrow suite makes the intended recovery clear and avoids mislabeling an unrelated bug as bad input. An `else` suite is useful for code that should run only when the `try` suite did not raise an exception. Keeping success-only work there avoids accidentally catching an exception from that work. A `finally` suite executes as the last task before the `try` statement completes, whether the protected work succeeded, was handled, or an exception is continuing outward. Do not use a `return`, `break`, or `continue` in `finally` to hide an exception; that makes control flow needlessly surprising."
+    },
+    {
+      "heading": "Target the exception type and respect the hierarchy",
+      "body": "Built-in exceptions are classes. `BaseException` is their common base; `Exception` is the usual base for ordinary application-level errors. An `except SomeClass` handler matches an instance of `SomeClass` or a subclass of it. It does not match one of its base classes. This is why order matters when two handlers overlap: Python executes the first matching handler. A handler for a subclass such as `FileNotFoundError` must appear before a handler for its superclass `OSError` if the program needs different responses.\n\nFor introductory code, prefer a handler for the specific problem you expect, such as `except ValueError:` around `int(text)`. A bare `except:` is especially risky because it catches every exception derived from `BaseException`, including `KeyboardInterrupt` and `SystemExit`, which programs normally should not swallow. `except Exception:` is less broad but still inappropriate when the program only knows how to recover from one expected condition. If a handler cannot make a correct decision, allow the exception to propagate or, after adding needed context, re-raise it.\n\n`raise` lets code state a violated contract explicitly. A function that requires a nonnegative value can raise `ValueError` when it receives a negative one. That is different from using exceptions as ordinary branching: test predictable conditions directly when a simple conditional expresses the rule. Raise an exception when the function cannot sensibly continue under its documented input contract."
+    },
+    {
+      "heading": "Trace success and failure paths independently",
+      "body": "To trace a `try` statement, first identify the operation inside `try` that can raise. Then follow two paths: the no-exception path runs `else` if present, then `finally`; the matching-exception path runs the matching handler, then `finally`. An unmatched-exception path still runs `finally` before carrying the exception outward. This procedure explains output without guessing and makes it easier to decide whether a handler’s response is appropriate.\n\nException handling should preserve useful information. A helpful handler can report what input was invalid or return a clearly documented fallback. A harmful handler silently substitutes a value that makes later results misleading. The goal is neither to prevent all exceptions nor to make a program continue at any cost. The goal is to handle the specific failures the program understands, while leaving unexpected failures available for diagnosis."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "exception",
+      "definition": "An event raised during execution that interrupts normal control flow until code handles it or it propagates."
+    },
+    {
+      "term": "traceback",
+      "definition": "Python’s report of the call path and source locations associated with an unhandled exception."
+    },
+    {
+      "term": "try suite",
+      "definition": "The block of statements Python executes first in a try statement."
+    },
+    {
+      "term": "exception handler",
+      "definition": "An `except` clause that responds to matching exception instances."
+    },
+    {
+      "term": "propagate",
+      "definition": "To pass an exception outward when the current code does not handle it."
+    },
+    {
+      "term": "exception hierarchy",
+      "definition": "The subclass relationships among exception classes that determine which handlers match."
+    },
+    {
+      "term": "raise",
+      "definition": "The statement used to cause a specified exception to occur."
+    },
+    {
+      "term": "finally suite",
+      "definition": "The optional block that runs as the last task before a try statement completes."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Imagine a recipe machine that sometimes receives an ingredient it cannot use. An exception is its clear signal: it cannot finish this step normally. A `try` block is the small area where you expect that particular problem might happen. An `except ValueError` block is the prepared instruction for that exact signal, such as asking for a number again. If nothing goes wrong, `else` handles the normal success work. `finally` is the last checklist item that happens on either path.\n\nThe important idea is to listen for the right signal. A plan for a bad number should not also silence every possible alarm in the machine. If an unfamiliar alarm rings, let it be heard so someone can investigate it.",
+    "analogy": "A try statement is like a small station with a trained response for one known alarm, a normal-work lane, and a final shutdown checklist.",
+    "analogyLimits": "Programs do not literally have alarms or lanes. The analogy does not explain exception objects, inheritance, or all effects of returning from a finally block."
+  },
+  "workedExample": "This executed function accepts text that represents a nonnegative whole number. The conversion may raise `ValueError`, so only `int(text)` is in the `try` suite. On success, `else` prints the converted value. A negative result violates the function’s documented rule, so `raise ValueError` creates a deliberate exception; the same targeted handler reports it. In both cases, `finally` prints its message. The calls produce the shown two outcomes.\n\n```python\ndef show_count(text):\n    try:\n        count = int(text)\n        if count < 0:\n            raise ValueError(\"count must be nonnegative\")\n    except ValueError as error:\n        print(f\"invalid count: {error}\")\n    else:\n        print(f\"accepted: {count}\")\n    finally:\n        print(\"checked\")\n\nshow_count(\"12\")\nshow_count(\"-3\")\n# accepted: 12\n# checked\n# invalid count: count must be nonnegative\n# checked\n```",
+  "commonMistakes": [
+    {
+      "mistake": "Using a bare `except:` for ordinary input errors.",
+      "correction": "Catch the expected type, such as `ValueError`, so interrupts and unrelated failures are not silently swallowed."
+    },
+    {
+      "mistake": "Putting a large amount of unrelated code in `try`.",
+      "correction": "Protect the smallest operation whose expected exception you can handle correctly."
+    },
+    {
+      "mistake": "Putting a superclass handler before a subclass handler.",
+      "correction": "Place the more specific exception first because Python uses the first matching handler."
+    },
+    {
+      "mistake": "Assuming `else` runs after a handled exception.",
+      "correction": "`else` runs only when the try suite completed without an exception."
+    },
+    {
+      "mistake": "Returning from `finally` to guarantee a result.",
+      "correction": "Avoid control-transfer statements in `finally`; they can suppress an exception that should continue outward."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Syntax error",
+      "b": "Exception",
+      "distinction": "A syntax error is detected while parsing code; an exception is raised while syntactically valid code executes."
+    },
+    {
+      "a": "`except ValueError`",
+      "b": "bare `except`",
+      "distinction": "The targeted handler catches the known conversion/value condition; a bare handler catches nearly every exception, including signals usually allowed to terminate."
+    },
+    {
+      "a": "`else`",
+      "b": "`finally`",
+      "distinction": "`else` runs after a successful try suite; `finally` runs as the try statement completes on both success and exception paths."
+    }
+  ],
+  "keyTakeaway": "Handle only failures your code understands: keep `try` narrow, catch a specific exception type, use `else` for the normal path, and let `finally` perform its final task without hiding an exception.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:exceptions:1",
+      "prompt": "Which event is a Python exception rather than a syntax error?",
+      "options": [
+        "A missing colon in a `def` statement.",
+        "An unmatched opening parenthesis while parsing.",
+        "`int(\"blue\")` raising `ValueError` during execution.",
+        "An indentation violation detected before execution."
+      ],
+      "correctIndex": 2,
+      "explanation": "`int(\"blue\")` is syntactically valid but fails during execution, producing `ValueError`. The other choices are detected while Python parses code.",
+      "difficulty": "recall",
+      "skill": "Distinguish runtime exceptions from syntax errors",
+      "sourceIds": [
+        "python-tutorial-errors"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:exceptions:2",
+      "prompt": "A function expects an integer typed as text. Which handler is most appropriate directly around `int(text)`?",
+      "options": [
+        "`except KeyboardInterrupt:`",
+        "`except BaseException:`",
+        "`except TypeError:`",
+        "`except ValueError:`"
+      ],
+      "correctIndex": 3,
+      "explanation": "Invalid integer text causes `int()` to raise `ValueError`, so that is the targeted handler. The other choices are unrelated or much too broad.",
+      "difficulty": "application",
+      "skill": "Select a targeted handler",
+      "sourceIds": [
+        "python-tutorial-errors"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:exceptions:3",
+      "prompt": "When a try suite completes without raising an exception, what happens to an attached `else` suite?",
+      "options": [
+        "It runs before the `finally` suite.",
+        "It is skipped whenever `finally` exists.",
+        "It runs only after an exception is handled.",
+        "It runs only if the handler re-raises an error."
+      ],
+      "correctIndex": 0,
+      "explanation": "`else` is the success path and runs when the try suite completes normally; `finally`, if present, then runs as the statement completes.",
+      "difficulty": "understanding",
+      "skill": "Trace try/else control flow",
+      "sourceIds": [
+        "python-tutorial-errors",
+        "python-reference-try-statement"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:exceptions:4",
+      "prompt": "Why should `except FileNotFoundError:` appear before `except OSError:` when the two handlers have different responses?",
+      "options": [
+        "`FileNotFoundError` is not an exception class.",
+        "`FileNotFoundError` is a subclass of `OSError`, and Python uses the first matching handler.",
+        "`OSError` can only be caught in an `else` suite.",
+        "The two handlers always run together."
+      ],
+      "correctIndex": 1,
+      "explanation": "A handler for a class matches instances of that class and subclasses. Since `FileNotFoundError` derives from `OSError`, the specific handler must come first to be reached.",
+      "difficulty": "analysis",
+      "skill": "Apply exception hierarchy and handler order",
+      "sourceIds": [
+        "python-tutorial-errors",
+        "python-built-in-exceptions"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:exceptions:5",
+      "prompt": "A `try` suite raises an unmatched `TypeError`, and the statement has a `finally` suite. What occurs?",
+      "options": [
+        "`finally` is skipped because no handler matched.",
+        "Python silently converts the error to `ValueError`.",
+        "The `finally` suite runs, then the `TypeError` continues outward.",
+        "The `else` suite handles the `TypeError`."
+      ],
+      "correctIndex": 2,
+      "explanation": "`finally` runs whether or not an exception is handled. Because no handler matches, the original `TypeError` then propagates.",
+      "difficulty": "application",
+      "skill": "Trace unmatched-exception control flow",
+      "sourceIds": [
+        "python-tutorial-errors",
+        "python-reference-try-statement"
+      ]
+    }
+  ],
+  "quickCheck": [],
+  "relatedTopics": [
+    "python-programming:foundations:input-and-output",
+    "python-programming:foundations:functions",
+    "python-programming:foundations:scope",
+    "python-programming:foundations:debugging",
+    "python-programming:foundations:files"
+  ],
+  "sources": [
+    "python-tutorial-errors",
+    "python-built-in-exceptions",
+    "python-reference-try-statement"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only official documentation; no source prose adapted.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Original explanatory lesson based on official Python 3 documentation; code and stated output executed with python3."
+  },
+  "contentHash": "55919f1b725d3af0",
+  "status": "source-verified",
+  "public": false
+}

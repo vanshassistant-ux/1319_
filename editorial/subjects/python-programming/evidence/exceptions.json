@@ -1,0 +1,26 @@
+{
+  "topicId": "python-programming:foundations:exceptions",
+  "subjectId": "python-programming",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": ["runtime exceptions", "targeted try/except handling", "else and finally", "raising ValueError", "exception-class hierarchy"],
+    "supporting": ["tracebacks", "exception propagation", "specific handlers before broad handlers"],
+    "outOfScope": ["debugging workflow", "file I/O patterns", "custom exception classes", "exception groups", "advanced exception chaining"]
+  },
+  "claims": [
+    {"claim":"An exception is an error detected while syntactically valid Python executes; an unhandled exception normally produces an error message and stops execution.","claimType":"TECHNICAL","sourceIds":["python-tutorial-errors"],"status":"supported"},
+    {"claim":"A matching except handler runs after an exception in its try suite, while an unmatched exception propagates outward.","claimType":"TECHNICAL","sourceIds":["python-tutorial-errors","python-reference-try-statement"],"status":"supported"},
+    {"claim":"An except clause naming an exception class also matches instances of its subclasses, so handler order matters.","claimType":"TECHNICAL","sourceIds":["python-tutorial-errors","python-built-in-exceptions"],"status":"supported"},
+    {"claim":"The else suite runs when the try suite completes without an exception, and finally runs as the last task before the try statement completes.","claimType":"TECHNICAL","sourceIds":["python-tutorial-errors","python-reference-try-statement"],"status":"supported"},
+    {"claim":"raise accepts an exception instance or a class derived from BaseException; code should normally handle specific expected exception types rather than use a bare except.","claimType":"TECHNICAL","sourceIds":["python-tutorial-errors","python-built-in-exceptions"],"status":"supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft contained no usable exception-specific factual content."],
+  "correctionsNeeded": ["Replaced generic boilerplate with verified Python 3 semantics and executed examples."],
+  "rightsIssues": ["Official documentation was used as reference-only; all lesson prose and examples are original."],
+  "sourceRecords": [
+    {"id":"python-tutorial-errors","title":"The Python Tutorial — 8. Errors and Exceptions","provider":"Python Software Foundation","url":"https://docs.python.org/3/tutorial/errors.html","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"PSF License / Zero-Clause BSD (docs)","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Read directly. Supports runtime exceptions, targeted handlers, handler order, else, finally, and raise semantics."},
+    {"id":"python-built-in-exceptions","title":"Built-in Exceptions","provider":"Python Software Foundation","url":"https://docs.python.org/3/library/exceptions.html","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"PSF License / Zero-Clause BSD (docs)","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Read directly. Supports BaseException ancestry, subclass matching in except clauses, and use of built-in exceptions."},
+    {"id":"python-reference-try-statement","title":"The Python Language Reference — The try statement","provider":"Python Software Foundation","url":"https://docs.python.org/3/reference/compound_stmts.html#the-try-statement","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"PSF License / Zero-Clause BSD (docs)","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Read directly. Supports formal control flow for try, except, else, and finally."}
+  ]
+}

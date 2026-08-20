@@ -1,0 +1,28 @@
+{
+  "topicId": "python-programming:foundations:packages",
+  "subjectId": "python-programming",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": ["import packages", "dotted import names", "regular and namespace packages", "distribution packages versus import packages"],
+    "supporting": ["the purpose of __init__.py", "the conceptual role of pip and virtual environments"],
+    "outOfScope": ["writing a build configuration", "install commands", "module internals", "dependency resolution", "publishing to an index"]
+  },
+  "claims": [
+    {"claim":"A Python import package is a module that can contain other modules or recursively other packages, and it provides a dotted-name hierarchy for imports.","claimType":"TECHNICAL","sourceIds":["python-import-system","python-tutorial-modules"],"status":"supported"},
+    {"claim":"A regular package normally has an __init__.py file; its code runs when the package is imported.","claimType":"TECHNICAL","sourceIds":["python-import-system","python-tutorial-modules"],"status":"supported"},
+    {"claim":"Native namespace packages can exist without __init__.py and may combine portions found in multiple directories.","claimType":"TECHNICAL","sourceIds":["python-import-system"],"status":"supported"},
+    {"claim":"A distribution package is the versioned artifact installed by an installer, while an import package is what Python imports; their names and one-to-one correspondence are not guaranteed.","claimType":"TECHNICAL","sourceIds":["pypa-distribution-vs-import-package"],"status":"supported"},
+    {"claim":"A virtual environment is an isolated Python environment for a project, and pip is commonly used within it to install distribution packages.","claimType":"TECHNICAL","sourceIds":["pypa-pip-venv-guide"],"status":"supported"},
+    {"claim":"In an import such as import garden.tools, each dotted component except the final component must be a package.","claimType":"TECHNICAL","sourceIds":["python-tutorial-modules"],"status":"supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft did not distinguish the import-time meaning of package from the install-time meaning used by package managers."],
+  "correctionsNeeded": ["Replaced generic boilerplate with the import-package/distribution-package distinction; treated __init__.py as the normal regular-package marker rather than a universal requirement; kept installation mechanics out of scope."],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {"id":"python-tutorial-modules","title":"The Python Tutorial — 6. Modules (Packages)","provider":"Python Software Foundation","url":"https://docs.python.org/3/tutorial/modules.html","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"Python Software Foundation License Version 2; examples additionally Zero-Clause BSD","licenseUrl":"https://docs.python.org/3/license.html","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Read directly, including the Packages section. Supports dotted module names, package directory structure, regular-package __init__.py behavior, and import forms. Facts synthesized; no source prose adapted."},
+    {"id":"python-import-system","title":"The Python Language Reference — The import system","provider":"Python Software Foundation","url":"https://docs.python.org/3/reference/import.html","sourceType":"documentation","usage":"REFERENCE_ONLY","license":"Python Software Foundation License Version 2","licenseUrl":"https://docs.python.org/3/license.html","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Read directly, including the regular and namespace package sections. Supports the precise definitions and __init__.py/namespace-package distinction. Facts synthesized; no source prose adapted."},
+    {"id":"pypa-distribution-vs-import-package","title":"Distribution package vs. import package","provider":"Python Packaging Authority","url":"https://packaging.python.org/en/latest/discussions/distribution-package-vs-import-package/","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-19","notes":"Read directly. Supports the distinction between a versioned distribution installed by an installer and the import packages made available to Python, including non-one-to-one naming. Facts synthesized; no source prose adapted."},
+    {"id":"pypa-pip-venv-guide","title":"Install packages in a virtual environment using pip and venv","provider":"Python Packaging Authority","url":"https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":true,"aiIngestionChecked":true,"aiIngestionAllowed":false,"checkedAt":"2026-08-19","notes":"Read directly. Supports the conceptual roles of a virtual environment and pip. Installation procedure is intentionally out of scope. Facts synthesized; no source prose adapted."}
+  ]
+}

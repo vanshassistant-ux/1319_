@@ -1,0 +1,271 @@
+{
+  "id": "python-programming:foundations:packages",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "packages",
+  "title": "Python Packages",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "python",
+    "packages",
+    "imports",
+    "packaging",
+    "virtual-environments"
+  ],
+  "in30Seconds": "In Python, an import package organizes modules under a dotted name such as `garden.tools`. It helps a program keep related code from colliding or becoming one huge file. That import-time idea is different from a distribution package: the versioned bundle that an installer such as pip installs. The two often relate, but their names and boundaries need not match. A normal package usually has `__init__.py`; namespace packages are a deliberate exception.",
+  "whyItMatters": "Packages give a growing program an address system for its code. Reading `from garden import tools` tells a reader both what is wanted and where it belongs. The import-package versus distribution-package distinction also prevents a common debugging mistake: assuming the name typed to an installer must be the name used after `import`. Finally, knowing the limited role of a virtual environment helps students separate organizing code from isolating a project's installed dependencies.",
+  "learningObjectives": [
+    "Define an import package and a dotted module name.",
+    "Distinguish a regular package from a namespace package.",
+    "Explain the ordinary role of `__init__.py` in a regular package.",
+    "Distinguish an import package from a distribution package.",
+    "Apply a package import to a small project layout."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Packages organize names that Python can import",
+      "body": "A module is one importable unit of Python code; a package is an importable module that can contain other modules or packages. Packages give those contained units dotted names. In `garden.tools`, `garden` is the package and `tools` is a module or subpackage inside it. Dotted names are more than a filing metaphor: they make the package hierarchy part of the import name. In an import written as `import garden.tools`, every component before the last one must be a package. The final component may be either a module or another package.\n\nThis organization matters when distinct parts of a program need similarly named things. A project can put plant-related behavior under `garden` and reporting behavior under `reports` instead of putting every definition into one file. The package name supplies context for a module name. It also lets a reader recognize that `garden.tools` and `reports.tools` are different addresses even though both end in `tools`. The import system searches for the requested name and binds the imported result; this lesson focuses on reading and designing those names, not on every detail of the search machinery.\n\nA package is not simply any folder with Python files. It is an import-system concept. The files and directories on disk are a common way to provide it, but what matters here is whether Python recognizes the structure as an importable package. That is why the details of `__init__.py` and namespace packages deserve careful treatment."
+    },
+    {
+      "heading": "Regular packages, __init__.py, and the namespace exception",
+      "body": "A regular package normally has an `__init__.py` file in its directory. Python executes that file when the regular package is imported. The file can be empty; its presence still communicates the regular-package form. It can also contain initialization code or define names the package deliberately exposes. Beginners sometimes treat `__init__.py` as a required place to put all application code. It is not. Keeping it small—or empty when appropriate—often makes the package boundary clearer.\n\nThe word “normally” is important. Python also supports native namespace packages. A namespace package has no `__init__.py` file, and its portions can be located in more than one directory. That feature is useful in some larger ecosystems, but it changes the simple folder rule. Therefore, the accurate beginner rule is: use `__init__.py` for an ordinary regular package; do not conclude that every importable package must contain one. A missing file can be an error in a project that intended a regular package, or it can be intentional namespace-package design.\n\nFor a small project, an explicit regular package is usually the clearest teaching example. A directory named `garden` can contain `__init__.py` and `tools.py`; then `from garden import tools` imports the `tools` submodule. This lesson does not prescribe a project layout for every application, nor does it cover relative-import technique. It establishes the naming and structure needed to recognize what an import package is."
+    },
+    {
+      "heading": "Import packages are not distribution packages",
+      "body": "Packaging conversations use “package” in a second sense. A distribution package is the versioned artifact that an installer handles. It carries metadata and can provide code, data, or other resources to an environment. An import package, by contrast, is the hierarchy Python makes available to an `import` statement. These concepts often line up well enough to feel identical, but they are not guaranteed to do so. One distribution can provide several import packages; several distributions can contribute portions to a namespace package; and the distribution name may differ from the name written in `import`.\n\nThat distinction guides a sensible troubleshooting question. If an installer reports success but `import` fails, do not merely repeat the same command. Check the documented import name and the Python environment being used. Conversely, a successful import name does not identify every distribution that supplied it. The lesson is not an installation manual, so it stops before commands, build configuration, and dependency resolution. The central point is to avoid treating the installer label as the language's namespace.\n\nA virtual environment is related but separate again. It is an isolated Python environment, commonly created for one project. Pip is commonly used within that environment to install distributions. The environment controls which installed distributions are available to that interpreter; the import system then uses available code to resolve imports. Package organization answers “how is this code named?” A virtual environment answers “which project environment is this interpreter using?” Keeping those questions separate makes both concepts easier to reason about."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "import package",
+      "definition": "An importable Python module that can contain submodules or recursively other packages."
+    },
+    {
+      "term": "dotted module name",
+      "definition": "An import name with periods that expresses containment, such as `garden.tools`."
+    },
+    {
+      "term": "regular package",
+      "definition": "A package form normally identified by an `__init__.py` file in its directory."
+    },
+    {
+      "term": "namespace package",
+      "definition": "A package whose portions can be found in multiple directories and that does not use an `__init__.py` file."
+    },
+    {
+      "term": "distribution package",
+      "definition": "A versioned artifact that an installer handles and that may provide importable code or other resources."
+    },
+    {
+      "term": "virtual environment",
+      "definition": "An isolated Python environment used to keep a project's installed packages separate from other environments."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Imagine a library with labeled rooms. `garden` is one room, and `garden.tools` is a shelf inside that room. The dotted label helps you find the right code without mixing it with a different shelf named `tools` elsewhere. A normal room has a small sign called `__init__.py` that tells Python it is a regular room. Some advanced libraries deliberately combine several locations into one shared room; those are namespace packages and do not use that sign.\n\nThe box delivered to the library is a different thing. That box is like a distribution package: it is what an installer handles. A box might stock one room, several rooms, or part of a shared room. So the label on the delivery box need not be the exact label you use to find a shelf in Python.",
+    "analogy": "An import package is a labeled room-and-shelf address inside a library; a distribution package is a delivery box that may stock that address.",
+    "analogyLimits": "Real imports use Python's import system rather than physical rooms, and a distribution can include non-code resources. The analogy is only for separating an address used by code from an artifact handled by installation tools."
+  },
+  "workedExample": "Create this small layout, then run `app.py` from the directory that contains `app.py` and the `garden` directory:\n\n```text\ngarden/\n    __init__.py\n    tools.py\napp.py\n```\n\nPut this in `garden/tools.py`:\n\n```python\ndef common_name():\n    return \"fern\"\n```\n\nPut this in `app.py`:\n\n```python\nfrom garden import tools\n\nprint(tools.common_name())\n```\n\nThe output is `fern`. `garden` is the regular package because its directory contains `__init__.py`; `tools` is its submodule. The expression `tools.common_name()` uses a name provided by that submodule. No installer command appears here: this example demonstrates the import-package layout only. A project could obtain code in many ways, but an import statement works with the import name that is available to the current interpreter.",
+  "commonMistakes": [
+    {
+      "mistake": "Calling every directory with Python files a package.",
+      "correction": "Use the import-system distinction: a regular package normally has `__init__.py`; a namespace package is the documented exception."
+    },
+    {
+      "mistake": "Assuming a pip install name must equal the import name.",
+      "correction": "Consult the distribution's documentation; a distribution package and import package do not have a required one-to-one naming relationship."
+    },
+    {
+      "mistake": "Putting all project code in `__init__.py`.",
+      "correction": "Treat it as regular-package initialization or an intentionally exposed interface; place distinct behavior in appropriately named modules."
+    },
+    {
+      "mistake": "Treating a virtual environment as a code-organizing package.",
+      "correction": "A package organizes import names, while a virtual environment isolates the interpreter and installed distributions for a project."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "import package",
+      "b": "distribution package",
+      "distinction": "An import package is a code namespace used by `import`; a distribution package is a versioned artifact handled by installation tools."
+    },
+    {
+      "a": "regular package",
+      "b": "namespace package",
+      "distinction": "A regular package normally has `__init__.py`; a namespace package has no such file and can span multiple directories."
+    },
+    {
+      "a": "package",
+      "b": "virtual environment",
+      "distinction": "A package organizes importable code names; a virtual environment isolates an interpreter's installed distributions."
+    }
+  ],
+  "keyTakeaway": "Use packages to give related modules clear dotted import names. Keep the import-time meaning separate from the distribution artifacts that tools install, and remember that `__init__.py` is normal for regular packages but not for namespace packages.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:packages:1",
+      "prompt": "What is an import package in Python?",
+      "options": [
+        "A command that installs dependencies",
+        "A module that can contain submodules or other packages",
+        "Any folder on a computer",
+        "A virtual environment for one project"
+      ],
+      "correctIndex": 1,
+      "explanation": "An import package is an importable module that can contain submodules or packages. Installation commands and environments are separate concepts, and not every folder is an import package.",
+      "difficulty": "recall",
+      "skill": "Define an import package",
+      "sourceIds": [
+        "python-import-system"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:packages:2",
+      "prompt": "In `import garden.tools`, what must `garden` be?",
+      "options": [
+        "A function",
+        "A distribution version",
+        "A package",
+        "A variable in the importing file"
+      ],
+      "correctIndex": 2,
+      "explanation": "In a dotted import, every component except the last must be a package. `tools` may be a module or package; the other choices cannot play `garden`'s import-hierarchy role.",
+      "difficulty": "understanding",
+      "skill": "Interpret a dotted import name",
+      "sourceIds": [
+        "python-tutorial-modules"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:packages:3",
+      "prompt": "A project directory has no `__init__.py`, yet Python intentionally combines its contents with a same-named directory elsewhere. Which concept best describes this design?",
+      "options": [
+        "A namespace package",
+        "A regular package with a required initializer",
+        "A distribution-name alias",
+        "A virtual environment"
+      ],
+      "correctIndex": 0,
+      "explanation": "Native namespace packages omit `__init__.py` and can combine portions from multiple directories. A regular package normally uses the file; distribution aliases and virtual environments describe different concerns.",
+      "difficulty": "application",
+      "skill": "Recognize the namespace-package exception",
+      "sourceIds": [
+        "python-import-system"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:packages:4",
+      "prompt": "Why might the name used with an installer differ from the name used in an `import` statement?",
+      "options": [
+        "Python changes all names at random",
+        "An import name is always a filename extension",
+        "Distribution packages and import packages are distinct concepts without a required one-to-one naming match",
+        "A virtual environment removes package names"
+      ],
+      "correctIndex": 2,
+      "explanation": "An installer handles a versioned distribution, while `import` uses an import package. Their names and boundaries do not have to match; the other claims are false.",
+      "difficulty": "analysis",
+      "skill": "Distinguish installation and import namespaces",
+      "sourceIds": [
+        "pypa-distribution-vs-import-package"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:packages:5",
+      "prompt": "Which statement correctly separates a virtual environment from a package?",
+      "options": [
+        "They are two names for the same directory",
+        "A package isolates dependencies, while a virtual environment creates dotted imports",
+        "A virtual environment is a distribution artifact inside an import package",
+        "A virtual environment isolates a project's Python environment; a package organizes importable code names"
+      ],
+      "correctIndex": 3,
+      "explanation": "A virtual environment isolates the interpreter environment and installed distributions for a project. Packages organize names used by imports; the other reversals or equivalences are incorrect.",
+      "difficulty": "application",
+      "skill": "Separate environment isolation from code organization",
+      "sourceIds": [
+        "pypa-pip-venv-guide",
+        "python-import-system"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "python-programming:foundations:packages:1",
+      "prompt": "What is an import package in Python?",
+      "options": [
+        "A command that installs dependencies",
+        "A module that can contain submodules or other packages",
+        "Any folder on a computer",
+        "A virtual environment for one project"
+      ],
+      "correctIndex": 1,
+      "explanation": "An import package is an importable module that can contain submodules or packages. Installation commands and environments are separate concepts, and not every folder is an import package.",
+      "difficulty": "recall",
+      "skill": "Define an import package",
+      "sourceIds": [
+        "python-import-system"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:packages:2",
+      "prompt": "In `import garden.tools`, what must `garden` be?",
+      "options": [
+        "A function",
+        "A distribution version",
+        "A package",
+        "A variable in the importing file"
+      ],
+      "correctIndex": 2,
+      "explanation": "In a dotted import, every component except the last must be a package. `tools` may be a module or package; the other choices cannot play `garden`'s import-hierarchy role.",
+      "difficulty": "understanding",
+      "skill": "Interpret a dotted import name",
+      "sourceIds": [
+        "python-tutorial-modules"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:packages:3",
+      "prompt": "A project directory has no `__init__.py`, yet Python intentionally combines its contents with a same-named directory elsewhere. Which concept best describes this design?",
+      "options": [
+        "A namespace package",
+        "A regular package with a required initializer",
+        "A distribution-name alias",
+        "A virtual environment"
+      ],
+      "correctIndex": 0,
+      "explanation": "Native namespace packages omit `__init__.py` and can combine portions from multiple directories. A regular package normally uses the file; distribution aliases and virtual environments describe different concerns.",
+      "difficulty": "application",
+      "skill": "Recognize the namespace-package exception",
+      "sourceIds": [
+        "python-import-system"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "python-programming:foundations:modules",
+    "python-programming:foundations:files",
+    "python-programming:foundations:object-oriented-programming",
+    "python-programming:foundations:basic-testing",
+    "python-programming:foundations:debugging"
+  ],
+  "sources": [
+    "python-tutorial-modules",
+    "python-import-system",
+    "pypa-distribution-vs-import-package",
+    "pypa-pip-venv-guide"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only documentation sources; no source prose adapted",
+    "researchedAt": "2026-08-19",
+    "transformation": "Official Python and PyPA documentation were read and synthesized into original instruction and an executed Python 3 example."
+  },
+  "contentHash": "822d382ce0918c9e",
+  "status": "source-verified",
+  "public": false
+}

@@ -1,0 +1,27 @@
+{
+  "topicId": "python-programming:foundations:modules",
+  "subjectId": "python-programming",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": ["module files", "import forms", "module namespaces", "module search path", "the __name__ binding"],
+    "supporting": ["qualified attribute access", "one-time initialization during an import"],
+    "outOfScope": ["package directory layout", "distribution and installation", "relative imports", "detailed main-guard patterns"]
+  },
+  "claims": [
+    {"claim": "A Python module is a file containing Python definitions and statements, and its file name is the module name with the .py suffix removed.", "claimType": "TECHNICAL", "sourceIds": ["python-tutorial-modules"], "status": "supported"},
+    {"claim": "An import statement searches for a named module and, after loading it, creates a binding for the module name in the importing scope.", "claimType": "TECHNICAL", "sourceIds": ["python-language-reference-import-system"], "status": "supported"},
+    {"claim": "The module search path is initialized from the script directory or current directory, PYTHONPATH, and installation-dependent defaults; sys.path exposes it.", "claimType": "TECHNICAL", "sourceIds": ["python-tutorial-modules", "python-language-reference-import-system"], "status": "supported"},
+    {"claim": "import name keeps the module namespace available through qualified access, while from name import item binds the imported item directly in the importing scope.", "claimType": "TECHNICAL", "sourceIds": ["python-tutorial-modules"], "status": "supported"},
+    {"claim": "Within a module, __name__ is set to the module's name when imported and to __main__ when the file is run as the top-level script.", "claimType": "TECHNICAL", "sourceIds": ["python-tutorial-modules", "python-docs-main"], "status": "supported"},
+    {"claim": "A module is normally initialized only the first time its name is imported in a Python session, with the resulting module object retained in sys.modules.", "claimType": "TECHNICAL", "sourceIds": ["python-tutorial-modules", "python-language-reference-import-system"], "status": "supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft did not distinguish module namespaces from package or distribution concepts."],
+  "correctionsNeeded": ["Kept package layout and installation out of scope.", "Verified the temporary two-file example with python3 before writing it."],
+  "rightsIssues": ["Official Python documentation was used as REFERENCE_ONLY. This lesson is original synthesis and does not reproduce source prose."],
+  "sourceRecords": [
+    {"id": "python-tutorial-modules", "title": "The Python Tutorial — 6. Modules", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/tutorial/modules.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-19", "notes": "Read live. Supports module files, import forms, namespace access, __name__, search-path overview, and module caching."},
+    {"id": "python-language-reference-import-system", "title": "The Python Language Reference — The import system", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/reference/import.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-19", "notes": "Read live. Supports import search, name binding, sys.path, module objects, and sys.modules behavior."},
+    {"id": "python-docs-main", "title": "__main__ — Top-level code environment", "provider": "Python Software Foundation", "url": "https://docs.python.org/3/library/__main__.html", "sourceType": "documentation", "usage": "REFERENCE_ONLY", "attributionRequired": false, "aiIngestionChecked": true, "aiIngestionAllowed": true, "checkedAt": "2026-08-19", "notes": "Existing canonical registry record. Supports the meaning of __main__ for top-level execution."}
+  ]
+}
