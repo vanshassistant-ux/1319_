@@ -1,0 +1,315 @@
+{
+  "id": "project-management:foundations:requirements",
+  "subjectSlug": "project-management",
+  "unitSlug": "foundations",
+  "slug": "requirements",
+  "title": "Requirements",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 10,
+  "tags": [
+    "project-management",
+    "foundations",
+    "requirements",
+    "stakeholders",
+    "validation"
+  ],
+  "in30Seconds": "Requirements turn stakeholder needs, constraints, and intended outcomes into statements that can guide a project’s result. Elicitation asks people what problem they experience and what conditions matter; documentation makes those findings reviewable; validation checks whether the statements fit intended use. Requirements are not the same as a project’s scope boundary, a task list, or a chosen design. Acceptance criteria are the observable conditions used to judge whether a requirement has been met.",
+  "whyItMatters": "A project can deliver exactly what a team built and still miss what people needed if the need was poorly understood or expressed. Clear requirements give stakeholders and builders a shared object to question: Does this represent the intended outcome? Is it inside the project’s boundary? How would someone recognize that it has been met? These questions reduce ambiguity without claiming that every uncertainty disappears. They are useful for analyzing a hypothetical project, whether its work is organized predictively, iteratively, or through a hybrid approach.",
+  "learningObjectives": [
+    "Define requirements as documented statements of needed conditions or capabilities connected to stakeholder needs and project objectives.",
+    "Distinguish stakeholder needs, requirements, project scope, and acceptance criteria.",
+    "Explain why elicitation seeks needs, expectations, constraints, and relevant interfaces rather than collecting a single person’s preferred solution.",
+    "Identify language that makes a candidate requirement more observable and testable without prescribing a design.",
+    "Analyze whether a proposed acceptance criterion actually demonstrates that a stated requirement has been met."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Requirements translate needs into reviewable statements",
+      "body": "A stakeholder may begin with a need rather than a ready-made requirement. A resident says, “I cannot tell whether the library’s meeting rooms are available.” A staff member says, “We need fewer phone calls about reservations.” An accessibility reviewer says, “The information must work with common assistive technology.” These are valuable inputs, but they differ in viewpoint and level of detail. Requirements work elicits such needs, expectations, constraints, and relevant interfaces, then develops statements that describe conditions or capabilities the project result needs to satisfy. The work is not an exercise in copying the loudest request into a document. It asks what outcome is needed, for whom, under which conditions, and with what evidence.\n\nElicitation means drawing information out rather than assuming it is already complete. Depending on the project, evidence might come from interviews, observation, existing records, a prototype, or another appropriate way of learning about intended use. No one technique is universally required. Different stakeholders can expose different facts: a person who uses a service may describe a difficulty, a person who operates it may identify an operational constraint, and a person affected indirectly may identify an accessibility or interface condition. Those inputs can conflict or remain incomplete. Discovering that disagreement is useful; it is not a failure of the work.\n\nA requirement should be written so people can examine the intended condition rather than infer it from a vague aspiration. “The reservation information should be easy to use” identifies a concern but leaves key terms undefined. “A visitor can view a room’s available time slots for a selected date without creating an account” is more specific about a capability, though it may still need clarification about supported devices or accessibility. The statement identifies what a result must allow; it does not specify a particular database, screen layout, or vendor. That what-versus-how distinction preserves room for design while keeping the intended outcome visible."
+    },
+    {
+      "heading": "Scope, requirements, and acceptance criteria answer different questions",
+      "body": "These concepts are connected but not interchangeable. Project scope is the boundary of the effort: it describes what work, result, or area is included and excluded at a chosen level. Requirements are the conditions or capabilities that the included result needs to meet. A scope statement for the hypothetical library project might say that the work covers public display of room availability but excludes changing the room-booking policy. Within that boundary, a requirement might state that a visitor can see available times for a selected room and date. Scope helps test whether a candidate requirement belongs in the effort; it does not by itself say every condition the result must satisfy.\n\nAcceptance criteria are the observable conditions used to determine whether a particular requirement has been met. For the availability-display requirement, criteria might state that a reviewer can select a room and date, see the current available time slots, and receive a clear message when none are available. The criterion is not a broader wish such as “users will love the site,” and it is not a schedule promise such as “finish by Friday.” It describes evidence related to the requirement. Different projects may record criteria beside a requirement, in test material, or in another agreed form; this lesson names the logical relationship rather than requiring a format.\n\nThe boundary also prevents a common leap from need to design. “Residents need reliable availability information” is a need. “Use a blue calendar widget from a named supplier” is a design choice. A design choice can become relevant later, but it should not be disguised as the need itself. Separating them lets a team examine whether multiple designs could meet the same requirement. It also makes assumptions and constraints easier to locate. For instance, “use the existing calendar data” may be a constraint, while “the data refreshes every five minutes” may be a candidate requirement that needs a reason and validation."
+    },
+    {
+      "heading": "Documentation and validation make meaning testable, not permanent",
+      "body": "Documentation gives a requirement an identifiable form that stakeholders can review, question, and relate to the project objective. It can include a unique label, the source or rationale, the requirement statement, known assumptions or dependencies, and acceptance criteria. A traceability record can connect a stakeholder need or business objective to a detailed requirement and then to a test or review activity. That connection is useful because a reader can ask why an item exists and what evidence is supposed to show it was met. It is not proof that the requirement is automatically correct, affordable, or complete.\n\nValidation asks a different question from editing for grammar: if this requirement were satisfied, would the resulting product or service work appropriately in its intended-use environment? The question brings the learner back to the people and circumstances elicitation uncovered. A requirement may be precisely worded but still miss a necessary user condition. For example, a display that shows availability only during the library’s open hours may be clear, yet it may fail a need if residents commonly plan visits at night. Reviewing scenarios, demonstrations, prototypes, or test results can provide evidence for validation, but the appropriate method depends on context.\n\nRequirements can change as evidence improves. That fact does not mean that careful documentation is useless. A dated, reviewable statement makes it possible to distinguish what was understood earlier from what was learned later, and traceability helps reveal which criteria or tests may need reconsideration. This is a conceptual lesson, not organizational change-control advice. It does not tell a real organization who may approve a change, which tool to buy, or how to negotiate competing requests. Its narrower claim is that visible links among needs, requirements, and evidence make reasoning about a project result more accountable."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "stakeholder need",
+      "definition": "A problem, desired outcome, constraint, or expectation expressed by someone connected to a project’s result."
+    },
+    {
+      "term": "requirement",
+      "definition": "A documented condition or capability that a project result needs to satisfy in support of an objective."
+    },
+    {
+      "term": "elicitation",
+      "definition": "The activity of drawing out and clarifying stakeholder needs, expectations, constraints, and relevant context."
+    },
+    {
+      "term": "project scope",
+      "definition": "The defined boundary describing what a project effort or result includes and excludes at a chosen level."
+    },
+    {
+      "term": "acceptance criteria",
+      "definition": "Observable conditions used to judge whether a particular requirement has been satisfied by a delivered result."
+    },
+    {
+      "term": "validation",
+      "definition": "Checking whether a requirement or result fits its intended use and the need it is meant to address."
+    },
+    {
+      "term": "traceability",
+      "definition": "The ability to follow a documented connection among a need, requirement, related decision, and supporting test or review evidence."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Imagine the library wants people to find open meeting rooms without calling the front desk. That is the problem people are having, not yet a full requirement. The group talks with visitors, staff, and people who use accessibility tools to learn what matters. Then it writes a clear statement such as, “A visitor can see available times for a chosen room and date.” Now people can ask whether that is really needed and what would show it works.\n\nThe project’s scope is like the fence around a playground: it says this project covers showing availability, not changing the rules for who can book rooms. Acceptance criteria are like the referee’s checks: choose a room and date, see the available times, and get a useful message if none are open. Those checks do not choose the colors or computer code; they show whether the stated requirement was met.",
+    "analogy": "Requirements are like a recipe request for a school bake sale. “We need snacks that students with nut allergies can safely identify” states the need. A requirement can say that every snack has a visible ingredient label, while acceptance criteria describe what the label must show when someone checks it.",
+    "analogyLimits": "A project is not a recipe with one correct ingredient list. Stakeholders can have competing needs, and a real requirement may involve a service, policy boundary, or technical interface rather than an object. The analogy also does not decide who in an organization approves a requirement."
+  },
+  "workedExample": "River City Library hypothetically plans a public page for meeting-room availability. Elicitation reveals three inputs: visitors want to know open times before traveling, desk staff need the page not to claim that a room is reserved, and an accessibility reviewer needs the information to be readable with assistive technology. The scope boundary is public availability display; changing reservation policy is excluded. The group writes a candidate requirement: “A visitor can select a room and date and view the current available time slots.” It pairs that with acceptance criteria: a reviewer can make those selections, sees time slots or a clear no-availability message, and can reach the same information using keyboard navigation. The group has not selected a calendar vendor or promised fewer calls. A later review can validate whether the statement and criteria reflect the intended user situation.",
+  "commonMistakes": [
+    {
+      "mistake": "Treating one stakeholder’s preferred solution as the requirement.",
+      "correction": "First identify the underlying need or condition, then distinguish it from a possible design that might meet it."
+    },
+    {
+      "mistake": "Using scope and requirements as synonyms.",
+      "correction": "Use scope for the project boundary and requirements for the conditions or capabilities expected within that boundary."
+    },
+    {
+      "mistake": "Calling a deadline or an opinion an acceptance criterion.",
+      "correction": "Write criteria as observable evidence that a specific requirement has been met."
+    },
+    {
+      "mistake": "Assuming a well-formatted document proves the requirement fits real use.",
+      "correction": "Validate against intended use and stakeholder needs; clear writing and valid content are related but different checks."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Stakeholder need",
+      "b": "Requirement",
+      "distinction": "A need expresses a problem, expectation, or desired outcome; a requirement states a condition or capability the result needs to satisfy in response."
+    },
+    {
+      "a": "Project scope",
+      "b": "Requirement",
+      "distinction": "Scope sets the included and excluded boundary of the effort; a requirement specifies a needed condition or capability within that boundary."
+    },
+    {
+      "a": "Requirement",
+      "b": "Acceptance criterion",
+      "distinction": "A requirement states what must be true or possible; acceptance criteria describe the observable conditions used to judge whether it has been met."
+    }
+  ],
+  "keyTakeaway": "Requirements make stakeholder needs reviewable by expressing the conditions or capabilities a project result must satisfy. They work with, but are not identical to, scope boundaries and acceptance criteria; validation reconnects the statements to intended use.",
+  "questionBank": [
+    {
+      "id": "project-management:foundations:requirements:1",
+      "prompt": "Which statement best describes a requirement in this lesson?",
+      "options": [
+        "A fixed calendar date for all project work.",
+        "A stakeholder’s unexamined preference for one design.",
+        "A documented condition or capability the project result needs to satisfy.",
+        "A complete list of every task the team will perform."
+      ],
+      "correctIndex": 2,
+      "explanation": "A requirement states a needed condition or capability of the result. A schedule, a design preference, and a task list are different project information.",
+      "difficulty": "recall",
+      "skill": "Recall the definition of a requirement.",
+      "sourceIds": [
+        "gao-project-practices-requirements-traceability",
+        "gao-faa-requirements-development"
+      ]
+    },
+    {
+      "id": "project-management:foundations:requirements:2",
+      "prompt": "A project scope says it covers displaying room availability but excludes changing reservation policy. Which item is most likely a requirement within that scope?",
+      "options": [
+        "Replace the library’s reservation policy with a new policy.",
+        "Use a named vendor’s blue calendar widget.",
+        "Promise that no visitor will ever need assistance.",
+        "Let a visitor choose a room and date to view current available time slots."
+      ],
+      "correctIndex": 3,
+      "explanation": "The capability belongs to availability display and states what a visitor can do. Policy change is out of scope, while the named widget is a premature design choice and the promise is not a defined capability.",
+      "difficulty": "application",
+      "skill": "Differentiate scope boundaries from requirements and design choices.",
+      "sourceIds": [
+        "pmi-creating-clear-project-requirements",
+        "gao-project-practices-requirements-traceability"
+      ]
+    },
+    {
+      "id": "project-management:foundations:requirements:3",
+      "prompt": "Which item is an acceptance criterion for the requirement that a visitor can view available times for a selected room and date?",
+      "options": [
+        "A reviewer can select a room and date and see available time slots or a clear no-availability message.",
+        "The project includes public availability display and excludes policy changes.",
+        "Visitors say that scheduling is an important problem.",
+        "The team begins work before the end of the month."
+      ],
+      "correctIndex": 0,
+      "explanation": "Acceptance criteria specify observable evidence that a requirement has been met. The other choices are a scope boundary, a stakeholder need, and a schedule statement.",
+      "difficulty": "understanding",
+      "skill": "Distinguish acceptance criteria from related project information.",
+      "sourceIds": [
+        "gao-project-practices-requirements-traceability",
+        "gao-faa-requirements-development"
+      ]
+    },
+    {
+      "id": "project-management:foundations:requirements:4",
+      "prompt": "Why is “the page should be easy to use” a weak requirement on its own?",
+      "options": [
+        "It is always outside the scope of a project.",
+        "It does not identify an observable condition or capability that reviewers can examine without further clarification.",
+        "It is an acceptance criterion with too many details.",
+        "It proves that a particular software design has already been selected."
+      ],
+      "correctIndex": 1,
+      "explanation": "The phrase identifies a concern but leaves its meaning undefined. Clarifying the intended capability and acceptance evidence makes the statement more reviewable without selecting a design.",
+      "difficulty": "analysis",
+      "skill": "Analyze ambiguity in a candidate requirement.",
+      "sourceIds": [
+        "pmi-creating-clear-project-requirements",
+        "gao-faa-requirements-development"
+      ]
+    },
+    {
+      "id": "project-management:foundations:requirements:5",
+      "prompt": "What is the most accurate purpose of traceability in requirements work?",
+      "options": [
+        "To guarantee that requirements never change.",
+        "To replace all stakeholder conversations with a spreadsheet.",
+        "To choose the technical design before needs are understood.",
+        "To make the links among a need, requirement, and related test or review evidence available for examination."
+      ],
+      "correctIndex": 3,
+      "explanation": "Traceability records relationships so readers can inspect why a requirement exists and what evidence is associated with it. It does not prevent learning or substitute for stakeholder understanding.",
+      "difficulty": "understanding",
+      "skill": "Explain the value of requirements traceability.",
+      "sourceIds": [
+        "gao-project-practices-requirements-traceability"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "project-management:foundations:requirements:1",
+      "prompt": "Which statement best describes a requirement in this lesson?",
+      "options": [
+        "A fixed calendar date for all project work.",
+        "A stakeholder’s unexamined preference for one design.",
+        "A documented condition or capability the project result needs to satisfy.",
+        "A complete list of every task the team will perform."
+      ],
+      "correctIndex": 2,
+      "explanation": "A requirement states a needed condition or capability of the result. A schedule, a design preference, and a task list are different project information.",
+      "difficulty": "recall",
+      "skill": "Recall the definition of a requirement.",
+      "sourceIds": [
+        "gao-project-practices-requirements-traceability",
+        "gao-faa-requirements-development"
+      ]
+    },
+    {
+      "id": "project-management:foundations:requirements:2",
+      "prompt": "A project scope says it covers displaying room availability but excludes changing reservation policy. Which item is most likely a requirement within that scope?",
+      "options": [
+        "Replace the library’s reservation policy with a new policy.",
+        "Use a named vendor’s blue calendar widget.",
+        "Promise that no visitor will ever need assistance.",
+        "Let a visitor choose a room and date to view current available time slots."
+      ],
+      "correctIndex": 3,
+      "explanation": "The capability belongs to availability display and states what a visitor can do. Policy change is out of scope, while the named widget is a premature design choice and the promise is not a defined capability.",
+      "difficulty": "application",
+      "skill": "Differentiate scope boundaries from requirements and design choices.",
+      "sourceIds": [
+        "pmi-creating-clear-project-requirements",
+        "gao-project-practices-requirements-traceability"
+      ]
+    },
+    {
+      "id": "project-management:foundations:requirements:3",
+      "prompt": "Which item is an acceptance criterion for the requirement that a visitor can view available times for a selected room and date?",
+      "options": [
+        "A reviewer can select a room and date and see available time slots or a clear no-availability message.",
+        "The project includes public availability display and excludes policy changes.",
+        "Visitors say that scheduling is an important problem.",
+        "The team begins work before the end of the month."
+      ],
+      "correctIndex": 0,
+      "explanation": "Acceptance criteria specify observable evidence that a requirement has been met. The other choices are a scope boundary, a stakeholder need, and a schedule statement.",
+      "difficulty": "understanding",
+      "skill": "Distinguish acceptance criteria from related project information.",
+      "sourceIds": [
+        "gao-project-practices-requirements-traceability",
+        "gao-faa-requirements-development"
+      ]
+    },
+    {
+      "id": "project-management:foundations:requirements:4",
+      "prompt": "Why is “the page should be easy to use” a weak requirement on its own?",
+      "options": [
+        "It is always outside the scope of a project.",
+        "It does not identify an observable condition or capability that reviewers can examine without further clarification.",
+        "It is an acceptance criterion with too many details.",
+        "It proves that a particular software design has already been selected."
+      ],
+      "correctIndex": 1,
+      "explanation": "The phrase identifies a concern but leaves its meaning undefined. Clarifying the intended capability and acceptance evidence makes the statement more reviewable without selecting a design.",
+      "difficulty": "analysis",
+      "skill": "Analyze ambiguity in a candidate requirement.",
+      "sourceIds": [
+        "pmi-creating-clear-project-requirements",
+        "gao-faa-requirements-development"
+      ]
+    },
+    {
+      "id": "project-management:foundations:requirements:5",
+      "prompt": "What is the most accurate purpose of traceability in requirements work?",
+      "options": [
+        "To guarantee that requirements never change.",
+        "To replace all stakeholder conversations with a spreadsheet.",
+        "To choose the technical design before needs are understood.",
+        "To make the links among a need, requirement, and related test or review evidence available for examination."
+      ],
+      "correctIndex": 3,
+      "explanation": "Traceability records relationships so readers can inspect why a requirement exists and what evidence is associated with it. It does not prevent learning or substitute for stakeholder understanding.",
+      "difficulty": "understanding",
+      "skill": "Explain the value of requirements traceability.",
+      "sourceIds": [
+        "gao-project-practices-requirements-traceability"
+      ]
+    }
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only PMI source and public-domain GAO sources; no source prose, figures, or templates adapted",
+    "researchedAt": "2026-08-20",
+    "transformation": "Original general-education explanation synthesized from live-reviewed sources. It treats project-management and systems-engineering practices as concepts for analysis, not as mandated organizational procedures."
+  },
+  "sources": [
+    "pmi-creating-clear-project-requirements",
+    "gao-project-practices-requirements-traceability",
+    "gao-faa-requirements-development"
+  ],
+  "relatedTopics": [
+    "project-management:foundations:project-initiation",
+    "project-management:foundations:project-charter",
+    "project-management:foundations:project-scope",
+    "project-management:foundations:quality-management",
+    "project-management:foundations:change-control"
+  ],
+  "contentHash": "0abaf5e1f73a7261",
+  "status": "source-verified",
+  "public": false
+}
