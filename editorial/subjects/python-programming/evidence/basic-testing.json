@@ -1,0 +1,17 @@
+{
+  "topicId":"python-programming:foundations:basic-testing","subjectId":"python-programming","researchedAt":"2026-08-19",
+  "scope":{"core":["test cases","unittest assertions","arrange-act-assert","deterministic tests"],"supporting":["TestCase subclasses","fixtures","limits of passing tests"],"outOfScope":["debugging workflow","pytest","mocking","integration testing","property-based testing"]},
+  "claims":[
+    {"claim":"Python's unittest framework supports test automation and a test case is the individual unit of testing that checks a specific response for a particular set of inputs.","claimType":"TECHNICAL","sourceIds":["python-docs-unittest"],"status":"supported"},
+    {"claim":"A unittest test case can be created by subclassing unittest.TestCase, and assertion methods include assertEqual, assertTrue, assertFalse, and assertRaises.","claimType":"TECHNICAL","sourceIds":["python-docs-unittest","python-docs-unittest-basic-example"],"status":"supported"},
+    {"claim":"A test fixture is preparation needed to perform one or more tests, and setUp can run before each test method.","claimType":"TECHNICAL","sourceIds":["python-docs-unittest"],"status":"supported"},
+    {"claim":"A test suite is a collection of test cases, test suites, or both.","claimType":"TECHNICAL","sourceIds":["python-docs-unittest"],"status":"supported"},
+    {"claim":"A test pass establishes agreement with the stated expectation for the tested case, not correctness for untested cases.","claimType":"EVERGREEN","sourceIds":["python-docs-unittest"],"status":"supported"},
+    {"claim":"The worked example's add(2, 3) equals 5 and add(0, 7) equals 7 assertions pass under python3.","claimType":"TECHNICAL","sourceIds":["python-docs-unittest-basic-example"],"status":"supported"}
+  ],
+  "conflictingEvidence":[],"unsupportedExistingClaims":["The generated draft contained no usable testing claims or sources."],"correctionsNeeded":["Replaced generic boilerplate with standard-library unittest terminology and a python3-executed example."],"rightsIssues":[],
+  "sourceRecords":[
+    {"id":"python-docs-unittest","title":"unittest — Unit testing framework","provider":"Python Software Foundation","url":"https://docs.python.org/3/library/unittest.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Read directly on 2026-08-19. Supports unittest's purpose, definitions of fixture/test case/test suite, TestCase, assertion methods, and setUp. Facts synthesized; no source prose adapted."},
+    {"id":"python-docs-unittest-basic-example","title":"unittest — Unit testing framework: Basic example","provider":"Python Software Foundation","url":"https://docs.python.org/3/library/unittest.html#basic-example","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Read directly on 2026-08-19. Supports the documented TestCase subclass and assertEqual example pattern. This anchored the executable example; facts synthesized and no source prose adapted."}
+  ]
+}

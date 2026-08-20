@@ -1,0 +1,26 @@
+{
+  "topicId": "python-programming:foundations:object-oriented-programming",
+  "subjectId": "python-programming",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": ["object-oriented design", "objects, state, and behavior", "encapsulation", "inheritance", "polymorphism"],
+    "supporting": ["types", "methods", "composition"],
+    "outOfScope": ["writing class syntax and constructors", "class versus instance mechanics", "advanced multiple inheritance", "design patterns"]
+  },
+  "claims": [
+    {"claim":"In Python, every object has an identity, a type, and a value; its type determines supported operations.","claimType":"TECHNICAL","sourceIds":["python-docs-datamodel"],"status":"supported"},
+    {"claim":"A Python class creates a new type from which instances can be made.","claimType":"TECHNICAL","sourceIds":["python-tutorial-scopes-namespaces"],"status":"supported"},
+    {"claim":"Python's tutorial presents inheritance as a mechanism in which a derived class can inherit attributes and methods from a base class.","claimType":"TECHNICAL","sourceIds":["python-tutorial-scopes-namespaces"],"status":"supported"},
+    {"claim":"Encapsulation is a design choice that groups an object's related state and behavior behind an interface; Python conventions such as underscore names are not access-control barriers.","claimType":"TECHNICAL","sourceIds":["python-tutorial-scopes-namespaces","python-docs-datamodel"],"status":"supported"},
+    {"claim":"Polymorphism means code can use a common operation while different object types provide behavior appropriate to their type; it need not require inheritance.","claimType":"TECHNICAL","sourceIds":["python-docs-datamodel","python-tutorial-scopes-namespaces"],"status":"supported"},
+    {"claim":"Composition—having one object use another—is often an alternative to modeling a relationship with inheritance.","claimType":"EVERGREEN","sourceIds":["python-tutorial-scopes-namespaces"],"status":"supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft made generic claims about OOP without teaching Python semantics or citing sources."],
+  "correctionsNeeded": ["Replaced boilerplate with a bounded conceptual lesson; deferred class declaration and instance syntax to Classes and Objects."],
+  "rightsIssues": ["Both official documentation sources are used as REFERENCE_ONLY; lesson prose is original synthesis."],
+  "sourceRecords": [
+    {"id":"python-docs-datamodel","title":"The Python Language Reference — Data model","provider":"Python Software Foundation","url":"https://docs.python.org/3/reference/datamodel.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Official reference read directly. It establishes that objects have identity, type, and value and that type determines operations and possible values. Used for precise object/type framing; no wording reproduced."},
+    {"id":"python-tutorial-scopes-namespaces","title":"The Python Tutorial — 9. Classes","provider":"Python Software Foundation","url":"https://docs.python.org/3/tutorial/classes.html","sourceType":"documentation","usage":"REFERENCE_ONLY","attributionRequired":false,"aiIngestionChecked":true,"aiIngestionAllowed":true,"checkedAt":"2026-08-19","notes":"Official tutorial page read directly, including class objects, instance objects, method objects, inheritance, and the names/objects note. Used for class-created-type and inheritance concepts; no wording reproduced."}
+  ]
+}

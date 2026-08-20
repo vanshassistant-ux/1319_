@@ -1,0 +1,276 @@
+{
+  "id": "python-programming:foundations:object-oriented-programming",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "object-oriented-programming",
+  "title": "Object-Oriented Programming",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "python",
+    "object-oriented-programming",
+    "design",
+    "foundations"
+  ],
+  "in30Seconds": "Object-oriented programming (OOP) is a way to organize a program around objects: values with a type, state, and operations. Rather than scattering facts and the code that acts on them, a design can give related responsibilities a home. In Python, OOP is a useful tool, not a requirement: small programs can be clearer with simple functions and data.",
+  "whyItMatters": "OOP gives students a vocabulary for deciding where behavior belongs as a program grows. It can make a model of a library account, game character, or sensor easier to extend because related data and operations travel together. The important skill is not naming four “pillars”; it is choosing a design that makes responsibilities, dependencies, and changes understandable. That judgment transfers to later work with APIs, testing, and larger codebases.",
+  "learningObjectives": [
+    "Define object-oriented programming as an organizational approach.",
+    "Distinguish an object’s state from its behavior.",
+    "Explain encapsulation, inheritance, and polymorphism without treating them as mandatory rules.",
+    "Apply composition versus inheritance to a small design decision.",
+    "Analyze why a common operation can work across different object types."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Objects and responsibilities",
+      "body": "Object-oriented programming is a design approach: organize some parts of a program around objects and the operations that make sense for them. In Python’s data model, every object has an identity, a type, and a value. The type helps determine the operations that object supports. This is a precise foundation for OOP: an object is not merely a bag of variables, and OOP is not synonymous with the `class` keyword. A program already works with objects when it works with strings, lists, functions, and user-defined values.\n\nWhen designing an application, state is information an object is responsible for, while behavior is an operation it can perform or support. A `LibraryAccount` might be responsible for a borrower’s current loans and for requesting a renewal. Keeping those ideas together can reduce the number of places a future change must be made. It does not mean every noun in a problem statement deserves its own object. Good boundaries come from responsibilities that change together, not from a ritual of converting every noun into a class.\n\nPython classes are one way to define a new type and make instances of that type. The next lesson, Classes and Objects, owns the declaration syntax, attributes, constructors, and instance mechanics. This lesson stays at the design level: before writing a class, decide what an object should know, what it should do, and which details other code actually needs."
+    },
+    {
+      "heading": "Encapsulation is an interface decision",
+      "body": "Encapsulation means grouping related state and behavior and exposing a usable interface instead of asking unrelated code to manipulate every internal detail. For example, code that wants to renew a library item should ask an account to attempt a renewal; it should not have to know every rule used to decide eligibility. That leaves room to change the internal rule while preserving the operation clients use.\n\nEncapsulation is often described as “hiding data,” but that shorthand can mislead Python learners. Python does not turn a leading underscore into a hard private-access wall. A name such as `_loans` communicates an internal-use convention; it does not prevent access. The real benefit is architectural: callers depend on a small, intentional interface, and the implementation can be revised coherently. Encapsulation therefore includes clear names, focused methods, and avoiding needless exposure—not merely punctuation in an attribute name.\n\nIt also has limits. A tiny script may be less clear if it introduces a wrapper object around one value with no meaningful behavior. Encapsulation is useful when it protects an invariant, centralizes a rule, or gives a concept a stable responsibility. It is not an automatic upgrade for every variable."
+    },
+    {
+      "heading": "Inheritance, polymorphism, and composition",
+      "body": "Inheritance describes a relationship in which a derived type receives attributes and methods from a base type and may add or replace behavior. It can fit a genuine “is a” relationship. If every `ElectricBike` should be usable wherever a `Vehicle` is expected, shared vehicle behavior might belong in a base design. But inheritance also creates a dependency: changes to the base design can affect derived types. It is not a convenient way to reuse a few lines of code.\n\nPolymorphism is the ability to use a common operation with values of different types, while each type supplies behavior suitable to itself. In Python, the useful question is often “does this object support the operation I need?” A reporting function may call `summary()` on different objects without needing a long chain of type tests. Some polymorphism arises through inheritance; Python can also use a shared method-shaped interface without a shared base class. The caller relies on behavior, not on a particular concrete type.\n\nComposition is another common option: one object has or uses another object. A `Car` has an `Engine`; it is not an `Engine`. Composition usually makes the dependency explicit and lets components vary independently. A practical design sequence is: identify responsibilities, define the smallest useful interface, use composition for “has a” relationships, and choose inheritance only when substitutability and shared behavior are genuinely stable. OOP is thus a collection of trade-offs, not a template that every Python program must follow."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "object",
+      "definition": "A runtime value with an identity, type, and value in Python."
+    },
+    {
+      "term": "type",
+      "definition": "A classification that determines an object’s supported operations and possible values."
+    },
+    {
+      "term": "state",
+      "definition": "Information for which an object is responsible at a particular time."
+    },
+    {
+      "term": "behavior",
+      "definition": "An operation an object can perform or support."
+    },
+    {
+      "term": "encapsulation",
+      "definition": "Organizing related state and behavior behind a deliberate interface."
+    },
+    {
+      "term": "inheritance",
+      "definition": "A relationship in which a derived type obtains behavior or attributes from a base type."
+    },
+    {
+      "term": "polymorphism",
+      "definition": "Using a common operation with values whose types can provide different appropriate behavior."
+    },
+    {
+      "term": "composition",
+      "definition": "Building a design in which one object uses or contains another object."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Think of an object as a well-labeled station at a workshop. The station keeps the tools and information needed for one job together, and it offers a few clear actions such as “measure” or “cut.” Other people do not need to rearrange every drawer to ask for a cut; they use the station’s controls. OOP helps choose these stations and their responsibilities.\n\nInheritance is like making a specialized station from a general station: it may keep the general controls and add a new one. Polymorphism means someone can press the same labeled control on different stations and get the appropriate result. Composition is different: a station may use another station as a component rather than pretending to be that station.",
+    "analogy": "A workshop with stations and clearly labeled controls.",
+    "analogyLimits": "Programs do not have physical drawers, and Python’s access conventions are not locked doors. Real designs can share behavior without inheritance, and an object’s boundaries are choices made by programmers."
+  },
+  "workedExample": "Suppose a transit app must show a short status for a bus and a train. Both can provide `status()`, but the bus reports its route while the train reports its line and platform. A display routine can ask each item for `status()` and show the returned text; it does not need to know which concrete type it received. That is polymorphism at the design level. If a bus uses a separate `Location` value to track coordinates, that is composition: the bus has a location, rather than being a location. Do not create a base class merely because two examples share one method name; use one only when the shared contract and substitutability are valuable.",
+  "commonMistakes": [
+    {
+      "mistake": "Equating OOP with writing many classes.",
+      "correction": "Start with responsibilities; functions and plain data may be clearer for a small task."
+    },
+    {
+      "mistake": "Calling every code-reuse opportunity inheritance.",
+      "correction": "Consider composition or a helper function; inheritance models a stable substitutable relationship."
+    },
+    {
+      "mistake": "Treating `_name` as enforced private access in Python.",
+      "correction": "It is a convention; encapsulation comes from an intentional interface and design."
+    },
+    {
+      "mistake": "Assuming polymorphism requires a shared parent class.",
+      "correction": "In Python, objects can support the same needed operation without inheriting from one custom base."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Inheritance",
+      "b": "Composition",
+      "distinction": "Inheritance models a derived type based on a base type; composition models one object using or containing another."
+    },
+    {
+      "a": "Encapsulation",
+      "b": "Access control",
+      "distinction": "Encapsulation is an interface and responsibility design; Python naming conventions alone do not enforce privacy."
+    },
+    {
+      "a": "Polymorphism",
+      "b": "Type checking chain",
+      "distinction": "Polymorphism asks objects for a common operation; a type-checking chain selects behavior externally."
+    }
+  ],
+  "keyTakeaway": "OOP organizes responsibilities around objects and interfaces. Use encapsulation, inheritance, polymorphism, and composition as design tools chosen for a problem—not as boxes every Python program must check.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:object-oriented-programming:1",
+      "prompt": "In Python’s data model, which set describes every object?",
+      "options": [
+        "A filename, a module, and a package",
+        "A class keyword, a decorator, and a loop",
+        "An identity, a type, and a value",
+        "A comment, an indentation level, and a source file"
+      ],
+      "correctIndex": 2,
+      "explanation": "Python’s data model describes objects in terms of identity, type, and value. The other sets are program elements, not the general properties of every object.",
+      "difficulty": "recall",
+      "skill": "Recall Python’s object model",
+      "sourceIds": [
+        "python-docs-datamodel"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:object-oriented-programming:2",
+      "prompt": "A program lets callers request `account.renew(item)` without editing the account’s loan list directly. Which design idea does this best illustrate?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Recursion",
+        "String formatting"
+      ],
+      "correctIndex": 0,
+      "explanation": "The account offers an operation that centralizes its loan-related rules, which illustrates encapsulation. Inheritance and recursion are different ideas, and formatting concerns text presentation.",
+      "difficulty": "application",
+      "skill": "Apply encapsulation to an interface",
+      "sourceIds": [
+        "python-tutorial-scopes-namespaces"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:object-oriented-programming:3",
+      "prompt": "Which relationship is usually best expressed with composition rather than inheritance?",
+      "options": [
+        "A specialized vehicle is used wherever a vehicle is expected",
+        "A payment method provides a shared `charge()` operation",
+        "A car uses an engine component",
+        "A derived type extends a stable base-type contract"
+      ],
+      "correctIndex": 2,
+      "explanation": "A car has or uses an engine, so composition models the relationship. The other choices describe possible substitutability or a shared operation, where inheritance or another interface design might be considered.",
+      "difficulty": "understanding",
+      "skill": "Distinguish composition from inheritance",
+      "sourceIds": [
+        "python-tutorial-scopes-namespaces"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:object-oriented-programming:4",
+      "prompt": "A display function calls `status()` on a bus and on a train; each returns a different appropriate message. What is the strongest conclusion?",
+      "options": [
+        "The function must inspect both types before calling `status()`",
+        "The two objects cannot share an operation unless they have the same data",
+        "The program has eliminated all design trade-offs",
+        "The common operation can be used polymorphically"
+      ],
+      "correctIndex": 3,
+      "explanation": "The caller can rely on the common `status()` operation while each object supplies suitable behavior—polymorphism. It does not require prior type tests, identical data, or eliminate trade-offs.",
+      "difficulty": "analysis",
+      "skill": "Analyze polymorphic behavior",
+      "sourceIds": [
+        "python-docs-datamodel",
+        "python-tutorial-scopes-namespaces"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:object-oriented-programming:5",
+      "prompt": "What does a leading underscore in a Python attribute name such as `_balance` guarantee?",
+      "options": [
+        "No outside code can access it",
+        "It is a conventional signal that the name is for internal use",
+        "The value is automatically encrypted",
+        "Only a base class can read it"
+      ],
+      "correctIndex": 1,
+      "explanation": "A leading underscore conventionally signals non-public internal use; it is not enforced private access. Python does not automatically encrypt it or restrict it to a base class.",
+      "difficulty": "recall",
+      "skill": "Recognize the limit of Python privacy conventions",
+      "sourceIds": [
+        "python-tutorial-scopes-namespaces"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "python-programming:foundations:object-oriented-programming:1",
+      "prompt": "In Python’s data model, which set describes every object?",
+      "options": [
+        "A filename, a module, and a package",
+        "A class keyword, a decorator, and a loop",
+        "An identity, a type, and a value",
+        "A comment, an indentation level, and a source file"
+      ],
+      "correctIndex": 2,
+      "explanation": "Python’s data model describes objects in terms of identity, type, and value. The other sets are program elements, not the general properties of every object.",
+      "difficulty": "recall",
+      "skill": "Recall Python’s object model",
+      "sourceIds": [
+        "python-docs-datamodel"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:object-oriented-programming:2",
+      "prompt": "A program lets callers request `account.renew(item)` without editing the account’s loan list directly. Which design idea does this best illustrate?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Recursion",
+        "String formatting"
+      ],
+      "correctIndex": 0,
+      "explanation": "The account offers an operation that centralizes its loan-related rules, which illustrates encapsulation. Inheritance and recursion are different ideas, and formatting concerns text presentation.",
+      "difficulty": "application",
+      "skill": "Apply encapsulation to an interface",
+      "sourceIds": [
+        "python-tutorial-scopes-namespaces"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:object-oriented-programming:3",
+      "prompt": "Which relationship is usually best expressed with composition rather than inheritance?",
+      "options": [
+        "A specialized vehicle is used wherever a vehicle is expected",
+        "A payment method provides a shared `charge()` operation",
+        "A car uses an engine component",
+        "A derived type extends a stable base-type contract"
+      ],
+      "correctIndex": 2,
+      "explanation": "A car has or uses an engine, so composition models the relationship. The other choices describe possible substitutability or a shared operation, where inheritance or another interface design might be considered.",
+      "difficulty": "understanding",
+      "skill": "Distinguish composition from inheritance",
+      "sourceIds": [
+        "python-tutorial-scopes-namespaces"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "python-programming:foundations:classes-and-objects",
+    "python-programming:foundations:functions",
+    "python-programming:foundations:modules",
+    "python-programming:foundations:basic-testing",
+    "python-programming:foundations:scope"
+  ],
+  "sources": [
+    "python-docs-datamodel",
+    "python-tutorial-scopes-namespaces"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only official documentation sources; no source prose adapted.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Original, bounded conceptual explanation verified against official Python documentation."
+  },
+  "contentHash": "f013140fda25c4ec",
+  "status": "source-verified",
+  "public": false
+}

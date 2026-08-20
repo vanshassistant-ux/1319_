@@ -1,0 +1,274 @@
+{
+  "id": "python-programming:foundations:basic-testing",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "basic-testing",
+  "title": "Basic Testing",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "python",
+    "testing",
+    "unittest",
+    "assertions",
+    "determinism"
+  ],
+  "in30Seconds": "A test is a small, repeatable check of an expected program behavior. In Python's standard `unittest` framework, a test case usually places an assertion in a method on a `unittest.TestCase` subclass. Give the code controlled inputs, state the expected result, and let the assertion report whether actual and expected agree. Useful basic tests are specific and deterministic: the same controlled setup should lead to the same expected outcome.",
+  "whyItMatters": "Tests make a program's expected behavior visible and checkable. In a course, they turn a vague claim such as ‘my function works’ into cases another person can run. In practice, a small test can catch a changed result close to the code that produced it. Tests also improve design: a focused function with a clear input and expected output is easier to check than a large script whose behavior depends on many hidden conditions.",
+  "learningObjectives": [
+    "Define a test case, assertion, expected result, and actual result.",
+    "Explain how `unittest.TestCase` and an assertion express a basic Python test.",
+    "Apply arrange-act-assert to a deterministic function.",
+    "Distinguish a deterministic test from a test that depends on uncontrolled time, randomness, or external state.",
+    "Evaluate whether a test checks one stated behavior."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "A test makes one expectation executable",
+      "body": "Software testing compares observed program behavior with an expectation. A basic test is not proof that every possible use of a program is correct; it is evidence about one stated case. For a function such as `add`, a useful expectation can be precise: with inputs `2` and `3`, the result should be `5`. The test runs the code, obtains the actual result, and uses an assertion to compare it with the expected result. If they differ, the test fails and gives the reader a location and a description of the violated expectation. If they agree, that particular check passes.\n\nPython includes the `unittest` unit-testing framework in its standard library. A common form is a class that inherits from `unittest.TestCase`, with test methods whose names begin with `test`. In those methods, assertion helpers express different kinds of expectations. `assertEqual(actual, expected)` checks equality; `assertTrue(condition)` checks that a condition is true; and `assertRaises` checks that a specified operation raises an expected exception. Choose the assertion that states the behavior clearly rather than writing an opaque check. This lesson emphasizes value comparisons with `assertEqual`; exception design and debugging workflow need their own focused lessons.\n\nA test case is the individual unit of testing: it checks a particular response for a particular set of conditions. A suite is a collection of test cases, so do not use the two names as if they mean the same thing. `TestCase` is also the Python class that supplies assertion methods to a test class. The overlapping vocabulary is manageable when context is explicit: a test class inherits from `unittest.TestCase`, and each test method states an individual case."
+    },
+    {
+      "heading": "Arrange, act, assert keeps the check legible",
+      "body": "A compact way to organize a test is arrange, act, assert. Arrange establishes only the data or objects needed for the case. Act performs the operation being checked. Assert compares the observed result with the expectation. These labels describe roles, not required Python keywords. They help readers locate the setup, the behavior under test, and the judgment. In a very small test, a separate variable for every role may be unnecessary, but the logical order should still be visible.\n\nFor example, to test `add(2, 3)`, arrange the two known integers, act by calling `add`, and assert that the returned value is `5`. A test that silently performs several unrelated actions has a weak signal: when it fails, the reader must determine which behavior was meant to be checked. Prefer a focused test name such as `test_adds_two_positive_integers`. The name records the case, not a general claim that addition works in all circumstances. A second test can state another behavior, such as the identity effect of adding zero.\n\nA fixture is preparation needed for one or more tests. For the small arithmetic example, local values inside a test method are enough. When multiple tests need the same setup, `unittest` provides `setUp`, which runs before each test method. Setup is useful only when it makes tests clearer; shared, mutable setup can conceal what each test needs. This lesson does not turn fixtures into a lifecycle tutorial. The practical principle is simpler: establish the minimum controlled state needed to make the expected outcome understandable."
+    },
+    {
+      "heading": "Determinism and the limit of a passing test",
+      "body": "A deterministic test produces the same result when it starts with the same controlled conditions. A test of `add(2, 3)` is deterministic because the calculation has no dependency on a clock, network service, file already on a machine, or unseeded random value. Determinism matters because a failure should point to a changed behavior rather than an accidental difference in the environment. If code needs time, random numbers, a database, or a web service, a later testing design can supply a controlled substitute or fixed input. Do not treat a test that sometimes passes and sometimes fails as trustworthy evidence.\n\nA passing test has a narrow meaning: the program matched that test's expectation for that case. It does not establish that every input, boundary, failure mode, or interaction is correct. The expectation itself can also be wrong, so tests deserve review just as production code does. Add cases because they distinguish meaningful behaviors—for example, ordinary inputs, a boundary condition, or an input that should be rejected—not merely to increase a count. Basic tests are most valuable when their names, setup, expected results, and assertions let another reader see exactly what evidence they provide.\n\nKeep testing separate from debugging. A failed test reports a mismatch; debugging is the later investigation of why that mismatch occurred. Keep it separate from a deep pytest discussion as well: pytest is a third-party framework, whereas this lesson uses the standard-library `unittest` vocabulary. The transferable habit is to state a small expected behavior, run it under controlled conditions, and read the result as evidence with clear limits."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "test case",
+      "definition": "An individual check of a specified behavior under stated conditions."
+    },
+    {
+      "term": "assertion",
+      "definition": "A test statement that checks whether an observed condition or value matches an expectation."
+    },
+    {
+      "term": "expected result",
+      "definition": "The outcome a test says should occur for its stated case."
+    },
+    {
+      "term": "actual result",
+      "definition": "The outcome produced when the code under test runs."
+    },
+    {
+      "term": "TestCase",
+      "definition": "The `unittest` class that provides assertion methods for user-defined test classes."
+    },
+    {
+      "term": "fixture",
+      "definition": "Preparation needed to run one or more tests."
+    },
+    {
+      "term": "deterministic",
+      "definition": "Producing the same outcome when given the same controlled conditions."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "A test is like checking one answer on a worksheet with an answer key. First, choose a small question with a known answer. Then let the program answer it. An assertion is the checker that compares the program's answer with the answer key. A pass means the answers matched for that one question; it does not mean the program answered every possible question correctly. Keeping the question controlled matters. If someone changes the question while you check it, the result is not a fair repeatable test. Each carefully chosen question adds a small piece of evidence, not a guarantee.",
+    "analogy": "Arrange-act-assert is like setting up a balance scale: place known items on the scale, let the scale settle, then check whether it shows the expected balance.",
+    "analogyLimits": "A program test can inspect values, conditions, and expected errors, not only a physical balance. The analogy explains the sequence and comparison, not every kind of test."
+  },
+  "workedExample": "This executable example checks two stated behaviors of a small function. Run it with Python 3:\n\n```python\nimport unittest\n\ndef add(left, right):\n    return left + right\n\nclass AddTests(unittest.TestCase):\n    def test_adds_positive_integers(self):\n        actual = add(2, 3)           # act\n        self.assertEqual(actual, 5)  # assert\n\n    def test_zero_is_an_identity(self):\n        self.assertEqual(add(0, 7), 7)\n\nif __name__ == \"__main__\":\n    unittest.main()\n```\n\nThe first test arranges the known inputs `2` and `3`, acts by calling `add`, and asserts the expected result `5`. The second case checks a different stated behavior. Both are deterministic: the same integer inputs lead to the same arithmetic results. If `add` were changed to subtract, the first assertion would fail. Passing both tests would support only these two cases, not every possible input to `add`.",
+  "commonMistakes": [
+    {
+      "mistake": "Treating one passing test as proof that all behavior is correct.",
+      "correction": "State the precise case the test covers and add distinct cases for other meaningful behaviors."
+    },
+    {
+      "mistake": "Writing a test whose expected result depends on the current clock, a network response, or an unseeded random value.",
+      "correction": "Control those dependencies or use fixed inputs so repeated runs have a stable expectation."
+    },
+    {
+      "mistake": "Combining several unrelated behaviors in one test method.",
+      "correction": "Give each focused behavior its own test so a failure has a clear meaning."
+    },
+    {
+      "mistake": "Using `assertTrue` for every comparison.",
+      "correction": "Use a specific assertion such as `assertEqual` when it communicates the expected and actual values directly."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "test case",
+      "b": "test suite",
+      "distinction": "A test case is one individual check; a test suite is a collection of test cases or suites."
+    },
+    {
+      "a": "passing test",
+      "b": "proof of overall correctness",
+      "distinction": "A pass supports the stated case only; it does not cover untested inputs or expectations."
+    },
+    {
+      "a": "deterministic test",
+      "b": "environment-dependent test",
+      "distinction": "A deterministic test has a stable outcome for controlled conditions; an environment-dependent test can change with uncontrolled state."
+    }
+  ],
+  "keyTakeaway": "Write a basic test as a specific, controlled expectation: arrange the needed state, act on the code, and assert the expected result. A pass is useful evidence for that case, while deterministic setup makes the evidence repeatable.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:basic-testing:1",
+      "prompt": "In Python's `unittest` framework, what is a test case?",
+      "options": [
+        "A collection of test classes",
+        "An individual check of a specified behavior",
+        "A tool that changes source code",
+        "Any program output"
+      ],
+      "correctIndex": 1,
+      "explanation": "A test case is an individual unit of testing that checks a specified behavior. A collection is a suite; tests do not inherently change source code, and output alone is not a test case.",
+      "difficulty": "recall",
+      "skill": "Define a test case",
+      "sourceIds": [
+        "python-docs-unittest"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:basic-testing:2",
+      "prompt": "Which assertion best states that `add(2, 3)` should produce `5`?",
+      "options": [
+        "`self.assertTrue(add)`",
+        "`self.assertRaises(add(2, 3))`",
+        "`self.assertEqual(add(2, 3), 5)`",
+        "`self.setUp(add(2, 3))`"
+      ],
+      "correctIndex": 2,
+      "explanation": "`assertEqual` compares the actual value from `add(2, 3)` with expected value `5`. The other choices test a different condition, expect an exception, or misuse setup.",
+      "difficulty": "application",
+      "skill": "Choose an assertion for an expected value",
+      "sourceIds": [
+        "python-docs-unittest",
+        "python-docs-unittest-basic-example"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:basic-testing:3",
+      "prompt": "Which sequence best describes arrange-act-assert for testing `add(2, 3)`?",
+      "options": [
+        "Print the result, rename the function, delete the inputs",
+        "Run the whole application, edit the test, compare comments",
+        "Write a suite, change the operating system, assert a guess",
+        "Choose known inputs, call `add`, compare its result with `5`"
+      ],
+      "correctIndex": 3,
+      "explanation": "Arrange supplies known inputs, act calls the behavior, and assert compares actual with expected. The other sequences do not express that test structure.",
+      "difficulty": "understanding",
+      "skill": "Identify arrange-act-assert",
+      "sourceIds": [
+        "python-docs-unittest"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:basic-testing:4",
+      "prompt": "Why is a test using `add(2, 3)` generally deterministic?",
+      "options": [
+        "Its result does not depend on uncontrolled time, network, or random state",
+        "It automatically tests every integer pair",
+        "It can never fail",
+        "It does not need an expected result"
+      ],
+      "correctIndex": 0,
+      "explanation": "With the same fixed integer inputs, this calculation has a stable expected outcome. Determinism does not make a test exhaustive or unable to fail, and tests still need expectations.",
+      "difficulty": "analysis",
+      "skill": "Evaluate test determinism",
+      "sourceIds": [
+        "python-docs-unittest"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:basic-testing:5",
+      "prompt": "A function passes one test for input `2`. What conclusion is justified?",
+      "options": [
+        "The function is correct for every input",
+        "The tested case matched its stated expectation",
+        "No additional tests are useful",
+        "The test has found the cause of every future failure"
+      ],
+      "correctIndex": 1,
+      "explanation": "A passing test is evidence that the code matched the expected behavior for that stated case. It does not establish all inputs, eliminate further tests, or perform debugging.",
+      "difficulty": "analysis",
+      "skill": "Interpret the limit of a passing test",
+      "sourceIds": [
+        "python-docs-unittest"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "python-programming:foundations:basic-testing:1",
+      "prompt": "In Python's `unittest` framework, what is a test case?",
+      "options": [
+        "A collection of test classes",
+        "An individual check of a specified behavior",
+        "A tool that changes source code",
+        "Any program output"
+      ],
+      "correctIndex": 1,
+      "explanation": "A test case is an individual unit of testing that checks a specified behavior. A collection is a suite; tests do not inherently change source code, and output alone is not a test case.",
+      "difficulty": "recall",
+      "skill": "Define a test case",
+      "sourceIds": [
+        "python-docs-unittest"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:basic-testing:2",
+      "prompt": "Which assertion best states that `add(2, 3)` should produce `5`?",
+      "options": [
+        "`self.assertTrue(add)`",
+        "`self.assertRaises(add(2, 3))",
+        "`self.assertEqual(add(2, 3), 5)",
+        "`self.setUp(add(2, 3))`"
+      ],
+      "correctIndex": 2,
+      "explanation": "`assertEqual` compares the actual value from `add(2, 3)` with expected value `5`. The other choices test a different condition, expect an exception, or misuse setup.",
+      "difficulty": "application",
+      "skill": "Choose an assertion for an expected value",
+      "sourceIds": [
+        "python-docs-unittest",
+        "python-docs-unittest-basic-example"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:basic-testing:3",
+      "prompt": "Which sequence best describes arrange-act-assert for testing `add(2, 3)`?",
+      "options": [
+        "Print the result, rename the function, delete the inputs",
+        "Run the whole application, edit the test, compare comments",
+        "Write a suite, change the operating system, assert a guess",
+        "Choose known inputs, call `add`, compare its result with `5`"
+      ],
+      "correctIndex": 3,
+      "explanation": "Arrange supplies known inputs, act calls the behavior, and assert compares actual with expected. The other sequences do not express that test structure.",
+      "difficulty": "understanding",
+      "skill": "Identify arrange-act-assert",
+      "sourceIds": [
+        "python-docs-unittest"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "python-programming:foundations:functions",
+    "python-programming:foundations:return-values",
+    "python-programming:foundations:debugging",
+    "python-programming:foundations:exceptions",
+    "python-programming:foundations:object-oriented-programming"
+  ],
+  "sources": [
+    "python-docs-unittest",
+    "python-docs-unittest-basic-example"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only sources; no source prose adapted",
+    "researchedAt": "2026-08-19",
+    "transformation": "Official Python documentation was read and synthesized into original instruction; the worked example was executed with python3."
+  },
+  "contentHash": "202ce02e43139089",
+  "status": "source-verified",
+  "public": false
+}

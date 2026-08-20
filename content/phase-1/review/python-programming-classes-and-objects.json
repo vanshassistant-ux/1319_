@@ -1,0 +1,272 @@
+{
+  "id": "python-programming:foundations:classes-and-objects",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "classes-and-objects",
+  "title": "Classes and Objects",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 10,
+  "tags": [
+    "python",
+    "classes",
+    "objects",
+    "attributes",
+    "methods"
+  ],
+  "in30Seconds": "A Python class is a blueprint-like definition that creates a new kind of object. Calling the class creates an instance. Each instance can carry its own attributes, while a method is behavior defined in the class and used through an instance. This lesson focuses on the small mechanics: defining a class, storing per-instance state with `self`, and recognizing the difference between a class attribute and an instance attribute.",
+  "whyItMatters": "Classes let a program keep related data and behavior together. A `Student`, `Timer`, or `CartItem` can each be represented by an object whose attributes describe that particular thing and whose methods operate on it. That makes repeated patterns easier to name and use without making every variable global. The distinction between shared class data and per-instance data also prevents a subtle but common bug: accidentally giving every object the same mutable list or dictionary.",
+  "learningObjectives": [
+    "Define a class and distinguish it from an instance.",
+    "Create instances by calling a class.",
+    "Explain how `self` connects an instance method to the instance receiving the call.",
+    "Apply dotted attribute access to read and change per-instance state.",
+    "Distinguish a class attribute from an instance attribute and predict basic lookup behavior."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "A class defines a kind of object",
+      "body": "Python programs work with objects: values that have an identity, a type, and a value. A class statement is one way to define a new user-facing type. Its indented suite runs when Python executes the class statement, producing a class object. In beginner code, the useful mental model is that the class provides a shared definition, while each call to the class creates a separate instance.\n\nHere is a minimal class:\n\n```python\nclass Badge:\n    pass\n\nfirst = Badge()\nsecond = Badge()\n```\n\n`Badge` names the class. `first` and `second` are two different instances made by calling it. The empty `pass` is only a placeholder; practical classes usually define initialization and methods. A class is not a single record of data. It describes operations and attributes that instances can use. This is narrower than a full object-oriented-design discussion: the immediate question is simply which object owns a particular value or action."
+    },
+    {
+      "heading": "Instance attributes and initialization",
+      "body": "An attribute is a value reached with dotted notation, such as `book.title`. Classes often create instance attributes in a method named `__init__`. Python calls that method as part of constructing an instance. By convention, its first parameter is named `self`. In a call such as `Book(\"The Left Hand of Darkness\")`, Python supplies the new instance as `self`; the programmer supplies the title argument.\n\n```python\nclass Book:\n    def __init__(self, title):\n        self.title = title\n\nfirst = Book(\"The Left Hand of Darkness\")\nsecond = Book(\"Kindred\")\nprint(first.title)\nprint(second.title)\n```\n\nThis prints the two different titles. The assignment `self.title = title` stores an attribute on the particular object received as `self`. It does not create one universal `title` for every `Book`. Later, `first.title = \"A Wizard of Earthsea\"` changes only `first`'s attribute. That per-instance separation is why objects are useful for representing several similar things with different state."
+    },
+    {
+      "heading": "Methods, self, and attribute lookup",
+      "body": "A method is a function defined in a class body. Accessing it through an instance creates the normal method-call connection: `first.describe()` uses `first` as the first argument. `self` is not a special keyword; it is the conventional parameter name that makes this relationship readable. Inside a method, `self.title` means “the title on the instance that received this call.”\n\n```python\nclass Book:\n    def __init__(self, title):\n        self.title = title\n\n    def describe(self):\n        return f\"Reading: {self.title}\"\n\nfirst = Book(\"Kindred\")\nprint(first.describe())\n```\n\nThe result is `Reading: Kindred`. Defining `describe` in the class gives each `Book` instance the same behavior, but the behavior reads each instance's own data. Do not write `Book.describe()` as a substitute for `first.describe()` here: the method needs an instance for its `self` parameter. This lesson's nearby functions and return-values topics own general function syntax and return mechanics; here they are used only to show a method attached to a class."
+    },
+    {
+      "heading": "Class attributes are shared defaults",
+      "body": "A name assigned directly in the class suite is a class attribute. Instances can read it when they do not have an instance attribute with the same name. That makes class attributes suitable for a shared constant or default. An instance assignment with the same name creates an instance attribute that shadows the class attribute for that one object.\n\n```python\nclass Meter:\n    unit = \"km\"\n    def __init__(self, value):\n        self.value = value\n    def label(self):\n        return f\"{self.value} {self.unit}\"\n\na = Meter(3)\nb = Meter(7)\nMeter.unit = \"mi\"\na.unit = \"m\"\nprint(a.label())\nprint(b.label())\n```\n\nThe output is `3 m` and `7 mi`. Changing `Meter.unit` changes the class value that `b` finds. Assigning `a.unit` gives `a` its own value, so it no longer uses the class value. A critical caution follows: do not use a mutable object such as `[]` as a class attribute when each instance needs a separate collection. Put `self.items = []` in `__init__` instead; otherwise instances can observe and modify the same list."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "class",
+      "definition": "An object created by a class statement that defines attributes and behavior for instances."
+    },
+    {
+      "term": "instance",
+      "definition": "An object created by calling a class."
+    },
+    {
+      "term": "attribute",
+      "definition": "A named value or behavior reached through dotted notation on an object or class."
+    },
+    {
+      "term": "instance attribute",
+      "definition": "An attribute stored on one particular instance, often assigned through self."
+    },
+    {
+      "term": "class attribute",
+      "definition": "An attribute assigned in the class body and available through the class or through instances that do not shadow it."
+    },
+    {
+      "term": "method",
+      "definition": "A function defined in a class that can be accessed through an instance."
+    },
+    {
+      "term": "self",
+      "definition": "The conventional first parameter of an instance method; it refers to the instance receiving the call."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Imagine a class as instructions for making labeled storage boxes. The instructions say each box needs a label and can describe what it holds. When you make two boxes, they follow the same instructions but have different labels. In Python, the class is the instructions and each box is an instance. `self` means “this particular box,” so `self.label` changes or reads the label on the box currently being used. A method is an action the instructions give every box, such as showing its label.",
+    "analogy": "A cookie cutter is like a class: one cutter can make many cookies with the same shape. Each cookie is an instance, and icing written on one cookie is like an instance attribute because it belongs to that cookie. A note printed on the cutter is like a class attribute: every cookie can use that shared default until one cookie gets its own version.",
+    "analogyLimits": "Cookies do not run actions or look up attributes, and a real cutter does not literally store data for cookies. Python's class attributes are names Python searches for, not physical writing copied into each instance. The analogy is only for separating a shared definition from individual objects."
+  },
+  "workedExample": "Suppose a library app needs two books. Define `Book` with `__init__`, setting `self.title` from the supplied title, and define `describe` to return a sentence using that attribute. Construct `first = Book(\"Kindred\")` and `second = Book(\"The Left Hand of Darkness\")`. Calling `first.describe()` passes `first` to `self`, so it returns `Reading: Kindred`; calling `second.describe()` returns the second title. The method code is shared, but its result differs because each instance owns a different `title`. If the program assigns `first.title = \"A Wizard of Earthsea\"`, only the first result changes.",
+  "commonMistakes": [
+    {
+      "mistake": "Treating the class name as though it were already a particular object.",
+      "correction": "Call the class to create an instance when code needs per-object state."
+    },
+    {
+      "mistake": "Writing an instance method without a first parameter.",
+      "correction": "Use the conventional `self` parameter when the method needs the receiving instance."
+    },
+    {
+      "mistake": "Expecting `self.name` to be shared by every instance.",
+      "correction": "Assignments through `self` create or change attributes on that one instance."
+    },
+    {
+      "mistake": "Putting a per-instance mutable list in the class body.",
+      "correction": "Create a new list in `__init__`, for example `self.items = []`."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "class",
+      "b": "instance",
+      "distinction": "A class is the shared definition; an instance is one object created from it."
+    },
+    {
+      "a": "class attribute",
+      "b": "instance attribute",
+      "distinction": "A class attribute is a shared lookup value; an instance attribute belongs to one object and can shadow a class attribute."
+    }
+  ],
+  "keyTakeaway": "Use a class to define related state and behavior, then create instances for individual things. Read and write instance state through `self`, and reserve class attributes for values intentionally shared across instances.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:classes-and-objects:1",
+      "prompt": "What does `Book(\"Kindred\")` do after `class Book:` has been defined?",
+      "options": [
+        "Creates a Book instance",
+        "Renames the Book class",
+        "Imports a Book module",
+        "Converts the title to a class attribute"
+      ],
+      "correctIndex": 0,
+      "explanation": "Calling a class creates an instance. The other actions are not the effect of a class call.",
+      "difficulty": "recall",
+      "skill": "Identify instance construction",
+      "sourceIds": [
+        "python-tutorial-scopes-namespaces"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:classes-and-objects:2",
+      "prompt": "In `def describe(self): return self.title`, what does `self` refer to when `first.describe()` runs?",
+      "options": [
+        "The Book class only",
+        "The `first` instance receiving the call",
+        "Every Book instance at once",
+        "The string stored in title"
+      ],
+      "correctIndex": 1,
+      "explanation": "The instance method receives `first` as its first argument, conventionally named `self`. It is not the class, all instances, or the title string.",
+      "difficulty": "understanding",
+      "skill": "Explain the role of self",
+      "sourceIds": [
+        "python-tutorial-scopes-namespaces"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:classes-and-objects:3",
+      "prompt": "Two `Book` instances have titles assigned with `self.title` in `__init__`. After `first.title = \"New\"`, what happens to `second.title`?",
+      "options": [
+        "It also becomes `New`",
+        "It is deleted",
+        "It keeps its own value",
+        "It becomes a class attribute"
+      ],
+      "correctIndex": 2,
+      "explanation": "`self.title` is an instance attribute, so assigning on `first` changes that instance's state only. `second` keeps its separate title.",
+      "difficulty": "application",
+      "skill": "Apply per-instance state",
+      "sourceIds": [
+        "python-tutorial-scopes-namespaces"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:classes-and-objects:4",
+      "prompt": "Given `class Meter: unit = \"km\"`, then `a = Meter()` and `a.unit = \"m\"`, which value does `a.unit` read?",
+      "options": [
+        "`km`, because class attributes always win",
+        "No value, because assignment is invalid",
+        "Both values as a list",
+        "`m`, the instance attribute that shadows the class attribute"
+      ],
+      "correctIndex": 3,
+      "explanation": "The instance assignment creates `a`'s own `unit`, which shadows the class attribute for that lookup. It does not change the class value.",
+      "difficulty": "analysis",
+      "skill": "Analyze class and instance attribute lookup",
+      "sourceIds": [
+        "python-tutorial-scopes-namespaces"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:classes-and-objects:5",
+      "prompt": "Where should a class put a list when every new instance needs an independent empty list?",
+      "options": [
+        "In `__init__` as an assignment such as `self.items = []`",
+        "As `items = []` directly in the class body",
+        "In a comment above the class",
+        "In the class name"
+      ],
+      "correctIndex": 0,
+      "explanation": "Creating the list through `self` during initialization gives each instance a separate list. A mutable class attribute would be shared unless intentionally replaced.",
+      "difficulty": "application",
+      "skill": "Prevent unintended shared mutable state",
+      "sourceIds": [
+        "python-tutorial-scopes-namespaces"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "python-programming:foundations:classes-and-objects:1",
+      "prompt": "What does `Book(\"Kindred\")` do after `class Book:` has been defined?",
+      "options": [
+        "Creates a Book instance",
+        "Renames the Book class",
+        "Imports a Book module",
+        "Converts the title to a class attribute"
+      ],
+      "correctIndex": 0,
+      "explanation": "Calling a class creates an instance. The other actions are not the effect of a class call.",
+      "difficulty": "recall",
+      "skill": "Identify instance construction",
+      "sourceIds": [
+        "python-tutorial-scopes-namespaces"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:classes-and-objects:2",
+      "prompt": "In `def describe(self): return self.title`, what does `self` refer to when `first.describe()` runs?",
+      "options": [
+        "The Book class only",
+        "The `first` instance receiving the call",
+        "Every Book instance at once",
+        "The string stored in title"
+      ],
+      "correctIndex": 1,
+      "explanation": "The instance method receives `first` as its first argument, conventionally named `self`. It is not the class, all instances, or the title string.",
+      "difficulty": "understanding",
+      "skill": "Explain the role of self",
+      "sourceIds": [
+        "python-tutorial-scopes-namespaces"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:classes-and-objects:3",
+      "prompt": "Two `Book` instances have titles assigned with `self.title` in `__init__`. After `first.title = \"New\"`, what happens to `second.title`?",
+      "options": [
+        "It also becomes `New`",
+        "It is deleted",
+        "It keeps its own value",
+        "It becomes a class attribute"
+      ],
+      "correctIndex": 2,
+      "explanation": "`self.title` is an instance attribute, so assigning on `first` changes that instance's state only. `second` keeps its separate title.",
+      "difficulty": "application",
+      "skill": "Apply per-instance state",
+      "sourceIds": [
+        "python-tutorial-scopes-namespaces"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "python-programming:foundations:object-oriented-programming",
+    "python-programming:foundations:basic-testing",
+    "python-programming:foundations:functions",
+    "python-programming:foundations:variables",
+    "python-programming:foundations:scope"
+  ],
+  "sources": [
+    "python-tutorial-scopes-namespaces",
+    "python-lang-ref-compound-stmts",
+    "python-docs-datamodel"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only official documentation; no source prose adapted",
+    "researchedAt": "2026-08-19",
+    "transformation": "Official Python documentation was read and synthesized into original instruction; executable examples were run with Python 3."
+  },
+  "contentHash": "aee7ed2c099b85dd",
+  "status": "source-verified",
+  "public": false
+}
