@@ -1,0 +1,234 @@
+{
+  "id": "python-programming:foundations:scope",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "scope",
+  "title": "Scope",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "python",
+    "scope",
+    "LEGB",
+    "closures"
+  ],
+  "in30Seconds": "Scope is the part of a Python program where a name can be found directly. When code uses an unqualified name, Python checks the current function's local names first, then names in enclosing functions, then the module's global names, and finally built-in names. This familiar sequence is often called LEGB. Assignment changes the picture: an assignment in a function normally creates or rebinds a local name unless `global` or `nonlocal` says otherwise.",
+  "whyItMatters": "Scope lets a reader predict which value a name means without guessing. It explains why a helper can read a module-level setting, why a nested function can remember surrounding state, and why a seemingly harmless `count = count + 1` can fail. In coursework, scope is essential for tracing code and diagnosing name errors. In larger programs, deliberately choosing local, enclosing, or module-level state helps limit unintended interactions and makes changes safer to reason about.",
+  "learningObjectives": [
+    "Define scope and describe the LEGB lookup order.",
+    "Distinguish reading an outer name from rebinding a name locally.",
+    "Explain when `global` and `nonlocal` change assignment behavior.",
+    "Diagnose an `UnboundLocalError` caused by a local binding.",
+    "Apply name-resolution rules to a nested-function example."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Scope is about name visibility",
+      "body": "A Python name is a label that code uses to reach a value. Scope answers a narrower question than what value this is: where may the program look for that label without qualifying it? For an ordinary name used inside a function, the search begins in the local scope created for that call. If the name is absent there, Python can search the scopes of enclosing functions, beginning with the nearest. Next comes the global scope of the module that defined the function. Finally, Python can use the built-in namespace, where names such as `len` live. LEGB is a convenient mnemonic for this local–enclosing–global–built-in order. The order matters only until a matching binding is found. If an inner function has a local `label`, that binding hides an enclosing or global `label` of the same spelling for uses inside the inner function. Outside that function, the local binding is not directly available. A scope rule is therefore a predictable lookup rule, not a claim that only one name with a particular spelling may exist in a program."
+    },
+    {
+      "heading": "Reading differs from rebinding",
+      "body": "Code inside a function may read an outer name when it does not bind that name locally. Assignment is the crucial event. If Python finds a name-binding operation anywhere in a function block, uses of that name in that block are treated as local by default. This is a whole-block rule, not a line-by-line discovery rule. That rule explains a common surprise. Suppose module code binds `count = 10`, then a function contains `count = count + 1`. The assignment means `count` is local in that function, so the expression on the right tries to read that local `count` before it has a value. Python raises `UnboundLocalError`; it does not fall back to the module value. The language reference identifies this as a special case of `NameError`. The repair is not to rely on a mysterious exception: decide whether the function should instead receive and return a value, maintain enclosing state, or intentionally rebind a module name. This lesson focuses on the lookup consequence, while function interfaces belong in the adjacent lessons."
+    },
+    {
+      "heading": "`global` and `nonlocal` are explicit rebinding choices",
+      "body": "`global name` inside a function tells Python that references and assignments to `name` in that block use the module-level global namespace. It is not a general instruction to search outside; it specifically selects the defining module's global namespace. Because it changes how the block is compiled, it must appear before uses of that name in the block. Global state can be appropriate for narrowly scoped configuration or a deliberate shared counter, but its effects can be harder to trace than local state. `nonlocal name` is for a nested function that needs to rebind a name from an enclosing function. It does not target a module global, and it cannot create a brand-new enclosing binding. The named value must already be bound in an enclosing function scope; otherwise Python reports `SyntaxError` while compiling the code. This is useful for a closure: an inner function can keep access to a surrounding function's state after the outer call has produced it. Use `nonlocal` only when that persistent enclosing state is intentional."
+    },
+    {
+      "heading": "Trace one lookup at a time",
+      "body": "When tracing scope, first mark every assignment in each function block. Then, for the name being read, ask: is it local here? If not, is there an enclosing function binding? Then check the module global and built-ins. For a rebind, look for `global` or `nonlocal` before assuming an outer value changes. This mechanical method avoids two frequent errors: treating any outer name as automatically writable, and assuming that a global name saves a local variable that has not yet been bound. Write the lookup path beside each reference before predicting output; doing so turns an intuition problem into a checkable trace."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "scope",
+      "definition": "The region of code in which a name can be accessed directly."
+    },
+    {
+      "term": "local scope",
+      "definition": "The names associated with one function call."
+    },
+    {
+      "term": "enclosing scope",
+      "definition": "A surrounding function's scope visible to a nested function."
+    },
+    {
+      "term": "global scope",
+      "definition": "The namespace at the top level of the module that defines a function."
+    },
+    {
+      "term": "built-in namespace",
+      "definition": "The namespace that supplies standard names such as `len`."
+    },
+    {
+      "term": "binding",
+      "definition": "Associating a name with a value in a namespace."
+    },
+    {
+      "term": "rebind",
+      "definition": "Make a name refer to a different value in its selected scope."
+    },
+    {
+      "term": "closure",
+      "definition": "A nested function that retains access to names from an enclosing function."
+    },
+    {
+      "term": "UnboundLocalError",
+      "definition": "The error raised when a function tries to use its local name before that name has been bound."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Imagine each function call is a desk with labeled drawers. To find a note called `label`, first open the drawer on the desk in front of you. If it is not there, look at desks belonging to functions wrapped around yours, then at the big desk for the whole file, and finally at the shared supply cabinet of built-in names. That is the lookup part of scope. Writing a new note changes the rule. If you write `label = \"local\"` at your desk, Python treats `label` as a label for your desk in that function. It does not silently replace a note at the big file desk. `global` explicitly says to write at the file desk. `nonlocal` says to write at the nearest surrounding function’s desk; that desk must already have the note.",
+    "analogy": "Scope is like looking for a labeled note through your desk, surrounding desks, the file desk, and then a shared supply cabinet.",
+    "analogyLimits": "The desks do not describe physical storage, object mutation, or module imports; they only model name lookup and rebinding choices."
+  },
+  "workedExample": "This executed example has a module-level `message` and an enclosing `message`. `outer` creates the enclosing binding. Its nested `inner` uses `nonlocal message`, so its assignment changes `outer`'s binding rather than creating an `inner` local. The module-level value remains untouched. A separate function, `add_one_bad`, contains an assignment to `count`; therefore `count` is local for that entire function. Its read occurs before that local binding, so the run raises `UnboundLocalError`.\n\n```python\nmessage = \"outer\"\n\ndef outer():\n    message = \"enclosing\"\n    def inner():\n        nonlocal message\n        message = \"changed enclosing\"\n    inner()\n    return message\n\nprint(outer(), message)  # changed enclosing outer\n\ncount = 10\ndef add_one_bad():\n    count = count + 1\n\ntry:\n    add_one_bad()\nexcept UnboundLocalError as error:\n    print(type(error).__name__)  # UnboundLocalError\n```",
+  "commonMistakes": [
+    {
+      "mistake": "Assuming Python always reads a same-named global before a local.",
+      "correction": "Mark assignments first; one in the function normally makes the name local throughout that block."
+    },
+    {
+      "mistake": "Using `global` merely to read a global value.",
+      "correction": "Reading can use the normal lookup path; reserve `global` for deliberate global rebinding."
+    },
+    {
+      "mistake": "Using `nonlocal` for a module variable.",
+      "correction": "`nonlocal` requires a previously bound name in an enclosing function; use `global` only when module rebinding is truly intended."
+    },
+    {
+      "mistake": "Treating `UnboundLocalError` as a missing-name error only.",
+      "correction": "Check whether a later assignment caused Python to classify the name as local."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "`global x`",
+      "b": "`nonlocal x`",
+      "distinction": "`global` selects the module namespace; `nonlocal` selects a previously bound enclosing-function name."
+    },
+    {
+      "a": "Reading an outer name",
+      "b": "Rebinding a name",
+      "distinction": "A read can follow normal lookup; assignment normally creates a local binding unless declared otherwise."
+    },
+    {
+      "a": "`NameError`",
+      "b": "`UnboundLocalError`",
+      "distinction": "A missing name raises `NameError`; using a function-local name before it is bound raises the more specific `UnboundLocalError`."
+    }
+  ],
+  "keyTakeaway": "Use LEGB to predict where a Python name is read. Then treat assignment as a separate decision: it is local by default, `global` targets the module namespace, and `nonlocal` targets an existing enclosing-function binding.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:scope:1",
+      "prompt": "Which sequence describes normal lookup for an unqualified name inside a nested function?",
+      "options": [
+        "Local, enclosing, global, built-in.",
+        "Global, local, enclosing, built-in.",
+        "Built-in, global, enclosing, local.",
+        "Enclosing, local, global, built-in."
+      ],
+      "correctIndex": 0,
+      "explanation": "Python checks local, then enclosing function scopes, then the defining module's global scope, then built-ins. The other sequences put one or more scopes in the wrong order.",
+      "difficulty": "recall",
+      "skill": "Recall the LEGB lookup order",
+      "sourceIds": [
+        "python-tutorial-scopes-namespaces",
+        "python-language-reference-execution-model"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:scope:2",
+      "prompt": "A function contains `total = total + 1` and no `global` or `nonlocal` statement. Why can its first call raise `UnboundLocalError`?",
+      "options": [
+        "`+` cannot add integers.",
+        "The assignment makes `total` local in that function, so its right side reads the unbound local.",
+        "Module globals are never visible in functions.",
+        "`total` becomes built-in."
+      ],
+      "correctIndex": 1,
+      "explanation": "A binding anywhere in the block makes `total` local by default, so the right side attempts to read it before it is bound. Integers can be added, globals can be read when not shadowed, and the name does not become built-in.",
+      "difficulty": "application",
+      "skill": "Diagnose a local-binding error",
+      "sourceIds": [
+        "python-language-reference-execution-model"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:scope:3",
+      "prompt": "In a nested function, what does `nonlocal score` require?",
+      "options": [
+        "A module-level `score`.",
+        "A built-in named `score`.",
+        "A previously bound `score` in an enclosing function scope.",
+        "A parameter named `score`."
+      ],
+      "correctIndex": 2,
+      "explanation": "`nonlocal` targets an existing enclosing-function binding. A module binding is addressed with `global`, and neither a built-in nor a parameter alone meets the requirement.",
+      "difficulty": "understanding",
+      "skill": "Distinguish nonlocal from other namespaces",
+      "sourceIds": [
+        "python-language-reference-execution-model",
+        "python-tutorial-scopes-namespaces"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:scope:4",
+      "prompt": "Which statement correctly describes `global setting` inside a function?",
+      "options": [
+        "It creates an enclosing function scope.",
+        "It makes `setting` a built-in.",
+        "It copies the global value into a local variable.",
+        "It directs that block's references and assignments for `setting` to the module global namespace."
+      ],
+      "correctIndex": 3,
+      "explanation": "The declaration selects the module global namespace for that name in the block. It neither creates an enclosing scope, changes built-ins, nor copies a value into a local.",
+      "difficulty": "understanding",
+      "skill": "Explain global declaration behavior",
+      "sourceIds": [
+        "python-tutorial-scopes-namespaces",
+        "python-language-reference-execution-model"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:scope:5",
+      "prompt": "A nested function reads `theme`, has no local binding for it, and its nearest enclosing function binds `theme = \"dark\"`. Which value does it read?",
+      "options": [
+        "The enclosing function's `\"dark\"` binding.",
+        "A new local `theme`.",
+        "Only a module-level `theme`.",
+        "Only the built-in namespace."
+      ],
+      "correctIndex": 0,
+      "explanation": "After the local scope, Python searches the nearest enclosing function scope, so it finds `\"dark\"`. Reading does not create a local, and global and built-in scopes are searched later.",
+      "difficulty": "application",
+      "skill": "Trace enclosing-scope lookup",
+      "sourceIds": [
+        "python-tutorial-scopes-namespaces"
+      ]
+    }
+  ],
+  "quickCheck": [],
+  "relatedTopics": [
+    "python-programming:foundations:variables",
+    "python-programming:foundations:functions",
+    "python-programming:foundations:function-parameters",
+    "python-programming:foundations:return-values",
+    "python-programming:foundations:exceptions"
+  ],
+  "sources": [
+    "python-tutorial-scopes-namespaces",
+    "python-language-reference-execution-model"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only Python documentation sources; no source prose adapted.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Original technical lesson, independently verified against official Python documentation and executed with python3."
+  },
+  "contentHash": "23329b85d9459430",
+  "status": "source-verified",
+  "public": false
+}

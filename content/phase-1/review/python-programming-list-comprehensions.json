@@ -1,0 +1,261 @@
+{
+  "id": "python-programming:foundations:list-comprehensions",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "list-comprehensions",
+  "title": "List Comprehensions",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "python",
+    "lists",
+    "comprehensions",
+    "readability"
+  ],
+  "in30Seconds": "A list comprehension is Python syntax for building a new list in one expression. Put the value to produce first, then a for clause that supplies values, and optionally an if clause that keeps only some of them: [n * n for n in range(12) if n % 2 == 0]. Read it as: “for each even n from 0 through 11, put n squared in a new list.”",
+  "whyItMatters": "List comprehensions appear constantly in Python code because they can show a small transformation or filter without the setup of a named list and an append call. In a course, they are also a test of whether you can trace evaluation order rather than merely recognize brackets. The useful skill is judgment: use the compact form when it makes the data transformation easier to see, and choose a normal loop when the work needs steps, names, or branching that deserve their own lines.",
+  "learningObjectives": [
+    "Define a Python list comprehension and identify its result.",
+    "Explain the order of its expression, for clause, and optional if clause.",
+    "Trace a simple comprehension and its equivalent explicit loop.",
+    "Apply a filter and transformation in one clear comprehension.",
+    "Evaluate when an explicit loop is clearer than a comprehension."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "The shape: result expression first",
+      "body": "A list comprehension is an expression that constructs a new list. Its most common shape is `[expression for target in iterable]`. The visual order can feel backwards at first because the value being made appears before the instruction that supplies the target. Read from the `for` clause: take each item from the iterable, bind it to the target, evaluate the expression at the front, and place that result in the new list. For example, `[word.upper() for word in [\"map\", \"key\", \"id\"] if len(word) == 3]` produces `[\"MAP\", \"KEY\"]`. `word.upper()` is the result expression; `for word in ...` visits the candidate strings; the `if` keeps strings of length three. The condition is a filter, not a separate output value. A value that fails it contributes no element. The surrounding brackets matter: they say that the completed result is a list."
+    },
+    {
+      "heading": "Order and the equivalent loop",
+      "body": "A comprehension can have an expression, at least one `for` clause, and optional `if` clauses. When translating it to ordinary statements, preserve the order of the clauses. Consider `[n * n for n in range(12) if n % 2 == 0]`. The loop obtains each integer from `range(12)`. The condition accepts the even ones. Only then does `n * n` become an item in the result. An equivalent explicit version begins with `squares = []`, loops with `for n in range(12):`, tests `if n % 2 == 0:`, and calls `squares.append(n * n)` inside that condition. Both forms produce `[0, 4, 16, 36, 64, 100]`. This translation is more than a mnemonic: it is a reliable way to diagnose a comprehension whose output surprises you. With more than one `for`, the clauses nest from left to right, just as corresponding nested loops do. A later clause may use a target introduced by an earlier one."
+    },
+    {
+      "heading": "Scope and readability are part of correct use",
+      "body": "Python 3 evaluates a comprehension in its own implicit nested scope, apart from evaluating the iterable in the leftmost `for` in the enclosing context. In practical introductory code, this means the target name in `[n * n for n in range(3)]` is not a new or overwritten outer `n` after the comprehension finishes. That is useful, but it is not a reason to hide complicated work in one line. A comprehension is often a good fit for one focused action: select records matching a straightforward condition, normalize a short field, or calculate one value per input. It becomes harder to read when it contains several nested clauses, a dense conditional expression, or a calculation that needs intermediate names and comments. An explicit loop can then communicate sequence, error handling, and debugging points more honestly. A practical review method is to expand the proposed comprehension mentally into its list initialization, loops, tests, and append action. If that expansion requires a reader to track more than one important decision at once, write the loop instead. The loop also gives a natural location for a breakpoint or a temporary print while debugging. If you need to keep a rejected item, count it, or explain why it failed, those are separate outcomes and are clearer as statements in a loop than as an increasingly elaborate expression. Test the short version with a peer or your future self. Do not claim an automatic speed advantage for the compact form: the lesson’s choice is about understandable intent, and performance depends on the particular work and environment. The question is not “can this be compressed?” but “can another reader trace the data flow without mentally unpacking a puzzle?” List comprehensions create lists; this lesson does not use them as a substitute for every loop or introduce generator expressions, which use related but distinct syntax and behavior."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "list comprehension",
+      "definition": "A bracketed Python expression that creates a new list by evaluating an expression for values supplied by one or more for clauses."
+    },
+    {
+      "term": "expression",
+      "definition": "Code that Python evaluates to produce a value; in a comprehension, its result becomes an output element for each accepted iteration."
+    },
+    {
+      "term": "iterable",
+      "definition": "An object that can provide values one at a time for iteration, such as a list, string, or range object."
+    },
+    {
+      "term": "target",
+      "definition": "The name or unpacking pattern after for that receives each value from an iterable during an iteration."
+    },
+    {
+      "term": "filter condition",
+      "definition": "An optional if clause in a comprehension that determines whether a candidate iteration contributes an output element."
+    },
+    {
+      "term": "explicit loop",
+      "definition": "A multi-line for-loop form in which initialization, condition checks, and appending are written as separate statements."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Imagine a tray that starts empty. A list comprehension is a short set of instructions printed on the tray: look through a collection, keep only the things that pass a rule, change each kept thing if needed, and place the results on this new tray. `[n * n for n in range(12) if n % 2 == 0]` says to look at numbers from 0 to 11, keep even numbers, square them, and make a fresh list of those squares. The square operation is written first because it describes what goes on the tray, even though Python must get a number from the `for` part before it can do that operation.",
+    "analogy": "It is like a cafeteria line with a label at the end: “Put a toasted bagel on the plate for each bagel that is plain.” The line chooses bagels and checks the rule; the label describes the finished item placed on each plate.",
+    "analogyLimits": "A cafeteria worker performs physical steps in a visible time order, while a comprehension is one Python expression with formally defined evaluation rules. The analogy also does not cover every Python detail, such as the comprehension’s separate scope for its target name."
+  },
+  "workedExample": "Suppose a program needs the squares of only the even integers below 12. Write `even_squares = [n * n for n in range(12) if n % 2 == 0]`. `range(12)` supplies 0 through 11. For 0, the condition is true and the expression yields 0; for 1, the condition is false and no item is added; for 2, the expression yields 4. Continuing this trace gives `[0, 4, 16, 36, 64, 100]`. To check your reasoning, expand it: start `even_squares = []`; loop over `n`; if `n % 2 == 0`, append `n * n`. That explicit loop yields the same list in the same order.",
+  "commonMistakes": [
+    {
+      "mistake": "Putting the result expression after the for clause.",
+      "correction": "Use brackets containing the expression first, then `for target in iterable`, then any filtering `if` clause."
+    },
+    {
+      "mistake": "Expecting a filtered-out value to produce a placeholder such as None.",
+      "correction": "An if clause filters iterations: when it is false, that iteration adds no element."
+    },
+    {
+      "mistake": "Changing the order of for and if clauses when expanding to loops.",
+      "correction": "Translate clauses left to right into nested loops and condition blocks; that order determines the result."
+    },
+    {
+      "mistake": "Compressing multi-step logic just because a comprehension is possible.",
+      "correction": "Prefer an explicit loop when intermediate values, multiple branches, or comments make the intent clearer."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "List comprehension",
+      "b": "Explicit loop with append",
+      "distinction": "Both can build the same list, but a comprehension expresses a small transformation or filter in one expression while the loop exposes each operational step on its own line."
+    }
+  ],
+  "keyTakeaway": "Read a list comprehension from its for clause: iterate, optionally filter, then evaluate the expression at the front for each accepted value. It is concise when the transformation is simple; clarity is the reason to keep or abandon it.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:list-comprehensions:1",
+      "prompt": "What does the expression at the front of a list comprehension determine?",
+      "options": [
+        "The value placed in the new list for an accepted iteration",
+        "The name of the iterable",
+        "Whether the list is mutable",
+        "How many for clauses are allowed"
+      ],
+      "correctIndex": 0,
+      "explanation": "The front expression is evaluated for each iteration that passes any filters, producing the output element. The for clause names an iterable; comprehensions do not change list mutability or set a fixed number of clauses.",
+      "difficulty": "recall",
+      "skill": "Identify the role of the result expression",
+      "sourceIds": [
+        "python-docs-datastructures",
+        "python-docs-expressions-comprehensions"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:list-comprehensions:2",
+      "prompt": "Which comprehension creates squares of the odd values in `range(6)`?",
+      "options": [
+        "[n for n * n in range(6) if n % 2 == 1]",
+        "[n * n for n in range(6) if n % 2 == 1]",
+        "[n * n if n % 2 == 1 for n in range(6)]",
+        "[for n in range(6): n * n if n % 2 == 1]"
+      ],
+      "correctIndex": 1,
+      "explanation": "The correct form has expression `n * n`, then `for n in range(6)`, then its filter. The other choices put syntax in an invalid order or try to use a statement inside the brackets.",
+      "difficulty": "application",
+      "skill": "Construct a filtered list comprehension",
+      "sourceIds": [
+        "python-docs-datastructures",
+        "python-docs-expressions-comprehensions"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:list-comprehensions:3",
+      "prompt": "When translating `[x for x in values if x > 0]` into an explicit loop, where should the append occur?",
+      "options": [
+        "Before the loop begins",
+        "After the loop, once",
+        "Inside an `if x > 0` block within the loop",
+        "In a separate loop over the completed list"
+      ],
+      "correctIndex": 2,
+      "explanation": "Only values satisfying the filter should be appended, so append belongs inside the matching conditional in the loop. The other placements either lack a current value or fail to perform filtering.",
+      "difficulty": "understanding",
+      "skill": "Map a filter clause to explicit control flow",
+      "sourceIds": [
+        "python-docs-datastructures"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:list-comprehensions:4",
+      "prompt": "Why might an explicit loop be preferable to a single list comprehension?",
+      "options": [
+        "Lists cannot be created by comprehensions",
+        "An explicit loop is required whenever there is an if clause",
+        "Comprehensions always run more slowly",
+        "The task has several branches and intermediate steps that need clear names"
+      ],
+      "correctIndex": 3,
+      "explanation": "A loop can be clearer when logic needs named intermediate values, several branches, comments, or debugging points. The other statements are false: comprehensions create lists, support filters, and readability—not a universal speed rule—drives this choice.",
+      "difficulty": "analysis",
+      "skill": "Evaluate readability tradeoffs",
+      "sourceIds": [
+        "python-docs-datastructures"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:list-comprehensions:5",
+      "prompt": "In Python 3, after `result = [n * 2 for n in range(3)]`, what happens to a previously existing outer variable named `n`?",
+      "options": [
+        "It is always replaced by 2",
+        "It is deleted",
+        "It keeps its prior outer value because the comprehension target uses an implicit nested scope",
+        "It becomes the whole list `[0, 2, 4]`"
+      ],
+      "correctIndex": 2,
+      "explanation": "Python’s reference documentation specifies an implicit nested scope for the comprehension, preventing its target assignment from leaking into the enclosing scope. The target is not replaced, deleted, or assigned the output list.",
+      "difficulty": "understanding",
+      "skill": "Recognize comprehension target scope",
+      "sourceIds": [
+        "python-docs-expressions-comprehensions"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "python-programming:foundations:list-comprehensions:1",
+      "prompt": "What does the expression at the front of a list comprehension determine?",
+      "options": [
+        "The value placed in the new list for an accepted iteration",
+        "The name of the iterable",
+        "Whether the list is mutable",
+        "How many for clauses are allowed"
+      ],
+      "correctIndex": 0,
+      "explanation": "The front expression is evaluated for each iteration that passes any filters, producing the output element. The for clause names an iterable; comprehensions do not change list mutability or set a fixed number of clauses.",
+      "difficulty": "recall",
+      "skill": "Identify the role of the result expression",
+      "sourceIds": [
+        "python-docs-datastructures",
+        "python-docs-expressions-comprehensions"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:list-comprehensions:2",
+      "prompt": "Which comprehension creates squares of the odd values in `range(6)`?",
+      "options": [
+        "[n for n * n in range(6) if n % 2 == 1]",
+        "[n * n for n in range(6) if n % 2 == 1]",
+        "[n * n if n % 2 == 1 for n in range(6)]",
+        "[for n in range(6): n * n if n % 2 == 1]"
+      ],
+      "correctIndex": 1,
+      "explanation": "The correct form has expression `n * n`, then `for n in range(6)`, then its filter. The other choices put syntax in an invalid order or try to use a statement inside the brackets.",
+      "difficulty": "application",
+      "skill": "Construct a filtered list comprehension",
+      "sourceIds": [
+        "python-docs-datastructures",
+        "python-docs-expressions-comprehensions"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:list-comprehensions:3",
+      "prompt": "When translating `[x for x in values if x > 0]` into an explicit loop, where should the append occur?",
+      "options": [
+        "Before the loop begins",
+        "After the loop, once",
+        "Inside an `if x > 0` block within the loop",
+        "In a separate loop over the completed list"
+      ],
+      "correctIndex": 2,
+      "explanation": "Only values satisfying the filter should be appended, so append belongs inside the matching conditional in the loop. The other placements either lack a current value or fail to perform filtering.",
+      "difficulty": "understanding",
+      "skill": "Map a filter clause to explicit control flow",
+      "sourceIds": [
+        "python-docs-datastructures"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "python-programming:foundations:for-loops",
+    "python-programming:foundations:lists",
+    "python-programming:foundations:conditionals",
+    "python-programming:foundations:string-methods",
+    "python-programming:foundations:functions"
+  ],
+  "sources": [
+    "python-docs-datastructures",
+    "python-docs-expressions-comprehensions"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only official documentation; no source prose adapted.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Original explanation and Python 3 examples synthesized from official tutorial and language-reference documentation."
+  },
+  "contentHash": "300caab2aa75e2ad",
+  "status": "source-verified",
+  "public": false
+}

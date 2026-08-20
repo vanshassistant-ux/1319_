@@ -1,0 +1,275 @@
+{
+  "id": "python-programming:foundations:string-methods",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "string-methods",
+  "title": "String Methods",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "python",
+    "strings",
+    "methods",
+    "text-cleaning"
+  ],
+  "in30Seconds": "A string method is an operation written after a string value and a dot, such as name.lower() or message.strip(). Methods can transform text, look for text, or break text into pieces. Because Python strings are immutable, a method that changes the text's content returns a result instead of editing the original value. Store or use that returned result when you need the changed text.",
+  "whyItMatters": "Text from people and systems is rarely perfectly formatted. A method can remove accidental edge whitespace, make a comparison use one case, locate a marker, replace a known fragment, or turn a delimiter-separated line into useful pieces. Learning which methods return strings, lists, or positions prevents quiet mistakes such as displaying a cleaned value while continuing to use the uncleaned one. These habits prepare you for later work with input, files, and structured data without treating every text task as a special case.",
+  "learningObjectives": [
+    "Define a string method and identify its receiver.",
+    "Explain why a text-transforming method does not mutate its original string.",
+    "Apply lower and strip to normalize a small text value.",
+    "Interpret the result of find when a substring is present or absent.",
+    "Choose between split and join for separating or combining text pieces."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Methods are operations attached to a value",
+      "body": "A method is an operation accessed through an object with dot notation. In text = 'Ada', text.lower() calls the lower method on the string currently bound to text. The value before the dot is the receiver. Parentheses signal the call; some methods need no arguments, while others receive information in the parentheses. A method name is not a magic property of every Python value. It is behavior provided by the value's type, so this lesson concerns methods supplied by str values.\n\nString methods are useful when a program has a text value and needs a specific text operation. lower converts cased characters to lowercase. upper does the reverse for cased characters. strip removes characters at the beginning and end, using whitespace by default. These are transformations: their results are strings. A useful first question when reading a call is, what type of result does this method produce? That question makes later code easier to trace than memorizing a long list of names."
+    },
+    {
+      "heading": "A transformed result is not an in-place edit",
+      "body": "Python documents str as an immutable sequence. Its existing characters cannot be changed in place, and text-transforming methods therefore give a result rather than revise the receiver. For example, raw = '  Ada  '; cleaned = raw.strip() leaves raw as '  Ada  ' and makes cleaned equal to 'Ada'. A program may then bind raw to the new value with raw = raw.strip(), but that assignment changes which value the name refers to; it does not mutate the old string.\n\nThis distinction explains a common surprise. Calling raw.strip() by itself computes a cleaned string, but the program discards that result unless it is assigned, passed to another call, or otherwise used. Chaining is possible when each step receives the previous result: raw.strip().lower() first makes edge-trimmed text and then lowercases that new string. This is readable for short, familiar operations. When a chain becomes difficult to inspect, intermediate names such as trimmed and normalized make the order explicit."
+    },
+    {
+      "heading": "Searching and replacement answer different questions",
+      "body": "find(sub) reports the lowest position at which sub occurs. For 'Ada Lovelace'.find('Love'), the answer is 4. If the requested substring does not occur, find returns -1. That sentinel is a position-like result, not a Boolean and not an exception. It is appropriate when the program genuinely needs a location. If the only question is whether text occurs, the in operator expresses that question directly, as in 'Love' in full_name.\n\nreplace(old, new) builds text with occurrences of old changed to new. 'Ada Lovelace'.replace('Ada', 'Augusta') produces 'Augusta Lovelace'; the original literal remains unchanged. An optional count can limit replacements, so 'banana'.replace('a', 'A', 2) produces 'bAnAna'. Replacement is literal substring replacement, not a general pattern language. Regular expressions are a separate topic with different syntax and rules, so they should not be silently assumed here."
+    },
+    {
+      "heading": "Split creates pieces; join assembles them",
+      "body": "split separates a string and returns a list of strings. With an explicit separator, 'red,green,blue'.split(',') returns ['red', 'green', 'blue']. The separator is removed from the resulting pieces. With no argument, split uses whitespace rules and treats a run of whitespace as a separator. Choose an explicit delimiter only when the input format actually promises one; a comma-separated example is not automatically a file-format parser.\n\njoin travels in the opposite direction: a string used as the receiver becomes the separator between strings from an iterable. ' / '.join(['usr', 'bin', 'python3']) produces 'usr / bin / python3'. The separator is not added before the first item or after the last. Join expects string elements; a non-string element causes TypeError rather than being silently converted. Together, split and join are practical for small, well-understood text pieces. They do not replace the careful format rules needed for quoted CSV fields, regular expressions, or file handling."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "method",
+      "definition": "An operation provided by an object's type and called with dot notation."
+    },
+    {
+      "term": "receiver",
+      "definition": "The value before the dot in a method call, such as text in text.lower()."
+    },
+    {
+      "term": "immutable",
+      "definition": "Unable to have its existing contents changed in place."
+    },
+    {
+      "term": "normalize",
+      "definition": "To make values follow a chosen consistent form, such as removing edge whitespace and using one case."
+    },
+    {
+      "term": "substring",
+      "definition": "A consecutive sequence of characters that occurs within a larger string."
+    },
+    {
+      "term": "delimiter",
+      "definition": "A character or string used to mark the boundary between text pieces."
+    },
+    {
+      "term": "sentinel value",
+      "definition": "A special returned value that signals a condition; find uses -1 for an absent substring."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Imagine each string is a message printed on a card. A method is a tool you place against the card: lower makes a new card with small letters, and strip makes a new card without accidental blank space at its edges. The old card stays exactly as it was. If you forget to keep the new card, you still only have the old one.\n\nfind is like asking where a word first begins on the card. It gives a number when it sees the word and -1 when it does not. split is like cutting a card at its commas to make several cards. join is like placing a chosen ribbon between several cards to make one line again.",
+    "analogy": "String methods are card tools that produce a fresh card or report something about the card.",
+    "analogyLimits": "Python does not make physical cards, and some methods return lists or numbers rather than strings. The picture is meant to show that transformations produce a result without altering the original string."
+  },
+  "workedExample": "Suppose a program receives raw_name = '  ADA Lovelace  '. First, raw_name.strip() produces 'ADA Lovelace', but raw_name still contains the spaces because strings are immutable. Next, raw_name.strip().lower() produces 'ada lovelace'. To retain that normalized result, write normalized = raw_name.strip().lower(). Then normalized.find('lovelace') returns 4: the letters a, d, a, and a space occupy positions 0 through 3. normalized.replace('ada', 'augusta') produces 'augusta lovelace'. Finally, normalized.split(' ') produces ['ada', 'lovelace'], and '-'.join(['ada', 'lovelace']) produces 'ada-lovelace'. Each result was executed with python3.",
+  "commonMistakes": [
+    {
+      "mistake": "Calling text.strip() and expecting text itself to lose whitespace.",
+      "correction": "Keep the returned string, for example text = text.strip() or cleaned = text.strip()."
+    },
+    {
+      "mistake": "Treating -1 from find as a valid found position.",
+      "correction": "Read -1 as not found; use in when the program only needs a membership test."
+    },
+    {
+      "mistake": "Using join as though it were a list method.",
+      "correction": "Call it on the separator string: ', '.join(items)."
+    },
+    {
+      "mistake": "Assuming split(',') understands every comma-containing format.",
+      "correction": "It separates literal commas; use a format-aware tool when quoted or escaped fields matter."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "text.strip()",
+      "b": "text = text.strip()",
+      "distinction": "The call computes a trimmed result; the assignment makes the name refer to that result."
+    },
+    {
+      "a": "text.find(part)",
+      "b": "part in text",
+      "distinction": "find reports a position or -1, while in directly answers whether the substring occurs."
+    },
+    {
+      "a": "text.split(',')",
+      "b": "','.join(parts)",
+      "distinction": "split turns one delimited string into a list; join combines iterable string elements with a delimiter."
+    }
+  ],
+  "keyTakeaway": "String methods let a program transform or inspect text with documented operations. Keep transformation results because strings are immutable, and choose methods by the kind of answer needed: text, a list of pieces, or a position.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:string-methods:1",
+      "prompt": "In the expression label.lower(), what is label?",
+      "options": [
+        "The receiver of the method call",
+        "A replacement substring",
+        "A delimiter",
+        "The returned list"
+      ],
+      "correctIndex": 0,
+      "explanation": "The receiver is the value before the dot. lower returns a string; it does not use label as a delimiter or replacement substring.",
+      "difficulty": "recall",
+      "skill": "identify a method-call receiver",
+      "sourceIds": [
+        "python-docs-string-methods"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:string-methods:2",
+      "prompt": "What is the value of '  Ada  '.strip()?",
+      "options": [
+        "'  Ada  '",
+        "'Ada'",
+        "['Ada']",
+        "None"
+      ],
+      "correctIndex": 1,
+      "explanation": "strip returns a copy with leading and trailing whitespace removed, so the result is 'Ada'. It does not make a list or return None.",
+      "difficulty": "application",
+      "skill": "apply edge trimming",
+      "sourceIds": [
+        "python-docs-string-methods"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:string-methods:3",
+      "prompt": "A program runs position = 'notebook'.find('book'). What is position?",
+      "options": [
+        "-1",
+        "3",
+        "4",
+        "'book'"
+      ],
+      "correctIndex": 2,
+      "explanation": "The substring begins at index 4. find returns -1 only when the substring is absent, and it returns a position rather than the matched text.",
+      "difficulty": "application",
+      "skill": "trace a substring search",
+      "sourceIds": [
+        "python-docs-string-methods"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:string-methods:4",
+      "prompt": "Which expression combines the strings in parts with a slash between them?",
+      "options": [
+        "parts.join('/')",
+        "'/'.split(parts)",
+        "'/'.replace(parts)",
+        "'/'.join(parts)"
+      ],
+      "correctIndex": 3,
+      "explanation": "join is called on the separator string, so '/'.join(parts) places a slash between each string element. split performs the opposite direction, and replace needs old and new substrings.",
+      "difficulty": "understanding",
+      "skill": "select correct join syntax",
+      "sourceIds": [
+        "python-docs-string-methods"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:string-methods:5",
+      "prompt": "Why does this leave raw unchanged? raw = '  Hi  '; raw.strip()",
+      "options": [
+        "strip only works on lists",
+        "The call returns a new string, and its result was not saved",
+        "The spaces are inside the string rather than at an edge",
+        "Strings must be converted before trimming"
+      ],
+      "correctIndex": 1,
+      "explanation": "str values are immutable, and strip returns a result. Without assigning or otherwise using it, raw remains bound to its original text. The method works on strings and no conversion is required.",
+      "difficulty": "analysis",
+      "skill": "reason about immutable transformation results",
+      "sourceIds": [
+        "python-docs-string-methods",
+        "python-tutorial-strings"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "python-programming:foundations:string-methods:1",
+      "prompt": "In the expression label.lower(), what is label?",
+      "options": [
+        "The receiver of the method call",
+        "A replacement substring",
+        "A delimiter",
+        "The returned list"
+      ],
+      "correctIndex": 0,
+      "explanation": "The receiver is the value before the dot. lower returns a string; it does not use label as a delimiter or replacement substring.",
+      "difficulty": "recall",
+      "skill": "identify a method-call receiver",
+      "sourceIds": [
+        "python-docs-string-methods"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:string-methods:2",
+      "prompt": "What is the value of '  Ada  '.strip()?",
+      "options": [
+        "'  Ada  '",
+        "'Ada'",
+        "['Ada']",
+        "None"
+      ],
+      "correctIndex": 1,
+      "explanation": "strip returns a copy with leading and trailing whitespace removed, so the result is 'Ada'. It does not make a list or return None.",
+      "difficulty": "application",
+      "skill": "apply edge trimming",
+      "sourceIds": [
+        "python-docs-string-methods"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:string-methods:3",
+      "prompt": "A program runs position = 'notebook'.find('book'). What is position?",
+      "options": [
+        "-1",
+        "3",
+        "4",
+        "'book'"
+      ],
+      "correctIndex": 2,
+      "explanation": "The substring begins at index 4. find returns -1 only when the substring is absent, and it returns a position rather than the matched text.",
+      "difficulty": "application",
+      "skill": "trace a substring search",
+      "sourceIds": [
+        "python-docs-string-methods"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "python-programming:foundations:strings",
+    "python-programming:foundations:type-conversion",
+    "python-programming:foundations:functions",
+    "python-programming:foundations:files"
+  ],
+  "sources": [
+    "python-docs-string-methods",
+    "python-tutorial-strings"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only official documentation; no source prose adapted.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Original instructional explanation of documented Python str methods, with examples executed in python3."
+  },
+  "contentHash": "1efbf76bdbea4921",
+  "status": "source-verified",
+  "public": false
+}
