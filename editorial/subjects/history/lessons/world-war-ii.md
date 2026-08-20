@@ -1,0 +1,169 @@
+# World War II
+
+## In 30 Seconds
+
+World War II (1939-1945) was the deadliest conflict in history, killing roughly 70 to 85 million people. It grew out of the punitive peace after World War I, the Great Depression, and the rise of fascist and militarist regimes in Germany, Italy, and Japan. It included the Holocaust, the systematic murder of six million Jews and millions of others, and ended with Germany's defeat and the atomic bombings of Japan.
+
+## Why This Matters
+
+World War II reshaped the modern world. It set today's borders and alliances, created the United Nations, opened the Cold War, and pushed colonized peoples toward independence. It is also the central case study in how democracies fail, how ordinary states commit genocide, and why the international community built human-rights and laws-of-war frameworks afterward. Understanding it lets you reason about propaganda, appeasement, and the machinery of mass atrocity rather than treating them as distant abstractions, and it grounds later courses in twentieth-century politics, ethics, and international relations.
+
+## Learning Objectives
+
+- Explain the main causes of World War II, distinguishing long-term conditions from the immediate trigger.
+- Identify the two sides, the major theaters, and the key dates of the war's outbreak and end.
+- Define the Holocaust accurately and state, with attribution, the scale of its victims.
+- Analyze the war's human cost, including why civilian deaths were so high.
+- Describe how the war's aftermath produced the United Nations, the Cold War, and decolonization.
+
+## The College Version
+
+### Why the peace failed: Versailles, depression, and dictators
+
+World War II did not begin in a vacuum; it grew from unresolved pressures left by World War I. The 1919 Treaty of Versailles blamed Germany for the earlier war and imposed reparations, territorial losses, and strict military limits. Many Germans experienced these terms as a national humiliation, and Adolf Hitler built political support partly by promising to overturn them. The peace was supposed to be guarded by the League of Nations, but the League had no army and its structure unraveled through the 1930s.
+
+The Great Depression, which spread worldwide after 1929, made things far worse. Mass unemployment, poverty, and collapsing confidence in ordinary politics pushed voters and elites toward authoritarian solutions. In this climate, expansionist regimes came to power or grew bolder: Nazi Germany under Hitler (who became chancellor in 1933), Fascist Italy under Benito Mussolini (which invaded Ethiopia in 1935), and Imperial Japan (which had seized Manchuria in 1931 and launched a full invasion of China in 1937). These regimes shared a belief that national strength justified conquest. It is important to see multiple causes working together here: the punitive peace, the economic collapse, and the ideology of aggressive nationalism each mattered, and no single one by itself "caused" the war.
+
+### From appeasement to world war
+
+Through the late 1930s, Britain and France largely responded to German and Italian aggression with appeasement, granting concessions in the hope of avoiding another catastrophic war. The clearest example was the Munich Agreement of 30 September 1938, in which Britain and France permitted Germany to annex the Sudetenland, a German-speaking region of Czechoslovakia. Appeasement did not satisfy Hitler; within months Germany seized the rest of Czechoslovakia.
+
+The war in Europe began when Germany invaded Poland on 1 September 1939. Britain and France, having guaranteed Poland's independence, declared war two days later. The conflict soon divided the world into two coalitions. The Axis powers were led by Germany, Italy, and Japan. The Allied powers came to include the United Kingdom, France, the Soviet Union (after Germany invaded it in 1941), the United States (after Japan attacked Pearl Harbor in December 1941), China, and many others. The fighting spread across major theaters: Europe and North Africa, and the Pacific and East Asia. This was a genuinely global war fought on land, at sea, and in the air across several continents.
+
+### The Holocaust
+
+The Holocaust was the systematic, state-sponsored persecution and murder of six million European Jews by Nazi Germany and its allies and collaborators. This is a documented historical fact, established by extensive perpetrator records, survivor testimony, and physical evidence; it is not a matter of opinion and must never be minimized, questioned, or denied.
+
+The United States Holocaust Memorial Museum dates the Holocaust era to 1933-1945, beginning when the Nazis took power and escalating into mass murder. From 1941 onward the regime pursued what it called the "Final Solution," murdering Jews in mass shootings and in killing centers built for that purpose. Alongside the six million Jews, Nazi Germany persecuted and killed millions of other people it deemed undesirable or dangerous: Roma, people with disabilities (murdered in a so-called "euthanasia" program), Soviet prisoners of war, Polish civilians, political opponents, Jehovah's Witnesses, and gay men, among others. The Holocaust is studied not for graphic detail but because it shows how a modern state, using law, bureaucracy, and technology, organized genocide, and because that knowledge is central to preventing such crimes.
+
+### Ending the war: 1945 and the atomic bombings
+
+By 1945 the Allies were closing in on Germany from east and west. Hitler killed himself on 30 April 1945, and Germany surrendered unconditionally in early May, signing at Reims on 7 May and in Berlin on 8-9 May. Victory in Europe, or V-E Day, is marked on 8 May 1945.
+
+The war in the Pacific continued. In August 1945 the United States dropped atomic bombs on two Japanese cities: Hiroshima on 6 August and Nagasaki on 9 August. These were the only uses of nuclear weapons in war. By the end of 1945 an estimated 140,000 people had died at Hiroshima and roughly 70,000 to 80,000 at Nagasaki; the great majority were civilians, and the tolls rose in later years from burns, injuries, and radiation. Japan announced its surrender on 15 August 1945 (marked as V-J Day) and signed the formal instrument of surrender aboard the USS Missouri on 2 September 1945, ending World War II. Historians continue to debate the decision to use the bombs; what is not in dispute is the immense human cost.
+
+### The human cost and the world the war made
+
+World War II was the deadliest conflict in human history. Estimates of total deaths vary widely because many were never precisely recorded, but a commonly cited range is roughly 70 to 85 million people, equal to around three to four percent of the world's population at the time. Unlike most earlier wars, it killed more civilians than soldiers, through bombing, massacre, genocide, forced starvation, and disease. The Soviet Union suffered the heaviest losses, on the order of 24 to 27 million dead, and China the second heaviest, roughly 20 million.
+
+The war remade the international order. Determined to prevent a third world war, the victors created the United Nations; its Charter was signed in San Francisco on 26 June 1945, and the organization formally came into existence on 24 October 1945. The wartime alliance between the Western powers and the Soviet Union quickly broke down into the Cold War, a decades-long rivalry between a U.S.-led West and a Soviet-led East. And across Africa and Asia, peoples who had contributed to the war effort pressed harder for independence, accelerating the decolonization that reshaped the map over the following decades.
+
+## Key Vocabulary
+
+- **Axis powers** — The main aggressor coalition in World War II, led by Nazi Germany, Fascist Italy, and Imperial Japan.
+- **Allied powers** — The coalition that opposed the Axis, including the United Kingdom, France, the Soviet Union, the United States, China, and many other nations.
+- **Fascism** — An authoritarian, ultranationalist political movement that exalts the nation or race, suppresses dissent, and glorifies strength and expansion; Italy under Mussolini and Germany under Hitler were its leading examples.
+- **Appeasement** — The policy of granting concessions to an aggressive power to avoid conflict, associated with Britain and France's response to Nazi Germany in the late 1930s.
+- **Munich Agreement** — The 30 September 1938 pact in which Britain and France let Germany annex Czechoslovakia's Sudetenland, the emblematic act of appeasement.
+- **The Holocaust** — The systematic, state-sponsored persecution and murder of six million European Jews by Nazi Germany and its collaborators between 1933 and 1945, alongside millions of other victims.
+- **Final Solution** — The Nazi regime's plan, pursued from 1941, to murder all of Europe's Jews, carried out through mass shootings and purpose-built killing centers.
+- **Genocide** — The deliberate, systematic destruction of a national, ethnic, racial, or religious group, in whole or in part.
+- **V-E Day** — Victory in Europe Day, 8 May 1945, marking Nazi Germany's unconditional surrender.
+- **V-J Day** — Victory over Japan Day, marking Japan's surrender in August 1945 (formally signed 2 September 1945) and the end of the war.
+
+## Eli-10
+
+World War II was a war that spread across most of the planet from 1939 to 1945. On one side were Germany, Italy, and Japan, whose governments believed their nations had the right to conquer other countries. On the other side were the Allies, including Britain, the Soviet Union, the United States, and China. The war started when Germany invaded Poland. During the war, the Nazi government of Germany carried out the Holocaust: it deliberately murdered six million Jewish people, along with millions of others. The war ended in 1945 after Germany was defeated and the United States dropped two atomic bombs on Japan. More people died in this war than in any other in history.
+
+## Eli's Analogy
+
+Think of the years before the war like a dam holding back rising water. World War I left cracks in the dam (the harsh peace treaty), the Great Depression piled on more pressure, and giving in to Hitler again and again (appeasement) was like ignoring the leaks. When Germany invaded Poland, the dam finally broke, and the flood swept across the whole region.
+
+**Where the analogy breaks down:** The dam analogy makes the war feel like an impersonal accident, but it was not. Real people made deliberate choices to invade, to persecute, and to murder. The Holocaust in particular was not water spilling over a wall; it was a plan, decided and carried out by human beings who are responsible for it. Use the analogy for how pressures built up, not for who was to blame.
+
+## Worked Example
+
+Suppose a historian is asked, "What caused World War II?" A weak answer names one thing, such as "the Treaty of Versailles." A strong answer applies multiple causation and separates long-term conditions from the trigger. Long-term causes: the punitive 1919 peace that embittered Germany; the Great Depression that wrecked economies and discredited moderate politics; and the rise of expansionist regimes in Germany, Italy, and Japan. A contributing failure: the appeasement that let Hitler grow bolder, seen at Munich in 1938. The immediate trigger: Germany's invasion of Poland on 1 September 1939, which led Britain and France to declare war. The historian shows how the conditions made war likely and the invasion set it off, rather than reducing everything to a single cause.
+
+## Common Mistakes
+
+- **Mistake:** Thinking World War II began when the United States entered after Pearl Harbor (December 1941).
+  **Correction:** The war in Europe began on 1 September 1939 with Germany's invasion of Poland; the fighting in Asia was already underway. The United States entered more than two years later.
+- **Mistake:** Confusing V-E Day and V-J Day, or assuming the whole war ended in May 1945.
+  **Correction:** V-E Day (8 May 1945) marks Germany's surrender in Europe. The war against Japan continued until August-September 1945 (V-J Day), so the war ended in stages.
+- **Mistake:** Reducing the Holocaust to a single number or treating it as an incidental side effect of the fighting.
+  **Correction:** The Holocaust was a deliberate, state-organized genocide: six million Jews were murdered, along with millions of other victims. It was planned policy, not a byproduct of combat, and its occurrence is documented fact.
+- **Mistake:** Blaming World War II on the Treaty of Versailles alone.
+  **Correction:** Versailles was one long-term cause, but the Depression, the rise of fascist and militarist regimes, and the failure of appeasement all contributed. Good historical reasoning weighs multiple causes.
+- **Mistake:** Assuming the roughly 70-85 million dead were mostly soldiers.
+  **Correction:** World War II killed more civilians than soldiers, through bombing, massacre, genocide, and war-related famine and disease. The majority of the dead were civilians.
+
+## Compare / Contrast
+
+- **Allied powers vs Axis powers:** The Allies (UK, USSR, US, China, and others) fought to defeat the aggressors; the Axis (Germany, Italy, Japan) pursued conquest and, in Germany's case, genocide.
+- **V-E Day (8 May 1945) vs V-J Day (August-September 1945):** V-E Day marks Germany's surrender and the end of the war in Europe; V-J Day marks Japan's surrender and the end of the war overall, roughly three to four months later.
+- **The Holocaust vs general wartime death:** General wartime death results from combat and its side effects; the Holocaust was the deliberate, systematic murder of civilians targeted for who they were, a genocide distinct from battlefield casualties.
+- **Appeasement vs deterrence:** Appeasement grants an aggressor concessions to avoid conflict; deterrence threatens costs to stop aggression before it starts. Munich (1938) is the classic case of appeasement failing.
+
+## Key Takeaway
+
+World War II (1939-1945) was the deadliest conflict in history, rooted in the failed peace after World War I, the Great Depression, and aggressive fascist and militarist regimes. It included the Holocaust, the documented, systematic murder of six million Jews and millions of others, and its end reshaped the world through the United Nations, the Cold War, and decolonization.
+
+## Practice Question Bank
+
+1. **Which event is generally taken to mark the beginning of World War II in Europe?**
+   - A. Germany's invasion of Poland on 1 September 1939
+   - B. The signing of the Treaty of Versailles in 1919
+   - C. The Japanese attack on Pearl Harbor in December 1941
+   - D. Germany's unconditional surrender on 8 May 1945
+
+   **Answer: A.** World War II in Europe began when Germany invaded Poland on 1 September 1939, prompting Britain and France to declare war. Versailles (1919) was the post-World War I peace treaty, Pearl Harbor (1941) brought the United States into the war more than two years later, and 8 May 1945 marks Germany's surrender, not the start.
+
+2. **According to the United States Holocaust Memorial Museum, approximately how many European Jews did Nazi Germany and its collaborators murder in the Holocaust?**
+   - A. About one million
+   - B. About six million
+   - C. About twelve million
+   - D. About twenty million
+
+   **Answer: B.** The USHMM defines the Holocaust as the systematic, state-sponsored murder of six million European Jews. Nazi Germany also killed millions of other victims (such as Roma, disabled people, and Soviet prisoners of war), but the six-million figure specifically refers to Jewish victims. The other options misstate that established figure.
+
+3. **Britain and France's decision at Munich in 1938 to let Germany annex the Sudetenland, hoping to avoid war, is the clearest example of which policy?**
+   - A. Collective security
+   - B. Containment
+   - C. Deterrence
+   - D. Appeasement
+
+   **Answer: D.** The Munich Agreement is the textbook example of appeasement: granting an aggressor concessions to avoid conflict. Collective security means nations jointly resisting aggression; containment (a later Cold War policy) and deterrence both aim to stop an adversary through resistance or the threat of costs, which is the opposite of what Britain and France did at Munich.
+
+4. **Which sequence correctly orders these events of 1945?**
+   - A. Hiroshima and Nagasaki bombed, then Germany surrenders, then Japan surrenders
+   - B. Japan surrenders, then Germany surrenders, then the atomic bombs are dropped
+   - C. Germany surrenders (May), then Hiroshima and Nagasaki are bombed (August), then Japan surrenders (August-September)
+   - D. Germany and Japan surrender together in May, before the atomic bombs are dropped
+
+   **Answer: C.** Germany surrendered first, in early May 1945 (V-E Day, 8 May). The United States then dropped atomic bombs on Hiroshima (6 August) and Nagasaki (9 August), and Japan surrendered later that August, signing formally on 2 September 1945. The other sequences place the events out of order.
+
+5. **Historians commonly estimate the total number of deaths caused by World War II at roughly:**
+   - A. 5 to 10 million
+   - B. 70 to 85 million
+   - C. 250 to 300 million
+   - D. 1 to 2 million
+
+   **Answer: B.** A widely cited estimate places total World War II deaths at roughly 70 to 85 million, making it the deadliest conflict in history, with more civilians killed than soldiers. Figures vary because many deaths went unrecorded, but 5-10 million and 1-2 million badly understate the toll, while 250-300 million would exceed a large share of the entire world population at the time.
+
+## Sources
+
+- United States Holocaust Memorial Museum, "Introduction to the Holocaust" — Holocaust Encyclopedia. https://encyclopedia.ushmm.org/content/en/article/introduction-to-the-holocaust (reference-only)
+- United States Holocaust Memorial Museum, "World War II in Depth" — Holocaust Encyclopedia. https://encyclopedia.ushmm.org/content/en/article/world-war-ii-in-depth (reference-only)
+- OpenStax, *World History, Volume 2*, 13.1 "An Unstable Peace." https://openstax.org/books/world-history-volume-2/pages/13-1-an-unstable-peace (CC BY 4.0; used reference-only)
+- OpenStax, *World History, Volume 2*, 13.4 "Out of the Ashes." https://openstax.org/books/world-history-volume-2/pages/13-4-out-of-the-ashes (CC BY 4.0; used reference-only)
+- The National WWII Museum, "Research Starters: Worldwide Deaths of World War II." https://www.nationalww2museum.org/students-teachers/student-resources/research-starters/research-starters-worldwide-deaths-world-war (reference-only)
+- Atomic Heritage Foundation / National Museum of Nuclear Science & History, "Bombings of Hiroshima and Nagasaki - 1945." https://ahf.nuclearmuseum.org/ahf/history/bombings-hiroshima-and-nagasaki-1945/ (reference-only)
+- United Nations, "History of the United Nations." https://www.un.org/en/about-us/history-of-the-un (reference-only)
+
+## Related Topics
+
+- history:foundations:world-war-i
+- history:foundations:great-depression
+- history:foundations:cold-war
+- history:foundations:decolonization
+- history:foundations:imperialism
+
+## Editorial Metadata
+
+- **Topic ID:** history:foundations:world-war-ii
+- **Editorial status:** READY_TO_PUBLISH
+- **Researched:** 2026-08-20
+- **Source count:** 7 (all reference-only; no source prose adapted)
+- **Rights:** Facts verified against authoritative sources; all prose is original EliExplains synthesis.
+- **Sensitive-topic handling:** The Holocaust is stated as documented historical fact per USHMM (six million Jews plus millions of other victims), without denial, minimization, or gratuitous graphic detail. Atomic-bombing and total-death figures are given as attributed estimates.
