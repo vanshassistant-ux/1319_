@@ -6,7 +6,7 @@ After the Civil War, the United States industrialized at breakneck speed in the 
 
 ## Why This Matters
 
-This half-century turned the United States into the world's leading industrial economy and set patterns still with us: big corporations, a national consumer market, mass immigration, and the tug-of-war between concentrated business power and organized labor. The Gilded Age is also a case study in reading history honestly. The same decades produced dazzling growth and genuine philanthropy alongside brutal working conditions, political corruption, and extreme inequality. Learning to hold those facts together, and to weigh the "robber baron" and "captain of industry" verdicts on the same men, trains the judgment you need for any contested period.
+This half-century turned the United States into the world's leading industrial economy and set patterns still with us: big corporations, a national consumer market, mass immigration, and the tug-of-war between concentrated business power and organized labor. The Gilded Age also rewards reading history honestly. The same decades produced dazzling growth and genuine philanthropy alongside brutal working conditions, political corruption, and extreme inequality. Learning to hold those facts together, and to weigh the "robber baron" and "captain of industry" verdicts on the same men, trains the judgment you need for any contested period.
 
 ## Learning Objectives
 
