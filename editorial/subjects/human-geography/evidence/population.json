@@ -1,0 +1,175 @@
+{
+  "topicId": "human-geography:foundations:population",
+  "subjectId": "human-geography",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "Crude birth rate (CBR) and crude death rate (CDR): definition as events per 1,000 people per year",
+      "Natural increase and the rate of natural increase (RNI = CBR - CDR, migration excluded)",
+      "Total fertility rate (TFR) and the ~2.1 replacement level",
+      "World population size (~8 billion, 8 billion reached 15 November 2022; ~8.2 billion in 2024) and that global growth is slowing",
+      "Age structure and the population pyramid: expansive vs stationary vs constrictive/contractive shapes"
+    ],
+    "supporting": [
+      "Projected peak of ~10.3 billion around the mid-2080s (2084) per UN WPP 2024",
+      "Global TFR of about 2.3 in 2024, down from over 5 in the 1960s",
+      "Annual growth rate peaked at ~2.3% around 1963 and has fallen to under 1% (~0.9% in 2023)",
+      "Population aging as fertility falls and life expectancy rises"
+    ],
+    "outOfScope": [
+      "Where people live and population density (owned by population-distribution)",
+      "The stage model of how birth/death rates change with development (owned by demographic-transition)",
+      "Human movement / push-pull factors (owned by migration)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The crude birth rate and crude death rate are the number of births (or deaths) per 1,000 people in a population in a given year.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["owid-population-growth", "census-population-topics"],
+      "status": "supported"
+    },
+    {
+      "claim": "The rate of natural increase equals the crude birth rate minus the crude death rate and excludes migration.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["owid-population-growth", "census-population-topics"],
+      "status": "supported"
+    },
+    {
+      "claim": "The total fertility rate is the average number of children a woman would have over her lifetime at current age-specific birth rates; a TFR of about 2.1 is replacement level, the rate that keeps a population stable over time ignoring migration, with the margin above 2 accounting for child mortality.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["owid-population-growth", "un-wpp-2024-summary"],
+      "status": "supported"
+    },
+    {
+      "claim": "The world's population reached 8 billion on 15 November 2022, per the United Nations.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["un-global-issues-population"],
+      "status": "supported"
+    },
+    {
+      "claim": "The world's population was about 8.2 billion in 2024 and is projected to peak at approximately 10.3 billion around the mid-2080s (2084) before declining slightly, per UN World Population Prospects 2024.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["un-wpp-2024-summary", "owid-un-population-2024-revision"],
+      "status": "supported"
+    },
+    {
+      "claim": "Global population growth is slowing: the annual growth rate peaked at over 2% (about 2.3%) in the 1960s and has fallen to under 1% (about 0.9% in 2023), and the global fertility rate fell from over 5 children per woman in the 1960s to about 2.3 in 2024.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["owid-population-growth", "un-wpp-2024-summary", "owid-un-population-2024-revision"],
+      "status": "supported"
+    },
+    {
+      "claim": "It took 12 years for world population to grow from 7 to 8 billion but is projected to take about 15 years (to 2037) to reach 9 billion, a sign the growth rate is slowing.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["un-global-issues-population"],
+      "status": "supported"
+    },
+    {
+      "claim": "Age structure is commonly shown as a population pyramid; an expansive pyramid has a broad base (young, high-birth-rate, rapidly growing population), a stationary pyramid has roughly even age groups (low birth and death rates), and a constrictive/contractive pyramid has a narrow base (low birth rates, aging population).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["census-population-topics", "un-wpp-2024-summary"],
+      "status": "supported"
+    },
+    {
+      "claim": "The world's population is aging as life expectancy rises and fertility falls, and by 2024 about one in four people lived in a country or area whose population had already peaked.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["un-wpp-2024-summary", "owid-un-population-2024-revision"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Exact projected peak size and timing vary by projection revision.",
+      "positions": [
+        "UN WPP 2024: peak ~10.3 billion around 2084 (mid-2080s), then slight decline",
+        "Earlier revisions placed the peak later in the century and higher"
+      ],
+      "resolution": "Cite the UN WPP 2024 figure with its year and describe it as a projection, not a certainty; note that projections are revised as fertility data change."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic boilerplate ('Population is a foundational concept... a simple way to apply it') with no demographic content, definitions, or figures.",
+    "Draft vocabulary defined 'Population' circularly as 'A foundational Human Geography concept covered in this lesson.'"
+  ],
+  "correctionsNeeded": [
+    "Replaced all boilerplate with substantive demographic content: CBR, CDR, RNI, TFR, replacement level, world total, and age structure.",
+    "Added dated, attributed figures (UN 8 billion on 15 Nov 2022; ~8.2 billion 2024; peak ~10.3 billion ~2084; TFR ~2.3 in 2024; growth under 1%).",
+    "Kept ownership boundaries: named population-distribution, demographic-transition, and migration without teaching their content."
+  ],
+  "rightsIssues": [
+    "Our World in Data content is CC BY 4.0; facts synthesized and prose written original; charts described, not reproduced.",
+    "UN and U.S. Census materials used as authoritative references; figures attributed with year; no prose copied."
+  ],
+  "sourceRecords": [
+    {
+      "id": "un-wpp-2024-summary",
+      "title": "World Population Prospects 2024: Summary of Results",
+      "provider": "United Nations Department of Economic and Social Affairs, Population Division",
+      "url": "https://population.un.org/wpp/assets/Files/WPP2024_Summary-of-Results.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Authoritative UN projections. Supports world population ~8.2 billion in 2024, projected peak ~10.3 billion around the mid-2080s (2084), global TFR ~2.3 in 2024 down from over 5 in the 1960s, population aging, and one in four people living in a country whose population had already peaked. Figures cross-checked against the UN Global Issues page and OWID's 2024 revision analysis; used as reference only, prose written original."
+    },
+    {
+      "id": "un-global-issues-population",
+      "title": "Global Issues: Population",
+      "provider": "United Nations",
+      "url": "https://www.un.org/en/global-issues/population",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Supports that the world's population reached 8 billion on 15 November 2022; that it took 12 years to go from 7 to 8 billion and is projected to take ~15 years (to 2037) to reach 9 billion; peak ~10.3 billion by the mid-2080s; global fertility ~2.3 in 2024. Used to date the 8-billion milestone precisely."
+    },
+    {
+      "id": "owid-population-growth",
+      "title": "Population Growth",
+      "provider": "Our World in Data",
+      "url": "https://ourworldindata.org/population-growth",
+      "sourceType": "reference",
+      "usage": "ATTRIBUTION_REQUIRED",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "CC BY 4.0. Supports definitions of crude birth/death rate and natural increase, the ~2.1 replacement-level TFR, and that global population growth peaked in the 1960s at over 2% per year (~2.3% around 1963) and has fallen to under 1% (~0.9% in 2023). Facts synthesized; charts described, not reproduced."
+    },
+    {
+      "id": "owid-un-population-2024-revision",
+      "title": "Peak global population and other key findings from the 2024 UN World Population Prospects",
+      "provider": "Our World in Data",
+      "url": "https://ourworldindata.org/un-population-2024-revision",
+      "sourceType": "reference",
+      "usage": "ATTRIBUTION_REQUIRED",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "CC BY 4.0. Independent analysis of UN WPP 2024. Supports the projected peak of just under 10.3 billion around 2084, the global fertility rate of 2.3 (halved from over 5 since the 1960s), and China's fertility falling to about 1.01. Used to corroborate the UN summary figures."
+    },
+    {
+      "id": "census-population-topics",
+      "title": "Population Topics (Population Estimates and Demographic Concepts)",
+      "provider": "U.S. Census Bureau",
+      "url": "https://www.census.gov/topics/population.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Authoritative U.S. demographic hub identifying births, deaths, and migration as the components of population change and covering age/sex composition, fertility, and population estimates. Used as a reference anchor for the standard demographic definitions (CBR, CDR, natural increase, age structure) and for U.S. context; no prose copied."
+    }
+  ]
+}

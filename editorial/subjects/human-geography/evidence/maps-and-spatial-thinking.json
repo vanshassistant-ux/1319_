@@ -1,0 +1,181 @@
+{
+  "topicId": "human-geography:foundations:maps-and-spatial-thinking",
+  "subjectId": "human-geography",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "What a map is and its essential elements (title, scale, legend/symbols, orientation/compass, projection)",
+      "Map scale: representative fraction, large scale vs small scale, and what each shows",
+      "Map projections and the unavoidable distortion of flattening a globe (conformal/equal-area/equidistant; Mercator preserves shape/angle but distorts area)",
+      "Reference maps vs thematic maps, including choropleth maps",
+      "The modern geospatial toolkit: GIS, GPS, and remote sensing (brief definitions)",
+      "Spatial thinking: reasoning about pattern, distance, distribution, and scale"
+    ],
+    "supporting": [
+      "Representative fraction, graphic (bar) scale, and verbal scale as equivalent statements",
+      "USGS 1:24,000 7.5-minute quadrangle standard topographic map",
+      "Developable surfaces (cylinder, cone, plane) and tangency as a way to picture projection",
+      "Extent vs resolution as a mapping trade-off"
+    ],
+    "outOfScope": [
+      "The overall definition and history of human geography as a discipline (owned by what-is-human-geography)",
+      "Regional geography and how regions are defined (owned by regional-geography)",
+      "Political mapping of borders, sovereignty, and disputed territories (owned by political-geography and borders)",
+      "Detailed cartographic mathematics of specific projection formulas"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A map is a symbolic representation of selected characteristics of a place, usually drawn on a flat surface; cartography is the art and science of making maps.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["natgeo-education-map"],
+      "status": "supported"
+    },
+    {
+      "claim": "Map scale is the relationship between distance on the map and distance on the ground, and is commonly given as a representative fraction such as 1:10,000, meaning one unit on the map represents 10,000 of the same units on the ground.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["usgs-map-scales-fs-015-02", "umn-mapping-scale-projections"],
+      "status": "supported"
+    },
+    {
+      "claim": "The larger the second number in the ratio, the smaller the scale of the map; large-scale maps show more detail over less ground, while small-scale maps show less detail over more ground.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["usgs-map-scales-fs-015-02", "umn-mapping-scale-projections"],
+      "status": "supported"
+    },
+    {
+      "claim": "The scale used for most U.S. topographic mapping is 1:24,000; USGS maps at this scale cover 7.5 minutes of latitude by 7.5 minutes of longitude and are called 7.5-minute quadrangle maps. At 1:63,360, one inch on the map represents one mile on the ground.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["usgs-map-scales-fs-015-02"],
+      "status": "supported"
+    },
+    {
+      "claim": "A map projection transforms coordinates from the roughly spherical Earth onto a flat plane, and every projection must distort features because flattening introduces shearing, tearing, and compression; no projection can preserve shape, area, and distance all at once.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["umn-mapping-scale-projections"],
+      "status": "supported"
+    },
+    {
+      "claim": "Conformal projections such as Mercator preserve local shape and angle but strongly distort area, exaggerating landmasses toward the poles; Greenland is only about 7 percent the land area of Africa yet appears about as large on a Mercator map.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["umn-mapping-scale-projections"],
+      "status": "supported"
+    },
+    {
+      "claim": "Equal-area projections (for example Gall-Peters) keep the relative sizes of areas true while distorting shape, which makes them preferable for thematic mapping of density and other quantities being compared across areas.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["umn-mapping-scale-projections"],
+      "status": "supported"
+    },
+    {
+      "claim": "A geographic information system (GIS) is a computer system that captures, stores, analyzes, and displays data referenced to positions on Earth's surface.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["usgs-gis-faq"],
+      "status": "supported"
+    },
+    {
+      "claim": "Remote sensing is the science of observing something from a distance; sensors on satellites such as Landsat measure reflected light and other electromagnetic energy from Earth's surface to track land, water, vegetation, and urban change over time.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["usgs-eros-remote-sensing"],
+      "status": "supported"
+    },
+    {
+      "claim": "Essential elements that let a reader interpret a map include a title, a scale, a legend or key that explains the symbols and colors, an orientation indicator such as a compass rose, and the map's projection.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["natgeo-education-map", "usgs-map-scales-fs-015-02"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Exact numeric cutoffs for 'large scale' vs 'small scale'",
+      "positions": [
+        "Some sources give rule-of-thumb thresholds (e.g., large scale as 1:50,000 or larger, small scale as smaller than 1:250,000)",
+        "The USGS fact sheet and the OER treat large vs small as a relative comparison rather than fixed thresholds"
+      ],
+      "resolution": "The lesson teaches large vs small as a relative comparison (a larger representative fraction = larger scale = more detail, less ground) and avoids presenting any single hard numeric cutoff as universal."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic boilerplate ('Maps And Spatial Thinking is a foundational concept... its meaning, its context, and a simple way to apply it') with no substantive geographic content and no sources; nothing in it was usable."
+  ],
+  "correctionsNeeded": [
+    "Replaced the placeholder definition with a substantive treatment of map elements, scale, projection, map types, and the geospatial toolkit.",
+    "Corrected the circular vocabulary (e.g., 'Maps And Spatial Thinking: A foundational Human Geography concept covered in this lesson') with non-circular, source-verified definitions.",
+    "Added the counterintuitive but correct rule that a larger denominator means a smaller scale."
+  ],
+  "rightsIssues": [
+    "USGS materials are U.S. government works and are in the public domain, but facts were synthesized and prose written originally rather than reproduced.",
+    "'Mapping, Society, and Technology' is an openly licensed OER (Creative Commons, NonCommercial); used as a reference for facts only, with original prose written here, so no adapted passages are reproduced.",
+    "National Geographic Education content is treated as REFERENCE_ONLY; definitions were verified and restated in original wording."
+  ],
+  "sourceRecords": [
+    {
+      "id": "usgs-map-scales-fs-015-02",
+      "title": "Map Scales (Fact Sheet 015-02)",
+      "provider": "U.S. Geological Survey",
+      "url": "https://pubs.usgs.gov/fs/2002/0015/report.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "USGS fact sheet (February 2002). Read the PDF directly. Source for: scale as the relationship between map and ground distance; representative fraction (1:10,000, 1:63,360 = 1 inch to 1 mile); 'the larger the number, the smaller the scale'; large-scale maps show more detail over less ground; the 1:24,000 7.5-minute quadrangle standard. U.S. government work, public domain; facts synthesized, prose original."
+    },
+    {
+      "id": "umn-mapping-scale-projections",
+      "title": "Mapping, Society, and Technology, Chapter 3: Scale and Projections",
+      "provider": "University of Minnesota Libraries Publishing (Manson, Matson, Kernik, et al.)",
+      "url": "https://open.lib.umn.edu/mapping/chapter/3-scale-and-projections/",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "Creative Commons Attribution-NonCommercial (CC BY-NC)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "Open geography OER. Read the HTML chapter directly (via browser user-agent). Source for: representative/graphic/verbal scale; large vs small scale as relative; extent vs resolution; coordinates and the graticule; projection mechanics (developable surfaces cylinder/cone/plane, tangency, shearing/tearing/compression); conformal projections preserve shape/angle but distort area (Mercator; Greenland ~7% of Africa's area yet looks as large); equal-area projections (Gall-Peters) keep area true, good for thematic density maps; equidistant projections preserve distance along specified lines. Openly licensed but NonCommercial; used REFERENCE_ONLY with original prose."
+    },
+    {
+      "id": "usgs-gis-faq",
+      "title": "What is a geographic information system (GIS)?",
+      "provider": "U.S. Geological Survey",
+      "url": "https://www.usgs.gov/faqs/what-a-geographic-information-system-gis",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "USGS FAQ. Source for the definition of GIS as a computer system that captures, stores, analyzes, and displays geographically referenced data (data attached to a unique location on Earth's surface). U.S. government work, public domain; definition restated in original wording."
+    },
+    {
+      "id": "usgs-eros-remote-sensing",
+      "title": "Introduction to Remote Sensing",
+      "provider": "U.S. Geological Survey (EROS Center)",
+      "url": "https://eros.usgs.gov/earthshots/introduction-remote-sensing",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-19",
+      "notes": "USGS EROS explainer. Source for: remote sensing = the science of observing something from a distance; satellite sensors (Landsat) measure reflected light/electromagnetic energy from Earth's surface, both visible and invisible (infrared), to track land, water, vegetation, and urban change over time. Public domain; facts restated in original wording."
+    },
+    {
+      "id": "natgeo-education-map",
+      "title": "Map (encyclopedic entry)",
+      "provider": "National Geographic Education",
+      "url": "https://education.nationalgeographic.org/resource/map/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "National Geographic Education resource. Source for: a map is a symbolic representation of selected characteristics of a place, usually drawn on a flat surface; cartography is the art and science of making maps; essential map elements include scale, symbols, legend/key, orientation, title, and sources. Rights unknown for reuse, so treated REFERENCE_ONLY; definitions verified and restated in original wording, no prose reproduced."
+    }
+  ]
+}
