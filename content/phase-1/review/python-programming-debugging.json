@@ -1,0 +1,283 @@
+{
+  "id": "python-programming:foundations:debugging",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "debugging",
+  "title": "Debugging",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "python-programming",
+    "foundations",
+    "debugging",
+    "tracebacks"
+  ],
+  "in30Seconds": "Debugging is the deliberate process of finding why a program does not behave as intended, then changing and checking one thing at a time. Python helps by reporting syntax errors before code runs and by showing a traceback for an unhandled runtime exception. A program can also run without crashing yet calculate the wrong result; that is a logic error, and it needs evidence such as a small example or an inspected intermediate value.",
+  "whyItMatters": "Debugging turns a vague report—“it does not work”—into a checkable question. In coursework, it helps you explain a failure with the code path and values that produced it instead of guessing at a fix. In practical programs, a short reproducible case and a careful traceback can reveal whether the problem is invalid input, a mistaken assumption, or control flow that never reaches the intended line. The same habits support later testing, but debugging is investigation rather than proof that all cases work.",
+  "learningObjectives": [
+    "Distinguish syntax, runtime, and logic errors in Python.",
+    "Read the essential parts of an unhandled-exception traceback.",
+    "Apply a repeatable debugging loop to a small program.",
+    "Use print-based inspection to check an intermediate value.",
+    "Explain when a breakpoint debugger can provide more information than another print statement."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Classify the observed failure before choosing a tool",
+      "body": "Debugging begins with an observation, not a tool. If Python cannot parse the program, it reports a syntax error and identifies a location in the source. For example, `if True print(\"hello\")` cannot be compiled because the conditional header lacks its required colon. That error is different from a runtime exception: `1 / 0` is valid Python syntax, but executing it raises `ZeroDivisionError`. The program began running and encountered an operation it could not complete.\n\nA third category is often called a logic or semantic error. The program executes, but its output does not meet the program's intended rule. A function meant to compute an average might accidentally return the sum. Python cannot infer that the programmer wanted a different calculation, so no traceback is guaranteed. The debugging evidence must instead compare an expected result with the actual result and inspect the steps between them. Keep this classification practical: a single defect can expose more than one symptom, but naming the first observable kind of problem helps choose the next check."
+    },
+    {
+      "heading": "Treat a traceback as a route through the failing call",
+      "body": "When an exception is unhandled, Python prints a traceback. Read it from the bottom first: the final line names the exception type and usually supplies its message. Then move upward through the listed calls to see how execution reached that line. A file name and line number identify source locations; they are clues to inspect, not a substitute for understanding the values and assumptions at that point.\n\nSuppose a function divides a total by `len(values)`. Calling it with an empty list produces `ZeroDivisionError: division by zero`. The immediate expression failed, but the useful debugging question is also why an empty list was allowed to reach the function. Check the call site, the input, and the function's contract. Do not respond by broadly hiding the exception; designing `try`/`except` behavior is the separate Exceptions lesson. Here, use the traceback to form a specific hypothesis, then make the smallest safe observation that could confirm or reject it."
+    },
+    {
+      "heading": "Use a controlled investigation loop",
+      "body": "A reliable loop is: reproduce the behavior, state one hypothesis, gather one relevant observation, make a focused change, and run the same case again. Reproduction matters because a one-off symptom is hard to compare after a change. If the full program is noisy, reduce it to the smallest program and input that still displays the behavior. Reduction is not merely shortening code; it preserves the behavior you are trying to explain while removing unrelated paths. Keep a record of the exact input, command, and observed output, because an investigation is much harder to repeat when its starting conditions are guessed later. A written observation is useful only when it is specific enough that someone else could check it.\n\nFor a small program, an intentional `print()` can expose an intermediate value, a branch decision, or the size of a collection. Print labels as well as values so output remains interpretable: `print(f\"count={len(values)} total={total}\")`. Remove or replace temporary inspection after the question is answered, since debugging output can obscure normal output. For a failure involving repeated calls or nested functions, `pdb` is Python's standard-library debugger. It can pause at a breakpoint, step through source lines, inspect stack frames, list source, and evaluate expressions in the selected frame. That makes it useful when another print statement would not reveal which call or frame contains the unexpected state.\n\nA fix is not finished when an error message disappears. Re-run the original failing case and at least one nearby case that should still work. If changing a denominator check makes the empty-list case clear but breaks ordinary lists, the investigation has uncovered a new defect rather than completed the old one. This lesson focuses on diagnosis; systematic test-suite design belongs to Basic Testing."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "debugging",
+      "definition": "A deliberate investigation of why a program's observed behavior differs from the intended behavior."
+    },
+    {
+      "term": "syntax error",
+      "definition": "A problem in code structure that Python detects while parsing the source before normal execution."
+    },
+    {
+      "term": "runtime exception",
+      "definition": "An event during execution that interrupts normal control flow unless code handles it."
+    },
+    {
+      "term": "logic error",
+      "definition": "A defect in which code runs but produces behavior or a result that violates its intended rule."
+    },
+    {
+      "term": "traceback",
+      "definition": "Python's report of the call sequence and source locations associated with an unhandled exception."
+    },
+    {
+      "term": "reproduce",
+      "definition": "Run a defined case again so an observed behavior can be compared before and after a change."
+    },
+    {
+      "term": "breakpoint",
+      "definition": "A chosen pause point where a debugger stops execution so program state can be inspected."
+    },
+    {
+      "term": "stack frame",
+      "definition": "The execution context for one active function call, including its local names."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Debugging is like being a careful investigator for a program. First, make sure you can see the same problem again. Then ask one small question, such as “What number reached this division?” A traceback is the program's trail of footprints: it shows where it was called and the last place where it could not continue. A print statement is like writing down what you find at one checkpoint.\n\nSometimes the program follows every instruction but reaches the wrong answer. That is not necessarily a crash; it is like following a recipe that says to add the ingredients but forgets to divide them into servings. Check the intermediate steps against a tiny case whose answer you already know.",
+    "analogy": "A debugger is like pausing a board game at a particular turn to see each player's cards and the moves that led there.",
+    "analogyLimits": "Programs do not have players or physical cards. The analogy helps with pausing and inspecting state, but it does not explain Python syntax, tracebacks, or the rules of a stack frame."
+  },
+  "workedExample": "This example was executed with `python3`. The first call succeeds: `4 + 6 + 8` divided by `3` is `6.0`. The second call exposes a reproducible runtime failure—an empty list makes the denominator zero. The traceback points to the division expression, but the diagnostic print also shows the state that led there. The focused correction is to decide and document how the function should handle an empty list; it is not to silently ignore every error.\n\n```python\ndef mean(values):\n    total = sum(values)\n    print(f\"count={len(values)} total={total}\")\n    return total / len(values)\n\nprint(mean([4, 6, 8]))\nprint(mean([]))\n# count=3 total=18\n# 6.0\n# count=0 total=0\n# ZeroDivisionError: division by zero\n```\n\nFor the empty case, the printed `count=0` supports the hypothesis suggested by the final traceback line. After choosing a contract—for example, raising a clear `ValueError` before division—rerun both `[4, 6, 8]` and `[]` to confirm the change did not alter the ordinary case.",
+  "commonMistakes": [
+    {
+      "mistake": "Changing several lines before rerunning the failing case.",
+      "correction": "Make one focused change so the next run can provide evidence about that change."
+    },
+    {
+      "mistake": "Reading only the first line of a traceback.",
+      "correction": "Start with the final exception type and message, then trace upward to the relevant calls."
+    },
+    {
+      "mistake": "Assuming no crash means no defect.",
+      "correction": "Compare output with a known expected result to detect a logic error."
+    },
+    {
+      "mistake": "Leaving unlabelled debug prints throughout a program.",
+      "correction": "Use temporary, labelled observations and remove or replace them after the investigation."
+    },
+    {
+      "mistake": "Treating a broad exception handler as a debugging fix.",
+      "correction": "Diagnose the cause first; handle expected exceptions deliberately in the separate exception-design work."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Syntax error",
+      "b": "Runtime exception",
+      "distinction": "A syntax error prevents normal execution from beginning; a runtime exception occurs while valid code is executing."
+    },
+    {
+      "a": "Runtime exception",
+      "b": "Logic error",
+      "distinction": "An exception interrupts execution; a logic error can complete normally while producing an unintended result."
+    },
+    {
+      "a": "print-based inspection",
+      "b": "pdb inspection",
+      "distinction": "A print records a selected value when execution reaches it; pdb can pause, step, inspect frames, and evaluate expressions interactively."
+    }
+  ],
+  "keyTakeaway": "Debug methodically: reproduce the behavior, use the error category or traceback to form one hypothesis, inspect the relevant state, make a focused change, and rerun the same case. A quiet program still needs its result checked.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:debugging:1",
+      "prompt": "Which situation is a Python syntax error?",
+      "options": [
+        "A calculation returns 14 when the intended answer was 12.",
+        "A list is unexpectedly empty at a function call.",
+        "Python rejects `if ready print(\"go\")` before normal execution.",
+        "Valid code divides by zero while it runs."
+      ],
+      "correctIndex": 2,
+      "explanation": "The missing colon makes the conditional invalid syntax. A wrong result is a logic error, an empty list is state to investigate, and division by zero is a runtime exception.",
+      "difficulty": "recall",
+      "skill": "classify an observed failure",
+      "sourceIds": [
+        "python-tutorial-errors",
+        "think-python-2e-debugging"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:debugging:2",
+      "prompt": "An unhandled traceback ends with `KeyError: 'course'`. What is the best first interpretation?",
+      "options": [
+        "The final failure was an attempt to access a missing key named `course`; inspect the relevant mapping and call path.",
+        "Python has proven every earlier line is correct.",
+        "The program has a syntax error in its first file.",
+        "The key must be converted to an integer."
+      ],
+      "correctIndex": 0,
+      "explanation": "The final traceback line identifies the exception and message, providing a specific hypothesis to inspect. It does not prove the rest of the program correct or prescribe conversion.",
+      "difficulty": "understanding",
+      "skill": "interpret the final line of a traceback",
+      "sourceIds": [
+        "python-docs-errors"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:debugging:3",
+      "prompt": "A function returns the sum of three scores when its stated job is to return their average. It runs without an exception. What kind of defect is this?",
+      "options": [
+        "A syntax error",
+        "A logic error",
+        "A breakpoint",
+        "A stack frame"
+      ],
+      "correctIndex": 1,
+      "explanation": "The code executes but violates its intended calculation, which is a logic error. A breakpoint and a stack frame are debugging concepts, not failure categories.",
+      "difficulty": "application",
+      "skill": "identify a logic error from behavior",
+      "sourceIds": [
+        "think-python-2e-debugging"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:debugging:4",
+      "prompt": "A nested program calls the same helper many times, and you need to inspect the local names in the particular call that fails. Which tool capability is most useful?",
+      "options": [
+        "Changing all exceptions to `except: pass`",
+        "Adding an unrelated import",
+        "Deleting the traceback",
+        "Pausing in pdb and inspecting the selected stack frame"
+      ],
+      "correctIndex": 3,
+      "explanation": "pdb can pause execution and inspect stack frames, making the state of a particular call available. The other choices hide or do not investigate the defect.",
+      "difficulty": "analysis",
+      "skill": "select an appropriate debugging tool",
+      "sourceIds": [
+        "python-docs-pdb"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:debugging:5",
+      "prompt": "After reproducing a failure, which next step best supports a controlled debugging investigation?",
+      "options": [
+        "Rewrite several functions at once.",
+        "State one hypothesis and inspect a value or branch that could confirm or reject it.",
+        "Assume the most recent edit is the cause without running code.",
+        "Ignore the original input and test only a different feature."
+      ],
+      "correctIndex": 1,
+      "explanation": "One hypothesis plus one relevant observation creates evidence for the next focused change. Broad rewrites, assumptions, and abandoning the failing case make comparison harder.",
+      "difficulty": "application",
+      "skill": "apply a debugging loop",
+      "sourceIds": [
+        "think-python-2e-debugging"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "python-programming:foundations:debugging:1",
+      "prompt": "Which situation is a Python syntax error?",
+      "options": [
+        "A calculation returns 14 when the intended answer was 12.",
+        "A list is unexpectedly empty at a function call.",
+        "Python rejects `if ready print(\"go\")` before normal execution.",
+        "Valid code divides by zero while it runs."
+      ],
+      "correctIndex": 2,
+      "explanation": "The missing colon makes the conditional invalid syntax. A wrong result is a logic error, an empty list is state to investigate, and division by zero is a runtime exception.",
+      "difficulty": "recall",
+      "skill": "classify an observed failure",
+      "sourceIds": [
+        "python-tutorial-errors",
+        "think-python-2e-debugging"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:debugging:2",
+      "prompt": "An unhandled traceback ends with `KeyError: 'course'`. What is the best first interpretation?",
+      "options": [
+        "The final failure was an attempt to access a missing key named `course`; inspect the relevant mapping and call path.",
+        "Python has proven every earlier line is correct.",
+        "The program has a syntax error in its first file.",
+        "The key must be converted to an integer."
+      ],
+      "correctIndex": 0,
+      "explanation": "The final traceback line identifies the exception and message, providing a specific hypothesis to inspect. It does not prove the rest of the program correct or prescribe conversion.",
+      "difficulty": "understanding",
+      "skill": "interpret the final line of a traceback",
+      "sourceIds": [
+        "python-docs-errors"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:debugging:3",
+      "prompt": "A function returns the sum of three scores when its stated job is to return their average. It runs without an exception. What kind of defect is this?",
+      "options": [
+        "A syntax error",
+        "A logic error",
+        "A breakpoint",
+        "A stack frame"
+      ],
+      "correctIndex": 1,
+      "explanation": "The code executes but violates its intended calculation, which is a logic error. A breakpoint and a stack frame are debugging concepts, not failure categories.",
+      "difficulty": "application",
+      "skill": "identify a logic error from behavior",
+      "sourceIds": [
+        "think-python-2e-debugging"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "python-programming:foundations:python-syntax",
+    "python-programming:foundations:exceptions",
+    "python-programming:foundations:basic-testing",
+    "python-programming:foundations:functions",
+    "python-programming:foundations:input-and-output"
+  ],
+  "sources": [
+    "python-tutorial-errors",
+    "python-docs-errors",
+    "python-docs-pdb",
+    "think-python-2e-debugging"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only documentation and textbook sources; no source prose adapted.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Original instructional synthesis based on official Python documentation and a verified open-textbook debugging appendix; code and stated outputs executed with python3."
+  },
+  "contentHash": "063f70fd5d2bdb0e",
+  "status": "source-verified",
+  "public": false
+}

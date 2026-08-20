@@ -1,0 +1,229 @@
+{
+  "id": "python-programming:foundations:introductory-data-analysis",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "introductory-data-analysis",
+  "title": "Introductory Data Analysis",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 10,
+  "tags": [
+    "python",
+    "data analysis",
+    "csv",
+    "statistics",
+    "reproducibility"
+  ],
+  "in30Seconds": "Introductory data analysis turns recorded values into a careful, checkable description. In Python, a small analysis can read tabular rows, inspect and clean values using stated rules, calculate summaries such as a mean or median, and report what the numbers do—and do not—show. Python's standard library is enough for a transparent first example. A numerical pattern can be useful without proving why it happened.",
+  "whyItMatters": "Data appears in laboratory logs, course surveys, business records, and public datasets. The important first skill is not a particular library: it is making choices visible. A reader should be able to see which rows were used, how blanks or invalid values were handled, and how a reported summary was computed. That discipline makes an analysis easier to check, revise, and share. It also prevents a common overreach: treating a descriptive association as proof of cause.",
+  "learningObjectives": [
+    "Define a small reproducible data-analysis workflow.",
+    "Distinguish raw values from cleaned analysis values.",
+    "Compute and interpret mean and median with the standard library.",
+    "Apply an explicit missing-value rule to a small table.",
+    "Explain why an observed association alone does not establish causation."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Start with a question and a data contract",
+      "body": "Introductory analysis begins before a calculation. State a narrow question, identify what one row represents, and name the expected fields and units. For example, a study log might have one row per week and a minutes field measured in whole minutes. A CSV file is a common way to exchange such a table. Python's csv module can read tabular data, but CSV is a family of conventions rather than a guarantee that every file uses identical quoting or delimiters. Inspect a small input instead of assuming it is clean. Ask whether headers are present, whether a field that should be numeric contains text, and whether repeated or missing rows have a defined meaning. The goal is not to make every dataset perfect. It is to establish what the program will accept and what it will report as excluded.\n\nThis lesson deliberately uses only the standard library. That keeps each step visible and removes any requirement to install a third-party package. Larger projects may choose specialized tools, but the reasoning remains: define the unit, inspect the values, state rules, and preserve the path from input to output."
+    },
+    {
+      "heading": "Clean by applying recorded rules",
+      "body": "Cleaning is a transformation from raw entries to analysis-ready values. It is not permission to quietly change inconvenient observations. Suppose the minutes column contains '30', '45', an empty string, and '90'. If the question concerns recorded numeric minutes, an explicit rule can be: strip surrounding whitespace; exclude a blank value; convert the remaining strings with int; and count the usable records. A different question might require treating a blank as zero, but that is a substantive choice and should be justified rather than hidden in code. Values that cannot be converted should likewise be reported, corrected from a source record when possible, or excluded under a stated rule.\n\nKeep raw data separate from the cleaned list. That makes it possible to check whether the rule was applied as intended and to rerun the analysis if the rule changes. For a small example, printing the cleaned values and their count is a useful audit trail. Do not silently remove rows and then present the result as though it summarizes every original row."
+    },
+    {
+      "heading": "Describe, then limit the conclusion",
+      "body": "For numeric data, the statistics module supplies common descriptive functions. mean(values) calculates the arithmetic mean. median(values) gives a middle value after ordering; with an even number of values it averages the two central values. These describe center, but neither replaces looking at the individual values, the count, and the spread. With [30, 45, 90], the mean is 55 while the median is 45. The larger 90-minute value pulls the mean upward, so reporting both reveals more than a single number. min and max add a simple range check.\n\nA reproducible result includes the input or its stable location, the cleaning rule, executable code, and the output with a date or version when relevant. Reproducibility does not promise that the conclusion is universally true; it lets another person rerun the same stated procedure. Finally, a pattern is not a causal explanation. If weeks with more recorded study minutes also have higher scores, many possibilities remain: prior preparation, assignment difficulty, who chose to record, or chance. The records can support a careful description—'these values varied together in this small dataset'—but establishing cause requires a design and evidence beyond that pattern."
+    },
+    {
+      "heading": "A compact standard-library workflow",
+      "body": "A practical sequence is: preserve the raw rows; validate or clean under a written rule; calculate summaries only from the resulting values; print enough intermediate information to audit the result; and write a conclusion whose strength matches the data. This workflow is intentionally modest. It does not estimate a population parameter, prove a hypothesis, or decide whether a program caused an outcome. Its value is that it makes simple claims accurate and reviewable. When the dataset or question grows, the same habits—documented assumptions, visible transformations, and limited conclusions—scale better than a one-line calculation with no context."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "raw data",
+      "definition": "Values as received before analysis transformations are applied."
+    },
+    {
+      "term": "cleaning rule",
+      "definition": "A stated procedure for handling formatting, missing, invalid, or duplicate entries."
+    },
+    {
+      "term": "CSV",
+      "definition": "A text format commonly used to represent table rows and fields, with conventions that may vary."
+    },
+    {
+      "term": "mean",
+      "definition": "The arithmetic average: the sum of numeric values divided by their count."
+    },
+    {
+      "term": "median",
+      "definition": "A central value after ordering data; for an even count, the average of the two middle values."
+    },
+    {
+      "term": "reproducibility",
+      "definition": "The ability for someone to rerun a documented procedure using the specified inputs and obtain the stated result."
+    },
+    {
+      "term": "association",
+      "definition": "A pattern in which measured variables vary together, without by itself identifying a cause."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Think of a small dataset as a box of labeled notes. Before counting them, check that each note belongs in the box and that its label can be read. Write down your sorting rule, rather than tossing out notes silently. Then you can calculate a typical number and show the notes you counted. If someone else follows the same rule with the same notes, they should get the same answer.\n\nEven then, be careful about stories. If more ice-cream sales and more sunburns appear in the same weeks, the numbers may move together because sunny weather affects both. The two columns did not prove that ice cream caused sunburn. Numbers can describe a pattern; explaining why it exists needs more evidence.",
+    "analogy": "It is like following a recipe while keeping the ingredient list and each measurement on the counter.",
+    "analogyLimits": "A recipe is designed to cause a dish, while a dataset may only record events. Repeating calculations does not by itself reveal a cause."
+  },
+  "workedExample": "Consider four rows of weekly study minutes: '30', '45', '', and '90'. The rule is to strip whitespace, exclude blanks rather than convert them to zero, and convert the remaining entries to integers. The cleaned values are [30, 45, 90], so the usable count is 3. Running `from statistics import mean, median; values = [30, 45, 90]; print(len(values), mean(values), median(values), min(values), max(values))` prints `3 55 45 30 90` in Python 3. The mean is 55 minutes and the median is 45 minutes. Report the excluded blank and do not claim that the figures show study time caused any grade outcome.",
+  "commonMistakes": [
+    {
+      "mistake": "Dropping blank or invalid rows without saying so.",
+      "correction": "State the rule and report the resulting usable count."
+    },
+    {
+      "mistake": "Calling a mean the only typical value.",
+      "correction": "Compare it with the median and inspect the values, especially when one is large."
+    },
+    {
+      "mistake": "Treating a CSV field as a number automatically.",
+      "correction": "Validate and explicitly convert text fields before numerical analysis."
+    },
+    {
+      "mistake": "Saying one variable caused another because they vary together.",
+      "correction": "Describe the association and state that causal evidence requires more than the pattern."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "mean",
+      "b": "median",
+      "distinction": "Mean uses every value in an arithmetic average; median is based on ordered central position and may respond differently to an extreme value."
+    },
+    {
+      "a": "cleaning",
+      "b": "silently deleting",
+      "distinction": "Cleaning applies a stated, reviewable rule; silent deletion hides how the analysis set changed."
+    },
+    {
+      "a": "association",
+      "b": "causation",
+      "distinction": "Association describes a measured pattern; causation claims that changing one factor produces a change in another."
+    }
+  ],
+  "keyTakeaway": "A trustworthy first analysis makes its input, cleaning rule, code, summaries, and limits visible. Standard-library Python can describe a small dataset clearly, but a pattern alone is not causal proof.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:introductory-data-analysis:1",
+      "prompt": "What is the best reason to print the cleaned values and their count in a small analysis?",
+      "options": [
+        "It lets a reader check which values the summaries used.",
+        "It guarantees the data has no errors.",
+        "It proves the sample represents everyone.",
+        "It turns an association into causation."
+      ],
+      "correctIndex": 0,
+      "explanation": "Printing the cleaned set and count makes the transformation reviewable; it neither guarantees error-free data nor proves representativeness or cause.",
+      "difficulty": "recall",
+      "skill": "identify reproducibility information",
+      "sourceIds": [
+        "python-docs-csv-intro-data-analysis"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:introductory-data-analysis:2",
+      "prompt": "For the cleaned values [30, 45, 90], what does `median(values)` return?",
+      "options": [
+        "30",
+        "45",
+        "55",
+        "90"
+      ],
+      "correctIndex": 1,
+      "explanation": "After ordering, 45 is the middle value. 55 is the mean, while 30 and 90 are the minimum and maximum.",
+      "difficulty": "application",
+      "skill": "compute a median",
+      "sourceIds": [
+        "python-docs-statistics-intro-data-analysis"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:introductory-data-analysis:3",
+      "prompt": "A minutes field contains `''` in one row. Which practice is most reproducible?",
+      "options": [
+        "Always replace it with zero without recording it.",
+        "Delete the entire file.",
+        "State a rule—for example, exclude blanks—and report the usable count.",
+        "Convert every text field to 90."
+      ],
+      "correctIndex": 2,
+      "explanation": "A documented cleaning rule and usable count make the treatment checkable. The other choices are arbitrary or discard more than the stated problem requires.",
+      "difficulty": "application",
+      "skill": "apply a cleaning rule",
+      "sourceIds": [
+        "python-docs-csv-intro-data-analysis"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:introductory-data-analysis:4",
+      "prompt": "A small log shows that weeks with more recorded study minutes also had higher quiz scores. What conclusion is justified from that pattern alone?",
+      "options": [
+        "More minutes definitely caused higher scores.",
+        "Quiz scores caused students to record more minutes.",
+        "There is no information at all in the log.",
+        "The two measurements are associated in this log, but cause is not established."
+      ],
+      "correctIndex": 3,
+      "explanation": "The pattern supports a description of association. It does not rule out other explanations or establish a causal direction.",
+      "difficulty": "analysis",
+      "skill": "separate association from causation",
+      "sourceIds": [
+        "openstax-introductory-statistics-correlation-causation"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:introductory-data-analysis:5",
+      "prompt": "Which standard-library module directly provides `mean()` and `median()`?",
+      "options": [
+        "statistics",
+        "csv",
+        "pathlib",
+        "random"
+      ],
+      "correctIndex": 0,
+      "explanation": "The statistics module provides these descriptive functions. csv handles CSV tabular I/O; pathlib handles paths; random generates pseudorandom selections.",
+      "difficulty": "recall",
+      "skill": "identify a standard-library module",
+      "sourceIds": [
+        "python-docs-statistics-intro-data-analysis"
+      ]
+    }
+  ],
+  "quickCheck": [
+    "What is the best reason to print the cleaned values and their count in a small analysis?",
+    "For the cleaned values [30, 45, 90], what does `median(values)` return?",
+    "A minutes field contains `''` in one row. Which practice is most reproducible?"
+  ],
+  "relatedTopics": [
+    "python-programming:foundations:lists",
+    "python-programming:foundations:dictionaries",
+    "python-programming:foundations:files",
+    "python-programming:foundations:reading-files",
+    "python-programming:foundations:include-small-executable-examples-throughout"
+  ],
+  "sources": [
+    "python-docs-csv-intro-data-analysis",
+    "python-docs-statistics-intro-data-analysis",
+    "openstax-introductory-statistics-correlation-causation"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only source use; no source prose adapted.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Original introductory workflow and executed Python 3 example based on documented standard-library behavior and a sourced causal-inference limitation."
+  },
+  "contentHash": "03d4ebcccfdfd3b0",
+  "status": "source-verified",
+  "public": false
+}

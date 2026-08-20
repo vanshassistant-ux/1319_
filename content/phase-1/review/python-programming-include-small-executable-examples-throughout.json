@@ -1,0 +1,212 @@
+{
+  "id": "python-programming:foundations:include-small-executable-examples-throughout",
+  "subjectSlug": "python-programming",
+  "unitSlug": "foundations",
+  "slug": "include-small-executable-examples-throughout",
+  "title": "Small Executable Python Examples",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "python",
+    "examples",
+    "assertions",
+    "program-reading"
+  ],
+  "in30Seconds": "A small executable example is a short Python program or code fragment with a specific purpose and a checkable result. Rather than merely reading what code is supposed to do, run it, predict its output, and compare that prediction with what Python actually does. Keep the example focused: one idea, small inputs, and an observable result. A well-chosen example makes a rule concrete without pretending to cover every case.",
+  "whyItMatters": "Short programs make programming claims testable. In a course, they help you connect syntax and behavior; in later work, they help you isolate an assumption before it becomes part of a larger program. The useful habit is not copying snippets blindly. It is stating what the program should do, executing it in a known Python 3 environment, and looking closely when the observed result differs. That discipline supports clear explanations, reproducible bug reports, and careful changes.",
+  "learningObjectives": [
+    "Define a small executable Python example and its expected result.",
+    "Distinguish prediction, observed output, and an assertion.",
+    "Read a short program in execution order and predict its output.",
+    "Apply an assertion to check a stated condition in a focused example."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "A runnable example is evidence, not decoration",
+      "body": "An executable example is code that a reader can place in a Python 3 interpreter or a file and run. Its value comes from a narrow question and an observable result. For example, `print(7 + 3)` addresses one question: what value does this expression produce? It is stronger than a prose claim because another reader can repeat the observation. The Python tutorial presents the interactive interpreter as a place to enter expressions and see their values, while a script can make output explicit with `print()`. A small example should therefore identify its input or starting state, its operation, and what the reader should observe.\n\nSmall does not mean trivial or context-free. It means that irrelevant setup has been removed. If the point is comparison, use named values and one comparison; do not also introduce files, classes, user input, and a loop. This makes a surprising result easier to locate. It also makes the example portable: a reader can run it without needing data downloads, credentials, or a particular project. Version and environment still matter, so label the language as Python 3 and avoid claiming that one run proves behavior in every implementation or library version."
+    },
+    {
+      "heading": "Read, predict, run, and compare",
+      "body": "A disciplined reading pass starts with state. In `x = 7; y = 3`, the names `x` and `y` are bound to values. The language reference describes assignment as binding or rebinding names. Next, evaluate expressions using those values. `x + y` produces `10`, and `x > y` produces `True`. A `print(...)` call then displays a representation of its argument followed by a newline. Predicting these results before execution is useful because it exposes what you think the code means; running the example tests that prediction.\n\nComparison matters as much as execution. If the program prints a different value, first record the exact code and the exact output rather than rewriting the evidence from memory. Check the Python version, indentation, spelling, and whether a prior line changed a name. This lesson is about a controlled observation, not a general debugging workflow: one compact program makes it feasible to account for every line. An example can teach a rule, reveal a mistaken assumption, or document a behavior, but it should say which of those jobs it is doing.\n\nA useful record separates facts from interpretation. The code and output are the observation; the explanation is the reason you think they are connected. Include only details a reader needs to repeat the observation: the code, its Python version when relevant, and any input values. That separation lets another reader challenge or confirm the explanation without guessing what was actually run."
+    },
+    {
+      "heading": "Assertions state a condition that must hold",
+      "body": "Output is useful for a person; an assertion is a check built into code. Python's `assert condition` statement evaluates the condition. If it is true, execution continues. If it is false, Python raises `AssertionError`; an optional second expression supplies an error message. Thus `assert x + y == 10` is a concise executable claim about the current values of `x` and `y`. It does not print confirmation by itself, so a following `print(\"checked\")` can make successful completion visible.\n\nAssertions are appropriate when an example has a condition that should be true. They are not a substitute for validating untrusted external input or for a full testing strategy; Python documentation notes that assertions may be disabled with optimization. In a learning example, that limitation is worth naming because it prevents a reader from treating `assert` as a universal safety mechanism. Good examples pair a specific expected behavior with a modest conclusion: this code, run in this environment with these inputs, produced this result. They invite a reader to alter one value, rerun, and observe how the claim changes."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "executable example",
+      "definition": "A focused piece of code that can be run to observe behavior."
+    },
+    {
+      "term": "expected output",
+      "definition": "The result a reader predicts a program will display before running it."
+    },
+    {
+      "term": "observed output",
+      "definition": "The result actually displayed when a program executes."
+    },
+    {
+      "term": "assertion",
+      "definition": "A statement that checks whether a condition is true during execution."
+    },
+    {
+      "term": "AssertionError",
+      "definition": "The exception raised when an enabled Python assertion has a false condition."
+    },
+    {
+      "term": "reproducible",
+      "definition": "Able to be run again by another person using the stated code and conditions."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Think of a tiny Python example as a science experiment with only a few pieces. You write down what you expect, press run, and then look at what happened. Because the experiment is small, you can tell which line caused the result. An assertion is like putting a checkpoint in the experiment: it says, “this fact must be true here.” If it is not true, Python stops and tells you that the checkpoint failed.\n\nFor example, if two numbers are 7 and 3, you can expect their sum to be 10. The program can print 10 so you can see it, and it can assert that the sum equals 10 so the program checks it too. This is more dependable than simply saying “the addition works.”",
+    "analogy": "It is like checking one measuring cup of water with a marked line before cooking a whole recipe: the small check gives you evidence about one step.",
+    "analogyLimits": "Programs can depend on files, networks, versions, and many inputs, while a measuring cup is much simpler. A passing small example does not prove a whole application is correct."
+  },
+  "workedExample": "Run this Python 3 program exactly as shown:\n\n```python\nx = 7\ny = 3\nprint(x + y)\nprint(x > y)\nassert x + y == 10\nprint(\"checked\")\n```\n\nFirst predict the output: `10`, then `True`, then `checked`, each on its own line. Assignment gives `x` the value 7 and `y` the value 3. The first expression is 10; the comparison is true. The assertion therefore succeeds silently, allowing the final print to run. Change the assertion to `assert x + y == 11` and the final line will not run: Python raises `AssertionError` at the false assertion. This variation checks one claim without adding unrelated machinery.",
+  "commonMistakes": [
+    {
+      "mistake": "Calling code an example without running it.",
+      "correction": "State the expected result, execute the exact code, and record the observed result."
+    },
+    {
+      "mistake": "Putting several new ideas into one demonstration.",
+      "correction": "Use one main behavior and remove setup that does not help explain it."
+    },
+    {
+      "mistake": "Expecting a successful assert to print a message.",
+      "correction": "A passing assertion continues silently; use print separately when visible output is needed."
+    },
+    {
+      "mistake": "Using assert as the only validation for untrusted input.",
+      "correction": "Use assertions for internal assumptions in examples; design appropriate input handling separately."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "print()",
+      "b": "assert",
+      "distinction": "print displays a value for a reader; assert checks a condition and raises AssertionError if that condition is false."
+    },
+    {
+      "a": "expected output",
+      "b": "observed output",
+      "distinction": "Expected output is a prediction; observed output is the result of actually running the code."
+    }
+  ],
+  "keyTakeaway": "A small executable example turns a precise Python claim into something a reader can predict and run. Keep it focused, compare expectation with observation, and use assertions to check conditions that should hold.",
+  "questionBank": [
+    {
+      "id": "python-programming:foundations:include-small-executable-examples-throughout:1",
+      "prompt": "What happens when an enabled Python assertion has a false condition?",
+      "options": [
+        "Python silently changes the condition to True.",
+        "Python prints the condition and continues.",
+        "Python raises AssertionError.",
+        "Python converts the condition to a string."
+      ],
+      "correctIndex": 2,
+      "explanation": "A false enabled assert raises AssertionError; it does not repair, print, or stringify the condition.",
+      "difficulty": "recall",
+      "skill": "Identify assertion behavior",
+      "sourceIds": [
+        "python-reference-assignment-statements"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:include-small-executable-examples-throughout:2",
+      "prompt": "Why should a reader predict output before running a small example?",
+      "options": [
+        "It makes the program execute faster.",
+        "It reveals the reader's current interpretation, which execution can check.",
+        "It removes the need to run the code.",
+        "It guarantees every environment will behave identically."
+      ],
+      "correctIndex": 1,
+      "explanation": "Prediction exposes an interpretation; execution then compares it with observed behavior. It does not replace execution or guarantee all environments match.",
+      "difficulty": "understanding",
+      "skill": "Explain the predict-run-compare cycle",
+      "sourceIds": [
+        "python-tutorial-numbers"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:include-small-executable-examples-throughout:3",
+      "prompt": "Given `x = 7`, `y = 3`, and `assert x + y == 10`, what occurs at that assertion?",
+      "options": [
+        "It succeeds and execution continues.",
+        "It prints 10 automatically.",
+        "It raises AssertionError.",
+        "It changes y to 10."
+      ],
+      "correctIndex": 0,
+      "explanation": "7 + 3 equals 10, so the condition is true and the assertion completes silently. It neither prints nor changes a value.",
+      "difficulty": "application",
+      "skill": "Evaluate a small assertion",
+      "sourceIds": [
+        "python-tutorial-numbers",
+        "python-reference-assignment-statements"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:include-small-executable-examples-throughout:4",
+      "prompt": "Which revision best keeps an example focused on comparing two values?",
+      "options": [
+        "Add file reading, a class, and network requests.",
+        "Ask for user input and install a package first.",
+        "Add every related operator to the same script.",
+        "Keep two named values, one comparison, and a displayed result."
+      ],
+      "correctIndex": 3,
+      "explanation": "The focused revision isolates the comparison. The other choices add unrelated setup and make the behavior harder to account for.",
+      "difficulty": "analysis",
+      "skill": "Design a focused executable example",
+      "sourceIds": [
+        "python-tutorial-numbers"
+      ]
+    },
+    {
+      "id": "python-programming:foundations:include-small-executable-examples-throughout:5",
+      "prompt": "A program prints `10`, but the writer predicted `11`. What is the most useful next step?",
+      "options": [
+        "Rewrite the expected result to 10 without checking.",
+        "Record the exact code and output, then inspect the small example's values and operations.",
+        "Assume Python is unreliable and discard the example.",
+        "Add unrelated lines until it prints 11."
+      ],
+      "correctIndex": 1,
+      "explanation": "Preserving the evidence and inspecting the compact program supports a reliable comparison. The other actions hide or distort the mismatch.",
+      "difficulty": "application",
+      "skill": "Respond to an expectation-output mismatch",
+      "sourceIds": [
+        "python-tutorial-numbers"
+      ]
+    }
+  ],
+  "quickCheck": [
+    "What happens when an enabled Python assertion has a false condition?",
+    "Why should a reader predict output before running a small example?",
+    "Given `x = 7`, `y = 3`, and `assert x + y == 10`, what occurs at that assertion?"
+  ],
+  "relatedTopics": [
+    "python-programming:foundations:running-python-programs",
+    "python-programming:foundations:basic-testing",
+    "python-programming:foundations:debugging"
+  ],
+  "sources": [
+    "python-tutorial-numbers",
+    "python-reference-assignment-statements"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only official documentation; no source prose adapted.",
+    "researchedAt": "2026-08-19",
+    "transformation": "Original explanation and verified Python 3 example based on official documentation."
+  },
+  "contentHash": "ade57313af33ab49",
+  "status": "source-verified",
+  "public": false
+}
