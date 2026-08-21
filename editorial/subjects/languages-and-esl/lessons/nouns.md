@@ -98,7 +98,7 @@ Nouns name people, places, things, and ideas; they take regular or irregular plu
    - D. *child* and *children*
    - **Answer:** C. *River* is a general word for a waterway while *the Nile* is the name of one specific river, so the pair shows a common noun and its proper counterpart; the other options are singular and plural forms of the same noun.
 
-3. **Which sentence uses the possessive apostrophe correctly?**
+3. **Which sentence shows the possessive form with an apostrophe?**
    - A. The client's signed the contract.
    - B. The clients' needs are our priority.
    - C. The client signed the contracts'.

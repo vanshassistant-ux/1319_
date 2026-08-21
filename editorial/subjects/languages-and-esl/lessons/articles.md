@@ -84,7 +84,7 @@ Articles tell readers whether a noun is one of many, the specific one, or the wh
 
 ## Practice Question Bank
 
-1. **Which sentence uses *a* or *an* correctly?**
+1. **Which sentence chooses the correct article before the noun?**
    - A. She waited *an hour* for the bus.
    - B. He bought *an university* sweatshirt.
    - C. I need *a umbrella* for the rain.

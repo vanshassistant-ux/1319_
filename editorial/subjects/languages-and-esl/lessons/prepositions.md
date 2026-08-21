@@ -92,14 +92,14 @@ Prepositions are small relationship words with a big job: learn the *in*, *on*, 
    - D. It connects two clauses of equal grammatical weight.
    - **Answer:** A. A preposition links its object to the rest of the sentence, showing relationships such as place, time, or direction; naming is a noun's job, action belongs to verbs, and equal-weight connectors are coordinating conjunctions.
 
-2. **Which sentence uses the place preposition correctly?**
+2. **Which sentence fills the blank with the right preposition of place?**
    - A. The coffee mugs are in the top shelf of the cabinet.
    - B. We waited on the museum's main entrance for half an hour.
    - C. She left her phone on the kitchen counter.
    - D. The children swam on the hotel pool all morning.
    - **Answer:** C. A shelf is a surface, so the mugs belong on it, not in it; an entrance is treated as a point, so you wait at it; and a pool is an enclosed space, so swimmers are in it. Only the counter sentence is right, because a counter is a surface and *on* marks surfaces.
 
-3. **Which sentence uses the time preposition correctly?**
+3. **Which sentence completes the thought with the correct time preposition?**
    - A. The workshop begins on 9:00 a.m.
    - B. My cousin was born at 1998.
    - C. We have choir practice in Tuesdays.

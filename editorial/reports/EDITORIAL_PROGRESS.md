@@ -1,25 +1,25 @@
 # ELIEXPLAINS GLOBAL EDITORIAL PROGRESS
 
-Generated: 2026-08-21T21:18:03.233Z
+Generated: 2026-08-21T21:55:01.429Z
 Counts are computed from the phase content stores by `bun run editorial:progress`.
 
 Subjects total: 44
-Subjects processed: 25
-Subjects remaining: 19
-Subject completion: 56.82%
+Subjects processed: 26
+Subjects remaining: 18
+Subject completion: 59.09%
 
 Total topics: 1299
-Topics processed: 761
+Topics processed: 774
 Topics published: 282
-Topics ready to publish: 479
+Topics ready to publish: 492
 Topics held: 0
 Topics requiring review: 0
-Topics remaining: 538
-Topic processing: 58.58%
+Topics remaining: 525
+Topic processing: 59.58%
 
-Verified questions: 3805
-Unique source records: 3698
-Source usage classes: REFERENCE_ONLY=2849, PUBLIC_DOMAIN=548, ATTRIBUTION_REQUIRED=206, EXTRACT_AND_ADAPT=93, LINK_ONLY=2
+Verified questions: 3870
+Unique source records: 3768
+Source usage classes: REFERENCE_ONLY=2919, PUBLIC_DOMAIN=548, ATTRIBUTION_REQUIRED=206, EXTRACT_AND_ADAPT=93, LINK_ONLY=2
 
 ## Phase progress
 
@@ -27,7 +27,7 @@ Source usage classes: REFERENCE_ONLY=2849, PUBLIC_DOMAIN=548, ATTRIBUTION_REQUIR
 | --- | --- | --- | --- |
 | 1 | 11 / 11 | 282 / 282 | 100.00% |
 | 2 | 1 / 11 | 47 / 325 | 14.46% |
-| 3 | 10 / 11 | 316 / 329 | 96.05% |
+| 3 | 11 / 11 | 329 / 329 | 100.00% |
 | 4 | 3 / 11 | 116 / 363 | 31.96% |
 
 ## Collection progress
@@ -37,7 +37,7 @@ Source usage classes: REFERENCE_ONLY=2849, PUBLIC_DOMAIN=548, ATTRIBUTION_REQUIR
 | Professional Studies | 7 / 7 | 166 / 166 | 100.00% |
 | Technology | 4 / 8 | 135 / 257 | 52.53% |
 | Business & Money | 3 / 9 | 84 / 240 | 35.00% |
-| Humanities & Culture | 6 / 7 | 184 / 197 | 93.40% |
+| Humanities & Culture | 7 / 7 | 197 / 197 | 100.00% |
 | Science & Health | 1 / 6 | 48 / 206 | 23.30% |
 | Society & Government | 4 / 7 | 144 / 233 | 61.80% |
 
@@ -63,7 +63,7 @@ Source usage classes: REFERENCE_ONLY=2849, PUBLIC_DOMAIN=548, ATTRIBUTION_REQUIR
 | history | 49 / 49 | 0 | 49 | 0 | 0 | 0 |
 | hospitality-and-tourism | 20 / 20 | 20 | 0 | 0 | 0 | 0 |
 | human-geography | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
-| languages-and-esl | 13 / 26 | 0 | 13 | 0 | 0 | 13 |
+| languages-and-esl | 26 / 26 | 0 | 26 | 0 | 0 | 0 |
 | music-appreciation | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
 | philosophy-and-ethics | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
 | project-management | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
