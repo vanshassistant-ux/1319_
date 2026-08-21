@@ -1,13 +1,13 @@
 # EliExplains — Phase Status Report
 
-Generated 2026-08-21 10:47 UTC. Source of truth: the four phase content stores (`content/phase-N/content-progress.json`). Companion files: `MASTER_TOPIC_DIRECTORY.md` (every topic, every status), `master-topic-directory.csv/.json` (machine-readable).
+Generated 2026-08-21 19:49 UTC. Source of truth: the four phase content stores (`content/phase-N/content-progress.json`). Companion files: `MASTER_TOPIC_DIRECTORY.md` (every topic, every status), `master-topic-directory.csv/.json` (machine-readable).
 
 ## Executive summary
 
 - **1299 genuine topics** across 44 subjects (the master curriculum lists 1319 entries; 20 were mis-ingested section headers/author notes and have been pruned from the queues; 0 topics were added/repurposed).
-- **692 topics done (53.3%)**: 282 live on eliexplains.org, 410 fully gated (`READY_TO_PUBLISH`) and waiting only on owner sign-off to publish.
-- **0 topics need review** (held/needs-review statuses). **607 topics not started.**
-- Subjects: 23 complete · 3 in progress · 18 not started.
+- **724 topics done (55.7%)**: 282 live on eliexplains.org, 442 fully gated (`READY_TO_PUBLISH`) and waiting only on owner sign-off to publish.
+- **0 topics need review** (held/needs-review statuses). **575 topics not started.**
+- Subjects: 24 complete · 2 in progress · 18 not started.
 
 ## By phase
 
@@ -15,7 +15,7 @@ Generated 2026-08-21 10:47 UTC. Source of truth: the four phase content stores (
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | Phase 1 — LIVE on eliexplains.org | 11 | 282 | 282 | 282 | 0 | 0 | 0 | 100.0% |
 | Phase 2 | 11 | 325 | 47 | 0 | 47 | 0 | 278 | 14.5% |
-| Phase 3 | 11 | 329 | 247 | 0 | 247 | 0 | 82 | 75.1% |
+| Phase 3 | 11 | 329 | 279 | 0 | 279 | 0 | 50 | 84.8% |
 | Phase 4 | 11 | 363 | 116 | 0 | 116 | 0 | 247 | 32.0% |
 
 ## By subject (all 44)
@@ -54,7 +54,7 @@ Generated 2026-08-21 10:47 UTC. Source of truth: the four phase content stores (
 | 3 | Film & Media Studies | 28 | 28 | 0 | 28 | 0 | 0 | ✅ complete · unpublished |
 | 3 | Religious Studies | 27 | 2 | 0 | 2 | 0 | 25 | 🔧 in progress (7.4%) |
 | 3 | Languages & ESL | 26 | 1 | 0 | 1 | 0 | 25 | 🔧 in progress (3.8%) |
-| 3 | Earth & Space Science | 48 | 16 | 0 | 16 | 0 | 32 | 🔧 in progress (33.3%) |
+| 3 | Earth & Space Science | 48 | 48 | 0 | 48 | 0 | 0 | ✅ complete · unpublished |
 | 4 | Nutrition | 29 | 0 | 0 | 0 | 0 | 29 | ⏳ not started |
 | 4 | Public Health | 29 | 0 | 0 | 0 | 0 | 29 | ⏳ not started |
 | 4 | Nursing & Allied Health Foundations | 40 | 0 | 0 | 0 | 0 | 40 | ⏳ not started |
@@ -71,14 +71,13 @@ Generated 2026-08-21 10:47 UTC. Source of truth: the four phase content stores (
 
 - **Phase 1:** Education (21), Social Work & Human Services (20), Criminal Justice & Criminology (28), Engineering Fundamentals (28), Health Administration (24), Hospitality & Tourism (20), Graphic Design & Digital Media (28), Environmental Sustainability (25), Computer Literacy (25), Computer Science Fundamentals (27), Python Programming (36)
 - **Phase 2:** Web Development (47)
-- **Phase 3:** Entrepreneurship (25), Business Law & Ethics (31), Project Management (28), English & Literature (26), Philosophy & Ethics (28), Art History & Visual Culture (34), Music Appreciation (28), Film & Media Studies (28)
+- **Phase 3:** Entrepreneurship (25), Business Law & Ethics (31), Project Management (28), English & Literature (26), Philosophy & Ethics (28), Art History & Visual Culture (34), Music Appreciation (28), Film & Media Studies (28), Earth & Space Science (48)
 - **Phase 4:** History (49), Human Geography (28), Economics (39)
 
 ## What is IN PROGRESS (partially done)
 
 - **Religious Studies** (Phase 3): 2/27 done; 25 remaining — Myth; Ritual; Sacred Texts; Religious Authority; Ethics; Religious Experience; Indigenous Religious Traditions; Hindu Traditions; … (+17 more, see directory)
 - **Languages & ESL** (Phase 3): 1/26 done; 25 remaining — Sentence Structure; Subject and Predicate; Nouns; Pronouns; Verbs; Adjectives; Adverbs; Articles; … (+17 more, see directory)
-- **Earth & Space Science** (Phase 3): 16/48 done; 32 remaining — Volcanoes; Mountain Building; Surface Processes; Weathering; Erosion; Soil; Rivers; Groundwater; … (+24 more, see directory)
 
 ## What is NOT STARTED
 

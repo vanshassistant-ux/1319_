@@ -1,6 +1,6 @@
 # EliExplains — Master Topic Directory
 
-Generated 2026-08-21 10:47 UTC by `bun scripts/build-master-directory.mjs` from the master curriculum + the four phase content stores.
+Generated 2026-08-21 19:49 UTC by `bun scripts/build-master-directory.mjs` from the master curriculum + the four phase content stores.
 
 **Legend:** 🟢 LIVE · 🔵 READY (unpublished) · 🟠 NEEDS REVIEW · ⚪ NOT STARTED · ⚫ PRUNED (mis-ingested header/note) · 🟣 ADDED (not in master curriculum)
 
@@ -8,10 +8,10 @@ Generated 2026-08-21 10:47 UTC by `bun scripts/build-master-directory.mjs` from 
 
 | Scope | Curriculum topics | Genuine topics | 🟢 Live | 🔵 Ready | 🟠 Review | ⚪ Not started | Done (live+ready) |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| **All phases** | 1319 | 1299 | 282 | 410 | 0 | 607 | **692 (53.3%)** |
+| **All phases** | 1319 | 1299 | 282 | 442 | 0 | 575 | **724 (55.7%)** |
 | Phase 1 — LIVE on eliexplains.org | 282 | 282 | 282 | 0 | 0 | 0 | 282 (100.0%) |
 | Phase 2 | 325 | 325 | 0 | 47 | 0 | 278 | 47 (14.5%) |
-| Phase 3 | 337 | 329 | 0 | 247 | 0 | 82 | 247 (75.1%) |
+| Phase 3 | 337 | 329 | 0 | 279 | 0 | 50 | 279 (84.8%) |
 | Phase 4 | 375 | 363 | 0 | 116 | 0 | 247 | 116 (32.0%) |
 
 ## Contents
@@ -51,7 +51,7 @@ Generated 2026-08-21 10:47 UTC by `bun scripts/build-master-directory.mjs` from 
   - [Film & Media Studies](#film-and-media-studies) — 28/28 done
   - [Religious Studies](#religious-studies) — 2/27 done
   - [Languages & ESL](#languages-and-esl) — 1/26 done
-  - [Earth & Space Science](#earth-and-space-science) — 16/48 done
+  - [Earth & Space Science](#earth-and-space-science) — 48/48 done
 - **Phase 4**
   - [Nutrition](#nutrition) — 0/29 done
   - [Public Health](#public-health) — 0/29 done
@@ -1230,9 +1230,9 @@ Phase 3 · live 0 · ready 1 · review 0 · not started 25 · pruned 3
 | 29 | Foundations | PART V — EARTH, HEALTH & SOCIAL SCIENCES | ⚫ PRUNED (mis-ingested header/note) |  |  |
 
 <a id="earth-and-space-science"></a>
-## Earth & Space Science — 🔧 IN PROGRESS (16/48)
+## Earth & Space Science — ✅ COMPLETE · awaiting publish (48/48)
 
-Phase 3 · live 0 · ready 16 · review 0 · not started 32
+Phase 3 · live 0 · ready 48 · review 0 · not started 0
 
 | # | Unit | Topic | Status | Qs | Link |
 |---:|---|---|---|---:|---|
@@ -1252,38 +1252,38 @@ Phase 3 · live 0 · ready 16 · review 0 · not started 32
 | 14 | Foundations | Plate Boundaries | 🔵 READY (unpublished) | 5 |  |
 | 15 | Foundations | Earthquakes | 🔵 READY (unpublished) | 5 |  |
 | 16 | Foundations | Seismic Waves | 🔵 READY (unpublished) | 5 |  |
-| 17 | Foundations | Volcanoes | ⚪ NOT STARTED |  |  |
-| 18 | Foundations | Mountain Building | ⚪ NOT STARTED |  |  |
-| 19 | Foundations | Surface Processes | ⚪ NOT STARTED |  |  |
-| 20 | Foundations | Weathering | ⚪ NOT STARTED |  |  |
-| 21 | Foundations | Erosion | ⚪ NOT STARTED |  |  |
-| 22 | Foundations | Soil | ⚪ NOT STARTED |  |  |
-| 23 | Foundations | Rivers | ⚪ NOT STARTED |  |  |
-| 24 | Foundations | Groundwater | ⚪ NOT STARTED |  |  |
-| 25 | Foundations | Glaciers | ⚪ NOT STARTED |  |  |
-| 26 | Foundations | Atmosphere & Oceans | ⚪ NOT STARTED |  |  |
-| 27 | Foundations | Atmosphere | ⚪ NOT STARTED |  |  |
-| 28 | Foundations | Weather | ⚪ NOT STARTED |  |  |
-| 29 | Foundations | Air Pressure | ⚪ NOT STARTED |  |  |
-| 30 | Foundations | Fronts | ⚪ NOT STARTED |  |  |
-| 31 | Foundations | Storms | ⚪ NOT STARTED |  |  |
-| 32 | Foundations | Climate | ⚪ NOT STARTED |  |  |
-| 33 | Foundations | Climate Change | ⚪ NOT STARTED |  |  |
-| 34 | Foundations | Ocean Circulation | ⚪ NOT STARTED |  |  |
-| 35 | Foundations | Ocean Systems | ⚪ NOT STARTED |  |  |
-| 36 | Foundations | Astronomy | ⚪ NOT STARTED |  |  |
-| 37 | Foundations | Solar System | ⚪ NOT STARTED |  |  |
-| 38 | Foundations | Sun | ⚪ NOT STARTED |  |  |
-| 39 | Foundations | Terrestrial Planets | ⚪ NOT STARTED |  |  |
-| 40 | Foundations | Gas Giants | ⚪ NOT STARTED |  |  |
-| 41 | Foundations | Moons | ⚪ NOT STARTED |  |  |
-| 42 | Foundations | Asteroids and Comets | ⚪ NOT STARTED |  |  |
-| 43 | Foundations | Stars | ⚪ NOT STARTED |  |  |
-| 44 | Foundations | Stellar Life Cycle | ⚪ NOT STARTED |  |  |
-| 45 | Foundations | Galaxies | ⚪ NOT STARTED |  |  |
-| 46 | Foundations | Milky Way | ⚪ NOT STARTED |  |  |
-| 47 | Foundations | Universe | ⚪ NOT STARTED |  |  |
-| 48 | Foundations | Big Bang Basics | ⚪ NOT STARTED |  |  |
+| 17 | Foundations | Volcanoes | 🔵 READY (unpublished) | 5 |  |
+| 18 | Foundations | Mountain Building | 🔵 READY (unpublished) | 5 |  |
+| 19 | Foundations | Surface Processes | 🔵 READY (unpublished) | 5 |  |
+| 20 | Foundations | Weathering | 🔵 READY (unpublished) | 5 |  |
+| 21 | Foundations | Erosion | 🔵 READY (unpublished) | 5 |  |
+| 22 | Foundations | Soil | 🔵 READY (unpublished) | 5 |  |
+| 23 | Foundations | Rivers | 🔵 READY (unpublished) | 5 |  |
+| 24 | Foundations | Groundwater | 🔵 READY (unpublished) | 5 |  |
+| 25 | Foundations | Glaciers | 🔵 READY (unpublished) | 5 |  |
+| 26 | Foundations | Atmosphere & Oceans | 🔵 READY (unpublished) | 5 |  |
+| 27 | Foundations | Atmosphere | 🔵 READY (unpublished) | 5 |  |
+| 28 | Foundations | Weather | 🔵 READY (unpublished) | 5 |  |
+| 29 | Foundations | Air Pressure | 🔵 READY (unpublished) | 5 |  |
+| 30 | Foundations | Fronts | 🔵 READY (unpublished) | 5 |  |
+| 31 | Foundations | Storms | 🔵 READY (unpublished) | 5 |  |
+| 32 | Foundations | Climate | 🔵 READY (unpublished) | 5 |  |
+| 33 | Foundations | Climate Change | 🔵 READY (unpublished) | 5 |  |
+| 34 | Foundations | Ocean Circulation | 🔵 READY (unpublished) | 5 |  |
+| 35 | Foundations | Ocean Systems | 🔵 READY (unpublished) | 5 |  |
+| 36 | Foundations | Astronomy | 🔵 READY (unpublished) | 5 |  |
+| 37 | Foundations | Solar System | 🔵 READY (unpublished) | 5 |  |
+| 38 | Foundations | Sun | 🔵 READY (unpublished) | 5 |  |
+| 39 | Foundations | Terrestrial Planets | 🔵 READY (unpublished) | 5 |  |
+| 40 | Foundations | Gas Giants | 🔵 READY (unpublished) | 5 |  |
+| 41 | Foundations | Moons | 🔵 READY (unpublished) | 5 |  |
+| 42 | Foundations | Asteroids and Comets | 🔵 READY (unpublished) | 5 |  |
+| 43 | Foundations | Stars | 🔵 READY (unpublished) | 5 |  |
+| 44 | Foundations | Stellar Life Cycle | 🔵 READY (unpublished) | 5 |  |
+| 45 | Foundations | Galaxies | 🔵 READY (unpublished) | 5 |  |
+| 46 | Foundations | Milky Way | 🔵 READY (unpublished) | 5 |  |
+| 47 | Foundations | Universe | 🔵 READY (unpublished) | 5 |  |
+| 48 | Foundations | Big Bang Basics | 🔵 READY (unpublished) | 5 |  |
 
 ---
 
