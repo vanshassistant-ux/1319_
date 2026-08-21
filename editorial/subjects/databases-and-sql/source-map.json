@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "subjectSlug": "databases-and-sql",
+  "note": "Discovery leads for databases-and-sql topic workers (phase 2). LITERACY level: teach what databases and SQL are and why they matter — concepts first, real SQL syntax shown as simple illustrative examples (the SQL topics own the syntax). Data-integrity/database-security/transactions are their own topics: reference only, never taught in depth here.",
+  "reviewProfile": ["database-literacy", "conceptual-first", "sql-syntax-illustrative"],
+  "tierA": [
+    { "provider": "NIST", "url": "https://csrc.nist.gov/glossary", "useFor": "database/data definitions, integrity concepts (NIST glossary + SP 800-series where relevant)" },
+    { "provider": "OpenStax", "url": "https://openstax.org/details/books/introduction-sociology-3e", "useFor": "no — use the OpenStax business/database-relevant titles only if they exist; otherwise rely on Tier B textbooks" }
+  ],
+  "tierB": [
+    { "provider": "Khan Academy (Intro to SQL / databases)", "url": "https://www.khanacademy.org/computing/computer-programming/sql", "useFor": "SQL basics, select, where, group-by, joins — public course pages read live" },
+    { "provider": "W3Schools SQL Tutorial", "url": "https://www.w3schools.com/sql/", "useFor": "SQL syntax reference (SELECT, WHERE, ORDER BY, LIMIT, INSERT, UPDATE, DELETE, JOIN, GROUP BY) — public pages" },
+    { "provider": "PostgreSQL / SQLite official docs", "url": "https://www.postgresql.org/docs/current/", "useFor": "data types, constraints, transactions — official docs, public" },
+    { "provider": "Microsoft Learn (Azure SQL / database fundamentals)", "url": "https://learn.microsoft.com/sql/", "useFor": "relational concepts, indexes, transactions (public pages)" },
+    { "provider": "OpenIntro / OER textbooks", "url": "https://www.openintro.org/", "useFor": "statistics/data concepts if needed" }
+  ],
+  "cautions": [
+    "CONCEPTUAL-FIRST: the early topics (what-a-database-is, relational-databases, tables, rows, columns, data-types, keys, relationships, normalization) teach concepts with minimal SQL. The SQL topics (sql-basics through group-by, join, subqueries) may show simple real SQL as illustrative examples — keep queries short (≤8 lines), commented, and correct.",
+    "LITERACY LEVEL: no database administration, no schema design beyond intuition, no performance tuning. Indexes/transactions are their own topics — reference only elsewhere.",
+    "DEFINITIONAL DISTINCTIONS MUST BE CLEAN: row vs record vs tuple; column vs field vs attribute; table vs relation; primary key vs foreign key (uniqueness vs reference); one-to-one vs one-to-many vs many-to-many (cardinality); SELECT vs INSERT/UPDATE/DELETE (read vs write); WHERE vs GROUP BY vs ORDER BY (filter vs group vs sort); join vs subquery (combined tables vs nested query).",
+    "NO INDIVIDUALIZED ADVICE and no vendor wars: teach standard SQL concepts; mention vendor names only as examples, never as recommendations. SQL syntax shown must be standard SQL.",
+    "Distribute question answer keys EVENLY across A/B/C/D, ensuring at least one C and one D per topic. Verify keys yourself from the file, and avoid reusing identical question-stem templates across topics."
+  ]
+}
