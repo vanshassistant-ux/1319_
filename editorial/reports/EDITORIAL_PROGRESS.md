@@ -1,6 +1,6 @@
 # ELIEXPLAINS GLOBAL EDITORIAL PROGRESS
 
-Generated: 2026-08-21T09:22:16.982Z
+Generated: 2026-08-21T09:35:52.163Z
 Counts are computed from the phase content stores by `bun run editorial:progress`.
 
 Subjects total: 44
@@ -9,17 +9,17 @@ Subjects remaining: 24
 Subject completion: 45.45%
 
 Total topics: 1299
-Topics processed: 651
+Topics processed: 657
 Topics published: 282
-Topics ready to publish: 369
+Topics ready to publish: 375
 Topics held: 0
 Topics requiring review: 0
-Topics remaining: 648
-Topic processing: 50.12%
+Topics remaining: 642
+Topic processing: 50.58%
 
-Verified questions: 3255
-Unique source records: 3103
-Source usage classes: REFERENCE_ONLY=2308, PUBLIC_DOMAIN=544, ATTRIBUTION_REQUIRED=159, EXTRACT_AND_ADAPT=90, LINK_ONLY=2
+Verified questions: 3285
+Unique source records: 3143
+Source usage classes: REFERENCE_ONLY=2348, PUBLIC_DOMAIN=544, ATTRIBUTION_REQUIRED=159, EXTRACT_AND_ADAPT=90, LINK_ONLY=2
 
 ## Phase progress
 
@@ -27,7 +27,7 @@ Source usage classes: REFERENCE_ONLY=2308, PUBLIC_DOMAIN=544, ATTRIBUTION_REQUIR
 | --- | --- | --- | --- |
 | 1 | 11 / 11 | 282 / 282 | 100.00% |
 | 2 | 1 / 11 | 47 / 325 | 14.46% |
-| 3 | 5 / 11 | 206 / 329 | 62.61% |
+| 3 | 5 / 11 | 212 / 329 | 64.44% |
 | 4 | 3 / 11 | 116 / 363 | 31.96% |
 
 ## Collection progress
@@ -37,7 +37,7 @@ Source usage classes: REFERENCE_ONLY=2308, PUBLIC_DOMAIN=544, ATTRIBUTION_REQUIR
 | Professional Studies | 7 / 7 | 166 / 166 | 100.00% |
 | Technology | 4 / 8 | 135 / 257 | 52.53% |
 | Business & Money | 3 / 9 | 84 / 240 | 35.00% |
-| Humanities & Culture | 2 / 7 | 106 / 197 | 53.81% |
+| Humanities & Culture | 2 / 7 | 112 / 197 | 56.85% |
 | Science & Health | 0 / 6 | 16 / 206 | 7.77% |
 | Society & Government | 4 / 7 | 144 / 233 | 61.80% |
 
@@ -54,7 +54,7 @@ Source usage classes: REFERENCE_ONLY=2308, PUBLIC_DOMAIN=544, ATTRIBUTION_REQUIR
 | economics | 39 / 39 | 0 | 39 | 0 | 0 | 0 |
 | education | 21 / 21 | 21 | 0 | 0 | 0 | 0 |
 | engineering-fundamentals | 28 / 28 | 28 | 0 | 0 | 0 | 0 |
-| english-and-literature | 13 / 26 | 0 | 13 | 0 | 0 | 13 |
+| english-and-literature | 19 / 26 | 0 | 19 | 0 | 0 | 7 |
 | entrepreneurship | 25 / 25 | 0 | 25 | 0 | 0 | 0 |
 | environmental-sustainability | 25 / 25 | 25 | 0 | 0 | 0 | 0 |
 | film-and-media-studies | 13 / 28 | 0 | 13 | 0 | 0 | 15 |
