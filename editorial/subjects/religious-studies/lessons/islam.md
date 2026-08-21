@@ -6,7 +6,7 @@ Islam is a global religious tradition that emerged in seventh-century Arabia. Mu
 
 ## Why This Matters
 
-Islam is one of the world's largest religions, with more than 1.5 billion adherents across every inhabited continent, so describing it accurately is basic literacy for studying religion, history, and global culture. Because the tradition is often flattened into a single image, students who learn its internal diversity — Sunni and Shia communities, Sufi practice, and regional variation — are better equipped to read evidence fairly, compare traditions without ranking them, and interpret what they encounter in news, literature, and community life in Muslim-majority and diaspora settings. The same descriptive habits prepare students for later lessons on Judaism and Christianity, the traditions Islam is most often compared with, and on religious diversity more generally.
+Islam is one of the world's largest religions, with more than 1.5 billion adherents across every inhabited continent, so describing it accurately matters for anyone studying religion, history, and global culture. Because the tradition is often flattened into a single image, students who learn its internal diversity — Sunni and Shia communities, Sufi practice, and regional variation — are better equipped to read evidence fairly, compare traditions without ranking them, and interpret what they encounter in news, literature, and community life in Muslim-majority and diaspora settings. The same descriptive habits prepare students for later lessons on Judaism and Christianity, the traditions Islam is most often compared with, and on religious diversity more generally.
 
 ## Learning Objectives
 

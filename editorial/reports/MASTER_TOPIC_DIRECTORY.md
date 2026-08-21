@@ -1,6 +1,6 @@
 # EliExplains — Master Topic Directory
 
-Generated 2026-08-21 19:49 UTC by `bun scripts/build-master-directory.mjs` from the master curriculum + the four phase content stores.
+Generated 2026-08-21 20:46 UTC by `bun scripts/build-master-directory.mjs` from the master curriculum + the four phase content stores.
 
 **Legend:** 🟢 LIVE · 🔵 READY (unpublished) · 🟠 NEEDS REVIEW · ⚪ NOT STARTED · ⚫ PRUNED (mis-ingested header/note) · 🟣 ADDED (not in master curriculum)
 
@@ -8,10 +8,10 @@ Generated 2026-08-21 19:49 UTC by `bun scripts/build-master-directory.mjs` from 
 
 | Scope | Curriculum topics | Genuine topics | 🟢 Live | 🔵 Ready | 🟠 Review | ⚪ Not started | Done (live+ready) |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| **All phases** | 1319 | 1299 | 282 | 442 | 0 | 575 | **724 (55.7%)** |
+| **All phases** | 1319 | 1299 | 282 | 467 | 0 | 550 | **749 (57.7%)** |
 | Phase 1 — LIVE on eliexplains.org | 282 | 282 | 282 | 0 | 0 | 0 | 282 (100.0%) |
 | Phase 2 | 325 | 325 | 0 | 47 | 0 | 278 | 47 (14.5%) |
-| Phase 3 | 337 | 329 | 0 | 279 | 0 | 50 | 279 (84.8%) |
+| Phase 3 | 337 | 329 | 0 | 304 | 0 | 25 | 304 (92.4%) |
 | Phase 4 | 375 | 363 | 0 | 116 | 0 | 247 | 116 (32.0%) |
 
 ## Contents
@@ -49,7 +49,7 @@ Generated 2026-08-21 19:49 UTC by `bun scripts/build-master-directory.mjs` from 
   - [Art History & Visual Culture](#art-history-and-visual-culture) — 34/34 done
   - [Music Appreciation](#music-appreciation) — 28/28 done
   - [Film & Media Studies](#film-and-media-studies) — 28/28 done
-  - [Religious Studies](#religious-studies) — 2/27 done
+  - [Religious Studies](#religious-studies) — 27/27 done
   - [Languages & ESL](#languages-and-esl) — 1/26 done
   - [Earth & Space Science](#earth-and-space-science) — 48/48 done
 - **Phase 4**
@@ -1157,40 +1157,40 @@ Phase 3 · live 0 · ready 28 · review 0 · not started 0
 | 28 | Foundations | Media Criticism | 🔵 READY (unpublished) | 5 |  |
 
 <a id="religious-studies"></a>
-## Religious Studies — 🔧 IN PROGRESS (2/27)
+## Religious Studies — ✅ COMPLETE · awaiting publish (27/27)
 
-Phase 3 · live 0 · ready 2 · review 0 · not started 25 · pruned 1
+Phase 3 · live 0 · ready 27 · review 0 · not started 0 · pruned 1
 
 | # | Unit | Topic | Status | Qs | Link |
 |---:|---|---|---|---:|---|
 | 1 | Foundations | Teach descriptively and comparatively, not devotionally. | ⚫ PRUNED (mis-ingested header/note) |  |  |
 | 2 | Foundations | What Is Religion? | 🔵 READY (unpublished) | 5 |  |
 | 3 | Foundations | Studying Religion Academically | 🔵 READY (unpublished) | 5 |  |
-| 4 | Foundations | Myth | ⚪ NOT STARTED |  |  |
-| 5 | Foundations | Ritual | ⚪ NOT STARTED |  |  |
-| 6 | Foundations | Sacred Texts | ⚪ NOT STARTED |  |  |
-| 7 | Foundations | Religious Authority | ⚪ NOT STARTED |  |  |
-| 8 | Foundations | Ethics | ⚪ NOT STARTED |  |  |
-| 9 | Foundations | Religious Experience | ⚪ NOT STARTED |  |  |
-| 10 | Foundations | Indigenous Religious Traditions | ⚪ NOT STARTED |  |  |
-| 11 | Foundations | Hindu Traditions | ⚪ NOT STARTED |  |  |
-| 12 | Foundations | Buddhism | ⚪ NOT STARTED |  |  |
-| 13 | Foundations | Judaism | ⚪ NOT STARTED |  |  |
-| 14 | Foundations | Christianity | ⚪ NOT STARTED |  |  |
-| 15 | Foundations | Islam | ⚪ NOT STARTED |  |  |
-| 16 | Foundations | Sikhism | ⚪ NOT STARTED |  |  |
-| 17 | Foundations | Jainism | ⚪ NOT STARTED |  |  |
-| 18 | Foundations | Daoism | ⚪ NOT STARTED |  |  |
-| 19 | Foundations | Confucian Traditions | ⚪ NOT STARTED |  |  |
-| 20 | Foundations | Shinto | ⚪ NOT STARTED |  |  |
-| 21 | Foundations | New Religious Movements | ⚪ NOT STARTED |  |  |
-| 22 | Foundations | Religion and Culture | ⚪ NOT STARTED |  |  |
-| 23 | Foundations | Religion and Politics | ⚪ NOT STARTED |  |  |
-| 24 | Foundations | Religion and Gender | ⚪ NOT STARTED |  |  |
-| 25 | Foundations | Religion and Violence | ⚪ NOT STARTED |  |  |
-| 26 | Foundations | Religious Diversity | ⚪ NOT STARTED |  |  |
-| 27 | Foundations | Secularism | ⚪ NOT STARTED |  |  |
-| 28 | Foundations | Interfaith Relations | ⚪ NOT STARTED |  |  |
+| 4 | Foundations | Myth | 🔵 READY (unpublished) | 5 |  |
+| 5 | Foundations | Ritual | 🔵 READY (unpublished) | 5 |  |
+| 6 | Foundations | Sacred Texts | 🔵 READY (unpublished) | 5 |  |
+| 7 | Foundations | Religious Authority | 🔵 READY (unpublished) | 5 |  |
+| 8 | Foundations | Ethics | 🔵 READY (unpublished) | 5 |  |
+| 9 | Foundations | Religious Experience | 🔵 READY (unpublished) | 5 |  |
+| 10 | Foundations | Indigenous Religious Traditions | 🔵 READY (unpublished) | 5 |  |
+| 11 | Foundations | Hindu Traditions | 🔵 READY (unpublished) | 5 |  |
+| 12 | Foundations | Buddhism | 🔵 READY (unpublished) | 5 |  |
+| 13 | Foundations | Judaism | 🔵 READY (unpublished) | 5 |  |
+| 14 | Foundations | Christianity | 🔵 READY (unpublished) | 5 |  |
+| 15 | Foundations | Islam | 🔵 READY (unpublished) | 5 |  |
+| 16 | Foundations | Sikhism | 🔵 READY (unpublished) | 5 |  |
+| 17 | Foundations | Jainism | 🔵 READY (unpublished) | 5 |  |
+| 18 | Foundations | Daoism | 🔵 READY (unpublished) | 5 |  |
+| 19 | Foundations | Confucian Traditions | 🔵 READY (unpublished) | 5 |  |
+| 20 | Foundations | Shinto | 🔵 READY (unpublished) | 5 |  |
+| 21 | Foundations | New Religious Movements | 🔵 READY (unpublished) | 5 |  |
+| 22 | Foundations | Religion and Culture | 🔵 READY (unpublished) | 5 |  |
+| 23 | Foundations | Religion and Politics | 🔵 READY (unpublished) | 5 |  |
+| 24 | Foundations | Religion and Gender | 🔵 READY (unpublished) | 5 |  |
+| 25 | Foundations | Religion and Violence | 🔵 READY (unpublished) | 5 |  |
+| 26 | Foundations | Religious Diversity | 🔵 READY (unpublished) | 5 |  |
+| 27 | Foundations | Secularism | 🔵 READY (unpublished) | 5 |  |
+| 28 | Foundations | Interfaith Relations | 🔵 READY (unpublished) | 5 |  |
 
 <a id="languages-and-esl"></a>
 ## Languages & ESL — 🔧 IN PROGRESS (1/26)

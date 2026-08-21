@@ -32,7 +32,7 @@ Gender also shapes what religion looks like. Women and men often participate dif
 
 ### Diversity within traditions
 
-No tradition is monolithic. Practices vary by community, region, and era, and the same tradition can look different across the street or across a century. OpenStax's sociology text makes the point with Christian holidays: members of the same branch of Christianity may celebrate holidays very differently depending on where they live. Gender practices follow the same pattern. A rule, symbol, or leadership arrangement that one community treats as fixed may be interpreted differently by another community in the same tradition, and communities debate these questions among themselves. Scholars therefore describe a tradition by documenting its internal variety rather than by stating one essential position on gender.
+No tradition is monolithic. Practices vary by community, region, and era, and the same tradition can look different across the street or across a century. OpenStax's sociology text makes the point with Christian holidays: members of the same branch of Christianity may observe holidays quite differently depending on where they live. Gender practices follow the same pattern. A rule, symbol, or leadership arrangement that one community treats as fixed may be interpreted differently by another community in the same tradition, and communities debate these questions among themselves. Scholars therefore describe a tradition by documenting its internal variety rather than by stating one essential position on gender.
 
 ### Feminist scholarship on religion
 

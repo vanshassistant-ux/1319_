@@ -131,7 +131,7 @@ Academic Religious Studies uses evidence and context to describe, interpret, and
 
 ## Related Topics
 
-- Teach descriptively and comparatively, not devotionally.
+- Myth
 - What Is Religion?
 - Religious Diversity
 
