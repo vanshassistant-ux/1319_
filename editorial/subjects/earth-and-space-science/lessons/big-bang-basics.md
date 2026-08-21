@@ -1,0 +1,158 @@
+# Big Bang Basics
+
+## In 30 Seconds
+
+The Big Bang theory says the universe began about 13.8 billion years ago in an extremely hot, dense state and has been expanding and cooling ever since. This was not an explosion in space: space itself stretched, everywhere at once, with no center. Three lines of evidence support it: the cosmic microwave background, the leftover glow of the hot early universe; the redshift of distant galaxies, whose light is stretched by expansion; and the abundance of hydrogen and helium, which formed in the first few minutes.
+
+## Why This Matters
+
+The Big Bang is the best-tested scientific account we have of how the universe came to be the way it is. Every star, galaxy, and atom of hydrogen and helium traces its origin back to that hot, dense state. Studying it matters for two reasons. First, it is a model of how science works: the theory made specific predictions, a faint background glow and a universe rich in helium, that were later confirmed by observation. Second, it corrects common misunderstandings, such as the idea that the Big Bang was an explosion or that the expansion has a center. Those corrections help students read claims about cosmology with a clear head, whether in news headlines or in discussions of the universe's fate.
+
+## Learning Objectives
+
+- Define the Big Bang theory as the claim that the universe began in an extremely hot, dense state about 13.8 billion years ago and has been expanding and cooling ever since.
+- Distinguish the Big Bang from an explosion in space by explaining that the expansion is the stretching of space itself, with no center.
+- Describe the three main lines of evidence for the Big Bang: the cosmic microwave background, the redshift of distant galaxies, and the abundance of hydrogen and helium.
+- Explain the early-universe sequence of hot dense phase, nucleosynthesis, recombination, and structure formation.
+- Apply the relationship between expansion and temperature to explain why the cosmic microwave background is cold today.
+- Analyze why predictions that are later confirmed by observation, such as the cosmic microwave background and the helium abundance, count as evidence for a theory.
+
+## The College Version
+
+### What the Big Bang theory actually says
+
+The Big Bang theory is the scientific account of how the universe got to be the way it is. It says that about 13.8 billion years ago, everything we can see was compressed into an extremely hot, dense state, and that the universe has been expanding and cooling ever since. NASA's Universe pages describe the big bang as the moment when the energy of an earlier period of extremely rapid expansion, called inflation, was transferred into matter and light. The crucial point is what "expanding" means here. It is not galaxies flying outward through pre-existing, static space, the way shrapnel flies from a bomb. OpenStax Astronomy 2e is explicit: the expansion is the stretching of space itself. Every region of space stretches, and that stretching carries the galaxies apart from one another. Because the stretching happens everywhere at once, the expansion has no center, and there is no location you could visit where the Big Bang happened. The same stretching lengthens the wavelengths of light traveling through space, which is why the most distant galaxies appear redshifted.
+
+### The evidence: expansion and the light elements
+
+A scientific theory has to make predictions that observations can test, and the Big Bang theory passes on three independent lines of evidence. First, expansion. In 1929 Edwin Hubble found that galaxies are generally receding from us, and more distant galaxies recede faster; combined with the stretching-of-space picture, this points to a universe that has been expanding for about 13.8 billion years. Second, the light elements. In the first few minutes, when the whole universe was hotter than the inside of a star, protons and neutrons fused into hydrogen, helium, and traces of lithium. The theory predicts that roughly a quarter of the universe's ordinary matter should be helium made that way, and that prediction matches what we observe. Stars could not have produced all the helium we see; OpenStax notes that about ten times more helium was made in the first four minutes of the universe than in all the generations of stars over the following 10-15 billion years.
+
+### The evidence: the cosmic microwave background
+
+The third line of evidence was predicted before it was found. In the late 1940s, George Gamow, Ralph Alpher, and Robert Herman argued that the hot early universe should have left behind a faint glow of radiation, cooled by expansion to a few degrees above absolute zero. In 1965, Arno Penzias and Robert Wilson, engineers at Bell Laboratories in New Jersey, stumbled on exactly that: a faint hiss of microwave static coming from every direction of the sky, which no amount of cleaning, including removing pigeons from their antenna, could eliminate. That radiation is the oldest light we can observe. It was released about 380,000 years after the Big Bang, when the universe had cooled to about 3,000 K and electrons combined with nuclei, allowing light to travel freely for the first time. Since then, expansion has stretched that light into microwaves at about 2.7 K. Missions such as COBE (1989), WMAP (2001), and Planck (2009) measured this afterglow in detail, confirming the prediction and helping pin the universe's age at about 13.8 billion years.
+
+### A timeline, and what the theory does not claim
+
+The story in sequence: the universe begins hot and dense; within the first few minutes, nucleosynthesis builds hydrogen and helium; about 380,000 years later, recombination makes the universe transparent, releasing the light we now detect as the cosmic microwave background; then comes a long "dark age" of roughly 200 million years with no stars; then the first stars, some 30 to 300 times the Sun's mass, form and gather over several hundred million years into the first galaxies. Slight density differences in the early universe grew under gravity into the structures we see today. It is just as important to say what the theory does not claim. It does not describe what happened before the hot, dense state, and scientists are not sure what powered the earliest moments. It does not explain dark matter or dark energy, which belong to the study of the universe's large-scale structure. The Big Bang theory is the well-tested account of how the universe evolved from its hot, dense beginning to the vast, cool cosmos we inhabit.
+
+## Key Vocabulary
+
+- **Big Bang theory:** The scientific explanation that the universe began in an extremely hot, dense state about 13.8 billion years ago and has been expanding and cooling ever since.
+- **Expansion of the universe:** The ongoing stretching of space itself, which carries galaxies apart from one another; it began everywhere at once and has no center.
+- **Cosmic microwave background (CMB):** Faint microwave radiation filling all of space, left over from the hot early universe and released about 380,000 years after the Big Bang when the universe became transparent.
+- **Redshift:** The lengthening of a light wave's wavelength; for distant galaxies it happens because expanding space stretches the light as it travels.
+- **Big Bang nucleosynthesis:** The creation of light atomic nuclei, mainly hydrogen, helium, and traces of lithium, from protons and neutrons during the first few minutes after the Big Bang.
+- **Recombination:** The epoch about 380,000 years after the Big Bang when electrons combined with nuclei to form neutral atoms and the universe became transparent to light.
+- **Cosmology:** The branch of astronomy that studies the origin, evolution, and overall properties of the universe as a whole.
+- **Light elements:** The simplest elements, hydrogen, helium, and lithium, whose cosmic abundances are explained by Big Bang nucleosynthesis.
+
+## Eli-10
+
+About 13.8 billion years ago, all the matter and energy we can see was packed into a state that was unimaginably hot and dense, and it has been expanding and cooling ever since. That idea is the Big Bang theory. It is not a story about a bomb going off somewhere in space. Space itself stretches, everywhere at once, which carries galaxies apart from each other. Because the stretching happens everywhere, there is no center to the expansion and no spot where the Big Bang happened. We know this happened from three clues: the leftover glow of the hot early universe, the cosmic microwave background; the way light from distant galaxies gets stretched red by expanding space; and the amounts of hydrogen and helium, which were made in the first few minutes when the whole universe was one giant fusion oven.
+
+## Eli's Analogy
+
+Think of baking a loaf of raisin bread. The dough is space and the raisins are galaxies. As the dough rises, every raisin moves away from every other raisin. None of them is the center, and none is being pushed by an explosion. The space between them is simply growing.
+
+The raisin bread has edges, but the universe has no edge we know of, and the stretching happens in all three dimensions, not just along a surface. And in the bread, the raisins stay the same size while the dough grows, whereas in the universe, objects held together by gravity, like our galaxy, do not stretch even as the space between distant galaxies does.
+
+## Worked Example
+
+The cosmic microwave background was released when the universe was about 3,000 K. Today the same light measures about 2.73 K. Because the temperature of this radiation falls in direct proportion to the universe's expansion, dividing the two temperatures tells us how much space has stretched since the light was released: 3,000 divided by 2.73 is about 1,100. So the universe is roughly 1,100 times larger now than it was about 380,000 years after the Big Bang. Astronomers express the same number as the CMB's redshift, z of about 1,100. It is a striking result: the oldest light we can see has been stretched more than a thousandfold by the expansion of space.
+
+## Common Mistakes
+
+- **Mistake:** The Big Bang was an explosion in space. **Correction:** The theory describes the expansion of space itself, happening everywhere at once. Nothing exploded outward from a point into pre-existing space, and there was no "outside" for matter to fly into.
+- **Mistake:** The Big Bang happened at a specific place, so the universe has a center. **Correction:** The expansion began everywhere at once. Every galaxy sees other galaxies receding from it, so no location is special: there is no center to the expansion.
+- **Mistake:** The Big Bang theory claims to explain how the universe began from nothing. **Correction:** The theory describes the universe's evolution from a hot, dense state about 13.8 billion years ago. What came before that state, or what powered the earliest expansion, is not something the theory claims to answer.
+- **Mistake:** The cosmic microwave background is light from the exact moment of the Big Bang. **Correction:** It is light released about 380,000 years later, at recombination, when the universe cooled to about 3,000 K and became transparent. The CMB we detect today is that glow stretched and cooled by 13.8 billion years of expansion.
+
+## Compare / Contrast
+
+| A | B | Distinction |
+| --- | --- | --- |
+| The Big Bang | An explosion in space | An explosion sends material outward through pre-existing space from a central point; the Big Bang is the stretching of space itself, everywhere at once, with no center. |
+| Cosmological redshift | Doppler shift | The Doppler effect shifts light when a source moves through space; the cosmological redshift lengthens light because the space it travels through is itself expanding. |
+| Hydrogen and helium from Big Bang nucleosynthesis | Heavier elements made in stars | The Big Bang created hydrogen, helium, and traces of lithium in the first few minutes; elements beyond lithium were built later, inside stars and supernova explosions. |
+
+## Key Takeaway
+
+The universe began about 13.8 billion years ago in a hot, dense state and has been expanding ever since, and the cosmic microwave background, the redshift of distant galaxies, and the abundance of hydrogen and helium confirm it.
+
+## Practice Question Bank
+
+**Question 1 (recall).** What does the Big Bang theory claim about the origin of the universe?
+
+- A. The universe began in an extremely hot, dense state about 13.8 billion years ago and has been expanding and cooling ever since.
+- B. The universe has existed forever in essentially its present form.
+- C. Matter was flung outward from a single point into pre-existing empty space.
+- D. The universe formed when the first stars ignited and began producing light.
+
+**Answer: A.** The theory's core claim is that the universe began in a hot, dense state about 13.8 billion years ago and has expanded and cooled since. Option B describes a steady-state universe, which observations rule out; option C describes an explosion in space, which the theory explicitly is not; option D confuses the later formation of the first stars with the origin of the universe itself.
+
+**Question 2 (analysis).** Which of the following is NOT one of the three main lines of evidence for the Big Bang theory?
+
+- A. The cosmic microwave background radiation
+- B. The redshift of distant galaxies
+- C. The abundance of hydrogen and helium
+- D. The regular orbits of the planets in the solar system
+
+**Answer: D.** The three classic tests are the cosmic microwave background, the expansion shown by galaxy redshifts, and the abundance of the light elements hydrogen and helium. The planets' orbits are a feature of our solar system and say nothing about the universe's origin, so option D is the correct answer.
+
+**Question 3 (application).** The cosmic microwave background was released when the universe was about 3,000 K and today measures about 2.7 K. What does the ratio of these temperatures tell us?
+
+- A. The cosmic microwave background was produced recently, close to the present day.
+- B. The universe has expanded by a factor of roughly 1,100 since the cosmic microwave background was released.
+- C. The universe has cooled by exactly 3,000 degrees since recombination.
+- D. The temperature of the cosmic microwave background is set by the stars that formed after recombination.
+
+**Answer: B.** The temperature of the leftover radiation falls in proportion to expansion, so 3,000 K divided by 2.7 K, about 1,100, is the factor by which the universe has grown since the light was released. Option A is wrong because the CMB is the oldest light we observe; option C confuses a ratio with a subtraction; option D is wrong because the CMB is not starlight.
+
+**Question 4 (understanding).** What happened at recombination, about 380,000 years after the Big Bang?
+
+- A. The first stars ignited and began fusing hydrogen into helium.
+- B. The universe's expansion suddenly stopped for a brief period.
+- C. Electrons combined with nuclei to form neutral atoms, and the universe became transparent to light.
+- D. All of the helium in the universe was created in a single burst.
+
+**Answer: C.** At about 3,000 K, electrons settled onto nuclei to form neutral atoms, ending the scattering of light by free electrons and making the universe transparent, which released the radiation we now see as the cosmic microwave background. The first stars came much later, after a dark age; expansion never stopped; and helium was made in the first few minutes, not at recombination.
+
+**Question 5 (recall).** During Big Bang nucleosynthesis, in the first few minutes after the Big Bang, which elements were created?
+
+- A. Mostly hydrogen and helium, with traces of lithium
+- B. Roughly equal amounts of all elements up to iron
+- C. Mostly carbon, oxygen, and nitrogen
+- D. Only helium, created when the first stars formed
+
+**Answer: A.** In the first few minutes, protons and neutrons fused into hydrogen, helium, and traces of lithium (NASA also lists beryllium); the universe cooled too quickly for anything heavier. Elements beyond lithium were built later in stars, which is why options B and C are wrong, and option D is wrong because helium existed before the first stars did.
+
+## Sources
+
+1. NASA — Universe (Overview), Cosmic History: The Universe's History. https://science.nasa.gov/universe/overview/
+2. NASA — WMAP Overview. https://science.nasa.gov/mission/wmap/wmap-overview/
+3. NASA — WMAP's Universe: Big Bang Theory (Big Bang Cosmology). https://map.gsfc.nasa.gov/universe/bb_theory.html (read via Internet Archive capture; live URL redirects to the WMAP mission overview)
+4. NASA — WMAP's Universe: Tests of Big Bang Cosmology. https://map.gsfc.nasa.gov/universe/bb_tests.html (read via Internet Archive capture; live URL redirects to the WMAP mission overview)
+5. NASA — WMAP's Universe: Tests of Big Bang, The Light Elements. https://map.gsfc.nasa.gov/universe/bb_tests_ele.html (read via Internet Archive capture; live URL redirects to the WMAP mission overview)
+6. European Space Agency — Planck and the Cosmic Microwave Background. https://www.esa.int/Science_Exploration/Space_Science/Planck/Planck_and_the_cosmic_microwave_background
+7. OpenStax Astronomy 2e — 29.2 A Model of the Universe (CC BY 4.0). https://openstax.org/books/astronomy/pages/29-2-a-model-of-the-universe
+8. OpenStax Astronomy 2e — 29.3 The Beginning of the Universe (CC BY 4.0). https://openstax.org/books/astronomy/pages/29-3-the-beginning-of-the-universe
+9. OpenStax Astronomy 2e — 29.4 The Cosmic Microwave Background (CC BY 4.0). https://openstax.org/books/astronomy/pages/29-4-the-cosmic-microwave-background
+
+All sources were used as references for original synthesis only; no source prose, diagrams, or tables were reproduced. All quantitative figures (age about 13.8 billion years; recombination at about 380,000 years and 3,000 K; CMB at about 2.7 K; helium at roughly 24-25% of ordinary matter; first stars 30-300 times the Sun's mass) were checked against NASA, ESA, and OpenStax on 2026-08-21.
+
+## Related Topics
+
+- earth-and-space-science:foundations:astronomy
+- earth-and-space-science:foundations:universe
+- earth-and-space-science:foundations:galaxies
+- earth-and-space-science:foundations:stars
+- earth-and-space-science:foundations:solar-system
+
+## Editorial Metadata
+
+- Topic ID: earth-and-space-science:foundations:big-bang-basics
+- Editorial status: READY_TO_PUBLISH
+- Researched and verified: 2026-08-21
+- Sources cited: 9 (6 NASA/ESA, 3 OpenStax)
+- Questions: 5 (recall x2, understanding x1, application x1, analysis x1)
+- Provenance: EliExplains original synthesis; reference-only sources; no source prose adapted.
