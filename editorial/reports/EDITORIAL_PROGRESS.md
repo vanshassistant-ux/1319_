@@ -1,6 +1,6 @@
 # ELIEXPLAINS GLOBAL EDITORIAL PROGRESS
 
-Generated: 2026-08-21T20:15:33.003Z
+Generated: 2026-08-21T20:31:38.640Z
 Counts are computed from the phase content stores by `bun run editorial:progress`.
 
 Subjects total: 44
@@ -9,17 +9,17 @@ Subjects remaining: 20
 Subject completion: 54.55%
 
 Total topics: 1299
-Topics processed: 739
+Topics processed: 746
 Topics published: 282
-Topics ready to publish: 457
+Topics ready to publish: 464
 Topics held: 0
 Topics requiring review: 0
-Topics remaining: 560
-Topic processing: 56.89%
+Topics remaining: 553
+Topic processing: 57.43%
 
-Verified questions: 3695
-Unique source records: 3570
-Source usage classes: REFERENCE_ONLY=2721, PUBLIC_DOMAIN=548, ATTRIBUTION_REQUIRED=206, EXTRACT_AND_ADAPT=93, LINK_ONLY=2
+Verified questions: 3730
+Unique source records: 3604
+Source usage classes: REFERENCE_ONLY=2755, PUBLIC_DOMAIN=548, ATTRIBUTION_REQUIRED=206, EXTRACT_AND_ADAPT=93, LINK_ONLY=2
 
 ## Phase progress
 
@@ -27,7 +27,7 @@ Source usage classes: REFERENCE_ONLY=2721, PUBLIC_DOMAIN=548, ATTRIBUTION_REQUIR
 | --- | --- | --- | --- |
 | 1 | 11 / 11 | 282 / 282 | 100.00% |
 | 2 | 1 / 11 | 47 / 325 | 14.46% |
-| 3 | 9 / 11 | 294 / 329 | 89.36% |
+| 3 | 9 / 11 | 301 / 329 | 91.49% |
 | 4 | 3 / 11 | 116 / 363 | 31.96% |
 
 ## Collection progress
@@ -37,7 +37,7 @@ Source usage classes: REFERENCE_ONLY=2721, PUBLIC_DOMAIN=548, ATTRIBUTION_REQUIR
 | Professional Studies | 7 / 7 | 166 / 166 | 100.00% |
 | Technology | 4 / 8 | 135 / 257 | 52.53% |
 | Business & Money | 3 / 9 | 84 / 240 | 35.00% |
-| Humanities & Culture | 5 / 7 | 162 / 197 | 82.23% |
+| Humanities & Culture | 5 / 7 | 169 / 197 | 85.79% |
 | Science & Health | 1 / 6 | 48 / 206 | 23.30% |
 | Society & Government | 4 / 7 | 144 / 233 | 61.80% |
 
@@ -68,6 +68,6 @@ Source usage classes: REFERENCE_ONLY=2721, PUBLIC_DOMAIN=548, ATTRIBUTION_REQUIR
 | philosophy-and-ethics | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
 | project-management | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
 | python-programming | 36 / 36 | 36 | 0 | 0 | 0 | 0 |
-| religious-studies | 17 / 27 | 0 | 17 | 0 | 0 | 10 |
+| religious-studies | 24 / 27 | 0 | 24 | 0 | 0 | 3 |
 | social-work-and-human-services | 20 / 20 | 20 | 0 | 0 | 0 | 0 |
 | web-development | 47 / 47 | 0 | 47 | 0 | 0 | 0 |
