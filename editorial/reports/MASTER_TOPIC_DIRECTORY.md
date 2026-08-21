@@ -1,6 +1,6 @@
 # EliExplains — Master Topic Directory
 
-Generated 2026-08-21 09:54 UTC by `bun scripts/build-master-directory.mjs` from the master curriculum + the four phase content stores.
+Generated 2026-08-21 10:14 UTC by `bun scripts/build-master-directory.mjs` from the master curriculum + the four phase content stores.
 
 **Legend:** 🟢 LIVE · 🔵 READY (unpublished) · 🟠 NEEDS REVIEW · ⚪ NOT STARTED · ⚫ PRUNED (mis-ingested header/note) · 🟣 ADDED (not in master curriculum)
 
@@ -8,10 +8,10 @@ Generated 2026-08-21 09:54 UTC by `bun scripts/build-master-directory.mjs` from 
 
 | Scope | Curriculum topics | Genuine topics | 🟢 Live | 🔵 Ready | 🟠 Review | ⚪ Not started | Done (live+ready) |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| **All phases** | 1319 | 1299 | 282 | 382 | 0 | 635 | **664 (51.1%)** |
+| **All phases** | 1319 | 1299 | 282 | 395 | 0 | 622 | **677 (52.1%)** |
 | Phase 1 — LIVE on eliexplains.org | 282 | 282 | 282 | 0 | 0 | 0 | 282 (100.0%) |
 | Phase 2 | 325 | 325 | 0 | 47 | 0 | 278 | 47 (14.5%) |
-| Phase 3 | 337 | 329 | 0 | 219 | 0 | 110 | 219 (66.6%) |
+| Phase 3 | 337 | 329 | 0 | 232 | 0 | 97 | 232 (70.5%) |
 | Phase 4 | 375 | 363 | 0 | 116 | 0 | 247 | 116 (32.0%) |
 
 ## Contents
@@ -45,7 +45,7 @@ Generated 2026-08-21 09:54 UTC by `bun scripts/build-master-directory.mjs` from 
   - [Business Law & Ethics](#business-law-and-ethics) — 31/31 done
   - [Project Management](#project-management) — 28/28 done
   - [English & Literature](#english-and-literature) — 26/26 done
-  - [Philosophy & Ethics](#philosophy-and-ethics) — 15/28 done
+  - [Philosophy & Ethics](#philosophy-and-ethics) — 28/28 done
   - [Art History & Visual Culture](#art-history-and-visual-culture) — 34/34 done
   - [Music Appreciation](#music-appreciation) — 28/28 done
   - [Film & Media Studies](#film-and-media-studies) — 13/28 done
@@ -1006,9 +1006,9 @@ Phase 3 · live 0 · ready 26 · review 0 · not started 0
 | 26 | Foundations | Writing About Literature | 🔵 READY (unpublished) | 5 |  |
 
 <a id="philosophy-and-ethics"></a>
-## Philosophy & Ethics — 🔧 IN PROGRESS (15/28)
+## Philosophy & Ethics — ✅ COMPLETE · awaiting publish (28/28)
 
-Phase 3 · live 0 · ready 15 · review 0 · not started 13
+Phase 3 · live 0 · ready 28 · review 0 · not started 0
 
 | # | Unit | Topic | Status | Qs | Link |
 |---:|---|---|---|---:|---|
@@ -1027,19 +1027,19 @@ Phase 3 · live 0 · ready 15 · review 0 · not started 13
 | 13 | Foundations | Ethics | 🔵 READY (unpublished) | 5 |  |
 | 14 | Foundations | Moral Reasoning | 🔵 READY (unpublished) | 5 |  |
 | 15 | Foundations | Utilitarianism | 🔵 READY (unpublished) | 5 |  |
-| 16 | Foundations | Deontology | ⚪ NOT STARTED |  |  |
-| 17 | Foundations | Virtue Ethics | ⚪ NOT STARTED |  |  |
-| 18 | Foundations | Social Contract Theory | ⚪ NOT STARTED |  |  |
-| 19 | Foundations | Justice | ⚪ NOT STARTED |  |  |
-| 20 | Foundations | Rights | ⚪ NOT STARTED |  |  |
-| 21 | Foundations | Equality | ⚪ NOT STARTED |  |  |
-| 22 | Foundations | Applied Ethics | ⚪ NOT STARTED |  |  |
-| 23 | Foundations | Healthcare Ethics | ⚪ NOT STARTED |  |  |
-| 24 | Foundations | Technology Ethics | ⚪ NOT STARTED |  |  |
-| 25 | Foundations | Environmental Ethics | ⚪ NOT STARTED |  |  |
-| 26 | Foundations | AI Ethics | ⚪ NOT STARTED |  |  |
-| 27 | Foundations | Philosophy of Religion | ⚪ NOT STARTED |  |  |
-| 28 | Foundations | Philosophy of Science | ⚪ NOT STARTED |  |  |
+| 16 | Foundations | Deontology | 🔵 READY (unpublished) | 5 |  |
+| 17 | Foundations | Virtue Ethics | 🔵 READY (unpublished) | 5 |  |
+| 18 | Foundations | Social Contract Theory | 🔵 READY (unpublished) | 5 |  |
+| 19 | Foundations | Justice | 🔵 READY (unpublished) | 5 |  |
+| 20 | Foundations | Rights | 🔵 READY (unpublished) | 5 |  |
+| 21 | Foundations | Equality | 🔵 READY (unpublished) | 5 |  |
+| 22 | Foundations | Applied Ethics | 🔵 READY (unpublished) | 5 |  |
+| 23 | Foundations | Healthcare Ethics | 🔵 READY (unpublished) | 5 |  |
+| 24 | Foundations | Technology Ethics | 🔵 READY (unpublished) | 5 |  |
+| 25 | Foundations | Environmental Ethics | 🔵 READY (unpublished) | 5 |  |
+| 26 | Foundations | AI Ethics | 🔵 READY (unpublished) | 5 |  |
+| 27 | Foundations | Philosophy of Religion | 🔵 READY (unpublished) | 5 |  |
+| 28 | Foundations | Philosophy of Science | 🔵 READY (unpublished) | 5 |  |
 
 <a id="art-history-and-visual-culture"></a>
 ## Art History & Visual Culture — ✅ COMPLETE · awaiting publish (34/34)

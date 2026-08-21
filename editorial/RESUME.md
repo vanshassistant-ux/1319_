@@ -14,7 +14,8 @@ Read this file first on every new run, then run `node scripts/editorial-progress
 ## Current position
 
 - **English & Literature is COMPLETE** — 26/26 topics accepted at `source-verified`, `READY_TO_PUBLISH`, `public: false`; subject audit 0 issues; report: `editorial/reports/subjects/english-and-literature.md`. The inherited `tone` NEEDS_EDITORIAL_REVIEW topic was fixed (College Version expanded past the 600-word gate) and re-gated to READY_TO_PUBLISH. Completed 2026-08-21.
-- **Next: `philosophy-and-ethics` (phase 3, 13 remaining topics)** — deontology, virtue-ethics, social-contract-theory, justice, rights, equality, applied-ethics, healthcare-ethics, technology-ethics, environmental-ethics, ai-ethics, philosophy-of-religion, philosophy-of-science. Scaffold + source-map exist; 15/28 accepted.
+- **Philosophy & Ethics is COMPLETE** — 28/28 topics accepted at , , ; subject audit 0 issues; report: . Completed 2026-08-21.
+- **Next:  (phase 3, 15 remaining topics)** — character, genre, documentary, animation, representation, race-and-media, gender-and-media, media-industries, media-ownership, advertising, news-media, social-media, media-literacy, propaganda, media-criticism. Scaffold + source-map exist; 13/28 accepted.
 - Phase 1 is complete, including Python Programming.
 - **Web Development is COMPLETE** — 47/47 topics accepted at `source-verified`, `READY_TO_PUBLISH`, and `public: false`; subject audit returned 0 issues; report: `editorial/reports/subjects/web-development.md`.
 - The Web Development queue was completed on 2026-08-20. Its audited exceptions are documented in `editorial/subjects/web-development/audit-exceptions.json`.

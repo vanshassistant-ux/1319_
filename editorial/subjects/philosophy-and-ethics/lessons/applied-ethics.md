@@ -87,7 +87,7 @@ Applied ethics examines moral questions in concrete practices, drawing on normat
 
 ## Practice Question Bank
 
-1. **Which question is an example of applied ethics?** Whether a specific university housing policy is fair to the students it affects. **Answer: A.**
+1. **Which example below is a question of applied ethics?** Whether a specific university housing policy is fair to the students it affects. **Answer: A.**
 2. **A team analyzing a company's plan to move production overseas gathers wage and safety data, then compares utilitarian, rights-based, and virtue-based readings of the case. What are they doing?** Applied ethics that uses normative theories as resources and checks relevant facts. **Answer: C.**
 3. **The method of reflective equilibrium — adjusting considered moral judgments and general principles until they agree — is most closely associated with which thinker?** John Rawls. **Answer: D.**
 4. **A neighborhood association must decide whether to let a small parking lot replace a vacant lot where children play. Which sequence follows the applied-ethics method taught in this lesson?** State the moral question, gather relevant facts, name the moral considerations, weigh them, and consider alternatives. **Answer: B.**

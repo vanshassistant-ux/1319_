@@ -1,13 +1,13 @@
 # EliExplains — Phase Status Report
 
-Generated 2026-08-21 09:54 UTC. Source of truth: the four phase content stores (`content/phase-N/content-progress.json`). Companion files: `MASTER_TOPIC_DIRECTORY.md` (every topic, every status), `master-topic-directory.csv/.json` (machine-readable).
+Generated 2026-08-21 10:14 UTC. Source of truth: the four phase content stores (`content/phase-N/content-progress.json`). Companion files: `MASTER_TOPIC_DIRECTORY.md` (every topic, every status), `master-topic-directory.csv/.json` (machine-readable).
 
 ## Executive summary
 
 - **1299 genuine topics** across 44 subjects (the master curriculum lists 1319 entries; 20 were mis-ingested section headers/author notes and have been pruned from the queues; 0 topics were added/repurposed).
-- **664 topics done (51.1%)**: 282 live on eliexplains.org, 382 fully gated (`READY_TO_PUBLISH`) and waiting only on owner sign-off to publish.
-- **0 topics need review** (held/needs-review statuses). **635 topics not started.**
-- Subjects: 21 complete · 5 in progress · 18 not started.
+- **677 topics done (52.1%)**: 282 live on eliexplains.org, 395 fully gated (`READY_TO_PUBLISH`) and waiting only on owner sign-off to publish.
+- **0 topics need review** (held/needs-review statuses). **622 topics not started.**
+- Subjects: 22 complete · 4 in progress · 18 not started.
 
 ## By phase
 
@@ -15,7 +15,7 @@ Generated 2026-08-21 09:54 UTC. Source of truth: the four phase content stores (
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | Phase 1 — LIVE on eliexplains.org | 11 | 282 | 282 | 282 | 0 | 0 | 0 | 100.0% |
 | Phase 2 | 11 | 325 | 47 | 0 | 47 | 0 | 278 | 14.5% |
-| Phase 3 | 11 | 329 | 219 | 0 | 219 | 0 | 110 | 66.6% |
+| Phase 3 | 11 | 329 | 232 | 0 | 232 | 0 | 97 | 70.5% |
 | Phase 4 | 11 | 363 | 116 | 0 | 116 | 0 | 247 | 32.0% |
 
 ## By subject (all 44)
@@ -48,7 +48,7 @@ Generated 2026-08-21 09:54 UTC. Source of truth: the four phase content stores (
 | 3 | Business Law & Ethics | 31 | 31 | 0 | 31 | 0 | 0 | ✅ complete · unpublished |
 | 3 | Project Management | 28 | 28 | 0 | 28 | 0 | 0 | ✅ complete · unpublished |
 | 3 | English & Literature | 26 | 26 | 0 | 26 | 0 | 0 | ✅ complete · unpublished |
-| 3 | Philosophy & Ethics | 28 | 15 | 0 | 15 | 0 | 13 | 🔧 in progress (53.6%) |
+| 3 | Philosophy & Ethics | 28 | 28 | 0 | 28 | 0 | 0 | ✅ complete · unpublished |
 | 3 | Art History & Visual Culture | 34 | 34 | 0 | 34 | 0 | 0 | ✅ complete · unpublished |
 | 3 | Music Appreciation | 28 | 28 | 0 | 28 | 0 | 0 | ✅ complete · unpublished |
 | 3 | Film & Media Studies | 28 | 13 | 0 | 13 | 0 | 15 | 🔧 in progress (46.4%) |
@@ -71,12 +71,11 @@ Generated 2026-08-21 09:54 UTC. Source of truth: the four phase content stores (
 
 - **Phase 1:** Education (21), Social Work & Human Services (20), Criminal Justice & Criminology (28), Engineering Fundamentals (28), Health Administration (24), Hospitality & Tourism (20), Graphic Design & Digital Media (28), Environmental Sustainability (25), Computer Literacy (25), Computer Science Fundamentals (27), Python Programming (36)
 - **Phase 2:** Web Development (47)
-- **Phase 3:** Entrepreneurship (25), Business Law & Ethics (31), Project Management (28), English & Literature (26), Art History & Visual Culture (34), Music Appreciation (28)
+- **Phase 3:** Entrepreneurship (25), Business Law & Ethics (31), Project Management (28), English & Literature (26), Philosophy & Ethics (28), Art History & Visual Culture (34), Music Appreciation (28)
 - **Phase 4:** History (49), Human Geography (28), Economics (39)
 
 ## What is IN PROGRESS (partially done)
 
-- **Philosophy & Ethics** (Phase 3): 15/28 done; 13 remaining — Deontology; Virtue Ethics; Social Contract Theory; Justice; Rights; Equality; Applied Ethics; Healthcare Ethics; … (+5 more, see directory)
 - **Film & Media Studies** (Phase 3): 13/28 done; 15 remaining — Character; Genre; Documentary; Animation; Representation; Race and Media; Gender and Media; Media Industries; … (+7 more, see directory)
 - **Religious Studies** (Phase 3): 2/27 done; 25 remaining — Myth; Ritual; Sacred Texts; Religious Authority; Ethics; Religious Experience; Indigenous Religious Traditions; Hindu Traditions; … (+17 more, see directory)
 - **Languages & ESL** (Phase 3): 1/26 done; 25 remaining — Sentence Structure; Subject and Predicate; Nouns; Pronouns; Verbs; Adjectives; Adverbs; Articles; … (+17 more, see directory)

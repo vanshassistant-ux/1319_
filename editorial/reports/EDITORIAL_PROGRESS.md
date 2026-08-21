@@ -1,25 +1,25 @@
 # ELIEXPLAINS GLOBAL EDITORIAL PROGRESS
 
-Generated: 2026-08-21T09:54:14.710Z
+Generated: 2026-08-21T10:13:48.575Z
 Counts are computed from the phase content stores by `bun run editorial:progress`.
 
 Subjects total: 44
-Subjects processed: 21
-Subjects remaining: 23
-Subject completion: 47.73%
+Subjects processed: 22
+Subjects remaining: 22
+Subject completion: 50.00%
 
 Total topics: 1299
-Topics processed: 664
+Topics processed: 677
 Topics published: 282
-Topics ready to publish: 382
+Topics ready to publish: 395
 Topics held: 0
 Topics requiring review: 0
-Topics remaining: 635
-Topic processing: 51.12%
+Topics remaining: 622
+Topic processing: 52.12%
 
-Verified questions: 3320
-Unique source records: 3171
-Source usage classes: REFERENCE_ONLY=2371, PUBLIC_DOMAIN=546, ATTRIBUTION_REQUIRED=159, EXTRACT_AND_ADAPT=93, LINK_ONLY=2
+Verified questions: 3385
+Unique source records: 3234
+Source usage classes: REFERENCE_ONLY=2433, PUBLIC_DOMAIN=547, ATTRIBUTION_REQUIRED=159, EXTRACT_AND_ADAPT=93, LINK_ONLY=2
 
 ## Phase progress
 
@@ -27,7 +27,7 @@ Source usage classes: REFERENCE_ONLY=2371, PUBLIC_DOMAIN=546, ATTRIBUTION_REQUIR
 | --- | --- | --- | --- |
 | 1 | 11 / 11 | 282 / 282 | 100.00% |
 | 2 | 1 / 11 | 47 / 325 | 14.46% |
-| 3 | 6 / 11 | 219 / 329 | 66.57% |
+| 3 | 7 / 11 | 232 / 329 | 70.52% |
 | 4 | 3 / 11 | 116 / 363 | 31.96% |
 
 ## Collection progress
@@ -37,7 +37,7 @@ Source usage classes: REFERENCE_ONLY=2371, PUBLIC_DOMAIN=546, ATTRIBUTION_REQUIR
 | Professional Studies | 7 / 7 | 166 / 166 | 100.00% |
 | Technology | 4 / 8 | 135 / 257 | 52.53% |
 | Business & Money | 3 / 9 | 84 / 240 | 35.00% |
-| Humanities & Culture | 3 / 7 | 119 / 197 | 60.41% |
+| Humanities & Culture | 4 / 7 | 132 / 197 | 67.01% |
 | Science & Health | 0 / 6 | 16 / 206 | 7.77% |
 | Society & Government | 4 / 7 | 144 / 233 | 61.80% |
 
@@ -65,7 +65,7 @@ Source usage classes: REFERENCE_ONLY=2371, PUBLIC_DOMAIN=546, ATTRIBUTION_REQUIR
 | human-geography | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
 | languages-and-esl | 1 / 26 | 0 | 1 | 0 | 0 | 25 |
 | music-appreciation | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
-| philosophy-and-ethics | 15 / 28 | 0 | 15 | 0 | 0 | 13 |
+| philosophy-and-ethics | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
 | project-management | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
 | python-programming | 36 / 36 | 36 | 0 | 0 | 0 | 0 |
 | religious-studies | 2 / 27 | 0 | 2 | 0 | 0 | 25 |
