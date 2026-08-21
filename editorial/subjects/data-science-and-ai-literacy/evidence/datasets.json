@@ -1,0 +1,187 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:datasets",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "What a dataset is: a collection of related observations, typically arranged in rows and columns",
+      "Rows as observations/records and columns as named variables/features (features-and-labels referenced only)",
+      "Tidy data as an ideal: one row per observation, one column per variable (attributed to Wickham 2014)",
+      "Dataset size: rows versus columns; wide versus tall shapes",
+      "Where datasets come from: measurements, surveys, sensors, logs, and public data (data-collection referenced only)",
+      "Data quality at a glance: missing entries, duplicates, inconsistent formats (data-cleaning referenced only)"
+    ],
+    "supporting": [
+      "Observation/record terminology",
+      "Named columns and why names matter",
+      "Public-use datasets released by government agencies",
+      "Data science treats datasets as raw material"
+    ],
+    "outOfScope": [
+      "Types of data (types-of-data owns it)",
+      "Structured versus unstructured data (structured-versus-unstructured-data owns it)",
+      "Data-collection methodology (data-collection owns it)",
+      "Data cleaning and fixing quality problems (data-cleaning owns it)",
+      "Features and labels mechanics (features-and-labels owns it)",
+      "Machine learning training workflows"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A dataset is a collection of related observations gathered for a purpose; data science treats datasets as the raw material of analysis.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ibm-what-is-data-science", "gc-big-data-defined"],
+      "status": "supported"
+    },
+    {
+      "claim": "Most datasets used in data science are arranged as tables in which each row is one observation and each column is one variable.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["wickham-tidy-data", "ms-learn-explore-analyze-data-python"],
+      "status": "supported"
+    },
+    {
+      "claim": "Tidy data, as defined by Hadley Wickham (2014), is the arrangement in which each variable is a column, each observation is a row, and each type of observational unit is stored in its own table.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["wickham-tidy-data"],
+      "status": "supported"
+    },
+    {
+      "claim": "Datasets range widely in size, measured by rows and columns; a dataset with many columns relative to its rows is informally called wide, and one with many rows relative to its columns is called tall or long.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["wickham-tidy-data", "gc-big-data-defined"],
+      "status": "supported"
+    },
+    {
+      "claim": "Datasets come from many sources, including survey responses, sensor and device readings, instrument measurements, log files, organizational records, and public data releases.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["census-datasets", "gc-big-data-defined", "ibm-what-is-data-science"],
+      "status": "supported"
+    },
+    {
+      "claim": "Real-world datasets commonly contain quality problems such as missing entries, duplicates, and inconsistent formats; recognizing these problems is the first step before any cleaning.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["wickham-tidy-data", "ms-learn-clean-data-power-bi"],
+      "status": "supported"
+    },
+    {
+      "claim": "The U.S. Census Bureau publishes datasets as data files for public use, with personally identifiable information removed, and its surveys provide statistics about the nation.",
+      "claimType": "CURRENT",
+      "sourceIds": ["census-datasets"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Terminology for dataset shape: 'wide' versus 'tall/long'.",
+      "positions": [
+        "Common practice informally describes reshaping a dataset as making wide datasets long or tall.",
+        "Wickham (2014) explicitly avoids the terms wide/long as imprecise, preferring structural descriptions."
+      ],
+      "resolution": "The lesson names wide and tall as common informal labels, notes that some say long, and honestly records that the tidy-data paper itself flags the terms as imprecise."
+    },
+    {
+      "issue": "Whether 'dataset' implies tabular structure.",
+      "positions": [
+        "The tidy-data literature treats tables (rows and columns) as the central dataset structure.",
+        "Organizations also store collections of text, images, and audio that are called datasets (covered by the structured-versus-unstructured-data sibling topic)."
+      ],
+      "resolution": "The lesson says most datasets used in data science are arranged as tables, without claiming all data is tabular; non-tabular data is deferred to the sibling topic."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's boilerplate framing ('Datasets is a foundational concept in Data Science & Ai Literacy') carried no verifiable content and was discarded.",
+    "The draft's toolbox-drawer framing of the concept was unsupported and replaced with a sourced card-directory analogy.",
+    "The draft's three-option questions did not meet the four-option format and were rebuilt.",
+    "The draft's vocabulary terms ('context', 'evidence', 'application') did not describe dataset concepts and were replaced."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic draft boilerplate with sourced, topic-specific content.",
+    "Added the tidy-data principle with attribution to Hadley Wickham (2014).",
+    "Added the wide-versus-tall distinction with the paper's own caution that the terms are informal.",
+    "Added data-quality-at-a-glance content (missing entries, duplicates, inconsistent formats) with sources.",
+    "Rebuilt the question bank to exactly five four-option items with a spread answer key (A, B, C, D, A)."
+  ],
+  "rightsIssues": [
+    "All sources used as REFERENCE_ONLY: no source prose reproduced; all lesson prose and examples are original. The tidy-data paper (JSS) is open-access; rights not separately verified, so it is cited for facts only."
+  ],
+  "sourceRecords": [
+    {
+      "id": "census-datasets",
+      "title": "Census Datasets",
+      "provider": "U.S. Census Bureau",
+      "url": "https://www.census.gov/data/datasets.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Defines Census datasets as 'data files, for public use, with all personally identifiable information removed to ensure confidentiality' and describes the Bureau's surveys as providing periodic, comprehensive statistics about the nation. Supports claims about public-use datasets and surveys as a data source."
+    },
+    {
+      "id": "gc-big-data-defined",
+      "title": "What is Big Data? (Big Data Defined: Examples and Benefits)",
+      "provider": "Google Cloud",
+      "url": "https://cloud.google.com/learn/what-is-big-data",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Describes datasets as large and diverse collections of data characterized by volume, velocity, and variety; cites the Internet of Things and sensor data among the sources of growing data. Supports claims about dataset size and sensor/device data as a source."
+    },
+    {
+      "id": "ibm-what-is-data-science",
+      "title": "What is Data Science?",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/topics/data-science",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. States that data science uncovers actionable insights hidden in an organization's data and that data ingestion gathers raw data from many sources, including manual entry, real-time streaming from systems and devices, and log files. Supports claims about datasets as raw material and log/device data as sources."
+    },
+    {
+      "id": "wickham-tidy-data",
+      "title": "Tidy Data (Journal of Statistical Software, Vol. 59, Issue 10)",
+      "provider": "Journal of Statistical Software",
+      "url": "https://www.jstatsoft.org/article/view/v059i10",
+      "sourceType": "peer-reviewed",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Canonical JSS record registered; the author-hosted PDF (https://vita.had.co.nz/papers/tidy-data.pdf) was read. By Hadley Wickham, 2014. Defines tidy data as each variable a column, each observation a row, and each type of observational unit a table; discusses missing values, messy data, and notes that reshaping is 'often described as making wide datasets long or tall' while flagging those terms as imprecise. Primary source for the tidy-data ideal and the wide/tall terminology."
+    },
+    {
+      "id": "ms-learn-explore-analyze-data-python",
+      "title": "Explore and analyze data with Python",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/training/modules/explore-analyze-data-with-python/",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21 (module overview; unit content is script-rendered). States that data exploration and analysis is at the core of data science and covers examining real-world data. Supports the claim that tabular exploration and analysis of datasets is central to data science; no tool workflows taught in the lesson."
+    },
+    {
+      "id": "ms-learn-clean-data-power-bi",
+      "title": "Clean, transform, and load data in Power BI",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/training/modules/clean-data-power-bi/",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21 (module overview; unit content is script-rendered). Lists among its objectives resolving 'inconsistencies, unexpected or null values, and data quality issues'. Supports the claim that missing values (nulls), duplicates, and inconsistent formats are recognized data-quality problems."
+    }
+  ]
+}

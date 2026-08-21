@@ -1,0 +1,288 @@
+{
+  "id": "data-science-and-ai-literacy:foundations:missing-data",
+  "subjectSlug": "data-science-and-ai-literacy",
+  "unitSlug": "foundations",
+  "slug": "missing-data",
+  "title": "Missing Data",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "data-science-and-ai-literacy",
+    "foundations",
+    "missing-data",
+    "data-quality"
+  ],
+  "in30Seconds": "Missing data means blank cells in a dataset: a survey question no one answered, a sensor reading that never arrived, a record that was lost. Gaps are normal in real data, but they are never neutral. The pattern of missingness, and the way you handle it — dropping rows, filling values, flagging the gap — can change what an analysis appears to say. Honest analyses report how much data was missing and what they did about it.",
+  "whyItMatters": "Every real dataset has gaps, and the choices made about those blanks shape the conclusions. A hospital's appointment records, a city's traffic sensors, a retailer's sales logs — none are complete. Statisticians have studied missingness since the 1970s; Donald Rubin's 1976 framework of three missing-data mechanisms still organizes how analysts think about it. The stakes grow as data science spreads: models trained on poorly handled gaps inherit whatever distortion the handling introduced. Understanding missing data is also a reading skill — when you see a study, you can ask how much data was missing and what the authors did, and judge whether their answer is credible.",
+  "learningObjectives": [
+    "Define missing data and describe the common ways values go missing in real datasets.",
+    "Distinguish the three missingness patterns — missing completely at random, missing at random, and missing not at random — at an intuitive level.",
+    "Explain the trade-offs of the main handling options: dropping rows, filling values, flagging gaps, and investigating why data is missing.",
+    "Apply the principle that filling or dropping data can itself introduce bias.",
+    "Explain what an honest report of missingness should state."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Gaps are the norm, not the exception",
+      "body": "A dataset is a record of something that happened, and records are rarely perfect. A row in a table stands for one person, one day, one measurement — and sometimes part of that row never got recorded. The blank cell is not a value of zero; it is the absence of a recorded value. Missing data is the general term for these gaps. Most real-world analyses start by counting them: the number and location of gaps already tell you something before any analysis begins. A column where a third of the entries are empty is a finding in itself."
+    },
+    {
+      "heading": "Three ordinary routes to a gap",
+      "body": "Values usually go missing in one of three everyday ways. First, people skip questions. In a course feedback form, students who loved or hated the class often leave a rating, while mildly satisfied students scroll past it — so the ratings you have are not a random sample of all students. Second, instruments fail. A weather station's rainfall sensor goes offline during a storm, a warehouse temperature logger's battery dies midweek, or a fitness tracker sits in a drawer for three days. The equipment did not stop measuring because the conditions were special; it stopped because it broke. Third, records are lost or never entered. A clinic's paper intake forms from one week are misplaced before scanning, a new cashier forgets to scan one product category, or a file-transfer step silently skips rows. Each route leaves the same visible symptom — a blank cell — but the three routes have very different meanings."
+    },
+    {
+      "heading": "Why the pattern of missingness matters",
+      "body": "In 1976 the statistician Donald Rubin introduced a way of classifying missingness that analysts still use, and it turns on one question: does the gap relate to anything else in the data? If the missing values are scattered with no connection to the data — like a sprinkler that randomly wets some pages of a notebook — the pattern is called missing completely at random (MCAR). MCAR is the friendliest case: ignoring the gaps wastes a little information, but it does not bend the results. If the chance of a gap depends on something you can see — students who score low on a pre-test are more likely to skip the post-test, so the missing scores are explainable from the pre-test — the pattern is missing at random (MAR). The gap is not random at all, but its cause is visible in the data you still have. The dangerous case is missing not at random (MNAR): the chance of a gap depends on the missing value itself. People with very high incomes are more likely to withhold their income; patients with severe symptoms are more likely to drop out of a treatment study. Nothing you still have fully explains these gaps, because the thing that explains them is precisely what is missing."
+    },
+    {
+      "heading": "Four ways analysts respond",
+      "body": "Analysts respond to gaps with a few standard moves, each with a price. Dropping the row removes the incomplete record and keeps only fully recorded values. It is simple and honest, but it throws away everything else that row contained — and if the missing rows differ from the rest, the rows left behind no longer represent the whole group. Filling in a value (often called imputation) replaces each blank with a placeholder such as the average of the column, a typical value, or an estimated one. The row survives, but the filled number is a guess wearing the uniform of a real measurement, and repeated guesses can pull the whole picture toward the middle. Flagging leaves the gap in place but marks it, for example with a column recording whether a value was missing, so nothing downstream mistakes the blank for a real zero. Investigating means going back to the source: asking the people who collected the data, checking the instrument's logs, finding the lost forms. It is the only option that can recover information instead of spending it."
+    },
+    {
+      "heading": "Handling choices can create bias",
+      "body": "The key warning: both filling and dropping are interventions, and interventions can distort. Dropping rows when the gaps are not random removes one kind of person, one kind of day, one kind of failure. Filling with an average pulls unusual rows toward the middle, shrinking the variation you may be trying to study. Microsoft's machine-learning documentation puts it plainly: the cleaning method you choose for missing values can dramatically affect your results. Every handling choice assumes something about the values that are absent. If the assumption is wrong — and with MNAR it usually is — the analysis inherits the error. That does not make handling choices wrong; it makes them decisions, which means they need a reason, not a default."
+    },
+    {
+      "heading": "Report the gaps honestly",
+      "body": "A credible analysis states how much data was missing, where the gaps were, what was done about them, and why. The research literature is explicit: researchers should acknowledge the missing-data problem and the conditions under which it occurred. Readers can then judge whether the handling was reasonable, and reviewers can hold authors to the standard. A report that says only 'after cleaning, the final dataset had 4,800 rows' has hidden a decision; one that says '540 of 5,340 records were missing a satisfaction score, and we kept those rows but flagged the blanks' has made the decision visible. Missingness is not a blemish to be tidied away; it is a property of the data, and describing it is part of describing the data."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "missing data",
+      "definition": "Entries in a dataset that were never recorded, leaving blank cells where values were expected."
+    },
+    {
+      "term": "missing completely at random (MCAR)",
+      "definition": "A missingness pattern in which gaps are unrelated to any value in the dataset, so the blanks are scattered as if by chance."
+    },
+    {
+      "term": "missing at random (MAR)",
+      "definition": "A missingness pattern in which the chance of a gap depends on values that were observed, such as a skipped follow-up question explained by an earlier answer."
+    },
+    {
+      "term": "missing not at random (MNAR)",
+      "definition": "A missingness pattern in which the chance of a gap depends on the missing value itself, such as high earners withholding their income."
+    },
+    {
+      "term": "nonresponse",
+      "definition": "A missing value caused by a person who did not answer a question or participate in a survey."
+    },
+    {
+      "term": "imputation",
+      "definition": "The practice of filling a missing value with a placeholder such as an average or an estimated value."
+    },
+    {
+      "term": "dropping rows",
+      "definition": "Removing entire records that contain missing values so that only complete records remain in the dataset."
+    },
+    {
+      "term": "flagging missingness",
+      "definition": "Marking gaps explicitly, for example with an indicator column, so later steps can tell a blank from a real value."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Missing data is just blank cells where a value should be. Blanks happen all the time: someone skips a question, a sensor stops working, a form gets lost. The important question is why the blanks appeared. If gaps are scattered with no pattern, they cost you a little information but nothing more. If gaps depend on something you already know about, they are explainable. If gaps depend on the missing value itself — rich people hiding income, sick patients dropping out — that is the dangerous kind, because nothing you have left explains it. Analysts can drop the row, fill in a guess, mark the gap, or go find the real value. Whatever they choose can quietly change the answer, so honest work says how much was missing and what was done.",
+    "analogy": "Think of a jigsaw puzzle missing some pieces. If the missing pieces are scattered evenly, you can still see most of the picture and guess the rest. If a whole corner is missing, the picture is distorted where it matters, and the pieces that are gone explain something about the corner itself — maybe that part of the puzzle was damaged. Deciding whether to fill the gaps with guesses or leave them empty changes the picture you present.",
+    "analogyLimits": "Puzzle pieces are gone forever, but missing data can sometimes be recovered by going back to the source. And in data, the pattern of missingness is itself information worth reporting, which a jigsaw puzzle does not communicate."
+  },
+  "workedExample": "A neighborhood clinic collects 600 appointment-satisfaction forms each month. This month, 54 forms arrived without a satisfaction rating, and 6 forms never arrived at all. The office manager counts the gaps first: 54 of 600 forms are missing a rating, and 6 are missing entirely. Looking closer, she notices that patients over 65 were far more likely to leave the rating blank. That pattern rules out 'missing completely at random' — the gaps track something observable, the patients' age. Dropping all 54 rows would quietly remove older patients from the analysis, which could make the clinic's satisfaction numbers look rosier than they are. Filling each blank with the average rating would hide the fact that older patients were underserved. She keeps the rows, flags the blanks with a 'rating missing' column, and reports: 54 skipped ratings plus 6 lost forms out of 600, with the age pattern noted, and the flagged approach chosen so the clinic's managers can see the gap rather than a smoothed-over number.",
+  "commonMistakes": [
+    {
+      "mistake": "Deleting every row with a gap without checking whether those rows differ from the rest.",
+      "correction": "Compare the complete rows with the incomplete ones first; if they differ, dropping them changes what the dataset represents."
+    },
+    {
+      "mistake": "Filling blanks with an average and then reporting the filled numbers as if they were real measurements.",
+      "correction": "A filled value is a placeholder. Report that imputation happened, and treat the filled entries differently from recorded ones."
+    },
+    {
+      "mistake": "Reading a blank cell as zero.",
+      "correction": "A blank means 'no value was recorded'; zero is a recorded value. Mistaking one for the other invents data."
+    },
+    {
+      "mistake": "Publishing results without saying how much data was missing or what was done about it.",
+      "correction": "State the count and location of gaps, the handling method, and the reason for it, so readers can judge the analysis."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "A blank cell",
+      "b": "A recorded zero",
+      "distinction": "A blank means no value was recorded at all; a zero is a real measurement. They carry completely different information and must not be merged."
+    },
+    {
+      "a": "Dropping rows with gaps",
+      "b": "Filling gaps with a value",
+      "distinction": "Dropping keeps only real data but loses entire records; filling keeps the records but adds guessed values. Both can distort results, in different directions."
+    },
+    {
+      "a": "Missing completely at random",
+      "b": "Missing not at random",
+      "distinction": "In MCAR the gaps are unrelated to the data and mostly harmless; in MNAR the gaps depend on the missing values themselves and are the hardest to fix safely."
+    }
+  ],
+  "keyTakeaway": "Missing data is normal but never neutral: the pattern of gaps and the way you handle them can quietly change your conclusions. Count the gaps, choose a handling method with its trade-offs in mind, and report both what was missing and what you did.",
+  "questionBank": [
+    {
+      "id": "data-science-and-ai-literacy:foundations:missing-data:1",
+      "prompt": "Which term describes a missingness pattern in which the gaps are unrelated to any value in the dataset, as if scattered by chance?",
+      "options": [
+        "Missing not at random (MNAR)",
+        "Missing completely at random (MCAR)",
+        "Missing at random (MAR)",
+        "Nonresponse bias"
+      ],
+      "correctIndex": 1,
+      "explanation": "MCAR means the gaps carry no connection to the data, so ignoring them wastes information but does not bend results. MNAR and MAR both involve a connection between missingness and the data; nonresponse bias is a different concept about who answers surveys.",
+      "difficulty": "recall",
+      "skill": "Recognizes the MCAR pattern by its defining property",
+      "sourceIds": [
+        "dong-peng-2013-principled-missing-data"
+      ]
+    },
+    {
+      "id": "data-science-and-ai-literacy:foundations:missing-data:2",
+      "prompt": "A school measures students' heights each September. Three students were absent on measuring day for unrelated reasons, so their heights are missing. Which pattern is this most like?",
+      "options": [
+        "Missing not at random (MNAR), because the absent students differ from the rest",
+        "Missing at random (MAR), because absences can be explained by attendance records",
+        "Missing completely at random (MCAR), because the gaps are not connected to height or to anything else in the data",
+        "None of these, because missingness only matters in surveys"
+      ],
+      "correctIndex": 2,
+      "explanation": "The absences have no connection to the students' heights or any other recorded value, which is the signature of MCAR. MNAR and MAR require the missingness to depend on something — the missing value itself, or an observed value — and neither is present here.",
+      "difficulty": "understanding",
+      "skill": "Applies the MCAR definition to a concrete scenario",
+      "sourceIds": [
+        "dong-peng-2013-principled-missing-data"
+      ]
+    },
+    {
+      "id": "data-science-and-ai-literacy:foundations:missing-data:3",
+      "prompt": "A survey asks people about their income, and higher earners are more likely to skip that question. Why is this the most dangerous pattern of missingness?",
+      "options": [
+        "Because it is missing at random, so the gaps can be safely ignored",
+        "Because it can be fixed by deleting every row with a blank",
+        "Because it wastes the most information of any pattern",
+        "Because nothing else in the dataset fully explains who skipped the question, so the gap depends on the missing value itself"
+      ],
+      "correctIndex": 3,
+      "explanation": "When the chance of a gap depends on the missing value itself — high earners withholding income — the pattern is missing not at random (MNAR). The data that would explain the gaps is exactly what is missing, so simple fixes like deleting rows can silently remove one group and distort the result.",
+      "difficulty": "application",
+      "skill": "Identifies MNAR and explains why it is hard to handle",
+      "sourceIds": [
+        "dong-peng-2013-principled-missing-data"
+      ]
+    },
+    {
+      "id": "data-science-and-ai-literacy:foundations:missing-data:4",
+      "prompt": "An analyst finds that 12% of rows in a health study lack a blood-pressure reading and deletes those rows before analyzing the rest. Why could this distort the study's conclusions?",
+      "options": [
+        "If the patients with missing readings differ from the rest, dropping them changes who the study describes",
+        "Deleting rows always removes bias, so no distortion is possible",
+        "Missing values never matter once the proportion is below 20%",
+        "Deleting rows is the only honest way to handle missing data"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dropping rows is safe only when the gaps are unrelated to the data. If the patients with missing readings are systematically different — for example, sicker patients — deleting them leaves a dataset that no longer represents the original group, and the analysis inherits that distortion.",
+      "difficulty": "analysis",
+      "skill": "Evaluates the bias risk of dropping rows in a concrete case",
+      "sourceIds": [
+        "dong-peng-2013-principled-missing-data",
+        "ms-learn-clean-missing-data"
+      ]
+    },
+    {
+      "id": "data-science-and-ai-literacy:foundations:missing-data:5",
+      "prompt": "A nutrition-tracking app fills every missing food entry with the average meal from that week. What is the main risk of this approach?",
+      "options": [
+        "The app will run out of storage space for the extra entries",
+        "Filled-in guesses are treated like real measurements, so weekly totals look more typical than they actually were",
+        "Averages are always exact, so there is no risk",
+        "Filling is always safer than dropping rows"
+      ],
+      "correctIndex": 1,
+      "explanation": "Imputation replaces blanks with placeholders, and the choice of method can dramatically affect results. If skipped meals were unusual — a big celebration, a skipped lunch — replacing them with the average pulls the totals toward the middle and hides the real variation. The filled entries should be reported as filled, not presented as recorded data.",
+      "difficulty": "application",
+      "skill": "Assesses the trade-off of filling gaps with a representative value",
+      "sourceIds": [
+        "ms-learn-clean-missing-data"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "data-science-and-ai-literacy:foundations:missing-data:1",
+      "prompt": "Which term describes a missingness pattern in which the gaps are unrelated to any value in the dataset, as if scattered by chance?",
+      "options": [
+        "Missing not at random (MNAR)",
+        "Missing completely at random (MCAR)",
+        "Missing at random (MAR)",
+        "Nonresponse bias"
+      ],
+      "correctIndex": 1,
+      "explanation": "MCAR means the gaps carry no connection to the data, so ignoring them wastes information but does not bend results. MNAR and MAR both involve a connection between missingness and the data; nonresponse bias is a different concept about who answers surveys.",
+      "difficulty": "recall",
+      "skill": "Recognizes the MCAR pattern by its defining property",
+      "sourceIds": [
+        "dong-peng-2013-principled-missing-data"
+      ]
+    },
+    {
+      "id": "data-science-and-ai-literacy:foundations:missing-data:2",
+      "prompt": "A school measures students' heights each September. Three students were absent on measuring day for unrelated reasons, so their heights are missing. Which pattern is this most like?",
+      "options": [
+        "Missing not at random (MNAR), because the absent students differ from the rest",
+        "Missing at random (MAR), because absences can be explained by attendance records",
+        "Missing completely at random (MCAR), because the gaps are not connected to height or to anything else in the data",
+        "None of these, because missingness only matters in surveys"
+      ],
+      "correctIndex": 2,
+      "explanation": "The absences have no connection to the students' heights or any other recorded value, which is the signature of MCAR. MNAR and MAR require the missingness to depend on something — the missing value itself, or an observed value — and neither is present here.",
+      "difficulty": "understanding",
+      "skill": "Applies the MCAR definition to a concrete scenario",
+      "sourceIds": [
+        "dong-peng-2013-principled-missing-data"
+      ]
+    },
+    {
+      "id": "data-science-and-ai-literacy:foundations:missing-data:3",
+      "prompt": "A survey asks people about their income, and higher earners are more likely to skip that question. Why is this the most dangerous pattern of missingness?",
+      "options": [
+        "Because it is missing at random, so the gaps can be safely ignored",
+        "Because it can be fixed by deleting every row with a blank",
+        "Because it wastes the most information of any pattern",
+        "Because nothing else in the dataset fully explains who skipped the question, so the gap depends on the missing value itself"
+      ],
+      "correctIndex": 3,
+      "explanation": "When the chance of a gap depends on the missing value itself — high earners withholding income — the pattern is missing not at random (MNAR). The data that would explain the gaps is exactly what is missing, so simple fixes like deleting rows can silently remove one group and distort the result.",
+      "difficulty": "application",
+      "skill": "Identifies MNAR and explains why it is hard to handle",
+      "sourceIds": [
+        "dong-peng-2013-principled-missing-data"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "data-science-and-ai-literacy:foundations:datasets",
+    "data-science-and-ai-literacy:foundations:data-collection",
+    "data-science-and-ai-literacy:foundations:data-cleaning",
+    "data-science-and-ai-literacy:foundations:outliers"
+  ],
+  "sources": [
+    "dong-peng-2013-principled-missing-data",
+    "ms-learn-clean-missing-data",
+    "nistir-7023-missing-data-methods"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only and open-access sources; no source prose adapted; all lesson prose original.",
+    "researchedAt": "2026-08-21",
+    "transformation": "Original instructional synthesis from a peer-reviewed missing-data tutorial (PMC3701793), Microsoft Learn's Clean Missing Data documentation, and NISTIR 7023; all examples are original and no source wording is reproduced."
+  },
+  "contentHash": "753c775a59d595b3",
+  "status": "source-verified",
+  "public": false
+}

@@ -1,0 +1,150 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:missing-data",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "Missing values as blank cells in a dataset, distinct from recorded zeros",
+      "Common routes by which values go missing: respondents skip questions, sensors or instruments fail, records are lost or never entered",
+      "The three missingness patterns introduced by Donald Rubin (1976): missing completely at random (MCAR), missing at random (MAR), missing not at random (MNAR), at intuition level",
+      "Handling options and their trade-offs: drop the row, fill in a value, flag the gap, investigate why it is missing",
+      "The general principle that filling or dropping can itself introduce bias",
+      "Honest reporting of missingness: how much data was missing and what was done"
+    ],
+    "supporting": [
+      "Missingness patterns can matter more than the proportion of missing data",
+      "Blank cells are not zeros",
+      "Missing-data analysis methods exist and are part of standard statistical practice"
+    ],
+    "outOfScope": [
+      "Data cleaning workflows and tools (owned by data-cleaning)",
+      "Outliers and their treatment (owned by outliers)",
+      "Sampling design and survey sampling methods (owned by sampling)",
+      "Imputation mathematics and software procedures",
+      "Statistical tests for missingness mechanisms"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Missing values are a normal, expected feature of real datasets; even carefully collected measurement data can contain gaps.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nistir-7023-missing-data-methods", "ms-learn-clean-missing-data"],
+      "status": "supported"
+    },
+    {
+      "claim": "Values commonly go missing when survey respondents skip questions, when sensors or instruments fail to record, and when records are lost or never entered.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["dong-peng-2013-principled-missing-data", "nistir-7023-missing-data-methods"],
+      "status": "supported"
+    },
+    {
+      "claim": "The three missing-data mechanisms - missing completely at random (MCAR), missing at random (MAR), and missing not at random (MNAR) - were introduced by Donald Rubin in 1976 and still organize how analysts think about missingness.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["dong-peng-2013-principled-missing-data"],
+      "status": "supported"
+    },
+    {
+      "claim": "Under MCAR, missingness is unrelated to the data, so ignoring the gaps does not introduce bias, though it wastes information by shrinking the usable data.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["dong-peng-2013-principled-missing-data"],
+      "status": "supported"
+    },
+    {
+      "claim": "Under MAR, the chance that a value is missing depends on other values that were observed; under MNAR, it depends on the missing value itself, and MNAR is the hardest pattern to handle safely.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["dong-peng-2013-principled-missing-data"],
+      "status": "supported"
+    },
+    {
+      "claim": "Missing data can seriously affect quantitative research, producing biased estimates, loss of information, and weakened generalizability.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["dong-peng-2013-principled-missing-data"],
+      "status": "supported"
+    },
+    {
+      "claim": "Common handling options are removing rows or columns that contain missing values, replacing missing values with a placeholder, mean, or other value, and inferring values; the choice of method can dramatically affect results.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ms-learn-clean-missing-data"],
+      "status": "supported"
+    },
+    {
+      "claim": "Honest analyses explicitly acknowledge the missing-data problem, state the conditions under which missingness occurred, and describe how missingness was handled.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["dong-peng-2013-principled-missing-data"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Is there a single best way to handle missing values?",
+      "positions": [
+        "Dropping rows is simple and keeps only recorded values.",
+        "Filling in values preserves rows but introduces guesses.",
+        "Researchers disagree on which is safer because the right choice depends on the missingness mechanism and the question being asked."
+      ],
+      "resolution": "The lesson presents the options with their trade-offs and emphasizes that no method is universally correct; the choice must be justified by the situation and reported."
+    },
+    {
+      "issue": "How dangerous is MAR versus MNAR?",
+      "positions": [
+        "Some sources note that assuming MAR when it is violated does not always seriously distort estimates.",
+        "MNAR requires modeling the missingness mechanism itself and is widely treated as the most difficult case."
+      ],
+      "resolution": "The lesson follows the cited tutorial's framing: MCAR poses the least threat, MNAR the most, with MAR in between; it stays at intuition level and makes no quantitative claims."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's claim that missing data is 'a foundational concept' taught primarily as a label to define and apply was replaced with specific, source-supported content about why gaps occur, missingness patterns, handling trade-offs, and reporting.",
+    "The draft's vocabulary entries ('context', 'evidence', 'application') were generic and non-substantive; they were replaced with domain terms (MCAR, MAR, MNAR, imputation, nonresponse)."
+  ],
+  "correctionsNeeded": [
+    "Replaced all generic boilerplate wording from the machine draft with original, source-verified prose.",
+    "Added the Rubin (1976) attribution for the three missingness mechanisms, verified through a peer-reviewed tutorial.",
+    "Added the distinction between a blank cell and a recorded zero, which the draft did not cover.",
+    "Added the reporting requirement (state how much data was missing and what was done), supported by the cited tutorial."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "dong-peng-2013-principled-missing-data",
+      "title": "Principled missing data methods for researchers",
+      "provider": "SpringerPlus (via PubMed Central, PMC3701793)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3701793/",
+      "sourceType": "peer-reviewed",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Read directly on PMC. Peer-reviewed tutorial (Dong & Peng, SpringerPlus 2013) that attributes the MCAR/MAR/MNAR taxonomy to Rubin (1976), defines each mechanism with examples, states that missing data can bias estimates and weaken generalizability, describes listwise deletion and imputation approaches, and recommends that researchers explicitly acknowledge missing data problems and conditions in reporting. Facts synthesized into original lesson prose; no wording reproduced."
+    },
+    {
+      "id": "ms-learn-clean-missing-data",
+      "title": "Clean Missing Data: Component Reference - Azure Machine Learning",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/clean-missing-data",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read directly (public page). Documents the standard handling operations for missing values - removing rows and columns, replacing with a placeholder or mean, and inferring values - and warns that the cleaning method chosen for missing values can dramatically affect results. Supports the handling-options and bias-warning content at intuition level; no tool workflow taught in the lesson."
+    },
+    {
+      "id": "nistir-7023-missing-data-methods",
+      "title": "Missing Data Methods and Toolbox Users Guide (NISTIR 7023)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir7023.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read directly (NIST IR 7023, 2003). Official NIST report on missing-data analysis for measurement data: test/measurement arrays can contain missing values, and dedicated missing-data analysis methods are used to work with incomplete information. Used as Tier A support for the claim that gaps occur even in carefully collected measurement data and that established methods exist for handling them."
+    }
+  ]
+}

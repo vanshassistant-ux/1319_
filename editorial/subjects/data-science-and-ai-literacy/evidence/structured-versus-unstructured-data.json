@@ -1,0 +1,145 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:structured-versus-unstructured-data",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "The classification of data into structured, semi-structured, and unstructured formats",
+      "Defining features of structured data (fixed schema, tabular layout)",
+      "Defining features of unstructured data (no predefined format; text, images, audio, video)",
+      "Defining features of semi-structured data (labeled key-value fields with variation)",
+      "How each format is stored and processed differently (tables and databases vs files and pipelines)",
+      "Why the distinction matters, including that most generated data is unstructured",
+      "The role of AI models in handling unstructured data (reading text, recognizing images, processing speech)"
+    ],
+    "supporting": [
+      "Relational databases and SQL as the home of structured data",
+      "JSON as a common semi-structured format",
+      "File storage and data lakes for unstructured data",
+      "Machine learning and natural language processing as tools for unstructured data"
+    ],
+    "outOfScope": [
+      "Categorical vs numerical data types (owned by types-of-data)",
+      "How datasets are assembled and structured (owned by datasets)",
+      "How machine-learning models learn (owned by machine-learning-basics)",
+      "Tool-specific workflows such as pandas, SQL tutorials, or OCR software"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Data is commonly classified into three broad formats: structured, semi-structured, and unstructured.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "microsoft-learn-explore-core-data-concepts-data-formats"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Structured data adheres to a fixed schema and is typically tabular: rows represent individual records and columns represent the same attributes for every record.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "microsoft-learn-explore-core-data-concepts-data-formats",
+        "ibm-think-structured-vs-unstructured-data"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Structured data is typically stored in tables, spreadsheets, and relational databases, where it can be queried with a language such as SQL.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-think-structured-vs-unstructured-data"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Unstructured data has no predefined format; examples include documents, emails, text messages, images, audio, video, and sensor data.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "microsoft-learn-explore-core-data-concepts-data-formats",
+        "ibm-think-structured-vs-unstructured-data"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Semi-structured data has some structure — labeled fields such as JSON key-value pairs — but allows individual records to differ in which fields they include.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "microsoft-learn-explore-core-data-concepts-data-formats",
+        "ibm-think-structured-vs-unstructured-data"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Unstructured data cannot be processed directly by conventional tabular tools and typically requires cleaning and specialized analysis, often with machine learning and natural language processing.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-think-structured-vs-unstructured-data"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "IBM reports that unstructured data accounts for roughly 90 percent of enterprise-generated data.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "ibm-think-structured-vs-unstructured-data"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "AI models that read text, recognize images, and process speech are the tools commonly used to extract patterns and value from unstructured data at scale.",
+      "claimType": "CURRENT",
+      "sourceIds": [
+        "ibm-think-structured-vs-unstructured-data"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "What share of newly generated or enterprise data is unstructured?",
+      "positions": [
+        "IBM's explainer states unstructured data comprises roughly 90 percent of enterprise-generated data.",
+        "Other industry estimates commonly cite 80 percent or higher, and the figure varies by industry and measurement method."
+      ],
+      "resolution": "The lesson attributes the 90 percent figure explicitly to IBM and otherwise uses modest language ('most of the data the world generates'), avoiding presentation of any single share as an established universal constant."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's boilerplate ('Structured Versus Unstructured Data is a foundational concept in Data Science & Ai Literacy') is an unsourced label, not a factual claim; it was discarded.",
+    "The draft's generic definitions of context, evidence, and application carried no source support and were replaced with source-verified vocabulary."
+  ],
+  "correctionsNeeded": [
+    "Replaced the draft's generic definitions with source-verified definitions of structured, unstructured, and semi-structured data.",
+    "Added the original train-departures spreadsheet example (Ridgeline Express) and the JSON-style journey-log example, both written for this lesson.",
+    "Added the storage/processing contrast (databases vs files and data lakes) and AI's role in unstructured-data processing, both supported by the IBM source."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "microsoft-learn-explore-core-data-concepts-data-formats",
+      "title": "Identify data formats — Explore core data concepts (Microsoft Learn training module)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/training/modules/explore-core-data-concepts/2-data-formats",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live on 2026-08-21. Public Microsoft Learn training unit defining structured, semi-structured, and unstructured data; describes fixed-schema tabular structured data, JSON as a semi-structured format with fields varying between instances, and documents/images/audio/video as unstructured. Used as reference for the classification definitions; no text adapted."
+    },
+    {
+      "id": "ibm-think-structured-vs-unstructured-data",
+      "title": "Structured vs. Unstructured Data: What's the Difference? (IBM Think Topics explainer)",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/think/topics/structured-vs-unstructured-data",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live on 2026-08-21. IBM explainer covering structured data storage (spreadsheets, relational databases, SQL), unstructured data examples and storage (files, NoSQL, data lakes), the roughly 90 percent share of enterprise-generated data, the role of machine learning and natural language processing in extracting insight from unstructured data, and semi-structured formats (JSON, CSV, XML). Used as reference for storage/processing differences, the 90 percent figure (attributed), and AI's role; no text adapted."
+    }
+  ]
+}

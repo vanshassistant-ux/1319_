@@ -1,0 +1,181 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:sampling",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "sampling as studying a subset of a population to learn about the whole",
+      "population vs sample distinction",
+      "why sampling: cost, time, and feasibility",
+      "random sampling: every member has a chance of being included",
+      "simple random sampling",
+      "stratified sampling",
+      "sampling bias: when the sample does not represent the population",
+      "sample size intuition: larger samples tend to be more reliable, representation matters more",
+      "margin of error: sample results come with uncertainty"
+    ],
+    "supporting": [
+      "representativeness as the goal of a sample",
+      "convenience and self-selected samples as unreliable shortcuts",
+      "real-world example: the U.S. Census Bureau American Community Survey",
+      "uncertainty reported as a range around an estimate"
+    ],
+    "outOfScope": [
+      "data-collection methods, tools, and workflows (owned by the data-collection topic)",
+      "model bias and fairness concerns (owned by the bias and algorithmic-fairness topics)",
+      "statistical formulas, distributions, and significance testing (statistics in depth, a math subject)",
+      "causal inference and experimental design (statistics in depth)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Sampling is the selection of a subset of a population to estimate characteristics of the whole population.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-introductory-statistics-1-2",
+        "wikipedia-sampling-statistics"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The population is the complete group a question is about; the sample is the subset actually examined.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-introductory-statistics-1-2",
+        "wikipedia-sampling-statistics"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Researchers use samples because studying an entire population often costs too much or is virtually impossible.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-introductory-statistics-1-2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "In random sampling, every member of the population has a chance of being selected; in a simple random sample, members initially have an equal chance.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-introductory-statistics-1-2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Stratified sampling divides the population into groups called strata and takes a proportionate random sample from each group.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-introductory-statistics-1-2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Sampling bias occurs when a sample is collected so that some members of the population are more likely to be included than others, making the sample unrepresentative and its results inaccurate.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "wikipedia-sampling-statistics",
+        "openstax-introductory-statistics-1-2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Larger samples tend to be more reliable than smaller ones, but a biased sample that does not represent the population gives inaccurate results even when it is large.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-introductory-statistics-1-2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Sample-based estimates come with uncertainty, reported as a margin of error: a range around the estimate within which the true population value is likely to fall.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "census-acs-general-handbook-2018"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The U.S. Census Bureau's American Community Survey samples about 3.5 million addresses per year rather than attempting a full count of the population.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "census-acs-general-handbook-2018"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The Census Bureau selects a random sample of addresses for the ACS; each address has about a 1-in-480 chance of being selected in a given month and is not selected more than once every five years.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "census-acs-general-handbook-2018"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Does a larger sample always give better results?",
+      "positions": [
+        "OpenStax Introductory Statistics: \"Larger samples are better, if possible,\" because samples that are too small may be unreliable.",
+        "The same source states that biased samples that are not representative of the population give results that are inaccurate and not valid, and convenience samples can be highly biased regardless of how many people are included."
+      ],
+      "resolution": "The lesson teaches both principles together: larger samples tend to reduce random variation, but size cannot repair bias. Representation is what makes a sample a valid stand-in for the population, so the two positions are consistent once bias is separated from random variation."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The machine-generated draft described sampling as \"a foundational concept in Data Science & Ai Literacy\" and used generic boilerplate (\"a college-level explanation names the concept...\") with no source support; all such phrasing was discarded.",
+    "The draft contained no population-vs-sample, random-sampling, bias, or margin-of-error content grounded in sources; the lesson content was written fresh from verified sources."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire machine-generated draft, which contained phrases the acceptance gate rejects, with original sourced prose.",
+    "Anchored the random-sampling idea to the Census Bureau ACS example (random sample of about 3.5 million addresses per year; roughly 1-in-480 monthly selection chance).",
+    "Framed margin of error from the Census Bureau's own definition (a range around an estimate in which the true value is likely to fall) rather than a formula-based treatment, per the literacy level."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "census-acs-general-handbook-2018",
+      "title": "Understanding and Using American Community Survey Data: What All Data Users Need to Know (ACS General Handbook, 2018)",
+      "provider": "U.S. Census Bureau",
+      "url": "https://www.census.gov/content/dam/Census/library/publications/2018/acs/acs_general_handbook_2018.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work; not subject to copyright in the United States",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Read the PDF text layer directly (downloaded from www.census.gov). Supports: the ACS samples about 3.5 million addresses annually instead of a full count; the Census Bureau selects a random sample of addresses with about a 1-in-480 chance of selection in a given month and no address selected more than once every five years; the Census Bureau publishes a margin of error for each ACS estimate, a range in which the true value is likely to fall. Facts were synthesized into original prose; no text reproduced."
+    },
+    {
+      "id": "openstax-introductory-statistics-1-2",
+      "title": "Introductory Statistics, Section 1.2: Data, Sampling, and Variation in Data and Sampling",
+      "provider": "OpenStax (Rice University)",
+      "url": "https://openstax.org/books/introductory-statistics/pages/1-2-data-sampling-and-variation-in-data-and-sampling",
+      "sourceType": "open-textbook",
+      "usage": "ATTRIBUTION_REQUIRED",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read the live textbook page. Supports: data come from a population or a sample; studying an entire population often costs too much or is virtually impossible; a sample should have the same characteristics as the population; in each form of random sampling every member initially has an equal chance of selection; simple random sampling; stratified sampling (divide the population into strata and take a proportionate number from each); biased samples that are not representative give inaccurate, invalid results; samples that are too small may be unreliable and larger samples are better when possible; convenience and self-selected samples as unreliable. Facts synthesized; no passage quoted at length."
+    },
+    {
+      "id": "wikipedia-sampling-statistics",
+      "title": "Sampling (statistics)",
+      "provider": "Wikipedia (Wikimedia Foundation)",
+      "url": "https://en.wikipedia.org/wiki/Sampling_(statistics)",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read via the Wikipedia REST summary API. Used as a secondary definitional check: sampling selects a subset of a statistical population to estimate characteristics of the whole; sampling bias is defined as some members of the intended population having a lower or higher sampling probability than others. Cross-checked against OpenStax; no wording reproduced."
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:types-of-data",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "quantitative vs qualitative data (the fundamental split)",
+      "categorical vs numerical variables",
+      "discrete vs continuous numerical data",
+      "the four scales of measurement: nominal, ordinal, interval, ratio",
+      "why data type determines which analyses are meaningful"
+    ],
+    "supporting": [
+      "variable levels (possible values of a categorical variable)",
+      "counts vs measurements",
+      "the true-zero property and ratio statements",
+      "ordinal medians and nominal modes as type-appropriate summaries"
+    ],
+    "outOfScope": [
+      "structured vs unstructured data (own topic)",
+      "datasets and data frames (own topic)",
+      "data collection methods (own topic)",
+      "visualization choices (own topic)",
+      "specific analysis tools or software",
+      "probability and statistical inference"
+    ]
+  },
+  "claims": [
+    {"claim": "Quantitative variables are measured in terms of numbers; qualitative variables express attributes such as hair color or religion, and the values of a qualitative variable do not imply a numeric ordering.", "claimType": "EVERGREEN", "sourceIds": ["onlinestatbook-variables"], "status": "supported"},
+    {"claim": "Qualitative variables are sometimes referred to as categorical variables.", "claimType": "EVERGREEN", "sourceIds": ["onlinestatbook-variables"], "status": "supported"},
+    {"claim": "A variable whose responses are categories is a categorical variable, and the possible values are called the variable's levels (for example, a state variable takes states as its levels).", "claimType": "EVERGREEN", "sourceIds": ["openintro-ims-hello-data"], "status": "supported"},
+    {"claim": "A numerical variable takes a wide range of numerical values for which adding, subtracting, or taking averages is sensible.", "claimType": "EVERGREEN", "sourceIds": ["openintro-ims-hello-data"], "status": "supported"},
+    {"claim": "Digits alone do not make a value quantitative: for values such as area codes, the average, sum, and difference have no clear meaning, so they are treated as categorical.", "claimType": "EVERGREEN", "sourceIds": ["openintro-ims-hello-data"], "status": "supported"},
+    {"claim": "Numerical variables may be discrete, taking only values with jumps such as whole-number counts, or continuous, such as an unemployment rate or height, which can take values throughout a range.", "claimType": "EVERGREEN", "sourceIds": ["openintro-ims-hello-data"], "status": "supported"},
+    {"claim": "In a designed experiment, each factor may be either continuous or discrete.", "claimType": "TECHNICAL", "sourceIds": ["nist-ehandbook-eda-design"], "status": "supported"},
+    {"claim": "A nominal scale names or categorizes responses, with examples including gender and favorite color, and embodies the lowest level of measurement.", "claimType": "EVERGREEN", "sourceIds": ["onlinestatbook-levels-of-measurement"], "status": "supported"},
+    {"claim": "An ordinal scale orders responses (for example, satisfaction from very dissatisfied to very satisfied), and the gaps between adjacent values are not assumed to be equal.", "claimType": "EVERGREEN", "sourceIds": ["onlinestatbook-levels-of-measurement"], "status": "supported"},
+    {"claim": "An interval scale has equal intervals but no true zero (Fahrenheit is the textbook example), so ratios of values are not meaningful.", "claimType": "EVERGREEN", "sourceIds": ["onlinestatbook-levels-of-measurement"], "status": "supported"},
+    {"claim": "A ratio scale has a true zero, so ratios of values are meaningful, which is what distinguishes it from an interval scale.", "claimType": "EVERGREEN", "sourceIds": ["onlinestatbook-levels-of-measurement"], "status": "supported"},
+    {"claim": "The type of a variable determines which analyses make sense: averages are meaningful for numerical values but have no clear meaning for categorical values.", "claimType": "INTERPRETIVE", "sourceIds": ["openintro-ims-hello-data", "onlinestatbook-levels-of-measurement"], "status": "supported"}
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Terminology overlap between the qualitative/quantitative split and the categorical/numerical split; sources differ in which classification they treat as primary.",
+      "positions": [
+        "OnlineStatBook: qualitative variables express attributes and are sometimes called categorical variables.",
+        "OpenIntro IMS: variables are classified as continuous numerical, discrete numerical, or categorical, with no separate qualitative category in the main scheme.",
+        "OnlineStatBook levels-of-measurement section treats ordinal as ordered categories, so ordinal sits between pure naming and full numeric meaning."
+      ],
+      "resolution": "The lesson presents categorical vs numerical as the working classification for everyday analysis, notes that qualitative and categorical are overlapping names for the same family, and treats ordinal as categorical with order. Both sources support this framing, and the lesson says so explicitly rather than pretending the vocabularies are identical."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic boilerplate ('Types Of Data is a foundational concept in Data Science & Ai Literacy', 'a label on a toolbox drawer') with no source-verified claims about data types; all lesson content was written fresh from research.",
+    "The generated draft's vocabulary entries ('context', 'evidence', 'application') defined generic study terms rather than data-type concepts and were discarded."
+  ],
+  "correctionsNeeded": [
+    "Replaced boilerplate with original, source-verified explanations of the qualitative/quantitative split, categorical/numerical variables, discrete/continuous subtypes, and the four scales of measurement.",
+    "Added original invented examples (weather station records, bookstore sales log) instead of any source prose.",
+    "Replaced the draft's generic questions with five type-classification items whose keys are verified against the sources.",
+    "Removed the draft's 'toolbox drawer' analogy and all generic AI phrasing."
+  ],
+  "rightsIssues": [
+    "OnlineStatBook pages reviewed did not display an explicit license statement; recorded as REFERENCE_ONLY and no source prose was adapted.",
+    "OpenIntro Introduction to Modern Statistics is an OER textbook (CC BY-SA per OpenIntro's book pages), but the specific chapter copy read did not reprint the license line; recorded as REFERENCE_ONLY with original prose."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-ehandbook-eda-design",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods — 5.5.9. An EDA approach to experimental design",
+      "provider": "NIST / SEMATECH (U.S. Department of Commerce)",
+      "url": "https://www.itl.nist.gov/div898/handbook/pri/section5/pri59.htm",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read the live section page and the printer-friendly full-handbook PDF (DOI 10.18434/M32189, 2012 edition). The live page states that each factor in a designed experiment may be either continuous or discrete; the PDF expands this to continuous and ordered factors (temperature, pressure, humidity, concentration) versus discrete and non-ordinal factors (plant, operator, catalyst, supplier). Supports the discrete-vs-continuous distinction and the principle that the type of a variable shapes how it can be modeled. No source prose reproduced."
+    },
+    {
+      "id": "onlinestatbook-variables",
+      "title": "Online Statistics Education: An Interactive Multimedia Course of Study — Variables",
+      "provider": "Rice University (David M. Lane et al.)",
+      "url": "https://onlinestatbook.com/2/introduction/variables.html",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read directly. Supports the distinction between qualitative variables (attributes such as hair color, eye color, religion, favorite movie; values do not imply numeric ordering) and quantitative variables (measured in terms of numbers; examples height, weight, shoe size), and the statement that qualitative variables are sometimes called categorical. No explicit license statement found on the page; used as reference only, prose fully original."
+    },
+    {
+      "id": "onlinestatbook-levels-of-measurement",
+      "title": "Online Statistics Education: An Interactive Multimedia Course of Study — Levels of Measurement",
+      "provider": "Rice University (Dan Osherson and David M. Lane)",
+      "url": "https://onlinestatbook.com/2/introduction/levels_of_measurement.html",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read directly. Supports the four scale types: nominal scales name or categorize responses (gender, favorite color) and embody the lowest level of measurement; ordinal scales order responses (microwave-oven satisfaction from very dissatisfied to very satisfied) without guaranteeing equal intervals; interval scales have equal intervals but no true zero (Fahrenheit), so ratios of values are not meaningful; ratio scales have a true zero so ratios are meaningful. No source prose reproduced; lesson examples are original."
+    },
+    {
+      "id": "openintro-ims-hello-data",
+      "title": "OpenIntro — Introduction to Modern Statistics: Hello data",
+      "provider": "OpenIntro (openintro.org)",
+      "url": "https://openintro-ims.netlify.app/data-hello.html",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read directly (web edition). Supports: numerical variables take a wide range of values for which adding, subtracting, or averaging is sensible (unemployment rate); categorical variables take categories whose possible values are called levels (state); area codes are treated as categorical because their average, sum, and difference have no clear meaning; population counts are discrete (values with jumps) while unemployment rate and height are continuous. Lesson prose and examples (weather station, bookstore) are original."
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:data-cleaning",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "definition of data cleaning as finding and fixing errors, inconsistencies, and gaps before analysis",
+      "garbage in, garbage out principle, its meaning, and its history (1957 first known use; Babbage 1864)",
+      "common data problems: missing values, duplicates, inconsistent formats, impossible values, mixed units",
+      "general cleaning steps: standardize formats, correct typos and units, remove or flag duplicates, decide on missing entries, validate",
+      "cleaning precedes analysis in the data lifecycle (NIST collection/preparation/analysis/action)",
+      "documenting cleaning decisions for reproducibility",
+      "data professionals spend a large share of their time preparing data (survey findings: 60%, up to 80%, 45-80%)"
+    ],
+    "supporting": [
+      "data quality as accuracy, completeness, consistency, and usability",
+      "data profiling as inspection of columns before analysis",
+      "clean data as the foundation of reliable decisions and machine learning models"
+    ],
+    "outOfScope": [
+      "how to handle missing values in depth (sibling topic: missing-data)",
+      "outlier detection and treatment in depth (sibling topic: outliers)",
+      "what datasets are and how they are structured (sibling topic: datasets)",
+      "tool-specific cleaning workflows (pandas, Power Query, and similar)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Data cleaning — also called data cleansing or data scrubbing — is the process of identifying and correcting errors and inconsistencies in raw datasets to improve data quality, aiming for data that is accurate, complete, consistent, and usable for analysis or decision-making.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-data-cleaning"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Common data quality problems include duplicates, missing values, inconsistent formats (for example date formats such as MM-DD-YYYY versus DD-MM-YYYY), syntax errors, irrelevant data, and structural errors; typos are a common source of dirty data.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-data-cleaning"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Cleaning involves standardizing formats and structures, correcting errors, consolidating or removing duplicate records, deciding how to handle missing values (replace, remove, or flag), and validating the cleaned data before analysis.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-data-cleaning"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Preparing data for analysis includes resolving inconsistencies, unexpected or null values, and data quality issues, and profiling columns to understand their contents before using them.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "mslearn-clean-transform-load-data-powerbi"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "In the big data lifecycle defined by NIST SP 1500-1, the four stages are collection, preparation, analysis, and action; preparation converts raw data into cleansed, organized information, and analysis produces synthesized knowledge from that organized information.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nist-sp-1500-1"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Garbage in, garbage out (GIGO) is the computing principle that flawed or poor-quality input produces output of similar low quality; its first known use is a 1957 syndicated newspaper article about U.S. Army mathematicians, and Charles Babbage expressed the same idea in 1864.",
+      "claimType": "HISTORICAL",
+      "sourceIds": [
+        "wikipedia-garbage-in-garbage-out"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "In CrowdFlower's 2016 survey, data scientists reported spending 60 percent of their time cleaning and organizing data, and the report estimated that up to 80 percent of a data scientist's time can be spent on such work.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "crowdflower-2016-data-science-report"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "IBM's data management guide cites research suggesting that preparing data and transforming it into usable forms takes between 45 and 80 percent of a data analyst's time.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "ibm-what-is-data-wrangling"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Analyses and machine learning models built on dirty data can produce inaccurate, inconsistent, or misleading results; clean data underpins reliable decision-making and better model performance.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-data-cleaning"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "How much of a data professional's time goes to data preparation varies by survey and by role.",
+      "positions": [
+        "CrowdFlower 2016 survey: 60% of a data scientist's time on cleaning and organizing data, with up to 80% estimated",
+        "IBM-cited research: 45-80% of a data analyst's time on data preparation",
+        "Later surveys for specific roles report different shares"
+      ],
+      "resolution": "The lesson presents the figures as survey-based findings attributed to their sources and frames the idea as a rule of thumb rather than a precise law."
+    },
+    {
+      "issue": "Terminology overlap: cleaning, wrangling, and preparation are used with different boundaries by different writers.",
+      "positions": [
+        "IBM treats data cleaning and data wrangling as separate topics with overlapping tasks",
+        "NIST folds cleaning into a single 'preparation' stage of the lifecycle"
+      ],
+      "resolution": "The lesson treats cleaning as the corrective work inside the broader preparation stage and does not argue for one taxonomy over another."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft described data cleaning as 'a label on a toolbox drawer' and as 'a foundational concept'; these framings were boilerplate with no factual support and were replaced with sourced content."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire generated draft: the definition, common problems, cleaning steps, lifecycle ordering, survey figures, and GIGO history are now source-verified, and all examples are original."
+  ],
+  "rightsIssues": [
+    "No source prose reproduced. Survey figures are re-stated with attribution. The CrowdFlower report was read via an Internet Archive capture of the original PDF because the original host is defunct."
+  ],
+  "sourceRecords": [
+    {
+      "id": "ibm-what-is-data-cleaning",
+      "title": "What is data cleaning?",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/topics/data-cleaning",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Vendor documentation read live. Supports the definition of data cleaning, the common quality problems (duplicates, missing values, inconsistent formats, syntax errors, typos), the cleaning steps (standardization, deduplication, missing-value handling, validation), and the claim that dirty data leads to unreliable analysis and models. No source prose reproduced."
+    },
+    {
+      "id": "ibm-what-is-data-wrangling",
+      "title": "What is data wrangling?",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/topics/data-wrangling",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Vendor documentation read live. Supports the 45-80% figure for data-preparation time with its citation of research; used as a second, independently worded source for the time-share claim."
+    },
+    {
+      "id": "mslearn-clean-transform-load-data-powerbi",
+      "title": "Clean, Transform, and Load Data in Power BI",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/training/modules/clean-data-power-bi/",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Public Microsoft Learn module read live. Supports the literacy-level claim that preparing data involves resolving inconsistencies, unexpected or null values, and data quality issues, and that profiling columns precedes deeper analysis. The module is tool-oriented (Power Query); only its concept-level objectives were used, not its tool workflow."
+    },
+    {
+      "id": "crowdflower-2016-data-science-report",
+      "title": "The 2016 Data Science Report",
+      "provider": "CrowdFlower (now Figure Eight)",
+      "url": "https://visit.figure-eight.com/rs/416-ZBE-142/images/CrowdFlower_DataScienceReport_2016.pdf",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Primary survey report. The original host is defunct; read via an Internet Archive capture (web.archive.org, 2018 snapshot) of the original PDF. Supports: respondents spend 60% of their time cleaning and organizing data, and the report estimates up to 80% of a data scientist's time can go to such work."
+    },
+    {
+      "id": "nist-sp-1500-1",
+      "title": "NIST Big Data Interoperability Framework: Volume 1, Definitions (NIST SP 1500-1)",
+      "provider": "National Institute of Standards and Technology",
+      "url": "https://doi.org/10.6028/NIST.SP.1500-1",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A government standard (September 2015) read directly from the NIST PDF at nvlpubs.nist.gov. Supports the four-stage data science lifecycle (collection, preparation, analysis, action) and the statement that preparation converts raw data into cleansed, organized information."
+    },
+    {
+      "id": "wikipedia-garbage-in-garbage-out",
+      "title": "Garbage in, garbage out",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Garbage_in,_garbage_out",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Encyclopedic reference read live. Supports the GIGO principle, its first known use in a 1957 syndicated article about U.S. Army mathematicians, and the 1864 Charles Babbage statement of the same idea. Used as background; the lesson states the principle in its own words."
+    }
+  ]
+}

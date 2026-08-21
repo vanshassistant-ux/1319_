@@ -1,0 +1,197 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:what-data-science-is",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "working definition of data science (using data to answer questions and guide decisions)",
+      "what data scientists do: collect, clean, analyze, visualize, communicate",
+      "data science vs statistics, computer science, business analytics",
+      "the data-driven cycle: ask, get, clean, analyze, communicate",
+      "where data science shows up in daily life (recommendations, forecasting, health, transportation, government)",
+      "the limits: data quality, misinterpretation, ethics (referenced to sibling topics)"
+    ],
+    "supporting": [
+      "data science lifecycle stages as described by IBM (ingestion, preparation, analysis, communication)",
+      "data journey steps and their repeatability as described by Microsoft",
+      "U.S. Census Bureau use of data for federal funding allocation",
+      "NIST AI RMF framing of risks to individuals, organizations, and society"
+    ],
+    "outOfScope": [
+      "types of data and data structures (sibling topic: types-of-data)",
+      "datasets in depth (sibling topic: datasets)",
+      "data collection methods (sibling topic: data-collection)",
+      "machine learning techniques (sibling topic: machine-learning-basics)",
+      "AI ethics and privacy (sibling topics: ai-ethics, ai-privacy, nist-ai-risk-concepts)",
+      "data cleaning mechanics (sibling topic: data-cleaning)",
+      "visualization techniques (sibling topic: visualization)",
+      "correlation vs causation (sibling topic: correlation)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Data science combines statistics, computing, and subject-matter knowledge to uncover actionable insights from data that guide decision making.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-data-science",
+        "microsoft-ds4b-defining-data-science"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A working definition of data science is: using data to answer questions and guide decisions.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-data-science"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The data science lifecycle runs through collecting (ingestion), preparing and cleaning data for quality, analyzing data for patterns, and communicating insights.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-data-science"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Data scientists ask pertinent questions, prepare and analyze data, and tell and illustrate stories that convey the meaning of results to decision-makers.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-data-science"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Statistics provides the mathematical foundations of data science; data science applies those ideas to draw insights from data and has grown broader than statistics alone.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "microsoft-ds4b-defining-data-science"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Business intelligence and analytics focus on past, structured data to describe what happened, while data science typically also aims to predict and inform forward-looking decisions.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-data-science"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Data-driven work follows a journey of steps — acquisition, storage, processing, visualization and insights — and steps may be skipped when not needed or repeated when a first pass raises new questions.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "microsoft-ds4b-defining-data-science"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Published data science use cases span personalization and recommendations, credit-risk models, transportation (driverless vehicles), and medical risk assessment from patient records.",
+      "claimType": "CURRENT",
+      "sourceIds": [
+        "ibm-what-is-data-science"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Census results help determine how hundreds of billions of dollars in federal funding are spent, including support for schools, hospitals, roads, and public works, and businesses rely on census data for their own decisions.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "census-why-conduct-decennial-census"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Organizations using data-driven and AI systems face risks to individuals, organizations, and society — including bias and data-quality concerns — that frameworks such as the NIST AI Risk Management Framework are designed to help manage.",
+      "claimType": "CURRENT",
+      "sourceIds": [
+        "nist-ai-risk-management-framework"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Definitions of data science differ in emphasis across providers.",
+      "positions": [
+        "IBM emphasizes combining statistics, programming, advanced analytics, AI/ML, and subject expertise to uncover actionable insights that guide decisions (IBM, read live 2026-08-21).",
+        "Microsoft's public curriculum quotes a Wikipedia-derived definition centered on extracting knowledge and insights from data using scientific methods (Microsoft, read live 2026-08-21).",
+        "Google Cloud's 'what is data science' page, listed as a discovery lead in the subject source-map, returns HTTP 404 as of 2026-08-21 and could not be consulted; no Google Cloud claims were made."
+      ],
+      "resolution": "The lesson uses a modest working definition — using data to answer questions and guide decisions — consistent with IBM's framing that insights 'can be used to guide decision making and strategic planning', and avoids platform-specific or tool-specific claims."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's boilerplate ('What Data Science Is is a foundational concept in...') contained no verifiable factual content.",
+    "The draft's Eli-10 'label on a toolbox drawer' analogy was generic boilerplate and was replaced with an original library-books example.",
+    "The draft vocabulary (context, evidence, application) was generic and was replaced with field-specific terms."
+  ],
+  "correctionsNeeded": [
+    "Replaced all generic draft boilerplate with a sourced working definition attributed to IBM.",
+    "Named the five-step data-driven cycle (ask, get, clean, analyze, communicate) grounded in IBM's lifecycle stages and Microsoft's data journey.",
+    "Added Tier A government grounding for the daily-life section via the U.S. Census Bureau.",
+    "Dropped Google Cloud as a source because the referenced page 404s as of the research date.",
+    "Kept ethics framing to a pointer (NIST AI RMF) so ai-ethics and nist-ai-risk-concepts siblings own the detail."
+  ],
+  "rightsIssues": [
+    "All four sources used as REFERENCE_ONLY; no source prose reproduced and all examples and scenarios are original.",
+    "Microsoft Data-Science-For-Beginners is a publicly licensed repo (MIT, verified in the repo LICENSE); license noted but nothing reused verbatim.",
+    "U.S. Census Bureau and NIST materials are U.S. government works; used as reference only."
+  ],
+  "sourceRecords": [
+    {
+      "id": "ibm-what-is-data-science",
+      "title": "What is Data Science?",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/topics/data-science",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl with a browser user-agent on 2026-08-21. Supports the working definition, the data science lifecycle (ingestion, preparation/cleaning for data quality, analysis, communication), the data-scientist skill set, the data science vs business intelligence distinction, and published use cases (credit risk, transportation, healthcare, media analytics). Facts synthesized; no prose reproduced."
+    },
+    {
+      "id": "census-why-conduct-decennial-census",
+      "title": "Why We Conduct the Decennial Census of Population and Housing",
+      "provider": "U.S. Census Bureau",
+      "url": "https://www.census.gov/programs-surveys/decennial-census/about/why.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. Supports the claim that census results help determine how hundreds of billions of dollars in federal funding are spent, including support for schools, hospitals, roads, and public works, and that businesses rely on census results for decisions."
+    },
+    {
+      "id": "microsoft-ds4b-defining-data-science",
+      "title": "Data Science for Beginners — Lesson 1: Defining Data Science",
+      "provider": "Microsoft",
+      "url": "https://github.com/microsoft/Data-Science-For-Beginners/tree/main/1-Introduction/01-defining-data-science",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "MIT",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Read the lesson README at raw.githubusercontent.com (Microsoft/Data-Science-For-Beginners) on 2026-08-21; repo license verified as MIT. Supports data science vs statistics, the data journey (acquisition, storage, processing, visualization/insights), the point that steps may be skipped or repeated, and literacy-level framing. Facts synthesized; no prose reused."
+    },
+    {
+      "id": "nist-ai-risk-management-framework",
+      "title": "AI Risk Management Framework (AI RMF)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live on 2026-08-21. Supports the framing that data-driven and AI systems carry risks to individuals, organizations, and society that organizations should manage. Detailed ethics and risk treatment belongs to the ai-ethics and nist-ai-risk-concepts sibling topics; used here only as a pointer."
+    }
+  ]
+}

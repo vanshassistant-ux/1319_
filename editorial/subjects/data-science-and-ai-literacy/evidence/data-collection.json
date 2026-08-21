@@ -1,0 +1,213 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:data-collection",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "five main collection methods: measurement and sensors, surveys and questionnaires, observation, records and logs, existing and public data",
+      "primary versus secondary data",
+      "data provenance: where data came from, how it was gathered, and when",
+      "consent and privacy as general principles of collecting people's data",
+      "collection errors: measurement error, biased questions, non-response"
+    ],
+    "supporting": [
+      "question wording as a source of bias",
+      "self-selected responses and who answers surveys",
+      "reuse of administrative and routine business records",
+      "confidentiality practices of large government surveys"
+    ],
+    "outOfScope": [
+      "sampling design and sampling methods (sampling sibling topic)",
+      "dataset structure, formats, and metadata standards (datasets sibling topic)",
+      "privacy law, data-protection rights, and consent mechanics (ai-privacy sibling topic)",
+      "fixing or cleaning collected data (data-cleaning sibling topic)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The U.S. Geological Survey measures river flow with streamgages whose sensors record water stage, usually every 15 minutes, into electronic data recorders.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "usgs-streamflow-measured"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The American Community Survey collects household information through questionnaires and produces yearly statistics for communities; the decennial census is conducted every ten years.",
+      "claimType": "CURRENT",
+      "sourceIds": [
+        "us-census-acs-about"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Primary data can be gathered through fieldwork observation, diaries, and self-completion questionnaires; administrative and routine business records are another source of data.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "uk-data-service-secondary-data"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Secondary analysis reuses data that has already been collected for a previous study, typically to address a new research question.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "uk-data-service-secondary-data"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Data.gov is the U.S. government's open-data catalog, offering hundreds of thousands of datasets for public reuse.",
+      "claimType": "CURRENT",
+      "sourceIds": [
+        "data-gov"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Data provenance is the metadata that describes the history of a dataset, including how the data was collected, transmitted, and processed, and it matters most when data is repurposed for new uses.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nist-sp-1500-1"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Privacy and security is one of the six principles in Microsoft's responsible-AI framework for building trustworthy AI systems.",
+      "claimType": "CURRENT",
+      "sourceIds": [
+        "microsoft-responsible-ai-principles"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Non-response, the refusal or failure of invited people to participate, can make collected responses unrepresentative because people with strong positive or negative opinions are more likely to answer surveys.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "openstax-intro-stats-1-2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Asking questions in a way that influences the response and using defective measurement devices are collection problems that damage data quality regardless of sample size.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "openstax-intro-stats-1-2"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "The number of datasets in the Data.gov catalog changes as agencies publish new data.",
+      "positions": [
+        "The catalog displayed 552,276 datasets on the check date of 2026-08-21.",
+        "Any fixed count goes stale quickly as new datasets are added."
+      ],
+      "resolution": "The lesson avoids a precise figure and says 'hundreds of thousands of datasets,' which remains accurate as the catalog grows; the exact count is recorded here in the evidence packet instead."
+    }
+  ],
+  "unsupportedExistingClaims": [],
+  "correctionsNeeded": [
+    "No machine-generated draft existed for this topic in public/content/phase-2/lessons.json at write time, so there was no draft prose to correct.",
+    "Kept sampling design, dataset structure, and privacy-law detail out of scope and referenced their sibling topics instead of covering them here.",
+    "Time-anchored the Data.gov catalog size rather than stating a fixed number of datasets.",
+    "Used only the general responsible-AI privacy principle (Microsoft's six principles), avoiding any specific legal or regulatory privacy claims, which belong to the ai-privacy topic."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "us-census-acs-about",
+      "title": "About the American Community Survey",
+      "provider": "U.S. Census Bureau",
+      "url": "https://www.census.gov/programs-surveys/acs/about.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21. Supports the survey method: the American Community Survey collects information from households via questionnaires and produces yearly statistics, the decennial census runs every ten years, and Census surveys provide periodic comprehensive statistics for the nation. Facts synthesized; no page wording reproduced."
+    },
+    {
+      "id": "usgs-streamflow-measured",
+      "title": "How Streamflow is Measured",
+      "provider": "U.S. Geological Survey, Water Science School",
+      "url": "https://www.usgs.gov/special-topics/water-science-school/science/how-streamflow-measured",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21 (page last updated June 13, 2018). Supports measurement-based collection: streamgages measure stage with float, pressure, optic, or acoustic sensors; stage values are stored in electronic data recorders, usually every 15 minutes; USGS operates over 8,200 continuous-record streamgages. Facts synthesized; no page wording reproduced."
+    },
+    {
+      "id": "nist-sp-1500-1",
+      "title": "NIST Special Publication 1500-1: NIST Big Data Interoperability Framework, Volume 1",
+      "provider": "National Institute of Standards and Technology",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1500-1.pdf",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "PDF downloaded and text-extracted 2026-08-21. Supports provenance: metadata that describes the history of a dataset is called its provenance; it records how data was collected, transmitted, and processed; provenance matters as data is repurposed beyond its original collection process. U.S. government work; facts synthesized."
+    },
+    {
+      "id": "openstax-intro-stats-1-2",
+      "title": "Introductory Statistics, Section 1.2: Data, Sampling, and Variation in Data and Sampling",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/introductory-statistics/pages/1-2-data-sampling-and-variation-in-data-and-sampling",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://openstax.org/subject-terms",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21. Supports the collection-error claims: non-response or refusal of subjects to participate can make responses unrepresentative (people with strong opinions often answer surveys), collecting data or asking questions in a way that influences the response is a problem, a defective counting device causes a nonsampling error, and careless collection can have serious consequences. Sampling techniques themselves belong to the sampling sibling topic and were not drawn on here."
+    },
+    {
+      "id": "microsoft-responsible-ai-principles",
+      "title": "What is responsible AI? (Azure Machine Learning documentation)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21. Supports that Microsoft's Responsible AI Standard is a framework built on six principles, including privacy and security, fairness, reliability and safety, inclusiveness, transparency, and accountability. Used only for the general principle that handling people's data responsibly includes privacy and security; no implementation details used."
+    },
+    {
+      "id": "uk-data-service-secondary-data",
+      "title": "Secondary data analysis (Learning Hub)",
+      "provider": "UK Data Service",
+      "url": "https://ukdataservice.ac.uk/learning-hub/understanding-data/secondary-data/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21. Supports the primary/secondary distinction: secondary analysis is the reanalysis of data already collected for a previous study, typically by a different researcher addressing a new research question; primary data can be gathered from fieldwork observation, diaries, and self-completion questionnaires; administrative and routine business data are a rich source of statistics. Facts synthesized; no page wording reproduced."
+    },
+    {
+      "id": "data-gov",
+      "title": "Data.gov: The Home of the U.S. Government's Open Data",
+      "provider": "U.S. General Services Administration (Data.gov)",
+      "url": "https://data.gov/",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21. The catalog displayed 552,276 datasets on the check date. Supports existing and public data as a collection route; the lesson says 'hundreds of thousands of datasets' because the count grows continuously. Facts synthesized; no page wording reproduced."
+    }
+  ]
+}

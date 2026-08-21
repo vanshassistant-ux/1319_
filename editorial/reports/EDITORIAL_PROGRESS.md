@@ -1,6 +1,6 @@
 # ELIEXPLAINS GLOBAL EDITORIAL PROGRESS
 
-Generated: 2026-08-21T21:55:01.429Z
+Generated: 2026-08-21T21:55:20.895Z
 Counts are computed from the phase content stores by `bun run editorial:progress`.
 
 Subjects total: 44
