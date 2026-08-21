@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Weather is the short-term state of the atmosphere: today's temperature, wind, and rain. Climate is the long-term pattern of weather in a region, usually described with statistics such as 30-year climate normals. What sets a region's climate includes latitude, solar energy, atmospheric circulation, oceans, topography, and altitude. The Köppen system groups climates into tropical, dry, temperate, continental, and polar families. Climate also varies naturally through seasons, El Niño and La Niña, and occasional volcanic eruptions.
+Weather is what the atmosphere is doing right now: today's temperature, wind, and rain. Climate is the long-term pattern of weather in a region, usually described with statistics such as 30-year climate normals. What sets a region's climate includes latitude, solar energy, atmospheric circulation, oceans, topography, and altitude. The Köppen system groups climates into tropical, dry, temperate, continental, and polar families. Climate also varies naturally through seasons, El Niño and La Niña, and occasional volcanic eruptions.
 
 ## Why This Matters
 
@@ -20,7 +20,7 @@ Climate shapes the world we build. Farmers choose crop varieties using climate n
 
 ### Weather versus climate: it's about time
 
-Weather is what the atmosphere is doing right now: the temperature, humidity, wind, clouds, and precipitation at a particular place and time. It changes over minutes, hours, days, and weeks. Climate differs in one essential way: it is not a snapshot but a statistical description. Climate describes what the weather is like in a region over a long period, meaning the typical temperatures, how much rain or snow usually falls, and how windy it tends to be. NOAA's National Centers for Environmental Information captures the idea simply: climate is what you expect; weather is what you get. When scientists describe climate, they often use climate normals, averages of weather observations over a uniform 30-year period. The current official U.S. normals, for example, are computed from the years 1991 through 2020 using records from nearly 15,000 stations, and they are recalculated every decade in keeping with World Meteorological Organization conventions. Normals tell you what to expect, not what any single day will bring: the average July temperature is a statement about climate; this afternoon's high is weather.
+Weather is what the atmosphere is doing right now: the temperature, humidity, wind, clouds, and precipitation at a particular place and time. It changes over minutes, hours, days, and weeks. Climate differs in one essential way: it is not a snapshot but a statistical description. Climate is a description of what the weather is like in a region over a long period: the typical temperatures, how much rain or snow usually falls, and how windy it tends to be. NOAA's National Centers for Environmental Information captures the idea simply: climate is what you expect; weather is what you get. When scientists describe climate, they often use climate normals, averages of weather observations over a uniform 30-year period. The current official U.S. normals, for example, are computed from the years 1991 through 2020 using records from nearly 15,000 stations, and they are recalculated every decade in keeping with World Meteorological Organization conventions. Normals tell you what to expect, not what any single day will bring: the average July temperature is a statement about climate; this afternoon's high is weather.
 
 ### What sets a region's climate
 

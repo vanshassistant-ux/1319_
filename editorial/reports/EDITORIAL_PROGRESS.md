@@ -1,25 +1,25 @@
 # ELIEXPLAINS GLOBAL EDITORIAL PROGRESS
 
-Generated: 2026-08-21T19:37:02.486Z
+Generated: 2026-08-21T19:49:15.229Z
 Counts are computed from the phase content stores by `bun run editorial:progress`.
 
 Subjects total: 44
-Subjects processed: 23
-Subjects remaining: 21
-Subject completion: 52.27%
+Subjects processed: 24
+Subjects remaining: 20
+Subject completion: 54.55%
 
 Total topics: 1299
-Topics processed: 718
+Topics processed: 724
 Topics published: 282
-Topics ready to publish: 436
+Topics ready to publish: 442
 Topics held: 0
 Topics requiring review: 0
-Topics remaining: 581
-Topic processing: 55.27%
+Topics remaining: 575
+Topic processing: 55.74%
 
-Verified questions: 3590
-Unique source records: 3464
-Source usage classes: REFERENCE_ONLY=2625, PUBLIC_DOMAIN=547, ATTRIBUTION_REQUIRED=197, EXTRACT_AND_ADAPT=93, LINK_ONLY=2
+Verified questions: 3620
+Unique source records: 3500
+Source usage classes: REFERENCE_ONLY=2652, PUBLIC_DOMAIN=547, ATTRIBUTION_REQUIRED=206, EXTRACT_AND_ADAPT=93, LINK_ONLY=2
 
 ## Phase progress
 
@@ -27,7 +27,7 @@ Source usage classes: REFERENCE_ONLY=2625, PUBLIC_DOMAIN=547, ATTRIBUTION_REQUIR
 | --- | --- | --- | --- |
 | 1 | 11 / 11 | 282 / 282 | 100.00% |
 | 2 | 1 / 11 | 47 / 325 | 14.46% |
-| 3 | 8 / 11 | 273 / 329 | 82.98% |
+| 3 | 9 / 11 | 279 / 329 | 84.80% |
 | 4 | 3 / 11 | 116 / 363 | 31.96% |
 
 ## Collection progress
@@ -38,7 +38,7 @@ Source usage classes: REFERENCE_ONLY=2625, PUBLIC_DOMAIN=547, ATTRIBUTION_REQUIR
 | Technology | 4 / 8 | 135 / 257 | 52.53% |
 | Business & Money | 3 / 9 | 84 / 240 | 35.00% |
 | Humanities & Culture | 5 / 7 | 147 / 197 | 74.62% |
-| Science & Health | 0 / 6 | 42 / 206 | 20.39% |
+| Science & Health | 1 / 6 | 48 / 206 | 23.30% |
 | Society & Government | 4 / 7 | 144 / 233 | 61.80% |
 
 ## Subjects in progress
@@ -50,7 +50,7 @@ Source usage classes: REFERENCE_ONLY=2625, PUBLIC_DOMAIN=547, ATTRIBUTION_REQUIR
 | computer-literacy | 25 / 25 | 25 | 0 | 0 | 0 | 0 |
 | computer-science-fundamentals | 27 / 27 | 27 | 0 | 0 | 0 | 0 |
 | criminal-justice-and-criminology | 28 / 28 | 28 | 0 | 0 | 0 | 0 |
-| earth-and-space-science | 42 / 48 | 0 | 42 | 0 | 0 | 6 |
+| earth-and-space-science | 48 / 48 | 0 | 48 | 0 | 0 | 0 |
 | economics | 39 / 39 | 0 | 39 | 0 | 0 | 0 |
 | education | 21 / 21 | 21 | 0 | 0 | 0 | 0 |
 | engineering-fundamentals | 28 / 28 | 28 | 0 | 0 | 0 | 0 |

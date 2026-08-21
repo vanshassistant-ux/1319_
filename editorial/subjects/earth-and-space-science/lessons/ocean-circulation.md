@@ -2,11 +2,11 @@
 
 ## In 30 Seconds
 
-The ocean never sits still. Steady winds push the surface water, and Earth's rotation bends that motion — to the right in the Northern Hemisphere, to the left in the Southern — so surface currents spiral into five great gyres. These currents carry warm water away from the equator and cold water back toward it, softening coastal climates. Below the surface, density differences from temperature and salinity drive a slow global conveyor of deep water, while upwelling lifts nutrient-rich water up to feed ocean life.
+The ocean never sits still. Steady winds push the surface water, and Earth's rotation bends that motion — to the right in the Northern Hemisphere, to the left in the Southern — so surface currents spiral into five great gyres. They move warm water from the tropics toward the poles and return cooler water toward the equator, which softens coastal climates. Below the surface, density differences from temperature and salinity drive a slow global conveyor of deep water, while upwelling lifts nutrient-rich water up to feed ocean life.
 
 ## Why This Matters
 
-Currents move heat, nutrients, and even people and goods across the ocean. The same wind-driven gyres that carry warm water toward the poles keep some high-latitude coasts far milder than their latitude suggests, and the slow deep conveyor shuffles nutrients and dissolved gases through the abyss. Upwelling waters feed some of the world's richest fisheries. Knowing how this machinery works lets a student read an ocean map, explain why one coast is warm and another cold, and recognize the moving parts that climate — a sibling topic — builds upon.
+Currents move heat, nutrients, and even people and goods across the ocean. The same wind-driven gyres that move warm water toward the poles leave some high-latitude coasts noticeably milder than their latitude suggests, while the slow deep conveyor shuffles nutrients and dissolved gases through the abyss. Upwelling waters feed some of the world's richest fisheries. Knowing how this machinery works lets a student read an ocean map, explain why one coast is warm and another cold, and recognize the moving parts that climate — a sibling topic — builds upon.
 
 ## Learning Objectives
 
@@ -25,7 +25,7 @@ A current is a continuous, directed movement of ocean water — a river in the s
 
 ### The ocean as a planetary heat carrier
 
-The Sun heats the equator more than the poles, so tropical oceans collect a surplus of heat. Currents are how the ocean spends it: warm surface water flows away from the equator toward the poles, and cooler water returns toward the equator. The Gulf Stream carries warm water north along the east coast of the United States and across the Atlantic toward Europe; that delivery of warmth is why western Europe enjoys milder winters than its latitude would suggest. This poleward movement of heat is the ocean's share of Earth's heat engine, and it is one reason the ocean matters so much for climate. Climate itself, and the coupled atmosphere-ocean machinery that shares the job of moving heat, are sibling topics; the point here is simply that surface currents are the ocean's delivery system.
+The tropics absorb more solar energy than the poles, so tropical oceans collect a surplus of heat. Currents are how the ocean spends it: warm surface water flows away from the equator toward the poles, and cooler water returns toward the equator. The Gulf Stream carries warm water north along the east coast of the United States and across the Atlantic toward Europe; that delivery of warmth is why western Europe enjoys milder winters than its latitude would suggest. This poleward movement of heat is the ocean's share of Earth's heat engine, and it is one reason the ocean matters so much for climate. Climate itself, and the coupled atmosphere-ocean machinery that shares the job of moving heat, are sibling topics; the point here is simply that surface currents are the ocean's delivery system.
 
 ### The global conveyor: circulation powered by density
 

@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Air pressure is the weight of the air above you, pushing down on everything. A barometer measures it, and at sea level the standard reading is about 1013.25 hectopascals, or 29.92 inches of mercury. Pressure falls as you climb — roughly half of the atmosphere lies within the first 5.6 kilometers. Differences in pressure set air moving, which is wind, and rising or sinking air inside high- and low-pressure systems shapes the fair or cloudy weather they generally bring.
+Air pressure comes from the weight of the air piled above you, pressing down on everything. A barometer measures it, and at sea level the standard reading is about 1013.25 hectopascals, or 29.92 inches of mercury. Pressure falls as you climb — roughly half of the atmosphere lies within the first 5.6 kilometers. Differences in pressure set air moving, which is wind, and rising or sinking air inside high- and low-pressure systems shapes the fair or cloudy weather they generally bring.
 
 ## Why This Matters
 
@@ -29,7 +29,7 @@ A barometer measures air pressure. In the classic mercury barometer, the atmosph
 
 ### Pressure falls as you climb
 
-As elevation increases, fewer air molecules remain above you, density drops, and pressure decreases. The decrease is steepest near the ground and gentler higher up, because air is compressible. A useful benchmark comes from NOAA: although the atmosphere extends hundreds of miles upward, about half of all its molecules are contained within the first 18,000 feet (about 5.6 kilometers) above sea level. That is why the 500-millibar pressure level, roughly half of the surface value near 1000 millibars, sits at an average altitude of about 18,000 feet. It is also why climbers on high mountains feel thin air: less atmosphere presses down, and each breath carries fewer oxygen molecules.
+As elevation increases, fewer air molecules remain above you, density drops, and pressure decreases. The decrease is steepest near the ground and gentler higher up, because air is compressible. A useful benchmark from NOAA: the atmosphere reaches hundreds of miles upward, yet about half of all its molecules are contained within the first 18,000 feet (about 5.6 kilometers) above sea level. That is why the 500-millibar pressure level, roughly half of the surface value near 1000 millibars, sits at an average altitude of about 18,000 feet. It is also why climbers on high mountains feel thin air: less atmosphere presses down, and each breath carries fewer oxygen molecules.
 
 ### Pressure differences drive the wind
 

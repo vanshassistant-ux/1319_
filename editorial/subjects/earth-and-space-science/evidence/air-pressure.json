@@ -33,61 +33,85 @@
     {
       "claim": "Atmospheric pressure is the force the atmosphere exerts on a surface; it is mainly dependent on the weight of the air above that location, and it is higher at low elevation and lower at high elevation.",
       "claimType": "EVERGREEN",
-      "sourceIds": ["noaa-scijinks-weather-map", "noaa-jetstream-air-pressure"],
+      "sourceIds": [
+        "noaa-scijinks-weather-map",
+        "noaa-jetstream-air-pressure"
+      ],
       "status": "supported"
     },
     {
       "claim": "A barometer measures air pressure; standard sea-level pressure is 1013.25 hectopascals (the same value in millibars) and about 29.92 inches of mercury.",
       "claimType": "QUANTITATIVE",
-      "sourceIds": ["noaa-jetstream-air-pressure"],
+      "sourceIds": [
+        "noaa-jetstream-air-pressure"
+      ],
       "status": "supported"
     },
     {
       "claim": "Air pressure decreases with altitude because the number of air molecules above a point falls with height; about half of all the atmosphere's molecules are contained within the first 18,000 feet (about 5.6 km) above sea level, and the 500-millibar level averages near 18,000 feet.",
       "claimType": "QUANTITATIVE",
-      "sourceIds": ["noaa-jetstream-air-pressure"],
+      "sourceIds": [
+        "noaa-jetstream-air-pressure"
+      ],
       "status": "supported"
     },
     {
       "claim": "The pressure gradient is the rate at which pressure changes over distance; closely spaced isobars indicate a steep gradient, and wind speed increases as the pressure gradient increases.",
       "claimType": "SCIENTIFIC",
-      "sourceIds": ["noaa-jetstream-origin-of-wind"],
+      "sourceIds": [
+        "noaa-jetstream-origin-of-wind"
+      ],
       "status": "supported"
     },
     {
       "claim": "The pressure gradient force pushes air from regions of higher pressure toward regions of lower pressure; if it were the only force, air would flow straight from high to low pressure.",
       "claimType": "SCIENTIFIC",
-      "sourceIds": ["noaa-jetstream-origin-of-wind"],
+      "sourceIds": [
+        "noaa-jetstream-origin-of-wind"
+      ],
       "status": "supported"
     },
     {
       "claim": "Isobars are lines of equal pressure on weather maps; pressure values increase toward the center of high-pressure systems and decrease toward the center of low-pressure systems.",
       "claimType": "EVERGREEN",
-      "sourceIds": ["noaa-jetstream-origin-of-wind"],
+      "sourceIds": [
+        "noaa-jetstream-origin-of-wind"
+      ],
       "status": "supported"
     },
     {
       "claim": "The Coriolis effect, caused by Earth's rotation and described mathematically by Gaspard-Gustave Coriolis in 1835, deflects long-distance moving objects including air: to the right in the Northern Hemisphere and to the left in the Southern Hemisphere, so Northern-Hemisphere winds spiral clockwise around highs and counter-clockwise around lows.",
       "claimType": "SCIENTIFIC",
-      "sourceIds": ["noaa-jetstream-origin-of-wind", "noaa-scijinks-coriolis"],
+      "sourceIds": [
+        "noaa-jetstream-origin-of-wind",
+        "noaa-scijinks-coriolis"
+      ],
       "status": "supported"
     },
     {
       "claim": "Rising air cools as it climbs and can lead to clouds and precipitation, while sinking air warms and tends to produce fair weather; surface friction causes diverging winds from highs and converging winds near lows.",
       "claimType": "SCIENTIFIC",
-      "sourceIds": ["noaa-jetstream-origin-of-wind"],
+      "sourceIds": [
+        "noaa-jetstream-origin-of-wind"
+      ],
       "status": "supported"
     },
     {
       "claim": "As general tendencies, fair, dry weather is associated with high pressure and rainy, stormy weather with low pressure; a high-pressure system is a dense air mass usually cooler and drier than its surroundings, and a low-pressure system is a less dense air mass usually wetter and warmer than its surroundings.",
       "claimType": "SCIENTIFIC",
-      "sourceIds": ["noaa-jetstream-global-circulations", "noaa-scijinks-weather-map"],
+      "sourceIds": [
+        "noaa-jetstream-global-atmospheric-circulations",
+        "noaa-scijinks-weather-map"
+      ],
       "status": "supported"
     },
     {
       "claim": "On the global scale, warm air rising near the equator creates a belt of low pressure, while cold air sinking at the poles forms high-pressure areas (polar highs); pressure readings from stations at different elevations are converted to sea-level values so they can be compared.",
       "claimType": "SCIENTIFIC",
-      "sourceIds": ["noaa-jetstream-global-circulations", "noaa-jetstream-air-pressure"],
+      "sourceIds": [
+        "noaa-jetstream-global-atmospheric-circulations",
+        "noaa-jetstream-air-pressure"
+      ],
       "status": "supported"
     }
   ],
@@ -149,7 +173,7 @@
       "notes": "Tier A source read live on 2026-08-21. Supports: isobars as lines of equal pressure ('iso' = equal, 'bar' = pressure unit); pressure increasing toward high centers and decreasing toward low centers; the pressure gradient and wind speed directly proportional to it; the pressure gradient force extending from high to low pressure; the Coriolis force (named for Gaspard-Gustave Coriolis, 1835) deflecting objects right in the Northern Hemisphere and left in the Southern Hemisphere; winds clockwise around highs and counter-clockwise around lows in the Northern Hemisphere; friction causing diverging winds from highs and converging winds near lows; rising air cooling to form clouds and precipitation while sinking air warms and brings fair weather. Facts synthesized; no source prose reproduced."
     },
     {
-      "id": "noaa-jetstream-global-circulations",
+      "id": "noaa-jetstream-global-atmospheric-circulations",
       "title": "JetStream: Global Atmospheric Circulations",
       "provider": "NOAA National Weather Service JetStream (Online School for Weather)",
       "url": "https://www.noaa.gov/jetstream/global/global-atmospheric-circulations",
