@@ -1,6 +1,6 @@
 # EliExplains — Master Topic Directory
 
-Generated 2026-08-21 10:14 UTC by `bun scripts/build-master-directory.mjs` from the master curriculum + the four phase content stores.
+Generated 2026-08-21 10:47 UTC by `bun scripts/build-master-directory.mjs` from the master curriculum + the four phase content stores.
 
 **Legend:** 🟢 LIVE · 🔵 READY (unpublished) · 🟠 NEEDS REVIEW · ⚪ NOT STARTED · ⚫ PRUNED (mis-ingested header/note) · 🟣 ADDED (not in master curriculum)
 
@@ -8,10 +8,10 @@ Generated 2026-08-21 10:14 UTC by `bun scripts/build-master-directory.mjs` from 
 
 | Scope | Curriculum topics | Genuine topics | 🟢 Live | 🔵 Ready | 🟠 Review | ⚪ Not started | Done (live+ready) |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| **All phases** | 1319 | 1299 | 282 | 395 | 0 | 622 | **677 (52.1%)** |
+| **All phases** | 1319 | 1299 | 282 | 410 | 0 | 607 | **692 (53.3%)** |
 | Phase 1 — LIVE on eliexplains.org | 282 | 282 | 282 | 0 | 0 | 0 | 282 (100.0%) |
 | Phase 2 | 325 | 325 | 0 | 47 | 0 | 278 | 47 (14.5%) |
-| Phase 3 | 337 | 329 | 0 | 232 | 0 | 97 | 232 (70.5%) |
+| Phase 3 | 337 | 329 | 0 | 247 | 0 | 82 | 247 (75.1%) |
 | Phase 4 | 375 | 363 | 0 | 116 | 0 | 247 | 116 (32.0%) |
 
 ## Contents
@@ -48,7 +48,7 @@ Generated 2026-08-21 10:14 UTC by `bun scripts/build-master-directory.mjs` from 
   - [Philosophy & Ethics](#philosophy-and-ethics) — 28/28 done
   - [Art History & Visual Culture](#art-history-and-visual-culture) — 34/34 done
   - [Music Appreciation](#music-appreciation) — 28/28 done
-  - [Film & Media Studies](#film-and-media-studies) — 13/28 done
+  - [Film & Media Studies](#film-and-media-studies) — 28/28 done
   - [Religious Studies](#religious-studies) — 2/27 done
   - [Languages & ESL](#languages-and-esl) — 1/26 done
   - [Earth & Space Science](#earth-and-space-science) — 16/48 done
@@ -1121,9 +1121,9 @@ Phase 3 · live 0 · ready 28 · review 0 · not started 0
 | 28 | Foundations | Music and Culture | 🔵 READY (unpublished) | 5 |  |
 
 <a id="film-and-media-studies"></a>
-## Film & Media Studies — 🔧 IN PROGRESS (13/28)
+## Film & Media Studies — ✅ COMPLETE · awaiting publish (28/28)
 
-Phase 3 · live 0 · ready 13 · review 0 · not started 15
+Phase 3 · live 0 · ready 28 · review 0 · not started 0
 
 | # | Unit | Topic | Status | Qs | Link |
 |---:|---|---|---|---:|---|
@@ -1140,21 +1140,21 @@ Phase 3 · live 0 · ready 13 · review 0 · not started 15
 | 11 | Foundations | Sound | 🔵 READY (unpublished) | 5 |  |
 | 12 | Foundations | Music | 🔵 READY (unpublished) | 5 |  |
 | 13 | Foundations | Narrative | 🔵 READY (unpublished) | 5 |  |
-| 14 | Foundations | Character | ⚪ NOT STARTED |  |  |
-| 15 | Foundations | Genre | ⚪ NOT STARTED |  |  |
-| 16 | Foundations | Documentary | ⚪ NOT STARTED |  |  |
-| 17 | Foundations | Animation | ⚪ NOT STARTED |  |  |
-| 18 | Foundations | Representation | ⚪ NOT STARTED |  |  |
-| 19 | Foundations | Race and Media | ⚪ NOT STARTED |  |  |
-| 20 | Foundations | Gender and Media | ⚪ NOT STARTED |  |  |
-| 21 | Foundations | Media Industries | ⚪ NOT STARTED |  |  |
-| 22 | Foundations | Media Ownership | ⚪ NOT STARTED |  |  |
-| 23 | Foundations | Advertising | ⚪ NOT STARTED |  |  |
-| 24 | Foundations | News Media | ⚪ NOT STARTED |  |  |
-| 25 | Foundations | Social Media | ⚪ NOT STARTED |  |  |
-| 26 | Foundations | Media Literacy | ⚪ NOT STARTED |  |  |
-| 27 | Foundations | Propaganda | ⚪ NOT STARTED |  |  |
-| 28 | Foundations | Media Criticism | ⚪ NOT STARTED |  |  |
+| 14 | Foundations | Character | 🔵 READY (unpublished) | 5 |  |
+| 15 | Foundations | Genre | 🔵 READY (unpublished) | 5 |  |
+| 16 | Foundations | Documentary | 🔵 READY (unpublished) | 5 |  |
+| 17 | Foundations | Animation | 🔵 READY (unpublished) | 5 |  |
+| 18 | Foundations | Representation | 🔵 READY (unpublished) | 5 |  |
+| 19 | Foundations | Race and Media | 🔵 READY (unpublished) | 5 |  |
+| 20 | Foundations | Gender and Media | 🔵 READY (unpublished) | 5 |  |
+| 21 | Foundations | Media Industries | 🔵 READY (unpublished) | 5 |  |
+| 22 | Foundations | Media Ownership | 🔵 READY (unpublished) | 5 |  |
+| 23 | Foundations | Advertising | 🔵 READY (unpublished) | 5 |  |
+| 24 | Foundations | News Media | 🔵 READY (unpublished) | 5 |  |
+| 25 | Foundations | Social Media | 🔵 READY (unpublished) | 5 |  |
+| 26 | Foundations | Media Literacy | 🔵 READY (unpublished) | 5 |  |
+| 27 | Foundations | Propaganda | 🔵 READY (unpublished) | 5 |  |
+| 28 | Foundations | Media Criticism | 🔵 READY (unpublished) | 5 |  |
 
 <a id="religious-studies"></a>
 ## Religious Studies — 🔧 IN PROGRESS (2/27)
