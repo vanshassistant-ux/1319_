@@ -133,11 +133,14 @@ shells out to `bun` and is **deprecated** — never needed.
 ### 3.1 Getting the bundle into the VM (run on the Mac host)
 
 ```bash
-# package (keeps .git, excludes nothing you need)
-tar -C /Volumes/mini_external -czf /tmp/MASTER_1319.tgz MASTER_1319
+# package (keeps .git, excludes nothing you need). COPYFILE_DISABLE=1 is REQUIRED on macOS:
+# without it, tar adds AppleDouble "._*" sidecar files that corrupt git's view of the repo in the VM.
+COPYFILE_DISABLE=1 tar -C /Volumes/mini_external --exclude='.DS_Store' -czf /tmp/MASTER_1319.tgz MASTER_1319
 # copy in, extract into the home of the user that RUNS Hermes (booboo) — or moomoo.guest if that is you
 limactl cp /tmp/MASTER_1319.tgz hermes-ubuntu-2:/tmp/MASTER_1319.tgz
-limactl shell hermes-ubuntu-2 -- bash -lc 'mkdir -p ~/work && tar -C ~/work -xzf /tmp/MASTER_1319.tgz && cd ~/work/MASTER_1319 && node scripts/editorial-progress.mjs'
+limactl shell hermes-ubuntu-2 -- bash -lc 'mkdir -p ~/work && tar --warning=no-unknown-keyword -C ~/work -xzf /tmp/MASTER_1319.tgz && cd ~/work/MASTER_1319 && find . -name "._*" -delete && node scripts/editorial-progress.mjs'
+# If a copy ever shows thousands of untracked "._*" files or "index file ._pack-*.idx is too small":
+#   find . -name "._*" -type f -delete    # then git status is clean again
 ```
 
 Expected last line: `Topics processed 647/1299 (49.81%); subjects 20/44.`
