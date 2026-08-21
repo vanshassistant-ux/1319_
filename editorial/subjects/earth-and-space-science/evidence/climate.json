@@ -1,0 +1,234 @@
+{
+  "topicId": "earth-and-space-science:foundations:climate",
+  "subjectId": "earth-and-space-science",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "weather is the short-term state of the atmosphere; climate is the long-term pattern of weather in a region",
+      "30-year climate normals (NOAA/WMO convention) as the standard statistical description of climate",
+      "factors that determine climate: latitude, solar energy, atmospheric circulation, oceans, topography, altitude",
+      "Köppen (Köppen-Geiger) climate classification with major groups tropical, dry, temperate, continental, polar",
+      "natural climate variability: seasons, ENSO (El Nino/La Nina), volcanic effects",
+      "why climate matters: ecosystems, agriculture, settlement"
+    ],
+    "supporting": [
+      "climate normals are recalculated every decade using ~15,000 U.S. stations (1991-2020 set)",
+      "Köppen temperature thresholds: tropical every month >18C/64F; polar warmest month <10C/50F",
+      "highland (H) group as an elevation-based Köppen category",
+      "Mount Pinatubo 1991 as a worked example of volcanic cooling",
+      "Dallas-Fort Worth 2015 rainfall vs 30-year normal as a weather-vs-climate worked example"
+    ],
+    "outOfScope": [
+      "weather mechanics and forecasting (sibling topic: weather)",
+      "climate change: the ongoing long-term change and its science (sibling topic: climate-change)",
+      "atmosphere structure and atmosphere-ocean coupling mechanics (sibling topics: atmosphere, atmosphere-and-oceans)",
+      "ocean circulation mechanics (sibling topic: ocean-circulation)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Weather is the short-term state of the atmosphere at a given time and place; climate is the long-term pattern of weather in a region, described by averages and other statistics over long periods.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ncei-weather-vs-climate", "noaa-jetstream-climate-vs-weather"],
+      "status": "supported"
+    },
+    {
+      "claim": "Climate normals are averages of weather observations over a uniform 30-year period; the official U.S. normals are recalculated every 10 years, the current set (1991-2020) draws on nearly 15,000 stations, and the practice follows World Meteorological Organization and National Weather Service requirements.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["ncei-us-climate-normals", "ncei-weather-vs-climate", "noaa-jetstream-climate-vs-weather"],
+      "status": "supported"
+    },
+    {
+      "claim": "A region's climate is determined by latitude and solar energy, atmospheric circulation, oceans, topography, and altitude.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nasa-earth-observatory-energy-budget", "noaa-jetstream-global-atmospheric-circulations", "noaa-oceanservice-ocean-currents", "noaa-jetstream-climate-zones"],
+      "status": "supported"
+    },
+    {
+      "claim": "The Köppen (Köppen-Geiger) system is the common framework for classifying climates; its major groups are tropical (A), dry (B), temperate (C), continental (D), and polar (E), with a separate highland group (H) based on elevation.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["noaa-jetstream-climate-zones"],
+      "status": "supported"
+    },
+    {
+      "claim": "Climate varies naturally on several timescales: seasons result from Earth's tilted axis; ENSO alternates between El Nino and La Nina phases roughly every 3-7 years; and large volcanic eruptions can cool the surface for years through sulfate aerosols that reflect sunlight.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["nasa-spaceplace-seasons", "noaa-climategov-enso-faq", "usgs-volcanoes-affect-climate"],
+      "status": "supported"
+    },
+    {
+      "claim": "The June 15, 1991 eruption of Mount Pinatubo injected about 20 million tons of sulfur dioxide into the stratosphere, forming sulfate aerosols that cooled Earth's surface by as much as about 1.3 degrees Fahrenheit (0.7 degree Celsius) for roughly three years.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["usgs-volcanoes-affect-climate"],
+      "status": "supported"
+    },
+    {
+      "claim": "Climate shapes ecosystems, agriculture, and settlement: normals guide farmers' crop choices and utilities' seasonal planning, and climate statistics describe the conditions communities design around.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ncei-us-climate-normals", "ncei-weather-vs-climate"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Do climate normals always span exactly 30 years?",
+      "positions": [
+        "NCEI: official normals are computed over a uniform 30-year period.",
+        "NCEI also offers supplemental 15-year normals for some products."
+      ],
+      "resolution": "The lesson presents the 30-year normal as the standard definition, which is the WMO/NWS convention stated by NCEI, and does not mention the supplemental 15-year products."
+    },
+    {
+      "issue": "Do volcanoes warm or cool the climate?",
+      "positions": [
+        "USGS: sulfur dioxide converts to sulfate aerosols that reflect sunlight and cool the lower atmosphere.",
+        "Volcanic carbon dioxide is a greenhouse gas, but modern volcanic CO2 emissions are less than one percent of human emissions."
+      ],
+      "resolution": "The lesson claims only temporary cooling from large eruptions, which is the well-established effect; the CO2 comparison belongs to the climate-change sibling topic and is omitted."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's framing of climate as a 'label on a toolbox drawer' and its generic boilerplate about definitions, context, and evidence were machine-generated placeholders with no source support and were discarded.",
+    "The draft's claim that climate is 'a concept students use to organize information' was replaced with the verified scientific definition (long-term statistics of weather)."
+  ],
+  "correctionsNeeded": [
+    "Replaced machine-generated boilerplate with source-verified scientific content.",
+    "Corrected the draft's implicit narrowing of climate to a generic concept: the lesson now defines climate as long-term weather statistics, with 30-year normals per NCEI and WMO convention.",
+    "Added verified quantitative figures: Köppen thresholds (tropical every month >18C/64F; polar warmest month <10C/50F), 30-year 1991-2020 normals from nearly 15,000 stations recalculated each decade, Pinatubo's 20 million tons of SO2 and cooling of up to ~1.3F (0.7C) for about three years, and Dallas-Fort Worth 2015 rainfall (62.61 in vs 36.14 in normal), all arithmetic-checked with python3 on 2026-08-21.",
+    "Named all six climate controls explicitly (latitude, solar energy, atmospheric circulation, oceans, topography, altitude) and presented the Köppen groups as a descriptive classification, not a value judgment.",
+    "Kept the ongoing long-term change (climate change) as a reference-only sibling topic, per scope."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "ncei-weather-vs-climate",
+      "title": "What's the Difference Between Weather and Climate?",
+      "provider": "NOAA National Centers for Environmental Information (NCEI)",
+      "url": "https://www.ncei.noaa.gov/news/weather-vs-climate",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Registry record reused exactly (id and URL identical). Re-read live on 2026-08-21. Supports: weather as short-term atmospheric changes versus climate as what the weather is like over a long period in a specific area; climate described by averages of precipitation, temperature, humidity, sunshine, wind, and other measures, sometimes over 30 years, called Climate Normals; 'climate is what you expect, weather is what you get'. No wording reproduced."
+    },
+    {
+      "id": "noaa-jetstream-climate-vs-weather",
+      "title": "Climate vs. Weather (JetStream Online School for Weather)",
+      "provider": "NOAA National Weather Service, JetStream Online School for Weather",
+      "url": "https://www.noaa.gov/jetstream/global/climate-vs-weather",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live with a browser user agent (HTTP 200) on 2026-08-21. Supports: weather as atmospheric conditions at a specific point in time versus climate as the average or typical weather over a long period (a few years or more); the climatic normal as the arithmetic average of values over a 30-year period (three consecutive decades); current normals based on 1991-2020 with a new set for 2001-2030 expected in 2031; the Dallas-Fort Worth example (normal annual rainfall 36.14 in / 918 mm vs 62.61 in / 1,590 mm in 2015, nearly a normal year's rain in May, October, and November). Figures arithmetic-checked with python3. No wording reproduced."
+    },
+    {
+      "id": "noaa-jetstream-climate-zones",
+      "title": "Climate Zones (JetStream Online School for Weather)",
+      "provider": "NOAA National Weather Service, JetStream Online School for Weather",
+      "url": "https://www.noaa.gov/jetstream/global/climate-zones",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live with a browser user agent (HTTP 200) on 2026-08-21. Supports: the Köppen-Geiger climate classification; categories based on general temperature profile related to latitude; A tropical (all months average >64F/18C, extending about 15-25 degrees from the equator), B dry (potential evaporation and transpiration exceed precipitation), C moist subtropical mid-latitude (warm humid summers, mild winters), D moist continental mid-latitude (cold winters, warmest month >50F/10C, coldest month <27F/-3C), E polar (warmest month <50F/10C), and H highlands (climates resulting from elevation, with rapid climate changes over short distances in mountainous terrain). Threshold conversions (18C=64.4F, 10C=50F, -3C=26.6F) verified with python3. No wording reproduced."
+    },
+    {
+      "id": "ncei-us-climate-normals",
+      "title": "U.S. Climate Normals",
+      "provider": "NOAA National Centers for Environmental Information (NCEI)",
+      "url": "https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live with a browser user agent (HTTP 200) on 2026-08-21. Supports: official normals calculated for a uniform 30-year period with annual/seasonal, monthly, daily, and hourly averages of temperature, precipitation, and other variables from almost 15,000 U.S. weather stations; generation every 10 years in keeping with WMO and NWS requirements; the 1991-2020 set as the latest in a series of decadal normals first produced in the 1950s; uses including farmers planting crop varieties, utilities planning seasonal energy use, and other economic decisions beyond the range of weather forecasts. No wording reproduced."
+    },
+    {
+      "id": "noaa-climategov-enso-faq",
+      "title": "El Nino and La Nina: Frequently asked questions",
+      "provider": "NOAA Climate.gov",
+      "url": "https://www.climate.gov/news-features/understanding-climate/el-ni%C3%B1o-and-la-ni%C3%B1a-frequently-asked-questions",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Registry record reused exactly (id and URL identical). Supports: El Nino and La Nina as the warm and cool phases of ENSO; swings every 3-7 years on average; warmer-than-average central/eastern tropical Pacific during El Nino and cooler during La Nina; shifts in rainfall and weather patterns worldwide. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "nasa-earth-observatory-energy-budget",
+      "title": "Climate and Earth's Energy Budget",
+      "provider": "NASA Earth Observatory",
+      "url": "https://earthobservatory.nasa.gov/features/EnergyBalance",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Registry record reused exactly (id and URL identical). Supports: unequal solar heating between the equator and poles (the equator receives more direct sunlight per unit area); coupled atmosphere-ocean circulation carrying heat poleward; the ocean's heat capacity giving climate thermal inertia. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "nasa-spaceplace-seasons",
+      "title": "What Causes the Seasons?",
+      "provider": "NASA Space Place (NASA Science for Kids)",
+      "url": "https://spaceplace.nasa.gov/seasons/en/",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live with a browser user agent (HTTP 200) on 2026-08-21. Supports: Earth's tilted axis causes the seasons; throughout the year different parts of Earth receive the Sun's most direct rays; the common misconception that distance from the Sun causes seasons is incorrect (Earth is closest to the Sun during Northern Hemisphere winter). Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "usgs-volcanoes-affect-climate",
+      "title": "Volcanoes Can Affect Climate",
+      "provider": "U.S. Geological Survey Volcano Hazards Program",
+      "url": "https://www.usgs.gov/programs/VHP/volcanoes-can-affect-climate",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live with a browser user agent (HTTP 200) on 2026-08-21. Supports: volcanic sulfur dioxide converts to sulfuric acid and condenses into fine sulfate aerosols in the stratosphere that increase reflection of solar radiation back to space, cooling the lower atmosphere; several eruptions in the past century caused declines in average surface temperature of up to half a degree Fahrenheit for one to three years; Mount Pinatubo (June 15, 1991) injected a 20-million-ton sulfur dioxide cloud more than 20 miles high and cooled Earth's surface by as much as 1.3 degrees Fahrenheit for three years following the eruption; modern volcanic CO2 is less than one percent of human CO2 emissions (omitted from lesson; climate-change sibling topic). Conversion 1.3F = 0.72C verified with python3. No wording reproduced."
+    },
+    {
+      "id": "noaa-oceanservice-ocean-currents",
+      "title": "What is a current?",
+      "provider": "NOAA National Ocean Service",
+      "url": "https://oceanservice.noaa.gov/facts/current.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Registry record reused exactly (id and URL identical). Supports: ocean currents affect climate by carrying warm water from the equator and cold water from the poles; the ocean's role in moderating coastal temperatures. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "noaa-jetstream-global-atmospheric-circulations",
+      "title": "Global Atmospheric Circulations (JetStream Online School for Weather)",
+      "provider": "NOAA National Weather Service, JetStream Online School for Weather",
+      "url": "https://www.noaa.gov/jetstream/global/global-atmospheric-circulations",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Registry record reused exactly (id and URL identical). Supports: unequal solar heating between the equator and poles produces global circulations of air that carry heat; used only to name atmospheric circulation as a climate control. Cell mechanics are a sibling topic. Facts synthesized; no wording reproduced."
+    }
+  ]
+}
