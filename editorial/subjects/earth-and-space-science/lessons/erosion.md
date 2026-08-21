@@ -1,0 +1,158 @@
+# Erosion
+
+## In 30 Seconds
+
+Erosion is the transport of weathered material from one place to another. Weathering breaks rock down in place; erosion moves the pieces, and deposition settles them somewhere new. Four agents do the moving: running water, wind, ice, and gravity. Water and wind sort grains by size as they carry them; glaciers carry everything mixed together. Erosion carves canyons, sea cliffs, and arches, and it becomes a practical problem when human land use strips soil faster than the land can hold it.
+
+## Why This Matters
+
+Erosion is the moving half of the sediment cycle: it feeds the sand, silt, and gravel that build deltas, floodplains, beaches, and eventually new sedimentary rock, and it carves the scenery around us — canyons, sea cliffs, arches. It also has a practical side. When farming, construction, or clearing exposes bare soil, runoff carries it into streams, muddying water and stripping the ground crops depend on. And gravity-driven mass wasting reshapes slopes at every speed, from creeping soil that tilts fences to debris flows that threaten roads and homes. Reading a landscape means asking what moved what, where it went, and how fast.
+
+## Learning Objectives
+
+- Define erosion, sediment, and deposition, and distinguish erosion from weathering.
+- Identify running water, wind, ice, and gravity as the main agents of erosion.
+- Explain how water and wind sort sediment by size while glacial ice transports mixed material.
+- Distinguish creep, slump, rockslide, and debris flow as types of mass wasting.
+- Apply erosion and deposition concepts to explain a landform or a runoff scenario.
+- Analyze how human land use can accelerate erosion and soil loss.
+
+## The College Version
+
+### Weathering loosens, erosion moves
+
+Erosion is the transport of weathered material from one place to another. Weathering — the physical breakup and chemical alteration of rock in place — prepares the material; erosion moves it once flowing water, wind, or ice takes hold of a particle. The two processes work as a team. Weathering loosens a grain, erosion carries it away, and the freshly exposed surface below begins to weather in turn. The material that gets moved is sediment: loose, uncemented pieces of rock and minerals, classified by size from boulders and cobbles down through pebbles, sand, silt, and clay. Erosion does not create the pieces; it relocates them. That distinction matters everywhere in geology, because the same particle can be weathered, moved, and deposited many times over its history.
+
+### Four agents, four styles of transport
+
+Running water moves more sediment than any other agent across most of the planet's surface. Fast water can pick up, suspend, and carry larger particles than slow water, which is why streams run muddy during storms. Gravel rolls and bounces along the bed, sand and silt ride in the water itself, and dissolved material travels invisibly — on average, dissolved matter makes up about 15 percent of the mass a stream transports. As current slows, the coarsest grains settle first and finer ones farther along, so water-laid deposits tend to be sorted by size.
+
+Wind works on the same principle with lighter material: it lifts loose, dry sand and dust, and it can carry only fine grains; windblown sand and silt pile up where the wind slackens, building dunes in deserts and along coasts.
+
+Ice transports the widest range of sizes. A glacier drags everything it overrides — clay, sand, gravel, boulders — and deposits it as till, an unsorted mixture. Where water and wind sort, ice mixes.
+
+Gravity is the fourth agent, working without any flowing medium: mass wasting is the downslope movement of rock and soil under gravity's pull. Creep is imperceptibly slow soil movement, millimeters to centimeters per year, visible in leaning trees and tilted fence posts. A slump is a block of sediment sliding along a curved surface, centimeters to meters per year, often after heavy rain soaks the ground. A rockslide is rock moving as a unit along a more planar sliding surface. A debris flow is a fast-moving slurry of soil, rock, organic matter, and water that races down steep gullies at meters per second.
+
+### Deposition: the other half of the cycle
+
+Everything erosion takes, it must eventually put down. Deposition is the accumulation of transported sediment where the flow loses energy — where a stream enters a lake, where a wind dies, where a slope levels off. Erosion and deposition are two halves of one process: a stream can be eroding its bed and banks while simultaneously laying sand on a bar in the same channel. The journey from weathering to deposition feeds the sedimentary rock cycle: weathered material is eroded, transported, deposited, buried, and eventually lithified. This is why erosion is rarely a one-way trip. A grain of sand may be washed downstream, stranded on a floodplain for centuries, and then picked up again by a wandering channel. Landscapes record the current balance between the supply of weathered material and the transport that removes it.
+
+### Landforms and the human factor
+
+Given enough time, erosion leaves its signature on the landscape. Running water cutting down into rock over long spans creates canyons and gorges. Along coasts, waves erode rock into sea cliffs — wave-eroded escarpments — and carve out arches, sea caves, and stacks where less resistant rock gives way. In Arches National Park, more than two thousand natural arches stand as the work of erosion: water seeps into fractures in the sandstone, freezes, expands, and breaks off chunks, slowly turning rock fins into arches — which will eventually widen and collapse, as Wall Arch did in 2008.
+
+Erosion rates vary with slope, climate, rock type, and vegetation cover, and people change the balance. Storms deliver eroded soil and debris to rivers; construction sites without runoff controls pour suspended sediment into streams, harming water quality; and removing vegetation is a recognized cause of slope failure. Concentrated runoff on bare ground cuts channels that deepen into gullies, and farmland can lose soil faster than natural processes can rebuild it. The stakes are real: the U.S. Geological Survey estimated in 2004 that landslides alone cause about $3.5 billion (2001 dollars) in damage and 25 to 50 deaths in the United States each year. None of this is a call to fear the landscape — it is a reason to read it carefully.
+
+## Key Vocabulary
+
+- **Erosion:** Transport of weathered rock and sediment from one place to another by water, wind, ice, or gravity.
+- **Weathering:** Breakdown or chemical alteration of rock in place; the process that prepares material for erosion.
+- **Sediment:** Loose, uncemented pieces of rock and minerals, classified by size from boulders to clay.
+- **Deposition:** Settling and accumulation of transported sediment where the transporting flow loses energy.
+- **Mass wasting:** Downslope movement of rock and soil under gravity without a flowing medium such as water or ice.
+- **Creep:** Very slow downslope movement of soil, on the order of millimeters to centimeters per year, shown by leaning trees and tilted posts.
+- **Slump:** Rotational sliding of a block of sediment downslope along a curved surface.
+- **Rockslide:** Downslope sliding of rock along a roughly planar surface.
+- **Debris flow:** Rapid downslope flow of a slurry of soil, rock, organic matter, and water.
+- **Till:** Unsorted sediment deposited directly by glacial ice.
+
+## Eli-10
+
+Erosion is the moving part of the rock cycle. First, weathering breaks rock into loose pieces without moving them. Then erosion carries those pieces somewhere else. Four movers do the carrying. Running water moves the most — rain runoff and streams lift sand and gravel and drop them when they slow down. Wind carries sand and dust and can pile them into dunes. Glaciers, giant slow-moving masses of ice, scoop up everything in their path and drag it along, all sizes mixed together. Gravity pulls loose material downhill, from soil creeping a few millimeters a year to fast debris flows. Wherever a mover loses energy, the load settles — that is deposition. Erosion takes, deposition gives, and together they move mountains, grain by grain.
+
+## Eli's Analogy
+
+Think of erosion as a delivery service and weathering as the packaging. Weathering breaks big rock into pieces small enough to move; erosion is the fleet of trucks, trains, boats, and conveyor belts that carry the packages; deposition is the warehouse where the load is dropped off. Running water is the busiest carrier, wind handles only light parcels, glaciers grab whole pallets without sorting, and gravity delivers straight downhill.
+
+The analogy has limits. Real erosion has no drivers or sorting machines. Water can carry and drop the same grain many times, wind moves only dry fine material, glaciers do not stack their load neatly, and gravity's deliveries can be destructive. The analogy shows the roles each agent plays, not the physics, chemistry, or timing of the processes.
+
+## Worked Example
+
+After a thunderstorm, muddy water runs off a bare construction slope into a small creek. The runoff is eroding: it has picked up loose soil and is transporting it as suspended sediment. Where the creek widens and slows, the largest grains settle first, then sand, then silt, and the water begins to clear — deposition and sorting at work. Had the slope been grassed, roots would have held the soil and the creek would run clearer. The same water that removes soil upstream will drop it somewhere downstream, showing erosion and deposition as two halves of one journey.
+
+## Common Mistakes
+
+- **Using erosion and weathering as if they were the same process.** Weathering breaks down or alters rock in place; erosion transports the weathered material away. A grain loosened but still sitting on the outcrop has been weathered, not eroded.
+- **Thinking erosion only removes material and never adds any.** Erosion and deposition are paired: what one place loses, another gains. A single stream can erode its banks while depositing a sandbar in the same reach.
+- **Expecting glaciers to sort sediment the way water and wind do.** Glacial ice carries everything from clay to boulders mixed together; sediment deposited directly by ice (till) is unsorted, unlike most water- and wind-laid deposits.
+- **Calling every downslope movement a landslide without distinguishing the types.** Mass wasting includes creep (millimeters to centimeters per year), slump (rotational sliding), rockslide (planar sliding of rock), and debris flow (a rapid water-laden slurry) — different materials, motions, and speeds.
+- **Assuming erosion is always fast, recent, or caused by humans.** Most erosion is gradual and natural — canyons take very long spans of time to cut. Human land use can accelerate it, but erosion itself is an ordinary Earth process.
+
+## Compare / Contrast
+
+| A | B | Distinction |
+| --- | --- | --- |
+| Weathering | Erosion | Weathering breaks down or alters rock in place; erosion transports the material to a new location. |
+| Water and wind transport | Glacial transport | Water and wind sort grains by size as they carry and drop them; glacial ice carries all sizes mixed and deposits unsorted till. |
+| Erosion | Deposition | Erosion removes material from one place; deposition accumulates it where transport energy drops — two halves of the sediment cycle. |
+| Creep | Debris flow | Creep is imperceptibly slow soil movement (millimeters to centimeters per year); a debris flow is a rapid slurry of soil, rock, and water moving at meters per second. |
+
+## Key Takeaway
+
+Erosion is the transport of weathered material by running water, wind, ice, and gravity; paired with deposition, it moves sediment across the landscape, carves landforms, and responds to how we use the land.
+
+## Practice Question Bank
+
+1. **What is erosion?**
+   - The breakdown of rock in place by physical or chemical processes
+   - The transport of weathered material from one place to another
+   - The settling of sediment when the transporting flow loses energy
+   - The melting of rock deep underground to form magma
+   - **Answer:** The transport of weathered material from one place to another.
+
+2. **Which agent of erosion carries sediment of every size — clay through boulders — mixed together, with little sorting?**
+   - Wind
+   - Running water
+   - Glacial ice
+   - Gravity-driven creep
+   - **Answer:** Glacial ice.
+
+3. **A stream slows down where it enters a lake. Which grains settle out first?**
+   - All grains settle at exactly the same time
+   - Dissolved minerals
+   - The finest silt and clay
+   - The largest grains the stream was carrying
+   - **Answer:** The largest grains the stream was carrying.
+
+4. **A hillside fence was built with straight posts; decades later the posts lean downhill. Which process best explains the leaning?**
+   - Creep
+   - A debris flow
+   - A rockslide
+   - Wind erosion
+   - **Answer:** Creep.
+
+5. **Which statement about erosion and deposition is most accurate?**
+   - Erosion happens only during storms, and deposition only at river mouths
+   - Erosion removes material from one place while deposition lays it down elsewhere, and a single stream can do both at once
+   - Deposition always occurs at the exact spot where erosion happened
+   - Glaciers deposit well-sorted sand because ice behaves like slow-moving water
+   - **Answer:** Erosion removes material from one place while deposition lays it down elsewhere, and a single stream can do both at once.
+
+## Sources
+
+- National Park Service, [Erosion: Water, Wind & Weather — About](https://www.nps.gov/subjects/erosion/about.htm)
+- U.S. Geological Survey, [Sediment and Suspended Sediment (Water Science School)](https://www.usgs.gov/special-topics/water-science-school/science/sediment-and-suspended-sediment)
+- U.S. Geological Survey, [Landslide Types and Processes (Fact Sheet 2004-3072)](https://pubs.usgs.gov/fs/2004/3072/fs-2004-3072.html)
+- Open Textbook BC, Physical Geology (2nd ed.), [13.3 Stream Erosion and Deposition](https://opentextbc.ca/geology/chapter/13-3-stream-erosion-and-deposition/)
+- Open Textbook BC, Physical Geology (2nd ed.), [15.2 Classification of Mass Wasting](https://opentextbc.ca/geology/chapter/15-2-classification-of-mass-wasting/)
+- Open Textbook BC, Physical Geology (2nd ed.), [16.4 Glacial Deposition](https://opentextbc.ca/geology/chapter/16-4-glacial-deposition/)
+- Open Textbook BC, Physical Geology (2nd ed.), [17.2 Landforms of Coastal Erosion](https://opentextbc.ca/geology/chapter/17-2-landforms-of-coastal-erosion/)
+- Open Textbook BC, Physical Geology (2nd ed.), [6.3 Depositional Environments and Sedimentary Basins](https://opentextbc.ca/physicalgeology2ed/chapter/6-3-depositional-environments-and-sedimentary-basins/)
+- National Park Service, [Geologic Formations — Arches National Park](https://www.nps.gov/arch/learn/nature/geologicformations.htm)
+
+## Related Topics
+
+- Weathering
+- Sedimentary Rocks
+- Soil
+- Surface Processes
+- Dynamic Earth
+
+## Editorial Metadata
+
+- Topic ID: `earth-and-space-science:foundations:erosion`
+- Editorial status: READY_TO_PUBLISH
+- Research date: 2026-08-21
+- Research status: source-verified
+- Rights status: reference-only sources (USGS, NPS, Open Textbook BC); no source prose adapted
+- Scope note: Weathering, rivers, glaciers, and soil are sibling topics; this lesson references them only as context and does not teach their mechanics.
