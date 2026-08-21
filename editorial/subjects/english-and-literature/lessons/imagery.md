@@ -1,0 +1,140 @@
+# Imagery
+
+## In 30 Seconds
+
+Imagery is language that appeals to the senses. It lets readers see, hear, smell, taste, and feel what a text describes, and it can also capture movement and bodily effort. Imagery does not have to be figurative: a plain sensory detail is imagery too. Writers use imagery to show rather than tell, to make moments vivid, and to emphasize what matters. Strong analysis looks at a pattern of images across a passage, not just one striking word.
+
+## Why This Matters
+
+Imagery is where reading becomes experience. It explains why a description of a kitchen can feel as real as a room you have stood in, and it gives you a precise vocabulary for saying how a writer achieves that effect. Naming the sense a detail appeals to, and tracing how images build across a text, turns vague praise into claims another reader can check. The same skill transfers beyond literature: advertisers, journalists, and public speakers choose sensory language deliberately, and noticing those choices helps you read any text, and write your own, with more control.
+
+## Learning Objectives
+
+- Define imagery as language that appeals to sensory experience, including sight, sound, smell, taste, touch, and movement.
+- Distinguish imagery from figurative language, recognizing that a literal sensory detail is still imagery.
+- Identify the main kinds of imagery by the sense or sensation they draw on.
+- Explain how imagery creates vividness through showing rather than telling and how repeated images emphasize meaning.
+- Analyze an image field or pattern across a passage and support an interpretive claim with specific sensory evidence.
+
+## The College Version
+
+### Imagery is sensory language
+
+Imagery is language that appeals to the senses to create mental images and sensory experience. The Poetry Foundation's glossary defines the elements of a poem that invoke any of the five senses to create a set of mental images, and the same principle operates in prose, drama, and nonfiction: writers choose words so that a reader can see, hear, smell, taste, or touch what is described. The basic channels are visual (color, shape, light), auditory (sound, including silence), olfactory (smell), gustatory (taste), and tactile (texture, temperature, pressure). These channels give you a vocabulary for noticing which sense a detail activates. "The kettle whistled" is auditory; "the towel was damp and cold" is tactile. You do not need the list as a taxonomy quiz; you need it as a way of naming what a detail does.
+
+### Imagery does not have to be figurative
+
+A common mistake is to treat imagery as a synonym for figurative language. The two overlap, but they are not the same. Figurative language—simile, metaphor, personification—compares or re-describes one thing in terms of another. Imagery is language that carries sensory experience. A literal sensory detail is still imagery: "Rain tapped the window" appeals to hearing without comparing anything to anything. OpenStax's writing guide observes that figurative language often enhances such descriptions, and the CLC writing text says imagery might also apply figurative devices; both treat the figurative element as an enhancement rather than a requirement. Some definitions, like the Poetry Foundation's "vivid or figurative language," use the term broadly, so in analysis keep two questions separate. What does the language make perceivable? That is imagery. Does it also make a comparison? That is figurative language. A simile can carry imagery—"the wind howled like a hungry dog" joins a comparison to a sound—but imagery does not depend on comparison.
+
+### What imagery does: vividness, emphasis, experience
+
+Imagery's basic job is to show rather than tell. "The room was hot" tells; "the air pressed against her skin, thick and still, and sweat cooled on her arms" shows. Showing hands the reader a set of sensations and lets the reader construct the experience; telling delivers a conclusion. That is why imagery is the engine of description in narrative and memoir: it engages readers through their senses and brings experience to life. Imagery also creates emphasis through placement and repetition. OpenStax's textual-analysis chapter notes that by repeating words, ideas, and images, writers call attention to those elements and indicate that they matter. A single image can be decorative; an image that returns—the same cracked window, the same smell of rain—begins to organize meaning. When you analyze, track the image field: the set of related sensory details across a passage, and how those details cluster, change, or clash. Ask what the field emphasizes and what it makes the reader attend to, then ground the claim in specific words. Imagery does not by itself determine mood, theme, or symbolism. It contributes to those effects, but claims about them need their own evidence and reasoning, as the sibling lessons on mood and symbolism explain. The disciplined move is to describe the sensory detail, name the sense, and then propose what the pattern may do—and to qualify the proposal.
+
+### Imagery across genres
+
+Imagery works in every genre, though it reaches readers through different channels. In poetry, imagery is often the load-bearing element: a poem may be built from one image field held together by lineation and sound. In fiction, imagery builds worlds scene by scene, and repeated images can track a character's state or a story's concerns across chapters. In drama, a playwright cannot rely on narration, so sensory detail must arrive through dialogue, stage directions, and what an audience actually sees and hears on stage. In nonfiction, a memoirist or essayist selects sensory details to make factual experience vivid and to shape what readers feel about events—without inventing those events. In every case the analytic move is the same: name the sense, locate the pattern, explain the effect, and keep the claim proportionate to the passage.
+
+## Key Vocabulary
+
+- **Imagery:** Language that appeals to the senses, creating mental images and sensory experience for a reader.
+- **Sensory language:** Wording that draws on sight, sound, smell, taste, touch, or bodily sensation rather than abstract statement.
+- **Visual imagery:** Details of color, shape, light, and spatial arrangement that appeal to sight.
+- **Auditory imagery:** Details of sound, including pitch, volume, rhythm, and silence.
+- **Olfactory imagery:** Details of language that evoke smell.
+- **Gustatory imagery:** Details of language that evoke taste.
+- **Tactile imagery:** Details of texture, temperature, pressure, and other sensations of touch.
+- **Image field:** The pattern of related sensory details that recurs or clusters within a passage or text.
+- **Figurative language:** Wording that departs from literal statement through comparison or substitution, such as simile, metaphor, or personification.
+
+## Eli-10
+
+Imagery is when words make you experience something with your senses. A writer might not tell you that a kitchen is old; they might describe the creak of a floorboard, the smell of dust in the curtains, and the cool feel of the counter, so you can almost hear, smell, and touch the room yourself. Imagery works for all the senses, and it can even describe movement, like the swing of a runner's arms. One important thing: imagery does not have to be a comparison. A simple sentence like "the ice cubes clinked in the glass" is imagery because you can hear it, even though nothing is compared to anything else.
+
+## Eli's Analogy
+
+Think of imagery as the sound design of a film. The dialogue tells you the story, but the sound—footsteps, rain, a door closing—makes you feel you are inside the scene. In writing, sensory words are those sounds: they put you in the room instead of just telling you about it.
+
+The analogy has limits. A film's sound is fixed for every viewer, but words depend on readers' own experiences: the smell of cinnamon may feel warm to one reader and cloying to another. And imagery is not decoration to add for effect; in careful writing it is chosen and placed to do work, and analysis should say what that work is.
+
+## Worked Example
+
+Consider this invented sentence pair from a story about a bakery at dawn: "The ovens clicked awake, and the first trays slid in with a soft scrape. Steam rose off the hot dough, carrying sugar and butter into the cold air of the shop." An analysis could start by naming the senses: the clicking and scraping are auditory, the warmth of the rising steam is tactile, and the sugar-and-butter smell is olfactory. Notice how the cold air at the end contrasts with the heat and sweetness, and how the sounds arrive before the smells, as if the room wakes up by degrees. That is a small image field—heat, sound, sweetness, cold—and the pattern emphasizes a beginning: a shop coming to life. The claim stays tied to the words, and it could be tested against what happens later in the story.
+
+## Common Mistakes
+
+- **Treating imagery as a synonym for figurative language.** Imagery can be literal. Check whether a detail appeals to a sense; comparisons are an enhancement, not a requirement.
+- **Calling any vivid word "imagery" without naming the sense it engages.** Identify the sensory channel—sight, sound, smell, taste, touch, or movement—so the observation is checkable.
+- **Analyzing one striking image while ignoring how it repeats or relates to others.** Look for the image field: where related sensory details recur, cluster, change, or clash, and what the repetition emphasizes.
+- **Jumping from an image straight to a large claim about mood, theme, or symbolism.** Those effects belong to sibling topics and need their own evidence. Describe the sensory detail first and qualify any larger claim.
+- **Assuming imagery is a poetry-only device.** Fiction, drama, and nonfiction also build sensory language; the channel differs (stage directions and dialogue in drama, selected detail in nonfiction), not the principle.
+
+## Compare / Contrast
+
+- **Imagery / Figurative language:** Imagery appeals to the senses and can be entirely literal; figurative language (simile, metaphor, personification) compares or re-describes, and often enhances imagery without being required for it.
+- **Single image / Image field:** A single image is one sensory detail; an image field is the pattern of related sensory details across a passage whose repetition, contrast, or clustering makes it significant.
+- **Imagery / Symbolism:** Imagery is sensory language; symbolism is the meaning a recurring object or image carries beyond itself. An image can function symbolically, but that claim needs separate evidence—see the symbolism lesson.
+
+## Key Takeaway
+
+Imagery is the sensory language of a text: it shows rather than tells, need not be figurative, and rewards analysis that traces an image field across a passage instead of one isolated word.
+
+## Practice Question Bank
+
+1. **Which definition best describes imagery?**
+   - A. Language that appeals to the senses to create mental images and sensory experience.
+   - B. A recurring object whose repeated appearances carry meaning beyond itself.
+   - C. A comparison between two unlike things made without "like" or "as."
+   - D. The attitude a speaker or narrator projects toward a subject.
+   - **Answer:** A. Imagery is sensory language: it engages sight, sound, smell, taste, touch, or movement. The other options describe symbolism, metaphor, and tone, which are related but distinct terms.
+
+2. **Which statement best explains the relationship between imagery and figurative language?**
+   - A. Imagery is always figurative; literal sensory details are not imagery.
+   - B. Imagery can be literal; figurative language often enhances it but is not required.
+   - C. The two terms are interchangeable names for the same device.
+   - D. Imagery appears only in prose, while figurative language appears only in poetry.
+   - **Answer:** B. A literal detail such as "the kettle whistled" is imagery because it engages hearing without comparing anything. Figurative devices such as simile and metaphor often enrich imagery, but they are optional.
+
+3. **An invented line reads: "The rain-warmed asphalt gave up the smell of dust and tar." Which kind of imagery does this line most directly use?**
+   - A. Gustatory imagery (taste)
+   - B. Auditory imagery (sound)
+   - C. Olfactory imagery (smell)
+   - D. Tactile imagery (touch)
+   - **Answer:** C. The line describes a smell, so it most directly uses olfactory imagery. Taste, sound, and touch name other sensory channels.
+
+4. **Which invented passage most strongly relies on imagery?**
+   - A. The meeting began at nine and ended at eleven with a vote.
+   - B. Priya thought the decision was unfair and said so directly.
+   - C. The committee weighed several options before reaching an agreement.
+   - D. Coffee steamed in thin curls over the chipped mug, and the radiator ticked as the room slowly warmed.
+   - **Answer:** D. The fourth passage builds sensory experience: steam and warmth (sight and touch) and the ticking radiator (sound). The others summarize events, report an opinion, or describe decisions abstractly.
+
+5. **A poem mentions a cracked window and the cold air that enters through it near the opening and again near the close. Which approach best analyzes these mentions as an image pattern?**
+   - A. Notice that the window-and-cold-air image recurs at both ends of the poem and ask what the repetition emphasizes about the speaker's situation.
+   - B. Decide once that the window symbolizes hope and ignore its second appearance.
+   - C. Count every sensory word in the poem and report the total without interpretation.
+   - D. Conclude that the poet must once have lived with a broken window.
+   - **Answer:** A. Pattern analysis tracks where related images recur and what the repetition emphasizes. A fixed symbolic label, a bare word count, and a biographical guess each avoid the text's own pattern.
+
+## Sources
+
+- Poetry Foundation, [Imagery (Glossary of Poetic Terms)](https://www.poetryfoundation.org/education/glossary/imagery) (reference-only; read via Internet Archive capture of 2026-08-15; checked 2026-08-21).
+- College of Lake County Pressbooks, [Description: Imagery and Vivid Description — Write What Matters: CLC Edition](https://clc.pressbooks.pub/write/chapter/description/) (CC BY-NC 4.0; reference-only; checked 2026-08-21).
+- OpenStax, [Writing Process: Making the Personal Public](https://openstax.org/books/writing-guide/pages/4-5-writing-process-making-the-personal-public) (CC BY-NC-SA 4.0; reference-only; checked 2026-08-21).
+- OpenStax, [Writing Process: Thinking Critically About Text](https://openstax.org/books/writing-guide/pages/16-5-writing-process-thinking-critically-about-text) (reference-only; checked 2026-08-21).
+- Purdue OWL, [Close-Reading Poetry](https://owl.purdue.edu/owl/subject_specific_writing/writing_in_literature/documents/20090902102259_751_writing_in_literature_poetry_close_reading.pdf) (reference-only; checked 2026-08-21).
+
+## Related Topics
+
+- Close Reading
+- Mood
+- Metaphor
+- Poetry
+- Symbolism
+
+## Editorial Metadata
+
+- **Status:** READY_TO_PUBLISH
+- **Research status:** Source-verified
+- **Rights status:** Reference-only open educational, glossary, and writing-center sources; no source prose or literary text adapted.
+- **Researched:** 2026-08-21
+- **Transformation:** Original educational synthesis: sensory-language framework, original invented examples, an image-field analysis method, and an evidence-linked question bank.

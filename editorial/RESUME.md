@@ -2,7 +2,14 @@
 
 # Resume point
 
-Read this file first on every new run, then run `bun scripts/editorial-progress.mjs` for live totals.
+Read this file first on every new run, then run `node scripts/editorial-progress.mjs` for live totals. (This VM has Node 22, no bun — every script is `node scripts/<name>.mjs`.)
+
+## Verified state — Hermes autonomous run start (2026-08-21)
+
+- First-run checklist (§4 of MASTER_1319_START_HERE.md) complete: `git status` clean; branch `hermes/master-1319`; `node scripts/editorial-progress.mjs` prints exactly **"Topics processed 647/1299 (49.81%); subjects 20/44."**
+- Orphan scan across phases 2–4: **no output** (no untrusted partials, no missing artifacts).
+- Remaining: Stage A (phase 3, 127 topics + tone review), Stage B (phase 2, 278 topics, uninitialized), Stage C (phase 4, 247 topics, uninitialized). Queue per §8.1–§8.3.
+- Gate (`editorial-accept-topic.mjs`), audit (`editorial-audit-subject.mjs`), brief, source-maps, and 2 accepted English & Literature lessons read. Git identity set: Hermes <hermes@eliexplains.local>.
 
 ## Current position
 

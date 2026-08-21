@@ -38,6 +38,12 @@ Begin with a tentative attitude, then collect a pattern of language: repeated wo
 
 Test for movement. A passage may start observationally and become accusatory, or begin ceremonially and end with a comic interruption. Explain which word, image, or syntactic change makes the earlier label insufficient. A short passage can support more than one label; context can reverse a first impression. The goal is supported textual stance, not a one-word verdict.
 
+### Register, audience, and genre shape tone
+
+Tone does not operate in a vacuum; it is produced within a situation. The same event narrated in a casual, lighthearted voice can come across very differently from a formal, argumentative treatment of the same facts. Register, the level of formality suited to a context, is one of the clearest levers. A text message to a roommate and a written complaint to a landlord might ask for the same repair, but each version selects different words and a different stance, and readers hear the difference.
+
+Audience works the same way. Writers adapt presentation, tone, and style to fit the conditions of the situation, supplying background readers need and choosing language that reaches them. Genre conventions also set expectations. A poem, a news report, and a formal complaint letter each imply what a text of that kind typically does, and readers judge tone partly against those assumptions. A detail that reads as affectionate in a personal essay may seem unprofessional in a lab report. A strong tone claim therefore names the situation as well as the language: who the text addresses, what kind of text it is, and how the wording works within that frame.
+
 ## Key Vocabulary
 
 - **Tone:** A projected or perceived attitude toward a subject, situation, or audience, conveyed through language.
@@ -88,26 +94,34 @@ Tone is an evidence-based account of a text's projected attitude. Analyze langua
 
 1. **What does tone most directly describe?**
    - A. A projected or perceived attitude conveyed through language.
-   - B. The story’s year.
-   - C. A character list.
-   - D. Plot order.
-   - **Answer:** A. Tone is a textual stance.
-2. **What most strongly supports an urgent tone claim?**
-   - A. Mention of a building.
-   - B. Short commands, a deadline, and a warning about delay.
-   - C. Third-person narration.
-   - D. Two sentences.
-   - **Answer:** B. The language pattern projects urgency.
-3. **How do tone and mood differ?**
-   - A. Tone is positive; mood is negative.
-   - B. Tone belongs to poetry only.
-   - C. Tone is stance, while mood is feeling or atmosphere.
-   - D. They are synonyms.
-   - **Answer:** C. They are related but distinct.
-4. **What is the next step when praise is contradicted by harmful consequences?**
-   - **Answer:** Examine framing as evidence that the praise may be ironic.
-5. **Why is “worried tone means every reader feels worried” too strong?**
-   - **Answer:** Tone and mood are related but distinct effects.
+   - B. The year in which a story occurs.
+   - C. A list of characters.
+   - D. The order of plot events.
+   - **Answer:** A. Tone concerns a textual stance toward a subject, situation, or audience; it is not setting, character inventory, or plot order.
+2. **Which evidence best supports a claim that a notice has an urgent tone?**
+   - A. It mentions a building.
+   - B. It uses short commands, a deadline, and a warning about delay.
+   - C. It is written in third person.
+   - D. It has exactly two sentences.
+   - **Answer:** B. Commands, deadlines, and warnings form a language pattern that can project urgency; the other features alone do not.
+3. **Which statement correctly distinguishes tone from mood?**
+   - A. Tone is always positive; mood is always negative.
+   - B. Tone belongs only to poetry; mood belongs only to fiction.
+   - C. Tone is a projected stance, while mood is a feeling or atmosphere a text may create.
+   - D. They are exact synonyms.
+   - **Answer:** C. Tone concerns language's projected attitude; mood concerns the feeling or atmosphere readers may experience.
+4. **A passage praises a policy in lavish language, then reveals that the policy harmed everyone it claimed to help. What is the strongest next step?**
+   - A. Assume the praise is sincere because it is positive.
+   - B. Ignore the later revelation.
+   - C. Call the author dishonest without reading context.
+   - D. Examine the contrast and framing as evidence that the praise may be ironic.
+   - **Answer:** D. The later revelation may create a meaningful contradiction; examine the contrast and framing as evidence that the praise may be ironic.
+5. **Why is “the narrator sounds worried, so the reader must feel worried” too strong?**
+   - A. Tone and mood are related but not identical; readers may experience an effect differently and need evidence for each claim.
+   - B. Narrators cannot use language.
+   - C. Readers should never discuss feeling.
+   - D. Worry is not an emotion.
+   - **Answer:** A. A worried textual stance can contribute to mood, but it does not dictate a single reader response.
 
 ## Sources
 
@@ -123,6 +137,6 @@ Tone is an evidence-based account of a text's projected attitude. Analyze langua
 
 ## Editorial Metadata
 
-- **Status:** NEEDS_EDITORIAL_REVIEW — two validation attempts used; College Version remains one word below the 600-word gate (599). Manual editorial expansion required.
-- **Research:** Source-verified original synthesis, checked 2026-08-20
+- **Status:** READY_TO_PUBLISH
+- **Research:** Source-verified original synthesis, checked 2026-08-21
 - **Rights:** Reference-only sources; no source prose, images, or diagrams adapted.
