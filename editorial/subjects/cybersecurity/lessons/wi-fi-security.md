@@ -36,7 +36,7 @@ An open network is a wireless network with no password, the kind a cafe, airport
 
 ### Securing a home network
 
-The practices that protect a home wireless network are general and consistent across CISA and the FTC. Change the router's default administrator password: the default is printed in the manual and widely known, and it controls the settings of the router itself. Use the strongest encryption your equipment supports, WPA3 where available and WPA2 otherwise. Update the router's firmware when the manufacturer releases updates; firmware is the software inside the router, and updates fix security weaknesses. And enable a guest network for visitors: CISA describes the guest feature found on many wireless routers as granting visitors a separate channel with a separate password while keeping the primary credentials private. A guest network also keeps a visitor's infected device away from your main devices, though the isolation idea itself belongs to network segmentation, a sibling topic. The exact menus differ by manufacturer; the goals above are what matter.
+The practices that protect a home wireless network are general and consistent across CISA and the FTC. Change the router's default admin password: the default ships printed in the manual and is widely known, yet it controls the router's own settings. Use the strongest encryption your equipment supports, WPA3 where available and WPA2 otherwise. Update the router's firmware when the manufacturer releases updates; firmware is the software inside the router, and updates fix security weaknesses. And enable a guest network for visitors: CISA describes the guest-network feature built into many wireless routers as giving visitors their own channel and password while keeping the primary credentials private. A guest network also keeps a visitor's infected device away from your main devices, though the isolation idea itself belongs to network segmentation, a sibling topic. The exact menus differ by manufacturer; the goals above are what matter.
 
 ### Safe habits on public Wi-Fi and the honest framing
 
@@ -52,7 +52,7 @@ For public networks, the FTC's guidance is to assume the network itself offers n
 - **WPA3** — The Wi-Fi security standard currently regarded as the strongest; it encrypts traffic between devices and the router and is offered on newer equipment.
 - **open network** — A wireless network with no password, which anyone within range can join and which provides no encryption of its own.
 - **evil twin** — A fake wireless access point that imitates the name of a legitimate network to trick devices into connecting to it.
-- **guest network** — A separate wireless network provided by a router for visitors, with its own name and password, so guest devices stay off the main network.
+- **guest network** — A separate wireless network a router offers for visitors, with its own name and password, keeping guest devices away from the main network.
 - **firmware** — The software stored on a device such as a router that controls how it operates; manufacturers release updates that fix security weaknesses.
 
 ## Eli-10

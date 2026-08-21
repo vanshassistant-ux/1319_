@@ -1,32 +1,32 @@
 # ELIEXPLAINS GLOBAL EDITORIAL PROGRESS
 
-Generated: 2026-08-21T23:09:17.411Z
+Generated: 2026-08-21T23:47:27.892Z
 Counts are computed from the phase content stores by `bun run editorial:progress`.
 
 Subjects total: 44
-Subjects processed: 27
-Subjects remaining: 17
-Subject completion: 61.36%
+Subjects processed: 28
+Subjects remaining: 16
+Subject completion: 63.64%
 
 Total topics: 1299
-Topics processed: 827
+Topics processed: 839
 Topics published: 282
-Topics ready to publish: 545
+Topics ready to publish: 557
 Topics held: 0
 Topics requiring review: 0
-Topics remaining: 472
-Topic processing: 63.66%
+Topics remaining: 460
+Topic processing: 64.59%
 
-Verified questions: 4135
-Unique source records: 3939
-Source usage classes: REFERENCE_ONLY=3074, PUBLIC_DOMAIN=563, ATTRIBUTION_REQUIRED=207, EXTRACT_AND_ADAPT=93, LINK_ONLY=2
+Verified questions: 4195
+Unique source records: 3974
+Source usage classes: REFERENCE_ONLY=3106, PUBLIC_DOMAIN=566, ATTRIBUTION_REQUIRED=207, EXTRACT_AND_ADAPT=93, LINK_ONLY=2
 
 ## Phase progress
 
 | Phase | Subjects | Topics | Percent |
 | --- | --- | --- | --- |
 | 1 | 11 / 11 | 282 / 282 | 100.00% |
-| 2 | 2 / 11 | 100 / 325 | 30.77% |
+| 2 | 3 / 11 | 112 / 325 | 34.46% |
 | 3 | 11 / 11 | 329 / 329 | 100.00% |
 | 4 | 3 / 11 | 116 / 363 | 31.96% |
 
@@ -35,7 +35,7 @@ Source usage classes: REFERENCE_ONLY=3074, PUBLIC_DOMAIN=563, ATTRIBUTION_REQUIR
 | Collection | Subjects | Topics | Percent |
 | --- | --- | --- | --- |
 | Professional Studies | 7 / 7 | 166 / 166 | 100.00% |
-| Technology | 5 / 8 | 188 / 257 | 73.15% |
+| Technology | 6 / 8 | 200 / 257 | 77.82% |
 | Business & Money | 3 / 9 | 84 / 240 | 35.00% |
 | Humanities & Culture | 7 / 7 | 197 / 197 | 100.00% |
 | Science & Health | 1 / 6 | 48 / 206 | 23.30% |
@@ -50,7 +50,7 @@ Source usage classes: REFERENCE_ONLY=3074, PUBLIC_DOMAIN=563, ATTRIBUTION_REQUIR
 | computer-literacy | 25 / 25 | 25 | 0 | 0 | 0 | 0 |
 | computer-science-fundamentals | 27 / 27 | 27 | 0 | 0 | 0 | 0 |
 | criminal-justice-and-criminology | 28 / 28 | 28 | 0 | 0 | 0 | 0 |
-| cybersecurity | 22 / 34 | 0 | 22 | 0 | 0 | 12 |
+| cybersecurity | 34 / 34 | 0 | 34 | 0 | 0 | 0 |
 | data-science-and-ai-literacy | 31 / 31 | 0 | 31 | 0 | 0 | 0 |
 | earth-and-space-science | 48 / 48 | 0 | 48 | 0 | 0 | 0 |
 | economics | 39 / 39 | 0 | 39 | 0 | 0 | 0 |

@@ -86,7 +86,7 @@ A firewall is a gatekeeper that filters traffic between networks according to ru
 
 ## Practice Question Bank
 
-**Q1.** Which statement best defines a firewall?
+**Q1.** What is a firewall?
 
 - A. A tool that backs up files from one device to another.
 - B. A program that compresses data to make downloads faster.

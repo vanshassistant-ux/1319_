@@ -65,6 +65,19 @@
     "notes": "Tier D reputable secondary. Read live (HTTP 200) on 2026-08-21. Supports: the 3-2-1 rule definition and its purpose of avoiding a single point of failure vulnerable to human error, hard drive crashes, theft, natural disasters, or ransomware; the rule's standing as the de facto standard for data redundancy; the emergence of extended variants (3-2-1-1-0, 4-3-2) adding offline or immutable copies; attribution of the rule to the 2012 US-CERT/Carnegie Mellon guidance. Facts synthesized; no wording reproduced."
   },
   {
+    "id": "ccpa-oag-california",
+    "title": "California Consumer Privacy Act (CCPA) — California Department of Justice, Office of the Attorney General",
+    "provider": "California Department of Justice, Office of the Attorney General",
+    "url": "https://oag.ca.gov/privacy/ccpa",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl on 2026-08-21. Supports: the CCPA of 2018 gives consumers more control over the personal information that businesses collect about them; consumer rights under the law include the right to know what is collected, the right to delete, the right to opt out of the sale of personal information, the right to correct, and the right to limit. Described only as a general concept; no legal advice given."
+  },
+  {
     "id": "census-acs-general-handbook-2018",
     "title": "Understanding and Using American Community Survey Data: What All Data Users Need to Know (ACS General Handbook, 2018)",
     "provider": "U.S. Census Bureau",
@@ -307,6 +320,20 @@
     "notes": "Tier A. U.S. government work (public domain). Read via a text-extraction proxy because direct fetches to cisa.gov are bot-blocked; the page's title and content were confirmed live at the canonical URL. Supports: working definition of phishing, urgency/impersonation/credential-capture pattern (the 'Omar' example), red flags including the AI-era grammar caveat, and the resist/report/delete guidance."
   },
   {
+    "id": "cisa-secure-our-world",
+    "title": "Secure Our World",
+    "provider": "U.S. Cybersecurity and Infrastructure Security Agency (CISA)",
+    "url": "https://www.cisa.gov/secure-our-world",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "license": "U.S. federal government work (public domain)",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Tier A. cisa.gov blocks automated fetchers (HTTP 403); read an Internet Archive capture of the canonical URL (web.archive.org snapshot 2026-08-21, status 200) on 2026-08-21. Supports: the four easy ways to stay safe online (recognize and report phishing, use strong passwords, turn on MFA, update software); the framing that online criminals look for easy targets who do not take basic precautions and that taking the four steps makes people less vulnerable to deceptive tactics. Facts synthesized; no wording reproduced."
+  },
+  {
     "id": "cisa-secure-our-world-update-software",
     "title": "Update Software (Secure Our World)",
     "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
@@ -399,6 +426,19 @@
     "notes": "cisa.gov blocks automated fetchers (Akamai access denied on direct curl); read an Internet Archive capture of the page (web.archive.org 2025 snapshot, 2026-08-21) whose text matched the known canonical content; the canonical cisa.gov URL is registered. Supports: the definition of cybersecurity as 'the art of protecting networks, devices, and data from unauthorized access or criminal use and the practice of ensuring confidentiality, integrity, and availability of information'; everyday harms including attackers stealing credit card information for unauthorized purchases and malware erasing systems; the honest limit that there is no guarantee even with the best precautions that some harms will not occur, with steps to minimize the chances; and the individual role ('the first step in protecting yourself is to recognize the risks'). Facts synthesized into original prose; no wording reproduced."
   },
   {
+    "id": "cisa-zero-trust-maturity-model",
+    "title": "Zero Trust Maturity Model (CISA)",
+    "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+    "url": "https://www.cisa.gov/zero-trust-maturity-model",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Tier A. cisa.gov returned HTTP 403 to direct fetching on 2026-08-21; read an Internet Archive capture of the canonical URL (web.archive.org snapshot 2026-08-08, status 200). Supports: CISA quoting the NIST SP 800-207 definition of zero trust; 'zero trust presents a shift from a location-centric model to a more data-centric approach'; 'zero trust may require a change in an organization's philosophy and culture around cybersecurity'; the Zero Trust Maturity Model as 'one of many roadmaps that agencies can reference as they transition towards a zero trust architecture', with examples of traditional, initial, advanced, and optimal maturity. Used for the gradual-adoption framing and the philosophy-not-switch point."
+  },
+  {
     "id": "cloudflare-connection-not-private-explained",
     "title": "What does the 'Your connection is not private' error mean? (Cloudflare Learning Center)",
     "provider": "Cloudflare",
@@ -459,6 +499,19 @@
     "usage": "REFERENCE_ONLY",
     "checkedAt": "2026-08-21",
     "notes": "Tier B. Cloudflare blocks direct fetching; read via an Internet Archive capture of the live page. Supports: HTTPS as the secure version of HTTP; TLS (formerly SSL) as the encryption protocol; plain-text HTTP being sniffable on public Wi-Fi and vulnerable to on-path attacks; the padlock in the URL bar; browsers flagging non-HTTPS as not secure; certificates verifying provider identity; HTTPS not being a separate protocol. No prose reproduced."
+  },
+  {
+    "id": "cloudflare-what-is-zero-trust",
+    "title": "What is Zero Trust security? (Cloudflare Learning Center)",
+    "provider": "Cloudflare",
+    "url": "https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/",
+    "sourceType": "reference",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Tier B. cloudflare.com blocked direct fetching (HTTP 403); read an Internet Archive capture of the canonical URL (web.archive.org snapshot 2026-08-12, status 200) on 2026-08-21. Supports: zero trust as an IT security model requiring strict identity verification for every person and device regardless of whether they sit within or outside the network perimeter; the castle-and-moat description of traditional security (hard to get in from outside, everyone inside trusted by default, attackers with access have free rein); 'no one is trusted by default from inside or outside the network'; zero trust as 'a holistic approach to network security that incorporates several different principles and technologies' (not a single product); continuous monitoring and validation with logins and connections timing out for re-verification; least-privilege access, continuous validation, and microsegmentation as fundamental principles that minimize the attack surface and prevent lateral movement."
   },
   {
     "id": "crowdflower-2016-data-science-report",
@@ -738,6 +791,34 @@
     "notes": "Documents that in September 2017 Equifax announced a data breach exposing the personal information of 147 million people and agreed to a global settlement with the FTC, the CFPB, and 50 U.S. states and territories. Used for the confidentiality-failure example; only the fact is used, no attack detail."
   },
   {
+    "id": "ftc-protect-personal-information-hackers-scammers",
+    "title": "Protect Your Personal Information From Hackers and Scammers",
+    "provider": "U.S. Federal Trade Commission (FTC), Consumer Advice",
+    "url": "https://consumer.ftc.gov/articles/protect-your-personal-information-hackers-and-scammers",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "license": "U.S. federal government work (public domain)",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live on 2026-08-21 (article updated November 2024). Supports: online accounts hold a lot of personal information and should be protected with strong passwords and two-factor authentication; scammers use phishing emails and text messages to trick people into revealing personal information, so unexpected links should not be clicked; if something goes wrong, act quickly and report misuse at IdentityTheft.gov. Password, MFA, and phishing specifics belong to sibling topics and are cited here only for the general account-protection and response guidance."
+  },
+  {
+    "id": "ftc-protecting-personal-information-guide",
+    "title": "Protecting Personal Information: A Guide for Business",
+    "provider": "U.S. Federal Trade Commission",
+    "url": "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "license": "U.S. federal government work (public domain)",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live on 2026-08-21 (page content embedded in the served HTML). Supports the five data-protection principles: Take Stock (know what personal information you have), Scale Down (keep only what you need; if there is no legitimate business need for sensitive personally identifying information, do not keep it and do not even collect it), Lock It (protect the information you keep), Pitch It (properly dispose of what you no longer need), and Plan Ahead. Used for the minimization and disposal principles, presented as general guidance."
+  },
+  {
     "id": "ftc-recognize-and-avoid-phishing-scams",
     "title": "How To Recognize and Avoid Phishing Scams",
     "provider": "U.S. Federal Trade Commission (FTC), Consumer Advice",
@@ -750,19 +831,6 @@
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-21",
     "notes": "Read live via curl on 2026-08-21. The article's subject is phishing (a sibling topic); it is cited here only for the general defense practices it states: when an unexpected message asks for action, contact the company through a phone number or website you know is real rather than the information in the message, and use layered protections such as multi-factor authentication. Facts synthesized; no wording reproduced."
-  },
-  {
-    "id": "ftc-recognize-avoid-phishing-scams",
-    "title": "How to Recognize and Avoid Phishing Scams",
-    "provider": "U.S. Federal Trade Commission (FTC)",
-    "url": "https://consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams",
-    "sourceType": "government",
-    "usage": "PUBLIC_DOMAIN",
-    "attributionRequired": false,
-    "aiIngestionChecked": true,
-    "aiIngestionAllowed": true,
-    "checkedAt": "2026-08-21",
-    "notes": "Tier B (consumer guidance, government). Read direct (page fetched and full article text extracted). Supports: 'thousands of phishing attacks every day' scale claim, message tactics, red-flag signs, what-to-do-if-suspicious guidance, multi-factor authentication as a protective layer, and public reporting channels."
   },
   {
     "id": "ftc-secure-home-wi-fi-network",
@@ -2746,6 +2814,33 @@
     "notes": "Read directly as the nvlpubs PDF (downloaded and text-extracted 2026-08-21). Supports: 'fair, with harmful bias managed' as one of the characteristics of trustworthy AI; that creating trustworthy AI requires balancing characteristics according to context of use; that AI systems are inherently socio-technical, influenced by societal dynamics and human behavior; the four functions Govern, Map, Measure, and Manage as ongoing risk work. Distinct document from the AI RMF landing page record; used only for these framing claims."
   },
   {
+    "id": "nist-csf-2-0",
+    "title": "The NIST Cybersecurity Framework (CSF) 2.0 — NIST CSWP 29 (February 26, 2024)",
+    "provider": "National Institute of Standards and Technology (NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+    "sourceType": "government",
+    "usage": "PUBLIC_DOMAIN",
+    "license": "U.S. Government work; not subject to copyright in the United States",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-21",
+    "notes": "PDF downloaded from nvlpubs.nist.gov and text-extracted with pdftotext on 2026-08-21. Primary source for: the CSF as a taxonomy of high-level cybersecurity outcomes usable by any organization regardless of size, sector, or maturity; the six functions with their one-line definitions; voluntary adoption and adoption through policies and mandates; Organizational Profiles (Current/Target, gap analysis, prioritized action plan); the common-language communication purpose; that the CSF does not prescribe how outcomes are achieved; the functions running concurrently with GOVERN at the center; CSF 2.0 publication date (February 26, 2024). All facts paraphrased into original prose."
+  },
+  {
+    "id": "nist-csf-landing",
+    "title": "Cybersecurity Framework | NIST",
+    "provider": "National Institute of Standards and Technology (NIST)",
+    "url": "https://www.nist.gov/cyberframework",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl on 2026-08-21. The CSF 2.0 resource center: describes the framework as helping organizations better understand and improve their management of cybersecurity risk, 'for industry, government, and organizations to reduce cybersecurity risks,' and links to the CSF 2.0 document, quick-start guides, profiles, and informative references. Used to anchor the CSF's identity and purpose; facts synthesized, no wording reproduced."
+  },
+  {
     "id": "nist-csrc-glossary-client",
     "title": "NIST Computer Security Resource Center Glossary — client",
     "provider": "National Institute of Standards and Technology",
@@ -3200,20 +3295,6 @@
     "notes": "Read the PDF text layer (downloaded from nvlpubs.nist.gov, the official distribution host) on 2026-08-21. Supports: open ports and available protocols and services as inviting targets for attackers, especially where known vulnerabilities are associated with a given port, protocol, or service; remote connections opening an avenue of attack and being limited to only those absolutely necessary; disabling or uninstalling unused/unnecessary operating system functionality, protocols, ports, and services; account management (changing default account names, determining when inactive accounts are disabled, unique user names); unapproved components rarely having updated patches and not being assessed; passwords as a common authentication mechanism whose poor implementation or use can undermine secure configuration. Facts synthesized; no wording reproduced."
   },
   {
-    "id": "nist-sp-800-12r1",
-    "title": "NIST Special Publication 800-12 Revision 1: An Introduction to Information Security",
-    "provider": "National Institute of Standards and Technology (NIST)",
-    "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-12r1.pdf",
-    "sourceType": "government",
-    "usage": "REFERENCE_ONLY",
-    "license": "U.S. Government work; not subject to copyright in the United States",
-    "attributionRequired": false,
-    "aiIngestionChecked": true,
-    "aiIngestionAllowed": true,
-    "checkedAt": "2026-08-21",
-    "notes": "Read the PDF text layer directly (downloaded from nvlpubs.nist.gov, ~1.3 MB) on 2026-08-21. Supports: the statutory definition of information security quoted from 44 U.S.C. 3542 ('the protection of information and information systems from unauthorized access, use, disclosure, disruption, modification, or destruction'); the scope of protection including information, financial assets, physical assets, and employees; defense in depth as multi-layered administrative, technical, and physical countermeasures that minimize the probability of a successful attack; the statements that information security risk cannot be completely eliminated and that the objective is an optimal balance between protection and available resources; and stakes including identity theft and online fraud by criminal groups, extortion/ransom attacks disrupting businesses at significant cost, and terrorists threatening national security through critical infrastructure. Facts synthesized into original prose; no wording reproduced."
-  },
-  {
     "id": "nist-sp-800-153",
     "title": "NIST SP 800-153: Guidelines for Securing Wireless Local Area Networks (WLANs)",
     "provider": "National Institute of Standards and Technology (NIST)",
@@ -3283,6 +3364,19 @@
     "notes": "Tier A. Downloaded the PDF directly from nvlpubs.nist.gov (HTTP 200) and read the text layer on 2026-08-21. Supports: backups stored in different physical and offline locations; offsite/offline copies described as particularly critical given the credible threat of ransomware that encrypts data and holds the decryption key; recovery planning and testing as the premise for restoring operations after an event; restoring the last known good state of data. Facts synthesized into original prose; no wording reproduced."
   },
   {
+    "id": "nist-sp-800-207",
+    "title": "NIST SP 800-207: Zero Trust Architecture",
+    "provider": "National Institute of Standards and Technology (NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Tier A. Read live as the nvlpubs PDF (downloaded and text-extracted via pdftotext on 2026-08-21). Supports: the working definition of zero trust ('a collection of concepts and ideas designed to minimize uncertainty in enforcing accurate, least privilege per-request access decisions... in the face of a network viewed as compromised'); 'zero trust assumes there is no implicit trust granted to assets or user accounts based solely on their physical or network location'; the seven tenets (all communication secured regardless of network location, per-session access, dynamic policy, monitoring of all assets, dynamic and strictly enforced authentication/authorization, collecting state information); 'perimeter-based network security has also been shown to be insufficient since once attackers breach the perimeter, further lateral movement is unhindered'; zero trust as a response to remote users, BYOD, and cloud assets outside the enterprise-owned boundary; the seven tenets as technology-agnostic. The document does not use the exact phrase 'never trust, always verify'; the lesson attributes that slogan to Microsoft."
+  },
+  {
     "id": "nist-sp-800-215",
     "title": "NIST SP 800-215: Guide to a Secure Enterprise Network Landscape",
     "provider": "National Institute of Standards and Technology (NIST)",
@@ -3348,6 +3442,20 @@
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-21",
     "notes": "Read the PDF text layer (downloaded live from nvlpubs.nist.gov, the official distribution host) on 2026-08-21. Supports: the glossary definition of a firewall as a device or program that controls the flow of network traffic between networks or hosts that employ differing security postures; firewalls as often placed at the network perimeter with external and internal interfaces; the firewall policy as defining how firewalls handle inbound and outbound traffic for specific IP addresses and address ranges, protocols, applications, and content types; deny by default as blocking all inbound and outbound traffic not expressly permitted, described as a more secure approach than permitting all traffic that is not explicitly forbidden; host-based and personal firewalls as software residing on the protected host and monitoring a single host's traffic; limitations — firewalls can only work effectively on traffic they can inspect, encrypted and tunneled traffic hides or confuses content, network firewalls cannot recognize all instances and forms of attack, attacks from one internal host to another often do not pass through the network firewall, and an attacker with administrator-level privileges on a host can disable or circumvent its host-based firewall. Facts synthesized into original prose; no wording reproduced."
+  },
+  {
+    "id": "nist-sp-800-50r1",
+    "title": "NIST Special Publication 800-50 Revision 1: Building a Cybersecurity and Privacy Learning Program",
+    "provider": "National Institute of Standards and Technology (NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-50r1.pdf",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "license": "U.S. government work (public domain)",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Tier A. Read the PDF text layer directly from nvlpubs.nist.gov on 2026-08-21 (September 2024 revision). Supports: reducing and managing cybersecurity risk requires continuous attention from everyone in an organization; the learning program builds an understanding of risks and explains each person's role; the program should encourage behavior change and lead to a security culture; culture as an environment where the workforce understands security expectations and values; the clean-desk scenario for protecting printed sensitive data; reporting suspected incidents as a program topic; phishing exercises and scenario-based training as program tactics; incidents as opportunities to learn from mistakes; the program as an ongoing, managed life cycle. Facts synthesized into original prose; no wording reproduced."
   },
   {
     "id": "nist-sp-800-52r2",
@@ -3452,20 +3560,6 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Read the official PDF text layer (downloaded from nvlpubs.nist.gov) on 2026-08-21. Supports: scope covering protection of sensitive but unclassified digitized information 'during transmission and while in storage' (abstract); 'Encryption: The process of changing plaintext into ciphertext using a cryptographic algorithm for the purpose of security or privacy' (glossary); symmetric-key algorithms use 'a single key to both apply cryptographic protection and to remove or check the protection,' the key 'must be kept secret if the data is to remain protected,' with plaintext/ciphertext terminology; asymmetric-key algorithms 'use a pair of keys (i.e., a key pair): a public key and a private key that are mathematically related,' the public key 'may be made public without reducing the security of the process,' the private key 'must remain secret,' and for encryption 'the encryption is performed using the public key, and the decryption is performed using the private key'; 'A cryptographic hash function is a one-way function that is extremely difficult to invert. That is, it is not practical to reverse the process from the hash value back to the input'; 'Cryptographic key: A parameter used in conjunction with a cryptographic algorithm that determines its operation' so that an entity with knowledge of the key can reproduce the operation; symmetric-key algorithms are 'generally significantly faster than asymmetric-key algorithms' while asymmetric cryptography requires fewer initial keys. Facts synthesized into original lesson prose; no wording reproduced."
-  },
-  {
-    "id": "nist-sp800-52r2",
-    "title": "NIST SP 800-52 Rev. 2: Guidelines for the Selection, Configuration, and Use of Transport Layer Security (TLS) Implementations",
-    "provider": "National Institute of Standards and Technology (NIST)",
-    "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-52r2.pdf",
-    "sourceType": "government",
-    "usage": "REFERENCE_ONLY",
-    "license": "U.S. government work (public domain)",
-    "attributionRequired": false,
-    "aiIngestionChecked": true,
-    "aiIngestionAllowed": false,
-    "checkedAt": "2026-08-21",
-    "notes": "Read the official PDF text layer (downloaded from nvlpubs.nist.gov) on 2026-08-21. Supports: 'Server authentication is performed by the client using the server's public-key certificate, which the server presents during the handshake'; 'The TLS server shall be configured with one or more public-key certificates and the associated private keys'; certification path validation per RFC 5280; when revocation status cannot be obtained, 'the client will either terminate the connection or accept a potentially revoked or compromised certificate'; application protocols such as HTTP can run above TLS (the HTTPS basis). Used only for the identity-authentication and warning behavior claims; handshake mechanics belong to the https-tls-basics sibling topic. Facts synthesized; no wording reproduced."
   },
   {
     "id": "nistir-7023-missing-data-methods",
@@ -3949,6 +4043,32 @@
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-20",
     "notes": "Read directly. Primary standard supporting HTTP as a stateless, application-level family of request/response protocols. Used for technical verification, not copied prose."
+  },
+  {
+    "id": "sans-security-awareness-training",
+    "title": "Security Awareness Training by SANS",
+    "provider": "SANS Institute",
+    "url": "https://www.sans.org/security-awareness-training/",
+    "sourceType": "reference",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Tier B. Read live on 2026-08-21 (HTTP 200). Supports: attackers exploit human behavior, not just technology; security awareness training reduces risk by changing how people behave, from spotting and reporting attacks to safe data handling; continuous, scenario-based learning builds instincts to question suspicious messages, use strong authentication, and follow security policies; programs aim to drive a strong security culture. Vendor page used for the risk-reduction framing only; facts synthesized into original prose."
+  },
+  {
+    "id": "techtarget-nist-csf-definition",
+    "title": "NIST Cybersecurity Framework (CSF) definition",
+    "provider": "TechTarget",
+    "url": "https://www.techtarget.com/searchsecurity/definition/NIST-Cybersecurity-Framework",
+    "sourceType": "reference",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl on 2026-08-21. Reputable secondary reference; the page describes the CSF 1.1 era (five functions) and predates CSF 2.0, so it is cited ONLY for the framework's origin — 2014 release, development as a voluntary measure with input from private industry and government, originally aimed at critical infrastructure — and for the profile-based current-versus-desired gap practice. The six-function structure in the lesson comes from NIST CSWP 29, not this page. No wording reproduced."
   },
   {
     "id": "tukey-1980-exploratory-confirmatory",

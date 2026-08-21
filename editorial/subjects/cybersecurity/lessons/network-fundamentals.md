@@ -87,7 +87,7 @@ A network is devices connected so they can share data, moving it in addressed pa
 
 ## Practice Question Bank
 
-**Q1.** Which statement best defines a network?
+**Q1.** What is a network?
 
 - A. Devices connected so they can share data with one another.
 - B. A single computer with many programs installed on it.

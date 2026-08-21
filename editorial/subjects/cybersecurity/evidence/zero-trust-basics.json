@@ -1,0 +1,178 @@
+{
+  "topicId": "cybersecurity:foundations:zero-trust-basics",
+  "subjectId": "cybersecurity",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "what zero trust is: the 'never trust, always verify' model in which no user or device is trusted by default, inside or outside the network",
+      "NIST SP 800-207 framing: no implicit trust granted based on physical or network location; per-request, least-privilege access decisions in a network viewed as compromised",
+      "the classic perimeter problem: the castle-and-moat model that trusted everything inside the walls, and why it broke (lateral movement, remote work, BYOD, cloud assets)",
+      "the core principles: verify every request, limit access, assume breach, never trust implicitly",
+      "what zero trust is NOT: not a single product, but an approach built from several principles and technologies",
+      "zero trust in practice: continuous verification, micro-segmentation, strict per-session access",
+      "the honest framing: zero trust is a philosophy, not a switch; adoption is gradual (CISA Zero Trust Maturity Model)"
+    ],
+    "supporting": [
+      "the 'never trust, always verify' slogan attributed to Microsoft's framing of the model",
+      "NIST's seven zero trust tenets as the technical expression of the principles",
+      "lateral movement as the failure mode the perimeter model could not contain",
+      "least privilege and MFA as components of zero trust (referenced only; sibling topics)"
+    ],
+    "outOfScope": [
+      "least-privilege design and policy details (sibling topic: least-privilege)",
+      "multifactor authentication mechanisms and enrollment (sibling topic: mfa)",
+      "network segmentation implementation, VLANs, and firewall rule sets (sibling topics: network-segmentation, firewalls)",
+      "zero trust architecture (ZTA) deployment models, identity governance, and policy engines"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Zero trust is a security model in which no user or device is trusted by default, inside or outside the network, and verification is required from everyone trying to gain access to resources.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cloudflare-what-is-zero-trust", "nist-sp-800-207"],
+      "status": "supported"
+    },
+    {
+      "claim": "NIST SP 800-207 states that zero trust assumes there is no implicit trust granted to assets or user accounts based solely on their physical or network location.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-800-207"],
+      "status": "supported"
+    },
+    {
+      "claim": "NIST's working definition of zero trust: a collection of concepts and ideas designed to minimize uncertainty in enforcing accurate, least-privilege, per-request access decisions in information systems and services in the face of a network viewed as compromised.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-800-207", "cisa-zero-trust-maturity-model"],
+      "status": "supported"
+    },
+    {
+      "claim": "The traditional perimeter (castle-and-moat) model trusted everyone inside the network by default, and once an attacker breached the perimeter, further lateral movement inside was unhindered.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["cloudflare-what-is-zero-trust", "nist-sp-800-207"],
+      "status": "supported"
+    },
+    {
+      "claim": "The perimeter model broke down because resources moved outside the enterprise-owned boundary (remote users, BYOD, cloud assets) and because modern attacks rely on identity compromise rather than network location.",
+      "claimType": "CURRENT",
+      "sourceIds": ["nist-sp-800-207", "microsoft-zero-trust-overview"],
+      "status": "supported"
+    },
+    {
+      "claim": "The core zero trust principles are: verify explicitly (every access request is authenticated and authorized using all available signals), use least privilege, assume breach (controls designed expecting attackers may be operating inside), and never trust implicitly (location alone grants nothing).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["microsoft-zero-trust-overview", "nist-sp-800-207"],
+      "status": "supported"
+    },
+    {
+      "claim": "Zero trust is not a single product; it is a holistic approach to network security that incorporates several different principles and technologies, and NIST describes its tenets as technology-agnostic.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["cloudflare-what-is-zero-trust", "nist-sp-800-207"],
+      "status": "supported"
+    },
+    {
+      "claim": "Zero trust in practice includes continuous verification (logins and connections time out and force re-verification; every request is assessed as conditions change), micro-segmentation to prevent lateral movement, and strict per-session access determined by dynamic policy.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cloudflare-what-is-zero-trust", "nist-sp-800-207", "microsoft-zero-trust-overview"],
+      "status": "supported"
+    },
+    {
+      "claim": "Zero trust adoption is gradual: CISA's Zero Trust Maturity Model is a roadmap for transitioning toward a zero trust architecture with maturity levels from traditional to optimal, and zero trust may require a change in an organization's philosophy and culture around cybersecurity.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["cisa-zero-trust-maturity-model"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Is zero trust a product that an organization can buy?",
+      "positions": [
+        "Vendors market 'zero trust' appliances and platforms as purchasable solutions.",
+        "Cloudflare states zero trust is a holistic approach to network security that incorporates several different principles and technologies; NIST frames its tenets as technology-agnostic and its definition as a collection of concepts and ideas."
+      ],
+      "resolution": "The lesson presents zero trust as an approach, not a product: tools can support it, but no single appliance delivers the model. The vendor-appliance claim is used as the analysis question's misconception."
+    },
+    {
+      "issue": "Is 'never trust, always verify' the official NIST wording?",
+      "positions": [
+        "The slogan is widely used in marketing and press coverage as if it were the definition.",
+        "Microsoft Learn uses 'never trust, always verify' as the one-sentence summary; NIST SP 800-207 itself does not use the slogan but expresses the same idea as the elimination of implicit trust based on location."
+      ],
+      "resolution": "The lesson attributes the slogan to Microsoft's framing and pairs it with NIST's no-implicit-trust formulation, so the definition is anchored to NIST SP 800-207 wording actually verified in the document."
+    },
+    {
+      "issue": "Does zero trust mean trusting no one, including employees?",
+      "positions": [
+        "A common reading is that zero trust treats every user as a potential threat and locks out legitimate work.",
+        "Sources describe the model as removing implicit (location-based) trust while granting verified access per request; verification, not suspicion, replaces default trust."
+      ],
+      "resolution": "The lesson defines the target as implicit trust, not all trust: legitimate users are verified and granted access per request. This is captured in the vocabulary entry and a common-mistake correction."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic boilerplate ('Zero Trust Basics is a foundational concept in Cybersecurity', 'a label on a toolbox drawer', 'College courses use zero trust basics as a building block') and no substantive, verifiable claims about the topic; nothing from the draft was carried into the lesson."
+  ],
+  "correctionsNeeded": [
+    "Replaced the boilerplate draft entirely with source-verified content.",
+    "Defined zero trust via NIST SP 800-207 (no implicit trust based on location; per-request least-privilege decisions) and Cloudflare (no one trusted by default inside or outside the network).",
+    "Attributed the 'never trust, always verify' slogan to Microsoft Learn rather than presenting it as NIST wording.",
+    "Named the four core principles (verify every request, limit access, assume breach, never trust implicitly) and kept least privilege and MFA as referenced sibling topics only.",
+    "Added the honest framing that zero trust is adopted gradually, supported by CISA's Zero Trust Maturity Model and CISA's philosophy-and-culture observation.",
+    "Kept network segmentation, firewalls, MFA, and least privilege as references only, per sibling-topic boundaries."
+  ],
+  "rightsIssues": [
+    "All four sources used as REFERENCE_ONLY; facts synthesized into original prose with original examples. No source wording reproduced at length. 'Never trust, always verify' is a short common phrase used with attribution to Microsoft Learn's framing."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-sp-800-207",
+      "title": "NIST SP 800-207: Zero Trust Architecture",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A. Read live as the nvlpubs PDF (downloaded and text-extracted via pdftotext on 2026-08-21). Supports: the working definition of zero trust ('a collection of concepts and ideas designed to minimize uncertainty in enforcing accurate, least privilege per-request access decisions... in the face of a network viewed as compromised'); 'zero trust assumes there is no implicit trust granted to assets or user accounts based solely on their physical or network location'; the seven tenets (all communication secured regardless of network location, per-session access, dynamic policy, monitoring of all assets, dynamic and strictly enforced authentication/authorization, collecting state information); 'perimeter-based network security has also been shown to be insufficient since once attackers breach the perimeter, further lateral movement is unhindered'; zero trust as a response to remote users, BYOD, and cloud assets outside the enterprise-owned boundary; the seven tenets as technology-agnostic. The document does not use the exact phrase 'never trust, always verify'; the lesson attributes that slogan to Microsoft."
+    },
+    {
+      "id": "cisa-zero-trust-maturity-model",
+      "title": "Zero Trust Maturity Model (CISA)",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/zero-trust-maturity-model",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A. cisa.gov returned HTTP 403 to direct fetching on 2026-08-21; read an Internet Archive capture of the canonical URL (web.archive.org snapshot 2026-08-08, status 200). Supports: CISA quoting the NIST SP 800-207 definition of zero trust; 'zero trust presents a shift from a location-centric model to a more data-centric approach'; 'zero trust may require a change in an organization's philosophy and culture around cybersecurity'; the Zero Trust Maturity Model as 'one of many roadmaps that agencies can reference as they transition towards a zero trust architecture', with examples of traditional, initial, advanced, and optimal maturity. Used for the gradual-adoption framing and the philosophy-not-switch point."
+    },
+    {
+      "id": "microsoft-zero-trust-overview",
+      "title": "Zero Trust overview (Zero Trust as a security foundation)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Reused registry id with the identical URL already registered in content/phase-2/source-registry.json. Read live via curl on 2026-08-21. Supports: 'Zero Trust is a modern security approach based on a simple idea: never trust, always verify'; access granted only after verifying who is requesting, what device, location and behavior, and risk level, with verification continuous throughout a session; the three principles — verify explicitly (every access request is authenticated and authorized using all available signals), use least privilege access, assume breach (controls designed with the expectation that attackers might be operating inside the environment); 'Trust isn't static. Every request is assessed in real time as conditions change'; traditional models rely on network boundaries and assume assets inside the perimeter are safer, but modern attacks use identity compromise and aren't dependent on network location."
+    },
+    {
+      "id": "cloudflare-what-is-zero-trust",
+      "title": "What is Zero Trust security? (Cloudflare Learning Center)",
+      "provider": "Cloudflare",
+      "url": "https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. cloudflare.com blocked direct fetching (HTTP 403); read an Internet Archive capture of the canonical URL (web.archive.org snapshot 2026-08-12, status 200) on 2026-08-21. Supports: zero trust as an IT security model requiring strict identity verification for every person and device regardless of whether they sit within or outside the network perimeter; the castle-and-moat description of traditional security (hard to get in from outside, everyone inside trusted by default, attackers with access have free rein); 'no one is trusted by default from inside or outside the network'; zero trust as 'a holistic approach to network security that incorporates several different principles and technologies' (not a single product); continuous monitoring and validation with logins and connections timing out for re-verification; least-privilege access, continuous validation, and microsegmentation as fundamental principles that minimize the attack surface and prevent lateral movement."
+    }
+  ]
+}

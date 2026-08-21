@@ -20,7 +20,7 @@ Every security headline you read — a leaked database, a corrupted record, a we
 
 ### The three security goals
 
-The U.S. federal standard FIPS 199, published by the National Institute of Standards and Technology (NIST), names three security objectives for information and information systems: confidentiality, integrity, and availability. NIST defines confidentiality as preserving authorized restrictions on information access and disclosure — only authorized people can see the information. Integrity means guarding against improper information modification or destruction, keeping information accurate and unaltered. Availability means ensuring timely and reliable access to and use of information. NIST's companion guide, SP 800-12 Revision 1, defines information security itself as protecting information and information systems from unauthorized access, use, disclosure, disruption, modification, or destruction to ensure those goals. The initials C-I-A give the triad its name.
+The U.S. federal standard FIPS 199, published by the National Institute of Standards and Technology (NIST), names three core security objectives — confidentiality, integrity, and availability — for data and the systems that hold it. NIST defines confidentiality as preserving authorized restrictions on information access and disclosure — only authorized people can see the information. Integrity means guarding against improper information modification or destruction, keeping information accurate and unaltered. Availability means ensuring timely and reliable access to and use of information. NIST's companion guide, SP 800-12 Revision 1, defines information security as shielding information and the systems carrying it from every form of unauthorized access, use, tampering, or destruction to ensure those goals. The initials C-I-A give the triad its name.
 
 ### Confidentiality: who may see it
 
@@ -51,7 +51,7 @@ Real failures of each goal are easy to find, and they repay study. In September 
 - **confidentiality** — The security goal of keeping information readable only by authorized people and programs; a loss of confidentiality is unauthorized disclosure of information.
 - **integrity** — The security goal of keeping information accurate and unaltered; a loss of integrity is unauthorized modification or destruction of information.
 - **availability** — The security goal of ensuring timely and reliable access to information and systems; a loss of availability means they cannot be used when needed.
-- **information security** — Protecting information and the systems that hold it from unauthorized access, use, disclosure, disruption, modification, or destruction, so that confidentiality, integrity, and availability hold.
+- **information security** — The job of keeping data and its systems safe from every kind of unauthorized access, interference, and damage, so that the three security goals hold.
 - **security objective** — A goal an organization defines for protecting a specific system, such as keeping patient records confidential; NIST treats the security objectives as the first step in managing a system's security.
 - **encryption** — A control that scrambles data into an unreadable form so only someone with the right key can read it; it primarily serves confidentiality.
 - **hash function** — A computation that produces a value from a file's contents so that any change to the file changes the value; comparing hash values detects tampering and primarily serves integrity.

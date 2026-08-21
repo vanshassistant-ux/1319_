@@ -87,7 +87,7 @@ Phishing is a con, not a technical failure: it borrows trust and rushes decision
 
 ## Practice Question Bank
 
-**Q1.** Which statement best defines phishing?
+**Q1.** What is phishing?
 
 - A. Fraudulent messages that pose as a trusted person or organization to trick recipients into revealing information or clicking harmful links.
 - B. Software that copies itself across computers without any action from a user.

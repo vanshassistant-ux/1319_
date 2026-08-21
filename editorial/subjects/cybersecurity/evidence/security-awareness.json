@@ -1,0 +1,188 @@
+{
+  "topicId": "cybersecurity:foundations:security-awareness",
+  "subjectId": "cybersecurity",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "what security awareness is (the working definition, attributed to CISA and NIST)",
+      "why attackers target human behavior: technical defenses have limits",
+      "what awareness training covers: phishing recognition, passwords, updates, clean desk, incident reporting",
+      "the security-culture framing: security as a shared habit, not a punishment",
+      "what awareness cannot do: training reduces risk but people still make mistakes",
+      "the general practice: regular, practical, blame-free training"
+    ],
+    "supporting": [
+      "CISA's four easy ways to stay safe online",
+      "NIST's cybersecurity and privacy learning program (CPLP) guidance",
+      "incident reporting as a learned habit and a rewarded behavior"
+    ],
+    "outOfScope": [
+      "phishing techniques and red flags (own lesson: phishing)",
+      "social-engineering tactics (own lesson: social-engineering)",
+      "password creation specifics (own lesson: password-security)",
+      "MFA mechanics (own lesson: mfa)",
+      "patch-management process (own lesson: patch-management)",
+      "attack techniques (defensive framing only)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Security awareness is the ongoing effort to help people recognize and avoid security risks: CISA frames it as simple daily actions (recognize and report phishing, strong passwords, MFA, software updates), and NIST frames it as an ongoing learning program that requires continuous attention from everyone in an organization.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "cisa-secure-our-world",
+        "nist-sp-800-50r1"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Attackers exploit human behavior, not just technology, because technical defenses have limits; attacks are built around human decisions such as clicking a link, approving a payment, or handing over a credential.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "sans-security-awareness-training",
+        "nist-sp-800-50r1"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "CISA's Secure Our World program condenses personal cyber safety into four easy steps: recognize and report phishing, use strong passwords, turn on multi-factor authentication, and update software; the framing notes that online criminals look for easy targets who do not take basic precautions.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "cisa-secure-our-world"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A typical awareness program covers topics beyond phishing and passwords, including protecting printed sensitive data (NIST's clean-desk scenario) and reporting suspected incidents or violations of security policies.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nist-sp-800-50r1"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The goal of an awareness effort is a security culture: an environment in which the entire workforce understands the organization's security expectations and values and sees itself as valued participants in managing risk.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nist-sp-800-50r1"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Awareness training reduces risk by changing how people behave but does not eliminate mistakes; even with the best precautions there is no guarantee that some harms will not occur.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "sans-security-awareness-training",
+        "cisa-what-is-cybersecurity"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Effective awareness practice is regular (an ongoing, managed program rather than a one-time event), practical (scenario-based learning), and blame-free (reporting is rewarded, including false alarms, and incidents are treated as opportunities to learn from mistakes).",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nist-sp-800-50r1",
+        "cisa-incident-response-plan-basics"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Does security awareness training measurably reduce risk?",
+      "positions": [
+        "Skeptics view awareness programs as low-value box-ticking that does not change behavior.",
+        "SANS and NIST argue that continuous, scenario-based learning programs reduce human risk and drive a security culture."
+      ],
+      "resolution": "The lesson takes the supported middle position: training reduces risk by changing behavior but cannot eliminate mistakes, so it is presented as one complementary layer among several, with the honest limits stated."
+    },
+    {
+      "issue": "Is 'awareness' meaningfully different from 'training'?",
+      "positions": [
+        "Older guidance (the original SP 800-50) treated awareness, training, and education as separate elements in a learning continuum.",
+        "NIST SP 800-50r1 notes the terms are applied inconsistently across organizations and folds them into a single cybersecurity and privacy learning program (CPLP)."
+      ],
+      "resolution": "The lesson follows the current guidance: it uses 'security awareness' as the everyday name for the whole ongoing effort and notes that the practice includes campaigns, exercises, and training working together."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The machine-generated draft's generic statements ('Security Awareness is a foundational concept in Cybersecurity', the toolbox-drawer analogy, and the 'label on a toolbox drawer' framing) were discarded as boilerplate with no evidence value."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic boilerplate with a source-backed working definition attributed to CISA and NIST.",
+    "Added the honest-limits framing (training reduces risk; people still make mistakes) that the draft omitted.",
+    "Added the blame-free reporting practice grounded in NIST SP 800-50r1 and CISA incident-response guidance."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "nist-sp-800-50r1",
+      "title": "NIST Special Publication 800-50 Revision 1: Building a Cybersecurity and Privacy Learning Program",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-50r1.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A. Read the PDF text layer directly from nvlpubs.nist.gov on 2026-08-21 (September 2024 revision). Supports: reducing and managing cybersecurity risk requires continuous attention from everyone in an organization; the learning program builds an understanding of risks and explains each person's role; the program should encourage behavior change and lead to a security culture; culture as an environment where the workforce understands security expectations and values; the clean-desk scenario for protecting printed sensitive data; reporting suspected incidents as a program topic; phishing exercises and scenario-based training as program tactics; incidents as opportunities to learn from mistakes; the program as an ongoing, managed life cycle. Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "cisa-secure-our-world",
+      "title": "Secure Our World",
+      "provider": "U.S. Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/secure-our-world",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A. cisa.gov blocks automated fetchers (HTTP 403); read an Internet Archive capture of the canonical URL (web.archive.org snapshot 2026-08-21, status 200) on 2026-08-21. Supports: the four easy ways to stay safe online (recognize and report phishing, use strong passwords, turn on MFA, update software); the framing that online criminals look for easy targets who do not take basic precautions and that taking the four steps makes people less vulnerable to deceptive tactics. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "sans-security-awareness-training",
+      "title": "Security Awareness Training by SANS",
+      "provider": "SANS Institute",
+      "url": "https://www.sans.org/security-awareness-training/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read live on 2026-08-21 (HTTP 200). Supports: attackers exploit human behavior, not just technology; security awareness training reduces risk by changing how people behave, from spotting and reporting attacks to safe data handling; continuous, scenario-based learning builds instincts to question suspicious messages, use strong authentication, and follow security policies; programs aim to drive a strong security culture. Vendor page used for the risk-reduction framing only; facts synthesized into original prose."
+    },
+    {
+      "id": "cisa-what-is-cybersecurity",
+      "title": "What is Cybersecurity? (CISA, released February 1, 2021)",
+      "provider": "U.S. Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/news-events/news/what-cybersecurity",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Registered id reused from the phase-2 source registry with an identical URL. Supports the honest-limits framing: even with the best precautions there is no guarantee that some harms will not occur, and the first step in protecting yourself is to recognize the risks. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "cisa-incident-response-plan-basics",
+      "title": "Incident Response Plan (IRP) Basics",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA), U.S. Department of Homeland Security",
+      "url": "https://www.cisa.gov/sites/default/files/publications/Incident-Response-Plan-Basics_508c.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Registered id reused from the phase-2 source registry with an identical URL. Supports: staff training on reporting and rewarding people who come forward, including false alarms; blameless retrospectives in which incidents are treated as failures of the overall system rather than individual guilt. Facts synthesized; no wording reproduced."
+    }
+  ]
+}

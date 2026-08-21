@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "subjectSlug": "cybersecurity",
+  "accepted": [
+    {
+      "match": "\"encryption\" defined differently in cia-triad and ransomware (overlap 15%)",
+      "reason": "cia-triad glosses encryption as the control that maps to confidentiality; ransomware describes encryption as what the malware does to files. Compatible depth difference — each lesson's one-line gloss serves its own topic; the owning lesson (encryption) carries the full definition."
+    },
+    {
+      "match": "\"encryption\" defined differently in ransomware and encryption (overlap 15%)",
+      "reason": "The encryption lesson owns the full definition; ransomware uses a one-line functional gloss (locks/encrypts data for payment). Compatible depth difference."
+    },
+    {
+      "match": "\"encryption\" defined differently in ransomware and hashing (overlap 23%)",
+      "reason": "hashing lesson defines encryption by contrast (reversible with a key); ransomware glosses it functionally. Compatible depth difference."
+    },
+    {
+      "match": "\"threat source\" defined differently in threats and vulnerabilities (overlap 11%)",
+      "reason": "threats defines threat source in the full NIST sense; vulnerabilities uses it in a one-line bridge sentence. Compatible depth difference."
+    },
+    {
+      "match": "\"malware\" defined differently in threats and malware (overlap 13%)",
+      "reason": "The malware lesson owns the full definition; threats names malware as one threat type. Compatible depth difference."
+    },
+    {
+      "match": "\"authorization\" defined differently in authentication and authorization (overlap 0%)",
+      "reason": "authentication draws the one-sentence authn-vs-authz boundary; the authorization lesson owns the full definition. Compatible depth difference."
+    },
+    {
+      "match": "\"least privilege\" defined differently in least-privilege and ransomware (overlap 15%)",
+      "reason": "The least-privilege lesson owns the full definition; ransomware references it as one defense practice. Compatible depth difference."
+    }
+  ],
+  "notes": [
+    "QNEAR template stems ('Which statement best defines X') reworded across mfa/phishing/network-fundamentals/firewalls/network-segmentation to content-specific forms.",
+    "REUSE cleanup rewrote the newer lesson of each pair, most heavily viruses (the malware-family trio shared the NIST SP 800-83 and Microsoft family definitions); SRCDUP consolidated three same-URL id pairs (FTC phishing, NIST SP 800-12, NIST SP 800-52) with registry prunes.",
+    "CISA/Cloudflare bot-blocks handled via Internet Archive captures with canonical URLs registered; stale 'every 14 seconds' ransomware statistic deliberately rejected."
+  ]
+}

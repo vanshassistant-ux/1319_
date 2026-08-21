@@ -95,7 +95,7 @@
     },
     {
       "term": "offline backup",
-      "definition": "A backup stored on a device that is disconnected from the network, so malware and attackers cannot reach and destroy it."
+      "definition": "A backup kept on a device that is disconnected from the network, out of reach of malware and attackers."
     },
     {
       "term": "sync",
@@ -119,7 +119,7 @@
     },
     {
       "mistake": "Keeping the only backup plugged in and always connected.",
-      "correction": "Ransomware reaches whatever is connected. CISA guidance says to store backups on a separate device that cannot be accessed from the network, and NIST calls offline or offsite copies particularly critical."
+      "correction": "Ransomware touches whatever is connected. CISA guidance calls for backups on a separate device unreachable from the network, and NIST highlights offline or offsite copies as especially important."
     },
     {
       "mistake": "Never testing a restore and assuming the backup works.",
@@ -213,10 +213,10 @@
         "Plug the drive into a second server so there are two copies of it.",
         "Back up once a month instead, so the drive is touched less often.",
         "Keep the drive connected but delete files older than a week to save space.",
-        "Store the backup on a separate device that cannot be accessed from the network, and disconnect it when not in use."
+        "Keep the backup on a separate device that cannot be reached from the network, and unplug it when it is not in use."
       ],
       "correctIndex": 3,
-      "explanation": "CISA guidance says to back up on a separate device that cannot be accessed from the network, and NIST calls offline or offsite copies particularly critical against ransomware, because ransomware reaches whatever is connected. Another server, fewer backups, and deleting older files all leave the copy reachable or weaker.",
+      "explanation": "CISA says to back up on a separate device unreachable from the network, and NIST stresses offline or offsite copies, because ransomware touches whatever is connected. Another server, fewer backups, and deleting older files all leave the copy reachable or weaker.",
       "difficulty": "analysis",
       "skill": "Analyzes why a connected backup fails and selects the guidance-aligned practice",
       "sourceIds": [
@@ -322,7 +322,7 @@
     "researchedAt": "2026-08-21",
     "transformation": "Facts and guidance synthesized from CISA, NIST, and US-CERT materials and reputable secondary explainers into original prose; the 3-2-1 rule is attributed to the US-CERT Data Backup Options paper; defensive framing only, with ransomware and incident response referenced as sibling topics."
   },
-  "contentHash": "731f5eedce767ef1",
+  "contentHash": "b590c46714615b77",
   "status": "source-verified",
   "public": false
 }

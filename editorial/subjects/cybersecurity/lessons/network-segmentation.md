@@ -83,7 +83,7 @@ Segmentation divides a network into smaller parts so a breach in one part cannot
 
 ## Practice Question Bank
 
-**Q1.** Which statement best defines network segmentation?
+**Q1.** Which choice explains what network segmentation is?
 
 - A. Dividing a network into smaller, isolated parts, with controls at the boundaries so a breach in one part does not spread to the rest.
 - B. Removing all connections between a home network and the internet.

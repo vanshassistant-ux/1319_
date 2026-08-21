@@ -49,7 +49,7 @@ The practice follows from the qualities above. Automate backups so they run on a
 - **restore** — The act of copying data from a backup back to where it is needed, returning files to a usable state after loss or corruption.
 - **3-2-1 rule** — The classic backup guideline: keep three copies of important data (one primary and two backups), on two different media types, with one copy stored offsite.
 - **versioning** — Keeping multiple point-in-time copies of data so an earlier, good state can be recovered after a later mistake, corruption, or infection.
-- **offline backup** — A backup stored on a device that is disconnected from the network, so malware and attackers cannot reach and destroy it.
+- **offline backup** — A backup kept on a device that is disconnected from the network, out of reach of malware and attackers.
 - **sync** — A process that mirrors a file across devices so changes made to one copy are applied to all the others, including deletions.
 - **storage media** — The physical or logical devices that hold data, such as internal drives, external drives, and optical discs; the 3-2-1 rule calls for two different kinds.
 
@@ -70,7 +70,7 @@ Mara runs a small bakery and keeps her recipes, supplier orders, and customer re
 ## Common Mistakes
 
 - **Treating a synced folder as a backup.** Sync propagates changes, including deletions and corruption, to every copy, so it cannot return you to an earlier version. A backup keeps a separate point-in-time copy that later mistakes cannot touch.
-- **Keeping the only backup plugged in and always connected.** Ransomware reaches whatever is connected. CISA guidance says to store backups on a separate device that cannot be accessed from the network, and NIST calls offline or offsite copies particularly critical.
+- **Keeping the only backup plugged in and always connected.** Ransomware touches whatever is connected. CISA guidance calls for backups on a separate device unreachable from the network, and NIST highlights offline or offsite copies as especially important.
 - **Never testing a restore and assuming the backup works.** CISA says to test backups regularly and Microsoft's guidance requires testing full restore procedures. Media degrades and software changes, so only a real restore proves the copy works; an untested backup is a hope, not a plan.
 - **Keeping every copy in the same place, such as two drives on the same desk.** One fire, flood, or theft destroys copies in one location together. The 3-2-1 rule exists to prevent that: different media, and one copy offsite.
 - **Backing up once and never updating the copy.** Backups go stale, so the copy is only as good as its last update. US-CERT describes rolling backups that automatically and periodically update the backup files, so the work is not left to memory.
@@ -119,9 +119,9 @@ Backups are separate, current, tested copies of your data: follow the 3-2-1 rule
 - A. Plug the drive into a second server so there are two copies of it.
 - B. Back up once a month instead, so the drive is touched less often.
 - C. Keep the drive connected but delete files older than a week to save space.
-- D. Store the backup on a separate device that cannot be accessed from the network, and disconnect it when not in use.
+- D. Keep the backup on a separate device that cannot be reached from the network, and unplug it when it is not in use.
 
-**Key: D.** CISA guidance says to back up on a separate device that cannot be accessed from the network, and NIST calls offline or offsite copies particularly critical against ransomware, because ransomware reaches whatever is connected. Another server, fewer backups, and deleting older files all leave the copy reachable or weaker.
+**Key: D.** CISA says to back up on a separate device unreachable from the network, and NIST stresses offline or offsite copies, because ransomware touches whatever is connected. Another server, fewer backups, and deleting older files all leave the copy reachable or weaker.
 
 **Q5.** Which habit best reflects the guidance that backups must be tested to be trusted?
 

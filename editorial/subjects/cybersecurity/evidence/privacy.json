@@ -1,0 +1,277 @@
+{
+  "topicId": "cybersecurity:foundations:privacy",
+  "subjectId": "cybersecurity",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "working definition of privacy as control over personal information (who collects it, how it is used), attributed to IBM and NIST",
+      "privacy vs security distinction: security protects data; privacy governs how data about people is handled",
+      "the data economy: companies collect, use, and share personal data as ordinary business",
+      "five categories of personal data to protect: identifiers, financial data, health data, location, communications",
+      "basics of protection: minimize sharing, check settings, be selective, read what data is collected (general guidance only)",
+      "privacy laws and frameworks as general concepts: GDPR, CCPA, NIST Privacy Framework",
+      "honest framing: privacy is a trade-off individuals cannot fully control; awareness helps"
+    ],
+    "supporting": [
+      "data processing lifecycle and data actions (NIST)",
+      "privacy risk as harms to individuals (embarrassment, discrimination, economic loss)",
+      "consent and privacy notices as risk-sharing mechanisms",
+      "data minimization principle",
+      "personal data and special-category data definitions under the GDPR"
+    ],
+    "outOfScope": [
+      "what cybersecurity is as a field (own topic: what-cybersecurity-is)",
+      "logging and what gets recorded (own topic: logging)",
+      "AI-specific privacy questions (own sibling subject topic: ai-privacy)",
+      "step-by-step attack techniques or exploit detail (defensive framing only)",
+      "individualized privacy advice or credential-handling specifics",
+      "specific legal advice or jurisdiction-by-jurisdiction legal analysis"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Privacy can be understood as control over personal information: who collects it, how it is used, and who it is shared with.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-data-privacy",
+        "nist-privacy-framework-1-0"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "NIST's working framing is that privacy can be achieved through seclusion, limiting observation, or individuals' control of facets of their identities (e.g., body, data, reputation).",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nist-privacy-framework-1-0"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Security and privacy are related but distinct: security protects data (confidentiality, integrity, availability), while privacy concerns how data about people is handled across its whole life; privacy problems can arise even when security is operating as intended (e.g., people feeling surveilled).",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "nist-privacy-framework-1-0"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A data economy exists: organizations collect, use, disclose, share, transmit, and dispose of data about individuals as ordinary operations, and individuals often cannot understand the privacy consequences of their interactions.",
+      "claimType": "CURRENT",
+      "sourceIds": [
+        "nist-privacy-framework-1-0",
+        "ibm-what-is-data-privacy",
+        "eff-privacy-issues"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Personal data is defined broadly as any information relating to an identified or identifiable natural person, including identifiers such as names, identification numbers, location data, and online identifiers; data concerning health is treated as a special category.",
+      "claimType": "LEGAL",
+      "sourceIds": [
+        "gdpr-eurlex"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Data minimization is a core protection principle: collect and keep only what is needed, and dispose of the rest; organizations should not collect data they have no legitimate need for.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ftc-protecting-personal-information-guide",
+        "nist-privacy-framework-1-0"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Privacy notices and consent mechanisms are how organizations share privacy risk with individuals, and consent under the GDPR must be freely given, specific, informed, and unambiguous.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nist-privacy-framework-1-0",
+        "gdpr-eurlex"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The GDPR is a European Union regulation that defines personal data, requires lawful grounds for processing, gives individuals rights such as access, and includes the principle of data minimization.",
+      "claimType": "LEGAL",
+      "sourceIds": [
+        "gdpr-eurlex"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The CCPA is a California state law that gives consumers more control over the personal information that businesses collect about them, including rights to know, delete, and opt out of the sale of their data.",
+      "claimType": "LEGAL",
+      "sourceIds": [
+        "ccpa-oag-california"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Online accounts hold a lot of personal information; protecting accounts with strong passwords and two-factor authentication, recognizing phishing tricks, and acting quickly when something goes wrong are part of protecting personal information.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ftc-protect-personal-information-hackers-scammers"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Large data breaches demonstrate the stakes: in 2017 Equifax announced a breach exposing the personal information of 147 million people, leading to a global settlement with the FTC, the CFPB, and 50 U.S. states and territories.",
+      "claimType": "CURRENT",
+      "sourceIds": [
+        "ftc-equifax-data-breach-settlement"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Privacy is a trade-off individuals cannot fully control: deriving benefits from data processing while protecting privacy is challenging and not suited to one-size-fits-all solutions, and privacy protections and laws have not always kept pace with digital technology.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "nist-privacy-framework-1-0",
+        "eff-privacy-issues"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Can individuals fully control their own privacy through choices and settings?",
+      "positions": [
+        "Consumer-choice framing: individuals decide what to share, adjust settings, and exercise consent, so control is largely in their hands.",
+        "NIST/EFF framing: data flows through a complex ecosystem, individuals often cannot understand the consequences of their interactions, and laws have not always kept pace, so control is partial at best."
+      ],
+      "resolution": "The lesson adopts the honest framing: personal choices (share less, check settings, read notices) reduce exposure, but they cannot guarantee control because data is copied and shared beyond the individual's reach. Both positions are presented; the lesson's conclusion is that awareness, not perfect control, is the realistic goal."
+    },
+    {
+      "issue": "Are privacy and security the same concern?",
+      "positions": [
+        "Conflation view: protecting data from attackers is the same as protecting people's privacy.",
+        "NIST Privacy Framework view: cybersecurity risk and privacy risk overlap (a data theft is both) but are distinct, since privacy problems can arise even when security is operating as intended."
+      ],
+      "resolution": "The lesson teaches the NIST distinction: security protects the data; privacy governs how data about people is handled. The overlap (loss of confidentiality as a cybersecurity-related privacy event) is acknowledged, and the gym-app example illustrates a privacy failure with security intact."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "No machine-generated draft for this topic was available to review; the review record was authored from scratch against the live sources."
+  ],
+  "correctionsNeeded": [
+    "Privacy is framed defensively as control over one's own information; no individualized advice is given.",
+    "The privacy-vs-security distinction is drawn from NIST's Privacy Framework rather than asserted without attribution.",
+    "GDPR and CCPA are presented only as general concepts with jurisdiction noted; no legal advice is offered.",
+    "The Equifax example is limited to the verified facts (147 million people exposed, 2017, global settlement) with no attack detail.",
+    "The data-economy claim is time-anchored to the cited sources as read on 2026-08-21."
+  ],
+  "rightsIssues": [
+    "All sources used as REFERENCE_ONLY; facts synthesized into original prose, no source wording reproduced.",
+    "U.S. government sources (NIST, FTC, California DOJ) are public-domain works; the EU regulation is official text cited reference-only.",
+    "IBM and EFF sources are reused from the phase-2 source registry with identical URLs; attributionRequired=true, reference-only use."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-privacy-framework-1-0",
+      "title": "NIST Privacy Framework: A Tool for Improving Privacy through Enterprise Risk Management, Version 1.0 (NIST CSWP 10)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.01162020.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read directly as the nvlpubs PDF (downloaded and text-extracted 2026-08-21). Supports: privacy achieved through seclusion, limiting observation, or individuals' control of facets of their identities (e.g., body, data, reputation); the Privacy Framework as a voluntary tool for managing privacy risk; data actions and the data-processing lifecycle from collection through disposal, including retention, use, disclosure, sharing, transmission; privacy problems arising even when security is operating as intended (e.g., people feeling surveilled) and the overlap between privacy and cybersecurity risk; privacy harms from embarrassment to discrimination, economic loss, and physical harm; privacy notices and consent mechanisms as means of sharing risk with individuals; data minimization; and the honest framing that deriving benefits from data processing while protecting privacy is challenging and not suited to one-size-fits-all solutions."
+    },
+    {
+      "id": "gdpr-eurlex",
+      "title": "Regulation (EU) 2016/679 — General Data Protection Regulation (GDPR)",
+      "provider": "European Union (EUR-Lex)",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read the ELI HTML copy at the canonical URL on 2026-08-21 and verified key articles in the official text: Article 4(1) personal data as any information relating to an identified or identifiable natural person, with identifiers such as a name, an identification number, location data, or an online identifier; Article 4(11) consent as freely given, specific, informed, and unambiguous; Article 5(1)(c) data minimisation; Article 9 special categories including data concerning health; Article 15 right of access. Law described generally; no individualized legal advice given."
+    },
+    {
+      "id": "ccpa-oag-california",
+      "title": "California Consumer Privacy Act (CCPA) — California Department of Justice, Office of the Attorney General",
+      "provider": "California Department of Justice, Office of the Attorney General",
+      "url": "https://oag.ca.gov/privacy/ccpa",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. Supports: the CCPA of 2018 gives consumers more control over the personal information that businesses collect about them; consumer rights under the law include the right to know what is collected, the right to delete, the right to opt out of the sale of personal information, the right to correct, and the right to limit. Described only as a general concept; no legal advice given."
+    },
+    {
+      "id": "ftc-protecting-personal-information-guide",
+      "title": "Protecting Personal Information: A Guide for Business",
+      "provider": "U.S. Federal Trade Commission",
+      "url": "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live on 2026-08-21 (page content embedded in the served HTML). Supports the five data-protection principles: Take Stock (know what personal information you have), Scale Down (keep only what you need; if there is no legitimate business need for sensitive personally identifying information, do not keep it and do not even collect it), Lock It (protect the information you keep), Pitch It (properly dispose of what you no longer need), and Plan Ahead. Used for the minimization and disposal principles, presented as general guidance."
+    },
+    {
+      "id": "ftc-protect-personal-information-hackers-scammers",
+      "title": "Protect Your Personal Information From Hackers and Scammers",
+      "provider": "U.S. Federal Trade Commission (FTC), Consumer Advice",
+      "url": "https://consumer.ftc.gov/articles/protect-your-personal-information-hackers-and-scammers",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live on 2026-08-21 (article updated November 2024). Supports: online accounts hold a lot of personal information and should be protected with strong passwords and two-factor authentication; scammers use phishing emails and text messages to trick people into revealing personal information, so unexpected links should not be clicked; if something goes wrong, act quickly and report misuse at IdentityTheft.gov. Password, MFA, and phishing specifics belong to sibling topics and are cited here only for the general account-protection and response guidance."
+    },
+    {
+      "id": "ftc-equifax-data-breach-settlement",
+      "title": "Equifax Data Breach Settlement",
+      "provider": "U.S. Federal Trade Commission",
+      "url": "https://www.ftc.gov/enforcement/refunds/equifax-data-breach-settlement",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live on 2026-08-21. Documents that in September 2017 Equifax announced a data breach exposing the personal information of 147 million people and agreed to a global settlement with the FTC, the Consumer Financial Protection Bureau, and 50 U.S. states and territories. Used for the stakes example only; only the verified facts are used, no attack detail."
+    },
+    {
+      "id": "ibm-what-is-data-privacy",
+      "title": "What is data privacy? (IBM Think Topics explainer)",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/think/topics/data-privacy",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Source id reused from the phase-2 source registry with an identical URL; re-checked reachable (HTTP 200) on 2026-08-21. Registry note: read live via curl 2026-08-21; supports data privacy (information privacy) as the principle that a person should have control over their personal data, including deciding how organizations collect, store, and use it; organizations collecting personally identifiable information that is a target for hackers; and GDPR as a law creating data-privacy obligations (with U.S. state laws such as the Virginia VCDPA and Colorado CPA named). Facts synthesized; no page wording reproduced."
+    },
+    {
+      "id": "eff-privacy-issues",
+      "title": "Privacy (Electronic Frontier Foundation issue page)",
+      "provider": "Electronic Frontier Foundation",
+      "url": "https://www.eff.org/issues/privacy",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Source id reused from the phase-2 source registry with an identical URL; re-checked reachable (HTTP 200) on 2026-08-21. Registry note: read live via curl 2026-08-21; supports the general framing claim that digital technologies enable both advances in freedom and unprecedented invasions of privacy, and that privacy protections and laws have not always kept pace with new digital technologies. Used for one general framing claim only; no wording reproduced."
+    }
+  ]
+}

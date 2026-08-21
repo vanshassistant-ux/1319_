@@ -28,7 +28,7 @@
     },
     {
       "heading": "Why it matters: containing a compromised account",
-      "body": "The core payoff of least privilege is damage control. Accounts get compromised all the time, through a reused password, a phishing message, or a lost device. When that happens, the attacker inherits whatever rights the account holds. If the account carries only the access its job needs, the attacker's reach stays small. OWASP warns that failing to enforce least privilege can jeopardize the confidentiality of sensitive resources, and Microsoft's guidance describes the same logic from the other side: security controls assume attackers may already be operating inside the environment, so the goal is to limit how far a breach can spread. At a community centre, the front-desk account can book rooms and see members' names and email addresses. Its password is stolen in a phishing email. Because the account was never given access to payment records, which live only in the treasurer's separate account, the attacker can send spam to members but cannot touch the centre's bank details. The breach is contained by what the account was never allowed to do."
+      "body": "The core payoff of least privilege is damage control. Accounts get compromised all the time, through a reused password, a phishing message, or a lost device. When that happens, the attacker inherits whatever rights the account holds. If the account carries only the access its job needs, the attacker's reach stays small. OWASP cautions that skipping least privilege puts the confidentiality of sensitive resources at risk, and Microsoft's guidance describes the same logic from the other side: security controls assume attackers may already be operating inside the environment, so the goal is to limit how far a breach can spread. At a community centre, the front-desk account can book rooms and see members' names and email addresses. Its password is stolen in a phishing email. Because the account was never given access to payment records, which live only in the treasurer's separate account, the attacker can send spam to members but cannot touch the centre's bank details. The breach is contained by what the account was never allowed to do."
     },
     {
       "heading": "Where least privilege applies",
@@ -289,7 +289,7 @@
     "researchedAt": "2026-08-21",
     "transformation": "The working definition is attributed to NIST's glossary; OWASP's cheat sheet supplies the practical framing, horizontal/vertical application, and the grant-versus-revoke dynamic behind privilege creep; Microsoft Learn supplies the standard-account pattern and time-limited access; AWS IAM documentation grounds the cloud application. All examples (community centre booking account, publishing-house worked example) are original scenarios written for this lesson."
   },
-  "contentHash": "0a36128b3e334dd4",
+  "contentHash": "1f298f767381d7eb",
   "status": "source-verified",
   "public": false
 }

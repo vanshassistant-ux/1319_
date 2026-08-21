@@ -1,0 +1,162 @@
+# Privacy
+
+## In 30 Seconds
+
+Privacy is control over your personal information: who collects it, how it is used, and who it is shared with. Security protects the data; privacy governs how data about people is handled, and the two are not the same. Companies collect, use, and share personal data as an ordinary part of doing business. Identifiers, financial details, health information, location, and communications all deserve care: share less, check settings, read what is collected. Laws such as GDPR and CCPA set general rules. The honest limit: privacy is a trade-off you cannot fully control, and awareness is the practical tool.
+
+## Why This Matters
+
+Every account, app, and store loyalty program handles information about you, and most of it is collected as a normal business step rather than an attack. Understanding privacy lets you read a privacy notice and see what is actually being asked, judge whether a data practice is fair, and recognize when a security failure becomes a privacy failure too. Academically, privacy sits at the meeting point of security, law, and ethics, and it anchors later topics such as security awareness and risk. Practically, the data economy is not shrinking, so the ability to make informed choices about sharing is a durable life skill.
+
+## Learning Objectives
+
+- Define privacy using the working definitions of NIST and IBM: control over personal information, including who collects it and how it is used.
+- Distinguish privacy from security: security protects data, while privacy governs how data about people is handled.
+- Name the five categories of personal data this lesson treats as worth protecting: identifiers, financial data, health data, location, and communications.
+- Explain the data economy: companies collect, use, and share personal data as an ordinary part of doing business.
+- Apply basic protective practices: minimizing what you share, checking settings, being selective, and reading what data is collected.
+- Evaluate the honest framing that privacy is a trade-off individuals cannot fully control, and that awareness reduces risk without eliminating it.
+
+## The College Version
+
+### A working definition of privacy
+
+Privacy is a broad idea, so this lesson adopts a working definition from two sources. IBM describes data privacy as the principle that a person should have control over their personal data, including deciding how organizations collect, store, and use it. NIST, whose Privacy Framework is the main U.S. government tool for privacy risk, takes an even wider view: privacy can be achieved through seclusion, limiting observation, or individuals' control of facets of their identities, such as their body, their data, and their reputation. Together they yield the working definition: privacy is control over your personal information, meaning who collects it, how it is used, and who it is shared with. Two details matter: privacy in a security context is about data about people, not secrecy in general; and control is the operative word — privacy is not about having nothing collected, but about who decides what happens to what is collected.
+
+### Privacy versus security: two jobs on the same data
+
+Security and privacy are related but distinct, and NIST's Privacy Framework draws the line carefully. Security protects data: it preserves confidentiality, integrity, and availability, so information is not read, changed, or destroyed without authorization. Privacy governs how data about people is handled across its whole life, from collection through use, sharing, retention, and disposal. NIST frames the relationship as overlapping: a loss of confidentiality, such as data theft, is a cybersecurity-related privacy event, but privacy problems can also arise when security is operating perfectly, as when people feel surveilled by a system working as designed. A gym app that stores your workout history with strong encryption is secure in the technical sense; if it then sells that history without telling you, the failure is a privacy failure, not a security one.
+
+### The data economy
+
+Personal data is not collected only by attackers; it is collected, used, and shared as an ordinary part of doing business. NIST describes data about individuals flowing through a complex ecosystem, and catalogs the operations organizations perform with data, which it calls data actions: collection, retention, use, disclosure, sharing, transmission, and disposal, among others. NIST also notes that individuals may not be able to understand the potential consequences for their privacy as they interact with systems. IBM makes the same point from the company side: organizations collect personally identifiable information as part of their operations. The Electronic Frontier Foundation adds that digital technologies enable unprecedented invasions of privacy. This lesson calls the landscape the data economy: companies collect, use, and share personal data because data has economic value.
+
+### What to protect: five categories of personal data
+
+Personal data is defined broadly. The GDPR defines it as any information relating to an identified or identifiable natural person, naming identifiers explicitly: a name, an identification number, location data, or an online identifier. Five categories matter most. Identifiers: names, ID numbers, and account details that single you out. Financial data: payment card numbers and account details, the kind exposed in the Equifax breach, which the Federal Trade Commission records as affecting the personal information of 147 million people. Health data: the GDPR treats data concerning health as a special category with extra protection. Location: where you are and where you have been. Communications: the content of messages, calls, and emails, which falls under the broad definition because it is information relating to a person. These categories matter because harms concentrate there: NIST describes privacy harms from embarrassment to discrimination and economic loss.
+
+### The basics of protecting it
+
+The protective practices in this lesson are general guidance, not individualized advice. Minimize sharing: the FTC's guide for businesses states the principle sharply, telling companies to keep only what they need and not to collect what they have no legitimate need for; the mirror for individuals is to share less by default. Read what data is collected: NIST describes privacy notices and consent mechanisms as how organizations share risk with individuals, and the GDPR requires consent to be freely given, specific, informed, and unambiguous, which only works if you read what you are agreeing to. Check settings: the controls a service offers, such as location permissions, are where consent is exercised in practice. Be selective: the FTC's consumer guidance notes that online accounts hold a lot of personal information, and that scammers use phishing messages to trick people into handing it over. Act quickly if something goes wrong: the FTC points people who suspect misuse of their information to IdentityTheft.gov. In short: share less, read more, and treat your accounts as containers of personal data.
+
+### Laws and frameworks, and the honest framing
+
+Two laws anchor most privacy discussion, taught here only as general concepts. The GDPR is a regulation of the European Union that defines personal data, requires lawful grounds for processing it, gives individuals rights such as access to their own data, and includes the principle of data minimization. The CCPA is a California state law that, in the state attorney general's words, gives consumers more control over the personal information that businesses collect about them, with rights such as knowing, deleting, and opting out of the sale of their data. Other jurisdictions have similar laws, and details differ and change. The honest framing closes the lesson. NIST is direct: deriving benefits from data processing while protecting privacy is challenging and not suited to one-size-fits-all solutions, and individuals may not grasp the consequences of their interactions. The EFF adds that privacy protections and laws have not always kept pace with technology. Privacy is therefore a trade-off you cannot fully control. Awareness buys you not perfect privacy but informed decisions.
+
+## Key Vocabulary
+
+- **privacy** — Control over your personal information: who collects it, how it is used, and who it is shared with.
+- **personal data** — Any information relating to an identified or identifiable person, such as a name, identification number, location data, or an online identifier.
+- **data processing** — The full set of operations an organization performs with data, from collection and use through sharing, retention, and disposal.
+- **data minimization** — The practice of collecting and keeping only the information that is actually needed, and disposing of the rest.
+- **consent** — A person's freely given, specific, informed, and unambiguous agreement to the processing of their personal data, as the GDPR defines it.
+- **privacy notice** — A statement that explains what data an organization collects, how it uses that data, and with whom it may share it.
+- **data economy** — The general landscape in which companies collect, use, and share personal data as an ordinary part of doing business.
+- **privacy risk** — The possibility that data processing causes problems for individuals, from embarrassment up to discrimination or economic loss.
+- **data breach** — An incident in which personal information is exposed to people who should not have it, as when a company's records are stolen.
+
+## Eli-10
+
+Privacy is the control you have over information about yourself: who collects it, how it is used, and who gets to see it. It is not the same as security. Security is about stopping people from breaking in and stealing or changing data. Privacy is about what happens to data about people even when nothing is broken, like a company quietly selling your shopping history. Companies collect, use, and share personal data all the time, because data has value. The practical habits are simple: share less, read what a service says it collects, check the settings, and be picky about what you hand over. Laws like the GDPR in Europe and the CCPA in California give people some rights over their data. But you cannot control everything once data is out there, so the goal is informed choices, not perfect secrecy.
+
+## Eli's Analogy
+
+Think of your information as rooms in a house. Security is the lock on the front door: it keeps burglars out. Privacy is a different question: once you invite a guest in, which rooms may they see, and what are they allowed to write down about you afterward? A guest who never breaks anything can still take notes on your bookshelves and sell those notes to someone else. A house with excellent locks can still have a guest problem. Protecting privacy means being careful about who you invite in and what you let them record, not just how strong the locks are.
+
+The house comparison breaks down because digital data is copied, not taken. A guest who reads one book leaves it behind, but a company that receives your data can copy it, share it, and keep it long after you stop visiting. You also cannot watch the guest: once data is shared, you rarely learn where it went. And unlike a house, where you choose your guests, many services collect data as a condition of using them at all, so the choice is often limited rather than free.
+
+## Worked Example
+
+A local running club launches an app called TrailMate. To join, members provide their email address, their home postal code, their payment card for the membership fee, and they let the app track their running routes, which reveals where they live and train. The app also lets members message their coaches, and it records each member's heart-rate data from their watch. Every one of this lesson's five categories is present: identifiers in the email, financial data in the card, location in the routes, health data in the heart-rate readings, and communications in the coach messages. TrailMate stores everything with strong encryption, so no outsider can read it; that is good security. But the club's partner agreement lets a sports-insurance firm buy anonymized route and heart-rate summaries, and the permission sits one screen deep in the settings menu, mentioned only in a paragraph most members never open. When a member reads the notice and finds the sharing clause, the privacy failure is already visible: the data was collected, used, and shared as a normal business step. The member's options are the lesson's basics: decline to share the extra details, turn off the sharing setting, read the notice before agreeing, and remember that the data already shared cannot be taken back.
+
+## Common Mistakes
+
+- **Treating privacy and security as the same thing.** NIST's Privacy Framework treats them as overlapping but distinct: security protects data, while privacy governs how data about people is handled. A system can be perfectly secure and still privacy-invasive, as when a gym app encrypts your records and then sells summaries of them.
+- **Assuming "I have nothing to hide" means privacy does not matter.** Privacy is about control, not about hiding guilt. NIST describes privacy harms that range from embarrassment to discrimination and economic loss, and those harms can reach anyone, which is why control over your own information has value regardless of what the information contains.
+- **Clicking agree without ever reading what data is collected.** NIST describes privacy notices and consent mechanisms as the way organizations share risk with individuals, and the GDPR requires consent to be informed. Reading the notice before agreeing is not a formality; it is the moment where control is actually exercised.
+- **Believing that shared data can simply be deleted later.** Digital data is copied, so once it is shared, copies live outside your reach. The FTC's business guidance makes the mirror point: do not collect or keep what you do not need. Minimizing what you share up front is the practice that actually works.
+- **Expecting privacy laws to solve everything.** Laws like GDPR and CCPA give individuals real rights, but they differ by jurisdiction and, as the EFF notes, have not always kept pace with technology. Awareness and personal choices still carry most of the day-to-day weight.
+
+## Compare / Contrast
+
+- **Privacy vs. Security** — Security protects data from unauthorized access, change, or destruction; privacy governs how data about people is handled across its whole life. NIST frames the two as overlapping: a theft is both, but a system that works as designed can still violate privacy by making people feel surveilled.
+- **Personal data vs. Special-category data** — The GDPR defines personal data broadly as any information relating to an identified or identifiable person, then sets apart special categories such as health data that receive extra protection. Both are personal data; the difference is the level of protection the law applies.
+- **The GDPR vs. The CCPA** — The GDPR is a European Union regulation that applies across member states, while the CCPA is a California state law. Both give individuals more control over their personal information, but their rights, obligations, and enforcement differ, which is why the lesson treats them as general concepts rather than a single rule.
+
+## Key Takeaway
+
+Privacy is control over your personal information: who collects it, how it is used, and who it is shared with. Security protects the data, privacy governs how data about people is handled, and because the data economy gives you limited control, awareness, minimization, and reading the notice are the practical tools, backed by laws such as GDPR and CCPA.
+
+## Practice Question Bank
+
+**Q1.** Which statement best matches the working definition of privacy used in this lesson?
+
+- A. Keeping every fact about yourself completely secret from everyone
+- B. A set of laws that punish companies for storing data at all
+- C. Control over your personal information: who collects it, how it is used, and who it is shared with
+- D. The same thing as encryption, since encrypted data is private data
+
+**Key: C.** IBM describes data privacy as a person having control over their personal data, including how organizations collect, store, and use it, and NIST frames privacy as individuals' control of facets of their identities. Total secrecy is neither possible nor the point, laws regulate data handling rather than banning storage, and encryption is a security tool, not the definition of privacy.
+
+**Q2.** A clinic's patient portal stores all records with strong encryption, and no unauthorized person has ever read them. Unknown to patients, the clinic sells summary data about their visits to a marketing firm. Which statement best describes this situation?
+
+- A. There is no problem, because the data was never stolen
+- B. The clinic broke its encryption, which is a security failure
+- C. Security held up, but the clinic still failed on privacy, because privacy governs how data about people is handled even when the data is safe
+- D. The clinic's action is a privacy failure only if the marketing firm is a hacker
+
+**Key: C.** NIST's Privacy Framework treats security and privacy as overlapping but distinct: a loss of confidentiality is a cybersecurity-related privacy event, yet privacy problems can arise when security is operating as intended. Selling visit summaries without telling patients is a handling failure, not a break-in, so security held while privacy failed; the identity of the buyer does not change that.
+
+**Q3.** A weather app asks for your location, your email address, and your payment card for a premium tier, and its settings page states that data "may be shared with partners." Which is the best description of this arrangement?
+
+- A. The app is legally required to destroy all data it collects every night
+- B. The app collects nothing, since weather forecasts come from satellites
+- C. No law permits a weather app to collect location data
+- D. The app collects personal data, including location, identifiers, and financial details, as an ordinary part of doing business, and its settings page is where you can read and adjust what happens to it
+
+**Key: D.** NIST describes organizations performing data actions such as collection, use, and sharing as part of normal operations, and IBM notes that organizations routinely collect personally identifiable information. Weather apps, like other services, collect location and account data as a business step, and there is no general legal ban on collecting location; the settings page is exactly where the lesson's check-settings practice applies.
+
+**Q4.** A grocery store's loyalty form asks for your phone number, birth year, and home address, and the fine print says the data "helps partners tailor offers." Which response best follows this lesson's guidance?
+
+- A. Provide only what the program actually needs, read what the store says it collects, and check the settings before agreeing
+- B. Provide everything, because refusing to share information with a store is against the law
+- C. Assume the store cannot share anything with anyone without asking first
+- D. Stop shopping at any store that ever asks for information
+
+**Key: A.** The lesson's basics are minimize sharing, read what data is collected, check settings, and be selective. The FTC's business guidance states the minimization principle directly, NIST describes privacy notices as how risk is shared with individuals, and the GDPR requires consent to be informed. Sharing everything is unnecessary and not legally required, stores generally can share data within the limits of their notices and the law, and avoiding every business that collects data is not realistic guidance.
+
+**Q5.** Which statement accurately describes the GDPR and the CCPA as general concepts?
+
+- A. The GDPR is a California state law, and the CCPA is a European Union regulation
+- B. They are separate laws from different jurisdictions, and both give individuals more control over their personal information
+- C. The CCPA is a European Union regulation, and the GDPR only applies to government agencies
+- D. Neither law concerns personal information, since both focus on network equipment
+
+**Key: B.** The GDPR is a regulation of the European Union that defines personal data and gives individuals rights over it, while the California attorney general describes the CCPA as giving consumers more control over the personal information that businesses collect. They come from different jurisdictions, both address personal information, and both strengthen individual control, so the other options misstate which law is which and what they cover.
+
+## Sources
+
+- National Institute of Standards and Technology — "NIST Privacy Framework: A Tool for Improving Privacy through Enterprise Risk Management, Version 1.0". https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.01162020.pdf
+- European Union (EUR-Lex) — "Regulation (EU) 2016/679 (General Data Protection Regulation)". https://eur-lex.europa.eu/eli/reg/2016/679/oj
+- California Department of Justice, Office of the Attorney General — "California Consumer Privacy Act (CCPA)". https://oag.ca.gov/privacy/ccpa
+- U.S. Federal Trade Commission — "Protecting Personal Information: A Guide for Business". https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business
+- U.S. Federal Trade Commission, Consumer Advice — "Protect Your Personal Information From Hackers and Scammers". https://consumer.ftc.gov/articles/protect-your-personal-information-hackers-and-scammers
+- U.S. Federal Trade Commission — "Equifax Data Breach Settlement". https://www.ftc.gov/enforcement/refunds/equifax-data-breach-settlement
+- IBM — "What is data privacy?". https://www.ibm.com/think/topics/data-privacy
+- Electronic Frontier Foundation — "Privacy" (issue page). https://www.eff.org/issues/privacy
+
+## Related Topics
+
+- cybersecurity:foundations:security-awareness
+- cybersecurity:foundations:what-cybersecurity-is
+- cybersecurity:foundations:cia-triad
+- cybersecurity:foundations:phishing
+- cybersecurity:foundations:encryption
+
+## Editorial Metadata
+
+- Topic ID: cybersecurity:foundations:privacy
+- Editorial status: READY_TO_PUBLISH
+- Research status: source-verified
+- Researched: 2026-08-21
+- Rights: reference-only sources; no source prose adapted
