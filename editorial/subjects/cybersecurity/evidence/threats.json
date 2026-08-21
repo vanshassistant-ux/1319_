@@ -1,0 +1,243 @@
+{
+  "topicId": "cybersecurity:foundations:threats",
+  "subjectId": "cybersecurity",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "Working definition of a threat (NIST): any circumstance or event with the potential to harm a system or data",
+      "Threat sources: adversarial actors and non-adversarial situations",
+      "Threat actors: criminals, hacktivists, nation-states, insiders, careless users",
+      "Threat types at the conceptual level: malware, phishing and social engineering, credential theft, denial of service, data breaches",
+      "Threat motivation: money, ideology, espionage, mischief",
+      "The threat landscape changes; awareness must be continuous",
+      "Threat vs vulnerability vs risk: threats are the who/what that could hurt you"
+    ],
+    "supporting": [
+      "Threat source is characterized by intent and method (or accidental trigger) per NIST SP 800-30",
+      "Adversarial likelihood depends on intent, capability, and targeting",
+      "Data breach vs data leak distinction (ENISA)",
+      "CISA's known-exploited-vulnerabilities catalog as evidence of continuous landscape monitoring"
+    ],
+    "outOfScope": [
+      "Vulnerabilities and vulnerability types (sibling topic: vulnerabilities)",
+      "Risk assessment methodology and formulas (sibling topic: risk)",
+      "Malware families: viruses, worms, trojans, ransomware (sibling topics)",
+      "Phishing mechanics and social-engineering techniques (sibling topics)",
+      "Attack step-by-step techniques and tooling (never taught; defensive framing only)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "NIST defines a threat as any circumstance or event with the potential to adversely impact organizational operations and assets, individuals, other organizations, or the Nation through an information system, via unauthorized access, destruction, disclosure, or modification of information, and/or denial of service.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-csrc-glossary-threat", "nist-sp-800-30-rev1"],
+      "status": "supported"
+    },
+    {
+      "claim": "A threat source is characterized either as an adversary with intent and method targeted at exploiting a vulnerability, or as a situation and method that may accidentally exploit a vulnerability; types include hostile attacks, human errors of omission or commission, structural failures, and natural or man-made disasters.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-sp-800-30-rev1"],
+      "status": "supported"
+    },
+    {
+      "claim": "Criminal threat actors are financially motivated; NIST describes criminal groups seeking monetary gain through fraud, identity theft, and extortion, and Microsoft names financially motivated actors as the groups behind ransomware, business email compromise, and phishing.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-sp-800-12-rev1", "microsoft-threat-actor-naming"],
+      "status": "supported"
+    },
+    {
+      "claim": "Nation-state actors conduct espionage and develop capabilities to disrupt, destroy, or threaten essential services; CISA describes sophisticated cyber actors and nation-states exploiting vulnerabilities to steal information and money.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cisa-cyber-threats-and-advisories", "microsoft-threat-actor-naming", "nist-sp-800-12-rev1"],
+      "status": "supported"
+    },
+    {
+      "claim": "Hacktivists act on political or social beliefs; ENISA's 2025 reporting notes that public administrations are increasingly targeted by hacktivists, primarily through DDoS attacks.",
+      "claimType": "CURRENT",
+      "sourceIds": ["enisa-threat-landscape"],
+      "status": "supported"
+    },
+    {
+      "claim": "An insider is any person with authorized access to an organization's resources, and insider threat is the potential for that person to use the access to harm the organization, through intentional or unintentional acts.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cisa-insider-threat-mitigation"],
+      "status": "supported"
+    },
+    {
+      "claim": "Careless or mistaken users are a named threat source: NIST's risk-assessment guidance lists human errors of omission and commission among threat-source types, and CISA's insider-threat definition covers unintentional harm.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-sp-800-30-rev1", "cisa-insider-threat-mitigation"],
+      "status": "supported"
+    },
+    {
+      "claim": "A denial-of-service attack occurs when legitimate users are unable to access information systems or network resources due to the actions of a malicious threat actor; a distributed denial-of-service attack uses multiple machines operating together, often a botnet of hijacked devices.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cisa-understanding-dos-attacks"],
+      "status": "supported"
+    },
+    {
+      "claim": "Phishing is used to steal identities or information for monetary gain, and malware, phishing, and ransomware are grouped together by CISA among the headline cyber threats it tracks.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-sp-800-12-rev1", "cisa-cyber-threats-and-advisories"],
+      "status": "supported"
+    },
+    {
+      "claim": "ENISA defines a data breach as an intentional cyber-attack by a cybercriminal aimed at gaining unauthorized access and releasing sensitive data, as distinct from an unintentional data leak.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["enisa-threat-landscape"],
+      "status": "supported"
+    },
+    {
+      "claim": "Some attackers break into networks for the thrill, the challenge, or bragging rights in the attacker community, rather than for money or ideology.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-sp-800-12-rev1"],
+      "status": "supported"
+    },
+    {
+      "claim": "The threat landscape changes continuously: CISA describes the nation's cyber dangers as serious and ever-evolving and publishes alerts, advisories, and a known-exploited-vulnerabilities catalog, while ENISA publishes an annual threat landscape (its 2025 edition analyzing 4,875 incidents from 1 July 2024 to 30 June 2025).",
+      "claimType": "CURRENT",
+      "sourceIds": ["cisa-cyber-threats-and-advisories", "enisa-threat-landscape"],
+      "status": "supported"
+    },
+    {
+      "claim": "Risk is a function of the likelihood of a threat event's occurrence and the potential adverse impact should it occur; a vulnerability is the weakness a threat could exploit, so threat, vulnerability, and risk are distinct concepts.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-sp-800-30-rev1"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Taxonomies of threat actors differ between sources: NIST SP 800-12 organizes by role (attackers, criminal groups, phishers, foreign intelligence services), Microsoft groups actors into five categories (nation-state, financially motivated, private-sector offensive, influence operations, groups in development), and ENISA tracks hacktivists and state-sponsored groups separately.",
+      "positions": [
+        "NIST SP 800-12 Rev. 1 role-based taxonomy",
+        "Microsoft five-group taxonomy (naming page)",
+        "ENISA threat landscape actor grouping"
+      ],
+      "resolution": "The lesson uses the intersection that all sources support: criminals, nation-states, hacktivists, insiders, and careless users, attributing each characterization to the source that states it. Microsoft's private-sector offensive actors and influence operations are noted in the evidence packet but not taught, to keep the lesson at literacy level."
+    },
+    {
+      "issue": "Whether a data breach is always intentional: ENISA distinguishes an intentional data breach from an unintentional data leak.",
+      "positions": [
+        "ENISA: data breach is an intentional cyber-attack by a cybercriminal",
+        "Popular usage sometimes calls any unauthorized exposure a breach"
+      ],
+      "resolution": "The lesson presents ENISA's technical distinction and keeps the term at the conceptual level, describing a data breach as unauthorized access to or disclosure of data."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "No prior generated draft existed for this topic in the phase-2 content store; no draft claims to correct."
+  ],
+  "correctionsNeeded": [
+    "No corrections required; lesson written from verified sources only."
+  ],
+  "rightsIssues": [
+    "All sources used as REFERENCE_ONLY. NIST and CISA material is U.S. government content; Microsoft Learn and ENISA pages are read live or via Internet Archive for verification only. No source prose adapted; definitions quoted briefly with attribution."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-csrc-glossary-threat",
+      "title": "NIST Computer Security Resource Center Glossary — threat",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://csrc.nist.gov/glossary/term/threat",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Provides the working definition of 'threat' (from FIPS 200, adapted from CNSSI 4009, and NIST SP 800-30 Rev. 1): any circumstance or event with the potential to adversely impact organizational operations, assets, or individuals through an information system via unauthorized access, destruction, disclosure, or modification of information, and/or denial of service. Used as the attributed working definition in the lesson."
+    },
+    {
+      "id": "nist-sp-800-30-rev1",
+      "title": "NIST Special Publication 800-30 Rev. 1: Guide for Conducting Risk Assessments",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read the PDF directly 2026-08-21. Sources: threat definition; threat-source characterization (intent and method, or accidental trigger); threat-source types including hostile attacks, human errors of omission or commission, structural failures, and disasters; Table D-2 taxonomy of adversarial threat sources (individuals incl. outsider/insider/trusted insider, groups, organizations, nations); likelihood factors (adversary intent, capability, targeting); risk defined as a function of likelihood of a threat event and potential adverse impact."
+    },
+    {
+      "id": "nist-sp-800-12-rev1",
+      "title": "NIST Special Publication 800-12 Rev. 1: An Introduction to Information Security",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-12r1.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read the PDF directly 2026-08-21. Section 4.1.3 malicious-hacker taxonomy: attackers break into networks for the thrill, challenge, or bragging rights; bot-network operators coordinate attacks and distribute phishing, spam, and malicious code; criminal groups seek monetary gain through fraud, identity theft, and extortion; phishers steal identities or information for monetary gain; foreign intelligence services conduct espionage. Used for actor classes and motivations (money, espionage, mischief)."
+    },
+    {
+      "id": "cisa-cyber-threats-and-advisories",
+      "title": "CISA: Cyber Threats and Advisories",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/topics/cyber-threats-and-advisories",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Live page blocks automated fetchers (Akamai); read an Internet Archive capture of the page on 2026-08-21. Supports: the nation's cyber dangers are 'serious, ever-evolving'; nation-state threats (sophisticated cyber actors and nation-states exploit vulnerabilities to steal information and money, and develop capabilities to disrupt, destroy, or threaten essential services); malware, phishing, and ransomware as headline threat categories; CISA's Known Exploited Vulnerabilities catalog; protecting cyberspace is everyone's responsibility."
+    },
+    {
+      "id": "cisa-understanding-dos-attacks",
+      "title": "CISA: Understanding Denial-of-Service Attacks",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/news-events/news/understanding-denial-service-attacks",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Live page blocks automated fetchers (Akamai); read an Internet Archive capture on 2026-08-21. Supports the conceptual DoS/DDoS descriptions: legitimate users unable to access systems or network resources due to a malicious threat actor's actions; DDoS occurs when multiple machines operate together against one target, often via a botnet of hijacked devices; affected services include email, websites, and online accounts."
+    },
+    {
+      "id": "cisa-insider-threat-mitigation",
+      "title": "CISA: Insider Threat Mitigation",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/topics/physical-security/insider-threat-mitigation",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Live page blocks automated fetchers (Akamai); read an Internet Archive capture on 2026-08-21. Supports the insider definitions: an insider is any person who has or had authorized access to or knowledge of an organization's resources; insider threat is the potential for an insider to use that access to harm the organization, including intentional or unintentional acts."
+    },
+    {
+      "id": "microsoft-threat-actor-naming",
+      "title": "Microsoft Security Intelligence: Microsoft threat actor naming",
+      "provider": "Microsoft Learn (Microsoft Security)",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/security/intelligence/microsoft-threat-actor-naming",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Supports the actor taxonomy: Microsoft categorizes threat actors into five key groups, including nation-state actors (operating for espionage, financial gain, or retribution; observed focusing on government agencies, intergovernmental organizations, NGOs, and think tanks) and financially motivated actors (ransomware operators, business email compromise, phishing, and other groups with financial or extortion motivations)."
+    },
+    {
+      "id": "enisa-threat-landscape",
+      "title": "ENISA: Threat Landscape",
+      "provider": "European Union Agency for Cybersecurity (ENISA)",
+      "url": "https://www.enisa.europa.eu/topics/cyber-threats/threat-landscape",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Supports: the annual ENISA Threat Landscape report (2025 edition analyzes 4,875 incidents from 1 July 2024 to 30 June 2025); hacktivists increasingly targeting public administrations, primarily via DDoS attacks (press release, November 2025); the data-breach definition as an intentional cyber-attack by a cybercriminal to gain unauthorized access and release sensitive data, distinguished from an unintentional data leak."
+    }
+  ]
+}

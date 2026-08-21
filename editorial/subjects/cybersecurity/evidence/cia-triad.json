@@ -1,0 +1,203 @@
+{
+  "topicId": "cybersecurity:foundations:cia-triad",
+  "subjectId": "cybersecurity",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "confidentiality: only authorized people can see information",
+      "integrity: information is accurate and unaltered",
+      "availability: systems and data are usable when needed",
+      "the triad as a framework security professionals use to decide what to protect",
+      "balancing the triad: priorities differ by context (bank vs hospital)",
+      "mapping controls to goals: encryption to confidentiality, hashing to integrity, backups to availability",
+      "real-world failures of each goal: leaked database, tampered record, downed systems"
+    ],
+    "supporting": [
+      "NIST definitions of the three security objectives (FIPS 199; SP 800-12 Rev. 1)",
+      "information security as protection to ensure confidentiality, integrity, and availability",
+      "security objectives as the first step in managing a system's security"
+    ],
+    "outOfScope": [
+      "threats, vulnerabilities, and risk (own topics)",
+      "encryption, hashing, and backups as techniques (own topics; referenced only)",
+      "authentication, authorization, and identity concepts (own topics)",
+      "attack techniques, exploit details, and step-by-step incident detail (defensive framing only)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "NIST's FIPS 199 names three security objectives for information and information systems: confidentiality, integrity, and availability.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-fips-199"],
+      "status": "supported"
+    },
+    {
+      "claim": "Confidentiality means preserving authorized restrictions on information access and disclosure; a loss of confidentiality is the unauthorized disclosure of information.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-fips-199", "nist-sp-800-12r1"],
+      "status": "supported"
+    },
+    {
+      "claim": "Integrity means guarding against improper information modification or destruction; a loss of integrity is the unauthorized modification or destruction of information.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-fips-199", "nist-sp-800-12r1"],
+      "status": "supported"
+    },
+    {
+      "claim": "Availability means ensuring timely and reliable access to and use of information; a loss of availability is the disruption of access to or use of information or an information system.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-fips-199", "nist-sp-800-12r1"],
+      "status": "supported"
+    },
+    {
+      "claim": "Information security is the protection of information and information systems from unauthorized access, use, disclosure, disruption, modification, or destruction, in order to ensure confidentiality, integrity, and availability.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-sp-800-12r1"],
+      "status": "supported"
+    },
+    {
+      "claim": "NIST describes defining security objectives as the first step in managing a system's security, with objectives specific to the system and shaped with stakeholders.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-sp-800-12r1"],
+      "status": "supported"
+    },
+    {
+      "claim": "The application of the security-objective definitions must take place within the context of each organization and the overall national interest.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-fips-199"],
+      "status": "supported"
+    },
+    {
+      "claim": "NIST describes encryption as one of the best ways to obtain cost-effective data confidentiality, transforming plaintext into unintelligible ciphertext.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-sp-800-12r1"],
+      "status": "supported"
+    },
+    {
+      "claim": "Checksum and hash functions generate a value based on a file's contents so changes to the file can be detected, supporting integrity verification; cryptographic hash functions also support electronic signatures.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-sp-800-12r1"],
+      "status": "supported"
+    },
+    {
+      "claim": "Backups are critical to contingency planning; the frequency of backups depends on how often data changes, and backup copies should be tested to confirm they are actually usable.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-sp-800-12r1"],
+      "status": "supported"
+    },
+    {
+      "claim": "In September 2017, Equifax announced a data breach that exposed the personal information of 147 million people.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["ftc-equifax-data-breach-settlement"],
+      "status": "supported"
+    },
+    {
+      "claim": "On February 5, 2021, unauthorized actors accessed the supervisory control system of a U.S. drinking water treatment facility and used it to increase the amount of sodium hydroxide in the treatment process; staff noticed the change in dosing amounts and corrected it.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["cisa-aa21-042a"],
+      "status": "supported"
+    },
+    {
+      "claim": "The July 2024 outage affecting CrowdStrike customers' Windows systems was caused by a defect in a Falcon content update for Windows hosts; restoring customer systems was the company's stated priority.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["crowdstrike-statement-falcon-update"],
+      "status": "supported"
+    },
+    {
+      "claim": "Ransom and extortion attacks have disrupted numerous businesses, and without effective backup plans and restoration procedures many businesses resorted to paying ransoms to restore encrypted systems.",
+      "claimType": "CURRENT",
+      "sourceIds": ["nist-sp-800-12r1"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether confidentiality, integrity, and availability fully capture everything security must protect.",
+      "positions": [
+        "NIST's FIPS 199 and SP 800-12 Rev. 1 present confidentiality, integrity, and availability as the fundamental security objectives of information and information systems.",
+        "Some security authors argue the triad omits properties such as authenticity, non-repudiation, possession, and utility (for example, the Parkerian hexad), and that privacy is a related but distinct concern."
+      ],
+      "resolution": "The lesson presents the triad as NIST's framework of fundamental objectives, treats it as a starting frame rather than a complete list, and notes that related ideas (authentication, privacy) are covered in their own lessons in this course."
+    }
+  ],
+  "unsupportedExistingClaims": [],
+  "correctionsNeeded": [
+    "No machine-generated draft existed for this topic in the phase-2 content store at writing time, so there was nothing to correct; the lesson was authored directly from the live sources in sourceRecords.",
+    "Real-world examples (Equifax 2017, Oldsmar water-treatment facility 2021, CrowdStrike outage 2024) were verified against primary statements (FTC, CISA, CrowdStrike) and are presented conceptually with no attack detail, per the defensive-framing requirement."
+  ],
+  "rightsIssues": [
+    "CISA advisory AA21-042A was read via an Internet Archive capture because cisa.gov blocks direct automated fetching; the canonical cisa.gov URL is recorded and the capture is noted.",
+    "All prose is original synthesis; no source wording is reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-fips-199",
+      "title": "FIPS 199: Standards for Security Categorization of Federal Information and Information Systems",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.199.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Primary source for the three security objectives and their loss definitions ('a loss of confidentiality is the unauthorized disclosure of information', etc.), and for the statement that the definitions apply within each organization's context. Read as the nvlpubs PDF; facts synthesized, no wording reproduced."
+    },
+    {
+      "id": "nist-sp-800-12r1",
+      "title": "NIST SP 800-12 Rev. 1: An Introduction to Information Security",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-12r1.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Source for the information-security definition, data-integrity and system-integrity definitions, security objectives as the first step of the management process (sec. 5.4.1), encryption for confidentiality (sec. 9.1.1), checksum/hash detection of change and cryptographic hashes for signatures (secs. 7.3.3.2, 9.1.3), backups as critical to contingency planning (sec. 8.4), and the passage on ransom attacks disrupting businesses. Read as the nvlpubs PDF."
+    },
+    {
+      "id": "ftc-equifax-data-breach-settlement",
+      "title": "Equifax Data Breach Settlement",
+      "provider": "U.S. Federal Trade Commission",
+      "url": "https://www.ftc.gov/enforcement/refunds/equifax-data-breach-settlement",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Documents that in September 2017 Equifax announced a data breach exposing the personal information of 147 million people and agreed to a global settlement with the FTC, the CFPB, and 50 U.S. states and territories. Used for the confidentiality-failure example; only the fact is used, no attack detail."
+    },
+    {
+      "id": "cisa-aa21-042a",
+      "title": "Cybersecurity Advisory AA21-042A: Compromise of U.S. Water Treatment Facility",
+      "provider": "U.S. Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-042a",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Records that on February 5, 2021, unauthorized actors accessed the SCADA system of a U.S. drinking water treatment facility and increased the amount of sodium hydroxide in the treatment process, and that plant personnel noticed the change and corrected it before harm. Used for the integrity-failure example, presented conceptually. cisa.gov blocks direct automated fetching; read via an Internet Archive capture of the canonical URL."
+    },
+    {
+      "id": "crowdstrike-statement-falcon-update",
+      "title": "Statement on Falcon Content Update for Windows Hosts",
+      "provider": "CrowdStrike",
+      "url": "https://www.crowdstrike.com/blog/statement-on-falcon-content-update-for-windows-hosts/",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "The company's primary statement that the July 19, 2024 outage was caused by a defect found in a Falcon content update for Windows hosts, that a fix was deployed, and that restoring customer systems was the priority. Used for the availability-failure example; only the company's own description is referenced, no technical detail added."
+    }
+  ]
+}

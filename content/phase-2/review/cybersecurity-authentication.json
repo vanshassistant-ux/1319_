@@ -1,0 +1,306 @@
+{
+  "id": "cybersecurity:foundations:authentication",
+  "subjectSlug": "cybersecurity",
+  "unitSlug": "foundations",
+  "slug": "authentication",
+  "title": "Authentication",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "cybersecurity",
+    "foundations",
+    "authentication",
+    "identity",
+    "factors"
+  ],
+  "in30Seconds": "Authentication is the process of verifying that someone is who they claim to be before letting them in. It answers one question: are you really the account holder you say you are? Proof comes in three broad kinds: something you know, like a password; something you have, like a phone or a security key; and something you are, like a fingerprint or a face. Using two or more kinds at once is stronger than using one. Authentication only proves identity; deciding what an identity may do is a separate step called authorization.",
+  "whyItMatters": "Every account, device, and service you use decides who you are through authentication. It is the gate in front of everything else: once someone passes it, they act with your name, reading your mail, spending your money, changing your data. Understanding how that gate works lets you see why a password alone is weaker than several proofs together, why a fingerprint is not a secret the way a password is, and why proving who you are and being allowed to do something are two different decisions. That distinction runs through every security discussion, from logging into a bank to how organizations protect their systems.",
+  "learningObjectives": [
+    "Define authentication as the process of verifying that someone is who they claim to be.",
+    "Name the three authentication factors — something you know, something you have, something you are — with an example of each.",
+    "Distinguish single-factor from multi-factor authentication and explain why distinct factors mean stronger assurance.",
+    "Distinguish authentication from authorization, using a scenario in which identity is proven but access is still denied.",
+    "Explain why no authentication method is perfect, including why biometrics cannot simply be reset like passwords.",
+    "Apply the concept of authentication to everyday sign-in scenarios."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "What authentication is",
+      "body": "Authentication is the process of verifying that someone is who they claim to be before a system lets them act. NIST, whose Special Publication 800-63 series defines digital-identity practice, describes digital authentication as determining the validity of one or more authenticators used to claim a digital identity: establishing that the person attempting to access a service controls the credentials used to authenticate. Microsoft's identity documentation is plainer: authentication verifies a user's identity before granting access to apps, services, devices, or networks. The word \"verify\" matters. The person on the other side of a login screen can claim anything; authentication is the system's way of checking. It does not decide what the person may do, and it does not establish identity in any absolute sense. It determines, to some level of confidence, that the person presenting the credentials is the same person those credentials belong to."
+    },
+    {
+      "heading": "The three factors",
+      "body": "Authentication rests on three broad categories of proof, and almost every method in use is one of them. Something you know: a secret held in memory, such as a password or a PIN. NIST's authenticator guidance calls a password exactly this: something you know. Something you have: a physical object or device in your possession, such as a phone that receives one-time codes or a hardware security key. NIST describes these as physical authenticators, something you have. Something you are: a biometric characteristic of your body, such as a fingerprint or a face. A biometric match is what NIST calls something you are. The categories matter because they fail in different ways. A secret can be guessed or stolen in a data breach; a device can be lost or borrowed; a biometric can be photographed, lifted from a surface, or spoofed. When a system asks for proof from only one category, an attacker who compromises that one kind of proof gets in."
+    },
+    {
+      "heading": "Single-factor versus multi-factor",
+      "body": "A factor is one of the three categories above, and the number of distinct categories a system requires sets the strength of the login. Single-factor authentication asks for one kind of proof, typically a password. Multi-factor authentication asks for two or more different categories, such as a password plus a one-time code from your phone, or a security key plus a fingerprint. NIST's assurance levels make the logic explicit: at its higher levels, authentication requires proof of possession and control of two distinct authentication factors. Two proofs from the same category do not count as multi-factor; a password and a PIN are both something you know, so together they are still one factor. The reason multi-factor is stronger is simple: an attacker must compromise several different kinds of proof at once, and the categories are usually compromised through different means. The full details belong to a separate lesson; here the principle is the point."
+    },
+    {
+      "heading": "Authentication versus authorization",
+      "body": "Authentication and authorization are routinely confused, and the difference is critical. Authentication answers the question \"who are you?\" Authorization answers the question \"what are you allowed to do?\" — the decision about which resources an authenticated identity may access and what it may do with them. OWASP's guidance treats the two as separate controls: authentication verifies identity, authorization enforces permissions. A real login performs both, which is why they blur together. You type a password, authentication, and the system then decides whether your account may open the file you asked for, authorization. The two can diverge: a person can authenticate successfully and still be denied, because the identity is proven but the permission is missing. Authorization has its own lesson; here the takeaway is that proving who you are never, by itself, grants access to anything."
+    },
+    {
+      "heading": "Common methods, and why authentication matters",
+      "body": "The methods you meet every day are instances of the factors above. Passwords are the classic something you know. One-time codes, short numbers sent to a phone or generated by an authenticator app, are something-you-have proofs tied to a device you control. Biometrics, fingerprint, face, iris, are something-you-are proofs. Security keys are small hardware devices that connect to a computer and prove possession cryptographically; FIDO2 security keys and passkeys are the modern form of this idea. What unites them is the job they do: each gives the system evidence that the person at the keyboard is the account's owner. That job matters because identity is the gate to everything else. Accounts, devices, and networks decide what you may do by first deciding who you are, so the quality of the authentication determines whether an attacker can simply walk in as you."
+    },
+    {
+      "heading": "The honest limits",
+      "body": "No authentication method is perfect, and the limits are worth stating plainly. Passwords get stolen or guessed; phones get lost; one-time codes can be intercepted; even security keys have failure modes. Biometrics deserve special honesty. NIST points out that biometric characteristics are not secrets: your face is visible to cameras, fingerprints are left on objects you touch, and high-resolution photos can capture iris patterns. NIST also notes that biometric comparison is probabilistic, unlike the exact match of a password or key; biometrics must therefore be used only together with a physical authenticator, never as the sole proof. And unlike a password, which you can change the moment you suspect it leaked, a compromised biometric cannot simply be reset: you do not get a new fingerprint. The practical consequence is not despair but layering: treat each method as one piece of proof and rely on combinations rather than any single perfect method."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "authentication",
+      "definition": "The process of verifying that someone is who they claim to be, by checking the credentials they present."
+    },
+    {
+      "term": "factor",
+      "definition": "One of the three categories of proof used in authentication: something you know, something you have, or something you are."
+    },
+    {
+      "term": "something you know",
+      "definition": "A factor based on a secret held in memory, such as a password or PIN."
+    },
+    {
+      "term": "something you have",
+      "definition": "A factor based on possession of a physical object or device, such as a phone or security key."
+    },
+    {
+      "term": "something you are",
+      "definition": "A factor based on a characteristic of your body, such as a fingerprint or face."
+    },
+    {
+      "term": "single-factor authentication",
+      "definition": "Authentication that requires proof from only one factor category."
+    },
+    {
+      "term": "multi-factor authentication",
+      "definition": "Authentication that requires proof from two or more distinct factor categories."
+    },
+    {
+      "term": "biometric",
+      "definition": "A measurable body characteristic, such as a fingerprint or face, used as proof of identity."
+    },
+    {
+      "term": "one-time code",
+      "definition": "A short, single-use number delivered to a device, used as something-you-have proof."
+    },
+    {
+      "term": "authorization",
+      "definition": "The separate decision of what an authenticated identity is allowed to do."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Authentication is how a computer checks that you are really you. When you say \"I am Priya,\" the computer does not take your word for it; it asks for proof. The proof comes in three kinds. Something you know: a password in your head. Something you have: a phone in your pocket. Something you are: your fingerprint or your face. Each kind is one factor. One factor alone can be stolen or faked, so stronger logins ask for two different kinds at once. And proving who you are is not the same as being allowed to do things: the computer checks your identity first, then checks your permissions separately.",
+    "analogy": "Think of the door to a club. Saying \"I am on the list\" is a claim; the bouncer checking your ID is authentication. The ID itself is something you have, and comparing the photo to your face is something you are. If the club also asks for a password you memorized, that is something you know. But even after the bouncer confirms you are really you, a separate rule decides what you may do inside. That is authorization, a different decision made at a different door.",
+    "analogyLimits": "The comparison has limits. A club bouncer sees your face and judges it in context, while computer authentication compares digital samples and can be fooled by fakes, photos, or stolen credentials. And a person can get a new ID when one is lost, but a compromised fingerprint cannot be replaced: some proofs are easier to renew than others."
+  },
+  "workedExample": "Amina works at a small clinic and signs in to the patient-records system. She types her password, something she knows. The system then sends a one-time code to the phone registered to her account, and she enters it, something she has, proving she controls that device. Only after both checks succeed is she authenticated: the system accepts that she is the account's owner. When she opens a patient file, the system separately checks whether her account is allowed to view that record; that check is authorization, and it can deny her even after a successful login. Two factors, two distinct decisions.",
+  "commonMistakes": [
+    {
+      "mistake": "Thinking a password plus a PIN is multi-factor authentication.",
+      "correction": "Both are something you know. Multi-factor requires two or more distinct categories of proof, such as a password plus a code from your phone."
+    },
+    {
+      "mistake": "Using the words authentication and authorization as if they mean the same thing.",
+      "correction": "Authentication verifies who you are; authorization decides what you may do. A login performs both, but they are separate decisions."
+    },
+    {
+      "mistake": "Believing biometrics are unbreakable secrets.",
+      "correction": "Biometric characteristics are not secrets: faces and fingerprints can be captured without your knowledge. NIST requires biometrics to be used together with another factor, not alone."
+    },
+    {
+      "mistake": "Assuming any extra step makes a login multi-factor.",
+      "correction": "What counts is the category of the proof, not the number of steps. Two secrets from the same category are still one factor."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Authentication",
+      "b": "Authorization",
+      "distinction": "Authentication verifies who you are; authorization decides what you may do. A successful login does both, but the two decisions can diverge: identity can be proven while permission is denied."
+    },
+    {
+      "a": "Something you know",
+      "b": "Something you have",
+      "distinction": "A secret held in memory versus an object in your possession. They fail in different ways: secrets get guessed or stolen, devices get lost or borrowed."
+    },
+    {
+      "a": "Single-factor authentication",
+      "b": "Multi-factor authentication",
+      "distinction": "One category of proof versus two or more distinct categories. Multi-factor is stronger because an attacker must defeat several different kinds of proof at once."
+    }
+  ],
+  "keyTakeaway": "Authentication verifies that someone is who they claim to be, using one or more of three factors: something you know, something you have, or something you are. More distinct factors mean stronger proof, authentication is not the same as authorization, and no method, biometrics included, is perfect.",
+  "questionBank": [
+    {
+      "id": "cybersecurity:foundations:authentication:1",
+      "prompt": "Which statement best defines authentication?",
+      "options": [
+        "Verifying that someone is who they claim to be before letting them act.",
+        "Deciding which resources an account is allowed to access.",
+        "Encrypting data so outsiders cannot read it.",
+        "Blocking malicious software from running."
+      ],
+      "correctIndex": 0,
+      "explanation": "Authentication verifies identity, as NIST and Microsoft's identity documentation describe. Deciding what an identity may access is authorization, and encryption or malware blocking are different security controls, not identity checks.",
+      "difficulty": "recall",
+      "skill": "Recognizing the definition of authentication",
+      "sourceIds": [
+        "nist-sp-800-63b-digital-authentication",
+        "mslearn-entra-authentication-overview"
+      ]
+    },
+    {
+      "id": "cybersecurity:foundations:authentication:2",
+      "prompt": "A login asks for a six-digit code generated on a phone app. Which factor category is being used?",
+      "options": [
+        "Something you know, because the code is a secret value.",
+        "Something you have, because the code comes from a device you possess.",
+        "Something you are, because the app knows your usage habits.",
+        "None — codes are not an authentication factor."
+      ],
+      "correctIndex": 1,
+      "explanation": "NIST classifies a one-time-code authenticator as a physical authenticator, something you have, because it proves possession and control of a device. The code is not a memorized secret, a body characteristic, or outside the definition of a factor.",
+      "difficulty": "understanding",
+      "skill": "Classifying a method into a factor category",
+      "sourceIds": [
+        "nist-sp-800-63b-digital-authentication"
+      ]
+    },
+    {
+      "id": "cybersecurity:foundations:authentication:3",
+      "prompt": "Ravi signs in with his password and then approves a prompt on his phone. Which statement about the factors is correct?",
+      "options": [
+        "Both checks are something you know, so this is single-factor.",
+        "The password is the only factor; the phone prompt is just a notification.",
+        "The password is something you know and the phone approval is something you have, so this is multi-factor.",
+        "This is biometric authentication because the phone recognizes its owner."
+      ],
+      "correctIndex": 2,
+      "explanation": "The password is a memorized secret, something you know, and approving a prompt on a phone proves control of a device, something you have. Proof from two distinct categories is multi-factor, which is what the two-step check performs. The other options mislabel the categories.",
+      "difficulty": "application",
+      "skill": "Applying factor categories to a sign-in scenario",
+      "sourceIds": [
+        "nist-sp-800-63b-digital-authentication",
+        "mslearn-entra-authentication-overview"
+      ]
+    },
+    {
+      "id": "cybersecurity:foundations:authentication:4",
+      "prompt": "A photo of a person's face is captured from a public camera feed. Why can this not be fixed the way a leaked password can?",
+      "options": [
+        "Face images are legally protected and cannot be used for authentication.",
+        "The person can simply choose a different face for the account.",
+        "Authentication systems ignore face images entirely.",
+        "Biometric characteristics are not secrets, and a person cannot issue themselves a new fingerprint or face."
+      ],
+      "correctIndex": 3,
+      "explanation": "NIST notes that biometric characteristics are not secrets: they can be captured from photos or surfaces without the person's knowledge. A leaked password can be replaced with a new one, but a compromised biometric cannot simply be reset, which is why NIST requires biometrics to be used with another factor rather than alone.",
+      "difficulty": "analysis",
+      "skill": "Analyzing the limits of biometric factors",
+      "sourceIds": [
+        "nist-sp-800-63b-v3-biometrics",
+        "nist-sp-800-63b-digital-authentication"
+      ]
+    },
+    {
+      "id": "cybersecurity:foundations:authentication:5",
+      "prompt": "Lin authenticates successfully to a hospital system but is told her account may not open a certain patient record. What happened?",
+      "options": [
+        "Authentication succeeded, but authorization denied the action.",
+        "Authentication failed because the record exists.",
+        "The system never checked her identity.",
+        "Authorization succeeded, so authentication was skipped."
+      ],
+      "correctIndex": 0,
+      "explanation": "Authentication verifies identity, and authorization decides what the authenticated identity may do, as OWASP's guidance separates the two controls. Lin proved who she is, but the permission check for that record failed; the record's existence and the identity check are not what denied her.",
+      "difficulty": "application",
+      "skill": "Distinguishing authentication from authorization in a scenario",
+      "sourceIds": [
+        "owasp-authorization-cheat-sheet",
+        "owasp-authentication-cheat-sheet"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "cybersecurity:foundations:authentication:1",
+      "prompt": "Which statement best defines authentication?",
+      "options": [
+        "Verifying that someone is who they claim to be before letting them act.",
+        "Deciding which resources an account is allowed to access.",
+        "Encrypting data so outsiders cannot read it.",
+        "Blocking malicious software from running."
+      ],
+      "correctIndex": 0,
+      "explanation": "Authentication verifies identity, as NIST and Microsoft's identity documentation describe. Deciding what an identity may access is authorization, and encryption or malware blocking are different security controls, not identity checks.",
+      "difficulty": "recall",
+      "skill": "Recognizing the definition of authentication",
+      "sourceIds": [
+        "nist-sp-800-63b-digital-authentication",
+        "mslearn-entra-authentication-overview"
+      ]
+    },
+    {
+      "id": "cybersecurity:foundations:authentication:2",
+      "prompt": "A login asks for a six-digit code generated on a phone app. Which factor category is being used?",
+      "options": [
+        "Something you know, because the code is a secret value.",
+        "Something you have, because the code comes from a device you possess.",
+        "Something you are, because the app knows your usage habits.",
+        "None — codes are not an authentication factor."
+      ],
+      "correctIndex": 1,
+      "explanation": "NIST classifies a one-time-code authenticator as a physical authenticator, something you have, because it proves possession and control of a device. The code is not a memorized secret, a body characteristic, or outside the definition of a factor.",
+      "difficulty": "understanding",
+      "skill": "Classifying a method into a factor category",
+      "sourceIds": [
+        "nist-sp-800-63b-digital-authentication"
+      ]
+    },
+    {
+      "id": "cybersecurity:foundations:authentication:3",
+      "prompt": "Ravi signs in with his password and then approves a prompt on his phone. Which statement about the factors is correct?",
+      "options": [
+        "Both checks are something you know, so this is single-factor.",
+        "The password is the only factor; the phone prompt is just a notification.",
+        "The password is something you know and the phone approval is something you have, so this is multi-factor.",
+        "This is biometric authentication because the phone recognizes its owner."
+      ],
+      "correctIndex": 2,
+      "explanation": "The password is a memorized secret, something you know, and approving a prompt on a phone proves control of a device, something you have. Proof from two distinct categories is multi-factor, which is what the two-step check performs. The other options mislabel the categories.",
+      "difficulty": "application",
+      "skill": "Applying factor categories to a sign-in scenario",
+      "sourceIds": [
+        "nist-sp-800-63b-digital-authentication",
+        "mslearn-entra-authentication-overview"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "cybersecurity:foundations:password-security",
+    "cybersecurity:foundations:mfa",
+    "cybersecurity:foundations:authorization",
+    "cybersecurity:foundations:phishing",
+    "cybersecurity:foundations:what-cybersecurity-is"
+  ],
+  "sources": [
+    "nist-sp-800-63b-digital-authentication",
+    "nist-sp-800-63b-v3-biometrics",
+    "owasp-authentication-cheat-sheet",
+    "owasp-authorization-cheat-sheet",
+    "mslearn-entra-authentication-overview"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only sources; no source prose adapted",
+    "researchedAt": "2026-08-21",
+    "transformation": "Definitions and factor terminology synthesized from NIST SP 800-63B (revisions 3 and 4), OWASP authentication and authorization cheat sheets, and Microsoft Entra documentation into original explanatory prose."
+  },
+  "contentHash": "c6667da06764bfa1",
+  "status": "source-verified",
+  "public": false
+}

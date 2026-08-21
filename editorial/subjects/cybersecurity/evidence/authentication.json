@@ -1,0 +1,186 @@
+{
+  "topicId": "cybersecurity:foundations:authentication",
+  "subjectId": "cybersecurity",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "definition of authentication as verifying that someone is who they claim to be",
+      "the three authentication factors: something you know, something you have, something you are",
+      "single-factor versus multi-factor authentication and the strength difference",
+      "authentication versus authorization as a critical distinction",
+      "common authentication methods: passwords, one-time codes, biometrics, security keys",
+      "why authentication matters: identity as the gate to everything else",
+      "the honest limits of authentication, including biometrics that cannot be reset like passwords"
+    ],
+    "supporting": [
+      "NIST SP 800-63 terminology: authenticators, physical authenticators, two distinct authentication factors",
+      "one-time-code (OTP) authenticators as something-you-have proofs",
+      "biometric comparison as probabilistic and not a secret",
+      "FIDO2 security keys and passkeys as modern cryptographic possession proofs"
+    ],
+    "outOfScope": [
+      "password-security (sibling topic: cybersecurity:foundations:password-security)",
+      "mfa (sibling topic: cybersecurity:foundations:mfa)",
+      "authorization (sibling topic: cybersecurity:foundations:authorization)",
+      "digital-certificates (sibling topic: cybersecurity:foundations:digital-certificates)",
+      "identity proofing, credential service provider operations, phishing-resistant authenticator internals",
+      "any attack techniques, exploit details, or step-by-step offensive methods (defensive framing only)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Authentication is the process of verifying that someone is who they claim to be before a system grants access; NIST defines digital authentication as determining the validity of one or more authenticators used to claim a digital identity, and Microsoft describes it as a security process that verifies a user's identity before granting access.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nist-sp-800-63b-digital-authentication",
+        "mslearn-entra-authentication-overview"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Authentication proof falls into three factor categories: something you know (e.g., a password, which NIST explicitly calls 'something you know'), something you have (e.g., a phone or hardware security key, which NIST calls physical authenticators), and something you are (e.g., a fingerprint or face, where NIST describes the biometric match as 'something you are').",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nist-sp-800-63b-digital-authentication",
+        "nist-sp-800-63b-v3-biometrics"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Multi-factor authentication requires two or more distinct factor categories; NIST's higher assurance levels require proof of possession and control of two distinct authentication factors, and two proofs from the same category (e.g., password plus PIN) still count as one factor.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nist-sp-800-63b-digital-authentication",
+        "mslearn-entra-authentication-overview"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Authentication and authorization are separate controls: authentication verifies identity (who you are), while authorization decides which resources an authenticated identity may access and what it may do (what you are allowed to do).",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "owasp-authorization-cheat-sheet",
+        "owasp-authentication-cheat-sheet"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Common authentication methods include passwords (something you know), one-time codes such as OTPs generated on a phone (something you have), biometrics such as fingerprint and face (something you are), and security keys such as FIDO2 hardware keys and passkeys (something you have, cryptographic possession proofs).",
+      "claimType": "CURRENT",
+      "sourceIds": [
+        "nist-sp-800-63b-digital-authentication",
+        "mslearn-entra-authentication-overview",
+        "owasp-authentication-cheat-sheet"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "No authentication method is perfect; biometrics have specific limits: NIST states biometric characteristics are not secrets (faces can be photographed, fingerprints lifted from surfaces), biometric comparison is probabilistic rather than deterministic, a biometric is not recognized as an authenticator by itself, and NIST requires biometrics to be used only together with a physical authenticator — unlike a password, a compromised biometric cannot simply be reset.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nist-sp-800-63b-v3-biometrics",
+        "nist-sp-800-63b-digital-authentication"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "How irreversible is biometric compromise, and can biometric credentials be revoked?",
+      "positions": [
+        "Popular marketing and some vendor materials present biometrics as uniquely secure and effectively unhackable proof of identity.",
+        "NIST states biometric characteristics are not secrets — they can be obtained from photos, surfaces, or high-resolution images with or without the person's knowledge — and that biometric comparison is probabilistic. NIST also notes biometric template protection schemes can provide a method for revoking biometric credentials comparable to other factors, but that such solutions have limited availability and their testing standards are still under development.",
+        "NIST therefore requires biometrics to be used only as part of multi-factor authentication with a physical authenticator, never as the sole proof."
+      ],
+      "resolution": "The lesson presents the honest framing: biometrics are convenient and useful but are not secrets, are probabilistic rather than exact, and cannot be reset the way a password can; this is why NIST treats them as one factor used alongside a physical authenticator rather than as standalone proof."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's toolbox-drawer framing ('think of authentication as a label on a toolbox drawer') — boilerplate that defines nothing about identity verification.",
+    "The draft's claim that the primary value of authentication is that 'college courses use authentication as a building block' — a circular, content-free justification.",
+    "The draft's vocabulary entries (context, evidence, application) presented as if they define authentication — they are generic study words, not authentication concepts.",
+    "The draft's characterization of authentication as mainly a matter of 'setting, evidence, and decision' — it never states that authentication verifies identity claims."
+  ],
+  "correctionsNeeded": [
+    "Replaced the generic boilerplate with an evidence-based definition: authentication verifies that someone is who they claim to be, per NIST SP 800-63B and Microsoft Entra documentation.",
+    "Added the three factor categories with NIST terminology (something you know / something you have / something you are), each with an example.",
+    "Added the single-factor versus multi-factor distinction grounded in NIST's 'two distinct authentication factors' requirement.",
+    "Added the authentication-versus-authorization distinction grounded in the OWASP cheat sheets.",
+    "Added the honest-limits section, including that biometric characteristics are not secrets and cannot be reset like passwords, per NIST SP 800-63-3 Section 5.2.3.",
+    "Marked password-security, mfa, authorization, and digital-certificates as sibling topics referenced only via relatedTopics, keeping their content out of scope."
+  ],
+  "rightsIssues": [
+    "No rights issues: all sources used reference-only; no source prose was adapted or reproduced. NIST publications are U.S. government works; OWASP cheat sheets are CC BY-SA 4.0 (attribution recorded); Microsoft Learn pages are reference-only."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-sp-800-63b-digital-authentication",
+      "title": "NIST Special Publication 800-63B: Authentication and Authenticator Management (rev. 4)",
+      "provider": "National Institute of Standards and Technology",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21 (reused registry id; URL identical to content/phase-2/source-registry.json record). Supports: digital authentication as determining the validity of one or more authenticators used to claim a digital identity; 'something you know' (password), 'something you have' (physical authenticators), 'something you are' (biometric match); proof of possession and control of two distinct authentication factors at higher assurance levels; single-factor OTP authenticators as 'something you have'; 'a biometric characteristic is not recognized as an authenticator by itself.' Facts synthesized into original prose."
+    },
+    {
+      "id": "nist-sp-800-63b-v3-biometrics",
+      "title": "NIST Special Publication 800-63B (rev. 3): Authentication and Authenticator Management, Section 5.2.3 Use of Biometrics",
+      "provider": "National Institute of Standards and Technology",
+      "url": "https://pages.nist.gov/800-63-3/sp800-63b.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21. New id for the rev. 3 edition of SP 800-63B. Section 5.2.3 supports: biometrics as 'something you are'; biometric characteristics do not constitute secrets (obtainable from photos, latent fingerprints, high-resolution images); biometric comparison is probabilistic whereas other factors are deterministic; biometric template protection/revocation solutions exist but availability is limited; biometrics SHALL be used only as part of multi-factor authentication with a physical authenticator. This is the source for the honest-limits framing (biometrics cannot simply be reset like passwords). Facts synthesized into original prose."
+    },
+    {
+      "id": "owasp-authentication-cheat-sheet",
+      "title": "Authentication Cheat Sheet",
+      "provider": "OWASP Cheat Sheet Series",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21 (reused registry id; URL identical to registry record). Supports defensive account-protection context, FIDO2/WebAuthn/passkeys and hardware security keys as authentication methods, and the MFA recommendation referenced as a sibling topic. No source wording reproduced."
+    },
+    {
+      "id": "owasp-authorization-cheat-sheet",
+      "title": "Authorization Cheat Sheet",
+      "provider": "OWASP Cheat Sheet Series",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Reused registry id; URL identical to registry record (verified by the topic worker who registered it; supports the authentication-versus-authorization distinction). Used only for the claim that authentication and authorization are separate controls; authorization content itself is out of scope (sibling topic cybersecurity:foundations:authorization)."
+    },
+    {
+      "id": "mslearn-entra-authentication-overview",
+      "title": "Microsoft Entra authentication overview",
+      "provider": "Microsoft Learn (Microsoft Entra ID)",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-methods",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21. New id. Supports: 'Authentication is a security process that verifies a user's identity before granting access to apps, services, devices, or networks'; the authentication-methods table (password, software OATH tokens, SMS sign-in, FIDO2 security keys, passkeys, Windows Hello); secondary authentication with Microsoft Entra multifactor authentication (MFA). Facts synthesized into original prose; no wording reproduced."
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+# Password Security
+
+## In 30 Seconds
+
+Passwords are still the most widely used credential, and they are also one of the most attacked. A weak password is short, common, reused, or built from personal facts. Current guidance from NIST and CISA puts length first: a long passphrase made of unrelated words beats a short password full of symbols. Never reuse a password across accounts, because one leak can expose them all. A password manager generates and stores unique passwords for you, and multi-factor authentication adds a second layer of protection.
+
+## Why This Matters
+
+Passwords sit between almost everyone and the accounts that hold email, money, health records, and work. Understanding what makes a password weak — and why the official advice has genuinely changed — changes how you choose credentials for the rest of your life. The practical value is immediate: better password habits are the cheapest security upgrade available. Academically, the topic introduces layered defense, an idea that runs through all of cybersecurity. And because the guidance has moved from complexity to length and from forced changes to change-on-compromise, knowing the current reasoning keeps you from following outdated rules that make accounts less safe.
+
+## Learning Objectives
+
+- Define a strong password in terms of length, randomness, and uniqueness rather than complexity.
+- Explain why short, common, reused, and personally meaningful passwords are weak, naming the reason for each.
+- Distinguish current NIST guidance on password length and change frequency from older complexity-based rules.
+- Apply the password-manager model to keep unique passwords across multiple accounts.
+- Analyze why no password is a complete defense and where additional layers such as multi-factor authentication fit.
+
+## The College Version
+
+### Passwords are still everywhere
+
+Passwords remain a widely used form of authentication, as NIST observes in Special Publication 800-63B, the same standard that governs how federal systems handle authentication. They are also one of the most attacked credentials: CISA's consumer guidance warns that weak passwords can quickly be broken by computer hackers, and database leaks regularly put stored passwords into attackers' hands. This double role — common and targeted — is the honest starting point for password security. No single measure makes a password unbeatable. The realistic goal is to make each credential expensive to attack and to limit the damage when one leaks.
+
+### What makes a password weak
+
+A password is weak when one of five things is true. Short: NIST notes that passwords that are too short yield to brute-force and dictionary attacks, where attackers try many guesses, and names length a primary factor in password strength. Common: simple choices like "12345" are the first entries in attackers' guess lists; CISA singles them out as unsafe for accounts that hold personal information. Built from personal facts: birthdays, pet names, and similar details are exactly the information an attacker can find in public posts, which is why CISA lists them among unsafe choices. Reused: a password used on several sites means one leak compromises all of them, an attack NIST calls password stuffing. Predictable: NIST's guidance also tells verifiers to blocklist specific words users are likely to choose, such as the name of the service itself.
+
+### Length first: the modern guidance
+
+Official guidance has moved from complexity to length. NIST's SP 800-63B directs verifiers not to impose composition rules such as requiring mixtures of character types, because users answer those rules in predictable, weak ways, and it names length as the primary factor in strength. The same standard requires passwords used as the only authentication factor to be at least 15 characters, and at least 8 when combined with multi-factor authentication; CISA's consumer guidance recommends at least 16 characters, longer is stronger. A practical way to gain length is the passphrase: NIST defines it as a password made of a sequence of words, and CISA recommends a memorable phrase of four to seven unrelated words, with spaces allowed. Length, not symbol salad, is what makes guessing expensive.
+
+### Stop forcing frequent changes
+
+For years, organizations forced users to change passwords on a schedule — every 60 or 90 days. Current guidance reverses that. NIST's SP 800-63B states that verifiers should not require subscribers to change passwords periodically; a forced change is appropriate only when there is evidence the authenticator was compromised, such as a breach or a suspected leak. OWASP's Authentication Cheat Sheet repeats the point, citing NIST. The reasoning is practical: scheduled changes push users toward small, predictable alterations — "Spring2025" becomes "Spring2026" — which attackers guess easily, while frequent changes make long passphrases harder to maintain. The modern rule is to change a password when there is a reason, not on a calendar.
+
+### Unique everywhere, and the safety net
+
+Because a unique strong password for every account is impossible to hold in your head, NIST requires verifiers to allow password managers and autofill, and notes that password managers with built-in generators lead users to choose stronger passwords. CISA recommends the same: a password manager generates, stores, and fills in unique passwords, so the user memorizes only one strong master password. Reuse is the biggest multiplier of damage: one leaked password can unlock every account that shares it, which is why NIST calls distinct passwords important and why CISA's consumer story of "Emma" centers on a reused password turning one company breach into a bank account takeover. Finally, an honest limit: no password is unbreakable. NIST notes that keystroke logging, phishing, and social engineering capture the password as it is typed, regardless of its length or complexity. A password is one layer, not the whole wall; the next layer, covered in its own topic, is multi-factor authentication, which adds a second factor so that a stolen password alone no longer unlocks the account.
+
+## Key Vocabulary
+
+- **password** — A secret value, usually a string of characters, that a person memorizes or records and enters to prove they are the account's owner when logging in.
+- **passphrase** — A password made of a sequence of words or other text, generally longer than a typical password, which adds security through length.
+- **password manager** — A program that generates, stores, and fills in unique passwords for each account, so the user memorizes only one strong master password.
+- **master password** — The single strong password a person memorizes to unlock everything stored in their password manager.
+- **credential stuffing** — An attack in which a password leaked from one service is tried against the same person's accounts on other services.
+- **brute-force attack** — An attack that tries many possible passwords in sequence; short passwords cannot withstand this for long.
+- **dictionary attack** — An attack that tries lists of likely passwords, such as common words and predictable patterns, rather than every possible combination.
+- **composition rules** — Requirements that a password mix character types such as uppercase letters, digits, and symbols; current guidance no longer recommends forcing them.
+- **multi-factor authentication (MFA)** — A method that requires more than one type of evidence — such as a password plus a one-time code or a fingerprint — before granting access.
+- **breach** — An incident in which a service's data, including stored credentials, is accessed or stolen by unauthorized parties.
+
+## Eli-10
+
+A password is a secret word or phrase you type to prove you are you. The old advice said: make it complicated, with numbers, symbols, and capitals. The current advice, from NIST and CISA, says make it long. A long phrase made of ordinary words you can remember — like purple horse hat run — is much harder to guess than a short jumble of symbols, because guessing power grows with length. And never reuse a password: if one site leaks, attackers try that same password on your other accounts. A password manager remembers all your unique long passwords for you, so you only memorize one strong master password. Even a great password is not magic: if a thief captures it while you type, it is gone. That is why important accounts add a second step — multi-factor authentication — which is a topic of its own.
+
+## Eli's Analogy
+
+Think of a password as a key to a locked room. A short key with a simple shape fits a lock almost any key can open; a long passphrase is like a key cut with many precise grooves, far harder to match by chance. Using the same key for your house, your car, and your storage locker means losing one key loses everything, so you give each lock its own key. A password manager is the key ring that keeps every key straight while you carry only the one you actually use.
+
+The comparison breaks down because keys are physical: you notice a missing key, and a thief cannot copy yours from across a room. Passwords can be stolen invisibly — by a fake login page, by software that records keystrokes, or from a company database that leaks — and you may not know until the damage is done. The same password also works on every copy of the lock, so passwords need extra layers that physical keys do not.
+
+## Worked Example
+
+Dana uses three accounts every week: a university portal, a music service, and an online store. Her old habit was one password, "Summer2024!", everywhere. When the store suffers a breach, its password list leaks online. Because Dana reused the password, attackers try it against her email and her bank within hours — the pattern CISA describes as the danger of reuse. She switches to the modern model: a password manager generates a unique long password for each account, and Dana memorizes one master passphrase made of four unrelated words. Months later, the music service is breached too, but the leaked password is useless elsewhere because it exists nowhere else. Her email also has multi-factor authentication enabled, so even that leaked credential alone cannot unlock the account.
+
+## Common Mistakes
+
+- **Believing a short password stuffed with symbols is stronger than a long phrase.** NIST names length the primary factor in password strength and tells verifiers not to impose composition rules. "Horse purple hat run" resists guessing far better than "P@ss1!" because length expands the search space.
+- **Using one strong password on every account.** Reuse is the biggest risk multiplier: NIST describes password stuffing, where a password leaked from one site is tried on the user's other accounts. Unique passwords per account contain the damage of any single leak.
+- **Changing passwords on a fixed schedule, such as every 90 days.** Current NIST guidance says not to require periodic changes; users respond with predictable variations. Change a password when there is evidence of compromise, not on a calendar.
+- **Building passwords from personal facts, like a birthday or a pet's name, to make them memorable.** CISA warns that common identifying information such as birthdays and pet names is not safe, because attackers can find those details in public posts. Unrelated words make better passphrases.
+- **Avoiding password managers because keeping passwords in one place feels risky.** NIST requires verifiers to allow password managers, and CISA recommends them: the manager stores unique generated passwords behind one strong master password, which beats reusing the same password everywhere.
+
+## Compare / Contrast
+
+- **A long passphrase of unrelated words vs. a short password packed with symbols** — Both are passwords, but the passphrase earns its strength from length and stays memorable, while the short complex password adds little real strength from its symbols and is harder to remember, which is why current guidance is length-first.
+- **Old guidance: forced periodic changes and composition rules vs. current guidance: length first, change only on evidence of compromise** — Both aim to keep credentials strong, but the old approach produced predictable variations and user frustration, while the current approach, per NIST and OWASP, makes length the lever and reserves forced changes for actual compromise.
+- **One reused password across accounts vs. a unique password per account** — Both are the same effort to type, but a reused password turns one leak into many compromised accounts, while unique passwords keep a single breach contained to a single service.
+
+## Key Takeaway
+
+A strong password is long, random, and unique to one account; a password manager makes that practical, and multi-factor authentication adds a layer for when a password leaks. No password is unbreakable, so protect accounts in layers.
+
+## Practice Question Bank
+
+**Q1.** According to current NIST guidance, why does password length matter more than complexity?
+
+- A. Length is the primary factor in password strength, because longer passwords resist guessing far better than short ones.
+- B. Length matters because longer passwords are easier for the account holder to memorize.
+- C. Length matters because short passwords take up less space in a database, which is risky.
+- D. Length matters because a long password is automatically unique across every account.
+
+**Key: A.** NIST SP 800-63B identifies password length as a primary factor in strength and directs verifiers not to impose composition rules such as forced mixtures of character types. Memorability, database storage, and uniqueness across accounts are separate concerns, not the reason length leads.
+
+**Q2.** Priya uses the same password for an online store, a fitness app, and her email. The store's database is later leaked online. What is the biggest risk to her other accounts?
+
+- A. None, because a leak at one company never affects accounts elsewhere.
+- B. Her fitness app will automatically reset her password.
+- C. Attackers can try the leaked password against her other accounts — an attack called password stuffing.
+- D. Her email is safe because email providers share no data with stores.
+
+**Key: C.** NIST describes password stuffing as an attacker using a compromised password from one site to access the user's accounts on other sites, and CISA's consumer guidance illustrates the same danger with a reused password turning one company breach into a bank account takeover. The other options describe protections that do not exist.
+
+**Q3.** A company policy forces every employee to change passwords every 60 days, and employees respond with small predictable tweaks like 'Spring2025' to 'Spring2026'. Which change to the policy best matches current guidance?
+
+- A. Keep the schedule, because any periodic change is better than none.
+- B. Require long, unique passwords and stop forcing periodic changes unless there is evidence of compromise.
+- C. Return to short passwords packed with symbols, since symbols are what matter.
+- D. Remove password requirements entirely and let employees choose freely.
+
+**Key: B.** NIST SP 800-63B states verifiers shall not require periodic password changes and should force a change only on evidence of compromise; OWASP's cheat sheet repeats the point. Scheduled changes push users toward predictable variations, and complexity rules are not the main lever, so the other options contradict current guidance.
+
+**Q4.** Which statement best describes how a password manager helps protect a person's accounts?
+
+- A. It generates and stores a unique, strong password for each account and fills it in at login, so the user memorizes only one strong master password.
+- B. It prints out all of the user's passwords once a year so they can be kept in a drawer.
+- C. It guarantees that no account can ever be compromised.
+- D. It replaces passwords entirely, so the user never types a secret again.
+
+**Key: A.** CISA describes a password manager as a program that generates, stores, and fills in passwords so the user remembers one strong master password, and NIST requires verifiers to allow password-manager use and autofill. Printing passwords, guaranteeing safety, or replacing passwords entirely are not what a password manager does.
+
+**Q5.** Even an excellent password is not a complete defense. Which statement best explains why?
+
+- A. Because passwords longer than 16 characters are against current guidance.
+- B. Because password managers cannot generate random passwords.
+- C. Because companies are required to store passwords in plain text.
+- D. Because attacks like keystroke logging and phishing capture the password as it is typed, so no password alone is unbreakable — protection comes from layers such as unique passwords and MFA.
+
+**Key: D.** NIST notes that keystroke logging, phishing, and social engineering are not affected by password complexity or length, and CISA presents MFA as an additional layer beyond the password. The other options misstate current guidance, password-manager capability, and storage practice.
+
+## Sources
+
+- National Institute of Standards and Technology — "NIST Special Publication 800-63B: Authentication and Authenticator Management". https://pages.nist.gov/800-63-4/sp800-63b.html
+- Cybersecurity and Infrastructure Security Agency (CISA) — "Use Strong Passwords (Secure Our World)". https://www.cisa.gov/secure-our-world/use-strong-passwords
+- OWASP Cheat Sheet Series — "Authentication Cheat Sheet". https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
+
+## Related Topics
+
+- What Is Cybersecurity? (cybersecurity:foundations:what-cybersecurity-is)
+- Threats (cybersecurity:foundations:threats)
+- Authentication (cybersecurity:foundations:authentication)
+- Multi-Factor Authentication (cybersecurity:foundations:mfa)
+- Phishing (cybersecurity:foundations:phishing)
+
+## Editorial Metadata
+
+- Topic ID: cybersecurity:foundations:password-security
+- Editorial status: READY_TO_PUBLISH
+- Research status: source-verified
+- Researched: 2026-08-21
+- Rights: reference-only plus public-domain U.S. government guidance; no source prose adapted

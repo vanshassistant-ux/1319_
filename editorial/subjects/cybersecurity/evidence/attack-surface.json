@@ -1,0 +1,193 @@
+{
+  "topicId": "cybersecurity:foundations:attack-surface",
+  "subjectId": "cybersecurity",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "The working definition of attack surface: the total set of ways a system can be reached or entered by an attacker",
+      "Named kinds of attack surface: network ports and services, user interfaces, accounts and logins, physical access, supply chain",
+      "Why a smaller attack surface is easier to defend (the principle of minimizing the surface)",
+      "Attack surface in everyday life: every connected device, account, and service adds surface (smart doorbell example)",
+      "General practices for reducing the surface: close unused services, limit accounts, update, remove unneeded features",
+      "The honest framing: the surface can be reduced, never eliminated"
+    ],
+    "supporting": [
+      "Attack surface analysis as mapping, measuring, and managing the surface (OWASP)",
+      "Least functionality and limited access points as documented reducers of attack surface (NIST SP 800-53)",
+      "Configuration management as the home of port/service and account hygiene (NIST SP 800-128)"
+    ],
+    "outOfScope": [
+      "Vulnerabilities and how they are found or exploited (sibling topic: cybersecurity:foundations:vulnerabilities)",
+      "Risk and risk management (sibling topic: cybersecurity:foundations:risk)",
+      "Network fundamentals — ports, protocols, addressing (sibling topic: cybersecurity:foundations:network-fundamentals; referenced only)",
+      "Least privilege (sibling topic: cybersecurity:foundations:least-privilege; referenced only)",
+      "Attack techniques, exploit details, or offensive methods (defensive framing only)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Attack surface is the total set of ways a system can be reached or entered by an attacker — every point where an attacker could get into a system or extract data from it.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["owasp-attack-surface-analysis-cheatsheet", "microsoft-learn-attack-surface-reduction"],
+      "status": "supported"
+    },
+    {
+      "claim": "OWASP describes the attack surface as all of the different points where an attacker could get into a system and where they could get data out, and as the sum of all paths for data and commands into and out of an application plus the code that protects those paths.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["owasp-attack-surface-analysis-cheatsheet"],
+      "status": "supported"
+    },
+    {
+      "claim": "Open network ports and the services that use them are part of the attack surface; NIST SP 800-128 warns that open ports and available protocols and services are an inviting target for attackers.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-800-128"],
+      "status": "supported"
+    },
+    {
+      "claim": "Accounts and logins are part of the attack surface; NIST SP 800-128 notes that passwords are a common authentication mechanism and that poorly implemented or used passwords can undermine an otherwise secure configuration, and it recommends account hygiene such as changing default account names and disabling inactive accounts.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-800-128"],
+      "status": "supported"
+    },
+    {
+      "claim": "Physical access is part of the attack surface; NIST SP 800-53 treats physical access controls as distinct from logical access controls, addressed by the Physical and Environmental Protection (PE) control family.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-800-53r5"],
+      "status": "supported"
+    },
+    {
+      "claim": "The supply chain is part of the attack surface: NIST SP 800-161 addresses cybersecurity supply chain risk management, and NIST SP 800-128 warns that unapproved components rarely have updated patches and are not assessed for security.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-800-161r1", "nist-sp-800-128"],
+      "status": "supported"
+    },
+    {
+      "claim": "A smaller attack surface is easier to defend: NIST SP 800-53 states that least privilege and least functionality reduce the attack surface of a system, and that limiting the number of access control points for remote access reduces attack surfaces.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-800-53r5"],
+      "status": "supported"
+    },
+    {
+      "claim": "Every connected device, account, and service adds to the attack surface; OWASP notes that complexity increases with the number of different types of users, and Microsoft Learn describes attack surfaces as all the places where an organization is vulnerable to cyberthreats.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["owasp-attack-surface-analysis-cheatsheet", "microsoft-learn-attack-surface-reduction"],
+      "status": "supported"
+    },
+    {
+      "claim": "General practices for reducing attack surface include disabling or uninstalling unused functionality, protocols, ports, and services, limiting and managing accounts, and keeping software updated; NIST SP 800-128 recommends all of these under security-focused configuration management.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-sp-800-128"],
+      "status": "supported"
+    },
+    {
+      "claim": "The attack surface can be reduced but never eliminated: OWASP frames attack surface analysis as mapping, measuring, and managing the surface, and NIST and Microsoft guidance speak of reducing attack surfaces, not removing them.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["owasp-attack-surface-analysis-cheatsheet", "nist-sp-800-53r5", "microsoft-learn-attack-surface-reduction"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Attack surface is sometimes framed at the application level and sometimes at the organization level.",
+      "positions": [
+        "Application-focused definition: the sum of all paths for data/commands into and out of an application plus the protecting code (OWASP Attack Surface Analysis Cheat Sheet)",
+        "Organization-focused definition: all the places where an organization is vulnerable to cyberthreats (Microsoft Learn)"
+      ],
+      "resolution": "The lesson uses a general system-level definition — the total set of ways a system can be reached or entered by an attacker — that accommodates both frames, and applies it to homes and small businesses as well as applications."
+    },
+    {
+      "issue": "Whether physical access and supply chain belong in a literacy-level treatment of attack surface.",
+      "positions": [
+        "Some application-security treatments explicitly exclude physical, insider, and social vectors from their analysis scope (OWASP cheat sheet)",
+        "NIST frameworks treat physical and supply-chain vectors as distinct, formal security domains (SP 800-53 PE control family; SP 800-161)"
+      ],
+      "resolution": "The lesson includes physical access and supply chain as one-line kinds of attack surface, consistent with NIST's treatment, without entering either domain; the lesson's named kinds are presented as a teaching taxonomy, not an exhaustive list."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft claimed attack surface is 'a foundational concept' in cybersecurity and framed it as 'a label on a toolbox drawer'; neither carries a definition of attack surface and both were discarded as generic boilerplate.",
+    "The generated draft's vocabulary defined attack surface circularly as 'a foundational Cybersecurity concept covered in this lesson'; replaced with a sourced definition."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic boilerplate with a sourced working definition of attack surface (OWASP; Microsoft Learn).",
+    "Added the named kinds of attack surface (network ports and services, user interfaces, accounts and logins, physical access, supply chain), each with NIST or OWASP support.",
+    "Added the reduction practices — close unused services, limit accounts, update, remove unneeded features — sourced to NIST SP 800-128 and SP 800-53.",
+    "Added the honest framing that the surface can be reduced but never eliminated.",
+    "Replaced the draft's 3-option quick-check items with a 5-question, 4-option question bank with keys distributed across A/B/C/D.",
+    "Added original examples throughout (smart doorbell, Riverside Print Co. worked example)."
+  ],
+  "rightsIssues": [
+    "NIST publications are U.S. government works, not subject to copyright in the United States (public domain).",
+    "OWASP Cheat Sheet Series and Microsoft Learn pages were used as reference only; no source wording is reproduced in the lesson."
+  ],
+  "sourceRecords": [
+    {
+      "id": "owasp-attack-surface-analysis-cheatsheet",
+      "title": "Attack Surface Analysis — OWASP Cheat Sheet Series",
+      "provider": "OWASP Foundation",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Attack_Surface_Analysis_Cheat_Sheet.html",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21. Supports: the attack surface as all of the different points where an attacker could get into a system and where they could get data out; the attack surface of an application as the sum of all paths for data/commands into and out of the application plus the code protecting those paths; attack surface analysis as mapping what needs review and testing, finding ways to minimize the surface, and noticing when the surface changes; complexity increasing with the number of different types of users; the note that the analysis excludes physical and insider vectors (used for the conflictingEvidence entry). Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "nist-sp-800-128",
+      "title": "NIST SP 800-128: Guide for Security-Focused Configuration Management of Information Systems",
+      "provider": "National Institute of Standards and Technology",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-128.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work; not subject to copyright in the United States",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Read the PDF text layer (downloaded from nvlpubs.nist.gov, the official distribution host) on 2026-08-21. Supports: open ports and available protocols and services as inviting targets for attackers, especially where known vulnerabilities are associated with a given port, protocol, or service; remote connections opening an avenue of attack and being limited to only those absolutely necessary; disabling or uninstalling unused/unnecessary operating system functionality, protocols, ports, and services; account management (changing default account names, determining when inactive accounts are disabled, unique user names); unapproved components rarely having updated patches and not being assessed; passwords as a common authentication mechanism whose poor implementation or use can undermine secure configuration. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "nist-sp-800-53r5",
+      "title": "NIST SP 800-53 Rev. 5: Security and Privacy Controls for Information Systems and Organizations",
+      "provider": "National Institute of Standards and Technology",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work; not subject to copyright in the United States",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Read the PDF text layer (downloaded from nvlpubs.nist.gov) on 2026-08-21. Supports: least privilege and least functionality reducing the attack surface of a system; limiting the number of access control points for remote access reducing attack surfaces; physical access controls as distinct from logical access controls, addressed by the Physical and Environmental Protection (PE) control family. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "nist-sp-800-161r1",
+      "title": "NIST SP 800-161 Rev. 1: Cybersecurity Supply Chain Risk Management Practices for Systems and Organizations",
+      "provider": "National Institute of Standards and Technology",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-161r1.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work; not subject to copyright in the United States",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Read the PDF text layer (downloaded from nvlpubs.nist.gov) on 2026-08-21. Supports the single claim that the supply chain is a recognized source of risk entering systems (the publication's subject is cybersecurity supply chain risk management). Used for the one-line supply-chain item in the kinds-of-attack-surface section only; no further claims are made from this source."
+    },
+    {
+      "id": "microsoft-learn-attack-surface-reduction",
+      "title": "Attack surface reduction in Microsoft Defender for Endpoint",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/defender-endpoint/overview-attack-surface-reduction",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21. Supports: attack surfaces as all the places where an organization is vulnerable to cyberthreats; attack surface reduction as eliminating risky or unnecessary behaviors on devices and networks, reducing the opportunities attackers have to compromise an organization; hardening surfaces to prevent attacks. Facts synthesized into original prose; no wording reproduced."
+    }
+  ]
+}

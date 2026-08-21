@@ -1,0 +1,290 @@
+{
+  "topicId": "cybersecurity:foundations:vulnerabilities",
+  "subjectId": "cybersecurity",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "what a vulnerability is: a weakness in a system, process, or design that could be exploited — the NIST glossary working definition, attributed",
+      "common vulnerability types named conceptually: weak or stolen credentials, unpatched software, misconfiguration, insecure code, human error",
+      "how vulnerabilities are found (security research, coordinated disclosure, bug bounties) and tracked (CVE identifiers, the NVD, CISA's known exploited catalog)",
+      "the exploitability question: a weakness is a risk only if a threat can reach it (the bridge to risk)",
+      "reducing vulnerabilities: patch, configure, design securely, train people"
+    ],
+    "supporting": [
+      "NIST's risk definition (impact + likelihood) as the basis of the exploitability bridge",
+      "OWASP Top 10 2025 categories as evidence that the named types are recognized across the industry",
+      "CVE Program's narrower definition of vulnerability as a contrast to the broader NIST definition",
+      "the CISA catalog of known exploited vulnerabilities as evidence that only a subset of weaknesses is actively exploited"
+    ],
+    "outOfScope": [
+      "who the threats are and how they operate (sibling topic: threats)",
+      "risk assessment, likelihood, impact, and acceptable risk (sibling topic: risk)",
+      "vulnerability scanning programs and remediation workflows at scale (sibling topic: vulnerability-management)",
+      "patch scheduling, testing, and rollout processes (sibling topic: patch-management)",
+      "any exploit technique, attack step-by-step, or offensive tooling (defensive framing only)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A vulnerability is a weakness in an information system, in system security procedures, in internal controls, or in implementation that could be exploited or triggered by a threat source.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-glossary-vulnerability"],
+      "status": "supported"
+    },
+    {
+      "claim": "Weaknesses are not limited to software: procedures and controls can be weak too, which is why human behavior and procedural gaps count as vulnerabilities.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-glossary-vulnerability", "cisa-secure-our-world-update-software"],
+      "status": "supported"
+    },
+    {
+      "claim": "Weak or stolen credentials are a recognized vulnerability type: OWASP's Top 10 includes authentication failures, describing default, weak, or well-known passwords and breached credential lists as weaknesses.",
+      "claimType": "CURRENT",
+      "sourceIds": ["owasp-a07-authentication-failures", "owasp-top-ten-2025"],
+      "status": "supported"
+    },
+    {
+      "claim": "Unpatched or outdated software is a recognized vulnerability type: OWASP's supply-chain category flags software that is vulnerable, unsupported, or out of date, and CISA describes updates as patches that close security weak spots.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["owasp-a03-software-supply-chain", "cisa-secure-our-world-update-software"],
+      "status": "supported"
+    },
+    {
+      "claim": "Misconfiguration is a recognized vulnerability type: a system set up incorrectly from a security perspective, such as unnecessary features enabled or default accounts and passwords left unchanged.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["owasp-a02-security-misconfiguration"],
+      "status": "supported"
+    },
+    {
+      "claim": "Insecure code and insecure design are recognized vulnerability types; OWASP distinguishes design flaws (missing or ineffective controls) from implementation defects.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["owasp-a06-insecure-design"],
+      "status": "supported"
+    },
+    {
+      "claim": "Vulnerabilities are found by security researchers and other parties; the NVD does not test systems itself but relies on vendors, third-party security researchers, and vulnerability coordinators to provide information.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nvd-general-information"],
+      "status": "supported"
+    },
+    {
+      "claim": "Some organizations run bug bounty programs that reward researchers for identifying and reporting security vulnerabilities, under coordinated vulnerability disclosure.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["microsoft-bug-bounty-programs"],
+      "status": "supported"
+    },
+    {
+      "claim": "The CVE Program assigns each publicly known vulnerability a unique CVE identifier so that parties can confidently refer to the same weakness; all vulnerabilities in the NVD carry a CVE identifier.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nvd-vulnerabilities-page"],
+      "status": "supported"
+    },
+    {
+      "claim": "The NVD is the U.S. government repository of standards-based vulnerability data and enriches published CVE records with impact metrics, weakness types, and affected products.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nvd-general-information"],
+      "status": "supported"
+    },
+    {
+      "claim": "CISA maintains a catalog of vulnerabilities that are known to be actively exploited in the wild, which listed 1,674 entries as of the August 21, 2026 catalog version.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["cisa-kev-catalog"],
+      "status": "supported"
+    },
+    {
+      "claim": "Risk is a measure of the extent to which an entity is threatened by a potential circumstance or event, typically a function of the adverse impacts and the likelihood of occurrence; a weakness becomes a live risk only when a threat source can reach it.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-glossary-risk", "nist-glossary-vulnerability"],
+      "status": "supported"
+    },
+    {
+      "claim": "Reducing vulnerabilities relies on general practices: patching promptly, configuring systems deliberately, designing securely, and training people.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cisa-secure-our-world-update-software", "owasp-a02-security-misconfiguration", "owasp-a06-insecure-design"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "The definition of a vulnerability differs between standards bodies.",
+      "positions": [
+        "The NIST glossary (from FIPS 200 and CNSSI 4009, adapted) defines a vulnerability broadly as a weakness in an information system, system security procedures, internal controls, or implementation.",
+        "The CVE Program defines a vulnerability more narrowly as a weakness in the computational logic of software and hardware components that, when exploited, results in a negative impact to confidentiality, integrity, or availability."
+      ],
+      "resolution": "The lesson uses the broader NIST glossary definition as its working definition and explicitly notes the narrower CVE definition when discussing how vulnerabilities are named and tracked."
+    },
+    {
+      "issue": "Whether weaknesses in people and processes count as vulnerabilities, or only software defects do.",
+      "positions": [
+        "NIST's definition covers system security procedures and internal controls, so procedural and human weaknesses count as vulnerabilities.",
+        "CVE's definition is limited to computational logic in software and hardware components."
+      ],
+      "resolution": "The lesson follows NIST's broader framing and treats human error as one of the common vulnerability types, consistent with CISA's Secure Our World guidance on unwise clicks and neglected updates."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The machine-generated phase-2 draft's boilerplate ('Vulnerabilities is a foundational concept in Cybersecurity') carries no factual content and was discarded entirely."
+  ],
+  "correctionsNeeded": [
+    "Replaced the machine-generated draft with original prose throughout; no draft wording was retained."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "nist-glossary-vulnerability",
+      "title": "NIST Glossary: vulnerability",
+      "provider": "National Institute of Standards and Technology (NIST), Computer Security Resource Center",
+      "url": "https://csrc.nist.gov/glossary/term/vulnerability",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21. Provides the working definition used throughout the lesson: 'Weakness in an information system, system security procedures, internal controls, or implementation that could be exploited or triggered by a threat source', attributed to FIPS 200 under VULNERABILITY, adapted from CNSSI 4009, with the same wording under NIST SP 800-30 Rev. 1. Supports the definition claim and the systems/procedures/controls scope of weaknesses. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "nist-glossary-risk",
+      "title": "NIST Glossary: risk",
+      "provider": "National Institute of Standards and Technology (NIST), Computer Security Resource Center",
+      "url": "https://csrc.nist.gov/glossary/term/risk",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21. Defines risk as 'a measure of the extent to which an entity is threatened by a potential circumstance or event', typically a function of adverse impacts and likelihood of occurrence. Used to anchor the exploitability bridge (a weakness is a live risk only when a threat can reach it). Risk itself is a sibling topic; only the bridge claim is made here. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "nvd-general-information",
+      "title": "NVD General Information",
+      "provider": "National Institute of Standards and Technology (NIST), National Vulnerability Database",
+      "url": "https://nvd.nist.gov/general",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21. Supports: the NVD is the U.S. government repository of standards-based vulnerability management data and includes databases of security-related software flaws, misconfigurations, product names, and impact metrics; the NVD performs enrichment on CVEs published to the CVE List (adding CVSS impact metrics, CWE weakness types, and CPE applicability); the NVD does not actively perform vulnerability testing, relying on vendors, third-party security researchers, and vulnerability coordinators. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "nvd-vulnerabilities-page",
+      "title": "NVD Vulnerabilities",
+      "provider": "National Institute of Standards and Technology (NIST), National Vulnerability Database",
+      "url": "https://nvd.nist.gov/vuln",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21. Supports: all vulnerabilities in the NVD have been assigned a CVE identifier; the CVE Program's definition of a vulnerability as a weakness in the computational logic of software and hardware components; the CVE Program's primary purpose of uniquely identifying vulnerabilities and associating them with specific versions of code bases so parties can confidently refer to the same weakness. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "cisa-kev-catalog",
+      "title": "CISA Catalog of Known Exploited Vulnerabilities (catalog feed)",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read the official JSON feed live 2026-08-21 (catalogVersion 2026.08.21, count 1674). Supports: CISA maintains a catalog of vulnerabilities known to be actively exploited, and the count claim of 1,674 entries as of the August 2026 version. Used as evidence that only a subset of cataloged weaknesses is actively exploited. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "cisa-secure-our-world-update-software",
+      "title": "Update Software (Secure Our World)",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/secure-our-world/update-software",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Registered id reused from the phase-1 source registry with an identical URL. cisa.gov blocked direct fetching on 2026-08-21, so the page was read via an Internet Archive capture (web.archive.org snapshot 2026-08-06, status 200). Supports: technology providers issue software updates to patch security weak spots and if they are not installed they cannot protect users; install updates as soon as possible; turn on automatic updates; the story of Veda shows out-of-date software and clicking an unexpected link enabling malicious activity, used for the human-error vulnerability example. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "owasp-top-ten-2025",
+      "title": "OWASP Top 10:2025",
+      "provider": "OWASP Foundation",
+      "url": "https://owasp.org/Top10/2025/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21 (the /Top10/2025/en/ URL redirects here). Supports: the OWASP Top 10 is a standard awareness document for developers and web application security representing a broad consensus about the most critical security risks to web applications; the 2025 risk category list includes A01 Broken Access Control, A02 Security Misconfiguration, A03 Software Supply Chain Failures, A07 Authentication Failures, and A06 Insecure Design, among others. Used only to anchor the conceptual vulnerability-type framing; no attack detail used. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "owasp-a02-security-misconfiguration",
+      "title": "OWASP Top 10:2025 — A02:2025 Security Misconfiguration",
+      "provider": "OWASP Foundation",
+      "url": "https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21. Supports: security misconfiguration is when a system, application, or cloud service is set up incorrectly from a security perspective, creating vulnerabilities; unnecessary features enabled or installed and default accounts and passwords left enabled and unchanged are named weaknesses; a repeatable configuration hardening process reduces risk. Only the descriptive (vulnerability-type) content was used; the example attack scenarios section was not used. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "owasp-a03-software-supply-chain",
+      "title": "OWASP Top 10:2025 — A03:2025 Software Supply Chain Failures",
+      "provider": "OWASP Foundation",
+      "url": "https://owasp.org/Top10/2025/A03_2025-Software_Supply_Chain_Failures/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21. Supports: supply-chain failures are breakdowns or compromises in building, distributing, or updating software, often caused by vulnerabilities in third-party code, tools, or dependencies; an organization is likely vulnerable if its software is vulnerable, unsupported, or out of date, or if it does not scan for vulnerabilities regularly or subscribe to security bulletins. Used for the unpatched/outdated software vulnerability type and the patching practice. Only descriptive content used. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "owasp-a06-insecure-design",
+      "title": "OWASP Top 10:2025 — A06:2025 Insecure Design",
+      "provider": "OWASP Foundation",
+      "url": "https://owasp.org/Top10/2025/A06_2025-Insecure_Design/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21. Supports: insecure design is a broad category of weaknesses expressed as missing or ineffective control design; there is a difference between insecure design and insecure implementation — a secure design can still have implementation defects, but an insecure design cannot be fixed by a perfect implementation because the needed controls were never created; secure design involves requirements gathering, resource management, and a secure development lifecycle. Used for the insecure-code vulnerability type and the design-securely practice. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "owasp-a07-authentication-failures",
+      "title": "OWASP Top 10:2025 — A07:2025 Authentication Failures",
+      "provider": "OWASP Foundation",
+      "url": "https://owasp.org/Top10/2025/A07_2025-Authentication_Failures/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21. Supports: authentication failures are present when a system can be tricked into recognizing an invalid or incorrect user as legitimate; named weaknesses include permitting default, weak, or well-known passwords and automated attacks using breached lists of valid usernames and passwords. Used only for the weak-or-stolen-credentials vulnerability type at the conceptual level; the page's attack-scenario mechanics were not used (defensive framing). Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "microsoft-bug-bounty-programs",
+      "title": "Microsoft Bug Bounty Programs (MSRC)",
+      "provider": "Microsoft Security Response Center",
+      "url": "https://www.microsoft.com/en-us/msrc/bounty",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21. Supports: Microsoft's bounty program partners with researchers to strengthen products by identifying and reporting security vulnerabilities that could impact customers, and rewards findings under coordinated vulnerability disclosure. Used as one concrete, verified example that bug bounty programs pay researchers who report weaknesses. Facts synthesized; no wording reproduced."
+    }
+  ]
+}

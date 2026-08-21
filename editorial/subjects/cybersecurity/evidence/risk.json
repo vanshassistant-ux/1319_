@@ -1,0 +1,197 @@
+{
+  "topicId": "cybersecurity:foundations:risk",
+  "subjectId": "cybersecurity",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "Risk as the heart of security decisions: what to protect first, where to spend, what to live with",
+      "The working definition of risk (NIST framing): the combination of how likely a harmful event is and how bad its impact would be",
+      "The classic shorthand risk = likelihood × impact, stated as intuition, not as math to compute",
+      "The risk triangle: threats + vulnerabilities + value at stake → risk (threats and vulnerabilities referenced only, details owned by sibling topics)",
+      "Risk assessment as the general process: identify what matters, what could hurt it, how likely, how bad; then prioritize (named)",
+      "Treating risk: the four classic responses — reduce, transfer, avoid, accept (one line each, anchored to NISTIR 8286's four response types)",
+      "Risk appetite: different organizations accept different levels of risk; set by leadership, it guides response choice",
+      "Why risk thinking matters: it turns fear into priorities (OWASP's save-time-and-end-arguments framing)"
+    ],
+    "supporting": [
+      "Risk assessments inform decision makers and support risk responses; the assessment itself fixes nothing",
+      "An assessment's usefulness is bounded in time; reassessment is expected as systems and threats change",
+      "Residual risk remains after responses are applied and is monitored",
+      "Risk exposure is estimated from likelihood and potential impact and used to prioritize",
+      "Attempting to avoid all cybersecurity risk can stifle the value an organization produces"
+    ],
+    "outOfScope": [
+      "Threats and threat actors in detail (threats owns it; referenced only as an ingredient)",
+      "Vulnerabilities and their types in detail (vulnerabilities owns it; referenced only as an ingredient)",
+      "Attack surface (attack-surface owns it)",
+      "The NIST Cybersecurity Framework's functions and implementation (nist-cybersecurity-framework owns it)",
+      "Quantitative risk math, scoring scales, and risk-register mechanics (literacy level keeps the formula as intuition only)",
+      "Risk management frameworks and enterprise risk management programs in detail"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Risk, in the working definition used across the security field (framed by NIST), is a measure of the extent to which an entity is threatened, typically a function of the adverse impact if a harmful event occurs and the likelihood of that event occurring.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nist-sp-800-30r1"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The classic shorthand 'risk equals likelihood times impact' is a way of keeping both questions in view, not a formula to compute: OWASP presents it as the standard risk model and NIST describes risk as a function of likelihood and impact.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "owasp-risk-rating-methodology",
+        "nist-sp-800-30r1"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Risk forms from three ingredients — a threat, a vulnerability, and something of value at stake — and NIST's risk guidance treats threats, vulnerabilities, impact, and likelihood as the factors that determine risk.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nist-sp-800-30r1"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Risk assessment is the process of identifying, estimating, and prioritizing risks; its purpose is to inform decision makers and support risk responses rather than to fix problems itself.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nist-sp-800-30r1"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Organizations respond to known risks with four classic actions — reduce (mitigate), transfer, avoid, and accept — which NISTIR 8286 lists as the four response types for negative cybersecurity risks.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nist-ir-8286"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Risk appetite is the broad-based amount of risk an organization is willing to accept in pursuit of its mission; it is set by leadership, differs across organizations, and guides which responses fit.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nist-ir-8286"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Risk exposure is estimated from likelihood and potential impact, and risks are prioritized based on that exposure.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nist-ir-8286"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "An organization that tries to avoid all cybersecurity risk may stifle the very work it exists to do; accepting some risk is normal and deliberate rather than a failure.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "nist-ir-8286"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A risk assessment is a snapshot: its validity and usefulness are bounded in time because systems, threats, and environments change.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nist-sp-800-30r1"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Risk thinking turns diffuse concern into a ranked priority list: rating risks saves time and eliminates arguing about priorities, so an organization is not distracted by minor risks while more serious ones go unaddressed.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "owasp-risk-rating-methodology"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "How many risk response options exist and what they are called.",
+      "positions": [
+        "NISTIR 8286 names four response types for negative cybersecurity risks: accept, transfer, mitigate, and avoid (Table 3).",
+        "Some other frameworks add a fifth option ('share') or use different labels (e.g., 'reduce' or 'control' instead of 'mitigate')."
+      ],
+      "resolution": "The lesson uses the four classic responses named in the assignment (reduce, transfer, avoid, accept), anchored to NISTIR 8286, and describes transfer as sharing part of the consequences with another party (e.g., insurance), which covers the 'share' idea without adding a fifth category."
+    },
+    {
+      "issue": "Whether the likelihood-times-impact formula is a real calculation.",
+      "positions": [
+        "OWASP presents Risk = Likelihood * Impact as the standard risk model with scored factors combined to determine severity.",
+        "NIST describes risk as 'typically a function' of likelihood and impact and notes assessments may be quantitative, qualitative, or semi-qualitative."
+      ],
+      "resolution": "The lesson states the formula only as intuition — a shorthand for keeping both questions in view — and never presents it as math to compute, consistent with the literacy level of the course."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's boilerplate definition ('Risk is a foundational concept in Cybersecurity') was generic and contained no verifiable content; discarded.",
+    "The draft's toolbox-drawer framing of risk ('a label on a toolbox drawer') was unsupported and replaced with the street-crossing analogy.",
+    "The draft's vocabulary entries ('context', 'evidence', 'application') did not describe risk concepts and were replaced with topic-specific terms.",
+    "The draft's two college-version subsections were generic reasoning advice rather than risk content; rebuilt from sources.",
+    "The draft's learning objectives and three quick-check questions were template phrasing about 'understanding Risk' and were replaced with topic-specific items."
+  ],
+  "correctionsNeeded": [
+    "Replaced all generic draft boilerplate with sourced, topic-specific content.",
+    "Added the NIST-framed working definition of risk (SP 800-30 Rev. 1, section 2.3) in original prose.",
+    "Added the likelihood-times-impact shorthand as intuition only (OWASP standard risk model; NIST's function-of-likelihood-and-impact framing).",
+    "Added the risk triangle (threat + vulnerability + value at stake) with threats and vulnerabilities referenced as sibling topics.",
+    "Added the named risk assessment process (identify, estimate, prioritize; inform decision makers) from NIST SP 800-30.",
+    "Added the four classic risk responses (reduce, transfer, avoid, accept) anchored to NISTIR 8286 Table 3.",
+    "Added the risk appetite concept (NISTIR 8286 / OMB Circular A-123 framing) and the 'avoiding all risk stifles value' caution.",
+    "Added the practical payoff of risk thinking (OWASP's save-time-and-eliminate-arguing framing).",
+    "Rebuilt the question bank to exactly five four-option items with answer keys spread B, C, A, D, B (one each of A, C, D; two B)."
+  ],
+  "rightsIssues": [
+    "All three sources used as REFERENCE_ONLY: no source prose reproduced; all lesson prose and examples are original. NIST SP 800-30 Rev. 1 and NISTIR 8286 are U.S. government works (public domain in the United States); the OWASP community page carries no explicit reuse license, so facts were synthesized and wording was not adapted."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-sp-800-30r1",
+      "title": "SP 800-30 Rev. 1, Guide for Conducting Risk Assessments",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://csrc.nist.gov/pubs/sp/800/30/r1/final",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. Government work; not subject to copyright in the United States",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Canonical CSRC publication page registered (DOI 10.6028/NIST.SP.800-30r1); read the publication page and the official PDF text layer (nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf) on 2026-08-21. Supports: the risk definition — risk as a measure of the extent to which an entity is threatened, typically a function of (i) adverse impacts if the circumstance or event occurs and (ii) likelihood of occurrence; risk assessment as the process of identifying, estimating, and prioritizing risks; the purpose of risk assessments as informing decision makers and supporting risk responses by identifying threats, vulnerabilities, impact, and likelihood; the four-component risk management process (frame, assess, respond, monitor) with responses chosen consistent with organizational risk tolerance; and the statement that the validity and usefulness of any risk assessment is bounded in time. Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "nist-ir-8286",
+      "title": "NISTIR 8286, Integrating Cybersecurity and Enterprise Risk Management (ERM)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://csrc.nist.gov/pubs/ir/8286/final",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. Government work; not subject to copyright in the United States",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Canonical CSRC publication page registered (DOI 10.6028/NIST.IR.8286); read the official PDF text layer (nvlpubs.nist.gov/nistpubs/ir/2020/NIST.IR.8286.pdf) on 2026-08-21. Supports: risk appetite as the broad-based amount of risk an organization is willing to accept in pursuit of its mission/vision (OMB Circular A-123 framing); the four response types for negative cybersecurity risks — accept, transfer, mitigate, and avoid (Table 3) — with descriptions; risk exposure calculated from likelihood and potential impact and used to prioritize risks; the ERM process of identifying, analyzing, estimating, responding to, and monitoring risk; and the caution that an enterprise that seeks to avoid all cybersecurity risk may stifle the value it produces. Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "owasp-risk-rating-methodology",
+      "title": "OWASP Risk Rating Methodology",
+      "provider": "OWASP Foundation",
+      "url": "https://owasp.org/www-community/OWASP_Risk_Rating_Methodology",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl with a browser user-agent on 2026-08-21. Supports: the standard risk model 'Risk = Likelihood * Impact'; rating risks so an organization can make informed decisions about what to do about them; the claim that a system for rating risks saves time and eliminates arguing about priorities, keeping the business from being distracted by minor risks while more serious ones go unaddressed; and the observation that a vulnerability critical to one organization may not be very important to another, so models are customized per organization. Community-maintained page; used only for these framing claims. Facts synthesized into original prose; no wording reproduced."
+    }
+  ]
+}
