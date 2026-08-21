@@ -1,0 +1,203 @@
+{
+  "topicId": "cybersecurity:foundations:trojans",
+  "subjectId": "cybersecurity",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "Definition of a trojan as disguised malware (NIST working definition, attributed)",
+      "Origin of the name: the wooden horse of Greek mythology",
+      "Delivery routes: bundled with downloads, fake installers, attachments (conceptual only, no how-to)",
+      "Payload variety: backdoor access, data theft, delivery of other malware such as ransomware",
+      "Trust bypass as the core danger, with the original fake video-player installer example",
+      "General signs of infection: unexpected programs, changed behavior",
+      "Defense: download from official sources, check what you install, keep software updated"
+    ],
+    "supporting": [
+      "Relationship to the malware family (sibling topics referenced only)",
+      "Why trojans depend on user action rather than self-spreading",
+      "Distinction from viruses and worms"
+    ],
+    "outOfScope": [
+      "In-depth malware taxonomy (malware topic owns it)",
+      "Viruses and worms (own topics)",
+      "Ransomware mechanics (own topic)",
+      "Phishing and social-engineering techniques (own topics)",
+      "Attack how-tos, exploit detail, or offensive techniques"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A trojan horse is malware that appears to have a useful function while carrying a hidden, potentially malicious function; it is a disguise rather than a self-spreading program.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nist-csrc-glossary-trojan-horse",
+        "ms-security-101-what-is-malware"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The name 'trojan horse' comes from the wooden horse of the Trojan War in Greek mythology — a gift that looked harmless but carried hidden soldiers who opened the city from inside.",
+      "claimType": "HISTORICAL",
+      "sourceIds": [
+        "kaspersky-trojans"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Trojans reach a device only with the user's help: they arrive bundled with downloads, inside fake installers, or hidden in email attachments, and take effect when the user runs the disguised program.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "kaspersky-trojans",
+        "nist-sp-800-83r1"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A trojan's payload varies: common ones include a backdoor giving an attacker remote access, theft of data such as passwords and browsing history, and delivery of further malware (including ransomware).",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ms-learn-explain-malware",
+        "ms-security-101-what-is-malware",
+        "nist-sp-800-83r1",
+        "kaspersky-trojans"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The core danger of a trojan is that it bypasses the user's trust: the user installs the disguised program willingly, and the hidden function can exploit the user's own legitimate permissions.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "nist-csrc-glossary-trojan-horse",
+        "ms-security-101-what-is-malware"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Signs of a trojan infection are general rather than specific: unexpected programs appearing, changed settings such as a new browser home page, slower performance, and unexpected pop-ups are clues, not proof.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ms-security-101-what-is-malware"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Defense against trojans relies on ordinary habits: download only from official sources, check what an installer adds, think before opening attachments, and keep software updated — installing updates as soon as they are available.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "kaspersky-trojans",
+        "cisa-secure-our-world-update-software",
+        "nist-sp-800-83r1"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Some vendor pages call trojans 'Trojan horse viruses', which can blur the line between trojans and viruses.",
+      "positions": [
+        "Kaspersky's page title uses the phrase 'Trojan Horse Virus'",
+        "NIST SP 800-83 describes trojan horses as self-contained and nonreplicating, and NIST's taxonomy lists viruses, worms, and trojan horses as distinct types of malicious code"
+      ],
+      "resolution": "The lesson follows NIST: a trojan does not replicate and is not a virus; the 'virus' in the vendor title is a colloquial misnomer, and the lesson says so explicitly in Common Mistakes."
+    },
+    {
+      "issue": "Whether trojans always require user action to arrive.",
+      "positions": [
+        "Kaspersky: trojans can only get onto a device with the help of the user",
+        "A few exotic surveillance trojans have reportedly been installed remotely with little or no user interaction"
+      ],
+      "resolution": "The lesson teaches the general model that NIST and Microsoft describe — trojans depend on the user installing or running the disguised program — which is the accurate picture for the awareness level; the rare remote-install exceptions are out of scope and would muddy the core teaching point."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained no substantive factual claims; statements such as 'Trojans is a foundational concept in Cybersecurity' and 'College courses use trojans as a building block' are generic boilerplate with no source support and were discarded."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire generic draft with source-verified content.",
+    "Corrected the draft's circular vocabulary entry ('Trojans — A foundational Cybersecurity concept covered in this lesson') with non-circular, source-grounded definitions.",
+    "Replaced the draft's boilerplate In 30 Seconds, Why This Matters, and objectives with content grounded in the verified sources."
+  ],
+  "rightsIssues": [
+    "All sources used as REFERENCE_ONLY; the NIST working definition is quoted briefly with attribution (U.S. government work); no vendor wording reproduced; all examples are original."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-sp-800-83r1",
+      "title": "NIST Special Publication 800-83 Rev. 1: Guide to Malware Incident Prevention and Handling for Desktops and Laptops",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-83r1.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read the PDF directly from nvlpubs.nist.gov on 2026-08-21. Supports: the working definition of malware as a program covertly inserted with intent to destroy data or compromise confidentiality, integrity, or availability; malware as the most common external threat to most hosts; infection routes (email attachments, malicious websites, drive-by download/web-based malware, removable media); prevention (patch management and vulnerability mitigation, antivirus software as the most common technical control, user awareness including not opening suspicious attachments even from known senders, least privilege); and the honest framing that incidents will still occur and technical controls cannot prevent all incidents. The document itself states it is not subject to copyright in the United States; used as REFERENCE_ONLY."
+    },
+    {
+      "id": "ms-learn-explain-malware",
+      "title": "Microsoft Learn: Explain malware (Explore malware and threat protection module)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/training/modules/explore-malware-threat-protection/2-explain-malware",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Supports the plain-language definition (malicious software attackers design to harm computer systems, including damage, remote access, and collecting/transmitting sensitive information) and the family one-liners: viruses replicate by inserting code into files; worms replicate without direct intervention and spread across networks without user action; trojan horses provide remote access; ransomware encrypts data and demands payment; spyware tracks use without consent."
+    },
+    {
+      "id": "ms-security-101-what-is-malware",
+      "title": "Microsoft Security 101: What Is Malware? Definition and Types",
+      "provider": "Microsoft (Microsoft Security)",
+      "url": "https://www.microsoft.com/en-us/security/business/security-101/what-is-malware",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21 (page updated January 13, 2025). Supports: malware definition (software designed to disrupt, damage, or gain unauthorized access); infection routes (infected email attachments, malicious websites, unsafe downloads, infected USB drives, exploits hidden in ads on legitimate websites); signs of infection (slow performance, frequent crashes, unexpected pop-ups or programs, browser redirects, changed settings, unexpected account activity); prevention (keep software updated, antivirus solutions, backups); and the observation that attackers constantly evolve their methods."
+    },
+    {
+      "id": "cisa-secure-our-world-update-software",
+      "title": "Update Software (Secure Our World)",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/secure-our-world/update-software",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Registered id reused from the phase-1 source registry with an identical URL. cisa.gov blocked direct fetching on 2026-08-21, so the page was read via an Internet Archive capture (web.archive.org snapshot 2026-08-06, status 200). Supports: technology providers issue software updates to patch security weak spots and if they are not installed they cannot protect users; install updates as soon as possible; turn on automatic updates; the story of Veda shows out-of-date software and clicking an unexpected link enabling malicious activity, used for the human-error vulnerability example. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "nist-csrc-glossary-trojan-horse",
+      "title": "NIST Computer Security Resource Center Glossary — trojan horse",
+      "provider": "National Institute of Standards and Technology (NIST), Computer Security Resource Center",
+      "url": "https://csrc.nist.gov/glossary/term/trojan_horse",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. Provides the attributed working definition: a trojan horse is a computer program that appears to have a useful function but also has a hidden and potentially malicious function that evades security mechanisms (CNSSI 4009-2015); a second definition (NIST SP 800-28) calls it a useful or seemingly useful program that contains hidden code of a malicious nature that executes when invoked. The lesson quotes the first definition briefly with attribution; facts synthesized into original prose."
+    },
+    {
+      "id": "kaspersky-trojans",
+      "title": "What is a Trojan Horse Virus? Types and How to Remove it (Kaspersky Resource Center)",
+      "provider": "Kaspersky",
+      "url": "https://www.kaspersky.com/resource-center/threats/trojans",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. Reputable vendor explainer used as a secondary source. Supports: the myth of the wooden horse of Troy as the origin of the name; trojans reach a device only with the user's help (opening attachments, downloading from unsafe sources); payload variety (banking trojans, backdoor trojans, dropper/downloader trojans that deliver further malware such as ransomware); defense checklist (obtain programs only from secure sources, think before opening attachments, keep operating system and programs updated). Facts synthesized; no wording reproduced."
+    }
+  ]
+}

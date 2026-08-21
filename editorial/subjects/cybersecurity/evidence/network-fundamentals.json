@@ -1,0 +1,199 @@
+{
+  "topicId": "cybersecurity:foundations:network-fundamentals",
+  "subjectId": "cybersecurity",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "what a network is: devices connected so they can share data (the working definition)",
+      "the pieces, named simply: devices, connections, IP addresses (compared to mailing addresses), and the internet as the network of networks",
+      "how data travels: packets — data broken into chunks that travel over wires, cables, and radio waves and are reassembled at the destination",
+      "the client-server shape: clients ask, servers provide, with a browser requesting a page as the example",
+      "what security means on a network: data crossing a network can be observed or interfered with (the core concern; encryption is a sibling topic, referenced only)",
+      "the perimeter idea: the boundary between a trusted inside and an untrusted outside (firewalls and network segmentation are sibling topics, referenced only)"
+    ],
+    "supporting": [
+      "routers pass data along between networks by reading packet addresses",
+      "packet headers carry source and destination addresses; the payload carries the data",
+      "packet switching: different packets of one message may take different routes and arrive out of order",
+      "CISA's framing of cybersecurity as protecting networks, devices, and data from unauthorized access"
+    ],
+    "outOfScope": [
+      "firewalls (sibling topic)",
+      "network segmentation (sibling topic)",
+      "Wi-Fi security (sibling topic)",
+      "encryption and HTTPS/TLS (sibling topics)",
+      "any protocol beyond IP (TCP, DNS, HTTP, and others are not named, per the subject's literacy level)",
+      "attack techniques, exploit details, and offensive tooling (defensive framing only)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A network is a group of devices connected so they can share data with one another; NIST defines a network as an information system implemented with a collection of interconnected components.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-csrc-glossary-network", "cloudflare-what-is-a-packet"],
+      "status": "supported"
+    },
+    {
+      "claim": "The internet is a network of networks — many separate networks around the world, all interconnected.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cloudflare-what-is-a-packet", "mdn-how-internet-works"],
+      "status": "supported"
+    },
+    {
+      "claim": "Data crossing a network travels in packets: it is broken into chunks at the source, the chunks travel over wires, cables, and radio waves, and the destination reassembles them into the original data.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cloudflare-what-is-a-packet"],
+      "status": "supported"
+    },
+    {
+      "claim": "Every device on a network has an address — an IP address, which Cloudflare compares to a computer's mailing address — and packets carry source and destination addresses so routers can forward them to the right device.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cloudflare-what-is-a-packet"],
+      "status": "supported"
+    },
+    {
+      "claim": "In the common client-server arrangement, a client is a device or program that asks for something over the network and a server is a computer on the network that manages resources and answers requests; a browser requesting a page from a web server is the everyday example.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-csrc-glossary-client", "nist-csrc-glossary-server", "cloudflare-what-is-a-packet"],
+      "status": "supported"
+    },
+    {
+      "claim": "Data crossing a network can be observed or interfered with: NIST assumes networks are open and subject to passive attacks (such as eavesdropping) and active attacks (such as impersonation) at any point between the parties, and CISA frames cybersecurity as protecting networks, devices, and data from unauthorized access.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-csrc-glossary-network", "cisa-what-is-cybersecurity"],
+      "status": "supported"
+    },
+    {
+      "claim": "Organizations treat the boundary between their internal network and the outside as a line to monitor and control: NIST's boundary protection control (SC-7) requires monitoring and controlling communications at external managed interfaces and connecting to external networks only through managed interfaces with boundary protection devices.",
+      "claimType": "CURRENT",
+      "sourceIds": ["nist-sp-800-53r5"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Is an IP address a unique, permanent identifier for one device?",
+      "positions": [
+        "Popular explainers sometimes call an IP address 'unique' to a device.",
+        "In practice, addresses can be reassigned, reused, or shared — many home devices appear to the internet under one address provided by the router."
+      ],
+      "resolution": "The lesson follows Cloudflare's own framing: an IP address is like a mailing address — an address data uses to reach the right place, which a household can share and which can change. The lesson never claims permanent one-to-one uniqueness."
+    },
+    {
+      "issue": "Do all the pieces of one message follow the same path?",
+      "positions": [
+        "Intuition says a file travels like a single object along one route.",
+        "Packet switching: different packets of the same message can take different routes and arrive out of order, and the receiving device reassembles them."
+      ],
+      "resolution": "The lesson teaches the general idea — data is broken into chunks that travel and are reassembled — and notes that chunks may travel separately, consistent with Cloudflare's packet-switching description."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's boilerplate claim that Network Fundamentals 'is a foundational concept in Cybersecurity' and that 'a college-level explanation names the concept, describes its parts' — generic filler with no factual content; discarded.",
+    "The draft's vocabulary ('context', 'evidence', 'application') and its toolbox-drawer analogy, which have nothing to do with networks and were not retained."
+  ],
+  "correctionsNeeded": [
+    "Replaced the draft's boilerplate with a real definition of a network grounded in NIST's glossary and Cloudflare's packet explainer.",
+    "Added the security core the draft lacked: data in transit can be observed or interfered with (NIST SP 800-63-4 via the CSRC glossary) and the perimeter idea (NIST SP 800-53 Rev. 5 SC-7).",
+    "Scoped the lesson to IP only per the subject's literacy level; the draft contained no factual networking claims to preserve."
+  ],
+  "rightsIssues": [
+    "Cloudflare Learning pages block automated fetching; the packet explainer was read via an Internet Archive capture of the canonical URL (snapshot 2025-05-27). Cloudflare does not state a license on the page, so it is registered as REFERENCE_ONLY and no wording is reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "cloudflare-what-is-a-packet",
+      "title": "What is a packet? (Cloudflare Learning Center)",
+      "provider": "Cloudflare",
+      "url": "https://www.cloudflare.com/learning/network-layer/what-is-a-packet/",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "cloudflare.com blocks direct automated fetches; read via an Internet Archive capture of the canonical URL (snapshot 2025-05-27, HTTP 200) on 2026-08-21. Supports: a network is a group of two or more connected computers; the internet is a network of networks, multiple networks around the world all interconnected; an image does not move from a web server to a user's computer in one piece but is broken into packets, sent over wires, cables, and radio waves, and reassembled into the original photo; packets consist of a header (origin and destination IP addresses, 'an IP address is like a computer's mailing address') and a payload; routers forward packets; different packets of one message can take different routes and arrive out of order; packet switching lets billions of devices exchange data over shared equipment. The page names TCP in passing; the lesson names no protocol beyond IP, per the subject's literacy level. Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "nist-csrc-glossary-network",
+      "title": "NIST Computer Security Resource Center Glossary — network",
+      "provider": "National Institute of Standards and Technology",
+      "url": "https://csrc.nist.gov/glossary/term/network",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. Supports: the CNSSI 4009-2015 definition of a network as information system(s) implemented with a collection of interconnected components (components may include routers, hubs, cabling, and technical control devices); and NIST SP 800-63-4's assumption that unless otherwise stated, networks are open and subject to active attacks (e.g., impersonation, session hijacking) and passive attacks (e.g., eavesdropping) at any point between the parties. The SP 800-63-4 definition is the primary support for the lesson's core security concern: data crossing a network can be observed or interfered with."
+    },
+    {
+      "id": "nist-csrc-glossary-client",
+      "title": "NIST Computer Security Resource Center Glossary — client",
+      "provider": "National Institute of Standards and Technology",
+      "url": "https://csrc.nist.gov/glossary/term/client",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. Supports NIST SP 800-146's definition of a client as a machine or software application that accesses a cloud over a network connection, perhaps on behalf of a consumer — generalized in the lesson to a device or program that asks for something over a network. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "nist-csrc-glossary-server",
+      "title": "NIST Computer Security Resource Center Glossary — server",
+      "provider": "National Institute of Standards and Technology",
+      "url": "https://csrc.nist.gov/glossary/term/server",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. Supports NIST SP 800-175B Rev. 1 / SP 1800-15B's definition of a server as a computer or device on a network that manages network resources, with examples including file servers (store files) and database servers (process database queries). Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "nist-sp-800-53r5",
+      "title": "NIST SP 800-53 Rev. 5: Security and Privacy Controls for Information Systems and Organizations",
+      "provider": "National Institute of Standards and Technology",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work; not subject to copyright in the United States",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Existing registry id reused with an identical URL. Read the PDF text layer (downloaded from nvlpubs.nist.gov) on 2026-08-21, focused on control SC-7 Boundary Protection. Supports: monitoring and controlling communications at the external managed interfaces to the system and at key internal managed interfaces within the system; connecting to external networks or systems only through managed interfaces consisting of boundary protection devices; implementing subnetworks for publicly accessible components that are physically or logically separated from internal organizational networks; and limiting the number of external network connections to facilitate monitoring. Used as the primary support for the perimeter idea (trusted inside vs untrusted outside)."
+    },
+    {
+      "id": "mdn-how-internet-works",
+      "title": "MDN Web Docs — How does the Internet work?",
+      "provider": "Mozilla / MDN Web Docs",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/How_does_the_Internet_work",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-20",
+      "notes": "Existing registry id reused with an identical URL (registered by a phase-2 worker on 2026-08-20). Supports at a high level: the internet as infrastructure versus the web as a service built on it, network routing between networks, and the role of domain names. Used as a supporting source for the internet-as-network-of-networks and routing claims; no prose reproduced."
+    },
+    {
+      "id": "cisa-what-is-cybersecurity",
+      "title": "What is Cybersecurity? (CISA, released February 1, 2021)",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/news-events/news/what-cybersecurity",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Existing registry id reused with an identical URL. Supports the definition of cybersecurity as protecting networks, devices, and data from unauthorized access or criminal use, and the framing of confidentiality, integrity, and availability of information. Used for the claim that cybersecurity is, at its core, about protecting networks, devices, and data. Facts synthesized; no wording reproduced."
+    }
+  ]
+}

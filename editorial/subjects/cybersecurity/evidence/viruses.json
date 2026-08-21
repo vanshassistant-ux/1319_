@@ -1,0 +1,160 @@
+{
+  "topicId": "cybersecurity:foundations:viruses",
+  "subjectId": "cybersecurity",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "what a virus is: malware that attaches itself to a file or program and spreads when the host runs",
+      "how infection happens conceptually: opening an infected attachment or running an infected program (no how-to, defensive framing only)",
+      "the virus/worm distinction: a virus needs a host and usually a user action; a worm spreads on its own across networks",
+      "signs of infection: slowness, strange messages, unexpected file changes and programs",
+      "defense: don't open unexpected attachments, keep software updated, use security software",
+      "honest framing: viruses are an old but not dead threat"
+    ],
+    "supporting": [
+      "malware as the umbrella family name (referenced only; malware has its own sibling topic)",
+      "infection routes named at the conceptual level: infected email attachments, malicious websites, removable media",
+      "antivirus software as the most commonly used malware-control measure"
+    ],
+    "outOfScope": [
+      "malware as a category (own sibling topic, referenced only)",
+      "trojan horses (own sibling topic, referenced only)",
+      "ransomware (own sibling topic, referenced only)",
+      "worm behavior in depth (named only for the virus/worm distinction)",
+      "any attack technique, exploit detail, or malware code"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A virus is a type of malware that attaches itself to a file or program and spreads to other files when the host program is run.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ms-learn-explain-malware", "nist-csrc-glossary-malware"],
+      "status": "supported"
+    },
+    {
+      "claim": "NIST describes malicious code generally as a program covertly inserted with the intent to destroy data or compromise the confidentiality, integrity, or availability of the victim's system; a virus is one form such code takes.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-sp-800-83r1", "nist-csrc-glossary-malware"],
+      "status": "supported"
+    },
+    {
+      "claim": "Viruses reach devices through ordinary routes — infected email attachments, malicious websites, and removable media — and infection begins when a user opens the attachment or runs the infected program.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-sp-800-83r1"],
+      "status": "supported"
+    },
+    {
+      "claim": "The key distinction between a virus and a worm: a virus needs a host file or program and usually a user action such as opening a file, while a worm replicates and spreads on its own across networks without requiring the user to open anything.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ms-learn-explain-malware", "nist-csrc-glossary-malware"],
+      "status": "supported"
+    },
+    {
+      "claim": "Malware is the umbrella term; viruses, worms, trojan horses, and ransomware are distinct families of malicious code, so 'virus' and 'malware' are not synonyms.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-csrc-glossary-malware", "ms-learn-explain-malware"],
+      "status": "supported"
+    },
+    {
+      "claim": "Common signs of a possible infection include noticeably slower performance, unexpected pop-ups, programs appearing that the user did not start, and other behavior changes such as altered settings.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ms-learn-explain-malware"],
+      "status": "supported"
+    },
+    {
+      "claim": "Core defenses against viruses: do not open unexpected or suspicious attachments (even from known senders, confirm through another channel), keep software updated by installing updates as soon as they are available and enabling automatic updates, and run security software such as antivirus.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-sp-800-83r1", "cisa-secure-our-world-update-software"],
+      "status": "supported"
+    },
+    {
+      "claim": "Honest framing: even with updates, security software, and careful habits, incidents will still occur — previously unknown threats and human error get through — so viruses remain a real threat despite being an old one.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["nist-sp-800-83r1", "cisa-secure-our-world-update-software"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "The word 'virus' is often used loosely to mean any malware, which blurs the family distinctions.",
+      "positions": [
+        "Colloquial usage: any infection is called 'a virus.'",
+        "Technical usage (NIST glossary, Microsoft Learn): a virus is specifically code that attaches to files or programs and spreads when the host runs; worms, trojans, and ransomware are separate families."
+      ],
+      "resolution": "The lesson teaches the precise definition, names the sibling families once each, and notes the colloquial habit; malware (the umbrella term) is referenced as a sibling topic only."
+    },
+    {
+      "issue": "How much user action a virus needs to spread.",
+      "positions": [
+        "Microsoft Learn: a virus needs the host program to run — the user opening the file or program is what triggers it.",
+        "NIST SP 800-83: malware is delivered through attachments, websites, and media, and some routes (malicious websites) can deliver it with little visible action; incidents still occur despite precautions."
+      ],
+      "resolution": "The lesson says a virus needs a host and usually a user action such as running the host, while keeping the worm's 'no user action required' distinction clean; web-based delivery is named only as a route, not as a how-to."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The machine-generated draft's generic boilerplate (no sourced statistics, no claim that 'virus' equals all malware) was not carried into the lesson.",
+    "Any claim that antivirus software alone guarantees protection was cut: NIST states that incidents will still occur and technical controls cannot prevent all incidents."
+  ],
+  "correctionsNeeded": [
+    "Kept the virus/worm distinction precise per Microsoft Learn instead of any loose 'spreads like a virus' phrasing.",
+    "Presented malware, trojans, and ransomware as sibling topics referenced by name only, per scope.",
+    "Anchored the honest-framing claim to NIST SP 800-83's 'incidents will still occur' and CISA's update-software guidance.",
+    "All examples (attachment, Leo's machine) are original; no real-world victim or malware family is named."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "nist-sp-800-83r1",
+      "title": "NIST Special Publication 800-83 Rev. 1: Guide to Malware Incident Prevention and Handling for Desktops and Laptops",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-83r1.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read the PDF directly from nvlpubs.nist.gov on 2026-08-21 (copy also at /tmp/viruses_work/nist80083.pdf). Supports: the working definition of malware as a program covertly inserted with the intent to destroy data or compromise confidentiality, integrity, or availability; infection routes (email attachments, malicious websites, web-based malware, removable media); prevention (patch management and vulnerability mitigation, antivirus software as the most commonly used technical control, user awareness including not opening suspicious attachments even from known senders); and the honest framing that incidents will still occur and technical controls cannot prevent all incidents. The document states it is not subject to copyright in the United States; used as REFERENCE_ONLY, facts synthesized into original prose."
+    },
+    {
+      "id": "nist-csrc-glossary-malware",
+      "title": "NIST Computer Security Resource Center Glossary — malware",
+      "provider": "National Institute of Standards and Technology (NIST), Computer Security Resource Center",
+      "url": "https://csrc.nist.gov/glossary/term/malware",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Provides the attributed working definition (software or firmware intended to perform an unauthorized process with adverse impact on confidentiality, integrity, or availability) and notes that a virus, worm, trojan horse, or other code-based entity infects a host, with spyware and some forms of adware also examples of malicious code. Used to support the umbrella/family distinction."
+    },
+    {
+      "id": "ms-learn-explain-malware",
+      "title": "Microsoft Learn: Explain malware (Explore malware and threat protection module)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/training/modules/explore-malware-threat-protection/2-explain-malware",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Supports the plain-language family one-liners: viruses attach to files and programs and spread when the host runs; worms replicate without direct intervention and spread across networks without requiring the user to open an attachment or file; trojans disguise; ransomware encrypts for payment. Also supports the common signs of infection used in the lesson (slower performance, unexpected pop-ups, programs the user did not start)."
+    },
+    {
+      "id": "cisa-secure-our-world-update-software",
+      "title": "Update Software (Secure Our World)",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/secure-our-world/update-software",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Registered id reused from the phase-1 source registry with an identical URL. cisa.gov blocked direct fetching on 2026-08-21, so the page was read via an Internet Archive capture (web.archive.org snapshot 2026-08-06, status 200). Supports: technology providers issue software updates to patch security weak spots, and if updates are not installed the software cannot protect users; install updates as soon as possible; turn on automatic updates. Facts synthesized; no wording reproduced."
+    }
+  ]
+}

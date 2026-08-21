@@ -1,0 +1,170 @@
+{
+  "topicId": "cybersecurity:foundations:encryption",
+  "subjectId": "cybersecurity",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "what encryption is: turning readable data (plaintext) into unreadable form (ciphertext) using a key; decryption reverses it",
+      "encryption vs hashing: encryption is reversible with a key, hashing is one-way (hashing is a sibling topic, referenced only)",
+      "the key idea: a key locks and unlocks the data; the same data with different keys gives different ciphertext",
+      "symmetric vs asymmetric: one shared key vs a public/private key pair (digital-certificates is a sibling topic, referenced only)",
+      "encryption at rest vs in transit: stored data vs data moving across networks (https-tls-basics is a sibling topic, referenced only)",
+      "why encryption matters: the last line of defense — stolen but encrypted data stays unreadable",
+      "the honest framing: encryption protects data, not systems; keys must be protected"
+    ],
+    "supporting": [
+      "plaintext/ciphertext terminology",
+      "decryption as the reversal process",
+      "the key as the parameter that determines how the transformation operates",
+      "symmetric algorithms are generally faster; asymmetric systems need fewer initial keys",
+      "hash functions support integrity checking, which encryption alone does not provide"
+    ],
+    "outOfScope": [
+      "hashing algorithms and their properties (own topic: cybersecurity:foundations:hashing)",
+      "digital certificates and public-key infrastructure mechanics (own topic: cybersecurity:foundations:digital-certificates)",
+      "HTTPS/TLS protocol mechanics (own topic: cybersecurity:foundations:https-tls-basics)",
+      "Wi-Fi encryption standards (own topic: cybersecurity:foundations:wi-fi-security)",
+      "attack techniques, exploit details, or how to break encryption (defensive framing only)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Encryption is the process of changing readable data (plaintext) into an unreadable form (ciphertext) using a cryptographic algorithm and key, for the purpose of security or privacy; the transformation conceals the data's original meaning to prevent it from being known or used.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-csrc-glossary-encryption", "nist-sp800-175br1"],
+      "status": "supported"
+    },
+    {
+      "claim": "Decryption is the process of changing ciphertext back into plaintext using a cryptographic algorithm and key, so encryption is reversible for anyone holding the right key.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-csrc-glossary-decryption", "nist-sp800-175br1"],
+      "status": "supported"
+    },
+    {
+      "claim": "A cryptographic key is a parameter used with a cryptographic algorithm that determines its operation, so the key drives the transformation: the same data encrypted with different keys produces different ciphertext, and knowledge of the key lets the holder reverse the protection.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp800-175br1"],
+      "status": "supported"
+    },
+    {
+      "claim": "Symmetric-key (secret-key) algorithms use a single key both to apply and to remove cryptographic protection — the same key encrypts and decrypts — and the key must be kept secret if the data is to remain protected.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp800-175br1"],
+      "status": "supported"
+    },
+    {
+      "claim": "Asymmetric-key (public-key) algorithms use a pair of mathematically related keys — a public key that may be made public without reducing the security of the process and a private key that must remain secret; in encryption use, the public key encrypts and the private key decrypts.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp800-175br1"],
+      "status": "supported"
+    },
+    {
+      "claim": "A cryptographic hash function is a one-way function that is extremely difficult to invert — it is not practical to reverse the process from the hash value back to the input — which is the critical distinction from encryption: encryption is reversible with a key, hashing is not.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp800-175br1"],
+      "status": "supported"
+    },
+    {
+      "claim": "Encryption protects digitized information in two contexts: during transmission (data in transit, moving across networks) and while in storage (data at rest).",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-sp800-175br1", "mslearn-encryption-at-rest"],
+      "status": "supported"
+    },
+    {
+      "claim": "Encryption at rest protects stored data: a symmetric encryption key encrypts data as it is written to storage, and the same key decrypts it as it is prepared for use; attacks against data at rest target the data itself, such as attempts to obtain a copy of the storage hardware or media.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mslearn-encryption-at-rest"],
+      "status": "supported"
+    },
+    {
+      "claim": "Because encryption conceals the data's meaning, data that is stolen while encrypted remains unreadable without the key — the 'last line of defense' benefit — but encryption does not by itself stop unauthorized access to the system, so keys themselves must be protected.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["nist-csrc-glossary-encryption", "mslearn-encryption-at-rest"],
+      "status": "supported"
+    },
+    {
+      "claim": "Symmetric-key algorithms are generally significantly faster than asymmetric-key algorithms, while asymmetric (public-key) cryptography requires fewer initial keys overall when many parties need to communicate.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp800-175br1"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Popular writing sometimes calls encryption 'unbreakable.' NIST sources frame security guarantees as computational infeasibility rather than absolute impossibility, and NIST documents note that advances in cryptanalysis and computing reduce protection over time.",
+      "positions": [
+        "Marketing-style claims that strong encryption is 'unhackable' or 'impossible to break'",
+        "NIST framing: breaking protection is computationally infeasible with current technology for approved algorithms, not logically impossible"
+      ],
+      "resolution": "The lesson avoids absolute claims and says strong modern encryption leaves stolen data unreadable in practice, without promising that no future breakthrough can weaken a given algorithm."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained no factual claims about encryption — only generic boilerplate ('Encryption is a foundational concept in Cybersecurity', 'Think of encryption as a label on a toolbox drawer') — and was discarded entirely."
+  ],
+  "correctionsNeeded": [
+    "Replaced the generic machine-generated draft with source-verified content built on NIST definitions.",
+    "Added the working definition of encryption (plaintext to ciphertext using an algorithm and key) attributed to NIST, and the decryption definition from the NIST CSRC glossary.",
+    "Framed hashing strictly as the one-way sibling process, not as a kind of encryption.",
+    "Presented symmetric/asymmetric and at-rest/in-transit as clean distinctions, deferring certificate, TLS, and Wi-Fi detail to the sibling topics that own them.",
+    "Added the honest framing that encryption protects data, not systems, and that keys must be protected."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "nist-csrc-glossary-encryption",
+      "title": "NIST Computer Security Resource Center Glossary: encryption",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://csrc.nist.gov/glossary/term/encryption",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl with a browser user-agent on 2026-08-21. The 'encryption' entry carries several definitions, including the RFC 4949-adapted definition (via NIST SP 800-82r3): 'Cryptographic transformation of data (called plaintext) into a form (called ciphertext) that conceals the data's original meaning to prevent it from being known or used. If the transformation is reversible, the corresponding reversal process is called decryption.' Also carries 'The cryptographic transformation of data to produce ciphertext' (CNSSI 4009-2015 from ISO 7498-2) and 'Any procedure used in cryptography to convert plain text into cipher text to prevent anyone but the intended recipient from reading that data' (SP 800-101 Rev. 1). Supports the working definition and the 'conceals meaning / last line of defense' framing. Reference only; no wording reproduced."
+    },
+    {
+      "id": "nist-csrc-glossary-decryption",
+      "title": "NIST Computer Security Resource Center Glossary: decryption",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://csrc.nist.gov/glossary/term/decryption",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl with a browser user-agent on 2026-08-21. The entry lists 'The process of changing ciphertext into plaintext using a cryptographic algorithm and key' (NIST SP 800-133 Rev. 2, NIST SP 800-175B Rev. 1, NIST SP 800-57 Part 1 Rev. 5, NIST SP 800-57 Part 2 Rev. 1) among its definitions. Supports the decryption definition and the reversibility of encryption. Reference only; no wording reproduced."
+    },
+    {
+      "id": "nist-sp800-175br1",
+      "title": "NIST SP 800-175B Rev. 1: Guideline for Using Cryptographic Standards in the Federal Government: Cryptographic Mechanisms",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-175Br1.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read the official PDF text layer (downloaded from nvlpubs.nist.gov) on 2026-08-21. Supports: scope covering protection of sensitive but unclassified digitized information 'during transmission and while in storage' (abstract); 'Encryption: The process of changing plaintext into ciphertext using a cryptographic algorithm for the purpose of security or privacy' (glossary); symmetric-key algorithms use 'a single key to both apply cryptographic protection and to remove or check the protection,' the key 'must be kept secret if the data is to remain protected,' with plaintext/ciphertext terminology; asymmetric-key algorithms 'use a pair of keys (i.e., a key pair): a public key and a private key that are mathematically related,' the public key 'may be made public without reducing the security of the process,' the private key 'must remain secret,' and for encryption 'the encryption is performed using the public key, and the decryption is performed using the private key'; 'A cryptographic hash function is a one-way function that is extremely difficult to invert. That is, it is not practical to reverse the process from the hash value back to the input'; 'Cryptographic key: A parameter used in conjunction with a cryptographic algorithm that determines its operation' so that an entity with knowledge of the key can reproduce the operation; symmetric-key algorithms are 'generally significantly faster than asymmetric-key algorithms' while asymmetric cryptography requires fewer initial keys. Facts synthesized into original lesson prose; no wording reproduced."
+    },
+    {
+      "id": "mslearn-encryption-at-rest",
+      "title": "Azure data encryption at rest (Microsoft Learn, Azure Security documentation)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-atrest",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl with a browser user-agent on 2026-08-21. Supports: 'Encryption at rest protects stored data'; 'Encryption is the secure encoding of data used to protect the confidentiality of data'; the at-rest design uses symmetric encryption — 'A symmetric encryption key encrypts data as it's written to storage. The same encryption key decrypts that data as it's prepared for use in memory'; and that attacks against data at rest include attempts to obtain a copy of the hardware or media. Used only for the general at-rest concept and the 'protects stored data' framing; no Azure-specific product claims appear in the lesson. License not stated on the page; treated as REFERENCE_ONLY, no wording reproduced."
+    }
+  ]
+}

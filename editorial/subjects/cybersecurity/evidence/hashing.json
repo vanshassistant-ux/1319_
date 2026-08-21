@@ -1,0 +1,179 @@
+{
+  "topicId": "cybersecurity:foundations:hashing",
+  "subjectId": "cybersecurity",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "What a hash is: a fixed-size value computed from data of any size (NIST-attributed working definition)",
+      "The three core properties at intuition level: same input always gives the same hash; different inputs give different hashes; a hash cannot be reversed",
+      "Hashing versus encryption: one-way versus reversible (the critical distinction; encryption is a sibling topic, referenced only)",
+      "Uses: checking file integrity (a changed file has a changed hash) and storing passwords (systems store hashes, not passwords)",
+      "The collision caveat: theoretically possible, practically infeasible with strong algorithms (honest framing)",
+      "General principle: hashes prove a file's fingerprint, not its author"
+    ],
+    "supporting": [
+      "Message digest terminology and the condensed-representation view of hashing",
+      "SHA-256 as a concrete example: 256-bit output, 64 hexadecimal characters",
+      "Why authenticity requires additional keyed mechanisms (MACs, digital signatures) beyond a bare hash"
+    ],
+    "outOfScope": [
+      "Encryption algorithms, key management, and reversible-cipher details (encryption topic)",
+      "Password-hashing best practices — salting, work factors, algorithm choice, guessing defenses (password-security topic)",
+      "Digital certificates and digital signatures (digital-certificates topic)",
+      "Any hash-based attack technique or step-by-step attack detail (defensive framing only)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A hash function maps data (a bit string) of arbitrary length to a fixed-length bit string; the result is the hash value or message digest.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-sp-800-107", "nist-csrc-glossary-hash-function"],
+      "status": "supported"
+    },
+    {
+      "claim": "Hashing is deterministic: the same input always produces the same hash, which is what allows digests generated earlier to be compared with freshly computed digests to detect change.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-fips-180-4"],
+      "status": "supported"
+    },
+    {
+      "claim": "Any change to a message will, with a very high probability, result in a different message digest (different inputs give different hashes).",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-fips-180-4"],
+      "status": "supported"
+    },
+    {
+      "claim": "Hash functions are one-way (preimage resistance): it is computationally infeasible to find an input that produces a given hash value — a hash cannot be reversed to recover the original data.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["nist-sp-800-107", "nist-csrc-glossary-hash-function"],
+      "status": "supported"
+    },
+    {
+      "claim": "Approved hash functions are collision-resistant: it is computationally infeasible to find two distinct inputs that map to the same output.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["nist-sp-800-107", "nist-csrc-glossary-hash-function"],
+      "status": "supported"
+    },
+    {
+      "claim": "A collision is an event in which two different messages have the same message digest; because outputs are fixed-size while inputs may be any length, collisions must exist in principle even though finding them is infeasible.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-sp-800-107"],
+      "status": "supported"
+    },
+    {
+      "claim": "SHA-256 produces a (full-length) hash value of 256 bits, and its estimated collision resistance is 128 bits.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["nist-sp-800-107"],
+      "status": "supported"
+    },
+    {
+      "claim": "Hashing is one-way while encryption is two-way (reversible); because a hash cannot be decrypted back to the original plaintext value, hashing is the most appropriate approach for password validation, and an attacker who obtains hashed passwords cannot use them directly to log in as the victim.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["owasp-password-storage-cheat-sheet"],
+      "status": "supported"
+    },
+    {
+      "claim": "Hash digests are used to detect whether messages have been changed since the digests were generated — the file-integrity use case.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-fips-180-4"],
+      "status": "supported"
+    },
+    {
+      "claim": "A bare hash establishes the integrity of content, not its source: identical content yields an identical hash whoever produces it, and establishing authenticity requires keyed mechanisms such as message authentication codes or digital signatures.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["nist-sp-800-107"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Are hashes truly impossible to reverse, given that 'cracked' password hashes appear in the news?",
+      "positions": [
+        "NIST: finding an input that maps to a given hash value is computationally infeasible (the one-way / preimage-resistance property).",
+        "Public reporting of recovered passwords suggests hashes can be reversed in practice."
+      ],
+      "resolution": "One-wayness means there is no efficient mathematical shortcut from a hash back to its input. Reported 'cracking' works by guessing likely inputs (dictionaries, breached password lists) and hashing each guess to compare — guessing is not reversing. The lesson states the one-way property exactly as NIST frames it and notes that defenses against guessing (salting, slow algorithms) belong to the password-security topic."
+    },
+    {
+      "issue": "Are collisions a real risk or a non-issue?",
+      "positions": [
+        "Because outputs are fixed-size while inputs are unlimited, collisions must exist across the full space of inputs.",
+        "NIST: finding two distinct inputs with the same hash is computationally infeasible for approved hash functions (collision resistance)."
+      ],
+      "resolution": "Both statements hold and the lesson keeps both: collisions are mathematically unavoidable in principle, yet for strong algorithms such as SHA-256 (estimated 128-bit collision resistance) finding one is computationally infeasible, so collisions are practically irrelevant in everyday integrity checking."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The machine-generated draft's boilerplate ('Hashing is a foundational concept in Cybersecurity'; 'College courses use hashing as a building block for later discussions') is generic filler with no evidence support and was discarded entirely."
+  ],
+  "correctionsNeeded": [
+    "Replaced the machine-generated in30Seconds and whyItMatters boilerplate with original, evidence-backed prose.",
+    "Added the NIST-attributed working definition of a hash function (fixed-size value computed from data, NIST: maps arbitrary-length bit string to fixed-length bit string).",
+    "Added the explicit one-way versus reversible distinction between hashing and encryption, per OWASP, with encryption treated as a sibling topic.",
+    "Added the honest collision framing (theoretically possible, practically infeasible) per NIST SP 800-107.",
+    "Added the general principle that hashes prove content integrity, not authorship, derived from the hash-versus-MAC distinction in NIST SP 800-107."
+  ],
+  "rightsIssues": [
+    "NIST documents (CSRC glossary, FIPS 180-4, SP 800-107) are U.S. federal government works and are in the public domain; used as reference and synthesized into original prose.",
+    "OWASP Password Storage Cheat Sheet is explicitly licensed CC BY-SA 4.0 on the page; used REFERENCE_ONLY with no wording reproduced and attributionRequired set true. No rights blockers."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-csrc-glossary-hash-function",
+      "title": "hash function — Glossary | CSRC",
+      "provider": "National Institute of Standards and Technology (NIST), Computer Security Resource Center",
+      "url": "https://csrc.nist.gov/glossary/term/hash_function",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. Provides the working definition of a hash function (a function on bit strings with fixed-length output) and states that approved hash functions are designed to satisfy the one-way property (computationally infeasible to find an input mapping to a pre-specified output) and collision resistance (computationally infeasible to find two distinct inputs mapping to the same output). Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "nist-fips-180-4",
+      "title": "FIPS 180-4: Secure Hash Standard (SHS)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read as the nvlpubs PDF (text layer extracted with pdftotext) on 2026-08-21. Supports: SHA algorithms process a message to produce a condensed representation called a message digest; digests are used to detect whether messages have been changed since the digests were generated; any change to a message will, with a very high probability, result in a different message digest; finding a message for a given digest or two messages with the same digest is computationally infeasible. Facts synthesized into original prose."
+    },
+    {
+      "id": "nist-sp-800-107",
+      "title": "NIST SP 800-107: Recommendation for Applications Using Approved Hash Algorithms",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-107.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read as the nvlpubs PDF (text layer extracted with pdftotext) on 2026-08-21. Supports: cryptographic hash function defined as a function that maps a bit string of arbitrary length to a fixed-length bit string with collision resistance, preimage resistance, and second preimage resistance; preimage resistance called the one-way property; the collision definition (two different messages with the same message digest); SHA-256 produces a 256-bit hash value with estimated 128-bit collision resistance; a keyed MAC is used to establish the authenticity and hence the integrity of a message (basis for the hash-alone-does-not-authenticate principle). Facts synthesized into original prose."
+    },
+    {
+      "id": "owasp-password-storage-cheat-sheet",
+      "title": "Password Storage Cheat Sheet",
+      "provider": "OWASP (Open Worldwide Application Security Project)",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21; license footer states Creative Commons Attribution-ShareAlike 4.0 International. Supports: hashing is a one-way function, so it is impossible to decrypt a hash and obtain the original plaintext value, making it the most appropriate approach for password validation; encryption is a two-way function whose plaintext can be retrieved; an attacker who obtains hashed passwords cannot use them to log in as the victim. Used reference-only; no wording reproduced. Detailed storage guidance (salting, work factors, algorithm selection) is deliberately out of scope and belongs to the password-security topic."
+    }
+  ]
+}

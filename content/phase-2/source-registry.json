@@ -240,6 +240,19 @@
     "notes": "Registered id reused from the phase-1 source registry with an identical URL. cisa.gov blocked direct fetching on 2026-08-21, so the page was read via an Internet Archive capture (web.archive.org snapshot 2026-08-06, status 200). Supports: technology providers issue software updates to patch security weak spots and if they are not installed they cannot protect users; install updates as soon as possible; turn on automatic updates; the story of Veda shows out-of-date software and clicking an unexpected link enabling malicious activity, used for the human-error vulnerability example. Facts synthesized; no wording reproduced."
   },
   {
+    "id": "cisa-securing-wireless-networks",
+    "title": "Securing Wireless Networks",
+    "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+    "url": "https://www.cisa.gov/news-events/news/securing-wireless-networks",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Live cisa.gov page returned Akamai access-denied to the fetcher; read the Internet Archive capture (web.archive.org, 2024 snapshot) on 2026-08-21. Canonical URL recorded above. Supports: the guest feature on many wireless routers grants wireless access to guests on a separate channel with a separate password while maintaining the privacy of the primary credentials."
+  },
+  {
     "id": "cisa-stop-ransomware",
     "title": "CISA: Stop Ransomware (StopRansomware.gov)",
     "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
@@ -291,6 +304,32 @@
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-21",
     "notes": "cisa.gov blocks automated fetchers (Akamai access denied on direct curl); read an Internet Archive capture of the page (web.archive.org 2025 snapshot, 2026-08-21) whose text matched the known canonical content; the canonical cisa.gov URL is registered. Supports: the definition of cybersecurity as 'the art of protecting networks, devices, and data from unauthorized access or criminal use and the practice of ensuring confidentiality, integrity, and availability of information'; everyday harms including attackers stealing credit card information for unauthorized purchases and malware erasing systems; the honest limit that there is no guarantee even with the best precautions that some harms will not occur, with steps to minimize the chances; and the individual role ('the first step in protecting yourself is to recognize the risks'). Facts synthesized into original prose; no wording reproduced."
+  },
+  {
+    "id": "cloudflare-what-is-a-firewall",
+    "title": "What is a firewall? — Cloudflare Learning Center",
+    "provider": "Cloudflare",
+    "url": "https://www.cloudflare.com/learning/security/what-is-a-firewall/",
+    "sourceType": "reference",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "cloudflare.com blocked direct automated fetching (HTTP 403) on 2026-08-21; read an Internet Archive capture of the canonical URL (web.archive.org snapshot 2026-06-08, status 200). The canonical cloudflare.com URL is registered. Supports: a firewall as a security system that monitors and controls network traffic based on a set of security rules; firewalls usually sitting between a trusted network and an untrusted network (often the Internet); firewalls intercepting malicious incoming traffic before it reaches the network and preventing sensitive information from leaving; filtering by port and by website; firewalls originally being hardware appliances while many modern firewalls are software-based and can run on several types of hardware. Used as a Tier B secondary source; facts synthesized into original prose, no wording reproduced."
+  },
+  {
+    "id": "cloudflare-what-is-a-packet",
+    "title": "What is a packet? (Cloudflare Learning Center)",
+    "provider": "Cloudflare",
+    "url": "https://www.cloudflare.com/learning/network-layer/what-is-a-packet/",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "cloudflare.com blocks direct automated fetches; read via an Internet Archive capture of the canonical URL (snapshot 2025-05-27, HTTP 200) on 2026-08-21. Supports: a network is a group of two or more connected computers; the internet is a network of networks, multiple networks around the world all interconnected; an image does not move from a web server to a user's computer in one piece but is broken into packets, sent over wires, cables, and radio waves, and reassembled into the original photo; packets consist of a header (origin and destination IP addresses, 'an IP address is like a computer's mailing address') and a payload; routers forward packets; different packets of one message can take different routes and arrive out of order; packet switching lets billions of devices exchange data over shared equipment. The page names TCP in passing; the lesson names no protocol beyond IP, per the subject's literacy level. Facts synthesized into original prose; no wording reproduced."
   },
   {
     "id": "crowdflower-2016-data-science-report",
@@ -1066,6 +1105,19 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-20",
     "notes": "Read directly. Supports the role of an ICANN-accredited registrar for generic-top-level-domain registration and the registrant-registrar registration agreement. No source prose was reproduced."
+  },
+  {
+    "id": "kaspersky-trojans",
+    "title": "What is a Trojan Horse Virus? Types and How to Remove it (Kaspersky Resource Center)",
+    "provider": "Kaspersky",
+    "url": "https://www.kaspersky.com/resource-center/threats/trojans",
+    "sourceType": "reference",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl on 2026-08-21. Reputable vendor explainer used as a secondary source. Supports: the myth of the wooden horse of Troy as the origin of the name; trojans reach a device only with the user's help (opening attachments, downloading from unsafe sources); payload variety (banking trojans, backdoor trojans, dropper/downloader trojans that deliver further malware such as ransomware); defense checklist (obtain programs only from secure sources, think before opening attachments, keep operating system and programs updated). Facts synthesized; no wording reproduced."
   },
   {
     "id": "mdn-a-element",
@@ -2289,6 +2341,19 @@
     "notes": "Read live via curl 2026-08-21. Supports the 'Use least privilege access' principle: 'User and workloads get only the access they need, for the shortest time required,' and the assume-breach framing that controls focus on limiting breach impact. Zero-trust architecture itself is out of scope for this lesson; only the least-privilege principle is cited."
   },
   {
+    "id": "ms-azure-waf-network-segmentation",
+    "title": "Microsoft Azure Well-Architected Framework: Design the security of your network (network segmentation and isolation)",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/azure/architecture/framework/security/design-network-segmentation",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live page on 2026-08-21. Supports: network segmentation or isolation is a strategy that divides a network into small, isolated segments with security controls applied at the boundaries; layers of segmentation actualize the defense-in-depth approach; segments can hold resources with different security requirements."
+  },
+  {
     "id": "ms-learn-clean-missing-data",
     "title": "Clean Missing Data: Component Reference - Azure Machine Learning",
     "provider": "Microsoft Learn",
@@ -2393,6 +2458,19 @@
     "notes": "Public Microsoft Learn module read live. Supports the literacy-level claim that preparing data involves resolving inconsistencies, unexpected or null values, and data quality issues, and that profiling columns precedes deeper analysis. The module is tool-oriented (Power Query); only its concept-level objectives were used, not its tool workflow."
   },
   {
+    "id": "mslearn-encryption-at-rest",
+    "title": "Azure data encryption at rest (Microsoft Learn, Azure Security documentation)",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-atrest",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl with a browser user-agent on 2026-08-21. Supports: 'Encryption at rest protects stored data'; 'Encryption is the secure encoding of data used to protect the confidentiality of data'; the at-rest design uses symmetric encryption — 'A symmetric encryption key encrypts data as it's written to storage. The same encryption key decrypts that data as it's prepared for use in memory'; and that attacks against data at rest include attempts to obtain a copy of the hardware or media. Used only for the general at-rest concept and the 'protects stored data' framing; no Azure-specific product claims appear in the lesson. License not stated on the page; treated as REFERENCE_ONLY, no wording reproduced."
+  },
+  {
     "id": "mslearn-entra-authentication-overview",
     "title": "Microsoft Entra authentication overview",
     "provider": "Microsoft Learn (Microsoft Entra ID)",
@@ -2485,6 +2563,61 @@
     "notes": "Read directly as the nvlpubs PDF (downloaded and text-extracted 2026-08-21). Supports: 'fair, with harmful bias managed' as one of the characteristics of trustworthy AI; that creating trustworthy AI requires balancing characteristics according to context of use; that AI systems are inherently socio-technical, influenced by societal dynamics and human behavior; the four functions Govern, Map, Measure, and Manage as ongoing risk work. Distinct document from the AI RMF landing page record; used only for these framing claims."
   },
   {
+    "id": "nist-csrc-glossary-client",
+    "title": "NIST Computer Security Resource Center Glossary — client",
+    "provider": "National Institute of Standards and Technology",
+    "url": "https://csrc.nist.gov/glossary/term/client",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl on 2026-08-21. Supports NIST SP 800-146's definition of a client as a machine or software application that accesses a cloud over a network connection, perhaps on behalf of a consumer — generalized in the lesson to a device or program that asks for something over a network. Facts synthesized; no wording reproduced."
+  },
+  {
+    "id": "nist-csrc-glossary-decryption",
+    "title": "NIST Computer Security Resource Center Glossary: decryption",
+    "provider": "National Institute of Standards and Technology (NIST)",
+    "url": "https://csrc.nist.gov/glossary/term/decryption",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "license": "U.S. government work (public domain)",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl with a browser user-agent on 2026-08-21. The entry lists 'The process of changing ciphertext into plaintext using a cryptographic algorithm and key' (NIST SP 800-133 Rev. 2, NIST SP 800-175B Rev. 1, NIST SP 800-57 Part 1 Rev. 5, NIST SP 800-57 Part 2 Rev. 1) among its definitions. Supports the decryption definition and the reversibility of encryption. Reference only; no wording reproduced."
+  },
+  {
+    "id": "nist-csrc-glossary-encryption",
+    "title": "NIST Computer Security Resource Center Glossary: encryption",
+    "provider": "National Institute of Standards and Technology (NIST)",
+    "url": "https://csrc.nist.gov/glossary/term/encryption",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "license": "U.S. government work (public domain)",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl with a browser user-agent on 2026-08-21. The 'encryption' entry carries several definitions, including the RFC 4949-adapted definition (via NIST SP 800-82r3): 'Cryptographic transformation of data (called plaintext) into a form (called ciphertext) that conceals the data's original meaning to prevent it from being known or used. If the transformation is reversible, the corresponding reversal process is called decryption.' Also carries 'The cryptographic transformation of data to produce ciphertext' (CNSSI 4009-2015 from ISO 7498-2) and 'Any procedure used in cryptography to convert plain text into cipher text to prevent anyone but the intended recipient from reading that data' (SP 800-101 Rev. 1). Supports the working definition and the 'conceals meaning / last line of defense' framing. Reference only; no wording reproduced."
+  },
+  {
+    "id": "nist-csrc-glossary-hash-function",
+    "title": "hash function — Glossary | CSRC",
+    "provider": "National Institute of Standards and Technology (NIST), Computer Security Resource Center",
+    "url": "https://csrc.nist.gov/glossary/term/hash_function",
+    "sourceType": "government",
+    "usage": "PUBLIC_DOMAIN",
+    "license": "U.S. federal government work (public domain)",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl on 2026-08-21. Provides the working definition of a hash function (a function on bit strings with fixed-length output) and states that approved hash functions are designed to satisfy the one-way property (computationally infeasible to find an input mapping to a pre-specified output) and collision resistance (computationally infeasible to find two distinct inputs mapping to the same output). Facts synthesized into original prose; no wording reproduced."
+  },
+  {
     "id": "nist-csrc-glossary-least-privilege",
     "title": "NIST Computer Security Resource Center Glossary — least privilege",
     "provider": "National Institute of Standards and Technology (NIST)",
@@ -2509,6 +2642,32 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Read live 2026-08-21. Provides the attributed working definition: software or firmware intended to perform an unauthorized process that will have adverse impact on the confidentiality, integrity, or availability of an information system, and notes that a virus, worm, trojan horse, or other code-based entity infects a host, with spyware and some forms of adware also examples of malicious code."
+  },
+  {
+    "id": "nist-csrc-glossary-network",
+    "title": "NIST Computer Security Resource Center Glossary — network",
+    "provider": "National Institute of Standards and Technology",
+    "url": "https://csrc.nist.gov/glossary/term/network",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl on 2026-08-21. Supports: the CNSSI 4009-2015 definition of a network as information system(s) implemented with a collection of interconnected components (components may include routers, hubs, cabling, and technical control devices); and NIST SP 800-63-4's assumption that unless otherwise stated, networks are open and subject to active attacks (e.g., impersonation, session hijacking) and passive attacks (e.g., eavesdropping) at any point between the parties. The SP 800-63-4 definition is the primary support for the lesson's core security concern: data crossing a network can be observed or interfered with."
+  },
+  {
+    "id": "nist-csrc-glossary-server",
+    "title": "NIST Computer Security Resource Center Glossary — server",
+    "provider": "National Institute of Standards and Technology",
+    "url": "https://csrc.nist.gov/glossary/term/server",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl on 2026-08-21. Supports NIST SP 800-175B Rev. 1 / SP 1800-15B's definition of a server as a computer or device on a network that manages network resources, with examples including file servers (store files) and database servers (process database queries). Facts synthesized; no wording reproduced."
   },
   {
     "id": "nist-csrc-glossary-social-engineering",
@@ -2536,6 +2695,19 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Read live 2026-08-21. Provides the working definition of 'threat' (from FIPS 200, adapted from CNSSI 4009, and NIST SP 800-30 Rev. 1): any circumstance or event with the potential to adversely impact organizational operations, assets, or individuals through an information system via unauthorized access, destruction, disclosure, or modification of information, and/or denial of service. Used as the attributed working definition in the lesson."
+  },
+  {
+    "id": "nist-csrc-glossary-trojan-horse",
+    "title": "NIST Computer Security Resource Center Glossary — trojan horse",
+    "provider": "National Institute of Standards and Technology (NIST), Computer Security Resource Center",
+    "url": "https://csrc.nist.gov/glossary/term/trojan_horse",
+    "sourceType": "reference",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl on 2026-08-21. Provides the attributed working definition: a trojan horse is a computer program that appears to have a useful function but also has a hidden and potentially malicious function that evades security mechanisms (CNSSI 4009-2015); a second definition (NIST SP 800-28) calls it a useful or seemingly useful program that contains hidden code of a malicious nature that executes when invoked. The lesson quotes the first definition briefly with attribution; facts synthesized into original prose."
   },
   {
     "id": "nist-ehandbook-eda-classical",
@@ -2658,6 +2830,20 @@
     "notes": "Read live 2026-08-21 (Section 1.3.3.26). Supports: a scatter plot reveals relationships or association between two variables, which manifest as any non-random structure in the plot; scatter plots are the cornerstone EDA tool for uncovering relationships; no statistical procedure, scatter plot included, proves cause-and-effect, and such proof is beyond the realm of statistics. Facts synthesized; no page wording reproduced."
   },
   {
+    "id": "nist-fips-180-4",
+    "title": "FIPS 180-4: Secure Hash Standard (SHS)",
+    "provider": "National Institute of Standards and Technology (NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf",
+    "sourceType": "government",
+    "usage": "PUBLIC_DOMAIN",
+    "license": "U.S. federal government work (public domain)",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read as the nvlpubs PDF (text layer extracted with pdftotext) on 2026-08-21. Supports: SHA algorithms process a message to produce a condensed representation called a message digest; digests are used to detect whether messages have been changed since the digests were generated; any change to a message will, with a very high probability, result in a different message digest; finding a message for a given digest or two messages with the same digest is computationally infeasible. Facts synthesized into original prose."
+  },
+  {
     "id": "nist-fips-199",
     "title": "FIPS 199: Standards for Security Categorization of Federal Information and Information Systems",
     "provider": "National Institute of Standards and Technology (NIST)",
@@ -2764,6 +2950,20 @@
     "notes": "PDF downloaded and text-extracted 2026-08-21. Supports provenance: metadata that describes the history of a dataset is called its provenance; it records how data was collected, transmitted, and processed; provenance matters as data is repurposed beyond its original collection process. U.S. government work; facts synthesized."
   },
   {
+    "id": "nist-sp-800-107",
+    "title": "NIST SP 800-107: Recommendation for Applications Using Approved Hash Algorithms",
+    "provider": "National Institute of Standards and Technology (NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-107.pdf",
+    "sourceType": "government",
+    "usage": "PUBLIC_DOMAIN",
+    "license": "U.S. federal government work (public domain)",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read as the nvlpubs PDF (text layer extracted with pdftotext) on 2026-08-21. Supports: cryptographic hash function defined as a function that maps a bit string of arbitrary length to a fixed-length bit string with collision resistance, preimage resistance, and second preimage resistance; preimage resistance called the one-way property; the collision definition (two different messages with the same message digest); SHA-256 produces a 256-bit hash value with estimated 128-bit collision resistance; a keyed MAC is used to establish the authenticity and hence the integrity of a message (basis for the hash-alone-does-not-authenticate principle). Facts synthesized into original prose."
+  },
+  {
     "id": "nist-sp-800-12-rev1",
     "title": "NIST Special Publication 800-12 Rev. 1: An Introduction to Information Security",
     "provider": "National Institute of Standards and Technology (NIST)",
@@ -2775,6 +2975,19 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Read the PDF directly 2026-08-21. Section 4.1.3 malicious-hacker taxonomy: attackers break into networks for the thrill, challenge, or bragging rights; bot-network operators coordinate attacks and distribute phishing, spam, and malicious code; criminal groups seek monetary gain through fraud, identity theft, and extortion; phishers steal identities or information for monetary gain; foreign intelligence services conduct espionage. Used for actor classes and motivations (money, espionage, mischief)."
+  },
+  {
+    "id": "nist-sp-800-125b",
+    "title": "NIST SP 800-125B: Secure Virtual Network Configuration for Virtual Machine (VM) Protection",
+    "provider": "National Institute of Standards and Technology (NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-125B.pdf",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live PDF from nvlpubs.nist.gov on 2026-08-21. Supports: main motivation for network segmentation is logical separation for applications with different sensitivity levels or belonging to different departments; segmentation is sometimes viewed as synonymous with VLANs but this is inaccurate; practitioners view segmentation as an integral part or at least a preliminary step of defense in depth."
   },
   {
     "id": "nist-sp-800-128",
@@ -2846,6 +3059,19 @@
     "notes": "Read the PDF text layer directly (downloaded from nvlpubs.nist.gov, ~0.5 MB) on 2026-08-21. Supports: the NICE Framework as a common, consistent lexicon that categorizes and describes cybersecurity work and improves how cybersecurity talent is identified, recruited, developed, and retained; work roles as the unit of cybersecurity work, with examples including cyber defense analyst (PR-CDA-001), cyber defense incident responder (PR-CIR-001), security architect (SP-ARC-002), and security control assessor; the explicit statement that work roles are not synonymous with job titles (one role may carry many titles, several roles may combine into one job); and example cybersecurity teams built around work. Facts synthesized into original prose; no wording reproduced."
   },
   {
+    "id": "nist-sp-800-215",
+    "title": "NIST SP 800-215: Guide to a Secure Enterprise Network Landscape",
+    "provider": "National Institute of Standards and Technology (NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-215.pdf",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live PDF from nvlpubs.nist.gov on 2026-08-21. Supports: threats already inside a network can move laterally and remain undetected for days or months; firewalls inside a data center can segment the internal network to prevent lateral movement of traffic and isolate sensitive resources (services, data stores); the perimeter model and zone concepts (internet, intranet, DMZ, corporate network). Cited for lateral movement and boundary concepts only."
+  },
+  {
     "id": "nist-sp-800-30-rev1",
     "title": "NIST Special Publication 800-30 Rev. 1: Guide for Conducting Risk Assessments",
     "provider": "National Institute of Standards and Technology (NIST)",
@@ -2871,6 +3097,20 @@
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-21",
     "notes": "Canonical CSRC publication page registered (DOI 10.6028/NIST.SP.800-30r1); read the publication page and the official PDF text layer (nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf) on 2026-08-21. Supports: the risk definition — risk as a measure of the extent to which an entity is threatened, typically a function of (i) adverse impacts if the circumstance or event occurs and (ii) likelihood of occurrence; risk assessment as the process of identifying, estimating, and prioritizing risks; the purpose of risk assessments as informing decision makers and supporting risk responses by identifying threats, vulnerabilities, impact, and likelihood; the four-component risk management process (frame, assess, respond, monitor) with responses chosen consistent with organizational risk tolerance; and the statement that the validity and usefulness of any risk assessment is bounded in time. Facts synthesized into original prose; no wording reproduced."
+  },
+  {
+    "id": "nist-sp-800-41r1",
+    "title": "NIST SP 800-41 Revision 1: Guidelines on Firewalls and Firewall Policy",
+    "provider": "National Institute of Standards and Technology",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-41r1.pdf",
+    "sourceType": "government",
+    "usage": "PUBLIC_DOMAIN",
+    "license": "U.S. Government work; not subject to copyright in the United States",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-21",
+    "notes": "Read the PDF text layer (downloaded live from nvlpubs.nist.gov, the official distribution host) on 2026-08-21. Supports: the glossary definition of a firewall as a device or program that controls the flow of network traffic between networks or hosts that employ differing security postures; firewalls as often placed at the network perimeter with external and internal interfaces; the firewall policy as defining how firewalls handle inbound and outbound traffic for specific IP addresses and address ranges, protocols, applications, and content types; deny by default as blocking all inbound and outbound traffic not expressly permitted, described as a more secure approach than permitting all traffic that is not explicitly forbidden; host-based and personal firewalls as software residing on the protected host and monitoring a single host's traffic; limitations — firewalls can only work effectively on traffic they can inspect, encrypted and tunneled traffic hides or confuses content, network firewalls cannot recognize all instances and forms of attack, attacks from one internal host to another often do not pass through the network firewall, and an attacker with administrator-level privileges on a host can disable or circumvent its host-based firewall. Facts synthesized into original prose; no wording reproduced."
   },
   {
     "id": "nist-sp-800-53r5",
@@ -2924,6 +3164,20 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Read the PDF directly from nvlpubs.nist.gov on 2026-08-21. Supports: the working definition of malware as a program covertly inserted with intent to destroy data or compromise confidentiality, integrity, or availability; malware as the most common external threat to most hosts; infection routes (email attachments, malicious websites, drive-by download/web-based malware, removable media); prevention (patch management and vulnerability mitigation, antivirus software as the most common technical control, user awareness including not opening suspicious attachments even from known senders, least privilege); and the honest framing that incidents will still occur and technical controls cannot prevent all incidents. The document itself states it is not subject to copyright in the United States; used as REFERENCE_ONLY."
+  },
+  {
+    "id": "nist-sp800-175br1",
+    "title": "NIST SP 800-175B Rev. 1: Guideline for Using Cryptographic Standards in the Federal Government: Cryptographic Mechanisms",
+    "provider": "National Institute of Standards and Technology (NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-175Br1.pdf",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "license": "U.S. government work (public domain)",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read the official PDF text layer (downloaded from nvlpubs.nist.gov) on 2026-08-21. Supports: scope covering protection of sensitive but unclassified digitized information 'during transmission and while in storage' (abstract); 'Encryption: The process of changing plaintext into ciphertext using a cryptographic algorithm for the purpose of security or privacy' (glossary); symmetric-key algorithms use 'a single key to both apply cryptographic protection and to remove or check the protection,' the key 'must be kept secret if the data is to remain protected,' with plaintext/ciphertext terminology; asymmetric-key algorithms 'use a pair of keys (i.e., a key pair): a public key and a private key that are mathematically related,' the public key 'may be made public without reducing the security of the process,' the private key 'must remain secret,' and for encryption 'the encryption is performed using the public key, and the decryption is performed using the private key'; 'A cryptographic hash function is a one-way function that is extremely difficult to invert. That is, it is not practical to reverse the process from the hash value back to the input'; 'Cryptographic key: A parameter used in conjunction with a cryptographic algorithm that determines its operation' so that an entity with knowledge of the key can reproduce the operation; symmetric-key algorithms are 'generally significantly faster than asymmetric-key algorithms' while asymmetric cryptography requires fewer initial keys. Facts synthesized into original lesson prose; no wording reproduced."
   },
   {
     "id": "nistir-7023-missing-data-methods",
@@ -3232,6 +3486,21 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-20",
     "notes": "Read directly. Supports the authentication-versus-authorization distinction, least privilege, deny by default, and per-request permission checks. No source wording reproduced."
+  },
+  {
+    "id": "owasp-password-storage-cheat-sheet",
+    "title": "Password Storage Cheat Sheet",
+    "provider": "OWASP (Open Worldwide Application Security Project)",
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html",
+    "sourceType": "standards-body",
+    "usage": "REFERENCE_ONLY",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl on 2026-08-21; license footer states Creative Commons Attribution-ShareAlike 4.0 International. Supports: hashing is a one-way function, so it is impossible to decrypt a hash and obtain the original plaintext value, making it the most appropriate approach for password validation; encryption is a two-way function whose plaintext can be retrieved; an attacker who obtains hashed passwords cannot use them to log in as the victim. Used reference-only; no wording reproduced. Detailed storage guidance (salting, work factors, algorithm selection) is deliberately out of scope and belongs to the password-security topic."
   },
   {
     "id": "owasp-risk-rating-methodology",

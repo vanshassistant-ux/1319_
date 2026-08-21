@@ -1,0 +1,161 @@
+{
+  "topicId": "cybersecurity:foundations:network-segmentation",
+  "subjectId": "cybersecurity",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "what network segmentation is: dividing a network into smaller, isolated parts so a breach in one part does not spread",
+      "the ship-compartment idea: separation contains damage",
+      "why it helps: limiting lateral movement by a compromised device",
+      "how segments are separated conceptually: boundaries, rules, and zones with different trust levels",
+      "everyday examples: home guest network, department separation in a business",
+      "honest framing: segmentation is one layer of defense in depth, not a cure-all"
+    ],
+    "supporting": [
+      "defense in depth as the larger strategy segmentation serves",
+      "firewalls as tools that enforce rules at boundaries (referenced only)",
+      "VLANs as one mechanism for building segments, not the concept itself",
+      "flat networks as the problem segmentation addresses"
+    ],
+    "outOfScope": [
+      "firewalls and their rule sets (sibling topic: firewalls)",
+      "network fundamentals: IP addressing, subnets, VLAN mechanics, routing (sibling topic: network-fundamentals)",
+      "Wi-Fi security: encryption protocols, SSID hardening, router configuration details (sibling topic: wi-fi-security)",
+      "zero-trust architecture and continuous verification (sibling topic: zero-trust-basics)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Network segmentation (also called isolation) is a strategy that divides a network into small, isolated segments, with security controls applied at the boundaries between them.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ms-azure-waf-network-segmentation"],
+      "status": "supported"
+    },
+    {
+      "claim": "The main motivation for network segmentation is to achieve logical separation for applications with different sensitivity levels or belonging to different departments.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-800-125b"],
+      "status": "supported"
+    },
+    {
+      "claim": "A threat that is already inside a network can move laterally within it and remain undetected for days or even months.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-800-215"],
+      "status": "supported"
+    },
+    {
+      "claim": "Segmenting an internal network prevents the lateral movement of traffic and isolates sensitive resources such as services and data stores.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-800-215"],
+      "status": "supported"
+    },
+    {
+      "claim": "Layers of segmentation are a way of putting defense in depth into practice.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ms-azure-waf-network-segmentation"],
+      "status": "supported"
+    },
+    {
+      "claim": "Network segmentation is sometimes treated as synonymous with VLANs, but that equation is inaccurate; a VLAN is one mechanism for creating segments, not the concept itself.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-800-125b"],
+      "status": "supported"
+    },
+    {
+      "claim": "Many home wireless routers offer a guest feature that grants visitors wireless access on a separate channel with a separate password while keeping the primary credentials private.",
+      "claimType": "CURRENT",
+      "sourceIds": ["cisa-securing-wireless-networks"],
+      "status": "supported"
+    },
+    {
+      "claim": "Security practitioners view network segmentation as an integral part, or at least a preliminary step, of a defense-in-depth strategy rather than a complete security solution by itself.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["nist-sp-800-125b"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Is network segmentation a security control or a network-management convenience?",
+      "positions": [
+        "Some practitioners view segmentation as purely for network management purposes.",
+        "Others treat it as an integral part, or at least a preliminary step, of a defense-in-depth strategy (NIST SP 800-125B)."
+      ],
+      "resolution": "The lesson presents segmentation as a security design practice: separation that limits the reach of a compromise. It notes the management benefits but does not rely on them, and it is explicit that segmentation is one layer of a larger strategy, not a standalone cure."
+    },
+    {
+      "issue": "Are segmentation and VLANs the same thing?",
+      "positions": [
+        "Segmentation is sometimes viewed as synonymous with using a virtual local area network (VLAN).",
+        "NIST SP 800-125B states this view is inaccurate."
+      ],
+      "resolution": "The lesson treats VLANs as one possible mechanism for building segments and keeps the concept (separation with boundary controls) distinct from any single implementation technology."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic boilerplate ('Network Segmentation is a foundational concept in Cybersecurity', 'College courses use network segmentation as a building block') and no substantive, verifiable claims about the topic; nothing from the draft was carried into the lesson."
+  ],
+  "correctionsNeeded": [
+    "Replaced the boilerplate draft entirely with source-verified content.",
+    "Defined segmentation via an attributed working definition (Microsoft Learn Azure Well-Architected Framework; NIST SP 800-125B motivation).",
+    "Added the honest framing that segmentation limits the reach of a compromise but does not prevent the initial breach and is one layer of defense in depth.",
+    "Kept firewalls, network-fundamentals, Wi-Fi security, and zero-trust as references only, per sibling-topic boundaries."
+  ],
+  "rightsIssues": [
+    "All four sources used as REFERENCE_ONLY; facts synthesized into original prose with original examples. No source wording reproduced at length."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-sp-800-215",
+      "title": "NIST SP 800-215: Guide to a Secure Enterprise Network Landscape",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-215.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live PDF from nvlpubs.nist.gov on 2026-08-21. Supports: threats already inside a network can move laterally and remain undetected for days or months; firewalls inside a data center can segment the internal network to prevent lateral movement of traffic and isolate sensitive resources (services, data stores); the perimeter model and zone concepts (internet, intranet, DMZ, corporate network). Cited for lateral movement and boundary concepts only."
+    },
+    {
+      "id": "nist-sp-800-125b",
+      "title": "NIST SP 800-125B: Secure Virtual Network Configuration for Virtual Machine (VM) Protection",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-125B.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live PDF from nvlpubs.nist.gov on 2026-08-21. Supports: main motivation for network segmentation is logical separation for applications with different sensitivity levels or belonging to different departments; segmentation is sometimes viewed as synonymous with VLANs but this is inaccurate; practitioners view segmentation as an integral part or at least a preliminary step of defense in depth."
+    },
+    {
+      "id": "ms-azure-waf-network-segmentation",
+      "title": "Microsoft Azure Well-Architected Framework: Design the security of your network (network segmentation and isolation)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/framework/security/design-network-segmentation",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live page on 2026-08-21. Supports: network segmentation or isolation is a strategy that divides a network into small, isolated segments with security controls applied at the boundaries; layers of segmentation actualize the defense-in-depth approach; segments can hold resources with different security requirements."
+    },
+    {
+      "id": "cisa-securing-wireless-networks",
+      "title": "Securing Wireless Networks",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/news-events/news/securing-wireless-networks",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Live cisa.gov page returned Akamai access-denied to the fetcher; read the Internet Archive capture (web.archive.org, 2024 snapshot) on 2026-08-21. Canonical URL recorded above. Supports: the guest feature on many wireless routers grants wireless access to guests on a separate channel with a separate password while maintaining the privacy of the primary credentials."
+    }
+  ]
+}

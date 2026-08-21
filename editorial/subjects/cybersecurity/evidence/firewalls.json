@@ -1,0 +1,167 @@
+{
+  "topicId": "cybersecurity:foundations:firewalls",
+  "subjectId": "cybersecurity",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "The working definition of a firewall: a system that filters traffic between networks based on rules (NIST SP 800-41: a device or program that controls the flow of network traffic between networks or hosts that employ differing security postures)",
+      "The gatekeeper analogy: a firewall decides what crosses the boundary between a trusted and an untrusted network, in both directions",
+      "How filtering works conceptually: rules about what is allowed in and out, based on addresses, ports, and types of traffic — no configuration how-to",
+      "Hardware/network firewalls vs software/host-based firewalls: the device at the network edge vs the program on a single device",
+      "Default deny vs default allow: the two philosophies, and why default deny is the more secure posture (NIST recommendation)",
+      "Firewall limits, honestly framed: encrypted and tunneled traffic, insider threats, and social engineering are not stopped by a firewall alone"
+    ],
+    "supporting": [
+      "Firewall policy as the expression of what an organization needs: which addresses, ports, protocols, and applications may cross the boundary (NIST SP 800-41)",
+      "Host-based and personal firewalls as an additional layer protecting individual devices, including laptops off the office network (NIST SP 800-41)",
+      "Firewalls can only work effectively on traffic they can inspect; cryptography and tunneling hide traffic from inspection (NIST SP 800-41)",
+      "Social engineering attacks manipulate people rather than technical controls, so they bypass firewalls (CISA)"
+    ],
+    "outOfScope": [
+      "Network fundamentals — addressing, ports, protocols, routing in detail (sibling topic: cybersecurity:foundations:network-fundamentals; referenced only)",
+      "Network segmentation — DMZs, zones, internal segmentation (sibling topic: cybersecurity:foundations:network-segmentation)",
+      "Wi-Fi security — wireless encryption and home router hardening (sibling topic: cybersecurity:foundations:wi-fi-security)",
+      "Zero trust — the broader model of trusting nothing by default (sibling topic: cybersecurity:foundations:zero-trust-basics)",
+      "Firewall configuration, rule syntax, or product-specific setup (literacy level: no config how-to)",
+      "Attack techniques, exploit details, or offensive methods (defensive framing only)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A firewall is a device or program that controls the flow of network traffic between networks or hosts that employ differing security postures; in plain terms, a system that filters traffic between networks based on rules.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["nist-sp-800-41r1"],
+      "status": "supported"
+    },
+    {
+      "claim": "Cloudflare defines a firewall as a security system that monitors and controls network traffic based on a set of security rules, and notes that firewalls usually sit between a trusted network and an untrusted network — often the Internet.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["cloudflare-what-is-a-firewall"],
+      "status": "supported"
+    },
+    {
+      "claim": "A firewall policy defines how firewalls handle inbound and outbound network traffic for specific IP addresses and address ranges, protocols, applications, and content types; rules can therefore be based on addresses, ports, and types of traffic, and firewalls filter traffic in both directions.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-800-41r1"],
+      "status": "supported"
+    },
+    {
+      "claim": "Deny by default means blocking all inbound and outbound traffic that has not been expressly permitted by firewall policy; NIST states that deny by default is a more secure approach than permitting all traffic that is not explicitly forbidden, and recommends blocking all traffic not expressly permitted because such traffic is not needed.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-800-41r1"],
+      "status": "supported"
+    },
+    {
+      "claim": "Firewalls come in two broad forms: network firewalls — devices placed at the perimeter of a network with external and internal interfaces that filter traffic for the networks behind them — and host-based (personal) firewalls — software on a single host that monitors and controls that host's own incoming and outgoing traffic.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-800-41r1"],
+      "status": "supported"
+    },
+    {
+      "claim": "Firewalls were originally hardware appliances, while many modern firewalls are software-based and can run on several different types of hardware (Cloudflare).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cloudflare-what-is-a-firewall"],
+      "status": "supported"
+    },
+    {
+      "claim": "A firewall can only work effectively on traffic that it can inspect: encrypted traffic (such as TLS, IPsec, SSH, and encrypted email or files) hides its contents from the firewall, tunneled traffic may be unintelligible to it, and network firewalls cannot recognize all instances and forms of attack.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-800-41r1"],
+      "status": "supported"
+    },
+    {
+      "claim": "Insider threats are a firewall limit: attacks sent from one internal host to another often do not pass through the network firewall, and an attacker who compromises a host and gains administrator-level privileges can disable or circumvent a host-based firewall.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-800-41r1"],
+      "status": "supported"
+    },
+    {
+      "claim": "Social engineering is a firewall limit: such attacks manipulate people rather than technical controls, so they do not depend on crossing the firewall; CISA's guidance treats verifying requests through another channel as the defense against them.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cisa-avoiding-social-engineering-phishing"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Firewalls are sometimes described as a complete perimeter wall and sometimes as one layer among several.",
+      "positions": [
+        "Marketing-style framing: a firewall is a wall that blocks attacks at the network edge.",
+        "NIST SP 800-41: network firewalls cannot recognize all instances and forms of attack, attacks between internal hosts often do not pass through the network firewall, and firewall functionality is now often added beyond the perimeter as one layer of security.",
+        "Cloudflare: firewalls can intercept malicious traffic before it reaches the network and prevent sensitive information from leaving, but are one of several network security technologies."
+      ],
+      "resolution": "The lesson presents the firewall as a boundary gatekeeper that is one layer of defense, not a complete wall; the limits section makes the honest framing explicit."
+    },
+    {
+      "issue": "Default deny is the recommended posture, but organizations do not always block all outbound traffic.",
+      "positions": [
+        "NIST SP 800-41 recommends that all inbound and outbound traffic not expressly permitted should be blocked (deny by default).",
+        "The same document notes that less stringent policies are generally used for outgoing traffic because organizations permit users to reach a wide range of external applications on millions of external hosts."
+      ],
+      "resolution": "The lesson teaches default deny as the more secure philosophy and the recommended starting point, while noting that outbound rules are often deliberately more permissive because users need many external services."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft claimed firewalls are 'a foundational concept in Cybersecurity' — generic boilerplate with no definition; discarded.",
+    "The generated draft described firewalls as 'a label on a toolbox drawer' and 'a college-level explanation names the concept' — boilerplate with no factual content; discarded.",
+    "The generated draft's vocabulary defined 'firewalls' circularly as 'A foundational Cybersecurity concept covered in this lesson'; replaced with the sourced NIST definition.",
+    "The generated draft's learning objective 'Apply firewalls to a simple scenario' carried no actual scenario; replaced with concrete, sourced objectives."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic draft boilerplate with a sourced working definition of a firewall (NIST SP 800-41 Rev. 1 glossary definition; Cloudflare's plain-language definition).",
+    "Added the gatekeeper framing: the firewall decides what crosses the boundary between trusted and untrusted networks, filtering in both directions.",
+    "Added how filtering works conceptually — rules based on addresses, ports, and types of traffic (NIST SP 800-41 firewall-policy description), with no configuration how-to.",
+    "Added the hardware/network vs software/host-based distinction, each with a one-line description (NIST SP 800-41; Cloudflare's hardware-to-software history).",
+    "Added the default-deny vs default-allow philosophies with NIST's recommendation that deny by default is more secure than permitting all traffic not explicitly forbidden.",
+    "Added the honest limits section — encrypted/tunneled traffic, insider threats, social engineering — each named and sourced (NIST SP 800-41; CISA).",
+    "Replaced the draft's degenerate question items with a 5-question, 4-option bank whose keys are distributed across A/B/C/D (A=1, B=1, C=1, D=2) with at least one recall and one application/analysis item.",
+    "Added original examples throughout: the office-building front desk analogy, the music-school network example, the Maple Row Dental worked example."
+  ],
+  "rightsIssues": [
+    "NIST SP 800-41 Rev. 1 is a U.S. government work, not subject to copyright in the United States (public domain); facts synthesized into original prose.",
+    "The Cloudflare explainer was used as reference only; no source wording is reproduced in the lesson.",
+    "CISA's social-engineering guidance is a U.S. government work (public domain); reused the existing registry record id with an identical URL."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-sp-800-41r1",
+      "title": "NIST SP 800-41 Revision 1: Guidelines on Firewalls and Firewall Policy",
+      "provider": "National Institute of Standards and Technology",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-41r1.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work; not subject to copyright in the United States",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Read the PDF text layer (downloaded live from nvlpubs.nist.gov, the official distribution host) on 2026-08-21. Supports: the glossary definition of a firewall as a device or program that controls the flow of network traffic between networks or hosts that employ differing security postures; firewalls as often placed at the network perimeter with external and internal interfaces; the firewall policy as defining how firewalls handle inbound and outbound traffic for specific IP addresses and address ranges, protocols, applications, and content types; deny by default as blocking all inbound and outbound traffic not expressly permitted, described as a more secure approach than permitting all traffic that is not explicitly forbidden; host-based and personal firewalls as software residing on the protected host and monitoring a single host's traffic; limitations — firewalls can only work effectively on traffic they can inspect, encrypted and tunneled traffic hides or confuses content, network firewalls cannot recognize all instances and forms of attack, attacks from one internal host to another often do not pass through the network firewall, and an attacker with administrator-level privileges on a host can disable or circumvent its host-based firewall. Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "cloudflare-what-is-a-firewall",
+      "title": "What is a firewall? — Cloudflare Learning Center",
+      "provider": "Cloudflare",
+      "url": "https://www.cloudflare.com/learning/security/what-is-a-firewall/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "cloudflare.com blocked direct automated fetching (HTTP 403) on 2026-08-21; read an Internet Archive capture of the canonical URL (web.archive.org snapshot 2026-06-08, status 200). The canonical cloudflare.com URL is registered. Supports: a firewall as a security system that monitors and controls network traffic based on a set of security rules; firewalls usually sitting between a trusted network and an untrusted network (often the Internet); firewalls intercepting malicious incoming traffic before it reaches the network and preventing sensitive information from leaving; filtering by port and by website; firewalls originally being hardware appliances while many modern firewalls are software-based and can run on several types of hardware. Used as a Tier B secondary source; facts synthesized into original prose, no wording reproduced."
+    },
+    {
+      "id": "cisa-avoiding-social-engineering-phishing",
+      "title": "Avoiding Social Engineering and Phishing Attacks",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/news-events/news/avoiding-social-engineering-and-phishing-attacks",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Existing registry record reused with an identical id and URL (phase-1/phase-2 source registry). cisa.gov blocks automated fetchers; the record's content was previously confirmed live at the canonical URL. Supports: social engineering as the psychological manipulation of people into performing actions or divulging information, and the advice to verify requests through another channel — the basis for the claim that social engineering targets people rather than technical controls such as firewalls. Used only for the social-engineering limit in the firewall-limits section; facts synthesized into original prose."
+    }
+  ]
+}
