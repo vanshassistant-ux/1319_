@@ -54,11 +54,11 @@ Beat language should support description rather than cultural shortcuts. Terms s
 
 ## Key Vocabulary
 
-- **beat:** A musical pulse that regularly recurs and can often serve as a reference for listening, counting, or coordination.
+- **beat:** A regularly recurring musical pulse that can provide a reference for listening, counting, movement, or performing.
 - **pulse:** A recurrent temporal point or sensation; in this lesson, the pulse a listener perceives as a beat.
 - **rhythm:** The organization of musical sounds and silences through their durations and placements in time.
 - **meter:** A recurring grouping and hierarchy of beats, often represented in some traditions by a time signature.
-- **tempo:** The rate at which a perceived beat passes, described as faster or slower.
+- **tempo:** The rate or relative speed at which a musical pulse moves through time, rather than its loudness.
 - **accent:** An emphasis that makes a musical event stand out through features such as loudness, duration, articulation, pitch, register, or context.
 - **beat unit:** In a notated meter, the note value designated to receive one beat; it is not necessarily the smallest note value on the page.
 - **pickup:** One or more events that lead into the first complete metrical grouping rather than beginning on its first beat.

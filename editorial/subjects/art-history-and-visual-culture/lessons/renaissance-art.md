@@ -49,7 +49,7 @@ Comparison should sharpen questions instead of creating rankings. Compare a Flor
 - **Patron:** A person, group, or institution that commissions, funds, or otherwise sponsors an artwork or building.
 - **Workshop:** A collaborative place or organization of production in which a master, assistants, apprentices, and specialists may contribute to objects.
 - **Humanism:** A set of Renaissance intellectual approaches that gave renewed attention to ancient texts, languages, rhetoric, and ethical inquiry; its visual effects vary by context.
-- **Commission:** An agreement or request for an artwork that can specify subject, material, scale, cost, placement, or deadline.
+- **Commission:** An arrangement in which a patron or institution requests and often funds an artwork or project; its terms may specify subject, material, scale, placement, cost, or deadline.
 - **Volumetric form:** The appearance that a figure or object occupies three-dimensional volume through modeling, light, shade, or related visual means.
 
 ## Eli-10
@@ -88,7 +88,7 @@ Renaissance art is best understood through specific European places, materials, 
 
 ## Practice Question Bank
 
-1. **Which statement best describes Renaissance art in this lesson?**
+1. **How should a researcher use the term Renaissance when a work comes from a regional workshop?**
    - A. One uniform Italian style based only on ancient Rome.
    - B. A broad label for varied European practices that need regional, material, and setting-specific context.
    - C. Any artwork that uses a gold background.

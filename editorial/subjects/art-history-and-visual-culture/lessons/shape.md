@@ -44,7 +44,7 @@ Shape becomes more useful when it is joined to other evidence. Color can make ad
 
 ## Key Vocabulary
 
-- **Shape:** A two-dimensional area distinguished from its surroundings by a perceivable boundary, with height and width but not physical depth.
+- **Shape:** A two-dimensional bounded area, whether geometric, irregular, or organic, defined within a visual field.
 - **Contour:** The outer edge or boundary that defines the visible outline of a figure, object, or area.
 - **Geometric shape:** A regular or mathematically named shape, such as a circle, triangle, square, or rectangle.
 - **Organic shape:** An irregular, curving, asymmetrical, or life-like shape rather than a regular geometric one.

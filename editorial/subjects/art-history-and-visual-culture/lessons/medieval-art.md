@@ -88,7 +88,7 @@ Medieval art is a diverse field of materials, images, and spaces rather than a s
 
 ## Practice Question Bank
 
-1. **Which statement best describes medieval art in this lesson?**
+1. **What does a medieval-art label leave unresolved until a work's region, material, and use are specified?**
    - A. A varied field of visual culture in Europe and Byzantium that needs specific dates, places, materials, and settings.
    - B. A single style that replaced all earlier art in Europe at one moment.
    - C. Only church buildings made during the Gothic period.

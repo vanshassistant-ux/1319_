@@ -24,7 +24,7 @@ In a music-history course, the Classical Period usually names a period of Wester
 
 The capital letter matters. *Classical Period* refers to this specific historical category. In ordinary conversation, *classical music* is often used much more broadly for Western art music from many centuries. A medieval chant, a Baroque concerto, a Classical-period symphony, and a twentieth-century orchestral work might all be filed under the broad label *classical music*, even though they belong to different historical contexts and styles. Treating those labels as identical makes it harder to hear change over time.
 
-The period name is also retrospective. Haydn, Mozart, Beethoven, Joseph Boulogne, and their contemporaries did not choose a shared label and announce that they were composing in the Classical Period. Later historians grouped certain people, places, genres, and stylistic tendencies to make a complex history easier to study. Such labels can help listeners find patterns, but they can also hide variety. The Classical Period lesson therefore concerns a particular tradition within Western art music; it does not describe every kind of music made around the world between 1750 and 1820.
+The period name is also retrospective. Haydn, Mozart, Beethoven, Joseph Boulogne, and their contemporaries did not choose a shared label and announce that they were composing in the Classical Period. Later historians grouped certain people, places, genres, and stylistic tendencies to make a complex history easier to study. Such labels can help listeners find patterns, but they can also hide variety. The Classical Period lesson therefore examines one Western art-music tradition rather than every kind of music made around the world between 1750 and 1820.
 
 ### People, places, audiences, and institutions
 
@@ -107,7 +107,7 @@ The Classical Period is an approximate, retrospective label for a Western art-mu
 2. Which distinction is most accurate? **Answer: B.** Classical music can be a broad label for Western art music, while Classical Period names a more specific historical category.
 3. A listener hears a prominent violin melody, quieter accompaniment, a clear pause, a contrasting middle section, and a return of the opening idea. What is the best first analysis? **Answer: C.** The details are consistent with tendencies often taught for the Classical Period, but more context is needed to identify the work, composer, or exact form.
 4. Which statement most carefully describes the role of Haydn, Mozart, and Beethoven in a Classical-period survey? **Answer: D.** They are central and influential survey figures, but they do not represent every composer, place, or musical activity of the period.
-5. Which statement is an observation rather than a historical conclusion? **Answer: C.** A loud full-ensemble passage is followed by a softer passage led by winds.
+5. Which note records only a directly audible event? **Answer: C.** A loud full-ensemble passage is followed by a softer passage led by winds.
 
 ## Sources
 

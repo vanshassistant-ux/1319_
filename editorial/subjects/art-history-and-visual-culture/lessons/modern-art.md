@@ -47,8 +47,8 @@ Finally, compare without a progress ladder. Instead of asking whether a mural is
 - **Modernity:** Changing social, material, technological, and cultural conditions associated with the modern era; its meaning differs by place and history.
 - **Modernism:** A set of artistic and cultural strategies that seek close or critical connections to conditions of modernity.
 - **Avant-garde:** A term used for experimental or leading artistic positions; its political and aesthetic meanings vary by context.
-- **Abstraction:** A way of organizing visual form that does not depend on naturalistic depiction of recognizable subjects; it can use color, line, shape, gesture, material, or geometry.
-- **Representation:** The depiction or presentation of a subject, person, place, event, or idea; it can be naturalistic, stylized, fragmented, or otherwise transformed.
+- **Abstraction:** A visual strategy that reorganizes, simplifies, or departs from recognizable appearances; it can range from transformed subjects to non-representational use of color, line, shape, gesture, material, or geometry.
+- **Representation:** The depiction, construction, or presentation of a subject, person, place, event, idea, community, or social category; it can be naturalistic, stylized, fragmented, or otherwise transformed.
 - **Collage:** A work made by combining materials such as paper, photographs, printed matter, fabric, or found elements on a support.
 - **Reception:** The ways audiences, critics, institutions, and communities encounter, interpret, display, classify, or contest a work over time.
 
@@ -88,7 +88,7 @@ Modern art is best approached as multiple historically situated modernisms. Star
 
 ## Practice Question Bank
 
-1. **Which statement best describes modern art in this lesson?**
+1. **Which historical condition makes the plural term modernisms more useful than a single-style definition?**
    - A. One global style that replaced all representation.
    - B. A group of varied practices and modernisms responding to changing conditions in different places and times.
    - C. Only art made in Europe before 1914.

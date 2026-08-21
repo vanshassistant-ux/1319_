@@ -105,7 +105,7 @@ Tempo is the rate of a musical pulse. Identify the pulse first, then distinguish
 
 ## Practice Question Bank
 
-1. **What does tempo describe most directly?**
+1. **In a performance, what feature does tempo name?**
    - A. The pattern of strong and weak beats in a measure.
    - B. The rate at which a musical pulse moves through time.
    - C. The sequence of pitches in a melody.

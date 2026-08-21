@@ -88,7 +88,7 @@ Egyptian art is best studied as many historical practices, not a fixed set of sy
 
 ## Practice Question Bank
 
-1. **Which statement best reflects this lesson’s approach to Egyptian art?**
+1. **What evidence prevents Egyptian visual culture from being treated as a timeless, single practice?**
    - A. It includes changing practices across a long history, so period, material, and setting matter for interpretation.
    - B. It is one unchanging style used only in royal tombs.
    - C. It is limited to stone statues and pyramids.
@@ -133,7 +133,7 @@ Egyptian art is best studied as many historical practices, not a fixed set of sy
 
 - Ancient Art
 - Visual Analysis
-- Mesopotamian Art
+- Greek Art
 
 ## Editorial Metadata
 

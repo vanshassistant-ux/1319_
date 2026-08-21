@@ -109,7 +109,7 @@ The Romantic Period is an approximate nineteenth-century Western art-music categ
 2. Which statement best describes a common Romantic-period listening tendency? **Answer: B.** Works often combine inherited genres with expanded chromatic harmony, contrast, instrumental color, or flexible pacing, though no single trait is required in every work.
 3. A concert note describes a one-movement orchestral work inspired by a landscape. Which term is most likely relevant? **Answer: C.** Tone poem or program music, because an instrumental work can be connected to a nonmusical subject.
 4. A listener hears a title referring to a poem, wider melodic leaps, shifting tempo, and changing instrumental color. What is the most careful conclusion? **Answer: D.** The details are consistent with Romantic-period tendencies and program-music practices, but reliable context is needed for authorship, date, and exact meaning.
-5. Which statement is an observation rather than an unsupported historical conclusion? **Answer: C.** The melody rises by a wide leap as the brass section enters more loudly.
+5. Which account limits itself to audible evidence? **Answer: C.** The melody rises by a wide leap as the brass section enters more loudly.
 
 ## Sources
 

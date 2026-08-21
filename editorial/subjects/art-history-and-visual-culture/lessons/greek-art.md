@@ -88,7 +88,7 @@ Greek art is a diverse historical field, not a timeless white-marble ideal. Stud
 
 ## Practice Question Bank
 
-1. **Which statement best describes Greek art in this lesson?**
+1. **When comparing a vase from a sanctuary with a marble statue, what caution should guide a Greek-art survey?**
    - A. A varied body of work across periods, regions, media, and settings that needs object-specific context.
    - B. A single white-marble style used throughout the Mediterranean.
    - C. Only works made in Athens during the Classical period.

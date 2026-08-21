@@ -58,7 +58,7 @@ This method does not make every disagreement disappear. It gives the disagreemen
 - **Listening context:** The setting, participants, purpose, and expectations that shape how sound is encountered and understood.
 - **Musical element:** A feature used to describe sound in music, such as rhythm, pitch, timbre, texture, or form.
 - **Timbre:** The quality or color of a sound that helps distinguish one voice, instrument, or sound source from another.
-- **Texture:** The way sounding parts combine, including their number, relationship, and relative prominence.
+- **Texture:** The arrangement, density, and interaction of musical lines or sound layers in a passage.
 - **Framing:** The presentation or setting that directs attention toward sounds as part of a performance, artwork, or practice.
 - **Cultural practice:** A shared, learned activity whose meanings and methods are connected to a community or social setting.
 

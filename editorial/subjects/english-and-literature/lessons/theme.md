@@ -106,7 +106,7 @@ A theme is an evidence-based claim about an idea a work develops. Find it by tra
 ## Related Topics
 
 - Close Reading
-- Motif
+- Symbolism
 - Literary Analysis
 
 ## Editorial Metadata

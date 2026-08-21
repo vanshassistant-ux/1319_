@@ -54,7 +54,7 @@ A responsible conclusion identifies both the ensemble resource and its role. For
 
 - **Orchestra:** A coordinated instrumental ensemble, here discussed through an introductory Western symphony-orchestra model.
 - **Instrument family:** A grouping of instruments related by sound production and established ensemble practice.
-- **Section:** A group of related instruments or performers functioning together within a larger ensemble.
+- **Section:** A recognizable group within a larger musical whole; in form it is a span of material, and in an orchestra it is a family of related instruments.
 - **String section:** The orchestra family section whose instruments produce sound through vibrating strings, often bowed or plucked.
 - **Woodwind section:** The orchestra family section whose instruments produce sound through air moving in tubes, sometimes with reeds.
 - **Brass section:** The orchestra family section whose players buzz lips into mouthpieces to set air columns vibrating.

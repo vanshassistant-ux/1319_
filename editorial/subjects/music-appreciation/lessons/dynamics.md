@@ -58,7 +58,7 @@ When reading notation or discussing rehearsal, markings can communicate desired 
 - **Crescendo:** A gradual increase in loudness across a musical passage or phrase.
 - **Decrescendo:** A gradual decrease in loudness across a musical passage or phrase.
 - **Dynamic contrast:** A noticeable difference in loudness between moments, phrases, or musical layers.
-- **Tempo:** The pace or rate of musical motion, rather than its loudness.
+- **Tempo:** The rate or relative speed at which a musical pulse moves through time, rather than its loudness.
 - **Articulation:** The way a note begins and ends, such as smoothly, abruptly, or with emphasis.
 
 ## Eli-10

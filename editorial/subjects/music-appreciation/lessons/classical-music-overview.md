@@ -56,7 +56,7 @@ Finally, keep value judgments separate from categories. Broad classical music is
 - **Classical Period:** A specific era of Western music history, roughly 1750–1820s, distinct from the broad classical-music label.
 - **Western art music:** A scoped course term for the historical Western traditions commonly grouped under the broad classical-music label.
 - **Period label:** A historical category used to organize music over time without making every work inside it identical.
-- **Genre:** A category of musical work associated with particular conventions, performing forces, or historical uses.
+- **Genre:** A category that groups musical works or practices through historically and culturally situated conventions, performing forces, styles, scenes, audiences, or uses; boundaries can overlap and change.
 - **Symphony:** A large-scale instrumental genre for orchestra that became especially important during the Classical Period.
 - **Sonata:** An instrumental genre that became prominent in the Classical Period and can use different performing forces.
 - **String quartet:** An instrumental genre for two violins, viola, and cello that was developed during the Classical Period.

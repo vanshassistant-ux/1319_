@@ -98,7 +98,7 @@ Texture describes the relationship and density of musical lines and layers. Iden
 
 ## Practice Question Bank
 
-1. **What does musical texture primarily describe?**
+1. **Which feature of a passage is captured by musical texture?**
    - A. The speed at which the beat moves.
    - B. How musical lines or sound layers are arranged and interact.
    - C. The color or quality of one instrument's sound.

@@ -30,7 +30,7 @@ The distinction between meter and beat helps clarify a common confusion. Beat an
 
 ### Rhythm, meter, and tempo describe different features
 
-These terms all involve musical time, but they should not be used as synonyms. Rhythm concerns the durations and placements of sounds and silences. A melody with one long sound followed by two short sounds has a rhythmic shape whether or not a steady pulse is prominent. Meter concerns the repeated grouping of a pulse. Tempo concerns the rate at which the pulse moves. If the beats move more quickly but still return in groups of four, tempo has changed while the basic grouping may remain the same. If the pulse continues at the same rate but a passage moves from groups of three to groups of four, the meter has changed.
+These terms all involve musical time, but they should not be used as synonyms. Rhythmic patterns arise from the lengths and placements of sounds and silences. A melody with one long sound followed by two short sounds has a rhythmic shape whether or not a steady pulse is prominent. Meter concerns the repeated grouping of a pulse. Tempo concerns the rate at which the pulse moves. If the beats move more quickly but still return in groups of four, tempo has changed while the basic grouping may remain the same. If the pulse continues at the same rate but a passage moves from groups of three to groups of four, the meter has changed.
 
 This separation makes listening descriptions more precise. Suppose an accompaniment supplies four regular pulses per group, while a singer begins a phrase on the second pulse and holds the final syllable over the return of the next group. The singer’s entrances and durations belong to rhythm. The recurring four-pulse framework belongs to meter. If the accompaniment accelerates, that is a tempo change. More than one of these things can change at once, but naming each change keeps the explanation testable.
 
@@ -58,7 +58,7 @@ As skills develop, meter can connect listening, performance, and notation. For a
 
 ## Key Vocabulary
 
-- **Beat:** A regularly recurring musical pulse that can provide a reference for listening or performing.
+- **Beat:** A regularly recurring musical pulse that can provide a reference for listening, counting, movement, or performing.
 - **Meter:** A recurring grouping of beats that creates relatively stronger and weaker positions.
 - **Measure (bar):** One written group of beats, separated from adjacent groups by bar lines in common Western notation.
 - **Downbeat:** The first beat of a measure, commonly heard as the beginning of a metrical group.
@@ -105,7 +105,7 @@ Meter is the recurring grouping of a pulse, not another word for rhythm or tempo
 
 ## Practice Question Bank
 
-1. **What does meter describe most directly?**
+1. **When listening for meter, which structural feature are you identifying?**
    - A. The speed at which the musical pulse moves.
    - B. The recurring grouping of beats into relatively stronger and weaker positions.
    - C. The instrument that supplies the lowest pitches.

@@ -62,9 +62,9 @@ As you listen, avoid treating a single label as a final explanation. Saying that
 - **Duration:** The relative length of a sounding event or a silence within a musical passage.
 - **Onset:** The moment at which a musical sound begins, whether it is produced by a voice, instrument, or other source.
 - **Rest:** A notated or perceived span of silence that occupies time within a musical pattern.
-- **Beat:** A regular pulse in music that a listener may perceive and tap or move along with.
+- **Beat:** A regularly recurring musical pulse that can provide a reference for listening, counting, movement, or performing.
 - **Meter:** A recurring organization of beats into a hierarchy or grouping with relatively stronger and weaker positions.
-- **Tempo:** The rate at which a perceived beat moves, commonly described as faster or slower.
+- **Tempo:** The rate or relative speed at which a musical pulse moves through time, rather than its loudness.
 - **Syncopation:** A rhythmic effect that challenges an expected metrical hierarchy through timing, accent, rest, or duration.
 
 ## Eli-10

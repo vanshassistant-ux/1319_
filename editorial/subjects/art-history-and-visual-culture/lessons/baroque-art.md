@@ -88,7 +88,7 @@ Baroque is a flexible, contested framework for varied early modern art, not a un
 
 ## Practice Question Bank
 
-1. **Which statement best describes Baroque in this lesson?**
+1. **Why should Baroque function as a research frame rather than a recipe for visual effects?**
    - A. A broad, contested label for varied early modern practices that still requires place- and object-specific analysis.
    - B. A fixed formula requiring every work to use dark backgrounds and swirling figures.
    - C. A name that seventeenth-century artists everywhere used for themselves.
@@ -131,8 +131,8 @@ Baroque is a flexible, contested framework for varied early modern art, not a un
 ## Related Topics
 
 - Renaissance Art
-- Rococo Art
-- Art and Colonialism
+- Modern Art
+- Art and Politics
 
 ## Editorial Metadata
 

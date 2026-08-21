@@ -47,8 +47,8 @@ In real inquiry, sources matter. Much of what people believe comes from testimon
 - **Epistemology:** the branch of philosophy that investigates knowledge, belief, justification, truth, sources, and limits of knowing.
 - **Belief:** a mental attitude in which a person takes a statement to be true.
 - **Justification:** reasons, evidence, or support offered for holding a belief.
-- **Conceptual analysis:** testing an account of a concept by identifying proposed conditions and examining whether they fit relevant cases.
-- **Counterexample:** a case that shows a proposed statement, definition, or argument fails to cover the cases it claims to cover.
+- **Conceptual analysis:** Careful examination of a concept’s meaning, proposed conditions, boundaries, and relations to other concepts, including whether those conditions fit relevant cases.
+- **Counterexample:** a case that meets stated conditions but conflicts with a claim or conclusion, testing whether the claim is too broad, too narrow, or logically invalid.
 - **A priori:** characterized as knowable independently of particular experience.
 - **A posteriori:** characterized as knowable only through experience, observation, or evidence about the world.
 - **Propositional knowledge:** knowledge that a statement or proposition is true; often called knowledge of facts.

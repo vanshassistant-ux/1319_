@@ -142,7 +142,7 @@ Baroque music is a broad historical category, not one fixed sound. Listen for th
 ## Related Topics
 
 - Classical Period
-- Opera Basics
+- Classical Music Overview
 - Orchestra
 - Harmony
 

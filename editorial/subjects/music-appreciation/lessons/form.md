@@ -53,14 +53,14 @@ Finally, separate description from interpretation. “The chorus returns after e
 ## Key Vocabulary
 
 - **Form:** The organization of musical elements and sections through time in a piece.
-- **Section:** A recognizable span of music that functions as part of a larger musical design.
+- **Section:** A recognizable group within a larger musical whole; in form it is a span of material, and in an orchestra it is a family of related instruments.
 - **Repetition:** The return of musical material or a section that listeners can recognize as related.
 - **Contrast:** A noticeable difference between musical sections, such as a new melody or changed material.
 - **Variation:** A changed presentation of familiar musical material that retains a recognizable relationship to it.
 - **Binary form:** An introductory two-section layout commonly labeled AB, with contrasting A and B sections.
 - **Ternary form:** An introductory three-part layout commonly labeled ABA, in which opening material returns after contrast.
-- **Chorus or refrain:** A section that normally returns with the same lyrics and music within a given song.
-- **Verse:** A song section generally heard once, often with changing lyrics across successive verses.
+- **Chorus or refrain:** A context-dependent musical term that can name a recurring song section, a complete traversal of a tune’s form in jazz, or a group of singers; in song analysis, refrain is sometimes used for the recurring section.
+- **Verse:** A song section that commonly changes text or material from one return to the next; local practices and songs vary.
 
 ## Eli-10
 
@@ -99,7 +99,7 @@ Form is the time-based organization of a piece. Trace what repeats, contrasts, a
 
 ## Practice Question Bank
 
-1. **What does musical form primarily describe?**
+1. **When a listener traces returns and contrasts across a piece, what are they analyzing?**
    - A. The loudness of one instrument.
    - B. The organization of musical elements and sections through time.
    - C. The tone color of a particular voice.

@@ -37,7 +37,7 @@ An objection can challenge a premise, reveal ambiguity, identify an unstated ass
 - **Conclusion:** the claim supported.
 - **Inference:** the reasoning connection from premises to conclusion.
 - **Validity:** a deductive form in which true premises cannot yield a false conclusion.
-- **Counterexample:** a case that shows a stated claim or form fails.
+- **Counterexample:** a case that meets stated conditions but conflicts with a claim or conclusion, testing whether the claim is too broad, too narrow, or logically invalid.
 - **Objection:** a reason to question an argument.
 - **Reconstruction:** presenting an argument’s structure clearly and faithfully.
 
@@ -82,7 +82,7 @@ Evaluate both the link from premises to conclusion and the quality of the premis
 
 ## Sources
 
-- OpenStax, [Arguments](https://openstax.org/books/introduction-philosophy/pages/5-3-arguments), [How Do Philosophers Arrive at Truth?](https://openstax.org/books/introduction-philosophy/pages/1-2-how-do-philosophers-arrive-at-truth), and [Types of Inferences](https://openstax.org/books/introduction-philosophy/pages/5-4-types-of-inferences).
+- OpenStax, [Arguments](https://openstax.org/books/introduction-philosophy/pages/5-3-arguments), [How Do Philosophers Arrive at Truth?](https://openstax.org/books/introduction-philosophy/pages/1-2-how-do-philosophers-arrive-at-truth), [Philosophical Methods for Discovering Truth](https://openstax.org/books/introduction-philosophy/pages/5-1-philosophical-methods-for-discovering-truth), and [Types of Inferences](https://openstax.org/books/introduction-philosophy/pages/5-4-types-of-inferences).
 - Open Logic Project, [Chapter 1: Arguments](https://forallx.openlogicproject.org/html/Ch1.html).
 
 ## Related Topics

@@ -47,7 +47,7 @@ Reasoning can also explain: an observation is given and a proposed explanation i
 - **Validity:** a deductive form in which true premises cannot yield a false conclusion.
 - **Deduction:** reasoning that aims to make its conclusion necessary given its premises.
 - **Induction:** reasoning in which evidence makes a conclusion more or less probable rather than certain.
-- **Counterexample:** a case with true premises and false conclusion that shows a deductive form is invalid.
+- **Counterexample:** a case that meets stated conditions but conflicts with a claim or conclusion, testing whether the claim is too broad, too narrow, or logically invalid.
 - **Premise:** a statement, such as evidence, a definition, or a principle, offered to support a conclusion in an argument.
 - **Conclusion:** the claim support is intended to establish.
 

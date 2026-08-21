@@ -45,7 +45,7 @@ An introductory map should also not imply that only one historical tradition has
 - **Conclusion:** the statement an argument is intended to support.
 - **Assumption:** a claim an argument relies on without fully defending.
 - **Objection:** a reason to doubt a claim, premise, inference, or implication.
-- **Conceptual analysis:** examination of a concept’s meaning, boundaries, and relations.
+- **Conceptual analysis:** Careful examination of a concept’s meaning, proposed conditions, boundaries, and relations to other concepts, including whether those conditions fit relevant cases.
 
 ## Eli-10
 

@@ -132,7 +132,7 @@ Expressionism is a historically specific early twentieth-century tendency, not a
 ## Related Topics
 
 - Modern Art
-- Abstraction
+- Abstract Art
 - Visual Analysis
 
 ## Editorial Metadata

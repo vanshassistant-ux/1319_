@@ -45,11 +45,11 @@ A practical workflow is simple. Spend time looking before reading a label. Make 
 ## Key Vocabulary
 
 - **Visual analysis:** A close, evidence-based study of how visible features of a work are arranged and what effects those relationships may create.
-- **Formal analysis:** Another name often used for visual analysis, emphasizing the study of form and visible organization rather than beginning with subject matter or historical context.
+- **Formal analysis:** Close examination of a work's visible or material features and their relationships as evidence for a limited interpretation.
 - **Close looking:** Sustained attention to details, relationships, and conditions that can be observed or directly documented in a work.
 - **Composition:** The arrangement and relationship of parts within a work, including placement, grouping, spacing, and directional cues.
 - **Visual weight:** The relative pull an area has on attention because of qualities such as size, contrast, color, texture, or placement.
-- **Emphasis:** A relationship in a composition that makes one area stand out or function as a focal point.
+- **Emphasis:** A compositional relationship that draws attention toward one or more areas of a work.
 - **Pictorial space:** The way a two-dimensional image organizes flatness, depth, distance, overlap, or the suggestion of a three-dimensional setting.
 - **Analytic claim:** A reasoned statement about how observed features may create an effect, supported by named visual evidence.
 

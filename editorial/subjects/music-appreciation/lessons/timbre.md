@@ -57,7 +57,7 @@ The best final claim is modest and testable. For example: “At the chorus, the 
 - **Fundamental pitch:** The lowest-frequency pitch in a complex musical tone, usually heard as the tone's main pitch.
 - **Overtone:** An additional pitch sounding above a fundamental pitch that contributes to a sound's characteristic quality.
 - **Sound source:** The voice, instrument, electronic device, or other means that produces the sound being heard.
-- **Dynamics:** The loudness level or change in loudness of a musical sound or passage.
+- **Dynamics:** The relative loudness of a musical sound or passage and the changes in loudness over time.
 - **Articulation:** The manner in which a note begins and ends, such as smoothly, abruptly, or with emphasis.
 - **Acoustic ambience:** The audible effect of a surrounding space on sound, including where it comes from and how much echo is heard.
 

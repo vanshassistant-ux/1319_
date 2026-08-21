@@ -106,7 +106,7 @@ Art is best approached as a context-sensitive category, not a universal checklis
    D. Replace the claim with a statement about the banner's market price.
    **Answer: C.** The motif is an observation; the asserted universal symbolism is an interpretation that needs support. Visual details matter, but they do not automatically fix a single meaning, and price does not answer the interpretive question.
 
-3. **Which claim is an evaluation rather than an observation or an evidence-based interpretation?**
+3. **Which sentence gives a personal value judgment rather than a claim based on visible or documented evidence?**
    A. The work uses fired clay and a carved surface.
    B. A catalogue records that the work was displayed in a seasonal ceremony.
    C. The repeated figures may relate to the documented ceremony, although more evidence is needed to specify their role.

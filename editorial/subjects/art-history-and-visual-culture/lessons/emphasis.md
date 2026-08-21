@@ -101,7 +101,7 @@ Emphasis describes how a work directs attention. Identify the visible relationsh
    - D. The muted field has no role in the composition.
    - **Answer: C.** The claim identifies visible relationships and qualifies the effect.
 
-3. **Why can a work have contrast without one dominant focal area?**
+3. **A composition repeats sharp shifts of hue and value across its full surface. What does this demonstrate about the relationship between contrast and emphasis?**
    - A. Contrast can occur only at a focal area.
    - B. A work with contrast cannot use repetition.
    - C. All focal areas must be centrally placed.
@@ -115,7 +115,7 @@ Emphasis describes how a work directs attention. Identify the visible relationsh
    - D. The camera used was expensive.
    - **Answer: A.** Centering, value contrast, isolation, and converging edges are visible relationships that can direct attention.
 
-5. **Which statement best limits an emphasis claim?**
+5. **When a vivid central form first catches the eye, which conclusion remains appropriately cautious?**
    - A. A focal area proves the complete historical meaning of a work.
    - B. Every viewer must notice the same focal area first.
    - C. An emphasized figure always reveals the artist's private beliefs.

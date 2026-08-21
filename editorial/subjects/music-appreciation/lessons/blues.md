@@ -1,0 +1,158 @@
+# Blues
+
+## In 30 Seconds
+
+Blues is a secular African American musical genre with roots in the rural U.S. South near the end of the nineteenth century. It is not one mood, instrument, or formula. Many blues performances use a repeated 12-bar harmonic cycle and an AAB lyric pattern, but those are common conventions rather than requirements. Listen for repetition and variation, pitch inflection, rhythm, voice, accompaniment, and the particular performance’s social and historical context.
+
+## Why This Matters
+
+Blues is central to a careful account of U.S. music history and to many later musical currents, but it is often oversimplified as merely sad music or a three-chord template. Studying it develops two habits that matter in all music appreciation: recognize a recurring pattern, then ask how a particular artist bends, expands, or avoids it. It also connects formal listening to questions of history, community, migration, recording, and cultural credit. Those habits support later work on jazz, popular music, music and culture, and listening analysis.
+
+## Learning Objectives
+
+- Describe blues as an African American secular genre with late-nineteenth-century Southern roots.
+- Distinguish a common 12-bar/AAB blues convention from a universal definition of blues.
+- Explain the roles of tonic, subdominant, and dominant in a basic I-IV-V blues progression.
+- Identify useful listening evidence such as repeated text, harmonic cycle, pitch inflection, instrumentation, and context.
+- Analyze a fictional performance without reducing blues to sadness, a single region, or one instrumental sound.
+
+## The College Version
+
+### A genre with history, not a mood label
+
+Blues is a secular African American musical genre whose recognizable roots reach to the rural American South in the late nineteenth century. That historical grounding matters. The word *blues* is sometimes used casually to mean sadness, but a genre is not defined only by a listener’s feeling. The Library of Congress describes blues songs as addressing varied topics and emotions and warns against the assumption that they concern only sorrow and protest. Love, separation, movement, work, hardship, humor, desire, local events, and social conditions can all be part of a blues performance. A minor key or a slow tempo can contribute to a particular atmosphere, but neither is a reliable definition of the genre.
+
+The history is equally more complicated than a single origin-story slogan. Blues developed through African American musicians and communities in the aftermath of slavery and alongside many musical practices in the South. Introductory histories point to relationships with spirituals, work songs, field hollers, and dance music. Relationship does not mean that one style can simply be collapsed into another. A spiritual is not automatically a blues song; a work song is not automatically a blues song. The productive question is how musicians, audiences, places, and circumstances shaped musical practices over time. Naming African American creation and experience clearly is necessary, while remembering that the genre has always contained different regional, urban, rural, commercial, social, and artistic settings.
+
+Early documentation and recording did not capture every prior performance. The Library of Congress notes that no recordings of blues songs survive from before the 1910s, while a recognizably blues style was already being played and sung by African American musicians in the Southern United States by the 1890s. This is a useful historical lesson: a recording date is evidence about a recording, not automatic proof of a style’s first appearance. Ask what source identifies, what its limits are, and whose activity may be absent from the record.
+
+### The 12-bar blues: a map, not a border fence
+
+Many beginners meet blues through a 12-bar pattern. A bar, also called a measure, is a repeating unit used to organize beats in notation and listening. In a basic 12-bar blues, a harmonic cycle lasts twelve bars and is built mainly from three functions: tonic (I), subdominant (IV), and dominant (V). In a key of C, those labels correspond to chords built on C, F, and G. One common classroom version can be summarized as I–IV–I–V–IV–I across three four-bar groups. The details vary by arrangement, key, era, and performer, but the model can help a listener hear when the cycle returns.
+
+A common lyric design is called AAB. A line or musical idea is stated (A), repeated or varied (A), and followed by a responding or completing line (B). The repetition can establish a problem, image, rhythm, or verbal expectation; the final line can answer, sharpen, redirect, or complicate it. This is a listening relationship, not merely a lettering exercise. Rather than trying to recite chord names while music passes by, listen first for whether a line returns and for the change that follows.
+
+The important qualification is that a convention is not a membership test. LOUIS’s music-appreciation text explicitly notes that blues may be used loosely for a bluesy sound even when a piece does not follow a twelve-bar form. Performers also vary chord choices, lengths, verses, phrase shapes, instrumental textures, and vocal delivery. A twelve-bar cycle may appear in jazz, rock, or other music; its presence alone does not settle genre. Conversely, a work associated with blues may not conform to the exact classroom progression. Use the pattern as a map that focuses attention, not as a fence that excludes music before you have listened and learned the context.
+
+### Sound, voice, and performance setting
+
+Blues listening benefits from separating several observations. First, notice form: do you hear a repeating cycle, repeated text, a refrain, or a return to a familiar musical point? Second, notice pitch and phrasing. Writers often call certain lowered, bent, slurred, or otherwise inflected pitches *blue notes*. The term describes a family of expressive practices rather than one mandatory note that can be mechanically located in every performance. Say what you hear—for example, a singer sliding into a pitch or a guitar sustaining a bent note—before declaring that a rule has been met.
+
+Third, attend to timbre and interaction. Early recordings often feature a vocalist who accompanies themself on acoustic guitar, but musicians also used harmonica, banjo, mandolin, fiddle, piano, and small ensembles. A solo voice can make a performance feel intimate, yet blues was also played in social settings where people danced and gathered. Instrumentation is therefore evidence about one performance, not a basis for treating all blues as solo acoustic guitar. In later settings, amplification, drums, bass, keyboards, horns, and full bands changed the soundscape without erasing the genre’s history.
+
+Urban and rural labels can be useful historical descriptions but are not value rankings. By the 1920s, urban singers such as Ma Rainey and Bessie Smith were recording and popularizing blues in arranged settings. During and after World War II, musicians in cities including Chicago and Memphis developed electrified blues and rhythm-and-blues practices. These histories remind us that migration, venues, technology, and audiences affect sound. They do not justify a story in which one version is authentic and every later version is a dilution. A better question is specific: what people, place, medium, ensemble, and musical choices are audible or documented in this performance?
+
+### A method for listening and making claims
+
+Start with what can be observed. Count a possible phrase or repeated harmonic unit only if the audio supports it; identify a voice and instruments when you can hear them; note whether a lyric returns; and describe the pacing, texture, and pitch inflection without assuming a feeling or a genre label. Then connect these details to a reliable identification of the performer, recording, date, and setting. A catalog entry, liner note, archive description, or credible music-history source may answer questions that audio alone cannot.
+
+Imagine a recording in which a singer delivers one line, repeats nearly the same words, then answers with a new line while guitar accompaniment returns to a familiar cadence. That evidence makes AAB and a recurring blues-like cycle plausible listening descriptions. It does not prove the work has exactly twelve bars unless you trace the units, and it does not give you permission to guess the recording’s city, year, or subgenre. Precise language is stronger than overclaiming: “I hear an AAB-like text pattern and repeated harmonic return” is often better than “This must be Delta blues from a specific decade.”
+
+The same care applies to influence. Blues has broad influence in popular music, and blues forms have been used in jazz, rhythm and blues, rock and other settings. Influence is not ownership: later artists and genres have their own histories, and a similarity does not make every later song blues. Listen for the particular evidence, situate it in history, and credit the African American traditions from which this genre developed.
+
+## Key Vocabulary
+
+- **Blues:** A diverse secular African American musical genre with roots in the late-nineteenth-century rural U.S. South and many later styles and settings.
+- **12-bar blues:** A common twelve-measure harmonic cycle associated with blues, often organized around tonic, subdominant, and dominant functions.
+- **AAB form:** A lyric or phrase pattern in which an opening idea is stated, repeated or varied, and followed by a responding or completing idea.
+- **Tonic:** The home pitch or chord function of a key, labeled I in Roman-numeral analysis.
+- **Subdominant:** A chord function commonly labeled IV that moves away from the tonic in many tonal progressions.
+- **Dominant:** A chord function commonly labeled V that often creates a sense of motion toward the tonic.
+- **Blue note:** An expressive pitch inflection—often lowered, bent, or slurred relative to an expected major/minor framework—whose use varies by performance.
+- **Timbre:** The quality or color of a sound that helps distinguish one voice or instrument from another.
+
+## Eli-10
+
+The blues is a big family of music created by African American musicians, with important roots in the Southern United States more than a century ago. It is not just music for feeling sad. A blues song can tell a story, joke, complain, celebrate, remember a place, or show many feelings at once.
+
+Some blues songs use a repeating musical plan that lasts twelve bars. You might hear a singer say a line, say it again, and then give a different line that answers it. But not every blues performance has the same plan. Musicians can change the chords, the instruments, the speed, and the way they sing or play.
+
+When you listen, notice what really happens: Which words repeat? Does the guitar or piano return to a familiar point? Does a singer slide into a note? What instruments are present? Those details help you describe the music honestly.
+
+## Eli's Analogy
+
+A common 12-bar blues pattern is like a route around a neighborhood block. You can recognize when the walker comes back to a familiar corner, but different people can walk at different speeds, talk to different neighbors, take small detours, or carry different things along the way.
+
+Music is not a route with one fixed destination. Some blues performances do not use twelve bars at all, and the analogy cannot convey the history, voice, sound, community, or expressive choices that make each performance meaningful.
+
+## Worked Example
+
+A listener hears a vocalist sing, “I missed the train this morning,” repeat nearly the same line, and then add a new line about walking home. Underneath, a guitar returns to a familiar cadence after three short groups of measures. The listener can responsibly say that the text sounds AAB-like and that the accompaniment may be following a common blues cycle. The listener should not claim that every blues song has this shape, or identify the performer’s place and decade without a source. On a second listen, the listener notices a slide into a note and a brief guitar response after the vocal line. Those are concrete observations that can support a fuller description of phrasing and interaction.
+
+## Common Mistakes
+
+- **Defining blues as music that is only sad.** Blues can address hardship and loss, but its topics and emotions are varied and can include humor, desire, travel, resilience, and social commentary.
+- **Treating a 12-bar I-IV-V pattern as a rule every blues performance must obey.** It is an important common convention and listening tool, not a universal definition of blues.
+- **Assuming blues is always rural, acoustic, and performed by one person.** Blues has rural and urban histories and has used solo, small-ensemble, arranged, acoustic, and electric settings.
+- **Using one audible clue to assign a precise region, year, or subgenre.** Describe what you hear, then use reliable documentation for historical identification.
+- **Erasing African American creators while discussing later influence.** Name the genre’s African American roots and treat later musical relationships as historically specific rather than generic borrowing.
+
+## Compare / Contrast
+
+| A | B | Distinction |
+| --- | --- | --- |
+| Blues as a genre | 12-bar blues as a form | The genre includes historical, cultural, stylistic, and performance diversity; the form is one common repeating harmonic design that may occur within or beyond blues. |
+| AAB lyric design | Verse/chorus design | AAB repeats an opening idea before a responding line, while verse/chorus design typically alternates changing verses with a recurring chorus; either can involve repetition. |
+| Listening evidence | Historical identification | Audio may reveal repetition, timbre, and phrasing; a source is normally needed to establish performer, date, place, and context. |
+
+## Key Takeaway
+
+Blues is a diverse African American secular genre with deep historical roots, not a synonym for sadness or a single chord formula. Use 12-bar, AAB, pitch inflection, instrumentation, and context as careful listening tools, then let the particular performance guide your claim.
+
+## Practice Question Bank
+
+1. **Which statement best describes blues in this lesson?**
+   - A. A diverse secular African American musical genre with late-nineteenth-century Southern roots.
+   - B. A name for any song in a minor key.
+   - C. A twelve-bar chord progression with no cultural history.
+   - D. A style performed only by solo acoustic guitarists.
+   - **Answer:** A. The lesson identifies blues as a historically grounded, diverse African American genre. A minor key, a form, or a particular instrument may be relevant in some music but cannot define the whole genre.
+
+2. **What does the AAB pattern describe in a common blues context?**
+   - A. Three instruments entering in alphabetical order.
+   - B. A required list of three chord names.
+   - C. An opening line or idea stated, repeated or varied, then answered or completed by a different line.
+   - D. A rule that every verse must have exactly twelve words.
+   - **Answer:** C. AAB is a common textual or phrase design: an A idea is heard twice, then a B idea responds or completes it. It is neither an instrument order nor a word-count rule.
+
+3. **A recording repeats a vocal line, adds a new answering line, and returns to a familiar harmonic cadence. Which is the most careful analysis?**
+   - A. The performance cannot be blues because its exact date is unknown.
+   - B. The repeated line proves every blues performance has the same form.
+   - C. The recording must be a specific regional style solely because a guitar is present.
+   - D. The listener can describe AAB-like text and a recurring blues-like cycle, while avoiding unsupported claims about exact style or origin.
+   - **Answer:** D. The audible details support a qualified description of pattern and return. They do not establish an exact region, date, or subgenre, and one recording cannot define all blues.
+
+4. **Why is it inaccurate to define blues solely as sad music?**
+   - A. Blues lyrics never address difficult experiences.
+   - B. Blues songs can address varied subjects and emotions, including hardship without being limited to it.
+   - C. All blues is intended only for dancing.
+   - D. A blues song cannot have words.
+   - **Answer:** B. Hardship and loss are present in many blues songs, but authoritative accounts stress a much wider emotional and thematic range. The other choices create false absolutes.
+
+5. **Which conclusion best distinguishes a blues genre from a 12-bar blues form?**
+   - A. They are interchangeable terms with identical meanings.
+   - B. Only twelve-bar performances can have African American historical roots.
+   - C. A 12-bar I-IV-V pattern is a common form that can help listeners, whereas blues is a broader genre with varied histories and practices.
+   - D. A blues genre has no recurring musical patterns.
+   - **Answer:** C. The form is a useful but non-universal musical convention. Blues is broader: it includes historical, cultural, stylistic, and performance diversity. The other options falsely collapse or separate the concepts.
+
+## Sources
+
+- [Library of Congress, “Introduction - Blues: Resources in the American Folklife Center”](https://guides.loc.gov/folklife-blues) — reference-only historical support.
+- [Library of Congress, “Blues”](https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/popular-songs-of-the-day/blues/) — reference-only genre and theme support.
+- [LOUIS Music Appreciation, “Vernacular Music of the Americas”](https://louis.pressbooks.pub/musicappreciation/chapter/vernacular-music-of-the-americas/) — CC BY 4.0 source, used for original synthesis.
+- [LOUIS Music Appreciation, “How Music Is Created”](https://louis.pressbooks.pub/musicappreciation/chapter/how-music-is-created/) — CC BY 4.0 source, used for original synthesis.
+
+## Related Topics
+
+- Jazz
+- Popular Music
+- Music and Culture
+
+## Editorial Metadata
+
+- **Topic ID:** `music-appreciation:foundations:blues`
+- **Editorial status:** `READY_TO_PUBLISH`
+- **Research status:** Source-verified original synthesis
+- **Rights status:** Library of Congress sources are reference-only; LOUIS CC BY sources informed original prose; no source prose or media was adapted.
+- **Researched:** 2026-08-20

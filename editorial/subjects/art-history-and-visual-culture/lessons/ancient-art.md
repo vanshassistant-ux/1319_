@@ -88,7 +88,7 @@ Ancient art is a broad starting label, not a single story about the past. Study 
 
 ## Practice Question Bank
 
-1. **Which statement best describes “ancient art” as used in this lesson?**
+1. **Why is a wide chronological label insufficient when identifying an ancient object?**
    - A. One uniform style practiced everywhere before the modern era.
    - B. A broad modern label for many historically distinct practices that requires more precise context.
    - C. A category limited to Greek and Roman marble sculpture.
@@ -132,8 +132,8 @@ Ancient art is a broad starting label, not a single story about the past. Study 
 ## Related Topics
 
 - Visual Analysis
-- Art and Culture
-- Prehistoric Art
+- What Is Art?
+- Egyptian Art
 
 ## Editorial Metadata
 

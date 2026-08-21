@@ -99,7 +99,7 @@ Film language is the evolving set of formal choices through which moving-image w
 
 ## Practice Question Bank
 
-1. **Which statement best defines film language for introductory analysis?**
+1. **In an introductory film response, which combination of coordinated choices is called film language?**
    - A. A universal dictionary in which each camera angle has one permanent meaning
    - B. A list of actors' spoken lines
    - C. Evolving conventions and formal choices through which moving-image works organize images, sound, time, and information

@@ -88,7 +88,7 @@ Impressionism joins visual experiments with institutional and social change. Ana
 
 ## Practice Question Bank
 
-1. **Which statement best describes Impressionism in this lesson?**
+1. **What makes the independent exhibitions essential evidence when placing a painting within Impressionism?**
    - A. A varied movement tied to independent Paris exhibitions and experiments with modern subjects, light, color, and brushwork.
    - B. A fixed style in which every artist painted outdoors with identical marks.
    - C. Any nineteenth-century painting with a bright palette.
@@ -130,9 +130,9 @@ Impressionism joins visual experiments with institutional and social change. Ana
 
 ## Related Topics
 
-- Realism
-- Post-Impressionism
 - Modern Art
+- Photography
+- Color
 
 ## Editorial Metadata
 

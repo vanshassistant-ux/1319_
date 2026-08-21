@@ -30,7 +30,7 @@ Not every musical practice organizes pitch in the same way or gives harmony the 
 
 ### Chords and progressions give harmony changing shapes
 
-In the cited introductory text, a chord is a group of three or more pitches played or sung together. A three-note chord built from stacked thirds is called a triad in common Western terminology. This lesson does not require you to identify every chord quality or spell notes on a staff. Instead, begin by recognizing the listening event: several pitches arrive together, continue together, or are replaced by a new simultaneous grouping.
+In the cited introductory text, a chord brings together three or more pitches played or sung at once. A three-note chord built from stacked thirds is called a triad in common Western terminology. This lesson does not require you to identify every chord quality or spell notes on a staff. Instead, begin by recognizing the listening event: several pitches arrive together, continue together, or are replaced by a new simultaneous grouping.
 
 A series of chords is called a chord progression. Progressions let harmony unfold through time even though each individual chord is vertical. A listener may hear a repeated four-chord pattern, a lingering chord beneath a phrase, or faster chord changes near a transition. The pattern of how often chords change is sometimes called harmonic rhythm. It is different from the rhythm of individual instruments: an arpeggiated accompaniment may play many notes while outlining one chord, whereas a band may strike a new chord only once each measure.
 
@@ -105,7 +105,7 @@ Harmony concerns pitch relationships that sound together. Listen for simultaneou
 
 ## Practice Question Bank
 
-1. **What does harmony describe most directly?**
+1. **When several pitches sound together, what musical relationship is at issue?**
    - A. The speed of a musical pulse.
    - B. Pitches sounding together and the relationships they create.
    - C. The succession of one melodic line’s pitches only.

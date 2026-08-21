@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-In the introductory Western-theory framework used here, a chord is a group of three or more pitches sounding together. A triad is a common three-note chord whose pitches can be arranged in thirds; in compact root position, its notes are called root, third, and fifth. Chords can be played at once or outlined one note at a time as arpeggios. Their arrangement, bass note, and quality can vary, so a listener should distinguish a new chord from a new way of presenting the same underlying chord.
+In the introductory Western-theory framework used here, a chord combines three or more pitches sounding together. A triad is a common three-note chord whose pitches can be arranged in thirds; in compact root position, its notes are called root, third, and fifth. Chords can be played at once or outlined one note at a time as arpeggios. Their arrangement, bass note, and quality can vary, so a listener should distinguish a new chord from a new way of presenting the same underlying chord.
 
 ## Why This Matters
 

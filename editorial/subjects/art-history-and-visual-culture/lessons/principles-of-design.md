@@ -118,7 +118,7 @@ Principles of design help explain how visual elements work together. Support any
    - D. Implied form
    - **Answer: A.** Different visual weights can be distributed in an asymmetrical balance.
 
-5. **Which statement best limits a formal-analysis claim?**
+5. **A critic says contrast directs attention within a composition. Which caveat should accompany that observation?**
    - A. A focal point always tells us the only meaning of a work.
    - B. Symmetry proves a work was made for one particular ritual.
    - C. If a work has unity, all of its parts must be identical.
