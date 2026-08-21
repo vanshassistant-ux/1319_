@@ -1,5 +1,44 @@
 [
   {
+    "id": "anthropic-privacy-policy",
+    "title": "Anthropic Privacy Policy",
+    "provider": "Anthropic",
+    "url": "https://www.anthropic.com/legal/privacy",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl 2026-08-21. Supports (time-anchored to the policy as read): the categories of data used to develop Anthropic's language models include internet datasets, data obtained through commercial agreements, and 'Data that our users or crowd workers provide, including Inputs and Outputs from our Services (unless users opt out)'; the company states it collects and uses personal data to develop its models and applies technical and organizational security measures to protect personal data from loss, misuse, and unauthorized access, disclosure, alteration, or destruction. Used for the training-on-user-inputs claim and the general opt-out framing; the lesson notes that policies differ by provider and change over time."
+  },
+  {
+    "id": "anthropic-prompting-best-practices",
+    "title": "Prompting best practices",
+    "provider": "Anthropic",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via the page's .md endpoint on 2026-08-21. Supports: being specific about the desired output enhancing results and the more precisely a request is explained the better the result; the golden rule of showing a prompt to a colleague with minimal context; providing instructions as sequential steps; adding context to improve performance; examples as one of the most reliable ways to steer output format, tone, and structure, with 3-5 examples recommended; role prompting; separate model-specific prompting pages per model generation; and techniques that minimize hallucinations by grounding answers in investigation rather than speculation. Facts synthesized into original prose; no wording reproduced."
+  },
+  {
+    "id": "anthropic-reduce-hallucinations",
+    "title": "Reduce hallucinations (Claude Platform documentation)",
+    "provider": "Anthropic",
+    "url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live on 2026-08-21 (page text extracted from the rendered HTML). Supports: even advanced language models can generate text that is factually incorrect or inconsistent with the given context, known as hallucination, which can undermine reliability; verification with citations as the documented approach (make responses auditable by citing quotes and sources for each claim, retracting claims that lack support); allowing uncertainty as a strategy to reduce false information. Facts synthesized; no wording reproduced."
+  },
+  {
     "id": "census-acs-general-handbook-2018",
     "title": "Understanding and Using American Community Survey Data: What All Data Users Need to Know (ACS General Handbook, 2018)",
     "provider": "U.S. Census Bureau",
@@ -224,6 +263,19 @@
     "notes": "Read directly. Primary specification corroborating that ECMAScript source text contains statements."
   },
   {
+    "id": "eff-privacy-issues",
+    "title": "Privacy (Electronic Frontier Foundation issue page)",
+    "provider": "Electronic Frontier Foundation",
+    "url": "https://www.eff.org/issues/privacy",
+    "sourceType": "reference",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl 2026-08-21. Supports the general framing claim that digital technologies enable both advances in freedom and unprecedented invasions of privacy, and that privacy protections and laws have not always kept pace with new digital technologies. Used for one general framing claim only; no wording reproduced."
+  },
+  {
     "id": "elements-of-ai",
     "title": "Elements of AI — A free online introduction to artificial intelligence for non-experts",
     "provider": "University of Helsinki & MinnaLearn",
@@ -341,6 +393,19 @@
     "notes": "Read live via curl on 2026-08-21. Supports: predictive analytics uses historical data, statistical modeling, and machine learning to answer 'What might happen next?'; identifying patterns in historic and current data to predict behaviors seconds, days, or even years into the future; the workflow (define problem, acquire and organize data, pre-process, develop models, validate and deploy); regression/decision trees/neural networks as techniques; use cases including fraud detection, operational improvement (inventory forecasting), and maintenance forecasting (predicting equipment failure before it occurs). Facts synthesized into original prose; no page wording reproduced."
   },
   {
+    "id": "gdpr-eurlex",
+    "title": "Regulation (EU) 2016/679 — General Data Protection Regulation (GDPR)",
+    "provider": "European Union (EUR-Lex)",
+    "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Canonical ELI URL registered; read the CELEX HTML copy (https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679) on 2026-08-21 and verified key articles in the official text: Article 4(1) personal data definition; Article 4(11) consent as freely given, specific, informed, and unambiguous; Article 5(1)(b) purpose limitation; Article 5(1)(c) data minimisation; Article 5(1)(e) storage limitation; Article 3 territorial scope (including controllers outside the EU offering services to or monitoring data subjects in the Union); Article 15 right of access; Article 33 personal-data-breach notification. Law described generally; no individualized legal advice given."
+  },
+  {
     "id": "git-commit-doc",
     "title": "git-commit Documentation",
     "provider": "Git",
@@ -434,6 +499,32 @@
     "notes": "Read directly. Supports the branch-or-fork, focused-change, pull-request, review-feedback, and merge workflow, including the fact that later commits to the same branch update the pull request."
   },
   {
+    "id": "google-cloud-grounding-overview",
+    "title": "Grounding overview (Gemini Enterprise Agent Platform documentation)",
+    "provider": "Google Cloud",
+    "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/grounding/overview",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl with a browser user-agent on 2026-08-21 (cloud.google.com/vertex-ai/generative-ai/docs/grounding/overview redirects to this URL, which is where the document is served). Supports: grounding defined as the ability to connect model output to verifiable sources of information; grounding tethering output to provided data sources and 'reduces the chances of inventing content'; hallucinations described as 'instances where the model generates content that isn't factual'; grounding anchoring responses to data sources and providing source links for auditability. Facts synthesized into original prose; no wording reproduced."
+  },
+  {
+    "id": "google-gemini-prompt-design-strategies",
+    "title": "Prompt design strategies",
+    "provider": "Google (Gemini API documentation)",
+    "url": "https://ai.google.dev/gemini-api/docs/prompting-intro",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl with a browser user-agent on 2026-08-21. Supports: prompt design defined as creating prompts, or natural language requests, that elicit accurate, high-quality responses from a language model; prompt engineering being iterative, with guidelines as starting points to experiment and refine; clear and specific instructions; constraints that tell the model what to do and what not to do; response-format instructions; few-shot versus zero-shot prompting, including that examples show the model what getting it right looks like; and adding context to a prompt instead of assuming the model has all of the required information. Facts synthesized into original prose; no wording reproduced."
+  },
+  {
     "id": "google-ml-fairness",
     "title": "Fairness (Machine Learning Crash Course module)",
     "provider": "Google for Developers",
@@ -447,19 +538,6 @@
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-21",
     "notes": "Read live via curl on 2026-08-21; page states content is licensed CC BY 4.0, last updated 2025-08-25. Supports: human biases can be unintentionally replicated by machine learning algorithms; audit training data and evaluate predictions for bias before a model goes into production. Facts synthesized; no wording reproduced."
-  },
-  {
-    "id": "google-mlcc-fairness",
-    "title": "Fairness - Machine Learning Crash Course (Google for Developers)",
-    "provider": "Google for Developers",
-    "url": "https://developers.google.com/machine-learning/crash-course/fairness",
-    "sourceType": "documentation",
-    "usage": "REFERENCE_ONLY",
-    "attributionRequired": true,
-    "aiIngestionChecked": true,
-    "aiIngestionAllowed": false,
-    "checkedAt": "2026-08-21",
-    "notes": "Read live 2026-08-21. Supports at framing level: the module's description of identifying and mitigating human biases that can negatively affect machine learning models, examining data for potential bias before training, evaluating a model's predictions for fairness, and its units on demographic parity and equality of opportunity. Used only for the general audit-habit framing; no page wording reproduced."
   },
   {
     "id": "html-script-element",
@@ -486,6 +564,19 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Read live on 2026-08-21. IBM explainer covering structured data storage (spreadsheets, relational databases, SQL), unstructured data examples and storage (files, NoSQL, data lakes), the roughly 90 percent share of enterprise-generated data, the role of machine learning and natural language processing in extracting insight from unstructured data, and semi-structured formats (JSON, CSV, XML). Used as reference for storage/processing differences, the 90 percent figure (attributed), and AI's role; no text adapted."
+  },
+  {
+    "id": "ibm-what-are-large-language-models",
+    "title": "What are large language models (LLMs)?",
+    "provider": "IBM",
+    "url": "https://www.ibm.com/topics/large-language-models",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl with a browser user-agent on 2026-08-21. Primary source for the lesson's core claims: LLMs as deep learning models trained on immense amounts of data, capable of understanding and generating natural language; LLMs as statistical prediction machines that repeatedly predict the next word in a sequence; training starting with billions or trillions of words from books, articles, websites, code, and other text sources; tokenization into words, subwords, or characters; the transformer architecture introduced in 2017; parameters numbering in the billions or trillions; capabilities including summarizing an article, debugging code, drafting a legal clause, translation and multilingual capabilities, and explaining complex concepts in simpler terms; hallucinations as false or misleading output that sounds plausible; bias amplification and resource demands as limitations; LLMs as the most common foundation models for text generation; and popular interfaces including Claude, ChatGPT, Copilot, Llama, and Gemini. Facts paraphrased into original prose; no wording reproduced."
   },
   {
     "id": "ibm-what-is-ai-bias",
@@ -527,6 +618,19 @@
     "notes": "Read live 2026-08-21. Supports: labeling as assigning labels to raw data (images, text, video) so models can interpret it; labeling approaches including internal (manual), synthetic labeling (generating new project data from preexisting datasets), programmatic (scripts), outsourcing, and crowdsourcing (reCAPTCHA as the famous example); challenges: manual labeling expensive and time-consuming, prone to human error (coding errors, manual entry errors) that decreases data quality; 'garbage in, garbage out' framing; human-in-the-loop labelers. Facts synthesized into original lesson prose; no wording reproduced."
   },
   {
+    "id": "ibm-what-is-data-privacy",
+    "title": "What is data privacy? (IBM Think Topics explainer)",
+    "provider": "IBM",
+    "url": "https://www.ibm.com/think/topics/data-privacy",
+    "sourceType": "reference",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl 2026-08-21. Supports: data privacy (information privacy) as the principle that a person should have control over their personal data, including deciding how organizations collect, store, and use it; data privacy as focusing on the individual rights of data subjects; organizations obtaining user consent before processing data and enabling users to actively manage their data; organizations collecting personally identifiable information (PII) that is a target for hackers; and GDPR as a law creating data-privacy obligations (with U.S. state laws such as the Virginia VCDPA and Colorado CPA named). Facts synthesized; no page wording reproduced."
+  },
+  {
     "id": "ibm-what-is-data-science",
     "title": "What is Data Science?",
     "provider": "IBM",
@@ -551,6 +655,19 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Vendor documentation read live. Supports the 45-80% figure for data-preparation time with its citation of research; used as a second, independently worded source for the time-share claim."
+  },
+  {
+    "id": "ibm-what-is-digital-footprint",
+    "title": "What is a digital footprint? (IBM Think Topics explainer)",
+    "provider": "IBM",
+    "url": "https://www.ibm.com/think/topics/digital-footprint",
+    "sourceType": "reference",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl 2026-08-21. Supports: a person's digital footprint consists of the personal data they directly and indirectly share, including online account activity, browsing history, and details data brokers collect in the background. Used as the basis for the lesson's 'behavioral data' category. Facts synthesized; no wording reproduced."
   },
   {
     "id": "ibm-what-is-feature-engineering",
@@ -1787,19 +1904,6 @@
     "notes": "Read live via curl 2026-08-21. Supports that Microsoft's Responsible AI Standard is a framework built on six principles, including privacy and security, fairness, reliability and safety, inclusiveness, transparency, and accountability. Used only for the general principle that handling people's data responsibly includes privacy and security; no implementation details used."
   },
   {
-    "id": "ms-learn-clean-data-power-bi",
-    "title": "Clean, transform, and load data in Power BI",
-    "provider": "Microsoft Learn",
-    "url": "https://learn.microsoft.com/en-us/training/modules/clean-data-power-bi/",
-    "sourceType": "documentation",
-    "usage": "REFERENCE_ONLY",
-    "attributionRequired": true,
-    "aiIngestionChecked": true,
-    "aiIngestionAllowed": false,
-    "checkedAt": "2026-08-21",
-    "notes": "Read live 2026-08-21 (module overview; unit content is script-rendered). Lists among its objectives resolving 'inconsistencies, unexpected or null values, and data quality issues'. Supports the claim that missing values (nulls), duplicates, and inconsistent formats are recognized data-quality problems."
-  },
-  {
     "id": "ms-learn-clean-missing-data",
     "title": "Clean Missing Data: Component Reference - Azure Machine Learning",
     "provider": "Microsoft Learn",
@@ -1889,6 +1993,19 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Read live on 2026-08-21. Supports: generative AI powers applications that can create content, answer questions, and assist with tasks; the module's learning objectives cover core generative AI concepts, large language models, prompts, and AI agents — used to corroborate the definition and the LLM-within-generative-AI relationship. Facts synthesized; no wording reproduced."
+  },
+  {
+    "id": "mslearn-prompt-engineering-techniques",
+    "title": "Prompt engineering techniques",
+    "provider": "Microsoft Learn (Microsoft Foundry)",
+    "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/prompt-engineering",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl with a browser user-agent on 2026-08-21; the full article text rendered when fetched. Supports: text prompts as how users interact with GPT models; prompt components including instructions, primary content, few-shot examples, cues, and supporting content; the model responding with what it determines is most likely given its training data and training targets; clear instructions early in the prompt; breaking tasks into smaller steps improving performance; each model behaving differently so guidance does not apply equally to all models; and search as an affordance used to help mitigate fabricated answers. The page header carries a generic notice that some content may require authorization, but the complete article was served. Facts synthesized into original prose; no wording reproduced."
   },
   {
     "id": "nist-ai-600-1-generative-ai-profile",
@@ -2051,6 +2168,19 @@
     "notes": "Read live 2026-08-21 (Section 1.3.3.26). Supports: a scatter plot reveals relationships or association between two variables, which manifest as any non-random structure in the plot; scatter plots are the cornerstone EDA tool for uncovering relationships; no statistical procedure, scatter plot included, proves cause-and-effect, and such proof is beyond the realm of statistics. Facts synthesized; no page wording reproduced."
   },
   {
+    "id": "nist-privacy-framework-1-0",
+    "title": "NIST Privacy Framework: A Tool for Improving Privacy through Enterprise Risk Management, Version 1.0 (NIST CSWP 10)",
+    "provider": "National Institute of Standards and Technology (NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.01162020.pdf",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read directly as the nvlpubs PDF (downloaded and text-extracted 2026-08-21). Supports: the Privacy Framework as a voluntary tool to help organizations identify and manage privacy risk; privacy protections engineered into products and services; privacy achieved through seclusion, limiting observation, or individuals' control of facets of their identities (e.g., body, data, reputation); the data-processing lifecycle from collection through disposal, including retention; data minimization and destruction of data according to policy; privacy notices and consent mechanisms as risk-sharing measures; and privacy risk including problems such as embarrassment, discrimination, and economic loss."
+  },
+  {
     "id": "nist-sp-1270",
     "title": "Towards a Standard for Identifying and Managing Bias in Artificial Intelligence (NIST Special Publication 1270)",
     "provider": "National Institute of Standards and Technology (NIST)",
@@ -2169,6 +2299,32 @@
     "notes": "Read directly. Supports the distinction between qualitative variables (attributes such as hair color, eye color, religion, favorite movie; values do not imply numeric ordering) and quantitative variables (measured in terms of numbers; examples height, weight, shoe size), and the statement that qualitative variables are sometimes called categorical. No explicit license statement found on the page; used as reference only, prose fully original."
   },
   {
+    "id": "openai-prompt-engineering-guide",
+    "title": "Prompt engineering",
+    "provider": "OpenAI",
+    "url": "https://platform.openai.com/docs/guides/prompt-engineering",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl with a browser user-agent on 2026-08-21. Supports: prompt engineering defined as the process of writing effective instructions for a model so it consistently generates content that meets requirements; prompting described as a mix of art and science because model output is non-deterministic; the developer-message structure of identity, instructions, examples, and context; and the statement that different model types — and even different snapshots within the same family — may need to be prompted differently. Facts synthesized into original prose; no wording reproduced."
+  },
+  {
+    "id": "openai-text-generation-guide",
+    "title": "Text generation (OpenAI API documentation)",
+    "provider": "OpenAI",
+    "url": "https://developers.openai.com/api/docs/guides/text",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live on 2026-08-21. The docs have moved from platform.openai.com to developers.openai.com; the page's own llms.txt index confirmed the canonical URL https://developers.openai.com/api/docs/guides/text, and the content was read via its official Markdown rendering (page URL + '.md'). Supports: using a large language model to generate text from a prompt, as with ChatGPT; models generating almost any kind of text response — code, mathematical equations, structured JSON data, or human-like prose. Facts synthesized; no wording reproduced."
+  },
+  {
     "id": "openintro-ims-correlation",
     "title": "OpenIntro — Introduction to Modern Statistics (2e), Section 7.1: Fitting a line, residuals, and correlation",
     "provider": "OpenIntro (openintro.org)",
@@ -2180,32 +2336,6 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Read live web edition 2026-08-21 (Chapter 7, Section 7.1.4). Supports: correlation takes values between -1 and 1 and describes the strength and direction of the linear relationship between two variables; strong positive relationships are near +1, strong negative near -1, no apparent linear relationship near zero; correlation is unitless; nonlinear trends can produce correlations that do not reflect the strength of the relationship; correlation does not specify which variable is explanatory and which is outcome. No source prose reproduced."
-  },
-  {
-    "id": "openintro-ims-explore-numerical",
-    "title": "OpenIntro — Introduction to Modern Statistics: Exploring numerical data (Chapter 5)",
-    "provider": "OpenIntro (openintro.org)",
-    "url": "https://openintro-ims.netlify.app/explore-numerical.html",
-    "sourceType": "open-textbook",
-    "usage": "REFERENCE_ONLY",
-    "attributionRequired": true,
-    "aiIngestionChecked": true,
-    "aiIngestionAllowed": false,
-    "checkedAt": "2026-08-21",
-    "notes": "Read directly (web edition) on 2026-08-21. Supports: an outlier as an observation that appears extreme relative to the rest of the data; examining outliers helps identify data collection or data entry errors and interesting properties of the data; some datasets naturally have long skew where outlying points are not a problem; different software uses different formulas for flagging outliers; the robust-statistics section shows how an extreme observation (a 26.3% loan rate) moves the sample mean; transformations that tame extreme skew make statistical modeling easier. Used as Tier B corroboration; facts synthesized into original prose with original examples."
-  },
-  {
-    "id": "openintro-ims-exploring-numerical",
-    "title": "OpenIntro — Introduction to Modern Statistics: Exploring numerical data (Chapter 5)",
-    "provider": "OpenIntro (openintro.org)",
-    "url": "https://openintro-ims.netlify.app/explore-numerical.html",
-    "sourceType": "open-textbook",
-    "usage": "REFERENCE_ONLY",
-    "attributionRequired": true,
-    "aiIngestionChecked": true,
-    "aiIngestionAllowed": false,
-    "checkedAt": "2026-08-21",
-    "notes": "Read the live web edition 2026-08-21. Section 5.1 defines a scatterplot as a case-by-case view of data for two numerical variables in which each point represents a single case, with examples on county homeownership and loan data. Section 5.3 defines a histogram as binned counts drawn as bars, notes that higher bars show where the data are relatively more common, and discusses distribution shape (right-skewed loan interest rates). Facts synthesized; prose original."
   },
   {
     "id": "openintro-ims-exploring-numerical-data",
@@ -2230,19 +2360,6 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Read directly (web edition). Supports: numerical variables take a wide range of values for which adding, subtracting, or averaging is sensible (unemployment rate); categorical variables take categories whose possible values are called levels (state); area codes are treated as categorical because their average, sum, and difference have no clear meaning; population counts are discrete (values with jumps) while unemployment rate and height are continuous. Lesson prose and examples (weather station, bookstore) are original."
-  },
-  {
-    "id": "openintro-ims-linear-regression-slr",
-    "title": "Introduction to Modern Statistics (2e), Chapter 7: Linear regression with a single predictor",
-    "provider": "OpenIntro (openintro.org)",
-    "url": "https://openintro-ims.netlify.app/model-slr.html",
-    "sourceType": "open-textbook",
-    "usage": "REFERENCE_ONLY",
-    "attributionRequired": true,
-    "aiIngestionChecked": true,
-    "aiIngestionAllowed": false,
-    "checkedAt": "2026-08-21",
-    "notes": "Read live on 2026-08-21. Supports: linear models can be used for prediction or to describe the relationship between two numerical variables; predictions from a fitted model are estimates, e.g. an average head length predicted for possums of a given total length, and family-income-based aid predictions are imperfect because other factors play a role; section 7.2.4 'Extrapolation is treacherous' — applying a model estimate to values outside the realm of the original data is extrapolation, 'an unreliable bet that the approximate linear relationship will be valid in places where it has not been analyzed.' The possum and Elmhurst examples are referenced conceptually, not reproduced."
   },
   {
     "id": "openstax-intro-stats-1-2",
@@ -2288,21 +2405,6 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Read live via curl 2026-08-21 (Section 12.2). Supports: the scatter plot is the most common way to display the relation between two variables; a scatter plot shows the direction of a relationship (high values with high values, or high values with low values); strength is judged by how closely the points cluster. Facts synthesized; no source wording reproduced."
-  },
-  {
-    "id": "openstax-introductory-statistics-1-2",
-    "title": "Introductory Statistics, Section 1.2: Data, Sampling, and Variation in Data and Sampling",
-    "provider": "OpenStax (Rice University)",
-    "url": "https://openstax.org/books/introductory-statistics/pages/1-2-data-sampling-and-variation-in-data-and-sampling",
-    "sourceType": "open-textbook",
-    "usage": "ATTRIBUTION_REQUIRED",
-    "license": "CC BY 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-    "attributionRequired": true,
-    "aiIngestionChecked": true,
-    "aiIngestionAllowed": false,
-    "checkedAt": "2026-08-21",
-    "notes": "Read the live textbook page. Supports: data come from a population or a sample; studying an entire population often costs too much or is virtually impossible; a sample should have the same characteristics as the population; in each form of random sampling every member initially has an equal chance of selection; simple random sampling; stratified sampling (divide the population into strata and take a proportionate number from each); biased samples that are not representative give inaccurate, invalid results; samples that are too small may be unreliable and larger samples are better when possible; convenience and self-selected samples as unreliable. Facts synthesized; no passage quoted at length."
   },
   {
     "id": "owasp-authentication-cheat-sheet",

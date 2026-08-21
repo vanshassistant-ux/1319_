@@ -25,7 +25,7 @@ Training data is the set of examples a model is shown while it learns. Every exa
 
 ### The role of training data
 
-A machine learning model does not come with knowledge built in. The patterns it uses come from its training data: IBM describes machine learning as algorithms that learn the patterns of training data and then make accurate inferences about new data. A model trained on photos of ripe peaches learns what ripe peaches tend to look like; a model that never sees a bruised peach has nothing to learn about bruises. The same algorithm trained on different examples produces a different model, because the learning comes from the examples, not from the algorithm alone.
+A machine learning model does not come with knowledge built in. The patterns it uses come from its training data: IBM defines machine learning as algorithms that study patterns in training data and then draw accurate conclusions about data they have not seen. A model trained on photos of ripe peaches learns what ripe peaches tend to look like; a model that never sees a bruised peach has nothing to learn about bruises. The same algorithm trained on different examples produces a different model, because the learning comes from the examples, not from the algorithm alone.
 
 ### Quantity and quality
 

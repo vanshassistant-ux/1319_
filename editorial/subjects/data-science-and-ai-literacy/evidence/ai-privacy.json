@@ -1,0 +1,238 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:ai-privacy",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "Working definition of data privacy as control over personal data (attributed to IBM and NIST AI RMF)",
+      "The data AI uses: training data, user inputs, behavioral data",
+      "Named privacy risks: collection without clear consent, retention, re-identification, data breaches, training on user inputs",
+      "Data protection basics: GDPR and similar frameworks, consent, purpose limitation (general; no individualized advice)",
+      "General user-side habits: check privacy settings, avoid sharing sensitive information with AI tools, read what data is collected",
+      "Organizational responsibility: privacy by design, transparency, minimization"
+    ],
+    "supporting": [
+      "Privacy as a NIST AI RMF trustworthiness characteristic ('privacy-enhanced')",
+      "NIST Privacy Framework as a voluntary tool for managing privacy risk",
+      "De-identification and aggregation as risk-reducing design methods (not guarantees)",
+      "GDPR rights such as access to one's data"
+    ],
+    "outOfScope": [
+      "ai-ethics (own topic; referenced only)",
+      "data-collection (own topic)",
+      "nist-ai-risk-concepts (own topic)",
+      "Tool-specific privacy workflows or tutorials",
+      "Individualized legal, security, or medical advice"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "AI systems are built on data, and much of that data is personal data about identifiable people.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-ai-rmf-1-0", "ibm-what-is-data-privacy"],
+      "status": "supported"
+    },
+    {
+      "claim": "Data privacy is the principle that a person should have control over their personal data, including the ability to decide how organizations collect, store, and use it (working definition, attributed to IBM; consistent with NIST AI RMF's framing of privacy as individuals' agency to consent to disclosure or control of facets of their identities).",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["ibm-what-is-data-privacy", "nist-ai-rmf-1-0"],
+      "status": "supported"
+    },
+    {
+      "claim": "AI systems use three general kinds of data: training data (large collections of examples studied to learn patterns), user inputs (what a person types or uploads), and behavioral data (records of online activity such as browsing history and account activity).",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["anthropic-privacy-policy", "ibm-what-is-digital-footprint"],
+      "status": "supported"
+    },
+    {
+      "claim": "Valid consent to data processing must be freely given, specific, informed, and unambiguous; collection without such consent is a named privacy risk.",
+      "claimType": "LEGAL",
+      "sourceIds": ["gdpr-eurlex", "ibm-what-is-data-privacy"],
+      "status": "supported"
+    },
+    {
+      "claim": "Retention risk: personal data should not be kept in identifiable form longer than necessary for the purpose for which it was collected, and organizations should destroy data according to policy.",
+      "claimType": "LEGAL",
+      "sourceIds": ["gdpr-eurlex", "nist-privacy-framework-1-0"],
+      "status": "supported"
+    },
+    {
+      "claim": "AI systems can present new risks to privacy by allowing inference to identify individuals or reveal previously private information about individuals — the re-identification risk; de-identification and aggregation reduce but do not eliminate it.",
+      "claimType": "CURRENT",
+      "sourceIds": ["nist-ai-rmf-1-0"],
+      "status": "supported"
+    },
+    {
+      "claim": "Data breaches — unauthorized access to or exposure of stored personal data — are a recognized privacy risk that laws such as the GDPR require organizations to manage and, in serious cases, report to authorities.",
+      "claimType": "CURRENT",
+      "sourceIds": ["gdpr-eurlex", "ibm-what-is-data-privacy"],
+      "status": "supported"
+    },
+    {
+      "claim": "Training on user inputs: content people type into AI services can be used to train models. As of Anthropic's privacy policy read in August 2026, user inputs and outputs from its services are used to develop its models unless users opt out; policies differ by provider and change over time.",
+      "claimType": "CURRENT",
+      "sourceIds": ["anthropic-privacy-policy"],
+      "status": "supported"
+    },
+    {
+      "claim": "Data protection law, exemplified by the EU's GDPR, sets general principles including consent, purpose limitation, data minimization, and storage limitation; the GDPR applies to processing of personal data of people in the EU and, in defined circumstances, to controllers outside the EU.",
+      "claimType": "LEGAL",
+      "sourceIds": ["gdpr-eurlex", "ibm-what-is-data-privacy"],
+      "status": "supported"
+    },
+    {
+      "claim": "Organizations are expected to manage privacy risk by engineering protections into products and services (privacy by design), being transparent, and minimizing data collection; NIST's AI RMF lists privacy-enhanced among the characteristics of trustworthy AI.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-privacy-framework-1-0", "nist-ai-rmf-1-0", "gdpr-eurlex"],
+      "status": "supported"
+    },
+    {
+      "claim": "General user-side habits include checking privacy settings, reading what data is collected and for how long, and avoiding sharing sensitive information with AI tools; providers commonly offer choices such as opting out of training use.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["anthropic-privacy-policy", "ibm-what-is-data-privacy", "gdpr-eurlex"],
+      "status": "supported"
+    },
+    {
+      "claim": "Digital technologies enable large-scale collection of personal information, and privacy protections and laws have not always kept pace with the technology.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["eff-privacy-issues"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether AI providers train models on user inputs",
+      "positions": [
+        "Anthropic's privacy policy (read 2026-08-21) lists user inputs and outputs from its services among the data used to develop its models unless users opt out.",
+        "Practices differ across providers, product lines, and time; some offerings exclude certain data from training by default."
+      ],
+      "resolution": "The lesson states the training-on-inputs practice as of the cited policy, time-anchored ('as of Anthropic's 2026 policy'), and directs readers to check each provider's own policy rather than assuming a universal rule."
+    },
+    {
+      "issue": "Privacy versus security terminology",
+      "positions": [
+        "Popular discussion sometimes uses 'privacy' loosely to mean protection from hackers or encryption.",
+        "IBM distinguishes data privacy (control over personal data, individual rights) from data security (protecting data from unauthorized access)."
+      ],
+      "resolution": "The lesson keeps the distinction explicit: privacy is about control; security is about protection from unauthorized access. A vocabulary entry and a compare/contrast pair cover it."
+    },
+    {
+      "issue": "Whether removing names makes data anonymous",
+      "positions": [
+        "Some accounts treat de-identified data as safe because it contains no names.",
+        "NIST's AI RMF warns that AI inference can identify individuals or previously private information about individuals, so de-identification reduces but does not eliminate risk."
+      ],
+      "resolution": "The lesson treats de-identification and aggregation as risk-reducing design methods, not guarantees, and names re-identification as a distinct risk."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's boilerplate ('AI Privacy is a foundational concept in Data Science & Ai Literacy', 'College courses use ai privacy as a building block') was not supported by any source and was discarded.",
+    "The draft's vocabulary entries ('AI Privacy' defined as 'A foundational Data Science & Ai Literacy concept covered in this lesson') were circular and unsupported.",
+    "The draft's claim that privacy is best understood by memorizing a definition ('AI Privacy is most useful when you can define it, recognize where it applies, and explain its limits') was not supported and was replaced with a sourced working definition."
+  ],
+  "correctionsNeeded": [
+    "Replaced all generic boilerplate with source-verified content on privacy in the AI context.",
+    "Working definition now attributed to IBM's data-privacy explainer and NIST's AI RMF instead of a placeholder.",
+    "Time-anchored the training-on-user-inputs claim to Anthropic's policy read on 2026-08-21.",
+    "Dropped an unverified claim (GDPR taking effect in 2018) that was not re-verified from the fetched official text.",
+    "User guidance is stated as general habits only; no individualized advice is given.",
+    "Question bank rewritten: the draft's items had 3 options and unverifiable content; the new bank has 5 items x 4 options, keys spread across A/B/C/D, with recall and application/analysis items."
+  ],
+  "rightsIssues": [
+    "All seven sources used as REFERENCE_ONLY; no source prose adapted or quoted beyond a few short attributed phrases in the lesson record.",
+    "NIST AI RMF 1.0 and NIST Privacy Framework 1.0 are U.S. government works; the GDPR text is EU legislation; IBM, Anthropic, and EFF pages are vendor/nonprofit documentation referenced but not reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-ai-rmf-1-0",
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0), NIST AI 100-1",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read directly as the nvlpubs PDF (downloaded and text-extracted 2026-08-21). Section 3.6 'Privacy-Enhanced' supports: privacy as the norms and practices that safeguard human autonomy, identity, and dignity; individuals' agency to consent to disclosure or control of facets of their identities (e.g., body, data, reputation); privacy values such as anonymity, confidentiality, and control guiding AI design; AI systems presenting new risks to privacy by allowing inference to identify individuals or previously private information; de-identification and aggregation as data-minimizing methods; and privacy-enhanced as a characteristic of trustworthy AI alongside transparency. Reused with the identical id/URL already registered in content/phase-2/source-registry.json."
+    },
+    {
+      "id": "nist-privacy-framework-1-0",
+      "title": "NIST Privacy Framework: A Tool for Improving Privacy through Enterprise Risk Management, Version 1.0 (NIST CSWP 10)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.01162020.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read directly as the nvlpubs PDF (downloaded and text-extracted 2026-08-21). Supports: the Privacy Framework as a voluntary tool to help organizations identify and manage privacy risk; privacy protections engineered into products and services; privacy achieved through seclusion, limiting observation, or individuals' control of facets of their identities (e.g., body, data, reputation); the data-processing lifecycle from collection through disposal, including retention; data minimization and destruction of data according to policy; privacy notices and consent mechanisms as risk-sharing measures; and privacy risk including problems such as embarrassment, discrimination, and economic loss."
+    },
+    {
+      "id": "gdpr-eurlex",
+      "title": "Regulation (EU) 2016/679 — General Data Protection Regulation (GDPR)",
+      "provider": "European Union (EUR-Lex)",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Canonical ELI URL registered; read the CELEX HTML copy (https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679) on 2026-08-21 and verified key articles in the official text: Article 4(1) personal data definition; Article 4(11) consent as freely given, specific, informed, and unambiguous; Article 5(1)(b) purpose limitation; Article 5(1)(c) data minimisation; Article 5(1)(e) storage limitation; Article 3 territorial scope (including controllers outside the EU offering services to or monitoring data subjects in the Union); Article 15 right of access; Article 33 personal-data-breach notification. Law described generally; no individualized legal advice given."
+    },
+    {
+      "id": "ibm-what-is-data-privacy",
+      "title": "What is data privacy? (IBM Think Topics explainer)",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/think/topics/data-privacy",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21. Supports: data privacy (information privacy) as the principle that a person should have control over their personal data, including deciding how organizations collect, store, and use it; data privacy as focusing on the individual rights of data subjects; organizations obtaining user consent before processing data and enabling users to actively manage their data; organizations collecting personally identifiable information (PII) that is a target for hackers; and GDPR as a law creating data-privacy obligations (with U.S. state laws such as the Virginia VCDPA and Colorado CPA named). Facts synthesized; no page wording reproduced."
+    },
+    {
+      "id": "ibm-what-is-digital-footprint",
+      "title": "What is a digital footprint? (IBM Think Topics explainer)",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/think/topics/digital-footprint",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21. Supports: a person's digital footprint consists of the personal data they directly and indirectly share, including online account activity, browsing history, and details data brokers collect in the background. Used as the basis for the lesson's 'behavioral data' category. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "anthropic-privacy-policy",
+      "title": "Anthropic Privacy Policy",
+      "provider": "Anthropic",
+      "url": "https://www.anthropic.com/legal/privacy",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21. Supports (time-anchored to the policy as read): the categories of data used to develop Anthropic's language models include internet datasets, data obtained through commercial agreements, and 'Data that our users or crowd workers provide, including Inputs and Outputs from our Services (unless users opt out)'; the company states it collects and uses personal data to develop its models and applies technical and organizational security measures to protect personal data from loss, misuse, and unauthorized access, disclosure, alteration, or destruction. Used for the training-on-user-inputs claim and the general opt-out framing; the lesson notes that policies differ by provider and change over time."
+    },
+    {
+      "id": "eff-privacy-issues",
+      "title": "Privacy (Electronic Frontier Foundation issue page)",
+      "provider": "Electronic Frontier Foundation",
+      "url": "https://www.eff.org/issues/privacy",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21. Supports the general framing claim that digital technologies enable both advances in freedom and unprecedented invasions of privacy, and that privacy protections and laws have not always kept pace with new digital technologies. Used for one general framing claim only; no wording reproduced."
+    }
+  ]
+}

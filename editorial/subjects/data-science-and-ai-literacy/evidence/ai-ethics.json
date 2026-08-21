@@ -1,0 +1,140 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:ai-ethics",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "working definition of AI ethics: the study of how AI systems should be designed and used responsibly",
+      "core concerns: fairness, accountability, transparency, privacy, safety, human oversight",
+      "who is responsible: developers, deployers, users, regulators under a shared-responsibility framing",
+      "ethics vs law vs policy: what is legal may not be ethical; AI policy is still forming",
+      "frameworks in practice: NIST AI RMF and principle-based frameworks as structured approaches",
+      "the honest bottom line: ethics is an ongoing conversation, not a checklist"
+    ],
+    "supporting": [
+      "NIST's characteristics of trustworthy AI",
+      "NIST's four framework functions: Govern, Map, Measure, Manage",
+      "OECD definition of AI actors as used by NIST",
+      "Microsoft Responsible AI Standard's six principles"
+    ],
+    "outOfScope": [
+      "details of algorithmic fairness (sibling topic algorithmic-fairness)",
+      "details of privacy law and practice (sibling topic ai-privacy)",
+      "details of the NIST risk concepts and functions (sibling topic nist-ai-risk-concepts)",
+      "details of bias as a statistical or fairness problem (sibling topic bias)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "AI ethics is the study of how AI systems should be designed and used responsibly; NIST frames its framework's purpose as fostering the responsible design, development, deployment, and use of AI systems over time.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["nist-ai-rmf-1-0"],
+      "status": "supported"
+    },
+    {
+      "claim": "NIST's characteristics of trustworthy AI are: valid and reliable; safe; secure and resilient; accountable and transparent; explainable and interpretable; privacy-enhanced; and fair, with harmful bias managed.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-ai-rmf-1-0"],
+      "status": "supported"
+    },
+    {
+      "claim": "Microsoft's Responsible AI Standard is built on six principles: fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability.",
+      "claimType": "CURRENT",
+      "sourceIds": ["microsoft-responsible-ai-principles"],
+      "status": "supported"
+    },
+    {
+      "claim": "Accountability means the people who design and deploy AI systems are answerable for how those systems operate, and AI systems should not be the final authority on decisions that affect people's lives.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["microsoft-responsible-ai-principles"],
+      "status": "supported"
+    },
+    {
+      "claim": "Following the OECD, NIST defines AI actors as organizations and individuals that play an active role in the AI system lifecycle, and NIST states that successful risk management depends on a sense of collective responsibility among AI actors.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-ai-rmf-1-0"],
+      "status": "supported"
+    },
+    {
+      "claim": "NIST's framework includes defined processes for human oversight, and NIST notes that some AI systems may not require human oversight while others specifically do.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-ai-rmf-1-0"],
+      "status": "supported"
+    },
+    {
+      "claim": "The NIST AI RMF, released January 26, 2023, is voluntary, rights-preserving, non-sector-specific guidance organized around four functions: Govern, Map, Measure, and Manage.",
+      "claimType": "CURRENT",
+      "sourceIds": ["nist-ai-rmf-1-0", "nist-ai-risk-management-framework"],
+      "status": "supported"
+    },
+    {
+      "claim": "The NIST AI RMF is intended to augment existing risk practices that should align with applicable laws, regulations, and norms, and NIST observes that risk tolerances change as AI systems, policies, and norms evolve; this supports the distinction that ethics guidance extends beyond current law and that AI policy is still forming.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["nist-ai-rmf-1-0"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether AI ethics should be enforced through binding law or left to voluntary frameworks and standards.",
+      "positions": [
+        "Some governments and commentators argue that AI rules should be legally binding and enforceable.",
+        "NIST designed the AI RMF as voluntary guidance, so organizations adopt it by choice rather than by legal compulsion.",
+        "Microsoft's Responsible AI Standard is a company-internal framework, not a legal requirement."
+      ],
+      "resolution": "The lesson does not take a position on regulation. It presents only verified facts: the NIST AI RMF is voluntary, frameworks exist at both government and company level, and AI law and policy are still forming. Learners are told that frameworks structure the questions; they are not told that any particular rule should or should not become law."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft treated AI Ethics as a self-defining 'foundational concept' with no source; that framing was generic boilerplate and was discarded.",
+    "The draft's objective to 'apply ai ethics to a simple scenario' supplied no method; the lesson replaces it with a sourced method (the core concerns and the NIST framework functions)."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic-draft boilerplate with content verified against NIST AI RMF 1.0, the NIST AI RMF landing page, and Microsoft's responsible-AI documentation.",
+    "Added the working definition of AI ethics and attributed its framing to NIST's stated purpose of fostering responsible design, development, deployment, and use of AI systems.",
+    "Added the shared-responsibility framing using the OECD AI-actor definition and NIST's collective-responsibility statement, with the four groups named in the assignment (developers, deployers, users, regulators).",
+    "Added the ethics-vs-law-vs-policy distinction grounded in the RMF's voluntary status and its observation that risk tolerances change as policies and norms evolve."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "nist-ai-rmf-1-0",
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0), NIST AI 100-1",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read directly as the nvlpubs PDF (downloaded and text-extracted 2026-08-21). Supports: the framework's purpose of fostering the responsible design, development, deployment, and use of AI systems; the seven characteristics of trustworthy AI (valid and reliable, safe, secure and resilient, accountable and transparent, explainable and interpretable, privacy-enhanced, fair with harmful bias managed); the OECD definition of AI actors; the statement that successful risk management depends on a sense of collective responsibility among AI actors; that different AI actors have different responsibilities and awareness depending on their roles in the lifecycle; processes for human oversight (MAP 3.5) and the observation that some systems may not require human oversight while others specifically do; the voluntary, rights-preserving, non-sector-specific nature of the framework; the four functions Govern, Map, Measure, Manage; and the note that risk tolerances change as AI systems, policies, and norms evolve. Facts synthesized; no source wording reproduced."
+    },
+    {
+      "id": "nist-ai-risk-management-framework",
+      "title": "AI Risk Management Framework (AI RMF)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Supports: the release date of AI RMF 1.0 (January 26, 2023); the framework's intent to incorporate trustworthiness considerations into the design, development, use, and evaluation of AI products, services, and systems; the framework's voluntary use; and NIST's goal of promoting development and use of AI systems that are trustworthy and responsible. Used as a pointer for the ai-ethics framing; detailed risk concepts belong to the nist-ai-risk-concepts sibling topic."
+    },
+    {
+      "id": "microsoft-responsible-ai-principles",
+      "title": "What is responsible AI? (Azure Machine Learning documentation)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21. Supports: Microsoft's Responsible AI Standard as a framework built on six principles (fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability); the statement that people who design and deploy AI systems must be accountable for how those systems operate; that AI systems should not be the final authority on decisions that affect people's lives; and that humans should maintain meaningful control over highly autonomous systems. Used only for the general principles; no implementation details used."
+    }
+  ]
+}

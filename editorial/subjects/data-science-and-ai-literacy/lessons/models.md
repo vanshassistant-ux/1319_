@@ -21,7 +21,7 @@ Every time a service suggests a song, an app translates a sentence, or a forecas
 
 ### What a trained model is
 
-A trained model is the learned pattern that a machine learning algorithm produces from data. IBM describes machine learning as algorithms that learn the patterns of training data and then make accurate inferences about new data, and Google Cloud describes training as fitting the model to the data. That learned pattern is saved as numbers, the model's parameters, and those numbers are what map inputs to predictions. A spam filter's model is not the emails it was shown; it is the pattern, the rules captured in numbers, that tells a new email "junk" or "not junk." When someone says "the model," they usually mean this artifact: a saved pattern that turns inputs into outputs.
+A trained model is the learned pattern that a machine learning algorithm produces from data. IBM frames machine learning as algorithms that extract patterns from training data and apply them to new cases; Google Cloud describes training as fitting the model to the data. That learned pattern is saved as numbers, the model's parameters, and those numbers are what map inputs to predictions. A spam filter's model is not the emails it was shown; it is the pattern, the rules captured in numbers, that tells a new email "junk" or "not junk." When someone says "the model," they usually mean this artifact: a saved pattern that turns inputs into outputs.
 
 ### The model as a box
 
@@ -33,7 +33,7 @@ A model is the result of training; it does not exist before training happens. Be
 
 ### Models are not the world
 
-A model is an approximation, not a copy, of whatever it learned about. Google Cloud is blunt: machine learning is often only as good as the data it is fed. A weather model does not contain the atmosphere; it contains a simplified stand-in that lets forecasters estimate what the atmosphere will do. Elements of AI warns that people can become too confident about the accuracy of predictions and be disappointed when accuracy turns out worse than expected. That is why forecasts come with probabilities: the National Weather Service routinely states the chance of rain at a specific place, a probability, rather than a certainty. The gap between model and world is normal, and keeping it in mind prevents treating predictions as facts.
+A model is an approximation, not a copy, of whatever it learned about. Google Cloud puts it bluntly: a model is only as good as the data it was trained on. A weather model does not contain the atmosphere; it contains a simplified stand-in that lets forecasters estimate what the atmosphere will do. Elements of AI warns that people can become too confident about the accuracy of predictions and be disappointed when accuracy turns out worse than expected. That is why forecasts come with probabilities: the National Weather Service routinely states the chance of rain at a specific place, a probability, rather than a certainty. The gap between model and world is normal, and keeping it in mind prevents treating predictions as facts.
 
 ### Models are not static
 

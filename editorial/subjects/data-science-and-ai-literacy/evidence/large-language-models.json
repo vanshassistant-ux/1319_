@@ -1,0 +1,167 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:large-language-models",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "what an LLM is: a deep learning model trained on vast amounts of text that understands and generates natural language (attributed to IBM)",
+      "the generation mechanism at intuition level: trained to predict the next token from context; generating text is choosing what comes next, repeatedly",
+      "training at scale: enormous text corpora — books, articles, websites, code — as the defining feature, enabled by the transformer architecture (introduced 2017)",
+      "what LLMs do well, time-anchored to 2026 sources: summarize, draft, translate, explain in simpler terms, assist with code",
+      "what they get wrong: confident but false output, including hallucinated citations (hallucinations is a sibling topic — referenced only)",
+      "LLMs as the text-focused family of generative AI (generative-ai is a sibling topic — one-sentence boundary)",
+      "using LLMs: prompting-basics and evaluating-ai-output are sibling topics — referenced only; the verification habit is stated at the general level"
+    ],
+    "supporting": [
+      "tokens (words, subwords, characters) as the units models read and generate",
+      "parameters as internal settings adjusted during training; large models hold billions or trillions",
+      "popular chatbot interfaces (Claude, ChatGPT, Copilot, Llama, Gemini) as named by IBM",
+      "time-anchoring: all capability claims phrased as of the cited sources' dates, never as timeless facts"
+    ],
+    "outOfScope": [
+      "generative-ai (own topic: images, audio, video, and the broad definition)",
+      "prompting-basics (own topic: how to write prompts)",
+      "hallucinations (own topic: the failure mode in depth)",
+      "evaluating-ai-output (own topic: how to check AI output)",
+      "tool-specific workflows and hands-on usage (literacy level: no tools)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A large language model (LLM) is a deep learning model trained on immense amounts of data that is capable of understanding and generating natural language and other types of content, built on a transformer neural network architecture.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ibm-what-are-large-language-models", "openai-text-generation-guide"],
+      "status": "supported"
+    },
+    {
+      "claim": "LLMs work as statistical prediction machines that repeatedly predict the next word in a sequence; they learn patterns in text during training and generate language that follows those patterns. Text is broken into tokens (words, subwords, or characters) that the model reads and generates one at a time.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ibm-what-are-large-language-models"],
+      "status": "supported"
+    },
+    {
+      "claim": "LLM training starts with a massive amount of data — billions or trillions of words from books, articles, websites, code, and other text sources; the transformer architecture (introduced in 2017) made training at this scale practical, and trained models can hold billions or trillions of parameters. Scale of training data is the defining feature of the approach.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ibm-what-are-large-language-models"],
+      "status": "supported"
+    },
+    {
+      "claim": "As of the sources read in August 2026, LLMs handle tasks including summarizing an article, debugging code, drafting a legal clause, translation and multilingual capabilities, and explaining complex concepts in simpler terms; OpenAI's documentation states models can generate almost any kind of text response — code, mathematical equations, structured data, or human-like prose.",
+      "claimType": "CURRENT",
+      "sourceIds": ["ibm-what-are-large-language-models", "openai-text-generation-guide"],
+      "status": "supported"
+    },
+    {
+      "claim": "LLMs can generate information that is false or misleading while sounding plausible (hallucinations, which IBM lists among major accuracy concerns), and NIST's Generative AI Profile documents confabulation — 'the production of confidently stated but erroneous or false content' — as a risk by which users may be misled or deceived. Fluency is not accuracy.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["ibm-what-are-large-language-models", "nist-ai-600-1-generative-ai-profile"],
+      "status": "supported"
+    },
+    {
+      "claim": "Large language models are the text-focused family of generative AI — as of IBM's 2026 description, the most common foundation models, created for text-generation applications — within the broader generative AI family that also covers image, video, and sound models.",
+      "claimType": "CURRENT",
+      "sourceIds": ["ibm-what-are-large-language-models", "mslearn-introduction-generative-ai"],
+      "status": "supported"
+    },
+    {
+      "claim": "LLMs can reflect and amplify biases present in their training data, producing outputs that are unfair or offensive, and their training and operation require large amounts of computational power and energy.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["ibm-what-are-large-language-models"],
+      "status": "supported"
+    },
+    {
+      "claim": "Because confabulation is documented, users should verify important LLM output — facts, citations, and numbers — against reliable sources before acting on it; NIST's Generative AI Profile frames provenance tracking and verification as part of managing generative AI risk.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["nist-ai-600-1-generative-ai-profile"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether LLM output can be described as 'understanding' language",
+      "positions": [
+        "IBM's explainer says LLMs are 'capable of understanding and generating natural language'",
+        "The same source describes the mechanism as statistical prediction of the next word, with no claim that the model possesses human-like comprehension or checks facts"
+      ],
+      "resolution": "The lesson uses 'understand and generate' when describing the model's behavior in IBM's terms, but explains the mechanism as pattern prediction and explicitly avoids claiming the model comprehends meaning, checks facts, or has awareness."
+    },
+    {
+      "issue": "How strongly to state current LLM capabilities",
+      "positions": [
+        "Provider documentation (IBM, OpenAI) describes summarizing, drafting, translating, explaining, and code assistance as current capabilities",
+        "Specific tools, model versions, and quality change quickly, and capabilities vary by model and task"
+      ],
+      "resolution": "All capability claims are time-anchored ('as of the sources read in August 2026') and phrased as general capabilities documented by the providers, never as timeless facts; the lesson notes that specific tools and quality keep changing."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "No machine-generated draft existed for this topic in public/content/phase-2/lessons.json at the time of writing (the topic record in content-progress.json was still marked 'planned'), so there were no draft claims to audit."
+  ],
+  "correctionsNeeded": [
+    "All AI capability claims were time-anchored to the cited sources (read 2026-08-21) rather than stated as permanent facts.",
+    "The LLM definition and mechanism are attributed to IBM's large-language-models explainer, corroborated by OpenAI's text-generation documentation.",
+    "Hallucinations are referenced only as a documented failure mode (IBM, NIST AI 600-1), with deep coverage explicitly left to the hallucinations sibling topic; prompting and verification guidance point to the prompting-basics and evaluating-ai-output sibling topics.",
+    "The generative-AI boundary is kept to one sentence: generative AI covers text, images, audio, video, and code; LLMs are the text-focused family within it.",
+    "All examples in the lesson are original (none taken from the sources)."
+  ],
+  "rightsIssues": [
+    "NIST AI 600-1 is a U.S. government work (public domain); one short quote (the confabulation definition) is used.",
+    "IBM and OpenAI documentation pages are REFERENCE_ONLY; their facts are paraphrased into original prose and example interface names (Claude, ChatGPT, Copilot, Llama, Gemini) are attributed to IBM.",
+    "Microsoft Learn module reused via the existing registered record (identical id and URL); REFERENCE_ONLY."
+  ],
+  "sourceRecords": [
+    {
+      "id": "ibm-what-are-large-language-models",
+      "title": "What are large language models (LLMs)?",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/topics/large-language-models",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl with a browser user-agent on 2026-08-21. Primary source for the lesson's core claims: LLMs as deep learning models trained on immense amounts of data, capable of understanding and generating natural language; LLMs as statistical prediction machines that repeatedly predict the next word in a sequence; training starting with billions or trillions of words from books, articles, websites, code, and other text sources; tokenization into words, subwords, or characters; the transformer architecture introduced in 2017; parameters numbering in the billions or trillions; capabilities including summarizing an article, debugging code, drafting a legal clause, translation and multilingual capabilities, and explaining complex concepts in simpler terms; hallucinations as false or misleading output that sounds plausible; bias amplification and resource demands as limitations; LLMs as the most common foundation models for text generation; and popular interfaces including Claude, ChatGPT, Copilot, Llama, and Gemini. Facts paraphrased into original prose; no wording reproduced."
+    },
+    {
+      "id": "openai-text-generation-guide",
+      "title": "Text generation (OpenAI API documentation)",
+      "provider": "OpenAI",
+      "url": "https://developers.openai.com/api/docs/guides/text",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live on 2026-08-21. The docs have moved from platform.openai.com to developers.openai.com; the page's own llms.txt index confirmed the canonical URL https://developers.openai.com/api/docs/guides/text, and the content was read via its official Markdown rendering (page URL + '.md'). Supports: using a large language model to generate text from a prompt, as with ChatGPT; models generating almost any kind of text response — code, mathematical equations, structured JSON data, or human-like prose. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "nist-ai-600-1-generative-ai-profile",
+      "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile (NIST AI 600-1)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work; not subject to copyright in the United States",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Reused registry record with an identical id and URL to the existing phase-2 source-registry entry. Supports: confabulation — 'the production of confidently stated but erroneous or false content,' colloquially hallucinations — as a documented risk by which users may be misled or deceived; the framing that verification and provenance tracking are part of managing generative AI risk. One short quote from this U.S. government document is used in the lesson; the rest is synthesized."
+    },
+    {
+      "id": "mslearn-introduction-generative-ai",
+      "title": "Introduction to generative AI and agents (Microsoft Learn training module: fundamentals-generative-ai)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Reused registry record with an identical id and URL to the existing phase-2 source-registry entry. Corroborates the LLM-within-generative-AI relationship: the module's learning objectives treat large language models as a core concept of generative AI. Facts synthesized; no wording reproduced."
+    }
+  ]
+}

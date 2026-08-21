@@ -1,0 +1,162 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:prompting-basics",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "what a prompt is: the text a user gives a model to steer what it produces",
+      "why prompting matters: output quality depends heavily on how you ask",
+      "basic prompt ingredients: clear instructions, context, desired format, examples",
+      "simple techniques: be specific, break tasks into steps, ask for a format, provide an example",
+      "what prompting cannot fix: model knowledge limits and hallucinations",
+      "prompting as a skill: clear writing helps; practice and iteration",
+      "caution: prompting guidance is model-specific and changes over time"
+    ],
+    "supporting": [
+      "few-shot vs zero-shot prompting",
+      "iterative prompt refinement against observed responses",
+      "models generate what is most likely given their training data"
+    ],
+    "outOfScope": [
+      "how large language models are built and trained (large-language-models topic)",
+      "hallucinations in depth (hallucinations topic)",
+      "how to evaluate and verify AI output (evaluating-ai-output topic)",
+      "tool-specific tutorials, API workflows, and practitioner prompting"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A prompt is the text a user gives a language model to direct what it produces; text prompts are how people interact with these models.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["openai-prompt-engineering-guide", "mslearn-prompt-engineering-techniques"],
+      "status": "supported"
+    },
+    {
+      "claim": "Prompt quality strongly influences output quality: being specific about the desired output improves results, and the more precisely a request is explained, the better the response tends to be.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["anthropic-prompting-best-practices", "google-gemini-prompt-design-strategies"],
+      "status": "supported"
+    },
+    {
+      "claim": "Effective prompts commonly combine several ingredients: clear instructions, context the model needs, a requested output format, and examples of the desired result.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["openai-prompt-engineering-guide", "anthropic-prompting-best-practices"],
+      "status": "supported"
+    },
+    {
+      "claim": "Including a few well-crafted examples (few-shot prompting) steers a model's format, tone, and structure and improves the accuracy and consistency of responses.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["anthropic-prompting-best-practices", "google-gemini-prompt-design-strategies"],
+      "status": "supported"
+    },
+    {
+      "claim": "Breaking a complex task into smaller steps tends to improve model performance on that task.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["mslearn-prompt-engineering-techniques", "anthropic-prompting-best-practices"],
+      "status": "supported"
+    },
+    {
+      "claim": "Prompting is an iterative, experimental process: providers describe refining prompts against observed model responses rather than following a fixed formula.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["google-gemini-prompt-design-strategies", "mslearn-prompt-engineering-techniques"],
+      "status": "supported"
+    },
+    {
+      "claim": "Prompting cannot guarantee factual accuracy or eliminate hallucinations, because a model generates what is most likely given its training data rather than checking facts; providers recommend external grounding, such as search, to mitigate fabricated answers.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mslearn-prompt-engineering-techniques", "anthropic-prompting-best-practices"],
+      "status": "supported"
+    },
+    {
+      "claim": "Prompting guidance is model-specific and changes over time: providers state that different model types — and even different snapshots within a family — may need to be prompted differently, and each provider maintains separate guidance per model generation.",
+      "claimType": "CURRENT",
+      "sourceIds": ["openai-prompt-engineering-guide", "mslearn-prompt-engineering-techniques", "anthropic-prompting-best-practices"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Does instruction placement in the prompt reliably matter?",
+      "positions": [
+        "Microsoft Learn's general guidance says telling the model the task at the beginning of the prompt, before context or examples, helps produce higher-quality outputs",
+        "Microsoft Learn's own testing found the model response was the same regardless of placement for ChatGPT and GPT-4 era models",
+        "Microsoft Learn still recommends experimenting with repeating instructions at the end of the prompt because models can show recency bias"
+      ],
+      "resolution": "The lesson teaches the ingredients and techniques that all four providers endorse — clear instructions, context, format, examples, and stepwise task breakdown — and avoids prescribing exact placement rules, which the sources themselves present as experiment-dependent."
+    },
+    {
+      "issue": "How many examples should a few-shot prompt include?",
+      "positions": [
+        "Anthropic recommends 3-5 examples for best results",
+        "Google says the optimal number must be experimented with, and too many examples can make the model overfit the examples"
+      ],
+      "resolution": "The lesson states only what both sources share: a few well-crafted examples improve consistency, and the right number is found by trying. No specific count is taught as a rule."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's opening line that the topic is 'a foundational concept in Data Science & Ai Literacy' — generic boilerplate carrying no content about prompting.",
+    "The generated draft's circular vocabulary definition ('Prompting Basics: A foundational Data Science & Ai Literacy concept covered in this lesson') — no information, replaced with sourced non-circular definitions.",
+    "The generated draft's Eli-10 'label on a toolbox drawer' analogy — unrelated to prompting, replaced with a task-briefing analogy grounded in the lesson's content."
+  ],
+  "correctionsNeeded": [
+    "Replaced all generic draft boilerplate with verified content on what a prompt is, why prompting matters, prompt ingredients, simple techniques, limits, and the model-specific caution.",
+    "Time-anchored the caution to the provider documentation read in August 2026: prompting guidance is model-specific and changes over time.",
+    "Referenced hallucinations and evaluating-ai-output only as sibling topics, per the subject's division of ownership.",
+    "All before/after prompt pairs and mini-examples are original to this lesson."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "openai-prompt-engineering-guide",
+      "title": "Prompt engineering",
+      "provider": "OpenAI",
+      "url": "https://platform.openai.com/docs/guides/prompt-engineering",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl with a browser user-agent on 2026-08-21. Supports: prompt engineering defined as the process of writing effective instructions for a model so it consistently generates content that meets requirements; prompting described as a mix of art and science because model output is non-deterministic; the developer-message structure of identity, instructions, examples, and context; and the statement that different model types — and even different snapshots within the same family — may need to be prompted differently. Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "anthropic-prompting-best-practices",
+      "title": "Prompting best practices",
+      "provider": "Anthropic",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via the page's .md endpoint on 2026-08-21. Supports: being specific about the desired output enhancing results and the more precisely a request is explained the better the result; the golden rule of showing a prompt to a colleague with minimal context; providing instructions as sequential steps; adding context to improve performance; examples as one of the most reliable ways to steer output format, tone, and structure, with 3-5 examples recommended; role prompting; separate model-specific prompting pages per model generation; and techniques that minimize hallucinations by grounding answers in investigation rather than speculation. Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "google-gemini-prompt-design-strategies",
+      "title": "Prompt design strategies",
+      "provider": "Google (Gemini API documentation)",
+      "url": "https://ai.google.dev/gemini-api/docs/prompting-intro",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl with a browser user-agent on 2026-08-21. Supports: prompt design defined as creating prompts, or natural language requests, that elicit accurate, high-quality responses from a language model; prompt engineering being iterative, with guidelines as starting points to experiment and refine; clear and specific instructions; constraints that tell the model what to do and what not to do; response-format instructions; few-shot versus zero-shot prompting, including that examples show the model what getting it right looks like; and adding context to a prompt instead of assuming the model has all of the required information. Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "mslearn-prompt-engineering-techniques",
+      "title": "Prompt engineering techniques",
+      "provider": "Microsoft Learn (Microsoft Foundry)",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/prompt-engineering",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl with a browser user-agent on 2026-08-21; the full article text rendered when fetched. Supports: text prompts as how users interact with GPT models; prompt components including instructions, primary content, few-shot examples, cues, and supporting content; the model responding with what it determines is most likely given its training data and training targets; clear instructions early in the prompt; breaking tasks into smaller steps improving performance; each model behaving differently so guidance does not apply equally to all models; and search as an affordance used to help mitigate fabricated answers. The page header carries a generic notice that some content may require authorization, but the complete article was served. Facts synthesized into original prose; no wording reproduced."
+    }
+  ]
+}

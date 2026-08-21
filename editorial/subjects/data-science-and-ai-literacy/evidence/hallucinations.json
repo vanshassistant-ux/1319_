@@ -1,0 +1,146 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:hallucinations",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "definition of hallucination with attribution (NIST formal term confabulation)",
+      "mechanism: pattern-based generation, next-token prediction, no fact-checking",
+      "types of hallucinated output: fabricated citations, invented facts, wrong numbers, mixed-up sources",
+      "stakes: casual use vs medicine, law, news",
+      "detection checklist: verify claims, check citations exist, cross-check numbers",
+      "mitigation basics: grounding, asking for citations, treating output as draft",
+      "honest framing: known limitation of current technology, not user error"
+    ],
+    "supporting": [
+      "grounding as connecting output to verifiable sources (Google Cloud)",
+      "guardrails restricting models to trusted sources (IBM)",
+      "confabulated logic and citations as a documented risk (NIST)",
+      "confident presentation as the reason users are misled (NIST)"
+    ],
+    "outOfScope": [
+      "LLM architecture and training internals (sibling topic large-language-models)",
+      "formal output-evaluation frameworks (sibling topic evaluating-ai-output)",
+      "prompt-crafting techniques (sibling topic prompting-basics)",
+      "individualized medical, legal, or security advice"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A hallucination — formally called confabulation in NIST's Generative AI Profile — is a model output that is confidently stated but erroneous or false, presenting invented facts, citations, or events as if real; IBM describes it as output that seems entirely plausible but is nonsensical or inaccurate.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-ai-600-1-generative-ai-profile", "ibm-what-is-generative-ai"],
+      "status": "supported"
+    },
+    {
+      "claim": "Models hallucinate because generation is pattern-based, not fact-checked: they produce outputs approximating the statistical distribution of their training data (LLMs predict the next token or word), so accuracy is not guaranteed and no fact database is consulted during generation.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-ai-600-1-generative-ai-profile", "ibm-what-is-generative-ai"],
+      "status": "supported"
+    },
+    {
+      "claim": "Hallucinated output takes recognizable shapes — fabricated citations (NIST: confabulated logic or citations purporting to justify an answer; IBM: fictional court cases with quotes and attributions), invented facts, wrong numbers, and mixed-up sources — presented here as illustrative groupings of one underlying behavior rather than a formal taxonomy.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["nist-ai-600-1-generative-ai-profile", "ibm-what-is-generative-ai"],
+      "status": "supported"
+    },
+    {
+      "claim": "Risks arise when users believe false content because of its confident presentation and act on it; NIST cites healthcare (a confabulated summary of patient reports could cause incorrect diagnoses or wrong treatments), notes legal confabulations are pervasive in current state-of-the-art LLMs, and links confabulated content to misinformation at scale.",
+      "claimType": "CURRENT",
+      "sourceIds": ["nist-ai-600-1-generative-ai-profile"],
+      "status": "supported"
+    },
+    {
+      "claim": "Detecting hallucinations means verifying claims against sources you can consult, checking that citations actually exist, and cross-checking numbers; a model's own confidence is not evidence, since confident presentation is precisely what misleads users.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["nist-ai-600-1-generative-ai-profile", "google-cloud-grounding-overview"],
+      "status": "supported"
+    },
+    {
+      "claim": "Mitigations reduce rather than eliminate hallucinations: grounding connects output to verifiable sources so answers are tethered to provided data (Google Cloud), guardrails restrict models to trusted sources (IBM), and treating output as a draft to be checked remains necessary.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["google-cloud-grounding-overview", "ibm-what-is-generative-ai", "nist-ai-600-1-generative-ai-profile"],
+      "status": "supported"
+    },
+    {
+      "claim": "Hallucination is a known limitation of current technology, not a user error: NIST describes confabulation as a natural result of how generative models are designed, and IBM notes practitioners view hallucinations as an unavoidable consequence of balancing accuracy with creative capability.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["nist-ai-600-1-generative-ai-profile", "ibm-what-is-generative-ai"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Terminology: hallucination versus confabulation.",
+      "positions": [
+        "NIST AI 600-1 uses 'confabulation' as the formal term, with 'hallucination' and 'fabrication' as colloquial labels.",
+        "IBM and most public writing use 'hallucination' as the everyday term."
+      ],
+      "resolution": "The lesson leads with the common term 'hallucination' and immediately introduces the NIST formal term with attribution, so both names are defined."
+    },
+    {
+      "issue": "Whether hallucinations can be eliminated.",
+      "positions": [
+        "NIST frames confabulation as a risk to be managed across the AI lifecycle.",
+        "IBM reports practitioners view hallucinations as an unavoidable consequence of balancing accuracy and creativity; guardrails and continual tuning reduce them.",
+        "Google Cloud describes grounding as reducing the chances of inventing content."
+      ],
+      "resolution": "The lesson states that mitigations reduce but do not eliminate hallucination, so verification of important output remains necessary."
+    },
+    {
+      "issue": "Specificity of error categories such as 'wrong numbers'.",
+      "positions": [
+        "The sources document fabricated citations and, in general terms, 'erroneous or false content'.",
+        "No single source in the packet defines a formal four-type taxonomy of hallucination shapes."
+      ],
+      "resolution": "The lesson presents the four shapes as illustrative groupings of documented behavior, explicitly noting they are groupings rather than a taxonomy."
+    }
+  ],
+  "unsupportedExistingClaims": [],
+  "correctionsNeeded": [
+    "No machine-generated draft existed for this topic in public/content (phase-1 or phase-2), so there were no draft claims to correct."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "nist-ai-600-1-generative-ai-profile",
+      "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile (NIST AI 600-1)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work; not subject to copyright in the United States",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Read the PDF text layer directly on 2026-08-21 (pdftotext, ~1.2 MB). Supports: the formal term confabulation defined as 'the production of confidently stated but erroneous or false content', colloquially hallucinations or fabrications; confabulation as 'a natural result of the way generative models are designed' (statistical approximation of training data; LLMs predicting the next token or word); confabulated logic and citations that purport to justify an answer; risks when users believe false content due to its confident presentation; healthcare and legal risk examples; misinformation at scale; consequential decision making. Short quotes used with attribution; the rest synthesized into original prose."
+    },
+    {
+      "id": "ibm-what-is-generative-ai",
+      "title": "What is generative AI?",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/topics/generative-ai",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl with a browser user-agent on 2026-08-21. Supports: an AI hallucination as an output that is 'nonsensical or altogether inaccurate but, all too often, seems entirely plausible'; the lawyer example of fictional court cases 'complete with quotes and attributions'; the 'fill in the blank' next-element training mechanism; guardrails that restrict models to relevant or trusted data sources; continual evaluation and tuning as reducers of hallucinations; practitioners viewing hallucinations as an unavoidable consequence of balancing accuracy and creative capability. One short quote used with attribution; facts synthesized into original prose."
+    },
+    {
+      "id": "google-cloud-grounding-overview",
+      "title": "Grounding overview (Gemini Enterprise Agent Platform documentation)",
+      "provider": "Google Cloud",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/grounding/overview",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl with a browser user-agent on 2026-08-21 (cloud.google.com/vertex-ai/generative-ai/docs/grounding/overview redirects to this URL, which is where the document is served). Supports: grounding defined as the ability to connect model output to verifiable sources of information; grounding tethering output to provided data sources and 'reduces the chances of inventing content'; hallucinations described as 'instances where the model generates content that isn't factual'; grounding anchoring responses to data sources and providing source links for auditability. Facts synthesized into original prose; no wording reproduced."
+    }
+  ]
+}
