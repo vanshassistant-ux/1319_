@@ -1,25 +1,25 @@
 # ELIEXPLAINS GLOBAL EDITORIAL PROGRESS
 
-Generated: 2026-08-20T12:04:41.177Z
+Generated: 2026-08-21T08:27:12.462Z
 Counts are computed from the phase content stores by `bun run editorial:progress`.
 
 Subjects total: 44
-Subjects processed: 15
-Subjects remaining: 29
-Subject completion: 34.09%
+Subjects processed: 20
+Subjects remaining: 24
+Subject completion: 45.45%
 
-Total topics: 1307
-Topics processed: 445
+Total topics: 1299
+Topics processed: 647
 Topics published: 282
-Topics ready to publish: 163
+Topics ready to publish: 364
 Topics held: 0
-Topics requiring review: 0
-Topics remaining: 862
-Topic processing: 34.05%
+Topics requiring review: 1
+Topics remaining: 652
+Topic processing: 49.81%
 
-Verified questions: 2225
-Unique source records: 2620
-Source usage classes: REFERENCE_ONLY=1881, PUBLIC_DOMAIN=532, ATTRIBUTION_REQUIRED=115, EXTRACT_AND_ADAPT=90, LINK_ONLY=2
+Verified questions: 3235
+Unique source records: 3086
+Source usage classes: REFERENCE_ONLY=2291, PUBLIC_DOMAIN=544, ATTRIBUTION_REQUIRED=159, EXTRACT_AND_ADAPT=90, LINK_ONLY=2
 
 ## Phase progress
 
@@ -27,7 +27,7 @@ Source usage classes: REFERENCE_ONLY=1881, PUBLIC_DOMAIN=532, ATTRIBUTION_REQUIR
 | --- | --- | --- | --- |
 | 1 | 11 / 11 | 282 / 282 | 100.00% |
 | 2 | 1 / 11 | 47 / 325 | 14.46% |
-| 3 | 0 / 11 | 0 / 337 | 0.00% |
+| 3 | 5 / 11 | 202 / 329 | 61.40% |
 | 4 | 3 / 11 | 116 / 363 | 31.96% |
 
 ## Collection progress
@@ -36,9 +36,9 @@ Source usage classes: REFERENCE_ONLY=1881, PUBLIC_DOMAIN=532, ATTRIBUTION_REQUIR
 | --- | --- | --- | --- |
 | Professional Studies | 7 / 7 | 166 / 166 | 100.00% |
 | Technology | 4 / 8 | 135 / 257 | 52.53% |
-| Business & Money | 0 / 9 | 0 / 243 | 0.00% |
-| Humanities & Culture | 0 / 7 | 0 / 202 | 0.00% |
-| Science & Health | 0 / 6 | 0 / 206 | 0.00% |
+| Business & Money | 3 / 9 | 84 / 240 | 35.00% |
+| Humanities & Culture | 2 / 7 | 102 / 197 | 51.78% |
+| Science & Health | 0 / 6 | 16 / 206 | 7.77% |
 | Society & Government | 4 / 7 | 144 / 233 | 61.80% |
 
 ## Subjects in progress
@@ -48,15 +48,26 @@ Source usage classes: REFERENCE_ONLY=1881, PUBLIC_DOMAIN=532, ATTRIBUTION_REQUIR
 | social-work-and-human-services | 20 / 20 | 20 | 0 | 0 | 0 | 0 |
 | environmental-sustainability | 25 / 25 | 25 | 0 | 0 | 0 | 0 |
 | hospitality-and-tourism | 20 / 20 | 20 | 0 | 0 | 0 | 0 |
+| religious-studies | 2 / 27 | 0 | 2 | 0 | 0 | 25 |
+| entrepreneurship | 25 / 25 | 0 | 25 | 0 | 0 | 0 |
 | criminal-justice-and-criminology | 28 / 28 | 28 | 0 | 0 | 0 | 0 |
+| project-management | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
 | education | 21 / 21 | 21 | 0 | 0 | 0 | 0 |
+| earth-and-space-science | 16 / 48 | 0 | 16 | 0 | 0 | 32 |
+| philosophy-and-ethics | 15 / 28 | 0 | 15 | 0 | 0 | 13 |
+| art-history-and-visual-culture | 34 / 34 | 0 | 34 | 0 | 0 | 0 |
 | health-administration | 24 / 24 | 24 | 0 | 0 | 0 | 0 |
 | computer-literacy | 25 / 25 | 25 | 0 | 0 | 0 | 0 |
 | graphic-design-and-digital-media | 28 / 28 | 28 | 0 | 0 | 0 | 0 |
 | python-programming | 36 / 36 | 36 | 0 | 0 | 0 | 0 |
 | history | 49 / 49 | 0 | 49 | 0 | 0 | 0 |
 | economics | 39 / 39 | 0 | 39 | 0 | 0 | 0 |
+| film-and-media-studies | 13 / 28 | 0 | 13 | 0 | 0 | 15 |
+| business-law-and-ethics | 31 / 31 | 0 | 31 | 0 | 0 | 0 |
+| music-appreciation | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
+| english-and-literature | 9 / 26 | 0 | 8 | 0 | 1 | 17 |
 | web-development | 47 / 47 | 0 | 47 | 0 | 0 | 0 |
 | computer-science-fundamentals | 27 / 27 | 27 | 0 | 0 | 0 | 0 |
 | human-geography | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
+| languages-and-esl | 1 / 26 | 0 | 1 | 0 | 0 | 25 |
 | engineering-fundamentals | 28 / 28 | 28 | 0 | 0 | 0 | 0 |

@@ -8,6 +8,12 @@ Read this file first on every new run, then run `bun scripts/editorial-progress.
 - **Web Development is COMPLETE** — 47/47 topics accepted at `source-verified`, `READY_TO_PUBLISH`, and `public: false`; subject audit returned 0 issues; report: `editorial/reports/subjects/web-development.md`.
 - The Web Development queue was completed on 2026-08-20. Its audited exceptions are documented in `editorial/subjects/web-development/audit-exceptions.json`.
 
+## Master directory (added 2026-08-21)
+
+- **Phase 3 work from the standalone `Phase_3_codex` clone is merged into this branch** (merge commit on `agent/eliexplainsorg`; remote `phase3` points at `/Users/moomoo/Desktop/Phase_3_codex`). Phase 3 stands at 201/329 topics: Entrepreneurship, Business Law & Ethics, Project Management, Art History & Visual Culture, Music Appreciation complete; English & Literature, Philosophy & Ethics, Film & Media Studies, Earth & Space Science, Religious Studies, Languages & ESL partial.
+- **Phase 1 (282 topics, 11 subjects) is PUBLISHED and live** on eliexplains.org as of 2026-08-20 (deployed branch = `origin/agent/eliexplainsorg`).
+- Every topic's status across all four phases: `editorial/reports/MASTER_TOPIC_DIRECTORY.md` (+ `.csv` / `.json`); the done/not-done summary: `editorial/reports/PHASE_STATUS_REPORT.md`. Regenerate both with `bun scripts/build-master-directory.mjs` after any content change (run `bun scripts/editorial-progress.mjs` first).
+
 ## Next action
 
 Stop at this subject boundary unless the owner explicitly directs continuation. The next subject in the required Phase 2 order is `data-science-and-ai-literacy` (Phase 2; confirm its current queue count before work). Do not initialize it until continuation is authorized.
