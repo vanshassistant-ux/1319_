@@ -1,6 +1,6 @@
 # EliExplains — Master Topic Directory
 
-Generated 2026-08-21 08:28 UTC by `bun scripts/build-master-directory.mjs` from the master curriculum + the four phase content stores.
+Generated 2026-08-21 09:54 UTC by `bun scripts/build-master-directory.mjs` from the master curriculum + the four phase content stores.
 
 **Legend:** 🟢 LIVE · 🔵 READY (unpublished) · 🟠 NEEDS REVIEW · ⚪ NOT STARTED · ⚫ PRUNED (mis-ingested header/note) · 🟣 ADDED (not in master curriculum)
 
@@ -8,10 +8,10 @@ Generated 2026-08-21 08:28 UTC by `bun scripts/build-master-directory.mjs` from 
 
 | Scope | Curriculum topics | Genuine topics | 🟢 Live | 🔵 Ready | 🟠 Review | ⚪ Not started | Done (live+ready) |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| **All phases** | 1319 | 1299 | 282 | 364 | 1 | 652 | **646 (49.7%)** |
+| **All phases** | 1319 | 1299 | 282 | 382 | 0 | 635 | **664 (51.1%)** |
 | Phase 1 — LIVE on eliexplains.org | 282 | 282 | 282 | 0 | 0 | 0 | 282 (100.0%) |
 | Phase 2 | 325 | 325 | 0 | 47 | 0 | 278 | 47 (14.5%) |
-| Phase 3 | 337 | 329 | 0 | 201 | 1 | 127 | 201 (61.1%) |
+| Phase 3 | 337 | 329 | 0 | 219 | 0 | 110 | 219 (66.6%) |
 | Phase 4 | 375 | 363 | 0 | 116 | 0 | 247 | 116 (32.0%) |
 
 ## Contents
@@ -44,7 +44,7 @@ Generated 2026-08-21 08:28 UTC by `bun scripts/build-master-directory.mjs` from 
   - [Entrepreneurship](#entrepreneurship) — 25/25 done
   - [Business Law & Ethics](#business-law-and-ethics) — 31/31 done
   - [Project Management](#project-management) — 28/28 done
-  - [English & Literature](#english-and-literature) — 8/26 done
+  - [English & Literature](#english-and-literature) — 26/26 done
   - [Philosophy & Ethics](#philosophy-and-ethics) — 15/28 done
   - [Art History & Visual Culture](#art-history-and-visual-culture) — 34/34 done
   - [Music Appreciation](#music-appreciation) — 28/28 done
@@ -972,9 +972,9 @@ Phase 3 · live 0 · ready 28 · review 0 · not started 0 · pruned 1
 | 29 | Foundations | PART IV — HUMANITIES | ⚫ PRUNED (mis-ingested header/note) |  |  |
 
 <a id="english-and-literature"></a>
-## English & Literature — 🔧 IN PROGRESS (8/26)
+## English & Literature — ✅ COMPLETE · awaiting publish (26/26)
 
-Phase 3 · live 0 · ready 8 · review 1 · not started 17
+Phase 3 · live 0 · ready 26 · review 0 · not started 0
 
 | # | Unit | Topic | Status | Qs | Link |
 |---:|---|---|---|---:|---|
@@ -985,25 +985,25 @@ Phase 3 · live 0 · ready 8 · review 1 · not started 17
 | 5 | Foundations | Character | 🔵 READY (unpublished) | 5 |  |
 | 6 | Foundations | Setting | 🔵 READY (unpublished) | 5 |  |
 | 7 | Foundations | Point of View | 🔵 READY (unpublished) | 5 |  |
-| 8 | Foundations | Tone | 🟠 NEEDS REVIEW | 5 |  |
+| 8 | Foundations | Tone | 🔵 READY (unpublished) | 5 |  |
 | 9 | Foundations | Mood | 🔵 READY (unpublished) | 5 |  |
-| 10 | Foundations | Symbolism | ⚪ NOT STARTED |  |  |
-| 11 | Foundations | Imagery | ⚪ NOT STARTED |  |  |
-| 12 | Foundations | Metaphor | ⚪ NOT STARTED |  |  |
-| 13 | Foundations | Simile | ⚪ NOT STARTED |  |  |
-| 14 | Foundations | Irony | ⚪ NOT STARTED |  |  |
-| 15 | Foundations | Allusion | ⚪ NOT STARTED |  |  |
-| 16 | Foundations | Fiction | ⚪ NOT STARTED |  |  |
-| 17 | Foundations | Poetry | ⚪ NOT STARTED |  |  |
-| 18 | Foundations | Drama | ⚪ NOT STARTED |  |  |
-| 19 | Foundations | Literary Analysis | ⚪ NOT STARTED |  |  |
-| 20 | Foundations | Rhetorical Analysis | ⚪ NOT STARTED |  |  |
-| 21 | Foundations | Argument | ⚪ NOT STARTED |  |  |
-| 22 | Foundations | Historical Context | ⚪ NOT STARTED |  |  |
-| 23 | Foundations | American Literature Overview | ⚪ NOT STARTED |  |  |
-| 24 | Foundations | World Literature Overview | ⚪ NOT STARTED |  |  |
-| 25 | Foundations | Comparing Texts | ⚪ NOT STARTED |  |  |
-| 26 | Foundations | Writing About Literature | ⚪ NOT STARTED |  |  |
+| 10 | Foundations | Symbolism | 🔵 READY (unpublished) | 5 |  |
+| 11 | Foundations | Imagery | 🔵 READY (unpublished) | 5 |  |
+| 12 | Foundations | Metaphor | 🔵 READY (unpublished) | 5 |  |
+| 13 | Foundations | Simile | 🔵 READY (unpublished) | 5 |  |
+| 14 | Foundations | Irony | 🔵 READY (unpublished) | 5 |  |
+| 15 | Foundations | Allusion | 🔵 READY (unpublished) | 5 |  |
+| 16 | Foundations | Fiction | 🔵 READY (unpublished) | 5 |  |
+| 17 | Foundations | Poetry | 🔵 READY (unpublished) | 5 |  |
+| 18 | Foundations | Drama | 🔵 READY (unpublished) | 5 |  |
+| 19 | Foundations | Literary Analysis | 🔵 READY (unpublished) | 5 |  |
+| 20 | Foundations | Rhetorical Analysis | 🔵 READY (unpublished) | 5 |  |
+| 21 | Foundations | Argument | 🔵 READY (unpublished) | 5 |  |
+| 22 | Foundations | Historical Context | 🔵 READY (unpublished) | 5 |  |
+| 23 | Foundations | American Literature Overview | 🔵 READY (unpublished) | 5 |  |
+| 24 | Foundations | World Literature Overview | 🔵 READY (unpublished) | 5 |  |
+| 25 | Foundations | Comparing Texts | 🔵 READY (unpublished) | 5 |  |
+| 26 | Foundations | Writing About Literature | 🔵 READY (unpublished) | 5 |  |
 
 <a id="philosophy-and-ethics"></a>
 ## Philosophy & Ethics — 🔧 IN PROGRESS (15/28)

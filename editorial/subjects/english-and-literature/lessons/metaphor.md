@@ -81,7 +81,7 @@ A metaphor speaks of one thing as another, mapping selected qualities from vehic
 
 ## Practice Question Bank
 
-1. **Which definition best describes a metaphor?**
+1. **Which statement most accurately defines a metaphor?**
    - A. An explicit comparison that uses "like" or "as" to connect two things.
    - B. A comparison that speaks of one thing as another without "like," "as," or "than."
    - C. A recurring object whose repeated appearances carry meaning beyond itself.

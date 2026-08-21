@@ -1,13 +1,13 @@
 # EliExplains — Phase Status Report
 
-Generated 2026-08-21 08:28 UTC. Source of truth: the four phase content stores (`content/phase-N/content-progress.json`). Companion files: `MASTER_TOPIC_DIRECTORY.md` (every topic, every status), `master-topic-directory.csv/.json` (machine-readable).
+Generated 2026-08-21 09:54 UTC. Source of truth: the four phase content stores (`content/phase-N/content-progress.json`). Companion files: `MASTER_TOPIC_DIRECTORY.md` (every topic, every status), `master-topic-directory.csv/.json` (machine-readable).
 
 ## Executive summary
 
 - **1299 genuine topics** across 44 subjects (the master curriculum lists 1319 entries; 20 were mis-ingested section headers/author notes and have been pruned from the queues; 0 topics were added/repurposed).
-- **646 topics done (49.7%)**: 282 live on eliexplains.org, 364 fully gated (`READY_TO_PUBLISH`) and waiting only on owner sign-off to publish.
-- **1 topic needs review** (held/needs-review statuses). **652 topics not started.**
-- Subjects: 20 complete · 6 in progress · 18 not started.
+- **664 topics done (51.1%)**: 282 live on eliexplains.org, 382 fully gated (`READY_TO_PUBLISH`) and waiting only on owner sign-off to publish.
+- **0 topics need review** (held/needs-review statuses). **635 topics not started.**
+- Subjects: 21 complete · 5 in progress · 18 not started.
 
 ## By phase
 
@@ -15,7 +15,7 @@ Generated 2026-08-21 08:28 UTC. Source of truth: the four phase content stores (
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | Phase 1 — LIVE on eliexplains.org | 11 | 282 | 282 | 282 | 0 | 0 | 0 | 100.0% |
 | Phase 2 | 11 | 325 | 47 | 0 | 47 | 0 | 278 | 14.5% |
-| Phase 3 | 11 | 329 | 201 | 0 | 201 | 1 | 127 | 61.1% |
+| Phase 3 | 11 | 329 | 219 | 0 | 219 | 0 | 110 | 66.6% |
 | Phase 4 | 11 | 363 | 116 | 0 | 116 | 0 | 247 | 32.0% |
 
 ## By subject (all 44)
@@ -47,7 +47,7 @@ Generated 2026-08-21 08:28 UTC. Source of truth: the four phase content stores (
 | 3 | Entrepreneurship | 25 | 25 | 0 | 25 | 0 | 0 | ✅ complete · unpublished |
 | 3 | Business Law & Ethics | 31 | 31 | 0 | 31 | 0 | 0 | ✅ complete · unpublished |
 | 3 | Project Management | 28 | 28 | 0 | 28 | 0 | 0 | ✅ complete · unpublished |
-| 3 | English & Literature | 26 | 8 | 0 | 8 | 1 | 17 | 🔧 in progress (30.8%) |
+| 3 | English & Literature | 26 | 26 | 0 | 26 | 0 | 0 | ✅ complete · unpublished |
 | 3 | Philosophy & Ethics | 28 | 15 | 0 | 15 | 0 | 13 | 🔧 in progress (53.6%) |
 | 3 | Art History & Visual Culture | 34 | 34 | 0 | 34 | 0 | 0 | ✅ complete · unpublished |
 | 3 | Music Appreciation | 28 | 28 | 0 | 28 | 0 | 0 | ✅ complete · unpublished |
@@ -71,12 +71,11 @@ Generated 2026-08-21 08:28 UTC. Source of truth: the four phase content stores (
 
 - **Phase 1:** Education (21), Social Work & Human Services (20), Criminal Justice & Criminology (28), Engineering Fundamentals (28), Health Administration (24), Hospitality & Tourism (20), Graphic Design & Digital Media (28), Environmental Sustainability (25), Computer Literacy (25), Computer Science Fundamentals (27), Python Programming (36)
 - **Phase 2:** Web Development (47)
-- **Phase 3:** Entrepreneurship (25), Business Law & Ethics (31), Project Management (28), Art History & Visual Culture (34), Music Appreciation (28)
+- **Phase 3:** Entrepreneurship (25), Business Law & Ethics (31), Project Management (28), English & Literature (26), Art History & Visual Culture (34), Music Appreciation (28)
 - **Phase 4:** History (49), Human Geography (28), Economics (39)
 
 ## What is IN PROGRESS (partially done)
 
-- **English & Literature** (Phase 3): 8/26 done; 17 remaining — Symbolism; Imagery; Metaphor; Simile; Irony; Allusion; Fiction; Poetry; … (+9 more, see directory)
 - **Philosophy & Ethics** (Phase 3): 15/28 done; 13 remaining — Deontology; Virtue Ethics; Social Contract Theory; Justice; Rights; Equality; Applied Ethics; Healthcare Ethics; … (+5 more, see directory)
 - **Film & Media Studies** (Phase 3): 13/28 done; 15 remaining — Character; Genre; Documentary; Animation; Representation; Race and Media; Gender and Media; Media Industries; … (+7 more, see directory)
 - **Religious Studies** (Phase 3): 2/27 done; 25 remaining — Myth; Ritual; Sacred Texts; Religious Authority; Ethics; Religious Experience; Indigenous Religious Traditions; Hindu Traditions; … (+17 more, see directory)
@@ -87,10 +86,6 @@ Generated 2026-08-21 08:28 UTC. Source of truth: the four phase content stores (
 
 - **Phase 2:** Data Science & AI Literacy (31), Cybersecurity (34), Databases & SQL (29), UX/UI Design (28), Introduction to Business (24), Accounting (28), Finance (25), Personal Finance (32), Marketing (24), Management & Leadership (23)
 - **Phase 4:** Nutrition (29), Public Health (29), Nursing & Allied Health Foundations (40), Psychology (35), Sociology (29), Anthropology (28), Human Development (25), Political Science & Government (32)
-
-## Topics needing review
-
-- English & Literature › Tone — `NEEDS_EDITORIAL_REVIEW`
 
 ## Pruned curriculum entries (not real topics)
 
