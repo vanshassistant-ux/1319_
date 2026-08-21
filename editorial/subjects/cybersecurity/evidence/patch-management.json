@@ -1,0 +1,160 @@
+{
+  "topicId": "cybersecurity:foundations:patch-management",
+  "subjectId": "cybersecurity",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "what a patch is (a software or operating system update that fixes a problem, most often a security flaw)",
+      "why patching matters: many attacks exploit known, already-fixed vulnerabilities",
+      "why people and organizations delay: downtime, fear of breaking things, not knowing",
+      "what patch management is: the organized process of applying updates on a schedule",
+      "the basics: automatic updates, an inventory of what runs where, testing before rollout",
+      "the honest framing: patching is boring and essential"
+    ],
+    "supporting": [
+      "updates also fix bugs, improve performance, and add features",
+      "trusted sources for updates; email links and attachments as a delivery trick",
+      "end-of-life (EOL) software and why unsupported products should be retired",
+      "scheduled maintenance windows and preventive-maintenance framing (NIST)"
+    ],
+    "outOfScope": [
+      "vulnerability management as a program (scanning, rating, tracking weaknesses) — sibling topic",
+      "vulnerabilities themselves (types, CVE/NVD tracking) — sibling topic",
+      "malware families and infection mechanics — sibling topic",
+      "specific patching tools, product how-to guides, or command-level workflows (literacy level, no tool how-to)",
+      "offensive techniques or exploit detail (defensive framing only)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A patch is a software or operating system update that addresses a security vulnerability within a program or product (CISA's working definition).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cisa-understanding-patches-software-updates"],
+      "status": "supported"
+    },
+    {
+      "claim": "Vendors also release updates to fix bugs, improve performance, and add features — patches are not only about security.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cisa-secure-our-world-update-software", "cisa-understanding-patches-software-updates"],
+      "status": "supported"
+    },
+    {
+      "claim": "Attackers may target known vulnerabilities for months or even years after a fix is available, so an unpatched copy of a product stays exposed long after the flaw was disclosed.",
+      "claimType": "CURRENT",
+      "sourceIds": ["cisa-understanding-patches-software-updates"],
+      "status": "supported"
+    },
+    {
+      "claim": "Updates only protect users if they are installed: technology providers issue updates to patch security weak spots, and if the updates are not installed they cannot protect.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cisa-secure-our-world-update-software"],
+      "status": "supported"
+    },
+    {
+      "claim": "Keeping software up to date is the most effective measure a user can take to protect devices against attackers exploiting patched vulnerabilities.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cisa-understanding-patches-software-updates"],
+      "status": "supported"
+    },
+    {
+      "claim": "Enterprise patch management is the process of identifying, prioritizing, acquiring, installing, and verifying the installation of patches, updates, and upgrades throughout an organization (NIST SP 800-40 Rev. 4).",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-sp-800-40r4"],
+      "status": "supported"
+    },
+    {
+      "claim": "Organizations delay patching partly because it requires scheduled downtime and carries a perceived risk of additional downtime if something goes wrong; NIST records that business owners may believe patching negatively affects productivity.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["nist-sp-800-40r4"],
+      "status": "supported"
+    },
+    {
+      "claim": "Organizations may need to wait for a scheduled outage window and perform testing before deploying a patch, especially where the patched software interacts with other software.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-sp-800-40r4"],
+      "status": "supported"
+    },
+    {
+      "claim": "CISA recommends enabling automatic updates whenever possible and downloading updates only from trusted vendor sources — never from a link or attachment in an email.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cisa-understanding-patches-software-updates", "cisa-secure-our-world-update-software"],
+      "status": "supported"
+    },
+    {
+      "claim": "Software the vendor no longer supports (end-of-life software) receives no new fixes; continued use leaves known weaknesses permanently open, and CISA recommends retiring such products.",
+      "claimType": "CURRENT",
+      "sourceIds": ["cisa-understanding-patches-software-updates"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Patch promptly vs. patch safely",
+      "positions": [
+        "CISA urges installing updates as soon as possible because attackers will not wait; the longer a fix sits uninstalled, the longer the weakness is open.",
+        "Organizations legitimately worry that patching disrupts operations; NIST records that business owners may see patching as hurting productivity because it requires scheduled downtime and risks further downtime if a patch goes wrong."
+      ],
+      "resolution": "Both are true at different scales. For individuals the gap is closed with automatic updates, which CISA recommends. Organizations honor the same promptness by planning: testing first and installing during a scheduled maintenance window, rather than skipping the patch or rushing it in at peak hours. The lesson teaches this planned-promptness position."
+    },
+    {
+      "issue": "Automatic updates as a default",
+      "positions": [
+        "CISA recommends that every product have auto-updates turned on by default, and that users ask providers why a product lacks that option.",
+        "Some users and organizations distrust automatic updates because a change may arrive unannounced and alter behavior or break a workflow."
+      ],
+      "resolution": "The lesson presents automatic updates as the baseline for personal devices (they install fixes without relying on memory) and testing-before-rollout plus maintenance windows as the organizational complement. It does not endorse disabling automatic updates as a general practice."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft described patch management only in generic boilerplate ('a foundational concept', 'a label on a toolbox drawer') and asserted no verifiable facts about patches, patching, or patch management; every substantive claim in the lesson was written fresh and source-verified."
+  ],
+  "correctionsNeeded": [
+    "Replaced boilerplate objectives ('define/identify/apply the concept') with subject-specific objectives anchored to the CISA and NIST SP 800-40 definitions.",
+    "Replaced the generic toolbox-drawer analogy with an original door-lock-recall analogy that captures the known-vulnerability point.",
+    "Added source-verified content on why attackers exploit known, already-fixed vulnerabilities; why people and organizations delay; and the NIST enterprise patch-management definition.",
+    "Replaced the three placeholder quick-check items with five original questions whose keys were verified against the evidence and distributed across A/B/C/D (B, D, A, C, D).",
+    "Removed all generic-draft phrasing that the acceptance gate flags."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "cisa-understanding-patches-software-updates",
+      "title": "Understanding Patches and Software Updates",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/news-events/news/understanding-patches-and-software-updates",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A. Registered id reused from the phase-1 source registry with an identical URL. cisa.gov returned HTTP 403 to automated fetchers on 2026-08-21, so the page was read via an Internet Archive capture of the canonical URL (web.archive.org snapshot 2026-06-01, status 200). Supports: the working definition of a patch as a software/OS update that addresses security vulnerabilities; that vendors also release updates for performance bugs and enhanced security features; that attackers may target vulnerabilities for months or even years after updates are available; CISA's recommendation to enable automatic updates; downloading only from trusted vendor sites and distrusting email links/attachments claiming to be updates; end-of-life software risk and the recommendation to retire EOL products; and that keeping software up to date is the most effective defense against attackers exploiting patched vulnerabilities."
+    },
+    {
+      "id": "cisa-secure-our-world-update-software",
+      "title": "Update Software (Secure Our World)",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/secure-our-world/update-software",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A. Registered id reused from the phase-1 source registry with an identical URL. cisa.gov blocked direct fetching (HTTP 403) on 2026-08-21, so the page was read via an Internet Archive capture of the canonical URL (web.archive.org snapshot 2026-08-06, status 200). Supports: providers issue updates to 'patch' security weak spots and if the updates are not installed they cannot protect users; updates also fix bugs, improve performance, and add features; the recommendation that every product should have auto-updates on by default and users should ask providers why a product lacks an auto-update option; and that online criminals look for easy targets who skip basic precautions. The page's own 'Veda' story was not reused — all lesson examples are original."
+    },
+    {
+      "id": "nist-sp-800-40r4",
+      "title": "NIST SP 800-40 Rev. 4: Guide to Enterprise Patch Management Planning: Preventive Maintenance for Technology",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://csrc.nist.gov/pubs/sp/800/40/r4/final",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A. Publication page read live on 2026-08-21 (HTTP 200); the full text was also read from the official distribution copy on nvlpubs.nist.gov (NIST.SP.800-40r4.pdf, published April 2022). Supports: the attributed definition of enterprise patch management as identifying, prioritizing, acquiring, installing, and verifying the installation of patches, updates, and upgrades; patching framed as preventive maintenance and a cost of doing business that helps prevent compromises, data breaches, and operational disruptions; the documented concern that business owners may believe patching hurts productivity because it requires scheduled downtime and risks additional downtime if something goes wrong; and the need to wait for scheduled outage windows and perform testing before deployment. Facts synthesized in original prose."
+    }
+  ]
+}

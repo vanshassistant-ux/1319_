@@ -1,0 +1,207 @@
+{
+  "topicId": "cybersecurity:foundations:incident-response",
+  "subjectId": "cybersecurity",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "what an incident is: the everyday sense (a security event that harms or threatens the organization) and the attributed NIST working definition",
+      "the response lifecycle named as prepare, detect, contain, eradicate, recover, learn (the classic cycle), mapped onto the four phases of the NIST SP 800-61 incident handling lifecycle",
+      "why a plan matters: decisions made in a crisis are better made in advance",
+      "containment first: stop the spread before fixing (the key priority)",
+      "the human side: the incident team, defined roles, communication, and reporting (internal and to authorities)",
+      "learning after: blameless post-incident reviews and the honest framing of response (fast, calm, organized — not perfect)"
+    ],
+    "supporting": [
+      "events vs. incidents: an event is any observable occurrence; an incident is a particular kind of event",
+      "signs of incidents: precursors (may occur in future) and indicators (may be occurring now)",
+      "incident response plan contents: roles, contacts, reporting mechanisms, outside-party communication",
+      "tabletop exercises as rehearsal",
+      "reporting anomalous activity to CISA Central"
+    ],
+    "outOfScope": [
+      "logging and log analysis mechanics (sibling topic: logging)",
+      "ransomware-specific response playbooks (sibling topic: ransomware)",
+      "backup strategy and restore mechanics (sibling topic: backups)",
+      "attack techniques and step-by-step attack detail (defensive framing only)",
+      "forensic evidence procedure and legal process detail"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "An event is any observable occurrence in a system or network; a computer security incident is a violation or imminent threat of violation of computer security policies, acceptable use policies, or standard security practices.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-sp-800-61r2", "nist-csrc-glossary-incident"],
+      "status": "supported"
+    },
+    {
+      "claim": "An 'imminent threat of violation' refers to a situation in which the organization has a factual basis for believing a specific incident is about to occur.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-sp-800-61r2"],
+      "status": "supported"
+    },
+    {
+      "claim": "NIST SP 800-61 describes the incident response process in phases — preparation; detection and analysis; containment, eradication and recovery; post-incident activity — and states that response helps personnel minimize loss or theft of information and disruption of services caused by incidents.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-sp-800-61r2"],
+      "status": "supported"
+    },
+    {
+      "claim": "Detection and analysis is often the most challenging part of incident response: incidents are detected through automated capabilities (for example intrusion detection systems, antivirus software, and log analyzers) and through manual means such as problems reported by users; signs of an incident are either precursors (a sign an incident may occur in the future) or indicators (a sign an incident may have occurred or may be occurring now).",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-sp-800-61r2"],
+      "status": "supported"
+    },
+    {
+      "claim": "Containment is important before an incident overwhelms resources or increases damage; most incidents require containment, and it provides time for developing a tailored remediation strategy. Containment decisions (shut down a system, disconnect it from a network, disable certain functions) are much easier to make if there are predetermined strategies and procedures, and delayed containment is dangerous because an attacker could escalate unauthorized access or compromise other systems.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-sp-800-61r2"],
+      "status": "supported"
+    },
+    {
+      "claim": "Following standardized procedures should minimize errors, particularly those that might be caused by stressful incident handling situations.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-sp-800-61r2"],
+      "status": "supported"
+    },
+    {
+      "claim": "An incident response plan is a written document, formally approved by the senior leadership team, that helps the organization before, during, and after a confirmed or suspected security incident and clarifies roles and responsibilities.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cisa-incident-response-plan-basics"],
+      "status": "supported"
+    },
+    {
+      "claim": "During an incident, distinct roles matter: an Incident Manager leads the response, manages communication flows, updates stakeholders, and delegates tasks without performing technical duties; a Tech Manager serves as the technical subject matter expert; a Communications Manager interacts with reporters and external stakeholders.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cisa-incident-response-plan-basics"],
+      "status": "supported"
+    },
+    {
+      "claim": "All staff should know how to report suspicious events, and organizations should be gracious when people report false alarms and reward people who come forward, as part of a culture of security; NIST recommends that at least one incident reporting mechanism permit people to report anonymously.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cisa-incident-response-plan-basics", "nist-sp-800-61r2"],
+      "status": "supported"
+    },
+    {
+      "claim": "Post-incident reviews (NIST 'lessons learned' meetings, CISA retrospectives) should be held within days of a major incident, should examine what happened, how well the response worked, and what to do differently, and must be blameless: security incidents are rarely the result of one person's action and are almost always the result of a failure of the overall system, so the review examines people, processes, and technologies and updates policies and procedures.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-sp-800-61r2", "cisa-incident-response-plan-basics"],
+      "status": "supported"
+    },
+    {
+      "claim": "CISA advises that all organizations should have clear, executable cyber incident response plans and strategies to protect their own interests and prevent an incident from growing and causing greater harm, and that organizations should report anomalous cyber activity or incidents; CISA Central is the national 24/7 hub for reporting.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cisa-incident-response-topic"],
+      "status": "supported"
+    },
+    {
+      "claim": "An incident response plan should be reviewed regularly (NIST: at least annually) and rehearsed, for example through tabletop exercises in which a facilitator presents a scenario to the team.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-sp-800-61r2", "cisa-incident-response-plan-basics"],
+      "status": "supported"
+    },
+    {
+      "claim": "U.S. federal statute (44 U.S.C. § 3552) defines an incident as an occurrence that actually or imminently jeopardizes, without lawful authority, the integrity, confidentiality, or availability of information or an information system, or that constitutes a violation or imminent threat of violation of law, security policies, security procedures, or acceptable use policies.",
+      "claimType": "LEGAL",
+      "sourceIds": ["usc-44-3552"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "How 'incident' is defined across authorities",
+      "positions": [
+        "NIST SP 800-61r2 defines an incident operationally as a violation or imminent threat of violation of computer security policies, acceptable use policies, or standard security practices.",
+        "U.S. federal statute (44 U.S.C. § 3552) frames an incident as an occurrence that actually or imminently jeopardizes, without lawful authority, the integrity, confidentiality, or availability of information or an information system, or a violation or imminent threat of violation of law or security policies."
+      ],
+      "resolution": "The lesson leads with the NIST operational definition used in incident handling guidance (the 'working definition, attributed'), adds the everyday gloss 'a security event that harms or threatens the organization,' and notes that federal statute phrases the same idea differently; no single definition is asserted as universal."
+    },
+    {
+      "issue": "How the response lifecycle is named",
+      "positions": [
+        "NIST SP 800-61 describes four phases: preparation; detection and analysis; containment, eradication and recovery; post-incident activity.",
+        "Many curricula teach the cycle in six steps: prepare, detect, contain, eradicate, recover, learn (a popularization aligned with the SANS PICERL-style naming)."
+      ],
+      "resolution": "The lesson names the classic cycle as prepare, detect, contain, eradicate, recover, learn — one line each — and explicitly maps the six steps onto the four NIST SP 800-61 phases, attributing the underlying framework to NIST."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The machine-generated draft was treated as editorial intent only; its boilerplate framing (an unattributed 'security event' definition and generic lifecycle wording) was discarded rather than verified, per the topic-agent brief."
+  ],
+  "correctionsNeeded": [
+    "Replaced any unattributed incident definition with the attributed NIST SP 800-61r2 definition, with the everyday gloss kept clearly separate.",
+    "Named the six-stage classic cycle and mapped it explicitly onto the four NIST SP 800-61 phases so the naming is not presented as NIST's own.",
+    "Added the CISA blameless-retrospective requirement and role definitions (Incident Manager, Tech Manager, Communications Manager) to the human-side and learning-after sections."
+  ],
+  "rightsIssues": [
+    "NIST SP 800-61r2, the NIST CSRC glossary page, and 44 U.S.C. § 3552 are U.S. federal government works (public domain). The CISA topic page and CISA Incident Response Plan Basics are U.S. federal works used as REFERENCE_ONLY; all lesson prose is original synthesis, and no source wording is reproduced. CISA's site blocks direct fetches, so its page and PDF were read through a text-rendering proxy (recorded in the notes)."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-sp-800-61r2",
+      "title": "NIST Special Publication 800-61 Revision 2: Computer Security Incident Handling Guide",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Full PDF downloaded from nvlpubs.nist.gov and text-extracted with pdftotext on 2026-08-21 (31,764 words of extracted text). Supports: the event vs. incident distinction; the incident definition (violation or imminent threat of violation of computer security policies, acceptable use policies, or standard security practices); the 'imminent threat of violation' footnote; the incident response lifecycle phases (preparation; detection and analysis; containment, eradication and recovery; post-incident activity); detection via automated tools and user reports with precursors vs. indicators; containment-first rationale and predetermined-strategy decision-making; standardized procedures minimizing errors under stress; lessons-learned meetings (timing, questions, documentation); plan review at least annually. Facts synthesized into original prose."
+    },
+    {
+      "id": "cisa-incident-response-topic",
+      "title": "Incident Response (CISA topic page)",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA), U.S. Department of Homeland Security",
+      "url": "https://www.cisa.gov/topics/cyber-threats-and-response/incident-response",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live on 2026-08-21 via a text-rendering proxy (cisa.gov's Akamai edge blocks direct fetches; the full page text was retrieved and reviewed). Supports: all organizations should have clear, executable cyber incident response plans and strategies to protect their own interests and prevent an incident from growing and causing greater harm; organizations should report anomalous cyber activity or incidents; CISA Central operates a 24/7 situational awareness, analysis, and incident response center. No source wording reproduced."
+    },
+    {
+      "id": "cisa-incident-response-plan-basics",
+      "title": "Incident Response Plan (IRP) Basics",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA), U.S. Department of Homeland Security",
+      "url": "https://www.cisa.gov/sites/default/files/publications/Incident-Response-Plan-Basics_508c.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "PDF read on 2026-08-21 through a text-rendering proxy (direct download is blocked by cisa.gov's edge; the extracted document text was reviewed in full). Supports: the IRP as a written document formally approved by senior leadership that helps before, during, and after a confirmed or suspected security incident and clarifies roles and responsibilities; role definitions (Incident Manager leads without technical duties, Tech Manager as subject matter expert, Communications Manager for reporters and external stakeholders); staff training on reporting and rewarding people who come forward, including false alarms; blameless retrospectives (incidents are almost always the result of failure of the overall system); updating policies and procedures after the review; communicating findings to staff; tabletop exercises; the point that the time to arrange law-enforcement notification is not during the incident. No source wording reproduced."
+    },
+    {
+      "id": "nist-csrc-glossary-incident",
+      "title": "incident — Glossary (NIST CSRC)",
+      "provider": "National Institute of Standards and Technology (NIST), Computer Security Resource Center",
+      "url": "https://csrc.nist.gov/glossary/term/incident",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Glossary page fetched 2026-08-21; the page requires JavaScript, so the definition text was extracted from the embedded page data ('a violation or imminent threat of violation of security policies, security procedures, or acceptable use policies' with variants). Used to cross-check the attributed NIST incident definition carried in the lesson and to attribute the definition to the glossary as well as to SP 800-61r2."
+    },
+    {
+      "id": "usc-44-3552",
+      "title": "44 U.S.C. § 3552 — Definitions (FISMA)",
+      "provider": "U.S. House of Representatives, Office of the Law Revision Counsel (uscode.house.gov)",
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title44-section3552&num=0&edition=prelim",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live from uscode.house.gov on 2026-08-21. Verified the statutory definition of 'incident' (subsection (b)(2)): an occurrence that actually or imminently jeopardizes, without lawful authority, the integrity, confidentiality, or availability of information or an information system, or that constitutes a violation or imminent threat of violation of law, security policies, security procedures, or acceptable use policies. Used only in the conflicting-evidence record to contrast the statutory framing with the NIST operational definition; the lesson leads with the NIST definition."
+    }
+  ]
+}

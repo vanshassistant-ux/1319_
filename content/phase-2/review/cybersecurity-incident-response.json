@@ -1,0 +1,311 @@
+{
+  "id": "cybersecurity:foundations:incident-response",
+  "subjectSlug": "cybersecurity",
+  "unitSlug": "foundations",
+  "slug": "incident-response",
+  "title": "Incident Response",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "cybersecurity",
+    "foundations",
+    "incident-response",
+    "incident",
+    "response",
+    "containment",
+    "preparedness"
+  ],
+  "in30Seconds": "An incident is a security event that harms or threatens the organization — in NIST's working definition, a violation or imminent threat of violation of security policies or standard practices. When one happens, teams follow a classic cycle: prepare, detect, contain, eradicate, recover, learn. A written plan makes crisis decisions calmer and faster. Containment comes first: stop the spread before fixing. People matter too — clear roles, communication, and reporting. Afterwards, a blameless review improves the next response. The goal is a fast, organized response, not perfection.",
+  "whyItMatters": "Every organization will eventually face a security incident — a stolen credential, a rogue email, an infected computer. The difference between a contained problem and a costly one is usually preparation, not brilliance. Understanding how response works helps you act calmly when something looks wrong, know what to expect from the people handling it, and recognize why organizations rehearse and review. It also gives you the vocabulary to read real-world reports about breaches and response efforts accurately. As more of daily life runs on networked systems, knowing what to do when something goes wrong becomes as basic a skill as knowing what to do in a fire drill.",
+  "learningObjectives": [
+    "Define a computer security incident using the NIST working definition and distinguish it from an ordinary event.",
+    "Name the six stages of the classic response cycle — prepare, detect, contain, eradicate, recover, learn — and explain how they map onto the phases of the NIST SP 800-61 lifecycle.",
+    "Explain why decisions made in advance produce a calmer, faster response than decisions made during a crisis.",
+    "Apply the containment-first priority to a realistic incident scenario.",
+    "Describe the human side of incident response: team roles, communication, and reporting.",
+    "Explain what a blameless post-incident review is for and what it produces."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "What an incident is",
+      "body": "An event is any observable occurrence in a system or network, such as a user signing in. NIST's SP 800-61, the standard reference on this subject, defines a computer security incident as a violation or imminent threat of violation of computer security policies, acceptable use policies, or standard security practices. In everyday language, that is a security event that harms or threatens the organization: someone gets into a system who should not be there, data goes missing, or a machine misbehaves oddly. Two halves matter. \"Violation\" covers what already happened; \"imminent threat of violation\" covers a situation where the organization has reason to believe an incident is about to occur, such as a vendor warning that new malware is spreading. The definition is attributed because authorities phrase it differently: federal statute (44 U.S.C. § 3552) calls an incident an occurrence that actually or imminently jeopardizes the confidentiality, integrity, or availability of information or an information system. Same idea, different words; this lesson follows the NIST definition."
+    },
+    {
+      "heading": "The response lifecycle: prepare, detect, contain, eradicate, recover, learn",
+      "body": "The classic cycle is taught in six steps, which fold into the four phases of the NIST SP 800-61 lifecycle. Prepare: build the team, write the plan, gather tools and contacts before anything happens. Detect: notice that something is wrong, through tools or through people reporting what they see. Contain: stop the spread so the damage cannot grow. Eradicate: remove the cause — the malicious program, the unauthorized account, the open door. Recover: return systems to normal operation and confirm they are healthy. Learn: review what happened and what worked so the next response is better. The cycle is circular — learning feeds back into preparation — and NIST notes that activity often cycles back to detection during cleanup, to check whether more machines are affected."
+    },
+    {
+      "heading": "Why a plan matters",
+      "body": "The core point is simple: decisions made in a crisis are better made in advance. NIST is explicit that containment decisions — shut a system down, disconnect it from the network, disable a function — are much easier to make when strategies and procedures are predetermined, and that standardized procedures minimize errors, particularly under stress. CISA makes the same point about the plan itself: an incident response plan is a written document, approved by senior leadership, that helps the organization before, during, and after a confirmed or suspected security incident and clarifies roles and responsibilities. Practical ingredients: who does what, who to contact, how staff report suspicious events, and what to tell outsiders — CISA notes the time to arrange law-enforcement notification is not in the heat of battle. Plans are living documents: NIST says review at least annually; CISA's basics suggest a quarterly look. Teams also rehearse: a tabletop exercise is a role-playing drill where a facilitator walks the team through a scenario."
+    },
+    {
+      "heading": "Containment first",
+      "body": "The key priority during a live incident is to stop the spread before fixing. NIST is blunt: containment is important before an incident overwhelms resources or increases damage, most incidents require it, and it buys time for developing a tailored remediation strategy. The actions are simple to describe — disconnect a machine, block a route, disable an account — but each is a trade-off among damage, evidence preservation, service availability, and speed. Delaying is dangerous: while a compromised system stays connected, the attacker can escalate access or move to other systems. Consider a small accounting practice where one staff laptop shows antivirus alerts and the network monitor sees the same laptop talking to an unknown server at 3 a.m. The plan says: disconnect the laptop, block its traffic, and keep the shared drive read-only until the consultant checks it. Isolation comes first; cleanup comes after."
+    },
+    {
+      "heading": "The human side",
+      "body": "Incidents are handled by people with defined roles; CISA's plan basics names three. An Incident Manager leads the response, manages communication, updates stakeholders, and delegates tasks — deliberately not doing technical work, so someone keeps the clock and the big picture. A Tech Manager is the technical lead who brings in the right experts. A Communications Manager handles reporters and external stakeholders. NIST adds the broader shape: an incident response team — sometimes a CSIRT — with contacts inside the organization (management, legal, public affairs) and outside (vendors, other response teams, law enforcement). Reporting works two ways. Inside, staff need to know how to report suspicious events, and NIST recommends at least one mechanism that permits anonymity. Outside, organizations should report anomalous cyber activity or incidents — in the United States, CISA Central is the national 24/7 hub. And false alarms are part of the deal: CISA advises being gracious, because a culture where reporting is punished is a culture where incidents hide."
+    },
+    {
+      "heading": "Learning after",
+      "body": "The most honest part of response happens after the systems are healthy. NIST calls learning and improving one of the most important parts of incident response — and the one most often omitted. The tool is the lessons-learned meeting, held within days of a major incident, covering what happened, how well the response worked, what was needed sooner, and what to do differently next time. CISA's version, the retrospective, adds the honesty rule: it must be blameless. Incidents are rarely the result of one person's action — they are almost always the result of a failure of the overall system — so the review examines people, processes, and technologies and improves processes. The output is concrete: updated policies and procedures, better indicators to watch, and findings communicated to staff, because transparency builds trust. That is also the honest framing of the whole discipline: the goal is not a perfect, mistake-free response — incidents are messy — but a fast, calm, organized one that gets measurably better each time."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "incident",
+      "definition": "A violation or imminent threat of violation of computer security policies, acceptable use policies, or standard security practices; in everyday terms, a security event that harms or threatens the organization."
+    },
+    {
+      "term": "event",
+      "definition": "Any observable occurrence in a system or network, such as a user signing in or a server receiving a request; an incident is a particular kind of event."
+    },
+    {
+      "term": "incident response plan",
+      "definition": "A written document, approved by senior leadership, that tells the organization what to do before, during, and after a suspected or confirmed security incident."
+    },
+    {
+      "term": "incident response team",
+      "definition": "The group of people assigned to handle incidents, sometimes called a computer security incident response team (CSIRT)."
+    },
+    {
+      "term": "containment",
+      "definition": "The response stage that stops an incident from spreading or growing, such as disconnecting a machine or disabling an account."
+    },
+    {
+      "term": "eradication",
+      "definition": "The response stage that removes the cause of an incident, such as deleting a malicious program or closing an unauthorized account."
+    },
+    {
+      "term": "recovery",
+      "definition": "The response stage that returns affected systems to normal operation and verifies that they are healthy."
+    },
+    {
+      "term": "indicator",
+      "definition": "A sign that an incident may have occurred or may be occurring now, such as an antivirus alert or an unexpected account lockout."
+    },
+    {
+      "term": "lessons-learned review",
+      "definition": "A structured meeting after an incident, also called a retrospective, that examines what happened and how to improve, without assigning blame."
+    },
+    {
+      "term": "tabletop exercise",
+      "definition": "A rehearsal in which a facilitator walks the response team through a simulated incident scenario."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "An incident is when something bad happens to a system — someone breaks in, data gets stolen, a computer starts acting strangely. The response is a six-step habit: prepare, detect, contain, eradicate, recover, learn. You cannot stop every bad thing from happening, so you plan what to do before it happens, notice it fast when it does, stop it from spreading, remove what caused it, put everything back, and then talk honestly about how it went so the next time is better. The team has clear jobs, everyone knows how to report, and afterwards nobody gets blamed — the process gets fixed instead.",
+    "analogy": "Think of a burst pipe in a house. You do not start repainting the ceiling first. The first move is to shut off the water — that is containment. Then you find the break and fix the pipe — eradication. Then you dry the walls and repair the damage — recovery. Then you ask why the pipe burst and whether the other pipes need attention — learning. And you would much rather know where the shut-off valve is and who to call before the water is pouring out, which is why the plan is written and rehearsed in advance.",
+    "analogyLimits": "A pipe does not fight back. An attacker adapts, moves sideways through the network, and may notice they have been discovered. Cutting power to a machine can destroy evidence and even trigger destructive behavior, so containment choices are real trade-offs. And a house leak is usually over when the water stops; an incident can keep evolving for weeks."
+  },
+  "workedExample": "Cedar Hollow Outfitters, a small outdoor-gear retailer, runs its inventory system on a shared drive. On a Tuesday, the store manager notices three staff accounts are locked out, and the part-time IT consultant sees a workstation uploading a steady stream of data to an overseas address at 2 a.m. The plan, written the previous winter, names the moves: the consultant disconnects the workstation and blocks the address at the router; the shared drive is switched to read-only so nothing more can be written to it; the owner calls the payment processor's security line and reports the activity to CISA, since the machine had handled card transactions. Only then does the consultant examine the machine, remove the suspicious program, and reset the three accounts. The drive is checked, restored from a clean copy, and staff return to normal work. A week later the four of them hold a blameless retrospective: the infection probably arrived through a staff member's personal web browsing, so the plan gains a rule about reviewing off-hours traffic and faster lockout alerts.",
+  "commonMistakes": [
+    {
+      "mistake": "Jumping straight to cleanup instead of containing first.",
+      "correction": "When a machine is infected, the instinct is to delete the file and move on. The priority is containment: disconnect, block, isolate — then eradicate. NIST notes that most incidents require containment early and that a compromised system left connected can be used to attack other systems."
+    },
+    {
+      "mistake": "Waiting until you are completely certain before acting.",
+      "correction": "Detection is the hardest phase, and the signs are often ambiguous. NIST's guidance is to treat indicators as reasons to investigate and contain, not to wait for proof. A false alarm is cheap; a delayed response is expensive."
+    },
+    {
+      "mistake": "Turning the post-incident review into a blame hunt.",
+      "correction": "Reviews must be blameless. CISA's guidance is direct: incidents are almost always the result of failures of the overall system, not one person's action, and people only speak openly in a safe environment. Fix the processes, not the people."
+    },
+    {
+      "mistake": "Hiding the incident or skipping reporting.",
+      "correction": "Organizations should report anomalous cyber activity and incidents — CISA Central is the national hub — and staff need a known, safe way to report suspicious events inside the organization. CISA even recommends rewarding people who come forward, including for false alarms."
+    },
+    {
+      "mistake": "Writing the plan once and filing it away.",
+      "correction": "Plans are living documents. NIST says to review the incident response plan at least annually; CISA's basics suggest a quarterly review, plus rehearsals like tabletop exercises."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Event",
+      "b": "Incident",
+      "distinction": "An event is any observable occurrence in a system or network; an incident is an event that violates security policies or practices — one that harms or threatens the organization. Every incident is an event, but most events are routine."
+    },
+    {
+      "a": "Containment",
+      "b": "Eradication",
+      "distinction": "Containment stops the spread and limits damage; eradication removes the cause. Containment buys time and must come first; eradication finishes the job."
+    },
+    {
+      "a": "Precursor",
+      "b": "Indicator",
+      "distinction": "A precursor is a sign that an incident may occur in the future; an indicator is a sign that an incident may have occurred or is occurring now. Precursors are relatively rare, while indicators are common."
+    }
+  ],
+  "keyTakeaway": "A security incident is an event that harms or threatens the organization. Respond with a plan: prepare, detect, contain, eradicate, recover, learn — contain first, communicate clearly, and review honestly. The goal is a fast, calm, organized response, not a perfect one.",
+  "questionBank": [
+    {
+      "id": "cybersecurity:foundations:incident-response:1",
+      "prompt": "According to NIST's working definition, what is a computer security incident?",
+      "options": [
+        "Any observable occurrence in a system or network, such as a user signing in.",
+        "A violation or imminent threat of violation of computer security policies, acceptable use policies, or standard security practices.",
+        "Any system crash or hardware failure, regardless of cause.",
+        "An event reported by an employee, whether or not it involves security."
+      ],
+      "correctIndex": 1,
+      "explanation": "NIST SP 800-61r2 defines a computer security incident as a violation or imminent threat of violation of computer security policies, acceptable use policies, or standard security practices. An observable occurrence is an event, not necessarily an incident; crashes from natural causes fall outside the definition; and an employee report alone does not make something an incident.",
+      "difficulty": "recall",
+      "skill": "Recall of the attributed NIST incident definition",
+      "sourceIds": [
+        "nist-sp-800-61r2",
+        "nist-csrc-glossary-incident"
+      ]
+    },
+    {
+      "id": "cybersecurity:foundations:incident-response:2",
+      "prompt": "In the classic incident response cycle, why does containment come before eradication?",
+      "options": [
+        "Because eradication is optional when the damage is already done.",
+        "Because containment costs less than eradication.",
+        "Because stopping the spread first limits further damage and buys time to plan a careful cleanup.",
+        "Because law enforcement requires containment before any other action."
+      ],
+      "correctIndex": 2,
+      "explanation": "NIST's guidance is that containment is important before an incident overwhelms resources or increases damage, and that it provides time for developing a tailored remediation strategy. Eradication is not optional, the order is not about cost, and law enforcement does not dictate this sequencing.",
+      "difficulty": "understanding",
+      "skill": "Understanding the rationale for the containment-first ordering",
+      "sourceIds": [
+        "nist-sp-800-61r2"
+      ]
+    },
+    {
+      "id": "cybersecurity:foundations:incident-response:3",
+      "prompt": "At a small architecture firm, several staff computers show antivirus alerts for the same suspicious file, and the network monitor flags one workstation sending traffic to an unknown server at night. According to this lesson's containment-first priority, which action comes first?",
+      "options": [
+        "Disconnect the flagged workstation and the shared drive from the network, then investigate the file while the spread is stopped.",
+        "Delete the suspicious file from each computer one by one while the network stays up.",
+        "Shut the building's power down and wait for the vendor's support line.",
+        "Wait until the team can prove exactly which employee introduced the file."
+      ],
+      "correctIndex": 0,
+      "explanation": "Containment first means stopping the spread before fixing: NIST notes that most incidents require containment early and that a compromised system left connected lets the attacker escalate or reach other systems. Deleting files while the network stays up risks reinfection; powering down destroys evidence and disrupts everything; waiting for proof delays action while the incident grows.",
+      "difficulty": "application",
+      "skill": "Applying the containment-first priority to a realistic scenario",
+      "sourceIds": [
+        "nist-sp-800-61r2",
+        "cisa-incident-response-plan-basics"
+      ]
+    },
+    {
+      "id": "cybersecurity:foundations:incident-response:4",
+      "prompt": "A community credit union activates its incident response plan after a suspected breach. According to CISA's role guidance, who leads the response — managing communication flows and delegating tasks — while deliberately not performing technical cleanup?",
+      "options": [
+        "The communications manager.",
+        "The external security vendor's lead technician.",
+        "The software vendor that wrote the breached application.",
+        "The incident manager."
+      ],
+      "correctIndex": 3,
+      "explanation": "CISA's Incident Response Plan Basics assigns an Incident Manager to lead the response, manage communication flows, update stakeholders, and delegate tasks — with no technical duties. The communications manager handles reporters and external stakeholders, while the vendor's technician and the software vendor are resources, not leaders of the response.",
+      "difficulty": "application",
+      "skill": "Applying CISA's role definitions to an incident scenario",
+      "sourceIds": [
+        "cisa-incident-response-plan-basics"
+      ]
+    },
+    {
+      "id": "cybersecurity:foundations:incident-response:5",
+      "prompt": "After a phishing-style incident, a college's IT team holds a retrospective. Which practice best matches the blameless review this lesson describes?",
+      "options": [
+        "Identify which employee clicked the link and discipline them as an example.",
+        "Skip the meeting because the incident was minor and the systems are healthy.",
+        "Review the timeline, what worked, and what to improve in processes — without assigning blame.",
+        "Keep the findings confidential so staff do not worry about security."
+      ],
+      "correctIndex": 2,
+      "explanation": "CISA's guidance is that retrospectives must be blameless because incidents are almost always the result of failures of the overall system, not one person's action; the review examines people, processes, and technologies. Disciplining an employee is the opposite of blameless; skipping the review omits what NIST calls one of the most important — and most often omitted — parts of incident response; and hiding findings contradicts the transparency that builds trust.",
+      "difficulty": "analysis",
+      "skill": "Analyzing post-incident review practice against the blameless standard",
+      "sourceIds": [
+        "cisa-incident-response-plan-basics",
+        "nist-sp-800-61r2"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "cybersecurity:foundations:incident-response:1",
+      "prompt": "According to NIST's working definition, what is a computer security incident?",
+      "options": [
+        "Any observable occurrence in a system or network, such as a user signing in.",
+        "A violation or imminent threat of violation of computer security policies, acceptable use policies, or standard security practices.",
+        "Any system crash or hardware failure, regardless of cause.",
+        "An event reported by an employee, whether or not it involves security."
+      ],
+      "correctIndex": 1,
+      "explanation": "NIST SP 800-61r2 defines a computer security incident as a violation or imminent threat of violation of computer security policies, acceptable use policies, or standard security practices. An observable occurrence is an event, not necessarily an incident; crashes from natural causes fall outside the definition; and an employee report alone does not make something an incident.",
+      "difficulty": "recall",
+      "skill": "Recall of the attributed NIST incident definition",
+      "sourceIds": [
+        "nist-sp-800-61r2",
+        "nist-csrc-glossary-incident"
+      ]
+    },
+    {
+      "id": "cybersecurity:foundations:incident-response:2",
+      "prompt": "In the classic incident response cycle, why does containment come before eradication?",
+      "options": [
+        "Because eradication is optional when the damage is already done.",
+        "Because containment costs less than eradication.",
+        "Because stopping the spread first limits further damage and buys time to plan a careful cleanup.",
+        "Because law enforcement requires containment before any other action."
+      ],
+      "correctIndex": 2,
+      "explanation": "NIST's guidance is that containment is important before an incident overwhelms resources or increases damage, and that it provides time for developing a tailored remediation strategy. Eradication is not optional, the order is not about cost, and law enforcement does not dictate this sequencing.",
+      "difficulty": "understanding",
+      "skill": "Understanding the rationale for the containment-first ordering",
+      "sourceIds": [
+        "nist-sp-800-61r2"
+      ]
+    },
+    {
+      "id": "cybersecurity:foundations:incident-response:3",
+      "prompt": "At a small architecture firm, several staff computers show antivirus alerts for the same suspicious file, and the network monitor flags one workstation sending traffic to an unknown server at night. According to this lesson's containment-first priority, which action comes first?",
+      "options": [
+        "Disconnect the flagged workstation and the shared drive from the network, then investigate the file while the spread is stopped.",
+        "Delete the suspicious file from each computer one by one while the network stays up.",
+        "Shut the building's power down and wait for the vendor's support line.",
+        "Wait until the team can prove exactly which employee introduced the file."
+      ],
+      "correctIndex": 0,
+      "explanation": "Containment first means stopping the spread before fixing: NIST notes that most incidents require containment early and that a compromised system left connected lets the attacker escalate or reach other systems. Deleting files while the network stays up risks reinfection; powering down destroys evidence and disrupts everything; waiting for proof delays action while the incident grows.",
+      "difficulty": "application",
+      "skill": "Applying the containment-first priority to a realistic scenario",
+      "sourceIds": [
+        "nist-sp-800-61r2",
+        "cisa-incident-response-plan-basics"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "cybersecurity:foundations:risk",
+    "cybersecurity:foundations:logging",
+    "cybersecurity:foundations:ransomware",
+    "cybersecurity:foundations:backups",
+    "cybersecurity:foundations:nist-cybersecurity-framework"
+  ],
+  "sources": [
+    "nist-sp-800-61r2",
+    "cisa-incident-response-topic",
+    "cisa-incident-response-plan-basics",
+    "nist-csrc-glossary-incident",
+    "usc-44-3552"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only and public-domain sources; all prose original, no source wording adapted",
+    "researchedAt": "2026-08-21",
+    "transformation": "Facts from NIST SP 800-61r2, CISA guidance, and 44 U.S.C. § 3552 were synthesized into original explanatory prose with original examples; the six-stage cycle naming (prepare, detect, contain, eradicate, recover, learn) is presented as the common teaching form of the four-phase NIST SP 800-61 lifecycle."
+  },
+  "contentHash": "061bca3869f56a8e",
+  "status": "source-verified",
+  "public": false
+}

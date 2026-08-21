@@ -1,0 +1,290 @@
+{
+  "id": "cybersecurity:foundations:logging",
+  "subjectSlug": "cybersecurity",
+  "unitSlug": "foundations",
+  "slug": "logging",
+  "title": "Logging",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "cybersecurity",
+    "foundations",
+    "logging",
+    "security-literacy"
+  ],
+  "in30Seconds": "A log is a record of the events a system has seen: a line for each login, file change, network connection, or error. Logs are the raw material of security because they are how incidents get noticed and investigated. But a log only helps if someone reviews it, and only if it is stored somewhere safe where it cannot be silently edited. Logs tell you what happened, not why — turning entries into answers still takes a human being.",
+  "whyItMatters": "Every account you use and every website you visit leaves traces in some system's logs. When a bank card is used oddly, when a school account signs in at 3 a.m., when a server starts failing — the first question is always \"what actually happened?\" Logs answer that question, which makes them the backbone of detection and investigation. Understanding logs lets you read breach reports intelligently, appreciate why organizations keep records of your activity, and see why a record nobody reads is no protection at all. As more of life moves onto connected systems, the ability to ask \"what happened?\" — and to trust the answer — only grows more important.",
+  "learningObjectives": [
+    "Define a log using the working definition from NIST SP 800-92 and describe what a log entry contains.",
+    "Name the common kinds of events systems log — logins, file changes, network connections, and errors — and give an original example of each.",
+    "Explain why logs matter for security as the record that makes incident detection and investigation possible.",
+    "Apply the core practice of log review, including the general role of automated monitoring.",
+    "Analyze why logs must be protected from tampering and how safe storage and limited access reduce the risk.",
+    "Evaluate the limits of logs: what a log entry records versus what human analysis must determine."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "What a log is",
+      "body": "A log is a record of the events occurring within a system or network. That working definition comes from NIST SP 800-92, the U.S. government's guide to computer security log management, and it is attributed because other documents define logs for their own narrower purposes — a compliance rule may define exactly which audit records a specific law requires, while an application developer thinks of the log as whatever their program writes. What the NIST definition captures is the general shape: a log is made of log entries, and each entry describes one event — a sign-in attempt, a file saved, a connection opened, an error thrown — usually with the date and time, the account or address involved, and the outcome. Logs come from everywhere: security software such as antivirus programs and firewalls, operating systems on servers and workstations, and applications. A single system may keep several logs at once."
+    },
+    {
+      "heading": "What gets logged",
+      "body": "The events worth recording fall into a few families, and each family has a typical example. Logins: authentication servers log every sign-in attempt, including the account name, whether it succeeded or failed, and when it happened — a school's login server recording \"account s.miller failed sign-in at 02:17\" is a login entry. File changes: file servers and applications record additions, modifications, and deletions — a clinic's records system logging \"patient file 2214 modified at 23:41 by backup account\" is a file-change entry. Network connections: firewalls and routers log traffic they permitted or blocked — a bookstore's firewall logging \"blocked inbound connection on port 22 from address 203.0.113.9\" is a network entry. Errors: applications log failures and unusual conditions — a library catalog system logging \"database connection timed out at 14:02\" is an error entry. OWASP's guidance to developers lists authentication successes and failures, application errors and system events, network connections and their failures, and use of privileged functionality as events worth recording — and warns against logging too much or too little."
+    },
+    {
+      "heading": "Why logs matter for security",
+      "body": "Logs matter because they are the record of what actually happened, and that record is how problems get found. NIST describes routine log review and analysis as beneficial for identifying security incidents, policy violations, fraudulent activity, and operational problems shortly after they occur, and as useful for auditing, forensic analysis, and internal investigations. When something goes wrong, the timeline of events in the logs is usually the starting point for the investigation. The organized process of detecting, containing, and learning from an incident belongs to the incident-response topic in this curriculum; this lesson's point is that incident response and most other security work stand on the logs underneath them. A system that records nothing is a system whose problems are invisible."
+    },
+    {
+      "heading": "The core practice: log review",
+      "body": "A log that nobody reads is just a file. The core practice is review: someone — or something — must actually look at the entries. NIST observes that log analysis has often been treated as a low-priority chore and that administrators frequently lack tools to automate it, while tools that do automate analysis are helpful precisely because they find patterns humans cannot easily see, such as repeated failures across many accounts. So the practice has two halves. People review logs on a schedule and whenever something smells wrong. Automated monitoring watches around the clock, flags suspicious patterns, and brings them to a person's attention — general-purpose monitoring, not any specific product, since tool selection is a practitioner topic. CISA's Logging Made Easy project exists because many small organizations would otherwise have little ability to detect attacks at all: it provides centralized logging so activity can be monitored and analyzed. Review is what turns a record into protection."
+    },
+    {
+      "heading": "Protecting logs, and the honest limits",
+      "body": "Logs are themselves a target. Because they record evidence, NIST warns that logs secured improperly can be intentionally or unintentionally altered or destroyed, and notes that some malicious software has been designed specifically to edit logs to remove traces of its own installation and execution. Protection follows two general practices. Store logs safely: keep them somewhere separate from the systems being logged, so a compromised machine cannot silently rewrite its own history, and keep enough space so records are not overwritten. Limit who can change them: access controls so only the people who need to work with logs can read or alter them — the same least-privilege idea that governs accounts generally. And the honest framing: a log entry records what happened — an event, a time, an account — but not why. A failed login at 3 a.m. is a fact; whether it was an attacker, a mistake, or a test is a judgment that human analysis must make. Logs narrow the story; people finish it."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "log",
+      "definition": "A record of the events occurring within a system or network, composed of entries that each describe a single event."
+    },
+    {
+      "term": "log entry",
+      "definition": "A single record within a log describing one event, typically including the time, the account or address involved, and the outcome."
+    },
+    {
+      "term": "log review",
+      "definition": "The practice of examining log entries to identify events of interest, whether on a schedule, after an incident, or with automated monitoring."
+    },
+    {
+      "term": "authentication log",
+      "definition": "A log that records sign-in attempts, including the account, the origin, whether each attempt succeeded or failed, and the time."
+    },
+    {
+      "term": "automated monitoring",
+      "definition": "Software that watches log entries continuously, flags patterns that look suspicious, and alerts people instead of waiting for a human to look."
+    },
+    {
+      "term": "log tampering",
+      "definition": "The alteration or deletion of log entries, by accident or on purpose, to hide or distort what happened."
+    },
+    {
+      "term": "centralized logging",
+      "definition": "Sending log entries from many systems to one protected place so they can be stored, reviewed, and analyzed together."
+    },
+    {
+      "term": "forensic analysis",
+      "definition": "The examination of records and evidence after an incident to reconstruct what happened and support an investigation."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "A log is a notebook that a computer keeps about what it has seen. Every time someone tries to sign in, every time a file changes, every time a connection opens or something breaks, the computer writes a line. The notebook is useful for two reasons: when something goes wrong, you can look back and see when it started and what touched it, and because the computer writes while it is happening, the notebook does not rely on anyone's memory. But a notebook only helps if someone reads it, and if the notebook is left where anyone can tear out pages, it cannot be trusted. A log tells you what happened. Figuring out why is the human part.",
+    "analogy": "Think of a log as the flight recorder on an airplane. The recorder does not fly the plane and does not prevent problems; it quietly captures data about what the aircraft actually did. When a flight goes smoothly, nobody looks at it. When something goes wrong, investigators go to the recorder first, because it is the one thing that kept a steady, unedited account of the flight. A security log plays the same role for a computer system: a continuous, automatic record that matters most exactly when things go wrong.",
+    "analogyLimits": "The comparison breaks down because a flight recorder is sealed, armored, and kept where the crew cannot touch it, while many computer logs live on the very machines they describe, where the software being logged could edit them. Also, a flight recorder's data is interpreted by trained investigators; a log still needs a person, or well-designed monitoring, to notice that an entry matters."
+  },
+  "workedExample": "Northgate Hardware's online ordering site started rejecting customers' logins on a Tuesday afternoon. The owner checked the application log and found an error entry: the database stopped answering requests at 14:02. The database server's own log showed the same minute: a flood of failed sign-in attempts on one account — thousands of attempts in an hour. The authentication log confirmed it: the account \"orders\" had been failing repeatedly from the same small set of internet addresses, and then one attempt succeeded at 15:47. The logs told the story of what happened: someone hammered the account until it worked, and the system buckled under the load. They did not say who was behind it or why. The owner changed the password, locked the account, and set up monitoring that would flag a hundred failed attempts in an hour — and noted that the incident-response process, not the logs themselves, would handle the follow-up.",
+  "commonMistakes": [
+    {
+      "mistake": "Believing a system that logs everything is automatically protected.",
+      "correction": "Recording is not review. NIST's guidance is that routine log review and analysis is where the value comes from — identifying incidents, policy violations, and operational problems — so a log nobody looks at is just a file."
+    },
+    {
+      "mistake": "Trusting a log that lives on the very machine it describes.",
+      "correction": "Logs can be altered or destroyed, and NIST notes that some malicious software is designed to erase its own traces from logs. Storing logs safely and limiting who can change them is part of the practice."
+    },
+    {
+      "mistake": "Reading a log entry as the full explanation of an event.",
+      "correction": "An entry records what happened — the event, the time, the account — not why. Determining intent and cause is human analysis, which is why the honest framing matters."
+    },
+    {
+      "mistake": "Assuming an empty log means a quiet system.",
+      "correction": "Logging can be disabled, misconfigured, or filling up. Review includes checking that the recording itself is working; an empty log from a source that runs continuously is itself a signal."
+    },
+    {
+      "mistake": "Logging everything without deciding what matters.",
+      "correction": "OWASP's logging guidance warns that it is important not to log too much or too little. Useful logging targets the event families in this lesson — sign-ins, file changes, network connections, and errors — plus privileged actions."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "A log",
+      "b": "A log entry",
+      "distinction": "A log is the collection of records a system keeps; a log entry is one record within it that describes a single event, with its time, actors, and outcome."
+    },
+    {
+      "a": "Logging",
+      "b": "Incident response",
+      "distinction": "Logging is the continuous recording of events as they happen; incident response is the organized process of handling a confirmed problem. Logs feed investigations — they are not the investigation itself, which is why incident response is its own topic."
+    },
+    {
+      "a": "Manual log review",
+      "b": "Automated monitoring",
+      "distinction": "Manual review is a person examining entries on a schedule or after an event; automated monitoring watches continuously, flags patterns, and brings them to a person. Both are forms of review; they differ in who does the watching."
+    }
+  ],
+  "keyTakeaway": "A log is a record of what a system has seen, and it only becomes protection when someone reviews it, when it is stored where it cannot be tampered with, and when a human turns its entries into answers.",
+  "questionBank": [
+    {
+      "id": "cybersecurity:foundations:logging:1",
+      "prompt": "According to the working definition from NIST SP 800-92, what is a log?",
+      "options": [
+        "A program that blocks unwanted network traffic based on a policy",
+        "A database that tracks publicly known software weaknesses",
+        "A written report a security analyst produces after an incident is resolved",
+        "A record of the events occurring within a system or network, composed of entries that each describe one event"
+      ],
+      "correctIndex": 3,
+      "explanation": "NIST SP 800-92 defines a log as a record of the events occurring within a system or network, made up of entries that each relate to a specific event. A program that blocks traffic is a firewall, a database of weaknesses is a vulnerability tracker, and an after-the-fact report is an analysis product, not the log itself.",
+      "difficulty": "recall",
+      "skill": "Recalling the attributed working definition of a log",
+      "sourceIds": [
+        "nist-sp-800-92"
+      ]
+    },
+    {
+      "id": "cybersecurity:foundations:logging:2",
+      "prompt": "A deli's login server records the account \"manager\" failing to sign in once a minute from 2:00 to 4:00 a.m., a time the shop is closed, followed by one successful sign-in. What does this lesson say the log shows — and what does it not show?",
+      "options": [
+        "It proves the manager's password was stolen and that a former employee is responsible",
+        "It proves the server was malfunctioning, since real sign-ins only happen during business hours",
+        "It records repeated failed sign-in attempts followed by a success, giving investigators a timeline to start from — but not the identity or the reason behind them",
+        "It shows nothing useful, because login attempts are not the kind of event systems log"
+      ],
+      "correctIndex": 2,
+      "explanation": "NIST SP 800-92 notes that authentication servers log each attempt with its origin, username, success or failure, and time, and that logs support investigations. The entry records what happened — a burst of failures and then a success — but not who was behind it or why, which is exactly the honest limit the lesson stresses. Login attempts are routinely logged, so D is wrong, and the pattern alone proves neither theft nor malfunction.",
+      "difficulty": "analysis",
+      "skill": "Analyzing what a login-log pattern establishes and what it leaves open",
+      "sourceIds": [
+        "nist-sp-800-92"
+      ]
+    },
+    {
+      "id": "cybersecurity:foundations:logging:3",
+      "prompt": "A bakery's point-of-sale computer keeps its activity log in a file on that same computer, and all four employees sign in with one shared administrator account. Which change best follows this lesson's guidance on protecting logs?",
+      "options": [
+        "Store the log where people who might tamper with it cannot reach it, and limit who is allowed to read or change it",
+        "Delete old entries every Friday so the log file never grows large enough to attract attention",
+        "Keep the log only in the running program's memory so nothing is written to disk",
+        "Have each employee keep a personal notebook of what they did during their shift"
+      ],
+      "correctIndex": 0,
+      "explanation": "NIST SP 800-92 warns that logs secured improperly can be altered or destroyed and must be protected; safe storage plus restricted access is the general practice the lesson teaches. Deleting entries destroys evidence, an in-memory-only log is lost the moment the program stops, and a notebook is not a system log at all.",
+      "difficulty": "application",
+      "skill": "Applying log-protection practices to a concrete setup",
+      "sourceIds": [
+        "nist-sp-800-92"
+      ]
+    },
+    {
+      "id": "cybersecurity:foundations:logging:4",
+      "prompt": "A systems administrator reviews the antivirus log, which should record detected malware and quarantines, and the firewall log, which should record blocked traffic, and finds both completely empty for the past week. Following this lesson's review practice, what should the administrator think?",
+      "options": [
+        "Nothing to worry about — empty logs mean nothing unusual happened",
+        "The network is definitely safe, because no blocked traffic means no attacks",
+        "An empty log can itself be a signal: logging may be disabled, misconfigured, or full, so the administrator should verify the recording is actually working",
+        "The firewall should be replaced with a model that generates more entries"
+      ],
+      "correctIndex": 2,
+      "explanation": "The lesson's core practice is review, and review includes questioning the record itself: NIST lists log generation, protection, and analysis as the areas where things go wrong. A week of silence from two sources that run continuously is more likely a broken recorder than a quiet network, so the administrator checks the sources. An empty log proves nothing about safety, which rules out A and B, and D fixes nothing until the recording is verified.",
+      "difficulty": "analysis",
+      "skill": "Analyzing what an empty log does and does not establish",
+      "sourceIds": [
+        "nist-sp-800-92",
+        "owasp-logging-cheat-sheet"
+      ]
+    },
+    {
+      "id": "cybersecurity:foundations:logging:5",
+      "prompt": "According to NIST SP 800-92, which of the following is a benefit of routine log review and analysis?",
+      "options": [
+        "It automatically prevents attacks from reaching the system",
+        "It helps identify security incidents, policy violations, fraudulent activity, and operational problems shortly after they occur",
+        "It removes the need for authentication, because every action is recorded",
+        "It guarantees that log entries can never be altered"
+      ],
+      "correctIndex": 1,
+      "explanation": "NIST SP 800-92 states that routine log reviews and analysis help identify security incidents, policy violations, fraudulent activity, and operational problems shortly after they occur. Logs record rather than block, so A is wrong; recording does not replace authentication, so C is wrong; and protecting logs from alteration is a separate practice, so D is wrong.",
+      "difficulty": "recall",
+      "skill": "Recalling why routine log review matters",
+      "sourceIds": [
+        "nist-sp-800-92"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "cybersecurity:foundations:logging:1",
+      "prompt": "According to the working definition from NIST SP 800-92, what is a log?",
+      "options": [
+        "A program that blocks unwanted network traffic based on a policy",
+        "A database that tracks publicly known software weaknesses",
+        "A written report a security analyst produces after an incident is resolved",
+        "A record of the events occurring within a system or network, composed of entries that each describe one event"
+      ],
+      "correctIndex": 3,
+      "explanation": "NIST SP 800-92 defines a log as a record of the events occurring within a system or network, made up of entries that each relate to a specific event. A program that blocks traffic is a firewall, a database of weaknesses is a vulnerability tracker, and an after-the-fact report is an analysis product, not the log itself.",
+      "difficulty": "recall",
+      "skill": "Recalling the attributed working definition of a log",
+      "sourceIds": [
+        "nist-sp-800-92"
+      ]
+    },
+    {
+      "id": "cybersecurity:foundations:logging:2",
+      "prompt": "A deli's login server records the account \"manager\" failing to sign in once a minute from 2:00 to 4:00 a.m., a time the shop is closed, followed by one successful sign-in. What does this lesson say the log shows — and what does it not show?",
+      "options": [
+        "It proves the manager's password was stolen and that a former employee is responsible",
+        "It proves the server was malfunctioning, since real sign-ins only happen during business hours",
+        "It records repeated failed sign-in attempts followed by a success, giving investigators a timeline to start from — but not the identity or the reason behind them",
+        "It shows nothing useful, because login attempts are not the kind of event systems log"
+      ],
+      "correctIndex": 2,
+      "explanation": "NIST SP 800-92 notes that authentication servers log each attempt with its origin, username, success or failure, and time, and that logs support investigations. The entry records what happened — a burst of failures and then a success — but not who was behind it or why, which is exactly the honest limit the lesson stresses. Login attempts are routinely logged, so D is wrong, and the pattern alone proves neither theft nor malfunction.",
+      "difficulty": "analysis",
+      "skill": "Analyzing what a login-log pattern establishes and what it leaves open",
+      "sourceIds": [
+        "nist-sp-800-92"
+      ]
+    },
+    {
+      "id": "cybersecurity:foundations:logging:3",
+      "prompt": "A bakery's point-of-sale computer keeps its activity log in a file on that same computer, and all four employees sign in with one shared administrator account. Which change best follows this lesson's guidance on protecting logs?",
+      "options": [
+        "Store the log where people who might tamper with it cannot reach it, and limit who is allowed to read or change it",
+        "Delete old entries every Friday so the log file never grows large enough to attract attention",
+        "Keep the log only in the running program's memory so nothing is written to disk",
+        "Have each employee keep a personal notebook of what they did during their shift"
+      ],
+      "correctIndex": 0,
+      "explanation": "NIST SP 800-92 warns that logs secured improperly can be altered or destroyed and must be protected; safe storage plus restricted access is the general practice the lesson teaches. Deleting entries destroys evidence, an in-memory-only log is lost the moment the program stops, and a notebook is not a system log at all.",
+      "difficulty": "application",
+      "skill": "Applying log-protection practices to a concrete setup",
+      "sourceIds": [
+        "nist-sp-800-92"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "cybersecurity:foundations:incident-response",
+    "cybersecurity:foundations:authentication",
+    "cybersecurity:foundations:least-privilege",
+    "cybersecurity:foundations:privacy",
+    "cybersecurity:foundations:nist-cybersecurity-framework"
+  ],
+  "sources": [
+    "nist-sp-800-92",
+    "cisa-logging-made-easy",
+    "owasp-logging-cheat-sheet"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only sources; no source prose adapted",
+    "researchedAt": "2026-08-21",
+    "transformation": "Facts from NIST SP 800-92, CISA, and OWASP were verified live on 2026-08-21 (CISA's Logging Made Easy page was read via an Internet Archive capture from 2026-03-15 because cisa.gov blocked direct fetching; the canonical URL is cited) and synthesized into original lesson prose. All examples and scenarios — the school's login server, the clinic's records system, the bookstore firewall, Northgate Hardware — are original to this lesson."
+  },
+  "contentHash": "71fd78677287275f",
+  "status": "source-verified",
+  "public": false
+}

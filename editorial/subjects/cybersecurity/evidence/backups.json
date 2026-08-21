@@ -1,0 +1,239 @@
+{
+  "topicId": "cybersecurity:foundations:backups",
+  "subjectId": "cybersecurity",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "Definition of a backup as a separate, restorable copy of data",
+      "Causes of data loss: accidents, hardware failure, ransomware",
+      "The 3-2-1 rule (three copies, two media types, one offsite)",
+      "Qualities of a good backup: tested restores, versioning, offline or isolated copies, automation",
+      "Backup versus sync: syncing propagates changes (including deletions) and is not backing up",
+      "General practice: automate backups and test restores regularly"
+    ],
+    "supporting": [
+      "Cloud storage as one way to hold an offsite copy",
+      "Recovery planning as the context that motivates backup design"
+    ],
+    "outOfScope": [
+      "Ransomware mechanics, delivery routes, and payment questions (sibling topic: ransomware)",
+      "Incident-response procedures and reporting flows (sibling topic: incident-response)",
+      "How to choose or configure specific cloud storage tools (practitioner topic)",
+      "Offensive techniques and exploit details (defensive framing only)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A backup is a copy of data kept separately from the original so it can be restored if the original is lost, damaged, or corrupted.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "uscert-data-backup-options",
+        "proton-backup-vs-sync",
+        "nist-sp-800-184"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Data loss commonly results from accidents (mistaken deletion or overwrite), hardware failure, and ransomware; each is a reason to keep separate copies.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "backblaze-3-2-1-backup-strategy",
+        "uscert-data-backup-options"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The 3-2-1 rule, stated in US-CERT's Data Backup Options, is to keep three copies of any important file (one primary and two backups), on two different media types, with one copy stored offsite.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "uscert-data-backup-options",
+        "backblaze-3-2-1-backup-strategy"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Backups must be stored so ransomware cannot reach them: on a separate device not accessible from the network, kept offline, because attackers deliberately delete backups during attacks.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "cisa-ransomware-faqs",
+        "cisa-protecting-against-ransomware",
+        "cisa-stop-ransomware",
+        "nist-sp-800-184",
+        "microsoft-protect-against-ransomware"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Guidance requires testing backups: maintain backups and test them regularly, including full restore procedures; the lesson's honest line, that an untested backup is a hope, not a plan, is a synthesis of that requirement.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "cisa-stop-ransomware",
+        "microsoft-protect-against-ransomware",
+        "cisa-protecting-against-ransomware"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Syncing is not backing up: synchronization propagates changes, including deletions, across all copies, so it cannot preserve a point-in-time version; for backup purposes, sync is almost completely useless.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "proton-backup-vs-sync"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Good backup practice automates copies (rolling backups that update automatically and periodically) and keeps more than one copy or version, because saving just one backup file may not be enough to safeguard information.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "uscert-data-backup-options",
+        "backblaze-3-2-1-backup-strategy"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Backups are the last line of defense: they do not prevent failures, but they turn disasters into inconveniences, which is the premise of recovery planning.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "nist-sp-800-184",
+        "cisa-stop-ransomware"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether the classic 3-2-1 rule is still sufficient, or whether extra layers are now required.",
+      "positions": [
+        "US-CERT's Data Backup Options publishes the classic rule: three copies, two media types, one offsite.",
+        "Backblaze notes the rule has held up as the de facto standard but that many organizations now extend it with additional layers (e.g., 3-2-1-1-0 or 4-3-2) adding offline or immutable copies."
+      ],
+      "resolution": "The lesson presents 3-2-1 as the classic baseline, explicitly attributed to the US-CERT publication, and notes that some organizations extend it; the extensions reinforce, rather than contradict, the core ideas of redundancy and separation."
+    },
+    {
+      "issue": "Whether a single backup copy is enough protection.",
+      "positions": [
+        "US-CERT warns that saving just one backup file may not be enough to safeguard your information.",
+        "Casual practice often stops at one extra copy, such as a single external drive."
+      ],
+      "resolution": "The lesson follows US-CERT: multiple copies, multiple media, and an offsite copy are the standard, and a single copy is presented as a starting point rather than a plan."
+    }
+  ],
+  "unsupportedExistingClaims": [],
+  "correctionsNeeded": [
+    "No machine-generated draft existed for this topic in public/content/phase-2/lessons.json, so the lesson was written fresh from sources.",
+    "The 3-2-1 rule is attributed to the US-CERT Data Backup Options paper (verified by direct read of the archived document) rather than left unattributed.",
+    "Framing kept strictly defensive: ransomware is named as a cause of data loss and referenced to its sibling lesson, with no attack detail."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "nist-sp-800-184",
+      "title": "NIST Special Publication 800-184: Guide for Cybersecurity Event Recovery",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-184.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A. Downloaded the PDF directly from nvlpubs.nist.gov (HTTP 200) and read the text layer on 2026-08-21. Supports: backups stored in different physical and offline locations; offsite/offline copies described as particularly critical given the credible threat of ransomware that encrypts data and holds the decryption key; recovery planning and testing as the premise for restoring operations after an event; restoring the last known good state of data. Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "uscert-data-backup-options",
+      "title": "Data Backup Options (Paul Ruggiero and Matthew A. Heckathorn)",
+      "provider": "U.S. Computer Emergency Readiness Team (US-CERT) / CISA",
+      "url": "https://www.cisa.gov/sites/default/files/publications/data_backup_options.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A. cisa.gov blocks automated fetchers (HTTP 403 on the canonical PDF), so the paper was read via an Internet Archive capture of the original us-cert.gov copy (web.archive.org, HTTP 200) on 2026-08-21; the canonical CISA URL is registered. Supports: every computer user should back up critical data on desktops, laptops, servers, and mobile devices to protect it from loss or corruption; saving just one backup file may not be enough; the 3-2-1 rule stated as three copies (one primary and two backups), two different media types, and one copy offsite; rolling backups as a method that automatically and periodically updates the backup files; cloud storage as a remote backup option. Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "cisa-stop-ransomware",
+      "title": "CISA: Stop Ransomware (StopRansomware.gov)",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/stopransomware",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Reused from the phase-1 source registry with an identical id and URL. Supports the guidance to maintain offline, encrypted backups and test them regularly; cited in this lesson for the tested-restore requirement and the last-line-of-defense framing."
+    },
+    {
+      "id": "cisa-ransomware-faqs",
+      "title": "CISA: Ransomware FAQs (Stop Ransomware)",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/stopransomware/ransomware-faqs",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Reused from the phase-1 source registry with an identical id and URL. Supports backing up data on a separate device stored offline and the warning that actors increasingly delete system backups to make restoration harder."
+    },
+    {
+      "id": "cisa-protecting-against-ransomware",
+      "title": "CISA: Protecting Against Ransomware (blog, released April 11, 2019; revised September 2, 2021)",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/news-events/news/protecting-against-ransomware",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Reused from the phase-1 source registry with an identical id and URL. Supports backups stored on a separate device that cannot be accessed from the network and verified regularly."
+    },
+    {
+      "id": "microsoft-protect-against-ransomware",
+      "title": "Microsoft Learn: Protect your organization against ransomware (Microsoft Security)",
+      "provider": "Microsoft Learn (Microsoft Security)",
+      "url": "https://learn.microsoft.com/en-us/security/ransomware/protect-against-ransomware",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Reused from the phase-1 source registry with an identical id and URL; re-verified live (HTTP 200) on 2026-08-21. Supports backups that are offline or immutable and the requirement to test full restore procedures."
+    },
+    {
+      "id": "backblaze-3-2-1-backup-strategy",
+      "title": "Data Backup Strategies: Why the 3-2-1 Backup Strategy is the Best",
+      "provider": "Backblaze",
+      "url": "https://www.backblaze.com/blog/the-3-2-1-backup-strategy/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier D reputable secondary. Read live (HTTP 200) on 2026-08-21. Supports: the 3-2-1 rule definition and its purpose of avoiding a single point of failure vulnerable to human error, hard drive crashes, theft, natural disasters, or ransomware; the rule's standing as the de facto standard for data redundancy; the emergence of extended variants (3-2-1-1-0, 4-3-2) adding offline or immutable copies; attribution of the rule to the 2012 US-CERT/Carnegie Mellon guidance. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "proton-backup-vs-sync",
+      "title": "What is the difference between backup and sync?",
+      "provider": "Proton (Proton blog)",
+      "url": "https://proton.me/blog/backup-vs-sync",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier D reputable secondary (Proton blog, published October 12, 2023). Read live (HTTP 200) on 2026-08-21. Supports: a backup as a copy of a file stored so it can be retrieved if needed, versus sync as having a file in two or more locations where changes made in one copy are reflected across all others; changes propagating across synced copies; the conclusion that for backup purposes sync is almost completely useless because synced files update themselves and cannot preserve specific versions. Facts synthesized; no wording reproduced."
+    }
+  ]
+}

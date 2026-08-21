@@ -1,0 +1,195 @@
+{
+  "topicId": "cybersecurity:foundations:wi-fi-security",
+  "subjectId": "cybersecurity",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "what Wi-Fi is: radio waves instead of cables",
+      "why wireless needs extra care: radio signals travel beyond walls and anyone nearby can receive them",
+      "password and encryption basics, with WPA2 and WPA3 named as the current standards",
+      "risks of open (passwordless) networks: unencrypted traffic can be captured",
+      "securing a home network: strong router password, updated firmware, separate guest network (general practices, no router-config how-to)",
+      "safe public Wi-Fi habits: avoid sensitive activities, use HTTPS, consider a VPN for sensitive work",
+      "honest framing: wireless security balances convenience and risk"
+    ],
+    "supporting": [
+      "evil-twin impersonation of legitimate access points",
+      "WLAN definition (NIST SP 800-153)"
+    ],
+    "outOfScope": [
+      "how encryption works (sibling topic: encryption)",
+      "HTTPS/TLS mechanics (sibling topic: https-tls-basics)",
+      "network segmentation and guest-network design (sibling topic: network-segmentation)",
+      "step-by-step router configuration how-tos"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Wi-Fi connects devices to a network using radio waves instead of cables; the wireless network in a home or small office is a wireless local area network (WLAN).",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "cisa-securing-wireless-networks",
+        "nist-sp-800-153"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Wireless radio signals typically reach about 150 to 300 feet indoors and up to about 1,000 feet outdoors, so the signal extends beyond a home's walls and people outside the building may be able to receive it and eavesdrop.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "cisa-securing-wireless-networks",
+        "cisa-home-network-security"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Wi-Fi networks can be protected with a password and encryption; WPA, WPA2, and WPA3 encrypt traffic between the router and connected devices, with WPA3 currently the strongest standard and WPA2 still widely supported.",
+      "claimType": "CURRENT",
+      "sourceIds": [
+        "cisa-securing-wireless-networks",
+        "cisa-home-network-security",
+        "ftc-secure-home-wi-fi-network"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Older wireless encryption standards such as WEP and the original WPA are outdated and should not be used for a home network.",
+      "claimType": "CURRENT",
+      "sourceIds": [
+        "ftc-secure-home-wi-fi-network"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "An open network has no password and no encryption of its own, so an attacker within range can capture traffic sent in the clear; an attacker can also impersonate a legitimate access point (evil twin) to lure devices into connecting.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "cisa-securing-wireless-networks",
+        "nist-sp-800-153"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Securing a home network includes changing the router's default administrator password, using the strongest encryption available (WPA3 where supported, WPA2 otherwise), keeping router firmware updated, and providing visitors a separate guest network with its own credentials.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "cisa-home-network-security",
+        "ftc-secure-home-wi-fi-network",
+        "cisa-securing-wireless-networks"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "On public Wi-Fi, users should avoid sensitive activities, look for the HTTPS lock indicator before entering information, keep software updated, and consider a VPN for sensitive work; most public traffic is now encrypted at the website level, but the open network itself provides no protection.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ftc-are-public-wi-fi-networks-safe",
+        "cisa-securing-wireless-networks"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Wireless security balances convenience and risk: protections such as passwords, encryption, and firmware updates reduce the chance of harm, but no network is guaranteed completely safe.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "cisa-securing-wireless-networks",
+        "ftc-are-public-wi-fi-networks-safe"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "How much risk does an open public Wi-Fi network actually pose, given that most websites now encrypt their own traffic?",
+      "positions": [
+        "CISA warns that unencrypted traffic on a wireless network can be captured in the clear by an attacker within range.",
+        "FTC notes that because of encryption, connecting through a public Wi-Fi network is usually safe, with the lock symbol or HTTPS indicating an encrypted connection to the website."
+      ],
+      "resolution": "The lesson presents both accurately: an open network provides no protection of its own and anyone can join, while HTTPS protects individual website connections regardless of the network; sensitive activities are still safest on a network the user trusts."
+    },
+    {
+      "issue": "Which encryption standard should a home network use?",
+      "positions": [
+        "WPA3 is currently the strongest Wi-Fi security standard.",
+        "Older devices may only support WPA2, which remains a current, widely supported standard."
+      ],
+      "resolution": "The lesson follows the FTC's guidance: use WPA3 or WPA2, with WPA3 where every device supports it and WPA2 otherwise; WEP and the original WPA are outdated."
+    }
+  ],
+  "unsupportedExistingClaims": [],
+  "correctionsNeeded": [
+    "Wrote the lesson from verified sources (CISA, FTC, NIST SP 800-153); the machine-generated draft boilerplate was discarded rather than corrected, and no router-configuration how-to content was included per subject scope."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "cisa-securing-wireless-networks",
+      "title": "Securing Wireless Networks",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/news-events/news/securing-wireless-networks",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "cisa.gov blocks automated fetchers (Akamai); read an Internet Archive capture of the canonical URL on 2026-08-21. Supports: wireless signals typically reach about 150-300 feet indoors and up to about 1,000 feet outdoors; Wi-Fi networks protected with passwords and encryption (WPA, WPA2, and WPA3 encrypt traffic between the router and connected devices, WPA3 currently the strongest); unencrypted traffic on open networks can be captured in the clear; evil-twin access points impersonate legitimate networks; changing default administrator passwords; guest networks as a separate channel with separate credentials; updating access-point firmware. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "cisa-home-network-security",
+      "title": "Home Network Security",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/news-events/news/home-network-security",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "cisa.gov blocks automated fetchers; read an Internet Archive capture of the canonical URL on 2026-08-21. Supports: changing the router's default administrator credentials; using the strongest available encryption protocol (WPA3); keeping router firmware updated; wireless signals extending beyond walls and enabling eavesdropping by people outside; guest network separation for visitors. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "ftc-secure-home-wi-fi-network",
+      "title": "How To Secure Your Home Wi-Fi Network",
+      "provider": "U.S. Federal Trade Commission (FTC), Consumer Advice",
+      "url": "https://consumer.ftc.gov/articles/how-secure-your-home-wi-fi-network",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live on 2026-08-21. Supports: using WPA3 or WPA2 (WPA2 Personal for home networks) for encryption, with WEP and the original WPA outdated; changing the router's administrator password and the Wi-Fi network password; keeping router firmware updated; using a guest network with different credentials so guests' infected devices stay off the primary network. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "ftc-are-public-wi-fi-networks-safe",
+      "title": "Are Public Wi-Fi Networks Safe? What You Need To Know",
+      "provider": "U.S. Federal Trade Commission (FTC), Consumer Advice",
+      "url": "https://consumer.ftc.gov/articles/are-public-wi-fi-networks-safe-what-you-need-know",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live on 2026-08-21. Supports: because of encryption, connecting through a public Wi-Fi network is usually safe; the lock symbol or HTTPS in the address bar indicates an encrypted connection to the website; sensitive data such as login information for financial, email, or social media accounts can be exposed; use strong passwords and two-factor authentication; keep security software, operating systems, and browsers updated. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "nist-sp-800-153",
+      "title": "NIST SP 800-153: Guidelines for Securing Wireless Local Area Networks (WLANs)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-153.pdf",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Downloaded the PDF from nvlpubs.nist.gov and read its text layer on 2026-08-21. Supports the definition of a wireless local area network (WLAN) and the concept of an unauthorized (rogue) access point on a wireless network; used as a definitional standards reference only."
+    }
+  ]
+}

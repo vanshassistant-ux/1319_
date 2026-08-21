@@ -1,0 +1,158 @@
+{
+  "topicId": "cybersecurity:foundations:https-tls-basics",
+  "subjectId": "cybersecurity",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "HTTPS as the secure version of HTTP, with web traffic protected in transit",
+      "TLS encrypting the connection between browser and server so data in transit cannot be read or altered",
+      "The padlock meaning: encryption plus identity via a certificate",
+      "HTTPS versus HTTP: plain vs protected, illustrated with a login page",
+      "What HTTPS protects: passwords, messages, payment details in transit",
+      "What HTTPS does not protect: the server's security, the site's honesty, data once stored",
+      "Recognizing HTTPS: the padlock and the https:// prefix"
+    ],
+    "supporting": [
+      "TLS as the modern name of the protocol formerly called SSL",
+      "Public Wi-Fi as a place where plain-text HTTP traffic can be intercepted",
+      "Phishing pages can use HTTPS, so the padlock is not a trust badge"
+    ],
+    "outOfScope": [
+      "How encryption algorithms and keys work (own topic: encryption)",
+      "How certificates are issued, validated, and trusted (own topic: digital-certificates)",
+      "Network layers, ports, and packet mechanics (own topic: network-fundamentals)",
+      "Attack techniques and exploitation details (defensive framing only)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "HTTPS is the secure version of HTTP, the protocol used to send data between a web browser and a website.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cloudflare-what-is-https", "mdn-https-glossary", "rfc-9110-http-semantics"],
+      "status": "supported"
+    },
+    {
+      "claim": "HTTPS is not a separate protocol from HTTP; it is HTTP with TLS encryption applied to the connection.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cloudflare-what-is-https", "mdn-https-glossary"],
+      "status": "supported"
+    },
+    {
+      "claim": "TLS is the protocol that encrypts the connection between browser and server, designed to prevent eavesdropping, tampering, and message forgery; data in transit cannot be read or altered without detection.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["rfc-8446-tls13", "nist-sp-800-52r2"],
+      "status": "supported"
+    },
+    {
+      "claim": "TLS authenticates the server side of the connection, so the padlock reflects both encryption and identity confirmation via a certificate.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["rfc-8446-tls13", "cloudflare-what-is-https"],
+      "status": "supported"
+    },
+    {
+      "claim": "Over plain HTTP, data travels in plain text and can be read by anyone on the network path, such as on public Wi-Fi; HTTPS encrypts traffic so intercepted data is unreadable.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["cloudflare-what-is-https"],
+      "status": "supported"
+    },
+    {
+      "claim": "A padlock icon and the https:// prefix in the address bar indicate a protected connection, and modern browsers mark non-HTTPS sites as 'not secure'.",
+      "claimType": "CURRENT",
+      "sourceIds": ["cloudflare-what-is-https", "cisa-recognize-report-phishing"],
+      "status": "supported"
+    },
+    {
+      "claim": "HTTPS protects sensitive data in transit — passwords, private messages, payment details — between the browser and the server.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cloudflare-what-is-https", "mdn-https-glossary"],
+      "status": "supported"
+    },
+    {
+      "claim": "HTTPS does not protect the server's own security, does not guarantee the site is honest or legitimate (phishing pages can use HTTPS), and does not protect data once it is stored on the server; the protection is scoped to the connection.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["rfc-8446-tls13", "cloudflare-what-is-https", "cisa-recognize-report-phishing"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Some browser UI and everyday language say a padlocked page is 'secure', which can read as 'this site is safe to trust'.",
+      "positions": [
+        "A padlock / https:// means the connection is encrypted and the domain is identified.",
+        "The padlock does not mean the site's operators are honest, the server is unhackable, or stored data is protected; phishing sites can obtain valid certificates."
+      ],
+      "resolution": "The lesson keeps both statements and makes the boundary explicit: the padlock describes the journey (the connection), not the destination (the site's security, honesty, or storage). CISA's own guidance uses the padlock to mean 'safely connected' while its phishing guidance treats URL and sender inspection as the real trust checks."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The machine-generated draft contained only generic boilerplate ('HTTPS/TLS Basics is a foundational concept in Cybersecurity', 'College courses use https/tls basics as a building block') with no factual claims to verify; it was discarded wholesale."
+  ],
+  "correctionsNeeded": [
+    "Replaced the generic boilerplate draft with source-verified, original content.",
+    "Clarified that the padlock confirms encryption and domain identity, not site honesty or server security.",
+    "Scoped TLS/HTTPS claims to data in transit, keeping encryption mechanics and certificate internals for their own sibling lessons."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "nist-sp-800-52r2",
+      "title": "NIST SP 800-52 Rev. 2: Guidelines for the Selection, Configuration, and Use of Transport Layer Security (TLS) Implementations",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-52r2.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A. Read the PDF directly. Supports the claim that TLS provides mechanisms to protect data during electronic dissemination across the Internet. Used for verification only; no prose reproduced."
+    },
+    {
+      "id": "rfc-8446-tls13",
+      "title": "RFC 8446 — The Transport Layer Security (TLS) Protocol Version 1.3",
+      "provider": "IETF / RFC Editor",
+      "url": "https://www.rfc-editor.org/rfc/rfc8446.html",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A. Read the plain-text copy at rfc-editor.org; the canonical registry URL is the HTML version. Supports TLS's design goals (prevent eavesdropping, tampering, message forgery) and the secure-channel properties of confidentiality, integrity, and server authentication. No prose reproduced."
+    },
+    {
+      "id": "rfc-9110-http-semantics",
+      "title": "RFC 9110 — HTTP Semantics",
+      "provider": "IETF",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A. Read the plain-text copy at rfc-editor.org. Supports the definition of HTTP as the application-level protocol for distributed hypertext systems and the existence of the 'http' and 'https' URI schemes. No prose reproduced."
+    },
+    {
+      "id": "cloudflare-what-is-https",
+      "title": "What is HTTPS? — Cloudflare Learning Center",
+      "provider": "Cloudflare",
+      "url": "https://www.cloudflare.com/learning/ssl/what-is-https/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Cloudflare blocks direct fetching; read via an Internet Archive capture of the live page. Supports: HTTPS as the secure version of HTTP; TLS (formerly SSL) as the encryption protocol; plain-text HTTP being sniffable on public Wi-Fi and vulnerable to on-path attacks; the padlock in the URL bar; browsers flagging non-HTTPS as not secure; certificates verifying provider identity; HTTPS not being a separate protocol. No prose reproduced."
+    },
+    {
+      "id": "mdn-https-glossary",
+      "title": "MDN Web Docs — HTTPS",
+      "provider": "Mozilla / MDN Web Docs",
+      "url": "https://developer.mozilla.org/en-US/docs/Glossary/HTTPS",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read live. Supports the definition of HTTPS as an encrypted version of HTTP that uses TLS to encrypt all communication between client and server, enabling safe exchange of sensitive data such as banking and online shopping. No prose reproduced."
+    },
+    {
+      "id": "cisa-recognize-report-phishing",
+      "title": "Recognize and Report Phishing",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/secure-our-world/recognize-and-report-phishing",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A. Direct fetch to cisa.gov was bot-blocked; read via an Internet Archive capture. Supports the padlock/https:// meaning a safely connected site and the phishing-recognition framing (check URLs and links; the padlock alone is not a trust check). No prose reproduced."
+    }
+  ]
+}

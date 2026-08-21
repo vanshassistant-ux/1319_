@@ -1,0 +1,206 @@
+{
+  "topicId": "cybersecurity:foundations:digital-certificates",
+  "subjectId": "cybersecurity",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "what a digital certificate is: an electronic document that ties a public key to an identity, digitally signed by a trusted authority (working definition attributed to NIST)",
+      "the trust problem: how a browser or system can know a website is really who it claims to be",
+      "the certificate authority idea: trusted organizations that verify identities and sign certificates, modeled on a passport office",
+      "public/private keys recap: one-sentence connection to asymmetric encryption (encryption is a sibling topic, referenced only)",
+      "what certificates do in practice: enabling HTTPS for websites and verifying software signatures (https-tls-basics is a sibling topic, referenced only)",
+      "certificate warnings: what an invalid or expired certificate warning means in general",
+      "the honest framing: trust chains are only as strong as the weakest link"
+    ],
+    "supporting": [
+      "digital signatures: computed with a private key, verified with the corresponding public key",
+      "certificate contents: identity, public key, key usage, and validity period; certificates expire",
+      "self-signed certificates exist but are not treated as trustworthy by browsers",
+      "server authentication in TLS is performed with the server's public-key certificate",
+      "the 'Your connection is not private' warning and its usual causes"
+    ],
+    "outOfScope": [
+      "encryption mechanics and algorithms (own topic: cybersecurity:foundations:encryption)",
+      "HTTPS/TLS handshake and protocol details (own topic: cybersecurity:foundations:https-tls-basics)",
+      "authentication factors and login processes (own topic: cybersecurity:foundations:authentication)",
+      "hashing internals (own topic: cybersecurity:foundations:hashing)",
+      "attack techniques, exploit details, or how to forge certificates (defensive framing only)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A public key certificate is a set of data that uniquely identifies an entity, contains the entity's public key and possibly other information, and is digitally signed by a trusted party, thereby binding the public key to the entity identified in the certificate (NIST SP 800-57 Part 1 definition, quoted in SP 800-175B Rev. 1).",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nist-sp800-175br1"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A certificate authority is the entity in a public-key infrastructure responsible for issuing certificates, and its responsibilities include validating the accuracy of the information to be bound before the certificate is produced.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nist-sp800-175br1"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A digital signature is computed using a private key and verified using the corresponding public key; NIST describes it as the electronic analogue of a handwritten signature that can be verified by anyone with access to the public key, and as providing identity and integrity authentication.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nist-sp800-175br1"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Certificates can carry additional information such as how the key may be used and the validity period of the certificate, so certificates expire and an expired certificate is no longer accepted as proof of identity.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nist-sp800-175br1"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "SSL/TLS certificates enable websites to use HTTPS, which is more secure than HTTP; they contain the website's public key and its identity, and websites need them to keep user data secure, verify ownership, and prevent attackers from creating a fake version of the site.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "cloudflare-what-is-an-ssl-certificate",
+        "nist-sp800-52r2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "In TLS, server authentication is performed by the client using the server's public-key certificate, which the server presents during the handshake, and TLS servers must be configured with one or more public-key certificates and the associated private keys.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nist-sp800-52r2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "When a certificate cannot be validated, because it is missing, expired, not issued by a legitimate certificate authority, or lists the wrong website, browsers warn the user (for example with a 'Your connection is not private' message) or terminate the connection rather than silently continuing.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "cloudflare-connection-not-private-explained",
+        "nist-sp800-52r2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Software publishers sign their programs with digital signatures, and operating systems check the signatures; for example, Windows device installation uses digital signatures to verify the integrity of driver packages and the identity of the vendor.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "mslearn-driver-signing",
+        "nist-sp800-175br1"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "In asymmetric-key cryptography the public key may be made public without reducing the security of the process, but the private key must remain secret; digital certificates are the documents that attach public keys to identities, and the whole arrangement is only as strong as the trusted authorities that sign certificates.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "nist-sp800-175br1",
+        "cloudflare-what-is-an-ssl-certificate"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Self-signed certificates versus the CA model",
+      "positions": [
+        "A certificate can be signed with the entity's own private key rather than a CA's key (Cloudflare explains self-signed certificates)",
+        "For a certificate to be valid for web use, the domain must obtain it from a certificate authority (Cloudflare)",
+        "NIST's definition describes certificates as signed by a trusted party"
+      ],
+      "resolution": "The lesson notes that self-signed certificates exist but are not treated as trustworthy by browsers, because no independent party verified the identity claim."
+    },
+    {
+      "issue": "Browser warning wording varies across browsers and versions",
+      "positions": [
+        "Cloudflare describes the 'Your connection is not private' message and its causes (missing, expired, not from a legitimate CA, wrong site)",
+        "NIST describes the client terminating the connection or accepting a potentially revoked or compromised certificate when validation cannot be completed"
+      ],
+      "resolution": "The lesson states the general meaning of the warning (the browser could not confirm the site's identity) without promising any specific browser text."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft for this topic contained only generic boilerplate ('Digital Certificates is a foundational concept in Cybersecurity', 'a college-level explanation names the concept', 'Think of digital certificates as a label on a toolbox drawer') with no verifiable facts about certificates; it was discarded entirely."
+  ],
+  "correctionsNeeded": [
+    "Replaced the machine-generated draft with original, source-verified content built on NIST SP 800-175B Rev. 1 and NIST SP 800-52 Rev. 2.",
+    "Attributed the working definition of a digital certificate to NIST (public key certificate definition from SP 800-57 Part 1, quoted in SP 800-175B Rev. 1).",
+    "Kept encryption mechanics and HTTPS/TLS handshake details out of scope, referencing those sibling topics only.",
+    "Added the honest framing that trust chains are only as strong as their weakest link."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "nist-sp800-175br1",
+      "title": "NIST SP 800-175B Rev. 1: Guideline for Using Cryptographic Standards in the Federal Government: Cryptographic Mechanisms",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-175Br1.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read the official PDF text layer (downloaded from nvlpubs.nist.gov) on 2026-08-21. Supports: the public key certificate definition ('A set of data that uniquely identifies an entity, contains the entity's public key and possibly other information, and is digitally signed by a trusted party, thereby binding the public key to the entity identified in the certificate', from SP 800-57 Part 1); 'Certification Authority (CA): The entity in a public key infrastructure (PKI) that is responsible for issuing certificates to certificate subjects'; the CA duty to 'validate the accuracy of the information to be bound' before issuing; 'Additional information in the certificate could specify how the key is used and the validity period of the certificate'; digital signatures ('a digital signature is computed using a private key, and the signature is verified using the public key'; 'an electronic analogue of a hand-written signature that can be verified by anyone with access to the public key'; used for identity and integrity authentication); the public key 'may be made public without reducing the security of the process' while the private key 'must remain secret'. Facts synthesized into original lesson prose; no wording reproduced."
+    },
+    {
+      "id": "nist-sp800-52r2",
+      "title": "NIST SP 800-52 Rev. 2: Guidelines for the Selection, Configuration, and Use of Transport Layer Security (TLS) Implementations",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-52r2.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read the official PDF text layer (downloaded from nvlpubs.nist.gov) on 2026-08-21. Supports: 'Server authentication is performed by the client using the server's public-key certificate, which the server presents during the handshake'; 'The TLS server shall be configured with one or more public-key certificates and the associated private keys'; certification path validation per RFC 5280; when revocation status cannot be obtained, 'the client will either terminate the connection or accept a potentially revoked or compromised certificate'; application protocols such as HTTP can run above TLS (the HTTPS basis). Used only for the identity-authentication and warning behavior claims; handshake mechanics belong to the https-tls-basics sibling topic. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "cloudflare-what-is-an-ssl-certificate",
+      "title": "What is an SSL certificate? (Cloudflare Learning Center)",
+      "provider": "Cloudflare",
+      "url": "https://www.cloudflare.com/learning/ssl/what-is-an-ssl-certificate/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "cloudflare.com serves a JavaScript challenge to automated fetchers; read an Internet Archive capture of the canonical URL (web.archive.org snapshot 20240103114931, status 200) on 2026-08-21. Supports: 'SSL certificates are what enable websites to use HTTPS, which is more secure than HTTP'; certificates 'contain the website's public key and the website's identity, along with related information'; 'For an SSL certificate to be valid, domains need to obtain it from a certificate authority (CA)'; websites need certificates to keep user data secure, verify ownership of the website, and prevent attackers from creating a fake version of the site; self-signed certificates use the website's own private key for the digital signature instead of a CA's key. Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "cloudflare-connection-not-private-explained",
+      "title": "What does the 'Your connection is not private' error mean? (Cloudflare Learning Center)",
+      "provider": "Cloudflare",
+      "url": "https://www.cloudflare.com/learning/ssl/connection-not-private-explained/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "cloudflare.com blocks automated fetchers with a JavaScript challenge; read an Internet Archive capture of the canonical URL (web.archive.org snapshot 20240202200241, status 200) on 2026-08-21. Supports: the 'Your connection is not private' message is caused by an issue with the website's SSL certificate — 'it's missing, or it's expired, or it wasn't issued by a legitimate certificate authority, or the client can't access it for some other reason' — and the certificate may list the wrong website. Used only for the certificate-warning section at the general level. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "mslearn-driver-signing",
+      "title": "Driver Signing With Digital Signatures (Windows drivers, Microsoft Learn)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/driver-signing",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl with a browser user-agent on 2026-08-21. Supports: 'Driver signing associates a digital signature with a driver package'; 'Windows device installation uses digital signatures to verify the integrity of driver packages and the identity of the vendor (software publisher) provider of the driver packages.' Used for the software-signature section; no Windows-specific configuration detail appears in the lesson. License not stated on the page; treated as REFERENCE_ONLY, no wording reproduced."
+    }
+  ]
+}

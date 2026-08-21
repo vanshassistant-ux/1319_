@@ -1,0 +1,159 @@
+# Wi-Fi Security
+
+## In 30 Seconds
+
+Wi-Fi connects devices with radio waves instead of cables, and radio waves do not stop at walls. Anyone nearby may be able to receive the signal, so wireless networks are protected with passwords and encryption. The current standards, WPA2 and WPA3, encrypt the traffic between your devices and your router. Open networks offer none of that protection, so public Wi-Fi calls for care: avoid sensitive activities, look for HTTPS, and consider a VPN. Wireless security balances convenience and risk.
+
+## Why This Matters
+
+Wi-Fi is how most homes and nearly every cafe, airport, and hotel get online, and its defining feature, radio waves that travel beyond your walls, is also its defining risk. A cable only carries data to the device it is plugged into; a radio signal offers that data to everyone within range. That is why wireless networks need passwords and encryption, and why the habits around public Wi-Fi matter: an open network with no protection of its own puts the responsibility on you. Understanding Wi-Fi security connects everyday choices, the router settings you change, the network you join, the lock icon you check, to the same confidentiality principles that protect data everywhere.
+
+## Learning Objectives
+
+- Define Wi-Fi as a way of connecting devices to a network with radio waves instead of cables, and explain why the wireless signal extends beyond physical walls.
+- Explain how passwords and encryption work together to protect a wireless network, naming WPA2 and WPA3 as the current standards.
+- Distinguish a protected wireless network from an open network, including what an attacker can do on each.
+- Apply home security practices, changing the default administrator password, using the strongest available encryption, updating firmware, and enabling a guest network, to a typical home router.
+- Analyze the honest limits of wireless security: protections reduce risk and balance convenience against it, but no network is guaranteed completely safe.
+
+## The College Version
+
+### What Wi-Fi is
+
+Wi-Fi is a way of connecting devices to a network without cables. Instead of traveling through a wire, data travels as radio waves between a device and a wireless router, which passes the traffic to the internet service provider. NIST's guidelines for securing wireless local area networks are built on exactly this arrangement: a WLAN is a local network whose devices connect by radio rather than cable. For the user, the cables simply disappear, so a laptop in the living room, a phone in the kitchen, and a printer in the hallway are all on the same network as the router. But removing the cable changes the security problem in a fundamental way, because a wire is also a physical boundary.
+
+### Why wireless needs extra care
+
+CISA notes that wireless signals typically reach about 150 to 300 feet indoors and up to about 1,000 feet outdoors. Walls slow the signal down; they do not stop it. A neighbor across the street, a person in a parked car, or a stranger on the sidewalk, anyone within range with a receiver can, in principle, pick up the same radio waves your devices send. CISA's home network security guidance makes the consequence explicit: a signal that extends beyond the walls lets people outside the building eavesdrop on the network's traffic. A wired network's protection is partly physical, because you must be inside and plugged in. A wireless network has no such boundary, so its protection has to be built in: a password to control who joins, and encryption to hide the traffic from everyone who receives the signal.
+
+### Passwords and encryption
+
+Two protections work together on a wireless network. The password decides who is allowed to join; encryption scrambles the traffic between the device and the router so that someone who receives the radio waves cannot read them. CISA explains that WPA, WPA2, and WPA3 are security protocols that encrypt the traffic between a router and the devices connected to it, and that WPA3 is currently the strongest. The FTC gives the home-side version of the same advice: use WPA3 or WPA2, because older standards such as WEP and the original WPA are outdated. Most current routers offer WPA2, and newer ones offer WPA3, so the practical rule is to use WPA3 where every device supports it and WPA2 otherwise. How encryption itself works is a separate topic; here the point is the role it plays, because without it a protected network is a locked door with open windows.
+
+### The risks of open networks
+
+An open network is a wireless network with no password, the kind a cafe, airport, or hotel may provide for convenience. CISA warns that on an unencrypted network, an attacker within range can capture the traffic being sent in the clear, meaning readable exactly as transmitted. The FTC adds an important nuance: most websites today encrypt their own traffic with HTTPS, shown by the lock icon in the address bar, so much of what you do on public Wi-Fi is protected at the website level no matter which network you use. But the open network itself protects nothing: anyone can join, and it encrypts nothing for you. An attacker can even set up an access point that imitates a familiar network name, an evil twin, and your device may connect to it automatically, thinking it is the cafe's real network. The network you join is not always the network you intend to join.
+
+### Securing a home network
+
+The practices that protect a home wireless network are general and consistent across CISA and the FTC. Change the router's default administrator password: the default is printed in the manual and widely known, and it controls the settings of the router itself. Use the strongest encryption your equipment supports, WPA3 where available and WPA2 otherwise. Update the router's firmware when the manufacturer releases updates; firmware is the software inside the router, and updates fix security weaknesses. And enable a guest network for visitors: CISA describes the guest feature found on many wireless routers as granting visitors a separate channel with a separate password while keeping the primary credentials private. A guest network also keeps a visitor's infected device away from your main devices, though the isolation idea itself belongs to network segmentation, a sibling topic. The exact menus differ by manufacturer; the goals above are what matter.
+
+### Safe habits on public Wi-Fi and the honest framing
+
+For public networks, the FTC's guidance is to assume the network itself offers nothing: protect your accounts with strong passwords and two-factor authentication, keep your operating system and browser updated, and look for the lock icon or HTTPS before entering information. When a task is sensitive, such as banking or work documents, it is safest on a network you control; on an unfamiliar open network, consider a VPN for that session. The honest framing is a balance. A home network with a changed administrator password, WPA3, updated firmware, and a guest network is dramatically harder to exploit than an open network with factory settings, and still not impossible to break. CISA's guidance does not promise perfect safety; it reduces the chance of harm. Convenience and risk are traded off in every choice: the network you join, the password you set, the update you install. Knowing what the radio waves are doing is what makes the trade an informed one.
+
+## Key Vocabulary
+
+- **Wi-Fi** — A wireless networking technology that carries data between devices and a router using radio waves instead of cables.
+- **wireless router** — A device that sends and receives radio waves, connects wireless devices into a local network, and passes their traffic to the internet service provider.
+- **wireless local area network (WLAN)** — A local network in which devices connect by radio waves rather than cables, typically through a wireless router.
+- **encryption** — The process of scrambling data so that only someone with the right key can read it; on Wi-Fi it hides traffic from people who receive the radio signal.
+- **WPA2** — A widely supported Wi-Fi security standard that encrypts traffic between devices and the router; still current, though newer equipment offers WPA3.
+- **WPA3** — The Wi-Fi security standard currently regarded as the strongest; it encrypts traffic between devices and the router and is offered on newer equipment.
+- **open network** — A wireless network with no password, which anyone within range can join and which provides no encryption of its own.
+- **evil twin** — A fake wireless access point that imitates the name of a legitimate network to trick devices into connecting to it.
+- **guest network** — A separate wireless network provided by a router for visitors, with its own name and password, so guest devices stay off the main network.
+- **firmware** — The software stored on a device such as a router that controls how it operates; manufacturers release updates that fix security weaknesses.
+
+## Eli-10
+
+When you use Wi-Fi, your device and the router are talking by radio. Radio waves do not respect property lines: they pass through walls, out of windows, and down the street. A cable carries data only to the one thing it is plugged into. A radio signal offers the same data to everyone within range, so a wireless network has to carry its own protection. The password decides who is allowed into the conversation. Encryption scrambles the conversation so that even someone who receives the radio waves hears only noise. A network with neither, an open network, is a conversation shouted in a public square. The protections are not magic. They make joining harder and listening harder, which changes the risk from anyone nearby reading your traffic to only someone who defeats the protection being able to. That is the whole job of Wi-Fi security.
+
+## Eli's Analogy
+
+Imagine your family needs to talk about something private while standing in a room with open windows and neighbors on the sidewalk. You could shout in your usual language, and everyone would hear it, neighbors included. Or you could close the door so only people with the key come in, and speak in a code your family shares, so even a neighbor who presses an ear to the glass hears sounds without meaning. The closed door is the password. The family code is encryption.
+
+The analogy understates the problem in two ways. The neighbors are not passive: an attacker can try to guess the password, impersonate the network with a fake access point, or attack the router itself, so the password must be strong and the router's firmware kept updated. And real encryption is mathematical rather than a secret language, and it protects only the link between your device and the router, not your conversation with the website you visit. That part belongs to HTTPS.
+
+## Worked Example
+
+The Vasquez family's router was set up years ago with its default administrator password and an outdated encryption setting. A friend who works in IT notices the network name is visible from the sidewalk and explains that with those settings, anyone nearby could join the network or capture its traffic. That evening the family changes the administrator password, switches the network to WPA3, which all their devices support, updates the router's firmware through its settings page, and turns on the guest network. A week later a cousin visits and connects a tablet that had been acting oddly. The tablet lands on the guest network: it can reach the internet, but it cannot reach the family's computers, cameras, or files. The family kept the convenience of Wi-Fi and removed most of the risk, without touching a single cable.
+
+## Common Mistakes
+
+- **Thinking "I have nothing worth stealing," so Wi-Fi security does not matter.** Attackers do not need to want your files specifically. An open or weakly protected network can be used to hide their activity, to reach other devices on it, or to capture whatever traffic passes. Protecting the network protects everyone who uses it.
+- **Keeping the router's default administrator password because it is never used to connect to Wi-Fi.** The administrator password controls the router's settings, not the Wi-Fi connection. Defaults are printed in manuals and widely known, so CISA and the FTC both list changing it as a first step in securing a home network.
+- **Believing a password alone makes a wireless network safe.** The password controls who joins; encryption, WPA2 or WPA3, protects the traffic; firmware updates fix weaknesses in the router itself. They work as a set, and a network with only one of them is only partially protected.
+- **Treating an open public network as safe because its name looks familiar.** An open network provides no protection of its own, and an evil-twin access point can imitate a trusted network name to lure devices. Avoid sensitive activities, check for HTTPS, and consider a VPN for sensitive work.
+
+## Compare / Contrast
+
+- **Wired network vs. Wireless network** — A cable is a physical boundary: data travels only to the device it is plugged into, so protection is partly physical. Radio waves travel beyond walls, so a wireless network needs its own protections, a password and encryption, because anyone within range may receive the signal.
+- **Protected network (WPA2/WPA3) vs. Open network** — A protected network requires a password to join and encrypts traffic between devices and the router, so receiving the radio waves is not enough to read them. An open network has neither: anyone can join, and traffic can be captured in the clear.
+- **WPA2 vs. WPA3** — Both are current Wi-Fi security standards that encrypt traffic between devices and the router. WPA3 is currently the strongest and is offered on newer equipment; WPA2 remains widely supported, so the practical rule is WPA3 where possible and WPA2 otherwise.
+- **Wi-Fi security vs. Encryption** — Wi-Fi security is the whole practice: strong passwords, current encryption standards, updated firmware, and careful habits on public networks. Encryption is the underlying mechanism that scrambles traffic, and it is a sibling topic of its own.
+
+## Key Takeaway
+
+Wi-Fi trades cables for radio waves, and radio waves do not stop at walls. Protect wireless networks with a changed default administrator password, current encryption such as WPA2 or WPA3, updated firmware, a guest network for visitors, and careful habits on open public networks, balancing convenience against risk.
+
+## Practice Question Bank
+
+**Q1.** Which statement best describes how Wi-Fi connects devices to a network?
+
+- A. It uses radio waves to carry data between devices and a wireless router, instead of cables.
+- B. It sends data as pulses of visible light between devices and a router.
+- C. It carries data through the electrical wiring of the building.
+- D. It requires every device to be connected to the router with a cable.
+
+**Key: A.** Wi-Fi is a wireless networking technology: data travels as radio waves between a device and a wireless router, which is how NIST frames the wireless local area network and how CISA describes wireless networks. Pulses of light, building power wiring, and mandatory cables describe other technologies or the opposite of Wi-Fi.
+
+**Q2.** Why does a wireless network need stronger protection than a wired one?
+
+- A. Radio waves are weaker than wired signals, so wireless networks stop working in bad weather.
+- B. Wired networks cannot be attacked at all, so all security effort should go to wireless.
+- C. Radio signals travel beyond the walls of a building, so people outside may be able to receive the network's traffic.
+- D. Wireless routers are more expensive than wired switches, which attracts attackers.
+
+**Key: C.** CISA notes wireless signals typically reach 150 to 300 feet indoors and up to about 1,000 feet outdoors, and its home network security guidance warns that a signal extending beyond the walls lets people outside eavesdrop. A cable is a physical boundary; radio waves are not. Weather, the false claim that wired networks cannot be attacked, and cost do not explain the difference.
+
+**Q3.** A family is setting up a new home router. Which set of practices best secures their wireless network?
+
+- A. Leave the default administrator password, disable encryption for faster speeds, and share the network name with neighbors.
+- B. Change the router's default administrator password, use WPA3 or WPA2 encryption, update the firmware, and enable a guest network for visitors.
+- C. Use the strongest possible password but never update the router, since updates only change the settings.
+- D. Connect every device with cables instead, because wireless networks can never be secured.
+
+**Key: B.** CISA and the FTC both recommend changing the default administrator password, using the strongest encryption the equipment supports (WPA3, or WPA2 otherwise), keeping router firmware updated, and giving visitors a separate guest network with its own credentials. Defaults, disabled encryption, skipped updates, and shared credentials are the opposite of these practices.
+
+**Q4.** A traveler joins an open, passwordless public Wi-Fi network at an airport and signs in to a bank account. Which statement best analyzes the risk?
+
+- A. There is no risk, because the airport operates the network and monitors it.
+- B. The open network encrypts all traffic, so other users on it cannot see anything.
+- C. The only risk is a slower connection, since the network is free.
+- D. An open network provides no password and no encryption of its own, so traffic without additional protection such as HTTPS can be captured; sensitive activities are safest on a network the user trusts.
+
+**Key: D.** CISA warns that unencrypted traffic on a wireless network can be captured in the clear, and the FTC explains that while HTTPS encrypts most website traffic today, the open network itself protects nothing, because anyone can join. Ownership, automatic encryption by the network, and connection speed do not remove the risk of an open network.
+
+**Q5.** A friend says: "Once my home Wi-Fi has a password, it is completely safe, so I can stop thinking about it." Which response best reflects the honest framing of wireless security?
+
+- A. A password is one layer, but encryption such as WPA2 or WPA3, updated firmware, and careful habits on public networks all matter too; protections reduce risk rather than guarantee safety.
+- B. The friend is right: a password makes interception impossible.
+- C. The friend is right only for home networks; only public networks carry any risk.
+- D. The friend is wrong, because passwords make wireless networks slower and less convenient.
+
+**Key: A.** CISA presents wireless protections as ways to reduce the chance of harm rather than to guarantee it, and the FTC pairs strong passwords with encryption, updates, and careful behavior on public Wi-Fi. A password alone does not make interception impossible, risk is not limited to public networks, and passwords do not work by slowing the network.
+
+## Sources
+
+- Cybersecurity and Infrastructure Security Agency — *Securing Wireless Networks*. https://www.cisa.gov/news-events/news/securing-wireless-networks
+- Cybersecurity and Infrastructure Security Agency — *Home Network Security*. https://www.cisa.gov/news-events/news/home-network-security
+- U.S. Federal Trade Commission — *How To Secure Your Home Wi-Fi Network*. https://consumer.ftc.gov/articles/how-secure-your-home-wi-fi-network
+- U.S. Federal Trade Commission — *Are Public Wi-Fi Networks Safe? What You Need To Know*. https://consumer.ftc.gov/articles/are-public-wi-fi-networks-safe-what-you-need-know
+- National Institute of Standards and Technology — *NIST SP 800-153: Guidelines for Securing Wireless Local Area Networks (WLANs)*. https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-153.pdf
+
+## Related Topics
+
+- cybersecurity:foundations:network-segmentation
+- cybersecurity:foundations:encryption
+- cybersecurity:foundations:https-tls-basics
+- cybersecurity:foundations:network-fundamentals
+- cybersecurity:foundations:password-security
+
+## Editorial Metadata
+
+- Topic ID: cybersecurity:foundations:wi-fi-security
+- Editorial status: READY_TO_PUBLISH
+- Researched at: 2026-08-21
+- Provenance: EliExplains original synthesis; claims verified against CISA (Securing Wireless Networks; Home Network Security), FTC consumer advice (home Wi-Fi security; public Wi-Fi safety), and NIST SP 800-153; all examples original.
+- Framing: defensive and literacy-level only; sibling topics (encryption, HTTPS/TLS basics, network segmentation) are referenced but not covered; no router-configuration how-to included.
