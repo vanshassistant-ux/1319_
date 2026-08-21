@@ -1,0 +1,166 @@
+{
+  "topicId": "databases-and-sql:foundations:rows",
+  "subjectId": "databases-and-sql",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "A row is a single record in a table — one complete set of values across the table's columns (the working definition)",
+      "Each row describes one instance: one customer, one order, one product",
+      "Row, record, and tuple are three names for the same idea",
+      "Rows have no inherent order; the database decides where each row sits",
+      "Rows are distinguished by their key, not by their position",
+      "New records are inserted and old ones deleted as the data changes",
+      "A row is only meaningful through its columns"
+    ],
+    "supporting": [
+      "A table is a named collection of rows",
+      "Each row of a given table carries the same set of named columns, in the same order",
+      "Each column holds one kind of value, which gives each value in a row its meaning",
+      "Keys identify rows so no two rows are confused"
+    ],
+    "outOfScope": [
+      "How tables are designed and structured (tables topic)",
+      "Columns and data types in depth (columns, data-types topics)",
+      "Primary keys and how they work (primary-keys topic)",
+      "INSERT/DELETE syntax and mechanics (insert, delete topics)",
+      "Sorting with ORDER BY (order-by topic)",
+      "SQL syntax in general (sql-basics topic)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A table is a named collection of rows, and each row of a given table has the same set of named columns in the same order.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["postgresql-tutorial-concepts"],
+      "status": "supported"
+    },
+    {
+      "claim": "A row is a single record in a table — one individual entry holding a complete set of values across the table's columns.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["postgresql-tutorial-concepts", "w3schools-sql-intro"],
+      "status": "supported"
+    },
+    {
+      "claim": "Row, record, and tuple are names for the same idea: a record is a row, and a tuple is a collection of attributes in a fixed order that is often called a row.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["w3schools-sql-intro", "postgresql-glossary"],
+      "status": "supported"
+    },
+    {
+      "claim": "A table typically holds one row per instance of the thing it describes — for example, one row per employee in an employee table.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["microsoft-learn-sql-server-tables"],
+      "status": "supported"
+    },
+    {
+      "claim": "The database does not guarantee the order of rows within a table in any way; rows can be explicitly sorted for display, which is the order-by topic.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["postgresql-tutorial-concepts"],
+      "status": "supported"
+    },
+    {
+      "claim": "Each row represents a unique record; distinguishing rows depends on their contents and ultimately on keys, not on position (primary keys are a separate topic).",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["microsoft-learn-sql-server-tables"],
+      "status": "supported"
+    },
+    {
+      "claim": "Database software can add new records to a table and remove records from a table as the underlying facts change.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["w3schools-sql-intro"],
+      "status": "supported"
+    },
+    {
+      "claim": "A row's values are only meaningful through the table's columns, each of which holds one kind of value; the same value in different columns means different things.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["postgresql-tutorial-concepts", "microsoft-learn-sql-server-tables"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Are row, record, and tuple exact synonyms or near-synonyms?",
+      "positions": [
+        "W3Schools treats record and row as the same thing: 'A record, also called a row, is each individual entry that exists in a table.'",
+        "PostgreSQL's glossary defines a tuple as 'a collection of attributes in a fixed order' that is 'often called a row', keeping the term tied to relational theory.",
+        "Some relational-theory texts reserve 'tuple' for relations and use 'row' for practical tables."
+      ],
+      "resolution": "The lesson presents all three as names for the same idea — one complete set of values across a table's columns — with the note that 'tuple' leans on the relational-theory tradition. The practical definitions in the documentation agree."
+    },
+    {
+      "issue": "Do rows in a table have an order?",
+      "positions": [
+        "PostgreSQL documentation: 'SQL does not guarantee the order of the rows within the table in any way (although they can be explicitly sorted for display).'",
+        "Spreadsheet habits make people expect row position to be meaningful.",
+        "Sorting features (ORDER BY) exist precisely because stored order is not guaranteed."
+      ],
+      "resolution": "The lesson teaches that stored rows have no guaranteed order and that position is not identity; ordering happens at display time and belongs to the order-by sibling topic."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft was generic boilerplate ('Rows is a foundational concept in Databases & Sql', 'A foundational Databases & Sql concept covered in this lesson') and made no factual claims that could be verified; it was discarded wholesale and replaced with a sourced lesson."
+  ],
+  "correctionsNeeded": [
+    "Replaced all generic draft wording with a sourced working definition of a row.",
+    "Added the row/record/tuple terminology from database documentation (W3Schools, PostgreSQL glossary).",
+    "Added the no-guaranteed-order fact from the PostgreSQL documentation and made position-vs-identity a core point.",
+    "Clarified that keys — not position — distinguish rows, while pointing to the primary-keys sibling topic for depth.",
+    "Framed adding and removing rows conceptually, leaving mechanics to the insert and delete sibling topics.",
+    "Added the honest framing that a row is meaningful only through its columns, pointing to the columns sibling topic."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "postgresql-tutorial-concepts",
+      "title": "PostgreSQL Documentation: Chapter 2. The SQL Language — 2.2. Concepts",
+      "provider": "PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/tutorial-concepts.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Supports: 'Each table is a named collection of rows'; 'Each row of a given table has the same set of named columns, and each column is of a specific data type'; columns have a fixed order in each row while 'SQL does not guarantee the order of the rows within the table in any way (although they can be explicitly sorted for display)'. Used for the working definition, the row-column relationship, and the no-guaranteed-order claim. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "w3schools-sql-intro",
+      "title": "W3Schools: SQL Introduction",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_intro.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Supports: 'A record, also called a row, is each individual entry that exists in a table'; a record is a horizontal entity in a table; SQL can insert records in a database and delete records from a database. Used for the record/row synonym and for the add/remove framing (mechanics left to the insert and delete sibling topics). Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "microsoft-learn-sql-server-tables",
+      "title": "Microsoft Learn: Tables — SQL Server",
+      "provider": "Microsoft",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/tables/tables?view=sql-server-ver17",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Supports: 'Each row represents a unique record, and each column represents a field in the record'; the employee-table example in which a table might contain a row for each employee with columns for employee number, name, address, and job title. Used for the one-row-per-instance rule and the unique-record framing. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "postgresql-glossary",
+      "title": "PostgreSQL Documentation: Glossary",
+      "provider": "PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/glossary.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Supports: tuple as 'a collection of attributes in a fixed order' that is 'often called a row' when the order is defined by the table; the glossary entry 'Record — See Tuple'. Used for the row/record/tuple synonym claim. Facts synthesized; no wording reproduced."
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "id": "databases-and-sql:foundations:rows",
+  "subjectSlug": "databases-and-sql",
+  "unitSlug": "foundations",
+  "slug": "rows",
+  "title": "Rows: One Record at a Time",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "databases-and-sql",
+    "foundations",
+    "rows",
+    "records",
+    "tuples"
+  ],
+  "in30Seconds": "In a database table, a row is one record: a single, complete set of values that stretches across every column. If a table lists customers, each row describes exactly one customer — their name, their email, their city — all in one horizontal entry. Row, record, and tuple are three names for the same idea. Rows have no fixed order, so the database decides where each one sits. And a row is only meaningful through the columns it crosses.",
+  "whyItMatters": "Every time an online store shows your order history, a bank lists your transactions, or a clinic pulls up your file, the software is reading rows from a table. People who can read a table row by row ask sharper questions of any data they meet: what one record represents, what would change if it were missing, and why two rows that look similar are still different things. The habit carries forward, because sorting, filtering, keys, and writing data all build on the row. Knowing what a row is — and what it is not — is the difference between reading data and just glancing at it.",
+  "learningObjectives": [
+    "Define a row as a single record in a table — one complete set of values across the table's columns — and restate the definition in your own words.",
+    "Distinguish a row from a table and from a column, and describe how the three fit together.",
+    "Recognize row, record, and tuple as three names for the same idea, and identify which name appears in different contexts.",
+    "Explain why a table's rows have no guaranteed order and why position is not a reliable way to identify a row.",
+    "Analyze how each row describes one distinct instance and how a row's values only mean something through its columns.",
+    "Apply the row concept to a real-world table by describing what a particular row represents and what adding or removing a row would change."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "What a row is",
+      "body": "In a database table, a row is one record: a single complete set of values that runs across every column the table has. If a table's columns are Customer Name, Email, City, and Member Since, then a row is the line that holds one customer's name, one email, one city, and one date. The row is the smallest complete unit of the table — cut it in half and you no longer have a record, just loose values. This is the working definition used across database documentation: a table is a named collection of rows, and each row of a given table carries the same set of named columns, in the same order. When someone points at a table and asks what one thing in here is, the answer is a row."
+    },
+    {
+      "heading": "One row, one thing",
+      "body": "The rule that keeps tables honest is that each row describes exactly one instance of whatever the table tracks. In a customers table, each row is one customer. In an orders table, each row is one order. In a products table, each row is one product. Consider a food co-op's membership table: the row for Priya Sharma holds her name, the month she joined, her monthly fee, and her volunteer hours — and that row is Priya, as far as the table is concerned. Two rows with very similar values are still two different people; the table does not merge them. This one-row-one-thing rule is what makes tables countable and searchable: three customers in the table means three rows, no matter how alike they look."
+    },
+    {
+      "heading": "Row, record, tuple: three names for one idea",
+      "body": "You will meet the same concept under three names. Row is the everyday term, the one most documentation uses. Record is its twin, common in business software and in the phrase each individual entry in a table; the SQL Server documentation defines a row as a unique record. Tuple is the oldest of the three, borrowed from mathematics through relational theory; the PostgreSQL glossary defines a tuple as a collection of attributes in a fixed order, often called a row. None of the three is more correct than the others. They are dialect, not distinction: the idea is one complete set of values across a table's columns, and the name simply signals which tradition the speaker comes from."
+    },
+    {
+      "heading": "The position of a row",
+      "body": "Rows do not come with a built-in position. The database software decides where a row is stored, and it may store rows in any order it likes; the documentation is explicit that the order of rows within a table is not guaranteed in any way. The order you see when you look at a table is the order the software happened to return. That is why the second row is not a meaningful label — it can change between one moment and the next without any of the data changing. If you want rows in a particular order, you ask for that order when you view the data; that is the job of the order-by topic, not something the rows themselves carry."
+    },
+    {
+      "heading": "What sets rows apart",
+      "body": "If position does not identify a row, what does? The row itself: the values it holds. Each row is a distinct entry — a unique record — and two rows are different because they contain different values in at least one column. For that distinction to be dependable, tables rely on a key: a value, or combination of values, that belongs to one row only, so that no two rows share it. Keys are rich enough to get their own lesson; the point here is simpler. A row is not the one in slot three. It is the record whose contents make it what it is."
+    },
+    {
+      "heading": "Rows change, and rows depend on columns",
+      "body": "Tables are not frozen. When something new shows up — a new member, a new order, a new product — a new row is added to the table; when something is finished or removed, its row can be deleted. Adding and removing rows are their own topics, but the shape of the idea belongs here: the rows are the part of a table that changes, while the columns stay put. One honest caveat closes the lesson: a row only means something through its columns. The value 12 in a membership table might be a monthly fee in one column and volunteer hours in another. A row is never a self-contained fact; it is a set of answers to the questions the columns ask."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "row",
+      "definition": "A single record in a table: one complete set of values, one per column, describing one instance of whatever the table tracks."
+    },
+    {
+      "term": "record",
+      "definition": "Another name for a row; each individual entry that exists in a table, holding one complete set of values."
+    },
+    {
+      "term": "tuple",
+      "definition": "A term from relational theory for a row: a collection of attributes in a fixed order, usually corresponding to one row of a table."
+    },
+    {
+      "term": "table",
+      "definition": "A named collection of rows organized into columns, where every row holds the same kinds of values in the same order."
+    },
+    {
+      "term": "column",
+      "definition": "A vertical slice of a table holding one kind of value, such as a customer's name or a product's price; each row supplies one value to each column."
+    },
+    {
+      "term": "key",
+      "definition": "A value or combination of values that identifies a row and keeps rows distinguishable from one another; keys are covered in depth in the primary-keys lesson."
+    },
+    {
+      "term": "database",
+      "definition": "An organized collection of data, typically stored in tables, that software can add to, search through, and retrieve from."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Think of a table like a sign-up sheet taped to a community notice board. The sheet has printed headings at the top — Name, Phone, Chore — and each person who signs adds one line underneath. Every line fills in the same slots, in the same order, and every line describes exactly one person. That line is a row: one complete entry, one person, one set of answers. The sheet does not care whether you signed second or ninth; it cares what your line says. If someone crosses a line out, the other lines stay exactly as they were. If someone adds a line, it simply becomes another entry.",
+    "analogy": "A row is like one index card in a library's card catalog. Every card in the drawer has the same blank fields — author, title, subject, call number — and each card is filled in for exactly one book. Pull any card out and you hold one complete, self-contained record. The drawer's physical order is convenience, not meaning: shuffle the cards and every card still describes the same book.",
+    "analogyLimits": "The analogy frays at the edges. A card catalog drawer has a physical order whether anyone wants one or not, and nothing stops two identical cards from ending up in the same drawer; a database table, by contrast, guards its rows with keys so that each row stays identifiable. A card also carries meaning on its own, while a row only makes sense through the columns of its table."
+  },
+  "workedExample": "Harborview Cinema keeps a table called Screenings. Its columns are Movie, Hall, Start, and Seats Left. On Saturday the table holds three rows: one for The Lantern Keeper in Hall 1 at 7:00 with 41 seats left, one for Salt and Cedar in Hall 2 at 7:15 with 12 seats left, and one for Paper Moons in Hall 3 at 9:30 with 58 seats left. Reading one row tells you everything about one screening: the whole row is that screening, and no row mixes two movies. The database may store these rows in any order, so the first row is not a thing — the row for Salt and Cedar is identified by what it contains, not by where it sits. If the manager adds a 5:30 showing, a new row appears; if a screening is cancelled, its row disappears, and the other rows are untouched.",
+  "commonMistakes": [
+    {
+      "mistake": "Treating a row as the same thing as the table it lives in, so the data and a row get used interchangeably.",
+      "correction": "A table is the whole named collection of rows; a row is one entry inside it. The table is the container, the row is a single record within the container."
+    },
+    {
+      "mistake": "Assuming the first row or the last row is special, or that rows have a meaningful built-in order.",
+      "correction": "Database software does not guarantee any order for rows. If an order matters, it is applied when the data is displayed — that is the order-by topic."
+    },
+    {
+      "mistake": "Identifying a row by its position, like the third row down.",
+      "correction": "Position can change without the data changing. Rows are told apart by what they contain — ultimately by a key — not by counting."
+    },
+    {
+      "mistake": "Thinking a row means something on its own, without the table's columns.",
+      "correction": "A row is a set of values, and those values only have meaning because each column defines what belongs there. The same value in two different columns means two different things."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "A row",
+      "b": "A column",
+      "distinction": "A row is one complete record stretched horizontally across every column; a column is one kind of value running vertically through every row. They meet at each cell."
+    },
+    {
+      "a": "A row",
+      "b": "A table",
+      "distinction": "A table is the named collection of all the rows plus their column definitions; a row is a single entry within that collection."
+    },
+    {
+      "a": "A row in a database table",
+      "b": "A row in a spreadsheet",
+      "distinction": "Spreadsheets let you rely on position, so row 7 means something; databases treat rows as an unordered set that must be identified by content or by key."
+    }
+  ],
+  "keyTakeaway": "A row is one complete record in a table — one instance of whatever the table tracks — with no fixed position, told apart from its neighbors by what it contains, and meaningful only through the columns it crosses.",
+  "questionBank": [
+    {
+      "id": "databases-and-sql:foundations:rows:1",
+      "prompt": "Which of the following best describes a row in a database table?",
+      "options": [
+        "A vertical group of cells that all hold the same kind of value",
+        "A single record: one complete set of values across the table's columns",
+        "The name given to the whole table",
+        "A collection of several tables stored together"
+      ],
+      "correctIndex": 1,
+      "explanation": "A row is one record — a complete set of values spanning the table's columns. Option A describes a column, C describes a table name, and D describes a database, not a row.",
+      "difficulty": "recall",
+      "skill": "Recalling the working definition of a row",
+      "sourceIds": [
+        "postgresql-tutorial-concepts",
+        "w3schools-sql-intro",
+        "microsoft-learn-sql-server-tables"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:rows:2",
+      "prompt": "A library database has a Members table, and Priya, Omar, and Diego each have one entry. How many rows does the Members table hold?",
+      "options": [
+        "Three — one row per member",
+        "One — the row for whoever joined first",
+        "As many as there are columns",
+        "It depends on how many books each member has borrowed"
+      ],
+      "correctIndex": 0,
+      "explanation": "Each member is one instance, so each gets one row: three members, three rows. Options B, C, and D confuse rows with order, with columns, or with activity elsewhere in the database.",
+      "difficulty": "understanding",
+      "skill": "Counting rows for described instances",
+      "sourceIds": [
+        "microsoft-learn-sql-server-tables",
+        "postgresql-tutorial-concepts"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:rows:3",
+      "prompt": "A bookstore's catalog table holds one row per title. A new book arrives. What should happen for the catalog to stay complete?",
+      "options": [
+        "A new column is added to the table",
+        "The new book replaces the oldest row",
+        "A new row is added for the new title",
+        "Nothing, until someone buys the book"
+      ],
+      "correctIndex": 2,
+      "explanation": "A new title is a new instance, so it gets a new row. Adding a column would change the table's structure for every row; replacing would erase an existing title; waiting would leave the catalog incomplete.",
+      "difficulty": "application",
+      "skill": "Applying the one-row-per-instance rule",
+      "sourceIds": [
+        "w3schools-sql-intro"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:rows:4",
+      "prompt": "Why is it unreliable to identify a row as \"the second row\" in a table?",
+      "options": [
+        "Because database software always sorts rows alphabetically, so \"second\" changes constantly",
+        "Because every row contains the same values, so position is all you have",
+        "Because positions only exist in spreadsheets, never in databases",
+        "Because the database does not guarantee any order for rows, so which row appears second can change"
+      ],
+      "correctIndex": 3,
+      "explanation": "Database documentation is explicit that row order is not guaranteed, so a positional label like \"second\" is not stable. Options A, B, and C misstate the reason: rows are not sorted by default, do not contain identical values, and do exist in databases.",
+      "difficulty": "analysis",
+      "skill": "Analyzing why row position is not identity",
+      "sourceIds": [
+        "postgresql-tutorial-concepts"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:rows:5",
+      "prompt": "In a fitness club's Members table, each row holds one member's name, plan, and renewal date. Which statement about a row is true?",
+      "options": [
+        "One row can describe several members at once",
+        "A row's values only mean something through the table's columns",
+        "The database guarantees rows stay in the order they were added",
+        "Removing one row deletes the table's column definitions"
+      ],
+      "correctIndex": 2,
+      "explanation": "Each column defines what a value means, so a row is only interpretable through its columns. Option A misstates the one-row-per-instance rule; C contradicts the no-guaranteed-order fact; D confuses rows with the table's structure.",
+      "difficulty": "understanding",
+      "skill": "Recognizing a row's dependence on its columns",
+      "sourceIds": [
+        "postgresql-tutorial-concepts",
+        "microsoft-learn-sql-server-tables"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "databases-and-sql:foundations:rows:1",
+      "prompt": "Which of the following best describes a row in a database table?",
+      "options": [
+        "A vertical group of cells that all hold the same kind of value",
+        "A single record: one complete set of values across the table's columns",
+        "The name given to the whole table",
+        "A collection of several tables stored together"
+      ],
+      "correctIndex": 1,
+      "explanation": "A row is one record — a complete set of values spanning the table's columns. Option A describes a column, C describes a table name, and D describes a database, not a row.",
+      "difficulty": "recall",
+      "skill": "Recalling the working definition of a row",
+      "sourceIds": [
+        "postgresql-tutorial-concepts",
+        "w3schools-sql-intro",
+        "microsoft-learn-sql-server-tables"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:rows:2",
+      "prompt": "A library database has a Members table, and Priya, Omar, and Diego each have one entry. How many rows does the Members table hold?",
+      "options": [
+        "Three — one row per member",
+        "One — the row for whoever joined first",
+        "As many as there are columns",
+        "It depends on how many books each member has borrowed"
+      ],
+      "correctIndex": 0,
+      "explanation": "Each member is one instance, so each gets one row: three members, three rows. Options B, C, and D confuse rows with order, with columns, or with activity elsewhere in the database.",
+      "difficulty": "understanding",
+      "skill": "Counting rows for described instances",
+      "sourceIds": [
+        "microsoft-learn-sql-server-tables",
+        "postgresql-tutorial-concepts"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:rows:3",
+      "prompt": "A bookstore's catalog table holds one row per title. A new book arrives. What should happen for the catalog to stay complete?",
+      "options": [
+        "A new column is added to the table",
+        "The new book replaces the oldest row",
+        "A new row is added for the new title",
+        "Nothing, until someone buys the book"
+      ],
+      "correctIndex": 2,
+      "explanation": "A new title is a new instance, so it gets a new row. Adding a column would change the table's structure for every row; replacing would erase an existing title; waiting would leave the catalog incomplete.",
+      "difficulty": "application",
+      "skill": "Applying the one-row-per-instance rule",
+      "sourceIds": [
+        "w3schools-sql-intro"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "databases-and-sql:foundations:tables",
+    "databases-and-sql:foundations:columns",
+    "databases-and-sql:foundations:primary-keys",
+    "databases-and-sql:foundations:insert",
+    "databases-and-sql:foundations:delete"
+  ],
+  "sources": [
+    "postgresql-tutorial-concepts",
+    "w3schools-sql-intro",
+    "microsoft-learn-sql-server-tables",
+    "postgresql-glossary"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only sources; no source prose adapted",
+    "researchedAt": "2026-08-21",
+    "transformation": "The working definition, the row/record/tuple terminology, the no-guaranteed-order fact, and the one-row-per-instance rule were verified against official database documentation (PostgreSQL, Microsoft SQL Server) and the W3Schools SQL reference, then synthesized into original prose with original examples. No source wording is reproduced; the working definition is presented as the consensus across these references."
+  },
+  "contentHash": "445530b48ffb0102",
+  "status": "source-verified",
+  "public": false
+}

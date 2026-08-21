@@ -1,0 +1,148 @@
+{
+  "topicId": "databases-and-sql:foundations:foreign-keys",
+  "subjectId": "databases-and-sql",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "definition of a foreign key as a column in one table that references the primary key of another table",
+      "how a foreign key links two tables (an order row carrying a customer ID)",
+      "foreign key vs primary key: uniqueness within its own table vs reference to another table",
+      "referential integrity: databases can enforce that references point at real rows",
+      "why foreign keys matter: they are how relational databases avoid duplication",
+      "honest framing: foreign keys are the glue of the relational model"
+    ],
+    "supporting": [
+      "referencing (child) vs referenced (parent) table terminology",
+      "enforced foreign keys block invalid inserts and unsafe deletes of referenced rows",
+      "a foreign key does not need to be unique in its own table"
+    ],
+    "outOfScope": [
+      "primary keys in depth (own topic: databases-and-sql:foundations:primary-keys)",
+      "relationships and cardinality (own topics: relationships, one-to-many)",
+      "data integrity as a discipline (own topic: databases-and-sql:foundations:data-integrity)",
+      "normalization (own topic: databases-and-sql:foundations:database-normalization)",
+      "SQL syntax for defining foreign keys (own topics: sql-basics and the SQL family)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A foreign key is a column (or group of columns) in one table that refers to the primary key of another table.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["w3schools-sql-foreign-key", "mslearn-fk-constraints"],
+      "status": "supported"
+    },
+    {
+      "claim": "A foreign key creates a link between two tables: a column that holds a primary key value in one table is referenced by a column in another table, and the linking value is stored on the rows of the referencing table.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["mslearn-fk-constraints", "w3schools-sql-foreign-key"],
+      "status": "supported"
+    },
+    {
+      "claim": "The table holding the foreign key is the child (referencing) table; the table holding the referenced primary key is the parent (referenced) table.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["w3schools-sql-foreign-key", "postgresql-ddl-constraints"],
+      "status": "supported"
+    },
+    {
+      "claim": "A primary key uniquely identifies each row within its own table, whereas a foreign key references the primary key of another table; a foreign key column does not have to be unique.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["w3schools-sql-primary-key", "w3schools-sql-foreign-key"],
+      "status": "supported"
+    },
+    {
+      "claim": "Referential integrity is the rule that values in the referencing column must match values appearing in some row of the referenced table, so a foreign key value cannot be inserted unless the referenced row exists.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["postgresql-ddl-constraints", "mslearn-fk-constraints"],
+      "status": "supported"
+    },
+    {
+      "claim": "An enforced foreign key also prevents deleting a row in the referenced (parent) table while related rows in the referencing (child) table still point at it.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["w3schools-sql-foreign-key"],
+      "status": "supported"
+    },
+    {
+      "claim": "Because a foreign key stores the referenced row's key rather than a copy of its data, foreign keys let relational databases keep each fact in one place and avoid duplication.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["mslearn-fk-constraints", "w3schools-sql-foreign-key"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Terminology for the two tables involved in a foreign key reference.",
+      "positions": [
+        "W3Schools calls the table with the foreign key the child table and the table with the primary key the referenced or parent table.",
+        "PostgreSQL documentation calls them the referencing table and the referenced table.",
+        "Microsoft Learn refers to the foreign key table and the referenced primary key table."
+      ],
+      "resolution": "The naming conventions describe the same roles. The lesson leads with referencing/referenced, mentions child/parent as equivalent terms in vocabulary and compare/contrast, and does not present either convention as the only correct one."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft described foreign keys as 'a foundational concept in Databases & Sql' with no factual content — generic boilerplate, discarded.",
+    "The draft's vocabulary defined 'Foreign Keys' circularly as 'a foundational Databases & Sql concept covered in this lesson' — replaced with source-supported definitions.",
+    "The draft's Eli-10 treated a foreign key as 'a label on a toolbox drawer' — a metaphor without mechanism, replaced with the pointer/link explanation."
+  ],
+  "correctionsNeeded": [
+    "Replaced all generic draft boilerplate with source-verified content: the definition, the linking mechanism, the PK/FK distinction, referential integrity, and the duplication-avoidance payoff.",
+    "Added the enforcement detail (both directions: invalid inserts rejected and parent deletion blocked) from W3Schools/PostgreSQL/Microsoft Learn.",
+    "Wrote all five questions from the evidence; answer keys verified against the sources.",
+    "Set editorialStatus READY_TO_PUBLISH with 4 supporting Tier B documentation sources."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "w3schools-sql-foreign-key",
+      "title": "SQL FOREIGN KEY Constraint",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_foreignkey.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read live via curl 2026-08-21. Supports: the working definition of a foreign key as a column in a table that refers to the primary key in another table; the foreign key constraint establishing a link between two tables and preventing actions that would destroy the link; child table vs referenced/parent table naming; enforcement in both directions (no invalid value inserted into the foreign key column, no parent record deleted while related child rows remain); the example of an Orders table storing only PersonID, showing reference instead of duplication. Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "w3schools-sql-primary-key",
+      "title": "SQL PRIMARY KEY Constraint",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_primarykey.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read live via curl 2026-08-21. Supports: the primary key constraint uniquely identifying each record in a table, guaranteeing unique values with no NULLs, and allowing only one primary key per table; and the statement that the primary key is the target for foreign key constraints in other tables, which enforces referential integrity between data in two tables. Used for the critical foreign-key-vs-primary-key distinction (uniqueness vs reference). Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "postgresql-ddl-constraints",
+      "title": "PostgreSQL Documentation: Constraints (Chapter 5.5)",
+      "provider": "PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B official documentation. Read live via curl 2026-08-21. Supports: the foreign key constraint definition ('values in a column must match the values appearing in some row of another table'); the term referential integrity applied to this rule; referencing table vs referenced table terminology; enforcement — it is impossible to create orders referencing products that do not exist. Used for the referential integrity section and the referencing/referenced naming. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "mslearn-fk-constraints",
+      "title": "Primary and foreign key constraints",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/tables/primary-and-foreign-key-constraints",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read live via curl 2026-08-21. Supports: the definition of a foreign key as a column or combination of columns used to establish and enforce a link between the data in two tables; the description of how the link is created when the column(s) holding a primary key value in one table are referenced by column(s) in another table; the enforcement example in which a SalesPersonID cannot be inserted into SalesOrderHeader unless it already exists in SalesPerson. Used for the definition, the link mechanism, and enforcement. Facts synthesized; no wording reproduced."
+    }
+  ]
+}

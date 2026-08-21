@@ -1,0 +1,192 @@
+{
+  "topicId": "databases-and-sql:foundations:primary-keys",
+  "subjectId": "databases-and-sql",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "working definition of a primary key (column or set of columns that uniquely identifies each row)",
+      "uniqueness rule (no two rows share the same key value)",
+      "the ID pattern (simple, stable ID numbers as keys)",
+      "keys versus ordinary columns",
+      "composite keys (combinations of columns)",
+      "keys enable relationships (reference only; foreign-keys owns mechanics)",
+      "design intuition: a good key never changes"
+    ],
+    "supporting": [
+      "non-empty (not null) key values",
+      "one primary key per table",
+      "natural versus surrogate keys",
+      "relational theory expectation that every table has a key"
+    ],
+    "outOfScope": [
+      "foreign keys and how references are enforced",
+      "rows as a concept",
+      "columns as a concept",
+      "relationships and cardinality",
+      "SQL syntax",
+      "indexes and performance"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A primary key is a column or set of columns that uniquely identifies each row in a table.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "postgresql-ddl-constraints",
+        "microsoft-learn-primary-foreign-key-constraints",
+        "w3schools-sql-primary-key",
+        "ibm-what-is-a-primary-key"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The core rule of a primary key is uniqueness: no two rows in a table may carry the same key value.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "postgresql-ddl-constraints",
+        "w3schools-sql-primary-key",
+        "ibm-what-is-a-primary-key"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Primary key values cannot be empty or missing; a primary key is effectively a uniqueness rule plus a not-null rule.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "postgresql-ddl-constraints",
+        "w3schools-sql-primary-key",
+        "ibm-what-is-a-primary-key"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A table can have at most one primary key.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "postgresql-ddl-constraints",
+        "w3schools-sql-primary-key"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A primary key may be a single column or a combination of columns; in a composite key, values may repeat within one column but the full combination must be unique.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "postgresql-ddl-constraints",
+        "microsoft-learn-primary-foreign-key-constraints",
+        "ibm-what-is-a-primary-key"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Many tables use a dedicated ID number column, such as a customer, employee, product, or student ID, as the primary key.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-a-primary-key",
+        "microsoft-learn-primary-foreign-key-constraints"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Other tables can reference a table's primary key to define relationships between tables; the mechanics belong to the foreign-keys topic.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-a-primary-key",
+        "w3schools-sql-primary-key",
+        "postgresql-ddl-constraints"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Design intuition: a good primary key is stable and does not change when other details about the row change, which is why simple ID numbers are the common pattern.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "ibm-what-is-a-primary-key",
+        "postgresql-ddl-constraints"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Relational database theory holds that every table should have a primary key.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "postgresql-ddl-constraints"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Natural keys versus surrogate keys",
+      "positions": [
+        "Some designs use an existing meaningful column (a natural key) as the primary key",
+        "Many designs add a dedicated ID column (a surrogate key) instead"
+      ],
+      "resolution": "Both are legitimate; IBM documents both terms and both patterns. The lesson presents the ID-number pattern as the common, stable choice without declaring either approach wrong."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's boilerplate (e.g., 'Primary Keys is a foundational concept in Databases & Sql') carried no factual content; all of it was replaced."
+  ],
+  "correctionsNeeded": [
+    "Replaced the machine-generated boilerplate draft with original, source-verified prose.",
+    "Added the uniqueness rule, the ID pattern, composite keys, and the stability intuition, none of which the draft covered."
+  ],
+  "rightsIssues": [
+    "All four sources are documentation or tutorials used as reference only; no source prose is reproduced or adapted."
+  ],
+  "sourceRecords": [
+    {
+      "id": "postgresql-ddl-constraints",
+      "title": "PostgreSQL Documentation: Constraints (Section 5.5.4, Primary Keys)",
+      "provider": "PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Official documentation (Tier A/B) read live via curl on 2026-08-21 (HTTP 200). Supports: a primary key constraint indicates that a column or group of columns can be used as a unique identifier for rows in the table; key values must be both unique and not null; primary keys can span more than one column; a table can have at most one primary key; relational database theory dictates that every table should have a primary key; the primary key defines the default target column(s) for foreign keys referencing the table. Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "microsoft-learn-primary-foreign-key-constraints",
+      "title": "Primary and foreign key constraints (SQL Server, Microsoft Learn)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/tables/primary-and-foreign-key-constraints",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Official documentation (Tier B) read live via curl on 2026-08-21 (HTTP 200). Supports: a table typically has a column or combination of columns that contain values that uniquely identify each row, and that column or columns is called the primary key; primary keys guarantee unique data and are frequently defined on an identity column; in a multi-column primary key, values can be duplicated within one column but each combination of values from all the key columns must be unique. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "w3schools-sql-primary-key",
+      "title": "SQL PRIMARY KEY Constraint (W3Schools SQL Tutorial)",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_primarykey.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B tutorial read live via curl on 2026-08-21 (HTTP 200). Supports: the PRIMARY KEY constraint uniquely identifies each record in a database table; it ensures unique values and cannot contain NULL values (a combination of a UNIQUE and a NOT NULL constraint); a table can have only ONE primary key; the key can be a single column or a combination of columns; the primary key is the target for FOREIGN KEY constraints in other tables. Used as a corroborating reference; facts synthesized, no wording reproduced."
+    },
+    {
+      "id": "ibm-what-is-a-primary-key",
+      "title": "What is a primary key? (IBM Data Management Guide)",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/topics/primary-key",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B reputable vendor explainer read live via curl on 2026-08-21 (HTTP 200). Supports: a primary key is a column or columns in a database table with values that uniquely identify each row or record; often-cited examples include employee ID, product ID, and student ID numbers; primary keys can be referenced by another type of key to define relationships between tables; characteristics include no null values, no duplicate values, natural keys (existing column) versus surrogate keys (added column), and single-column or composite keys. Facts synthesized; no wording reproduced."
+    }
+  ]
+}

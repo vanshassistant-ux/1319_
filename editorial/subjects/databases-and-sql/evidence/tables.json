@@ -1,0 +1,182 @@
+{
+  "topicId": "databases-and-sql:foundations:tables",
+  "subjectId": "databases-and-sql",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "Working definition of a table (W3Schools, attributed): a collection of related data entries arranged in rows and columns, like a grid",
+      "Table anatomy at one line each: rows hold records, columns hold one kind of fact; rows and columns are sibling topics referenced only",
+      "Tables as the unit of organization: one table per kind of thing (customers, orders, products), with an original example",
+      "Table names and purpose: a table has a name and a clear purpose — the design intuition",
+      "Tables relate to each other: tables link through shared values; relationships is a sibling topic referenced only",
+      "Honest framing: a table looks like a spreadsheet but follows stricter rules"
+    ],
+    "supporting": [
+      "Relation is essentially a mathematical term for table (PostgreSQL documentation)",
+      "Each row of a given table has the same set of named columns; each column is of a specific data type (PostgreSQL documentation)",
+      "SQL does not guarantee the order of rows within a table; rows can be explicitly sorted for display (PostgreSQL documentation)",
+      "A table is created by specifying its name along with all column names and their types (PostgreSQL documentation)",
+      "Relational designs separate kinds of things into different tables and join them through unique identifiers such as primary and foreign keys (IBM)",
+      "SQL itself is a sibling topic; this lesson contains no SQL"
+    ],
+    "outOfScope": [
+      "Rows as a deep topic (sibling topic owns it)",
+      "Columns as a deep topic (sibling topic owns it)",
+      "Relational database theory and history (sibling topic owns it)",
+      "Primary keys and foreign keys in detail (sibling topics own them)",
+      "Relationships, cardinality, and join mechanics (sibling topics own them)",
+      "Any SQL syntax, commands, or code"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "W3Schools defines a table as a collection of related data entries that consists of columns and rows; a column is a vertical entity in a table, and a record (also called a row) is each individual entry that exists in a table.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "w3schools-sql-intro"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "IBM describes a relational database as a type of database that organizes data into rows and columns, which collectively form a table where the data points are related to each other.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-think-relational-databases"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "PostgreSQL's documentation states that a relation is essentially a mathematical term for table, that each table is a named collection of rows, that each row of a given table has the same set of named columns, and that each column is of a specific data type.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "postgresql-docs-tutorial-concepts"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "SQL does not guarantee the order of rows within a table in any way, although rows can be explicitly sorted for display.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "postgresql-docs-tutorial-concepts"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A table is created by specifying the table name along with all column names and their types; the tutorial's examples are a weather table (city, temp_lo, temp_hi, prcp, date) and a cities table (name, location), each holding one kind of thing.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "postgresql-docs-tutorial-table"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Relational designs typically structure data across multiple tables, with each table holding one kind of thing: IBM's example separates a customer table (Customer ID, Company Name, Company Address, Industry) from a transaction table (Transaction Date, Customer ID, Transaction Amount, Payment Method), and W3Schools' example is a Customers table.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "ibm-think-relational-databases",
+        "w3schools-sql-intro"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Tables in a relational database connect to one another through shared values: data is typically structured across multiple tables that can be joined via unique identifiers such as a primary key or foreign key, which express the relationships between tables (IBM's example joins customer and transaction tables through the common Customer ID).",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-think-relational-databases"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A database table resembles a spreadsheet grid but follows stricter rules: every row has the same set of named columns, each column holds a specific data type, and rows have no guaranteed order — structural requirements a spreadsheet does not enforce.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "postgresql-docs-tutorial-concepts",
+        "w3schools-sql-intro"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Sources frame tables from different angles: W3Schools defines a table as a collection of related data entries consisting of columns and rows, IBM describes rows and columns that collectively form a table of related data points, and PostgreSQL calls a relation essentially a mathematical term for table and emphasizes formal structure.",
+      "positions": [
+        "W3Schools: a table is a collection of related data entries made of columns and rows",
+        "IBM: rows and columns collectively form a table where the data points are related",
+        "PostgreSQL: relation is essentially a mathematical term for table, with strict row/column structure"
+      ],
+      "resolution": "The lesson uses the plain-language working definition — a collection of related data arranged in rows and columns — attributed to W3Schools, corroborated by IBM, with PostgreSQL's structural rules (same named columns per row, typed columns) as the precise statement of table anatomy. No source wording is reproduced."
+    },
+    {
+      "issue": "None of the researched sources explicitly compares database tables to spreadsheets; the comparison is a widely used pedagogical framing that the sources themselves do not state.",
+      "positions": [
+        "PostgreSQL, W3Schools, and IBM describe table structure without mentioning spreadsheets",
+        "Popular teaching materials commonly draw the spreadsheet comparison"
+      ],
+      "resolution": "The lesson presents the spreadsheet contrast as Eli's framing rather than attributing it to a source, and each claimed difference (same named columns in every row, one data type per column, no guaranteed row order) is individually grounded in the sources — chiefly PostgreSQL's documentation — so the framing stays honest."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The machine-generated draft in the phase-2 content store ('Tables is a foundational concept in Databases & Sql...', 'a label on a toolbox drawer', 'College courses use tables as a building block...') contained no factual claims the research could support; it was replaced entirely."
+  ],
+  "correctionsNeeded": [
+    "Replaced the generic machine-generated draft with original, source-verified content: the attributed working definition of a table, table anatomy, the one-table-per-kind-of-thing pattern with an original example, names and purpose, shared-value linking, and the honest spreadsheet comparison.",
+    "Kept rows, columns, primary keys, foreign keys, relationships, and SQL as referenced sibling topics with no deep content, per the topic scope."
+  ],
+  "rightsIssues": [
+    "All four sources used as REFERENCE_ONLY; no source prose adapted and no source examples reproduced (PostgreSQL's weather/cities and W3Schools' Customers examples are described, not copied, and the lesson's worked example and scenarios are original inventions). PostgreSQL documentation is published under the PostgreSQL License; W3Schools and IBM pages are proprietary and were read live for verification only."
+  ],
+  "sourceRecords": [
+    {
+      "id": "postgresql-docs-tutorial-concepts",
+      "title": "PostgreSQL Documentation 18: Chapter 2. The SQL Language — 2.2. Concepts",
+      "provider": "The PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/tutorial-concepts.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. Supports: PostgreSQL is a relational database management system; relation is essentially a mathematical term for table; each table is a named collection of rows; each row of a given table has the same set of named columns; each column is of a specific data type; SQL does not guarantee the order of rows within a table, though rows can be explicitly sorted for display. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "postgresql-docs-tutorial-table",
+      "title": "PostgreSQL Documentation 18: Chapter 2. The SQL Language — 2.3. Creating a New Table",
+      "provider": "The PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/tutorial-table.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. Supports: a new table is created by specifying the table name along with all column names and their types; the tutorial's example tables — weather (city, temp_lo, temp_hi, prcp, date) and cities (name, location) — each hold one kind of thing. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "w3schools-sql-intro",
+      "title": "W3Schools SQL Tutorial: SQL Introduction — RDBMS",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_intro.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. Supports the attributed working definition: the data in an RDBMS is stored in database objects called tables, a table is a collection of related data entries that consists of columns and rows, a column is a vertical entity in a table, and a record (also called a row) is each individual entry that exists in a table; the example is a Customers table with named columns. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "ibm-think-relational-databases",
+      "title": "What is a relational database? (IBM Think explainer)",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/think/topics/relational-databases",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. Supports: a relational database organizes data into rows and columns that collectively form a table where the data points are related to each other; data is typically structured across multiple tables joined via primary or foreign keys, which express relationships between tables; the example separates a customer table (Customer ID, Company Name, Company Address, Industry) from a transaction table (Transaction Date, Customer ID, Transaction Amount, Payment Method) joined by the common Customer ID. Facts synthesized; no wording reproduced."
+    }
+  ]
+}

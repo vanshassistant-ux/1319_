@@ -1,0 +1,175 @@
+{
+  "topicId": "databases-and-sql:foundations:relational-databases",
+  "subjectId": "databases-and-sql",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "working definition of a relational database: a database that stores data in tables linked by common values (attributed to the working descriptions of IBM and Oracle)",
+      "historical origin: the relational model proposed by Edgar F. Codd in his 1970 paper 'A Relational Model of Data for Large Shared Data Banks'",
+      "tables as the core idea: data organized in tables with rows and columns (mechanics referenced to sibling topics tables/rows/columns)",
+      "relations between tables: tables linked by shared values, not by copying whole datasets, with an original customers-and-orders example",
+      "why relational won: flexibility, consistency, and avoiding duplication, each named (normalization referenced to its sibling topic)",
+      "relational versus other models: non-relational (NoSQL) named as the alternative family, one-line contrast, no vendor comparisons",
+      "SQL as the standard language for talking to relational databases (syntax referenced to sibling topic sql-basics)",
+      "honest framing: relational is the default for most business data, and it is a model with strengths and limits, not magic"
+    ],
+    "supporting": [
+      "RDBMS as the term for the software that manages a relational database",
+      "the model's original term for a table was 'relation', the source of the name 'relational'",
+      "relational systems in use since the 1970s and today the most widely accepted model",
+      "relational systems as a common way to store transactional and analytical data"
+    ],
+    "outOfScope": [
+      "table, row, and column mechanics in depth (sibling topics: tables, rows, columns)",
+      "primary keys and foreign keys (sibling topics: primary-keys, foreign-keys)",
+      "relationship cardinality (sibling topics: relationships, one-to-one, one-to-many, many-to-many)",
+      "normalization in depth (sibling topic: database-normalization)",
+      "SQL syntax and query writing (sibling topic: sql-basics)",
+      "transactions and ACID properties (sibling topic: transactions)",
+      "indexes and performance (sibling topic: indexes)",
+      "vendor product comparisons and recommendations"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A relational database is a database that stores data in tables linked by common values: IBM describes it as organizing data into rows and columns that form tables where the data points are related to each other, and Oracle describes it as a database that stores and provides access to data points related to one another.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ibm-relational-databases", "oracle-what-is-a-relational-database"],
+      "status": "supported"
+    },
+    {
+      "claim": "The relational model was proposed by computer scientist Edgar F. Codd in a 1970 paper titled 'A Relational Model of Data for Large Shared Data Banks', which theorized organizing data in relations (tables) that can be merged across shared values.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ibm-relational-databases"],
+      "status": "supported"
+    },
+    {
+      "claim": "The table is the core structure of a relational database: data in an RDBMS is stored in objects called tables, each a collection of related entries consisting of columns and rows.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["w3schools-sql-intro", "ibm-relational-databases"],
+      "status": "supported"
+    },
+    {
+      "claim": "Related tables in a relational database are joined through common values (for example, a customer ID field appearing in both a customers table and an orders table), which creates the relationship between the tables without copying whole datasets.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ibm-relational-databases", "oracle-what-is-a-relational-database"],
+      "status": "supported"
+    },
+    {
+      "claim": "The relational model became the most widely accepted model for databases because tables are an intuitive, efficient, and flexible way to store structured information, the model maintains data consistency, and normalization reduces data redundancy (duplication).",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["oracle-what-is-a-relational-database", "ibm-relational-databases"],
+      "status": "supported"
+    },
+    {
+      "claim": "SQL is a standard language for accessing and manipulating databases, used to query, insert, update, and delete data in relational database management systems.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["w3schools-sql-intro", "ibm-relational-databases"],
+      "status": "supported"
+    },
+    {
+      "claim": "Non-relational (NoSQL) databases are the alternative family to relational databases, storing data in forms other than tables and often aimed at flexibility and scalability for unstructured data such as text, video, and images; some NoSQL systems offer only eventual consistency.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ibm-relational-databases", "oracle-what-is-a-relational-database"],
+      "status": "supported"
+    },
+    {
+      "claim": "Relational database systems are a common way to store and manage transactional and analytical data, and relational databases are used to track inventories, process ecommerce transactions, and manage mission-critical customer information.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["mslearn-explore-relational-data-offerings", "oracle-what-is-a-relational-database"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether 'table' and 'relation' are the same thing: the relational model's original term was 'relation', while everyday database writing uses 'table'.",
+      "positions": [
+        "Codd's 1970 model called the structures 'relations' (sets of tuples)",
+        "modern sources such as IBM, Oracle, and W3Schools use 'table' as the working term"
+      ],
+      "resolution": "The lesson uses 'table' as the everyday word, notes in passing that 'relation' was the model's original term and the source of the name, and does not teach tuple-level theory."
+    },
+    {
+      "issue": "Which strength best explains the relational model's dominance: sources emphasize different reasons (Oracle: consistency; IBM: joining tables into meaningful information; W3Schools: the standard SQL language).",
+      "positions": [
+        "Oracle emphasizes data consistency and ACID properties",
+        "IBM emphasizes the ability to join tables and reduce redundancy via normalization",
+        "W3Schools emphasizes standard SQL as the access language"
+      ],
+      "resolution": "The lesson names the three strengths agreed across the sources, flexibility, consistency, and avoiding duplication, without adopting any vendor's emphasis as the single cause."
+    },
+    {
+      "issue": "How NoSQL should be framed relative to relational: IBM frames it as solving flexibility and scalability for unstructured data, while Oracle frames it as a consistency trade-off (eventual consistency).",
+      "positions": [
+        "IBM: non-relational databases aim to solve flexibility and scalability issues for unstructured data",
+        "Oracle: NoSQL systems may offer only eventual consistency, acceptable for some uses but not critical business operations"
+      ],
+      "resolution": "The lesson keeps the one-line contrast (relational stores structured data in linked tables; NoSQL uses other forms) and does not take sides on which family is 'better', per the no-vendor-wars rule."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "No machine-generated draft for this topic was found in public/content/phase-2/lessons.json at write time, so there were no draft claims to carry forward or reject."
+  ],
+  "correctionsNeeded": [
+    "None from a prior draft; all lesson claims were verified against the live sources listed in sourceRecords on 2026-08-21."
+  ],
+  "rightsIssues": [
+    "IBM and Oracle explainer pages are vendor web content; used as REFERENCE_ONLY with fully original prose and no wording adapted.",
+    "W3Schools tutorial content is proprietary web content; used as REFERENCE_ONLY with facts synthesized into original prose.",
+    "Microsoft Learn content is Microsoft documentation; used as REFERENCE_ONLY with facts synthesized into original prose."
+  ],
+  "sourceRecords": [
+    {
+      "id": "ibm-relational-databases",
+      "title": "What is a relational database?",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/topics/relational-databases",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read live via curl (HTTP 200) on 2026-08-21. Supports: the working definition (a database organizing data into rows and columns that collectively form tables where data points are related), tables joined via primary/foreign keys and common fields (the Customer ID joining example), Codd's 1970 paper 'A Relational Model of Data for Large Shared Data Banks' as the origin of the relational model, SQL as the standard programming language for interacting with relational database management systems, the relational model reducing data redundancy via normalization, and the non-relational/NoSQL family contrasted for unstructured-data workloads. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "oracle-what-is-a-relational-database",
+      "title": "What Is a Relational Database?",
+      "provider": "Oracle",
+      "url": "https://www.oracle.com/database/what-is-a-relational-database/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read live via curl (HTTP 200) on 2026-08-21. Supports: the definition (a database that stores and provides access to data points related to one another), the relational model as an intuitive way of representing data in tables, a common column creating a relationship between two tables in an orders example, tables as an intuitive, efficient, and flexible way to store structured information, data consistency as a strength of the relational model, NoSQL's eventual-consistency trade-off, relational databases being around since the 1970s and the most widely accepted model today, and their use for inventories, ecommerce transactions, and mission-critical customer information. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "w3schools-sql-intro",
+      "title": "SQL Introduction",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_intro.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read live via curl (HTTP 200) on 2026-08-21. Supports: 'SQL is a standard language for accessing and manipulating databases'; data in an RDBMS is stored in database objects called tables; a table is a collection of related data entries consisting of columns and rows. Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "mslearn-explore-relational-data-offerings",
+      "title": "Explore fundamental relational data concepts (Microsoft Learn training module)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/training/modules/explore-relational-data-offerings/",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read live via curl (HTTP 200) on 2026-08-21; the module landing page states that relational database systems are a common way to store and manage transactional and analytical data and lists module units covering relational data, normalization, and SQL (unit pages are client-rendered and were not individually extracted). Facts synthesized; no wording reproduced."
+    }
+  ]
+}

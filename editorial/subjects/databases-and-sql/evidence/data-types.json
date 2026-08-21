@@ -1,0 +1,158 @@
+{
+  "topicId": "databases-and-sql:foundations:data-types",
+  "subjectId": "databases-and-sql",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "working definition of a data type: a rule saying what kind of value a column can hold",
+      "the common type families: numbers (integers and decimals), text (short and long), dates and times, true/false booleans",
+      "why types matter: the type controls how the database treats the value, keeping data honest and consistent",
+      "choosing the right type: match the type to the value (phone number as text, not number)",
+      "type mistakes: storing numbers as text, mixing types in one column",
+      "honest framing: types are the database's way of enforcing care against silent mistakes"
+    ],
+    "supporting": [
+      "every column is created with a name and a data type when the table is designed",
+      "type names and sizes differ across database products; families are the portable concept",
+      "exact numeric types are recommended for money and quantities where exactness is required"
+    ],
+    "outOfScope": [
+      "columns as a structural concept (own topic: databases-and-sql:foundations:columns)",
+      "data integrity rules, constraints, and enforcement (own topic: databases-and-sql:foundations:data-integrity)",
+      "SQL syntax and querying (own topic: databases-and-sql:foundations:sql-basics)",
+      "vendor-specific type catalogs, storage sizes, and performance",
+      "NULL handling and three-valued boolean logic"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A data type is a rule (an attribute) attached to a column that specifies what kind of value the column can hold — integer, character, date and time, boolean, and so on.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["w3schools-sql-data-types", "microsoft-learn-data-types-t-sql"],
+      "status": "supported"
+    },
+    {
+      "claim": "Every column in a database table is required to have a name and a data type, decided when the table is created.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["w3schools-sql-data-types", "microsoft-learn-data-types-t-sql"],
+      "status": "supported"
+    },
+    {
+      "claim": "A column's data type tells the database what data is expected and how the database will interact with the stored data — which operations and expectations apply to it.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["w3schools-sql-data-types"],
+      "status": "supported"
+    },
+    {
+      "claim": "Numeric types cover whole-number integers and decimals with selectable precision; PostgreSQL recommends its exact numeric type for monetary amounts and other quantities where exactness is required.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["postgresql-docs-data-types"],
+      "status": "supported"
+    },
+    {
+      "claim": "Character (text) types hold strings of characters; variable-length text can hold letters, numbers, and special characters.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["postgresql-docs-data-types", "w3schools-sql-data-types"],
+      "status": "supported"
+    },
+    {
+      "claim": "Date and time types store calendar values such as dates, times, and timestamps.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["postgresql-docs-data-types", "w3schools-sql-data-types"],
+      "status": "supported"
+    },
+    {
+      "claim": "Boolean types store a true/false state.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["postgresql-docs-data-types"],
+      "status": "supported"
+    },
+    {
+      "claim": "Data type names and sizes differ between database products, so the type families, not vendor names, are the portable concept.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["w3schools-sql-data-types"],
+      "status": "supported"
+    },
+    {
+      "claim": "A phone number belongs in a text type: it is made of digits but is not a quantity, and a text type preserves leading zeros, dashes, and the full value as written.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["w3schools-sql-data-types", "postgresql-docs-data-types"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Vendor type names differ (MySQL TEXT vs PostgreSQL text; DECIMAL vs NUMERIC), and same-named types can differ in size across products.",
+      "positions": [
+        "W3Schools warns that data types have different names in different databases and that even same-named types can differ in size and details.",
+        "PostgreSQL documents its own numeric, character, date/time, and boolean taxonomy with product-specific storage sizes."
+      ],
+      "resolution": "The lesson teaches the portable families — numbers, text, dates/times, booleans — and names vendor types only as illustrations, per the subject source-map caution against vendor wars."
+    },
+    {
+      "issue": "Whether phone numbers should be stored as text is a design recommendation, not a rule stated verbatim in any consulted source.",
+      "positions": [
+        "W3Schools documents that text (CHAR/VARCHAR) can contain letters, numbers, and special characters, and that the data type defines how the database interacts with the stored data.",
+        "No consulted source states a hard rule that phone numbers must be text."
+      ],
+      "resolution": "Recorded as an INTERPRETIVE claim in the evidence packet and presented in the lesson as an application of the documented principle (choose the type by what the value is for), not as a quoted rule."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's framing of data types as 'a label on a toolbox drawer' (generic boilerplate with no source support)",
+    "The draft's circular description of data types as 'a foundational Databases & Sql concept covered in this lesson'",
+    "The draft's claim that a college-level explanation of data types 'names the concept, describes its parts, and shows how those parts work together' — no concrete families or mechanisms were given"
+  ],
+  "correctionsNeeded": [
+    "Replaced the draft's generic boilerplate with a source-verified working definition: a data type is the rule saying what kind of value a column can hold.",
+    "Added the four common families (numbers, text, dates/times, booleans) grounded in the PostgreSQL documentation and W3Schools.",
+    "Added the phone-number example as an application of the documented match-the-value principle, explicitly labeled interpretive in the evidence packet.",
+    "Corrected the draft's implication that data types are an abstract study concept: they are a fixed per-column rule decided at table design time that governs how the database treats the stored values.",
+    "Added concrete mistakes (numbers as text, mixing types in one column, dates as text) that the draft did not cover."
+  ],
+  "rightsIssues": [
+    "All three sources are copyrighted reference material; facts were synthesized in original prose and no source wording was reproduced.",
+    "W3Schools and Microsoft Learn state no reuse license for page text; PostgreSQL documentation is released under the PostgreSQL License (open source) but was used reference-only."
+  ],
+  "sourceRecords": [
+    {
+      "id": "w3schools-sql-data-types",
+      "title": "SQL Data Types",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_datatypes.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live on 2026-08-21. States that the data type of a column defines what value the column can hold (integer, character, money, date and time, binary, and so on); that each column is required to have a name and a data type decided when the table is created; that the type is a guideline telling the database what data is expected and how it will interact with the stored data; that MySQL groups types into String, Numeric, and Date and Time; that CHAR/VARCHAR can contain letters, numbers, and special characters; and that type names and sizes differ across databases. Copyrighted; facts synthesized in original prose, no wording reproduced."
+    },
+    {
+      "id": "postgresql-docs-data-types",
+      "title": "PostgreSQL Documentation: Chapter 8. Data Types",
+      "provider": "PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/datatype.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live on 2026-08-21 (chapter overview plus the numeric, character, date/time, and boolean sub-pages). Documents the numeric family (two-, four-, and eight-byte integers; the numeric type for selectable-precision decimals, recommended for monetary amounts and other quantities where exactness is required), character types (character varying/varchar, character, and unlimited-length text), date/time types (date, time, timestamp), and the boolean type with true/false states (and a SQL null 'unknown' state). Documentation is under the PostgreSQL License; used reference-only, facts synthesized in original prose."
+    },
+    {
+      "id": "microsoft-learn-data-types-t-sql",
+      "title": "Data types (Transact-SQL)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live on 2026-08-21. States that in the SQL Server Database Engine each column, local variable, expression, and parameter has a related data type, and that a data type is an attribute specifying the type of data an object can hold — integer data, character data, monetary data, date and time data, binary strings, and so on. Copyrighted; facts synthesized in original prose, no wording reproduced."
+    }
+  ]
+}

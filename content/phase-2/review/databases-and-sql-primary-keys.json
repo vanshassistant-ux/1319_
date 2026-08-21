@@ -1,0 +1,308 @@
+{
+  "id": "databases-and-sql:foundations:primary-keys",
+  "subjectSlug": "databases-and-sql",
+  "unitSlug": "foundations",
+  "slug": "primary-keys",
+  "title": "Primary Keys",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "databases-and-sql",
+    "foundations",
+    "primary-keys",
+    "uniqueness",
+    "identifiers"
+  ],
+  "in30Seconds": "A primary key is a column or set of columns that uniquely identifies each row in a table. No two rows may carry the same key value, and no key value may be empty, so the key is how a database tells rows apart and finds any single one. Many tables use a simple ID number as the key, because IDs stay stable while other details change. Other tables can reference a primary key to connect related data. In short, the primary key is the handle that makes every row findable.",
+  "whyItMatters": "Every table that holds data needs a way to point at one specific row, and the primary key is that way. When an online store shows your order history, when a hospital system pulls your records, or when two tables are combined to answer a question, the database is using keys to find and connect rows. Without keys, rows would blur together and retrieval would break down. Keys also keep data honest: the database itself refuses to store two rows with the same key value. Understanding primary keys unlocks nearly everything else in this course, from relationships between tables to everyday queries, because almost every database feature leans on the key.",
+  "learningObjectives": [
+    "Define a primary key as the column or set of columns that uniquely identifies each row in a table.",
+    "Explain the uniqueness rule: no two rows may share the same primary key value, and key values cannot be empty.",
+    "Describe the common ID pattern and why many tables add a simple, stable ID number to serve as the key.",
+    "Distinguish the primary key from ordinary columns that simply hold data.",
+    "Explain why a combination of columns can serve as a primary key when no single column is unique.",
+    "Explain how primary keys let other tables reference a row, and why a good key is one that never changes."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "What a primary key is",
+      "body": "A primary key is the column or set of columns that uniquely identifies each row in a table. The idea appears in every major database's documentation with consistent wording. PostgreSQL's documentation says a primary key constraint indicates that a column, or group of columns, can be used as a unique identifier for rows. Microsoft's SQL Server documentation says a table typically has a column or combination of columns that uniquely identify each row, and that column or columns is the primary key. W3Schools' tutorial states it plainly: the PRIMARY KEY constraint uniquely identifies each record in a database table. IBM's data management guide defines a primary key as a column or columns with values that uniquely identify each row or record. Four different vendors, one definition: the key is the row's identifier. It is not a special kind of data; it is a special job assigned to ordinary data."
+    },
+    {
+      "heading": "The uniqueness rule",
+      "body": "The defining rule of a primary key is uniqueness: no two rows may carry the same key value. Consider a shop's customer table. Customer 1001 is Aisha, customer 1002 is Ben, and customer 1003 is Aisha's sister, who shares her last name and address. Rows may share a first name, a phone number, or a city; those are ordinary columns. What they cannot share is a customer ID. The database enforces this itself: try to add a second row with customer ID 1001 and the database refuses. The rule has a second half: key values cannot be empty or missing. PostgreSQL spells out both requirements, unique and not null, and W3Schools notes that a primary key is effectively a uniqueness rule plus a not-null rule. Look up a key value and you find exactly one row."
+    },
+    {
+      "heading": "The ID pattern: simple, stable, meaningless",
+      "body": "In practice, many tables do not hunt for a meaningful column to use as the key. They add a new column of ID numbers. IBM lists employee ID, product ID, and student ID numbers among the often-cited examples of primary keys, and Microsoft notes that primary keys are frequently defined on an identity column. Why an ID number? It is simple: one short value, easy to store and compare. It is stable: a name can change with marriage, an address with a move, and a product description with a redesign, but an ID number has no reason to change because it describes nothing about the person or product. And it is meaningless in the useful sense: the ID's only job is to identify the row, so no real-world event can make it wrong. IBM calls an existing column pressed into service a natural key, and a new column created purely to be the identifier a surrogate key. The ID pattern is that surrogate idea: a simple, stable number whose whole purpose is pointing at one row."
+    },
+    {
+      "heading": "Keys versus ordinary columns",
+      "body": "Every column in a table holds data; the key is the one column that identifies. In the customer table, the name column tells you who the customer is, the phone column how to reach them, and the ID column which row is theirs. A column can hold perfectly good data and still be a poor key: two customers can share the name Jordan Lee, and phone numbers, while usually unique, can change. The distinction is about the job, not the data: ordinary columns answer what we know about the row, while the key answers which row this is. That is why the database treats the key specially, enforcing uniqueness and refusing empty values, while other columns may repeat or be left blank."
+    },
+    {
+      "heading": "Composite keys: when one column is not enough",
+      "body": "Sometimes no single column can do the job, and the key becomes a combination of columns. Consider a table of course enrollments with a student ID column and a course ID column. A student appears in many rows, one per course, so student ID repeats. A course appears in many rows, one per student, so course ID repeats too. Neither column is unique, but the pair is: a given student enrolled in a given course is exactly one row. That pair is a composite key. PostgreSQL confirms that primary keys can span more than one column, and Microsoft spells out the rule: values can be duplicated within one column, but each combination of values from all the columns must be unique. Composite keys are a genuine tool, not a compromise: whenever a combination is the natural unit of identity, it is the right key."
+    },
+    {
+      "heading": "Keys enable relationships, and why a good key never changes",
+      "body": "The primary key matters beyond its own table because other tables can reference it. IBM puts it directly: primary keys can be referenced by another type of key to define relationships between tables. W3Schools says the primary key is the target for foreign keys in other tables, and PostgreSQL notes that the primary key defines the default target for foreign keys referencing the table. The mechanics belong to the foreign-keys lesson; here the point is what referencing implies. If an order table points at a customer by customer ID, changing that ID would break every order that pointed at it. That is the honest design intuition: a good key is one that never changes. Names, addresses, and prices come and go, but the key should stay put because other data depends on it. Relational database theory holds that every table should have a primary key. Choose a key that is simple, stable, and unique, and the rest of the database can rely on it."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "primary key",
+      "definition": "The column or set of columns whose values uniquely identify each row in a table."
+    },
+    {
+      "term": "uniqueness",
+      "definition": "The rule that no two rows in a table may have the same primary key value."
+    },
+    {
+      "term": "composite key",
+      "definition": "A primary key made from two or more columns, where only the full combination must be unique."
+    },
+    {
+      "term": "ID column",
+      "definition": "A dedicated column of identification numbers added so that each row has a simple, stable key."
+    },
+    {
+      "term": "natural key",
+      "definition": "An existing column, such as a license plate number, pressed into service as the primary key."
+    },
+    {
+      "term": "surrogate key",
+      "definition": "A new column created specifically to serve as the primary key, carrying no other meaning."
+    },
+    {
+      "term": "constraint",
+      "definition": "A rule that a database enforces on the data in a table; the primary key rule is one such constraint."
+    },
+    {
+      "term": "reference",
+      "definition": "The act of one table pointing to a row in another table by using that table's key."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "A primary key is how a database tells rows apart. Each row gets one value, like a ticket number, and no two rows may share it. That single rule is the whole trick: know the key, and you can point at exactly one row and nowhere else. Many tables use a plain ID number for the key, because IDs stay the same even when everything else about the row changes. And because other tables can point at a row by its key, the key becomes the address the rest of the database uses to find that row.",
+    "analogy": "Think of a coat check. Every guest hands over a coat and receives a numbered ticket, and every ticket number is unique. When you come back, you do not describe your coat; you hand over the number, and the attendant returns exactly your coat. A database works the same way: rows check in with their key value, and any later question just hands over the number.",
+    "analogyLimits": "A coat-check ticket is a scrap of paper that can be lost, and the attendant can always issue a replacement. A primary key is enforced by the database itself, which refuses to create a second row with the same key. A ticket also pairs with a coat for one evening, while a primary key identifies a row permanently and other tables may rely on it for years, which is exactly why it should never change."
+  },
+  "workedExample": "Marisol runs a small bike-repair shop and keeps a table of customers. She adds a customer_id column, numbered 101, 102, 103, and makes it the primary key. Two customers named Jordan Lee could walk in, and two customers could share an area code, but no two rows may ever carry customer ID 103; the database itself blocks a duplicate. When Marisol logs a repair, the repair row stores the customer ID instead of repeating the name, so it can point back to exactly one customer row. If a customer changes a surname, the ID stays the same: it is the stable handle the repair records depend on. One rule did the work: every customer row is findable, forever, by one number.",
+  "commonMistakes": [
+    {
+      "mistake": "Picking a column of meaningful facts, like a name, as the primary key.",
+      "correction": "Names can repeat and change, which breaks both halves of the key rule. A key needs values that are unique and stay put, which is why dedicated ID columns are the common pattern."
+    },
+    {
+      "mistake": "Assuming a table can have several primary keys.",
+      "correction": "A table has at most one primary key. Other columns can hold unique values, but only one column or combination is designated as the key."
+    },
+    {
+      "mistake": "Believing every column in a composite key must be unique by itself.",
+      "correction": "In a composite key, individual columns may repeat; only the full combination must be unique, as with a student ID plus a course ID."
+    },
+    {
+      "mistake": "Thinking a column that is unique today makes a good key.",
+      "correction": "Uniqueness is necessary but not enough. The key also needs to be stable, because other tables may reference it; a phone number that changes breaks that promise."
+    },
+    {
+      "mistake": "Treating the key as just another data column.",
+      "correction": "The key identifies the row; other columns describe it. The database enforces special rules on the key, uniqueness and non-empty values, that it does not apply to ordinary columns."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "A primary key column",
+      "b": "An ordinary column",
+      "distinction": "Both hold data, but only the key identifies the row; the database enforces uniqueness and non-empty values on the key alone."
+    },
+    {
+      "a": "A single-column key",
+      "b": "A composite key",
+      "distinction": "A composite key uses two or more columns together; individual columns may repeat, but the full combination must be unique."
+    },
+    {
+      "a": "A natural key",
+      "b": "A surrogate (ID) key",
+      "distinction": "A natural key is an existing meaningful column pressed into service; a surrogate key is a new ID column created purely to identify rows, which tends to be simpler and more stable."
+    }
+  ],
+  "keyTakeaway": "A primary key is the column or set of columns that makes each row findable: unique, never empty, and stable. It is the handle other tables use to reference a row, so a good key is simple and never changes.",
+  "questionBank": [
+    {
+      "id": "databases-and-sql:foundations:primary-keys:1",
+      "prompt": "What does a primary key do in a database table?",
+      "options": [
+        "It uniquely identifies each row in the table.",
+        "It sorts the rows by their values.",
+        "It stores the name of the table.",
+        "It counts how many rows the table holds."
+      ],
+      "correctIndex": 0,
+      "explanation": "A primary key is a column or set of columns whose values uniquely identify each row. Sorting, naming, and counting are separate jobs a database performs; they are not what the key does.",
+      "difficulty": "recall",
+      "skill": "Defining the role of a primary key",
+      "sourceIds": [
+        "postgresql-ddl-constraints",
+        "microsoft-learn-primary-foreign-key-constraints",
+        "w3schools-sql-primary-key",
+        "ibm-what-is-a-primary-key"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:primary-keys:2",
+      "prompt": "A bike shop's customer table uses customer_id as its primary key. Which event would the database refuse to allow?",
+      "options": [
+        "Two customers with the same first name.",
+        "A customer whose phone number is missing.",
+        "A second row carrying customer_id 207.",
+        "A customer who changes their last name."
+      ],
+      "correctIndex": 2,
+      "explanation": "The core rule of a primary key is uniqueness: no two rows may share the same key value, so a duplicate customer ID is refused. Duplicate names and a changed name are ordinary data, and a missing phone number does not touch the key.",
+      "difficulty": "understanding",
+      "skill": "Applying the uniqueness rule to a scenario",
+      "sourceIds": [
+        "postgresql-ddl-constraints",
+        "w3schools-sql-primary-key"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:primary-keys:3",
+      "prompt": "A hotel stores each stay as one row with columns stay_id, guest_name, room_number, and check_in_date. Which column should serve as the primary key?",
+      "options": [
+        "guest_name",
+        "room_number",
+        "check_in_date",
+        "stay_id"
+      ],
+      "correctIndex": 3,
+      "explanation": "stay_id is the dedicated ID that uniquely identifies each stay. Guests book repeatedly, rooms are reused across dates, and many guests check in on the same date, so none of the other columns is unique.",
+      "difficulty": "application",
+      "skill": "Choosing an appropriate primary key column",
+      "sourceIds": [
+        "ibm-what-is-a-primary-key",
+        "microsoft-learn-primary-foreign-key-constraints"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:primary-keys:4",
+      "prompt": "An enrollment table has columns student_id, course_id, and enrollment_date. A student can take many courses, a course holds many students, and a student can enroll in a given course only once. What is the best primary key?",
+      "options": [
+        "student_id alone",
+        "The pair (student_id, course_id)",
+        "course_id alone",
+        "enrollment_date alone"
+      ],
+      "correctIndex": 1,
+      "explanation": "Neither column alone is unique: student_id repeats across courses and course_id repeats across students. Only the combination of both columns identifies each enrollment row, which is exactly what a composite key is for.",
+      "difficulty": "analysis",
+      "skill": "Reasoning about when a composite key is needed",
+      "sourceIds": [
+        "microsoft-learn-primary-foreign-key-constraints",
+        "postgresql-ddl-constraints",
+        "ibm-what-is-a-primary-key"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:primary-keys:5",
+      "prompt": "Why do designers often prefer a simple ID number over a meaningful column like a name as the primary key?",
+      "options": [
+        "The ID stays the same even when other details change.",
+        "The ID reveals information about the customer.",
+        "The ID must be updated whenever the customer moves.",
+        "The ID makes the name column unnecessary."
+      ],
+      "correctIndex": 0,
+      "explanation": "A good key is stable: names, addresses, and other details change, but other tables may reference a row by its key, so the key itself should not. That is why simple ID numbers are the common pattern.",
+      "difficulty": "application",
+      "skill": "Applying the stability design intuition",
+      "sourceIds": [
+        "ibm-what-is-a-primary-key",
+        "postgresql-ddl-constraints"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "databases-and-sql:foundations:primary-keys:1",
+      "prompt": "What does a primary key do in a database table?",
+      "options": [
+        "It uniquely identifies each row in the table.",
+        "It sorts the rows by their values.",
+        "It stores the name of the table.",
+        "It counts how many rows the table holds."
+      ],
+      "correctIndex": 0,
+      "explanation": "A primary key is a column or set of columns whose values uniquely identify each row. Sorting, naming, and counting are separate jobs a database performs; they are not what the key does.",
+      "difficulty": "recall",
+      "skill": "Defining the role of a primary key",
+      "sourceIds": [
+        "postgresql-ddl-constraints",
+        "microsoft-learn-primary-foreign-key-constraints",
+        "w3schools-sql-primary-key",
+        "ibm-what-is-a-primary-key"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:primary-keys:2",
+      "prompt": "A bike shop's customer table uses customer_id as its primary key. Which event would the database refuse to allow?",
+      "options": [
+        "Two customers with the same first name.",
+        "A customer whose phone number is missing.",
+        "A second row carrying customer_id 207.",
+        "A customer who changes their last name."
+      ],
+      "correctIndex": 2,
+      "explanation": "The core rule of a primary key is uniqueness: no two rows may share the same key value, so a duplicate customer ID is refused. Duplicate names and a changed name are ordinary data, and a missing phone number does not touch the key.",
+      "difficulty": "understanding",
+      "skill": "Applying the uniqueness rule to a scenario",
+      "sourceIds": [
+        "postgresql-ddl-constraints",
+        "w3schools-sql-primary-key"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:primary-keys:3",
+      "prompt": "A hotel stores each stay as one row with columns stay_id, guest_name, room_number, and check_in_date. Which column should serve as the primary key?",
+      "options": [
+        "guest_name",
+        "room_number",
+        "check_in_date",
+        "stay_id"
+      ],
+      "correctIndex": 3,
+      "explanation": "stay_id is the dedicated ID that uniquely identifies each stay. Guests book repeatedly, rooms are reused across dates, and many guests check in on the same date, so none of the other columns is unique.",
+      "difficulty": "application",
+      "skill": "Choosing an appropriate primary key column",
+      "sourceIds": [
+        "ibm-what-is-a-primary-key",
+        "microsoft-learn-primary-foreign-key-constraints"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "databases-and-sql:foundations:tables",
+    "databases-and-sql:foundations:rows",
+    "databases-and-sql:foundations:columns",
+    "databases-and-sql:foundations:foreign-keys",
+    "databases-and-sql:foundations:relationships"
+  ],
+  "sources": [
+    "postgresql-ddl-constraints",
+    "microsoft-learn-primary-foreign-key-constraints",
+    "w3schools-sql-primary-key",
+    "ibm-what-is-a-primary-key"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only sources (PostgreSQL docs, Microsoft Learn, W3Schools, IBM); no source prose adapted",
+    "researchedAt": "2026-08-21",
+    "transformation": "The working definition, uniqueness rule, ID pattern, composite keys, and stability intuition were synthesized from official database documentation and tutorials into original explanatory prose."
+  },
+  "contentHash": "938e5e5493da4b56",
+  "status": "source-verified",
+  "public": false
+}

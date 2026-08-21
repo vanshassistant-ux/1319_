@@ -1,0 +1,199 @@
+{
+  "topicId": "databases-and-sql:foundations:what-a-database-is",
+  "subjectId": "databases-and-sql",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "what a database is: an organized collection of data stored so it can be accessed, updated, and managed (working definition, attributed)",
+      "why databases exist: centralization, consistency, multiple users, searchability",
+      "database versus spreadsheet: one file for one person versus a shared, managed collection",
+      "who uses databases: companies, apps, websites with accounts",
+      "the database as a shared resource: many applications and people reading and writing the same data (concurrency, stated simply)",
+      "the honest framing: databases are powerful but need design and care; design topics are siblings, referenced only"
+    ],
+    "supporting": [
+      "the database management system (DBMS) as the software that controls a database",
+      "SQL as the standard language for accessing and manipulating databases (pointer only; syntax belongs to sql-basics)",
+      "relational storage in tables of rows and columns as one common form (pointer only; tables/rows/columns own the detail)"
+    ],
+    "outOfScope": [
+      "relational model internals (own topic: relational-databases)",
+      "tables, rows, columns structure (own topics)",
+      "SQL syntax and commands (own topic: sql-basics)",
+      "schema design, keys, normalization (own topics)",
+      "indexes, transactions, database security (own topics)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A database is an organized collection of data, stored electronically so that it can be accessed, updated, and managed — the working definition synthesized from Oracle ('an organized collection of structured information, or data, typically stored electronically in a computer system', data 'easily accessed, managed, modified, updated, controlled, and organized') and IBM ('a digital repository for storing, managing and securing organized collections of data').",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "oracle-what-is-a-database",
+        "ibm-think-what-is-a-database"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A database is usually controlled by a database management system (DBMS); together the data, the DBMS, and the applications that use them form a database system.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "oracle-what-is-a-database"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Databases exist partly to centralize data: instead of keeping data in scattered files, organizations keep one managed collection, and IBM states databases enable organizations to centrally manage data.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-think-what-is-a-database",
+        "oracle-what-is-a-database"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Databases allow multiple users at the same time to access and query data, quickly and securely, unlike tools designed for a single user.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "oracle-what-is-a-database"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Spreadsheets were originally designed for one user or a small number of users, while databases are designed to hold much larger collections of organized information; the primary differences are how data is stored and manipulated, who can access it, and how much data can be stored.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "oracle-what-is-a-database"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "SQL is the standard language for accessing and manipulating databases, used by nearly all relational databases; relational database management systems are the basis for SQL and for all modern database systems such as MS SQL Server, IBM DB2, Oracle, MySQL, and Microsoft Access.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3schools-sql-introduction",
+        "oracle-what-is-a-database"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Organizations of every kind rely on databases: businesses hold large amounts of data on customer transactions, product inventory, internal processes, and proprietary research, and need access to their data to support timely decision-making.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-think-what-is-a-database",
+        "oracle-what-is-a-database"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Databases have evolved since the early 1960s, beginning with navigational databases such as the hierarchical model.",
+      "claimType": "HISTORICAL",
+      "sourceIds": [
+        "oracle-what-is-a-database"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "NIST's Computer Security Resource Center glossary aggregates terms from NIST publications and CNSSI 4009 and cautions that its entries should not be treated as official or preferred definitions for any particular sector.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nist-csrc-glossary"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Sources phrase the definition of a database differently: Oracle says 'an organized collection of structured information, or data, typically stored electronically in a computer system'; IBM says 'a digital repository for storing, managing and securing organized collections of data'; Microsoft Learn describes a database as a collection of tables storing a specific set of structured data; and the CNSSI-derived tradition collected by NIST speaks of an 'aggregation' of data.",
+      "positions": [
+        "Each source frames the definition in its own vocabulary (collection, repository, tables, aggregation)",
+        "All agree on the shared core: data, organized, stored so it can be used"
+      ],
+      "resolution": "The lesson presents a synthesized working definition — an organized collection of data, stored so it can be accessed, updated, and managed — attributed to the Oracle and IBM explainers rather than quoted from any single source, and notes explicitly that definitional wording varies by context."
+    },
+    {
+      "issue": "Spreadsheets and databases are sometimes treated as interchangeable for small amounts of data, since both store data in a grid-like arrangement.",
+      "positions": [
+        "Spreadsheets were originally designed for one user or a small team and suit limited data manipulation (Oracle)",
+        "Databases are designed for larger collections and many simultaneous users (Oracle)"
+      ],
+      "resolution": "The lesson presents the distinction as Oracle frames it — spreadsheet as one-person file, database as shared managed collection — and does not claim spreadsheets are useless, only that the tools serve different situations."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The machine-generated draft contained no factual claims; its boilerplate (e.g., 'label on a toolbox drawer', 'foundational concept in Databases & Sql') carried no verifiable content and was discarded entirely."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire generic draft with source-verified original content; no draft wording was retained."
+  ],
+  "rightsIssues": [
+    "All five sources are cited reference-only; no source wording is reproduced in the lesson and no license is asserted for any source. Vendor pages (Oracle, IBM, Microsoft, W3Schools) are copyrighted; facts were synthesized and prose is original."
+  ],
+  "sourceRecords": [
+    {
+      "id": "oracle-what-is-a-database",
+      "title": "What Is a Database?",
+      "provider": "Oracle",
+      "url": "https://www.oracle.com/database/what-is-database/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. Vendor explainer (dated November 24, 2020). Supports: the working definition ('an organized collection of structured information, or data, typically stored electronically in a computer system'; data 'easily accessed, managed, modified, updated, controlled, and organized'); the DBMS and database-system framing; the spreadsheet-vs-database comparison (spreadsheets designed for one user; databases hold larger collections and allow multiple users at the same time to access and query data; primary differences are storage/manipulation, access, and capacity); SQL as the language used by nearly all relational databases; companies needing real-time access to data for decision-making; and the evolution of databases since the early 1960s. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "ibm-think-what-is-a-database",
+      "title": "What is a database?",
+      "provider": "IBM (IBM Think)",
+      "url": "https://www.ibm.com/think/topics/database",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. Vendor explainer. Supports: the working definition ('a digital repository for storing, managing and securing organized collections of data'); the claim that databases enable organizations to centrally manage data and enforce data integrity and security standards; and the claim that businesses own large amounts of data — on customer transactions, product inventory, internal processes, and proprietary research — that must be organized so users and apps can access it. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "microsoft-learn-sql-server-databases",
+      "title": "Databases — SQL Server",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/databases/databases?view=sql-server-ver17",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. Official product documentation (Tier B per subject source-map). Supports: a database as a collection of tables storing a specific set of structured data, with rows/records and columns/attributes — used only for the general framing that databases store structured data in organized collections; table/row/column detail belongs to sibling topics. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "w3schools-sql-introduction",
+      "title": "SQL Introduction",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_intro.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. Tier B reference tutorial per subject source-map. Supports: SQL as a standard language for accessing and manipulating databases; relational database management systems as the basis for SQL and for all modern database systems, with named examples (MS SQL Server, IBM DB2, Oracle, MySQL, Microsoft Access); data stored in tables with columns and rows. Used for the pointer-level SQL mention only; no syntax taught. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "nist-csrc-glossary",
+      "title": "Glossary — Computer Security Resource Center",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://csrc.nist.gov/glossary",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A. The glossary search page (https://csrc.nist.gov/glossary?search=database) was read live via curl on 2026-08-21; it states the glossary is an aggregation of terms from NIST's cybersecurity and privacy standards, guidelines, and other technical publications and from CNSSI 4009, and that entries should not be viewed as 'official' or 'preferred' definitions for a particular sector. Individual term pages render via JavaScript and were not used; the lesson cites the glossary only for the definitional-context framing that wording varies by source and context."
+    }
+  ]
+}

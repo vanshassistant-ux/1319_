@@ -1,0 +1,215 @@
+{
+  "topicId": "databases-and-sql:foundations:columns",
+  "subjectId": "databases-and-sql",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "What a column is: a vertical set of values, one per row, all of the same kind of information",
+      "One column holds one attribute/property (name, price, date)",
+      "Column, field, and attribute as three names for the same idea",
+      "Column names describe what the column holds (the naming intuition)",
+      "Every column has a type (number, text, date) — reference to the data-types sibling topic",
+      "Column constraints: must be filled, must be unique — reference to the primary-keys sibling topic",
+      "Columns give a table its meaning; a table without column definitions is a pile of values"
+    ],
+    "supporting": [
+      "Rows as the horizontal counterpart (one entry per row)",
+      "Tables as grids of rows and columns with fixed column sets and variable row counts",
+      "Declared types and families: numeric, character, date/time",
+      "Default empty (null) values in unconstrained columns"
+    ],
+    "outOfScope": [
+      "Rows as a full topic (sibling topic: databases-and-sql:foundations:rows)",
+      "Tables as a full topic (sibling topic: databases-and-sql:foundations:tables)",
+      "Data types in depth (sibling topic: databases-and-sql:foundations:data-types)",
+      "Primary keys and key design (sibling topic: databases-and-sql:foundations:primary-keys)",
+      "SQL syntax for creating tables or columns",
+      "Implementation details of constraints (CHECK, FOREIGN KEY, indexes)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A table in a relational database consists of rows and columns; the number and order of the columns is fixed, each column has a name, and the number of rows is variable, reflecting how much data is stored at a given moment.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["postgresql-table-basics"],
+      "status": "supported"
+    },
+    {
+      "claim": "A column is a vertical entity in a table, while a record, also called a row, is each individual entry in the table and is a horizontal entity.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["w3schools-sql-intro"],
+      "status": "supported"
+    },
+    {
+      "claim": "An attribute is a distinctive feature, characteristic, or property of an object; in a table, each column holds one such property, with one value recorded for every row.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-glossary-attribute", "postgresql-table-basics"],
+      "status": "supported"
+    },
+    {
+      "claim": "The words column, field, and attribute are used for the same structure: a vertical set of values for one property, with 'field' coming from file-based data systems and 'attribute' from data modeling.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["w3schools-sql-notnull", "nist-glossary-attribute", "w3schools-sql-intro"],
+      "status": "supported"
+    },
+    {
+      "claim": "Every column has a name and a declared type; database systems provide type families such as numeric, character (text), and date/time.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["sqlite-create-table", "postgresql-data-types", "postgresql-constraints"],
+      "status": "supported"
+    },
+    {
+      "claim": "A not-null (must-be-filled) constraint requires a column to have a value in every row; by default, a column may hold no value.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["w3schools-sql-notnull", "postgresql-constraints"],
+      "status": "supported"
+    },
+    {
+      "claim": "A unique constraint ensures that all values in a column are different from one another; no two rows may share the same value in that column.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["w3schools-sql-unique", "postgresql-constraints"],
+      "status": "supported"
+    },
+    {
+      "claim": "The declared set of columns gives a table its structure and meaning: without column definitions, a collection of values cannot be interpreted, because nothing says what each value is or what it belongs to.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["postgresql-table-basics", "w3schools-sql-intro"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Column vs field vs attribute: are the three terms strictly synonymous?",
+      "positions": [
+        "Everyday tutorials such as W3Schools use column and field interchangeably for the same structure (a NOT NULL rule is described as enforcing a field to always contain a value).",
+        "Formal relational-model and data-modeling texts reserve 'attribute' as the theoretical term for a column, and 'field' carries an older, file-based connotation.",
+        "The NIST glossary defines attribute generally as a property of an object, not specifically as a database column."
+      ],
+      "resolution": "At this literacy level the lesson treats column, field, and attribute as three names for the same idea, notes their different origins (SQL, file-based systems, data modeling), and does not claim strict formal equivalence beyond what the tutorials support."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's claim that 'Columns is a foundational concept in Databases & Sql' — vague boilerplate with no evidentiary support.",
+    "The generated draft's toolbox-drawer label analogy — boilerplate with no source support.",
+    "The generated draft's framing of the topic as organizing information 'to ask better questions' in a generic academic sense — unsupported generic phrasing."
+  ],
+  "correctionsNeeded": [
+    "Replaced the generic machine draft with source-verified definitions of columns: vertical structure, one property per column, fixed column set versus variable rows.",
+    "Added the column/field/attribute terminology point with W3Schools and NIST support.",
+    "Added the naming intuition grounded in W3Schools' Customers example (CustomerID, CustomerName, Country).",
+    "Added the type claim (numeric, character, date/time families) from PostgreSQL and SQLite documentation, referencing the data-types sibling topic.",
+    "Added the constraint concepts (must be filled, must be unique) with W3Schools and PostgreSQL support, referencing the primary-keys sibling topic.",
+    "Added the honest framing that column definitions give a table its meaning."
+  ],
+  "rightsIssues": [
+    "W3Schools pages carry no explicit open license; used as REFERENCE_ONLY with facts synthesized into original prose.",
+    "PostgreSQL and SQLite documentation are used as REFERENCE_ONLY; no documentation prose was adapted.",
+    "NIST glossary material is U.S. government material; only the general attribute definition was used as a fact anchor."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-glossary-attribute",
+      "title": "NIST Glossary: attribute",
+      "provider": "NIST",
+      "url": "https://csrc.nist.gov/glossary/term/attribute",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Defines an attribute as 'any distinctive feature, characteristic, or property of an object'. Used as the Tier A anchor for the attribute-as-property meaning behind column terminology; no prose adapted."
+    },
+    {
+      "id": "postgresql-table-basics",
+      "title": "PostgreSQL 18 Documentation: 5.1. Table Basics",
+      "provider": "PostgreSQL",
+      "url": "https://www.postgresql.org/docs/current/ddl-basics.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. States that a relational table consists of rows and columns, that the number and order of columns is fixed, that each column has a name, and that the number of rows is variable. Supports the fixed-columns/variable-rows claim and the named-column claim."
+    },
+    {
+      "id": "postgresql-constraints",
+      "title": "PostgreSQL 18 Documentation: 5.5. Constraints",
+      "provider": "PostgreSQL",
+      "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Introduces constraints as a way to restrict data beyond what types allow and covers not-null and unique constraints. Supports the constraint concept at intuition level; no SQL shown in the lesson."
+    },
+    {
+      "id": "postgresql-data-types",
+      "title": "PostgreSQL 18 Documentation: Chapter 8. Data Types",
+      "provider": "PostgreSQL",
+      "url": "https://www.postgresql.org/docs/current/datatype.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Chapter organizes types into numeric, character, and date/time families. Supports the claim that a column's type is chosen from families such as numbers, text, and dates. Reference-level only; the data-types sibling topic owns depth."
+    },
+    {
+      "id": "sqlite-create-table",
+      "title": "SQLite Documentation: CREATE TABLE",
+      "provider": "SQLite",
+      "url": "https://www.sqlite.org/lang_createtable.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Describes each column of a table as having a name, a declared type, and optional constraints, and lists UNIQUE and NOT NULL among supported constraints. Supports the column name/type/constraint structure claim."
+    },
+    {
+      "id": "w3schools-sql-intro",
+      "title": "W3Schools: SQL Introduction",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_intro.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. States that a column is a vertical entity in a table and a record (row) is a horizontal entity; example columns (CustomerID, CustomerName, Address, City, Country) support the naming intuition. Facts synthesized into original prose."
+    },
+    {
+      "id": "w3schools-sql-notnull",
+      "title": "W3Schools: SQL NOT NULL Constraint",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_notnull.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. States that the NOT NULL constraint enforces a column to not accept NULL values, that this enforces a field to always contain a value, and that by default a column can hold NULL values. Supports the must-be-filled rule and the field/column synonym."
+    },
+    {
+      "id": "w3schools-sql-unique",
+      "title": "W3Schools: SQL UNIQUE Constraint",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_unique.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. States that the UNIQUE constraint ensures that all values in a column are unique. Supports the must-be-unique rule at intuition level."
+    }
+  ]
+}
