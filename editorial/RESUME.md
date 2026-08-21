@@ -1,3 +1,5 @@
+> **Hermes (VM) copy — MASTER_1319 bundle built 2026-08-21 at `ba6c127`. Read `MASTER_1319_START_HERE.md` first. This is the live editorial repository from the moment it lands in the VM; the Mac copy is frozen for content edits.**
+
 # Resume point
 
 Read this file first on every new run, then run `bun scripts/editorial-progress.mjs` for live totals.
@@ -14,7 +16,11 @@ Read this file first on every new run, then run `bun scripts/editorial-progress.
 - **Phase 1 (282 topics, 11 subjects) is PUBLISHED and live** on eliexplains.org as of 2026-08-20 (deployed branch = `origin/agent/eliexplainsorg`).
 - Every topic's status across all four phases: `editorial/reports/MASTER_TOPIC_DIRECTORY.md` (+ `.csv` / `.json`); the done/not-done summary: `editorial/reports/PHASE_STATUS_REPORT.md`. Regenerate both with `bun scripts/build-master-directory.mjs` after any content change (run `bun scripts/editorial-progress.mjs` first).
 
-## Next action
+## Next action (superseded by MASTER_1319_START_HERE.md §8 — fully autonomous, no pauses)
+
+Stage A1: `english-and-literature` (phase 3), starting with `tone` (NEEDS_EDITORIAL_REVIEW), then the rest of the §8 queue in order.
+
+### Previous next-action text (historical)
 
 Stop at this subject boundary unless the owner explicitly directs continuation. The next subject in the required Phase 2 order is `data-science-and-ai-literacy` (Phase 2; confirm its current queue count before work). Do not initialize it until continuation is authorized.
 

@@ -1,3 +1,5 @@
+> **SUPERSEDED FOR STATE/ORDER (2026-08-21): read `MASTER_1319_START_HERE.md` at the repository root first. This file remains valid for method only; its counts, stop points, and owner-confirmation pauses are obsolete.**
+
 # Phase 2 editorial handoff
 
 Updated from the live stores on 2026-08-20. This is a local-only editorial pipeline: do not push, publish, deploy, or upload.

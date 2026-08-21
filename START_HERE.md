@@ -1,3 +1,5 @@
+> **SUPERSEDED FOR STATE/ORDER (2026-08-21): read `MASTER_1319_START_HERE.md` at the repository root first. This file remains valid for method only; its counts, stop points, and owner-confirmation pauses are obsolete.**
+
 # START_HERE.md — 1319_DIR handoff bundle
 
 **Built 2026-08-19 from `/Users/moomoo/Desktop/ELI_WEBSITE` at commit `302f8b7`.**
