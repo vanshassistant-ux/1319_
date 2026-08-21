@@ -1,0 +1,303 @@
+{
+  "id": "data-science-and-ai-literacy:foundations:machine-learning-basics",
+  "subjectSlug": "data-science-and-ai-literacy",
+  "unitSlug": "foundations",
+  "slug": "machine-learning-basics",
+  "title": "Machine Learning Basics",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "data-science-and-ai-literacy",
+    "foundations",
+    "machine-learning-basics",
+    "artificial-intelligence",
+    "machine-learning"
+  ],
+  "in30Seconds": "Machine learning is a way of building programs that get better at a task by learning patterns from examples, instead of following rules a person wrote in advance. Every machine-learning setup needs three things: data to learn from, a task to improve at, and a way to measure improvement. The program fits a pattern to the data during training, then applies that pattern to new cases. It powers recommendations, translation, medical-imaging assistance, and fraud detection, and it is only as good as the data it learned from.",
+  "whyItMatters": "Machine learning sits behind everyday products, from the films a service suggests to the messages it filters, and more people will meet it in work and public life. Understanding what it is, and what it is not, changes how you read claims about artificial intelligence: you can recognize when a system learned from data, ask what data shaped it, and judge whether that data was good enough. Academically, it is the entry point to data science and AI courses. Practically, it lets you evaluate products, news stories, and workplace tools more carefully. And because learning machines inherit the strengths and limits of their training data, a basic grasp of the idea is also a basic safeguard.",
+  "learningObjectives": [
+    "Define machine learning as programs that improve at a task by learning patterns from examples rather than following hand-written rules.",
+    "Name the three ingredients of any machine-learning setup: data, a task, and a measure of improvement.",
+    "Distinguish machine learning from conventional programming, using spam filters as the example.",
+    "Explain, at a conceptual level, the difference between the two main families: supervised and unsupervised learning.",
+    "Apply the mental model of training (fitting a pattern) and using (applying it to new cases) to a real-world scenario.",
+    "Analyze why a model can only be as good as the data it was trained on."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "What machine learning is (and is not)",
+      "body": "Machine learning is a way of building software that improves at a task by learning patterns from examples. IBM describes it as the subset of artificial intelligence focused on algorithms that learn the patterns in training data and then make accurate inferences about new data, without explicit, hard-coded instructions. Google Cloud puts it similarly: systems that learn and improve without being explicitly programmed. The contrast is with traditional software, where a human writes every step in advance, as in a calculator. When people say a program \"learns,\" they mean something measurable: given examples, the program gets better at the task, not that it understands the world the way a person does. Because the word is used loosely, check what a system actually does before accepting a claim."
+    },
+    {
+      "heading": "The three ingredients",
+      "body": "Every machine-learning setup has three ingredients. First, data: the examples the program learns from, such as past sales, photos, or emails. Second, a task: the thing the program should get better at, such as sorting photos, predicting a number, or grouping customers. Third, a measure of improvement: some way to tell whether the program is doing better, such as counting how often its predictions are wrong. Google Cloud describes training as optimizing the model so it predicts the expected outcome, with a loss function that measures the model's errors. IBM frames the same idea as the central premise of machine learning: optimize a model's performance on a dataset of tasks that resemble the real problem, and it will predict well on new data. If any ingredient is missing, there is nothing to learn from, nothing to aim at, or no way to know whether the program improved."
+    },
+    {
+      "heading": "Learning versus programming",
+      "body": "The clearest way to see what machine learning changes is to compare it with rules written by hand. Consider a spam filter. The traditional approach asks people to anticipate every trick a junk email might use: phrases like \"free\" and \"prize\", addresses from unknown senders, all-capital subject lines. Each rule is a guess, and spammers change tactics, so the rule list must be rewritten again and again. The machine-learning approach turns this around: instead of writing rules, the builders gather thousands of real emails that people have already marked as spam or not spam, and the program finds the patterns itself, including patterns no one thought to write down. IBM makes exactly this contrast: a rules-based filter requires a data scientist to manually devise accurate, universal criteria, while machine learning needs an appropriate algorithm and an adequate dataset of sample emails. A person still chooses the data and the goal, but the program discovers the rules."
+    },
+    {
+      "heading": "The two big families",
+      "body": "Machine-learning methods fall into two big families, and knowing the split explains most headlines you will read. In supervised learning, the training examples come with known answers, called labels: photos labeled \"cat\" or \"dog\", emails marked spam or not. The program learns to map each example to its answer. In unsupervised learning, the examples carry no supplied answers; the program finds structure on its own, such as grouping similar items together. Google Cloud's description captures both: supervised learning uses labeled training data where the output is known, while unsupervised learning uses unlabeled data and categorizes it into groups based on attributes. IBM adds that clustering, a common unsupervised method, is used for tasks like market segmentation and fraud detection. Other families exist, but supervised and unsupervised are the two you will meet most often, and their details belong to separate topics."
+    },
+    {
+      "heading": "Training and using: a simple mental model",
+      "body": "A useful mental model has two phases. Training is fitting a pattern to the data: the program adjusts its internal pattern until it matches the examples well. Google Cloud calls this the fitting process, in which the algorithm fits the model to the data. Using, sometimes called inference, is applying that fitted pattern to new cases it has not seen before: a new email, a new photo, tomorrow's weather. IBM describes the goal as making accurate predictions on the new data the model sees in its ultimate use case. This is why machine learning is attractive: the hard work of pattern-finding is done once, during training, and the fitted pattern then works cheaply and quickly. Knowing which phase a claim is about, learning from data or applying what was learned, clears up a surprising amount of confusion."
+    },
+    {
+      "heading": "Where machine learning shows up, and why it is not magic",
+      "body": "Machine learning is already woven into ordinary life. Streaming and shopping services use it for recommendations, a use Google Cloud and IBM both describe. Translation tools lean on it, as Google Cloud's transcription and translation examples show. In healthcare, computer vision systems assist with diagnostics, from reading medical images to flagging patterns in patient records; IBM names healthcare diagnostics among computer vision's uses, and Microsoft's ML for Beginners curriculum cites predicting the likelihood of disease from a patient's medical history. Banks and card networks use machine learning for fraud detection, a use both Google Cloud and IBM mention. None of this is magic. A model can only reflect the data it learned from: Google Cloud warns that machine learning is often only as good as the data it is fed, Microsoft's curriculum states that poor or noisy data leads to inaccurate predictions, and NIST's AI Risk Management Framework observes that data used to build an AI system may not truly represent the intended use. Garbage in, garbage out is the blunt version of the same rule. How bias enters models through their training data is a topic of its own."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "machine learning",
+      "definition": "A way of building programs that improve at a task by finding patterns in examples, instead of following rules written in advance by people."
+    },
+    {
+      "term": "training data",
+      "definition": "The examples a machine-learning program learns from during training, such as labeled photos or past sales records."
+    },
+    {
+      "term": "pattern",
+      "definition": "A recurring relationship or structure in data that a program can exploit to make predictions or decisions."
+    },
+    {
+      "term": "model",
+      "definition": "The fitted pattern a program produces during training, which it then applies to new cases."
+    },
+    {
+      "term": "supervised learning",
+      "definition": "The family of machine learning in which training examples come with known answers, called labels, that the program learns to produce."
+    },
+    {
+      "term": "unsupervised learning",
+      "definition": "The family of machine learning in which the program finds structure, such as groups, in examples that carry no supplied answers."
+    },
+    {
+      "term": "label",
+      "definition": "The known answer attached to a training example, such as \"spam\" on an email, used in supervised learning."
+    },
+    {
+      "term": "inference",
+      "definition": "Applying a trained model to new cases to produce predictions or decisions."
+    },
+    {
+      "term": "garbage in, garbage out",
+      "definition": "A shorthand rule that a model's output is only as reliable as the data it learned from."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Machine learning is a way to build software that teaches itself from examples. You do not write down the rules; you hand the program a pile of examples and a goal, and it finds the pattern on its own. Show it a thousand emails people have flagged as spam, and it learns what spam tends to look like. Show it photos labeled cat and dog, and it learns the difference. Later, when something new arrives, it applies the pattern it found. It never knows what spam or a cat really is; it only knows what the examples looked like. That is why it is only as good as the data you gave it.",
+    "analogy": "Imagine learning to recognize your aunt's handwriting. Nobody hands you a rule book saying the letter a has a loop that leans left; you simply see many letters and notes over the years, and your eye picks up the pattern. Later you can tell her shopping list from a stranger's at a glance. A machine-learning program does the same thing, except it sees examples as numbers and adjusts its internal pattern until its answers match the examples. Training is the years of letters; using is reading the next envelope.",
+    "analogyLimits": "The comparison breaks down in two ways. A person learns from a handful of examples and can ask whose writing this is and why, while a machine-learning program usually needs enormous numbers of examples and cannot explain itself or ask questions. And your recognition comes with real understanding of the person, while the program has only the statistical pattern it fitted; it does not know what handwriting is, it just matches."
+  },
+  "workedExample": "FreshBrew Coffee wants to predict how many pastries to bake each morning. The rule-based approach: the owner writes a schedule from experience, bake 40 on weekdays, 60 on weekends, 80 when it rains, and updates those rules by hand whenever things change. The machine-learning approach: the shop records three years of daily pastry sales alongside the date, the weather, and nearby events. A learning program is trained on this data. Its task is to predict tomorrow's sales, and improvement is measured by how far its predictions miss the actual sales. During training it fits a pattern: rainy Saturdays before a festival sell more than sunny Mondays, and so on. Each morning it reads the forecast and the calendar, applies the fitted pattern, and prints a prediction the owner can adjust. When a competing café opens nearby, the new sales data slowly reshapes the pattern. The owner never writes a single rule; the program learns them from examples.",
+  "commonMistakes": [
+    {
+      "mistake": "Thinking machine learning means a program was given all its rules in advance.",
+      "correction": "Hand-written rules are the traditional programming approach. In machine learning, the program discovers patterns from examples. A person still chooses the data and the goal, but not the rules."
+    },
+    {
+      "mistake": "Believing more data always means a better model.",
+      "correction": "Quantity is not quality. The data must be relevant, clean, and representative of the real situation; poor or noisy data leads to inaccurate predictions no matter how much of it there is."
+    },
+    {
+      "mistake": "Using the words machine learning and artificial intelligence as if they always mean the same thing.",
+      "correction": "Machine learning is a subset of artificial intelligence. Rule-based systems are also AI, but they do not learn from data; saying a system is AI does not tell you it used machine learning."
+    },
+    {
+      "mistake": "Assuming a model trained on one kind of data will work well on any new situation.",
+      "correction": "A model applies the patterns it learned. If the new cases differ from the training data, performance drops; the training data must resemble the real problem the model will face."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Traditional programming",
+      "b": "Machine learning",
+      "distinction": "Both start with a goal, but in traditional programming a human writes the rules in advance, while in machine learning the program discovers the patterns from examples. The knowledge lives in different places."
+    },
+    {
+      "a": "Supervised learning",
+      "b": "Unsupervised learning",
+      "distinction": "Supervised learning trains on examples that carry known answers, called labels; unsupervised learning finds structure, such as groups, in examples with no supplied answers. The presence or absence of answers is the whole difference."
+    },
+    {
+      "a": "Training",
+      "b": "Using (inference)",
+      "distinction": "Training is fitting a pattern to the data; using is applying that fitted pattern to new cases. The same program does both at different times, and the two phases are easy to confuse in conversation."
+    }
+  ],
+  "keyTakeaway": "Machine learning builds programs that improve at a task by learning patterns from examples, and every setup needs data, a task, and a measure of improvement. The pattern is fitted during training and applied to new cases, and it can only be as good as the data it learned from.",
+  "questionBank": [
+    {
+      "id": "data-science-and-ai-literacy:foundations:machine-learning-basics:1",
+      "prompt": "Which statement best describes machine learning?",
+      "options": [
+        "Programs that improve at a task by learning patterns from examples rather than following hand-written rules.",
+        "Programs that follow rules written in advance by human experts for every possible case.",
+        "Any computer program that stores large amounts of data.",
+        "Programs that make computers run calculations faster than before."
+      ],
+      "correctIndex": 0,
+      "explanation": "Machine learning programs learn the patterns in their training data and make inferences on new data without explicit, hard-coded instructions, as IBM and Google Cloud describe. Hand-written rules are the traditional programming approach, and storage or speed are not what defines machine learning.",
+      "difficulty": "recall",
+      "skill": "Recognizing the definition of machine learning",
+      "sourceIds": [
+        "ibm-what-is-machine-learning",
+        "gc-what-is-machine-learning"
+      ]
+    },
+    {
+      "id": "data-science-and-ai-literacy:foundations:machine-learning-basics:2",
+      "prompt": "A team wants software that separates photos of ripe bananas from photos of unripe ones. They collect thousands of photos, each already labeled \"ripe\" or \"unripe\", and the program learns from those labels. Which family of machine learning is this?",
+      "options": [
+        "Unsupervised learning, because the program must find the groups by itself.",
+        "Reinforcement learning, because the program learns by trial and error.",
+        "Supervised learning, because every training example carries a known answer.",
+        "Rule-based programming, because a person wrote the labels."
+      ],
+      "correctIndex": 2,
+      "explanation": "Supervised learning uses labeled training data in which the output is known, and the model learns to map the input to that answer, as Google Cloud describes. Unsupervised learning would have no supplied answers, and no trial-and-error loop or hand-written rule set is involved here.",
+      "difficulty": "understanding",
+      "skill": "Classifying a setup as supervised learning",
+      "sourceIds": [
+        "gc-what-is-machine-learning"
+      ]
+    },
+    {
+      "id": "data-science-and-ai-literacy:foundations:machine-learning-basics:3",
+      "prompt": "A music streaming service wants to recommend songs. It lets the program examine listening histories and group listeners into types by similarity, without anyone telling it which type a listener belongs to. Which family does this belong to?",
+      "options": [
+        "Supervised learning, because the program is given labeled examples of listeners.",
+        "Rule-based programming, because a human writes the grouping rules.",
+        "Neither, because recommendations have nothing to do with machine learning.",
+        "Unsupervised learning, because the program finds patterns in data with no supplied answers."
+      ],
+      "correctIndex": 3,
+      "explanation": "Unsupervised learning works on unlabeled data and organizes it into groups based on attributes, which is exactly what clustering listeners by similarity does. No labels are supplied, no rules are hand-written, and recommendation systems are a well-known machine learning use.",
+      "difficulty": "application",
+      "skill": "Applying the supervised/unsupervised distinction to a new scenario",
+      "sourceIds": [
+        "gc-what-is-machine-learning",
+        "ibm-what-is-machine-learning"
+      ]
+    },
+    {
+      "id": "data-science-and-ai-literacy:foundations:machine-learning-basics:4",
+      "prompt": "During training, what is the program doing with the data, in the simplest mental model?",
+      "options": [
+        "Memorizing every example so it can repeat them back.",
+        "Fitting a pattern to the examples it was given.",
+        "Writing down rules for a human to review.",
+        "Deleting the examples it cannot explain."
+      ],
+      "correctIndex": 1,
+      "explanation": "Training is the fitting process in which the algorithm adjusts the model to the data, as Google Cloud describes; memorizing, rule-writing, and deletion are not what training does. The fitted pattern is later applied to new cases.",
+      "difficulty": "recall",
+      "skill": "Recalling the mental model of training as fitting a pattern",
+      "sourceIds": [
+        "gc-what-is-machine-learning",
+        "ibm-what-is-machine-learning"
+      ]
+    },
+    {
+      "id": "data-science-and-ai-literacy:foundations:machine-learning-basics:5",
+      "prompt": "A hospital trains a model on chest X-rays from one machine and then uses it in a clinic whose images look different. The results are poor. Which statement best explains what happened?",
+      "options": [
+        "The model applies patterns learned from its training images, and those patterns do not transfer well to images that differ from what it saw; a model can only be as good as the data it learned from.",
+        "Machine learning models perform equally well on any new data, no matter how different it is.",
+        "The model was built from hand-written rules, which are always correct for new situations.",
+        "The training was unnecessary, because machine learning needs no data."
+      ],
+      "correctIndex": 0,
+      "explanation": "A trained model infers on new data based on the patterns it learned, so data that differs from the training set undermines performance, and poor or unrepresentative data limits any model, as IBM, Google Cloud, and Microsoft's ML for Beginners explain.",
+      "difficulty": "analysis",
+      "skill": "Analyzing why a model fails when new data differs from training data",
+      "sourceIds": [
+        "ibm-what-is-machine-learning",
+        "gc-what-is-machine-learning",
+        "ms-ml4b-intro-to-ml"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "data-science-and-ai-literacy:foundations:machine-learning-basics:1",
+      "prompt": "Which statement best describes machine learning?",
+      "options": [
+        "Programs that improve at a task by learning patterns from examples rather than following hand-written rules.",
+        "Programs that follow rules written in advance by human experts for every possible case.",
+        "Any computer program that stores large amounts of data.",
+        "Programs that make computers run calculations faster than before."
+      ],
+      "correctIndex": 0,
+      "explanation": "Machine learning programs learn the patterns in their training data and make inferences on new data without explicit, hard-coded instructions, as IBM and Google Cloud describe. Hand-written rules are the traditional programming approach, and storage or speed are not what defines machine learning.",
+      "difficulty": "recall",
+      "skill": "Recognizing the definition of machine learning",
+      "sourceIds": [
+        "ibm-what-is-machine-learning",
+        "gc-what-is-machine-learning"
+      ]
+    },
+    {
+      "id": "data-science-and-ai-literacy:foundations:machine-learning-basics:2",
+      "prompt": "A team wants software that separates photos of ripe bananas from photos of unripe ones. They collect thousands of photos, each already labeled \"ripe\" or \"unripe\", and the program learns from those labels. Which family of machine learning is this?",
+      "options": [
+        "Unsupervised learning, because the program must find the groups by itself.",
+        "Reinforcement learning, because the program learns by trial and error.",
+        "Supervised learning, because every training example carries a known answer.",
+        "Rule-based programming, because a person wrote the labels."
+      ],
+      "correctIndex": 2,
+      "explanation": "Supervised learning uses labeled training data in which the output is known, and the model learns to map the input to that answer, as Google Cloud describes. Unsupervised learning would have no supplied answers, and no trial-and-error loop or hand-written rule set is involved here.",
+      "difficulty": "understanding",
+      "skill": "Classifying a setup as supervised learning",
+      "sourceIds": [
+        "gc-what-is-machine-learning"
+      ]
+    },
+    {
+      "id": "data-science-and-ai-literacy:foundations:machine-learning-basics:3",
+      "prompt": "A music streaming service wants to recommend songs. It lets the program examine listening histories and group listeners into types by similarity, without anyone telling it which type a listener belongs to. Which family does this belong to?",
+      "options": [
+        "Supervised learning, because the program is given labeled examples of listeners.",
+        "Rule-based programming, because a human writes the grouping rules.",
+        "Neither, because recommendations have nothing to do with machine learning.",
+        "Unsupervised learning, because the program finds patterns in data with no supplied answers."
+      ],
+      "correctIndex": 3,
+      "explanation": "Unsupervised learning works on unlabeled data and organizes it into groups based on attributes, which is exactly what clustering listeners by similarity does. No labels are supplied, no rules are hand-written, and recommendation systems are a well-known machine learning use.",
+      "difficulty": "application",
+      "skill": "Applying the supervised/unsupervised distinction to a new scenario",
+      "sourceIds": [
+        "gc-what-is-machine-learning",
+        "ibm-what-is-machine-learning"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "data-science-and-ai-literacy:foundations:supervised-learning",
+    "data-science-and-ai-literacy:foundations:unsupervised-learning",
+    "data-science-and-ai-literacy:foundations:training-versus-testing",
+    "data-science-and-ai-literacy:foundations:models",
+    "data-science-and-ai-literacy:foundations:features-and-labels"
+  ],
+  "sources": [
+    "gc-what-is-machine-learning",
+    "ibm-what-is-machine-learning",
+    "ms-ml4b-intro-to-ml",
+    "nist-ai-risk-management-framework",
+    "elements-of-ai"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only sources; no source prose adapted",
+    "researchedAt": "2026-08-21",
+    "transformation": "Definitions and factual claims were verified against at least two independent sources (Google Cloud, IBM, Microsoft, NIST) and synthesized into original prose with original examples; the Elements of AI course page supports the literacy framing. No source wording is reproduced."
+  },
+  "contentHash": "f5cdeb5b76ab1bb3",
+  "status": "source-verified",
+  "public": false
+}

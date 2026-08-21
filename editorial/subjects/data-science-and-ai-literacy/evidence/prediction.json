@@ -1,0 +1,176 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:prediction",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "Prediction as using patterns in past data to estimate future events or unseen values",
+      "Prediction versus explanation: a model can predict without explaining why",
+      "The general mechanism: find a pattern in past data, apply it to a new case",
+      "Prediction quality: predictions carry uncertainty, and some are better than others",
+      "Everyday predictions from data: weather forecasts, delivery estimates, recommendations",
+      "Limits of prediction: patterns can break; the future is not guaranteed to repeat the past"
+    ],
+    "supporting": [
+      "Probability as the language of forecast uncertainty (probability of precipitation)",
+      "Regression as a family of techniques for predicting numeric values",
+      "Quality bar depends on the use (recommendations vs safety-critical decisions)"
+    ],
+    "outOfScope": [
+      "Machine-learning-basics (own sibling topic): how machines learn patterns",
+      "Correlation (own sibling topic): correlation versus causation",
+      "Training-versus-testing (own sibling topic): how prediction quality is measured",
+      "Overfitting (own sibling topic)",
+      "Supervised-learning details, model-building workflows, tool-specific practice"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Prediction in data work means using patterns found in past data to estimate values not yet observed, whether future events or unseen cases.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["gcp-what-is-predictive-analytics", "elements-of-ai-machine-learning"],
+      "status": "supported"
+    },
+    {
+      "claim": "Predictive analytics uses historical data, statistical modeling, and machine learning to answer the question of what might happen next, identifying patterns in historic and current data to predict behaviors seconds, days, or even years into the future.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["gcp-what-is-predictive-analytics"],
+      "status": "supported"
+    },
+    {
+      "claim": "Prediction and explanation are separate goals: linear models can be used for prediction or for describing the relationship between two variables, and a model can estimate an outcome without accounting for why it occurs.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["openintro-ims-linear-regression-slr"],
+      "status": "supported"
+    },
+    {
+      "claim": "The general mechanism of prediction is to learn a pattern from past examples and then apply it to new cases to produce an estimate.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["gcp-what-is-predictive-analytics", "elements-of-ai-machine-learning"],
+      "status": "supported"
+    },
+    {
+      "claim": "Predictions are estimates rather than exact values: a fitted model predicts an average outcome for a given input, and other factors outside the model affect any single real case.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["openintro-ims-linear-regression-slr"],
+      "status": "supported"
+    },
+    {
+      "claim": "Forecasters express uncertainty explicitly: the National Weather Service probability of precipitation states the probability that a forecast point receives at least 0.01 inch of rain, so a 40 percent chance of rain is a statement of uncertainty, not of duration or area.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nws-explaining-probability-of-precipitation"],
+      "status": "supported"
+    },
+    {
+      "claim": "Everyday predictions from data include weather forecasts, delivery and inventory forecasting, fraud detection, maintenance forecasting (predicting equipment failure before it occurs), and recommendations of what a user will like.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["gcp-what-is-predictive-analytics", "elements-of-ai-machine-learning", "nws-explaining-probability-of-precipitation"],
+      "status": "supported"
+    },
+    {
+      "claim": "The acceptable quality of a prediction depends on its use: an error rate acceptable for suggesting a song a user may like would be unacceptable for safety-critical applications.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["elements-of-ai-machine-learning"],
+      "status": "supported"
+    },
+    {
+      "claim": "Extrapolation, applying a model to values outside the range of the data it was built from, is an unreliable bet because the pattern may not hold where it was never observed.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["openintro-ims-linear-regression-slr"],
+      "status": "supported"
+    },
+    {
+      "claim": "Prediction quality depends on the data and the pattern: better data, stronger patterns, and patterns that hold up when checked against new cases yield better predictions.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["gcp-what-is-predictive-analytics", "openintro-ims-linear-regression-slr"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether prediction requires understanding causes.",
+      "positions": [
+        "Some presentations treat a useful model as one that reveals why an outcome happens.",
+        "OpenIntro IMS and common practice treat prediction and description/explanation as separate uses of a model; a model can predict from association alone without causal understanding."
+      ],
+      "resolution": "The lesson teaches prediction and explanation as distinct goals and notes that cause-seeking belongs to the correlation sibling topic; no claim of causal understanding is required for a prediction."
+    },
+    {
+      "issue": "How much the past can be trusted to repeat itself.",
+      "positions": [
+        "Forecasting practice (weather climatology, business forecasting) assumes patterns persist into the near future.",
+        "OpenIntro IMS warns that extrapolating beyond observed data is an unreliable bet, and conditions can change in ways the data never showed."
+      ],
+      "resolution": "The lesson states both sides: predictions are useful because patterns usually persist, and limited because patterns can break; the extrapolation warning is attributed to the textbook."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "Generic draft boilerplate: \"Prediction is a foundational concept in Data Science & Ai Literacy\" (no source support, generic phrasing).",
+    "Generic draft boilerplate: \"A college-level explanation names the concept, describes its parts, and shows how those parts work together\" (no substance).",
+    "Draft analogy \"Think of prediction as a label on a toolbox drawer\" (no factual content; replaced with a tide-table analogy with stated limits).",
+    "Draft vocabulary definitions describing terms as \"a foundational Data Science & Ai Literacy concept covered in this lesson\" (circular)."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic draft boilerplate with a source-verified treatment: definition of prediction, prediction vs explanation, two-step mechanism, uncertainty, everyday examples, and limits.",
+    "Replaced the toolbox-drawer analogy with a tide-table analogy that includes an explicit analogyLimits statement.",
+    "Replaced the draft's three generic questions with five source-supported items with keys spread across A/B/C/D.",
+    "Removed any implication that predictions are guarantees; the lesson consistently frames them as estimates with uncertainty.",
+    "Kept correlation, machine-learning-basics, training-versus-testing, and overfitting content out of scope, referencing sibling topics by name only."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "gcp-what-is-predictive-analytics",
+      "title": "What is predictive analytics?",
+      "provider": "Google Cloud",
+      "url": "https://cloud.google.com/learn/what-is-predictive-analytics",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. Supports: predictive analytics uses historical data, statistical modeling, and machine learning to answer 'What might happen next?'; identifying patterns in historic and current data to predict behaviors seconds, days, or even years into the future; the workflow (define problem, acquire and organize data, pre-process, develop models, validate and deploy); regression/decision trees/neural networks as techniques; use cases including fraud detection, operational improvement (inventory forecasting), and maintenance forecasting (predicting equipment failure before it occurs). Facts synthesized into original prose; no page wording reproduced."
+    },
+    {
+      "id": "nws-explaining-probability-of-precipitation",
+      "title": "Explaining 'Probability of Precipitation'",
+      "provider": "National Weather Service, NOAA (Peachtree City/Atlanta forecast office)",
+      "url": "https://www.weather.gov/ffc/pop",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. Government work; not subject to copyright in the United States",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. Supports: the National Weather Service routinely includes a PoP (probability of precipitation) statement in forecasts; the PoP describes the probability that the forecast point receives at least 0.01 inch of rain; it is not a statement about proportion of time or area. Used for the everyday weather-forecast example and the uncertainty claim; example phrasing is original."
+    },
+    {
+      "id": "openintro-ims-linear-regression-slr",
+      "title": "Introduction to Modern Statistics (2e), Chapter 7: Linear regression with a single predictor",
+      "provider": "OpenIntro (openintro.org)",
+      "url": "https://openintro-ims.netlify.app/model-slr.html",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live on 2026-08-21. Supports: linear models can be used for prediction or to describe the relationship between two numerical variables; predictions from a fitted model are estimates, e.g. an average head length predicted for possums of a given total length, and family-income-based aid predictions are imperfect because other factors play a role; section 7.2.4 'Extrapolation is treacherous' — applying a model estimate to values outside the realm of the original data is extrapolation, 'an unreliable bet that the approximate linear relationship will be valid in places where it has not been analyzed.' The possum and Elmhurst examples are referenced conceptually, not reproduced."
+    },
+    {
+      "id": "elements-of-ai-machine-learning",
+      "title": "Elements of AI (University of Helsinki), Chapter 4: Machine learning",
+      "provider": "University of Helsinki / Reaktor",
+      "url": "https://course.elementsofai.com/4",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live on 2026-08-21 via the chapter content served at course.elementsofai.com/4 (Gatsby page-data JSON endpoint). Supports: supervised learning as being given an input and predicting the correct output or label, learned from labeled examples so the algorithm can independently produce answers for new inputs; regression as predicting a numeric outcome (examples: clicks on an ad, traffic accidents, real-estate prices); the quality bar depending on use — an accuracy that is fine for predicting whether you will like a new song would be unacceptable for safety-critical systems. Lesson prose is original; the ad-click and song examples are referenced conceptually."
+    }
+  ]
+}

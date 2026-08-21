@@ -1,0 +1,175 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:supervised-learning",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "What supervised learning is: machine learning from labeled examples that carry known answers",
+      "The two main tasks: classification (sorting into categories) and regression (predicting a number)",
+      "The supervised learning loop: study labeled examples, learn the pattern, predict labels for new cases",
+      "Where supervised learning appears: email filtering, medical diagnosis support, price prediction",
+      "Why good labels matter: labels come from human effort, and bad labels produce bad learning"
+    ],
+    "supporting": [
+      "Features as inputs and labels as answers (referenced; features-and-labels has its own lesson)",
+      "The human effort and cost behind creating labels",
+      "The distinction from unsupervised learning (referenced; a separate topic)"
+    ],
+    "outOfScope": [
+      "Unsupervised learning and clustering (own topic: unsupervised-learning)",
+      "Features and labels in depth (own topic: features-and-labels)",
+      "Training-versus-testing data splits and evaluation metrics (own topic: training-versus-testing)",
+      "Machine learning fundamentals and the ML lifecycle (own topic: machine-learning-basics)",
+      "Specific algorithms (linear regression, SVM, decision trees, neural networks)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Supervised learning is a machine learning approach that trains on labeled datasets, examples that pair inputs (features) with known correct outputs (labels).",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-supervised-learning",
+        "gcloud-what-is-supervised-learning",
+        "mslearn-fundamentals-machine-learning"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Supervised learning tasks divide into two main kinds: classification, which predicts a categorical label, and regression, which predicts a numeric value.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-supervised-learning",
+        "gcloud-what-is-supervised-learning",
+        "mslearn-fundamentals-machine-learning"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Classification sorts cases into categories; the spam filter that predicts whether an email is spam or not is the standard example.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "gcloud-what-is-supervised-learning",
+        "ibm-what-is-supervised-learning"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Regression predicts a number; examples include property selling prices, salaries, and sales revenue forecasts.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "mslearn-fundamentals-machine-learning",
+        "gcloud-what-is-supervised-learning",
+        "ibm-what-is-supervised-learning"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The supervised learning loop: train the model on labeled examples so it learns the relationship between features and labels, then predict labels for new, unseen cases, refining when predictions are wrong.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "gcloud-what-is-supervised-learning",
+        "mslearn-fundamentals-machine-learning",
+        "ibm-what-is-supervised-learning"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Labels are created by human effort, through annotation or measurement, and labeling data takes a lot of time and effort.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-supervised-learning"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Supervised learning is used in email spam filtering, financial risk assessment (such as predicting loan default), medical diagnosis support (such as flagging diabetes risk from clinical metrics), and price prediction.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "gcloud-what-is-supervised-learning",
+        "mslearn-fundamentals-machine-learning",
+        "ibm-what-is-supervised-learning"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Logistic regression sounds like a regression task but is used for classification.",
+      "positions": [
+        "Microsoft Learn notes that despite its name, logistic regression is a classification technique that predicts probabilities of class membership",
+        "IBM lists logistic regression among classification algorithms, used for binary classification such as spam identification"
+      ],
+      "resolution": "The lesson never names algorithms, so the naming trap does not surface; all three sources agree on the high-level classification-versus-regression split the lesson teaches."
+    },
+    {
+      "issue": "How large a dataset supervised learning requires.",
+      "positions": [
+        "IBM emphasizes that labeling data takes a lot of time and effort, implying label cost is the bottleneck",
+        "Google Cloud describes analyzing a large dataset of labeled training pairs"
+      ],
+      "resolution": "The lesson makes no dataset-size claims; it states only that many labeled examples are used and that labels require human effort."
+    },
+    {
+      "issue": "Whether medical use of supervised learning should be described as diagnosis.",
+      "positions": [
+        "Microsoft Learn frames binary classification examples such as predicting whether a patient is at risk for diabetes from clinical metrics",
+        "Google Cloud lists healthcare among the fields where supervised learning is widely used"
+      ],
+      "resolution": "The lesson carefully describes medical use as decision support, flagging patients who may be at risk so a clinician reviews, not as autonomous diagnosis."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's boilerplate ('Supervised Learning is a foundational concept in Data Science & Ai Literacy...') — generic phrasing with no source support.",
+    "The generated draft's toolbox-drawer description ('Think of supervised learning as a label on a toolbox drawer') — a generic analogy that does not describe labeled-example learning.",
+    "The generated draft's vocabulary entries ('context', 'evidence', 'application') that define generic study words rather than supervised learning terms."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire generated draft (in30Seconds, whyItMatters, objectives, college version, vocabulary, eli10, worked example, mistakes, question bank) with original prose about learning from labeled examples.",
+    "Rewrote the question bank: five original questions with keys verified against the evidence (keys at A, D, B, C, A; no answer slot used more than twice).",
+    "Anchored every factual claim to at least one of the three sources read live on 2026-08-21 (IBM, Google Cloud, Microsoft Learn)."
+  ],
+  "rightsIssues": [
+    "All three sources are vendor documentation pages under standard copyright; none explicitly grants reuse rights, so all are classified REFERENCE_ONLY and no source wording is reproduced in the lesson."
+  ],
+  "sourceRecords": [
+    {
+      "id": "gcloud-what-is-supervised-learning",
+      "title": "What is supervised learning?",
+      "provider": "Google Cloud",
+      "url": "https://cloud.google.com/discover/what-is-supervised-learning",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21 (the page moved from /learn/ to /discover/; the /learn/ URL returns 404). Supports: supervised learning as a category of machine learning that uses labeled datasets; features as inputs and labels as correct outputs; the training loop of analyzing labeled pairs and then predicting on new data; classification as predicting categorical labels with the spam filter as the classic example; regression as predicting continuous values with a salary-from-work-experience example; real-world uses in risk assessment, fraud detection, image classification, and recommendations. Facts synthesized into original lesson prose; no wording reproduced."
+    },
+    {
+      "id": "ibm-what-is-supervised-learning",
+      "title": "What is supervised learning?",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/think/topics/supervised-learning",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21 (article body extracted from the page's server-rendered HTML; page last modified 2026-03-02). Supports: supervised learning as a machine learning technique that uses labeled datasets to train models to identify patterns; labeled datasets as sample data points plus correct outputs (ground truth); classification as sorting data into categories (spam identification, image classification); regression as predicting continuous values (sales revenue, financial planning); the explicit statement that labeling data takes a lot of time and effort; the supervised-versus-unsupervised distinction. Facts synthesized into original lesson prose; no wording reproduced."
+    },
+    {
+      "id": "mslearn-fundamentals-machine-learning",
+      "title": "Introduction to Machine Learning Concepts (Microsoft Learn training module: fundamentals-machine-learning)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21: module landing page plus units 3-types-of-machine-learning, 4-regression, and 5-binary-classification. Supports: supervised machine learning defined as training data that includes both feature values and known label values, used to predict unknown labels for future cases; the train-evaluate-refine training loop; regression as predicting a numeric label (property selling price from size, bedrooms, location); classification as predicting a categorical label; binary classification examples including predicting diabetes risk from clinical metrics and loan default from income and credit history. Facts synthesized into original lesson prose; no wording reproduced."
+    }
+  ]
+}

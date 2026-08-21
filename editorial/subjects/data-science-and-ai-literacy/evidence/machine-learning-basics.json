@@ -1,0 +1,228 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:machine-learning-basics",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "What machine learning is: programs that improve at a task by learning patterns from examples rather than following hand-written rules (attributed to sources)",
+      "The three ingredients of a machine-learning setup: data, a task, and a measure of improvement (named)",
+      "Learning versus programming: human-written rules versus patterns found by the program, with an original spam-filter example",
+      "The two big families, named only: supervised learning and unsupervised learning (details owned by sibling topics)",
+      "A simple mental model: training = fitting a pattern; using = applying it to new cases (training-versus-testing referenced only)",
+      "Where machine learning shows up: recommendations, translation, medical-imaging assistance, fraud detection (sourced examples)",
+      "Machine learning is not magic: garbage in, garbage out; models reflect their training data (bias referenced only)"
+    ],
+    "supporting": [
+      "Machine learning as a subset of artificial intelligence; terminology conflation",
+      "Arthur Samuel's 1959 checkers program as the origin of the term",
+      "Training described as a fitting process with error measurement (loss function)",
+      "Literacy framing: free university courses teach AI/ML concepts to non-experts without math or programming"
+    ],
+    "outOfScope": [
+      "Supervised learning mechanics (supervised-learning owns it)",
+      "Unsupervised learning mechanics (unsupervised-learning owns it)",
+      "Training-versus-testing methodology and evaluation (training-versus-testing owns it)",
+      "Bias in data and models (bias owns it; referenced only for the 'garbage in, garbage out' principle)",
+      "Generative AI (generative-ai owns it)",
+      "Features and labels mechanics (features-and-labels owns it)",
+      "Model internals and algorithms (models owns it)",
+      "Data cleaning and data quality fixes (data-cleaning owns it)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Machine learning is a subset of artificial intelligence in which programs learn the patterns in training data and make accurate inferences about new data without explicit, hard-coded instructions.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-machine-learning",
+        "gc-what-is-machine-learning"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Every machine-learning setup involves three ingredients: data to learn from, a task to get better at, and a way to measure improvement (such as counting errors).",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "ibm-what-is-machine-learning",
+        "gc-what-is-machine-learning"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Machine learning differs from conventional programming: a rules-based system needs people to write accurate criteria in advance, while a machine-learning system discovers the patterns itself from a dataset of examples.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-machine-learning"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Spam filtering illustrates the distinction: a rules-based filter requires manually devised detection criteria, whereas a machine-learned filter is trained on sample emails and learns to identify spam from the examples.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-machine-learning"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Supervised learning uses labeled training data in which the output is known, while unsupervised learning uses unlabeled data and finds patterns, such as groups, on its own.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "gc-what-is-machine-learning",
+        "ibm-what-is-machine-learning"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Training is the fitting process in which the algorithm adjusts the model to the data (measuring errors as it goes), and using the trained model means applying the fitted pattern to new data.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "gc-what-is-machine-learning",
+        "ibm-what-is-machine-learning"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Machine learning is used in recommendations and personalization, transcription and translation, healthcare diagnostics (including computer vision on medical images and predicting disease from patient records), and fraud detection.",
+      "claimType": "CURRENT",
+      "sourceIds": [
+        "gc-what-is-machine-learning",
+        "ibm-what-is-machine-learning",
+        "ms-ml4b-intro-to-ml"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A model's quality is bounded by its training data: poor, noisy, or unrepresentative data leads to poor or untrustworthy outputs, so machine learning is only as good as the data it is fed.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "gc-what-is-machine-learning",
+        "ms-ml4b-intro-to-ml",
+        "nist-ai-risk-management-framework"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The term machine learning is often attributed to Arthur Samuel's 1959 paper describing a checkers program that learned to play better than the person who wrote it.",
+      "claimType": "HISTORICAL",
+      "sourceIds": [
+        "ibm-what-is-machine-learning"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Free online courses such as the University of Helsinki's Elements of AI teach the basics of artificial intelligence and machine learning to non-experts without complicated math or programming.",
+      "claimType": "CURRENT",
+      "sourceIds": [
+        "elements-of-ai"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "What 'learning' means and how broadly the term is applied.",
+      "positions": [
+        "Google Cloud and IBM define machine learning operationally: performance improves on a task through experience with data, without explicit programming.",
+        "The same vendors note that 'machine learning' and 'artificial intelligence' are frequently used interchangeably in popular writing, and that rule-based systems are also called AI."
+      ],
+      "resolution": "The lesson defines learning operationally (measurable improvement on a task through examples) and explicitly warns that the words AI and machine learning are often conflated in marketing, while keeping rule-based AI out of the definition of machine learning."
+    },
+    {
+      "issue": "How many families of machine learning to name.",
+      "positions": [
+        "Google Cloud presents four kinds of models: supervised, unsupervised, semi-supervised, and reinforcement learning.",
+        "IBM organizes the field into supervised, unsupervised, self-supervised, semi-supervised, and reinforcement learning."
+      ],
+      "resolution": "The lesson names only the two big families, supervised and unsupervised, notes that other families exist, and defers all mechanics to the sibling topics supervised-learning and unsupervised-learning."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's claim that the topic is 'a foundational concept in Data Science & Ai Literacy' was boilerplate with no verifiable content and was discarded.",
+    "The draft's toolbox-drawer framing of machine learning was unsupported and replaced with a handwriting-recognition analogy.",
+    "The draft's vocabulary entries ('context', 'evidence', 'application') did not describe machine-learning concepts and were replaced.",
+    "The draft's two college-version subsections were generic reasoning advice, not machine-learning content, and were rebuilt from sources.",
+    "The draft's three learning objectives were template phrasing ('Define machine learning basics using course-appropriate language') and were replaced with topic-specific objectives."
+  ],
+  "correctionsNeeded": [
+    "Replaced all generic draft boilerplate with sourced, topic-specific content.",
+    "Added the sourced definition of machine learning (IBM, Google Cloud) and the 'learning from examples, not hand-written rules' framing.",
+    "Added the three-ingredient framing (data, task, measure of improvement) synthesized from IBM's central-premise statement and Google Cloud's fitting/error-measurement description.",
+    "Added an original spam-filter example contrasting hand-written rules with learning from examples (substance supported by IBM).",
+    "Named the two big families, supervised and unsupervised, with the labels-versus-no-labels distinction (Google Cloud, IBM), referencing sibling topics.",
+    "Added the training/using mental model with the fitting-process language (Google Cloud) and inference-on-new-data framing (IBM).",
+    "Added sourced application areas: recommendations, translation, medical-imaging/healthcare diagnostics, fraud detection.",
+    "Added the 'garbage in, garbage out' and data-quality limits section (Google Cloud, Microsoft, NIST AI RMF).",
+    "Rebuilt the question bank to exactly five four-option items with answer keys spread A, C, D, B, A (two A, one each of B, C, D)."
+  ],
+  "rightsIssues": [
+    "All sources used as REFERENCE_ONLY: no source prose reproduced; all lesson prose and examples are original. NIST AI RMF 1.0 is a U.S. government work (public domain in the United States); vendor pages (Google Cloud, IBM, Microsoft) carry no explicit reuse license, so facts were synthesized and wording was not adapted."
+  ],
+  "sourceRecords": [
+    {
+      "id": "gc-what-is-machine-learning",
+      "title": "What is Machine Learning? Types and uses",
+      "provider": "Google Cloud",
+      "url": "https://cloud.google.com/learn/what-is-machine-learning",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl with a browser user-agent on 2026-08-21. Supports: machine learning as systems that learn and improve without being explicitly programmed; training as optimizing the model to predict the expected outcome with a loss function measuring errors; the fitting process; supervised learning (labeled training data, output known) and unsupervised learning (unlabeled data, groups found by attributes); applications including fraud detection, personalization and recommendations, and transcription and translation; and the warning that machine learning is often only as good as the data it is fed. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "ibm-what-is-machine-learning",
+      "title": "What is Machine Learning?",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/topics/machine-learning",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl with a browser user-agent on 2026-08-21. Supports: machine learning as the subset of AI whose algorithms learn the patterns of training data and make accurate inferences about new data without explicit, hard-coded instructions; the central premise of optimizing performance on a dataset of tasks through model training; the spam-filter contrast (rules-based filters need manually devised criteria; machine learning needs an algorithm and a dataset of sample emails); clustering of unlabeled data for fraud detection; e-commerce recommendation engines; computer vision in healthcare diagnostics; the ML-versus-AI terminology distinction; and the attribution of the term to Arthur Samuel's 1959 checkers paper. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "ms-ml4b-intro-to-ml",
+      "title": "ML for Beginners — Introduction to machine learning",
+      "provider": "Microsoft Learn (GitHub curriculum)",
+      "url": "https://github.com/microsoft/ML-For-Beginners/tree/main/1-Introduction/1-intro-to-ML",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read the lesson README (via raw.githubusercontent.com) on 2026-08-21. Supports: machine learning as automated systems that learn hidden patterns from data to aid decisions; the contrast between machine learning and hard-coded rules-based engines; the statement that high-quality data improves model performance while poor or noisy data leads to inaccurate predictions; and applications such as predicting the likelihood of disease from a patient's medical history or reports. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "nist-ai-risk-management-framework",
+      "title": "AI Risk Management Framework (AI RMF)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Canonical landing page registered (existing registry id reused with identical URL); the NIST AI RMF 1.0 document (NIST.AI.100-1, https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf) was read via its PDF text layer on 2026-08-21. Supports: the data used to build an AI system may not be a true or appropriate representation of the context or intended use, and harmful bias and other data quality issues can affect AI system trustworthiness; AI systems depend on data for training tasks. Used for the 'machine learning is not magic / models reflect their training data' claims. U.S. government work; facts synthesized."
+    },
+    {
+      "id": "elements-of-ai",
+      "title": "Elements of AI — A free online introduction to artificial intelligence for non-experts",
+      "provider": "University of Helsinki & MinnaLearn",
+      "url": "https://www.elementsofai.com/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl with a browser user-agent on 2026-08-21. Supports: the Elements of AI course series is created by MinnaLearn and the University of Helsinki, is free, is aimed at a broad audience, teaches what AI is and what can and cannot be done with it, and requires no complicated math or programming. Used for the literacy framing of the lesson only; the course's machine-learning chapter is script-rendered and was not directly readable, so no chapter-specific claims are made."
+    }
+  ]
+}

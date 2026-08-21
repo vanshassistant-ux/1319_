@@ -1,0 +1,208 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:correlation",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "what correlation means: two variables moving together, so that when one changes the other tends to change in a predictable way",
+      "positive vs negative correlation, each with an original example",
+      "strength of correlation: strong vs weak, described by how closely the pattern holds, without formulas",
+      "scatterplots as the standard way to see a correlation (visualization is a sibling topic, referenced only)",
+      "correlation is not causation, with the ice-cream-sales/drowning-rates summer example and the third-variable problem",
+      "alternative explanations: third variable, coincidence, reverse causation, each named",
+      "why correlation literacy matters in data science and AI: models find correlations; deciding what they mean is human work"
+    ],
+    "supporting": [
+      "bivariate data: two variables recorded on the same cases, kept paired",
+      "linear relationships and the straight-line pattern correlation measures",
+      "lurking/confounding variables as a form of third variable"
+    ],
+    "outOfScope": [
+      "prediction and what models do with correlations (own sibling topic)",
+      "visualization design, chart-building, and chart-reading practice (own sibling topic)",
+      "sampling and survey methodology (own sibling topic)",
+      "regression, formulas, and hand computation of correlation coefficients",
+      "numeric cutoffs for calling a correlation strong"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Correlation describes the strength and direction of the linear relationship between two variables; it takes values on a scale from -1 to +1, where the ends mark perfect patterns in opposite and same directions and zero marks no straight-line pattern.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openintro-ims-correlation"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A positive correlation means the variables move in the same direction, high values of one occurring with high values of the other; a negative correlation means they move in opposite directions, high values of one occurring with low values of the other.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "onlinestatbook-bivariate-data",
+        "openstax-intro-stats-scatter-plots"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The strength of a correlation is how closely the points cluster around the trend: tightly clustered points indicate a strong relationship, widely scattered points a weak one.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "onlinestatbook-bivariate-data",
+        "openstax-intro-stats-scatter-plots"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A scatterplot plots one point per observation, positioned by its two variable values on two axes, and is the standard way to reveal whether and how two variables are related; relationships appear as non-random structure in the plot.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nist-ehandbook-scatter-plot",
+        "openstax-intro-stats-scatter-plots",
+        "onlinestatbook-bivariate-data"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "No statistical procedure, including the scatterplot and correlation measures, can prove cause and effect; establishing causation requires reasoning beyond statistics.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "nist-ehandbook-scatter-plot"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Ice cream sales and drowning rates both rise in summer; the correlation does not mean ice cream causes drowning, because warm weather is a third variable that drives both.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "wikipedia-correlation-not-causation"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A third variable (also called a lurking or confounding variable) can affect both observed variables and create a correlation that neither one causes.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "wikipedia-correlation-not-causation"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Reverse causation is the situation in which the apparent direction of a relationship is backward, so that the second variable actually influences the first.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "wikipedia-correlation-not-causation"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A correlation can also be coincidental: two unrelated series moving together by chance.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "wikipedia-correlation-not-causation"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Correlation measures straight-line patterns, so a strong nonlinear relationship can produce a weak correlation; the chart should be inspected rather than relying on the number alone.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openintro-ims-correlation"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "How strong a correlation must be before it is called \"strong\" has no universal cutoff; authoritative sources describe strength relative to how tightly points cluster, while some introductory materials offer informal rule-of-thumb ranges.",
+      "positions": [
+        "OpenIntro IMS and the OnlineStatBook describe strength qualitatively in terms of clustering around the trend without fixed thresholds",
+        "Some introductory materials suggest informal benchmarks (e.g., rough numeric bands) for strong/moderate/weak",
+        "NIST e-Handbook presents scatter-plot patterns (strong positive, strong negative, no relationship) without numeric cutoffs"
+      ],
+      "resolution": "The lesson describes strength qualitatively (tight versus loose clustering) and explicitly avoids numeric cutoffs, which keeps it accurate at the literacy level."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft called correlation \"a foundational concept in Data Science & Ai Literacy\" without defining it — boilerplate, discarded",
+    "The draft defined correlation circularly as \"a foundational Data Science & Ai Literacy concept covered in this lesson\" — discarded",
+    "The draft asserted correlation \"helps students organize information\" with no statistical content — discarded",
+    "The draft's analogy \"label on a toolbox drawer\" conveyed nothing about variables moving together — discarded"
+  ],
+  "correctionsNeeded": [
+    "Replaced generic boilerplate with source-verified definitions of correlation, direction, and strength",
+    "Added the correlation-is-not-causation core with the ice-cream/drowning third-variable example and the named alternative explanations (third variable, reverse causation, coincidence)",
+    "Kept the lesson at literacy level: no formulas, no computation workflows, no numeric strength cutoffs",
+    "Added the scatterplot as the standard view of a correlation, with a pointer to the visualization sibling topic",
+    "Anchored the why-it-matters section in the verified principle that models find patterns while interpreting them is human work"
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "nist-ehandbook-scatter-plot",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods — 1.3.3.26. Scatter Plot",
+      "provider": "NIST / SEMATECH (U.S. Department of Commerce)",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/scatterp.htm",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21 (Section 1.3.3.26). Supports: a scatter plot reveals relationships or association between two variables, which manifest as any non-random structure in the plot; scatter plots are the cornerstone EDA tool for uncovering relationships; no statistical procedure, scatter plot included, proves cause-and-effect, and such proof is beyond the realm of statistics. Facts synthesized; no page wording reproduced."
+    },
+    {
+      "id": "openintro-ims-correlation",
+      "title": "OpenIntro — Introduction to Modern Statistics (2e), Section 7.1: Fitting a line, residuals, and correlation",
+      "provider": "OpenIntro (openintro.org)",
+      "url": "https://openintro-ims.netlify.app/model-slr.html",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live web edition 2026-08-21 (Chapter 7, Section 7.1.4). Supports: correlation takes values between -1 and 1 and describes the strength and direction of the linear relationship between two variables; strong positive relationships are near +1, strong negative near -1, no apparent linear relationship near zero; correlation is unitless; nonlinear trends can produce correlations that do not reflect the strength of the relationship; correlation does not specify which variable is explanatory and which is outcome. No source prose reproduced."
+    },
+    {
+      "id": "onlinestatbook-bivariate-data",
+      "title": "Online Statistics Education: An Interactive Multimedia Course of Study — Describing Bivariate Data: Introduction",
+      "provider": "Rice University (Rudy Guerra and David M. Lane)",
+      "url": "https://onlinestatbook.com/2/describing_bivariate_data/intro.html",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read directly 2026-08-21 (Chapter 4). Supports: bivariate data pairs two quantitative variables per individual; when Y increases as X increases the association is positive, when Y decreases as X increases it is negative; points clustering along a line indicate a linear relationship; strength is visible in how closely points cluster; pairing is lost when variables are summarized separately. No explicit license statement found on the page; used as reference only, prose fully original."
+    },
+    {
+      "id": "openstax-intro-stats-scatter-plots",
+      "title": "Introductory Statistics, Section 12.2: Scatter Plots",
+      "provider": "OpenStax (Rice University)",
+      "url": "https://openstax.org/books/introductory-statistics/pages/12-2-scatter-plots",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://openstax.org/subject-terms",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21 (Section 12.2). Supports: the scatter plot is the most common way to display the relation between two variables; a scatter plot shows the direction of a relationship (high values with high values, or high values with low values); strength is judged by how closely the points cluster. Facts synthesized; no source wording reproduced."
+    },
+    {
+      "id": "wikipedia-correlation-not-causation",
+      "title": "Correlation does not imply causation",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Tier D reference used for the classic ice-cream-sales/drowning-rates illustration (summer heat as the common cause) and the named alternative explanations: third factor (common-cause variable, lurking/confounding variable), reverse causation, and coincidence. Causal-inference claims in the lesson are additionally anchored to the NIST e-Handbook statement that no statistical procedure proves cause and effect. Used as reference only; lesson prose and other examples are original."
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:unsupervised-learning",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "Unsupervised learning as machine learning that finds patterns in data without pre-existing answers or labels",
+      "Clustering as the main idea: grouping similar items together",
+      "Other unsupervised tasks: anomaly detection (finding unusual items) and dimensionality reduction (reducing many features to fewer)",
+      "The one-sentence distinction from supervised learning: labels vs. no labels",
+      "Where unsupervised learning appears: customer segmentation, recommendation systems, organizing documents",
+      "The caveat: patterns found may or may not be meaningful; human judgment decides"
+    ],
+    "supporting": [
+      "Association rule mining as a further unsupervised task ('frequently bought together' patterns)",
+      "Unlabeled data as the input to unsupervised learning",
+      "Anomaly detection's use in fraud detection"
+    ],
+    "outOfScope": [
+      "How supervised learning works in detail (sibling topic supervised-learning owns it)",
+      "Features and labels as formal concepts (sibling topic features-and-labels owns them)",
+      "Machine learning fundamentals and model training (sibling topic machine-learning-basics owns them)",
+      "Specific algorithms such as k-means or PCA and their mathematics"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Unsupervised learning is a type of machine learning that analyzes unlabeled data and discovers patterns on its own, without pre-existing answers or human-provided labels.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["gc-what-is-unsupervised-learning", "ibm-what-is-unsupervised-learning"],
+      "status": "supported"
+    },
+    {
+      "claim": "The main difference between supervised and unsupervised learning is the type of input data: supervised learning relies on labeled training data with known correct answers, while unsupervised learning works with unlabeled data.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["gc-what-is-unsupervised-learning"],
+      "status": "supported"
+    },
+    {
+      "claim": "Clustering is the most popular unsupervised learning approach; it breaks raw, unlabeled data into groups of similar items based on their similarities and differences.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["gc-what-is-unsupervised-learning", "ibm-what-is-unsupervised-learning"],
+      "status": "supported"
+    },
+    {
+      "claim": "Unsupervised learning is commonly used for customer segmentation, grouping customers by common traits or purchasing behavior to guide marketing and business strategy.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["gc-what-is-unsupervised-learning", "ibm-what-is-unsupervised-learning"],
+      "status": "supported"
+    },
+    {
+      "claim": "Anomaly detection is an unsupervised learning application that discovers data points that are atypical or unusual within a dataset, which can reveal fraud or other abnormal behavior.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["gc-what-is-unsupervised-learning"],
+      "status": "supported"
+    },
+    {
+      "claim": "Dimensionality reduction is an unsupervised technique that reduces the number of features, or dimensions, in a dataset, making large datasets easier to work with and visualize while preserving essential information.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["gc-what-is-unsupervised-learning", "ibm-what-is-unsupervised-learning"],
+      "status": "supported"
+    },
+    {
+      "claim": "Unsupervised learning is used to organize documents and news articles into categories when no category labels exist.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["gc-what-is-unsupervised-learning", "ibm-what-is-unsupervised-learning"],
+      "status": "supported"
+    },
+    {
+      "claim": "An unsupervised algorithm groups data but does not itself understand what the groups mean; people interpret the groupings and judge whether the patterns are meaningful and useful.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["gc-what-is-unsupervised-learning"],
+      "status": "supported"
+    },
+    {
+      "claim": "Association rule mining is an unsupervised task that finds items frequently purchased or occurring together, powering 'frequently bought together' style recommendations.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["gc-what-is-unsupervised-learning", "ibm-what-is-unsupervised-learning"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "How many main unsupervised task types there are: Google Cloud and IBM both enumerate three (clustering, association, dimensionality reduction), while many introductions present clustering alone as the core idea.",
+      "positions": [
+        "Google Cloud and IBM describe clustering, association rules, and dimensionality reduction as the three main unsupervised learning tasks",
+        "Introductory treatments often foreground clustering as the defining unsupervised idea"
+      ],
+      "resolution": "The lesson presents clustering as the main idea, names anomaly detection and dimensionality reduction as other tasks, and mentions association only briefly, which is consistent with both framings and with the no-math literacy level."
+    },
+    {
+      "issue": "Whether anomaly detection is a distinct unsupervised task type or an application of clustering.",
+      "positions": [
+        "Google Cloud lists anomaly detection among real-world examples of unsupervised learning",
+        "IBM's learning-methods index treats anomaly detection as its own unsupervised learning method"
+      ],
+      "resolution": "The lesson names anomaly detection as an unsupervised task without endorsing a strict taxonomy, so either framing supports the statement."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft called unsupervised learning 'a foundational concept in Data Science & AI Literacy' without explaining what it actually does",
+    "The draft defined 'unsupervised learning' circularly as 'a foundational Data Science & AI Literacy concept covered in this lesson'",
+    "The draft's toolbox-drawer and map-legend analogies implied unsupervised learning is a label or legend rather than a method for discovering structure"
+  ],
+  "correctionsNeeded": [
+    "Replaced generic draft boilerplate with a concrete definition: learning from unlabeled data without pre-existing answers",
+    "Added the labels-versus-no-labels one-sentence distinction from supervised learning",
+    "Added original examples: hardware-store shoppers grouped by purchase patterns, a bookstore's unlabeled purchase records, bank transactions for anomaly detection",
+    "Added the caveat that the algorithm does not understand the groups it finds and human judgment decides whether patterns are meaningful"
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "gc-what-is-unsupervised-learning",
+      "title": "What is unsupervised learning?",
+      "provider": "Google Cloud",
+      "url": "https://cloud.google.com/discover/what-is-unsupervised-learning",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21 (the older /learn/ URL returns 404; the /discover/ URL is the working canonical page). Supports: unsupervised learning as a type of machine learning that learns from data without human supervision and without labels; clustering as a technique that breaks unlabeled data into groups by similarity; customer segmentation and fraud detection as clustering applications; anomaly detection as finding atypical data points; dimensionality reduction as reducing the number of features; association rules powering 'frequently bought together' recommendations; the supervised-vs-unsupervised distinction being the type of input data (labeled vs unlabeled); and the statement that the algorithm does not itself understand the patterns, which people interpret. Facts synthesized into original prose; no page wording reproduced."
+    },
+    {
+      "id": "ibm-what-is-unsupervised-learning",
+      "title": "What is unsupervised learning?",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/think/topics/unsupervised-learning",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. Supports: unsupervised learning as machine learning that analyzes and clusters unlabeled datasets, discovering hidden patterns or groupings without human intervention; clustering as grouping unlabeled data by similarities or differences; customer segmentation and document clustering as applications; association rules and market-basket analysis powering recommendation engines; dimensionality reduction as reducing the number of features while preserving dataset integrity; and news-article categorization (Google News) as an application. Facts synthesized into original prose; no page wording reproduced."
+    }
+  ]
+}

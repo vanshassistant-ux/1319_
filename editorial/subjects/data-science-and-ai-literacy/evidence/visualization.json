@@ -1,0 +1,178 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:visualization",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "why we visualize: patterns and problems are easier to see than to read (pattern-recognition principle)",
+      "bar charts for categories, with an original example",
+      "line charts for change over time, with an original example",
+      "histograms for distributions, with an original example",
+      "scatterplots for two numerical variables, with an original example",
+      "misleading charts: truncated axes, cherry-picked ranges, 3D distortion, misleading scales (the 'lying with charts' caution)",
+      "choosing the right chart for the question: matching chart type to data type",
+      "chart basics for honesty: clear labels, honest scales, showing the full picture"
+    ],
+    "supporting": [
+      "visualization as the graphical heart of exploratory data analysis (sibling topic, referenced only)",
+      "axis-and-label reading as a data-literacy skill",
+      "secondary chart types (pie charts) mentioned only in passing"
+    ],
+    "outOfScope": [
+      "exploratory-data-analysis methods and workflow (own sibling topic)",
+      "correlation and causation (own sibling topic)",
+      "types of data taxonomy (own sibling topic)",
+      "tool-specific chart-making workflows (pandas, matplotlib, Tableau, Excel tutorials)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The primary goal of exploratory data analysis is to maximize insight into a data set, and graphical techniques are the main route to that insight: the NIST e-Handbook states that the 'feel' for a data set comes almost exclusively from graphical techniques, that graphics are irreplaceable, and that insight draws on human pattern-recognition abilities.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-ehandbook-eda-goals"],
+      "status": "supported"
+    },
+    {
+      "claim": "A histogram displays the shape of a distribution of a numerical variable by grouping values into intervals and drawing a bar for each interval's count; it is especially useful with many observations and reveals the shape, center, and spread of the data.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["openstax-intro-stats-2-2", "onlinestatbook-graphing-distributions", "openintro-ims-exploring-numerical"],
+      "status": "supported"
+    },
+    {
+      "claim": "Bar charts illustrate the frequencies of different categories, with one bar per category and the bar's height showing its count; they are the standard display for categorical data.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["onlinestatbook-graphing-distributions"],
+      "status": "supported"
+    },
+    {
+      "claim": "Line graphs are appropriate only when both axes display ordered values, and they are generally better than bar charts for comparing change over time; it is misleading to use a line graph when the horizontal axis contains merely qualitative categories.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["onlinestatbook-graphing-distributions"],
+      "status": "supported"
+    },
+    {
+      "claim": "A time series graph plots time increments on the horizontal axis and measured values on the vertical axis, with the points connected by straight lines in the order they occur.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["openstax-intro-stats-2-2"],
+      "status": "supported"
+    },
+    {
+      "claim": "A scatterplot provides a case-by-case view of data for two numerical variables: each point represents a single case, and the drift of the points shows how the two variables relate.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["openintro-ims-exploring-numerical"],
+      "status": "supported"
+    },
+    {
+      "claim": "Charts mislead through several named mechanisms: a truncated graph has an axis that does not start at zero and can create the impression of important change where there is little; graphs with omitted data remove the basis for a conclusion; a superfluous third dimension confuses readers through perspective; pictograms scaled in both height and width exaggerate differences because the eye reads area rather than height; and log scales used without clear labeling mislead readers.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["wikipedia-misleading-graph"],
+      "status": "supported"
+    },
+    {
+      "claim": "The idea that statistics and charts can be used to lie is a classic theme in statistics literacy, given its best-known popular form in Darrell Huff's 1954 book 'How to Lie with Statistics', and the 'lie factor' concept quantifies how much a graphic's visual effect exaggerates the change actually present in the data.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["wikipedia-misleading-graph"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Bar charts and histograms both use bars, which can blur the boundary between the two chart types.",
+      "positions": [
+        "Some treatments (OnlineStatBook) show bar charts carrying quantitative information such as percent increases and means, not only category counts.",
+        "The standard assignment taught here is that bar charts are for named categories while histograms group a continuous numerical scale into intervals; OpenStax describes histogram bars as contiguous boxes on a continuous scale."
+      ],
+      "resolution": "The lesson teaches the standard assignment — categories to bar charts, one numerical variable to histograms — while acknowledging that bar charts can carry numeric values such as counts; histograms are reserved for intervals along one numerical scale."
+    },
+    {
+      "issue": "Whether a truncated axis is always wrong.",
+      "positions": [
+        "Wikipedia's 'Misleading graph' article notes that truncated graphs are often discouraged and that studies show readers overestimate the differences even when told the axis is truncated.",
+        "Textbooks occasionally truncate an axis to save space or to show fine detail."
+      ],
+      "resolution": "The lesson presents a zero-based scale as the default honesty rule and requires a clear explanation whenever the scale does not start at zero, rather than declaring truncation never acceptable."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The machine-generated draft asserted that visualization is 'a foundational concept in Data Science & Ai Literacy' with no supporting evidence — discarded.",
+    "The draft's toolbox-drawer framing ('label on a toolbox drawer') and its abstract 'context/evidence/application' vocabulary carried no source support and were replaced by verified chart-type content.",
+    "The draft framed visualization as mainly 'organizing information'; the sources instead support a pattern-recognition principle, so the framing was replaced."
+  ],
+  "correctionsNeeded": [
+    "Replaced the boilerplate draft in full with a source-verified lesson.",
+    "Added the four workhorse chart types with original examples, verified against NIST, OpenIntro IMS, OnlineStatBook, and OpenStax.",
+    "Added the misleading-chart taxonomy (truncated axes, cherry-picked ranges, 3D distortion, misleading scales) with classic patterns, verified against the Wikipedia 'Misleading graph' article.",
+    "Added the chart-choice rule (match chart type to data type) and the honesty checklist (labels, scales, full picture).",
+    "Added visualization's role in exploratory data analysis as a reference to the sibling topic rather than teaching EDA itself."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "nist-ehandbook-eda-goals",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods — 1.1.4. What are the EDA Goals?",
+      "provider": "NIST / SEMATECH (U.S. Department of Commerce)",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section1/eda14.htm",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read the live section page 2026-08-21. States that the primary goal of EDA is to maximize the analyst's insight into a data set and its underlying structure; that the 'feel' for a data set comes almost exclusively from graphical techniques; that graphics are irreplaceable, with no quantitative analogues giving the same insight; and that insight draws on human pattern-recognition abilities. Supports the why-we-visualize principle and visualization's role in EDA. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "openintro-ims-exploring-numerical",
+      "title": "OpenIntro — Introduction to Modern Statistics: Exploring numerical data (Chapter 5)",
+      "provider": "OpenIntro (openintro.org)",
+      "url": "https://openintro-ims.netlify.app/explore-numerical.html",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read the live web edition 2026-08-21. Section 5.1 defines a scatterplot as a case-by-case view of data for two numerical variables in which each point represents a single case, with examples on county homeownership and loan data. Section 5.3 defines a histogram as binned counts drawn as bars, notes that higher bars show where the data are relatively more common, and discusses distribution shape (right-skewed loan interest rates). Facts synthesized; prose original."
+    },
+    {
+      "id": "onlinestatbook-graphing-distributions",
+      "title": "Online Statistics Education: An Interactive Multimedia Course of Study — Graphing Distributions (Chapter)",
+      "provider": "Rice University (David M. Lane et al.)",
+      "url": "https://onlinestatbook.com/2/graphing_distributions/graphing_distributions.html",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read the chapter's section pages live 2026-08-21 (bar charts, histograms, line graphs, graphing qualitative variables). Supports: bar charts illustrate the frequencies of different categories (iMac buyer example); histograms display the shape of a distribution via class intervals and are particularly useful with a large number of observations; line graphs are appropriate only when both axes display ordered values, are generally better than bar charts for comparing change over time, and are misleading when the x-axis holds merely qualitative variables. Facts synthesized; prose original."
+    },
+    {
+      "id": "openstax-intro-stats-2-2",
+      "title": "Introductory Statistics, Section 2.2: Histograms, Frequency Polygons, and Time Series Graphs",
+      "provider": "OpenStax (Rice University)",
+      "url": "https://openstax.org/books/introductory-statistics/pages/2-2-histograms-frequency-polygons-and-time-series-graphs",
+      "sourceType": "open-textbook",
+      "usage": "ATTRIBUTION_REQUIRED",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read the live textbook page 2026-08-21. Supports: a histogram consists of contiguous boxes with the horizontal axis labeled with what the data represents and the vertical axis labeled frequency or relative frequency; a histogram gives the shape, center, and spread of the data and readily displays large data sets (rule of thumb: use a histogram for data sets of 100 values or more); a time series graph plots time increments on the horizontal axis and measured values on the vertical axis, with points connected by straight lines in the order they occur. Facts synthesized; no passage reproduced."
+    },
+    {
+      "id": "wikipedia-misleading-graph",
+      "title": "Misleading graph",
+      "provider": "Wikipedia (Wikimedia Foundation)",
+      "url": "https://en.wikipedia.org/wiki/Misleading_graph",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Documents the named mechanisms of misleading charts: truncated graphs whose y-axis does not start at 0 can create the impression of important change where there is little; graphs with omitted data remove information from which to base a conclusion; a superfluous third dimension confuses readers because perspective makes equal values look different and three-dimensional scaling cubes the effect; pictograms scaled uniformly are misread by area, making differences appear squared; log scales used without clear labeling mislead; changing the y-axis maximum changes apparent growth. Also notes Darrell Huff's 1954 book 'How to Lie with Statistics' as an early popular treatment of misleading graphs and describes the lie factor concept. Tier D reference used for the misleading-chart taxonomy; facts synthesized into original examples."
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:exploratory-data-analysis",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "what exploratory data analysis is — the open-ended first look at data before formal modeling, attributed to John Tukey's framing",
+      "goals of EDA: spot errors, understand ranges and shapes, notice patterns, generate questions",
+      "tools of exploration: summary numbers (minimum, maximum, average, typical value, spread) and simple charts (histograms, scatter plots)",
+      "the explore-before-modeling principle",
+      "EDA versus confirmatory analysis: exploration finds hypotheses, confirmation tests them",
+      "what EDA is not: not proof, not cherry-picking (honesty principle)"
+    ],
+    "supporting": [
+      "history of EDA: Tukey's 1977 book Exploratory Data Analysis as the seminal work",
+      "the role of graphics in EDA",
+      "common analysis questions EDA is used to answer"
+    ],
+    "outOfScope": [
+      "chart design and visualization technique (visualization sibling topic)",
+      "correlation and causation (correlation sibling topic)",
+      "prediction and model building (prediction sibling topic)",
+      "outlier treatment and detection methods (outliers sibling topic)",
+      "formal statistical tests and hypothesis-testing machinery (confirmatory analysis, taught only as a contrast)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Exploratory data analysis (EDA) is an approach or philosophy of data analysis, not a fixed bundle of techniques: it postpones assumptions about what kind of model the data follow and lets the data itself reveal underlying structure.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["nist-ehandbook-eda-what", "tukey-1980-exploratory-confirmatory"],
+      "status": "supported"
+    },
+    {
+      "claim": "John Tukey's 1977 book Exploratory Data Analysis is the seminal work that established the EDA approach.",
+      "claimType": "HISTORICAL",
+      "sourceIds": ["nist-ehandbook-eda-what"],
+      "status": "supported"
+    },
+    {
+      "claim": "In the EDA sequence the analysis comes before the model — Problem, Data, Analysis, Model, Conclusions — whereas classical analysis imposes a model before analyzing; EDA's goal is to infer what model, if any, would be appropriate.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nist-ehandbook-eda-classical"],
+      "status": "supported"
+    },
+    {
+      "claim": "Common questions EDA is used to answer include what a typical value is, how the values spread, what shape the data takes, and whether variables relate to each other; the scatter plot is a broad-brushed technique that applies almost universally.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-ehandbook-eda-questions"],
+      "status": "supported"
+    },
+    {
+      "claim": "EDA relies heavily on simple graphical techniques such as histograms and scatter plots, which NIST describes as the shortest path to insight into a dataset.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-ehandbook-eda-questions", "nist-ehandbook-eda-graphics"],
+      "status": "supported"
+    },
+    {
+      "claim": "Exploring numerical data combines summary statistics (mean, median, minimum, maximum, measures of spread such as the standard deviation) with visualizations; box plots reach to the minimum and maximum values, and the median and quartiles give a robust sense of the typical value and spread.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["openintro-ims-exploring-numerical-data", "nist-ehandbook-eda-questions"],
+      "status": "supported"
+    },
+    {
+      "claim": "The primary goal of EDA is to maximize the analyst's insight into a dataset and its underlying structure, including detecting patterns and understanding what is and is not in the data.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-ehandbook-eda-goals"],
+      "status": "supported"
+    },
+    {
+      "claim": "Tukey argued that exploration and confirmation are both needed: ideas come from previous exploration, finding the question is often more important than finding the answer, and analysts should avoid multiplicity — patterns found by hunting through many possibilities can be coincidental, so exploratory findings need confirmatory testing.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["tukey-1980-exploratory-confirmatory", "nist-ehandbook-eda-classical"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Is EDA a set of techniques or an attitude?",
+      "positions": [
+        "The NIST e-Handbook notes most EDA techniques are graphical and catalogs specific techniques such as histograms, scatter plots, and box plots.",
+        "Tukey (1980) insists EDA is an attitude, a flexibility, and a reliance on display, NOT a bundle of techniques."
+      ],
+      "resolution": "Both sources agree simple graphics are central to EDA. The lesson teaches EDA as an open-minded approach that leans heavily on basic summary numbers and charts, which satisfies both framings."
+    },
+    {
+      "issue": "Can a pattern noticed during exploration be reported as a result?",
+      "positions": [
+        "Informal practice sometimes reports explored patterns directly as findings.",
+        "Tukey (1980) warns analysts to randomize and avoid multiplicity, and the NIST e-Handbook separates the analysis-first EDA sequence from the formal testing of classical analysis."
+      ],
+      "resolution": "The lesson states that exploration generates hypotheses that require confirmatory testing before they count as findings, and treats direct reporting of an explored pattern without confirmation as cherry-picking."
+    }
+  ],
+  "unsupportedExistingClaims": [],
+  "correctionsNeeded": [],
+  "rightsIssues": [
+    "NIST e-Handbook pages are U.S. government works; used as REFERENCE_ONLY with original prose only.",
+    "Tukey 1980 is a copyrighted journal article (The American Statistician); the abstract was read via an Internet Archive capture of the Taylor & Francis page and used as REFERENCE_ONLY — no wording reproduced beyond the factual gist."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-ehandbook-eda-what",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods — 1.1.1. What is EDA?",
+      "provider": "NIST / SEMATECH (U.S. Department of Commerce)",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section1/eda11.htm",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. States that EDA is an approach/philosophy that postpones assumptions about the model and lets the data reveal underlying structure; names Tukey's 1977 book Exploratory Data Analysis as the seminal work; describes EDA's main role as open-minded exploration. Supports the definition, the Tukey attribution, and the 'not a bundle of techniques' framing."
+    },
+    {
+      "id": "nist-ehandbook-eda-classical",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods — 1.1.2. How Does Exploratory Data Analysis differ from Classical Data Analysis?",
+      "provider": "NIST / SEMATECH (U.S. Department of Commerce)",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section1/eda12.htm",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Contrasts the classical sequence (Problem, Data, Model, Analysis, Conclusions) with the EDA sequence (Problem, Data, Analysis, Model, Conclusions): EDA analyzes immediately after collection with the goal of inferring what model would be appropriate. Supports the explore-before-modeling principle and the exploration-vs-confirmation contrast."
+    },
+    {
+      "id": "nist-ehandbook-eda-goals",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods — 1.1.4. What are the EDA Goals?",
+      "provider": "NIST / SEMATECH (U.S. Department of Commerce)",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section1/eda14.htm",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. States the primary goal of EDA is maximizing the analyst's insight into a dataset and its underlying structure, and that insight means detecting and uncovering structure and knowing what is not in the data. Supports the goals section."
+    },
+    {
+      "id": "nist-ehandbook-eda-questions",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods — 1.3.2. Analysis Questions",
+      "provider": "NIST / SEMATECH (U.S. Department of Commerce)",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda32.htm",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Lists common EDA questions including 'what is a typical value?', spread/distribution questions, and whether variables relate; notes the scatter plot is broad-brushed and applies almost universally, and that EDA emphasizes graphical techniques for gaining insight. Supports the typical-value/spread claims and the scatter-plot naming."
+    },
+    {
+      "id": "nist-ehandbook-eda-graphics",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods — 1.1.5. The Role of Graphics",
+      "provider": "NIST / SEMATECH (U.S. Department of Commerce)",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section1/eda15.htm",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Lists scatter plots, histograms, and box plots among graphical techniques and states the EDA approach relies heavily on them as the shortest path to gaining insight into a dataset. Supports the charts-as-tools claim."
+    },
+    {
+      "id": "tukey-1980-exploratory-confirmatory",
+      "title": "Tukey, John W. — 'We Need Both Exploratory and Confirmatory', The American Statistician, Vol. 34, No. 1 (1980), pp. 23-25",
+      "provider": "Taylor & Francis (The American Statistician)",
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/00031305.1980.10482706",
+      "sourceType": "peer-reviewed",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Taylor & Francis live page is bot-blocked; the abstract was read via an Internet Archive capture of the canonical URL (web.archive.org snapshot 2025-12-14). Abstract states: ideas come from previous exploration more often than from lightning strokes; finding the question is often more important than finding the answer; EDA is an attitude, a flexibility, and a reliance on display, NOT a bundle of techniques; we need both exploratory and confirmatory analysis; be prepared to randomize and avoid multiplicity. Supports the attitude framing, the hypothesis-finding role of exploration, and the anti-cherry-picking honesty principle."
+    },
+    {
+      "id": "openintro-ims-exploring-numerical-data",
+      "title": "Introduction to Modern Statistics (2nd ed.), Chapter 5: Exploring numerical data",
+      "provider": "OpenIntro (Cetinkaya-Rundel & Hardin)",
+      "url": "https://openintro-ims.netlify.app/explore-numerical.html",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Chapter focuses on exploring numerical data using summary statistics and visualizations; covers dot plots and the mean, histograms and shape, variance and standard deviation, box plots, quartiles, and the median; box-plot whiskers reach to the minimum and maximum values; median and IQR are robust where the mean and standard deviation are not. Supports the summary-numbers (min, max, mean, median, spread) and distribution-chart claims."
+    }
+  ]
+}

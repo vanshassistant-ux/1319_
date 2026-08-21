@@ -1,0 +1,148 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:outliers",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "definition of an outlier as a value that lies far outside the rest of the data",
+      "three common causes: measurement errors, data-entry mistakes, and genuine rare events",
+      "outliers as signal versus noise and the judgment call involved",
+      "how a single extreme value can pull averages and models off course",
+      "handling options: verify, correct if wrong, keep and note, analyze with and without",
+      "the general principle: never delete outliers silently; document the decision"
+    ],
+    "supporting": [
+      "robust summaries and methods as a response to significant outliers",
+      "flagging rules differ across software and analysts; outlier status is a judgment call",
+      "outliers may reveal problems in the data-gathering and recording process"
+    ],
+    "outOfScope": [
+      "missing-data mechanisms and imputation (sibling topic missing-data)",
+      "general data-cleaning workflows (sibling topic data-cleaning)",
+      "box plots, scatter plots, and other visualization of outliers (sibling topic visualization)",
+      "formal outlier tests, fences, and formulas (beyond literacy level)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "An outlier is an observation that lies an abnormal distance from other values in a sample; deciding what counts as abnormal is a judgment left to the analyst.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-ehandbook-prc-outliers", "nist-ehandbook-eda-outliers"],
+      "status": "supported"
+    },
+    {
+      "claim": "An outlier may be bad data (recorded or entered incorrectly) or a genuine observation (random variation or something scientifically interesting).",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-ehandbook-eda-outliers", "openintro-ims-explore-numerical"],
+      "status": "supported"
+    },
+    {
+      "claim": "Outliers should be investigated carefully before any decision; they often contain valuable information about the process under study or about the data-gathering and recording process.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-ehandbook-prc-outliers", "nist-ehandbook-eda-outliers"],
+      "status": "supported"
+    },
+    {
+      "claim": "Summaries computed from every value, such as the average, are sensitive to extreme observations; methods designed not to be unduly affected by outliers are called robust.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["openintro-ims-explore-numerical", "nist-ehandbook-eda-outliers"],
+      "status": "supported"
+    },
+    {
+      "claim": "When an outlying value is confirmed erroneous it should be corrected or removed from the analysis; when it cannot be confirmed erroneous, analysts typically should not simply delete it.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-ehandbook-eda-outliers"],
+      "status": "supported"
+    },
+    {
+      "claim": "Before considering elimination of an outlier, analysts should try to understand why it appeared and whether similar values are likely to continue to appear.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-ehandbook-prc-outliers"],
+      "status": "supported"
+    },
+    {
+      "claim": "Different statistical software uses different rules for flagging outliers, and some datasets naturally contain extreme values that are not problems.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["openintro-ims-explore-numerical"],
+      "status": "supported"
+    },
+    {
+      "claim": "Outlier handling is a documented decision: verify the value, correct it if wrong, keep it with a note, or analyze with and without it — and never delete silently.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["nist-ehandbook-prc-outliers", "nist-ehandbook-eda-outliers"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Should flagged outliers be deleted automatically?",
+      "positions": [
+        "Some automated cleaning pipelines drop flagged outliers as part of routine data preparation.",
+        "NIST guidance holds that analysts typically do not want to simply delete an outlying observation and should investigate before considering elimination."
+      ],
+      "resolution": "The lesson follows NIST: outliers are investigated first, and deletion is legitimate only with evidence and documentation. Automatic deletion is presented as a risky shortcut, not a default."
+    },
+    {
+      "issue": "Which rule decides whether a value counts as an outlier?",
+      "positions": [
+        "Different software and textbooks use different formulas (for example, distance from quartiles) to flag outliers.",
+        "The definition itself leaves what counts as 'abnormal' to the analyst's judgment."
+      ],
+      "resolution": "At literacy level the lesson avoids formulas entirely and presents outlier status as a judgment call supported by rules of thumb; box-plot and fence rules belong to the visualization sibling topic."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft claimed outliers 'is a foundational concept' without defining it or citing evidence.",
+    "The generated draft treated outliers as a label for organizing learning rather than as a property of data values.",
+    "The generated draft's vocabulary defined outliers circularly as 'a foundational Data Science & AI Literacy concept covered in this lesson.'"
+  ],
+  "correctionsNeeded": [
+    "Replaced the generic draft with a source-verified definition (a value far outside the rest of the data) and entirely original examples.",
+    "Kept the lesson at literacy level with no formulas; box-plot and IQR machinery was left to the visualization sibling topic.",
+    "Added the three causes of outliers, the signal-versus-noise judgment, the influence on averages and models, four handling options with trade-offs, and the documented-decision principle."
+  ],
+  "rightsIssues": [
+    "None: all three sources used as REFERENCE_ONLY; no source prose reproduced; all examples and lesson prose original."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-ehandbook-eda-outliers",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods — 1.3.5.17. Detection of Outliers (Exploratory Data Analysis)",
+      "provider": "NIST / SEMATECH (U.S. Department of Commerce)",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35h.htm",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read the live section page directly on 2026-08-21. Supports: an outlier as an observation that appears to deviate markedly from other observations; outliers may indicate bad data (coded incorrectly, experiment not run correctly) and confirmed erroneous values should be deleted or corrected; outliers may also be random variation or scientifically interesting; analysts typically do not want to simply delete the outlying observation; significant outliers may call for robust statistical techniques; and the labeling/accommodation/identification framework for outliers (Iglewicz and Hoaglin). Facts synthesized into original prose; no source wording reproduced."
+    },
+    {
+      "id": "nist-ehandbook-prc-outliers",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods — 7.1.6. What are outliers in the data? (Product and Process Comparisons)",
+      "provider": "NIST / SEMATECH (U.S. Department of Commerce)",
+      "url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc16.htm",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read the live section page directly on 2026-08-21. Supports: an outlier as an observation that lies an abnormal distance from other values, with the decision of what is abnormal left to the analyst; outliers should be investigated carefully because they often contain valuable information about the process under investigation or about the data-gathering and recording process; before considering elimination, understand why the outlier appeared and whether similar values are likely to continue to appear; outliers are often bad data points. Facts synthesized into original prose."
+    },
+    {
+      "id": "openintro-ims-explore-numerical",
+      "title": "OpenIntro — Introduction to Modern Statistics: Exploring numerical data (Chapter 5)",
+      "provider": "OpenIntro (openintro.org)",
+      "url": "https://openintro-ims.netlify.app/explore-numerical.html",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read directly (web edition) on 2026-08-21. Supports: an outlier as an observation that appears extreme relative to the rest of the data; examining outliers helps identify data collection or data entry errors and interesting properties of the data; some datasets naturally have long skew where outlying points are not a problem; different software uses different formulas for flagging outliers; the robust-statistics section shows how an extreme observation (a 26.3% loan rate) moves the sample mean; transformations that tame extreme skew make statistical modeling easier. Used as Tier B corroboration; facts synthesized into original prose with original examples."
+    }
+  ]
+}

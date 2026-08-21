@@ -224,6 +224,32 @@
     "notes": "Read directly. Primary specification corroborating that ECMAScript source text contains statements."
   },
   {
+    "id": "elements-of-ai",
+    "title": "Elements of AI — A free online introduction to artificial intelligence for non-experts",
+    "provider": "University of Helsinki & MinnaLearn",
+    "url": "https://www.elementsofai.com/",
+    "sourceType": "reference",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl with a browser user-agent on 2026-08-21. Supports: the Elements of AI course series is created by MinnaLearn and the University of Helsinki, is free, is aimed at a broad audience, teaches what AI is and what can and cannot be done with it, and requires no complicated math or programming. Used for the literacy framing of the lesson only; the course's machine-learning chapter is script-rendered and was not directly readable, so no chapter-specific claims are made."
+  },
+  {
+    "id": "elements-of-ai-machine-learning",
+    "title": "Elements of AI (University of Helsinki), Chapter 4: Machine learning",
+    "provider": "University of Helsinki / Reaktor",
+    "url": "https://course.elementsofai.com/4",
+    "sourceType": "open-textbook",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live on 2026-08-21 via the chapter content served at course.elementsofai.com/4 (Gatsby page-data JSON endpoint). Supports: supervised learning as being given an input and predicting the correct output or label, learned from labeled examples so the algorithm can independently produce answers for new inputs; regression as predicting a numeric outcome (examples: clicks on an ad, traffic accidents, real-estate prices); the quality bar depending on use — an accuracy that is fine for predicting whether you will like a new song would be unacceptable for safety-critical systems. Lesson prose is original; the ad-click and song examples are referenced conceptually."
+  },
+  {
     "id": "gc-big-data-defined",
     "title": "What is Big Data? (Big Data Defined: Examples and Benefits)",
     "provider": "Google Cloud",
@@ -235,6 +261,58 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Read live 2026-08-21. Describes datasets as large and diverse collections of data characterized by volume, velocity, and variety; cites the Internet of Things and sensor data among the sources of growing data. Supports claims about dataset size and sensor/device data as a source."
+  },
+  {
+    "id": "gc-what-is-machine-learning",
+    "title": "What is Machine Learning? Types and uses",
+    "provider": "Google Cloud",
+    "url": "https://cloud.google.com/learn/what-is-machine-learning",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl with a browser user-agent on 2026-08-21. Supports: machine learning as systems that learn and improve without being explicitly programmed; training as optimizing the model to predict the expected outcome with a loss function measuring errors; the fitting process; supervised learning (labeled training data, output known) and unsupervised learning (unlabeled data, groups found by attributes); applications including fraud detection, personalization and recommendations, and transcription and translation; and the warning that machine learning is often only as good as the data it is fed. Facts synthesized; no wording reproduced."
+  },
+  {
+    "id": "gc-what-is-unsupervised-learning",
+    "title": "What is unsupervised learning?",
+    "provider": "Google Cloud",
+    "url": "https://cloud.google.com/discover/what-is-unsupervised-learning",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl on 2026-08-21 (the older /learn/ URL returns 404; the /discover/ URL is the working canonical page). Supports: unsupervised learning as a type of machine learning that learns from data without human supervision and without labels; clustering as a technique that breaks unlabeled data into groups by similarity; customer segmentation and fraud detection as clustering applications; anomaly detection as finding atypical data points; dimensionality reduction as reducing the number of features; association rules powering 'frequently bought together' recommendations; the supervised-vs-unsupervised distinction being the type of input data (labeled vs unlabeled); and the statement that the algorithm does not itself understand the patterns, which people interpret. Facts synthesized into original prose; no page wording reproduced."
+  },
+  {
+    "id": "gcloud-what-is-supervised-learning",
+    "title": "What is supervised learning?",
+    "provider": "Google Cloud",
+    "url": "https://cloud.google.com/discover/what-is-supervised-learning",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live 2026-08-21 (the page moved from /learn/ to /discover/; the /learn/ URL returns 404). Supports: supervised learning as a category of machine learning that uses labeled datasets; features as inputs and labels as correct outputs; the training loop of analyzing labeled pairs and then predicting on new data; classification as predicting categorical labels with the spam filter as the classic example; regression as predicting continuous values with a salary-from-work-experience example; real-world uses in risk assessment, fraud detection, image classification, and recommendations. Facts synthesized into original lesson prose; no wording reproduced."
+  },
+  {
+    "id": "gcp-what-is-predictive-analytics",
+    "title": "What is predictive analytics?",
+    "provider": "Google Cloud",
+    "url": "https://cloud.google.com/learn/what-is-predictive-analytics",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl on 2026-08-21. Supports: predictive analytics uses historical data, statistical modeling, and machine learning to answer 'What might happen next?'; identifying patterns in historic and current data to predict behaviors seconds, days, or even years into the future; the workflow (define problem, acquire and organize data, pre-process, develop models, validate and deploy); regression/decision trees/neural networks as techniques; use cases including fraud detection, operational improvement (inventory forecasting), and maintenance forecasting (predicting equipment failure before it occurs). Facts synthesized into original prose; no page wording reproduced."
   },
   {
     "id": "git-commit-doc",
@@ -393,6 +471,45 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Vendor documentation read live. Supports the 45-80% figure for data-preparation time with its citation of research; used as a second, independently worded source for the time-share claim."
+  },
+  {
+    "id": "ibm-what-is-machine-learning",
+    "title": "What is Machine Learning?",
+    "provider": "IBM",
+    "url": "https://www.ibm.com/topics/machine-learning",
+    "sourceType": "reference",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl with a browser user-agent on 2026-08-21. Supports: machine learning as the subset of AI whose algorithms learn the patterns of training data and make accurate inferences about new data without explicit, hard-coded instructions; the central premise of optimizing performance on a dataset of tasks through model training; the spam-filter contrast (rules-based filters need manually devised criteria; machine learning needs an algorithm and a dataset of sample emails); clustering of unlabeled data for fraud detection; e-commerce recommendation engines; computer vision in healthcare diagnostics; the ML-versus-AI terminology distinction; and the attribution of the term to Arthur Samuel's 1959 checkers paper. Facts synthesized; no wording reproduced."
+  },
+  {
+    "id": "ibm-what-is-supervised-learning",
+    "title": "What is supervised learning?",
+    "provider": "IBM",
+    "url": "https://www.ibm.com/think/topics/supervised-learning",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live 2026-08-21 (article body extracted from the page's server-rendered HTML; page last modified 2026-03-02). Supports: supervised learning as a machine learning technique that uses labeled datasets to train models to identify patterns; labeled datasets as sample data points plus correct outputs (ground truth); classification as sorting data into categories (spam identification, image classification); regression as predicting continuous values (sales revenue, financial planning); the explicit statement that labeling data takes a lot of time and effort; the supervised-versus-unsupervised distinction. Facts synthesized into original lesson prose; no wording reproduced."
+  },
+  {
+    "id": "ibm-what-is-unsupervised-learning",
+    "title": "What is unsupervised learning?",
+    "provider": "IBM",
+    "url": "https://www.ibm.com/think/topics/unsupervised-learning",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl on 2026-08-21. Supports: unsupervised learning as machine learning that analyzes and clusters unlabeled datasets, discovering hidden patterns or groupings without human intervention; clustering as grouping unlabeled data by similarities or differences; customer segmentation and document clustering as applications; association rules and market-basket analysis powering recommendation engines; dimensionality reduction as reducing the number of features while preserving dataset integrity; and news-article categorization (Google News) as an application. Facts synthesized into original prose; no page wording reproduced."
   },
   {
     "id": "icann-about-domain-names",
@@ -1577,6 +1694,19 @@
     "notes": "Read live 2026-08-21 (module overview; unit content is script-rendered). States that data exploration and analysis is at the core of data science and covers examining real-world data. Supports the claim that tabular exploration and analysis of datasets is central to data science; no tool workflows taught in the lesson."
   },
   {
+    "id": "ms-ml4b-intro-to-ml",
+    "title": "ML for Beginners — Introduction to machine learning",
+    "provider": "Microsoft Learn (GitHub curriculum)",
+    "url": "https://github.com/microsoft/ML-For-Beginners/tree/main/1-Introduction/1-intro-to-ML",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read the lesson README (via raw.githubusercontent.com) on 2026-08-21. Supports: machine learning as automated systems that learn hidden patterns from data to aid decisions; the contrast between machine learning and hard-coded rules-based engines; the statement that high-quality data improves model performance while poor or noisy data leads to inaccurate predictions; and applications such as predicting the likelihood of disease from a patient's medical history or reports. Facts synthesized; no wording reproduced."
+  },
+  {
     "id": "mslearn-clean-transform-load-data-powerbi",
     "title": "Clean, Transform, and Load Data in Power BI",
     "provider": "Microsoft Learn",
@@ -1588,6 +1718,19 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Public Microsoft Learn module read live. Supports the literacy-level claim that preparing data involves resolving inconsistencies, unexpected or null values, and data quality issues, and that profiling columns precedes deeper analysis. The module is tool-oriented (Power Query); only its concept-level objectives were used, not its tool workflow."
+  },
+  {
+    "id": "mslearn-fundamentals-machine-learning",
+    "title": "Introduction to Machine Learning Concepts (Microsoft Learn training module: fundamentals-machine-learning)",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live 2026-08-21: module landing page plus units 3-types-of-machine-learning, 4-regression, and 5-binary-classification. Supports: supervised machine learning defined as training data that includes both feature values and known label values, used to predict unknown labels for future cases; the train-evaluate-refine training loop; regression as predicting a numeric label (property selling price from size, bedrooms, location); classification as predicting a categorical label; binary classification examples including predicting diabetes risk from clinical metrics and loan default from income and credit history. Facts synthesized into original lesson prose; no wording reproduced."
   },
   {
     "id": "nist-ai-risk-management-framework",
@@ -1603,6 +1746,17 @@
     "notes": "Read live on 2026-08-21. Supports the framing that data-driven and AI systems carry risks to individuals, organizations, and society that organizations should manage. Detailed ethics and risk treatment belongs to the ai-ethics and nist-ai-risk-concepts sibling topics; used here only as a pointer."
   },
   {
+    "id": "nist-ehandbook-eda-classical",
+    "title": "NIST/SEMATECH e-Handbook of Statistical Methods — 1.1.2. How Does Exploratory Data Analysis differ from Classical Data Analysis?",
+    "provider": "NIST / SEMATECH (U.S. Department of Commerce)",
+    "url": "https://www.itl.nist.gov/div898/handbook/eda/section1/eda12.htm",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live 2026-08-21. Contrasts the classical sequence (Problem, Data, Model, Analysis, Conclusions) with the EDA sequence (Problem, Data, Analysis, Model, Conclusions): EDA analyzes immediately after collection with the goal of inferring what model would be appropriate. Supports the explore-before-modeling principle and the exploration-vs-confirmation contrast."
+  },
+  {
     "id": "nist-ehandbook-eda-design",
     "title": "NIST/SEMATECH e-Handbook of Statistical Methods — 5.5.9. An EDA approach to experimental design",
     "provider": "NIST / SEMATECH (U.S. Department of Commerce)",
@@ -1614,6 +1768,89 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Read the live section page and the printer-friendly full-handbook PDF (DOI 10.18434/M32189, 2012 edition). The live page states that each factor in a designed experiment may be either continuous or discrete; the PDF expands this to continuous and ordered factors (temperature, pressure, humidity, concentration) versus discrete and non-ordinal factors (plant, operator, catalyst, supplier). Supports the discrete-vs-continuous distinction and the principle that the type of a variable shapes how it can be modeled. No source prose reproduced."
+  },
+  {
+    "id": "nist-ehandbook-eda-goals",
+    "title": "NIST/SEMATECH e-Handbook of Statistical Methods — 1.1.4. What are the EDA Goals?",
+    "provider": "NIST / SEMATECH (U.S. Department of Commerce)",
+    "url": "https://www.itl.nist.gov/div898/handbook/eda/section1/eda14.htm",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live 2026-08-21. States the primary goal of EDA is maximizing the analyst's insight into a dataset and its underlying structure, and that insight means detecting and uncovering structure and knowing what is not in the data. Supports the goals section."
+  },
+  {
+    "id": "nist-ehandbook-eda-graphics",
+    "title": "NIST/SEMATECH e-Handbook of Statistical Methods — 1.1.5. The Role of Graphics",
+    "provider": "NIST / SEMATECH (U.S. Department of Commerce)",
+    "url": "https://www.itl.nist.gov/div898/handbook/eda/section1/eda15.htm",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live 2026-08-21. Lists scatter plots, histograms, and box plots among graphical techniques and states the EDA approach relies heavily on them as the shortest path to gaining insight into a dataset. Supports the charts-as-tools claim."
+  },
+  {
+    "id": "nist-ehandbook-eda-outliers",
+    "title": "NIST/SEMATECH e-Handbook of Statistical Methods — 1.3.5.17. Detection of Outliers (Exploratory Data Analysis)",
+    "provider": "NIST / SEMATECH (U.S. Department of Commerce)",
+    "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35h.htm",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read the live section page directly on 2026-08-21. Supports: an outlier as an observation that appears to deviate markedly from other observations; outliers may indicate bad data (coded incorrectly, experiment not run correctly) and confirmed erroneous values should be deleted or corrected; outliers may also be random variation or scientifically interesting; analysts typically do not want to simply delete the outlying observation; significant outliers may call for robust statistical techniques; and the labeling/accommodation/identification framework for outliers (Iglewicz and Hoaglin). Facts synthesized into original prose; no source wording reproduced."
+  },
+  {
+    "id": "nist-ehandbook-eda-questions",
+    "title": "NIST/SEMATECH e-Handbook of Statistical Methods — 1.3.2. Analysis Questions",
+    "provider": "NIST / SEMATECH (U.S. Department of Commerce)",
+    "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda32.htm",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live 2026-08-21. Lists common EDA questions including 'what is a typical value?', spread/distribution questions, and whether variables relate; notes the scatter plot is broad-brushed and applies almost universally, and that EDA emphasizes graphical techniques for gaining insight. Supports the typical-value/spread claims and the scatter-plot naming."
+  },
+  {
+    "id": "nist-ehandbook-eda-what",
+    "title": "NIST/SEMATECH e-Handbook of Statistical Methods — 1.1.1. What is EDA?",
+    "provider": "NIST / SEMATECH (U.S. Department of Commerce)",
+    "url": "https://www.itl.nist.gov/div898/handbook/eda/section1/eda11.htm",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live 2026-08-21. States that EDA is an approach/philosophy that postpones assumptions about the model and lets the data reveal underlying structure; names Tukey's 1977 book Exploratory Data Analysis as the seminal work; describes EDA's main role as open-minded exploration. Supports the definition, the Tukey attribution, and the 'not a bundle of techniques' framing."
+  },
+  {
+    "id": "nist-ehandbook-prc-outliers",
+    "title": "NIST/SEMATECH e-Handbook of Statistical Methods — 7.1.6. What are outliers in the data? (Product and Process Comparisons)",
+    "provider": "NIST / SEMATECH (U.S. Department of Commerce)",
+    "url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc16.htm",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read the live section page directly on 2026-08-21. Supports: an outlier as an observation that lies an abnormal distance from other values, with the decision of what is abnormal left to the analyst; outliers should be investigated carefully because they often contain valuable information about the process under investigation or about the data-gathering and recording process; before considering elimination, understand why the outlier appeared and whether similar values are likely to continue to appear; outliers are often bad data points. Facts synthesized into original prose."
+  },
+  {
+    "id": "nist-ehandbook-scatter-plot",
+    "title": "NIST/SEMATECH e-Handbook of Statistical Methods — 1.3.3.26. Scatter Plot",
+    "provider": "NIST / SEMATECH (U.S. Department of Commerce)",
+    "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/scatterp.htm",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live 2026-08-21 (Section 1.3.3.26). Supports: a scatter plot reveals relationships or association between two variables, which manifest as any non-random structure in the plot; scatter plots are the cornerstone EDA tool for uncovering relationships; no statistical procedure, scatter plot included, proves cause-and-effect, and such proof is beyond the realm of statistics. Facts synthesized; no page wording reproduced."
   },
   {
     "id": "nist-sp-1500-1",
@@ -1655,6 +1892,46 @@
     "notes": "Read directly (NIST IR 7023, 2003). Official NIST report on missing-data analysis for measurement data: test/measurement arrays can contain missing values, and dedicated missing-data analysis methods are used to work with incomplete information. Used as Tier A support for the claim that gaps occur even in carefully collected measurement data and that established methods exist for handling them."
   },
   {
+    "id": "nws-explaining-probability-of-precipitation",
+    "title": "Explaining 'Probability of Precipitation'",
+    "provider": "National Weather Service, NOAA (Peachtree City/Atlanta forecast office)",
+    "url": "https://www.weather.gov/ffc/pop",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "license": "U.S. Government work; not subject to copyright in the United States",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl on 2026-08-21. Supports: the National Weather Service routinely includes a PoP (probability of precipitation) statement in forecasts; the PoP describes the probability that the forecast point receives at least 0.01 inch of rain; it is not a statement about proportion of time or area. Used for the everyday weather-forecast example and the uncertainty claim; example phrasing is original."
+  },
+  {
+    "id": "onlinestatbook-bivariate-data",
+    "title": "Online Statistics Education: An Interactive Multimedia Course of Study — Describing Bivariate Data: Introduction",
+    "provider": "Rice University (Rudy Guerra and David M. Lane)",
+    "url": "https://onlinestatbook.com/2/describing_bivariate_data/intro.html",
+    "sourceType": "open-textbook",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read directly 2026-08-21 (Chapter 4). Supports: bivariate data pairs two quantitative variables per individual; when Y increases as X increases the association is positive, when Y decreases as X increases it is negative; points clustering along a line indicate a linear relationship; strength is visible in how closely points cluster; pairing is lost when variables are summarized separately. No explicit license statement found on the page; used as reference only, prose fully original."
+  },
+  {
+    "id": "onlinestatbook-graphing-distributions",
+    "title": "Online Statistics Education: An Interactive Multimedia Course of Study — Graphing Distributions (Chapter)",
+    "provider": "Rice University (David M. Lane et al.)",
+    "url": "https://onlinestatbook.com/2/graphing_distributions/graphing_distributions.html",
+    "sourceType": "open-textbook",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read the chapter's section pages live 2026-08-21 (bar charts, histograms, line graphs, graphing qualitative variables). Supports: bar charts illustrate the frequencies of different categories (iMac buyer example); histograms display the shape of a distribution via class intervals and are particularly useful with a large number of observations; line graphs are appropriate only when both axes display ordered values, are generally better than bar charts for comparing change over time, and are misleading when the x-axis holds merely qualitative variables. Facts synthesized; prose original."
+  },
+  {
     "id": "onlinestatbook-levels-of-measurement",
     "title": "Online Statistics Education: An Interactive Multimedia Course of Study — Levels of Measurement",
     "provider": "Rice University (Dan Osherson and David M. Lane)",
@@ -1681,6 +1958,56 @@
     "notes": "Read directly. Supports the distinction between qualitative variables (attributes such as hair color, eye color, religion, favorite movie; values do not imply numeric ordering) and quantitative variables (measured in terms of numbers; examples height, weight, shoe size), and the statement that qualitative variables are sometimes called categorical. No explicit license statement found on the page; used as reference only, prose fully original."
   },
   {
+    "id": "openintro-ims-correlation",
+    "title": "OpenIntro — Introduction to Modern Statistics (2e), Section 7.1: Fitting a line, residuals, and correlation",
+    "provider": "OpenIntro (openintro.org)",
+    "url": "https://openintro-ims.netlify.app/model-slr.html",
+    "sourceType": "open-textbook",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live web edition 2026-08-21 (Chapter 7, Section 7.1.4). Supports: correlation takes values between -1 and 1 and describes the strength and direction of the linear relationship between two variables; strong positive relationships are near +1, strong negative near -1, no apparent linear relationship near zero; correlation is unitless; nonlinear trends can produce correlations that do not reflect the strength of the relationship; correlation does not specify which variable is explanatory and which is outcome. No source prose reproduced."
+  },
+  {
+    "id": "openintro-ims-explore-numerical",
+    "title": "OpenIntro — Introduction to Modern Statistics: Exploring numerical data (Chapter 5)",
+    "provider": "OpenIntro (openintro.org)",
+    "url": "https://openintro-ims.netlify.app/explore-numerical.html",
+    "sourceType": "open-textbook",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read directly (web edition) on 2026-08-21. Supports: an outlier as an observation that appears extreme relative to the rest of the data; examining outliers helps identify data collection or data entry errors and interesting properties of the data; some datasets naturally have long skew where outlying points are not a problem; different software uses different formulas for flagging outliers; the robust-statistics section shows how an extreme observation (a 26.3% loan rate) moves the sample mean; transformations that tame extreme skew make statistical modeling easier. Used as Tier B corroboration; facts synthesized into original prose with original examples."
+  },
+  {
+    "id": "openintro-ims-exploring-numerical",
+    "title": "OpenIntro — Introduction to Modern Statistics: Exploring numerical data (Chapter 5)",
+    "provider": "OpenIntro (openintro.org)",
+    "url": "https://openintro-ims.netlify.app/explore-numerical.html",
+    "sourceType": "open-textbook",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read the live web edition 2026-08-21. Section 5.1 defines a scatterplot as a case-by-case view of data for two numerical variables in which each point represents a single case, with examples on county homeownership and loan data. Section 5.3 defines a histogram as binned counts drawn as bars, notes that higher bars show where the data are relatively more common, and discusses distribution shape (right-skewed loan interest rates). Facts synthesized; prose original."
+  },
+  {
+    "id": "openintro-ims-exploring-numerical-data",
+    "title": "Introduction to Modern Statistics (2nd ed.), Chapter 5: Exploring numerical data",
+    "provider": "OpenIntro (Cetinkaya-Rundel & Hardin)",
+    "url": "https://openintro-ims.netlify.app/explore-numerical.html",
+    "sourceType": "open-textbook",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live 2026-08-21. Chapter focuses on exploring numerical data using summary statistics and visualizations; covers dot plots and the mean, histograms and shape, variance and standard deviation, box plots, quartiles, and the median; box-plot whiskers reach to the minimum and maximum values; median and IQR are robust where the mean and standard deviation are not. Supports the summary-numbers (min, max, mean, median, spread) and distribution-chart claims."
+  },
+  {
     "id": "openintro-ims-hello-data",
     "title": "OpenIntro — Introduction to Modern Statistics: Hello data",
     "provider": "OpenIntro (openintro.org)",
@@ -1692,6 +2019,19 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Read directly (web edition). Supports: numerical variables take a wide range of values for which adding, subtracting, or averaging is sensible (unemployment rate); categorical variables take categories whose possible values are called levels (state); area codes are treated as categorical because their average, sum, and difference have no clear meaning; population counts are discrete (values with jumps) while unemployment rate and height are continuous. Lesson prose and examples (weather station, bookstore) are original."
+  },
+  {
+    "id": "openintro-ims-linear-regression-slr",
+    "title": "Introduction to Modern Statistics (2e), Chapter 7: Linear regression with a single predictor",
+    "provider": "OpenIntro (openintro.org)",
+    "url": "https://openintro-ims.netlify.app/model-slr.html",
+    "sourceType": "open-textbook",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live on 2026-08-21. Supports: linear models can be used for prediction or to describe the relationship between two numerical variables; predictions from a fitted model are estimates, e.g. an average head length predicted for possums of a given total length, and family-income-based aid predictions are imperfect because other factors play a role; section 7.2.4 'Extrapolation is treacherous' — applying a model estimate to values outside the realm of the original data is extrapolation, 'an unreliable bet that the approximate linear relationship will be valid in places where it has not been analyzed.' The possum and Elmhurst examples are referenced conceptually, not reproduced."
   },
   {
     "id": "openstax-intro-stats-1-2",
@@ -1707,6 +2047,36 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Read live via curl 2026-08-21. Supports the collection-error claims: non-response or refusal of subjects to participate can make responses unrepresentative (people with strong opinions often answer surveys), collecting data or asking questions in a way that influences the response is a problem, a defective counting device causes a nonsampling error, and careless collection can have serious consequences. Sampling techniques themselves belong to the sampling sibling topic and were not drawn on here."
+  },
+  {
+    "id": "openstax-intro-stats-2-2",
+    "title": "Introductory Statistics, Section 2.2: Histograms, Frequency Polygons, and Time Series Graphs",
+    "provider": "OpenStax (Rice University)",
+    "url": "https://openstax.org/books/introductory-statistics/pages/2-2-histograms-frequency-polygons-and-time-series-graphs",
+    "sourceType": "open-textbook",
+    "usage": "ATTRIBUTION_REQUIRED",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read the live textbook page 2026-08-21. Supports: a histogram consists of contiguous boxes with the horizontal axis labeled with what the data represents and the vertical axis labeled frequency or relative frequency; a histogram gives the shape, center, and spread of the data and readily displays large data sets (rule of thumb: use a histogram for data sets of 100 values or more); a time series graph plots time increments on the horizontal axis and measured values on the vertical axis, with points connected by straight lines in the order they occur. Facts synthesized; no passage reproduced."
+  },
+  {
+    "id": "openstax-intro-stats-scatter-plots",
+    "title": "Introductory Statistics, Section 12.2: Scatter Plots",
+    "provider": "OpenStax (Rice University)",
+    "url": "https://openstax.org/books/introductory-statistics/pages/12-2-scatter-plots",
+    "sourceType": "open-textbook",
+    "usage": "REFERENCE_ONLY",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://openstax.org/subject-terms",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl 2026-08-21 (Section 12.2). Supports: the scatter plot is the most common way to display the relation between two variables; a scatter plot shows the direction of a relationship (high values with high values, or high values with low values); strength is judged by how closely the points cluster. Facts synthesized; no source wording reproduced."
   },
   {
     "id": "openstax-introductory-statistics-1-2",
@@ -1858,6 +2228,17 @@
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-20",
     "notes": "Read directly. Primary standard supporting HTTP as a stateless, application-level family of request/response protocols. Used for technical verification, not copied prose."
+  },
+  {
+    "id": "tukey-1980-exploratory-confirmatory",
+    "title": "Tukey, John W. — 'We Need Both Exploratory and Confirmatory', The American Statistician, Vol. 34, No. 1 (1980), pp. 23-25",
+    "provider": "Taylor & Francis (The American Statistician)",
+    "url": "https://www.tandfonline.com/doi/abs/10.1080/00031305.1980.10482706",
+    "sourceType": "peer-reviewed",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "checkedAt": "2026-08-21",
+    "notes": "Taylor & Francis live page is bot-blocked; the abstract was read via an Internet Archive capture of the canonical URL (web.archive.org snapshot 2025-12-14). Abstract states: ideas come from previous exploration more often than from lightning strokes; finding the question is often more important than finding the answer; EDA is an attitude, a flexibility, and a reliance on display, NOT a bundle of techniques; we need both exploratory and confirmatory analysis; be prepared to randomize and avoid multiplicity. Supports the attitude framing, the hypothesis-finding role of exploration, and the anti-cherry-picking honesty principle."
   },
   {
     "id": "uk-data-service-secondary-data",
@@ -2393,6 +2774,19 @@
     "notes": "Canonical JSS record registered; the author-hosted PDF (https://vita.had.co.nz/papers/tidy-data.pdf) was read. By Hadley Wickham, 2014. Defines tidy data as each variable a column, each observation a row, and each type of observational unit a table; discusses missing values, messy data, and notes that reshaping is 'often described as making wide datasets long or tall' while flagging those terms as imprecise. Primary source for the tidy-data ideal and the wide/tall terminology."
   },
   {
+    "id": "wikipedia-correlation-not-causation",
+    "title": "Correlation does not imply causation",
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation",
+    "sourceType": "reference",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live 2026-08-21. Tier D reference used for the classic ice-cream-sales/drowning-rates illustration (summer heat as the common cause) and the named alternative explanations: third factor (common-cause variable, lurking/confounding variable), reverse causation, and coincidence. Causal-inference claims in the lesson are additionally anchored to the NIST e-Handbook statement that no statistical procedure proves cause and effect. Used as reference only; lesson prose and other examples are original."
+  },
+  {
     "id": "wikipedia-garbage-in-garbage-out",
     "title": "Garbage in, garbage out",
     "provider": "Wikipedia",
@@ -2404,6 +2798,19 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Encyclopedic reference read live. Supports the GIGO principle, its first known use in a 1957 syndicated article about U.S. Army mathematicians, and the 1864 Charles Babbage statement of the same idea. Used as background; the lesson states the principle in its own words."
+  },
+  {
+    "id": "wikipedia-misleading-graph",
+    "title": "Misleading graph",
+    "provider": "Wikipedia (Wikimedia Foundation)",
+    "url": "https://en.wikipedia.org/wiki/Misleading_graph",
+    "sourceType": "reference",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live 2026-08-21. Documents the named mechanisms of misleading charts: truncated graphs whose y-axis does not start at 0 can create the impression of important change where there is little; graphs with omitted data remove information from which to base a conclusion; a superfluous third dimension confuses readers because perspective makes equal values look different and three-dimensional scaling cubes the effect; pictograms scaled uniformly are misread by area, making differences appear squared; log scales used without clear labeling mislead; changing the y-axis maximum changes apparent growth. Also notes Darrell Huff's 1954 book 'How to Lie with Statistics' as an early popular treatment of misleading graphs and describes the lie factor concept. Tier D reference used for the misleading-chart taxonomy; facts synthesized into original examples."
   },
   {
     "id": "wikipedia-sampling-statistics",
