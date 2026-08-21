@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "subjectSlug": "data-science-and-ai-literacy",
+  "note": "Discovery leads for data-science and AI-literacy topic workers (phase 2). Every topic must independently read and verify its sources. This is LITERACY, not a practitioner course: teach concepts, why they matter, and how to think about them — not tool-specific workflows. Keep claims modest and sourced; the AI topics (generative-ai onward) must be time-anchored and describe capabilities/risks as of the cited sources, never as timeless truths.",
+  "reviewProfile": ["technical-literacy", "accuracy-critical", "conceptual"],
+  "tierA": [
+    { "provider": "NIST AI Risk Management Framework", "url": "https://www.nist.gov/itl/ai-risk-management-framework", "useFor": "authoritative AI risk concepts (nist-ai-risk-concepts), AI fairness/ethics framing" },
+    { "provider": "OpenStax Introduction to Python Programming", "url": "https://openstax.org/details/books/introduction-python-programming", "useFor": "foundational data/algorithm concepts in an open textbook" },
+    { "provider": "Coursera/Google Data Analytics material", "url": "https://www.coursera.org/", "useFor": "only if a specific public page is read live; otherwise prefer the providers below" }
+  ],
+  "tierB": [
+    { "provider": "US Census Bureau / Statistical resources", "url": "https://www.census.gov/", "useFor": "sampling and survey methodology basics" },
+    { "provider": "IBM / Google Cloud documentation pages (public, read live)", "url": "https://cloud.google.com/learn/what-is-data-science", "useFor": "data-science definitions, structured vs unstructured data, ML basics" },
+    { "provider": "Microsoft Learn public docs", "url": "https://learn.microsoft.com/", "useFor": "AI fundamentals, ML concepts, responsible AI (public pages read live)" },
+    { "provider": "Elements of AI (University of Helsinki) public course pages", "url": "https://www.elementsofai.com/", "useFor": "AI literacy definitions, ML basics, hallucinations, bias" },
+    { "provider": "OpenAI/Anthropic/Google public model documentation", "url": "https://platform.openai.com/docs", "useFor": "generative AI, LLMs, prompting, hallucination mitigations — read the specific public page live" }
+  ],
+  "cautions": [
+    "LITERACY LEVEL: explain what each concept is, why it matters, and how to think about it. Do not teach tool-specific workflows (no pandas/NumPy/scikit-learn tutorials), do not require math beyond basic intuition, and do not turn any topic into a practitioner course.",
+    "TIME-ANCHOR AI CLAIMS: model capabilities, benchmark numbers, and tool names change quickly. Phrase claims as of the cited source date; never state capabilities as timeless facts. For generative-ai, large-language-models, and prompting-basics, use the model providers' own public documentation plus at least one independent source.",
+    "DEFINITIONAL DISTINCTIONS MUST BE KEPT CLEAN: structured vs unstructured data; supervised vs unsupervised learning; training vs testing data; correlation vs causation (correlation topic owns this); overfitting vs underfitting; bias as a statistical property vs bias as a fairness concern (bias and algorithmic-fairness are separate topics — keep them distinct).",
+    "HALLUCINATIONS AND EVALUATION: hallucinations are a documented failure mode of LLMs (stated factually, with the provider/scholar source); evaluating-ai-output owns how to check AI output; do not overclaim what current systems can or cannot do.",
+    "PRIVACY AND ETHICS: ai-privacy and ai-ethics are separate topics; keep the NIST RMF framing for ai-ethics and nist-ai-risk-concepts; no individualized legal, security, or medical advice.",
+    "Distribute question answer keys EVENLY across A/B/C/D, ensuring at least one C and one D per topic. Verify keys yourself from the file, and avoid reusing identical question-stem templates across topics."
+  ]
+}
