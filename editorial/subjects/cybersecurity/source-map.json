@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "subjectSlug": "cybersecurity",
+  "note": "Discovery leads for cybersecurity topic workers (phase 2). LITERACY + awareness level with a defensive framing: teach what the concepts are, why they matter, and how to think about protection — NEVER how to attack. No step-by-step attack techniques, no exploit details, no malware source. Keep claims sourced and time-anchored where the landscape changes.",
+  "reviewProfile": ["security-literacy", "defensive-framing", "accuracy-critical"],
+  "tierA": [
+    { "provider": "NIST", "url": "https://www.nist.gov/cyberframework", "useFor": "NIST Cybersecurity Framework (nist-cybersecurity-framework), NIST SP 800-series concepts (identity, authentication, least privilege, incident response)" },
+    { "provider": "CISA (US Cybersecurity & Infrastructure Security Agency)", "url": "https://www.cisa.gov/", "useFor": "threat advisories, phishing/social-engineering awareness, ransomware guidance, cyber hygiene" },
+    { "provider": "OWASP", "url": "https://owasp.org/www-project-top-ten/", "useFor": "application-security risk concepts (threats, vulnerabilities, risk framing)" }
+  ],
+  "tierB": [
+    { "provider": "Microsoft Learn Security", "url": "https://learn.microsoft.com/security/", "useFor": "identity, MFA, zero trust, network security fundamentals (public pages read live)" },
+    { "provider": "SANS security awareness resources", "url": "https://www.sans.org/security-awareness-training/", "useFor": "awareness topics (phishing, password security) — public pages only" },
+    { "provider": "EFF", "url": "https://www.eff.org/", "useFor": "privacy and security explainers (public pages)" },
+    { "provider": "Cisco / Cloudflare public explainers", "url": "https://www.cloudflare.com/learning/", "useFor": "network, TLS/HTTPS, encryption explainers (public pages read live)" }
+  ],
+  "cautions": [
+    "DEFENSIVE FRAMING ONLY: describe threats and attacks at the conceptual level (what they are, how they work in general, how to defend). NEVER provide step-by-step attack instructions, exploit code, or tool-specific attack workflows. If a source contains attack detail, paraphrase only the defensive-relevant parts.",
+    "LITERACY LEVEL: no tools, no command lines, no pentesting. Teach concepts and best practices; keep claims modest and sourced.",
+    "LEGAL/ETHICAL: state plainly that unauthorized access to systems is illegal; the lessons are about protection and awareness, not offensive skills.",
+    "NO INDIVIDUALIZED ADVICE: password/mfa lessons give general best practices (long passphrases, password managers, MFA enablement) without credential-handling or corporate policy specifics. Time-anchor threat trends (e.g. 'as of the cited source').",
+    "DEFINITIONAL DISTINCTIONS MUST BE CLEAN: threats vs vulnerabilities vs risk (the classic trio); authentication vs authorization; encryption vs hashing (encryption is reversible, hashing is one-way); viruses vs worms vs trojans vs ransomware (malware families); firewalls vs network segmentation (defense layers).",
+    "Distribute question answer keys EVENLY across A/B/C/D, ensuring at least one C and one D per topic. Verify keys yourself from the file, and avoid reusing identical question-stem templates across topics."
+  ]
+}
