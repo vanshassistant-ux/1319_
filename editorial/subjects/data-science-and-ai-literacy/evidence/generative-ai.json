@@ -1,0 +1,163 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:generative-ai",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "what generative AI is: AI that creates new content (text, images, audio, video, code) rather than only classifying or predicting",
+      "the general mechanism: models learn patterns from vast collections of examples, then generate new outputs that follow those patterns",
+      "capabilities as of the mid-2026 sources: drafting and summarizing text, translation, image and music creation, code generation",
+      "documented limitations: wrong facts and fabricated citations; confabulation/hallucinations as a documented failure mode (referenced only; hallucinations is a sibling topic)",
+      "generative AI versus classifying/predicting AI; large language models as the text-focused family of generative AI (referenced only; large-language-models is a sibling topic)",
+      "responsible use at the general level: verify outputs, know the source, mind privacy (referenced only; evaluating-ai-output and ai-privacy are sibling topics)"
+    ],
+    "supporting": [
+      "foundation models and the training-then-generation pipeline at intuition level",
+      "the prompt as the request that directs generation (referenced only; prompting-basics is a sibling topic)",
+      "time-anchoring: capabilities described as of the cited sources' dates, never as timeless facts"
+    ],
+    "outOfScope": [
+      "large-language-models (own topic)",
+      "hallucinations (own topic)",
+      "prompting-basics (own topic)",
+      "ai-ethics (own topic)",
+      "tool-specific workflows and hands-on usage (literacy level: no tools)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Generative AI is the class of AI models that emulate the structure and characteristics of input data in order to generate derived synthetic content — images, videos, audio, text, and other digital content — rather than only classifying or predicting.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-ai-600-1-generative-ai-profile", "ibm-what-is-generative-ai"],
+      "status": "supported"
+    },
+    {
+      "claim": "Generative models are trained on vast collections of examples by predicting the next element in a sequence (the next word in a sentence, the next element in an image, the next command in a line of code) and continually adjusting to reduce errors; after training they generate new content that follows the learned patterns in response to prompts.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ibm-what-is-generative-ai", "nist-ai-600-1-generative-ai-profile"],
+      "status": "supported"
+    },
+    {
+      "claim": "As of the sources read in August 2026, generative AI tools can draft and summarize text, translate between languages (including translating between programming languages), create realistic images and original music, synthesize speech, and produce video from text prompts.",
+      "claimType": "CURRENT",
+      "sourceIds": ["ibm-what-is-generative-ai", "mslearn-introduction-generative-ai"],
+      "status": "supported"
+    },
+    {
+      "claim": "Large language models are the text-focused family of generative AI and, as of IBM's 2026 description, the most common foundation models, created for text-generation applications; foundation models for image, video, and sound/music generation and multimodal models also exist.",
+      "claimType": "CURRENT",
+      "sourceIds": ["ibm-what-is-generative-ai", "mslearn-introduction-generative-ai"],
+      "status": "supported"
+    },
+    {
+      "claim": "Generative AI can produce confidently stated but false content: NIST's Generative AI Profile documents confabulation (colloquially 'hallucinations') as a risk by which users may be misled or deceived, and IBM cites the example of a lawyer whose generative AI research tool produced entirely fictional court cases with quotes and citations.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": ["nist-ai-600-1-generative-ai-profile", "ibm-what-is-generative-ai"],
+      "status": "supported"
+    },
+    {
+      "claim": "Because confabulation is a documented failure mode, users should verify important generative AI outputs (facts, citations, numbers) against reliable sources and be transparent about AI-made content; NIST's profile discusses provenance tracking for generated content as part of managing risk.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["nist-ai-600-1-generative-ai-profile"],
+      "status": "supported"
+    },
+    {
+      "claim": "Data put into a generative AI model as part of a prompt can be stored, reused, or exposed: NIST lists data privacy among the risks of generative AI, and IBM warns that prompts should not include private or proprietary information.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["nist-ai-600-1-generative-ai-profile", "ibm-what-is-generative-ai"],
+      "status": "supported"
+    },
+    {
+      "claim": "The NIST AI Risk Management Framework frames data-driven and AI systems as carrying risks to individuals, organizations, and society that organizations should manage.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["nist-ai-risk-management-framework"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether generative AI output counts as 'original' content",
+      "positions": [
+        "IBM calls generative AI output 'original content' created in response to a user's prompt or request",
+        "NIST (quoting Executive Order 14110) calls it 'derived synthetic content' that emulates the structure and characteristics of input data"
+      ],
+      "resolution": "The lesson uses both ideas: outputs are new — not copies of any single training example — but they are derived from patterns in the training data, so 'original' is used loosely. The lesson avoids claiming true authorship or novelty beyond pattern continuation."
+    },
+    {
+      "issue": "How strongly to state current model capabilities",
+      "positions": [
+        "Provider explainers (IBM, Microsoft Learn) describe writing, summarizing, translating, image, music, speech, and video generation as current capabilities",
+        "Capabilities and specific tools change quickly, and quality varies by tool and task"
+      ],
+      "resolution": "All capability claims are time-anchored ('as of the sources checked in 2026') and phrased as general capabilities, with example tools (DALL-E, Midjourney, Stable Diffusion) attributed to IBM, never stated as timeless facts."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "No machine-generated draft existed for this topic in public/content/phase-2/lessons.json at the time of writing, so there were no draft claims to audit; the topic record in content-progress.json was still marked 'planned'."
+  ],
+  "correctionsNeeded": [
+    "All AI capability claims were time-anchored to the cited sources (read 2026-08-21) rather than stated as permanent facts.",
+    "The definition of generative AI is attributed to NIST AI 600-1 (quoting Executive Order 14110) and IBM; the hallucination failure mode is attributed to NIST's confabulation risk entry and IBM's fictional-cases example, with deep coverage left to the hallucinations sibling topic.",
+    "Large language models are presented only as the text-focused family of generative AI, with a pointer to the large-language-models sibling topic.",
+    "Responsible-use guidance stays at the general level (verify, know the source, mind privacy) with pointers to the evaluating-ai-output and ai-privacy sibling topics."
+  ],
+  "rightsIssues": [
+    "NIST AI 600-1 is a U.S. government work (public domain); two short quotes are used (the EO 14110 definition and the confabulation risk description).",
+    "IBM and Microsoft Learn pages are REFERENCE_ONLY; their facts are paraphrased into original prose, with example tool names (DALL-E, Midjourney, Stable Diffusion) attributed to IBM."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-ai-600-1-generative-ai-profile",
+      "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile (NIST AI 600-1)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "license": "U.S. Government work; not subject to copyright in the United States",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Read the PDF text layer directly (nvlpubs.nist.gov, ~1.2 MB) on 2026-08-21. Supports: the Executive Order 14110 definition of generative AI as the class of AI models that emulate the structure and characteristics of input data to generate derived synthetic content (images, videos, audio, text, and other digital content); confabulation ('the production of confidently stated but erroneous or false content', colloquially hallucinations) listed as a documented risk by which users may be misled or deceived; data privacy among GAI risk categories; provenance tracking for generated content; the AI RMF cross-sectoral profile framing that also covers large language models. Two short quotes from this U.S. government document are used; the rest is synthesized into original prose."
+    },
+    {
+      "id": "ibm-what-is-generative-ai",
+      "title": "What is generative AI?",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/topics/generative-ai",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl with a browser user-agent on 2026-08-21. Supports: generative AI as AI that can create original content such as text, images, video, audio, or software code in response to a prompt; the training mechanism of millions of 'fill in the blank' predictions (next word, next image element, next line of code) with continual adjustment; large language models as the most common foundation models, created for text generation, alongside image, video, sound/music, and multimodal foundation models; capabilities as of 2026 (image tools such as DALL-E, Midjourney, Stable Diffusion; speech and original-music synthesis; code generation and translation between programming languages; emerging text-to-video tools); hallucinations defined as outputs that are nonsensical or inaccurate yet seem plausible, with the fictional-court-cases lawyer example; and warnings that data put into a model as part of a prompt should not expose private or proprietary information. Facts paraphrased into original prose; no wording reproduced."
+    },
+    {
+      "id": "mslearn-introduction-generative-ai",
+      "title": "Introduction to generative AI and agents (Microsoft Learn training module: fundamentals-generative-ai)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live on 2026-08-21. Supports: generative AI powers applications that can create content, answer questions, and assist with tasks; the module's learning objectives cover core generative AI concepts, large language models, prompts, and AI agents — used to corroborate the definition and the LLM-within-generative-AI relationship. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "nist-ai-risk-management-framework",
+      "title": "AI Risk Management Framework (AI RMF)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Reused registry record with an identical id and URL to the existing phase-2 source-registry entry. Supports the framing that data-driven and AI systems carry risks to individuals, organizations, and society that organizations should manage. Detailed ethics and risk treatment belongs to the ai-ethics and nist-ai-risk-concepts sibling topics; used here only as a pointer."
+    }
+  ]
+}

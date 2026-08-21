@@ -1,0 +1,223 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:training-versus-testing",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "training data as what a model learns from",
+      "test data as a held-out set used for checking",
+      "the split idea: dividing one dataset before training",
+      "why the split matters: testing on training data flatters the model (memorization vs learning)",
+      "the general practice: set aside data before training; never tune on the test set",
+      "evaluation basics: accuracy and errors named simply",
+      "the honesty principle: test results only mean something on unseen data"
+    ],
+    "supporting": [
+      "generalization as applying learned patterns to new cases",
+      "the training loop (train, evaluate, refine) and where evaluation fits",
+      "warning that repeated use of a test set wears it out",
+      "caution that a single accuracy number can mislead on skewed data"
+    ],
+    "outOfScope": [
+      "what training data is and how it is built (sibling topic: training-data)",
+      "overfitting mechanics and prevention (sibling topic: overfitting)",
+      "models and how they work (sibling topic: models)",
+      "detailed evaluation metrics such as precision and recall (sibling topic: evaluating-ai-output)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A machine learning model learns from its training data, the set of examples it is shown while being trained, and improves its predictions through that process.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "gc-what-is-machine-learning",
+        "gc-mlcc-dividing-datasets"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The test set is a separate portion of the dataset, set aside before training, used to check the trained model on cases it never saw; testing against unseen data is standard machine learning practice.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "gc-mlcc-dividing-datasets",
+        "mslearn-azure-ml-split-data"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Testing a model on examples different from those it trained on is stronger proof of its quality than testing on the same examples.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "gc-mlcc-dividing-datasets"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A model evaluated on its own training data can look better than it really is, because it has already seen those examples; memorization can masquerade as learning.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "gc-mlcc-dividing-datasets",
+        "ibm-what-is-overfitting"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The general practice is to set aside part of the data before training (ideally by a randomized split) and reserve it exclusively for testing after training finishes.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "mslearn-azure-ml-split-data",
+        "gc-mlcc-dividing-datasets"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A test set loses value with repeated use: the more a team tunes the model based on test results, the more the model fits the test set and the less the results say about real-world performance.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "gc-mlcc-dividing-datasets"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Overfitting is the failure mode in which a model fits its training data so closely, memorizing even its noise, that it cannot make accurate predictions on new data.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-overfitting"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A low error rate on the training data combined with a high error rate on the test data signals overfitting, which is why a test set is set aside to check for it.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-overfitting"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Accuracy is the proportion of predictions that were correct, and it can mislead when one category dominates the data; errors are the predictions that missed.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "gc-mlcc-accuracy"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Training is an iterative loop of training, evaluating, and refining, which is why evaluation of a model under development uses data other than the final test set.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "mslearn-fundamentals-machine-learning"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether a dataset should be split into two sets (train/test) or three sets (train/validation/test).",
+      "positions": [
+        "A simple two-way split into training and test data is enough to explain the core idea at literacy level.",
+        "Google's ML Crash Course recommends a three-way split, with a validation set used during development so the test set stays fresh for the final check."
+      ],
+      "resolution": "The lesson teaches the two-set core and notes that careful teams use other data, such as a validation set, while still making changes, so the test set is used once at the end. Full validation-set workflow belongs to practitioner material, not this literacy lesson."
+    },
+    {
+      "issue": "Whether accuracy is a good measure of a model.",
+      "positions": [
+        "Accuracy is intuitive and the default summary for many models.",
+        "Accuracy alone can mislead, especially on imbalanced data where one category dominates."
+      ],
+      "resolution": "The lesson names accuracy and errors simply and explicitly warns that one accuracy number is not the whole story, pointing to the evaluating-ai-output sibling topic for full metrics."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's boilerplate ('Training Versus Testing is a foundational concept in Data Science & Ai Literacy', 'a college-level explanation names the concept') had no evidential support and was discarded entirely.",
+    "The draft's 'toolbox drawer label' analogy and its claim that the topic 'helps you choose the right tool' were unsupported and replaced with the verified split concept."
+  ],
+  "correctionsNeeded": [
+    "Replaced the machine-generated boilerplate draft with original prose grounded in the verified sources.",
+    "Corrected the draft's framing of the topic as a definition to recite; the lesson now teaches the split, the unseen-data rule, and the honesty principle as the core content.",
+    "Expanded vocabulary from circular definitions ('A foundational Data Science & Ai Literacy concept covered in this lesson') to concrete, non-circular definitions.",
+    "Replaced the draft's 3-option quickCheck items with 5 four-option questions matching the question-bank rules."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "gc-mlcc-dividing-datasets",
+      "title": "Datasets: Dividing the original dataset (Machine Learning Crash Course)",
+      "provider": "Google for Developers",
+      "url": "https://developers.google.com/machine-learning/crash-course/overfitting/dividing-datasets",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21 at the canonical URL (the page was also reachable via /crash-course/training-and-test-sets/video-lecture, which redirects to the canonical path). Supports: models should be tested against a separate dataset called the test set to ensure accurate predictions on unseen data; the training set is what the model trains on; testing on different examples is stronger proof of fitness than testing on the same set; repeated use of a test set makes the model fit it ('teaching to the test'); test sets and validation sets wear out with repeated use and should be refreshed; duplicates between training and test sets undermine test results. Facts synthesized into original prose; no page wording reproduced."
+    },
+    {
+      "id": "gc-mlcc-accuracy",
+      "title": "Classification: Accuracy, precision, recall (Machine Learning Crash Course)",
+      "provider": "Google for Developers",
+      "url": "https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Supports: accuracy as the proportion of all classifications that were correct; the spam-classification example in which accuracy measures the fraction of emails correctly classified; the warning that accuracy can mislead on imbalanced datasets where one class is rare, and that other metrics are then preferable. Only the literacy-level definition and the imbalance caution were used; the mathematical formula was not reproduced (lesson is math-free)."
+    },
+    {
+      "id": "ibm-what-is-overfitting",
+      "title": "What is Overfitting?",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/topics/overfitting",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Supports: overfitting as a model fitting too closely or exactly to its training data so it cannot make accurate predictions on other data; the model memorizing noise within the dataset and failing to generalize; the standard practice that part of the data is typically set aside as a test set to check for overfitting; a low training error combined with a high test error signaling overfitting. Used only as a pointer for the failure-mode mention; the overfitting sibling topic owns the full treatment. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "mslearn-azure-ml-split-data",
+      "title": "Split Data: Component reference - Azure Machine Learning",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/split-data",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21 (the page shows a sign-in banner for some features, but the public article body rendered fully). Supports: dividing a dataset into two distinct sets, useful when separating data into training and testing sets; the randomized split option as the preferred way to create training and test datasets. The tool-specific designer workflow was not used; only the concept-level statements about splitting for training and testing."
+    },
+    {
+      "id": "gc-what-is-machine-learning",
+      "title": "What is Machine Learning? Types and uses",
+      "provider": "Google Cloud",
+      "url": "https://cloud.google.com/learn/what-is-machine-learning",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Reused from the phase source registry with the identical URL; re-read live 2026-08-21. Supports: machine learning as systems that learn and improve from data; training as the process of fitting the model to predict the expected outcome. Used for the training-data definition and the learning-from-data framing."
+    },
+    {
+      "id": "mslearn-fundamentals-machine-learning",
+      "title": "Introduction to Machine Learning Concepts (Microsoft Learn training module: fundamentals-machine-learning)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Reused from the phase source registry with the identical URL; module landing page re-read live 2026-08-21. Supports: the train-evaluate-refine training loop and the module objective of describing considerations for training and evaluating machine learning models. Used to frame where evaluation sits in the development loop; no tool workflow used."
+    }
+  ]
+}

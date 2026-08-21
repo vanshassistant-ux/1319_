@@ -1,0 +1,202 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:algorithmic-fairness",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "Algorithmic fairness as the practice of designing and checking AI systems so they do not treat people unfairly, judged by harm",
+      "Why fairness is hard: no single definition exists and different definitions can conflict",
+      "Three named fairness framings at intuition level: equal outcomes (demographic parity), equal error rates across groups (equalized odds), equal opportunity",
+      "The bias/fairness boundary: bias is the input problem, fairness is the design goal",
+      "Measuring and auditing: checking behavior across groups, representative data, documentation",
+      "Fairness in practice: stakeholders, transparency, redress",
+      "The honest bottom line: fairness is an ongoing social and technical process"
+    ],
+    "supporting": [
+      "Sensitive attributes and proxies",
+      "Group fairness as asking which groups are at risk of harm",
+      "The socio-technical nature of AI systems",
+      "NIST AI RMF trustworthy-AI characteristics and Govern/Map/Measure/Manage functions"
+    ],
+    "outOfScope": [
+      "Bias taxonomy and statistical/representational bias details (sibling topic: bias)",
+      "Broader AI ethics frameworks (sibling topic: ai-ethics)",
+      "NIST AI RMF risk-management details (sibling topic: nist-ai-risk-concepts)",
+      "Any mathematics of fairness metrics or formulas",
+      "Legal standards for discrimination"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Algorithmic fairness is the practice of designing and checking AI systems so they do not treat people or groups unfairly; one standard way to define unfair behavior is by its harm or impact on people.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "microsoft-learn-ml-fairness"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "There is no single definition of fairness: numerous fairness metrics exist in the research literature, and many quantitative fairness metrics cannot all be satisfied simultaneously, so different definitions can conflict.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "microsoft-learn-ml-fairness",
+        "nist-sp-1270"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Common fairness framings include equal outcomes (demographic parity), equal error rates across groups (equalized odds), and equal opportunity; each is a named metric or parity constraint in the literature and each has a distinct intuition.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nist-sp-1270",
+        "microsoft-learn-ml-fairness"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Bias and fairness are distinct: bias is a distortion in data or models (systemic, statistical, or human in origin) that deprives results of representativeness, while fairness concerns whether a system's treatment of people is fair; bias is the input problem and fairness is the design goal.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nist-sp-1270",
+        "microsoft-learn-ml-fairness"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Removing a sensitive attribute does not make a system fair, because other features can act as proxies that still reveal sensitive information and badly chosen proxies can lead to discrimination.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nist-sp-1270"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Measuring fairness means checking a model's behavior across groups: computing outcomes and error metrics for subgroups defined by sensitive features or attributes, examining data for bias before training, and evaluating predictions for fairness afterward, supported by test, evaluation, validation, and verification (TEVV) and by documentation.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "microsoft-learn-ml-fairness",
+        "google-mlcc-fairness",
+        "nist-sp-1270"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Fairness in practice involves stakeholder participation (participatory design, multi-stakeholder approaches, humans in the loop), transparency, and human processes such as the ability to question decisions; quantitative metrics alone do not capture aspects of fairness such as justice and due process.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "nist-sp-1270",
+        "microsoft-learn-ml-fairness"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Managing fairness is an ongoing socio-technical process: NIST's AI Risk Management Framework names being fair, with harmful bias managed, among the characteristics of trustworthy AI, treats AI systems as inherently socio-technical, and organizes risk work into the four functions Govern, Map, Measure, and Manage across the AI lifecycle.",
+      "claimType": "CURRENT",
+      "sourceIds": [
+        "nist-ai-rmf-1-0",
+        "nist-ai-risk-management-framework"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Zero risk of bias in an AI system is not achievable, so fairness and bias work continue for the life of a system.",
+      "claimType": "CURRENT",
+      "sourceIds": [
+        "nist-sp-1270"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Which definition of fairness is the right one?",
+      "positions": [
+        "Equal outcomes (demographic parity): the system should produce similar outcomes across groups; NIST SP 1270 lists demographic parity among fairness metrics, and Microsoft Learn describes it as mitigating allocation harms.",
+        "Equal error rates (equalized odds): the system should make mistakes at similar rates across groups; Microsoft Learn describes equalized odds as diagnosing allocation and quality-of-service harms.",
+        "Equal opportunity: people who genuinely qualify for a good outcome should receive it at similar rates across groups; NIST SP 1270 lists equality of opportunity among fairness metrics.",
+        "Some observational definitions of fairness can increase discrimination depending on how the sensitive attribute relates to the data (NIST SP 1270), and many quantitative fairness metrics cannot all be satisfied simultaneously (Microsoft Learn)."
+      ],
+      "resolution": "The lesson teaches that no single definition is correct for every context: definitions can conflict, so teams must choose and justify a definition suited to the system's purpose and consequences, then measure against it. The act of choosing is itself part of fairness work."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft described algorithmic fairness as a 'foundational concept' that 'college courses use as a building block for later discussions' — generic machine boilerplate with no evidentiary support; discarded.",
+    "The draft's 'label on a toolbox drawer' framing implied fairness is a labeling or tool-selection aid — not supported by any source; replaced with the harm-based working definition.",
+    "The draft presented fairness as something to 'apply to a simple scenario' without defining it or explaining why it is contested — replaced with a defined, sourced treatment."
+  ],
+  "correctionsNeeded": [
+    "Replaced machine-generated boilerplate with a sourced working definition: algorithmic fairness is designing and checking AI systems so they do not treat people or groups unfairly, judged by harm (Microsoft Learn).",
+    "Added the core scholarly point that there is no single definition of fairness and that different fairness metrics can conflict (Microsoft Learn, NIST SP 1270).",
+    "Added the three named fairness framings at intuition level with attribution (NIST SP 1270, Microsoft Learn).",
+    "Added the bias/fairness boundary required by the source map's definitional-distinction note, including the proxy trap (NIST SP 1270).",
+    "Added auditing practices, stakeholder/transparency/redress framing, and the ongoing socio-technical bottom line (NIST SP 1270, Microsoft Learn, NIST AI RMF 1.0, Google ML Crash Course)."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "nist-sp-1270",
+      "title": "Towards a Standard for Identifying and Managing Bias in Artificial Intelligence (NIST Special Publication 1270)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1270.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read directly as the nvlpubs PDF (downloaded and text-extracted 2026-08-21). Supports: three categories of AI bias (systemic, statistical, human); statistical bias as a systematic distortion depriving results of representativeness; the socio-technical perspective; numerous fairness metrics in the literature (demographic parity, equality of opportunity, and others) and the observation that some observational definitions of fairness can increase discrimination depending on the data; references to inherent trade-offs in fair risk scoring; practices including transparency, test/evaluation/validation/verification (TEVV), participatory design, multi-stakeholder approaches, and humans in the loop; the statement that zero risk of bias is not achievable; the proxy warning. Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "nist-ai-rmf-1-0",
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0), NIST AI 100-1",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read directly as the nvlpubs PDF (downloaded and text-extracted 2026-08-21). Supports: 'fair, with harmful bias managed' as one of the characteristics of trustworthy AI; that creating trustworthy AI requires balancing characteristics according to context of use; that AI systems are inherently socio-technical, influenced by societal dynamics and human behavior; the four functions Govern, Map, Measure, and Manage as ongoing risk work. Distinct document from the AI RMF landing page record; used only for these framing claims."
+    },
+    {
+      "id": "microsoft-learn-ml-fairness",
+      "title": "Machine learning fairness - Azure Machine Learning (Microsoft Learn)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-fairness-ml",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Supports: defining unfair behavior by its harm or impact on people; harms of allocation and of quality of service; group fairness as asking which groups are at risk of experiencing harm; computing metrics across subgroups defined by sensitive features or attributes; the note that fairness is a socio-technical challenge, that quantitative fairness metrics do not capture aspects such as justice and due process, and that many quantitative fairness metrics cannot all be satisfied simultaneously; the parity-constraint framings demographic parity, equalized odds, and equal opportunity. Facts synthesized; no page wording reproduced."
+    },
+    {
+      "id": "google-mlcc-fairness",
+      "title": "Fairness - Machine Learning Crash Course (Google for Developers)",
+      "provider": "Google for Developers",
+      "url": "https://developers.google.com/machine-learning/crash-course/fairness",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Supports at framing level: the module's description of identifying and mitigating human biases that can negatively affect machine learning models, examining data for potential bias before training, evaluating a model's predictions for fairness, and its units on demographic parity and equality of opportunity. Used only for the general audit-habit framing; no page wording reproduced."
+    },
+    {
+      "id": "nist-ai-risk-management-framework",
+      "title": "AI Risk Management Framework (AI RMF)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Reused from the phase-2 source registry (id registered by a sibling topic worker and verified live 2026-08-21). Supports only the framing that AI systems carry risks to individuals, organizations, and society that organizations should manage; cited as the AI RMF entry point alongside the full standard document. No page wording reproduced."
+    }
+  ]
+}

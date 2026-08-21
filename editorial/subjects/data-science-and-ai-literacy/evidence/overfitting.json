@@ -1,0 +1,157 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:overfitting",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "Definition of overfitting: a model that fits its training data extremely well (too closely, even exactly) but fails to make accurate predictions on new data (IBM)",
+      "Core intuition: memorizing the training set versus learning the general pattern, with the original student-who-memorized-the-practice-exam example",
+      "Why it happens: a model that is too complex or trains too long can learn the noise (irrelevant details) in the data",
+      "Signs of overfitting: excellent training performance paired with poor test performance; held-out test data as the standard check (training-versus-testing referenced only)",
+      "Prevention: more clean and relevant data, simpler models, early stopping, checking on held-out data",
+      "Overfitting versus underfitting: too much memorization versus too little learning, both failing on new data; the goal is the sweet spot between them"
+    ],
+    "supporting": [
+      "Generalization as the fundamental goal of machine learning (IBM machine-learning page)",
+      "Bias-variance tradeoff framing kept at a conceptual level, no math",
+      "Regularization, feature selection, and ensemble methods named as advanced prevention tools (IBM)",
+      "Evaluation of AI systems as part of trustworthiness (NIST AI RMF)"
+    ],
+    "outOfScope": [
+      "Training-versus-testing methodology and evaluation details (training-versus-testing owns it; referenced only)",
+      "Model internals and how models are built (models owns it)",
+      "Training data collection and curation (training-data owns it)",
+      "Supervised and unsupervised learning mechanics (owned by their topics)",
+      "Tool-specific workflows and code (LITERACY level)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Overfitting occurs when a model fits too closely, or even exactly, to its training data, so that it cannot make accurate predictions on any data other than that training data.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ibm-what-is-overfitting"],
+      "status": "supported"
+    },
+    {
+      "claim": "Generalization, the translation of strong performance on training data into useful results on new, real-world data, is the fundamental goal of machine learning.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ibm-what-is-machine-learning"],
+      "status": "supported"
+    },
+    {
+      "claim": "Overfitting happens when a model trains for too long on sample data or is too complex, causing it to learn noise, the irrelevant information, within the dataset.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ibm-what-is-overfitting"],
+      "status": "supported"
+    },
+    {
+      "claim": "The telltale sign of overfitting is low error on the training data paired with high error on the test data; setting aside part of the data as a test set is the standard way to check for overfitting.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ibm-what-is-overfitting"],
+      "status": "supported"
+    },
+    {
+      "claim": "Standard ways to avoid overfitting include early stopping, training with more clean and relevant data, feature selection to simplify the model, and regularization; more data only helps when it is clean and relevant.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ibm-what-is-overfitting"],
+      "status": "supported"
+    },
+    {
+      "claim": "Underfitting occurs when the model has not trained long enough or the input variables are not significant enough to establish the dominant trend; underfitted models also generalize poorly to new data, with high bias and less variance.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ibm-what-is-overfitting"],
+      "status": "supported"
+    },
+    {
+      "claim": "Overfitting and underfitting sit on a bias-variance tradeoff, and the goal when fitting a model is the sweet spot in between, where the model establishes the dominant trend and applies it broadly to new data.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["ibm-what-is-overfitting"],
+      "status": "supported"
+    },
+    {
+      "claim": "Trustworthy design, development, use, and evaluation of AI products, services, and systems includes checking how they perform in the contexts where they will actually be used.",
+      "claimType": "CURRENT",
+      "sourceIds": ["nist-ai-risk-management-framework"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether overfitting is best described as memorization, noise-fitting, or a statistical property (high variance).",
+      "positions": [
+        "IBM frames overfitting as fitting too closely to training data and learning noise, with low training error and high variance as indicators.",
+        "Popular treatments describe it simply as 'the model memorized the training data'.",
+        "Some statistical treatments emphasize variance and the bias-variance tradeoff without the memorization language."
+      ],
+      "resolution": "The lesson uses IBM's framing throughout: memorization of the training set and learning noise are the accessible descriptions, and the bias-variance tradeoff is named conceptually without math, per the LITERACY level."
+    },
+    {
+      "issue": "Whether adding more data reliably prevents overfitting.",
+      "positions": [
+        "IBM: expanding the training set with more data can increase accuracy by offering more chances to parse the dominant relationship, but this works best with clean, relevant data; otherwise the model can just add complexity and overfit.",
+        "A common shorthand is 'more data fixes overfitting' with no qualification."
+      ],
+      "resolution": "The lesson follows IBM's qualified version: more clean, relevant data helps; the qualification is stated explicitly in the lesson and in a common-mistakes entry."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's in30Seconds ('Overfitting is a foundational concept in Data Science & Ai Literacy') was boilerplate with no verifiable content and was discarded.",
+    "The draft's college-version subsections were generic study advice ('A college-level explanation names the concept...'), not overfitting content, and were rebuilt from sources.",
+    "The draft's vocabulary entries ('context', 'evidence', 'application') did not describe overfitting concepts and were replaced.",
+    "The draft's toolbox-drawer and map-legend analogies had no source support and were replaced with original analogies.",
+    "The draft's three learning objectives were template phrasing and were replaced with topic-specific objectives.",
+    "The draft's worked example was generic ('A student reads a short scenario...') and was replaced with the original Northline Transit bike-share example."
+  ],
+  "correctionsNeeded": [
+    "Replaced all generic draft boilerplate with sourced, topic-specific content.",
+    "Added IBM's definition of overfitting and the generalization-as-goal framing from IBM's machine-learning page.",
+    "Added the original student-who-memorized-the-practice-exam example as the core intuition for memorization versus learning.",
+    "Added causes (too complex or trained too long, learning noise), signs (training-versus-test gap), and prevention strategies (more clean data, simpler models, early stopping, held-out testing) per IBM.",
+    "Added the overfitting-versus-underfitting contrast with the bias-variance tradeoff named conceptually (no math, per LITERACY).",
+    "Rebuilt the question bank to exactly five four-option items with answer keys at C, D, A, B, D (two D, one each of A, B, C)."
+  ],
+  "rightsIssues": [
+    "All sources used as REFERENCE_ONLY: no source prose reproduced; all lesson prose and examples are original. IBM pages carry no explicit reuse license, so facts were synthesized and wording was not adapted. NIST AI RMF is a U.S. government work (public domain in the United States)."
+  ],
+  "sourceRecords": [
+    {
+      "id": "ibm-what-is-overfitting",
+      "title": "What is Overfitting?",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/topics/overfitting",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl with a browser user-agent on 2026-08-21. Primary source for: the definition of overfitting (fits too closely or exactly to training data, cannot predict on other data); the role of generalization; causes (training too long, model too complex, learning noise); indicators (low training error, high test error, high variance); the test set as the standard check; prevention techniques (early stopping, more clean and relevant data, feature selection, regularization, ensemble methods); underfitting (high bias, low variance, also poor generalization); and the bias-variance tradeoff sweet spot. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "ibm-what-is-machine-learning",
+      "title": "What is Machine Learning?",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/topics/machine-learning",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl with a browser user-agent on 2026-08-21. Reuses the existing registry id and URL. Supports: generalization as the fundamental goal of machine learning, and post-training validation to ensure a model generalizes well rather than just overfitting the training data. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "nist-ai-risk-management-framework",
+      "title": "AI Risk Management Framework (AI RMF)",
+      "provider": "National Institute of Standards and Technology",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. Reuses the existing registry id and URL. Supports the framing that AI products, services, and systems should be designed, developed, used, and evaluated with trustworthiness considerations, including how they perform in real use. U.S. government work; public domain in the United States."
+    }
+  ]
+}

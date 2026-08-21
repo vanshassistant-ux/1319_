@@ -1,0 +1,222 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:features-and-labels",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "features as the measurable properties a model looks at, with the house-price example (size, rooms, location)",
+      "labels as the known answer for each example, the price in the house-price example",
+      "the feature-label pair as the fundamental unit of a supervised training example",
+      "feature quality: useful, relevant, honest features help; misleading or missing features hurt the model",
+      "choosing features is human work: feature engineering as design judgment that shapes what a model can learn",
+      "labels exist only in supervised learning; the one-sentence boundary with unsupervised learning"
+    ],
+    "supporting": [
+      "ground truth as the verified correct answer used as a label",
+      "labeling data requires human time and effort",
+      "dimensionality reduction as an illustration that features are numerous, human-chosen inputs"
+    ],
+    "outOfScope": [
+      "the supervised learning loop, classification, and regression (supervised-learning topic)",
+      "how training datasets are assembled, cleaned, and split (training-data topic)",
+      "what models are and how they fit patterns (models topic)",
+      "clustering and other unsupervised tasks in detail (unsupervised-learning topic)",
+      "bias and fairness implications of feature choice (bias and algorithmic-fairness topics)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Features are the measurable properties of an example that a model uses as inputs; in a house-price model the features include size, number of rooms, and location.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["mslearn-fundamentals-machine-learning", "ibm-what-is-feature-engineering"],
+      "status": "supported"
+    },
+    {
+      "claim": "A feature, also called a dimension, is an input variable used to generate model predictions.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["ibm-what-is-feature-engineering"],
+      "status": "supported"
+    },
+    {
+      "claim": "The label is the known answer attached to an example; in a house-price model the label is the price the house sold for.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["gcloud-what-is-supervised-learning", "ibm-what-is-supervised-learning"],
+      "status": "supported"
+    },
+    {
+      "claim": "A supervised training example couples feature values with a known label value; training data includes both, and the model uses them to predict unknown labels for future cases.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["mslearn-fundamentals-machine-learning", "gcloud-what-is-supervised-learning"],
+      "status": "supported"
+    },
+    {
+      "claim": "Feature quality sets the ceiling on model quality: high-quality data improves model performance, while poor or noisy data leads to inaccurate predictions.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ms-ml4b-intro-to-ml", "ibm-what-is-feature-engineering", "gc-what-is-machine-learning"],
+      "status": "supported"
+    },
+    {
+      "claim": "Choosing and preparing features is human work: feature engineering selects the most relevant aspects of raw data for the task, is context-dependent, and requires domain knowledge.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["ibm-what-is-feature-engineering"],
+      "status": "supported"
+    },
+    {
+      "claim": "Labeled datasets are data points together with their correct outputs, sometimes called ground truth, and labeling data takes a lot of time and effort.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ibm-what-is-supervised-learning"],
+      "status": "supported"
+    },
+    {
+      "claim": "Unsupervised learning learns from data without labels, while supervised learning requires labeled examples; the presence or absence of labels is the boundary between them.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["gc-what-is-unsupervised-learning", "ibm-what-is-unsupervised-learning"],
+      "status": "supported"
+    },
+    {
+      "claim": "Dimensionality reduction reduces the number of features in a dataset, illustrating that features are numerous, human-chosen inputs rather than fixed facts.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["gc-what-is-unsupervised-learning", "ibm-what-is-unsupervised-learning"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Sources differ in what they call a feature (input variable, dimension, predictor, attribute), and some explainers blur the line between feature selection and feature extraction.",
+      "positions": [
+        "IBM treats 'feature' and 'dimension' as synonyms and notes many sources use feature engineering and feature extraction interchangeably",
+        "Google Cloud consistently uses 'features' for the inputs of a supervised model",
+        "Microsoft Learn uses 'feature values' paired with 'label values'"
+      ],
+      "resolution": "The lesson uses the widely shared definition, features are the inputs a model looks at, with IBM's input-variable framing as the technical anchor; selection-versus-extraction distinctions belong to a practitioner course and are not taught here."
+    },
+    {
+      "issue": "Whether the features-versus-labels distinction belongs inside supervised learning or stands as its own topic.",
+      "positions": [
+        "The supervised-learning sibling lesson introduces features and labels briefly and points readers to this lesson",
+        "This lesson owns the full treatment, including feature quality and the human work of choosing features"
+      ],
+      "resolution": "This lesson teaches the distinction in depth while keeping the supervised learning loop, classification, and regression inside the sibling topic, per the curriculum's topic ownership."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft claimed features and labels are 'a foundational concept in Data Science & Ai Literacy' with no substantive content or sources; nothing factual was carried forward from it.",
+    "The draft's toolbox-drawer analogy described labeling a physical drawer, not machine learning labels, and was discarded entirely."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire boilerplate draft with original content; no draft sentence survived.",
+    "Added the required house-price example (features: size, rooms, location; label: price), anchored to Microsoft Learn's regression unit and IBM's feature-engineering explainer.",
+    "Built the missing structure: the draft had no question bank, no sources, only two thin college subsections, and no Eli-10 analogy limits; all sections were written fresh.",
+    "Scoped the supervised-versus-unsupervised distinction to the one-sentence label boundary so sibling topics keep ownership of their material."
+  ],
+  "rightsIssues": [
+    "All sources are used REFERENCE_ONLY; facts were synthesized into original prose and no source wording was reproduced.",
+    "No reuse licenses are asserted for the vendor pages; IBM, Google Cloud, and Microsoft Learn pages were read live and treated as reference material only."
+  ],
+  "sourceRecords": [
+    {
+      "id": "mslearn-fundamentals-machine-learning",
+      "title": "Introduction to Machine Learning Concepts (Microsoft Learn training module: fundamentals-machine-learning)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21 (module landing page plus the types-of-machine-learning, regression, and binary-classification units). Supports: supervised machine learning defined as training data that includes both feature values and known label values, used to predict unknown labels for future cases; regression as predicting a numeric label, with property selling price from size, bedrooms, and location as the illustration. Facts synthesized into original lesson prose; no wording reproduced."
+    },
+    {
+      "id": "gcloud-what-is-supervised-learning",
+      "title": "What is supervised learning?",
+      "provider": "Google Cloud",
+      "url": "https://cloud.google.com/discover/what-is-supervised-learning",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Supports: supervised learning as a category of machine learning that uses labeled datasets; features as inputs and labels as correct outputs; the training loop of analyzing labeled pairs and then predicting on new data; classification as predicting categorical labels and regression as predicting continuous values. Facts synthesized into original lesson prose; no wording reproduced."
+    },
+    {
+      "id": "gc-what-is-unsupervised-learning",
+      "title": "What is unsupervised learning?",
+      "provider": "Google Cloud",
+      "url": "https://cloud.google.com/discover/what-is-unsupervised-learning",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Supports: unsupervised learning as machine learning that learns from data without labels; clustering as grouping unlabeled data by similarity; dimensionality reduction as reducing the number of features; and the supervised-versus-unsupervised distinction being the type of input data, labeled versus unlabeled. Facts synthesized into original prose; no page wording reproduced."
+    },
+    {
+      "id": "ibm-what-is-supervised-learning",
+      "title": "What is supervised learning?",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/think/topics/supervised-learning",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Supports: supervised learning as a machine learning technique that uses labeled datasets to train models; labeled datasets as sample data points plus correct outputs, called ground truth; classification as sorting data into categories and regression as predicting continuous values; and the explicit statement that labeling data takes a lot of time and effort. Facts synthesized into original lesson prose; no wording reproduced."
+    },
+    {
+      "id": "ibm-what-is-unsupervised-learning",
+      "title": "What is unsupervised learning?",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/think/topics/unsupervised-learning",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Supports: unsupervised learning as machine learning that analyzes and clusters unlabeled datasets, discovering hidden patterns without human intervention; and dimensionality reduction as reducing the number of features while preserving dataset integrity. Facts synthesized into original prose; no page wording reproduced."
+    },
+    {
+      "id": "ms-ml4b-intro-to-ml",
+      "title": "ML for Beginners — Introduction to machine learning",
+      "provider": "Microsoft Learn (GitHub curriculum)",
+      "url": "https://github.com/microsoft/ML-For-Beginners/tree/main/1-Introduction/1-intro-to-ML",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read the lesson README (via raw.githubusercontent.com) on 2026-08-21. Supports: machine learning as automated systems that learn hidden patterns from data to aid decisions; and the statement that high-quality data improves model performance while poor or noisy data leads to inaccurate predictions. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "gc-what-is-machine-learning",
+      "title": "What is Machine Learning? Types and uses",
+      "provider": "Google Cloud",
+      "url": "https://cloud.google.com/learn/what-is-machine-learning",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl with a browser user-agent on 2026-08-21. Supports: machine learning as systems that learn and improve without being explicitly programmed; supervised learning (labeled training data, output known) and unsupervised learning (unlabeled data, groups found by attributes); and the warning that machine learning is often only as good as the data it is fed. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "ibm-what-is-feature-engineering",
+      "title": "What is feature engineering?",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/think/topics/feature-engineering",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl with a browser user-agent on 2026-08-21. Supports: a feature, also called a dimension, as an input variable used to generate model predictions; feature engineering as the process of transforming raw data into relevant information for machine learning models; model performance largely resting on the quality of the data used during training; feature engineering as context-dependent work requiring data analysis and domain knowledge; and data scientists spending a large portion of their time on data preparation and feature creation. Facts synthesized; no wording reproduced."
+    }
+  ]
+}

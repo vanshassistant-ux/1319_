@@ -1,0 +1,193 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:training-data",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "What training data is: the examples a model is fed during learning",
+      "The role of training data: the model's patterns come from these examples (the model learns what it is shown)",
+      "Quantity versus quality: more data helps, but quality matters more",
+      "Where training data comes from: collected, borrowed/reused, labeled by people, generated (synthetic)",
+      "Labels as human work: manual, slow, imperfect",
+      "Training data and bias: under-represented groups are learned poorly (bridge to the bias topic)",
+      "The general principle: the model is a mirror of its training data"
+    ],
+    "supporting": [
+      "Machine learning as learning patterns from training data",
+      "Ground truth as the standard provided by labels",
+      "Labeling approaches (internal, synthetic, programmatic, crowdsourcing) as evidence that labels are labor",
+      "Garbage in, garbage out as the folk framing of data quality"
+    ],
+    "outOfScope": [
+      "Features and labels (own topic: features-and-labels)",
+      "Training versus testing data (own topic: training-versus-testing)",
+      "Bias and fairness in depth (own topics: bias, algorithmic-fairness)",
+      "Data collection methods and design (own topic: data-collection)",
+      "Tool-specific workflows (no pandas, scikit-learn, or platform tutorials)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Training data is the set of examples a machine learning model is shown during training; machine learning is the process of optimizing the model so it can predict the correct response based on the training data samples.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "gc-what-is-machine-learning",
+        "ibm-what-is-machine-learning"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The patterns a model applies to new data come from its training data: a trained model applies patterns it learned from training data to infer the correct output for a real-world task.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-machine-learning"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "More training samples improve accuracy only when the training data is of high quality: 'assuming the training data is of high quality, the more training samples the machine learning algorithm receives, the more accurate the model will become.'",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "gc-what-is-machine-learning"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Low-quality labels degrade learning: labeling approaches are prone to human error (coding errors, manual entry errors), which decreases the quality of data and leads to inaccurate modeling; 'garbage in, garbage out.'",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-data-labeling"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Acquiring training data can require a lot of data before a model is useful, and data acquisition is listed among machine learning's challenges.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "gc-what-is-machine-learning"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Labels are human work: the process traditionally requires a human in the loop to provide ground truth in the form of data annotations, and labeling data can become prohibitively costly and time-consuming; manual labeling is expensive and time-consuming.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-machine-learning",
+        "ibm-what-is-data-labeling"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Training data is produced several ways: collected through data acquisition, reused from preexisting datasets, labeled by human annotators, or generated synthetically from existing data; crowdsourcing (for example reCAPTCHA) also produces labels.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-data-labeling",
+        "gc-what-is-machine-learning"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "If the training data is biased, the model learns the bias: 'if a machine learning algorithm is fed a biased dataset, it'll deliver biased results'; models can underperform for specific demographic groups or for rarely observed input conditions in the training data.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "gc-what-is-machine-learning",
+        "microsoft-responsible-ai-principles"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Machine learning is only as good as the data it is fed: Google Cloud's explainer states 'machine learning's often only as good as the data it's being fed,' and IBM frames bad data as 'garbage in, garbage out.'",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "gc-what-is-machine-learning",
+        "ibm-what-is-data-labeling"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "How much training data a model needs before it is useful.",
+      "positions": [
+        "Google Cloud says more training samples improve accuracy (assuming high quality) and lists data acquisition - requiring a lot of data - as a challenge",
+        "IBM notes deep learning requires very large amounts of data, and that labeling data can become prohibitively costly and time-consuming"
+      ],
+      "resolution": "The lesson makes no dataset-size claims; it teaches the general principle that quantity helps only when quality holds, using an original illustration (100 clean labeled photos versus 10,000 mislabeled ones) framed as the sources' shared logic, not as a measured result."
+    },
+    {
+      "issue": "How to frame bias arising from training data.",
+      "positions": [
+        "Google Cloud frames it as biased data producing biased results",
+        "Microsoft's responsible-AI guidance frames it as underperformance for demographic groups or rarely observed conditions in the training data"
+      ],
+      "resolution": "The lesson uses the under-representation framing as the bridge, states it in the words both sources support, and points to the bias topic for the full treatment rather than claiming a specific mechanism or magnitude."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's boilerplate ('Training Data is a foundational concept in Data Science & Ai Literacy...') - generic phrasing with no source support.",
+    "The generated draft's toolbox-drawer description ('Think of training data as a label on a toolbox drawer') - a generic analogy that does not describe examples fed to a model.",
+    "The generated draft's vocabulary entries ('context', 'evidence', 'application') that define generic study words rather than training-data terms."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire generated draft (in30Seconds, whyItMatters, objectives, college version, vocabulary, eli10, worked example, mistakes, question bank) with original prose about the examples a model learns from.",
+    "Rewrote the question bank: five original questions with keys verified against the evidence (keys at A, C, D, B, C; no answer slot used more than twice, both C and D present).",
+    "Anchored every factual claim to at least one of the four sources read live on 2026-08-21 (Google Cloud, IBM machine learning, IBM data labeling, Microsoft Learn responsible AI)."
+  ],
+  "rightsIssues": [
+    "All four sources are vendor documentation pages under standard copyright; none explicitly grants reuse rights, so all are classified REFERENCE_ONLY and no source wording is reproduced in the lesson (one short qualifying phrase from Google Cloud is quoted inside the evidence packet's claim record only, for auditability)."
+  ],
+  "sourceRecords": [
+    {
+      "id": "gc-what-is-machine-learning",
+      "title": "What is machine learning?",
+      "provider": "Google Cloud",
+      "url": "https://cloud.google.com/learn/what-is-machine-learning",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Supports: machine learning as optimizing a model to predict correct responses based on training data samples; the quality-before-quantity principle ('assuming the training data is of high quality, the more training samples... the more accurate the model will become'); supervised learning as using labeled training data to map features to labels; bias potential ('if a machine learning algorithm is fed a biased dataset, it'll deliver biased results'); data acquisition as a challenge requiring a lot of data. Facts synthesized into original lesson prose; no wording reproduced."
+    },
+    {
+      "id": "ibm-what-is-machine-learning",
+      "title": "What is machine learning?",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/topics/machine-learning",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Supports: machine learning as algorithms that learn the patterns of training data and make accurate inferences about new data; a trained model as applying patterns it learned from training data to real-world tasks; ground truth provided by labeled data in supervised learning; the human-in-the-loop origin of the term 'supervised'; labeling data as potentially prohibitively costly and time-consuming; deep learning requiring very large amounts of data. Facts synthesized into original lesson prose; no wording reproduced."
+    },
+    {
+      "id": "ibm-what-is-data-labeling",
+      "title": "What is data labeling?",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/think/topics/data-labeling",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Supports: labeling as assigning labels to raw data (images, text, video) so models can interpret it; labeling approaches including internal (manual), synthetic labeling (generating new project data from preexisting datasets), programmatic (scripts), outsourcing, and crowdsourcing (reCAPTCHA as the famous example); challenges: manual labeling expensive and time-consuming, prone to human error (coding errors, manual entry errors) that decreases data quality; 'garbage in, garbage out' framing; human-in-the-loop labelers. Facts synthesized into original lesson prose; no wording reproduced."
+    },
+    {
+      "id": "microsoft-responsible-ai-principles",
+      "title": "What is responsible AI?",
+      "provider": "Microsoft Learn (Azure Machine Learning documentation)",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Supports: the fairness and inclusiveness principle (AI systems should treat everyone fairly and avoid affecting similar groups differently); error-analysis framing that models can underperform for specific demographic groups or for rarely observed input conditions in the training data. Used only for the bias bridge in the training-data lesson; the bias and algorithmic-fairness topics own the deeper treatment. Facts synthesized into original lesson prose; no wording reproduced."
+    }
+  ]
+}

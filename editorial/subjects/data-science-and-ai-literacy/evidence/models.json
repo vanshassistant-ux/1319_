@@ -1,0 +1,220 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:models",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "What a trained model is: the learned pattern, saved as numbers (parameters), that maps inputs to predictions",
+      "The model as a box: inputs go in, predictions come out (the interface view)",
+      "Training creates the model: the model is the RESULT of training, not the data and not the algorithm",
+      "Models are approximations of the world, not copies of it, and are only as good as the data they learned from",
+      "Models are not static: they can be updated with new data, retrained, or replaced",
+      "Models differ in quality, and the acceptable quality depends on the application",
+      "Everyday models: recommendation, translation, and weather-forecast models"
+    ],
+    "supporting": [
+      "Features as inputs and labels as outputs (referenced; features-and-labels has its own lesson)",
+      "How training data is gathered and prepared (referenced; training-data has its own lesson)",
+      "How models are tested against unseen data (referenced; training-versus-testing has its own lesson)",
+      "The algorithm as the learning procedure that training runs"
+    ],
+    "outOfScope": [
+      "Training data in depth: collection, cleaning, labeling (own topic: training-data)",
+      "Features and labels in depth (own topic: features-and-labels)",
+      "Train/test splits and evaluation metrics (own topic: training-versus-testing)",
+      "Overfitting and underfitting (own topic: overfitting)",
+      "Specific model types and algorithms (neural networks, decision trees, linear models)",
+      "Machine learning lifecycle and tooling (own topic: machine-learning-basics)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A trained machine learning model is the learned pattern that an algorithm produces from data, saved as numbers (parameters) that map inputs to predictions for new data, without hard-coded instructions.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-machine-learning",
+        "gc-what-is-machine-learning",
+        "mslearn-fundamentals-machine-learning"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Training creates the model: during training the algorithm fits the model to the data, using a loss function to measure errors and adjusting the model's parameters to reduce them; before training there is an algorithm but no trained model.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "gc-what-is-machine-learning",
+        "ibm-what-is-machine-learning"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Once trained, a model works as a box: inputs (features) go in and predictions (labels) come out; in the supervised case, training data that pairs feature values with known label values enables the model to predict labels for future cases.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "mslearn-fundamentals-machine-learning",
+        "gcloud-what-is-supervised-learning"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A model is an approximation of the world, not a copy of it: machine learning is often only as good as the data it is fed, and a model's predictions can be wrong even when it seems confident.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "gc-what-is-machine-learning",
+        "elements-of-ai-machine-learning"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Models are not static: a model can be updated with new data, retrained, or replaced, and machine learning systems can adjust as they accumulate experience.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "gc-what-is-machine-learning",
+        "mslearn-fundamentals-machine-learning"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Models differ in quality, and the acceptable level of quality depends on the application: accuracy that is plenty for recommending songs can be unacceptable for safety-critical uses.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "elements-of-ai-machine-learning",
+        "mslearn-fundamentals-machine-learning"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Machine learning models appear in everyday products: e-commerce recommendation engines, media personalization, translation and transcription services, and weather forecasts that report probabilities such as the chance of rain.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-machine-learning",
+        "gc-what-is-machine-learning",
+        "nws-explaining-probability-of-precipitation"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether 'learning' is the right word for what a model does.",
+      "positions": [
+        "Google Cloud and IBM describe systems that 'learn' the patterns of training data",
+        "The mechanism behind the word is parameter adjustment during an optimization process, not human-style understanding"
+      ],
+      "resolution": "The lesson keeps the familiar 'learned pattern' phrasing but explains the mechanism (the algorithm fits the model by adjusting parameters to reduce measured errors), so no magical or human-like learning is implied."
+    },
+    {
+      "issue": "How much certainty a model's output carries.",
+      "positions": [
+        "The National Weather Service expresses forecasts as probabilities, such as the chance of at least 0.01 inch of rain, rather than certainties",
+        "Elements of AI warns that people can become too confident about prediction accuracy and be disappointed when it turns out worse than expected"
+      ],
+      "resolution": "The lesson treats predictions as estimates with uncertainty, never as guarantees, and uses the rain-probability example to make the point concrete."
+    },
+    {
+      "issue": "How often deployed models are retrained.",
+      "positions": [
+        "Google Cloud describes machine learning systems that continuously adjust and enhance themselves as they accrue experiences",
+        "Microsoft Learn frames training as a train-evaluate-refine loop, implying models are revisited rather than finished"
+      ],
+      "resolution": "The lesson claims only that models CAN be updated, retrained, or replaced, and makes no claim about how frequently real products retrain."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's boilerplate ('Models is a foundational concept in Data Science & Ai Literacy') — generic phrasing with no source support.",
+    "The generated draft's toolbox-drawer description ('Think of models as a label on a toolbox drawer') — a generic analogy that does not describe what a trained model is.",
+    "The generated draft's vocabulary entries ('context', 'evidence', 'application') that define generic study words rather than model concepts.",
+    "The generated draft's college version, which describes 'reasoning with a concept' without ever defining a model in machine learning terms."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire generated draft (in30Seconds, whyItMatters, objectives, college version, vocabulary, eli10, worked example, mistakes, question bank) with original prose about what a trained model is.",
+    "Rewrote the question bank: five original questions with keys verified against the evidence (keys at A, C, B, D, A; no answer slot used more than twice, with at least one C and one D).",
+    "Anchored every factual claim to at least one of the five sources read live on 2026-08-21 (Google Cloud, IBM, Microsoft Learn, Elements of AI, National Weather Service).",
+    "Kept training-data, features-and-labels, training-versus-testing, and overfitting strictly out of scope, referencing the sibling topics only."
+  ],
+  "rightsIssues": [
+    "Four sources (Google Cloud, IBM, Microsoft Learn, Elements of AI) are vendor or educational pages under standard copyright; none explicitly grants reuse rights, so all are classified REFERENCE_ONLY and no source wording is reproduced in the lesson.",
+    "The National Weather Service page is U.S. Government work (not subject to copyright in the United States per its license field), but it is treated as REFERENCE_ONLY here because the lesson's prose is original synthesis."
+  ],
+  "sourceRecords": [
+    {
+      "id": "gc-what-is-machine-learning",
+      "title": "What is Machine Learning? Types and uses",
+      "provider": "Google Cloud",
+      "url": "https://cloud.google.com/learn/what-is-machine-learning",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl with a browser user-agent on 2026-08-21. Supports: machine learning as systems that learn and improve without being explicitly programmed; training as fitting the model to the data, with a loss function measuring the model's errors and an optimization technique adjusting the model's parameters to minimize them; applications including fraud detection, personalization and recommendations, and transcription and translation; the warning that machine learning is often only as good as the data it is fed; and systems that continuously adjust as they accrue experiences and retain new data. Facts synthesized into original lesson prose; no wording reproduced."
+    },
+    {
+      "id": "ibm-what-is-machine-learning",
+      "title": "What is Machine Learning?",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/topics/machine-learning",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl with a browser user-agent on 2026-08-21. Supports: machine learning as the subset of AI whose algorithms learn the patterns of training data and subsequently make accurate inferences about new data; models making decisions or predictions without explicit, hard-coded instructions; the central premise of optimizing performance through model training; e-commerce recommendation engines as an application; and the attribution of the term to Arthur L. Samuel's 1959 checkers paper. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "mslearn-fundamentals-machine-learning",
+      "title": "Introduction to Machine Learning Concepts (Microsoft Learn training module: fundamentals-machine-learning)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21: module landing page, which lists 'describe considerations for training and evaluating machine learning models' among its objectives, plus units 3-types-of-machine-learning, 4-regression, and 5-binary-classification. Supports: supervised training data that includes both feature values and known label values, used to predict unknown labels for future cases; the train-evaluate-refine loop; regression as predicting a numeric label and classification as predicting a categorical label. Facts synthesized into original lesson prose; no wording reproduced."
+    },
+    {
+      "id": "elements-of-ai-machine-learning",
+      "title": "Elements of AI (University of Helsinki), Chapter 4: Machine learning",
+      "provider": "University of Helsinki / Reaktor",
+      "url": "https://course.elementsofai.com/4",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live on 2026-08-21 via the chapter content served at course.elementsofai.com/4 (Gatsby page-data JSON endpoint, since the chapter is script-rendered). Supports: the warning that unless careful, one can become too confident about prediction accuracy and be disappointed when it turns out worse than expected; the quality bar depending on the application (99 percent safe cars on the streets would be unacceptable, while predicting whether you will like a new song at that accuracy may be more than enough); a regression model predicting a selling price from features such as year of construction and condition; a music-recommendation scenario; and reinforcement learning as used by a self-driving car. Lesson prose is original; the song-quality contrast is referenced conceptually."
+    },
+    {
+      "id": "gcloud-what-is-supervised-learning",
+      "title": "What is supervised learning?",
+      "provider": "Google Cloud",
+      "url": "https://cloud.google.com/discover/what-is-supervised-learning",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Registered in the phase-2 source registry and read live 2026-08-21 by the supervised-learning topic worker; used here for one claim only. Supports: supervised learning as a category of machine learning that uses labeled datasets; features as inputs and labels as correct outputs; the training loop of analyzing labeled pairs and then predicting on new data. Facts synthesized into original lesson prose; no wording reproduced."
+    },
+    {
+      "id": "nws-explaining-probability-of-precipitation",
+      "title": "Explaining 'Probability of Precipitation'",
+      "provider": "National Weather Service, NOAA (Peachtree City/Atlanta forecast office)",
+      "url": "https://www.weather.gov/ffc/pop",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. Government work; not subject to copyright in the United States",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. Supports: the National Weather Service routinely includes a PoP (probability of precipitation) statement in forecasts; the PoP describes the probability that the forecast point receives at least 0.01 inch of rain; it is not a statement about proportion of time or area. Used for the everyday weather-forecast example and the uncertainty claim; example phrasing is original."
+    }
+  ]
+}

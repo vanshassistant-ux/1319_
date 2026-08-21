@@ -1,0 +1,167 @@
+# Models
+
+## In 30 Seconds
+
+A trained model is the learned pattern a machine learning algorithm produces from data, saved as numbers that map inputs to predictions. Think of it as a box: inputs go in, predictions come out. Training creates the model; the model is the result, not the data itself. A model is an approximation of the world, not a copy, and it can be updated, retrained, or replaced. Models you meet daily include recommendations, translations, and weather forecasts.
+
+## Why This Matters
+
+Every time a service suggests a song, an app translates a sentence, or a forecast warns of rain, a model did the work. Models matter academically because they are the bridge between data and decisions: data goes in, a prediction comes out. They matter practically because the phrase "the model says" shows up everywhere, from price estimates to weather forecasts to the suggestions on your screen, and knowing what a model is, and what it is not, lets you judge those claims. A model is a learned pattern, not a crystal ball; it can be wrong, it can be improved, and it can be replaced. Grasping this one idea makes the rest of machine learning much easier to follow.
+
+## Learning Objectives
+
+- Define a trained model as the learned pattern, saved as numbers, that maps inputs to predictions.
+- Explain the interface view of a model: inputs go in, predictions come out, without seeing inside.
+- Explain that training creates the model, making the model the result of training rather than the data itself.
+- Explain why a model is an approximation of the world, not a copy of it.
+- Identify the model lifecycle: models can be updated, retrained, and replaced.
+- Recognize everyday models, including recommendation, translation, and weather-forecast models, and explain why their acceptable quality differs.
+
+## The College Version
+
+### What a trained model is
+
+A trained model is the learned pattern that a machine learning algorithm produces from data. IBM describes machine learning as algorithms that learn the patterns of training data and then make accurate inferences about new data, and Google Cloud describes training as fitting the model to the data. That learned pattern is saved as numbers, the model's parameters, and those numbers are what map inputs to predictions. A spam filter's model is not the emails it was shown; it is the pattern, the rules captured in numbers, that tells a new email "junk" or "not junk." When someone says "the model," they usually mean this artifact: a saved pattern that turns inputs into outputs.
+
+### The model as a box
+
+The simplest honest way to use a model is to treat it as a box. You put an input in and a prediction comes out, and you do not need to look inside to use it. Microsoft Learn frames supervised learning exactly this way: data that pairs feature values with known label values trains a model to predict labels for future cases. A small example: the owner of a furniture-restoration workshop keeps records of the size of each table and the price it sold for. A model trained on those records takes a table's size as its input and returns a price estimate as its output. Size goes in, price comes out. The interface view matters because most people who rely on models, shoppers, commuters, forecast readers, never see the numbers inside. They only see inputs and outputs.
+
+### Training creates the model
+
+A model is the result of training; it does not exist before training happens. Before training there is only an algorithm, a general procedure for learning. During training the algorithm studies data and adjusts the model's internal numbers, its parameters, so that its predictions get closer to the known answers. Google Cloud describes this fitting process: a loss function measures the model's errors, and the algorithm adjusts the parameters to reduce them. The output of all that work is the trained model, the saved pattern that can then take a new input and return a prediction. Training data is what the algorithm learns from, and it gets its own lesson in this course; here the point is the sequence: data and algorithm go in, a trained model comes out.
+
+### Models are not the world
+
+A model is an approximation, not a copy, of whatever it learned about. Google Cloud is blunt: machine learning is often only as good as the data it is fed. A weather model does not contain the atmosphere; it contains a simplified stand-in that lets forecasters estimate what the atmosphere will do. Elements of AI warns that people can become too confident about the accuracy of predictions and be disappointed when accuracy turns out worse than expected. That is why forecasts come with probabilities: the National Weather Service routinely states the chance of rain at a specific place, a probability, rather than a certainty. The gap between model and world is normal, and keeping it in mind prevents treating predictions as facts.
+
+### Models are not static
+
+A trained model is not a permanent object. Models can be updated with new data, retrained from scratch, or replaced by better models. Google Cloud describes machine learning systems that continuously adjust and enhance themselves as they accumulate experience, and Microsoft Learn's machine learning loop is train, evaluate, refine, which implies that a model is revisited rather than finished. A translation service that adds support for a new language, a store that retrains its recommendation model after a season of new sales, a forecast office that swaps in a newer weather model: these are all ordinary moments in a model's life. The model you meet today may not be the model you meet next year.
+
+### Models differ in quality
+
+Models are not all equally good, and the acceptable level of quality depends on the job. Elements of AI makes the contrast sharply: you would not want only 99 percent of cars on the street to be safe, but a model that predicts whether you will like a new song with the same accuracy may be more than enough. Microsoft Learn treats evaluating models as a core step of machine learning, and how models are tested against data they have not seen is a subject of its own, the training-versus-testing lesson. The general principle belongs here: every model has errors, and the question is whether the errors are small enough for the use. A price estimate for a used table can be off by a few dollars; the same sloppiness in a safety-critical setting would be unacceptable.
+
+### Models you meet every day
+
+Most people use models daily without calling them that. Streaming and shopping services run recommendation models that predict what you will like, the use IBM cites for e-commerce and Google Cloud lists among machine learning's everyday applications. Translation apps use models trained to map text in one language to text in another, part of the transcription and translation work Google Cloud describes. And the weather forecast on your phone comes from models too: the National Weather Service issues forecasts that routinely include a probability of precipitation, the chance that a specific place receives at least a hundredth of an inch of rain. One idea connects all of these: a learned pattern, saved as numbers, that takes an input and returns a prediction, imperfect, revisable, and everywhere.
+
+## Key Vocabulary
+
+- **model** — The learned pattern produced by training, saved as numbers that map inputs to predictions.
+- **training** — The step in which an algorithm studies data and adjusts its internal numbers so its predictions improve.
+- **prediction** — The output a model produces for a new input after training.
+- **parameter** — One of the internal numbers of a model that training adjusts and that the model uses to turn inputs into outputs.
+- **algorithm** — A step-by-step procedure; in machine learning, the procedure that carries out training on data.
+- **approximation** — A close but imperfect representation; a model approximates the pattern in its data rather than copying the world.
+- **retraining** — Training a model again, often with new or additional data, to produce an updated model.
+- **probability** — A number expressing how likely an event is, such as the chance of rain a forecast reports.
+
+## Eli-10
+
+A trained model is the pattern a computer finds in data, saved as numbers. Before training, there is no model, only a learning procedure. After training, the model is a box: you drop an input in and a prediction comes out, size in, price out. The model is not the data and not the world; it is a simplified stand-in that is only as good as what it learned from. Models are not permanent; they get updated, retrained, or replaced, and they are everywhere: song suggestions, translations, and rain forecasts all come from models.
+
+## Eli's Analogy
+
+A hiking map of a state park is a model of the park. It was made from surveys, the training data, and it is stored as lines and symbols rather than numbers. You use it as a box: you put in a question, how far is the lake from the trailhead, and out comes an answer, about two miles. The map is not the park. It leaves out nearly everything, the sound of the creek, the steepness of that last hill, and a trail that was rerouted last winter will not be on it. The map can be redrawn, and the park service does redraw it, just as models get retrained and replaced.
+
+The map analogy breaks down because a map is drawn by people who choose what to include, while a machine learning model's content is set by its training data and the algorithm, not by anyone's plan. A map's rules are readable at a glance, but a model's numbers are hard to inspect. And a wrong map is usually obvious, while a wrong model can look confident.
+
+## Worked Example
+
+Lakeside Bikes, a small shop, wants to price the used bikes it takes in trade. The owner has two years of records: each bike's age and condition, and the price it actually sold for. She trains a model on those records, and training produces the model, a pattern saved as numbers that maps a bike's details to a price. From then on she treats the model as a box: she enters a 2019 commuter bike in good condition, and out comes an estimate, $310. The estimate is an approximation, the model never saw this exact bike, and it will be wrong sometimes, off by $20 here, $40 there. Next spring she will retrain it with the new season's sales, because models are not static.
+
+## Common Mistakes
+
+- **Confusing the model with the data it was trained on.** The dataset is what training consumes; the model is what training produces. The emails are data; the pattern that flags new spam is the model.
+- **Treating a model's output as a fact about the world.** A model is an approximation. A 40 percent chance of rain is not a promise of rain and not a promise of sunshine; it is the model's estimate of likelihood.
+- **Assuming a trained model is finished forever.** Models get updated with new data, retrained, or replaced. A model from last year may be retired this year.
+- **Expecting every model to be equally trustworthy.** Models differ in quality, and the acceptable quality depends on the use. Accuracy that is fine for song suggestions would not be fine for a safety-critical job.
+- **Thinking you must understand the numbers inside a model to use it.** The interface view is legitimate: inputs in, predictions out. What you must do is check the outputs, not read the parameters.
+
+## Compare / Contrast
+
+- **Model vs. Algorithm** — The algorithm is the general learning procedure; the model is the specific learned pattern that training produces. One algorithm can train many different models.
+- **Model vs. Dataset** — The dataset is the raw material training consumes; the model is the saved pattern that results. The model is not a copy of the data.
+- **Forecast model vs. Weather** — A forecast model is a simplified stand-in that reports probabilities, such as a chance of rain; the weather itself is what actually happens.
+- **Recommendation model vs. Translation model** — Both are everyday models, but they map different inputs to different outputs: taste signals to suggestions, text in one language to text in another.
+
+## Key Takeaway
+
+A trained model is the learned pattern, saved as numbers, that maps inputs to predictions: a box you can use without seeing inside. It is created by training, is an approximation of the world rather than a copy, and can be updated, retrained, or replaced.
+
+## Practice Question Bank
+
+**Q1.** Which of the following best describes a trained machine learning model?
+
+- A. The learned pattern, saved as numbers, that maps inputs to predictions.
+- B. The raw data the algorithm was shown during training.
+- C. The computer hardware that runs the algorithm.
+- D. The programming language used to write the algorithm.
+
+**Key: A.** A trained model is the learned pattern produced by training and stored as numbers, the parameters that turn inputs into predictions. The training data is what the model learned from, not the model itself, and hardware and programming languages are the tools around it, not the model.
+
+**Q2.** The owner of a framing shop trains a model on past sales, then enters the size of a new frame and reads off a suggested price. Which view of a model does this illustrate?
+
+- A. The training loop, because the model is still learning from the new frame.
+- B. The loss function, because the model is measuring its own error.
+- C. The model as a box: an input goes in and a prediction comes out.
+- D. The training data, because the price comes from the shop's records.
+
+**Key: C.** Entering a size and receiving a price is the interface view of a model: inputs in, predictions out. The shop's records are the training data that built the model, not the model itself, and at prediction time the model is not still learning or measuring its errors.
+
+**Q3.** Why is a model best described as an approximation of the world rather than a copy of it?
+
+- A. Because models are stored as numbers, and numbers cannot represent real things.
+- B. Because a model captures only the patterns its training data taught it, and it can be wrong.
+- C. Because a model contains a complete record of everything in its training data.
+- D. Because models are updated so often that they never settle.
+
+**Key: B.** A model is a simplified stand-in built from what its training data showed it; it is only as good as that data and can be wrong even when it sounds confident. Numbers can represent real things, models do not store full copies of their data, and being updated does not make a model a copy of the world.
+
+**Q4.** A forecast says there is a 40 percent chance of at least 0.01 inch of rain at the fairgrounds. What does this tell you about the model behind the forecast?
+
+- A. The model has failed, because a good model would give a yes-or-no answer.
+- B. The model is a perfect copy of the atmosphere.
+- C. The model knows tomorrow's weather for certain but is hiding it.
+- D. The model expresses uncertainty, which is normal for forecasts.
+
+**Key: D.** The National Weather Service routinely reports the probability that a specific place receives at least 0.01 inch of rain; expressing likelihood rather than certainty is how forecast models work, not a failure. A model is an approximation, not a perfect copy of the atmosphere, and it cannot know tomorrow's weather for certain.
+
+**Q5.** A music service recommends songs with a model that is right about four times out of five, and a hospital is considering a model with the same accuracy to help screen scans. Why would the hospital likely reject that model while the music service keeps it?
+
+- A. Because the acceptable quality of a model depends on how it will be used.
+- B. Because music models are always more accurate than medical models.
+- C. Because accuracy stops mattering once a model is in daily use.
+- D. Because medical models cannot be evaluated, only music models can.
+
+**Key: A.** The same accuracy can be plenty for song suggestions and unacceptable for safety-critical decisions, so the bar for quality depends on the application. There is no rule that music models beat medical ones, accuracy keeps mattering in daily use, and any model can be evaluated against its purpose.
+
+## Sources
+
+- Google Cloud, "What is Machine Learning? Types and uses" — https://cloud.google.com/learn/what-is-machine-learning (read live 2026-08-21)
+- IBM, "What is Machine Learning?" — https://www.ibm.com/topics/machine-learning (read live 2026-08-21)
+- Microsoft Learn, "Introduction to Machine Learning Concepts" (training module: fundamentals-machine-learning) — https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/ (read live 2026-08-21)
+- Elements of AI (University of Helsinki / Reaktor), "Chapter 4: Machine learning" — https://course.elementsofai.com/4 (read live 2026-08-21 via the chapter's page-data endpoint)
+- Google Cloud, "What is supervised learning?" — https://cloud.google.com/discover/what-is-supervised-learning (registered in the phase-2 source registry; read live 2026-08-21)
+- National Weather Service, NOAA, "Explaining 'Probability of Precipitation'" — https://www.weather.gov/ffc/pop (read live 2026-08-21)
+
+All six sources were used for verification only (REFERENCE_ONLY; the NWS page is U.S. Government work); the lesson's prose and examples are original.
+
+## Related Topics
+
+- data-science-and-ai-literacy:foundations:machine-learning-basics
+- data-science-and-ai-literacy:foundations:supervised-learning
+- data-science-and-ai-literacy:foundations:training-data
+- data-science-and-ai-literacy:foundations:features-and-labels
+- data-science-and-ai-literacy:foundations:training-versus-testing
+
+## Editorial Metadata
+
+- Topic ID: data-science-and-ai-literacy:foundations:models
+- Subject: data-science-and-ai-literacy (unit: foundations)
+- Editorial status: READY_TO_PUBLISH
+- Researched: 2026-08-21 (sources read live: Google Cloud, IBM, Microsoft Learn, Elements of AI, National Weather Service)
+- Rights: reference-only sources; no source prose adapted
+- Provenance: EliExplains original synthesis, source-verified

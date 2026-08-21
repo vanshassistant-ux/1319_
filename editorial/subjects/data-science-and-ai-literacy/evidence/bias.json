@@ -1,0 +1,192 @@
+{
+  "topicId": "data-science-and-ai-literacy:foundations:bias",
+  "subjectId": "data-science-and-ai-literacy",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "two senses of bias kept distinct: statistical bias (systematic error) and fairness bias (unequal treatment across groups), and the bridge between them",
+      "where bias enters the pipeline: biased data collection, unrepresentative samples, biased labels, historical inequalities baked into records",
+      "the training-data mirror: models reproduce the patterns in their data, including the biased ones",
+      "why it matters: biased models can make unfair decisions at scale",
+      "detecting and reducing bias: audit the data, check model behavior across groups, document limitations"
+    ],
+    "supporting": [
+      "calibration against a reference standard as a remedy for measurement bias",
+      "bias can enter at any stage of data processing, not just collection",
+      "ongoing monitoring and testing with real-world data after deployment",
+      "human biases can be unintentionally replicated by machine learning algorithms"
+    ],
+    "outOfScope": [
+      "formal fairness definitions and mitigation algorithms (algorithmic-fairness sibling topic)",
+      "sampling design and methods for choosing representative samples (sampling sibling topic)",
+      "ethics frameworks, governance, and policy (ai-ethics sibling topic)",
+      "construction and preparation of training data (training-data sibling topic)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "NIST defines bias, also called systematic error, as the difference between a measurement result and its unknown true value; it can often be estimated and reduced by calibration to a reference standard.",
+      "claimType": "SCIENTIFIC",
+      "sourceIds": [
+        "nist-ehandbook-mpc-bias"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "AI bias refers to biased results caused by human biases that skew the original training data or the AI algorithm, leading to distorted outputs and potentially harmful outcomes.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-ai-bias"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Machine learning models absorb the biases of society that are embedded in the data they are trained on; historically biased data collection that reflects societal inequity can result in harm to marginalized groups in settings such as hiring, policing, and credit scoring.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-ai-bias"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Named sources of bias include sample/selection bias (training data that is not large, representative, or complete enough) and recall bias (labels inconsistently applied during data labeling).",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-ai-bias"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Human biases can be unintentionally replicated by machine learning algorithms, so teams should audit training data and evaluate predictions for bias before putting a model into production.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "google-ml-fairness"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The fairness principle of responsible AI holds that AI systems should treat everyone fairly and avoid affecting similar groups differently, for example making the same recommendations to people with similar symptoms, financial circumstances, or qualifications.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "microsoft-responsible-ai-principles"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Bias can enter at any point in data processing, and ongoing monitoring and testing with real-world data can help detect and correct bias after a model is deployed.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-ai-bias"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Data-driven and AI systems carry risks to individuals, organizations, and society that organizations should manage.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nist-ai-risk-management-framework"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether simply removing sensitive attributes (such as race or gender) from the data eliminates fairness bias.",
+      "positions": [
+        "Some believe that deleting protected attributes from the data makes a model fair.",
+        "IBM notes that this naive approach may not work, because removed labels can affect the model's understanding and accuracy, and the pattern can reach the model through other features.",
+        "Formal fairness definitions and remedies are owned by the algorithmic-fairness topic."
+      ],
+      "resolution": "The lesson teaches that deleting attributes is not a reliable fix; the general practice is to audit the data and compare model behavior across groups, with formal remedies left to the algorithmic-fairness topic."
+    },
+    {
+      "issue": "Whether the two senses of 'bias' should be taught together or kept apart.",
+      "positions": [
+        "Statistical bias (systematic error) is a property of a measurement or estimation process.",
+        "Fairness bias is about a model treating groups of people unequally.",
+        "The subject source-map requires the two senses to be kept distinct."
+      ],
+      "resolution": "The lesson teaches both senses, explicitly keeps them distinct, and presents the bridge: a systematic skew in what gets recorded becomes unequal treatment when a model learns from those records."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's boilerplate ('Bias is a foundational concept in Data Science & AI Literacy', 'This lesson introduces its meaning, its context, and a simple way to apply it') was not supported by research and was discarded."
+  ],
+  "correctionsNeeded": [
+    "Replaced the machine-generated boilerplate with verified content on statistical bias and fairness bias.",
+    "Explicitly separated the two senses of bias and named the bridge between them, per the subject source-map caution.",
+    "All examples are original and invented; no real organization or individual is described as biased."
+  ],
+  "rightsIssues": [
+    "None blocking. The Google for Developers page is explicitly CC BY 4.0; IBM, Microsoft, and NIST pages are used as reference only, with all lesson prose original."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-ehandbook-mpc-bias",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods — 2.4.5. Analysis of bias",
+      "provider": "NIST / SEMATECH (U.S. Department of Commerce)",
+      "url": "https://www.itl.nist.gov/div898/handbook/mpc/section4/mpc45.htm",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. U.S. government work. Supports the definition of bias as systematic error: the difference between a measurement result and its unknown true value, estimable and often reducible by calibration to a reference standard. Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "ibm-what-is-ai-bias",
+      "title": "What is AI bias?",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/think/topics/ai-bias",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. Supports: AI bias as biased results from human biases that skew training data or the algorithm; models absorbing societal biases from training data; harm to marginalized groups in hiring, policing, and credit scoring; sample/selection bias and recall bias in labeling as named sources; bias entering at any processing stage; monitoring and human-in-the-loop as practices. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "google-ml-fairness",
+      "title": "Fairness (Machine Learning Crash Course module)",
+      "provider": "Google for Developers",
+      "url": "https://developers.google.com/machine-learning/crash-course/fairness",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21; page states content is licensed CC BY 4.0, last updated 2025-08-25. Supports: human biases can be unintentionally replicated by machine learning algorithms; audit training data and evaluate predictions for bias before a model goes into production. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "microsoft-responsible-ai-principles",
+      "title": "What is responsible AI? (Azure Machine Learning documentation)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. Supports the fairness principle: AI systems should treat everyone fairly and avoid affecting similar groups differently, e.g. making the same recommendations to people with similar symptoms, financial circumstances, or qualifications. Reuses the existing registered record with an identical URL."
+    },
+    {
+      "id": "nist-ai-risk-management-framework",
+      "title": "AI Risk Management Framework (AI RMF)",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Reuses the existing registered record with an identical URL. Supports the framing that data-driven and AI systems carry risks to individuals, organizations, and society that organizations should manage. Detailed ethics and risk treatment belongs to the ai-ethics and nist-ai-risk-concepts sibling topics; used here only as a pointer."
+    }
+  ]
+}
