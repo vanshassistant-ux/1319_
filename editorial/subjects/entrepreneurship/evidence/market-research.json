@@ -1,0 +1,183 @@
+{
+  "topicId": "entrepreneurship:foundations:market-research",
+  "subjectId": "entrepreneurship",
+  "researchedAt": "2026-08-19",
+  "scope": {
+    "core": [
+      "market research as decision-focused collection and interpretation of market evidence",
+      "primary and secondary research",
+      "research questions, populations, samples, and evidence limits",
+      "ethical participation and careful handling of personal information",
+      "interpreting uncertainty without overstating findings"
+    ],
+    "supporting": [
+      "official demographic and economic data tools",
+      "industry classification as a way to locate relevant official business statistics",
+      "qualitative and quantitative evidence as different but complementary forms of evidence"
+    ],
+    "outOfScope": [
+      "customer-interview recruiting, prompts, moderation, and note-taking mechanics",
+      "constructing a value proposition",
+      "profile-by-profile competitor analysis",
+      "individualized business, legal, tax, financial, investment, or fundraising advice",
+      "claiming that research proves market demand, a revenue forecast, or venture success"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Market research collects and analyzes information about a target market so an organization can answer decision-relevant questions about customers and market conditions.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["openstax-entrepreneurship-market-research-target-market", "sba-market-research-competitive-analysis"],
+      "status": "supported"
+    },
+    {
+      "claim": "Primary research creates new data for a defined question, while secondary research uses data already collected by another entity; they answer different kinds of questions and can be combined.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["openstax-entrepreneurship-market-research-target-market", "sba-market-research-competitive-analysis"],
+      "status": "supported"
+    },
+    {
+      "claim": "Official Census tools can supply selected demographic and economic information by location and business type, while NAICS is the federal standard for classifying business establishments for U.S. business statistics.",
+      "claimType": "CURRENT",
+      "sourceIds": ["census-business-builder", "census-naics"],
+      "status": "supported"
+    },
+    {
+      "claim": "A sample supports claims only about the population, sampling frame, and method that justify them; larger samples can reduce sampling error but do not by themselves fix coverage, selection, response, measurement, or interpretation problems.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["census-acs-sample-size-definitions", "aapor-code-of-professional-ethics"],
+      "status": "supported"
+    },
+    {
+      "claim": "Research involving people should respect voluntary participation, avoid misleading participants, explain the use of identifiable information, limit access to identifiers, and avoid collecting or retaining sensitive personal information without a legitimate need.",
+      "claimType": "ETHICAL",
+      "sourceIds": ["aapor-code-of-professional-ethics", "ftc-protecting-personal-information"],
+      "status": "supported"
+    },
+    {
+      "claim": "Uncertainty should be reported with the estimate, method, relevant population, and limitations; a margin of error describes sampling uncertainty for a sample estimate rather than all possible error.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["census-acs-sample-size-definitions", "aapor-code-of-professional-ethics"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether a larger sample alone makes market-research findings representative.",
+      "positions": [
+        "Larger samples generally reduce sampling error for a properly defined sample estimate.",
+        "A large convenience sample can still omit important people or contain systematic response and measurement bias."
+      ],
+      "resolution": "The lesson distinguishes sampling uncertainty from coverage, selection, response, and measurement limits; it does not promise representativeness from sample size alone."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft contained only generic statements and did not provide an evidence-supported definition, method distinction, sample limit, or ethical handling guidance."
+  ],
+  "correctionsNeeded": [
+    "Replaced boilerplate with a decision-focused definition of market research.",
+    "Added the distinction between new primary data and existing secondary data.",
+    "Added population, sampling-frame, sample, uncertainty, and generalizability limits.",
+    "Added bounded ethical guidance for voluntary participation and responsible personal-data handling.",
+    "Removed any implication that market research proves demand, a forecast, or business success."
+  ],
+  "rightsIssues": [
+    "SBA, Census, FTC, and AAPOR sources are used as reference-only authoritative guidance; no source prose was adapted.",
+    "OpenStax states CC BY-NC-SA 4.0 with attribution, but this lesson is original synthesis and does not reproduce source prose."
+  ],
+  "sourceRecords": [
+    {
+      "id": "sba-market-research-competitive-analysis",
+      "title": "Market research and competitive analysis",
+      "provider": "U.S. Small Business Administration",
+      "url": "https://www.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Official small-business guidance. Supports market-research questions, the distinction between existing and direct research, and the limits of broad existing data for a specific audience. The original URL was read and redirected by SBA to its current planning page."
+    },
+    {
+      "id": "openstax-entrepreneurship-market-research-target-market",
+      "title": "8.2 Market Research, Market Opportunity Recognition, and Target Market",
+      "provider": "OpenStax",
+      "url": "https://openstax.org/books/entrepreneurship/pages/8-2-market-research-market-opportunity-recognition-and-target-market",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Open textbook chapter defining primary and secondary market research and describing research goals, designs, samples, data collection, and limits. Used for original synthesis only; the page says separate permission is needed for AI training or ingestion."
+    },
+    {
+      "id": "census-business-builder",
+      "title": "Census Business Builder (CBB)",
+      "provider": "U.S. Census Bureau",
+      "url": "https://www.census.gov/data/data-tools/cbb.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Official description of the current Census Business Builder service, including selected demographic and economic data, location and business-type selection, maps, dashboards, and downloadable reports."
+    },
+    {
+      "id": "census-naics",
+      "title": "North American Industry Classification System (NAICS)",
+      "provider": "U.S. Census Bureau",
+      "url": "https://www.census.gov/naics/",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Official explanation that federal statistical agencies use NAICS to classify U.S. business establishments for collecting, analyzing, and publishing business-economy statistics."
+    },
+    {
+      "id": "census-acs-sample-size-definitions",
+      "title": "Sample Size Definitions",
+      "provider": "U.S. Census Bureau",
+      "url": "https://www.census.gov/programs-surveys/acs/methodology/sample-size-and-data-quality/sample-size-definitions.html",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Official guidance explaining that sample-based estimates have sampling uncertainty, that larger samples generally have less sampling error, and that published ACS margins of error express 90-percent confidence intervals. Used to explain the bounded meaning of sampling uncertainty."
+    },
+    {
+      "id": "aapor-code-of-professional-ethics",
+      "title": "AAPOR Code of Professional Ethics and Practices",
+      "provider": "American Association for Public Opinion Research",
+      "url": "https://aapor.org/standards-and-ethics/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Current professional ethics code (revised June 2026) supporting voluntary participation, truthful purpose disclosure, privacy protection, appropriate method choice, accurate reporting, and limits on generalizing from samples."
+    },
+    {
+      "id": "ftc-protecting-personal-information",
+      "title": "Protecting Personal Information: A Guide for Business",
+      "provider": "Federal Trade Commission",
+      "url": "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-19",
+      "notes": "Official practical guidance supporting data minimization, legitimate retention periods, restricted access, secure storage, and disposal of sensitive personal information. This is not presented as a complete statement of jurisdiction-specific law."
+    }
+  ]
+}

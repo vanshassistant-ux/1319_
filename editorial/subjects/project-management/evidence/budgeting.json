@@ -1,0 +1,123 @@
+{
+  "topicId": "project-management:foundations:budgeting",
+  "subjectId": "project-management",
+  "researchedAt": "2026-08-20",
+  "scope": {
+    "core": [
+      "cost estimates aggregated into a project budget model",
+      "cost baseline as a time-phased comparison reference",
+      "contingency and management reserve terminology",
+      "assumptions, uncertainty, and transparent hypothetical arithmetic"
+    ],
+    "supporting": [
+      "distinguishing a baseline comparison from an explanation or decision",
+      "scope and time basis as conditions for interpreting a budget model"
+    ],
+    "outOfScope": [
+      "personal, business, or organizational financial advice",
+      "procurement, vendor selection, contracting, taxes, funding, accounting treatment, or actual spending",
+      "reserve percentages, detailed earned-value calculations, or organization-specific approval processes"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A credible cost estimate is connected to purpose, scope, schedule, technical baseline, assumptions, data, methodology, risk and uncertainty, documentation, and updates rather than being a detached total.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["gao-cost-guide-estimating"],
+      "status": "supported"
+    },
+    {
+      "claim": "In PMI terminology, a cost baseline is the approved, time-phased project budget used for comparison with actual results and excluding management reserves.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["pmi-lexicon-project-management-terms-5"],
+      "status": "supported"
+    },
+    {
+      "claim": "The PMBOK Guide Sixth Edition Q&A material describes aggregating activity estimates and contingency reserves into the cost baseline, then adding management reserves to form the project budget.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["pmi-pmbok6-qas-cost-baseline"],
+      "status": "supported"
+    },
+    {
+      "claim": "Comparing current information with a baseline can make a difference visible, but the comparison alone does not establish a cause or prescribe a response.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["gao-cost-guide-estimating", "pmi-lexicon-project-management-terms-5"],
+      "status": "supported"
+    },
+    {
+      "claim": "The hypothetical exhibit arithmetic is correct: $900 plus $600 equals $1,500; $1,500 plus $150 equals $1,650; and $1,650 plus $200 equals $1,850.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["gao-cost-guide-estimating"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Reserve terms and control practices can vary by framework, organization, and accounting context.",
+      "positions": [
+        "PMI terminology distinguishes a cost baseline from management reserve and frames the baseline as time-phased.",
+        "GAO presents detailed federal cost-estimating and management practices for government programs."
+      ],
+      "resolution": "The lesson explicitly attributes the baseline and reserve relationship to PMI terminology, presents it only as a conceptual framework, and excludes organizational policy, accounting, funding, procurement, and financial decisions."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "A generic draft could equate an estimate with a budget, label any total a baseline, treat a reserve as hidden padding, or infer that a variance provides a complete explanation."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic material with original instruction separating estimate, project budget, cost baseline, contingency reserve, and management reserve.",
+    "Added explicitly bounded PMI terminology and a warning that labels and authority rules vary by context.",
+    "Added independently checked hypothetical arithmetic and stated assumptions and exclusions.",
+    "Excluded reserve-percentage recommendations, actual spending, procurement, funding, tax, accounting, and approval advice."
+  ],
+  "rightsIssues": [
+    "GAO-20-195G was checked live as a public-domain U.S. government source. No prose, figures, charts, or templates were reproduced.",
+    "PMI materials were checked live and treated as REFERENCE_ONLY. The lesson uses original prose, its own hypothetical example, and no PMI source wording, figures, or templates."
+  ],
+  "questionKeyCheck": {
+    "method": "Read every saved prompt, options, correctIndex, explanation, and sourceIds after writing; independently recomputed the two-step hypothetical total.",
+    "keys": ["C", "D", "A", "D", "B"],
+    "result": "Five four-option questions include recall, understanding, application, and analysis. Every answer position A/B/C/D appears at least once; C and D are present; no position occurs more than twice."
+  },
+  "sourceRecords": [
+    {
+      "id": "gao-cost-guide-estimating",
+      "title": "Cost Estimating and Assessment Guide (GAO-20-195G)",
+      "provider": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/products/gao-20-195g",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-20",
+      "notes": "Official GAO page checked live. Supports bounded general discussion of estimate inputs, assumptions, data, methodology, risk and uncertainty, documentation, and updates. It is not presented as a mandatory government or organizational budgeting process."
+    },
+    {
+      "id": "pmi-lexicon-project-management-terms-5",
+      "title": "PMI Lexicon of Project Management Terms, Version 5.0",
+      "provider": "Project Management Institute",
+      "url": "https://www.pmi.org/-/media/pmi/documents/registered/pdf/pmbok-standards/pmi-lexicon-pm-terms.pdf?rev=447328d841c249af985d14177ddd5f95",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-20",
+      "notes": "Official PMI lexicon checked live as an existing registered source. Supports bounded cost-baseline terminology; no wording, figures, or templates were reproduced."
+    },
+    {
+      "id": "pmi-pmbok6-qas-cost-baseline",
+      "title": "Q&As for the PMBOK Guide Sixth Edition",
+      "provider": "Project Management Institute",
+      "url": "https://www.pmi.org/-/media/pmi/documents/public/pdf/pmbok-standards/errata-sheet-qas-6th.pdf",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-20",
+      "notes": "Official PMI Q&A PDF checked live. It cross-checks the relationship among activity estimates, contingency reserves, the cost baseline, management reserves, and the project budget. No source wording, figures, or templates were reproduced. This source must be added to the shared registry during serial acceptance."
+    }
+  ]
+}

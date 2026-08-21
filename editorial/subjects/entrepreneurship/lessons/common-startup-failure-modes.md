@@ -1,0 +1,151 @@
+# Common Startup Failure Modes
+
+## In 30 Seconds
+
+A startup failure mode is a recurring pattern that can weaken a venture; it is not a prediction that a venture will fail. Common patterns include acting on untested assumptions, running short of usable cash because timing was ignored, expanding work faster than operations can support, tolerating unclear decisions or misleading claims, and depending too heavily on one customer or channel. Teams can turn these patterns into hypotheses, early warning signals, and short learning loops.
+
+## Why This Matters
+
+Studying failure modes gives students a way to notice risk before it becomes harder to change. It replaces blame-heavy stories with questions about evidence, timing, capacity, incentives, and concentration. The same pattern can have different importance in a restaurant, software service, community venture, or seasonal business, so the goal is not a universal checklist. It is a habit of testing assumptions, recording what changes, and revising a plan when evidence contradicts it.
+
+## Learning Objectives
+
+- Define a startup failure mode as a risk pattern rather than a guaranteed outcome.
+- Identify warning signals associated with unvalidated assumptions, cash timing, operational strain, governance, and concentration.
+- Explain how a short learning loop turns a risky assumption into an observable question.
+- Analyze why the importance of a risk pattern varies by business context.
+- Apply a simple risk review to a hypothetical venture without treating it as professional advice.
+
+## The College Version
+
+### Failure modes are patterns to investigate, not forecasts
+
+A failure mode is a way a system can break down. In entrepreneurship, it is more useful to treat one as a recurring risk pattern than as a label for a founder or a prediction about a company. A venture can confront several risks at once, recover from one, or choose to close after learning that its original premise was not workable. This lesson therefore avoids a single failure-rate statistic or a fixed list of causes. Rates change with the definition of failure, time period, country, industry, legal form, and whether a researcher counts a sale, merger, pause, or closure as an ending.
+
+The practical question is not “How do we guarantee success?” No framework can do that. It is “What assumption, dependency, or process deserves earlier observation?” The U.S. Small Business Administration’s planning guidance separates questions about demand, market size, location, saturation, pricing, and alternatives. Those categories show why a persuasive idea is not enough: it rests on claims about people, conditions, resources, and choices. A team can write each important claim as a hypothesis, state what evidence would raise or lower confidence, and decide when it will revisit the claim.
+
+This framing also improves discussion. “The venture failed because the founders were careless” hides the mechanism. “The venture assumed a specific group would pay, saw weak repeat use, and did not revise the offer soon enough” identifies something that can be examined. It does not settle every cause, but it turns a postmortem into learning rather than mythology.
+
+### Five risk patterns and their warning signals
+
+First, unvalidated assumptions can accumulate. A team may assume a problem is urgent, a feature is understandable, a price is acceptable, or a partner will deliver. Warning signals include interviews that yield polite interest but no concrete behavior, inconsistent reasons for use, repeated confusion during a test, or evidence drawn only from friends and enthusiasts. A mitigation is a small learning loop: name one assumption, choose an ethical observation or test, define what result would challenge it, record the result, and revise the next question. Customer discovery and market research own the detailed methods; here the point is that an assumption remains an assumption until evidence changes its status.
+
+Second, cash timing can create strain even when a venture appears active. Revenue recorded on a sale is not necessarily cash available today; payment terms, inventory purchases, payroll, returns, and bills occur on their own schedules. SBA guidance distinguishes accounts receivable, accounts payable, available cash, revenue, and expenses. Warning signals can include overdue customer payments, commitments due before expected collections, or a plan that tracks sales totals but not when money is received and paid. A basic calendar of expected inflows and outflows can expose timing questions. It is an educational planning tool, not an accounting system, financing recommendation, or guarantee of solvency.
+
+Third, scope and operations can outrun capacity. Adding customers, products, locations, custom requests, or features increases handoffs and exceptions. A team may call this growth while quality, delivery time, support load, or supplier reliability worsens. Warning signals include an expanding backlog, frequent manual fixes, unclear ownership, recurring service errors, or promises that frontline workers cannot consistently meet. A useful response is to narrow the offer temporarily, map the actual workflow, identify the constraint, and measure whether a small process change improves the stated signal. This differs from a growth strategy: the objective is reliable learning about current capacity, not maximizing acquisition.
+
+Fourth, governance and ethics risks arise when decision rights, incentives, records, or claims are unclear. Conflict between cofounders, undisclosed trade-offs, inaccurate product statements, and weak handling of customer information can damage trust and distort decisions. In the United States, FTC guidance says advertising claims must be truthful, not deceptive or unfair, and evidence-based; requirements differ by jurisdiction and product category. That is a high-level consumer-protection boundary, not legal advice. Warning signals include decisions made without documented owners, repeated disputes about who can approve spending or public claims, incentives that reward a metric while harming customers, or claims that cannot be supported. Teams can make roles and escalation paths visible, preserve the evidence behind claims, and seek qualified local guidance for actual legal obligations.
+
+Fifth, concentration creates dependence. One large customer, marketplace, supplier, founder, or marketing channel can be valuable while also becoming a single point of failure. Warning signals include one relationship accounting for a large share of orders, referrals, access, knowledge, or revenue; a platform rule change immediately stopping demand; or no documented backup for a critical task. The appropriate response varies. A specialized supplier may be necessary; a community venture may deliberately serve one institutional customer. The learning task is to map the dependency, its consequences, and feasible alternatives—not to adopt a universal diversification target.
+
+### Build a learning loop and interpret it in context
+
+A compact risk review can make these patterns usable. Start with a claim such as “customers will pay before suppliers must be paid,” “one support person can handle the current request volume,” or “our advertising claim accurately reflects the evidence.” Next, identify an observable signal: payment timing, unresolved support requests, customer comprehension, return reasons, complaint themes, or concentration in a dependency map. Set a review date and a decision rule in advance. For example, a team might say that repeated late payment from a test customer triggers a review of timing assumptions, rather than quietly rolling the delay into a more optimistic forecast. The rule creates a moment to learn; it does not dictate a business decision.
+
+Keep the loop short enough to change course while the work is still reversible. Record the original hypothesis, evidence collected, limitations, interpretation, and next action. Disconfirming evidence is informative. It may mean the segment, message, workflow, channel, timing, or underlying problem needs revision; it may also mean the evidence was too weak to interpret. Separating these possibilities prevents a team from treating every disappointing result as proof that the entire idea is worthless.
+
+Context matters at every stage. A seasonal venture may expect uneven cash timing. A regulated or safety-sensitive offering may need slower validation because harm from a mistaken claim is greater. A business with a long sales cycle may see delayed revenue by design, while a subscription service may be more exposed to recurring service quality. A cooperative, nonprofit, or family business may define acceptable outcomes differently from an investor-backed technology firm. Therefore, warning signals should be compared with the venture’s actual operating model, stakeholder commitments, and applicable rules. When a decision depends on law, tax, accounting, insurance, investment, or financing facts, general education should give way to qualified, jurisdiction-appropriate advice.
+
+The lasting skill is not memorizing a gloomy list. It is maintaining a visible set of assumptions and dependencies, noticing evidence that challenges them, and adjusting the next experiment or operational step. That practice can reduce avoidable surprise, but it cannot remove uncertainty or promise a particular result.
+
+## Key Vocabulary
+
+- **Failure mode:** A recurring pattern through which a system, process, or venture can lose reliability, viability, or stakeholder trust.
+- **Assumption:** A proposition treated as true for planning purposes before sufficient evidence has established its reliability.
+- **Learning loop:** A repeated cycle of stating a hypothesis, observing evidence, interpreting limits, and revising a next step.
+- **Cash timing:** The schedule on which money is actually received and paid, which may differ from the date a sale is recorded.
+- **Operational capacity:** The amount of work a venture can deliver reliably with its current people, processes, tools, and suppliers.
+- **Governance:** The arrangements that define decision rights, accountability, records, and oversight within an organization.
+- **Concentration risk:** Exposure created when a critical outcome depends heavily on one customer, channel, supplier, person, or partner.
+
+## Eli-10
+
+A startup is a bit like a group building a bridge while people are starting to use it. The group has guesses about which path people want, which materials will arrive, how much work each builder can do, and who gets to decide when something changes. A problem can happen when a guess stays hidden or nobody checks whether it is still true. The helpful move is to write the guess down, watch for a clue, and change the next small step when the clue says the guess was wrong.
+
+## Eli's Analogy
+
+Think of each risk as a warning light on a dashboard. One light might show that customers are not using the service as expected. Another might show that bills are due before money comes in. Another might show that one important road is the only route to the destination. The lights do not tell you exactly what will happen, but they tell you where to look before continuing at the same speed.
+
+The analogy has limits. A business is not a machine with a universal manual. People have choices, markets change, and ethical and legal responsibilities vary by place and activity. A warning signal needs interpretation in context, and noticing one does not prove that a venture will fail.
+
+## Worked Example
+
+Hypothetical example: A two-person campus snack-delivery project sells to student clubs. Its risk review lists three hypotheses: clubs will reorder monthly, payments will arrive within two weeks, and one social-media account can supply enough orders. After four weeks, three clubs reorder, but two pay after the project must pay its food supplier; nearly all new orders came from one account. The team records three signals: repeat use, payment timing, and channel concentration. Rather than claim the project is doomed, it narrows the next test: ask clubs about payment steps, compare a second outreach channel, and avoid promising delivery slots it cannot staff. The review produces questions and experiments, not a financing or legal decision.
+
+## Common Mistakes
+
+- **Treating a common risk pattern as proof that every venture will fail:** Use the pattern to form a context-specific question, then look for evidence and alternative explanations.
+- **Counting sales while ignoring when cash is received and bills are due:** Separate recorded activity from the timing of expected inflows and outflows when reviewing a hypothetical plan.
+- **Calling every increase in demand growth even when service quality or delivery reliability declines:** Track workload, handoffs, errors, and capacity limits alongside demand signals.
+- **Using an ethical or governance concern as a public-relations detail:** Make decision rights, evidence for claims, and stakeholder effects visible before the issue becomes harder to correct.
+
+## Compare / Contrast
+
+| A | B | Distinction |
+| --- | --- | --- |
+| Failure mode | Failure prediction | A failure mode identifies a pattern worth monitoring; a prediction claims to know a future outcome. |
+| Revenue | Available cash | Revenue describes earnings from sales under an accounting approach, while available cash concerns money currently accessible for obligations. |
+| Diversification | Dependency mapping | Diversification is one possible response; dependency mapping first identifies what is concentrated and what its loss would affect. |
+
+## Key Takeaway
+
+Common startup failure modes are hypotheses about where a venture may become fragile. Visible assumptions, early signals, and short learning loops can improve adaptation, but they cannot eliminate uncertainty or guarantee an outcome.
+
+## Practice Question Bank
+
+1. **In this lesson, what is a startup failure mode?**
+   - A. A recurring risk pattern that can weaken a venture
+   - B. A universal forecast that a business will close
+   - C. A legal classification for a new company
+   - D. A required funding milestone
+   - **Answer:** A. It is a pattern to investigate, not a guaranteed outcome.
+
+2. **Which observation most directly signals a cash-timing risk?**
+   - A. A product receives positive comments in a test
+   - B. Customer payments are expected after supplier bills are due
+   - C. A competitor changes its logo
+   - D. A team adds a new feature request
+   - **Answer:** B. Obligations can come due before expected collections.
+
+3. **A team learns that nearly every new order comes from one marketplace. What should its next risk review examine?**
+   - A. Whether it can declare the marketplace permanently reliable
+   - B. Whether it should immediately abandon all customers
+   - C. How dependent the venture is on that channel and what disruption would affect
+   - D. Which founder deserves credit for the orders
+   - **Answer:** C. Channel concentration is a dependency to map and interpret.
+
+4. **Which practice best addresses a governance and ethics warning signal before making a public product claim in the United States?**
+   - A. Let the loudest team member approve every claim informally
+   - B. Use claims that sound exciting even if supporting evidence is unavailable
+   - C. Delay all decisions until every possible fact is known
+   - D. Assign a clear decision owner and retain evidence that the claim is truthful and supported
+   - **Answer:** D. This supports accountable, evidence-based claims.
+
+5. **Why does the lesson recommend writing an assumption before a small test?**
+   - A. It makes clear what evidence could challenge or support the assumption
+   - B. It guarantees that the test will produce sales
+   - C. It replaces customer discovery and market research
+   - D. It sets a legally binding contract with participants
+   - **Answer:** A. The written assumption makes the learning loop observable and revisable.
+
+## Sources
+
+- [U.S. Small Business Administration: Market Research and Competitive Analysis](https://www.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis)
+- [U.S. Small Business Administration: Manage Your Finances](https://www.sba.gov/counseling/manage-your-business/#manage-your-finances)
+- [Federal Trade Commission: Advertising and Marketing Basics](https://www.ftc.gov/business-guidance/advertising-marketing/advertising-marketing-basics)
+
+## Related Topics
+
+- `entrepreneurship:foundations:finding-business-ideas`
+- `entrepreneurship:foundations:customer-discovery`
+- `entrepreneurship:foundations:market-research`
+- `entrepreneurship:foundations:business-models`
+- `entrepreneurship:foundations:startup-costs`
+- `entrepreneurship:foundations:growth-strategy`
+
+## Editorial Metadata
+
+- **Editorial status:** READY_TO_PUBLISH
+- **Research status:** Source-verified, 2026-08-19
+- **Rights status:** Reference-only government sources; no source prose adapted.
+- **Scope note:** General education only. This lesson does not provide individualized legal, accounting, tax, financial, investment, or fundraising advice.

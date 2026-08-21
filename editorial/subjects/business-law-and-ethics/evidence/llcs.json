@@ -1,0 +1,27 @@
+{
+  "topicId": "business-law-and-ethics:foundations:llcs",
+  "subjectId": "business-law-and-ethics",
+  "researchedAt": "2026-08-20",
+  "scope": {
+    "core": ["LLC as a state-law structure", "members and managers", "member-managed and manager-managed patterns", "qualified limited liability", "federal tax classification caveat"],
+    "supporting": ["limited liability company agreement", "authority to bind the LLC", "state-law variation"],
+    "outOfScope": ["entity selection", "formation steps or filing instructions", "corporation and partnership doctrine", "tax advice, elections, or filing instructions", "individual liability analysis"]
+  },
+  "claims": [
+    {"claim": "The IRS describes an LLC as a business structure allowed by state statute and identifies owners as members.", "claimType": "LEGAL", "sourceIds": ["irs-limited-liability-company"], "status": "supported"},
+    {"claim": "The management pattern of an LLC depends on applicable state law and its governing agreement; Delaware's statute defaults management to members unless the LLC agreement vests management in one or more managers.", "claimType": "LEGAL", "sourceIds": ["delaware-code-llc-management"], "status": "supported"},
+    {"claim": "Delaware law provides an example in which an LLC's debts and obligations are the LLC's and a member or manager is not personally liable solely for being a member or manager; the statute also permits a person to agree to personal liability.", "claimType": "LEGAL", "sourceIds": ["delaware-code-llc-members-liability"], "status": "supported"},
+    {"claim": "The IRS states that federal tax classification for an LLC can depend on the number of members and elections, so a state-law LLC label does not by itself settle federal tax treatment.", "claimType": "TAX", "sourceIds": ["irs-limited-liability-company"], "status": "supported"},
+    {"claim": "A member may also be a manager, and an LLC may have more than one manager, under the Delaware statutory example.", "claimType": "LEGAL", "sourceIds": ["delaware-code-llc-management"], "status": "supported"},
+    {"claim": "Because LLC law is primarily state law and governing agreements can alter statutory defaults, a general lesson cannot determine authority or liability for a real LLC.", "claimType": "LEGAL", "sourceIds": ["irs-limited-liability-company", "delaware-code-llc-management", "delaware-code-llc-members-liability"], "status": "supported"}
+  ],
+  "conflictingEvidence": [],
+  "unsupportedExistingClaims": ["The generated draft supplied no reliable LLC-specific legal or tax content and was not used as factual authority."],
+  "correctionsNeeded": ["Replaced boilerplate with jurisdiction-qualified LLC content.", "Separated member ownership, management authority, limited liability, and federal tax classification.", "Used Delaware only as a statutory illustration and removed entity-selection, formation, and tax advice."],
+  "rightsIssues": ["All authorities are reference-only. No statutory text, IRS prose, forms, or advice was reproduced; the lesson is original educational synthesis."],
+  "sourceRecords": [
+    {"id": "irs-limited-liability-company", "title": "Limited liability company (LLC)", "provider": "Internal Revenue Service", "url": "https://www.irs.gov/businesses/small-businesses-self-employed/limited-liability-company-llc", "sourceType": "government", "usage": "REFERENCE_ONLY", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": false, "checkedAt": "2026-08-20", "notes": "Read live. Supports the state-statute nature of an LLC, member ownership, and the federal income-tax classification caveat. Used only for original general education; no tax conclusion, election instruction, or filing advice is given."},
+    {"id": "delaware-code-llc-management", "title": "Delaware Code Online, Title 6, Chapter 18, Subchapter IV: Managers", "provider": "Delaware General Assembly", "url": "https://delcode.delaware.gov/title6/c018/sc04/index.html", "sourceType": "government", "usage": "REFERENCE_ONLY", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": false, "checkedAt": "2026-08-20", "notes": "Read live. Delaware statutory illustration of member-default management, manager-designated management, multiple managers, authority, and the role of an LLC agreement. It is expressly not used as a statement of every state's law."},
+    {"id": "delaware-code-llc-members-liability", "title": "Delaware Code Online, Title 6, Chapter 18, Subchapter III: Members", "provider": "Delaware General Assembly", "url": "https://delcode.delaware.gov/title6/c018/sc03/index.html", "sourceType": "government", "usage": "REFERENCE_ONLY", "attributionRequired": true, "aiIngestionChecked": true, "aiIngestionAllowed": false, "checkedAt": "2026-08-20", "notes": "Read live. Delaware statutory illustration of the qualified rule that LLC obligations are those of the LLC and of the possibility of an agreement creating personal obligation. It is not used to resolve any person's liability or to state a nationwide rule."}
+  ]
+}

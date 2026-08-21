@@ -1,0 +1,114 @@
+{
+  "topicId": "project-management:foundations:status-reporting",
+  "subjectId": "project-management",
+  "researchedAt": "2026-08-20",
+  "scope": {
+    "core": [
+      "the purpose and bounded contents of a project status report",
+      "dated actuals, comparison with an agreed reference, forecasts, risks, issues, decisions, and uncertainty",
+      "audience-appropriate detail and a deliberate reporting cadence"
+    ],
+    "supporting": [
+      "distinguishing a status report from the underlying tracking records",
+      "a hypothetical report that makes missing information and follow-up visible"
+    ],
+    "outOfScope": [
+      "designing a communications plan or selecting organization-specific report formats",
+      "detailed project tracking methods, earned-value calculations, risk-register design, or change-authority processes",
+      "organizational, procurement, employment, legal, financial, or certification advice"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A status report communicates a selected, dated account of project conditions; for schedule information, reports can include actual status, actual-versus-planned progress, and forecasts.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["gao-schedule-guide-critical-path"],
+      "status": "supported"
+    },
+    {
+      "claim": "The amount and regularity of reported schedule information should vary with stakeholder needs and project complexity, rather than follow one universal level of detail or cadence.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["gao-schedule-guide-critical-path"],
+      "status": "supported"
+    },
+    {
+      "claim": "A useful report labels the status date and separates observations from forecasts, so readers can see what information is current and what is conditional.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["gao-schedule-guide-critical-path"],
+      "status": "supported"
+    },
+    {
+      "claim": "A status label or color does not settle a project’s condition by itself; communicating status involves judgment and can be interpreted differently when criteria are unclear.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["pmi-know-project-status-monitoring-5982"],
+      "status": "supported"
+    },
+    {
+      "claim": "A concise general-education report can distinguish a risk (an uncertain possible future event), an issue (a current condition needing attention), and a decision or request; it should not imply that the report itself grants authority.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["gao-schedule-guide-critical-path", "pmi-know-project-status-monitoring-5982"],
+      "status": "supported"
+    },
+    {
+      "claim": "When data are incomplete, a more accurate report states the gap, its effect on confidence, and the next check instead of converting uncertainty into a definitive claim.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["gao-schedule-guide-critical-path"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "The GAO guide describes detailed schedule reporting for public programs, while the PMI article is a practitioner reflection rather than a universal reporting standard.",
+      "positions": [
+        "GAO describes reliable-schedule reporting, including actual, planned, and forecast data, and explains that audience and complexity affect reporting detail and regularity.",
+        "PMI’s article illustrates that a project status color can depend on interpretation and communication context."
+      ],
+      "resolution": "The lesson uses neither source as a mandated template. It teaches a transferable reporting discipline: identify the report date and reference, distinguish facts from forecasts, state material risks/issues/requests, adapt detail to the reader, and disclose uncertainty."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft defined status reporting only as a generic concept and did not teach report contents, audience, cadence, factual versus forecast information, uncertainty, or the distinction from tracking."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic boilerplate with original, source-grounded explanation of the status report as a communication product rather than a dashboard color or a substitute for project records.",
+    "Added bounded, transparent treatment of facts, forecasts, risks, issues, decisions, uncertainty, and audience needs without prescribing an organization-specific template or approval process.",
+    "Rebuilt all practice questions as four-option, evidence-supported questions with a balanced key distribution."
+  ],
+  "rightsIssues": [
+    "GAO-16-89G is a U.S. government publication used for public-domain factual support; no prose, tables, dashboards, or templates are reproduced.",
+    "The PMI article is treated as reference-only. Its terms and scenario are not copied; all lesson prose and examples are original synthesis."
+  ],
+  "questionKeyCheck": {
+    "method": "Read every saved prompt, option set, correctIndex, explanation, and sourceIds after writing; then independently mapped correctIndex values to answer letters.",
+    "keys": ["B", "D", "A", "C", "B"],
+    "result": "Exactly five four-option questions cover recall, understanding, application, and analysis. Every A/B/C/D position occurs, including C and D; no position occurs more than twice."
+  },
+  "sourceRecords": [
+    {
+      "id": "gao-schedule-guide-critical-path",
+      "title": "Schedule Assessment Guide: Best Practices for Project Schedules (GAO-16-89G)",
+      "provider": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/assets/680/674404.pdf",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-20",
+      "notes": "Canonical existing Phase 3 source record reused exactly. Checked live, especially the Reporting and Communication discussion and Best Practice 9. Supports report audiences, reporting detail and regularity, actual/planned/forecast categories, status date, current progress, and the limits of stale or unsupported schedule status. The lesson uses original general-education prose only."
+    },
+    {
+      "id": "pmi-know-project-status-monitoring-5982",
+      "title": "How do you know the status of your project?",
+      "provider": "Project Management Institute",
+      "url": "https://www.pmi.org/learning/library/know-status-project-monitoring-controlling-5982",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-20",
+      "notes": "Checked live. A practitioner discussion illustrating that project status communication and the meaning of a color label require explicit context and judgment. Used only as a reference-only cross-check; no source wording, template, or scenario is adapted."
+    }
+  ]
+}

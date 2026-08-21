@@ -1,0 +1,287 @@
+{
+  "id": "project-management:foundations:dependencies",
+  "subjectSlug": "project-management",
+  "unitSlug": "foundations",
+  "slug": "dependencies",
+  "title": "Dependencies",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 11,
+  "tags": [
+    "project-management",
+    "foundations",
+    "dependencies",
+    "scheduling",
+    "constraints"
+  ],
+  "in30Seconds": "A dependency is a logical relationship that says how one planned activity relates to another. Finish-to-start means one activity must finish before the next can start; start-to-start and finish-to-finish allow specific kinds of overlap; start-to-finish is a rare reverse relationship. Dependencies can be internal to a project or external, involving something outside its control. Recording the relationship, its reason, assumptions, and constraints makes the current plan easier to question and update; it does not guarantee timing.",
+  "whyItMatters": "A calendar can show dates without explaining why work is ordered that way. Dependencies expose those reasons: a review may need a draft, two activities may begin together, or a project may need information from outside the team. That visibility helps people distinguish a genuine condition from a habit or an unstated guess. It also prevents a common error: treating an outside approval, delivery, or decision as though the project can command it. Learning to state dependencies precisely improves discussion of a plan without claiming to predict its finish date or calculate a critical path.",
+  "learningObjectives": [
+    "Define a dependency and distinguish predecessor and successor activities.",
+    "Explain the basic meanings of finish-to-start, start-to-start, finish-to-finish, and start-to-finish relationships.",
+    "Distinguish internal dependencies from external dependencies.",
+    "Identify the role of assumptions and constraints when documenting a dependency.",
+    "Apply dependency concepts to a short hypothetical example without calculating a critical path or estimating a schedule."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "Dependencies state a relationship, not merely two dates",
+      "body": "A dependency is a logical relationship between planned activities. It says that an event concerning one activity affects when another activity may start or finish. The activity supplying the condition is the predecessor; the activity affected by it is the successor. These labels describe the relationship, not job rank or importance. A predecessor may be a short review activity, and a successor may be a much larger activity.\n\nThe central question is not, “Which date comes first on a calendar?” It is, “What condition connects these activities?” For example, if a team cannot begin a public review until a draft exists, the review has a logical connection to the draft. A schedule may show both on dates, but the dependency explains why placing the review earlier would not make sense. Conversely, two activities that happen to be dated one after another do not automatically have a dependency. They may simply have been placed that way for convenience.\n\nA dependency is also not a claim that a certain date will be met. It gives a model of a relationship using current information. If its underlying condition changes, the relationship or its interpretation may need review. That is why a dependency should be understandable to the people reading the plan: it is evidence for a proposed order of work, not an invisible rule produced by scheduling software."
+    },
+    {
+      "heading": "Four relationship types describe different conditions",
+      "body": "Finish-to-start (FS) is the familiar sequence: the successor cannot start until the predecessor finishes. “Review the completed draft” after “prepare the draft” is an FS relationship if the review needs the completed version. FS does not mean the review begins immediately after drafting; another condition could still delay it. It names one boundary that must be satisfied.\n\nStart-to-start (SS) means the successor cannot start until the predecessor starts. It can express a limited kind of overlap. For example, a team may begin monitoring sign-up questions only after registration opens. Once registration has started, monitoring may start too, although it need not begin at the exact same moment. Finish-to-finish (FF) means the successor cannot finish until the predecessor finishes. A project could require both a participant guide and its accessibility check to be complete before the guide is considered ready; the activities may proceed in parallel, yet the check cannot be treated as complete before the guide it checks is complete.\n\nStart-to-finish (SF) means the successor cannot finish until the predecessor starts. It is the fourth possible combination, but it is unusual and easy to misread because the successor may occur earlier in time than the predecessor. A handover from an existing support shift to a new shift can illustrate the idea: the existing shift cannot end until the replacement shift has begun. In beginner planning, it is often better to state the real handoff condition plainly than to introduce a complicated relationship. No type is a magic shortcut; the useful type is the one that accurately communicates the condition."
+    },
+    {
+      "heading": "Internal, external, assumptions, constraints, and documentation",
+      "body": "An internal dependency connects activities within the project’s own planned work. “Draft the guide before review” is internal if both activities belong to the same project. An external dependency connects the project to something outside that schedule or project boundary, such as an outside group’s decision, an external system’s availability, or a required piece of information from another effort. The distinction matters because the project may be able to change, split, or clarify internal work, but it may not control the external event. Calling an external dependency “internal” can create a false impression of authority.\n\nAssumptions and constraints add useful context. An assumption is a condition used for planning because it is treated as true for now, such as expecting a partner to provide a data file in a particular format. A constraint is a limit or condition that narrows what can be done, such as a fixed venue-access window or an interface that cannot accept a certain file type. Neither label makes a future event certain. Recording them helps a reader see why the relationship was modeled and what should be checked if the plan changes.\n\nA lightweight dependency record can name the predecessor and successor, relationship type, whether it is internal or external, the reason for the link, its source or point of contact when relevant, and any assumptions, constraints, or review date. The record makes a conversation auditable: a reader can ask whether the condition is real, still current, and owned by the right boundary. It does not tell a real organization who must approve work, force an external party to act, or solve a delay. Critical-path calculations, duration estimates, buffers, and detailed network analysis are separate topics and are intentionally outside this lesson."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "dependency",
+      "definition": "A logical relationship in which one planned activity affects when another activity may start or finish."
+    },
+    {
+      "term": "predecessor",
+      "definition": "The activity whose start or finish provides a condition for a related successor activity."
+    },
+    {
+      "term": "successor",
+      "definition": "The activity whose start or finish is affected by a stated relationship with a predecessor."
+    },
+    {
+      "term": "finish-to-start",
+      "definition": "A relationship in which the successor cannot start until the predecessor activity has finished."
+    },
+    {
+      "term": "start-to-start",
+      "definition": "A relationship in which the successor cannot start until the predecessor activity has started."
+    },
+    {
+      "term": "finish-to-finish",
+      "definition": "A relationship in which the successor cannot finish until the predecessor activity has finished."
+    },
+    {
+      "term": "start-to-finish",
+      "definition": "A less common relationship in which the successor cannot finish until the predecessor activity has started."
+    },
+    {
+      "term": "external dependency",
+      "definition": "A relationship tied to activity, information, or an event outside the project’s own schedule or boundary."
+    },
+    {
+      "term": "constraint",
+      "definition": "A limit or condition that restricts the available ways project work can be planned or performed."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Imagine a school play. Before actors can rehearse with the finished props, the props must be ready. That is a dependency: one thing changes what another thing can do. The prop-making job is the predecessor, and the rehearsal is the successor.\n\nMost dependencies are simple: finish the props, then start the rehearsal. Sometimes jobs can overlap. The person checking costumes might start as soon as costume sewing starts, but cannot finish the final check until sewing is finished. A project can also wait for something outside the team, such as the school confirming that the auditorium is available. That is an external dependency, because the play group does not control the confirmation.",
+    "analogy": "Dependencies are like rules for connecting pieces in a domino setup. One piece may need another piece placed first, while two separate lines can be built at the same time. The connections reveal which actions are related.",
+    "analogyLimits": "A project is not a row of dominoes that always falls in one fixed way. People can revise work, conditions can change, and an outside group may not act when expected. The analogy also does not choose dates, calculate a critical path, or tell a real organization how to approve a change."
+  },
+  "workedExample": "River City Library hypothetically plans a one-evening digital-skills workshop. Its project activities include prepare a draft handout, begin an accessibility review, finish the handout, and complete the review. The team records an SS relationship between preparing the draft and beginning the review: the reviewer can start giving early feedback only after draft work has started. It records an FF relationship between finishing the handout and completing the review, because the review cannot be complete until the handout version being reviewed is complete. The workshop also depends on an external confirmation that a community partner will supply a projector. The record labels that link external, identifies the partner confirmation as its source, and notes the assumption that the projector supports the required connection. This documentation clarifies the current plan; it does not guarantee the partner’s action, estimate a date, or decide how the library should respond if the confirmation changes.",
+  "commonMistakes": [
+    {
+      "mistake": "Calling every pair of consecutive calendar entries a dependency.",
+      "correction": "State the actual condition that connects activities; dates alone do not prove a logical relationship."
+    },
+    {
+      "mistake": "Reading finish-to-start as a command that the successor must begin immediately.",
+      "correction": "It says the successor cannot start before the predecessor finishes; other conditions can still affect its start."
+    },
+    {
+      "mistake": "Treating an external dependency as work the project team controls.",
+      "correction": "Label the external boundary, source, and relevant assumption so the control limit is visible."
+    },
+    {
+      "mistake": "Using a relationship label without explaining its rationale or constraint.",
+      "correction": "Record why the link exists and what condition should prompt a review."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Finish-to-start",
+      "b": "Start-to-start",
+      "distinction": "FS prevents the successor from starting before the predecessor finishes; SS prevents it from starting before the predecessor starts."
+    },
+    {
+      "a": "Finish-to-finish",
+      "b": "Start-to-finish",
+      "distinction": "FF prevents the successor from finishing before the predecessor finishes; SF prevents the successor from finishing before the predecessor starts and is less common."
+    },
+    {
+      "a": "Internal dependency",
+      "b": "External dependency",
+      "distinction": "An internal link connects activities within the project plan; an external link depends on an event, information source, or activity outside the project boundary."
+    },
+    {
+      "a": "Assumption",
+      "b": "Constraint",
+      "distinction": "An assumption is treated as true for current planning; a constraint is a limiting condition that narrows available choices."
+    }
+  ],
+  "keyTakeaway": "Dependencies make the logic behind a plan visible. Choose a relationship type that states the real condition, distinguish internal work from external reliance, and document relevant assumptions and constraints so the relationship can be examined without mistaking it for a guaranteed date.",
+  "questionBank": [
+    {
+      "id": "project-management:foundations:dependencies:1",
+      "prompt": "Which statement best defines a finish-to-start relationship?",
+      "options": [
+        "The successor cannot start until the predecessor finishes.",
+        "The successor cannot finish until the predecessor starts.",
+        "Both activities must start at exactly the same time.",
+        "The predecessor and successor have no scheduling relationship."
+      ],
+      "correctIndex": 0,
+      "explanation": "Finish-to-start means the successor's start is conditional on the predecessor's finish. It does not require an immediate start or simultaneous activity.",
+      "difficulty": "recall",
+      "skill": "Recall the meaning of a finish-to-start relationship.",
+      "sourceIds": [
+        "gao-schedule-guide-critical-path"
+      ]
+    },
+    {
+      "id": "project-management:foundations:dependencies:2",
+      "prompt": "A reviewer may begin reading a guide once drafting has begun, but the review cannot be completed until the guide is complete. Which relationship best describes the condition on completing the review?",
+      "options": [
+        "Finish-to-start",
+        "Finish-to-finish",
+        "Start-to-start",
+        "Start-to-finish"
+      ],
+      "correctIndex": 1,
+      "explanation": "Finish-to-finish means the successor, here the review, cannot finish until its predecessor, the guide, has finished. The activities may overlap.",
+      "difficulty": "understanding",
+      "skill": "Distinguish finish-to-finish from other dependency types.",
+      "sourceIds": [
+        "gao-schedule-guide-critical-path"
+      ]
+    },
+    {
+      "id": "project-management:foundations:dependencies:3",
+      "prompt": "A project cannot run a workshop until a community partner confirms that it will provide a projector. The partner is outside the project team. How should the dependency be classified?",
+      "options": [
+        "As an internal dependency because the workshop is part of the project.",
+        "As a start-to-finish relationship because a projector has a start date.",
+        "As an external dependency because the needed confirmation comes from outside the project boundary.",
+        "As a duration estimate because the confirmation may take time."
+      ],
+      "correctIndex": 2,
+      "explanation": "The confirmation concerns an outside party or effort, so it is external. Recording that boundary helps avoid implying that the project controls the partner's action.",
+      "difficulty": "application",
+      "skill": "Classify an external dependency in a hypothetical project.",
+      "sourceIds": [
+        "gao-schedule-guide-critical-path",
+        "pmi-follow-yellow-brick-road-critical-path"
+      ]
+    },
+    {
+      "id": "project-management:foundations:dependencies:4",
+      "prompt": "Which description best fits a start-to-finish relationship?",
+      "options": [
+        "The successor starts only after the predecessor finishes.",
+        "The successor starts only after the predecessor starts.",
+        "The successor finishes only after the predecessor finishes.",
+        "The successor finishes only after the predecessor starts."
+      ],
+      "correctIndex": 3,
+      "explanation": "Start-to-finish links the predecessor's start to the successor's finish. It is a valid but relatively uncommon relationship and can be easy to misinterpret.",
+      "difficulty": "recall",
+      "skill": "Recall the meaning of a start-to-finish relationship.",
+      "sourceIds": [
+        "gao-schedule-guide-critical-path",
+        "pmi-follow-yellow-brick-road-critical-path"
+      ]
+    },
+    {
+      "id": "project-management:foundations:dependencies:5",
+      "prompt": "Why is it useful to record a dependency's rationale, assumptions, constraints, and external source when relevant?",
+      "options": [
+        "It makes the current relationship open to review and clarifies what condition or boundary may affect it.",
+        "It guarantees the successor will occur on its preferred date.",
+        "It automatically calculates the project critical path.",
+        "It replaces the need to communicate with an outside party."
+      ],
+      "correctIndex": 0,
+      "explanation": "Documentation makes the logic, current planning conditions, and control boundary visible. It cannot guarantee timing, perform calculations, or control an outside party.",
+      "difficulty": "analysis",
+      "skill": "Analyze the limited value of dependency documentation.",
+      "sourceIds": [
+        "gao-schedule-guide-critical-path",
+        "pmi-follow-yellow-brick-road-critical-path"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "project-management:foundations:dependencies:1",
+      "prompt": "Which statement best defines a finish-to-start relationship?",
+      "options": [
+        "The successor cannot start until the predecessor finishes.",
+        "The successor cannot finish until the predecessor starts.",
+        "Both activities must start at exactly the same time.",
+        "The predecessor and successor have no scheduling relationship."
+      ],
+      "correctIndex": 0,
+      "explanation": "Finish-to-start means the successor's start is conditional on the predecessor's finish. It does not require an immediate start or simultaneous activity.",
+      "difficulty": "recall",
+      "skill": "Recall the meaning of a finish-to-start relationship.",
+      "sourceIds": [
+        "gao-schedule-guide-critical-path"
+      ]
+    },
+    {
+      "id": "project-management:foundations:dependencies:2",
+      "prompt": "A reviewer may begin reading a guide once drafting has begun, but the review cannot be completed until the guide is complete. Which relationship best describes the condition on completing the review?",
+      "options": [
+        "Finish-to-start",
+        "Finish-to-finish",
+        "Start-to-start",
+        "Start-to-finish"
+      ],
+      "correctIndex": 1,
+      "explanation": "Finish-to-finish means the successor, here the review, cannot finish until its predecessor, the guide, has finished. The activities may overlap.",
+      "difficulty": "understanding",
+      "skill": "Distinguish finish-to-finish from other dependency types.",
+      "sourceIds": [
+        "gao-schedule-guide-critical-path"
+      ]
+    },
+    {
+      "id": "project-management:foundations:dependencies:3",
+      "prompt": "A project cannot run a workshop until a community partner confirms that it will provide a projector. The partner is outside the project team. How should the dependency be classified?",
+      "options": [
+        "As an internal dependency because the workshop is part of the project.",
+        "As a start-to-finish relationship because a projector has a start date.",
+        "As an external dependency because the needed confirmation comes from outside the project boundary.",
+        "As a duration estimate because the confirmation may take time."
+      ],
+      "correctIndex": 2,
+      "explanation": "The confirmation concerns an outside party or effort, so it is external. Recording that boundary helps avoid implying that the project controls the partner's action.",
+      "difficulty": "application",
+      "skill": "Classify an external dependency in a hypothetical project.",
+      "sourceIds": [
+        "gao-schedule-guide-critical-path",
+        "pmi-follow-yellow-brick-road-critical-path"
+      ]
+    }
+  ],
+  "sources": [
+    "gao-schedule-guide-critical-path",
+    "pmi-follow-yellow-brick-road-critical-path"
+  ],
+  "relatedTopics": [
+    "project-management:foundations:work-breakdown-structure",
+    "project-management:foundations:scheduling",
+    "project-management:foundations:critical-path-basics",
+    "project-management:foundations:milestones",
+    "project-management:foundations:risk-management"
+  ],
+  "provenance": {
+    "sourceSummary": "Original general-education lesson synthesized from a public-domain GAO schedule guide and a reference-only PMI article checked live.",
+    "rightsStatus": "cleared",
+    "transformation": "Source concepts were restated in original prose. The examples, analogy, comparison table, and all questions are original; no source figures, diagrams, templates, or calculation methods were reproduced."
+  },
+  "status": "source-verified",
+  "public": false,
+  "contentHash": "52948af6c97b9b0f"
+}
