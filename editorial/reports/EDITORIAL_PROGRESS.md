@@ -1,6 +1,6 @@
 # ELIEXPLAINS GLOBAL EDITORIAL PROGRESS
 
-Generated: 2026-08-21T20:47:34.349Z
+Generated: 2026-08-21T21:00:31.421Z
 Counts are computed from the phase content stores by `bun run editorial:progress`.
 
 Subjects total: 44
@@ -9,17 +9,17 @@ Subjects remaining: 19
 Subject completion: 56.82%
 
 Total topics: 1299
-Topics processed: 749
+Topics processed: 754
 Topics published: 282
-Topics ready to publish: 467
+Topics ready to publish: 472
 Topics held: 0
 Topics requiring review: 0
-Topics remaining: 550
-Topic processing: 57.66%
+Topics remaining: 545
+Topic processing: 58.04%
 
-Verified questions: 3745
-Unique source records: 3618
-Source usage classes: REFERENCE_ONLY=2769, PUBLIC_DOMAIN=548, ATTRIBUTION_REQUIRED=206, EXTRACT_AND_ADAPT=93, LINK_ONLY=2
+Verified questions: 3770
+Unique source records: 3649
+Source usage classes: REFERENCE_ONLY=2800, PUBLIC_DOMAIN=548, ATTRIBUTION_REQUIRED=206, EXTRACT_AND_ADAPT=93, LINK_ONLY=2
 
 ## Phase progress
 
@@ -27,7 +27,7 @@ Source usage classes: REFERENCE_ONLY=2769, PUBLIC_DOMAIN=548, ATTRIBUTION_REQUIR
 | --- | --- | --- | --- |
 | 1 | 11 / 11 | 282 / 282 | 100.00% |
 | 2 | 1 / 11 | 47 / 325 | 14.46% |
-| 3 | 10 / 11 | 304 / 329 | 92.40% |
+| 3 | 10 / 11 | 309 / 329 | 93.92% |
 | 4 | 3 / 11 | 116 / 363 | 31.96% |
 
 ## Collection progress
@@ -37,7 +37,7 @@ Source usage classes: REFERENCE_ONLY=2769, PUBLIC_DOMAIN=548, ATTRIBUTION_REQUIR
 | Professional Studies | 7 / 7 | 166 / 166 | 100.00% |
 | Technology | 4 / 8 | 135 / 257 | 52.53% |
 | Business & Money | 3 / 9 | 84 / 240 | 35.00% |
-| Humanities & Culture | 6 / 7 | 172 / 197 | 87.31% |
+| Humanities & Culture | 6 / 7 | 177 / 197 | 89.85% |
 | Science & Health | 1 / 6 | 48 / 206 | 23.30% |
 | Society & Government | 4 / 7 | 144 / 233 | 61.80% |
 
@@ -63,7 +63,7 @@ Source usage classes: REFERENCE_ONLY=2769, PUBLIC_DOMAIN=548, ATTRIBUTION_REQUIR
 | history | 49 / 49 | 0 | 49 | 0 | 0 | 0 |
 | hospitality-and-tourism | 20 / 20 | 20 | 0 | 0 | 0 | 0 |
 | human-geography | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
-| languages-and-esl | 1 / 26 | 0 | 1 | 0 | 0 | 25 |
+| languages-and-esl | 6 / 26 | 0 | 6 | 0 | 0 | 20 |
 | music-appreciation | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
 | philosophy-and-ethics | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
 | project-management | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
