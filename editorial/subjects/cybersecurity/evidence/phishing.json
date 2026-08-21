@@ -1,0 +1,196 @@
+{
+  "topicId": "cybersecurity:foundations:phishing",
+  "subjectId": "cybersecurity",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "Definition of phishing as a social attack: fraudulent messages posing as trusted senders to trick recipients into revealing information or clicking harmful links",
+      "How phishing works conceptually: fake urgency, impersonation of trusted senders, fake login pages",
+      "Common types: email phishing, smishing (SMS), vishing (voice calls), spear phishing (targeted)",
+      "Red flags: unexpected urgency, unfamiliar sender, mismatched links, requests for credentials or payments, poor grammar (with AI-era caveat)",
+      "What to do when suspicious: don't click, don't reply, report, verify through another channel",
+      "Why phishing succeeds: it exploits trust and emotion, not just ignorance",
+      "Multi-factor authentication as a damage-limiting layer",
+      "Role of security-awareness training (referenced only; sibling topic)"
+    ],
+    "supporting": [
+      "Phishing is a significant and widespread threat (time-anchored to cited sources)",
+      "AI-generated messages can have perfect grammar, making grammar an unreliable standalone sign"
+    ],
+    "outOfScope": [
+      "Social engineering as the broader category (own topic: cybersecurity:foundations:social-engineering)",
+      "Malware and its delivery mechanics (own topic: cybersecurity:foundations:malware)",
+      "Security-awareness training programs (own topic: cybersecurity:foundations:security-awareness)",
+      "Step-by-step attack techniques, exploit details, or offensive tooling",
+      "Individualized or corporate-policy-specific advice"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Phishing is a form of social engineering in which fraudulent messages or websites pose as a trusted person or organization to trick people into revealing personal or financial information or clicking harmful links.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-glossary-phishing", "cisa-recognize-report-phishing", "cisa-avoiding-social-engineering-phishing", "microsoft-what-is-phishing"],
+      "status": "supported"
+    },
+    {
+      "claim": "Phishing typically works through fake urgency, impersonation of trusted senders, and fake login pages that capture credentials.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cisa-recognize-report-phishing", "cisa-avoiding-social-engineering-phishing", "microsoft-what-is-phishing"],
+      "status": "supported"
+    },
+    {
+      "claim": "The common forms of phishing are email phishing (most common), smishing (SMS/text messages), vishing (voice calls), and spear phishing (targeted at specific people based on research).",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["microsoft-what-is-phishing", "cisa-avoiding-social-engineering-phishing"],
+      "status": "supported"
+    },
+    {
+      "claim": "Common red flags include unexpected urgency, unfamiliar senders, mismatched links, requests for credentials or payments, and poor grammar — with the caveat that AI-generated messages may have perfect grammar and spelling.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cisa-recognize-report-phishing", "cisa-avoiding-social-engineering-phishing", "microsoft-what-is-phishing"],
+      "status": "supported"
+    },
+    {
+      "claim": "The recommended response to a suspected phishing message is to not click links or attachments, not reply, report the message, and verify through an independent channel (a known website or phone number, never the contact information inside the message).",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cisa-recognize-report-phishing", "cisa-avoiding-social-engineering-phishing", "ftc-recognize-avoid-phishing-scams", "microsoft-what-is-phishing"],
+      "status": "supported"
+    },
+    {
+      "claim": "Phishing succeeds by exploiting trust and emotion — urgency, fear, and familiarity — rather than mere ignorance, and even careful people can be deceived.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["microsoft-what-is-phishing", "cisa-recognize-report-phishing"],
+      "status": "supported"
+    },
+    {
+      "claim": "Phishing is a significant and widespread threat: the FTC reports that scammers launch thousands of phishing attacks every day, and NIST's authentication guidance calls phishing a significant threat vector.",
+      "claimType": "CURRENT",
+      "sourceIds": ["ftc-recognize-avoid-phishing-scams", "nist-sp-800-63b-digital-authentication"],
+      "status": "supported"
+    },
+    {
+      "claim": "Multi-factor authentication limits the damage of a phished password; NIST guidance notes that passwords alone are not phishing-resistant and encourages phishing-resistant authentication options where practical.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ftc-recognize-avoid-phishing-scams", "nist-sp-800-63b-digital-authentication", "cisa-recognize-report-phishing"],
+      "status": "supported"
+    },
+    {
+      "claim": "Security-awareness training helps people recognize and report phishing attempts; the topic of security-awareness is covered in its own lesson.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["microsoft-what-is-phishing"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether poor grammar is a reliable phishing indicator",
+      "positions": [
+        "CISA (Avoiding Social Engineering and Phishing Attacks) and Microsoft both list poor grammar, misspellings, and awkward wording among common phishing indicators.",
+        "CISA (Recognize and Report Phishing) notes that in the era of AI, some phishing messages now have perfect grammar and spelling, so grammar alone is no longer reliable."
+      ],
+      "resolution": "The lesson lists poor grammar among the red flags but explicitly carries CISA's caveat that AI-era messages can be flawless, directing readers to weight urgency, sender address, and link destinations more heavily."
+    },
+    {
+      "issue": "Where a user should report a suspected phishing message",
+      "positions": [
+        "FTC consumer guidance: forward phishing emails to the Anti-Phishing Working Group and texts to the SPAM short code, and file a report with the FTC.",
+        "Microsoft: report through your organization's IT department or designated reporting tools.",
+        "CISA: use the report option near the sender's address or the 'report spam' button in the mail client."
+      ],
+      "resolution": "The lesson keeps reporting advice general — 'use the report option in your email or messaging app, and consumer agencies such as the FTC also accept reports' — a statement all three sources support, without prescribing one channel over another."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "Draft framing that phishing is 'a foundational concept' in a generic sense (unsourced boilerplate; replaced with the NIST/CISA definition of phishing as a social attack).",
+    "Draft claim that 'college courses use phishing as a building block for later discussions' (no source supports this).",
+    "Draft toolbox-drawer analogy for phishing (generic boilerplate, no source).",
+    "Draft vocabulary definition of phishing as 'a foundational Cybersecurity concept covered in this lesson' (circular and unsupported)."
+  ],
+  "correctionsNeeded": [
+    "Replaced all generic draft boilerplate with source-verified content from CISA, FTC, NIST, and Microsoft public guidance.",
+    "Added CISA's AI-era caveat that grammar alone is no longer a reliable phishing sign.",
+    "Kept all examples original and generic; attack mechanics described only at the conceptual defensive level, with no how-to content.",
+    "Time-anchored the claim that phishing is a significant threat to the cited sources rather than stating it as an unanchored statistic."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "cisa-recognize-report-phishing",
+      "title": "Recognize and Report Phishing",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/secure-our-world/recognize-and-report-phishing",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A. U.S. government work (public domain). Read via a text-extraction proxy because direct fetches to cisa.gov are bot-blocked; the page's title and content were confirmed live at the canonical URL. Supports: working definition of phishing, urgency/impersonation/credential-capture pattern (the 'Omar' example), red flags including the AI-era grammar caveat, and the resist/report/delete guidance."
+    },
+    {
+      "id": "cisa-avoiding-social-engineering-phishing",
+      "title": "Avoiding Social Engineering and Phishing Attacks",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/news-events/news/avoiding-social-engineering-and-phishing-attacks",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A. U.S. government work (public domain). Read via the same text-extraction proxy (cisa.gov bot-blocked for direct fetches); content confirmed live at the canonical URL. Supports: phishing as a form of social engineering, vishing and smishing definitions, spoofed-sender/greeting/link indicators, and verify-through-another-channel advice."
+    },
+    {
+      "id": "ftc-recognize-avoid-phishing-scams",
+      "title": "How to Recognize and Avoid Phishing Scams",
+      "provider": "U.S. Federal Trade Commission (FTC)",
+      "url": "https://consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B (consumer guidance, government). Read direct (page fetched and full article text extracted). Supports: 'thousands of phishing attacks every day' scale claim, message tactics, red-flag signs, what-to-do-if-suspicious guidance, multi-factor authentication as a protective layer, and public reporting channels."
+    },
+    {
+      "id": "microsoft-what-is-phishing",
+      "title": "What is phishing?",
+      "provider": "Microsoft Security",
+      "url": "https://www.microsoft.com/en-us/security/business/security-101/what-is-phishing",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read direct (page fetched and article text extracted). Supports: definitions of email phishing, spear phishing, whaling, smishing, and vishing; emotional-manipulation and false-trust explanation of why phishing works; don't-reply guidance; and the role of training. Used as reference only; no Microsoft wording reproduced."
+    },
+    {
+      "id": "nist-glossary-phishing",
+      "title": "phishing — Glossary | CSRC",
+      "provider": "National Institute of Standards and Technology (NIST), Computer Security Resource Center",
+      "url": "https://csrc.nist.gov/glossary/term/phishing",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A. Read direct; the term definition was extracted from the page's embedded content (the page renders the definition client-side). Supports the lesson's attributed working definition: fraudulent solicitation in email or on a website in which the perpetrator masquerades as a legitimate business or reputable person."
+    },
+    {
+      "id": "nist-sp-800-63b-digital-authentication",
+      "title": "NIST Special Publication 800-63B: Authentication and Authenticator Management",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "sourceType": "government",
+      "usage": "PUBLIC_DOMAIN",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A. Existing registry record reused with identical id and URL. Read via a text-extraction proxy; the full text was searched and confirms: 'phishing is a significant threat vector' (AAL2 discussion), 'Passwords are not phishing-resistant,' and that phishing resistance requires single- or multi-factor cryptographic authentication. Supports the lesson's MFA/phishing-resistance claims."
+    }
+  ]
+}

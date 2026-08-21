@@ -1,0 +1,237 @@
+{
+  "topicId": "cybersecurity:foundations:ransomware",
+  "subjectId": "cybersecurity",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "Working definition of ransomware (CISA): malware designed to encrypt files on a device, rendering the files and dependent systems unusable, with a ransom demanded in exchange for decryption",
+      "Delivery routes at the conceptual level: phishing emails, malicious downloads (drive-by downloads), and exposed remote access",
+      "Impact: businesses, hospitals, city and state governments, and other critical-infrastructure organizations have been hit; downtime and recovery costs are general",
+      "The payment question: paying does not guarantee data recovery and funds criminals (CISA framing)",
+      "Defense: offline, tested backups; patching; multi-factor authentication; restricted access",
+      "Recovery basics: restore from clean backups and report to authorities",
+      "Honest framing: prevention beats payment"
+    ],
+    "supporting": [
+      "Ransomware spreads to connected systems and shared storage after initial infection (CISA)",
+      "Double extortion: attackers also steal data and threaten to leak or sell it (CISA)",
+      "Attackers increasingly delete or destroy backups to make recovery harder (CISA)",
+      "Ransom demands have risen, with some exceeding $1 million (CISA)",
+      "Joint CISA/FBI/MS-ISAC advisory documents 210+ victims across critical-infrastructure sectors (RansomHub, 2024)"
+    ],
+    "outOfScope": [
+      "Malware families and malware mechanics (sibling topic: malware)",
+      "Backup design, scheduling, and 3-2-1 strategy details (sibling topic: backups)",
+      "Incident-response procedures, playbooks, and containment steps (sibling topic: incident-response)",
+      "MFA mechanics and deployment guidance (sibling topic: mfa)",
+      "Step-by-step attack techniques, exploit details, or tooling (never taught; defensive framing only)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "CISA defines ransomware as a form of malware designed to encrypt files on a device, rendering any files and the systems that rely on them unusable; malicious actors then demand a ransom in exchange for decryption.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cisa-stop-ransomware", "cisa-ransomware-faqs", "cisa-protecting-against-ransomware"],
+      "status": "supported"
+    },
+    {
+      "claim": "Ransomware is commonly delivered through phishing emails, which often appear to come from a legitimate organization or a known contact and entice the user to click a malicious link or open a malicious attachment, or through drive-by downloads, programs installed from the internet without the user's consent or knowledge.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cisa-protecting-against-ransomware"],
+      "status": "supported"
+    },
+    {
+      "claim": "Ransomware crews also gain initial access to internet-facing systems and user endpoints through methods such as exploitation of known (unpatched) vulnerabilities and password spraying against exposed login services, which is why patching and multi-factor authentication are core mitigations.",
+      "claimType": "CURRENT",
+      "sourceIds": ["cisa-aa24-242a-ransomhub"],
+      "status": "supported"
+    },
+    {
+      "claim": "After the initial infection, ransomware attempts to spread to connected systems, including shared storage drives and other accessible computers, so a single infected machine can lock data well beyond that device.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cisa-protecting-against-ransomware"],
+      "status": "supported"
+    },
+    {
+      "claim": "Anyone with a computer connected to the internet is at risk of ransomware, including government or law enforcement agencies, healthcare systems, and other critical-infrastructure entities; state, local, tribal, and territorial governments and critical-infrastructure organizations have been increasingly targeted.",
+      "claimType": "CURRENT",
+      "sourceIds": ["cisa-ransomware-faqs", "cisa-stop-ransomware"],
+      "status": "supported"
+    },
+    {
+      "claim": "Ransomware incidents can severely impact business processes and leave organizations without the data they need to operate and deliver mission-critical services; the economic and reputational impacts span the initial disruption and, at times, extended recovery, and some ransom demands have exceeded $1 million.",
+      "claimType": "CURRENT",
+      "sourceIds": ["cisa-ransomware-faqs", "cisa-stop-ransomware"],
+      "status": "supported"
+    },
+    {
+      "claim": "Paying the ransom is not a guarantee of recovery: CISA states that some victims pay to recover their files but there is no guarantee they will recover them, that the Federal Government does not support paying ransom demands, and that threat actors have refused to decrypt data or demanded additional payments even after being paid.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cisa-ransomware-faqs", "cisa-protecting-against-ransomware", "microsoft-protect-against-ransomware"],
+      "status": "supported"
+    },
+    {
+      "claim": "Malicious actors increasingly use tactics such as deleting system backups that make restoration and recovery more difficult or infeasible, so backups must be stored separately, kept offline or otherwise unreachable from the network, and regularly verified.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cisa-ransomware-faqs", "cisa-protecting-against-ransomware"],
+      "status": "supported"
+    },
+    {
+      "claim": "Keeping software and operating systems patched is a core ransomware defense because outdated applications and operating systems are the target of most attacks.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cisa-ransomware-faqs", "cisa-protecting-against-ransomware"],
+      "status": "supported"
+    },
+    {
+      "claim": "Multi-factor authentication and restricted access reduce ransomware risk: official guidance calls for MFA (phishing-resistant for administrator accounts, standard MFA for webmail, VPNs, and critical systems), restricting users' permissions to install and run software, and segmenting networks to limit how far ransomware can spread.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cisa-aa24-242a-ransomhub", "cisa-ransomware-faqs"],
+      "status": "supported"
+    },
+    {
+      "claim": "Recovery basics per official guidance: restore systems from backups (scanning the backup data first), and report the incident to authorities, including federal law enforcement via the FBI or Secret Service (IC3) and, for organizations, the internal IT helpdesk or security office; CISA also accepts reports and offers technical assistance.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cisa-protecting-against-ransomware", "cisa-stop-ransomware"],
+      "status": "supported"
+    },
+    {
+      "claim": "Many ransomware operations use double extortion: they encrypt systems and also exfiltrate data, threatening to sell or leak the stolen data or publicly name and shame victims if the ransom is not paid.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["cisa-ransomware-faqs", "cisa-aa24-242a-ransomhub"],
+      "status": "supported"
+    },
+    {
+      "claim": "A joint CISA/FBI/MS-ISAC advisory documents that one ransomware group, RansomHub, encrypted and exfiltrated data from at least 210 victims since February 2024, spanning sectors including water and wastewater, information technology, government services and facilities, healthcare and public health, and emergency services.",
+      "claimType": "CURRENT",
+      "sourceIds": ["cisa-aa24-242a-ransomhub"],
+      "status": "supported"
+    },
+    {
+      "claim": "NIST's malware incident guidance establishes that prevention relies on keeping systems patched, user awareness, and backups, and that malware incidents should be handled through reporting and organizational response processes.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-sp-800-83r1"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether paying a ransom can ever succeed in restoring data: CISA states there is no guarantee victims recover files after paying and that the Federal Government does not support paying demands, while individual incident reports sometimes describe partial recovery after payment.",
+      "positions": [
+        "CISA: payment is not a guarantee of recovery and is not supported by the U.S. government",
+        "Some victim accounts report receiving working decryption keys after payment",
+        "Microsoft: paying buys 'a recovery key they might not deliver'"
+      ],
+      "resolution": "The lesson teaches the official, evidence-based stance: payment is unreliable, funds criminal operations, and should not be the plan; recovery rests on tested backups and reporting. No claim is made that payment never works, only that it is not guaranteed and is not recommended."
+    },
+    {
+      "issue": "A 'ransomware attacks every 14 seconds' statistic appears on CISA's own protection page; the figure is from 2016-era reporting and is stale.",
+      "positions": [
+        "CISA protection page repeats the 14-second figure in a training description",
+        "The figure does not reflect current data and is not used in current advisories"
+      ],
+      "resolution": "The statistic is not used in the lesson; impact claims are grounded in the current FAQs and the 2024 joint advisory instead."
+    },
+    {
+      "issue": "NIST SP 800-83 Rev. 1 (2013) predates the modern ransomware wave and never names ransomware explicitly.",
+      "positions": [
+        "NIST SP 800-83 Rev. 1 covers general malware prevention and handling",
+        "Ransomware-specific claims require current CISA and vendor guidance"
+      ],
+      "resolution": "NIST SP 800-83 Rev. 1 is cited only for the evergreen general-malware framing (patching, awareness, backups, reporting); all ransomware-specific claims rest on CISA sources read in 2026 captures and Microsoft Learn read live."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "No generated draft existed for this topic in the phase-2 content store; the only prior mention of ransomware in the store is inside the threats lesson (Q3 uses a 'ransomware crew' as an example of a threat actor), which this lesson does not contradict."
+  ],
+  "correctionsNeeded": [
+    "No draft to correct. Wording choices applied during writing: spread routes are named conceptually (phishing emails, malicious downloads, exposed remote access) with no delivery or exploitation detail; the 'attacks every 14 seconds' statistic found on CISA's protection page was rejected as stale; impact claims are time-anchored to the cited CISA FAQs and the 2024 RansomHub advisory."
+  ],
+  "rightsIssues": [
+    "All sources used as REFERENCE_ONLY. CISA material is U.S. government content read via Internet Archive captures of the canonical cisa.gov URLs (cisa.gov blocks automated fetchers); NIST SP 800-83 Rev. 1 was read as the official PDF; Microsoft Learn was read live. The CISA working definition is quoted briefly with attribution, consistent with how sibling lessons quote NIST definitions. No source prose is adapted or reproduced at length."
+  ],
+  "sourceRecords": [
+    {
+      "id": "cisa-stop-ransomware",
+      "title": "CISA: Stop Ransomware (StopRansomware.gov)",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/stopransomware",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "cisa.gov blocks automated fetchers (HTTP 403); read an Internet Archive capture of the canonical URL on 2026-08-21. Supports: the working definition of ransomware as a form of malware designed to encrypt files on a device, rendering files and dependent systems unusable, with a ransom demanded for decryption; ransomware incidents severely impacting business processes and leaving organizations without data needed to operate; economic and reputational impacts spanning initial disruption and extended recovery; guidance to maintain offline, encrypted backups and test them regularly, patch software and operating systems regularly, reduce the attack surface of internet-facing devices, and report victims' incidents to federal law enforcement via IC3 or a Secret Service field office."
+    },
+    {
+      "id": "cisa-ransomware-faqs",
+      "title": "CISA: Ransomware FAQs (Stop Ransomware)",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/stopransomware/ransomware-faqs",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read via an Internet Archive capture of the canonical URL (snapshot 2026-03-27, status 200) on 2026-08-21. Supports: 'some victims pay to recover their files, but there is no guarantee that they will recover their files if they do'; anyone with an internet-connected computer is at risk, including government or law enforcement agencies and healthcare systems or other critical-infrastructure entities; ransomware incidents severely impact business processes; some ransom demands exceed $1 million; actors increasingly delete system backups to make restoration harder; double extortion via threats to release stolen data and public naming and shaming; mitigations including patching ('outdated applications and operating systems are the target of most attacks'), not clicking links or opening attachments in unsolicited emails, backing up data on a separate device stored offline, restricting users' permissions (least privilege), spam filters, and firewalls."
+    },
+    {
+      "id": "cisa-protecting-against-ransomware",
+      "title": "CISA: Protecting Against Ransomware (blog, released April 11, 2019; revised September 2, 2021)",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/news-events/news/protecting-against-ransomware",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read via an Internet Archive capture of the canonical URL (snapshot 2025-12-08, status 200) on 2026-08-21. Supports: ransomware as a type of malware used to infect computers and encrypt files until a ransom is paid; spread to connected systems and shared storage after infection; delivery commonly through phishing emails or drive-by downloads; the Federal Government does not support paying ransom demands, and even after payment threat actors sometimes demand additional payments, delete data, or refuse to provide a working decryption key; backups stored on a separate device that cannot be accessed from the network and verified regularly; patching guidance (vulnerable applications and OSs are the target of most ransomware attacks); reporting guidance for home users (local FBI or Secret Service office) and organizations (IT helpdesk or security office)."
+    },
+    {
+      "id": "cisa-aa24-242a-ransomhub",
+      "title": "Cybersecurity Advisory AA24-242A: #StopRansomware: RansomHub Ransomware (CISA, FBI, MS-ISAC; released August 29, 2024)",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA), Federal Bureau of Investigation, Multi-State Information Sharing and Analysis Center",
+      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-242a",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read via an Internet Archive capture of the canonical URL (snapshot 2026-05-11, status 200) on 2026-08-21. Used defensively at the conceptual level only: initial access typically via phishing emails, exploitation of known vulnerabilities, and password spraying; mitigations including installing OS/software/firmware updates promptly, requiring phishing-resistant MFA for administrator accounts and standard MFA for services such as webmail and VPNs, training users to recognize and report phishing, and segmenting networks to prevent ransomware spread; the group encrypted and exfiltrated data from at least 210 victims since February 2024 across critical-infrastructure sectors including healthcare and public health, government services and facilities, water and wastewater, and emergency services. No technical exploit or tooling detail from the advisory is reproduced."
+    },
+    {
+      "id": "microsoft-protect-against-ransomware",
+      "title": "Microsoft Learn: Protect your organization against ransomware (Microsoft Security)",
+      "provider": "Microsoft Learn (Microsoft Security)",
+      "url": "https://learn.microsoft.com/en-us/security/ransomware/protect-against-ransomware",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Supports: the goal of making recovery easier 'without paying the ransom'; the warning that paying an attacker buys 'a recovery key they might not deliver'; backups that are offline or immutable, with full restore procedures tested; a recovery plan as a first-class ransomware defense. Used for the payment-framing and tested-offline-backup claims only; the page's enterprise-deployment specifics are out of scope for this literacy lesson."
+    },
+    {
+      "id": "nist-sp-800-83r1",
+      "title": "NIST Special Publication 800-83 Rev. 1: Guide to Malware Incident Prevention and Handling for Desktops and Laptops",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-83r1.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read the official PDF text layer directly on 2026-08-21. The 2013 publication predates the modern ransomware wave and does not name ransomware; it is cited only for the evergreen general-malware framing: prevention through patching and updates, user awareness and training, regular backups, and reporting/handling malware incidents through established response processes. All ransomware-specific claims rest on the CISA sources."
+    }
+  ]
+}

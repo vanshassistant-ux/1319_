@@ -1,0 +1,172 @@
+{
+  "topicId": "cybersecurity:foundations:least-privilege",
+  "subjectId": "cybersecurity",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "minimum-access principle: users and programs get only the access their jobs require",
+      "why it matters: limits the damage a compromised account can do",
+      "where it applies: user accounts, administrator rights, programs and services, cloud permissions",
+      "administrator versus standard accounts (the everyday pattern)",
+      "privilege creep: access that accumulates and is never removed",
+      "regular access reviews: reviewing and removing access",
+      "honest framing: least privilege reduces risk but does not eliminate it"
+    ],
+    "supporting": [
+      "horizontal and vertical application of least privilege",
+      "elevation: temporarily using administrator rights for a specific task",
+      "time-limited access ('the shortest time required')"
+    ],
+    "outOfScope": [
+      "how authorization systems decide and enforce permissions (own topic: authorization)",
+      "attack-surface analysis (own topic: attack-surface)",
+      "zero-trust architecture and its other principles (own topic: zero-trust-basics)",
+      "threat-specific attack techniques",
+      "cloud platform configuration details"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Least privilege is the principle that a security architecture is designed so that each entity is granted the minimum system resources and authorizations that the entity needs to perform its function.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["nist-csrc-glossary-least-privilege"],
+      "status": "supported"
+    },
+    {
+      "claim": "In practical terms, least privilege means assigning users only the minimum privileges necessary to complete their job.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["owasp-authorization-cheat-sheet"],
+      "status": "supported"
+    },
+    {
+      "claim": "Least privilege access means users and workloads get only the access they need, for the shortest time required.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["microsoft-zero-trust-overview"],
+      "status": "supported"
+    },
+    {
+      "claim": "The core benefit of least privilege is containment: an attacker who takes over an account inherits only the access that account held, so limited rights mean limited damage.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["owasp-authorization-cheat-sheet", "microsoft-zero-trust-overview"],
+      "status": "supported"
+    },
+    {
+      "claim": "Least privilege must be applied both horizontally (across people at the same level of an organization) and vertically (according to responsibility).",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["owasp-authorization-cheat-sheet"],
+      "status": "supported"
+    },
+    {
+      "claim": "In cloud environments, least privilege means granting only the permissions required to perform a task and working to reduce broad grants toward least-privilege permissions over time.",
+      "claimType": "CURRENT",
+      "sourceIds": ["aws-iam-least-privilege-best-practices"],
+      "status": "supported"
+    },
+    {
+      "claim": "Running as a standard user helps maximize security; even administrator accounts run everyday tasks in a standard-user security context unless a specific task is elevated with approval.",
+      "claimType": "CURRENT",
+      "sourceIds": ["microsoft-uac-how-it-works"],
+      "status": "supported"
+    },
+    {
+      "claim": "Access tends to accumulate because it is easier to grant users additional permissions than to take away ones they previously enjoyed, which is why periodic access reviews are needed.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["owasp-authorization-cheat-sheet"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Least privilege versus convenience",
+      "positions": [
+        "Some users and administrators prefer broad standing access because it avoids repeated approvals and makes work faster.",
+        "Security guidance holds that broad access enlarges the damage any single compromise can do, so access should be limited to what a job needs."
+      ],
+      "resolution": "The lesson presents least privilege as the security-better default and shows the practical balance: standard accounts for daily work, elevation for specific tasks, and periodic reviews so limits do not drift. Convenience is treated as a reason access creeps, not as a reason to abandon the principle."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft described least privilege as a 'label on a toolbox drawer' that helps choose the right tool; generic boilerplate with no source support.",
+    "The generated draft's vocabulary ('context', 'evidence', 'application') did not define least-privilege concepts."
+  ],
+  "correctionsNeeded": [
+    "Replaced all generic-draft boilerplate with sourced content from NIST, OWASP, Microsoft, and AWS.",
+    "Added the honest-limits framing: least privilege reduces risk but does not eliminate it.",
+    "Added privilege creep and access reviews as named, sourced concepts.",
+    "Added the administrator-versus-standard account pattern grounded in Microsoft's User Account Control documentation.",
+    "All examples rewritten as original scenarios (community-centre booking account, publishing-house worked example)."
+  ],
+  "rightsIssues": [
+    "OWASP cheat sheets are CC BY-SA 4.0; used as REFERENCE_ONLY with no source wording reproduced.",
+    "NIST, Microsoft, and AWS pages state no reuse license; used as REFERENCE_ONLY with facts synthesized into original prose."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nist-csrc-glossary-least-privilege",
+      "title": "NIST Computer Security Resource Center Glossary — least privilege",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://csrc.nist.gov/glossary/term/least_privilege",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21. Provides the attributed definition: 'The principle that a security architecture is designed so that each entity is granted the minimum system resources and authorizations that the entity needs to perform its function.' Used as the canonical definition of least privilege in the lesson."
+    },
+    {
+      "id": "owasp-authorization-cheat-sheet",
+      "title": "Authorization Cheat Sheet",
+      "provider": "OWASP Cheat Sheet Series",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21 (reused registry id; URL identical to content/phase-2/source-registry.json record). 'Enforce Least Privileges' section supports: assigning users only the minimum privileges necessary to complete their job; applying least privilege horizontally and vertically; the observation that it is easier to grant permissions than to take away ones previously enjoyed; failure to enforce least privilege jeopardizing confidentiality of sensitive resources. Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "microsoft-zero-trust-overview",
+      "title": "Zero Trust overview",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21. Supports the 'Use least privilege access' principle: 'User and workloads get only the access they need, for the shortest time required,' and the assume-breach framing that controls focus on limiting breach impact. Zero-trust architecture itself is out of scope for this lesson; only the least-privilege principle is cited."
+    },
+    {
+      "id": "microsoft-uac-how-it-works",
+      "title": "How User Account Control works",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows/security/application-security/application-control/user-account-control/how-it-works",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21. Supports: running as a standard user helps maximize security; by default both standard and administrator users access resources and run apps in the security context of a standard user; a standard user performing an administrative task receives a credential prompt, while an administrator in Admin Approval Mode receives a consent prompt. Basis for the administrator-versus-standard account section."
+    },
+    {
+      "id": "aws-iam-least-privilege-best-practices",
+      "title": "IAM Best Practices (AWS Identity and Access Management User Guide)",
+      "provider": "Amazon Web Services",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl 2026-08-21. Supports 'Apply least-privilege permissions': when setting permissions with IAM policies, grant only the permissions required to perform a task; teams may start broad and work toward least-privilege permissions as the use case matures. Cited for the cloud-permissions application of least privilege."
+    }
+  ]
+}

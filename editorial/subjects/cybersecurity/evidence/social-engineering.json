@@ -1,0 +1,207 @@
+{
+  "topicId": "cybersecurity:foundations:social-engineering",
+  "subjectId": "cybersecurity",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "Definition of social engineering as human-targeted manipulation (attributed to NIST SP 800-63-4 via the CSRC glossary)",
+      "Why attackers target people: technical systems carry strong defenses, so the human layer becomes the path of least resistance",
+      "Classic techniques named conceptually: pretexting, baiting, tailgating, quid pro quo (each with an original example; no how-to)",
+      "Psychological levers: authority, urgency, fear, helpfulness",
+      "Defense habits: verify identity through another channel, slow down, question unexpected requests",
+      "Honest framing: anyone can be manipulated; awareness reduces the odds without making anyone immune"
+    ],
+    "supporting": [
+      "Layered organizational defenses (awareness training, multi-factor authentication, access controls)",
+      "Phishing as the message-based sibling form of social engineering (referenced only)"
+    ],
+    "outOfScope": [
+      "Phishing mechanics and detection (sibling topic cybersecurity:foundations:phishing)",
+      "Security awareness programs and training design (sibling topic cybersecurity:foundations:security-awareness)",
+      "Threat actors and the threat landscape (sibling topic cybersecurity:foundations:threats)",
+      "Step-by-step attack techniques or tooling (defensive framing only)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Social engineering deceives an individual into revealing sensitive information, obtaining unauthorized access, or committing fraud by building confidence and trust rather than breaking a technical defense (NIST SP 800-63-4 definition, collected in the NIST CSRC glossary).",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nist-csrc-glossary-social-engineering"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Social engineering relies heavily on human interaction to influence an individual to violate security protocol and divulge confidential information; such attacks are committed via phone, in person, or online.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nist-sp-800-12r1"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Attackers favor social engineering because reaching systems through technical controls such as firewalls and antivirus is difficult, while manipulating a person avoids that work.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "ibm-what-is-social-engineering"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Pretexting is a technique in which the attacker invents a fabricated situation and poses as the person entitled to resolve it.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-social-engineering"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Baiting is a technique that offers a tempting lure \u2014 such as a free download or a dropped USB drive \u2014 so that the victim's action on the offer compromises security.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-social-engineering"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Tailgating is a technique in which an unauthorized person follows an authorized person through a door or access point the attacker could not open alone.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-social-engineering"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Quid pro quo is a technique that dangles a desirable good or service in exchange for the victim's sensitive information or access.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-what-is-social-engineering"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Social engineering attacks apply psychological levers \u2014 posing as an authority, inducing fear or urgency, and appealing to helpfulness or curiosity \u2014 to drive victims to act against their interests.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "ibm-what-is-social-engineering"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A core defense practice is to verify identity through an independent channel \u2014 contact the organization at a phone number or website you know is real, not the one provided in the message \u2014 and layered protections such as multi-factor authentication limit the damage when credentials leak.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ftc-recognize-and-avoid-phishing-scams",
+        "ibm-what-is-social-engineering"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Anyone can be manipulated; awareness and careful habits reduce the odds of falling for social engineering but cannot guarantee protection.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "cisa-what-is-cybersecurity",
+        "ibm-what-is-social-engineering"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Relationship between social engineering and phishing",
+      "positions": [
+        "NIST SP 800-12 Rev. 1 describes phishing as the online, email-based form of social engineering",
+        "Some vendor sources treat phishing and social engineering as parallel threat categories"
+      ],
+      "resolution": "The lesson treats social engineering as the broader category of human-targeted manipulation and phishing as its message-based form; phishing is owned by a sibling topic and referenced only."
+    },
+    {
+      "issue": "Whether tailgating is only physical",
+      "positions": [
+        "IBM describes both in-person following through a door and digital piggybacking on an unattended session",
+        "Most consumer and awareness guidance focuses on the physical form"
+      ],
+      "resolution": "The lesson describes the physical form (following an authorized person through a door), which is the concept named in the topic brief; the digital variant is not covered."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's claim that social engineering is 'a foundational concept in Cybersecurity' \u2014 boilerplate with no definition, techniques, or sources",
+    "The draft's framing that the lesson exists to introduce 'context, evidence, and application' for later courses \u2014 generic template language, discarded"
+  ],
+  "correctionsNeeded": [
+    "Replaced all machine-generated boilerplate with a source-verified lesson: definition attributed to NIST (SP 800-63-4 via the CSRC glossary; SP 800-12 Rev. 1); technique names, psychology, and defense framing supported by IBM's explainer and FTC consumer guidance; honest-limits framing from CISA",
+    "Added original examples for each technique; no attack how-to content (defensive framing per the subject source-map)",
+    "Added the required five-question bank with answer keys distributed across A/B/C/D (\u22651 C and \u22651 D) and at least one recall plus one application/analysis item"
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "nist-csrc-glossary-social-engineering",
+      "title": "NIST Computer Security Resource Center Glossary \u2014 social engineering",
+      "provider": "National Institute of Standards and Technology (NIST), Computer Security Resource Center",
+      "url": "https://csrc.nist.gov/glossary/term/social_engineering",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. federal government work; not subject to copyright in the United States",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. The glossary entry collects attributed definitions: NIST SP 800-63-4 / SP 800-63A-4 define social engineering as the act of deceiving an individual into revealing sensitive information, obtaining unauthorized access, or committing fraud by associating with the individual to gain confidence and trust; CNSSI 4009-2015 / NIST SP 800-82r3 define it as an attempt to trick someone into revealing information (e.g., a password) that can be used to attack systems or networks; NIST SP 800-115 offers a similar tricking definition. Used as the attributed working definition in the lesson. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "nist-sp-800-12r1",
+      "title": "NIST Special Publication 800-12 Revision 1: An Introduction to Information Security",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-12r1.pdf",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. Government work; not subject to copyright in the United States",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Registered id reused with an identical URL. The PDF text layer was read directly (nvlpubs.nist.gov) on 2026-08-21. Section 4.2.2: social engineering, in the context of information security, is a technique that relies heavily on human interaction to influence an individual to violate security protocol and encourages the individual to divulge confidential information; attacks are commonly committed via phone or online, with phone attacks described as the most basic; the online email-based form is phishing; social media is used to gather contact information that enables social engineering. Section 7.3.2: social engineering involves deceiving users or administrators into divulging information about systems, including their passwords. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "ibm-what-is-social-engineering",
+      "title": "What is social engineering? (IBM Security explainer)",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/topics/social-engineering",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21; reputable vendor explainer used as a secondary source. Supports: social engineering as psychological manipulation of people rather than exploitation of technical vulnerabilities (sometimes called 'human hacking'); attackers favor it because it avoids the difficult technical work of bypassing firewalls, antivirus, and other controls; the technique families \u2014 baiting (tempting lures such as free downloads or dropped USB drives), tailgating (following an authorized person through an access point), pretexting (inventing a fake situation and posing as the person to resolve it), quid pro quo (dangling a desirable good or service in exchange for information); the psychological levers (posing as a trusted brand, posing as an authority figure, inducing fear or urgency, appealing to helpfulness or curiosity); and the difficulty of prevention because manipulation targets psychology. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "ftc-recognize-and-avoid-phishing-scams",
+      "title": "How To Recognize and Avoid Phishing Scams",
+      "provider": "U.S. Federal Trade Commission (FTC), Consumer Advice",
+      "url": "https://consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. The article's subject is phishing (a sibling topic); it is cited here only for the general defense practices it states: when an unexpected message asks for action, contact the company through a phone number or website you know is real rather than the information in the message, and use layered protections such as multi-factor authentication. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "cisa-what-is-cybersecurity",
+      "title": "What is Cybersecurity? (CISA, released February 1, 2021)",
+      "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/news-events/news/what-cybersecurity",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Registered id reused with an identical URL. The live host blocks automated fetchers and the Internet Archive was offline on 2026-08-21, so this record reuses the phase-2 registry entry (read via an Internet Archive capture by an earlier worker; text matched the known canonical content). Cited only for the honest-limits framing: even with the best precautions there is no guarantee that some harms will not occur, and the realistic goal is to minimize the chances. Facts synthesized; no wording reproduced."
+    }
+  ]
+}

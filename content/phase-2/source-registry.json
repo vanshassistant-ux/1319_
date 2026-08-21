@@ -39,6 +39,19 @@
     "notes": "Read live on 2026-08-21 (page text extracted from the rendered HTML). Supports: even advanced language models can generate text that is factually incorrect or inconsistent with the given context, known as hallucination, which can undermine reliability; verification with citations as the documented approach (make responses auditable by citing quotes and sources for each claim, retracting claims that lack support); allowing uncertainty as a strategy to reduce false information. Facts synthesized; no wording reproduced."
   },
   {
+    "id": "aws-iam-least-privilege-best-practices",
+    "title": "IAM Best Practices (AWS Identity and Access Management User Guide)",
+    "provider": "Amazon Web Services",
+    "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl 2026-08-21. Supports 'Apply least-privilege permissions': when setting permissions with IAM policies, grant only the permissions required to perform a task; teams may start broad and work toward least-privilege permissions as the use case matures. Cited for the cloud-permissions application of least privilege."
+  },
+  {
     "id": "census-acs-general-handbook-2018",
     "title": "Understanding and Using American Community Survey Data: What All Data Users Need to Know (ACS General Handbook, 2018)",
     "provider": "U.S. Census Bureau",
@@ -93,6 +106,47 @@
     "notes": "Records that on February 5, 2021, unauthorized actors accessed the SCADA system of a U.S. drinking water treatment facility and increased the amount of sodium hydroxide in the treatment process, and that plant personnel noticed the change and corrected it before harm. Used for the integrity-failure example, presented conceptually. cisa.gov blocks direct automated fetching; read via an Internet Archive capture of the canonical URL."
   },
   {
+    "id": "cisa-aa22-074a",
+    "title": "Cybersecurity Advisory AA22-074A: Russian State-Sponsored Cyber Actors Gain Network Access by Exploiting Default Multifactor Authentication Protocols and 'PrintNightmare' Vulnerability",
+    "provider": "U.S. Cybersecurity and Infrastructure Security Agency (CISA)",
+    "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-074a",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "license": "U.S. federal government work (public domain)",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "cisa.gov blocks automated fetchers; read an Internet Archive capture of the canonical URL on 2026-08-21. Supports: MFA as one of the most important cybersecurity practices to reduce the risk of intrusions; 'according to industry research, users who enable MFA are up to 99 percent less likely to have an account compromised'; 'every user should sign up for MFA when available'; and 'physical security tokens are the most secure form of MFA, followed by authenticator applications.' Used only for defensive guidance and the method hierarchy; the advisory's threat-actor details were not used."
+  },
+  {
+    "id": "cisa-aa24-242a-ransomhub",
+    "title": "Cybersecurity Advisory AA24-242A: #StopRansomware: RansomHub Ransomware (CISA, FBI, MS-ISAC; released August 29, 2024)",
+    "provider": "Cybersecurity and Infrastructure Security Agency (CISA), Federal Bureau of Investigation, Multi-State Information Sharing and Analysis Center",
+    "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-242a",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "license": "U.S. federal government work (public domain)",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read via an Internet Archive capture of the canonical URL (snapshot 2026-05-11, status 200) on 2026-08-21. Used defensively at the conceptual level only: initial access typically via phishing emails, exploitation of known vulnerabilities, and password spraying; mitigations including installing OS/software/firmware updates promptly, requiring phishing-resistant MFA for administrator accounts and standard MFA for services such as webmail and VPNs, training users to recognize and report phishing, and segmenting networks to prevent ransomware spread; the group encrypted and exfiltrated data from at least 210 victims since February 2024 across critical-infrastructure sectors including healthcare and public health, government services and facilities, water and wastewater, and emergency services. No technical exploit or tooling detail from the advisory is reproduced."
+  },
+  {
+    "id": "cisa-avoiding-social-engineering-phishing",
+    "title": "Avoiding Social Engineering and Phishing Attacks",
+    "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+    "url": "https://www.cisa.gov/news-events/news/avoiding-social-engineering-and-phishing-attacks",
+    "sourceType": "government",
+    "usage": "PUBLIC_DOMAIN",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-21",
+    "notes": "Tier A. U.S. government work (public domain). Read via the same text-extraction proxy (cisa.gov bot-blocked for direct fetches); content confirmed live at the canonical URL. Supports: phishing as a form of social engineering, vishing and smishing definitions, spoofed-sender/greeting/link indicators, and verify-through-another-channel advice."
+  },
+  {
     "id": "cisa-cyber-threats-and-advisories",
     "title": "CISA: Cyber Threats and Advisories",
     "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
@@ -132,6 +186,47 @@
     "notes": "Read the official JSON feed live 2026-08-21 (catalogVersion 2026.08.21, count 1674). Supports: CISA maintains a catalog of vulnerabilities known to be actively exploited, and the count claim of 1,674 entries as of the August 2026 version. Used as evidence that only a subset of cataloged weaknesses is actively exploited. Facts synthesized; no wording reproduced."
   },
   {
+    "id": "cisa-protecting-against-ransomware",
+    "title": "CISA: Protecting Against Ransomware (blog, released April 11, 2019; revised September 2, 2021)",
+    "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+    "url": "https://www.cisa.gov/news-events/news/protecting-against-ransomware",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "license": "U.S. federal government work (public domain)",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read via an Internet Archive capture of the canonical URL (snapshot 2025-12-08, status 200) on 2026-08-21. Supports: ransomware as a type of malware used to infect computers and encrypt files until a ransom is paid; spread to connected systems and shared storage after infection; delivery commonly through phishing emails or drive-by downloads; the Federal Government does not support paying ransom demands, and even after payment threat actors sometimes demand additional payments, delete data, or refuse to provide a working decryption key; backups stored on a separate device that cannot be accessed from the network and verified regularly; patching guidance (vulnerable applications and OSs are the target of most ransomware attacks); reporting guidance for home users (local FBI or Secret Service office) and organizations (IT helpdesk or security office)."
+  },
+  {
+    "id": "cisa-ransomware-faqs",
+    "title": "CISA: Ransomware FAQs (Stop Ransomware)",
+    "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+    "url": "https://www.cisa.gov/stopransomware/ransomware-faqs",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "license": "U.S. federal government work (public domain)",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read via an Internet Archive capture of the canonical URL (snapshot 2026-03-27, status 200) on 2026-08-21. Supports: 'some victims pay to recover their files, but there is no guarantee that they will recover their files if they do'; anyone with an internet-connected computer is at risk, including government or law enforcement agencies and healthcare systems or other critical-infrastructure entities; ransomware incidents severely impact business processes; some ransom demands exceed $1 million; actors increasingly delete system backups to make restoration harder; double extortion via threats to release stolen data and public naming and shaming; mitigations including patching ('outdated applications and operating systems are the target of most attacks'), not clicking links or opening attachments in unsolicited emails, backing up data on a separate device stored offline, restricting users' permissions (least privilege), spam filters, and firewalls."
+  },
+  {
+    "id": "cisa-recognize-report-phishing",
+    "title": "Recognize and Report Phishing",
+    "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+    "url": "https://www.cisa.gov/secure-our-world/recognize-and-report-phishing",
+    "sourceType": "government",
+    "usage": "PUBLIC_DOMAIN",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-21",
+    "notes": "Tier A. U.S. government work (public domain). Read via a text-extraction proxy because direct fetches to cisa.gov are bot-blocked; the page's title and content were confirmed live at the canonical URL. Supports: working definition of phishing, urgency/impersonation/credential-capture pattern (the 'Omar' example), red flags including the AI-era grammar caveat, and the resist/report/delete guidance."
+  },
+  {
     "id": "cisa-secure-our-world-update-software",
     "title": "Update Software (Secure Our World)",
     "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
@@ -143,6 +238,20 @@
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-21",
     "notes": "Registered id reused from the phase-1 source registry with an identical URL. cisa.gov blocked direct fetching on 2026-08-21, so the page was read via an Internet Archive capture (web.archive.org snapshot 2026-08-06, status 200). Supports: technology providers issue software updates to patch security weak spots and if they are not installed they cannot protect users; install updates as soon as possible; turn on automatic updates; the story of Veda shows out-of-date software and clicking an unexpected link enabling malicious activity, used for the human-error vulnerability example. Facts synthesized; no wording reproduced."
+  },
+  {
+    "id": "cisa-stop-ransomware",
+    "title": "CISA: Stop Ransomware (StopRansomware.gov)",
+    "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+    "url": "https://www.cisa.gov/stopransomware",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "license": "U.S. federal government work (public domain)",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "cisa.gov blocks automated fetchers (HTTP 403); read an Internet Archive capture of the canonical URL on 2026-08-21. Supports: the working definition of ransomware as a form of malware designed to encrypt files on a device, rendering files and dependent systems unusable, with a ransom demanded for decryption; ransomware incidents severely impacting business processes and leaving organizations without data needed to operate; economic and reputational impacts spanning initial disruption and extended recovery; guidance to maintain offline, encrypted backups and test them regularly, patch software and operating systems regularly, reduce the attack surface of internet-facing devices, and report victims' incidents to federal law enforcement via IC3 or a Secret Service field office."
   },
   {
     "id": "cisa-understanding-dos-attacks",
@@ -445,6 +554,33 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Documents that in September 2017 Equifax announced a data breach exposing the personal information of 147 million people and agreed to a global settlement with the FTC, the CFPB, and 50 U.S. states and territories. Used for the confidentiality-failure example; only the fact is used, no attack detail."
+  },
+  {
+    "id": "ftc-recognize-and-avoid-phishing-scams",
+    "title": "How To Recognize and Avoid Phishing Scams",
+    "provider": "U.S. Federal Trade Commission (FTC), Consumer Advice",
+    "url": "https://consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "license": "U.S. federal government work (public domain)",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl on 2026-08-21. The article's subject is phishing (a sibling topic); it is cited here only for the general defense practices it states: when an unexpected message asks for action, contact the company through a phone number or website you know is real rather than the information in the message, and use layered protections such as multi-factor authentication. Facts synthesized; no wording reproduced."
+  },
+  {
+    "id": "ftc-recognize-avoid-phishing-scams",
+    "title": "How to Recognize and Avoid Phishing Scams",
+    "provider": "U.S. Federal Trade Commission (FTC)",
+    "url": "https://consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams",
+    "sourceType": "government",
+    "usage": "PUBLIC_DOMAIN",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-21",
+    "notes": "Tier B (consumer guidance, government). Read direct (page fetched and full article text extracted). Supports: 'thousands of phishing attacks every day' scale claim, message tactics, red-flag signs, what-to-do-if-suspicious guidance, multi-factor authentication as a protective layer, and public reporting channels."
   },
   {
     "id": "gc-big-data-defined",
@@ -865,6 +1001,19 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Read live 2026-08-21. Supports: overfitting as a model fitting too closely or exactly to its training data so it cannot make accurate predictions on other data; the model memorizing noise within the dataset and failing to generalize; the standard practice that part of the data is typically set aside as a test set to check for overfitting; a low training error combined with a high test error signaling overfitting. Used only as a pointer for the failure-mode mention; the overfitting sibling topic owns the full treatment. Facts synthesized; no wording reproduced."
+  },
+  {
+    "id": "ibm-what-is-social-engineering",
+    "title": "What is social engineering? (IBM Security explainer)",
+    "provider": "IBM",
+    "url": "https://www.ibm.com/topics/social-engineering",
+    "sourceType": "reference",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl on 2026-08-21; reputable vendor explainer used as a secondary source. Supports: social engineering as psychological manipulation of people rather than exploitation of technical vulnerabilities (sometimes called 'human hacking'); attackers favor it because it avoids the difficult technical work of bypassing firewalls, antivirus, and other controls; the technique families — baiting (tempting lures such as free downloads or dropped USB drives), tailgating (following an authorized person through an access point), pretexting (inventing a fake situation and posing as the person to resolve it), quid pro quo (dangling a desirable good or service in exchange for information); the psychological levers (posing as a trusted brand, posing as an authority figure, inducing fear or urgency, appealing to helpfulness or curiosity); and the difficulty of prevention because manipulation targets psychology. Facts synthesized; no wording reproduced."
   },
   {
     "id": "ibm-what-is-supervised-learning",
@@ -2062,6 +2211,19 @@
     "notes": "Read live 2026-08-21. Supports: defining unfair behavior by its harm or impact on people; harms of allocation and of quality of service; group fairness as asking which groups are at risk of experiencing harm; computing metrics across subgroups defined by sensitive features or attributes; the note that fairness is a socio-technical challenge, that quantitative fairness metrics do not capture aspects such as justice and due process, and that many quantitative fairness metrics cannot all be satisfied simultaneously; the parity-constraint framings demographic parity, equalized odds, and equal opportunity. Facts synthesized; no page wording reproduced."
   },
   {
+    "id": "microsoft-protect-against-ransomware",
+    "title": "Microsoft Learn: Protect your organization against ransomware (Microsoft Security)",
+    "provider": "Microsoft Learn (Microsoft Security)",
+    "url": "https://learn.microsoft.com/en-us/security/ransomware/protect-against-ransomware",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live 2026-08-21. Supports: the goal of making recovery easier 'without paying the ransom'; the warning that paying an attacker buys 'a recovery key they might not deliver'; backups that are offline or immutable, with full restore procedures tested; a recovery plan as a first-class ransomware defense. Used for the payment-framing and tested-offline-backup claims only; the page's enterprise-deployment specifics are out of scope for this literacy lesson."
+  },
+  {
     "id": "microsoft-responsible-ai-principles",
     "title": "What is responsible AI? (Azure Machine Learning documentation)",
     "provider": "Microsoft Learn",
@@ -2088,6 +2250,45 @@
     "notes": "Read live 2026-08-21. Supports the actor taxonomy: Microsoft categorizes threat actors into five key groups, including nation-state actors (operating for espionage, financial gain, or retribution; observed focusing on government agencies, intergovernmental organizations, NGOs, and think tanks) and financially motivated actors (ransomware operators, business email compromise, phishing, and other groups with financial or extortion motivations)."
   },
   {
+    "id": "microsoft-uac-how-it-works",
+    "title": "How User Account Control works",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/windows/security/application-security/application-control/user-account-control/how-it-works",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl 2026-08-21. Supports: running as a standard user helps maximize security; by default both standard and administrator users access resources and run apps in the security context of a standard user; a standard user performing an administrative task receives a credential prompt, while an administrator in Admin Approval Mode receives a consent prompt. Basis for the administrator-versus-standard account section."
+  },
+  {
+    "id": "microsoft-what-is-phishing",
+    "title": "What is phishing?",
+    "provider": "Microsoft Security",
+    "url": "https://www.microsoft.com/en-us/security/business/security-101/what-is-phishing",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Tier B. Read direct (page fetched and article text extracted). Supports: definitions of email phishing, spear phishing, whaling, smishing, and vishing; emotional-manipulation and false-trust explanation of why phishing works; don't-reply guidance; and the role of training. Used as reference only; no Microsoft wording reproduced."
+  },
+  {
+    "id": "microsoft-zero-trust-overview",
+    "title": "Zero Trust overview",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl 2026-08-21. Supports the 'Use least privilege access' principle: 'User and workloads get only the access they need, for the shortest time required,' and the assume-breach framing that controls focus on limiting breach impact. Zero-trust architecture itself is out of scope for this lesson; only the least-privilege principle is cited."
+  },
+  {
     "id": "ms-learn-clean-missing-data",
     "title": "Clean Missing Data: Component Reference - Azure Machine Learning",
     "provider": "Microsoft Learn",
@@ -2099,6 +2300,19 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Read directly (public page). Documents the standard handling operations for missing values - removing rows and columns, replacing with a placeholder or mean, and inferring values - and warns that the cleaning method chosen for missing values can dramatically affect results. Supports the handling-options and bias-warning content at intuition level; no tool workflow taught in the lesson."
+  },
+  {
+    "id": "ms-learn-explain-malware",
+    "title": "Microsoft Learn: Explain malware (Explore malware and threat protection module)",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/training/modules/explore-malware-threat-protection/2-explain-malware",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live 2026-08-21. Supports the plain-language definition (malicious software attackers design to harm computer systems, including damage, remote access, and collecting/transmitting sensitive information) and the family one-liners: viruses replicate by inserting code into files; worms replicate without direct intervention and spread across networks without user action; trojan horses provide remote access; ransomware encrypts data and demands payment; spyware tracks use without consent."
   },
   {
     "id": "ms-learn-explore-analyze-data-python",
@@ -2127,6 +2341,19 @@
     "notes": "Read the lesson README (via raw.githubusercontent.com) on 2026-08-21. Supports: machine learning as automated systems that learn hidden patterns from data to aid decisions; the contrast between machine learning and hard-coded rules-based engines; the statement that high-quality data improves model performance while poor or noisy data leads to inaccurate predictions; and applications such as predicting the likelihood of disease from a patient's medical history or reports. Facts synthesized; no wording reproduced."
   },
   {
+    "id": "ms-security-101-what-is-malware",
+    "title": "Microsoft Security 101: What Is Malware? Definition and Types",
+    "provider": "Microsoft (Microsoft Security)",
+    "url": "https://www.microsoft.com/en-us/security/business/security-101/what-is-malware",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live 2026-08-21 (page updated January 13, 2025). Supports: malware definition (software designed to disrupt, damage, or gain unauthorized access); infection routes (infected email attachments, malicious websites, unsafe downloads, infected USB drives, exploits hidden in ads on legitimate websites); signs of infection (slow performance, frequent crashes, unexpected pop-ups or programs, browser redirects, changed settings, unexpected account activity); prevention (keep software updated, antivirus solutions, backups); and the observation that attackers constantly evolve their methods."
+  },
+  {
     "id": "mslearn-azure-ml-split-data",
     "title": "Split Data: Component reference - Azure Machine Learning",
     "provider": "Microsoft Learn",
@@ -2138,6 +2365,19 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Read live 2026-08-21 (the page shows a sign-in banner for some features, but the public article body rendered fully). Supports: dividing a dataset into two distinct sets, useful when separating data into training and testing sets; the randomized split option as the preferred way to create training and test datasets. The tool-specific designer workflow was not used; only the concept-level statements about splitting for training and testing."
+  },
+  {
+    "id": "mslearn-azure-rbac-overview",
+    "title": "What is Azure role-based access control (Azure RBAC)?",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl with a browser user-agent on 2026-08-21. Supports: RBAC as managing who has access to Azure resources, what they can do with those resources, and at what scope; a role assignment consisting of security principal, role definition, and scope; a role definition as a collection of permissions listing actions such as read, write, and delete; scope as the set of resources the access applies to (management group, subscription, resource group, or resource). Facts synthesized into original prose; no wording reproduced."
   },
   {
     "id": "mslearn-clean-transform-load-data-powerbi",
@@ -2243,6 +2483,46 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Read directly as the nvlpubs PDF (downloaded and text-extracted 2026-08-21). Supports: 'fair, with harmful bias managed' as one of the characteristics of trustworthy AI; that creating trustworthy AI requires balancing characteristics according to context of use; that AI systems are inherently socio-technical, influenced by societal dynamics and human behavior; the four functions Govern, Map, Measure, and Manage as ongoing risk work. Distinct document from the AI RMF landing page record; used only for these framing claims."
+  },
+  {
+    "id": "nist-csrc-glossary-least-privilege",
+    "title": "NIST Computer Security Resource Center Glossary — least privilege",
+    "provider": "National Institute of Standards and Technology (NIST)",
+    "url": "https://csrc.nist.gov/glossary/term/least_privilege",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl 2026-08-21. Provides the attributed definition: 'The principle that a security architecture is designed so that each entity is granted the minimum system resources and authorizations that the entity needs to perform its function.' Used as the canonical definition of least privilege in the lesson."
+  },
+  {
+    "id": "nist-csrc-glossary-malware",
+    "title": "NIST Computer Security Resource Center Glossary — malware",
+    "provider": "National Institute of Standards and Technology (NIST), Computer Security Resource Center",
+    "url": "https://csrc.nist.gov/glossary/term/malware",
+    "sourceType": "reference",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live 2026-08-21. Provides the attributed working definition: software or firmware intended to perform an unauthorized process that will have adverse impact on the confidentiality, integrity, or availability of an information system, and notes that a virus, worm, trojan horse, or other code-based entity infects a host, with spyware and some forms of adware also examples of malicious code."
+  },
+  {
+    "id": "nist-csrc-glossary-social-engineering",
+    "title": "NIST Computer Security Resource Center Glossary — social engineering",
+    "provider": "National Institute of Standards and Technology (NIST), Computer Security Resource Center",
+    "url": "https://csrc.nist.gov/glossary/term/social_engineering",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "license": "U.S. federal government work; not subject to copyright in the United States",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl on 2026-08-21. The glossary entry collects attributed definitions: NIST SP 800-63-4 / SP 800-63A-4 define social engineering as the act of deceiving an individual into revealing sensitive information, obtaining unauthorized access, or committing fraud by associating with the individual to gain confidence and trust; CNSSI 4009-2015 / NIST SP 800-82r3 define it as an attempt to trick someone into revealing information (e.g., a password) that can be used to attack systems or networks; NIST SP 800-115 offers a similar tricking definition. Used as the attributed working definition in the lesson. Facts synthesized; no wording reproduced."
   },
   {
     "id": "nist-csrc-glossary-threat",
@@ -2392,6 +2672,19 @@
     "notes": "Primary source for the three security objectives and their loss definitions ('a loss of confidentiality is the unauthorized disclosure of information', etc.), and for the statement that the definitions apply within each organization's context. Read as the nvlpubs PDF; facts synthesized, no wording reproduced."
   },
   {
+    "id": "nist-glossary-phishing",
+    "title": "phishing — Glossary | CSRC",
+    "provider": "National Institute of Standards and Technology (NIST), Computer Security Resource Center",
+    "url": "https://csrc.nist.gov/glossary/term/phishing",
+    "sourceType": "government",
+    "usage": "PUBLIC_DOMAIN",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-21",
+    "notes": "Tier A. Read direct; the term definition was extracted from the page's embedded content (the page renders the definition client-side). Supports the lesson's attributed working definition: fraudulent solicitation in email or on a website in which the perpetrator masquerades as a legitimate business or reputable person."
+  },
+  {
     "id": "nist-glossary-risk",
     "title": "NIST Glossary: risk",
     "provider": "National Institute of Standards and Technology (NIST), Computer Security Resource Center",
@@ -2526,6 +2819,19 @@
     "notes": "Read the PDF text layer (downloaded from nvlpubs.nist.gov) on 2026-08-21. Supports the single claim that the supply chain is a recognized source of risk entering systems (the publication's subject is cybersecurity supply chain risk management). Used for the one-line supply-chain item in the kinds-of-attack-surface section only; no further claims are made from this source."
   },
   {
+    "id": "nist-sp-800-162-abac",
+    "title": "NIST Special Publication 800-162: Guide to Attribute Based Access Control (ABAC) Definition and Considerations",
+    "provider": "National Institute of Standards and Technology",
+    "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-162.pdf",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": true,
+    "checkedAt": "2026-08-21",
+    "notes": "Read the PDF text layer (downloaded from nvlpubs.nist.gov, the official distribution host) on 2026-08-21. Supports: ABAC as a logical access control methodology in which authorization to perform a set of operations is determined by evaluating attributes associated with the subject, object, requested operations, and in some cases environment conditions against policy, rules, or relationships; RBAC as employing pre-defined roles that carry a specific set of privileges and to which subjects are assigned (Manager vs Analyst example). Facts synthesized into original prose; no wording reproduced."
+  },
+  {
     "id": "nist-sp-800-181r1-nice",
     "title": "NIST Special Publication 800-181 Revision 1: Workforce Framework for Cybersecurity (NICE Framework)",
     "provider": "National Institute of Standards and Technology (NIST)",
@@ -2605,6 +2911,19 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Read live via curl 2026-08-21. New id for the rev. 3 edition of SP 800-63B. Section 5.2.3 supports: biometrics as 'something you are'; biometric characteristics do not constitute secrets (obtainable from photos, latent fingerprints, high-resolution images); biometric comparison is probabilistic whereas other factors are deterministic; biometric template protection/revocation solutions exist but availability is limited; biometrics SHALL be used only as part of multi-factor authentication with a physical authenticator. This is the source for the honest-limits framing (biometrics cannot simply be reset like passwords). Facts synthesized into original prose."
+  },
+  {
+    "id": "nist-sp-800-83r1",
+    "title": "NIST Special Publication 800-83 Rev. 1: Guide to Malware Incident Prevention and Handling for Desktops and Laptops",
+    "provider": "National Institute of Standards and Technology (NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-83r1.pdf",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read the PDF directly from nvlpubs.nist.gov on 2026-08-21. Supports: the working definition of malware as a program covertly inserted with intent to destroy data or compromise confidentiality, integrity, or availability; malware as the most common external threat to most hosts; infection routes (email attachments, malicious websites, drive-by download/web-based malware, removable media); prevention (patch management and vulnerability mitigation, antivirus software as the most common technical control, user awareness including not opening suspicious attachments even from known senders, least privilege); and the honest framing that incidents will still occur and technical controls cannot prevent all incidents. The document itself states it is not subject to copyright in the United States; used as REFERENCE_ONLY."
   },
   {
     "id": "nistir-7023-missing-data-methods",

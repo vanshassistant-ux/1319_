@@ -1,6 +1,6 @@
 # ELIEXPLAINS GLOBAL EDITORIAL PROGRESS
 
-Generated: 2026-08-21T22:35:27.352Z
+Generated: 2026-08-21T22:47:15.098Z
 Counts are computed from the phase content stores by `bun run editorial:progress`.
 
 Subjects total: 44
@@ -9,24 +9,24 @@ Subjects remaining: 17
 Subject completion: 61.36%
 
 Total topics: 1299
-Topics processed: 805
+Topics processed: 813
 Topics published: 282
-Topics ready to publish: 523
+Topics ready to publish: 531
 Topics held: 0
 Topics requiring review: 0
-Topics remaining: 494
-Topic processing: 61.97%
+Topics remaining: 486
+Topic processing: 62.59%
 
-Verified questions: 4025
-Unique source records: 3857
-Source usage classes: REFERENCE_ONLY=3005, PUBLIC_DOMAIN=550, ATTRIBUTION_REQUIRED=207, EXTRACT_AND_ADAPT=93, LINK_ONLY=2
+Verified questions: 4065
+Unique source records: 3895
+Source usage classes: REFERENCE_ONLY=3038, PUBLIC_DOMAIN=555, ATTRIBUTION_REQUIRED=207, EXTRACT_AND_ADAPT=93, LINK_ONLY=2
 
 ## Phase progress
 
 | Phase | Subjects | Topics | Percent |
 | --- | --- | --- | --- |
 | 1 | 11 / 11 | 282 / 282 | 100.00% |
-| 2 | 2 / 11 | 78 / 325 | 24.00% |
+| 2 | 2 / 11 | 86 / 325 | 26.46% |
 | 3 | 11 / 11 | 329 / 329 | 100.00% |
 | 4 | 3 / 11 | 116 / 363 | 31.96% |
 
@@ -35,7 +35,7 @@ Source usage classes: REFERENCE_ONLY=3005, PUBLIC_DOMAIN=550, ATTRIBUTION_REQUIR
 | Collection | Subjects | Topics | Percent |
 | --- | --- | --- | --- |
 | Professional Studies | 7 / 7 | 166 / 166 | 100.00% |
-| Technology | 5 / 8 | 166 / 257 | 64.59% |
+| Technology | 5 / 8 | 174 / 257 | 67.70% |
 | Business & Money | 3 / 9 | 84 / 240 | 35.00% |
 | Humanities & Culture | 7 / 7 | 197 / 197 | 100.00% |
 | Science & Health | 1 / 6 | 48 / 206 | 23.30% |
@@ -50,6 +50,7 @@ Source usage classes: REFERENCE_ONLY=3005, PUBLIC_DOMAIN=550, ATTRIBUTION_REQUIR
 | computer-literacy | 25 / 25 | 25 | 0 | 0 | 0 | 0 |
 | computer-science-fundamentals | 27 / 27 | 27 | 0 | 0 | 0 | 0 |
 | criminal-justice-and-criminology | 28 / 28 | 28 | 0 | 0 | 0 | 0 |
+| cybersecurity | 8 / 34 | 0 | 8 | 0 | 0 | 26 |
 | data-science-and-ai-literacy | 31 / 31 | 0 | 31 | 0 | 0 | 0 |
 | earth-and-space-science | 48 / 48 | 0 | 48 | 0 | 0 | 0 |
 | economics | 39 / 39 | 0 | 39 | 0 | 0 | 0 |
