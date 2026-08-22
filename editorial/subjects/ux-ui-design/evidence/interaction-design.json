@@ -1,0 +1,214 @@
+{
+  "topicId": "ux-ui-design:foundations:interaction-design",
+  "subjectId": "ux-ui-design",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "working definition of interaction design (IxDF): designing interactive products with a focus on how users will interact with them; Kolko's 'dialogue between a person and a product'; this lesson's plain version: designing how people interact with a product — the responses to their actions",
+      "interaction design as part of UX design: UX spans the whole journey; interaction design centers on the moment of use",
+      "feedback: every action gets a response; the three channels — visual, audible, haptic — each with an original example; NN/g heuristic #1 (visibility of system status); response-time guidance (0.1s / 1s / 10s; progress indicators for long waits)",
+      "affordances: cues that suggest what an element does; Gibson (1977) and Norman (1988, 2013) history; affordance as a relation between user and object; signifiers as the perceivable cues; false affordances; original example of a button that looks pressable",
+      "states: hover, active, disabled, loading — the life of an element; USWDS documents default/hover/active/focus/disabled for buttons; components is a sibling topic, referenced only",
+      "the interaction loop: user acts, system responds, user continues — stated simply",
+      "consistency of behavior: the same action should do the same thing everywhere; NN/g heuristic #4; internal vs external consistency; Jakob's Law",
+      "honest framing: good interaction design is felt in the flow; you notice it when it breaks; feedback builds trust and a sense of control; usability testing is how the plan is checked (sibling topic, referenced only)"
+    ],
+    "supporting": [
+      "states double as feedback: each state answers a question the person is silently asking (can I act? did it register? is it still working?)",
+      "feedback channels often combine, e.g. a success tone plus a checkmark plus a vibration",
+      "NN/g ties visibility of system status to predictability, control, and trust"
+    ],
+    "outOfScope": [
+      "component libraries, anatomy, and build details of individual UI elements (own sibling topic: components)",
+      "usability testing methods and protocols (own sibling topic; referenced only in the honest framing)",
+      "user flows and flow diagrams (own sibling topic; the interaction loop is a behavior concept, not a flow artifact)",
+      "visual hierarchy and layout (own sibling topic; appearance is discussed only where it signals behavior)",
+      "tool-specific tutorials (Figma, Sketch, prototyping software) — literacy level forbids tool how-tos",
+      "code, HTML/CSS, and implementation of interactions"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The Interaction Design Foundation defines interaction design as the design of interactive products and services in which the designer's focus goes beyond the item in development to include the way users will interact with it; John Kolko describes it as the creation of a dialogue between a person and a product, system, or service.",
+      "claimType": "DEFINITIONAL",
+      "sourceIds": [
+        "ixdf-interaction-design"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Interaction design is an essential part of user experience design: UX design covers the entire user journey, while the central role of interaction design targets the moment of use and how to improve the interactive experience.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ixdf-interaction-design"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Nielsen Norman Group's first usability heuristic, visibility of system status, holds that the design should always keep users informed about what is going on through appropriate feedback within a reasonable amount of time; NN/g calls appropriate feedback for a user action 'perhaps the most basic guideline of user-interface design.'",
+      "claimType": "DEFINITIONAL",
+      "sourceIds": [
+        "nng-visibility-system-status",
+        "nng-10-usability-heuristics"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Feedback reaches people through different channels, including visual changes (a color change on click, a checkmark, a progress indicator), and NN/g documents that users who receive no feedback may repeat actions because they cannot tell whether the first one registered.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nng-visibility-system-status"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Nielsen's long-standing response-time guidance: about 0.1 second feels instantaneous, 1.0 second is the limit for the user's flow of thought to stay uninterrupted, and about 10 seconds is the limit for keeping attention on the dialogue; percent-done progress indicators are advised for operations taking more than about 10 seconds because they reassure users the system has not crashed.",
+      "claimType": "CURRENT",
+      "sourceIds": [
+        "nng-response-time-limits"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "An affordance is a characteristic of an object that suggests how it can be used — an action possibility defined in the relation between the user and the object; James Gibson coined the term in 1977, Don Norman introduced it to design in 1988 as perceivable action possibilities, and Norman later added the signifier, the perceivable cue that points to an affordance.",
+      "claimType": "HISTORICAL",
+      "sourceIds": [
+        "ixdf-affordances"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Nielsen Norman Group's fourth heuristic, consistency and standards, states that users should not have to wonder whether different words, situations, or actions mean the same thing; designers should maintain internal consistency within a product and external consistency with industry conventions, because Jakob's Law holds that people spend most of their time using other products, which set their expectations.",
+      "claimType": "DEFINITIONAL",
+      "sourceIds": [
+        "nng-10-usability-heuristics"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The U.S. Web Design System specifies buttons with a defined set of visual states — default, hover, active, focus, and disabled — showing that states are a documented part of an interactive element's behavior.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "uswds-button"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "What 'affordance' should mean: the objective action possibility or the perceivable cue.",
+      "positions": [
+        "James Gibson (1977) used affordance for all action possibilities an object offers, whether or not they are visible.",
+        "Don Norman (1988) reframed affordances for design as perceivable action possibilities, and later (2013) introduced the signifier for the perceivable cue, noting that many designers misuse 'affordance' to mean visible cues.",
+        "IxDF presents the affordance as relational (defined between user and object) and the signifier as the perceivable cue, which may exist without the affordance.",
+        "This lesson follows IxDF's treatment: affordance = the action possibility in the relation; signifier = the cue that points to it."
+      ]
+    },
+    {
+      "issue": "How fast feedback must be and whether response-time thresholds are universal.",
+      "positions": [
+        "Nielsen's guidance (1993, still republished) sets 0.1s for an instantaneous feel, 1.0s for uninterrupted thought, and 10s as the attention limit, with progress indicators for longer waits.",
+        "The guidance is presented by NN/g as long-standing rules of thumb, not hard guarantees for every context and device.",
+        "This lesson presents the thresholds as guidance for why loading states and progress indicators exist, without treating them as law."
+      ]
+    },
+    {
+      "issue": "Whether consistency means sameness within one product or conformity to platform conventions.",
+      "positions": [
+        "NN/g heuristic #4 (consistency and standards) requires both: internal consistency within a product or product family, and external consistency with established industry conventions.",
+        "This lesson teaches both faces of the rule, with the core rule stated as: the same action should do the same thing everywhere."
+      ]
+    }
+  ],
+  "unsupportedExistingClaims": [],
+  "correctionsNeeded": [],
+  "rightsIssues": [
+    "NN/g articles are copyrighted; used as REFERENCE_ONLY with attribution required, facts restated in original prose.",
+    "IxDF topic pages carry CC BY-SA 4.0 (attribution required); only a short attributed quote (Kolko's dialogue line) is used, with all surrounding prose original.",
+    "USWDS is U.S. government work (public domain in principle) but is treated as REFERENCE_ONLY here to match the sibling uswds-typography record; no wording reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nng-visibility-system-status",
+      "title": "Visibility of System Status (Usability Heuristic #1)",
+      "provider": "Nielsen Norman Group (NN/g)",
+      "url": "https://www.nngroup.com/articles/visibility-system-status/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via HTTP with a browser user agent on 2026-08-21 (Aurora Harley, June 2018). Supports: visibility of system status as heuristic #1; appropriate feedback as 'perhaps the most basic guideline of user-interface design'; feedback channels and examples (color change on click, progress indicators); why missing feedback makes users repeat actions and distrust the product; feedback building trust and a sense of control. Facts restated in original prose; no wording reproduced."
+    },
+    {
+      "id": "nng-10-usability-heuristics",
+      "title": "10 Usability Heuristics for User Interface Design",
+      "provider": "Nielsen Norman Group (NN/g)",
+      "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via HTTP with a browser user agent on 2026-08-21 (Jakob Nielsen, 1994; last reviewed January 30, 2024). Supports: heuristic #1 wording (keep users informed through appropriate feedback within a reasonable time); heuristic #4 consistency and standards ('Users should not have to wonder whether different words, situations, or actions mean the same thing'); internal vs external consistency; Jakob's Law (people spend most of their time on other products, which set expectations). Facts restated in original prose; no wording reproduced."
+    },
+    {
+      "id": "nng-response-time-limits",
+      "title": "Response Times: The 3 Important Limits",
+      "provider": "Nielsen Norman Group (NN/g)",
+      "url": "https://www.nngroup.com/articles/response-times-3-important-limits/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via HTTP with a browser user agent on 2026-08-21 (Jakob Nielsen, 1993, excerpted from Usability Engineering). Supports: 0.1 second as the limit for feeling instantaneous; 1.0 second as the limit for uninterrupted flow of thought; 10 seconds as the limit for keeping attention on the dialogue; percent-done progress indicators for operations longer than about 10 seconds, which reassure users the system is still working. Presented in the lesson as guidance, not law. Facts restated in original prose."
+    },
+    {
+      "id": "ixdf-interaction-design",
+      "title": "What is Interaction Design (IxD)?",
+      "provider": "Interaction Design Foundation (IxDF)",
+      "url": "https://www.interaction-design.org/literature/topics/interaction-design",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0 (page footer)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via HTTP with a browser user agent on 2026-08-21. Supports: working definition of interaction design as the design of interactive products and services in which the designer's focus goes beyond the item to include how users will interact with it; John Kolko's description of interaction design as 'the creation of a dialogue between a person and a product, system, or service' (quoted on the page; short attributed quote only); interaction design as an essential part of UX design, with UX covering the whole journey while interaction design centers on the moment of use. Facts restated in original prose."
+    },
+    {
+      "id": "ixdf-affordances",
+      "title": "What are Affordances?",
+      "provider": "Interaction Design Foundation (IxDF)",
+      "url": "https://www.interaction-design.org/literature/topics/affordances",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0 (page footer)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via HTTP with a browser user agent on 2026-08-21. Supports: affordances as characteristics of an object that suggest how it can be used — an action possibility defined in the relation between user and object (a door affords opening only if you can reach the handle); James Gibson coining 'affordance' in 1977; Don Norman introducing it to design in 1988 as perceivable action possibilities and adding 'signifier' (the perceivable cue) in his 2013 edition of The Design of Everyday Things; false affordances (underlined text that is not a link). Facts restated in original prose."
+    },
+    {
+      "id": "uswds-button",
+      "title": "Button",
+      "provider": "U.S. Web Design System (USWDS)",
+      "url": "https://designsystem.digital.gov/components/button/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via HTTP with a browser user agent on 2026-08-21. Supports: interactive elements such as buttons are specified and documented with multiple visual states — default, hover, active, focus, and disabled — demonstrating that states are part of an element's defined behavior; the component passed WCAG 2.1 AA review. Used only to ground the states concept; component-building details belong to the components sibling topic. Facts restated in original prose."
+    }
+  ]
+}

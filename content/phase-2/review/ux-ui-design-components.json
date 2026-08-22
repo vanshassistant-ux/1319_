@@ -1,0 +1,289 @@
+{
+  "id": "ux-ui-design:foundations:components",
+  "subjectSlug": "ux-ui-design",
+  "unitSlug": "foundations",
+  "slug": "components",
+  "title": "Components",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 8,
+  "tags": [
+    "ux-ui-design",
+    "components",
+    "ui-components",
+    "consistency",
+    "component-states"
+  ],
+  "in30Seconds": "Components are the reusable building blocks of an interface: buttons, input fields, menus, cards, and more. Each is a ready-made piece with a defined look and behavior, and the core rule is consistency: the same component should look and behave the same everywhere. Components assemble into pages, and each one moves through states such as default, hover, pressed, disabled, and loading. Well-built components carry clear labels and work with the keyboard. Their quality, though, depends on the defaults a design system gives them.",
+  "whyItMatters": "People learn an interface through its components. A Save button that looks and works like every other Save button lets users act without thinking; the same button redrawn differently on each screen forces them to relearn the app every time. Consistency is what makes components trustworthy, and trust is what makes users fast. Components are also the shared vocabulary of design and development teams: when a dropdown is one defined thing, nobody argues about what it should do. Knowing what components are, how they behave in each state, and where their quality comes from separates interfaces that feel solid from interfaces that feel scrambled.",
+  "learningObjectives": [
+    "Define a component using the working definition from Nielsen Norman Group and the U.S. Web Design System: a reusable piece of the interface, such as a button, a menu, or a card.",
+    "Name common components, including buttons, input fields, dropdowns, checkboxes, cards, modals, navigation bars, and toasts, and say when each is typical.",
+    "State the core consistency rule: the same component should look and behave the same everywhere.",
+    "Distinguish components from pages: assembled pieces versus whole screens.",
+    "Identify the component states: default, hover, pressed, disabled, and loading.",
+    "Explain the general accessibility requirements in components (labels, keyboard use, focus) and why components are only as good as their defaults."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "What a component is",
+      "body": "The working definition of a component comes from two sources. Nielsen Norman Group defines a design system as a complete set of standards intended to manage design at scale using reusable components and patterns, which makes components the reusable pieces teams assemble into screens. The U.S. Web Design System states it more plainly: its components are simple and consistent solutions to common user-interface needs. Put together, a component is a reusable piece of the interface, a button, a menu, or a card, built once with a defined look and behavior, then used over and over. Components are the building blocks of an interface the way bricks are the building blocks of a wall: each piece is ordinary on its own, yet the same piece appears in hundreds of places. An original example: a recipe app has one Search Recipes button component. Whether it appears on the home screen, the browse screen, or the saved list, it is the same component with the same shape, color, and response when pressed. The team never redraws it; they reuse it. That one decision, repeated across an entire interface, is what components are for."
+    },
+    {
+      "heading": "The common components",
+      "body": "Every interface is assembled from a familiar cast of components, and each has a typical job. A button draws attention to an important action, which the U.S. Web Design System describes as a large selectable surface, and it is the standard way to say do this now, like the Pay Now button on a checkout screen. An input field lets users enter text, such as a search box or a shipping-address line. A dropdown, also called a select, lets users choose one option from a list, which suits many choices, like picking a country from several dozen. A checkbox lets users select one or more options from a list, typical for settings such as email me a receipt. A card groups content and actions about a single subject, the standard container for a product, a contact, or a news story. A modal disables the page behind it and focuses attention on one task or message, which makes it right for a forced choice like confirming a deletion. A navigation bar helps users see where they are and reach the main sections of a site. A toast is a small, temporary notification that confirms an action, such as Settings saved, appearing and disappearing on its own. Each component exists because a common need recurs, and reusing one piece is cheaper and more reliable than inventing a fresh piece every time."
+    },
+    {
+      "heading": "Consistency, and components versus pages",
+      "body": "The core rule of components is consistency: the same component should look and behave the same everywhere. Nielsen Norman Group explains the payoff: premade UI components let teams replicate designs quickly, reducing the need to reinvent the wheel and the risk of unintended inconsistency, and they create visual consistency across products and channels. Consistency has two halves. Visually, a button should not change its shape or color from screen to screen. Behaviorally, a component that opens a menu when clicked should open a menu every time, not a link on one screen and a menu on the next. An original example: a travel site whose calendar opens as a pop-up on some pages and navigates to a new page on others breaks the rule, because users click and guess. Components also stand in a clear relationship to pages. A component is a piece; a page is a whole screen assembled from pieces. A checkout page, for instance, is built from a card, two input fields, a country dropdown, a terms checkbox, and a button, with layout deciding how the pieces are arranged. Layout is its own topic in this course, so this lesson only marks the boundary: components are the parts, pages are the assembled whole, and layout is the arrangement."
+    },
+    {
+      "heading": "States, accessibility, and the honest framing",
+      "body": "A component is not one thing; it is a set of states it moves through as people interact with it. The U.S. Web Design System documents five core button states: default, the resting look; hover, when the pointer sits over the component; active, the brief moment of the press; focus, when the component is selected by keyboard; and disabled, when the action is unavailable. Many components add a loading state: while an action such as a payment processes, the button shows a small progress indicator so users know the click registered and the system is working. Accessibility is a general requirement built into components, not an add-on. The W3C Web Accessibility Initiative asks that form elements include clearly associated labels and that every interactive element be keyboard accessible, and the U.S. Web Design System adds that components must show a visible focus state when users tab to them. The honest framing closes the lesson: components are only as good as the defaults behind them. A component is a promise, this thing looks like this and does this, and someone must keep that promise. Design systems, covered in their own lesson in this course, define the defaults that make components consistent, accessible, and reusable. Without those standards, a pile of components is just a pile of parts."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "component",
+      "definition": "A reusable piece of the interface, such as a button, a menu, or a card, with a defined look and behavior."
+    },
+    {
+      "term": "consistency",
+      "definition": "The rule that the same component looks and behaves the same way everywhere it appears."
+    },
+    {
+      "term": "default state",
+      "definition": "The resting appearance of a component when no interaction is happening."
+    },
+    {
+      "term": "hover state",
+      "definition": "The appearance of a component while the pointer rests over it."
+    },
+    {
+      "term": "pressed state",
+      "definition": "The brief appearance of a component while it is being clicked."
+    },
+    {
+      "term": "disabled state",
+      "definition": "The appearance of a component whose action is currently unavailable."
+    },
+    {
+      "term": "loading state",
+      "definition": "The appearance of a component while the system completes an action it started."
+    },
+    {
+      "term": "modal",
+      "definition": "A component that disables the page behind it to focus attention on one task or message."
+    },
+    {
+      "term": "toast",
+      "definition": "A small, temporary notification that appears briefly to confirm an action such as a saved change."
+    },
+    {
+      "term": "focus",
+      "definition": "The state of a component selected by the keyboard, marked with a visible outline."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Components are the building blocks of an app or website. They are ready-made pieces of the interface, like buttons, menus, cards, and text boxes, and they get reused all over the place. Instead of drawing a new button for every screen, a team builds the button once and drops it in wherever it is needed. The golden rule is consistency: the same piece should look and behave the same way everywhere, so a button that saves your work on one screen acts the same on every screen. Components also have states: how they look when nothing is happening, when your pointer hovers over them, when you click them, when they are turned off, and when they are busy loading. Good components have clear labels and work with the keyboard, and their quality depends on the defaults the team sets for them.",
+    "analogy": "Think of components as building bricks. One brick is simple, but the same brick can be part of a house in one build and a tower in the next. You do not carve a new brick every time; you reach for the same one, and it clicks together with the others the same way every time.",
+    "analogyLimits": "Bricks are mechanical and identical, while interface components carry meaning: a button promises an action, a card promises grouped content, and each has states and accessibility needs. And unlike bricks, a component's quality depends on the standards the team sets, so two teams with the same component list can build very different products."
+  },
+  "workedExample": "A team redesigning a city transit app noticed riders double-tapping the Buy Ticket button and getting charged twice. The old app drew a fresh button on every screen, so on the schedule screen the button looked like a link, and on the map screen it changed shape when pressed. The team replaced every variant with one Buy Ticket component: the same blue pill everywhere, with the same default, hover, pressed, disabled, and loading states. Riders now saw the button gray out and show a small spinner while the payment processed, and the double charges stopped. The team also gave the component a clear label and a visible keyboard focus, and tested it with five riders who navigate by keyboard.",
+  "commonMistakes": [
+    "Redrawing components for every screen. If each page gets its own button or card, the interface looks like a patchwork and users must relearn it constantly; reuse the same component everywhere.",
+    "Letting states drift. A button whose hover looks like a link, or a disabled control that still looks clickable, breaks the promise of the component; every state should be distinct and consistent.",
+    "Overusing modals. A modal blocks the whole page, so using one for a trivial message forces users to stop and dismiss it; reserve modals for tasks that truly need full attention.",
+    "Skipping labels, keyboard support, or focus. A component without a clear label or a visible focus state fails users who rely on screen readers or keyboards.",
+    "Assuming components carry themselves. A component is only as good as the defaults a design system gives it; without defined standards, the same component can drift apart across screens."
+  ],
+  "compareContrast": [
+    {
+      "a": "Component",
+      "b": "Page",
+      "distinction": "A component is a single reusable piece, such as a button or a card; a page is a whole screen assembled from components, with layout deciding the arrangement."
+    },
+    {
+      "a": "Hover state",
+      "b": "Focus state",
+      "distinction": "Hover appears when the pointer rests over a component; focus appears when the component is selected by keyboard and must stay visible so keyboard users can tell where they are."
+    },
+    {
+      "a": "Modal",
+      "b": "Toast",
+      "distinction": "A modal blocks the page and demands attention until dismissed, while a toast is a brief notification that appears and disappears on its own without blocking anything."
+    }
+  ],
+  "keyTakeaway": "Components are reusable pieces of the interface, and the core rule is consistency: the same component must look and behave the same everywhere. Components assemble into pages, move through states, and need labels, keyboard access, and focus; they are only as good as the defaults a design system gives them.",
+  "questionBank": [
+    {
+      "id": "ux-ui-design:foundations:components:1",
+      "prompt": "Which statement best captures the working definition of a UI component used in this lesson?",
+      "options": [
+        "A reusable piece of the interface, such as a button, a menu, or a card, with a defined look and behavior",
+        "A single finished screen assembled by a designer",
+        "A set of rules that governs every color in a product",
+        "A file format used to share design work between teams"
+      ],
+      "correctIndex": 0,
+      "explanation": "The lesson's working definition, drawn from Nielsen Norman Group's account of design systems and the U.S. Web Design System, is that a component is a reusable piece of the interface such as a button, menu, or card. It is not a whole screen, a color rulebook, or a file format.",
+      "difficulty": "recall",
+      "skill": "Recall the working definition of a UI component",
+      "sourceIds": [
+        "nng-design-systems-101",
+        "uswds-components-overview"
+      ]
+    },
+    {
+      "id": "ux-ui-design:foundations:components:2",
+      "prompt": "What is the core consistency rule for components?",
+      "options": [
+        "Each screen should receive its own custom version of every component",
+        "Components should change their appearance with every product release",
+        "The same component should look and behave the same everywhere it appears",
+        "Only the most important components need to follow any rules"
+      ],
+      "correctIndex": 2,
+      "explanation": "Consistency is the core rule: the same component should look and behave the same everywhere. Nielsen Norman Group notes that premade components reduce the need to reinvent the wheel and the risk of unintended inconsistency.",
+      "difficulty": "recall",
+      "skill": "State the core consistency rule for components",
+      "sourceIds": [
+        "nng-design-systems-101",
+        "uswds-components-overview"
+      ]
+    },
+    {
+      "id": "ux-ui-design:foundations:components:3",
+      "prompt": "A rider rests the mouse pointer over the Buy Ticket button without clicking. Which state is the button in?",
+      "options": [
+        "Disabled",
+        "Hover",
+        "Pressed",
+        "Loading"
+      ],
+      "correctIndex": 1,
+      "explanation": "Hover is the state shown while the pointer rests over a component. Pressed appears only during the click itself, disabled means the action is unavailable, and loading signals that the system is working.",
+      "difficulty": "application",
+      "skill": "Identify the hover state of a component in an example",
+      "sourceIds": [
+        "uswds-button"
+      ]
+    },
+    {
+      "id": "ux-ui-design:foundations:components:4",
+      "prompt": "A designer builds a checkout screen by placing an existing card, two input fields, a dropdown, and a button on the page. Which statement best describes this work?",
+      "options": [
+        "She is inventing four brand-new components",
+        "She is choosing states for a single component",
+        "She is writing the design system from scratch",
+        "She is assembling existing components into a whole screen"
+      ],
+      "correctIndex": 3,
+      "explanation": "Pages are whole screens assembled from components. The designer reused existing pieces; layout decides how they are arranged, but the work of assembly is building a page from components.",
+      "difficulty": "application",
+      "skill": "Distinguish assembling a page from creating components",
+      "sourceIds": [
+        "uswds-components-overview",
+        "nng-design-systems-101"
+      ]
+    },
+    {
+      "id": "ux-ui-design:foundations:components:5",
+      "prompt": "A sign-in form's password field has no visible label and can be operated only with a mouse. Which general requirement for accessible components does this field violate?",
+      "options": [
+        "Components must match the product's color palette",
+        "Every component needs a companion dropdown",
+        "Form controls need clearly associated labels and keyboard access",
+        "Interactive fields must be hidden until the page loads"
+      ],
+      "correctIndex": 2,
+      "explanation": "The W3C Web Accessibility Initiative requires that form elements include clearly associated labels and that all interactive elements be keyboard accessible. A field with no label that works only by mouse fails both requirements; palette, dropdowns, and visibility are not the issue.",
+      "difficulty": "analysis",
+      "skill": "Analyze a component against label and keyboard requirements",
+      "sourceIds": [
+        "w3c-wai-designing-accessibility",
+        "w3c-wai-developing-accessibility",
+        "wai-labeling-controls"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "ux-ui-design:foundations:components:1",
+      "prompt": "Which statement best captures the working definition of a UI component used in this lesson?",
+      "options": [
+        "A reusable piece of the interface, such as a button, a menu, or a card, with a defined look and behavior",
+        "A single finished screen assembled by a designer",
+        "A set of rules that governs every color in a product",
+        "A file format used to share design work between teams"
+      ],
+      "correctIndex": 0,
+      "explanation": "The lesson's working definition, drawn from Nielsen Norman Group's account of design systems and the U.S. Web Design System, is that a component is a reusable piece of the interface such as a button, menu, or card. It is not a whole screen, a color rulebook, or a file format.",
+      "difficulty": "recall",
+      "skill": "Recall the working definition of a UI component",
+      "sourceIds": [
+        "nng-design-systems-101",
+        "uswds-components-overview"
+      ]
+    },
+    {
+      "id": "ux-ui-design:foundations:components:2",
+      "prompt": "What is the core consistency rule for components?",
+      "options": [
+        "Each screen should receive its own custom version of every component",
+        "Components should change their appearance with every product release",
+        "The same component should look and behave the same everywhere it appears",
+        "Only the most important components need to follow any rules"
+      ],
+      "correctIndex": 2,
+      "explanation": "Consistency is the core rule: the same component should look and behave the same everywhere. Nielsen Norman Group notes that premade components reduce the need to reinvent the wheel and the risk of unintended inconsistency.",
+      "difficulty": "recall",
+      "skill": "State the core consistency rule for components",
+      "sourceIds": [
+        "nng-design-systems-101",
+        "uswds-components-overview"
+      ]
+    },
+    {
+      "id": "ux-ui-design:foundations:components:3",
+      "prompt": "A rider rests the mouse pointer over the Buy Ticket button without clicking. Which state is the button in?",
+      "options": [
+        "Disabled",
+        "Hover",
+        "Pressed",
+        "Loading"
+      ],
+      "correctIndex": 1,
+      "explanation": "Hover is the state shown while the pointer rests over a component. Pressed appears only during the click itself, disabled means the action is unavailable, and loading signals that the system is working.",
+      "difficulty": "application",
+      "skill": "Identify the hover state of a component in an example",
+      "sourceIds": [
+        "uswds-button"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "ux-ui-design:foundations:design-systems",
+    "ux-ui-design:foundations:layout",
+    "ux-ui-design:foundations:accessibility",
+    "ux-ui-design:foundations:interaction-design",
+    "ux-ui-design:foundations:visual-hierarchy"
+  ],
+  "sources": [
+    "uswds-components-overview",
+    "uswds-button",
+    "nng-design-systems-101",
+    "w3c-wai-designing-accessibility",
+    "w3c-wai-developing-accessibility",
+    "wai-labeling-controls"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only NN/g, USWDS, and W3C WAI sources; facts restated in original prose; all examples original and invented.",
+    "researchedAt": "2026-08-21",
+    "transformation": "Original educational explanation of interface components: the working definition, common components and when each is typical, the consistency rule, components versus pages, component states, accessibility requirements in components, and the honest framing that components depend on design-system defaults."
+  },
+  "contentHash": "9d29ca474f498ce5",
+  "status": "source-verified",
+  "public": false
+}

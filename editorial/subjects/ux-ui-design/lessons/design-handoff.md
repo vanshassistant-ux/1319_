@@ -1,0 +1,151 @@
+# Design Handoff
+
+## In 30 Seconds
+
+A design handoff is the transfer of a finished design from designer to developer for implementation — the moment the plan becomes something that gets built. A good handoff carries more than pictures of screens: it includes final designs, precise specifications, ready-to-use assets, notes on how the interface should behave, and the edge cases nobody thought of at first. Handoffs fail when those pieces are missing and developers must guess. The best handoff is a collaboration, not a drop.
+
+## Why This Matters
+
+Most design work never reaches users directly — it reaches them through code, and code is written by developers who were not in the room when the design decisions were made. The gap between a design and its implementation is where good ideas quietly fall apart: a button spaced wrong, a screen that only works when everything goes right, an interaction the developer had to invent because nobody wrote it down. Understanding what a handoff must carry — and why it is a conversation rather than a delivery — is what separates designs that survive contact with code from designs that evaporate in it.
+
+## Learning Objectives
+
+- Define a design handoff as the process of handing over a finished design for implementation, including the designer's intent, knowledge, and specifications.
+- Name the five parts of a complete handoff: final designs, specifications, assets, behavior notes, and edge cases.
+- Explain the classic reasons handoffs fail: missing specifications, unstated assumptions, and unclear interactions.
+- Describe the developer's role in the handoff — implementing the design, giving feasibility feedback, and collaborating — and why the exchange is two-way.
+- Distinguish handing over the work from handing over ownership, and explain how design systems and shared components make handoffs smoother.
+
+## The College Version
+
+### What a design handoff is
+
+A design handoff is the process of handing over a finished design for implementation, as the Interaction Design Foundation defines it. It involves transferring a designer's intent, knowledge, and specifications for a design — the visual elements, the flows, the interactions, the copy, and the rules that govern how it all behaves. The handoff bridges a designer's vision and the final product built by software developers; IxDF is blunt about what happens when the bridge is weak: a poorly implemented design leads to a broken user experience. Notice what the definition does not say: the handoff is not a folder of pretty pictures. It is the complete set of decisions that lets someone who was not in the room when the design was made rebuild it faithfully. Consider Foxglove Books, a fictional bookstore app: its designer does not hand over "the checkout screen" — she hands over the screen plus everything needed to build it.
+
+### What a good handoff includes
+
+The Interaction Design Foundation lists the contents of a complete handoff, and they fall into five named groups. Final designs: the finished screens and layouts, in every size the product must support. Specifications: the precise details — colors, typography, spacing, sizes — that remove guesswork; Nielsen Norman Group calls the written form of these prototype specifications, brief annotations describing details that may be ambiguous, such as font size, line spacing, click effects, and the active or inactive conditions of elements. Assets: the images, icons, and fonts developers need, in usable formats and resolutions. Behavior notes: what happens on hover, on tap, on submit — including what disabled buttons look like and how form validation works. And edge cases: the error states, loading states, empty states, and error pages that appear when things are not ideal. In the Foxglove example, the empty search screen and the expired-promo-code message are edge cases; they are exactly what gets skipped when a handoff is thin.
+
+### Why handoffs fail
+
+The classic failures all trace back to one root: the developer has to guess. IxDF names the main cause of friction in design handoffs as miscommunication and a lack of knowledge of each other's work, and its list of common gaps is really a list of skipped handoff contents. Missing specifications: the screens show the happy path, but no one wrote down the exact spacing or the disabled-button style, so the developer invents them. Assumptions: the designer assumes the developer knows the error message goes under the field, or that gray text means "not clickable" — and nobody checks. Unclear interactions: the design shows a static screen, but what happens when the user hovers, taps, submits an empty form, or loses connection is never stated, so the developer must decide. IxDF adds the deepest one: designers often design for the ideal scenario and skip the not-so-ideal use cases — validation errors, error pages, alerts, loading states, empty states — that real users hit constantly.
+
+### The developer's role: implementation, feedback, collaboration
+
+The handoff is two-way from the start. IxDF's description of who is involved puts developers in an active role: they review the design for feasibility, check technical requirements, ask questions, and ensure the design meets coding standards, while designers provide the final assets and specifications. The developer's job is to implement — to turn the design into a working product — but implementation is not transcription. Developers must develop their ability to interpret a design accurately, and designers must understand the development complexity of their design decisions; both, says IxDF, are collectively responsible for delivering a good user experience. Practically, that means developers flag what cannot be built as drawn and propose alternatives, and designers explain the reasoning behind their decisions so the developer can solve the real problem, not just the symptom. The handoff is a conversation that continues until the built product matches the design.
+
+### Handoff vs. handover of ownership, and design systems
+
+Handing over the work is not the same as handing over ownership. IxDF notes that design handoffs originated in the Waterfall methodology as a one-time, clearly defined deliverable — a single drop of finished designs to engineers. In agile work, handoffs are neither one-time nor fixed: teams hand off incrementally, feature by feature, and designers stay available to answer questions, review built screens, and refine what comes next. The deliverable is transferred; the responsibility for a good user experience is shared. Design systems make all of this smoother: IxDF observes that when shared components are predefined and agreed upon, handoffs become smoother, because developers do not have to interpret choices the system already defines. Teams that draw every button from scratch in each handoff are recreating, every time, decisions a shared system would have settled once. The honest framing follows: a handoff is a collaboration, not a drop — the best designs survive contact with code.
+
+## Key Vocabulary
+
+- **design handoff** — The handover of a finished design to developers for implementation, including the designer's intent, knowledge, and specifications.
+- **specifications** — The precise details of a design, such as exact colors, spacing, sizes, and behaviors, written down so nothing depends on memory or guesswork.
+- **assets** — The ready-to-use files a developer needs, such as images, icons, and fonts, supplied in the right formats and sizes.
+- **behavior notes** — Written descriptions of what the interface should do in response to user actions, such as what happens on hover, on tap, or when a form is submitted.
+- **edge case** — An uncommon but real situation a design must handle, such as an empty screen, a failed search, or a form filled in incorrectly.
+- **prototype specifications** — Brief annotations next to a design that describe details that may be ambiguous, such as font size, line spacing, click effects, and element states.
+- **error state** — What the interface shows when something goes wrong, such as a validation message under a form field or a dedicated error page.
+- **design system** — A shared set of components, styles, and rules that a team reuses across a product so screens stay consistent; covered in its own sibling topic.
+
+## Eli-10
+
+A design handoff is how a finished design travels from the designer to the developer who will build it. It is not just the pictures of the screens — it is also the notes that say what the colors are, how big things should be, what happens when someone taps a button, and what to show when something goes wrong or when a page is empty. The designer explains, the developer builds, and the best handoffs go back and forth with questions and answers until the built thing matches the plan.
+
+## Eli's Analogy
+
+It is like handing a recipe to a cook. The recipe alone — the list of ingredients and steps — is the final design. But a good cook also needs to know the oven temperature, how long to rest the dough, and what to do if the cream will not whip. Those are the specifications, the behavior notes, and the edge cases. The handoff is the whole packet, not just the picture of the finished dish.
+
+The analogy breaks down because a recipe is one-way — the cook follows it — while a real handoff is two-way. Developers ask questions, point out what cannot be built as drawn, and suggest alternatives, and the designer revises. It is less like passing a recipe and more like cooking side by side until the dish is right.
+
+## Worked Example
+
+Mira, the designer on the fictional Foxglove Books team, finished the checkout screens and sent developers a folder with the three final designs and nothing else. The build went smoothly until the developer, Theo, reached the payment step: the design showed a button labeled "Place Order" but said nothing about what happened when a user submitted an empty form, tried an expired promo code, or lost connection mid-payment. Theo had to guess, and built an alert that covered none of the three cases. At the next handoff, Mira included behavior notes for every state, a list of edge cases, the exact spacing values, and the icon files in the formats the developers asked for — and she booked a short walkthrough. Theo's questions dropped from a dozen to two, and the built screens matched the design on the first review.
+
+## Common Mistakes
+
+- **Handing off only the final screens.** The pictures show the happy path; the specifications, behavior notes, and edge cases are missing, so developers fill the gaps with their own guesses — and the guesses rarely match the intent.
+- **Designing only for the ideal scenario.** IxDF calls this the most common gap in handoffs: skipping validation errors, error pages, alerts, loading states, and empty states — the not-so-ideal cases real users hit constantly.
+- **Assuming shared understanding.** Believing the developer will "just know" the spacing, the error-message style, or what gray text means. Assumptions are the classic substitute for written specifications, and they fail the moment the developer is new to the team.
+- **Treating the handoff as a drop.** Delivering the files and walking away leaves questions unanswered and built screens unreviewed, and the design drifts from the plan. Staying involved through implementation is the collaboration the handoff is supposed to start.
+- **Waiting for a perfect, complete design before sharing anything.** In agile work the handoff is incremental; holding everything until the end recreates the one-time waterfall drop that IxDF describes as outdated.
+
+## Compare / Contrast
+
+- Design handoff vs. handover of ownership — The handoff transfers the work: designs, specifications, assets, and notes. Ownership of the outcome stays shared — designers stay available, review built screens, and refine what comes next. The deliverable moves; the responsibility does not.
+- Complete handoff vs. screens-only handoff — A complete handoff carries final designs plus specifications, assets, behavior notes, and edge cases. A screens-only handoff carries the pictures and leaves the decisions to the developer, which is how handoffs fail.
+- One-time handoff vs. incremental handoff — The waterfall-style one-time drop delivered everything at once and then ended. Incremental handoffs share features as they are finished, with continuous feedback between designer and developer; design systems and shared components — sibling topics — make the incremental version far smoother.
+
+## Key Takeaway
+
+A design handoff is the transfer of a finished design to developers for implementation — and a good one carries final designs, specifications, assets, behavior notes, and edge cases, because handoffs fail when developers must guess. It is a two-way collaboration that continues through implementation, not a one-time drop.
+
+## Practice Question Bank
+
+**Q1.** Which statement best defines a design handoff?
+
+- A. The process of handing over a finished design to developers for implementation, including the designer's intent, knowledge, and specifications.
+- B. A meeting where stakeholders vote on which design direction to pursue.
+- C. The final round of usability testing before a product launches.
+- D. A document listing a project's budget and timeline.
+
+**Key: A.** The Interaction Design Foundation defines a design handoff as the process of handing over a finished design for implementation, transferring the designer's intent, knowledge, and specifications. A stakeholder vote, a usability test, and a budget document are different activities that may surround a handoff but are not the handoff itself.
+
+**Q2.** Which list names the five parts of a complete design handoff?
+
+- A. A marketing plan, a brand slogan, a launch date, a budget, and a team chart.
+- B. Meeting notes, interview transcripts, personas, survey results, and user flows.
+- C. Final designs, specifications, assets, behavior notes, and edge cases.
+- D. Competitor screenshots, feature lists, roadmap dates, and stakeholder emails.
+
+**Key: C.** A complete handoff carries the final designs plus the specifications (colors, spacing, sizes), the assets (images, icons, fonts), the behavior notes (what happens on hover, tap, and submit), and the edge cases (errors, loading, empty states) — everything a developer needs to build without guessing. Marketing plans, transcripts, and competitor lists belong to other parts of the product process.
+
+**Q3.** The fictional Courier & Co. delivery team sends developers a folder of finished checkout screens with no notes about empty forms, expired promo codes, or failed payments. Which outcome best fits this lesson's analysis?
+
+- A. The developers have everything they need, because the screens show the final visuals.
+- B. The developers will have to guess at the interactions and edge cases, likely building behavior the designer never specified.
+- C. The project will only slow down if the team uses design software, since tools handle handoffs automatically.
+- D. The designer should have waited until after launch to share the screens.
+
+**Key: B.** Without behavior notes and edge cases, the developer must invent the interactions and the failure states, which is exactly how IxDF says friction happens: the design was handed over, but the intent did not travel with it. The final visuals alone cannot answer what happens on an empty form, an expired code, or a failed payment.
+
+**Q4.** After a handoff meeting, a designer keeps answering developers' questions about button behavior and reviews the first built screens. Which statement best analyzes this behavior?
+
+- A. The designer is interfering, because once the work is handed off, the developers own the product and the designer's job is done.
+- B. The designer is quietly performing a second, unauthorized redesign of the interface.
+- C. The handoff meeting freezes the design, and any further questions should go to a product manager instead.
+- D. The designer is correctly staying involved: the handoff delivered the work, but the collaboration continues through implementation, because the best designs survive contact with code.
+
+**Key: D.** IxDF describes handoffs as continuous in agile work: designers stay available for clarifications, and the two sides are collectively responsible for the user experience. The designer is not interfering — she is staying involved, which is what separates a handoff from a handover of ownership.
+
+**Q5.** Two fictional teams hand off the same form design. Team Alpha draws every button and field from scratch for each handoff; Team Beta pulls the same shared, pre-agreed components from the company's design system for every screen. Which statement best analyzes the difference?
+
+- A. Team Beta's handoffs will be smoother, because shared, predefined components reduce guesswork about how elements look and behave.
+- B. Team Alpha's handoffs are better, because drawing from scratch keeps every screen unique.
+- C. Design systems matter only for accessibility, so they have no effect on handoffs.
+- D. Both teams will hand off identically, because design systems are a separate topic from handoff.
+
+**Key: A.** IxDF notes that when a design system is in place, handoffs become smoother because many components are predefined and agreed upon — developers do not have to interpret choices the system already defines. Drawing from scratch every time recreates decisions a shared system would have settled once.
+
+## Sources
+
+- Interaction Design Foundation — "What Are Design Handoffs?" (Design Handoffs topic page). https://www.interaction-design.org/literature/topics/design-handoff
+- Interaction Design Foundation — Kasturika, "How to Ensure a Smooth Design Handoff" (article). https://www.interaction-design.org/literature/article/how-to-ensure-a-smooth-design-handoff
+- Nielsen Norman Group — Leeloo Tang and Feifei Liu, "Use Good Prototype Specifications to Empower Team Collaboration" (June 5, 2022). https://www.nngroup.com/articles/prototype-specifications/
+
+## Related Topics
+
+- High-Fidelity Prototypes (ux-ui-design:foundations:high-fidelity-prototypes)
+- Design Systems (ux-ui-design:foundations:design-systems)
+- Components (ux-ui-design:foundations:components)
+- Interaction Design (ux-ui-design:foundations:interaction-design)
+- Usability Testing (ux-ui-design:foundations:usability-testing)
+
+## Editorial Metadata
+
+- Topic ID: ux-ui-design:foundations:design-handoff
+- Editorial status: READY_TO_PUBLISH
+- Research status: source-verified
+- Researched: 2026-08-21
+- Rights: reference-only sources; no source prose adapted

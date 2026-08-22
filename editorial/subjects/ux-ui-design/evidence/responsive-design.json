@@ -1,0 +1,199 @@
+{
+ "topicId": "ux-ui-design:foundations:responsive-design",
+ "subjectId": "ux-ui-design",
+ "researchedAt": "2026-08-21",
+ "scope": {
+  "core": [
+   "the working definition of responsive design (attributed to Nielsen Norman Group)",
+   "the problem it solves: one set of content on phones, tablets, and desktops",
+   "how it works conceptually: flexible layouts, fluid images, breakpoints (no code)",
+   "mobile versus desktop: the same site, different presentation",
+   "responsive versus adaptive design: fluid continuous adjustment versus fixed breakpoints",
+   "responsive design and accessibility: zooming and readability on small screens (sibling reference only)",
+   "the honest framing: responsive design is the default expectation, not a feature"
+  ],
+  "supporting": [
+   "origin of the term: Ethan Marcotte's 2010 essay",
+   "single-codebase advantages: maintenance and future-proofing",
+   "content prioritization on small screens"
+  ],
+  "outOfScope": [
+   "mobile-first design (sibling topic mobile-first-design)",
+   "layout and grid techniques in detail (sibling topic layout)",
+   "WCAG success criteria and conformance details, including reflow (sibling topic wcag-basics)",
+   "accessibility fundamentals (sibling topic accessibility)",
+   "code, CSS, or framework-specific implementation"
+  ]
+ },
+ "claims": [
+  {
+   "claim": "Responsive web design is a design approach that creates dynamic changes to the appearance of a website depending on the screen size and orientation of the device being used to view it (working definition attributed to Nielsen Norman Group, Amy Schade, 2014).",
+   "claimType": "TECHNICAL",
+   "sourceIds": [
+    "nng-responsive-web-design-definition",
+    "ixdf-responsive-design",
+    "mdn-responsive-web-design"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "The term 'responsive design' was coined by Ethan Marcotte in 2010, who described building with fluid grids, flexible images, and media queries as the three technical ingredients.",
+   "claimType": "HISTORICAL",
+   "sourceIds": [
+    "mdn-responsive-web-design",
+    "ala-marcotte-responsive-web-design"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "Responsive design solves the multi-device problem: instead of separate sites with separate codebases for phones, tablets, and desktops, a single site and single codebase support users with differently sized viewports, which is easier to maintain and relatively future-proof when new device sizes appear.",
+   "claimType": "TECHNICAL",
+   "sourceIds": [
+    "nng-responsive-web-design-definition",
+    "mdn-responsive-web-design"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "Flexible layouts are proportion-based: elements occupy a share of the available width (relative units) rather than fixed sizes, so they stretch, squeeze, and reshuffle as the screen changes.",
+   "claimType": "TECHNICAL",
+   "sourceIds": [
+    "nng-responsive-web-design-definition",
+    "ixdf-responsive-design",
+    "mdn-responsive-web-design"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "Fluid images scale to fit their container: they shrink when their column narrows and never overflow it.",
+   "claimType": "TECHNICAL",
+   "sourceIds": [
+    "mdn-responsive-web-design",
+    "ixdf-responsive-design"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "Breakpoints are the points at which the layout changes: one design is used above a breakpoint and another below it; for example, a three-column desktop layout may reshuffle to two columns on a tablet and a single column on a phone.",
+   "claimType": "TECHNICAL",
+   "sourceIds": [
+    "nng-responsive-web-design-definition",
+    "mdn-responsive-web-design",
+    "ixdf-responsive-design"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "Responsive and adaptive design are distinct approaches: responsive uses one flexible design that stretches and shrinks to fit the screen, while adaptive design serves several fixed layouts optimized for specific device sizes.",
+   "claimType": "METHOD",
+   "sourceIds": [
+    "ixdf-responsive-design"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "Mobile accessibility, as described by W3C WAI, means making websites and applications more accessible to people with disabilities using phones and other devices, and it involves issues such as small screen sizes, touchscreens, different input modalities, and use in bright sunlight; responsive layouts, which reflow content to fit the viewport, support readability on small screens, while the formal WCAG requirements are owned by the WCAG Basics lesson.",
+   "claimType": "TECHNICAL",
+   "sourceIds": [
+    "w3c-wai-mobile-accessibility",
+    "mdn-responsive-web-design"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "Responsive design is the default expectation for the web, not a feature: IxDF calls it 'a default for web design to support device switching' and MDN calls it 'the way to design for a multi-device web.'",
+   "claimType": "INTERPRETIVE",
+   "sourceIds": [
+    "ixdf-responsive-design",
+    "mdn-responsive-web-design"
+   ],
+   "status": "supported"
+  }
+ ],
+ "conflictingEvidence": [
+  {
+   "issue": "Some articles treat responsive and adaptive design as interchangeable or as a competition between tooling camps, while IxDF describes them as two distinct approaches with different trade-offs: one continuously flexible design versus several fixed designs built for specific sizes. This lesson states the distinction simply, takes no side in tooling debates, and notes that responsive design became the default for the web.",
+   "sources": [
+    "ixdf-responsive-design"
+   ]
+  }
+ ],
+ "unsupportedExistingClaims": [
+  "The generated draft contained only generic boilerplate ('Responsive Design is a foundational concept in Ux/Ui Design. This lesson introduces its meaning, its context, and a simple way to apply it.') with no verified claims about the working definition, the multi-device problem, flexible layouts, fluid images, breakpoints, the responsive-adaptive distinction, or the accessibility connection."
+ ],
+ "correctionsNeeded": [
+  "Authored from scratch: replaced the boilerplate draft with source-verified content — the NN/g working definition, Marcotte's 2010 coinage of the term (MDN, A List Apart), the conceptual ingredients (flexible layouts, fluid images, breakpoints), the responsive-adaptive distinction (IxDF), the accessibility connection (W3C WAI), and the honest framing that responsive design is the default expectation."
+ ],
+ "rightsIssues": [
+  "None. All facts restated in original prose; all examples original and invented. NN/g, IxDF, W3C WAI, and A List Apart used reference-only; MDN (CC BY-SA 2.5) used reference-only without reproducing source text."
+ ],
+ "sourceRecords": [
+  {
+   "id": "nng-responsive-web-design-definition",
+   "title": "Responsive Web Design (RWD) and User Experience",
+   "provider": "Nielsen Norman Group (NN/g)",
+   "url": "https://www.nngroup.com/articles/responsive-web-design-definition/",
+   "sourceType": "reference",
+   "usage": "REFERENCE_ONLY",
+   "attributionRequired": true,
+   "aiIngestionChecked": true,
+   "aiIngestionAllowed": false,
+   "checkedAt": "2026-08-21",
+   "notes": "Read live via HTTP on 2026-08-21 (article by Amy Schade, May 4, 2014). Supports: the working definition of RWD (dynamic changes to a site's appearance depending on screen size and orientation); breakpoints (one design above a breakpoint, another below, commonly based on browser width); a single codebase serving all devices rather than separate sites per device type; elements reshuffling as the viewport grows or shrinks (three-column desktop to two-column tablet to single-column phone); proportion-based grids; content prioritization because less is visible without scrolling on small screens; advantages of one codebase (faster development, easier maintenance, future-proofing); and testing responsive designs across platforms. Facts restated in original prose."
+  },
+  {
+   "id": "mdn-responsive-web-design",
+   "title": "Responsive web design",
+   "provider": "Mozilla / MDN Web Docs",
+   "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design",
+   "sourceType": "documentation",
+   "usage": "REFERENCE_ONLY",
+   "license": "CC BY-SA 2.5",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+   "attributionRequired": true,
+   "aiIngestionChecked": true,
+   "aiIngestionAllowed": false,
+   "checkedAt": "2026-08-21",
+   "notes": "Read live via HTTP on 2026-08-21 (id and URL reused from content/phase-2/source-registry.json). Supports: RWD as an approach that makes web pages render well on all screen sizes and resolutions, 'the way to design for a multi-device web'; the term 'responsive design' coined by Ethan Marcotte in 2010 with fluid grids, fluid images, and media queries; breakpoints as the points at which the layout changes; fluid images scaling to fit their container; and HTML reflowing text to fit the viewport by default. Facts restated in original prose; no source text reproduced."
+  },
+  {
+   "id": "ixdf-responsive-design",
+   "title": "What is Responsive Design?",
+   "provider": "Interaction Design Foundation (IxDF)",
+   "url": "https://www.interaction-design.org/literature/topics/responsive-design",
+   "sourceType": "reference",
+   "usage": "REFERENCE_ONLY",
+   "attributionRequired": true,
+   "aiIngestionChecked": true,
+   "aiIngestionAllowed": false,
+   "checkedAt": "2026-08-21",
+   "notes": "Read live via HTTP on 2026-08-21 (canonical interaction-design.org URL redirects to ixdf.org; page updated 2026). Supports: the definition of responsive design as an approach in which the interface adapts to the device's layout to facilitate usability, navigation, and information seeking; responsiveness via media queries and relative units; the three core principles (fluid grid system, fluid images, media queries and breakpoints, where breakpoints are the values at which content is rearranged); the responsive-versus-adaptive distinction (several fixed designs for specific devices versus one flexible design that stretches or shrinks); and responsive design as 'a default for web design to support device switching.' Facts restated in original prose."
+  },
+  {
+   "id": "w3c-wai-mobile-accessibility",
+   "title": "Mobile Accessibility at W3C",
+   "provider": "W3C Web Accessibility Initiative (WAI)",
+   "url": "https://www.w3.org/WAI/standards-guidelines/mobile/",
+   "sourceType": "standards-body",
+   "usage": "REFERENCE_ONLY",
+   "attributionRequired": true,
+   "aiIngestionChecked": true,
+   "aiIngestionAllowed": false,
+   "checkedAt": "2026-08-21",
+   "notes": "Read live via HTTP on 2026-08-21. Supports: mobile accessibility as making websites and applications more accessible to people with disabilities when they use mobile phones and other devices; the range of issues addressed, including small screen sizes, touchscreens, different input modalities, and device use in settings such as bright sunlight; and the fact that mobile accessibility is covered by existing W3C standards including WCAG rather than separate guidelines, so the detailed rules belong to the WCAG Basics lesson. Used only to establish the accessibility connection; facts restated in original prose."
+  },
+  {
+   "id": "ala-marcotte-responsive-web-design",
+   "title": "Responsive Web Design",
+   "provider": "A List Apart",
+   "url": "https://alistapart.com/article/responsive-web-design/",
+   "sourceType": "reference",
+   "usage": "REFERENCE_ONLY",
+   "attributionRequired": true,
+   "aiIngestionChecked": true,
+   "aiIngestionAllowed": false,
+   "checkedAt": "2026-08-21",
+   "notes": "Read live via HTTP on 2026-08-21 (essay by Ethan Marcotte, May 25, 2010). Supports: the original essay that named responsive web design; 'fluid grids, flexible images, and media queries are the three technical ingredients for responsive web design'; and the stance of building one flexible experience rather than quarantining content into device-specific experiences. Used for the term's origin and the ingredient list; facts restated in original prose."
+  }
+ ]
+}

@@ -1,0 +1,215 @@
+{
+  "topicId": "ux-ui-design:foundations:components",
+  "subjectId": "ux-ui-design",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "the working definition of a component: a reusable piece of the interface such as a button, a menu, or a card (NN/g design-systems definition: reusable components and patterns; USWDS: simple and consistent solutions to common user-interface needs)",
+      "common components named with one line each and when each is typical: buttons, input fields, dropdowns/selects, checkboxes, cards, modals, navigation bars/headers, toasts/alerts",
+      "consistency as the core rule: the same component should look and behave the same everywhere",
+      "components versus pages: assembled pieces versus whole screens (layout referenced as sibling topic only)",
+      "component states: default, hover, pressed (active), disabled, loading",
+      "accessibility in components: labels, keyboard use, focus (accessibility referenced as sibling topic only)",
+      "the honest framing: components are only as good as their defaults; design systems do the heavy lifting (design-systems referenced as sibling topic only)"
+    ],
+    "supporting": [
+      "the shared-language benefit of defined components (a dropdown menu means one specific thing)",
+      "the scale benefit of premade components across hundreds or thousands of screens",
+      "visible focus states as a component requirement",
+      "easily identifiable feedback while an action is in progress (loading state)"
+    ],
+    "outOfScope": [
+      "design systems in depth (sibling topic design-systems)",
+      "interaction design in depth (sibling topic interaction-design)",
+      "accessibility fundamentals and WCAG details (sibling topic accessibility)",
+      "layout principles, grids, and arrangement (sibling topic layout)",
+      "tool-specific component workflows"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A component is a reusable piece of the interface, such as a button, a menu, or a card: Nielsen Norman Group defines a design system as a complete set of standards intended to manage design at scale using reusable components and patterns, and the U.S. Web Design System describes its components as simple and consistent solutions to common user-interface needs.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "nng-design-systems-101",
+        "uswds-components-overview"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Common interface components include buttons (which draw attention to important actions with a large selectable surface), cards (which contain content and actions about a single subject), checkboxes (which allow users to select one or more options from a list), modals (which disable page content and focus attention on a single task or message), selects or dropdowns (which allow users to choose one option from a menu), text inputs (which allow users to enter any combination of letters, numbers, or symbols), headers and navigation (which help users identify where they are and reach the main sections of a website), and alerts (which keep users informed of important, sometimes time-sensitive changes).",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "uswds-components-overview"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Consistency is the core rule of components: the same component should look and behave the same everywhere; Nielsen Norman Group states that premade UI components let teams replicate designs quickly, reducing the need to reinvent the wheel and the risk of unintended inconsistency, and that design systems create visual consistency across products and channels.",
+      "claimType": "METHOD",
+      "sourceIds": [
+        "nng-design-systems-101"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A defined component vocabulary gives teams a shared language: Nielsen Norman Group notes that with a design system, the functionality or appearance of a dropdown menu would not be debated, because that term is reserved for a specifically defined element within the design system.",
+      "claimType": "METHOD",
+      "sourceIds": [
+        "nng-design-systems-101"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Components are assembled into pages: an application or website may have hundreds or thousands of pages or screens, and premade UI components and elements are the pieces teams reuse to build and replicate those screens at scale.",
+      "claimType": "METHOD",
+      "sourceIds": [
+        "nng-design-systems-101",
+        "uswds-components-overview"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The U.S. Web Design System documents core button states: default, hover, active (pressed), focus, and disabled, and its accessibility guidance requires that buttons display a visible focus state when users tab to them.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "uswds-button"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "While a component performs work, it commonly shows a loading state with a progress indicator so users receive easily identifiable feedback that their action registered and the system is busy, rather than wondering whether the click landed.",
+      "claimType": "METHOD",
+      "sourceIds": [
+        "uswds-button",
+        "w3c-wai-designing-accessibility"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Accessibility is a general requirement inside components: the W3C Web Accessibility Initiative advises that form elements include clearly associated labels and that interactive elements be easy to identify, and its labeling guidance requires that labels identify all form controls.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3c-wai-designing-accessibility",
+        "wai-labeling-controls"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "All interactive elements must be keyboard accessible: the W3C Web Accessibility Initiative states this directly in its developing guidance, and visible focus states let keyboard users see where they are in an interface.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3c-wai-developing-accessibility",
+        "uswds-button"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Components are only as good as the defaults behind them: a design system defines how each component looks and behaves, and without those standards the same component can drift into inconsistency across screens.",
+      "claimType": "METHOD",
+      "sourceIds": [
+        "nng-design-systems-101",
+        "uswds-components-overview"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Teams and articles sometimes use 'component' and 'pattern' interchangeably, while Nielsen Norman Group treats them as distinct elements of a design system (components are the reusable UI pieces; patterns are broader solutions to recurring problems). This lesson uses the strict sense: a component is a reusable piece of the interface. Naming also differs across design languages: what this lesson calls a toast falls within what USWDS calls alerts and site alerts, so the lesson names both and describes the transient behavior plainly.",
+      "sources": [
+        "nng-design-systems-101",
+        "uswds-components-overview"
+      ]
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "No prior source-verified draft existed for this topic; the generated draft (if any) contained only generic boilerplate, so the lesson was authored from scratch from the verified sources below."
+  ],
+  "correctionsNeeded": [
+    "Authored from scratch: source-verified working definition (NN/g, USWDS), component one-liners and the five core states (USWDS), consistency and shared-language claims (NN/g), and label, keyboard, and focus requirements (W3C WAI). All examples original and invented; sibling topics (design-systems, layout, interaction-design, accessibility) referenced by name only."
+  ],
+  "rightsIssues": [
+    "None. All facts restated in original prose; all examples original and invented. NN/g, USWDS, and W3C WAI used as reference-only sources."
+  ],
+  "sourceRecords": [
+    {
+      "id": "uswds-components-overview",
+      "title": "Components Overview",
+      "provider": "U.S. Web Design System (USWDS)",
+      "url": "https://designsystem.digital.gov/components/overview/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Verified live (HTTP 200) on 2026-08-21; the legacy /components/ URL now redirects here. States that USWDS components are simple and consistent solutions to common user-interface needs and catalogs 47 components, including: button (draws attention to important actions with a large selectable surface), card (contains content and actions about a single subject), checkbox (allows users to select one or more options from a list), modal (disables page content and focuses the user's attention on a single task or message), select (allows users to choose one option from a temporary modal menu), text input (allows users to enter any combination of letters, numbers, or symbols), header (helps users identify where they are and provides a quick, organized way to reach the main sections of a website), and alert/site alert (keeps users informed of important and sometimes time-sensitive changes). Facts restated in original prose."
+    },
+    {
+      "id": "uswds-button",
+      "title": "Button",
+      "provider": "U.S. Web Design System (USWDS)",
+      "url": "https://designsystem.digital.gov/components/button/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Verified live (HTTP 200) on 2026-08-21. The component preview documents the button states Default, Hover, Active, Focus, and Disabled, plus aria-disabled and unstyled variants. Accessibility guidance: buttons should display a visible focus state when users tab to them; avoid creating buttons with div or img tags; label buttons with action verbs (e.g., File a complaint rather than Complaint filing). Facts restated in original prose."
+    },
+    {
+      "id": "nng-design-systems-101",
+      "title": "Design Systems 101",
+      "provider": "Nielsen Norman Group (NN/g)",
+      "url": "https://www.nngroup.com/articles/design-systems-101/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Article by Therese Fessenden, April 11, 2021; verified live (HTTP 200) on 2026-08-21. Defines a design system as a complete set of standards intended to manage design at scale using reusable components and patterns; premade UI components and elements let teams replicate designs quickly and reduce the need to reinvent the wheel and thus the risk of unintended inconsistency; design systems create visual consistency across products and channels; the functionality or appearance of a dropdown menu would not be debated, since that term is reserved for a specifically defined element within the design system; notes that apps and websites may have hundreds or thousands of pages or screens. Facts restated in original prose."
+    },
+    {
+      "id": "w3c-wai-designing-accessibility",
+      "title": "Designing for Web Accessibility – Tips for Getting Started",
+      "provider": "W3C Web Accessibility Initiative (WAI)",
+      "url": "https://www.w3.org/WAI/tips/designing/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Verified live (HTTP 200) on 2026-08-21; previously registered in the phase-2 source registry with the same URL. Advises: ensure that interactive elements are easy to identify; provide clear and consistent navigation options; ensure that form elements include clearly associated labels; provide easily identifiable feedback; create designs for different viewport sizes. Facts restated in original prose."
+    },
+    {
+      "id": "w3c-wai-developing-accessibility",
+      "title": "Developing for Web Accessibility – Tips for Getting Started",
+      "provider": "W3C Web Accessibility Initiative (WAI)",
+      "url": "https://www.w3.org/WAI/tips/developing/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Verified live (HTTP 200) on 2026-08-21. Advises developers to associate a label with every form control and to ensure that all interactive elements are keyboard accessible; in most cases labels are needed to help all readers understand the required input. Facts restated in original prose."
+    },
+    {
+      "id": "wai-labeling-controls",
+      "title": "W3C WAI — Labeling Controls",
+      "provider": "W3C Web Accessibility Initiative (WAI)",
+      "url": "https://www.w3.org/WAI/tutorials/forms/labels/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Verified live (HTTP 200) on 2026-08-21; previously registered in the phase-2 source registry with the same URL. The Labeling Controls tutorial opens with the requirement to provide labels to identify all form controls. Facts restated in original prose."
+    }
+  ]
+}

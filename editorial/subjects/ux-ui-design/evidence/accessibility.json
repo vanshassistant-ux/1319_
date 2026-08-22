@@ -1,0 +1,219 @@
+{
+  "topicId": "ux-ui-design:foundations:accessibility",
+  "subjectId": "ux-ui-design",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "the working definition of accessibility, attributed to the W3C Web Accessibility Initiative",
+      "the disability categories: visual, hearing, motor, cognitive, each with one line and what it means for design",
+      "why accessibility matters: more users, better design for everyone, legal context (general only, no legal advice)",
+      "the POUR principles: perceivable, operable, understandable, robust, each with a one-line plain meaning",
+      "accessibility in practice: semantic structure, alt text, keyboard support, color contrast, captions",
+      "assistive technology: screen readers, screen magnifiers, switch devices",
+      "the honest framing: accessibility is a process, not a checklist; accessibility is for everyone, including temporary situations"
+    ],
+    "supporting": [
+      "benefits for people without disabilities: older users, small screens, situational limitations",
+      "evaluating accessibility early and throughout development",
+      "WAI as the international standards body for web accessibility"
+    ],
+    "outOfScope": [
+      "WCAG success criteria and conformance details (sibling topic wcag-basics)",
+      "color contrast specifics and color-only meaning (sibling topic color)",
+      "typography-specific accessibility (sibling topic typography)",
+      "accessible component patterns (sibling topic components)",
+      "legal compliance specifics - this lesson gives no legal advice",
+      "tool-specific accessibility testing workflows"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The working definition of web accessibility, from the W3C Web Accessibility Initiative, is that websites, tools, and technologies are designed and developed so that people with disabilities can use them; specifically, people can perceive, understand, navigate, and interact with the product.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3c-wai-accessibility-introduction"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The web is fundamentally designed to work for all people, and accessibility serves people with a diverse range of hearing, movement, sight, and cognitive ability, including people without disabilities who face temporary or situational limits such as a broken arm, lost glasses, or bright sunlight.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "w3c-wai-accessibility-introduction",
+        "w3c-wai-diverse-abilities-barriers"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Visual disabilities range from low vision to blindness; many people with visual disabilities change how content is presented, enlarging text, adjusting fonts and colors, or listening to text-to-speech, so designs must keep working when presentation changes.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3c-wai-diverse-abilities-barriers"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Auditory disabilities range from being hard of hearing to deafness, and people may not understand speech, especially with background noise, so audio and video need captions and transcripts.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3c-wai-diverse-abilities-barriers"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Motor (physical) disabilities include tremors, weakness, arthritis, and missing limbs; people often rely on keyboard support and may need more time to type and click, so every function must be operable without a mouse and without strict time pressure.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3c-wai-diverse-abilities-barriers"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Cognitive and learning disabilities are an umbrella term covering differences in learning, memory, reading, attention, and processing, so clear structure, readable text, and predictable behavior reduce barriers.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3c-wai-diverse-abilities-barriers"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Assistive technologies include screen readers that read web pages aloud, screen magnifiers for people with some types of low vision, and selection switches for people who cannot use a keyboard or mouse.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3c-wai-tools-techniques"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "WCAG requirements are organized around four principles, the POUR principles: perceivable (information presentable in ways users can perceive, via text alternatives, captions, and content in different forms), operable (keyboard access, enough time, easy navigation), understandable (readable text, predictable behavior, help avoiding mistakes), and robust (compatible with current and future user tools, including browsers and assistive technologies).",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3c-wai-accessibility-principles"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Everyday accessibility practice includes semantic structure (headings and spacing that group related content), text alternatives for images, keyboard access to all functionality, sufficient contrast between foreground and background, and captions or other alternatives for media.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3c-wai-designing-accessibility",
+        "w3c-wai-accessibility-principles"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The business case for accessibility includes more users (the global market of people with disabilities is more than a billion people), better design for everyone (accessibility often improves the online experience for all users), and legal context (many countries have laws requiring digital accessibility; stated generally, not as legal advice).",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "w3c-wai-business-case",
+        "w3c-wai-accessibility-introduction"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Accessibility is a process: WAI advises incorporating it from the very beginning of projects, evaluating early and throughout development, and recognizing that no tool alone can determine whether a product is accessible - knowledgeable human evaluation is required.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "w3c-wai-accessibility-introduction"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Some teams and vendors frame accessibility as a launch-time compliance checklist that automated tools can clear, while W3C WAI states that no tool alone can determine whether a product is accessible and that accessibility must be incorporated from the start of a project and evaluated throughout. This lesson follows the WAI position.",
+      "positions": [
+        "Accessibility is a one-time checklist cleared by automated tools",
+        "Accessibility is an ongoing design process requiring knowledgeable human evaluation (W3C WAI)"
+      ],
+      "resolution": "The lesson presents accessibility as a process, not a checklist, citing WAI's guidance that evaluation happens early and throughout development and that human judgment is required."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The machine-generated draft described accessibility only as a foundational concept with a generic definition; none of its boilerplate wording survived, and the draft contained no specific verifiable claims to preserve."
+  ],
+  "correctionsNeeded": [
+    "None - first phase-2 authoring pass for this topic; all content written from live W3C WAI pages read on 2026-08-21."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "w3c-wai-accessibility-introduction",
+      "title": "Introduction to Web Accessibility",
+      "provider": "W3C Web Accessibility Initiative",
+      "url": "https://www.w3.org/WAI/fundamentals/accessibility-intro/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Supports: the working definition (websites, tools, and technologies designed so people with disabilities can use them; people can perceive, understand, navigate, and interact); the web as fundamentally designed to work for all people, serving a diverse range of hearing, movement, sight, and cognitive ability; accessibility benefits for people without disabilities, including temporary disabilities (broken arm, lost glasses) and situational limitations (bright sunlight, environments where audio cannot be heard); accessibility as important for individuals, businesses, and society; web accessibility required by law in many situations (stated generally); incorporating accessibility from the very beginning of projects; evaluating early and throughout development; and no tool alone can determine whether a site meets accessibility guidelines - knowledgeable human evaluation is required. Facts restated in original prose."
+    },
+    {
+      "id": "w3c-wai-accessibility-principles",
+      "title": "Accessibility Principles",
+      "provider": "W3C Web Accessibility Initiative",
+      "url": "https://www.w3.org/WAI/fundamentals/accessibility-principles/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Supports the POUR principles with their plain meanings: Perceivable (information and user interface presentable in ways users can perceive; text alternatives for non-text content; captions and other alternatives for multimedia; content presentable in different ways; easier to see and hear), Operable (functionality available from a keyboard; enough time to read and use content; content does not cause seizures; users can navigate and determine where they are), Understandable (text readable and understandable; content appears and operates in predictable ways; users helped to avoid and correct mistakes), Robust (content compatible with current and future user tools, including browsers, assistive technologies, and other user agents). WCAG requirements are organized around these four principles. Facts restated in original prose."
+    },
+    {
+      "id": "w3c-wai-diverse-abilities-barriers",
+      "title": "Diverse Abilities and Barriers",
+      "provider": "W3C Web Accessibility Initiative",
+      "url": "https://www.w3.org/WAI/people-use-web/abilities-barriers/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21, including its subpages for visual, auditory, physical, and cognitive disabilities. Supports the four disability categories and one-line design implications: visual (low vision to blindness; users enlarge text, customize fonts/colors/spacing, use text-to-speech and Braille), auditory (hard of hearing to deafness; speech may be unclear especially with background noise; captions and transcripts), physical/motor (tremors, weakness, arthritis, missing limbs; keyboard support essential; users may need more time to type and click), cognitive and learning (umbrella term affecting learning, memory, reading, attention, and processing). Also supports temporary impairments (accident, surgery, medication) and situational limitations (loud environment, bright sunlight) and the statement that digital technology designed for a broad range of abilities benefits everyone. Facts restated in original prose."
+    },
+    {
+      "id": "w3c-wai-tools-techniques",
+      "title": "Tools and Techniques",
+      "provider": "W3C Web Accessibility Initiative",
+      "url": "https://www.w3.org/WAI/people-use-web/tools-techniques/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Supports the assistive-technology list: screen readers that read aloud web pages for people who cannot read the text, screen magnifiers for people with some types of low vision, speech recognition software, and selection switches for people who cannot use a keyboard or mouse. Facts restated in original prose."
+    },
+    {
+      "id": "w3c-wai-business-case",
+      "title": "The Business Case for Digital Accessibility",
+      "provider": "W3C Web Accessibility Initiative",
+      "url": "https://www.w3.org/WAI/business-case/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Supports: extending market reach (the global market of people with disabilities is over 1 billion people); accessibility often improves the online experience for all users; minimizing legal risk (many countries have laws requiring digital accessibility, stated generally; the lesson gives no legal advice). Facts restated in original prose."
+    },
+    {
+      "id": "w3c-wai-designing-accessibility",
+      "title": "Designing for Web Accessibility - Tips for Getting Started",
+      "provider": "W3C Web Accessibility Initiative",
+      "url": "https://www.w3.org/WAI/tips/designing/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Supports the everyday practices: use headings and spacing to group related content; include image and media alternatives in the design; provide sufficient contrast between foreground and background; don't use color alone to convey information; ensure interactive elements are easy to identify; provide controls for content that starts automatically. Facts restated in original prose."
+    }
+  ]
+}

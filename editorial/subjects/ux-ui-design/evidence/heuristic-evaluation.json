@@ -1,0 +1,199 @@
+{
+  "topicId": "ux-ui-design:foundations:heuristic-evaluation",
+  "subjectId": "ux-ui-design",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "Definition of heuristic evaluation: experts review an interface against a checklist of usability principles (working definition, attributed to Jakob Nielsen)",
+      "Nielsen's ten usability heuristics, each with a one-line plain meaning",
+      "The process: a small team of evaluators inspects independently, then findings are combined and discussed",
+      "Severity ratings: problems are rated (frequency, impact, persistence; 0-4 scale) so teams fix the worst first",
+      "The distinction from usability testing: expert review vs. observation of real users; the two complement each other"
+    ],
+    "supporting": [
+      "Heuristics are broad rules of thumb, not specific guidelines or laws",
+      "Why 3-5 independent evaluators beat one (any single expert misses issues)",
+      "Heuristic evaluation is fast and inexpensive because no participants are needed; useful early in design and on limited budgets",
+      "Violations are candidate problems: context matters, and real users confirm which issues actually matter"
+    ],
+    "outOfScope": [
+      "Usability testing (sibling topic: ux-ui-design:foundations:usability-testing)",
+      "Interaction design (sibling topic: ux-ui-design:foundations:interaction-design)",
+      "Accessibility and WCAG (sibling topics: ux-ui-design:foundations:accessibility, wcag-basics)",
+      "Tool tutorials (no Figma/Sketch/software workflows)",
+      "Evaluating specific real products as good or bad design"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Heuristic evaluation is a usability inspection method in which evaluators judge an interface against a set of guidelines (heuristics) that make systems easy to use; it does not involve testing with users.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nng-heuristic-evaluation-how-to",
+        "ixdf-heuristic-evaluation"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The most widely used checklist is Jakob Nielsen's set of ten usability heuristics, published in 1994 and refined from earlier heuristics Nielsen developed with Rolf Molich (1990).",
+      "claimType": "HISTORICAL",
+      "sourceIds": [
+        "nng-ten-usability-heuristics",
+        "ixdf-heuristic-evaluation"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The ten heuristics are: visibility of system status; match between the system and the real world; user control and freedom; consistency and standards; error prevention; recognition rather than recall; flexibility and efficiency of use; aesthetic and minimalist design; help users recognize, diagnose, and recover from errors; help and documentation.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nng-ten-usability-heuristics"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The heuristics are called heuristics because they are broad rules of thumb, not specific usability guidelines; they are guidelines rather than laws, and context can justify exceptions.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nng-ten-usability-heuristics",
+        "nng-heuristic-evaluation-how-to"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Heuristic evaluation works best with a group: ideally three to five people should independently evaluate the same interface, because each individual, however expert, is likely to miss some usability issues.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nng-heuristic-evaluation-how-to",
+        "ixdf-heuristic-evaluation"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The standard process has two phases: each evaluator first becomes familiar with the product, then walks through it again looking for violations of the heuristics and recording issues; afterwards the team consolidates the findings, discusses agreements and disagreements, and prioritizes.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nng-heuristic-evaluation-how-to",
+        "ixdf-heuristic-evaluation"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Severity of a usability problem combines three factors: frequency (common or rare), impact (easy or difficult to overcome), and persistence (one-time or repeatedly bothersome); a common rating scale runs 0 (not a usability problem) to 4 (usability catastrophe), with 1 cosmetic, 2 minor, 3 major.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nng-severity-ratings-usability-problems"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Heuristic evaluation is fast and inexpensive compared with methods involving real users, which makes it useful early in the design process and for stretching a limited UX research budget.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nng-heuristic-evaluation-how-to",
+        "ixdf-heuristic-evaluation"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Heuristic evaluation cannot replace user research or usability testing: expert judgments are assumptions about good usability, evaluations can produce false alarms, and only observing real users confirms which problems actually matter.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "nng-heuristic-evaluation-how-to",
+        "ixdf-heuristic-evaluation"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Heuristic evaluation and usability testing find different kinds of problems and work well together; for example, an evaluation before a usability test can identify which design elements the test should focus on.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "nng-heuristic-evaluation-how-to"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Does a heuristic violation always mean the design has a real usability problem?",
+      "positions": [
+        "Nielsen Norman Group: a violation is a signal, not a verdict. The team's own example is a hamburger menu, which violates the recognition-rather-than-recall heuristic but is often the right choice on mobile; 'heuristics are guidelines, not laws.'",
+        "Interaction Design Foundation: heuristic evaluation is based on assumptions about what good usability is, and it can produce false alarms; one reported comparative study found many problems flagged by heuristic evaluators were not genuine problems for real users (IxDF reports 43% of flagged issues were not actual problems and that evaluators identified a minority of the genuine problems that usability testing found)."
+      ],
+      "resolution": "The lesson frames heuristic findings as candidate problems that must be confirmed with real users and weighed in context; it does not reproduce the specific study percentages."
+    },
+    {
+      "issue": "Is heuristic evaluation a replacement for or a complement to usability testing?",
+      "positions": [
+        "Both sources agree expert review cannot replace testing with real users; NN/g stresses that UX design is highly contextual and that evaluations complement research.",
+        "Some practitioners describe heuristic evaluation as a cheap substitute when budgets cannot support testing; both NN/g and IxDF explicitly reject using it that way."
+      ],
+      "resolution": "The lesson teaches the complement framing: heuristics find likely problems, usability testing confirms them."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The machine-generated draft's boilerplate (none of it survived; the phase-2 draft for this topic was generic and contained no specific verifiable claims to carry over)."
+  ],
+  "correctionsNeeded": [
+    "Attributed the ten heuristics precisely: refined and published by Jakob Nielsen (1994), with roots in the 1990 Nielsen-Molich heuristics.",
+    "Kept severity factors to frequency, impact, and persistence (plus market impact as an additional consideration), per Nielsen's severity article.",
+    "Used the current NN/g wording for heuristic names (e.g., 'Consistency and Standards', 'Recognition Rather than Recall')."
+  ],
+  "rightsIssues": [
+    "All four sources are reference-only: NN/g articles are public but copyrighted; the IxDF topic page carries a CC BY-SA 4.0 mark on some materials, but no source wording was reproduced, so REFERENCE_ONLY applies throughout."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nng-ten-usability-heuristics",
+      "title": "10 Usability Heuristics for User Interface Design",
+      "provider": "Nielsen Norman Group",
+      "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Jakob Nielsen's canonical list of the ten usability heuristics with plain-language descriptions, first published 1994 and last reviewed January 2024. Read live; used for the names of the ten heuristics, the 'broad rules of thumb, not specific guidelines' framing, and the one-line meanings."
+    },
+    {
+      "id": "nng-heuristic-evaluation-how-to",
+      "title": "Heuristic Evaluations: How to Conduct",
+      "provider": "Nielsen Norman Group",
+      "url": "https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Kate Moran and Kelley Gordon's step-by-step guide (2023): definition of the method, 3-5 independent evaluators, two-pass review (familiarization, then issue-hunting), consolidation of findings, exceptions to heuristics, and the statement that heuristic evaluations cannot replace user research. Read live; used for the process description and the complement framing."
+    },
+    {
+      "id": "nng-severity-ratings-usability-problems",
+      "title": "Severity Ratings for Usability Problems",
+      "provider": "Nielsen Norman Group",
+      "url": "https://www.nngroup.com/articles/how-to-rate-the-severity-of-usability-problems/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Jakob Nielsen (1994) on severity: the three factors (frequency, impact, persistence, with market impact as an extra consideration) and the 0-4 rating scale from cosmetic to usability catastrophe. Read live; used for the severity section."
+    },
+    {
+      "id": "ixdf-heuristic-evaluation",
+      "title": "Heuristic Evaluation (HE) \u2014 topic encyclopedia entry",
+      "provider": "Interaction Design Foundation",
+      "url": "https://www.interaction-design.org/literature/topics/heuristic-evaluation",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "IxDF topic page: working definition (experts use rules of thumb in independent walkthroughs), the Nielsen-Molich origin (1990 'Improving a Human-Computer Dialogue'), the 3-5 evaluator guidance, the two walkthroughs plus debrief, and pros/cons including that heuristic evaluation is no substitute for usability testing and can produce false alarms. Read live; used for the definition, process confirmation, and honest framing. Page displays a CC BY-SA 4.0 mark on some materials; no wording reproduced."
+    }
+  ]
+}

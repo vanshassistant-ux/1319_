@@ -1,0 +1,154 @@
+# Mobile-First Design
+
+## In 30 Seconds
+
+Mobile-first design means building the smallest-screen version of a product first — the phone version — and then adding content and features as screens grow larger. The small screen is not a limitation to work around; it is a filter that forces a team to decide what truly matters. The result is a simpler, faster, more focused experience, and it still leaves room for desktop users to get everything they need.
+
+## Why This Matters
+
+Most people will first meet a product on a phone, and the phone is also where attention, patience, and bandwidth are thinnest. A design that starts there has already answered the hard question — what is essential? — before anything else gets built. That ordering shapes every later decision: which features ship first, which content earns top placement, how fast the page loads, and whether a thumb can reach the button. In courses and on the job, mobile-first thinking is the standard way to talk about prioritization and progressive enhancement. And the honest version of the idea matters just as much: starting small is a discipline, not a guarantee — the desktop experience still has to be designed on its own terms, not simply copied.
+
+## Learning Objectives
+
+- Define mobile-first design as designing for the smallest screen first and adding for larger screens, attributing the approach to the Interaction Design Foundation and Luke Wroblewski.
+- Explain the core argument: screen constraints force a team to decide what is truly essential before anything else gets built.
+- Name the three benefits of mobile-first design — clarity, performance, and focus — with an original example of each.
+- Distinguish mobile-first from desktop-first (adding versus removing) and from responsive design (designing small first versus adapting layouts).
+- Apply the essential-content rule and touch guidance (finger-sized targets, one-handed thumb reach) to a simple interface scenario.
+
+## The College Version
+
+### The working definition
+
+Mobile-first design means building the smallest-screen version of a product first and then adding content and features as the screen grows. The Interaction Design Foundation, a design-education organization, defines the approach as starting the product design process with the smallest device and progressively enhancing the design for larger layouts, and it credits Luke Wroblewski, who proposed the idea in his 2009 book *Mobile First*. The name can mislead: mobile-first is not mobile-only. It means the phone layout is the starting point, and every larger layout is that essential experience with more added on top.
+
+### Why the constraint works
+
+The core argument is that constraints force priorities. On a desktop monitor there is room for a menu bar, a sidebar, a hero image, a news feed, and a footer full of links — nothing demands a decision. On a phone, all of that cannot fit, so the team must answer the question the desktop layout lets them dodge: what does the user actually need? An original example: a neighborhood bakery is getting a website. A phone screen can reasonably hold the menu, the hours, the address, and a phone number — not also the baker's blog, a photo gallery, and a staff page. Designing the phone version first forces the team to decide that the menu and hours are the core, and the blog can wait for the tablet. The constraint did the prioritizing; the team just had to notice it.
+
+### The benefits
+
+Three benefits follow from this ordering. Clarity: because only the essential fits, the interface stays simple and each screen has an obvious job. Performance: a design built for a small screen starts lean — fewer images, less decoration — so it loads faster, which matters most on phones with slow connections. Focus: starting small keeps the team honest about what matters, and that same hierarchy carries up to the larger screens instead of being invented at the end. The three are really one benefit seen three ways: decide what is essential, and clarity, speed, and focus all follow.
+
+### Adding versus removing
+
+Desktop-first is the older, more natural approach: design the full desktop experience, then remove things to fit a phone. Mobile-first is the reverse — design small, then add. The difference is more than order. Removing tends to cut whatever is easiest to cut — a video here, a sidebar there — while keeping the structure built for a big screen, so the phone ends up with leftovers. Adding builds the small screen around what is essential, so every element added later has to earn its place. The Interaction Design Foundation frames the difference as starting point and priority. Responsive design, the sibling topic that makes one layout adapt across screen sizes, is the technique that carries a mobile-first design from phone to desktop: mobile-first decides the order, responsive design decides the adaptation.
+
+### Content and touch
+
+Mobile-first carries a rule for content: the essential content must survive on the smallest screen. If a piece of content cannot earn a place on the phone, it is either not essential or needs to be rethought — it should never exist only on the desktop version. This echoes progressive enhancement, the idea that every user gets the essential content first and users with more capable devices receive an enhanced version. Touch adds a physical constraint. Fingers are blunt instruments compared with a mouse cursor: interactive targets need to be roughly fingertip-sized, and the Interaction Design Foundation cites a practical floor of around 30 pixels, with Apple recommending at least 44. And the thumb, not a pointer, does the tapping: people often use a phone one-handed, so designers weigh where a thumb can comfortably reach when placing frequent actions, and test with one thumb and one glance.
+
+### The honest framing
+
+Mobile-first is a discipline, not a magic rule. Nielsen Norman Group, whose usability research is a standard reference in the field, warns explicitly that mobile-first is not mobile-only: in a 179-participant study of six responsive sites, they found that patterns borrowed from mobile — such as hiding navigation behind a menu or replacing a search box with an icon — were used far less and hurt the experience on the desktop, where users expect visible navigation and room for side-by-side content. The lesson is that different devices have different interaction capabilities, and each should be optimized for its own strengths. Design small first, scale up by adding, and then give the desktop layout its own honest design. Start small, add deliberately, and never confuse the starting point with the finished product.
+
+## Key Vocabulary
+
+- **mobile-first design** — An approach that begins with the smallest screen and progressively adds content and features for larger screens.
+- **progressive enhancement** — A strategy that delivers essential content to every device first and layers extra features on for more capable devices.
+- **constraint** — A limit, such as screen size, that shapes what a design can include and forces choices about what matters.
+- **touch target** — The interactive area of a button or link that a finger must hit, sized large enough to tap reliably.
+- **desktop-first** — The older approach of designing the full desktop experience first and then removing content to fit smaller screens.
+- **essential content** — The core information and actions a user needs most, which must work on the smallest screen.
+- **thumb reach** — The comfortable range of a one-handed thumb across a phone screen, which designers weigh when placing frequent actions.
+- **responsive design** — A sibling approach in which one layout adapts and rearranges to fit different screen sizes, distinct from the design order mobile-first uses.
+
+## Eli-10
+
+Mobile-first design is a way of deciding what matters. Instead of designing a big, full website and then squeezing it into a phone, you start with the phone screen — the smallest space you have to work with — and design only what is essential there. Once the essential experience works, you add more for bigger screens. The small screen acts like a filter: it makes you choose what is most important before you add anything else.
+
+## Eli's Analogy
+
+Imagine packing for a trip with only a small carry-on bag. You cannot bring everything, so you choose the few items you truly need. Later, if you add a checked bag, you can bring the extras. Packing small first does not mean you travel with only a carry-on forever; it means the essentials get chosen first, and every extra has to earn its way in.
+
+The analogy ends where screens stop behaving like bags. A phone screen does not close like a suitcase: content scrolls, so the small screen can hold far more than what fits at one glance, and *essential* is about hierarchy, not a strict weight limit. A desktop design is also not just the phone's leftovers in a bigger bag — it deserves its own layout, navigation, and use of space, which no amount of packing decides for you.
+
+## Worked Example
+
+A community bike-share service is redesigning its website and commits to mobile-first. The team starts with a phone screen. What does a rider need at the moment of use? A map of nearby stations, live bike availability, the unlock code, and the price. That is the phone version: four things, one clear job each, no clutter. Next the team moves to the tablet, where riders plan trips before leaving home, so they add route suggestions and a station calendar. Finally, on desktop, where the city's operations staff manage the fleet, they add the full dashboard: utilization charts, maintenance logs, and bulk reports. Each larger screen received exactly what that context added — nothing was copied down, and nothing was cut to make room.
+
+## Common Mistakes
+
+- **Treating mobile-first as mobile-only.** Designing the phone version and then porting it to the desktop unchanged, hidden menu and all. *Correction:* mobile-first is a starting point. The desktop layout needs its own design that uses the bigger screen's strengths, such as visible navigation and side-by-side content.
+- **Confusing mobile-first with responsive design.** *Correction:* responsive design is the sibling technique that makes one layout adapt to different screen sizes; mobile-first decides the order you design in. Teams typically use both together.
+- **Cutting content on the phone version instead of prioritizing it.** Assuming small screens mean less substance. *Correction:* the rule is that essential content must survive on the smallest screen. If something cannot fit on the phone, question whether it is essential at all — do not simply postpone it to desktop.
+- **Shrinking tap targets to squeeze more onto the screen.** *Correction:* touch targets need to be roughly fingertip-sized — around 30 pixels at the floor, with 44 pixels or more recommended — because a mis-tap loses the user.
+
+## Compare / Contrast
+
+- **Mobile-first design vs. Desktop-first design:** Mobile-first builds the essential small-screen experience and then adds for larger screens; desktop-first builds the full desktop experience and then removes to fit smaller screens — adding versus removing.
+- **Mobile-first design vs. Responsive design:** Mobile-first is about the order of designing (small first, then scale up); responsive design is the technique that adapts and rearranges one layout across screen sizes. They are sibling concepts, often used together.
+- **Designing small first vs. Shrinking a desktop layout:** Designing small first rebuilds the experience around what is essential; shrinking a desktop layout keeps the desktop structure and compresses it, which is what makes phone versions feel crowded.
+
+## Key Takeaway
+
+Mobile-first is a discipline, not a magic rule: design the essential experience for the smallest screen first, scale up by adding, keep touch targets finger-sized — and remember that the desktop experience still deserves its own design, not a copy of the phone.
+
+## Practice Question Bank
+
+**Question 1.** Which statement best defines mobile-first design?
+
+- Starting with the smallest screen and adding content and features for larger screens.
+- Designing the desktop version first and then cutting features to fit a phone.
+- Building a separate app for every device size.
+- Making one layout stretch to fit any screen automatically.
+
+*Answer:* the first option. Mobile-first starts small and adds; the second option is desktop-first in reverse, the third describes separate builds, and the fourth describes responsive adaptation rather than the mobile-first starting point.
+
+**Question 2.** Why does a small screen help a team decide what matters most?
+
+- Because small screens load faster, so teams have more time to decide.
+- Because limited space forces the team to choose what is essential before anything else fits.
+- Because phone users are always in a hurry and never read anything.
+- Because designers can ignore content on the phone and add it later on desktop.
+
+*Answer:* the second option. The constraint of a small screen forces prioritization; the other options mistake the mechanism for user behavior or delay the decision entirely.
+
+**Question 3.** A team is redesigning a small bakery's website with a mobile-first approach. Which starting set best fits the phone version?
+
+- The baker's blog, a photo gallery, and a list of awards.
+- An animated welcome video and a newsletter signup form.
+- The menu, the hours, the address, and a phone number.
+- A full press page, staff biographies, and catering brochures.
+
+*Answer:* the third option. The phone version should carry the essential content a customer needs most — menu, hours, location, and contact — while the extras in the other options belong on larger screens.
+
+**Question 4.** A designer finishes the phone layout and simply stretches it to fill the desktop screen, keeping the menu hidden behind an icon. What is the main risk?
+
+- The desktop page will take longer to load than the phone page.
+- Phone users will lose access to the menu entirely.
+- The icon will be too large to click with a mouse.
+- The desktop experience will waste its larger screen's strengths, such as visible navigation and side-by-side content.
+
+*Answer:* the fourth option. Porting a mobile layout unchanged can degrade the desktop experience: patterns that are necessary on a phone, like a hidden menu, are weaker on a big screen where more information can be shown openly.
+
+**Question 5.** Which touch guidance best matches mobile-first practice?
+
+- Make interactive targets roughly fingertip-sized, with a practical floor around 30 pixels and 44 pixels or more recommended.
+- Keep targets as small as possible so more content fits on the screen.
+- Place every action at the very top of the screen, out of the way.
+- Size targets for a mouse cursor, since desktop users are the majority.
+
+*Answer:* the first option. Fingers need generous targets; the Interaction Design Foundation cites about 30 pixels as the floor and notes Apple recommends at least 44. Tiny targets cause mis-taps, and top-only placement ignores where a thumb reaches.
+
+## Sources
+
+- Interaction Design Foundation (IxDF) — *What is Mobile First?* — https://www.interaction-design.org/literature/topics/mobile-first
+- Nielsen Norman Group (NN/g) — Budiu, R. & Pernice, K., *Mobile First Is NOT Mobile Only* (2016) — https://www.nngroup.com/articles/mobile-first-not-mobile-only/
+
+## Related Topics
+
+- Responsive Design
+- Layout
+- Visual Hierarchy
+- Wireframes
+- Interaction Design
+
+## Editorial Metadata
+
+- **Topic id:** ux-ui-design:foundations:mobile-first-design
+- **Subject:** ux-ui-design — Foundations
+- **Editorial status:** READY_TO_PUBLISH
+- **Research status:** source-verified (live reads 2026-08-21; NN/g Tier A, IxDF Tier B)
+- **Rights status:** reference-only sources; no source prose adapted or reproduced
+- **Transformation:** facts from the two sources synthesized into original prose with original examples; responsive design, layout, and accessibility content scoped to sibling topics

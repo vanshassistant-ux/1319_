@@ -1,0 +1,178 @@
+{
+  "topicId": "ux-ui-design:foundations:wcag-basics",
+  "subjectId": "ux-ui-design",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "what WCAG is, who develops it, and its international status",
+      "the POUR principles with plain meanings",
+      "conformance levels A, AA, and AAA, and what AA means in practice",
+      "the principles-guidelines-success-criteria hierarchy",
+      "common success criteria: text alternatives, captions, keyboard access, contrast, resize text",
+      "WCAG the standard versus accessibility the goal",
+      "WCAG as a baseline, not a ceiling"
+    ],
+    "supporting": [
+      "ISO/IEC 40500:2025 status of WCAG 2.2",
+      "WCAG version history and additive versioning (2.0, 2.1, 2.2)",
+      "laws and policies citing WCAG, including the European Accessibility Act / EN 301 549 context"
+    ],
+    "outOfScope": [
+      "accessibility as a whole (sibling topic 'accessibility')",
+      "contrast ratios and color specifics (sibling topic 'color')",
+      "typography and legibility details (sibling topic 'typography')",
+      "WCAG 3 details",
+      "legal advice"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "WCAG (Web Content Accessibility Guidelines) is the international standard for web accessibility, developed through the W3C process in cooperation with individuals and organizations around the world, with the goal of a single shared standard meeting the needs of individuals, organizations, and governments internationally.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "w3c-wcag-overview"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "WCAG 2.2 was published on 5 October 2023; WCAG versions are additive (later versions add success criteria without changing existing ones), and content that conforms to WCAG 2.2 also conforms to WCAG 2.0 and 2.1.",
+      "claimType": "CURRENT",
+      "sourceIds": [
+        "w3c-wcag-overview",
+        "w3c-wcag22"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "WCAG 2.2 is an approved ISO standard, ISO/IEC 40500:2025, identical to the October 2023 version of WCAG 2.2.",
+      "claimType": "CURRENT",
+      "sourceIds": [
+        "w3c-wcag-overview"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "WCAG 2.2 organizes guidance in layers: four principles (Perceivable, Operable, Understandable, Robust) at the top, 13 guidelines under them, and testable success criteria under each guideline; success criteria are rated at three conformance levels — A (lowest), AA, and AAA (highest) — and are what determine conformance.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "w3c-wcag-overview",
+        "w3c-wcag22"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Familiar WCAG 2.2 success criteria include 1.1.1 Non-text Content (text alternatives, Level A), 1.2.2 Captions (Prerecorded, Level A), 2.1.1 Keyboard (Level A), 1.4.3 Contrast (Minimum, Level AA), and 1.4.4 Resize Text (Level AA).",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "w3c-wcag22"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Web accessibility means websites, tools, and technologies are designed and developed so that people with disabilities can use them — can perceive, understand, navigate, and interact with the web and contribute to it; WCAG is the standard that measures part of that goal, and the W3C states the guidelines are not able to address the needs of people with all types, degrees, and combinations of disability, while WAI resources help improve accessibility beyond WCAG.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "w3c-wai-accessibility-introduction",
+        "w3c-wcag22",
+        "w3c-wcag-overview"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Laws and policies around the world reference WCAG at stated levels, often AA: WAI notes that most organizations addressing the European Accessibility Act use WCAG together with the European standard EN 301 549, and WAI's laws-and-policies index lists laws such as Canada's Accessible Canada Act citing WCAG 2.0 AA.",
+      "claimType": "CURRENT",
+      "sourceIds": [
+        "w3c-wcag-overview",
+        "w3c-wai-policies"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Is meeting WCAG the same as being accessible?",
+      "positions": [
+        "Some teams treat WCAG conformance as the complete definition of accessibility.",
+        "The W3C states the guidelines cannot address the needs of people with all types, degrees, and combinations of disability, and WAI provides resources to improve accessibility beyond WCAG."
+      ],
+      "resolution": "The lesson teaches WCAG as the standard and accessibility as the broader goal; conformance is a verified baseline, not proof of a good experience for everyone."
+    },
+    {
+      "issue": "Which conformance level should a product target?",
+      "positions": [
+        "Level A is the bare minimum set of criteria.",
+        "Some assume AAA is always the best goal, but the W3C advises against requiring AAA as a general policy for entire sites because some content cannot satisfy all AAA criteria.",
+        "Laws and policies commonly cite WCAG at level AA."
+      ],
+      "resolution": "The lesson presents AA as the level laws and policies commonly cite, notes the W3C's AAA caveat, and stays factual with no legal advice."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "'WCAG Basics is a foundational concept in Ux/Ui Design' — vacuous boilerplate with no source support.",
+    "'College courses use wcag basics as a building block for later discussions, assignments, and decisions' — no source support.",
+    "The generated draft's learning objectives, vocabulary, and questions described no actual WCAG content and were fully replaced."
+  ],
+  "correctionsNeeded": [
+    "Replaced the machine-generated boilerplate draft with a source-verified lesson grounded in W3C WAI sources.",
+    "Corrected the draft's 'Ux/Ui Design' framing: the lesson is about the WCAG standard itself, not a generic concept.",
+    "Framed all legal-adjacent statements (laws citing WCAG, EAA, EN 301 549) factually as 'laws and policies cite WCAG', with no legal advice.",
+    "Verified conformance-level labels for cited success criteria directly from the WCAG 2.2 Recommendation (1.1.1/1.2.2/2.1.1 at Level A; 1.4.3/1.4.4 at Level AA)."
+  ],
+  "rightsIssues": [
+    "None. All sources are W3C WAI pages used as REFERENCE_ONLY; no source prose reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "w3c-wcag-overview",
+      "title": "WCAG 2 Overview",
+      "provider": "World Wide Web Consortium (W3C), Web Accessibility Initiative",
+      "url": "https://www.w3.org/WAI/standards-guidelines/wcag/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Live w3.org blocked automated fetches (Cloudflare challenge), so the page was read via its 2026-08-19 Internet Archive capture. Supports: WCAG as the international standard developed through the W3C process by WAI; the 'single shared standard' goal; 13 guidelines organized under the 4 POUR principles; testable success criteria at levels A/AA/AAA determining conformance; WCAG 2.2 published 5 October 2023; additive versioning; ISO/IEC 40500:2025 status; the European Accessibility Act / EN 301 549 usage; the pointer to WAI's laws-and-policies index; and WAI resources to 'improve accessibility beyond WCAG.' Original prose only."
+    },
+    {
+      "id": "w3c-wcag22",
+      "title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+      "provider": "World Wide Web Consortium (W3C)",
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read via the 2026-08-21 Internet Archive capture of the W3C Recommendation. Supports: layered guidance (principles, guidelines, testable success criteria, plus sufficient and advisory techniques); the four principle names; 13 guidelines as non-testable goals; the success criteria 1.1.1 Non-text Content (Level A), 1.2.2 Captions (Prerecorded) (Level A), 2.1.1 Keyboard (Level A), 1.4.3 Contrast (Minimum) (Level AA), 1.4.4 Resize Text (Level AA); three conformance levels 'A (lowest), AA, and AAA (highest)'; the recommendation against requiring AAA as a general policy for entire sites; the statement that the guidelines cannot address the needs of people with all types, degrees, and combinations of disability; and that content conforming to WCAG 2.2 also conforms to 2.0 and 2.1. Original prose only."
+    },
+    {
+      "id": "w3c-wai-accessibility-introduction",
+      "title": "Introduction to Web Accessibility",
+      "provider": "W3C Web Accessibility Initiative",
+      "url": "https://www.w3.org/WAI/fundamentals/accessibility-intro/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read via the 2026-08-18 Internet Archive capture. Supports the working definition of web accessibility (websites, tools, and technologies designed and developed so that people with disabilities can use them; users can perceive, understand, navigate, and interact with the web and contribute to it) and the statement that international web standards define what is needed for accessibility. Used for the standard-versus-goal distinction only."
+    },
+    {
+      "id": "w3c-wai-policies",
+      "title": "Web Accessibility Laws & Policies",
+      "provider": "W3C Web Accessibility Initiative",
+      "url": "https://www.w3.org/WAI/policies/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "New id (not previously in the phase-2 registry). Read via a 2026 Internet Archive capture (raw id_ copy). Supports the claim that laws and policies around the world reference WCAG at stated levels, e.g. Canada's Accessible Canada Act listing WCAG 2.0 AA. Used only to ground the 'laws and policies commonly cite WCAG, often at AA' statement factually; the lesson gives no legal advice."
+    }
+  ]
+}

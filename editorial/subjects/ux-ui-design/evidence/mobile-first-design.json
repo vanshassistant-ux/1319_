@@ -1,0 +1,166 @@
+{
+  "topicId": "ux-ui-design:foundations:mobile-first-design",
+  "subjectId": "ux-ui-design",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "working definition of mobile-first (smallest screen first, then add for larger screens)",
+      "why mobile-first: constraints force priorities",
+      "the three benefits: clarity, performance, focus",
+      "mobile-first vs desktop-first: adding versus removing",
+      "the essential-content rule (essential content survives on the smallest screen)",
+      "touch as a constraint: finger-sized targets and one-handed thumb reach",
+      "honest framing: mobile-first is a discipline, not a magic rule; desktop still matters"
+    ],
+    "supporting": [
+      "history and attribution: proposed by Luke Wroblewski in 2009 (book Mobile First)",
+      "progressive enhancement as the supporting concept",
+      "responsive design as a sibling concept (reference only)"
+    ],
+    "outOfScope": [
+      "responsive design mechanics and breakpoints (own sibling topic)",
+      "layout and grid systems (own sibling topic)",
+      "accessibility standards such as WCAG (own sibling topic)",
+      "code and CSS media queries (literacy level: no tools)",
+      "specific design software or frameworks"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Mobile-first design means starting the product design process with the smallest device (typically a phone) and progressively enhancing the design with content and features for larger screens.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ixdf-mobile-first"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The mobile-first approach was initially proposed in 2009 by Luke Wroblewski in his book Mobile First, who argued that designing from the desktop version first was becoming a backward way to think about design.",
+      "claimType": "HISTORICAL",
+      "sourceIds": [
+        "ixdf-mobile-first"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The core argument for mobile-first is that the constraints of a small screen force designers to focus on the most important content and features, which keeps the experience simple and clear.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "ixdf-mobile-first"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Mobile-first benefits include clarity (simpler, less cluttered interfaces), performance (lightweight pages that load faster, especially on slow connections), and focus (essential content and features prioritized from the start).",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ixdf-mobile-first"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Mobile-first differs from desktop-first in starting point and priority: mobile-first starts small and adds, while the desktop-first approach starts with the desktop and cuts down.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ixdf-mobile-first"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "In mobile-first design the essential content must be available on the smallest screen; the approach aligns with progressive enhancement, which delivers essential content universally and adds an enhanced experience for more capable devices.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ixdf-mobile-first"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Touch targets should be fat-finger-friendly: wide tap targets no smaller than about 30 pixels, with Apple recommending at least 44 pixels.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "ixdf-mobile-first"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Mobile-first is not mobile-only: porting a mobile-optimized interface to the desktop unchanged can degrade the desktop user experience, because different devices have different interaction capabilities and screen sizes and should each be optimized for their own strengths; mobile-first is a starting discipline, not a complete design on its own.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "nng-mobile-first-not-mobile-only"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Responsive design is a sibling concept: it keeps the same content and functionality across screen sizes while rearranging layouts to fit the available space; mobile-first determines the order of designing, responsive design determines the adaptation.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nng-mobile-first-not-mobile-only",
+        "ixdf-mobile-first"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Recommended minimum touch-target size varies across guidance.",
+      "positions": [
+        "The Interaction Design Foundation cites a practical floor of about 30 pixels and notes that Apple recommends at least 44 pixels.",
+        "Other guidance, such as WCAG target-size criteria, uses different measurements and contexts (accessibility topic's scope)."
+      ],
+      "resolution": "The lesson states the sizes as guidance from the cited source, with the Apple figure attributed, without asserting a single universal minimum."
+    },
+    {
+      "issue": "Is mobile-first unconditionally better across all devices?",
+      "positions": [
+        "Proponents argue that designing small first produces simpler, faster, more focused products for everyone.",
+        "NN/g research found that mobile-first patterns ported to the desktop (e.g., hidden navigation, search icons) were used less and degraded the desktop experience; each device should be optimized separately."
+      ],
+      "resolution": "The lesson presents mobile-first as a useful discipline with real benefits while including the honest framing that the desktop still needs its own design, citing NN/g."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's claim that mobile-first design is 'a foundational concept in Ux/Ui Design' with no working definition or attribution.",
+    "The draft's framing of the concept as a label that 'helps you choose the right tool for the problem', which states no mechanism, definition, or evidence.",
+    "The draft's worked example, which describes reading a scenario without teaching the mobile-first decision process."
+  ],
+  "correctionsNeeded": [
+    "Replaced generic draft boilerplate with a sourced working definition attributed to the Interaction Design Foundation and Luke Wroblewski.",
+    "Added the core argument (constraints force priorities) with an original bakery example.",
+    "Added the honest framing from NN/g that mobile-first is not mobile-only and that desktop layouts must be designed for their own strengths.",
+    "Added touch-target sizing guidance (IxDF: about 30px floor; Apple recommends at least 44px) and the one-thumb, one-handed framing of mobile use.",
+    "Scoped responsive design to a sibling reference and removed layout and accessibility content owned by other topics."
+  ],
+  "rightsIssues": [
+    "The IxDF topic page carries a CC BY-SA 4.0 notice; the lesson uses it as a reference for facts only and reproduces none of its prose, so no share-alike obligation is triggered by this lesson."
+  ],
+  "sourceRecords": [
+    {
+      "id": "ixdf-mobile-first",
+      "title": "What is Mobile First?",
+      "provider": "Interaction Design Foundation (IxDF)",
+      "url": "https://www.interaction-design.org/literature/topics/mobile-first",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B per subject source-map. Read live via curl with a browser user-agent on 2026-08-21. Supports: the working definition (start with the smallest device, progressively enhance for larger layouts); attribution of the approach to Luke Wroblewski's 2009 book Mobile First; the core argument that small screens force focus on essential content; the benefits (simplicity, performance/light pages and faster loads, focus); the mobile-first vs responsive distinction (starting point and priority); progressive enhancement (essential content first, enhanced version for capable devices); touch-target guidance (tap targets no smaller than about 30px; Apple recommends at least 44px); the one-thumb framing of mobile use. Facts synthesized into original prose; no source wording reproduced."
+    },
+    {
+      "id": "nng-mobile-first-not-mobile-only",
+      "title": "Mobile First Is NOT Mobile Only",
+      "provider": "Nielsen Norman Group (NN/g)",
+      "url": "https://www.nngroup.com/articles/mobile-first-not-mobile-only/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A per subject source-map (canonical industry reference). Read live via curl on 2026-08-21 (Raluca Budiu and Kara Pernice, published 2016-07-24). Supports: the description of mobile-first as starting with a design optimized for mobile and then moving to desktop; responsive design as keeping the same content and functionality across screen sizes with layouts rearranged to fit the available space; the finding that porting mobile patterns (hidden navigation, search icons) to the desktop degrades the desktop user experience (179-participant study of six sites); the guidance that different devices have different interaction capabilities and screen sizes and should each be optimized for their strengths; the framing that content and feature parity across devices does not require identical UI. Facts synthesized into original prose; no source wording reproduced."
+    }
+  ]
+}

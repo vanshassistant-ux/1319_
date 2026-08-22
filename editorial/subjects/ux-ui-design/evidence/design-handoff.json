@@ -1,0 +1,174 @@
+{
+ "topicId": "ux-ui-design:foundations:design-handoff",
+ "subjectId": "ux-ui-design",
+ "researchedAt": "2026-08-21",
+ "scope": {
+  "core": [
+   "working definition of a design handoff as the process of handing over a finished design for implementation, transferring the designer's intent, knowledge, and specifications (IxDF)",
+   "the handoff bridges a designer's vision and the final product built by developers; a poorly implemented design leads to a broken user experience (IxDF)",
+   "what a good handoff includes, each part named: final designs, specifications, assets, behavior notes, edge cases (colors/typography/layout, interactive states, form validations, error states, loading/empty states, animations, copy, flows, accessibility, responsive breakpoints per IxDF)",
+   "why handoffs fail: missing specifications, unstated assumptions, unclear interactions, and designing only for the ideal scenario (IxDF); miscommunication as the main cause of friction",
+   "the developer's role: implementation, feasibility review, questions, and feedback — the two-way nature of the exchange (IxDF)",
+   "handoff vs. handover of ownership: delivering the work vs. staying involved — the deliverable is transferred, the responsibility for the user experience is shared (IxDF, waterfall-to-agile history)",
+   "design systems and handoff: shared predefined components make handoffs smoother (IxDF; design-systems is a sibling topic, referenced only)",
+   "the honest framing: handoff is a collaboration, not a drop; the best designs survive contact with code"
+  ],
+  "supporting": [
+   "prototype specifications — a few lines of text next to a prototype describing ambiguous details such as font size, line spacing, click effects, and active/inactive element conditions — help developers, product managers, or clients understand a delivered design; they remove uncertainty, improve communication efficiency, act as external memory, and standardize designs (Nielsen Norman Group)",
+   "design handoffs originated in the Waterfall methodology as a one-time, clearly defined deliverable; in agile environments they are neither one-time nor fixed (IxDF)",
+   "who is involved: designers provide final assets and specifications; developers review feasibility and ask questions; product managers oversee; UX writers contribute content guidelines; QA verifies accuracy (IxDF)"
+  ],
+  "outOfScope": [
+   "design-systems — sibling topic (referenced only)",
+   "components — sibling topic (referenced only)",
+   "high-fidelity-prototypes — sibling topic (referenced only)",
+   "interaction-design — sibling topic (referenced only)",
+   "no design tools, software, or code — literacy level forbids tool tutorials (no Figma/Zeplin how-to)",
+   "no claim that any real product is 'good' or 'bad' design; all examples original"
+  ]
+ },
+ "claims": [
+  {
+   "claim": "Design handoff is the process of handing over a finished design for implementation; it involves transferring a designer's intent, knowledge and specifications for a design, and can include visual elements, user flows, interaction, animation, copy, responsive breakpoints, accessibility and data validations; it may also include problem statements and business logic — the 'why' behind the design (Interaction Design Foundation working definition).",
+   "claimType": "EVERGREEN",
+   "sourceIds": [
+    "ixdf-design-handoffs-topic",
+    "ixdf-smooth-design-handoff"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "The design handoff bridges a designer's vision and the final product built by software developers; a poorly implemented design leads to a broken user experience, and designers and developers are collectively responsible for delivering a good user experience (IxDF).",
+   "claimType": "EVERGREEN",
+   "sourceIds": [
+    "ixdf-design-handoffs-topic",
+    "ixdf-smooth-design-handoff"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "A complete handoff includes named contents: visual design elements (color palette, typography, layout, images, icons); interactive elements and their states (hover, disabled); form elements and data validations (minimum character counts, mandatory or optional fields, expected formats); error states (error-message style and placement, error pages); loading and empty states; animations; realistic copy; flows; accessibility information (tap target size, image alt text, keyboard focus states); and responsive design breakpoints (mobile, tablet, desktop) (IxDF).",
+   "claimType": "EVERGREEN",
+   "sourceIds": [
+    "ixdf-design-handoffs-topic"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "Prototype specifications — a few lines of text next to a prototype describing details that may be ambiguous, such as font size, line spacing, click effects, and the active or inactive conditions of UI elements — are used to help developers, product managers, or clients understand the prototype during delivery; they remove uncertainty about how the design works, improve communication efficiency, serve as a source of external memory for the team, and help standardize the team's designs (Nielsen Norman Group).",
+   "claimType": "EVERGREEN",
+   "sourceIds": [
+    "nng-prototype-specifications"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "The main cause of friction in design handoffs is miscommunication and a lack of knowledge of each other's work; one of the most common mistakes designers make is designing for the ideal scenario and skipping the not-so-ideal use cases — validation errors, error pages, alerts, loading states, empty states, and input/button/icon states (IxDF).",
+   "claimType": "EVERGREEN",
+   "sourceIds": [
+    "ixdf-smooth-design-handoff"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "Design handoffs originated in the Waterfall methodology, when the handoff was a one-time, clearly defined deliverable; in an agile work environment, design handoffs are neither one-time nor fixed — teams hand off incrementally (feature- or component-based), involve developers early, and maintain continuous feedback (IxDF).",
+   "claimType": "HISTORICAL",
+   "sourceIds": [
+    "ixdf-smooth-design-handoff",
+    "ixdf-design-handoffs-topic"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "If a design system is in place, handoffs become smoother since many components are predefined and agreed upon; design systems provide reusable components, standardize typography, colors, and spacing, improve collaboration, simplify updates, and support scalability (IxDF; design systems themselves are a sibling topic).",
+   "claimType": "EVERGREEN",
+   "sourceIds": [
+    "ixdf-design-handoffs-topic"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "Developers are active participants in the handoff: they review the design for feasibility, check technical requirements, ask questions, and ensure the design meets coding standards, while designers provide the final assets and specifications; both sides are collectively responsible for the outcome (IxDF).",
+   "claimType": "EVERGREEN",
+   "sourceIds": [
+    "ixdf-design-handoffs-topic"
+   ],
+   "status": "supported"
+  }
+ ],
+ "conflictingEvidence": [
+  {
+   "issue": "Tool-centric framing vs. method framing: IxDF's FAQ answers repeatedly cite specific tools (Figma, Zeplin, Storybook) as the way to create smooth handoffs, while this lesson's literacy level forbids tool tutorials.",
+   "positions": [
+    "IxDF FAQ: 'Using tools like Figma, Zeplin, or design system guidelines, teams can create smooth handoffs.'",
+    "Lesson constraint: no tool-specific workflows (no Figma/Zeplin how-to) — the method, not the tool, is the subject."
+   ],
+   "resolution": "The lesson treats tools as optional carriers of the same content (specs, assets, notes); what must be communicated — final designs, specifications, assets, behavior notes, edge cases — is tool-independent, and the lesson teaches that content without naming workflows."
+  },
+  {
+   "issue": "Single deliverable vs. ongoing process: IxDF notes the handoff originated in Waterfall as a one-time, clearly defined deliverable, while its own guidance describes incremental, continuous handoffs with early developer involvement in agile settings.",
+   "positions": [
+    "IxDF: 'The design handoff was a one-time, clearly-defined deliverable' (Waterfall origin).",
+    "IxDF: 'In an agile work environment, however, design handoffs are neither one-time, nor fixed'; handoffs can and often should be done incrementally."
+   ],
+   "resolution": "The lesson presents both: the deliverable (what is transferred — designs, specs, assets, notes) and the ongoing collaboration (how it happens — questions, feedback, reviews), and uses the distinction to separate handing over the work from handing over ownership."
+  }
+ ],
+ "unsupportedExistingClaims": [
+  "The generated draft's boilerplate ('Design Handoff is a foundational concept in Ux/Ui Design', 'a college-level explanation names the concept') is content-free and was discarded.",
+  "The generated draft's 'label on a toolbox drawer' analogy mischaracterizes the topic and was discarded.",
+  "The generated draft contained no working definition, no attributed sources, no named handoff contents, no failure analysis, and no honest framing; all substantive content was written fresh from research."
+ ],
+ "correctionsNeeded": [
+  "Replaced the draft's generic objectives with five objectives anchored to the working definition, the named handoff contents, the failure modes, the developer's role, and the handoff-versus-ownership distinction.",
+  "Added the honest framing that a handoff is a collaboration, not a drop — the best designs survive contact with code — which the draft omitted entirely.",
+  "Added the waterfall-to-agile history of the handoff (IxDF) so readers understand why the one-time drop is outdated and why staying involved matters.",
+  "Kept design systems, components, high-fidelity prototypes, and interaction design as referenced sibling topics only, with no duplication of their content.",
+  "All examples are original (Foxglove Books bookstore app, Courier & Co. delivery app, Mira and Theo) and none claim a real product is 'good' or 'bad' design."
+ ],
+ "rightsIssues": [],
+ "sourceRecords": [
+  {
+   "id": "nng-prototype-specifications",
+   "title": "Use Good Prototype Specifications to Empower Team Collaboration",
+   "provider": "Nielsen Norman Group (NN/g)",
+   "url": "https://www.nngroup.com/articles/prototype-specifications/",
+   "sourceType": "reference",
+   "usage": "REFERENCE_ONLY",
+   "license": "not stated on page",
+   "attributionRequired": true,
+   "aiIngestionChecked": true,
+   "aiIngestionAllowed": false,
+   "checkedAt": "2026-08-21",
+   "notes": "Tier A. Reused from the phase-2 source registry (identical URL); read live via curl on 2026-08-21 (HTTP 200). Article by Leeloo Tang and Feifei Liu, June 5, 2022. Supports: prototype specifications (also called prototype redlines or prototype annotations) as a few lines of text next to a prototype describing details that may be ambiguous, such as font size, line spacing, click effects, and active or inactive conditions of UI elements; their use to help developers, product managers, or clients understand prototypes during delivery; and their benefits — removing uncertainty, improving communication efficiency, fewer meetings and lower communication cost, serving as external memory, and standardizing designs. Used for verification and synthesis only; no prose reproduced."
+  },
+  {
+   "id": "ixdf-design-handoffs-topic",
+   "title": "What Are Design Handoffs? (Design Handoffs topic page)",
+   "provider": "Interaction Design Foundation (IxDF)",
+   "url": "https://www.interaction-design.org/literature/topics/design-handoff",
+   "sourceType": "reference",
+   "usage": "REFERENCE_ONLY",
+   "license": "CC BY-SA 3.0 (page footer)",
+   "attributionRequired": true,
+   "aiIngestionChecked": true,
+   "aiIngestionAllowed": false,
+   "checkedAt": "2026-08-21",
+   "notes": "Tier B. Read live via curl on 2026-08-21 (HTTP 200). Supports: the working definition (design handoff as the process of handing over a finished design for implementation, transferring the designer's intent, knowledge and specifications, including visual elements, user flows, interaction, animation, copy, responsive breakpoints, accessibility and data validations, plus problem statements and business logic); 'the design handoff bridges a designer's vision and the final product built by software developers'; the named contents of a complete handoff (visual design elements, interactive elements, form elements and data validations, error states, loading and empty states, animations, copy, flows, accessibility information, responsive breakpoints); why handoffs matter (preventing misunderstandings, improving efficiency, maintaining consistency, enabling collaboration, reducing rework); who is involved (designers, developers, product managers, UX writers, QA); the role of design systems ('if a design system is in place, handoffs become smoother since many components are predefined and agreed upon'); and incremental handoffs. Used for verification and synthesis only; no prose reproduced."
+  },
+  {
+   "id": "ixdf-smooth-design-handoff",
+   "title": "How to Ensure a Smooth Design Handoff",
+   "provider": "Interaction Design Foundation (IxDF)",
+   "url": "https://www.interaction-design.org/literature/article/how-to-ensure-a-smooth-design-handoff",
+   "sourceType": "reference",
+   "usage": "REFERENCE_ONLY",
+   "license": "CC BY-SA 4.0 (page footer)",
+   "attributionRequired": true,
+   "aiIngestionChecked": true,
+   "aiIngestionAllowed": false,
+   "checkedAt": "2026-08-21",
+   "notes": "Tier B. Read live via curl on 2026-08-21 (HTTP 200). Article by Kasturika (IxDF Library). Supports: the definition of design handoff as handing over a finished design for implementation with specifications (layouts, flows, colors, typography, icons and images, interaction, animation, copy, responsive breakpoints, accessibility, data validations); the Waterfall origin of the one-time handoff vs. agile's neither-one-time-nor-fixed handoffs; the main cause of friction as miscommunication and lack of knowledge of each other's work; common gaps (validation errors, error pages, alerts, loading states, empty states, input/button/icon states) arising from designing for the ideal scenario; developers and designers as collectively responsible for the user experience; involving developers early; and explaining the rationale behind design decisions so engineers can propose alternatives that solve the real problem. Used for verification and synthesis only; no prose reproduced."
+  }
+ ]
+}
