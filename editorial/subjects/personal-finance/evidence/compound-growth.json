@@ -1,0 +1,183 @@
+{
+  "topicId": "personal-finance:foundations:compound-growth",
+  "subjectId": "personal-finance",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "Working definition of compound growth: growth earned on both the original amount and previously earned growth (attributed to Investor.gov and CFPB)",
+      "The compounding engine: each period's growth joins the base for the next period, with the original $1,000 at 7% for 10 years worked example",
+      "The rule of 72: years to double approximately 72 divided by the annual rate, stated as an approximation",
+      "Starting early: small regular amounts grow large because time compounds them; original early-vs-late comparison",
+      "Compound growth and debt: the same engine grows unpaid balances (flip side); debt-management referenced as sibling topic only",
+      "Honest framing: compound growth rewards time and punishes delay; no guarantee of gains"
+    ],
+    "supporting": [
+      "Components of compounding: principal, rate, compounding frequency, time horizon (CFI)",
+      "Compounding frequency concept (yearly, monthly, quarterly) as one of the components",
+      "Rule of 72 accuracy caveat: an estimate, most accurate at moderate rates, for compound-interest situations (CFI)"
+    ],
+    "outOfScope": [
+      "Interest-rate mechanics, types, and interest theory — owned by the interest topic",
+      "Saving methods and vehicles — owned by the saving topic",
+      "Investing vehicles, markets, and risk — owned by the investing topic",
+      "Retirement accounts — owned by the retirement-accounts topic",
+      "Time-value-of-money and present/future value theory — owned by the finance subject"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Compound growth is growth earned on both the original amount and previously earned growth; Investor.gov defines compound interest as interest paid on principal and on accumulated interest.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "investor-gov-compound-interest",
+        "cfpb-compound-interest",
+        "cfi-compound-interest"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Interest is calculated on the principal plus previously accumulated interest, so a balance grows on its own (CFPB mechanics of interest-on-interest).",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "cfpb-compound-interest",
+        "cfi-compound-interest"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The four components of compounding are principal, interest rate, compounding frequency, and time horizon; the longer the time horizon, the more interest payments can be made and the larger the ending value.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "cfi-compound-interest"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The rule of 72 estimates the time it takes money to double by dividing 72 by the annual rate; it is a shortcut or back-of-the-envelope approximation, most accurate at lower/moderate rates, and applies to compound-interest situations rather than simple interest.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "cfi-rule-of-72"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Because each period's growth joins the base, earlier contributions compound for more periods; at a fixed rate, starting earlier can outgrow contributing more later.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "cfi-compound-interest",
+        "cfi-rule-of-72"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Compound growth applies to debt as well as savings: an unpaid balance grows on its own because growth is calculated on the amount owed plus accumulated growth.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "cfpb-compound-interest"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The mechanism of compounding is arithmetic: it requires a positive rate to grow, and does not guarantee gains; CFI's characterization of compound interest as 'essentially a risk-free way to generate gains' was not adopted.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "cfi-compound-interest",
+        "investor-gov-compound-interest"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "CFI describes compound interest as 'essentially a risk-free way to generate gains'.",
+      "positions": [
+        "CFI: compounding mechanism is relatively riskless compared with other investments",
+        "Honest framing: compounding is arithmetic that amplifies whatever rate applies; it does not guarantee gains, and unpaid debt compounds against the borrower"
+      ],
+      "resolution": "The lesson adopts the honest framing and does not repeat CFI's risk-free claim; the lesson states that a zero or negative rate changes the outcome and that the mechanism promises nothing."
+    },
+    {
+      "issue": "Precision of the rule of 72 at different rates.",
+      "positions": [
+        "Some sources present the rule as a quick estimate",
+        "CFI notes it is more accurate at lower rates"
+      ],
+      "resolution": "The lesson states the rule explicitly as an approximation and notes it is most accurate at moderate rates, so no false precision is implied."
+    },
+    {
+      "issue": "Naming: 'compound interest' versus 'compound growth'.",
+      "positions": [
+        "Investor.gov/CFPB/CFI use 'compound interest'",
+        "The personal-finance curriculum names the concept 'compound growth' because it applies to savings and debt alike"
+      ],
+      "resolution": "The lesson uses the curriculum name 'compound growth', attributes the underlying definition to Investor.gov and CFPB, and notes the interest topic owns interest mechanics."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's boilerplate (e.g., compound growth as 'a label on a toolbox drawer', 'students use concepts to organize information') contained no verifiable factual claims and was discarded as editorial intent only."
+  ],
+  "correctionsNeeded": [
+    "Replaced the machine-generated boilerplate draft with source-verified content.",
+    "Original worked example ($1,000 at 7% for 10 years) arithmetic verified by computation: final balance $1,967.15.",
+    "Original early-vs-late example (Priya vs Dana at 7%) arithmetic verified by computation: $80,237 vs $67,676 at age 60.",
+    "Original rule-of-72 applications verified: 72/7 about 10.3 years; 72/6 = 12 years; 72/24 = 3 years."
+  ],
+  "rightsIssues": [
+    "No rights issues: U.S. government sources (Investor.gov, CFPB) are public domain and used reference-only; CFI pages carry no explicit license and are used reference-only with facts restated in original prose."
+  ],
+  "sourceRecords": [
+    {
+      "id": "investor-gov-compound-interest",
+      "title": "Compound Interest (Investor.gov glossary)",
+      "provider": "U.S. Securities and Exchange Commission, Investor.gov",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/compound-interest",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "license": "U.S. federal government work (public domain)",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A (official U.S. securities regulator investor-education site). Fetched live, HTTP 200, on 2026-08-21. Supports the working definition: compound interest is interest paid on principal and on accumulated interest. Used as Tier A corroboration of the definition; facts restated in original prose."
+    },
+    {
+      "id": "cfpb-compound-interest",
+      "title": "How does compound interest work? (Ask CFPB)",
+      "provider": "Consumer Financial Protection Bureau (CFPB)",
+      "url": "https://www.consumerfinance.gov/ask-cfpb/how-does-compound-interest-work-en-1683/",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A. Live host returned an error on direct fetch 2026-08-21; slug verified via the Internet Archive CDX index (captures 2023-2025) and content read via a Wayback capture, matching the registry note. Supports the mechanics of interest-on-interest: interest is calculated on the principal plus previously accumulated interest, so an unpaid balance grows on its own — the debt flip side."
+    },
+    {
+      "id": "cfi-compound-interest",
+      "title": "Compound Interest (Corporate Finance Institute)",
+      "provider": "Corporate Finance Institute (CFI)",
+      "url": "https://corporatefinanceinstitute.com/resources/wealth-management/compound-interest/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B (reputable secondary). Read live via HTTP on 2026-08-21. Supports: compound interest as interest on interest with payments based on the changing balance each period; the four components — principal, interest rate, compounding frequency (typically monthly, quarterly, or annual), and time horizon; the longer the time horizon, the larger the ending value. CFI's 'essentially risk-free' framing was deliberately not used. Facts restated in original prose."
+    },
+    {
+      "id": "cfi-rule-of-72",
+      "title": "Rule of 72 (Corporate Finance Institute)",
+      "provider": "Corporate Finance Institute (CFI)",
+      "url": "https://corporatefinanceinstitute.com/resources/wealth-management/rule-of-72/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B (reputable secondary). New id minted for this topic (no existing registry record). Read live via HTTP on 2026-08-21. Supports: the rule of 72 as a formula estimating the time for an investment to double at a fixed annual rate; the calculation is dividing 72 by the annual rate; it is a shortcut/back-of-the-envelope estimate, fairly accurate and more so at lower rates; it applies to compound-interest situations, not simple interest. Facts restated in original prose."
+    }
+  ]
+}
