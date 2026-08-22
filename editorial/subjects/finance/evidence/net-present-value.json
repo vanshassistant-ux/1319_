@@ -1,0 +1,179 @@
+{
+  "topicId": "finance:foundations:net-present-value",
+  "subjectId": "finance",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "the working definition of NPV: the present value of a project's expected future cash inflows minus its cost today (attributed to OpenStax/Investopedia/CFI)",
+      "the decision rule: accept when NPV is positive, reject when negative",
+      "the mechanics: each future cash flow discounted back to today, then the upfront cost subtracted, with original arithmetic",
+      "the discount rate as the hurdle: firms discount at their cost of capital (sibling topic, reference only)",
+      "why NPV matters: it compares projects of different sizes and timings fairly on one today-dollar scale",
+      "the limits: the answer is only as good as the cash-flow estimates and assumptions",
+      "the honest framing: NPV is the discipline of asking what the future is worth today"
+    ],
+    "supporting": [
+      "NPV as a time value of money problem (OpenStax 16.2)",
+      "the two reasons cash flows are discounted: time value of money and risk (CFI)",
+      "a positive NPV adds value while a negative NPV destroys value even with accounting profit (CFI)",
+      "CFI's drawbacks list and Investopedia's limitations list for the limits section",
+      "original worked example: $1,000 machine, $550 per year for two years, 10% discount rate"
+    ],
+    "outOfScope": [
+      "present-value mechanics for a single lump sum (sibling topic: finance:foundations:present-value)",
+      "internal rate of return and NPV/IRR ranking conflicts (sibling topic: finance:foundations:internal-rate-of-return)",
+      "cost-of-capital definition and calculation, including WACC (sibling topic: finance:foundations:cost-of-capital)",
+      "the capital budgeting process and its other evaluation tools (sibling topic: finance:foundations:capital-budgeting)",
+      "discounted cash flow valuation of entire businesses (CFI's business-valuation application, beyond this literacy level)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Working definition: net present value is the difference between the present value of a project's expected cash inflows and the present value of its cash outflows (OpenStax 16.2; Investopedia); CFI frames it as the value of all future cash flows over the entire life of an investment discounted to the present. This lesson's working definition: the present value of a project's expected future cash inflows minus its cost today.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-principles-finance-16-2",
+        "investopedia-npv",
+        "cfi-net-present-value"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The upfront cost is part of the calculation: the initial investment is a cash outflow at time zero \u2014 the purchase price paid today \u2014 subtracted from the discounted inflows, not added to them (CFI's formula; OpenStax's NPV = PV inflows \u2212 PV outflows with the year-zero outflow in the Sam's Sporting Goods example).",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "cfi-net-present-value",
+        "openstax-principles-finance-16-2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Decision rule: projects with a positive NPV should be accepted and projects with a negative NPV should be rejected (OpenStax); positive-NPV projects are worth undertaking and negative-NPV ones are not (Investopedia); a positive NPV creates value while a negative NPV destroys value (CFI).",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-principles-finance-16-2",
+        "investopedia-npv",
+        "cfi-net-present-value"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Mechanics: calculating NPV is a time value of money problem in which each future cash flow is discounted back to its present value and the initial outflow is then subtracted (OpenStax); CFI's formula discounts each period's cash flow at the discount rate and subtracts the time-zero outflow.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-principles-finance-16-2",
+        "cfi-net-present-value"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The discount rate acts as the hurdle: CFI calls it the required rate of return or hurdle rate and discounts project cash flows at the firm's WACC or the appropriate hurdle rate; Investopedia says the discount rate may be a hurdle rate based on a company's cost of capital; OpenStax uses the firm's cost of funds as the discount rate in its worked example.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "cfi-net-present-value",
+        "investopedia-npv",
+        "openstax-principles-finance-16-2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Cash flows are discounted for two reasons: the time value of money \u2014 money is more valuable the sooner it is received because it can be invested and earn a return (CFI) \u2014 and risk, with riskier investments receiving higher discount rates (CFI; OpenStax notes the discount rate can be adjusted for the riskiness of a project's cash flows).",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "cfi-net-present-value",
+        "openstax-principles-finance-16-2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "NPV makes projects comparable: it accounts for the timing of each cash flow, which can have a large impact on present value (CFI), and it can be used to compare different projects (Investopedia), putting projects of different sizes and timings on a common today-dollar scale.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "cfi-net-present-value",
+        "investopedia-npv"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Limits: NPV relies on a long list of assumptions, is sensitive to small changes in them, can be manipulated to produce a desired output, and assumes a constant discount rate over time (CFI); it relies heavily on inputs, estimates, and long-term projections (Investopedia); and it can be difficult for a non-finance audience and problematic when capital is limited (OpenStax).",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "cfi-net-present-value",
+        "investopedia-npv",
+        "openstax-principles-finance-16-2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A negative-NPV project may still show accounting profit, but because its expected return is below the discount rate it is considered to destroy value (CFI).",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "cfi-net-present-value"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Does NPV account for project size?",
+      "positions": [
+        "Investopedia lists as a con that NPV does not consider project size or return on investment \u2014 it measures total value added, not value per dollar invested.",
+        "CFI and OpenStax treat NPV as the standard value-added measure, and Investopedia itself notes NPV can be used to compare different projects."
+      ],
+      "resolution": "The lesson states that NPV puts projects of different sizes and timings on a common today-dollar scale, and honestly notes in the limits that it measures total value, not efficiency per dollar invested."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's boilerplate that net present value 'is a foundational concept in Finance' used mainly as 'a building block' for later coursework \u2014 no source support.",
+    "The generated draft's vocabulary treating 'context', 'evidence', and 'application' as key net present value terms \u2014 generic, not topic-specific.",
+    "The generated draft's objective to 'apply net present value to a simple scenario' without any worked arithmetic \u2014 replaced by a full discount-and-subtract example."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire machine-generated draft with a source-verified lesson: working definition attributed to OpenStax 16.2 / Investopedia / CFI, the accept-reject decision rule, the discount-then-subtract mechanics with original arithmetic ($1,000 machine at 10%), the hurdle-rate framing, the fair-comparison argument, and the estimates-only-as-good limits note.",
+    "Added a fully worked original example with step-by-step arithmetic; the draft had none.",
+    "Rebuilt vocabulary around actual NPV terms (discounting, discount rate, upfront cost, hurdle rate, cost of capital); removed boilerplate terms.",
+    "Added the honest framing \u2014 NPV as the discipline of asking what the future is worth today \u2014 which the draft omitted."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "openstax-principles-finance-16-2",
+      "title": "Principles of Finance, Section 16.2: Net Present Value (NPV) Method",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/principles-finance/pages/16-2-net-present-value-npv-method",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A. Read via Internet Archive capture (2024-02-08) because openstax.org blocks direct fetch. Supports: NPV as the difference between the present value of cash inflows and the present value of cash outflows; the equation NPV = PV cash inflows - PV cash outflows; positive NPV projects should be accepted and negative ones rejected; calculating NPV as a time value of money problem in which each cash flow is discounted back to present value; the firm's cost of funds (9% in the worked example) as the discount rate; spending money today in the hopes of making more money in the future; the discount rate adjustable for the riskiness of a project's cash flows; disadvantages including difficulty for non-finance audiences and problems when capital is limited."
+    },
+    {
+      "id": "cfi-net-present-value",
+      "title": "Net Present Value (NPV) - Definition, Examples, How to Do NPV Analysis",
+      "provider": "Corporate Finance Institute (CFI)",
+      "url": "https://corporatefinanceinstitute.com/resources/valuation/net-present-value-npv/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. New source id minted (no existing registry record for this URL). Read live via HTTP on 2026-08-21. Supports: NPV as the value of all future cash flows over the entire life of an investment discounted to the present; the formula with cash outflow at time zero (purchase price / initial investment); negative NPV means expected return below the discount rate (required rate of return / hurdle rate) and destroys value, positive NPV creates value; cash flows discounted for the time value of money and for risk, with riskier investments receiving higher discount rates; project cash flows discounted at the firm's WACC or the appropriate hurdle rate; drawbacks: a long list of assumptions, sensitivity to small changes in assumptions, manipulability, and an assumed constant discount rate."
+    },
+    {
+      "id": "investopedia-npv",
+      "title": "Net Present Value (NPV): What It Means and Steps to Calculate It",
+      "provider": "Investopedia",
+      "url": "https://www.investopedia.com/terms/n/npv.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. New source id minted (no existing registry record for this URL). Read via Internet Archive capture (2025-02-26) because investopedia.com is JS-walled. Supports: NPV as the difference between the present value of cash inflows and the present value of cash outflows over a period of time; projects with a positive NPV are worth undertaking, negative NPV ones are not; NPV accounts for the time value of money and can be used to compare different projects; the discount rate may be a hurdle rate for a project based on a company's cost of capital, such as WACC; limitations: relies heavily on inputs, estimates, and long-term projections, and does not consider project size or ROI."
+    }
+  ]
+}

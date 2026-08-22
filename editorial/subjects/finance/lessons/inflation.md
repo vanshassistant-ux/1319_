@@ -1,0 +1,162 @@
+# Inflation
+
+## In 30 Seconds
+
+Inflation is a general rise in the average level of prices over time. When prices rise, each dollar buys less — purchasing power falls. Economists measure it as the rate of change in prices, tracked by indexes like the Consumer Price Index. The main drivers are strong demand, rising production costs, and expectations that prices will keep climbing. Inflation quietly erodes savings and fixed incomes while shrinking the real burden of debts, so finance adjusts rates, returns, and long-term plans for it.
+
+## Why This Matters
+
+Inflation sits underneath almost every money decision: what a salary is worth, what a savings account really earns, whether a loan is cheap or dear, and how much retirement will need. Without it, the numbers in finance are misleading — a return that ignores inflation can look healthy while buying power quietly shrinks. Learning to see inflation teaches you to read prices honestly, to tell nominal promises from real results, and to plan for a future in which a dollar will not buy what it buys today. It also connects personal money to the wider economy, where inflation is one of the headline measures of how an economy is doing.
+
+## Learning Objectives
+
+- Define inflation as a general rise in the average level of prices that reduces what money can buy.
+- Explain how inflation is measured as the rate of change in prices, naming the Consumer Price Index as the commonly used gauge.
+- Describe the three main drivers of inflation — demand, production costs, and expectations — factually, without policy positions.
+- Distinguish who inflation typically hurts (savers and people on fixed incomes) from who it can help (borrowers), with an original example.
+- Distinguish nominal amounts, stated before adjusting for inflation, from real amounts, restated after removing its effect.
+- Explain why financial rates, returns, and long-term plans must account for inflation.
+
+## The College Version
+
+### What inflation is
+
+Inflation is a general rise in the average level of prices over time. OpenStax's Introduction to Business puts it plainly: inflation is the situation in which the average of all prices of goods and services is rising. CFI describes it as an increase in the price level over a specified period, so the currency loses purchasing power — less can be bought with the same amount of money. Investopedia frames the same idea as a gradual loss of purchasing power reflected in a broad rise in prices for goods and services. Three sources, one core idea: not a single product getting more expensive, but prices across the economy drifting upward on average. Individual prices can fall while inflation is positive — electronics often do — and what matters for purchasing power is the general drift. That is the working definition this lesson uses.
+
+### How inflation is measured
+
+Economists measure inflation as the rate of change in prices over a period, usually a year. The most widely cited gauge in the United States is the Consumer Price Index. The Bureau of Labor Statistics defines the CPI as a measure of the average change over time in the prices paid by urban consumers for a market basket of consumer goods and services. CFI notes that changes in the CPI are commonly used as a proxy for inflation, Investopedia adds that the rate is the average price increase of a basket of goods over one year. The idea is simple: compare what the basket costs now with what it cost a year ago, and the percentage change is the inflation rate. This lesson names the measure without quoting a live number. Original example: if a basket of groceries cost $100 a year ago and $104 now, the inflation rate over that year was about 4%.
+
+### What causes inflation
+
+Three drivers are standard in economics teaching. Demand-pull inflation happens when demand for goods and services grows faster than supply. OpenStax describes buyers with more money to spend than the goods available, pulling prices up — too much money chasing too few goods. Cost-push inflation happens when production costs rise, such as materials and wages; those higher costs push up the prices of final goods and services. Expectations are the third driver: when people expect prices to keep rising, they act on that belief. Investopedia explains that workers may demand higher wages to maintain their standard of living, and those wage increases feed back into higher prices — a self-reinforcing loop. OpenStax notes the same behavior on the buyer side: people speed up planned purchases before prices rise further. These three are taught here as facts of how inflation commonly arises; no policy position is attached.
+
+### Who inflation hurts and who it helps
+
+The general pattern: inflation erodes the value of money that is sitting still, and it shrinks the real size of debts. Investopedia states it directly — higher inflation harms savers because it erodes the purchasing power of the money they have saved, and it can benefit borrowers because the inflation-adjusted value of their outstanding debts shrinks over time. People on fixed incomes feel the saver side most sharply: if a pension or salary does not rise with prices, the same amount buys less each year. Original example: Rosa receives a fixed pension of $1,600 a month. Over a year of rising prices, the same groceries and rent cost more, so her $1,600 buys a little less each month. Her neighbor Marco owes $12,000 on a fixed-rate van loan; as prices rise, the dollars he repays carry less buying power than the dollars he borrowed, so his debt is lighter in real terms. Same inflation, opposite experience.
+
+### Real versus nominal
+
+Finance separates amounts into nominal and real. A nominal amount is stated in the prices of its own time — the dollar number on a paycheck or a price tag, before any adjustment. A real amount is restated after removing inflation's effect, so it reflects what the money can actually buy. OpenStax applies the idea to national output: real GDP is GDP adjusted for inflation, which lets economists compare production across years honestly. Original example: a salary of $50,000 this year and a salary of $50,000 five years from now are the same nominal number, but if prices have risen in between, the later $50,000 is a smaller real amount — it buys less. The distinction is simple to hold onto: nominal is before inflation, real is after. This lesson needs no formula depth to make that point stick.
+
+### Inflation and finance
+
+Inflation is woven into financial life: rates, returns, and long-term plans all adjust for it. OpenStax's Principles of Finance notes that inflation is an important macroeconomic variable that influences prices, and that firms building financial and operating plans must consider inflation when estimating labor, materials, and the cost of borrowing. A rate or return that ignores inflation overstates what you keep; a plan that ignores inflation understates what the future will cost. Inflation is also a headline economic measure with official weight: the Federal Reserve states that its monetary policy goals, assigned by Congress, include stable prices — the long-run counterpart to low, steady inflation. The mechanics of how interest rates respond belong to a sibling topic (interest rates); this lesson's point is the connection: every number in finance means more once inflation is accounted for, and less when it is ignored.
+
+## Key Vocabulary
+
+- Inflation — A general rise in the average level of prices over time, so that a given amount of money buys less.
+- Purchasing power — What a given amount of money can buy; it falls when prices rise and rises when prices fall.
+- Inflation rate — The rate of change in the average price level over a period, usually one year.
+- Consumer Price Index (CPI) — A widely used measure of the average change over time in the prices paid by urban consumers for a typical market basket of goods and services.
+- Demand-pull inflation — A rise in prices driven by demand for goods and services growing faster than supply.
+- Cost-push inflation — A rise in prices driven by increases in production costs, such as materials and wages.
+- Nominal amount — A dollar figure stated in the prices of its own time, before any adjustment for inflation.
+- Real amount — A dollar figure restated after removing the effect of inflation, so it reflects buying power.
+
+## Eli-10
+
+Inflation is the slow leak in the value of money. The bills in your wallet keep their numbers, but what those numbers can buy shrinks a little each year. It is not one store raising one price; it is the general drift of price tags across the whole economy, like a tide that lifts every boat in the harbor. Because the rise is gradual, inflation is easy to miss in a single shopping trip and easy to feel over a decade. Three things feed the leak: buyers wanting more than the shelves hold, sellers facing higher costs, and everyone expecting prices to keep climbing — expectations can keep inflation going on their own. And the leak is selective: it drains the pockets of savers and people on fixed incomes, while making debts easier to repay in real terms.
+
+## Eli's Analogy
+
+Imagine you keep your savings in a glass jar with a label that says what the money is for: "summer trip." Inflation is a tiny crack in the jar. The dollar bills inside stay exactly the same — nothing is stolen, nothing disappears — but every year a little of the trip leaks out. The label quietly changes: first "summer trip," then "long weekend trip," then "tank of gas and a nice dinner." You did nothing wrong, and yet the jar holds less of what you wanted. That is the honest way to feel inflation: money does not vanish; its power to get you what you want slowly drains away.
+
+**Where the analogy breaks down:** Inflation does not physically drain money — prices rise, money is not destroyed, and some people end up ahead: borrowers repay with cheaper dollars, and wages sometimes rise faster than prices. The jar also leaks at different rates for different people, depending on what they buy and how their income moves. And a crack in a jar is passive, while inflation is partly driven by expectations — believing prices will rise can help make them rise.
+
+## Worked Example
+
+Rosa and Marco, neighbors, live through the same year of steady inflation. Rosa's grocery budget is $120 a week. By the end of the year the same basket of food costs about 4% more, so $120 buys a slightly smaller basket; she either trims her list or adds cash, and over several years the squeeze builds up. Marco borrowed $10,000 last year for a used van, at a fixed monthly payment. As prices rise, the dollars he repays have less buying power than the dollars he borrowed, so the real weight of his debt falls. Neither number changed — Rosa still spends $120, Marco still owes the same amount — but inflation moved the meaning of both.
+
+## Common Mistakes
+
+- **Mistake:** Treating inflation as a rise in every single price.
+  **Correction:** Inflation is about the average. Some prices can fall — electronics often do — while the overall level still rises. What matters for purchasing power is the general drift, not any one price tag.
+- **Mistake:** Thinking inflation only matters when it is high.
+  **Correction:** Even low, steady inflation erodes buying power year after year. On a fixed income, 3% inflation means the same income buys roughly 3% less every year — the effect is slow but cumulative.
+- **Mistake:** Judging a savings return by its stated percentage alone.
+  **Correction:** The stated percentage is nominal. If a savings account pays 2% while prices rise 3%, the money grows in number but shrinks in buying power — the real result is negative. Always ask what is left after inflation.
+- **Mistake:** Blaming inflation on a single cause, such as government printing.
+  **Correction:** Demand, production costs, and expectations are all standard drivers, and economists debate the short-run causes. Treat single-cause explanations as incomplete.
+
+## Compare / Contrast
+
+- **Nominal amount** versus **real amount**: A nominal amount is the dollar figure of its own time, before adjustment; a real amount is restated after removing inflation, so it reflects what the money actually buys.
+- **Saver holding cash** versus **borrower with fixed-rate debt**: Inflation erodes the purchasing power of cash sitting still, so savers lose buying power; it also shrinks the real value of fixed debt, so borrowers repay with dollars that buy less than the ones they received.
+- **Inflation** versus **deflation**: Inflation is a general rise in the average level of prices; deflation is a general fall. The same purchasing-power logic runs in reverse — under deflation, money buys more over time.
+
+## Key Takeaway
+
+Inflation is the quiet tax on holding money: prices drift upward, and any dollar that just sits there buys less over time. Rates, returns, and plans tell the truth only after inflation is accounted for.
+
+## Practice Question Bank
+
+**1. What does inflation mean?**
+
+- A. A rise in the price of a single popular product
+- B. A fall in the average level of prices over time
+- C. A general rise in the average level of prices over time, which reduces what money buys
+- D. An increase in the number of goods a dollar can buy
+
+**Answer: C.** Inflation is a general rise in the average level of prices; the other options describe a single price change, falling prices, or a stronger dollar.
+
+**2. Nia's fixed pension buys less each year even though the dollar amount never changes. What is the best explanation?**
+
+- A. Inflation has reduced the purchasing power of her fixed income
+- B. Her pension has grown in real terms
+- C. The prices of the goods she buys have fallen
+- D. The dollar is worth more than it used to be
+
+**Answer: A.** When prices rise and income does not, the same amount buys less — purchasing power falls. The other options describe outcomes that would mean her money buys more.
+
+**3. Which of these is a recognized driver of inflation?**
+
+- A. A decline in consumer demand for goods and services
+- B. Falling production costs, such as cheaper materials
+- C. Expectations that prices will fall next year
+- D. Expectations that prices will keep rising
+
+**Answer: D.** Expectations that prices will keep rising can feed inflation, as workers demand higher wages and buyers spend sooner. The other options describe forces that tend to push prices down.
+
+**4. Rosa keeps $5,000 in cash in a drawer; Marco borrowed $5,000 at a fixed rate. Both live through a period of rising inflation. What is the general pattern?**
+
+- A. Rosa's buying power grows while Marco's debt grows in real terms
+- B. Rosa's cash loses buying power while Marco's debt becomes lighter in real terms
+- C. Neither is affected, because the dollar amounts never change
+- D. Both lose exactly the same amount of buying power
+
+**Answer: B.** Inflation erodes the purchasing power of cash sitting still and shrinks the real value of fixed-rate debt, so the two experiences move in opposite directions.
+
+**5. A news report says the Consumer Price Index rose 3% over the past year. What does that tell you?**
+
+- A. Every individual product's price rose by exactly 3%
+- B. The dollar now buys more than it did a year ago
+- C. Inflation over the past year was zero
+- D. The average price level rose about 3%, so a dollar buys less than a year ago
+
+**Answer: D.** The CPI tracks the average change in prices of a market basket; a 3% rise means the average level rose, not that every price moved by that amount.
+
+## Sources
+
+- openstax-intro-business-1-4 — OpenStax, Rice University: Introduction to Business, Section 1.4, Macroeconomics: The Big Picture
+- openstax-principles-finance-1-6 — OpenStax, Rice University: Principles of Finance, Section 1.6, Microeconomic and Macroeconomic Matters
+- federal-reserve-monetary-policy — Federal Reserve Board: Monetary Policy
+- bls-cpi — U.S. Bureau of Labor Statistics: Consumer Price Index (CPI)
+- cfi-inflation — Corporate Finance Institute: Inflation — Overview, How to Calculate, Effects
+- investopedia-inflation — Investopedia: Inflation: What It Is and How to Control Inflation Rates
+
+## Related Topics
+
+- finance:foundations:interest-rates
+- finance:foundations:time-value-of-money
+- finance:foundations:return
+- finance:foundations:risk
+- finance:foundations:financial-markets
+
+## Editorial Metadata
+
+- Topic ID: finance:foundations:inflation
+- Subject: finance, Unit: foundations
+- Editorial Status: READY_TO_PUBLISH
+- Researched: 2026-08-21
+- Source records: 6, all reference-only; no source prose adapted.
