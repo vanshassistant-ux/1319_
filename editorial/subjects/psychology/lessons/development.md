@@ -1,0 +1,156 @@
+# Development
+
+## In 30 Seconds
+
+Developmental psychology is the branch of psychology that studies how people change from conception to old age. Change runs on three tracks at once: physical (the body and brain), cognitive (thinking and learning), and social-emotional (feelings and relationships). Two big questions organize the field: whether genes or environment matter more, and whether change is gradual or comes in stages. A few periods in life matter more than others, but development never stops. It is the lifelong story of becoming.
+
+## Why This Matters
+
+Development is the most personal subject in psychology: it is the study of how you got here and where you are going. It matters academically because later topics, from learning and memory to personality and social behavior, all build on how people change. It matters practically because any work with people, from teaching to nursing to parenting, runs on a sense of what is typical at a given age, and on knowing that growth does not end at eighteen. And it matters honestly: development is lifelong, and no single factor decides it, so the story of a person is never finished being written.
+
+## Learning Objectives
+
+- Define developmental psychology as the scientific study of how people change across the lifespan, using the working definition.
+- Name the three domains of development and give an original example of each.
+- Explain the nature-versus-nurture question and why psychologists treat genes and environment as interacting rather than competing.
+- Distinguish continuous from stage-like (discontinuous) views of development, with an original example.
+- Identify the one-line core idea of the developmental theories of Piaget, Erikson, and Vygotsky.
+- Explain what a sensitive period is and why learning outside it is harder but not impossible.
+
+## The College Version
+
+### What developmental psychology is
+
+The working definition comes from the APA Dictionary of Psychology: developmental psychology is the branch of psychology that studies the changes, physical, mental, and behavioral, that occur from conception to old age, and investigates the biological, genetic, psychological, social, cultural, and environmental factors that affect development throughout the lifespan. OpenStax Psychology 2e agrees: developmental psychologists study how humans change and grow from conception through childhood, adolescence, adulthood, and death, viewing development as a lifelong process. One detail is worth pausing on: the field began in the late 1800s focused on infants, children, and adolescents, and only later, starting in the 1920s, broadened to include adult development and aging. Even the discipline's own history had to learn that development does not stop at childhood.
+
+### The three domains
+
+Developmental psychologists study change on three tracks at once. Physical development involves growth and changes in the body and brain, the senses, motor skills, and health and wellness. Original example: a baby's hand learns to close around a spoon, a teenager's legs grow inches in a single year, and an older adult's daily stretching keeps balance steady. Cognitive development involves the growth and maturation of thinking processes, including perceiving, remembering, concept formation, problem solving, imagining, and reasoning. Original example: a preschooler counts on her fingers, a college student follows a five-step argument, and a forty-year-old learns to play chess for the first time. Social-emotional development, which OpenStax calls psychosocial development, involves emotions, personality, and social relationships. Original example: a toddler plays her first shared game in the sandbox, an adolescent's friendships become her sounding board, and two adults build a partnership over decades.
+
+### The big questions
+
+Two questions have organized the field for over a century. The first is nature versus nurture. The APA Dictionary defines it as the dispute over the relative contributions of hereditary and constitutional factors (nature) and environmental factors (nurture). Nativists emphasize heredity; environmentalists emphasize family, culture, and economics. The APA entry adds the modern resolution: most scientists now accept a close interaction between hereditary and environmental factors, and OpenStax agrees, describing a reciprocal interaction. Original example: two siblings at the same kitchen table, one bold from birth, one cautious, show both sides at work: genes set the starting temperament, and shared experience shapes how each one practices it. The second question is continuity versus stages. The APA Dictionary defines it as the scientific debate over whether developmental change is gradual (continuous) or relatively abrupt (discontinuous). OpenStax spells out the two pictures: continuous development is a cumulative process that gradually improves existing skills, like a child adding inches of height year by year; discontinuous development takes place in unique stages at specific times or ages, with change arriving more suddenly, like an infant's first grasp of a hidden object's existence. Original example: a child's height creeps up smoothly, but her first word appears overnight, and her leap from counting on fingers to mental arithmetic feels like a switch flipped.
+
+### Three theorists, one line each
+
+Three names anchor the field; each earns one line here. Jean Piaget proposed that children's thinking develops through a fixed sequence of stages, because children do not think and reason like adults; his theory of cognitive development is a stage theory of how the mind grows. Erik Erikson proposed that social development runs across the whole lifespan in eight stages, each built around a task such as trust versus mistrust in infancy, so personality keeps developing into late adulthood. Lev Vygotsky proposed a sociocultural theory: human development is rooted in one's culture, and a child's social world forms the basis for the formation of language and thought. Piaget looked inside the child's mind, Erikson at social tasks across a lifetime, Vygotsky at the culture around the child; enough to hold them apart without going deeper.
+
+### Sensitive periods: some windows matter more
+
+Some stretches of development matter more than others. The APA Dictionary defines a sensitive period as a stage in development when an organism can most rapidly acquire a particular skill or characteristic. The key word is rapidly. A sensitive period is not a lock: the APA entry notes that lacking growth-dependent experiences during a sensitive period does not permanently and irreversibly affect development, as it would during a critical period, but rather makes the acquisition process outside the period more difficult. Original example: a child who hears her grandmother's tonal language daily absorbs its pitch patterns almost effortlessly, while a college student meeting the same sounds must drill them one by one; the window made the first path easy, and the second merely harder, not closed. Sensitive periods explain why timing matters in development, without turning timing into a deadline.
+
+### The honest note: development is the story of becoming
+
+The most common misunderstanding is that development is childhood. It is not. OpenStax states plainly that developmental psychologists view development as a lifelong process, and the APA Dictionary notes the field broadened to account for adult development and aging. Erikson's stages run from infancy to late adulthood, each with its own task. Development is not a checklist you pass in the first two decades; it is the ongoing story of becoming, written from conception to old age. A forty-five-year-old who takes up distance running, a sixty-year-old who learns to video-call her grandchildren, a seventy-year-old who joins a book club and discovers a taste for history: these are developmental changes in the full sense of the term. The person you are at twenty is not the person you are at fifty, and that is not a failure of development. It is development.
+
+## Key Vocabulary
+
+- **developmental psychology** — The branch of psychology that studies the changes, physical, mental, and behavioral, that occur from conception to old age, and the factors that affect development throughout the lifespan.
+- **physical development** — Growth and changes in the body and brain, including the senses, motor skills, and health and wellness.
+- **cognitive development** — The growth and maturation of thinking processes, including perceiving, remembering, concept formation, problem solving, and reasoning.
+- **social-emotional development** — Changes in emotions, personality, and social relationships across the lifespan; OpenStax Psychology 2e calls this domain psychosocial development.
+- **nature versus nurture** — The long-running question of how much of development comes from heredity and biology (nature) versus environment and culture (nurture); researchers now treat the two as closely interacting.
+- **continuity versus discontinuity** — The scientific debate over whether developmental change is gradual and cumulative (continuous) or relatively abrupt and stage-like (discontinuous).
+- **sensitive period** — A stage in development when a particular skill or characteristic can be acquired most rapidly; learning outside the period is harder but not impossible.
+- **lifespan** — The full span of a human life from conception to old age, the scope that developmental psychologists study.
+
+## Eli-10
+
+**Simplified explanation.** Development is the study of how people change, not just in childhood but from the start of life to its end. The change runs on three tracks at once: your body, your thinking, and your feelings and relationships. Psychologists argue about two big things: whether genes or experiences matter more, and whether change creeps along smoothly or arrives in leaps. Piaget, Erikson, and Vygotsky each gave a different lens, stages of thinking, stages of social tasks, and culture as the engine. Some periods of life matter more than others, but no window slams shut: development is the lifelong story of becoming.
+
+**Where the analogy breaks down.** A city's growth is planned by officials working from budgets, while development has no single planner, genes and experience interact without a blueprint. A city can demolish old buildings and start over, but a person carries early experience forward instead of discarding it. And a building boom follows money and policy, while a sensitive period follows biology and timing.
+
+## Eli's Analogy
+
+Think of a city that never stops building. New streets appear, which is physical growth; the transit map gets redrawn, which is cognitive growth; and neighborhoods form new ties, which is social-emotional growth, all at once, from founding to old age. Some decades are building booms when one skill comes together quickly, but construction never ends.
+
+## Worked Example
+
+Maya played violin as a child and stopped at sixteen. At sixty-two, retired, she joins a community orchestra's cello section. The first months are hard: her fingers ache during practice (physical development), reading bass clef feels like learning a new language (cognitive development), and she nearly quits before the cellist beside her shows her a fingering trick, and the friendship keeps her showing up (social-emotional development). A year later she plays her first concert. None of this contradicts her age; it confirms the lesson. Some skills came faster when she was young, a sensitive period at work, but nothing closed. The story of becoming kept going, and at sixty-three it added a cello.
+
+## Common Mistakes
+
+- **"Development means childhood; after that, people just age."** — Developmental psychologists study the whole lifespan, from conception to old age. OpenStax describes development as a lifelong process, and Erikson's stages run into late adulthood, so growth continues long after childhood.
+- **"Nature and nurture are rival answers, so you have to pick one."** — The APA Dictionary notes that most scientists now accept a close interaction between hereditary and environmental factors, and OpenStax describes the two as reciprocal. The interesting questions are about how they interact, not which one wins.
+- **"A sensitive period is a deadline: miss it and the skill is lost forever."** — A sensitive period is when a skill is acquired most rapidly. The APA Dictionary is explicit that missing it makes acquisition more difficult, not impossible, which is what separates a sensitive period from the stricter critical period.
+- **"Real development always comes in stages; gradual change does not count."** — Continuity and discontinuity are both descriptions of observed change, and theorists debate which dominates. Gradual cumulative change, like a child's height, is development too, and it is the picture continuous theories describe.
+
+## Compare / Contrast
+
+- **Nature vs. nurture:** Nature is heredity and biology; nurture is environment and culture. The APA Dictionary defines the question as their relative contributions, and modern psychology treats them as closely interacting rather than competing.
+- **Continuous development vs. discontinuous (stage) development:** Continuous change is gradual and cumulative, like height adding inches year by year; discontinuous change arrives in stages, like the sudden appearance of a first word. The two are competing descriptions of how change happens.
+- **Sensitive period vs. critical period:** A sensitive period is when a skill is acquired most rapidly, and learning later is harder but possible. A critical period is an early window of openness that will not recur, so a missed experience is far more consequential. The APA Dictionary treats them as distinct.
+
+## Key Takeaway
+
+Development is the lifelong story of becoming: physical, cognitive, and social-emotional change from conception to old age, shaped by the interaction of nature and nurture, sometimes gradual and sometimes in stages, with some periods mattering more than others, but never finished early.
+
+## Practice Question Bank
+
+1. **A student asks for the working definition of developmental psychology used by the APA Dictionary of Psychology. Which answer is correct?**
+   - A. The branch of psychology that studies the changes, physical, mental, and behavioral, that occur from conception to old age, and the factors that affect development throughout the lifespan.
+   - B. The branch of psychology that studies how rewards and punishments shape behavior.
+   - C. The branch of psychology that studies how the brain organizes sensory input into perceptions.
+   - D. The branch of psychology that studies unconscious motives and their effects on adult behavior.
+
+   **Answer: A.** The APA Dictionary defines developmental psychology as the branch that studies physical, mental, and behavioral changes from conception to old age and the factors affecting development across the lifespan, which OpenStax 9.1 echoes as a lifelong process. Option B describes learning through consequences, C describes perception, and D describes the psychodynamic approach, none of which is the definition of developmental psychology.
+
+2. **Researchers track a child for a year and record three changes: her legs grow several inches, her vocabulary jumps from about fifty words to several hundred, and she begins to share toys and comfort a crying cousin. Which set of developmental domains do these changes illustrate?**
+   - A. Physical development only, because growth is the most visible change.
+   - B. Cognitive development only, because language is the most complex change.
+   - C. Physical, cognitive, and social-emotional development.
+   - D. Nature and nurture, because every change involves both.
+
+   **Answer: C.** The three changes map onto the three domains OpenStax 9.1 names: growing legs is physical development, the vocabulary jump is cognitive development, and sharing toys and comforting a cousin are social-emotional (psychosocial) development. Options A and B each capture only one domain, and D confuses the nature-versus-nurture question with the domains themselves.
+
+3. **Diego grew up in an English-only home. As an adult he studies Spanish and finds the rolled r, a sound his grandmother makes easily, very hard to produce even after years of practice. Which idea from developmental psychology best explains his difficulty?**
+   - A. Continuity: his language skills have grown so smoothly that the new sound has no room to develop.
+   - B. The normative approach: most adults acquire the rolled r later in life than Diego did.
+   - C. Discontinuity: the rolled r belongs to a stage of development that Diego has already passed.
+   - D. Sensitive periods: the sound is acquired most rapidly by children who hear it early, and learning it later is harder, though not impossible.
+
+   **Answer: D.** The APA Dictionary defines a sensitive period as a stage when a skill can be acquired most rapidly, and notes that missing those experiences makes acquisition more difficult but not impossible, which matches Diego's situation. Option A misapplies continuity, B misapplies the normative approach (which concerns age norms for milestones), and C misapplies stage theory, since no stage theory claims specific sounds belong to a passed stage.
+
+4. **Dr. Aoki argues that development is a steady, cumulative climb in which each skill builds gradually on the last. Dr. Chen argues that children's thinking reorganizes at distinct ages, so change arrives in leaps. Which pair of terms best captures this disagreement?**
+   - A. Nature versus nurture
+   - B. Continuity versus stages (continuous versus discontinuous)
+   - C. One course of development versus many courses
+   - D. Assimilation versus accommodation
+
+   **Answer: B.** The APA Dictionary defines continuity versus discontinuity as the debate over whether developmental change is gradual (continuous) or relatively abrupt (discontinuous), which is exactly the Aoki-Chen disagreement, and OpenStax 9.1 describes the same two pictures. Nature versus nurture concerns genes versus environment, one course versus many concerns whether development is universal, and assimilation versus accommodation are Piaget's terms for how schemas adjust, not a dispute about the overall shape of change.
+
+5. **Which scenario best illustrates the claim that development is lifelong rather than finished in childhood?**
+   - A. A four-year-old's tantrums fade as her vocabulary grows.
+   - B. A teenager's voice deepens over a single summer.
+   - C. A fifty-eight-year-old learns to swim for the first time and, a decade later, coaches new swimmers at the pool.
+   - D. A two-year-old takes his first unassisted steps.
+
+   **Answer: C.** OpenStax 9.1 states that developmental psychologists view development as a lifelong process, and the APA Dictionary notes the field broadened to include adult development and aging. Only option C shows change beginning and continuing in adulthood, whereas A, B, and D are all childhood changes; real development, but they demonstrate change in childhood rather than across the lifespan.
+
+## Sources
+
+- American Psychological Association. *Developmental psychology — APA Dictionary of Psychology*. https://dictionary.apa.org/developmental-psychology
+- American Psychological Association. *Nature–nurture — APA Dictionary of Psychology*. https://dictionary.apa.org/nature-nurture
+- American Psychological Association. *Continuity versus discontinuity — APA Dictionary of Psychology*. https://dictionary.apa.org/continuity-versus-discontinuity
+- American Psychological Association. *Sensitive period — APA Dictionary of Psychology*. https://dictionary.apa.org/sensitive-period
+- American Psychological Association. *Critical period — APA Dictionary of Psychology*. https://dictionary.apa.org/critical-period
+- American Psychological Association. *Psychosocial development — APA Dictionary of Psychology*. https://dictionary.apa.org/psychosocial-development
+- American Psychological Association. *Cognitive development — APA Dictionary of Psychology*. https://dictionary.apa.org/cognitive-development
+- OpenStax, Rice University. *Psychology 2e, 9.1 What Is Lifespan Development?* (CC BY 4.0). https://openstax.org/books/psychology-2e/pages/9-1-what-is-lifespan-development
+- OpenStax, Rice University. *Psychology 2e, 9.2 Lifespan Theories* (CC BY 4.0). https://openstax.org/books/psychology-2e/pages/9-2-lifespan-theories
+
+## Related Topics
+
+- psychology:foundations:what-psychology-studies
+- psychology:foundations:learning
+- psychology:foundations:personality
+- psychology:foundations:social-psychology
+- psychology:foundations:brain-and-nervous-system
+
+## Editorial Metadata
+
+- **Editorial status:** READY_TO_PUBLISH
+- **Source project:** EliExplains original synthesis
+- **Research status:** source-verified (researched 2026-08-22)
+- **Rights status:** Reference-only sources (APA Dictionary of Psychology entries read via the dictionary's public JSON API; OpenStax Psychology 2e, CC BY 4.0, read via Internet Archive captures of canonical openstax.org URLs); facts synthesized in original wording, no source prose adapted; all examples in the lesson are original.
+- **Transformation:** Working definition of developmental psychology verified against the APA Dictionary of Psychology and OpenStax Psychology 2e Sections 9.1 and 1.3; three-domain framework (physical, cognitive, psychosocial/social-emotional) verified against OpenStax 9.1 and APA entries for cognitive and psychosocial development; nature-versus-nurture and continuity-versus-discontinuity framings verified against APA Dictionary entries and OpenStax 9.1; one-line attributions for Piaget, Erikson, and Vygotsky verified against OpenStax 9.2 and APA entries; sensitive-period versus critical-period distinction verified against APA Dictionary entries. All examples are original to this lesson.
