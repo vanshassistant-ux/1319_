@@ -1,0 +1,190 @@
+{
+  "topicId": "finance:foundations:future-value",
+  "subjectId": "finance",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "What future value is: the amount an investment made today will be worth at a future time, given a rate (working definition, attributed to OpenStax Principles of Finance)",
+      "The growth idea: money grows by earning returns over time",
+      "The formula: FV = PV × (1 + rate)^years, with an original worked example ($200 at 6% for 3 years = $238.20, arithmetic shown)",
+      "Compounding previewed: growth on growth as the engine of future value (compound interest is a sibling topic)",
+      "Future value vs present value: tomorrow's amount vs today's worth — the pair (present value is a sibling topic)",
+      "Why it matters: savings goals, investment comparison, loan costs — one line each",
+      "The honest framing: future value is a projection, not a promise; rates change"
+    ],
+    "supporting": [
+      "The three inputs of the formula: present value (starting amount), rate per period, number of periods",
+      "The future value interest factor (1 + r)^n and how it grows with time and rate",
+      "Annual compounding as the default assumption in the lesson",
+      "Interest rate defined as earned by the lender and charged to the borrower"
+    ],
+    "outOfScope": [
+      "Present value and discounting as a full topic (sibling topic: present-value)",
+      "Compound interest mechanics, compounding frequency, and interest-on-interest depth (sibling topic: compound-interest)",
+      "Time value of money as a general principle (sibling topic: time-value-of-money)",
+      "Interest rates, their drivers, and yield curves (sibling topic: interest-rates)",
+      "Annuities, uneven cash flows, and multi-amount calculations (sibling topics: time-value-of-money and capital-budgeting topics)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Future value (FV) is the amount a specific sum of money today will be worth at a future point in time when it earns interest or returns; OpenStax Principles of Finance states that future value refers to how a specific amount of money today can have greater value tomorrow.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-principles-finance-7-2",
+        "cfi-time-value-of-money"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Money held in interest-bearing accounts or investments grows over time as interest income accrues or returns are realized on the investment — the growth idea behind future value.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-principles-finance-7-2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The future value of a single amount is computed as FV = PV × (1 + r)^n, where PV is the present value or starting amount, r is the interest (growth) rate per period, and n is the number of periods; the (1 + r)^n portion is the future value interest factor, which rises as either r or n increases.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "openstax-principles-finance-7-2",
+        "cfi-time-value-of-money"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "With annual compounding, each year's interest is earned on the full running balance, so interest from earlier periods earns its own interest in later periods (interest on interest), which makes the balance grow in accelerating increments the longer the money stays invested.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-principles-finance-7-2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Future value and present value are the same time-value relationship read in opposite directions: compounding carries today's money forward to a future value, while discounting brings a future amount back to its present value; OpenStax describes discounting as the exact opposite of compounding.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-principles-finance-7-4",
+        "cfi-time-value-of-money"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Future value thinking supports personal financial goals — for example checking whether a starting deposit at a stated rate reaches a savings target — and the SEC's Investor.gov provides a compound interest calculator so savers can project how money grows toward a goal over time.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-principles-finance-7-4",
+        "investor-gov-compound-interest-calculator"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A future-value figure depends directly on the interest rate assumed and the number of periods considered; because the rate is an assumption that can change, a calculated future value is a projection under stated assumptions rather than a guarantee of the amount that will actually be received.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "openstax-principles-finance-7-2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The interest rate concept applies to borrowing as well as saving: the rate is earned by the original lender of funds and charged to the borrower, so the amount a borrower owes grows over time by the same future-value mathematics.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-principles-finance-7-2"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Which symbol and name to use for the rate in the future-value formula.",
+      "positions": [
+        "r, called the interest rate and also the growth rate (OpenStax Principles of Finance)",
+        "i, called the interest rate or other return that can be earned on the money (CFI)"
+      ],
+      "resolution": "The lesson uses r and describes it as the annual rate of return (interest earned or growth applied), so the concept transfers across the two notations."
+    },
+    {
+      "issue": "Whether a computed future value is a prediction about the future.",
+      "positions": [
+        "It is a deterministic calculation: given inputs, the output is exact (both sources)",
+        "The realized amount is uncertain because the assumed rate may not hold over time (OpenStax's dependence of FV on r and n)"
+      ],
+      "resolution": "The lesson presents both halves honestly: the arithmetic is exact, while the outcome is a projection built on an assumed rate — the honest framing section states this explicitly."
+    },
+    {
+      "issue": "How compounding frequency affects the result.",
+      "positions": [
+        "Annual compounding assumed in the simple single-amount formula (OpenStax 7.2, CFI example)",
+        "More frequent compounding changes the future value (OpenStax 7.4 lists compounding-period frequency as a topic of its own)"
+      ],
+      "resolution": "The lesson assumes annual compounding throughout, notes the assumption, and leaves compounding frequency to the compound-interest sibling topic."
+    }
+  ],
+  "unsupportedExistingClaims": [],
+  "correctionsNeeded": [],
+  "rightsIssues": [
+    "OpenStax Principles of Finance is CC BY-NC-SA 4.0 with aiIngestionAllowed false (per source-map); used as REFERENCE_ONLY — facts restated in original prose, no wording reproduced, attribution recorded in source notes.",
+    "CFI pages carry no machine-readable reuse license; used as REFERENCE_ONLY with facts synthesized into original prose.",
+    "Investor.gov is a U.S. government site; content treated as reference material and restated, no page text reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "openstax-principles-finance-7-2",
+      "title": "Principles of Finance, Section 7.2: Time Value of Money (TVM) Basics",
+      "url": "https://openstax.org/books/principles-finance/pages/7-2-time-value-of-money-tvm-basics",
+      "provider": "OpenStax, Rice University",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A (verified OER textbook). openstax.org blocks direct fetch (JS-walled), so read via Internet Archive capture 20220930065136 on 2026-08-21; canonical URL registered. Supports: the working definition of future value ('future value refers to how a specific amount of money today can have greater value tomorrow'); the growth idea (money in interest-bearing accounts grows as interest accrues or returns are realized); single-period and multi-period arithmetic; the formula FV = PV × (1 + r)^n with PV, r, n defined; the future value interest factor and its growth with r and n; compounding as interest on interest with accelerating growth; the three inputs needed (PV, r, n); the interest rate as earned by lenders and charged to borrowers."
+    },
+    {
+      "id": "openstax-principles-finance-7-4",
+      "title": "Principles of Finance, Section 7.4: Applications of TVM in Finance",
+      "url": "https://openstax.org/books/principles-finance/pages/7-4-applications-of-tvm-in-finance",
+      "provider": "OpenStax, Rice University",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A (verified OER textbook). Read via Internet Archive capture 20220930232656 on 2026-08-21 (openstax.org blocks direct fetch); canonical URL registered. Supports: future value and present value as opposite directions of the same relationship (compounding forward vs discounting back); the present value equation as the inverse of the FV equation; personal financial goals applications (saving for a purchase, college, retirement); the note that compounding-period frequency affects TVM results (left to the compound-interest sibling topic)."
+    },
+    {
+      "id": "cfi-time-value-of-money",
+      "title": "Time Value of Money - How to Calculate the PV and FV of Money",
+      "url": "https://corporatefinanceinstitute.com/resources/valuation/time-value-of-money/",
+      "provider": "Corporate Finance Institute (CFI)",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B (reputable secondary). Read live via curl on 2026-08-21 (HTTP 200). Supports: the future value formula with its variables (FV, PV, i, t, n), a multi-year worked example, and the present value formula as the reverse of the future value formula. Facts synthesized into original prose; the lesson's own example ($200 at 6% for 3 years) is original and was computed independently."
+    },
+    {
+      "id": "investor-gov-compound-interest-calculator",
+      "title": "Compound Interest Calculator",
+      "url": "https://www.investor.gov/financial-tools-calculators/calculators/compound-interest-calculator",
+      "provider": "U.S. Securities and Exchange Commission (Investor.gov)",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A (official U.S. securities regulator). Read live via curl on 2026-08-21 (HTTP 200). The page hosts the SEC's compound interest calculator, which lets savers project how a starting amount grows toward a savings goal under compounding; cited for the savings-goals application and the compounding preview. Page content is a tool shell; no page wording reproduced."
+    }
+  ]
+}

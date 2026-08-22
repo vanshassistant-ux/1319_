@@ -1,0 +1,183 @@
+{
+  "topicId": "finance:foundations:present-value",
+  "subjectId": "finance",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "what present value is: the current worth of money to be received in the future, discounted at a rate (working definition, attributed)",
+      "the discounting idea: future amounts are shrunk back to today — the reverse of growth",
+      "the formula PV = FV ÷ (1 + rate)^years with an original worked example ($110.25 in 2 years at 5% is worth $100 today)",
+      "the discount rate: the rate used to shrink future amounts and what it represents",
+      "present value versus future value: today's worth versus tomorrow's amount",
+      "why it matters: comparing money at different times — savings, loans, projects",
+      "the honest framing: present value is how finance puts different times on the same scale"
+    ],
+    "supporting": [
+      "a lump sum as a one-time cash flow at a single point in time",
+      "present value is always less than future value at a positive rate",
+      "a higher discount rate produces a smaller present value"
+    ],
+    "outOfScope": [
+      "future value mechanics (sibling topic: finance:foundations:future-value)",
+      "time value of money overview (sibling topic: finance:foundations:time-value-of-money)",
+      "net present value of multiple cash flows (sibling topic: finance:foundations:net-present-value)",
+      "compound interest mechanics (sibling topic: finance:foundations:compound-interest)",
+      "how interest rates are set (sibling topic: finance:foundations:interest-rates)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Present value is the current worth of money to be received in the future, discounted at a rate; OpenStax's Principles of Finance states it as the value today of tomorrow's cash flow.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["openstax-principles-finance-7-4", "investopedia-present-value"],
+      "status": "supported"
+    },
+    {
+      "claim": "A given amount of money is worth more today than the same amount at a future date, because money in hand today can be invested or deposited to earn a return while waiting.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["openstax-principles-finance-7-1", "cfi-time-value-of-money"],
+      "status": "supported"
+    },
+    {
+      "claim": "Discounting is the reverse of growth: it lowers a future value back to the current period, while compounding carries a present value forward to the future.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["openstax-principles-finance-7-4"],
+      "status": "supported"
+    },
+    {
+      "claim": "The present value formula is PV = FV × 1/(1 + r)^n, derived by reversing FV = PV × (1 + r)^n; with annual compounding this is PV = FV ÷ (1 + rate)^years.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-principles-finance-7-4", "cfi-time-value-of-money"],
+      "status": "supported"
+    },
+    {
+      "claim": "The discount rate is the rate used to determine the present value of a future cash flow; OpenStax calls it the annual rate of reduction on a future value and the inverse of the growth rate.",
+      "claimType": "FINANCIAL",
+      "sourceIds": ["openstax-principles-finance-7-4"],
+      "status": "supported"
+    },
+    {
+      "claim": "With a positive rate, the present value of a future amount is always less than the future value (unless the rate is negative), which serves as a check on calculations.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-principles-finance-7-3"],
+      "status": "supported"
+    },
+    {
+      "claim": "Original worked example (arithmetic verified): $110.25 received in 2 years at 5% is worth $100 today, because 1.05 × 1.05 = 1.1025 and 110.25 ÷ 1.1025 = 100.00.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["openstax-principles-finance-7-3", "openstax-principles-finance-7-4"],
+      "status": "supported"
+    },
+    {
+      "claim": "Present value is used to compare money at different times: saving toward a future goal (college, retirement), judging loan repayments in today's dollars, and business decisions about new products, equipment, and facilities.",
+      "claimType": "FINANCIAL",
+      "sourceIds": ["openstax-principles-finance-7-4", "cfi-time-value-of-money"],
+      "status": "supported"
+    },
+    {
+      "claim": "The honest framing: present value converts a future amount into today's terms for comparison; the future amount itself is not changed, and the result depends on the discount rate chosen.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["openstax-principles-finance-7-4"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Sources phrase the present value definition with different emphasis.",
+      "positions": [
+        "OpenStax Principles of Finance: present value is the value today of tomorrow's cash flow, tied to the discount rate.",
+        "Investopedia: present value is the amount a future sum of money is worth today given a specified rate of return.",
+        "CFI: money in the present is worth more than the same sum of money to be received in the future."
+      ],
+      "resolution": "All three agree on the substance — current worth of a future amount at a rate. The lesson teaches the OpenStax working definition and attributes it, with CFI and Investopedia as corroboration."
+    },
+    {
+      "issue": "Formula presentation differs between a simple single division and a compounding-frequency form.",
+      "positions": [
+        "OpenStax: PV = FV × 1/(1 + r)^n.",
+        "CFI: PV = FV / (1 + (i/m))^(m×t), with m compounding periods per year."
+      ],
+      "resolution": "For annual compounding — the literacy level of this lesson — both reduce to PV = FV ÷ (1 + rate)^years. The lesson states the simple form and uses only annual compounding."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's boilerplate (e.g., 'Present Value is a foundational concept in Finance', 'think of present value as a label on a toolbox drawer') was discarded; it contains no verifiable factual content."
+  ],
+  "correctionsNeeded": [
+    "Replaced all boilerplate draft wording with source-verified content.",
+    "Added the formula PV = FV ÷ (1 + rate)^years, which the draft lacked.",
+    "Added an original worked example with full arithmetic ($110.25 in 2 years at 5% = $100 today).",
+    "Added the discount-rate explanation, the present-value-versus-future-value distinction, and the savings/loans/projects applications the draft omitted."
+  ],
+  "rightsIssues": [
+    "OpenStax content is CC BY 4.0 but the project marks it aiIngestionAllowed:false, so it is used REFERENCE_ONLY with facts restated in original prose.",
+    "CFI and Investopedia pages carry standard copyright; used REFERENCE_ONLY with original prose and no reproduced wording."
+  ],
+  "sourceRecords": [
+    {
+      "id": "openstax-principles-finance-7-1",
+      "title": "Principles of Finance, Section 7.1: Now versus Later Concepts",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/principles-finance/pages/7-1-now-versus-later-concepts",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read via Internet Archive capture (2022-09-30 snapshot) on 2026-08-21 because openstax.org blocks scripted fetches. Supports: the time value of money rests on the fact that cash can earn interest income while invested; it is better to be paid today, or you lose out on the interest you would have earned; a lump sum is a one-time cash flow at a single point in time and the basis for all other cash flows. Facts restated in original prose."
+    },
+    {
+      "id": "openstax-principles-finance-7-3",
+      "title": "Principles of Finance, Section 7.3: Methods for Solving Time Value of Money Problems",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/principles-finance/pages/7-3-methods-for-solving-time-value-of-money-problems",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read via Internet Archive capture (2022-09-30 snapshot) on 2026-08-21. Supports: solving for present value is the exact opposite of solving for future value; with a positive rate the present value is always less than the future value unless the rate is negative; the 5% growth series $100 → $105 (year 1) → $110.25 (year 2) → $115.76 (year 3) → $121.55 (year 4) → $127.63 (year 5); a $50,000 lump sum five years from now at 5% has a present value of $39,176.31. The lesson's worked example ($110.25 in 2 years at 5% = $100 today) reverses the book's own year-two growth value; arithmetic independently computed. Facts restated in original prose."
+    },
+    {
+      "id": "openstax-principles-finance-7-4",
+      "title": "Principles of Finance, Section 7.4: Applications of TVM in Finance",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/principles-finance/pages/7-4-applications-of-tvm-in-finance",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read via Internet Archive capture (2022-09-30 snapshot) on 2026-08-21. Supports: to find a present value we reverse the growth concept and discount the future value back to the current period; the discount rate is the interest rate used to determine the present value of a future cash flow — the annual rate of reduction on a future value and the inverse of the growth rate; present value as 'the value today of tomorrow's cash flow'; PV = FV × 1/(1 + r)^n derived from FV = PV × (1 + r)^n; compounding moves present value forward while discounting equates a future value to present dollars; personal applications (college fund, retirement savings); a $20,000 goal one year out at 5% needs $19,047.62 today; a 30-year $1,000 savings bond at 5% costs $231.38. Facts restated in original prose."
+    },
+    {
+      "id": "cfi-time-value-of-money",
+      "title": "Time Value of Money",
+      "provider": "Corporate Finance Institute (CFI)",
+      "url": "https://corporatefinanceinstitute.com/resources/valuation/time-value-of-money/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via HTTP on 2026-08-21. Supports: money in the present is worth more than the same sum to be received in the future, because money in hand can be invested to earn a return (and future money carries the risk that it may never be received); the present value calculation divides the future value by the growth factor (worked example PV = $1,100 / (1 + 5%)^1 ≈ $1,047.62); companies apply the time value of money to decisions about new product development, acquiring new business equipment or facilities, and establishing credit terms. Facts restated in original prose."
+    },
+    {
+      "id": "investopedia-present-value",
+      "title": "Present Value - PV",
+      "provider": "Investopedia",
+      "url": "https://www.investopedia.com/terms/p/presentvalue.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "The live page is JavaScript-walled; read a 2006 Internet Archive capture of the dictionary entry on 2026-08-21 (canonical URL registered). Supports the evergreen working definition: present value is the amount a future sum of money is worth today given a specified rate of return, with the classic example that $620 today is worth $1,000 in five years at 10%. Definitional corroboration only; the lesson's teaching, formula, and examples come from OpenStax and CFI."
+    }
+  ]
+}
