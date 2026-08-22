@@ -1,0 +1,204 @@
+{
+  "topicId": "finance:foundations:internal-rate-of-return",
+  "subjectId": "finance",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "the working definition of IRR, attributed: the discount rate that makes a project's net present value equal zero (OpenStax Principles of Finance 16.3; CFI)",
+      "the idea in words: IRR is the annual rate the project itself earns on the money it uses",
+      "the decision rule, stated simply: accept when IRR beats the cost of capital, reject when it does not (cost-of-capital is a sibling topic, referenced only)",
+      "the intuition with an original one-period example: a $500 project returning $575 in one year has an IRR of 15 percent, with the arithmetic shown",
+      "IRR versus NPV: a rate versus a dollar amount (net-present-value is a sibling topic, referenced only)",
+      "the traps: IRR ignores scale, so it can mislead when comparing projects of different sizes, with an original two-project example",
+      "the honest framing: IRR is the project's own speedometer — useful, but not the whole dashboard (dollar value and risk live on other instruments)"
+    ],
+    "supporting": [
+      "one-period IRR arithmetic: IRR = (amount returned − amount invested) ÷ amount invested",
+      "IRR is computed from the project's own cash flows and does not include the cost of capital; the comparison is made by the decision-maker",
+      "multi-period IRR is found by trial and error or a calculator, not by simple division (named, not taught)",
+      "IRR is only as good as the cash-flow estimates it is built from",
+      "OpenStax and CFI both note IRR is easy to interpret because people think in annual percentage returns"
+    ],
+    "outOfScope": [
+      "net present value mechanics and discounting detail (sibling topic: finance:foundations:net-present-value)",
+      "cost of capital mechanics — WACC, debt and equity costs (sibling topic: finance:foundations:cost-of-capital)",
+      "the capital budgeting process and other evaluation tools such as payback period (sibling topic: finance:foundations:capital-budgeting)",
+      "return as a general concept, risk premiums, and historical returns (sibling topic: finance:foundations:return)",
+      "multi-period IRR calculation, multiple-IRR problems, and reinvestment-rate assumptions (beyond the literacy level)",
+      "any investment advice or product recommendations"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "OpenStax Principles of Finance defines the internal rate of return (IRR) as the discount rate that sets the present value of the cash inflows equal to the present value of the cash outflows — the rate at which the project's net present value equals zero.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-principles-finance-16-3"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "CFI defines IRR as the discount rate that makes the net present value (NPV) of a project zero, and describes it in words as the expected compound annual rate of return that will be earned on a project or investment.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "cfi-internal-rate-of-return"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "OpenStax states the IRR decision rule directly: if the IRR is greater than the cost of capital, a project should be accepted; if the IRR is less than the cost of capital, a project should be rejected.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-principles-finance-16-3"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "CFI states that once determined, IRR is typically compared with a company's hurdle rate or cost of capital: the company accepts the project as a good investment when IRR is greater than or equal to the cost of capital and rejects it when IRR is lower than the hurdle rate.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "cfi-internal-rate-of-return"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "OpenStax identifies the primary advantage of the IRR method as ease of interpretation and explanation: investors like to speak in terms of annual percentage returns when evaluating investment possibilities.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-principles-finance-16-3"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "OpenStax lists 'overlooking differences in scale' as a disadvantage of the IRR method: IRR converts the cash flows to percentages and ignores differences in the size or scale of projects.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-principles-finance-16-3"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "CFI warns that because a very small investment can have a very high rate of return, investors and managers sometimes choose a lower percentage return that offers a higher absolute dollar value.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "cfi-internal-rate-of-return"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "OpenStax's guidance for choosing between mutually exclusive projects is to take the project with the highest NPV, because NPV estimates how much value a project will create; in its example, the regular embroidery machine (IRR 14.10%, NPV $2,835.62) is out-ranked in value by the heavy-duty machine (IRR 13.20%, NPV $3,970.67).",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-principles-finance-16-5"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "OpenStax defines NPV as the present value of inflows minus the present value of outflows, with projects accepted when NPV is positive because the project adds value; NPV is a dollar amount, in contrast to IRR's percentage.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-principles-finance-16-2"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A one-period project that costs $500 and returns $575 after one year has an IRR of 15 percent: the $75 gain is 15 percent of $500, and discounting $575 at 15 percent yields $500, so the net present value equals zero (arithmetic follows from the OpenStax/CFI working definition; original example).",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": [
+        "openstax-principles-finance-16-3",
+        "cfi-internal-rate-of-return"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "CFI notes that firms commonly value projects using IRR, NPV, payback period, or a combination of these tools.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "cfi-capital-budgeting"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "OpenStax states the acceptance condition as IRR strictly greater than the cost of capital (reject when less than), while CFI states acceptance at greater than or equal to the cost of capital.",
+      "resolution": "The lesson teaches the rule in words — accept when the IRR beats the cost of capital, reject when it does not — and treats the exact boundary (equal) as a tie companies resolve by judgment; both sources agree on the direction of the comparison."
+    },
+    {
+      "issue": "CFI calls IRR the 'expected compound annual rate of return earned on a project,' which reads like a measured fact, while OpenStax emphasizes IRR as a discount rate found by setting NPV to zero — a computed rate resting on cash-flow estimates.",
+      "resolution": "The lesson uses both framings with attribution: the working definition (the discount rate that makes NPV zero) and the plain-words idea (the rate the project itself earns), and states plainly that IRR is a forecast built from predicted cash flows."
+    }
+  ],
+  "unsupportedExistingClaims": [],
+  "correctionsNeeded": [],
+  "rightsIssues": [
+    "All five sources used REFERENCE_ONLY; no source prose reproduced. OpenStax Principles of Finance disallows AI ingestion (aiIngestionAllowed:false per subject source-map), so its sections were read via Internet Archive captures and restated in original prose. CFI pages read live via HTTP. The two newly minted records (openstax-principles-finance-16-5, cfi-internal-rate-of-return) were read directly on 2026-08-21."
+  ],
+  "sourceRecords": [
+    {
+      "id": "openstax-principles-finance-16-3",
+      "title": "Principles of Finance, Section 16.3: Internal Rate of Return (IRR) Method",
+      "url": "https://openstax.org/books/principles-finance/pages/16-3-internal-rate-of-return-irr-method",
+      "provider": "OpenStax, Rice University",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read via Internet Archive capture (2022-09-29). Supports: IRR as the discount rate that sets present value of inflows equal to present value of outflows (NPV equal to zero); accept if IRR exceeds the firm's cost of attracting capital, reject if below; the primary advantage (easy to interpret; investors like annual percentage returns); the 'overlooking differences in scale' disadvantage (IRR converts cash flows to percentages and ignores project size)."
+    },
+    {
+      "id": "openstax-principles-finance-16-5",
+      "title": "Principles of Finance, Section 16.5: Choosing between Projects",
+      "url": "https://openstax.org/books/principles-finance/pages/16-5-choosing-between-projects",
+      "provider": "OpenStax, Rice University",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read via Internet Archive capture (2022-09-29) on 2026-08-21. Supports: when projects are mutually exclusive, the rule is to take the project with the highest NPV because NPV estimates how much value a project creates; the embroidery-machine example where the regular machine (NPV $2,835.62; IRR 14.10%) is out-ranked in value by the heavy-duty machine (NPV $3,970.67; IRR 13.20%) even though the heavy-duty machine has the lower IRR."
+    },
+    {
+      "id": "openstax-principles-finance-16-2",
+      "title": "Principles of Finance, Section 16.2: Net Present Value (NPV) Method",
+      "url": "https://openstax.org/books/principles-finance/pages/16-2-net-present-value-npv-method",
+      "provider": "OpenStax, Rice University",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read via Internet Archive capture (2022-09-29). Supports: NPV as present value of inflows minus present value of outflows; accept when positive because the project adds value; the firm's cost of funds as the discount rate; cash flows translated into present value because they occur in different time periods. Cited here only for the rate-versus-dollar contrast with IRR."
+    },
+    {
+      "id": "cfi-internal-rate-of-return",
+      "title": "Internal Rate of Return (IRR): An Analyst's Guide to IRR",
+      "url": "https://corporatefinanceinstitute.com/resources/valuation/internal-rate-return-irr/",
+      "provider": "Corporate Finance Institute (CFI)",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B (reputable secondary). Read live via HTTP on 2026-08-21. Supports: IRR as the discount rate that makes the NPV of a project zero; in words, the expected compound annual rate of return earned on a project or investment; IRR typically compared with the company's hurdle rate or cost of capital, accepted when greater than or equal to it and rejected when below; the warning that a very small investment can have a very high rate of return, so managers sometimes choose a lower percentage return with higher absolute dollar value."
+    },
+    {
+      "id": "cfi-capital-budgeting",
+      "title": "Capital Budgeting Best Practices",
+      "url": "https://corporatefinanceinstitute.com/resources/finance/capital-budgeting/",
+      "provider": "Corporate Finance Institute (CFI)",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via HTTP on 2026-08-21. Supports: capital budgeting as the decision-making process for choosing which capital-intensive projects to pursue; firms valuing projects by IRR, NPV, payback, or a combination; the discount rate often being the company's WACC. Cited here only for the combination-of-tools point."
+    }
+  ]
+}
