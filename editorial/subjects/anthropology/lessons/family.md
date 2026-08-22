@@ -1,0 +1,162 @@
+# Family
+
+## In 30 Seconds
+
+In anthropology, a family is a socially recognized group of people linked by kinship, marriage, or care — an alliance that can rest on blood, law, or choice. Every society has families, but no two societies draw the same line around who counts. And a family is not a household: households share a roof, families share belonging. Families care for children, teach them the group's ways, and pool work and resources — and they come in more shapes than one.
+
+## Why This Matters
+
+Family is where most people first learn what a group is: who feeds you, who you can count on, and what is expected of you in return. Anthropologists study it because it is the universal institution — every human society has one — and because its forms vary so widely that it exposes the assumptions we carry about what is "natural." Academically, the family is where kinship, economics, and socialization meet. Practically, policies and everyday expectations that assume one family form fail everyone else. And honestly, your own family — whatever shape it takes — is your first "we."
+
+## Learning Objectives
+
+- Define family in anthropological terms, attributing the working definition to OpenStax's Introduction to Anthropology and the dictionary definition to Britannica.
+- Explain why anthropologists call family universal while its forms vary across societies, using an original example.
+- Distinguish a family from a household, applying the co-residence-versus-relatedness distinction to an original scenario.
+- Name three functions families perform — care, socialization, and economic cooperation — and attribute each to its source.
+- Describe four family forms — nuclear, extended, matrifocal, and chosen — in one line each, stated descriptively.
+- Analyze why the nuclear family is not the historical default, citing cross-cultural and US census evidence.
+
+## The College Version
+
+### What a family is: the working definition
+
+OpenStax's *Introduction to Anthropology* defines a family as two or more people in an adaptable social and economic alliance that involves kinship, whether perceived through blood, marriage, or another permanent or semipermanent arrangement. It frequently — but not always — involves reproduction, care of offspring, and coresidence. Britannica's dictionary entry points the same way: a family is a group of persons united by the ties of marriage, blood, or adoption, constituting a single household. Both definitions share one point: family is about recognized relatedness — a group a society agrees counts as family — not biology alone. This lesson uses a short working definition: the socially recognized group of people linked by kinship, marriage, or care.
+
+Anthropologists add one warning: family is a sociocultural construct, in OpenStax's phrase — who counts as family is defined differently across cultures, from the unit that raises children to a scattered web of relatives.
+
+### The universality question: every society has families, forms vary
+
+Family is one of the few institutions anthropologists call universal — every human society recognizes some group of people as family — but universality is not uniformity. OpenStax notes that basic family types are duplicated across cultures with minor variations, and that families vary greatly and adapt to changing needs. Two original examples show the range. In a fishing village, a child may be raised by her mother, her mother's sisters, and her grandmother, all of whom count as her family although her father's household is nearby. In a highland herding community, a young man's family may include his parents, his married brother's family, and his grandparents, all moving with the herds. Both are families; neither looks like the other.
+
+### Household vs family: living together versus belonging
+
+Anthropologists separate two units that everyday language merges. A household, in OpenStax's definition, is a group of individuals who live within the same residence and share socioeconomic needs associated with production and consumption. A family is a group linked by recognized relatedness. The two often coincide but need not: families can live inside larger households holding two or more families, or be separated by work and study.
+
+Four nurses share a flat in a hospital town, cooking, splitting the rent, and covering each other's shifts — a household. One of them, Priya, sends money home to her parents and younger brother in a village two hundred kilometers away and returns for every family festival; they remain her family even though she does not live with them. The flat is a household; the people in the village are family.
+
+### What families do: care, socialization, economic cooperation
+
+Ask what families are for, and anthropologists point to a cluster of functions. **Care:** Britannica observes that the family cares for its members when they are sick or disabled and provides emotional and psychological security. **Socialization:** the family is where the rearing and socialization of children happen — the first place a person learns language, manners, and the group's way of life. **Economic cooperation:** OpenStax's definition calls the family an adaptable social and economic alliance, and its account of the household highlights shared production and consumption — food, shelter, and clothing (Britannica's list) for members too young or too old to provide for themselves. None of these jobs is exclusive to families; families are where they combine.
+
+### How families vary: nuclear, extended, matrifocal, chosen
+
+Four forms give a sense of the range. **Nuclear families** — one or two parents and their immediate offspring — are the smallest type; OpenStax notes they are common where mobility is valued, from foraging bands to industrial societies. **Extended families** combine two or more family units into one integrated family, often spanning three or more generations; worldwide, OpenStax reports, the extended family is the most common type. **Matrifocal families** are centered on the mother, who heads the household and raises her children with her kin; OpenStax describes this pattern among the Mosuo of China and the Mundurucú of lowland Amazonia. **Chosen families** bring in fictive kin — people defined as family regardless of biology, through adoption, godparenthood, or close personal ties.
+
+### The honest note: the nuclear family is not the default of history
+
+The nuclear family — two parents and their children — is often treated as the baseline that other arrangements deviate from. The evidence says otherwise: worldwide, OpenStax reports, the extended family is the most common type, and family types adapt to social and economic needs rather than fixed templates. Even in the United States, where the nuclear model has long been the cultural ideal, census figures show it has become less typical: in 2016, 69 percent of US children under eighteen lived in a two-parent household, down from 88 percent in 1960, while the share in female single-headed households nearly tripled. (Britannica calls the nuclear family "believed to be the oldest" of family types — a belief, not a settled fact.) The reality check: the nuclear family is one form among several, not the default.
+
+### The honest framing: family is the first "we"
+
+Here is the reality check that ties it together. For nearly every person alive, family is the first group they belong to: the first "we." It is where you first experience being fed, protected, corrected, and expected to contribute. But the shape of that "we" is not fixed by nature — it is fixed by the group itself. One person's "we" is two parents and a sibling; another's is a grandmother, aunts, and cousins under one roof; another's is friends who chose each other. Anthropology's contribution is not to rank these shapes but to show that every one of them does the same work: it turns a collection of individuals into a group that cares, teaches, and cooperates.
+
+## Key Vocabulary
+
+- **family** — In anthropology, a socially recognized group of two or more people in an adaptable social and economic alliance involving kinship, whether perceived through blood, marriage, or another permanent or semipermanent arrangement; Britannica adds that family members typically interact in social positions such as spouses, parents, and children.
+- **household** — A group of individuals who live within the same residence and share socioeconomic needs associated with production and consumption; co-residence is what defines it, not relatedness.
+- **nuclear family** — A family composed of one or two parents and their immediate offspring; the smallest family type, often found where geographic mobility is valued.
+- **extended family** — Two or more family units functioning as a single integrated family, often spanning three or more generations; the most common family type worldwide.
+- **matrifocal family** — A family organized around the mother, who heads the household and raises her children with her kin; OpenStax describes such arrangements among the Mosuo of China and the Mundurucú of Brazil.
+- **fictive kin** — People defined as family regardless of biology, through intentional relationships such as adoption, godparenthood, or close personal ties; the basis of chosen families.
+- **consanguineal tie** — A perceived biological connection between people — a relationship "by blood" — which most societies treat as permanent.
+- **affinal tie** — A family connection created by marriage or mutual agreement rather than biology, which can usually be broken.
+- **family of orientation** — The family in which a person is raised and nurtured as a child and adolescent, before forming a family of their own.
+- **family of procreation** — The family that a person creates, usually as a result of marriage or partnering, in which children of the next generation are raised.
+
+## Eli-10
+
+**Simplified explanation.** A family is the group that counts you as theirs: people linked by blood, marriage, law, or plain choice, who care for you, teach you, and work alongside you. Anthropologists draw one sharp line: a household is just the people under one roof, sharing rent and groceries; a family is the people who belong to each other, even across oceans. Every society has families — that part is universal — but the shape varies: two parents and kids, three generations under one roof, a mother-centered household, or friends who chose each other. The nuclear family is one shape, not the default shape.
+
+**Where the analogy breaks down.** The campfire breaks down because a fire is fixed to one spot, while families hold together across continents: the fire must be rebuilt, but family recognition travels with people. A fire also has a single gathering, while a person belongs to several families in a lifetime — the one they are born into and the ones they create. And a fire is physical, whereas family membership lives in recognition: a society can count someone as family with no shared roof, no shared meal, and no shared DNA.
+
+## Eli's Analogy
+
+Think of a family as a campfire. People gather around it for warmth, which is care; they learn stories and songs at it, which is socialization; and they cook and share the meal at it, which is economic cooperation. Some fires are one big log — a matrifocal family. Some are many branches laid together — an extended family. And some people arrive carrying wood from other fires and add it to the flame — a chosen family.
+
+## Worked Example
+
+The Andrade house in the port town of Vilarinho holds twelve people: grandmother Rosa, her two daughters and their husbands, and six children. By OpenStax's definitions, the house is one household — everyone sleeps there and shares the smokehouse income — but two families live inside it, plus a third link: Rosa's brother died at sea and left his goddaughter in Rosa's care, and she is fictive kin, family by promise rather than blood. Rosa anchors the household, making it matrifocal in practice, while grandparents, parents, and children together make it an extended family. The children learn the smokehouse trade at Rosa's side — socialization — while Rosa's daughters now care for her in return. One house, one household, several families, one "we."
+
+## Common Mistakes
+
+- **"A family is just the people you live with."** — That describes a household: co-residents who share production and consumption. Family is about recognized relatedness and can exist across distance. Roommates sharing an apartment form a household, not a family, and a family separated by work or study remains a family.
+- **"Real families are blood relatives; everyone else is just a friend."** — Anthropologists document fictive kin in every society: adoption, godparenthood, and close personal ties make people family regardless of biology. Chosen families are family.
+- **"The nuclear family is the natural family — other forms are exceptions."** — Worldwide, the extended family is the most common type, and US census data show the two-parent nuclear household declining since 1960 (69 percent of children under 18 in 2016, down from 88 percent). Family forms adapt to social and economic needs.
+- **"Since family is universal, every society's families look basically the same."** — Universality means every society has families, not that they are uniform. Family is a sociocultural construct defined differently across cultures, and anthropologists describe basic family types "duplicated across cultures with minor variations" — the variations are the point.
+
+## Compare / Contrast
+
+- **A family vs. a household:** A family is a group linked by recognized relatedness — kinship, marriage, or care; a household is a group of co-residents sharing production and consumption. The nurses' flat is a household; Priya's parents and brother, two hundred kilometers away, are her family.
+- **A nuclear family vs. an extended family:** A nuclear family is one or two parents with their immediate offspring — the smallest type; an extended family is two or more family units integrated into one, often across three or more generations, and the most common type worldwide.
+- **A consanguineal tie vs. an affinal tie:** A consanguineal tie is a perceived biological connection, treated as permanent in most societies; an affinal tie is a connection created by marriage or mutual agreement, which can usually be broken.
+
+## Key Takeaway
+
+Family is the first "we": a socially recognized group linked by kinship, marriage, or care. Every society has one, no two societies draw the same line around it — and the nuclear family is one shape among many, not the default of history.
+
+## Practice Question Bank
+
+1. **Which statement best matches the working definition of family that anthropologists use, as presented in OpenStax's Introduction to Anthropology?**
+   - A. A socially recognized group of two or more people in an adaptable social and economic alliance that involves kinship, whether perceived through blood, marriage, or another permanent or semipermanent arrangement.
+   - B. Any group of people who share a residence and pool their money for rent, food, and utilities.
+   - C. A married couple and their biological children, living together in a private dwelling.
+   - D. Everyone who shares a common ancestor, whether or not they have ever met.
+
+   **Answer: A.** OpenStax defines a family as two or more people in an adaptable social and economic alliance involving kinship, whether perceived through blood, marriage, or another permanent or semipermanent arrangement. Option B describes a household, defined by co-residence rather than relatedness; option C is a narrow nuclear-family image that excludes the many family forms the definition covers; option D describes a descent group, which is not the same as a family.
+
+2. **Four nurses share a flat in a hospital town: they cook together, split the rent, and cover each other's shifts. One of them, Priya, supports her parents and younger brother, who live in a village two hundred kilometers away, and she returns for every family festival. Which statement correctly sorts the two units?**
+   - A. The flat is a family because the nurses share a residence; Priya's relatives are a household because they share meals.
+   - B. The flat is a household, defined by co-residence and shared production and consumption; Priya's relatives are her family, linked by recognized kinship even though they do not live with her.
+   - C. Neither unit counts as a family, because a family must include at least one child.
+   - D. Both units are families, because both involve more than two people who cooperate.
+
+   **Answer: B.** OpenStax distinguishes a household — co-residents sharing socioeconomic needs — from a family, a group linked by recognized kinship that need not live together. The nurses form a household; Priya's parents and brother are her family. Option A reverses the two terms, option C imposes an arbitrary child requirement, and option D collapses the distinction entirely.
+
+3. **When anthropologists say that family is universal, what do they mean?**
+   - A. Every society on earth organizes its families as nuclear families.
+   - B. Every human society recognizes some group of people as family, but the forms and boundaries of family vary widely.
+   - C. Families exist only where formal marriage is practiced.
+   - D. Family membership is always based on biological relatedness.
+
+   **Answer: B.** Universality in anthropology means that every society has families — OpenStax describes basic family types "duplicated across cultures with minor variations." It does not mean uniformity: option A asserts identical nuclear families everywhere; option C wrongly ties family to formal marriage; option D ignores adoption, fictive kin, and culturally defined relatedness.
+
+4. **In a coastal town, grandparents, their three adult children, and the grandchildren all live and work together in one house, pooling income from fishing and a small smokehouse. Which classification best fits this group, per OpenStax?**
+   - A. It formed when two divorced adults remarried and merged their households.
+   - B. It is the smallest family structure, common where geographic mobility is valued.
+   - C. Its members are all fictive kin, linked by choice rather than biology.
+   - D. It is an extended family: two or more family units functioning as a single integrated family across generations.
+
+   **Answer: D.** OpenStax defines the extended family as two or more family units functioning as one integrated family, often spanning three or more generations — exactly the coastal household. Option A describes a blended family, option B describes a nuclear family, and option C misapplies fictive kinship, which concerns intentional family ties rather than multi-generation living.
+
+5. **A student claims: "The nuclear family of two parents and their children has always been the standard family form in human history." Which response is best supported by the evidence in this lesson?**
+   - A. Correct — the nuclear family is the oldest family type in existence.
+   - B. Mostly correct — nuclear families are the most common family type worldwide.
+   - C. Not supported — worldwide the extended family is the most common type, family forms adapt to social and economic needs, and even in the United States the two-parent household has become less typical since 1960.
+   - D. Not supported — but only because families are disappearing in modern industrial societies.
+
+   **Answer: C.** OpenStax reports that the extended family is the most common family type worldwide and that families adapt to social and economic needs, and it cites US census figures showing the two-parent household falling from 88 percent of children under 18 in 1960 to 69 percent in 2016. Option A repeats a contested historical belief (Britannica says "believed," not established); option B reverses the cross-cultural evidence; option D mistakes a change in form for a disappearance of families.
+
+## Sources
+
+- **11.2 Defining Family and Household — Introduction to Anthropology (OpenStax, Rice University).** https://openstax.org/books/introduction-anthropology/pages/11-2-defining-family-and-household (CC BY 4.0; read via Wayback Machine capture 20221002062723 of the canonical URL)
+- **Ch. 11 Key Terms — Introduction to Anthropology (OpenStax, Rice University).** https://openstax.org/books/introduction-anthropology/pages/11-key-terms (CC BY 4.0; read via Wayback Machine capture 20221007052052)
+- **Ch. 11 Summary — Introduction to Anthropology (OpenStax, Rice University).** https://openstax.org/books/introduction-anthropology/pages/11-summary (CC BY 4.0; read via Wayback Machine capture 20221007053456)
+- **Family | Definition, Meaning, Members, Types, & Facts — Encyclopaedia Britannica.** https://www.britannica.com/topic/family-kinship (reference-only; read via Wayback Machine capture 2024)
+
+## Related Topics
+
+- anthropology:foundations:kinship
+- anthropology:foundations:marriage
+- anthropology:foundations:culture
+- anthropology:foundations:social-organization
+- anthropology:foundations:what-is-anthropology
+
+## Editorial Metadata
+
+- **Topic ID:** anthropology:foundations:family
+- **Editorial status:** READY_TO_PUBLISH
+- **Researched at:** 2026-08-22
+- **Research status:** source-verified
+- **Rights status:** reference-only and CC BY 4.0 sources; facts synthesized into original prose; no source prose adapted
+- **Transformation:** Synthesized from OpenStax Introduction to Anthropology chapter 11 (section 11.2 "Defining Family and Household", the chapter key terms, and the chapter summary), read via Wayback Machine captures of the canonical openstax.org URLs, plus the Britannica family article, read via a Wayback capture of the canonical URL. All lesson examples are original (fictional people and scenarios); the only attributed ethnographic examples are the Mosuo and Mundurucú cases, credited to OpenStax. Kinship-system and marriage content (OpenStax 11.1, 11.3, 11.4) is excluded as sibling-topic territory and appears only as related-topic pointers.
