@@ -88,7 +88,7 @@ Cellular injury is the microscopic root of most illness: knowing what injures ce
 
 ## Practice Question Bank
 
-1. **A nursing student is asked in class to give a working definition of cellular injury. Which answer is correct?**
+1. **A nursing student is asked in class to define cellular injury. Which answer is correct?**
    - Damage to cells that disrupts their normal function.
    - The immune system's reaction to germs and foreign substances.
    - The division of cells to replace tissue that has worn out.

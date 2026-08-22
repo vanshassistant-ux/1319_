@@ -2,11 +2,11 @@
 
 ## In 30 Seconds
 
-Auscultation is listening to the body's internal sounds, usually with a stethoscope. The chest piece rests on the skin and carries sound to the ears: the heart's steady lub-dub, air moving through the lungs as the patient breathes, and the soft gurgle of the intestines at work. It is one of the four core physical exam techniques, used over the chest and abdomen. The sounds are easy to hear; reading them takes practice.
+Auscultation is listening to the body's internal sounds, usually with a stethoscope. The chest piece rests on the skin and carries sound to the ears: the heart's steady lub-dub, air moving through the lungs as the patient breathes, and the soft gurgle of the intestines at work. It is one of the four classic physical exam techniques, used over the chest and abdomen. The sounds are easy to hear; reading them takes practice.
 
 ## Why This Matters
 
-For nursing and allied health students, auscultation is one of the four core physical exam techniques and a skill practiced in labs and on clinical placement. For patients and families, it explains the most familiar ritual of a checkup: why the clinician presses a stethoscope to the chest and belly and listens. The findings are practical — a steady lub-dub reassures, crackles in the lung bases can point to fluid, silent bowels can point to trouble. But auscultation is an honest skill too. The sounds are subtle, naming them takes training, and no single sound makes a diagnosis. Understanding the idea — eavesdropping on the body's machinery — turns a puzzling ritual into an assessment technique you can follow.
+For nursing and allied health students, auscultation is one of the four traditional physical exam techniques, refined through lab practice and clinical placement. For patients and families, it explains the most familiar ritual of a checkup: why the clinician presses a stethoscope to the chest and belly and listens. The findings are practical — a steady lub-dub reassures, crackles in the lung bases can point to fluid, silent bowels can point to trouble. But auscultation is an honest skill too. The sounds are subtle, naming them takes training, and no single sound makes a diagnosis. Understanding the idea — eavesdropping on the body's machinery — turns a puzzling ritual into an assessment technique you can follow.
 
 ## Learning Objectives
 

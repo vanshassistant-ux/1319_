@@ -2,11 +2,11 @@
 
 ## In 30 Seconds
 
-Percussion is the exam technique of tapping the body to hear the sound it makes. Dense tissue, like the liver, returns a dull thud, while air-filled tissue, like healthy lung, returns a hollow, ringing note. The examiner rests one hand flat on the skin and taps it with the fingers of the other hand. The sound reveals what lies beneath: organ size, fluid, or air. Percussion is used most often over the chest and abdomen, and reading it takes practice.
+Percussion is the exam technique of tapping the body to hear the sound it makes. Dense tissue, like the liver, returns a dull thud, while air-filled tissue, like healthy lung, returns a hollow, ringing note. The examiner rests one hand flat on the skin and taps it with the fingers of the other hand. The sound reveals what lies beneath: organ size, fluid, or air. Percussion is used most often over the chest and abdomen, and reading the notes takes practice to master.
 
 ## Why This Matters
 
-For nursing and allied health students, percussion is one of the four core physical exam techniques and a skill practiced in labs and on clinical placement. For patients and families, it explains a familiar part of a checkup — why a clinician taps on the chest and belly and listens. The findings are practical: a dull note over the lungs can point to pneumonia or fluid, and a dull abdomen can point to fluid that should be investigated. But percussion is an honest skill too. The sounds are subtle, the technique takes practice, and no single tap makes a diagnosis. Understanding the idea — knocking to learn what is inside — turns a puzzling ritual into an assessment technique you can follow.
+For nursing and allied health students, percussion is one of the four core physical exam skills and a skill honed in lab practice and on clinical placement. For patients and families, it explains a familiar part of a checkup — why a clinician taps on the chest and belly to listen. The findings are practical: a dull note over the lungs can point to pneumonia or fluid, and a dull abdomen can point to fluid that should be investigated. But percussion is an honest skill as well. The notes are subtle, the technique takes practice, and no single tap makes a diagnosis. Understanding the idea — knocking to learn what is inside — turns a puzzling ritual into an assessment skill you can follow.
 
 ## Learning Objectives
 
@@ -77,7 +77,7 @@ Nurse Lena is assessing Mr. Alvarez, admitted with a cough and fever. She percus
 
 ## Key Takeaway
 
-Percussion is tapping the body to learn what is inside: air-filled tissue rings hollow, dense tissue and fluid return a dull note, and the sound — read over the chest and abdomen — helps map organ size and find fluid or air where it should not be. It is a gentle technique, and reading it takes practice.
+Percussion is tapping the body to learn what is inside: air-filled tissue rings hollow, dense tissue and fluid return a dull note, and the sound — read over the chest and abdomen — helps map organ size and find fluid or air where it should not be. It is a gentle technique, and reading the notes takes practice to master.
 
 ## Practice Question Bank
 
@@ -107,7 +107,7 @@ Percussion is tapping the body to learn what is inside: air-filled tissue rings 
    - Because percussion findings are never used in real patient care.
    - Because the patient's own description of the sounds is more reliable.
    - Because the student should switch to palpation, which replaces percussion entirely.
-   - **Correct:** A — OpenStax states plainly that percussion requires skill to elicit and interpret the sounds correctly, and the honest framing of the technique is that reading it takes practice. The other options are false: percussion is a standard part of the physical exam, the patient does not read the sounds, and palpation complements rather than replaces percussion.
+   - **Correct:** A — OpenStax states plainly that percussion requires skill to elicit and interpret the sounds correctly, and the honest framing of the technique is that learning to read it takes practice. The other options are false: percussion is a standard part of the physical exam, the patient does not read the sounds, and palpation complements rather than replaces percussion.
 
 5. **A nurse explains percussion to a curious patient by saying, "It's knocking to learn what is inside." Which idea does that sentence capture best?**
    - The tap measures how well the patient's ears work.
