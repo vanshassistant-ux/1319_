@@ -72,6 +72,17 @@ The distinction that clears up the most confusion: a debit card spends your own 
 4. Devon owes $1,200 on his credit card and pays only the minimum payment each month. What does the honest note about minimum payments say will happen? **D.** The balance stays alive and shrinks very slowly, with interest piling on, so it can take years to pay off
 5. Nia buys a $90 jacket. With her debit card, $90 leaves her checking account immediately. With her credit card, what happens instead? **B.** The card issuer pays the store the $90, and Nia owes the issuer that amount until she pays her bill
 
+## Common Mistakes
+
+- **Treating a credit card like a debit card and spending as if the money were already yours.** — Remember the card spends borrowed money: the issuer paid the store, and you owe it back by the due date.
+- **Paying only the minimum and assuming the balance is shrinking at a healthy pace.** — Read the disclosure box on the statement; it shows how many years of minimum payments the current balance would take to clear.
+- **Confusing the due date with the date the next statement arrives.** — The due date is fixed on the statement and usually falls weeks before the next statement; paying after it triggers a late fee and can cost you the grace period.
+- **Assuming every credit card has a grace period.** — Issuers are not required to give one; most do on purchases, but each card's terms say whether it does and on what.
+
+## Key Takeaway
+
+A credit card is borrowed money with a limit. Pay the full statement balance by the due date and the grace period protects you; pay only the minimum and the balance can grow for years.
+
 ## Sources
 
 - Consumer Financial Protection Bureau (CFPB), Credit cards (consumer-tools hub), [https://www.consumerfinance.gov/consumer-tools/credit-cards/](https://www.consumerfinance.gov/consumer-tools/credit-cards/)

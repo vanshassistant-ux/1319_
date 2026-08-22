@@ -79,7 +79,7 @@ Life insurance is a contract that pays a benefit to the people you name when you
 
 ## Practice Question Bank
 
-**Q1.** According to NAIC, what is life insurance, stated in one line?
+**Q1.** How does the NAIC define life insurance in one line??
 
 - A contract that pays a benefit to named beneficiaries when the insured person dies
 - A savings account that pays interest until you retire

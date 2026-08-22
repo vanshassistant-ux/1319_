@@ -82,7 +82,7 @@ Expenses are the other half of the money story: every bill paid and every thing 
 
 ## Practice Question Bank
 
-**Question 1.** What are expenses, according to the working definition in this lesson?
+**Question 1.** What does the working definition in this lesson count as an expense?
 
 - A. The money a person spends — the bills paid and the things bought
 - B. The money a person earns from work, benefits, and other sources

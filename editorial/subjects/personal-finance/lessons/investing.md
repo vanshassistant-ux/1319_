@@ -21,7 +21,7 @@ Investing is how money earns a second job: instead of sitting still, it works to
 
 ### What investing is
 
-Investing is putting money into assets such as stocks or bonds with the expectation of making a return over time. That is the working definition this lesson adopts, straight from SEC Investor.gov, the U.S. securities regulator's education site. Two ideas sit inside it. First, the money goes somewhere — it buys an asset, something that can hold or produce value. Second, the buyer expects a return. Investor.gov explains that a return can arrive in either of two ways: the asset's value rises, or the asset pays income such as interest or dividends. The regulator's own glossary defines invest even more bluntly: to engage in any activity in which money is put at risk for the purpose of making a profit. That blunt version matters. Investing is not a machine with a fixed output; it is money put to work with an expectation, and an expectation is not a guarantee.
+Investing is putting money into assets such as stocks or bonds with the expectation of making a return over time. That is the definition used here, drawn from SEC Investor.gov, the securities regulator's investor-education site. Two ideas sit inside it. First, the money goes somewhere — it buys an asset, something that can hold or produce value. Second, the buyer expects a return. Investor.gov explains that a return can arrive in either of two ways: the asset's value rises, or the asset pays income such as interest or dividends. The regulator's own glossary defines invest even more bluntly: to engage in any activity in which money is put at risk for the purpose of making a profit. That blunt version matters. Investing is not a machine with a fixed output; it is money put to work with an expectation, and an expectation is not a guarantee.
 
 ### Investing versus saving
 
@@ -29,11 +29,11 @@ Investing and saving are siblings, not twins. Investor.gov notes that both mean 
 
 ### Risk, time, and the long game
 
-Every investment carries some degree of risk. Investor.gov defines risk as the degree of uncertainty and potential financial loss inherent in an investment decision, and stresses that all investments involve some of it. The most visible form is volatility: prices move. The regulator notes that large-company stocks as a group have lost money on average about one out of every three years — losing years are normal, not a malfunction. This is where time enters. Your time horizon is the number of months, years, or decades you plan to hold money toward a goal. A long horizon — money you will not touch for decades — gives investments years to move through the down stretches and the up ones. Money needed in the near future has no such luxury; Investor.gov points people with short-term goals toward options with less potential risk and volatility. Investing has no set rate of return, and starting later means needing to invest more. The long game is the only game that makes sense of the risk.
+Every investment carries some degree of risk. Investor.gov defines risk as the degree of uncertainty and potential financial loss inherent in an investment decision, and stresses that all investments involve some of it. The most visible form is volatility: prices move. The regulator notes that big-company stocks have lost money as a group in roughly one year out of three — losing years are normal, not a malfunction. This is where time enters. Your time horizon is the number of months, years, or decades you plan to hold money toward a goal. A long horizon — money you will not touch for decades — gives investments years to move through the down stretches and the up ones. Money needed in the near future has no such luxury; Investor.gov points people with short-term goals toward options with less potential risk and volatility. Investing has no set rate of return, and starting later means needing to invest more. The long game is the only game that makes sense of the risk.
 
 ### The main choices: stocks, bonds, and funds
 
-The big three choices are stocks, bonds, and funds, and each gets one line here because each has a full sibling lesson. A stock is a type of security that gives you a share of ownership in a company; you gain if the company does well and the stock rises or pays dividends. A bond is a debt security, similar to an IOU: you lend money to a borrower — a company or a government — and the borrower promises to pay it back with interest. A fund, such as a mutual fund or an exchange-traded fund, pools money from many investors and invests it in a portfolio of securities, so one purchase buys a slice of many investments at once. None of these is safe by type alone; every one carries risk. The deeper skill is how the pieces fit together, which is what diversification is about.
+The big three choices are stocks, bonds, and funds, and each gets one line here because each has a full sibling lesson. A stock is a type of security that gives you a share of ownership in a company; you gain if the company does well and the stock rises or pays dividends. A bond is a debt security, similar to an IOU: you lend money to a borrower — a company or a government — and the borrower promises to pay it back with interest. A fund, such as a mutual fund or an exchange-traded fund, pools money from many investors into a portfolio of securities, so one purchase buys a slice of many investments at once. None of these is safe by type alone; every one carries risk. The deeper skill is how the pieces fit together, which is what diversification is about.
 
 ### Diversification, starting small, and the honest frame
 
@@ -41,7 +41,7 @@ Diversification is the personal practice of not putting all your eggs in one bas
 
 ## Key Vocabulary
 
-- **investing** — Putting money into assets such as stocks or bonds with the expectation of making a return over time; the working definition this lesson adopts from SEC Investor.gov.
+- **investing** — Putting money into assets such as stocks or bonds with the expectation of making a return over time; the definition used in this lesson comes from SEC Investor.gov.
 - **return** — The money an investment produces for its owner, either from an increase in the asset's value or from interest or dividend payments.
 - **risk** — The degree of uncertainty and potential financial loss built into an investment decision.
 - **volatility** — How much and how often an investment's value moves up and down.
@@ -49,7 +49,7 @@ Diversification is the personal practice of not putting all your eggs in one bas
 - **diversification** — Spreading money across many different investments so that a loss in one can be offset by others.
 - **stock** — A type of security that gives the holder a share of ownership in a company.
 - **bond** — A debt security, similar to an IOU, issued by a borrower to raise money from lenders.
-- **fund** — An investment company that pools money from many investors and invests it in a portfolio of securities; mutual funds and ETFs are common types.
+- **fund** — An investment company that pools money from many investors into a portfolio of securities; mutual funds and ETFs are common types.
 - **portfolio** — The combined holdings of investments an investor owns.
 
 ## Eli-10
@@ -68,7 +68,7 @@ Keisha, 25, and Omar, 35, both want to build long-term wealth. Keisha starts inv
 
 ## Common Mistakes
 
-- **Treating investing like saving — expecting the balance never to go down.** Investor.gov is blunt: all investments involve some degree of risk, and large-company stocks as a group have lost money on average about one in every three years. Money that cannot handle a down year belongs in savings, not investments.
+- **Treating investing like saving — expecting the balance never to go down.** Investor.gov is blunt: all investments involve some degree of risk, and big-company stocks have lost money as a group on average about one in every three years. Money that cannot handle a down year belongs in savings, not investments.
 - **Putting everything into one company or one idea because it feels exciting.** That is the all-eggs-in-one-basket trap. Diversification — spreading money across many holdings — is the standard personal practice, because one losing investment then hurts far less.
 - **Waiting for the perfect moment to start investing.** The general practice runs the other way: small regular amounts over time beat waiting, and Investor.gov notes that starting later simply means needing to invest more.
 - **Believing that diversification or a long time horizon makes returns guaranteed.** Investor.gov's own glossary says money is spread in the hope that losses are offset, and it stresses there is no set rate of return. Time and spread reduce risk; they do not remove it.
@@ -88,7 +88,7 @@ Investing is putting money to work in assets expected to grow in value or produc
 
 ## Practice Question Bank
 
-1. **According to the working definition this lesson adopts from SEC Investor.gov, what is investing?**
+1. **What is investing, per the definition this lesson takes from SEC Investor.gov?**
    - Putting money into assets such as stocks or bonds with the expectation of making a return over time
    - Keeping money in a checking account for everyday spending
    - Borrowing money from a bank to pay for a large purchase
@@ -121,7 +121,7 @@ Investing is putting money to work in assets expected to grow in value or produc
    - Investing is risk-free as long as you choose a well-known company
    - Risk disappears once an investment has been held for one year
    - The government guarantees that investments will grow in value over time
-   - **Correct: A.** Investor.gov states plainly that all investments involve some degree of risk, and its What is Risk? page notes that large-company stocks as a group have lost money on average about one out of every three years — fluctuations are normal. Fame, a single year, or government backing do not remove investment risk.
+   - **Correct: A.** Investor.gov states plainly that all investments involve some degree of risk, and its What is Risk? page notes that big-company stocks have lost money as a group in roughly one year out of three — fluctuations are normal. Fame, a single year, or government backing do not remove investment risk.
 
 ## Sources
 

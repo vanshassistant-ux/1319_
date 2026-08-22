@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-An ETF is a pooled investment that trades on exchanges like a stock — the working definition this lesson adopts from SEC Investor.gov. The fund holds a basket of securities, and each share you buy represents part ownership of that basket. Shares are bought and sold during trading hours at market prices through a brokerage account. The benefits are diversification, low costs, and tradability. The honest note: like any investment, ETFs carry market risk and are not government-insured. Many ETFs track an index. In short, an ETF is a fund with a ticker.
+An ETF is a pooled investment that trades on exchanges like a stock — this lesson takes its working definition from SEC Investor.gov. The fund holds a basket of securities, and each share you buy represents part ownership of that basket. Shares are bought and sold during trading hours at market prices through a brokerage account. The benefits are diversification, low costs, and tradability. The honest note: like any investment, ETFs carry market risk and are not government-insured. Many ETFs track an index. In short, an ETF is a fund with a ticker.
 
 ## Why This Matters
 
@@ -21,7 +21,7 @@ ETFs have become one of the most common ways people invest, which is why the ide
 
 ### What an ETF is
 
-An ETF is a pooled investment that trades on exchanges like a stock. That is the working definition this lesson adopts from SEC Investor.gov, the U.S. securities regulator's education site. The official page spells it out: an ETF is an exchange-traded investment product that pools money from many investors and invests that money in stocks, bonds, short-term money-market instruments, other securities or assets, or some combination of these investments. The combined holdings the fund owns are its portfolio, and each ETF share represents an investor's part ownership of that portfolio and the income it generates. Three words carry the definition. Pooled, because many investors' money is combined into one fund. Basket, because the fund owns many holdings at once. Exchange-traded, because the shares are bought and sold on a stock exchange just like shares of a company. The finance subject owns the deep theory of how funds are structured; the personal-finance point here is what the product is and what it does for a household.
+An ETF is a pooled investment that trades on exchanges like a stock. That is this lesson takes its working definition from SEC Investor.gov, the regulator's education site for investors. The official page spells it out: an ETF is an exchange-traded investment product that collects money from many investors and puts it into stocks, bonds, short-term money-market instruments, other securities or assets, or blends of these. The combined holdings the fund owns are its portfolio, and each ETF share represents an investor's part ownership of that portfolio and the income it generates. Three words carry the definition. Pooled, because many investors' money is combined into one fund. Basket, because the fund owns many holdings at once. Exchange-traded, because the shares are bought and sold on a stock exchange just like shares of a company. The finance subject owns the deep theory of how funds are structured; the personal-finance point here is what the product is and what it does for a household.
 
 ### How an ETF works: the tradable basket
 
@@ -33,15 +33,15 @@ ETFs and mutual funds are close relatives: both are pooled investments, and the 
 
 ### The benefits: diversification, low costs, tradability
 
-Three benefits show up again and again, and each gets one line here because each has a sibling lesson. Diversification: many ETFs invest in a range of companies and industries rather than one stock or bond, which helps lower the risk that one company's failure sinks the investment — though Investor.gov warns that some ETFs are less diverse than others and may even track a single stock. Low costs: ETFs typically charge lower expense ratios than comparable mutual funds, and Investor.gov adds that ETF shares can often be purchased for relatively low dollar amounts. Tradability: ETF shares can be bought and sold at market prices whenever the market is open, which makes them easy to move in and out of compared with products priced once a day. The investing lesson explains diversification as a practice; here it is simply the headline benefit of the product.
+Three benefits show up again and again, and each rates one line here because each has a sibling lesson. Diversification: many ETFs invest in a range of companies and industries rather than one stock or bond, which helps lower the risk that one company's failure sinks the investment — though Investor.gov warns that some ETFs are less diverse than others and may even track a single stock. Low costs: ETFs typically charge lower expense ratios than comparable mutual funds, and Investor.gov adds that ETF shares can often be purchased for relatively low dollar amounts. Tradability: ETF shares can be bought and sold at market prices whenever the market is open, which makes them easy to move in and out of compared with products priced once a day. The investing lesson explains diversification as a practice; here it is simply the headline benefit of the product.
 
 ### Risks and the honest frame
 
-The honest note comes straight from the regulator: like mutual funds, ETFs are not guaranteed or insured by the FDIC or any other government agency, and they all carry some level of risk — you may lose some or all of the money you invest because the securities held by the fund can go down in value. Diversification softens the blow of any single failure; it does not remove the risk that markets as a whole fall. One more fact rounds out the picture: many ETFs track an index, following a passive strategy designed to achieve approximately the same return as that index before fees, and index funds of this kind are usually low-cost by design. Put it all together and the honest framing is simple: an ETF is a fund with a ticker. It is a real product with real mechanics — a tradable basket — but it is not a savings account, not a guarantee, and not a single stock in disguise.
+The honest note comes straight from the regulator: like mutual funds, ETFs are not insured by the FDIC or any government agency, and every one carries risk — you may lose some or all of the money you invest because the securities held by the fund can go down in value. Diversification softens the blow of any single failure; it does not remove the risk that markets as a whole fall. One more fact rounds out the picture: many ETFs track an index, following a passive strategy designed to achieve approximately the same return as that index before fees, and index funds of this kind are usually low-cost by design. Put it all together and the honest framing is simple: an ETF is a fund with a ticker. It is a real product with real mechanics — a tradable basket — but it is not a savings account, not a guarantee, and not a single stock in disguise.
 
 ## Key Vocabulary
 
-- **exchange-traded fund (ETF)** — A pooled investment that holds a basket of securities and trades on exchanges like a stock; the working definition this lesson adopts from SEC Investor.gov.
+- **exchange-traded fund (ETF)** — A pooled investment that holds a basket of securities and trades on exchanges like a stock; this lesson takes its working definition from SEC Investor.gov.
 - **exchange** — A marketplace where securities such as stocks and ETF shares are bought and sold during trading hours.
 - **portfolio** — The combined holdings a fund owns; for an ETF, the basket of securities standing behind its shares.
 - **index** — A measure of a group of securities, such as a set of large companies, that many funds track.
@@ -86,7 +86,7 @@ An ETF is a fund with a ticker: a pooled basket of securities whose shares trade
 
 ## Practice Question Bank
 
-1. **Per the working definition this lesson adopts from SEC Investor.gov, what is an exchange-traded fund (ETF)?**
+1. **Per this lesson takes its working definition from SEC Investor.gov, what is an exchange-traded fund (ETF)?**
    - A pooled investment that holds a basket of securities and trades on exchanges like a stock
    - A loan made to a company or government in exchange for interest payments
    - A savings product offered by a bank that pays a fixed interest rate

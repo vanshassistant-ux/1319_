@@ -21,7 +21,7 @@ For most people, the checking account is the front door of their financial life.
 
 ### The everyday money account
 
-A checking account is a bank account built for money in motion. It is the account where a paycheck lands, where a rent payment is pulled from, and where the debit card in your wallet draws its funds. The working definition used here — a bank account for everyday money in and out — reflects how the Consumer Financial Protection Bureau and the FDIC describe these accounts: deposit accounts that people use to hold and move the money they spend. Money comes in as deposits: cash handed to a teller, a check deposited through a phone app, or an electronic transfer such as a paycheck sent by direct deposit. Money goes out as spending: a debit-card purchase at a register, a check written for rent, an automatic bill payment, or a transfer to another person's account. The account itself does nothing fancy. It exists to be used, and its only number that matters day to day is the balance.
+A checking account is a bank account built for money in motion. It is the account where a paycheck lands, where a rent payment is pulled from, and where the debit card in your wallet draws its funds. The working definition used here — a bank account for everyday money in and out — matches how the Consumer Financial Protection Bureau and the FDIC describe them: deposit accounts people use to hold and move spending money. Money comes in as deposits: cash handed to a teller, a check deposited through a phone app, or an electronic transfer such as a paycheck sent by direct deposit. Money goes out as spending: a debit-card purchase at a register, a check written for rent, an automatic bill payment, or a transfer to another person's account. The account itself does nothing fancy. It exists to be used, and its only number that matters day to day is the balance.
 
 ### How money moves in and out
 
@@ -37,7 +37,7 @@ Checking accounts are not free by magic, and the costs are worth naming generall
 
 ### FDIC insurance and the honest bottom line
 
-Deposits in checking accounts at FDIC-insured banks are government-protected. The Federal Deposit Insurance Corporation, an independent agency created by Congress, insures deposits automatically — no paperwork needed — up to at least $250,000 per depositor per bank, covering the money if the bank fails. That is a real backstop, and it is why keeping spending money in a bank account is safer than holding it as cash. The honest framing, though, is that a checking account is a tool for flow, not for growth. It moves money in and out; it does not build wealth. The balance grows only when more comes in than goes out, and the account itself pays little or no interest. The job of managing one is small and specific: watch the balance, know what the fees are, know when deposits clear, and keep the flow from going negative.
+Money in checking accounts at FDIC-insured banks carries government protection. The Federal Deposit Insurance Corporation, an independent agency created by Congress, insures deposits automatically — no paperwork needed — up to at least $250,000 per depositor per bank, covering the money if the bank fails. That is a real backstop, and it is why keeping spending money in a bank account is safer than holding it as cash. The honest framing, though, is that a checking account is a tool for flow, not for growth. It moves money in and out; it does not build wealth. The balance grows only when more comes in than goes out, and the account itself pays little or no interest. The job of managing one is small and specific: watch the balance, know what the fees are, know when deposits clear, and keep the flow from going negative.
 
 ## Key Vocabulary
 
@@ -66,6 +66,17 @@ Deposits in checking accounts at FDIC-insured banks are government-protected. Th
 3. Jin's rent payment of $1,050 is scheduled to leave his checking account on the 1st, but on the 30th his balance is $890 and no deposit arrives before the payment. If his bank covers the transaction, what is most likely to happen? **A.** The account goes negative and Jin owes the $160 shortfall plus an overdraft fee
 4. Which is the best way to think about the money in a checking account? **D.** Money flowing in and out for everyday spending like paychecks, bills, and purchases
 5. How does linking a savings account for overdraft protection differ from opting out of overdraft coverage? **A.** Linking lets the bank pull money from savings to cover the shortfall, often for a smaller fee; opting out makes the debit card be declined instead
+
+## Common Mistakes
+
+- **Spending a deposit before it clears.** — Cash and small checks are usually available quickly — often the next business day — but larger checks can be held for days while the bank collects the money. Spend the available balance, not the total, until the deposit has cleared.
+- **Setting up automatic bill payments and never looking at the account again.** — Automatic payments are convenient, but they land on whatever balance is there. Know the dates and amounts of scheduled payments, and check the balance before they hit — one scheduled payment can overdraw the account.
+- **Keeping money meant for later in checking because it is easy to reach.** — Easy to reach means easy to spend, and checking pays little or nothing in interest. Money meant to sit belongs in a savings account (a sibling topic); checking is for money in motion.
+- **Assuming FDIC insurance protects the account from everything.** — FDIC insurance protects the deposited money, up to the coverage limit, if the bank fails. It does not cover your own overspending: overdraft fees and declined payments still happen no matter how insured the account is.
+
+## Key Takeaway
+
+A checking account is a tool for flow, not growth: money comes in, money goes out, and the job is watching the balance, knowing the fees, and keeping the flow from going negative.
 
 ## Sources
 

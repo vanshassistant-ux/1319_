@@ -52,7 +52,7 @@ Coverage generally comes from one of two places. A job-based health plan is cove
 
 ## Eli-10
 
-**Simplified explanation.** Health insurance is a deal you make with a company: you pay a set amount every month, and if you get sick or hurt, the company pays most of the bill. It is not free care. You still pay some costs yourself — a deductible before the plan starts paying, then fixed copays and percentage coinsurance — but there is a ceiling: the out-of-pocket maximum, the most you pay in a year. Doctors inside the plan's network cost you less than doctors outside it. You usually get the plan through a job or buy one during open enrollment, and many plans cover check-ups and screenings at no cost. The whole point is that you can budget the premium and stop worrying that one bad year of health will wipe you out.
+**Simplified explanation.** Health insurance works as a bargain with a company: you pay a set amount monthly, and if you get sick or hurt, the company covers most of the bill. It is not free care. You still pay some costs yourself — a deductible before the plan starts paying, then fixed copays and percentage coinsurance — but there is a ceiling: the out-of-pocket maximum, the most you pay in a year. Doctors inside the plan's network cost you less than doctors outside it. You usually get the plan through a job or buy one during open enrollment, and many plans cover check-ups and screenings at no cost. The whole point is that you can budget the premium and stop worrying that one bad year of health will wipe you out.
 
 ## Eli's Analogy
 

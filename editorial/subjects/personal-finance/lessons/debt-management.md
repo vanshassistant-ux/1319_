@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Debt is money owed to a lender, typically repaid with interest. Balances get heavy because interest compounds: unpaid interest is added to the balance, and the next month's interest is charged on the larger total. Two common repayment strategies are the debt avalanche, which targets the highest interest rate first, and the debt snowball, which targets the smallest balance first. Credit counseling organizations and debt management plans exist to help, and getting out of debt is a process that takes time.
+Debt is money owed to a lender, normally repaid with interest. Balances get heavy because interest compounds: unpaid interest is added to the balance, and the next month's interest is charged on the larger total. Two common repayment strategies are the debt avalanche, which targets the highest interest rate first, and the debt snowball, which targets the smallest balance first. Credit counseling organizations and debt management plans exist to help, and getting out of debt is a process that takes time.
 
 ## Why This Matters
 
@@ -10,7 +10,7 @@ Almost every adult borrows at some point, and how debt is handled decides how mu
 
 ## Learning Objectives
 
-- Define debt as an amount owed for borrowed funds that is typically repaid with interest, and name the parts of a debt: principal, interest, and payment.
+- Define debt as an amount owed for borrowed funds that is normally repaid with interest, and name the parts of a debt: principal, interest, and payment.
 - Explain why an unpaid balance grows even while payments are being made, using the mechanics of compound interest.
 - Describe the debt avalanche strategy, which repays the highest-interest debt first, and the debt snowball strategy, which repays the smallest balance first.
 - Identify warning signs of unmanageable debt, including paying only the minimum and borrowing new money to pay old debts.
@@ -41,7 +41,7 @@ Debt management and credit scores are the same story from two directions. Every 
 
 ## Key Vocabulary
 
-- **Debt** — An amount owed to a person or organization for borrowed funds, typically repaid with interest by a date set in the repayment terms.
+- **Debt** — An amount owed to a person or organization for borrowed funds, normally repaid with interest by a date set in the repayment terms.
 - **Principal** — The original amount borrowed, on which interest is calculated.
 - **Interest** — The price paid for borrowing, expressed as a percentage rate over a period of time.
 - **Compound interest** — Interest calculated on the principal plus previously accumulated interest, so unpaid interest earns interest of its own.

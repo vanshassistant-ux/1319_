@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Saving is setting money aside for later instead of spending it now — the working definition in this lesson, attributed to Investopedia. People save for goals, for emergencies, and for future income gaps like retirement. Saving differs from investing: it accumulates steadily with little risk, while investing seeks faster growth and accepts more risk. The habit that works is paying yourself first: moving money into savings before you spend the rest. Savings sit in accounts where they can earn interest. Boring? Yes. Powerful? Quietly, enormously.
+Saving is setting money aside for later instead of spending it now — this lesson’s working definition, attributed to Investopedia. People save for goals, for emergencies, and for future income gaps like retirement. Saving differs from investing: it accumulates steadily with little risk, while investing seeks faster growth and accepts more risk. The habit that works is paying yourself first: moving money into savings before you spend the rest. Savings sit in accounts where they can earn interest. Boring? Yes. Powerful? Quietly, enormously.
 
 ## Why This Matters
 
@@ -29,7 +29,7 @@ People save for three broad reasons, and naming them keeps the habit honest. Goa
 
 ### Saving versus investing
 
-Saving and investing are siblings, not twins. Saving keeps money safe and available: the balance barely moves, and growth is modest — mainly interest paid on the account. Investing takes a portion of savings and buys assets such as stocks, bonds, or mutual funds, aiming for faster growth over time while accepting that the value can fall. Investopedia makes the link explicit: to make money grow faster, you may need to take a portion of your savings and invest it. MyMoney.gov groups the two under one pillar — SAVE & INVEST — because both build toward the future, but the risk profiles differ. Investing has its own lesson in this course; here it matters only as the contrast that defines saving: stable accumulation versus growth with risk.
+Saving and investing are siblings, not twins. Saving keeps money safe and available: the balance barely moves, and growth is modest — mainly interest paid on the account. Investing takes a portion of savings and buys assets such as stocks, bonds, or mutual funds, aiming for faster growth over time while accepting that the value can fall. Investopedia makes the link explicit: to make money grow faster, you may need to take a portion of your savings and invest it. MyMoney.gov groups MyMoney.gov groups both under one pillar — SAVE & INVEST — since both build toward the future, though the risk profiles differ. Investing has its own lesson in this course; here it matters only as the contrast that defines saving: stable accumulation versus growth with risk.
 
 ### The habit: pay yourself first
 
@@ -89,38 +89,38 @@ Saving is the practice of setting money aside for later instead of spending it n
 ## Practice Question Bank
 
 1. **Which action best matches the pay-yourself-first habit?**
-   - A) Paying all bills and expenses first, then saving whatever is left over
-   - B) Moving a set amount into savings on payday, before spending the rest
-   - C) Buying shares of stock as soon as a paycheck arrives
-   - D) Putting a tax refund into savings only if nothing else comes up first
+   - A. Paying all bills and expenses first, then saving whatever is left over
+   - B. Moving a set amount into savings on payday, before spending the rest
+   - C. Buying shares of stock as soon as a paycheck arrives
+   - D. Putting a tax refund into savings only if nothing else comes up first
    - **Answer: B.** Pay yourself first means savings comes before spending: the CFPB describes automatic transfers that move money into savings before those funds are committed to other expenses. Paying bills first and saving leftovers is the opposite habit, buying stock is investing, and saving only when nothing else comes up is conditional, not scheduled.
 
 2. **Saving and investing both build money for the future, but they differ in a key way. Which statement captures the difference?**
-   - A) Saving holds money with little risk and modest growth, while investing seeks higher growth and accepts the risk of loss
-   - B) Saving always earns more than investing over any period of time
-   - C) Saving requires a bank account, while investing never involves accounts at all
-   - D) Investing guarantees your money grows, while saving can lose value overnight
+   - A. Saving holds money with little risk and modest growth, while investing seeks higher growth and accepts the risk of loss
+   - B. Saving always earns more than investing over any period of time
+   - C. Saving requires a bank account, while investing never involves accounts at all
+   - D. Investing guarantees your money grows, while saving can lose value overnight
    - **Answer: A.** Investopedia describes investing a portion of savings in securities like stocks and bonds as a way to make money grow faster — with risk. Saving keeps money safe and available with modest interest, which is why the two are siblings, not twins. The other options reverse the risk picture or invent false rules.
 
 3. **Theo's car needs a $900 repair and he has no savings. Based on the lesson, what is the most likely result?**
-   - A) The repair costs him nothing because car repairs are covered by law
-   - B) His employer is required to cover the cost of the repair
-   - C) He borrows at high interest or puts the bill on a credit card, owing more in the long run
-   - D) The mechanic must fix the car for free if Theo cannot pay
+   - A. The repair costs him nothing because car repairs are covered by law
+   - B. His employer is required to cover the cost of the repair
+   - C. He borrows at high interest or puts the bill on a credit card, owing more in the long run
+   - D. The mechanic must fix the car for free if Theo cannot pay
    - **Answer: C.** The CFPB warns that without savings, an unexpected expense can lead to borrowing at high interest rates or debt that is hard to repay — so the bill ends up costing more. Nothing requires employers, mechanics, or the law to cover a personal car repair.
 
 4. **Priya receives a $2,400 tax refund and wants to build a saving habit. Which plan follows what the lesson teaches?**
-   - A) Spend it now, treating the refund as found money
-   - B) Keep it in her wallet for emergencies and spend it as needed
-   - C) Invest all of it in one new company's stock because savings grow fastest that way
-   - D) Put it in a savings account and set up an automatic transfer from each future paycheck into savings
+   - A. Spend it now, treating the refund as found money
+   - B. Keep it in her wallet for emergencies and spend it as needed
+   - C. Invest all of it in one new company's stock because savings grow fastest that way
+   - D. Put it in a savings account and set up an automatic transfer from each future paycheck into savings
    - **Answer: D.** The lesson teaches paying yourself first with automation: the CFPB recommends moving money into savings on a schedule, and its Start Small, Save Up campaign treats a refund as a chance to kick-start savings. Spending it ignores the habit, cash in a wallet sits with spending money, and putting everything in one stock is investing, not saving.
 
 5. **According to the CFPB, which statement about keeping money in a savings account at a bank or credit union is true?**
-   - A) It is generally one of the safest places to keep money, and the account can grow over time with interest
-   - B) It is riskier than keeping cash at home
-   - C) It is safe only if the account is used for daily spending
-   - D) It earns interest only when the balance stays above $10,000
+   - A. It is generally one of the safest places to keep money, and the account can grow over time with interest
+   - B. It is riskier than keeping cash at home
+   - C. It is safe only if the account is used for daily spending
+   - D. It earns interest only when the balance stays above $10,000
    - **Answer: A.** The CFPB describes an account at a bank or credit union as generally one of the safest places to keep money, and notes that a savings account gives money the opportunity to grow over time with interest. The other options invent risks and rules that no source supports.
 
 ## Sources

@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-A stock is a share of ownership in a company — the working definition this lesson adopts from SEC Investor.gov. Owners can earn in two ways: the price rises (appreciation) or the company pays dividends out of its profits. But prices fall as well as rise, so you can lose money. Stocks are usually one piece of a diversified portfolio, bought through a brokerage account or a fund, and they suit long horizons. A stock is ownership with a mood ring: real, valuable, and changeable.
+A stock is a share of ownership in a company — the working definition used here comes from SEC Investor.gov. Owners can earn in two ways: the price rises (appreciation) or the company pays dividends out of its profits. But prices fall as well as rise, so you can lose money. Stocks are usually one piece of a diversified portfolio, bought through a brokerage account or a fund, and they suit long horizons. A stock is ownership with a mood ring: real, valuable, and changeable.
 
 ## Why This Matters
 
@@ -20,7 +20,7 @@ Stocks sit at the center of nearly every serious conversation about building wea
 
 ### What a stock is
 
-A stock is a type of security that gives the stockholder a share of ownership in a company — the working definition this lesson adopts from SEC Investor.gov, the U.S. securities regulator's education site. Stocks are also called equities. When a company issues stock, it sells slices of itself to raise money, and each slice is a share. Own shares and you own part of the business: if the company grows and prospers, your slice can become more valuable; if it stumbles, your slice can become worth less. Some stocks also carry voting rights, so owners get a say at shareholder meetings — another sign of real ownership, though most personal investors experience that ownership through price changes and dividend checks. The word ownership carries the real weight here. Unlike a loan, which a borrower must repay, a share of stock is no promise of repayment. You are an owner, not a creditor, and owners rise and fall with the business itself.
+A stock is a type of security that gives the stockholder a share of ownership in a company — the working definition used here comes from SEC Investor.gov, the securities watchdog's site for investors. Stocks are also called equities. When a company issues stock, it sells slices of itself to raise money, and each slice is a share. Own shares and you own part of the business: if the company grows and prospers, your slice can become more valuable; if it stumbles, your slice can become worth less. Some stocks also carry voting rights, so owners get a say at shareholder meetings — another sign of real ownership, though most personal investors experience that ownership through price changes and dividend checks. The word ownership carries the real weight here. Unlike a loan, which a borrower must repay, a share of stock is no promise of repayment. You are an owner, not a creditor, and owners rise and fall with the business itself.
 
 ### How owners earn: appreciation and dividends
 
@@ -81,7 +81,7 @@ A stock is a share of ownership in a company — real value that rises and falls
 
 ## Practice Question Bank
 
-1. **According to the working definition this lesson adopts from SEC Investor.gov, what is a stock?**
+1. **According to the working definition used here comes from SEC Investor.gov, what is a stock?**
    - A share of ownership in a company
    - A loan you make to a company that must be repaid with interest
    - A government guarantee that a company will grow and do well

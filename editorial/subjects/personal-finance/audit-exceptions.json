@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "subjectSlug": "personal-finance",
+  "accepted": [
+    { "match": "\"budget\" defined differently in budgeting and cash-flow (overlap 18%)", "reason": "budgeting owns the full budget definition; cash-flow uses the word for the plan against which actuals are compared. Compatible depth difference." },
+    { "match": "\"income\" defined differently in budgeting and income (overlap 18%)", "reason": "income owns the full definition; budgeting names income as the plan's input. Compatible depth difference." },
+    { "match": "\"tracking\" defined differently in budgeting and expenses (overlap 11%)", "reason": "tracking expenses vs tracking a budget — same practice, different object; compatible." },
+    { "match": "\"cash flow\" defined differently in budgeting and cash-flow (overlap 8%)", "reason": "cash-flow owns the full definition; budgeting references it as the month's actuals. Compatible." },
+    { "match": "\"deduction\" defined differently in income and taxes (overlap 22%)", "reason": "income names paycheck deductions (withholding); taxes defines tax deductions properly. Different senses, no conflict." },
+    { "match": "\"overdraft\" defined differently in cash-flow and checking-accounts (overlap 17%)", "reason": "checking-accounts owns the mechanism; cash-flow names it as a symptom of negative flow. Compatible." },
+    { "match": "\"interest\" defined differently in (saving, savings-accounts, loans, auto-loans, debt-management) pairs", "reason": "the interest topic owns the full definition; sibling lessons use the term in their own context (reward for saving, cost of borrowing). Compatible depth differences across a 32-topic subject." },
+    { "match": "\"balance\" defined differently in checking-accounts/savings-accounts and compound-growth (overlap 14%)", "reason": "account balance vs balance of an amount growing — different senses, no conflict." },
+    { "match": "\"principal\" defined differently in loans/mortgages and bonds (overlap ~14%)", "reason": "loan principal vs bond principal — same concept, different product contexts. Compatible." },
+    { "match": "\"grace period\" defined differently in credit-cards and student-loans (overlap 9%)", "reason": "billing-cycle grace period vs post-graduation grace period — same name, different mechanics; both correctly defined in context." },
+    { "match": "\"down payment\" defined differently in auto-loans and mortgages (overlap 14%)", "reason": "same concept applied to two loan types; each lesson defines it for its product. Compatible." },
+    { "match": "\"premium\" defined differently in health-insurance-basics and life-insurance-basics (overlap 17%)", "reason": "both mean the periodic payment for coverage; each lesson states it in its own context. Compatible." },
+    { "match": "\"time horizon\" defined differently in investing/stocks/compound-growth (overlap 9%)", "reason": "same concept, each lesson states it in one line for its own purpose. Compatible." },
+    { "match": "\"portfolio\" defined differently in investing/stocks/mutual-funds/etfs (overlap 0-20%)", "reason": "portfolio as a personal collection vs a fund's holdings vs an ETF's basket — consistent core idea, product-specific framing. Compatible." }
+  ],
+  "notes": [
+    "32-topic subject: 91 audit findings initially, 64 fixed orchestrator-side (40 GRAM paren-markers 'A)' option format in 2 lessons; 4 MD missing headings; 2 SRCDUP consolidations mymoney-gov-borrow/mymoney-borrow + ftc-what-to-do-if-scammed/ftc-what-to-do-if-you-were-scammed; 12 REUSE + 9 QNEAR reworded). Final: 27 compatible TERM findings only.",
+    "Dominant REUSE families: (a) shared CFPB/FDIC account descriptions (checking/savings — 104 shared 8-grams initially), (b) SEC Investor.gov attribution sentences across investing/stocks/mutual-funds/etfs, (c) fund-basket definitions (mutual-funds/etfs). All fixed with per-lesson distinct phrasings; md variants chased individually (JSON rewords often missed md-only strings; case-sensitive 'A monthly' style variants cost extra rounds).",
+    "GRAN paren findings were the 'A)' answer-option markers (same false positive as accounting general-ledger) — converted to 'A.' format in financial-scams + saving.",
+    "Two SRCDUP pairs consolidated: mymoney-gov-borrow (minted by loans) vs registered mymoney-borrow; ftc-what-to-do-if-scammed (consumer-protection) vs ftc-what-to-do-if-you-were-scammed (financial-scams). Registry 960 → 958.",
+    "Retry pattern confirmed 3x in one batch (mortgages, debt-management, life-insurance-basics) — all research-complete handoffs resumed with embedded verified source sets and passed first-run. Resume workers use api_calls 12-26.",
+    "NO financial advice anywhere: 50/30/20 framed as a guideline (Warren/Tyagi attribution); avalanche/snowball named as common approaches; credit-counselors/DMPs named without endorsements; no tax advice (IRS facts general); no product recommendations; FTC/CFPB scam warnings factual, no fear-mongering; 300-850 score range labeled common-U.S.-models, not universal; FDIC $250,000 figure factual.",
+    "Mortgage lesson: 'largest loan most households ever take' explicitly labeled an inference, not a sourced quote. Worked-example arithmetic independently computed ($216,000 @ 6.5%/30yr ≈ $1,365/mo, ~$491,500 repaid, 85% year-one interest).",
+    "Global progress: **1025/1299 (78.9%), 34/44 subjects.**"
+  ]
+}

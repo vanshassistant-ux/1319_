@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-A mutual fund is a pooled investment: an investment company that gathers money from many investors and invests it in a portfolio of securities such as stocks and bonds, managed by professionals — the working definition this lesson adopts from SEC Investor.gov. One purchase buys a slice of a whole basket, giving instant diversification, professional management, and access with a modest amount of money. The trade-off is a fee: funds charge management fees and expense ratios, and their value can fall as well as rise.
+A mutual fund is a pooled investment: an investment company that gathers money from many investors and invests it in a portfolio of securities such as stocks and bonds, managed by professionals — the working definition in this lesson comes from SEC Investor.gov. One purchase buys a slice of a whole basket, giving instant diversification, professional management, and access with a modest amount of money. The trade-off is a fee: funds charge management fees and expense ratios, and their value can fall as well as rise.
 
 ## Why This Matters
 
@@ -20,7 +20,7 @@ Mutual funds are how most people first invest beyond savings, and they sit insid
 
 ### What a mutual fund is
 
-The working definition in this lesson comes from SEC Investor.gov, the U.S. securities regulator's education site: a mutual fund is an investment company that pools money from many investors and invests it in a portfolio of securities — stocks, bonds, short-term money-market instruments, other assets, or some combination. The combined holdings are called the fund's portfolio, and the portfolio is managed by an SEC-registered investment adviser. Three parts matter. Pooling: thousands of investors' dollars combine into one larger pot. Holding many securities: the fund owns a basket, not a single item. Professional management: an adviser decides what the basket contains and adjusts it over time. Each share an investor buys represents part ownership of the portfolio and of the gains and losses it produces.
+The working definition in this lesson comes from SEC Investor.gov, the regulator's investor-education site: a mutual fund is an investment company that pools money from many investors and invests it in a portfolio of securities — shares of stocks, bonds, short-term money-market instruments, other assets, or some combination. The combined holdings are called the fund's portfolio, and the portfolio is managed by an SEC-registered investment adviser. Three parts matter. Pooling: thousands of investors' dollars combine into one larger pot. Holding many securities: the fund owns a basket, not a single item. Professional management: an adviser decides what the basket contains and adjusts it over time. Each share an investor buys represents part ownership of the portfolio and of the gains and losses it produces.
 
 ### How the pooling works
 
@@ -36,7 +36,7 @@ Running a fund costs money, and the fund passes those costs to investors by dedu
 
 ### Funds versus stocks, index funds, and the honest frame
 
-Buying one share of a stock buys part of one company; buying one share of a mutual fund buys part of a whole portfolio. That single difference explains the fund's appeal and its fee: you are paying for a basket you did not have to assemble. Index funds are the low-cost corner of the fund world — Investor.gov describes them as funds that follow a passive strategy designed to achieve approximately the same return as a particular market index before fees. The honest frame completes the picture: a mutual fund is convenience with a fee. Funds are not guaranteed or insured by the FDIC or any government agency, you can lose some or all of your money, and past performance does not predict future returns. A fund is a tool, not a promise.
+Buying one share of a stock buys part of one company; buying one share of a mutual fund buys part of a whole portfolio. That single difference explains the fund's appeal and its fee: you are paying for a basket you did not have to assemble. Index funds are the low-cost corner of the fund world — Investor.gov describes them as funds that follow a passive strategy designed to aim at roughly the return of a particular market index before fees. The honest frame completes the picture: a mutual fund is convenience with a fee. Funds are not guaranteed or insured by the FDIC or any government agency, you can lose some or all of your money, and past performance does not predict future returns. A fund is a tool, not a promise.
 
 ## Key Vocabulary
 
@@ -47,7 +47,7 @@ Buying one share of a stock buys part of one company; buying one share of a mutu
 - **Professional management** — A fund feature in which a trained investment adviser selects and adjusts the portfolio's holdings on investors' behalf.
 - **Management fee** — The portion of a fund's assets paid to the investment adviser for managing the portfolio.
 - **Expense ratio** — The fund's total annual operating expenses expressed as a percentage of its average net assets; the yearly cost of owning the fund.
-- **Index fund** — A mutual fund that follows a passive strategy designed to achieve approximately the same return as a particular market index before fees.
+- **Index fund** — A mutual fund that follows a passive strategy designed to aim at roughly the return of a particular market index before fees.
 
 ## Eli-10
 
@@ -82,7 +82,7 @@ A mutual fund is a pooled, professionally managed basket of securities: one purc
 
 ## Practice Question Bank
 
-**Question 1.** According to the working definition this lesson adopts from SEC Investor.gov, what is a mutual fund?
+**Question 1.** According to the working definition in this lesson comes from SEC Investor.gov, what is a mutual fund?
 
 - A. An investment company that pools money from many investors and invests it in a portfolio of securities
 - B. A single share of ownership in one company
@@ -125,7 +125,7 @@ A mutual fund is a pooled, professionally managed basket of securities: one purc
 - C. A fund that guarantees a minimum return
 - D. A fund that pools money but has no manager
 
-**Correct answer: A.** Investor.gov describes index funds as following a passive strategy designed to achieve approximately the same return as a particular market index before fees, with lower fees than actively managed funds. Index funds hold the securities in an index — not only bonds — and they still have advisers; no fund guarantees a return.
+**Correct answer: A.** Investor.gov describes index funds as following a passive strategy designed to aim at roughly the return of a particular market index before fees, with lower fees than actively managed funds. Index funds hold the securities in an index — not only bonds — and they still have advisers; no fund guarantees a return.
 
 ## Sources
 

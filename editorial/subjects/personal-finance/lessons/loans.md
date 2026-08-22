@@ -21,7 +21,7 @@ Almost every household borrows at some point, and loans are how most people hand
 
 ### Borrowed money with a repayment plan
 
-A loan is money borrowed that is repaid over time, usually with interest. That working definition matches how official sources describe the arrangement: the SEC's Investor.gov glossary defines debt as an amount owed for borrowed funds, typically repaid with interest by a specific date set in the repayment terms; MyMoney.gov, the U.S. Treasury's financial-education site, describes borrowing as a way to purchase something now and pay for it over time; and the Corporate Finance Institute defines a loan as a sum of money borrowed that is paid back with interest within a given period. Every loan has four parts. The principal is the amount borrowed, on which interest is calculated — borrow $2,400 and the principal is $2,400. The interest is the price paid for borrowing, expressed as a percentage rate over a period of time — 8 percent per year in this example. The term is the length of the repayment period — here, 36 months. The payment is the periodic amount the borrower pays, typically covering the interest charged plus a slice of the principal — $75.21 a month on this loan. Repay all four parts and the loan is done.
+A loan is money borrowed that is repaid over time, usually with interest. That working definition matches how official sources describe the arrangement: the SEC's Investor.gov glossary defines debt as an amount owed for borrowed funds, normally repaid with interest on a schedule set out in the repayment terms; MyMoney.gov, the U.S. Treasury's financial-education site, describes borrowing as a way to purchase something now and pay for it over time; and the Corporate Finance Institute defines a loan as a sum of money borrowed that is paid back with interest within a given period. Every loan has four parts. The principal is the amount borrowed, on which interest is calculated — borrow $2,400 and the principal is $2,400. The interest is the price paid for borrowing, quoted as a percentage per period — 8 percent per year in this example. The term is the length of the repayment period — here, 36 months. The payment is the periodic amount the borrower pays, typically covering the interest charged plus a slice of the principal — $75.21 a month on this loan. Repay all four parts and the loan is done.
 
 ### Secured versus unsecured: collateral versus promise
 
@@ -43,7 +43,7 @@ When loans are compared, three features matter, stated factually: the rate, the 
 
 - **loan** — Money borrowed that is repaid over time, usually with interest.
 - **principal** — The amount of money borrowed, on which interest is calculated.
-- **interest** — The price paid for borrowing money, expressed as a percentage rate over a period of time.
+- **interest** — The price paid for borrowing money, quoted as a percentage per period.
 - **term** — The length of time a borrower has to repay a loan.
 - **payment** — A periodic amount paid on a loan, typically covering interest plus part of the principal.
 - **collateral** — An asset a borrower pledges to back a loan, which the lender may take if the loan is not repaid.

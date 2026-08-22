@@ -87,46 +87,46 @@ Scams run on pressure, secrecy, and promises too good to be true, and they work 
 
 **Q1.** According to the working definition in this lesson, what is a financial scam?
 
-- A) A scheme designed to take money or personal information dishonestly
-- B) An unexpected offer that turns out to be a poor deal
-- C) Any sales call from a company you do not recognize
-- D) A legal way for businesses to collect unpaid debts
+- A. A scheme designed to take money or personal information dishonestly
+- B. An unexpected offer that turns out to be a poor deal
+- C. Any sales call from a company you do not recognize
+- D. A legal way for businesses to collect unpaid debts
 
 *Answer: A — The lesson's working definition, built from FTC consumer-advice materials, is a scheme designed to take money or personal information dishonestly. Poor deals, unfamiliar sales calls, and debt collection are different matters.*
 
 **Q2.** Which combination is a red flag the lesson names for spotting a scam?
 
-- A) A written contract and a cooling-off period
-- B) Pressure to act fast and payment by gift card or wire
-- C) A business license and a physical storefront
-- D) References you can call and a slow approval process
+- A. A written contract and a cooling-off period
+- B. Pressure to act fast and payment by gift card or wire
+- C. A business license and a physical storefront
+- D. References you can call and a slow approval process
 
 *Answer: B — The lesson names pressure to act fast, payment by gift card or wire, secrecy, and too-good-to-be-true returns as red flags. Written contracts, licenses, references, and time to decide are features of legitimate offers.*
 
 **Q3.** Nadia gets a text that looks like it is from her delivery company: her package is “stuck” and she must tap a link to confirm her address and log in. Which scam type from this lesson is this?
 
-- A) An advance-fee scam
-- B) A prize scam
-- C) Phishing
-- D) An investment scam
+- A. An advance-fee scam
+- B. A prize scam
+- C. Phishing
+- D. An investment scam
 
 *Answer: C — Phishing uses fake messages that look like they come from a real company to get you to click a link and enter account details. Advance-fee and prize scams ask for money up front, and investment scams promise big returns.*
 
 **Q4.** A caller tells Tomas he has won a vacation package but must buy a $200 gift card and read the numbers over the phone to “confirm” the prize. What is the best response based on this lesson?
 
-- A) Buy the gift card but read only the last four digits
-- B) Ask to be called back tomorrow and then decide
-- C) Send the gift card number by email instead of by phone
-- D) Stop the call and report it to the FTC
+- A. Buy the gift card but read only the last four digits
+- B. Ask to be called back tomorrow and then decide
+- C. Send the gift card number by email instead of by phone
+- D. Stop the call and report it to the FTC
 
 *Answer: D — The lesson's response is stop, verify, report: never pay someone who insists on gift cards, and report the scam to the FTC at ReportFraud.ftc.gov. Real prizes never require payment — real sweepstakes are free and by chance.*
 
 **Q5.** A cousin insists she is too smart to be scammed, so she does not need the red-flag checklist. Which response best follows the lesson's honest note about why scams work?
 
-- A) Scams target trust, fear, and greed — levers that work on everyone — so the checklist is the real defense
-- B) She is right: scammers only fool people who ignore warnings
-- C) The checklist matters only for prize scams, which are easy to spot
-- D) Smart people are safer because scammers avoid them
+- A. Scams target trust, fear, and greed — levers that work on everyone — so the checklist is the real defense
+- B. She is right: scammers only fool people who ignore warnings
+- C. The checklist matters only for prize scams, which are easy to spot
+- D. Smart people are safer because scammers avoid them
 
 *Answer: A — The lesson's honest note is that scams work by targeting trust, fear, and greed, which are normal human levers — so confidence is no shield, and a calm, slow checklist is the practical defense.*
 
