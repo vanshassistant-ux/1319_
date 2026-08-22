@@ -1,0 +1,134 @@
+# Diversification
+
+## In 30 Seconds
+
+Diversification means spreading your money across different investments instead of putting it all into one. The classic line — don't put all your eggs in one basket — is the whole idea. It works because different assets often move differently: when one holding falls, another may hold steady or rise. Diversification limits the damage any single holding can do, but it cannot remove all risk, and it trades away some upside for less downside.
+
+## Why This Matters
+
+Most financial failures share one shape: too much was riding on a single thing. A shop that depends on one supplier, a saver who owns one stock, a fund built on one bet — each is one bad event away from disaster. Diversification is the classic answer to that problem, and it is the most widely used risk-management idea in finance, from individual savers to the largest institutions. Understanding it lets you see why concentrating money feels exciting but leaves you exposed, and why spreading it feels boring but is safer. It also keeps expectations honest: diversification protects against single failures, yet it does not make losses impossible, and it costs some upside. Knowing both sides of that trade is what makes the idea useful rather than a slogan.
+
+## Learning Objectives
+
+- Define diversification as spreading investments across different assets to reduce risk, using the working definition attributed to Investor.gov.
+- Explain why diversification works: different assets often move differently, with the umbrella-and-sunglasses shops example.
+- Describe what diversification does (limits the damage any single holding can do) and what it does not do (cannot remove all risk).
+- Name the three levels of diversification — across companies, across industries, and across asset classes — each with one line.
+- Compare diversification with concentration as spreading versus betting, including the trade-off between them.
+- Explain the honest framing: diversification trades away some upside for less downside.
+
+## The College Version
+
+### What diversification is
+
+Investor.gov, the SEC's investor education site, states the working definition this lesson uses: diversification is the practice of spreading money among different investments to reduce risk, summed up as "don't put all your eggs in one basket." CFI describes the same technique as allocating capital to a mix of different investments, with the goal of reducing the swings in the whole portfolio by offsetting losses in one asset with gains in another. OpenStax's Principles of Finance agrees: diversification means owning a variety of assets so that no single one decides the outcome. The core is consistent across all three: spread the money, and one failure stops being the whole story.
+
+### Why it works: different assets move differently
+
+The engine of diversification is that different assets often respond differently to the same conditions. OpenStax puts it directly: the gains in one holding can offset the losses in another, washing away some of the volatility. Original example: two shops on the same street, one selling umbrellas and one selling sunglasses. In a rainy summer the umbrella shop sells out while the sunglasses shop sits quiet; in a sunny summer the reverse happens. Someone who owns both shops earns steadily either way; someone who owns only one rides a roller coaster. The same logic applies to investments — holdings that react to different conditions balance each other, while holdings that react alike, such as two airlines or two oil companies, barely balance anything at all.
+
+### What diversification does and does not do
+
+What it does: it shrinks the damage any single holding can do. If one company in a portfolio fails — a product recall, a missed forecast, weak management — the rest of the portfolio carries on. OpenStax calls this protection against firm-specific risk, the uncertainty tied to one company or one industry. What it does not do: it cannot remove all risk. Broad events — a recession, a jump in interest rates, a pandemic — pull nearly everything down at the same time. OpenStax notes there is a level below which portfolio risk does not drop, no matter how diversified the portfolio becomes, and CFI agrees: diversification smooths company-specific risk but does not usually touch the systematic risk of the market as a whole. Investor.gov's own wording is honest about this — spreading money works in the hope that gains offset losses, not as a promise.
+
+### The three levels: companies, industries, asset classes
+
+Diversification happens at three levels, one line each. Across companies — hold several businesses instead of one, so a single company's failure touches only a slice of the money. Across industries — spread holdings within an asset type, because a tourism company, a grocery chain, and a drugmaker respond to very different forces; Investor.gov names sectors such as consumer goods, health care, and technology. Across asset classes — hold different kinds of assets, such as stocks, bonds, and cash, since conditions that hurt one class can help another. Each level adds a different kind of protection, and the levels are usually used together.
+
+### Diversification versus concentration
+
+Concentration is the opposite choice: put most of the money into one investment, one industry, or one idea. That is betting — when the bet wins, the payoff is huge, and when it loses, the damage is huge. Diversification is spreading — the payoff is rarely spectacular, but no single failure can break the plan. The trade-off is simple and unavoidable: you cannot keep the full upside of a single winner and the full protection of many holdings at the same time. OpenStax makes the point concretely: a portfolio of ten airlines is not diversified, because the whole portfolio rises and falls with the airline industry. Spreading across genuinely different holdings is what turns a bet into a balanced position.
+
+### The practical shape
+
+The general practice is many smaller holdings rather than one big bet. OpenStax shows the arithmetic of the idea: portfolio risk drops quickly as the first few holdings are added, and each additional holding after that reduces risk by less — the biggest benefit comes from moving away from one. What counts is difference, not just number: holdings that move together protect little, no matter how many there are. This lesson describes the shape of the practice — breadth plus difference — and it does not advise anyone on specific investments, products, or amounts, which depend on personal goals, time horizon, and circumstances.
+
+### The honest framing
+
+Diversification is a trade, not a free lunch. By owning many positions instead of one, you give up the chance that a single winner delivers a spectacular gain — that is the upside traded away. What you buy with it is a smaller downside: no single failure can wipe you out, and the ride is calmer. OpenStax's conclusion captures the reality check: diversification protects you from being significantly impacted by any one company, but the risk that never goes away — the market's own ups and downs — remains. Investor.gov frames it the same way: you spread your money in the hope that losses get offset. That hope, and the trade it describes, is the honest core of the idea.
+
+## Key Vocabulary
+
+- **Diversification** — Spreading money across different investments so that a setback in any one of them cannot sink the whole plan.
+- **Portfolio** — The full collection of investments that a person or business owns at one time.
+- **Asset** — Anything of value that can be owned or invested in, such as stocks, bonds, or cash.
+- **Asset class** — A broad category of investments, such as stocks, bonds, or cash, whose members share similar features.
+- **Concentration** — Putting a large share of money into one investment or one narrow area, increasing both the potential win and the potential loss.
+- **Correlation** — In plain terms, how closely two investments tend to move together; holdings that move together give less protection.
+- **Firm-specific risk** — The risk tied to one company or industry, such as a product recall or a failed launch.
+- **Market risk** — The risk that broad economic events pull nearly all investments down at the same time.
+- **Volatility** — How widely an investment's value swings from period to period.
+
+## Eli-10
+
+Diversification is the fancy word for not putting all your eggs in one basket. If you carry a dozen eggs in one basket and the basket breaks, you lose all twelve. If you split them across three baskets, one breaking costs you four eggs, not twelve. Money works the same way. Put everything into one investment and that investment's bad news is your bad news, completely. Spread the money across several investments and a setback in one of them only hurts a slice of the whole. That is the entire idea: keep any single failure from being able to take everything down with it. It is the most famous risk-management move in finance because it is simple and it works.
+
+## Eli's Analogy
+
+Imagine packing for a beach picnic. Put every egg in one basket and the walk to the beach is a dare: one stumble and lunch is gone. Split the eggs between two baskets, one in each hand, and a stumble in a puddle costs you only half. The diversification version of the picnic is the same: many baskets, many eggs, and no single basket worth risking everything on.
+
+Where the analogy breaks down: the egg baskets all ride in the same car to the beach — if the car crashes, every basket breaks at once. That is market risk: a broad downturn hits diversified holdings together. And the analogy hides the cost: a single basket that survives the trip delivers all twelve eggs, while the split set only ever delivers its share.
+
+## Worked Example
+
+Rosa, who owns a small print shop, has $10,000 she won in a business award. Option one: put it all into a single electric-bike brand, the holding everyone is praising. Option two: split it five ways — $2,000 each into the bike brand, a grocery chain, a utility, a regional bus company, and a bakery supplier. The bike brand is later hit by a recall and its value falls 40%. All-in: Rosa's $10,000 becomes $6,000. Split: only the bike slice falls — she loses $800 of the $10,000 and keeps $9,200. Had the bike brand doubled instead, all-in would have become $20,000 while the split stays near $10,800 — the upside diversification trades away for that protection.
+
+## Common Mistakes
+
+- **Thinking diversification makes losses impossible** — It reduces how much any single holding can hurt you, but a broad downturn can still pull the whole portfolio down — diversification shrinks risk, it does not abolish it.
+- **Equating many holdings with true diversification** — Ten stocks from one industry still rise and fall together; genuine spreading means holdings that respond to different conditions, across industries and asset classes.
+- **Treating more of the same as spreading** — Buying more of an investment you already own increases concentration, not diversification; the point is difference, not just quantity.
+- **Expecting the best of both worlds** — Diversification trades away some upside for less downside; a single winner could have made more, and that cost is the price of protection.
+
+## Compare / Contrast
+
+- **Diversification vs concentration** — Diversification spreads money across many holdings so no single failure decides the outcome; concentration puts most of the money into one holding, multiplying both the potential win and the potential loss.
+- **Firm-specific risk vs market risk** — Firm-specific risk comes from one company's own troubles and can be diluted by diversification; market risk comes from broad events that hit nearly everything at once and cannot be diversified away.
+
+## Key Takeaway
+
+Diversification spreads money across different investments so that no single failure can sink the whole plan — and it trades some upside for that protection.
+
+## Practice Question Bank
+
+1. **In finance, what does diversification mean?**
+   - A. Putting all available money into the single investment with the best recent results
+   - B. Selling investments as soon as their price falls
+   - C. Spreading money across different investments to reduce risk
+   - D. Borrowing money to buy more of one favored investment
+   - **Answer: C.** Diversification is the practice of spreading money among different investments to reduce risk — the "don't put all your eggs in one basket" strategy. Piling into one winner, selling on dips, or borrowing to buy more of one holding are forms of concentration or timing, not spreading.
+
+2. **A small investor owns both an umbrella shop and a sunglasses shop. In rainy summers the umbrella shop earns well while the sunglasses shop earns little; in sunny summers the reverse happens. What does this pairing demonstrate?**
+   - A. That one shop should be sold to fund the other
+   - B. That holdings responding to different conditions can balance each other's ups and downs
+   - C. That all businesses follow the same seasonal pattern
+   - D. That losses in one holding guarantee gains in another
+   - **Answer: B.** The two shops respond to the same weather in opposite ways, so their earnings balance out across seasons — the core reason diversification works. The pairing shows offsetting moves, not a reason to sell one shop, identical patterns, or any guarantee of gains.
+
+3. **A business owner invests $10,000 in a single company, and the company's stock loses 40% of its value. About how much of the original money is left?**
+   - A. $4,000
+   - B. $10,000
+   - C. $7,000
+   - D. $6,000
+   - **Answer: D.** A 40% loss on $10,000 removes $4,000, leaving $6,000. Concentration means the whole portfolio shares the single holding's fate; spreading the same money across several holdings would have limited the damage to one slice.
+
+4. **Two portfolios each hold ten stocks. Portfolio 1 holds ten airlines; Portfolio 2 holds one airline, a grocery chain, a utility, a drugmaker, and six companies from other industries. Which statement about the two portfolios is most accurate?**
+   - A. Portfolio 2 is better diversified because its holdings respond to a wider range of conditions
+   - B. Portfolio 1 is better diversified because ten stocks spread the risk
+   - C. Both portfolios carry identical risk because both hold ten stocks
+   - D. Neither portfolio carries risk because stocks rarely lose value
+   - **Answer: A.** True diversification comes from holdings that respond to different conditions, not from a count alone. Ten airlines rise and fall together with the industry, so Portfolio 1 is one industry bet, while Portfolio 2 spreads across industries.
+
+5. **Which situation shows what diversification does NOT prevent?**
+   - A. One holding in the portfolio falls after a product recall
+   - B. A broad economic downturn pulls nearly every holding down at the same time
+   - C. One company in the portfolio reports weak sales
+   - D. A single industry experiences a temporary slump
+   - **Answer: B.** Market-wide events such as a broad downturn hit almost all investments at once — that systematic risk cannot be diversified away. A recall, weak sales at one company, or one industry's slump are exactly the firm-specific setbacks diversification is built to soften.
+
+## Sources
+
+- Investor.gov (U.S. Securities and Exchange Commission) — Asset Allocation and Diversification — https://www.investor.gov/introduction-investing/getting-started/asset-allocation
+- Investor.gov (U.S. Securities and Exchange Commission) — Diversification (glossary) — https://www.investor.gov/introduction-investing/investing-basics/glossary/diversification
+- OpenStax Principles of Finance, Section 15.2: Risk and Return to Multiple Assets — https://openstax.org/books/principles-finance/pages/15-2-risk-and-return-to-multiple-assets
+- Corporate Finance Institute (CFI) — Diversification — https://corporatefinanceinstitute.com/resources/management/diversification/

@@ -1,0 +1,144 @@
+# Bonds
+
+## In 30 Seconds
+
+A bond is a loan an investor makes to a borrower — usually a government or a company — in a form that can be bought and sold. The bond names its face value, its coupon (the regular interest payment), and its maturity date, when the principal comes back. In exchange for lending, the investor receives interest payments during the bond's life and the principal at maturity. Bond prices move opposite to interest rates, and two risks matter: default risk and interest-rate risk.
+
+## Why This Matters
+
+Bonds are how governments and companies borrow money on a large scale, and they sit at the center of saving, retirement, and the wider economy. For a lender, a bond is a way to earn regular interest while getting the original amount back on a known date. For a borrower, it is a way to raise money without giving up ownership. For anyone reading the news, bond prices and interest rates explain a great deal of what happens in markets. Understanding what a bond actually is — a loan with a paper trail — makes the language of finance less mysterious and turns a familiar word into a concrete arrangement you can inspect.
+
+## Learning Objectives
+
+- Define a bond as a loan an investor makes to a borrower — usually a government or a company — in tradable form, using the working definition from Investor.gov and echoed by OpenStax and CFI.
+- Name the three core parts of a bond — face value, coupon, and maturity date — with one line and an original example for each.
+- Explain how a bond pays: regular interest during its life plus the principal back at maturity.
+- Describe the inverse relationship between bond prices and interest rates, stated simply, without pricing formulas.
+- Distinguish default risk from interest-rate risk, with one line for each.
+- Contrast bonds with stocks as lending versus owning, and state the honest framing: a bond is a loan with a paper trail.
+
+## The College Version
+
+### What a bond is
+
+Investor.gov, the SEC's investor education site, gives the working definition this lesson uses: a bond is a debt security, similar to an IOU — borrowers issue bonds to raise money from investors willing to lend, and when you buy a bond, you are lending to the issuer, which may be a government, municipality, or corporation. OpenStax's Principles of Finance makes the same point with a concrete example: an investor who buys a $1,000 bond issued by Apple is the lender, and Apple is the borrower. CFI adds the mechanics: the issuer borrows capital from the bondholder and makes payments at a fixed or variable interest rate for a specified period. Two words carry the definition: loan and tradable. A bond is an investment that can be bought and sold, so the loan can change hands before it comes due. Because the payments are set in advance, bonds are often called fixed-income securities. Original example: the city of Port Mason issues $5,000 bonds to widen a bridge; Keisha buys one, so Keisha is the lender and the city is the borrower — and she can sell that bond to someone else next year.
+
+### The three named parts
+
+Every bond names three things. Face value, also called par value, is the principal amount the issuer promises to repay at maturity. OpenStax: par value is the principal the issuer will repay at the end of the bond term. Original example: a $1,000 face value means the issuer owes $1,000 at the end. Coupon is the regular interest payment, set by the coupon rate, which is always expressed in annual terms even when payments come more often. OpenStax shows the arithmetic: a $1,000 bond with a 5% coupon rate pays $50 per year. Coupon rates usually stay fixed for the bond's whole life. Maturity date is the expiration date of the bond — when the term ends, the issuer makes the final interest payment and repays the principal. Original example: a ten-year bond issued on March 1, 2026 matures on March 1, 2036. CFI notes that all of this is written into a legal contract called the indenture, which binds the issuer and the bondholder. These three numbers — how much, how often, until when — are the whole deal.
+
+### How bonds pay
+
+A bondholder receives two kinds of cash flow over the life of the investment. First, the periodic coupon payments — the interest income, paid on the schedule the bond sets, commonly annually or semiannually; Treasury notes, for example, pay interest every six months. Second, the repayment of the principal at maturity. OpenStax calls these the two sides of a bond investment: the payment of the par value at maturity and the periodic coupon payments, both contractually determined. Original example: a $2,000 municipal bond with a 4% coupon paid annually returns $80 each year for ten years, and on the maturity date the city repays the full $2,000. The lender's money comes back in two streams — interest along the way, principal at the end.
+
+### Bond prices and interest rates
+
+Bond prices and interest rates move in opposite directions. OpenStax states the relationship plainly: when interest rates fall, bond prices rise, and vice versa — if rates increase, the value of bonds sold at lower rates declines. The logic is simple, not magical. A bond's coupon is fixed, so when new bonds in the market start paying more, an older bond paying less becomes less attractive, and its price drops; when new bonds pay less, the older bond's fixed payments look better, and its price rises. Original example: you hold a bond paying $50 a year; new bonds suddenly pay $80 a year, so buyers want a discount on yours. This seesaw is the heart of interest-rate risk. Interest rates get their own lesson in this unit — a sibling topic — so here we only need the relationship, not the formula. Floating-rate bonds, whose payments adjust with a benchmark rate, are the exception OpenStax notes; we set them aside.
+
+### Risk, and lending versus owning
+
+Two risks matter most in bonds. Default risk is the risk that the borrower fails to make the promised payments. CFI: default is when an individual or entity cannot pay the pre-specified amount of interest or principal. Government bonds sit at the low-default end: Treasury securities are backed by the full faith and credit of the U.S. government, and OpenStax notes the likelihood of default on them is remote; corporate bonds carry more risk because a company cannot raise taxes to cover its debts. Interest-rate risk is the risk that changing market rates change the bond's price — it applies even to the most reliable borrowers, because a fixed coupon becomes more or less attractive as rates move. Original example: a company fails to pay its bondholders — default risk; a solid government bond loses market value when rates climb — interest-rate risk. Bonds versus stocks: a bondholder is a lender with a promised schedule of payments; a stockholder owns a piece of the company and shares in whatever remains after lenders are paid. Stocks are a sibling topic; here the contrast is lending versus owning. And the honest framing: a bond is a loan with a paper trail — a formal, tradable IOU that names the amount, the interest, and the date.
+
+## Key Vocabulary
+
+- **Bond** — A debt security: a loan an investor makes to a borrower, usually a government or a company, in a form that can be bought and sold.
+- **Face value (par value)** — The principal amount a bond's issuer promises to repay at maturity; the sum the bond is worth at the end of its term.
+- **Coupon** — The regular interest payment a bond makes to its holder, calculated from the coupon rate applied to the face value.
+- **Coupon rate** — The annual interest rate stated on a bond, used to calculate the coupon payments; it usually stays fixed for the bond's life.
+- **Maturity date** — The date a bond's term ends, when the issuer makes the final interest payment and repays the principal.
+- **Default risk** — The risk that a bond's issuer fails to make the promised interest or principal payments.
+- **Interest-rate risk** — The risk that changes in market interest rates change a bond's price; when rates rise, an existing bond's price falls.
+- **Fixed-income security** — A security that pays a set amount of cash flow, such as the regular coupon payments of a bond.
+- **Indenture** — The binding legal contract between a bond's issuer and its holders that spells out the bond's terms.
+
+## Eli-10
+
+A bond is a loan with paperwork you can hand to someone else. When you buy a bond, you are the lender, and the borrower is usually a government or a company. The paper says three things: how much you lent, called the face value; how much interest you get paid along the way, called the coupon; and when you get your money back, called the maturity date. While you hold the bond, the borrower pays you interest on schedule, and on the final day the principal comes back. The twist is that the loan is tradable — you can sell your spot as lender to someone else before the date arrives — and the price you get depends on what interest rates are doing. When rates rise, your bond's fixed payments look weaker and its price falls; when rates fall, the price rises. Bonds are steadier than stocks, but they are not risk-free: the borrower could fail to pay, and rates can move against you.
+
+## Eli's Analogy
+
+Think of a signed promissory note between friends. A friend borrows $100 and writes on a napkin: "I owe $100 and will pay $5 each month until next June, when I repay the $100." That napkin is a bond in miniature: $100 is the face value, $5 is the coupon, next June is the maturity date. The difference is that the napkin can be traded — if you need cash in March, someone else can buy the note and collect the rest of the payments.
+
+Where the analogy breaks down: a friend's IOU depends entirely on the friend's honesty, with no ratings, no regulators, and no public market. Bonds are formal contracts with legal terms, credit ratings, and organized markets where prices are set by supply and demand. A napkin note also never changes price the way a bond does when market interest rates move; the IOU is personal, while a bond's price is public and moves daily.
+
+## Worked Example
+
+The city of Harbor Falls needs $50 million for a new water plant, so it issues bonds with a $1,000 face value, a 4% coupon paid annually, and a ten-year term. Lena buys one bond. Each year for ten years, she receives $40 — 4% of $1,000 — as interest. On the maturity date, the city pays her the final $40 and returns the full $1,000, so her loan is repaid in full. Two years in, market rates climb to 6%. New bonds pay $60 a year, so Lena's $40 bond becomes less attractive; if she sells, she will get less than $1,000 for it. She can hold to maturity and collect the promised $1,000, or sell now at a discount. That is the whole picture: scheduled interest, principal at maturity, and a price that moves with rates.
+
+## Common Mistakes
+
+- **Thinking a bond is the same kind of investment as a stock** — A bond is a loan: you are the lender, with promised payments and the principal returned at maturity. A stock is ownership: you are an owner with no promise of repayment. Lending versus owning is the whole difference.
+- **Believing government bonds are completely risk-free** — U.S. Treasury securities have very low default risk because they are backed by the full faith and credit of the government, but they still carry interest-rate risk: if rates rise, the market price of your bond falls.
+- **Confusing the coupon with the bond's price** — The coupon is the fixed interest payment, set by the coupon rate on the face value. The price is what the bond trades for in the market, which moves with interest rates and can sit above or below the face value.
+- **Expecting the entire return to arrive only at maturity** — Bonds pay interest regularly during their life, and the principal comes back at maturity. Ignoring the coupon payments in between misses most of the cash flow.
+
+## Compare / Contrast
+
+- **Bond vs stock** — A bond is a loan: you are the lender, with promised interest and principal returned at maturity. A stock is ownership: you are an owner with a claim on what remains after lenders are paid.
+- **Face value vs market price** — Face value is the principal the issuer promises to repay at maturity and never changes. Market price is what the bond trades for and moves with interest rates, above or below face value.
+- **Default risk vs interest-rate risk** — Default risk is the borrower failing to pay. Interest-rate risk is rates moving and changing the bond's price — it exists even for the most reliable borrowers.
+
+## Key Takeaway
+
+A bond is a loan an investor makes to a borrower — usually a government or a company — in tradable form: regular interest, the principal back at maturity, and a price that moves opposite to interest rates.
+
+## Practice Question Bank
+
+1. **When an investor buys a bond, what is the investor actually doing?**
+   - A. Lending money to the bond's issuer, usually a government or a company
+   - B. Buying an ownership share of the issuer's future profits
+   - C. Depositing money into a government-insured bank account
+   - D. Paying a fee for the right to borrow from the issuer
+   - **Answer: A.** Buying a bond is lending: you are the lender and the issuer is the borrower. Ownership shares are stocks, deposits are bank accounts, and the bondholder does not pay the issuer a fee.
+
+2. **Lena buys a $1,000 bond with a 4% coupon paid annually. How much interest does she receive each year?**
+   - A. $4
+   - B. $40
+   - C. $104
+   - D. $400
+   - **Answer: B.** The coupon payment is the coupon rate applied to the face value: 4% of $1,000 is $40 per year. $4 would be 0.4% and $400 would be 40%.
+
+3. **You hold a fixed-rate bond, and market interest rates rise sharply. What most likely happens to your bond's price?**
+   - A. It rises, because your bond now pays more than new bonds
+   - B. It stays the same, because the coupon is fixed
+   - C. It falls, because new bonds now offer higher payments
+   - D. It is automatically converted into a stock
+   - **Answer: C.** Bond prices move opposite to interest rates: when rates rise, an existing bond with a lower fixed coupon becomes less attractive, so its price falls.
+
+4. **A company fails to pay the interest it promised on its bonds. Which bond risk did the bondholders just experience?**
+   - A. Interest-rate risk
+   - B. Market risk
+   - C. Inflation risk
+   - D. Default risk
+   - **Answer: D.** Default risk is the risk that the borrower fails to pay the promised interest or principal. The other three are different risk categories, none of which is about the borrower failing to pay.
+
+5. **Which statement about a bond's maturity date is correct?**
+   - A. It is the date the bond's coupon rate is reset
+   - B. It is when the issuer makes the final interest payment and repays the principal
+   - C. It is the date the bond is first sold to the public
+   - D. It is the date the bond's market price is set
+   - **Answer: B.** The maturity date ends the bond's term: the issuer pays the final interest payment and repays the principal, or face value. Coupon rates usually stay fixed, and issue date and price setting are different moments.
+
+## Sources
+
+- Investor.gov (U.S. Securities and Exchange Commission) — Bonds (Glossary) — https://www.investor.gov/introduction-investing/investing-basics/glossary/bond
+- OpenStax Principles of Finance, Section 10.1: Characteristics of Bonds — https://openstax.org/books/principles-finance/pages/10-1-characteristics-of-bonds
+- U.S. Department of the Treasury, TreasuryDirect — About Treasury Marketable Securities — https://www.treasurydirect.gov/marketable-securities/
+- Corporate Finance Institute (CFI) — Bonds — https://corporatefinanceinstitute.com/resources/fixed-income/bonds/
+- Investor.gov (U.S. Securities and Exchange Commission) — What is Risk? — https://www.investor.gov/introduction-investing/investing-basics/what-risk
+
+## Related Topics
+
+- Stocks (finance:foundations:stocks) — ownership, the other side of the lending-versus-owning contrast
+- Interest Rates (finance:foundations:interest-rates) — the rates that drive the bond price seesaw
+- Debt (finance:foundations:debt) — borrowing as a general category of finance
+- Financial Markets (finance:foundations:financial-markets) — where bonds are bought and sold
+- Risk (finance:foundations:risk) — the risk types that bonds carry
+
+## Editorial Metadata
+
+- Topic id: finance:foundations:bonds
+- Editorial status: READY_TO_PUBLISH
+- Research status: source-verified
+- Researched: 2026-08-21
+- Sources: 5 (reference-only; no source prose adapted)
