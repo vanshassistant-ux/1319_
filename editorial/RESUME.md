@@ -29,7 +29,8 @@ Read this file first on every new run, then run `node scripts/editorial-progress
 - **Personal-finance is COMPLETE** — 32/32 topics accepted at `source-verified`, `READY_TO_PUBLISH`, `public: false`; subject audit 0 issues; report: `editorial/reports/subjects/personal-finance.md`. Completed 2026-08-22.
 - **Marketing is COMPLETE** — 24/24 topics accepted at `source-verified`, `READY_TO_PUBLISH`, `public: false`; subject audit 0 issues; report: `editorial/reports/subjects/marketing.md`. Completed 2026-08-22.
 - **STAGE B COMPLETE (2026-08-22)** — all 11 Business & Money subjects (325 topics) accepted at `source-verified`, `READY_TO_PUBLISH`, `public: false`. management-and-leadership: 23/23, audit 5 compatible TERM, report `editorial/reports/subjects/management-and-leadership.md`.
-- **Next: Stage C (phase 4, 8 subjects, 247 topics)**: nutrition (29) → public-health (29) → nursing-and-allied-health-foundations (40) → psychology (35) → sociology (29) → anthropology (28) → human-development (25) → political-science-and-government (32).
+- **nutrition (Stage C subject 1 of 8) COMPLETE** — 29/29 accepted, audit 3 compatible TERM, report `editorial/reports/subjects/nutrition.md` (2026-08-22).
+- **Next: public-health (29)** → nursing-and-allied-health-foundations (40) → psychology (35) → sociology (29) → anthropology (28) → human-development (25) → political-science-and-government (32).
 - Phase 1 is complete, including Python Programming.
 - **Web Development is COMPLETE** — 47/47 topics accepted at `source-verified`, `READY_TO_PUBLISH`, and `public: false`; subject audit returned 0 issues; report: `editorial/reports/subjects/web-development.md`.
 - The Web Development queue was completed on 2026-08-20. Its audited exceptions are documented in `editorial/subjects/web-development/audit-exceptions.json`.

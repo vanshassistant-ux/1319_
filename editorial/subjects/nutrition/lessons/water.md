@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Water is the nutrient people forget to count. The working definition in nutrition science: water is the body's essential solvent and transport medium, the liquid in which nutrients dissolve and ride through the bloodstream. It makes up roughly 50 to 60 percent of an adult's body weight and does four everyday jobs: managing temperature, transporting substances, lubricating joints and tissues, and carrying waste away. Water comes from drinks and from food, which supplies about a fifth of total intake. The body loses it through breath, sweat, and urine, and balance means intake roughly matching loss.
+Water is the nutrient people forget to count. This lesson's working definition: water is the body's essential solvent and transport medium, the liquid in which nutrients dissolve and ride through the bloodstream. It makes up roughly 50 to 60 percent of an adult's body weight and does four everyday jobs: managing temperature, transporting substances, lubricating joints and tissues, and carrying waste away. Water comes from drinks and from food, which supplies about a fifth of total intake. The body loses it through breath, sweat, and urine, and balance means intake roughly matching loss.
 
 ## Why This Matters
 
@@ -21,7 +21,7 @@ Every other nutrient depends on water to get where it is needed, which makes wat
 
 ### Water's working definition in nutrition
 
-Water belongs to the six classes of nutrients, alongside carbohydrates, fats, proteins, vitamins, and minerals, and nutrition texts classify it as a macronutrient: a substance the body needs in large amounts. The working definition used in this lesson, drawn from the OpenStax nutrition text, is that water is the body's essential solvent and transport medium. A solvent is a liquid that dissolves other substances; in the body that liquid is water, and nearly everything the body moves, from sugars and amino acids to minerals and waste products, travels dissolved in it. Blood is water-based, and OpenStax states the point directly: water is the universal solvent, and every cell, tissue, and organ requires water to transport essential substances. That is the definition this lesson will use: water is the liquid in which the body's chemistry dissolves and moves. The cellular mechanics of how fluids are managed belong to the biology subject; here the definition is the point.
+Water belongs to the six classes of nutrients, alongside carbohydrates, fats, proteins, vitamins, and minerals, and nutrition texts classify it as a macronutrient: a substance the body needs in large amounts. The working definition adopted in this lesson, drawn from the OpenStax nutrition text, is that water is the body's essential solvent and transport medium. A solvent is a liquid that dissolves other substances; in the body that liquid is water, and nearly everything the body moves, from sugars and amino acids to minerals and waste products, travels dissolved in it. Blood is water-based, and OpenStax states the point directly: water is the universal solvent, and every cell, tissue, and organ requires water to transport essential substances. That is the definition this lesson will use: water is the liquid in which the body's chemistry dissolves and moves. The cellular mechanics of how fluids are managed belong to the biology subject; here the definition is the point.
 
 ### The four jobs water does
 

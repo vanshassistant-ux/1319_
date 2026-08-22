@@ -1,25 +1,25 @@
 # ELIEXPLAINS GLOBAL EDITORIAL PROGRESS
 
-Generated: 2026-08-22T05:47:34.633Z
+Generated: 2026-08-22T07:06:14.601Z
 Counts are computed from the phase content stores by `bun run editorial:progress`.
 
 Subjects total: 44
-Subjects processed: 36
-Subjects remaining: 8
-Subject completion: 81.82%
+Subjects processed: 37
+Subjects remaining: 7
+Subject completion: 84.09%
 
 Total topics: 1299
-Topics processed: 1052
+Topics processed: 1081
 Topics published: 282
-Topics ready to publish: 770
+Topics ready to publish: 799
 Topics held: 0
 Topics requiring review: 0
-Topics remaining: 247
-Topic processing: 80.99%
+Topics remaining: 218
+Topic processing: 83.22%
 
-Verified questions: 5260
-Unique source records: 4746
-Source usage classes: REFERENCE_ONLY=3817, PUBLIC_DOMAIN=571, ATTRIBUTION_REQUIRED=209, EXTRACT_AND_ADAPT=147, LINK_ONLY=2
+Verified questions: 5405
+Unique source records: 4855
+Source usage classes: REFERENCE_ONLY=3909, PUBLIC_DOMAIN=571, ATTRIBUTION_REQUIRED=226, EXTRACT_AND_ADAPT=147, LINK_ONLY=2
 
 ## Phase progress
 
@@ -28,7 +28,7 @@ Source usage classes: REFERENCE_ONLY=3817, PUBLIC_DOMAIN=571, ATTRIBUTION_REQUIR
 | 1 | 11 / 11 | 282 / 282 | 100.00% |
 | 2 | 11 / 11 | 325 / 325 | 100.00% |
 | 3 | 11 / 11 | 329 / 329 | 100.00% |
-| 4 | 3 / 11 | 116 / 363 | 31.96% |
+| 4 | 4 / 11 | 145 / 363 | 39.94% |
 
 ## Collection progress
 
@@ -38,7 +38,7 @@ Source usage classes: REFERENCE_ONLY=3817, PUBLIC_DOMAIN=571, ATTRIBUTION_REQUIR
 | Technology | 8 / 8 | 257 / 257 | 100.00% |
 | Business & Money | 9 / 9 | 240 / 240 | 100.00% |
 | Humanities & Culture | 7 / 7 | 197 / 197 | 100.00% |
-| Science & Health | 1 / 6 | 48 / 206 | 23.30% |
+| Science & Health | 2 / 6 | 77 / 206 | 37.38% |
 | Society & Government | 4 / 7 | 144 / 233 | 61.80% |
 
 ## Subjects in progress
@@ -73,6 +73,7 @@ Source usage classes: REFERENCE_ONLY=3817, PUBLIC_DOMAIN=571, ATTRIBUTION_REQUIR
 | management-and-leadership | 23 / 23 | 0 | 23 | 0 | 0 | 0 |
 | marketing | 24 / 24 | 0 | 24 | 0 | 0 | 0 |
 | music-appreciation | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
+| nutrition | 29 / 29 | 0 | 29 | 0 | 0 | 0 |
 | personal-finance | 32 / 32 | 0 | 32 | 0 | 0 | 0 |
 | philosophy-and-ethics | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
 | project-management | 28 / 28 | 0 | 28 | 0 | 0 | 0 |

@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Digestion is the process of breaking food into smaller pieces the body can use. The National Institute of Diabetes and Digestive and Kidney Diseases describes it as breaking nutrients into parts small enough for the body to absorb and use for energy, growth, and cell repair. The work happens along the digestive tract — the mouth, esophagus, stomach, small intestine, and large intestine — using two kinds of breakdown: mechanical, like chewing and churning, and chemical, like enzymes and acids.
+Digestion is the process of breaking food into smaller pieces the body can use. The National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) describes digestion as breaking nutrients into parts small enough for the body to absorb and use for energy, growth, and cell repair. The work happens along the digestive tract — the mouth, esophagus, stomach, small intestine, and large intestine — using two kinds of breakdown: mechanical, like chewing and churning, and chemical, like enzymes and acids.
 
 ## Why This Matters
 
@@ -107,6 +107,14 @@ Digestion is the body's demolition crew with a recycling plant attached: it brea
    - B. The esophagus dissolves the protein completely before it reaches the stomach
    - C. The large intestine breaks the protein down into amino acids after absorbing water
    - D. The mouth's saliva breaks the protein into amino acids during chewing
+
+## Related Topics
+
+- nutrition:foundations:what-nutrition-science-studies
+- nutrition:foundations:absorption
+- nutrition:foundations:metabolism
+- nutrition:foundations:carbohydrates
+- nutrition:foundations:proteins
 
 ## Sources
 

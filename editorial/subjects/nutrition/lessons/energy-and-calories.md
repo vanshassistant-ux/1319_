@@ -104,6 +104,17 @@ The analogy has limits: a phone battery tops out and stops accepting charge, whi
 
    **Answer: A.** A calorie number measures only the energy in a serving. It cannot by itself rank foods as good or bad, and label numbers are measurements, not guesses. The honest use is to compare portions and weigh the whole picture.
 
+## Common Mistakes
+
+- **Treating the label's calorie number as the whole package: eating the container while the label describes one serving.** — Check the serving size and the servings per container, then multiply. Two servings means twice the calories shown, and a small bag can quietly hold three or four servings.
+- **Assuming fat and carbohydrate are close in energy per gram, so any low-fat food must be low-calorie.** — Fat supplies about 9 calories per gram while carbohydrate and protein supply about 4. A gram of fat carries more than twice the energy of a gram of carbohydrate, so serving size matters even more for fatty foods.
+- **Thinking the label's calorie and the tiny scientific calorie are the same unit, so the numbers look absurdly large.** — Food labels use kilocalories, 1,000 of the small scientific calories, and simply print 'Calories.' One label calorie is one kilocalorie.
+- **Judging a food as good or bad from its calorie number alone.** — The number measures only the energy in a serving. Read it alongside the serving size and weigh it against the nutrients the food provides and the rest of your day.
+
+## Key Takeaway
+
+A calorie is a unit of energy: read it together with the serving size, remember that fat is the most energy-dense nutrient, and treat the number as information, not a moral score.
+
 ## Sources
 
 - U.S. Food and Drug Administration, *Calories on the Nutrition Facts Label* (U.S. government work). https://www.fda.gov/food/nutrition-facts-label/calories-nutrition-facts-label — calories as total energy from carbohydrate, fat, protein, and alcohol in a serving; per-serving label math (220 / 440 example); balance calories in with calories used; 2,000-calorie general guide; "fat-free" does not mean "calorie-free."

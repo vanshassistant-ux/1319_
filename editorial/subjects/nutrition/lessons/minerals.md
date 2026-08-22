@@ -6,7 +6,7 @@ Minerals are inorganic elements the body needs in small amounts for structure an
 
 ## Why This Matters
 
-Because the body cannot build minerals from scratch, everything structural about us, the hardness of bones, the oxygen in blood, the timing of nerve signals, depends on minerals arriving through food. Understanding them turns vague advice like “eat a balanced diet” into a concrete picture: different minerals do different jobs, so variety matters more than any single food. It also explains the two failure modes: too little calcium quietly weakens bone over time, while too much sodium is common and can raise blood pressure. Minerals appear on labels, in product claims, and in health news, so knowing what they are, what they do, and where they come from makes everyday choices more informed.
+Because the body cannot build minerals from scratch, everything structural about us, the hardness of bones, the oxygen in blood, the timing of nerve signals, depends on minerals arriving through food. Understanding them turns vague advice like “eat a balanced diet” into a concrete picture: different minerals do different jobs, so variety matters more than any single food. It also explains the two failure modes: too little calcium quietly weakens bone over time, while too much sodium is common and can raise blood pressure. Minerals appear on labels, in product claims, and in health news, so understanding what these minerals are, what they do, and where they come from makes everyday choices more informed.
 
 ## Learning Objectives
 
@@ -21,7 +21,7 @@ Because the body cannot build minerals from scratch, everything structural about
 
 ### What minerals are
 
-Minerals are one of the classes of nutrients the body must get from food, and they belong to the micronutrients, the nutrients needed in small amounts. The working definition used in this lesson is that minerals are inorganic elements the body needs in small amounts for structure and function. MedlinePlus, the National Library of Medicine's consumer health site, states the same idea plainly: the body uses minerals for many different jobs, including keeping the bones, muscles, heart, and brain working properly. Inorganic means the mineral is not built from carbon-based molecules the way vitamins are; minerals are elements found in the earth. That difference matters because it explains where minerals come from and why the body cannot manufacture them the way it can make some vitamins. The body makes none of the minerals it needs, so food is the only route in. That is what makes minerals essential: the body requires them, and only eating can supply them.
+Minerals are one of the classes of nutrients the body must get from food, and they are micronutrients, needed in small amounts. The working definition adopted in this lesson is that minerals are inorganic elements the body needs in small amounts for structure and function. MedlinePlus, the National Library of Medicine's health information site health site, states the same idea plainly: the body uses minerals for many different jobs, including keeping the bones, muscles, heart, and brain working properly. Inorganic means the mineral is not built from carbon-based molecules the way vitamins are; minerals are elements found in the earth. That difference matters because it explains where minerals come from and why the body cannot manufacture them the way it can make some vitamins. The body makes none of the minerals it needs, so food is the only route in. That is what makes minerals essential: the body requires them, and only eating can supply them.
 
 ### Macrominerals and trace minerals
 
@@ -54,7 +54,7 @@ Both ends of the mineral spectrum matter. Too little: when iron intake falls sho
 
 ### Simplified explanation
 
-Minerals are the elements the body is built from and runs on. They are inorganic, which means they come from the earth rather than from living cells, and the body cannot make them, so food must supply them. Some, like calcium, are needed in fairly large amounts. Others, like iron, are needed in amounts so small they are measured in milligrams, yet the body cannot do its basic jobs without them.
+Minerals are the elements the body is built from and runs on. They are inorganic, which means they come from the earth rather than from living cells, and the body cannot make them, so they must come from food. Some, like calcium, are needed in fairly large amounts. Others, like iron, are needed in amounts so small they are measured in milligrams, yet the body cannot do its basic jobs without them.
 
 ### The analogy
 
@@ -132,6 +132,18 @@ D. Diet makes little difference because the body makes the minerals it needs
 **Correct answer:** A
 
 *MedlinePlus states that most people get the amount of minerals they need by eating a wide variety of foods. Minerals are spread across plant and animal foods, so a narrow diet risks missing some, and the body cannot make minerals itself.*
+
+## Key Takeaway
+
+Minerals are the body's hardware: inorganic elements from soil, water, plants, and animals that build bones, carry oxygen, and keep nerves and fluids working. A varied diet supplies them, and balance, not more, is the goal.
+
+## Related Topics
+
+- nutrition:foundations:electrolytes
+- nutrition:foundations:vitamins
+- nutrition:foundations:water
+- nutrition:foundations:hydration
+- nutrition:foundations:supplements
 
 ## Sources
 

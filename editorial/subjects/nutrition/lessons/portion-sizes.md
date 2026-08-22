@@ -20,7 +20,7 @@ Portion is the word for the food that actually reaches your plate, so it is the 
 
 ### What a portion is
 
-A portion is the amount of a food you choose to eat at one time, whether in a restaurant, from a package, or at home. That is the working definition used by the National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK), whose portion guidance opens with the same question this lesson asks: how much food is enough for you? MedlinePlus states the same idea from the eater's side: a portion is the amount of food you actually eat. Notice what the definition does not say. It does not call a portion correct or incorrect, healthy or unhealthy. It simply names the quantity on your plate at a single eating occasion — a measurement, not a judgment.
+A portion is the amount of a food you choose to eat at one time, whether in a restaurant, from a package, or at home. That is the working definition used by NIDDK, whose portion guidance opens with the same question this lesson asks: how much food is enough for you? MedlinePlus states the same idea from the eater's side: a portion is the amount of food you actually eat. Notice what the definition omits. It does not call a portion correct or incorrect, healthy or unhealthy. It simply names the quantity on your plate at a single eating occasion — a measurement, not a judgment.
 
 ### Portion versus serving
 

@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Proteins are one of the six classes of nutrients and the body's building blocks: large molecules made of chains of amino acids. Their jobs include building and repairing tissue, powering reactions as enzymes, carrying messages as hormones, and transporting substances through the body. Protein provides about 4 calories per gram. It comes from meat, fish, eggs, dairy, legumes, and nuts. The honest framing is simple: protein builds first and fuels second.
+Proteins are one of the six nutrient families and the body's building blocks: large molecules made of chains of amino acids. Their jobs include building and repairing tissue, powering reactions as enzymes, carrying messages as hormones, and transporting substances through the body. Protein provides about 4 calories per gram. It comes from meat, fish, eggs, dairy, legumes, and nuts. The honest framing is simple: protein builds first and fuels second.
 
 ## Why This Matters
 
@@ -21,7 +21,7 @@ Protein is the material your body is built from and constantly rebuilds: hair an
 
 ### What proteins are
 
-Protein belongs to the six classes of nutrients that sustain the body: carbohydrates, fats, proteins, water, vitamins, and minerals. The working definition used across nutrition science is that proteins are large molecules made of chains of amino acids. The National Library of Medicine's MedlinePlus describes them as large, complex molecules made up of hundreds or thousands of smaller units called amino acids linked together in long chains, and notes that every cell in the human body contains protein. The order and folding of the chain decides what each protein does, which is why the same family of building units can produce such different results: the protein that stiffens a fingernail is not the same molecule as the one that carries oxygen in the blood. What holds the family together is the amino acid chain itself. The amino acids individually, including which ones the body must obtain from food, are developed in the sibling lesson on amino acids; here the definition is enough.
+Protein is one of the six nutrient families that sustain the body, alongside carbohydrates, fats, vitamins, minerals, and water. The working definition used here, drawn from nutrition science, is that proteins are large molecules made of chains of amino acids. The National Library of Medicine's MedlinePlus describes them as large, complex molecules made up of hundreds or thousands of smaller units called amino acids linked together in long chains, and notes that every cell in the human body contains protein. The order and folding of the chain decides what each protein does, which is why the same family of building units can produce such different results: the protein that stiffens a fingernail is not the same molecule as the one that carries oxygen in the blood. What holds the family together is the amino acid chain itself. The amino acids individually, including which ones the body must obtain from food, are developed in the sibling lesson on amino acids; here the definition is enough.
 
 ### The jobs proteins do
 
@@ -33,7 +33,7 @@ When nutrition sources talk about protein quality, they mean whether a food's pr
 
 ### Where proteins come from, and the honest framing
 
-Protein-rich foods span both the animal and plant kingdoms: meat, fish, eggs, dairy, legumes such as lentils and chickpeas, and nuts such as almonds and peanuts, plus soy products like tofu. MedlinePlus lists meats, milk, fish, and eggs among animal sources and soy, beans, legumes, nut butters, and some grains among plant sources, and notes that a person does not need to eat animal products to get enough protein. The honest framing matters because protein attracts more hype than any other nutrient. The body does not stockpile protein the way it stores fat, so extra intake does not automatically become extra muscle; unneeded protein is stripped down and converted to glucose or fat, which is how excess can add weight instead. And while the body can burn protein for energy when necessary, it prefers carbohydrate and fat for fuel: when those cover energy needs, dietary protein is freed to do its own work, such as tissue repair. Protein is a builder first and a fuel second, and that division of labor is the reality check behind every protein claim.
+Protein-rich foods span both the animal and plant kingdoms: meat, fish, eggs, dairy, legumes such as lentils and chickpeas, and nuts such as almonds and peanuts, plus soy products like tofu. MedlinePlus lists meats, milk, fish, and eggs among animal sources and soy, beans, legumes, nut butters, and some grains among plant sources, and notes that a person does not need to eat animal products to get enough protein. The honest framing matters because protein attracts more hype than any other nutrient. The body does not stockpile protein the way it stores fat, so extra intake does not automatically become extra muscle; unneeded protein is stripped down and converted to glucose or fat, which is how excess can add weight instead. And while the body can burn protein for energy when necessary, it prefers carbohydrate and fat for fuel: when those cover energy needs, dietary protein is spared to do its own work, such as tissue repair. Protein is a builder first and a fuel second, and that division of labor is the reality check behind every protein claim.
 
 ## Key Vocabulary
 
@@ -74,7 +74,7 @@ Where the analogy breaks down: LEGO bricks are interchangeable and reusable at n
 
 **Correct answer: About 4 calories.** Protein provides about 4 calories per gram, the figure MedlinePlus reports and the OpenStax nutrition text tabulates from the Dietary Guidelines. Nine calories per gram is the value for fat.
 
-**3. Which meal is built primarily around foods that supply protein?**
+**3. Which of these meals supplies mostly protein?**
 
 - Toast with grape jelly and a glass of orange juice
 - A bowl of rice with steamed broccoli
@@ -100,6 +100,25 @@ Where the analogy breaks down: LEGO bricks are interchangeable and reusable at n
 - There is no downside, because protein fuel is unlimited
 
 **Correct answer: The body prefers carbohydrate and fat as fuel, so burning protein costs tissue that had building and repair jobs.** The honest framing is that protein builds first and fuels second: when carbohydrate and fat cover energy needs, protein is freed for tissue work, and breaking it down for fuel sacrifices tissue that had other jobs. The other options misstate the evidence.
+
+## Common Mistakes
+
+- **Treating protein as a nutrient only athletes and bodybuilders need.** — Every cell in the body contains protein, and everyone needs it daily to repair cells and support growth. The amounts differ, but the need is universal.
+- **Assuming more protein automatically builds more muscle.** — The body does not stockpile protein. Unneeded protein is converted to glucose or fat, so a surplus can add weight without adding a gram of muscle.
+- **Believing plant foods cannot supply complete protein.** — Most single plant foods are incomplete on their own, but soy and quinoa are complete, and a variety of legumes, grains, and nuts across the day covers all the essential amino acids.
+- **Thinking protein is the body's main fuel.** — The body prefers carbohydrate and fat for energy. Protein's first job is building and repairing tissue, and burning it for fuel means breaking down tissue that had other work to do.
+
+## Key Takeaway
+
+Protein is the body's building material: large molecules made of chains of amino acids that build and repair tissue, work as enzymes, carry messages as hormones, and transport substances, supplying about 4 calories per gram. It builds first and fuels second.
+
+## Related Topics
+
+- nutrition:foundations:amino-acids
+- nutrition:foundations:energy-and-calories
+- nutrition:foundations:absorption
+- nutrition:foundations:metabolism
+- nutrition:foundations:carbohydrates
 
 ## Sources
 

@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Fats are one of the six classes of nutrients: molecules that store energy and build structures. They deliver about 9 calories per gram, more than double the energy of carbohydrate or protein, and they do essential jobs—storing energy for later, forming cell membranes, supplying building blocks for hormones, and carrying vitamins A, D, E, and K. Dietary fat arrives as triglycerides, phospholipids, and sterols, from oils, nuts, seeds, fish, dairy, and meats. Fats are essential; the type and amount matter.
+Fats are one of the six nutrient groups: molecules that store energy and build structures. They deliver about 9 calories per gram, more than double the energy of carbohydrate or protein, and they do essential jobs—storing energy for later, forming cell membranes, supplying building blocks for hormones, and carrying vitamins A, D, E, and K. Dietary fat arrives as triglycerides, phospholipids, and sterols, from oils, nuts, seeds, fish, dairy, and meats. Fats are essential; the type and amount matter.
 
 ## Why This Matters
 
@@ -20,7 +20,7 @@ For decades, fat was the villain of the food label, and many people still treat 
 
 ### What dietary fats are
 
-Dietary fats belong to the six classes of nutrients that sustain the body: carbohydrates, fats, proteins, water, vitamins, and minerals. In nutrition science, the words fat and lipid are used almost interchangeably: lipids are a family of compounds that do not dissolve in water, built mainly from carbon, hydrogen, and oxygen, and they yield a great deal of energy. The working definition used in this lesson, following OpenStax Nutrition and the standard textbook description of lipids, is that fats are molecules that store energy and build structures. That definition captures both sides of fat's personality: it is the body's most concentrated fuel, and it is also a construction material for cells. Because the term covers many different molecules, writers sometimes say "fats" to mean the whole family and sometimes to mean just one member; this lesson uses the family meaning, then names the members below.
+Dietary fats are one of the six nutrient classes that sustain the body; the classes are carbohydrates, fats, proteins, water, vitamins, and minerals. In nutrition science, the words fat and lipid are used almost interchangeably: lipids are a family of compounds that do not dissolve in water, built mainly from carbon, hydrogen, and oxygen, and they yield a great deal of energy. The working definition used in this lesson, following OpenStax Nutrition and the standard textbook description of lipids, is that fats are molecules that store energy and build structures. That definition captures both sides of fat's personality: it is the body's most concentrated fuel, and it is also a construction material for cells. Because the term covers many different molecules, writers sometimes say "fats" to mean the whole family and sometimes to mean just one member; this lesson uses the family meaning, then names the members below.
 
 ### The jobs fats do
 
@@ -28,7 +28,7 @@ Fat earns its place in the diet through four headline jobs. The first is energy 
 
 ### What fat costs: about 9 calories per gram
 
-Fat is the most energy-dense nutrient. One gram of fat supplies about 9 calories, more than double the roughly 4 calories in a gram of carbohydrate or protein; the comparison is standard in nutrition texts, appearing in OpenStax Nutrition's Table 2.4 and in MedlinePlus. This is why foods rich in fat carry so many calories in small servings: a serving that lists 14 grams of fat carries about 126 calories from fat alone (14 times 9). It is also why fat grams earn a dedicated line on the Nutrition Facts label—gram for gram, they change the calorie total more than carbohydrate or protein grams do. Energy density is a fact, not a verdict: the same 9 calories per gram applies to olive oil and to butter, which is why the type of fat, not just the amount, gets so much attention in the sibling lessons.
+Fat is the most energy-dense nutrient. One gram of fat supplies about 9 calories, more than double the roughly 4 calories in a gram of carbohydrate or of protein; the comparison is standard in nutrition texts, appearing in OpenStax Nutrition's Table 2.4 and in MedlinePlus. This is why foods rich in fat carry so many calories in small servings: a serving that lists 14 grams of fat carries about 126 calories from fat alone (14 times 9). It is also why fat grams earn a dedicated line on the Nutrition Facts label—gram for gram, they change the calorie total more than carbohydrate or protein grams do. Energy density is a fact, not a verdict: the same 9 calories per gram applies to olive oil and to butter, which is why the type of fat, not just the amount, gets so much attention in the sibling lessons.
 
 ### The forms of fat
 
@@ -51,7 +51,7 @@ Fat shows up across the food supply: oils such as olive, canola, and soybean; nu
 
 ## Eli-10
 
-Fat is the body's long-term energy account. When you eat more energy than you need right now, the body converts the extra into triglycerides and deposits them in fat cells, and when a meal is far away, it makes withdrawals. Fat also does construction work: it forms the membranes around every cell, provides raw material for hormones, and carries vitamins A, D, E, and K into the body. A gram of fat holds about 9 calories, more than double a gram of carbohydrate or protein, which is why fatty foods are so energy-dense. Fats come in three forms—triglycerides, phospholipids, and sterols—and they arrive in oils, nuts, seeds, fish, dairy, and meats. Fat is not the enemy; the type and the amount are what deserve attention.
+Fat is the body's long-term energy account. When you eat more energy than you need right now, the body converts the extra into triglycerides and deposits them in fat cells, and when a meal is far away, it makes withdrawals. Fat also does construction work: it forms the membranes around every cell, provides raw material for hormones, and carries vitamins A, D, E, and K into the body. A gram of fat holds about 9 calories, more than double a gram of carbohydrate or protein (4 kcal) why fatty foods are so energy-dense. Fats come in three forms—triglycerides, phospholipids, and sterols—and they arrive in oils, nuts, seeds, fish, dairy, and meats. Fat is not the enemy; the type and the amount are what deserve attention.
 
 ## Eli's Analogy
 

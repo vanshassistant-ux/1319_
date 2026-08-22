@@ -100,6 +100,18 @@ The most important thing to understand about metabolism may be what it is not. I
    - D. The digested forms, sugars from carbohydrates, amino acids from protein, and fatty acids from fat, travel in the blood to cells that use them for energy or store them for later
    **Answer: D.** Digestion breaks carbohydrates into simple sugars such as glucose, proteins into amino acids, and fats into fatty acids; the blood carries these to cells, which use them as energy or store them in tissues such as the liver, muscles, and fat. The other options describe one-food-only use, instant conversion, or blanket storage, none of which matches the process.
 
+## Common Mistakes
+
+- **Thinking metabolism is only about weight gain and weight loss.** — Metabolism covers every physical and chemical process that converts or uses energy, including breathing, circulation, temperature control, digestion, and brain function. Weight is only one small window onto it.
+- **Believing a special food or drink can switch metabolism on or off.** — Metabolism is continuous steady work. It changes gradually with things like age and body composition, but no single food flips it like a light switch.
+- **Swapping anabolism and catabolism.** — Anabolism builds and stores, using small pieces to make bigger molecules. Catabolism breaks big molecules down and releases energy in the process.
+- **Assuming metabolic rate is fixed at birth and never changes.** — Metabolic rate shifts over a lifetime. It generally slows with age, partly because muscle mass tends to decrease, and muscle burns more energy at rest than fat does.
+- **Thinking only muscles use the energy from food.** — Every cell uses fuel. Digested sugars, amino acids, and fatty acids travel in the blood to cells throughout the body, which use them for energy or store them, especially in the liver, muscles, and fat tissue.
+
+## Key Takeaway
+
+Metabolism is the body's steady chemical work: it converts and uses energy for everything from breathing to thinking, builds and stores with anabolism, breaks down for energy with catabolism, and runs at a pace set by age, body composition, and activity. It is not a switch, and food is the fuel and building material that keeps it going.
+
 ## Sources
 
 - MedlinePlus (U.S. National Library of Medicine), Medical Encyclopedia: Metabolism — https://medlineplus.gov/ency/article/002257.htm (review date 7/15/2024; reference only)

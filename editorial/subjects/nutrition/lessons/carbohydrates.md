@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Carbohydrates are one of the six classes of nutrients, and the working definition is simple: they are molecules made of sugar units. The body treats them as its preferred fuel, breaking them down into glucose for quick energy, for fueling the brain, and for sparing protein from being burned for energy. They come in three broad forms—sugars, starches, and fiber—and supply about 4 calories per gram. Fruits, grains, vegetables, legumes, and dairy all contribute carbohydrates. Carbs are not the enemy; the dose and the package matter.
+Carbohydrates are one of the six nutrient classes, and the working definition is simple: they are molecules made of sugar units. The body treats them as its preferred fuel, breaking them down into glucose for quick energy, for fueling the brain, and for sparing protein from being burned for energy. They come in three broad forms—sugars, starches, and fiber—and supply about 4 calories per gram. Fruits, grains, vegetables, legumes, and dairy all contribute carbohydrates. Carbs are not the enemy; the dose and the package matter.
 
 ## Why This Matters
 
@@ -21,7 +21,7 @@ Every cell in the body can run on glucose, and the brain leans on it especially 
 
 ### What carbohydrates are
 
-Carbohydrates belong to the six classes of nutrients that sustain the body: carbohydrates, fats, proteins, water, vitamins, and minerals. The working definition used throughout nutrition science is straightforward: carbohydrates are molecules made of sugar units. The National Library of Medicine's MedlinePlus puts it even more plainly, describing carbs as sugar molecules. The units themselves are simple sugars such as glucose, and they can ride alone, in pairs, or in long chains; the body's digestive machinery simply unlinks whatever arrangement it finds. Because the term covers such a wide range of structures, carbohydrate is best understood as a family name rather than a single substance. That family shows up in foods as sugars, starches, and fiber, three forms that behave differently in the body. This lesson names those forms; their chemistry and health effects are developed in the sibling lessons on simple and complex carbohydrates and on fiber.
+Carbohydrates belong to the six nutrient classes that sustain the body: carbohydrates, fats, proteins, water, vitamins, and minerals. The working definition used throughout nutrition science is straightforward: carbohydrates are molecules made of sugar units. The National Library of Medicine's MedlinePlus puts it even more plainly, describing carbs as sugar molecules. The units themselves are simple sugars such as glucose, and they can ride alone, in pairs, or in long chains; the body's digestive machinery simply unlinks whatever arrangement it finds. Because the term covers such a wide range of structures, carbohydrate is best understood as a family name rather than a single substance. That family shows up in foods as sugars, starches, and fiber, three forms that behave differently in the body. This lesson names those forms; their chemistry and health effects are developed in the sibling lessons on simple and complex carbohydrates and on fiber.
 
 ### The jobs carbohydrates do
 
@@ -56,7 +56,7 @@ Where the analogy breaks down: the kindling comparison makes it sound like more 
 
 ## Practice Question Bank
 
-**1. According to the standard working definition used in nutrition science, what are carbohydrates?**
+**1. What does nutrition science's standard working definition say carbohydrates are, what are carbohydrates?**
 
 - Compounds added to processed foods mainly for sweetness
 - A nutrient found only in breads and grain products
@@ -74,7 +74,7 @@ Where the analogy breaks down: the kindling comparison makes it sound like more 
 
 **Correct answer: About 4 calories.** Carbohydrate provides about 4 calories per gram, the standard energy value reported in the Dietary Guidelines and nutrition textbooks. Nine calories per gram is the figure for fat, which is why fatty foods are more energy-dense.
 
-**3. Which meal is built primarily around foods that supply carbohydrate?**
+**3. Which meal relies mostly on foods that supply carbohydrate?**
 
 - Grilled salmon with buttered broccoli
 - A cheese omelet with a glass of water
@@ -100,6 +100,25 @@ Where the analogy breaks down: the kindling comparison makes it sound like more 
 - Both should be avoided because all carbohydrate raises blood sugar
 
 **Correct answer: Carbohydrate quality matters, so the oats' fiber and nutrients make that package the better choice.** Research emphasizes carbohydrate quality: whole, minimally processed sources such as oats and berries deliver fiber and nutrients, while sugary cereals are refined packages that deliver sugar units with little else. The grams alone do not tell the story.
+
+## Common Mistakes
+
+- **Treating all carbohydrates as if they were the same thing.** — Sugars, starches, and fiber are different packages with different effects on the body. A glass of fruit drink and a bowl of beans both contain carbohydrate, but they are not interchangeable.
+- **Believing carbohydrates are toxic and that the body is better off without them.** — Carbohydrate is the body's preferred fuel, and the brain depends on glucose. The evidence points to the dose and the package as the issue, not the nutrient itself.
+- **Assuming 'carbs' means only bread, pasta, and other grain foods.** — Fruits, vegetables, legumes, and dairy all deliver carbohydrate, including naturally occurring sugars such as lactose in milk and yogurt.
+- **Confusing a food's carbohydrate grams with its total calories.** — Carbohydrate contributes about 4 calories per gram, so 30 grams of carbohydrate is roughly 120 calories. Fat and protein add their own calories on top of that.
+
+## Key Takeaway
+
+Carbohydrates are the body's preferred fuel: molecules made of sugar units that provide about 4 calories per gram, fuel the brain, spare protein, and arrive in fruits, grains, vegetables, legumes, and dairy—so the dose and the package, not the nutrient, are what matter.
+
+## Related Topics
+
+- nutrition:foundations:simple-and-complex-carbohydrates
+- nutrition:foundations:fiber
+- nutrition:foundations:metabolism
+- nutrition:foundations:energy-and-calories
+- nutrition:foundations:digestion
 
 ## Sources
 

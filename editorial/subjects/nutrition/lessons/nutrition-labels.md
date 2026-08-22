@@ -32,7 +32,7 @@ The %DV is the percentage of the Daily Value for each nutrient in a serving of t
 
 ### Serving size versus what you actually eat
 
-The single most useful habit in label reading is comparing the label's serving with your own. The label describes one serving; you decide how many servings you eat, and every number scales with that decision. Try a box of oatmeal cookies. The label says serving size 2 cookies (32 g), servings per container 10, calories 160, total fat 7 g (9% DV), sodium 115 mg (5% DV), added sugars 9 g (18% DV). Six cookies is three servings, so multiply everything by three: 480 calories, 21 g fat (27% DV), 345 mg sodium (15% DV), and 27 g added sugars (54% DV). Nothing on the label changed; only the serving count did. The FDA makes the same point with its own example: eat two cups of a food whose serving is one cup and you get two times the calories, nutrients, and %DVs shown.
+The single most useful habit in label reading is comparing the label's serving with your own. The label describes one serving; you decide how many servings you eat, and every number scales with that decision. Try a box of oatmeal cookies. The label says serving size 2 cookies (32 g), servings per container 10, calories 160, total fat 7 g (9% DV), sodium 115 mg (5% DV), added sugars 9 g (18% DV). Six cookies is three servings, so multiply everything by three: 480 calories, 21 g fat (27% DV), 345 mg sodium (15% DV), and 27 g added sugars (54% DV). Nothing on the label changed; only the serving count did. The FDA makes the identical point with its own example: eat two cups of a food whose serving is one cup and you get two times the calories, nutrients, and %DVs shown.
 
 ### Limits of the label, and the honest framing
 

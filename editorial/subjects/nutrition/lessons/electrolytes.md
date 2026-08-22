@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Electrolytes are minerals that carry an electric charge when dissolved in water, a working definition used by MedlinePlus, the National Library of Medicine's consumer health site. The main ones are sodium, potassium, chloride, calcium, and magnesium. Together they carry nerve signals, help muscles contract, and balance the amount of water in the body. Healthy kidneys keep the levels steady. Sweat and illness remove electrolytes; ordinary food and drink replace them. Electrolytes are the body's electrical crew.
+Electrolytes are minerals that carry an electric charge when dissolved in water, a working definition used by MedlinePlus, the health encyclopedia of the National Library of Medicine health site. The main ones are sodium, potassium, chloride, calcium, and magnesium. Together they carry nerve signals, help muscles contract, and balance the amount of water in the body. Healthy kidneys keep the levels steady. Sweat and illness remove electrolytes; ordinary food and drink replace them. Electrolytes are the body's electrical crew.
 
 ## Why This Matters
 
@@ -21,7 +21,7 @@ Every heartbeat, every thought, and every step depends on minerals that carry a 
 
 ### What electrolytes are
 
-An electrolyte is a mineral that carries an electric charge when dissolved in water or body fluids, including blood. The charge can be positive or negative. That is the working definition used by MedlinePlus, the National Library of Medicine's consumer health site, and the Merck Manual Consumer Version states the same idea in its own words: electrolytes are minerals that circulate in the blood, and they also appear in stomach juices, urine, and body tissues. The word describes what these minerals do in water, not what they are made of. Sodium, potassium, chloride, calcium, and magnesium are all minerals, and all five act as electrolytes in the body. A mineral that dissolves in water and gains a charge joins the body's electrical system; one that stays uncharged does not play that role.
+An electrolyte is a mineral that carries an electric charge when dissolved in water or body fluids, including blood. The charge can be positive or negative. That is the working definition used by MedlinePlus, the health encyclopedia of the National Library of Medicine health site, and the Merck Manual Consumer Version states the same idea in its own words: electrolytes are minerals that circulate in the blood, and they also appear in stomach juices, urine, and body tissues. The word describes what these minerals do in water, not what they are made of. Sodium, potassium, chloride, calcium, and magnesium are all minerals, and all five act as electrolytes in the body. A mineral that dissolves in water and gains a charge joins the body's electrical system; one that stays uncharged does not play that role.
 
 ### The main five and their jobs
 
