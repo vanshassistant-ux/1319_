@@ -1,0 +1,157 @@
+# What Is Anthropology?
+
+## In 30 Seconds
+
+Anthropology is the systematic study of humanity across time and place. It asks what it means to be human by studying people everywhere — their bodies, their languages, their histories, and their ways of life. Its signature idea is holism: humans are studied whole, not sliced into a single domain. Anthropologists work in four fields — cultural, biological, linguistic, and archaeological — and compare societies without presuming any superior. They do fieldwork, research, and applied work. The honest payoff: anthropology makes the familiar strange and the strange familiar.
+
+## Why This Matters
+
+Everyone grows up inside one way of life that can look like simply "the normal way." Anthropology is the discipline that steps back and asks how that way of life came to be — and how people in other times and places built different answers to the same human problems. That habit of stepping back transfers to almost any career: health care, design, business, and public service all depend on understanding people whose lives differ from your own. Anthropology also builds a quieter skill — treating your own assumptions as questions rather than facts. In a connected world where cultures constantly meet, that skill is practical, not just academic.
+
+## Learning Objectives
+
+- Define anthropology as the systematic study of humanity across time and place, using the OpenStax working definition.
+- Explain holism — studying humans whole — with an original example of how separate parts of a way of life connect.
+- Identify the four fields of anthropology and state the focus of each in one line.
+- Explain the comparative approach: anthropologists compare societies without presuming that any is superior.
+- Distinguish anthropology from other social sciences by its holistic scope.
+- Describe the three kinds of work anthropologists do — fieldwork, research, and applied work — and analyze the reality check behind "making the familiar strange."
+
+## The College Version
+
+### What anthropology is
+
+Anthropology is the systematic study of humanity across time and place. OpenStax's Introduction to Anthropology puts it plainly: anthropology is "the study of humanity across time and space," and anthropologists study every corner of human experience — thought, activity, and organization alike. Encyclopaedia Britannica frames the same subject as "the science of humanity." The scope is deliberately enormous: human bodies and human beliefs, the oldest tools and tonight's dinner, a village market and a global city. Other disciplines divide human life into domains; anthropology starts from the opposite move. It treats humanity as one subject and asks how the parts fit together. That single decision shapes everything else in this lesson — holism, the four fields, the comparative approach, and the work anthropologists do.
+
+### Holism: studying humans whole
+
+The signature idea of anthropology is holism: humans are studied whole. OpenStax describes holism as a method of analysis that foregrounds the ever-changing relationships among different realms of culture — in plainer words, biology, language, history, and daily life are treated as one connected system, not separate boxes. Original example: Lena, a student anthropologist, wants to know why fish prices in a coastal town double every winter. A single-domain approach might stop at supply and demand. Holism keeps going. The price spike connects to family shopping patterns, winter festival meals, local words for ice and weather, and the old stone smokehouses on the harbor that have shaped how fish are preserved for centuries. The question looked economic; the answer turned out to be economic, social, linguistic, and historical at once. Nothing human is studied in isolation.
+
+### The four fields
+
+To manage this wide subject, anthropologists organize their work into four fields, each asking its own kind of question. Biological anthropology studies the origins, evolution, and biological diversity of our species — how human bodies came to be and how they vary. Archaeology studies past human societies through what people left behind: artifacts, buildings, and other material remains. Cultural anthropology studies the ways of life of living people — their everyday thoughts, actions, and social arrangements. Linguistic anthropology studies human language and how people create meaning, identity, and community through speech. The four fields share one goal — understanding humanity whole, from different angles — and a single research question often pulls in several of them. A deeper tour of the fields is its own lesson; here, the map is the point.
+
+### The comparative idea
+
+Anthropology is also comparative. Because the subject is humanity everywhere, anthropologists constantly compare ways of life — across societies, regions, and centuries. And the commitment attached to comparison matters as much as the comparison itself: anthropologists do not compare in order to rank. OpenStax is explicit that anthropologists are committed to describing and understanding the diversity of human ways of life rather than deciding which way of life is better, morally superior, or more efficient. Imagine a lesson comparing how people greet one another in three societies — a handshake here, a slight bow there, an extended conversation somewhere else. The point is never which greeting is correct. The point is what each greeting accomplishes inside its own way of life. Comparison without ranking is what keeps the approach scientific.
+
+### Anthropology and the other social sciences
+
+Every social science studies human beings, so what sets anthropology apart? Scope. Other disciplines focus on one domain of human life: economists study markets and production, political scientists study power and government, psychologists study the individual mind. Anthropology studies all of it together — and adds the parts the others leave out: biology, language, and the deep past. OpenStax makes the point directly: economists study economics, biologists study living organisms, and anthropologists study all of these things. The comparison is not a contest: anthropology and the other social sciences overlap, borrow from each other, and often collaborate. The difference is the unit of analysis: holistic, whole-human, reaching across time and place, where a sister discipline typically concentrates on one slice of social life.
+
+### What anthropologists do
+
+Anthropologists work in three broad ways, and many do more than one. Fieldwork is the classic core: anthropologists spend months or years living among the people they study, learning the language, and taking part in daily life — cultural anthropologists in particular often live in the societies they study. Research is the knowledge-producing side: designing studies, gathering evidence, and publishing findings, from excavating a site to recording how a community uses language. Applied work puts that knowledge to use in the world: anthropologists work with governments, hospitals, museums, companies, and community organizations, and forensic anthropologists work alongside law enforcement to identify human remains. Fieldwork and research build the knowledge; applied work spends it on real problems. All three paths rest on the same training.
+
+### The honest framing
+
+Finally, the reality check. A classic line in anthropology says the discipline makes the familiar strange and the strange familiar. The strange becomes familiar: ways of life that once looked exotic come to make sense on their own terms. And the familiar becomes strange: your own way of life — the one you never had to explain — shows up as one particular answer among many, with its own history and its own trade-offs. That second move is the one people tend to forget. Anthropology does not exist to confirm that your culture is good, or to grade other cultures against it. It exists to help you understand humanity, including yourself, without the comfort of assuming you already do. The discipline describes and explains; the judging is left to you.
+
+## Key Vocabulary
+
+- **anthropology** — The systematic study of humanity across time and place, covering human biology, culture, language, and history; the "science of humanity."
+- **holism** — The approach of studying humans as whole beings, treating biology, culture, language, and history as one connected system rather than separate domains.
+- **cultural anthropology** — The field that studies the ways of life of living people, including their everyday thoughts, actions, and social arrangements.
+- **biological anthropology** — The field that studies the origins, evolution, and biological diversity of the human species.
+- **linguistic anthropology** — The field that studies human language and how people create meaning, identity, and community through speech.
+- **archaeology** — The field that studies past human societies through artifacts, buildings, and other material remains people left behind.
+- **comparative approach** — The practice of comparing ways of life across societies and time periods in order to understand them, never to rank them.
+- **fieldwork** — Long-term, immersive research in which anthropologists live among the people they study, learning the language and taking part in daily life.
+- **applied anthropology** — The use of anthropological knowledge to address real-world problems outside academia, such as in government, health care, museums, or community organizations.
+
+## Eli-10
+
+**Simplified explanation.** Anthropology is the science of human beings, and its rule is simple: don't study people in slices. A question about money turns out to be a question about family, festivals, and old stone buildings. A question about language turns out to be a question about who belongs and who doesn't. Because humans are whole, anthropology studies them whole — bodies, words, memories, and habits together. And because humans are everywhere, anthropology compares ways of life without deciding which is best. The price of that honesty: your own way of life stops being "just normal" and becomes one case among many. That is not a comfortable lesson. It is the lesson.
+
+**Where the analogy breaks down.** A film has a director, a script, and an ending; anthropology has none. No single storyline explains humanity, no narrator gets the final word, and people are not actors following a script — they change the story as they live it. The camera also changes what it records: anthropologists are part of the human world they study. And no film can capture everything; every anthropological study is a partial view, which is why the discipline stays humble about certainty.
+
+## Eli's Analogy
+
+Think of a film versus a photograph. A photograph freezes one moment of one subject — a face, a market stall, a handshake. A film shows how moments connect into a story that moves. Other social sciences take photographs: sharp, careful pictures of one part of human life. Anthropology is the film: it follows whole people through time and place, and it keeps asking how the frames connect — biology to belief, language to lunch, the past to right now.
+
+## Worked Example
+
+Priya studies a town of about 5,000 people on the coast of a fictional island. Her research question: why do families in the harbor district eat fish at nearly every meal, while families on the hill eat it only on festival days? An economist might track prices and incomes. Priya is an anthropologist, so she starts from holism. In fieldwork, she lives in the harbor district for a year, shopping, cooking, and eating with the families she studies. She learns that harbor families share their catch with neighbors, that the hill families' grandparents moved inland two generations ago, that the harbor dialect has eleven words for kinds of fish while the hill dialect has three, and that the stone drying racks on the shore were built by the harbor families' ancestors — a past the harbor families still describe as "ours." She compares her findings with a fishing community in another country, describing both ways of life without ranking them. Her study goes out as research for other anthropologists, and her notes also help the local museum plan an exhibit about the harbor. One question, four fields, whole humans.
+
+## Common Mistakes
+
+- **"Anthropology is the study of ancient bones and ruins."** That is archaeology — one of the four fields. Anthropology also studies living people: their cultures, their languages, and their bodies. The subject is all of humanity, past and present.
+- **"Anthropologists compare cultures to decide which is best."** The comparative approach compares ways of life to understand them, never to rank them. Anthropologists describe how each practice works inside its own way of life; the field's explicit commitment is to understanding diversity, not judging it.
+- **"Anthropology and sociology are basically the same field."** They overlap on culture and social life, but their units of analysis differ. Sociology studies societies and social groups; anthropology studies humans holistically — biology, language, and the deep past included — across time and place.
+- **"Fieldwork is just visiting a place and taking notes."** Fieldwork is long-term and immersive: anthropologists live among the people they study, often for months or years, learning the language and taking part in daily life. It is systematic research, not a tour.
+- **"Anthropology will tell me what to think about other cultures."** It will not. Anthropology describes and explains; it does not grade. You still make your own judgments — that is part of the honest framing. The discipline makes your assumptions visible, not comfortable.
+
+## Compare / Contrast
+
+- **Anthropology vs. Sociology:** Sociology studies societies, social groups, and social behavior; anthropology studies humans whole — biology, language, and the deep past included — across time and place. They overlap on culture and social life but use different units of analysis.
+- **Anthropology vs. Psychology:** Psychology focuses on the individual mind and behavior; anthropology studies humans as whole social and biological beings in cultural context, including the languages, histories, and ways of life that shape any single mind.
+- **Cultural anthropology vs. Archaeology:** Cultural anthropology studies the ways of life of living people, usually through long-term fieldwork; archaeology studies past societies through material remains — artifacts, buildings, and other traces people left behind.
+
+## Key Takeaway
+
+Anthropology is the systematic study of humanity across time and place: it studies humans whole, compares ways of life without ranking them, and works through fieldwork, research, and applied practice — making the familiar strange and the strange familiar.
+
+## Practice Question Bank
+
+**anthropology:foundations:what-is-anthropology:1** According to the working definition used in this lesson, anthropology is the systematic study of —
+- A. humanity across time and place ✅
+- B. individual minds and mental processes
+- C. markets, prices, and the production of goods
+- D. governments, laws, and political institutions
+  - *Answer:* A. *Explanation:* OpenStax's Introduction to Anthropology describes anthropology as the study of humanity across time and space. Individual minds are psychology's subject; markets and production belong to economics; governments and laws belong to political science — each is a single domain, while anthropology spans all of humanity.
+  - *Difficulty:* recall | *Skill:* recalling the working definition of anthropology
+
+**anthropology:foundations:what-is-anthropology:2** An anthropologist studying a coastal town notices that winter fish prices connect to family shopping patterns, winter festival meals, local words for weather, and old stone smokehouses built centuries ago. Which idea from this lesson does this best illustrate?
+- A. The comparative approach — comparing this town with other towns
+- B. Applied work — using findings to advise the town government
+- C. Holism — studying humans whole, with the parts of a way of life connected ✅
+- D. Fieldwork — living in the town for a year
+  - *Answer:* C. *Explanation:* Holism is the idea that biology, culture, language, and history form one connected system, so an "economic" question turns out to involve family life, festivals, vocabulary, and the past. Comparing towns is the comparative approach; advising the government is applied work; living in the town is fieldwork — all real anthropological activities, but not what this pattern of connections illustrates.
+  - *Difficulty:* understanding | *Skill:* recognizing holism in a research scenario
+
+**anthropology:foundations:what-is-anthropology:3** A researcher analyzes fragments of clay pots, coins, and building foundations from a market district that was abandoned centuries ago, to reconstruct how trade worked there. This researcher works in —
+- A. cultural anthropology
+- B. archaeology ✅
+- C. linguistic anthropology
+- D. biological anthropology
+  - *Answer:* B. *Explanation:* Archaeologists study past human societies through artifacts and other material remains — pots, coins, and foundations are exactly that. Cultural anthropology studies living people's ways of life; linguistic anthropology studies language; biological anthropology studies the origins, evolution, and diversity of our species.
+  - *Difficulty:* application | *Skill:* classifying a research scenario into a field of anthropology
+
+**anthropology:foundations:what-is-anthropology:4** An economist studies how households in a region budget their money; an anthropologist studies the same households, but also their family structure, language, festivals, and the history of their town. Which contrast from this lesson does this illustrate?
+- A. fieldwork versus research
+- B. the comparative approach versus holism
+- C. applied work versus teaching
+- D. anthropology's holistic scope versus a single-domain social science ✅
+  - *Answer:* D. *Explanation:* The lesson's core contrast: other social sciences each focus on one domain of human life, while anthropology studies humans whole — adding family, language, festivals, and history to the economic picture. Fieldwork versus research and applied work versus teaching are different contrasts, and the comparative approach is about comparing societies, not about scope.
+  - *Difficulty:* application | *Skill:* applying the holistic-versus-single-domain distinction
+
+**anthropology:foundations:what-is-anthropology:5** A student says, "Anthropology's job is to prove that every culture is equally good." Following the honest framing taught in this lesson, a more accurate statement is that anthropology —
+- A. ranks ways of life by how well they meet basic needs
+- B. confirms whatever the researcher's own culture already believes
+- C. compares ways of life without ranking them, and treats familiar assumptions as questions rather than facts ✅
+- D. judges each practice by how it looks to outsiders
+  - *Answer:* C. *Explanation:* The honest framing: anthropologists compare ways of life to understand them, never to grade them — and "equally good" is still a grade. The discipline makes the familiar strange, turning your own assumptions into questions, and the strange familiar, so other ways of life make sense on their own terms. It neither ranks cultures nor confirms what you already believe.
+  - *Difficulty:* analysis | *Skill:* analyzing the reality check behind anthropology's comparative commitment
+
+## Sources
+
+1. 1.1 The Study of Humanity, or "Anthropology Is Vast" — Introduction to Anthropology, OpenStax, Rice University. https://openstax.org/books/introduction-anthropology/pages/1-1-the-study-of-humanity-or-anthropology-is-vast
+2. 1.2 The Four-Field Approach: Four Approaches within the Guiding Narrative — Introduction to Anthropology, OpenStax, Rice University. https://openstax.org/books/introduction-anthropology/pages/1-2-the-four-field-approach-four-approaches-within-the-guiding-narrative
+3. 1.5 Holism: Anthropology's Distinctive Approach — Introduction to Anthropology, OpenStax, Rice University. https://openstax.org/books/introduction-anthropology/pages/1-5-holism-anthropologys-distinctive-approach
+4. 1.6 Cross-Cultural Comparison and Cultural Relativism — Introduction to Anthropology, OpenStax, Rice University. https://openstax.org/books/introduction-anthropology/pages/1-6-cross-cultural-comparison-and-cultural-relativism
+5. Anthropology — Encyclopaedia Britannica. https://www.britannica.com/science/anthropology
+
+## Related Topics
+
+- anthropology:foundations:four-fields-of-anthropology
+- anthropology:foundations:culture
+- anthropology:foundations:fieldwork
+- anthropology:foundations:cultural-relativism
+- anthropology:foundations:applied-anthropology
+
+## Editorial Metadata
+
+- Topic ID: anthropology:foundations:what-is-anthropology
+- Editorial status: READY_TO_PUBLISH
+- Researched: 2026-08-22
+- Provenance: EliExplains original synthesis; reference-only sources (OpenStax Introduction to Anthropology read via the LibreTexts CC BY 4.0 mirror with canonical section URLs verified against Wayback captures; Britannica read via a Wayback capture); only the attributed one-sentence OpenStax working definition and the one-phrase Britannica framing are quoted; all other prose and all examples are original.
