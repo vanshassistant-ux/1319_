@@ -1,0 +1,192 @@
+{
+  "topicId": "databases-and-sql:foundations:relationships",
+  "subjectId": "databases-and-sql",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "working definition of a relationship as the logical link between tables based on shared key values",
+      "why relationships exist: real-world things relate (customers place orders, orders contain products)",
+      "the mechanism: a foreign key in one table points to a primary key in another",
+      "the three cardinalities named: one-to-one, one-to-many, many-to-many",
+      "relationship diagrams: visual models with lines connecting tables and one/many symbols",
+      "why relationships matter: queryable data across tables and avoidance of duplication",
+      "honest framing: relationships are the 'relational' in relational databases"
+    ],
+    "supporting": [
+      "a relationship is not stored separately from tables; it exists through matching key values",
+      "cardinality as the description of how many rows on one side connect to rows on the other",
+      "crow's foot notation as a common way to draw the 'many' end of a relationship",
+      "relation as the mathematical term for a table (PostgreSQL)"
+    ],
+    "outOfScope": [
+      "primary keys in depth (own topic: databases-and-sql:foundations:primary-keys)",
+      "foreign keys in depth (own topic: databases-and-sql:foundations:foreign-keys)",
+      "one-to-one in depth (own topic: databases-and-sql:foundations:one-to-one)",
+      "one-to-many in depth (own topic: databases-and-sql:foundations:one-to-many)",
+      "many-to-many in depth (own topic: databases-and-sql:foundations:many-to-many)",
+      "normalization (own topic: databases-and-sql:foundations:database-normalization)",
+      "SQL syntax for defining relationships or keys (own topics: sql-basics and the SQL topics)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A relationship between two tables is a logical link based on shared key values: when two tables have a column in common, such as an ID column, the database can create a relationship between them.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["oracle-what-is-a-relational-database", "ibm-relational-databases"],
+      "status": "supported"
+    },
+    {
+      "claim": "Relationships exist because the real-world things a database tracks are connected: customers place orders and orders contain products, so the tables that record them need links.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["ibm-relational-databases", "oracle-what-is-a-relational-database"],
+      "status": "supported"
+    },
+    {
+      "claim": "The mechanism of a relationship is a foreign key in one table pointing to a primary key in another; the link runs through the shared key values, not through copied data.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ibm-relational-databases", "oracle-what-is-a-relational-database"],
+      "status": "supported"
+    },
+    {
+      "claim": "Cardinality describes how many rows on one side of a relationship can connect to rows on the other side; the three common cardinalities are one-to-one, one-to-many, and many-to-many.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ibm-entity-relationship-diagram", "visual-paradigm-erd-guide"],
+      "status": "supported"
+    },
+    {
+      "claim": "In a one-to-one relationship, each row in one entity links to at most one row in the other entity, and vice versa.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ibm-entity-relationship-diagram", "visual-paradigm-erd-guide"],
+      "status": "supported"
+    },
+    {
+      "claim": "In a one-to-many relationship, one row on the first side links to many rows on the second side, while each row on the second side links to exactly one row on the first.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ibm-entity-relationship-diagram", "visual-paradigm-erd-guide"],
+      "status": "supported"
+    },
+    {
+      "claim": "In a many-to-many relationship, rows on both sides can link to many rows on the other side.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ibm-entity-relationship-diagram", "visual-paradigm-erd-guide"],
+      "status": "supported"
+    },
+    {
+      "claim": "Relationship diagrams (entity relationship diagrams) draw tables as boxes joined by connecting lines, with symbols at the line ends showing whether the link means one or many; crow's foot notation marks 'many' with a three-pronged fork.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ibm-entity-relationship-diagram", "visual-paradigm-erd-guide"],
+      "status": "supported"
+    },
+    {
+      "claim": "Relationships make data queryable across tables and help avoid duplication, because a shared key lets queries combine tables without copying data into each table.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["ibm-relational-databases"],
+      "status": "supported"
+    },
+    {
+      "claim": "The word 'relational' in relational databases refers to the idea of related tables: 'relation' is essentially the mathematical term for table, and relational data is organized as tables whose data points are related to each other.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["postgresql-docs-tutorial-concepts", "ibm-relational-databases"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether relationships are described as being between tables or between entities.",
+      "positions": [
+        "Oracle and IBM's relational-database explainers describe relationships between tables, created through common columns such as an ID column.",
+        "IBM's ERD guide and Visual Paradigm describe relationships between entities (things such as customers or products), drawn as connectors between entity boxes.",
+        "PostgreSQL's tutorial uses 'relation' as the mathematical term for a table."
+      ],
+      "resolution": "The two framings describe the same concept at different levels: tables store entities, so a link between tables is a link between the things they represent. The lesson leads with table-to-table language to match the sibling topics (tables, rows, foreign keys) and notes that diagrams often label boxes with the real-world things they represent."
+    },
+    {
+      "issue": "Symbols used to draw the 'many' side of a relationship in diagrams.",
+      "positions": [
+        "IBM's ERD guide describes crow's foot notation as a three-pronged forked connecting line showing 'many', and notes cardinality shown as characters such as 1, M, and N in some styles.",
+        "Visual Paradigm states that cardinality is represented as a crow's foot at the connector's ends.",
+        "Some guides draw 'one' with a single mark and 'many' with a fork or infinity-like symbol."
+      ],
+      "resolution": "The lesson describes the convention generally (a single mark for 'one', a forked crow's foot for 'many') without asserting one universal symbol set, and attributes the crow's foot description to the IBM and Visual Paradigm guides."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's boilerplate ('Relationships is a foundational concept in Databases & Sql. This lesson introduces its meaning, its context, and a simple way to apply it.') asserted no specific factual claims and was discarded in favor of source-verified content."
+  ],
+  "correctionsNeeded": [
+    "Replaced the generic draft boilerplate with a working definition of a relationship (logical link based on shared key values) attributed to Oracle and IBM.",
+    "Added the three cardinalities with original examples (country/capital, band/songs, recipes/ingredients), verified against IBM's ERD guide and Visual Paradigm.",
+    "Added relationship-diagram coverage (boxes, connecting lines, crow's foot notation) verified against IBM's ERD guide and Visual Paradigm.",
+    "Kept primary keys, foreign keys, and the three cardinality topics as references only, per the subject's topic ownership."
+  ],
+  "rightsIssues": [
+    "All five sources are reference-only; no source prose is reproduced in the lesson, and all examples (veterinary clinic, gym, bike shop, band/songs, recipes/ingredients) are original."
+  ],
+  "sourceRecords": [
+    {
+      "id": "ibm-relational-databases",
+      "title": "What is a relational database?",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/topics/relational-databases",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read live (HTTP 200) on 2026-08-21. Supports: tables structured across multiple tables joined via primary key or foreign key, unique identifiers demonstrating relationships between tables, the customer/transaction example joined by a common customer ID field, relationships illustrated through data models, queries combining tables and reducing redundancy. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "oracle-what-is-a-relational-database",
+      "title": "What Is a Relational Database?",
+      "provider": "Oracle",
+      "url": "https://www.oracle.com/database/what-is-a-relational-database/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read live (HTTP 200) on 2026-08-21. Supports: a database storing and providing access to data points related to one another, and the customer/order example where two tables share only the ID column and that common column lets the database create a relationship between them. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "ibm-entity-relationship-diagram",
+      "title": "What is an entity relationship diagram?",
+      "provider": "IBM (IBM Think)",
+      "url": "https://www.ibm.com/topics/entity-relationship-diagram",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read live (HTTP 200) on 2026-08-21. Supports: ERD definition (visual representation of how items in a database relate, symbols linked with connecting lines), cardinality definition and the one-to-one (1:1), one-to-many (1:M), and many-to-many (M:M) forms, and crow's foot notation described as a three-pronged forked connecting line showing many. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "visual-paradigm-erd-guide",
+      "title": "What is Entity Relationship Diagram (ERD)?",
+      "provider": "Visual Paradigm",
+      "url": "https://www.visual-paradigm.com/guide/data-modeling/what-is-entity-relationship-diagram/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier D reputable secondary (data-modeling tool vendor's reference guide). Read live (HTTP 200) on 2026-08-21. Supports: cardinality as the possible number of occurrences in one entity associated with occurrences in another, the three common cardinal relationships (one-to-one, one-to-many, many-to-many), and cardinality represented as a crow's foot at the connector's ends. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "postgresql-docs-tutorial-concepts",
+      "title": "PostgreSQL Documentation 18: Chapter 2. The SQL Language — 2.2. Concepts",
+      "provider": "The PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/tutorial-concepts.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read live (HTTP 200) on 2026-08-21. Supports the honest framing: PostgreSQL is a relational database management system, 'relation' is essentially the mathematical term for table, and each table is a named collection of rows with the same set of named columns. Facts synthesized; no wording reproduced."
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "topicId": "databases-and-sql:foundations:one-to-one",
+  "subjectId": "databases-and-sql",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "the working definition of a one-to-one relationship: each row in the first table can match at most one row in the second table, and each row in the second can match at most one row in the first",
+      "when one-to-one is used: deliberately splitting one table into two for security or size, with user accounts and user profiles as the classic example",
+      "how one-to-one is implemented: a foreign key with a uniqueness rule on the linking column, so neither side can repeat",
+      "one-to-one versus one-to-many, using a person and their passport versus a customer and their orders",
+      "why one-to-one is rare: most real relationships are one-to-many",
+      "the rule of thumb: if two tables are always one-to-one, they might be one table"
+    ],
+    "supporting": [
+      "one-to-one is documented as uncommon and often a sign of redundant data or a suboptimal design",
+      "the unique constraint is the documented mechanism for forbidding repeated values in a column",
+      "a foreign key by itself allows repeats; the uniqueness rule is what turns a link into a one-to-one link",
+      "splitting a table can keep sensitive login data apart from general profile data"
+    ],
+    "outOfScope": [
+      "relationships as a general concept (own topic: databases-and-sql:foundations:relationships)",
+      "one-to-many in depth (own topic: databases-and-sql:foundations:one-to-many)",
+      "many-to-many (own topic: databases-and-sql:foundations:many-to-many)",
+      "foreign keys in depth (own topic: databases-and-sql:foundations:foreign-keys)",
+      "primary keys in depth (own topic: databases-and-sql:foundations:primary-keys)",
+      "SQL syntax for keys and constraints (own topics: sql-basics and the SQL family)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A one-to-one relationship means each row in the first table can match at most one row in the second table, and each row in the second can match at most one row in the first.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "mslearn-powerbi-relationships",
+        "wikipedia-cardinality-data-modeling"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "One-to-one is uncommon in practice; database documentation describes it as a cardinality type that is not common and likely represents a suboptimal model design because of the storage of redundant data.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "mslearn-powerbi-relationships"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A one-to-one relationship can be created when both tables each contain a column of common and unique values, meaning neither linking column may hold a repeated value.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "mslearn-powerbi-one-to-one-guidance",
+        "w3schools-sql-unique"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A foreign key is a column in one table that refers to the primary key of another table; on its own it allows repeated values, so a uniqueness rule is what limits a link to at most one match on each side.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3schools-sql-foreign-key",
+        "mslearn-fk-constraints",
+        "w3schools-sql-unique"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "One-to-one is mostly used to split a table in two in order to provide information concisely and make it more understandable, and a single business entity can be stored as two tables when its data comes from different sources.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "wikipedia-cardinality-data-modeling",
+        "mslearn-powerbi-one-to-one-guidance"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "In a one-to-many relationship the 'one' side column holds unique values while the 'many' side column may contain duplicates; a customer and their orders is the standard shape of this relationship.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "mslearn-powerbi-relationships",
+        "wikipedia-cardinality-data-modeling"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Design guidance recommends consolidating two one-to-one related tables into a single table when possible, because keeping them separate adds clutter and produces unexpected results when rows do not match on both sides.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "mslearn-powerbi-one-to-one-guidance"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "No single documentation source states the working definition verbatim as 'at most one on each side'.",
+      "positions": [
+        "Microsoft Learn's Power BI documentation expresses one-to-one as 'both columns contain unique values' and lists the cardinality shorthand 1:1.",
+        "Wikipedia's data-modeling article defines cardinality as the numerical relationship between rows of one table and rows in another and lists one-to-one among the common cardinalities."
+      ],
+      "resolution": "The lesson presents the at-most-one-on-each-side phrasing as the working definition synthesized across documentation, and attributes its two parts separately (both columns unique; numerical relationship between rows)."
+    },
+    {
+      "issue": "Design advice about splitting versus merging one-to-one tables points in both directions.",
+      "positions": [
+        "Wikipedia frames a one-to-one split as useful: 'mostly used to split a table in two in order to provide information concisely and make it more understandable'.",
+        "Microsoft Learn's one-to-one guidance recommends 'consolidating the data into a single model table' and avoiding one-to-one relationships that span tables."
+      ],
+      "resolution": "The lesson reconciles the two: a split is justified when there is a real reason (sensitive data, optional columns, data from different sources); otherwise the rule of thumb applies — two tables that are always one-to-one might be one table."
+    },
+    {
+      "issue": "The classic user-accounts-and-user-profiles example is a textbook pattern, not a documented definition.",
+      "positions": [
+        "The split-for-security motivation follows from the documented reasons to separate data (Wikipedia's split-a-table rationale; Microsoft Learn's row-data-spans-across-tables scenario).",
+        "No researched source uses the exact accounts/profiles example."
+      ],
+      "resolution": "The accounts/profiles example is presented as an original illustration of the documented split pattern, and the security motivation is recorded as an INTERPRETIVE claim grounded in those documented premises."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "No generated draft exists for this topic yet (topic record status 'planned'); nothing to reconcile.",
+    "The one-to-many and many-to-many relationship types are named only as contrasts and belong to their own sibling topics, not taught here."
+  ],
+  "correctionsNeeded": [
+    "Wrote all content from scratch: working definition attributed to Microsoft Learn and Wikipedia data-modeling documentation, implementation mechanism grounded in W3Schools and Microsoft Learn constraint documentation.",
+    "Recorded the design rule of thumb (two always-one-to-one tables might be one table) as an INTERPRETIVE claim citing Microsoft Learn's consolidation recommendation.",
+    "Wrote all five questions from the evidence; answer keys verified against the sources.",
+    "Set editorialStatus READY_TO_PUBLISH with 7 supporting sources (2 newly verified Microsoft Learn pages, 1 Wikipedia data-modeling article, 4 registry records reused verbatim)."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "mslearn-powerbi-relationships",
+      "title": "Model relationships in Power BI Desktop",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-relationships-understand",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read live via curl on 2026-08-21. Supports: cardinality as the four types listed with shorthand (one-to-many 1:*, many-to-one *:1, one-to-one 1:1, many-to-many *:*); 'A one-to-one relationship means both columns contain unique values'; 'This cardinality type isn't common, and it likely represents a suboptimal model design because of the storage of redundant data'; the 'one' side contains unique values while the 'many' side can contain duplicate values. Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "mslearn-powerbi-one-to-one-guidance",
+      "title": "One-to-one relationship guidance - Power BI",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/power-bi/guidance/relationships-one-to-one",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read live via curl on 2026-08-21. Supports: 'A one-to-one relationship can be created when both tables each contain a column of common and unique values'; the row-data-spans-across-tables scenario (a single business entity loaded as two or more model tables, possibly from different data stores); the recommendation to avoid one-to-one relationships that span tables (clutter, fields harder to find, unexpected results when rows do not match) and to consolidate the data into a single model table. Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "wikipedia-cardinality-data-modeling",
+      "title": "Cardinality (data modeling)",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cardinality_(data_modeling)",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. Supports: cardinality as 'the numerical relationship between rows of one table and rows in another', with one-to-one, one-to-many, and many-to-many as the common cardinalities; 'A one-to-one relationship is mostly used to split a table in two in order to provide information concisely and make it more understandable'; the one-to-one example of a person and their birth certificate and the one-to-many example of an order and its line items. Encyclopedia source used for concept-level corroboration only; facts synthesized into original prose."
+    },
+    {
+      "id": "w3schools-sql-foreign-key",
+      "title": "SQL FOREIGN KEY Constraint",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_foreignkey.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B registry record reused verbatim (id and URL identical to content/phase-2/source-registry.json). Used here for the foreign-key mechanism that underlies one-to-one implementation: a foreign key is a column in one table that refers to the primary key in another table, and the constraint establishes a link between two tables. The foreign-keys sibling topic owns depth; referenced only."
+    },
+    {
+      "id": "w3schools-sql-unique",
+      "title": "W3Schools: SQL UNIQUE Constraint",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_unique.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B registry record reused verbatim (id and URL identical to content/phase-2/source-registry.json). Used here for the uniqueness rule: the UNIQUE constraint ensures that all values in a column are unique, which is what turns a plain link into a one-to-one link. Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "mslearn-fk-constraints",
+      "title": "Primary and foreign key constraints",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/tables/primary-and-foreign-key-constraints",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B registry record reused verbatim (id and URL identical to content/phase-2/source-registry.json). Used here for the link mechanism: a foreign key is a column or combination of columns used to establish and enforce a link between the data in two tables. The foreign-keys sibling topic owns depth; referenced only."
+    },
+    {
+      "id": "postgresql-ddl-constraints",
+      "title": "PostgreSQL Documentation: Constraints (Section 5.5)",
+      "provider": "PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Registry record reused verbatim (id and URL identical to content/phase-2/source-registry.json). Used here as corroboration that constraints restrict data and that unique constraints forbid repeated values; no SQL shown in the lesson."
+    }
+  ]
+}

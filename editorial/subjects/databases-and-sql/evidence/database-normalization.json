@@ -1,0 +1,187 @@
+{
+  "topicId": "databases-and-sql:foundations:database-normalization",
+  "subjectId": "databases-and-sql",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "working definition of normalization: organizing tables to reduce redundancy and keep data consistent (attributed to Microsoft's database documentation)",
+      "the problem it solves: duplicated data drifts when a change is made in one place but not another (customer address stored with every order)",
+      "the core idea: each fact stored once, in one place",
+      "the normal forms named at intuition level: first, second, and third normal form, one line each, no formal math",
+      "third normal form as the common practical target",
+      "the practical payoff: updates become simpler and safer",
+      "normalization vs over-normalization: too many tiny tables is also a problem",
+      "honest framing: normalization is a design habit, not a one-time rule"
+    ],
+    "supporting": [
+      "origin: the idea was proposed by Edgar F. Codd in 1970 as part of his relational model",
+      "anomalies caused by unnormalized design: insertion, update, and deletion anomalies",
+      "higher normal forms (Boyce-Codd, fourth, fifth) exist but are beyond everyday design",
+      "normalization is structural; data accuracy rules belong to the sibling data-integrity topic"
+    ],
+    "outOfScope": [
+      "data integrity as a discipline (own topic: databases-and-sql:foundations:data-integrity)",
+      "relationships and cardinality (own topics: relationships, one-to-one, one-to-many, many-to-many)",
+      "foreign keys in depth (own topic: databases-and-sql:foundations:foreign-keys)",
+      "SQL syntax for designing or altering tables (own topics: sql-basics and the SQL family)",
+      "formal definitions of functional dependencies and the math of higher normal forms"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Normalization is the process of organizing data in a database — creating tables and establishing relationships between them according to rules designed to protect the data and make the database more flexible by eliminating redundancy.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "mslearn-database-normalization-description"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Redundant data creates maintenance problems: when a fact exists in more than one place, every change to the fact must be made in exactly the same way in all locations.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "mslearn-database-normalization-description"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A customer address change is easier to implement if the address is stored only in the customers table and nowhere else in the database.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "mslearn-database-normalization-description"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Each rule of normalization is called a normal form; observing the first three rules places a database in third normal form.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "mslearn-database-normalization-description"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "First normal form eliminates repeating groups in individual tables: create a separate table for each set of related data, identify each set with a primary key, and do not use multiple fields in a single table to store similar data.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "mslearn-database-normalization-description"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Second normal form creates separate tables for sets of values that apply to multiple records, relates them with a foreign key, and requires that records depend on nothing other than the table's primary key.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "mslearn-database-normalization-description"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Third normal form eliminates fields that do not depend on the key: values in a record that are not part of the record's key do not belong in the table.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "mslearn-database-normalization-description"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Although other levels of normalization are possible, third normal form is considered the highest level necessary for most applications.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "mslearn-database-normalization-description",
+        "wikipedia-database-normalization"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Database normalization was first proposed by British computer scientist Edgar F. Codd as part of his relational model; the first normal form was defined by Codd in 1970.",
+      "claimType": "HISTORICAL",
+      "sourceIds": [
+        "wikipedia-database-normalization"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Unnormalized designs suffer insertion, update, and deletion anomalies; an update anomaly occurs when the same record shows different values (for example, different addresses) on different records.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "wikipedia-database-normalization"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Perfect normalization is not always practical: normalization requires additional tables, and many small tables may degrade performance or exceed open file and memory capacities.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "mslearn-database-normalization-description"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Normalization reduces data redundancy and improves data integrity.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "wikipedia-database-normalization"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "What normalization primarily targets: redundancy alone, or redundancy plus inconsistent dependencies.",
+      "positions": [
+        "Microsoft Learn describes normalization as eliminating redundancy and inconsistent dependency, with both named in the definition.",
+        "Wikipedia's lead defines normalization as reducing data redundancy and improving data integrity.",
+        "Some short tutorials describe normalization only as 'removing duplicates.'"
+      ],
+      "resolution": "The sources agree that redundancy is the core target; Microsoft Learn adds inconsistent dependency (a fact stored where it does not belong). The lesson states the definition with both redundancy and consistency, and uses the inconsistent-dependency idea in the third-normal-form section without formal terminology."
+    },
+    {
+      "issue": "Whether third normal form is the endpoint of normalizing or merely a common stopping point.",
+      "positions": [
+        "Microsoft Learn: third normal form is considered the highest level necessary for most applications.",
+        "Wikipedia: a relation is informally described as normalized if it meets third normal form, and most 3NF relations are free of the three anomalies; higher forms (BCNF, 4NF, 5NF, 6NF) exist.",
+        "Some textbooks present BCNF as the standard classroom target."
+      ],
+      "resolution": "The lesson presents third normal form as the common practical target, while noting that higher forms exist and are special cases — matching both sources without claiming 3NF is the mathematical end of normalization."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The machine-generated draft in public/content/phase-2/lessons.json contained no verifiable claims about normalization at all — only generic boilerplate ('Database Normalization is a foundational concept in Databases & Sql', 'a college-level explanation names the concept', 'label on a toolbox drawer'), which was discarded wholesale and replaced with the source-verified lesson."
+  ],
+  "correctionsNeeded": [
+    "Replaced the generic machine-generated draft with an original, source-verified lesson; no wording from the draft was retained.",
+    "Attributed the working definition to Microsoft's database documentation and the origin of the idea to Edgar F. Codd (1970), per Wikipedia.",
+    "Added the over-normalization balance and the honest design-habit framing, both supported by Microsoft Learn's cautions about additional tables and performance.",
+    "Kept data integrity, relationships, and foreign keys strictly as references to sibling topics, per the subject's topic boundaries."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "mslearn-database-normalization-description",
+      "title": "Database normalization description",
+      "provider": "Microsoft Learn (Microsoft Support / Office troubleshooting)",
+      "url": "https://learn.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read live via curl 2026-08-21. Supports: the working definition of normalization as organizing data in a database by creating tables and relationships according to rules that eliminate redundancy and inconsistent dependency; redundant data creating maintenance problems because changes must be made in all locations; the customer-address example (a change is easier if the address is stored only in the Customers table); each rule being a normal form; first, second, and third normal form described in plain language; third normal form considered the highest level necessary for most applications; the caution that normalization requires additional tables and that many small tables may degrade performance or exceed capacity; the note that real-world scenarios do not always allow perfect compliance. Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "wikipedia-database-normalization",
+      "title": "Database normalization",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Database_normalization",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier D reputable secondary. Read live via curl 2026-08-21. Supports: normalization as structuring a relational database according to normal forms to reduce data redundancy and improve data integrity; the idea first proposed by Edgar F. Codd as part of his relational model (1NF defined by Codd in 1970, 2NF and 3NF in 1971); the three anomalies (insertion, update, deletion) with the update-anomaly example of one employee shown with different addresses on different records; the informal statement that a relation is described as normalized if it meets third normal form, with most 3NF relations free of the three anomalies; the existence of higher forms (BCNF, 4NF, 5NF, 6NF). Used for attribution, the anomalies framing, and the 3NF-as-common-target statement. Facts synthesized into original prose; no wording reproduced."
+    }
+  ]
+}

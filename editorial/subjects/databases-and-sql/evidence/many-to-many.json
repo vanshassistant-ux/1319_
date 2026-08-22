@@ -1,0 +1,144 @@
+{
+  "topicId": "databases-and-sql:foundations:many-to-many",
+  "subjectId": "databases-and-sql",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "working definition of a many-to-many relationship: a row in one table can match many rows in another, and vice versa — the many runs in both directions",
+      "the classic example: students and courses (a student enrolls in many courses; a course has many students)",
+      "the bridge table: a third table whose rows each hold one identifying value from each side, recording one pairing per row",
+      "why a bridge is needed: a single foreign key cannot represent a two-sided pairing",
+      "reading the relationship in two directions (student enrolls in courses; course has students)",
+      "many-to-many versus one-to-many: which side is allowed to have many matches",
+      "honest framing: many-to-many is the least obvious and the most powerful relationship pattern"
+    ],
+    "supporting": [
+      "join table / bridging table terminology used in documentation for the same mechanism",
+      "the bridge table contains no facts about either side beyond the identifying values",
+      "customers with multiple accounts as a second real-world many-to-many scenario",
+      "the database can refuse bridge rows whose IDs do not match real rows"
+    ],
+    "outOfScope": [
+      "relationships as a general topic (own topic: databases-and-sql:foundations:relationships)",
+      "one-to-many in depth (own topic: databases-and-sql:foundations:one-to-many)",
+      "foreign keys in depth (own topic: databases-and-sql:foundations:foreign-keys)",
+      "SQL syntax for creating bridge tables or joins (own topics: sql-basics and the SQL family)",
+      "normalization (own topic: databases-and-sql:foundations:database-normalization)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "In a many-to-many relationship, a row in one table can match many rows in another table, and a row in the other table can match many rows in the first — the 'many' runs in both directions.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["mslearn-powerbi-many-to-many", "mslearn-efcore-many-to-many"],
+      "status": "supported"
+    },
+    {
+      "claim": "Students and courses is the canonical many-to-many example: a student enrolls in many courses, and a course has many students.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["mslearn-powerbi-many-to-many"],
+      "status": "supported"
+    },
+    {
+      "claim": "A many-to-many relationship cannot be represented with a single foreign key; an additional table is required to join the two sides.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mslearn-efcore-many-to-many", "mslearn-powerbi-many-to-many"],
+      "status": "supported"
+    },
+    {
+      "claim": "The bridge (join) table stores one row per pairing; each row holds a pair of identifying values, one pointing to a row on each side of the relationship.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["mslearn-efcore-many-to-many", "mslearn-powerbi-many-to-many"],
+      "status": "supported"
+    },
+    {
+      "claim": "A many-to-many relationship reads in two directions: a student enrolls in many courses, and a course has many students — both readings are answered by the same bridge table.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["mslearn-powerbi-many-to-many", "mslearn-efcore-many-to-many"],
+      "status": "supported"
+    },
+    {
+      "claim": "In a one-to-many relationship, each value in one table matches only one value in another; many-to-many is the case where the 'many' applies on both sides.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["mslearn-powerbi-many-to-many"],
+      "status": "supported"
+    },
+    {
+      "claim": "A foreign key is a column in one table whose values refer to the primary key of another table, establishing a link between the two tables — a single value pointing at a single row.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["w3schools-sql-foreign-key"],
+      "status": "supported"
+    },
+    {
+      "claim": "Many-to-many is the least obvious relationship pattern because it demands a third table that holds no facts of its own, and the most powerful because it models two-sided real-world pairings such as students and courses or customers and accounts.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["mslearn-powerbi-many-to-many", "mslearn-efcore-many-to-many"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "What to call the third table that records a many-to-many relationship.",
+      "positions": [
+        "Microsoft's EF Core documentation calls it the join entity type, which maps to a join table in a relational database.",
+        "Microsoft's Power BI documentation calls it a bridging table that connects the two main tables by listing all valid combinations of their keys.",
+        "Textbooks and tutorials commonly use the term junction table for the same structure."
+      ],
+      "resolution": "The names describe the same mechanism. The lesson leads with 'bridge table' as the plain-language term and notes 'join table' as the equivalent term used in database documentation."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft called many-to-many 'a foundational concept in Databases & Sql' with no factual content — generic boilerplate, discarded.",
+    "The draft's vocabulary defined 'Many-To-Many' circularly as 'a foundational Databases & Sql concept covered in this lesson' — replaced with the source-supported definition.",
+    "The draft's Eli-10 treated many-to-many as 'a label on a toolbox drawer' — a metaphor without mechanism, replaced with the bridge-table explanation."
+  ],
+  "correctionsNeeded": [
+    "Replaced all generic draft boilerplate with source-verified content: the two-directional definition, the students-and-courses example, the bridge-table mechanism, and the foreign-key limitation.",
+    "Added the mechanism detail (one row per pairing, one identifying value from each side) from Microsoft's EF Core and Power BI documentation.",
+    "Added the one-to-many contrast and the two-directional reading of the relationship.",
+    "Wrote all five questions from the evidence; answer keys verified against the sources.",
+    "Set editorialStatus READY_TO_PUBLISH with 3 supporting Tier B documentation/reference sources."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "mslearn-efcore-many-to-many",
+      "title": "Many-to-many relationships - EF Core",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/ef/core/modeling/relationships/many-to-many",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via direct fetch on 2026-08-21 (HTTP 200). Supports: the working definition (any number of entities of one type associated with any number of entities of the same or another type); the statement that many-to-many cannot be represented in a simple way using just a foreign key; the join entity type / join table mechanism where each row contains a pair of foreign key values pointing to each side; each join row representing one association; the Post/Tag/PostTag schema example. Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "mslearn-powerbi-many-to-many",
+      "title": "Many-to-many relationships in Power BI Desktop",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-many-to-many-relationships",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via direct fetch on 2026-08-21 (HTTP 200). Supports: the definition (many-to-many relationships occur when a value in one table can relate to multiple values in another, and vice versa); students enrolled in multiple courses as a named scenario; the bridging table that connects the two main tables by listing all valid combinations of their keys; the Customer/Account/AccountCustomer example; the contrast with traditional one-to-many relationships where each value in one table matches only one value in another. Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "w3schools-sql-foreign-key",
+      "title": "SQL FOREIGN KEY Constraint",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_foreignkey.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via direct fetch on 2026-08-21 (HTTP 200). Supports the single-reference nature of a foreign key: a foreign key is a column in a table that refers to the primary key in another table, and the constraint establishes a link between the two tables — the basis for the lesson's reasoning that one foreign key alone cannot capture a two-sided pairing. Existing registered source id reused with identical URL. Facts synthesized into original prose; no wording reproduced."
+    }
+  ]
+}

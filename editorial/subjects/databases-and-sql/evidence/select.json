@@ -1,0 +1,186 @@
+{
+  "topicId": "databases-and-sql:foundations:select",
+  "subjectId": "databases-and-sql",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "Working definition of SELECT, attributed: W3Schools says SELECT is used to select data from a database; PostgreSQL says to retrieve data from a table you use a SELECT statement",
+      "Basic anatomy: SELECT columns FROM table \u2014 a select list (columns to return) and a table list (tables to read from), per PostgreSQL; original example SELECT name, price FROM products;",
+      "Asterisk shorthand: SELECT * FROM table returns every column; named by W3Schools (SELECT * syntax) and PostgreSQL (shorthand for all columns), with the caveat that the result widens when the table changes",
+      "What SELECT returns: a result set \u2014 zero or more rows, each with a fixed number of columns, per SQLite; the mini-table idea",
+      "SELECT combines with other clauses: WHERE filters rows, ORDER BY sorts them \u2014 each named, with the clauses owned by sibling topics (where, order-by)",
+      "SELECT does not change data: a SELECT statement makes no changes to the database (SQLite); reading vs writing, with insert/update/delete owned by sibling topics",
+      "Honest framing: SELECT is the most-used SQL command and the easiest to start with, because reading is the most common operation and SELECT cannot alter data"
+    ],
+    "supporting": [
+      "SQL's four main data commands: W3Schools lists retrieving, inserting, updating, and deleting records as separate SQL capabilities, with SELECT first among the major commands",
+      "The result set is computed at query time, not a stored copy",
+      "Statements end with a semicolon in standard usage (PostgreSQL tutorial)"
+    ],
+    "outOfScope": [
+      "WHERE clause mechanics (own topic: where)",
+      "ORDER BY mechanics (own topic: order-by)",
+      "LIMIT (own topic: limit)",
+      "JOIN and combining tables (own topic: join)",
+      "INSERT, UPDATE, DELETE (own topics)",
+      "GROUP BY and aggregate functions (own topics)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "W3Schools defines the SELECT statement as the statement used to select data from a database.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "w3schools-sql-select"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "PostgreSQL's tutorial states that to retrieve data from a table, the table is queried and an SQL SELECT statement is used to do this \u2014 SELECT retrieves data from a table.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "postgresql-tutorial-select"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A basic SELECT statement is divided into a select list (the columns to be returned) and a table list (the tables from which to retrieve data); the basic shape is SELECT columns FROM table.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "postgresql-tutorial-select"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "SELECT * returns all columns of a table: W3Schools says the SELECT * syntax selects ALL columns without naming each column name, and PostgreSQL calls * a shorthand for all columns.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "w3schools-sql-select",
+        "postgresql-tutorial-select"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The result of a SELECT is zero or more rows of data where each row has a fixed number of columns \u2014 a result set shaped like a small table, produced at query time.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "sqlite-lang-select"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A SELECT statement does not make any changes to the database; SELECT is a read operation, distinct from the write commands insert, update, and delete.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "sqlite-lang-select",
+        "w3schools-sql-intro"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "SQL extends SELECT with clauses that refine the result: an optional qualification specifies restrictions (PostgreSQL), and SQLite documents WHERE clause filtering and the ORDER BY clause as parts of SELECT.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "postgresql-tutorial-select",
+        "sqlite-lang-select"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "W3Schools' SQL introduction separates retrieving data from inserting, updating, and deleting records as the main SQL capabilities, and names SELECT, UPDATE, DELETE, INSERT, and WHERE as the major commands all compliant versions support.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "w3schools-sql-intro"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Honest framing: SELECT is the SQL command used more than any other because every question about stored data begins as a read, and it is the easiest command to start with because it changes nothing \u2014 an interpretive framing built on the retrieval definitions of W3Schools and PostgreSQL and the read-only property documented by SQLite.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "w3schools-sql-select",
+        "postgresql-tutorial-select",
+        "sqlite-lang-select"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Sources phrase the same operation differently: W3Schools says SELECT selects data from a database, PostgreSQL says a SELECT statement retrieves data from a table, and SQLite says SELECT queries the database.",
+      "positions": [
+        "W3Schools: 'select data from a database'",
+        "PostgreSQL: 'retrieve data from a table'",
+        "SQLite: 'query the database'"
+      ],
+      "resolution": "All three describe the same read operation. The lesson uses the retrieval wording as its working definition, attributed to W3Schools and PostgreSQL, and treats the SQLite phrasing as the same idea stated for its own documentation."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft called SELECT 'a foundational concept' without stating what the command does",
+    "The draft's toolbox-drawer analogy ('a label on a toolbox drawer') was generic boilerplate with no source support and was discarded",
+    "The draft's learning objectives and questions tested generic study skills rather than any SQL content"
+  ],
+  "correctionsNeeded": [
+    "Replaced the generic draft with a definition of SELECT attributed to W3Schools and PostgreSQL",
+    "Added the result-set idea from SQLite's SELECT reference (zero or more rows, fixed number of columns)",
+    "Added the verified read-only property: a SELECT statement does not make any changes to the database",
+    "All SQL examples rewritten as original queries against a products table, checked for standard syntax",
+    "Keyed the working definition to retrieval (PostgreSQL) with W3Schools' select-data phrasing alongside"
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "w3schools-sql-select",
+      "title": "SQL SELECT Statement",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_select.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read live (HTTP 200) on 2026-08-21. Supports: 'The SELECT statement is used to select data from a database'; the SELECT column1, column2 FROM table_name; syntax; 'to select ALL columns, without specifying every column name, use the SELECT * syntax'. Used for the working definition and the asterisk shorthand; no wording reproduced."
+    },
+    {
+      "id": "postgresql-tutorial-select",
+      "title": "PostgreSQL Documentation: 2.5. Querying a Table",
+      "provider": "The PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/tutorial-select.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A official documentation. Read live (HTTP 200) on 2026-08-21. Supports: 'To retrieve data from a table, the table is queried. An SQL SELECT statement is used to do this'; the statement's division into a select list, a table list, and an optional qualification; '* is a shorthand for all columns'; semicolon-terminated statements. Used for the working definition, the anatomy, and the asterisk claim."
+    },
+    {
+      "id": "sqlite-lang-select",
+      "title": "SQLite Query Language: SELECT",
+      "provider": "SQLite Consortium",
+      "url": "https://www.sqlite.org/lang_select.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A official documentation. Read live (HTTP 200) on 2026-08-21. Supports: 'The SELECT statement is used to query the database'; 'The result of a SELECT is zero or more rows of data where each row has a fixed number of columns'; 'A SELECT statement does not make any changes to the database'; WHERE clause filtering and the ORDER BY clause as parts of SELECT. Used for the result-set idea, the read-only property, and naming the WHERE/ORDER BY clauses."
+    },
+    {
+      "id": "w3schools-sql-intro",
+      "title": "SQL Introduction",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_intro.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Reused id from the phase-2 source registry with an identical URL (also cited by the tables topic). Read live (HTTP 200) on 2026-08-21. Supports: SQL 'can retrieve data from a database' and separately 'insert records', 'update records', 'delete records'; all compliant versions support the major commands such as SELECT, UPDATE, DELETE, INSERT, WHERE. Used for the reading-versus-writing distinction and naming WHERE as a major command."
+    }
+  ]
+}

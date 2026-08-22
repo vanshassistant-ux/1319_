@@ -1,0 +1,299 @@
+{
+  "id": "databases-and-sql:foundations:database-normalization",
+  "subjectSlug": "databases-and-sql",
+  "unitSlug": "foundations",
+  "slug": "database-normalization",
+  "title": "Database Normalization",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "databases-and-sql",
+    "foundations",
+    "database-normalization",
+    "database-design"
+  ],
+  "in30Seconds": "Normalization is the process of organizing a database's tables to cut down on repeated data. The rule of thumb: each fact should be stored once, in one place. If a customer's address sits on every order, a move means editing every copy and hoping none were missed; if the address lives in one customers table, one edit fixes everything. Designers follow a ladder of rules called normal forms — first, second, and third — and third normal form is the usual practical target. Done sensibly, normalization makes updates simpler and safer.",
+  "whyItMatters": "Almost every database you will meet — a school's records, a shop's orders, an app's accounts — was shaped by these ideas. Normalization explains why a well-built system stores your address once and lets every order point at it, and why a database with tidy tables is easier to keep accurate as it grows. It gives you a way to look at any table design and spot the trouble before data starts drifting apart. Later topics build on this one: relationships describe the links between tables, foreign keys implement them, and data integrity covers the rules that keep stored data trustworthy. Understanding normalization is understanding why database design is a skill, not a chore.",
+  "learningObjectives": [
+    "Define normalization as the process of organizing tables to reduce redundant data and keep stored facts consistent.",
+    "Explain how duplicated data drifts apart when a fact is changed in one place but not another.",
+    "Name the first, second, and third normal forms and state in one line what each rule targets.",
+    "Apply the each-fact-stored-once principle to a table design that copies customer details onto every order.",
+    "Evaluate the trade-off between a fully normalized design and a practical one, recognizing that too many tiny tables is also a problem."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "The working definition: organizing tables to reduce redundancy",
+      "body": "Microsoft's database documentation gives the working definition used throughout this lesson: normalization is the process of organizing data in a database — creating tables and establishing relationships between those tables according to rules designed to protect the data and make the database more flexible by eliminating redundancy. The idea behind the rules was introduced by computer scientist Edgar F. Codd in 1970 as part of his relational model, and it remains the standard way to think about table design. Two words in that definition carry the weight. Organizing means the work happens at design time, when you decide where facts live. Redundancy means the same fact stored in more than one place — which is exactly the problem normalization attacks."
+    },
+    {
+      "heading": "The problem it solves: duplicated data drifts",
+      "body": "Redundant data creates a maintenance problem. If a fact exists in more than one place, every change to that fact must be made in every location, in exactly the same way. Consider a plant nursery that copies the customer's full address onto every delivery order. The customer moves: the clerk edits the address on the open orders but misses one from last month. Now the database holds two different addresses for the same person, and nobody can tell which is current. Reports mix old and new; a delivery goes to the old house. The data has drifted — not because anyone was careless, but because the design forced the same fact to be updated in many places at once."
+    },
+    {
+      "heading": "The core idea: each fact stored once",
+      "body": "The cure is a simple principle: store each fact once, in one place. The customer's address is a fact about the customer, so it belongs in the customers table, in the customer's own row. Orders should not carry the address; they should carry something that points back to the customer — a customer number. When the customer moves, one row changes and every order automatically reflects the new address. No second copy exists to fall out of step. That is the whole of normalization in one sentence, and the normal forms are increasingly careful ways of applying it."
+    },
+    {
+      "heading": "The normal forms: first, second, and third",
+      "body": "Each rule of normalization is called a normal form, and the first three are the ones that matter for everyday design. First normal form says: no repeating groups — do not use columns like Item 1, Item 2, Item 3 to hold similar data that belongs in its own table. Second normal form says: data that applies to many rows — like a supplier's details used by many products — belongs in its own table, linked by a key, and each row's facts should depend on the row's key as a whole. Third normal form says: every fact in a row should depend on the row's key; a fact about something else, like a salesperson's office stored in an order row, belongs in that something's table. No formulas are needed — each form is one habit."
+    },
+    {
+      "heading": "Third normal form: the common target",
+      "body": "Databases can be pushed further — there are fourth and fifth normal forms and a Boyce–Codd form — but Microsoft's documentation is blunt: although other levels of normalization are possible, third normal form is considered the highest level necessary for most applications. Wikipedia's article agrees informally: a relation is often described as normalized if it meets third normal form. In practice that means most well-designed databases live at 3NF: no repeated groups, no facts that belong to other rows' keys, and nothing in a row that depends on anything but the row's key. Going further is possible; reaching third normal form is the everyday target."
+    },
+    {
+      "heading": "The practical payoff — and the balance",
+      "body": "The payoff is that updates become simpler and safer. Change one row, and the whole database agrees; there is no list of copies to hunt through. That simplicity is why normalized designs are easier to keep accurate as they grow. But normalization is not a race to split tables as small as possible. Microsoft's documentation notes that real-world scenarios do not always allow perfect compliance: normalization requires additional tables, and many small tables can degrade performance or exceed capacity. The design question is judgment, not arithmetic — a fact that changes often earns its own table, while a rarely-changing detail might reasonably stay put. The balance: normalize what you can, keep the design usable."
+    },
+    {
+      "heading": "The honest framing: a habit, not a one-time rule",
+      "body": "Normalization is best treated as a design habit, not a one-time rule you apply once and forget. New tables get added, new needs appear, and each one is a fresh chance to ask the same questions: where does each fact live, and is it stored in more than one place? A reasonable designer may accept some redundancy knowingly, as long as the trade-off is deliberate. Note also what normalization is not: it is about structure. The rules that keep stored values accurate — checking inputs, refusing nonsense — belong to data integrity, a separate topic that builds on this one."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "normalization",
+      "definition": "The process of organizing a database's tables according to rules that reduce redundant data and keep stored facts consistent."
+    },
+    {
+      "term": "redundant data",
+      "definition": "The same fact stored in more than one place in a database, so that every change to the fact must be made in every location."
+    },
+    {
+      "term": "normal form",
+      "definition": "One of the rules in the normalization ladder; each normal form removes one kind of redundancy problem from a table design."
+    },
+    {
+      "term": "first normal form",
+      "definition": "The rule that a table must not hold repeating groups of similar columns, such as Item 1, Item 2, and Item 3."
+    },
+    {
+      "term": "second normal form",
+      "definition": "The rule that data applying to many rows belongs in its own table, linked by a key, rather than repeated on every row."
+    },
+    {
+      "term": "third normal form",
+      "definition": "The rule that every fact in a row should depend on the row's key and not on something else; the usual practical target for design."
+    },
+    {
+      "term": "update anomaly",
+      "definition": "The inconsistency that results when a fact stored in several places is changed in only some of those places."
+    },
+    {
+      "term": "inconsistent dependency",
+      "definition": "A fact stored in a table where it does not belong, because the fact really describes some other thing."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Normalization is the discipline of deciding where each fact lives before you store it. Every fact about a thing — a customer, a product, an order — gets one home, and other tables refer to that home instead of copying the fact. The normal forms are a ladder of checks: first, do not cram similar facts into repeated columns; second, do not copy facts that belong to many rows onto every row; third, do not let a row carry facts that really describe something else. Most databases aim for the third rung. The habit pays off the day a fact changes: one edit, and the whole database agrees.",
+    "analogy": "An address book works the same way. One book holds every person's address, and when someone moves you fix a single entry. If instead you photocopied the page and taped copies inside everyone's notebook, a move would mean hunting down every copy — and someone's notebook would keep the old address forever. The photocopies are redundancy; the single book is normalization.",
+    "analogyLimits": "The comparison stops short because a paper address book is tiny and easy to keep consistent, while a database serves many programs at once. Real systems sometimes keep a deliberate copy of a fact — a report table, a cache — for speed, accepting the risk because the benefit is bigger. Normalization guides the default; it does not forbid every exception."
+  },
+  "workedExample": "Iris's plant nursery copies each customer's name and address onto every delivery order. Tomas orders twice in June; his address sits on both order rows. In July he moves. The clerk updates the address on Tomas's open order, but the June order keeps the old one — the database now shows two addresses for one customer, and the June invoice goes out with the old address. Iris rebuilds the design: a customers table holds each customer once, with one address, and orders carry only a customer number. Tomas moves again: one row changes, and every order, past and future, reflects it. The inconsistency cannot happen, because no second copy exists.",
+  "commonMistakes": [
+    {
+      "mistake": "Normalizing until every table holds a single column.",
+      "correction": "That is over-normalization. Microsoft's documentation warns that too many small tables can degrade performance, and it names third normal form as the highest level needed for most applications. Normalize to 3NF by default, then stop and ask whether more splitting earns its keep."
+    },
+    {
+      "mistake": "Treating any repeated value as duplication.",
+      "correction": "A customer number repeated on many orders is a reference, not a copy — the fact it points to lives in one place. Duplication is a fact with no single home. References repeat safely; copied facts drift."
+    },
+    {
+      "mistake": "Thinking normalization is a one-time setup step.",
+      "correction": "It is a design habit. Every new table is a fresh chance to ask where each fact lives. Skipping the question later quietly rebuilds the very redundancy the design removed."
+    },
+    {
+      "mistake": "Believing a normalized database is automatically accurate.",
+      "correction": "Normalization removes structural redundancy; it does not validate the data inside. Rules about correctness and trustworthiness are the job of data integrity, a separate topic that builds on this one."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "Normalized design",
+      "b": "Duplicated design",
+      "distinction": "A normalized design stores each fact once and references it; a duplicated design copies the fact into many rows. The distinction matters because one update keeps everything consistent, while the other forces every copy to be found and edited."
+    },
+    {
+      "a": "First normal form",
+      "b": "Second and third normal forms",
+      "distinction": "First normal form removes repeating groups of columns within a row; second and third normal forms remove facts that belong in other tables. The distinction: 1NF cleans each row's shape, while the later forms clean where facts live."
+    },
+    {
+      "a": "Normalization",
+      "b": "Data integrity",
+      "distinction": "Normalization is structural: it decides where facts live so they are not duplicated. Data integrity is behavioral: it sets rules that keep stored values accurate. The distinction matters because tidy structure and trustworthy values are two different jobs — the integrity topic covers the second."
+    },
+    {
+      "a": "Third normal form",
+      "b": "Higher normal forms",
+      "distinction": "Third normal form removes facts that do not depend on the row's key and is the common practical target; higher forms such as Boyce–Codd, fourth, and fifth handle rarer dependency cases. The distinction: most real databases stop at 3NF, and the higher forms are special cases."
+    }
+  ],
+  "keyTakeaway": "Normalization is the habit of storing each fact once, in one place, so updates stay simple and data cannot drift apart — and third normal form is the everyday target, applied with judgment.",
+  "questionBank": [
+    {
+      "id": "databases-and-sql:foundations:database-normalization:1",
+      "prompt": "What is normalization, in the working definition used in this lesson?",
+      "options": [
+        "The process of organizing a database's tables to reduce redundant data and keep facts consistent",
+        "The process of encrypting a database so outsiders cannot read it",
+        "The process of copying customer details onto every order row",
+        "The process of deleting old rows to make a database faster"
+      ],
+      "correctIndex": 0,
+      "explanation": "Microsoft's documentation defines normalization as organizing data in a database — creating tables and relationships according to rules that eliminate redundancy. Option B describes security, option C describes duplication, and option D describes cleanup; none match the definition.",
+      "difficulty": "recall",
+      "skill": "Recalls the working definition of normalization.",
+      "sourceIds": [
+        "mslearn-database-normalization-description",
+        "wikipedia-database-normalization"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:database-normalization:2",
+      "prompt": "A nursery copies each customer's address onto every delivery order. The customer moves, and the clerk updates the address on open orders but misses an older one. What is the result?",
+      "options": [
+        "The database flags the inconsistency automatically and fixes it",
+        "The database now holds two different addresses for the same customer, and no copy is clearly the current one",
+        "Only the missed order is affected, so the rest of the data stays trustworthy",
+        "The old order cannot be read until the address is fixed"
+      ],
+      "correctIndex": 1,
+      "explanation": "Microsoft's documentation warns that data existing in more than one place must be changed in exactly the same way in all locations, or the copies disagree. The database does not detect or fix the drift by itself, and the inconsistency is not limited to one order.",
+      "difficulty": "understanding",
+      "skill": "Explains how duplicated data drifts when a change is not applied everywhere.",
+      "sourceIds": [
+        "mslearn-database-normalization-description"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:database-normalization:3",
+      "prompt": "Which redesign best applies the each-fact-stored-once principle to the nursery's order problem?",
+      "options": [
+        "Keep the address on every order, but add a note whenever a customer moves",
+        "Store the address in a separate column on each order and check them monthly",
+        "Put each customer in a customers table with one address, and let orders carry a customer number instead of a copied address",
+        "Delete old orders so fewer copies of the address remain"
+      ],
+      "correctIndex": 2,
+      "explanation": "Microsoft's documentation gives the same shape: a customer address change is easier if the address is stored only in the customers table and nowhere else. Orders reference the customer rather than copying the address; the other options keep copies or paper over the problem.",
+      "difficulty": "application",
+      "skill": "Applies the each-fact-stored-once principle to a concrete table design.",
+      "sourceIds": [
+        "mslearn-database-normalization-description"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:database-normalization:4",
+      "prompt": "A designer splits every table until each holds one column, chasing perfect normalization. What is the best assessment of this approach?",
+      "options": [
+        "It is the correct goal, since normalization rewards the most tables possible",
+        "It eliminates all redundancy, so performance always improves",
+        "It is harmless because extra tables never cost anything",
+        "It over-normalizes: many small tables can degrade performance, and third normal form is the usual practical target"
+      ],
+      "correctIndex": 3,
+      "explanation": "Microsoft's documentation states that normalization requires additional tables and warns that many small tables may degrade performance or exceed capacity, with third normal form the highest level necessary for most applications. More tables is not the goal; a usable design is.",
+      "difficulty": "analysis",
+      "skill": "Evaluates the trade-off between normalization and over-normalization.",
+      "sourceIds": [
+        "mslearn-database-normalization-description"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:database-normalization:5",
+      "prompt": "Which statement correctly describes the normal forms?",
+      "options": [
+        "First normal form requires every table to hold exactly one column",
+        "Each normal form removes one kind of redundancy problem, and third normal form is the common practical target",
+        "Normal forms are ranked, and only fifth normal form counts as normalized",
+        "Normal forms are suggestions that apply only to very large databases"
+      ],
+      "correctIndex": 1,
+      "explanation": "Microsoft's documentation calls each rule a normal form, with third normal form considered the highest level necessary for most applications, and Wikipedia notes that a relation is informally called normalized if it meets 3NF. The other options misstate what the forms do.",
+      "difficulty": "recall",
+      "skill": "Recalls what normal forms are and where designers usually stop.",
+      "sourceIds": [
+        "mslearn-database-normalization-description",
+        "wikipedia-database-normalization"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "databases-and-sql:foundations:database-normalization:1",
+      "prompt": "What is normalization, in the working definition used in this lesson?",
+      "options": [
+        "The process of organizing a database's tables to reduce redundant data and keep facts consistent",
+        "The process of encrypting a database so outsiders cannot read it",
+        "The process of copying customer details onto every order row",
+        "The process of deleting old rows to make a database faster"
+      ],
+      "correctIndex": 0,
+      "explanation": "Microsoft's documentation defines normalization as organizing data in a database — creating tables and relationships according to rules that eliminate redundancy. Option B describes security, option C describes duplication, and option D describes cleanup; none match the definition.",
+      "difficulty": "recall",
+      "skill": "Recalls the working definition of normalization.",
+      "sourceIds": [
+        "mslearn-database-normalization-description",
+        "wikipedia-database-normalization"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:database-normalization:2",
+      "prompt": "A nursery copies each customer's address onto every delivery order. The customer moves, and the clerk updates the address on open orders but misses an older one. What is the result?",
+      "options": [
+        "The database flags the inconsistency automatically and fixes it",
+        "The database now holds two different addresses for the same customer, and no copy is clearly the current one",
+        "Only the missed order is affected, so the rest of the data stays trustworthy",
+        "The old order cannot be read until the address is fixed"
+      ],
+      "correctIndex": 1,
+      "explanation": "Microsoft's documentation warns that data existing in more than one place must be changed in exactly the same way in all locations, or the copies disagree. The database does not detect or fix the drift by itself, and the inconsistency is not limited to one order.",
+      "difficulty": "understanding",
+      "skill": "Explains how duplicated data drifts when a change is not applied everywhere.",
+      "sourceIds": [
+        "mslearn-database-normalization-description"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:database-normalization:3",
+      "prompt": "Which redesign best applies the each-fact-stored-once principle to the nursery's order problem?",
+      "options": [
+        "Keep the address on every order, but add a note whenever a customer moves",
+        "Store the address in a separate column on each order and check them monthly",
+        "Put each customer in a customers table with one address, and let orders carry a customer number instead of a copied address",
+        "Delete old orders so fewer copies of the address remain"
+      ],
+      "correctIndex": 2,
+      "explanation": "Microsoft's documentation gives the same shape: a customer address change is easier if the address is stored only in the customers table and nowhere else. Orders reference the customer rather than copying the address; the other options keep copies or paper over the problem.",
+      "difficulty": "application",
+      "skill": "Applies the each-fact-stored-once principle to a concrete table design.",
+      "sourceIds": [
+        "mslearn-database-normalization-description"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "databases-and-sql:foundations:tables",
+    "databases-and-sql:foundations:primary-keys",
+    "databases-and-sql:foundations:foreign-keys",
+    "databases-and-sql:foundations:relationships",
+    "databases-and-sql:foundations:data-integrity"
+  ],
+  "sources": [
+    "mslearn-database-normalization-description",
+    "wikipedia-database-normalization"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only sources; no source prose adapted",
+    "researchedAt": "2026-08-21",
+    "transformation": "Claims synthesized from the Microsoft Learn article 'Database normalization description' (Tier B, read live 2026-08-21) and the Wikipedia article 'Database normalization' (reputable secondary, read live 2026-08-21). The customer-address-stored-with-every-order example, the nursery scenario, and all question items are original. The normal forms are presented at intuition level using the sources' plain-language phrasings, paraphrased rather than quoted."
+  },
+  "contentHash": "a01b73a313d399d2",
+  "status": "source-verified",
+  "public": false
+}

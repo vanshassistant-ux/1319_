@@ -1,0 +1,180 @@
+{
+  "topicId": "databases-and-sql:foundations:where",
+  "subjectId": "databases-and-sql",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "WHERE filters rows: it keeps only the rows that meet a stated condition",
+      "Basic query shape: SELECT columns FROM table WHERE condition",
+      "Comparison operators =, <>, >, < (equal, not equal, greater than, less than)",
+      "Text values quoted, numeric values unquoted",
+      "Combining conditions with AND and OR",
+      "WHERE applies before grouping and sorting conceptually"
+    ],
+    "supporting": [
+      "Each row is checked against the condition one at a time; false or null results are discarded",
+      "SQL also has >= and <=; some systems accept != for not equal",
+      "WHERE appears in UPDATE and DELETE statements too (sibling topics own those)",
+      "WHERE is where most query mistakes happen; precision in conditions pays"
+    ],
+    "outOfScope": [
+      "SELECT clause details and column selection rules (sibling topic: select)",
+      "ORDER BY sorting behavior (sibling topic: order-by)",
+      "GROUP BY grouping and HAVING (sibling topic: group-by)",
+      "UPDATE and DELETE statement mechanics (sibling topics: update, delete)",
+      "LIKE, BETWEEN, IN and other advanced operators",
+      "NULL-handling subtleties beyond the keep-if-true rule"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The WHERE clause filters rows: it keeps only the rows that fulfill a stated condition and discards the rest.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "w3schools-sql-where",
+        "postgresql-docs-table-expressions"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The basic shape of a filtering query is SELECT column1, column2 FROM table_name WHERE condition.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3schools-sql-where"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Comparison operators in WHERE include = (equal), <> (not equal; some systems also accept !=), > (greater than), and < (less than), plus >= and <=.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3schools-sql-where"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Text values in conditions are written inside single quotes, while numeric values are written without quotes.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3schools-sql-where"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "AND combines conditions so a row must satisfy all of them; OR combines conditions so a row is kept if it satisfies at least one.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "w3schools-sql-and-or"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "After the FROM clause is processed, each row of the derived table is checked against the WHERE search condition; the row is kept only when the condition is true and discarded when it is false or null.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "postgresql-docs-table-expressions"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Conceptually, WHERE narrows the row set before grouping and sorting are applied; the documentation describes FROM, WHERE, GROUP BY, and HAVING as a pipeline of successive transformations on the table.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "postgresql-docs-table-expressions",
+        "w3schools-sql-orderby"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "WHERE is also used in UPDATE and DELETE statements, not only in SELECT.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3schools-sql-where"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Spelling of the not-equal operator",
+      "positions": [
+        "Standard SQL writes not equal as <>",
+        "Some database systems also accept != (and a few legacy systems use != or ^=)"
+      ],
+      "resolution": "Lesson teaches <> as the standard form and notes that != appears in some systems; examples use <>."
+    },
+    {
+      "issue": "Whether WHERE changes the underlying table",
+      "positions": [
+        "Students sometimes expect a filtered query to remove rows from the table",
+        "WHERE only affects the rows returned by that query; the table itself is unchanged"
+      ],
+      "resolution": "Lesson states explicitly that WHERE filters the result without altering the stored rows; supported by PostgreSQL's description of the derived virtual table."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's claim that WHERE is a foundational concept best taught as context and application carried no factual content and was replaced with the source-verified filter definition.",
+    "The draft's vocabulary definitions (e.g., 'context: the situation or conditions that shape how an idea is understood') were generic filler with no connection to SQL and were replaced."
+  ],
+  "correctionsNeeded": [
+    "Replaced the machine-generated boilerplate lesson (which never mentioned filtering or conditions) with a source-verified lesson about WHERE as a row filter.",
+    "All example queries are original and were executed against an in-memory SQLite table to confirm correct results before publishing."
+  ],
+  "rightsIssues": [
+    "None: all sources are used as REFERENCE_ONLY, facts are synthesized, and no source wording is reproduced; all examples and queries are original."
+  ],
+  "sourceRecords": [
+    {
+      "id": "w3schools-sql-where",
+      "title": "SQL WHERE Clause",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_where.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B reference tutorial per subject source-map. Read live on 2026-08-21. Supports: WHERE filters records and extracts only those fulfilling a specific condition; SELECT columns FROM table WHERE condition syntax; single quotes for text values and bare numeric fields; operator table (=, >, <, >=, <=, <>, note that != appears in some versions); WHERE also used in UPDATE and DELETE. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "w3schools-sql-and-or",
+      "title": "SQL AND, OR, NOT Operators",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_and_or.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B reference tutorial per subject source-map. Read live on 2026-08-21. Supports: AND displays a record only when all conditions are TRUE; OR displays a record when any condition is TRUE; syntax for combining conditions inside WHERE. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "postgresql-docs-table-expressions",
+      "title": "PostgreSQL Documentation: Table Expressions (Section 7.2, including 7.2.2 The WHERE Clause)",
+      "provider": "PostgreSQL",
+      "url": "https://www.postgresql.org/docs/current/queries-table-expressions.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A official documentation. Read live on 2026-08-21. Supports: WHERE search_condition evaluated per row after FROM processing; rows kept when true, discarded when false or null; FROM, WHERE, GROUP BY, HAVING described as a pipeline of successive transformations producing a virtual table. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "w3schools-sql-orderby",
+      "title": "SQL ORDER BY Keyword",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_orderby.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B reference tutorial per subject source-map. Read live on 2026-08-21. Supports only the sibling-topic reference that ORDER BY sorts the result-set and appears after filtering in combined statements; ORDER BY itself is owned by the order-by sibling topic. Facts synthesized; no wording reproduced."
+    }
+  ]
+}

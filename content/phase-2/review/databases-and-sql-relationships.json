@@ -1,0 +1,308 @@
+{
+  "id": "databases-and-sql:foundations:relationships",
+  "subjectSlug": "databases-and-sql",
+  "unitSlug": "foundations",
+  "slug": "relationships",
+  "title": "Relationships",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "databases",
+    "relational model",
+    "relationships",
+    "cardinality",
+    "entity relationship diagrams"
+  ],
+  "in30Seconds": "A relationship is the logical link between two tables, built on shared key values: a foreign key in one table points to a primary key in another. Relationships exist because real-world things relate — customers place orders, and orders contain products — and a well-built database records those links without copying data. The three cardinalities — one-to-one, one-to-many, many-to-many — describe how many rows can connect on each side. Diagrams draw tables as boxes joined by lines, with symbols marking one or many. Relationships are the \"relational\" in relational databases.",
+  "whyItMatters": "Relationships are what turn a collection of tables into a database you can actually ask questions of. Without them, each table is an island: you could list all orders or all customers, but not which customers ordered a specific book. With them, facts are stored once and queries travel between tables along the links. That is why a well-designed database keeps your address in one place while every order, invoice, and delivery points at it. Relationships also give you the mental model behind the diagrams, key conventions, and query tools you will meet next — and they are the reason the whole approach is called relational.",
+  "learningObjectives": [
+    "Define a relationship as a logical link between tables based on shared key values.",
+    "Explain why relationships exist, using an original example of customers placing orders and orders containing products.",
+    "Describe how a foreign key pointing to a primary key creates the link between two tables.",
+    "Distinguish the three cardinalities — one-to-one, one-to-many, and many-to-many — with an example of each.",
+    "Interpret relationship diagrams as boxes connected by lines, with symbols at each end showing whether the link means one or many.",
+    "Apply the relationship concept to explain why relational databases support cross-table queries and avoid duplication."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "The working definition: a logical link built on shared keys",
+      "body": "A relationship is the logical link between two tables, and it runs through shared key values. Oracle's explainer makes the mechanism concrete: two tables may have only one thing in common — an ID column — but because of that common column, the relational database can create a relationship between them. IBM describes the same idea from the other direction: data in a relational database is structured across multiple tables joined through identifiers such as primary or foreign keys, and those identifiers demonstrate the relationships between the tables. Two features matter: a relationship is not stored separately from the tables — it is a property of how their values line up — and the link is carried by keys, not by copying rows."
+    },
+    {
+      "heading": "Why relationships exist: the real world is connected",
+      "body": "Relationships exist because the things a database tracks are connected in reality. If you build a table for each of these things, the connections between them do not disappear — they must live somewhere, and the relational model's answer is to let the tables reference one another. IBM's example shows the pattern with a customer table and a transaction table: one holds account-level information such as company name and industry, the other records individual purchases, and the two are joined by a common customer ID field. Connections are where the useful questions live, so the relational model chooses to model them."
+    },
+    {
+      "heading": "The mechanism: keys that point across tables",
+      "body": "The mechanism of a relationship is the key. A primary key uniquely identifies each row within its own table; a foreign key in another table holds that same value, pointing back at the row it identifies. When an order row stores a customer ID, that value is the relationship between the order and the customer. Foreign keys and primary keys each have their own lessons in this unit; the point here is how they work together. The link exists whenever values in one table match key values in another, and the database can enforce that every value points at a real row."
+    },
+    {
+      "heading": "The three cardinalities: how many rows connect",
+      "body": "Cardinality describes how many rows on one side of a relationship can connect to rows on the other side. IBM's data-modeling guide defines it as the number of instances in one entity that relate to the instances of another, and Visual Paradigm's guide lists the same three common forms. In a one-to-one relationship, each row in one table links to at most one row in the other, and vice versa — a country and its capital city. In a one-to-many relationship, one row on the first side links to many rows on the second, while each row on the second side links to exactly one row on the first — one band, many songs. In a many-to-many relationship, rows on both sides can link to many rows on the other side — a recipe uses many ingredients, and an ingredient appears in many recipes. Each has its own lesson in this unit; here they are the vocabulary for describing how much of one table a row of another can touch."
+    },
+    {
+      "heading": "Relationship diagrams: drawing the links",
+      "body": "Because relationships are connections, they are often drawn. An entity relationship diagram (ERD) is a visual model of how the items in a database relate: tables appear as boxes, and lines connect the boxes that share a relationship. IBM describes the diagram as a specialized type of flowchart whose symbols are linked with connecting lines; Visual Paradigm notes that a relationship is presented as a connector between entities. The lines carry meaning at their ends: a single mark shows the \"one\" side, while a forked symbol — the crow's foot, named for its three-pronged shape — shows the \"many\" side. Reading the diagram tells you at a glance which tables are linked and what cardinality the link has."
+    },
+    {
+      "heading": "Why relationships matter: queryable data, less duplication",
+      "body": "The payoff of relationships is twofold. First, they make data queryable across tables: because tables are linked by shared key values, a single question can reach into several tables at once — which customers bought a specific product. IBM's example joins customer and transaction tables by customer ID to produce sales figures by industry. Second, relationships avoid duplication: because a relationship carries a key rather than a copy of the data, each fact lives in exactly one table and every other table points at it. When a customer's address changes, one row is updated and every linked order reflects it automatically. The formal discipline of splitting data so it is not duplicated is called normalization — its own topic — but relationships are the reason duplication is unnecessary in the first place."
+    },
+    {
+      "heading": "The honest framing: the \"relational\" in relational databases",
+      "body": "The honest framing is that relationships are the core idea of the whole approach. PostgreSQL's documentation notes that \"relation\" is essentially the mathematical term for a table — but a database of unrelated tables would not earn the name \"relational.\" IBM puts the emphasis where it belongs: a relational database organizes data into tables where the data points are related to each other, and relationships are what analysts exploit with queries. When you hear \"relational database,\" the word is not decoration. It is the promise that your tables are connected — and this lesson's definitions, cardinalities, and diagrams are the vocabulary for saying exactly how."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "relationship",
+      "definition": "The logical link between two tables, created when key values in one table match key values in another."
+    },
+    {
+      "term": "cardinality",
+      "definition": "The description of how many rows on one side of a relationship can connect to rows on the other side."
+    },
+    {
+      "term": "one-to-one relationship",
+      "definition": "A relationship in which each row in one table links to at most one row in the other table, and vice versa."
+    },
+    {
+      "term": "one-to-many relationship",
+      "definition": "A relationship in which one row in the first table can link to many rows in the second, while each row in the second links to exactly one row in the first."
+    },
+    {
+      "term": "many-to-many relationship",
+      "definition": "A relationship in which rows on both sides can link to many rows on the other side."
+    },
+    {
+      "term": "foreign key",
+      "definition": "A column in one table that holds the primary key value of a row in another table, carrying the link between them."
+    },
+    {
+      "term": "primary key",
+      "definition": "The column, or combination of columns, that uniquely identifies each row within its own table."
+    },
+    {
+      "term": "entity relationship diagram (ERD)",
+      "definition": "A drawing that shows tables as boxes connected by lines, with symbols at each end describing how many rows can connect."
+    },
+    {
+      "term": "crow's foot notation",
+      "definition": "A diagram convention that marks the \"many\" side of a relationship with a three-pronged fork at the end of the connecting line."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "A relationship is simply a connection between two tables, and the connection runs through a shared value. One table stores the ID of a row in another table, so you can follow the ID from one table to the other — that path is the relationship. The path lets you ask questions that span both tables, like which customers ordered a certain book, without ever copying the book into the customer table. The three cardinalities just say how many rows the path can reach: one or many on each side. Draw the tables as boxes and the paths as lines, and you have a relationship diagram.",
+    "analogy": "Think of two maps of the same city — one showing restaurants, one showing subway stations. The maps have nothing in common except the street grid they both use. Because they share the same street names, you can lay one over the other and find \"restaurants within two blocks of a station.\" The street grid is the shared key; the answer comes from connecting the maps, not from redrawing either one. That is what a relationship does for tables: it lets two lists answer questions together, using the values they already share.",
+    "analogyLimits": "The comparison stops short in one way. Maps overlap everywhere — every point on one map sits somewhere on the other — but a database relationship only connects rows whose key values actually match. An order links to a customer only if the customer ID appears in both tables, and the database can refuse to store a link that points at nothing. Overlaying maps is a visual act; a database relationship is a rule about matching values."
+  },
+  "workedExample": "A small veterinary clinic keeps three tables. The pets table has one row per animal, each with a pet ID. The visits table logs every checkup and stores the pet ID on each visit — the foreign key pointing at the pet's row. One pet can have many visits, while each visit belongs to exactly one pet, so the relationship between pets and visits is one-to-many. The owners table links to pets the same way: one owner may bring in several pets, another one-to-many. When the clinic wants a list of pets treated for allergies last spring, it follows the pet IDs from the visits table back to the pets table and reads each pet's name and owner. Nothing is copied: the visits table stores only the pet ID, and each pet's details live once in the pets table. A relationship diagram of the clinic would draw three boxes — owners, pets, visits — with a line between each pair, a single tick on the \"one\" side and a fork on the \"many\" side of every link.",
+  "commonMistakes": [
+    {
+      "mistake": "Thinking a relationship is a separate object stored between the tables.",
+      "correction": "A relationship is not a row or a file of its own; it exists because key values in one table match key values in another. Remove the shared values and the relationship is gone, even though the tables remain."
+    },
+    {
+      "mistake": "Confusing cardinality with the total number of rows.",
+      "correction": "Cardinality describes how rows on each side connect — one row to many, many to many — not how many rows a table happens to hold. A table with thousands of rows can still sit on the \"one\" side of a one-to-many relationship."
+    },
+    {
+      "mistake": "Assuming every pair of tables is related.",
+      "correction": "Tables only have a relationship when they actually share meaningful key values. Two tables with no common key are simply unrelated, and no diagram line should connect them."
+    },
+    {
+      "mistake": "Reading a diagram's symbols backwards.",
+      "correction": "On a relationship diagram, the forked end (the crow's foot) means \"many\" and the single mark means \"one.\" Reversing them turns a one-to-many link into a many-to-one — the same connection, misread."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "One-to-many",
+      "b": "Many-to-many",
+      "distinction": "In one-to-many, only one side's rows can repeat: one band, many songs. In many-to-many, both sides repeat: many recipes, many ingredients. The distinction is whether the \"many\" applies to one end or both."
+    },
+    {
+      "a": "Relationship",
+      "b": "Foreign key",
+      "distinction": "A relationship is the logical link between tables; a foreign key is the column that carries it. The relationship is the idea, the foreign key is the mechanism."
+    },
+    {
+      "a": "Relationship diagram",
+      "b": "Table listing",
+      "distinction": "A diagram shows the connections between tables at a glance, with symbols for one and many; a listing shows each table's rows and columns but hides how the tables fit together."
+    }
+  ],
+  "keyTakeaway": "A relationship is a logical link between tables, carried by shared key values and described by its cardinality — one-to-one, one-to-many, or many-to-many. Relationships are what make data queryable across tables and what make duplication unnecessary, which is why they are the core idea of the relational model.",
+  "questionBank": [
+    {
+      "id": "databases-and-sql:foundations:relationships:1",
+      "prompt": "Which statement best defines a relationship between two tables in a relational database?",
+      "options": [
+        "A copy of one table's rows stored inside the other table",
+        "A rule that every table must share at least one column with another table",
+        "A logical link between tables based on shared key values",
+        "A special row that appears in both tables"
+      ],
+      "correctIndex": 2,
+      "explanation": "Oracle describes how two tables that share only an ID column can, because of that common column, have a relationship created between them, and IBM describes tables joined through identifiers such as primary or foreign keys. Options A and D mistake the link for stored data, and B invents a rule no source supports.",
+      "difficulty": "recall",
+      "skill": "Recognizing the source-based working definition of a relationship",
+      "sourceIds": [
+        "oracle-what-is-a-relational-database",
+        "ibm-relational-databases"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:relationships:2",
+      "prompt": "Which statement best explains why relationships between tables exist?",
+      "options": [
+        "Databases require every pair of tables to share a column",
+        "Relationships are stored as special rows that both tables share",
+        "Tables only become useful after they are merged into one",
+        "Real-world things relate — customers place orders, and orders contain products — so tables record those links"
+      ],
+      "correctIndex": 3,
+      "explanation": "IBM's explainer builds its example around a customer table and a transaction table joined by a customer ID, and Oracle's example joins a customer table to an order table through the customer ID column. The links model real connections between the things the tables track. The other options describe requirements or storage tricks that do not exist.",
+      "difficulty": "understanding",
+      "skill": "Explaining why the relational model records relationships",
+      "sourceIds": [
+        "ibm-relational-databases",
+        "oracle-what-is-a-relational-database"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:relationships:3",
+      "prompt": "A gym keeps a members table and a check-ins table. Each check-in row stores the member ID of the person who scanned in. What creates the relationship between the two tables?",
+      "options": [
+        "The member ID stored on each check-in row, matching a member's ID in the members table",
+        "The order in which the two tables were created",
+        "The number of columns each table has",
+        "A separate relationship table holding a copy of every member"
+      ],
+      "correctIndex": 0,
+      "explanation": "The relationship runs through the shared key value: the check-in's member ID matches a member row's primary key, exactly the pattern IBM describes (tables joined by a common ID field) and Oracle describes (a common ID column creating the relationship). Table creation order, column counts, and a copying table play no part.",
+      "difficulty": "application",
+      "skill": "Applying the shared-key mechanism to a new scenario",
+      "sourceIds": [
+        "ibm-relational-databases",
+        "oracle-what-is-a-relational-database"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:relationships:4",
+      "prompt": "In a library database, one author has written many books, and each book has exactly one author. What is the cardinality of the relationship between authors and books?",
+      "options": [
+        "One-to-one",
+        "One-to-many",
+        "Many-to-many",
+        "There is no relationship between authors and books"
+      ],
+      "correctIndex": 1,
+      "explanation": "IBM's guide describes one-to-many as a situation where each record in one entity relates to multiple records in another, and Visual Paradigm states the same for one row linked to many while each row on the other side links to only one. One author links to many books, while each book links to one author — the defining shape of one-to-many.",
+      "difficulty": "analysis",
+      "skill": "Analyzing a real-world description to identify cardinality",
+      "sourceIds": [
+        "ibm-entity-relationship-diagram",
+        "visual-paradigm-erd-guide"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:relationships:5",
+      "prompt": "A relationship diagram for a bike shop shows two boxes — \"bicycles\" and \"repairs\" — joined by a line with a single mark at the bicycles end and a forked crow's foot at the repairs end. What does the diagram say about the relationship?",
+      "options": [
+        "One repair covers many bicycles",
+        "Each bicycle can have many repairs, and each repair belongs to one bicycle",
+        "Bicycles and repairs are stored in the same table",
+        "The relationship cannot be determined from the diagram"
+      ],
+      "correctIndex": 1,
+      "explanation": "IBM describes crow's foot notation as using a three-pronged forked line to show \"many,\" and Visual Paradigm notes that cardinality is represented as a crow's foot at the connector's ends. The single mark at the bicycles end means \"one,\" the fork at the repairs end means \"many,\" so one bicycle links to many repairs while each repair links to one bicycle. Option A reads the symbols in reverse.",
+      "difficulty": "application",
+      "skill": "Interpreting one/many symbols on a relationship diagram",
+      "sourceIds": [
+        "ibm-entity-relationship-diagram",
+        "visual-paradigm-erd-guide"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "databases-and-sql:foundations:relationships:1",
+      "prompt": "Which statement best defines a relationship between two tables in a relational database?",
+      "options": [
+        "A copy of one table's rows stored inside the other table",
+        "A rule that every table must share at least one column with another table",
+        "A logical link between tables based on shared key values",
+        "A special row that appears in both tables"
+      ],
+      "correctIndex": 2,
+      "explanation": "Oracle describes how two tables that share only an ID column can, because of that common column, have a relationship created between them, and IBM describes tables joined through identifiers such as primary or foreign keys. Options A and D mistake the link for stored data, and B invents a rule no source supports.",
+      "difficulty": "recall",
+      "skill": "Recognizing the source-based working definition of a relationship",
+      "sourceIds": [
+        "oracle-what-is-a-relational-database",
+        "ibm-relational-databases"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:relationships:2",
+      "prompt": "Which statement best explains why relationships between tables exist?",
+      "options": [
+        "Databases require every pair of tables to share a column",
+        "Relationships are stored as special rows that both tables share",
+        "Tables only become useful after they are merged into one",
+        "Real-world things relate — customers place orders, and orders contain products — so tables record those links"
+      ],
+      "correctIndex": 3,
+      "explanation": "IBM's explainer builds its example around a customer table and a transaction table joined by a customer ID, and Oracle's example joins a customer table to an order table through the customer ID column. The links model real connections between the things the tables track. The other options describe requirements or storage tricks that do not exist.",
+      "difficulty": "understanding",
+      "skill": "Explaining why the relational model records relationships",
+      "sourceIds": [
+        "ibm-relational-databases",
+        "oracle-what-is-a-relational-database"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:relationships:3",
+      "prompt": "A gym keeps a members table and a check-ins table. Each check-in row stores the member ID of the person who scanned in. What creates the relationship between the two tables?",
+      "options": [
+        "The member ID stored on each check-in row, matching a member's ID in the members table",
+        "The order in which the two tables were created",
+        "The number of columns each table has",
+        "A separate relationship table holding a copy of every member"
+      ],
+      "correctIndex": 0,
+      "explanation": "The relationship runs through the shared key value: the check-in's member ID matches a member row's primary key, exactly the pattern IBM describes (tables joined by a common ID field) and Oracle describes (a common ID column creating the relationship). Table creation order, column counts, and a copying table play no part.",
+      "difficulty": "application",
+      "skill": "Applying the shared-key mechanism to a new scenario",
+      "sourceIds": [
+        "ibm-relational-databases",
+        "oracle-what-is-a-relational-database"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "databases-and-sql:foundations:primary-keys",
+    "databases-and-sql:foundations:foreign-keys",
+    "databases-and-sql:foundations:one-to-one",
+    "databases-and-sql:foundations:one-to-many",
+    "databases-and-sql:foundations:many-to-many"
+  ],
+  "sources": [
+    "ibm-relational-databases",
+    "oracle-what-is-a-relational-database",
+    "ibm-entity-relationship-diagram",
+    "visual-paradigm-erd-guide",
+    "postgresql-docs-tutorial-concepts"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only Tier B documentation and vendor reference sources; no source prose adapted",
+    "researchedAt": "2026-08-21",
+    "transformation": "Working definition (logical link based on shared key values), the shared-key mechanism, the three cardinalities, and diagram conventions verified against IBM, Oracle, Visual Paradigm, and PostgreSQL reference material, then synthesized into original explanatory prose with original examples (veterinary clinic, gym, bike shop, band/songs, recipes/ingredients). Primary keys, foreign keys, and the three cardinality topics are referenced only, per sibling topic ownership. No SQL shown, per the subject's conceptual-first literacy level."
+  },
+  "contentHash": "a58e06b441e13dd9",
+  "status": "source-verified",
+  "public": false
+}

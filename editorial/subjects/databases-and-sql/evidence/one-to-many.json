@@ -1,0 +1,162 @@
+{
+  "topicId": "databases-and-sql:foundations:one-to-many",
+  "subjectId": "databases-and-sql",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "definition of a one-to-many relationship: one row in the first table can match many rows in the second, while each row in the second matches exactly one row in the first (attributed to Microsoft Learn)",
+      "the canonical example: a customer with many orders, with the orders table holding the link",
+      "implementation: the many side holds the foreign key pointing at the one side",
+      "why one-to-many is everywhere: parent/child rows, category/products, department/employees",
+      "reading the relationship from both directions: has many (one side) and belongs to (many side)",
+      "one-to-many vs many-to-many: the brief distinction, with many-to-many as a sibling topic",
+      "honest framing: understanding one-to-many means understanding most databases"
+    ],
+    "supporting": [
+      "many-to-one is the same relationship read from the many side (Microsoft Learn lists both names)",
+      "'many' means any number, including zero; no maximum is implied",
+      "a single table can hold a one-to-many relationship with itself (self-referencing rows)",
+      "Microsoft Learn describes one-to-many as the most common relationship type"
+    ],
+    "outOfScope": [
+      "relationships as a general topic (own topic: databases-and-sql:foundations:relationships)",
+      "foreign keys in depth (own topic: databases-and-sql:foundations:foreign-keys)",
+      "many-to-many relationships (own topic: databases-and-sql:foundations:many-to-many)",
+      "one-to-one relationships (own topic: databases-and-sql:foundations:one-to-one)",
+      "SQL syntax for creating tables and constraints (own topics: sql-basics and the SQL family)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A one-to-many relationship links two tables so that one row in the first table can match many rows in the second, while each row in the second table matches exactly one row in the first.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "mslearn-dataverse-relationships"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "One-to-many is the most common type of relationship in relational databases; Microsoft Learn states this directly and gives the example of a single teacher teaching many classes.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "mslearn-dataverse-relationships"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The canonical one-to-many example is a customer with many orders: W3Schools shows a Persons table and an Orders table in which the PersonID column in the Orders table points to the PersonID column in the Persons table, so one person can have many orders while each order references one person.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "w3schools-sql-foreign-key"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A one-to-many relationship is implemented by placing a foreign key column on the many side; each row there stores the primary key value of the one row it belongs to.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3schools-sql-foreign-key",
+        "postgresql-ddl-constraints",
+        "mslearn-dataverse-relationships"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The underlying mechanism is the foreign key constraint: a foreign key constraint specifies that the values in a column must match the values appearing in some row of another table, which maintains referential integrity between two related tables.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "postgresql-ddl-constraints"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The same one-to-many link can be read from either end: Microsoft Learn lists one-to-many and many-to-one as the two names for the same shape, so a customer has many orders (one-to-many) and each order belongs to one customer (many-to-one).",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "mslearn-dataverse-relationships"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "One-to-many differs from many-to-many: in a many-to-many relationship, a row on either side can match more than one row on the other side, as with students attending many classes and each class having many students.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "mslearn-dataverse-relationships"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Because everyday hierarchies (parent/child rows, product categories with many products, departments with many employees) all share the one-to-many shape, understanding this one pattern explains the design of most real databases.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "mslearn-dataverse-relationships",
+        "postgresql-ddl-constraints"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Which table is called A and which is B in the one-to-many definition, and whether the direction is named one-to-many or many-to-one.",
+      "positions": [
+        "Microsoft Learn defines one-to-many as 'each row in table B can match more than one row in table A, but each row in table A can match only one row in table B', and also lists many-to-one as a separate relationship type with the same underlying shape.",
+        "W3Schools describes the structure through the Persons/Orders example without using the phrase one-to-many, naming the sides child table and parent table.",
+        "PostgreSQL documents the foreign key mechanism (orders referencing products) without labeling cardinality at all."
+      ],
+      "resolution": "All three sources describe the same structure: one row on one side, many rows on the other, with the reference stored on the many side. The lesson fixes its own consistent lettering (the 'one' table is A, the 'many' table is B), names both directions (has many / belongs to; one-to-many / many-to-one) so any source's phrasing maps cleanly, and avoids presenting any single convention as the only correct one."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft described one-to-many as 'a foundational concept in Databases & Sql' with no factual content \u2014 generic boilerplate, discarded.",
+    "The draft's vocabulary defined 'One-to-Many' circularly as 'a foundational Databases & Sql concept covered in this lesson' \u2014 replaced with source-supported definitions.",
+    "The draft's Eli-10 treated one-to-many as 'a label on a toolbox drawer' \u2014 a metaphor without mechanism, replaced with the tree-and-nests analogy tied to where the pointer lives."
+  ],
+  "correctionsNeeded": [
+    "Replaced all generic draft boilerplate with source-verified content: the attributed definition, the customer/orders canonical example, the foreign-key-on-the-many-side mechanism, the has-many/belongs-to directions, and the many-to-many distinction.",
+    "Verified the Persons/Orders example and the orders-referencing-products mechanism live on W3Schools and PostgreSQL documentation pages on 2026-08-21.",
+    "Wrote all five questions from the evidence; answer keys verified against the sources and spread across slots A/B/C/D with at least one C and one D.",
+    "Set editorialStatus READY_TO_PUBLISH with 3 supporting Tier B documentation sources."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "mslearn-dataverse-relationships",
+      "title": "Create a relationship between tables by using a lookup column - Power Apps",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-entity-lookup",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read live via curl 2026-08-21. Supports: the one-to-many definition ('each row in table B can match more than one row in table A, but each row in table A can match only one row in table B') with the single-teacher-many-classes example; many-to-one as the same relationship read from the opposite table (a class has a single classroom); the many-to-many definition with students and classes; the statement that this is the most common type of relationship; parent table terminology; the lookup column as the implementation mechanism. Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "w3schools-sql-foreign-key",
+      "title": "SQL FOREIGN KEY Constraint",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_foreignkey.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read live via curl 2026-08-21. Supports: the canonical Persons/Orders example in which the PersonID column in the Orders table points to the PersonID column in the Persons table \u2014 one person can have many orders while each order references one person; the foreign key stored on the orders (many) side; child table vs parent table naming. Used for the canonical example and the implementation section. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "postgresql-ddl-constraints",
+      "title": "PostgreSQL Documentation: Constraints (Chapter 5.5)",
+      "provider": "PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B official documentation. Read live via curl 2026-08-21. Supports: the foreign key constraint definition ('the values in a column must match the values appearing in some row of another table') and referential integrity between two related tables; the orders-referencing-products example showing the many side (orders) carrying the reference to the one side (products). Used for the implementation mechanism and the one-to-many shape. Facts synthesized; no wording reproduced."
+    }
+  ]
+}
