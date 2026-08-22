@@ -1,32 +1,32 @@
 # ELIEXPLAINS GLOBAL EDITORIAL PROGRESS
 
-Generated: 2026-08-22T02:30:14.455Z
+Generated: 2026-08-22T03:08:37.137Z
 Counts are computed from the phase content stores by `bun run editorial:progress`.
 
 Subjects total: 44
-Subjects processed: 32
-Subjects remaining: 12
-Subject completion: 72.73%
+Subjects processed: 33
+Subjects remaining: 11
+Subject completion: 75.00%
 
 Total topics: 1299
-Topics processed: 948
+Topics processed: 973
 Topics published: 282
-Topics ready to publish: 666
+Topics ready to publish: 691
 Topics held: 0
 Topics requiring review: 0
-Topics remaining: 351
-Topic processing: 72.98%
+Topics remaining: 326
+Topic processing: 74.90%
 
-Verified questions: 4740
-Unique source records: 4343
-Source usage classes: REFERENCE_ONLY=3447, PUBLIC_DOMAIN=566, ATTRIBUTION_REQUIRED=207, EXTRACT_AND_ADAPT=121, LINK_ONLY=2
+Verified questions: 4865
+Unique source records: 4421
+Source usage classes: REFERENCE_ONLY=3525, PUBLIC_DOMAIN=566, ATTRIBUTION_REQUIRED=207, EXTRACT_AND_ADAPT=121, LINK_ONLY=2
 
 ## Phase progress
 
 | Phase | Subjects | Topics | Percent |
 | --- | --- | --- | --- |
 | 1 | 11 / 11 | 282 / 282 | 100.00% |
-| 2 | 7 / 11 | 221 / 325 | 68.00% |
+| 2 | 8 / 11 | 246 / 325 | 75.69% |
 | 3 | 11 / 11 | 329 / 329 | 100.00% |
 | 4 | 3 / 11 | 116 / 363 | 31.96% |
 
@@ -36,7 +36,7 @@ Source usage classes: REFERENCE_ONLY=3447, PUBLIC_DOMAIN=566, ATTRIBUTION_REQUIR
 | --- | --- | --- | --- |
 | Professional Studies | 7 / 7 | 166 / 166 | 100.00% |
 | Technology | 8 / 8 | 257 / 257 | 100.00% |
-| Business & Money | 5 / 9 | 136 / 240 | 56.67% |
+| Business & Money | 6 / 9 | 161 / 240 | 67.08% |
 | Humanities & Culture | 7 / 7 | 197 / 197 | 100.00% |
 | Science & Health | 1 / 6 | 48 / 206 | 23.30% |
 | Society & Government | 4 / 7 | 144 / 233 | 61.80% |
@@ -62,6 +62,7 @@ Source usage classes: REFERENCE_ONLY=3447, PUBLIC_DOMAIN=566, ATTRIBUTION_REQUIR
 | entrepreneurship | 25 / 25 | 0 | 25 | 0 | 0 | 0 |
 | environmental-sustainability | 25 / 25 | 25 | 0 | 0 | 0 | 0 |
 | film-and-media-studies | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
+| finance | 25 / 25 | 0 | 25 | 0 | 0 | 0 |
 | graphic-design-and-digital-media | 28 / 28 | 28 | 0 | 0 | 0 | 0 |
 | health-administration | 24 / 24 | 24 | 0 | 0 | 0 | 0 |
 | history | 49 / 49 | 0 | 49 | 0 | 0 | 0 |

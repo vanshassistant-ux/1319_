@@ -33,7 +33,7 @@ Working capital moves through a recurring loop: buy what you need, sell it, coll
 
 ### Why it matters: profitable is not the same as paid
 
-The honest note: a business can be profitable and still choke on day-to-day cash. Sales recorded today may be collected weeks later, while wages and supplier bills come due sooner. CFI warns businesses not to grow themselves out of money, and OpenStax notes that excess inventory shrinks working capital on hand and can force a company to borrow to cover it. Cash flow — the movement of money over time — is the sibling topic that owns this story in detail. Working capital is the pool the daily loop draws from; profitability tells you whether the model works, while working capital tells you whether the business can keep running while it proves that.
+The honest note: a business can be profitable and still choke on day-to-day cash. Sales recorded today may be collected weeks later, while wages and supplier bills come due sooner. CFI warns businesses not to grow themselves out of money, and OpenStax notes that excess inventory shrinks working capital on hand and can force a company to borrow to cover it. Cash flow — the movement of money over time — is the sibling topic that owns this story in detail. Working capital is the pool the daily loop draws from; profitability tells you whether the model works, while working capital reveals if the business can keep operating while it proves that.
 
 ### Managing working capital
 
@@ -112,6 +112,25 @@ The tank analogy breaks down because a diver cannot refill the tank underwater, 
 - Its customers pay slowly while its ingredient bills and wages come due sooner
 
 **Answer:** Its customers pay slowly while its ingredient bills and wages come due sooner. When customers pay slowly while bills come due sooner, the daily loop stretches and the working capital pool drains even as sales grow — the other options describe the opposite, a healthy short cycle.
+
+## Common Mistakes
+
+- **Confusing working capital with profit.** — Profit is what remains after accounting for a period; working capital is the pool of cash and near-cash for daily operations. A profitable bakery can have thin working capital, and a break-even one can run comfortably.
+- **Treating a credit sale as cash in hand.** — A sale on credit adds to receivables, not to the bank balance; the wage bill is paid from cash that actually arrived, not from what customers owe.
+- **Thinking a profitable business cannot run short of day-to-day money.** — Profitability and daily cash are different things: sales recorded now may be collected later while bills come due sooner — the cash-flow sibling tells this story in detail.
+- **Assuming more working capital is always better.** — Cash sitting idle earns almost nothing, and stock that will not sell ties money up; the goal is the smallest pool that pays the bills on time, not the biggest.
+
+## Key Takeaway
+
+Working capital is the money a business runs on — current assets minus current liabilities — and the buy-sell-collect cycle keeps it turning; manage the balance so daily bills get paid without letting cash sit idle.
+
+## Related Topics
+
+- finance:foundations:cash-flow
+- finance:foundations:financial-statements
+- finance:foundations:financial-ratios
+- finance:foundations:what-finance-is
+- finance:foundations:debt
 
 ## Sources
 

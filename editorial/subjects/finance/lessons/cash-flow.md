@@ -105,6 +105,25 @@ The tub analogy breaks down because a business can refill from outside the tub: 
 
 **Answer:** Revenue is recorded when the baking is done, but customers pay later while wages and ingredient bills come due sooner. Under accrual accounting, revenue is recorded when earned, not when cash arrives, so a profitable bakery can face cash outflows like wages before the payments for its sales land.
 
+## Common Mistakes
+
+- **Treating profit and cash flow as the same number.** — Profit is recorded when work is done; cash flow is money that actually moved. A profitable month can still drain the bank account when customers pay late.
+- **Counting a delivered order as cash before the money arrives.** — An invoice is not an inflow. Until the customer's payment lands, that cash is not available to pay wages or suppliers.
+- **Judging the business by one day's bank balance instead of the flow over time.** — A balance is a snapshot; cash flow is the movie. Look at inflows and outflows across the period to see whether cash is growing or shrinking.
+- **Mixing up the three activity types, such as counting a bank loan as an operating inflow.** — A loan is a financing inflow; sales are operating. Sorting them keeps the picture of the daily business honest.
+
+## Key Takeaway
+
+Profit is an opinion; cash is a fact. Cash flow is the money actually moving, and a profitable business can still run out of cash. Managers watch it because bills, payroll, and suppliers are paid in cash — cash flow is the pulse of the business.
+
+## Related Topics
+
+- finance:foundations:financial-statements
+- finance:foundations:working-capital
+- finance:foundations:what-finance-is
+- finance:foundations:financial-ratios
+- finance:foundations:corporate-finance
+
 ## Sources
 
 - CFI — Cash Flow: https://corporatefinanceinstitute.com/resources/finance/cash-flow/ (working definition; liquidity; cash flow as the lifeblood of a company)

@@ -21,7 +21,7 @@ Most financial failures share one shape: too much was riding on a single thing. 
 
 ### What diversification is
 
-Investor.gov, the SEC's investor education site, states the working definition this lesson uses: diversification is the practice of spreading money among different investments to reduce risk, summed up as "don't put all your eggs in one basket." CFI describes the same technique as allocating capital to a mix of different investments, with the goal of reducing the swings in the whole portfolio by offsetting losses in one asset with gains in another. OpenStax's Principles of Finance agrees: diversification means owning a variety of assets so that no single one decides the outcome. The core is consistent across all three: spread the money, and one failure stops being the whole story.
+SEC Investor.gov, states the working definition this lesson uses: diversification is the practice of spreading money among different investments to reduce risk, summed up as "don't put all your eggs in one basket." CFI describes the same technique as allocating capital to a mix of different investments, with the goal of reducing the swings in the whole portfolio by offsetting losses in one asset with gains in another. OpenStax's Principles of Finance agrees: diversification means owning a variety of assets so that no single one decides the outcome. The core is consistent across all three: spread the money, and one failure stops being the whole story.
 
 ### Why it works: different assets move differently
 
@@ -125,6 +125,14 @@ Diversification spreads money across different investments so that no single fai
    - C. One company in the portfolio reports weak sales
    - D. A single industry experiences a temporary slump
    - **Answer: B.** Market-wide events such as a broad downturn hit almost all investments at once — that systematic risk cannot be diversified away. A recall, weak sales at one company, or one industry's slump are exactly the firm-specific setbacks diversification is built to soften.
+
+## Related Topics
+
+- finance:foundations:risk
+- finance:foundations:return
+- finance:foundations:portfolio-basics
+- finance:foundations:stocks
+- finance:foundations:bonds
 
 ## Sources
 

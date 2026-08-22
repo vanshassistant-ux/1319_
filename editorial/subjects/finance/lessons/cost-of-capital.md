@@ -124,6 +124,14 @@ The cost of capital is the return providers of money expect — the price of a b
    - D. Neither project, because the hurdle applies only to borrowed money
    - **Answer: C.** The hurdle is the minimum return a project must clear. The expansion's expected 11% clears the 9% hurdle; the warehouse's 8% does not, so it fails even though it would earn something.
 
+## Related Topics
+
+- finance:foundations:debt
+- finance:foundations:equity
+- finance:foundations:capital-budgeting
+- finance:foundations:net-present-value
+- finance:foundations:risk
+
 ## Sources
 
 - OpenStax Principles of Finance, Section 17.2: The Costs of Debt and Equity Capital — https://openstax.org/books/principles-finance/pages/17-2-the-costs-of-debt-and-equity-capital

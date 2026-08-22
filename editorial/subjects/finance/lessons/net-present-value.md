@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Net present value is what a project is worth today: the present value of its expected future cash inflows minus its cost today. Future inflows are discounted — shrunk back to today's dollars — because money in hand can earn a return while you wait. The decision rule is simple: accept a project when its NPV is positive, reject it when negative. A positive NPV means the project is expected to add value in today's money; a negative one means it is expected to destroy value.
+Net present value is what a project is worth today: the present value of its expected future cash inflows minus its cost today. Future inflows are discounted — shrunk back to today's dollars — because money in hand can earn a return while you wait. The decision rule is simple: accept a project when its NPV is positive, reject it when negative. A positive NPV means the project should add value in today's money; a negative one means it is expected to destroy value.
 
 ## Why This Matters
 
@@ -21,7 +21,7 @@ Companies choose between projects of very different sizes and timings — a $1,0
 
 ### What net present value is
 
-OpenStax's Principles of Finance gives the working definition this lesson adopts: net present value is the difference between the present value of a project's cash inflows and the present value of its cash outflows. Investopedia says the same in plainer terms — the difference between the present value of cash inflows and cash outflows over a period of time — and CFI describes it as the value of all future cash flows over an investment's life discounted to the present. The practical version used here: net present value is the present value of a project's expected future cash inflows minus its cost today. The cost today matters: in CFI's formula the initial investment is a cash outflow at time zero — the purchase price paid now — subtracted from the discounted inflows, not added to them. Present value, the discounting of a single future amount, is a sibling topic with its own lesson; NPV applies that idea to a whole stream of project cash flows and sets it against the upfront price.
+OpenStax's Principles of Finance gives the working definition this lesson adopts: net present value is the difference between the present value of a project's cash inflows and the present value of its cash outflows. Investopedia says the same in plainer terms — the difference between the present value of cash inflows and cash outflows over a period of time — and CFI describes it as the value of all future cash flows over an investment's life discounted to the present. The practical version used here: net present value is the present value of a project's expected future cash inflows minus its cost today. The cost today matters: in CFI's formula the initial investment is a cash outflow at time zero — the purchase price paid now — subtracted from the discounted inflows, not added to them. Present value, the discounting of a single future amount, is a sibling topic treated in its own lesson; NPV applies that idea to a whole stream of project cash flows and sets it against the upfront price.
 
 ### The decision rule
 
@@ -33,7 +33,7 @@ Calculating NPV is a time value of money problem, as OpenStax puts it: each futu
 
 ### The discount rate is the hurdle
 
-The discount rate decides how hard future dollars are shrunk, and it acts as the hurdle inflows must clear. CFI calls it the required rate of return, or hurdle rate, and notes that project cash flows are discounted at the firm's weighted average cost of capital or the appropriate hurdle rate. Investopedia says the discount rate might be a hurdle rate for a project based on a company's cost of capital; OpenStax simply works its example at the firm's cost of funds. A higher rate shrinks future inflows more, so fewer projects clear the bar; a lower rate shrinks them less. Where the cost of capital comes from — what it costs to attract debt and equity — is a sibling topic with its own lesson; here it appears only as the usual answer to which rate to use.
+The discount rate decides how hard future dollars are shrunk, and it acts as the hurdle inflows must clear. CFI calls it the required rate of return, or hurdle rate, and notes that project cash flows are discounted at the firm's weighted average cost of capital or the appropriate hurdle rate. Investopedia says the discount rate might be a hurdle rate for a project based on a company's cost of capital; OpenStax simply works its example at the firm's cost of funds. A higher rate shrinks future inflows more, so fewer projects clear the bar; a lower rate shrinks them less. Where the cost of capital comes from — what it costs to attract debt and equity — is a sibling topic treated in its own lesson; it comes in here only as the usual answer to which rate to use.
 
 ### Why NPV matters: one scale for every project
 
@@ -88,7 +88,7 @@ NPV is a project's expected value in today's dollars — discounted future inflo
 
 ## Practice Question Bank
 
-1. **What does a project's net present value measure?**
+1. **What does net present value tell a decision-maker about a project?**
    - A. The total undiscounted dollars a project is expected to bring in over its whole life
    - B. How many years a project takes to recover its initial cost
    - C. The difference between the present value of a project's expected cash inflows and the present value of its outflows — its expected value in today's dollars
@@ -110,7 +110,7 @@ NPV is a project's expected value in today's dollars — discounted future inflo
    - **Answer: D.** Discounting shrinks later dollars more: Project A's year-one $550 is worth $500 today and its year-two $550 about $454.55, for about $954.55, while Project B's single $1,100 in year two is worth about $909.09. Earlier cash flows carry more value, so A's NPV is higher. Total dollars alone do not decide value, and acceptance depends on the NPV sign, not raw totals.
 
 4. **Under the net present value decision rule, when should a company accept a project?**
-   - A. When its NPV is positive, because the project is expected to add value in today's dollars
+   - A. When its NPV is positive, because the project should add value in today's dollars
    - B. When its NPV is negative, because that signals the project is inexpensive
    - C. Whenever total future inflows exceed the cost, no matter when the money arrives
    - D. Only when the project pays back its cost within one year

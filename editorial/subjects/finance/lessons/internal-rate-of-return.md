@@ -20,7 +20,7 @@ Every project — a new machine, a food cart, a rental property — asks the sam
 
 ### What IRR is: the rate the project itself earns
 
-Two sources that agree give this lesson its working definition. OpenStax Principles of Finance defines the internal rate of return as the discount rate that sets the present value of a project's cash inflows equal to the present value of its cash outflows — in other words, the rate at which the project's net present value equals zero. Corporate Finance Institute states the same idea in plainer terms: IRR is the discount rate that makes a project's NPV zero, and it is the expected annual rate of return earned on a project or investment. The working definition used here combines them: IRR is the discount rate that makes a project's net present value equal zero, and in words, it is the annual rate the project itself earns.
+Two sources that agree give this lesson its working definition. OpenStax Principles of Finance defines the internal rate of return as the discount rate that makes a project's discounted inflows exactly equal its discounted outflows — in other words, the rate at which the project's net present value equals zero. Corporate Finance Institute states the same idea in plainer terms: IRR is the discount rate that makes a project's NPV zero, and it is the expected annual rate of return earned on a project or investment. The working definition used here combines them: IRR is the discount rate that makes a project's net present value equal zero, and in words, it is the annual rate the project itself earns.
 
 The one-period version needs nothing more than simple arithmetic. Suppose a project costs $500 today and returns $575 one year later. The gain is $75, and $75 is 15 percent of $500, so the project earns 15 percent on the money it uses — its IRR is 15 percent. The definition checks out: discount the $575 back one year at 15 percent ($575 ÷ 1.15 = $500), and the present value of the inflow exactly equals the outflow, which is what an NPV of zero means. That is also why IRR is called internal: it comes entirely from the project's own cash flows, with no outside rate plugged in.
 
@@ -28,11 +28,11 @@ The one-period version needs nothing more than simple arithmetic. Suppose a proj
 
 IRR by itself is just a number. It becomes a decision when it is compared with the cost of capital — the return the company must pay the people who supply its money. OpenStax states the rule directly: if the IRR is greater than the cost of capital, a project should be accepted; if it is less, the project should be rejected. CFI's version is the same: IRR is compared with the company's hurdle rate or cost of capital, and the project is accepted when the rate reaches that benchmark and rejected when it falls below.
 
-The logic is plain. If a project earns 15 percent while its funding costs 10 percent, the project brings in enough to pay the funders their 10 percent and still leaves something over — it adds value. If the project earns 8 percent while funding costs 10 percent, the project cannot even cover the cost of the money it uses; every dollar of return is outweighed by what the funding costs. The cost of capital is a sibling topic with its own lesson; here it appears only as the benchmark that IRR must beat.
+The logic is plain. If a project earns 15 percent while its funding costs 10 percent, the project brings in enough to pay the funders their 10 percent and still leaves something over — it adds value. If the project earns 8 percent while funding costs 10 percent, the project cannot even cover the cost of the money it uses; every dollar of return is outweighed by what the funding costs. The cost of capital is a sibling topic handled in its own lesson; it turns up here only as the benchmark that IRR must beat.
 
 ### IRR versus NPV: a rate versus a dollar amount
 
-IRR and net present value evaluate the same project but answer different questions. NPV (a sibling topic, referenced here only) is a dollar amount: the present value of a project's expected inflows minus the present value of its outflows, accepted when positive because the project adds value in today's dollars. IRR is the percentage rate at which that NPV equals zero. NPV answers "how much value does this project add?" IRR answers "what annual rate does this project earn?"
+IRR and net present value evaluate the same project but answer different questions. NPV (a sibling topic, referenced here only) is a dollar amount: a project's discounted expected inflows minus its discounted outflows, accepted when positive because the project adds value in today's dollars. IRR is the percentage rate at which that NPV equals zero. NPV answers "how much value does this project add?" IRR answers "what annual rate does this project earn?"
 
 In most cases the two point the same way — a project with a strongly positive NPV usually also carries an IRR well above the cost of capital — which is why companies commonly report both, often alongside other measures such as payback period. But a percentage and a dollar amount are different units and cannot be compared directly: "15 percent" and "$45" are not rivals; they are two views of the same project.
 
@@ -99,6 +99,17 @@ That is the honest framing of IRR: it is the project's own speedometer — one c
    - C. Because IRR is only valid for projects that last more than one year
    - D. Because IRR measures risk, not value, so the two rates cannot be compared
    - **Answer: B.** IRR ignores scale: it reports rates, not dollars. Project B's 20% rate earns just $20, while Project A's 15% rate earns $150, so ranking by IRR would put the smaller value first. That is why analysts check the dollar value (NPV) as well.
+
+## Common Mistakes
+
+- **Treating IRR as the dollar profit.** — IRR is a percentage rate. In the espresso-machine example, $75 is the profit and 15 percent is the rate; mixing the two units leads to false comparisons.
+- **Assuming IRR already includes the cost of capital.** — IRR is computed from the project's own cash flows alone. Comparing it with the cost of capital is the decision-maker's step — that comparison is the decision rule.
+- **Picking the project with the highest IRR without looking at size.** — A $100 project can show 20 percent while a $1,000 project shows 15 percent; the bigger project may still add far more value. Check the dollar value (NPV) before choosing.
+- **Expecting IRR to be accurate when the cash-flow guesses are shaky.** — IRR is computed from predicted cash flows. If the predictions are optimistic, the rate is optimistic too — the number is only as good as the estimates that go in.
+
+## Key Takeaway
+
+IRR is the project's own rate — the discount rate that makes a project's net present value zero. Accept when it beats the cost of capital, reject when it does not, and remember the rate is not the whole picture: size and dollar value matter too.
 
 ## Sources
 

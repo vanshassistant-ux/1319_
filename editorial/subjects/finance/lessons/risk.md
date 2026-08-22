@@ -20,11 +20,11 @@ Every financial decision — buying a stock, lending to a customer, launching a 
 
 ### What risk is
 
-Investor.gov, the SEC's investor education site, puts it plainly: in finance, risk is the degree of uncertainty and/or potential financial loss inherent in an investment decision. CFI states the working definition this lesson uses: risk is the probability that actual results will differ from expected results. Investopedia agrees: the chance that actual gains differ from an expected outcome or return. Risk is a gap between what is expected and what actually happens, and it runs both ways — results can be worse, and better. OpenStax's Principles of Finance agrees: the return may not be what the investor expected — that uncertainty is risk.
+The SEC's Investor.gov site states it plainly: in finance, risk is the degree of uncertainty and/or potential financial loss inherent in an investment decision. CFI states the working definition this lesson uses: risk is the probability that actual results will differ from expected results. Investopedia agrees: the chance that actual gains differ from an expected outcome or return. Risk is a gap between what is expected and what actually happens, and it runs both ways — results can be worse, and better. OpenStax's Principles of Finance agrees: the return may not be what the investor expected — that uncertainty is risk.
 
 ### Risk and return
 
-Return is the reward an investment promises; risk is the uncertainty around actually getting it. OpenStax calls them the two Rs of finance — studying one without the other is meaningless. The general relationship: higher expected return comes with higher risk. Investor.gov: as investment risks rise, investors seek higher returns to compensate for taking such risks; CFI agrees — riskier assets should carry higher expected returns. Original example: two one-year options for $10,000 of spare cash. A bank certificate of deposit offers a fixed 2.5% — small expected return, near-certain result. A young delivery cooperative offers a share with yearly results swinging between −8% and +22% — higher expected return, much wider outcomes. The cooperative must promise more because investors demand compensation for wider swings. Return is a sibling topic with its own lesson; here it appears only as risk's partner in the trade.
+Return is the reward an investment promises; risk is the uncertainty around actually getting it. OpenStax calls them the two Rs of finance — studying one without the other is meaningless. The general relationship: higher expected return comes with higher risk. Investor.gov: as investment risks climb, investors ask for higher returns to make the risk worthwhile; CFI agrees — riskier assets should carry higher expected returns. Original example: two one-year options for $10,000 of spare cash. A bank certificate of deposit offers a fixed 2.5% — small expected return, near-certain result. A young delivery cooperative offers a share with yearly results swinging between −8% and +22% — higher expected return, much wider outcomes. The cooperative must promise more because investors demand compensation for wider swings. Return is a sibling topic taught in its own lesson; it appears here only as risk's partner in the trade.
 
 ### The four named types
 
@@ -40,7 +40,7 @@ Different investors and businesses accept different levels of risk, and there is
 
 ### Managing risk
 
-Three tools are named here, one line each. Diversification — spreading money across different investments so one setback does not sink the whole plan; CFI describes it as reducing unsystematic (specific) risk by investing in different assets, because if one investment underperforms, the others balance it out. Information — understanding what you own and how it can go wrong; researching before committing shrinks the gap between expectations and reality. Time — a longer horizon gives more room to ride out short-term swings; Investopedia notes that investors with longer time horizons may accept higher-risk investments with higher potential returns. Diversification is a sibling topic with its own lesson; here it appears as the most famous of the three tools, not the full story.
+Three tools are named here, one line each. Diversification — spreading money across different investments so one setback does not sink the whole plan; CFI describes it as reducing unsystematic (specific) risk by investing in different assets, because if one investment underperforms, the others balance it out. Information — understanding what you own and how it can go wrong; researching before committing shrinks the gap between expectations and reality. Time — a longer horizon gives more room to ride out short-term swings; Investopedia notes that investors with longer time horizons may accept higher-risk investments with higher potential returns. Diversification is a sibling topic taught in its own lesson; here it appears as the most famous of the three tools, not the full story.
 
 ### The honest framing
 
@@ -124,6 +124,14 @@ Risk is the chance that actual results differ from what was expected. It cannot 
    - C. Credit risk, because the retiree might default on the account
    - D. Business risk, because the bank's sales could fall short
    - **Answer: A.** Inflation risk applies even to a fixed, never-falling balance: if prices rise, each dollar buys less. Market, credit, and business risk describe different situations that a fixed-rate account does not face in the same way.
+
+## Related Topics
+
+- finance:foundations:return
+- finance:foundations:diversification
+- finance:foundations:stocks
+- finance:foundations:bonds
+- finance:foundations:inflation
 
 ## Sources
 

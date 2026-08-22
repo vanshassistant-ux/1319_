@@ -121,6 +121,14 @@ Equity financing raises money by selling ownership in the business. It does not 
    - D. Venture capital, then a bank loan, then public stock
    - **Answer: C.** The typical pattern runs from angel investors in the early stage to venture capital in the growth phase and finally an initial public offering at maturity. Bank loans are debt, and public stock cannot realistically come before private investors.
 
+## Related Topics
+
+- finance:foundations:debt
+- finance:foundations:stocks
+- finance:foundations:cost-of-capital
+- finance:foundations:financial-statements
+- finance:foundations:risk
+
 ## Sources
 
 - OpenStax Introduction to Business, Section 16.5: Equity Financing — https://openstax.org/books/introduction-business/pages/16-5-equity-financing

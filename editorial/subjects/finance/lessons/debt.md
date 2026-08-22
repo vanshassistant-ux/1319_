@@ -21,11 +21,11 @@ Almost every business and household leans on borrowed money at some point: a bak
 
 ### What debt is
 
-Investor.gov, the SEC's investor education site, defines debt in its glossary as an amount owed to a person or organization for borrowed funds. Investopedia agrees: debt is something, usually money, owed by one party to another, and unless forgiven by the lender, it must be paid back, typically with added interest. The working definition this lesson uses: debt is money that has been borrowed and must be repaid, usually with interest. The amount borrowed is the principal. Investor.gov lists loans, notes, bonds, and mortgages as forms of debt. Every form carries the same deal: repay the amount owed, typically with interest, by a specific date in the repayment terms.
+SEC Investor.gov, defines debt in its glossary as an amount owed to a person or organization for borrowed funds. Investopedia agrees: debt is something, usually money, owed by one party to another, and unless forgiven by the lender, it must be paid back, typically with added interest. The working definition this lesson uses: debt is money that has been borrowed and must be repaid, usually with interest. The amount borrowed is the principal. Investor.gov lists loans, notes, bonds, and mortgages as forms of debt. Every form carries the same deal: repay the amount owed, typically with interest, by a specific date in the repayment terms.
 
 ### Borrowing versus owning
 
-OpenStax's Principles of Finance puts the contrast simply: there are two broad types of capital, debt (or borrowing) and equity (or ownership). Companies typically finance assets through equity, selling ownership shares to stockholders, and through debt, borrowing money from lenders. Original example: a bakery needs $100,000 for a second shop. With debt, it borrows from a bank and repays the money with interest, keeping full ownership. With equity, it sells a share of the business to investors who never demand repayment, but own part of the company and share its profits. Debt is a promise to pay; equity is a promise to share. Equity is a sibling topic with its own lesson; here it appears only as the contrast that shows what debt is not.
+OpenStax's Principles of Finance puts the contrast simply: there are two broad types of capital, debt (or borrowing) and equity (or ownership). Companies typically finance assets through equity, selling ownership shares to stockholders, and through debt, borrowing money from lenders. Original example: a bakery needs $100,000 for a second shop. With debt, it borrows from a bank and repays the money with interest, keeping full ownership. With equity, it sells a share of the business to investors who never demand repayment, but own part of the company and share its profits. Debt is a promise to pay; equity is a promise to share. Equity is a sibling topic that has its own lesson; here it appears only as the contrast that shows what debt is not.
 
 ### The three named forms
 
@@ -125,6 +125,14 @@ Debt is borrowed money that must be repaid, usually with interest, on a schedule
    - C. Suppliers who sold the company goods on credit
    - D. Investors who hold junior bonds
    - **Answer: B.** Seniority means senior claims, such as senior bondholders' claims, are paid before junior claims, and equity owners are paid last, if anything remains. Shareholders, suppliers, and junior bondholders all stand behind senior creditors.
+
+## Related Topics
+
+- finance:foundations:equity
+- finance:foundations:bonds
+- finance:foundations:interest-rates
+- finance:foundations:cost-of-capital
+- finance:foundations:financial-statements
 
 ## Sources
 

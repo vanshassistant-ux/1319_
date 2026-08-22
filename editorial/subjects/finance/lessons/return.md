@@ -36,7 +36,7 @@ Expected return is what you anticipate before the outcome is known. CFI defines 
 
 ### Return and risk
 
-Return and risk are studied as a pair, and the pairing has a general shape: higher expected returns come with higher risk. Investor.gov, the SEC's investor education site, puts it directly — as investment risks rise, investors seek higher returns to compensate themselves for taking such risks. Investopedia agrees: investors require a higher expected return for riskier investments to compensate for the additional risk of loss. Original example: a savings account offers a small, near-certain return; a young technology company's stock offers a larger expected return because its results swing far wider. The extra expected return is the compensation for the extra uncertainty. Risk is a sibling topic with its own lesson; here it appears only as return's partner in the trade.
+Return and risk are studied as a pair, and the pairing has a general shape: higher expected returns come with higher risk. The SEC's Investor.gov site, puts it directly — as investment risks rise, investors seek higher returns to compensate themselves for taking such risks. Investopedia agrees: investors require a higher expected return for riskier investments to compensate for the additional risk of loss. Original example: a savings account offers a small, near-certain return; a young technology company's stock offers a larger expected return because its results swing far wider. The extra expected return is the compensation for the extra uncertainty. Risk is a sibling topic with a lesson of its own; here it appears only as return's partner in the trade.
 
 ### Comparing returns
 
@@ -125,6 +125,14 @@ A return is the gain or loss on an investment over a period, measured as (ending
    - C. Last year's return proves the fund carries no risk
    - D. The fund will earn exactly 18% every year
    - **Answer: B.** Past returns are history, not promises: expected returns are based on historical data and are not guaranteed, and all investments involve some degree of risk. An 18% past year does not guarantee future results.
+
+## Related Topics
+
+- finance:foundations:risk
+- finance:foundations:time-value-of-money
+- finance:foundations:stocks
+- finance:foundations:bonds
+- finance:foundations:diversification
 
 ## Sources
 

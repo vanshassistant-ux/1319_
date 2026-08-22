@@ -10,7 +10,7 @@ Money arrives at different times, and finance needs to compare amounts that arri
 
 ## Learning Objectives
 
-- Define present value as the current worth of money to be received in the future, discounted at a rate, using the working definition from OpenStax's Principles of Finance.
+- Define present value as the current worth of money promised in the future, discounted at a rate, using the working definition from OpenStax's Principles of Finance.
 - Explain discounting as the reverse of growth: future amounts are shrunk back to today.
 - Apply the formula PV = FV ÷ (1 + rate)^years to find a present value with simple arithmetic.
 - Explain what the discount rate represents and why it is called the discount rate.
@@ -21,7 +21,7 @@ Money arrives at different times, and finance needs to compare amounts that arri
 
 ### What present value is
 
-OpenStax's Principles of Finance frames the concept in one phrase: present value is the value today of tomorrow's cash flow. CFI states the underlying idea from the other side: money in the present is worth more than the same sum to be received in the future. Together they give the working definition used in this lesson: present value is the current worth of money to be received in the future, discounted at a rate. Why is a future dollar worth less than one in hand? Because money in hand can be put to work. OpenStax's Section 7.1 puts it plainly: it is better to be paid today, or you will lose out on the money you would have earned in interest. Money you hold now can earn a return while you wait; money promised later earns nothing — and, as CFI notes, it may never arrive. So the same amount is worth more today than later, and present value says how much more. One boundary: present value concerns a single future amount — what OpenStax calls a lump sum, a one-time cash flow at one point in time. Bundles of future amounts, and their difference from an upfront cost, belong to the net present value sibling topic.
+OpenStax's Principles of Finance frames the concept in one phrase: present value is the value today of tomorrow's cash flow. CFI states the underlying idea from the other side: a dollar today is worth more than the same dollar promised later. Together they give the working definition used in this lesson: present value is the current worth of money promised in the future, discounted at a rate. Why is a future dollar worth less than one in hand? Because money in hand can be put to work. OpenStax's Section 7.1 puts it plainly: it is better to be paid today, or you will lose out on the money you would have earned in interest. Money you hold now can earn a return while you wait; money promised later earns nothing — and, as CFI notes, it may never arrive. So the same amount is worth more today than later, and present value says how much more. One boundary: present value concerns a single future amount — what OpenStax calls a lump sum, a one-time cash flow at one point in time. Bundles of future amounts, and their difference from an upfront cost, belong to the net present value sibling topic.
 
 ### Discounting: shrinking the future back to today
 
@@ -37,7 +37,7 @@ The rate in the formula is called the discount rate, and the name explains the j
 
 ### Present value versus future value
 
-Present value and future value are the two ends of one relationship. Future value is what an amount held today becomes after earning a return; present value is what a future amount is worth today. One formula produces both: multiply forward for future value, divide back for present value. $100 today at 5% has a future value of $110.25 in two years; $110.25 in two years has a present value of $100 today. Which direction you use depends on where the question starts: money you hold now points forward; money promised later points back. Future value is a sibling topic with its own lesson; here it appears only as the mirror that makes present value clear.
+Present value and future value are the two ends of one relationship. Future value is what an amount held today becomes after earning a return; present value is what money promised later is worth today. One formula produces both: multiply forward for future value, divide back for present value. $100 today at 5% has a future value of $110.25 in two years; $110.25 in two years has a present value of $100 today. Which direction you use depends on where the question starts: money you hold now points forward; money promised later points back. Future value is a sibling topic covered in its own lesson; it shows up here only as the mirror that makes present value clear.
 
 ### Why it matters
 
@@ -45,7 +45,7 @@ Present value exists so that money at different times can be compared — its co
 
 ## Key Vocabulary
 
-- **Present value** — The current worth of money to be received in the future, found by discounting the future amount at a rate. The working definition comes from OpenStax's Principles of Finance: the value today of tomorrow's cash flow.
+- **Present value** — The current worth of money promised in the future, found by discounting the future amount at a rate. The working definition comes from OpenStax's Principles of Finance: the value today of tomorrow's cash flow.
 - **Discounting** — The process of reducing a future amount back to today's terms by dividing instead of multiplying; the reverse of growth and compounding.
 - **Discount rate** — The rate used to shrink a future amount back to today; in OpenStax's words, the annual rate of reduction on a future value.
 - **Future value** — What an amount held today will be worth at a later date after earning a return over the wait.
@@ -88,13 +88,13 @@ Check the answer by growing it forward: $100 invested at 5% earns $5 in the firs
 | Meaning | Today's worth of a future amount | What an amount today becomes later |
 | Direction | Divides a future amount back | Multiplies today's amount forward |
 
-Present value and future value are the two ends of one relationship, produced by the same formula run in opposite directions. Future value is a sibling topic with its own lesson.
+Present value and future value are the two ends of one relationship, produced by the same formula run in opposite directions. Future value is a sibling topic covered in its own lesson.
 
 | | Discounting | Compounding |
 |---|---|---|
 | Direction | Shrinks a future amount back to today | Grows money forward, earning interest on interest |
 
-OpenStax calls discounting the exact opposite of compounding. Compound interest is a sibling topic with its own lesson.
+OpenStax calls discounting the exact opposite of compounding. Compound interest is a sibling topic covered in its own lesson.
 
 | | Discount rate | Interest rate |
 |---|---|---|
@@ -115,7 +115,7 @@ Present value is the current worth of a future amount: divide the future amount 
 - C. The total interest paid on a loan over its full life
 - D. The face value printed on a savings bond
 
-**Correct answer: A.** Present value is the current worth of money to be received in the future, discounted at a rate — OpenStax's Principles of Finance calls it the value today of tomorrow's cash flow. The second option describes future value, and the other two describe unrelated numbers.
+**Correct answer: A.** Present value is the current worth of money promised in the future, discounted at a rate — OpenStax's Principles of Finance calls it the value today of tomorrow's cash flow. The second option describes future value, and the other two describe unrelated numbers.
 
 **2. A friend promises to pay you $121 two years from now. Using a discount rate of 10%, what is that payment worth today?**
 

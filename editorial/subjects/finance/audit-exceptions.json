@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "subjectSlug": "finance",
+  "accepted": [
+    { "match": "\"corporate finance\" defined differently in what-finance-is and corporate-finance (overlap 20%)", "reason": "what-finance-is lists corporate finance as one of three areas in one line; the corporate-finance lesson owns the full definition. Compatible depth difference." },
+    { "match": "\"liquidity\" defined differently in cash-flow and financial-markets (overlap 0%)", "reason": "cash-flow uses liquidity in the cash-availability sense; financial-markets uses it in the tradability sense. Different senses in different subdomains — no conflict." },
+    { "match": "\"liquidity\" defined differently in cash-flow and working-capital (overlap 14%)", "reason": "cash-flow glosses liquidity as cash availability; working-capital uses the current-assets context. Compatible depth difference." },
+    { "match": "\"liquidity\" defined differently in financial-markets and working-capital (overlap 14%)", "reason": "financial-markets means ease of trading; working-capital means near-term cash position. Different senses, no conflict." },
+    { "match": "\"cost of capital\" defined differently in cost-of-capital and capital-budgeting (overlap 0%)", "reason": "cost-of-capital owns the full definition; capital-budgeting names it as the discount-rate question in one line. Compatible depth difference." },
+    { "match": "\"cost of capital\" defined differently in cost-of-capital and net-present-value (overlap 0%)", "reason": "cost-of-capital owns the full definition; net-present-value references it as the hurdle rate. Compatible depth difference." },
+    { "match": "\"cost of capital\" defined differently in capital-budgeting and internal-rate-of-return (overlap 13%)", "reason": "both reference the hurdle-role of the cost of capital at different depths. Compatible depth difference." },
+    { "match": "\"cost of capital\" defined differently in net-present-value and internal-rate-of-return (overlap 13%)", "reason": "both reference the hurdle-role of the cost of capital at different depths. Compatible depth difference." }
+  ],
+  "notes": [
+    "Third occurrence of shared-attribution REUSE: 'X is a sibling topic with its own lesson' (7 lessons) and 'Investor.gov, the SEC's investor education site' (8 lessons) plus NPV-definition quoting (capital-budgeting/NPV/IRR). Fixed with per-lesson distinct phrasings across review JSONs, evidence, and markdown. The md files carried variants my JSON rewords missed — fixed after locating the exact md strings.",
+    "MD gap: 14 missing ## Common Mistakes / ## Key Takeaway / ## Related Topics headings across 9 lessons — the gate requires only the minimum heading set, the audit requires the full set. Regenerated from the review JSON fields; a string-valued keyTakeaway was initially rendered as per-character list items (3 lessons) and repaired.",
+    "SRCDUP: cfi-finance-definition vs cfi-what-is-finance (same URL) consolidated; registry 798 → 797.",
+    "QNEAR: 'What does a project's net present value measure?' vs present-value's stem — reworded.",
+    "All TVM/PV/FV/NPV/IRR arithmetic independently re-verified ($100 at 5% × 2 = $110.25; $200 at 6% × 3 = $238.20; simple vs compound $300/$331; NPV $1,000 machine at 10% = −$45.45 reject / +$54.55 at $900; IRR $500→$575 = 15%).",
+    "No investment advice anywhere; risk-free-rate concepts general; Fed/Treasury/BLS used factually with no forecasting; OpenStax REFERENCE_ONLY throughout."
+  ]
+}
