@@ -1,0 +1,155 @@
+# Storage
+
+## In 30 Seconds
+
+Storage is the process of holding encoded information over time — the middle step between encoding and retrieval. Psychologists describe three stores: sensory memory, which holds raw impressions for a moment; short-term and working memory, which hold a small amount for seconds; and long-term memory, which holds information for years. These stores are models, not literal places in the brain. Consolidation turns short-term memories into long-term ones. Storage is memory's warehouse — with moving parts, not a vault.
+
+## Why This Matters
+
+Storage is the middle act of every memory, and the other acts depend on it: encoding fills the warehouse, retrieval empties it. Understanding storage explains everyday puzzles — why a phone number vanishes the moment you finish dialing, why a song from childhood still plays in your head, why reviewing a week later beats cramming the night before. It matters academically because the three-store model, working memory, and consolidation are core vocabulary in psychology courses and research. It matters practically because knowing how long each store lasts tells you when to rehearse and when to rest. And it matters honestly: storage is not a vault, and remembering that keeps your confidence in your own memory honest.
+
+## Learning Objectives
+
+- Define storage as the process of holding encoded information over time, between encoding and retrieval.
+- Name and describe the three stores — sensory memory, short-term/working memory, and long-term memory — each with an original example.
+- Explain why psychologists call the three stores a model of memory rather than a map of brain locations.
+- State the widely cited capacities and durations associated with each store, with attribution.
+- Explain consolidation as the process by which short-term memories become long-term.
+- Analyze why storage is better described as a warehouse with moving parts than as a vault of exact copies.
+
+## The College Version
+
+### What storage is
+
+Storage is the process of holding encoded information over time. It is the middle step in the memory sequence: encoding gets information in, storage keeps it, retrieval brings it back. The sources line up on this definition. OpenStax Psychology 2e calls storage the retention of the encoded information. The APA Dictionary of Psychology defines storage as the state of an item that is retained in memory, after encoding and before retrieval. The Noba Project's memory module says it in one phrase: storage refers to maintaining information over time. Three authoritative sources, one working definition: storage is what happens between the moment information is encoded and the moment it is retrieved.
+
+### Three stores, one model
+
+The most famous account of storage comes from Richard Atkinson and Richard Shiffrin (1968), whose model describes three stores that information passes through: sensory memory, short-term memory, and long-term memory. Sensory memory holds raw impressions from the senses for a moment — just long enough to decide whether they matter. Original example: wave a sparkler in the dark and the glowing trail you trace lingers for a heartbeat after the spark has moved; that lingering image is sensory memory at work. Short-term memory holds a small amount of information for seconds — the number you just looked up, held in mind while you dial. Working memory, the account refined by Alan Baddeley and Graham Hitch (1974), is short-term memory with a job: it does not just hold information, it manipulates it, like keeping three numbers in mind while you add them at the checkout. Long-term memory holds information for hours, weeks, or years — the layout of your childhood home, the words of a song you have not heard in a decade. One honest note before going further: these three stores are models, not literal places. No one has found a drawer labeled long-term in the brain. Atkinson and Shiffrin's stages and Baddeley and Hitch's working memory systems are theories — useful tools for predicting and explaining behavior, not a map of brain geography.
+
+### Capacity and duration: how much, for how long
+
+The three stores differ in how much they hold and for how long. Sensory memory is the shortest: iconic memory, the visual kind, holds an image for less than a second, and echoic memory, the auditory kind, retains sounds for about two to three seconds (APA Dictionary of Psychology). Short-term memory holds only a limited amount of material, for roughly 15 to 30 seconds (OpenStax; the APA Dictionary says about 10 to 30 seconds). The most famous capacity figure is George Miller's (1956) magic number — seven items, plus or minus two — though more recent research by Nelson Cowan (2010) suggests working memory holds closer to four items, plus or minus one. Long-term memory is the opposite end: its capacity is believed to be effectively unlimited, and it can hold skills and knowledge for a lifetime. Notice what is being cited here: every number is an estimate from a named researcher or source, because capacity and duration are studied, not measured like a gas tank.
+
+### Consolidation: from short-term to long-term
+
+How does information move from the brief holding area into the lasting store? Through consolidation — the process by which a memory becomes stable and permanent after learning. The APA Dictionary defines consolidation as the neurobiological processes by which a permanent memory is formed following a learning experience. OpenStax adds the timescale: once information reaches long-term memory, it is consolidated at the synaptic level over a few hours, and into the memory system over weeks or longer. That is why a fact rehearsed tonight and reviewed again next week is far more likely to stick than one met once and never revisited. Rehearsal is the hand that carries information toward long-term storage — repeating it (active rehearsal) or tying it to something you already know (elaborative rehearsal).
+
+### The brain connection, and the honest framing
+
+Where does all this stored information live? The honest one-line answer: memory involves networks, not a single file. Long-term memories are organized in associative networks, and activating one concept spreads to linked ones — the reason the word *garden* can bring *tomatoes* and *rain* along with it. A memory trace — the physical change in the nervous system that represents an experience — is not a perfect little packet waiting in a drawer. The Noba module is blunt: memory traces are not like video or audio recordings, and remembering is reconstructive, not reproductive — we rebuild the past with the help of traces and current beliefs, we do not play it back. So the honest framing: storage is memory's warehouse, but a warehouse with moving parts. Cargo arrives on the receiving dock, sits on the sorting table, and some of it earns a place on the shelves — yet the shelves hold sketches assembled from the cargo, not sealed boxes, and the sorting happens over hours and weeks, not in a single forklift moment.
+
+## Key Vocabulary
+
+- **storage** — The process of holding encoded information over time, between encoding and retrieval.
+- **sensory memory** — The brief holding of raw information from the senses, lasting only moments.
+- **short-term memory** — The temporary store that holds a limited amount of information for roughly 15 to 30 seconds.
+- **working memory** — The system that actively holds and manipulates information, extending the idea of short-term memory (Baddeley and Hitch, 1974).
+- **long-term memory** — The relatively permanent store that holds skills and knowledge for hours, weeks, or years, with capacity believed to be effectively unlimited.
+- **consolidation** — The process by which a memory becomes stable and permanent after learning.
+- **iconic memory** — Visual sensory memory; holds an image for less than a second.
+- **echoic memory** — Auditory sensory memory; retains sounds for about two to three seconds.
+- **memory trace** — The physical change in the nervous system that represents an experience.
+- **rehearsal** — Repeating information (active rehearsal) or linking it to what you already know (elaborative rehearsal) to move it toward long-term storage.
+
+## Eli-10
+
+**Simplified explanation.** Storage is the keeping part of memory. After your brain encodes something — turns it into a form it can work with — storage is what holds it over time. Psychologists describe three holding areas. Sensory memory catches raw impressions and drops most of them within a moment or two. Short-term and working memory hold a small amount for seconds, like a phone number you are about to dial. Long-term memory holds what matters for years. None of these is a room in your head — they are models, handy ways of describing how memory behaves. And short-term does not become long-term by itself: consolidation, a process that unfolds over hours and weeks, is what makes a memory permanent.
+
+**Where the analogy breaks down.** A warehouse's shelves hold exact boxes, but memory stores are reconstructive. What reaches the long-term shelves is a memory trace — a change in the nervous system — not a sealed copy, and every time something is taken off the shelf it can be put back slightly altered. The shelves also have no measured capacity, and the moving of consolidation is a slow biological process, not a forklift run.
+
+## Eli's Analogy
+
+Think of a warehouse. The receiving dock is sensory memory — everything arriving, held just long enough to be noticed. The sorting table is short-term and working memory — a few items within arm's reach, actively handled. The shelves are long-term memory — where goods are kept for years. Consolidation is the work of moving an item from the sorting table to the shelves, a job that takes time and is not finished the moment the box leaves the table.
+
+## Worked Example
+
+Nadia starts a new job at a repair shop. On her first afternoon, a coworker shows her the door code — 7429 — and she repeats it under her breath as she walks to the register, holding it in short-term memory. That evening she tells her partner the code and notices it is her birthday year rearranged, an elaborative rehearsal that ties the new number to something familiar. Over the following weeks she types the code without thinking, and three months later she can still enter it half asleep. What happened inside is the lesson: the code was consolidated into long-term storage gradually — hours at the synaptic level, weeks into the memory system — and the "perfect" code she now types is a stable, reconstructed trace, not a recording made on day one.
+
+## Common Mistakes
+
+- **"The three stores are literal places in the brain — sensory memory in the eyes, short-term in the front of the head, long-term somewhere in the back."** — They are not. The Atkinson-Shiffrin stages and the Baddeley-Hitch working memory systems are models proposed to explain how memory behaves. Memory involves networks of brain areas, and no drawer labeled long-term exists.
+- **"Storage works like a video recorder: whatever happened is saved as an exact copy."** — Stored memories are traces, not recordings. Psychologists describe remembering as reconstructive — rebuilt from traces plus current beliefs — so two people can store the same event and remember it differently.
+- **"Short-term memory and working memory are exactly the same thing."** — Short-term memory is better understood as a component of working memory. Working memory not only holds information but manipulates it, as when you keep three numbers in mind while adding them.
+- **"If I cannot recall something, it was never stored."** — Not necessarily. Failing to retrieve is not proof that storage failed — reaching stored information is a separate process with its own failures. Storage and retrieval are different stages.
+- **"Long-term memory will eventually fill up like a full hard drive."** — Long-term memory capacity is believed to be effectively unlimited. The bottlenecks in memory are more often at encoding and retrieval than at storage space.
+
+## Compare / Contrast
+
+- **Encoding vs. storage:** Encoding is the process of getting information into the memory system; storage is holding the encoded information over time. One is the doorway, the other the room.
+- **Short-term memory vs. long-term memory:** Short-term memory holds a limited amount of material for seconds and is easily disrupted; long-term memory holds skills and knowledge for hours, weeks, or years, with capacity believed to be effectively unlimited.
+- **Sensory memory vs. short-term memory:** Sensory memory holds raw, unprocessed impressions for moments; short-term memory holds a smaller amount of attended, encoded material for seconds. The first is the flicker, the second the glance.
+
+## Key Takeaway
+
+Storage is the process of holding encoded information over time — three modeled stores with different capacities and durations, linked by consolidation, and better understood as a warehouse with moving parts than as a vault of exact copies.
+
+## Practice Question Bank
+
+1. **A psychology student is asked for the working definition of storage. Which answer matches how OpenStax Psychology 2e, the APA Dictionary of Psychology, and the Noba Project describe it?**
+   - A. The process of holding encoded information over time, between encoding and retrieval.
+   - B. The process of turning information into a form the memory system can use.
+   - C. The process of pulling stored information back into awareness.
+   - D. The gradual loss of information that is never rehearsed.
+
+   **Answer: A.** OpenStax calls storage the retention of the encoded information, the APA Dictionary describes it as the state of an item retained in memory after encoding and before retrieval, and Noba defines storage as maintaining information over time — all captured by A. B describes encoding, C describes retrieval, and D describes forgetting, the other stages in the memory story.
+
+2. **Keiko looks up a phone number, holds it in mind while she dials, and a minute later cannot remember it. Which store held the number while she dialed?**
+   - A. Sensory memory — the number arrived as a raw visual impression.
+   - B. Short-term memory — a temporary store that holds a limited amount of information for seconds.
+   - C. Long-term memory — the permanent store that keeps information for years.
+   - D. Consolidation — the process that makes memories permanent.
+
+   **Answer: B.** The number was held for the seconds needed to dial it and then gone — the signature of short-term memory, which OpenStax describes as a temporary storage system lasting about 15 to 30 seconds. Sensory memory (A) lasts only moments and holds raw impressions, long-term memory (C) would have kept the number, and consolidation (D) is a process, not a store.
+
+3. **A child waves a glowing sparkler in the dark and sees the trail linger for a heartbeat after the spark has moved on. Which description best fits what is happening?**
+   - A. Echoic memory is retaining the sound of the sparkler for a few seconds.
+   - B. Long-term memory is storing the sparkler's path for years.
+   - C. Iconic memory is holding the visual image for less than a second after the light is gone.
+   - D. Short-term memory is rehearsing the image so it can be dialed.
+
+   **Answer: C.** The lingering trail is a visual afterimage, and the APA Dictionary of Psychology describes iconic memory — visual sensory memory — as holding an image for less than a second. Echoic memory (A) handles sound, long-term memory (B) would store the event rather than hold the fleeting image, and short-term memory (D) works on attended, encoded material, not raw sensory flicker.
+
+4. **Marco studies Spanish vocabulary the night before his trip, reviews it on the plane, and still knows the words months later. Which statement best explains what happened to the words in his memory?**
+   - A. They stayed in sensory memory the whole time, because he saw them written down.
+   - B. They were never consolidated; the plane review simply refreshed short-term memory.
+   - C. They were stored as an exact video recording of the study session.
+   - D. They were consolidated — the process by which a memory becomes stable and permanent, unfolding over hours and weeks.
+
+   **Answer: D.** Consolidation is the process by which a permanent memory is formed following a learning experience (APA Dictionary), and OpenStax notes it unfolds at the synaptic level over hours and into the memory system over weeks — matching Marco's months-long retention. Sensory memory (A) lasts moments, B contradicts consolidation, and C mistakes storage for recording.
+
+5. **Two siblings remember their family's beach vacation differently, and one insists her version is an exact recording of what happened. Based on this lesson, what is the honest conclusion?**
+   - A. Stored memories are traces, not recordings; remembering is reconstructive, so two people can store the same event and remember it differently.
+   - B. One sibling must have failed to store the vacation at all.
+   - C. The sibling with the stronger memory is storing a better copy.
+   - D. The difference proves that storage never happened for either sibling.
+
+   **Answer: A.** The Noba module is explicit: memory traces are not perfect packets, and remembering is reconstructive rather than reproductive — we rebuild the past with the aid of traces and current beliefs. A captures that honest framing. B and D confuse a difference in remembering with a failure of storage, and C treats memory as a recording, which the lesson rejects.
+
+## Sources
+
+- OpenStax Psychology 2e, Section 8.1: How Memory Functions — https://openstax.org/books/psychology-2e/pages/8-1-how-memory-functions (CC BY 4.0; read via Internet Archive snapshot)
+- Storage — APA Dictionary of Psychology — https://dictionary.apa.org/storage
+- Sensory memory — APA Dictionary of Psychology — https://dictionary.apa.org/sensory-memory
+- Iconic memory — APA Dictionary of Psychology — https://dictionary.apa.org/iconic-memory
+- Echoic memory — APA Dictionary of Psychology — https://dictionary.apa.org/echoic-memory
+- Short-term memory (STM) — APA Dictionary of Psychology — https://dictionary.apa.org/short-term-memory
+- Working memory — APA Dictionary of Psychology — https://dictionary.apa.org/working-memory
+- Long-term memory (LTM) — APA Dictionary of Psychology — https://dictionary.apa.org/long-term-memory
+- Consolidation — APA Dictionary of Psychology — https://dictionary.apa.org/consolidation
+- McDermott, K. B., & Roediger, H. L. III. Memory (Encoding, Storage, Retrieval). Noba Project — https://nobaproject.com/modules/memory-encoding-storage-retrieval (CC BY-NC-SA 4.0)
+
+## Related Topics
+
+- psychology:foundations:memory
+- psychology:foundations:encoding
+- psychology:foundations:retrieval
+- psychology:foundations:forgetting
+- psychology:foundations:learning
+
+## Editorial Metadata
+
+- Topic ID: psychology:foundations:storage
+- Editorial status: READY_TO_PUBLISH
+- Researched: 2026-08-22
+- Sources: OpenStax Psychology 2e 8.1 (read via Internet Archive snapshot); APA Dictionary of Psychology entries (read via public JSON API); Noba Project memory module (read live). All facts synthesized in original wording; no source prose adapted; all examples original.
