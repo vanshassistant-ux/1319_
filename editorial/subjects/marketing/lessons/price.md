@@ -1,0 +1,158 @@
+# Price
+
+## In 30 Seconds
+
+Price is the amount a customer pays for a product — the value exchanged between buyer and seller. Price and value are not the same: price is the number, value is what the customer believes they get. Companies set prices three common ways: cost-plus, competitive, and value-based. Usually a higher price means less demand — the demand curve. But a high price can also signal quality. Discounts, bundling, and penetration versus skimming are common tactics. The honest framing: price is the one P that brings money in.
+
+## Why This Matters
+
+Every purchase comes down to a price: the number a customer agrees to pay. That number decides how much revenue a business earns, so getting it wrong can hurt a company fast. Price is also a message — it tells buyers something about the product before they try it. Understanding price helps you see why a bakery charges what it charges, why a discount can backfire, and why a high price can sometimes make a product more attractive. It matters practically because you face prices every day, and it matters academically because price sits at the heart of the marketing mix.
+
+## Learning Objectives
+
+- Define price as the amount a customer pays for a product, using the working definition attributed to OpenStax's Principles of Marketing.
+- Explain the difference between price and perceived value, with an original example.
+- Name the three common pricing approaches — cost-plus, competitive, and value-based — with one line and an original example for each.
+- State the general relationship between price and demand, and name the demand curve as its visual representation.
+- Explain the honest nuance of the price-quality signal: a higher price can signal higher quality, but only when something supports it.
+- Name the common pricing tactics — discounts, bundling, and penetration versus skimming — and state the honest framing that price is the one P that brings money in.
+
+## The College Version
+
+### What price is
+
+The working definition used in this lesson comes from OpenStax's Principles of Marketing. Price is the exchange of something of value between a buyer and a seller: when a sale happens, the value the seller receives is the price. In plain terms, price is the amount a customer pays for a product. Price is one of the four Ps of the marketing mix, a framework the marketing-mix lesson owns; this lesson owns price itself. The same idea takes other names in other exchanges — tuition, a lawyer's fee, a bridge toll. Original example: Meadow Bakery sells a sourdough loaf for $4.50. That $4.50 is the price: the amount the customer hands over and the revenue the bakery earns from the sale.
+
+### Price and value
+
+Price and value are related but not the same. Price is the number on the tag. Value is what the customer believes the product is worth to them — a judgment built on quality, convenience, and brand. OpenStax describes the price-value equation as a subjective consumer assessment: value comes from comparing what you get with what you pay. CFI states the same idea simply: price usually reflects the product's perceived value rather than its real value. Original example: Gable Street Roasters charges $4.50 for a pour-over at its shop and $6.50 at its kiosk in the train station. The coffee is identical; the value of getting it without missing the train is higher. Same product, different perceived value, two prices.
+
+### The pricing approaches
+
+Marketers commonly use three approaches, which OpenStax's Principles of Marketing describes as pricing objectives. Cost-plus pricing starts with the cost of making the product and adds a markup. Example: Meadow Bakery figures a birthday cake costs $8 in ingredients and labor, adds a 25 percent markup, and prices it at $10. Competitive pricing sets the price according to competitors' prices. Example: Riverside Cycles prices its commuter bike at $420 because the two nearby shops sell similar bikes at $415 to $430. Value-based pricing sets the price according to what customers perceive the product is worth. Example: a local studio charges $95 for a one-day pottery workshop because that is what participants say the experience is worth — not the $20 of clay. Most real pricing blends the three.
+
+### Price and demand
+
+Price and demand generally move in opposite directions. OpenStax states it plainly: all other factors being consistent, an increase in price will result in a decrease in demand. The demand curve is the graph of that relationship — price on the vertical axis, quantity demanded on the horizontal axis — and it slopes down as price rises. Original example: Harborline Coffee sells a small latte for $3.50 and serves about 200 a day. When it raised the price to $4.50, daily sales fell to about 140, as some regulars switched cafés. Same coffee, higher price, less demand. The tendency holds when other things stay equal, and it is not a law: the next section covers a case where a higher price raises demand.
+
+### The price-quality signal
+
+Sometimes a higher price does not reduce demand — it increases it. OpenStax describes prestige pricing as setting high prices knowing that demand will increase with higher prices, because the higher price raises the product's perceived value. Buyers use price as a cue: when they cannot judge quality themselves, a higher price can signal that the product is better. The honest nuance is that the signal works only when something backs it up. Original example: Bluebird Bakery charges $180 for a wedding cake. The price signals skill, ingredients, and a track record, and the cakes themselves support it — so it works. But a no-name online store that lists a plain cotton t-shirt at $85 signals nothing, because nothing supports the price; buyers read it as a rip-off rather than as quality. The price-quality signal is a cue, not a guarantee.
+
+### Pricing tactics
+
+Tactics are day-to-day price moves, distinct from the overall approach. Discounts are temporary price cuts used to move more units, clear stock, or pull in new customers; CFI lists discounting among the core pricing decisions a company makes. Example: Meadow Bakery marks day-old loaves down from $4.50 to $2.50 after 4 p.m. Bundling sells several products together as one package for less than buying them separately. Example: Harbor Books sells a mystery novel and a matching bookmark together for $11, versus $8 and $4 bought separately. Penetration and skimming are new-product launch strategies. Penetration pricing sets a low initial price to win customers quickly. Example: a new streaming service charges $4 a month for the first year. Skimming sets a high initial price and lowers it over time. Example: a new running watch launches at $349 and drops to $249 as competitors arrive.
+
+### The honest framing
+
+Of the four Ps, price is the one that brings money in. Product, place, and promotion all cost money to build, deliver, and communicate; price is where revenue comes from. OpenStax puts it directly: the price determines how much revenue the company will earn and drives the financial health of the organization. The reality check cuts both ways. A business with a great product and a wrong price still fails, because price is the only P that converts everything else into cash. No price rescues a product nobody values. Marketers treat price as a researched decision — costs, customer expectations and willingness to pay, and competitors' prices — not a guess. That is why pricing sits at the heart of the marketing mix.
+
+## Key Vocabulary
+
+- **Price** — The amount a customer pays for a product; in the exchange between buyer and seller, the value given to the seller, per OpenStax's Principles of Marketing.
+- **Perceived value** — What a customer believes a product is worth to them, based on quality, convenience, and brand; the subjective side of the price-value equation.
+- **Cost-plus pricing** — Setting a price by taking the cost of making a product and adding a markup; OpenStax's cost-based pricing objective.
+- **Competitive pricing** — Setting a price according to what competitors charge for similar products; OpenStax's competition-based pricing objective.
+- **Value-based pricing** — Setting a price according to what customers perceive the product is worth; OpenStax's customer value-based pricing objective.
+- **Demand curve** — The graph showing how quantity demanded changes with price; it slopes down because, all else equal, higher price means less demand.
+- **Price skimming** — A new-product strategy that sets a high initial price and lowers it over time to attract customers in waves.
+- **Penetration pricing** — A new-product strategy that sets a low initial price to win customers and market share quickly from the start.
+- **Bundling** — Selling several products together as one package for less than the cost of buying them separately.
+- **Prestige pricing** — Setting a deliberately high price so the price itself signals quality and status and can raise demand.
+
+
+## Eli-10
+
+Price is the amount a customer pays for a product — the number on the tag and the place where a company's money comes from. Price and value are different: the price is what you pay, value is what you think you get. Most of the time, raising the price means fewer people buy, and cutting the price means more people buy. But a high price can sometimes make people think a product is better, so companies choose prices carefully.
+
+## Eli's Analogy
+
+Think of price as the asking price on a house. The seller names a number, but the house is only worth what buyers believe it is worth and what they are willing to pay. A seller who prices too high waits months with no offers; one who prices too low leaves money on the table. Marketers play the same game: they name a number, watch how buyers respond, and adjust. The asking price is also a message — a very low asking price makes buyers wonder what is wrong with the house, just as a very low product price can make shoppers suspicious.
+
+The analogy breaks down in one direction: a house seller can rarely raise the asking price and expect more interest, but a product's price can sometimes do exactly that. For prestige goods, a higher price can make the product more desirable, because the price itself signals quality and status. A house that gets more attractive the more it costs would be strange; for some products, it is normal.
+
+## Worked Example
+
+Cost-plus pricing at Meadow Bakery. A birthday cake costs $8 in ingredients and labor. Meadow uses a 25 percent markup, so the added amount is 25 percent of $8, which is $2. The price is $8 plus $2, or $10. Now check demand: at $10 the bakery sells about 30 cakes a week. If it raised the price to $12, sales would likely drop, because the demand curve says higher price means less demand. The cake still costs $8 to make either way — the price is a decision, not a fact.
+
+## Common Mistakes
+
+1. **Confusing price with value.** Price is the number on the tag; value is what the customer believes the product is worth. A $6 coffee can be great value to someone in a hurry and a waste of money to someone with time to brew at home.
+2. **Assuming cost-plus is always the right approach.** Cost-based pricing ignores what customers perceive, so it can price too high — customers do not care what it cost you to make — or too low, leaving money on the table, as OpenStax warns.
+3. **Treating the demand curve as a law.** Higher price usually means less demand, but only when other things stay equal, and prestige pricing shows a higher price can sometimes raise demand. The tendency is a tendency, not a guarantee.
+4. **Believing a high price always signals high quality.** The signal works only when something supports it — materials, skill, reputation, or scarcity. A high price on a no-name product with nothing behind it reads as a rip-off.
+5. **Using discounts carelessly.** Discounts are a tactic with a job: moving volume, clearing stock, or winning new customers. Habitual discounting trains customers to wait for the next sale and can cheapen the brand.
+
+## Compare / Contrast
+
+- **Price vs. Value:** Price is the number a customer pays; value is what the customer believes the product is worth. The same $4.50 loaf can be great value to one shopper and overpriced to another.
+- **Cost-plus pricing vs. Value-based pricing:** Cost-plus starts from what it costs to make the product and adds a markup; value-based starts from what customers perceive the product is worth. The two can agree or collide — a cake that costs $8 to make can sell for $10 (cost-plus) or $45 (value-based) depending on the occasion.
+- **Penetration pricing vs. Price skimming:** Penetration launches a new product at a low price to win customers fast; skimming launches it at a high price and lowers it over time. Same product life, opposite starting points.
+
+## Key Takeaway
+
+Price is the amount a customer pays for a product, and it is the one P that brings money in. Price and value are different; the three common approaches are cost-plus, competitive, and value-based; and higher price usually means less demand, though a high price can signal quality when something backs it up. Discounts, bundling, and penetration versus skimming are the day-to-day tactics.
+
+## Practice Question Bank
+
+1. **A customer pays $4.50 for a loaf of sourdough at Meadow Bakery. In marketing terms, what is that $4.50 called?**
+   - The price — the amount the customer pays for the product
+   - The perceived value of the loaf
+   - The demand curve for sourdough
+   - The cost-plus markup on the loaf
+   - **Answer: A.** OpenStax's Principles of Marketing defines price as the exchange of something of value between a buyer and a seller; the working definition in this lesson is the amount a customer pays for a product, and the $4.50 is exactly that.
+
+2. **Gable Street Roasters totals the cost of beans, milk, and labor for a latte and adds a 30 percent markup to set the price. Which pricing approach is it using?**
+   - Value-based pricing
+   - Competitive pricing
+   - Cost-plus pricing
+   - Prestige pricing
+   - **Answer: C.** Cost-plus pricing starts with the cost of making the product and adds a markup, which is OpenStax's cost-based pricing objective; the roaster is pricing from its costs, not from customer perception or competitors.
+
+3. **Riverside Cycles raises its commuter bike from $420 to $520. Sales drop, and fewer people even stop to look. Which marketing concept best explains what happened?**
+   - Prestige pricing — higher price always raises demand
+   - Bundling — the bike should have been sold with accessories
+   - Penetration pricing — the launch price was too high
+   - The demand curve — higher price, less demand, all else equal
+   - **Answer: D.** OpenStax states that, all other factors being consistent, an increase in price results in a decrease in demand; the demand curve graphs that relationship, and the bike's sales drop follows the general tendency.
+
+4. **Which pricing tactic sets a new product at a deliberately low price at launch to win customers quickly?**
+   - Price skimming
+   - Penetration pricing
+   - Bundling
+   - Prestige pricing
+   - **Answer: B.** OpenStax defines penetration pricing as setting a new product at the lowest price possible so the company can gain as many customers as possible from the start of the product life cycle.
+
+5. **An online seller with no brand history lists a plain white t-shirt at $85. Based on the lesson's honest nuance about price signals, why is the high price unlikely to work as a quality signal?**
+   - A high price only signals quality when something supports it, such as materials, skill, or reputation
+   - Price signals never influence what buyers think about a product
+   - The demand curve guarantees that higher prices always raise sales
+   - Discounts always cancel out the effect of any price signal
+   - **Answer: A.** OpenStax describes prestige pricing working because the higher price raises perceived value, but the lesson's honest nuance is that the signal needs backing; with no brand history, materials, or reviews behind it, an $85 t-shirt reads as a rip-off rather than as quality.
+
+## Sources
+
+- OpenStax, Rice University — Principles of Marketing, 12.1 Pricing and Its Role in the Marketing Mix: https://openstax.org/books/principles-marketing/pages/12-1-pricing-and-its-role-in-the-marketing-mix
+- OpenStax, Rice University — Principles of Marketing, 12.2 The Five Critical Cs of Pricing: https://openstax.org/books/principles-marketing/pages/12-2-the-five-critical-cs-of-pricing
+- OpenStax, Rice University — Principles of Marketing, 12.3 The Five-Step Procedure for Establishing Pricing Policy: https://openstax.org/books/principles-marketing/pages/12-3-the-five-step-procedure-for-establishing-pricing-policy
+- OpenStax, Rice University — Principles of Marketing, 12.4 Pricing Strategies for New Products: https://openstax.org/books/principles-marketing/pages/12-4-pricing-strategies-for-new-products
+- OpenStax, Rice University — Principles of Marketing, 12.5 Pricing Strategies and Tactics for Existing Products: https://openstax.org/books/principles-marketing/pages/12-5-pricing-strategies-and-tactics-for-existing-products
+- Corporate Finance Institute (CFI) — 4 P's of Marketing: https://corporatefinanceinstitute.com/resources/management/4-ps-of-marketing/
+
+OpenStax content is licensed CC BY 4.0; concepts were adapted into original prose with attribution. The CFI 4 P's of Marketing page was used as a reference-only source; no source prose was reproduced.
+
+## Related Topics
+
+- marketing:foundations:marketing-mix
+- marketing:foundations:product
+- marketing:foundations:what-marketing-is
+- marketing:foundations:brand-equity
+- marketing:foundations:customer-needs
+
+## Editorial Metadata
+
+- Topic id: marketing:foundations:price
+- Subject: marketing / Unit: foundations
+- Editorial status: READY_TO_PUBLISH
+- Research date: 2026-08-22
+- Provenance: EliExplains original synthesis from OpenStax Principles of Marketing (12.1-12.5, fetched live 2026-08-22) and the CFI 4 P's of Marketing page; all examples are original and fictional.
