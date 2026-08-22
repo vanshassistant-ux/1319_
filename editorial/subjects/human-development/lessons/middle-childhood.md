@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Middle childhood is the developmental period from about age six to about age eleven — the school years. Growth steadies: a few inches and a few pounds a year instead of the baby-year surge. The signature skills are reading, writing, and arithmetic — cultural skills that must be taught, not abilities that unfold on their own. Friendships deepen, and children begin comparing themselves with peers. Competence builds self-esteem. Researchers call these the 'forgotten years' because they draw less attention than early childhood or adolescence — yet the foundations of adult skills are laid here.
+Middle childhood is the developmental stretch from about age six to about age eleven — the school years. Growth steadies: a few inches and a few pounds a year rather than the baby-year surge. The signature skills are reading, writing, and arithmetic — cultural skills that must be taught, not abilities that unfold on their own. Friendships deepen, and children begin comparing themselves with peers. Competence builds self-esteem. Researchers call these the 'forgotten years' because they draw less attention than early childhood or adolescence — yet the foundations of adult skills are laid here.
 
 ## Why This Matters
 
@@ -21,7 +21,7 @@ Middle childhood is where the person becomes competent. The child who learns to 
 
 ### What middle childhood is
 
-Developmental scientists use 'middle childhood' for the years between early childhood and adolescence. The working definition used here is the period from about age six to about age eleven — the age range OpenStax's Lifespan Development ties to Erikson's industry-versus-inferiority stage. The borders are honestly fuzzy: MedlinePlus's Medical Encyclopedia describes school-age development as ages six to twelve, Mah and Ford-Jones (2012) define middle childhood as six to twelve, and OpenStax's own chapter label reads 'Ages 7 to 12.' What the sources agree on is what happens inside those years. The child who entered school as a beginning reader leaves it able to learn from books, keep real friends, and take pride in work — the school years in every sense.
+Developmental scientists use 'middle childhood' for the years between early childhood and adolescence. The working definition used here is the span from about age six to about age eleven — the age range OpenStax's Lifespan Development ties to Erikson's industry-versus-inferiority stage. The borders are honestly fuzzy: MedlinePlus's Medical Encyclopedia describes school-age development as ages six to twelve, Mah and Ford-Jones (2012) define middle childhood as six to twelve, and OpenStax's own chapter label reads 'Ages 7 to 12.' What the sources agree on is what happens inside those years. The child who entered school as a beginning reader leaves it able to learn from books, keep real friends, and take pride in work — the school years in every sense.
 
 ### The body: steady, slower growth
 

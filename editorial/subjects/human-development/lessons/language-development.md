@@ -6,7 +6,7 @@ Language development is the process by which children acquire their first langua
 
 ## Why This Matters
 
-Language is the mind's first great achievement: within about three years, a child who cannot say a word becomes a speaker who asks questions, tells stories, and argues about bedtimes. Understanding how that happens helps parents, teachers, and health workers tell ordinary variation from something worth checking, and it reveals a central puzzle of development — how so much skill arrives so fast. The nature-nurture debate in language also models how scientists argue productively about human development, and knowing that bilingualism is normal worldwide keeps the conversation honest.
+Language is the mind's first great achievement: within about three years, a child who cannot say a word becomes a speaker who asks questions, tells stories, and argues about bedtimes. Understanding how that happens helps parents, teachers, and health workers sort ordinary variation from something worth checking, and it reveals a central puzzle of development — how so much skill arrives so fast. The nature-nurture debate in language also models how scientists argue productively about human development, and knowing that bilingualism is normal worldwide keeps the conversation honest.
 
 ## Learning Objectives
 
@@ -40,7 +40,7 @@ Many children grow up hearing two or more languages, and OpenStax's Lifespan Dev
 
 ### The Reality Check: Every Child's Path
 
-Every child's path through language is a little different. One toddler speaks in three-word sentences at twenty months while a playmate says single words — and both can be typical. Milestone lists are descriptions of what most children do by a given age, not exams with deadlines; NIDCD stresses that children vary in their development while following a natural timetable, and a single missed checkmark is not a diagnosis. When a child seems clearly behind in several areas, the right step is a conversation with a pediatrician, because early help works best. The honest framing: language is the mind's first great achievement. In about three years, a newborn who communicates by crying becomes a person who asks questions, tells stories, and negotiates — a transformation so universal we rarely stop to marvel at it.
+Every child's path through language is a little different. One toddler speaks in three-word sentences at twenty months while a playmate says single words — and both can be typical. Milestone lists are descriptions of what most children do by a given age, not exams with deadlines; NIDCD stresses that children vary in their development while following a natural timetable, and a single missed checkmark is not itself a diagnosis. When a child lags clearly behind in several areas, the right move is a conversation with a pediatrician, because early help works best. The honest framing: language is the mind's first great achievement. In about three years, a newborn who communicates by crying becomes a person who asks questions, tells stories, and negotiates — a transformation so universal we rarely stop to marvel at it.
 
 ## Key Vocabulary
 

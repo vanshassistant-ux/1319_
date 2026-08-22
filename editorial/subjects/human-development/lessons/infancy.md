@@ -6,7 +6,7 @@ Infancy is the developmental period from birth to about age two, a stretch of ra
 
 ## Why This Matters
 
-Every later chapter of development — early childhood, the school years, adolescence, adulthood — rests on foundations laid in the first two years. Knowing what infancy looks like helps parents, caregivers, teachers, and health workers tell ordinary variation from something worth checking with a pediatrician, and it gives students the anchor they need for stage theories like Piaget's. Studying infancy honestly also builds a habit that carries forward: describing what most children do by a given age without turning ranges into deadlines or alarm.
+Every later chapter of development — early childhood, the school years, adolescence, adulthood — rests on foundations laid in the first two years. Knowing what infancy looks like helps parents, caregivers, teachers, and health workers tell ordinary variation apart from something worth checking with a pediatrician, and it gives students the anchor they need for stage theories like Piaget's. Studying infancy honestly also builds a habit that carries forward: describing what most children can do by a given age without turning ranges into deadlines or alarm.
 
 ## Learning Objectives
 
@@ -21,7 +21,7 @@ Every later chapter of development — early childhood, the school years, adoles
 
 ### What Infancy Is
 
-In developmental terms, infancy is the period from birth until about age two. The Eunice Kennedy Shriver National Institute of Child Health and Human Development (NICHD) defines it as the period from birth until age 2 years, a time of rapid growth and change. Everyday speech sometimes uses "infant" for the first months or year, and a few stage theories end infancy at twelve months, but the two-year window is the standard framing in lifespan development; ages one to two are often called the toddler years. Infancy sits between the prenatal stage that precedes it and early childhood that follows it. Attachment, cognitive development, and language development each get their own topic in this course; this lesson maps the whole period.
+In developmental terms, infancy is the period from birth until about age two. The U.S. National Institute of Child Health and Human Development (NICHD) defines it as the period from birth until age 2 years, a time of rapid growth and change. Everyday speech sometimes uses "infant" for the first months or year, and a few stage theories end infancy at twelve months, but the two-year window is the standard framing in lifespan development; ages one to two are often called the toddler years. Infancy sits between the prenatal stage that precedes it and early childhood that follows it. Attachment, cognitive development, and language development each get their own topic in this course; this lesson maps the whole period.
 
 ### Growth and Motor Milestones: The Body Leads
 

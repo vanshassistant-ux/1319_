@@ -20,7 +20,7 @@ Early childhood is when the person begins to show. The toddler who could barely 
 
 ### What early childhood is
 
-Developmental scientists use "early childhood" for the years when a child is no longer a baby but not yet a school-age child. The working definition used here is the period from about age two to about age six. The borders are drawn differently from source to source — the CDC's milestone program tracks children from age two through age five, while OpenStax's Lifespan Development textbook treats early childhood as roughly ages three to six — so the honest way to hold the definition is as a range with fuzzy edges. What the sources agree on is what happens inside those years. The infant who needed help to stand becomes a child who can be trusted on a playground. The pace of growing slows, and the pace of learning something new does not.
+Developmental scientists use "early childhood" for the years when a child is no longer a baby but not yet a school-age child. The working definition used here is the period from about age two to about age six. The borders are drawn differently from source to source — the CDC's milestone program tracks children from age two through age five, while OpenStax's Lifespan Development textbook treats early childhood as roughly ages three to six — so the honest way to hold the definition is as a range with soft edges. The sources do agree on one thing: what happens inside those years. The infant who needed help to stand becomes a child who can be trusted on a playground. The pace of growing slows, and the pace of learning something new does not.
 
 ### The body: growing slower, building more
 

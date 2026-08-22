@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Developmental research is the systematic, scientific study of how people grow, change, and stay stable across the lifespan — "womb to tomb." Researchers compare age groups at one time (cross-sectional), follow the same people for years (longitudinal), or combine both (cross-sequential). Studying children adds non-negotiable rules: parental permission, child assent, and a hard no-harm line.
+Developmental research is the systematic, scientific study of how people grow, transform, and stay stable across the lifespan — "womb to tomb." Researchers compare age groups at one time (cross-sectional), follow the same people for years (longitudinal), or combine both (cross-sequential). Studying children adds non-negotiable rules: parental permission, child assent, and a hard no-harm line.
 
 ## Why This Matters
 
