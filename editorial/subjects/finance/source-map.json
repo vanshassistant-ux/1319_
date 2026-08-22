@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "subjectSlug": "finance",
+  "note": "Discovery leads for finance topic workers (phase 2). LITERACY level with real mechanics: teach what each concept IS, the simple formulas with original worked examples (time value, PV/FV, compound interest, NPV/IRR intuition), and why it matters. The accounting subject owns statement PREPARATION (financial-statements/financial-ratios here are the FINANCE view: how decision-makers USE them).",
+  "reviewProfile": ["financial-literacy", "mechanics-at-literacy-level"],
+  "tierA": [
+    { "provider": "OpenStax Principles of Finance", "url": "https://openstax.org/details/books/principles-finance", "useFor": "THE backbone for finance topics (TVM, PV/FV, interest, risk/return, markets, capital budgeting). REFERENCE_ONLY (aiIngestionAllowed:false per OpenStax footer); read via Internet Archive captures or preloaded-state JSON since openstax.org blocks curl" },
+    { "provider": "OpenStax Principles of Accounting Vol 1/2", "url": "https://openstax.org/details/books/principles-financial-accounting", "useFor": "financial-statements (finance view) and financial-ratios (finance view) — reference the accounting subject's preparation lessons, teach the decision use" },
+    { "provider": "SEC Investor.gov", "url": "https://www.investor.gov/introduction-investing/investing-basics", "useFor": "bonds, stocks, diversification, markets — official U.S. securities regulator basics" },
+    { "provider": "U.S. Treasury", "url": "https://home.treasury.gov/", "useFor": "Treasury securities as the risk-free benchmark (general, factual)" },
+    { "provider": "Federal Reserve", "url": "https://www.federalreserve.gov/", "useFor": "interest rates, inflation context (general, factual, no forecasting)" }
+  ],
+  "tierB": [
+    { "provider": "Corporate Finance Institute (CFI)", "url": "https://corporatefinanceinstitute.com/", "useFor": "finance concept explainers (TVM, NPV, IRR, WACC, CAPM intuition) — reference only" },
+    { "provider": "Investopedia", "url": "https://www.investopedia.com/", "useFor": "finance terms (often JS-walled — verify via Wayback or use CFI instead)" }
+  ],
+  "cautions": [
+    "FORMULAS AT LITERACY LEVEL: teach the TIME VALUE OF MONEY formulas with simple original arithmetic — FV = PV × (1 + r)^n with small numbers (e.g. $100 at 5% for 2 years = $110.25); NPV as 'present value of inflows minus outflows' with a 2-year example; IRR as 'the discount rate where NPV = 0' with intuition only (no trial-and-error math). NO bond-pricing formula depth, NO CAPM formula, NO option pricing.",
+    "NO INVESTMENT ADVICE: never recommend specific investments; teaching 'diversification reduces risk' is educational, 'buy index funds' is advice — keep the line.",
+    "SIBLING SUBJECTS: accounting owns statement preparation and the four ratio formulas; finance re-uses them as decision tools (reference the accounting lessons). personal-finance owns household budgeting/saving depth. introduction-to-business finance-basics owns the overview.",
+    "risk/return: teach the general positive relationship (higher expected return carries higher risk) with original examples; risk-free rate as a concept (Treasury bills), not a live number unless time-anchored.",
+    "financial-markets: primary vs secondary markets, exchanges vs OTC — factual, no hype; inflation: general definition + why lenders care (real vs nominal, stated simply, no forecasting).",
+    "Distribute question answer keys EVENLY across A/B/C/D (≥1 C, ≥1 D per topic; max 3 of 5 per slot). Verify keys from the file yourself. BANNED: 'Which statement best defines X used in this lesson?' stems — write topic-specific questions (e.g. 'What does the time value of money mean?', 'Which discount rate makes NPV equal zero?')."
+  ]
+}
