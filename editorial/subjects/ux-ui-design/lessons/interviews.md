@@ -1,0 +1,156 @@
+# Interviews
+
+## In 30 Seconds
+
+A user interview is a one-on-one research conversation in which the interviewer asks a participant about their experiences and needs, listens, and follows up to learn more — the working definition of Nielsen Norman Group. Teams use interviews in discovery because they go deep: a few good conversations reveal the why behind behavior. Most UX interviews are semi-structured: a short guide of open-ended questions with room to follow up. The honest limit: interviews capture what people say, not always what they do.
+
+## Why This Matters
+
+Design decisions are guesses until someone checks them against real people, and an interview is one of the earliest, cheapest ways to run that check. A single good conversation can overturn a team's assumption about what users want, because it surfaces motivations and workarounds no survey question would have thought to ask. That depth shapes everything that follows — personas, journey maps, prototypes — and keeps the team designing for the people who will actually use the product. Interviewing is also a transferable skill: the same listen-then-follow-up discipline applies to stakeholder meetings, hiring conversations, and clinical or journalistic work.
+
+## Learning Objectives
+
+- Define a user interview as a one-on-one research conversation about a person's experiences and needs, following the Nielsen Norman Group working definition.
+- Explain why interviews matter in discovery: they produce depth — the motivations and reasons behind behavior.
+- Distinguish structured, semi-structured, and unstructured interviews, and identify semi-structured as the common default.
+- Apply the craft of interview questions by rewriting closed, leading, or compound questions to be open-ended, neutral, and single.
+- Analyze what interviews can and cannot tell you, and explain how saturation guides how many interviews to run.
+
+## The College Version
+
+### The working definition
+
+Nielsen Norman Group, the field's most-cited research firm, defines a user interview as a research method in which the interviewer asks a participant questions about a topic, listens to the responses, and follows up with further questions to learn more. Three details matter. First, it is one on one: one researcher, one participant, in a focused conversation — not a group discussion and not a written form. Second, it is research, not a chat: the interviewer has a purpose and a plan. Third, the follow-up is part of the definition — the method lives in the listening, not just the asking. In other fields the same method is called an in-depth or qualitative interview; "user interview" is the UX word for it. Interviews usually happen early, in the discovery phase, when the team is still learning who its users are and what they need, and the same conversation can explore either a person's life around a product or their experience with a specific product.
+
+### Why interviews: the why behind behavior
+
+Surveys and analytics answer how many and how often; interviews answer why. Consider an original example. A team building a recipe app for home bakers noticed that new users opened one recipe and never came back, and the team assumed the problem was a thin recipe library. In interviews, the opening question was "Tell me about the last time you tried a new recipe." One participant described abandoning a bread recipe halfway through, feeling foolish, and quietly throwing away the ingredients. Another said she only bakes recipes she has already mastered because failing in front of her family felt worse than not baking at all. The pattern was not missing content — it was confidence. People were leaving because they felt shame about failed bakes, so the team redesigned around rescue content: what to do when a dough looks wrong. Analytics said "they left"; interviews said why. That is the value: depth about motivations, mental models, and pain points, which also builds the team's empathy for the people it designs for.
+
+### Three shapes: structured, semi-structured, unstructured
+
+Interview studies come in three shapes. A structured interview is a fixed script: every participant hears the same questions in the same order, which makes answers easy to compare but leaves no room to follow something interesting. An unstructured interview is the opposite: no script, just a topic and a conversation that follows wherever the participant leads — rich and surprising, but hard to compare across people and easy to drift off course. A semi-structured interview sits between them: the interviewer prepares a short guide of open-ended questions but is free to skip, reorder, and probe into whatever the participant raises. Because it balances depth with consistency, semi-structured is the common default in UX work. The prepared questions ensure every participant covers the same ground; the freedom to follow up is what surfaces the unexpected insights.
+
+### The craft of good questions
+
+Good interview questions share three habits. Open-ended: a question should invite a story, not a one-word answer. Before: "Did you like the checkout?" After: "Tell me about the last time you bought something online." Neutral: a question must not name a suspected cause, because participants tend to agree with the interviewer. Before: "What frustrated you about the app?" — which assumes frustration — After: "What was your experience with the app like?" One at a time: a compound question splits attention. Before: "What made you try the service, and how was your first week?" After: "What made you try the service?" — then a separate follow-up later. Three failures to avoid, by name. Leading questions steer the answer ("Did you cancel because the app was too slow?"). Yes/no runs waste the session on answers the team already imagined. And asking users to design ("What button would you add?") asks people to predict their future behavior, which they do poorly; the team's job is to turn stories about real experiences into features.
+
+### How many, and the honest limits
+
+There is no golden number of interviews. Qualitative studies run until saturation — the point at which each new conversation stops adding new insight. In practice that often means starting with a handful — around five or six — of well-chosen participants, analyzing as you go, and stopping when the stories begin to repeat. Well-chosen matters more than many: one sharp conversation with a person who actually matches the audience teaches more than ten rushed ones with whoever was available. Now the honest framing. Interviews are an attitudinal method: they collect what people say, remember, and choose to share. Memory is imperfect, and people smooth over awkward details to look good, so what people report is not always what they do. If the question is what users actually do, the answer is observation — watching real behavior — which is its own method, covered in the usability-testing topic. Interviews and observation are siblings: interviews say what people say, observation shows what people do, and strong teams use both.
+
+## Key Vocabulary
+
+- **user interview** — A one-on-one research conversation in which a researcher asks a participant about their experiences and needs, listens, and follows up to learn more.
+- **interview guide** — A written list of the questions and topics an interviewer plans to cover during the session.
+- **open-ended question** — A question that invites a full, detailed answer rather than a single word or a fixed choice.
+- **closed question** — A question with a short, fixed set of expected answers, such as yes or no, or a rating.
+- **leading question** — A question phrased so that it nudges the participant toward a particular expected answer.
+- **probing question** — A short follow-up, such as "Tell me more about that," used to deepen a participant's answer.
+- **structured interview** — A format in which every participant is asked the same fixed set of questions in the same order.
+- **semi-structured interview** — A format that pairs a prepared guide of open-ended questions with freedom to follow up wherever answers lead.
+- **unstructured interview** — A format with no fixed script, in which the conversation follows whatever the participant raises.
+- **saturation** — The point in a study at which additional interviews stop producing new insights or themes.
+
+## Eli-10
+
+An interview is a planned conversation with one person, on purpose. You arrive with a short list of questions that mostly start with "tell me about" — tell me about the last time you did this — and your real job is to listen and ask small follow-ups like "what happened next?" You are not there to sell, teach, or judge. The goal is to hear how the world looks from their side, including the parts you would never have guessed. One interview rarely changes the world by itself, but a handful of good ones, listened to carefully, usually changes what your team decides to build.
+
+## Eli's Analogy
+
+Think of a journalist covering a story. A journalist does not hand a witness a multiple-choice form, and does not announce what must have happened. They ask, "What did you see, in your own words?" and then follow up: "And then what?" The witness's story is the raw material. A user interview works the same way: you are collecting one person's story about their experience, told their way, so you can understand it before you design anything.
+
+The analogy breaks down in one important way: a news story can be checked against other evidence — photos, records, other witnesses. An interview has no tape of the user's memory. People forget details, smooth over awkward parts, and sometimes tell you what they think you want to hear. That is why interviews are treated as reports rather than proof, and why teams pair them with observation of what people actually do.
+
+## Worked Example
+
+A small team building a gardening app for apartment balconies believed the problem was that users did not know which plants to buy. They interviewed six balcony gardeners, one at a time, using a short guide that opened with "Tell me about the last time you tried to keep a plant alive." One participant described buying a tomato seedling, watching it wilt, and quietly throwing it away without telling anyone. Another said she had stopped trying because she assumed everyone else's plants thrived. The team's planned question, "What tools would help you choose plants?", assumed the answer, so they dropped it and followed the stories instead. The pattern that emerged was shame, not ignorance: people abandoned gardening because they felt they had failed. The team redesigned around a "comeback" mode that meets a drooping plant with gentle recovery steps. They stopped after the sixth interview because the stories had begun to repeat — saturation had arrived, and six well-chosen conversations had overturned their original assumption.
+
+## Common Mistakes
+
+- **Firing off a run of closed questions** — "Do you use the app daily? Weekly? Would you recommend it to a friend?" Closed questions return only the answers the team already thought of. Open with one open-ended question — "Tell me about the last time you used the app" — and follow the story wherever it goes.
+- **Leading with a guess** — "Was it hard to find the price?" or "Did you cancel because the app was too slow?" A question that names a suspected cause nudges the participant to agree with you. Ask neutrally instead: "Tell me about what happened when you tried to find the price."
+- **Asking users to design** — "What button would you add?" or "Would you use a feature that reminded you to drink water?" People are unreliable at predicting what they would do with an imagined feature. Ask about real past experiences, and let the team turn those stories into features.
+- **Treating interview answers as a record of what people actually do.** Interviews capture what people say, remember, and choose to share. To see real behavior, pair interviews with observation — the domain of the usability-testing topic.
+
+## Compare / Contrast
+
+- **A user interview vs. A survey** — One conversation, one person, and the freedom to go deep versus many people and fixed questions: interviews reveal the why behind behavior, while surveys measure how many people think or do something.
+- **An interview (attitudinal) vs. A usability test (behavioral)** — An interview collects what people say they think and do; a usability test watches what people actually do with a design. Interviews are discovery; usability testing is evaluation.
+- **A structured interview vs. An unstructured interview** — Structured asks every participant the same fixed questions, trading depth for easy comparison; unstructured follows the conversation wherever it leads, trading comparability for depth. Semi-structured, the usual default, sits between them.
+
+## Key Takeaway
+
+A user interview is a one-on-one research conversation that trades breadth for depth: a few open, neutral, single questions, asked of a small set of well-chosen people, reveal the why behind behavior — with the honest caveat that participants are telling you what they say, not always what they do.
+
+## Practice Question Bank
+
+**1. Which statement best defines a user interview?**
+
+- A. A one-on-one conversation in which a researcher asks a participant about their experiences and needs, listens, and follows up to learn more.
+- B. A written questionnaire sent to a large group of users to collect ratings and counts.
+- C. A session in which users complete tasks on a prototype while the team watches.
+- D. A group discussion in which several users react to each other's opinions.
+
+**Correct answer: A.** A user interview is a one-on-one research conversation: ask, listen, and follow up. A written questionnaire (B) is a survey; a task-based session (C) is usability testing; a moderated group (D) is a focus group, not an interview.
+
+**2. A researcher prepares a short guide of open-ended questions but expects to follow up freely wherever each participant's answers lead. Which interview format is this?**
+
+- A. A structured interview
+- B. An unstructured interview
+- C. A contextual interview
+- D. A semi-structured interview
+
+**Correct answer: D.** Semi-structured interviews pair a prepared guide with freedom to probe, which is why they are the usual default. A structured interview (A) uses a fixed script; an unstructured interview (B) has no set questions; a contextual interview (C) happens during observation in the user's own environment.
+
+**3. A designer is about to ask: "Did you stop using the app because it was too slow?" Which rewrite follows good interview practice?**
+
+- A. "Why is the app too slow?"
+- B. "How often did you use the app before you stopped?"
+- C. "Tell me about what led you to stop using the app."
+- D. "Would you use the app again if it were faster?"
+
+**Correct answer: C.** The original question names a suspected cause, which nudges the participant to agree. "Tell me about what led you to stop" stays neutral and invites a story. Option A keeps the loaded assumption, B is a closed question, and D asks the participant to predict future behavior.
+
+**4. Which question is the best way to open an interview about how people shop for groceries?**
+
+- A. "Do you shop for groceries online?"
+- B. "Tell me about the last time you bought groceries."
+- C. "How much do you spend on groceries each week?"
+- D. "Don't you find grocery shopping stressful?"
+
+**Correct answer: B.** Asking about the last real grocery trip invites a concrete remembered story, which yields the richest detail. Options A and C are closed questions with limited answers, and D is leading because it assumes the answer.
+
+**5. Twelve people told a team they check their weather app every morning, but the app's own usage data shows most users open it about once a week. Which conclusion is most reasonable?**
+
+- A. Interviews capture what people say, which is not always what they do; the team should observe real behavior to reconcile the gap.
+- B. The usage data must be wrong, because twelve people cannot all be mistaken.
+- C. The interviews were useless and should be discarded entirely.
+- D. The team should immediately redesign the app to match what people said.
+
+**Correct answer: A.** Interviews are attitudinal: they collect reported behavior, and memory plus social-desirability bias distort reports, so a gap between what people say and what they do is expected. Observation and behavioral data are the check. Option B treats reports as ground truth, C overreacts, and D builds on unverified claims.
+
+## Sources
+
+- Nielsen Norman Group — [User Interviews 101](https://www.nngroup.com/articles/user-interviews/)
+- Nielsen Norman Group — [6 Mistakes When Crafting Interview Questions](https://www.nngroup.com/articles/interview-questions-mistakes/)
+- Nielsen Norman Group — [How Many Participants for a UX Interview?](https://www.nngroup.com/articles/interview-sample-size/)
+- Interaction Design Foundation — [User Interviews (topic encyclopedia entry)](https://www.interaction-design.org/literature/topics/user-interviews)
+- U.S. General Services Administration, Digital.gov — [How to conduct an interview](https://digital.gov/resources/how-conduct-interview/)
+
+## Related Topics
+
+- [User Research](ux-ui-design:foundations:user-research)
+- [Surveys](ux-ui-design:foundations:surveys)
+- [User Journeys](ux-ui-design:foundations:user-journeys)
+- [Usability Testing](ux-ui-design:foundations:usability-testing)
+- [Personas](ux-ui-design:foundations:personas)
+
+## Editorial Metadata
+
+- **Topic id:** ux-ui-design:foundations:interviews
+- **Subject / unit / slug:** ux-ui-design / foundations / interviews
+- **Editorial status:** READY_TO_PUBLISH
+- **Estimated minutes:** 9
+- **Research status:** source-verified (researched 2026-08-21)
+- **Rights status:** reference-only sources; all facts synthesized into original prose; no source wording reproduced beyond a short attributed paraphrase of the NN/g working definition
+- **Sources cited:** nng-user-interviews-101, nng-interview-question-mistakes, nng-interview-sample-size, ixdf-user-interviews, digitalgov-conduct-interview

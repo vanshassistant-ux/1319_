@@ -1,0 +1,154 @@
+# UX Versus UI
+
+## In 30 Seconds
+
+User experience (UX) is the overall experience a person has with a product — the whole journey, from first hearing about it to using it and beyond. User interface (UI) is the visual and interactive surface: the screens, buttons, menus, and controls. The two are partners, not rivals: UX is the experience, and UI is the interface that delivers it. The boundary is fuzzy in practice — small teams often do both — but the distinction matters, because a beautiful interface cannot save a frustrating experience, and a clear experience still needs a surface people can actually operate.
+
+## Why This Matters
+
+Every app, website, and device you use has both a UX and a UI, and knowing the difference lets you see why some products feel great while others fall apart despite looking fine. It gives you a precise vocabulary for talking about design work and a way to judge products honestly instead of blaming 'bad design' in general. It is also the foundation for every later topic in this subject, from user research and journeys to wireframes and visual hierarchy. Practically, the distinction is a diagnostic tool: when something feels wrong, you can name whether the problem is the experience, the surface, or the gap between them.
+
+## Learning Objectives
+
+- Define user experience (UX) as the overall experience a person has with a product, attributing the working definition to Don Norman and Jakob Nielsen of Nielsen Norman Group.
+- Define user interface (UI) as the visual and interactive surface of a product, attributing the working definition to the Interaction Design Foundation.
+- Distinguish UX from UI, explaining that UX is the experience and UI is the interface that delivers it.
+- Apply the distinction to explain why great UI cannot save a bad UX, and why a good experience still needs a usable surface.
+- Analyze the fuzzy boundary between the two fields in practice, including why small teams often combine both roles in one job.
+
+## The College Version
+
+### A working definition of UX
+
+User experience — UX for short — is the overall experience a person has with a product. The working definition most often cited comes from Don Norman and Jakob Nielsen of Nielsen Norman Group, the research firm Norman co-founded after he coined the term 'user experience' in the 1990s. Their definition: user experience encompasses all aspects of the end-user's interaction with the company, its services, and its products. Notice how wide that is. The experience begins before anyone opens the app — the ad that makes a person curious, the store page, the reviews — and it continues through every use of the product, including what happens after, such as support and billing. UX is the whole journey, not just the minutes spent on screen.
+
+### A working definition of UI
+
+The other half is the user interface — UI for short. The Interaction Design Foundation, an independent design education organization, gives the working definition: user interface (UI) design is the process designers use to build interfaces in software or computerized devices, focusing on looks or style, and designers aim to create interfaces that users find easy to use and pleasurable. The UI is the surface: the screens, buttons, menus, icons, text, colors, and controls a person sees and operates. Interfaces come in more than one form. The most familiar is the graphical user interface — the desktop, the app screen, the website — but there are also voice-controlled interfaces like a smart speaker's, and gesture-based interfaces in virtual reality. Whatever the form, the UI is the point where the person and the product actually meet.
+
+### The relationship: experience and surface
+
+UX and UI are not rivals; they are the two halves of one product. UX is the experience, and UI is the interface that delivers it. Consider a ferry-booking app. The UX is the flow: a traveler opens the app, searches for a sailing, picks a time, enters passenger details, pays, and receives a confirmation. It is also everything around that flow — whether the search results are honest, whether a canceled sailing triggers a clear refund message, whether the confirmation arrives by email. The UI is the surface of each step: the search box, the sailing list, the date picker, the payment screen, the confirmation badge. The same flow could be delivered by a different surface, and the same surface could sit on a different flow. Nielsen Norman Group puts it plainly: it is important to distinguish the total user experience from the user interface, even though the UI is an extremely important part of the design.
+
+### Why the distinction matters
+
+The distinction matters because the two halves fail independently. Nielsen Norman Group's own example: a movie-review website whose interface for finding a film is perfect, but whose database covers only major-studio releases — a user searching for a small independent film finds nothing, and the experience is poor no matter how good the search screen looks. Great UI cannot save bad UX. The reverse is also true: a clear, well-planned experience still needs a surface people can operate. A ferry app with a sensible flow but a confirm button that is invisible on a phone screen will frustrate travelers all the same. Usability — how easily and effectively people accomplish their goals — is one part of the larger UX umbrella, as U.S. Digital.gov guidance puts it. Naming the right half tells a team where the problem is: the experience, the surface, or the gap between them.
+
+### Who does what
+
+The two halves map onto two kinds of work. UX designers research and structure. They study who the users are, what they are trying to do, and where they get stuck, and then they plan the experience: the steps, the order, the information needed at each point, the wording of messages. The Interaction Design Foundation describes UX design as involving the entire process of acquiring and integrating the product, including aspects of branding, design, usability, and function. UI designers craft the visuals and the interactive surface: colors, typography, spacing, icons, and button styles, and they make sure every screen is consistent and clear to operate. Neither half is optional, and the two designers work on the same product, often on the same screen — one deciding what should happen, the other deciding how it should look and respond.
+
+### The honest framing: a fuzzy boundary
+
+Textbook definitions draw a clean line, and practice is fuzzier. Job postings for a single 'UX/UI designer' are common, and the Interaction Design Foundation notes that while UX and UI overlap, they are separate disciplines. Small teams and startups often have one person doing both: researching users in the morning, mapping the flow in the afternoon, and choosing colors at night. Large companies split the work across specialists. Either arrangement can work; what matters is knowing which kind of work a task is. When someone says 'the design is bad,' the useful question is which half they mean. That question is why this lesson exists: to give you the vocabulary to separate the experience from the surface, so you can discuss, judge, and improve products precisely.
+
+## Key Vocabulary
+
+- **user experience (UX)** — The overall experience a person has with a product, encompassing all aspects of interacting with the company, its services, and its products — from first hearing about it through using it and beyond.
+- **user interface (UI)** — The visual and interactive surface of a product: the screens, buttons, menus, icons, and controls a person sees and operates.
+- **usability** — How easily and effectively people can accomplish their goals using a product; one part of the larger UX, focused on whether the mechanics work.
+- **UX designer** — A designer who researches who the users are and structures the experience: the steps, the order, and the information needed at each point.
+- **UI designer** — A designer who crafts the visual and interactive surface: colors, typography, spacing, icons, and controls.
+- **flow** — The sequence of steps a person takes to complete a task in a product, such as searching, booking, and paying.
+- **graphical user interface (GUI)** — An interface operated through visual elements such as windows, buttons, menus, and icons, like a computer desktop or an app screen.
+
+## Eli-10
+
+UX and UI are the two halves of any product you use. UX — user experience — is the whole experience of having a product in your life: finding it, learning it, using it, getting help when it breaks. UI — user interface — is the visible, touchable surface: the screens, buttons, menus, and words you actually interact with. A good product needs both. The experience can be thoughtful while the surface is clumsy, and the surface can be beautiful while the experience is maddening. The two halves are different kinds of work, and knowing which one is failing is the first step to fixing it.
+
+## Eli's Analogy
+
+Think of a restaurant. The UI is the room: the tables, the menu, the plates, the lighting, the way the food is arranged on the dish. The UX is the whole dinner: finding the restaurant, waiting for a table, the pace of the meal, the warmth of the service, the bill at the end. You can have a gorgeous plate of food and a terrible evening, because the kitchen forgot your order and the waiter vanished. You can have a wonderful evening and a crumpled menu. The surface sets the tone; the experience is what you remember.
+
+The restaurant analogy breaks down in one way: part of a restaurant's experience is things no one designed, like the noise of other tables, while a digital product is almost entirely designed. Nearly every part of an app's experience — including the parts that feel accidental — was someone's decision. That makes the UX/UI distinction even more important in software, because there is no undesigned surface to blame: if the experience is frustrating, a human decided to build it that way.
+
+## Worked Example
+
+Harborline Ferries built an app for booking crossings to the nearby islands. The first version looked excellent: crisp screens, a pleasing blue-and-white palette, tidy buttons. Yet travelers abandoned it. The flow was the problem: to book a return trip, a traveler had to start over from the search screen and re-enter passenger details, and the payment screen sometimes accepted a card twice, showing two confirmations. Beautiful UI, broken UX. The redesign worked on both halves. The UX designer watched travelers book, then restructured the flow: one booking that holds both directions, a single passenger list, one payment, one confirmation. The UI designer then reworked the screens around the new flow: a clear summary at each step and a prominent confirm button. Same team, two different jobs — and the distinction told them exactly where to look first.
+
+## Common Mistakes
+
+- **Treating UX and UI as the same thing.** They are distinct halves of one product: UX is the overall experience a person has with a product, and UI is the visual and interactive surface that delivers it. The terms are related — and often combined in job titles — but they name different kinds of design work.
+- **Assuming a beautiful interface means a good product.** Great UI cannot save bad UX. Harborline's first app looked great and still frustrated travelers, because the flow — the experience — was broken. Nielsen Norman Group makes the same point with its movie-review example: a perfect search interface cannot fix a product that is missing what the user needs.
+- **Reducing UX to 'how the screen looks.'** The screen is the UI. UX covers the whole journey — from first hearing about a product through using it and beyond — including branding, usability, function, and support. The Interaction Design Foundation describes UX design as involving the entire process of acquiring and integrating the product.
+- **Believing UX and UI never overlap in real jobs.** They overlap constantly. Job postings for a single 'UX/UI designer' are common, and small teams often have one person doing both. The distinction is about which kind of work a task is — researching and structuring versus crafting the surface — not about job titles being locked.
+
+## Compare / Contrast
+
+- **User experience (UX) vs. User interface (UI)** — UX is the overall experience a person has with a product — the whole journey, including what happens before and after each use. UI is the visual and interactive surface — the screens, buttons, and menus. UI is part of the larger UX: the surface is what delivers the experience.
+- **UX designer vs. UI designer** — A UX designer researches users and structures the experience — the flow, the steps, the information needed at each point. A UI designer crafts the visuals — colors, typography, spacing, controls. Both work on the same product; one decides what should happen, the other how it should look and respond.
+- **Usability vs. User experience (UX)** — Usability is how easily and effectively people accomplish their goals with a product — one part of the larger UX umbrella, as U.S. Digital.gov guidance puts it. UX encompasses the entire experience, including parts usability never measures, such as whether the product is worth wanting in the first place.
+
+## Key Takeaway
+
+UX is the overall experience a person has with a product; UI is the visual and interactive surface that delivers it. They are distinct but overlapping halves of one design effort, and a great product needs both to work together.
+
+## Practice Question Bank
+
+**Q1.** Which statement best captures the working definition of user experience (UX) used in this lesson?
+
+- A. The overall experience a person has with a product, encompassing all aspects of the end-user's interaction with the company, its services, and its products.
+- B. The collection of screens, buttons, menus, and controls a person sees and clicks.
+- C. A test that measures how fast a finished product loads on different devices.
+- D. The set of laws and guidelines that govern how websites are built.
+
+**Key: A.** Don Norman and Jakob Nielsen of Nielsen Norman Group define user experience as encompassing all aspects of the end-user's interaction with the company, its services, and its products. Screens and controls are the UI, load-speed tests are performance testing, and laws are not part of the definition.
+
+**Q2.** Which statement best describes user interface (UI) design as the Interaction Design Foundation defines it?
+
+- A. The process of researching what people need before a product exists.
+- B. The overall experience a person has with a company and its products.
+- C. The process designers use to build interfaces in software or computerized devices, focusing on looks or style.
+- D. The process of writing the instructions that make a product work.
+
+**Key: C.** The Interaction Design Foundation defines user interface (UI) design as the process designers use to build interfaces in software or computerized devices, focusing on looks or style, aiming for interfaces users find easy to use and pleasurable. Research is part of UX work, and writing instructions is programming, not UI design.
+
+**Q3.** A ferry-booking app has polished, beautiful screens, but travelers who want a return trip must start over from the beginning, and many abandon the app before paying. Which statement best applies this lesson's ideas?
+
+- A. The product is fine, because the screens look great and design is about appearance.
+- B. The UI is strong, but the UX is poor, and great UI cannot save a frustrating experience.
+- C. The UX is strong, because the app looks modern and well-crafted.
+- D. Neither UX nor UI matters, since travelers will adapt to any app.
+
+**Key: B.** The screens are the UI and they succeed; the flow — the experience of booking a return trip — is the UX and it fails. Nielsen Norman Group's movie-review example makes the same point: a perfect interface cannot fix an experience that fails the user's need. The other options mislabel the halves or dismiss design entirely.
+
+**Q4.** A design team splits the work on a new grocery-delivery app. One designer interviews customers and maps the steps from opening the app to checkout; another chooses colors, typography, and button styles for each screen. Which statement best describes this arrangement?
+
+- A. Both designers are doing UI work, because both work on screens.
+- B. Both designers are doing UX work, because both work on the same product.
+- C. The first is doing UI work and the second is doing UX work.
+- D. The first is doing UX work — researching and structuring the experience — and the second is doing UI work — crafting the visual and interactive surface.
+
+**Key: D.** UX designers research users and structure the experience, while UI designers craft the visuals and the interactive surface, as the Interaction Design Foundation's definitions of the two disciplines indicate. The other options reverse the roles or collapse the distinction entirely.
+
+**Q5.** A small start-up hires one designer whose job posting says 'UX/UI designer.' A reviewer argues this proves UX and UI are the same thing. Which statement best evaluates that argument?
+
+- A. It overreaches: UX and UI are separate but overlapping disciplines, and small teams often combine both in one role — but the distinction still matters for deciding what kind of work a task is.
+- B. It is correct, because no real company keeps the two separate.
+- C. It is wrong, because UX and UI never overlap in any job, title, or team.
+- D. It proves that UX is just another name for visual design.
+
+**Key: A.** The Interaction Design Foundation notes that while UX and UI overlap, they are separate disciplines, and combined titles like 'UX/UI designer' are common precisely because small teams often do both. The distinction is about kinds of work, not locked job titles, so the other options overstate or erase it.
+
+## Sources
+
+- Nielsen Norman Group — Don Norman and Jakob Nielsen, "The Definition of User Experience (UX)" (August 8, 1998). https://www.nngroup.com/articles/definition-user-experience/
+- Interaction Design Foundation — "What is User Interface (UI) Design?". https://www.interaction-design.org/literature/topics/ui-design
+- Interaction Design Foundation — "What is User Experience (UX) Design?". https://www.interaction-design.org/literature/topics/ux-design
+- Digital.gov (U.S. General Services Administration) — "Usability". https://digital.gov/topics/usability/
+
+## Related Topics
+
+- Human-Centered Design (ux-ui-design:foundations:human-centered-design)
+- User Research (ux-ui-design:foundations:user-research)
+- User Journeys (ux-ui-design:foundations:user-journeys)
+- Visual Hierarchy (ux-ui-design:foundations:visual-hierarchy)
+- Interaction Design (ux-ui-design:foundations:interaction-design)
+
+## Editorial Metadata
+
+- Topic ID: ux-ui-design:foundations:ux-versus-ui
+- Editorial status: READY_TO_PUBLISH
+- Research status: source-verified
+- Researched: 2026-08-21
+- Rights: reference-only sources; no source prose adapted
