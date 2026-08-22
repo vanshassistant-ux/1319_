@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "subjectSlug": "marketing",
+  "accepted": [
+    { "match": "\"value\" defined differently in what-marketing-is and customer-needs (overlap 17%)", "reason": "what-marketing-is uses value in the AMA definition sense (offerings with value); customer-needs frames value as need-satisfaction. Compatible depth difference." },
+    { "match": "\"price\" defined differently in what-marketing-is/marketing-mix and price (overlap 9-14%)", "reason": "the price lesson owns the full definition; the 4 Ps lessons name price in one line. Compatible depth difference." },
+    { "match": "\"promotion\" defined differently in what-marketing-is/marketing-mix and promotion (overlap 11%)", "reason": "the promotion lesson owns the full definition; the 4 Ps lessons name it in one line. Compatible." },
+    { "match": "\"target market\" defined differently in market-segmentation and marketing-mix (overlap 13%)", "reason": "market-segmentation owns targeting; marketing-mix references the target in the mix-tuning sense. Compatible." },
+    { "match": "\"public relations\" defined differently in promotion and public-relations (overlap 23%)", "reason": "public-relations owns the full PRSA definition; promotion lists PR as one mix element. Compatible depth difference." },
+    { "match": "\"paid media\" defined differently in advertising and public-relations (overlap 11%)", "reason": "advertising defines paid media as its own nature; public-relations contrasts earned vs paid. Compatible." }
+  ],
+  "notes": [
+    "24-topic subject: 26 audit findings initially, 18 fixed orchestrator-side (3 SRCDUP consolidations: ama-definition-of-marketing/ama-marketing-definition, cfi-market-segmentation/cfi-market-segmentation-and-targeting, openstax-principles-marketing/openstax-principles-marketing-9-5 — registry 1039 → 1036; 5 MD headings added; 2 GRAM '.com Disclosures' space-before-punctuation false positives reworded; 8 REUSE reworded with per-lesson distinct phrasings). Final: 8 compatible TERM.",
+    "REUSE families: AMA marketing definition quoted in what-marketing-is (owner) AND customer-needs (paraphrased after fix); the 4 Ps one-liners shared between what-marketing-is and marketing-mix; 'the working definition this lesson uses comes from' across branding/promotion; Investopedia paid-media sentence in advertising/digital-advertising. The audit reads the BUILT public/content/phase-2/lessons.json — rebuild after JSON fixes or fixed text re-flags as stale (third occurrence of this trap).",
+    "One quickCheck omission caught orchestrator-side at merge verification (social-media-marketing record lacked quickCheck) — added verbatim from questionBank[:3]; the gate itself does not check quickCheck.",
+    "Retry pattern 2x in this subject (promotion: review JSON complete but evidence JSON failed on Python 'true' vs True NameError + md missing; digital-advertising: review JSON at 949 words over the 900 band + evidence/md missing). Both resumed with embedded verified source sets, passed first-run (api_calls 12-22).",
+    "Digital advertising trimmed 949 → 892 words; email-marketing college version 932 words accepted (gate band is ≥600 floor; hard cap 2100).",
+    "No hype, no unverifiable industry stats, no manipulation content; FTC truth-in-advertising/CAN-SPAM/endorsement lines factual; AMA/OpenStax/PRSA definitions attributed; original fictional examples throughout (Meadow Bakery, Harbor Books, Riverside Cycles, Gable Street Roasters, Bluebird Bakery).",
+    "Global progress: **1029/1299 (79.2%), 35/44 subjects.**"
+  ]
+}

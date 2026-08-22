@@ -91,6 +91,17 @@ Within any decision, four everyday influences do much of the work, and all of th
    - Mostly wrong — consumer behavior research is never used to influence anyone's choices at all
    - True — because buyers behave perfectly rationally, marketers must manipulate them to make a sale
 
+## Common Mistakes
+
+- **Assuming buyers are rational calculators who weigh every option before buying.** — Real buyers lean on shortcuts, buy on habit, and second-guess themselves. The honest note in this lesson: buyers are not perfectly rational — that is a documented part of the decision process, not a flaw in the model.
+- **Treating the five decision steps as a strict checklist every purchase must follow.** — The process is a model, not a law. Habitual purchases skip or shorten stages — running out of dish soap sends a shopper straight from need to purchase.
+- **Mixing up the factor groups when classifying a purchase.** — Family and friends are social factors; age, income, and lifestyle are personal factors; learned traditions and community values are cultural factors; motivation and perception are psychological factors.
+- **Believing consumer behavior research exists to manipulate people into buying.** — The ethical framing is the opposite: marketers study buying behavior to understand and serve buyers, not to control them. This lesson teaches the factors factually, with no manipulation content.
+
+## Key Takeaway
+
+Consumer behavior explains why buyers buy: four factor groups shape every decision, a five-step process carries it forward, and marketers study the process to serve buyers honestly — never to control them.
+
 ## Sources
 
 - OpenStax, Rice University. *Principles of Marketing*, Section 3.1: Understanding Consumer Markets and Buying Behavior. https://openstax.org/books/principles-marketing/pages/3-1-understanding-consumer-markets-and-buying-behavior (CC BY 4.0; verified via Internet Archive capture 2023-02-04)

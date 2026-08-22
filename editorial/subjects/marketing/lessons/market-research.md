@@ -85,6 +85,17 @@ The flashlight analogy has limits. A room stays still while you shine a light in
    - The chain collected the data itself, so the findings cannot be objective
    - The report comes from existing sources and may not be specific to the chain's local audience
 
+## Common Mistakes
+
+- Skipping the question and collecting data because it is easy — you end up with a spreadsheet full of answers to a question nobody asked.
+- Treating a handful of friends as the market — five enthusiastic roommates are not the same as the five hundred strangers you hope to serve.
+- Taking stated answers at face value — people often say what sounds good, so pair asking with watching what people actually do.
+- Expecting research to make the decision — data informs and illuminates, but the judgment call stays with the human who has to live with the outcome.
+
+## Key Takeaway
+
+Research is a flashlight, not a crystal ball: it will not hand you the future, but it lights the next step — ask a clear question, gather new and existing information, analyze it honestly, then decide with your eyes open.
+
 ## Sources
 
 - American Marketing Association. *Definitions of Marketing — Definition of Marketing Research (Approved 2017)*. https://www.ama.org/the-definition-of-marketing-what-is-marketing/

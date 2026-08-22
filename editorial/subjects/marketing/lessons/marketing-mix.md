@@ -25,7 +25,7 @@ The marketing mix has a standard textbook definition: the set of marketing tools
 
 The four Ps, one line each
 
-Product is what the firm offers — a good, a service, or an idea; Bluebird Bakery's sourdough loaf is a product. Price is what the customer gives in exchange, usually money; the bakery's $4.50 price tag is a price decision. Place is how the offering reaches the customer — a shop, a website, a delivery route; the bakery sells at its storefront and a farmers' market stall. Promotion is how the firm informs and influences people — advertising, public relations, social media, word of mouth; the bakery's weekly baking video is promotion. Each P has its own full lesson in this curriculum; here the point is that they exist as a set. OpenStax puts it plainly: the heart of the mix is the good, service, or idea, but the product alone is not the mix.
+Product is what the firm offers — a good, a service, or an idea; Bluebird Bakery's sourdough loaf is a product. Price is what the customer hands over in exchange, usually money; the bakery's $4.50 price tag is a price decision. Place is how the offering gets to the customer — a shop, a website, a delivery route; the bakery sells at its storefront and a farmers' market stall. Promotion is how the firm informs and influences people — advertising, public relations, social media, word of mouth; the bakery's weekly baking video is promotion. Each P has its own full lesson in this curriculum; here the point is that they exist as a set. OpenStax puts it plainly: the heart of the mix is the good, service, or idea, but the product alone is not the mix.
 
 The blend: only as good as the weakest element
 

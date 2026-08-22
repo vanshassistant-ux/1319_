@@ -27,7 +27,8 @@ Read this file first on every new run, then run `node scripts/editorial-progress
 - **Accounting is COMPLETE** — 28/28 topics accepted at `source-verified`, `READY_TO_PUBLISH`, `public: false`; subject audit 0 issues; report: `editorial/reports/subjects/accounting.md`. Completed 2026-08-21.
 - **Finance is COMPLETE** — 25/25 topics accepted at `source-verified`, `READY_TO_PUBLISH`, `public: false`; subject audit 0 issues; report: `editorial/reports/subjects/finance.md`. Completed 2026-08-21.
 - **Personal-finance is COMPLETE** — 32/32 topics accepted at `source-verified`, `READY_TO_PUBLISH`, `public: false`; subject audit 0 issues; report: `editorial/reports/subjects/personal-finance.md`. Completed 2026-08-22.
-- **Next: `marketing` (phase 2, 24 topics)** — then management-and-leadership (23), then Stage C (8 subjects, 247 topics).
+- **Marketing is COMPLETE** — 24/24 topics accepted at `source-verified`, `READY_TO_PUBLISH`, `public: false`; subject audit 0 issues; report: `editorial/reports/subjects/marketing.md`. Completed 2026-08-22.
+- **Next: `management-and-leadership` (phase 2, 23 topics) — the last Stage B subject** — then Stage C (8 subjects, 247 topics).
 - Phase 1 is complete, including Python Programming.
 - **Web Development is COMPLETE** — 47/47 topics accepted at `source-verified`, `READY_TO_PUBLISH`, and `public: false`; subject audit returned 0 issues; report: `editorial/reports/subjects/web-development.md`.
 - The Web Development queue was completed on 2026-08-20. Its audited exceptions are documented in `editorial/subjects/web-development/audit-exceptions.json`.

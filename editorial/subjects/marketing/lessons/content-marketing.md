@@ -25,7 +25,7 @@ The Content Marketing Institute (CMI), the industry association that tracks this
 
 ### Content marketing versus advertising
 
-The cleanest way to hold the difference: advertising buys attention; content marketing earns it. Advertising pays for space or time — a billboard, a television spot, a sponsored post — to put a promotional message in front of people, many of whom would rather skip it. CMI describes the habits that content marketing was built to work around: viewers skipping television ads with their DVRs, readers ignoring magazine ads, web users tuning out banner ads. Content marketing runs on the opposite assumption: instead of interrupting, give people something useful enough that they choose to spend time with it, and let the brand's name travel with the value. That is why CMI calls the practice non-interruption marketing. Advertising is a separate topic in this curriculum; this lesson only draws the line between the two.
+The cleanest way to hold the difference: advertising buys attention; content marketing earns it. Advertising pays for space or time — a billboard, a television spot, a sponsored post — to put a promotional message in front of people, many of whom would rather skip it. CMI describes the habits that content marketing was built to work around: viewers skipping television ads with their DVRs, readers ignoring magazine ads, web users tuning out banner ads. Content marketing runs on the opposite assumption: instead of interrupting, give people something useful enough that they choose to spend time with it, and let the brand's name travel with the value. That is why CMI calls the practice non-interruption marketing. Advertising is a separate topic in this curriculum; this lesson only draws that line.
 
 ### The formats
 

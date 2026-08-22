@@ -133,6 +133,14 @@ Positioning is choosing the place your offering will own in customers' minds —
 
 *Repositioning is deliberately changing the place an offering holds in customers' minds when the market or the customers change. The bookstore is moving to a new position, not re-segmenting the market or comparing itself head-to-head.*
 
+## Related Topics
+
+- marketing:foundations:market-segmentation
+- marketing:foundations:what-marketing-is
+- marketing:foundations:customer-needs
+- marketing:foundations:branding
+- marketing:foundations:marketing-mix
+
 ## Sources
 
 - OpenStax, Rice University — Principles of Marketing, Section 5.6: Product Positioning — https://openstax.org/books/principles-marketing/pages/5-6-product-positioning

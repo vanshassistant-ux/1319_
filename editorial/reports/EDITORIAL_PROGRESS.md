@@ -1,32 +1,32 @@
 # ELIEXPLAINS GLOBAL EDITORIAL PROGRESS
 
-Generated: 2026-08-22T04:08:53.659Z
+Generated: 2026-08-22T04:52:29.600Z
 Counts are computed from the phase content stores by `bun run editorial:progress`.
 
 Subjects total: 44
-Subjects processed: 34
-Subjects remaining: 10
-Subject completion: 77.27%
+Subjects processed: 35
+Subjects remaining: 9
+Subject completion: 79.55%
 
 Total topics: 1299
-Topics processed: 1005
+Topics processed: 1029
 Topics published: 282
-Topics ready to publish: 723
+Topics ready to publish: 747
 Topics held: 0
 Topics requiring review: 0
-Topics remaining: 294
-Topic processing: 77.37%
+Topics remaining: 270
+Topic processing: 79.21%
 
-Verified questions: 5025
-Unique source records: 4582
-Source usage classes: REFERENCE_ONLY=3686, PUBLIC_DOMAIN=566, ATTRIBUTION_REQUIRED=207, EXTRACT_AND_ADAPT=121, LINK_ONLY=2
+Verified questions: 5145
+Unique source records: 4660
+Source usage classes: REFERENCE_ONLY=3738, PUBLIC_DOMAIN=567, ATTRIBUTION_REQUIRED=208, EXTRACT_AND_ADAPT=145, LINK_ONLY=2
 
 ## Phase progress
 
 | Phase | Subjects | Topics | Percent |
 | --- | --- | --- | --- |
 | 1 | 11 / 11 | 282 / 282 | 100.00% |
-| 2 | 9 / 11 | 278 / 325 | 85.54% |
+| 2 | 10 / 11 | 302 / 325 | 92.92% |
 | 3 | 11 / 11 | 329 / 329 | 100.00% |
 | 4 | 3 / 11 | 116 / 363 | 31.96% |
 
@@ -36,7 +36,7 @@ Source usage classes: REFERENCE_ONLY=3686, PUBLIC_DOMAIN=566, ATTRIBUTION_REQUIR
 | --- | --- | --- | --- |
 | Professional Studies | 7 / 7 | 166 / 166 | 100.00% |
 | Technology | 8 / 8 | 257 / 257 | 100.00% |
-| Business & Money | 7 / 9 | 193 / 240 | 80.42% |
+| Business & Money | 8 / 9 | 217 / 240 | 90.42% |
 | Humanities & Culture | 7 / 7 | 197 / 197 | 100.00% |
 | Science & Health | 1 / 6 | 48 / 206 | 23.30% |
 | Society & Government | 4 / 7 | 144 / 233 | 61.80% |
@@ -70,6 +70,7 @@ Source usage classes: REFERENCE_ONLY=3686, PUBLIC_DOMAIN=566, ATTRIBUTION_REQUIR
 | human-geography | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
 | introduction-to-business | 24 / 24 | 0 | 24 | 0 | 0 | 0 |
 | languages-and-esl | 26 / 26 | 0 | 26 | 0 | 0 | 0 |
+| marketing | 24 / 24 | 0 | 24 | 0 | 0 | 0 |
 | music-appreciation | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
 | personal-finance | 32 / 32 | 0 | 32 | 0 | 0 | 0 |
 | philosophy-and-ethics | 28 / 28 | 0 | 28 | 0 | 0 | 0 |

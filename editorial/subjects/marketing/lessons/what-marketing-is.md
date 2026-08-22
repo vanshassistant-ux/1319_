@@ -133,7 +133,7 @@ There is a temptation to read marketing as getting people to buy things they do 
 
 ## Sources
 
-- ama-marketing-definition
+- ama-definition-of-marketing
 - openstax-principles-marketing-1-1
 - openstax-intro-business-11-1-the-marketing-concept
 - openstax-intro-business-11-3-developing-a-marketing-mix
