@@ -91,42 +91,42 @@ Psychology is the scientific study of the mind and behavior: it names inner expe
 ## Practice Question Bank
 
 **psychology:foundations:what-psychology-studies:1** According to the APA working definition used in this lesson, psychology is the scientific study of —
-- A) the mind and behavior ✅
-- B) the brain and nervous system
-- C) mental illness and its treatments
-- D) society, culture, and institutions
+- A. the mind and behavior ✅
+- B. the brain and nervous system
+- C. mental illness and its treatments
+- D. society, culture, and institutions
   - *Answer:* A. *Explanation:* The APA working definition is that psychology is the scientific study of the mind and behavior. The brain and nervous system are the focus of biological psychology; mental illness is the focus of clinical psychology; society and culture belong to other social sciences.
   - *Difficulty:* recall | *Skill:* recalling the APA working definition of psychology
 
 **psychology:foundations:what-psychology-studies:2** Which scenario illustrates the difference between the mind and behavior?
-- A) Diego checks his phone four times during a lecture; his friend counts the glances.
-- B) Amara notices her racing thoughts and tight chest while waiting for results, and her roommate watches her pace the hallway. ✅
-- C) Fatima replays an argument in her head and feels embarrassed about what she said.
-- D) Omar reads an article about memory and summarizes it for his study group.
+- A. Diego checks his phone four times during a lecture; his friend counts the glances.
+- B. Amara notices her racing thoughts and tight chest while waiting for results, and her roommate watches her pace the hallway. ✅
+- C. Fatima replays an argument in her head and feels embarrassed about what she said.
+- D. Omar reads an article about memory and summarizes it for his study group.
   - *Answer:* B. *Explanation:* Amara’s scenario includes both sides of the subject: racing thoughts and a tight chest are inner experience (mind), while pacing is observable action (behavior). Diego’s and Omar’s scenarios describe only observable actions, and Fatima’s describes only inner experience.
   - *Difficulty:* understanding | *Skill:* applying the mind–behavior distinction to a scenario
 
 **psychology:foundations:what-psychology-studies:3** A researcher measures how quickly 5-year-olds and 9-year-olds sort cards by shape, to see how mental abilities change with age. Which subfield’s territory does this work belong to?
-- A) social psychology
-- B) biological psychology
-- C) developmental psychology ✅
-- D) clinical psychology
+- A. social psychology
+- B. biological psychology
+- C. developmental psychology ✅
+- D. clinical psychology
   - *Answer:* C. *Explanation:* Studying how abilities change with age is the territory of developmental psychology, the scientific study of development across the lifespan. Social psychology studies how people relate to others; biological psychology studies how biology shapes behavior; clinical psychology focuses on psychological disorders and problematic patterns of behavior.
   - *Difficulty:* application | *Skill:* assigning an original research scenario to the correct subfield
 
 **psychology:foundations:what-psychology-studies:4** Which psychologist is doing applied practice rather than research or teaching?
-- A) a psychologist who designs a survey on sleep habits and analyzes the responses
-- B) a psychologist who lectures on learning and grades exams
-- C) a psychologist who supervises students collecting data in a lab
-- D) a psychologist who runs a workplace program helping employees manage stress ✅
+- A. a psychologist who designs a survey on sleep habits and analyzes the responses
+- B. a psychologist who lectures on learning and grades exams
+- C. a psychologist who supervises students collecting data in a lab
+- D. a psychologist who runs a workplace program helping employees manage stress ✅
   - *Answer:* D. *Explanation:* Running a workplace stress program puts psychological knowledge to work with real people — that is applied practice. Designing and analyzing a survey is research; lecturing and grading is teaching; supervising student data collection is research work too.
   - *Difficulty:* application | *Skill:* distinguishing research, teaching, and applied practice
 
 **psychology:foundations:what-psychology-studies:5** A viral post claims that people who drink coffee in the morning are more productive. Treating this as a scientific claim, a psychologist’s first step would be to —
-- A) accept it, because it matches many people’s everyday experience
-- B) turn it into a testable question with measurable definitions of coffee use and productivity ✅
-- C) ask the post’s commenters whether they agree with it
-- D) declare it false, because no study has been published about it
+- A. accept it, because it matches many people’s everyday experience
+- B. turn it into a testable question with measurable definitions of coffee use and productivity ✅
+- C. ask the post’s commenters whether they agree with it
+- D. declare it false, because no study has been published about it
   - *Answer:* B. *Explanation:* Science begins by making a claim testable: defining what counts as coffee use and productivity so observations can support or weaken it. Personal experience is intuition, not evidence; commenters are a biased sample; and the absence of a published study shows a claim is untested, not that it is false.
   - *Difficulty:* analysis | *Skill:* analyzing how a popular claim becomes a scientific one
 

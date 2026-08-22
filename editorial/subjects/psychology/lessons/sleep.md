@@ -88,7 +88,7 @@ Sleep is the mind's nightly maintenance: a natural, reversible state of reduced 
    - C. Full awareness of the surroundings, with the eyes simply closed
    - D. Uncontrolled muscle movement, and brain waves identical to waking at all times
 
-   **Answer: A.** The APA Dictionary of Psychology describes sleep as a circadian state marked by relative insensitivity to stimulation and distinguishes normal sleep from loss of consciousness, and reversibility — sleepers can be awakened — is part of what makes sleep sleep. Complete unresponsiveness with no brain activity matches nothing sleep-like, full awareness contradicts reduced responsiveness, and brain waves are not identical across the night: they change with every stage.
+   **Answer: A.** The APA Dictionary of Psychology describes sleep as a circadian state marked by relative insensitivity to stimulation and distinguishes normal sleep from loss of consciousness, and reversibility — sleepers can be awakened — is part of what makes sleep what it is. Complete unresponsiveness with no brain activity matches nothing sleep-like, full awareness contradicts reduced responsiveness, and brain waves are not identical across the night: they change with every stage.
 
 2. **In a sleep lab, a volunteer's eyes dart rapidly beneath closed lids while her brain waves look much like those of wakefulness. Which phase is she in?**
    - A. Stage 1 NREM, the brief transitional phase of drifting off

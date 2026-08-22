@@ -21,7 +21,7 @@ Your sense of who you are is built from what you remember. The story of your lif
 
 ### What memory is
 
-Memory is the ability to store and retrieve information over time. That working definition comes from two authoritative sources. The APA Dictionary of Psychology defines memory as the ability to retain information or a representation of past experience across some interval of time, based on encoding, retention, and retrieval. OpenStax Psychology 2e describes it as the set of processes used to encode, store, and retrieve information over different periods of time. Both sources agree: memory is not one thing but a set of processes that carry information in, hold it, and bring it back. The Noba Project's memory module puts it in everyday terms: memory is in some ways like file drawers where you store mental information, and also a series of processes that decide how it gets filed and how it gets found again. That is why this lesson calls memory the mind's filing system.
+Memory is the ability to store and retrieve information over time. That working definition comes from two authoritative sources. The APA Dictionary of Psychology defines memory as the ability to retain information or a representation of past experience across some interval of time, based on encoding, retention, and retrieval. OpenStax Psychology 2e describes it as the set of processes used to encode, store, and retrieve information over different periods of time. Both sources agree: memory is not one thing but a set of processes that carry information in, hold it, and bring it back. The Noba Project's memory module describes it as everyday terms: memory is in some ways like file drawers where you store mental information, and also a series of processes that decide how it gets filed and how it gets found again. That is why this lesson calls memory the mind's filing system.
 
 ### The three stages: encoding, storage, retrieval
 
@@ -29,7 +29,7 @@ Psychologists distinguish three necessary stages in the learning-and-memory proc
 
 ### The three-box model: sensory, short-term, long-term
 
-In 1968, Richard Atkinson and Richard Shiffrin proposed the model of memory that still organizes introductory psychology: information passes through three distinct stages of storage — sensory memory, short-term memory, and long-term memory. Sensory memory holds raw sensory input very briefly, in a relatively unprocessed form — sights, sounds, and tastes for up to a couple of seconds. Original example: a sparkler traced through the dark leaves a glowing trail that lingers for a fraction of a second after the sparkler has moved on — sensory memory at work. Short-term memory holds a limited amount of information for roughly 10 to 30 seconds. The closely related working memory is the version you actively use: holding a phone number in mind just long enough to dial it, and losing it the moment a friend interrupts with a question. Long-term memory is the relatively permanent store — skills and knowledge you can draw on hours, weeks, or years later. Original example: years after moving away, you can still describe the layout of your childhood kitchen. The honest note: the three boxes are a model, not a literal map of the brain. Later models, such as Baddeley and Hitch's working-memory framework, refined the original scheme. Use the boxes as thinking tools, not as anatomy.
+In 1968, Richard Atkinson and Richard Shiffrin proposed the model of memory that still organizes introductory psychology: information passes through three distinct stages of storage — sensory memory, short-term storage, and long-term memory. Sensory memory holds raw sensory input very briefly, in a relatively unprocessed form — sights, sounds, and tastes for up to a couple of seconds. Original example: a sparkler traced through the dark leaves a glowing trail that lingers for a fraction of a second after the sparkler has moved on — sensory memory at work. Short-term memory holds a limited amount of information for roughly 10 to 30 seconds. The closely related working memory is the version you actively use: holding a phone number in mind just long enough to dial it, and losing it the moment a friend interrupts with a question. Long-term memory is the relatively permanent store — skills and knowledge you can draw on hours, weeks, or years later. Original example: years after moving away, you can still describe the layout of your childhood kitchen. The honest note: the three boxes are a model, not a literal map of the brain. Later models, such as Baddeley and Hitch's working-memory framework, refined the original scheme. Use the boxes as thinking tools, not as anatomy.
 
 ### Two kinds of long-term memory: explicit and implicit
 
@@ -37,7 +37,7 @@ Long-term memory splits into two broad kinds. Explicit memory is what you can co
 
 ### Why memory matters: identity and learning
 
-Everything you know, and much of who you are, is assembled from stored and retrieved information. Your identity is largely a memory project: the episodes of your life are episodic memories, and the facts and words you think with are semantic memories. Original example: when a classmate asks how your summer went, you do not relive the summer; you retrieve a story you have stored, and that story is part of who you are. Learning depends on memory just as directly: a course is useful only to the extent that its content survives the semester. OpenStax puts it plainly: the ability to retrieve information from long-term memory is vital to everyday functioning, from brushing your teeth to driving to work.
+Everything you know, and much of who you are, is assembled from stored and retrieved information. Your identity is largely a memory project: the episodes of your life are episodic memories, and the facts and words you think with are semantic memories. Original example: when a classmate asks how your summer went, you do not relive the summer; you retrieve a story you have stored, and that story is part of who you are. Learning depends on memory just as directly: a course is useful only to the extent that its content survives the semester. OpenStax puts it plainly: retrieving information from long-term memory is essential to everyday functioning, from brushing your teeth to driving to work.
 
 ### The honest note: memory is reconstructive, not a recording
 
@@ -94,7 +94,7 @@ Memory is the ability to store and retrieve information over time — the filing
 
 ## Practice Question Bank
 
-1. **A psychology instructor asks for one accurate definition of memory. Which answer matches the way the APA Dictionary of Psychology and OpenStax Psychology 2e describe it?**
+1. **A psychology instructor asks for one precise definition of memory. Which answer matches the way the APA Dictionary of Psychology and OpenStax Psychology 2e describe it?**
    - The ability to store and retrieve information over time.
    - A single storage place in the brain where experiences are kept unchanged.
    - The act of deliberately forgetting information that is no longer useful.

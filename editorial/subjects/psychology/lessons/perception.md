@@ -88,7 +88,7 @@ Perception is the active process of organizing and interpreting sensory informat
 
 ## Practice Question Bank
 
-1. **A psychology instructor asks for one accurate definition of perception. Which answer matches the way the APA Dictionary of Psychology and OpenStax Psychology 2e describe it?**
+1. **A psychology instructor asks which definition of perception the APA Dictionary of Psychology and OpenStax Psychology 2e would both accept. Which answer is correct?**
    - A. The process of organizing and interpreting sensory information into meaningful experience.
    - B. The raw input detected by sensory receptors before any meaning is attached.
    - C. The physical structures of the eye and ear that collect light and sound.

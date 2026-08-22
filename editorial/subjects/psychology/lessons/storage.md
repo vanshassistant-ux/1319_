@@ -6,7 +6,7 @@ Storage is the process of holding encoded information over time — the middle s
 
 ## Why This Matters
 
-Storage is the middle act of every memory, and the other acts depend on it: encoding fills the warehouse, retrieval empties it. Understanding storage explains everyday puzzles — why a phone number vanishes the moment you finish dialing, why a song from childhood still plays in your head, why reviewing a week later beats cramming the night before. It matters academically because the three-store model, working memory, and consolidation are core vocabulary in psychology courses and research. It matters practically because knowing how long each store lasts tells you when to rehearse and when to rest. And it matters honestly: storage is not a vault, and remembering that keeps your confidence in your own memory honest.
+Storage is the middle act of every memory, and the other acts depend on it: encoding fills the warehouse, retrieval empties it. Understanding storage explains everyday puzzles — why a phone number vanishes the moment you finish dialing, why a song from childhood still plays in your head, why reviewing a week later beats cramming the night before. It matters academically because the three-store model, working memory, and consolidation are core terms in psychology courses and research. Practically, it matters because knowing how long each store lasts tells you when to rehearse and when to rest. And it matters honestly: storage is not a vault, and remembering that keeps your confidence in your own memory honest.
 
 ## Learning Objectives
 
@@ -25,7 +25,7 @@ Storage is the process of holding encoded information over time. It is the middl
 
 ### Three stores, one model
 
-The most famous account of storage comes from Richard Atkinson and Richard Shiffrin (1968), whose model describes three stores that information passes through: sensory memory, short-term memory, and long-term memory. Sensory memory holds raw impressions from the senses for a moment — just long enough to decide whether they matter. Original example: wave a sparkler in the dark and the glowing trail you trace lingers for a heartbeat after the spark has moved; that lingering image is sensory memory at work. Short-term memory holds a small amount of information for seconds — the number you just looked up, held in mind while you dial. Working memory, the account refined by Alan Baddeley and Graham Hitch (1974), is short-term memory with a job: it does not just hold information, it manipulates it, like keeping three numbers in mind while you add them at the checkout. Long-term memory holds information for hours, weeks, or years — the layout of your childhood home, the words of a song you have not heard in a decade. One honest note before going further: these three stores are models, not literal places. No one has found a drawer labeled long-term in the brain. Atkinson and Shiffrin's stages and Baddeley and Hitch's working memory systems are theories — useful tools for predicting and explaining behavior, not a map of brain geography.
+The most famous account of storage comes from Richard Atkinson and Richard Shiffrin (1968), whose model describes three stores that information passes through: sensory memory, short-term memory, and long-term memory. Sensory memory captures raw impressions from the senses for a moment — just long enough to decide whether they matter. Original example: wave a sparkler in the dark and the glowing trail you trace lingers for a heartbeat after the spark has moved; that lingering image is sensory memory at work. Short-term memory holds a small amount of information for seconds — the number you just looked up, held in mind while you dial. Working memory, the account refined by Alan Baddeley and Graham Hitch (1974), is short-term memory with a job: it does not just hold information, it manipulates it, like keeping three numbers in mind while you add them at the checkout. Long-term memory holds information for hours, weeks, or years — the layout of your childhood home, the words of a song you have not heard in a decade. One honest note before going further: these three stores are models, not literal places. No one has found a drawer labeled long-term in the brain. Atkinson and Shiffrin's stages and Baddeley and Hitch's working memory systems are theories — useful tools for predicting and explaining behavior, not a map of brain geography.
 
 ### Capacity and duration: how much, for how long
 
@@ -86,7 +86,7 @@ Storage is the process of holding encoded information over time — three modele
 
 ## Practice Question Bank
 
-1. **A psychology student is asked for the working definition of storage. Which answer matches how OpenStax Psychology 2e, the APA Dictionary of Psychology, and the Noba Project describe it?**
+1. **A psychology student is asked to give the working definition of storage. Which answer is correct?**
    - A. The process of holding encoded information over time, between encoding and retrieval.
    - B. The process of turning information into a form the memory system can use.
    - C. The process of pulling stored information back into awareness.

@@ -21,7 +21,7 @@ Encoding is the door into memory: if experience never gets encoded, there is not
 
 ### What encoding is
 
-Encoding is the process of turning experience into a memory trace — the first stage of the memory sequence. The APA Dictionary of Psychology defines encoding as the conversion of a sensory input into a form capable of being processed and deposited in memory, and places it first, followed by retention and then retrieval. OpenStax Psychology 2e describes encoding as the input of information into the memory system — the way information gets into memory in the first place. The Noba Project's memory module makes the same point in plainer language: encoding is how you transform a physical, sensory input into a representation that can be stored. Three authoritative sources, one working definition: before anything can be remembered, experience must be converted into a form the memory system can hold. That conversion is encoding. This lesson treats it as the door into memory: nothing gets stored or retrieved that did not first come through it.
+Encoding is the process of turning experience into a memory trace — the first stage of the memory sequence. The APA Dictionary of Psychology defines encoding as the conversion of a sensory input into a form capable of being processed and deposited in memory, and places it first, followed by retention and then retrieval. OpenStax Psychology 2e describes encoding as the input of information into the memory system — the way information gets into memory in the first place. The Noba Project's memory module makes the same observation in plainer language: encoding is how you transform a physical, sensory input into a representation that can be stored. Three authoritative sources, one working definition: before anything can be remembered, experience must be converted into a form the memory system can hold. That conversion is encoding. This lesson treats it as the door into memory: nothing gets stored or retrieved that did not first come through it.
 
 ### Three ways in: acoustic, visual, semantic
 
@@ -86,7 +86,7 @@ Encoding is the door into memory: experience must be converted into a memory tra
 
 ## Practice Question Bank
 
-1. **A psychology student is asked for the working definition of encoding. Which answer matches how the APA Dictionary of Psychology and OpenStax Psychology 2e describe it?**
+1. **A psychology student is asked for a working definition of encoding. Which answer matches how the APA Dictionary of Psychology and OpenStax Psychology 2e describe it?**
    - A. Turning experience into a form the memory system can process and hold — the first stage of memory.
    - B. Holding encoded information over time so it can be retrieved later.
    - C. Pulling stored information back into awareness when it is needed.

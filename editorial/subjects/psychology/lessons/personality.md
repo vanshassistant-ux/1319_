@@ -92,7 +92,7 @@ Two friends, Lena and Omar, ride the same bus every morning. Lena always sits in
 
 ## Key Takeaway
 
-Personality is the stable pattern of thoughts, feelings, and behaviors that makes you you — described by traits, explained from several angles, rooted in both genes and experience, and best treated as a pattern, never a label.
+Personality is the stable pattern of thoughts, feelings, and behaviors that makes you — described by traits, explained from several angles, rooted in both genes and experience, and best treated as a pattern, never a label.
 
 ## Practice Question Bank
 
