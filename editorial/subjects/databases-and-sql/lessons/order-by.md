@@ -39,7 +39,7 @@ Text and numbers sort by different rules. Text sorts alphabetically: W3Schools' 
 
 ### WHERE and ORDER BY together
 
-ORDER BY rarely works alone. A typical question filters first and sorts second: keep only the rows you care about with WHERE, then arrange them with ORDER BY. The order of the clauses in the statement is fixed. SQLite's SELECT reference describes generating results as a process in which WHERE clause processing filters the input data, with the ORDER BY clause sorting the rows that remain — so the filter runs before the sort. An original example: SELECT name, price FROM products WHERE category = 'pump' ORDER BY price; returns only pumps, listed from cheapest to most expensive. WHERE is a full topic of its own; here it is enough to place it before ORDER BY and let the sort run on the filtered rows.
+ORDER BY rarely works alone. A typical question filters first and sorts second: keep only the rows you care about with WHERE, then arrange them with ORDER BY. The order of the clauses in the statement is fixed. SQLite's SELECT reference describes generating results as a process in which WHERE clause processing filters the input data, with the ORDER BY clause sorting the rows that remain — so the filter runs before the sort. An original example: SELECT name, price FROM products WHERE category = 'pump' ORDER BY price; returns only pumps, listed from cheapest to most expensive. WHERE has its own lesson; here it is enough to place it before ORDER BY and let the sort run on the filtered rows.
 
 ### The honest framing: display order, not stored data
 
@@ -51,7 +51,7 @@ Sorting arranges the answer; it does not rearrange the table. PostgreSQL describ
 - **ascending order** — A sort direction that puts smaller values first; it is the default for ORDER BY and is written ASC.
 - **descending order** — A sort direction that puts larger values first; it is written DESC and must be requested explicitly.
 - **sort key** — A column a query sorts by; the first key listed is the primary one, and additional keys break ties.
-- **result set** — The rows and columns a SELECT query returns, arranged like a small table.
+- **result set** — The rows and columns a SELECT query returns, shaped like a small table.
 - **alphabetical order** — The order text values take when compared character by character, with A before B before C.
 - **tie-breaking** — Sorting rows that are equal on an earlier sort key by the next key in the list.
 

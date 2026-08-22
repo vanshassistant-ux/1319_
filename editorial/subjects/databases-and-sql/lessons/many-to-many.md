@@ -89,7 +89,7 @@ Many-to-many means the many runs in both directions, and that requires a bridge 
 
 ## Practice Question Bank
 
-**Q1.** Which statement best defines a many-to-many relationship?
+**Q1.** How are two tables linked in a many-to-many relationship?
 
 - A. Rows in table A can match many rows in table B, and rows in table B can match many rows in table A
 - B. Rows in table A can match many rows in table B, but each row in table B matches only one row in table A

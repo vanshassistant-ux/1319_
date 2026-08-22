@@ -28,7 +28,7 @@ Relationships exist because the things a database tracks are connected in realit
 
 ### The mechanism: keys that point across tables
 
-The mechanism of a relationship is the key. A primary key uniquely identifies each row within its own table; a foreign key in another table holds that same value, pointing back at the row it identifies. When an order row stores a customer ID, that value is the relationship between the order and the customer. Foreign keys and primary keys each have their own lessons in this unit; the point here is how they work together. The link exists whenever values in one table match key values in another, and the database can enforce that every value points at a real row.
+The mechanism of a relationship is the key. A primary key marks each row as unique inside its own table; a foreign key in another table carries that same value, pointing back at the row it identifies. When an order row stores a customer ID, that value is the relationship between the order and the customer. Foreign keys and primary keys each have their own lessons in this unit; the point here is how they work together. The link exists whenever values in one table match key values in another, and the database can enforce that every value points at a real row.
 
 ### The three cardinalities: how many rows connect
 
@@ -91,7 +91,7 @@ A relationship is a logical link between tables, carried by shared key values an
 
 ## Practice Question Bank
 
-**Q1.** Which statement best defines a relationship between two tables in a relational database?
+**Q1.** What connects two tables in a relational database?
 
 - A. A copy of one table's rows stored inside the other table
 - B. A rule that every table must share at least one column with another table

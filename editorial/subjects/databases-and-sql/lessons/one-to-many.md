@@ -25,11 +25,11 @@ A one-to-many relationship connects two tables under a single rule: one row in t
 
 ### The classic example: a customer with many orders
 
-The canonical example, found in database teaching everywhere, is a customer with many orders. Picture Golden Crust Bakery. The customers table holds one row per shopper: Imani Diallo is customer C-207, with her phone number and favorite-pastry note stored once. The orders table holds one row per purchase. On Monday Imani orders a sourdough loaf; on Friday she orders a birthday cake — two order rows, both belonging to the same customer row. The relationship is one-to-many because C-207 can match any number of orders, while each order row matches exactly one customer. Flip it around and the same relationship is called many-to-one: many orders belong to one customer. W3Schools' SQL reference draws exactly this picture with persons and orders, and PostgreSQL's manual shows orders referencing products. The roles may change, but the shape never does.
+The canonical example, found in database teaching everywhere, is a customer with many orders. Picture Golden Crust Bakery. The customers table keeps one row per shopper: Imani Diallo is customer C-207, with her phone number and favorite-pastry note stored once. The orders table holds one row per purchase. On Monday Imani orders a sourdough loaf; on Friday she orders a birthday cake — two order rows, both belonging to the same customer row. The relationship is one-to-many because C-207 can match any number of orders, while each order row matches exactly one customer. Flip it around and the same relationship is called many-to-one: many orders belong to one customer. W3Schools' SQL reference draws exactly this picture with persons and orders, and PostgreSQL's manual shows orders referencing products. The roles may change, but the shape never does.
 
 ### How it is implemented: the many side holds the foreign key
 
-Databases implement a one-to-many relationship with a single column placed on the many side. Each row on that side stores a foreign key — the primary key value of the one row it belongs to. In the bakery, every order row carries a customer ID column; order #8112 stores C-207 rather than Imani's name, phone number, and pastry preferences. To find out who placed an order, the database reads the customer ID and looks up the matching row in the customers table. W3Schools shows the same mechanism with its Persons and Orders tables: the PersonID column in the Orders table points to the PersonID column in the Persons table. PostgreSQL's documentation describes the constraint behind it — a foreign key constraint specifies that the values in a column must match the values appearing in some row of another table. The foreign key itself, and the enforcement rules around it, belong to their own topic; here the point is where the column sits: always on the many side, never on the one side.
+Databases build a one-to-many relationship with one column on the many side. Every row there stores a foreign key — the primary key value of the single row it belongs to. In the bakery, each order row holds a customer ID column; order #8112 stores C-207 rather than Imani's name, phone number, and pastry preferences. To find out who placed an order, the database reads the customer ID and looks up the matching row in the customers table. W3Schools shows the same mechanism with its Persons and Orders tables: the PersonID column in the Orders table points to the PersonID column in the Persons table. PostgreSQL's documentation describes the rule behind it: a foreign key constraint demands that a column's values match values found in some row of another table. The foreign key itself, and the enforcement rules around it, belong to their own topic; here the point is where the column sits: always on the many side, never on the one side.
 
 ### Why it is everywhere: hierarchies in the real world
 
@@ -63,7 +63,7 @@ The comparison stops short in two ways. A tree cannot refuse a nest that does no
 
 ## Worked Example
 
-Golden Crust Bakery tracks its customers in one table and its orders in another. The customers table has one row per shopper: Imani Diallo is C-207, with her phone number stored once. The orders table records every purchase, and each order row carries a customer ID column. When Imani buys a sourdough loaf on Monday, the new order row stores C-207; when she orders a birthday cake on Friday, that row stores C-207 too. On Sunday the bakery runs a report of what each customer ordered: it reads every order's customer ID, finds the matching customer row, and groups the orders under Imani's name. If a cashier typed a customer ID that matches nobody, the database refuses to save the order. One customer row, many order rows, every link stored on the order.
+Golden Crust Bakery keeps customers in one table and orders in another. The customers table holds a single row per shopper: Imani Diallo is C-207, with her phone number stored once. The orders table logs every purchase, and each order row holds a customer ID column. When Imani buys a sourdough loaf on Monday, the new order row stores C-207; when she orders a birthday cake on Friday, that row stores C-207 too. On Sunday the bakery runs a report of what each customer ordered: it reads every order's customer ID, finds the matching customer row, and groups the orders under Imani's name. If a cashier typed a customer ID that matches nobody, the database refuses to save the order. One customer row, many order rows, every link stored on the order.
 
 ## Common Mistakes
 
@@ -84,7 +84,7 @@ A one-to-many relationship means one row on one side and many rows on the other:
 
 ## Practice Question Bank
 
-**Q1.** Which statement best describes a one-to-many relationship?
+**Q1.** What does a one-to-many relationship look like?
 
 - A. One row in the first table can match many rows in the second, while each row in the second matches exactly one row in the first
 - B. Each row in the first table matches exactly one row in the second, and vice versa
@@ -93,7 +93,7 @@ A one-to-many relationship means one row on one side and many rows on the other:
 
 **Key: A.** Microsoft's documentation defines a one-to-many relationship as one in which each row in one table can match more than one row in the other, while each row in that other table matches only one row in the first. Option B describes one-to-one, C describes a full cross-match, and D describes equal row counts.
 
-**Q2.** At Golden Crust Bakery, every order row carries a customer ID. Where does that customer ID column live, and why?
+**Q2.** At Golden Crust Bakery, each order row includes a customer ID. Where does that ID column live, and why?
 
 - A. On the customers table, so each customer can keep a list of their orders
 - B. On the orders table, because orders are the many side and each one points back at its single customer

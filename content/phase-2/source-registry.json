@@ -1098,6 +1098,19 @@
     "notes": "Read as the current HTML standard reference for script elements and module-script processing. Used to corroborate the loading boundary, not to reproduce specification prose."
   },
   {
+    "id": "ibm-data-integrity",
+    "title": "What is data integrity? (IBM Data Management Guide)",
+    "provider": "IBM",
+    "url": "https://www.ibm.com/think/topics/data-integrity",
+    "sourceType": "reference",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Reputable vendor reference (Tier B/D). Read live via curl 2026-08-21. Supports the three named types: entity integrity (unique keys identify data so the same data is not listed multiple times), referential integrity (rules enforce the presence of matching records in linked tables, preventing orphaned records), and domain integrity (a domain is a specific set of values for a column, with restrictions on quantity, format, and content). REFERENCE_ONLY."
+  },
+  {
     "id": "ibm-entity-relationship-diagram",
     "title": "What is an entity relationship diagram?",
     "provider": "IBM (IBM Think)",
@@ -2527,6 +2540,19 @@
     "notes": "Read live via curl 2026-08-21. Supports: attack surfaces as all the places where an organization is vulnerable to cyberthreats; attack surface reduction as eliminating risky or unnecessary behaviors on devices and networks, reducing the opportunities attackers have to compromise an organization; hardening surfaces to prevent attacks. Facts synthesized into original prose; no wording reproduced."
   },
   {
+    "id": "microsoft-learn-clustered-nonclustered-indexes",
+    "title": "Clustered and nonclustered indexes described (Microsoft Learn)",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live on 2026-08-21 (HTTP 200). Describes the table scan (during a table scan the query optimizer reads all the rows in the table and extracts the rows that meet the criteria) versus an indexed lookup (the database searches the index key columns, finds the storage location of the rows needed, and extracts the matching rows), notes that searching the index is generally much faster than searching the table, and notes a scan can be the most efficient method when the result set is a high percentage of the table's rows. Facts synthesized; no wording reproduced."
+  },
+  {
     "id": "microsoft-learn-data-types-t-sql",
     "title": "Data types (Transact-SQL)",
     "provider": "Microsoft Learn",
@@ -2592,19 +2618,6 @@
     "notes": "Read live 2026-08-21. Supports: defining unfair behavior by its harm or impact on people; harms of allocation and of quality of service; group fairness as asking which groups are at risk of experiencing harm; computing metrics across subgroups defined by sensitive features or attributes; the note that fairness is a socio-technical challenge, that quantitative fairness metrics do not capture aspects such as justice and due process, and that many quantitative fairness metrics cannot all be satisfied simultaneously; the parity-constraint framings demographic parity, equalized odds, and equal opportunity. Facts synthesized; no page wording reproduced."
   },
   {
-    "id": "microsoft-learn-primary-foreign-key-constraints",
-    "title": "Primary and foreign key constraints (SQL Server, Microsoft Learn)",
-    "provider": "Microsoft Learn",
-    "url": "https://learn.microsoft.com/en-us/sql/relational-databases/tables/primary-and-foreign-key-constraints",
-    "sourceType": "documentation",
-    "usage": "REFERENCE_ONLY",
-    "attributionRequired": true,
-    "aiIngestionChecked": true,
-    "aiIngestionAllowed": false,
-    "checkedAt": "2026-08-21",
-    "notes": "Official documentation (Tier B) read live via curl on 2026-08-21 (HTTP 200). Supports: a table typically has a column or combination of columns that contain values that uniquely identify each row, and that column or columns is called the primary key; primary keys guarantee unique data and are frequently defined on an identity column; in a multi-column primary key, values can be duplicated within one column but each combination of values from all the key columns must be unique. Facts synthesized; no wording reproduced."
-  },
-  {
     "id": "microsoft-learn-sql-server-databases",
     "title": "Databases — SQL Server",
     "provider": "Microsoft Learn",
@@ -2618,6 +2631,19 @@
     "notes": "Read live via curl on 2026-08-21. Official product documentation (Tier B per subject source-map). Supports: a database as a collection of tables storing a specific set of structured data, with rows/records and columns/attributes — used only for the general framing that databases store structured data in organized collections; table/row/column detail belongs to sibling topics. Facts synthesized; no wording reproduced."
   },
   {
+    "id": "microsoft-learn-sql-server-index-design-guide",
+    "title": "SQL Server index design guide (Microsoft Learn)",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-index-design-guide",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live on 2026-08-21 (HTTP 200). Supplies the book-index analogy (the index at the end of a book is a sorted list of keywords with page numbers pointing to the pages where each keyword can be found; a rowstore index is similar: an ordered list of values with pointers to the data pages where the values are located), the definition of an index as an on-disk or in-memory structure associated with a table or view that speeds retrieval of rows, and the framing of index design as a balancing act between query speed, index-update cost, and storage cost. Facts synthesized; no wording reproduced."
+  },
+  {
     "id": "microsoft-learn-sql-server-tables",
     "title": "Microsoft Learn: Tables — SQL Server",
     "provider": "Microsoft",
@@ -2629,6 +2655,32 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Read live 2026-08-21. Supports: 'Each row represents a unique record, and each column represents a field in the record'; the employee-table example in which a table might contain a row for each employee with columns for employee number, name, address, and job title. Used for the one-row-per-instance rule and the unique-record framing. Facts synthesized; no wording reproduced."
+  },
+  {
+    "id": "microsoft-learn-sql-subqueries",
+    "title": "Microsoft Learn: Subqueries (SQL Server)",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/subqueries",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Tier B official documentation. Read live (HTTP 200) on 2026-08-21. Supports: 'A subquery is a query that is nested inside a SELECT, INSERT, UPDATE, or DELETE statement, or inside another subquery'; inner query / outer query terminology; 'Many Transact-SQL statements that include subqueries can alternatively be formulated as joins. Other questions can be posed only with subqueries.' Used for the definition, the parts, and the honest framing; no wording reproduced."
+  },
+  {
+    "id": "microsoft-learn-transactions-t-sql",
+    "title": "Microsoft Learn: Transactions (Transact-SQL)",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-elements/transactions-transact-sql",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Tier B official documentation per subject source-map. Read live 2026-08-21 (page text extracted from rendered HTML). Supports: a transaction is a single unit of work; if a transaction is successful, all data modifications made during it are committed and become a permanent part of the database; if it encounters errors and is rolled back, all data modifications are erased; explicit transactions start with BEGIN TRANSACTION and end with COMMIT or ROLLBACK. Facts synthesized; no wording reproduced."
   },
   {
     "id": "microsoft-learn-what-is-sql-server",
@@ -3021,6 +3073,45 @@
     "notes": "Read live via curl with a browser user-agent on 2026-08-21; the full article text rendered when fetched. Supports: text prompts as how users interact with GPT models; prompt components including instructions, primary content, few-shot examples, cues, and supporting content; the model responding with what it determines is most likely given its training data and training targets; clear instructions early in the prompt; breaking tasks into smaller steps improving performance; each model behaving differently so guidance does not apply equally to all models; and search as an affordance used to help mitigate fabricated answers. The page header carries a generic notice that some content may require authorization, but the complete article was served. Facts synthesized into original prose; no wording reproduced."
   },
   {
+    "id": "mslearn-sql-joins",
+    "title": "Joins (SQL Server) — Microsoft Learn",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/joins?view=sql-server-ver17",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl on 2026-08-21. Supports: joins retrieve data from multiple tables based on logical relationships between them and combine data from two or more tables into a single result set; joins are fundamental to relational database operations; a typical join condition specifies a foreign key from one table and its associated key in the other table; the join types include inner, left/right/full outer, and cross joins; the [INNER] JOIN notation shows the keyword is optional. Facts synthesized; no wording reproduced."
+  },
+  {
+    "id": "mslearn-sql-server-backup-overview",
+    "title": "Backup overview (SQL Server)",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/backup-overview-sql-server",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl with a browser user-agent on 2026-08-21. Supports: a backup as 'a copy of SQL Server data that can be used to restore and recover the data after a failure'; backups are created at the level of a database or its files/filegroups. Used for the one-line backup definition; technique depth is owned by the cybersecurity subject."
+  },
+  {
+    "id": "mslearn-sql-server-security-center",
+    "title": "Security for SQL Server Database Engine and Azure SQL Database",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/security-center-for-sql-server-database-engine-and-azure-sql-database",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl with a browser user-agent on 2026-08-21 (page last updated 2026-07-20). Official product documentation (Tier B per subject source-map). Supports: access control framed as authentication ('Who are you?') and authorization ('What can you do?'); permissions (grant, revoke, deny) and server- and database-level roles; encryption at rest (transparent data encryption, backup encryption) and encryption in transit (TLS/SSL connection encryption); auditing as recording access; SQL injection described as an attack in which malicious code is inserted into strings passed to the database engine for parsing and execution, with the note that all database systems carry some risk and many vulnerabilities are introduced in the application querying the database. Facts synthesized; no wording reproduced."
+  },
+  {
     "id": "mslearn-top-transact-sql",
     "title": "TOP (Transact-SQL) — SQL Server",
     "provider": "Microsoft Learn",
@@ -3125,6 +3216,19 @@
     "aiIngestionAllowed": true,
     "checkedAt": "2026-08-21",
     "notes": "Read live via curl on 2026-08-21. Supports NIST SP 800-146's definition of a client as a machine or software application that accesses a cloud over a network connection, perhaps on behalf of a consumer — generalized in the lesson to a device or program that asks for something over a network. Facts synthesized; no wording reproduced."
+  },
+  {
+    "id": "nist-csrc-glossary-data-integrity",
+    "title": "data integrity — Glossary | CSRC",
+    "provider": "National Institute of Standards and Technology (NIST)",
+    "url": "https://csrc.nist.gov/glossary/term/data_integrity",
+    "sourceType": "government",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Tier A. Read live via curl 2026-08-21. Supports the security dimension of the definition: data integrity is the property that data has not been altered in an unauthorized manner, covering data in storage, during processing, and while in transit (CNSSI 4009-2015; NIST SP 800-175B Rev. 1). Used as REFERENCE_ONLY; no prose adapted."
   },
   {
     "id": "nist-csrc-glossary-decryption",
@@ -4061,6 +4165,19 @@
     "notes": "Read live via curl 2026-08-21 (Section 12.2). Supports: the scatter plot is the most common way to display the relation between two variables; a scatter plot shows the direction of a relationship (high values with high values, or high values with low values); strength is judged by how closely the points cluster. Facts synthesized; no source wording reproduced."
   },
   {
+    "id": "oracle-data-security",
+    "title": "What Is Data Security?",
+    "provider": "Oracle",
+    "url": "https://www.oracle.com/security/database-security/what-is-database-security/",
+    "sourceType": "reference",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl with a browser user-agent on 2026-08-21 (page dated June 30, 2021). Vendor explainer. Supports: the working definition ('data security refers to the protective measures employed to secure data against unapproved access and to preserve data confidentiality, integrity, and availability'); databases as 'valuable repositories of sensitive information' and 'the primary target of data thieves'; outsiders vs insiders (current or former employees and partners who take advantage of their position of trust to steal data or make mistakes); threats named conceptually (compromising privileged credentials, SQL injection through end-user input, accessing unencrypted files on disk, stealing backup media); authentication/authorization as the foundation of data access control; encryption among preventive controls; defense-in-depth best practices spanning assessment, detective, preventive, data-specific, and user-specific controls. Facts synthesized into original prose; only the attributed definitional phrase is quoted."
+  },
+  {
     "id": "oracle-docs-sql-language-reference",
     "title": "Oracle Database SQL Language Reference (23c): Introduction to Oracle SQL",
     "provider": "Oracle",
@@ -4072,6 +4189,19 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Tier A official documentation. New id minted 2026-08-21; the canonical URL is the Introduction page, and the History of SQL section (https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/History-of-SQL.html) and the SQL Standards section (https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/SQL-Standards.html) were read live (HTTP 200). Supports: SEQUEL developed by IBM to use Codd's model, later became SQL 'still pronounced sequel'; first commercial SQL implementation in 1979 by Relational Software; 'Both ANSI and the ISO/IEC have accepted SQL as the standard language for relational databases'; 'Common Language for All Relational Databases' — all major relational database management systems support SQL so skills transfer; declarative description — to retrieve a set of rows you define a condition used to filter the rows and all rows satisfying it are retrieved in a single step, without dealing with rows one by one. Facts synthesized; no prose adapted."
+  },
+  {
+    "id": "oracle-docs-transactions",
+    "title": "Oracle Database Concepts: Introduction to Transactions",
+    "provider": "Oracle",
+    "url": "https://docs.oracle.com/en/database/oracle/oracle-database/23/cncpt/transactions.html",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Official vendor documentation. Read live 2026-08-21. Supports: a transaction is a logical, atomic unit of work that contains one or more SQL statements; a transaction ends when the user issues a COMMIT or ROLLBACK; in a commit, the user requests that the changes in the transaction be made permanent, and the changes are permanent and visible to other users only after the transaction commits. Facts synthesized; no wording reproduced."
   },
   {
     "id": "oracle-what-is-a-database",
@@ -4195,6 +4325,19 @@
     "notes": "Read directly. Supports the authentication-versus-authorization distinction, least privilege, deny by default, and per-request permission checks. No source wording reproduced."
   },
   {
+    "id": "owasp-injection-2025",
+    "title": "A05:2025 Injection — OWASP Top 10:2025",
+    "provider": "OWASP Foundation",
+    "url": "https://owasp.org/Top10/2025/A05_2025-Injection/",
+    "sourceType": "standards-body",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl with a browser user-agent on 2026-08-21. Confirms Injection is A05 in the OWASP Top 10:2025 (the landing page at /Top10/2025/ links to A05_2025-Injection). Supports: injection as an application flaw that lets untrusted user input reach an interpreter (browser, database, command line) and be executed as commands; SQL injection as one of the most well-known injection types (low frequency / high impact, more than 14k CVEs); prevention as keeping data separate from commands and queries. Used for the conceptual, defensive description only; no example attack scenarios reproduced."
+  },
+  {
     "id": "owasp-logging-cheat-sheet",
     "title": "OWASP Logging Cheat Sheet",
     "provider": "OWASP Foundation",
@@ -4292,30 +4435,17 @@
     "notes": "Tier A official documentation (PostgreSQL 18 docs, read live HTTP 200 on 2026-08-21). Supports the working definition sentence 'Aggregate functions compute a single result from a set of input values'; count(*) 'Computes the number of input rows'; count(any) 'Computes the number of input rows in which the input value is not null'; and sum/avg/min/max computed over 'non-null input values', with min/max available for numeric, string, date/time, and enum types. Facts synthesized into original prose."
   },
   {
-    "id": "postgresql-constraints",
-    "title": "PostgreSQL 18 Documentation: 5.5. Constraints",
-    "provider": "PostgreSQL",
-    "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+    "id": "postgresql-backup-restore",
+    "title": "PostgreSQL 18 Documentation: Chapter 25. Backup and Restore",
+    "provider": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/current/backup.html",
     "sourceType": "documentation",
     "usage": "REFERENCE_ONLY",
     "attributionRequired": true,
     "aiIngestionChecked": true,
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
-    "notes": "Read live 2026-08-21. Introduces constraints as a way to restrict data beyond what types allow and covers not-null and unique constraints. Supports the constraint concept at intuition level; no SQL shown in the lesson."
-  },
-  {
-    "id": "postgresql-data-types",
-    "title": "PostgreSQL 18 Documentation: Chapter 8. Data Types",
-    "provider": "PostgreSQL",
-    "url": "https://www.postgresql.org/docs/current/datatype.html",
-    "sourceType": "documentation",
-    "usage": "REFERENCE_ONLY",
-    "attributionRequired": true,
-    "aiIngestionChecked": true,
-    "aiIngestionAllowed": false,
-    "checkedAt": "2026-08-21",
-    "notes": "Read live 2026-08-21. Chapter organizes types into numeric, character, and date/time families. Supports the claim that a column's type is chosen from families such as numbers, text, and dates. Reference-level only; the data-types sibling topic owns depth."
+    "notes": "Read live via curl on 2026-08-21. Supports: 'As with everything that contains valuable data, PostgreSQL databases should be backed up regularly'; three general approaches (SQL dump, file-system-level backup, continuous archiving) each with strengths and weaknesses. Used only for the general backup concept; technique depth is owned by the cybersecurity subject."
   },
   {
     "id": "postgresql-ddl-constraints",
@@ -4357,6 +4487,19 @@
     "notes": "Tier A official documentation. Read live on 2026-08-21. Supports: DELETE deletes rows that satisfy the WHERE clause from the specified table; if the WHERE clause is absent the effect is to delete all rows, and the result is a valid but empty table; TRUNCATE provides a faster mechanism to remove all rows from a table. Facts synthesized; no wording reproduced."
   },
   {
+    "id": "postgresql-docs-subquery-expressions",
+    "title": "PostgreSQL Documentation: 9.24. Subquery Expressions",
+    "provider": "The PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/current/functions-subquery.html",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Tier A official documentation. Read live (HTTP 200) on 2026-08-21. Supports: EXISTS 'The subquery is evaluated to determine whether it returns any rows... If it returns at least one row, the result of EXISTS is true'; IN 'The right-hand side is a parenthesized subquery, which must return exactly one column'; the note that an EXISTS example 'is like an inner join'. Used for the WHERE-companions and the join contrast; no wording reproduced."
+  },
+  {
     "id": "postgresql-docs-table-expressions",
     "title": "PostgreSQL Documentation: Table Expressions (Section 7.2, including 7.2.2 The WHERE Clause)",
     "provider": "PostgreSQL",
@@ -4368,6 +4511,19 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Tier A official documentation. Read live on 2026-08-21. Supports: WHERE search_condition evaluated per row after FROM processing; rows kept when true, discarded when false or null; FROM, WHERE, GROUP BY, HAVING described as a pipeline of successive transformations producing a virtual table. Facts synthesized; no wording reproduced."
+  },
+  {
+    "id": "postgresql-docs-transactions",
+    "title": "PostgreSQL Tutorial: Transactions",
+    "provider": "PostgreSQL",
+    "url": "https://www.postgresql.org/docs/current/tutorial-transactions.html",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Tier B official documentation per subject source-map. Read live 2026-08-21. Supports: transactions bundle multiple steps into a single all-or-nothing operation; if a failure prevents completion, none of the steps affect the database; the bank-transfer example (payment between two customers' accounts, either all updates happen or none); atomic means it happens completely or not at all; updates of an open transaction are invisible to other transactions until it completes; updates are logged to permanent storage before the transaction is reported complete; BEGIN/COMMIT surround a transaction block; ROLLBACK cancels all updates so far; every SQL statement runs inside a transaction by default. Facts synthesized; no wording reproduced."
   },
   {
     "id": "postgresql-docs-truncate",
@@ -4422,6 +4578,19 @@
     "notes": "Read live 2026-08-21. Supports: tuple as 'a collection of attributes in a fixed order' that is 'often called a row' when the order is defined by the table; the glossary entry 'Record — See Tuple'. Used for the row/record/tuple synonym claim. Facts synthesized; no wording reproduced."
   },
   {
+    "id": "postgresql-indexes",
+    "title": "PostgreSQL Documentation: 11. Indexes",
+    "provider": "The PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/current/indexes.html",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Official PostgreSQL documentation, read live on 2026-08-21 (HTTP 200). Section 11.1 (Introduction): indexes are a common way to enhance database performance; an index allows the database server to find and retrieve specific rows much faster than it could without an index; indexes also add overhead to the database system as a whole, so they should be used sensibly. Facts synthesized into original prose; no wording reproduced."
+  },
+  {
     "id": "postgresql-limit-offset",
     "title": "PostgreSQL Documentation: 7.6. LIMIT and OFFSET",
     "provider": "PostgreSQL Global Development Group",
@@ -4433,6 +4602,19 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Tier B official documentation. Read live (HTTP 200) on 2026-08-21. Supports: 'LIMIT and OFFSET allow you to retrieve just a portion of the rows that are generated by the rest of the query'; the syntax SELECT select_list FROM table_expression [ ORDER BY ... ] [ LIMIT { count | ALL } ] [ OFFSET start ]; 'If a limit count is given, no more than that many rows will be returned (but possibly fewer, if the query itself yields fewer rows)'; 'OFFSET says to skip that many rows before beginning to return rows'; 'When using LIMIT, it is important to use an ORDER BY clause that constrains the result rows into a unique order. Otherwise you will get an unpredictable subset of the query's rows'; the note that SQL does not promise result order without ORDER BY, and that a large OFFSET might be inefficient. Used for the basic shape, the ORDER BY pairing, and pagination; no wording reproduced."
+  },
+  {
+    "id": "postgresql-privileges",
+    "title": "PostgreSQL 18 Documentation: 5.8. Privileges",
+    "provider": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/current/ddl-priv.html",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live via curl on 2026-08-21 (current = PostgreSQL 18 docs; the generic security.html URL returns 404, so the privileges section was read directly). Supports: database objects have owners; other roles can use an object only after privileges are granted; privilege kinds include SELECT, INSERT, UPDATE, and DELETE; group roles help manage privileges when a database has many users; GRANT and REVOKE change privileges. Used for the access-control concept only; no SQL taught."
   },
   {
     "id": "postgresql-queries-order",
@@ -4487,17 +4669,17 @@
     "notes": "Read live 2026-08-21. States that a relational table consists of rows and columns, that the number and order of columns is fixed, that each column has a name, and that the number of rows is variable. Supports the fixed-columns/variable-rows claim and the named-column claim."
   },
   {
-    "id": "postgresql-tutorial-concepts",
-    "title": "PostgreSQL Documentation: Chapter 2. The SQL Language — 2.2. Concepts",
-    "provider": "PostgreSQL Global Development Group",
-    "url": "https://www.postgresql.org/docs/current/tutorial-concepts.html",
+    "id": "postgresql-tutorial-join",
+    "title": "PostgreSQL Documentation: 2.6. Joins Between Tables",
+    "provider": "The PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/current/tutorial-join.html",
     "sourceType": "documentation",
     "usage": "REFERENCE_ONLY",
-    "attributionRequired": false,
+    "attributionRequired": true,
     "aiIngestionChecked": true,
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
-    "notes": "Read live 2026-08-21. Supports: 'Each table is a named collection of rows'; 'Each row of a given table has the same set of named columns, and each column is of a specific data type'; columns have a fixed order in each row while 'SQL does not guarantee the order of the rows within the table in any way (although they can be explicitly sorted for display)'. Used for the working definition, the row-column relationship, and the no-guaranteed-order claim. Facts synthesized; no wording reproduced."
+    "notes": "Read live via curl on 2026-08-21. Supports: queries that access multiple tables at once are called join queries; they combine rows from one table with rows from a second table, with an expression specifying which rows are to be paired; unmatched rows are ignored in the classic join; the explicit JOIN/ON syntax was introduced in SQL-92 and is preferred over the older WHERE-style join; qualifying column names with their table is recommended style. Facts synthesized; no wording reproduced."
   },
   {
     "id": "postgresql-tutorial-populate",
@@ -4669,6 +4851,19 @@
     "notes": "Official documentation. Read live on 2026-08-21. Supports: the DELETE command removes records from the table; if the WHERE clause is not present, all records in the table are deleted; if a WHERE clause is supplied, only rows for which the boolean expression is true are deleted, and rows for which it is false or NULL are retained. Facts synthesized; no wording reproduced."
   },
   {
+    "id": "sqlite-lang-expr",
+    "title": "SQLite Query Language: Expressions (Section 11, Subquery Expressions)",
+    "provider": "SQLite Consortium",
+    "url": "https://www.sqlite.org/lang_expr.html",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Tier A official documentation. Read live (HTTP 200) on 2026-08-21. Supports: 'A SELECT statement enclosed in parentheses is a subquery'; 'An uncorrelated subquery is evaluated only once and the result reused as necessary'. Used for the working definition and the inner-runs-once claim; no wording reproduced."
+  },
+  {
     "id": "sqlite-lang-insert",
     "title": "SQLite Query Language: INSERT",
     "provider": "SQLite Consortium",
@@ -4695,6 +4890,19 @@
     "notes": "Tier A official documentation. Read live (HTTP 200) on 2026-08-21. Supports: 'The SELECT statement is used to query the database'; 'The result of a SELECT is zero or more rows of data where each row has a fixed number of columns'; 'A SELECT statement does not make any changes to the database'; WHERE clause filtering and the ORDER BY clause as parts of SELECT. Used for the result-set idea, the read-only property, and naming the WHERE/ORDER BY clauses."
   },
   {
+    "id": "sqlite-lang-transaction",
+    "title": "SQLite Query Language: Transaction",
+    "provider": "SQLite",
+    "url": "https://www.sqlite.org/lang_transaction.html",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Tier B official documentation per subject source-map. Read live 2026-08-21. Supports: no reads or writes occur except within a transaction; any command that accesses the database automatically starts a transaction if none is active; COMMIT TRANSACTION and ROLLBACK TRANSACTION are the statements that end a transaction. Facts synthesized; no wording reproduced."
+  },
+  {
     "id": "sqlite-lang-update",
     "title": "SQLite Query Language: UPDATE",
     "provider": "SQLite Consortium",
@@ -4706,6 +4914,32 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Official documentation (Tier A per subject source-map). Read live on 2026-08-21. Supports: an UPDATE statement is used to modify a subset of the values stored in one or more rows of a database table; without a WHERE clause all rows in the table are modified; otherwise only rows for which the WHERE boolean expression is true; a WHERE that matches no rows affects zero rows (not an error); SET assignments list a column name to the left of the equals sign and a scalar expression to the right. Facts synthesized; no wording reproduced."
+  },
+  {
+    "id": "sqlite-query-planner",
+    "title": "SQLite: Query Planning",
+    "provider": "SQLite Consortium",
+    "url": "https://www.sqlite.org/queryplanner.html",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Official SQLite documentation, read live on 2026-08-21 (HTTP 200). Section 1.1: to satisfy a lookup without an index, SQLite reads every row out of the table and checks the column value, an algorithm called a full table scan. Section 1.3: an index is a separate structure that stores the indexed content in order, which the database engine can search directly to find matching rows. Facts synthesized; no wording reproduced."
+  },
+  {
+    "id": "sqlite-transactional",
+    "title": "SQLite: SQLite Is Transactional",
+    "provider": "SQLite",
+    "url": "https://www.sqlite.org/transactional.html",
+    "sourceType": "documentation",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Tier B official documentation per subject source-map. Read live 2026-08-21. Supports: a transactional database is one in which all changes and queries appear to be Atomic, Consistent, Isolated, and Durable (ACID); SQLite implements serializable transactions that stay atomic, consistent, isolated, and durable even if interrupted by a program crash, an operating system crash, or a power failure. Facts synthesized; no wording reproduced."
   },
   {
     "id": "techtarget-nist-csf-definition",
@@ -5059,6 +5293,19 @@
     "notes": "Tier B reference tutorial per subject source-map. Read live on 2026-08-21. Supports: AND displays a record only when all conditions are TRUE; OR displays a record when any condition is TRUE; syntax for combining conditions inside WHERE. Facts synthesized; no wording reproduced."
   },
   {
+    "id": "w3schools-sql-check",
+    "title": "SQL CHECK Constraint",
+    "provider": "W3Schools",
+    "url": "https://www.w3schools.com/sql/sql_check.asp",
+    "sourceType": "reference",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Tier B. Read live via curl 2026-08-21. Supports: the CHECK constraint ensures values in a column satisfy a specific condition; when the data evaluates to FALSE the entire INSERT or UPDATE is aborted and an error is raised. REFERENCE_ONLY."
+  },
+  {
     "id": "w3schools-sql-count-avg-sum",
     "title": "SQL COUNT(), AVG() and SUM() Functions",
     "provider": "W3Schools",
@@ -5070,6 +5317,19 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Tier B. Read live (HTTP 200) on 2026-08-21. Supports: 'The COUNT() function returns the number of rows that matches a specified criterion'; 'The AVG() function returns the average value of a numeric column'; 'The SUM() function returns the total sum of a numeric column'; and the syntax shape SELECT COUNT(column_name) FROM table_name WHERE condition, used for the filter-first aggregates + WHERE combined shape. No wording reproduced."
+  },
+  {
+    "id": "w3schools-sql-create-index",
+    "title": "SQL CREATE INDEX Statement (W3Schools SQL Tutorial)",
+    "provider": "W3Schools",
+    "url": "https://www.w3schools.com/sql/sql_create_index.asp",
+    "sourceType": "reference",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Read live on 2026-08-21 (HTTP 200). States the CREATE INDEX statement is used to create indexes on tables to speed up data retrieval; users cannot see the indexes, which exist only to speed up searches; updating tables with indexes is more time-consuming than updating tables without them because the indexes must also be updated; only create indexes on columns that are frequently searched against. Facts synthesized; no wording reproduced."
   },
   {
     "id": "w3schools-sql-data-types",
@@ -5111,6 +5371,19 @@
     "notes": "Tier B reference tutorial per subject source-map. Read live on 2026-08-21. Supports: DROP TABLE permanently deletes an existing table in a database, deleting the entire table and all its content; TRUNCATE TABLE deletes all the records in a table but keeps the table structure, columns, and constraints; contrast with DELETE for the lesson's DELETE vs TRUNCATE vs DROP section. Facts synthesized; no wording reproduced."
   },
   {
+    "id": "w3schools-sql-exists",
+    "title": "SQL EXISTS Operator",
+    "provider": "W3Schools",
+    "url": "https://www.w3schools.com/sql/sql_exists.asp",
+    "sourceType": "reference",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Tier B. Read live (HTTP 200) on 2026-08-21. Supports: 'The EXISTS operator is used in a WHERE clause to check whether a subquery returns any rows.' Used to name EXISTS as a WHERE-companion for subqueries; no wording reproduced."
+  },
+  {
     "id": "w3schools-sql-foreign-key",
     "title": "SQL FOREIGN KEY Constraint",
     "provider": "W3Schools",
@@ -5135,6 +5408,19 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Tier B reference tutorial per subject source-map. Read live via curl (HTTP 200) on 2026-08-21. Supports: the working definition that GROUP BY groups rows that have the same values into summary rows (example: find the number of customers in each country); that GROUP BY is almost always used in conjunction with aggregate functions such as COUNT, MAX, MIN, SUM, and AVG to perform calculations on each group; the combined syntax with WHERE before GROUP BY and ORDER BY last. Facts synthesized into original prose; no wording reproduced."
+  },
+  {
+    "id": "w3schools-sql-in",
+    "title": "SQL IN Operator",
+    "provider": "W3Schools",
+    "url": "https://www.w3schools.com/sql/sql_in.asp",
+    "sourceType": "reference",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Tier B. Read live (HTTP 200) on 2026-08-21. Supports: 'You can also use IN with a subquery in the WHERE clause. With a subquery you can return all records from the main query that are present in the result of the subquery.' Used for the WHERE-placement mechanism; no wording reproduced."
   },
   {
     "id": "w3schools-sql-insert",
@@ -5163,17 +5449,17 @@
     "notes": "Tier B. Read live via curl (HTTP 200) on 2026-08-21. Supports: 'SQL is a standard language for accessing and manipulating databases'; data in an RDBMS is stored in database objects called tables; a table is a collection of related data entries consisting of columns and rows. Facts synthesized into original prose; no wording reproduced."
   },
   {
-    "id": "w3schools-sql-introduction",
-    "title": "SQL Introduction",
+    "id": "w3schools-sql-join",
+    "title": "SQL Joins",
     "provider": "W3Schools",
-    "url": "https://www.w3schools.com/sql/sql_intro.asp",
+    "url": "https://www.w3schools.com/sql/sql_join.asp",
     "sourceType": "reference",
     "usage": "REFERENCE_ONLY",
-    "attributionRequired": false,
+    "attributionRequired": true,
     "aiIngestionChecked": true,
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
-    "notes": "Read live via curl on 2026-08-21. Tier B reference tutorial per subject source-map. Supports: SQL as a standard language for accessing and manipulating databases; relational database management systems as the basis for SQL and for all modern database systems, with named examples (MS SQL Server, IBM DB2, Oracle, MySQL, Microsoft Access); data stored in tables with columns and rows. Used for the pointer-level SQL mention only; no syntax taught. Facts synthesized; no wording reproduced."
+    "notes": "Read live via curl on 2026-08-21. Supports: the JOIN clause is used to combine rows from two or more tables based on a related column between them; (INNER) JOIN returns only rows that have matching values in both tables; LEFT (OUTER) JOIN returns all rows from the left table and only the matched rows from the right table; the parenthesized (INNER) notation shows the keyword is optional. Facts synthesized into original prose; no wording reproduced."
   },
   {
     "id": "w3schools-sql-notnull",
@@ -5553,6 +5839,19 @@
     "notes": "Canonical JSS record registered; the author-hosted PDF (https://vita.had.co.nz/papers/tidy-data.pdf) was read. By Hadley Wickham, 2014. Defines tidy data as each variable a column, each observation a row, and each type of observational unit a table; discusses missing values, messy data, and notes that reshaping is 'often described as making wide datasets long or tall' while flagging those terms as imprecise. Primary source for the tidy-data ideal and the wide/tall terminology."
   },
   {
+    "id": "wikipedia-acid",
+    "title": "Wikipedia: ACID",
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/ACID",
+    "sourceType": "reference",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Tier C supplementary reference. Read live 2026-08-21. Supports: ACID names four transaction characteristics — atomicity, consistency, isolation, durability; atomicity means a series of operations either all occur or none occur, preventing updates from occurring only partially; the monetary transfer from account A to account B (withdrawing plus depositing) as the canonical atomic transaction, keeping the database in a consistent state so money is neither debited nor credited if either operation fails. Facts synthesized; no wording reproduced."
+  },
+  {
     "id": "wikipedia-cardinality-data-modeling",
     "title": "Cardinality (data modeling)",
     "provider": "Wikipedia",
@@ -5579,6 +5878,19 @@
     "notes": "Read live 2026-08-21. Tier D reference used for the classic ice-cream-sales/drowning-rates illustration (summer heat as the common cause) and the named alternative explanations: third factor (common-cause variable, lurking/confounding variable), reverse causation, and coincidence. Causal-inference claims in the lesson are additionally anchored to the NIST e-Handbook statement that no statistical procedure proves cause and effect. Used as reference only; lesson prose and other examples are original."
   },
   {
+    "id": "wikipedia-data-integrity",
+    "title": "Data integrity — Wikipedia",
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Data_integrity",
+    "sourceType": "reference",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": true,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Secondary reference (Tier D). Read live via curl 2026-08-21. Source of the standard working definition, attributed in the lesson: 'data integrity is the maintenance of, and the assurance of, data accuracy and consistency over its entire life-cycle', and the statement that integrity is critical to any system that stores, processes, or retrieves data. REFERENCE_ONLY; only the fact is used, wording is original."
+  },
+  {
     "id": "wikipedia-database-normalization",
     "title": "Database normalization",
     "provider": "Wikipedia",
@@ -5590,6 +5902,19 @@
     "aiIngestionAllowed": false,
     "checkedAt": "2026-08-21",
     "notes": "Tier D reputable secondary. Read live via curl 2026-08-21. Supports: normalization as structuring a relational database according to normal forms to reduce data redundancy and improve data integrity; the idea first proposed by Edgar F. Codd as part of his relational model (1NF defined by Codd in 1970, 2NF and 3NF in 1971); the three anomalies (insertion, update, deletion) with the update-anomaly example of one employee shown with different addresses on different records; the informal statement that a relation is described as normalized if it meets third normal form, with most 3NF relations free of the three anomalies; the existence of higher forms (BCNF, 4NF, 5NF, 6NF). Used for attribution, the anomalies framing, and the 3NF-as-common-target statement. Facts synthesized into original prose; no wording reproduced."
+  },
+  {
+    "id": "wikipedia-database-transaction",
+    "title": "Wikipedia: Database transaction",
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Database_transaction",
+    "sourceType": "reference",
+    "usage": "REFERENCE_ONLY",
+    "attributionRequired": false,
+    "aiIngestionChecked": true,
+    "aiIngestionAllowed": false,
+    "checkedAt": "2026-08-21",
+    "notes": "Tier C supplementary reference. Read live 2026-08-21. Supports: a database transaction is a unit of work treated in a coherent and reliable way independent of other transactions; the transfer-from-one-bank-account-to-another example (subtracting from one account and adding the same amount to the other); a transaction must be atomic (complete in its entirety or have no effect whatsoever), consistent, isolated, and durable; all write operations within a transaction have an all-or-nothing effect. Facts synthesized; no wording reproduced."
   },
   {
     "id": "wikipedia-garbage-in-garbage-out",

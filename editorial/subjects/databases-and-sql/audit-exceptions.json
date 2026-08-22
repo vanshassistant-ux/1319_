@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "subjectSlug": "databases-and-sql",
+  "accepted": [
+    { "match": "\"consistency\" defined differently in what-a-database-is and transactions (overlap 13%)", "reason": "what-a-database-is uses consistency as a general benefit of centralization; transactions defines it as the ACID property. Compatible depth difference — each lesson's gloss serves its own topic." },
+    { "match": "\"table\" defined differently in relational-databases and rows (overlap 15%)", "reason": "relational-databases glosses table as the core storage unit; rows references it as context. Compatible depth difference." },
+    { "match": "\"column\" defined differently in relational-databases and columns (overlap 22%)", "reason": "The columns lesson owns the full definition; relational-databases uses a one-line gloss. Compatible depth difference." },
+    { "match": "\"column\" defined differently in tables and columns (overlap 22%)", "reason": "The columns lesson owns the full definition; tables glosses it as half of the grid. Compatible depth difference." },
+    { "match": "\"constraint\" defined differently in columns and foreign-keys (overlap 13%)", "reason": "columns glosses constraints as column rules; foreign-keys describes the foreign-key constraint specifically. Compatible depth difference." },
+    { "match": "\"constraint\" defined differently in columns and insert (overlap 10%)", "reason": "columns glosses constraints as column rules; insert describes what happens when a write violates one. Compatible depth difference." },
+    { "match": "\"constraint\" defined differently in columns and update (overlap 18%)", "reason": "columns glosses constraints as column rules; update describes rejection of violating writes. Compatible depth difference." },
+    { "match": "\"referential integrity\" defined differently in foreign-keys and data-integrity (overlap 15%)", "reason": "foreign-keys explains referential integrity as the FK enforcement mechanism; data-integrity names it as one of three integrity types. Compatible depth difference." },
+    { "match": "\"query\" defined differently in sql-basics and select (overlap 22%)", "reason": "sql-basics glosses query as a read request; select defines what a query returns. Compatible depth difference." },
+    { "match": "\"query\" defined differently in sql-basics and indexes (overlap 22%)", "reason": "sql-basics glosses query as a read request; indexes uses it in the read-vs-write trade-off. Compatible depth difference." },
+    { "match": "\"query\" defined differently in select and indexes (overlap 11%)", "reason": "select owns the full definition; indexes uses a one-line gloss. Compatible depth difference." },
+    { "match": "\"where clause\" defined differently in select and delete (overlap 22%)", "reason": "select names WHERE as a filter clause; delete explains its role as the row selector (and the no-WHERE danger). Compatible depth difference." },
+    { "match": "\"where clause\" defined differently in update and subqueries (overlap 23%)", "reason": "update explains WHERE as the row selector for a write; subqueries glosses it as the outer-query filter. Compatible depth difference." },
+    { "match": "\"where clause\" defined differently in delete and aggregate-functions (overlap 22%)", "reason": "delete explains WHERE as the row selector; aggregate-functions glosses it as the pre-summary filter. Compatible depth difference." },
+    { "match": "\"where clause\" defined differently in aggregate-functions and subqueries (overlap 21%)", "reason": "Both use one-line glosses for the same clause in different query shapes. Compatible depth difference." }
+  ],
+  "notes": [
+    "The 'working definition comes from the people who document SQL' boilerplate and the bakery customers/orders example sentences were the main REUSE clusters; reworded across select/insert/limit/group-by/aggregate-functions/subqueries/join and one-to-many/foreign-keys respectively, with the PostgreSQL foreign-key constraint definition now paraphrased everywhere except the owning foreign-keys lesson.",
+    "QNEAR template stems ('Which statement best defines X') reworded across tables/rows/relationships/one-to-many/many-to-many/limit.",
+    "SRCDUP consolidated 5 same-URL id pairs (Microsoft FK constraints, PostgreSQL constraints/data-types/tutorial-concepts, W3Schools SQL intro) with registry prunes (453 → 448).",
+    "GRAM fixes: where.md SQL examples moved to code blocks to avoid repeated-word flags on legitimate SQL keywords; indexes.md gained its missing ## Key Takeaway heading."
+  ]
+}

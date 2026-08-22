@@ -2,7 +2,13 @@
 
 ## In 30 Seconds
 
-WHERE is the part of a SQL query that filters rows. It keeps only the rows that meet a condition you state, and drops the rest. You write it after the table name: SELECT title FROM books WHERE year > 2015. Conditions use comparison operators — = (equal), <> (not equal), > (greater than), < (less than) — and you can join them with AND and OR. Text values go in quotes; numbers do not.
+The WHERE clause is the part of a SQL query that filters rows. It keeps only the rows that meet a condition you state, and drops the rest. You write it after the table name:
+
+```sql
+SELECT title FROM books WHERE year > 2015;
+```
+
+Conditions use comparison operators — = (equal), <> (not equal), > (greater than), < (less than) — and you can join them with AND/OR. Text values go in quotes; numbers do not.
 
 ## Why This Matters
 
@@ -14,7 +20,7 @@ Every real query is a question, and most questions start with "which rows?" WHER
 - Write a basic filtering query in the shape SELECT columns FROM table WHERE condition.
 - Use the comparison operators =, <>, >, and < in WHERE conditions.
 - Distinguish quoted text values from unquoted numeric values in conditions.
-- Combine conditions with AND and OR and predict which rows each combination keeps.
+- Combine conditions with AND/OR and predict which rows each combination keeps.
 - Explain that WHERE filters rows before grouping and sorting are applied.
 
 ## The College Version
@@ -31,7 +37,7 @@ The basic shape never varies: SELECT the columns, FROM the table, WHERE the cond
 
 Conditions compare a column's value against something. Four comparison operators carry most everyday filtering, one idea each: = means equal to, <> means not equal to, > means greater than, and < means less than. SQL also offers >= and <= for the "or equal" cases, and some systems accept != in place of <>. Choosing the right operator is the first precision skill: a query asking for books published after 2015 wants >, not >=, and a query asking for everything except mysteries wants <>, not =. The second precision skill is knowing how values are written. Text values must be wrapped in single quotes — genre = 'mystery' — while numeric values are written bare — year > 2015. Quote a number and some databases will still compare it, but the convention exists for a reason: it keeps the meaning of the condition explicit and avoids surprises with text-like numbers such as postal codes or phone numbers stored as text.
 
-### Combining conditions, and where WHERE sits
+### Combining conditions, and where the clause sits
 
 One condition is often not enough. AND combines conditions so that a row must pass all of them; OR combines them so that a row passes if it meets any one. A query asking for mystery books published after 2015 needs AND — both tests must hold, so genre = 'mystery' AND year > 2015. A query asking for either mystery or sci-fi books needs OR, so genre = 'mystery' OR genre = 'sci-fi'. The two keywords behave very differently, and mixing them up is one of the most common filtering errors. Thinking about order also matters. Conceptually, WHERE runs early: it narrows the table to the rows that survive the filter, and only then do grouping and sorting rearrange what remains. The PostgreSQL documentation describes FROM, WHERE, GROUP BY, and HAVING as a pipeline of successive transformations on the table. Get the filter right first, and every later step works on the rows you actually meant. This is also the honest framing: WHERE is where most query mistakes happen, and where precision pays the most.
 
@@ -54,7 +60,7 @@ WHERE is the gatekeeper of a SQL query. The table holds every row, but you rarel
 
 Think of a club with a guest list. The bouncer (WHERE) holds the list and checks every person in line against it. Only the people whose names are on the list get in; everyone else waits outside. The crowd that enters is a smaller group than the line that queued up, but the line itself is untouched — it is still there, outside the door.
 
-The analogy has limits. A bouncer checks people one at a time against a fixed list, but a WHERE condition can compare any column against any value — greater than, not equal to, and so on — and can combine several tests with AND and OR. The list changes with every query you write, and some conditions can match no rows at all, which a bouncer's list rarely does.
+The analogy has limits. A bouncer checks people one at a time against a fixed list, but a WHERE condition can compare any column against any value — greater than, not equal to, and so on — while also combining several tests with AND/OR. The list changes with every query you write, and some conditions can match no rows at all, which a bouncer's list rarely does.
 
 ## Worked Example
 

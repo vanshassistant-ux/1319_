@@ -13,14 +13,14 @@
     "sql",
     "filtering"
   ],
-  "in30Seconds": "WHERE is the part of a SQL query that filters rows. It keeps only the rows that meet a condition you state, and drops the rest. You write it after the table name: SELECT title FROM books WHERE year > 2015. Conditions use comparison operators — = (equal), <> (not equal), > (greater than), < (less than) — and you can join them with AND and OR. Text values go in quotes; numbers do not.",
+  "in30Seconds": "The WHERE clause is the part of a SQL query that filters rows. It keeps only the rows that meet a condition you state, and drops the rest. You write it after the table name:\n\n```sql\nSELECT title FROM books WHERE year > 2015;\n```\n\nConditions use comparison operators — = (equal), <> (not equal), > (greater than), < (less than) — and you can join them with AND/OR. Text values go in quotes; numbers do not.",
   "whyItMatters": "Every real query is a question, and most questions start with “which rows?” WHERE is how SQL answers that — the difference between “all customers” and “customers in Mexico.” It is the most used clause in everyday SQL, and it is where precision pays most: a wrong condition quietly returns the wrong rows, and a missing one returns everything. Most query mistakes happen here, so learning WHERE well makes everything downstream easier. Sorting, grouping, and joining all operate on the rows WHERE leaves behind. And because WHERE also appears in UPDATE and DELETE statements, understanding it protects data too.",
   "learningObjectives": [
     "Define the WHERE clause as the part of a SQL query that filters rows to those meeting a stated condition.",
     "Write a basic filtering query in the shape SELECT columns FROM table WHERE condition.",
     "Use the comparison operators =, <>, >, and < in WHERE conditions.",
     "Distinguish quoted text values from unquoted numeric values in conditions.",
-    "Combine conditions with AND and OR and predict which rows each combination keeps.",
+    "Combine conditions with AND/OR and predict which rows each combination keeps.",
     "Explain that WHERE filters rows before grouping and sorting are applied."
   ],
   "collegeVersion": [
@@ -280,7 +280,7 @@
     "researchedAt": "2026-08-21",
     "transformation": "Concepts (WHERE filters rows; condition syntax; comparison operators; quoted text vs bare numbers; AND/OR semantics; WHERE-before-grouping/sorting pipeline) verified against W3Schools SQL reference pages and PostgreSQL official documentation. All example queries written from scratch and executed against an in-memory SQLite table before inclusion."
   },
-  "contentHash": "36bcc41aaca51870",
+  "contentHash": "f97f4f4f218cfbdd",
   "status": "source-verified",
   "public": false
 }

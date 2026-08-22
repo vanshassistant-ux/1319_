@@ -80,7 +80,7 @@
       "claim": "Foreign keys can block deletion of referenced rows (RESTRICT or the default NO ACTION raises an error while referencing rows remain) or cascade it (CASCADE automatically deletes referencing rows when the referenced row is deleted).",
       "claimType": "TECHNICAL",
       "sourceIds": [
-        "postgresql-constraints"
+        "postgresql-ddl-constraints"
       ],
       "status": "supported"
     },
@@ -189,7 +189,7 @@
       "notes": "Tier A official documentation. Read live on 2026-08-21. Supports: TRUNCATE quickly removes all rows from a set of tables; it has the same effect as an unqualified DELETE but is faster because it does not actually scan the tables. Facts synthesized; no wording reproduced."
     },
     {
-      "id": "postgresql-constraints",
+      "id": "postgresql-ddl-constraints",
       "title": "PostgreSQL 18 Documentation: 5.5. Constraints",
       "provider": "PostgreSQL",
       "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",

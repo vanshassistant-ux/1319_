@@ -85,7 +85,7 @@ A table is the grid that holds a database: a named collection of related data ar
 
 ## Practice Question Bank
 
-**1. Which statement best describes a table in a relational database?**
+**1. What is a table in a relational database?**
 
 - A single piece of information, such as one customer's phone number.
 - A collection of related data entries arranged in rows and columns.

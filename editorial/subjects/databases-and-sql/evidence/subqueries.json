@@ -1,0 +1,190 @@
+{
+  "topicId": "databases-and-sql:foundations:subqueries",
+  "subjectId": "databases-and-sql",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "Working definition, attributed: SQLite's language reference states that a SELECT statement enclosed in parentheses is a subquery; Microsoft Learn adds that a subquery is a query nested inside a SELECT, INSERT, UPDATE, or DELETE statement, or inside another subquery",
+      "Inner/outer terminology, attributed: Microsoft Learn calls the nested query the inner query (inner select) and the statement containing it the outer query (outer select)",
+      "Why subqueries exist: some questions are answered in steps, and a subquery packs both steps into one statement; original example \u2014 find products priced above the average price, built from two steps into one nested statement",
+      "The basic shape: an inner SELECT in parentheses feeding an outer SELECT; the inner result is used as a value or a list; SQLite documents that an uncorrelated subquery is evaluated only once and the result reused as necessary",
+      "Subqueries with WHERE: the most common placement; the mechanism stated simply \u2014 a condition built from another query's result (W3Schools on IN with a subquery; W3Schools and PostgreSQL on EXISTS)",
+      "Subqueries versus joins: one-line contrast \u2014 a join combines tables side by side, a subquery nests one query inside another; Microsoft Learn states many statements with subqueries can alternatively be formulated as joins; join mechanics owned by the join topic, referenced only",
+      "Readability and honest framing: nesting hides logic, so keep subqueries short and shallow; a subquery is a tool, not a goal \u2014 when a join reads more clearly, prefer it"
+    ],
+    "supporting": [
+      "Parentheses are the marker of a subquery: PostgreSQL \u2014 subqueries specifying a derived table must be enclosed in parentheses",
+      "IN's right-hand side must be a parenthesized subquery returning exactly one column (PostgreSQL 9.24.2 Subquery Expressions)",
+      "EXISTS returns true when the subquery returns at least one row (PostgreSQL 9.24.1; W3Schools)",
+      "A subquery can be used anywhere an expression is allowed (Microsoft Learn); this lesson keeps to the WHERE placement"
+    ],
+    "outOfScope": [
+      "JOIN syntax and mechanics (own topic: join; referenced only for the contrast)",
+      "SELECT mechanics (own topic: select)",
+      "WHERE clause mechanics (own topic: where)",
+      "Aggregate functions such as AVG (own topic: aggregate-functions; used only as a known tool in the average example, never taught)",
+      "Correlated subqueries and subqueries inside INSERT, UPDATE, or DELETE"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "SQLite's language reference defines a subquery as a SELECT statement enclosed in parentheses.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "sqlite-lang-expr"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Microsoft Learn defines a subquery as a query that is nested inside a SELECT, INSERT, UPDATE, or DELETE statement, or inside another subquery, and calls the statement containing it the outer query.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "microsoft-learn-sql-subqueries"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "W3Schools explains that IN can be used with a subquery in the WHERE clause: the main query returns all records that are present in the result of the subquery.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3schools-sql-in"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "W3Schools states that the EXISTS operator is used in a WHERE clause to check whether a subquery returns any rows; PostgreSQL says the subquery is evaluated to determine whether it returns any rows, with a true result when at least one row comes back.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3schools-sql-exists",
+        "postgresql-docs-subquery-expressions"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Microsoft Learn states that many statements that include subqueries can alternatively be formulated as joins, while other questions can be posed only with subqueries.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "microsoft-learn-sql-subqueries"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "PostgreSQL documents that the right-hand side of IN is a parenthesized subquery, which must return exactly one column.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "postgresql-docs-subquery-expressions"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "SQLite documents that an uncorrelated subquery is evaluated only once and the result reused as necessary.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "sqlite-lang-expr"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "PostgreSQL states that subqueries specifying a derived table must be enclosed in parentheses.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "postgresql-docs-table-expressions"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Sources phrase the same concept differently: SQLite defines a subquery as a SELECT statement enclosed in parentheses, Microsoft Learn defines it as a query nested inside another statement, and PostgreSQL describes subqueries as derived-table expressions that must be parenthesized.",
+      "positions": [
+        "SQLite: 'A SELECT statement enclosed in parentheses is a subquery'",
+        "Microsoft Learn: 'A subquery is a query that is nested inside a SELECT, INSERT, UPDATE, or DELETE statement, or inside another subquery'",
+        "PostgreSQL: subqueries must be enclosed in parentheses"
+      ],
+      "resolution": "All three describe the same nesting idea. The lesson uses SQLite's phrasing as the working definition, Microsoft Learn's inner-query/outer-query terminology for the parts, and PostgreSQL's note for why the parentheses matter, treating the three phrasings as one agreed concept."
+    }
+  ],
+  "unsupportedExistingClaims": [],
+  "correctionsNeeded": [],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "sqlite-lang-expr",
+      "title": "SQLite Query Language: Expressions (Section 11, Subquery Expressions)",
+      "provider": "SQLite Consortium",
+      "url": "https://www.sqlite.org/lang_expr.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A official documentation. Read live (HTTP 200) on 2026-08-21. Supports: 'A SELECT statement enclosed in parentheses is a subquery'; 'An uncorrelated subquery is evaluated only once and the result reused as necessary'. Used for the working definition and the inner-runs-once claim; no wording reproduced."
+    },
+    {
+      "id": "microsoft-learn-sql-subqueries",
+      "title": "Microsoft Learn: Subqueries (SQL Server)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/subqueries",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B official documentation. Read live (HTTP 200) on 2026-08-21. Supports: 'A subquery is a query that is nested inside a SELECT, INSERT, UPDATE, or DELETE statement, or inside another subquery'; inner query / outer query terminology; 'Many Transact-SQL statements that include subqueries can alternatively be formulated as joins. Other questions can be posed only with subqueries.' Used for the definition, the parts, and the honest framing; no wording reproduced."
+    },
+    {
+      "id": "w3schools-sql-in",
+      "title": "SQL IN Operator",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_in.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read live (HTTP 200) on 2026-08-21. Supports: 'You can also use IN with a subquery in the WHERE clause. With a subquery you can return all records from the main query that are present in the result of the subquery.' Used for the WHERE-placement mechanism; no wording reproduced."
+    },
+    {
+      "id": "w3schools-sql-exists",
+      "title": "SQL EXISTS Operator",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_exists.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read live (HTTP 200) on 2026-08-21. Supports: 'The EXISTS operator is used in a WHERE clause to check whether a subquery returns any rows.' Used to name EXISTS as a WHERE-companion for subqueries; no wording reproduced."
+    },
+    {
+      "id": "postgresql-docs-subquery-expressions",
+      "title": "PostgreSQL Documentation: 9.24. Subquery Expressions",
+      "provider": "The PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/functions-subquery.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A official documentation. Read live (HTTP 200) on 2026-08-21. Supports: EXISTS 'The subquery is evaluated to determine whether it returns any rows... If it returns at least one row, the result of EXISTS is true'; IN 'The right-hand side is a parenthesized subquery, which must return exactly one column'; the note that an EXISTS example 'is like an inner join'. Used for the WHERE-companions and the join contrast; no wording reproduced."
+    },
+    {
+      "id": "postgresql-docs-table-expressions",
+      "title": "PostgreSQL Documentation: Table Expressions (Section 7.2, including 7.2.1.3 Subqueries)",
+      "provider": "The PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/queries-table-expressions.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A official documentation. Reused id from the phase-2 source registry with an identical URL. Read live (HTTP 200) on 2026-08-21. Supports: 'Subqueries specifying a derived table must be enclosed in parentheses.' Used for the parentheses claim; no wording reproduced."
+    }
+  ]
+}

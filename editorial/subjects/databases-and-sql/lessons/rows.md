@@ -86,7 +86,7 @@ A row is one complete record in a table — one instance of whatever the table t
 
 ## Practice Question Bank
 
-**1. Which of the following best describes a row in a database table?**
+**1. What does a single row in a database table represent?**
 
 - A vertical group of cells that all hold the same kind of value
 - A single record: one complete set of values across the table's columns

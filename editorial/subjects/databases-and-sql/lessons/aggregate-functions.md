@@ -21,7 +21,7 @@ Raw tables are too big to read. A store with ten thousand orders cannot learn an
 
 ### The working definition
 
-The definition comes from the people who document SQL itself. PostgreSQL's documentation opens its aggregate functions chapter with one sentence: aggregate functions compute a single result from a set of input values. W3Schools' SQL tutorial says the same thing in plainer words: an aggregate function is a function that performs a calculation on a set of values, and returns a single value. Put the two together and the working definition is short: an aggregate function takes many rows and combines them into one summary value. The rows go in, the summary comes out, and the database does the combining for you.
+The definition mirrors the language's own documentation. PostgreSQL's documentation opens its aggregate functions chapter with one sentence: aggregate functions compute a single result from a set of input values. W3Schools' SQL tutorial says the same thing in plainer words: an aggregate function is a function that performs a calculation on a set of values, and returns a single value. Bring the two descriptions together and the working definition is short: an aggregate function takes many rows and combines them into one summary value. The rows go in, the summary comes out, and the database does the combining for you.
 
 ### The big five
 
@@ -37,7 +37,7 @@ Most of the big five quietly skip missing values, and W3Schools states the rule 
 
 ### Filter first, then summarize: aggregates with WHERE
 
-Aggregates do not have to summarize the whole table. Add a WHERE clause and the aggregate summarizes only the rows that pass the filter — the database filters first, then summarizes. W3Schools' reference writes the shape as SELECT COUNT(column_name) FROM table_name WHERE condition, and the pattern is identical for any of the big five. On the scores table, SELECT AVG(points) FROM scores WHERE subject = 'algebra'; returns 79.5 — the average of the four algebra scores, not all eight. WHERE decides which rows the aggregate sees; how the filter itself works is a full topic of its own, the where lesson. Here the point is the combination: filter first, then summarize.
+Aggregates do not have to summarize the whole table. Add a WHERE clause and the aggregate summarizes only the rows that pass the filter — the database filters first, then summarizes. W3Schools' reference writes the shape as SELECT COUNT(column_name) FROM table_name WHERE condition, and the pattern is identical for any of the big five. On the scores table, SELECT AVG(points) FROM scores WHERE subject = 'algebra'; returns 79.5 — the average of the four algebra scores, not all eight. WHERE decides which rows the aggregate sees; how the filter itself works gets its own lesson; here the point is the combination: filter first, then summarize.
 
 ### One overall total, or one per group
 

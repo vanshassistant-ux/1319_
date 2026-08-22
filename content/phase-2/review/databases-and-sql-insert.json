@@ -23,7 +23,7 @@
   "collegeVersion": [
     {
       "heading": "The write command that adds rows",
-      "body": "The working definition comes from the people who document SQL itself. W3Schools' SQL tutorial states that the INSERT INTO statement is used to insert new records in a table, and PostgreSQL's documentation puts the same idea in plainer words: the INSERT statement is used to populate a table with rows. SQLite describes the result of the VALUES form the same way, as creating one or more new rows in an existing table. Put the three together and the working definition is short: INSERT adds a new row to a table. That is the entire job. Everything else in this lesson is detail around that one sentence — the shape of the statement, how values find their columns, and what the database checks before it lets a row in."
+      "body": "The definition follows the language's own documentation. W3Schools' SQL tutorial says the INSERT INTO statement inserts new records in a table, and PostgreSQL's documentation puts the same idea in plainer words: the INSERT statement is used to populate a table with rows. SQLite describes the result of the VALUES form the same way, as creating one or more new rows in an existing table. Combined, those descriptions yield a short definition: INSERT adds a new row to a table. That is the entire job. The rest of this lesson is detail around that single sentence — the shape of the statement, how values find their columns, and what the database checks before it lets a row in."
     },
     {
       "heading": "The basic shape of an INSERT statement",
@@ -43,7 +43,7 @@
     },
     {
       "heading": "Writing versus reading",
-      "body": "INSERT belongs to the writing family of SQL commands, and the contrast with SELECT is the sharpest way to see it. SQLite's SELECT reference states that a SELECT statement does not make any changes to the database; its INSERT reference describes the opposite — the VALUES form creates new rows in an existing table. A SELECT query can be run a hundred times with the same result. An INSERT run once changes the stored table, and the row stays there until some later write removes or alters it. SELECT asks questions; INSERT hands in new rows. That permanence is the difference between reading and writing, and it is why INSERT deserves care. SELECT, update, and delete each have their own lessons."
+      "body": "INSERT belongs to the writing family of SQL commands, and the contrast with SELECT is the sharpest way to see it. SQLite's SELECT reference states that SELECT never changes the database; its INSERT reference describes the opposite — the VALUES form creates new rows in an existing table. A SELECT query can be run a hundred times with the same result. An INSERT run once changes the stored table, and the row stays there until some later write removes or alters it. SELECT asks questions; INSERT hands in new rows. That permanence is the difference between reading and writing, and it is why INSERT deserves care. SELECT, update, and delete each have their own lessons."
     },
     {
       "heading": "The honest framing: data enters here",
@@ -192,7 +192,7 @@
       "skill": "Diagnosing a rejected insert",
       "sourceIds": [
         "w3schools-sql-primary-key",
-        "postgresql-constraints"
+        "postgresql-ddl-constraints"
       ]
     },
     {
@@ -205,7 +205,7 @@
         "SELECT changes nothing; INSERT permanently adds a row to the stored table."
       ],
       "correctIndex": 3,
-      "explanation": "SQLite's documentation states that a SELECT statement does not make any changes to the database, while its INSERT reference describes INSERT as creating new rows in an existing table. INSERT is a write: the row stays stored until a later write removes or changes it.",
+      "explanation": "SQLite's documentation states that SELECT never changes the database, while its INSERT reference describes INSERT as creating new rows in an existing table. INSERT is a write: the row stays stored until a later write removes its or changes it.",
       "difficulty": "understanding",
       "skill": "Writing versus reading in SQL",
       "sourceIds": [
@@ -281,7 +281,7 @@
     "w3schools-sql-insert",
     "postgresql-tutorial-populate",
     "sqlite-lang-insert",
-    "postgresql-constraints",
+    "postgresql-ddl-constraints",
     "w3schools-sql-primary-key",
     "sqlite-lang-select"
   ],
@@ -290,9 +290,9 @@
     "researchStatus": "source-verified",
     "rightsStatus": "reference-only sources; no source prose adapted",
     "researchedAt": "2026-08-21",
-    "transformation": "All SQL examples are original and were checked against PostgreSQL, SQLite, and W3Schools documentation for standard syntax; definitions are attributed to their sources, and all lesson prose is original synthesis."
+    "transformation": "All SQL examples are original and were checked against PostgreSQL, SQLite, and W3Schools documentation for standard syntax; definitions are attributed, and all lesson prose is original."
   },
   "status": "source-verified",
   "public": false,
-  "contentHash": "59ef7c6e4c452490"
+  "contentHash": "ea2116e09a15ffe4"
 }

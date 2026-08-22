@@ -44,7 +44,7 @@
     },
     {
       "heading": "WHERE and ORDER BY together",
-      "body": "ORDER BY rarely works alone. A typical question filters first and sorts second: keep only the rows you care about with WHERE, then arrange them with ORDER BY. The order of the clauses in the statement is fixed. SQLite's SELECT reference describes generating results as a process in which WHERE clause processing filters the input data, with the ORDER BY clause sorting the rows that remain — so the filter runs before the sort. An original example: SELECT name, price FROM products WHERE category = 'pump' ORDER BY price; returns only pumps, listed from cheapest to most expensive. WHERE is a full topic of its own; here it is enough to place it before ORDER BY and let the sort run on the filtered rows."
+      "body": "ORDER BY rarely works alone. A typical question filters first and sorts second: keep only the rows you care about with WHERE, then arrange them with ORDER BY. The order of the clauses in the statement is fixed. SQLite's SELECT reference describes generating results as a process in which WHERE clause processing filters the input data, with the ORDER BY clause sorting the rows that remain — so the filter runs before the sort. An original example: SELECT name, price FROM products WHERE category = 'pump' ORDER BY price; returns only pumps, listed from cheapest to most expensive. WHERE has its own lesson; here it is enough to place it before ORDER BY and let the sort run on the filtered rows."
     },
     {
       "heading": "The honest framing: display order, not stored data",
@@ -70,7 +70,7 @@
     },
     {
       "term": "result set",
-      "definition": "The rows and columns a SELECT query returns, arranged like a small table."
+      "definition": "The rows and columns a SELECT query returns, shaped like a small table."
     },
     {
       "term": "alphabetical order",
@@ -292,9 +292,9 @@
     "researchStatus": "source-verified",
     "rightsStatus": "reference-only sources; no source prose adapted",
     "researchedAt": "2026-08-21",
-    "transformation": "All SQL examples are original and were checked against W3Schools, PostgreSQL, and SQLite documentation for standard syntax; the working definition and the unspecified-order warning are attributed to their sources, and all lesson prose is original synthesis."
+    "transformation": "All SQL examples are original and were checked against W3Schools, PostgreSQL, and SQLite documentation for standard syntax; the working definition and the unspecified-order warning are attributed, and all lesson prose is originalthesis."
   },
-  "contentHash": "88638dced2ad1df1",
+  "contentHash": "f43c66d02d61388c",
   "status": "source-verified",
   "public": false
 }

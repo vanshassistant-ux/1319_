@@ -1,0 +1,258 @@
+{
+  "topicId": "databases-and-sql:foundations:database-security",
+  "subjectId": "databases-and-sql",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "what database security is: the practices and controls that keep a database's data confidential, accurate, and available (working definition, attributed to Oracle)",
+      "the main threats, named conceptually: unauthorized access, SQL injection as the classic database attack, data theft, insider misuse \u2014 one line each, no attack how-to",
+      "access control: who can read and write what, via users, roles, and permissions (general; depth owned by the cybersecurity subject)",
+      "encryption: data encrypted at rest and in transit (general idea; depth owned by the cybersecurity subject)",
+      "backups and recovery: database copies and restore plans (depth owned by the cybersecurity subject)",
+      "the honest framing: database security is a team effort among designers, developers, and administrators; this lesson is the literacy overview"
+    ],
+    "supporting": [
+      "defense in depth: layered controls because no single measure stops every threat",
+      "authentication versus authorization as the two steps of access control",
+      "databases as prime targets because they hold valuable data"
+    ],
+    "outOfScope": [
+      "data integrity (own topic: databases-and-sql:foundations:data-integrity)",
+      "encryption mechanisms, key management, and crypto depth (cybersecurity subject)",
+      "backup techniques and restore procedures (cybersecurity subject)",
+      "access-control system design, authentication protocols, and least-privilege depth (cybersecurity subject)",
+      "SQL injection exploitation details and attack techniques (defensive framing only)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Database security \u2014 the working definition, attributed \u2014 is the practices and controls that keep the data in a database confidential, accurate, and available; Oracle's explainer (June 30, 2021) phrases it as 'the protective measures employed to secure data against unapproved access and to preserve data confidentiality, integrity, and availability.'",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "oracle-data-security"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Databases are prime targets: Oracle calls them 'valuable repositories of sensitive information' that are 'the primary target of data thieves,' and divides the risk between outsiders (hackers, cybercriminals, criminal groups) and insiders (current or former employees, partners, customers).",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "oracle-data-security"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Unauthorized access \u2014 someone reading or changing data without permission \u2014 is a core threat, countered by validating the identity of the user (authentication) and controlling what operations they may perform (authorization).",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "oracle-data-security",
+        "mslearn-sql-server-security-center"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "SQL injection is the classic database attack: an application flaw in which untrusted user input is sent to an interpreter such as a database and executed as commands; OWASP's Top 10:2025 ranks injection among the most serious web-application risks (category A05), and Microsoft states that all database systems carry some risk of SQL injection, with many vulnerabilities introduced in the application code that queries the database.",
+      "claimType": "CURRENT",
+      "sourceIds": [
+        "owasp-injection-2025",
+        "mslearn-sql-server-security-center"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Data theft is a primary attack goal: Oracle lists approaches such as compromising privileged credentials, exploiting application weaknesses, and accessing unencrypted database files on disk or stealing backup media.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "oracle-data-security"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Insider misuse covers people with legitimate access who abuse it \u2014 current or former employees and trusted partners who take advantage of their position of trust to steal data, or who make a mistake that causes an unintended security event.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "oracle-data-security"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Access control decides who can read and write what: database objects have owners, and other users are allowed in only through granted privileges such as SELECT and UPDATE; roles group permissions so many users share the same level of access, the idea behind role-based access control.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "postgresql-privileges",
+        "mslearn-azure-rbac-overview",
+        "mslearn-sql-server-security-center"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Encryption protects data in two places: at rest (stored data on disks and backup media is encoded so it is unreadable without the key) and in transit (data traveling between an application and the database is encrypted); Microsoft Learn documents both as standard database protections.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "mslearn-encryption-at-rest",
+        "mslearn-sql-server-security-center"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A backup is a copy of the database's data that can be used to restore and recover the data after a failure; PostgreSQL's documentation states that databases containing valuable data should be backed up regularly, and a backup only helps if it can be restored.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "mslearn-sql-server-backup-overview",
+        "postgresql-backup-restore"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Database security is a team effort and a layered strategy: Oracle recommends defense-in-depth with different controls mitigating different threats (assessment, prevention, detection, monitoring), and Microsoft notes that injection flaws often originate in application code \u2014 so designers, developers, and administrators all share the responsibility; this lesson is the literacy overview, with depth owned by the cybersecurity subject.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "oracle-data-security",
+        "mslearn-sql-server-security-center"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "The term itself is slippery: Oracle titles its explainer 'What Is Data Security?' and folds database security under it, while Microsoft organizes the same territory as authentication, authorization, and encryption, and PostgreSQL documents it as ownership and privileges.",
+      "positions": [
+        "Each source uses its own vocabulary for the same protective goal",
+        "All agree the goal is keeping the data store safe from misuse"
+      ],
+      "resolution": "The lesson offers a working definition attributed to Oracle \u2014 practices and controls that keep data confidential, accurate, and available \u2014 and notes explicitly that wording varies by source."
+    },
+    {
+      "issue": "SQL injection is sometimes framed as an application problem and sometimes as a database problem.",
+      "positions": [
+        "OWASP treats injection as an application flaw in how untrusted user input reaches interpreters",
+        "Microsoft notes many SQL injection vulnerabilities are introduced in the application that queries the database, while the database executes whatever valid queries it receives"
+      ],
+      "resolution": "The lesson names SQL injection as the classic database attack \u2014 the data store is where the damage lands \u2014 while stating plainly that the flaw often starts in application code, which supports the team-effort framing. Defensive description only; no exploitation detail."
+    },
+    {
+      "issue": "How much protection encryption provides is easily overstated.",
+      "positions": [
+        "Encryption at rest makes stolen storage unreadable without the key (Microsoft Learn)",
+        "Encryption does not replace access control or stop insiders with legitimate access (Oracle's layered-control guidance)"
+      ],
+      "resolution": "The lesson presents encryption as one layer that protects data when other defenses fail, not as a complete solution; the analysis question tests exactly this distinction."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The machine-generated draft was generic boilerplate with no verifiable factual content ('Database Security is a foundational concept in Databases & Sql'; 'a label on a toolbox drawer'; 'course-appropriate language'); it was discarded entirely."
+  ],
+  "correctionsNeeded": [
+    "Replaced the entire boilerplate draft with source-verified original content; no draft wording was retained.",
+    "Confirmed via the live OWASP Top 10:2025 page that Injection is category A05 (not A03) and registered the correct URL (https://owasp.org/Top10/2025/A05_2025-Injection/)."
+  ],
+  "rightsIssues": [
+    "All sources cited reference-only; facts were synthesized into original prose and no source wording is reproduced beyond brief attributed definitional phrases (the Oracle data-security definition and the Microsoft SQL Server backup definition). Vendor documentation and the OWASP page are copyrighted; no license is asserted for any source. The Microsoft Learn security-center page notes that some content requires authorization, but the page itself was publicly readable when fetched."
+  ],
+  "sourceRecords": [
+    {
+      "id": "oracle-data-security",
+      "title": "What Is Data Security?",
+      "provider": "Oracle",
+      "url": "https://www.oracle.com/security/database-security/what-is-database-security/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl with a browser user-agent on 2026-08-21 (page dated June 30, 2021). Vendor explainer. Supports: the working definition ('data security refers to the protective measures employed to secure data against unapproved access and to preserve data confidentiality, integrity, and availability'); databases as 'valuable repositories of sensitive information' and 'the primary target of data thieves'; outsiders vs insiders (current or former employees and partners who take advantage of their position of trust to steal data or make mistakes); threats named conceptually (compromising privileged credentials, SQL injection through end-user input, accessing unencrypted files on disk, stealing backup media); authentication/authorization as the foundation of data access control; encryption among preventive controls; defense-in-depth best practices spanning assessment, detective, preventive, data-specific, and user-specific controls. Facts synthesized into original prose; only the attributed definitional phrase is quoted."
+    },
+    {
+      "id": "owasp-injection-2025",
+      "title": "A05:2025 Injection \u2014 OWASP Top 10:2025",
+      "provider": "OWASP Foundation",
+      "url": "https://owasp.org/Top10/2025/A05_2025-Injection/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl with a browser user-agent on 2026-08-21. Confirms Injection is A05 in the OWASP Top 10:2025 (the landing page at /Top10/2025/ links to A05_2025-Injection). Supports: injection as an application flaw that lets untrusted user input reach an interpreter (browser, database, command line) and be executed as commands; SQL injection as one of the most well-known injection types (low frequency / high impact, more than 14k CVEs); prevention as keeping data separate from commands and queries. Used for the conceptual, defensive description only; no example attack scenarios reproduced."
+    },
+    {
+      "id": "mslearn-sql-server-security-center",
+      "title": "Security for SQL Server Database Engine and Azure SQL Database",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/security-center-for-sql-server-database-engine-and-azure-sql-database",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl with a browser user-agent on 2026-08-21 (page last updated 2026-07-20). Official product documentation (Tier B per subject source-map). Supports: access control framed as authentication ('Who are you?') and authorization ('What can you do?'); permissions (grant, revoke, deny) and server- and database-level roles; encryption at rest (transparent data encryption, backup encryption) and encryption in transit (TLS/SSL connection encryption); auditing as recording access; SQL injection described as an attack in which malicious code is inserted into strings passed to the database engine for parsing and execution, with the note that all database systems carry some risk and many vulnerabilities are introduced in the application querying the database. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "postgresql-privileges",
+      "title": "PostgreSQL 18 Documentation: 5.8. Privileges",
+      "provider": "PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/ddl-priv.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21 (current = PostgreSQL 18 docs; the generic security.html URL returns 404, so the privileges section was read directly). Supports: database objects have owners; other roles can use an object only after privileges are granted; privilege kinds include SELECT, INSERT, UPDATE, and DELETE; group roles help manage privileges when a database has many users; GRANT and REVOKE change privileges. Used for the access-control concept only; no SQL taught."
+    },
+    {
+      "id": "postgresql-backup-restore",
+      "title": "PostgreSQL 18 Documentation: Chapter 25. Backup and Restore",
+      "provider": "PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/backup.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. Supports: 'As with everything that contains valuable data, PostgreSQL databases should be backed up regularly'; three general approaches (SQL dump, file-system-level backup, continuous archiving) each with strengths and weaknesses. Used only for the general backup concept; technique depth is owned by the cybersecurity subject."
+    },
+    {
+      "id": "mslearn-sql-server-backup-overview",
+      "title": "Backup overview (SQL Server)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/backup-overview-sql-server",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl with a browser user-agent on 2026-08-21. Supports: a backup as 'a copy of SQL Server data that can be used to restore and recover the data after a failure'; backups are created at the level of a database or its files/filegroups. Used for the one-line backup definition; technique depth is owned by the cybersecurity subject."
+    },
+    {
+      "id": "mslearn-encryption-at-rest",
+      "title": "Azure data encryption at rest (Microsoft Learn, Azure Security documentation)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-atrest",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Reused from the phase-2 source registry with the identical id and URL. Supports: encryption at rest protects stored data; a symmetric key encrypts data as it is written to storage and decrypts it when it is prepared for use; attacks against data at rest include attempts to obtain a copy of the hardware or media. Used only for the general at-rest concept."
+    },
+    {
+      "id": "mslearn-azure-rbac-overview",
+      "title": "What is Azure role-based access control (Azure RBAC)?",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Reused from the phase-2 source registry with the identical id and URL. Supports: RBAC as managing who has access to resources and what they can do with them; a role assignment combining a security principal, a role definition (a collection of permissions such as read, write, and delete), and a scope. Used only for the general users-roles-permissions concept."
+    }
+  ]
+}

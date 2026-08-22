@@ -1,0 +1,305 @@
+{
+  "id": "databases-and-sql:foundations:join",
+  "subjectSlug": "databases-and-sql",
+  "unitSlug": "foundations",
+  "slug": "join",
+  "title": "JOIN",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 9,
+  "tags": [
+    "databases-and-sql",
+    "foundations",
+    "join",
+    "sql"
+  ],
+  "in30Seconds": "A JOIN combines rows from two tables based on a matching condition. The working definition from W3Schools: the JOIN clause is used to combine rows from two or more tables based on a related column between them. Joins exist because the data you want often lives in two tables: orders hold order details, customers hold customer names. The basic shape is SELECT columns FROM tableA JOIN tableB ON match. INNER JOIN keeps only matching rows; LEFT JOIN keeps every row from the left table. Joins are where relational databases earn their name.",
+  "whyItMatters": "One table rarely holds everything you need. Orders say which customer placed them; customers say what each customer is called. A JOIN puts those two tables back together so one query can answer a question that spans both: list every order with the customer's name. Without joins, you would either copy customer names into every order or flip between tables by hand. Joins are the read feature that makes relational databases relational, and nearly every real reporting task depends on them. Learn JOIN and you move from browsing single tables to asking questions of a whole database.",
+  "learningObjectives": [
+    "Define JOIN as the SQL clause that combines rows from two tables based on a matching condition, using the working definitions of W3Schools and PostgreSQL.",
+    "Explain why joins exist: related data is stored in separate tables, so answering a question often means reading two tables at once.",
+    "Identify the parts of the basic join shape: SELECT columns FROM tableA JOIN tableB ON matching columns.",
+    "Distinguish INNER JOIN, which keeps only matching rows, from LEFT JOIN, which keeps every row of the left table.",
+    "Recognize that the ON condition usually compares a foreign key with the primary key it points to, and that key mechanics are covered in their own topics."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "The working definition",
+      "body": "W3Schools' SQL tutorial gives the working definition: the JOIN clause is used to combine rows from two or more tables, based on a related column between them. PostgreSQL's documentation says the same thing in plainer terms: queries that access multiple tables at one time are called join queries, and they combine rows from one table with rows from a second table, with an expression specifying which rows are to be paired. Put the two together and the definition is short: a JOIN combines rows from two tables based on a matching condition. All the rest is detail around that one sentence — why the data was split up, what the query looks like, and what happens to rows that do not match."
+    },
+    {
+      "heading": "Why joins exist: the data is split on purpose",
+      "body": "Picture a bakery's database. A customers table keeps one row per customer, with columns like customer_id and name. An orders table keeps one row per order, with columns like order_id, customer_id, and total. Notice what the orders table does not store: the customer's name. It stores the customer's id instead, and the name lives in customers. The split is deliberate — repeating the name on every order would waste space and invite typos — though the full reasons belong to the relationships and normalization topics. The consequence is that a simple question, such as listing every order with the customer's name, needs both tables at once. Microsoft Learn puts it directly: joins retrieve data from multiple tables based on logical relationships between them, and they enable you to combine data from two or more tables into a single result set. The join exists to put split data back together for one query."
+    },
+    {
+      "heading": "The basic shape of a join query",
+      "body": "The shape has four parts. SELECT names the columns you want; FROM names the first table; JOIN names the second table; ON names the columns that must match. The bakery's question looks like this: SELECT orders.order_id, customers.name, orders.total FROM orders JOIN customers ON orders.customer_id = customers.customer_id; Each order row is compared with each customer row, and the ON condition keeps the pairs whose customer ids agree. PostgreSQL's tutorial describes exactly this process: the database compares a column of each row of one table with a column of all rows of the other, and selects the pairs where the values match. Writing the table name before each column, as in orders.customer_id, is good style in a join query, because it tells the database which table each column comes from."
+    },
+    {
+      "heading": "INNER JOIN: only matching rows",
+      "body": "The join type you will meet most often is INNER JOIN. W3Schools describes it in one line: (INNER) JOIN returns only rows that have matching values in both tables. The parentheses around INNER are significant — they mean the keyword is optional, so writing plain JOIN already gives you an inner join. In the bakery example, an order whose customer_id appears in customers gets a row in the result; an order whose customer id matches nothing is dropped, because there is no customer row to pair with it. SQLite's documentation shows the underlying mechanics: with an ON clause, the expression is evaluated for each row of the full pairing, and only the rows for which it is true are included. That filtering is the inner join in action."
+    },
+    {
+      "heading": "LEFT JOIN: all rows from the left",
+      "body": "LEFT JOIN changes exactly one thing: which rows are guaranteed to survive. W3Schools again in one line: LEFT (OUTER) JOIN returns all rows from the left table, and only the matched rows from the right table. The left table is the one named in FROM; the right table is the one named in JOIN. Every row from the left table appears in the result. When a right-table row matches, its columns fill in alongside; when nothing matches, the right-table columns come back empty. One-line contrast: INNER JOIN keeps only pairs that match; LEFT JOIN keeps every left-table row, matched or not."
+    },
+    {
+      "heading": "The ON condition: how the tables connect",
+      "body": "ON names the columns that must agree, and Microsoft Learn describes what those columns usually are: a typical join condition specifies a foreign key from one table and its associated key in the other table. In the bakery, orders.customer_id is the foreign key — a column in orders that points at customers — and customers.customer_id is the primary key it points to. The ON condition pairs them: orders.customer_id = customers.customer_id. What keys are, why they exist, and how they are declared are topics of their own; here it is enough to recognize the pattern: the column that points from one table to another is matched with the column it points at."
+    },
+    {
+      "heading": "The honest framing: where relational databases earn their name",
+      "body": "Relational databases store data in separate tables and connect them through related columns. The JOIN is the command that walks those connections, which is why Microsoft Learn calls joins fundamental to relational database operations. It is also the most powerful thing SQL can do: one short query pulls data from two or more tables into a single result set, and real queries routinely join three or more tables. That power is the honest reason joins matter — they are the step where a database stops being a pile of tables and starts answering the questions you actually have."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "JOIN clause",
+      "definition": "The SQL clause that combines rows from two tables by pairing rows whose values match a condition; written as JOIN table ON condition."
+    },
+    {
+      "term": "INNER JOIN",
+      "definition": "The default join type, written JOIN or INNER JOIN: it keeps only the row pairs that satisfy the ON condition and drops unmatched rows."
+    },
+    {
+      "term": "LEFT JOIN",
+      "definition": "A join type that keeps every row from the left table and adds matching rows from the right, leaving unmatched right-side columns empty."
+    },
+    {
+      "term": "ON condition",
+      "definition": "The part of a join query, introduced by the keyword ON, that names the columns which must match for two rows to be paired."
+    },
+    {
+      "term": "left table",
+      "definition": "The table named in the FROM clause of a join query; LEFT JOIN guarantees that every one of its rows appears in the result."
+    },
+    {
+      "term": "right table",
+      "definition": "The table named after the JOIN keyword in a join query; in a LEFT JOIN its rows appear only when they match a left-table row."
+    },
+    {
+      "term": "join query",
+      "definition": "A query that reads from two or more tables at once, pairing their rows on a condition; PostgreSQL uses the term for any such query."
+    },
+    {
+      "term": "cartesian product",
+      "definition": "Every possible pairing of rows from two tables; SQLite explains that a join with no condition produces it, and the ON condition filters it."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "A JOIN reads two tables at once and stitches them together on a shared column. Say orders lists each order with a customer id, and customers lists each id with a name. The query SELECT orders.order_id, customers.name FROM orders JOIN customers ON orders.customer_id = customers.customer_id; walks the orders, finds the customer with the matching id for each one, and returns a row per order with the customer's name attached. INNER JOIN keeps only orders whose customer exists. LEFT JOIN keeps every order and leaves the name blank when no customer matches. You decide which guarantee you need, and the ON condition says which column holds the shared id.",
+    "analogy": "Picture two stacks of index cards. The orders stack holds one card per order, each showing an order number and a customer id. The customers stack holds one card per customer, each showing an id and a name. A JOIN is you holding an order card, reading its customer id, finding the customer card with that same id, and clipping the two together. Work through the orders stack and every clipped pair is your result. INNER JOIN means you clip a pair only when the customer card exists. LEFT JOIN means you lay every order card on the table and clip a customer card next to it when you can find one — and leave the spot empty when you cannot.",
+    "analogyLimits": "The card trick suggests the database physically checks every possible pair of cards, which is how the result is defined but not how it is computed — real engines skip most pairs using indexes and smarter algorithms, a topic of its own. The analogy also joins two stacks at a time, while a single SQL query can join three or more tables. And a clipped pair of cards keeps both cards whole, whereas a real join result is a fresh set of rows with columns from both tables."
+  },
+  "workedExample": "Meadow Bakery keeps two tables. customers holds customer_id, name, and city; orders holds order_id, customer_id, and total. The owner wants every order with the customer's name, so she runs SELECT orders.order_id, customers.name, orders.total FROM orders JOIN customers ON orders.customer_id = customers.customer_id; The database pairs each order with the customer whose id matches. The result: order 1001 with Lena at $14, order 1002 with Marcus at $9, order 1003 with Lena at $22, and order 1004 with Priya at $31. She then suspects one customer has no orders yet, so she switches the tables around and runs FROM customers LEFT JOIN orders ON the same condition. Now every customer appears, and the order columns come back empty for the customer with nothing ordered. Same question, one keyword changed, and a different promise about which rows survive.",
+  "commonMistakes": [
+    {
+      "mistake": "Forgetting the ON condition.",
+      "correction": "A join without ON pairs every row of one table with every row of the other — SQLite calls the result the cartesian product — and the result balloons. Always name the matching columns with ON."
+    },
+    {
+      "mistake": "Joining on the wrong columns.",
+      "correction": "The ON condition must compare the related columns, usually a foreign key with the primary key it points to. Matching order ids to customer ids pairs rows at random and produces nonsense."
+    },
+    {
+      "mistake": "Thinking LEFT JOIN keeps unmatched rows from both tables.",
+      "correction": "It guarantees only the left table's rows. Rows from the right table that match nothing are still dropped; guaranteeing both sides is the job of a full join, beyond this lesson."
+    },
+    {
+      "mistake": "Expecting the join to change or copy the tables.",
+      "correction": "A join returns a result set computed at query time. The tables themselves stay exactly as they were — joining is a read, like SELECT."
+    },
+    {
+      "mistake": "Leaving column names unqualified when both tables share one.",
+      "correction": "If orders and customers both had a column named id, the database could not tell which one you meant. PostgreSQL's tutorial recommends qualifying every column with its table name in a join query."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "INNER JOIN",
+      "b": "LEFT JOIN",
+      "distinction": "Inner keeps only the row pairs that satisfy the ON condition; left keeps every row from the left table and adds matches from the right, leaving unmatched right-side columns empty."
+    },
+    {
+      "a": "The ON condition",
+      "b": "A WHERE filter",
+      "distinction": "ON names the columns that must match to pair rows during the join; WHERE filters the rows that come back. The older pre-SQL-92 syntax wrote the matching condition in WHERE, and for inner joins the results are identical, which is why PostgreSQL recommends the explicit JOIN/ON form for clarity."
+    },
+    {
+      "a": "A join",
+      "b": "A subquery",
+      "distinction": "A join combines rows from two tables side by side in one result set; a subquery nests one query inside another and feeds its result to the outer query. Both combine data, and subqueries have their own topic."
+    }
+  ],
+  "keyTakeaway": "JOIN combines rows from two tables on a matching condition: INNER JOIN keeps only the matches, LEFT JOIN keeps every left-table row, and the ON condition usually compares a foreign key with the primary key it points to — the SQL feature where relational databases earn their name.",
+  "questionBank": [
+    {
+      "id": "databases-and-sql:foundations:join:1",
+      "prompt": "What does the SQL JOIN clause do?",
+      "options": [
+        "Combines rows from two tables based on a matching condition between them.",
+        "Deletes rows that appear in more than one table.",
+        "Copies all the rows of one table into another table.",
+        "Sorts the rows of a single table into a new order."
+      ],
+      "correctIndex": 0,
+      "explanation": "W3Schools defines the JOIN clause as combining rows from two or more tables based on a related column between them, and PostgreSQL describes join queries the same way: they combine rows from one table with rows from a second table. Deleting, copying, and sorting are different operations.",
+      "difficulty": "recall",
+      "skill": "Definition of a join",
+      "sourceIds": [
+        "w3schools-sql-join",
+        "postgresql-tutorial-join"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:join:2",
+      "prompt": "Harbor Books keeps customers (customer_id, name) and orders (order_id, customer_id, total). Which query lists each order with its customer's name?",
+      "options": [
+        "SELECT name, total FROM customers, orders;",
+        "SELECT orders.order_id, customers.name FROM orders JOIN customers ON orders.customer_id = customers.customer_id;",
+        "SELECT orders.order_id, customers.name FROM orders JOIN customers ON orders.order_id = customers.order_id;",
+        "SELECT * FROM orders WHERE customer_id = customer_id;"
+      ],
+      "correctIndex": 1,
+      "explanation": "The join shape is SELECT columns FROM first table JOIN second table ON matching columns. Joining orders to customers on the customer id pairs each order with the right customer. The first option has no join condition, the third joins on the wrong column, and the fourth compares a column to itself.",
+      "difficulty": "application",
+      "skill": "Writing the basic join shape",
+      "sourceIds": [
+        "w3schools-sql-join",
+        "postgresql-tutorial-join",
+        "mslearn-sql-joins"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:join:3",
+      "prompt": "A query uses LEFT JOIN, and an order's customer_id matches no row in customers. What happens to that order in the result?",
+      "options": [
+        "The order row is dropped, exactly as in an inner join.",
+        "The order row stays, and its customer-name columns come back empty.",
+        "The whole query fails and returns nothing.",
+        "The database creates a new customer row automatically."
+      ],
+      "correctIndex": 1,
+      "explanation": "W3Schools states that LEFT (OUTER) JOIN returns all rows from the left table and only the matched rows from the right table. The order is a left-table row, so it survives; with no matching customer, the customer columns come back empty rather than dropping the row.",
+      "difficulty": "analysis",
+      "skill": "Predicting LEFT JOIN behavior",
+      "sourceIds": [
+        "w3schools-sql-join"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:join:4",
+      "prompt": "Which statement best describes an INNER JOIN?",
+      "options": [
+        "It keeps every row from the left table even when nothing matches.",
+        "It keeps every row from both tables regardless of matches.",
+        "It keeps only the rows that have matching values in both tables.",
+        "It cannot be used with an ON condition."
+      ],
+      "correctIndex": 2,
+      "explanation": "W3Schools describes (INNER) JOIN as returning only rows that have matching values in both tables, and SQLite's documentation shows the ON expression filtering the row pairs to exactly those where it is true. Keeping every left-table row is a LEFT JOIN, and an inner join needs the ON condition to know what counts as a match.",
+      "difficulty": "recall",
+      "skill": "Inner join behavior",
+      "sourceIds": [
+        "w3schools-sql-join",
+        "sqlite-lang-select"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:join:5",
+      "prompt": "Meadow Bakery runs FROM customers LEFT JOIN orders ON customers.customer_id = orders.customer_id. Which outcome is guaranteed?",
+      "options": [
+        "Only customers who have placed at least one order appear.",
+        "Every order row appears even when its customer is missing.",
+        "Only rows that match in both tables appear.",
+        "Every customer row appears, with order columns filling in where a match exists."
+      ],
+      "correctIndex": 3,
+      "explanation": "Customers is the left table here, so LEFT JOIN guarantees every customer row appears; W3Schools states that the left join returns all rows from the left table and only matched rows from the right. Customers with no orders keep their order columns empty, and unmatched orders are not rescued by a left join with customers on the left.",
+      "difficulty": "analysis",
+      "skill": "Applying the left-table guarantee",
+      "sourceIds": [
+        "w3schools-sql-join",
+        "mslearn-sql-joins"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "databases-and-sql:foundations:join:1",
+      "prompt": "What does the SQL JOIN clause do?",
+      "options": [
+        "Combines rows from two tables based on a matching condition between them.",
+        "Deletes rows that appear in more than one table.",
+        "Copies all the rows of one table into another table.",
+        "Sorts the rows of a single table into a new order."
+      ],
+      "correctIndex": 0,
+      "explanation": "W3Schools defines the JOIN clause as combining rows from two or more tables based on a related column between them, and PostgreSQL describes join queries the same way: they combine rows from one table with rows from a second table. Deleting, copying, and sorting are different operations.",
+      "difficulty": "recall",
+      "skill": "Definition of a join",
+      "sourceIds": [
+        "w3schools-sql-join",
+        "postgresql-tutorial-join"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:join:2",
+      "prompt": "Harbor Books keeps customers (customer_id, name) and orders (order_id, customer_id, total). Which query lists each order with its customer's name?",
+      "options": [
+        "SELECT name, total FROM customers, orders;",
+        "SELECT orders.order_id, customers.name FROM orders JOIN customers ON orders.customer_id = customers.customer_id;",
+        "SELECT orders.order_id, customers.name FROM orders JOIN customers ON orders.order_id = customers.order_id;",
+        "SELECT * FROM orders WHERE customer_id = customer_id;"
+      ],
+      "correctIndex": 1,
+      "explanation": "The join shape is SELECT columns FROM first table JOIN second table ON matching columns. Joining orders to customers on the customer id pairs each order with the right customer. The first option has no join condition, the third joins on the wrong column, and the fourth compares a column to itself.",
+      "difficulty": "application",
+      "skill": "Writing the basic join shape",
+      "sourceIds": [
+        "w3schools-sql-join",
+        "postgresql-tutorial-join",
+        "mslearn-sql-joins"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:join:3",
+      "prompt": "A query uses LEFT JOIN, and an order's customer_id matches no row in customers. What happens to that order in the result?",
+      "options": [
+        "The order row is dropped, exactly as in an inner join.",
+        "The order row stays, and its customer-name columns come back empty.",
+        "The whole query fails and returns nothing.",
+        "The database creates a new customer row automatically."
+      ],
+      "correctIndex": 1,
+      "explanation": "W3Schools states that LEFT (OUTER) JOIN returns all rows from the left table and only the matched rows from the right table. The order is a left-table row, so it survives; with no matching customer, the customer columns come back empty rather than dropping the row.",
+      "difficulty": "analysis",
+      "skill": "Predicting LEFT JOIN behavior",
+      "sourceIds": [
+        "w3schools-sql-join"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "databases-and-sql:foundations:select",
+    "databases-and-sql:foundations:foreign-keys",
+    "databases-and-sql:foundations:primary-keys",
+    "databases-and-sql:foundations:relationships",
+    "databases-and-sql:foundations:subqueries"
+  ],
+  "sources": [
+    "w3schools-sql-join",
+    "postgresql-tutorial-join",
+    "sqlite-lang-select",
+    "mslearn-sql-joins"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only sources; no source prose adapted",
+    "researchedAt": "2026-08-21",
+    "transformation": "Join semantics and syntax verified against PostgreSQL's documentation, SQLite's language reference, Microsoft Learn, and the W3Schools SQL tutorial, then restated in original prose with original example data (Meadow Bakery and Harbor Books orders and customers). No source wording reproduced."
+  },
+  "contentHash": "384db0b80464037a",
+  "status": "source-verified",
+  "public": false
+}

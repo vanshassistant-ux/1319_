@@ -1,0 +1,190 @@
+{
+  "topicId": "databases-and-sql:foundations:join",
+  "subjectId": "databases-and-sql",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "what a JOIN does: combines rows from two tables based on a matching condition (working definition, attributed)",
+      "why joins exist: the data you want often lives in two tables (original orders-and-customers example)",
+      "the basic shape: SELECT columns FROM tableA JOIN tableB ON match (original example)",
+      "INNER JOIN: only matching rows \u2014 the default and most common, named",
+      "LEFT JOIN: all rows from the left table, matches from the right \u2014 the one-line contrast",
+      "the ON condition: usually the foreign key equals the primary key (mechanism; foreign-keys is a sibling topic, referenced only)",
+      "honest framing: joins are where relational databases earn their name, and the most powerful thing SQL can do"
+    ],
+    "supporting": [
+      "join queries access multiple tables at once (PostgreSQL definition of join queries)",
+      "ON filters the row pairs; without a condition the result is the cartesian product (SQLite)",
+      "qualifying column names with table names is recommended style in join queries (PostgreSQL)",
+      "explicit JOIN/ON syntax introduced in SQL-92, preferred over the older WHERE-style join (PostgreSQL)"
+    ],
+    "outOfScope": [
+      "subqueries (own topic: subqueries)",
+      "relationships and cardinality (own topic: relationships)",
+      "primary keys and foreign keys in depth (own topics: primary-keys, foreign-keys)",
+      "SELECT in depth (own topic: select)",
+      "RIGHT JOIN, FULL JOIN, CROSS JOIN details",
+      "join performance, indexes, and query optimization (indexes topic)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The SQL JOIN clause combines rows from two or more tables based on a related column between them.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "w3schools-sql-join"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Queries that access multiple tables at once are called join queries; they combine rows from one table with rows from a second table, with an expression specifying which rows are to be paired.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "postgresql-tutorial-join"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Joins retrieve data from multiple tables based on logical relationships between them and combine data from two or more tables into a single result set.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "mslearn-sql-joins"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "INNER JOIN returns only rows that have matching values in both tables; the INNER keyword is optional, so JOIN alone is an inner join.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3schools-sql-join",
+        "mslearn-sql-joins"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "LEFT (OUTER) JOIN returns all rows from the left table and only the matched rows from the right table.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3schools-sql-join"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "With an ON clause, the join expression is evaluated for each row of the full pairing, and only the rows for which it is true are included in the result.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "sqlite-lang-select"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A typical join condition specifies a foreign key from one table and its associated key in the other table.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "mslearn-sql-joins"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The explicit JOIN/ON syntax was introduced in SQL-92, and the older implicit join written in WHERE produces identical results for inner joins, which is why the explicit form is recommended for clarity.",
+      "claimType": "HISTORICAL",
+      "sourceIds": [
+        "postgresql-tutorial-join"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A join with no ON or USING clause produces the cartesian product of the two tables.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "sqlite-lang-select"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether 'most common' is a fair label for INNER JOIN.",
+      "positions": [
+        "Every surveyed reference presents plain JOIN as an inner join (INNER is optional) and lists it first among join types.",
+        "No surveyed source publishes a usage statistic."
+      ],
+      "resolution": "The lesson says INNER JOIN is the default (the keyword is optional, per W3Schools and Microsoft syntax) and the type you will meet most often; no statistical frequency claim is made."
+    },
+    {
+      "issue": "ON condition versus WHERE for pairing rows.",
+      "positions": [
+        "Pre-SQL-92 syntax lists the tables in FROM and writes the matching condition in WHERE.",
+        "Modern syntax introduces the join condition with its own keyword ON."
+      ],
+      "resolution": "PostgreSQL documents that the results are identical for the classic inner join and recommends the explicit JOIN/ON form for clarity; the lesson follows that recommendation."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "Draft's generic claim that JOIN is 'a foundational concept in Databases & Sql' with no SQL content; discarded.",
+    "Draft's analogy of JOIN as 'a label on a toolbox drawer'; discarded because it described no join behavior.",
+    "Draft's learning objective 'Apply join to a simple scenario' without any scenario or query; replaced with source-verified objectives."
+  ],
+  "correctionsNeeded": [
+    "Replaced all generic draft wording with source-verified SQL content and original examples (Meadow Bakery and Harbor Books orders and customers).",
+    "Draft contained no questions about actual join semantics; wrote five evidence-backed questions.",
+    "Framed INNER JOIN as the default join type (keyword optional) per the W3Schools and Microsoft syntax notation, and LEFT JOIN's left-table guarantee per W3Schools."
+  ],
+  "rightsIssues": [
+    "All four sources are documentation or tutorial references used REFERENCE_ONLY; no source prose adapted into the lesson."
+  ],
+  "sourceRecords": [
+    {
+      "id": "w3schools-sql-join",
+      "title": "SQL Joins",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_join.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. Supports: the JOIN clause is used to combine rows from two or more tables based on a related column between them; (INNER) JOIN returns only rows that have matching values in both tables; LEFT (OUTER) JOIN returns all rows from the left table and only the matched rows from the right table; the parenthesized (INNER) notation shows the keyword is optional. Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "postgresql-tutorial-join",
+      "title": "PostgreSQL Documentation: 2.6. Joins Between Tables",
+      "provider": "The PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/tutorial-join.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. Supports: queries that access multiple tables at once are called join queries; they combine rows from one table with rows from a second table, with an expression specifying which rows are to be paired; unmatched rows are ignored in the classic join; the explicit JOIN/ON syntax was introduced in SQL-92 and is preferred over the older WHERE-style join; qualifying column names with their table is recommended style. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "sqlite-lang-select",
+      "title": "SQLite Query Language: SELECT",
+      "provider": "SQLite Consortium",
+      "url": "https://www.sqlite.org/lang_select.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21 (the JOIN section of the SELECT reference; id reused from the phase registry with identical URL). Supports: the join-operator grammar (INNER, LEFT OUTER, CROSS, and others); a join without ON or USING produces the cartesian product of the two tables; with an ON clause, the expression is evaluated for each row of the cartesian product and only the rows for which it is true are included. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "mslearn-sql-joins",
+      "title": "Joins (SQL Server) \u2014 Microsoft Learn",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/joins?view=sql-server-ver17",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via curl on 2026-08-21. Supports: joins retrieve data from multiple tables based on logical relationships between them and combine data from two or more tables into a single result set; joins are fundamental to relational database operations; a typical join condition specifies a foreign key from one table and its associated key in the other table; the join types include inner, left/right/full outer, and cross joins; the [INNER] JOIN notation shows the keyword is optional. Facts synthesized; no wording reproduced."
+    }
+  ]
+}

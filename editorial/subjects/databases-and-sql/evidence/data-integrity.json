@@ -1,0 +1,272 @@
+{
+  "topicId": "databases-and-sql:foundations:data-integrity",
+  "subjectId": "databases-and-sql",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "working definition of data integrity: accuracy and consistency of data over its lifetime (attributed to the standard Wikipedia formulation, with NIST's security dimension)",
+      "why integrity matters: decisions are only as good as the data (original wrong-price example in a product table)",
+      "the three classic types: entity integrity (rows uniquely identified), referential integrity (references point at real rows), domain integrity (values fit type and rules)",
+      "how databases enforce integrity: constraints (NOT NULL, UNIQUE, CHECK, foreign keys), each named with one line",
+      "integrity vs normalization: normalization prevents duplication; integrity enforces correctness",
+      "honest framing: integrity rules are the database's immune system, rejecting bad data before it spreads, but they only catch declared rules"
+    ],
+    "supporting": [
+      "constraints reject bad values at write time (CHECK aborts the insert/update on false)",
+      "data types are the first layer of domain rules, too coarse alone (positive price needs a CHECK)",
+      "a database only enforces constraints that were declared",
+      "backups/security are related but distinct from integrity"
+    ],
+    "outOfScope": [
+      "primary keys in depth (own topic: databases-and-sql:foundations:primary-keys)",
+      "foreign keys in depth (own topic: databases-and-sql:foundations:foreign-keys)",
+      "database normalization in depth (own topic: databases-and-sql:foundations:database-normalization)",
+      "data types in depth (own topic: databases-and-sql:foundations:data-types)",
+      "SQL syntax for defining constraints (own topics: sql-basics and the SQL family)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Data integrity is the maintenance of, and the assurance of, data accuracy and consistency over the data's entire life-cycle.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "wikipedia-data-integrity",
+        "ibm-data-integrity"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Data integrity also has a security dimension: it is the property that data has not been altered in an unauthorized manner, covering data in storage, during processing, and while in transit.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nist-csrc-glossary-data-integrity"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Entity integrity is the rule that every row in a table is uniquely identified, relying on unique keys so the same data is not listed multiple times.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-data-integrity",
+        "postgresql-ddl-constraints"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Referential integrity is the rule that references between tables point at real rows; foreign key constraints maintain referential integrity and prevent orphaned records.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "postgresql-ddl-constraints",
+        "ibm-data-integrity"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Domain integrity is the rule that values in a column fit the column's type, format, and allowed set of values.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ibm-data-integrity"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A NOT NULL constraint ensures a column cannot hold a missing (NULL) value.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3schools-sql-notnull",
+        "postgresql-ddl-constraints"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A UNIQUE constraint ensures all values in a column are distinct, and many UNIQUE constraints are allowed per table while only one primary key is allowed.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3schools-sql-unique",
+        "postgresql-ddl-constraints"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A CHECK constraint ensures values in a column satisfy a stated condition; when the condition evaluates to false, the entire insert or update is aborted and an error is raised.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3schools-sql-check",
+        "postgresql-ddl-constraints"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Data types alone are too coarse to protect domain integrity: a price column should only accept positive values, but no standard data type enforces that, so a CHECK constraint is added on top of the type.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "postgresql-ddl-constraints"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Decisions built on data are only as good as the data: a wrong price in a product table distorts checkout totals, reports, and business decisions, so integrity is a critical aspect of any system that stores, processes, or retrieves data.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "wikipedia-data-integrity",
+        "ibm-data-integrity"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Integrity rules are the database's immune system: constraints reject values that break declared rules before they are stored, but they cannot catch well-formed values that are factually wrong.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "w3schools-sql-check",
+        "postgresql-ddl-constraints"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Normalization prevents duplication while integrity enforces correctness; the two are complementary rather than the same process.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "wikipedia-database-normalization",
+        "ibm-data-integrity"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Overlapping definitions of data integrity.",
+      "positions": [
+        "Wikipedia and IBM frame data integrity as the maintenance of and assurance of data accuracy and consistency over the data's lifetime (the quality view).",
+        "NIST's glossary defines data integrity as the property that data has not been altered in an unauthorized manner, in storage, during processing, and in transit (the security view)."
+      ],
+      "resolution": "The lesson leads with the standard working definition (accuracy and consistency over the lifetime, attributed to Wikipedia's article) and presents NIST's framing as a complementary security dimension rather than a competing definition."
+    },
+    {
+      "issue": "Relationship between data types and integrity.",
+      "positions": [
+        "Data types restrict what kind of value a column can hold, which is part of domain integrity.",
+        "PostgreSQL notes the type-level restriction is too coarse for rules such as 'price must be positive', so additional constraints are needed."
+      ],
+      "resolution": "The lesson treats data types as the first layer of domain rules and constraints as the rules beyond type, and references the data-types topic as a sibling rather than teaching types here."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft described data integrity as 'a foundational concept in Databases & Sql' with no factual content \u2014 generic boilerplate, discarded.",
+    "The draft's vocabulary defined 'Data Integrity' circularly as 'a foundational Databases & Sql concept covered in this lesson' \u2014 replaced with source-supported definitions.",
+    "The draft's Eli-10 compared data integrity to 'a label on a toolbox drawer' \u2014 a metaphor without mechanism, replaced with the border-control analogy tied to the actual constraint mechanism.",
+    "The draft's worked example was a generic study-skills sentence ('A student reads a short Databases & Sql scenario...') with no database content \u2014 replaced with the original wrong-price worked example."
+  ],
+  "correctionsNeeded": [
+    "Replaced all generic draft boilerplate with source-verified content: the working definition (Wikipedia) plus NIST's security dimension, the three integrity types (IBM/PostgreSQL), and the four constraint families (PostgreSQL/W3Schools).",
+    "Added the original wrong-price worked example (Brightside Board Games, Harbor Lights at 249.00 instead of 24.90) and the honest limits framing (constraints catch only declared rules).",
+    "Wrote all five questions from the evidence; answer keys verified against the sources and spread across A/B/C/D with at least one C and one D.",
+    "Set editorialStatus READY_TO_PUBLISH with 8 supporting sources including NIST (Tier A) and PostgreSQL/W3Schools (Tier B)."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "nist-csrc-glossary-data-integrity",
+      "title": "data integrity \u2014 Glossary | CSRC",
+      "provider": "National Institute of Standards and Technology (NIST)",
+      "url": "https://csrc.nist.gov/glossary/term/data_integrity",
+      "sourceType": "government",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A. Read live via curl 2026-08-21. Supports the security dimension of the definition: data integrity is the property that data has not been altered in an unauthorized manner, covering data in storage, during processing, and while in transit (CNSSI 4009-2015; NIST SP 800-175B Rev. 1). Used as REFERENCE_ONLY; no prose adapted."
+    },
+    {
+      "id": "postgresql-ddl-constraints",
+      "title": "PostgreSQL Documentation: Constraints (Section 5.5)",
+      "provider": "PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read live 2026-08-21. Supports: check constraints (a product price should only accept positive values \u2014 no standard data type enforces that), not-null constraints, unique constraints, and foreign keys, which 'maintain referential integrity between the two related tables'. Reused id from source-registry with identical URL. REFERENCE_ONLY."
+    },
+    {
+      "id": "w3schools-sql-notnull",
+      "title": "SQL NOT NULL Constraint",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_notnull.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read live 2026-08-21. Supports: a NOT NULL constraint ensures a column cannot accept NULL (missing) values. Reused id from source-registry with identical URL. REFERENCE_ONLY."
+    },
+    {
+      "id": "w3schools-sql-unique",
+      "title": "SQL UNIQUE Constraint",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_unique.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read live 2026-08-21. Supports: the UNIQUE constraint ensures that all values in a column are unique; many UNIQUE constraints per table are allowed, but only one primary key. Reused id from source-registry with identical URL. REFERENCE_ONLY."
+    },
+    {
+      "id": "w3schools-sql-check",
+      "title": "SQL CHECK Constraint",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_check.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read live via curl 2026-08-21. Supports: the CHECK constraint ensures values in a column satisfy a specific condition; when the data evaluates to FALSE the entire INSERT or UPDATE is aborted and an error is raised. REFERENCE_ONLY."
+    },
+    {
+      "id": "ibm-data-integrity",
+      "title": "What is data integrity? (IBM Data Management Guide)",
+      "provider": "IBM",
+      "url": "https://www.ibm.com/think/topics/data-integrity",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Reputable vendor reference (Tier B/D). Read live via curl 2026-08-21. Supports the three named types: entity integrity (unique keys identify data so the same data is not listed multiple times), referential integrity (rules enforce the presence of matching records in linked tables, preventing orphaned records), and domain integrity (a domain is a specific set of values for a column, with restrictions on quantity, format, and content). REFERENCE_ONLY."
+    },
+    {
+      "id": "wikipedia-data-integrity",
+      "title": "Data integrity \u2014 Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Data_integrity",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Secondary reference (Tier D). Read live via curl 2026-08-21. Source of the standard working definition, attributed in the lesson: 'data integrity is the maintenance of, and the assurance of, data accuracy and consistency over its entire life-cycle', and the statement that integrity is critical to any system that stores, processes, or retrieves data. REFERENCE_ONLY; only the fact is used, wording is original."
+    },
+    {
+      "id": "wikipedia-database-normalization",
+      "title": "Database normalization \u2014 Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Database_normalization",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Secondary reference (Tier D). Reused id from source-registry with identical URL. Supports the one-line distinction used in the lesson: normalization reduces data redundancy/duplication by organizing data into related tables, versus integrity enforcing correctness. REFERENCE_ONLY."
+    }
+  ]
+}

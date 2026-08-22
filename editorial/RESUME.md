@@ -21,7 +21,8 @@ Read this file first on every new run, then run `node scripts/editorial-progress
 - **Languages & ESL is COMPLETE** — 26/26 topics accepted at `source-verified`, `READY_TO_PUBLISH`, `public: false`; subject audit 0 issues; report: `editorial/reports/subjects/languages-and-esl.md`. Completed 2026-08-21. **STAGE A (phase 3) IS COMPLETE — 6/6 subjects done, 26/44 overall.**
 - **Data Science & AI Literacy is COMPLETE** — 31/31 topics accepted at `source-verified`, `READY_TO_PUBLISH`, `public: false`; subject audit 0 issues; report: `editorial/reports/subjects/data-science-and-ai-literacy.md`. Completed 2026-08-21.
 - **Cybersecurity is COMPLETE** — 34/34 topics accepted at `source-verified`, `READY_TO_PUBLISH`, `public: false`; subject audit 0 issues; report: `editorial/reports/subjects/cybersecurity.md`. Completed 2026-08-21.
-- **Next: `databases-and-sql` (phase 2, 29 topics)** — then ux-ui-design (28), introduction-to-business (24), accounting (28), finance (25), personal-finance (32), marketing (24), management-and-leadership (23), then Stage C (8 subjects, 247 topics).
+- **Databases & SQL is COMPLETE** — 29/29 topics accepted at `source-verified`, `READY_TO_PUBLISH`, `public: false`; subject audit 0 issues; report: `editorial/reports/subjects/databases-and-sql.md`. Completed 2026-08-21.
+- **Next: `ux-ui-design` (phase 2, 28 topics)** — then introduction-to-business (24), accounting (28), finance (25), personal-finance (32), marketing (24), management-and-leadership (23), then Stage C (8 subjects, 247 topics).
 - Phase 1 is complete, including Python Programming.
 - **Web Development is COMPLETE** — 47/47 topics accepted at `source-verified`, `READY_TO_PUBLISH`, and `public: false`; subject audit returned 0 issues; report: `editorial/reports/subjects/web-development.md`.
 - The Web Development queue was completed on 2026-08-20. Its audited exceptions are documented in `editorial/subjects/web-development/audit-exceptions.json`.

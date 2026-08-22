@@ -31,49 +31,73 @@
     {
       "claim": "A table in a relational database consists of rows and columns; the number and order of the columns is fixed, each column has a name, and the number of rows is variable, reflecting how much data is stored at a given moment.",
       "claimType": "EVERGREEN",
-      "sourceIds": ["postgresql-table-basics"],
+      "sourceIds": [
+        "postgresql-table-basics"
+      ],
       "status": "supported"
     },
     {
       "claim": "A column is a vertical entity in a table, while a record, also called a row, is each individual entry in the table and is a horizontal entity.",
       "claimType": "EVERGREEN",
-      "sourceIds": ["w3schools-sql-intro"],
+      "sourceIds": [
+        "w3schools-sql-intro"
+      ],
       "status": "supported"
     },
     {
       "claim": "An attribute is a distinctive feature, characteristic, or property of an object; in a table, each column holds one such property, with one value recorded for every row.",
       "claimType": "EVERGREEN",
-      "sourceIds": ["nist-glossary-attribute", "postgresql-table-basics"],
+      "sourceIds": [
+        "nist-glossary-attribute",
+        "postgresql-table-basics"
+      ],
       "status": "supported"
     },
     {
       "claim": "The words column, field, and attribute are used for the same structure: a vertical set of values for one property, with 'field' coming from file-based data systems and 'attribute' from data modeling.",
       "claimType": "INTERPRETIVE",
-      "sourceIds": ["w3schools-sql-notnull", "nist-glossary-attribute", "w3schools-sql-intro"],
+      "sourceIds": [
+        "w3schools-sql-notnull",
+        "nist-glossary-attribute",
+        "w3schools-sql-intro"
+      ],
       "status": "supported"
     },
     {
       "claim": "Every column has a name and a declared type; database systems provide type families such as numeric, character (text), and date/time.",
       "claimType": "TECHNICAL",
-      "sourceIds": ["sqlite-create-table", "postgresql-data-types", "postgresql-constraints"],
+      "sourceIds": [
+        "sqlite-create-table",
+        "postgresql-docs-data-types",
+        "postgresql-ddl-constraints"
+      ],
       "status": "supported"
     },
     {
       "claim": "A not-null (must-be-filled) constraint requires a column to have a value in every row; by default, a column may hold no value.",
       "claimType": "TECHNICAL",
-      "sourceIds": ["w3schools-sql-notnull", "postgresql-constraints"],
+      "sourceIds": [
+        "w3schools-sql-notnull",
+        "postgresql-ddl-constraints"
+      ],
       "status": "supported"
     },
     {
       "claim": "A unique constraint ensures that all values in a column are different from one another; no two rows may share the same value in that column.",
       "claimType": "TECHNICAL",
-      "sourceIds": ["w3schools-sql-unique", "postgresql-constraints"],
+      "sourceIds": [
+        "w3schools-sql-unique",
+        "postgresql-ddl-constraints"
+      ],
       "status": "supported"
     },
     {
       "claim": "The declared set of columns gives a table its structure and meaning: without column definitions, a collection of values cannot be interpreted, because nothing says what each value is or what it belongs to.",
       "claimType": "INTERPRETIVE",
-      "sourceIds": ["postgresql-table-basics", "w3schools-sql-intro"],
+      "sourceIds": [
+        "postgresql-table-basics",
+        "w3schools-sql-intro"
+      ],
       "status": "supported"
     }
   ],
@@ -134,7 +158,7 @@
       "notes": "Read live 2026-08-21. States that a relational table consists of rows and columns, that the number and order of columns is fixed, that each column has a name, and that the number of rows is variable. Supports the fixed-columns/variable-rows claim and the named-column claim."
     },
     {
-      "id": "postgresql-constraints",
+      "id": "postgresql-ddl-constraints",
       "title": "PostgreSQL 18 Documentation: 5.5. Constraints",
       "provider": "PostgreSQL",
       "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
@@ -147,7 +171,7 @@
       "notes": "Read live 2026-08-21. Introduces constraints as a way to restrict data beyond what types allow and covers not-null and unique constraints. Supports the constraint concept at intuition level; no SQL shown in the lesson."
     },
     {
-      "id": "postgresql-data-types",
+      "id": "postgresql-docs-data-types",
       "title": "PostgreSQL 18 Documentation: Chapter 8. Data Types",
       "provider": "PostgreSQL",
       "url": "https://www.postgresql.org/docs/current/datatype.html",

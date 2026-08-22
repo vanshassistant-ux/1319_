@@ -37,7 +37,7 @@
     },
     {
       "heading": "Constraints: the database can say no",
-      "body": "UPDATE is strong, but it is not lawless. Tables can carry constraints — rules the database enforces on the data, such as NOT NULL (a column must have a value), uniqueness (no two rows may share a value), and foreign keys (a value must exist in another table). The PostgreSQL documentation describes the enforcement plainly: if a user attempts to store data in a column that would violate a constraint, an error is raised. The same rule applies when the data arrives through an UPDATE. In the shop's table, the name column is NOT NULL, so UPDATE products SET name = NULL WHERE product_id = 2; is rejected — the database refuses to write a missing name into a row. A statement that would give two rows the same product_id is refused the same way, because product_id is the primary key. This is not the database being difficult; it is enforcing the rules the table was built with. When an update fails, the honest response is to read the error and adjust the statement, not to assume the change went through. Constraints belong to the broader idea of data integrity; this lesson only needs the general point — the database may reject a change that breaks a rule."
+      "body": "UPDATE is powerful but not lawless. Tables can carry constraints — rules the database enforces on the data, such as NOT NULL (a column must have a value), uniqueness (no two rows may share a value), and foreign keys (a value must exist in another table). The PostgreSQL documentation describes the enforcement plainly: attempting to store data in a column in violation of a constraint raises an error. The same rule applies when the data arrives through an UPDATE. In the shop's table, the name column is NOT NULL, so UPDATE products SET name = NULL WHERE product_id = 2; is rejected — the database refuses to write a missing name into a row. A statement that would give two rows the same product_id is refused the same way, because product_id is the primary key. This is not the database being difficult; it is enforcing the rules the table was built with. When an update fails, the honest response is to read the error and adjust the statement, not to assume the change went through. Constraints belong to the broader idea of data integrity; this lesson only needs the general point — the database may reject a change that breaks a rule."
     },
     {
       "heading": "Updates are permanent — check first",
@@ -166,7 +166,7 @@
       "difficulty": "analysis",
       "skill": "Analyzes how constraints cause a database to reject an UPDATE",
       "sourceIds": [
-        "postgresql-constraints"
+        "postgresql-ddl-constraints"
       ]
     },
     {
@@ -199,7 +199,7 @@
     "w3schools-sql-update",
     "postgresql-sql-update",
     "sqlite-lang-update",
-    "postgresql-constraints"
+    "postgresql-ddl-constraints"
   ],
   "provenance": {
     "sourceProject": "EliExplains original synthesis",
@@ -264,7 +264,7 @@
       ]
     }
   ],
-  "contentHash": "0fcb32239463298f",
+  "contentHash": "822b406dfa366722",
   "status": "source-verified",
   "public": false
 }

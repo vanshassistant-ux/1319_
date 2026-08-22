@@ -28,7 +28,7 @@ One-to-one appears when a designer deliberately splits what could be a single ta
 
 ### How it is implemented: a foreign key with a uniqueness rule
 
-The mechanism is a foreign key with a uniqueness rule on the linking column. A foreign key is a column in one table that refers to the primary key of another table; it is the standard way to link tables, and the foreign-keys topic covers it in depth. On its own, a foreign key allows repeats — many orders can point at the same customer. What turns a plain link into a one-to-one link is an extra rule: the linking column must not repeat. W3Schools describes the UNIQUE constraint as ensuring that all values in a column are unique, and Microsoft Learn states that a one-to-one relationship can be created when both tables each contain a column of common and unique values. So the design has two parts: the foreign key says the profile row must point at a real account, and the uniqueness rule says no two profile rows may point at the same account. Together they guarantee at most one match on each side, and the database itself refuses to store anything that breaks the rule.
+The mechanism is a foreign key with a uniqueness rule on the linking column. A foreign-key column in one table points at the primary key of another table; it is the standard way to link tables, and the foreign-keys topic covers it in depth. On its own, a foreign key allows repeats — many orders can point at the same customer. What turns a plain link into a one-to-one link is an extra rule: the linking column must not repeat. W3Schools describes the UNIQUE constraint as ensuring that all values in a column are unique, and Microsoft Learn states that a one-to-one relationship can be created when both tables each contain a column of common and unique values. So the design has two parts: the foreign key says the profile row must point at a real account, and the uniqueness rule says no two profile rows may point at the same account. Together they guarantee at most one match on each side, and the database itself refuses to store anything that breaks the rule.
 
 ### One-to-one versus one-to-many: passport versus orders
 
@@ -43,7 +43,7 @@ One-to-one is the rarest of the three relationship types because most real-world
 - **one-to-one relationship:** A link between two tables in which each row in either table can match at most one row in the other.
 - **cardinality:** How many rows on one side of a relationship can match rows on the other side; the count that gives relationships their names.
 - **unique:** Allowing no repeated values within a column of a table, so each value can appear at most once.
-- **foreign key:** A column in one table whose values reference the primary key of another table, linking the two tables.
+- **foreign key:** A column whose values point to the primary key of another table, linking the two.
 - **primary key:** The column, or combination of columns, that uniquely identifies each row within its own table.
 - **redundant data:** The same information stored in more than one place, which keeping two always-matching tables risks creating.
 - **splitting a table:** Dividing one table's columns into two tables that keep the same rows, linked one-to-one.

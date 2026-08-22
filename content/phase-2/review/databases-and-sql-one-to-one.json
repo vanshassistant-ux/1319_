@@ -32,7 +32,7 @@
     },
     {
       "heading": "How it is implemented: a foreign key with a uniqueness rule",
-      "body": "The mechanism is a foreign key with a uniqueness rule on the linking column. A foreign key is a column in one table that refers to the primary key of another table; it is the standard way to link tables, and the foreign-keys topic covers it in depth. On its own, a foreign key allows repeats — many orders can point at the same customer. What turns a plain link into a one-to-one link is an extra rule: the linking column must not repeat. W3Schools describes the UNIQUE constraint as ensuring that all values in a column are unique, and Microsoft Learn states that a one-to-one relationship can be created when both tables each contain a column of common and unique values. So the design has two parts: the foreign key says the profile row must point at a real account, and the uniqueness rule says no two profile rows may point at the same account. Together they guarantee at most one match on each side, and the database itself refuses to store anything that breaks the rule."
+      "body": "The mechanism is a foreign key with a uniqueness rule on the linking column. A foreign-key column in one table points at the primary key of another table; it is the standard way to link tables, and the foreign-keys topic covers it in depth. On its own, a foreign key allows repeats — many orders can point at the same customer. What turns a plain link into a one-to-one link is an extra rule: the linking column must not repeat. W3Schools describes the UNIQUE constraint as ensuring that all values in a column are unique, and Microsoft Learn states that a one-to-one relationship can be created when both tables each contain a column of common and unique values. So the design has two parts: the foreign key says the profile row must point at a real account, and the uniqueness rule says no two profile rows may point at the same account. Together they guarantee at most one match on each side, and the database itself refuses to store anything that breaks the rule."
     },
     {
       "heading": "One-to-one versus one-to-many: passport versus orders",
@@ -58,7 +58,7 @@
     },
     {
       "term": "foreign key",
-      "definition": "A column in one table whose values reference the primary key of another table, linking the two tables."
+      "definition": "A column whose values point to the primary key of another table, linking the two."
     },
     {
       "term": "primary key",
@@ -292,7 +292,7 @@
     "researchedAt": "2026-08-21",
     "transformation": "Working definition, rarity, implementation mechanism, and design guidance verified against Microsoft Learn's Power BI relationship documentation, Microsoft Learn's one-to-one relationship guidance, and Wikipedia's cardinality (data modeling) article, plus four registry records (W3Schools, Microsoft Learn, PostgreSQL) reused verbatim for the foreign-key and uniqueness mechanism. Synthesized into original explanatory prose with original examples (person and passport, customer and orders, fitness club, community center, bookstore). No SQL shown, per the subject's conceptual-first literacy level; foreign-keys and the other relationship types referenced as sibling topics only."
   },
-  "contentHash": "2f0711c9fe5637a5",
+  "contentHash": "7da6bd1d39b6ebcc",
   "status": "source-verified",
   "public": false
 }

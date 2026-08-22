@@ -75,7 +75,7 @@
       "claim": "Constraints are rules on the data; if a user attempts to store data that would violate a constraint, an error is raised, so the database may reject an UPDATE that breaks a rule such as NOT NULL, uniqueness, or a foreign key.",
       "claimType": "EVERGREEN",
       "sourceIds": [
-        "postgresql-constraints"
+        "postgresql-ddl-constraints"
       ],
       "status": "supported"
     },
@@ -158,7 +158,7 @@
       "notes": "Official documentation (Tier A per subject source-map). Read live on 2026-08-21. Supports: an UPDATE statement is used to modify a subset of the values stored in one or more rows of a database table; without a WHERE clause all rows in the table are modified; otherwise only rows for which the WHERE boolean expression is true; a WHERE that matches no rows affects zero rows (not an error); SET assignments list a column name to the left of the equals sign and a scalar expression to the right. Facts synthesized; no wording reproduced."
     },
     {
-      "id": "postgresql-constraints",
+      "id": "postgresql-ddl-constraints",
       "title": "PostgreSQL 18 Documentation: 5.5. Constraints",
       "provider": "PostgreSQL",
       "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",

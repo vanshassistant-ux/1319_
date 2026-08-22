@@ -1,0 +1,195 @@
+{
+  "topicId": "databases-and-sql:foundations:indexes",
+  "subjectSlug": "databases-and-sql",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "working definition: an index is a structure the database builds to find rows faster",
+      "the book-index analogy (looking up a topic via the index versus reading every page)",
+      "how indexes speed reads: the database searches the index and jumps to matching rows instead of scanning",
+      "the trade-off: faster reads, slower writes, and storage space, each named",
+      "where indexes come from: automatically on primary keys; deliberately from designers elsewhere",
+      "scope note: this lesson is concepts only, not performance tuning",
+      "honest framing: indexes are invisible until they are missing"
+    ],
+    "supporting": [
+      "table scan as the no-index alternative",
+      "an index as a separate structure stored alongside the table",
+      "the query planner's role in choosing whether an index helps a request",
+      "the scan-can-be-faster nuance when a query needs most of a table's rows",
+      "primary-key auto-index noted as a reference to the primary-keys sibling topic"
+    ],
+    "outOfScope": [
+      "primary keys as a topic (sibling topic primary-keys owns it)",
+      "SQL syntax for creating indexes (CREATE INDEX and friends)",
+      "index types and internals (B-tree, clustered, nonclustered, covering indexes)",
+      "execution plans, index tuning, and performance optimization in depth",
+      "transactions (sibling topic transactions owns it)",
+      "vendor-specific index features"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "An index is a structure a database builds and maintains so it can find rows faster; documentation defines it as a structure associated with a table that speeds retrieval of rows.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "microsoft-learn-sql-server-index-design-guide",
+        "postgresql-indexes"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A database index works like the index at the back of a book: an ordered list of values, each with pointers to where the matching content is located.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "microsoft-learn-sql-server-index-design-guide"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Without an index, finding matching rows means a table scan: the database reads through the rows, checks each one, and keeps the matches.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "sqlite-query-planner",
+        "microsoft-learn-clustered-nonclustered-indexes"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "With an index, the database searches the index for the value and jumps to the matching rows, which is generally much faster than scanning the table.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "microsoft-learn-clustered-nonclustered-indexes",
+        "sqlite-query-planner"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Indexes have costs: they consume storage space and slow down writes, because every index must be kept updated when rows are added, changed, or removed.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3schools-sql-create-index",
+        "microsoft-learn-sql-server-index-design-guide",
+        "postgresql-indexes"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Adding a primary key to a table automatically creates an index on the key column or columns.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "postgresql-ddl-constraints"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Users never see or manage indexes; they exist only to speed up searches, and additional indexes are created deliberately by the people designing the database.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "w3schools-sql-create-index"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Choosing which columns to index is a balancing act between query speed, index-update cost, and storage cost, and is practitioner-level work beyond a concepts lesson.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "microsoft-learn-sql-server-index-design-guide"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Is an index always the fastest way to find rows?",
+      "positions": [
+        "Indexes generally make lookups much faster than scanning the whole table",
+        "When a query needs a large share of a table's rows, a full table scan can be the more efficient method"
+      ],
+      "resolution": "Microsoft's documentation states that a table scan could be the most efficient method when the result set is a high percentage of the table's rows. The lesson keeps the general claim that indexes speed reads, notes the scan nuance once in the college version, and does not prescribe tuning choices, which are out of scope."
+    }
+  ],
+  "unsupportedExistingClaims": [],
+  "correctionsNeeded": [],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "postgresql-indexes",
+      "title": "PostgreSQL Documentation: 11. Indexes",
+      "provider": "The PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/indexes.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Official PostgreSQL documentation, read live on 2026-08-21 (HTTP 200). Section 11.1 (Introduction): indexes are a common way to enhance database performance; an index allows the database server to find and retrieve specific rows much faster than it could without an index; indexes also add overhead to the database system as a whole, so they should be used sensibly. Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "microsoft-learn-sql-server-index-design-guide",
+      "title": "SQL Server index design guide (Microsoft Learn)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-index-design-guide",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live on 2026-08-21 (HTTP 200). Supplies the book-index analogy (the index at the end of a book is a sorted list of keywords with page numbers pointing to the pages where each keyword can be found; a rowstore index is similar: an ordered list of values with pointers to the data pages where the values are located), the definition of an index as an on-disk or in-memory structure associated with a table or view that speeds retrieval of rows, and the framing of index design as a balancing act between query speed, index-update cost, and storage cost. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "microsoft-learn-clustered-nonclustered-indexes",
+      "title": "Clustered and nonclustered indexes described (Microsoft Learn)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live on 2026-08-21 (HTTP 200). Describes the table scan (during a table scan the query optimizer reads all the rows in the table and extracts the rows that meet the criteria) versus an indexed lookup (the database searches the index key columns, finds the storage location of the rows needed, and extracts the matching rows), notes that searching the index is generally much faster than searching the table, and notes a scan can be the most efficient method when the result set is a high percentage of the table's rows. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "sqlite-query-planner",
+      "title": "SQLite: Query Planning",
+      "provider": "SQLite Consortium",
+      "url": "https://www.sqlite.org/queryplanner.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Official SQLite documentation, read live on 2026-08-21 (HTTP 200). Section 1.1: to satisfy a lookup without an index, SQLite reads every row out of the table and checks the column value, an algorithm called a full table scan. Section 1.3: an index is a separate structure that stores the indexed content in order, which the database engine can search directly to find matching rows. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "w3schools-sql-create-index",
+      "title": "SQL CREATE INDEX Statement (W3Schools SQL Tutorial)",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_create_index.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live on 2026-08-21 (HTTP 200). States the CREATE INDEX statement is used to create indexes on tables to speed up data retrieval; users cannot see the indexes, which exist only to speed up searches; updating tables with indexes is more time-consuming than updating tables without them because the indexes must also be updated; only create indexes on columns that are frequently searched against. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "postgresql-ddl-constraints",
+      "title": "PostgreSQL Documentation: Constraints (Section 5.5.4, Primary Keys)",
+      "provider": "PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Official PostgreSQL documentation, read live on 2026-08-21 (HTTP 200); record reused from the phase-2 source registry (primary-keys topic). Section 5.5.4: adding a primary key automatically creates a unique B-tree index on the column or group of columns listed in the primary key. Facts synthesized into original prose; no wording reproduced."
+    }
+  ]
+}

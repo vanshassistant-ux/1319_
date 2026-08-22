@@ -1,0 +1,248 @@
+{
+  "topicId": "databases-and-sql:foundations:transactions",
+  "subjectId": "databases-and-sql",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "A transaction is a group of database operations that must all succeed together or all be undone (the working definition, attributed to database documentation)",
+      "The classic example: moving money between two accounts — debit one, credit the other — as one operation",
+      "COMMIT makes a transaction's changes permanent; ROLLBACK undoes them (each named with one line)",
+      "The ACID properties named at intuition level: atomicity, consistency, isolation, durability",
+      "Why transactions matter: partial updates corrupt data (a transfer that debits but never credits)",
+      "Transactions in everyday apps: banking, booking systems, checkout",
+      "Honest framing: transactions are what make databases trustworthy under failure"
+    ],
+    "supporting": [
+      "By default, each SQL statement acts as its own tiny transaction (implicit BEGIN/COMMIT)",
+      "Grouping statements with BEGIN ... COMMIT / ROLLBACK creates one explicit transaction block",
+      "Unfinished changes of an open transaction are invisible to other transactions until it completes",
+      "Committed changes are recorded in permanent storage before the transaction is reported complete",
+      "Transactions stay atomic, consistent, isolated, and durable even across program crashes, OS crashes, and power failures"
+    ],
+    "outOfScope": [
+      "INSERT / UPDATE / DELETE statement mechanics (sibling topics: insert, update, delete)",
+      "Data integrity rules, constraints, and validation design (sibling topic: data-integrity)",
+      "Indexes and index maintenance (sibling topic: indexes)",
+      "Isolation levels, locking internals, and concurrency tuning (advanced material)",
+      "Vendor-specific transaction syntax beyond standard COMMIT/ROLLBACK"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "A transaction bundles multiple steps into a single, all-or-nothing operation; if a failure occurs before it completes, none of the steps affect the database at all.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "postgresql-docs-transactions",
+        "microsoft-learn-transactions-t-sql",
+        "wikipedia-database-transaction"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A transaction is a logical, atomic unit of work that contains one or more SQL statements (Oracle's phrasing), equivalently described as a single unit of work (Microsoft Learn).",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "oracle-docs-transactions",
+        "microsoft-learn-transactions-t-sql"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The classic transaction is a money transfer between two accounts: it requires subtracting the amount from one account and adding it to the other, and both operations must happen or neither does.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "postgresql-docs-transactions",
+        "wikipedia-acid",
+        "wikipedia-database-transaction"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "COMMIT makes a transaction's changes permanent (they become a permanent part of the database); ROLLBACK cancels all of the transaction's updates so far.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "postgresql-docs-transactions",
+        "microsoft-learn-transactions-t-sql",
+        "oracle-docs-transactions",
+        "sqlite-lang-transaction"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "ACID is the acronym for the four transaction properties: Atomic, Consistent, Isolated, and Durable.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "sqlite-transactional",
+        "wikipedia-acid"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Atomicity means a transaction happens completely or not at all; consistency means valid data stays valid; isolation means an open transaction's unfinished changes are invisible to other transactions; durability means committed changes survive crashes and power failures.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "sqlite-transactional",
+        "postgresql-docs-transactions",
+        "wikipedia-acid"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A partial update — a transfer that debits one account but never credits the other — corrupts data; the database documentation introduces transactions precisely to prevent this (a system failure must not credit someone without debiting the payer, or vice versa).",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "postgresql-docs-transactions",
+        "wikipedia-acid"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Banking is the canonical everyday use of transactions (PostgreSQL and Wikipedia both introduce them with bank transfers), and the same all-or-nothing guarantee underlies booking systems and checkouts, where several records must change together.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "postgresql-docs-transactions",
+        "wikipedia-database-transaction"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A transactional database guarantees that committed changes are recorded in permanent storage before the transaction is reported complete, so transactions remain atomic, consistent, isolated, and durable even across program crashes, operating system crashes, and power failures.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "postgresql-docs-transactions",
+        "sqlite-transactional"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether a single SQL statement is itself a transaction",
+      "positions": [
+        "PostgreSQL: every SQL statement is executed within a transaction; without an explicit BEGIN, each statement gets an implicit BEGIN and (if successful) COMMIT wrapped around it",
+        "Microsoft Learn: in autocommit mode, each individual statement is a transaction",
+        "SQLite: any command that accesses the database automatically starts a transaction if one is not already active"
+      ],
+      "resolution": "The lesson teaches one portable idea: by default each statement acts as its own tiny transaction, and grouping several statements with an explicit transaction block makes them one all-or-nothing package. No vendor-specific autocommit details are taught."
+    },
+    {
+      "issue": "How much durability a database can promise during a crash",
+      "positions": [
+        "PostgreSQL: all updates made by a transaction are logged in permanent storage before the transaction is reported complete",
+        "SQLite: transactions are atomic, consistent, isolated, and durable even if interrupted by a program crash, OS crash, or power failure",
+        "Some systems allow trading durability for speed via tunable settings (out of scope here)"
+      ],
+      "resolution": "The lesson states durability at intuition level — committed changes are stored durably and survive crashes — and does not discuss tunable durability or vendor defaults."
+    },
+    {
+      "issue": "Whether all databases enforce ACID identically",
+      "positions": [
+        "The ACID acronym is standard across database documentation (SQLite names all four properties; Wikipedia defines each)",
+        "Isolation in particular has levels and tunable strictness across systems (advanced material)"
+      ],
+      "resolution": "The lesson names the four properties with one-line plain meanings and deliberately leaves isolation levels and locking to advanced material, per the subject's conceptual-first literacy level."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "No machine-generated draft existed for this topic; the lesson was authored directly from live sources, so no generic-draft claims required replacement.",
+    "The lesson does not claim transactions make systems crash-proof; it claims they make failures safe by guaranteeing all-or-nothing outcomes — this framing is grounded in the sources' own statements about failure behavior."
+  ],
+  "correctionsNeeded": [
+    "All example scenarios are original (Bright Bean Cafe gift-card transfer; two-seat booking; checkout). The worked example's SQL behavior was executed against an in-memory SQLite database before inclusion: a BEGIN ... COMMIT transfer persisted both updates; a ROLLBACK issued after the debit restored the original balances; an error partway through a transaction followed by ROLLBACK left no partial change.",
+    "The lesson's SQL is intentionally minimal (BEGIN / COMMIT / ROLLBACK named, one short commented block) per the conceptual-first literacy level; full INSERT/UPDATE/DELETE syntax is owned by sibling topics and referenced only."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "postgresql-docs-transactions",
+      "title": "PostgreSQL Tutorial: Transactions",
+      "provider": "PostgreSQL",
+      "url": "https://www.postgresql.org/docs/current/tutorial-transactions.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B official documentation per subject source-map. Read live 2026-08-21. Supports: transactions bundle multiple steps into a single all-or-nothing operation; if a failure prevents completion, none of the steps affect the database; the bank-transfer example (payment between two customers' accounts, either all updates happen or none); atomic means it happens completely or not at all; updates of an open transaction are invisible to other transactions until it completes; updates are logged to permanent storage before the transaction is reported complete; BEGIN/COMMIT surround a transaction block; ROLLBACK cancels all updates so far; every SQL statement runs inside a transaction by default. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "sqlite-lang-transaction",
+      "title": "SQLite Query Language: Transaction",
+      "provider": "SQLite",
+      "url": "https://www.sqlite.org/lang_transaction.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B official documentation per subject source-map. Read live 2026-08-21. Supports: no reads or writes occur except within a transaction; any command that accesses the database automatically starts a transaction if none is active; COMMIT TRANSACTION and ROLLBACK TRANSACTION are the statements that end a transaction. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "sqlite-transactional",
+      "title": "SQLite: SQLite Is Transactional",
+      "provider": "SQLite",
+      "url": "https://www.sqlite.org/transactional.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B official documentation per subject source-map. Read live 2026-08-21. Supports: a transactional database is one in which all changes and queries appear to be Atomic, Consistent, Isolated, and Durable (ACID); SQLite implements serializable transactions that stay atomic, consistent, isolated, and durable even if interrupted by a program crash, an operating system crash, or a power failure. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "microsoft-learn-transactions-t-sql",
+      "title": "Microsoft Learn: Transactions (Transact-SQL)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-elements/transactions-transact-sql",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B official documentation per subject source-map. Read live 2026-08-21 (page text extracted from rendered HTML). Supports: a transaction is a single unit of work; if a transaction is successful, all data modifications made during it are committed and become a permanent part of the database; if it encounters errors and is rolled back, all data modifications are erased; explicit transactions start with BEGIN TRANSACTION and end with COMMIT or ROLLBACK. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "oracle-docs-transactions",
+      "title": "Oracle Database Concepts: Introduction to Transactions",
+      "provider": "Oracle",
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/23/cncpt/transactions.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Official vendor documentation. Read live 2026-08-21. Supports: a transaction is a logical, atomic unit of work that contains one or more SQL statements; a transaction ends when the user issues a COMMIT or ROLLBACK; in a commit, the user requests that the changes in the transaction be made permanent, and the changes are permanent and visible to other users only after the transaction commits. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "wikipedia-acid",
+      "title": "Wikipedia: ACID",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ACID",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier C supplementary reference. Read live 2026-08-21. Supports: ACID names four transaction characteristics — atomicity, consistency, isolation, durability; atomicity means a series of operations either all occur or none occur, preventing updates from occurring only partially; the monetary transfer from account A to account B (withdrawing plus depositing) as the canonical atomic transaction, keeping the database in a consistent state so money is neither debited nor credited if either operation fails. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "wikipedia-database-transaction",
+      "title": "Wikipedia: Database transaction",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Database_transaction",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier C supplementary reference. Read live 2026-08-21. Supports: a database transaction is a unit of work treated in a coherent and reliable way independent of other transactions; the transfer-from-one-bank-account-to-another example (subtracting from one account and adding the same amount to the other); a transaction must be atomic (complete in its entirety or have no effect whatsoever), consistent, isolated, and durable; all write operations within a transaction have an all-or-nothing effect. Facts synthesized; no wording reproduced."
+    }
+  ]
+}

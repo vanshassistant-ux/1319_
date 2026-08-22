@@ -26,7 +26,7 @@
   "collegeVersion": [
     {
       "heading": "Splitting rows into groups",
-      "body": "The working definition comes from the people who document SQL itself. W3Schools' SQL tutorial states that the GROUP BY statement is used to group rows that have the same values into summary rows, with the classic example “find the number of customers in each country.” The PostgreSQL documentation describes the same mechanism in plainer terms: GROUP BY condenses into a single row all selected rows that share the same values for the grouped expressions. SQLite's documentation fills in the mechanics: each row is assigned to a group based on the results of the GROUP BY expressions, and rows for which those results are the same get assigned to the same group. Put the three together and the working definition is short: GROUP BY splits rows into groups, and the query computes one summary per group. Every row that shares the same value in the grouped column lands in one group, and each group contributes exactly one row to the result."
+      "body": "The definition comes straight from the language's documentation. W3Schools' SQL tutorial says the GROUP BY statement groups rows that share values into summary rows, with the classic example “find the number of customers in each country.” The PostgreSQL documentation describes the same mechanism in plainer terms: GROUP BY condenses into a single row all selected rows that share the same values for the grouped expressions. SQLite's documentation fills in the mechanics: each row is assigned to a group based on the results of the GROUP BY expressions, and rows for which those results are the same get assigned to the same group. Between them, the sources give a short working definition: GROUP BY splits rows into groups, and the query computes one summary per group. Every row that shares the same value in the grouped column lands in one group, and each group contributes exactly one row to the result."
     },
     {
       "heading": "The basic shape",
@@ -285,7 +285,7 @@
     "researchedAt": "2026-08-21",
     "transformation": "Working definitions and processing-order rules synthesized from three documentation sources into original prose; all example queries designed for this lesson and verified by executing them against SQLite before publishing."
   },
-  "contentHash": "6c73c6a5dbb6d0be",
+  "contentHash": "fb755b475259727d",
   "status": "source-verified",
   "public": false
 }

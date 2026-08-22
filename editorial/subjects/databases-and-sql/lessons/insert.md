@@ -20,7 +20,7 @@ A database that only reads is a museum: the rows that answer every question had 
 
 ### The write command that adds rows
 
-The working definition comes from the people who document SQL itself. W3Schools' SQL tutorial states that the INSERT INTO statement is used to insert new records in a table, and PostgreSQL's documentation puts the same idea in plainer words: the INSERT statement is used to populate a table with rows. SQLite describes the result of the VALUES form the same way, as creating one or more new rows in an existing table. Put the three together and the working definition is short: INSERT adds a new row to a table. That is the entire job. Everything else in this lesson is detail around that one sentence — the shape of the statement, how values find their columns, and what the database checks before it lets a row in.
+The definition follows the language's own documentation. W3Schools' SQL tutorial says the INSERT INTO statement inserts new records in a table, and PostgreSQL's documentation puts the same idea in plainer words: the INSERT statement is used to populate a table with rows. SQLite describes the result of the VALUES form the same way, as creating one or more new rows in an existing table. Combined, those descriptions yield a short definition: INSERT adds a new row to a table. That is the entire job. The rest of this lesson is detail around that single sentence — the shape of the statement, how values find their columns, and what the database checks before it lets a row in.
 
 ### The basic shape of an INSERT statement
 
@@ -40,7 +40,7 @@ A table can carry rules about what its rows may contain, and INSERT is where tho
 
 ### Writing versus reading
 
-INSERT belongs to the writing family of SQL commands, and the contrast with SELECT is the sharpest way to see it. SQLite's SELECT reference states that a SELECT statement does not make any changes to the database; its INSERT reference describes the opposite — the VALUES form creates new rows in an existing table. A SELECT query can be run a hundred times with the same result. An INSERT run once changes the stored table, and the row stays there until some later write removes or alters it. SELECT asks questions; INSERT hands in new rows. That permanence is the difference between reading and writing, and it is why INSERT deserves care. SELECT, update, and delete each have their own lessons.
+INSERT belongs to the writing family of SQL commands, and the contrast with SELECT is the sharpest way to see it. SQLite's SELECT reference states that SELECT never changes the database; its INSERT reference describes the opposite — the VALUES form creates new rows in an existing table. A SELECT query can be run a hundred times with the same result. An INSERT run once changes the stored table, and the row stays there until some later write removes or alters it. SELECT asks questions; INSERT hands in new rows. That permanence is the difference between reading and writing, and it is why INSERT deserves care. SELECT, update, and delete each have their own lessons.
 
 ### The honest framing: data enters here
 
@@ -128,7 +128,7 @@ INSERT is how data enters a database: it adds a new row to a table, matching val
 - INSERT reads rows and SELECT writes them.
 - SELECT changes nothing; INSERT permanently adds a row to the stored table.
 
-**Key: D.** SQLite's documentation states that a SELECT statement does not make any changes to the database, while its INSERT reference describes INSERT as creating new rows in an existing table. INSERT is a write: the row stays stored until a later write removes or changes it.
+**Key: D.** SQLite's documentation states that SELECT never changes the database, while its INSERT reference describes INSERT as creating new rows in an existing table. INSERT is a write: the row stays stored until a later write removes its or changes it.
 ## Sources
 
 - W3Schools — "SQL INSERT INTO Statement". https://www.w3schools.com/sql/sql_insert.asp
