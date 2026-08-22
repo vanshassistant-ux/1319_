@@ -1,0 +1,144 @@
+# Ethics
+
+## In 30 Seconds
+
+Ethics in healthcare is the set of principles that guide right action in care — the difference between what a nurse can do and what a nurse should do. Four principles carry most of the weight: autonomy, beneficence, nonmaleficence, and justice. The American Nurses Association's Code of Ethics for Nurses is the profession's standard for ethical practice, and it is a living document, revised as care changes. When principles pull in different directions, that is an ethical dilemma — and nurses work through them with ethics committees, chaplains, and colleagues, always holding one core role: advocate for the patient.
+
+## Why This Matters
+
+Healthcare runs on decisions, and the hardest ones are ethical. Every shift a nurse supports a patient's choice, protects a patient from harm, or speaks up for a patient who cannot speak for themselves — that is ethics in action, not an abstract class. Academically, the four principles and the ANA Code of Ethics anchor every fundamentals course and appear in exam scenarios. Practically, they give nurses a shared language for hard conversations with patients, families, and teams. And looking ahead, the same principles return in later topics — informed consent, confidentiality, end-of-life decisions — so this lesson is the foundation the rest of care stands on.
+
+## Learning Objectives
+
+- Define ethics in healthcare as the set of principles that guide right action in care, using the ANA's framing of the Code of Ethics for Nurses as the standard that guides nursing decisions.
+- Name the four main ethical principles — autonomy, beneficence, nonmaleficence, and justice — and give an original example of each.
+- Explain what the ANA Code of Ethics for Nurses is and why it is a living document.
+- Distinguish an ethical dilemma from an everyday hard call, and identify the helpers available to nurses: ethics committees, chaplains, and colleagues.
+- Apply the principles to analyze a care scenario and identify the best ethical response, including the nurse's role as patient advocate.
+
+## The College Version
+
+### What ethics in healthcare is
+
+Ethics is a branch of philosophy — the study of what is right and wrong — and in healthcare it appears as the set of principles that guide right action in care. The American Nurses Association states the stakes plainly: life-and-death decisions are a part of nursing, and ethics are therefore fundamental to the integrity of the profession. The ANA's Code of Ethics for Nurses — called simply "the Code" — is the profession's standard for ethical nursing practice, the resource that guides nurses as they make patient care and practice decisions. The working definition for this lesson: ethics in healthcare is the set of principles that guide right action in care. It is not a list of rules to memorize but a way of thinking used every shift. Most decisions are ethically clear-cut; the principles exist for the moments when they are not.
+
+### The four principles
+
+Four principles carry most of the weight in everyday care. Autonomy: patients have the right to make their own decisions. Original example — Mr. Chen, alert and fully informed, decides against a recommended screening; his nurse makes sure he understands the recommendation, then supports his choice. Beneficence: do good for the benefit of the patient. Example — a nurse notices a patient who has had no visitors all week and quietly arranges for a volunteer to sit with him; nothing in the orders required it, but it served the patient's good. Nonmaleficence: do no harm, intentionally or unintentionally, and protect those who cannot protect themselves. Example — a nurse pauses before giving a morning medication, checks the allergy band, and catches a documented allergy in time. Justice: treat all people equally and judge them on the same criteria, no matter who they are, what illness they have, or how much money they have. Example — in triage, the same urgency rules apply to the patient without insurance as to the patient with a private plan. Some lists add more principles — fidelity, veracity, accountability, confidentiality — but these four are the core set taught here; confidentiality has its own lesson.
+
+### The Code of Ethics for Nurses
+
+Nursing has a formal code of its own. The ANA Code of Ethics for Nurses — "the Code" — is the definitive standard for ethical nursing practice in the United States, published by the American Nurses Association, and it guides nurses as they make patient care and practice decisions. Its nine provisions cover the ground of ethical practice: respect for every person's dignity, the nurse's primary commitment to the patient, protection of patients' rights and safety, accountability, and the profession's duty to advance justice and health equity. The honest note: the Code is a living document. The most recent edition was published in 2015 and reaffirmed in the fourth edition of the ANA Scope and Standards for Nursing Practice, published in 2021. The ANA says it plainly: the Code evolves to address today's pressing healthcare demands. It is revised on purpose, because care changes and the questions change with it.
+
+### Ethical dilemmas and who helps
+
+An ethical dilemma is not the same as a hard medical call. A dilemma occurs when the nurse must choose between two or more actions that are each defensible — both good, both bad, or of unknown benefit — often because two principles pull in opposite directions. Original example: Mrs. Alvarez, an older adult who lives alone, wants to go home; her daughter wants her to enter a rehabilitation stay. Autonomy says honor Mrs. Alvarez's wish; nonmaleficence says protect her from harm. Both are right, and a choice must be made. No nurse faces this alone. The facility's ethics committee — a group that meets regularly to address ethical issues, usually including providers, nurses, chaplains, legal representation, and sometimes community members — can clarify options or help make a decision. Chaplains are present in many facilities, offering patients a spiritual resource. And colleagues matter most of all: the ANA notes that every day, nurses support each other to fulfill their ethical obligations to patients and the public. Ethical decisions are made alone or as part of the healthcare team — the point is that the team is there.
+
+### The nurse as advocate
+
+Advocacy — publicly lending one's voice and support to a cause, person, or policy — is a core component of professional nursing. For the patient, it means protecting them from harm, making sure their wishes are heard and understood by the rest of the team, teaching them what they need to know, and speaking up against injustice. Stated simply: the nurse is the patient's advocate. And the honest framing: ethics is the compass for hard days. Most shifts are ethically clear-cut — most day-in and day-out decisions a nurse makes are very clear-cut in terms of their ethics. The days that are not are exactly when the principles, the Code, and the people around you do their work.
+
+## Key Vocabulary
+
+- **ethics** — The branch of philosophy concerned with what is right and wrong; in healthcare, the set of principles that guide right action in care.
+- **autonomy** — The ethical principle that patients have the right to make their own decisions about their care.
+- **beneficence** — The ethical principle of acting for the good of the patient.
+- **nonmaleficence** — The ethical principle of doing no harm — intentionally or unintentionally — and protecting those who cannot protect themselves.
+- **justice** — The ethical principle of treating all people equally and applying the same criteria to everyone, regardless of who they are or what they have.
+- **ethical dilemma** — A situation in which a nurse must choose between two or more defensible actions, often because ethical principles pull in different directions.
+- **ethics committee** — A facility group that meets regularly to address ethical issues, often including providers, nurses, chaplains, legal representation, and community members.
+- **advocacy** — Publicly lending one's voice and support to a cause, person, or policy; for nurses, making sure the patient's wishes are heard and respected.
+- **ANA Code of Ethics for Nurses** — The American Nurses Association's standard for ethical nursing practice, often called "the Code," most recently published in 2015.
+
+## Eli-10
+
+Ethics in healthcare is the set of principles that guide right action in care — the difference between what you can do and what you should do. Four principles carry most of the weight. Autonomy: patients decide for themselves. Beneficence: do good. Nonmaleficence: do no harm. Justice: treat everyone fairly, on the same criteria. The American Nurses Association's Code of Ethics for Nurses — "the Code" — is nursing's standard for ethical practice. The most recent edition came out in 2015, and the Code is revised on purpose, because care changes. When two principles pull in opposite directions — a patient wants something and safety argues against it — that is an ethical dilemma. Nurses work dilemmas through with ethics committees, chaplains, and colleagues, and their core role is advocacy: making sure the patient's wishes are heard.
+
+## Eli's Analogy
+
+A compass does not make the road easy — it tells you which way is north when you are lost. Ethics works the same way on hard days: it does not remove the hard choice, it points at the direction worth walking, so you are not deciding blind. The Code of Ethics is the compass face, the four principles are the markings on it, and the people around you — the ethics committee, the chaplain, your colleagues — are the ones who help you read it.
+
+Where the analogy breaks down: a compass has one north, but an ethical dilemma can have two defensible answers — the principles point at values, not a single coordinate. A compass never changes, while the Code is revised as healthcare changes. And a compass works alone in your pocket; ethics is meant to be worked through with other people.
+
+## Worked Example
+
+Mrs. Alvarez, seventy-eight and living alone, wants to be discharged home; her daughter wants her to enter a rehabilitation stay. The nurse sees the dilemma immediately: autonomy says honor Mrs. Alvarez's choice, nonmaleficence worries about a fall or missed meals. Instead of picking a side, the nurse listens to both women, asks Mrs. Alvarez what support at home would look like, and brings the question to the care team. Together they arrange a home-safety visit and a daily meal service, and Mrs. Alvarez goes home with a plan. The principles did not make the choice for the nurse — they made sure the choice was examined from every side before anyone acted.
+
+## Common Mistakes
+
+- **"Ethics and law are the same thing."** The law sets the enforceable floor — what a nurse must do. Ethics guides right action — what a nurse should do. A choice can be perfectly legal and still ethically difficult, which is why the principles and the Code exist.
+- **"An ethical dilemma has one right answer if you look hard enough."** A dilemma is defined by two or more defensible actions pulling in different directions. The work is not finding a hidden right answer; it is deciding which action best fits the patient's situation, guided by the principles, the Code, and the team.
+- **"Nonmaleficence only means not harming on purpose."** It covers unintentional harm too — which is why double-checking medications and protecting patients who cannot protect themselves are nonmaleficence in action.
+- **"Autonomy means the patient decides alone, so the nurse stays out of it."** Autonomy means the patient has the right to decide; the nurse's job is to make sure the decision is informed and then support it. The patient decides; the nurse provides information and advocacy.
+- **"Ethics committees exist to discipline nurses."** Ethics committees address ethical issues and help clarify options when a team is stuck. Nurses are encouraged to use them whenever they have questions about whether a situation is fully ethical.
+
+## Compare / Contrast
+
+- **Ethical consideration vs. Ethical dilemma:** A consideration is a moment when the nurse must think through which option is more ethical; a dilemma is a forced choice between two or more defensible actions, often because principles conflict.
+- **Ethics vs. Law:** Ethics guides right action — what a nurse should do; the law sets enforceable minimums — what a nurse must do. A legal choice can still be ethically difficult.
+- **Beneficence vs. Nonmaleficence:** Beneficence is active — doing good for the patient; nonmaleficence is restraint — avoiding harm, including unintentional harm. They often work together but answer different questions.
+
+## Key Takeaway
+
+Ethics in healthcare is the compass for hard days: the four principles and the ANA Code of Ethics guide right action, and the nurse's core role is advocating for the patient. When principles conflict, no nurse decides alone.
+
+## Practice Question Bank
+
+1. **Mr. Chen, alert and fully informed about the risks, tells his nurse he does not want the recommended cancer screening and asks what watching and waiting would look like. The nurse explains the options and supports his choice. Which ethical principle is the nurse practicing?**
+   - Autonomy — respecting the patient's right to make his own decisions.
+   - Beneficence — doing what the nurse believes is best for the patient.
+   - Nonmaleficence — avoiding harm from the screening itself.
+   - Justice — giving the patient the same options as everyone else.
+   - **Correct:** A — Autonomy is the principle that patients have the right to make their own decisions, and the nurse honors it by making sure Mr. Chen is informed and then supporting his choice. Option B is beneficence (acting for the patient's good), but overriding an informed choice would not be acting for his good. Option C is nonmaleficence, about avoiding harm. Option D is justice, about treating all patients equally — a real principle, but not the one this scenario tests.
+
+2. **Mrs. Alvarez, an older adult who lives alone, wants to go home; her daughter believes a rehabilitation stay would be safer and asks the nurse to persuade her. The nurse sees good reasons on both sides: autonomy supports Mrs. Alvarez's wish, while nonmaleficence worries about harm. Which term best describes this situation?**
+   - A documentation error that must be corrected immediately.
+   - An ethical dilemma — a choice between two defensible actions pulling in different directions.
+   - A legal violation that must be reported to the charge nurse.
+   - An ethical consideration with one clearly correct answer.
+   - **Correct:** B — An ethical dilemma occurs when a nurse must choose between two or more defensible actions — here, honoring Mrs. Alvarez's wish (autonomy) versus protecting her from harm (nonmaleficence). Option A confuses the situation with a charting problem, option C with a legal matter, and option D misses the point: a dilemma has no single obvious answer, which is why the nurse works through it with principles and the team.
+
+3. **A nursing student is reviewing the four main ethical principles taught in this lesson. Which list is correct?**
+   - Accountability, fidelity, veracity, confidentiality.
+   - Autonomy, accountability, fidelity, veracity.
+   - Autonomy, beneficence, nonmaleficence, justice.
+   - Beneficence, confidentiality, justice, veracity.
+   - **Correct:** C — The four main principles taught in this lesson are autonomy, beneficence, nonmaleficence, and justice. Options A, B, and D each contain real principles — accountability, fidelity, veracity, and confidentiality appear on some longer lists — but none of them is the core set of four this lesson teaches, and confidentiality belongs to its own sibling lesson.
+
+4. **In an emergency department, two patients arrive at the same time with similar chest pain: one has private insurance and one has none. The triage nurse applies the same assessment criteria to both. Which ethical principle is the nurse practicing?**
+   - Autonomy — both patients may refuse care.
+   - Beneficence — doing good for both patients.
+   - Nonmaleficence — avoiding harm to either patient.
+   - Justice — treating all patients equally, judging on the same criteria.
+   - **Correct:** D — Justice requires nurses to treat all people equally and judge them on the same criteria, no matter who they are, what illness they have, or how much money they have. Autonomy (option A) concerns patients' decisions, beneficence (option B) is doing good, and nonmaleficence (option C) is avoiding harm; all are real principles, but this scenario tests fairness in applying the same standard.
+
+5. **A new graduate asks her preceptor what the ANA Code of Ethics for Nurses is. Which description is accurate?**
+   - The profession's standard for ethical nursing practice — it guides nurses as they make patient care and practice decisions.
+   - A state law listing the legal duties of registered nurses.
+   - A hospital policy about documentation and charting.
+   - A billing manual used by hospital finance offices.
+   - **Correct:** A — The ANA Code of Ethics for Nurses — "the Code" — is the definitive standard for ethical nursing practice in the United States, guiding nurses as they make patient care and practice decisions. Option B confuses the Code with state law, option C with a facility policy, and option D with administrative documents — none of these is the profession's ethical standard.
+
+## Sources
+
+- American Nurses Association, "Code of Ethics for Nurses" — https://www.nursingworld.org/practice-policy/nursing-excellence/ethics/code-of-ethics-for-nurses/ (read 2026-08-22)
+- OpenStax (Rice University), "Fundamentals of Nursing," Section 16.2 Ethics in Nursing Practice — https://openstax.org/books/fundamentals-nursing/pages/16-2-ethics-in-nursing-practice (read 2026-08-22)
+- OpenStax (Rice University), "Fundamentals of Nursing," Section 16.4 Advocacy in Nursing Practice — https://openstax.org/books/fundamentals-nursing/pages/16-4-advocacy-in-nursing-practice (read 2026-08-22)
+- OpenStax (Rice University), "Fundamentals of Nursing," Section 35.2 Applications of Spirituality to Health Care — https://openstax.org/books/fundamentals-nursing/pages/35-2-applications-of-spirituality-to-health-care (read 2026-08-22)
+
+All sources used reference-only: facts verified, prose and examples original.
+
+## Related Topics
+
+- nursing-and-allied-health-foundations:foundations:informed-consent
+- nursing-and-allied-health-foundations:foundations:confidentiality
+- nursing-and-allied-health-foundations:foundations:healthcare-team-roles
+- nursing-and-allied-health-foundations:foundations:communication
+
+## Editorial Metadata
+
+- **Topic ID:** nursing-and-allied-health-foundations:foundations:ethics
+- **Editorial status:** READY_TO_PUBLISH
+- **Research status:** source-verified (ANA, OpenStax Fundamentals of Nursing)
+- **Researched:** 2026-08-22
+- **Literacy level:** general
