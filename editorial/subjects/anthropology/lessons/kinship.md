@@ -1,4 +1,4 @@
-# Kinship
+*Answer:* D. *Explanation:*# Kinship
 
 ## In 30 Seconds
 
@@ -125,12 +125,12 @@ Kinship is the web of relatedness every society weaves: how belonging is traced 
    **Answer: C.** Fictive kin are people whose kinship is socially recognized though it rests on intentional relationships such as adoption — exactly this case, so C. A requires a blood connection, B requires marriage, and D confuses a chosen parent with a descent line.
 
 5. **In Calandra, a girl calls her mother's sister "mother," and that sister holds a mother's rights and duties over her. In Ashford, the same biological relationship is called "aunt," with lighter duties. What does this comparison best illustrate?**
-   - A. Kinship terminology maps onto rights and duties, so the same biological relationship can carry different social weight in different systems.
+   - A. The two towns differ only in vocabulary, with no social consequences.
    - B. Calandra's terminology is more accurate than Ashford's.
    - C. Kinship terms are set by the amount of time relatives spend together.
-   - D. The two towns differ only in vocabulary, with no social consequences.
+   - D. Kinship terminology maps onto rights and duties, so the same biological relationship can carry different social weight in different systems.
 
-   **Answer: A.** The comparison shows terminology encoding social roles: Calandra's classificatory usage (mother's sister called "mother") carries a mother's duties, while Ashford's "aunt" carries less — option A. B is a value judgment anthropology does not make; C and D ignore that terms track obligations, not time spent or mere words.
+   **Answer: D.** The comparison shows terminology encoding social roles: Calandra's classificatory usage (mother's sister called "mother") carries a mother's duties, while Ashford's "aunt" carries less — option A. B is a value judgment anthropology does not make; C and D ignore that terms track obligations, not time spent or mere words.
 
 ## Sources
 
