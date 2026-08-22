@@ -1,0 +1,162 @@
+# Maternal and Child Health
+
+## In 30 Seconds
+
+Maternal and child health is the public health field focused on the health of mothers, infants, and children. Its work follows a care continuum that starts before pregnancy and moves through prenatal care, birth, the postpartum period, and early childhood. Programs such as prenatal care, childhood immunization, and nutrition support carry that continuum, delivered by obstetricians, pediatricians, nurses, and community workers. Child survival has improved dramatically worldwide, yet gaps remain, which is why this field still matters.
+
+## Why This Matters
+
+What happens before birth and in the first years of life helps shape health for decades, which is why the U.S. Maternal and Child Health Bureau describes its work as a life course approach. Maternal and child health is also a measurable test of a health system: maternal and child survival statistics are among the most closely watched indicators in the world. Understanding the field lets you see ordinary services, a prenatal visit, a childhood vaccine, a nutrition program, as long-term investments rather than one-time events, and it names the people who deliver them, from obstetricians to community health workers. If you study public health, work in health policy, or simply want to know how societies protect their youngest members, this is where the story starts.
+
+## Learning Objectives
+
+- Define maternal and child health as the field focused on the health of mothers, infants, and children, attributing the working definition to HRSA's Maternal and Child Health Bureau.
+- Explain why early life shapes later health, using the life course approach that the Maternal and Child Health Bureau applies to its work.
+- Name the five stages of the maternal and child health care continuum, preconception, prenatal, birth, postpartum, and early childhood, with one line on each.
+- Describe three core programs, prenatal care, childhood immunization, and nutrition support such as WIC, and what each one does.
+- Summarize the global picture with dated, attributed figures: maternal and child survival have improved, and gaps remain.
+- Identify the main maternal and child health workforce roles, obstetricians, pediatricians, nurses and midwives, and community health workers, with one line on each.
+
+## The College Version
+
+### What maternal and child health is
+
+Maternal and child health (MCH) is the public health field concerned with the health of mothers, infants, and children. The working definition most often used in the United States comes from the federal Maternal and Child Health Bureau (MCHB), whose mission is to improve the health and well-being of America's mothers, children, and families. The World Health Organization frames the maternal half the same way: maternal health refers to the health of women during pregnancy, childbirth, and the postnatal period. Two features make MCH distinctive. First, it follows a life stage rather than a disease or organ: one field covers a woman's health before pregnancy, her care while pregnant, the birth, the weeks after delivery, and her child's first years. Second, it blends clinical care with population-level programs: it belongs to public health as much as to medicine.
+### Why early life matters
+
+The core argument of the field is that early life shapes later health. MCHB states that it takes a life course approach to improving the health and well-being of mothers, children, and families, meaning conditions in pregnancy and early childhood influence health across a lifetime. This is not a claim that childhood decides a person's fate: early experiences and exposures set trajectories that later care can shift but rarely erase. The WHO adds that child health, growth, and development are inseparable. Because the stakes concentrate in a short window, MCH programs aim at the moments when intervention is cheapest and most effective.
+### The care continuum
+
+MCH is organized around a continuum of care with five stages. Preconception care addresses a woman's health before pregnancy, managing conditions such as diabetes and checking immunization status so pregnancy starts in good health. Prenatal care is the regular checkups and testing during pregnancy, letting providers spot problems early. Birth is the delivery itself, and the WHO notes that care by skilled health professionals before, during, and after childbirth can save the lives of women and newborns. The postpartum period is the weeks after delivery, when the mother recovers and both mother and newborn are monitored. Early childhood covers the first years of life, with well-child visits, immunization, and growth monitoring. The continuum matters because health is not reset at each stage: each one carries into the next.
+### The programs
+
+Three program families carry the continuum in practice. Prenatal care is what most people meet first: regular visits with an obstetrician or midwife, with checkups and testing that keep mother and fetus healthy and catch problems early. Immunization programs protect children from preventable diseases; WHO data show that a third dose of the diphtheria-tetanus-pertussis vaccine reached 85 percent of the world's children in 2025, while 13.5 million children got no vaccines that year. Nutrition programs address the food side: in the United States, WIC, the Special Supplemental Nutrition Program for Women, Infants, and Children, provides healthy foods, nutrition education, breastfeeding support, and referrals for low-income pregnant and postpartum women and children up to age five. Together they show the field's strategy: prevent problems before they start, catch them early, and support families between visits.
+### The global picture
+
+By the numbers, the field has real wins. The WHO's child mortality fact sheet, updated May 2026, puts the global under-five mortality rate at 37.4 deaths per 1,000 live births in 2024, less than half its level in 2000, with an estimated 4.9 million under-five deaths in 2024. Maternal mortality has fallen too: WHO reports the maternal mortality ratio dropped about 40 percent between 2000 and 2023, though about 260,000 women still died during and following pregnancy and childbirth in 2023. The gaps are as striking as the gains. More than 90 percent of maternal deaths occur in low- and lower-middle-income countries, more than 80 percent of under-five deaths occur in sub-Saharan Africa and Southern Asia, and nearly half of under-five deaths happen in the first 28 days of life. WHO warns the pace of progress has slowed since 2015. The honest summary: survival has improved on a scale few other health fields can match, and the remaining burden is heavily concentrated where resources are thinnest.
+### Who does the work
+
+MCH is a team field. Obstetricians are physicians who specialize in pregnancy and childbirth; midwives and nurse-midwives provide prenatal care and attend births, and either typically provides prenatal care. Pediatricians are physicians committed to the health and well-being of infants, children, adolescents, and young adults, in the American Academy of Pediatrics' framing. Public health nurses, pediatric nurses, and labor and delivery nurses deliver much of the day-to-day care and run many MCH programs. Community health workers are frontline public health workers who are trusted members of, or have an unusually close understanding of, the community they serve, linking families to services, often the people who make the continuum reachable in practice.
+### The honest framing: the field that builds the future
+
+Maternal and child health is, in the simplest terms, the field that builds the future: every person begins as a mother's pregnancy and a child's first years. The reality check cuts both ways. The improvements are genuine and measurable, the product of programs that mostly work quietly. But progress has slowed, most maternal deaths are preventable, and the remaining gaps track poverty and geography. The field is also chronically under-resourced relative to its ambitions. None of that makes the work less important. The honest story is this: a field with proven tools, uneven reach, and no finished business.
+
+## Key Vocabulary
+
+- **Maternal and child health:** The public health field focused on the health of mothers, infants, and children; in the United States, the Maternal and Child Health Bureau frames it as improving the health and well-being of mothers, children, and families.
+- **Life course approach:** A way of working that treats health in early life as shaping health across the lifespan, rather than treating each stage of life in isolation.
+- **Care continuum:** The linked sequence of care stages, preconception, prenatal, birth, postpartum, and early childhood, that maternal and child health programs follow.
+- **Prenatal care:** The health care a woman receives during pregnancy, including regular checkups and testing, typically provided by an obstetrician or a midwife.
+- **Postpartum period:** The weeks after childbirth, when the mother recovers and both mother and newborn are monitored.
+- **Maternal mortality ratio:** The number of maternal deaths per 100,000 live births; the WHO's headline measure of maternal survival.
+- **Under-five mortality rate:** The number of children per 1,000 live births who die before their fifth birthday.
+- **Obstetrician:** A physician who specializes in pregnancy, childbirth, and the care of women during and after pregnancy.
+- **Pediatrician:** A physician who specializes in the health of infants, children, adolescents, and young adults.
+- **Community health worker:** A frontline public health worker who is a trusted member of, or has an unusually close understanding of, the community served, and who links people to services.
+
+## Eli-10
+
+**The simple version.** Maternal and child health is the branch of public health that looks after everyone's start in life. It cares for the health of women before, during, and after pregnancy, and for children in their first years. The field runs programs you can point to: prenatal checkups, childhood vaccines, nutrition help for families who need it. It works on one big idea: a healthy start gives a child a better chance at a healthy life, so the field keeps watch over the whole journey, from before birth through the early years.
+
+## Eli's Analogy
+
+**The analogy.** Think of building a house. Maternal and child health is the work done on the foundation and the frame. You can decorate the rooms later, and good doctors, good habits, and good luck all matter as the house is lived in, but cracks in the foundation are expensive to fix and they show up in every floor above. The field's job is to pour the foundation well: healthy mothers, safe births, fed and vaccinated children, so the rest of life has something solid to stand on.
+
+**Where the analogy breaks down.** The house analogy breaks down because a person is not a building. Health is never finished being built: a difficult start can be repaired by good care later in life, and a strong start does not guarantee a healthy adulthood. People keep growing and changing, so early-life work reduces risk rather than deciding anyone's future.
+
+## Worked Example
+
+Lakeview County's health department noticed two patterns in its data: Spanish-speaking residents were entering prenatal care later than other groups, and the east side of the county had no WIC clinic within a reasonable bus ride. Rather than run a generic awareness campaign, the department opened a weekly prenatal clinic at the east-side community center with an interpreter on staff, and arranged for a WIC outreach worker to enroll families on the spot and connect them to the clinic. Within a year, the share of east-side mothers beginning prenatal care in the first trimester rose from roughly half to about three-quarters, and WIC enrollment among eligible families doubled. No single visit did that; the continuum did, because the county made it easier for families to enter the system early and stay in it.
+
+## Common Mistakes
+
+1. **Thinking maternal and child health is only about babies.**
+   - *Correction:* The maternal half of the name matters as much as the child half. The field covers a mother's health before pregnancy, during pregnancy, and after birth, because her health is part of the continuum, not just a backdrop to the baby's.
+2. **Treating maternal and child health as the same thing as pediatrics.**
+   - *Correction:* Pediatrics is the medical specialty for children; MCH is the public health field that spans clinical care plus population programs such as immunization drives, nutrition support, and surveillance of maternal and child outcomes. Medicine is one tool the field uses.
+3. **Assuming the care continuum starts at birth.**
+   - *Correction:* The continuum starts before pregnancy with preconception care, then runs through prenatal care, birth, the postpartum period, and early childhood. Each stage carries into the next.
+4. **Reading "survival has improved" as "the problem is solved."**
+   - *Correction:* WHO data show the under-five mortality rate has fallen to less than half its 2000 level, but about 4.9 million children under five still died in 2024, progress has slowed since 2015, and most maternal deaths are preventable. Improvement and unfinished business are both true.
+
+## Compare / Contrast
+
+- **Maternal and child health vs. Global health:** MCH is a population focus, mothers, infants, and children, that can be practiced at any geographic scale; global health is the field of health issues that cross national borders. Global maternal and child health is where the two overlap, which is why the global-health lesson is a sibling topic.
+- **Prenatal care vs. Preconception care:** Prenatal care happens during pregnancy; preconception care happens before it, addressing a woman's health so pregnancy starts well. Same goal, a healthy pregnancy, different timing on the continuum.
+- **Obstetrician vs. Pediatrician:** An obstetrician specializes in pregnancy and childbirth, the maternal side; a pediatrician specializes in infants, children, and adolescents, the child side. Between them, the two specialties cover the middle and later stages of the continuum.
+- **Immunization programs vs. Nutrition programs:** Both are MCH prevention programs, but immunization protects against infectious diseases by training the immune system, while nutrition programs such as WIC provide food and education to support growth and development.
+
+## Key Takeaway
+
+Maternal and child health is the field that builds the future: a healthy start for mothers and children pays off across a lifetime, and the continuum of care, from before pregnancy through early childhood, is how the field delivers it.
+
+## Practice Question Bank
+
+1. **A county health department is updating its website and wants one sentence that describes what maternal and child health is. Which sentence matches the working definition used by HRSA's Maternal and Child Health Bureau?**
+   - A. The branch of medicine that treats illnesses in children and teenagers.
+   - B. The public health field focused on the health of mothers, infants, and children, improving the health and well-being of mothers, children, and families.
+   - C. The study of how diseases spread across national borders.
+   - D. The personal health habits of individual families.
+
+   **Answer: B.** The Maternal and Child Health Bureau's mission frames the field as improving the health and well-being of America's mothers, children, and families, which matches option B. Option A describes pediatric medicine alone, option C describes global health or infectious-disease epidemiology, and option D describes individual lifestyle rather than a public health field.
+
+2. **A public health student maps a family's services: a clinic visit that manages a woman's diabetes before she becomes pregnant, monthly checkups during pregnancy, a delivery attended by a midwife, a six-week postpartum visit, and a two-year-old's well-child visit. Which concept does this map illustrate?**
+   - A. Secondary prevention for a single disease.
+   - B. Disease surveillance of a community.
+   - C. Herd immunity through vaccination.
+   - D. The continuum of care from preconception through early childhood.
+
+   **Answer: D.** The map runs from preconception care, diabetes management before pregnancy, through prenatal care, birth, the postpartum visit, and a well-child visit in early childhood, the five stages of the care continuum, so option D is correct. Option A centers on one disease, option B on monitoring, and option C on vaccine coverage.
+
+3. **A city health department wants to strengthen nutrition support for low-income pregnant women and children under five. Which program is the direct fit?**
+   - A. WIC, which provides healthy foods, nutrition education, breastfeeding support, and referrals to other services.
+   - B. A restaurant inspection program.
+   - C. A community blood-pressure screening fair.
+   - D. An emergency preparedness drill for hospitals.
+
+   **Answer: A.** WIC, the Special Supplemental Nutrition Program for Women, Infants, and Children, serves exactly this group, low-income pregnant, postpartum, and breastfeeding women and children up to age five, with foods, education, and referrals, so option A is correct. Option B is food safety, option C is cardiovascular screening, and option D is emergency readiness.
+
+4. **A student writing a class report needs one accurate, dated figure about global child survival to cite from the WHO. Which sentence is accurate?**
+   - A. The under-five mortality rate rose by half between 2000 and 2024.
+   - B. Nearly all under-five deaths now occur in high-income countries.
+   - C. In 2024, an estimated 4.9 million children under five died worldwide.
+   - D. No children under five died anywhere in 2024.
+
+   **Answer: C.** The WHO's child mortality fact sheet (May 2026) reports an estimated 4.9 million under-five deaths in 2024 and an under-five mortality rate that fell to less than half its 2000 level, making option C accurate. Option A reverses the direction of change, option B inverts the burden, most deaths are in low- and middle-income countries, and option D is false.
+
+5. **A new mother receives prenatal checkups from a certified nurse-midwife, her newborn's first vaccines from a public health nurse, a home visit from a community health worker who helps the family sign up for WIC, and a checkup for her toddler from a pediatrician. What does this mix of providers illustrate?**
+   - A. That one specialist delivers all maternal and child health care.
+   - B. That maternal and child health depends on a team of different workers across the care continuum.
+   - C. That public health programs and clinical care never overlap.
+   - D. That hospitals are the only place maternal and child health services exist.
+
+   **Answer: B.** Each provider covers a different stage or role: the midwife for prenatal care and birth, the public health nurse for immunization, the community health worker for linking the family to services such as WIC, and the pediatrician for the child's early years. That is the team picture in option B; options A, C, and D contradict how the field actually works.
+
+## Sources
+
+- HRSA Maternal and Child Health Bureau: About Us — Mission, Vision, and Work (mchb.hrsa.gov/about-us)
+- WHO: Maternal health (health topic)
+- WHO: Maternal mortality (fact sheet, 7 April 2025)
+- WHO: Child mortality under 5 years (fact sheet, 1 May 2026)
+- WHO: Child health (health topic)
+- WHO: Immunization coverage (fact sheet, 15 July 2026)
+- MedlinePlus (NIH): Prenatal Care
+- USDA Food and Nutrition Service: WIC — Special Supplemental Nutrition Program for Women, Infants, and Children
+- APHA: Community Health Workers (section definition)
+- American Academy of Pediatrics: About the AAP
+
+## Related Topics
+
+- public-health:foundations:what-is-public-health
+- public-health:foundations:global-health
+- public-health:foundations:vaccination
+- public-health:foundations:health-disparities
+
+## Editorial Metadata
+
+- Topic ID: public-health:foundations:maternal-and-child-health
+- Phase: 4
+- Editorial status: READY_TO_PUBLISH
+- Research status: source-verified (WHO, HRSA, MedlinePlus, USDA, APHA, AAP), researched 2026-08-22
+- Rights: reference-only sources; no source prose adapted; short attributed definitions quoted with attribution
+- Literacy level: general
