@@ -1,0 +1,141 @@
+# Percussion
+
+## In 30 Seconds
+
+Percussion is the exam technique of tapping the body to hear the sound it makes. Dense tissue, like the liver, returns a dull thud, while air-filled tissue, like healthy lung, returns a hollow, ringing note. The examiner rests one hand flat on the skin and taps it with the fingers of the other hand. The sound reveals what lies beneath: organ size, fluid, or air. Percussion is used most often over the chest and abdomen, and reading it takes practice.
+
+## Why This Matters
+
+For nursing and allied health students, percussion is one of the four core physical exam techniques and a skill practiced in labs and on clinical placement. For patients and families, it explains a familiar part of a checkup — why a clinician taps on the chest and belly and listens. The findings are practical: a dull note over the lungs can point to pneumonia or fluid, and a dull abdomen can point to fluid that should be investigated. But percussion is an honest skill too. The sounds are subtle, the technique takes practice, and no single tap makes a diagnosis. Understanding the idea — knocking to learn what is inside — turns a puzzling ritual into an assessment technique you can follow.
+
+## Learning Objectives
+
+- Define percussion as the exam technique of tapping the body and interpreting the sound produced to assess structures beneath the surface, following the OpenStax nursing textbooks and MedlinePlus.
+- Explain why dense tissue and air-filled tissue produce different percussion notes, giving an original example of each sound.
+- Describe the general technique — one hand's finger resting flat and firm on the body, the other hand's finger tapping it — in simple terms.
+- State what percussion reveals — organ size, fluid, and air — one line for each.
+- Distinguish where percussion is used (the chest and the abdomen) from the other physical exam techniques (inspection, palpation, auscultation).
+- Apply the honest framing — percussion is knocking to learn what is inside — to a patient scenario.
+
+## The College Version
+
+### A working definition
+
+Percussion is one of the four core techniques of the physical examination, alongside inspection, palpation, and auscultation. The OpenStax Fundamentals of Nursing textbook defines it plainly: tapping on the body to assess underlying structures is known in health care as percussion. Its glossary tightens the idea: percussion is the technique of assessing the body's underlying structures based on the sound they make when tapped. MedlinePlus, the National Library of Medicine's consumer encyclopedia, lists the same technique among the standard parts of a physical examination — producing sounds, usually by tapping on specific areas of the body. The tap sets the tissue beneath the fingers vibrating, and the sound that comes back carries information about what that tissue is made of. That is the whole idea: knock, listen, learn.
+
+### The sound idea: dense vs. air-filled
+
+The core of percussion is that dense tissue and air-filled tissue sound different when tapped. Air-filled tissue — healthy lung, for example — returns a hollow, echoing note that the textbooks call resonance; over the lungs it is a semihollow, medium-pitched sound. Dense tissue returns a dull, thudding note. The Clinical Nursing Skills text uses the heart as the example of dense tissue yielding a flat or dull sound, and the Fundamentals text adds that dull sounds over the lung fields, where resonance is expected, might indicate pneumonia — lung tissue that has become consolidated, or packed with fluid and cells — or fluid accumulation. The same logic runs through the abdomen, where the hollow, drum-like note called tympany is expected over most of the belly. A shift from tympany to dullness over a region can signal fluid, such as the ascitic fluid that collects in the abdomen in some liver and heart conditions. Original examples: tap a cardboard box full of packing peanuts and it rings; tap the same box full of books and it thuds. A full water bottle thuds; a nearly empty one rings near the top. The body works the same way — air rings, density thuds.
+
+### How it is done
+
+The standard technique is indirect percussion, and it is simpler than it sounds. The examiner hyperextends the fingers of one hand and presses the middle finger firmly against the patient's skin — that finger is the plate the tap lands on. The middle finger of the other hand is retracted like a small hammer and brought down in a quick, firm strike on the plate finger, and the examiner listens to the note the tap produces. Then the hands move to the next spot, and each region is compared with its neighbor and with the matching spot on the other side of the body. Two details matter: the striking finger should stay relaxed, and the tap should come from a quick wrist snap, not a push from the arm. The patient stays relaxed too, usually sitting or lying down, so the tissue beneath is loose enough to sound. In one sentence: one hand flat, one hand taps, ears open.
+
+### What it reveals, and where it is used
+
+Percussion answers a short list of questions, each in one line. Organ size: a dull region where air-filled tissue is expected can trace the outline of an enlarged organ by where the note changes. Fluid: a shift from a hollow note to a dull one marks fluid where air should be — fluid in the lung, or ascitic fluid in the abdomen. Air: an unexpectedly hollow note marks air where dense tissue should be, such as a lung that has lost its normal density. Percussion is used in two main places. The chest: over the lung fields it helps detect consolidation or fluid accumulation, where a dull note replaces the expected resonance. The abdomen: it helps map the organs and detect fluid, where dullness replaces the expected tympany. In practice, percussion is one move in a larger assessment — the examiner inspects, palpates, percusses, and auscultates, and the percussion findings join the rest of the picture.
+
+### The honest note and the honest framing
+
+Two honest statements belong with this lesson. First, the honest note: percussion takes practice to read. The OpenStax text says it directly — the technique requires skill to elicit and interpret the sounds correctly. The notes are subtle: resonance, tympany, and dullness sit close together, and a beginner's ear cannot reliably separate them at first. That is normal, which is why students practice on each other and on simulators before they percuss patients. Second, the honest framing: percussion is knocking to learn what is inside. Every tap is a question about what lies beneath the surface — is it air, is it dense, is it fluid? The sound is the answer, and the clinician's job is to read it honestly: note what is heard, compare it with what is expected, and let the finding point to the next step rather than to a diagnosis on its own. One dull note does not name a disease; it raises a question that further testing answers.
+
+## Key Vocabulary
+
+- **percussion** — The exam technique of tapping the body and interpreting the sound produced to assess structures beneath the surface.
+- **resonance** — The hollow, echoing note percussion produces over air-filled tissue, such as healthy lung.
+- **tympany** — The hollow, drum-like note percussion produces over most of the normal abdomen.
+- **dullness** — The thudding note percussion produces over dense tissue, fluid, or consolidated tissue, where a hollow note would be expected.
+- **consolidation** — Lung tissue packed with fluid and cells instead of air, which can change the percussion note from resonant to dull.
+- **ascitic fluid** — Fluid that collects in the abdominal cavity, detectable when percussion over the abdomen shifts from tympany to dullness.
+
+## Eli-10
+
+Percussion is the exam technique of tapping the body to hear what the tap tells you. Lay one hand flat on the skin, tap it with a finger of the other hand, and listen. Air-filled tissue — like healthy lung — rings back a hollow note, like a drum. Dense tissue — like the liver, or a lung filled with fluid — comes back dull, like knocking on a book. Clinicians use it mostly on the chest and the abdomen, and it tells them three things: how big an organ is, whether fluid is sitting where air should be, and whether air is sitting where dense tissue should be. It takes practice to read the sounds, so beginners compare one spot with the next and learn the notes slowly.
+
+## Eli's Analogy
+
+Imagine choosing a melon at the market. You do not cut it open; you tap it and listen. A ripe melon sounds full and solid in the right places, and a hollow or dull patch tells you something is off inside. Percussion is the same habit applied to the body: a controlled tap, a careful listen, and a judgment about what is inside.
+
+The comparison has limits. A melon is tapped once to judge ripeness, and "good" is partly a matter of taste. Body percussion is more disciplined: the examiner compares matching spots on both sides, knows what note each region should give, and treats a single odd note as a clue to investigate, not as a verdict. And a melon cannot tell you how it feels — a patient can, and the patient's own report always matters too.
+
+## Worked Example
+
+Nurse Lena is assessing Mr. Alvarez, admitted with a cough and fever. She percusses his back using indirect percussion: her left middle finger pressed firmly against his skin, her right middle finger striking it with a quick wrist tap. The right upper back rings hollow — resonance, as expected over air-filled lung. Lower on the same side, the note turns dull and thudding. She percusses the left side the same way, and it rings hollow top to bottom. The asymmetry — hollow where expected on the left, dull over the right lower region — matches the textbook picture of consolidation or fluid, so Lena documents the finding and reports it. The note does not name the disease; it points the chest X-ray in the right direction.
+
+## Common Mistakes
+
+- **"Percussion is just knocking on the body to see if it hurts."** Assessment percussion is about the sound, not the pain response. The examiner taps to hear whether the tissue beneath rings hollow or returns dull. Pain with tapping is a tenderness finding, not the point of percussion.
+- **"Any hollow sound is normal anywhere on the body."** Hollow is expected where air is expected — the lung fields and most of the abdomen. A hollow note where dense tissue should be, or a dull note where air should be, is the finding worth attention. The region decides what the note means.
+- **"One dull note over the lung means pneumonia."** Percussion findings raise questions; they do not make diagnoses. OpenStax says dull sounds over the lung fields might indicate pneumonia or fluid accumulation — a clue that guides further testing, and the technique itself takes skill to read. Document the finding and let the rest of the assessment weigh in.
+- **"Chest percussion means clapping on the back to clear mucus."** That is chest physiotherapy percussion, a treatment that uses cupped hands to loosen secretions. Assessment percussion is tapping to hear sound. Same word, different procedures.
+
+## Compare / Contrast
+
+- **Percussion vs. Palpation:** Percussion taps and listens to the sound of underlying structures; palpation presses and feels for texture, temperature, tenderness, or masses. Both use the hands — one reads sound, the other reads feel.
+- **Resonance vs. Dullness:** Resonance is the hollow, echoing note of air-filled tissue like healthy lung; dullness is the thudding note of dense tissue, fluid, or consolidation. Air rings, density thuds.
+- **Assessment percussion vs. Chest physiotherapy percussion:** Assessment percussion is a diagnostic tap that reads sound; chest physiotherapy percussion is a treatment that claps cupped hands on the chest to loosen mucus. Same name, opposite purposes.
+
+## Key Takeaway
+
+Percussion is tapping the body to learn what is inside: air-filled tissue rings hollow, dense tissue and fluid return a dull note, and the sound — read over the chest and abdomen — helps map organ size and find fluid or air where it should not be. It is a gentle technique, and reading it takes practice.
+
+## Practice Question Bank
+
+1. **A nurse lays one hand flat against a patient's back, taps the middle finger of that hand with the middle finger of the other hand, and listens to the note the tap produces. Which exam technique is the nurse performing?**
+   - Auscultation
+   - Palpation
+   - Percussion
+   - Inspection
+   - **Correct:** C — Tapping the body and interpreting the sound produced is percussion: MedlinePlus describes it as producing sounds by tapping specific areas of the body, and the OpenStax texts define it as tapping to assess underlying structures. Auscultation is listening, usually with a stethoscope; palpation is feeling with the hands; inspection is looking.
+
+2. **A patient with a cough has a percussion note over the right lower lung that is dull and thudding, while the matching spot on the left rings hollow. What is the most reasonable reading of this finding?**
+   - The right lower lung contains more air than normal.
+   - The right lower region likely contains denser material, such as fluid or consolidated tissue, and the change is worth reporting.
+   - The finding is meaningless because percussion cannot detect lung problems.
+   - The patient's liver has moved into the chest.
+   - **Correct:** B — Dullness replaces the expected resonance when tissue is denser than air-filled lung; OpenStax notes that dull sounds over the lung fields, instead of the expected resonance, might indicate pneumonia (consolidation) or fluid accumulation. More air would sound more hollow, percussion does detect changes in the lung regions, and a displaced liver is not what this finding indicates.
+
+3. **A clinician percusses a patient's abdomen. Most areas return the expected hollow, drum-like note, but the lower right region returns a dull thud. Which statement about percussion best explains what happened?**
+   - The hollow note means that region contains fluid.
+   - The dull note means that region contains air.
+   - The abdomen cannot be assessed with percussion.
+   - The dull note over one region suggests denser material there, such as fluid, compared with the hollow note expected elsewhere.
+   - **Correct:** D — The expected note over most of the abdomen is tympany — hollow and drum-like — and OpenStax states that a shift from tympany to dullness can indicate fluid such as ascitic fluid. A hollow note indicates air, not fluid; a dull note indicates density, not air; and the abdomen is one of the two main places percussion is used.
+
+4. **A first-year student percusses a patient's chest, hears the notes, and cannot tell them apart. The instructor says the student should keep practicing. Why is this the right coaching point?**
+   - Because reading percussion sounds takes practice — the technique requires skill to elicit and interpret the notes correctly, and beginners learn by comparing one spot with the next.
+   - Because percussion findings are never used in real patient care.
+   - Because the patient's own description of the sounds is more reliable.
+   - Because the student should switch to palpation, which replaces percussion entirely.
+   - **Correct:** A — OpenStax states plainly that percussion requires skill to elicit and interpret the sounds correctly, and the honest framing of the technique is that reading it takes practice. The other options are false: percussion is a standard part of the physical exam, the patient does not read the sounds, and palpation complements rather than replaces percussion.
+
+5. **A nurse explains percussion to a curious patient by saying, "It's knocking to learn what is inside." Which idea does that sentence capture best?**
+   - The tap measures how well the patient's ears work.
+   - The tap loosens mucus so the patient can cough it up.
+   - The tap asks what lies beneath the surface — air rings hollow, dense tissue and fluid return a dull note.
+   - The tap checks how forcefully the heart is pumping.
+   - **Correct:** C — The honest framing of percussion is that each tap asks what lies beneath the surface, and the sound is the answer: resonance for air-filled tissue, dullness for dense tissue or fluid. It does not test hearing, loosen mucus (that is chest physiotherapy percussion), or measure how forcefully the heart pumps.
+
+## Sources
+
+- **openstax-fon-12-3-collection-of-assessment-data** — OpenStax, *Fundamentals of Nursing*, Section 12.3: Collection of Assessment Data. https://openstax.org/books/fundamentals-nursing/pages/12-3-collection-of-assessment-data (CC BY-NC-SA 4.0; read via the official book PDF, section URL verified live 2026-08-22)
+- **openstax-cns-24-3-nursing-assessment** — OpenStax, *Clinical Nursing Skills*, Section 24.3: Nursing Assessment. https://openstax.org/books/clinical-nursing-skills/pages/24-3-nursing-assessment (CC BY-NC-SA 4.0; read via the official book PDF, section URL verified live 2026-08-22)
+- **medlineplus-physical-examination** — MedlinePlus (U.S. National Library of Medicine), "Physical examination." https://medlineplus.gov/ency/article/002274.htm (U.S. government work; read live 2026-08-22)
+
+## Related Topics
+
+- Health Assessment Basics
+- Inspection
+- Palpation
+- Auscultation
+- Vital Signs
+
+## Editorial Metadata
+
+- **Topic id:** nursing-and-allied-health-foundations:foundations:percussion
+- **Subject:** nursing-and-allied-health-foundations (unit: foundations)
+- **Editorial status:** READY_TO_PUBLISH
+- **Researched at:** 2026-08-22
+- **Research status:** source-verified
+- **Rights status:** reference-only sources (OpenStax CC BY-NC-SA, MedlinePlus U.S. government work); no source wording reproduced — all prose original
+- **Transformation:** Definitions and sound findings synthesized from the OpenStax nursing textbooks (Fundamentals of Nursing 12.3 and Clinical Nursing Skills 24.3) and corroborated by MedlinePlus; the technique description, sound examples, worked example, questions, and framing are original to this lesson.

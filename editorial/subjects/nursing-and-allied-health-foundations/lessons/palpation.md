@@ -1,0 +1,150 @@
+# Palpation
+
+## In 30 Seconds
+
+Palpation is the assessment technique of using the hands to feel the body — the touch half of the physical exam. It follows inspection in the standard sequence: look first, then touch. The hand can feel what the eye cannot see: texture, temperature, moisture, tenderness, masses, and pulses. Light pressure reads surface features; deeper pressure reaches organs beneath. Warm hands and a gentle approach keep the patient relaxed, and tender areas are saved for last. Palpation is the hand's version of listening.
+
+## Why This Matters
+
+Every clinical decision rests on data, and palpation is one of the oldest, cheapest, and most immediate ways to collect it. A nurse who feels a hard, fixed lump, a cool foot, or a pulse that fades where it should be strong has found clues no machine or blood test can supply at the bedside. For students entering nursing or allied health, palpation is a core skill practiced daily and tested early. For patients, understanding palpation explains why their clinician touches them — and why honest answers during the exam matter. The skill is simple to describe and takes years to refine; this lesson builds the foundation.
+
+## Learning Objectives
+
+- Define palpation as the physical exam technique of using the hands to feel the body, following the OpenStax nursing description.
+- Explain why palpation comes after inspection in the standard exam sequence.
+- Name what palpation can reveal — texture, temperature, moisture, tenderness, masses, and pulses — in one line each.
+- Distinguish light palpation from deep palpation by pressure and purpose.
+- Apply the comfort and safety practices of palpation: warm hands, a gentle approach, tender areas last, and treating the patient's words as data.
+- Analyze a patient scenario to identify which findings come from palpation.
+
+## The College Version
+
+### A working definition
+
+Palpation is the assessment technique of using the hands to feel the body during a physical examination. The OpenStax nursing text describes it directly: the technique of using one's hands to feel the body for abnormalities, assessing texture, temperature, moisture, and the size of organs and tissues. Palpation is one of the four techniques of the physical exam — inspection (looking), palpation (feeling), percussion (tapping), and auscultation (listening) — and its findings are objective data: things the examiner gathers directly from the body, not things the patient reports. In plain terms, palpation turns the hand into an instrument and touch into data.
+
+### Why touch after look
+
+The standard exam sequence puts inspection first: the clinician looks before touching. That order is practical. Looking is noninvasive, takes in the whole body surface at once, and warns the examiner what to expect — a visible bruise, a scar, a swelling — before a hand goes anywhere near it. OpenStax describes inspection as often the first step of the physical examination. Palpation follows, adding the layer that looking cannot reach: the firmness of a swelling, the warmth of a limb, the tenderness hidden under skin. One honest caveat: the abdomen is the special case where auscultation (listening) comes before palpation, so bowel sounds are heard undisturbed; that detail belongs to the auscultation and percussion lessons. The general rule stands: look first, then touch.
+
+### What the hand can feel
+
+Palpation answers a short list of questions, each worth one line. Texture: is the skin smooth, rough, dry, or scaly? Temperature: is the skin warm or cool, and is a hot or cold patch limited to one spot? Moisture: is the surface dry, damp, or clammy? Tenderness: does pressing cause pain, and where exactly? Masses: is there a lump, how big, where, and does it feel firm or soft, fixed or movable? Pulses: can the hand feel the heartbeat's wave where an artery runs near the surface — and is it strong, weak, regular, or absent? Each answer is a finding, and each finding is data that goes into the record: a chart entry like "skin warm and dry" is palpation written down.
+
+### Light touch and deep touch
+
+Palpation comes in two pressures, and they answer different questions. Light palpation uses gentle pressure — in abdominal work, about half an inch, roughly one centimeter, of indentation — and reads surface characteristics: musculature, superficial masses, and tenderness. It is the everyday tool of bedside nurses. Deep palpation presses further down to reach organs and structures beneath the surface, and in many settings it is performed by advanced practice clinicians, because pressing deep into the body carries more risk and needs more training. Original examples: lightly pressing the abdomen to check whether it is soft or tense is light palpation; pressing steadily deeper to feel the edge of an enlarged organ is deep palpation. The rule of thumb: start light, and go deeper only when the light pass is done.
+
+### Comfort and safety
+
+Palpation is a conversation carried on through skin, and it only works if the patient can relax. Cold hands and a cold room make patients tense up — the textbook word is guarding, a tightening of the muscles that can turn a soft abdomen hard and hide the very findings the examiner is looking for. So the general practice is simple: warm the hands, warm the room, move slowly, and tell the patient what you are doing and why. Safety has two rules that fit in one line each. First, when a patient reports pain, palpate the tender area last, so the exam itself does not cause suffering or mask other findings. Second, note what the patient says and how the body answers — a wince, a verbal "that hurts", guarding, or rigidity are all data, and the patient's report guides what the examiner does next.
+
+### The honest framing
+
+Here is the reality check this lesson wants to land. Palpation is the hand's version of listening. The stethoscope gets the credit for hearing the body, but the bare hand hears a different channel: the body's tension, its temperature, its hidden lumps. It is not a magic sense — it is trained attention, built on anatomy, practice, and the simple discipline of touching with purpose. And like listening, palpation is only as good as the willingness to hear what comes back. A hand that rushes, presses too hard, or ignores the patient's flinch is not collecting data; it is missing data.
+
+## Key Vocabulary
+
+- **palpation** — The physical exam technique of using the hands to feel the body and detect findings such as texture, temperature, moisture, tenderness, masses, and pulses.
+- **light palpation** — Gentle pressure — about one centimeter of indentation in abdominal work — used to assess surface characteristics such as musculature, superficial masses, and tenderness.
+- **deep palpation** — Firmer pressure used to assess organs and structures beneath the body surface, typically performed by advanced practice clinicians.
+- **tenderness** — Pain or discomfort produced when pressure is applied to an area of the body during the exam.
+- **mass** — A lump or area of abnormal tissue felt during palpation, described by size, location, and whether it feels firm or soft, fixed or movable.
+- **guarding** — Tensing of the muscles over an area during touch, often from anxiety, cold hands, or pain; it can be voluntary or involuntary.
+- **inspection** — The exam technique of looking at the body first; the sibling technique that precedes palpation in the standard sequence.
+- **objective data** — Findings the examiner gathers directly from the body, such as what the hand feels during palpation, as opposed to what the patient reports.
+- **texture** — How a surface feels to the touch, such as smooth, rough, dry, or scaly.
+- **moisture** — How wet or dry the skin surface is, judged by the hand during palpation.
+
+## Eli-10
+
+Palpation is the fancy word for feeling the body with your hands — on purpose, and with a plan. When a clinician touches you during an exam, they are not being casual. They are checking six things, one at a time: Is the skin smooth or rough? Warm or cool? Dry or damp? Does it hurt when pressed? Is there a lump where there should not be one? Can they feel your pulse? They use gentle pressure first, like testing a ripe peach, and only press deeper if they need to reach something underneath. The hands are warm and the touch is slow, because a patient who tenses up hides exactly the clues the clinician is hunting for.
+
+## Eli's Analogy
+
+Think of palpation as reading a room with your fingertips. You walk into a dark kitchen and run your hand along the counter before turning on the light: you feel the crumbs, the damp spot, the cracked tile, the knife you would not have seen in the dark. The clinician does the same with the body. Inspection turns on the lights; palpation runs the hand along the surface — and under it — to catch what light alone cannot show.
+
+The comparison stops where the body answers back. A countertop does not flinch, complain, or tense up when you touch it, and it does not care if your hands are cold. A patient does. So palpation is a two-way exchange: the clinician feels the body, and the body — through its tension, its tenderness, and the patient's own words — talks back. That feedback loop is the part no kitchen-counter analogy can capture.
+
+## Worked Example
+
+Priya, a nursing student, is checking Mr. Tanaka, 58, who was admitted with a swollen, painful left calf. She starts with inspection: the calf looks red and slightly larger than the right one. Then she warms her hands, tells him what she is about to do, and palpates gently — first the healthy right calf, then the left. The skin over the left calf feels warm and taut, and Mr. Tanaka winces when her fingers reach the mid-calf. She palpates the tender spot last, notes the firmness of the area, and checks his foot pulses: strong on the right, present but fainter on the left. Priya documents what her hands felt — warmth, firmness, tenderness, pulse strength — and reports the findings. Her palpation data, added to what inspection showed, send the care team straight to an ultrasound.
+
+## Common Mistakes
+
+- **"Skipping inspection and palpating right away."** Look first, then touch. Inspection is fast and noninvasive and gives context for what the hand will feel; palpating before looking risks missing visible clues and misreading the findings.
+- **"Using full fingertip pressure from the start."** Begin with light palpation — about one centimeter of pressure — to read surface characteristics, and move to deeper pressure only when the light pass is complete and the situation calls for it.
+- **"Pressing straight into the area the patient says hurts."** Palpate the tender area last. Starting with pain makes the patient tense up, distorts the exam, and causes real discomfort.
+- **"Ignoring what the patient says during the exam."** The patient's words and reactions are data. "That hurts" localizes tenderness, and a flinch or guarding is a finding to document, not an interruption.
+- **"Touching with cold hands and rushing through."** Warm the hands, warm the room, move slowly, and explain what you are doing. A tense patient guards, and guarding hides the findings palpation is meant to reveal.
+
+## Compare / Contrast
+
+- **Inspection vs. Palpation:** Inspection is looking — it reads the body's surface with the eyes and comes first in the standard sequence. Palpation is touching — it reads texture, temperature, tenderness, and masses beneath the surface and follows inspection. Together they form the look-then-touch sequence.
+- **Light palpation vs. Deep palpation:** Light palpation uses gentle pressure (about one centimeter of indentation) and reads surface characteristics such as musculature, superficial masses, and tenderness. Deep palpation uses firmer pressure to reach organs and internal structures and is typically performed by advanced practice clinicians. The rule: start light, go deeper only as needed.
+- **Palpation vs. Auscultation:** Palpation feels the body with the hand — temperature, texture, masses, and pulses. Auscultation listens to internal sounds with a stethoscope — heart, lung, and bowel sounds. Palpation is the hand's version of listening; auscultation is the ear's.
+
+## Key Takeaway
+
+Palpation is the physical exam technique of using the hands to feel the body — the touch after the look. With light pressure first, warm hands, and tender areas saved for last, it turns texture, temperature, moisture, tenderness, masses, and pulses into data the eye alone can never see.
+
+## Practice Question Bank
+
+1. **A nursing instructor asks a student to describe palpation using the definition taught in the OpenStax nursing text. Which description is correct?**
+   - Using the hands to feel the body for abnormalities — assessing texture, temperature, moisture, and the size of organs and tissues.
+   - Looking at the body to observe visible findings such as skin color, posture, and rashes.
+   - Listening to sounds inside the body with a stethoscope.
+   - Tapping the body and interpreting the sound that comes back.
+   - **Correct:** A — OpenStax Fundamentals of Nursing section 12.3 defines palpation as the technique of using one's hands to feel the body for abnormalities, assessing texture, temperature, moisture, and the size of organs and tissues — so A is the key. B describes inspection, C describes auscultation, and D describes percussion, the three sibling techniques with their own lessons.
+
+2. **Dev, a nurse, is examining a patient who reports swelling in the right knee. Following the standard physical exam sequence, what should he do before he touches the knee?**
+   - Listen to the knee with a stethoscope, because auscultation always precedes palpation.
+   - Press firmly on the joint space to check its depth.
+   - Look at the knee first — inspection comes before touch in the standard sequence.
+   - Palpate the tender spot immediately to get the painful part over with.
+   - **Correct:** C — The standard sequence is inspection first, then palpation: looking is noninvasive and gives context for what the hand will feel, and OpenStax describes inspection as often the first step of the physical examination — so C is the key. Listening-before-touching is the special abdominal order, not the general rule; firm pressure first skips the light pass; and touching a tender area first breaks the palpate-tender-areas-last safety rule.
+
+3. **During an abdominal assessment, a nurse presses gently, indenting the skin about one centimeter, to check whether the abdomen is soft and whether any superficial masses are present. Which statement describes what she is doing?**
+   - Deep palpation — firm pressure used to reach organs beneath the body surface.
+   - Light palpation — gentle pressure used to assess surface characteristics such as musculature, superficial masses, and tenderness.
+   - Percussion — tapping the abdomen to judge what lies beneath.
+   - Inspection — observing the abdominal contour before touching.
+   - **Correct:** B — Light palpation presses about 0.5 inch (roughly 1 cm) into the skin and reads surface characteristics — musculature, superficial masses, and tenderness — so B is the key. Deep palpation (A) uses firmer pressure to reach internal organs and is typically done by advanced practice clinicians. C is percussion and D is inspection, different techniques entirely.
+
+4. **Mr. Kim reports sharp pain in his right lower abdomen. The nurse palpates the other quadrants first, saves the painful area for last, watches his face, and asks him to say when it hurts. Which statement best explains this approach?**
+   - The nurse is avoiding the exam because the pain might be serious.
+   - Palpating the painful area first would warm the skin and make the rest of the exam more comfortable.
+   - The painful area is inspected by eye only and is never touched during the exam.
+   - Saving the tender area for last limits discomfort and lets the nurse read the patient's response — guarding, wincing, or words — as data.
+   - **Correct:** D — The safety rule is to palpate a reported tender area last, and the patient's response during palpation (verbal reports, wincing, guarding, rigidity) is itself assessment data, so D is the key. A misreads the rule as avoidance, B reverses the tender-area-last rule, and C is false — tender areas are still palpated, just last.
+
+5. **A nurse palpates a patient's wrist and feels a weak, irregular pulse, then notes that the foot on the same side feels cooler than the other foot. Which statement is most accurate?**
+   - Both findings came from palpation — feeling the pulse where the artery runs near the surface, and feeling skin temperature with the hand.
+   - The pulse finding came from auscultation, and the temperature finding came from inspection.
+   - Neither finding is reliable, because palpation only assesses the abdomen.
+   - Pulses are felt by listening with a stethoscope, and temperature is measured only with a thermometer.
+   - **Correct:** A — Palpation of peripheral pulses provides heart rate, rhythm, and strength, and skin temperature is a classic palpation finding (texture, temperature, and moisture are read by the hand), so A is the key. B and D misattribute the techniques, and C is false — palpation is used across the body, not only the abdomen.
+
+## Sources
+
+- OpenStax, "Fundamentals of Nursing" — section 12.3, "Collection of Assessment Data" — https://openstax.org/books/fundamentals-nursing/pages/1-introduction (read via the Medicine LibreTexts mirror of section 12.3; openstax.org renders via JavaScript)
+- OpenStax, "Clinical Nursing Skills" — section 27.2, "Physical Assessment" (abdomen chapter) — https://openstax.org/books/clinical-nursing-skills/pages/1-introduction (read via the Medicine LibreTexts mirror of section 27.2)
+- OpenStax, "Clinical Nursing Skills" — section 15.5, "Heart Rate" — https://openstax.org/books/clinical-nursing-skills/pages/15-5-heart-rate (pulses as a palpation finding)
+- Open RN, "Nursing Fundamentals" (Ernstmeyer & Christman, Eds.) — section 4.3, "Assessment" — https://med.libretexts.org/Bookshelves/Nursing/Nursing_Fundamentals_(OpenRN)/04%3A_Nursing_Process/4.03%3A_Assessment (read live; CC BY 4.0)
+
+All sources used reference-only: facts verified, prose and examples original.
+
+## Related Topics
+
+- nursing-and-allied-health-foundations:foundations:health-assessment-basics
+- nursing-and-allied-health-foundations:foundations:inspection
+- nursing-and-allied-health-foundations:foundations:percussion
+- nursing-and-allied-health-foundations:foundations:auscultation
+
+## Editorial Metadata
+
+- **Topic ID:** nursing-and-allied-health-foundations:foundations:palpation
+- **Editorial status:** READY_TO_PUBLISH
+- **Research status:** source-verified (OpenStax Fundamentals of Nursing; OpenStax Clinical Nursing Skills; Open RN Nursing Fundamentals)
+- **Researched:** 2026-08-22
+- **Literacy level:** general
