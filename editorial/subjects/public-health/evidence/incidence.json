@@ -1,0 +1,184 @@
+{
+ "topicId": "public-health:foundations:incidence",
+ "subjectId": "public-health",
+ "researchedAt": "2026-08-22",
+ "scope": {
+  "core": [
+   "working definition of incidence: the number of NEW cases of a condition that develop in a population during a specific time period (MedlinePlus and CDC formulation)",
+   "incidence rate: new cases per population per time — the rate idea, with an original worked example (Meadowbrook: 25 new cases / 10,000 people / 1 year = 2.5 per 1,000 per year)",
+   "incidence vs prevalence: new cases versus existing cases (new and preexisting together); prevalence is a sibling topic with its own lesson",
+   "why it matters: incidence shows how fast a disease is spreading — the core use, stated simply",
+   "the time piece: the period is part of the measurement, with an original example (two-week September window vs full semester at a college clinic)",
+   "measuring it: case counts over population denominators, with the population-at-risk refinement (CDC)",
+   "the honest framing: incidence is a speedometer, prevalence is a snapshot"
+  ],
+  "supporting": [
+   "CDC Principles of Epidemiology Lesson 3 Section 1: a rate describes how quickly disease occurs in a population; rates put disease frequency in the perspective of population size and are useful for comparing across locations, times, and groups",
+   "CDC Lesson 3 Section 2: measures of morbidity frequency characterize the number of persons who become ill (incidence) or are ill at a given time (prevalence); incidence proportion (new cases / population at start) and incidence rate or person-time rate (new cases / summed person-years or average population)",
+   "CDC Lesson 3 Section 2: the denominator of an incidence measure should be limited to the population at risk — persons who have the potential to get the disease",
+   "MedlinePlus: incidence shows the likelihood that a person in a certain population will be newly affected by a condition in a specific period of time"
+  ],
+  "outOfScope": [
+   "prevalence as a full topic — its own measures, uses, and dynamics (owned by public-health:foundations:prevalence)",
+   "epidemiology as a discipline — history, methods, study designs (owned by public-health:foundations:epidemiology)",
+   "risk, incidence proportion, and measures of association (owned by public-health:foundations:risk)",
+   "surveillance systems, reporting pipelines, and outbreak investigation mechanics (owned by public-health:foundations:disease-surveillance and public-health:foundations:outbreak-investigation)",
+   "specific disease statistics and dated figures (no invented numbers; the lesson uses only original arithmetic examples)"
+  ]
+ },
+ "claims": [
+  {
+   "claim": "Incidence is the number of new cases of a condition, symptom, death, or injury that develop during a specific time period, such as a year; it shows the likelihood that a person in a certain population will be newly affected by that condition in that period.",
+   "claimType": "HEALTH",
+   "sourceIds": [
+    "medlineplus-incidence"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "Incidence refers to the occurrence of new cases of disease or injury in a population over a specified period of time; two commonly used forms are incidence proportion (new cases divided by population at the start of the period) and incidence rate or person-time rate (new cases divided by summed person-years of observation or average population during the interval).",
+   "claimType": "HEALTH",
+   "sourceIds": [
+    "cdc-principles-epidemiology-lesson3-section2-morbidity-frequency-measures"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "A rate describes how quickly disease occurs in a population, and rates put disease frequency in the perspective of population size, making them useful for comparing disease occurrence across different locations, times, and groups.",
+   "claimType": "HEALTH",
+   "sourceIds": [
+    "cdc-principles-epidemiology-lesson3-frequency-measures"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "Measures of morbidity frequency characterize the number of persons in a population who become ill (incidence) or are ill at a given time (prevalence); prevalence counts current cases — new and preexisting — at a point in time, whereas incidence counts only cases that begin during the specified period.",
+   "claimType": "HEALTH",
+   "sourceIds": [
+    "cdc-principles-epidemiology-lesson3-section2-morbidity-frequency-measures"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "The denominator of an incidence measure should be limited to the population at risk — persons who have the potential to get the disease — for example, women for ovarian cancer counts rather than the whole population.",
+   "claimType": "HEALTH",
+   "sourceIds": [
+    "cdc-principles-epidemiology-lesson3-section2-morbidity-frequency-measures"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "Epidemiologists sometimes use the term rate loosely for proportions such as attack rate or prevalence rate, which have case counts in the numerator and population in the denominator but are not expressed per units of time; a 'true' rate like the person-time incidence rate incorporates time directly.",
+   "claimType": "EVERGREEN",
+   "sourceIds": [
+    "cdc-principles-epidemiology-lesson3-frequency-measures",
+    "cdc-principles-epidemiology-lesson3-section2-morbidity-frequency-measures"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "Incidence counts come from case reports, clinics, laboratories, and surveillance systems; epidemiology assesses the health of a community by analyzing such data by person, place, and time.",
+   "claimType": "EVERGREEN",
+   "sourceIds": [
+    "cdc-principles-of-epidemiology-lesson1"
+   ],
+   "status": "supported"
+  }
+ ],
+ "conflictingEvidence": [
+  {
+   "issue": "The word 'incidence' carries two related usages in the field",
+   "positions": [
+    "Some epidemiologists use incidence to mean the number of new cases in a community (a count)",
+    "Others use incidence to mean the number of new cases per unit of population (a rate)",
+    "MedlinePlus defines incidence as the number of new cases developing during a specific time period"
+   ],
+   "resolution": "The lesson presents the number-of-new-cases formulation as the working definition (the wording shared by MedlinePlus and the CDC's Principles of Epidemiology), then introduces the incidence rate as the per-population-per-time form. Both usages are acknowledged so the reader is not confused when they meet the word 'incidence' in different contexts."
+  },
+  {
+   "issue": "Whether measures like 'prevalence rate' and 'attack rate' are true rates",
+   "positions": [
+    "Common terminology calls many proportions 'rates' (attack rate, prevalence rate, case-fatality rate)",
+    "The CDC notes these are proportions — numerator included in the denominator, none expressed per units of time — and are not considered 'true' rates by some; the incidence rate (person-time rate) incorporates time directly into the denominator"
+   ],
+   "resolution": "The lesson keeps the terms clean for a general audience: incidence rate = new cases per population per time (a true rate with time in it); prevalence is described as a point-in-time count of existing cases, not called a rate. The nuance is recorded here rather than loaded into the lesson."
+  },
+  {
+   "issue": "Strict incidence rate computation uses person-time, which is more complex than simple division",
+   "positions": [
+    "The formal incidence rate denominator is summed person-years of observation or average population during the interval (CDC Lesson 3 Section 2)",
+    "Everyday reporting commonly expresses new cases per population per time in simpler arithmetic"
+   ],
+   "resolution": "The lesson targets general literacy with simple arithmetic only: new cases divided by population and time (e.g., 25 new cases / 10,000 people / 1 year = 2.5 per 1,000 per year). It notes in one sentence that epidemiologists often build the period into the denominator as person-time, without requiring the reader to compute it."
+  }
+ ],
+ "unsupportedExistingClaims": [
+  "No prior draft of this topic exists in content/phase-4/review/ or public/content/phase-4/lessons.json; the topic record in content-progress.json was status 'planned' with no sourceIds, so there were no machine-generated claims to preserve or refute."
+ ],
+ "correctionsNeeded": [
+  "The phase-4 progress record listed the topic as 'planned'; this packet supplies the first evidence-backed content for it.",
+  "Kept the lesson inside its lane: prevalence (measures, uses, dynamics) belongs to the sibling topic public-health:foundations:prevalence; epidemiology as a discipline belongs to its sibling; risk and incidence proportion belong to public-health:foundations:risk. This lesson states what incidence is, the rate idea, the new-vs-existing distinction, why it matters, the time piece, the general practice of measuring it, and the speedometer/snapshot honest framing.",
+  "All numeric examples are original arithmetic constructed for the lesson (Meadowbrook 25/10,000/year; Lakeview 40/8,000/year; two-week versus semester college windows); no real-world incidence statistics are cited, so no dated figures could go stale."
+ ],
+ "rightsIssues": [
+  "None. CDC Principles of Epidemiology and MedlinePlus are U.S. government works (public domain, attributed). Facts are synthesized in original wording with original examples; no source prose is reproduced."
+ ],
+ "sourceRecords": [
+  {
+   "id": "cdc-principles-epidemiology-lesson3-frequency-measures",
+   "title": "Principles of Epidemiology in Public Health Practice, Third Edition, Lesson 3: Measures of Risk, Section 1: Frequency Measures",
+   "provider": "U.S. Centers for Disease Control and Prevention (CDC)",
+   "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section1.html",
+   "sourceType": "government training manual (Tier A)",
+   "usage": "PUBLIC_DOMAIN",
+   "license": "U.S. government work (public domain)",
+   "attributionRequired": true,
+   "aiIngestionChecked": true,
+   "aiIngestionAllowed": false,
+   "checkedAt": "2026-08-22",
+   "notes": "Read via archive.cdc.gov (canonical CDC archive host; cdc.gov blocks direct fetch). Verified: a rate describes how quickly disease occurs in a population; rates put disease frequency in the perspective of population size and are useful for comparing across locations, times, and groups; the loose use of 'rate' for proportions (attack rate, prevalence rate) that are not expressed per units of time. Reused from the phase-4 source registry with an identical URL."
+  },
+  {
+   "id": "cdc-principles-epidemiology-lesson3-section2-morbidity-frequency-measures",
+   "title": "Principles of Epidemiology in Public Health Practice, Third Edition, Lesson 3, Section 2: Morbidity Frequency Measures",
+   "provider": "U.S. Centers for Disease Control and Prevention (CDC)",
+   "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section2.html",
+   "sourceType": "government training manual (Tier A)",
+   "usage": "PUBLIC_DOMAIN",
+   "license": "U.S. government work (public domain)",
+   "attributionRequired": true,
+   "aiIngestionChecked": true,
+   "aiIngestionAllowed": false,
+   "checkedAt": "2026-08-22",
+   "notes": "Read via archive.cdc.gov. Verified: 'Incidence refers to the occurrence of new cases of disease or injury in a population over a specified period of time'; measures of morbidity frequency characterize the number of persons who become ill (incidence) or are ill at a given time (prevalence); incidence proportion (number of new cases / population at start of interval; synonyms risk, attack rate, cumulative incidence); incidence rate or person-time rate (new cases / summed person-years or average population); point prevalence (current cases, new and preexisting, at a point in time); the population-at-risk denominator rule with the ovarian cancer example. This is the lesson's structural backbone for the incidence definition, the rate idea, and the new-vs-existing distinction."
+  },
+  {
+   "id": "cdc-principles-of-epidemiology-lesson1",
+   "title": "Principles of Epidemiology in Public Health Practice, Third Edition — Lesson 1, Section 1: What Is Epidemiology?",
+   "provider": "U.S. Centers for Disease Control and Prevention (CDC)",
+   "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson1/section1.html",
+   "sourceType": "government",
+   "usage": "REFERENCE_ONLY",
+   "license": "U.S. government work (public domain)",
+   "attributionRequired": true,
+   "aiIngestionChecked": true,
+   "aiIngestionAllowed": false,
+   "checkedAt": "2026-08-22",
+   "notes": "Read via archive.cdc.gov. Supports the one-line framing that new-case counts are part of how epidemiology assesses community health (data by person, place, and time) and that rates are core epidemiologic tools. Reused from the phase-4 source registry with an identical URL; cited for background only."
+  },
+  {
+   "id": "medlineplus-incidence",
+   "title": "Incidence (Medical Encyclopedia)",
+   "provider": "MedlinePlus, U.S. National Library of Medicine (NIH)",
+   "url": "https://medlineplus.gov/ency/article/002387.htm",
+   "sourceType": "government",
+   "usage": "REFERENCE_ONLY",
+   "license": "U.S. government work (public domain)",
+   "attributionRequired": true,
+   "aiIngestionChecked": true,
+   "aiIngestionAllowed": false,
+   "checkedAt": "2026-08-22",
+   "notes": "Read directly 2026-08-22 (review date April 1, 2025). Supports the working definition: 'Incidence is the number of new cases of a condition, symptom, death, or injury that develop during a specific time period, such as a year' and the sentence that incidence shows the likelihood that a person in a certain population will be newly affected by that condition in a specific period of time. Consumer-level Tier A source; used for the working definition and the speedometer framing."
+  }
+ ]
+}

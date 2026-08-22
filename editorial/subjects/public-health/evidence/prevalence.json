@@ -1,0 +1,145 @@
+{
+ "topicId": "public-health:foundations:prevalence",
+ "subjectId": "public-health",
+ "researchedAt": "2026-08-22",
+ "scope": {
+  "core": [
+   "Working definition of prevalence as the total number of existing cases of a disease in a population at a given time, attributed to the CDC's Principles of Epidemiology",
+   "Point prevalence (one moment, a single date) versus period prevalence (a window of time)",
+   "Prevalence versus incidence: existing cases versus new cases; the key difference is in the numerators",
+   "What prevalence shows: the total burden of disease in the population",
+   "What changes prevalence: new cases, recoveries, deaths, and migration",
+   "Measuring prevalence: counting current cases over the population, commonly via surveys (WHO operational definition)",
+   "Honest framing: prevalence is a snapshot; incidence is the movie"
+  ],
+  "supporting": [
+   "CDC notes prevalence rather than incidence is often measured for chronic diseases such as diabetes or osteoarthritis, which have long duration and onset dates that are difficult to pinpoint",
+   "CDC teaches prevalence with simple arithmetic: a proportion of affected persons over the population, often expressed per 100 (its worked example: 468 of 1,150 women, 40.7%)",
+   "Prevalence is based on both incidence and duration of illness",
+   "NIMH reports past-year prevalence of mental illness as a percentage of the U.S. adult population, showing how agencies use prevalence to state the total burden of a condition"
+  ],
+  "outOfScope": [
+   "Incidence in depth (rates, person-time, attack rates) - owned by the incidence sibling topic",
+   "Epidemiology methods, study designs, and causal inference - owned by the epidemiology sibling topic",
+   "Disease surveillance systems and how case counts are gathered - owned by the disease-surveillance sibling topic",
+   "Real-world prevalence statistics: no actual population rates are cited; all examples are original and use fictional communities"
+  ]
+ },
+ "claims": [
+  {
+   "claim": "The CDC's Principles of Epidemiology defines prevalence, sometimes referred to as prevalence rate, as the proportion of persons in a population who have a particular disease or attribute at a specified point in time or over a specified period of time.",
+   "claimType": "EVERGREEN",
+   "sourceIds": [
+    "cdc-principles-epidemiology-lesson3-section2"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "CDC distinguishes point prevalence, measured at a particular point in time (the proportion of persons with the disease or attribute on a particular date), from period prevalence, measured over an interval of time (the proportion of persons with the disease or attribute at any time during the interval).",
+   "claimType": "TECHNICAL",
+   "sourceIds": [
+    "cdc-principles-epidemiology-lesson3-section2"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "CDC states that prevalence includes all cases, both new and preexisting, in the population at the specified time, whereas incidence is limited to new cases only, and that the key difference between the two is in their numerators: the numerator of incidence is new cases that occurred during a given time period, while the numerator of prevalence is all cases present during a given time period.",
+   "claimType": "EVERGREEN",
+   "sourceIds": [
+    "cdc-principles-epidemiology-lesson3-section2"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "CDC states that prevalence is based on both incidence and duration of illness: high prevalence of a disease within a population might reflect high incidence or prolonged survival without cure or both, while low prevalence might indicate low incidence, a rapidly fatal process, or rapid recovery.",
+   "claimType": "TECHNICAL",
+   "sourceIds": [
+    "cdc-principles-epidemiology-lesson3-section2"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "CDC notes that prevalence rather than incidence is often measured for chronic diseases such as diabetes or osteoarthritis, which have long duration and dates of onset that are difficult to pinpoint.",
+   "claimType": "HEALTH",
+   "sourceIds": [
+    "cdc-principles-epidemiology-lesson3-section2"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "WHO's Global Health Observatory defines diabetes prevalence operationally as the percentage of people with the condition, computed from population-based surveys as the number of respondents with the condition divided by the total number of respondents.",
+   "claimType": "TECHNICAL",
+   "sourceIds": [
+    "who-gho-diabetes-prevalence"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "NIMH reports the past-year prevalence of mental illness as a percentage of the U.S. adult population (for example, an estimated 59.3 million adults, 23.1% of U.S. adults, had any mental illness in 2022), showing that agencies use prevalence to state the total burden of a condition in the population.",
+   "claimType": "HEALTH",
+   "sourceIds": [
+    "nimh-mental-illness-statistics"
+   ],
+   "status": "supported"
+  }
+ ],
+ "conflictingEvidence": [
+  {
+   "issue": "Whether prevalence is a rate or a proportion",
+   "positions": [
+    "CDC writes 'prevalence, sometimes referred to as prevalence rate' and defines it as a proportion of persons with the condition",
+    "WHO and NIMH report prevalence as a percentage of the population",
+    "Formally, a rate has time in its denominator, which point prevalence does not"
+   ],
+   "resolution": "The lesson calls prevalence a count of existing cases expressed as a proportion or percentage of the population, and does not teach it as a rate, following the dominant definitional practice of the sources."
+  },
+  {
+   "issue": "What a high or flat prevalence means",
+   "positions": [
+    "CDC: high prevalence might reflect high incidence or prolonged survival without cure or both; low prevalence might indicate low incidence, a rapidly fatal process, or rapid recovery",
+    "A stable prevalence across two surveys is sometimes read as 'nothing is changing'"
+   ],
+   "resolution": "The lesson teaches both possibilities and the honest framing: prevalence is a snapshot, so a level count does not show whether new cases are rising or falling; that motion belongs to incidence, the sibling topic."
+  },
+  {
+   "issue": "Whether migration changes prevalence",
+   "positions": [
+    "CDC defines the numerator as all cases present in the population at the specified time, which changes when people with the condition move into or out of the population",
+    "Some simple definitions list only new cases and recoveries as the moving parts"
+   ],
+   "resolution": "The lesson names all four forces that change the count of existing cases - new cases, recoveries, deaths, and migration - each with one line, treating migration as a direct consequence of the numerator definition."
+  }
+ ],
+ "sourceRecords": [
+  {
+   "id": "cdc-principles-epidemiology-lesson3-section2",
+   "title": "Principles of Epidemiology in Public Health Practice, Third Edition, Lesson 3: Measures of Risk, Section 2: Morbidity Frequency Measures",
+   "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section2.html",
+   "provider": "U.S. Centers for Disease Control and Prevention (CDC)",
+   "sourceType": "government training manual (Tier A)",
+   "usage": "PUBLIC_DOMAIN",
+   "checkedAt": "2026-08-22",
+   "notes": "Fetched and read 2026-08-22 via archive.cdc.gov, the CDC's official archive host (the live cdc.gov/csels URL redirects there). Verified verbatim: the prevalence definition (proportion of persons in a population who have a particular disease or attribute at a specified point in time or over a specified period of time), point versus period prevalence, the incidence/prevalence numerator distinction, 'prevalence is based on both incidence and duration of illness', and the chronic-disease measurement note (diabetes, osteoarthritis). Also verified the worked-example arithmetic pattern (468 of 1,150 = 40.7%)."
+  },
+  {
+   "id": "who-gho-diabetes-prevalence",
+   "title": "Diabetes prevalence (Indicator Metadata Registry, Global Health Observatory)",
+   "url": "https://www.who.int/data/gho/indicator-metadata-registry/imr-details/3356",
+   "provider": "World Health Organization (WHO)",
+   "sourceType": "international agency indicator metadata (Tier A)",
+   "usage": "REFERENCE_ONLY",
+   "checkedAt": "2026-08-22",
+   "notes": "Fetched and read 2026-08-22. Verified the operational definition: prevalence is the percentage of people with the condition, computed as the number of respondents with the condition divided by the total number of respondents, estimated from population-based surveys. Used only for the general measurement practice; the lesson cites no diabetes statistics."
+  },
+  {
+   "id": "nimh-mental-illness-statistics",
+   "title": "Mental Illness (Statistics)",
+   "url": "https://www.nimh.nih.gov/health/statistics/mental-illness",
+   "provider": "National Institute of Mental Health (NIMH), National Institutes of Health",
+   "sourceType": "government statistics page (Tier A)",
+   "usage": "REFERENCE_ONLY",
+   "checkedAt": "2026-08-22",
+   "notes": "Fetched and read 2026-08-22. Verified that NIMH reports past-year prevalence of mental illness as a percentage of the U.S. adult population (2022: an estimated 59.3 million adults, 23.1%), demonstrating how agencies state the total burden of a condition via prevalence. No statistics from this page are cited in the lesson; all lesson examples are original and use fictional communities."
+  }
+ ]
+}
