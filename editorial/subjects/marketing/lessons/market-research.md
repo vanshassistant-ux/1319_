@@ -81,9 +81,9 @@ The flashlight analogy has limits. A room stays still while you shine a light in
 
 5. **A hardware chain reads a national trade-association report on home-renovation spending before opening a store in one small region. What honest limitation applies?**
    - The report is primary data, so the chain should trust it completely
-   - The report comes from existing sources and may not be specific to the chain's local audience
-   - The chain collected the data itself, so the findings cannot be objective
    - Observation is never useful, so the report is the only valid evidence
+   - The chain collected the data itself, so the findings cannot be objective
+   - The report comes from existing sources and may not be specific to the chain's local audience
 
 ## Sources
 
