@@ -1,0 +1,287 @@
+{
+  "id": "ux-ui-design:foundations:responsive-design",
+  "subjectSlug": "ux-ui-design",
+  "unitSlug": "foundations",
+  "slug": "responsive-design",
+  "title": "Responsive Design",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 8,
+  "tags": [
+    "ux-ui-design",
+    "responsive-design",
+    "breakpoints",
+    "fluid-layouts",
+    "multi-device"
+  ],
+  "in30Seconds": "Responsive design is a design approach in which a site's layout adapts to the screen size and orientation of the device viewing it, instead of offering one fixed arrangement. It solves a practical problem: the same content must work on phones, tablets, and desktops. Conceptually, it rests on flexible layouts, fluid images, and breakpoints where the layout rearranges. The same site, presented differently. Responsive layouts adjust continuously, unlike adaptive designs built for chosen sizes. Today, working on every screen is the default expectation, not a feature.",
+  "whyItMatters": "People open the web on whatever device is in hand: a phone on the bus, a tablet on the couch, a desktop at work. A site that ignores the screen it is shown on forces users to pinch, scroll sideways, and hunt for controls, and many simply leave. Responsive design is how one set of content serves all of those screens without separate sites to build, update, and keep in sync. It also meets accessibility where screens get small: layouts that reflow keep text readable and usable when zoomed. For a designer, treating responsive design as the baseline rather than an add-on is the difference between an expected experience and a broken one.",
+  "learningObjectives": [
+    "Define responsive design using the working definition from Nielsen Norman Group.",
+    "Explain the problem responsive design solves: one set of content, many screen sizes.",
+    "Name and describe the three conceptual ingredients of responsive design: flexible layouts, fluid images, and breakpoints.",
+    "Distinguish responsive design from adaptive design.",
+    "Explain how responsive design connects to accessibility on small screens, including zooming and readability.",
+    "Evaluate the honest framing that responsive design is a default expectation rather than a feature."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "The working definition, attributed",
+      "body": "This lesson’s working definition follows Nielsen Norman Group: responsive web design creates dynamic changes to the appearance of a website depending on the screen size and orientation of the device being used to view it. The term itself has a known birthday. Ethan Marcotte coined “responsive design” in his 2010 essay for A List Apart, describing a way of building one flexible experience instead of separate experiences for each device class, built from three technical ingredients: fluid grids, flexible images, and media queries. This lesson keeps that definition and explains the ideas behind the ingredients without any code, because the concepts are what a designer reasons with. The Interaction Design Foundation offers a similar working definition: an approach to web design in which the interface adapts to the device's layout to make usability, navigation, and information seeking easier. Across all three sources the idea is the same: the layout is the flexible part, and it answers to the screen that is showing it."
+    },
+    {
+      "heading": "The problem it solves: one site, every screen",
+      "body": "Responsive design is one answer to a specific problem: the same content has to be usable on devices that range from tiny phones to huge desktop monitors. Before it became the standard approach, teams often built separate sites for different device types, a desktop site, a phone site, sometimes a tablet site, each with its own codebase to build, update, and keep in sync. Responsive design replaces that pile of versions with a single site whose layout reshuffles as the viewport grows or shrinks. Nielsen Norman Group notes that a three-column desktop layout may become two columns on a tablet and a single column on a phone, all from one set of content. That single version is also easier to maintain and relatively future-proof: when a new device size appears, the layout can support it without starting over. MDN makes the same point in one phrase: responsive design is the way to design for a multi-device web."
+    },
+    {
+      "heading": "How it works conceptually: flexible layouts, fluid images, breakpoints",
+      "body": "Three ideas do the work, and none of them requires code to understand. Flexible layouts are proportion-based: elements occupy a share of the available width rather than a fixed size, so columns stretch and squeeze with the screen. A community newsletter page, for example, might give its main article seventy percent of the width and a sidebar the rest; as the window narrows, those proportions compress, and at some point the arrangement gives up on side-by-side entirely. Fluid images follow the same logic: an image scales to fit the space its column gives it, shrinking when the column narrows and never overflowing its container. Breakpoints are the moments where the layout stops merely compressing and actually rearranges: below a certain screen width, a two-column layout becomes a single column, a navigation bar becomes a menu button, and elements stack in a new order. The Interaction Design Foundation lists these as the three core principles of responsive design: a fluid grid system, fluid images, and media queries with breakpoints. Between breakpoints the page stretches and squeezes; at breakpoints it rearranges."
+    },
+    {
+      "heading": "Mobile and desktop: same content, different presentation",
+      "body": "The mobile view of a responsive site is not a different website; it is the same content arranged for a narrower screen. What changes is presentation: order, density, and what appears without scrolling. Nielsen Norman Group highlights content prioritization as a key part of doing responsive design well, because far more content is visible without scrolling on a large monitor than on a small phone screen, and on a phone users may scroll past what they came for. A responsive site keeps the same information for everyone and arranges it so the important pieces surface first on every size of screen. That is also why responsive design is not the same as adaptive design: responsive layouts adjust continuously as the screen changes, while adaptive design serves fixed layouts built for specific sizes, like separate outfits cut for a few known body shapes."
+    },
+    {
+      "heading": "Responsive design, accessibility, and the honest framing",
+      "body": "Responsive design and accessibility meet on small screens. The W3C's Web Accessibility Initiative describes mobile accessibility as making websites and applications more accessible to people with disabilities using phones and other devices, and the issues involved include small screen sizes, touchscreens, different input modalities, and use in bright sunlight. A responsive layout helps here: because content reflows to fit the viewport, text stays readable when users zoom in, and pages do not demand sideways scrolling. The formal requirements behind these benefits, such as the WCAG reflow rules, belong to the WCAG Basics lesson of this course; this lesson notes the connection only. The honest framing matters just as much. Responsive design is not a feature a team adds to a finished site; it is the default expectation for the web. The Interaction Design Foundation calls it a default for web design, and MDN calls it the way to design for a multi-device web. Users assume a site will work on whatever device they hold, so a team that treats responsiveness as an afterthought is not exceeding expectations, it is catching up to them."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "responsive design",
+      "definition": "A design approach in which a website's layout adapts to the screen size and orientation of the device viewing it."
+    },
+    {
+      "term": "flexible layout",
+      "definition": "A proportion-based arrangement in which elements stretch, squeeze, and reshuffle to fit the available width."
+    },
+    {
+      "term": "fluid image",
+      "definition": "An image that scales to fit its container, shrinking when the space narrows and never overflowing it."
+    },
+    {
+      "term": "breakpoint",
+      "definition": "A screen width at which the layout stops compressing and rearranges into a new arrangement."
+    },
+    {
+      "term": "media query",
+      "definition": "A mechanism that checks the characteristics of the viewing screen and applies the matching layout."
+    },
+    {
+      "term": "viewport",
+      "definition": "The visible area of a browser window on a device, the space a layout must fit."
+    },
+    {
+      "term": "adaptive design",
+      "definition": "An approach that serves fixed layouts built for specific screen sizes instead of one continuously flexible layout."
+    },
+    {
+      "term": "reflow",
+      "definition": "The way text and elements rearrange themselves to fit a narrower or wider window."
+    },
+    {
+      "term": "mobile-first design",
+      "definition": "Designing for the smallest screen first and then adding richer layouts for larger screens; a sibling topic in this course."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "Responsive design means a website's layout bends to fit whatever screen is showing it. The same page that spreads across three columns on a computer screen stacks into one column on a phone, without the site's owner building a second website. It works through three simple ideas. Layouts use proportions, so columns shrink and stretch like elastic bands instead of keeping fixed sizes. Images scale down with their column, like a photo that shrinks to fit a frame. And at certain screen widths, called breakpoints, the page does more than squeeze, it rearranges, moving the navigation to a menu button and stacking sections that used to sit side by side. The content stays the same everywhere; only the arrangement changes. That is the deal: one design, every screen, and people expect it as the normal way websites behave.",
+    "analogy": "Think of a responsive site as a storyteller telling one story to three audiences: a long fireside version in a big living room, a tighter telling around a dinner table, and a short version whispered at the door. The story never changes; the telling reshapes itself to the room.",
+    "analogyLimits": "A storyteller can cut and rewrite freely, but a responsive site keeps the same content for everyone and only changes the arrangement. A storyteller also improvises for each listener, while a responsive layout follows fixed rules decided and tested in advance, not choices made on the spot."
+  },
+  "workedExample": "A family-run bookstore with three shops wanted one website for its customers: a desktop catalog, a tablet-friendly events calendar, and a phone view for hours and directions. The team started with a single three-column desktop layout, then watched it on real devices and chose breakpoints where the layout began to feel cramped rather than at specific phone models. On tablets the catalog and events moved to two columns; below that, everything stacked into one column with a map button near the top. They tested the rearranged pages with a dozen customers across all three screen sizes and learned that phone users mostly wanted store hours, so the hours moved above the catalog. The site stayed one website; the presentation changed with the screen.",
+  "commonMistakes": [
+    "Treating responsive design as a feature to add later. Responsive behavior is the expected baseline of the web; planning for multiple screens from the start is cheaper and more coherent than retrofitting a fixed-width design.",
+    "Confusing responsive with simply shrinking. Responsive design rearranges content at breakpoints; a page that only scales down can end up with tiny, unreadable text and cramped columns.",
+    "Choosing breakpoints by guessing at specific devices. Breakpoints should be set where the layout actually starts to feel wrong, and the rearranged result tested on real screens, rather than hardcoded to a handful of phone models.",
+    "Forgetting that reshuffling changes the experience. Moving a sidebar below the main content changes how people read the page, so each rearrangement deserves a usability check, not just a visual one.",
+    "Assuming responsive automatically means accessible. A layout that reflows helps, but readability when zoomed, touch targets, and contrast still need deliberate attention, which the Accessibility and WCAG Basics lessons cover."
+  ],
+  "compareContrast": [
+    {
+      "a": "Responsive design",
+      "b": "Adaptive design",
+      "distinction": "Responsive layouts adjust continuously and fluidly as the screen changes; adaptive design serves fixed layouts built for specific screen sizes."
+    },
+    {
+      "a": "Desktop view",
+      "b": "Mobile view",
+      "distinction": "The same content, presented differently: wide screens show more without scrolling and place elements side by side, while narrow screens stack and prioritize."
+    },
+    {
+      "a": "Responsive design",
+      "b": "Mobile-first design",
+      "distinction": "Responsive design makes one layout adapt to any screen; mobile-first design is the strategy of designing for the smallest screen first, which is its own topic in this course."
+    }
+  ],
+  "keyTakeaway": "Responsive design is one design that adapts to every screen through flexible layouts, fluid images, and breakpoints, and because users expect it, it is the baseline of the web, not a feature.",
+  "questionBank": [
+    {
+      "id": "ux-ui-design:foundations:responsive-design:1",
+      "prompt": "What does responsive design do?",
+      "options": [
+        "A design approach in which a site's appearance changes depending on the screen size and orientation of the device viewing it",
+        "A way to build a separate website for each phone model on the market",
+        "A rule that every layout must use exactly two columns",
+        "A method for shortening content when it is viewed on a phone"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nielsen Norman Group defines responsive web design as an approach that creates dynamic changes to a site's appearance depending on the screen size and orientation of the device viewing it. It is not separate per-device sites, a fixed column rule, or shortened content.",
+      "difficulty": "recall",
+      "skill": "Recall the working definition of responsive design",
+      "sourceIds": [
+        "nng-responsive-web-design-definition",
+        "ixdf-responsive-design"
+      ]
+    },
+    {
+      "id": "ux-ui-design:foundations:responsive-design:2",
+      "prompt": "According to this lesson's sources, who coined the term responsive design, and in what year?",
+      "options": [
+        "Jakob Nielsen, in 1998",
+        "Amy Schade, in 2014",
+        "Christopher Wren, in 1666",
+        "Ethan Marcotte, in 2010"
+      ],
+      "correctIndex": 3,
+      "explanation": "MDN states that Ethan Marcotte coined the term responsive design in 2010 to describe building with fluid grids, fluid images, and media queries. Amy Schade wrote the Nielsen Norman Group definition article in 2014, which is why her name appears among the sources, but she did not coin the term.",
+      "difficulty": "recall",
+      "skill": "Recall the origin of the term responsive design",
+      "sourceIds": [
+        "mdn-responsive-web-design",
+        "ala-marcotte-responsive-web-design"
+      ]
+    },
+    {
+      "id": "ux-ui-design:foundations:responsive-design:3",
+      "prompt": "A news site shows three columns on a desktop monitor and a single column on a phone. What causes the layout to switch between these arrangements?",
+      "options": [
+        "The phone downloads a completely different website built for phones",
+        "The user manually switches the view using a browser menu",
+        "Breakpoints, screen widths at which the layout rearranges",
+        "The age of the device determines which layout is served"
+      ],
+      "correctIndex": 2,
+      "explanation": "Breakpoints are the screen widths at which the layout changes: below a breakpoint the page rearranges, for example from three columns to one. The same site serves all devices; nothing is downloaded separately, switched by the user, or decided by device age.",
+      "difficulty": "understanding",
+      "skill": "Explain the role of breakpoints in a responsive layout",
+      "sourceIds": [
+        "nng-responsive-web-design-definition",
+        "mdn-responsive-web-design"
+      ]
+    },
+    {
+      "id": "ux-ui-design:foundations:responsive-design:4",
+      "prompt": "A design team builds one flexible layout that stretches and reshuffles continuously to fit any screen width. Which approach are they using?",
+      "options": [
+        "Adaptive design",
+        "Responsive design",
+        "Static design",
+        "Print design"
+      ],
+      "correctIndex": 1,
+      "explanation": "Responsive design uses a single flexible layout that adjusts continuously to the screen, while adaptive design serves fixed layouts built for specific sizes. The Interaction Design Foundation draws exactly this distinction between the two approaches.",
+      "difficulty": "application",
+      "skill": "Apply the responsive-versus-adaptive distinction to a design decision",
+      "sourceIds": [
+        "ixdf-responsive-design"
+      ]
+    },
+    {
+      "id": "ux-ui-design:foundations:responsive-design:5",
+      "prompt": "A client says, 'We should add responsive design to our site this year.' Which response best reflects the honest framing taught in this lesson?",
+      "options": [
+        "Responsive design is the default expectation for the web, so treat it as the baseline the site is built on rather than an add-on",
+        "Responsive design is optional for any site that also has a mobile app",
+        "Responsive design matters only for the homepage, not for inner pages",
+        "Responsive design can wait until the site has more content to show"
+      ],
+      "correctIndex": 0,
+      "explanation": "IxDF calls responsive design a default for web design and MDN calls it the way to design for a multi-device web, so it is the expected baseline, not a feature to bolt on later. The other options treat it as optional, partial, or deferrable, which contradicts that framing.",
+      "difficulty": "analysis",
+      "skill": "Evaluate the status of responsive design as a default expectation",
+      "sourceIds": [
+        "ixdf-responsive-design",
+        "mdn-responsive-web-design"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "ux-ui-design:foundations:responsive-design:1",
+      "prompt": "What does responsive design do?",
+      "options": [
+        "A design approach in which a site's appearance changes depending on the screen size and orientation of the device viewing it",
+        "A way to build a separate website for each phone model on the market",
+        "A rule that every layout must use exactly two columns",
+        "A method for shortening content when it is viewed on a phone"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nielsen Norman Group defines responsive web design as an approach that creates dynamic changes to a site's appearance depending on the screen size and orientation of the device viewing it. It is not separate per-device sites, a fixed column rule, or shortened content.",
+      "difficulty": "recall",
+      "skill": "Recall the working definition of responsive design",
+      "sourceIds": [
+        "nng-responsive-web-design-definition",
+        "ixdf-responsive-design"
+      ]
+    },
+    {
+      "id": "ux-ui-design:foundations:responsive-design:2",
+      "prompt": "According to this lesson's sources, who coined the term responsive design, and in what year?",
+      "options": [
+        "Jakob Nielsen, in 1998",
+        "Amy Schade, in 2014",
+        "Christopher Wren, in 1666",
+        "Ethan Marcotte, in 2010"
+      ],
+      "correctIndex": 3,
+      "explanation": "MDN states that Ethan Marcotte coined the term responsive design in 2010 to describe building with fluid grids, fluid images, and media queries. Amy Schade wrote the Nielsen Norman Group definition article in 2014, which is why her name appears among the sources, but she did not coin the term.",
+      "difficulty": "recall",
+      "skill": "Recall the origin of the term responsive design",
+      "sourceIds": [
+        "mdn-responsive-web-design",
+        "ala-marcotte-responsive-web-design"
+      ]
+    },
+    {
+      "id": "ux-ui-design:foundations:responsive-design:3",
+      "prompt": "A news site shows three columns on a desktop monitor and a single column on a phone. What causes the layout to switch between these arrangements?",
+      "options": [
+        "The phone downloads a completely different website built for phones",
+        "The user manually switches the view using a browser menu",
+        "Breakpoints, screen widths at which the layout rearranges",
+        "The age of the device determines which layout is served"
+      ],
+      "correctIndex": 2,
+      "explanation": "Breakpoints are the screen widths at which the layout changes: below a breakpoint the page rearranges, for example from three columns to one. The same site serves all devices; nothing is downloaded separately, switched by the user, or decided by device age.",
+      "difficulty": "understanding",
+      "skill": "Explain the role of breakpoints in a responsive layout",
+      "sourceIds": [
+        "nng-responsive-web-design-definition",
+        "mdn-responsive-web-design"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "ux-ui-design:foundations:layout",
+    "ux-ui-design:foundations:mobile-first-design",
+    "ux-ui-design:foundations:accessibility",
+    "ux-ui-design:foundations:wcag-basics"
+  ],
+  "sources": [
+    "nng-responsive-web-design-definition",
+    "mdn-responsive-web-design",
+    "ixdf-responsive-design",
+    "w3c-wai-mobile-accessibility",
+    "ala-marcotte-responsive-web-design"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only NN/g, W3C WAI, IxDF, MDN, and A List Apart sources; facts restated in original prose; no source text reproduced.",
+    "researchedAt": "2026-08-21",
+    "transformation": "Original educational explanation of responsive design: the attributed working definition, the multi-device problem it solves, the conceptual ingredients (flexible layouts, fluid images, breakpoints), mobile versus desktop presentation, the responsive-adaptive distinction, the accessibility connection, and the honest framing of responsiveness as the default expectation."
+  },
+  "contentHash": "61229464236af5a4",
+  "status": "source-verified",
+  "public": false
+}

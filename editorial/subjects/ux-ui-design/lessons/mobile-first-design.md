@@ -86,7 +86,7 @@ Mobile-first is a discipline, not a magic rule: design the essential experience 
 
 ## Practice Question Bank
 
-**Question 1.** Which statement best defines mobile-first design?
+**Question 1.** What does mobile-first design mean?
 
 - Starting with the smallest screen and adding content and features for larger screens.
 - Designing the desktop version first and then cutting features to fit a phone.

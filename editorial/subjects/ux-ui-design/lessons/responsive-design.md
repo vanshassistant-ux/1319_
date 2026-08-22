@@ -21,7 +21,7 @@ People open the web on whatever device is in hand: a phone on the bus, a tablet 
 
 ### The working definition, attributed
 
-The working definition in this lesson comes from Nielsen Norman Group: responsive web design creates dynamic changes to the appearance of a website depending on the screen size and orientation of the device being used to view it. The term itself has a known birthday. Ethan Marcotte coined “responsive design” in his 2010 essay for A List Apart, describing a way of building one flexible experience instead of separate experiences for each device class, built from three technical ingredients: fluid grids, flexible images, and media queries. This lesson keeps that definition and explains the ideas behind the ingredients without any code, because the concepts are what a designer reasons with. The Interaction Design Foundation offers a similar working definition: an approach to web design in which the interface adapts to the device's layout to make usability, navigation, and information seeking easier. Across all three sources the idea is the same: the layout is the flexible part, and it answers to the screen that is showing it.
+This lesson’s working definition follows Nielsen Norman Group: responsive web design creates dynamic changes to the appearance of a website depending on the screen size and orientation of the device being used to view it. The term itself has a known birthday. Ethan Marcotte coined “responsive design” in his 2010 essay for A List Apart, describing a way of building one flexible experience instead of separate experiences for each device class, built from three technical ingredients: fluid grids, flexible images, and media queries. This lesson keeps that definition and explains the ideas behind the ingredients without any code, because the concepts are what a designer reasons with. The Interaction Design Foundation offers a similar working definition: an approach to web design in which the interface adapts to the device's layout to make usability, navigation, and information seeking easier. Across all three sources the idea is the same: the layout is the flexible part, and it answers to the screen that is showing it.
 
 ### The problem it solves: one site, every screen
 
@@ -87,7 +87,7 @@ Responsive design is one design that adapts to every screen through flexible lay
 
 ## Practice Question Bank
 
-1. **Which statement best matches the working definition of responsive design used in this lesson?**
+1. **What does responsive design do?**
    - A. A design approach in which a site's appearance changes depending on the screen size and orientation of the device viewing it
    - B. A way to build a separate website for each phone model on the market
    - C. A rule that every layout must use exactly two columns

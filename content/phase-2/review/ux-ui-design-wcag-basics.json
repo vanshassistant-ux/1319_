@@ -1,0 +1,295 @@
+{
+  "id": "ux-ui-design:foundations:wcag-basics",
+  "subjectSlug": "ux-ui-design",
+  "unitSlug": "foundations",
+  "slug": "wcag-basics",
+  "title": "WCAG Basics",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 10,
+  "tags": [
+    "ux-ui-design",
+    "web-accessibility",
+    "wcag",
+    "pour",
+    "accessibility-standards"
+  ],
+  "in30Seconds": "WCAG, the Web Content Accessibility Guidelines, is the international standard for web accessibility, developed by the W3C through its Web Accessibility Initiative. The standard is built on four principles — Perceivable, Operable, Understandable, and Robust — supported by thirteen guidelines and testable success criteria rated at three conformance levels: A, AA, and AAA. Laws and policies around the world commonly cite WCAG, often at level AA. WCAG measures accessibility; it does not replace it.",
+  "whyItMatters": "Accessibility is the goal; WCAG is the shared measuring stick. Because WCAG is public, testable, and adopted internationally — it is even an ISO standard — teams can check their work against something concrete instead of trading opinions about what accessible means. Knowing the standard's structure lets you read a conformance claim, speak the same language as developers and testers, and explain what 'we meet WCAG' really covers. It also guards against two popular illusions: that passing a checklist makes a product accessible, and that accessibility work ends at the checkpoint. The honest view — WCAG as a baseline, not a ceiling — is itself a design skill.",
+  "learningObjectives": [
+    "Define WCAG using the working definition from the W3C's Web Accessibility Initiative.",
+    "Name the four POUR principles and match each to its plain meaning.",
+    "Explain the three-layer structure of principles, guidelines, and success criteria.",
+    "Distinguish the conformance levels A, AA, and AAA, including what AA means in practice.",
+    "Apply the difference between WCAG the standard and accessibility the goal to a design scenario.",
+    "Evaluate why WCAG conformance is a baseline rather than a ceiling."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "What WCAG is",
+      "body": "The working definition comes from the W3C: the Web Content Accessibility Guidelines are the international standard for web accessibility, developed through the W3C process in cooperation with individuals and organizations around the world, with the goal of a single shared standard that meets the needs of individuals, organizations, and governments internationally. The W3C's Web Accessibility Initiative (WAI) shepherds the standard. 'Content' means the information in a web page or app — text, images, and sounds — together with the markup that gives it structure. WCAG 2.2, published on 5 October 2023, is the current version, and it is an approved ISO standard (ISO/IEC 40500:2025), which is why 'international' is more than a compliment. Versions are additive: each new version adds success criteria without changing the existing ones, and content that conforms to WCAG 2.2 also conforms to WCAG 2.0 and 2.1."
+    },
+    {
+      "heading": "The structure: principles, guidelines, success criteria",
+      "body": "WCAG is a hierarchy with three layers. At the top sit four principles, remembered as POUR. Perceivable means users can take in the content through sight, hearing, or text. Operable means users can actually work the controls and move through the site, including with a keyboard alone. Understandable means the content and its behavior make sense and do not surprise. Robust means the content keeps working across browsers and assistive technologies, now and in the future. Under the principles sit thirteen guidelines, which state broad goals such as providing text alternatives or making all functionality keyboard-accessible. Guidelines are objectives, not tests. Under each guideline sit the success criteria — the numbered, testable requirements, such as 1.1.1 Non-text Content or 2.1.1 Keyboard. Each success criterion is assigned one of three conformance levels: A, AA, or AAA. Meeting every criterion at a given level is what conformance means."
+    },
+    {
+      "heading": "What the levels mean in practice",
+      "body": "Level A is the minimum set — the criteria that remove the most basic barriers, such as text alternatives for images, captions for prerecorded video, and keyboard access to all functionality. Level AA adds more demanding criteria on top, including minimum contrast for text and the ability to resize text without losing content. Level AAA is the most demanding of all. The W3C itself advises against requiring AAA as a general policy for entire sites, because it is not possible to satisfy every AAA criterion for some content. In practice, AA is the level that laws and policies commonly cite: the W3C notes that most organizations addressing the European Accessibility Act use WCAG together with the European standard EN 301 549, and WAI's index of laws and policies shows governments naming WCAG — often at AA — in legislation and procurement rules. Five familiar success criteria appear again and again: text alternatives (1.1.1), captions (1.2.2), keyboard access (2.1.1), contrast (1.4.3), and resize text (1.4.4)."
+    },
+    {
+      "heading": "The standard versus the goal",
+      "body": "Accessibility is the goal: websites, tools, and technologies built so that people with disabilities can use them — can perceive, understand, navigate, and interact with the web, and contribute to it, as WAI puts it. WCAG is the standard that measures part of that goal. The W3C is explicit that the two are not the same: WCAG is a technical standard, not an introduction to accessibility, and it is one of a family of guidelines that also includes ATAG for authoring tools and UAAG for user agents. The honest framing follows from the W3C's own words: the guidelines 'are not able to address the needs of people with all types, degrees, and combinations of disability,' and WAI's supporting resources exist to improve accessibility beyond WCAG. Conformance tells you that a page meets a defined set of testable criteria; it does not tell you the experience is good. A site can pass AA and still frustrate a screen-reader user with a clumsy flow, or exclude someone whose needs fall outside the criteria. Treat conformance as the floor — a baseline to build from — never the finish line."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "WCAG",
+      "definition": "Web Content Accessibility Guidelines: the international standard for web accessibility, developed by the W3C and published in versions such as 2.2."
+    },
+    {
+      "term": "W3C",
+      "definition": "The World Wide Web Consortium, the international organization that develops web standards, including WCAG and HTML."
+    },
+    {
+      "term": "WAI (Web Accessibility Initiative)",
+      "definition": "The W3C program that develops accessibility standards, guidelines, and educational resources, including WCAG."
+    },
+    {
+      "term": "POUR",
+      "definition": "The four WCAG principles taken together: Perceivable, Operable, Understandable, and Robust."
+    },
+    {
+      "term": "Principle",
+      "definition": "The top layer of WCAG: a broad requirement, such as Perceivable, that all content must satisfy."
+    },
+    {
+      "term": "Guideline",
+      "definition": "A goal under a WCAG principle that groups related success criteria, such as providing text alternatives."
+    },
+    {
+      "term": "Success criterion",
+      "definition": "A specific, testable WCAG requirement with a number such as 1.1.1, rated at level A, AA, or AAA."
+    },
+    {
+      "term": "Conformance level",
+      "definition": "One of three ratings, A, AA, and AAA, that describe which set of success criteria a page meets."
+    },
+    {
+      "term": "Conformance",
+      "definition": "The state of a web page that meets every success criterion at a stated level, such as AA."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "WCAG is a book of rules for people who build websites, telling them how to make sites usable for everyone, including people who cannot see, hear, or use a mouse. The rules are stacked in three layers. On top are four big ideas: the content must be perceivable, operable, understandable, and robust. Under each big idea sit groups of rules, and under those sit the actual checkable items, each marked A, AA, or AAA. Reaching AA, the middle level, is what most teams aim for. The same book is used around the world, which is why countries and companies keep pointing at the same rules.",
+    "analogy": "Think of WCAG like a driving test. Passing the test proves you know the rules of the road — the minimum standard for driving legally. But a good driver goes beyond the test: smooth turns, watching for pedestrians, adjusting to the weather. Conformance is passing the test; accessibility is being a good driver.",
+    "analogyLimits": "The analogy has limits: a driving test is taken once by one person, while WCAG applies to every page of a product and must be re-checked as content changes. And no test can cover every possible road situation, just as WCAG's criteria cannot cover every type, degree, and combination of disability."
+  },
+  "workedExample": "A small city's events team publishes a community calendar with photo thumbnails, a monthly announcement video, and a filter for finding free events. To make it accessible, the team works through WCAG 2.2 at level AA. They write a short text alternative for each thumbnail so a screen reader can announce what the photo shows, add captions to the announcement video, and test the filter with the keyboard alone — tabbing to it, opening it, choosing an option, and closing it again. They check that text can be enlarged without breaking the layout. When the automated checks pass, they do not stop: they invite two users who rely on a screen reader and one who cannot use a mouse to try the calendar, and they fix the confusing filter flow those users found. AA was their floor, not their finish line.",
+  "commonMistakes": [
+    {
+      "mistake": "Confusing WCAG with accessibility itself.",
+      "correction": "WCAG is the standard — a measurable set of requirements; accessibility is the broader goal that people with disabilities can use the web. Conformance helps reach the goal but never replaces it."
+    },
+    {
+      "mistake": "Assuming AA conformance guarantees a good experience for everyone.",
+      "correction": "The W3C states the guidelines cannot address the needs of people with all types, degrees, and combinations of disability; test with real users beyond the checklist."
+    },
+    {
+      "mistake": "Treating AAA as the automatic best choice for every site.",
+      "correction": "The W3C recommends against requiring AAA as a general policy for entire sites, because some content cannot satisfy every AAA criterion."
+    },
+    {
+      "mistake": "Thinking WCAG is only about screen readers.",
+      "correction": "The four principles cover perception, operation, understanding, and robustness — keyboard use, captions, readable text, and compatible markup are all in scope."
+    },
+    {
+      "mistake": "Quoting a guideline as if it were a testable requirement.",
+      "correction": "Guidelines are broad goals; the numbered success criteria are the testable items that determine conformance."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "WCAG",
+      "b": "Accessibility",
+      "distinction": "WCAG is the W3C's international standard with testable criteria; accessibility is the goal that people with disabilities can perceive, understand, navigate, and interact with the web. The standard measures part of the goal."
+    },
+    {
+      "a": "Level A",
+      "b": "Level AA",
+      "distinction": "A is the lowest conformance level, covering basic criteria such as text alternatives and keyboard access; AA adds criteria such as contrast and resize text, and is the level that laws and policies commonly cite."
+    },
+    {
+      "a": "Guideline",
+      "b": "Success criterion",
+      "distinction": "A guideline is a broad goal, such as providing text alternatives; a success criterion is a specific testable requirement, such as 1.1.1 Non-text Content."
+    }
+  ],
+  "keyTakeaway": "WCAG is the W3C's international standard for web accessibility: four POUR principles, thirteen guidelines, and testable success criteria at levels A, AA, and AAA. It is the shared baseline for accessibility work — never the ceiling.",
+  "questionBank": [
+    {
+      "id": "ux-ui-design:foundations:wcag-basics:1",
+      "prompt": "Which organization develops and maintains WCAG, the Web Content Accessibility Guidelines?",
+      "options": [
+        "The W3C, through its Web Accessibility Initiative",
+        "Nielsen Norman Group, the UX research firm",
+        "The International Organization for Standardization, which wrote the original draft",
+        "The U.S. federal government's accessibility office"
+      ],
+      "correctIndex": 0,
+      "explanation": "WCAG is developed through the W3C process by the Web Accessibility Initiative, with input from individuals and organizations worldwide. ISO later approved WCAG 2.2 as ISO/IEC 40500, but ISO did not write or maintain the guidelines, and the other two options are not WCAG standards bodies.",
+      "difficulty": "recall",
+      "skill": "Recall who develops and maintains WCAG",
+      "sourceIds": [
+        "w3c-wcag-overview"
+      ]
+    },
+    {
+      "id": "ux-ui-design:foundations:wcag-basics:2",
+      "prompt": "The four WCAG principles are often remembered by the acronym POUR. Which option lists them correctly?",
+      "options": [
+        "Practical, Operable, Understandable, Reliable",
+        "Perceivable, Operable, Understandable, Robust",
+        "Perceivable, Optimized, Usable, Responsive",
+        "Physical, Operable, Universal, Resilient"
+      ],
+      "correctIndex": 1,
+      "explanation": "The four principles that head WCAG's structure are Perceivable, Operable, Understandable, and Robust. The other options swap in plausible-sounding words that are not the principle names.",
+      "difficulty": "recall",
+      "skill": "Recall the four POUR principle names",
+      "sourceIds": [
+        "w3c-wcag-overview",
+        "w3c-wcag22"
+      ]
+    },
+    {
+      "id": "ux-ui-design:foundations:wcag-basics:3",
+      "prompt": "A team's automated checker reports that a page passes every Level A success criterion in WCAG 2.2. What does that result tell the team about Level AA?",
+      "options": [
+        "The page automatically conforms at Level AA as well",
+        "Level AA is a subset of Level A, so no extra work is needed",
+        "Nothing — Level AA adds further success criteria that have not been checked",
+        "The page cannot claim any conformance until Level AAA is checked"
+      ],
+      "correctIndex": 2,
+      "explanation": "Each level adds success criteria: AA includes the A criteria plus additional ones. Passing only the A criteria says nothing about the AA criteria, which must be checked and met separately. Conformance is claimed at a specific level, not inherited from a lower one.",
+      "difficulty": "application",
+      "skill": "Apply the meaning of conformance levels to a test result",
+      "sourceIds": [
+        "w3c-wcag22",
+        "w3c-wcag-overview"
+      ]
+    },
+    {
+      "id": "ux-ui-design:foundations:wcag-basics:4",
+      "prompt": "A developer announces: 'Our site conforms to WCAG 2.2 at Level AA, so our accessibility work is finished.' Which response best reflects the W3C's own position?",
+      "options": [
+        "Correct — AA conformance is the maximum level any site should aim for",
+        "Correct — meeting AA means every user's needs are met",
+        "Wrong — WCAG covers all types, degrees, and combinations of disability",
+        "Wrong — WCAG cannot address every type, degree, and combination of disability, so conformance is a baseline rather than a finish line"
+      ],
+      "correctIndex": 3,
+      "explanation": "The W3C states the guidelines are not able to address the needs of people with all types, degrees, and combinations of disability, and WAI offers resources to improve accessibility beyond WCAG. Conformance is a verified baseline, not proof that the experience works for everyone.",
+      "difficulty": "analysis",
+      "skill": "Evaluate the honest limits of WCAG conformance",
+      "sourceIds": [
+        "w3c-wcag22",
+        "w3c-wai-accessibility-introduction"
+      ]
+    },
+    {
+      "id": "ux-ui-design:foundations:wcag-basics:5",
+      "prompt": "Which of the following is a success criterion, rather than a principle or a guideline?",
+      "options": [
+        "Perceivable",
+        "Captions (Prerecorded), numbered 1.2.2",
+        "Keyboard Accessible",
+        "Text Alternatives"
+      ],
+      "correctIndex": 1,
+      "explanation": "Captions (Prerecorded) is success criterion 1.2.2, a testable requirement under the Time-based Media guideline. Perceivable is a principle; Keyboard Accessible and Text Alternatives are guidelines, which state broad goals that group related success criteria.",
+      "difficulty": "understanding",
+      "skill": "Distinguish principles, guidelines, and success criteria",
+      "sourceIds": [
+        "w3c-wcag22"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "ux-ui-design:foundations:wcag-basics:1",
+      "prompt": "Which organization develops and maintains WCAG, the Web Content Accessibility Guidelines?",
+      "options": [
+        "The W3C, through its Web Accessibility Initiative",
+        "Nielsen Norman Group, the UX research firm",
+        "The International Organization for Standardization, which wrote the original draft",
+        "The U.S. federal government's accessibility office"
+      ],
+      "correctIndex": 0,
+      "explanation": "WCAG is developed through the W3C process by the Web Accessibility Initiative, with input from individuals and organizations worldwide. ISO later approved WCAG 2.2 as ISO/IEC 40500, but ISO did not write or maintain the guidelines, and the other two options are not WCAG standards bodies.",
+      "difficulty": "recall",
+      "skill": "Recall who develops and maintains WCAG",
+      "sourceIds": [
+        "w3c-wcag-overview"
+      ]
+    },
+    {
+      "id": "ux-ui-design:foundations:wcag-basics:2",
+      "prompt": "The four WCAG principles are often remembered by the acronym POUR. Which option lists them correctly?",
+      "options": [
+        "Practical, Operable, Understandable, Reliable",
+        "Perceivable, Operable, Understandable, Robust",
+        "Perceivable, Optimized, Usable, Responsive",
+        "Physical, Operable, Universal, Resilient"
+      ],
+      "correctIndex": 1,
+      "explanation": "The four principles that head WCAG's structure are Perceivable, Operable, Understandable, and Robust. The other options swap in plausible-sounding words that are not the principle names.",
+      "difficulty": "recall",
+      "skill": "Recall the four POUR principle names",
+      "sourceIds": [
+        "w3c-wcag-overview",
+        "w3c-wcag22"
+      ]
+    },
+    {
+      "id": "ux-ui-design:foundations:wcag-basics:3",
+      "prompt": "A team's automated checker reports that a page passes every Level A success criterion in WCAG 2.2. What does that result tell the team about Level AA?",
+      "options": [
+        "The page automatically conforms at Level AA as well",
+        "Level AA is a subset of Level A, so no extra work is needed",
+        "Nothing — Level AA adds further success criteria that have not been checked",
+        "The page cannot claim any conformance until Level AAA is checked"
+      ],
+      "correctIndex": 2,
+      "explanation": "Each level adds success criteria: AA includes the A criteria plus additional ones. Passing only the A criteria says nothing about the AA criteria, which must be checked and met separately. Conformance is claimed at a specific level, not inherited from a lower one.",
+      "difficulty": "application",
+      "skill": "Apply the meaning of conformance levels to a test result",
+      "sourceIds": [
+        "w3c-wcag22",
+        "w3c-wcag-overview"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "ux-ui-design:foundations:accessibility",
+    "ux-ui-design:foundations:color",
+    "ux-ui-design:foundations:typography",
+    "ux-ui-design:foundations:interaction-design"
+  ],
+  "sources": [
+    "w3c-wcag-overview",
+    "w3c-wcag22",
+    "w3c-wai-accessibility-introduction",
+    "w3c-wai-policies"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "Reference-only W3C WAI sources; facts restated in original prose, no source wording reproduced.",
+    "researchedAt": "2026-08-21",
+    "transformation": "Original educational explanation of WCAG as a standard: its definition and provenance, the POUR principles, the principles-guidelines-success-criteria hierarchy, conformance levels A/AA/AAA, named common success criteria, the standard-versus-goal distinction, and the baseline-not-ceiling framing."
+  },
+  "contentHash": "925d03a145bcac06",
+  "status": "source-verified",
+  "public": false
+}

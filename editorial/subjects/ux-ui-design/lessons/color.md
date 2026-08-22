@@ -82,7 +82,7 @@ Color communicates meaning, groups related elements, and creates emphasis, but t
 
 ## Practice Question Bank
 
-1. **Which statement best captures the working definition of color in UX design used in this lesson?**
+1. **What does color do in a user interface?**
    - A. A visual perception that designers use as a design language to communicate information and guide behavior
    - B. A decorative layer applied to finished screens to make them prettier
    - C. A way to replace all text labels with colored shapes

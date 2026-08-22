@@ -28,7 +28,7 @@ Low fidelity is a range, not a single thing. At one end are paper sketches: scre
 
 ### Why Low Fidelity First: The Speed Argument
 
-The core argument for low fidelity is speed, and speed is money. The Nielsen Norman Group puts it bluntly: ripping up code is very expensive; ripping up a prototype is not, especially when it is just a piece of paper. Jakob Nielsen's long-standing estimate is that it is about 100 times cheaper to change a design before code is written than after the implementation is complete — and that usability data gathered early in a project is worth roughly ten times what the same insight is worth late. The Interaction Design Foundation makes the same point in softer form: modifying a prototype costs far less than reworking a fully developed product, because changes get more expensive the further a project advances. Low-fidelity prototypes are fast to build, disposable, and easy to change between one test and the next. That is what "test the idea while it is cheap to change" means: a sketch that fails costs an afternoon; a built product that fails costs a team.
+The core argument for low fidelity is speed, and speed is money. The Nielsen Norman Group makes the point bluntly: code is expensive to tear up; a rough prototype is not, especially when it is just a piece of paper. Jakob Nielsen's long-standing estimate is that it is about 100 times cheaper to change a design before code is written than after the implementation is complete — and that usability data gathered early in a project is worth roughly ten times what the same insight is worth late. The Interaction Design Foundation makes the same point in softer form: modifying a prototype costs far less than reworking a fully developed product, because changes get more expensive the further a project advances. Low-fidelity prototypes are fast to build, disposable, and easy to change between one test and the next. That is what "test the idea while it is cheap to change" means: a sketch that fails costs an afternoon; a built product that fails costs a team.
 
 ### What Low Fidelity Is Good For — and What It Is Not
 
@@ -86,7 +86,7 @@ Low-fidelity prototypes are rough, fast, and cheap by design: they test layout, 
 
 ## Practice Question Bank
 
-1. Which statement best describes a low-fidelity prototype?
+1. What is a low-fidelity prototype?
    A. A rough, quickly made representation of a design that tests ideas before code
    B. A fully finished version of a product, ready to launch
    C. A written list of features the product should include

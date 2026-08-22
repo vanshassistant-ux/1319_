@@ -92,7 +92,7 @@ A wireframe is a screen's skeleton: a low-detail layout showing where content an
 
 ## Practice Question Bank
 
-**Q1.** Which statement best matches the working definition of a wireframe used in this lesson?
+**Q1.** What is a wireframe?
 
 - A. A low-detail layout of a screen that shows structure — where content and controls go — rather than style.
 - B. A fully designed screen with final colors, fonts, and photographic images in place.

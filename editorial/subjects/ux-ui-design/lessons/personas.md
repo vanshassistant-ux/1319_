@@ -92,7 +92,7 @@ A persona is a fictional but realistic, research-based portrait of a user type â
 
 ## Practice Question Bank
 
-**1. According to the working definition used in this lesson, what is a persona?**
+**1. What is a persona, in design practice?**
 
 - A. A statistical summary of a market segment's spending habits
 - B. A fictional but realistic description of a typical or target user, built from research

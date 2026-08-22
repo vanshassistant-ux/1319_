@@ -121,6 +121,44 @@ D. Yes-or-no question
 
 *An open-ended question allows a free-form answer in the respondent's own words, while multiple-choice questions, rating scales, and yes-or-no questions all restrict answers to a fixed set of options.*
 
+
+## Eli's Analogy
+
+Think of a survey as a crowd vote at a town meeting. Everyone holds up a colored card for the same question, and you count the colors. It is fast, and it tells you what the crowd says. But the crowd is only the people who showed up, the question must be one you can answer with a single card, and a card raised in the air is a claim, not proof: someone can hold up the green 'I recycle every week' card and still toss cans in the trash.
+
+Real surveys are not votes: people answer privately, answers are often graded scales rather than colors, and the counting requires care. The analogy also hides that question wording, not just the crowd, shapes what people say; a slightly different card can produce a different count.
+
+## Worked Example
+
+A team wants to know why shoppers abandon their carts. They draft: 'How much did you love our fast, easy checkout?' A colleague flags it: the question hands out the answer. They rework it into a neutral, single-idea question, 'How easy was it to complete checkout on your last order?' with a four-point scale from 'Very easy' to 'Very difficult,' plus one open-ended follow-up: 'What, if anything, made checkout difficult?' They keep the survey to six questions, pilot it with five colleagues and three recent customers, fix a confusing option, and send it to the 900 people who abandoned a cart in the past month. When reading the results, they remember the answers describe what those shoppers said, not what they did.
+
+## Common Mistakes
+
+- Writing a leading question that plants the expected answer, such as 'How helpful is our friendly support team?' instead of 'How would you rate the support you received?'
+- Folding two ideas into one double-barreled question and then not knowing which half a 'no' refers to.
+- Making the survey so long that people quit partway, which drags the response rate down and makes the answers suspect.
+- Sending the survey to whoever is easy to reach and then reporting the results as if they describe the whole audience.
+- Reading self-reported answers as observed behavior, treating 'I check the app daily' as a fact instead of a claim to combine with other evidence.
+
+## Compare / Contrast
+
+- **Survey vs Interview** — A survey asks the same fixed questions of many people for breadth; an interview explores a few people's experiences in depth.
+- **Open-ended question vs Closed question** — Open-ended questions let respondents answer in their own words; closed questions restrict them to a fixed set of options.
+- **Leading question vs Neutral question** — A leading question suggests the expected answer; a neutral question does not imply any particular answer.
+- **Self-report vs Observed behavior** — Surveys capture what people say about themselves; observation-based methods capture what people actually do.
+
+## Key Takeaway
+
+A survey collects many self-reported answers to the same questions. Write questions that are clear, neutral, and single-idea, keep the survey short, choose the audience deliberately, and treat results as one layer of evidence.
+
+## Related Topics
+
+- `ux-ui-design:foundations:user-research`
+- `ux-ui-design:foundations:interviews`
+- `ux-ui-design:foundations:usability-testing`
+- `ux-ui-design:foundations:human-centered-design`
+- `ux-ui-design:foundations:personas`
+
 ## Sources
 
 - Nielsen Norman Group — 28 Tips for Creating Great Qualitative Surveys (Susan Farrell) — https://www.nngroup.com/articles/qualitative-surveys/

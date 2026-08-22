@@ -21,7 +21,7 @@ Products are rarely one screen made by one person. A company's app, website, and
 
 ### What a design system is
 
-The working definition in this lesson comes from Nielsen Norman Group: a design system is a set of standards to manage design at scale by reducing redundancy while creating a shared language and visual consistency across different pages and channels. The Interaction Design Foundation puts the same idea more briefly: a set of standards to manage and scale design, including reusable components, design principles, and guidelines. Strip the formal language and a design system is the shared design language of a product: the pieces every screen is built from, the visual rules every screen follows, and the written rules for when to use each piece. The phrase at scale is the heart of the definition: one designer building one screen does not need a system, but a company shipping an app, a website, and a help center, built by dozens of people over years, needs a way to make all those screens feel like one product.
+The definition guiding this lesson is Nielsen Norman Group’s: a design system is a set of standards to manage design at scale by reducing redundancy while creating a shared language and visual consistency across different pages and channels. The Interaction Design Foundation phrases the same idea more briefly: a set of standards to manage and scale design, including reusable components, design principles, and guidelines. Strip the formal language and a design system is the shared design language of a product: the pieces every screen is built from, the visual rules every screen follows, and the written rules for when to use each piece. The phrase at scale is the heart of the definition: one designer building one screen does not need a system, but a company shipping an app, a website, and a help center, built by dozens of people over years, needs a way to make all those screens feel like one product.
 
 ### What a design system contains
 
@@ -89,7 +89,7 @@ A design system is the shared, living collection of components, styles, and guid
 
 ## Practice Question Bank
 
-1. **Which statement best captures the working definition of a design system used in this lesson?**
+1. **What is a design system?**
    - A. A set of standards that manages design at scale using reusable components and rules to keep a product consistent
    - B. A single finished document that a team writes once and files away
    - C. A software program that automatically builds every screen of a product

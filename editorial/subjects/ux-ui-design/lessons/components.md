@@ -80,7 +80,7 @@ Components are reusable pieces of the interface, and the core rule is consistenc
 
 ## Practice Question Bank
 
-1. **Which statement best captures the working definition of a UI component used in this lesson?**
+1. **What is a UI component?**
    - A. A reusable piece of the interface, such as a button, a menu, or a card, with a defined look and behavior
    - B. A single finished screen assembled by a designer
    - C. A set of rules that governs every color in a product

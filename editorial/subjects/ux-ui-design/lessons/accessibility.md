@@ -85,7 +85,7 @@ Accessibility means designing products that people with a wide range of abilitie
 
 ## Practice Question Bank
 
-**1. Which statement best matches the working definition of accessibility used in this lesson?**
+**1. What does accessibility mean in design?**
 
 A. Designing products so that people with a wide range of abilities can use them
 B. Adding extra features for users who happen to ask for them

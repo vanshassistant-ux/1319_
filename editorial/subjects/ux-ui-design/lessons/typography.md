@@ -86,7 +86,7 @@ Typography is the art and technique of arranging type so that text is legible, r
 
 ## Practice Question Bank
 
-**Q1.** Which statement best matches the working definition of typography used in this lesson?
+**Q1.** What is typography?
 
 - A. The set of rules that limits how much text a website may display
 - B. The practice of choosing colors for buttons, menus, and icons

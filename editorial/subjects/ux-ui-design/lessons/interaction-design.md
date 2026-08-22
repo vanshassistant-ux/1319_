@@ -87,7 +87,7 @@ Interaction design is designing how people interact with a product: feedback for
 
 ## Practice Question Bank
 
-1. **Which statement best matches the working definition of interaction design used in this lesson?**
+1. **What does interaction design shape?**
    - A. Designing how people interact with a product, especially the responses to their actions
    - B. Choosing the colors and fonts that make a screen attractive
    - C. Writing the text that appears on buttons and menus

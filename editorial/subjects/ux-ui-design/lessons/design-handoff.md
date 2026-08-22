@@ -83,7 +83,7 @@ A design handoff is the transfer of a finished design to developers for implemen
 
 ## Practice Question Bank
 
-**Q1.** Which statement best defines a design handoff?
+**Q1.** What is a design handoff?
 
 - A. The process of handing over a finished design to developers for implementation, including the designer's intent, knowledge, and specifications.
 - B. A meeting where stakeholders vote on which design direction to pursue.

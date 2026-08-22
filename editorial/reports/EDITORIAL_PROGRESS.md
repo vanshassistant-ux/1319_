@@ -1,32 +1,32 @@
 # ELIEXPLAINS GLOBAL EDITORIAL PROGRESS
 
-Generated: 2026-08-22T00:13:35.731Z
+Generated: 2026-08-22T01:12:13.963Z
 Counts are computed from the phase content stores by `bun run editorial:progress`.
 
 Subjects total: 44
-Subjects processed: 28
-Subjects remaining: 16
-Subject completion: 63.64%
+Subjects processed: 30
+Subjects remaining: 14
+Subject completion: 68.18%
 
 Total topics: 1299
-Topics processed: 862
+Topics processed: 896
 Topics published: 282
-Topics ready to publish: 580
+Topics ready to publish: 614
 Topics held: 0
 Topics requiring review: 0
-Topics remaining: 437
-Topic processing: 66.36%
+Topics remaining: 403
+Topic processing: 68.98%
 
-Verified questions: 4310
-Unique source records: 4047
-Source usage classes: REFERENCE_ONLY=3179, PUBLIC_DOMAIN=566, ATTRIBUTION_REQUIRED=207, EXTRACT_AND_ADAPT=93, LINK_ONLY=2
+Verified questions: 4480
+Unique source records: 4179
+Source usage classes: REFERENCE_ONLY=3310, PUBLIC_DOMAIN=566, ATTRIBUTION_REQUIRED=207, EXTRACT_AND_ADAPT=94, LINK_ONLY=2
 
 ## Phase progress
 
 | Phase | Subjects | Topics | Percent |
 | --- | --- | --- | --- |
 | 1 | 11 / 11 | 282 / 282 | 100.00% |
-| 2 | 3 / 11 | 135 / 325 | 41.54% |
+| 2 | 5 / 11 | 169 / 325 | 52.00% |
 | 3 | 11 / 11 | 329 / 329 | 100.00% |
 | 4 | 3 / 11 | 116 / 363 | 31.96% |
 
@@ -35,7 +35,7 @@ Source usage classes: REFERENCE_ONLY=3179, PUBLIC_DOMAIN=566, ATTRIBUTION_REQUIR
 | Collection | Subjects | Topics | Percent |
 | --- | --- | --- | --- |
 | Professional Studies | 7 / 7 | 166 / 166 | 100.00% |
-| Technology | 6 / 8 | 223 / 257 | 86.77% |
+| Technology | 8 / 8 | 257 / 257 | 100.00% |
 | Business & Money | 3 / 9 | 84 / 240 | 35.00% |
 | Humanities & Culture | 7 / 7 | 197 / 197 | 100.00% |
 | Science & Health | 1 / 6 | 48 / 206 | 23.30% |
@@ -52,7 +52,7 @@ Source usage classes: REFERENCE_ONLY=3179, PUBLIC_DOMAIN=566, ATTRIBUTION_REQUIR
 | criminal-justice-and-criminology | 28 / 28 | 28 | 0 | 0 | 0 | 0 |
 | cybersecurity | 34 / 34 | 0 | 34 | 0 | 0 | 0 |
 | data-science-and-ai-literacy | 31 / 31 | 0 | 31 | 0 | 0 | 0 |
-| databases-and-sql | 23 / 29 | 0 | 23 | 0 | 0 | 6 |
+| databases-and-sql | 29 / 29 | 0 | 29 | 0 | 0 | 0 |
 | earth-and-space-science | 48 / 48 | 0 | 48 | 0 | 0 | 0 |
 | economics | 39 / 39 | 0 | 39 | 0 | 0 | 0 |
 | education | 21 / 21 | 21 | 0 | 0 | 0 | 0 |
@@ -73,4 +73,5 @@ Source usage classes: REFERENCE_ONLY=3179, PUBLIC_DOMAIN=566, ATTRIBUTION_REQUIR
 | python-programming | 36 / 36 | 36 | 0 | 0 | 0 | 0 |
 | religious-studies | 27 / 27 | 0 | 27 | 0 | 0 | 0 |
 | social-work-and-human-services | 20 / 20 | 20 | 0 | 0 | 0 | 0 |
+| ux-ui-design | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
 | web-development | 47 / 47 | 0 | 47 | 0 | 0 | 0 |

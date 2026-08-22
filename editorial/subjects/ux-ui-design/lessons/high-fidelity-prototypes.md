@@ -78,7 +78,7 @@ A high-fidelity prototype is a detailed, interactive model that closely matches 
 
 ## Practice Question Bank
 
-**Q1.** Which statement best describes a high-fidelity prototype?
+**Q1.** What makes a prototype high fidelity?
 
 - A. A detailed, interactive representation that closely matches the final product in visuals, content, and behavior.
 - B. A rough, hand-drawn sketch of a screen used to explore early design ideas.

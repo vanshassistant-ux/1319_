@@ -21,7 +21,7 @@ People do not read screens; they scan them. In a 1997 study, Jakob Nielsen found
 
 ### A working definition of visual hierarchy
 
-Visual hierarchy is the arrangement of design elements so that the eye meets the most important things first. The working definition used in this lesson comes from Nielsen Norman Group: visual hierarchy, of a 2D display such as a webpage, graphic, or print piece, refers to the organization of the design elements on the page so that the eye is guided to consume each design element in the order of intended importance. The Interaction Design Foundation puts the same idea more briefly: visual hierarchy is the principle of arranging elements so that people instantly recognize their order of importance on a screen or page. Two words carry the weight: order and importance. Hierarchy is not decoration; it is a promise about what matters, made before a single word is read.
+Visual hierarchy is the arrangement of design elements so that the eye meets the most important things first. Nielsen Norman Group’s definition anchors this lesson: visual hierarchy, of a 2D display such as a webpage, graphic, or print piece, refers to the organization of the design elements on the page so that the eye is guided to consume each design element in the order of intended importance. The Interaction Design Foundation puts the same idea more briefly: visual hierarchy is the principle of arranging elements so that people instantly recognize their order of importance on a screen or page. Two words carry the weight: order and importance. Hierarchy is not decoration; it is a promise about what matters, made before a single word is read.
 
 ### Why it matters: people scan, they do not read
 
@@ -89,7 +89,7 @@ Visual hierarchy arranges design elements so the eye meets the most important th
 
 ## Practice Question Bank
 
-1. **Which statement best matches the working definition of visual hierarchy used in this lesson?**
+1. **What does visual hierarchy arrange?**
    - A. Choosing colors that match a brand's logo and marketing materials
    - B. Organizing design elements on a page so the eye is guided to consume each element in the order of intended importance
    - C. Listing every feature a product offers in alphabetical order

@@ -25,7 +25,7 @@ Everything before this point in the foundations sequence has been the craft half
 
 ### Design is a business activity
 
-Products are not built by designers alone; they are built by organizations. An organization coordinates people, money, materials, and information to reach goals, and every product it makes is the result of that coordination. OpenStax's Introduction to Business puts it plainly: production turns inputs — natural resources, raw materials, human resources, and capital — into outputs, which are the products and services customers receive. The textbook's own example is a road bridge: dozens of teams, equipment, and materials arriving on a tight schedule and a specific budget. Software, apps, and websites are the same kind of work. A design team's research, prototypes, and tests happen inside that schedule and budget, not outside them. Nielsen Norman Group's definition of user experience makes the same point from the other side: user experience encompasses all aspects of the end-user's interaction with the company, its services, and its products — the company, not just the screen. High-quality UX, NN/g adds, requires a seamless merging of disciplines including engineering, marketing, graphical and industrial design, and interface design. Design is one discipline among several, inside an organization with goals.
+Products are not built by designers alone; they are built by organizations. An organization coordinates people, money, materials, and information to reach goals, and every product it makes is the result of that coordination. OpenStax's Introduction to Business puts it plainly: production turns inputs — natural resources, raw materials, human resources, and capital — into outputs, which are the products and services customers receive. The textbook's own example is a road bridge: dozens of teams, equipment, and materials arriving on a tight schedule and a specific budget. Software, apps, and websites are the same kind of work. A design team's research, prototypes, and tests happen inside that schedule and budget, not outside them. Nielsen Norman Group's definition of user experience makes the same point from the other side: UX spans every part of a person's contact with a company and what it offers — the company, not just the screen. High-quality UX, NN/g adds, requires a seamless merging of disciplines including engineering, marketing, graphical and industrial design, and interface design. Design is one discipline among several, inside an organization with goals.
 
 ### What good design is worth, in plain terms
 
@@ -86,11 +86,11 @@ Design work is business work: products are built by organizations with budgets, 
 **According to Nielsen Norman Group's definition, what does 'user experience' encompass?**
 
 A. Only the visual interface of a product
-B. All aspects of the end-user's interaction with the company, its services, and its products
+B. The entire interaction between a person and a company across its products and services
 C. Only the results of usability testing
 D. The marketing materials that describe a product
 
-*Answer: B. NN/g defines user experience as encompassing all aspects of the end-user's interaction with the company, its services, and its products — the company level, not just the screen. The other options each narrow UX to a single piece: the interface, the tests, or the marketing.
+*Answer: B. NN/g defines user experience as the whole of a person's interaction with a company and its products — the company level, not just the screen. The other options each narrow UX to a single piece: the interface, the tests, or the marketing.
 *Difficulty: recall — recalls the attributed NN/g definition of user experience*
 
 **According to this lesson, which three Part III subjects follow the design foundations and own the business and money depth?**

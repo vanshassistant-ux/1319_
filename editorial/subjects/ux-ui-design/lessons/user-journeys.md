@@ -80,7 +80,7 @@ A user journey is the full path a person takes to reach a goal, and a journey ma
 
 ## Practice Question Bank
 
-1. **Which statement best matches the working definition of a user journey used in this lesson?**
+1. **What is a user journey?**
    - A. The visual styling of a single screen, such as colors, spacing, and fonts
    - B. A ranked list of every feature a product offers
    - C. The step-by-step path a person takes to reach a goal with a product or service, usually across channels and over time

@@ -24,7 +24,7 @@ Nielsen Norman Group's article "User Journeys vs. User Flows" defines a user flo
 
 ### One task versus the whole experience
 
-The same NN/g article draws the line between a user flow and a user journey. The journey is the macro view: a holistic, high-level experience across channels and over time, with the person's actions, thoughts, and feelings recorded along the way. The flow is the micro view: specific, discrete interactions for one common pathway through a product. Consider a rental service. The whole experience of finding an apartment, touring it, applying, and moving in is a journey that spans the website, a phone call, and a paper lease. Entering the card details on the application fee screen is a flow. Both tools are structured around a user goal and seen from the user's point of view, but the flow captures steps and system responses while the journey also captures emotions. User journeys get their own lesson in this course; the point here is scope. A team usually needs both, with flows acting as deep dives into the particular moments the journey passes through.
+The same NN/g article draws the line between a user flow and a user journey. The journey is the wide view: a whole experience spanning channels and time, with the person's actions, thoughts, and feelings recorded along the way. The flow is the micro view: specific, discrete interactions for one common pathway through a product. Consider a rental service. The whole experience of finding an apartment, touring it, applying, and moving in is a journey that spans the website, a phone call, and a paper lease. Entering the card details on the application fee screen is a flow. Both tools are structured around a user goal and seen from the user's point of view, but the flow captures steps and system responses while the journey also captures emotions. User journeys have their own lesson here; the point for now is scope. A team usually needs both, with flows acting as deep dives into the particular moments the journey passes through.
 
 ### The diagram: screens, decisions, endpoints
 
@@ -80,7 +80,7 @@ A user flow is the sequence of steps for one task in one product, drawn as a dia
 
 ## Practice Question Bank
 
-1. **Which statement best matches the working definition of a user flow used in this lesson?**
+1. **What is a user flow?**
    - A. The set of steps that describe the typical or ideal route a person takes to complete one task with a product
    - B. A record of how a person feels across a full week of using a service
    - C. A list of every screen a product contains, in no particular order

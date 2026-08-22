@@ -85,7 +85,7 @@ UX is the overall experience a person has with a product; UI is the visual and i
 
 ## Practice Question Bank
 
-**Q1.** Which statement best captures the working definition of user experience (UX) used in this lesson?
+**Q1.** What is user experience, in the UX/UI pair?
 
 - A. The overall experience a person has with a product, encompassing all aspects of the end-user's interaction with the company, its services, and its products.
 - B. The collection of screens, buttons, menus, and controls a person sees and clicks.
