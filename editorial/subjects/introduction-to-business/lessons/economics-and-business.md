@@ -1,0 +1,174 @@
+# Economics and Business
+
+## In 30 Seconds
+
+Economics is the study of how people and societies choose to allocate scarce resources that have alternative uses. It works at two levels: macroeconomics looks at whole economies, while microeconomics looks at individual choices. In any market, supply and demand meet to set prices, and competition keeps those prices honest. Economies also swing through expansions and recessions in recurring business cycles. Businesses cannot control these forces, but understanding them turns economic change from a surprise into something to plan around.
+
+## Why This Matters
+
+Every business decision, from what to make to whom to hire, happens inside an economy that is always moving. A strong expansion can fill order books and drain the labor market at the same time; a recession can cut demand while suppliers hold their prices. Students who understand the economic backdrop can read why prices rise, why jobs come and go, and why competitors keep pushing prices down. Practically, it is the difference between being blindsided by a slowdown and planning for one. The goal is not to predict the economy, which no one can do reliably, but to understand the forces at work well enough to respond.
+
+## Learning Objectives
+
+- Define economics as the study of how people and societies allocate scarce resources, using the working definition attributed to Paul Samuelson and consistent with OpenStax's framing.
+- Distinguish macroeconomics, the study of whole economies, from microeconomics, the study of individual choices and single markets.
+- Explain how supply and demand interact to set prices, using an original example.
+- Describe how competition among sellers keeps prices in check and benefits buyers.
+- Identify expansions and recessions as phases of recurring business cycles.
+- Apply the honest-framing principle that economics describes tendencies and pressures rather than guaranteed predictions.
+
+## The College Version
+
+### A working definition of economics
+
+Economics is the study of how people and societies choose to allocate scarce resources that have alternative uses. That working definition, associated with the twentieth-century economist Paul Samuelson, frames the subject as a social science: it studies real choices made with and without money, not a set of natural laws. The word to underline is scarce. Scarcity is the plain fact that human wants for goods, services, and resources exceed what is available; labor, land, tools, and raw materials are all limited. Because resources are finite, every use of them rules out another: a neighborhood food bank that spends its monthly donation on rice cannot also buy milk, and a bakery that buys a second oven has less cash for a delivery van. OpenStax's Principles of Economics puts the same idea in decision terms: economics is the study of how humans make decisions in the face of scarcity, whether those decisions are individual, family, business, or societal. That is why every business choice, from hiring to pricing, has an economic dimension: each one spends a scarce resource, such as money, time, or staff attention, that could have gone somewhere else.
+
+### Two levels: macro and micro
+
+Economists work at two levels. Macroeconomics is the study of the economy as a whole: national output, total employment, and the general level of prices. Microeconomics focuses on the individual parts: a household's spending, a firm's pricing, the give-and-take inside a single market. The two are not rivals; they are lenses. A furniture chain deciding whether to open a new store would look through the macroeconomic lens at whether regional income and employment are growing, then through the microeconomic lens at how many competing stores already serve the area and what local customers are willing to pay. The same distinction shows up in the news: a report on the national unemployment rate is macro; a story about a local roastery's price war with the cafe next door is micro. Businesses live at both levels at once, which is why managers track the whole economy and their own market at the same time.
+
+### Supply, demand, and the price that results
+
+Prices are not posted by anyone in charge; they emerge where buyers and sellers meet. Demand is the quantity of a good or service that people are willing to buy at various prices, and the higher the price, the less they buy. Supply is the quantity that sellers are willing to make available at various prices, and the higher the price, the more they are willing to produce. Consider a small coffee roastery. At $18 a bag, it sells about 400 bags a week; at $24, only about 240. Meanwhile, the roastery and its regional rivals are willing to roast more bags at higher prices, because higher prices cover the cost of pricier beans and extra shifts. The two sides meet in the middle: around $20 a bag, the amount buyers want and the amount sellers offer roughly match. Above that price, roasters bring in more bags than buyers take, and the surplus pushes prices back down; below it, bags disappear from shelves quickly, and the shortage pulls prices back up. That settling point is the equilibrium price: not fixed forever, but wherever supply and demand currently cross.
+
+### Markets, competition, and the business cycle
+
+A market is simply buyers and sellers coming together: a farmers' market, an online storefront, a wholesale auction. Competition is what keeps prices honest there. When profits in a market are high, new sellers enter to claim a share, supply grows, and prices ease; sellers then compete on quality, service, and convenience as well as price. The more sellers and the more similar their products, the less control any one of them has over price. At the whole-economy level, activity does not grow in a straight line. It rises and falls in recurring patterns called business cycles: expansions bring rising output, employment, and incomes; recessions bring declining activity and rising unemployment. Cycles vary in length and severity, and their turning points are usually confirmed only in hindsight. The committee that dates U.S. recessions describes a recession as a significant decline in economic activity spread across the economy and lasting more than a few months, and it announces peaks and troughs only after the data are in. No one can reliably forecast the next turning point, which is why the practical skill is reading the current phase, not predicting the next one.
+
+### Why businesses watch the economy
+
+Economic conditions reach every business through two channels: sales and costs. In an expansion, customers have more income, so orders grow, but workers become harder to find and inputs pricier as demand for them rises too. In a recession, orders shrink and inventory piles up, yet a business may find cheaper labor and more negotiable rents. Managers read the phase and respond: a bakery might lock in a longer lease during a boom and shift toward repair-and-service revenue during a slump. Economics explains these tendencies, not certainties. The supply-and-demand model assumes conditions, such as many similar sellers and well-informed buyers, that real markets only approximate, and a single business can thrive in a weak economy while a rival struggles in a strong one. Use economics to see the pressures; use your own market's evidence to decide.
+
+## Key Vocabulary
+
+- **Economics** — The study of how people and societies choose to allocate scarce resources that have alternative uses.
+- **Scarcity** — The condition in which human wants for goods, services, and resources exceed what is available.
+- **Macroeconomics** — The branch of economics that studies the economy as a whole, including growth, total employment, and the general price level.
+- **Microeconomics** — The branch of economics that studies individual choices, including the decisions of households, firms, and single markets.
+- **Demand** — The quantity of a good or service that buyers are willing to purchase at various prices.
+- **Supply** — The quantity of a good or service that sellers are willing to make available at various prices.
+- **Equilibrium price** — The price at which the quantity demanded equals the quantity supplied in a market.
+- **Business cycle** — The recurring pattern of expansion and contraction in overall economic activity over time.
+- **Recession** — A significant decline in economic activity that is spread across the economy and lasts more than a few months.
+
+## Eli-10
+
+**Simplified explanation.** Economics is the study of choices under limits. Nobody, not a household, not a business, not a country, can have everything, because resources are finite and every use of them rules out another: when a bakery buys a new oven, that money cannot also buy a delivery van. Economics is the organized study of exactly these trade-offs, plus the surprising way millions of separate choices add up. Buyers want low prices; sellers want high ones. The two sides meet in markets, and their tug-of-war settles on a price. The whole economy also breathes in and out over time: stretches of growth followed by stretches of contraction, which is why business feels different in different years. Remember that economics describes pressures, not promises: it tells you which way the wind usually blows, not exactly when it will gust.
+
+**Analogy.** Picture a footpath worn across a lawn. No one designed it; it formed because hundreds of people each made a small choice to take the shortest route. Economics is like studying that path: the pattern is real and predictable in general, even though no single walker is predictable. Prices are similar. They are paths worn by many buyers and sellers, each acting on self-interest, that end up somewhere no one planned.
+
+**Where the analogy breaks down.** The path analogy makes markets look smoother than they are. A footpath forms without anyone being hurt or left out; markets can produce shortages, surpluses, and outcomes some people find unfair. The path also suggests slow drift, but economies can lurch: a sudden scare can empty a store's shelves in a day. And unlike a lawn, markets are shaped by rules, technology, and power. A dominant seller can bend prices in ways no single walker ever could.
+
+## Eli's Analogy
+
+Picture a footpath worn across a lawn. No one designed it; it formed because hundreds of people each made a small choice to take the shortest route. Economics is like studying that path: the pattern is real and predictable in general, even though no single walker is predictable. Prices are similar. They are paths worn by many buyers and sellers, each acting on self-interest, that end up somewhere no one planned.
+
+## Worked Example
+
+A regional bicycle shop watches the economy through two lenses at once. In a strong expansion, commuter bike sales climb as incomes rise and more people take jobs farther from home. The shop hires a second mechanic, but wages for mechanics creep up, and the shop's rent rises with demand for commercial space. When a recession hits, sales of new bikes drop, yet the repair counter stays busy: riders fix what they already own. The owner responds to each phase: during the boom, she locks in a longer lease and trains staff; during the slump, she trims inventory, promotes tune-up packages, and holds prices steady. The economy did not dictate these choices; it changed the conditions she planned around. Notice she never tried to predict the next recession. She built flexibility instead, which is the practical lesson of the business cycle.
+
+## Common Mistakes
+
+**Treating 'the economy' as something that happens only to governments and giant corporations.**
+
+*The economy is the sum of everyday choices: a bakery's prices, a family's grocery budget, a town's hiring. It reaches every business through its sales and costs.*
+
+**Believing a recession means every business loses money and an expansion means every business wins.**
+
+*Cycles shift overall conditions, but individual businesses succeed or struggle within them based on their own decisions. A budget repair shop can thrive during a slump.*
+
+**Expecting economics to predict exact prices or the precise date of the next downturn.**
+
+*Economics identifies tendencies and pressures. Recession dates are usually confirmed only in hindsight, and real markets are messier than textbook models.*
+
+**Confusing a rise in one product's price with inflation, or one market's behavior with the whole economy.**
+
+*Inflation is a general rise in the average price level across the economy. A single market's price moves are microeconomic events.*
+
+## Compare / Contrast
+
+- **Macroeconomics vs Microeconomics:** Macroeconomics studies whole-economy aggregates such as national output and total employment; microeconomics studies individual choices and single markets. A furniture chain watches both: the region's growth (macro) and its own market's competition (micro).
+
+- **Expansion vs Recession:** An expansion is a phase of rising output, employment, and incomes; a recession is a phase of declining activity and rising unemployment. They are recurring phases of the business cycle, not one-time events.
+
+- **Surplus vs Shortage:** A surplus occurs when quantity supplied exceeds quantity demanded, pushing prices down; a shortage occurs when quantity demanded exceeds quantity supplied, pulling prices up.
+
+- **Demand vs Supply:** Demand is buyers' willingness to purchase at various prices; supply is sellers' willingness to make goods available at various prices. The price settles where the two meet.
+
+## Key Takeaway
+
+Economics explains the tendencies that shape business: scarcity forces choices, supply and demand set prices, competition keeps them honest, and cycles move the whole economy. It predicts nothing with certainty, so the skill is reading pressures and planning around them.
+
+## Practice Question Bank
+
+**1. In the working definition attributed to Paul Samuelson and echoed by OpenStax, economics is the study of how people and societies —**
+
+- [ ] A. maximize government tax revenue through monetary policy
+- [ ] B. print and circulate money to keep prices stable
+- [x] C. choose to allocate scarce resources that have alternative uses
+- [ ] D. predict the exact date of the next recession
+
+*Answer: C. The working definition used in the lesson, attributed to Samuelson and consistent with OpenStax's 'decisions in the face of scarcity,' is about choosing how to allocate scarce resources that have alternative uses. Tax revenue, printing money, and predicting recessions are not what the definition describes.*
+
+**2. A family deciding between a weekend trip and replacing its water heater, and a coffee roastery deciding whether to raise its price per bag, are decisions studied at which level of economics?**
+
+- [ ] A. Macroeconomics, because both involve the whole economy
+- [ ] B. Fiscal policy, because both involve government budgets
+- [ ] C. National income accounting, because both involve gross domestic product
+- [x] D. Microeconomics, because both involve individual choices in specific markets
+
+*Answer: D. Microeconomics focuses on individual parts of the economy: a household's spending and a firm's pricing decisions. Macroeconomics looks at whole-economy aggregates, and fiscal policy and national income accounting are different matters entirely.*
+
+**3. A coffee roastery sells 400 bags a week at $18 and 240 bags at $24, while regional roasters produce more bags only at higher prices. At $26 the roastery's shelves fill with unsold bags; at $17 the bags sell out in two days. What does this pattern show?**
+
+- [x] A. The market price tends to settle where the quantity buyers want meets the quantity sellers offer
+- [ ] B. Demand rises whenever the price rises
+- [ ] C. Supply has no effect on price
+- [ ] D. The roastery should always set the highest possible price
+
+*Answer: A. At high prices a surplus forms and pushes prices down; at low prices a shortage forms and pulls prices up. The pattern shows the price settling toward equilibrium, where quantity demanded meets quantity supplied. Demand falls as price rises, supply clearly matters, and the highest possible price would create unsold inventory.*
+
+**4. For two years a region enjoys rising employment and growing incomes; then orders slow, restaurants trim shifts, and unemployment edges up. Based on the lesson's account of business cycles, which statement is most accurate?**
+
+- [ ] A. The region is in a permanent depression, and recovery is impossible
+- [x] B. The region has moved from an expansion into a recession phase of a recurring cycle, whose exact start is usually dated only after the fact
+- [ ] C. Business cycles follow a fixed timetable, so recovery is guaranteed within one year
+- [ ] D. Recessions are caused only by individual businesses' mistakes
+
+*Answer: B. Expansions bring rising output and employment; recessions bring declining activity and rising unemployment, and the NBER dates their turning points retrospectively. Cycles are recurring, not permanent, but they follow no fixed timetable, and recessions are economy-wide events, not one firm's fault.*
+
+**5. During a strong expansion, a wedding-cake bakery sees orders double but also faces higher flour prices and a shortage of bakers. Which statement best captures what the lesson says about how economic conditions reach this business?**
+
+- [ ] A. Expansions raise sales and costs together, so the two effects always cancel out
+- [x] B. The expansion shows up on both sides of the business, stronger demand for cakes and pricier, scarcer inputs, and the outcome depends on how the two balance
+- [ ] C. The expansion is a macroeconomic event, so it cannot affect a single bakery's sales or costs
+- [ ] D. Rising input costs prove the bakery is actually in a recession
+
+*Answer: B. Economic conditions reach businesses through sales and costs, and an expansion typically moves both at once: more demand, but pricier inputs and scarcer workers. The effects do not automatically cancel, macro events do reach individual firms, and rising costs alone do not signal a recession.*
+
+## Sources
+
+- Corporate Finance Institute (CFI) — Business Cycle — https://corporatefinanceinstitute.com/resources/economics/business-cycle/
+- Corporate Finance Institute (CFI) — Economics - Definition, Types & Key Concepts Explained — https://corporatefinanceinstitute.com/resources/economics/what-is-economics/
+- Corporate Finance Institute (CFI) — Supply and Demand — https://corporatefinanceinstitute.com/resources/economics/supply-and-demand/
+- National Bureau of Economic Research (NBER) — Business Cycle Dating (NBER Business Cycle Dating Committee) — https://www.nber.org/research/business-cycle-dating
+- OpenStax, Rice University — Introduction to Business, 1.3 How Business and Economics Work — https://openstax.org/books/introduction-business/pages/1-3-how-business-and-economics-work
+- OpenStax, Rice University — Introduction to Business, 1.4 Macroeconomics: The Big Picture — https://openstax.org/books/introduction-business/pages/1-4-macroeconomics-the-big-picture
+- OpenStax, Rice University — Introduction to Business, 1.6 Microeconomics: Zeroing in on Businesses and Consumers — https://openstax.org/books/introduction-business/pages/1-6-microeconomics-zeroing-in-on-businesses-and-consumers
+- OpenStax, Rice University — Introduction to Business, 1.7 Competing in a Free Market — https://openstax.org/books/introduction-business/pages/1-7-competing-in-a-free-market
+- OpenStax, Rice University — Principles of Economics 3e, 1.1 What Is Economics, and Why Is It Important? — https://openstax.org/books/principles-economics-3e/pages/1-1-what-is-economics-and-why-is-it-important
+
+## Related Topics
+
+- introduction-to-business:foundations:what-is-a-business
+- introduction-to-business:foundations:entrepreneurship
+- introduction-to-business:foundations:marketing
+- introduction-to-business:foundations:business-strategy
+- introduction-to-business:foundations:competitive-advantage
+
+## Editorial Metadata
+
+- Topic ID: introduction-to-business:foundations:economics-and-business
+- Editorial status: READY_TO_PUBLISH
+- Researched: 2026-08-21 (live web verification; OpenStax, NBER, CFI)
+- Provenance: EliExplains original synthesis; reference-only sources; no source prose adapted
