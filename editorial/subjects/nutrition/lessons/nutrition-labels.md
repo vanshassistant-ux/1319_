@@ -1,0 +1,148 @@
+# Nutrition Labels
+
+## In 30 Seconds
+
+The Nutrition Facts label is the standardized panel on packaged foods that lists what one serving contains: calories, nutrients, and the percent Daily Value, which shows how much one serving contributes to a daily diet. As a general guide, 5% or less of a nutrient per serving is low, and 20% or more is high. The numbers describe one serving, so compare them with what you actually eat. The label is a tool: a map of the food, not a verdict on it.
+
+## Why This Matters
+
+Food labels sit on nearly every packaged food you pick up, yet most of us read the front-of-package claims and skip the panel that actually carries the information. Knowing how to read the Nutrition Facts label turns a routine grocery trip into a chance to compare foods on the same scale: how big one serving really is, how much energy it holds, and whether it is high or low in the nutrients you care about. It is also a defense against being sold by packaging, because the label is where marketing meets measurement. The skill stays useful for life: the standardized format means the same reading habits work on every package.
+
+## Learning Objectives
+
+- Define the Nutrition Facts label and name its main parts: serving size, servings per container, calories, nutrients, percent Daily Value, and the footnote.
+- Explain what the percent Daily Value measures and use the 5% and 20% guideposts to judge whether a serving is low or high in a nutrient.
+- Apply the per-serving rule to compare the label's serving size with the amount actually eaten.
+- Explain the role of the footnote's 2,000-calorie reference as a general guide rather than a personal target.
+- Describe the limits of the label - it covers packaged foods - and evaluate the label as information rather than judgment.
+
+## The College Version
+
+### What the Nutrition Facts label is
+
+The Nutrition Facts label is the standardized panel that appears on packaged foods and drinks in the United States. The FDA's label-reading guide describes its layout: the top section carries product-specific information, namely serving size, calories, and nutrient amounts, and the bottom section is a footnote that explains the percent Daily Value and gives the number of calories used for general nutrition advice. MedlinePlus states the same point more compactly: all packaged foods and beverages in the United States have food labels, and those labels show what one serving contains. Standardization is the whole idea. The same layout, the same units, and the same rules appear on every package, so a label on a box of crackers reads exactly like a label on a jar of salsa. The format is recent history. OpenStax's nutrition text notes that the Nutrition Labeling and Education Act of 1990 prompted packaged-food labeling with nutrition information and serving sizes, and the FDA updated the label again in 2016, the first major update in over twenty years, adding added sugars, vitamin D, and potassium and resetting serving sizes to match how people actually eat today.
+
+### The parts, top to bottom
+
+Work down the panel and each part answers one question. Serving size and servings per container sit at the top: the serving size is a familiar measure like 1 cup or 2 cookies followed by the metric amount, and it reflects the amount people typically eat or drink, not a recommendation of how much you should eat. Calories come next, in large type: the energy in one serving of the food. Below that sits the nutrient list: total fat, saturated fat, trans fat, cholesterol, sodium, total carbohydrate, dietary fiber, total sugars, added sugars, and protein, then vitamin D, calcium, iron, and potassium, each with the amount per serving in grams, milligrams, or micrograms. Beside most nutrient amounts runs the percent Daily Value, the column that turns raw numbers into a daily scale. At the very bottom, the footnote explains what %DV means and states that 2,000 calories a day is used for general nutrition advice. One rule governs the whole panel: every number, including calories, is per serving, not per package.
+
+### The percent Daily Value: a daily reference in one number
+
+The %DV is the percentage of the Daily Value for each nutrient in a serving of the food. The Daily Values are reference amounts, expressed in grams, milligrams, or micrograms, of nutrients to consume or not to exceed each day, and the %DV shows how much a nutrient in a serving contributes to a total daily diet. You never need to calculate a percentage, because the label does the math for you: putting every nutrient on one 0-to-100 scale is exactly what the column is for. The FDA's general guide supplies two anchor points: 5% DV or less of a nutrient per serving is considered low, and 20% DV or more is considered high. Read the guide in both directions: a cereal at 25% DV for iron is high in iron, and the same cereal at 2% DV for vitamin D is low in it. A few entries carry no %DV at all, because trans fat and total sugars have none and protein generally has none, so those are read in grams. And the column is not a running total: the %DVs do not add up vertically to 100%.
+
+### Serving size versus what you actually eat
+
+The single most useful habit in label reading is comparing the label's serving with your own. The label describes one serving; you decide how many servings you eat, and every number scales with that decision. Try a box of oatmeal cookies. The label says serving size 2 cookies (32 g), servings per container 10, calories 160, total fat 7 g (9% DV), sodium 115 mg (5% DV), added sugars 9 g (18% DV). Six cookies is three servings, so multiply everything by three: 480 calories, 21 g fat (27% DV), 345 mg sodium (15% DV), and 27 g added sugars (54% DV). Nothing on the label changed; only the serving count did. The FDA makes the same point with its own example: eat two cups of a food whose serving is one cup and you get two times the calories, nutrients, and %DVs shown.
+
+### Limits of the label, and the honest framing
+
+The label has real limits, and knowing them is part of using it well. It lives on packaged foods and drinks; a loose apple or a bunch of carrots from the produce section carries no Nutrition Facts panel to flip over, so for those foods you rely on food-group guidance and general knowledge instead. Even on packaged foods, the label reports but does not rank: it never declares a food good or bad, and its reference points, the Daily Values and the 2,000-calorie footnote, are general figures for a broad population rather than your personal targets. Treat the label the way you would treat a map. A map shows the roads and the distances but does not choose your route; the label shows the serving, the energy, and the nutrient picture and leaves the choosing to you.
+
+## Key Vocabulary
+
+- **Nutrition Facts label** — The standardized panel on packaged foods and drinks that lists serving size, calories, and nutrient amounts per serving, with a footnote explaining the percent Daily Value.
+- **Serving size** — The amount of food, in a familiar measure such as cups or pieces, that all the numbers on the label describe; based on what people typically eat, not a recommendation.
+- **Servings per container** — The number of servings the whole package holds; multiplying the label's numbers by this total gives the amounts for the entire package.
+- **Calories (on the label)** — The number that tells how much energy one serving of the food provides, from the carbohydrate, fat, protein, and alcohol it contains.
+- **Percent Daily Value (%DV)** — The percentage of a nutrient's daily reference amount that one serving of the food contributes to a total daily diet.
+- **Daily Value** — A reference amount, in grams, milligrams, or micrograms, of a nutrient to consume or not to exceed each day.
+- **Footnote** — The note at the bottom of the label that explains the percent Daily Value and states that 2,000 calories a day is used for general nutrition advice.
+- **Added sugars** — Sugars added during processing or packaging, such as table sugar, syrups, and honey, listed separately from the sugars naturally present in food.
+
+## Eli-10
+
+The Nutrition Facts label is a standardized panel that tells you what is in one serving of a packaged food. It answers four questions in order: how much is one serving, how much energy it holds, what nutrients it carries, and how that compares with a full day. The percent Daily Value is the shortcut that does the comparing for you: it puts every nutrient on the same 0-to-100 scale, so you never need to remember how many grams of anything you should eat. Two numbers are worth keeping in mind: 5% or less means low, and 20% or more means high. Everything on the panel is about one serving, so the only arithmetic you ever need is counting how many servings you actually ate and multiplying.
+
+## Eli's Analogy
+
+Picture each nutrient as a day-bag you fill with food. The %DV is the fraction of the bag that one serving fills: 5% is barely a splash in the bottom, while 20% is a fifth of the bag, a hefty pour. You do not need to know the bag's size in grams or milligrams, because the percent tells you directly whether a serving is a small or a large contribution to the day. The serving size is the scoop the numbers were measured with, so if you take two scoops, you double the pour.
+
+The analogy breaks down in two ways. First, the day-bag is a general reference for a broad population, not a personal budget, since needs vary with age, sex, size, and activity. Second, the label does not say whether filling the bag is good: 20% DV of fiber and 20% DV of sodium look the same on the scale, yet the label expects you to read the direction too, more of some nutrients and less of others.
+
+## Worked Example
+
+Open a box of Trail Peak oatmeal cookies and read the Nutrition Facts label. Serving size: 2 cookies (32 g). Servings per container: 10. Calories: 160. Total fat: 7 g (9% DV). Sodium: 115 mg (5% DV). Added sugars: 9 g (18% DV). You pour a small bowl and eat 6 cookies, which is 3 servings. Now scale every number: 3 x 160 = 480 calories; 3 x 7 = 21 g total fat and 3 x 9% = 27% DV; 3 x 115 = 345 mg sodium and 3 x 5% = 15% DV; 3 x 9 = 27 g added sugars and 3 x 18% = 54% DV. One-third of the container delivered more than half of a day's reference amount of added sugars, even though a single serving looked modest at 18%. The label did not change; the serving count did. That is the whole skill: read per serving, then multiply by what you actually ate.
+
+## Common Mistakes
+
+1. **Reading the label as if the numbers describe the whole package.** — Every number on the panel, calories, grams, and %DV, describes one serving. Check servings per container, then multiply by the number of servings you actually ate.
+2. **Treating the 5% and 20% guideposts as a good-or-bad score for the whole food.** — The guideposts work nutrient by nutrient, not food by food. A product can be high in fiber, which the guide says to favor, and high in sodium, which it says to limit, at the same time; read each nutrient in the right direction.
+3. **Treating the footnote's 2,000 calories as a personal budget.** — The footnote's 2,000 calories a day is a general reference used for general nutrition advice, and the FDA notes real calorie needs vary with age, sex, height, weight, and physical activity.
+4. **Expecting every food to carry a label.** — The Nutrition Facts panel appears on packaged foods and drinks. Loose fresh produce and other unpackaged foods have no panel to read, which is a limit of the label, not a failure of the food.
+
+## Compare / Contrast
+
+- **The %DV column** vs **The grams column**: %DV puts each nutrient on a common daily scale so nutrients can be compared directly; grams are the raw amount per serving and only mean something when you know the daily reference.
+- **Label serving size** vs **Portion you actually eat**: The label serving is a standardized amount based on what people typically eat; your portion is your choice, and when they differ, the label numbers scale by the number of servings eaten.
+- **The Nutrition Facts label** vs **Front-of-package marketing claims**: The label is a standardized, regulated data panel; front-of-package phrases are promotional, which is why the label is the place to check what the front of the box is selling.
+
+## Key Takeaway
+
+The Nutrition Facts label is a standardized map of one serving of packaged food, showing serving size, calories, nutrients, and %DV with 5% or less low and 20% or more high as the guideposts. Compare it with what you actually ate, and treat it as information, not a verdict.
+
+## Practice Question Bank
+
+1. **On a Nutrition Facts label, what does the % Daily Value (%DV) tell you?**
+   - A. How much a nutrient in one serving of the food contributes to a total daily diet
+   - B. The percentage of one serving that is made up of that nutrient by weight
+   - C. The percentage of the package's total content that comes from that nutrient
+   - D. The percentage of the day's calories that this food provides
+
+   **Answer: A.** The %DV is the percentage of the Daily Value for each nutrient in a serving of the food, so it shows how much one serving contributes to a total daily diet. It is not a share of the serving's weight, a share of the package, or a share of the day's calories.
+
+2. **According to the FDA's general guide, a %DV of 5% or less for a nutrient in a serving is considered:**
+   - A. High in that nutrient
+   - B. Too small to count toward the diet
+   - C. Low in that nutrient
+   - D. A sign that the nutrient has no Daily Value
+
+   **Answer: C.** The FDA's general guide states that 5% DV or less of a nutrient per serving is considered low, while 20% DV or more is considered high. The other options misread the guidepost as a judgment about the food's value or a missing Daily Value.
+
+3. **A can of lentil soup is labeled serving size 1 cup, 120 calories per serving, and 2.5 servings per can. If you eat the whole can, how many calories are you getting?**
+   - A. 120
+   - B. 300
+   - C. 240
+   - D. 480
+
+   **Answer: B.** The whole can is 2.5 servings, and every label number is per serving: 2.5 x 120 = 300 calories. One serving is 120, two servings would be 240, and 480 would be four servings.
+
+4. **A cereal label lists 20% DV for iron and 2% DV for vitamin D per serving. Using the 5% and 20% guideposts, which statement best describes this cereal?**
+   - A. It is low in iron and high in vitamin D
+   - B. It is high in both iron and vitamin D
+   - C. It is low in both iron and vitamin D
+   - D. It is high in iron and low in vitamin D
+
+   **Answer: D.** 20% DV or more is considered high and 5% DV or less is considered low, so iron at 20% DV is high and vitamin D at 2% DV is low. The other options reverse one or both of those judgments.
+
+5. **Lena's jar of salsa says serving size 2 tablespoons, 15 calories per serving, and 16 servings per container. She eats 6 tablespoons with dinner. How many calories does the salsa add?**
+   - A. 45
+   - B. 15
+   - C. 30
+   - D. 90
+
+   **Answer: A.** Six tablespoons is 3 servings (6 divided by 2 = 3), and 3 x 15 = 45 calories. The other options are one serving (15), two servings (30), and six servings (90).
+
+## Sources
+
+- U.S. Food and Drug Administration (FDA), *How to Understand and Use the Nutrition Facts Label* (U.S. government work). https://www.fda.gov/food/nutrition-facts-label/how-understand-and-use-nutrition-facts-label — Verified live 2026-08-22 (content current as of 03/05/2024).
+- U.S. Food and Drug Administration (FDA), *Serving Size on the Nutrition Facts Label* (U.S. government work). https://www.fda.gov/food/nutrition-facts-label/serving-size-nutrition-facts-label — Verified live 2026-08-22.
+- U.S. Food and Drug Administration (FDA), *The Lows and Highs of Percent Daily Value on the Nutrition Facts Label* (U.S. government work). https://www.fda.gov/food/nutrition-facts-label/lows-and-highs-percent-daily-value-nutrition-facts-label — Verified live 2026-08-22.
+- U.S. Food and Drug Administration (FDA), *What's on the Nutrition Facts Label* (U.S. government work). https://www.fda.gov/food/nutrition-facts-label/whats-nutrition-facts-label — Verified live 2026-08-22.
+- National Library of Medicine / MedlinePlus, *Food Labeling* (U.S. government work). https://medlineplus.gov/foodlabeling.html — Verified live 2026-08-22.
+- OpenStax (Rice University), *OpenStax Nutrition (Nutrition for Nurses) 2e, Section 1.1: What Is Nutrition?* (CC BY-NC-SA 4.0, reference only). https://openstax.org/books/nutrition/pages/1-1-what-is-nutrition — Read via Wayback Machine capture of 2024-04-12 (openstax.org blocks direct fetching); supports the history claim that the Nutrition Labeling and Education Act of 1990 prompted packaged-food labeling with nutrition information and serving sizes. Book license forbids LLM ingestion; facts synthesized, prose original.
+
+## Related Topics
+
+- nutrition:foundations:portion-sizes
+- nutrition:foundations:energy-and-calories
+- nutrition:foundations:evaluating-nutrition-claims
+- nutrition:foundations:dietary-patterns
+
+## Editorial Metadata
+
+- **Topic ID:** nutrition:foundations:nutrition-labels
+- **Editorial status:** READY_TO_PUBLISH
+- **Estimated minutes:** 9
+- **Researched at:** 2026-08-22
+- **Rights status:** Reference-only and attributed sources (FDA and MedlinePlus U.S. government works; OpenStax Nutrition for Nurses 2e CC BY-NC-SA 4.0 read via Wayback, no LLM ingestion); facts synthesized, no source prose adapted
+- **Sources:** 6 (FDA x4, MedlinePlus, OpenStax Nutrition for Nurses 2e; five U.S. government works, one CC BY-NC-SA reference-only open textbook)
