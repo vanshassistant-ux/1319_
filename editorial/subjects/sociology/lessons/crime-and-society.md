@@ -89,7 +89,7 @@ Crime is behavior that violates official law — a distinct concept from devianc
 
 ## Practice Question Bank
 
-1. **A student needs a one-sentence working definition of crime for a sociology paper. Which option captures the definition used in OpenStax's Introduction to Sociology?**
+1. **For a sociology paper, which one-sentence definition of crime matches the one used in OpenStax's Introduction to Sociology?**
    - A. Behavior that violates official law and is punishable through formal sanctions
    - B. Any behavior that a community disapproves of, whether written down or not
    - C. Behavior that violates social norms and draws informal disapproval

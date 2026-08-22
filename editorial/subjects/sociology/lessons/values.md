@@ -29,7 +29,7 @@ Values also belong to culture's nonmaterial side: they are ideas and standards, 
 
 ### Values versus norms
 
-Values and norms are sibling concepts, and the line between them matters. Values are beliefs about what is good and worth pursuing. Norms are the visible and invisible rules of conduct through which societies are structured — the expectations for how people behave. The same content can appear in both forms: a society that values honesty will develop norms like returning extra change and not copying on exams. Values answer "what matters?"; norms answer "what should we do?"
+Values and norms are sibling concepts, and the line between them matters. Values are beliefs about what is good and worth pursuing. Norms are shared expectations for how people behave — the visible and invisible rules of conduct that structure societies. The same content can appear in both forms: a society that values honesty will develop norms like returning extra change and not copying on exams. Values answer "what matters?"; norms answer "what should we do?"
 
 Original example: the Darby family values putting the family first. The norm that expresses it is concrete: whoever cooks Sunday dinner is never left to clean up alone — everyone carries a plate to the sink. The value is the belief; the norm is the standing expectation of behavior.
 
@@ -57,7 +57,7 @@ And values change. OpenStax states it plainly: values are not static; they chang
 
 - **values** — Shared beliefs within a culture about what is good, right, desirable, and worth striving for; the ideals, principles, and standards members hold in high regard.
 - **beliefs** — The tenets or convictions that people hold to be true, which values help transmit and teach within a culture.
-- **norms** — The visible and invisible rules of conduct through which societies are structured; expectations for behavior that reflect what a society defines as good, right, and important.
+- **norms** — Shared expectations for how people behave; the visible and invisible rules of conduct that structure societies.
 - **ideal culture** — The standards a society would like to embrace and live up to, as distinct from the way people actually behave.
 - **real culture** — How people in a society actually behave in practice, which can fall short of the society's stated ideals.
 - **individualistic value orientation** — A cultural pattern in which people place a high value on individuality and independence rather than on group obligations.

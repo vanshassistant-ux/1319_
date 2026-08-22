@@ -6,7 +6,7 @@ A social group is two or more people who interact with some frequency and share 
 
 ## Why This Matters
 
-Groups are where society becomes real. Academically, the concept is the discipline's starting point: sociology is often described as the scientific and systematic study of groups and group interactions. Practically, naming the groups around you — the family that grounds you, the task team that employs you, the crowd that merely surrounds you — sharpens your sense of where support, pressure, and belonging come from. Forward-looking, understanding in-groups and reference groups helps you see the measuring sticks you compare yourself against and choose them deliberately. The honest value: groups glue society together, and knowing how the glue works is the first step to using it well.
+Groups are where society becomes real. Academically, the concept is the discipline's starting point: sociology is often described as the science of groups and group interactions. Practically, naming the groups around you — the family that grounds you, the task team that employs you, the crowd that merely surrounds you — sharpens your sense of where support, pressure, and belonging come from. Forward-looking, understanding in-groups and reference groups helps you see the measuring sticks you compare yourself against and choose them deliberately. The honest value: groups glue society together, and knowing how the glue works is the first step to using it well.
 
 ## Learning Objectives
 
@@ -37,7 +37,7 @@ Sociologist William Sumner (1840–1910) developed the concepts of in-group and 
 
 ### Reference groups and the honest framing
 
-A reference group is a group people compare themselves to — it provides a standard of measurement. Peer groups are common reference groups: people watch what their peers wear, listen to, and do, and measure themselves against it. Original example: a first-year nursing student measures herself against the senior nursing students she admires — a reference group she is not yet part of. Here is the honest note. Groups are the social glue: nearly everything we do happens in, through, or because of groups, and sociology is often described as the scientific and systematic study of groups and group interactions. But the glue has two faces. The same belonging that holds an in-group together draws the line that marks an out-group. Groups support us and press on us at the same time, which is exactly why understanding them repays the effort.
+A reference group is a group people compare themselves to — it provides a standard of measurement. Peer groups are common reference groups: people watch what their peers wear, listen to, and do, and measure themselves against it. Original example: a first-year nursing student measures herself against the senior nursing students she admires — a reference group she is not yet part of. Here is the honest note. Groups are the social glue: nearly everything we do happens in, through, or because of groups, and sociology is often described as the science of groups and group interactions. But the glue has two faces. The same belonging that holds an in-group together draws the line that marks an out-group. Groups support us and press on us at the same time, which is exactly why understanding them repays the effort.
 
 ## Key Vocabulary
 

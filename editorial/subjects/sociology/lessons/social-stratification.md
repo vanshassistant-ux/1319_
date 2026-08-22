@@ -21,7 +21,7 @@ Stratification is the skeleton of inequality — the structure that decides who 
 
 ### Layers: the working definition
 
-Sociologists use the term social stratification for the system of social standing in a society. OpenStax's Introduction to Sociology 3e offers the working definition: social stratification refers to a society's categorization of its people into rankings based on factors like wealth, income, education, family background, and power. The word borrows from geology, where stratification describes the distinct vertical layers found in rock. Society's layers are made of people, and they represent the uneven distribution of society's resources: the people with more resources sit at the top, and groups with fewer and fewer resources form the lower layers. An individual's place in this arrangement is called socioeconomic status, often shortened to SES. Original example: in the fictional city of Meridian Falls, a bank president, a nurse, a warehouse worker, and a high school student who delivers groceries live in the same town at different layers — different neighborhoods, different schools, different access to the town's resources. The layers themselves are the stratification. (The finer class categories are a sibling topic of their own; this lesson stays with the structure.)
+Sociologists use the term social stratification for the system of social standing in a society. OpenStax's Introduction to Sociology 3e presents the working definition: social stratification refers to a society's categorization of its people into rankings based on factors like wealth, income, education, family background, and power. The word borrows from geology, where stratification describes the distinct vertical layers found in rock. Society's layers are made of people, and they represent the uneven distribution of society's resources: the people with more resources sit at the top, and groups with fewer and fewer resources form the lower layers. An individual's place in this arrangement is called socioeconomic status, often shortened to SES. Original example: in the fictional city of Meridian Falls, a bank president, a nurse, a warehouse worker, and a high school student who delivers groceries live in the same town at different layers — different neighborhoods, different schools, different access to the town's resources. The layers themselves are the stratification. (The finer class categories are a sibling topic of their own; this lesson stays with the structure.)
 
 ### Three systems: slavery, caste, and class
 
@@ -119,6 +119,14 @@ Social stratification is the ranking of people into layers with unequal access t
    - D. Social position is fixed at birth in every society.
 
    **Answer: C.** The honest finding, per OpenStax's review of mobility research, is that mobility is not as common or easy to achieve as many people think — possible, not guaranteed. The other options overclaim in both directions.
+
+## Related Topics
+
+- Sociology: Foundations — Social Class
+- Sociology: Foundations — Poverty
+- Sociology: Foundations — Social Mobility
+- Sociology: Foundations — Gender
+- Sociology: Foundations — Race and Ethnicity
 
 ## Sources
 

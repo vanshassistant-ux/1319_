@@ -94,7 +94,7 @@ Culture is the shared way of life of a group — its beliefs, values, practices,
 
 ## Practice Question Bank
 
-1. **A student needs a one-sentence working definition of culture for a sociology paper. Which option captures how Introduction to Sociology (OpenStax) describes culture?**
+1. **For a sociology paper, a student needs a one-sentence definition of culture. Which option captures how Introduction to Sociology (OpenStax) describes culture?**
    - A. The shared beliefs, values, and practices of a group, along with the artifacts its members make and use.
    - B. The inherited biological traits that members of a society pass to their children.
    - C. The set of laws and written rules produced by a society's government.

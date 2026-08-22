@@ -82,7 +82,7 @@ Gender is a social script: the roles and expectations a society attaches to bein
 
 ## Practice Question Bank
 
-1. **In sociology, what does the term gender refer to?**
+1. **In sociology, which answer best describes what the term gender means?**
    - A. The biological and physiological differences between females and males.
    - B. The roles, behaviors, and expectations that a society attaches to being female or male.
    - C. A person's sexual orientation.

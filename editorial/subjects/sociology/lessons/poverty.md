@@ -133,7 +133,7 @@ Poverty is a condition of lacking the means to satisfy basic needs — measured 
 - britannica-poverty — Poverty — Encyclopaedia Britannica (definition, causes, types). https://www.britannica.com/topic/poverty
 - census-how-census-bureau-measures-poverty — How the Census Bureau Measures Poverty, U.S. Census Bureau. https://www.census.gov/topics/income-poverty/poverty/guidance/poverty-measures.html
 - census-poverty-topic — Poverty — U.S. Census Bureau topic page. https://www.census.gov/topics/income-poverty/poverty.html
-- openstax-intro-sociology-3e-9-2-social-stratification-and-mobility — 9.2 Social Stratification and Mobility in the United States — Introduction to Sociology 3e (OpenStax, Rice University). https://openstax.org/books/introduction-sociology-3e/pages/9-2-social-stratification-and-mobility-in-the-united-states
+- openstax-intro-sociology-3e-9-2-social-stratification-and-mobility-in-the-united-states — 9.2 Social Stratification and Mobility in the United States — Introduction to Sociology 3e (OpenStax, Rice University). https://openstax.org/books/introduction-sociology-3e/pages/9-2-social-stratification-and-mobility-in-the-united-states
 - openstax-intro-sociology-3e-9-key-terms — 9 Key Terms — Introduction to Sociology 3e (OpenStax, Rice University). https://openstax.org/books/introduction-sociology-3e/pages/9-key-terms
 - worldbank-measuring-poverty — Measuring Poverty — The World Bank. https://www.worldbank.org/en/topic/measuringpoverty
 
