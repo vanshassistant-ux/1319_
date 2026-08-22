@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Cash accounting records revenue when cash arrives and expenses when cash leaves — the working definition in this lesson comes from OpenStax's Principles of Accounting. No money, no record: a sale on credit is not counted until the customer pays, and a bill is not an expense until it is paid. The method is simple, obvious, and mirrors the bank account, which makes it a natural fit for small businesses with simple operations. The honest trade-off: it is fuzzy about a period's true performance.
+Cash accounting records revenue when cash arrives and expenses when cash leaves — the this lesson's central definition comes from OpenStax's Principles of Accounting. No money, no record: a sale on credit is not counted until the customer pays, and a bill is not an expense until it is paid. The method is simple, obvious, and mirrors the bank account, which makes it a natural fit for small businesses with simple operations. The honest trade-off: it is fuzzy about a period's true performance.
 
 ## Why This Matters
 
@@ -33,7 +33,7 @@ OpenStax notes that cash basis accounting is permitted for nonprofit entities an
 
 ### Cash vs accrual
 
-The contrast that defines the method: accrual accounting records revenue when it is earned and expenses when they are incurred — in the accounting period the transactions affect — regardless of when cash moves. OpenStax's Section 4.1 ties accrual accounting to the revenue recognition and expense recognition (matching) principles. Cash accounting, by contrast, records when money moves. One line: accrual asks "when did the business do the work?" and cash asks "when did the money show up?" The two can disagree sharply in a single month — heavy billing with slow collections looks strong on accrual and weak on cash — and they tend to agree once the money settles. Accrual accounting is a sibling topic with its own lesson; here it appears only as the contrast.
+The contrast that defines the method: accrual books revenue at earning and expenses at incurring — in the period the transactions affect — regardless of when cash moves. OpenStax's Section 4.1 ties accrual accounting to the revenue recognition and expense recognition (matching) principles. Cash accounting, by contrast, records when money moves. One line: accrual asks "when did the business do the work?" and cash asks "when did the money show up?" The two can disagree sharply in a single month — heavy billing with slow collections looks strong on accrual and weak on cash — and they tend to agree once the money settles. Accrual accounting is a sibling topic taught in its own lesson; here it appears only as the contrast.
 
 ### The strengths
 

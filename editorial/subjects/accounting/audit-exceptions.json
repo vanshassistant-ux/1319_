@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "subjectSlug": "accounting",
+  "accepted": [
+    { "match": "\"accounting equation\" defined differently in purpose-of-accounting and accounting-equation (overlap 18%)", "reason": "purpose-of-accounting previews the equation in one line; the accounting-equation lesson owns the full definition. Compatible depth difference." },
+    { "match": "\"liability\" defined differently in liabilities and expenses (overlap 11%)", "reason": "liabilities defines the balance-sheet obligation; expenses uses the word in the owed-vs-incurred contrast. Different senses, no conflict." },
+    { "match": "\"retained earnings\" defined differently in equity and expenses (overlap 20%)", "reason": "equity defines retained earnings as an equity component; expenses explains its decrease via the equation mechanism. Compatible depth difference." },
+    { "match": "\"budget\" defined differently in expenses and managerial-accounting (overlap 13%)", "reason": "expenses mentions budgeting as a spending-control practice; managerial-accounting lists budgets as a managerial output; budgeting (own lesson) owns the full definition. Compatible depth difference." },
+    { "match": "\"budget\" defined differently in expenses and budgeting (overlap 20%)", "reason": "expenses glosses budgeting in one line; the budgeting lesson owns the full definition. Compatible depth difference." },
+    { "match": "\"adjusting entries\" defined differently in accounting-cycle and adjusting-entries (overlap 13%)", "reason": "accounting-cycle names adjusting entries as cycle step five; the adjusting-entries lesson owns the full definition. Compatible depth difference." },
+    { "match": "\"credit\" defined differently in debits-and-credits and accounts-payable (overlap 0%)", "reason": "debits-and-credits uses credit as the right-side entry; accounts-payable uses credit in the commercial sense (buying on credit). Different senses, no conflict." },
+    { "match": "\"credit\" defined differently in journal-entries and accounts-payable (overlap 0%)", "reason": "journal-entries uses credit as the right-side entry; accounts-payable uses credit in the commercial sense. Different senses, no conflict." },
+    { "match": "\"account\" defined differently in debits-and-credits and general-ledger (overlap 18%)", "reason": "debits-and-credits treats accounts as T-account holders; general-ledger owns the account-family structure. Compatible depth difference." },
+    { "match": "\"forecast\" defined differently in managerial-accounting and budgeting (overlap 22%)", "reason": "managerial-accounting contrasts forecast with commitment; budgeting defines the budget-vs-forecast pair. Compatible depth difference." },
+    { "match": "debits-and-credits.md:44 double space inside a sentence", "reason": "The flagged line is inside a fenced code block — the T-account diagram (Supplies | Cash columns) whose alignment requires multiple spaces. Formatting false positive; diagram is legitimate." }
+  ],
+  "notes": [
+    "Second occurrence of the shared-attribution REUSE pattern: 'The working definition in this lesson comes from' appeared in 12 of 28 lessons (61 REUSE findings). Fixed with per-lesson distinct attribution phrasings across review JSONs, evidence packets, and markdown (apostrophe-free pattern). Some replacements produced 'the the' artifacts — hunted down via GRAM repeated-word findings and fixed in 10 files.",
+    "Additional REUSE clusters resolved: revenue-recognition principle sentence (revenue/accrual-accounting, 21 shared grams), accrual-vs-cash contrast sentence (accrual/cash-accounting, 13), 'the balance sheet is simply the equation written' (accounting-equation/assets), asset-definition tail (assets/inventory), fixed-cost definition sentence (cost-behavior/fixed-and-variable-costs), 'is a sibling topic with its own lesson' boilerplate (3 lessons), 'financial statements — the income statement, balance sheet, and cash flow statement' list (accounting-cycle/managerial-accounting), and the evidence-note provenance boilerplate (revenue/income-statement).",
+    "general-ledger.md option markers converted from 'A)' to 'A.' to match sibling md formats and silence unbalanced-paren false positives (21 GRAM findings).",
+    "10 TERM findings are inherent to the subject: sequential lessons define the same accounting terms at different depths (overview vs own-lesson) and in different senses (debit-credit vs commercial credit). All excused.",
+    "Mechanics verified in lessons: straight-line depreciation ($5,000/yr on $30,000 van with $5,000 salvage), break-even units (225 units = $900 ÷ ($10 − $6)), FIFO/weighted-average COGS computations (Riverside Cycles), accounting-equation arithmetic ($50,000 = $20,000 + $30,000) — all computed and independently re-verified before publishing."
+  ]
+}

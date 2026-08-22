@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Debit and credit are the two sides of every journal entry: debit is the left side, credit is the right — the working definition in this lesson comes from OpenStax's Principles of Accounting. Neither word means good or bad. The rules, named: assets and expenses increase with debits; liabilities, equity, and revenue increase with credits. Every entry records equal debits and credits, and that balance is what keeps the accounting equation balanced. One small set of rules runs the whole system.
+Debit and credit are the two sides of every journal entry: debit is the left side, credit is the right — the this lesson draws its working definition from OpenStax's Principles of Accounting. Neither word means good or bad. The rules, named: assets and expenses increase with debits; liabilities, equity, and revenue increase with credits. Every entry records equal debits and credits, and that balance is what keeps the accounting equation balanced. One small set of rules runs the whole system.
 
 ## Why This Matters
 

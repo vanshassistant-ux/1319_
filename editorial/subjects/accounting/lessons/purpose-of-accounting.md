@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Accounting is the process of organizing, analyzing, and communicating financial information so people can make decisions — the working definition in this lesson comes from OpenStax's Principles of Accounting. In plainer words, the job is to identify what happened, record it, and communicate it. The information serves owners, managers, lenders, investors, and regulators. Financial accounting reports to outsiders; managerial accounting serves insiders. A common set of standards called GAAP keeps the numbers comparable. Underneath it all sits the rule that assets equal liabilities plus equity. Accounting exists so numbers can be trusted.
+Accounting is the process of organizing, analyzing, and communicating financial information so people can make decisions — the working definition used here comes from OpenStax's Principles of Accounting. In plainer words, the job is to identify what happened, record it, and communicate it. The information serves owners, managers, lenders, investors, and regulators. Financial accounting reports to outsiders; managerial accounting serves insiders. A common set of standards called GAAP keeps the numbers comparable. Underneath it all sits the rule that assets equal liabilities plus equity. Accounting exists so numbers can be trusted.
 
 ## Why This Matters
 
@@ -21,7 +21,7 @@ Almost every important business decision runs on accounting numbers. A manager d
 
 ### Why the numbers exist: what accounting is
 
-Accounting exists because every business generates far more financial activity than anyone can track by memory: money comes in from sales, money goes out for supplies and wages, equipment is bought, loans are taken. The working definition in this lesson comes from OpenStax's Principles of Accounting: accounting is the process of organizing, analyzing, and communicating financial information that is used for decision-making. In plainer words, the job has three parts. First, identify what happened — a sale, a purchase, a payment. Second, record it in an orderly way, so nothing is lost. Third, communicate the results in reports that someone else can read and check. Accountants are the people trained in the techniques and practices of this work. That is why accounting is sometimes called the language of business: it is how a company talks about its own money in a form outsiders can verify.
+Accounting exists because every business generates far more financial activity than anyone can track by memory: money comes in from sales, money goes out for supplies and wages, equipment is bought, loans are taken. The working definition used here comes from OpenStax's Principles of Accounting: accounting is the process of organizing, analyzing, and communicating financial information that is used for decision-making. In plainer words, the job has three parts. First, identify what happened — a sale, a purchase, a payment. Second, record it in an orderly way, so nothing is lost. Third, communicate the results in reports that someone else can read and check. Accountants are the people trained in the techniques and practices of this work. That is why accounting is sometimes called the language of business: it is how a company talks about its own money in a form outsiders can verify.
 
 ### Who uses the information
 
@@ -41,7 +41,7 @@ Underneath all of this sits one rule, previewed here and covered in its own less
 
 ## Key Vocabulary
 
-- **Accounting** — The process of organizing, analyzing, and communicating financial information that is used for decision-making; the working definition in this lesson comes from OpenStax's Principles of Accounting.
+- **Accounting** — The process of organizing, analyzing, and communicating financial information that is used for decision-making; the working definition used here comes from OpenStax's Principles of Accounting.
 - **Financial accounting** — The branch of accounting that prepares reports for people outside the business, such as owners, lenders, investors, and regulators.
 - **Managerial accounting** — The branch of accounting that prepares information for people inside the business, such as managers making pricing, budgeting, and production decisions.
 - **GAAP** — Generally Accepted Accounting Principles, the common set of rules and procedures governing corporate accounting and financial reporting in the United States.

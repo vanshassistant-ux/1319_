@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Adjusting entries are journal entries made at the end of an accounting period to record things the books have not yet captured — the working definition in this lesson comes from OpenStax's Principles of Accounting. Some events happen gradually: supplies get used, prepaid rent runs out, wages are earned but unpaid. At period end, the bookkeeper adjusts the accounts for prepayments used up, accrued expenses, and accrued revenue. Adjustments come after the trial balance and before the statements — and they are how the books tell the truth about the period.
+Adjusting entries are journal entries made at the end of an accounting period to record things the books have not yet captured — the definition guiding this lesson comes from OpenStax's Principles of Accounting. Some events happen gradually: supplies get used, prepaid rent runs out, wages are earned but unpaid. At period end, the bookkeeper adjusts the accounts for prepayments used up, accrued expenses, and accrued revenue. Adjustments come after the trial balance and before the statements — and they are how the books tell the truth about the period.
 
 ## Why This Matters
 
@@ -41,7 +41,7 @@ Two end-of-period routines sound alike and do opposite jobs. Adjusting entries u
 
 ## Key Vocabulary
 
-- **Adjusting entries** — Journal entries made at the end of an accounting period to record transactions and events the books have not yet captured; the working definition in this lesson comes from OpenStax's Principles of Accounting.
+- **Adjusting entries** — Journal entries made at the end of an accounting period to record transactions and events the books have not yet captured; the definition guiding this lesson comes from OpenStax's Principles of Accounting.
 - **Accounting period** — The stretch of time — often a month, quarter, or year — over which a business records activity and reports results before the cycle begins again.
 - **Prepaid expense** — An asset created when a business pays for something in advance, such as supplies, rent, or insurance; the used-up portion becomes an expense at period end.
 - **Unearned revenue** — A liability created when a customer pays before the business delivers the goods or service; it becomes revenue as the business performs.

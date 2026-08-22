@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-A trial balance is a list of all accounts in the general ledger with their balances at a point in time, used to check that total debits equal total credits — the working definition in this lesson comes from OpenStax's Principles of Accounting. Each account's ending balance goes into one of two columns: debits on the left, credits on the right. The two columns are totaled, and the totals must match. Equal totals mean the recording stayed in balance — but they do not prove everything is right.
+A trial balance is a list of all accounts in the general ledger with their balances at a point in time, used to check that total debits equal total credits — the core definition in this lesson comes from OpenStax's Principles of Accounting. Each account's ending balance goes into one of two columns: debits on the left, credits on the right. The two columns are totaled, and the totals must match. Equal totals mean the recording stayed in balance — but they do not prove everything is right.
 
 ## Why This Matters
 
@@ -40,7 +40,7 @@ The trial balance is one step in a longer routine. OpenStax numbers it as the fo
 
 ## Key Vocabulary
 
-- **Trial balance** — A list of all accounts in the general ledger with their balances at a point in time, used to check that total debits equal total credits; the working definition in this lesson comes from OpenStax's Principles of Accounting.
+- **Trial balance** — A list of all accounts in the general ledger with their balances at a point in time, used to check that total debits equal total credits; the core definition in this lesson comes from OpenStax's Principles of Accounting.
 - **Unadjusted trial balance** — A trial balance prepared right after posting, before adjusting entries, showing the accounts as they were recorded during the period.
 - **Adjusted trial balance** — A second trial balance prepared after adjusting entries, used to confirm that the totals still balance before the financial statements are built.
 - **Debit balance** — An account ending on the debit, or left, side — typical of cash, supplies, and expenses — placed in the left column of the trial balance.

@@ -87,46 +87,46 @@ The general ledger is the business's memory: every transaction ends up in an acc
 
 **1. What is the general ledger?**
 
-- A) The complete set of a company's accounts, where all transactions are collected by account
-- B) The chronological list of transactions in the order they happened
-- C) A report of a company's profits for the year
-- D) The list of customers who owe the company money
+- A. The complete set of a company's accounts, where all transactions are collected by account
+- B. The chronological list of transactions in the order they happened
+- C. A report of a company's profits for the year
+- D. The list of customers who owe the company money
 
 **Correct answer: A.** The general ledger is the complete set of accounts where every transaction ends up collected by account — the working definition from OpenStax. The chronological list is the journal, profits are reported on the income statement, and customers who owe money appear in Accounts Receivable.
 
 **2. Which of the following is NOT one of the five account families that each get their own accounts in the general ledger?**
 
-- A) Assets
-- B) Liabilities
-- C) Revenue
-- D) Employees
+- A. Assets
+- B. Liabilities
+- C. Revenue
+- D. Employees
 
 **Correct answer: D.** The five account families are assets, liabilities, equity, revenue, and expenses. Employees are people, not an account family — wages paid to them would be recorded in an expense account like Wages Expense.
 
 **3. What does posting do in the accounting cycle?**
 
-- A) It deletes old journal entries that are no longer needed
-- B) It calculates the taxes a business owes for the period
-- C) It copies journal entries into the general ledger, moving each entry into the account it affects
-- D) It writes transactions down in the journal in the order they happen
+- A. It deletes old journal entries that are no longer needed
+- B. It calculates the taxes a business owes for the period
+- C. It copies journal entries into the general ledger, moving each entry into the account it affects
+- D. It writes transactions down in the journal in the order they happen
 
 **Correct answer: C.** Posting is the step that takes all transactions from the journal and moves the information to the general ledger, per OpenStax. It does not delete entries, calculate taxes, or create the journal — the journal comes first, posting copies from it.
 
 **4. Elena's food truck records a week of journal entries: cash sales, a supplies purchase, a customer payment, and a loan payment. Where would she look to see every transaction that touched her Cash account, in one place, with its running balance?**
 
-- A) The Cash account in the general ledger
-- B) The journal, which lists all the entries in order
-- C) The chart of accounts, which names the accounts she uses
-- D) The loan agreement, which shows the payment schedule
+- A. The Cash account in the general ledger
+- B. The journal, which lists all the entries in order
+- C. The chart of accounts, which names the accounts she uses
+- D. The loan agreement, which shows the payment schedule
 
 **Correct answer: A.** The ledger collects transactions by account, so the Cash account holds every cash entry plus its running balance. The journal is chronological and shows all accounts mixed together; the chart of accounts is just the list of account names; the loan agreement shows only the loan, not the rest of the cash activity.
 
 **5. A manager wants to know how a month of transactions turned into the totals on the financial statements. Which path describes how the numbers actually got there?**
 
-- A) Journal entries are summarized into the chart of accounts, which becomes the statements
-- B) Journal entries are posted to the general ledger, and each account's balance feeds the trial balance and then the statements
-- C) Transactions are recorded directly on the financial statements as they happen
-- D) The journal is totaled at month-end, and those totals become the statements
+- A. Journal entries are summarized into the chart of accounts, which becomes the statements
+- B. Journal entries are posted to the general ledger, and each account's balance feeds the trial balance and then the statements
+- C. Transactions are recorded directly on the financial statements as they happen
+- D. The journal is totaled at month-end, and those totals become the statements
 
 **Correct answer: B.** The chain runs: entries are posted from the journal to the general ledger, the ledger's account balances feed the trial balance, and the statements are built from there — CFI calls the ledger the data source for the balance sheet and income statement. The chart of accounts is a list, not a summary; transactions never go straight onto the statements; totaling the journal would mix accounts together and lose the per-account balances.
 

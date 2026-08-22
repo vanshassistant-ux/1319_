@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-The income statement is the scoreboard for a period. It reports a business's revenue at the top, its expenses below, and the profit or loss at the bottom — this lesson's working definition follows OpenStax's Principles of Accounting. The math is one subtraction: revenue minus expenses. Gross figures come before other items are subtracted; net figures come after. The statement shows earnings, not cash movements, and it answers one question: did the business make money this period?
+The income statement is the scoreboard for a period. It reports a business's revenue at the top, its expenses below, and the profit or loss at the bottom — this lesson's definition follows OpenStax's Principles of Accounting. The math is one subtraction: revenue minus expenses. Gross figures come before other items are subtracted; net figures come after. The statement shows earnings, not cash movements, and it answers one question: did the business make money this period?
 
 ## Why This Matters
 
@@ -21,7 +21,7 @@ Every money decision about a business starts with its income statement. Owners r
 
 ### What an income statement is: the scoreboard for a period
 
-This lesson's working definition follows OpenStax's Principles of Accounting: the income statement is a statement that shows the organization's financial performance for a given period of time. CFI describes the same document as one of a company's core financial statements, showing profit and loss over a period of time and summarizing all revenues and expenses from operating and non-operating activities. The period matters: it can be a month, a quarter, or a year, and the statement's heading is labeled with the dates it covers — "for the month ended July 31," not "as of July 31." The scoreboard analogy fits: the statement keeps score for a stretch of play, not for a single moment. A statement that shows a snapshot at one moment — what a business owns and owes — is the balance sheet, a sibling topic referenced here only.
+The income statement, per OpenStax's Principles of Accounting, shows the organization's financial performance for a given period of time. CFI describes the same document as one of a company's core financial statements, showing profit and loss over a period of time and summarizing all revenues and expenses from operating and non-operating activities. The period matters: it can be a month, a quarter, or a year, and the statement's heading is labeled with the dates it covers — "for the month ended July 31," not "as of July 31." The scoreboard analogy fits: the statement keeps score for a stretch of play, not for a single moment. A statement that shows a snapshot at one moment — what a business owns and owes — is the balance sheet, a sibling topic referenced here only.
 
 ### The shape: revenue at the top, expenses below, profit or loss at the bottom
 

@@ -28,7 +28,7 @@ Manufacturers typically hold three types of inventory, one for each stage of pro
 
 ### Inventory as an asset
 
-Until goods are sold, they are an asset — a resource the business owns that is expected to bring future benefit. OpenStax's Principles of Accounting puts it plainly: the unsold inventory at period end is an asset and appears on the balance sheet. Assets are their own topic; what matters here is where inventory sits. Accountants classify it as a current asset, because the business expects to sell it within a year, and for many companies it is one of the largest current assets of all — OpenStax notes that in 2018, Walmart's inventory was roughly 70 percent of its current assets. A box of goods awaiting sale is therefore part of what the business owns, right up until the sale happens.
+Until goods are sold, they are an asset — a resource the business owns that is expected to deliver future value. OpenStax's Principles of Accounting puts it plainly: the unsold inventory at period end is an asset and appears on the balance sheet. Assets are their own topic; what matters here is where inventory sits. Accountants classify it as a current asset, because the business expects to sell it within a year, and for many companies it is one of the largest current assets of all — OpenStax notes that in 2018, Walmart's inventory was roughly 70 percent of its current assets. A box of goods awaiting sale is therefore part of what the business owns, right up until the sale happens.
 
 ### Counting and valuing inventory
 

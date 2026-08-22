@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Accounts receivable is the money customers owe a business for goods or services already delivered — the working definition in this lesson comes from OpenStax's Principles of Accounting. Receivables arise when a business sells on credit: the customer gets the goods now and promises to pay later. Because that promise is expected to turn into cash, the receivable is an asset. The business collects it with invoices and follow-up, while watching the honest risk that some customers never pay.
+Accounts receivable is the money customers owe a business for goods or services already delivered — the working definition here comes from OpenStax's Principles of Accounting. Receivables arise when a business sells on credit: the customer gets the goods now and promises to pay later. Because that promise is expected to turn into cash, the receivable is an asset. The business collects it with invoices and follow-up, while watching the honest risk that some customers never pay.
 
 ## Why This Matters
 

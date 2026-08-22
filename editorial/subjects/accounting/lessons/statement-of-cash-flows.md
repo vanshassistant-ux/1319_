@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-The statement of cash flows is a financial report showing the cash coming into a business and going out over a period, organized by activity — the working definition in this lesson comes from OpenStax's Principles of Accounting. It has three sections: operating, investing, and financing. Profit is an opinion; cash is a fact. Because a profitable business can still run out of cash, the statement answers the simplest question: can this business pay its bills?
+The statement of cash flows is a financial report showing the cash coming into a business and going out over a period, organized by activity — the this lesson's definition comes from OpenStax's Principles of Accounting. It has three sections: operating, investing, and financing. Profit is an opinion; cash is a fact. Because a profitable business can still run out of cash, the statement answers the simplest question: can this business pay its bills?
 
 ## Why This Matters
 
@@ -35,7 +35,7 @@ Each section nets to one number, and the three nets add up to the period's total
 
 ### Why cash matters separately
 
-The income statement reports profit, but profit is built on the accrual basis, not on cash. CFI puts it plainly: income and profit are based on accrual accounting principles, which smooth out expenditures and match revenues to the timing of delivery, so a company's net income can be materially different from its cash flow. OpenStax makes the same point from the other side: accrual accounting creates timing differences between income statement accounts and cash — a revenue can be recorded in a different year than the one its cash arrives. That is why cash deserves its own statement. The honest framing, stated simply: profit is an opinion — a judgment built on rules about when to count revenue and expenses; cash is a fact — the money that actually moved. The income statement is a sibling topic with its own lesson; here it appears only as the contrast that explains why the cash flow statement exists.
+The income statement reports profit, but profit is built on the accrual basis, not on cash. CFI puts it plainly: income and profit are based on accrual accounting principles, which smooth out expenditures and match revenues to the timing of delivery, so a company's net income can be materially different from its cash flow. OpenStax makes the same point from the other side: accrual accounting creates timing differences between income statement accounts and cash — a revenue can be recorded in a different year than the one its cash arrives. That is why cash deserves its own statement. The honest framing, stated simply: profit is an opinion — a judgment built on rules about when to count revenue and expenses; cash is a fact — the money that actually moved. The income statement is a sibling topic with a lesson of its own; here it appears only as the contrast that explains why the cash flow statement exists.
 
 ### Cash flow vs profit
 

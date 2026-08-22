@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-The accounting cycle is the repeating sequence of steps that turns a period's transactions into financial statements — the working definition in this lesson comes from OpenStax's Principles of Accounting. The steps, in order: identify transactions, record journal entries, post to the ledger, prepare a trial balance, make adjusting entries, prepare statements, and close the books. Bookkeepers and accountants run the cycle every month or year. The repetition is the point: the same order, every period, is what catches errors.
+The accounting cycle is the repeating sequence of steps that turns a period's transactions into financial statements — the this lesson's working definition comes from OpenStax's Principles of Accounting. The steps, in order: identify transactions, record journal entries, post to the ledger, prepare a trial balance, make adjusting entries, prepare statements, and close the books. Bookkeepers and accountants run the cycle every month or year. The repetition is the point: the same order, every period, is what catches errors.
 
 ## Why This Matters
 
@@ -37,7 +37,7 @@ The accounting equation — assets equal liabilities plus equity — has its own
 
 ### The rhythm: monthly or yearly
 
-The cycle's period is called the accounting period, and OpenStax notes it can be a month, a quarter, or a year. In practice, most small businesses run the cycle monthly — a bookkeeper closes the books at the end of every month — while some companies report quarterly or yearly. Whatever the length, the rhythm is the same: run the cycle, produce the statements, close the books, start again. The rhythm matters to readers too: a lender comparing periods can only trust the comparison if every period was produced the same way. Periodicity is what turns a pile of transactions into a regular heartbeat of reports.
+The cycle's period is called the accounting period, and OpenStax notes the period can be a month, a quarter, or a year. In practice, most small businesses run the cycle monthly — a bookkeeper closes the books at the end of every month — while some companies report quarterly or yearly. Whatever the length, the rhythm is the same: run the cycle, produce the statements, close the books, start again. The rhythm matters to readers too: a lender comparing periods can only trust the comparison if every period was produced the same way. Periodicity is what turns a pile of transactions into a regular heartbeat of reports.
 
 ### Who runs it, and the honest framing
 
@@ -45,7 +45,7 @@ Two kinds of people run the cycle, and they divide the work. Bookkeepers handle 
 
 ## Key Vocabulary
 
-- **Accounting cycle** — The repeating sequence of steps — identify transactions, record journal entries, post to the ledger, prepare a trial balance, make adjusting entries, prepare statements, and close the books — that turns a period's transactions into financial statements; the working definition in this lesson comes from OpenStax's Principles of Accounting.
+- **Accounting cycle** — The repeating sequence of steps — identify transactions, record journal entries, post to the ledger, prepare a trial balance, make adjusting entries, prepare statements, and close the books — that turns a period's transactions into financial statements; the this lesson's working definition comes from OpenStax's Principles of Accounting.
 - **Accounting period** — The stretch of time — often a month, quarter, or year — over which a business records transactions and reports results before the cycle begins again.
 - **Transaction** — A business activity that changes what the company owns or owes, such as a sale, a purchase, or a loan payment.
 - **Journal** — The chronological record where transactions are first written down as entries; journal entries are covered in their own lesson.

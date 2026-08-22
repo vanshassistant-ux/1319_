@@ -33,7 +33,7 @@ Accountants sort assets by time. A current asset is expected to be used up, sold
 
 ### Where assets sit in the accounting equation
 
-In the accounting equation, assets = liabilities + equity, assets occupy the left side. The equation is its own topic and is covered in a separate lesson; what matters here is the placement. Every asset a business holds was funded one of two ways: borrowed money, which creates a liability, or the owners' money, which is equity. So the left side of the equation always matches the right side. When a bakery borrows $20,000 from a bank and buys an oven, cash and the oven appear on the asset side, and the loan appears on the liability side. The balance sheet is simply the equation written as a statement: assets on one side, liabilities plus equity on the other, always equal.
+In the accounting equation, assets = liabilities + equity, assets occupy the left side. The equation is its own topic and is covered in a separate lesson; what matters here is the placement. Every asset a business holds was funded one of two ways: borrowed money, which creates a liability, or the owners' money, which is equity. So the left side of the equation always matches the right side. When a bakery borrows $20,000 from a bank and buys an oven, cash and the oven appear on the asset side, and the loan appears on the liability side. The balance sheet is simply the equation set out as a statement: assets on one side, liabilities plus equity on the other, always equal.
 
 ### How assets enter a business
 

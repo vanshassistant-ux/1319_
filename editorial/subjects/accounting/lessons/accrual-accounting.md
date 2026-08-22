@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Accrual accounting records revenue when it is earned and expenses when they are incurred, no matter when cash changes hands — the working definition in this lesson comes from OpenStax's Principles of Accounting. A painter who finishes a job in September records the revenue in September even if the customer pays in October, and the matching principle pairs that revenue with the costs that produced it. GAAP requires accrual accounting because it gives a truer picture of performance — and it is also more complicated.
+Accrual accounting records revenue when it is earned and expenses when they are incurred, no matter when cash changes hands — this lesson anchors its definition on OpenStax's Principles of Accounting. A painter who finishes a job in September records the revenue in September even if the customer pays in October, and the matching principle pairs that revenue with the costs that produced it. GAAP requires accrual accounting because it gives a truer picture of performance — and it is also more complicated.
 
 ## Why This Matters
 
@@ -25,7 +25,7 @@ OpenStax's Principles of Accounting states the rule directly: accrual basis acco
 
 ### Revenue recognition: earned, not paid
 
-The revenue recognition principle directs a company to recognize revenue in the period in which it is earned, and revenue is not considered earned until a product or service has been provided. OpenStax adds that there does not have to be a correlation between when cash is collected and when revenue is recognized: a customer may not pay on the day of the service, yet the company records the revenue as earned because the work happened. Here is an original example. Harborview Painting finishes painting a house on September 24 and sends a bill for $4,800; the homeowner pays on October 9. The revenue belongs in September, because that is when the painting was done. A system that waited for cash would show no revenue in September for work actually completed, and $4,800 in October for a month in which no painting happened.
+The revenue recognition principle tells a business to record revenue in the period it earns it, and revenue counts as earned only once a product or service has been provided. OpenStax adds that there does not have to be a correlation between when cash is collected and when revenue is recognized: a customer may not pay on the day of the service, yet the company records the revenue as earned because the work happened. Here is an original example. Harborview Painting finishes painting a house on September 24 and sends a bill for $4,800; the homeowner pays on October 9. The revenue belongs in September, because that is when the painting was done. A system that waited for cash would show no revenue in September for work actually completed, and $4,800 in October for a month in which no painting happened.
 
 ### The matching principle
 
@@ -45,7 +45,7 @@ Accrual accounting wins because it is truer, and the honest framing is that true
 
 ## Key Vocabulary
 
-- **Accrual accounting** — A method of accounting that records revenue when it is earned and expenses when they are incurred, regardless of when cash is received or paid; the working definition in this lesson comes from OpenStax's Principles of Accounting.
+- **Accrual accounting** — A method of accounting that records revenue when it is earned and expenses when they are incurred, regardless of when cash is received or paid; this lesson anchors its definition on OpenStax's Principles of Accounting.
 - **Revenue recognition principle** — The rule that revenue is recorded in the period it is earned, when the product or service has been provided, even if the customer has not yet paid.
 - **Matching principle** — The rule, also called the expense recognition principle, that expenses are recorded in the same period as the revenues they helped produce.
 - **Accrued revenue** — Revenue that has been earned but not yet collected, such as work completed and billed but still unpaid at period end.
@@ -95,7 +95,7 @@ Accrual accounting records revenue when earned and expenses when incurred, so ea
 - C. In the period when the tax return is filed
 - D. Whenever the accountant gets around to writing it down
 
-**Key: A.** The revenue recognition principle directs a company to recognize revenue in the period it is earned, with no required correlation to cash collection; recording only on payment is cash accounting, and filing or convenience are not recognition rules.
+**Key: A.** The revenue recognition principle tells a business to record revenue in the period it earns it, with no required correlation to cash collection; recording only on payment is cash accounting, and filing or convenience are not recognition rules.
 
 **Q2.** What does the matching principle require?
 
