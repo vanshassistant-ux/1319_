@@ -1,0 +1,146 @@
+{
+  "topicId": "ux-ui-design:foundations:user-flows",
+  "subjectId": "ux-ui-design",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "working definition of a user flow (NN/g): a set of interactions describing the typical or ideal steps needed to accomplish a common task performed with a product",
+      "flow vs journey: micro (one task, one product, minutes or hours) vs macro (whole experience, across channels and time, with emotions)",
+      "the flow diagram: screens (boxes), arrows (paths), decision points (diamonds), endpoints (start/end ovals); described in words, no tools",
+      "why flows matter: they expose dead ends, detours, and drop-off risks before anything is built",
+      "happy path (the ideal route) vs edge cases (the exceptions that interrupt it)",
+      "entry points: a task can start from many places, so a flow may need several starting boxes",
+      "honest framing: a flow is a plan, not a promise; real users deviate, and usability testing is how the plan gets checked"
+    ],
+    "supporting": [
+      "artifacts for flows: flow charts, task diagrams, wireflows (wireflows combine flowchart paths with screen layouts)",
+      "flows capture key user steps and system responses, not emotions and thoughts",
+      "standard flow-diagram symbols: ovals for start and end, rectangles for steps, diamonds for decisions",
+      "entry-point categories: direct traffic, organic search, social media, ads, email"
+    ],
+    "outOfScope": [
+      "user journeys and journey mapping (own sibling topic; referenced only)",
+      "wireframes and wireflow screen-layout half (own sibling topic; referenced only)",
+      "information architecture and site structure (own sibling topic; referenced only)",
+      "usability testing methods and protocols (own sibling topic; referenced only)",
+      "tool-specific tutorials (Figma, Sketch, diagram software) — literacy level forbids tool how-tos"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Nielsen Norman Group defines a user flow as a set of interactions that describe the typical or ideal set of steps needed to accomplish a common task performed with a product.",
+      "claimType": "DEFINITIONAL",
+      "sourceIds": [
+        "nng-journeys-vs-user-flows"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "User flows are micro in scope: the underlying goal is granular, specific to one product, and usually accomplishable in minutes or hours at most; user journeys are the macro view, holistic and high-level, spanning channels and time.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nng-journeys-vs-user-flows"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "User flows capture key user steps and system responses and do not contextualize the process with emotions and thoughts, while journey maps capture actions, emotions, and thoughts.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nng-journeys-vs-user-flows"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "User flows can be represented with flow charts, task diagrams, or wireflows; flowcharts document complex workflows and user tasks, and wireflows combine flowchart-style paths with screen designs so each step keeps its page context.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nng-journeys-vs-user-flows",
+        "nng-wireflows"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "User flow diagrams depict the path a user can take to complete a task while interacting with a product, using conventional symbols: ovals for start and end points, rectangles for steps, and diamonds for decisions.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "ixdf-user-flows"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "A task can begin from many entry points — direct traffic, organic search, social media, banner ads, and email among them — so teams should list the possible entry points and mark entry and exit points to identify potential drop-off points.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ixdf-user-flows"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Flow diagrams help clarify the sequence of screens a user will navigate and let teams spot potential roadblocks before they become real problems; usability testing is the research method best suited to checking whether a mapped flow matches how people actually behave.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "ixdf-user-flows",
+        "nng-journeys-vs-user-flows"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether a user flow should be drawn for the ideal route only or must include every possible exception.",
+      "positions": [
+        "NN/g defines a user flow as the typical or ideal set of steps for a common task — the happy path is the core of the diagram.",
+        "Practitioners and sources such as IxDF note that diagrams vary in size and complexity, that decision points branch, and that over-simplifying can make a flow cryptic; error and edge-case branches are routinely added.",
+        "NN/g also warns that flows capture only steps and system responses, not feelings, so a flow alone never tells the whole story of an experience."
+      ],
+      "resolution": "The lesson teaches the happy path as the spine of the flow, with decision points and endpoints marked so branches are visible, treats edge cases as necessary extensions rather than noise, and closes with the honest framing that any flow is a plan to test with users, not a promise about their behavior."
+    }
+  ],
+  "unsupportedExistingClaims": [],
+  "correctionsNeeded": [],
+  "rightsIssues": [
+    "All three sources used reference-only: NN/g articles (User Journeys vs. User Flows by Kate Kaplan, April 16 2023; Wireflows by Page Laubheimer, December 4 2016) and the IxDF User Flows topic encyclopedia page (CC BY-SA licensed content; facts restated in original prose, no wording reproduced). All illustrative examples in the lesson are original and invented; no real products are named or judged."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nng-journeys-vs-user-flows",
+      "title": "User Journeys vs. User Flows",
+      "provider": "Nielsen Norman Group (NN/g)",
+      "url": "https://www.nngroup.com/articles/user-journeys-vs-user-flows/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via HTTP with a browser user agent on 2026-08-21 (article by Kate Kaplan, April 16, 2023). Supports: the working definition of a user flow as a set of interactions describing the typical or ideal set of steps for a common task performed with a product; the macro (journey) vs micro (flow) distinction in focus, scope, and what each captures; flow goals as granular and accomplishable in minutes or hours; flow artifacts (wireflows, flow charts, task diagrams); flows capturing key user steps and system responses rather than emotions; usability testing as the best research method for flow data. Facts restated in original prose; no wording reproduced."
+    },
+    {
+      "id": "nng-wireflows",
+      "title": "Wireflows: A UX Deliverable for Workflows and Apps",
+      "provider": "Nielsen Norman Group (NN/g)",
+      "url": "https://www.nngroup.com/articles/wireflows/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via HTTP with a browser user agent on 2026-08-21 (article by Page Laubheimer, December 4, 2016). Supports: flowcharts as a common way to document complex workflows and user tasks; wireflows as a format that combines wireframe-style screen layouts with a flowchart-like representation of interactions, keeping page context on each step. The lesson mentions flow charts and wireflows as diagram styles in words only; the wireframe half belongs to the wireframes sibling topic. Facts restated; no wording reproduced."
+    },
+    {
+      "id": "ixdf-user-flows",
+      "title": "User Flows — IxDF topic encyclopedia",
+      "provider": "Interaction Design Foundation (IxDF)",
+      "url": "https://www.interaction-design.org/literature/topics/user-flows",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live via HTTP on 2026-08-21 (CC BY-SA 4.0 topic page). Supports: user flows as diagrams depicting the path a user can take to complete a task with a product, focused on user needs and efficiency; standard diagram symbols (ovals for start/end, rectangles for steps, diamonds for decisions, parallelograms for inputs); entry points such as direct traffic, organic search, and social media, with the advice to list possible entry points and mark entry and exit points to spot drop-offs; the value of diagrams in clarifying screen sequences and surfacing potential roadblocks early. Facts restated in original prose; no wording reproduced."
+    }
+  ]
+}

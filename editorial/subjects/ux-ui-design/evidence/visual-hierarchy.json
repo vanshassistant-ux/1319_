@@ -1,0 +1,197 @@
+{
+  "topicId": "ux-ui-design:foundations:visual-hierarchy",
+  "subjectId": "ux-ui-design",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "working definition of visual hierarchy, attributed to Nielsen Norman Group (Kelley Gordon): the organization of design elements on a page so that the eye is guided to consume each design element in the order of intended importance",
+      "the complementary working definition from the Interaction Design Foundation: arranging elements so people instantly recognize their order of importance on a screen or page",
+      "why it matters: users scan screens rather than read them word by word (Jakob Nielsen's 1997 finding that 79% of test users always scanned a new page)",
+      "the five tools of hierarchy: size, color and contrast, spacing, position, and weight — each taught with an original example",
+      "hierarchy and readability: when visual order matches intended importance, users understand the design and complete tasks successfully",
+      "hierarchy vs equality: when everything is emphasized, nothing stands out",
+      "the practice rule: one clear primary action per screen",
+      "the honest framing: hierarchy is a judgment, not a formula; verify with the squint test and testing with real users"
+    ],
+    "supporting": [
+      "natural scanning patterns in Western reading cultures: F-pattern (top to bottom, left to right) and Z-pattern (top left to top right to bottom left to bottom right)",
+      "type weight (bold vs regular) as a contrast signal of importance",
+      "grouping via proximity and common regions (enclosure) as a spacing tool"
+    ],
+    "outOfScope": [
+      "typography — sibling topic (referenced only)",
+      "color — sibling topic (referenced only)",
+      "layout — sibling topic (referenced only)",
+      "wcag-basics — sibling topic (contrast requirements and ratios are out of scope; only NN/g's hierarchy advice not to rely on color alone is used)",
+      "no design tools, software, or code — literacy level forbids tool tutorials"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Visual hierarchy is the organization of design elements on a 2D display (webpage, graphic, print) so that the eye is guided to consume each design element in the order of intended importance. This working definition is attributed to Nielsen Norman Group (Kelley Gordon), whose summary states that a clear visual hierarchy guides the eye to the most important elements on the page and can be created through variations in color and contrast, scale, and grouping.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nng-visual-hierarchy"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The Interaction Design Foundation defines visual hierarchy as the principle of arranging elements so that people instantly recognize their order of importance on a screen or page; good hierarchy lets users scan a page, find what they need, and take action without friction.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ixdf-visual-hierarchy"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "People rarely read web pages word by word; instead they scan the page, picking out individual words and sentences. In Jakob Nielsen's 1997 research on how people read websites, 79 percent of test users always scanned any new page they came across, while only 16 percent read word by word.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nng-how-users-read"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Size is a tool of visual hierarchy: bigger elements attract more attention, so the most important element should be the biggest; NN/g recommends limiting the design to roughly three sizes (small, medium, large) and limiting the number of big elements so they reinforce rather than compete.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nng-visual-hierarchy",
+        "ixdf-visual-hierarchy"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Color and contrast are tools of visual hierarchy: bright or saturated colors and strong light-dark differences draw the eye, and it is the contrast between an element and its context that creates hierarchy; NN/g warns that if everything is contrasted, then nothing stands out, and advises against relying on color alone because people with color blindness may not perceive certain color combinations.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nng-visual-hierarchy",
+        "ixdf-visual-hierarchy"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Spacing and grouping are tools of visual hierarchy: an element with more space around it is perceived as a group and receives more attention, proximity groups related elements, and explicit containers (common regions) can separate groups; white space frames and emphasizes what matters.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nng-visual-hierarchy",
+        "ixdf-visual-hierarchy"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Position is a tool of visual hierarchy: people in Western cultures tend to scan in an F-pattern (top to bottom, left to right) or a Z-pattern (top left to top right to bottom left to bottom right), so key information should be placed where the eye is most likely to land first; NN/g eyetracking research confirms people scan webpages and phone screens in patterns such as the F-shape.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ixdf-visual-hierarchy",
+        "nng-f-shaped"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Type weight is a tool of visual hierarchy: typefaces with heavy weight, like bold, stand out against light-weighted or regular typefaces, and words styled differently from surrounding text attract attention.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nng-visual-hierarchy"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Emphasizing everything destroys hierarchy: NN/g states that if everything is contrasted, then nothing stands out, and IxDF states that equal weight across all elements equals visual noise; a screen where every element demands attention gives the eye no starting point.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nng-visual-hierarchy",
+        "ixdf-visual-hierarchy"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Hierarchy is verified with real eyes, not formulas: the squint test (squinting at or blurring the design until text is unreadable) reveals which elements dominate, and after designing with hierarchy in mind the designer should step back and test with target users; when the hierarchy accurately reflects importance, users easily understand the design and can successfully complete tasks.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nng-visual-hierarchy"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "The two primary sources name different tool lists: Nielsen Norman Group teaches hierarchy through color and contrast, scale, and grouping (proximity and common regions), while the Interaction Design Foundation lists size, color, contrast, alignment, repetition, proximity, white space, and texture.",
+      "positions": [
+        "Nielsen Norman Group: hierarchy is created through variations in color and contrast, scale, and grouping.",
+        "Interaction Design Foundation: hierarchy is shaped with size, color, contrast, alignment, repetition, proximity, white space, and texture."
+      ],
+      "resolution": "Not a substantive conflict: both lists overlap on size, contrast, and spacing-related grouping. The lesson teaches a synthesized five-tool set — size, color and contrast, spacing, position, and weight — attributing each tool to the source that supports it (position and weight come from IxDF's scanning-pattern guidance and NN/g's type-contrast guidance respectively), and does not present the tool list as a single canonical enumeration."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "No generated draft existed for this topic; all content was written fresh from live research on 2026-08-21.",
+    "The generic draft boilerplate ('is a foundational concept in', 'a college-level explanation names the concept') was avoided and does not appear in the lesson.",
+    "Real products used as illustrations inside the source articles (Williams-Sonoma, MoMA, Spotify, Shopify, Google) were read for principles only and are not named or evaluated in the lesson; all examples are original and invented."
+  ],
+  "correctionsNeeded": [
+    "Kept the scope clean: typography, color, layout, and wcag-basics are sibling topics, so this lesson names the tools (type weight, color contrast, spacing, position) without teaching those subjects, and no WCAG contrast requirements are cited.",
+    "Anchored the working definition to Nielsen Norman Group (Kelley Gordon, 2021) and the Interaction Design Foundation, attributing each, per the source-map instruction that definitions must be attributed.",
+    "Ensured the question bank answer keys are spread across slots A/B/C/D with at least one C and one D, verified by reading the file back.",
+    "Used the honest framing (hierarchy is a judgment, not a formula; squint test and real-user testing) as the closing position rather than presenting the guidelines as absolute rules."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "nng-visual-hierarchy",
+      "title": "Visual Hierarchy in UX: Definition",
+      "provider": "Nielsen Norman Group",
+      "url": "https://www.nngroup.com/articles/visual-hierarchy-ux-definition/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "not stated on page",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A. Read live via curl on 2026-08-21. Article by Kelley Gordon, dated January 17, 2021. Supports: the working definition of visual hierarchy (organization of design elements so the eye is guided to consume each element in the order of intended importance); the summary that a clear hierarchy guides the eye to the most important elements via color and contrast, scale, and grouping; the tools of color/contrast, scale (no more than 3 sizes; make the most important element biggest), grouping (proximity, common regions, white space); type weight as a contrast signal; 'if everything is contrasted, then nothing stands out'; the advice not to rely on color alone (color blindness); the squint test; and the conclusion to test with target users so users easily understand the design and complete tasks. Used for verification and synthesis only; no prose reproduced."
+    },
+    {
+      "id": "nng-how-users-read",
+      "title": "How Users Read on the Web",
+      "provider": "Nielsen Norman Group",
+      "url": "https://www.nngroup.com/articles/how-users-read-on-the-web/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "not stated on page",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A. Read live via curl on 2026-08-21. Article by Jakob Nielsen, dated September 30, 1997. Supports the core argument that users scan rather than read: people rarely read web pages word by word; instead they scan, picking out individual words and sentences, and 79 percent of test users always scanned any new page while only 16 percent read word-by-word. Also lists scannable-text practices (highlighted keywords, meaningful subheadings, bulleted lists, inverted pyramid) which informed the readability section. Used for verification and synthesis only; no prose reproduced."
+    },
+    {
+      "id": "nng-f-shaped",
+      "title": "F-Shaped Pattern of Reading on the Web: Misunderstood, But Still Relevant (Even on Mobile)",
+      "provider": "Nielsen Norman Group",
+      "url": "https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "not stated on page",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A. Read live via curl on 2026-08-21. Article by Kara Pernice, dated November 12, 2017, last reviewed August 19, 2026. Supports the position tool: eyetracking research shows that people scan webpages and phone screens in patterns, one of them the shape of the letter F, first identified by NN/g in 2006; the article also notes the F-pattern is not the only scanning pattern. Used as supporting evidence for the position tool alongside the IxDF scanning-pattern guidance. Used for verification and synthesis only; no prose reproduced."
+    },
+    {
+      "id": "ixdf-visual-hierarchy",
+      "title": "What is Visual Hierarchy?",
+      "provider": "Interaction Design Foundation (IxDF)",
+      "url": "https://www.interaction-design.org/literature/topics/visual-hierarchy",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0 (page footer)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read live via curl on 2026-08-21. Supports: the IxDF working definition (arranging elements so people instantly recognize their order of importance on a screen or page); the tools of size, color, contrast, proximity, and white space; the claim that equal weight across all elements equals visual noise and that a design where every element shouts for attention leaves the audience without a place to look; and the natural scanning patterns of Western readers (F-pattern top-to-bottom left-to-right, Z-pattern top-left to top-right to bottom-left to bottom-right) with the advice to place key information where the eye will most likely see it. Used for verification and synthesis only; no prose reproduced."
+    }
+  ]
+}

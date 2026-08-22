@@ -1,0 +1,208 @@
+{
+  "topicId": "ux-ui-design:foundations:information-architecture",
+  "subjectId": "ux-ui-design",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "working definition of IA: the structure and labeling of information in a product",
+      "why IA matters: findability — if people cannot find it, it might as well not exist",
+      "the four component systems: organization, labeling, navigation, search",
+      "organizing schemes: by topic, by task, by audience, chronologically",
+      "hierarchy and depth: broad vs deep structures and the trade-off",
+      "IA vs navigation: structure vs the pathways through it",
+      "honest framing: IA is invisible when done well; noticed only when it fails"
+    ],
+    "supporting": [
+      "IA's history: Wurman credited with coining the term; Morville and Rosenfeld's foundational text",
+      "IA applies to physical spaces (museums, department stores) as well as digital products",
+      "card sorting as the method for learning how users naturally categorize content",
+      "audience-based organization is often problematic in practice (NN/g)"
+    ],
+    "outOfScope": [
+      "user flows (own topic: the path a user takes through a product)",
+      "navigation design in depth (a practitioner topic)",
+      "search design in depth (a practitioner topic)",
+      "wireframing and prototyping (own topics)",
+      "visual hierarchy, typography, and layout (own topics)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Information architecture is the discipline of making information findable and understandable, covering searching, browsing, categorizing, and presenting information in websites, applications, and physical spaces.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ixdf-information-architecture"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The working definition of information architecture is the structure and labeling of information in a product: how content is organized, named, and connected; the field's foundational text is Morville and Rosenfeld's Information Architecture for the World Wide Web, and Richard Saul Wurman is credited with coining the term.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ixdf-information-architecture",
+        "wikipedia-information-architecture"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "IA has four component systems: organization systems (how information is categorized and structured), labeling systems (how information and navigation options are represented), navigation systems (how users move through the structure), and search systems (how users find specific information quickly).",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ixdf-information-architecture"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "IA is the information backbone of a product: the underlying organization, structure, and nomenclature that define the relationships between content; it is not part of the on-screen interface but informs the UI and impacts the user experience.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nng-ia-vs-navigation"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "IA and navigation are related but distinct: IA spans well beyond navigation, and navigation refers to the interface elements that allow users to reach specific information within the structure.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nng-ia-vs-navigation"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Content is more discoverable when it is not buried under multiple intervening layers; all other things being equal, deep hierarchies are more difficult to use, and a flatter hierarchy usually supports more specific labels that are easier to understand.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nng-flat-vs-deep-hierarchy"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Organizing navigation by audience type is usually problematic: role-based IA increases cognitive effort and anxiety, and clear language with mutually exclusive categories reduces harm to the user experience.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "nng-audience-based-navigation"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Card sorting is a user research method that helps designers understand how users categorize and label content, so the resulting IA aligns with users' mental models.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ixdf-card-sorting"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Is organizing content by audience a sound IA strategy?",
+      "positions": [
+        "Audience schemes (Students / Faculty / Alumni) are one of the classic organizing schemes and let each visitor focus on content relevant to them.",
+        "Nielsen Norman Group research finds audience-based navigation is usually problematic: users often do not know which segment they belong to, and role-based IA increases cognitive effort and anxiety."
+      ],
+      "resolution": "The lesson names audience as one of the four common organizing schemes, as standard IA teaching does, but carries NN/g's caution that it is frequently the weakest choice and recommends topic- or task-based organization for most products."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's vague framing that IA is 'a foundational concept in Ux/Ui Design' without a definition",
+    "The draft's generic claims that IA helps students 'organize information, ask better questions, and explain relationships' with no reference to findability or the four systems"
+  ],
+  "correctionsNeeded": [
+    "Replaced the draft's placeholder definition with the sourced working definition: the structure and labeling of information in a product",
+    "Added the four component systems (organization, labeling, navigation, search) sourced to IxDF",
+    "Added the broad-versus-deep hierarchy trade-off sourced to NN/g's Flat vs. Deep Website Hierarchies",
+    "Added the IA-versus-navigation distinction sourced to NN/g's The Difference Between Information Architecture (IA) and Navigation",
+    "Added the honest framing that good IA is invisible and noticed only when it fails, sourced to NN/g's description of IA as invisible in the UI yet impactful on UX",
+    "Added the caution that audience-based organization is usually problematic, sourced to NN/g"
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "nng-ia-vs-navigation",
+      "title": "The Difference Between Information Architecture (IA) and Navigation",
+      "provider": "Nielsen Norman Group (NN/g)",
+      "url": "https://www.nngroup.com/articles/ia-vs-navigation/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "Copyright NN/g; used as reference only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A. Read live via curl on 2026-08-21 (Jen Cardello, 2014). Supports: IA as the information backbone of a site (underlying organization, structure, nomenclature); IA is not part of the UI but informs it and impacts UX; IA spans beyond navigation; navigation is the UI elements that let users reach specific information. Used as reference only; no wording adapted."
+    },
+    {
+      "id": "nng-flat-vs-deep-hierarchy",
+      "title": "Flat vs. Deep Website Hierarchies",
+      "provider": "Nielsen Norman Group (NN/g)",
+      "url": "https://www.nngroup.com/articles/flat-vs-deep-hierarchy/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "Copyright NN/g; used as reference only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A. Read live via curl on 2026-08-21 (Kathryn Whitenton, 2013). Supports the broad-versus-deep trade-off: content is more discoverable when not buried under layers; all else equal, deep hierarchies are more difficult to use; flat hierarchies support more specific, easier-to-understand labels. Used as reference only."
+    },
+    {
+      "id": "nng-audience-based-navigation",
+      "title": "Audience-Based Navigation: 5 Reasons to Avoid It",
+      "provider": "Nielsen Norman Group (NN/g)",
+      "url": "https://www.nngroup.com/articles/audience-based-navigation/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "Copyright NN/g; used as reference only",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A. Read live via curl on 2026-08-21. Supports the caution recorded in conflictingEvidence: role-based IAs increase cognitive effort and user anxiety; clear language and mutually exclusive categories reduce harm. Used as reference only."
+    },
+    {
+      "id": "ixdf-information-architecture",
+      "title": "What is Information Architecture (IA)?",
+      "provider": "Interaction Design Foundation (IxDF)",
+      "url": "https://www.interaction-design.org/literature/topics/information-architecture",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0 (page footer)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read live via curl on 2026-08-21. Supports the working definition (making information findable and understandable), the four component systems (organization, labeling, navigation, search), IA in physical spaces, and IA as the foundation of effective UX. Used as reference only; prose synthesized in original words."
+    },
+    {
+      "id": "ixdf-card-sorting",
+      "title": "What is Card Sorting?",
+      "provider": "Interaction Design Foundation (IxDF)",
+      "url": "https://www.interaction-design.org/literature/topics/card-sorting",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0 (page footer)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Read live via curl on 2026-08-21. Supports the claim that card sorting reveals how users categorize and label content so IA aligns with mental models; referenced in the evidence packet only, not in the lesson text. Used as reference only."
+    },
+    {
+      "id": "wikipedia-information-architecture",
+      "title": "Information architecture",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Information_architecture",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier D. Read live via curl on 2026-08-21. Supports the history claim: Richard Saul Wurman is credited with coining the term information architecture, and Peter Morville and Louis Rosenfeld co-authored Information Architecture for the World Wide Web (1998-2015 editions). Used as reference only."
+    }
+  ]
+}

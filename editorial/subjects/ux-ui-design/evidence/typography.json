@@ -1,0 +1,213 @@
+{
+  "topicId": "ux-ui-design:foundations:typography",
+  "subjectId": "ux-ui-design",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "working definition of typography (attributed)",
+      "typeface versus font",
+      "main typeface categories: serif, sans-serif, monospace, display",
+      "readability basics: size, line length, line height, contrast",
+      "hierarchy through type: headings versus body",
+      "type on screens",
+      "good typography is invisible"
+    ],
+    "supporting": [
+      "legibility as the ability to see and distinguish characters",
+      "scanning behavior on the web",
+      "the expressive role of type",
+      "measure (line length) as a typesetting concept"
+    ],
+    "outOfScope": [
+      "visual hierarchy as a whole (sibling topic)",
+      "color and contrast requirements (color and wcag-basics sibling topics)",
+      "layout and grid systems (sibling topic)",
+      "design software or tools (literacy level)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Typography is the art and technique of arranging type so that written language is legible, readable, and appealing.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ixdf-typography"],
+      "status": "supported"
+    },
+    {
+      "claim": "A typeface is the design of a set of letters, while a font is a specific style or weight within that design; in the Interaction Design Foundation's phrasing, you choose a typeface and you use a font.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ixdf-typography"],
+      "status": "supported"
+    },
+    {
+      "claim": "Serif typefaces have small finishing strokes at the ends of letter strokes; sans-serif typefaces do not; monospace typefaces give every character the same width (typical for code and data); display typefaces are designed for large sizes such as headlines and posters.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ixdf-typography", "mdn-text-font-styling", "wikipedia-display-typeface"],
+      "status": "supported"
+    },
+    {
+      "claim": "Legibility — whether people can see, distinguish, and recognize characters — is mainly determined by typography; the main levers are a reasonably large default font size, high contrast between characters and background, and a clean typeface.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["nng-legibility-readability-comprehension"],
+      "status": "supported"
+    },
+    {
+      "claim": "Body text on screens should be set at a comfortable reading size — the U.S. Web Design System recommends at least an effective size of about 16 px for body copy — and users should be able to change the font size.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["uswds-typography", "nng-legibility-readability-comprehension"],
+      "status": "supported"
+    },
+    {
+      "claim": "Readable line length on the web is roughly 45 to 90 characters per line, with about 66 characters a good target for long texts; text with greater line height can tolerate a longer measure.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["uswds-typography"],
+      "status": "supported"
+    },
+    {
+      "claim": "Line height is set as a unitless multiplier of the font size and controls the vertical rhythm of a text block; longer texts require more line height.",
+      "claimType": "TECHNICAL",
+      "sourceIds": ["uswds-typography"],
+      "status": "supported"
+    },
+    {
+      "claim": "On an average web-page visit, users read only about 28% of the words and usually scan instead of reading, so clear headlines and scannable text matter on screens.",
+      "claimType": "QUANTITATIVE",
+      "sourceIds": ["nng-legibility-readability-comprehension"],
+      "status": "supported"
+    },
+    {
+      "claim": "On today's high-resolution screens serif typefaces are fine for screen text; the older rule that sans-serif typefaces are preferable on screens came from lower-resolution displays that could not render serif details well.",
+      "claimType": "CURRENT",
+      "sourceIds": ["nng-legibility-readability-comprehension", "ixdf-typography"],
+      "status": "supported"
+    },
+    {
+      "claim": "Typography is expressive: typeface, size, weight, and spacing set a tone and can evoke feelings, which is why typography contributes to brand perception and user experience.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ixdf-typography"],
+      "status": "supported"
+    },
+    {
+      "claim": "Hierarchy through type arranges elements by importance — headings larger and often bolder than body text — so readers can see at a glance where to look first; font size, weight, and spacing are the main levers.",
+      "claimType": "EVERGREEN",
+      "sourceIds": ["ixdf-typography"],
+      "status": "supported"
+    },
+    {
+      "claim": "Beatrice Warde, a twentieth-century writer and scholar of typography, wrote the essay 'The Crystal Goblet,' famous for arguing that type should be transparent — like a crystal goblet — so readers notice the content rather than the letterforms; this is the idea behind 'good typography is invisible.'",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": ["wikipedia-beatrice-warde"],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Should body text on screens use serif or sans-serif typefaces?",
+      "positions": [
+        "Older guidance: sans-serif is preferable on screens because low-resolution displays cannot render serif details well.",
+        "Current guidance: on today's high-resolution screens serif type is fine, and the choice depends on tone, context, and audience rather than a fixed rule."
+      ],
+      "resolution": "The lesson teaches both sides honestly: each family has typical uses, and the old 'sans-serif only on screens' rule is tied to older display technology (NN/g 2015; IxDF)."
+    },
+    {
+      "issue": "How strictly should 'typeface' and 'font' be distinguished?",
+      "positions": [
+        "Strict design usage: the typeface is the design of the letterforms; the font is a specific weight, style, or instance within it.",
+        "Everyday usage: people say 'font' loosely for any typeface, and the two words are often treated as synonyms."
+      ],
+      "resolution": "The lesson teaches the strict distinction from the Interaction Design Foundation and notes that everyday speech uses 'font' loosely; no claim of universal usage is made."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's 'Typography is a foundational concept in UX/UI Design' — generic boilerplate with no source support.",
+    "The generated draft's 'College courses use typography as a building block for later discussions, assignments, and decisions' — generic boilerplate with no source support."
+  ],
+  "correctionsNeeded": [
+    "Replaced the machine-generated boilerplate with source-verified definitions, categories, and guidance.",
+    "Gave the readability section concrete, sourced guidance (size, line length, line height, contrast) instead of vague praise.",
+    "Added the typeface-versus-font distinction, which the generated draft did not teach.",
+    "Framed the 'good typography is invisible' idea with attribution to Beatrice Warde's essay rather than as an anonymous slogan."
+  ],
+  "rightsIssues": [
+    "All six sources are used as REFERENCE_ONLY: facts were synthesized into original prose, and no source wording was reproduced at length."
+  ],
+  "sourceRecords": [
+    {
+      "id": "nng-legibility-readability-comprehension",
+      "title": "Legibility, Readability, and Comprehension: Making Users Read Your Words",
+      "provider": "Nielsen Norman Group",
+      "url": "https://www.nngroup.com/articles/legibility-readability-comprehension/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Tier A industry reference. Defines legibility as whether people can see, distinguish, and recognize characters, noting it is mainly determined by typography; gives legibility guidelines (reasonably large default font size with user-adjustable size, high contrast between characters and background, clean typeface); states serif type is fine on today's high-resolution monitors; reports that on an average web-page visit users read only about 28% of the words and usually scan instead of read. Used for the legibility, size, contrast, screen-reading, and scanning claims."
+    },
+    {
+      "id": "uswds-typography",
+      "title": "Typography",
+      "provider": "U.S. Web Design System (USWDS)",
+      "url": "https://designsystem.digital.gov/components/typography/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Tier A U.S. government design system. Typesetting guidance: most lines of text should be 45-90 characters (measure), about 66 characters is a good target for long texts, and text with greater line height can have a longer measure; line height is a unitless multiplier of the font size (e.g. 1.5 on 16 px text gives 24 px) and longer texts require more line height; body copy should use at least an effective size of 16 px; the more readable a text is, the more easily users understand it. Used for the size, line-length, and line-height claims."
+    },
+    {
+      "id": "ixdf-typography",
+      "title": "What is Typography?",
+      "provider": "Interaction Design Foundation",
+      "url": "https://www.interaction-design.org/literature/topics/typography",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Tier B design-education encyclopedia. Working definition of typography as the art and technique of arranging type so written language is legible, readable, and appealing; explains the typeface-versus-font distinction ('you choose a typeface; you use a font'); defines serif and sans-serif; defines hierarchy as arranging elements by importance with font size, weight, and spacing among the levers; notes typography evokes feelings and contributes to brand perception. Used for the definition, distinction, categories, hierarchy, and expression claims."
+    },
+    {
+      "id": "mdn-text-font-styling",
+      "title": "Fundamental text and font styling",
+      "provider": "MDN Web Docs (Mozilla)",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Web documentation describing the generic font families — serif, sans-serif, monospace — with monospace noted as a fixed-width family typical for code. Used as supporting documentation for the typeface-categories claim."
+    },
+    {
+      "id": "wikipedia-display-typeface",
+      "title": "Display typeface",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Display_typeface",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Reference entry defining a display typeface as a face designed for use at large sizes, typically for headlines and posters rather than long body text. Used as supporting reference for the display-category part of the categories claim."
+    },
+    {
+      "id": "wikipedia-beatrice-warde",
+      "title": "Beatrice Warde",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Beatrice_Warde",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Read live 2026-08-21. Reference entry confirming that Beatrice Warde was a twentieth-century writer and scholar of typography and that her essay 'The Crystal Goblet' is her notable work, famous for the argument that type should be transparent so readers notice the content rather than the letterforms. Used for the 'good typography is invisible' framing; the essay's idea is paraphrased in original prose, not quoted."
+    }
+  ]
+}
