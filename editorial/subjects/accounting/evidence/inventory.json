@@ -1,0 +1,206 @@
+{
+  "topicId": "accounting:foundations:inventory",
+  "subjectId": "accounting",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "working definition of inventory: goods held for sale in the normal course of business, plus goods in production for that sale and the materials that go into them",
+      "the three types: raw materials, work in progress, finished goods",
+      "inventory as an asset until sold (balance-sheet placement)",
+      "counting and valuing inventory: physical counts, FIFO, LIFO, weighted average",
+      "the costs of inventory: holding costs, obsolescence, tied-up cash",
+      "inventory and the income statement: sold goods become cost of goods sold",
+      "honest framing: inventory is money sitting on shelves, neither too much nor too little"
+    ],
+    "supporting": [
+      "shrinkage (spoilage, theft, damage, miscounting)",
+      "periodic versus perpetual inventory systems",
+      "goods available for sale = beginning inventory + purchases",
+      "GAAP versus IFRS treatment of cost-flow methods (LIFO not permitted under IFRS)"
+    ],
+    "outOfScope": [
+      "the asset concept itself (sibling topic: assets)",
+      "expenses generally (sibling topic: expenses)",
+      "income statement construction (sibling topic: income-statement)",
+      "the supply-chain inventory view (owned by introduction-to-business)",
+      "inventory valuation errors and inventory ratios (advanced topics)",
+      "tax rules around LIFO and inventory methods (no tax advice)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Inventory is the stock of goods a business holds to sell to customers in the normal course of its operations; the international standard IAS 2 defines inventories as assets held for sale in the ordinary course of business, and US GAAP describes the same idea (goods the company means to sell).",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "ifrs-ias-2-inventories",
+        "openstax-intro-business-10-4-resource-planning",
+        "cfi-inventory"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Manufacturers hold three types of inventory: raw materials (inputs before work begins), work in progress (partially completed units), and finished goods (complete and ready for sale); a merchandiser's inventory is equivalent to finished goods.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "cfi-inventory",
+        "openstax-principles-accounting-10-1"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Unsold inventory is an asset reported on the balance sheet; when goods are sold their cost is reported as cost of goods sold, an expense on the income statement.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-principles-accounting-10-1",
+        "cfi-inventory",
+        "ifrs-ias-2-inventories"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Goods available for sale equals beginning inventory plus purchases during the period; sold goods become cost of goods sold and remaining goods become ending inventory, so the two always add back to goods available for sale.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openstax-principles-accounting-10-1",
+        "cfi-inventory"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The main cost-flow methods are FIFO (earliest purchases assumed sold first), LIFO (latest purchases assumed sold first), and weighted average (total cost divided by total units), plus specific identification for unique items; US GAAP permits them, while IFRS permits specific identification, FIFO, and weighted average but not LIFO.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "openstax-principles-accounting-10-1",
+        "cfi-inventory",
+        "ifrs-ias-2-inventories"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Carrying inventory costs money: holding costs (storage, insurance, handling), the risk of obsolescence, and cash tied up in goods that have not yet sold.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-intro-business-10-4-resource-planning",
+        "cfi-inventory"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Inventory records drift from reality through shrinkage — spoilage, theft, damage, or miscounting — which physical counts reveal.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "openstax-principles-accounting-10-1"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "For many companies inventory is a significant portion of current assets; OpenStax reports that in 2018 Walmart's inventory was roughly 70 percent of current assets and 21 percent of total assets.",
+      "claimType": "CURRENT",
+      "sourceIds": [
+        "openstax-principles-accounting-10-1"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Periodic inventory systems determine inventory values at the end of each period, while perpetual systems update values after every transaction; inventory is often the least liquid current asset.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "cfi-inventory"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether LIFO is an acceptable cost-flow method.",
+      "positions": [
+        "US GAAP permits LIFO; OpenStax notes the AICPA estimates roughly 35-40 percent of US companies use it.",
+        "IFRS does not permit LIFO; IAS 2 lists specific identification, FIFO, and weighted average as the cost formulas.",
+        "CFI notes some methods may be prohibited in certain countries under certain accounting standards."
+      ],
+      "resolution": "The lesson names FIFO, LIFO, and weighted average with one-line factual mechanics, and notes in a single sentence that IFRS does not permit LIFO. It offers no tax advice and takes no position on which method is better."
+    },
+    {
+      "issue": "Whether cost-flow methods describe the physical movement of goods.",
+      "positions": [
+        "OpenStax PoA 10.1: a company's cost allocation is based on estimates of cost flow and is unrelated to the actual flow of the physical inventory.",
+        "Everyday usage of 'first-in, first-out' often refers to physically rotating stock (e.g., perishables)."
+      ],
+      "resolution": "The lesson presents FIFO, LIFO, and weighted average strictly as costing assumptions and flags the physical-flow confusion in Common Mistakes."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's framing of inventory as 'a foundational concept' with no financial meaning (generic boilerplate).",
+    "The draft's toolbox-drawer analogy, which described a generic concept rather than inventory specifically."
+  ],
+  "correctionsNeeded": [
+    "Replaced all generic draft boilerplate with source-verified accounting content.",
+    "Defined inventory with the standards-based working definition (goods held for sale in the ordinary course of business).",
+    "Added the three inventory types with original examples (bakery flour, bicycle frame, shop-floor bikes).",
+    "Added the cost-flow methods with factual one-line mechanics and the IFRS LIFO restriction.",
+    "Replaced the draft's circular vocabulary definitions with independently defined terms."
+  ],
+  "rightsIssues": [
+    "OpenStax Principles of Accounting Vol 1 footer restricts AI ingestion and figures carry CC BY-NC-SA 4.0: used reference-only, no figures or passages reproduced.",
+    "CFI inventory page states no explicit license: reference-only.",
+    "IFRS Foundation standard page is copyrighted: reference-only, no wording reproduced."
+  ],
+  "sourceRecords": [
+    {
+      "id": "openstax-principles-accounting-10-1",
+      "title": "Principles of Accounting, Volume 1: Financial Accounting, Section 10.1: Describe and Demonstrate the Basic Inventory Valuation Methods and Their Cost Flow Assumptions",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/10-1-describe-and-demonstrate-the-basic-inventory-valuation-methods-and-their-cost-flow-assumptions",
+      "sourceType": "open-textbook",
+      "usage": "REFERENCE_ONLY",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A (open textbook). Read live via HTTP with a browser user-agent on 2026-08-21 (openstax.org serves the full page content in the initial HTML). Supports: inventory as a company asset of goods available for sale; raw-materials / work-in-process / finished-goods process levels for manufacturers, with a merchandiser's inventory equivalent to finished goods; unsold inventory reported as an asset on the balance sheet and sold goods as cost of goods sold on the income statement; goods available for sale = beginning inventory + purchases; the four costing methods (specific identification, FIFO, LIFO, weighted average) with one-line mechanics; weighted-average computation (total cost divided by total units); shrinkage (spoilage, theft, damage); the IFRS Connection note that IFRS does not permit LIFO while US GAAP does; Walmart 2018 inventory at roughly 70% of current assets and 21% of total assets. Facts restated in original prose; used reference-only because the OpenStax footer restricts AI ingestion."
+    },
+    {
+      "id": "cfi-inventory",
+      "title": "What Is Inventory? Raw Materials, WIP, & Finished Goods",
+      "provider": "Corporate Finance Institute (CFI)",
+      "url": "https://corporatefinanceinstitute.com/resources/accounting/inventory/",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B (reputable secondary). Verified live via HTTP on 2026-08-21 (record reused from the phase-2 source registry, identical URL). Supports: inventory as a current asset on the balance sheet consisting of all raw materials, work-in-progress, and finished goods a company has accumulated; finished goods as complete and ready for immediate sale; work-in-progress as partially completed units in production; raw materials as inputs on which work has not yet begun; ending inventory = beginning balance + purchases - cost of goods sold; the four calculation methods (FIFO, LIFO, weighted average, specific identification); periodic systems valuing at period end versus perpetual systems after every transaction; inventory as often the most illiquid current asset. Page states no explicit license, so REFERENCE_ONLY; facts restated in original prose."
+    },
+    {
+      "id": "openstax-intro-business-10-4-resource-planning",
+      "title": "Introduction to Business, 10.4 Pulling It Together: Resource Planning",
+      "provider": "OpenStax, Rice University",
+      "url": "https://openstax.org/books/introduction-business/pages/10-4-pulling-it-together-resource-planning",
+      "sourceType": "open-textbook",
+      "usage": "EXTRACT_AND_ADAPT",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": true,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A (open textbook). Verified live via HTTP on 2026-08-21 (record reused from the phase-2 source registry, identical URL). Supports: inventory as the supply of goods held for use in production or for sale to customers; the inventory trade-off (large inventories meet production and customer demand and earn quantity discounts, but tie up money, cost to store, and can become obsolete); the goal of keeping down holding costs while maintaining enough on hand. Only the definition and trade-off framing were used here; the supply-chain management view belongs to the introduction-to-business subject. Concepts adapted into original prose."
+    },
+    {
+      "id": "ifrs-ias-2-inventories",
+      "title": "IAS 2 Inventories",
+      "provider": "IFRS Foundation",
+      "url": "https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/",
+      "sourceType": "standards-body",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A (standards body). Read live via HTTP and cross-checked against an Internet Archive capture on 2026-08-21. Supports: IAS 2 as the international standard for determining the cost of inventories and the subsequent recognition of the cost as an expense; inventories measured at the lower of cost and net realisable value; cost assigned by specific identification for items that are not ordinarily interchangeable and by the first-in, first-out or weighted-average cost formula for interchangeable items; when inventories are sold, their carrying amount is recognized as an expense; the standard's use of 'ordinary course of business' in describing selling price. Standard text is copyrighted; used reference-only, no wording reproduced."
+    }
+  ]
+}

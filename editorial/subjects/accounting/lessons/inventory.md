@@ -1,0 +1,153 @@
+# Inventory
+
+## In 30 Seconds
+
+Inventory is the stock of goods a business holds to sell to customers in the normal course of its operations: raw materials, work in progress, and finished goods. Unsold inventory is an asset that sits on the balance sheet. When goods sell, their cost leaves inventory and becomes cost of goods sold on the income statement. Businesses count what is on hand and attach costs using methods like FIFO, LIFO, or weighted average. The honest truth: inventory is money sitting on shelves, and a business wants neither too much nor too little.
+
+## Why This Matters
+
+Inventory is where most businesses keep a large share of their money, so getting it right touches everything: reported profit, the balance sheet, and the cash available to pay bills. A company that overstocks can look healthy on paper while running short of cash; one that understocks loses sales it can never get back. Learning how inventory is counted and valued also unlocks the rest of accounting: cost of goods sold feeds the income statement, inventory feeds the balance sheet, and both feed the ratios analysts use to judge a business. Whether you run a shop, read financial statements, or invest, understanding inventory tells you where a company's money is actually sitting.
+
+## Learning Objectives
+
+- Define inventory using the working definition: goods held for sale in the normal course of business, plus goods in production for that sale and the materials that go into them.
+- Name the three main types of inventory — raw materials, work in progress, and finished goods — and give an original example of each.
+- Explain why unsold inventory is an asset and what happens to its cost when goods are sold.
+- Describe how businesses count and value inventory, including the cost-flow methods FIFO, LIFO, and weighted average.
+- Analyze the costs of carrying inventory — holding costs, obsolescence, and tied-up cash — and apply the framing that a business wants neither too much nor too little.
+
+## The College Version
+
+### What inventory is
+
+Inventory is the stock of goods a business holds to sell to customers in the normal course of its operations. The working definition used across accounting standards: goods held for sale in the ordinary course of business, plus goods being made for that sale and the materials that will go into them. The international standard IAS 2 defines inventories that way, and U.S. accounting under GAAP describes the same idea: goods the company means to sell. A bookstore's shelves of novels are inventory; the delivery truck that brings them is not. The word covers what a business has bought or made with the clear intention of selling it, not the tools and equipment it uses to run itself.
+
+### The three types of inventory
+
+Manufacturers typically hold three types of inventory, one for each stage of production. Raw materials are the basic inputs before any work touches them: the flour in a bakery's storeroom, the steel coils waiting at a factory gate. Work in progress is partly finished product, such as a bicycle frame with wheels fitted but no handlebars yet. Finished goods are complete and ready for sale, like the bikes lined up on a shop floor. Retailers, which buy goods to resell, usually hold only the finished-goods stage; a grocery store's entire inventory is finished goods in this sense. Each type sits at a different stage, so each carries a different value: a raw bolt is worth less than the finished chair it will become.
+
+### Inventory as an asset
+
+Until goods are sold, they are an asset — a resource the business owns that is expected to bring future benefit. OpenStax's Principles of Accounting puts it plainly: the unsold inventory at period end is an asset and appears on the balance sheet. Assets are their own topic; what matters here is where inventory sits. Accountants classify it as a current asset, because the business expects to sell it within a year, and for many companies it is one of the largest current assets of all — OpenStax notes that in 2018, Walmart's inventory was roughly 70 percent of its current assets. A box of goods awaiting sale is therefore part of what the business owns, right up until the sale happens.
+
+### Counting and valuing inventory
+
+How does a business know what it has? It counts. The general practice is a physical count of what is on hand, taken at least at the end of each period, then matched against the records. The matching matters because records drift: goods spoil, get damaged, are stolen, or are simply miscounted, and accountants call that gap shrinkage. Once the units are counted, the business attaches a cost to them. Because identical goods are often bought at different prices, accountants use cost-flow methods to decide which purchase price goes with which unit. FIFO (first-in, first-out) assumes the earliest purchases are sold first. LIFO (last-in, first-out) assumes the latest purchases are sold first. The weighted-average method values every unit at the average cost of all units on hand. All three are costing assumptions, not descriptions of how goods physically move through the warehouse. U.S. GAAP permits all of them; under IFRS, LIFO is not permitted.
+
+### The costs of holding inventory
+
+Inventory is not free to keep. Holding costs are the running expenses of storage: warehouse space, insurance, utilities, and the labor that handles the goods. Obsolescence is the quieter risk — products that sit too long go stale, out of fashion, or technically outdated, and a box nobody will buy is worth less than what the business paid for it. Then there is tied-up cash: every dollar sitting on a shelf is a dollar that cannot pay the rent, cover payroll, or fund the next order. OpenStax's introduction to business text summarizes the trade-off: large inventories meet customer demand and earn quantity discounts, but they tie up money, cost money to store, and can become obsolete.
+
+### Inventory and the income statement
+
+Inventory connects the balance sheet to the income statement through one simple mechanism. Unsold goods stay on the balance sheet as an asset. Sold goods leave inventory, and their cost becomes cost of goods sold, an expense on the income statement. Accountants track the flow with a simple identity: goods available for sale equals beginning inventory plus everything purchased during the period. What the business sold becomes cost of goods sold; what remains is ending inventory, and the two always add back to goods available for sale. That is why an accurate count matters: if the ending count is wrong, cost of goods sold — and therefore reported profit — is wrong too. The income statement is its own topic; the mechanism to remember is that a sale moves value from the balance-sheet asset into an income-statement expense.
+
+### The honest framing
+
+Here is the honest way to think about inventory: it is money sitting on shelves. A box of goods is cash converted into a promise — the promise that a customer will buy it later, usually at a price above what it cost. The business wants neither too much nor too little. Too little means empty shelves, lost sales, and customers who walk to a competitor. Too much means cash trapped in a warehouse, storage bills that keep arriving, and goods that may never sell at full price. Inventory management is the art of guessing right: enough to serve customers, never so much that the money stops working.
+
+## Key Vocabulary
+
+- **Inventory** — The stock of goods a business holds to sell to customers in the normal course of its operations, including items still being made and the materials that go into them.
+- **Raw materials** — The basic materials a business buys to make its products, before any work has been done on them.
+- **Work in progress** — Partly finished goods that are still moving through production and are not yet ready to sell.
+- **Finished goods** — Completed products that are ready to be sold to customers.
+- **Cost of goods sold** — The cost of the inventory a business actually sold during a period, reported as an expense on the income statement.
+- **FIFO** — First-in, first-out: a cost-flow method that assumes the earliest purchased items are the first ones sold.
+- **LIFO** — Last-in, first-out: a cost-flow method that assumes the latest purchased items are the first ones sold.
+- **Weighted average cost** — A cost-flow method that values items at the average cost of all units on hand, dividing total cost by total units.
+- **Holding costs** — The ongoing expenses of keeping inventory, such as storage space, insurance, and the risk of damage or spoilage.
+- **Shrinkage** — The loss of inventory through theft, damage, spoilage, or miscounting that makes the physical count lower than the records.
+
+## Eli-10
+
+Inventory is the stuff a business bought or made so it can sell it later. Until the customer buys it, that stuff is an asset: it sits on the balance sheet as something the business owns. The moment it sells, its cost stops being an asset and becomes an expense on the income statement, called cost of goods sold. Three questions matter for any box in the warehouse: how many are there? (count it), what did it cost? (pick a cost-flow method), and is it still worth that? (if it is obsolete, the honest answer is no). Businesses that answer those three questions well keep customers fed without burying their cash in stock.
+
+## Eli's Analogy
+
+Think of inventory as a household pantry. You keep enough food to feed the family for the week and restock before the shelves go bare. If you overbuy, the cans gather dust, the bread goes stale, and your grocery money sits stuck in the cupboard instead of doing anything useful. If you underbuy, dinner is late and someone goes hungry. A business runs its inventory the same way, stocking what it expects to sell at a price that covers what it paid.
+
+Where the analogy breaks down: a pantry feeds one household; a business's inventory is valued in dollars, counted against its records, and reported to investors and lenders. Families do not put a price on last week's pasta and argue about which costing method to use, but businesses must, because the number changes reported profit. A pantry can hold food for months with little harm, while business inventory starts costing money the moment it is bought: storage, insurance, and the risk of obsolescence. And a household never has to explain an empty shelf to a shareholder; a business that runs out of goods has lost sales it may never recover.
+
+## Worked Example
+
+Riverside Cycles opens January with no bikes on hand. In January it buys 10 bikes at $200 each ($2,000), and in February another 10 at $220 each ($2,200), so goods available for sale total $4,200. February's physical count finds 8 bikes left, meaning 12 were sold at $300 each — $3,600 of revenue. Under FIFO, the 12 sold bikes are costed as the 10 earliest at $200 plus 2 at $220: cost of goods sold is $2,440, and the 8 remaining bikes are valued at $1,760. Under weighted average, each bike costs $210 ($4,200 divided by 20), so cost of goods sold is $2,520 and ending inventory $1,680. Same shelves, same count, two defensible profit figures — which is why the chosen method matters.
+
+## Common Mistakes
+
+- **Treating unsold inventory as an expense already paid.** Unsold goods are an asset while they await sale; the expense appears only when the goods are sold, as cost of goods sold.
+- **Thinking FIFO and LIFO describe how goods physically move.** They are costing assumptions about which purchase price goes with which sale; the actual boxes may leave the shelf in any order.
+- **Reading a full warehouse as a sign of health.** A full warehouse can be a warning: cash tied up, storage bills growing, and goods aging toward obsolescence.
+- **Trusting the records without ever counting.** Physical counts catch shrinkage — theft, damage, spoilage, and miscounting — that the records never show.
+- **Confusing the three types of inventory.** Raw materials, work in progress, and finished goods are different stages with different values; mixing them up distorts what the business actually has.
+
+## Compare / Contrast
+
+- **FIFO vs LIFO** — FIFO assumes the earliest-purchased goods are sold first; LIFO assumes the latest-purchased goods are sold first. Both are costing assumptions, and neither describes how the goods physically leave the shelf.
+- **Physical count vs Perpetual tracking** — A periodic physical count values inventory at the end of a period; perpetual systems update the value after every purchase and sale. The physical count stays important either way, because records drift.
+- **Inventory vs Cost of goods sold** — Inventory is the unsold portion of goods available for sale, an asset on the balance sheet; cost of goods sold is the sold portion, an expense on the income statement. The same purchases split between the two.
+
+## Key Takeaway
+
+Inventory is an asset while it sits unsold, becomes cost of goods sold the moment it is sold, and is really money sitting on shelves — enough to serve customers, never so much that cash is trapped.
+
+## Practice Question Bank
+
+1. **Under the FIFO cost-flow method, which items does the business assume it sells first?**
+   - The most recently purchased items
+   - The earliest purchased items
+   - The most expensive items on hand
+   - A random sample of the items on hand
+   - *Answer: The earliest purchased items. FIFO stands for first-in, first-out: the business assumes the earliest purchased items are sold first, so the latest purchases remain in ending inventory. The other options describe LIFO, a different rule, or no rule at all.*
+
+2. **A bakery buys 100 bags of flour at $10 each, then another 100 bags at $12 each, and uses 120 bags. Under FIFO, what total cost is assigned to the flour used?**
+   - $1,200
+   - $1,320
+   - $1,240
+   - $1,160
+   - *Answer: $1,240. Under FIFO the earliest purchase is used first: 100 bags at $10 ($1,000) plus the next 20 bags at $12 ($240) totals $1,240. The $1,200 option prices all bags at $10, $1,320 prices all 120 at the $11 average, and $1,160 matches no cost-flow rule.*
+
+3. **Where do unsold goods appear on a company's financial statements?**
+   - As an asset on the balance sheet
+   - As an expense on the income statement
+   - As a liability on the balance sheet
+   - As revenue on the income statement
+   - *Answer: As an asset on the balance sheet. Unsold inventory is an asset, so it is reported on the balance sheet; only when goods are sold does their cost become the expense called cost of goods sold. Revenue records the selling price, not the goods themselves, and a liability is something the business owes.*
+
+4. **A clothing store's winter coats are still unsold in April. Which cost of inventory does this situation most directly illustrate?**
+   - Holding costs
+   - Tied-up cash
+   - Cost of goods sold
+   - Obsolescence
+   - *Answer: Obsolescence. Coats sitting past their season are aging toward obsolescence: goods that may soon sell only at a markdown or not at all. Holding costs and tied-up cash also accompany stored goods, but the seasonal mismatch is the clearest sign of the obsolescence risk, and cost of goods sold arises only when goods actually sell.*
+
+5. **At year end, a hardware store physically counts 340 hammers, but its records say 350 should be on hand. What does the difference most likely represent?**
+   - A profit the store can report immediately
+   - Inventory shrinkage — goods lost to theft, damage, or miscounting
+   - A debt the store owes its suppliers
+   - A discount the store earned from its supplier
+   - *Answer: Inventory shrinkage — goods lost to theft, damage, or miscounting. When the physical count falls short of the records, the gap is shrinkage: goods lost to theft, damage, spoilage, or errors in counting and recording. The difference is a loss of goods, not revenue, not a debt, and not a purchase discount.*
+
+## Sources
+
+- OpenStax, Rice University — Principles of Accounting, Volume 1: Financial Accounting, Section 10.1 (Describe and Demonstrate the Basic Inventory Valuation Methods and Their Cost Flow Assumptions). CC BY 4.0. Reference only (footer restricts AI ingestion). https://openstax.org/books/principles-financial-accounting/pages/10-1-describe-and-demonstrate-the-basic-inventory-valuation-methods-and-their-cost-flow-assumptions
+- OpenStax, Rice University — Introduction to Business, Section 10.4 (Pulling It Together: Resource Planning). CC BY 4.0. https://openstax.org/books/introduction-business/pages/10-4-pulling-it-together-resource-planning
+- IFRS Foundation — IAS 2 Inventories. Reference only. https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/
+- Corporate Finance Institute — What Is Inventory? Raw Materials, WIP, & Finished Goods. Reference only. https://corporatefinanceinstitute.com/resources/accounting/inventory/
+
+## Related Topics
+
+- Assets (accounting:foundations:assets)
+- Expenses (accounting:foundations:expenses)
+- Income Statement (accounting:foundations:income-statement)
+- Balance Sheet (accounting:foundations:balance-sheet)
+- Accounting Equation (accounting:foundations:accounting-equation)
+
+## Editorial Metadata
+
+- Topic ID: accounting:foundations:inventory
+- Subject: accounting, Unit: foundations
+- Editorial status: READY_TO_PUBLISH
+- Research status: source-verified (researched 2026-08-21)
+- Rights: reference-only sources (OpenStax PoA Vol 1 footer restricts AI ingestion; IFRS page copyrighted; CFI no explicit license); OpenStax Intro to Business concepts adapted under CC BY 4.0; all prose original
+- Project: EliExplains original synthesis

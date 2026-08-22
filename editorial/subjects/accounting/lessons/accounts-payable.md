@@ -1,0 +1,148 @@
+# Accounts Payable
+
+## In 30 Seconds
+
+Accounts payable is the money a business owes to suppliers for goods or services it has already received. It arises when a business buys on credit — the supplier delivers now and the payment comes later, usually within 30 days. Payables are liabilities: promises to pay that sit on the balance sheet. Paying them on time keeps supplier trust and keeps credit flowing. When a business owes a supplier, that is accounts payable; when customers owe the business, that is accounts receivable.
+
+## Why This Matters
+
+Nearly every business buys something before it can pay for it — ingredients, parts, software, office space — and that makes accounts payable one of the most common obligations on a balance sheet. Understanding payables matters because they are real promises with real deadlines: a business that misses them loses supplier trust, and a supplier that stops shipping can stop a business overnight. Payables also matter for reading financial health, since the total owed to suppliers shows how much cash a business will need soon. And the contrast with accounts receivable — what you owe versus what you are owed — is where many people first learn to tell a balance sheet from a wish list.
+
+## Learning Objectives
+
+- Define accounts payable as money a business owes to suppliers for goods or services it has already received, and explain how buying on credit creates it.
+- Explain why accounts payable is a liability — an obligation to pay — and where it sits on the balance sheet.
+- Read common payment terms such as net 30 and explain what they require of the business.
+- Distinguish accounts payable, money the business owes, from accounts receivable, money owed to the business.
+- Evaluate how paying suppliers on time builds trust and keeps credit available.
+
+## The College Version
+
+### What accounts payable is
+
+Accounts payable is the money a business owes to suppliers for goods or services it has already received. The working definition used in this lesson comes from standard accounting texts: OpenStax's Principles of Accounting describes accounts payable as the financial obligations owed to suppliers after purchasing products or services on credit. Three features matter. The goods or services have already arrived — the business is not paying for a promise, it is paying for something in hand. The payment has not happened yet. And the amount is specific — an invoice, not a guess. A bakery that receives flour on Tuesday and pays the mill on Friday has accounts payable between those two moments. Once the payment goes out, the payable is gone. What remains is the everyday engine of supplier credit: receive now, pay later, record the obligation the whole time.
+
+### How accounts payable arises: buying on credit
+
+Accounts payable is born the moment a business buys on credit from a supplier. Buying on credit means the supplier delivers the goods or service now and agrees to be paid later, usually within a set number of days. The supplier documents the arrangement with an invoice that lists what was purchased, the amount owed, the invoice date, and the payment terms. Take an original example: Riverline Cycling Supply ships 40 inner tubes and 12 helmets to Harbor Bikes, a repair shop, and sends an invoice for $1,860 with net 30 terms. Harbor Bikes now has the parts on its shelves and a $1,860 obligation on its books. The supplier extended credit because it expects to be paid; the shop accepted the obligation because it needs parts before it has the cash to spare. That trade — inventory now, payment later — is how payables appear in nearly every business.
+
+### Payables are liabilities
+
+Every accounts payable is a liability: an obligation to pay, created by something the business has already done. A liability is a present obligation that will be settled in the future, and the full treatment belongs to the sibling topic accounting:foundations:liabilities; this lesson references it rather than covering it. Here the point is placement. Because payables are due within a year — typically within 30 or 60 days — they are current liabilities, and they sit on the balance sheet among the obligations the business must settle soon. Lenders and investors read that number to see how much cash the business will need in the near term. An unpaid supplier bill is not a vague intention; it is a promise with a deadline, and accounting records it the moment the goods arrive, not the moment cash leaves.
+
+### Payment terms: net 30 and friends
+
+Suppliers and buyers agree on payment terms, and the invoice states them. The most common is net 30: the full amount is due 30 days after the invoice date. Relatives include net 60 and net 90 for larger or slower-moving orders. A common variant adds an early-payment discount: 2/10, n/30 means the buyer may subtract 2% if it pays within 10 days, otherwise the net amount is due in 30. OpenStax explains the notation — the 2 is the discount rate, the 10 is the discount period in days, and n/30 means the payment period without the discount. Paying inside the discount window saves real money, and paying within the net window keeps the relationship clean. Missing the deadline entirely changes the relationship: suppliers may add late fees, tighten terms, or demand cash on delivery.
+
+### Managing payables: paying on time, keeping trust
+
+Managing payables is mostly calendar discipline. A business knows every invoice's amount and due date, schedules payments so nothing slips, and watches its cash so the money is there when the date arrives. The reward for paying on time is trust, and trust is the currency of supplier credit. Suppliers who are paid on time keep offering good terms, keep shipping, and may extend more credit as the relationship grows. The risk of paying late is compounding: a supplier that gets burned once may tighten terms; a supplier burned twice may stop shipping or demand payment upfront. Because payables are usually the largest short-term obligation on a small business's books, late payments can ripple — a single missed deadline can break a supply line that took years to build. Recorded carefully and paid on schedule, payables are a routine, manageable part of running a business.
+
+### Payable versus receivable, and the honest view
+
+Accounts payable and accounts receivable are mirror images, and the difference is a matter of direction. Accounts payable is what the business owes its suppliers — money leaving later for goods already received. Accounts receivable is what customers owe the business — money arriving later for goods already delivered; that is the sibling topic accounting:foundations:accounts-receivable, referenced here only. A print shop that owes its paper supplier $800 for last month's order has $800 in accounts payable; the same shop waiting on a $300 payment from a customer for a wedding album has $300 in accounts receivable. Confusing the two turns a balance sheet backwards. The honest framing, finally, is that payables are promises — obligations the business made and must keep. They are tracked as carefully as sales because a promise, once made, does not quietly go away. Suppliers, lenders, and investors all read those promises, and the business that keeps them keeps the credit flowing.
+
+## Key Vocabulary
+
+- **Accounts payable** — Money a business owes to suppliers for goods or services it has already received on credit.
+- **Supplier** — A business or person that sells goods or services to another business.
+- **Credit** — An arrangement in which a buyer receives goods or services now and promises to pay later.
+- **Invoice** — The supplier's bill listing what was purchased, the amount owed, and the payment terms.
+- **Payment terms** — The agreed conditions for paying an invoice, including the deadline for full payment.
+- **Net 30** — A payment term meaning the full amount is due 30 days after the invoice date.
+- **Current liability** — An obligation due within one year, such as an unpaid supplier bill.
+- **Accounts receivable** — Money customers owe the business for goods or services already delivered.
+
+## Eli-10
+
+Accounts payable is the tab a business runs with its suppliers. When a supplier delivers flour, bike parts, or software and the business does not pay on the spot, the unpaid amount becomes accounts payable. The goods are already in the door — only the payment is waiting. The business has promised to pay, and accounting treats that promise as a real obligation, not an option.
+
+## Eli's Analogy
+
+Think of a corner shop that lets you take a loaf of bread today and put it on your tab. You have the bread; the shop does not. The promise to pay is the tab. A business runs the same tab with its suppliers, except the tab has a name — accounts payable — and the shop keeps the record straight with an invoice saying exactly what is owed and when.
+
+Where the analogy stops: The analogy stops where scale begins. A corner shop's tab is informal and small, while a business's payables are tracked in ledgers, carry written terms, and can reach thousands or millions. A neighborly shopkeeper may shrug at a late loaf; a supplier may charge interest, stop shipping, or demand cash on delivery. And unlike a friendly tab, payables appear on financial statements where lenders and investors can see every promise.
+
+## Worked Example
+
+Marco owns Harbor Bikes, a repair shop that also sells parts. On June 3, he ordered 40 inner tubes and 12 helmets from Riverline Cycling Supply on credit. Riverline shipped the order and invoiced him for $1,860 with terms of net 30. On June 8 he ordered a $410 box of brake pads from the same supplier under the same terms. By June 30, Harbor Bikes owed Riverline $2,270 across two unpaid invoices — its accounts payable balance. The first invoice is due July 3, the second July 8. Marco's bookkeeper records the total as a current liability on the balance sheet and schedules both payments so neither goes past its deadline. If he paid late, Riverline could tighten his terms to cash on delivery, which would force him to tie up his own cash.
+
+## Common Mistakes
+
+- **Calling any unpaid bill accounts payable.** Only goods or services already received count. A purchase order for next month's parts is a plan, not a payable.
+- **Treating accounts payable as an expense.** The flour used in today's bread is an expense; the unpaid flour bill is a liability. An unpaid cost can be both, but they are different ideas — and the payable is settled by paying, not by using the goods.
+- **Forgetting what the payment terms say.** Net 30 is not 'sometime next month'; it is 30 days from the invoice date. Miss the date and suppliers may charge late fees, tighten terms, or stop shipping.
+- **Confusing payable with receivable.** Accounts payable is what the business owes suppliers; accounts receivable is what customers owe the business. Flipping them makes a balance sheet read backwards.
+
+## Compare / Contrast
+
+- **Accounts payable vs. accounts receivable** — Payable is money the business owes its suppliers for goods already received; receivable is money customers owe the business for goods already delivered. One is an outflow waiting to happen, the other an inflow.
+- **A payable vs. an expense** — A payable is an amount owed; an expense is a cost incurred. They overlap when a cost is incurred but not yet paid — that amount is both — but paying the bill settles the payable, it does not create the expense. (Expenses have their own lesson in this course.)
+- **Net 30 vs. 2/10, n/30** — Net 30 is a plain deadline: full payment in 30 days. The discount variant rewards speed: pay within 10 days and take 2% off; otherwise the net amount is due in 30.
+
+## Key Takeaway
+
+Accounts payable is the money a business owes to suppliers for goods and services it has already received — a promise to pay, tracked as carefully as any sale. Pay it on time, and suppliers keep extending credit; ignore it, and the promise — and the supply — can disappear.
+
+## Practice Question Bank
+
+1. **What is accounts payable?**
+   - A. Money a business owes to suppliers for goods or services it has already received.
+   - B. Money customers owe the business for goods or services already delivered.
+   - C. The value of the inventory sitting on a business's shelves.
+   - D. Cash the owner has invested in the business this year.
+   - **Answer: A.** Accounts payable is the money owed to suppliers for goods or services already received on credit. Money customers owe is accounts receivable, inventory is an asset, and owner investment is equity.
+
+2. **A bakery receives flour on credit with terms of net 30. When must the bakery pay the full amount?**
+   - A. Immediately, when the flour is delivered.
+   - B. Within 30 days of the end of the month in which the flour was delivered.
+   - C. Within 30 days of the invoice date.
+   - D. By the end of the bakery's fiscal year.
+   - **Answer: C.** Net 30 means the full amount is due 30 days after the invoice date. The flour was already received, so the obligation exists now; the term only sets the deadline.
+
+3. **Riverline Supply ships $1,860 of bike parts to Harbor Bikes on credit and sends an invoice. How should Harbor Bikes record the $1,860 until it pays?**
+   - A. As sales revenue on its income statement.
+   - B. As accounts payable, a current liability on its balance sheet.
+   - C. As accounts receivable on its balance sheet.
+   - D. As owner's equity in the business.
+   - **Answer: B.** The unpaid amount is accounts payable — an obligation to pay a supplier, recorded as a current liability because it is due within a year. Revenue is not earned by receiving parts, and receivable would mean someone owes the business.
+
+4. **A print shop owes its paper supplier $800 for last month's order, and a customer owes the print shop $300 for a wedding album already delivered. Which statement is correct?**
+   - A. The $800 is accounts receivable and the $300 is accounts payable.
+   - B. Both amounts are accounts payable.
+   - C. Both amounts are accounts receivable.
+   - D. The $800 is accounts payable and the $300 is accounts receivable.
+   - **Answer: D.** Money the business owes a supplier is accounts payable ($800); money a customer owes the business for delivered goods is accounts receivable ($300). The direction of the obligation decides the account.
+
+5. **Why does paying a supplier on time matter to a business beyond avoiding late fees?**
+   - A. Because on-time payment keeps the supplier's trust, so credit terms stay available and shipments keep coming.
+   - B. Because late payment converts the payable into revenue.
+   - C. Because suppliers legally must forgive a debt after one late payment.
+   - D. Because payables disappear from the balance sheet once a payment is late.
+   - **Answer: A.** On-time payment preserves trust, and trust is what keeps suppliers offering credit and shipping goods. A late payment does not change the account's nature — the payable stays until paid — and suppliers do not forgive debts; they may tighten terms or stop shipping.
+
+## Sources
+
+- OpenStax, Rice University — Principles of Accounting, Volume 1: Financial Accounting, Section 12.1: Identify and Describe Current Liabilities. https://openstax.org/books/principles-financial-accounting/pages/12-1-identify-and-describe-current-liabilities
+- OpenStax, Rice University — Principles of Accounting, Volume 1: Financial Accounting, Section 6.1: Compare and Contrast Merchandising versus Service Activities and Transactions. https://openstax.org/books/principles-financial-accounting/pages/6-1-compare-and-contrast-merchandising-versus-service-activities-and-transactions
+- Corporate Finance Institute (CFI) — Current Liabilities. https://corporatefinanceinstitute.com/resources/accounting/current-liabilities/
+- U.S. Securities and Exchange Commission, Investor.gov — Glossary (Liability/Debt entry). https://www.investor.gov/introduction-investing/investing-basics/glossary
+
+All sources read live on 2026-08-21 and used as reference only; all definitions and examples in this lesson are original prose.
+
+## Related Topics
+
+- accounting:foundations:liabilities
+- accounting:foundations:accounts-receivable
+- accounting:foundations:expenses
+- accounting:foundations:balance-sheet
+- accounting:foundations:accounting-equation
+
+## Editorial Metadata
+
+- Topic ID: accounting:foundations:accounts-payable
+- Editorial status: READY_TO_PUBLISH
+- Research status: source-verified (OpenStax Vol 1 sections 12.1 and 6.1; SEC Investor.gov glossary; CFI Current Liabilities)
+- Rights status: reference-only synthesis; no source wording adapted
+- Researched: 2026-08-21
+- Literacy level: general
