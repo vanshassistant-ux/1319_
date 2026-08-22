@@ -39,4 +39,4 @@ Protection: Financial Scams, Identity Theft, Consumer Protection.
 - Shared-attribution REUSE recurring across subjects (checking/savings CFPB+FDIC descriptions: 104 shared 8-grams; SEC Investor.gov attribution in the 4 investing lessons) — fixed with per-lesson distinct phrasings; md-only variants chased individually.
 - Retry pattern 3x in one batch (mortgages, debt-management, life-insurance-basics): research-complete handoffs resumed with embedded verified source sets, all passed first-run (api_calls 12-26).
 - All arithmetic independently verified: interest ($2,000 × 6% × 3 = $360; $3,000 × 4% × 1.5 = $180), compound growth ($1,000 @ 7% × 10yr = $1,967.15; rule of 72 ≈ 10.3 yr), mortgage amortization ($216,000 @ 6.5%/30yr ≈ $1,365/mo), auto-loan payments ($16,000 @ 6% ≈ $309/mo/60mo), student loan ($8,000 @ 5% → $600 accrued, ~$91/mo).
-- Global progress: **1025/1299 (78.90%), 34/44 subjects.**
+- Global progress: **1005/1299 (77.37%), 34/44 subjects.**
