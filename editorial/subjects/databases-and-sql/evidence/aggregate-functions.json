@@ -1,0 +1,194 @@
+{
+ "topicId": "databases-and-sql:foundations:aggregate-functions",
+ "subjectId": "databases-and-sql",
+ "researchedAt": "2026-08-21",
+ "scope": {
+  "core": [
+   "Working definition of an aggregate function, attributed: PostgreSQL says aggregate functions compute a single result from a set of input values; W3Schools says an aggregate function performs a calculation on a set of values and returns a single value; the working definition is 'combines many rows into one summary value'",
+   "The big five: COUNT (how many rows), SUM (total of a numerical column), AVG (average value of a numerical column), MIN (smallest value), MAX (largest value) \u2014 W3Schools' one-line descriptions, each with an original example on a scores table",
+   "The basic shape: SELECT COUNT(*) FROM table; counts rows (PostgreSQL: 'computes the number of input rows'; SQLite: 'returns the total number of rows in the group'), with an original example",
+   "Aggregates and NULLs, the honest note: aggregate functions ignore null values except for COUNT(*) (W3Schools); PostgreSQL documents sum/avg/min/max as computing over non-null input values; COUNT(column) vs COUNT(*) distinction",
+   "Aggregates + WHERE: filter first, then summarize \u2014 combined shape SELECT AVG(points) FROM scores WHERE subject = 'algebra'; per W3Schools' syntax SELECT COUNT(column_name) FROM table_name WHERE condition; WHERE mechanics owned by the where lesson (reference only)",
+   "Aggregates + GROUP BY: one summary per group \u2014 W3Schools: aggregate functions are often used with the GROUP BY clause, which splits the result-set into groups; group-by mechanics owned by the group-by lesson (reference only)",
+   "Honest framing: aggregates turn thousands of rows into one useful number, deliberately hiding the variation behind the summary"
+  ],
+  "supporting": [
+   "An aggregate returns a single value, not one row per input row",
+   "COUNT(column) counts non-null values while COUNT(*) counts rows \u2014 the two can differ",
+   "SUM and AVG expect numeric columns (W3Schools: 'numerical column'); MIN and MAX work on any sortable values (PostgreSQL: numeric, string, date/time, enum types)",
+   "The asterisk inside COUNT(*) means 'count the rows', not 'all columns' as in a plain SELECT"
+  ],
+  "outOfScope": [
+   "GROUP BY mechanics (own topic: group-by)",
+   "SELECT mechanics (own topic: select)",
+   "WHERE mechanics (own topic: where)",
+   "HAVING, DISTINCT inside aggregates, window functions, vendor-specific aggregates",
+   "NULL as a data concept (own topic: data-types)"
+  ]
+ },
+ "claims": [
+  {
+   "claim": "PostgreSQL's documentation defines aggregate functions in one sentence: aggregate functions compute a single result from a set of input values \u2014 the attributed working definition of an aggregate as many rows in, one summary value out.",
+   "claimType": "EVERGREEN",
+   "sourceIds": [
+    "postgresql-aggregate-functions"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "W3Schools defines an aggregate function as a function that performs a calculation on a set of values and returns a single value, and names MIN, MAX, COUNT, SUM, and AVG as the most commonly used SQL aggregate functions with one-line descriptions (smallest value, largest value, number of rows in a set, sum of a numerical column, average value of a numerical column).",
+   "claimType": "EVERGREEN",
+   "sourceIds": [
+    "w3schools-sql-aggregate-functions"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "COUNT(*) counts rows: PostgreSQL documents count(*) as computing the number of input rows, and SQLite says the count(*) function returns the total number of rows in the group; the basic aggregate shape is SELECT COUNT(*) FROM table;.",
+   "claimType": "TECHNICAL",
+   "sourceIds": [
+    "postgresql-aggregate-functions",
+    "sqlite-lang-aggfunc"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "Aggregates ignore NULLs, mostly: W3Schools states that aggregate functions ignore null values except for COUNT(*); PostgreSQL describes sum, avg, min, and max as computed over non-null input values and count(any) as counting the input rows in which the input value is not null.",
+   "claimType": "TECHNICAL",
+   "sourceIds": [
+    "w3schools-sql-aggregate-functions",
+    "postgresql-aggregate-functions"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "SQLite documents the same NULL behavior: the avg() function returns the average value of all non-NULL X within a group, the count(X) function returns a count of the number of times that X is not NULL in a group, and count(*) counts all rows \u2014 so COUNT(column) and COUNT(*) can return different numbers.",
+   "claimType": "TECHNICAL",
+   "sourceIds": [
+    "sqlite-lang-aggfunc"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "Aggregates combine with WHERE by filtering first and then summarizing: W3Schools' COUNT/AVG/SUM reference shows the syntax SELECT COUNT(column_name) FROM table_name WHERE condition, so the WHERE condition decides which rows the aggregate sees; WHERE mechanics belong to the where lesson.",
+   "claimType": "TECHNICAL",
+   "sourceIds": [
+    "w3schools-sql-count-avg-sum"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "Aggregates pair with GROUP BY for per-group summaries: W3Schools states that aggregate functions are often used with the GROUP BY clause of the SELECT statement, and that GROUP BY splits the result-set into groups of values so the aggregate returns a single value for each group; group-by mechanics belong to the group-by lesson.",
+   "claimType": "EVERGREEN",
+   "sourceIds": [
+    "w3schools-sql-aggregate-functions"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "SUM and AVG work on numeric columns while MIN and MAX work on any sortable values: W3Schools describes SUM as the sum of a numerical column and AVG as the average value of a numerical column, and PostgreSQL documents min and max as available for numeric, string, date/time, and enum types.",
+   "claimType": "TECHNICAL",
+   "sourceIds": [
+    "w3schools-sql-aggregate-functions",
+    "postgresql-aggregate-functions"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "Honest framing: because an aggregate collapses many rows into one value, detail is lost on purpose \u2014 a summary number answers the question asked but cannot show the variation behind it; an interpretive framing built on the collapse semantics documented by PostgreSQL ('a single result from a set of input values') and W3Schools ('returns a single value').",
+   "claimType": "INTERPRETIVE",
+   "sourceIds": [
+    "postgresql-aggregate-functions",
+    "w3schools-sql-aggregate-functions"
+   ],
+   "status": "supported"
+  }
+ ],
+ "conflictingEvidence": [
+  {
+   "issue": "NULL handling is stated as a blanket rule by W3Schools ('aggregate functions ignore null values (except for COUNT(*))') but as per-function wording by PostgreSQL and SQLite ('non-null input values', 'non-NULL X within a group').",
+   "positions": [
+    "W3Schools: aggregates ignore null values except for COUNT(*)",
+    "PostgreSQL: sum/avg/min/max compute over non-null input values; count(any) counts rows where the input is not null",
+    "SQLite: avg() averages all non-NULL X in a group; count(X) counts non-NULL X; count(*) counts all rows"
+   ],
+   "resolution": "All three describe the same behavior. The lesson uses W3Schools' blanket statement as the honest note, adds PostgreSQL's and SQLite's per-function detail, and teaches the COUNT(*) exception explicitly, since COUNT(*) counts rows rather than values."
+  },
+  {
+   "issue": "W3Schools' big-five list describes COUNT() as 'returns the number of rows in a set', which reads like a pure row count, while PostgreSQL and SQLite document COUNT(column) as counting non-null values only.",
+   "positions": [
+    "W3Schools: COUNT() returns the number of rows in a set",
+    "PostgreSQL: count(any) computes the number of input rows in which the input value is not null",
+    "SQLite: count(X) counts the times X is not NULL; count(*) counts all rows"
+   ],
+   "resolution": "The lesson teaches the distinction explicitly: COUNT(*) counts rows, COUNT(column) counts non-null values, and the two can differ when values are missing. All original examples were executed against SQLite to confirm the results (8 rows, SUM 644, AVG 80.5, MIN 65, MAX 95; count(*) counts a NULL row while count(column) skips it)."
+  }
+ ],
+ "unsupportedExistingClaims": [
+  "The generated draft called aggregate functions 'a foundational concept in Databases & Sql' without stating what an aggregate function does",
+  "The draft's toolbox-drawer analogy ('a label on a toolbox drawer') was generic boilerplate with no source support and was discarded",
+  "The draft's learning objectives and questions tested generic study skills (memorizing definitions, using context) rather than any aggregate-function content"
+ ],
+ "correctionsNeeded": [
+  "Replaced the generic draft with a working definition attributed to PostgreSQL ('compute a single result from a set of input values') and W3Schools ('performs a calculation on a set of values, and returns a single value')",
+  "Added the big five with W3Schools' one-line descriptions and original examples verified by executing the queries against SQLite",
+  "Added the verified NULL rule (aggregates ignore null values except for COUNT(*)) with the COUNT(column) vs COUNT(*) distinction from SQLite and PostgreSQL",
+  "Added the filter-first combined shape for aggregates + WHERE, keyed to W3Schools' SELECT COUNT(column_name) FROM table_name WHERE condition syntax, with WHERE and GROUP BY referenced as sibling topics",
+  "All SQL examples rewritten as original queries; arithmetic and NULL behavior confirmed by running every query in SQLite before publication"
+ ],
+ "rightsIssues": [],
+ "sourceRecords": [
+  {
+   "id": "w3schools-sql-aggregate-functions",
+   "title": "SQL Aggregate Functions",
+   "provider": "W3Schools",
+   "url": "https://www.w3schools.com/sql/sql_aggregate_functions.asp",
+   "sourceType": "reference",
+   "usage": "REFERENCE_ONLY",
+   "attributionRequired": true,
+   "aiIngestionChecked": true,
+   "aiIngestionAllowed": false,
+   "checkedAt": "2026-08-21",
+   "notes": "Tier B. Read live (HTTP 200) on 2026-08-21. Supports: 'An aggregate function is a function that performs a calculation on a set of values, and returns a single value'; the big-five list (MIN returns the smallest value of a column, MAX the largest, COUNT the number of rows in a set, SUM the sum of a numerical column, AVG the average value of a numerical column); 'Aggregate functions ignore null values (except for COUNT(*))'; and the GROUP BY pairing sentence. Facts synthesized into original prose; no wording reproduced."
+  },
+  {
+   "id": "w3schools-sql-count-avg-sum",
+   "title": "SQL COUNT(), AVG() and SUM() Functions",
+   "provider": "W3Schools",
+   "url": "https://www.w3schools.com/sql/sql_count_avg_sum.asp",
+   "sourceType": "reference",
+   "usage": "REFERENCE_ONLY",
+   "attributionRequired": true,
+   "aiIngestionChecked": true,
+   "aiIngestionAllowed": false,
+   "checkedAt": "2026-08-21",
+   "notes": "Tier B. Read live (HTTP 200) on 2026-08-21. Supports: 'The COUNT() function returns the number of rows that matches a specified criterion'; 'The AVG() function returns the average value of a numeric column'; 'The SUM() function returns the total sum of a numeric column'; and the syntax shape SELECT COUNT(column_name) FROM table_name WHERE condition, used for the filter-first aggregates + WHERE combined shape. No wording reproduced."
+  },
+  {
+   "id": "postgresql-aggregate-functions",
+   "title": "PostgreSQL Documentation: 9.21. Aggregate Functions",
+   "provider": "The PostgreSQL Global Development Group",
+   "url": "https://www.postgresql.org/docs/current/functions-aggregate.html",
+   "sourceType": "documentation",
+   "usage": "REFERENCE_ONLY",
+   "attributionRequired": true,
+   "aiIngestionChecked": true,
+   "aiIngestionAllowed": false,
+   "checkedAt": "2026-08-21",
+   "notes": "Tier A official documentation (PostgreSQL 18 docs, read live HTTP 200 on 2026-08-21). Supports the working definition sentence 'Aggregate functions compute a single result from a set of input values'; count(*) 'Computes the number of input rows'; count(any) 'Computes the number of input rows in which the input value is not null'; and sum/avg/min/max computed over 'non-null input values', with min/max available for numeric, string, date/time, and enum types. Facts synthesized into original prose."
+  },
+  {
+   "id": "sqlite-lang-aggfunc",
+   "title": "SQLite Query Language: Built-in Aggregate Functions",
+   "provider": "SQLite Consortium",
+   "url": "https://www.sqlite.org/lang_aggfunc.html",
+   "sourceType": "documentation",
+   "usage": "REFERENCE_ONLY",
+   "attributionRequired": true,
+   "aiIngestionChecked": true,
+   "aiIngestionAllowed": false,
+   "checkedAt": "2026-08-21",
+   "notes": "Tier A official documentation. Read live (HTTP 200) on 2026-08-21. Supports: 'The avg() function returns the average value of all non-NULL X within a group'; 'The count(X) function returns a count of the number of times that X is not NULL in a group'; 'The count(*) function (with no arguments) returns the total number of rows in the group'; and min()/max() returning non-NULL values. Used for the COUNT(column) vs COUNT(*) distinction and the NULL-skipping rule."
+  }
+ ]
+}

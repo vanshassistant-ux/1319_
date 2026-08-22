@@ -1,0 +1,174 @@
+{
+  "topicId": "databases-and-sql:foundations:update",
+  "subjectId": "databases-and-sql",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "UPDATE changes the values stored in existing rows of a table; it does not add rows (INSERT) or remove them (DELETE)",
+      "Basic shape: UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition",
+      "SET holds the assignments: column name on the left of the equals sign, new value on the right; several columns can be set at once",
+      "The WHERE clause specifies which rows are updated; omitting WHERE updates all rows in the table",
+      "The database may reject an UPDATE that violates a constraint (e.g., NOT NULL, uniqueness, foreign key) by raising an error",
+      "UPDATE is a write operation: the change is permanent and the old values are gone once the statement runs"
+    ],
+    "supporting": [
+      "A WHERE condition that matches no rows is not an error; the UPDATE simply affects zero rows",
+      "Only rows for which the WHERE condition evaluates to true are updated (PostgreSQL)",
+      "Text values are written in single quotes and numbers bare in SET assignments, as elsewhere in SQL",
+      "Safe practice: run a SELECT with the same WHERE clause before an UPDATE to see which rows will change, and again afterward to confirm"
+    ],
+    "outOfScope": [
+      "INSERT statement mechanics (sibling topic: insert)",
+      "DELETE statement mechanics (sibling topic: delete)",
+      "SELECT clause details (sibling topic: select)",
+      "WHERE condition operators and syntax in depth (sibling topic: where)",
+      "Constraint definitions and table design (sibling topics: primary-keys, foreign-keys, data-integrity)",
+      "Transactions and rollback of updates (sibling topic: transactions)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The UPDATE statement modifies the values stored in existing rows of a table: it changes the values of the specified columns in the rows that satisfy the condition, rather than adding or removing rows.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "w3schools-sql-update",
+        "postgresql-sql-update"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The basic shape of an update is UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition; the WHERE clause specifies which records should be updated.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3schools-sql-update"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "If the UPDATE statement has no WHERE clause, all rows in the table are modified; W3Schools warns explicitly that omitting the WHERE clause updates ALL records.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3schools-sql-update",
+        "sqlite-lang-update"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Only rows for which the WHERE condition evaluates to true are updated; it is not an error if the condition matches no rows, in which case the UPDATE affects zero rows.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "postgresql-sql-update",
+        "sqlite-lang-update"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The SET clause lists assignments with a column name to the left of the equals sign and a new value (an expression) to the right; several columns can be assigned in one UPDATE statement.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "sqlite-lang-update",
+        "w3schools-sql-update"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Constraints are rules on the data; if a user attempts to store data that would violate a constraint, an error is raised, so the database may reject an UPDATE that breaks a rule such as NOT NULL, uniqueness, or a foreign key.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "postgresql-constraints"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "UPDATE is a write operation: it permanently changes the stored values in the table, in contrast to SELECT, which only reads data back.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "postgresql-sql-update",
+        "w3schools-sql-update"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "Whether an UPDATE without a WHERE clause is an error",
+      "positions": [
+        "Some learners assume the database will refuse an UPDATE that has no WHERE clause",
+        "Standard SQL treats it as valid: without WHERE, all rows in the table are modified; W3Schools and SQLite both state this explicitly"
+      ],
+      "resolution": "Lesson teaches that omitting WHERE is valid SQL that updates every row — the classic danger — and demonstrates it with an original example (UPDATE products SET stock = 0;) executed against SQLite, which confirmed all five rows changed."
+    },
+    {
+      "issue": "What happens when an UPDATE would violate a constraint",
+      "positions": [
+        "A learner might expect the database to store the bad value anyway",
+        "PostgreSQL documents that attempting to store data that violates a constraint raises an error, so the update fails instead"
+      ],
+      "resolution": "Lesson teaches that the database rejects constraint-breaking updates with an error; verified against SQLite, which refused UPDATE products SET name = NULL (NOT NULL constraint) and a duplicate product_id (UNIQUE constraint)."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "No prior generated draft existed for this topic; every claim in this packet was verified against sources read live on 2026-08-21."
+  ],
+  "correctionsNeeded": [
+    "All example queries are original and were executed against an in-memory SQLite table to confirm which rows each statement changes before publishing.",
+    "The lesson keeps WHERE and SELECT as sibling-topic references only: the danger of omitting WHERE is stated and demonstrated, but condition syntax and SELECT mechanics are not taught here."
+  ],
+  "rightsIssues": [
+    "None: all sources are used as REFERENCE_ONLY, facts are synthesized, and no source wording is reproduced beyond short attributed phrases; all examples and queries are original."
+  ],
+  "sourceRecords": [
+    {
+      "id": "w3schools-sql-update",
+      "title": "SQL UPDATE Statement",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_update.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B reference tutorial per subject source-map. Read live on 2026-08-21. Supports: the UPDATE statement is used to modify existing records in a table; syntax UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition; the WHERE clause specifies which records are updated; an explicit warning that omitting the WHERE clause updates ALL records; updating multiple records with one WHERE condition; text values quoted in examples. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "postgresql-sql-update",
+      "title": "PostgreSQL Documentation: UPDATE",
+      "provider": "PostgreSQL",
+      "url": "https://www.postgresql.org/docs/current/sql-update.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Official documentation (Tier A per subject source-map). Read live on 2026-08-21. Supports: UPDATE changes the values of the specified columns in all rows that satisfy the condition; only rows for which the WHERE condition evaluates to true are updated; SET assignments of column_name = expression; example UPDATE films SET kind = 'Dramatic' WHERE kind = 'Drama'; UPDATE is a write that modifies stored rows. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "sqlite-lang-update",
+      "title": "SQLite Query Language: UPDATE",
+      "provider": "SQLite Consortium",
+      "url": "https://www.sqlite.org/lang_update.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Official documentation (Tier A per subject source-map). Read live on 2026-08-21. Supports: an UPDATE statement is used to modify a subset of the values stored in one or more rows of a database table; without a WHERE clause all rows in the table are modified; otherwise only rows for which the WHERE boolean expression is true; a WHERE that matches no rows affects zero rows (not an error); SET assignments list a column name to the left of the equals sign and a scalar expression to the right. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "postgresql-constraints",
+      "title": "PostgreSQL 18 Documentation: 5.5. Constraints",
+      "provider": "PostgreSQL",
+      "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Official documentation; registry id reused with identical URL. Read live on 2026-08-21. Supports: constraints give control over the data in tables; if a user attempts to store data in a column that would violate a constraint, an error is raised; NOT NULL, unique, primary key, and foreign key constraints as examples; constraints are examined when rows are inserted or updated. Facts synthesized; no wording reproduced."
+    }
+  ]
+}

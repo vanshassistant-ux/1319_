@@ -1,0 +1,224 @@
+{
+ "topicId": "databases-and-sql:foundations:insert",
+ "subjectId": "databases-and-sql",
+ "researchedAt": "2026-08-21",
+ "scope": {
+  "core": [
+   "Working definition of INSERT, attributed: W3Schools says the INSERT INTO statement is used to insert new records in a table; PostgreSQL says the INSERT statement is used to populate a table with rows; SQLite says the VALUES form creates one or more new rows in an existing table",
+   "Basic anatomy: INSERT INTO table (columns) VALUES (values) \u2014 the table name plus a column list and a VALUES list, per W3Schools syntax; original example INSERT INTO products (name, price, quantity) VALUES ('Ridge tent', 129.99, 24);",
+   "Column order and matching: values line up with the listed columns in the same order; per SQLite the number of values must match the number of specified columns; listing columns explicitly lets you reorder or omit columns (PostgreSQL), and omitted columns get their default value or NULL (SQLite)",
+   "What happens to the primary key: the database assigns a new value (auto-increment fields are automatically generated when a new record is inserted, W3Schools) or checks a supplied value against the key's uniqueness requirement; primary-keys is a sibling topic, referenced only",
+   "INSERT and constraints: SQL lets you define constraints on columns and tables, and if a user attempts to store data that would violate a constraint, an error is raised (PostgreSQL) \u2014 the row never lands; data-integrity is a sibling topic, referenced only",
+   "Writing versus reading: a SELECT statement does not make any changes to the database (SQLite), while INSERT creates new rows in an existing table (SQLite) \u2014 INSERT changes stored data permanently; select is a sibling topic, referenced only",
+   "Honest framing: INSERT is how data enters the database, and mistakes are hard to undo \u2014 removing or repairing a bad row takes another write command (delete/update, sibling topics)"
+  ],
+  "supporting": [
+   "The bare VALUES form without a column list requires the values to match the table's column order (W3Schools, PostgreSQL)",
+   "Many developers consider explicitly listing the columns better style than relying on the implicit order (PostgreSQL)",
+   "A primary key constraint ensures unique values and cannot contain NULL values (W3Schools)",
+   "Statements end with a semicolon in standard usage (PostgreSQL tutorial)"
+  ],
+  "outOfScope": [
+   "SELECT mechanics (own topic: select)",
+   "UPDATE mechanics (own topic: update)",
+   "DELETE mechanics (own topic: delete)",
+   "Data types and their input formats (own topic: data-types)",
+   "Primary key design in depth (own topic: primary-keys)",
+   "Constraint catalog and data-quality enforcement in depth (own topic: data-integrity)",
+   "Transactions and rollback (own topic: transactions)"
+  ]
+ },
+ "claims": [
+  {
+   "claim": "W3Schools defines the INSERT INTO statement as the statement used to insert new records in a table.",
+   "claimType": "EVERGREEN",
+   "sourceIds": [
+    "w3schools-sql-insert"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "PostgreSQL's tutorial states that the INSERT statement is used to populate a table with rows; the first examples use the bare form INSERT INTO table VALUES (...).",
+   "claimType": "EVERGREEN",
+   "sourceIds": [
+    "postgresql-tutorial-populate"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "SQLite's documentation describes the VALUES form of INSERT as creating one or more new rows in an existing table.",
+   "claimType": "TECHNICAL",
+   "sourceIds": [
+    "sqlite-lang-insert"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "The basic shape of an INSERT is INSERT INTO table (columns) VALUES (values): W3Schools documents the two-list syntax (column names and the values to be inserted), and PostgreSQL presents listing the columns explicitly as the alternative to the bare VALUES form.",
+   "claimType": "TECHNICAL",
+   "sourceIds": [
+    "w3schools-sql-insert",
+    "postgresql-tutorial-populate"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "Values must line up with the listed columns: SQLite states that when a column-name list is specified, the number of values must match the number of specified columns, and PostgreSQL notes the bare syntax requires remembering the order of the columns while an explicit list lets you reorder or omit columns.",
+   "claimType": "TECHNICAL",
+   "sourceIds": [
+    "sqlite-lang-insert",
+    "postgresql-tutorial-populate"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "Columns omitted from an INSERT's column list are populated with the column's default value, or with NULL if no default is specified (SQLite).",
+   "claimType": "TECHNICAL",
+   "sourceIds": [
+    "sqlite-lang-insert"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "A database may assign the primary key itself: W3Schools explains that an auto-increment field is automatically generated when a new record is inserted; if a key value is supplied, it is checked, because a primary key constraint ensures unique values.",
+   "claimType": "TECHNICAL",
+   "sourceIds": [
+    "w3schools-sql-insert",
+    "w3schools-sql-primary-key"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "INSERT is where constraints are enforced: PostgreSQL states that if a user attempts to store data in a column that would violate a constraint, an error is raised \u2014 the row is rejected.",
+   "claimType": "TECHNICAL",
+   "sourceIds": [
+    "postgresql-constraints"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "INSERT is a write operation: SQLite's SELECT reference states that a SELECT statement does not make any changes to the database, while its INSERT reference describes INSERT as creating new rows \u2014 the stored table changes permanently.",
+   "claimType": "TECHNICAL",
+   "sourceIds": [
+    "sqlite-lang-select",
+    "sqlite-lang-insert"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "Honest framing: INSERT is how data enters the database, and because it writes, a mistaken row is hard to undo \u2014 an interpretive framing built on the write-versus-read distinction documented by SQLite and the add-rows definitions of W3Schools and PostgreSQL.",
+   "claimType": "INTERPRETIVE",
+   "sourceIds": [
+    "w3schools-sql-insert",
+    "postgresql-tutorial-populate",
+    "sqlite-lang-insert"
+   ],
+   "status": "supported"
+  }
+ ],
+ "conflictingEvidence": [
+  {
+   "issue": "Sources phrase the same operation differently: W3Schools says INSERT inserts new records in a table, PostgreSQL says INSERT populates a table with rows, and SQLite says the VALUES form creates one or more new rows in an existing table.",
+   "positions": [
+    "W3Schools: 'insert new records in a table'",
+    "PostgreSQL: 'populate a table with rows'",
+    "SQLite: 'creates one or more new rows in an existing table'"
+   ],
+   "resolution": "All three describe the same operation: adding rows to a table. The lesson uses the add-a-row wording as its working definition, attributed to W3Schools and PostgreSQL, with SQLite's phrasing as the same idea stated for its own documentation."
+  }
+ ],
+ "unsupportedExistingClaims": [
+  "The generated draft called INSERT 'a foundational concept' without stating what the command does",
+  "The draft's generic toolbox-drawer analogy had no source support and was discarded",
+  "The draft's learning objectives and questions tested generic study skills rather than any SQL content"
+ ],
+ "correctionsNeeded": [
+  "Replaced the generic draft with a definition of INSERT attributed to W3Schools and PostgreSQL",
+  "Added the column-matching rule from SQLite's INSERT reference (number of values must match the number of specified columns)",
+  "Added PostgreSQL's explicit-column-list point (reorder or omit columns) and the style note",
+  "Added the constraints-enforcement point from PostgreSQL's constraints chapter (violations raise an error)",
+  "Added the auto-assigned key and checked-key distinction from W3Schools' INSERT and primary-key pages",
+  "All SQL examples rewritten as original queries against a products table, checked for standard syntax"
+ ],
+ "rightsIssues": [],
+ "sourceRecords": [
+  {
+   "id": "w3schools-sql-insert",
+   "title": "SQL INSERT INTO Statement",
+   "provider": "W3Schools",
+   "url": "https://www.w3schools.com/sql/sql_insert.asp",
+   "sourceType": "reference",
+   "usage": "REFERENCE_ONLY",
+   "attributionRequired": true,
+   "aiIngestionChecked": true,
+   "aiIngestionAllowed": false,
+   "checkedAt": "2026-08-21",
+   "notes": "Tier B. Read live (HTTP 200) on 2026-08-21. Supports: 'The INSERT INTO statement is used to insert new records in a table'; the two syntax forms \u2014 INSERT INTO table_name (column1, column2, ...) VALUES (value1, value2, ...) and the no-column-list form whose values must follow the table's column order; 'The CustomerID column is an auto-increment field and will be automatically generated when a new record is inserted'. Used for the working definition, the anatomy, and the auto-assigned key note; no wording reproduced."
+  },
+  {
+   "id": "postgresql-tutorial-populate",
+   "title": "PostgreSQL Documentation: 2.4. Populating a Table With Rows",
+   "provider": "The PostgreSQL Global Development Group",
+   "url": "https://www.postgresql.org/docs/current/tutorial-populate.html",
+   "sourceType": "documentation",
+   "usage": "REFERENCE_ONLY",
+   "attributionRequired": true,
+   "aiIngestionChecked": true,
+   "aiIngestionAllowed": false,
+   "checkedAt": "2026-08-21",
+   "notes": "Tier A official documentation. Read live (HTTP 200) on 2026-08-21. Supports: 'The INSERT statement is used to populate a table with rows'; 'The syntax used so far requires you to remember the order of the columns. An alternative syntax allows you to list the columns explicitly'; 'You can list the columns in a different order if you wish or even omit some columns'; 'Many developers consider explicitly listing the columns better style than relying on the order implicitly'. Used for the working definition, the anatomy, and the column-order point."
+  },
+  {
+   "id": "sqlite-lang-insert",
+   "title": "SQLite Query Language: INSERT",
+   "provider": "SQLite Consortium",
+   "url": "https://www.sqlite.org/lang_insert.html",
+   "sourceType": "documentation",
+   "usage": "REFERENCE_ONLY",
+   "attributionRequired": true,
+   "aiIngestionChecked": true,
+   "aiIngestionAllowed": false,
+   "checkedAt": "2026-08-21",
+   "notes": "Tier A official documentation. Read live (HTTP 200) on 2026-08-21. Supports: 'The first form (with the \"VALUES\" keyword) creates one or more new rows in an existing table'; 'If a column-name list is specified, then the number of values in each term of the VALUE list must match the number of specified columns'; omitted columns 'are populated with the default column value ... or with NULL if no default value is specified'. Used for the add-a-row definition, the matching rule, and the omitted-columns behavior."
+  },
+  {
+   "id": "postgresql-constraints",
+   "title": "PostgreSQL 18 Documentation: 5.5. Constraints",
+   "provider": "PostgreSQL",
+   "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+   "sourceType": "documentation",
+   "usage": "REFERENCE_ONLY",
+   "attributionRequired": true,
+   "aiIngestionChecked": true,
+   "aiIngestionAllowed": false,
+   "checkedAt": "2026-08-21",
+   "notes": "Tier A official documentation. Reused id from the phase-2 source registry with an identical URL (already cited by the data-types and primary-keys topics). Read live (HTTP 200) on 2026-08-21. Supports: SQL 'allows you to define constraints on columns and tables'; 'If a user attempts to store data in a column that would violate a constraint, an error is raised'. Used for the INSERT-and-constraints section."
+  },
+  {
+   "id": "w3schools-sql-primary-key",
+   "title": "SQL PRIMARY KEY Constraint (W3Schools SQL Tutorial)",
+   "provider": "W3Schools",
+   "url": "https://www.w3schools.com/sql/sql_primarykey.asp",
+   "sourceType": "reference",
+   "usage": "REFERENCE_ONLY",
+   "attributionRequired": true,
+   "aiIngestionChecked": true,
+   "aiIngestionAllowed": false,
+   "checkedAt": "2026-08-21",
+   "notes": "Tier B. Reused id from the phase-2 source registry with an identical URL (already cited by the primary-keys topic). Read live (HTTP 200) on 2026-08-21. Supports: 'The PRIMARY KEY constraint uniquely identifies each record in a database table'; 'A PRIMARY KEY constraint ensures unique values, and cannot contain NULL values'. Used for the checked-key side of the key note."
+  },
+  {
+   "id": "sqlite-lang-select",
+   "title": "SQLite Query Language: SELECT",
+   "provider": "SQLite Consortium",
+   "url": "https://www.sqlite.org/lang_select.html",
+   "sourceType": "documentation",
+   "usage": "REFERENCE_ONLY",
+   "attributionRequired": true,
+   "aiIngestionChecked": true,
+   "aiIngestionAllowed": false,
+   "checkedAt": "2026-08-21",
+   "notes": "Tier A official documentation. Reused id from the phase-2 source registry with an identical URL (already cited by the select topic). Read live (HTTP 200) on 2026-08-21. Supports: 'A SELECT statement does not make any changes to the database'. Used for the writing-versus-reading contrast."
+  }
+ ]
+}

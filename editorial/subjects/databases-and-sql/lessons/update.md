@@ -1,0 +1,142 @@
+# UPDATE: Changing Existing Rows
+
+## In 30 Seconds
+
+UPDATE is the SQL statement that changes values in rows that already exist. It does not add rows and it does not remove them; it rewrites the values you name. The basic shape is UPDATE table SET column = value WHERE condition: SET names the column and its new value, and WHERE names the rows. The WHERE clause matters most — leave it out and every row in the table changes. The database can also reject an update that breaks a rule, and the change is permanent, so know your WHERE before you run.
+
+## Why This Matters
+
+Real databases are not static lists. Prices change, addresses move, stock counts shift, and someone has to record those changes. UPDATE is the tool for that: it is how stored data stays true to the real world. It is also the statement where one missing word can cost the most — an UPDATE without a WHERE clause silently rewrites every row, and unlike a miswritten question, the damage is written into the database itself. Knowing what UPDATE changes, how to aim it, and what the database will or will not allow is the difference between a careful correction and a costly accident.
+
+## Learning Objectives
+
+- Define UPDATE as the SQL statement that changes the values stored in existing rows.
+- Write the basic shape UPDATE table SET column = value WHERE condition and name what each part does.
+- Explain that omitting the WHERE clause updates every row in the table.
+- Describe the changes UPDATE can make, including several columns in one statement.
+- Explain that the database can reject an update that violates a constraint, and that updates are permanent.
+
+## The College Version
+
+### UPDATE rewrites existing rows
+
+The UPDATE statement is how SQL changes data that is already stored. W3Schools introduces it in one line: the UPDATE statement is used to modify the existing records in a table. The PostgreSQL documentation is more precise about where the change lands: UPDATE changes the values of the specified columns in all rows that satisfy the condition. SQLite's reference says an UPDATE statement is used to modify a subset of the values stored in one or more rows of a database table. The working definition to keep is short: UPDATE changes the values in existing rows. Notice what it does not do. It does not add a row — that is INSERT's job — and it does not remove one — that is DELETE's job. It rewrites values inside rows that are already there. That makes UPDATE a write operation: unlike SELECT, which only reads data back, UPDATE changes what is stored.
+
+### The shape of an update
+
+Every UPDATE follows the same skeleton: UPDATE the table, SET the column and its new value, WHERE the rows. In full, UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition. Each piece has one job. UPDATE names the table, SET holds the assignments — a column name on the left of the equals sign and the new value on the right. WHERE holds the condition, the same kind of true-or-false test used in SELECT queries; the WHERE topic covers it in depth, so here it only needs to aim the update. For example, a small shop keeps a products table with columns product_id, name, category, price, and stock. The Desk Lamp, product_id 1, is repriced: UPDATE products SET price = 19.99 WHERE product_id = 1;. One row, one column, one new value. SET can also assign several columns at once, separated by commas: UPDATE products SET price = 15.99, stock = 75 WHERE product_id = 4;. Values follow the same habits as elsewhere in SQL: text goes in single quotes, numbers are written bare.
+
+### The WHERE clause matters most
+
+The WHERE clause is the part of UPDATE that decides which rows change, and it is the part people forget. W3Schools puts a warning right on the page: be careful when updating records — if you omit the WHERE clause, ALL records will be updated. The SQLite documentation states the same rule without drama: if the UPDATE statement does not have a WHERE clause, all rows in the table are modified by the UPDATE. An example makes the danger concrete. The shop wants to zero out one product's stock, but the statement comes out as UPDATE products SET stock = 0; — no WHERE at all, so every product now shows zero stock, including ones with full shelves. The statement is perfectly valid; the database does not pause to ask. Only rows that pass the condition are touched, so a WHERE that matches nothing is not an error either — SQLite notes that the statement then simply affects zero rows. A correct WHERE is the whole difference between fixing one row and rewriting the table.
+
+### Constraints: the database can say no
+
+UPDATE is strong, but it is not lawless. Tables can carry constraints — rules the database enforces on the data, such as NOT NULL (a column must have a value), uniqueness (no two rows may share a value), and foreign keys (a value must exist in another table). The PostgreSQL documentation describes the enforcement plainly: if a user attempts to store data in a column that would violate a constraint, an error is raised. The same rule applies when the data arrives through an UPDATE. In the shop's table, the name column is NOT NULL, so UPDATE products SET name = NULL WHERE product_id = 2; is rejected — the database refuses to write a missing name into a row. A statement that would give two rows the same product_id is refused the same way, because product_id is the primary key. This is not the database being difficult; it is enforcing the rules the table was built with. When an update fails, the honest response is to read the error and adjust the statement, not to assume the change went through. Constraints belong to the broader idea of data integrity; this lesson only needs the general point — the database may reject a change that breaks a rule.
+
+### Updates are permanent — check first
+
+There is no undo button on an UPDATE. Once the statement finishes, the new values are what the table stores; the old values are gone. That is the write contrast in its starkest form: SELECT shows you what is there, UPDATE replaces it. Careful SQL practice therefore surrounds every update with checks. The habit has three steps. First, look: run a SELECT with the same WHERE clause you plan to use and read the rows it returns — those are exactly the rows your UPDATE will hit. For example, before touching the Desk Lamp, run SELECT price FROM products WHERE product_id = 1; and confirm the current price. Second, run the UPDATE with that same WHERE clause: UPDATE products SET price = 21.49 WHERE product_id = 1;. Third, look again: repeat the first SELECT and confirm the new value is what you intended. The first SELECT is the cheap way to catch a wrong WHERE before it does damage — a query run with the wrong filter costs a few seconds of reading, while an update aimed at the wrong rows costs the data.
+
+## Key Vocabulary
+
+- **UPDATE statement** — The SQL statement that changes the values stored in existing rows of a table.
+- **SET clause** — The part of an UPDATE that names a column and the new value to write into it.
+- **WHERE clause** — The part of an UPDATE that decides which rows will be changed; the same clause filters rows in SELECT queries.
+- **condition** — A true-or-false test, written after WHERE, that each row is checked against.
+- **constraint** — A rule the database enforces on the data, such as NOT NULL or uniqueness; a violation is rejected with an error.
+- **write operation** — An action that changes what is stored in the database, such as UPDATE, as opposed to a read-only query.
+- **permanent change** — A modification that remains stored in the table after the statement finishes, with no automatic undo.
+- **existing row** — A row already stored in the table before the UPDATE runs, rather than a new row added by INSERT.
+
+## Eli-10
+
+UPDATE is how you correct a record in a database. Instead of adding a new row or erasing an old one, you point at the rows that need fixing and write the new values over the old ones. You aim with WHERE — it names exactly which rows you mean. Forget the aim, and the change lands on every row in the table, which is why you always double-check it.
+
+## Eli's Analogy
+
+Think of a wall of paper price tags in a shop. UPDATE is you with a marker: you walk to the tag you mean, cross out the old price, and write the new one. The tag stays on the wall — you did not add a tag or throw one away; you changed what was already there. Now imagine being told to update the price without being told which tag. You would have to cross out every tag on the wall. That is what an UPDATE without WHERE does.
+
+The analogy breaks down in two places. A marker on paper is easy to see and easy to undo — you can simply rewrite the tag. A database update is not like that: once the new value is stored, the old value is gone, and there is no eraser built in. Also, a careful person with a marker might refuse to write a silly price, but a database follows its rules mechanically — it writes whatever you give it unless a constraint stops it.
+
+## Worked Example
+
+The Shelf & Sconce shop keeps a products table with columns product_id, name, category, price, and stock. The Stool, product_id 4, has been repriced: the new price is 15.99, and the delivery brings stock to 75. The update needs two assignments and one target: UPDATE products SET price = 15.99, stock = 75 WHERE product_id = 4;. SET names the two columns being changed, each with its new value, and WHERE limits the change to the single row whose product_id is 4. Before running it, the shop checks the current values with SELECT price, stock FROM products WHERE product_id = 4;. After the update, the same SELECT shows 15.99 and 75 — the change is in the table, and only that row was touched.
+
+## Common Mistakes
+
+- **Forgetting the WHERE clause entirely.** UPDATE products SET stock = 0; is valid SQL and rewrites every row. Always state which rows you mean; when in doubt, run the matching SELECT first.
+- **Assuming a rejected update quietly "didn't work."** When a change breaks a constraint — like writing NULL into a NOT NULL column — the database raises an error and the update fails. Read the error and fix the statement.
+- **Expecting the old value to come back.** UPDATE replaces stored values permanently, and most databases have no built-in undo. That is exactly why the SELECT-first habit exists.
+- **Mismatching the value's type in SET.** A numeric column wants a number: price = 19.99, not price = '19.99'. Text columns want quotes. Let the column's type decide how you write the value.
+
+## Compare / Contrast
+
+- **UPDATE vs. INSERT** — changes values in existing rows; INSERT adds new rows.
+- **UPDATE vs. DELETE** — rewrites values in rows; DELETE removes rows entirely.
+- **UPDATE vs. SELECT** — writes to stored data; SELECT only reads it back.
+- **SET vs. WHERE** — what gets the new value; which rows get it.
+
+## Key Takeaway
+
+UPDATE changes the values in existing rows: SET names the new values, WHERE aims the change, and without WHERE every row is hit. Updates are permanent and can be rejected by constraints, so look before you run.
+
+## Practice Question Bank
+
+1. **What does the UPDATE statement do in SQL?**
+   - A. It changes the values stored in existing rows of a table.
+   - B. It adds new rows to a table.
+   - C. It removes rows from a table.
+   - D. It sorts the rows of a table into a new order.
+   - **Answer: A.** UPDATE modifies the values in rows that already exist. Adding rows is INSERT's job, removing rows is DELETE's job, and ordering rows is ORDER BY's job.
+
+2. **In the statement UPDATE products SET price = 19.99 WHERE product_id = 1, what does the WHERE clause do?**
+   - A. It names the column that will receive the new value.
+   - B. It sets the new value for the price column.
+   - C. It decides which rows are changed.
+   - D. It creates a new row in the products table.
+   - **Answer: C.** WHERE decides which rows the update touches: only the row where product_id = 1. SET names the column and value, and UPDATE never creates rows.
+
+3. **A products table holds 20 rows. Which statement changes the price of exactly one row?**
+   - A. UPDATE products SET price = 9.99;
+   - B. UPDATE products SET price = 9.99 WHERE product_id = 7;
+   - C. UPDATE products SET price = 9.99 WHERE price;
+   - D. UPDATE products SET price WHERE product_id = 7;
+   - **Answer: B.** WHERE product_id = 7 matches only that one row, so only it changes. The version without WHERE changes all 20 rows, and the last two options are not valid statements: WHERE needs a test, and SET needs a value.
+
+4. **A members table has a NOT NULL constraint on email. What happens when you run UPDATE members SET email = NULL WHERE member_id = 3?**
+   - A. The row's email becomes NULL and the update succeeds.
+   - B. Every row in the table loses its email value.
+   - C. The member row is deleted from the table.
+   - D. The database rejects the update because it breaks the NOT NULL rule.
+   - **Answer: D.** The NOT NULL constraint forbids storing NULL in that column, and the database enforces it by raising an error, so the update fails. The WHERE clause limits the statement to one row, and UPDATE never deletes rows.
+
+5. **A worker runs UPDATE products SET price = 0; by mistake on a table with 50 rows and no WHERE clause. What actually happens?**
+   - A. Every row's price becomes 0.
+   - B. Only the first row's price becomes 0.
+   - C. Nothing changes, because SET requires a WHERE clause.
+   - D. The statement fails, because 0 is not a valid price.
+   - **Answer: A.** Without a WHERE clause, an UPDATE changes every row in the table — the classic danger. The statement is valid without WHERE, it does not stop after one row, and the database only refuses 0 if a constraint says so.
+
+## Sources
+
+- W3Schools — SQL UPDATE Statement — https://www.w3schools.com/sql/sql_update.asp
+- PostgreSQL Documentation — UPDATE — https://www.postgresql.org/docs/current/sql-update.html
+- SQLite Query Language — UPDATE — https://www.sqlite.org/lang_update.html
+- PostgreSQL Documentation — Constraints (Section 5.5) — https://www.postgresql.org/docs/current/ddl-constraints.html
+
+## Related Topics
+
+- databases-and-sql:foundations:insert
+- databases-and-sql:foundations:delete
+- databases-and-sql:foundations:where
+- databases-and-sql:foundations:select
+- databases-and-sql:foundations:data-integrity
+
+## Editorial Metadata
+
+- Topic ID: databases-and-sql:foundations:update
+- Subject: databases-and-sql / Unit: foundations / Phase: 2
+- Editorial status: READY_TO_PUBLISH
+- Researched: 2026-08-21 — sources read live; all example queries executed against SQLite before publishing
+- Rights: reference-only sources; all prose, examples, and queries are original

@@ -1,0 +1,167 @@
+{
+ "topicId": "databases-and-sql:foundations:group-by",
+ "subjectId": "databases-and-sql:foundations",
+ "researchedAt": "2026-08-21",
+ "scope": {
+  "core": [
+   "What GROUP BY does: splits rows that share the same values into groups and computes one summary per group (working definition)",
+   "The basic shape: SELECT column, COUNT(*) FROM table GROUP BY column",
+   "GROUP BY pairs with aggregate functions (COUNT, SUM, AVG) that compute one value per group",
+   "WHERE filters rows before GROUP BY groups them (filter first, group second)",
+   "The select-list rule: only grouped columns and aggregate expressions may be selected",
+   "GROUP BY (grouping) vs ORDER BY (sorting) distinction",
+   "GROUP BY answers 'by category' questions"
+  ],
+  "supporting": [
+   "Result rows equal the number of groups, one summary row per group",
+   "A group with no surviving rows produces no result row",
+   "Standard SQL rejects ungrouped, non-aggregated columns; SQLite is lenient",
+   "Grouped queries can be sorted afterward with ORDER BY"
+  ],
+  "outOfScope": [
+   "Aggregate functions in depth (own sibling topic: aggregate-functions)",
+   "WHERE conditions and operators (own sibling topic: where)",
+   "ORDER BY sorting details (own sibling topic: order-by)",
+   "HAVING (filters groups after grouping; beyond this lesson's literacy level)",
+   "JOIN-based grouping (own sibling topic: join)"
+  ]
+ },
+ "claims": [
+  {
+   "claim": "GROUP BY groups rows that have the same values into summary rows: rows sharing the same value in the grouped column(s) are collected into a group, and the query computes one summary per group (working definition).",
+   "claimType": "EVERGREEN",
+   "sourceIds": [
+    "w3schools-sql-groupby",
+    "postgresql-sql-select",
+    "sqlite-lang-select"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "The basic grouped query shape is SELECT column, COUNT(*) FROM table GROUP BY column; the result contains one row per group.",
+   "claimType": "EVERGREEN",
+   "sourceIds": [
+    "w3schools-sql-groupby",
+    "sqlite-lang-select"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "GROUP BY is almost always paired with aggregate functions such as COUNT, SUM, and AVG; each aggregate is computed across all the rows of its group, producing a separate value per group.",
+   "claimType": "EVERGREEN",
+   "sourceIds": [
+    "w3schools-sql-groupby",
+    "postgresql-sql-select"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "WHERE filters individual rows before GROUP BY is applied: filtering happens first, grouping second.",
+   "claimType": "TECHNICAL",
+   "sourceIds": [
+    "postgresql-sql-select",
+    "sqlite-lang-select"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "In a grouped query the select list may contain grouped columns and aggregate expressions; a column that is neither grouped nor inside an aggregate is not valid because there would be more than one possible value to return for it.",
+   "claimType": "TECHNICAL",
+   "sourceIds": [
+    "postgresql-sql-select",
+    "sqlite-lang-select"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "GROUP BY condenses rows into groups; ORDER BY sorts result rows. Grouping is not sorting, and the two can be combined, with ORDER BY after GROUP BY.",
+   "claimType": "EVERGREEN",
+   "sourceIds": [
+    "postgresql-sql-select",
+    "w3schools-sql-orderby"
+   ],
+   "status": "supported"
+  },
+  {
+   "claim": "GROUP BY is the mechanism behind 'by category' questions such as the number of customers in each country or books per genre.",
+   "claimType": "INTERPRETIVE",
+   "sourceIds": [
+    "w3schools-sql-groupby"
+   ],
+   "status": "supported"
+  }
+ ],
+ "conflictingEvidence": [
+  {
+   "issue": "Bare columns in grouped queries: the SQL standard and PostgreSQL reject select-list columns that are neither grouped nor aggregated, while SQLite permits them and returns an arbitrary value from one of the group's rows.",
+   "positions": [
+    "Standard SQL and PostgreSQL: ungrouped, non-aggregated columns are an error",
+    "SQLite: accepted, with an undefined value"
+   ],
+   "resolution": "The lesson teaches the standard rule (grouped columns and aggregates only) and flags SQLite's leniency as an exception to know about, not the rule to learn."
+  }
+ ],
+ "unsupportedExistingClaims": [
+  "The generated boilerplate draft made no verifiable topic-specific claims (generic statements about 'organizing information' and 'context'); none were carried into the lesson."
+ ],
+ "correctionsNeeded": [
+  "Replaced the entire generic boilerplate draft with a sourced lesson built around the working definition and verified examples.",
+  "The draft's placeholder Eli-10 analogy (toolbox drawer) and vocabulary were discarded; original content written in its place.",
+  "Added all example queries, each verified by execution against SQLite before publishing."
+ ],
+ "rightsIssues": [],
+ "sourceRecords": [
+  {
+   "id": "w3schools-sql-groupby",
+   "title": "SQL GROUP BY Statement",
+   "provider": "W3Schools",
+   "url": "https://www.w3schools.com/sql/sql_groupby.asp",
+   "sourceType": "reference",
+   "usage": "REFERENCE_ONLY",
+   "attributionRequired": true,
+   "aiIngestionChecked": true,
+   "aiIngestionAllowed": false,
+   "checkedAt": "2026-08-21",
+   "notes": "Tier B reference tutorial per subject source-map. Read live via curl (HTTP 200) on 2026-08-21. Supports: the working definition that GROUP BY groups rows that have the same values into summary rows (example: find the number of customers in each country); that GROUP BY is almost always used in conjunction with aggregate functions such as COUNT, MAX, MIN, SUM, and AVG to perform calculations on each group; the combined syntax with WHERE before GROUP BY and ORDER BY last. Facts synthesized into original prose; no wording reproduced."
+  },
+  {
+   "id": "postgresql-sql-select",
+   "title": "PostgreSQL Documentation: SELECT (Chapter 7.8)",
+   "provider": "The PostgreSQL Global Development Group",
+   "url": "https://www.postgresql.org/docs/current/sql-select.html",
+   "sourceType": "documentation",
+   "usage": "REFERENCE_ONLY",
+   "attributionRequired": false,
+   "aiIngestionChecked": true,
+   "aiIngestionAllowed": false,
+   "checkedAt": "2026-08-21",
+   "notes": "Tier A official documentation. Read live via curl on 2026-08-21. Supports: GROUP BY condenses all selected rows that share the same values for the grouped expressions into a single row; aggregate functions are computed across all rows making up each group, producing a separate value per group; WHERE eliminates rows before grouping; the rule that select-list expressions may not refer to ungrouped columns because there would otherwise be more than one possible value to return; the documented example summing film length grouped by kind; the WHERE vs HAVING distinction (filter rows before GROUP BY vs filter groups after). Facts synthesized; no wording reproduced."
+  },
+  {
+   "id": "sqlite-lang-select",
+   "title": "SQLite Query Language: SELECT",
+   "provider": "SQLite Consortium",
+   "url": "https://www.sqlite.org/lang_select.html",
+   "sourceType": "documentation",
+   "usage": "REFERENCE_ONLY",
+   "attributionRequired": false,
+   "aiIngestionChecked": true,
+   "aiIngestionAllowed": false,
+   "checkedAt": "2026-08-21",
+   "notes": "Tier A official documentation; id reused from the shared phase-2 source registry with identical URL. Read live via curl on 2026-08-21. Supports: the processing order in which WHERE filters the input data before GROUP BY aggregates it; rows assigned to a group based on the GROUP BY expression results, with equal results landing in the same group; the bare-column rule (columns in an aggregate query are normally either aggregate arguments or GROUP BY columns) and SQLite's leniency in returning an arbitrary value, treated in the lesson as an exception to standard behavior. Facts synthesized; no wording reproduced."
+  },
+  {
+   "id": "w3schools-sql-orderby",
+   "title": "SQL ORDER BY Keyword",
+   "provider": "W3Schools",
+   "url": "https://www.w3schools.com/sql/sql_orderby.asp",
+   "sourceType": "reference",
+   "usage": "REFERENCE_ONLY",
+   "attributionRequired": true,
+   "aiIngestionChecked": true,
+   "aiIngestionAllowed": false,
+   "checkedAt": "2026-08-21",
+   "notes": "Tier B reference tutorial; id reused from the shared phase-2 source registry with identical URL. Read live on 2026-08-21. Supports only the sibling-topic reference that ORDER BY sorts the result set and appears after grouping in combined statements, used for the GROUP BY vs ORDER BY distinction. Facts synthesized; no wording reproduced."
+  }
+ ]
+}

@@ -1,0 +1,218 @@
+{
+  "topicId": "databases-and-sql:foundations:delete",
+  "subjectId": "databases-and-sql",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "DELETE removes rows from a table (the working definition)",
+      "Basic shape: DELETE FROM table WHERE condition",
+      "Without WHERE, DELETE removes ALL rows in the table (the classic danger)",
+      "DELETE vs TRUNCATE: DELETE removes rows with conditions; TRUNCATE clears the whole table",
+      "DELETE does not remove the table itself; DROP does",
+      "Foreign keys may block or cascade deletions",
+      "Deletion is permanent: no undo; check the WHERE twice"
+    ],
+    "supporting": [
+      "After DELETE removes all rows, the table still exists as a valid but empty table",
+      "TRUNCATE is faster than an unqualified DELETE because it does not scan the rows",
+      "TRUNCATE keeps table structure, columns, and constraints",
+      "Previewing with SELECT using the same condition is a safety habit before DELETE",
+      "Recovery from deletion depends on backups; rollback behavior is owned by the transactions sibling topic"
+    ],
+    "outOfScope": [
+      "INSERT statement mechanics (sibling topic: insert)",
+      "UPDATE statement mechanics (sibling topic: update)",
+      "WHERE clause operators, quoting, and combined conditions (sibling topic: where)",
+      "Foreign key creation and constraint mechanics (sibling topic: foreign-keys)",
+      "Data integrity rules and constraint design (sibling topic: data-integrity)",
+      "Transaction rollback and recovery mechanics (sibling topic: transactions)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The DELETE statement removes rows from a table: it deletes existing records in a table.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "w3schools-sql-delete",
+        "microsoft-learn-delete-transact-sql",
+        "sqlite-lang-delete"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The basic shape of a DELETE statement is DELETE FROM table_name WHERE condition.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3schools-sql-delete",
+        "postgresql-docs-delete"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "The WHERE clause specifies which rows are deleted; if the WHERE clause is omitted, DELETE removes every row in the table, leaving a valid but empty table.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3schools-sql-delete",
+        "postgresql-docs-delete",
+        "sqlite-lang-delete"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "TRUNCATE removes all rows from a table quickly; it has the same effect as an unqualified DELETE and keeps the table structure, columns, and constraints intact.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "postgresql-docs-truncate",
+        "w3schools-sql-drop-table"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "DELETE does not remove the table itself; the DROP TABLE statement permanently deletes an existing table and all its content.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3schools-sql-drop-table",
+        "postgresql-docs-delete"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Foreign keys can block deletion of referenced rows (RESTRICT or the default NO ACTION raises an error while referencing rows remain) or cascade it (CASCADE automatically deletes referencing rows when the referenced row is deleted).",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "postgresql-constraints"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Database documentation cautions that DELETE is destructive: W3Schools warns to be careful when deleting records in a table, because omitting the WHERE clause deletes all records in the table.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "w3schools-sql-delete"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "How TRUNCATE differs across database systems",
+      "positions": [
+        "PostgreSQL documents TRUNCATE as removing all rows from a set of tables, with the same effect as an unqualified DELETE but faster",
+        "W3Schools describes TRUNCATE TABLE as deleting all records in a table while keeping table structure, columns, and constraints",
+        "SQLite has no TRUNCATE statement; it offers a truncate optimization for DELETE without a WHERE clause"
+      ],
+      "resolution": "The lesson teaches the portable one-line contrast: DELETE removes rows with conditions, TRUNCATE clears the whole table; it notes TRUNCATE cannot be limited by a WHERE clause and does not mention system-specific variants."
+    },
+    {
+      "issue": "Whether deleted rows can be recovered",
+      "positions": [
+        "Students often assume an undo command exists for DELETE",
+        "Reference documentation describes DELETE as destructive and warns to be careful; no source describes a built-in undo",
+        "In systems with transactions, an uncommitted DELETE can be rolled back (owned by the transactions sibling topic)"
+      ],
+      "resolution": "The lesson frames deletion as permanent, advises checking the WHERE clause twice and previewing with SELECT, and refers rollback mechanics to the transactions sibling topic."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "No machine-generated draft existed for this topic; the lesson was authored directly from live sources, so no generic-draft claims required replacement.",
+    "The lesson deliberately avoids claiming TRUNCATE is 'exactly like DELETE' — sources describe it as having the same effect as an unqualified DELETE but faster and without per-row scanning, which is how the lesson phrases it."
+  ],
+  "correctionsNeeded": [
+    "All example queries are original and were executed against an in-memory SQLite table before inclusion: DELETE with WHERE removed only matching rows; DELETE without WHERE emptied the table while the table itself remained; a foreign key with default NO ACTION blocked deletion of a referenced row; ON DELETE CASCADE removed referencing rows.",
+    "The claim about permanence is framed via the sources' explicit caution language rather than an unsourced 'no undo' assertion; the no-undo framing is presented as practical guidance."
+  ],
+  "rightsIssues": [],
+  "sourceRecords": [
+    {
+      "id": "w3schools-sql-delete",
+      "title": "SQL DELETE Statement",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_delete.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B reference tutorial per subject source-map. Read live on 2026-08-21. Supports: the DELETE statement deletes existing records in a table; syntax DELETE FROM table_name WHERE condition; the WHERE clause specifies which record(s) should be deleted; omitting WHERE deletes all records in the table; caution note to be careful when deleting records. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "postgresql-docs-delete",
+      "title": "PostgreSQL Documentation: DELETE",
+      "provider": "PostgreSQL",
+      "url": "https://www.postgresql.org/docs/current/sql-delete.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A official documentation. Read live on 2026-08-21. Supports: DELETE deletes rows that satisfy the WHERE clause from the specified table; if the WHERE clause is absent the effect is to delete all rows, and the result is a valid but empty table; TRUNCATE provides a faster mechanism to remove all rows from a table. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "sqlite-lang-delete",
+      "title": "SQLite Query Language: DELETE",
+      "provider": "SQLite",
+      "url": "https://www.sqlite.org/lang_delete.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Official documentation. Read live on 2026-08-21. Supports: the DELETE command removes records from the table; if the WHERE clause is not present, all records in the table are deleted; if a WHERE clause is supplied, only rows for which the boolean expression is true are deleted, and rows for which it is false or NULL are retained. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "w3schools-sql-drop-table",
+      "title": "SQL DROP TABLE Statement",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_drop_table.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B reference tutorial per subject source-map. Read live on 2026-08-21. Supports: DROP TABLE permanently deletes an existing table in a database, deleting the entire table and all its content; TRUNCATE TABLE deletes all the records in a table but keeps the table structure, columns, and constraints; contrast with DELETE for the lesson's DELETE vs TRUNCATE vs DROP section. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "postgresql-docs-truncate",
+      "title": "PostgreSQL Documentation: TRUNCATE",
+      "provider": "PostgreSQL",
+      "url": "https://www.postgresql.org/docs/current/sql-truncate.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A official documentation. Read live on 2026-08-21. Supports: TRUNCATE quickly removes all rows from a set of tables; it has the same effect as an unqualified DELETE but is faster because it does not actually scan the tables. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "postgresql-constraints",
+      "title": "PostgreSQL 18 Documentation: 5.5. Constraints",
+      "provider": "PostgreSQL",
+      "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Existing registry id reused with the identical URL. Read live on 2026-08-21. Supports: RESTRICT prevents deletion of a referenced row; the default ON DELETE action is NO ACTION, which usually results in an error while referencing rows remain; CASCADE specifies that when a referenced row is deleted, row(s) referencing it are automatically deleted as well. Facts synthesized; no wording reproduced."
+    },
+    {
+      "id": "microsoft-learn-delete-transact-sql",
+      "title": "DELETE (Transact-SQL)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/statements/delete-transact-sql",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": false,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B official documentation per subject source-map. Read live on 2026-08-21. Supports: DELETE removes one or more rows from a table or view in SQL Server; DELETE FROM without a WHERE clause deletes all rows (example given). Facts synthesized; no wording reproduced."
+    }
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "id": "databases-and-sql:foundations:insert",
+  "subjectSlug": "databases-and-sql",
+  "unitSlug": "foundations",
+  "slug": "insert",
+  "title": "INSERT",
+  "editorialStatus": "READY_TO_PUBLISH",
+  "estimatedMinutes": 8,
+  "tags": [
+    "databases-and-sql",
+    "foundations",
+    "insert"
+  ],
+  "in30Seconds": "INSERT is the SQL command that adds a new row to a table. W3Schools defines INSERT INTO as the statement used to insert new records in a table, and PostgreSQL calls it the statement that populates a table with rows. The basic shape is INSERT INTO table (columns) VALUES (values): INSERT INTO products (name, price, quantity) VALUES ('Ridge tent', 129.99, 24);. Values must line up with the listed columns, the database assigns or checks the primary key, and rows that break its rules are rejected. INSERT changes data permanently, so mistakes are hard to undo.",
+  "whyItMatters": "A database that only reads is a museum: the rows that answer every question had to get in somehow, and INSERT is how they get in. Every new customer, order, or product starts as an insert. INSERT is also the first write command most people meet, and writes are different from reads — they change the stored data permanently. Understanding INSERT teaches the discipline of looking at a table before you change it, and it explains why databases guard their keys and rules: the protections only make sense once you know a bad row is hard to take back.",
+  "learningObjectives": [
+    "Define INSERT as the SQL command that adds a new row to a table, using the working definitions of W3Schools and PostgreSQL.",
+    "Identify the three parts of a basic INSERT statement: the table name, the column list, and the VALUES list.",
+    "Apply the matching rule: the values in an INSERT must line up with the listed columns, one value per column, in the same order.",
+    "Explain what happens to the primary key on insert: the database assigns a new value or checks the one supplied.",
+    "Contrast INSERT with SELECT as a write operation that changes stored data permanently, and recognize that constraint violations cause the database to reject a row."
+  ],
+  "collegeVersion": [
+    {
+      "heading": "The write command that adds rows",
+      "body": "The working definition comes from the people who document SQL itself. W3Schools' SQL tutorial states that the INSERT INTO statement is used to insert new records in a table, and PostgreSQL's documentation puts the same idea in plainer words: the INSERT statement is used to populate a table with rows. SQLite describes the result of the VALUES form the same way, as creating one or more new rows in an existing table. Put the three together and the working definition is short: INSERT adds a new row to a table. That is the entire job. Everything else in this lesson is detail around that one sentence — the shape of the statement, how values find their columns, and what the database checks before it lets a row in."
+    },
+    {
+      "heading": "The basic shape of an INSERT statement",
+      "body": "A basic INSERT statement has three parts, and W3Schools' syntax spells them out: the keyword pair INSERT INTO, the table name, and two parenthesized lists — the columns to fill and the values to put in them. The shape is INSERT INTO table (columns) VALUES (values), as in INSERT INTO products (name, price, quantity) VALUES ('Ridge tent', 129.99, 24);. INSERT INTO introduces the table, the first list names the columns, and VALUES introduces the values that will land in those columns. The statement ends with a semicolon, like every SQL statement in PostgreSQL's tutorial. Read it aloud and it reads like a sentence: insert, into this table, these columns, these values."
+    },
+    {
+      "heading": "Column order and matching",
+      "body": "The rule is simple: values line up with the listed columns in the same order, one value per column. SQLite's documentation states it precisely — when a column-name list is specified, the number of values in each term of the VALUES list must match the number of specified columns. So in INSERT INTO products (name, price, quantity) VALUES ('Ridge tent', 129.99, 24);, the name column receives 'Ridge tent', price receives 129.99, and quantity receives 24. Listing the columns explicitly is also what frees you: PostgreSQL's tutorial notes that the bare VALUES form requires you to remember the order of the columns, while the alternative syntax lets you list the columns in a different order, or even omit some. Columns left out are filled with their default value, or with NULL if none is set, per SQLite."
+    },
+    {
+      "heading": "What happens to the key",
+      "body": "When a new row arrives, the primary key is handled one of two ways; the primary-keys lesson covers the idea in depth, and here it is only a note. If the key column is left out of the insert, the database assigns a value itself — W3Schools explains that an auto-increment field is automatically generated when a new record is inserted. If the key column is included, the database checks the supplied value instead: a primary key must contain unique values, so a row whose key collides with an existing one is rejected. Either way, the database is the gatekeeper for the key — you either let it choose, or you prove your choice is unique."
+    },
+    {
+      "heading": "INSERT and constraints",
+      "body": "A table can carry rules about what its rows may contain, and INSERT is where those rules are enforced. PostgreSQL's constraints chapter explains that SQL allows you to define constraints on columns and tables, and that if a user attempts to store data in a column that would violate a constraint, an error is raised. The attempted row never lands — the database rejects the statement and the table stays as it was. That is the general point, and it is why a failed insert is not a personal failure: it is the database protecting its own rules. The full story of constraints and data quality belongs to the data-integrity lesson, which covers the topic in depth."
+    },
+    {
+      "heading": "Writing versus reading",
+      "body": "INSERT belongs to the writing family of SQL commands, and the contrast with SELECT is the sharpest way to see it. SQLite's SELECT reference states that a SELECT statement does not make any changes to the database; its INSERT reference describes the opposite — the VALUES form creates new rows in an existing table. A SELECT query can be run a hundred times with the same result. An INSERT run once changes the stored table, and the row stays there until some later write removes or alters it. SELECT asks questions; INSERT hands in new rows. That permanence is the difference between reading and writing, and it is why INSERT deserves care. SELECT, update, and delete each have their own lessons."
+    },
+    {
+      "heading": "The honest framing: data enters here",
+      "body": "Every row that will ever matter to a database got there through an insert. New customers, new orders, new products — the information enters through statements like the ones in this lesson, which is why INSERT is what keeps a database alive rather than a snapshot. The honest part is the risk. A misremembered column order, a duplicated key, a wrong price — these are written into the table, and undoing them is not a flick of an undo button. Removing or repairing a bad row takes another write command, which has its own lesson. Look at the table, look at the columns, read the statement once more, then insert."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "INSERT statement",
+      "definition": "The SQL command that adds a new row to a table; its basic form names the table, the columns to fill, and the values for those columns."
+    },
+    {
+      "term": "column list",
+      "definition": "The parenthesized part of an INSERT written after the table name that names the columns receiving the new values."
+    },
+    {
+      "term": "VALUES list",
+      "definition": "The parenthesized part of an INSERT introduced by the keyword VALUES that holds one value per listed column, in the same order."
+    },
+    {
+      "term": "auto-increment",
+      "definition": "A column whose value the database generates automatically when a new row is inserted; often used for primary keys, as in the W3Schools customers example."
+    },
+    {
+      "term": "constraint",
+      "definition": "A rule defined on a table's data; if a row would violate it, the database raises an error and rejects the row."
+    },
+    {
+      "term": "primary key",
+      "definition": "The column or columns that uniquely identify each row in a table; on insert the database assigns a new value or checks the one supplied, and the primary-keys lesson covers it in depth."
+    },
+    {
+      "term": "write operation",
+      "definition": "A database command that changes stored data; INSERT, update, and delete are writes, while SELECT is a read that changes nothing."
+    }
+  ],
+  "eli10": {
+    "simplifiedExplanation": "INSERT adds a new row to a table. You name the table, the columns you want to fill, and the values to put in them: INSERT INTO products (name, price, quantity) VALUES ('Ridge tent', 129.99, 24); adds one row for a new tent. The values must line up with the columns in the same order — first value to first column, second to second, and so on. If you leave the id column out of the list, the database makes a new id for you; if you put in an id that already exists, the database refuses. Rows that break a table's rules are refused too. INSERT writes: the row stays stored until someone removes it, so double-check before you run it.",
+    "analogy": "Think of signing a new member into a club ledger. You open the ledger to the members page, write the name in the name column and the joined date in the joined-date column, one fact per column. The club secretary assigns membership numbers, so you leave that column blank — and if you tried to hand out a number that was already taken, the secretary would say no.",
+    "analogyLimits": "A paper ledger can be crossed out and rewritten with a pencil. A database row is not erased by scribbling: removing it is a separate command, and some databases even keep extra protections around writes. A ledger also has no rules beyond the columns printed on the page, while a database can enforce rules such as 'prices must be positive' and reject rows that break them."
+  },
+  "workedExample": "Trailside Outfitters stocks a products table with columns id, name, price, and quantity. The manager adds a new item by running INSERT INTO products (name, price, quantity) VALUES ('Ridge tent', 129.99, 24);. She leaves id out of the column list, so the database assigns the next id automatically. The new row now sits in the table with the name Ridge tent, the price 129.99, and the quantity 24. Later she tries to add a second tent while including an id that already exists — the database rejects the row, because a primary key must contain unique values.",
+  "commonMistakes": [
+    {
+      "mistake": "Writing the values in a different order than the columns.",
+      "correction": "Values line up positionally: the first value goes to the first listed column. Swap them and the data lands in the wrong columns. List the columns explicitly and match the values one to one."
+    },
+    {
+      "mistake": "Supplying fewer or more values than the number of listed columns.",
+      "correction": "SQLite requires the number of values to match the number of specified columns. Count the columns, then count the values — the statement fails if they do not agree."
+    },
+    {
+      "mistake": "Expecting the database to accept any row, including one that duplicates a key.",
+      "correction": "A primary key must contain unique values, and a row that violates a constraint is rejected with an error. The failed insert changes nothing, so read the error and fix the row."
+    },
+    {
+      "mistake": "Treating INSERT like SELECT, as a harmless thing to run twice.",
+      "correction": "INSERT is a write: each run permanently adds a row to the stored table, so running the same insert twice can create an unwanted extra row. Check the table first, then insert."
+    }
+  ],
+  "compareContrast": [
+    {
+      "a": "INSERT",
+      "b": "SELECT",
+      "distinction": "INSERT writes a new row into the stored table, permanently; SELECT reads data and changes nothing, per SQLite's documentation that a SELECT statement makes no changes to the database."
+    },
+    {
+      "a": "Listing columns explicitly",
+      "b": "Using the bare VALUES form",
+      "distinction": "An explicit column list lets you choose the order and omit columns, and the values still match the listed columns; the bare form requires the values to follow the table's column order, per PostgreSQL."
+    },
+    {
+      "a": "A database-assigned key",
+      "b": "A supplied key value",
+      "distinction": "When the key column is left out, the database generates a new value automatically; when a key value is supplied, the database checks it against the uniqueness requirement and rejects duplicates."
+    }
+  ],
+  "keyTakeaway": "INSERT is how data enters a database: it adds a new row to a table, matching values to the listed columns, while the database assigns or checks the primary key and rejects rows that break its rules — and because INSERT writes, mistakes are hard to undo.",
+  "questionBank": [
+    {
+      "id": "databases-and-sql:foundations:insert:1",
+      "prompt": "What does an INSERT statement do in SQL?",
+      "options": [
+        "Adds a new row to a table.",
+        "Reads data from a table without changing it.",
+        "Changes values already stored in a table.",
+        "Removes rows from a table."
+      ],
+      "correctIndex": 0,
+      "explanation": "W3Schools states that the INSERT INTO statement is used to insert new records in a table, and PostgreSQL describes INSERT as the statement used to populate a table with rows. Reading is SELECT's job, and changing or removing rows belongs to update and delete, which have their own lessons.",
+      "difficulty": "recall",
+      "skill": "Working definition of INSERT",
+      "sourceIds": [
+        "w3schools-sql-insert",
+        "postgresql-tutorial-populate"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:insert:2",
+      "prompt": "Trailside Outfitters runs INSERT INTO products (name, price, quantity) VALUES ('Ridge tent', 129.99, 24);. Which column receives the value 24?",
+      "options": [
+        "The name column.",
+        "The price column.",
+        "The quantity column.",
+        "The id column."
+      ],
+      "correctIndex": 2,
+      "explanation": "Values line up with the listed columns in the same order: name gets 'Ridge tent', price gets 129.99, and quantity gets 24. SQLite requires the number of values to match the number of specified columns, and they are matched positionally.",
+      "difficulty": "application",
+      "skill": "Applying the column-to-value matching rule",
+      "sourceIds": [
+        "sqlite-lang-insert",
+        "postgresql-tutorial-populate"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:insert:3",
+      "prompt": "A trainee writes INSERT INTO products (name, price) VALUES ('Sleeping pad', 49.50);. What happens to the quantity column?",
+      "options": [
+        "The insert fails because every column needs a value.",
+        "The row is created and quantity holds its default value, or NULL if none is set.",
+        "Quantity is filled with the name of the product.",
+        "The insert fails because quantity comes before price."
+      ],
+      "correctIndex": 1,
+      "explanation": "When a column is omitted from the list, SQLite's documentation says the new row is populated with the column's default value, or with NULL if no default is specified. PostgreSQL likewise notes that listing columns explicitly lets you omit some.",
+      "difficulty": "application",
+      "skill": "Understanding what happens to omitted columns",
+      "sourceIds": [
+        "sqlite-lang-insert",
+        "postgresql-tutorial-populate"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:insert:4",
+      "prompt": "A signup form sends INSERT INTO members (member_id, name) VALUES (42, 'Jin Park');, but the database rejects it. What is the most likely reason?",
+      "options": [
+        "member_id already exists, and a primary key must contain unique values.",
+        "The database never allows more than one row per table.",
+        "Names must be inserted before any other column.",
+        "The statement is missing the email column."
+      ],
+      "correctIndex": 0,
+      "explanation": "The database checks the key. W3Schools explains that a primary key constraint ensures unique values, and PostgreSQL says an attempt to store data that would violate a constraint raises an error. A duplicate member_id breaks the uniqueness rule; a missing non-key column would simply get a default or NULL.",
+      "difficulty": "analysis",
+      "skill": "Diagnosing a rejected insert",
+      "sourceIds": [
+        "w3schools-sql-primary-key",
+        "postgresql-constraints"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:insert:5",
+      "prompt": "Which statement best captures how INSERT differs from SELECT?",
+      "options": [
+        "Both commands write rows, but INSERT also sorts them.",
+        "Both commands leave the stored table unchanged.",
+        "INSERT reads rows and SELECT writes them.",
+        "SELECT changes nothing; INSERT permanently adds a row to the stored table."
+      ],
+      "correctIndex": 3,
+      "explanation": "SQLite's documentation states that a SELECT statement does not make any changes to the database, while its INSERT reference describes INSERT as creating new rows in an existing table. INSERT is a write: the row stays stored until a later write removes or changes it.",
+      "difficulty": "understanding",
+      "skill": "Writing versus reading in SQL",
+      "sourceIds": [
+        "sqlite-lang-select",
+        "sqlite-lang-insert"
+      ]
+    }
+  ],
+  "quickCheck": [
+    {
+      "id": "databases-and-sql:foundations:insert:1",
+      "prompt": "What does an INSERT statement do in SQL?",
+      "options": [
+        "Adds a new row to a table.",
+        "Reads data from a table without changing it.",
+        "Changes values already stored in a table.",
+        "Removes rows from a table."
+      ],
+      "correctIndex": 0,
+      "explanation": "W3Schools states that the INSERT INTO statement is used to insert new records in a table, and PostgreSQL describes INSERT as the statement used to populate a table with rows. Reading is SELECT's job, and changing or removing rows belongs to update and delete, which have their own lessons.",
+      "difficulty": "recall",
+      "skill": "Working definition of INSERT",
+      "sourceIds": [
+        "w3schools-sql-insert",
+        "postgresql-tutorial-populate"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:insert:2",
+      "prompt": "Trailside Outfitters runs INSERT INTO products (name, price, quantity) VALUES ('Ridge tent', 129.99, 24);. Which column receives the value 24?",
+      "options": [
+        "The name column.",
+        "The price column.",
+        "The quantity column.",
+        "The id column."
+      ],
+      "correctIndex": 2,
+      "explanation": "Values line up with the listed columns in the same order: name gets 'Ridge tent', price gets 129.99, and quantity gets 24. SQLite requires the number of values to match the number of specified columns, and they are matched positionally.",
+      "difficulty": "application",
+      "skill": "Applying the column-to-value matching rule",
+      "sourceIds": [
+        "sqlite-lang-insert",
+        "postgresql-tutorial-populate"
+      ]
+    },
+    {
+      "id": "databases-and-sql:foundations:insert:3",
+      "prompt": "A trainee writes INSERT INTO products (name, price) VALUES ('Sleeping pad', 49.50);. What happens to the quantity column?",
+      "options": [
+        "The insert fails because every column needs a value.",
+        "The row is created and quantity holds its default value, or NULL if none is set.",
+        "Quantity is filled with the name of the product.",
+        "The insert fails because quantity comes before price."
+      ],
+      "correctIndex": 1,
+      "explanation": "When a column is omitted from the list, SQLite's documentation says the new row is populated with the column's default value, or with NULL if no default is specified. PostgreSQL likewise notes that listing columns explicitly lets you omit some.",
+      "difficulty": "application",
+      "skill": "Understanding what happens to omitted columns",
+      "sourceIds": [
+        "sqlite-lang-insert",
+        "postgresql-tutorial-populate"
+      ]
+    }
+  ],
+  "relatedTopics": [
+    "databases-and-sql:foundations:sql-basics",
+    "databases-and-sql:foundations:select",
+    "databases-and-sql:foundations:primary-keys",
+    "databases-and-sql:foundations:update",
+    "databases-and-sql:foundations:data-integrity"
+  ],
+  "sources": [
+    "w3schools-sql-insert",
+    "postgresql-tutorial-populate",
+    "sqlite-lang-insert",
+    "postgresql-constraints",
+    "w3schools-sql-primary-key",
+    "sqlite-lang-select"
+  ],
+  "provenance": {
+    "sourceProject": "EliExplains original synthesis",
+    "researchStatus": "source-verified",
+    "rightsStatus": "reference-only sources; no source prose adapted",
+    "researchedAt": "2026-08-21",
+    "transformation": "All SQL examples are original and were checked against PostgreSQL, SQLite, and W3Schools documentation for standard syntax; definitions are attributed to their sources, and all lesson prose is original synthesis."
+  },
+  "status": "source-verified",
+  "public": false,
+  "contentHash": "59ef7c6e4c452490"
+}

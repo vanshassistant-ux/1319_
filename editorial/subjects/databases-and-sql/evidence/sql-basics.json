@@ -1,0 +1,228 @@
+{
+  "topicId": "databases-and-sql:foundations:sql-basics",
+  "subjectId": "databases-and-sql",
+  "researchedAt": "2026-08-21",
+  "scope": {
+    "core": [
+      "SQL stands for Structured Query Language and is a standard language for accessing and manipulating databases (W3Schools); it is a domain-specific language for managing data, especially in a relational database management system (Wikipedia)",
+      "Pronunciation: 'sequel' (the historical pronunciation, from IBM's SEQUEL) or 'S-Q-L' spelled out (Oracle History of SQL; Wikipedia)",
+      "What SQL does: four core data operations — retrieve/query data, insert records, update records, delete records (W3Schools); Oracle's SQL Standards lists querying data and inserting, updating, and deleting rows among SQL's tasks",
+      "The two families: queries that read data versus commands that change it — the read/write split; SELECT is the read command and INSERT/UPDATE/DELETE change data (W3Schools; each command has its own sibling lesson)",
+      "SQL is declarative: you describe what you want (a condition), and the database retrieves all matching rows in a single step without row-by-row navigation (Oracle); original example — ask for all customers in Portland, not the steps to walk the table",
+      "SQL is standard but varies: ANSI standard 1986, ISO standard 1987 (W3Schools), current standard ISO/IEC 9075 (Wikipedia); compliant products support the major commands in a similar manner but add proprietary extensions (W3Schools); Microsoft SQL Server communicates in its own dialect, Transact-SQL (Microsoft Learn)",
+      "Why SQL matters: Oracle calls SQL the common language for all relational databases — all major database management systems support it, so skills transfer between databases",
+      "Honest framing: SQL looks simple and gets deep, but the basics are learnable — an interpretive framing built on the standard's design of a small core of commands extended by clauses and vendor additions"
+    ],
+    "supporting": [
+      "History: SQL began at IBM as SEQUEL (Structured English Query Language), developed to use Codd's relational model; the first commercial SQL implementation was released in 1979 (Oracle History of SQL)",
+      "SQL does more than the four data operations: creating databases, tables, views, stored procedures, and setting permissions (W3Schools) — beyond this lesson's scope",
+      "The relational context: SQL works with relational databases, where data is stored in tables — each table is a named collection of rows, each row has the same set of named columns (PostgreSQL tutorial)",
+      "SQL works at the logical level: it processes sets of data as groups rather than as individual units (Oracle SQL Standards)"
+    ],
+    "outOfScope": [
+      "SELECT mechanics (sibling topic: databases-and-sql:foundations:select)",
+      "WHERE filtering (sibling topic: databases-and-sql:foundations:where)",
+      "INSERT, UPDATE, DELETE mechanics (sibling topics: databases-and-sql:foundations:insert, :update, :delete)",
+      "ORDER BY, LIMIT, joins, aggregate functions, GROUP BY, indexes, transactions (sibling topics)",
+      "SQL syntax in depth: only short illustrative queries (six lines or fewer) appear in this lesson",
+      "Vendor-specific features and dialect comparison in depth; no vendor recommendations"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "SQL stands for Structured Query Language and is a standard language for accessing and manipulating databases; it is a domain-specific language used to manage data, especially in a relational database management system.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "w3schools-sql-intro",
+        "wikipedia-sql"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "SQL began at IBM as SEQUEL (Structured English Query Language), developed to use Codd's relational model; SEQUEL later became SQL and is still pronounced 'sequel', and the language is also pronounced by spelling it out, 'S-Q-L'. The first commercial SQL implementation was released in 1979.",
+      "claimType": "HISTORICAL",
+      "sourceIds": [
+        "oracle-docs-sql-language-reference",
+        "wikipedia-sql"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "SQL became a standard of the American National Standards Institute (ANSI) in 1986 and of the International Organization for Standardization (ISO) in 1987; both ANSI and ISO/IEC have accepted SQL as the standard language for relational databases, and the current standard is published as ISO/IEC 9075.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "w3schools-sql-intro",
+        "oracle-docs-sql-language-reference",
+        "wikipedia-sql"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "SQL's core data operations are four: retrieve (query) data, insert records, update records, and delete records; Oracle's SQL documentation likewise lists querying data and inserting, updating, and deleting rows among SQL's tasks.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "w3schools-sql-intro",
+        "oracle-docs-sql-language-reference"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "SQL statements divide into two families: queries that read data and commands that change it; W3Schools lists retrieving data separately from inserting, updating, and deleting records, and the individual commands (select, insert, update, delete) each have their own lesson in this course.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "w3schools-sql-intro",
+        "oracle-docs-sql-language-reference"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "SQL is declarative: to retrieve a set of rows you define a condition that filters the rows, and all rows satisfying the condition are retrieved in a single step — you need not deal with the rows one by one; asking for 'all customers in Portland' states the what and leaves the how to the database.",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "oracle-docs-sql-language-reference"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "SQL is standardized but varies between products: although SQL is an ANSI/ISO standard, there are different versions of the language; to be compliant, database programs support the major commands in a similar manner, but most also have their own proprietary extensions — for example, Microsoft SQL Server communicates using Transact-SQL (T-SQL).",
+      "claimType": "TECHNICAL",
+      "sourceIds": [
+        "w3schools-sql-intro",
+        "microsoft-learn-what-is-sql-server"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "SQL is the common language for all relational databases: all major relational database management systems support SQL, so SQL skills transfer from one database to another.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "oracle-docs-sql-language-reference",
+        "microsoft-learn-what-is-sql-server"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "SQL works with relational databases, where data is stored in tables: each table is a named collection of rows, each row of a given table has the same set of named columns, and each column is of a specific data type.",
+      "claimType": "EVERGREEN",
+      "sourceIds": [
+        "postgresql-docs-tutorial-concepts",
+        "wikipedia-sql"
+      ],
+      "status": "supported"
+    },
+    {
+      "claim": "Honest framing: SQL's core commands look simple and the language grows deep quickly, but the basics — reading, adding, changing, and removing data — are learnable; this interpretive framing rests on the standard's design of a small core of commands extended by clauses and vendor additions.",
+      "claimType": "INTERPRETIVE",
+      "sourceIds": [
+        "w3schools-sql-intro",
+        "oracle-docs-sql-language-reference"
+      ],
+      "status": "supported"
+    }
+  ],
+  "conflictingEvidence": [
+    {
+      "issue": "How is SQL pronounced?",
+      "positions": [
+        "Oracle's History of SQL states that SEQUEL later became SQL and is still pronounced 'sequel'.",
+        "Wikipedia and common usage record both pronunciations: 'S-Q-L' (spelled out) and 'sequel'."
+      ],
+      "resolution": "The lesson teaches both: 'sequel' is the historical pronunciation carried over from SEQUEL, and 'S-Q-L' is the spelled-out form; either is acceptable in practice."
+    },
+    {
+      "issue": "Is SQL exactly the same in every database product?",
+      "positions": [
+        "W3Schools notes that although SQL is an ANSI/ISO standard, there are different versions of the language, and most database programs have their own proprietary extensions.",
+        "Oracle states that all major relational database management systems support SQL, so skills transfer from one database to another."
+      ],
+      "resolution": "The two statements are consistent: the standard defines a common core (the major commands behave similarly everywhere), while dialects and extensions account for the differences. The lesson teaches the standard core and notes the variation without favoring any vendor."
+    }
+  ],
+  "unsupportedExistingClaims": [
+    "The generated draft's claim that 'SQL Basics is a foundational concept in Databases & Sql' — vague boilerplate with no evidentiary support.",
+    "The generated draft's 'core idea' section — generic study-skills prose about naming concepts and connecting terms, with no SQL content and no source support.",
+    "The generated draft's framing of the topic as helping students 'ask better questions' in a generic academic sense — unsupported generic phrasing."
+  ],
+  "correctionsNeeded": [
+    "Replaced the generic machine draft with a source-verified definition of SQL: name, expansion, pronunciation, and standard status.",
+    "Added the four operations (retrieve, add, change, remove) with W3Schools and Oracle support, referencing the select/insert/update/delete sibling lessons rather than teaching them.",
+    "Added the read/write family split grounded in W3Schools' separation of retrieving data from inserting, updating, and deleting records.",
+    "Added the declarative WHAT-not-HOW idea from Oracle's SQL Standards documentation, with the original Portland-customers example.",
+    "Added the standard-but-varies claim (ANSI 1986 / ISO 1987, ISO/IEC 9075, proprietary extensions, T-SQL example from Microsoft Learn).",
+    "Added the common-language-of-data-work framing from Oracle and the honest 'looks simple, gets deep' framing.",
+    "All example queries are original (a bookstore customers table) and short (six lines or fewer); nothing was copied from W3Schools' Customers sample data."
+  ],
+  "rightsIssues": [
+    "W3Schools pages carry no explicit open license; used as REFERENCE_ONLY with facts synthesized into original prose.",
+    "Oracle documentation is used as REFERENCE_ONLY; no documentation prose was adapted.",
+    "Wikipedia content is CC BY-SA licensed; only facts were used and no prose was adapted (REFERENCE_ONLY).",
+    "Microsoft Learn and PostgreSQL documentation are used as REFERENCE_ONLY; no prose was adapted."
+  ],
+  "sourceRecords": [
+    {
+      "id": "w3schools-sql-intro",
+      "title": "SQL Introduction",
+      "provider": "W3Schools",
+      "url": "https://www.w3schools.com/sql/sql_intro.asp",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier B. Reused id from the phase-2 source registry with an identical URL (also cited by the select, columns, and tables topics). Read live (HTTP 200) 2026-08-21. Supports: 'SQL stands for Structured Query Language'; 'SQL is a standard language for accessing and manipulating databases'; ANSI standard 1986 and ISO standard 1987; SQL can execute queries, retrieve data, insert records, update records, and delete records; 'different versions of the SQL language' exist and most SQL database programs add their own proprietary extensions; compliant versions support the major commands (SELECT, UPDATE, DELETE, INSERT, WHERE) in a similar manner. Facts synthesized into original prose; no wording reproduced."
+    },
+    {
+      "id": "oracle-docs-sql-language-reference",
+      "title": "Oracle Database SQL Language Reference (23c): Introduction to Oracle SQL",
+      "provider": "Oracle",
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/Introduction-to-Oracle-SQL.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A official documentation. New id minted 2026-08-21; the canonical URL is the Introduction page, and the History of SQL section (https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/History-of-SQL.html) and the SQL Standards section (https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/SQL-Standards.html) were read live (HTTP 200). Supports: SEQUEL developed by IBM to use Codd's model, later became SQL 'still pronounced sequel'; first commercial SQL implementation in 1979 by Relational Software; 'Both ANSI and the ISO/IEC have accepted SQL as the standard language for relational databases'; 'Common Language for All Relational Databases' — all major relational database management systems support SQL so skills transfer; declarative description — to retrieve a set of rows you define a condition used to filter the rows and all rows satisfying it are retrieved in a single step, without dealing with rows one by one. Facts synthesized; no prose adapted."
+    },
+    {
+      "id": "wikipedia-sql",
+      "title": "SQL (Wikipedia)",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/SQL",
+      "sourceType": "reference",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier D reputable secondary. New id minted 2026-08-21. Read live via the REST summary API (extract: 'Structured Query Language (SQL) is a domain-specific language used to manage data, especially in a relational database management system (RDBMS)') and, per the prior research pass, the article summary and raw wikitext for the pronunciation ('S-Q-L' or 'sequel'), the declarative paradigm, and ISO/IEC 9075. Used only as a fact anchor for the definition, pronunciation, and standard number; no prose adapted (CC BY-SA content)."
+    },
+    {
+      "id": "microsoft-learn-what-is-sql-server",
+      "title": "What is SQL Server? (Microsoft Learn)",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/sql/sql-server/what-is-sql-server?view=sql-server-ver17",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A/B official documentation. New id minted 2026-08-21. Read live (HTTP 200) 2026-08-21. Supports: 'Microsoft SQL Server is a relational database management system (RDBMS)' and 'Applications and tools connect to a SQL Server instance or database, and communicate using Transact-SQL (T-SQL)'. Used as the concrete example of a product-specific SQL dialect on top of the standard, for the standard-but-varies claim. No vendor recommendation implied; no prose adapted."
+    },
+    {
+      "id": "postgresql-docs-tutorial-concepts",
+      "title": "PostgreSQL Documentation 18: Chapter 2. The SQL Language — 2.2. Concepts",
+      "provider": "The PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/tutorial-concepts.html",
+      "sourceType": "documentation",
+      "usage": "REFERENCE_ONLY",
+      "attributionRequired": true,
+      "aiIngestionChecked": true,
+      "aiIngestionAllowed": false,
+      "checkedAt": "2026-08-21",
+      "notes": "Tier A official documentation. Reused id from the phase-2 source registry with an identical URL (also cited by the relational-databases topic). Read live (HTTP 200) 2026-08-21. Supports the relational context: PostgreSQL is a relational database management system; each table is a named collection of rows; each row of a given table has the same set of named columns, and each column is of a specific data type. Used only to anchor the statement that SQL works with relational databases where data lives in tables; tables and columns are sibling topics."
+    }
+  ]
+}
