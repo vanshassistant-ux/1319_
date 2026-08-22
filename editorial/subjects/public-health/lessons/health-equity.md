@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Health equity is the state in which everyone has a fair and just opportunity to be as healthy as possible. That is the working definition used by Healthy People 2030, the U.S. government's national health goals led by the Department of Health and Human Services. Equity is not the same as equality: equality treats everyone identically, while equity aims for fair outcomes by removing barriers that hold some people back. The goal is simple — a fair chance at health for everyone — and the honest truth is that equity is a direction, not a finish line.
+Health equity is the state in which everyone has a fair and just opportunity to be as healthy as possible. That is the working definition used by Healthy People 2030, the U.S. government's national health goals led by HHS. Equity is not the same as equality: equality treats everyone identically, while equity aims for fair outcomes by removing barriers that hold some people back. The goal is simple — a fair chance at health for everyone — and the honest truth is that equity is a direction, not a finish line.
 
 ## Why This Matters
 
@@ -21,7 +21,7 @@ Health does not begin at the clinic door. People start from different places —
 
 ### What health equity is
 
-Healthy People 2030, the national public health goals led by the U.S. Department of Health and Human Services, carries a working definition of health equity: everyone has a fair and just opportunity to be as healthy as possible. The CDC states the same idea in nearly identical words — health equity is the state in which everyone has a fair and just opportunity to attain their highest level of health — and adds what achieving it requires: focused and ongoing societal efforts to address historical and contemporary injustices, overcome economic, social, and other obstacles to health and health care, and eliminate preventable health disparities. The World Health Organization phrases it as everyone being able to attain their full potential for health and well-being, and defines equity itself as the absence of unfair, avoidable, or remediable differences among groups of people. The wording differs; the core idea does not. Health equity is not a private matter between a patient and a doctor. It is a statement about how a society shares the chance to be healthy.
+Healthy People 2030, the national public health goals led by HHS, carries a working definition of health equity: everyone has a fair and just opportunity to be as healthy as possible. The CDC states the same idea in nearly identical words — health equity is the state in which everyone has a fair and just opportunity to attain their highest level of health — and adds what achieving it requires: focused and ongoing societal efforts to address historical and contemporary injustices, overcome economic, social, and other obstacles to health and health care, and eliminate preventable health disparities. The World Health Organization phrases it as everyone being able to attain their full potential for health and well-being, and defines equity itself as the absence of unfair, avoidable, or remediable differences among groups of people. The wording differs; the core idea does not. Health equity is not a private matter between a patient and a doctor. It is a statement about how a society shares the chance to be healthy.
 
 ### Equity versus equality
 

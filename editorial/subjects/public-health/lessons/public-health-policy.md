@@ -10,7 +10,7 @@ Personal choices matter, but the rules around them may matter more. A doctor can
 
 ## Learning Objectives
 
-- Define public health policy as the laws, regulations, and decisions that protect and improve population health, attributing the working definition to the WHO Health Promotion Glossary and the CDC essential-services framework.
+- Define public health policy as the laws, regulations, and decisions that protect and improve population health, attributing the working definition to the WHO health-promotion glossary and the CDC essential-services framework.
 - Explain why policy matters, that rules reach everyone at once, using an original example.
 - Name the four levels of public health policy, local, state, national, and global, with one original example for each.
 - Describe the main policy tools, laws, regulations, taxes, funding, and standards, with one line on each.
@@ -21,7 +21,7 @@ Personal choices matter, but the rules around them may matter more. A doctor can
 
 ### Rules for health: what public health policy is
 
-The World Health Organization's Health Promotion Glossary defines health policy as a formal statement or procedure within institutions, notably government, that defines priorities and the parameters for action in response to health needs, available resources, and other political pressures. The glossary adds that health policy is often enacted through legislation or other forms of rule-making. The CDC's 10 Essential Public Health Services say the same thing from the practice side: the framework includes creating, championing, and implementing policies, plans, and laws that impact health, and utilizing legal and regulatory actions designed to improve and protect the public's health. Put the two together, and public health policy is the laws, regulations, and decisions that protect and improve population health. Notice what the definition does not say: it does not say advice or education. Policy is a rule, and rules bind.
+The World Health Organization's Health Promotion Glossary defines health policy as a formal statement or procedure within institutions, notably government, that defines priorities and the parameters for action in response to health needs, available resources, and other political pressures. The glossary adds that health policy is often enacted through legislation or other forms of rule-making. The CDC's essential-services framework says the same thing from the practice side: the framework includes creating, championing, and implementing policies, plans, and laws that impact health, and utilizing legal and regulatory actions designed to improve and protect the public's health. Put the two together, and public health policy is the laws, regulations, and decisions that protect and improve population health. Notice what the definition leaves out: it does not say advice or education. Policy is a rule, and rules bind.
 
 ### Why policy matters: rules reach everyone at once
 
@@ -45,7 +45,7 @@ Policies are choices, and every choice has a cost. A tobacco tax saves lives and
 
 ### The honest framing: the lever that moves the whole population
 
-The CDC's Ten Great Public Health Achievements list reads like a policy catalog: motor-vehicle safety, safer workplaces, fluoridation of drinking water, vaccination, tobacco control. Since 1900 the average American lifespan lengthened by more than 30 years, and CDC attributes about 25 of those years to public health advances, most of them delivered through rules. That is the honest framing: policy is the lever that moves the whole population. It is not the only lever, it is not always pulled wisely, but when it is pulled well, it moves everyone at once.
+The CDC's Ten Great Public Health Achievements list reads like a policy catalog: motor-vehicle safety, safer workplaces, fluoridation of drinking water, vaccination, tobacco control. The average American lifespan has lengthened by more than 30 years since 1900, and CDC attributes about 25 of those years to public health advances, most of them delivered through rules. That is the honest framing: policy is the lever that moves the whole population. It is not the only lever, it is not always pulled wisely, but when it is pulled well, it moves everyone at once.
 
 ## Key Vocabulary
 

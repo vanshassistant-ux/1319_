@@ -106,6 +106,17 @@ Public health is a team sport played by many kinds of workers. Health department
 - U.S. Centers for Disease Control and Prevention (CDC), *Ten Great Public Health Achievements — United States, 1900-1999* (MMWR Weekly, April 2, 1999 / 48(12);241-243; U.S. government work; read via Wayback Machine capture 20260807162606). https://www.cdc.gov/mmwr/preview/mmwrhtml/00056796.htm — the ten achievements list; vaccination eradicated smallpox and controlled measles, rubella, tetanus, diphtheria, and Hib; seat belts, child safety seats, and helmets contributed to large reductions in motor-vehicle deaths; clean water and improved sanitation dramatically reduced typhoid and cholera; lifespan lengthened by more than 30 years since 1900, about 25 years attributable to public health.
 - U.S. Centers for Disease Control and Prevention (CDC), *Ten Great Public Health Achievements — United States, 2001-2010* (MMWR Weekly, May 20, 2011 / 60(19);619-623; U.S. government work; read via Wayback Machine capture 20260808182559). https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6019a5.htm — life expectancy at birth rose from 47.3 years (1900) to 76.8 (2000); motor-vehicle deaths fell with safer vehicles, roadways, and road use; 49 states and DC enacted adult seat belt laws and all 50 states and DC enacted child passenger protection.
 
+## Common Mistakes
+
+**1. Public health is just health care for people who cannot afford a doctor.**
+**2. Public health only swings into action during outbreaks and emergencies.**
+**3. A public health measure only counts as a success if we can name the people it saved.**
+**4. Public health work is done by doctors and nurses in hospitals.**
+
+## Key Takeaway
+
+Public health protects whole populations by preventing problems before they start, and its greatest wins — safe water, vaccines, seat belts — are the ones that make bad news disappear. When it works, the absence of disaster is the only evidence.
+
 ## Related Topics
 
 - public-health:foundations:population-health

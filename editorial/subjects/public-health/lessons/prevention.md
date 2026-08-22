@@ -21,11 +21,11 @@ The cure gets the headlines; prevention does the work. Most of the health gains 
 
 ### What prevention means
 
-Prevention is the part of public health that acts before trouble. The working definition used here comes from the World Health Organization's Health Promotion Glossary of Terms (2021): disease prevention describes measures that reduce the occurrence of risk factors, prevent the occurrence of disease, arrest its progress, and reduce its consequences once established. Notice the arc: prevention is not one move but a whole timeline. It acts before a disease exists, while a disease is forming but silent, and after a disease has arrived. A definition this wide keeps prevention from being reduced to don't get sick.
+Prevention is the arm of public health that acts before trouble. The working definition used here follows the WHO Health Promotion Glossary of Terms (2021): disease prevention describes measures that reduce the occurrence of risk factors, prevent the occurrence of disease, arrest its progress, and reduce its consequences once established. Notice the arc: prevention is not one move but a whole timeline. It acts before a disease exists, while a disease is forming but silent, and after a disease has arrived. A definition this wide keeps prevention from being reduced to don't get sick.
 
 ### The three levels
 
-Primary prevention stops a health problem before it ever starts. The WHO glossary describes it as lowering risk factors common to many diseases, such as tobacco and alcohol use, obesity, and high blood pressure, so the initial occurrence of a disorder never happens. An original example: a neighborhood cooking class teaches families to prepare meals with less salt, aiming to keep high blood pressure from developing at all. Secondary prevention finds a problem early, while it is still silent, so it can be arrested or slowed. The WHO glossary points to screening and routine health checks, and MedlinePlus notes that screening tests look for diseases before you have symptoms, when they are easier to treat. An original example: a pharmacy offers a ten-minute blood sugar check, and a customer learns her levels are climbing years before diabetes would announce itself. Tertiary prevention manages an illness or injury that is already established, to avoid deterioration and complications, such as through rehabilitation. An original example: a stroke survivor works with a therapist to regain walking balance, lowering the chance of a second, worse fall.
+Primary prevention stops a health problem before it ever starts. The WHO glossary describes it as lowering risk factors common to many diseases, such as tobacco and alcohol use, obesity, and high blood pressure, so the first occurrence of a disorder never happens. An original example: a neighborhood cooking class teaches families to prepare meals with less salt, aiming to keep high blood pressure from developing at all. Secondary prevention finds a problem early, while it is still silent, so it can be arrested or slowed. The WHO glossary points to screening and routine health checks, and MedlinePlus notes that screening tests look for diseases before you have symptoms, when they are easier to treat. An original example: a pharmacy offers a ten-minute blood sugar check, and a customer learns her levels are climbing years before diabetes would announce itself. Tertiary prevention manages an illness or injury that is already established, to avoid deterioration and complications, such as through rehabilitation. An original example: a stroke survivor works with a therapist to regain walking balance, lowering the chance of a second, worse fall.
 
 ### The prevention mindset: cheaper and kinder
 
@@ -33,7 +33,7 @@ The core argument is simple: it is usually cheaper and kinder to stop a problem 
 
 ### Who acts
 
-Prevention is a relay with four runners. Individuals act, by choosing daily habits that lower their own risk, like buckling a seat belt or walking instead of driving. Clinicians act, by screening patients and offering preventive care at the right moment. Communities act, by organizing programs and changing shared conditions, like a church hosting a blood-pressure clinic or a city building a walking trail. Policy acts, by making the healthy choice the easy choice through laws and budgets, like smoke-free workplace rules or a sugary-drink tax. The American Public Health Association's classic description captures this spread: public health is the science and art of preventing disease through the organized efforts and informed choices of society, organizations, communities, and individuals.
+Prevention is a relay with four runners. Individuals act, by choosing daily habits that lower their own risk, like buckling a seat belt or walking instead of driving. Clinicians act, by screening patients and offering preventive care at the right moment. Communities act, by organizing programs and changing shared conditions, like a church hosting a blood-pressure clinic or a city building a walking trail. Policy acts, by making the healthy choice the easy choice through laws and budgets, like smoke-free workplace rules or a sugary-drink tax. The American Public Health Association's classic description captures this spread: public health is the science and art of preventing disease through society's organized efforts and informed choices.
 
 ### Prevention and risk
 
@@ -45,7 +45,7 @@ Prevention is powerful, but it is not magic. Some diseases cannot yet be stopped
 
 ### The honest framing: quiet work behind the loud cure
 
-Prevention rarely makes a dramatic entrance. No one celebrates the heart attack that never happened or the car crash that never occurred. CDC's list of the ten great public health achievements of the twentieth century makes the pattern visible: vaccination, motor-vehicle safety, safer workplaces, control of infectious diseases, decline in deaths from heart disease and stroke, safer foods, healthier mothers and babies, fluoridation of drinking water, and recognition of tobacco as a health hazard. Almost every item is quiet and unglamorous, and together they added roughly twenty-five years to the average American lifespan. The loud cure is the surgery that saves one life; the quiet work is the law, the vaccine, the clean water, the health check that save thousands without a headline.
+Prevention rarely makes a dramatic entrance. No one celebrates the heart attack that never happened or the car crash that never occurred. the CDC's roster of the twentieth century's great public health achievements illustrates the pattern, from vaccination and motor-vehicle safety to safer workplaces, tobacco control, and safer foods, healthier mothers and babies, fluoridation of drinking water, and recognition of tobacco as a health hazard. Almost every item is quiet and unglamorous, and together they added roughly twenty-five years to the average American lifespan. The loud cure is the surgery that saves one life; the quiet work is the law, the vaccine, the clean water, the health check that save thousands without a headline.
 
 ## Key Vocabulary
 
@@ -81,7 +81,7 @@ Riverton's health office notices that falls are the leading cause of injury amon
 4. **Calling a screening or early-detection test primary prevention.**
    - *Correction:* Primary prevention stops the problem before it starts; secondary prevention finds it early. A blood-pressure check is secondary; a salt-reduction cooking class is primary.
 5. **Judging prevention by how visible it is, and assuming quiet programs do little.**
-   - *Correction:* The quiet interventions, clean water, seat-belt laws, and tobacco control, are among the most powerful in public health. Success in prevention often looks like nothing happening.
+   - *Correction:* The quiet interventions, clean water, seat-belt laws, and tobacco control, are among the most powerful in public health; success in prevention often looks like nothing happening.
 
 ## Practice Question Bank
 
@@ -124,6 +124,18 @@ Riverton's health office notices that falls are the leading cause of injury amon
    - D. Prevention works for injuries but not for chronic diseases.
 
    **Answer: C.** The honest note is that prevention is powerful but not absolute: some diseases cannot yet be stopped, and that is precisely why tertiary prevention exists. CDC likewise notes that many chronic diseases are preventable but not all. The other options overclaim prevention's power or narrow its scope.
+
+## Key Takeaway
+
+Prevention is acting before trouble: stopping disease and injury before they happen, catching them early, and limiting their damage. It is usually cheaper and kinder than treatment, and it is the quiet work behind the loud cure.
+
+## Related Topics
+
+- public-health:foundations:primary-prevention
+- public-health:foundations:secondary-prevention
+- public-health:foundations:tertiary-prevention
+- public-health:foundations:risk
+- public-health:foundations:vaccination
 
 ## Sources
 

@@ -21,7 +21,7 @@ The diseases and injuries that never happen are the ones nobody hears about, yet
 
 ### What primary prevention is
 
-Primary prevention is the branch of public health that acts before trouble exists. The working definition used here comes from the World Health Organization's Health Promotion Glossary of Terms (2021), which describes primary prevention as directed at lowering the prevalence of risk factors common to a range of diseases — tobacco and alcohol use, obesity, high blood pressure — in order to prevent the initial occurrence of a disorder, and as including actions that inhibit the environmental, economic, and social conditions known to increase those risks. In plainer words: primary prevention is anything done to stop a disease or injury before it ever occurs.
+Primary prevention steps in before trouble exists. The definition this lesson uses follows the WHO health-promotion glossary (2021), which describes primary prevention as directed at lowering the prevalence of risk factors common to a range of diseases — tobacco and alcohol use, obesity, high blood pressure — in order to prevent the initial occurrence of a disorder, and as including actions that inhibit the environmental, economic, and social conditions known to increase those risks. In plainer words: primary prevention is anything done to stop a disease or injury before it ever occurs.
 
 ### The idea: before the first case
 
@@ -37,11 +37,11 @@ Primary prevention is one of three levels, and the difference between them is ti
 
 ### Who does it
 
-Three kinds of actors do primary prevention. Individuals, by choosing habits and precautions that lower their own risk — an original example: a home cook keeps raw chicken on its own cutting board, so salmonella never reaches the salad. Communities, by organizing programs and changing shared spaces — an original example: a neighborhood association raises money for speed bumps and a crosswalk on the street where children walk to school. Policy, by writing laws, budgets, and infrastructure that make the healthy choice the easy choice — an original example: a state requires smoke detectors in every rental unit, so protection does not depend on each tenant's initiative. APHA's classic description of public health names exactly this spread: the organized efforts and informed choices of society, organizations, communities, and individuals.
+Three kinds of actors do primary prevention. Individuals, by choosing habits and precautions that lower their own risk — an original example: a home cook keeps raw chicken on its own cutting board, so salmonella never reaches the salad. Communities, by organizing programs and changing shared spaces — an original example: a neighborhood association raises money for speed bumps and a crosswalk on the street where children walk to school. Policy, by writing laws, budgets, and infrastructure that make the healthy choice the easy choice — an original example: a state requires smoke detectors in every rental unit, so protection does not depend on each tenant's initiative. APHA's classic description of public health names exactly this spread: the organized efforts and informed choices of society, organizations, and individuals.
 
 ### The honest note: invisible when it works
 
-Primary prevention is invisible when it works. The heart attack that never happened produces no ambulance call, no surgery, no headline; a prevented case leaves no record at all. The better prevention works, the harder it is to point at. CDC's list of the ten great public health achievements of the twentieth century makes the pattern visible: vaccination, motor-vehicle safety, safer workplaces, control of infectious diseases through clean water and sanitation. Together they added roughly twenty-five years to the average American lifespan, and almost none of that work made dramatic news. In primary prevention, success often looks exactly like nothing happening.
+Primary prevention is invisible when it works. The heart attack that never happened produces no ambulance call, no surgery, no headline; a prevented case leaves no record at all. The better prevention works, the harder it is to point at. the CDC's roll call of the last century's great public health achievements makes the pattern visible: vaccination, motor-vehicle safety, safer workplaces, control of infectious diseases through clean water and sanitation. Together those wins extended the average American lifespan by roughly twenty-five years, and almost none of that work made dramatic news. In primary prevention, success often looks exactly like nothing happening.
 
 ### The honest framing: the work that makes other care unnecessary
 
@@ -124,7 +124,7 @@ Primary prevention stops disease and injury before they start, and it works best
 - C. Because it only works for chronic diseases, which attract little attention.
 - D. Because its success is an event that never happens, so there is nothing dramatic to report.
 
-**Key: D.** The honest note: a prevented heart attack or car crash leaves no ambulance call, no surgery, no headline — success in primary prevention looks like nothing happening. CDC's list of ten great public health achievements shows the pattern: vaccination, motor-vehicle safety, and clean water quietly added about twenty-five years to the average American lifespan without dramatic news. The other options misstate where primary prevention happens and what it targets.
+**Key: D.** The honest note: a prevented heart attack or car crash leaves no ambulance call, no surgery, no headline — success in primary prevention looks like nothing happening. the CDC's roster of ten great public health achievements shows the pattern: vaccination, motor-vehicle safety, and clean water quietly added about twenty-five years to the average American lifespan without dramatic news. The other options misstate where primary prevention happens and what it targets.
 
 **Q5.** Which list names the three kinds of actors on which primary prevention depends?
 
@@ -133,7 +133,7 @@ Primary prevention stops disease and injury before they start, and it works best
 - C. Scientists, insurers, and drug companies.
 - D. Teachers, parents, and coaches.
 
-**Key: B.** Primary prevention is carried out by individuals (daily habits and precautions), communities (shared spaces and programs), and policy (laws, budgets, and infrastructure). APHA's description of public health names the organized efforts and informed choices of society, organizations, communities, and individuals, and the WHO glossary's primary-prevention description explicitly includes actions that inhibit environmental, economic, and social conditions — the policy layer. The other lists describe treatment, financing, or specific professions, not the three actor groups.
+**Key: B.** Primary prevention is carried out by individuals (daily habits and precautions), communities (shared spaces and programs), and policy (laws, budgets, and infrastructure). APHA's description of public health names the organized efforts and informed choices of society, organizations, and individuals, and the WHO glossary's primary-prevention description explicitly includes actions that inhibit environmental, economic, and social conditions — the policy layer. The other lists describe treatment, financing, or specific professions, not the three actor groups.
 
 ## Sources
 

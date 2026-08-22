@@ -41,7 +41,7 @@ Three familiar shapes cover most of the work. Campaigns: mass communication that
 
 ### The honest note: promotion works best when environments support it
 
-Health promotion is powerful, but it is not a magic phrase: a campaign's message lands in a world that either helps or hinders it. The Charter states the reality bluntly: people cannot achieve their fullest health potential unless they can take control of the things that determine their health, and that control needs a secure foundation in a supportive environment. The U.S. Healthy People 2030 framework agrees: the conditions in the environments where people are born, live, learn, work, play, worship, and age affect health outcomes and risks. So a vegetable campaign in a district whose only grocery store closed will underperform, not because the message is weak but because the environment is missing. Honest promotion plans the environment first.
+Health promotion is powerful, but it is not a magic phrase: a campaign's message lands in a world that either helps or hinders it. The Charter states the reality bluntly: people cannot achieve their fullest health potential unless they can take control of the things that determine their health, and that control needs a secure foundation in a supportive environment. The U.S. Healthy People 2030 framework agrees: the settings where people are born, live, work, learn, play, worship, and age shape health outcomes and risks. So a vegetable campaign in a district whose only grocery store closed will underperform, not because the message is weak but because the environment is missing. Honest promotion plans the environment first.
 
 ### The honest framing: making the healthy choice the easy choice
 

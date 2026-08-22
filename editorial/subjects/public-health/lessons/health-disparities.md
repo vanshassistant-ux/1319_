@@ -20,15 +20,15 @@ Disparities matter because they show where public health's work is unfinished. I
 
 ### What a health disparity is
 
-The working definition used across this lesson comes from the agencies that track these differences. Healthy People 2030, the U.S. Department of Health and Human Services' national health plan, defines a health disparity as a particular type of health difference that is closely linked with social, economic, or environmental disadvantage. The National Institutes of Health defines a health disparity as a measurable difference in health that exists between specific population groups. The World Health Organization adds the word that matters most: equity means the absence of unfair, avoidable, or remediable differences among groups of people. Put the three together and you get the working definition this lesson uses: a health disparity is an avoidable, measurable difference in health outcomes between groups of people, closely tied to disadvantage. Three parts of that definition do real work. The difference must be measurable, so it can be seen in data, not just felt. It must run between groups, not between individuals. And it must be avoidable, which is what separates a disparity from a fact of nature. A gap that nothing could change would be sad, but it would not be a disparity; a gap that could be narrowed is a public health problem with a name.
+The working definition used across this lesson comes from the agencies that track these differences. Healthy People 2030, the U.S. Department of Health and Human Services' national health plan, defines a health disparity as a particular type of health difference that is closely linked with social, economic, or environmental disadvantage. The National Institutes of Health defines a health disparity as a measurable difference in health that exists between specific population groups. The World Health Organization adds the word that matters most: equity means no unfair, avoidable, or remediable differences among groups. Put the three together and you get the working definition this lesson uses: a health disparity is an avoidable, measurable difference in health outcomes between groups of people, closely tied to disadvantage. Three parts of that definition do real work. The difference must be measurable, so it can be seen in data, not just felt. It must run between groups, not between individuals. And it must be avoidable, which is what separates a disparity from a fact of nature. A gap that nothing could change would be sad, but it would not be a disparity; a gap that could be narrowed is a public health problem with a name.
 
 ### Who is affected, and how disparities show up
 
-Disparities are measured along many group dimensions, and the official lists are long: race and ethnicity, income and education, geography, disability, sex and gender, sexual orientation, age, and more. This lesson keeps to five, each stated factually. Race and ethnicity: health outcomes differ across racial and ethnic groups in ways that are not explained by biology. Income: people with lower income face higher rates of many chronic conditions. Geography: where people live matters, from rural areas with fewer services to neighborhoods with more pollution. Disability: people living with disabilities experience differences in health and in care. Gender identity: transgender and gender-diverse people face health differences and barriers of their own. The same point holds across all five: the difference is about the conditions groups live in, not something fixed inside them. Disparities show up in three main places. Disease rates: how many people get certain diseases, how severe the diseases are, and how many die from them. Life expectancy: how long people in a group live on average. Care access: whether people can get health care when they need it, from insurance to transportation to a provider who will see them.
+Disparities are measured along many group dimensions, and the official lists are long: race and ethnicity, income and education, geography, disability, sex and gender, sexual orientation, age, and more. This lesson keeps to five, each stated factually. Race and ethnicity: health outcomes differ across racial and ethnic groups in ways that are not explained by biology. Income: people with lower income face higher rates of many chronic conditions. Geography: where people live matters, from rural areas with fewer services to neighborhoods with more pollution. Disability: people living with disabilities experience differences in health and in care. Gender identity: transgender and gender-diverse people face health differences and barriers of their own. The same point holds across all five: the difference is about the conditions groups live in, not something fixed inside them. Disparities show up in three main places. Disease rates: how many people get certain diseases, how severe those diseases are, and how many die from them. Life expectancy: how long people in a group live on average. Care access: whether people can get health care when they need it, from insurance to transportation to a provider who will see them.
 
 ### What drives them, and how disparities are measured
 
-Three kinds of drivers appear again and again in the sources. Social determinants are the conditions in which people are born, grow, live, work, and age; they are a sibling topic of this lesson with their own full treatment. Bias matters too: Healthy People 2030 names structural racism and systemic bias as factors that can contribute to health disparities. And access, whether people can reach high-quality care, is listed by NIH among the modifiable influences on health. None of these drivers is a verdict on any group; they are lines of investigation. Measuring a disparity is simpler than it sounds, and it is done by comparing rates between groups. NIH lists the standard metrics: incidence and prevalence of disease, premature mortality, life expectancy, and variations in the access, utilization, availability, and quality of health care services. Incidence and prevalence are sibling topics with their own lessons; for now, incidence is new cases and prevalence is existing cases. Healthy People 2030 does exactly this at national scale, monitoring differences across population groups as it tracks progress toward its objectives.
+Three kinds of drivers appear again and again in the sources. Social determinants are the everyday conditions in which people are born, grow up, live, work, and age; they are a sibling topic of this lesson with their own full treatment. Bias matters too: Healthy People 2030 names structural racism and systemic bias as factors that can contribute to health disparities. And access, whether people can reach high-quality care, is listed by NIH among the modifiable influences on health. None of these drivers is a verdict on any group; they are lines of investigation. Measuring a disparity is simpler than it sounds, and it is done by comparing rates between groups. NIH lists the standard metrics: incidence and prevalence of disease, premature mortality, life expectancy, and variations in the access, utilization, availability, and quality of health care services. Incidence and prevalence are sibling topics with their own lessons; for now, incidence is new cases and prevalence is existing cases. Healthy People 2030 does exactly this at national scale, monitoring differences across population groups as it tracks progress toward its objectives.
 
 ### Addressing disparities, and the honest framing
 
@@ -85,6 +85,25 @@ Health disparities are differences in health between groups of people that did n
    - B. As proof that the county's residents are inherently less healthy
    - C. As a reason to stop collecting health data
    - D. As a complete explanation of the cause, with nothing left to investigate
+
+## Common Mistakes
+
+**1. Reading a measured disparity as a verdict about cause.**
+**2. Assuming a disparity proves a biological difference between groups.**
+**3. Thinking disparities only run along race and ethnicity.**
+**4. Believing a disparity is permanent.**
+
+## Key Takeaway
+
+Health disparities are avoidable, measurable differences in health outcomes between groups, driven by social determinants, bias, and access. They are measured by comparing rates between groups and addressed with targeted programs and policy. A disparity is a signal, not a verdict.
+
+## Related Topics
+
+- public-health:foundations:social-determinants-of-health
+- public-health:foundations:health-equity
+- public-health:foundations:incidence
+- public-health:foundations:prevalence
+- public-health:foundations:what-is-public-health
 
 ## Sources
 

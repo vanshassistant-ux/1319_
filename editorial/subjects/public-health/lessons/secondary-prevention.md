@@ -21,7 +21,7 @@ Cancers, heart disease, and diabetes stay quiet for a long time before they anno
 
 ### What secondary prevention is
 
-Secondary prevention is the part of public health that catches disease early. The working definition used here comes from the World Health Organization's Health Promotion Glossary of Terms (2021): secondary prevention is directed towards early detection of existing disease, with a view to arresting or delaying the progression of the disease and its effects. Two features matter. First, the disease already exists: it has begun, even if nobody feels it. Second, the goal is not just to find it but to slow it down or stop it, so it never reaches the point of serious harm. The WHO glossary names screening and other early detection programs, such as routine health checks, as the classic routes.
+Secondary prevention focuses on catching disease early. This lesson's working definition follows the WHO health-promotion glossary (2021): secondary prevention is directed towards early detection of existing disease, with a view to arresting or delaying the progression of the disease and its effects. Two features matter. First, the disease already exists: it has begun, even if nobody feels it. Second, the goal is not just to find it but to slow it down or stop it, so it never reaches the point of serious harm. The WHO glossary names screening and other early detection programs, such as routine health checks, as the classic routes.
 
 ### The idea: find it sooner, treat it sooner
 

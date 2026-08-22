@@ -6,7 +6,7 @@ Vaccination gives the body a safe form of a germ so it can build protection with
 
 ## Why This Matters
 
-Vaccination is the strongest single tool public health has for preventing infectious disease, and it works through a quiet, personal process: training the immune system. WHO calls immunization one of the most successful public health interventions, and CDC's list of the twentieth century's ten great public health achievements puts vaccination first. Understanding what a vaccine actually is — a safe stand-in for a germ, a practiced immune memory, and a program of schedules and campaigns — lets you read vaccine news clearly and reason about the programs that protect whole communities. The honest note matters too: no vaccine is perfect, and knowing that is part of understanding why prevention still works.
+Vaccination is the strongest single tool public health has for preventing infectious disease, and it works through a quiet, personal process: training the immune system. WHO calls immunization one of the most successful public health interventions, and vaccination sits atop the CDC's list of the last century's great public health wins. Understanding what a vaccine actually is — a safe stand-in for a germ, a practiced immune memory, and a program of schedules and campaigns — lets you read vaccine news clearly and reason about the programs that protect whole communities. The honest note matters too: no vaccine is perfect, and knowing that is part of understanding why prevention still works.
 
 ## Learning Objectives
 
@@ -21,7 +21,7 @@ Vaccination is the strongest single tool public health has for preventing infect
 
 ### What vaccination is
 
-Vaccination gives the body a safe form of a germ so it can build protection without getting the disease. The working definition used here comes from the CDC: vaccines help the body learn how to defend itself from disease without the dangers of a full-blown infection. The safe form may be a killed germ, a weakened germ, a piece of the germ, or genetic instructions for making a piece of it. MedlinePlus describes vaccines as injections, liquids, pills, or nasal sprays that teach the body's immune system to recognize and defend against harmful germs. Either way, the point is the same: practice now, protection later, without paying the price of the real illness.
+Vaccination gives the body a safe form of a germ so it can build protection without getting the disease. The working definition used here follows the CDC: vaccines help the body learn how to defend itself from disease without the dangers of a full-blown infection. The safe form may be a killed germ, a weakened germ, a piece of the germ, or genetic instructions for making a piece of it. MedlinePlus describes vaccines as injections, liquids, pills, or nasal sprays that teach the body's immune system to recognize and defend against harmful germs. Either way, the point is the same: practice now, protection later, without paying the price of the real illness.
 
 ### How the immune system remembers
 
@@ -45,7 +45,7 @@ The record is strong, and the honest note is built in. CDC states that history s
 
 ### The honest framing: prevention's greatest lever
 
-Vaccination leads CDC's list of the ten great public health achievements of the twentieth century, ahead of safer workplaces and tobacco control, and WHO calls immunization one of the most successful public health interventions. That is the honest framing: vaccination is the greatest lever prevention has. It does not promise a germ-free world or perfect protection for every person. It promises that far less of the disease that would have happened, happens — and that when it does, it is usually far milder. That is a claim the record supports.
+Vaccination sits atop the CDC's list of the last century's great public health wins, ahead of safer workplaces and tobacco control, and WHO calls immunization one of the most successful public health interventions. That is the honest framing: vaccination is the greatest lever prevention has. It does not promise a germ-free world or perfect protection for every person. It promises that far less of the disease that would otherwise have occurred, happens — and that when it does, it is usually far milder. That is a claim the record supports.
 
 ## Key Vocabulary
 

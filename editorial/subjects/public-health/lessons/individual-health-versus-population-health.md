@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Health can be seen through two lenses. Individual health is one person's health status and the care that person receives; a doctor's patient is an individual. Population health is the health of a group, its overall outcomes and the patterns within it; the epidemiologist's patient is the community. The lenses answer different questions, but they connect: improving the group often lifts the people in it, and caring for individuals one by one adds up to a healthier population. Medicine and public health work best as partners.
+Health can be seen through two lenses. Individual health is one person's health status and the care that person receives; a doctor's patient is an individual. Population health describes the health of a group: its overall outcomes and the patterns within it; the epidemiologist's patient is the community. The lenses answer different questions, but they connect: improving the group often lifts the people in it, and caring for individuals one by one adds up to a healthier population. Medicine and public health work best as partners.
 
 ## Why This Matters
 
@@ -25,7 +25,7 @@ Individual health is the health of one person. When a doctor asks how you are fe
 
 ### The population lens
 
-Population health moves the camera back. It looks at a group, a town, a school district, a nation, and asks how the group is doing as a whole. The working definition used here comes from researchers David Kindig and Greg Stoddart, writing in 2003: population health is the health outcomes of a group of individuals, including the distribution of such outcomes within the group. Two words do the heavy lifting. Outcomes are measurable results, such as illness, recovery, disability, or death. Distribution is how those outcomes are spread across the group, whether heart disease is common everywhere or concentrated in a few neighborhoods. A single patient cannot have a distribution or a pattern; those ideas exist only at the group level. That is why the population lens needs different tools: rates that compare disease frequency across groups, and patterns described by time, place, and person, who is affected, where, and when. The U.S. Healthy People program shows the lens in action, setting 10-year, measurable public health objectives for the nation and tracking progress toward them.
+Population health moves the camera back. It looks at a group, a town, a school district, a nation, and asks how the group is doing as a whole. The working definition used here comes from researchers David Kindig and Greg Stoddart, writing in 2003: population health is the health outcomes of a group of people, including the distribution of such outcomes within the group. Two words do the heavy lifting. Outcomes are measurable results, such as illness, recovery, disability, or death. Distribution is how those outcomes are spread through the group, whether heart disease is common everywhere or concentrated in a few neighborhoods. A single patient cannot have a distribution or a pattern; those ideas exist only at the group level. That is why the population lens needs different tools: rates that compare disease frequency across groups, and patterns described by time, place, and person, who is affected, where, and when. The U.S. Healthy People program shows the lens in action, setting 10-year, measurable public health objectives for the nation and tracking progress toward them.
 
 ### The doctor and the epidemiologist
 
@@ -41,7 +41,7 @@ The two lenses usually agree, but not always, and honesty requires saying so. A 
 
 ### Partners, not rivals
 
-None of this means the two lenses compete. Medicine and public health are partners with the same ultimate goal, people living longer, healthier lives, working at different scales. The doctor treats the patient in the exam room; public health organizes the conditions around whole communities. CDC's 10 Essential Public Health Services describe the activities all communities should undertake, from monitoring health status to enforcing laws that protect health. Each side feeds the other. Clinicians report the cases that epidemiologists count, and population data tell clinicians what is circulating in their community. The honest framing is simple: the two lenses answer different questions, how is this person doing, and how are these people doing, and the complete picture of health needs both.
+None of this means the two lenses compete. Medicine and public health are partners with the same ultimate goal, people living longer, healthier lives, working at different scales. The doctor treats the patient in the exam room; public health organizes the conditions around whole communities. CDC's Ten Essential Public Health Services describe the activities all communities should undertake, from monitoring health status to enforcing laws that protect health. Each side feeds the other. Clinicians report the cases that epidemiologists count, and population data tell clinicians what is circulating in their community. The honest framing is simple: the two lenses answer different questions, how is this person doing, and how are these people doing, and the complete picture of health needs both.
 
 ## Key Vocabulary
 

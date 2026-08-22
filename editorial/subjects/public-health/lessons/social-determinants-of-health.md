@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Social determinants of health are the conditions in which people are born, grow, live, work, and age, plus the wider forces that shape daily life — the WHO's working definition. These non-medical conditions include neighborhoods, education, income and jobs, food access, social ties, and health care access. They matter because they help drive patterns in health outcomes: health tends to improve step by step with advantage, at every income level. Medical care is essential, but it is not the whole story.
+Social determinants of health are the conditions where people are born, grow, live, work, and age, plus the wider forces that shape daily life — the WHO's working definition. These non-medical conditions include neighborhoods, education, income and jobs, food access, social ties, and health care access. They matter because they help drive patterns in health outcomes: health tends to improve step by step with advantage, at every income level. Medical care is essential, but it is not the whole story.
 
 ## Why This Matters
 
@@ -21,7 +21,7 @@ When people get sick, the first question is usually about medical care — but t
 
 ### What social determinants of health are
 
-The WHO's working definition opens its fact sheet: social determinants of health are "the conditions in which people are born, grow, work, live and age, and the wider forces that shape the conditions of daily life." Its health-topics page adds the second half of the picture: people's access to power, money, and resources. The U.S. Centers for Disease Control and Prevention has adopted this same definition and describes social determinants as the nonmedical factors that influence health outcomes. Healthy People 2030, the U.S. Department of Health and Human Services' national framework, phrases it slightly differently — the conditions in the environments where people are born, live, learn, work, play, worship, and age — but the idea is the same. These are the conditions of daily life: where you sleep, what your street looks like, whether your paycheck covers the month, what food is reachable, who is around you, and whether a doctor is easy to see. Notice what the definition is not. It is not a list of personal choices, and it is not genetics. Those matter, but the determinants are the settings in which choices and bodies do their work.
+The WHO's working definition opens its fact sheet: social determinants of health are "the conditions in which people are born, grow, work, live and age, and the wider forces that shape the conditions of daily life." Its health-topics page adds the second half of the picture: people's access to power, money, and resources. The U.S. Centers for Disease Control and Prevention has adopted this same definition and describes social determinants as the nonmedical factors that influence health outcomes. Healthy People 2030, the U.S. national framework led by HHS, phrases it slightly differently — the conditions in the environments where people are born, live, learn, work, play, worship, and age — but the idea is the same. These are the conditions of daily life: where you sleep, what your street looks like, whether your paycheck covers the month, what food is reachable, who is around you, and whether a doctor is easy to see. Notice what the definition is not. It is not a list of personal choices, and it is not genetics. Those matter, but the determinants are the settings in which choices and bodies do their work.
 
 ### Six domains, one idea
 
@@ -116,6 +116,18 @@ Two families live in the same city, and in the same week a chest cold moves thro
    - D. It is a simplification: a ZIP code stands in for a bundle of neighborhood conditions associated with health, while genetics and medical care still matter
 
    **Answer: D.** The slogan compresses a real finding — place conditions are strongly associated with health — into a catchy line. KFF notes zip code is increasingly understood as a stronger predictor of health than genetic code. The honest reading treats it as shorthand, not a literal claim.
+
+## Key Takeaway
+
+Health is shaped by the conditions where people are born, grow, live, work, and age — and those daily-life conditions, not medicine alone, drive the patterns we see in health outcomes.
+
+## Related Topics
+
+- public-health:foundations:health-disparities
+- public-health:foundations:health-equity
+- public-health:foundations:population-health
+- public-health:foundations:community-health
+- public-health:foundations:what-is-public-health
 
 ## Sources
 

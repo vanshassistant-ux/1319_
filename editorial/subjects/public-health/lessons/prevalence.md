@@ -20,7 +20,7 @@ Prevalence matters because it answers the question behind most health planning: 
 
 ### What prevalence is
 
-The working definition used across this lesson comes from the CDC's Principles of Epidemiology, the agency's standard training manual. Prevalence, sometimes called prevalence rate, is the proportion of persons in a population who have a particular disease or attribute at a specified point in time or over a specified period of time. In plainer words: prevalence is the total number of existing cases of a disease in a population at a given time. Three parts of that definition do real work. The count is of existing cases, so a person diagnosed last week and a person diagnosed five years ago count exactly the same, as long as both still have the condition when the count happens. The count is tied to a population, so it only means something when the group being counted is named, whether it is the residents of a town, the students of a school, or the adults of a country. And the count is tied to a time, because existing cases are not a fixed fact; they are true of one moment or one window and can change by the next. Prevalence is usually stated as a share of the population, such as 4 percent, which is what makes it useful for comparing one place, group, or year to another.
+The working definition used in this lesson comes from the CDC's Principles of Epidemiology, the agency's standard training manual. Prevalence, sometimes called prevalence rate, is the proportion of persons in a population who have a particular disease or attribute at a specified point in time or over a specified period of time. In plainer words: prevalence is the total number of existing cases of a disease in a population at a given time. Three parts of that definition carry the meaning. The count is of existing cases, so a person diagnosed last week and a person diagnosed five years ago count exactly the same, as long as both still have the condition when the count happens. The count is tied to a population, so it only means something when the group being counted is named, whether it is the residents of a town, the students of a school, or the adults of a country. And the count is tied to a time, because existing cases are not a fixed fact; they are true of one moment or one window and can change by the next. Prevalence is usually stated as a share of the population, such as 4 percent, which is what makes it useful for comparing one place, group, or year to another.
 
 ### Point prevalence and period prevalence
 
@@ -84,6 +84,25 @@ Prevalence is a count of who already has a disease in a population at a given ti
    - B. Point prevalence, a count taken on a single date
    - C. Incidence, the number of new cases during the year
    - D. A survival rate, the share of patients alive after diagnosis
+
+## Common Mistakes
+
+**1. Confusing prevalence with incidence.**
+**2. Reading a high prevalence as proof that a disease spreads fast.**
+**3. Treating a point prevalence as if it covered a whole year.**
+**4. Assuming a stable prevalence means nothing is changing.**
+
+## Key Takeaway
+
+Prevalence is the total number of existing cases of a disease in a population at a given time. It shows the total burden of disease and changes with new cases, recoveries, deaths, and migration. It is a snapshot; incidence, its sibling topic, is the movie.
+
+## Related Topics
+
+- public-health:foundations:incidence
+- public-health:foundations:epidemiology
+- public-health:foundations:disease-surveillance
+- public-health:foundations:population-health
+- public-health:foundations:what-is-public-health
 
 ## Sources
 

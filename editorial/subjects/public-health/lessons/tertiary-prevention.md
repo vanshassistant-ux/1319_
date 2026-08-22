@@ -10,7 +10,7 @@ Most people stop thinking about prevention once a diagnosis arrives, but that is
 
 ## Learning Objectives
 
-- Define tertiary prevention as actions that reduce harm and improve quality of life after disease or injury has occurred, attributing the working definition to the WHO Health Promotion Glossary of Terms (2021).
+- Define tertiary prevention as actions that reduce harm and improve quality of life after disease or injury has occurred, attributing the working definition to the WHO health-promotion glossary.
 - Explain the goal of tertiary prevention: limiting disability and preventing further decline, using an original example.
 - Name the main tools of tertiary prevention, rehabilitation, support programs, and managing complications, with one line and an original example for each.
 - Distinguish tertiary prevention from primary and secondary prevention by the stage of disease at which each level acts.

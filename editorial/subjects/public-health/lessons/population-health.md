@@ -29,7 +29,7 @@ A doctor examining one patient asks: what is wrong, and what can I do about it? 
 
 ### What shapes the health of a group
 
-Health in a group is built from more than medicine. The broad categories are behavior, environment, biology, and systems. Behavior covers the everyday habits that cluster differently across groups, such as smoking, activity, and diet. Environment includes air and water quality, housing, and neighborhood safety. Biology covers age, sex, and genetics. Systems cover the structures around care and daily life: clinics, transportation, food supply, workplace rules, and public policy. The World Health Organization puts it plainly: most of our health is determined by non-medical root causes, the conditions of daily life. Each category can shift a whole group's health curve. The social determinants of health, the conditions people are born into and live in, have their own lesson.
+Health in a group is built from more than medicine. The broad categories are behavior, environment, biology, and systems. Behavior covers the everyday habits that cluster differently across groups, such as smoking, activity, and diet. Environment includes air and water quality, housing, and neighborhood safety. Biology covers age, sex, and genetics. Systems cover the structures around care and daily life: clinics, transportation, food supply, workplace rules, and public policy. The World Health Organization puts it plainly: most of our health is shaped by non-medical root causes, the conditions of daily life. Each category can shift a whole group's health curve. The social determinants of health, the conditions people are born into and live in, have their own lesson.
 
 ### Measuring the group: rates, averages, comparisons
 
@@ -41,7 +41,7 @@ The strongest argument for the population view is arithmetic. Imagine a region o
 
 ### Population health and public health
 
-Population health and public health are connected but not identical. Population health is the lens: it describes outcomes and their distribution across a group. Public health is the field that acts on that view. The American Public Health Association describes public health as promoting and protecting the health of all people and their communities through science-based, evidence-backed work. When a health department tracks vaccination coverage across a county, that is the population lens at work. When it then runs a campaign to raise that coverage, that is public health acting on the view. Kindig and Stoddart set population health apart from public health, health promotion, and social epidemiology, related fields that share its data but ask their own questions.
+Population health and public health are connected but not identical. Population health is the lens: it describes outcomes and their distribution across a group. Public health is the field that acts on that view. The American Public Health Association describes public health as protecting the health of all people and their communities through science-based, evidence-backed work. When a health department tracks vaccination coverage across a county, that is the population lens at work. When it then runs a campaign to raise that coverage, that is public health acting on the view. Kindig and Stoddart set population health apart from public health, health promotion, and social epidemiology, related fields that share its data but ask their own questions.
 
 ### The honest framing: the curve, not the outlier
 
@@ -124,6 +124,18 @@ River City's public health office notices that asthma-related emergency visits i
    - D. A reason to define the population as elite athletes only.
 
    **Answer: B.** Population health is about the curve of outcomes in a group, not the outlier. One profile cannot establish a trend, does not show what drives group health, and does not redefine the population; rates and patterns would be needed to say anything about the group.
+
+## Key Takeaway
+
+Population health is health in numbers: the outcomes of a group, how they are spread, and the factors that shape them. Because small shifts in large groups move many people, the group view is where prevention gets its power.
+
+## Related Topics
+
+- public-health:foundations:what-is-public-health
+- public-health:foundations:individual-health-versus-population-health
+- public-health:foundations:social-determinants-of-health
+- public-health:foundations:incidence
+- public-health:foundations:prevalence
 
 ## Sources
 
