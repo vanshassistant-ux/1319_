@@ -1,4 +1,4 @@
-*Answer:* D. *Explanation:*# Kinship
+# Kinship
 
 ## In 30 Seconds
 

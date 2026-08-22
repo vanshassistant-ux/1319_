@@ -1,0 +1,153 @@
+# Applied Anthropology
+
+## In 30 Seconds
+
+Applied anthropology is the use of anthropological knowledge and methods to address real-world problems. Where academic anthropologists mostly study and teach, applied anthropologists work with communities, agencies, schools, companies, and museums to put the discipline's understanding of culture and context to work. The same ethics apply, and the honest questions never go away: who benefits, and who decides. This lesson is about anthropology at work — its practice areas, its methods, and its limits.
+
+## Why This Matters
+
+Every semester, anthropology students ask the same question: what can you actually do with this? Applied anthropology is the answer the discipline gives back. It matters academically because it shows that the field's core tools — fieldwork, the culture concept, a holistic eye — hold up outside the seminar room. It matters practically because real institutions face problems that are cultural at heart: clinics patients avoid, programs families ignore, products people misunderstand. And it matters honestly, because putting knowledge to work raises questions about power and benefit that a purely academic career can postpone. Understanding applied anthropology means understanding what the discipline is for.
+
+## Learning Objectives
+
+- Define applied anthropology as the use of anthropological knowledge and methods to address real-world problems, attributing the working definition to the American Anthropological Association and the Society for Applied Anthropology.
+- Describe the main practice areas of applied anthropology — community development, health, education, business, and heritage — each with an original example.
+- Distinguish research from action: studying a problem versus using anthropological knowledge to change it.
+- Explain that applied work follows the same ethical obligations as all anthropology, including do no harm, informed consent, and openness about purpose, methods, outcomes, and sponsors.
+- Analyze the honest note of applied work: who benefits from a project, who controls its findings, and why those questions matter.
+
+## The College Version
+
+### What applied anthropology is: the working definition
+
+Applied anthropology is the use of anthropological knowledge and methods to address real-world problems. The Society for Applied Anthropology, founded in 1941, put the mission this way: to promote the investigation of the principles of human behavior and the application of those principles to contemporary issues and problems. The American Anthropological Association makes the same point from the other end: whatever people are doing, it's all anthropology. The AAA's own list of fields where anthropological skills show up in practice — technology innovation, urban planning, historic preservation, communications strategy, forensic investigation — reads like a job board for the discipline. Applied anthropologists are not a separate species of anthropologist. They are anthropologists whose work aims at a problem in the world rather than at a question in a journal.
+
+### The practice areas
+
+Applied anthropologists work wherever culture meets a problem. In community development, they help residents shape changes in their own neighborhoods: original example — Marisol, an applied anthropologist, spends months with the market vendors of Aldera, and the city's renovation plan changes to keep stall fees affordable. In health, they help programs fit local realities: in the farming district of Bexley, a vaccination campaign that kept missing seasonal workers moves its clinics to market days after an anthropologist traces the scheduling conflict. In education, they help institutions understand the cultures of the students they serve: in Riverton, a school district's homework study reveals that families in one neighborhood share a single phone, and the district changes how it communicates with parents. In business, they study how people actually use products: a luggage maker's unused app gets redesigned after an anthropologist watches travelers ignore it until a delay warning appears. In heritage, they help document and protect what communities value: when Calando plans a flood wall, an anthropologist's oral-history work keeps the riverside festival grounds intact.
+
+### Research versus action: studying versus doing
+
+The clearest way to see applied anthropology is to set it next to research. OpenStax's Introduction to Anthropology calls the classic academic activity research — fieldwork conducted to answer the theoretical and practical questions that form the basis of anthropology, from how cultures change to how exchange shapes them. Applied work takes the same methods and points them at a decision. Original example: Ines and Omar work in the same city. Ines interviews residents of the high-rise estates about how families decide whether to move, and publishes her findings in a journal; that is research. Omar is hired by the housing office to redesign the letters residents receive about their options so that families actually understand them; that is applied work. Same discipline, same methods, different aim: one ends in understanding, the other in a change.
+
+### The ethics: the same rules, on the job
+
+Applied work does not come with a separate, looser ethics. The American Anthropological Association's Code of Ethics covers all anthropological work: the core principles of professional responsibility include doing no harm, obtaining informed consent, and being open and honest about purpose, methods, outcomes, and sponsors. Working for a client changes none of that. The finer points of fieldwork ethics belong to this curriculum's separate fieldwork-ethics lesson; what matters here is one line: applied anthropologists carry the same ethical obligations as everyone else in the discipline, on the job as in the field.
+
+### The honest note: who benefits?
+
+Putting knowledge to work means someone's problem is being solved — and someone is paying for the solution. Applied work therefore raises hard questions that a purely academic project can postpone: who commissioned the study, who controls the findings, and whether the people the work claims to help actually benefit. The AAA code answers with transparency: anthropologists must be open about their sponsors and make results accessible. The question is not rhetorical. The same findings about a food program can support a funder who wants to cut it and a community that wants it expanded. Applied anthropology does not pretend that tension away; it names it, states it factually, and keeps working.
+
+### The honest framing: the discipline's hands
+
+Here is the reality check that frames the whole lesson: applied anthropology is the discipline's hands. Anthropology's knowledge — about culture, context, kinship, belief, work — is not meant to stay in the seminar room. OpenStax opens its chapter on what anthropologists can do with a simple observation: anthropologists are at work now to make a difference in our lives. The AAA puts the same idea at the end of its definition: whatever people are doing, it's all anthropology. Applied work is where the field's understanding meets the world's problems — with the same methods, the same ethics, and honest questions about who benefits.
+
+## Key Vocabulary
+
+- **applied anthropology** — The use of anthropological knowledge and methods to address real-world problems; the working definition for this lesson, framed by the American Anthropological Association and the Society for Applied Anthropology.
+- **practicing anthropology** — Applied anthropology done by anthropologists employed outside academia — in agencies, companies, nonprofits, and community organizations; the term NAPA, the AAA's practicing section, uses for professional applied work.
+- **research** — In anthropology, fieldwork and analysis conducted to answer the theoretical and practical questions that form the basis of the discipline; sometimes called pure or theoretical research.
+- **research and development** — Applied work that creates or redesigns products or services for governments or corporations, drawing on knowledge of human behavior.
+- **public policy** — The principles and regulatory measures governments adopt; anthropologists contribute research and a holistic outlook to policy development.
+- **heritage work** — The practice of documenting and protecting cultural heritage — sites, buildings, traditions, and oral histories — matching the AAA's applied field of historic preservation.
+- **informed consent** — A participant's agreement to take part in research or applied work, given with full knowledge of the purpose and of how the information will be used.
+- **do no harm** — The core ethical principle that anthropological work must not injure or endanger the people involved.
+- **stakeholder** — A person or group with an interest in a project's outcome — residents, clients, funders, or staff — whose benefit is at stake in applied work.
+
+## Eli-10
+
+Most anthropology studies people to understand them. Applied anthropology studies people to help solve a problem — a clinic patients avoid, a school program families do not use, a product nobody understands. The tools are the same: watching, asking, listening, living alongside. The goal is different. Instead of ending with a lecture or a journal article, the work ends with a change: a clinic that opens at the right hour, a letter people can read, a route that actually gets used. Applied anthropologists work for cities, hospitals, schools, companies, and community groups. And they carry the whole discipline's rules with them: do no harm, ask permission, be honest about who is paying and who benefits. That last question — who benefits — is the one applied anthropology never stops asking.
+
+## Eli's Analogy
+
+Think of the rest of anthropology as a mapmaker and applied anthropology as the guide who uses the map. The mapmaker draws the terrain so that anyone can understand it. The guide takes the same map, reads the same rivers and ridges, and gets a group across — adjusting the route to the weather, the group, and the deadline. Same map. Different job.
+
+The analogy breaks down because maps are neutral while anthropological knowledge is not: who pays for the map, which routes get drawn in, and who gets to see it are all part of the applied work itself. A guide serves the group she walks with; an applied anthropologist must be honest about serving many interests at once — the funder, the agency, and the community — and about the tension between them.
+
+## Worked Example
+
+Maya is an applied anthropologist hired by the housing agency of Thorvald, where tenants in the city's public housing rarely use the new online repair portal. She uses the discipline's field methods: she interviews residents in their kitchens, watches how households share one phone, and sits with the agency's call-center staff to see the same problem from both sides. Her findings — most residents never received the login instructions, and the ones who did found them unreadable — change the system: printed guides, a simpler form, and staff who can register tenants in person. Repairs now get requested, and the agency measures the difference. Maya also publishes a plain-language summary for residents and states plainly that the agency commissioned the work — the ethics and the who-benefits question, handled in the same project.
+
+## Common Mistakes
+
+- **"Applied anthropology is anthropology done less rigorously — fieldwork-lite for non-academics."** — Applied work uses the same methods, the same evidence standards, and the same ethics as academic anthropology. The difference is the aim: a change in the world rather than new knowledge alone.
+- **"Applied anthropologists only work for big corporations."** — They work across sectors — city agencies, health programs, schools, museums, nonprofits, and community groups, as the AAA's own list of applied fields shows. Business is one setting among several.
+- **"Once the report is delivered, the applied anthropologist's job is done."** — Applied work aims at change, not delivery. The AAA code also expects results to be made accessible — to the people the work concerns, not only to the client.
+- **"Applied anthropology is the same thing as applied sociology or general consulting."** — Applied anthropology brings the discipline's own tools — the culture concept, fieldwork and participant observation, a holistic and cross-cultural lens. Applied sociology is a neighboring discipline's applied branch, and general consultants do not necessarily bring anthropology's methods at all.
+
+## Compare / Contrast
+
+- **Academic anthropology vs. Applied anthropology:** Both use the same methods and ethics. Academic work aims to advance knowledge — research questions, publications, teaching. Applied work aims to address a real-world problem — a program, product, policy, or plan. The setting differs more than the method.
+- **Research vs. Action:** Research is studying a problem: Ines interviews residents about moving decisions and publishes her findings. Action is using anthropological knowledge to change something: Omar redesigns the housing letters so families understand their options. One ends in understanding; the other in a change.
+- **Applied anthropology vs. Applied sociology:** Both apply social-science knowledge to practical problems. Anthropology's contribution is its own toolkit — culture, fieldwork, holism, cross-cultural comparison — while applied sociology is the sociology subject's applied branch. Same spirit, different disciplines.
+
+## Key Takeaway
+
+Applied anthropology is the discipline's hands: the same knowledge, methods, and ethics as all anthropology, pointed at real-world problems — and always carrying the honest question of who benefits.
+
+## Practice Question Bank
+
+1. **The Society for Applied Anthropology, founded in 1941, describes its mission as promoting the investigation of the principles of human behavior and the application of those principles to contemporary issues and problems. Which option best describes what applied anthropology is, on that account?**
+   - A. The use of anthropological knowledge and methods to address real-world problems.
+   - B. The study of past societies through their material remains.
+   - C. The teaching of anthropology courses at universities and colleges.
+   - D. The collection and display of cultural objects in museums.
+
+   **Answer: A.** The SfAA's founding mission — applying principles of human behavior to contemporary issues and problems — is the basis of the working definition: applied anthropology uses anthropological knowledge and methods to address real-world problems. Option B is archaeology, option C is academic teaching, and option D is museum curation; all are anthropological activities, but none captures applied anthropology's defining aim.
+
+2. **Ines and Omar are both anthropologists in the city of Kovar. Ines interviews residents of high-rise estates about how families decide whether to move and publishes her findings in a journal. Omar is hired by the city housing office to redesign the letters residents receive about housing options so that families actually understand them. Which statement best describes the difference between their work?**
+   - A. Omar's work is not anthropology, because he does not conduct interviews.
+   - B. Ines is doing applied work, because she produces new knowledge.
+   - C. They do the same work; only their employers differ.
+   - D. Ines is doing research that advances knowledge, while Omar is applying anthropological knowledge to a practical problem — research versus action.
+
+   **Answer: D.** The research-versus-action distinction from OpenStax's chapter on what anthropologists can do: research answers the theoretical and practical questions that form the basis of anthropology, while applied work points the same methods at a practical decision. Ines's journal article is research; Omar's redesigned letters are action. Option A wrongly denies that applied work uses fieldwork methods, option B reverses the labels, and option C misses the different aims.
+
+3. **An electronics company hires an anthropologist who studies how people actually use devices at home and then advises engineers on redesigning the products. OpenStax's Introduction to Anthropology calls work of this kind:**
+   - A. Theoretical research.
+   - B. Research and development — creating or redesigning products or services for governments or corporations using knowledge of human behavior.
+   - C. Forensic investigation.
+   - D. Historic preservation.
+
+   **Answer: B.** OpenStax describes research and development as practical application — creating or redesigning products or services for governments or corporations, with anthropologists contributing what they know about human behavior, and its example is Genevieve Bell's user-experience work at Intel. Option A is the academic research activity; options C and D are other applied fields on the AAA's list.
+
+4. **A city hires an anthropologist to find out why residents of one district rarely use the new community center. The study shows the center's hours clash with the district's main work shifts, and the city's response will determine whether the center survives. Which course of action best matches the anthropologist's ethical obligations?**
+   - A. Hand over the findings and take no further interest in how the city uses them.
+   - B. Change the findings so the center's management looks good.
+   - C. Report the findings honestly, be open about who commissioned the work, and make the results accessible to residents as well as officials.
+   - D. Withhold the findings until the city agrees to expand the center.
+
+   **Answer: C.** The AAA Code of Ethics applies to all anthropological work: do no harm, informed consent, and openness and honesty about purpose, methods, outcomes, and sponsors, with results made accessible. Option C follows that code. Option A abandons accountability for how findings are used, option B falsifies findings, and option D treats findings as a bargaining chip.
+
+5. **A food program is studied by an applied anthropologist. The funder would use the findings to justify closing the program; the community would use the same findings to argue for expanding it. The anthropologist's findings support keeping the program with changes. Which statement best captures the honest note of applied anthropology raised by this situation?**
+   - A. The situation proves applied anthropology is too political to be useful.
+   - B. Because the findings are neutral, no conflict over their use can arise.
+   - C. Applied work raises hard questions about who benefits: the same findings can serve different interests, which is exactly why openness about purpose, methods, and sponsors matters.
+   - D. The anthropologist should avoid working where stakeholders disagree.
+
+   **Answer: C.** The honest note of applied work: knowledge put to work serves someone's interests, and the same findings can support opposing decisions. The AAA code's answer is transparency — openness about purpose, methods, outcomes, and sponsors. Option C states that factually. Option A overstates the tension, option B ignores that findings are always used by someone, and option D would rule out most real problems.
+
+## Sources
+
+- **About the SfAA — Society for Applied Anthropology.** https://www.sfaa.net/about/ (read via Wayback Machine capture 20190718221830; site blocks direct fetch; reference-only)
+- **What is Anthropology? — American Anthropological Association.** https://americananthro.org/practice-teach/what-is-anthropology/ (read live 2026-08-22; reference-only)
+- **Code of Ethics of the American Anthropological Association (approved November 2012).** https://americananthro.org/wp-content/uploads/aaa-code-of-ethics-2012.pdf (read live 2026-08-22; reference-only)
+- **20.3 What Anthropologists Can Do — Introduction to Anthropology (OpenStax, Rice University).** https://openstax.org/books/introduction-anthropology/pages/20-3-what-anthropologists-can-do (CC BY 4.0; read via Wayback Machine capture 20221005145056 of the canonical URL)
+- **NAPA — National Association for the Practice of Anthropology (section of the American Anthropological Association).** https://practicinganthropology.org/ (read live 2026-08-22; reference-only)
+
+## Related Topics
+
+- anthropology:foundations:what-is-anthropology
+- anthropology:foundations:four-fields-of-anthropology
+- anthropology:foundations:fieldwork
+- anthropology:foundations:fieldwork-ethics
+- anthropology:foundations:medical-anthropology
+
+## Editorial Metadata
+
+- **Topic ID:** anthropology:foundations:applied-anthropology
+- **Editorial status:** READY_TO_PUBLISH
+- **Researched at:** 2026-08-22
+- **Research status:** source-verified
+- **Rights status:** Reference-only sources (SfAA about page via Wayback, AAA 'What is Anthropology?', AAA Code of Ethics 2012, OpenStax Introduction to Anthropology section 20.3, NAPA welcome page); facts synthesized in original wording; no source prose adapted; all examples original.
+- **Transformation:** Working definition synthesized from the SfAA founding mission statement (Wayback capture 20190718221830 of sfaa.net/about) and the AAA 'it's all anthropology' framing (read live); practice areas built from the AAA's applied-fields list and OpenStax 20.3's research-and-development and applied/practicing sections; the research-versus-action distinction follows OpenStax 20.3; the ethics line follows the AAA Code of Ethics (do no harm, informed consent, openness about purpose/methods/outcomes/sponsors, results accessibility); the who-benefits honest note is an interpretive synthesis of the code's transparency obligations and OpenStax's account of anthropologists working for governments and corporations; the 'discipline's hands' framing synthesizes OpenStax 20.3's opening observation and the AAA's closing line. OpenStax 20.3 read via Wayback capture 20221005145056; AAA pages and NAPA (practicinganthropology.org) read live; SfAA read via Wayback capture 20190718221830. All examples (Marisol and the Aldera market, Bexley clinics, Riverton homework, the luggage app, Calando's flood wall, Ines and Omar, Maya in Thorvald, the map-and-guide analogy) are original to this lesson.

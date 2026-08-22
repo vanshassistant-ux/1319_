@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Participant observation is anthropology's signature fieldwork method: the researcher joins a community and studies it from the inside, taking part in daily life while observing it as a trained outsider. The approach became the professional standard with Malinowski's Trobriand Islands research and has shaped cultural anthropology ever since. The observer participates and watches at once, balancing closeness with analytical distance. What the method produces — field notes, thick description, an insider's view of a way of life — comes from learning by living.
+Participant observation is anthropology's signature fieldwork method: the researcher joins a community and studies it from the inside, taking part in daily life while observing it as a trained outsider. The method became the discipline's standard with Malinowski's Trobriand Islands research and has shaped cultural anthropology ever since. The observer participates and watches at once, balancing closeness with analytical distance. What the method produces — field notes, thick description, an insider's view of a way of life — comes from learning by living.
 
 ## Why This Matters
 
@@ -21,7 +21,7 @@ Participant observation is where anthropology earns its distinctive knowledge: a
 
 ### The method: entering a community and studying it from the inside
 
-Participant observation is a fieldwork method in which the researcher enters a cultural community and collects information through observation of and participation in the culture. That working definition comes from OpenStax's Introduction to Anthropology, and it is the definition this lesson uses. The method became the professional standard through Bronisław Malinowski's fieldwork in the Trobriand Islands of Melanesia, beginning in 1915: he lived in a tent among the people, learned to speak the local language, and recorded interviews and observations on the scene. Britannica identifies that work — together with Margaret Mead's 1925 fieldwork in Samoa — as the establishment of ethnography as a professional field. What Malinowski modeled was not watching from a distance but living inside the life being studied: working, eating, celebrating, and quarreling alongside the people. The researcher is present in the culture as a participant, not as a spectator, and that presence is the source of the method's particular knowledge.
+Participant observation is a fieldwork method in which the researcher enters a cultural community and collects information through observation of and participation in the culture. That working definition comes from OpenStax's Introduction to Anthropology, and it is the definition this lesson uses. The method became the professional standard through Bronisław Malinowski's fieldwork in the Trobriand Islands of Melanesia, beginning in 1915: he lived in a tent among the people, learned the local language, and gathered interviews and observations on the scene. Britannica credits that work — alongside Margaret Mead's 1925 fieldwork in Samoa — with establishing ethnography as a professional field. What Malinowski modeled was not watching from a distance but living inside the life being studied: working, eating, celebrating, and quarreling alongside the people. The researcher is present in the culture as a participant, not as a spectator, and that presence is the source of the method's particular knowledge.
 
 The word "participant" does real work here. The observer does not merely observe; they take part in the activities of the community — the labor, the meals, the ceremonies, the ordinary weekday rhythms. OpenStax describes the researcher as entering the community and collecting information through observation of and participation in the culture, which makes the dual activity the heart of the method. The participation is what earns trust and access; the observation is what turns living into evidence.
 
@@ -86,7 +86,7 @@ Participant observation turns learning by living into evidence: the researcher j
 
 ## Practice Question Bank
 
-**anthropology:foundations:participant-observation:1** In the working definition used in this lesson, participant observation requires the researcher to — —
+**anthropology:foundations:participant-observation:1** In the working definition used in this lesson, participant observation calls on the researcher to — —
 - A. enter a cultural community and collect information through observation of and participation in the culture ✅
 - B. survey a representative sample of the community using a standardized questionnaire
 - C. analyze historical documents and records about the community in an archive

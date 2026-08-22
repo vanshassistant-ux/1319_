@@ -33,7 +33,7 @@ The honest baseline: most material decays. Wood rots, cloth unravels, food disap
 
 ### Dating: relative and absolute
 
-Two families of dating answer different questions. **Relative dating** orders things — older than, younger than — without assigning calendar years. Its anchor is stratigraphy, built on the law of superposition, proposed by Nicolaus Steno in 1669: in undisturbed layers, lower strata were deposited earlier, so what lies beneath is older. Original example: at Tarmo, an ash layer holding a broken bowl sits directly beneath a flood-deposit layer, so the bowl is older than the flood. Typological sequences and seriation order objects by style change over time, a relative approach Flinders Petrie applied to Egyptian pottery in the nineteenth century. **Absolute dating** — also called chronometric dating — uses physical and chemical analysis to estimate a calendar-age range. Radiocarbon dating measures the decay of carbon-14 in organic material, usable on samples roughly 300 to 50,000 years old — a charred grain, a bone, a scrap of cloth. Dendrochronology counts and matches tree rings, one per year, to date wooden timbers precisely. Original example: a Tarmo granary beam with 212 rings was matched against a regional tree-ring sequence, yielding a felling year. The strongest practice is triangulation: applying several methods to the same site and letting them agree.
+Two families of dating answer different questions. **Relative dating** orders things — older than, younger than — without assigning calendar years. Its anchor is stratigraphy, built on the law of superposition, proposed by Nicolaus Steno in 1669: in undisturbed layers, lower strata were deposited earlier, so what lies beneath is older. Original example: at Tarmo, an ash layer holding a broken bowl sits directly beneath a flood-deposit layer, so the bowl is older than the flood. Typological sequences and seriation order objects by style change over time, a relative approach Flinders Petrie applied to Egyptian pottery in the nineteenth century. **Absolute dating** — also called chronometric dating — uses physical and chemical analysis to estimate a calendar-age range. Radiocarbon dating tracks the decay of carbon-14 in organic material, usable on samples roughly 300 to 50,000 years old — a charred grain, a bone, a scrap of cloth. Dendrochronology counts and matches tree rings, one per year, to date wooden timbers precisely. Original example: a Tarmo granary beam with 212 rings was matched against a regional tree-ring sequence, yielding a felling year. The strongest practice is triangulation: applying several methods to the same site and letting them agree.
 
 ### Context: where an object lies matters
 
@@ -91,42 +91,42 @@ Archaeological evidence is the material trace of past lives: fragmentary, contex
 ## Practice Question Bank
 
 **Q1. Which item found at a dig is an artifact?**
-- A) A ring of fire-cracked stones surrounding a bed of ash
-- B) A hand-sized clay bowl shaped and fired by people, found beside a collapsed wall
-- C) Charred wheat grains scattered in a storage pit
-- D) The skeleton of an adult buried with a shell necklace
+- A. A ring of fire-cracked stones surrounding a bed of ash
+- B. A hand-sized clay bowl shaped and fired by people, found beside a collapsed wall
+- C. Charred wheat grains scattered in a storage pit
+- D. The skeleton of an adult buried with a shell necklace
 
 **Answer: B.** An artifact is a portable object made or modified by people — the clay bowl fits. The hearth ring is a feature, the grains are ecofacts, and the skeleton is human remains. *(recall)*
 
 **Q2. Archaeologists match the ring pattern of a wooden beam from a collapsed granary against a regional tree-ring sequence. Which dating method are they using?**
-- A) Stratigraphy
-- B) Radiocarbon dating
-- C) Dendrochronology
-- D) Seriation
+- A. Stratigraphy
+- B. Radiocarbon dating
+- C. Dendrochronology
+- D. Seriation
 
 **Answer: C.** Tree rings form one per year, and matching ring-width patterns across timbers is dendrochronology. Stratigraphy and seriation are relative methods; radiocarbon measures carbon-14 decay in organic material. *(recall)*
 
 **Q3. At a riverside dig, an ash layer holding a broken clay bowl sits directly beneath a thick flood-deposit layer. Applying the law of superposition, what can the archaeologists conclude?**
-- A) The bowl was dropped after the flood deposited its silt
-- B) The bowl was in use before the flood buried the ash layer
-- C) The bowl and the flood happened in the same year
-- D) The bowl is younger than the flood deposit
+- A. The bowl was dropped after the flood deposited its silt
+- B. The bowl was in use before the flood buried the ash layer
+- C. The bowl and the flood happened in the same year
+- D. The bowl is younger than the flood deposit
 
 **Answer: B.** In undisturbed strata, lower layers were deposited first, so the ash layer — and the bowl within it — predates the flood silt above it. Deeper is earlier, not the reverse. *(application)*
 
 **Q4. A linen sack in an ancient midden rots away completely, while the five clay beads it held stay exactly where they fell. What does this show about preservation?**
-- A) Preservation is selective: durable materials often outlast organic ones, and most material decays
-- B) Organic material usually survives better than fired clay
-- C) Clay beads decay faster than linen
-- D) Middens preserve everything equally well
+- A. Preservation is selective: durable materials often outlast organic ones, and most material decays
+- B. Organic material usually survives better than fired clay
+- C. Clay beads decay faster than linen
+- D. Middens preserve everything equally well
 
 **Answer: A.** Fired clay outlasted linen in the same deposit, showing that survival depends on material and conditions; most organic material decays, which is why the record is fragmentary. *(understanding)*
 
 **Q5. Two flint arrowheads of identical shape are found in the same region: one picked up loose from plowed topsoil, one sealed beneath a collapsed wall 1.5 meters down with hearth ash and charred seeds around it. Why do archaeologists treat the buried find as far more informative?**
-- A) Because depth alone proves the buried arrowhead is older
-- B) Because the surface arrowhead was made by different people
-- C) Because buried stone is better preserved than surface stone
-- D) Because the buried arrowhead keeps its context — documented position and associations — which the surface find has lost
+- A. Because depth alone proves the buried arrowhead is older
+- B. Because the surface arrowhead was made by different people
+- C. Because buried stone is better preserved than surface stone
+- D. Because the buried arrowhead keeps its context — documented position and associations — which the surface find has lost
 
 **Answer: D.** The buried arrowhead retains primary context: its layer, position, and associations are documented, enabling dating and interpretation. The surface find is in secondary context — moved and disconnected — so depth, style, and stone quality cannot rescue the information it lost. *(analysis)*
 

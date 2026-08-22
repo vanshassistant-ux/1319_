@@ -124,6 +124,14 @@ An economic system is the culturally patterned way a group produces, distributes
    - The student is wrong only about taxes: gift-giving is social rather than economic, so the food-sharing example should be dropped.
    **Answer: A.** Anthropologists define the economy as the whole system of making, circulating, and using things: sharing food is reciprocity, taxes are redistribution, and both sit inside the same economic system. Polanyi argued that economic activity is embedded in kinship, religion, and politics. The other options confine the economy to cash (B), rank practices (C), or exclude reciprocity (D).
 
+## Related Topics
+
+- anthropology:foundations:subsistence
+- anthropology:foundations:social-organization
+- anthropology:foundations:globalization
+- anthropology:foundations:political-systems
+- anthropology:foundations:kinship
+
 ## Sources
 
 - OpenStax, *Introduction to Anthropology*, Chapter 7 Introduction — https://openstax.org/books/introduction-anthropology/pages/7-introduction (read via Internet Archive capture)
