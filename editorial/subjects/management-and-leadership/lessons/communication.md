@@ -1,0 +1,188 @@
+# Communication
+
+## In 30 Seconds
+
+Communication is the transfer of information and meaning between people: one person sends, another receives and interprets. The working definition in this lesson draws on CFI and the Saylor textbook. Communication runs on a message model with six parts: sender, message, channel, receiver, feedback, and noise. It travels through words and through tone and body language, along official routes or the grapevine — and the meaning that counts is what the receiver takes away.
+
+## Why This Matters
+
+Every organization runs on messages: instructions, updates, decisions, complaints, and encouragement all have to move from one person to another. When messages travel badly, work goes wrong in small ways — a supplier ships the wrong part, a shift starts at the wrong time, a customer leaves confused — and in large ways, when a whole department misreads a change and nobody catches it. Understanding how communication works does not make you a perfect communicator, but it shows you exactly where messages break: the sender who assumed too much, the channel that flattened the tone, the receiver who was distracted, the meaning that never arrived. That awareness is the first step to being understood — at work and everywhere else.
+
+## Learning Objectives
+
+- Define communication as the transfer of information and meaning between people, and attribute that working definition.
+- Name the six parts of the message model — sender, message, channel, receiver, feedback, noise — with an original example of each.
+- Distinguish verbal communication (words) from nonverbal communication (tone, body language, and other wordless signals).
+- Distinguish formal channels from the grapevine, with original examples of each.
+- Identify four common barriers — jargon, distraction, filtering, and culture — and say how each distorts meaning.
+- Apply the practice of clear communication: know the audience, say it plainly, and check understanding.
+
+## The College Version
+
+### A working definition, attributed
+
+Communication is the transfer of information and meaning between people. The working definition in this lesson is built from two sources: CFI defines communication as transferring information to produce greater understanding, and the Saylor Foundation's Business Communication for Success defines it as the process of understanding and sharing meaning. Put together: someone sends, someone receives, and both walk away sharing an understanding — or they think they do. Two words carry the weight. Information is the content: the facts, instructions, and updates being passed. Meaning is what the content is supposed to do: warn, reassure, instruct, persuade, connect. Communication only counts when it involves people: a filing system moves information but does not communicate — no meaning is exchanged between minds.
+
+### The message model: six parts, one job
+
+Textbook accounts break a communication episode into parts; this lesson uses six. The sender is the person who starts the exchange — Priya, telling her baker that the rye loaves must be ready by six in the morning. The message is what is sent: the words and signals that carry the content — “the rye loaves must be ready by six.” The channel is the route the message travels — face-to-face speech in the bakery kitchen, or a written note on the board. The receiver is the person it reaches and who interprets it — the baker, reading the note. Feedback is the receiver's response — a nod, a question, a confirmation, or silence — that tells the sender whether the message landed. Noise is anything that distorts the message along the way — a hissing oven that drowns out half the sentence, a note smudged with flour. The six parts form a loop, not a line: feedback turns the receiver into a sender, and the episode continues.
+
+### Verbal versus nonverbal: words and everything else
+
+Verbal communication is words, spoken aloud or written down. It is the most obvious kind: a phone call, an email, a sign on the door. Nonverbal communication carries meaning without words: tone of voice, facial expression, posture, gestures, eye contact, even silence. OpenStax's Principles of Management notes that body language and facial expression can convey conscious or unconscious messages, and that even office size and placement signal meaning. The two channels run at once and can agree or fight. A manager who says “I'm happy to help” in a flat voice while staring at a screen sends two messages at once. When words and body language conflict, listeners tend to trust the nonverbal signal — which is exactly why “it's fine” delivered with crossed arms convinces no one.
+
+### Formal versus informal: official routes and the grapevine
+
+Formal channels follow the organization's official structure: memos, policy documents, scheduled meetings, and reports moving up the chain of command. OpenStax describes interpersonal communication as reinforcing the formal structure of the organization by making use of formal channels. When Priya posts the new opening hours on the staff board and emails her suppliers, she is using formal channels. Informal channels run alongside the official ones. The grapevine is the nickname for this unofficial network — hallway conversations, break-room chatter, word-of-mouth — and it carries information faster than any memo. OpenStax notes that shrewd managers gather information from the grapevine and pass along viewpoints that have not yet reached the more formal channels. The grapevine is fast but unreliable: a message that passes through five people tends to arrive changed. Formal channels are slower and more controlled — which is why big, sensitive announcements belong there.
+
+### Barriers: jargon, distraction, filtering, and culture
+
+Four barriers do most of the damage. Jargon is specialized vocabulary that assumes the listener already knows the code — a mechanic saying “the torque converter is slipping” to a customer who just wants to know if the car is safe. Distraction is attention stolen from the message — checking messages during a meeting, or composing your reply while the other person is still talking. Filtering is what happens when a message is trimmed or reshaped as it passes through people: each layer keeps what it thinks matters and drops the rest, so what arrives at the top can be a polished, edited version of what happened on the floor. Culture sets the unspoken rules — how directly people speak, how much emotion is acceptable, what counts as polite disagreement. A message that is perfectly clear in one culture can land as rude or evasive in another. The common thread: all four are forms of noise — anything that blocks or changes the intended meaning.
+
+### Clear communication, and the honest framing
+
+Clear communication is not a talent; it is three habits. First, know the audience: speak to what they already know and care about — the same delivery-route change is explained differently to drivers and accountants. Second, say it plainly: short sentences, concrete words, no jargon where ordinary words will do. The Saylor textbook puts it as choosing words and phrases the audience understands and avoiding jargon or slang that may be unfamiliar. Third, check understanding: ask, watch for the nod or the blank look, invite questions, and summarize — feedback exists to be used. That brings the honest framing: meaning is what the receiver takes away, not what the sender intended to send. OpenStax describes decoding as the receiver attaching meaning to the message, shaped by the receiver's own experiences and frame of reference. You can deliver a perfect message and still be misunderstood. The sender's part ends with the sending, but the communication is not finished until the receiver's understanding matches the intent. Check, and check again.
+
+## Key Vocabulary
+
+- **Communication** — The transfer of information and meaning between people, so that one person's message creates understanding in another; the working definition in this lesson draws on CFI and the Saylor textbook.
+- **Sender** — The person who starts a communication episode by encoding and sending a message; the source of the exchange.
+- **Message** — The content that travels between people — the words, signals, or symbols that carry the information and its intended meaning.
+- **Channel** — The route a message travels on, such as face-to-face speech, a written note, email, or a phone call.
+- **Receiver** — The person a message reaches, who decodes and interprets it — in ways both intended and unintended by the sender.
+- **Feedback** — The receiver's response to a message — a nod, a question, a confirmation, or silence — that tells the sender whether it landed.
+- **Noise** — Anything that blocks or changes the intended meaning of a message, including distraction, jargon, filtering, and cultural mismatches; also called interference.
+- **Grapevine** — The informal, unofficial network of conversations and rumors through which information travels faster than the formal channels.
+- **Nonverbal communication** — Meaning carried without words, through tone of voice, facial expression, body language, gestures, and silence.
+
+## Eli-10
+
+Communication is how one person's idea becomes another person's idea. You think something, you put it into words or actions, you send it, and the other person receives it and figures out what it means. Then they respond, and you know whether it worked. Six things are always in play: who is sending, what is being sent, how it travels, who is receiving, what comes back, and what gets in the way. The tricky part is that the meaning that matters is the one the receiver ends up with. If your words say one thing and your tone says another, or the listener is distracted, or the words mean something different to them — that is what they heard.
+
+## Eli's Analogy
+
+Think of communication as a food delivery. The cook is the sender, the meal is the message, the delivery driver is the channel, and the customer is the receiver. The customer opens the bag — that is decoding — and the tip or the complaint is feedback. Noise is everything that can go wrong on the trip: traffic, a wrong address, a cold bag, a missing drink. And like a delivery, communication only counts as a success when what arrives matches what was ordered.
+
+Where the analogy breaks down: The delivery analogy breaks down because a meal is a fixed thing and meaning is not. A pizza does not change on the ride; a message gets rebuilt inside the receiver's head, colored by their experience, mood, and culture. You cannot hand over meaning like a box. You have to shape the message for the person and check that what they received matches what you meant.
+
+## Worked Example
+
+Priya manages Maple Street Bakery and needs the weekend delivery schedule changed. Instead of just sending a text, she works through the model. She is the sender; the message is “deliveries start an hour earlier on Saturday, starting next week”; the channel is a short staff meeting plus a written note on the board. The bakers are the receivers. Priya keeps it plain — “one hour earlier, six a.m., not seven” — and drops jargon like “shift the window,” which could mean anything. Noise: one baker is half-listening while frosting a cake, so Priya asks each person to repeat the new time back — that is feedback. When the baker nods and says “six a.m. Saturday, got it,” the loop closes. The note stays on the board for anyone who was away.
+
+## Common Mistakes
+
+- **Treating sending as the whole job — “I told them” is assumed to mean “they understood.”** Fix: Telling is only the first half. Without feedback — a question, a nod, a summary — the sender never knows what actually arrived in the receiver's head.
+- **Ignoring the nonverbal channel, or assuming words carry the whole message.** Fix: Tone, posture, and facial expression run alongside words and often win when they conflict. A flat “sure, no problem” with crossed arms is a different message.
+- **Dismissing the grapevine as harmless rumor, or relying on it for anything important.** Fix: The grapevine is fast but unreliable — a message reshaped by each pair of hands. Big or sensitive news belongs on formal channels, where it can be controlled and documented.
+- **Assuming everyone shares your jargon and your cultural rules.** Fix: Specialized words and unspoken norms are barriers until you confirm they are shared. Say it plainly and check understanding — especially across teams, levels, and cultures.
+
+## Compare / Contrast
+
+- **Verbal communication** versus **Nonverbal communication**: Verbal communication is words — spoken or written. Nonverbal communication is meaning carried without words: tone of voice, facial expression, body language, and silence. The two run at the same time, and when they conflict, listeners tend to trust the nonverbal signal.
+- **Formal channel** versus **Grapevine**: A formal channel follows the organization's official structure — memos, meetings, reports, policy announcements. The grapevine is the unofficial network of hallway and break-room talk: faster and more human, but reshaped by every person it passes through.
+
+## Key Takeaway
+
+Meaning is what the receiver takes away. Send with the message model in mind, use plain words, watch for barriers, and always check understanding — because the message that counts is the one that lands.
+
+## Practice Question Bank
+
+### Question 1
+
+A bakery owner explains the new weekend hours to her bakers so they all start work at the same time next Saturday. Which option best fits the definition of communication used here?
+
+- Information and meaning moving between people so the bakers understand the new hours
+- A schedule printed and posted on the wall, whether or not anyone reads it
+- A manager deciding what the hours should be and writing them down for herself
+- The bakers arriving on time out of habit, without anyone telling them anything
+
+**Answer:** Information and meaning moving between people so the bakers understand the new hours
+
+**Why:** The working definition, drawn from CFI and the Saylor textbook, is the transfer of information and meaning between people: the hours move from owner to bakers and are meant to create understanding. A printed schedule nobody reads, a private decision, and habit involve no shared meaning.
+
+*Difficulty: recall · Skill: Recalling the working definition of communication*
+
+### Question 2
+
+Mina records a voice message for her manager explaining that the warehouse count came up short by twelve boxes. In the message model, the recorded explanation itself is the —
+
+- channel
+- receiver
+- message
+- feedback
+
+**Answer:** message
+
+**Why:** The message is the content that travels between people — here, the recorded explanation about the count. The phone system is the channel, the manager is the receiver, and any reply the manager sends would be feedback.
+
+*Difficulty: application · Skill: Applying the message model to name the message*
+
+### Question 3
+
+During a team call, Aya announces that the project deadline has moved up a week, but three teammates were checking email while she spoke and only caught the words “deadline” and “week.” Which part of the message model best explains the mix-up?
+
+- The sender chose the wrong channel
+- Noise distracted the receivers
+- The receivers sent feedback too early
+- The message was encoded in the wrong language
+
+**Answer:** Noise distracted the receivers
+
+**Why:** Noise is anything that blocks or changes the intended meaning of a message. Here, distraction — teammates attending to their inboxes — kept the receivers from decoding the announcement. The channel, encoding, and feedback were not the problem.
+
+*Difficulty: application · Skill: Applying the noise element to a realistic scenario*
+
+### Question 4
+
+Lena hears in the break room that the office is moving to a new floor next month — a full week before any official announcement. What route carried this information?
+
+- A formal channel
+- A written memo
+- A scheduled staff meeting
+- The grapevine
+
+**Answer:** The grapevine
+
+**Why:** The grapevine is the informal network of hallway and break-room conversation that moves information faster than official routes. A memo, a scheduled meeting, and a formal announcement are all formal channels.
+
+*Difficulty: analysis · Skill: Analyzing formal versus informal communication channels*
+
+### Question 5
+
+During a performance review, Theo says, “No problem, I'm on board with the new schedule” while frowning, crossing his arms, and avoiding eye contact. His words and his body language are sending different signals. The frown and crossed arms are examples of —
+
+- nonverbal communication
+- filtering
+- the grapevine
+- written communication
+
+**Answer:** nonverbal communication
+
+**Why:** Nonverbal communication carries meaning without words — tone, facial expression, posture, and gestures. Theo's frown and crossed arms send a wordless message that may contradict what he says out loud.
+
+*Difficulty: application · Skill: Applying the verbal-versus-nonverbal distinction*
+
+## Sources
+
+- openstax-principles-management-16-1-the-process-of-managerial-communication
+- openstax-principles-management-16-2-types-of-communications-in-organizations
+- openstax-principles-management-16-5-the-major-channels-of-management-communication-are-talking-listening-reading-and-writing
+- cfi-communication-vital-life-skill
+- saylor-business-communication-for-success
+
+## Related Topics
+
+- management-and-leadership:foundations:leading
+- management-and-leadership:foundations:management-versus-leadership
+- management-and-leadership:foundations:organizational-culture
+- management-and-leadership:foundations:teams
+- management-and-leadership:foundations:conflict-resolution
+
+## Editorial Metadata
+
+- Topic id: management-and-leadership:foundations:communication
+- Phase: 2
+- Subject: management-and-leadership
+- Editorial status: READY_TO_PUBLISH
+- Research date: 2026-08-22
+- Sources are reference-only; all facts restated in original prose.
