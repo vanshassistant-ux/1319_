@@ -1,0 +1,160 @@
+# Pulse
+
+## In 30 Seconds
+
+Your pulse is the wave of blood you can feel each time your heart beats — a heartbeat pushes blood through your arteries, and where an artery runs close to the skin, you can feel that push. The normal resting pulse for an adult is about 60 to 100 beats per minute, though athletes and children sit outside that band. A pulse tells you three things: how fast the heart beats, whether the beats come evenly, and how strong each beat feels. Fast is tachycardia; slow is bradycardia.
+
+## Why This Matters
+
+The pulse is the cheapest, fastest window into the heart that exists — no machine required. It is one of the first things checked in an emergency because a pulse means blood is moving and the heart is pumping. In everyday care, a resting pulse that climbs, drops, or turns uneven can be the first clue to fever, dehydration, anxiety, or a medication's effect. Learning to read a pulse well matters for the student heading into any clinical rotation, and for anyone who wants to notice changes in their own body before they become big problems.
+
+## Learning Objectives
+
+- Define the pulse as the wave of blood felt each time the heart beats, using the attributed working definition.
+- State the adult resting reference range of about 60-100 beats per minute and explain why athletes and children differ.
+- Name five pulse sites — radial, carotid, brachial, femoral, pedal — and locate each one.
+- Distinguish the three things a pulse tells you: rate, rhythm, and strength.
+- Apply the terms bradycardia and tachycardia to a given resting pulse reading.
+- Explain how exercise, emotion, illness, and medications can change pulse rate.
+
+## The College Version
+
+### What the pulse actually is
+
+The pulse is the wave of blood you can feel each time the heart beats. Every heartbeat pushes a pulse of blood out of the heart and into the arteries, and wherever an artery runs close to the surface of the skin, that push can be felt with the fingertips. OpenStax's Clinical Nursing Skills puts it this way: blood flow caused by the beating heart can be detected where arteries occur close to the surface of the skin. MedlinePlus frames the same reality as a count — the pulse is the number of heartbeats per minute. Both descriptions point at the same thing: the pulse is the heart's rhythm of life made touchable. That is why it is assessed so often. Along with breathing, the pulse is one of the first vital signs checked in an emergency, because it demonstrates that the heart is pumping and blood is moving. In routine care it is measured to establish a baseline and then rechecked to catch changes early.
+
+### The normal range — and the honest note
+
+For a resting adult, the reference range is about 60 to 100 beats per minute. That number comes from sources like MedlinePlus, which lists 60 to 100 beats per minute for adults and seniors, and OpenStax, which gives the same adult range. Two honest qualifications belong next to that number. First, athletes: a well-trained athlete often rests in the 40s to 60s because a stronger, more efficient heart pumps more blood with each beat, so fewer beats are needed. MedlinePlus lists trained athletes at 40 to 60, and OpenStax says athletes and adolescents can rest as slow as 40 to 50. Second, age: children normally have faster resting pulses that gradually slow toward the adult range — a newborn's resting pulse can run 70 to 190 beats per minute. The 60-100 band is a population reference for resting adults, not a universal rule for every person at every moment.
+
+### The sites
+
+The pulse can be felt wherever an artery passes close to the skin, and clinicians name the sites by the artery underneath. The radial pulse sits at the wrist, on the thumb side of the forearm, and is the usual choice for routine adult checks because it is easy to reach and comfortable for the patient. The carotid pulse lies on the neck, to the side of the windpipe; it carries blood toward the brain and is often checked first in emergencies — and only one side is pressed at a time, so blood flow to the head is never squeezed from both sides. The brachial pulse is found in the inner arm at the elbow crease, the site used when taking a blood pressure with a stethoscope. The femoral pulse is in the groin, where a large artery serves the leg. The pedal pulse — more formally the dorsalis pedis — sits on the top of the foot and is the preferred lower-leg site in adults and children. Each site is a place where the same heartbeat can be felt, just at a different distance from the heart.
+
+### Rate, rhythm, and strength
+
+Feeling a pulse is one action, but it delivers three pieces of information. Rate is the count: how many beats per minute. This is the number charted as the pulse, and it answers the question of how fast the heart is working. Rhythm is the pattern: do the beats arrive evenly, like a metronome, or do they skip, stutter, or cluster? A regular rhythm is expected; an irregular rhythm can be a sign that something in the heart's electrical system deserves attention. Strength is the force of each beat — the volume of blood moving through the artery. A healthy pulse feels firm and springy. A weak, thready pulse suggests reduced blood flow, as with dehydration; a bounding, very strong pulse can occur when blood backs up in the circulation. Reading all three together — not just the count — is what makes the pulse useful.
+
+### Bradycardia, tachycardia, and what moves the needle
+
+Two words describe the speed of a resting pulse. Bradycardia means a resting pulse slower than 60 beats per minute. Tachycardia means a resting pulse faster than 100 beats per minute. Both terms describe the rate, not a diagnosis: a marathon runner with a resting pulse of 52 is not sick, and a nurse's pulse of 105 during a stressful shift is not automatically heart disease. What changes the pulse? Exercise raises it — muscles demand more blood. Emotion raises it too: fear and anxiety rev the heart, while relaxation lets it settle. Illness can raise it — fever, infection, dehydration, and low oxygen all push the rate up as the body works harder. And medications change it: some prescribed drugs slow the heart, others speed it. The pulse is a live dial, and knowing which way it moves — and why — is the skill.
+
+## Key Vocabulary
+
+- **pulse** — The wave of blood felt each time the heart beats, counted as heartbeats per minute where an artery runs near the skin.
+- **heart rate** — The number of times the heart beats in one minute; the pulse count equals the heart rate.
+- **radial pulse** — The pulse felt at the wrist on the thumb side, the usual site for a routine adult pulse check.
+- **carotid pulse** — The pulse felt on the neck beside the windpipe, carrying blood to the brain and often checked first in emergencies.
+- **brachial pulse** — The pulse felt in the inner arm at the elbow crease, the site used with a stethoscope when taking blood pressure.
+- **femoral pulse** — The pulse felt in the groin where the large femoral artery supplies the leg.
+- **pedal pulse** — The pulse on the top of the foot (dorsalis pedis), the preferred lower-leg pulse site in adults and children.
+- **bradycardia** — A resting pulse slower than 60 beats per minute; the term names the rate, not a diagnosis.
+- **tachycardia** — A resting pulse faster than 100 beats per minute; the term names the rate, not a diagnosis.
+- **rhythm** — The pattern of the pulse beats — whether they arrive evenly and predictably or irregularly.
+
+## Eli-10
+
+Your heart is a pump about the size of your fist. Every time it squeezes, it shoves a wave of blood into your arteries — the tubes that carry blood around your body. Some of those tubes run close to the surface, like the one at your wrist, and when the wave passes, you can feel it with your fingers. That felt wave is your pulse. Counting how many waves arrive in a minute tells you how fast the pump is running — usually 60 to 100 times a minute for a resting adult. The beats should come evenly, and each should feel firm but not hard. A pulse that is too slow is called bradycardia; too fast is tachycardia. Exercise, worry, fever, and medicine can all change the speed, so the pulse is a quick way to hear what the heart is doing right now.
+
+## Eli's Analogy
+
+Think of a pulse as the heartbeat of a drum line you can feel through the ground. The drummer strikes the drum, and a moment later the ground shudders under your feet. You never see the drum, but the shudder tells you the drummer is playing, how fast, and how hard. Your heart is the drummer, your arteries are the ground, and your fingertips are the place where the shudder arrives. One finger on the wrist is like one foot on the ground: you feel every strike.
+
+**Where the analogy breaks down:** A drumbeat reaches every patch of ground at nearly the same instant, but a pulse wave travels through arteries at different speeds and fades with distance — a pedal pulse at the foot is fainter than the carotid pulse at the neck. Also, the ground shudder only tells you about the drum; the pulse only tells you about blood movement. It does not show blood pressure, oxygen, or the electrical health of the heart, which is why a pulse check is one vital sign among several, not the whole picture.
+
+## Worked Example
+
+Nadia is a nursing student on her first clinical day. Her instructor asks her to check the resting pulse of Mr. Osei, a 54-year-old patient admitted for observation. Nadia asks Mr. Osei to sit quietly, then places her index and middle fingers on the radial artery at his wrist. She feels a firm, even beat. She counts for 30 seconds, gets 44 beats, and multiplies by 2: 88 beats per minute. She notes rhythm — regular, like a metronome — and strength — full and springy. Before charting, she checks his record: his usual resting pulse has hovered in the mid-80s for the past two days. Her reading matches his baseline, so 88 is unremarkable for him even though it is a specific number, not an average. She charts pulse 88, radial, regular, strong, and tells her instructor the patient's pulse is within his own usual range.
+
+## Common Mistakes
+
+- **Mistake:** Treating a pulse of 58 as "bradycardia, therefore sick." — **Correction:** Bradycardia names a rate below 60, not a diagnosis. A trained athlete resting at 52 can be perfectly healthy because a stronger heart pumps more per beat. The label should prompt a closer look at the person, not an automatic alarm.
+- **Mistake:** Pressing both carotid pulses at the same time. — **Correction:** The carotid arteries feed the brain, and pressing both sides at once can squeeze off blood flow to the head and cause fainting. Check one side at a time, gently, as OpenStax and MedlinePlus both advise.
+- **Mistake:** Only counting the beats and ignoring rhythm and strength. — **Correction:** The count is half the story. An uneven rhythm or a weak, thready beat can be the more important finding, so every pulse check includes all three: rate, rhythm, and strength.
+- **Mistake:** Judging a pulse against the population range instead of the patient's own baseline. — **Correction:** A rate of 96 is inside the 60-100 adult range, but if the patient's usual resting pulse is 65, 96 is a real change worth investigating. Individual trends matter more than the population band.
+- **Mistake:** Thinking a fast pulse during exercise is a sign of illness. — **Correction:** Exercise is supposed to raise the pulse — working muscles demand more blood. What matters is the resting pulse: it should settle back into the person's usual range after activity.
+
+## Compare / Contrast
+
+- **Pulse vs. Heart rate:** The pulse is the felt wave of blood at the skin; heart rate is the number of beats per minute. They measure the same thing — the pulse count equals the heart rate — but the pulse is the touchable version of the number.
+- **Bradycardia vs. Tachycardia:** Bradycardia is a resting pulse below 60 beats per minute; tachycardia is above 100. Both describe the speed of the rate only, and neither is a diagnosis by itself.
+- **Radial pulse vs. Carotid pulse:** The radial pulse at the wrist is the routine site for comfortable, everyday checks. The carotid pulse on the neck is larger and closer to the heart, making it the first place checked in emergencies to confirm the heart is pumping — always one side at a time.
+
+## Key Takeaway
+
+The pulse is the heart's telegram: a felt wave that tells you, in seconds, how fast the heart beats, how evenly it beats, and how strongly blood is moving — best read against the person's own baseline, not the population average.
+
+## Practice Question Bank
+
+### Question 1
+A nursing student is asked to explain what the pulse actually is before taking one. Which description matches the attributed working definition?
+
+- [ ] The wave of blood you can feel each time the heart beats, where an artery runs close to the skin.
+- [ ] The pressure of blood against the artery walls while the heart rests between beats.
+- [ ] The amount of oxygen the blood carries to the body's tissues.
+- [ ] The sound of the heart valves closing, heard with a stethoscope.
+
+**Answer:** Option 1. The working definition: the pulse is the wave of blood felt each time the heart beats, detected where an artery passes close to the skin (OpenStax; MedlinePlus counts it as heartbeats per minute). The other options describe blood pressure between beats, oxygen content, and heart sounds — different measurements. *(recall)*
+
+### Question 2
+A 45-year-old patient rests quietly while a nursing assistant counts a radial pulse of 52 beats per minute. The patient is a marathon runner with no complaints. What is the most accurate interpretation?
+
+- [ ] Tachycardia — the pulse is dangerously fast and must be reported immediately.
+- [ ] A normal finding — trained athletes often rest in the 40s to 60s because their hearts pump more blood per beat.
+- [ ] Bradycardia — a pulse below 60 always means the heart is failing.
+- [ ] An unreliable reading — a resting pulse can never be below 60 in an adult.
+
+**Answer:** Option 2. MedlinePlus lists well-trained athletes at 40-60 bpm and OpenStax notes athletes and adolescents can rest at 40-50 bpm because greater stroke volume means fewer beats are needed. Bradycardia and tachycardia name rates, not diagnoses; 52 is not tachycardia, and below 60 does not automatically mean a failing heart. *(application)*
+
+### Question 3
+A nurse needs a quick confirmation that a patient's heart is pumping during an emergency response. Which site and technique are most appropriate?
+
+- [ ] The pedal pulse on the top of the foot, pressed firmly for 30 seconds.
+- [ ] Both carotid pulses at the same time, to get a stronger signal.
+- [ ] The carotid pulse on one side of the neck, pressed gently.
+- [ ] The radial pulse at the wrist, counting for a full two minutes.
+
+**Answer:** Option 3. OpenStax identifies the carotid pulse as the emergency site to verify the presence of a pulse, and both OpenStax and MedlinePlus warn that only one carotid side is pressed at a time so blood flow to the brain is not restricted. The other options use wrong sites, both sides at once, or needless extra time. *(application)*
+
+### Question 4
+A patient's resting pulse has hovered near 64 beats per minute for several days. This morning it reads 96, and the patient is visibly anxious about an upcoming procedure. Which analysis is most sound?
+
+- [ ] No concern is warranted because 96 is inside the adult reference range.
+- [ ] The patient has bradycardia and needs immediate cardiac monitoring.
+- [ ] The anxiety is irrelevant; a 32-beat jump always means a heart rhythm problem.
+- [ ] The rate is within the population range but is a real change from this patient's baseline — anxiety is a plausible cause worth rechecking.
+
+**Answer:** Option 4. OpenStax's trends point is exactly this: a rate normal for the population can still be a change for a specific patient, and OpenStax lists fear and anxiety as factors that raise the pulse. Option 1 ignores the baseline shift, option 2 misuses bradycardia (below 60), and option 3 overstates what one reading can prove. *(analysis)*
+
+### Question 5
+Which list correctly pairs each pulse site with its location?
+
+- [ ] Radial — wrist; carotid — neck; brachial — inner elbow; femoral — groin; pedal — top of foot.
+- [ ] Radial — neck; carotid — wrist; brachial — groin; femoral — foot; pedal — inner elbow.
+- [ ] Radial — top of foot; carotid — inner elbow; brachial — wrist; femoral — neck; pedal — groin.
+- [ ] Radial — groin; carotid — foot; brachial — neck; femoral — wrist; pedal — inner elbow.
+
+**Answer:** Option 1. The standard pairing (OpenStax; MedlinePlus): radial at the wrist, carotid on the neck, brachial in the inner elbow crease, femoral in the groin, and pedal (dorsalis pedis) on the top of the foot. The other options scramble the sites. *(recall)*
+
+## Sources
+
+- MedlinePlus, U.S. National Library of Medicine — *Pulse (Medical Encyclopedia)* — https://medlineplus.gov/ency/article/003399.htm
+- MedlinePlus, U.S. National Library of Medicine — *Vital Signs (Health Topics)* — https://medlineplus.gov/vitalsigns.html
+- OpenStax (Rice University) — *Clinical Nursing Skills, Section 15.5 Heart Rate* — https://openstax.org/books/clinical-nursing-skills/pages/15-5-heart-rate
+
+## Related Topics
+
+- Vital Signs — nursing-and-allied-health-foundations:foundations:vital-signs
+- Temperature — nursing-and-allied-health-foundations:foundations:temperature
+- Respirations — nursing-and-allied-health-foundations:foundations:respirations
+- Blood Pressure — nursing-and-allied-health-foundations:foundations:blood-pressure
+- Health Assessment Basics — nursing-and-allied-health-foundations:foundations:health-assessment-basics
+
+## Editorial Metadata
+
+- **Topic ID:** nursing-and-allied-health-foundations:foundations:pulse
+- **Editorial status:** READY_TO_PUBLISH
+- **Research status:** source-verified
+- **Researched at:** 2026-08-22
+- **Rights status:** reference-only sources (MedlinePlus, OpenStax); no source prose adapted; all examples original
+- **Transformation:** The working definition, reference range, sites, rate/rhythm/strength, bradycardia/tachycardia, and influencing factors were synthesized from MedlinePlus Pulse, MedlinePlus Vital Signs, and OpenStax Clinical Nursing Skills 15.5 into an original lesson with entirely original examples.
