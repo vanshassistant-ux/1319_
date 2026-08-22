@@ -71,6 +71,13 @@ Finance is how a business manages its money: raising it, using it, and planning 
 - **Expense vs. Asset:** An expense is money spent on what is consumed in operating, such as wages and supplies; an asset is a purchase that keeps serving the business, such as equipment or a vehicle.
 - **Investing vs. Financing:** Investing is spending money — the firm's funds go into projects and purchases expected to return value. Financing is raising money — obtaining funds from lenders or owners. OpenStax lists both, with financial planning, as the financial manager's key activities.
 
+## Common Mistakes
+
+- **Confusing profit with cash in the bank.** — Profit is the accounting result of a period; cash flow is the actual money moving. A profitable order can still leave the account empty if the customer pays late, so track both.
+- **Assuming a new business should rely mainly on loans or investors.** — Those sources start a business or bridge a gap, but revenue from customers is the chief ongoing source of funding, per OpenStax.
+- **Treating the budget as a forecast that must come true.** — A budget is a plan to compare against reality and adjust; its value is in steering early, not in being right.
+- **Judging financial choices only by what they cost today.** — Financial decisions trade costs and benefits over time — interest for ownership, risk for return — so the future is part of every price.
+
 ## Key Takeaway
 
 Finance is managing money over time: raising it, spending it, planning it, and accepting that every financial choice trades something now for something later, with profit and cash flow running on different clocks.

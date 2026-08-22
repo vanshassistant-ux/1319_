@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Human resources (HR) is the business function that manages the employee lifecycle: recruit, hire, train, evaluate, compensate, and offboard the people who work for an organization. The working definition used in this lesson comes from OpenStax's Introduction to Business: HR management is the process of hiring, developing, motivating, and evaluating employees to achieve organizational goals. HR exists for one honest reason — people are the ones doing the work, so how a business finds, prepares, and supports them shapes what the business achieves.
+Human resources (HR) is the business function that manages the employee lifecycle: recruit, hire, train, evaluate, compensate, and offboard the people who work for an organization. This lesson's central definition comes from OpenStax's Introduction to Business: HR management is the process of hiring, developing, motivating, and evaluating employees to achieve organizational goals. HR exists for one honest reason — people are the ones doing the work, so how a business finds, prepares, and supports them shapes what the business achieves.
 
 ## Why This Matters
 
@@ -21,7 +21,7 @@ Every product you buy and every service you use exists because people did the wo
 
 ### The people function: what HR is
 
-The working definition used in this lesson comes from OpenStax's Introduction to Business: human resource management is the process of hiring, developing, motivating, and evaluating employees to achieve organizational goals. Two parts of that sentence matter. First, HR is a process, not a person or a desk: it is the set of decisions and activities that shape who works for an organization and how well they work. Second, the process exists to achieve organizational goals — every hiring choice, training program, and pay decision is supposed to serve the results the business is trying to produce. OpenStax describes HR practices as the system that makes employees a key element for gaining competitive advantage: equipment, ideas, and capital do nothing until people put them to work. The same section notes that the process is sequential: employees cannot be trained and paid until they have been selected and placed in jobs, which follows recruitment, which follows planning about what the organization needs.
+This lesson's central definition comes from OpenStax's Introduction to Business: human resource management is the process of hiring, developing, motivating, and evaluating employees to achieve organizational goals. Two parts of that sentence matter. First, HR is a process, not a person or a desk: it is the set of decisions and activities that shape who works for an organization and how well they work. Second, the process exists to achieve organizational goals — every hiring choice, training program, and pay decision is supposed to serve the results the business is trying to produce. OpenStax describes HR practices as the system that makes employees a key element for gaining competitive advantage: equipment, ideas, and capital do nothing until people put them to work. The same section notes that the process is sequential: employees cannot be trained and paid until they have been selected and placed in jobs, which follows recruitment, which follows planning about what the organization needs.
 
 ### The employee lifecycle, one stage at a time
 
@@ -87,7 +87,7 @@ Human resources is the business function that manages the employee lifecycle —
 
 ## Practice Question Bank
 
-1. **According to the working definition from OpenStax's Introduction to Business, what is human resource management?**
+1. **What is human resource management, per OpenStax's definition?**
    - The process of hiring, developing, motivating, and evaluating employees to achieve organizational goals
    - The department that handles customer complaints, returns, and refunds
    - A financial strategy for investing company profits into new equipment

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "subjectSlug": "introduction-to-business",
+  "accepted": [
+    { "match": "\"profit\" defined differently in what-is-a-business and finance-basics (overlap 13%)", "reason": "what-is-a-business glosses profit as the surplus motive for businesses; finance-basics uses it in the profit-vs-cash-flow distinction. Compatible depth difference." },
+    { "match": "\"limited liability company (llc)\" defined differently in forms-of-business-ownership and llc (overlap 18%)", "reason": "forms-of-business-ownership gives the one-line overview of all four forms; the llc lesson owns the full definition. Compatible depth difference." },
+    { "match": "\"liability\" defined differently in forms-of-business-ownership and accounting-basics (overlap 20%)", "reason": "forms-of-business-ownership uses liability in the legal-ownership sense; accounting-basics uses it in the balance-sheet sense. Different senses in different subdomains — no conflict." },
+    { "match": "\"target market\" defined differently in marketing and competitive-advantage (overlap 22%)", "reason": "marketing defines target market in the segmentation context; competitive-advantage glosses it in the value-proposition context. Compatible depth difference." }
+  ],
+  "notes": [
+    "Largest single-pattern REUSE cluster of the run: 'The working definition used in this lesson comes from OpenStax's Introduction to Business' appeared in ~15 lessons (60 REUSE findings). Root cause: parallel workers each opened their lesson with the same brief-mandated attribution sentence, with curly/straight-apostrophe variants defeating string replacement. Fixed with apostrophe-free pattern replacement across review JSONs, evidence packets, and markdown, giving each lesson a distinct attribution phrasing.",
+    "QNEAR: 'According to the working definition from OpenStax's Introduction to Business' question stems across 7 lessons rewritten to topic-specific questions.",
+    "SRCDUP: 3 same-URL pairs consolidated (OpenStax 11.2, OpenStax 4.3, SBA manage-your-business) with registry prune (666 → 663).",
+    "finance-basics.md was missing ## Common Mistakes — regenerated from the review JSON.",
+    "OpenStax used REFERENCE_ONLY throughout (aiIngestionAllowed:false per the page footer); BEA/SBA figures time-anchored (June 2026 trade data); jurisdiction-specific facts explicitly labeled (72% sole-proprietorship figure as a U.S. statistic; LLC statutes as U.S. context)."
+  ]
+}

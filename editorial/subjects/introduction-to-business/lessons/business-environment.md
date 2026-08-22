@@ -89,7 +89,7 @@ The business environment is the world outside a business that shapes how it can 
 
 *Answer: A. PEST stands for political/legal, economic, social/cultural, and technological forces. Marketing, accounting, finance, and operations are business functions, while planning, organizing, leading, and controlling are management activities, not environmental dimensions.*
 
-**2. According to the working definition used in this lesson, the business environment is best described as:**
+**2. How is the business environment best described?**
 
 - [ ] A. The employees, managers, and owners who run the company
 - [ ] B. The products a business chooses to sell and the prices it sets

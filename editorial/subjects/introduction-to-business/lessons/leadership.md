@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Leadership is the process of influencing and guiding people toward a goal. The working definition used in this lesson comes from OpenStax: leadership is guiding and motivating others toward the achievement of organizational goals. A leader can be anyone in an organization, regardless of position. Leadership is not the same as management, which coordinates resources and processes. Styles range from autocratic to democratic to laissez-faire, and no single style works everywhere. Leaders set direction, motivate people, build trust, and model behavior, and those skills can be practiced and learned.
+Leadership is the process of influencing and guiding people toward a goal. The lesson’s working definition is drawn from OpenStax: leadership is guiding and motivating others toward the achievement of organizational goals. A leader can be anyone in an organization, regardless of position. Leadership is not the same as management, which coordinates resources and processes. Styles range from autocratic to democratic to laissez-faire, and no single style works everywhere. Leaders set direction, motivate people, build trust, and model behavior, and those skills can be practiced and learned.
 
 ## Why This Matters
 
@@ -10,7 +10,7 @@ Almost every group you join, whether a team at work, a club, a committee, or a v
 
 ## Learning Objectives
 
-- Define leadership using the working definition from OpenStax's Introduction to Business: the process of guiding and motivating others toward the achievement of organizational goals.
+- Define leadership as guiding and motivating others toward organizational goals, per OpenStax's definition.
 - Explain that a leader can be anyone in an organization, regardless of position, because leadership is about influence rather than title.
 - Distinguish leadership from management: influencing and directing people versus coordinating resources and processes.
 - Name four leadership styles, autocratic, democratic, laissez-faire, and transformational, with one line about when each fits.
@@ -21,11 +21,11 @@ Almost every group you join, whether a team at work, a club, a committee, or a v
 
 ### A working definition, attributed
 
-Leadership is influence. The working definition used in this lesson comes from OpenStax's Introduction to Business, the open textbook that anchors this subject: leadership is the process of guiding and motivating others toward the achievement of organizational goals. Three parts matter. First, it is a process, an ongoing activity, not a one-time order. Second, it guides and motivates, so it works through people's willingness, not just their obedience. Third, it points at goals: leadership is always toward something. OpenStax adds a crucial sentence: a leader can be anyone in an organization, regardless of position, able to influence others to act or follow, often by their own choice. So the everyday shorthand, leadership is the ability to influence and guide people toward a goal, is faithful to that definition. The key word is influence: people follow because they choose to, not only because they must.
+Leadership is influence. The lesson's working definition is drawn from OpenStax's Introduction to Business, the open textbook underpinning this subject: leadership is the process of guiding and motivating others toward the achievement of organizational goals. Three parts matter. First, it is a process, an ongoing activity, not a one-time order. Second, it guides and motivates, so it works through people's willingness, not just their obedience. Third, it points at goals: leadership is always toward something. OpenStax adds a crucial sentence: a leader can be anyone in an organization, regardless of position, able to influence others to act or follow, often by their own choice. So the everyday shorthand, leadership is the ability to influence and guide people toward a goal, is faithful to that definition. The key word is influence: people follow because they choose to, not only because they must.
 
 ### Leadership versus management
 
-Leadership and management are close relatives, and the words get used interchangeably, but the distinction is real and useful. Management, as OpenStax defines it in the same chapter, is the process of guiding the development, maintenance, and allocation of resources to attain organizational goals, built on four functions: planning, organizing, leading, and controlling. Management is about coordination and process: budgets, schedules, staffing, procedures. Leadership is the influence side: setting direction people believe in, motivating them to move, and building the trust that makes follow-through possible. OpenStax notes that managers are designated leaders according to the organizational structure, but a manager may have to lean on position, negative consequences, or coercion to get results, which is authority without leadership. And a person with no managerial title at all can lead. The two overlap: the best managers also lead. The full treatment of management, its functions, skills, and roles, belongs to the management topic in this subject; this lesson keeps only the distinction.
+Leadership and management are close relatives, and the words get used interchangeably, but the distinction is real and useful. Management, as OpenStax defines it in the same chapter, is the process of directing the development, upkeep, and allocation of resources to attain organizational goals, built on four functions: planning, organizing, leading, and controlling. Management is about coordination and process: budgets, schedules, staffing, procedures. Leadership is the influence side: setting direction people believe in, motivating them to move, and building the trust that makes follow-through possible. OpenStax notes that managers are designated leaders according to the organizational structure, but a manager may have to lean on position, negative consequences, or coercion to get results, which is authority without leadership. And a person with no managerial title at all can lead. The two overlap: the best managers also lead. The full treatment of management, its functions, skills, and roles, belongs to the management topic in this subject; this lesson keeps only the distinction.
 
 ### Four leadership styles
 
@@ -85,7 +85,7 @@ Leadership is influencing and guiding people toward a goal. It needs no title, n
 
 ## Practice Question Bank
 
-**1. According to the working definition used in this lesson, what is leadership?**
+**1. What is leadership, per the definition this lesson uses?**
 
 - [✓] A. The process of guiding and motivating others toward the achievement of organizational goals
 - [ ] B. The formal authority to hire, fire, and discipline employees

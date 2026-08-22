@@ -21,7 +21,7 @@ You will work inside some kind of structure from your first job: your paycheck n
 
 ### A working definition, attributed
 
-The working definition used in this lesson comes from OpenStax Introduction to Business, the open textbook that anchors this subject. Organizing is the management function that coordinates and allocates a firm's resources so the firm can carry out its plans and achieve its goals; the result is a formal structure — the order and design of relationships within a company, with well-defined lines of authority, channels for information flow, and means of control. Investopedia states the same idea in plainer terms: an organizational structure is a system that guides how certain activities are directed to achieve the goals of an organization, and it determines how information flows between levels within the company. Both definitions agree on the core: structure is how a business arranges roles, authority, and reporting.
+For this lesson, the working definition comes from OpenStax Introduction to Business, the open textbook anchoring this subject. Organizing is the management function that coordinates and allocates a firm's resources so the firm can carry out its plans and achieve its goals; the result is a formal structure — the order and design of relationships within a company, with well-defined lines of authority, channels for information flow, and means of control. Investopedia states the same idea in plainer terms: an organizational structure is a system that guides how certain activities are directed to achieve the goals of an organization, and it determines how information flows between levels within the company. Both definitions agree on the core: structure is how a business arranges roles, authority, and reporting.
 
 ### The organization chart: who reports to whom
 
@@ -49,7 +49,7 @@ Every organization has some kind of underlying structure, and none of them is pe
 
 ## Key Vocabulary
 
-- **organizational structure** — The way a business arranges roles, authority, and reporting so work is coordinated toward its goals; the working definition used in this lesson comes from OpenStax Introduction to Business.
+- **organizational structure** — The way a business arranges roles, authority, and reporting so work is coordinated toward its goals; the definition this lesson adopts comes from OpenStax Introduction to Business.
 - **organization chart** — A diagram of boxes and lines that shows the jobs in a company and who reports to whom, from the top down.
 - **chain of command** — The line of authority that runs from the top of an organization to the bottom and makes clear who reports to whom.
 - **span of control** — The number of employees that one manager directly supervises; it can be as narrow as two or three or as wide as fifty or more.
@@ -161,5 +161,5 @@ Organizational structure is how a business arranges roles, authority, and report
 - **Subject / Unit / Slug:** introduction-to-business / foundations / organizational-structure
 - **Editorial Status:** READY_TO_PUBLISH
 - **Researched:** 2026-08-21
-- **Rights:** reference-only sources; OpenStax facts (CC BY 4.0) restated in original prose with attribution recorded; Investopedia used as reference only; no source prose adapted
+- **Rights:** reference-only sources; OpenStax facts (CC BY 4.0) restated in original prose with attribution; Investopedia reference-only; no source prose adapted
 - **Provenance:** EliExplains original synthesis — working definition attributed to OpenStax Introduction to Business (7.1) and Investopedia, org chart and chain of command (7.1, 7.4), functional/divisional/matrix/flat structures (7.1, 7.2, Investopedia), authority and span of control (7.4), centralization versus decentralization (7.5), and the tools-not-cages framing (7.1) verified against the cited sources; all examples original.

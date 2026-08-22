@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Competitive advantage is the edge that makes customers choose one business over another. The working definition used in this lesson comes from OpenStax's Introduction to Business: a competitive advantage is a set of unique features of a company and its products that the target market perceives as significant and superior to the competition. Businesses build it through cost, quality, speed, service, or brand — and they have to keep earning it, because competitors copy what works.
+Competitive advantage is the edge that makes customers choose one business over another. This lesson draws its working definition from OpenStax's Introduction to Business: a competitive advantage is a set of unique features of a company and its products that the target market perceives as significant and superior to the competition. Businesses build it through cost, quality, speed, service, or brand — and they have to keep earning it, because competitors copy what works.
 
 ## Why This Matters
 
@@ -21,7 +21,7 @@ Every time you pick one coffee shop, one bank, or one delivery app over another,
 
 ### What competitive advantage is
 
-The working definition used in this lesson comes from OpenStax's Introduction to Business: a competitive advantage — also called a differential advantage — is a set of unique features of a company and its products that are perceived by the target market as significant and superior to those of the competition. OpenStax adds the plain-English version: competitive advantage is the factor that causes customers to patronize a specific firm and not the competition. Two details matter. First, the advantage lives in the customer's perception, not in the owner's opinion — a business does not get to declare itself superior; the target market decides. Second, it is relative: the competition is the yardstick. A feature is only an advantage if rivals do not match it. That is why the question "why do customers choose you?" is the same question as "what do you do better than the alternatives?"
+This lesson draws its working definition from OpenStax's Introduction to Business: a competitive advantage — also called a differential advantage — is a set of unique features of a company and its products that are perceived by the target market as significant and superior to those of the competition. OpenStax adds the plain-English version: competitive advantage is the factor that causes customers to patronize a specific firm and not the competition. Two details matter. First, the advantage lives in the customer's perception, not in the owner's opinion — a business does not get to declare itself superior; the target market decides. Second, it is relative: the competition is the yardstick. A feature is only an advantage if rivals do not match it. That is why the question "why do customers choose you?" is the same question as "what do you do better than the alternatives?"
 
 ### The classic sources: cost, quality, speed, service, brand
 
@@ -78,7 +78,7 @@ Competitive advantage is the edge that makes customers choose you — earned thr
 
 ## Practice Question Bank
 
-1. According to the working definition from OpenStax's Introduction to Business, what is a competitive advantage?
+1. What is a competitive advantage, as OpenStax defines it?
    - A. A set of unique features of a company and its products that the target market perceives as significant and superior to the competition
    - B. The total profit a company keeps after paying all of its expenses
    - C. A government rating that ranks businesses against their competitors

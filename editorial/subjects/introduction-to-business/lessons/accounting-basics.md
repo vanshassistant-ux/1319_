@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Accounting is the process of organizing, analyzing, and communicating financial information so people can make decisions — the working definition used in this lesson comes from OpenStax's Principles of Accounting. In plainer words, a business records its transactions, classifies them, and reports the results. The core idea is the accounting equation: assets equal liabilities plus equity. The results appear in three standard reports — the income statement, the balance sheet, and the cash flow statement. At its best, accounting is organized honesty: it keeps every claim on a business straight.
+Accounting is the process of organizing, analyzing, and communicating financial information so people can make decisions — this lesson's definition comes from OpenStax's Principles of Accounting. In plainer words, a business records its transactions, classifies them, and reports the results. The core idea is the accounting equation: assets equal liabilities plus equity. The results appear in three standard reports — the income statement, the balance sheet, and the cash flow statement. At its best, accounting is organized honesty: it keeps every claim on a business straight.
 
 ## Why This Matters
 
@@ -21,7 +21,7 @@ Business runs on decisions, and most important decisions run on numbers. Manager
 
 ### The language of business: what accounting is
 
-The working definition used in this lesson comes from OpenStax's Principles of Accounting: accounting is the process of organizing, analyzing, and communicating financial information that is used for decision-making. Accountants are the people trained in the techniques and practices of that profession, and the financial information they prepare is meant for a real decision — whether to hire, whether to expand, whether to lend, whether to invest. Put plainly, the process has three steps. The business records what happens: every sale, every purchase, every payment. It classifies those transactions into categories such as revenue, rent, and loans. And it reports the results in financial statements that summarize the activity. That is why accounting is often called the language of business: it is how a company talks about its own money in a way outsiders can check.
+This lesson's definition comes from OpenStax's Principles of Accounting: accounting is the process of organizing, analyzing, and communicating financial information that is used for decision-making. Accountants are the people trained in the techniques and practices of that profession, and the financial information they prepare is meant for a real decision — whether to hire, whether to expand, whether to lend, whether to invest. Put plainly, the process has three steps. The business records what happens: every sale, every purchase, every payment. It classifies those transactions into categories such as revenue, rent, and loans. And it reports the results in financial statements that summarize the activity. That is why accounting is often called the language of business: it is how a company talks about its own money in a way outsiders can check.
 
 ### Why the numbers matter: managers, owners, and lenders
 
@@ -89,7 +89,7 @@ Accounting is the language of business: record, classify, and report, held toget
 
 ## Practice Question Bank
 
-**Question 1.** According to the working definition in this lesson, accounting is the process of organizing, analyzing, and communicating what kind of information?
+**Question 1.** What does accounting do, per the definition in this lesson? It is the process of organizing, analyzing, and communicating what kind of information?
 
 - A. Financial information that is used for decision-making
 - B. Employee feedback collected through performance reviews

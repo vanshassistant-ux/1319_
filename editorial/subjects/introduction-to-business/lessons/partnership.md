@@ -21,7 +21,7 @@ Partnerships are everywhere — law and accounting firms, restaurants, clinics, 
 
 ### What a partnership is
 
-The working definition comes from OpenStax's Introduction to Business textbook: a partnership is an association of two or more individuals who agree to operate a business together for profit. The Small Business Administration adds the practical angle — partnerships are the simplest structure for two or more people to own a business together. The partners agree, either orally or in writing, to share in the profits and losses of a joint enterprise, and each typically contributes money, property, skills, or labor. The definition has two load-bearing parts: more than one owner, and a shared purpose. One owner is a sole proprietorship; two or more owners pooling their efforts for profit is a partnership. Everything else about the form — decisions, money, risk — follows from that agreement.
+The working definition comes from OpenStax's Introduction to Business textbook: a partnership is a business owned by two or more people who agree to operate it together for profit. The Small Business Administration adds the practical angle — partnerships are the simplest structure for two or more people to own a business together. The partners agree, either orally or in writing, to share in the profits and losses of a joint enterprise, and each typically contributes money, property, skills, or labor. The definition has two load-bearing parts: more than one owner, and a shared purpose. One owner is a sole proprietorship; two or more owners pooling their efforts for profit is a partnership. Everything else about the form — decisions, money, risk — follows from that agreement.
 
 ### How a partnership works
 

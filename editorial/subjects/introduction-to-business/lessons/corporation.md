@@ -21,7 +21,7 @@ The corporation is the form behind most large businesses you can name, from the 
 
 ### The separate legal person
 
-The working definition used in this lesson comes from OpenStax's Introduction to Business: a corporation is a legal entity that exists apart from its owners. Because it is its own legal person, the corporation can own property, sign contracts, sue, and be sued in its own name. When a corporation borrows money, the debt belongs to the corporation, not to any individual behind it. The separation also gives the corporation continuity: it does not dissolve when an owner dies, retires, or sells out, because no single owner is the company. Consider a catering business that incorporates: the kitchen lease and the oven loan are in the company's name, and the company, not the founders, is the party on the paperwork. That is what "separate legal person" means in practice: the business has a life of its own.
+The definition this lesson builds on comes from OpenStax's Introduction to Business: a corporation is a legal entity that exists apart from its owners. Because it is its own legal person, the corporation can own property, sign contracts, sue, and be sued in its own name. When a corporation borrows money, the debt belongs to the corporation, not to any individual behind it. The separation also gives the corporation continuity: it does not dissolve when an owner dies, retires, or sells out, because no single owner is the company. Consider a catering business that incorporates: the kitchen lease and the oven loan are in the company's name, and the company, not the founders, is the party on the paperwork. That is what "separate legal person" means in practice: the business has a life of its own.
 
 ### Limited liability: the defining benefit
 

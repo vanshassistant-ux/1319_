@@ -24,7 +24,7 @@ Almost everything you buy traveled through a supply chain before it reached you:
 
 ### What a supply chain is
 
-A supply chain is the network of organizations that moves materials and products from raw inputs to the final customer. The working definition used in this lesson comes from OpenStax's Introduction to Business, which teaches that the goal of supply-chain management is to create a satisfied customer by coordinating the activities of all the members of the chain into one seamless process. Two parts of that definition deserve attention. First, a supply chain is a network: no single business does the whole job alone. Second, the chain is customer driven: it exists to deliver something a customer actually wants, when and where they want it. Supply chain management is the work of coordinating all of those activities across the organizations in the network.
+A supply chain is the network of organizations that moves materials and products from raw inputs to the final customer. The definition guiding this lesson comes from OpenStax's Introduction to Business, which teaches that the goal of supply-chain management is to create a satisfied customer by coordinating the activities of all the members of the chain into one seamless process. Two parts of that definition deserve attention. First, a supply chain is a network: no single business does the whole job alone. Second, the chain is customer driven: it exists to deliver something a customer actually wants, when and where they want it. Supply chain management is the work of coordinating all of those activities across the organizations in the network.
 
 ### The five stages: from raw inputs to the customer
 

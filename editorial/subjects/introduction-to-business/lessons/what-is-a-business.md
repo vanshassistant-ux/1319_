@@ -21,7 +21,7 @@ Business is the basic unit of commerce, and you meet one almost every hour: the 
 
 ### A working definition, attributed
 
-The working definition used in this lesson comes from OpenStax Introduction to Business, the open textbook that anchors this subject: a business is an organization that strives for a profit by providing goods and services desired by its customers. Three parts matter. First, a business is an organization — a coordinated group of people. Second, it provides something: goods, services, or both. Third, it does so for customers, who give something of value in return. Investopedia states the exchange side of the same idea: a business provides goods and/or services to interested parties in exchange for financial payment. The exchange — value goes out, value comes back — separates a business from a hobby or a favor.
+This lesson adopts its working definition from OpenStax Introduction to Business, the open textbook underpinning this subject: a business is an organization that strives for a profit by providing goods and services desired by its customers. Three parts matter. First, a business is an organization — a coordinated group of people. Second, it provides something: goods, services, or both. Third, it does so for customers, who give something of value in return. Investopedia states the exchange side of the same idea: a business provides goods and/or services to interested parties in exchange for financial payment. The exchange — value goes out, value comes back — separates a business from a hobby or a favor.
 
 ### Goods and services: the two outputs
 
@@ -92,7 +92,7 @@ A business is an idea plus the organization that delivers goods or services to c
 
 ## Practice Question Bank
 
-1. According to the working definition used in this lesson, which combination captures what a business provides to its customers?
+1. What combination captures what a business provides to its customers?
    - A. goods and services that the customers desire, in exchange for value
    - B. tax refunds and government subsidies
    - C. legal opinions and court rulings

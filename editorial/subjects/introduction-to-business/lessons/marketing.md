@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Marketing is the set of activities that identify, attract, and keep customers: learning what people need, offering something that satisfies them, and building the trust that brings them back. The working definition used in this lesson comes from OpenStax's Introduction to Business — marketing is the process of getting the right goods, services, or ideas to the right people at the right place, time, and price, using the right promotion techniques. And marketing is not just advertising; advertising is one visible piece of a much larger job.
+Marketing is the set of activities that identify, attract, and keep customers: learning what people need, offering something that satisfies them, and building the trust that brings them back. This lesson anchors its definition on OpenStax's Introduction to Business — marketing is the process of getting the right goods, services, or ideas to the right people at the right place, time, and price, using the right promotion techniques. And marketing is not just advertising; advertising is one visible piece of a much larger job.
 
 ## Why This Matters
 
@@ -20,7 +20,7 @@ Every purchase you make was shaped by marketing before you ever saw the product:
 
 ### What marketing is: connecting products to people
 
-The working definition used in this lesson comes from OpenStax's Introduction to Business: marketing is the process of getting the right goods or services or ideas to the right people at the right place, time, and price, using the right promotion techniques. OpenStax calls this the 'right' principle, and it is the basis of all marketing strategy. The same text offers a plainer version: marketing is finding out the needs and wants of potential buyers — whether organizations or consumers — and then providing goods and services that meet or exceed the expectations of those buyers. Marketing is about creating exchanges: two parties each give something of value to satisfy their needs, which is why a purchase is a trade, not a favor. In one sentence, marketing is the business activity of connecting products to people: identifying who needs something, attracting their attention with a good offer, and keeping them as customers.
+This lesson anchors its definition on OpenStax's Introduction to Business: marketing is the process of getting the right goods or services or ideas to the right people at the right place, time, and price, using the right promotion techniques. OpenStax calls this the 'right' principle, and it is the basis of all marketing strategy. The same text offers a plainer version: marketing is finding out the needs and wants of potential buyers — whether organizations or consumers — and then providing goods and services that meet or exceed the expectations of those buyers. Marketing is about creating exchanges: two parties each give something of value to satisfy their needs, which is why a purchase is a trade, not a favor. In one sentence, marketing is the business activity of connecting products to people: identifying who needs something, attracting their attention with a good offer, and keeping them as customers.
 
 ### The marketing mix: product, price, place, promotion
 

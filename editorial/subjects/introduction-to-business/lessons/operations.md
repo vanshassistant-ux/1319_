@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Operations is the business function that produces goods and delivers services. The working definition used in this lesson comes from OpenStax's Introduction to Business: operations management plans, organizes, coordinates, and controls the resources needed to produce a company's goods and services. Production turns inputs — raw materials, labor, and equipment — into outputs, the products and services customers receive. Firms match the work with job, batch, or flow production, protect quality by checking output and building quality in, and turn strategy into reality.
+Operations is the business function that produces goods and delivers services. The core definition in this lesson comes from OpenStax's Introduction to Business: operations management plans, organizes, coordinates, and controls the resources needed to produce a company's goods and services. Production turns inputs — raw materials, labor, and equipment — into outputs, the products and services customers receive. Firms match the work with job, batch, or flow production, protect quality by checking output and building quality in, and turn strategy into reality.
 
 ## Why This Matters
 
@@ -20,7 +20,7 @@ Every product you hold and every service you use exists because a business conve
 
 ### What operations is: the conversion function
 
-Operations is the part of a business that actually makes and delivers. The working definition used in this lesson comes from OpenStax's Introduction to Business: operations management is the business function that plans, organizes, coordinates, and controls the resources needed to produce a company's goods and services. OpenStax makes the underlying idea simple: production is the creation of products and services, and production turns inputs — natural resources, raw materials, human resources, and capital — into outputs, the products and services themselves. Managing that conversion process is the role of operations management. Corporate Finance Institute describes the same function as the administration of business practices to maximize efficiency, with the manager converting inputs such as materials, labor, and technology into outputs efficiently. Operations is not only about factories: a hospital converts staff time, equipment, and medicines into patient care; a delivery service turns vehicles, fuel, and driver hours into on-time packages. The conversion idea works for services exactly as it works for goods.
+Operations is the part of a business that actually makes and delivers. The core definition in this lesson comes from OpenStax's Introduction to Business: operations management is the business function that plans, organizes, coordinates, and controls the resources needed to produce a company's goods and services. OpenStax makes the underlying idea simple: production is the creation of products and services, and production turns inputs — natural resources, raw materials, human resources, and capital — into outputs, the products and services themselves. Managing that conversion process is the role of operations management. Corporate Finance Institute describes the same function as the administration of business practices to maximize efficiency, with the manager converting inputs such as materials, labor, and technology into outputs efficiently. Operations is not only about factories: a hospital converts staff time, equipment, and medicines into patient care; a delivery service turns vehicles, fuel, and driver hours into on-time packages. The conversion idea works for services exactly as it works for goods.
 
 ### From inputs to outputs: an original example
 
@@ -86,7 +86,7 @@ Operations is the business function that turns plans into products: it converts 
 
 ## Practice Question Bank
 
-1. **According to the working definition from OpenStax's Introduction to Business, what does operations management do?**
+1. **What does operations management do, in OpenStax's definition?**
    - It plans, organizes, coordinates, and controls the resources needed to produce a company's goods and services
    - It designs the advertising campaigns that promote a company's products
    - It manages the legal and tax filings a company must complete

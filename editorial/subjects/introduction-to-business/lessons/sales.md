@@ -1,0 +1,148 @@
+# Sales
+
+## In 30 Seconds
+
+Sales is the business activity that turns a customer's interest into an actual purchase: talking with buyers, answering their questions, and helping them decide. The working definition here comes from OpenStax's material on personal selling — sales incorporates actually selling a company's products or services to its customers. Salespeople work through a process — prospecting, approaching, presenting, handling objections, closing, and follow-up — and they do it across channels: in person, by phone, and online. Good selling is listening and solving, not pushing.
+
+## Why This Matters
+
+Every business lives or dies on getting paid, and sales is the step where that happens: marketing builds interest, but a sale is the moment interest becomes revenue. Understanding sales helps you as a customer — you can recognize when a pitch is solving your problem and when it is just pressure — and it prepares you for work, because selling shows up in far more jobs than the ones with 'sales' in the title: a nurse persuading a patient to stick with treatment, a designer convincing a client to approve a concept, a founder asking investors for money. The core skills — listening, explaining, handling doubt, following through — transfer to almost anything you will do.
+
+## Learning Objectives
+
+- Define sales using the working definition from OpenStax's personal-selling material: the activities that convert a customer's interest into a purchase.
+- Name the six steps of the selling process — prospecting, approaching, presenting, handling objections, closing, and follow-up — and describe what each one does.
+- Distinguish sales from marketing: sales closes individual deals, while marketing attracts interest across the market.
+- Identify the main sales channels — in person, by phone, and online — with an example of each.
+- Explain why follow-up and trust drive repeat business, and describe what a sales target (quota) is.
+- Apply the honest model of selling — listening and solving rather than pushing — to evaluate a selling situation.
+
+## The College Version
+
+### What sales is: turning interest into a purchase
+
+The working definition here comes from OpenStax's material on personal selling: sales handles the direct act of moving the company's products or services to its customers. Put plainly, sales is the activity that converts a customer's interest into a purchase. Interest can exist without a sale — a shopper can admire a coat and walk out. Sales is the work of bridging that gap: the conversation, the demonstration, the answered question, the decision. Not every purchase needs a salesperson; a vending machine sells a snack without one. But whenever a buyer has questions, doubts, or competing options, someone usually has to help them decide — and that help is sales. A shopper who asks a florist for a gift that says 'thank you' without being romantic has interest but no purchase; the florist who asks who the gift is for, suggests peonies, and wraps the vase has made a sale.
+
+### The selling process: six steps
+
+OpenStax describes selling as a process with six steps, and nearly every sales conversation moves through them. Prospecting is finding and qualifying potential customers: people who might buy and are able to buy. Approaching is making first contact and opening the conversation in a way that earns attention. Presenting is showing how the product fits the customer's needs, tailored to what the customer said. Handling objections is answering concerns and doubts instead of ignoring or arguing with them. Closing is asking for the order and completing the sale. Follow-up is checking that the customer is satisfied, which builds the trust that leads to repeat business. Companies rename or merge steps, but the shape is the same: find a buyer, talk, address doubts, ask, and stay in touch.
+
+### Sales versus marketing: individual deals versus market-wide attraction
+
+Marketing and sales are related but different jobs; this subject teaches marketing in its own lesson, and this one only points to it. Marketing attracts interest across a whole market: it researches needs, builds the offer, prices it, and communicates value so the product sells. Sales works one deal at a time: a salesperson meets individual customers, answers their specific questions, and closes their individual purchases. OpenStax puts it sharply: marketing communicates the value of a product so that it sells, while sales actually sells the product to customers. A coffee brand's billboard campaign is marketing; the account manager who visits a grocery chain and walks out with a shelf order is sales.
+
+### Sales channels: in person, by phone, and online
+
+Selling happens through different channels, and most businesses use more than one. In-person selling is the classic channel, face to face, where a salesperson can demonstrate the product and read reactions — a farm-equipment dealer letting a farmer sit in a tractor cab. Phone selling covers quick order calls and full telemarketing campaigns — an insurance agent reviewing a policy renewal over the phone. Online selling happens through websites, web chat, and video calls — a software company whose sales team walks prospects through the product on a screen-share. The SBA's Business Guide notes that businesses weigh online and face-to-face selling and often combine them. A car buyer might research online, call to ask about the trade-in, and finish at the dealership — three channels in one purchase.
+
+### Trust, follow-up, and repeat business
+
+The first sale is won on the offer; the second sale is won on the experience. Repeat business depends on trust, and trust is built in the follow-up. OpenStax's process ends with follow-up because a satisfied customer is the cheapest source of new sales. Consider a housepainter: after finishing a job, she returns a week later to touch up a door her crew nicked, at no charge. The customer's next project — and the neighbor he mentions her to — come from that visit. A painter who never checks back gets the same first job and none of the second. Follow-up is not politeness; it is the beginning of the next sale.
+
+### Sales targets: quotas and goals
+
+Most sales jobs come with targets. A sales target — often called a quota — is a minimum goal over a set period, such as a month or a quarter. Targets are measured by value (dollars of revenue), by volume (units sold), or by activity (calls made, demos given, proposals sent). Pay is often tied to hitting the target, which focuses effort sharply. The honest note: targets can also push salespeople toward pressure tactics, which is exactly why the listening-and-solving model matters — a quota reached by damaging trust is a quota that costs the next one.
+
+### The honest framing: sales is listening and solving
+
+The reality check on the whole topic: sales is a skill of listening and solving, not pushing. A salesperson who asks questions, restates the customer's problem, and proposes the fit that answers it is doing the job well. A salesperson who recites a memorized pitch and talks over hesitation is doing it badly, because the customer does not feel heard. The same skills — asking, listening, addressing doubt, following through — make any proposal work, whether the 'sale' is a job application, a project idea, or a plan a team must approve. Good salespeople are problem-solvers who happen to get paid when the problem is solved.
+
+## Key Vocabulary
+
+- **Sales** — The business activities that turn a customer's interest into an actual purchase; this lesson's working definition comes from OpenStax's material on personal selling.
+- **Selling process** — The sequence a salesperson follows from finding a buyer to completing a sale and staying in touch: prospecting, approaching, presenting, handling objections, closing, and follow-up.
+- **Prospecting** — The step of finding and qualifying potential customers — people who might buy and are able to buy.
+- **Objection** — A concern or doubt a customer raises during a sales conversation, which a salesperson should address rather than ignore.
+- **Closing** — The step in the selling process where the salesperson asks for the order and completes the sale.
+- **Follow-up** — Contact with the customer after the sale to confirm satisfaction and encourage repeat business.
+- **Sales channel** — The route through which selling happens, such as in person, by phone, or online.
+- **Sales target (quota)** — A minimum goal a salesperson must meet over a set period, measured by value, volume, or activity.
+
+## Eli-10
+
+Sales is the step where interest turns into money. A business can make something wonderful, but until someone actually buys it, nothing has really happened. Salespeople are the people who help buyers decide. They find people who might buy, start a conversation, show how the product fits, answer doubts, ask for the order, and then check back afterward. That last step matters more than it looks: a customer who is happy after the sale is the customer who comes back. Sales happens in person, on the phone, and online, and salespeople usually get targets called quotas. Here is the honest part: the best salespeople listen more than they talk. They figure out what the customer actually needs and propose the thing that solves it. Pushing works once; understanding works for years.
+
+## Eli's Analogy
+
+Think of a stall at a farmers' market that sells handmade soap. Stacking the soap and putting up a sign brings people over — that is marketing, a topic with its own lesson. The sale is the moment a shopper picks up a bar, asks if it is good for sensitive skin, and the seller asks what she has tried, explains what is in the bar, and hands it over once she nods. The seller did not push; she listened and matched. That is selling: a conversation that ends in a purchase.
+
+The analogy has limits. A market stall sells one person at a time, while real sales work happens across thousands of conversations, phone calls, and online chats, tracked against quotas and managed like any other business function. And a single friendly chat is not the whole job — sales also includes finding prospects, handling price objections, and following up long after the shopper has left the market.
+
+## Worked Example
+
+Keisha runs a small running-shoe store. On a Tuesday evening, a customer named Tom walks in and says he wants 'a new pair, I guess.' She prospects lightly — she asks what he runs, how often, and what his old shoes feel like. He mentions that his last pair gave him blisters. She presents two models, explaining the wider toe box on one; Tom worries the wider shoe looks clunky, an objection she handles by having him run a few steps in both and checking the fit. She closes by asking which pair he wants to take home, and he picks the wider one. A week later she texts to ask how the shoes feel — the follow-up that makes Tom a repeat customer.
+
+## Common Mistakes
+
+- **Treating sales and marketing as the same job.** Marketing attracts interest across the whole market; sales converts that interest into individual purchases. They work together, but they are different activities — and marketing gets its own lesson in this subject.
+- **Ending the process at the cash register.** Follow-up is the sixth step: checking that the customer is satisfied builds the trust that produces repeat business and referrals.
+- **Treating a customer's objection as an attack or an obstacle.** An objection is a request for more information. Answering the concern directly — instead of ignoring or arguing with it — is what moves the sale forward.
+- **Assuming selling means pushing until the customer gives in.** The honest model is listening and solving: ask what the customer needs, propose the fit, and let trust do the closing. Pressure may win one sale; understanding wins the relationship.
+- **Assuming every purchase involves a salesperson.** Vending machines, self-checkout, and standard online orders sell without one. Personal selling matters when a buyer has questions, doubts, or choices to weigh.
+
+## Compare / Contrast
+
+- **Sales** vs **Marketing** — Sales closes individual deals with individual customers; marketing attracts interest and communicates value across the whole market so that the product sells.
+- **In-person selling** vs **Online selling** — In person, a salesperson can demonstrate the product and read reactions face to face; online, selling reaches more people at lower cost but depends on chat, reviews, and trust built without eye contact.
+- **A first sale** vs **A repeat sale** — The first sale is won on the offer and the pitch; repeat business is won on trust built through follow-up and a good experience after the sale.
+
+## Key Takeaway
+
+Sales turns interest into a purchase: salespeople find prospects, present a fit, answer doubts, close, and follow up — and the honest model is listening and solving, because trust is what brings customers back.
+
+## Practice Question Bank
+
+1. **A friend asks what 'sales' means as a business activity. Which description matches the working definition used in this lesson, from OpenStax's material on personal selling?**
+   - The activities that convert a customer's interest into a purchase, including the direct act of moving the company's products or services to its customers
+   - The process of researching a market and dividing customers into groups before any product exists
+   - The work of designing, pricing, and distributing a product so that it reaches stores nationwide
+   - The task of recording a company's revenue and expenses after a sale is complete
+
+2. **In the selling process described by OpenStax's personal-selling material, which list gives the six steps in the correct order?**
+   - Presenting, prospecting, closing, approaching, follow-up, handling objections
+   - Approaching, presenting, prospecting, closing, handling objections, follow-up
+   - Prospecting, approaching, presenting, handling objections, closing, follow-up
+   - Prospecting, presenting, approaching, closing, follow-up, handling objections
+
+3. **Nadia runs a bakery. Her marketing team runs a social campaign about a new sourdough loaf; separately, Nadia visits three local cafés, shows the owners samples, answers their questions about shelf life, and takes their first orders. Which statement correctly sorts the two jobs?**
+   - The café visits are marketing, and the social campaign is sales
+   - Both activities are sales, because both involve the same product
+   - The social campaign is marketing, which attracts interest market-wide; the café visits are sales, which convert interest into orders one account at a time
+   - Both activities are marketing, because both try to influence customers
+
+4. **A used-book store runs entirely online. Customers browse the catalog, chat with a clerk about condition and shipping, pay by card, and later receive a thank-you email with a discount code for the next order. Which statement describes the channel and the relationship at work?**
+   - The store uses only the phone channel, and the discount code is the close
+   - The store uses in-person selling, and the chat is the prospecting step
+   - The store has no sales channel, because online orders happen without a salesperson
+   - The store sells through the online channel, and the follow-up email works to turn a one-time buyer into a repeat customer
+
+5. **Two sales reps get the same training. Rep A asks customers about their goals, restates their concerns, and proposes a fit only after listening; Rep B recites a memorized pitch and pushes back whenever a customer hesitates. Based on this lesson's framing of sales, which rep is closer to the honest model of selling, and why?**
+   - Rep B, because a strong pitch overcomes hesitation faster than conversation
+   - Rep A, because sales at its best is listening to the customer and solving their problem, not pushing a product
+   - Rep A, because listening guarantees that every conversation ends in a purchase
+   - Rep B, because pushing back is the step the lesson calls prospecting
+
+## Sources
+
+- OpenStax, Rice University. *Introduction to Business*, Section 12.7: The Importance of Personal Selling. https://openstax.org/books/introduction-business/pages/12-7-the-importance-of-personal-selling (CC BY 4.0)
+- OpenStax, Rice University. *Introduction to Business*, Section 12.5: Promotion Strategy. https://openstax.org/books/introduction-business/pages/12-5-promotion-strategy (CC BY 4.0)
+- U.S. Small Business Administration. *Business Guide: Marketing and Sales*. https://www.sba.gov/business-guide/manage-your-business/marketing-sales
+- Wikipedia. *Sales*. https://en.wikipedia.org/wiki/Sales
+- Wikipedia. *Sales operations*. https://en.wikipedia.org/wiki/Sales_operations
+
+## Related Topics
+
+- Introduction to Business: Marketing
+- Introduction to Business: Business Communication
+- Introduction to Business: What Is a Business
+- Introduction to Business: Entrepreneurship
+- Introduction to Business: Business Strategy
+
+## Editorial Metadata
+
+- Topic ID: introduction-to-business:foundations:sales
+- Subject: introduction-to-business (Foundations)
+- Editorial status: READY_TO_PUBLISH
+- Researched at: 2026-08-21
+- Research status: source-verified
+- Rights: OpenStax Introduction to Business sections 12.5 and 12.7 used under CC BY 4.0 with concepts adapted into original prose; SBA Business Guide and Wikipedia pages used as reference-only sources; no source prose reproduced
