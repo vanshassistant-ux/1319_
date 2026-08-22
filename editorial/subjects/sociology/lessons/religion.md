@@ -1,0 +1,154 @@
+# Religion
+
+## In 30 Seconds
+
+Religion, for sociologists, is a social institution: a system of beliefs and practices oriented around the sacred — the working definition attributed to Émile Durkheim and to OpenStax's Introduction to Sociology, with the honest caveat that definitions are debated. Its elements are beliefs, rituals, community, and symbols. It provides meaning, belonging, and social order, and it takes forms sociologists call church, denomination, sect, and cult. Religion unites and divides; sociology studies it as a social fact, studied rather than judged.
+
+## Why This Matters
+
+Religion shapes how hundreds of millions of people mark births, deaths, and weddings; what they eat and wear; whom they marry; and how they give. It matters academically because religion is one of the oldest social institutions and a core case for sociology's founders: Durkheim built his account of social solidarity around it, and Weber tied it to the rise of capitalism. It matters practically because religious communities sit inside every neighborhood, workplace, and hospital, and the language of sacred and profane shows up in public debate. And it matters honestly: religion is one of the most widespread arrangements on earth — Pew Research Center estimated that about three-quarters of the world's people identified with a religion in 2020 — so understanding how it works socially is part of understanding any society.
+
+## Learning Objectives
+
+- Define religion as a social institution — a system of beliefs and practices oriented around the sacred — and attribute the working definition to Émile Durkheim and to OpenStax's Introduction to Sociology, noting that definitions are debated.
+- Name the four elements of religion — beliefs, rituals, community, and symbols — and give an original example of each.
+- Explain the social functions of religion — meaning, belonging, and social order — attributing them to Durkheim's analysis of religion's societal impact.
+- Distinguish the four organizational types sociologists use for religious groups — church, denomination, sect, and cult — stated descriptively.
+- Explain Durkheim's sacred–profane distinction and Weber's Protestant ethic argument, each at one-line depth with attribution.
+- Apply the honest reality check: religion both unites and divides, and sociology studies it as a social fact rather than judging it.
+
+## The College Version
+
+### Religion as a social institution
+
+Religion is often imagined as a private matter, but sociologists study it as a social institution: an organized and integrated set of beliefs, behaviors, and norms centered on basic social needs and values. Some form of religion appears in every known culture, and it is usually practiced publicly, by a group. The working definition used in this lesson comes from two places. Émile Durkheim (1858–1917) called religion a unified system of beliefs and practices relative to sacred things (1915). OpenStax's Introduction to Sociology offers a similar formulation: a system of beliefs, values, and practices concerning what a person holds to be sacred or spiritually significant. One honest caveat belongs next to any definition: scholars debate the term. Durkheim himself described religion several ways, and the OpenStax text notes that people attach the word to very different things — a building, a practice, a concept that guides daily life. Treat the sacred-centered definition as a working definition, not a settled one.
+
+### The elements: beliefs, rituals, community, symbols
+
+Most religions combine four elements. Beliefs are the specific ideas members of a faith hold to be true — in the fictional coastal town of Grayhaven, families believe the autumn tide-blessing keeps winter crossings safe. Rituals are behaviors that are required or expected of members — Grayhaven's October lantern procession, when every household carries a candlelit jar to the harbor and sets it adrift. Community is the body of people who practice together; Durkheim called the group united by shared beliefs and practices a single moral community, and in Grayhaven the harbor chapel's weekly shared meals are where that community becomes visible. Symbols are objects or gestures that carry sacred meaning — the carved wooden gull above the chapel door, recognized by everyone in town as the sign of the blessing. Sociologists also distinguish religious experience, the conviction of connection to the divine, which often accompanies these elements.
+
+### The functions: meaning, belonging, social order
+
+Durkheim is generally considered the first sociologist to analyze religion by its societal impact, and his account names three functions. Religion offers meaning and purpose — strength during life's transitions and tragedies: after a storm took a fishing boat, the people of Grayhaven gathered for the tide-blessing, and the ritual gave the loss a name and a place. Religion binds people together — social cohesion: members who eat, mourn, and celebrate together come to hold each other as kin. And religion promotes behavior consistency — social control: shared expectations about dress, conduct, and obligation, which members enforce on one another in ordinary ways. OpenStax's functionalist discussion extends the list — answers to spiritual mysteries, emotional comfort, a place to meet people with similar values — but meaning, belonging, and social order are the core trio Durkheim identified.
+
+### Types of religious organization: church, denomination, sect, cult
+
+When sociologists describe the forms religion takes, they use four descriptive terms, without ranking them. A church is the broad, established body of believers — Durkheim's word for the moral community; in everyday usage, a large, well-established religious organization. A denomination is a large, mainstream religion that is not sponsored by the state. A sect is a small, new offshoot of a denomination. A cult is a religious group that is small, secretive, and highly controlling of members, led by a charismatic figure. The everyday word cult carries heavy negative baggage; the sociological use is descriptive — a way to sort organizational shapes, not an insult.
+
+### Classic views: Durkheim's sacred and profane, Weber's Protestant ethic
+
+Two classic accounts anchor the sociology of religion. Durkheim argued that religion happens when a society separates the sacred from the profane: the sacred is extraordinary, set apart, and connected to the divine, while the profane is ordinary, everyday life. The same object can move between the two — a plain tin mug is profane at the kitchen table, but when the same mug sits on a shrine shelf and is brought out once a year for the remembrance, it has become sacred. Max Weber (1864–1920) looked instead at how religion changes society. In The Protestant Ethic and the Spirit of Capitalism (1905), he argued that certain Protestant teachings — work hard, succeed, and do not spend profits on frivolous things — helped fuel the development of capitalism. The thesis is famous and contested; this lesson reports it as Weber's argument, not as settled fact.
+
+### The honest reality check: unites and divides, studied and not judged
+
+Religion has two faces, and a truthful lesson shows both. It unites: it creates bonds among strangers, sustains communities through grief, and anchors shared values. It also divides: shared identity can harden into in-group versus out-group feeling, and OpenStax notes that religious disputes and persecution have fed conflicts, including wars, throughout history. Neither face cancels the other; both are part of the record. The discipline's stance follows from that. Sociology describes how religion works — the experience, beliefs, and rituals people share — and applies its methods to understand religion's role in people's lives. It does not certify any religion's truth claims, and it does not dismiss them. Religion is a social fact: studied, not judged. The scale helps here: Pew Research Center estimated that 75.8 percent of the world's people identified with a religion as of 2020 — a reminder that this institution shapes most of humanity's social life.
+
+## Key Vocabulary
+
+- **religion** — A social institution: a system of beliefs and practices oriented around the sacred, or, in OpenStax's phrasing, a system of beliefs, values, and practices concerning what a person holds sacred or spiritually significant; definitions vary, so this is a working definition.
+- **sacred** — In Durkheim's sense, the extraordinary, the set-apart, the connected to the divine — the realm religion treats with special regard.
+- **profane** — In Durkheim's sense, the ordinary, everyday side of life, as opposed to the sacred.
+- **religious beliefs** — The specific ideas that members of a particular faith hold to be true.
+- **religious rituals** — Behaviors or practices that are required for or expected of the members of a religious group.
+- **religious community** — The body of people who practice a religion together; Durkheim called the group united by shared beliefs and practices a single moral community.
+- **denomination** — A large, mainstream religion that is not sponsored by the state.
+- **sect** — A small, new offshoot of a denomination.
+- **cult** — In sociological usage, a religious group that is small, secretive, and highly controlling of its members, with a charismatic leader; the term is descriptive, not an insult.
+
+## Eli-10
+
+**Simplified explanation.** Religion is the shared machinery a group uses to handle the sacred: what members believe, what they do together, the community they form, and the symbols that carry meaning. It is a social institution, not just a private feeling — people practice it in groups, and it holds those groups together while also drawing lines between insiders and outsiders. It gives life meaning, gives people a place to belong, and lays down rules for how to behave. Sociologists describe its shapes — church, denomination, sect, cult — and study it the way they study any social fact: carefully, and without deciding which beliefs are true.
+
+**Where the analogy breaks down.** Gravity is a physical constant: it pulls the same way on everyone, everywhere. Religion is learned and varies from group to group, and its pull is contested — members argue about what it demands, and some leave the orbit entirely. And unlike gravity, which only attracts, religion can also push: the same force that binds a community can shove outsiders away.
+
+## Eli's Analogy
+
+Think of religion as the shared gravity of a group. You cannot see gravity, but it pulls people into the same orbit, sets how they move around one another, and gives weight to moments that would otherwise drift — a birth, a death, a wedding. Outsiders feel the pull only when they step inside the orbit; insiders mostly stop noticing it is there.
+
+## Worked Example
+
+In the fictional town of Grayhaven, the harbor chapel anchors religious life. Members believe the autumn tide-blessing keeps winter crossings safe (belief); every October, households carry candlelit jars to the harbor and set them adrift (ritual); the chapel's weekly shared meals and its visits to the sick bind members into a community; and the carved wooden gull above the chapel door is the symbol everyone recognizes. After a storm claimed a fishing boat, the blessing gave the town a way to name its loss (meaning), the shared meals kept families close (belonging), and the chapel's expectation that members look after the bereaved held the town to its standards (social order). When a small group split off to hold simpler services in a waterfront shed, the town's faith gained a sect alongside its established body. Durkheim would have recognized every piece: beliefs, rituals, community, and symbols, all working around the sacred.
+
+## Common Mistakes
+
+- **"Religion is just a private, individual matter."** — Sociology treats religion as a social institution — an organized, integrated set of beliefs, behaviors, and norms, usually practiced publicly by a group. Personal belief is part of it, but the institution is the subject of study.
+- **"The definition of religion is settled; everyone agrees on it."** — Scholars debate the definition. Durkheim offered several formulations, and people attach the word to buildings, practices, or life-guiding concepts. The sacred-centered definition is a working definition — useful, not final.
+- **"Cult is just a word for a religion I dislike."** — In sociology, cult is a descriptive category: a small, secretive, highly controlling group with a charismatic leader. It describes organizational shape and is applied the same way to any group; it is not an insult.
+- **"Religion only brings people together."** — Religion also divides. The same community bonds that create belonging can harden into in-group versus out-group lines, and religious disputes and persecution have fed conflicts throughout history. Both faces are part of the record.
+- **"Sociology's job is to decide which religion is true."** — Sociology studies religion as a social fact — how beliefs, rituals, and communities work in society. It neither certifies nor dismisses any religion's truth claims.
+
+## Compare / Contrast
+
+- **The sacred vs. the profane:** Sacred things are extraordinary, set apart, and connected to the divine; profane things are the ordinary stuff of everyday life. Durkheim's point is that religion happens when a society draws and maintains the line between the two — and the same object can cross that line, as a plain mug becomes sacred when it is set apart for a ritual.
+- **A denomination vs. a sect:** A denomination is a large, mainstream religious body that is not sponsored by the state; a sect is a small, new offshoot that splits from it. One is established and broad, the other recent and small — the difference is organizational size and history, not quality.
+- **Durkheim's view of religion vs. Weber's view of religion:** Durkheim saw religion mainly as a source of social stability — it binds people, orders behavior, and gives meaning; Weber saw it as a force for social change, as in his Protestant ethic argument tying religious teachings to the rise of capitalism. Same institution, two classic lenses.
+
+## Key Takeaway
+
+Religion is a social institution — a system of beliefs and practices oriented around the sacred — that gives life meaning, builds belonging, and orders social behavior, while also drawing lines that can divide. Sociology studies it as a social fact: described carefully, judged by no one.
+
+## Practice Question Bank
+
+1. **In his classic formulation, sociologist Émile Durkheim described religion as which of the following?**
+   - A. A unified system of beliefs and practices relative to sacred things.
+   - B. The written moral laws a society enforces through its courts.
+   - C. Whatever an individual privately believes, with no group dimension.
+   - D. A community's economic arrangements for caring for the poor.
+
+   **Answer: A.** Durkheim (1915) defined religion as a unified system of beliefs and practices relative to sacred things, and OpenStax's chapter 15 introduction quotes the same formulation. Option B describes law, not religion; C describes purely personal belief, which misses religion's character as a social institution; and D describes economic arrangements, not religion.
+
+2. **A classmate insists that religion is purely individual — "just what each person believes privately." Which response reflects how sociologists treat religion as a social institution?**
+   - A. Correct — because beliefs are personal, religion has no group dimension worth studying.
+   - B. Religion is social only when a government officially sponsors a particular faith.
+   - C. Religion is also organized and shared: an integrated set of beliefs, behaviors, and norms centered on basic social needs, usually practiced publicly by a group.
+   - D. Religion becomes social only when people disagree about it.
+
+   **Answer: C.** OpenStax's section 15.1 states that religion exists as an organized and integrated set of beliefs, behaviors, and norms centered on basic social needs and values, and that some form of religion is found in every known culture, usually practiced in a public way by a group. Option A denies the group dimension entirely, B ties sociality to state sponsorship, and D mistakes disagreement for the basis of sociality.
+
+3. **In the fictional coastal town of Grayhaven, families hold that the autumn tide-blessing keeps winter crossings safe; every October they carry lanterns to the harbor and set them adrift; the harbor chapel hosts weekly shared meals; and a carved wooden gull hangs above the chapel door. Which option correctly labels the four elements of religion in this example?**
+   - A. Belief — the weekly shared meals; ritual — the carved gull; community — the tide-blessing; symbol — the lantern procession.
+   - B. Belief — the tide-blessing; ritual — the lantern procession; community — the weekly shared meals; symbol — the carved gull.
+   - C. Belief — the lantern procession; ritual — the tide-blessing; community — the carved gull; symbol — the weekly shared meals.
+   - D. Belief — the carved gull; ritual — the weekly shared meals; community — the lantern procession; symbol — the tide-blessing.
+
+   **Answer: B.** Beliefs are the ideas members hold to be true — that the tide-blessing keeps crossings safe; rituals are behaviors required or expected of members — the lantern procession; community is the group that practices together — the chapel's weekly meals; symbols carry sacred meaning — the carved gull. Options A, C, and D scramble the pairings, attaching each label to the wrong part of the example.
+
+4. **Two researchers study the same congregation. One notes that shared rituals and common beliefs bind members into a community that cares for its sick and elderly. The other notes that the congregation draws sharp lines between itself and outsiders, and that its leaders once expelled a member for marrying outside the faith. What do the two observations together show?**
+   - A. The second observation is not really about religion, so it should be set aside.
+   - B. One researcher must be wrong, because religion cannot both unite and divide.
+   - C. The observations show that Durkheim's and Weber's views of religion are identical.
+   - D. Religion can both unite and divide: it builds cohesion within a group while marking boundaries against outsiders.
+
+   **Answer: D.** OpenStax's section 15.1 reports that religion fosters group cohesion and integration while also producing in-group versus out-group feelings, and the chapter notes that religious disputes and persecution have fed wars and conflicts. Options A and B ignore half the evidence, and C misreads the two classic theorists, who differed.
+
+5. **A sociology glossary lists four types of religious organizations: a large, mainstream religious body not sponsored by the state; a small, new offshoot that split from it; a small, secretive group with a charismatic leader; and the broad, established community of believers. Which sequence correctly names them?**
+   - A. Denomination, sect, cult, church.
+   - B. Sect, denomination, church, cult.
+   - C. Church, cult, denomination, sect.
+   - D. Cult, church, sect, denomination.
+
+   **Answer: A.** OpenStax's chapter 15 key terms define a denomination as a large, mainstream religion not sponsored by the state, a sect as a small, new offshoot of a denomination, and a cult as a small, secretive, highly controlling group with a charismatic leader; Durkheim's formulation (quoted in the chapter introduction) calls the community of believers a church. Options B, C, and D reorder the terms incorrectly.
+
+## Sources
+
+- OpenStax, Rice University. *15 Introduction — Introduction to Sociology 3e* (CC BY-NC-SA 4.0). https://openstax.org/books/introduction-sociology-3e/pages/15-introduction
+- OpenStax, Rice University. *15.1 The Sociological Approach to Religion — Introduction to Sociology 3e* (CC BY-NC-SA 4.0). https://openstax.org/books/introduction-sociology-3e/pages/15-1-the-sociological-approach-to-religion
+- OpenStax, Rice University. *15.3 Religion in the United States — Introduction to Sociology 3e* (CC BY-NC-SA 4.0). https://openstax.org/books/introduction-sociology-3e/pages/15-3-religion-in-the-united-states
+- OpenStax, Rice University. *Ch. 15 Key Terms — Introduction to Sociology 3e* (CC BY-NC-SA 4.0). https://openstax.org/books/introduction-sociology-3e/pages/15-key-terms
+- Pew Research Center. *How the Global Religious Landscape Changed From 2010 to 2020* (June 9, 2025). https://www.pewresearch.org/religion/2025/06/09/how-the-global-religious-landscape-changed-from-2010-to-2020/
+
+## Related Topics
+
+- sociology:foundations:culture
+- sociology:foundations:values
+- sociology:foundations:socialization
+- sociology:foundations:groups
+- sociology:foundations:social-control
+
+## Editorial Metadata
+
+- **Editorial status:** READY_TO_PUBLISH
+- **Source project:** EliExplains original synthesis
+- **Research status:** source-verified (researched 2026-08-22)
+- **Rights status:** Reference-only sources (OpenStax Introduction to Sociology 3e, CC BY-NC-SA 4.0; Pew Research Center report); facts synthesized in original wording, no source prose adapted; all examples in the lesson are original.
+- **Transformation:** Working definition of religion (system of beliefs and practices oriented around the sacred) verified against Durkheim's formulation and the OpenStax 3e chapter 15 glossary and sections 15-introduction and 15.1, with the definitional debate noted; the four elements (beliefs, rituals, community, symbols) verified against sections 15-introduction and 15.1, including Durkheim's "single moral community"; the three functions (meaning and purpose, social cohesion, social control) verified against section 15.1; the four organizational types (church, denomination, sect, cult) verified against the chapter 15 key terms, the chapter introduction, and section 15.1, presented descriptively; Durkheim's sacred/profane distinction and Weber's Protestant ethic thesis (1905) verified against section 15.1, the latter flagged as contested; the honest reality checks (religion unites and divides; sociology studies religion as a social fact) verified against sections 15.1, 15.3, and the chapter introduction; the one quantitative claim (75.8% of the world's people identified with a religion as of 2020) verified against the Pew Research Center report (June 9, 2025). All examples (Grayhaven tide-blessing, lantern procession, chapel meals, carved gull, tin mug on a shrine shelf, waterfront shed sect) are original to this lesson.
