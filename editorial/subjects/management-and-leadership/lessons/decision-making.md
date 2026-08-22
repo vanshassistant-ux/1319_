@@ -1,0 +1,150 @@
+# Decision-Making
+
+## In 30 Seconds
+
+Decision making is choosing among options: the working definition in this lesson comes from OpenStax's Principles of Management, which calls it the action or process of thinking through possible options and selecting one. Managers face routine decisions that can run on rules and novel decisions that need a full process — define the problem, gather information, weigh options, choose, act, and review. Because time and information are limited, a good process raises the odds but never guarantees the outcome.
+
+## Why This Matters
+
+Every day, managers choose: whom to hire, what to stock, where to spend. Those small choices add up to the organization's direction and survival — a good decision can help a business thrive, while a poor one can push it toward failure. Knowing which decisions are routine and which are novel tells you when rules will do and when to slow down. Knowing the common traps — anchoring, confirmation bias, groupthink — helps you catch your own blind spots before they grow expensive. And the honest part matters most: no process guarantees the outcome, so the goal is to decide well, review honestly, and adjust when reality disagrees.
+
+## Learning Objectives
+
+- State the working definition of decision making, attributed to OpenStax's Principles of Management: the action or process of thinking through possible options and selecting one.
+- Describe the six-step rational process — define the problem, gather information, weigh options, choose, act, and review — with one line and an original example for each step.
+- Distinguish programmed from nonprogrammed decisions, each with an original example, and explain why the distinction matters.
+- Explain bounded rationality — the idea that managers decide with limited time and information — and attribute the concept to Herbert Simon.
+- Give one advantage and one disadvantage of group decisions, noting that how teams work together is its own topic.
+- Identify anchoring, confirmation bias, and groupthink in a short scenario, one line each.
+
+## The College Version
+
+### What decision making is: choosing among options
+
+Decision making is choosing among options. The working definition in this lesson comes from OpenStax's Principles of Management: decision making is the action or process of thinking through possible options and selecting one. That means two things: options exist, and someone selects one. Managers at every level decide — a supervisor schedules workers, a top team chooses whether to pursue a new product line. OpenStax notes that these choices affect stakeholders, everyone touched by the organization, from customers to employees to owners, and that a good decision can help a business thrive while a poor one can push it toward failure. A management decision is not like a multiple-choice test: sometimes several options look good; sometimes all of them look bad and the task is to minimize harm.
+### The rational process: six steps
+
+A rational process walks a decision through six steps. Define the problem: know what you are really deciding — weekend attendance at a neighborhood cinema has slid for three months, not just one bad week. Gather information: collect what is relevant — ticket sales by showtime, a survey of regulars, the projectionist's experience at her previous theater. Weigh the options: compare alternatives on cost, effort, and likely payoff — late shows, earlier matinees, and themed double features. Choose: commit to one option — one 9:30 p.m. showing on Fridays and Saturdays. Act: carry the choice into the world — update the schedule, hire two part-time staff, and post the new times. Review: check the result and adjust — after six weeks, Fridays draw well and Saturdays barely break even, so Saturdays are dropped. OpenStax's version runs the same spine: recognize that a decision is needed, generate multiple alternatives, analyze them, select one, implement it, and evaluate its effectiveness. Real managers rarely walk the steps in a clean line — new information sends them back — but the process is an ideal that raises the odds of a good outcome.
+### Programmed and nonprogrammed decisions
+
+OpenStax draws a clean line between two kinds of decisions. Programmed decisions are repeated over time, and an existing set of rules can guide them because the criteria are known or can be estimated. The cinema's weekly popcorn and soda reorder is programmed: last week's sales, current stock, and the supplier's delivery time settle it. So is the weekly staff rota — complex, but built from known facts. These decisions can run on heuristics, mental shortcuts that produce an adequate answer quickly. Nonprogrammed decisions are novel and unstructured: the criteria are not well defined, the information is ambiguous or incomplete, and judgment and creative thinking are required. Whether to replace the aging projector with digital is nonprogrammed — no one can fully know the cost, the lifespan, or whether audiences will care. The distinction matters because routine decisions should run on rules and shortcuts to save time, while novel decisions earn the full six-step process.
+### Bounded rationality: the honest limit
+
+Textbook rational choice assumes complete information, but managers never have it. Bounded rationality is the idea that decision makers cannot be fully rational because they cannot grasp every possible alternative or every implication of each one; brains process a limited amount of information, and managers often must decide before all the data arrives. The name belongs to Herbert Simon, the American social scientist who won the 1978 Nobel Prize in economics for his pioneering research into decision making within organizations and whom Britannica calls an influential proponent of bounded rationality. Simon also promoted satisficing — choosing the first acceptable option rather than hunting for the perfect one. Bounded rationality is not an excuse to skip the process; it is the reason the process exists. Under real limits, the goal is a good decision, made deliberately, not a perfect one, made eventually.
+### Group decisions: more heads, same traps
+
+OpenStax lists genuine advantages of group decisions: members bring different knowledge and perspectives, more options get generated, individual biases can cancel out — a mixed hiring committee is less likely to hire only people like themselves — and people who helped make a decision commit to it more. The disadvantages are real too. Groups are slower, conflict can bog them down, and groupthink can set in: members choose not to voice concerns because they would rather keep the peace, so dissent is suppressed and the group agrees without real analysis. OpenStax's remedies include diverse membership, encouraging everyone to speak, and assigning a devil's advocate to challenge the group's thinking. How teams form and work together is its own topic; the point here is that deciding together has measurable costs and benefits, and agreement alone is not evidence of a good decision.
+### Common traps and the honest framing
+
+Three traps deserve a name. Anchoring: the first number or option you encounter pulls later judgments toward it — a vendor's $20,000 opening quote makes $14,000 feel fair even when the same equipment sells for $9,000 elsewhere. Confirmation bias: you pay more attention to evidence that supports what you already believe — the manager who has decided a candidate is excellent notices the compliments and skims the complaints. Groupthink: people stay quiet to keep the peace, so the group agrees without analysis. The psychology subject owns the depth of these biases; here they are named as hazards. The honest framing of this lesson is simple: a good process raises the odds; it cannot guarantee the outcome. Decisions are made under uncertainty — you never learn what the road not taken would have delivered — and sometimes every option is bad and the best you can do is minimize harm. What a good process buys you is early detection: review catches a bad call sooner, and changing course is a sign of good management, not weakness.
+
+## Key Vocabulary
+
+- **Decision making:** Choosing among options: the action or process of thinking through possible options and selecting one; the working definition in this lesson comes from OpenStax's Principles of Management.
+- **Stakeholder:** Anyone affected by an organization's decisions, such as customers, employees, suppliers, or owners.
+- **Programmed decision:** A decision repeated over time that an existing set of rules can guide, because its criteria are known or can be estimated.
+- **Nonprogrammed decision:** A novel, unstructured decision whose criteria are not well defined and whose information is often ambiguous or incomplete.
+- **Heuristic:** A mental shortcut that produces an adequate solution quickly, commonly used for routine programmed decisions.
+- **Bounded rationality:** The idea, associated with Herbert Simon, that decision makers cannot be fully rational because time, information, and processing power are limited.
+- **Satisficing:** Choosing the first acceptable option rather than continuing to search for the best possible one; a term promoted by Herbert Simon.
+- **Anchoring:** The tendency for a first number or reference point to pull later judgments toward it, so later estimates stay close to the anchor.
+- **Confirmation bias:** The tendency to notice information that supports existing beliefs and to downplay information that challenges them.
+- **Groupthink:** A pattern in which group members stay quiet about their objections to keep the peace, producing agreement without real analysis.
+
+## Eli-10
+
+Decision making is choosing among options: you see more than one way forward, and you pick one. Managers do it all day. Some choices are so routine they can run on rules; others are brand new and need real thinking. The reliable way to handle the new ones is a loop: figure out what the problem is, gather information, compare your options, choose, act, and then check how it went. Two honest warnings. You will never have all the time or information you want — that limit has a name, bounded rationality. And your own mind plays tricks: the first number you hear pulls you toward it, you notice evidence that agrees with you, and in a group people stay quiet to keep the peace. A good process raises your odds; it does not guarantee the outcome.
+
+## Eli's Analogy
+
+Choosing where to eat with a hungry friend. You read the menus online (gather information), compare price and distance (weigh options), pick a place (choose), walk over (act), and while you eat you decide whether to come back (review). The first glowing review you read can blind you to the bad ones — anchoring and confirmation bias in action. And if your friend keeps saying whatever you want, you may pick somewhere you both secretly dislike rather than argue — groupthink at a table for two.
+
+A meal choice is small and reversible; a business decision can commit money and people's livelihoods, and the menu is never complete — no one hands a manager the full list of options. A diner also gets feedback in one evening, while a manager must actively check results for weeks. The analogy shows the loop and the traps, but not the stakes or the scale.
+
+## Worked Example
+
+Watch the full process at Priya's cinema, a neighborhood theater with one screen. Define the problem: Friday and Saturday attendance has dropped for three straight months. Gather information: Priya pulls ticket sales by showtime, asks twenty regulars what would bring them back, and calls two other cinema owners about their late shows. Weigh the options: late-night showings, cheaper matinees, and themed double features — she compares staffing costs, marketing effort, and likely demand for each. Choose: one 9:30 p.m. showing on Fridays and Saturdays. Act: she updates the schedule, hires two part-time staff, and posts the new times online. Review: six weeks in, Fridays are nearly full and Saturdays barely cover the extra staff cost, so she drops Saturdays and keeps Fridays. The process did not guarantee success — it caught the miss early and let her adjust.
+
+## Common Mistakes
+
+- **Running every decision through the full six-step process.** Routine, repeated decisions are programmed: they can run on rules and shortcuts (heuristics) that save time. OpenStax reserves the full process for nonprogrammed decisions, where the quality of the choice matters more than the speed.
+- **Treating the first option as the best option.** That is anchoring: the first number or alternative you meet pulls later judgments toward it. A $20,000 opening quote makes $14,000 feel fair even when $9,000 is the real market price. Generate and compare alternatives before you commit.
+- **Reading agreement as analysis.** Groupthink happens when members stay quiet to keep the peace, so unanimous support can hide real doubts. Encourage dissent — or assign a devil's advocate — and treat silence as a question, not a vote.
+- **Deciding before gathering information.** The rational process starts by defining the problem and gathering information. Choosing from instinct alone is a gamble; even a quick check of the facts narrows the odds.
+- **Expecting the process to guarantee the outcome.** A good process raises the odds but cannot remove uncertainty — every option carries unknown results. The honest habit is to review the outcome and change course when reality disagrees.
+
+## Compare / Contrast
+
+- **Programmed decision** vs. **Nonprogrammed decision:** A programmed decision repeats and can be guided by an existing set of rules with known criteria, like a weekly reorder; a nonprogrammed decision is novel and unstructured with ambiguous information, like adopting a new technology. Routine decisions deserve speed; novel ones deserve the full process.
+- **Individual decision** vs. **Group decision:** An individual decision is fast and clearly accountable but carries one person's blind spots; a group decision brings more knowledge, options, and commitment but is slower and can fall into groupthink. How teams work together is its own topic.
+- **The rational ideal** vs. **Bounded rationality:** The rational ideal assumes complete information and unlimited processing; bounded rationality, associated with Herbert Simon, accepts that time, information, and brainpower are limited, so managers satisfice — pick the first acceptable option — and use process to raise the odds.
+
+## Key Takeaway
+
+Decision making is choosing among options. A clear process — define the problem, gather information, weigh options, choose, act, and review — raises the odds of a good outcome, but limited time and information mean no process can guarantee it.
+
+## Practice Question Bank
+
+1. **A coffee shop manager reorders beans every Monday using the same formula: last week's sales, current stock, and the supplier's delivery time. What kind of decision is this?**
+   - A programmed decision, because it repeats and follows known criteria
+   - A nonprogrammed decision, because it involves judgment under uncertainty
+   - A group decision, because the supplier is part of the process
+   - An anchoring trap, because the formula fixes on last week's sales
+
+   *Answer: A. OpenStax defines programmed decisions as those repeated over time for which an existing set of rules can guide the process; a routine reorder built on known criteria fits that description. Nonprogrammed decisions are novel and unstructured, the supplier is not deciding with the manager, and anchoring is a bias, not a type of decision.*
+2. **A food truck owner wants to know whether to add a second truck. She lists three options — a downtown lunch route, a weekend park circuit, and catering — then compares startup costs and likely demand for each before picking the downtown route. Which step of the rational process is she in?**
+   - Define the problem
+   - Gather information
+   - Weigh the options
+   - Review the outcome
+
+   *Answer: C. Weighing the options means comparing alternatives on cost, effort, and likely payoff before choosing, which is exactly what she does with the three routes. She has already defined the problem and gathered information, and she has not yet acted or reviewed the outcome.*
+3. **A manager has already decided that the first job candidate she interviewed is the best. In the final round she notices every compliment the candidate receives and plays down the stronger reviews of the other finalists. Which decision trap is at work?**
+   - Anchoring
+   - Groupthink
+   - Satisficing
+   - Confirmation bias
+
+   *Answer: D. Confirmation bias is paying more attention to information that supports an existing belief and less to information that challenges it — precisely what the manager does with the candidate's reviews. Anchoring is a first reference point pulling later judgments, groupthink is staying quiet to keep peace in a group, and satisficing is accepting the first workable option.*
+4. **An equipment vendor opens a negotiation by quoting $20,000. The buyer later learns the same equipment sells for $9,000 elsewhere, yet she still thinks $14,000 is a fair counteroffer. What trap is at work?**
+   - Groupthink
+   - Anchoring
+   - Confirmation bias
+   - Bounded rationality
+
+   *Answer: B. Anchoring is the tendency for a first number — the $20,000 quote — to pull later judgments toward it, so $14,000 feels reasonable next to the opening price. Groupthink involves silence in a group, confirmation bias involves favoring supporting evidence, and bounded rationality is the general limit of time and information rather than this specific pull.*
+5. **A store team unanimously approves a new display plan in a five-minute meeting. Two employees privately think the plan will fail but say nothing because they do not want to sour the mood. What is this?**
+   - Groupthink
+   - Anchoring
+   - Confirmation bias
+   - The review step of the rational process
+
+   *Answer: A. Groupthink occurs when members choose not to voice their objections to keep the peace, so the group agrees without real analysis — the display plan gets unanimous but hollow support. Anchoring, confirmation bias, and the review step describe different phenomena: reference points, selective attention, and checking results after acting.*
+
+## Sources
+
+- OpenStax, Rice University. *Principles of Management*, Section 2.1: Overview of Managerial Decision-Making. https://openstax.org/books/principles-management/pages/2-1-overview-of-managerial-decision-making (CC BY-NC-SA 4.0)
+- OpenStax, Rice University. *Principles of Management*, Section 2.3: Programmed and Nonprogrammed Decisions. https://openstax.org/books/principles-management/pages/2-3-programmed-and-nonprogrammed-decisions (CC BY-NC-SA 4.0)
+- OpenStax, Rice University. *Principles of Management*, Section 2.4: Barriers to Effective Decision-Making. https://openstax.org/books/principles-management/pages/2-4-barriers-to-effective-decision-making (CC BY-NC-SA 4.0)
+- OpenStax, Rice University. *Principles of Management*, Section 2.5: Improving the Quality of Decision-Making. https://openstax.org/books/principles-management/pages/2-5-improving-the-quality-of-decision-making (CC BY-NC-SA 4.0)
+- OpenStax, Rice University. *Principles of Management*, Section 2.6: Group Decision-Making. https://openstax.org/books/principles-management/pages/2-6-group-decision-making (CC BY-NC-SA 4.0)
+- Investopedia. *Anchoring: Definition and Examples in Finance*. https://www.investopedia.com/terms/a/anchoring.asp (reference-only; read via Wayback Machine capture 2023-09-19)
+- Encyclopaedia Britannica. *Bounded Rationality*. https://www.britannica.com/topic/bounded-rationality (reference-only; read via Wayback Machine capture 2023-09-21)
+- NobelPrize.org. *The Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel 1978 — Herbert A. Simon*. https://www.nobelprize.org/prizes/economic-sciences/1978/simon/facts/ (reference-only)
+
+## Related Topics
+
+- Management and Leadership: Planning
+- Management and Leadership: Goal Setting
+- Management and Leadership: Controlling
+- Management and Leadership: Teams
+- Management and Leadership: Management Versus Leadership
+
+## Editorial Metadata
+
+- Topic ID: management-and-leadership:foundations:decision-making
+- Subject: management-and-leadership (Foundations)
+- Editorial status: READY_TO_PUBLISH
+- Researched at: 2026-08-22
+- Research status: source-verified
+- Rights: OpenStax Principles of Management chapter 2 sections 2.1, 2.3-2.6 used as reference (CC BY-NC-SA 4.0; the book's page footer states it may not be ingested into LLMs without OpenStax's permission, so content is paraphrased into original prose with the one-sentence working definition quoted with attribution); Investopedia and Britannica read via Wayback captures as reference-only; Nobel Prize page as reference-only; no other source prose reproduced
