@@ -1,0 +1,142 @@
+# Stocks
+
+## In 30 Seconds
+
+A stock is a share of ownership in a company — the working definition this lesson adopts from SEC Investor.gov. Owners can earn in two ways: the price rises (appreciation) or the company pays dividends out of its profits. But prices fall as well as rise, so you can lose money. Stocks are usually one piece of a diversified portfolio, bought through a brokerage account or a fund, and they suit long horizons. A stock is ownership with a mood ring: real, valuable, and changeable.
+
+## Why This Matters
+
+Stocks sit at the center of nearly every serious conversation about building wealth, and knowing what one actually is changes how you hear those conversations. A stock is not a lottery ticket and not a guaranteed money-maker; it is a share of ownership in a real business. College courses treat stocks as a foundation for finance and economics, and stock prices fill the news every day. Practically, understanding ownership, appreciation, dividends, and risk lets you make sense of retirement accounts, funds, and any investment you encounter later. Personally, the honest framing — real ownership with real ups and downs — protects you from both hype and panic, because you will know what you are looking at.
+
+## Learning Objectives
+
+- Define a stock as a share of ownership in a company, attributing the working definition to SEC Investor.gov.
+- Explain the two ways stock owners can earn — price appreciation and dividend payments — each with an example.
+- Describe the risk reality of stocks: prices fall as well as rise, even when companies are not failing.
+- Explain the role of stocks as one piece of a diversified portfolio and name the general ways stocks are bought: brokerage accounts and funds.
+- Evaluate the honest framing of stock investing as ownership suited to long horizons, not a guaranteed short-term gain.
+
+## The College Version
+
+### What a stock is
+
+A stock is a type of security that gives the stockholder a share of ownership in a company — the working definition this lesson adopts from SEC Investor.gov, the U.S. securities regulator's education site. Stocks are also called equities. When a company issues stock, it sells slices of itself to raise money, and each slice is a share. Own shares and you own part of the business: if the company grows and prospers, your slice can become more valuable; if it stumbles, your slice can become worth less. Some stocks also carry voting rights, so owners get a say at shareholder meetings — another sign of real ownership, though most personal investors experience that ownership through price changes and dividend checks. The word ownership carries the real weight here. Unlike a loan, which a borrower must repay, a share of stock is no promise of repayment. You are an owner, not a creditor, and owners rise and fall with the business itself.
+
+### How owners earn: appreciation and dividends
+
+Stock owners earn in two main ways, and Investor.gov names both. The first is capital appreciation: the stock rises in price. Original example: you buy shares of a small coffee-chain company at $18 a share, and over the next few years its cold-brew line becomes popular, the company grows, and the shares trade at $31. If you sell, the difference is your gain. The second is dividends: a portion of the company's profit paid to shareholders, usually on a fixed schedule. Original example: a regional grocery chain pays its owners a quarterly dividend, so even in a year when the share price barely moves, you receive payments as income. Some companies pay steady dividends, some pay none and reinvest their earnings, and a given stock can offer appreciation, dividends, both, or neither in any year.
+
+### The risk reality
+
+Here is the honest note. Stock prices move down as well as up. There is no guarantee that the company whose stock you hold will grow and do well, so you can lose money you invest in stocks. Investor.gov points out that even when companies are not in danger of failing, their stock prices may fluctuate up or down — large-company stocks as a group have lost money on average about one out of every three years. Original example: you buy shares of a bicycle maker at $45, and the following spring a competitor's cheaper e-bike floods the market. The bicycle maker's shares fall to $29, so your stake is worth less than you paid. Nothing about the company misbehaved; the market simply repriced the business. If you must sell at that moment, the loss is real.
+
+### One piece of a portfolio, bought through an account, held for the long view
+
+Investor.gov notes that stocks are usually one part of an investor's holdings, not the whole thing. A personal portfolio typically holds a mix — different companies, different industries, and other kinds of assets — so one bad outcome is cushioned by the rest. That is the diversification idea, and it has its own sibling lesson; here the point is context: stocks are a piece of a diversified whole, not a bet on a single winner. As for buying, stocks are purchased through brokerage accounts, where a broker handles the buying and selling, or through funds that pool many investors' money and hold stocks for them; both are named generally here with no product advice, and the mutual-funds and etfs lessons cover the details. The long view: Investor.gov notes that investors willing to stick with stocks over long periods of time, say fifteen years, have generally been rewarded with strong, positive returns, and money meant for retirement is not touched for decades. Stock investing is for long horizons. The honest framing, in one line: a stock is ownership with a mood ring — real value that changes day to day. The mood swings are part of the deal.
+
+## Key Vocabulary
+
+- **stock** — A type of security that gives its holder a share of ownership in a company; stocks are also called equities.
+- **share** — One unit of ownership in a company; owning shares makes you a part-owner of the business.
+- **capital appreciation** — An increase in a stock's price over time, one of the two main ways stock owners earn.
+- **dividend** — A portion of a company's profit paid to its shareholders, typically on a regular schedule; the second main way stock owners earn.
+- **portfolio** — The full collection of investments a person holds, such as the stocks, bonds, and funds they own.
+- **brokerage account** — An account with a broker through which investors buy and sell stocks; brokers handle trades for customers, often for a fee called a commission.
+- **stock fund** — A fund that pools money from many investors and invests primarily in stocks; mutual funds and ETFs are common types covered in sibling lessons.
+- **time horizon** — The length of time money is expected to stay invested before it is needed; stock investing suits long horizons.
+
+## Eli-10
+
+A stock is a share of ownership in a company. When you buy one, you are not lending the company money — you are buying a tiny slice of the business itself. You can earn if your slice becomes more valuable (the price rises) or if the company shares some of its profits with you as dividends. The catch is that the slice can also become worth less: prices fall as well as rise, and large-company stocks as a group have lost money in about one year out of three. Because of those swings, stocks are usually one part of a diversified portfolio, bought through a brokerage account or a fund. Stock investing is for long horizons — money you can leave alone for years, not cash you need soon.
+
+## Eli's Analogy
+
+Owning a stock is like owning a share of a neighborhood restaurant instead of lending it money. If the restaurant thrives and customers line up, your share of the business is worth more, and some years the owners hand you a cut of the profits. If a new restaurant opens next door and business thins out, your share is worth less — the restaurant did not betray you; the value simply changed. You rise and fall with the place because you are a part-owner, not a lender.
+
+The analogy softens the risk. You can visit a restaurant; a public company you mostly experience through numbers. A struggling restaurant may recover with a new menu, but a company can fail entirely, and shareholders are last in line when its assets are sold — they can be left with nothing. The mood-ring part is real: a stock's value changes day to day, and the swings can feel far bigger than any single restaurant's ups and downs.
+
+## Worked Example
+
+Marta, 30, buys shares in two companies: a bakery chain that pays a quarterly dividend and a biotech firm that pays none. Over four years the bakery's share price crawls from $24 to $26, but each quarter she receives a dividend, about $90 a year in total. The biotech's price swings from $40 to $57 to $31 before settling at $48; she never sells, because her time horizon is retirement, thirty years away. At the end of four years Marta earned in both ways the lesson describes: steady dividend income from the bakery, and capital appreciation from the biotech — bought at $40, worth $48. She also watched the biotech's price sit below her purchase price for two full years without selling, because long-horizon money can afford to wait.
+
+## Common Mistakes
+
+- **Thinking a stock is money the company must pay back, like a loan.** A share is ownership, not debt. The company owes you nothing; your value rises and falls with the business itself.
+- **Expecting every stock to pay dividends.** Only some companies share profits with owners; others pay none and reinvest. Dividends are one way to earn, not a promise.
+- **Judging a stock by a single week or year of price movement.** Prices move down as well as up, and large-company stocks as a group have lost money about one year in three. Short stretches are noise; the long view is the fair sample.
+- **Betting everything on one exciting company.** Stocks are usually one piece of a diversified portfolio. A single stock concentrates risk; a mix of holdings cushions any single failure — see the investing and diversification material in the related lessons.
+- **Buying stocks with money needed soon, hoping for a quick gain.** Stock investing is for long horizons. Money you will need within a few years has little time to recover from a fall; short-term money belongs in safer, easier-to-reach places covered in the saving lesson.
+
+## Compare / Contrast
+
+| | | |
+|---|---|---|
+| **A stock** | **A bond** | A stock is a share of ownership — you rise and fall with the company. A bond is a loan you make, with a promise of repayment plus interest. If a company fails, bondholders are paid first; shareholders are last in line. |
+| **Price appreciation** | **Dividends** | Appreciation is a rise in the share price, which you capture when you sell. Dividends are profit payments the company sends you while you hold. Both are ways owners earn, and a stock may offer either, both, or neither. |
+| **One company's stock** | **A diversified portfolio** | A single stock rises and falls on that company's own news. A diversified portfolio spreads money across many companies, industries, and asset types so one failure is cushioned — stocks are one piece of that whole, not the whole itself. |
+
+## Key Takeaway
+
+A stock is a share of ownership in a company — real value that rises and falls. Owners earn through appreciation and dividends, prices fall as well as rise, and the honest use is one piece of a diversified portfolio held over a long horizon.
+
+## Practice Question Bank
+
+1. **According to the working definition this lesson adopts from SEC Investor.gov, what is a stock?**
+   - A share of ownership in a company
+   - A loan you make to a company that must be repaid with interest
+   - A government guarantee that a company will grow and do well
+   - A deposit account that earns a fixed rate of interest
+   - **Correct: A.** Investor.gov defines a stock as a type of security that gives stockholders a share of ownership in a company. A loan repaid with interest is a bond, the territory of the bonds sibling lesson; no government guarantee exists; and a deposit account is saving, not stock.
+
+2. **Tomas owns shares in two companies. Company A's share price rises from $30 to $44 over three years. Company B sends him a cash payment each quarter out of its profits. Which statement names both ways Tomas earned?**
+   - Appreciation only, since only Company A's price moved
+   - Dividends only, since only Company B pays him cash
+   - Capital appreciation from Company A and dividends from Company B
+   - Interest from Company A and dividends from Company B
+   - **Correct: C.** Investor.gov names two ways stock owners earn: capital appreciation, which occurs when a stock rises in price, and dividend payments, which come when a company distributes some of its earnings to stockholders. Company A shows appreciation; Company B shows dividends. Interest is what loans and bonds pay, not stock.
+
+3. **Priya buys shares of a bike company at $45 a share. A competitor's cheaper e-bike floods the market, and the shares fall to $29. Based on the lesson, which statement is accurate?**
+   - The company must refund her the difference, since shares are a loan
+   - The price can never fall below what she paid once she owns shares
+   - Her loss is guaranteed to be recovered within one year
+   - Her shares are worth less than she paid — prices move down as well as up, and selling now would lock in the loss
+   - **Correct: D.** Investor.gov is blunt: stock prices move down as well as up, there is no guarantee the company will do well, and you can lose money you invest in stocks. If Priya sells below her purchase price, the loss is real. Nothing guarantees a refund, a price floor, or a recovery.
+
+4. **Dana wants to own stocks as part of her overall investing plan. Based on the lesson, which approach matches the general practice it teaches?**
+   - Put her entire savings into one exciting company's stock
+   - Treat stocks as one piece of a diversified portfolio, bought through a brokerage account or a fund
+   - Buy stocks only with money she needs next month
+   - Expect the company to repay her purchase price with interest
+   - **Correct: B.** Investor.gov notes that stocks are usually one part of an investor's holdings and that investors buy and sell through brokers or stock funds. One stock is concentrated risk; short-term money has no time to recover from a fall; and repayment with interest describes a loan, not ownership.
+
+5. **Two investors each buy $5,000 of the same company's stock. Leon plans to sell in six months to fund a car purchase. Inez will not touch her money for twenty-five years. Which evaluation follows what the lesson teaches?**
+   - Leon's plan fits stock investing better because he acts quickly
+   - Both plans are identical because they own the same stock
+   - Inez's plan fits better: stock investing is for long horizons, while Leon's short deadline leaves little room to recover if the price falls
+   - The company guarantees Inez a profit because she holds for longer
+   - **Correct: C.** The lesson adopts the general practice that stock investing is for long horizons — Investor.gov notes that long-term holders have generally been rewarded and that retirement money is not used for decades. Owning the same stock does not make the plans equal: a six-month deadline is short-horizon money, and nothing, including time, guarantees a profit.
+
+## Sources
+
+- SEC Investor.gov — Introduction to Investing (https://www.investor.gov/introduction-investing)
+- SEC Investor.gov — Stocks - FAQs (Investment Products) (https://www.investor.gov/introduction-investing/investing-basics/investment-products/stocks)
+- SEC Investor.gov — What is Risk? (https://www.investor.gov/introduction-investing/investing-basics/what-risk)
+- SEC Investor.gov — Dividend (glossary) (https://www.investor.gov/introduction-investing/investing-basics/glossary/dividend)
+- SEC Investor.gov — Glossary (Investing Basics) (https://www.investor.gov/introduction-investing/investing-basics/glossary)
+
+## Related Topics
+
+- personal-finance:foundations:investing
+- personal-finance:foundations:bonds
+- personal-finance:foundations:mutual-funds
+- personal-finance:foundations:etfs
+- personal-finance:foundations:saving
+
+## Editorial Metadata
+
+- Topic ID: personal-finance:foundations:stocks
+- Subject: personal-finance / Unit: foundations
+- Editorial status: READY_TO_PUBLISH
+- Research status: source-verified (researched 2026-08-21)
+- Rights: reference-only U.S. government sources (public domain); facts restated in original prose, no source wording reproduced
+- Scope note: personal angle only; investing, bonds, mutual funds, ETFs, and diversification are sibling topics; market theory belongs to the finance subject; all examples original and hypothetical
