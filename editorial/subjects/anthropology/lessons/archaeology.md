@@ -1,0 +1,158 @@
+# Archaeology: Reading the Past
+
+## In 30 Seconds
+
+Archaeology is the study of past human life through material remains — the things people made, used, and left behind. The record comes in three kinds: artifacts, features, and ecofacts. Archaeologists work at sites and across landscapes, using survey, excavation, and dating methods such as stratigraphy, radiocarbon dating, and dendrochronology. Objects alone do not speak; context gives them meaning. Honest framing: most of the past is gone, and archaeology is the closest thing we have to time travel.
+
+## Why This Matters
+
+Most of human history happened before anyone wrote it down, and written records cover only a thin slice of the human story — usually written by the powerful about themselves. Archaeology opens the rest: the meals, tools, homes, and daily labor of ordinary people across tens of thousands of years. That evidence matters beyond museums; it feeds heritage law, land-use planning, climate history, and the identities of communities with deep roots in a place. It also trains a habit of mind: read evidence carefully, admit what you cannot know, and reason from fragments without pretending they are the whole.
+
+## Learning Objectives
+
+- Define archaeology as the study of past human life through material remains, using the OpenStax working definition.
+- Distinguish artifacts, features, and ecofacts, giving an original example of each.
+- Explain where archaeologists work — sites and landscapes — with an original example.
+- Name the three main tools of archaeology — survey, excavation, and dating — and state what each does in one line; identify stratigraphy, radiocarbon dating, and dendrochronology as dating methods.
+- Explain why context is essential to interpretation: things alone do not speak.
+- Analyze the two reality checks: most of the past is gone, and archaeology is the closest thing to time travel.
+
+## The College Version
+
+### What archaeology is
+
+Archaeology is the study of past human life through material remains. OpenStax's Introduction to Anthropology places archaeology among the four fields as the study of past societies through artifacts and other traces people left behind, and its methods chapter opens by presenting scientific archaeological techniques as the foundation of how the human past is studied today. Encyclopaedia Britannica puts the same idea in one sentence: archaeology is the scientific study of past human life and activities through the examination of material remains. The phrase "material remains" is the point. A historian works with written records; an archaeologist works with things — the pots, posts, bones, and rubbish that people made, used, and threw away. For periods before writing, material remains are the only record that exists. For periods with writing, archaeology adds the daily life that documents rarely mention. Written records themselves are the history subject's territory; here the question is what the things can tell us.
+
+### The record: artifacts, features, and ecofacts
+
+Everything an archaeologist studies falls into three baskets. Artifacts are portable objects that show evidence of human making or use: a flint knife, a clay pot, a bronze fishhook. Features are the parts of a site that cannot be picked up and carried away: a hearth, a house foundation, a line of post holes, an altar. Ecofacts are natural objects that people did not shape but that turn up where people lived: charred wheat grains in a storage pit, oyster shells in a rubbish heap, the bones of a butchered animal. The boundary is practical, not magical — a stone is an ecofact until someone knaps it into a tool, and then it is an artifact. Original example: at the fictional site of Fox Hollow, a crew records a clay pot (artifact) sitting beside a stone-lined hearth (feature) filled with burned hazelnut shells (ecofacts).
+
+### Where archaeologists work: sites and landscapes
+
+Archaeological remains are not spread evenly across the world; they are concentrated in places people used, and those places are connected. A site is a bounded place where the material remains of past human activity are found — a hilltop village abandoned nine hundred years ago, now a scatter of foundation stones and potsherds. A landscape is the wider region around and between sites: the terraced fields, trails, wells, and watchtowers that tied a settlement to its territory. Archaeologists work at both scales. They dig at sites, and they survey landscapes to see how sites relate to one another. Original example: the crews studying Fox Hollow also walk the valley below it, mapping old field walls and a track that leads to the river crossing, because the village makes sense only inside that larger working region.
+
+### The toolkit: survey, excavation, and dating
+
+Three tools carry most archaeological fieldwork. Survey is the search for remains without digging: walking plowed fields in parallel lines and logging every flake and potsherd, or scanning the ground with drones and satellite imagery for traces of buried structures. Excavation is the systematic digging that follows: a site is divided into a grid of squares, and each layer is removed with trowels and brushes while every object is mapped in place before it moves. Dating puts the results in time. The methods are named here without depth: stratigraphy uses the order of layers — deeper means older — following the law of superposition; radiocarbon dating measures the decay of carbon-14 in organic material such as wood, bone, or seed, reaching back tens of thousands of years; dendrochronology counts the annual rings of ancient timbers, one ring per year. Skilled crews use several methods at once, because methods that agree are far more convincing than any single one.
+
+### Interpretation: things do not speak
+
+A pot is just a pot until someone asks where it was found and what it was found with. Archaeological meaning lives in context — the exact spot where an object lay, the layer it lay in, and the objects around it. A copper coin dropped on a roadside says one thing; the same coin under a hearth, with forty others and a charred strongbox, says something else. Archaeologists record objects in place before anything is lifted, because an object torn from its context keeps its shape but loses its story. This is why looting is not just theft: a stolen pot that surfaces on the market has been stripped of the very information that made it archaeology.
+
+### The honest note: most of the past is gone
+
+Now the reality check. Not everything people once made has survived equally. Stone, fired clay, bone, and shell endure for millennia; wood, cloth, leather, and food usually rot away within decades or centuries. A camp that used wooden bowls and bark baskets may leave behind only a scatter of stone chips and burnt bone — and only if nothing plowed, built, or eroded the ground since. Add the sites never found and the finds never made, and the archaeological record turns out to be a sample, not a photograph. Archaeologists say this plainly: most of the past is gone. The discipline's skill is building careful accounts from the fraction that remains — and knowing the difference between what is known and what is missing.
+
+### The honest framing: the closest thing to time travel
+
+The second reality check is the one that keeps people in the field. Archaeology is often described as the closest thing we have to time travel. Not the movie kind: no archaeologist has ever watched a past moment happen. The time travel is in the handling. You can hold a pot that a potter's hands shaped eight hundred years ago, walk the floor of a house someone swept, handle the same kind of grain they stored. The past becomes physical and touchable — and then, through context and dating, it becomes ordered and explainable. The framing is honest about its limits: you cannot visit the past, but you can read it, carefully, from what it left behind.
+
+## Key Vocabulary
+
+- **archaeology** — The study of past human life through material remains — the things people made, used, and left behind.
+- **artifact** — A portable object that shows evidence of human making or use, such as a stone tool or a clay pot.
+- **feature** — A part of a site that cannot be moved, such as a hearth, a house foundation, or a line of post holes that people built or dug.
+- **ecofact** — A natural object found at a site — a seed, a shell, an animal bone — that people did not shape.
+- **site** — A bounded place where the material remains of past human activity are found.
+- **landscape** — The wider region around and between sites — fields, trails, wells, and other traces — studied as one connected area.
+- **survey** — The systematic search for archaeological remains without digging, on foot or with tools such as drones and satellite imagery.
+- **excavation** — The systematic digging of a site, layer by layer, with careful recording of where every object lay before it is removed.
+- **stratigraphy** — Dating by layers: the principle that deeper layers were laid down earlier and are therefore older.
+- **radiocarbon dating** — A dating method that measures the decay of carbon-14 in organic material to estimate when a plant or animal died.
+
+## Eli-10
+
+**Simplified explanation.** Imagine a crew from the year 3000 digging up your neighborhood. They find your plastic spoon, your sneaker, and the wrapper from your snack — a few objects, in a layer of soil, near a cracked foundation. What could they honestly say about your day from those three objects? Not much. But if they also find the trash pit, the coins, the half-eaten meal, and the exact spot where the spoon lay, they can start to build a real picture. That is archaeology: reading old things together with where they were found. The things do not talk. The places and the layers do, a little — and only if you ask them carefully, one layer at a time.
+
+**Where the analogy breaks down.** A book was written on purpose, by an author who wanted to communicate, and its pages were meant to be read. The past was lived, not written: nobody left those pots and post holes as a message to you. A book has one author and one intended meaning; a site holds countless people doing ordinary things with no audience at all. And a burned book can stay on the shelf — but excavation removes what it reveals, which is why archaeologists record every layer as they go.
+
+## Eli's Analogy
+
+Think of archaeology as reading a book that has mostly burned. A few pages survive — some whole, most torn, scattered out of order. You cannot read the missing pages, and pretending you can is how bad archaeology happens. But the surviving pages, read carefully, with knowledge of how books are made and how fires burn, still tell you a great deal about the story. A site is that book. The layers are its pages, and the archaeologist's job is to read the ones that remain, in order, without inventing the ones that burned.
+
+## Worked Example
+
+Mara excavates a house floor at the fictional site of Fox Hollow. In the fill above the floor she finds a clay pot (artifact) beside a stone-lined hearth (feature); the hearth holds charred wheat grains (ecofacts). The floor sits under a layer of collapsed roof daub and above a clean sand layer — stratigraphy says the house is younger than the sand and older than the collapse. Radiocarbon dating of the wheat puts the burning around 980 CE, and dendrochronology on a charred oak beam matches the same decade. Mara reconstructs the sequence: grain stored by the hearth, a fire, a collapse, abandonment. Each method alone would be a guess; together they triangulate a story.
+
+## Common Mistakes
+
+- **"Archaeology is digging up dinosaur bones."** Dinosaurs belong to paleontology. Archaeology studies past human life through material remains — and fossil human ancestors are the territory of the human-evolution topic, not this one.
+- **"An archaeologist's job is to find things."** Finding is only the first step. The core of the work is recording where each object lay and what it lay with; an object removed without that record keeps its shape but loses its story.
+- **"Only very old things count as archaeological."** Archaeology spans the human past from the earliest stone tools to objects buried or discarded recently — even last century's sites are studied this way.
+- **"Keep digging and we will recover the whole past."** Most of the past is gone. Wood, cloth, and food decay; only the durable fraction — stone, fired clay, bone, shell — typically survives, so the record is a partial sample, not a full account.
+- **"A single impressive object proves something about a whole society."** One coin proves one coin. Meaning comes from context — where the object lay, what surrounded it — and from multiple lines of evidence agreeing.
+
+## Compare / Contrast
+
+- **Archaeology vs. History:** Historians work from written records; archaeologists work from material remains. For periods with both, the two complement each other — documents give names and events, things give daily life.
+- **Archaeology vs. Paleontology:** Archaeology studies past human life through the things people made and used; paleontology studies ancient life through fossils, mostly non-human.
+- **Artifacts vs. Ecofacts:** Artifacts are portable objects shaped or used by people; ecofacts are natural objects found at sites that people did not shape. Both are evidence; only artifacts show human craftsmanship.
+- **Site vs. Landscape:** A site is a bounded place where remains concentrate; a landscape is the wider region of fields, trails, and settlements around and between sites, studied as one connected area.
+
+## Key Takeaway
+
+Archaeology reads the past through material remains — artifacts, features, and ecofacts, studied at sites and across landscapes with survey, excavation, and dating. Most of the past is gone, so the record is a partial sample; read carefully, it is the closest thing we have to time travel.
+
+## Practice Question Bank
+
+**anthropology:foundations:archaeology:1** The working definition used in this lesson describes archaeology as the study of —
+- A. past human life through material remains ✅
+- B. the biological evolution of the human species
+- C. the everyday customs of living people
+- D. written records and historical documents
+  - *Answer:* A. *Explanation:* OpenStax's Introduction to Anthropology and Britannica both frame archaeology as the study of past human life through material remains — the things people made, used, and left behind. Biological evolution is the focus of biological anthropology and the human-evolution topic; the customs of living people belong to cultural anthropology; written records are the historian's material, not archaeology's.
+  - *Difficulty:* recall | *Skill:* recalling the working definition of archaeology
+
+**anthropology:foundations:archaeology:2** A crew at a site records a clay pot, a stone-lined hearth, and a scatter of butchered animal bones. In archaeological terms, these are, in order —
+- A. ecofact, artifact, feature
+- B. artifact, feature, ecofact ✅
+- C. feature, artifact, ecofact
+- D. artifact, ecofact, feature
+  - *Answer:* B. *Explanation:* A clay pot is a portable object showing human making — an artifact. A hearth is a built structure that cannot be carried away — a feature. Butchered bones are natural objects found at the site, not shaped by people — ecofacts.
+  - *Difficulty:* recall | *Skill:* classifying artifacts, features, and ecofacts
+
+**anthropology:foundations:archaeology:3** A team walks a freshly plowed field in straight lines, logging every flint flake and potsherd with GPS coordinates, to decide whether a site lies beneath. This stage of fieldwork is —
+- A. excavation
+- B. dating
+- C. survey ✅
+- D. interpretation
+  - *Answer:* C. *Explanation:* Survey is the systematic search for remains without digging — on foot, or with drones and satellite imagery. Excavation is the digging that may follow; dating establishes age; interpretation builds meaning from context.
+  - *Difficulty:* application | *Skill:* identifying the survey stage in a fieldwork scenario
+
+**anthropology:foundations:archaeology:4** A wooden post from a lakeside dwelling and the soil layers around it are both studied: tree rings date the post, and layer order is used for the soil. Which statement correctly pairs each method with what it does?
+- A. Tree rings give relative order; layer order gives calendar years
+- B. Both methods work by measuring radioactive decay
+- C. Layer order dates the wood; tree rings order the layers
+- D. Tree rings give calendar years for the wood; layer order places the layers in relative sequence ✅
+  - *Answer:* D. *Explanation:* Dendrochronology counts annual tree rings, giving calendar years — an absolute date. Stratigraphy uses the law of superposition: deeper layers were laid down earlier, giving relative order (older or younger), not calendar years. Radioactive decay describes radiocarbon dating, not tree rings.
+  - *Difficulty:* application | *Skill:* matching dating methods to what they establish
+
+**anthropology:foundations:archaeology:5** A student argues that a single copper coin found on a hillside proves the whole region was wealthy. Using this lesson's teaching on context and the record, the stronger response is —
+- A. The coin settles it, because physical objects do not lie
+- B. The claim needs a written source, since artifacts cannot support it
+- C. The coin's meaning depends on where and with what it was found, and the surviving record is only a fraction of what once existed ✅
+- D. The coin proves wealth only if it is made of gold
+  - *Answer:* C. *Explanation:* Things alone do not speak: a stray coin says almost nothing until context — the layer, the spot, and the objects around it — gives it meaning. The honest note adds that most of the past is gone, so any single find is a fragment, not a census. Objects are not infallible witnesses, archaeology does support claims without written sources, and value is not set by metal alone.
+  - *Difficulty:* analysis | *Skill:* applying context and the partial-record reality check to an interpretive claim
+
+## Sources
+
+1. 2.1 Archaeological Research Methods — Introduction to Anthropology, OpenStax, Rice University. https://openstax.org/books/introduction-anthropology/pages/2-1-archaeological-research-methods
+2. Ch. 2 Key Terms — Introduction to Anthropology, OpenStax, Rice University. https://openstax.org/books/introduction-anthropology/pages/2-key-terms
+3. 1.2 The Four-Field Approach: Four Approaches within the Guiding Narrative — Introduction to Anthropology, OpenStax, Rice University. https://openstax.org/books/introduction-anthropology/pages/1-2-the-four-field-approach-four-approaches-within-the-guiding-narrative
+4. Archaeology — Encyclopaedia Britannica. https://www.britannica.com/science/archaeology
+
+## Related Topics
+
+- anthropology:foundations:what-is-anthropology
+- anthropology:foundations:four-fields-of-anthropology
+- anthropology:foundations:archaeological-evidence
+- anthropology:foundations:human-evolution
+- anthropology:foundations:fieldwork
+
+## Editorial Metadata
+
+- Topic ID: anthropology:foundations:archaeology
+- Editorial status: READY_TO_PUBLISH
+- Researched: 2026-08-22
+- Provenance: EliExplains original synthesis; reference-only sources (OpenStax Introduction to Anthropology sections 2.1 and the chapter 2 glossary read via the LibreTexts CC BY 4.0 mirror, with the canonical openstax.org URLs confirmed against Wayback captures; Britannica read via a Wayback capture). All examples, scenarios, and framing prose are original; no source wording is reproduced.
