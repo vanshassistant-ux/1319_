@@ -1,0 +1,144 @@
+# Evaluating Nutrition Claims
+
+## In 30 Seconds
+
+A nutrition claim is any statement about what a food or supplement does for your body — and anyone can make one. Claims are not evidence: they are sentences, while evidence is what actually supports them. The skeptic's toolkit is short: watch for miracle cures, quick fixes, one-food answers, and "they don't want you to know" framing; ask who is speaking, what the evidence is, and who paid; and check government agencies, universities, and professional bodies before believing.
+
+## Why This Matters
+
+Nutrition claims surround everyone: product labels, ads, influencer posts, news headlines. The cost of believing a bad one is not just wasted money on tonics and teas; a false claim can delay real care, encourage risky doses, and quietly shape a whole diet around one celebrated food. The payoff of learning to evaluate claims is durable: the same questions work on a cereal box, a viral post, or a late-night ad, and they transfer beyond food to any health product you meet later in life. This lesson's frame is deliberately narrow — claims, not nutrients — because skepticism is a skill you carry into every other nutrition topic you study, from supplements to dietary patterns.
+
+## Learning Objectives
+
+- Define a nutrition claim as any statement about what a food, beverage, or supplement does for the body, using the lesson's working definition.
+- Identify the common red flags of dubious nutrition claims: miracle cures, quick fixes, one-food answers, and "they don't want you to know" framing.
+- Explain why a claim is not the same as evidence and why anyone can make a claim.
+- Apply the three-question check — who is saying it, what is the evidence, who funded it — to a sample claim.
+- Identify reliable sources of nutrition information: government agencies, universities, and professional bodies.
+- Describe the U.S. supplement-label reality: structure/function claims are not preapproved by the FDA.
+
+## The College Version
+
+### What a nutrition claim is
+
+A nutrition claim, in the working definition this lesson uses, is any statement about what a food, beverage, or dietary supplement does for the body or for health. The definition is built from the way regulators talk about product statements. The FDA separates label claims into categories — health claims about a relationship with disease risk, structure/function claims about effects on a structure or function of the body, and nutrient content claims about the level of a nutrient — while the FTC treats any objective statement in advertising as a claim that must be truthful and backed by evidence. Notice what the definition does not say. It does not say a claim is true, false, or proven. A claim is simply a sentence that asserts something, and its truth is a separate question. "This cereal contains fiber" and "this tonic reverses aging" are both claims; they sit at very different distances from what the evidence shows.
+
+### The red flags
+
+MedlinePlus, the National Library of Medicine's consumer site, keeps a running list of the phrases that show up again and again in health fraud: miracle cure, quick fix, secret ingredient, natural cure, ancient remedy, no-risk money-back guarantee, scientific breakthrough. Four patterns matter most for nutrition. Miracle cures promise dramatic results from a single product, like the fictional Golden Hour Tonic that "erases twenty years of joint stiffness overnight." Quick fixes promise fast results without effort, like Featherlight Drops that "melt ten pounds in a week while you sleep." One-food answers claim that a single food or product solves many unrelated problems — no one product can treat or cure many different illnesses, MedlinePlus warns. And the "they don't want you to know" pattern wraps a product in conspiracy: "the cure the government and Big Pharma don't want you to hear about." None of these patterns proves a claim false, but each is a warning sign that the seller is leaning on persuasion instead of evidence.
+
+### Who can make claims, and why claims are not evidence
+
+Anyone can make a nutrition claim. There is no license required to say that a berry sharpens memory or a tea melts fat: companies, influencers, websites, and even actors hired to pose as satisfied customers all make claims every day. MedlinePlus notes that testimonials by "real people" or "doctors" played by actors are a standard ingredient of health scams. The honest conclusion is not that every claim is a lie; it is that being able to say something carries no information about whether it is true. That is the gap between claims and evidence. A claim is a statement. Evidence is information gathered through observation or research, conducted and reviewed in ways that can be checked. OpenStax's nutrition text makes the same point about practice: evidence-based practice uses scientific evidence rather than anecdotal evidence. The FTC's advertising standard rests on the same distinction — an ad must be truthful and not misleading, and the advertiser must hold adequate substantiation for its claims, which for health products means competent and reliable scientific evidence.
+
+### Checking a claim: who, what evidence, who paid
+
+MedlinePlus's guide to evaluating health information distills the check into questions: who runs the site or says the thing, what the purpose is, who pays for it, and whether the information is high quality, sourced, and current. For a single claim, three questions carry the load. Who is saying it, and what do they want? A seller wants a sale; a government agency and a university have no product to push. What is the evidence? Look for named studies with real methods, not one customer's photo; good health information gives balanced facts based on research rather than promoting one treatment. Who funded it? If a business pays for the information, it may favor that business and its products, so ads should be clearly marked as ads. The same three questions work on a cereal box, a viral post, or a news headline — and if the answers are "someone selling something," "no studies," and "the seller paid," the claim has not earned your trust.
+
+### Reliable sources, and the supplement-label reality
+
+For balanced, current nutrition information, MedlinePlus points to three kinds of sources: federal government agencies, medical schools, and large professional or nonprofit organizations. Government agencies include the FDA, which regulates food and supplement labels, the USDA, which issues the Dietary Guidelines, and the NIH, whose Office of Dietary Supplements publishes evidence-based fact sheets. Universities publish the same kind of material — the Harvard T.H. Chan School of Public Health's Nutrition Source is a widely used example. Professional bodies such as the Academy of Nutrition and Dietetics and the American Heart Association round out the list. Then comes the reality check about supplement labels, a subject the supplements lesson covers fully. In the United States, dietary supplements do not need FDA approval before they are marketed, and structure/function claims — statements about effects on a structure or function of the body, like "calcium builds strong bones" — are not approved or pre-evaluated by the FDA. The manufacturer must have substantiation that the claim is truthful and not misleading, and the label must carry the disclaimer that the FDA has not evaluated the statement and the product is not intended to diagnose, treat, cure, or prevent any disease. If a product is represented as treating or curing a disease, it is a drug under the law. That is why the disclaimer exists: the sentence on the label is a claim, and a claim is exactly the kind of thing this lesson teaches you to check.
+
+## Key Vocabulary
+
+- **nutrition claim** — Any statement that says a food, beverage, or dietary supplement does something for the body or for health; the statement may be true, false, or unproven.
+- **evidence** — Information gathered through careful observation or research that supports or contradicts a claim; in nutrition, usually studies conducted and reviewed by experts.
+- **substantiation** — The evidence a company must hold to back up what it says about a product; under FTC rules, health claims require substantiation in the form of competent and reliable scientific evidence.
+- **structure/function claim** — A supplement label statement describing how a nutrient or ingredient affects a structure or function of the body, such as "calcium builds strong bones"; in the U.S. these claims need no FDA preapproval.
+- **disclaimer** — A required label statement accompanying a structure/function claim, noting that the FDA has not evaluated the claim and that the product is not intended to diagnose, treat, cure, or prevent any disease.
+- **red flag** — A warning sign in a claim's wording or presentation suggesting it may be exaggerated or fraudulent, such as "miracle cure," "quick fix," or "they don't want you to know" framing.
+- **testimonial** — A personal story from a customer or "real person" describing a product's results; a story about one individual is not evidence that the product works.
+
+## Eli-10
+
+A nutrition claim is just a sentence someone says about food: "this tea melts belly fat," "this berry sharpens memory." Saying it does not make it true. Anyone can say a sentence — a company, an influencer, a stranger on the internet. So treat every claim as a question, not a fact. Ask three things: Who is saying this, and what do they want? What evidence backs it up, meaning real studies, not one customer's story? And who paid for the claim or the research? Then check with sources that do not sell anything: government agencies like the FDA, universities, and professional health organizations. If a claim promises a miracle, promises fast results, fixes everything with one food, or whispers "they don't want you to know," that is your cue to be extra careful.
+
+## Eli's Analogy
+
+Think of a nutrition claim like a stranger at your door praising a vacuum cleaner. The praise is easy to give, but you would not hand over money without checking the reviews, the maker, and the price — and you would never buy it because the stranger whispered that "the store doesn't want you to know about this model." Claims about food deserve the same caution you would give any stranger's sales pitch.
+
+Where the analogy breaks down: unlike a vacuum cleaner, you cannot return a nutrition habit easily, and the "product" here is something you eat or drink repeatedly, so the stakes are higher than a single purchase. Also, not every bold claim is a scam — some turn out to be true. The analogy warns you to check, not to assume fraud.
+
+## Worked Example
+
+Priya sees an ad for Featherlight Drops: "Lose 10 pounds in 7 days while you sleep — the secret formula diet companies don't want you to know!" She runs the checklist. Who is saying it? An unknown company selling the drops; they profit if she buys. What evidence? The ad offers one customer photo and no studies, and the "secret formula" is never named. Who funded it? The seller funded the ad, and no independent organization appears anywhere in it. The wording also trips three red flags at once: a quick fix, a miracle-sized promise, and a "they don't want you to know" line. Priya treats the claim as unproven, checks MedlinePlus and the FDA for weight-loss scam warnings, and skips the purchase.
+
+## Common Mistakes
+
+- **Assuming a claim must be true because the product is legal to sell.** Legality is not proof. In the U.S., dietary supplements do not need FDA approval before marketing, and structure/function claims are not preapproved — the label even states the FDA has not evaluated the claim.
+- **Treating one customer's testimonial as evidence.** A testimonial is one person's story. Evidence is research conducted and reviewed by experts; advertisers must substantiate claims with competent and reliable scientific evidence, and testimonials do not replace that.
+- **Believing a claim because it sounds scientific, with phrases like "molecule multiplicity" or "Nobel Prize winning technology."** Scientific-sounding words are not science. MedlinePlus lists meaningless scientific terms and prize references among the red flags of health fraud; ask for the actual studies instead.
+- **Assuming "natural" or "ancient" means safe or effective.** "Natural" describes where an ingredient comes from, not what it does. The NIH notes that natural does not always mean safe, and MedlinePlus lists "natural cure" and "ancient remedy" among scam phrases.
+
+## Compare / Contrast
+
+- **A nutrition claim vs. Evidence** — A claim is a sentence someone says about what a food or supplement does; evidence is the tested, reviewable information that supports or refutes it. Anyone can make a claim; evidence has to be gathered.
+- **Testimonial vs. Study** — A testimonial reports one person's experience; a study gathers data under controlled conditions and is reviewed by experts. Advertisers must substantiate health claims with studies, not stories.
+- **Structure/function claim vs. Disease claim** — A structure/function claim describes an effect on a body structure or function ("supports joint health") and needs no FDA preapproval on supplement labels; a claim to treat, cure, or prevent a disease makes the product a drug under U.S. law.
+
+## Key Takeaway
+
+A nutrition claim is a sentence, not a fact: anyone can make one, and in the U.S. structure/function claims on supplement labels need no FDA preapproval. Check who is speaking, what the evidence is, and who paid — and let red flags like miracle cures and "they don't want you to know" send you to government, university, and professional sources.
+
+## Practice Question Bank
+
+1. Priya's friend says: "This berry powder gives you more energy and sharper focus." According to this lesson's working definition, what is that sentence?
+   - A. A scientific finding that has already been proven by research
+   - B. A nutrient content claim, the only kind of claim food companies may make
+   - C. A nutrition claim: a statement about what a food or supplement does for the body
+   - D. A government warning about the product
+   - **Answer: C.** Any statement about what a food or supplement does for the body is a nutrition claim under the working definition; it may turn out to be true, false, or unproven. Option A assumes proof the claim does not carry, option B invents a rule, and option D confuses claims with official warnings.
+
+2. An ad for Golden Hour Tonic calls it "the miracle cure that erases twenty years of joint stiffness overnight" and warns that "doctors don't want you to know about it." Which response fits the red-flag checklist?
+   - A. Treat it with suspicion: "miracle cure" and "they don't want you to know" framing are classic warning signs.
+   - B. Trust it, because a cure that strong would only be advertised if it worked.
+   - C. Ignore the wording and buy it, since the ad at least mentions doctors.
+   - D. Assume the FDA must have approved the claim before it was printed.
+   - **Answer: A.** MedlinePlus lists "miracle cure" and conspiracy-style "they don't want you to know" lines among the red flags of health fraud, and notes that if it sounds too good to be true, it probably is a scam. The other options invert that logic.
+
+3. Why is a claim not the same as evidence, even when the person making it sounds confident?
+   - A. Because confident people are usually wrong about nutrition.
+   - B. Because a claim is a statement, while evidence is tested information that supports or contradicts it.
+   - C. Because only licensed professionals are allowed to make nutrition claims.
+   - D. Because claims are always false and evidence is always true.
+   - **Answer: B.** Anyone can state a claim; evidence is information gathered through research and review in ways that can be checked. OpenStax's nutrition text contrasts evidence-based practice, which relies on scientific evidence, with anecdotal claims, and MedlinePlus notes that testimonials by "real people" or actors are a fraud red flag. Options A, C, and D are not true.
+
+4. An influencer posts: "I drink SuperSeed every morning and my skin cleared up in two weeks — the supplement company funded this post so you can try it too." Which step of the claim check does the post itself help you complete?
+   - A. None — any disclosure makes the claim automatically true.
+   - B. The evidence step, because the influencer's photo is proof the product works.
+   - C. The timing step, because posting in the morning is the safest time.
+   - D. The funding question: the post discloses that the seller paid for it, a signal to check the claim more carefully.
+   - **Answer: D.** MedlinePlus's evaluation questions include who pays for the information: if a business pays, the information may favor that business and its products, and ads should be marked as ads. The disclosed sponsorship answers the funding question; it does not prove the claim, and the photo is a testimonial, not evidence. Options A, B, and C get those points backwards.
+
+5. A supplement label says "supports joint health" and carries a disclaimer that the FDA has not evaluated the statement. A different product's ad says it "treats arthritis pain." How do the two differ under U.S. rules?
+   - A. The first is a structure/function claim, which needs no FDA preapproval on a supplement label; the second claims to treat a disease, which makes it a drug claim.
+   - B. Both need FDA approval before they can be sold, so neither can legally appear.
+   - C. The first is illegal because it mentions a body part, while the second is legal because it names a disease.
+   - D. They are identical, since the disclaimer turns every supplement claim into a drug claim.
+   - **Answer: A.** The FDA describes structure/function claims as statements about effects on a structure or function of the body; they are not approved or pre-evaluated by the FDA and must carry the disclaimer. A product represented as treating or curing a specific disease meets the definition of a drug under U.S. law. Options B, C, and D reverse the rules.
+
+## Sources
+
+- FDA. Questions and Answers on Dietary Supplements. https://www.fda.gov/food/information-consumers-using-dietary-supplements/questions-and-answers-dietary-supplements
+- FDA. FDA 101: Dietary Supplements. https://www.fda.gov/consumers/consumer-updates/fda-101-dietary-supplements
+- MedlinePlus (National Library of Medicine). Health Fraud. https://medlineplus.gov/healthfraud.html
+- MedlinePlus (National Library of Medicine). Evaluating Health Information. https://medlineplus.gov/evaluatinghealthinformation.html
+- NIH Office of Dietary Supplements. Dietary Supplements: What You Need to Know (Fact Sheet for Consumers). https://ods.od.nih.gov/factsheets/WYNTK-Consumer/
+- FTC. Health Products Compliance Guidance. https://www.ftc.gov/business-guidance/resources/health-products-compliance-guidance
+- OpenStax (Rice University). Nutrition (Nutrition for Nurses, 2e), Section 1.5: Evidence-Based Practice and Nutrition. https://openstax.org/books/nutrition/pages/1-5-evidence-based-practice-and-nutrition
+- Wikipedia. Extraordinary claims require extraordinary evidence. https://en.wikipedia.org/wiki/Extraordinary_claims_require_extraordinary_evidence
+
+## Related Topics
+
+- nutrition:foundations:supplements
+- nutrition:foundations:nutrition-labels
+- nutrition:foundations:dietary-patterns
+- nutrition:foundations:what-nutrition-science-studies
+
+## Editorial Metadata
+
+- Topic ID: nutrition:foundations:evaluating-nutrition-claims
+- Editorial status: READY_TO_PUBLISH
+- Research status: source-verified (researched 2026-08-22)
+- Rights status: U.S. government works (FDA, FTC, MedlinePlus, NIH ODS) used attributed with facts synthesized; OpenStax Nutrition 2e and Wikipedia used reference-only; no source prose adapted
+- All examples (Golden Hour Tonic, Featherlight Drops, SuperSeed, and the fictional ads) are original and fictional.
