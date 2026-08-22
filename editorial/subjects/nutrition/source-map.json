@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "subjectSlug": "nutrition",
+  "note": "Discovery leads for nutrition topic workers (phase 4). LITERACY level: teach what each concept IS and WHY it matters, with original examples. Health-science content — accuracy is paramount: use Tier A government/authoritative sources for every claim. Biology/chemistry depth belongs to other subjects (reference only).",
+  "reviewProfile": ["health-science", "evidence-first"],
+  "tierA": [
+    { "provider": "USDA Food and Nutrition Information Center / MyPlate", "url": "https://www.myplate.gov/", "useFor": "dietary guidance, portion sizes, food groups (canonical U.S. guidance)" },
+    { "provider": "USDA FoodData Central", "url": "https://fdc.nal.usda.gov/", "useFor": "nutrient data (energy, macros, micronutrients)" },
+    { "provider": "FDA (food labeling)", "url": "https://www.fda.gov/food/nutrition-food-labeling-and-dietary-supplements", "useFor": "Nutrition Facts label rules, Daily Values, supplement labeling" },
+    { "provider": "NIH Office of Dietary Supplements", "url": "https://ods.od.nih.gov/", "useFor": "vitamins/minerals/supplements factsheets (canonical)" },
+    { "provider": "National Library of Medicine / MedlinePlus", "url": "https://medlineplus.gov/", "useFor": "digestion, metabolism, hydration, food safety consumer facts" },
+    { "provider": "CDC", "url": "https://www.cdc.gov/foodsafety/", "useFor": "food safety, foodborne illness" },
+    { "provider": "OpenStax Nutrition (2e)", "url": "https://openstax.org/details/books/nutrition", "useFor": "THE backbone — ch. 1 (science of nutrition), 3 (digestion/absorption), 4 (carbohydrates), 5 (lipids), 6 (protein), 8 (energy balance), 9 (vitamins), 10 (minerals), 11 (water/electrolytes), 14 (lifespan). openstax.org blocks curl — read sections via Wayback captures of canonical URLs. REFERENCE_ONLY (no LLM ingestion)" }
+  ],
+  "tierB": [
+    { "provider": "Academy of Nutrition and Dietetics (eatright.org)", "url": "https://www.eatright.org/", "useFor": "nutrition practice explainers (Tier A/B)" },
+    { "provider": "Harvard T.H. Chan School of Public Health Nutrition Source", "url": "https://www.hsph.harvard.edu/nutritionsource/", "useFor": "carbohydrates/fats/protein evidence reviews (Tier A/B)" },
+    { "provider": "World Health Organization", "url": "https://www.who.int/", "useFor": "global nutrition facts (sodium, sugar, food safety)" }
+  ],
+  "cautions": [
+    "ACCURACY: every numeric claim (calories per gram: 4/4/9, DRIs, DV percentages, fiber targets) must come from a cited source — never from memory. Dated figures carry their vintage.",
+    "NO MEDICAL ADVICE: no diagnosis, no treatment, no supplementation recommendations for the reader. Supplements lesson: what supplements are, how FDA regulates them (DSHEA, U.S. context), why labels differ from drugs — factual only.",
+    "NO DEMONIZING: no food shaming, no 'bad foods' framing; moderation language; sugars/fats taught factually.",
+    "FOOD SAFETY: CDC facts (temperatures, cross-contamination, at-risk groups) — factual, no scare content.",
+    "CONTROVERSIAL CLAIMS (fad diets, detox, superfoods): evaluated critically with evidence; evaluating-nutrition-claims owns the critical-thinking frame.",
+    "Biology (digestion, metabolism, absorption) is mechanistic at literacy level; cell biology depth belongs to other subjects (reference only).",
+    "Distribute question answer keys EVENLY across A/B/C/D (≥1 C, ≥1 D per topic; max 3 of 5 per slot). Verify keys from the file yourself. BANNED: 'Which statement best defines X used in this lesson?' stems — write scenario questions."
+  ]
+}
