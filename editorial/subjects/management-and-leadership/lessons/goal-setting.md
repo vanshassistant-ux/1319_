@@ -83,38 +83,38 @@ A goal is a commitment with a target, a number, and a date — not a wish. Clear
 ## Practice Question Bank
 
 1. According to the goal-setting research presented in this lesson, which three mechanisms explain why clear goals improve performance?
-   - A) Focus, effort, and persistence
-   - B) Speed, accuracy, and cost
-   - C) Ranking, rewards, and recognition
-   - D) Training, tools, and teamwork
+   - A. Focus, effort, and persistence
+   - B. Speed, accuracy, and cost
+   - C. Ranking, rewards, and recognition
+   - D. Training, tools, and teamwork
    - **Answer: A.** Goal-setting theory holds that a clear target directs attention (focus), pulls more effort out of people, and keeps them working over time (persistence). The other trios name resources, outcomes, or incentives, not the behavioral mechanisms the theory identifies.
 
 2. A campus coffee cart sets this goal: "Sell 20 percent more cold drinks than last August by August 31." The deadline at the end of the sentence satisfies which SMART criterion?
-   - A) Specific
-   - B) Measurable
-   - C) Achievable
-   - D) Time-bound
+   - A. Specific
+   - B. Measurable
+   - C. Achievable
+   - D. Time-bound
    - **Answer: D.** The deadline (August 31) makes the goal time-bound. The "20 percent" figure is the measurable part, "cold drinks" is the specific part, and achievability is a judgment about reach, not a date.
 
 3. A warehouse team's goal is "improve safety." The manager rewrites it: "Cut recordable incidents from 12 to 6 per year by December 31, using the new forklift training." Which SMART criteria did the rewrite add?
-   - A) Achievable and relevant only
-   - B) Time-bound and relevant only
-   - C) Specific, measurable, and time-bound
-   - D) Specific and achievable only
+   - A. Achievable and relevant only
+   - B. Time-bound and relevant only
+   - C. Specific, measurable, and time-bound
+   - D. Specific and achievable only
    - **Answer: C.** The rewrite names the exact outcome (recordable incidents), attaches a count (12 to 6), and sets a date (December 31) — that is specific, measurable, and time-bound. Relevance and achievability are plausible qualities, but they are not the criteria the numbers and date directly supply.
 
 4. A regional manager proposes doubling same-store sales in a single quarter — a level the chain has never approached. Based on the goal-setting cautions in this lesson, what is the honest concern?
-   - A) The goal is too specific and will narrow the team's focus
-   - B) A target that feels impossible can lower commitment and push people toward cutting corners
-   - C) The goal has no deadline, so urgency will fade
-   - D) Measurable goals are known to reduce motivation in retail
+   - A. The goal is too specific and will narrow the team's focus
+   - B. A target that feels impossible can lower commitment and push people toward cutting corners
+   - C. The goal has no deadline, so urgency will fade
+   - D. Measurable goals are known to reduce motivation in retail
    - **Answer: B.** This is a stretch goal pushed past credibility: the sources record that impossible goals cause stress and can be misused, and commitment drops when people do not accept the target. The goal is not too specific, it has a deadline, and measurable goals generally raise motivation rather than lower it.
 
 5. Two analysts set the same goal: finish the quarterly audit report by the 15th. Maya writes it in her notes and moves on; Devon tells the team, breaks the work into weekly milestones, and reviews progress every Friday. Which concept from this lesson best explains Devon's higher chance of success?
-   - A) Goal commitment
-   - B) Official goals
-   - C) Operational goals
-   - D) SMART specificity
+   - A. Goal commitment
+   - B. Official goals
+   - C. Operational goals
+   - D. SMART specificity
    - **Answer: A.** Devon has committed: the goal is accepted, visible to others, and checked on a schedule, which goal-setting theory ties to stronger dedication. Both goals were equally specific and both are operational-style targets, so specificity or goal type cannot explain the difference.
 
 ## Sources

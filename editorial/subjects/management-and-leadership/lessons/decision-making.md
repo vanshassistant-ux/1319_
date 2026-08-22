@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Decision making is choosing among options: the working definition in this lesson comes from OpenStax's Principles of Management, which calls it the action or process of thinking through possible options and selecting one. Managers face routine decisions that can run on rules and novel decisions that need a full process — define the problem, gather information, weigh options, choose, act, and review. Because time and information are limited, a good process raises the odds but never guarantees the outcome.
+Decision making is choosing among options: this lesson’s working definition comes from OpenStax's Principles of Management, which calls it the action or process of thinking through possible options and selecting one. Managers face routine decisions that can run on rules and novel decisions that need a full process — define the problem, gather information, weigh options, choose, act, and review. Because time and information are limited, a good process raises the odds but never guarantees the outcome.
 
 ## Why This Matters
 
@@ -21,7 +21,7 @@ Every day, managers choose: whom to hire, what to stock, where to spend. Those s
 
 ### What decision making is: choosing among options
 
-Decision making is choosing among options. The working definition in this lesson comes from OpenStax's Principles of Management: decision making is the action or process of thinking through possible options and selecting one. That means two things: options exist, and someone selects one. Managers at every level decide — a supervisor schedules workers, a top team chooses whether to pursue a new product line. OpenStax notes that these choices affect stakeholders, everyone touched by the organization, from customers to employees to owners, and that a good decision can help a business thrive while a poor one can push it toward failure. A management decision is not like a multiple-choice test: sometimes several options look good; sometimes all of them look bad and the task is to minimize harm.
+Decision making is choosing among options. This lesson's working definition comes from OpenStax's Principles of Management: decision making is the action or process of thinking through possible options and selecting one. That means two things: options exist, and someone selects one. Managers at every level decide — a supervisor schedules workers, a top team chooses whether to pursue a new product line. OpenStax notes that these choices affect stakeholders, everyone touched by the organization, from customers to employees to owners, and that a good decision can help a business thrive while a poor one can push it toward failure. A management decision is not like a multiple-choice test: sometimes several options look good; sometimes all of them look bad and the task is to minimize harm.
 ### The rational process: six steps
 
 A rational process walks a decision through six steps. Define the problem: know what you are really deciding — weekend attendance at a neighborhood cinema has slid for three months, not just one bad week. Gather information: collect what is relevant — ticket sales by showtime, a survey of regulars, the projectionist's experience at her previous theater. Weigh the options: compare alternatives on cost, effort, and likely payoff — late shows, earlier matinees, and themed double features. Choose: commit to one option — one 9:30 p.m. showing on Fridays and Saturdays. Act: carry the choice into the world — update the schedule, hire two part-time staff, and post the new times. Review: check the result and adjust — after six weeks, Fridays draw well and Saturdays barely break even, so Saturdays are dropped. OpenStax's version runs the same spine: recognize that a decision is needed, generate multiple alternatives, analyze them, select one, implement it, and evaluate its effectiveness. Real managers rarely walk the steps in a clean line — new information sends them back — but the process is an ideal that raises the odds of a good outcome.
@@ -40,7 +40,7 @@ Three traps deserve a name. Anchoring: the first number or option you encounter 
 
 ## Key Vocabulary
 
-- **Decision making:** Choosing among options: the action or process of thinking through possible options and selecting one; the working definition in this lesson comes from OpenStax's Principles of Management.
+- **Decision making:** Choosing among options: the action or process of thinking through possible options and selecting one; this lesson’s working definition comes from OpenStax's Principles of Management.
 - **Stakeholder:** Anyone affected by an organization's decisions, such as customers, employees, suppliers, or owners.
 - **Programmed decision:** A decision repeated over time that an existing set of rules can guide, because its criteria are known or can be estimated.
 - **Nonprogrammed decision:** A novel, unstructured decision whose criteria are not well defined and whose information is often ambiguous or incomplete.

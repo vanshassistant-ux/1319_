@@ -21,7 +21,7 @@ How people behave at work is not a side detail; it is how work actually gets don
 
 ### What organizational behavior is: the working definition
 
-Organizational behavior — OB for short — is the study of how people act within organizations. The working definition in this lesson comes from Investopedia, which describes organizational behavior as the study of how people interact in a group, and calls it the academic study of human behavior in group settings. Two ideas sit inside that definition. First, OB studies real behavior — what people actually do at work, not what the org chart says they should do. Second, it studies interaction: people acting alone, and people acting together. Investopedia notes the field is studied in business, psychology, and sociology, and that its academic programs draw on anthropology, ethnography, and leadership studies. Because it sits at that crossing, OB borrows questions from each discipline: how individuals think and choose, how people influence one another, and how organizations shape the people inside them.
+Organizational behavior — OB for short — is the study of how people act within organizations. The working definition applied in this lesson comes from Investopedia, which describes organizational behavior as the study of how people interact in a group, and calls it the academic study of human behavior in group settings. Two ideas sit inside that definition. First, OB studies real behavior — what people actually do at work, not what the org chart says they should do. Second, it studies interaction: people acting alone, and people acting together. Investopedia notes the field is studied in business, psychology, and sociology, and that its academic programs draw on anthropology, ethnography, and leadership studies. Because it sits at that crossing, OB borrows questions from each discipline: how individuals think and choose, how people influence one another, and how organizations shape the people inside them.
 
 ### The three levels: individual, group, and organization
 
@@ -88,7 +88,7 @@ Organizational behavior is the human side of the org chart: the study of how peo
 
 ## Practice Question Bank
 
-1. **According to the working definition in this lesson, what does organizational behavior study?**
+1. **What does the definition used in this lesson say organizational behavior studies?**
    - How people interact and act within an organization
    - How an organization manages its money and budgets
    - How products and services reach customers

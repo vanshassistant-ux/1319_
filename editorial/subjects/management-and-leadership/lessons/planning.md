@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Planning is the management function of deciding the future in advance: setting objectives and deciding the course of action to achieve them. The working definition in this lesson comes from OpenStax's Principles of Management: planning is the process by which managers establish goals and specify how these goals are to be attained. Organizations plan for direction, coordination, and efficient use of resources. The main plan types are strategic, tactical, and operational. Because the future is uncertain, a plan is a hypothesis — reviewed and revised as conditions change.
+Planning is the management function of deciding the future in advance: setting objectives and deciding the course of action to achieve them. The working definition this lesson adopts comes from OpenStax's Principles of Management: planning is the process by which managers establish goals and specify how these goals are to be attained. Organizations plan for direction, coordination, and efficient use of resources. The main plan types are strategic, tactical, and operational. Because the future is uncertain, a plan is a hypothesis — reviewed and revised as conditions change.
 
 ## Why This Matters
 
@@ -21,7 +21,7 @@ Without a plan, effort scatters. A team that skips planning still makes decision
 
 ### What planning is: the working definition
 
-Planning is the management function of deciding the future in advance. The working definition in this lesson comes from OpenStax's Principles of Management: planning is the process by which managers establish goals and specify how these goals are to be attained. Notice that the definition has two parts that mirror each other. Establish goals: decide what the organization is trying to reach — the end state, which OpenStax calls outcome or goal statements. Specify how these goals are to be attained: decide the means — who does what, when, and how — which OpenStax calls action statements. A plan that states only a destination is incomplete, and a plan full of activity but no destination is aimless. In the classic four management functions — planning, organizing, leading, and controlling — planning comes first, because the other functions organize people, lead them, and check results against the plan's standards. Organizing, leading, and controlling each get their own topics; this lesson stays with planning.
+Planning is the management function of deciding the future in advance. The working definition this lesson adopts comes from OpenStax's Principles of Management: planning is the process by which managers establish goals and specify how these goals are to be attained. Notice that the definition has two parts that mirror each other. Establish goals: decide what the organization is trying to reach — the end state, which OpenStax calls outcome or goal statements. Specify how these goals are to be attained: decide the means — who does what, when, and how — which OpenStax calls action statements. A plan that states only a destination is incomplete, and a plan full of activity but no destination is aimless. In the classic four management functions — planning, organizing, leading, and controlling — planning comes first, because the other functions organize people, lead them, and check results against the plan's standards. Organizing, leading, and controlling each get their own topics; this lesson stays with planning.
 
 ### Why plan: direction, coordination, and resource use
 
@@ -41,7 +41,7 @@ Planning rests on premises — assumptions about what is likely to happen. OpenS
 
 ## Key Vocabulary
 
-- **Planning:** The management function of setting objectives and deciding the course of action to achieve them; the working definition in this lesson comes from OpenStax's Principles of Management.
+- **Planning:** The management function of setting objectives and deciding the course of action to achieve them; the definition used in this lesson comes from OpenStax's Principles of Management.
 - **Strategic plan:** A long-term plan that positions the whole organization in its environment and is guided by the mission and vision.
 - **Tactical plan:** A division-level or unit-level plan designed to help the organization accomplish its strategic plan.
 - **Operational plan:** A plan that directs the day-to-day activities of the organization's technical core, such as schedules and checklists.
@@ -84,7 +84,7 @@ Planning is deciding the future in advance: set objectives, choose the course of
 
 ## Practice Question Bank
 
-1. **According to the working definition in this lesson, what is planning?**
+1. **What is planning, according to the definition used in this lesson?**
    - Setting objectives and deciding the course of action to achieve them
    - Hiring the people needed to carry out an organization's work
    - Measuring results after the work is finished and correcting problems

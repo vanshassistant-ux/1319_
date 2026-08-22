@@ -95,7 +95,7 @@ Ethics is the principles of right and wrong applied to business decisions — an
 - C. Supply-chain forecasting
 - D. Performance reviews
 
-**Correct answer: A.** The working definition in this lesson, drawn from OpenStax's Principles of Management, is that ethics involves our moral principles about right and wrong and that business ethics applies those values to how business is conducted. Audits, forecasting, and reviews are management activities, but they are not the name for applying right-and-wrong principles to decisions.
+**Correct answer: A.** The definition used in this lesson, drawn from OpenStax's Principles of Management, is that ethics involves our moral principles about right and wrong and that business ethics applies those values to how business is conducted. Audits, forecasting, and reviews are management activities, but they are not the name for applying right-and-wrong principles to decisions.
 
 ### Question 2
 

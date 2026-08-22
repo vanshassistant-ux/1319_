@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Leading is the people function of management: influencing and motivating people to work toward the organization's goals. The working definition is attributed to OpenStax, which describes leadership as a social influence relationship between people who depend on one another to reach shared goals. Leading is not managing: managing coordinates resources and processes, while leading inspires people. Leaders set direction, motivate, communicate, and develop people. Leading draws on position and on personal influence, and it depends on followers as much as on the leader. Styles differ by situation.
+Leading is the people function of management: influencing and motivating people to work toward the organization's goals. The working definition is attributed to OpenStax, which describes leadership as a social influence relationship among people who depend on each other to reach shared goals. Leading is not managing: managing coordinates resources and processes, while leading inspires people. Leaders set direction, motivate, communicate, and develop people. Leading draws on position and on personal influence, and it depends on followers as much as on the leader. Styles differ by situation.
 
 ## Why This Matters
 
@@ -37,7 +37,7 @@ If leading works through influence, where does the influence come from? OpenStax
 
 ### Leading is a relationship: the follower side
 
-OpenStax describes leadership as a process — a complex and dynamic exchange relationship built over time between leader and follower. The components of that process are the leader, the followers, the context, the process itself, and the outcomes. Crucially, the influence runs both ways: the leader influences the followers, and the followers influence the leader; the situation shapes both. Follower behavior plays a major role in determining what leaders do. OpenStax is blunt about the consequence: leadership per se revolves around the followers' acceptance or rejection of the leader. A team that quietly ignores instructions has, in effect, declined the leadership on offer. That is the honest note this lesson wants to leave: leading is a relationship, not a one-way act.
+OpenStax describes leadership as a process — a complex and working relationship that develops over time between leader and follower. The components of that process are the leader, the followers, the context, the process itself, and the outcomes. Crucially, the influence runs both ways: the leader influences the followers, and the followers influence the leader; the situation shapes both. Follower behavior plays a major role in determining what leaders do. OpenStax is blunt about the consequence: leadership per se revolves around the followers' acceptance or rejection of the leader. A team that quietly ignores instructions has, in effect, declined the leadership on offer. That is the honest note this lesson wants to leave: leading is a relationship, not a one-way act.
 
 ### A preview: styles differ by situation and people
 
@@ -99,14 +99,14 @@ Leading is the people function of management: it works through influence rather 
 
 ### Question 1
 
-The working definition used in this lesson, drawn from OpenStax, describes leadership as what?
+How does this lesson’s OpenStax-drawn definition describe leadership?
 
-- A social influence relationship between people who depend on one another to reach shared goals
+- A social influence relationship among people who depend on each other to reach shared goals
 - The authority to hire, fire, and assign work that comes with a job title
 - A personality trait that some people are born with
 - The process of budgeting, scheduling, and measuring output
 
-**Answer:** A social influence relationship between people who depend on one another to reach shared goals
+**Answer:** A social influence relationship among people who depend on each other to reach shared goals
 
 **Why:** OpenStax's Principles of Management defines leadership as a social (interpersonal) influence relationship between people who depend on each other to attain mutual goals. Option B describes position-based authority, not the definition; C mistakes leadership for a fixed trait; D describes managing, which coordinates resources and processes.
 
@@ -174,7 +174,7 @@ Two people co-lead a fundraising committee. One holds the official chair title; 
 - openstax-principles-management-13-2-the-leadership-process
 - openstax-principles-management-13-8-transformational-visionary-and-charismatic-leadership
 - openstax-intro-business-6-1-role-of-management
-- openstax-intro-business-6-4-leading-guiding-motivating-others
+- openstax-intro-business-6-4-leading-guiding-and-motivating-others
 - cfi-leadership-styles
 
 ## Related Topics

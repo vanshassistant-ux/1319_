@@ -25,7 +25,7 @@ OpenStax's Introduction to Business defines management as the process of guiding
 
 ### What leadership is
 
-This lesson's leadership working definition comes from OpenStax's Principles of Management: leadership is a social (interpersonal) influence relationship between two or more persons who depend on each other to attain certain mutual goals in a group situation. Introduction to Business puts the same idea in plainer words: leadership is the process of guiding and motivating others toward the achievement of organizational goals. This lesson's working definition combines them: leadership is influencing and inspiring others toward a goal. Notice the key word: influence. A leader can be anyone in an organization, regardless of position, able to influence others to act or follow, often by their own choice. That last phrase matters: followers of a leader comply because they want to, not because they have to. Leadership is also a process — a dynamic exchange relationship built over time between leader and follower, in which the follower matters as much as the leader. A line cook who rallies the crew before a dinner rush, suggests a better ticket order, and gets everyone to try it is leading — with no title at all.
+This lesson's leadership working definition comes from OpenStax's Principles of Management: leadership is a interpersonal influence relationship among people who rely on each other to reach shared goals. Introduction to Business puts the same idea in plainer words: leadership is the process of guiding and motivating others toward the achievement of organizational goals. This lesson's working definition combines them: leadership is influencing and inspiring others toward a goal. Notice the key word: influence. A leader can be anyone in an organization, regardless of position, able to influence others to act or follow, often by their own choice. That last phrase matters: followers of a leader comply because they want to, not because they have to. Leadership is also a process — a dynamic exchange relationship built over time between leader and follower, in which the follower matters as much as the leader. A line cook who rallies the crew before a dinner rush, suggests a better ticket order, and gets everyone to try it is leading — with no title at all.
 
 ### The contrast: plan, organize, control versus vision, inspire, influence
 
@@ -46,7 +46,7 @@ Organizations need both roles working. Introduction to Business states that orga
 ## Key Vocabulary
 
 - **Management** — Coordinating people and resources so an organization reaches its goals; in this lesson's working definition, getting work done through others, efficiently.
-- **Leadership** — Influencing and inspiring others toward a goal; defined by OpenStax as a social influence relationship between people who depend on each other to attain mutual goals.
+- **Leadership** — Influencing and inspiring others toward a goal; defined by OpenStax as a social influence relationship among people who rely on one another to reach shared goals.
 - **Manager** — The person responsible for carrying out the management process — planning, organizing, leading, and controlling — usually in a formal position.
 - **Leader** — Anyone, with or without a title, who influences others to act or follow, often by their own choice.
 - **Efficiency** — Using the least possible amount of resources to get work done.

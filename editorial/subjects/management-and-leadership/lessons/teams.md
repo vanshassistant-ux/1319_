@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-More than a group, a team is a set of people with complementary skills who work toward a shared goal and hold themselves mutually accountable — the working definition in this lesson follows Katzenbach and Smith, as presented in OpenStax's Principles of Management. Organizations use teams because complex work needs many hands and minds. The main team types are functional, cross-functional, and self-managed. Teams work best with a clear goal, clear roles, trust, and communication — but building one takes coordination time, and conflict happens.
+More than a group, a team is a set of people with complementary skills who work toward a shared goal and hold themselves mutually accountable — the definition this lesson follows Katzenbach and Smith, as presented in OpenStax's Principles of Management. Organizations use teams because complex work needs many hands and minds. The main team types are functional, cross-functional, and self-managed. Teams work best with a clear goal, clear roles, trust, and communication — but building one takes coordination time, and conflict happens.
 
 ## Why This Matters
 
@@ -40,7 +40,7 @@ The research OpenStax reports points to four conditions that make teams work, ea
 
 ## Key Vocabulary
 
-- **Team:** A group of people with complementary skills who work toward a shared goal and hold themselves mutually accountable; the working definition in this lesson follows Katzenbach and Smith as presented by OpenStax.
+- **Team:** A group of people with complementary skills who work toward a shared goal and hold themselves mutually accountable; the definition this lesson follows Katzenbach and Smith as presented by OpenStax.
 - **Group:** A collection of individuals who share a setting but do not share a goal or mutual accountability; the label applies to any gathering, team or not.
 - **Mutual accountability:** The condition in which each member answers for the team's collective results, not only for their own piece of the work.
 - **Functional team:** A team whose members all come from the same department or function and do that department's work together.
@@ -81,7 +81,7 @@ A team is more than a collection of people: it is a group with complementary ski
 
 ## Practice Question Bank
 
-1. **According to the working definition in this lesson, what makes a group of people a team?**
+1. **What makes a group of people a team, per the definition used in this lesson?**
    - Complementary skills, a shared goal, and mutual accountability
    - Similar backgrounds, a shared office, and the same manager
    - A large budget, a clear hierarchy, and formal titles

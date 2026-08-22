@@ -45,7 +45,7 @@ The honest framing is that most leaders mix styles. CFI is explicit: no one lead
 
 ## Key Vocabulary
 
-- **leadership style:** The recurring pattern of behavior a leader uses with followers to carry out plans and accomplish objectives; the working definition in this lesson comes from Corporate Finance Institute.
+- **leadership style:** The recurring pattern of behavior a leader uses with followers to carry out plans and accomplish objectives; the definition used in this lesson comes from Corporate Finance Institute.
 - **autocratic leadership:** A style in which the leader makes the decisions and expects the group to carry them out with little or no input from members.
 - **democratic leadership:** A style in which the leader consults the group, weighs members' ideas and input, and usually keeps the final responsibility for the decision.
 - **laissez-faire leadership:** A hands-off style in which the leader steps back and lets the group plan, organize, decide, and complete the work with the tools and trust they need.

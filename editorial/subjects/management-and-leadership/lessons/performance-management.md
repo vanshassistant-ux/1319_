@@ -21,7 +21,7 @@ Almost every organization steers people through some version of performance mana
 
 ### Performance management: the ongoing process
 
-Performance management is the ongoing process of setting expectations, measuring results, and developing people. The working definition in this lesson comes from two sources. The U.S. Office of Personnel Management (OPM), which oversees the federal workforce, describes performance management as the systematic process by which an agency involves its employees in improving organizational effectiveness and accomplishing the agency's mission and goals. Investopedia, the business reference, calls it a tool that helps managers monitor and evaluate employees' work so people can perform to the best of their abilities in line with the organization's goals. Put together: expectations are set, results are measured, and people are developed — continuously, not once a year.
+Performance management is the ongoing process of setting expectations, measuring results, and developing people. The working definition followed in this lesson comes from two sources. The U.S. Office of Personnel Management (OPM), which oversees the federal workforce, describes performance management as the systematic process by which an agency involves its employees in improving organizational effectiveness and accomplishing the agency's mission and goals. Investopedia, the business reference, calls it a tool that helps managers monitor and evaluate employees' work so people can perform to the best of their abilities in line with the organization's goals. Put together: expectations are set, results are measured, and people are developed — continuously, not once a year.
 
 ### The cycle: set goals, monitor, review, develop
 

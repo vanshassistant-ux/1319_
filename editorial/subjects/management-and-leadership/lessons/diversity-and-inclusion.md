@@ -115,6 +115,25 @@ Here is the reality check that holds the lesson together. Diversity is the mix �
 
 **Answer: A.** This lesson names three levers for building inclusion: listening, equitable practices, and accountability. A statement without follow-through changes nothing — which is why the other options do not build inclusion. (analysis)
 
+## Common Mistakes
+
+- **Treating diversity and inclusion as the same thing.** — Diversity is the mix of identities and backgrounds on the team; inclusion is whether that mix actually participates. A team can be diverse and still exclude — that is the honest gap.
+- **Thinking that hiring a diverse team finishes the job.** — Hiring only creates the mix. Without inclusive practices — listening, equitable processes, accountability — people stay silent or leave, and the mix never pays off.
+- **Treating the legal floor as the whole goal.** — Anti-discrimination law sets a minimum: it protects defined groups from defined harms. Inclusion is a broader, ongoing practice that goes beyond what the law requires. (General information, not legal advice.)
+- **Assuming bias means deliberate prejudice only.** — Unconscious bias is automatic — people gravitate to those who think, act, and look like them without realizing it. The usual remedy is structured, fair practices, not blame.
+
+## Key Takeaway
+
+Diversity is the mix of identities, backgrounds, and perspectives employees bring; inclusion is making that mix actually work — through listening, equitable practices, and accountability. The law sets the floor; inclusion is the work.
+
+## Related Topics
+
+- management-and-leadership:foundations:teams
+- management-and-leadership:foundations:communication
+- management-and-leadership:foundations:organizational-culture
+- management-and-leadership:foundations:ethics
+- management-and-leadership:foundations:employee-engagement
+
 ## Sources
 
 - OpenStax, Principles of Management, Section 12.1: An Introduction to Workplace Diversity — https://openstax.org/books/principles-management/pages/12-1-an-introduction-to-workplace-diversity

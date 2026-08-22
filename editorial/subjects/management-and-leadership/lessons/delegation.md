@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Delegation is handing work down with trust: assigning responsibility and authority to another person to carry out a task. The working definition in this lesson comes from OpenStax's Introduction to Business — managers delegate, or assign, some degree of authority and responsibility to others below them in the chain of command. Managers delegate to scale the work, develop people, and keep focus. Delegate tasks others can do, with the right support. Responsibility is the task; authority is the power to complete it. Final accountability never moves.
+Delegation is handing work down with trust: assigning responsibility and authority to another person to carry out a task. The working definition adopted in this lesson comes from OpenStax's Introduction to Business — managers delegate, or assign, some degree of authority and responsibility to others below them in the chain of command. Managers delegate to scale the work, develop people, and keep focus. Delegate tasks others can do, with the right support. Responsibility is the task; authority is the power to complete it. Final accountability never moves.
 
 ## Why This Matters
 
@@ -21,7 +21,7 @@ A manager who does everything personally becomes the bottleneck: work queues beh
 
 ### What delegation is: the working definition
 
-Delegation is handing work down with trust: assigning responsibility and authority to another person to carry out a task. The working definition in this lesson comes from OpenStax's Introduction to Business, which explains that most managers delegate, or assign, some degree of authority and responsibility to others below them in the chain of command. Corporate Finance Institute (CFI) describes the same move as assigning tasks, duties, and decision-making authority to others in an organizational team. Two details in that definition do the real work. First, delegation transfers the task — the specific work to be done. Second, it transfers the authority to complete that work — the power to make the decisions the task requires. What never transfers is final accountability, which we will come back to. Delegation is a routine part of management, not an occasional favor: managers cannot personally perform every task their organization depends on, so they distribute work through the people they lead.
+Delegation is handing work down with trust: assigning responsibility and authority to another person to carry out a task. The working definition adopted in this lesson comes from OpenStax's Introduction to Business, which explains that most managers delegate, or assign, some degree of authority and responsibility to others below them in the chain of command. Corporate Finance Institute (CFI) describes the same move as assigning tasks, duties, and decision-making authority to others in an organizational team. Two details in that definition do the real work. First, delegation transfers the task — the specific work to be done. Second, it transfers the authority to complete that work — the power to make the decisions the task requires. What never transfers is final accountability, which we will come back to. Delegation is a routine part of management, not an occasional favor: managers cannot personally perform every task their organization depends on, so they distribute work through the people they lead.
 
 ### Why delegate: scale, development, and focus
 
@@ -41,7 +41,7 @@ Delegation runs in four steps, one line each. Choose the person: pick someone wh
 
 ## Key Vocabulary
 
-- **Delegation:** Assigning responsibility and authority to another person to carry out work; the working definition in this lesson comes from OpenStax's Introduction to Business.
+- **Delegation:** Assigning responsibility and authority to another person to carry out work; the working definition in this lesson draws from OpenStax's Introduction to Business.
 - **Responsibility:** The task or duty assigned to a person; in delegation, the work that moves down to the person who will carry it out.
 - **Authority:** The legitimate power to make decisions and request action; in delegation, the power to complete the assigned task.
 - **Accountability:** Responsibility for outcomes; in delegation, it stays with the delegator even after the task and the authority move down.
@@ -83,7 +83,7 @@ Delegation hands the task and the authority to another person but keeps the acco
 
 ## Practice Question Bank
 
-1. **According to the working definition in this lesson, what happens when a manager delegates?**
+1. **What happens, per this lesson’s working definition, when a manager delegates?**
    - A. The manager assigns some degree of authority and responsibility to another person to carry out the work
    - B. The manager transfers all accountability for the outcome to the other person
    - C. The manager permanently reassigns one of the employee's own duties

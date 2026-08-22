@@ -2,7 +2,7 @@
 
 ## In 30 Seconds
 
-Communication is the transfer of information and meaning between people: one person sends, another receives and interprets. The working definition in this lesson draws on CFI and the Saylor textbook. Communication runs on a message model with six parts: sender, message, channel, receiver, feedback, and noise. It travels through words and through tone and body language, along official routes or the grapevine — and the meaning that counts is what the receiver takes away.
+Communication is the transfer of information and meaning between people: one person sends, another receives and interprets. The definition used in this lesson draws on CFI and the Saylor textbook. Communication runs on a message model with six parts: sender, message, channel, receiver, feedback, and noise. It travels through words and through tone and body language, along official routes or the grapevine — and the meaning that counts is what the receiver takes away.
 
 ## Why This Matters
 
@@ -21,7 +21,7 @@ Every organization runs on messages: instructions, updates, decisions, complaint
 
 ### A working definition, attributed
 
-Communication is the transfer of information and meaning between people. The working definition in this lesson is built from two sources: CFI defines communication as transferring information to produce greater understanding, and the Saylor Foundation's Business Communication for Success defines it as the process of understanding and sharing meaning. Put together: someone sends, someone receives, and both walk away sharing an understanding — or they think they do. Two words carry the weight. Information is the content: the facts, instructions, and updates being passed. Meaning is what the content is supposed to do: warn, reassure, instruct, persuade, connect. Communication only counts when it involves people: a filing system moves information but does not communicate — no meaning is exchanged between minds.
+Communication is the transfer of information and meaning between people. The definition used in this lesson is built from two sources: CFI defines communication as transferring information to produce greater understanding, and the Saylor Foundation's Business Communication for Success defines it as the process of understanding and sharing meaning. Put together: someone sends, someone receives, and both walk away sharing an understanding — or they think they do. Two words carry the weight. Information is the content: the facts, instructions, and updates being passed. Meaning is what the content is supposed to do: warn, reassure, instruct, persuade, connect. Communication only counts when it involves people: a filing system moves information but does not communicate — no meaning is exchanged between minds.
 
 ### The message model: six parts, one job
 
