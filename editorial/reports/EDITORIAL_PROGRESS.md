@@ -1,6 +1,6 @@
 # ELIEXPLAINS GLOBAL EDITORIAL PROGRESS
 
-Generated: 2026-08-25T02:26:14.588Z
+Generated: 2026-08-25T02:30:43.145Z
 Counts are computed from the phase content stores by `bun run editorial:progress`.
 
 Subjects total: 44
@@ -9,17 +9,17 @@ Subjects remaining: 1
 Subject completion: 97.73%
 
 Total topics: 1299
-Topics processed: 1274
+Topics processed: 1282
 Topics published: 282
-Topics ready to publish: 992
+Topics ready to publish: 1000
 Topics held: 0
 Topics requiring review: 0
-Topics remaining: 25
-Topic processing: 98.08%
+Topics remaining: 17
+Topic processing: 98.69%
 
-Verified questions: 6370
-Unique source records: 5717
-Source usage classes: REFERENCE_ONLY=4714, PUBLIC_DOMAIN=597, ATTRIBUTION_REQUIRED=229, EXTRACT_AND_ADAPT=172, LINK_ONLY=5
+Verified questions: 6410
+Unique source records: 5754
+Source usage classes: REFERENCE_ONLY=4734, PUBLIC_DOMAIN=604, ATTRIBUTION_REQUIRED=229, EXTRACT_AND_ADAPT=181, LINK_ONLY=6
 
 ## Phase progress
 
@@ -28,7 +28,7 @@ Source usage classes: REFERENCE_ONLY=4714, PUBLIC_DOMAIN=597, ATTRIBUTION_REQUIR
 | 1 | 11 / 11 | 282 / 282 | 100.00% |
 | 2 | 11 / 11 | 325 / 325 | 100.00% |
 | 3 | 11 / 11 | 329 / 329 | 100.00% |
-| 4 | 10 / 11 | 338 / 363 | 93.11% |
+| 4 | 10 / 11 | 346 / 363 | 95.32% |
 
 ## Collection progress
 
@@ -39,7 +39,7 @@ Source usage classes: REFERENCE_ONLY=4714, PUBLIC_DOMAIN=597, ATTRIBUTION_REQUIR
 | Business & Money | 9 / 9 | 240 / 240 | 100.00% |
 | Humanities & Culture | 7 / 7 | 197 / 197 | 100.00% |
 | Science & Health | 6 / 6 | 206 / 206 | 100.00% |
-| Society & Government | 6 / 7 | 208 / 233 | 89.27% |
+| Society & Government | 6 / 7 | 216 / 233 | 92.70% |
 
 ## Subjects in progress
 
@@ -79,7 +79,7 @@ Source usage classes: REFERENCE_ONLY=4714, PUBLIC_DOMAIN=597, ATTRIBUTION_REQUIR
 | nutrition | 29 / 29 | 0 | 29 | 0 | 0 | 0 |
 | personal-finance | 32 / 32 | 0 | 32 | 0 | 0 | 0 |
 | philosophy-and-ethics | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
-| political-science-and-government | 7 / 32 | 0 | 7 | 0 | 0 | 25 |
+| political-science-and-government | 15 / 32 | 0 | 15 | 0 | 0 | 17 |
 | project-management | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
 | psychology | 35 / 35 | 0 | 35 | 0 | 0 | 0 |
 | public-health | 29 / 29 | 0 | 29 | 0 | 0 | 0 |

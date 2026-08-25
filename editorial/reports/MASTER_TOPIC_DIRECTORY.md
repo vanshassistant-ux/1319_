@@ -1,6 +1,6 @@
 # EliExplains — Master Topic Directory
 
-Generated 2026-08-21 21:55 UTC by `bun scripts/build-master-directory.mjs` from the master curriculum + the four phase content stores.
+Generated 2026-08-25 02:30 UTC by `bun scripts/build-master-directory.mjs` from the master curriculum + the four phase content stores.
 
 **Legend:** 🟢 LIVE · 🔵 READY (unpublished) · 🟠 NEEDS REVIEW · ⚪ NOT STARTED · ⚫ PRUNED (mis-ingested header/note) · 🟣 ADDED (not in master curriculum)
 
@@ -8,11 +8,11 @@ Generated 2026-08-21 21:55 UTC by `bun scripts/build-master-directory.mjs` from 
 
 | Scope | Curriculum topics | Genuine topics | 🟢 Live | 🔵 Ready | 🟠 Review | ⚪ Not started | Done (live+ready) |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| **All phases** | 1319 | 1299 | 282 | 492 | 0 | 525 | **774 (59.6%)** |
+| **All phases** | 1319 | 1299 | 282 | 1000 | 0 | 17 | **1282 (98.7%)** |
 | Phase 1 — LIVE on eliexplains.org | 282 | 282 | 282 | 0 | 0 | 0 | 282 (100.0%) |
-| Phase 2 | 325 | 325 | 0 | 47 | 0 | 278 | 47 (14.5%) |
+| Phase 2 | 325 | 325 | 0 | 325 | 0 | 0 | 325 (100.0%) |
 | Phase 3 | 337 | 329 | 0 | 329 | 0 | 0 | 329 (100.0%) |
-| Phase 4 | 375 | 363 | 0 | 116 | 0 | 247 | 116 (32.0%) |
+| Phase 4 | 375 | 363 | 0 | 346 | 0 | 17 | 346 (95.3%) |
 
 ## Contents
 
@@ -30,16 +30,16 @@ Generated 2026-08-21 21:55 UTC by `bun scripts/build-master-directory.mjs` from 
   - [Python Programming](#python-programming) — 36/36 done
 - **Phase 2**
   - [Web Development](#web-development) — 47/47 done
-  - [Data Science & AI Literacy](#data-science-and-ai-literacy) — 0/31 done
-  - [Cybersecurity](#cybersecurity) — 0/34 done
-  - [Databases & SQL](#databases-and-sql) — 0/29 done
-  - [UX/UI Design](#ux-ui-design) — 0/28 done
-  - [Introduction to Business](#introduction-to-business) — 0/24 done
-  - [Accounting](#accounting) — 0/28 done
-  - [Finance](#finance) — 0/25 done
-  - [Personal Finance](#personal-finance) — 0/32 done
-  - [Marketing](#marketing) — 0/24 done
-  - [Management & Leadership](#management-and-leadership) — 0/23 done
+  - [Data Science & AI Literacy](#data-science-and-ai-literacy) — 31/31 done
+  - [Cybersecurity](#cybersecurity) — 34/34 done
+  - [Databases & SQL](#databases-and-sql) — 29/29 done
+  - [UX/UI Design](#ux-ui-design) — 28/28 done
+  - [Introduction to Business](#introduction-to-business) — 24/24 done
+  - [Accounting](#accounting) — 28/28 done
+  - [Finance](#finance) — 25/25 done
+  - [Personal Finance](#personal-finance) — 32/32 done
+  - [Marketing](#marketing) — 24/24 done
+  - [Management & Leadership](#management-and-leadership) — 23/23 done
 - **Phase 3**
   - [Entrepreneurship](#entrepreneurship) — 25/25 done
   - [Business Law & Ethics](#business-law-and-ethics) — 31/31 done
@@ -53,14 +53,14 @@ Generated 2026-08-21 21:55 UTC by `bun scripts/build-master-directory.mjs` from 
   - [Languages & ESL](#languages-and-esl) — 26/26 done
   - [Earth & Space Science](#earth-and-space-science) — 48/48 done
 - **Phase 4**
-  - [Nutrition](#nutrition) — 0/29 done
-  - [Public Health](#public-health) — 0/29 done
-  - [Nursing & Allied Health Foundations](#nursing-and-allied-health-foundations) — 0/40 done
-  - [Psychology](#psychology) — 0/35 done
-  - [Sociology](#sociology) — 0/29 done
-  - [Anthropology](#anthropology) — 0/28 done
-  - [Human Development](#human-development) — 0/25 done
-  - [Political Science & Government](#political-science-and-government) — 0/32 done
+  - [Nutrition](#nutrition) — 29/29 done
+  - [Public Health](#public-health) — 29/29 done
+  - [Nursing & Allied Health Foundations](#nursing-and-allied-health-foundations) — 40/40 done
+  - [Psychology](#psychology) — 35/35 done
+  - [Sociology](#sociology) — 29/29 done
+  - [Anthropology](#anthropology) — 28/28 done
+  - [Human Development](#human-development) — 25/25 done
+  - [Political Science & Government](#political-science-and-government) — 15/32 done
   - [History](#history) — 49/49 done
   - [Human Geography](#human-geography) — 28/28 done
   - [Economics](#economics) — 39/39 done
@@ -499,362 +499,362 @@ Phase 2 · live 0 · ready 47 · review 0 · not started 0
 | 47 | Foundations | Cookies and Storage | 🔵 READY (unpublished) | 5 |  |
 
 <a id="data-science-and-ai-literacy"></a>
-## Data Science & AI Literacy — ⏳ NOT STARTED (0/31)
+## Data Science & AI Literacy — ✅ COMPLETE · awaiting publish (31/31)
 
-Phase 2 · live 0 · ready 0 · review 0 · not started 31
+Phase 2 · live 0 · ready 31 · review 0 · not started 0
 
 | # | Unit | Topic | Status | Qs | Link |
 |---:|---|---|---|---:|---|
-| 1 | Foundations | What Data Science Is | ⚪ NOT STARTED |  |  |
-| 2 | Foundations | Types of Data | ⚪ NOT STARTED |  |  |
-| 3 | Foundations | Datasets | ⚪ NOT STARTED |  |  |
-| 4 | Foundations | Structured Versus Unstructured Data | ⚪ NOT STARTED |  |  |
-| 5 | Foundations | Data Collection | ⚪ NOT STARTED |  |  |
-| 6 | Foundations | Sampling | ⚪ NOT STARTED |  |  |
-| 7 | Foundations | Data Cleaning | ⚪ NOT STARTED |  |  |
-| 8 | Foundations | Missing Data | ⚪ NOT STARTED |  |  |
-| 9 | Foundations | Outliers | ⚪ NOT STARTED |  |  |
-| 10 | Foundations | Exploratory Data Analysis | ⚪ NOT STARTED |  |  |
-| 11 | Foundations | Visualization | ⚪ NOT STARTED |  |  |
-| 12 | Foundations | Correlation | ⚪ NOT STARTED |  |  |
-| 13 | Foundations | Prediction | ⚪ NOT STARTED |  |  |
-| 14 | Foundations | Machine Learning Basics | ⚪ NOT STARTED |  |  |
-| 15 | Foundations | Supervised Learning | ⚪ NOT STARTED |  |  |
-| 16 | Foundations | Unsupervised Learning | ⚪ NOT STARTED |  |  |
-| 17 | Foundations | Training Data | ⚪ NOT STARTED |  |  |
-| 18 | Foundations | Features and Labels | ⚪ NOT STARTED |  |  |
-| 19 | Foundations | Models | ⚪ NOT STARTED |  |  |
-| 20 | Foundations | Training Versus Testing | ⚪ NOT STARTED |  |  |
-| 21 | Foundations | Overfitting | ⚪ NOT STARTED |  |  |
-| 22 | Foundations | Bias | ⚪ NOT STARTED |  |  |
-| 23 | Foundations | Algorithmic Fairness | ⚪ NOT STARTED |  |  |
-| 24 | Foundations | Generative AI | ⚪ NOT STARTED |  |  |
-| 25 | Foundations | Large Language Models | ⚪ NOT STARTED |  |  |
-| 26 | Foundations | Prompting Basics | ⚪ NOT STARTED |  |  |
-| 27 | Foundations | Hallucinations | ⚪ NOT STARTED |  |  |
-| 28 | Foundations | Evaluating AI Output | ⚪ NOT STARTED |  |  |
-| 29 | Foundations | AI Privacy | ⚪ NOT STARTED |  |  |
-| 30 | Foundations | AI Ethics | ⚪ NOT STARTED |  |  |
-| 31 | Foundations | NIST AI Risk Concepts | ⚪ NOT STARTED |  |  |
+| 1 | Foundations | What Data Science Is | 🔵 READY (unpublished) | 5 |  |
+| 2 | Foundations | Types of Data | 🔵 READY (unpublished) | 5 |  |
+| 3 | Foundations | Datasets | 🔵 READY (unpublished) | 5 |  |
+| 4 | Foundations | Structured Versus Unstructured Data | 🔵 READY (unpublished) | 5 |  |
+| 5 | Foundations | Data Collection | 🔵 READY (unpublished) | 5 |  |
+| 6 | Foundations | Sampling | 🔵 READY (unpublished) | 5 |  |
+| 7 | Foundations | Data Cleaning | 🔵 READY (unpublished) | 5 |  |
+| 8 | Foundations | Missing Data | 🔵 READY (unpublished) | 5 |  |
+| 9 | Foundations | Outliers | 🔵 READY (unpublished) | 5 |  |
+| 10 | Foundations | Exploratory Data Analysis | 🔵 READY (unpublished) | 5 |  |
+| 11 | Foundations | Visualization | 🔵 READY (unpublished) | 5 |  |
+| 12 | Foundations | Correlation | 🔵 READY (unpublished) | 5 |  |
+| 13 | Foundations | Prediction | 🔵 READY (unpublished) | 5 |  |
+| 14 | Foundations | Machine Learning Basics | 🔵 READY (unpublished) | 5 |  |
+| 15 | Foundations | Supervised Learning | 🔵 READY (unpublished) | 5 |  |
+| 16 | Foundations | Unsupervised Learning | 🔵 READY (unpublished) | 5 |  |
+| 17 | Foundations | Training Data | 🔵 READY (unpublished) | 5 |  |
+| 18 | Foundations | Features and Labels | 🔵 READY (unpublished) | 5 |  |
+| 19 | Foundations | Models | 🔵 READY (unpublished) | 5 |  |
+| 20 | Foundations | Training Versus Testing | 🔵 READY (unpublished) | 5 |  |
+| 21 | Foundations | Overfitting | 🔵 READY (unpublished) | 5 |  |
+| 22 | Foundations | Bias | 🔵 READY (unpublished) | 5 |  |
+| 23 | Foundations | Algorithmic Fairness | 🔵 READY (unpublished) | 5 |  |
+| 24 | Foundations | Generative AI | 🔵 READY (unpublished) | 5 |  |
+| 25 | Foundations | Large Language Models | 🔵 READY (unpublished) | 5 |  |
+| 26 | Foundations | Prompting Basics | 🔵 READY (unpublished) | 5 |  |
+| 27 | Foundations | Hallucinations | 🔵 READY (unpublished) | 5 |  |
+| 28 | Foundations | Evaluating AI Output | 🔵 READY (unpublished) | 5 |  |
+| 29 | Foundations | AI Privacy | 🔵 READY (unpublished) | 5 |  |
+| 30 | Foundations | AI Ethics | 🔵 READY (unpublished) | 5 |  |
+| 31 | Foundations | NIST AI Risk Concepts | 🔵 READY (unpublished) | 5 |  |
 
 <a id="cybersecurity"></a>
-## Cybersecurity — ⏳ NOT STARTED (0/34)
+## Cybersecurity — ✅ COMPLETE · awaiting publish (34/34)
 
-Phase 2 · live 0 · ready 0 · review 0 · not started 34
+Phase 2 · live 0 · ready 34 · review 0 · not started 0
 
 | # | Unit | Topic | Status | Qs | Link |
 |---:|---|---|---|---:|---|
-| 1 | Foundations | What Cybersecurity Is | ⚪ NOT STARTED |  |  |
-| 2 | Foundations | CIA Triad | ⚪ NOT STARTED |  |  |
-| 3 | Foundations | Threats | ⚪ NOT STARTED |  |  |
-| 4 | Foundations | Vulnerabilities | ⚪ NOT STARTED |  |  |
-| 5 | Foundations | Risk | ⚪ NOT STARTED |  |  |
-| 6 | Foundations | Attack Surface | ⚪ NOT STARTED |  |  |
-| 7 | Foundations | Authentication | ⚪ NOT STARTED |  |  |
-| 8 | Foundations | Password Security | ⚪ NOT STARTED |  |  |
-| 9 | Foundations | MFA | ⚪ NOT STARTED |  |  |
-| 10 | Foundations | Authorization | ⚪ NOT STARTED |  |  |
-| 11 | Foundations | Least Privilege | ⚪ NOT STARTED |  |  |
-| 12 | Foundations | Phishing | ⚪ NOT STARTED |  |  |
-| 13 | Foundations | Social Engineering | ⚪ NOT STARTED |  |  |
-| 14 | Foundations | Malware | ⚪ NOT STARTED |  |  |
-| 15 | Foundations | Ransomware | ⚪ NOT STARTED |  |  |
-| 16 | Foundations | Viruses | ⚪ NOT STARTED |  |  |
-| 17 | Foundations | Trojans | ⚪ NOT STARTED |  |  |
-| 18 | Foundations | Network Fundamentals | ⚪ NOT STARTED |  |  |
-| 19 | Foundations | Firewalls | ⚪ NOT STARTED |  |  |
-| 20 | Foundations | Network Segmentation | ⚪ NOT STARTED |  |  |
-| 21 | Foundations | Wi-Fi Security | ⚪ NOT STARTED |  |  |
-| 22 | Foundations | Encryption | ⚪ NOT STARTED |  |  |
-| 23 | Foundations | Hashing | ⚪ NOT STARTED |  |  |
-| 24 | Foundations | Digital Certificates | ⚪ NOT STARTED |  |  |
-| 25 | Foundations | HTTPS/TLS Basics | ⚪ NOT STARTED |  |  |
-| 26 | Foundations | Vulnerability Management | ⚪ NOT STARTED |  |  |
-| 27 | Foundations | Patch Management | ⚪ NOT STARTED |  |  |
-| 28 | Foundations | Logging | ⚪ NOT STARTED |  |  |
-| 29 | Foundations | Incident Response | ⚪ NOT STARTED |  |  |
-| 30 | Foundations | Backups | ⚪ NOT STARTED |  |  |
-| 31 | Foundations | Security Awareness | ⚪ NOT STARTED |  |  |
-| 32 | Foundations | Privacy | ⚪ NOT STARTED |  |  |
-| 33 | Foundations | Zero Trust Basics | ⚪ NOT STARTED |  |  |
-| 34 | Foundations | NIST Cybersecurity Framework | ⚪ NOT STARTED |  |  |
+| 1 | Foundations | What Cybersecurity Is | 🔵 READY (unpublished) | 5 |  |
+| 2 | Foundations | CIA Triad | 🔵 READY (unpublished) | 5 |  |
+| 3 | Foundations | Threats | 🔵 READY (unpublished) | 5 |  |
+| 4 | Foundations | Vulnerabilities | 🔵 READY (unpublished) | 5 |  |
+| 5 | Foundations | Risk | 🔵 READY (unpublished) | 5 |  |
+| 6 | Foundations | Attack Surface | 🔵 READY (unpublished) | 5 |  |
+| 7 | Foundations | Authentication | 🔵 READY (unpublished) | 5 |  |
+| 8 | Foundations | Password Security | 🔵 READY (unpublished) | 5 |  |
+| 9 | Foundations | MFA | 🔵 READY (unpublished) | 5 |  |
+| 10 | Foundations | Authorization | 🔵 READY (unpublished) | 5 |  |
+| 11 | Foundations | Least Privilege | 🔵 READY (unpublished) | 5 |  |
+| 12 | Foundations | Phishing | 🔵 READY (unpublished) | 5 |  |
+| 13 | Foundations | Social Engineering | 🔵 READY (unpublished) | 5 |  |
+| 14 | Foundations | Malware | 🔵 READY (unpublished) | 5 |  |
+| 15 | Foundations | Ransomware | 🔵 READY (unpublished) | 5 |  |
+| 16 | Foundations | Viruses | 🔵 READY (unpublished) | 5 |  |
+| 17 | Foundations | Trojans | 🔵 READY (unpublished) | 5 |  |
+| 18 | Foundations | Network Fundamentals | 🔵 READY (unpublished) | 5 |  |
+| 19 | Foundations | Firewalls | 🔵 READY (unpublished) | 5 |  |
+| 20 | Foundations | Network Segmentation | 🔵 READY (unpublished) | 5 |  |
+| 21 | Foundations | Wi-Fi Security | 🔵 READY (unpublished) | 5 |  |
+| 22 | Foundations | Encryption | 🔵 READY (unpublished) | 5 |  |
+| 23 | Foundations | Hashing | 🔵 READY (unpublished) | 5 |  |
+| 24 | Foundations | Digital Certificates | 🔵 READY (unpublished) | 5 |  |
+| 25 | Foundations | HTTPS/TLS Basics | 🔵 READY (unpublished) | 5 |  |
+| 26 | Foundations | Vulnerability Management | 🔵 READY (unpublished) | 5 |  |
+| 27 | Foundations | Patch Management | 🔵 READY (unpublished) | 5 |  |
+| 28 | Foundations | Logging | 🔵 READY (unpublished) | 5 |  |
+| 29 | Foundations | Incident Response | 🔵 READY (unpublished) | 5 |  |
+| 30 | Foundations | Backups | 🔵 READY (unpublished) | 5 |  |
+| 31 | Foundations | Security Awareness | 🔵 READY (unpublished) | 5 |  |
+| 32 | Foundations | Privacy | 🔵 READY (unpublished) | 5 |  |
+| 33 | Foundations | Zero Trust Basics | 🔵 READY (unpublished) | 5 |  |
+| 34 | Foundations | NIST Cybersecurity Framework | 🔵 READY (unpublished) | 5 |  |
 
 <a id="databases-and-sql"></a>
-## Databases & SQL — ⏳ NOT STARTED (0/29)
+## Databases & SQL — ✅ COMPLETE · awaiting publish (29/29)
 
-Phase 2 · live 0 · ready 0 · review 0 · not started 29
+Phase 2 · live 0 · ready 29 · review 0 · not started 0
 
 | # | Unit | Topic | Status | Qs | Link |
 |---:|---|---|---|---:|---|
-| 1 | Foundations | What a Database Is | ⚪ NOT STARTED |  |  |
-| 2 | Foundations | Relational Databases | ⚪ NOT STARTED |  |  |
-| 3 | Foundations | Tables | ⚪ NOT STARTED |  |  |
-| 4 | Foundations | Rows | ⚪ NOT STARTED |  |  |
-| 5 | Foundations | Columns | ⚪ NOT STARTED |  |  |
-| 6 | Foundations | Data Types | ⚪ NOT STARTED |  |  |
-| 7 | Foundations | Primary Keys | ⚪ NOT STARTED |  |  |
-| 8 | Foundations | Foreign Keys | ⚪ NOT STARTED |  |  |
-| 9 | Foundations | Relationships | ⚪ NOT STARTED |  |  |
-| 10 | Foundations | One-to-One | ⚪ NOT STARTED |  |  |
-| 11 | Foundations | One-to-Many | ⚪ NOT STARTED |  |  |
-| 12 | Foundations | Many-to-Many | ⚪ NOT STARTED |  |  |
-| 13 | Foundations | Database Normalization | ⚪ NOT STARTED |  |  |
-| 14 | Foundations | SQL Basics | ⚪ NOT STARTED |  |  |
-| 15 | Foundations | SELECT | ⚪ NOT STARTED |  |  |
-| 16 | Foundations | WHERE | ⚪ NOT STARTED |  |  |
-| 17 | Foundations | ORDER BY | ⚪ NOT STARTED |  |  |
-| 18 | Foundations | LIMIT | ⚪ NOT STARTED |  |  |
-| 19 | Foundations | INSERT | ⚪ NOT STARTED |  |  |
-| 20 | Foundations | UPDATE | ⚪ NOT STARTED |  |  |
-| 21 | Foundations | DELETE | ⚪ NOT STARTED |  |  |
-| 22 | Foundations | Aggregate Functions | ⚪ NOT STARTED |  |  |
-| 23 | Foundations | GROUP BY | ⚪ NOT STARTED |  |  |
-| 24 | Foundations | JOIN | ⚪ NOT STARTED |  |  |
-| 25 | Foundations | Subqueries | ⚪ NOT STARTED |  |  |
-| 26 | Foundations | Indexes | ⚪ NOT STARTED |  |  |
-| 27 | Foundations | Transactions | ⚪ NOT STARTED |  |  |
-| 28 | Foundations | Data Integrity | ⚪ NOT STARTED |  |  |
-| 29 | Foundations | Database Security | ⚪ NOT STARTED |  |  |
+| 1 | Foundations | What a Database Is | 🔵 READY (unpublished) | 5 |  |
+| 2 | Foundations | Relational Databases | 🔵 READY (unpublished) | 5 |  |
+| 3 | Foundations | Tables | 🔵 READY (unpublished) | 5 |  |
+| 4 | Foundations | Rows | 🔵 READY (unpublished) | 5 |  |
+| 5 | Foundations | Columns | 🔵 READY (unpublished) | 5 |  |
+| 6 | Foundations | Data Types | 🔵 READY (unpublished) | 5 |  |
+| 7 | Foundations | Primary Keys | 🔵 READY (unpublished) | 5 |  |
+| 8 | Foundations | Foreign Keys | 🔵 READY (unpublished) | 5 |  |
+| 9 | Foundations | Relationships | 🔵 READY (unpublished) | 5 |  |
+| 10 | Foundations | One-to-One | 🔵 READY (unpublished) | 5 |  |
+| 11 | Foundations | One-to-Many | 🔵 READY (unpublished) | 5 |  |
+| 12 | Foundations | Many-to-Many | 🔵 READY (unpublished) | 5 |  |
+| 13 | Foundations | Database Normalization | 🔵 READY (unpublished) | 5 |  |
+| 14 | Foundations | SQL Basics | 🔵 READY (unpublished) | 5 |  |
+| 15 | Foundations | SELECT | 🔵 READY (unpublished) | 5 |  |
+| 16 | Foundations | WHERE | 🔵 READY (unpublished) | 5 |  |
+| 17 | Foundations | ORDER BY | 🔵 READY (unpublished) | 5 |  |
+| 18 | Foundations | LIMIT | 🔵 READY (unpublished) | 5 |  |
+| 19 | Foundations | INSERT | 🔵 READY (unpublished) | 5 |  |
+| 20 | Foundations | UPDATE | 🔵 READY (unpublished) | 5 |  |
+| 21 | Foundations | DELETE | 🔵 READY (unpublished) | 5 |  |
+| 22 | Foundations | Aggregate Functions | 🔵 READY (unpublished) | 5 |  |
+| 23 | Foundations | GROUP BY | 🔵 READY (unpublished) | 5 |  |
+| 24 | Foundations | JOIN | 🔵 READY (unpublished) | 5 |  |
+| 25 | Foundations | Subqueries | 🔵 READY (unpublished) | 5 |  |
+| 26 | Foundations | Indexes | 🔵 READY (unpublished) | 5 |  |
+| 27 | Foundations | Transactions | 🔵 READY (unpublished) | 5 |  |
+| 28 | Foundations | Data Integrity | 🔵 READY (unpublished) | 5 |  |
+| 29 | Foundations | Database Security | 🔵 READY (unpublished) | 5 |  |
 
 <a id="ux-ui-design"></a>
-## UX/UI Design — ⏳ NOT STARTED (0/28)
+## UX/UI Design — ✅ COMPLETE · awaiting publish (28/28)
 
-Phase 2 · live 0 · ready 0 · review 0 · not started 28
+Phase 2 · live 0 · ready 28 · review 0 · not started 0
 
 | # | Unit | Topic | Status | Qs | Link |
 |---:|---|---|---|---:|---|
-| 1 | Foundations | UX Versus UI | ⚪ NOT STARTED |  |  |
-| 2 | Foundations | Human-Centered Design | ⚪ NOT STARTED |  |  |
-| 3 | Foundations | User Research | ⚪ NOT STARTED |  |  |
-| 4 | Foundations | Interviews | ⚪ NOT STARTED |  |  |
-| 5 | Foundations | Surveys | ⚪ NOT STARTED |  |  |
-| 6 | Foundations | Personas | ⚪ NOT STARTED |  |  |
-| 7 | Foundations | Jobs to Be Done | ⚪ NOT STARTED |  |  |
-| 8 | Foundations | User Journeys | ⚪ NOT STARTED |  |  |
-| 9 | Foundations | User Flows | ⚪ NOT STARTED |  |  |
-| 10 | Foundations | Information Architecture | ⚪ NOT STARTED |  |  |
-| 11 | Foundations | Wireframes | ⚪ NOT STARTED |  |  |
-| 12 | Foundations | Low-Fidelity Prototypes | ⚪ NOT STARTED |  |  |
-| 13 | Foundations | High-Fidelity Prototypes | ⚪ NOT STARTED |  |  |
-| 14 | Foundations | Visual Hierarchy | ⚪ NOT STARTED |  |  |
-| 15 | Foundations | Typography | ⚪ NOT STARTED |  |  |
-| 16 | Foundations | Color | ⚪ NOT STARTED |  |  |
-| 17 | Foundations | Layout | ⚪ NOT STARTED |  |  |
-| 18 | Foundations | Design Systems | ⚪ NOT STARTED |  |  |
-| 19 | Foundations | Components | ⚪ NOT STARTED |  |  |
-| 20 | Foundations | Interaction Design | ⚪ NOT STARTED |  |  |
-| 21 | Foundations | Usability Testing | ⚪ NOT STARTED |  |  |
-| 22 | Foundations | Heuristic Evaluation | ⚪ NOT STARTED |  |  |
-| 23 | Foundations | Accessibility | ⚪ NOT STARTED |  |  |
-| 24 | Foundations | WCAG Basics | ⚪ NOT STARTED |  |  |
-| 25 | Foundations | Responsive Design | ⚪ NOT STARTED |  |  |
-| 26 | Foundations | Mobile-First Design | ⚪ NOT STARTED |  |  |
-| 27 | Foundations | Design Handoff | ⚪ NOT STARTED |  |  |
-| 28 | Foundations | PART III — BUSINESS & MONEY | ⚪ NOT STARTED |  |  |
+| 1 | Foundations | UX Versus UI | 🔵 READY (unpublished) | 5 |  |
+| 2 | Foundations | Human-Centered Design | 🔵 READY (unpublished) | 5 |  |
+| 3 | Foundations | User Research | 🔵 READY (unpublished) | 5 |  |
+| 4 | Foundations | Interviews | 🔵 READY (unpublished) | 5 |  |
+| 5 | Foundations | Surveys | 🔵 READY (unpublished) | 5 |  |
+| 6 | Foundations | Personas | 🔵 READY (unpublished) | 5 |  |
+| 7 | Foundations | Jobs to Be Done | 🔵 READY (unpublished) | 5 |  |
+| 8 | Foundations | User Journeys | 🔵 READY (unpublished) | 5 |  |
+| 9 | Foundations | User Flows | 🔵 READY (unpublished) | 5 |  |
+| 10 | Foundations | Information Architecture | 🔵 READY (unpublished) | 5 |  |
+| 11 | Foundations | Wireframes | 🔵 READY (unpublished) | 5 |  |
+| 12 | Foundations | Low-Fidelity Prototypes | 🔵 READY (unpublished) | 5 |  |
+| 13 | Foundations | High-Fidelity Prototypes | 🔵 READY (unpublished) | 5 |  |
+| 14 | Foundations | Visual Hierarchy | 🔵 READY (unpublished) | 5 |  |
+| 15 | Foundations | Typography | 🔵 READY (unpublished) | 5 |  |
+| 16 | Foundations | Color | 🔵 READY (unpublished) | 5 |  |
+| 17 | Foundations | Layout | 🔵 READY (unpublished) | 5 |  |
+| 18 | Foundations | Design Systems | 🔵 READY (unpublished) | 5 |  |
+| 19 | Foundations | Components | 🔵 READY (unpublished) | 5 |  |
+| 20 | Foundations | Interaction Design | 🔵 READY (unpublished) | 5 |  |
+| 21 | Foundations | Usability Testing | 🔵 READY (unpublished) | 5 |  |
+| 22 | Foundations | Heuristic Evaluation | 🔵 READY (unpublished) | 5 |  |
+| 23 | Foundations | Accessibility | 🔵 READY (unpublished) | 5 |  |
+| 24 | Foundations | WCAG Basics | 🔵 READY (unpublished) | 5 |  |
+| 25 | Foundations | Responsive Design | 🔵 READY (unpublished) | 5 |  |
+| 26 | Foundations | Mobile-First Design | 🔵 READY (unpublished) | 5 |  |
+| 27 | Foundations | Design Handoff | 🔵 READY (unpublished) | 5 |  |
+| 28 | Foundations | PART III — BUSINESS & MONEY | 🔵 READY (unpublished) | 5 |  |
 
 <a id="introduction-to-business"></a>
-## Introduction to Business — ⏳ NOT STARTED (0/24)
+## Introduction to Business — ✅ COMPLETE · awaiting publish (24/24)
 
-Phase 2 · live 0 · ready 0 · review 0 · not started 24
+Phase 2 · live 0 · ready 24 · review 0 · not started 0
 
 | # | Unit | Topic | Status | Qs | Link |
 |---:|---|---|---|---:|---|
-| 1 | Foundations | What Is a Business? | ⚪ NOT STARTED |  |  |
-| 2 | Foundations | Forms of Business Ownership | ⚪ NOT STARTED |  |  |
-| 3 | Foundations | Sole Proprietorship | ⚪ NOT STARTED |  |  |
-| 4 | Foundations | Partnership | ⚪ NOT STARTED |  |  |
-| 5 | Foundations | Corporation | ⚪ NOT STARTED |  |  |
-| 6 | Foundations | LLC | ⚪ NOT STARTED |  |  |
-| 7 | Foundations | Entrepreneurship | ⚪ NOT STARTED |  |  |
-| 8 | Foundations | Business Environment | ⚪ NOT STARTED |  |  |
-| 9 | Foundations | Economics and Business | ⚪ NOT STARTED |  |  |
-| 10 | Foundations | Global Business | ⚪ NOT STARTED |  |  |
-| 11 | Foundations | Business Ethics | ⚪ NOT STARTED |  |  |
-| 12 | Foundations | Management | ⚪ NOT STARTED |  |  |
-| 13 | Foundations | Leadership | ⚪ NOT STARTED |  |  |
-| 14 | Foundations | Organizational Structure | ⚪ NOT STARTED |  |  |
-| 15 | Foundations | Human Resources | ⚪ NOT STARTED |  |  |
-| 16 | Foundations | Operations | ⚪ NOT STARTED |  |  |
-| 17 | Foundations | Supply Chain Basics | ⚪ NOT STARTED |  |  |
-| 18 | Foundations | Marketing | ⚪ NOT STARTED |  |  |
-| 19 | Foundations | Sales | ⚪ NOT STARTED |  |  |
-| 20 | Foundations | Accounting Basics | ⚪ NOT STARTED |  |  |
-| 21 | Foundations | Finance Basics | ⚪ NOT STARTED |  |  |
-| 22 | Foundations | Business Strategy | ⚪ NOT STARTED |  |  |
-| 23 | Foundations | Competitive Advantage | ⚪ NOT STARTED |  |  |
-| 24 | Foundations | Business Communication | ⚪ NOT STARTED |  |  |
+| 1 | Foundations | What Is a Business? | 🔵 READY (unpublished) | 5 |  |
+| 2 | Foundations | Forms of Business Ownership | 🔵 READY (unpublished) | 5 |  |
+| 3 | Foundations | Sole Proprietorship | 🔵 READY (unpublished) | 5 |  |
+| 4 | Foundations | Partnership | 🔵 READY (unpublished) | 5 |  |
+| 5 | Foundations | Corporation | 🔵 READY (unpublished) | 5 |  |
+| 6 | Foundations | LLC | 🔵 READY (unpublished) | 5 |  |
+| 7 | Foundations | Entrepreneurship | 🔵 READY (unpublished) | 5 |  |
+| 8 | Foundations | Business Environment | 🔵 READY (unpublished) | 5 |  |
+| 9 | Foundations | Economics and Business | 🔵 READY (unpublished) | 5 |  |
+| 10 | Foundations | Global Business | 🔵 READY (unpublished) | 5 |  |
+| 11 | Foundations | Business Ethics | 🔵 READY (unpublished) | 5 |  |
+| 12 | Foundations | Management | 🔵 READY (unpublished) | 5 |  |
+| 13 | Foundations | Leadership | 🔵 READY (unpublished) | 5 |  |
+| 14 | Foundations | Organizational Structure | 🔵 READY (unpublished) | 5 |  |
+| 15 | Foundations | Human Resources | 🔵 READY (unpublished) | 5 |  |
+| 16 | Foundations | Operations | 🔵 READY (unpublished) | 5 |  |
+| 17 | Foundations | Supply Chain Basics | 🔵 READY (unpublished) | 5 |  |
+| 18 | Foundations | Marketing | 🔵 READY (unpublished) | 5 |  |
+| 19 | Foundations | Sales | 🔵 READY (unpublished) | 5 |  |
+| 20 | Foundations | Accounting Basics | 🔵 READY (unpublished) | 5 |  |
+| 21 | Foundations | Finance Basics | 🔵 READY (unpublished) | 5 |  |
+| 22 | Foundations | Business Strategy | 🔵 READY (unpublished) | 5 |  |
+| 23 | Foundations | Competitive Advantage | 🔵 READY (unpublished) | 5 |  |
+| 24 | Foundations | Business Communication | 🔵 READY (unpublished) | 5 |  |
 
 <a id="accounting"></a>
-## Accounting — ⏳ NOT STARTED (0/28)
+## Accounting — ✅ COMPLETE · awaiting publish (28/28)
 
-Phase 2 · live 0 · ready 0 · review 0 · not started 28
+Phase 2 · live 0 · ready 28 · review 0 · not started 0
 
 | # | Unit | Topic | Status | Qs | Link |
 |---:|---|---|---|---:|---|
-| 1 | Foundations | Purpose of Accounting | ⚪ NOT STARTED |  |  |
-| 2 | Foundations | Accounting Equation | ⚪ NOT STARTED |  |  |
-| 3 | Foundations | Assets | ⚪ NOT STARTED |  |  |
-| 4 | Foundations | Liabilities | ⚪ NOT STARTED |  |  |
-| 5 | Foundations | Equity | ⚪ NOT STARTED |  |  |
-| 6 | Foundations | Revenue | ⚪ NOT STARTED |  |  |
-| 7 | Foundations | Expenses | ⚪ NOT STARTED |  |  |
-| 8 | Foundations | Accounting Cycle | ⚪ NOT STARTED |  |  |
-| 9 | Foundations | Debits and Credits | ⚪ NOT STARTED |  |  |
-| 10 | Foundations | Journal Entries | ⚪ NOT STARTED |  |  |
-| 11 | Foundations | General Ledger | ⚪ NOT STARTED |  |  |
-| 12 | Foundations | Trial Balance | ⚪ NOT STARTED |  |  |
-| 13 | Foundations | Adjusting Entries | ⚪ NOT STARTED |  |  |
-| 14 | Foundations | Income Statement | ⚪ NOT STARTED |  |  |
-| 15 | Foundations | Balance Sheet | ⚪ NOT STARTED |  |  |
-| 16 | Foundations | Statement of Cash Flows | ⚪ NOT STARTED |  |  |
-| 17 | Foundations | Accounts Receivable | ⚪ NOT STARTED |  |  |
-| 18 | Foundations | Accounts Payable | ⚪ NOT STARTED |  |  |
-| 19 | Foundations | Inventory | ⚪ NOT STARTED |  |  |
-| 20 | Foundations | Depreciation | ⚪ NOT STARTED |  |  |
-| 21 | Foundations | Accrual Accounting | ⚪ NOT STARTED |  |  |
-| 22 | Foundations | Cash Accounting | ⚪ NOT STARTED |  |  |
-| 23 | Foundations | Financial Ratios | ⚪ NOT STARTED |  |  |
-| 24 | Foundations | Managerial Accounting | ⚪ NOT STARTED |  |  |
-| 25 | Foundations | Cost Behavior | ⚪ NOT STARTED |  |  |
-| 26 | Foundations | Fixed and Variable Costs | ⚪ NOT STARTED |  |  |
-| 27 | Foundations | Break-Even Analysis | ⚪ NOT STARTED |  |  |
-| 28 | Foundations | Budgeting | ⚪ NOT STARTED |  |  |
+| 1 | Foundations | Purpose of Accounting | 🔵 READY (unpublished) | 5 |  |
+| 2 | Foundations | Accounting Equation | 🔵 READY (unpublished) | 5 |  |
+| 3 | Foundations | Assets | 🔵 READY (unpublished) | 5 |  |
+| 4 | Foundations | Liabilities | 🔵 READY (unpublished) | 5 |  |
+| 5 | Foundations | Equity | 🔵 READY (unpublished) | 5 |  |
+| 6 | Foundations | Revenue | 🔵 READY (unpublished) | 5 |  |
+| 7 | Foundations | Expenses | 🔵 READY (unpublished) | 5 |  |
+| 8 | Foundations | Accounting Cycle | 🔵 READY (unpublished) | 5 |  |
+| 9 | Foundations | Debits and Credits | 🔵 READY (unpublished) | 5 |  |
+| 10 | Foundations | Journal Entries | 🔵 READY (unpublished) | 5 |  |
+| 11 | Foundations | General Ledger | 🔵 READY (unpublished) | 5 |  |
+| 12 | Foundations | Trial Balance | 🔵 READY (unpublished) | 5 |  |
+| 13 | Foundations | Adjusting Entries | 🔵 READY (unpublished) | 5 |  |
+| 14 | Foundations | Income Statement | 🔵 READY (unpublished) | 5 |  |
+| 15 | Foundations | Balance Sheet | 🔵 READY (unpublished) | 5 |  |
+| 16 | Foundations | Statement of Cash Flows | 🔵 READY (unpublished) | 5 |  |
+| 17 | Foundations | Accounts Receivable | 🔵 READY (unpublished) | 5 |  |
+| 18 | Foundations | Accounts Payable | 🔵 READY (unpublished) | 5 |  |
+| 19 | Foundations | Inventory | 🔵 READY (unpublished) | 5 |  |
+| 20 | Foundations | Depreciation | 🔵 READY (unpublished) | 5 |  |
+| 21 | Foundations | Accrual Accounting | 🔵 READY (unpublished) | 5 |  |
+| 22 | Foundations | Cash Accounting | 🔵 READY (unpublished) | 5 |  |
+| 23 | Foundations | Financial Ratios | 🔵 READY (unpublished) | 5 |  |
+| 24 | Foundations | Managerial Accounting | 🔵 READY (unpublished) | 5 |  |
+| 25 | Foundations | Cost Behavior | 🔵 READY (unpublished) | 5 |  |
+| 26 | Foundations | Fixed and Variable Costs | 🔵 READY (unpublished) | 5 |  |
+| 27 | Foundations | Break-Even Analysis | 🔵 READY (unpublished) | 5 |  |
+| 28 | Foundations | Budgeting | 🔵 READY (unpublished) | 5 |  |
 
 <a id="finance"></a>
-## Finance — ⏳ NOT STARTED (0/25)
+## Finance — ✅ COMPLETE · awaiting publish (25/25)
 
-Phase 2 · live 0 · ready 0 · review 0 · not started 25
+Phase 2 · live 0 · ready 25 · review 0 · not started 0
 
 | # | Unit | Topic | Status | Qs | Link |
 |---:|---|---|---|---:|---|
-| 1 | Foundations | What Finance Is | ⚪ NOT STARTED |  |  |
-| 2 | Foundations | Time Value of Money | ⚪ NOT STARTED |  |  |
-| 3 | Foundations | Present Value | ⚪ NOT STARTED |  |  |
-| 4 | Foundations | Future Value | ⚪ NOT STARTED |  |  |
-| 5 | Foundations | Compound Interest | ⚪ NOT STARTED |  |  |
-| 6 | Foundations | Financial Statements | ⚪ NOT STARTED |  |  |
-| 7 | Foundations | Cash Flow | ⚪ NOT STARTED |  |  |
-| 8 | Foundations | Risk | ⚪ NOT STARTED |  |  |
-| 9 | Foundations | Return | ⚪ NOT STARTED |  |  |
-| 10 | Foundations | Diversification | ⚪ NOT STARTED |  |  |
-| 11 | Foundations | Bonds | ⚪ NOT STARTED |  |  |
-| 12 | Foundations | Stocks | ⚪ NOT STARTED |  |  |
-| 13 | Foundations | Debt | ⚪ NOT STARTED |  |  |
-| 14 | Foundations | Equity | ⚪ NOT STARTED |  |  |
-| 15 | Foundations | Cost of Capital | ⚪ NOT STARTED |  |  |
-| 16 | Foundations | Capital Budgeting | ⚪ NOT STARTED |  |  |
-| 17 | Foundations | Net Present Value | ⚪ NOT STARTED |  |  |
-| 18 | Foundations | Internal Rate of Return | ⚪ NOT STARTED |  |  |
-| 19 | Foundations | Financial Markets | ⚪ NOT STARTED |  |  |
-| 20 | Foundations | Interest Rates | ⚪ NOT STARTED |  |  |
-| 21 | Foundations | Inflation | ⚪ NOT STARTED |  |  |
-| 22 | Foundations | Corporate Finance | ⚪ NOT STARTED |  |  |
-| 23 | Foundations | Working Capital | ⚪ NOT STARTED |  |  |
-| 24 | Foundations | Financial Ratios | ⚪ NOT STARTED |  |  |
-| 25 | Foundations | Portfolio Basics | ⚪ NOT STARTED |  |  |
+| 1 | Foundations | What Finance Is | 🔵 READY (unpublished) | 5 |  |
+| 2 | Foundations | Time Value of Money | 🔵 READY (unpublished) | 5 |  |
+| 3 | Foundations | Present Value | 🔵 READY (unpublished) | 5 |  |
+| 4 | Foundations | Future Value | 🔵 READY (unpublished) | 5 |  |
+| 5 | Foundations | Compound Interest | 🔵 READY (unpublished) | 5 |  |
+| 6 | Foundations | Financial Statements | 🔵 READY (unpublished) | 5 |  |
+| 7 | Foundations | Cash Flow | 🔵 READY (unpublished) | 5 |  |
+| 8 | Foundations | Risk | 🔵 READY (unpublished) | 5 |  |
+| 9 | Foundations | Return | 🔵 READY (unpublished) | 5 |  |
+| 10 | Foundations | Diversification | 🔵 READY (unpublished) | 5 |  |
+| 11 | Foundations | Bonds | 🔵 READY (unpublished) | 5 |  |
+| 12 | Foundations | Stocks | 🔵 READY (unpublished) | 5 |  |
+| 13 | Foundations | Debt | 🔵 READY (unpublished) | 5 |  |
+| 14 | Foundations | Equity | 🔵 READY (unpublished) | 5 |  |
+| 15 | Foundations | Cost of Capital | 🔵 READY (unpublished) | 5 |  |
+| 16 | Foundations | Capital Budgeting | 🔵 READY (unpublished) | 5 |  |
+| 17 | Foundations | Net Present Value | 🔵 READY (unpublished) | 5 |  |
+| 18 | Foundations | Internal Rate of Return | 🔵 READY (unpublished) | 5 |  |
+| 19 | Foundations | Financial Markets | 🔵 READY (unpublished) | 5 |  |
+| 20 | Foundations | Interest Rates | 🔵 READY (unpublished) | 5 |  |
+| 21 | Foundations | Inflation | 🔵 READY (unpublished) | 5 |  |
+| 22 | Foundations | Corporate Finance | 🔵 READY (unpublished) | 5 |  |
+| 23 | Foundations | Working Capital | 🔵 READY (unpublished) | 5 |  |
+| 24 | Foundations | Financial Ratios | 🔵 READY (unpublished) | 5 |  |
+| 25 | Foundations | Portfolio Basics | 🔵 READY (unpublished) | 5 |  |
 
 <a id="personal-finance"></a>
-## Personal Finance — ⏳ NOT STARTED (0/32)
+## Personal Finance — ✅ COMPLETE · awaiting publish (32/32)
 
-Phase 2 · live 0 · ready 0 · review 0 · not started 32
+Phase 2 · live 0 · ready 32 · review 0 · not started 0
 
 | # | Unit | Topic | Status | Qs | Link |
 |---:|---|---|---|---:|---|
-| 1 | Foundations | Setting Financial Goals | ⚪ NOT STARTED |  |  |
-| 2 | Foundations | Budgeting | ⚪ NOT STARTED |  |  |
-| 3 | Foundations | Income | ⚪ NOT STARTED |  |  |
-| 4 | Foundations | Expenses | ⚪ NOT STARTED |  |  |
-| 5 | Foundations | Cash Flow | ⚪ NOT STARTED |  |  |
-| 6 | Foundations | Emergency Funds | ⚪ NOT STARTED |  |  |
-| 7 | Foundations | Saving | ⚪ NOT STARTED |  |  |
-| 8 | Foundations | Checking Accounts | ⚪ NOT STARTED |  |  |
-| 9 | Foundations | Savings Accounts | ⚪ NOT STARTED |  |  |
-| 10 | Foundations | Interest | ⚪ NOT STARTED |  |  |
-| 11 | Foundations | Credit Cards | ⚪ NOT STARTED |  |  |
-| 12 | Foundations | Credit Reports | ⚪ NOT STARTED |  |  |
-| 13 | Foundations | Credit Scores | ⚪ NOT STARTED |  |  |
-| 14 | Foundations | Loans | ⚪ NOT STARTED |  |  |
-| 15 | Foundations | Auto Loans | ⚪ NOT STARTED |  |  |
-| 16 | Foundations | Student Loans | ⚪ NOT STARTED |  |  |
-| 17 | Foundations | Mortgages | ⚪ NOT STARTED |  |  |
-| 18 | Foundations | Debt Management | ⚪ NOT STARTED |  |  |
-| 19 | Foundations | Taxes | ⚪ NOT STARTED |  |  |
-| 20 | Foundations | Insurance | ⚪ NOT STARTED |  |  |
-| 21 | Foundations | Health Insurance Basics | ⚪ NOT STARTED |  |  |
-| 22 | Foundations | Life Insurance Basics | ⚪ NOT STARTED |  |  |
-| 23 | Foundations | Investing | ⚪ NOT STARTED |  |  |
-| 24 | Foundations | Stocks | ⚪ NOT STARTED |  |  |
-| 25 | Foundations | Bonds | ⚪ NOT STARTED |  |  |
-| 26 | Foundations | Mutual Funds | ⚪ NOT STARTED |  |  |
-| 27 | Foundations | ETFs | ⚪ NOT STARTED |  |  |
-| 28 | Foundations | Retirement Accounts | ⚪ NOT STARTED |  |  |
-| 29 | Foundations | Compound Growth | ⚪ NOT STARTED |  |  |
-| 30 | Foundations | Financial Scams | ⚪ NOT STARTED |  |  |
-| 31 | Foundations | Identity Theft | ⚪ NOT STARTED |  |  |
-| 32 | Foundations | Consumer Protection | ⚪ NOT STARTED |  |  |
+| 1 | Foundations | Setting Financial Goals | 🔵 READY (unpublished) | 5 |  |
+| 2 | Foundations | Budgeting | 🔵 READY (unpublished) | 5 |  |
+| 3 | Foundations | Income | 🔵 READY (unpublished) | 5 |  |
+| 4 | Foundations | Expenses | 🔵 READY (unpublished) | 5 |  |
+| 5 | Foundations | Cash Flow | 🔵 READY (unpublished) | 5 |  |
+| 6 | Foundations | Emergency Funds | 🔵 READY (unpublished) | 5 |  |
+| 7 | Foundations | Saving | 🔵 READY (unpublished) | 5 |  |
+| 8 | Foundations | Checking Accounts | 🔵 READY (unpublished) | 5 |  |
+| 9 | Foundations | Savings Accounts | 🔵 READY (unpublished) | 5 |  |
+| 10 | Foundations | Interest | 🔵 READY (unpublished) | 5 |  |
+| 11 | Foundations | Credit Cards | 🔵 READY (unpublished) | 5 |  |
+| 12 | Foundations | Credit Reports | 🔵 READY (unpublished) | 5 |  |
+| 13 | Foundations | Credit Scores | 🔵 READY (unpublished) | 5 |  |
+| 14 | Foundations | Loans | 🔵 READY (unpublished) | 5 |  |
+| 15 | Foundations | Auto Loans | 🔵 READY (unpublished) | 5 |  |
+| 16 | Foundations | Student Loans | 🔵 READY (unpublished) | 5 |  |
+| 17 | Foundations | Mortgages | 🔵 READY (unpublished) | 5 |  |
+| 18 | Foundations | Debt Management | 🔵 READY (unpublished) | 5 |  |
+| 19 | Foundations | Taxes | 🔵 READY (unpublished) | 5 |  |
+| 20 | Foundations | Insurance | 🔵 READY (unpublished) | 5 |  |
+| 21 | Foundations | Health Insurance Basics | 🔵 READY (unpublished) | 5 |  |
+| 22 | Foundations | Life Insurance Basics | 🔵 READY (unpublished) | 5 |  |
+| 23 | Foundations | Investing | 🔵 READY (unpublished) | 5 |  |
+| 24 | Foundations | Stocks | 🔵 READY (unpublished) | 5 |  |
+| 25 | Foundations | Bonds | 🔵 READY (unpublished) | 5 |  |
+| 26 | Foundations | Mutual Funds | 🔵 READY (unpublished) | 5 |  |
+| 27 | Foundations | ETFs | 🔵 READY (unpublished) | 5 |  |
+| 28 | Foundations | Retirement Accounts | 🔵 READY (unpublished) | 5 |  |
+| 29 | Foundations | Compound Growth | 🔵 READY (unpublished) | 5 |  |
+| 30 | Foundations | Financial Scams | 🔵 READY (unpublished) | 5 |  |
+| 31 | Foundations | Identity Theft | 🔵 READY (unpublished) | 5 |  |
+| 32 | Foundations | Consumer Protection | 🔵 READY (unpublished) | 5 |  |
 
 <a id="marketing"></a>
-## Marketing — ⏳ NOT STARTED (0/24)
+## Marketing — ✅ COMPLETE · awaiting publish (24/24)
 
-Phase 2 · live 0 · ready 0 · review 0 · not started 24
+Phase 2 · live 0 · ready 24 · review 0 · not started 0
 
 | # | Unit | Topic | Status | Qs | Link |
 |---:|---|---|---|---:|---|
-| 1 | Foundations | What Marketing Is | ⚪ NOT STARTED |  |  |
-| 2 | Foundations | Customer Needs | ⚪ NOT STARTED |  |  |
-| 3 | Foundations | Market Research | ⚪ NOT STARTED |  |  |
-| 4 | Foundations | Market Segmentation | ⚪ NOT STARTED |  |  |
-| 5 | Foundations | Positioning | ⚪ NOT STARTED |  |  |
-| 6 | Foundations | Consumer Behavior | ⚪ NOT STARTED |  |  |
-| 7 | Foundations | Branding | ⚪ NOT STARTED |  |  |
-| 8 | Foundations | Brand Equity | ⚪ NOT STARTED |  |  |
-| 9 | Foundations | Marketing Mix | ⚪ NOT STARTED |  |  |
-| 10 | Foundations | Product | ⚪ NOT STARTED |  |  |
-| 11 | Foundations | Price | ⚪ NOT STARTED |  |  |
-| 12 | Foundations | Place | ⚪ NOT STARTED |  |  |
-| 13 | Foundations | Promotion | ⚪ NOT STARTED |  |  |
-| 14 | Foundations | Advertising | ⚪ NOT STARTED |  |  |
-| 15 | Foundations | Public Relations | ⚪ NOT STARTED |  |  |
-| 16 | Foundations | Content Marketing | ⚪ NOT STARTED |  |  |
-| 17 | Foundations | Social Media Marketing | ⚪ NOT STARTED |  |  |
-| 18 | Foundations | Email Marketing | ⚪ NOT STARTED |  |  |
-| 19 | Foundations | Digital Advertising | ⚪ NOT STARTED |  |  |
-| 20 | Foundations | SEO Basics | ⚪ NOT STARTED |  |  |
-| 21 | Foundations | Customer Journey | ⚪ NOT STARTED |  |  |
-| 22 | Foundations | Conversion | ⚪ NOT STARTED |  |  |
-| 23 | Foundations | Marketing Analytics | ⚪ NOT STARTED |  |  |
-| 24 | Foundations | Ethics in Marketing | ⚪ NOT STARTED |  |  |
+| 1 | Foundations | What Marketing Is | 🔵 READY (unpublished) | 5 |  |
+| 2 | Foundations | Customer Needs | 🔵 READY (unpublished) | 5 |  |
+| 3 | Foundations | Market Research | 🔵 READY (unpublished) | 5 |  |
+| 4 | Foundations | Market Segmentation | 🔵 READY (unpublished) | 5 |  |
+| 5 | Foundations | Positioning | 🔵 READY (unpublished) | 5 |  |
+| 6 | Foundations | Consumer Behavior | 🔵 READY (unpublished) | 5 |  |
+| 7 | Foundations | Branding | 🔵 READY (unpublished) | 5 |  |
+| 8 | Foundations | Brand Equity | 🔵 READY (unpublished) | 5 |  |
+| 9 | Foundations | Marketing Mix | 🔵 READY (unpublished) | 5 |  |
+| 10 | Foundations | Product | 🔵 READY (unpublished) | 5 |  |
+| 11 | Foundations | Price | 🔵 READY (unpublished) | 5 |  |
+| 12 | Foundations | Place | 🔵 READY (unpublished) | 5 |  |
+| 13 | Foundations | Promotion | 🔵 READY (unpublished) | 5 |  |
+| 14 | Foundations | Advertising | 🔵 READY (unpublished) | 5 |  |
+| 15 | Foundations | Public Relations | 🔵 READY (unpublished) | 5 |  |
+| 16 | Foundations | Content Marketing | 🔵 READY (unpublished) | 5 |  |
+| 17 | Foundations | Social Media Marketing | 🔵 READY (unpublished) | 5 |  |
+| 18 | Foundations | Email Marketing | 🔵 READY (unpublished) | 5 |  |
+| 19 | Foundations | Digital Advertising | 🔵 READY (unpublished) | 5 |  |
+| 20 | Foundations | SEO Basics | 🔵 READY (unpublished) | 5 |  |
+| 21 | Foundations | Customer Journey | 🔵 READY (unpublished) | 5 |  |
+| 22 | Foundations | Conversion | 🔵 READY (unpublished) | 5 |  |
+| 23 | Foundations | Marketing Analytics | 🔵 READY (unpublished) | 5 |  |
+| 24 | Foundations | Ethics in Marketing | 🔵 READY (unpublished) | 5 |  |
 
 <a id="management-and-leadership"></a>
-## Management & Leadership — ⏳ NOT STARTED (0/23)
+## Management & Leadership — ✅ COMPLETE · awaiting publish (23/23)
 
-Phase 2 · live 0 · ready 0 · review 0 · not started 23
+Phase 2 · live 0 · ready 23 · review 0 · not started 0
 
 | # | Unit | Topic | Status | Qs | Link |
 |---:|---|---|---|---:|---|
-| 1 | Foundations | Management Versus Leadership | ⚪ NOT STARTED |  |  |
-| 2 | Foundations | Planning | ⚪ NOT STARTED |  |  |
-| 3 | Foundations | Organizing | ⚪ NOT STARTED |  |  |
-| 4 | Foundations | Leading | ⚪ NOT STARTED |  |  |
-| 5 | Foundations | Controlling | ⚪ NOT STARTED |  |  |
-| 6 | Foundations | Leadership Styles | ⚪ NOT STARTED |  |  |
-| 7 | Foundations | Motivation | ⚪ NOT STARTED |  |  |
-| 8 | Foundations | Goal Setting | ⚪ NOT STARTED |  |  |
-| 9 | Foundations | Decision-Making | ⚪ NOT STARTED |  |  |
-| 10 | Foundations | Delegation | ⚪ NOT STARTED |  |  |
-| 11 | Foundations | Teams | ⚪ NOT STARTED |  |  |
-| 12 | Foundations | Team Development | ⚪ NOT STARTED |  |  |
-| 13 | Foundations | Organizational Behavior | ⚪ NOT STARTED |  |  |
-| 14 | Foundations | Organizational Culture | ⚪ NOT STARTED |  |  |
-| 15 | Foundations | Communication | ⚪ NOT STARTED |  |  |
-| 16 | Foundations | Conflict Resolution | ⚪ NOT STARTED |  |  |
-| 17 | Foundations | Negotiation | ⚪ NOT STARTED |  |  |
-| 18 | Foundations | Performance Management | ⚪ NOT STARTED |  |  |
-| 19 | Foundations | Employee Engagement | ⚪ NOT STARTED |  |  |
-| 20 | Foundations | Change Management | ⚪ NOT STARTED |  |  |
-| 21 | Foundations | Power and Influence | ⚪ NOT STARTED |  |  |
-| 22 | Foundations | Ethics | ⚪ NOT STARTED |  |  |
-| 23 | Foundations | Diversity and Inclusion | ⚪ NOT STARTED |  |  |
+| 1 | Foundations | Management Versus Leadership | 🔵 READY (unpublished) | 5 |  |
+| 2 | Foundations | Planning | 🔵 READY (unpublished) | 5 |  |
+| 3 | Foundations | Organizing | 🔵 READY (unpublished) | 5 |  |
+| 4 | Foundations | Leading | 🔵 READY (unpublished) | 5 |  |
+| 5 | Foundations | Controlling | 🔵 READY (unpublished) | 5 |  |
+| 6 | Foundations | Leadership Styles | 🔵 READY (unpublished) | 5 |  |
+| 7 | Foundations | Motivation | 🔵 READY (unpublished) | 5 |  |
+| 8 | Foundations | Goal Setting | 🔵 READY (unpublished) | 5 |  |
+| 9 | Foundations | Decision-Making | 🔵 READY (unpublished) | 5 |  |
+| 10 | Foundations | Delegation | 🔵 READY (unpublished) | 5 |  |
+| 11 | Foundations | Teams | 🔵 READY (unpublished) | 5 |  |
+| 12 | Foundations | Team Development | 🔵 READY (unpublished) | 5 |  |
+| 13 | Foundations | Organizational Behavior | 🔵 READY (unpublished) | 5 |  |
+| 14 | Foundations | Organizational Culture | 🔵 READY (unpublished) | 5 |  |
+| 15 | Foundations | Communication | 🔵 READY (unpublished) | 5 |  |
+| 16 | Foundations | Conflict Resolution | 🔵 READY (unpublished) | 5 |  |
+| 17 | Foundations | Negotiation | 🔵 READY (unpublished) | 5 |  |
+| 18 | Foundations | Performance Management | 🔵 READY (unpublished) | 5 |  |
+| 19 | Foundations | Employee Engagement | 🔵 READY (unpublished) | 5 |  |
+| 20 | Foundations | Change Management | 🔵 READY (unpublished) | 5 |  |
+| 21 | Foundations | Power and Influence | 🔵 READY (unpublished) | 5 |  |
+| 22 | Foundations | Ethics | 🔵 READY (unpublished) | 5 |  |
+| 23 | Foundations | Diversity and Inclusion | 🔵 READY (unpublished) | 5 |  |
 
 ---
 
@@ -1290,298 +1290,298 @@ Phase 3 · live 0 · ready 48 · review 0 · not started 0
 # Phase 4
 
 <a id="nutrition"></a>
-## Nutrition — ⏳ NOT STARTED (0/29)
+## Nutrition — ✅ COMPLETE · awaiting publish (29/29)
 
-Phase 4 · live 0 · ready 0 · review 0 · not started 29
+Phase 4 · live 0 · ready 29 · review 0 · not started 0
 
 | # | Unit | Topic | Status | Qs | Link |
 |---:|---|---|---|---:|---|
-| 1 | Foundations | What Nutrition Science Studies | ⚪ NOT STARTED |  |  |
-| 2 | Foundations | Energy and Calories | ⚪ NOT STARTED |  |  |
-| 3 | Foundations | Digestion | ⚪ NOT STARTED |  |  |
-| 4 | Foundations | Absorption | ⚪ NOT STARTED |  |  |
-| 5 | Foundations | Metabolism | ⚪ NOT STARTED |  |  |
-| 6 | Foundations | Carbohydrates | ⚪ NOT STARTED |  |  |
-| 7 | Foundations | Simple and Complex Carbohydrates | ⚪ NOT STARTED |  |  |
-| 8 | Foundations | Fiber | ⚪ NOT STARTED |  |  |
-| 9 | Foundations | Proteins | ⚪ NOT STARTED |  |  |
-| 10 | Foundations | Amino Acids | ⚪ NOT STARTED |  |  |
-| 11 | Foundations | Fats | ⚪ NOT STARTED |  |  |
-| 12 | Foundations | Saturated and Unsaturated Fat | ⚪ NOT STARTED |  |  |
-| 13 | Foundations | Essential Fatty Acids | ⚪ NOT STARTED |  |  |
-| 14 | Foundations | Water | ⚪ NOT STARTED |  |  |
-| 15 | Foundations | Hydration | ⚪ NOT STARTED |  |  |
-| 16 | Foundations | Vitamins | ⚪ NOT STARTED |  |  |
-| 17 | Foundations | Fat-Soluble Vitamins | ⚪ NOT STARTED |  |  |
-| 18 | Foundations | Water-Soluble Vitamins | ⚪ NOT STARTED |  |  |
-| 19 | Foundations | Minerals | ⚪ NOT STARTED |  |  |
-| 20 | Foundations | Electrolytes | ⚪ NOT STARTED |  |  |
-| 21 | Foundations | Energy Balance | ⚪ NOT STARTED |  |  |
-| 22 | Foundations | Nutrition Labels | ⚪ NOT STARTED |  |  |
-| 23 | Foundations | Portion Sizes | ⚪ NOT STARTED |  |  |
-| 24 | Foundations | Dietary Patterns | ⚪ NOT STARTED |  |  |
-| 25 | Foundations | Nutrition Across the Lifespan | ⚪ NOT STARTED |  |  |
-| 26 | Foundations | Food Safety | ⚪ NOT STARTED |  |  |
-| 27 | Foundations | Foodborne Illness | ⚪ NOT STARTED |  |  |
-| 28 | Foundations | Supplements | ⚪ NOT STARTED |  |  |
-| 29 | Foundations | Evaluating Nutrition Claims | ⚪ NOT STARTED |  |  |
+| 1 | Foundations | What Nutrition Science Studies | 🔵 READY (unpublished) | 5 |  |
+| 2 | Foundations | Energy and Calories | 🔵 READY (unpublished) | 5 |  |
+| 3 | Foundations | Digestion | 🔵 READY (unpublished) | 5 |  |
+| 4 | Foundations | Absorption | 🔵 READY (unpublished) | 5 |  |
+| 5 | Foundations | Metabolism | 🔵 READY (unpublished) | 5 |  |
+| 6 | Foundations | Carbohydrates | 🔵 READY (unpublished) | 5 |  |
+| 7 | Foundations | Simple and Complex Carbohydrates | 🔵 READY (unpublished) | 5 |  |
+| 8 | Foundations | Fiber | 🔵 READY (unpublished) | 5 |  |
+| 9 | Foundations | Proteins | 🔵 READY (unpublished) | 5 |  |
+| 10 | Foundations | Amino Acids | 🔵 READY (unpublished) | 5 |  |
+| 11 | Foundations | Fats | 🔵 READY (unpublished) | 5 |  |
+| 12 | Foundations | Saturated and Unsaturated Fat | 🔵 READY (unpublished) | 5 |  |
+| 13 | Foundations | Essential Fatty Acids | 🔵 READY (unpublished) | 5 |  |
+| 14 | Foundations | Water | 🔵 READY (unpublished) | 5 |  |
+| 15 | Foundations | Hydration | 🔵 READY (unpublished) | 5 |  |
+| 16 | Foundations | Vitamins | 🔵 READY (unpublished) | 5 |  |
+| 17 | Foundations | Fat-Soluble Vitamins | 🔵 READY (unpublished) | 5 |  |
+| 18 | Foundations | Water-Soluble Vitamins | 🔵 READY (unpublished) | 5 |  |
+| 19 | Foundations | Minerals | 🔵 READY (unpublished) | 5 |  |
+| 20 | Foundations | Electrolytes | 🔵 READY (unpublished) | 5 |  |
+| 21 | Foundations | Energy Balance | 🔵 READY (unpublished) | 5 |  |
+| 22 | Foundations | Nutrition Labels | 🔵 READY (unpublished) | 5 |  |
+| 23 | Foundations | Portion Sizes | 🔵 READY (unpublished) | 5 |  |
+| 24 | Foundations | Dietary Patterns | 🔵 READY (unpublished) | 5 |  |
+| 25 | Foundations | Nutrition Across the Lifespan | 🔵 READY (unpublished) | 5 |  |
+| 26 | Foundations | Food Safety | 🔵 READY (unpublished) | 5 |  |
+| 27 | Foundations | Foodborne Illness | 🔵 READY (unpublished) | 5 |  |
+| 28 | Foundations | Supplements | 🔵 READY (unpublished) | 5 |  |
+| 29 | Foundations | Evaluating Nutrition Claims | 🔵 READY (unpublished) | 5 |  |
 
 <a id="public-health"></a>
-## Public Health — ⏳ NOT STARTED (0/29)
+## Public Health — ✅ COMPLETE · awaiting publish (29/29)
 
-Phase 4 · live 0 · ready 0 · review 0 · not started 29
+Phase 4 · live 0 · ready 29 · review 0 · not started 0
 
 | # | Unit | Topic | Status | Qs | Link |
 |---:|---|---|---|---:|---|
-| 1 | Foundations | What Is Public Health? | ⚪ NOT STARTED |  |  |
-| 2 | Foundations | Population Health | ⚪ NOT STARTED |  |  |
-| 3 | Foundations | Individual Health Versus Population Health | ⚪ NOT STARTED |  |  |
-| 4 | Foundations | Social Determinants of Health | ⚪ NOT STARTED |  |  |
-| 5 | Foundations | Health Disparities | ⚪ NOT STARTED |  |  |
-| 6 | Foundations | Health Equity | ⚪ NOT STARTED |  |  |
-| 7 | Foundations | Epidemiology | ⚪ NOT STARTED |  |  |
-| 8 | Foundations | Incidence | ⚪ NOT STARTED |  |  |
-| 9 | Foundations | Prevalence | ⚪ NOT STARTED |  |  |
-| 10 | Foundations | Risk | ⚪ NOT STARTED |  |  |
-| 11 | Foundations | Disease Surveillance | ⚪ NOT STARTED |  |  |
-| 12 | Foundations | Outbreak Investigation | ⚪ NOT STARTED |  |  |
-| 13 | Foundations | Epidemic Versus Pandemic | ⚪ NOT STARTED |  |  |
-| 14 | Foundations | Prevention | ⚪ NOT STARTED |  |  |
-| 15 | Foundations | Primary Prevention | ⚪ NOT STARTED |  |  |
-| 16 | Foundations | Secondary Prevention | ⚪ NOT STARTED |  |  |
-| 17 | Foundations | Tertiary Prevention | ⚪ NOT STARTED |  |  |
-| 18 | Foundations | Vaccination | ⚪ NOT STARTED |  |  |
-| 19 | Foundations | Herd Immunity | ⚪ NOT STARTED |  |  |
-| 20 | Foundations | Health Promotion | ⚪ NOT STARTED |  |  |
-| 21 | Foundations | Health Education | ⚪ NOT STARTED |  |  |
-| 22 | Foundations | Community Health | ⚪ NOT STARTED |  |  |
-| 23 | Foundations | Environmental Health | ⚪ NOT STARTED |  |  |
-| 24 | Foundations | Occupational Health | ⚪ NOT STARTED |  |  |
-| 25 | Foundations | Global Health | ⚪ NOT STARTED |  |  |
-| 26 | Foundations | Maternal and Child Health | ⚪ NOT STARTED |  |  |
-| 27 | Foundations | Public Health Policy | ⚪ NOT STARTED |  |  |
-| 28 | Foundations | Emergency Preparedness | ⚪ NOT STARTED |  |  |
-| 29 | Foundations | Evidence in Public Health | ⚪ NOT STARTED |  |  |
+| 1 | Foundations | What Is Public Health? | 🔵 READY (unpublished) | 5 |  |
+| 2 | Foundations | Population Health | 🔵 READY (unpublished) | 5 |  |
+| 3 | Foundations | Individual Health Versus Population Health | 🔵 READY (unpublished) | 5 |  |
+| 4 | Foundations | Social Determinants of Health | 🔵 READY (unpublished) | 5 |  |
+| 5 | Foundations | Health Disparities | 🔵 READY (unpublished) | 5 |  |
+| 6 | Foundations | Health Equity | 🔵 READY (unpublished) | 5 |  |
+| 7 | Foundations | Epidemiology | 🔵 READY (unpublished) | 5 |  |
+| 8 | Foundations | Incidence | 🔵 READY (unpublished) | 5 |  |
+| 9 | Foundations | Prevalence | 🔵 READY (unpublished) | 5 |  |
+| 10 | Foundations | Risk | 🔵 READY (unpublished) | 5 |  |
+| 11 | Foundations | Disease Surveillance | 🔵 READY (unpublished) | 5 |  |
+| 12 | Foundations | Outbreak Investigation | 🔵 READY (unpublished) | 5 |  |
+| 13 | Foundations | Epidemic Versus Pandemic | 🔵 READY (unpublished) | 5 |  |
+| 14 | Foundations | Prevention | 🔵 READY (unpublished) | 5 |  |
+| 15 | Foundations | Primary Prevention | 🔵 READY (unpublished) | 5 |  |
+| 16 | Foundations | Secondary Prevention | 🔵 READY (unpublished) | 5 |  |
+| 17 | Foundations | Tertiary Prevention | 🔵 READY (unpublished) | 5 |  |
+| 18 | Foundations | Vaccination | 🔵 READY (unpublished) | 5 |  |
+| 19 | Foundations | Herd Immunity | 🔵 READY (unpublished) | 5 |  |
+| 20 | Foundations | Health Promotion | 🔵 READY (unpublished) | 5 |  |
+| 21 | Foundations | Health Education | 🔵 READY (unpublished) | 5 |  |
+| 22 | Foundations | Community Health | 🔵 READY (unpublished) | 5 |  |
+| 23 | Foundations | Environmental Health | 🔵 READY (unpublished) | 5 |  |
+| 24 | Foundations | Occupational Health | 🔵 READY (unpublished) | 5 |  |
+| 25 | Foundations | Global Health | 🔵 READY (unpublished) | 5 |  |
+| 26 | Foundations | Maternal and Child Health | 🔵 READY (unpublished) | 5 |  |
+| 27 | Foundations | Public Health Policy | 🔵 READY (unpublished) | 5 |  |
+| 28 | Foundations | Emergency Preparedness | 🔵 READY (unpublished) | 5 |  |
+| 29 | Foundations | Evidence in Public Health | 🔵 READY (unpublished) | 5 |  |
 
 <a id="nursing-and-allied-health-foundations"></a>
-## Nursing & Allied Health Foundations — ⏳ NOT STARTED (0/40)
+## Nursing & Allied Health Foundations — ✅ COMPLETE · awaiting publish (40/40)
 
-Phase 4 · live 0 · ready 0 · review 0 · not started 40
+Phase 4 · live 0 · ready 40 · review 0 · not started 0
 
 | # | Unit | Topic | Status | Qs | Link |
 |---:|---|---|---|---:|---|
-| 1 | Foundations | Keep foundational and educational. | ⚪ NOT STARTED |  |  |
-| 2 | Foundations | Healthcare Team Roles | ⚪ NOT STARTED |  |  |
-| 3 | Foundations | Medical Terminology | ⚪ NOT STARTED |  |  |
-| 4 | Foundations | Prefixes, Roots, and Suffixes | ⚪ NOT STARTED |  |  |
-| 5 | Foundations | Infection Control | ⚪ NOT STARTED |  |  |
-| 6 | Foundations | Chain of Infection | ⚪ NOT STARTED |  |  |
-| 7 | Foundations | Hand Hygiene | ⚪ NOT STARTED |  |  |
-| 8 | Foundations | Standard Precautions | ⚪ NOT STARTED |  |  |
-| 9 | Foundations | Transmission-Based Precautions | ⚪ NOT STARTED |  |  |
-| 10 | Foundations | Vital Signs | ⚪ NOT STARTED |  |  |
-| 11 | Foundations | Temperature | ⚪ NOT STARTED |  |  |
-| 12 | Foundations | Pulse | ⚪ NOT STARTED |  |  |
-| 13 | Foundations | Respirations | ⚪ NOT STARTED |  |  |
-| 14 | Foundations | Blood Pressure | ⚪ NOT STARTED |  |  |
-| 15 | Foundations | Oxygen Saturation | ⚪ NOT STARTED |  |  |
-| 16 | Foundations | Patient Safety | ⚪ NOT STARTED |  |  |
-| 17 | Foundations | Fall Prevention | ⚪ NOT STARTED |  |  |
-| 18 | Foundations | Communication | ⚪ NOT STARTED |  |  |
-| 19 | Foundations | Therapeutic Communication | ⚪ NOT STARTED |  |  |
-| 20 | Foundations | Documentation | ⚪ NOT STARTED |  |  |
-| 21 | Foundations | Health Assessment Basics | ⚪ NOT STARTED |  |  |
-| 22 | Foundations | Inspection | ⚪ NOT STARTED |  |  |
-| 23 | Foundations | Palpation | ⚪ NOT STARTED |  |  |
-| 24 | Foundations | Percussion | ⚪ NOT STARTED |  |  |
-| 25 | Foundations | Auscultation | ⚪ NOT STARTED |  |  |
-| 26 | Foundations | Pharmacology Foundations | ⚪ NOT STARTED |  |  |
-| 27 | Foundations | Pharmacokinetics | ⚪ NOT STARTED |  |  |
-| 28 | Foundations | Pharmacodynamics | ⚪ NOT STARTED |  |  |
-| 29 | Foundations | Medication Safety | ⚪ NOT STARTED |  |  |
-| 30 | Foundations | Pathophysiology Basics | ⚪ NOT STARTED |  |  |
-| 31 | Foundations | Cellular Injury | ⚪ NOT STARTED |  |  |
-| 32 | Foundations | Inflammation | ⚪ NOT STARTED |  |  |
-| 33 | Foundations | Fluid and Electrolyte Basics | ⚪ NOT STARTED |  |  |
-| 34 | Foundations | Ethics | ⚪ NOT STARTED |  |  |
-| 35 | Foundations | Informed Consent | ⚪ NOT STARTED |  |  |
-| 36 | Foundations | Confidentiality | ⚪ NOT STARTED |  |  |
-| 37 | Foundations | Evidence-Based Practice | ⚪ NOT STARTED |  |  |
-| 38 | Foundations | Research Literacy | ⚪ NOT STARTED |  |  |
-| 39 | Foundations | Clinical Judgment Foundations | ⚪ NOT STARTED |  |  |
-| 40 | Foundations | Clinical content should receive stronger source and editorial review. | ⚪ NOT STARTED |  |  |
+| 1 | Foundations | Keep foundational and educational. | 🔵 READY (unpublished) | 5 |  |
+| 2 | Foundations | Healthcare Team Roles | 🔵 READY (unpublished) | 5 |  |
+| 3 | Foundations | Medical Terminology | 🔵 READY (unpublished) | 5 |  |
+| 4 | Foundations | Prefixes, Roots, and Suffixes | 🔵 READY (unpublished) | 5 |  |
+| 5 | Foundations | Infection Control | 🔵 READY (unpublished) | 5 |  |
+| 6 | Foundations | Chain of Infection | 🔵 READY (unpublished) | 5 |  |
+| 7 | Foundations | Hand Hygiene | 🔵 READY (unpublished) | 5 |  |
+| 8 | Foundations | Standard Precautions | 🔵 READY (unpublished) | 5 |  |
+| 9 | Foundations | Transmission-Based Precautions | 🔵 READY (unpublished) | 5 |  |
+| 10 | Foundations | Vital Signs | 🔵 READY (unpublished) | 5 |  |
+| 11 | Foundations | Temperature | 🔵 READY (unpublished) | 5 |  |
+| 12 | Foundations | Pulse | 🔵 READY (unpublished) | 5 |  |
+| 13 | Foundations | Respirations | 🔵 READY (unpublished) | 5 |  |
+| 14 | Foundations | Blood Pressure | 🔵 READY (unpublished) | 5 |  |
+| 15 | Foundations | Oxygen Saturation | 🔵 READY (unpublished) | 5 |  |
+| 16 | Foundations | Patient Safety | 🔵 READY (unpublished) | 5 |  |
+| 17 | Foundations | Fall Prevention | 🔵 READY (unpublished) | 5 |  |
+| 18 | Foundations | Communication | 🔵 READY (unpublished) | 5 |  |
+| 19 | Foundations | Therapeutic Communication | 🔵 READY (unpublished) | 5 |  |
+| 20 | Foundations | Documentation | 🔵 READY (unpublished) | 5 |  |
+| 21 | Foundations | Health Assessment Basics | 🔵 READY (unpublished) | 5 |  |
+| 22 | Foundations | Inspection | 🔵 READY (unpublished) | 5 |  |
+| 23 | Foundations | Palpation | 🔵 READY (unpublished) | 5 |  |
+| 24 | Foundations | Percussion | 🔵 READY (unpublished) | 5 |  |
+| 25 | Foundations | Auscultation | 🔵 READY (unpublished) | 5 |  |
+| 26 | Foundations | Pharmacology Foundations | 🔵 READY (unpublished) | 5 |  |
+| 27 | Foundations | Pharmacokinetics | 🔵 READY (unpublished) | 5 |  |
+| 28 | Foundations | Pharmacodynamics | 🔵 READY (unpublished) | 5 |  |
+| 29 | Foundations | Medication Safety | 🔵 READY (unpublished) | 5 |  |
+| 30 | Foundations | Pathophysiology Basics | 🔵 READY (unpublished) | 5 |  |
+| 31 | Foundations | Cellular Injury | 🔵 READY (unpublished) | 5 |  |
+| 32 | Foundations | Inflammation | 🔵 READY (unpublished) | 5 |  |
+| 33 | Foundations | Fluid and Electrolyte Basics | 🔵 READY (unpublished) | 5 |  |
+| 34 | Foundations | Ethics | 🔵 READY (unpublished) | 5 |  |
+| 35 | Foundations | Informed Consent | 🔵 READY (unpublished) | 5 |  |
+| 36 | Foundations | Confidentiality | 🔵 READY (unpublished) | 5 |  |
+| 37 | Foundations | Evidence-Based Practice | 🔵 READY (unpublished) | 5 |  |
+| 38 | Foundations | Research Literacy | 🔵 READY (unpublished) | 5 |  |
+| 39 | Foundations | Clinical Judgment Foundations | 🔵 READY (unpublished) | 5 |  |
+| 40 | Foundations | Clinical content should receive stronger source and editorial review. | 🔵 READY (unpublished) | 5 |  |
 
 <a id="psychology"></a>
-## Psychology — ⏳ NOT STARTED (0/35)
+## Psychology — ✅ COMPLETE · awaiting publish (35/35)
 
-Phase 4 · live 0 · ready 0 · review 0 · not started 35
+Phase 4 · live 0 · ready 35 · review 0 · not started 0
 
 | # | Unit | Topic | Status | Qs | Link |
 |---:|---|---|---|---:|---|
-| 1 | Foundations | What Psychology Studies | ⚪ NOT STARTED |  |  |
-| 2 | Foundations | Scientific Method in Psychology | ⚪ NOT STARTED |  |  |
-| 3 | Foundations | Research Methods | ⚪ NOT STARTED |  |  |
-| 4 | Foundations | Experiments | ⚪ NOT STARTED |  |  |
-| 5 | Foundations | Correlation | ⚪ NOT STARTED |  |  |
-| 6 | Foundations | Correlation Versus Causation | ⚪ NOT STARTED |  |  |
-| 7 | Foundations | Ethics in Psychological Research | ⚪ NOT STARTED |  |  |
-| 8 | Foundations | Brain and Nervous System | ⚪ NOT STARTED |  |  |
-| 9 | Foundations | Neurons | ⚪ NOT STARTED |  |  |
-| 10 | Foundations | Neurotransmitters | ⚪ NOT STARTED |  |  |
-| 11 | Foundations | Brain Structures | ⚪ NOT STARTED |  |  |
-| 12 | Foundations | Sensation | ⚪ NOT STARTED |  |  |
-| 13 | Foundations | Perception | ⚪ NOT STARTED |  |  |
-| 14 | Foundations | Consciousness | ⚪ NOT STARTED |  |  |
-| 15 | Foundations | Sleep | ⚪ NOT STARTED |  |  |
-| 16 | Foundations | Learning | ⚪ NOT STARTED |  |  |
-| 17 | Foundations | Classical Conditioning | ⚪ NOT STARTED |  |  |
-| 18 | Foundations | Operant Conditioning | ⚪ NOT STARTED |  |  |
-| 19 | Foundations | Observational Learning | ⚪ NOT STARTED |  |  |
-| 20 | Foundations | Memory | ⚪ NOT STARTED |  |  |
-| 21 | Foundations | Encoding | ⚪ NOT STARTED |  |  |
-| 22 | Foundations | Storage | ⚪ NOT STARTED |  |  |
-| 23 | Foundations | Retrieval | ⚪ NOT STARTED |  |  |
-| 24 | Foundations | Forgetting | ⚪ NOT STARTED |  |  |
-| 25 | Foundations | Development | ⚪ NOT STARTED |  |  |
-| 26 | Foundations | Personality | ⚪ NOT STARTED |  |  |
-| 27 | Foundations | Intelligence | ⚪ NOT STARTED |  |  |
-| 28 | Foundations | Motivation | ⚪ NOT STARTED |  |  |
-| 29 | Foundations | Emotion | ⚪ NOT STARTED |  |  |
-| 30 | Foundations | Social Psychology | ⚪ NOT STARTED |  |  |
-| 31 | Foundations | Conformity | ⚪ NOT STARTED |  |  |
-| 32 | Foundations | Stress | ⚪ NOT STARTED |  |  |
-| 33 | Foundations | Coping | ⚪ NOT STARTED |  |  |
-| 34 | Foundations | Psychological Disorders | ⚪ NOT STARTED |  |  |
-| 35 | Foundations | Mental Health Treatment Overview | ⚪ NOT STARTED |  |  |
+| 1 | Foundations | What Psychology Studies | 🔵 READY (unpublished) | 5 |  |
+| 2 | Foundations | Scientific Method in Psychology | 🔵 READY (unpublished) | 5 |  |
+| 3 | Foundations | Research Methods | 🔵 READY (unpublished) | 5 |  |
+| 4 | Foundations | Experiments | 🔵 READY (unpublished) | 5 |  |
+| 5 | Foundations | Correlation | 🔵 READY (unpublished) | 5 |  |
+| 6 | Foundations | Correlation Versus Causation | 🔵 READY (unpublished) | 5 |  |
+| 7 | Foundations | Ethics in Psychological Research | 🔵 READY (unpublished) | 5 |  |
+| 8 | Foundations | Brain and Nervous System | 🔵 READY (unpublished) | 5 |  |
+| 9 | Foundations | Neurons | 🔵 READY (unpublished) | 5 |  |
+| 10 | Foundations | Neurotransmitters | 🔵 READY (unpublished) | 5 |  |
+| 11 | Foundations | Brain Structures | 🔵 READY (unpublished) | 5 |  |
+| 12 | Foundations | Sensation | 🔵 READY (unpublished) | 5 |  |
+| 13 | Foundations | Perception | 🔵 READY (unpublished) | 5 |  |
+| 14 | Foundations | Consciousness | 🔵 READY (unpublished) | 5 |  |
+| 15 | Foundations | Sleep | 🔵 READY (unpublished) | 5 |  |
+| 16 | Foundations | Learning | 🔵 READY (unpublished) | 5 |  |
+| 17 | Foundations | Classical Conditioning | 🔵 READY (unpublished) | 5 |  |
+| 18 | Foundations | Operant Conditioning | 🔵 READY (unpublished) | 5 |  |
+| 19 | Foundations | Observational Learning | 🔵 READY (unpublished) | 5 |  |
+| 20 | Foundations | Memory | 🔵 READY (unpublished) | 5 |  |
+| 21 | Foundations | Encoding | 🔵 READY (unpublished) | 5 |  |
+| 22 | Foundations | Storage | 🔵 READY (unpublished) | 5 |  |
+| 23 | Foundations | Retrieval | 🔵 READY (unpublished) | 5 |  |
+| 24 | Foundations | Forgetting | 🔵 READY (unpublished) | 5 |  |
+| 25 | Foundations | Development | 🔵 READY (unpublished) | 5 |  |
+| 26 | Foundations | Personality | 🔵 READY (unpublished) | 5 |  |
+| 27 | Foundations | Intelligence | 🔵 READY (unpublished) | 5 |  |
+| 28 | Foundations | Motivation | 🔵 READY (unpublished) | 5 |  |
+| 29 | Foundations | Emotion | 🔵 READY (unpublished) | 5 |  |
+| 30 | Foundations | Social Psychology | 🔵 READY (unpublished) | 5 |  |
+| 31 | Foundations | Conformity | 🔵 READY (unpublished) | 5 |  |
+| 32 | Foundations | Stress | 🔵 READY (unpublished) | 5 |  |
+| 33 | Foundations | Coping | 🔵 READY (unpublished) | 5 |  |
+| 34 | Foundations | Psychological Disorders | 🔵 READY (unpublished) | 5 |  |
+| 35 | Foundations | Mental Health Treatment Overview | 🔵 READY (unpublished) | 5 |  |
 
 <a id="sociology"></a>
-## Sociology — ⏳ NOT STARTED (0/29)
+## Sociology — ✅ COMPLETE · awaiting publish (29/29)
 
-Phase 4 · live 0 · ready 0 · review 0 · not started 29
+Phase 4 · live 0 · ready 29 · review 0 · not started 0
 
 | # | Unit | Topic | Status | Qs | Link |
 |---:|---|---|---|---:|---|
-| 1 | Foundations | What Is Sociology? | ⚪ NOT STARTED |  |  |
-| 2 | Foundations | Sociological Imagination | ⚪ NOT STARTED |  |  |
-| 3 | Foundations | Sociological Research | ⚪ NOT STARTED |  |  |
-| 4 | Foundations | Culture | ⚪ NOT STARTED |  |  |
-| 5 | Foundations | Norms | ⚪ NOT STARTED |  |  |
-| 6 | Foundations | Values | ⚪ NOT STARTED |  |  |
-| 7 | Foundations | Socialization | ⚪ NOT STARTED |  |  |
-| 8 | Foundations | Social Roles | ⚪ NOT STARTED |  |  |
-| 9 | Foundations | Groups | ⚪ NOT STARTED |  |  |
-| 10 | Foundations | Organizations | ⚪ NOT STARTED |  |  |
-| 11 | Foundations | Deviance | ⚪ NOT STARTED |  |  |
-| 12 | Foundations | Social Control | ⚪ NOT STARTED |  |  |
-| 13 | Foundations | Crime and Society | ⚪ NOT STARTED |  |  |
-| 14 | Foundations | Social Stratification | ⚪ NOT STARTED |  |  |
-| 15 | Foundations | Social Class | ⚪ NOT STARTED |  |  |
-| 16 | Foundations | Poverty | ⚪ NOT STARTED |  |  |
-| 17 | Foundations | Race and Ethnicity | ⚪ NOT STARTED |  |  |
-| 18 | Foundations | Gender | ⚪ NOT STARTED |  |  |
-| 19 | Foundations | Family | ⚪ NOT STARTED |  |  |
-| 20 | Foundations | Education | ⚪ NOT STARTED |  |  |
-| 21 | Foundations | Religion | ⚪ NOT STARTED |  |  |
-| 22 | Foundations | Work | ⚪ NOT STARTED |  |  |
-| 23 | Foundations | Economy | ⚪ NOT STARTED |  |  |
-| 24 | Foundations | Politics | ⚪ NOT STARTED |  |  |
-| 25 | Foundations | Media | ⚪ NOT STARTED |  |  |
-| 26 | Foundations | Urbanization | ⚪ NOT STARTED |  |  |
-| 27 | Foundations | Globalization | ⚪ NOT STARTED |  |  |
-| 28 | Foundations | Social Movements | ⚪ NOT STARTED |  |  |
-| 29 | Foundations | Social Change | ⚪ NOT STARTED |  |  |
+| 1 | Foundations | What Is Sociology? | 🔵 READY (unpublished) | 5 |  |
+| 2 | Foundations | Sociological Imagination | 🔵 READY (unpublished) | 5 |  |
+| 3 | Foundations | Sociological Research | 🔵 READY (unpublished) | 5 |  |
+| 4 | Foundations | Culture | 🔵 READY (unpublished) | 5 |  |
+| 5 | Foundations | Norms | 🔵 READY (unpublished) | 5 |  |
+| 6 | Foundations | Values | 🔵 READY (unpublished) | 5 |  |
+| 7 | Foundations | Socialization | 🔵 READY (unpublished) | 5 |  |
+| 8 | Foundations | Social Roles | 🔵 READY (unpublished) | 5 |  |
+| 9 | Foundations | Groups | 🔵 READY (unpublished) | 5 |  |
+| 10 | Foundations | Organizations | 🔵 READY (unpublished) | 5 |  |
+| 11 | Foundations | Deviance | 🔵 READY (unpublished) | 5 |  |
+| 12 | Foundations | Social Control | 🔵 READY (unpublished) | 5 |  |
+| 13 | Foundations | Crime and Society | 🔵 READY (unpublished) | 5 |  |
+| 14 | Foundations | Social Stratification | 🔵 READY (unpublished) | 5 |  |
+| 15 | Foundations | Social Class | 🔵 READY (unpublished) | 5 |  |
+| 16 | Foundations | Poverty | 🔵 READY (unpublished) | 5 |  |
+| 17 | Foundations | Race and Ethnicity | 🔵 READY (unpublished) | 5 |  |
+| 18 | Foundations | Gender | 🔵 READY (unpublished) | 5 |  |
+| 19 | Foundations | Family | 🔵 READY (unpublished) | 5 |  |
+| 20 | Foundations | Education | 🔵 READY (unpublished) | 5 |  |
+| 21 | Foundations | Religion | 🔵 READY (unpublished) | 5 |  |
+| 22 | Foundations | Work | 🔵 READY (unpublished) | 5 |  |
+| 23 | Foundations | Economy | 🔵 READY (unpublished) | 5 |  |
+| 24 | Foundations | Politics | 🔵 READY (unpublished) | 5 |  |
+| 25 | Foundations | Media | 🔵 READY (unpublished) | 5 |  |
+| 26 | Foundations | Urbanization | 🔵 READY (unpublished) | 5 |  |
+| 27 | Foundations | Globalization | 🔵 READY (unpublished) | 5 |  |
+| 28 | Foundations | Social Movements | 🔵 READY (unpublished) | 5 |  |
+| 29 | Foundations | Social Change | 🔵 READY (unpublished) | 5 |  |
 
 <a id="anthropology"></a>
-## Anthropology — ⏳ NOT STARTED (0/28)
+## Anthropology — ✅ COMPLETE · awaiting publish (28/28)
 
-Phase 4 · live 0 · ready 0 · review 0 · not started 28
+Phase 4 · live 0 · ready 28 · review 0 · not started 0
 
 | # | Unit | Topic | Status | Qs | Link |
 |---:|---|---|---|---:|---|
-| 1 | Foundations | What Is Anthropology? | ⚪ NOT STARTED |  |  |
-| 2 | Foundations | Four Fields of Anthropology | ⚪ NOT STARTED |  |  |
-| 3 | Foundations | Culture | ⚪ NOT STARTED |  |  |
-| 4 | Foundations | Cultural Relativism | ⚪ NOT STARTED |  |  |
-| 5 | Foundations | Ethnocentrism | ⚪ NOT STARTED |  |  |
-| 6 | Foundations | Fieldwork | ⚪ NOT STARTED |  |  |
-| 7 | Foundations | Participant Observation | ⚪ NOT STARTED |  |  |
-| 8 | Foundations | Fieldwork Ethics | ⚪ NOT STARTED |  |  |
-| 9 | Foundations | Language and Culture | ⚪ NOT STARTED |  |  |
-| 10 | Foundations | Kinship | ⚪ NOT STARTED |  |  |
-| 11 | Foundations | Family | ⚪ NOT STARTED |  |  |
-| 12 | Foundations | Marriage | ⚪ NOT STARTED |  |  |
-| 13 | Foundations | Religion | ⚪ NOT STARTED |  |  |
-| 14 | Foundations | Ritual | ⚪ NOT STARTED |  |  |
-| 15 | Foundations | Economic Systems | ⚪ NOT STARTED |  |  |
-| 16 | Foundations | Subsistence | ⚪ NOT STARTED |  |  |
-| 17 | Foundations | Political Systems | ⚪ NOT STARTED |  |  |
-| 18 | Foundations | Social Organization | ⚪ NOT STARTED |  |  |
-| 19 | Foundations | Globalization | ⚪ NOT STARTED |  |  |
-| 20 | Foundations | Medical Anthropology | ⚪ NOT STARTED |  |  |
-| 21 | Foundations | Archaeology | ⚪ NOT STARTED |  |  |
-| 22 | Foundations | Archaeological Evidence | ⚪ NOT STARTED |  |  |
-| 23 | Foundations | Human Evolution | ⚪ NOT STARTED |  |  |
-| 24 | Foundations | Primates | ⚪ NOT STARTED |  |  |
-| 25 | Foundations | Early Hominins | ⚪ NOT STARTED |  |  |
-| 26 | Foundations | Homo sapiens | ⚪ NOT STARTED |  |  |
-| 27 | Foundations | Race as a Social and Biological Concept | ⚪ NOT STARTED |  |  |
-| 28 | Foundations | Applied Anthropology | ⚪ NOT STARTED |  |  |
+| 1 | Foundations | What Is Anthropology? | 🔵 READY (unpublished) | 5 |  |
+| 2 | Foundations | Four Fields of Anthropology | 🔵 READY (unpublished) | 5 |  |
+| 3 | Foundations | Culture | 🔵 READY (unpublished) | 5 |  |
+| 4 | Foundations | Cultural Relativism | 🔵 READY (unpublished) | 5 |  |
+| 5 | Foundations | Ethnocentrism | 🔵 READY (unpublished) | 5 |  |
+| 6 | Foundations | Fieldwork | 🔵 READY (unpublished) | 5 |  |
+| 7 | Foundations | Participant Observation | 🔵 READY (unpublished) | 5 |  |
+| 8 | Foundations | Fieldwork Ethics | 🔵 READY (unpublished) | 5 |  |
+| 9 | Foundations | Language and Culture | 🔵 READY (unpublished) | 5 |  |
+| 10 | Foundations | Kinship | 🔵 READY (unpublished) | 5 |  |
+| 11 | Foundations | Family | 🔵 READY (unpublished) | 5 |  |
+| 12 | Foundations | Marriage | 🔵 READY (unpublished) | 5 |  |
+| 13 | Foundations | Religion | 🔵 READY (unpublished) | 5 |  |
+| 14 | Foundations | Ritual | 🔵 READY (unpublished) | 5 |  |
+| 15 | Foundations | Economic Systems | 🔵 READY (unpublished) | 5 |  |
+| 16 | Foundations | Subsistence | 🔵 READY (unpublished) | 5 |  |
+| 17 | Foundations | Political Systems | 🔵 READY (unpublished) | 5 |  |
+| 18 | Foundations | Social Organization | 🔵 READY (unpublished) | 5 |  |
+| 19 | Foundations | Globalization | 🔵 READY (unpublished) | 5 |  |
+| 20 | Foundations | Medical Anthropology | 🔵 READY (unpublished) | 5 |  |
+| 21 | Foundations | Archaeology | 🔵 READY (unpublished) | 5 |  |
+| 22 | Foundations | Archaeological Evidence | 🔵 READY (unpublished) | 5 |  |
+| 23 | Foundations | Human Evolution | 🔵 READY (unpublished) | 5 |  |
+| 24 | Foundations | Primates | 🔵 READY (unpublished) | 5 |  |
+| 25 | Foundations | Early Hominins | 🔵 READY (unpublished) | 5 |  |
+| 26 | Foundations | Homo sapiens | 🔵 READY (unpublished) | 5 |  |
+| 27 | Foundations | Race as a Social and Biological Concept | 🔵 READY (unpublished) | 5 |  |
+| 28 | Foundations | Applied Anthropology | 🔵 READY (unpublished) | 5 |  |
 
 <a id="human-development"></a>
-## Human Development — ⏳ NOT STARTED (0/25)
+## Human Development — ✅ COMPLETE · awaiting publish (25/25)
 
-Phase 4 · live 0 · ready 0 · review 0 · not started 25
+Phase 4 · live 0 · ready 25 · review 0 · not started 0
 
 | # | Unit | Topic | Status | Qs | Link |
 |---:|---|---|---|---:|---|
-| 1 | Foundations | Lifespan Development | ⚪ NOT STARTED |  |  |
-| 2 | Foundations | Nature and Nurture | ⚪ NOT STARTED |  |  |
-| 3 | Foundations | Developmental Research | ⚪ NOT STARTED |  |  |
-| 4 | Foundations | Prenatal Development | ⚪ NOT STARTED |  |  |
-| 5 | Foundations | Birth | ⚪ NOT STARTED |  |  |
-| 6 | Foundations | Infancy | ⚪ NOT STARTED |  |  |
-| 7 | Foundations | Attachment | ⚪ NOT STARTED |  |  |
-| 8 | Foundations | Early Childhood | ⚪ NOT STARTED |  |  |
-| 9 | Foundations | Cognitive Development | ⚪ NOT STARTED |  |  |
-| 10 | Foundations | Language Development | ⚪ NOT STARTED |  |  |
-| 11 | Foundations | Social Development | ⚪ NOT STARTED |  |  |
-| 12 | Foundations | Middle Childhood | ⚪ NOT STARTED |  |  |
-| 13 | Foundations | Adolescence | ⚪ NOT STARTED |  |  |
-| 14 | Foundations | Identity | ⚪ NOT STARTED |  |  |
-| 15 | Foundations | Puberty | ⚪ NOT STARTED |  |  |
-| 16 | Foundations | Emerging Adulthood | ⚪ NOT STARTED |  |  |
-| 17 | Foundations | Early Adulthood | ⚪ NOT STARTED |  |  |
-| 18 | Foundations | Relationships | ⚪ NOT STARTED |  |  |
-| 19 | Foundations | Family Development | ⚪ NOT STARTED |  |  |
-| 20 | Foundations | Middle Adulthood | ⚪ NOT STARTED |  |  |
-| 21 | Foundations | Aging | ⚪ NOT STARTED |  |  |
-| 22 | Foundations | Cognitive Aging | ⚪ NOT STARTED |  |  |
-| 23 | Foundations | Social Aging | ⚪ NOT STARTED |  |  |
-| 24 | Foundations | Death and Dying | ⚪ NOT STARTED |  |  |
-| 25 | Foundations | Developmental Risk and Resilience | ⚪ NOT STARTED |  |  |
+| 1 | Foundations | Lifespan Development | 🔵 READY (unpublished) | 5 |  |
+| 2 | Foundations | Nature and Nurture | 🔵 READY (unpublished) | 5 |  |
+| 3 | Foundations | Developmental Research | 🔵 READY (unpublished) | 5 |  |
+| 4 | Foundations | Prenatal Development | 🔵 READY (unpublished) | 5 |  |
+| 5 | Foundations | Birth | 🔵 READY (unpublished) | 5 |  |
+| 6 | Foundations | Infancy | 🔵 READY (unpublished) | 5 |  |
+| 7 | Foundations | Attachment | 🔵 READY (unpublished) | 5 |  |
+| 8 | Foundations | Early Childhood | 🔵 READY (unpublished) | 5 |  |
+| 9 | Foundations | Cognitive Development | 🔵 READY (unpublished) | 5 |  |
+| 10 | Foundations | Language Development | 🔵 READY (unpublished) | 5 |  |
+| 11 | Foundations | Social Development | 🔵 READY (unpublished) | 5 |  |
+| 12 | Foundations | Middle Childhood | 🔵 READY (unpublished) | 5 |  |
+| 13 | Foundations | Adolescence | 🔵 READY (unpublished) | 5 |  |
+| 14 | Foundations | Identity | 🔵 READY (unpublished) | 5 |  |
+| 15 | Foundations | Puberty | 🔵 READY (unpublished) | 5 |  |
+| 16 | Foundations | Emerging Adulthood | 🔵 READY (unpublished) | 5 |  |
+| 17 | Foundations | Early Adulthood | 🔵 READY (unpublished) | 5 |  |
+| 18 | Foundations | Relationships | 🔵 READY (unpublished) | 5 |  |
+| 19 | Foundations | Family Development | 🔵 READY (unpublished) | 5 |  |
+| 20 | Foundations | Middle Adulthood | 🔵 READY (unpublished) | 5 |  |
+| 21 | Foundations | Aging | 🔵 READY (unpublished) | 5 |  |
+| 22 | Foundations | Cognitive Aging | 🔵 READY (unpublished) | 5 |  |
+| 23 | Foundations | Social Aging | 🔵 READY (unpublished) | 5 |  |
+| 24 | Foundations | Death and Dying | 🔵 READY (unpublished) | 5 |  |
+| 25 | Foundations | Developmental Risk and Resilience | 🔵 READY (unpublished) | 5 |  |
 
 <a id="political-science-and-government"></a>
-## Political Science & Government — ⏳ NOT STARTED (0/32)
+## Political Science & Government — 🔧 IN PROGRESS (15/32)
 
-Phase 4 · live 0 · ready 0 · review 0 · not started 32
+Phase 4 · live 0 · ready 15 · review 0 · not started 17
 
 | # | Unit | Topic | Status | Qs | Link |
 |---:|---|---|---|---:|---|
-| 1 | Foundations | What Is Politics? | ⚪ NOT STARTED |  |  |
-| 2 | Foundations | What Is Government? | ⚪ NOT STARTED |  |  |
-| 3 | Foundations | Political Systems | ⚪ NOT STARTED |  |  |
-| 4 | Foundations | Democracy | ⚪ NOT STARTED |  |  |
-| 5 | Foundations | Authoritarianism | ⚪ NOT STARTED |  |  |
-| 6 | Foundations | Political Ideologies | ⚪ NOT STARTED |  |  |
-| 7 | Foundations | Constitution | ⚪ NOT STARTED |  |  |
-| 8 | Foundations | U.S. Constitution | ⚪ NOT STARTED |  |  |
-| 9 | Foundations | Separation of Powers | ⚪ NOT STARTED |  |  |
-| 10 | Foundations | Checks and Balances | ⚪ NOT STARTED |  |  |
-| 11 | Foundations | Federalism | ⚪ NOT STARTED |  |  |
-| 12 | Foundations | Congress | ⚪ NOT STARTED |  |  |
-| 13 | Foundations | Presidency | ⚪ NOT STARTED |  |  |
-| 14 | Foundations | Bureaucracy | ⚪ NOT STARTED |  |  |
-| 15 | Foundations | Courts | ⚪ NOT STARTED |  |  |
+| 1 | Foundations | What Is Politics? | 🔵 READY (unpublished) | 5 |  |
+| 2 | Foundations | What Is Government? | 🔵 READY (unpublished) | 5 |  |
+| 3 | Foundations | Political Systems | 🔵 READY (unpublished) | 5 |  |
+| 4 | Foundations | Democracy | 🔵 READY (unpublished) | 5 |  |
+| 5 | Foundations | Authoritarianism | 🔵 READY (unpublished) | 5 |  |
+| 6 | Foundations | Political Ideologies | 🔵 READY (unpublished) | 5 |  |
+| 7 | Foundations | Constitution | 🔵 READY (unpublished) | 5 |  |
+| 8 | Foundations | U.S. Constitution | 🔵 READY (unpublished) | 5 |  |
+| 9 | Foundations | Separation of Powers | 🔵 READY (unpublished) | 5 |  |
+| 10 | Foundations | Checks and Balances | 🔵 READY (unpublished) | 5 |  |
+| 11 | Foundations | Federalism | 🔵 READY (unpublished) | 5 |  |
+| 12 | Foundations | Congress | 🔵 READY (unpublished) | 5 |  |
+| 13 | Foundations | Presidency | 🔵 READY (unpublished) | 5 |  |
+| 14 | Foundations | Bureaucracy | 🔵 READY (unpublished) | 5 |  |
+| 15 | Foundations | Courts | 🔵 READY (unpublished) | 5 |  |
 | 16 | Foundations | Judicial Review | ⚪ NOT STARTED |  |  |
 | 17 | Foundations | Civil Liberties | ⚪ NOT STARTED |  |  |
 | 18 | Foundations | Civil Rights | ⚪ NOT STARTED |  |  |

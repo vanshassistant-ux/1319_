@@ -1,22 +1,22 @@
 # EliExplains — Phase Status Report
 
-Generated 2026-08-21 21:55 UTC. Source of truth: the four phase content stores (`content/phase-N/content-progress.json`). Companion files: `MASTER_TOPIC_DIRECTORY.md` (every topic, every status), `master-topic-directory.csv/.json` (machine-readable).
+Generated 2026-08-25 02:30 UTC. Source of truth: the four phase content stores (`content/phase-N/content-progress.json`). Companion files: `MASTER_TOPIC_DIRECTORY.md` (every topic, every status), `master-topic-directory.csv/.json` (machine-readable).
 
 ## Executive summary
 
 - **1299 genuine topics** across 44 subjects (the master curriculum lists 1319 entries; 20 were mis-ingested section headers/author notes and have been pruned from the queues; 0 topics were added/repurposed).
-- **774 topics done (59.6%)**: 282 live on eliexplains.org, 492 fully gated (`READY_TO_PUBLISH`) and waiting only on owner sign-off to publish.
-- **0 topics need review** (held/needs-review statuses). **525 topics not started.**
-- Subjects: 26 complete · 0 in progress · 18 not started.
+- **1282 topics done (98.7%)**: 282 live on eliexplains.org, 1000 fully gated (`READY_TO_PUBLISH`) and waiting only on owner sign-off to publish.
+- **0 topics need review** (held/needs-review statuses). **17 topics not started.**
+- Subjects: 43 complete · 1 in progress · 0 not started.
 
 ## By phase
 
 | Phase | Subjects | Genuine topics | Done | Live | Ready | Review | Not started | % done |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | Phase 1 — LIVE on eliexplains.org | 11 | 282 | 282 | 282 | 0 | 0 | 0 | 100.0% |
-| Phase 2 | 11 | 325 | 47 | 0 | 47 | 0 | 278 | 14.5% |
+| Phase 2 | 11 | 325 | 325 | 0 | 325 | 0 | 0 | 100.0% |
 | Phase 3 | 11 | 329 | 329 | 0 | 329 | 0 | 0 | 100.0% |
-| Phase 4 | 11 | 363 | 116 | 0 | 116 | 0 | 247 | 32.0% |
+| Phase 4 | 11 | 363 | 346 | 0 | 346 | 0 | 17 | 95.3% |
 
 ## By subject (all 44)
 
@@ -34,16 +34,16 @@ Generated 2026-08-21 21:55 UTC. Source of truth: the four phase content stores (
 | 1 | Computer Science Fundamentals | 27 | 27 | 27 | 0 | 0 | 0 | ✅ complete · live |
 | 1 | Python Programming | 36 | 36 | 36 | 0 | 0 | 0 | ✅ complete · live |
 | 2 | Web Development | 47 | 47 | 0 | 47 | 0 | 0 | ✅ complete · unpublished |
-| 2 | Data Science & AI Literacy | 31 | 0 | 0 | 0 | 0 | 31 | ⏳ not started |
-| 2 | Cybersecurity | 34 | 0 | 0 | 0 | 0 | 34 | ⏳ not started |
-| 2 | Databases & SQL | 29 | 0 | 0 | 0 | 0 | 29 | ⏳ not started |
-| 2 | UX/UI Design | 28 | 0 | 0 | 0 | 0 | 28 | ⏳ not started |
-| 2 | Introduction to Business | 24 | 0 | 0 | 0 | 0 | 24 | ⏳ not started |
-| 2 | Accounting | 28 | 0 | 0 | 0 | 0 | 28 | ⏳ not started |
-| 2 | Finance | 25 | 0 | 0 | 0 | 0 | 25 | ⏳ not started |
-| 2 | Personal Finance | 32 | 0 | 0 | 0 | 0 | 32 | ⏳ not started |
-| 2 | Marketing | 24 | 0 | 0 | 0 | 0 | 24 | ⏳ not started |
-| 2 | Management & Leadership | 23 | 0 | 0 | 0 | 0 | 23 | ⏳ not started |
+| 2 | Data Science & AI Literacy | 31 | 31 | 0 | 31 | 0 | 0 | ✅ complete · unpublished |
+| 2 | Cybersecurity | 34 | 34 | 0 | 34 | 0 | 0 | ✅ complete · unpublished |
+| 2 | Databases & SQL | 29 | 29 | 0 | 29 | 0 | 0 | ✅ complete · unpublished |
+| 2 | UX/UI Design | 28 | 28 | 0 | 28 | 0 | 0 | ✅ complete · unpublished |
+| 2 | Introduction to Business | 24 | 24 | 0 | 24 | 0 | 0 | ✅ complete · unpublished |
+| 2 | Accounting | 28 | 28 | 0 | 28 | 0 | 0 | ✅ complete · unpublished |
+| 2 | Finance | 25 | 25 | 0 | 25 | 0 | 0 | ✅ complete · unpublished |
+| 2 | Personal Finance | 32 | 32 | 0 | 32 | 0 | 0 | ✅ complete · unpublished |
+| 2 | Marketing | 24 | 24 | 0 | 24 | 0 | 0 | ✅ complete · unpublished |
+| 2 | Management & Leadership | 23 | 23 | 0 | 23 | 0 | 0 | ✅ complete · unpublished |
 | 3 | Entrepreneurship | 25 | 25 | 0 | 25 | 0 | 0 | ✅ complete · unpublished |
 | 3 | Business Law & Ethics | 31 | 31 | 0 | 31 | 0 | 0 | ✅ complete · unpublished |
 | 3 | Project Management | 28 | 28 | 0 | 28 | 0 | 0 | ✅ complete · unpublished |
@@ -55,14 +55,14 @@ Generated 2026-08-21 21:55 UTC. Source of truth: the four phase content stores (
 | 3 | Religious Studies | 27 | 27 | 0 | 27 | 0 | 0 | ✅ complete · unpublished |
 | 3 | Languages & ESL | 26 | 26 | 0 | 26 | 0 | 0 | ✅ complete · unpublished |
 | 3 | Earth & Space Science | 48 | 48 | 0 | 48 | 0 | 0 | ✅ complete · unpublished |
-| 4 | Nutrition | 29 | 0 | 0 | 0 | 0 | 29 | ⏳ not started |
-| 4 | Public Health | 29 | 0 | 0 | 0 | 0 | 29 | ⏳ not started |
-| 4 | Nursing & Allied Health Foundations | 40 | 0 | 0 | 0 | 0 | 40 | ⏳ not started |
-| 4 | Psychology | 35 | 0 | 0 | 0 | 0 | 35 | ⏳ not started |
-| 4 | Sociology | 29 | 0 | 0 | 0 | 0 | 29 | ⏳ not started |
-| 4 | Anthropology | 28 | 0 | 0 | 0 | 0 | 28 | ⏳ not started |
-| 4 | Human Development | 25 | 0 | 0 | 0 | 0 | 25 | ⏳ not started |
-| 4 | Political Science & Government | 32 | 0 | 0 | 0 | 0 | 32 | ⏳ not started |
+| 4 | Nutrition | 29 | 29 | 0 | 29 | 0 | 0 | ✅ complete · unpublished |
+| 4 | Public Health | 29 | 29 | 0 | 29 | 0 | 0 | ✅ complete · unpublished |
+| 4 | Nursing & Allied Health Foundations | 40 | 40 | 0 | 40 | 0 | 0 | ✅ complete · unpublished |
+| 4 | Psychology | 35 | 35 | 0 | 35 | 0 | 0 | ✅ complete · unpublished |
+| 4 | Sociology | 29 | 29 | 0 | 29 | 0 | 0 | ✅ complete · unpublished |
+| 4 | Anthropology | 28 | 28 | 0 | 28 | 0 | 0 | ✅ complete · unpublished |
+| 4 | Human Development | 25 | 25 | 0 | 25 | 0 | 0 | ✅ complete · unpublished |
+| 4 | Political Science & Government | 32 | 15 | 0 | 15 | 0 | 17 | 🔧 in progress (46.9%) |
 | 4 | History | 49 | 49 | 0 | 49 | 0 | 0 | ✅ complete · unpublished |
 | 4 | Human Geography | 28 | 28 | 0 | 28 | 0 | 0 | ✅ complete · unpublished |
 | 4 | Economics | 39 | 39 | 0 | 39 | 0 | 0 | ✅ complete · unpublished |
@@ -70,17 +70,16 @@ Generated 2026-08-21 21:55 UTC. Source of truth: the four phase content stores (
 ## What is DONE
 
 - **Phase 1:** Education (21), Social Work & Human Services (20), Criminal Justice & Criminology (28), Engineering Fundamentals (28), Health Administration (24), Hospitality & Tourism (20), Graphic Design & Digital Media (28), Environmental Sustainability (25), Computer Literacy (25), Computer Science Fundamentals (27), Python Programming (36)
-- **Phase 2:** Web Development (47)
+- **Phase 2:** Web Development (47), Data Science & AI Literacy (31), Cybersecurity (34), Databases & SQL (29), UX/UI Design (28), Introduction to Business (24), Accounting (28), Finance (25), Personal Finance (32), Marketing (24), Management & Leadership (23)
 - **Phase 3:** Entrepreneurship (25), Business Law & Ethics (31), Project Management (28), English & Literature (26), Philosophy & Ethics (28), Art History & Visual Culture (34), Music Appreciation (28), Film & Media Studies (28), Religious Studies (27), Languages & ESL (26), Earth & Space Science (48)
-- **Phase 4:** History (49), Human Geography (28), Economics (39)
+- **Phase 4:** Nutrition (29), Public Health (29), Nursing & Allied Health Foundations (40), Psychology (35), Sociology (29), Anthropology (28), Human Development (25), History (49), Human Geography (28), Economics (39)
 
 ## What is IN PROGRESS (partially done)
 
+- **Political Science & Government** (Phase 4): 15/32 done; 17 remaining — Judicial Review; Civil Liberties; Civil Rights; Political Parties; Elections; Voting; Campaigns; Interest Groups; … (+9 more, see directory)
 
 ## What is NOT STARTED
 
-- **Phase 2:** Data Science & AI Literacy (31), Cybersecurity (34), Databases & SQL (29), UX/UI Design (28), Introduction to Business (24), Accounting (28), Finance (25), Personal Finance (32), Marketing (24), Management & Leadership (23)
-- **Phase 4:** Nutrition (29), Public Health (29), Nursing & Allied Health Foundations (40), Psychology (35), Sociology (29), Anthropology (28), Human Development (25), Political Science & Government (32)
 
 ## Pruned curriculum entries (not real topics)
 

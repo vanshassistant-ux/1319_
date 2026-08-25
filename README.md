@@ -2,6 +2,30 @@
 
 Responsive React/Vite foundation for a college-learning platform built around one topic and two explanations: a college-level explanation followed by an Eli-10 plain-language explanation.
 
+## Repository layout
+
+```
+content/          Editorial content store
+  phase-2/        Stage B review records (management/business cluster)
+  phase-3/        Stage A/B progress tracking
+  phase-4/        Stage C review records (Health & Medicine: nutrition → political-science, 44 subjects)
+    review/       346 merged lesson records (READY_TO_PUBLISH), one JSON per topic
+    source-registry.json   verified source records (1,453)
+editorial/        Editorial pipeline workspace
+  TOPIC_AGENT_BRIEF.md     worker brief (schema + gate rules)
+  RESUME.md                resume/close-out tracker
+  HANDOFF_REPORT.md        pipeline handoff state
+  subjects/<slug>/         per-subject: source-map, topic-queue, evidence/, lessons/, audit-exceptions
+  reports/subjects/        43 subject completion reports
+scripts/          editorial-accept-topic.mjs (gate+merge), editorial-audit-subject.mjs,
+                  editorial-progress.mjs, build-master-directory.mjs, editorial-init-subject.mjs
+public/           Built public content (public/content/phase-4/lessons.json) + app assets
+migration/        MedMosa Bucket A migration staging (read-only source, scan/validate)
+curriculum/ src/  App source (Vite/React) and curriculum blueprints
+```
+
+Pipeline status: **1,282/1,299 topics merged (98.7%) · 43/44 subjects complete** — see `editorial/reports/` and `MASTER_1319_START_HERE.md`.
+
 ## Run
 
 Use `bun install`, then `bun run dev`. Run `bun run build` for a production build.
