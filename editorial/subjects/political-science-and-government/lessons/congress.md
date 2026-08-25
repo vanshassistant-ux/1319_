@@ -1,0 +1,159 @@
+# Congress: The First Branch
+
+## In 30 Seconds
+
+Congress is the legislative branch of the United States government — the chamber where federal law is made. It has two houses: the House of Representatives, whose 435 seats are divided among the states by population and whose members serve two-year terms, and the Senate, where every state gets two senators serving six-year terms. Article I gives Congress the powers to tax, spend, declare war, and legislate, and the Senate confirms presidential appointments. A bill becomes law by surviving introduction, committee, floor debate, conference, and the president's signature or veto.
+
+## Why This Matters
+
+Congress is where the country's choices become law: the federal budget, taxes, and the rules that govern everything from food labels to air travel all start as bills here. It matters academically because Congress is the first branch the Constitution creates — Article I describes its powers before the presidency or the courts are mentioned — so any serious study of American government begins with how it works. It matters practically because the legislative process explains why federal policy changes slowly and why compromise is built into the system. And it matters forward-looking: every policy question in the news, from defense spending to health care, will eventually run through the same committee, floor, and conference gauntlet described in this lesson.
+
+## Learning Objectives
+
+- Define Congress as the legislative branch of the U.S. government, per Article I, Section 1 of the Constitution.
+- Describe the two chambers of Congress, including how seats are distributed (by population versus equally among states), chamber sizes, and term lengths.
+- Identify Congress's main constitutional powers: taxing, spending, declaring war, confirming appointments, and legislating.
+- Explain the five stages of the lawmaking process: introduction, committee, floor, conference, and veto or override.
+- Distinguish constituents, districts, and casework as the three practical faces of representation.
+- Analyze why Congress is designed to move slowly and why that friction is a deliberate feature of the constitutional system.
+
+## The College Version
+
+### What Congress is: the first branch
+
+The Constitution names Congress first. Article I, Section 1 vests all legislative powers in a Congress of the United States, “which shall consist of a Senate and House of Representatives.” The working definition for this lesson follows that text: Congress is the legislative branch of the U.S. government — the body where federal law is made. OpenStax's American Government textbook describes the same institution as a bicameral legislature of two chambers, and the Library of Congress's Constitution Annotated documents the grant clause by clause. Being “first” is structural, not ceremonial: before the Constitution says anything about a president or the courts, it creates the body that taxes, spends, and writes the laws the other branches administer. Original example: when Congress passes a statute setting a uniform brake standard for commercial trucks, every state inspector and federal judge who later touches that rule is working with something Congress made.
+
+### Two chambers, two formulas
+
+Congress is bicameral — two chambers on different formulas. The House of Representatives has 435 voting members, with seats apportioned among the states by population and every state guaranteed at least one; each member represents a district within a state and serves a two-year term. The Senate has 100 members, exactly two per state, each serving a six-year term. The design comes from the Great Compromise of 1787: large states wanted representation by population, small states wanted equality, and the two-chamber Congress split the difference — population in the House, equality in the Senate. The Constitution also sets eligibility floors: twenty-five years old and seven years a citizen for the House; thirty and nine years for the Senate. Original example: in the fictional state of Meridian, the district map divides the state into four congressional districts, while the state's two senators each represent the whole state.
+
+### The powers: tax, spend, declare war, confirm, legislate
+
+Article I, Section 8 lists Congress's enumerated powers. Congress lays and collects taxes. It borrows money and coins it. It regulates commerce among the states and with foreign nations. It declares war and raises and supports armies and a navy. And the necessary and proper clause lets it make all laws needed to carry those powers into execution — the constitutional basis for most federal legislation. Spending is the other half of taxation: the Constitution gives Congress the power of the purse, and federal money moves only through laws Congress passes. One power in this lesson is not Article I's. Under Article II, Section 2, the president nominates ambassadors, Supreme Court justices, and other officers “by and with the Advice and Consent of the Senate,” and the Senate votes on those nominations. Original example: when the fictional president nominates a judge for the District of Calvert, the nominee must win a Senate confirmation vote before taking the bench.
+
+### How a bill becomes a law
+
+The classic path has five named stages. Introduction: only a member of Congress can introduce a bill — anyone may draft one, but a legislator must submit it. Committee: the bill is referred to a committee, which holds hearings and marks up the text; most bills die here, never reported out. Floor: if the committee releases it, the full chamber debates and votes, and a simple majority passes it. Conference: when the House and Senate pass different versions, a conference committee of members from both chambers negotiates a single text both will accept. The enrolled bill then goes to the president, who signs it or vetoes it; under Article I, Section 7, a two-thirds vote in each chamber overrides a veto. One constitutional wrinkle: bills that raise revenue must originate in the House, though the Senate may amend them. Original example: a fictional bill requiring smoke detectors in federally assisted housing took nine months to travel this path — most bills never survive past the committee stage.
+
+### Representation: constituents, districts, and casework
+
+Representation is the daily work of being a member. Constituents are the people a member represents and answers to — everyone living in the district or state, voters or not. Districts are the geographic units: a House member represents one district inside a state, while a senator represents the whole state. Casework is the term for constituent service — staff helping people resolve problems with federal agencies, apply for veterans' benefits, or track a delayed passport. Political scientists describe two models of how members vote: the delegate model, in which members vote as their constituents wish, and the trustee model, in which members exercise their own judgment. Real members mix both. Original example: a fictional representative from a coastal district holds town halls on fishing rules while her office runs casework for families stuck in benefit paperwork — the district shapes the agenda, and casework shapes the reputation.
+
+### The honest note and the honest framing
+
+Congress is built to be hard to move, and that is worth stating plainly. Bicameralism means two separate majorities must agree, not one. Committees can kill a bill by never releasing it. Chamber rules and the floor calendar slow things further. And overriding a veto demands two-thirds of both chambers — a deliberately high bar. None of this is a malfunction; it is the design. The framers distrusted fast, single-majority lawmaking and built friction in on purpose. The honest framing that follows: Congress is the noisy engine of democracy. It is loud because many interests get heard, slow because genuine agreement is hard, and essential because the laws the other branches administer all begin here. Studying Congress means studying a machine that is supposed to grind — slowly, publicly, and noisily.
+
+## Key Vocabulary
+
+- **Congress** — The legislative branch of the U.S. government, created by Article I of the Constitution and consisting of the House of Representatives and the Senate.
+- **bicameral** — Describing a legislature that has two separate chambers, each of which must act for a law to pass.
+- **House of Representatives** — The chamber of Congress with 435 voting members, seats apportioned among the states by population, and two-year terms.
+- **Senate** — The chamber of Congress with 100 members, two from each state, serving six-year terms.
+- **enumerated powers** — The specific powers granted to Congress in Article I, Section 8 of the Constitution, such as taxing and declaring war.
+- **constituent** — A person who lives in the district or state that a member of Congress represents.
+- **district** — The geographic area within a state that a House member represents.
+- **casework** — Constituent service in which a member's staff helps residents resolve problems with federal agencies and benefits.
+- **veto** — The president's constitutional refusal to sign a bill, which Congress can override with a two-thirds vote in each chamber.
+- **conference committee** — A joint group of House and Senate members that negotiates a single version of a bill the two chambers passed in different forms.
+
+## Eli-10
+
+**Simplified explanation.** Congress is the part of the U.S. government that makes the laws. It has two rooms, and a law needs both rooms to agree. The House of Representatives has 435 members, split up among the states by population, and each one serves two years. The Senate has 100 members, two from every state, each serving six years. The Constitution gives Congress the big jobs: collecting taxes, spending money, declaring war, and writing the laws everyone else follows. The Senate also votes yes or no on the important people the president picks, like judges and ambassadors. For an idea to become a law, a member must introduce it, a committee must study it, the full chamber must debate and pass it, the two rooms must match their versions, and the president must sign it — or Congress must pass it over the president's veto by a two-thirds vote in both rooms. Every step is there on purpose.
+
+## Eli's Analogy
+
+Think of Congress as a two-engine plane. The House and the Senate are the two engines, and the plane changes course only when both engines push the same way. That makes turns slow and careful: one engine cannot yank the plane around by itself. An idea both engines push forward is hard to stop, and a bad idea needs only one engine to refuse.
+
+**Where the analogy breaks down.** Engines are mechanical: they push the same way every time, and when both fail you get a crash. Congress is made of people with different interests, so its slowness is not always careful deliberation — sometimes it is gridlock, where nothing moves at all. And unlike engines, which work in sync, the two chambers can work at different speeds, with one passing bills while the other sits on them.
+
+## Worked Example
+
+In the fictional state of Meridian, Representative Marta Chen of the 4th District introduces the Detector Safety Act, a bill requiring hardwired smoke detectors in all federally assisted housing. The bill is referred to the House committee that oversees housing, which holds hearings with a fire marshal, a housing developer, and a tenant advocate, then marks up the text and reports it 28-9. The full House debates it for two days and passes it 312-98. The Senate passes a slightly different version, so a conference committee of twelve members merges the two texts, and both chambers pass the merged bill. President Rivera signs it into law. Had she vetoed it, the bill would have needed two-thirds of both chambers — 290 votes in the House and 67 in the Senate — to become law anyway. The whole trip took nine months, and most bills never survive past the committee stage.
+
+## Common Mistakes
+
+- **"Congress is one body, like a parliament with a single chamber."** — Congress is bicameral: the House and the Senate are separate chambers with different sizes, terms, and representation formulas, and a law needs both to pass.
+- **"The president writes the laws and Congress just approves them."** — Only members of Congress can introduce legislation. The president's role is signing or vetoing the final product — and a two-thirds vote in each chamber can override a veto.
+- **"Every state sends the same number of representatives to the House."** — House seats are apportioned by population (435 total, at least one per state). Equal representation lives in the Senate, where every state gets two senators.
+- **"A presidential veto always kills a bill."** — Congress can override a veto with a two-thirds vote in each chamber, and the bill becomes law without the president's signature.
+- **"Members of Congress only work when they are voting on the floor."** — Much of the job happens elsewhere: committee hearings and markup shape bills, and casework helps constituents resolve problems with federal agencies.
+
+## Compare / Contrast
+
+- **The House of Representatives vs. The Senate:** The House's 435 seats are apportioned by population with two-year terms and members represent districts; the Senate's 100 seats are two per state with six-year terms and members represent whole states.
+- **The delegate model of representation vs. The trustee model:** A delegate votes as constituents wish; a trustee votes by their own judgment. Real members blend both, depending on the issue.
+- **A bill in committee vs. A bill on the floor:** In committee a bill is studied, amended, and most often killed; on the floor the full chamber debates and votes on it. Reaching the floor means surviving the committee stage.
+
+## Key Takeaway
+
+Congress is the legislative branch of the U.S. government: two chambers — the population-based House and the equal-state Senate — holding the Article I powers to tax, spend, declare war, and legislate, deliberately built to move slowly because every law must survive committees, floor votes, and the veto gauntlet.
+
+## Practice Question Bank
+
+1. **A civics student lists the major parts of the national government and writes down the two chambers of Congress. Which pair did she write?**
+   - A. The House of Representatives and the Senate
+   - B. The Supreme Court and the federal courts of appeals
+   - C. The president's Cabinet and the Executive Office of the President
+   - D. The House of Representatives and the Electoral College
+
+   **Answer: A.** Article I, Section 1 creates a Congress “which shall consist of a Senate and House of Representatives,” and OpenStax describes the same bicameral structure. The Supreme Court and appeals courts are the judicial branch, the Cabinet and Executive Office belong to the executive branch, and the Electoral College is a separate election mechanism, so none of the other pairs are chambers of Congress.
+
+2. **A teacher draws two columns on the board. The first says “seats divided by state population, 435 total, two-year terms”; the second says “two seats per state, 100 total, six-year terms.” Which labels fit her columns?**
+   - A. First column: Senate; second column: House of Representatives
+   - B. First column: House of Representatives; second column: Senate
+   - C. First column: Supreme Court; second column: Congress
+   - D. First column: House of Representatives; second column: Electoral College
+
+   **Answer: B.** The House has 435 voting members apportioned by population with two-year terms, while the Senate has 100 members, two per state, serving six-year terms — so the first column is the House and the second is the Senate. The Supreme Court and the Electoral College are not chambers of Congress, and the Senate is not apportioned by population.
+
+3. **A representative's office spends the week helping a family in the district apply for veterans' benefits and tracking a delayed passport through a federal agency. What is this kind of work called?**
+   - A. Lobbying
+   - B. Redistricting
+   - C. Casework
+   - D. Markup
+
+   **Answer: C.** OpenStax defines constituent casework as constituents reaching out to their representative for help solving problems such as applying for and tracking federal benefits. Lobbying is advocacy directed at lawmakers, redistricting is drawing district lines, and markup is the committee stage of editing a bill — none describe helping a constituent with federal agencies.
+
+4. **A bill clears both chambers of Congress, but the president returns it with a veto. Under Article I, Section 7, what must happen for the bill to still become law?**
+   - A. The Supreme Court must declare the veto invalid
+   - B. The bill must be reintroduced in the next session of Congress
+   - C. The Senate alone must repass the bill by a simple majority
+   - D. Both chambers must repass the bill by a two-thirds vote in each
+
+   **Answer: D.** Article I, Section 7 and OpenStax's account of the legislative process both state that Congress can overcome a presidential veto with a two-thirds vote in each chamber, making the bill law without the president's signature. The courts play no role in the veto, a simple majority is insufficient, and a reintroduced bill would have to start over.
+
+5. **A senator tells a reporter that the Constitution gives Congress the power to declare war, and the reporter replies that declaring war is the president's job. Who is right, based on the Constitution?**
+   - A. The reporter, because the president is commander in chief of the armed forces
+   - B. The reporter, because the president negotiates treaties with foreign nations
+   - C. The senator, because Article I, Section 8 gives Congress the power to declare war
+   - D. The senator, because Congress appoints all military officers
+
+   **Answer: C.** Article I, Section 8 lists the power to declare war among Congress's enumerated powers, and OpenStax's list of enumerated powers includes it; the president's role as commander in chief is a separate constitutional position that does not include declaring war. Treaties are a presidential power but irrelevant to declaring war, and military officers are nominated by the president and confirmed by the Senate, not appointed by Congress.
+
+## Sources
+
+- Library of Congress, *Constitution of the United States, Article I* — https://constitution.congress.gov/constitution/article-1/
+- OpenStax, *American Government 3e*, 11.1 The Institutional Design of Congress — https://openstax.org/books/american-government-3e/pages/11-1-the-institutional-design-of-congress
+- OpenStax, *American Government 3e*, 11.2 Congressional Election — https://openstax.org/books/american-government-3e/pages/11-2-congressional-elections
+- OpenStax, *American Government 3e*, 11.3 Congressional Representation — https://openstax.org/books/american-government-3e/pages/11-3-congressional-representation
+- OpenStax, *American Government 3e*, 11.5 The Legislative Process — https://openstax.org/books/american-government-3e/pages/11-5-the-legislative-process
+- United States Senate, *Nominations (Powers & Procedures)* — https://www.senate.gov/about/powers-procedures/nominations.htm
+- U.S. House of Representatives, *The Legislative Process (The House Explained)* — https://www.house.gov/the-house-explained/the-legislative-process
+
+## Related Topics
+
+- political-science-and-government:foundations:u-s-constitution
+- political-science-and-government:foundations:separation-of-powers
+- political-science-and-government:foundations:checks-and-balances
+- political-science-and-government:foundations:federalism
+- political-science-and-government:foundations:presidency
+
+## Editorial Metadata
+
+- **Subject:** political-science-and-government
+- **Unit:** foundations
+- **Topic id:** political-science-and-government:foundations:congress
+- **Editorial status:** READY_TO_PUBLISH
+- **Researched:** 2026-08-22
+- **Literacy level:** general
+- **Rights:** Government works (constitution.congress.gov, house.gov, senate.gov) are public domain; OpenStax American Government 3e is CC BY 4.0 with attribution; no source prose adapted beyond public-domain constitutional quotations; all examples original and fictional.

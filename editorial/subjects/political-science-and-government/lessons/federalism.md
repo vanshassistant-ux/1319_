@@ -1,0 +1,152 @@
+# Federalism
+
+## In 30 Seconds
+
+Federalism is the system by which the United States shares power between a central government and the state governments. The Constitution gives the national government a written list of specific powers, leaves everything else to the states through the Tenth Amendment, and lets both levels act in some areas at once. That division is not frozen: the line between national and state authority has moved over time, and where it sits is always being negotiated.
+
+## Why This Matters
+
+Every American lives under at least three governments at once — national, state, and local — and federalism is the design that decides who may do what. It matters academically because it is the skeleton of American government: debates over schools, roads, health rules, and voting are often really debates about which level holds the power. It matters practically because the answer changes the rules you live under, and the line between levels has moved before and can move again.
+
+## Learning Objectives
+
+- Define federalism as a system in which power is shared between a central government and regional governments.
+- Identify the enumerated powers of Congress in Article I, Section 8, and the reserved powers of the states under the Tenth Amendment.
+- Explain that some powers are shared by both levels of government at once (concurrent powers).
+- Describe the layers of government — national, state, and local — in one line each.
+- Explain how the balance between national and state authority has shifted over time, from dual federalism to cooperative federalism.
+- Apply the federalism framework to an original scenario in which more than one level of government acts on the same person or thing.
+
+## The College Version
+
+### The divided power: what federalism is
+
+The working definition used in this lesson comes from OpenStax's American Government, the widely used open textbook: federalism is an institutional arrangement that creates two relatively autonomous levels of government, each possessing the capacity to act directly on the people. In plainer words, power is shared between a central government and regional governments, and both levels are real — each passes its own laws and each deals with citizens directly. That separates federalism from a unitary system (one central government holds all authority) and from a confederation (regional governments hold nearly all power). The United States chose the middle design. Original example: when a fire breaks out in a home in the fictional town of Port Mason, both a state fire marshal and a national safety agency may have rules about how the building was constructed — two levels, one building, both sets of rules in force.
+### The U.S. design: enumerated, reserved, and shared powers
+
+The Constitution divides power three ways, and each category gets one factual line. Enumerated powers: Article I, Section 8 lists the specific powers of Congress — taxing, borrowing money, coining money, regulating commerce among the states, establishing post offices, declaring war, and raising armies. Reserved powers: the Tenth Amendment states that powers not delegated to the United States, nor prohibited by it to the states, are reserved to the states respectively, or to the people — how states run public schools, state roads, criminal law, and elections. Shared powers: both levels may act in the same areas at once, and these concurrent powers include taxing, borrowing, and making and enforcing laws. One more rule holds the design together: Article VI's supremacy clause makes the Constitution and federal laws made under it the supreme law of the land, so a valid federal law prevails over a conflicting state law. Original example: the fictional state of Barlow and the national government both collect taxes from the same paycheck — state income tax and federal income tax are concurrent uses of the same power.
+### Why federal: unity with diversity
+
+The design was born in the founding debates over ratification, and the reason fits in one line: the founding generation wanted one nation strong enough to act together on defense, money, and commerce, while letting each state keep its own laws and ways — unity with diversity. The ratification campaign split Americans into two camps. The Federalists supported the Constitution and wanted a stronger national government for defense and economic growth; the Anti-Federalists feared national power and trusted state legislatures, closer to the people, to protect freedoms. Federalism was the settlement that gave each side something. Original example: a hurricane strikes the fictional Gulf state of Meridia, and the national government moves in disaster aid while the state directs its own evacuation and rebuilding rules — both levels acting on the same event, each in its sphere.
+### The layers of government
+
+In practice the American system runs on three layers, each worth one line here — the detailed study of the lower layers is the sibling topic on state and local government. National: the federal government handles nationwide concerns — defense, interstate commerce, money, and foreign affairs. State: the fifty state governments handle what the Constitution leaves to them — public schools, state roads, criminal law, and the conduct of elections. Local: counties, cities, and towns, created by state law, handle the closest-to-home services — local roads, water, zoning, parks, and police. Original example: a pothole in the fictional city of Riverbend is filled by city crews using state funds on a road that also carries federal highway money — one pothole, three layers.
+### The shifting line
+
+The balance between the levels has moved over time, and the movement is documented fact, not opinion. In the late 1800s, under what political scientists call dual federalism, the states and the national government exercised exclusive authority in distinctly delineated spheres — like the layers of a cake that do not blend. From the Great Depression of the 1930s on, under cooperative federalism, both levels coordinated their actions to solve national problems, and the jurisdictional boundaries blurred like a marble cake; the national government expanded into areas such as health, safety, income security, education, and welfare. The elastic clause helped: the last clause of Article I, Section 8 lets Congress make all laws necessary and proper for carrying out its responsibilities. Original example: in 1900 the fictional state of Alderton ran its public schools alone; by the 1960s the national government was funding school programs there with conditions attached — the same policy area, a very different balance.
+### The honest note, and the honest framing
+
+The honest note: federalism is a negotiation, not a fixed formula. The Constitution supplies the map — enumerated, reserved, and shared powers — but where the line actually sits on any given question is worked out continuously through laws, court cases, grants, and crises. A power that looks firmly reserved, like education, becomes shared when the national government ties money to conditions; a power that looks firmly national, like interstate commerce, brushes against state rules every time a truck crosses a state line. The honest framing: federalism is a multi-level game of government. Nearly every public question — schools, roads, health, energy, voting — is played at more than one level at once, and the practical skill is knowing which level holds which card. The goal is not to predict where the line will sit next, but to read the map the game is played on.
+
+## Key Vocabulary
+
+- **federalism:** A system of government in which power is shared between a central government and regional governments, each able to act directly on the people.
+- **enumerated powers:** The specific powers of Congress written in Article I, Section 8 of the Constitution, such as taxing, borrowing money, coining money, and declaring war.
+- **reserved powers:** Powers kept by the states, affirmed by the Tenth Amendment, covering everything the Constitution neither delegates to the national government nor prohibits to the states.
+- **Tenth Amendment:** The amendment in the Bill of Rights stating that powers not delegated to the United States, nor prohibited to the states, are reserved to the states or to the people.
+- **concurrent powers:** Powers exercised by both the national and state governments at the same time, including taxing, borrowing, and making and enforcing laws.
+- **supremacy clause:** The provision in Article VI declaring the Constitution and federal laws made under it the supreme law of the land, so valid federal law prevails over conflicting state law.
+- **elastic clause:** The last clause of Article I, Section 8, giving Congress power to make all laws necessary and proper for carrying out its enumerated powers.
+- **dual federalism:** A style of federalism in which the national and state governments exercise exclusive authority in separate, clearly defined spheres, like the layers of a cake.
+- **cooperative federalism:** A style of federalism in which both levels of government coordinate their actions to solve shared problems, blending their layers like a marble cake.
+
+## Eli-10
+
+Federalism is the way the United States shares the job of governing between two big levels: the national government and the state governments. The national government gets a written list of jobs, like printing money, running the military, and regulating trade between states. The states keep everything else, like public schools and most roads. Some jobs, like collecting taxes, both levels do at once. The tricky part is that the line between the levels is not fixed — it has moved many times and is still being argued over today.
+
+## Eli's Analogy
+
+Think of a family with two grown children who each rent an apartment in the same building. The building owner sets the shared rules — elevators, fire escapes, the roof. Each apartment sets its own rules — paint colors, furniture, who visits. Some things, like the water bill, both sides handle together. When the owner starts paying for new kitchen appliances with strings attached, the balance shifts: the apartments keep decorating, but the owner's rules creep further in.
+
+**Where the analogy breaks down:** A building owner's rules come from a contract and rarely change, while the constitutional division of power is constantly contested — courts interpret it, Congress passes laws that stretch it, and crises like the Great Depression redrew it. Also, apartments do not elect the owner, but voters elect officials at every level of government, which keeps all the players accountable.
+
+## Worked Example
+
+A driver in the fictional state of Alderton buys a car that was assembled in another state. The national government, acting under its power to regulate commerce among the states, has ordered a recall of that model for a defective part, and federal law requires the dealership to fix it free of charge. The state government, under its reserved powers, requires the car to pass a state safety inspection and carry a state registration before it can be driven. The same car sits under both systems at once: the recall comes from the national level, the inspection and registration from the state level, and the driver deals with both. Neither level overrides the other here — the federal recall rule applies within its authority, and the state keeps its own registration rules. That is federalism working as designed: two governments, one car, each doing its own job.
+
+## Common Mistakes
+
+- **Thinking federalism means the national government can do anything it wants.** — The national government has the enumerated powers listed in Article I, Section 8. Everything else is reserved to the states by the Tenth Amendment. Federal power is written down, not unlimited.
+- **Believing the states' powers are also listed in the Constitution.** — The original Constitution never lists state powers. The Tenth Amendment handles them by exclusion: whatever is not delegated to the national government and not prohibited to the states stays with the states or the people.
+- **Assuming the division of power has never changed since 1787.** — The balance has shifted repeatedly — from the separate-spheres 'layer cake' of dual federalism to the coordinated 'marble cake' of cooperative federalism after the Great Depression. The line moves.
+- **Confusing a federal system with a unitary one.** — In a unitary system, one central government holds all authority and regional units exercise only what it grants. In a federal system, states have real authority of their own — which is why a state can run its own schools even though the national government also funds some of them.
+
+## Compare / Contrast
+
+- **Federalism** vs **A unitary system**: In a federal system, regional governments have authority of their own that the central government cannot simply take away; in a unitary system, regional units exist only at the central government's pleasure.
+- **Enumerated powers** vs **Reserved powers**: Enumerated powers are the national government's written list in Article I, Section 8; reserved powers are the states' by default under the Tenth Amendment. One is a list, the other is everything left off the list.
+- **Dual federalism** vs **Cooperative federalism**: Dual federalism (late 1800s) kept the levels in separate spheres like the layers of a cake; cooperative federalism (from the 1930s) has them coordinate and blend like a marble cake.
+
+## Key Takeaway
+
+Federalism is the constitutional sharing of power between the national government and the states — a written division that has shifted over time and is always being renegotiated.
+
+## Practice Question Bank
+
+1. **A student describes federalism as 'power shared between a central government and regional governments.' Which response is correct?**
+   - A. No — federalism means one central government holds all power
+   - B. Not quite — federalism means regional governments hold nearly all power
+   - C. Yes — that is the working definition, and it matches how the United States divides authority
+   - D. Yes for states, but local governments hold no power under federalism
+
+   **Answer: C.** The working definition, following OpenStax's American Government, is that federalism creates two relatively autonomous levels of government — a central government and regional governments — each able to act directly on the people. Option A describes a unitary system, option B a confederation, and option D is wrong because local governments are a real layer (created by state law), even though they are not mentioned in the Constitution.
+
+2. **The Constitution lists Congress's specific powers — taxing, borrowing money, coining money, regulating commerce among the states, and declaring war — in one place. Where?**
+   - A. Article I, Section 8, which lists the enumerated powers of Congress
+   - B. The Tenth Amendment, which reserves powers to the states
+   - C. Article VI, which makes federal law supreme
+   - D. The Preamble, which states the document's purposes
+
+   **Answer: A.** Article I, Section 8 contains the enumerated powers of the national legislature — the written list including taxes, borrowing, coining money, interstate commerce, and declaring war. The Tenth Amendment reserves unlisted powers to the states, Article VI holds the supremacy clause, and the Preamble states purposes rather than powers.
+
+3. **A state legislature wants to set rules for something the Constitution does not mention — say, the minimum age for buying a used car from a private seller. Under the Tenth Amendment, where does that power sit?**
+   - A. With Congress, because it can regulate anything it chooses
+   - B. Nowhere — the Constitution would have to be amended first
+   - C. With the federal courts, which decide such questions by default
+   - D. With the states, because powers not delegated to the national government and not prohibited to the states are reserved to the states or the people
+
+   **Answer: D.** The Tenth Amendment reserves to the states (or the people) the powers the Constitution neither delegates to the national government nor prohibits to the states. A used-car age rule is not among Congress's enumerated powers, so it sits with the state. Option A overstates federal power, B ignores that states already hold the power, and C confuses judicial review with a grant of power.
+
+4. **In the 1890s, courts treated national and state authority as separate spheres — the 'layer cake' view. From the 1930s on, the levels increasingly coordinated on problems like the Great Depression — the 'marble cake' view. What does this contrast show about federalism?**
+   - A. The Constitution's division of power was fixed once and for all in 1787
+   - B. The line between national and state power has shifted over time, and where it sits is worked out through politics, law, and crisis
+   - C. States have always held more power than the national government
+   - D. The Supreme Court abolished federalism in the 1930s
+
+   **Answer: B.** The shift from dual federalism (separate spheres, like the layers of a cake) to cooperative federalism (coordinated action, like a marble cake) is documented history: the Great Depression pushed the levels to work together, and national authority expanded into health, safety, income security, education, and welfare. That means the line moves — options A, C, and D each contradict the historical record.
+
+5. **During the ratification debates over the Constitution, Americans split into two camps. Which pairing is correct?**
+   - A. Federalists feared national power; Anti-Federalists demanded a stronger union
+   - B. Federalists wanted a monarchy; Anti-Federalists wanted a republic
+   - C. Federalists supported the Constitution and a stronger national government; Anti-Federalists feared national power and trusted state legislatures
+   - D. Both camps agreed that the Articles of Confederation worked well
+
+   **Answer: C.** The ratification campaign split citizens into Federalists, who supported the Constitution and believed a stronger national government would serve defense and economic growth, and Anti-Federalists, who feared the power of the national government and believed state legislatures could better protect freedoms. Option A reverses the camps, B misstates both, and D contradicts the reason a new Constitution was written.
+
+## Sources
+
+- National Archives and Records Administration, *The Constitution of the United States: A Transcription* — https://www.archives.gov/founding-docs/constitution-transcript
+- National Archives and Records Administration, *The Bill of Rights: A Transcription* — https://www.archives.gov/founding-docs/bill-of-rights-transcript
+- Library of Congress / Congressional Research Service, *Tenth Amendment | Constitution Annotated* — https://constitution.congress.gov/constitution/amendment-10/ (read via Wayback Machine capture, 2024-08-13)
+- Library of Congress / Congressional Research Service, *The Constitution Annotated* — https://constitution.congress.gov/
+- OpenStax, *American Government 3e*, Chapter 3: American Federalism (LibreTexts mirror) — https://socialsci.libretexts.org/Bookshelves/Political_Science_and_Civics/American_Government_3e_(OpenStax)/03%3A_American_Federalism
+- OpenStax, *American Government 3e*, Section 2.5: The Ratification of the Constitution (LibreTexts mirror) — https://socialsci.libretexts.org/Bookshelves/Political_Science_and_Civics/American_Government_3e_(OpenStax)/02%3A_The_Constitution_and_Its_Origins/2.05%3A_The_Ratification_of_the_Constitution
+- USAGov, *State and local governments* — https://www.usa.gov/state-local-governments
+
+## Related Topics
+
+- political-science-and-government:foundations:constitution
+- political-science-and-government:foundations:u-s-constitution
+- political-science-and-government:foundations:separation-of-powers
+- political-science-and-government:foundations:checks-and-balances
+- political-science-and-government:foundations:state-and-local-government
+
+## Editorial Metadata
+
+- **Subject:** political-science-and-government
+- **Unit:** foundations
+- **Topic id:** political-science-and-government:foundations:federalism
+- **Editorial status:** READY_TO_PUBLISH
+- **Researched:** 2026-08-22
+- **Literacy level:** general
+- **Rights:** National Archives transcripts and the Constitution Annotated are U.S. government works (the Constitution's text is an edict of government, public domain); OpenStax American Government 3e is CC BY 4.0, read via the LibreTexts mirror. No source prose adapted beyond brief attributed quotations from the primary constitutional text; all lesson prose is original, and all examples are original and fictional.

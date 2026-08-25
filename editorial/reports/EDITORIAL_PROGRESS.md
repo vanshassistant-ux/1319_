@@ -1,25 +1,25 @@
 # ELIEXPLAINS GLOBAL EDITORIAL PROGRESS
 
-Generated: 2026-08-22T08:16:32.475Z
+Generated: 2026-08-25T02:26:14.588Z
 Counts are computed from the phase content stores by `bun run editorial:progress`.
 
 Subjects total: 44
-Subjects processed: 38
-Subjects remaining: 6
-Subject completion: 86.36%
+Subjects processed: 43
+Subjects remaining: 1
+Subject completion: 97.73%
 
 Total topics: 1299
-Topics processed: 1110
+Topics processed: 1274
 Topics published: 282
-Topics ready to publish: 828
+Topics ready to publish: 992
 Topics held: 0
 Topics requiring review: 0
-Topics remaining: 189
-Topic processing: 85.45%
+Topics remaining: 25
+Topic processing: 98.08%
 
-Verified questions: 5550
-Unique source records: 4958
-Source usage classes: REFERENCE_ONLY=4001, PUBLIC_DOMAIN=581, ATTRIBUTION_REQUIRED=226, EXTRACT_AND_ADAPT=148, LINK_ONLY=2
+Verified questions: 6370
+Unique source records: 5717
+Source usage classes: REFERENCE_ONLY=4714, PUBLIC_DOMAIN=597, ATTRIBUTION_REQUIRED=229, EXTRACT_AND_ADAPT=172, LINK_ONLY=5
 
 ## Phase progress
 
@@ -28,7 +28,7 @@ Source usage classes: REFERENCE_ONLY=4001, PUBLIC_DOMAIN=581, ATTRIBUTION_REQUIR
 | 1 | 11 / 11 | 282 / 282 | 100.00% |
 | 2 | 11 / 11 | 325 / 325 | 100.00% |
 | 3 | 11 / 11 | 329 / 329 | 100.00% |
-| 4 | 5 / 11 | 174 / 363 | 47.93% |
+| 4 | 10 / 11 | 338 / 363 | 93.11% |
 
 ## Collection progress
 
@@ -38,14 +38,15 @@ Source usage classes: REFERENCE_ONLY=4001, PUBLIC_DOMAIN=581, ATTRIBUTION_REQUIR
 | Technology | 8 / 8 | 257 / 257 | 100.00% |
 | Business & Money | 9 / 9 | 240 / 240 | 100.00% |
 | Humanities & Culture | 7 / 7 | 197 / 197 | 100.00% |
-| Science & Health | 3 / 6 | 106 / 206 | 51.46% |
-| Society & Government | 4 / 7 | 144 / 233 | 61.80% |
+| Science & Health | 6 / 6 | 206 / 206 | 100.00% |
+| Society & Government | 6 / 7 | 208 / 233 | 89.27% |
 
 ## Subjects in progress
 
 | Subject | Processed | Published | Ready | Held | Needs review | Remaining |
 | --- | --- | --- | --- | --- | --- | --- |
 | accounting | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
+| anthropology | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
 | art-history-and-visual-culture | 34 / 34 | 0 | 34 | 0 | 0 | 0 |
 | business-law-and-ethics | 31 / 31 | 0 | 31 | 0 | 0 | 0 |
 | computer-literacy | 25 / 25 | 25 | 0 | 0 | 0 | 0 |
@@ -67,19 +68,24 @@ Source usage classes: REFERENCE_ONLY=4001, PUBLIC_DOMAIN=581, ATTRIBUTION_REQUIR
 | health-administration | 24 / 24 | 24 | 0 | 0 | 0 | 0 |
 | history | 49 / 49 | 0 | 49 | 0 | 0 | 0 |
 | hospitality-and-tourism | 20 / 20 | 20 | 0 | 0 | 0 | 0 |
+| human-development | 25 / 25 | 0 | 25 | 0 | 0 | 0 |
 | human-geography | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
 | introduction-to-business | 24 / 24 | 0 | 24 | 0 | 0 | 0 |
 | languages-and-esl | 26 / 26 | 0 | 26 | 0 | 0 | 0 |
 | management-and-leadership | 23 / 23 | 0 | 23 | 0 | 0 | 0 |
 | marketing | 24 / 24 | 0 | 24 | 0 | 0 | 0 |
 | music-appreciation | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
+| nursing-and-allied-health-foundations | 40 / 40 | 0 | 40 | 0 | 0 | 0 |
 | nutrition | 29 / 29 | 0 | 29 | 0 | 0 | 0 |
 | personal-finance | 32 / 32 | 0 | 32 | 0 | 0 | 0 |
 | philosophy-and-ethics | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
+| political-science-and-government | 7 / 32 | 0 | 7 | 0 | 0 | 25 |
 | project-management | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
+| psychology | 35 / 35 | 0 | 35 | 0 | 0 | 0 |
 | public-health | 29 / 29 | 0 | 29 | 0 | 0 | 0 |
 | python-programming | 36 / 36 | 36 | 0 | 0 | 0 | 0 |
 | religious-studies | 27 / 27 | 0 | 27 | 0 | 0 | 0 |
 | social-work-and-human-services | 20 / 20 | 20 | 0 | 0 | 0 | 0 |
+| sociology | 29 / 29 | 0 | 29 | 0 | 0 | 0 |
 | ux-ui-design | 28 / 28 | 0 | 28 | 0 | 0 | 0 |
 | web-development | 47 / 47 | 0 | 47 | 0 | 0 | 0 |

@@ -111,11 +111,11 @@ The U.S. Constitution is the supreme law of the United States — a Preamble, se
 
 4. **A senator wants to add a new amendment to the Constitution. Under Article V, which path must the proposal take before it can even be sent to the states?**
    - A. A simple majority of the House of Representatives
-   - B. Two-thirds of both houses of Congress, or a convention called at the request of two-thirds of the states
+   - B. Approval by a majority of state governors
    - C. The president's signature and the approval of the Supreme Court
-   - D. Approval by a majority of state governors
+   - D. Two-thirds of both houses of Congress, or a convention called at the request of two-thirds of the states
 
-   **Answer: B.** Article V requires proposal by two-thirds of both houses of Congress, or by a convention called on application of two-thirds of the states, before an amendment goes to the states for ratification by three-fourths of them. A simple House majority (A) is far short of the supermajority; the president plays no role in proposing amendments (C); and state governors have no constitutional role in the process (D).
+   **Answer: D.** Article V requires proposal by two-thirds of both houses of Congress, or by a convention called on application of two-thirds of the states, before an amendment goes to the states for ratification by three-fourths of them. A simple House majority (A) is far short of the supermajority; the president plays no role in proposing amendments (C); and state governors have no constitutional role in the process (D).
 
 5. **Justice A argues that the Constitution's words should be read as they were understood when ratified in 1788. Justice B argues that the document's broad language must be applied to conditions the framers never imagined, so its meaning develops through interpretation. Which statement best frames their disagreement?**
    - A. They disagree about the amendment process in Article V
